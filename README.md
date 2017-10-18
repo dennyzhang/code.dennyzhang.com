@@ -8,3 +8,11 @@ More website:
 - https://www.interviewbit.com
 - http://www.geeksforgeeks.org
 - https://careercup.com
+
+# Summary
+
+## Bit operation
+
+## Tree
+- traverse: first, middle, right
+- DFS, BFS
