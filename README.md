@@ -8,6 +8,3 @@ More website:
 - https://www.interviewbit.com
 - http://www.geeksforgeeks.org
 - https://careercup.com
-
-Puzzles:
-- two-sum: https://leetcode.com/problems/two-sum/description/

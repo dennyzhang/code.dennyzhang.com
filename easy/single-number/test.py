@@ -7,33 +7,24 @@
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
 ## Description :
+##      https://leetcode.com/problems/single-number/description/
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-16 17:10:47>
+## Updated: Time-stamp: <2017-10-17 20:39:11>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def twoSum(self, nums, target):
+    def singleNumber(self, nums):
         """
         :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
+        :rtype: int
         """
-        d = {}
-        i = 0
-        for n in nums:
-            d[n]= i
-            i = i + 1
-
-        i = 0
-        while i<target:
-            if d.has_key(target - (i+1)):
-                return [i, d[target-i-1]]
-                break
-            i = i + 1
-        return [None, None]
+        x = 0
+        for i in nums:
+            x = x ^ i
+        return x
 
 if __name__ == '__main__':
     s = Solution()
-    print s.twoSum([1, 2, 3], 5)
-    print s.twoSum([2, 7, 11, 15], 9)
+    print s.singleNumber([1, 2, 1])
+    print s.singleNumber([2, 2, 1])
 ## File: test.py ends
