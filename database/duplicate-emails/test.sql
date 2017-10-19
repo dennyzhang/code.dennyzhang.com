@@ -1,4 +1,4 @@
-;; https://leetcode.com/problems/duplicate-emails/description/
+# https://leetcode.com/problems/duplicate-emails/description/
 
 select Email
 from Person

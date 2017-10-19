@@ -1,4 +1,4 @@
-;; https://leetcode.com/problems/trips-and-users/description/
+# https://leetcode.com/problems/trips-and-users/description/
 
 select t1.Day as Day, round(COALESCE(t2.cancel_count, 0)/t1.total_count, 2) as 'Cancellation Rate' from
 (select Trips.Request_at as Day, count(1) as total_count

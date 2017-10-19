@@ -1,4 +1,4 @@
-;; https://leetcode.com/problems/employees-earning-more-than-their-managers/description/
+# https://leetcode.com/problems/employees-earning-more-than-their-managers/description/
 
 select t1.Name as Employee
 from Employee as t1 inner join Employee as t2

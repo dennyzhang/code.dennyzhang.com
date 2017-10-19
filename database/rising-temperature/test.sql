@@ -1,4 +1,4 @@
-;; https://leetcode.com/problems/rising-temperature/description/
+# https://leetcode.com/problems/rising-temperature/description/
 
 select t1.Id
 from Weather as t1 join Weather as t2
