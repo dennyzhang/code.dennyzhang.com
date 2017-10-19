@@ -2,14 +2,14 @@
 
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
+  DECLARE M INT;
+  DECLARE column_name varchar(100);
+  set M=N-1;
+  set column_name = CONCAT('getNthHighestSalary', N, ')');
   RETURN (
-     set @start_num = N - 1;
-     set @column_name = CONCAT('getNthHighestSalary(', N, ')');
-     
-     select Salary as @column_name
+     select DISTINCT Salary as column_name
      from Employee
-     # TODO; change this
      order by Salary desc
-     LIMIT @start_num, 1
+     LIMIT M, 1
    );
 END
