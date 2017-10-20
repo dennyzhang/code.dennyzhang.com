@@ -16,6 +16,7 @@ More website:
 - traverse: first, middle, right
 - DFS, BFS
 - traverse: recursive and non-recursive way
+- Sum of left leaves: https://leetcode.com/problems/sum-of-left-leaves/description/
 
 ## Why people would want to use your GitHub repo?
 - TODO: think about it!
