@@ -20,3 +20,10 @@ More website:
 
 ## Why people would want to use your GitHub repo?
 - TODO: think about it!
+
+
+## Bit operation
+- Number of 1 Bits
+- Whether power of 2
+- X xor X = 0, X xor 0 = X
+- Number Complement: https://leetcode.com/problems/number-complement/description/
