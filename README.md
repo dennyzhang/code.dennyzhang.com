@@ -17,3 +17,6 @@ More website:
 ## Tree
 - traverse: first, middle, right
 - DFS, BFS
+
+## Why people would want to use your GitHub repo?
+- TODO: think about it!
