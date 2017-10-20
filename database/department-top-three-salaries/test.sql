@@ -9,4 +9,5 @@
 select Department.Name as Department, Employee.Name as Employee, Employee.Salary
 from Employee inner join Department
 on Employee.DepartmentId = Department.Id
-order by Employee.DepartmentId, Employee.Salary desc;
+group by Employee.DepartmentId
+having 
