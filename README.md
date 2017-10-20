@@ -23,7 +23,8 @@ More website:
 
 
 ## Bit operation
-- Number of 1 Bits
-- Whether power of 2
-- X xor X = 0, X xor 0 = X
 - Number Complement: https://leetcode.com/problems/number-complement/description/
+- X xor X = 0, X xor 0 = X
+- Whether power of 2
+- Number of 1 Bits( Hamming weight): https://leetcode.com/problems/number-of-1-bits/description/
+- n % 2: (n & 1 == 1)
