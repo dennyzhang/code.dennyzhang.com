@@ -12,15 +12,15 @@ More website:
 
 # Summary
 
-## Bit operation
-
 ## Tree
 - traverse: first, middle, right
 - DFS, BFS
+- traverse: recursive and non-recursive way
 
 ## Why people would want to use your GitHub repo?
 - TODO: think about it!
 
+## Search & Sort
 
 ## Bit operation
 - Number Complement: https://leetcode.com/problems/number-complement/description/
