@@ -17,6 +17,7 @@ More website:
 - DFS, BFS
 - traverse: recursive and non-recursive way
 - Sum of left leaves: https://leetcode.com/problems/sum-of-left-leaves/description/
+- Get min and max depth of binary tree
 
 ## Why people would want to use your GitHub repo?
 - TODO: think about it!
