@@ -31,5 +31,10 @@ More website:
 - n % 2: (n & 1 == 1)
 - How to check integer overflow?
 - Mask bits: https://leetcode.com/problems/power-of-four/description/
+- Binary Number with Alternating Bits: https://leetcode.com/problems/binary-number-with-alternating-bits/description/
+
+## String
+- Longest Common Prefix: https://leetcode.com/problems/longest-common-prefix/description/
 
 ## Good for DevOps in leetcode.com
+- TODO: Important things
