@@ -10,7 +10,7 @@
 ##     https://leetcode.com/problems/set-mismatch/description/
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-21 23:55:57>
+## Updated: Time-stamp: <2017-10-22 15:45:48>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findErrorNums(self, nums):
@@ -23,7 +23,6 @@ class Solution(object):
         current_sum = 0
         for num in nums:
             current_sum += num
-
         l = [0] * n
         duplicate_num = -1
         for num in nums:
@@ -32,10 +31,8 @@ class Solution(object):
             else:
                 duplicate_num = num
                 break
-
         if duplicate_num == -1:
             raise Exception("Unexpected input")
-
         return [duplicate_num, duplicate_num + supposed_sum - current_sum]
 
 if __name__ == '__main__':
