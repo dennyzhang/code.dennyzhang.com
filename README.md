@@ -30,3 +30,6 @@ More website:
 - Number of 1 Bits( Hamming weight): https://leetcode.com/problems/number-of-1-bits/description/
 - n % 2: (n & 1 == 1)
 - How to check integer overflow?
+- Mask bits: https://leetcode.com/problems/power-of-four/description/
+
+## Good for DevOps in leetcode.com
