@@ -41,3 +41,4 @@ More website:
 
 ## Leetcode learns learned sharing from blogs
 - http://blog.csdn.net/linhuanmars
+- https://www.gitbook.com/book/siddontang/leetcode-solution/details
