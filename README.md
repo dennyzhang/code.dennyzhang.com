@@ -38,3 +38,6 @@ More website:
 
 ## Good for DevOps in leetcode.com
 - TODO: Important things
+
+## Leetcode learns learned sharing from blogs
+- http://blog.csdn.net/linhuanmars

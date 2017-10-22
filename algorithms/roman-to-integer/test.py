@@ -10,7 +10,7 @@
 ##     https://leetcode.com/problems/roman-to-integer/description/
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 08:28:35>
+## Updated: Time-stamp: <2017-10-22 09:05:06>
 ##-------------------------------------------------------------------
 class Solution(object):
     def romanToInt(self, s):
@@ -20,6 +20,8 @@ class Solution(object):
         """
         ret = 0
         roman_dict = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500,'M':1000}
+        i = 0
+        j = 0
         for ch in s:
             ret += roman_dict[ch]
         return ret
