@@ -33,6 +33,7 @@ More website:
 - How to check integer overflow?
 - Mask bits: https://leetcode.com/problems/power-of-four/description/
 - Binary Number with Alternating Bits: https://leetcode.com/problems/binary-number-with-alternating-bits/description/
+- Run demical sum by digits: https://leetcode.com/problems/add-strings/description/
 
 ## String
 - Longest Common Prefix: https://leetcode.com/problems/longest-common-prefix/description/
