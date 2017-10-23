@@ -9,10 +9,11 @@
 ## Description:
 ##     https://leetcode.com/problems/reverse-integer/description/
 ## Basic Idea:
+## Complexity:
 ## Tags: #denny-retry
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:57:58>
+## Updated: Time-stamp: <2017-10-23 18:22:04>
 ##-------------------------------------------------------------------
 class Solution(object):
     def reverse(self, x):

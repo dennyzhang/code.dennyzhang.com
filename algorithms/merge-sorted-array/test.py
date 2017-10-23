@@ -9,10 +9,11 @@
 ## Description:
 ##     https://leetcode.com/problems/merge-sorted-array/description/
 ## Basic Idea:
+## Complexity:
 ## Tags: #denny-retry
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:57:40>
+## Updated: Time-stamp: <2017-10-23 18:22:05>
 ##-------------------------------------------------------------------
 class Solution(object):
     def merge(self, nums1, m, nums2, n):

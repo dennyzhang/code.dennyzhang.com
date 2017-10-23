@@ -9,10 +9,11 @@
 ## Description:
 ##     https://leetcode.com/problems/power-of-two/description/
 ## Basic Idea:
+## Complexity:
 ## Tags: #denny-retry
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:57:50>
+## Updated: Time-stamp: <2017-10-23 18:22:05>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isPowerOfTwo(self, n):

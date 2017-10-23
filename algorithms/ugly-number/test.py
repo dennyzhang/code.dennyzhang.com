@@ -9,10 +9,11 @@
 ## Description:
 ##     https://leetcode.com/problems/ugly-number/description/
 ## Basic Idea:
+## Complexity:
 ## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:55:12>
+## Updated: Time-stamp: <2017-10-23 18:22:03>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isUgly(self, num):

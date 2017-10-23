@@ -9,10 +9,11 @@
 ## Description:
 ##     https://leetcode.com/problems/rotate-array/description/
 ## Basic Idea:
+## Complexity:
 ## Tags: #denny-retry, #amusing
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:58:18>
+## Updated: Time-stamp: <2017-10-23 18:22:04>
 ##-------------------------------------------------------------------
 class Solution(object):
     def rotate(self, nums, k):

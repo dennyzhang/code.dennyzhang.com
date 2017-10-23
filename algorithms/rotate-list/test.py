@@ -13,10 +13,11 @@
 ##      1->2->3->    4->5->NULL
 ##    head    p      q  r
 ##
+## Complexity:
 ## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 17:51:11>
+## Updated: Time-stamp: <2017-10-23 18:22:04>
 ##-------------------------------------------------------------------
 class Solution(object):
     def rotateRight(self, head, k):

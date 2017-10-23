@@ -9,10 +9,11 @@
 ## Description:
 ##     https://leetcode.com/problems/maximum-subarray/description/
 ## Basic Idea:
+## Complexity:
 ## Tags: #denny-retry
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:57:34>
+## Updated: Time-stamp: <2017-10-23 18:22:06>
 ##-------------------------------------------------------------------
 class Solution(object):
     def maxSubArray(self, nums):
