@@ -9,10 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/valid-palindrome/description/
 ## Basic Idea:
-## Tags:
+## Tags: #denny-retry
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:55:11>
+## Updated: Time-stamp: <2017-10-23 16:58:07>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isPalindrome(self, s):

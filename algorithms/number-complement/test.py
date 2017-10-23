@@ -9,10 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/number-complement/description/
 ## Basic Idea:
-## Tags:
+## Tags: #denny-retry
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:55:14>
+## Updated: Time-stamp: <2017-10-23 16:57:45>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findComplement(self, num):

@@ -9,10 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/sum-of-left-leaves/description/
 ## Basic Idea:
-## Tags:
+## Tags: #denny-retry
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:55:12>
+## Updated: Time-stamp: <2017-10-23 16:58:02>
 ##-------------------------------------------------------------------
 class Solution(object):
     def sumOfLeftLeaves(self, root):
