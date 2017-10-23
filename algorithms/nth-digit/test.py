@@ -10,7 +10,7 @@
 ##     https://leetcode.com/problems/nth-digit/description/
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 23:41:37>
+## Updated: Time-stamp: <2017-10-23 00:04:44>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findNthDigit(self, n):
@@ -18,21 +18,28 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        if n <= 0:
+            raise Exception("Unexpected input n: %d" % (n))
+
         current_digit = 0
         i = 1
         while current_digit < n:
-            current_digit += len(str(i))
+            value_str = str(i)
+            current_digit += len(value_str)
             i += 1
 
         if current_digit == n:
-            return i
+            return int(value_str[::-1][0])
         else:
-            value_str = str(i)
-            return value_str[...]
+            return int(value_str[::-1][current_digit - n])
             
 if __name__ == '__main__':
     s = Solution()
-    print s.findNthDigit(3)
-    print s.findNthDigit(4)
-    print s.findNthDigit(11)
+    s.findNthDigit(3) # 3
+    s.findNthDigit(4) # 4
+    s.findNthDigit(11) # 0
+    s.findNthDigit(12) # 1
+    s.findNthDigit(13) # 1
+    s.findNthDigit(15) # 2
+    s.findNthDigit(17) # 3
 ## File: test.py ends
