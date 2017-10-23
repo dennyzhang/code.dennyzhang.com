@@ -59,6 +59,8 @@ More website:
 - Bug free coding save time
 - Think in a natural way, instead of a complicated way
 
-## Tags:
-- #amusing
-- #denny-retry
+## Basic Elements:
+- Description
+- Basic Idea
+- Complexity
+- Tags: #amusing, #denny-retry
