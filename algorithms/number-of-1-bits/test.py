@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/number-of-1-bits/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:19:43>
+## Updated: Time-stamp: <2017-10-23 16:55:14>
 ##-------------------------------------------------------------------
 class Solution(object):
     def hammingWeight(self, n):

@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/happy-number/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:18:06>
+## Updated: Time-stamp: <2017-10-23 16:55:15>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isHappy(self, n):

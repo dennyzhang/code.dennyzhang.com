@@ -58,3 +58,7 @@ More website:
 - Get it works first. Then think about how to optmize the time and memory complexity
 - Bug free coding save time
 - Think in a natural way, instead of a complicated way
+
+## Tags:
+- #amusing
+- #denny-retry

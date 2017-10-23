@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/degree-of-an-array/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:17:51>
+## Updated: Time-stamp: <2017-10-23 16:55:15>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findShortestSubArray(self, nums):

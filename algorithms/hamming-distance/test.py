@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/hamming-distance/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:18:04>
+## Updated: Time-stamp: <2017-10-23 16:55:15>
 ##-------------------------------------------------------------------
 class Solution(object):
     def hammingDistance(self, x, y):

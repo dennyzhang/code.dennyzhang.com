@@ -9,9 +9,10 @@
 ## Description:
 ##      https://leetcode.com/problems/single-number/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:19:42>
+## Updated: Time-stamp: <2017-10-23 16:55:12>
 ##-------------------------------------------------------------------
 class Solution(object):
     def singleNumber(self, nums):

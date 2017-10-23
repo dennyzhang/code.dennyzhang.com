@@ -8,10 +8,11 @@
 ## Author : Denny <contact@dennyzhang.com>
 ## Description:
 ##     https://leetcode.com/problems/pascals-triangle-ii/description/
-## Basic Idea: tail recursive
+## Basic Idea:
+## Tags: tail recursive
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:54:52>
+## Updated: Time-stamp: <2017-10-23 16:55:14>
 ##-------------------------------------------------------------------
 class Solution(object):
     def getRow(self, rowIndex):

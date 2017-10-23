@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:19:44>
+## Updated: Time-stamp: <2017-10-23 16:55:14>
 ##-------------------------------------------------------------------
 class Solution(object):
     def maxDepth(self, root):

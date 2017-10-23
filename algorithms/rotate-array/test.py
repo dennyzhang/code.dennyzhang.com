@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/rotate-array/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 16:27:09>
+## Updated: Time-stamp: <2017-10-23 16:55:13>
 ##-------------------------------------------------------------------
 class Solution(object):
     def rotate(self, nums, k):

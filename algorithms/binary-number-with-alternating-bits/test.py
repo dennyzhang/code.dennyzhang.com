@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/binary-number-with-alternating-bits/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:17:48>
+## Updated: Time-stamp: <2017-10-23 16:55:15>
 ##-------------------------------------------------------------------
 class Solution(object):
     def hasAlternatingBits(self, n):

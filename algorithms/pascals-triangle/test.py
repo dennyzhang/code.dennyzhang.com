@@ -9,10 +9,11 @@
 ## Description:
 ##     https://leetcode.com/problems/pascals-triangle/description/
 ## Basic Idea:
+## Tags:
 ##     [i][j] = [i-1][j-1]+[i-1][j]
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:15:56>
+## Updated: Time-stamp: <2017-10-23 16:55:14>
 ##-------------------------------------------------------------------
 class Solution(object):
     def generate(self, numRows):

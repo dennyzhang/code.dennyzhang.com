@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/third-maximum-number/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:19:41>
+## Updated: Time-stamp: <2017-10-23 16:55:12>
 ##-------------------------------------------------------------------
 class Solution(object):
     def thirdMax(self, nums):

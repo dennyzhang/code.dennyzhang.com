@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/valid-parentheses/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:19:41>
+## Updated: Time-stamp: <2017-10-23 16:55:10>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isValid(self, s):

@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:17:54>
+## Updated: Time-stamp: <2017-10-23 16:55:15>
 ##-------------------------------------------------------------------
 class Solution(object):
     def is_same_dict(self, dict_1, dict_2):

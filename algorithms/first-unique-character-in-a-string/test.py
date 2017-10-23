@@ -9,9 +9,10 @@
 ## Description:
 ##     https://leetcode.com/problems/first-unique-character-in-a-string/description/
 ## Basic Idea:
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 13:17:59>
+## Updated: Time-stamp: <2017-10-23 16:55:15>
 ##-------------------------------------------------------------------
 class Solution(object):
     def firstUniqChar(self, s):
