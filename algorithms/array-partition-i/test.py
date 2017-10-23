@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/array-partition-i/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-18 11:34:57>
+## Updated: Time-stamp: <2017-10-23 13:17:45>
 ##-------------------------------------------------------------------
 class Solution(object):
     def arrayPairSum(self, nums):

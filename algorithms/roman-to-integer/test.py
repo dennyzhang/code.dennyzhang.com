@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/roman-to-integer/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 09:05:06>
+## Updated: Time-stamp: <2017-10-23 13:19:42>
 ##-------------------------------------------------------------------
 class Solution(object):
     def romanToInt(self, s):

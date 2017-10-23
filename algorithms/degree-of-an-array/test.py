@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/degree-of-an-array/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-21 23:29:13>
+## Updated: Time-stamp: <2017-10-23 13:17:51>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findShortestSubArray(self, nums):

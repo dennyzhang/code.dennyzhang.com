@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/add-strings/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 23:31:07>
+## Updated: Time-stamp: <2017-10-23 13:16:29>
 ##-------------------------------------------------------------------
 class Solution(object):
     def addStrings(self, num1, num2):

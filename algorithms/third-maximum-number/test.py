@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/third-maximum-number/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 20:34:24>
+## Updated: Time-stamp: <2017-10-23 13:19:41>
 ##-------------------------------------------------------------------
 class Solution(object):
     def thirdMax(self, nums):

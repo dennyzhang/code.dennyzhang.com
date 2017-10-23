@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/find-the-difference/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 22:15:39>
+## Updated: Time-stamp: <2017-10-23 13:17:57>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findTheDifference(self, s, t):

@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-21 11:02:26>
+## Updated: Time-stamp: <2017-10-23 13:19:42>
 ##-------------------------------------------------------------------
 class Solution(object):
     def removeDuplicates(self, nums):

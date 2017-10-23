@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/power-of-four/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-21 11:44:26>
+## Updated: Time-stamp: <2017-10-23 13:19:43>
 ##-------------------------------------------------------------------
 class Solution(object):
     # without loop

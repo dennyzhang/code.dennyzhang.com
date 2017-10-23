@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/hamming-distance/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-17 20:56:22>
+## Updated: Time-stamp: <2017-10-23 13:18:04>
 ##-------------------------------------------------------------------
 class Solution(object):
     def hammingDistance(self, x, y):

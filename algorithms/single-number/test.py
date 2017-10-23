@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##      https://leetcode.com/problems/single-number/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-17 20:39:11>
+## Updated: Time-stamp: <2017-10-23 13:19:42>
 ##-------------------------------------------------------------------
 class Solution(object):
     def singleNumber(self, nums):

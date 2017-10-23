@@ -6,11 +6,12 @@
 ##
 ## File: hello
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##   https://leetcode.com/problems/word-frequency/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-17>
-## Updated: Time-stamp: <2017-10-17 23:28:16>
+## Updated: Time-stamp: <2017-10-23 13:19:40>
 ##-------------------------------------------------------------------
 set -e
 

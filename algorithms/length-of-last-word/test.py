@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/length-of-last-word/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 09:11:44>
+## Updated: Time-stamp: <2017-10-23 13:19:44>
 ##-------------------------------------------------------------------
 class Solution(object):
     # def lengthOfLastWord(self, s):

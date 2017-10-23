@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/number-complement/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-18 11:11:35>
+## Updated: Time-stamp: <2017-10-23 13:19:43>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findComplement(self, num):

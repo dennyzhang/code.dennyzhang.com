@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/sum-of-two-integers/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 17:35:04>
+## Updated: Time-stamp: <2017-10-23 13:19:41>
 ##-------------------------------------------------------------------
 class Solution(object):
     def getSum(self, a, b):

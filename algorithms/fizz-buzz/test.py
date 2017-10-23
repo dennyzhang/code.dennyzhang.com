@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/fizz-buzz/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-18 14:40:32>
+## Updated: Time-stamp: <2017-10-23 13:18:00>
 ##-------------------------------------------------------------------
 class Solution(object):
     def fizzBuzz(self, n):

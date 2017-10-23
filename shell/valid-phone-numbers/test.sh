@@ -6,11 +6,12 @@
 ##
 ## File: hello
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##   https://leetcode.com/problems/valid-phone-numbers/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-17>
-## Updated: Time-stamp: <2017-10-17 21:29:08>
+## Updated: Time-stamp: <2017-10-23 13:19:40>
 ##-------------------------------------------------------------------
 set -e
 

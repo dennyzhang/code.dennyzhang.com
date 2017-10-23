@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/sum-of-left-leaves/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-20 17:00:14>
+## Updated: Time-stamp: <2017-10-23 13:19:42>
 ##-------------------------------------------------------------------
 class Solution(object):
     def sumOfLeftLeaves(self, root):

@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/ugly-number/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-20 15:23:30>
+## Updated: Time-stamp: <2017-10-23 13:19:41>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isUgly(self, num):

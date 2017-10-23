@@ -45,6 +45,9 @@ More website:
 - http://blog.csdn.net/linhuanmars
 - https://siddontang.gitbooks.io/leetcode-solution/content/
 
+## Array
+- sliding window solution: int index: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
+- 
 ## Lesson learned from Cracking leetcode.com
 - Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
 - Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once

@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/number-of-1-bits/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-20 15:57:52>
+## Updated: Time-stamp: <2017-10-23 13:19:43>
 ##-------------------------------------------------------------------
 class Solution(object):
     def hammingWeight(self, n):

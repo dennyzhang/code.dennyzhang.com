@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 16:49:04>
+## Updated: Time-stamp: <2017-10-23 13:19:44>
 ##-------------------------------------------------------------------
 class Solution(object):
     def maxDepth(self, root):

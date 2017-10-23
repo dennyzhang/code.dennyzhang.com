@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/first-unique-character-in-a-string/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-22 22:10:13>
+## Updated: Time-stamp: <2017-10-23 13:17:59>
 ##-------------------------------------------------------------------
 class Solution(object):
     def firstUniqChar(self, s):

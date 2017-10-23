@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/keyboard-row/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-18 10:12:22>
+## Updated: Time-stamp: <2017-10-23 13:19:44>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findWords(self, words):

@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/judge-route-circle/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-18 14:04:14>
+## Updated: Time-stamp: <2017-10-23 13:19:44>
 ##-------------------------------------------------------------------
 class Solution(object):
     def judgeCircle(self, moves):

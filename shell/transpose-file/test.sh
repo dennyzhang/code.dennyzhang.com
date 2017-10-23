@@ -6,11 +6,12 @@
 ##
 ## File: test.sh
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##   https://leetcode.com/problems/transpose-file/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-17>
-## Updated: Time-stamp: <2017-10-17 22:13:31>
+## Updated: Time-stamp: <2017-10-23 13:19:40>
 ##-------------------------------------------------------------------
 set -e
 

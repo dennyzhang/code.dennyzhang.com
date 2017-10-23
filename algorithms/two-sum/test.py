@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/two-sum/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-17 20:33:01>
+## Updated: Time-stamp: <2017-10-23 13:19:41>
 ##-------------------------------------------------------------------
 class Solution(object):
     def twoSum(self, nums, target):

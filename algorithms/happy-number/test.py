@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/happy-number/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-21 22:52:48>
+## Updated: Time-stamp: <2017-10-23 13:18:06>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isHappy(self, n):

@@ -6,11 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Description :
+## Description:
 ##     https://leetcode.com/problems/add-binary/description/
+## Basic Idea:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-20 15:51:24>
+## Updated: Time-stamp: <2017-10-23 13:16:21>
 ##-------------------------------------------------------------------
 class Solution(object):
     def addBinary(self, a, b):
