@@ -30,10 +30,28 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
-        ## Basic Idea:
+        ## Basic Idea: recursive way
         ## Complexity:
-
+        digit_dict = {'2':'abc', '3':'def', '4':'ghi', '5':'jkl', \
+                      '6':'mno', '7':'pqrs', '8':'tuv', '9':'wxyz'}
+        length = len(digits)
+        if length == 0:
+            return []
+        elif length == 1:
+            digit = digits[0]
+            if digit_dict.has_key(digit) is False:
+                raise Exception("Unexpected input: %s" % (digit))
+            return list(digit_dict[digit])
+        else:
+            digit = digits[0]
+            l = self.letterCombinations(digits[1:])
+            ret = []
+            for ch in list(digit_dict[digit]):
+                for string in l:
+                    ret.append(ch+string)
+            return ret
+            
 if __name__ == '__main__':
     s = Solution()
-    print s.letterCombinations("MCMXCVI")
+    print s.letterCombinations("23")
 ## File: test.py ends
