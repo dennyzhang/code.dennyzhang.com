@@ -51,6 +51,7 @@ More website:
 
 ## Integer
 - swap two values
+- 2sum, 3sum, 4sum, ksum
 
 ## Lesson learned from Cracking leetcode.com
 - Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
