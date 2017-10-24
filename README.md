@@ -66,4 +66,4 @@ More website:
 - Bug free coding save time
 - Think in a natural way, instead of a complicated way
 - Understand data structure and common library in your languages: Python TreeNode, Python Interval
-- Write your idea and time/space complexity
+- Write your idea, before you coding. Update time/space complexity in advance.
