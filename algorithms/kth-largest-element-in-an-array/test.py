@@ -8,8 +8,16 @@
 ## Author : Denny <contact@dennyzhang.com>
 ## Description:
 ##     https://leetcode.com/problems/kth-largest-element-in-an-array/description/
-## Basic Idea: insert sort: maintain array with k items
-## Complexity: Time: O(n)*O(k)
+##    ,-----------
+##    | Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+##    | 
+##    | For example,
+##    | Given [3,2,1,5,6,4] and k = 2, return 5.
+##    | 
+##    | Note: 
+##    | You may assume k is always valid, 1 ≤ k ≤ array's length.
+##    `-----------
+##    
 ## Tags:
 ## --
 ## Created : <2017-10-16>
@@ -22,6 +30,8 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        ## Basic Idea: insert sort: maintain array with k items
+        ## Complexity: Time: O(n)*O(k)
         max_list = [None]*k
         for num in nums:
             # find where to insert
