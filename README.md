@@ -57,7 +57,7 @@ More website:
 - Description
 - Basic Idea
 - Complexity
-- Tags: #amusing, #denny-retry
+- Tags: #amusing, #redo
 
 ## Lesson learned from Cracking leetcode.com
 - Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance

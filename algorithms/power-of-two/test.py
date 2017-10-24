@@ -10,10 +10,10 @@
 ##     https://leetcode.com/problems/power-of-two/description/
 ## Basic Idea:
 ## Complexity:
-## Tags: #denny-retry
+## Tags: #redo
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 18:22:05>
+## Updated: Time-stamp: <2017-10-24 16:12:32>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isPowerOfTwo(self, n):
