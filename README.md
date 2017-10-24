@@ -53,15 +53,16 @@ More website:
 - swap two values
 - 2sum, 3sum, 4sum, ksum
 
+## Basic Elements:
+- Description
+- Basic Idea
+- Complexity
+- Tags: #amusing, #denny-retry
+
 ## Lesson learned from Cracking leetcode.com
 - Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
 - Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
 - Get it works first. Then think about how to optmize the time and memory complexity
 - Bug free coding save time
 - Think in a natural way, instead of a complicated way
-
-## Basic Elements:
-- Description
-- Basic Idea
-- Complexity
-- Tags: #amusing, #denny-retry
+- Understand data structure and common library in your languages: Python TreeNode, Python Interval
