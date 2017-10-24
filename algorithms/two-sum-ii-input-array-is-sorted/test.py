@@ -46,8 +46,6 @@ class Solution(object):
                 index2 -= 1
             else:
                 index1 += 1
-            if index1 == index2:
-                index1 += 1
 
         if has_matched is True:
             return [index1+1, index2+1]
