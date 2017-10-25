@@ -40,17 +40,26 @@ class Solution(object):
         """
         ## Basic Idea: Scan once
         ## Complexity: Time O(n), Space O(1)
-        capital_letters = map(chr, range())
-        for i in range(0, 26):
-            i = 'A' + i
-        
+        upper_letters = map(chr, range(ord('A'), ord('Z')+1))
+
         length = len(word)
+        upper_count = 0
+
         if length == 0:
             return False
+
+        for ch in word:
+            if ch in upper_letters:
+                upper_count += 1
+
         if length == 1:
-            ch = 
-            return False
-        
+            return True
+        else:
+            if word[0] in upper_letters:
+                return (upper_count == 1) or (upper_count == length)
+            else:
+                return upper_count == 0
+
 if __name__ == '__main__':
     s = Solution()
     # print s.romanToInt("MCMXCVI")
