@@ -50,6 +50,9 @@ More website:
 - rotate array: https://leetcode.com/problems/rotate-array/description/
 - link in-place change: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 
+## Linked List
+- Remove Duplicates from Sorted List: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+
 ## Integer
 - swap two values
 - 2sum, 3sum, 4sum, ksum
