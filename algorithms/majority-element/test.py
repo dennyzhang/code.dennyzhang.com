@@ -17,18 +17,16 @@
 ## Tags: amusing
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 14:04:07>
+## Updated: Time-stamp: <2017-10-25 14:14:29>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def majorityElement1(self, nums):
         """
-        :type s: str
+        :type nums: List[int]
         :rtype: int
         """
-        ## Basic Idea:
-        ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
-## File: test.py ends
+        ## Ideas: sort, then find the middle item
+        ## Complexity: Time O(n*log(n)), Space O(1)
+        length = len(nums)
+        nums2 = sorted(nums)
+        return nums2[(length-1)/2]
