@@ -16,7 +16,7 @@
 ## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 17:42:45>
+## Updated: Time-stamp: <2017-10-25 17:44:13>
 ##-------------------------------------------------------------------
 class Solution(object):
     def containsDuplicate(self, nums):
@@ -24,8 +24,17 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        ## Idea: Use set, then compare the count
+        ## Complexity: Time ?, Space O(n)
+        return len(set(nums)) != len(nums)
+
+    def containsDuplicate1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
         ## Idea: Sort the list. Then check the adjancent items.
-        ## Complexity: Time O(n*log(n)), Space O(1)
+        ## Complexity: Time O(n*log(n)), Space O(n)
         nums2 = sorted(nums)
         length = len(nums2)
         if length < 2:
