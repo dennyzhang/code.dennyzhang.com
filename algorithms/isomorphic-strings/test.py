@@ -7,22 +7,54 @@
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
 ## Description:
-##     https://leetcode.com/problems/roman-to-integer/description/
+##     https://leetcode.com/problems/isomorphic-strings/description/
 ## Tags:
+## ,-----------
+## | Given two strings s and t, determine if they are isomorphic.
+## | 
+## | Two strings are isomorphic if the characters in s can be replaced to get t.
+## | 
+## | All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
+## | 
+## | For example,
+## | Given "egg", "add", return true.
+## | 
+## | Given "foo", "bar", return false.
+## | 
+## | Given "paper", "title", return true.
+## | 
+## | Note:
+## | You may assume both s and t have the same length.
+## `-----------
+## 
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 23:24:46>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def isIsomorphic(self, s, t):
         """
         :type s: str
-        :rtype: int
+        :type t: str
+        :rtype: bool
         """
-        ## Basic Idea:
+        ## Ideas: maintain a dictionary for mapping
+        ##     If some characters are different, insert into the dictionary. 
+        ##     If we notice a conflict, it's wrong
         ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
-## File: test.py ends
+        ##
+        ##   ab, aa
+        dict_mapping = {}
+        reverse_mapping = {}
+        for i in range(0, len(s)):
+            ch1 = s[i]
+            ch2 = t[i]
+            if dict_mapping.has_key(ch1) is False:
+                dict_mapping[ch1] = ch2
+                if reverse_mapping.has_key(ch2) and reverse_mapping[ch2] != ch1:
+                    return False
+                reverse_mapping[ch2] = ch1
+            else:
+                if dict_mapping[ch1] != ch2:
+                    return False                    
+        return True
