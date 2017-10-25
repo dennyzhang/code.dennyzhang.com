@@ -7,29 +7,21 @@
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
 ## Description:
-##     https://leetcode.com/problems/decode-ways/description/
+##     https://leetcode.com/problems/linked-list-cycle/description/
 ##    ,-----------
-##    | A message containing letters from A-Z is being encoded to numbers using the following mapping:
+##    | Given a linked list, determine if it has a cycle in it.
 ##    | 
-##    | 'A' -> 1
-##    | 'B' -> 2
-##    | ...
-##    | 'Z' -> 26
-##    | Given an encoded message containing digits, determine the total number of ways to decode it.
-##    | 
-##    | For example,
-##    | Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
-##    | 
-##    | The number of ways decoding "12" is 2.
+##    | Follow up:
+##    | Can you solve it without using extra space?
 ##    `-----------
-##
-## Tags: #redo
+##    
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-24 23:50:33>
+## Updated: Time-stamp: <2017-10-25 10:47:58>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def numDecodings(self, s):
+    def romanToInt(self, s):
         """
         :type s: str
         :rtype: int
