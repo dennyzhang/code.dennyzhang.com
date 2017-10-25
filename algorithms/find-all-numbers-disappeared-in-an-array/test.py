@@ -24,25 +24,35 @@
 ## | [5,6]
 ## `-----------
 ##
-## Tags:
+## Tags: #redo, #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 23:24:46>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def findDisappearedNumbers(self, nums):
         """
-        :type s: str
-        :rtype: int
+        :type nums: List[int]
+        :rtype: List[int]
         """
-        ## Basic Idea: traverse each item, check whether s[i] == i+1. If not, update s[s[i]-1]
+        ## Basic Idea: traverse each item
         ## Complexity:
         ##  1,2,3,4,5,6,7,8
         ##
         ##  4,3,2,7,8,2,3,1
-        ##  1,2,3,4,    7,8     
+        ##  1,2,3,4,    7,8
+        for i in range(0, len(nums)):
+            value = nums[i]
+            if (value == i+1):
+                continue
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
-## File: test.py ends
+            while (nums[value-1] != value):
+                tmp = nums[value-1]
+                nums[value-1] = value
+                value = tmp
+
+        ret = []
+        for i in range(0, len(nums)):
+            if nums[i] != (i+1):
+                ret.append(i+1)
+        return ret

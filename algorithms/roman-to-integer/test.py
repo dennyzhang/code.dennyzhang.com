@@ -11,7 +11,7 @@
 ## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-24 23:24:46>
+## Updated: Time-stamp: <2017-10-25 18:27:45>
 ##-------------------------------------------------------------------
 class Solution(object):
     def romanToInt(self, s):
@@ -25,4 +25,3 @@ class Solution(object):
 if __name__ == '__main__':
     s = Solution()
     # print s.romanToInt("MCMXCVI")
-## File: test.py ends
