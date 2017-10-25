@@ -16,7 +16,7 @@
 ## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 17:44:13>
+## Updated: Time-stamp: <2017-10-25 17:45:12>
 ##-------------------------------------------------------------------
 class Solution(object):
     def containsDuplicate(self, nums):
@@ -34,7 +34,7 @@ class Solution(object):
         :rtype: bool
         """
         ## Idea: Sort the list. Then check the adjancent items.
-        ## Complexity: Time O(n*log(n)), Space O(n)
+        ## Complexity: Time O(n*log(n)), Space O(1)
         nums2 = sorted(nums)
         length = len(nums2)
         if length < 2:
