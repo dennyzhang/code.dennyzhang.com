@@ -29,6 +29,36 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        ## Idea: Use xor
+        ## Complexity: Time O(n), Space O(1)
+        n = len(nums)
+        xor_value = 0
+        for i in range(0, n):
+            xor_value = xor_value ^ (i+1) ^ nums[i]
+
+        return xor_value
+
+    def missingNumber2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        ## Idea: Use xor
+        ## Complexity: Time O(n), Space O(1)
+        n = len(nums)
+        xor_value = 0
+        for i in range(0, n+1):
+            xor_value = xor_value ^ i
+
+        for i in range(0, n):
+            xor_value = xor_value ^ nums[i]
+        return xor_value
+
+    def missingNumber1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         ## Idea: caculated the desired sum. Then add up all the numbers. Do the substraction.
         ## Complexity: Time O(n), Space O(1)
         n = len(nums)
