@@ -7,53 +7,22 @@
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
 ## Description:
-##     https://leetcode.com/problems/isomorphic-strings/description/
-## Tags: #redo, #amusing
-## ,-----------
-## | Given two strings s and t, determine if they are isomorphic.
-## | 
-## | Two strings are isomorphic if the characters in s can be replaced to get t.
-## | 
-## | All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
-## | 
-## | For example,
-## | Given "egg", "add", return true.
-## | 
-## | Given "foo", "bar", return false.
-## | 
-## | Given "paper", "title", return true.
-## | 
-## | Note:
-## | You may assume both s and t have the same length.
-## `-----------
+##     https://leetcode.com/problems/roman-to-integer/description/
+## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 16:38:15>
+## Updated: Time-stamp: <2017-10-24 23:24:46>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def isIsomorphic(self, s, t):
+    def romanToInt(self, s):
         """
         :type s: str
-        :type t: str
-        :rtype: bool
+        :rtype: int
         """
-        ## Ideas: maintain two map dictionaries.
-        ##     If some characters are different, insert into the dictionary. 
-        ##     If we notice a conflict, it's wrong
-        ## Complexity: Time O(n), Space O(n)
-        ##
-        ##   ab, aa
-        dict_mapping = {}
-        reverse_mapping = {}
-        for i in range(0, len(s)):
-            ch1 = s[i]
-            ch2 = t[i]
-            if dict_mapping.has_key(ch1) is False:
-                dict_mapping[ch1] = ch2
-                if reverse_mapping.has_key(ch2) and reverse_mapping[ch2] != ch1:
-                    return False
-                reverse_mapping[ch2] = ch1
-            else:
-                if dict_mapping[ch1] != ch2:
-                    return False                    
-        return True
+        ## Basic Idea:
+        ## Complexity:
+
+if __name__ == '__main__':
+    s = Solution()
+    # print s.romanToInt("MCMXCVI")
+## File: test.py ends
