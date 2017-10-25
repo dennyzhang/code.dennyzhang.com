@@ -33,7 +33,7 @@ class Solution(object):
         ## Complexity:
         ##   [1, 2, 0]
         ##   [3, 4, 0, 1]
-        ##   [3, 5, 0, 1]        
+        ##   [3, 5, 0, 1]
 
 if __name__ == '__main__':
     s = Solution()
