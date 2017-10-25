@@ -16,20 +16,37 @@
 ## | Given 1->1->2->3->3, return 1->2->3.
 ## `-----------
 ##
-## Tags:
+## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>
 ##-------------------------------------------------------------------
-class Solution(object):
-    def romanToInt(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        ## Basic Idea:
-        ## Complexity:
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+class Solution(object):
+    def deleteDuplicates(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        ## Idea: 
+        ## Complexity: Time O(n), Space O(1)
+        ##  1 -> 1 -> 1-> 2 -> 3 -> 3
+        ##  p    q    r
+        if (head is None) or (head.next is None):
+            return head
+        p = head
+        q = p.next
+        while (q is not None):
+            while (q is not None) and (p.val == q.val):
+                q = q.next
+                p.next = q
+            if q is not None:
+                r = q.next
+                p = q
+                q = r
+        return head
