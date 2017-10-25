@@ -40,8 +40,6 @@
 ##    | The substring with start index = 2 is "ab", which is an anagram of "ab".
 ##    `-----------
 ##    
-## Basic Idea:
-## Complexity:
 ## Tags: #redo
 ## --
 ## Created : <2017-10-16>
@@ -66,6 +64,8 @@ class Solution(object):
         :type p: str
         :rtype: List[int]
         """
+        ## Basic Idea:
+        ## Complexity:
         p_dict = {}
         q_dict = {}
         ret = []
