@@ -11,7 +11,7 @@
 ## Tags: #redo
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 18:03:00>
+## Updated: Time-stamp: <2017-10-25 18:04:15>
 ##-------------------------------------------------------------------
 class Solution(object):
     def longestCommonPrefix(self, strs):
@@ -24,8 +24,6 @@ class Solution(object):
         str_count = len(strs)
         if str_count == 0:
             return ""
-        if str_count == 1:
-            return strs[0]
 
         common_prefix = None
         common_length = None
