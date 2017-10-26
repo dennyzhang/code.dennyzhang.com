@@ -7,11 +7,15 @@
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
 ## Description:
-##     https://leetcode.com/problems/roman-to-integer/description/
+##     https://leetcode.com/problems/longest-common-prefix/
+##    ,-----------
+##    | Write a function to find the longest common prefix string amongst an array of strings.
+##    `-----------
+##    
 ## Tags: #redo
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 18:04:15>
+## Updated: Time-stamp: <2017-10-25 23:15:25>
 ##-------------------------------------------------------------------
 class Solution(object):
     def longestCommonPrefix(self, strs):
