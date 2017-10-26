@@ -13,10 +13,10 @@
 ## | 
 ## `-----------
 ##
-## Tags:
+## Tags: #amusing
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 21:26:31>
+## Updated: Time-stamp: <2017-10-25 21:35:58>
 ##-------------------------------------------------------------------
 class Solution(object):
     def containsNearbyDuplicate(self, nums, k):

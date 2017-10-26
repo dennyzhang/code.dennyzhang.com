@@ -56,6 +56,7 @@ More website:
 ## Integer
 - swap two values
 - 2sum, 3sum, 4sum, ksum
+- power of 3: https://leetcode.com/problems/power-of-three/description/
 
 ## Greedy
 - TODO
