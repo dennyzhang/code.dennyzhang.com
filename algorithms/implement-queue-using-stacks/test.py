@@ -27,7 +27,6 @@
 ## Updated: Time-stamp: <2017-10-25 18:27:45>
 ##-------------------------------------------------------------------
 class MyQueue(object):
-
     ## Idea: Use 2 stack. When pop, move to stack1, then stack2
     ## Complexity: Time O(n), Space O(n)
     def __init__(self):
