@@ -73,3 +73,4 @@ More website:
 - Write your idea, before you coding. Update time/space complexity in advance.
 - Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
 - Think in a natural way, instead of a complicated way
+- Time complexity of n is similar to 2n, but it's 100% faster in our real production!
