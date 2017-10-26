@@ -24,14 +24,23 @@
 ## Updated: Time-stamp: <2017-10-25 18:27:45>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def moveZeroes(self, nums):
         """
-        :type s: str
-        :rtype: int
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
         """
-        ## Basic Idea:
-        ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+        ## Idea: 2 pointers
+        ## Complexity: Time O(n), Space O(1)
+        ## 1, 2, 0, 3, 12
+        ## i points to place whose value is 0
+        ## j starts from i+1, point to the place of first non-Zero value
+        length = len(nums)
+        j = 0
+        for i in range(0, length-1):
+            if nums[i] == 0:
+                for j in range(i+1, length):
+                    if nums[j] != 0:
+                        nums[i] = nums[j]
+                        nums[j] = 0
+                        i = j
+                        break

@@ -48,6 +48,7 @@ More website:
 ## Array
 - sliding window solution: int index: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
 - rotate array: https://leetcode.com/problems/rotate-array/description/
+- Move zeros: https://leetcode.com/problems/move-zeroes/description/
 - link in-place change: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 
 ## Linked List
