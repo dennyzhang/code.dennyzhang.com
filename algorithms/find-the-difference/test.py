@@ -7,21 +7,30 @@
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
 ## Description:
-##     https://leetcode.com/problems/roman-to-integer/description/
+##     https://leetcode.com/problems/contains-duplicate-ii/description/
+## ,-----------
+## | Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
+## | 
+## `-----------
+##
 ## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 18:27:45>
+## Updated: Time-stamp: <2017-10-25 21:26:31>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def containsNearbyDuplicate(self, nums, k):
         """
-        :type s: str
-        :rtype: int
+        :type nums: List[int]
+        :type k: int
+        :rtype: bool
         """
-        ## Basic Idea:
-        ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+        ## Ideas: 2 indices: i, j. j starts from i+k
+        ## Complexity: 
+        ##  1 5 3 4 2  k=2
+        length = len(nums)        
+        for i in range(0, length-k):
+            for j in range(i+k, length):
+                if nums[i] == nums[j]:
+                    return True
+        return False
