@@ -75,3 +75,9 @@ More website:
 - Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
 - Think in a natural way, instead of a complicated way
 - Time complexity of n is similar to 2n, but it's 100% faster in our real production!
+- Don't write in your IDE. emacs/vi
+
+## Procedure
+1. Read and explain the question to the interviewr: Show you understand the questions
+2. Interviewer may ask: tell me what you are thinking
+3. Show your programming skills, and how fluent you are with the language and libraries
