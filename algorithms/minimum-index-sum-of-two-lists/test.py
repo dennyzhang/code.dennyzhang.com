@@ -37,14 +37,31 @@
 ## Updated: Time-stamp: <2017-10-25 18:27:45>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def findRestaurant(self, list1, list2):
         """
-        :type s: str
-        :rtype: int
+        :type list1: List[str]
+        :type list2: List[str]
+        :rtype: List[str]
         """
-        ## Basic Idea:
-        ## Complexity:
+        ## Idea:
+        ## Complexity: Time O(n*n), Space O(1)
+        sum_list = []
+        item_list = []
+        for i in range(0, len(list1)):
+            word1 = list1[i]
+            for j in range(0, len(list2)):
+                word2 = list2[j]
+                if word1 == word2:
+                    sum_list.append(i+j)
+                    item_list.append(word1)
+                    break
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+        min_sum = sum_list[0]
+        for i in range(1, len(sum_list)):
+            if min_sum > sum_list[i]:
+                min_sum = sum_list[i]
+        ret = []
+        for i in range(0, len(sum_list)):
+            if min_sum == sum_list[i]:
+                ret.append(item_list[i])
+        return ret
