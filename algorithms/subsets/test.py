@@ -39,7 +39,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        ## Idea: The combination is 2**num. 
+        ## Idea: Bit manipulation. The combination is 2**num. 
         ##       1. Generate a seed from 0 to 2**num-1
         ##       2. Then check all binary bits of that value. 
         ##       3. If any digit it's 1, show the corresponding value
