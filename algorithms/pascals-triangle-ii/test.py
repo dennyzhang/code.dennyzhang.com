@@ -10,10 +10,10 @@
 ##     https://leetcode.com/problems/pascals-triangle-ii/description/
 ## Basic Idea:
 ## Complexity:
-## Tags: tail recursive
+## Tags: #redo
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 18:22:05>
+## Updated: Time-stamp: <2017-10-26 19:32:21>
 ##-------------------------------------------------------------------
 class Solution(object):
     def getRow(self, rowIndex):
