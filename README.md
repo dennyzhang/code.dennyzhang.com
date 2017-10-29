@@ -83,3 +83,7 @@ More website:
 3. Show your programming skills: how fluent you are with the language and lib
 4. Watch out Complexity trade-off, and you may need to explain them
 5. You can run unit test
+
+## Command
+- Find amusing tickets
+find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https

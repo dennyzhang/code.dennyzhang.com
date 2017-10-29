@@ -21,15 +21,41 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:14>
 ##-------------------------------------------------------------------
-class Solution(object):
-    def romanToInt(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        ## Basic Idea:
-        ## Complexity:
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+class Solution(object):
+    def detectCycle(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        ## Ideas: Two pointers: one move one step, the other move 2 steps each time.
+        ##                      If the two pointers meet, we have the circle. Otherwise we don't.
+        ##                      m == n
+        ## Complexity: Time O(n), Space O(1)
+        if head is None:
+            return None
+        p = head
+        q = head
+        while True:
+            p = p.next
+            if q.next is None:
+                q = None
+                break
+            q = q.next.next
+            if (q is None) or (p == q):
+                break
+
+        if q is None:
+            return None
+        else:
+            # move one pointer back to head
+            p = head
+            while(p!=q):
+                p = p.next
+                q = q.next
+            return p
