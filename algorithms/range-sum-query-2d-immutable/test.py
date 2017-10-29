@@ -37,15 +37,60 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-29 09:24:32>
 ##-------------------------------------------------------------------
-class Solution(object):
-    def romanToInt(self, s):
+class NumMatrix(object):
+    ## Idea: Maintain a matrix: value[i][j] = sum(matrix[0][0] to matrix[i][j]). 
+    ##       Thus we can get the sum in Time O(1)
+    ## Complexity:
+    def __init__(self, matrix):
         """
-        :type s: str
+        :type matrix: List[List[int]]
+        """
+        self.is_empty = False
+        if matrix is None:
+            self.is_empty = True
+            return
+        height = len(matrix)
+        if height == 0:
+            self.is_empty = True
+            return
+
+        width = len(matrix[0])
+        self.sum_matrix = []*height
+        for i in range(0, height):
+            self.sum_matrix.append([0]*width)
+        # calculate the sum
+        for i in range(0, height):
+            for j in range(0, width):
+                if i == 0:
+                    self.sum_matrix[i][j] = 0
+                    for k in range(0, j+1):
+                        self.sum_matrix[i][j] += matrix[i][k]
+                elif j == 0:
+                    self.sum_matrix[i][j] = 0
+                    for k in range(0, i+1):
+                        self.sum_matrix[i][j] += matrix[k][j]
+                else:
+                    self.sum_matrix[i][j] = matrix[i][j] \
+                                + self.sum_matrix[i-1][j] \
+                                + self.sum_matrix[i][j-1] \
+                                - self.sum_matrix[i-1][j-1]
+        
+    def sumRegion(self, row1, col1, row2, col2):
+        """
+        :type row1: int
+        :type col1: int
+        :type row2: int
+        :type col2: int
         :rtype: int
         """
-        ## Basic Idea:
-        ## Complexity:
+        if self.is_empty:
+            return None
+        else:
+            return self.sum_matrix[row2][col2] \
+                    - (self.sum_matrix[row1-1][col2] if row1>0 else 0) \
+                    - (self.sum_matrix[row2][col1-1] if col1>0 else 0) \
+                    + (self.sum_matrix[row1-1][col1-1] if row1>0 and col1>0 else 0)
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+# Your NumMatrix object will be instantiated and called as such:
+# obj = NumMatrix(matrix)
+# param_1 = obj.sumRegion(row1,col1,row2,col2)
