@@ -6,14 +6,14 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/merge-sorted-array/description/
 ## Basic Idea:
 ## Complexity:
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-24 16:12:44>
+## Updated: Time-stamp: <2017-10-28 21:01:17>
 ##-------------------------------------------------------------------
 class Solution(object):
     def merge(self, nums1, m, nums2, n):

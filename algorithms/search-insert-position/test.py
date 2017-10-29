@@ -6,14 +6,14 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/search-insert-position/description/
 ## Basic Idea:
 ## Complexity:
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 18:22:03>
+## Updated: Time-stamp: <2017-10-28 21:01:13>
 ##-------------------------------------------------------------------
 class Solution(object):
     def searchInsert(self, nums, target):

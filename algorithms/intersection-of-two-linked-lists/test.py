@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/intersection-of-two-linked-lists/description/
 ##    ,-----------
@@ -30,7 +31,6 @@
 ##    | Your code should preferably run in O(n) time and use only O(1) memory.
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

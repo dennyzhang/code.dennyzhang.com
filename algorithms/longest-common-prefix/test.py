@@ -6,16 +6,16 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/longest-common-prefix/
 ##    ,-----------
 ##    | Write a function to find the longest common prefix string amongst an array of strings.
 ##    `-----------
 ##    
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 23:15:25>
+## Updated: Time-stamp: <2017-10-28 21:01:18>
 ##-------------------------------------------------------------------
 class Solution(object):
     def longestCommonPrefix(self, strs):

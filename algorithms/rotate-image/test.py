@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/rotate-image/description/
 ##    ,-----------
@@ -49,7 +50,6 @@
 ##    |   [16, 7,10,11]
 ##    | ]
 ##    `-----------
-## Tags: #amusing, #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 15:58:18>

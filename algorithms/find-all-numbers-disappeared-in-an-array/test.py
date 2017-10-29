@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo, #amusing
 ## Description:
 ##     https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 ## ,-----------
@@ -24,7 +25,6 @@
 ## | [5,6]
 ## `-----------
 ##
-## Tags: #redo, #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 23:24:46>

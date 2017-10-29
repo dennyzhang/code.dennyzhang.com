@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/sum-of-square-numbers/description/
 ##    ,-----------
@@ -19,7 +20,6 @@
 ##    | Input: 3
 ##    | Output: False
 ##    `-----------
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

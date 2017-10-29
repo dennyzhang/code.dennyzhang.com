@@ -6,12 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/delete-node-in-a-linked-list/description/
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 08:36:47>
+## Updated: Time-stamp: <2017-10-28 21:01:20>
 ##-------------------------------------------------------------------
 # Definition for singly-linked list.
 # class ListNode(object):

@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##    ,-----------
 ##    | Given a digit string, return all possible letter combinations that the number could represent.
@@ -19,7 +20,6 @@
 ##    | Note:
 ##    | Although the above answer is in lexicographical order, your answer could be in any order you want.
 ##    `-----------
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 17:21:30>

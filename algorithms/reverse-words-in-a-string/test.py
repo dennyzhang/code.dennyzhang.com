@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/reverse-words-in-a-string/description/
 ##    ,-----------
@@ -19,7 +20,6 @@
 ##    | For C programmers: Try to solve it in-place in O(1) space.
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-26 21:41:00>

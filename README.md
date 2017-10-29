@@ -80,6 +80,6 @@ More website:
 ## Procedure
 1. Read and explain the question to the interviewr: Show you understand the questions
 2. Interviewer may ask: tell me what you are thinking
-3. Show your programming skills, and how fluent you are with the language and libraries
+3. Show your programming skills: how fluent you are with the language and lib
 4. Watch out Complexity trade-off, and you may need to explain them
 5. You can run unit test

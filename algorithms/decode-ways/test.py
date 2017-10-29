@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/decode-ways/description/
 ##    ,-----------
@@ -23,7 +24,6 @@
 ##    | The number of ways decoding "12" is 2.
 ##    `-----------
 ##
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 23:50:33>

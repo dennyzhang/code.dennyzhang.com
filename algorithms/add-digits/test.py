@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/find-the-difference/description/
 ## ,-----------
@@ -28,7 +29,6 @@
 ## | 'e' is the letter that was added.
 ## `-----------
 ## 
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

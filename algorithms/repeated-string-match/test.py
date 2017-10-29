@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/repeated-string-match/description/
 ##    ,-----------
@@ -19,7 +20,6 @@
 ##    | The length of A and B will be between 1 and 10000.
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

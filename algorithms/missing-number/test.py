@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/missing-number/description/
 ## ,-----------
@@ -18,7 +19,6 @@
 ## | Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
 ## `-----------
 ## 
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 17:06:36>

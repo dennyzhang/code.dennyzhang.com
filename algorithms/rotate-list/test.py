@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/rotate-list/description/
 ## Basic Idea:
@@ -14,10 +15,9 @@
 ##    head    p      q  r
 ##
 ## Complexity:
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 18:22:04>
+## Updated: Time-stamp: <2017-10-28 21:01:13>
 ##-------------------------------------------------------------------
 class Solution(object):
     def rotateRight(self, head, k):

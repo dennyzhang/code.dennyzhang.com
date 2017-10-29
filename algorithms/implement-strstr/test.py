@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/implement-strstr/description/
 ##    ,-----------
@@ -14,10 +15,9 @@
 ##    | Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-26 19:40:21>
+## Updated: Time-stamp: <2017-10-28 21:01:19>
 ##-------------------------------------------------------------------
 class Solution(object):
     def strStr(self, haystack, needle):

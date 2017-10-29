@@ -6,14 +6,14 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 ## Basic Idea:
 ## Complexity:
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 23:13:57>
+## Updated: Time-stamp: <2017-10-28 21:01:17>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):

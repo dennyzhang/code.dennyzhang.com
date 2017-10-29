@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/first-missing-positive/description/
 ## ,-----------
@@ -18,7 +19,6 @@
 ## | Your algorithm should run in O(n) time and uses constant space.
 ## `-----------
 ## 
-## Tags: #amusing, #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 17:22:00>

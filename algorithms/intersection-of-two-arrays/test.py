@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/intersection-of-two-arrays/description/
 ##    ,-----------
@@ -19,7 +20,6 @@
 ##    | The result can be in any order.
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

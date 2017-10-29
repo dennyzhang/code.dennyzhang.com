@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/repeated-substring-pattern/description/
 ##    ,-----------
@@ -29,7 +30,6 @@
 ##    | Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-27 11:24:41>

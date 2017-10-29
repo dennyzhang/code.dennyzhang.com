@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/sqrtx/description/
 ##    ,-----------
@@ -14,10 +15,9 @@
 ##    | Compute and return the square root of x.
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-27 18:48:08>
+## Updated: Time-stamp: <2017-10-28 21:01:13>
 ##-------------------------------------------------------------------
 class Solution(object):
     def romanToInt(self, s):

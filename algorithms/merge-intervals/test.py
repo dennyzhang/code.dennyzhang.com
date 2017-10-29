@@ -6,12 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/merge-intervals/description/
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 22:28:08>
+## Updated: Time-stamp: <2017-10-28 21:01:17>
 ##-------------------------------------------------------------------
 class Solution(object):
     def merge(self, intervals):

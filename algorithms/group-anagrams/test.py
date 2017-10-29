@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/group-anagrams/description/
 ##    ,-----------
@@ -21,7 +22,6 @@
 ##    | ]
 ##    | Note: All inputs will be in lower-case.
 ##    `-----------
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

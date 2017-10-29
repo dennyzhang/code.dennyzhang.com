@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/implement-queue-using-stacks/description/
 ##    ,-----------
@@ -21,7 +22,6 @@
 ##    | You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
 ##    `-----------
 ##    
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

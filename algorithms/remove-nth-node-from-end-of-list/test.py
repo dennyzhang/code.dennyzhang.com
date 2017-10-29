@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing
 ## Description:
 ##     https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 ##    ,-----------
@@ -22,7 +23,6 @@
 ##    `-----------
 ##    
 ##    
-## Tags: #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 17:21:30>

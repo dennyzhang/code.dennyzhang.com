@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/range-sum-query-immutable/description/
 ##    ,-----------
@@ -21,7 +22,6 @@
 ##    | You may assume that the array does not change.
 ##    | There are many calls to sumRange function.
 ##    `-----------
-## Tags: #amusing, #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 22:16:24>
@@ -34,6 +34,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/range-sum-query-immutable/description/
 ##    ,-----------
@@ -49,7 +50,6 @@
 ##    | You may assume that the array does not change.
 ##    | There are many calls to sumRange function.
 ##    `-----------
-## Tags: #amusing, #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 22:16:24>

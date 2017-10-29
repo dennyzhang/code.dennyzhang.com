@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/combination-sum-iii/description/
 ##    ,-----------
@@ -29,7 +30,6 @@
 ##    | [[1,2,6], [1,3,5], [2,3,4]]
 ##    `-----------
 ##    
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-23 18:22:04>

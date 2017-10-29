@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing
 ## Description:
 ##     https://leetcode.com/problems/poor-pigs/description/
 ##    ,-----------
@@ -18,7 +19,6 @@
 ##    | If there are n buckets and a pig drinking poison will die within m minutes, how many pigs (x) you need to figure out the "poison" bucket within p minutes? There is exact one bucket with poison.
 ##    | 
 ##    `-----------
-## Tags: #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-26 14:35:06>

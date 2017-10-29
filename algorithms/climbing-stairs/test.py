@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/climbing-stairs/description/
 ##    ,-----------
@@ -16,7 +17,6 @@
 ##    | Note: Given n will be a positive integer.
 ##    `-----------
 ##
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

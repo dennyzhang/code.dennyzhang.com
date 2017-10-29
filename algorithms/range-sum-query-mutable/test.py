@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/range-sum-query-mutable/description/
 ##    ,-----------
@@ -23,7 +24,6 @@
 ##    | You may assume the number of calls to update and sumRange function is distributed evenly.
 ##    `-----------
 ##
-## Tags: #amusing, #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

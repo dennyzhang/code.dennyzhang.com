@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing
 ## Description:
 ##     https://leetcode.com/problems/restore-ip-addresses/description/
 ## ,-----------
@@ -17,7 +18,6 @@
 ## | return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 ## `-----------
 ## 
-## Tags: #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:05:59>

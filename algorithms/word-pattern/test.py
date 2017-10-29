@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/word-pattern/description/
 ## ,-----------
@@ -22,7 +23,6 @@
 ## | You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.
 ## `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 23:24:46>

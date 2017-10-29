@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing
 ## Description:
 ##     https://leetcode.com/problems/non-decreasing-array/description/
 ##    ,-----------
@@ -28,7 +29,6 @@
 ##    | Note: The n belongs to [1, 10,000].
 ##    `-----------
 ##
-## Tags: #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 14:54:32>

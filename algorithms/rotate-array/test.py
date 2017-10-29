@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo, #amusing
 ## Description:
 ##     https://leetcode.com/problems/rotate-array/description/
 ##    ,-----------
@@ -26,7 +27,6 @@
 ##
 ## Basic Idea:
 ## Complexity:
-## Tags: #redo, #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-23 18:22:04>

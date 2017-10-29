@@ -6,12 +6,20 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags:
+## Tags: #redo
 ## Description:
-##     https://leetcode.com/problems/roman-to-integer/description/
+##     https://leetcode.com/problems/largest-number/description/
+##    ,-----------
+##    | Given a list of non negative integers, arrange them such that they form the largest number.
+##    | 
+##    | For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.
+##    | 
+##    | Note: The result may be very large, so you need to return a string instead of an integer.
+##    `-----------
+##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:14>
+## Updated: Time-stamp: <2017-10-25 18:27:45>
 ##-------------------------------------------------------------------
 class Solution(object):
     def romanToInt(self, s):

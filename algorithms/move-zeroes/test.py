@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/move-zeroes/description/
 ##    ,-----------
@@ -18,7 +19,6 @@
 ##    | Minimize the total number of operations.
 ##    `-----------
 ##
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

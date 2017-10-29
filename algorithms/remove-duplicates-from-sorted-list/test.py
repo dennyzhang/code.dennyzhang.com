@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 ## ,-----------
@@ -16,7 +17,6 @@
 ## | Given 1->1->2->3->3, return 1->2->3.
 ## `-----------
 ##
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 18:27:45>

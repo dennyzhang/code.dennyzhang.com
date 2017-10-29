@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/implement-stack-using-queues/description/
 ##    ,-----------
@@ -21,7 +22,6 @@
 ##    | You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-26 18:12:36>

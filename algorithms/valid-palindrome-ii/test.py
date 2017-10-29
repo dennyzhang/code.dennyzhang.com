@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/valid-palindrome-ii/description/
 ##    ,-----------
@@ -23,7 +24,6 @@
 ##    `-----------
 ## Basic Idea:
 ## Complexity:
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-23 23:54:32>

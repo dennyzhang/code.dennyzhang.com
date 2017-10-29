@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: amusing
 ## Description:
 ##     https://leetcode.com/problems/majority-element/description/
 ##    ,-----------
@@ -14,10 +15,9 @@
 ##    | You may assume that the array is non-empty and the majority element always exist in the array.
 ##    `-----------
 ##
-## Tags: amusing
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 14:14:29>
+## Updated: Time-stamp: <2017-10-28 21:01:18>
 ##-------------------------------------------------------------------
 class Solution(object):
     def majorityElement1(self, nums):

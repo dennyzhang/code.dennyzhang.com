@@ -6,9 +6,9 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/isomorphic-strings/description/
-## Tags:
 ## ,-----------
 ## | Given two strings s and t, determine if they are isomorphic.
 ## | 

@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/maximum-subarray/description/
 ##    ,-----------
@@ -15,7 +16,6 @@
 ##    | the contiguous subarray [4,-1,2,1] has the largest sum = 6.
 ##    `-----------
 ##    
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 16:12:45>

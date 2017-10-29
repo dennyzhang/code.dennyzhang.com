@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 ##    ,-----------
@@ -20,7 +21,6 @@
 ##    | 
 ##    `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-24 17:21:30>

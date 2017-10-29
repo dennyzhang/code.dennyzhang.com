@@ -6,12 +6,12 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/merge-two-sorted-lists/description/
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 22:57:20>
+## Updated: Time-stamp: <2017-10-28 21:01:17>
 ##-------------------------------------------------------------------
 class Solution(object):
     def mergeTwoLists(self, l1, l2):

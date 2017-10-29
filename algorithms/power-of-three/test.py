@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #amusing
 ## Description:
 ##     https://leetcode.com/problems/power-of-three/description/
 ##    ,-----------
@@ -16,7 +17,6 @@
 ##    | 
 ##    `-----------
 ##
-## Tags: #amusing
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-25 21:40:38>

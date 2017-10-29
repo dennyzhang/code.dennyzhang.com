@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
 ##    ,-----------
@@ -40,7 +41,6 @@
 ##    | The substring with start index = 2 is "ab", which is an anagram of "ab".
 ##    `-----------
 ##    
-## Tags: #redo
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-23 18:22:06>

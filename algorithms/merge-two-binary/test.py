@@ -6,14 +6,14 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/merge-two-binary-trees/description/
 ## Basic Idea:
 ## Complexity:
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 18:22:05>
+## Updated: Time-stamp: <2017-10-28 21:01:17>
 ##-------------------------------------------------------------------
 class Solution(object):
     def twoSum(self, nums, target):

@@ -6,6 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/contains-duplicate/description/
 ## ,-----------
@@ -13,10 +14,9 @@
 ## | 
 ## `-----------
 ##
-## Tags:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 17:45:12>
+## Updated: Time-stamp: <2017-10-28 21:01:21>
 ##-------------------------------------------------------------------
 class Solution(object):
     def containsDuplicate(self, nums):
