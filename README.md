@@ -52,6 +52,7 @@ More website:
 - link in-place change: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 
 ## Linked List
+**How many pointers you use? For what purpose?**
 - Remove Duplicates from Sorted List: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 - Remove Remove Duplicates from Sorted List II: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
 - Reverse elements from i to j
