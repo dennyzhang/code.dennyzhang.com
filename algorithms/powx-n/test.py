@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags:
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/powx-n/description/
 ##    ,-----------
@@ -15,7 +15,7 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-30 15:39:08>
+## Updated: Time-stamp: <2017-10-30 15:41:52>
 ##-------------------------------------------------------------------
 class Solution(object):
     def myPow(self, x, n):
