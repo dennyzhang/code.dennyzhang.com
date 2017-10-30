@@ -9,6 +9,14 @@
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/merge-intervals/description/
+##    ,-----------
+##    | Given a collection of intervals, merge all overlapping intervals.
+##    | 
+##    | For example,
+##    | Given [1,3],[2,6],[8,10],[15,18],
+##    | return [1,6],[8,10],[15,18]
+##    `-----------
+##
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:17>

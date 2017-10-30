@@ -9,11 +9,15 @@
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/palindrome-number/description/
+##    ,-----------
+##    | Determine whether an integer is a palindrome. Do this without extra space.
+##    `-----------
+##
 ## Basic Idea:
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
+## Updated: Time-stamp: <2017-10-30 14:22:31>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isPalindrome(self, x):
