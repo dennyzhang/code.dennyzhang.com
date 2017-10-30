@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #amusing
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 ##    ,-----------
@@ -31,14 +31,35 @@
 ## Updated: Time-stamp: <2017-10-28 21:01:14>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def maxProfit(self, prices):
         """
-        :type s: str
+        :type prices: List[int]
         :rtype: int
         """
-        ## Basic Idea:
-        ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+        ## Idea: Suppose L is separated by L1 and L2.
+        ##       If the max_profit happens in between L1 and L2,
+        ##       it means we buy with some price in L1, then seel with some price in L2.
+        ##       The buy price will be the mininum value within L1
+        ##        
+        ##
+        ##       Here we suppose to scan the list only once
+        ##
+        ##       max_profit: best deal within L1
+        ##       min_value: the mininum price within L1
+        ##           
+        ##       
+        ## Complexity: Time O(n), Space O(1)
+        ## Sample Data:
+        ##     7, 1, 5, 3, 6, 4
+        ##
+        length = len(prices)
+        if length < 2:
+            return 0
+        min_value = prices[0]
+        max_profit = -1
+        for i in range(1, length):
+            if prices[i] < min_value:
+                min_value = prices[i]
+            elif prices[i] > min_value and prices[i] - min_value > max_profit:
+                max_profit = prices[i] - min_value
+        return max_profit if max_profit > 0 else 0            
