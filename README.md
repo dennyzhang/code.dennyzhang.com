@@ -13,9 +13,8 @@ More website:
 # Summary
 
 ## Tree
-- traverse: first, middle, right
+- **6 Traverse of Binary Tree**: first, middle, right; non-recursive first, middle, right
 - DFS, BFS
-- traverse: recursive and non-recursive way
 - Sum of left leaves: https://leetcode.com/problems/sum-of-left-leaves/description/
 - Get min and max depth of binary tree
 
