@@ -17,12 +17,6 @@
 ##    | return 4->5->1->2->3->NULL.
 ##    `-----------
 ##
-## Basic Idea:
-##      1->2->3->4->5->NULL
-##      1->2->3->    4->5->NULL
-##    head    p      q  r
-##
-## Complexity:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:13>
@@ -34,6 +28,12 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        ## Basic Idea:
+        ##      1->2->3->4->5->NULL
+        ##      1->2->3->    4->5->NULL
+        ##    head    p      q  r
+        ##
+        ## Complexity:
         if head is None or head.next is None:
             return head
 
