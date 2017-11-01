@@ -39,6 +39,40 @@ class Solution(object):
         ## Complexity: Time O(n*n), Space O(1)
         ## Sample Data:
         ##      -4 -1 -1 0 1 2
+        ##       i l         r
+        ret = []
+        nums.sort()
+
+        for i in xrange(len(nums)-2):
+            if i>0 and nums[i] == nums[i-1]:
+                continue
+            l,r = i+1, len(nums)-1
+            while l<r:
+                val = nums[i] + nums[l] + nums[r]
+                if val >0:
+                    r -= 1
+                elif val < 0:
+                    l += 1
+                else:
+                    ret.append([nums[i], nums[l], nums[r]])
+                    while l<r and nums[l] == nums[l+1]:
+                        l += 1
+                    while l<r and nums[r] == nums[r-1]:
+                        r -= 1
+                    l += 1; r -=1
+        return ret
+            
+    def threeSum_v1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        ## Idea: sort the list, then loop with idea of 2 sum
+        ##       What if you have duplicate entries?
+        ##       [0, 0, 0, 0]
+        ## Complexity: Time O(n*n), Space O(1)
+        ## Sample Data:
+        ##      -4 -1 -1 0 1 2
         ##       i j         k
         ret = []
         nums.sort()
@@ -70,4 +104,3 @@ class Solution(object):
                     j += 1
             i += 1
         return ret
-        
