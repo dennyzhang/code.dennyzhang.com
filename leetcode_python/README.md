@@ -76,15 +76,6 @@ More website:
 - Complexity
 - Tags: #amusing, #redo
 
-## Lesson learned from Cracking leetcode.com
-- Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
-- Understand data structure and common library in your languages: Python TreeNode, Python Interval
-- Write your idea, before you coding. Update time/space complexity in advance.
-- Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
-- Think in a natural way, instead of a complicated way
-- Time complexity of n is similar to 2n, but it's 100% faster in our real production!
-- Don't write in your IDE. emacs/vi
-
 ## Procedure
 1. Read and explain the question to the interviewr: Show you understand the questions
 2. Interviewer may ask: tell me what you are thinking
@@ -95,3 +86,13 @@ More website:
 ## Command
 - Find amusing tickets
 find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
+
+## Lesson learned from Cracking leetcode.com
+- Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
+- Understand data structure and common library in your languages: Python TreeNode, Python Interval
+- Write your idea, before you coding. Update time/space complexity in advance.
+- Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
+- Think in a natural way, instead of a complicated way
+- Time complexity of n is similar to 2n, but it's 100% faster in our real production!
+- Don't write in your IDE. emacs/vi
+- Choose the proper variable names
