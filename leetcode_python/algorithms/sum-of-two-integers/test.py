@@ -9,6 +9,16 @@
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/sum-of-two-integers/description/
+##    ,-----------
+##    | Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
+##    | 
+##    | Example:
+##    | Given a = 1 and b = 2, return 3.
+##    | 
+##    | Credits:
+##    | Special thanks to @fujiaozhu for adding this problem and creating all test cases.
+##    `-----------
+##
 ## Basic Idea:
 ## Complexity:
 ## --
@@ -22,59 +32,31 @@ class Solution(object):
         :type b: int
         :rtype: int
         """
-        list1 = []
-        list2 = []
-
-        if a == 0:
-            list1 = [0]
-
-        if b == 0:
-            list2 = [0]
-        
-        while a != 0:
-            list1.append(a%2)
-            a = a/2
-
-        while b != 0:
-            list2.append(b%2)
-            b = b/2
-
-        i = 0
-        j = 0
-
-        val = 0
-        has_overflow = False
-        while i < len(list1) and j < len(list2):
-            if list1[i] == 0 and list2[j] == 0:
-                if has_overflow is True:
-                    val = (val >> 1) | 1
-                    has_overflow = False
-                else:
-                    val = (val >> 1) | 0
-
-            if list1[i] == 0 and list2[j] == 1:
-                if has_overflow is True:
-                    val = (val >> 1) | 0
-                    has_overflow = True
-                else:
-                    val = (val >> 1) | 0
-
-            if list1[i] == 1 and list2[j] == 0:
-                val = (val >> 1) | 1
-
-            if list1[i] == 1 and list2[j] == 1:
-                val = (val >> 1) | 0
-                has_overflow = True
-
-        print list1
-        print list2
-
-if __name__ == '__main__':
-    s = Solution()
-    print s.getSum(1, 2)
-    print s.getSum(2, 2)
-    print s.getSum(0, 2)
-    print s.getSum(0, 0)
-    print s.getSum(5, 22)
-    # print s.getSum(-2, 3)
-## File: test.py ends
+        ## Idea: a xor b: get sum without carry. a & b >> 1 carry
+        ## Complexity:
+        ## Sample data:
+        ##       9
+        ##       5
+        ##     8 4 2 1
+        ##     1 0 0 1
+        ##     0 1 0 1
+        ##
+        ## res 1 1 1 0
+        ##
+        ## or  1 1 0 1
+        ## and 0 0 0 1
+        ## xor 1 1 0 0
+        ##
+        ##     8 4 2 1
+        ##     0 0 1 0
+        ##     0 0 1 1
+        ##
+        ##     0 1 0 0
+        ##     0 0 0 1
+        MOD     = 0xFFFFFFFF
+        MAX_INT = 0x7FFFFFFF
+        while b!= 0:
+            c = a & b
+            a = (a ^ b) & MOD
+            b = (c << 1) & MOD
+        return a if a <= MAX_INT else ~(a & MAX_INT) ^ MAX_INT
