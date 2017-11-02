@@ -97,3 +97,4 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Descripti
 - Don't write in your IDE. emacs/vi
 - **Choose the proper variable names: easy to understand**
 - **Explain the usage of your key data structure**
+- **Read other people's code, then learn something**
