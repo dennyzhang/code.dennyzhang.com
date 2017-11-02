@@ -31,14 +31,30 @@
 ## Updated: Time-stamp: <2017-10-28 21:01:14>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def minimumTotal(self, triangle):
         """
-        :type s: str
+        :type triangle: List[List[int]]
         :rtype: int
         """
-        ## Basic Idea:
-        ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+        ## Idea: From bottom to top.
+        ##       a + b + c ... + e
+        ##       To get the mininum sum, e always have 2 possibilites.
+        ##       And we need to choose the smaller one
+        ##       last_mininum_list: mininum total from current layer to the bottom
+        ## Complexity: Time O(n*n), Space O(n)
+        ## Sample Data
+        ##         -1
+        ##        2  3
+        ##      1  -1  -3
+        if len(triangle) == 0:
+            return None
+        if len(triangle) == 1:
+            return triangle[0][0]
+    
+        last_mininum_list = [0]*len(triangle[-1])
+        for i in range(len(triangle)-1, 0, -1):
+            entry = triangle[i]
+            for j in range(0, len(entry)-1):
+                last_mininum_list[j] = min(entry[j]+last_mininum_list[j], \
+                                            entry[j+1]+last_mininum_list[j+1])
+        return last_mininum_list[0] + triangle[0][0]

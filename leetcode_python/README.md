@@ -95,4 +95,5 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Descripti
 - Think in a natural way, instead of a complicated way
 - Time complexity of n is similar to 2n, but it's 100% faster in our real production!
 - Don't write in your IDE. emacs/vi
-- Choose the proper variable names
+- **Choose the proper variable names: easy to understand**
+- **Explain the usage of your key data structure**
