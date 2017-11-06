@@ -27,33 +27,38 @@
 ##    | Return the sum = 12 + 13 = 25.
 ##    `-----------
 ##
-##
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-11-03 10:14:57>
 ##-------------------------------------------------------------------
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
-    def myPow(self, x, n):
+    def sumNumbers(self, root):
         """
-        :type x: float
-        :type n: int
-        :rtype: float
+        :type root: TreeNode
+        :rtype: int
         """
-        ## Idea: x^n = x^(n/2) * x^(n/2) * x^(n%2)
-        ## Complexity: Time O(log(n)), Space O(1)
-        ## Sample Data:
-        ##   pow(5, 3) = 5*5*5
-        ##   pow(5, -3) = ?
-        ##   pow(-5, 3) = (-5)*(-5)*(-5)
-        ##   pow(5.1, 3) = 5.1*5.1*5.1
-        ##   x^n = x^(n/2) * x^(n/2) * x^(n%2)
-        ##   pow(x, -n) = 1/pow(x, n)
-        if n == 0:
-            return 1
-        if n < 0:
-            return 1/self.myPow(x, -n)
-        if n == 1:
-            return x
-        if(n>=2):
-            val = self.myPow(x, n/2)
-            return val*val*self.myPow(x, n%2)
+        ## Idea: BFS
+        ## Complexity:
+        res = 0
+        if root is None:
+            return 0
+        queue = []
+        queue.append((root, root.val))
+        while len(queue) != 0:
+            (node, value) = queue[0]
+            del queue[0]
+            if node.left:
+                queue.append((node.left, value*10 + node.left.val))
+            if node.right:
+                queue.append((node.right, value*10 + node.right.val))
+            # left node
+            if node.left is None and node.right is None:
+                res += value
+        return res
