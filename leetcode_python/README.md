@@ -19,6 +19,8 @@ More website:
 - **6 Traverse of Binary Tree**: first, middle, right; non-recursive first, middle, right
 - DFS, BFS
 - **BFS: Generate Parentheses**: https://leetcode.com/problems/generate-parentheses/description/
+- System Tree: https://leetcode.com/problems/symmetric-tree/description/
+
 ```
 - Define how many layers
 - what value to get and concat
