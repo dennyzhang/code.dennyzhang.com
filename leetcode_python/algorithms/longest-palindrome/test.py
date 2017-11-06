@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #redo
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/longest-palindrome/description/
 ##    ,-----------
