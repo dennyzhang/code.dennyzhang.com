@@ -8,9 +8,9 @@
 ## Author : Denny <contact@dennyzhang.com>
 ## Tags: #redo
 ## Description:
-##     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+##     https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 ##    ,-----------
-##    | Given a binary tree, return the inorder traversal of its nodes' values.
+##    | Given a binary tree, return the preorder traversal of its nodes' values.
 ##    | 
 ##    | For example:
 ##    | Given binary tree [1,null,2,3],
@@ -19,7 +19,7 @@
 ##    |      2
 ##    |     /
 ##    |    3
-##    | return [1,3,2].
+##    | return [1,2,3].
 ##    | 
 ##    | Note: Recursive solution is trivial, could you do it iteratively?
 ##    `-----------
@@ -36,57 +36,49 @@
 #         self.left = None
 #         self.right = None
 
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution(object):
-    def inorderTraversal(self, root):
+    def preorderTraversal(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
         """
-        if root is None:
-            return []
         res = []
         stack = []
         p = root
-        # initialize the stack
+        # Whatever I have pushed to stack, I have visited already
         while p:
+            res.append(p.val)
             stack.append(p)
             p = p.left
 
-        # DFS
-        while(len(stack) != 0):
+        while len(stack) != 0:
             top_item = stack.pop()
-            res.append(top_item.val)
+            # get right
             if top_item.right:
                 p = top_item.right
                 while p:
+                    res.append(p.val)
                     stack.append(p)
                     p = p.left
         return res
 
-    def inorderTraversal_v1(self, root):
+    def preorderTraversal_v1(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
         """
-        l = []
-        self.inorderTraversalRec(root, l)
-        return l
-    
-    def inorderTraversalRec(self, root, list_value):
+        res = []
+        self.preorderTraversalRec(root, res)
+        return res
+    def preorderTraversalRec(self, root, list_value):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
         if root is None:
             return
-
-        if root.left is not None:
-            self.inorderTraversalRec(root.left, list_value)
-        
         list_value.append(root.val)
-
-        if root.right is not None:
-            self.inorderTraversalRec(root.right, list_value)
+        if root.left:
+            self.preorderTraversalRec(root.left, list_value)
+        if root.right:
+            self.preorderTraversalRec(root.right, list_value)
