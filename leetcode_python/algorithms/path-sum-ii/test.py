@@ -8,13 +8,26 @@
 ## Author : Denny <contact@dennyzhang.com>
 ## Tags:
 ## Description:
-##     https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
+##     https://leetcode.com/problems/path-sum-ii/description/
 ##    ,-----------
-##    | Given a binary tree, find its maximum depth.
+##    | Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
 ##    | 
-##    | The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-##    | 
+##    | For example:
+##    | Given the below binary tree and sum = 22,
+##    |               5
+##    |              / \
+##    |             4   8
+##    |            /   / \
+##    |           11  13  4
+##    |          /  \    / \
+##    |         7    2  5   1
+##    | return
+##    | [
+##    |    [5,4,11,2],
+##    |    [5,8,4,5]
+##    | ]
 ##    `-----------
+##
 ##
 ## Basic Idea:
 ## Complexity:

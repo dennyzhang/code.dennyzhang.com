@@ -17,11 +17,20 @@ More website:
 
 ## Tree
 - **6 Traverse of Binary Tree**: first, middle, right; non-recursive first, middle, right
+```
+https://leetcode.com/problems/binary-tree-preorder-traversal/description/
+https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+https://leetcode.com/problems/binary-tree-postorder-traversal/description/
+```
 - DFS, BFS
 - **BFS: Generate Parentheses**: https://leetcode.com/problems/generate-parentheses/description/
 - System Tree: https://leetcode.com/problems/symmetric-tree/description/
-
+- Path Sum
 ```
+II: https://leetcode.com/problems/path-sum-ii/description/
+III: https://leetcode.com/problems/path-sum-iii/description/
+```
+
 - Define how many layers
 - what value to get and concat
 ```
