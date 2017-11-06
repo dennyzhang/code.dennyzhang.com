@@ -42,9 +42,40 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
 class Solution(object):
     def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        import sys
+        return self._isValidBST(root, -sys.maxsize-1, sys.maxsize)
+
+    def _isValidBST(self, root, min_value, max_value):
+        if root is None:
+            return True
+
+        if root.val <= min_value or root.val >= max_value:
+            return False
+
+        if root.left:
+            if self._isValidBST(root.left, min_value, root.val) is False:
+                return False
+
+        if root.right:
+            if self._isValidBST(root.right, root.val, max_value) is False:
+                return False
+
+        return True
+
+    def isValidBST_v1(self, root):
         """
         :type root: TreeNode
         :rtype: bool
