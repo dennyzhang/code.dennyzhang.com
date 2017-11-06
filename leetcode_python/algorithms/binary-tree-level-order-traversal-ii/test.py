@@ -32,27 +32,30 @@
 ## Updated: Time-stamp: <2017-11-03 10:14:57>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def myPow(self, x, n):
+    def levelOrderBottom(self, root):
         """
-        :type x: float
-        :type n: int
-        :rtype: float
+        :type root: TreeNode
+        :rtype: List[List[int]]
         """
-        ## Idea: x^n = x^(n/2) * x^(n/2) * x^(n%2)
-        ## Complexity: Time O(log(n)), Space O(1)
-        ## Sample Data:
-        ##   pow(5, 3) = 5*5*5
-        ##   pow(5, -3) = ?
-        ##   pow(-5, 3) = (-5)*(-5)*(-5)
-        ##   pow(5.1, 3) = 5.1*5.1*5.1
-        ##   x^n = x^(n/2) * x^(n/2) * x^(n%2)
-        ##   pow(x, -n) = 1/pow(x, n)
-        if n == 0:
-            return 1
-        if n < 0:
-            return 1/self.myPow(x, -n)
-        if n == 1:
-            return x
-        if(n>=2):
-            val = self.myPow(x, n/2)
-            return val*val*self.myPow(x, n%2)
+        ## Idea: BFS
+        ## Complexity:
+        res = []
+        if root is None:
+            return res
+        queue = []
+        queue.append(root)
+        while len(queue) != 0:
+            length = len(queue)
+            l = []
+            for i in xrange(length):
+                l.append(queue[i].val)
+            res.insert(0, l)
+
+            for i in xrange(length):
+                element = queue[0]
+                del queue[0]
+                if element.left:
+                    queue.append(element.left)
+                if element.right:
+                    queue.append(element.right)
+        return res
