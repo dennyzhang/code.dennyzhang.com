@@ -32,8 +32,37 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-11-03 10:14:57>
 ##-------------------------------------------------------------------
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
     def invertTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        ## Idea: BFS
+        ## Complexity:
+        if root is None:
+            return root
+        queue = []
+        queue.append(root)
+        while len(queue) != 0:
+            element = queue.pop()
+            p = element.left
+            element.left = element.right
+            element.right = p
+            if element.left:
+                queue.append(element.left)
+            if element.right:
+                queue.append(element.right)
+        return root
+
+    def invertTree_v1(self, root):
         """
         :type root: TreeNode
         :rtype: TreeNode
