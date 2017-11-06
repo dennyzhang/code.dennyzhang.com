@@ -36,23 +36,37 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def isValidBST(self, root):
         """
-        :type num: int
+        :type root: TreeNode
         :rtype: bool
         """
-        ## Idea: sqrt(num)
-        ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        ## Idea: DFS recursive
+        ## Complexity: Time O(n), Space O(log(n))
+        list_value = self.getBST(root)
+        for i in range(0, len(list_value)-1):
+            if list_value[i+1] <= list_value[i]:
+                return False
+        return True
+
+    def getBST(self, root):
+        if root is None:
+            return []
+
+        res = []
+        if root.left:
+            res += self.getBST(root.left)
+
+        res.append(root.val)
+
+        if root.right:
+            res += self.getBST(root.right)
+        return res
