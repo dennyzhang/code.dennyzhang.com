@@ -33,27 +33,28 @@
 ## Updated: Time-stamp: <2017-11-03 10:14:57>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def myPow(self, x, n):
+    def invertTree(self, root):
         """
-        :type x: float
-        :type n: int
-        :rtype: float
+        :type root: TreeNode
+        :rtype: TreeNode
         """
-        ## Idea: x^n = x^(n/2) * x^(n/2) * x^(n%2)
-        ## Complexity: Time O(log(n)), Space O(1)
-        ## Sample Data:
-        ##   pow(5, 3) = 5*5*5
-        ##   pow(5, -3) = ?
-        ##   pow(-5, 3) = (-5)*(-5)*(-5)
-        ##   pow(5.1, 3) = 5.1*5.1*5.1
-        ##   x^n = x^(n/2) * x^(n/2) * x^(n%2)
-        ##   pow(x, -n) = 1/pow(x, n)
-        if n == 0:
-            return 1
-        if n < 0:
-            return 1/self.myPow(x, -n)
-        if n == 1:
-            return x
-        if(n>=2):
-            val = self.myPow(x, n/2)
-            return val*val*self.myPow(x, n%2)
+        if root is None:
+            return None
+        if (root.left is None) and (root.right is None):
+            return root
+
+        if (root.left is None) and root.right:
+            root.left = self.invertTree(root.right)
+            root.right = None
+            return root
+
+        if (root.right is None) and root.left:
+            root.right = self.invertTree(root.left)
+            root.left = None
+            return root
+
+        p = self.invertTree(root.left)
+        q = self.invertTree(root.right)
+        root.left = q
+        root.right = p
+        return root
