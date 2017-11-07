@@ -28,6 +28,34 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
+        ## Idea: one pass. left, cur, right
+        ##         left=0, right=len(nums)-1, cur = 0
+        ##         1. nums[cur] is 1, cur++
+        ##         2. nums[cur] is 0, swap with left, and left++, cur++
+        ##         3. nums[cur] is 2, swap with right, and right--. cur doesn't change
+        ##         When cur>right, break
+        ## Complexity
+        ## Sample Data:
+        ##     0 1 2 0 1 2 0
+        length = len(nums)
+        if length <= 1:
+            return
+        left, right, cur = 0, length-1, 0
+        while cur <= right:
+            if nums[cur] == 1:
+                cur += 1
+            elif nums[cur] == 0:
+                nums[left], nums[cur] = nums[cur], nums[left]
+                left, cur = left+1, cur+1
+            else:
+                nums[right], nums[cur] = nums[cur], nums[right]
+                right -= 1
+
+    def sortColors_v2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
         ## Idea: 2 pass. Count how many each 0, 1, 2 has happened
         ## Complexity
         ## Sample Data:
