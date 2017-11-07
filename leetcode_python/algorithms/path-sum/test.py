@@ -40,6 +40,23 @@
 
 class Solution(object):
     def hasPathSum(self, root, sum):
+        if root is None:
+            return False
+        queue = []
+        queue.append((root, 0))
+        while len(queue) != 0:
+            (element, current_sum) = queue[0]
+            del queue[0]
+            if element.left is None and element.right is None:
+                if element.val + current_sum == sum:
+                    return True
+            if element.left:
+                queue.append((element.left, current_sum + element.val))
+            if element.right:
+                queue.append((element.right, current_sum + element.val))
+        return False
+        
+    def hasPathSum_v1(self, root, sum):
         """
         :type root: TreeNode
         :type sum: int
