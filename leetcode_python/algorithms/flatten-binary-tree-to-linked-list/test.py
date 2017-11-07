@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags:
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
 ##    ,-----------
@@ -38,23 +38,42 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def flatten(self, root):
         """
-        :type num: int
-        :rtype: bool
+        :type root: TreeNode
+        :rtype: void Do not return anything, modify root in-place instead.
         """
-        ## Idea: sqrt(num)
-        ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        ## Idea: DFS for pre-order traversal
+        ## Complexity: Time O(n), Space O(n)
+        self._flatten(root)
+
+    def _flatten(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode: last node in the chain
+        """
+        if root is None:
+            return None
+        if root.left is None and root.right is None:
+            return root
+
+        root_right = root.right
+        q = None
+        if root.left:
+            q = self._flatten(root.left)
+            q.right = root.right
+            root.right = root.left
+            root.left = None
+
+        if root_right:
+            q = self._flatten(root.right)
+            
+        return q
