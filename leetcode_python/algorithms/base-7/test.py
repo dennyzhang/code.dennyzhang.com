@@ -29,22 +29,24 @@
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def convertToBase7(self, num):
         """
         :type num: int
-        :rtype: bool
+        :rtype: str
         """
-        ## Idea: sqrt(num)
+        ## Idea:
         ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        if num == 0:
+            return "0"
+
+        is_positive = True
+        if num < 0:
+            is_positive = False
+            num = -num
+
+        res = ""
+        while num != 0:
+            res = "%s%s" % (res, str(num % 7))
+            num = num/7
+        res = res[::-1]
+        return res if is_positive else "-" + res
