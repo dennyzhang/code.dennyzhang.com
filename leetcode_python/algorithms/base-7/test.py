@@ -46,7 +46,6 @@ class Solution(object):
 
         res = ""
         while num != 0:
-            res = "%s%s" % (res, str(num % 7))
+            res = "%s%s" % (str(num % 7), res)
             num = num/7
-        res = res[::-1]
         return res if is_positive else "-" + res
