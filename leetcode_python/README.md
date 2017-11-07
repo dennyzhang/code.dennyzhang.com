@@ -105,6 +105,10 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 - Find amusing tickets
 find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
 
+
+## Binary Search
+- binary search: log(n)
+
 ## Lesson learned from Cracking leetcode.com
 - Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
 - Understand data structure and common library in your languages: Python TreeNode, Python Interval
