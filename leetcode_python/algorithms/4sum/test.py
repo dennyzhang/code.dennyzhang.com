@@ -64,4 +64,3 @@ class Solution(object):
                             r -= 1
                         l, r = l+1, r-1
         return res
-        
