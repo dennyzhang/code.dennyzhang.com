@@ -48,7 +48,8 @@ class Solution(object):
         ## Idea: One pass
         ##       If current digit is 0, move 1 step
         ##       If current digit is 1, move 2 steps
-        ##       Check whether we have only 1 remaining digit
+        ##       Check whether the last match is 1 step
+        ##       Note: since the last digit is 0, the given string can always match
         ## Complexity: Time O(n), Space O(1)
         length = len(bits)
         if length == 0:
