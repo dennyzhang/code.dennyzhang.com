@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags:
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/house-robber/description/
 ##    ,-----------
