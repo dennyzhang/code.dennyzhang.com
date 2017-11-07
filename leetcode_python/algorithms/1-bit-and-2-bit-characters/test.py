@@ -58,12 +58,11 @@ class Solution(object):
             return bits[0] == 0
 
         i = 0
-        is_one_bit = False
         while i< length:
             if bits[i] == 0:
                 i += 1
-                is_one_bit = True
             else:
                 i += 2
-                is_one_bit = False
-        return is_one_bit
+            if i == length - 1:
+                return True
+        return False
