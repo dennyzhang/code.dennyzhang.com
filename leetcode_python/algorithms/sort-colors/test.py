@@ -28,6 +28,35 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
+        ## Idea: 2 pass. Count how many each 0, 1, 2 has happened
+        ## Complexity
+        ## Sample Data:
+        ##     0 1 2 0 1 2 0
+        ##     p           r
+        ##       q
+        ##     2 0
+        count0, count1, count2 = 0, 0, 0
+        for num in nums:
+            if num == 0:
+                count0 += 1
+            if num == 1:
+                count1 += 1
+            if num == 2:
+                count2 += 1
+
+        for i in xrange(len(nums)):
+            if i < count0:
+                nums[i] = 0
+            elif i < count0 + count1:
+                nums[i] = 1
+            else:
+                nums[i] = 2
+        
+    def sortColors_v1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
         ## Idea: 2 pointer. 2 pass
         ## Complexity: Time O(n), Space O(1)
         length = len(nums)
@@ -53,48 +82,3 @@ class Solution(object):
                 nums[q] = nums[p]
                 nums[p] = 1
                 p += 1
-
-    def sortColors_v1(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
-        """
-        ## Idea: 3 pointers
-        ##     p: where we should place 0
-        ##     r: where we should place 2
-        ##     q: one pass
-        ## Complexity
-        ## Sample Data:
-        ##     0 1 2 0 1 2 0
-        ##     p           r
-        ##       q
-        ##     2 0
-        length = len(nums)
-        if length<=1:
-            return
-        p = 0
-        r = length-1
-        
-        for p in xrange(length):
-            if nums[p] != 0:
-                break
-        for r in range(length-1, -1, -1):
-            if nums[r] != 2:
-                break
-        q = p+1
-        while p<length and q<length and r>-1 and q<r:
-            if nums[q] == 2:
-                nums[q] = nums[r]
-                nums[r] = 2
-                r -= 1
-                while r>q and nums[r] == nums[r-1] and nums[r] == 2:
-                    r -= 1
-            elif nums[q] == 0:
-                nums[q] = nums[p]
-                nums[p] = 0
-                p += 1
-                while p<q and nums[p] == nums[p+1] and nums[p] == 0:
-                    p += 1
-            else:
-                while q<length-1 and q<r and nums[q] == nums[q+1]:
-                    q += 1                            
