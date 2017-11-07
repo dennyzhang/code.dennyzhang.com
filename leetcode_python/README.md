@@ -105,7 +105,6 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 - Find amusing tickets
 find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
 
-
 ## Binary Search
 - binary search: log(n)
 
@@ -120,3 +119,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Descripti
 - **Choose the proper variable names: easy to understand**
 - **Explain the usage of your key data structure**
 - **Read other people's code, then learn something**
+
+## DP
+- House Robber: https://leetcode.com/problems/house-robber/description/

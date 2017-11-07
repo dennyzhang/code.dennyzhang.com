@@ -23,22 +23,28 @@
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def rob(self, nums):
         """
-        :type num: int
-        :rtype: bool
+        :type nums: List[int]
+        :rtype: int
         """
-        ## Idea: sqrt(num)
+        ## Idea: Recursive way will timeout
+        ##       DP: robs[i] the max profit so far.
+        ##       How does DP formula work?
         ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        length = len(nums)
+        if length == 0:
+            return 0
+        if length == 1:
+            return nums[0]
+        if length == 2:
+            return max(nums[0], nums[1])
+
+        robs = [None]*length
+        robs[0] = nums[0]
+        robs[1] = max(nums[0], nums[1])
+        robs[2] = max(nums[0]+nums[2], nums[1])
+
+        for i in range(3, length):
+            robs[i] = max(robs[i-3]+nums[i-1], robs[i-2]+nums[i])
+        return robs[-1]
