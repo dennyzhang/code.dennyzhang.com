@@ -64,22 +64,35 @@
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def compress(self, chars):
         """
-        :type num: int
-        :rtype: bool
+        :type chars: List[str]
+        :rtype: int
         """
-        ## Idea: sqrt(num)
+        ## Idea: 3 pointers
+        ##       i: next different chracter, j: look ahead
+        ##       k: where to overwrite
         ## Complexity:
         ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        ##     ["a","a","b","b","c","c","c"]
+        ##       i   j
+        ##       k
+        length = len(chars)
+        if length < 2:
+            return length
+
+        i, k = 0, 0
+        while i < length:
+            j = i+1
+            count = 1
+            while j<length and chars[i] == chars[j]:
+                j += 1
+                count += 1
+            chars[k] = chars[i]
+            k += 1
+            i = j
+            if count != 1:
+                for ch in str(count):
+                    chars[k] = ch
+                    k += 1
+        return k
