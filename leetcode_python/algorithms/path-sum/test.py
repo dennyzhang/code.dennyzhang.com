@@ -31,23 +31,37 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def hasPathSum(self, root, sum):
         """
-        :type num: int
+        :type root: TreeNode
+        :type sum: int
         :rtype: bool
         """
-        ## Idea: sqrt(num)
-        ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
+        ## Idea: DFS recursive, BFS
+        ## Complexity: Time O(n), Space O(log(k))
+        return self._hasPathSum(root, sum, 0)
+
+    def _hasPathSum(self, root, sum, current_sum):
+        if root is None:
             return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        if root.left is None and root.right is None:
+            return root.val + current_sum == sum
+
+        if root.left:
+            if self._hasPathSum(root.left, sum, current_sum + root.val):
+                return True
+
+        if root.right:
+            if self._hasPathSum(root.right, sum, current_sum + root.val):
+                return True
+
+        return False
+        
