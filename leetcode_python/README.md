@@ -122,3 +122,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Descripti
 
 ## DP
 - House Robber: https://leetcode.com/problems/house-robber/description/
+
+## contiguous subarray
+- Maximum Product Subarray: https://leetcode.com/problems/maximum-product-subarray/description/
