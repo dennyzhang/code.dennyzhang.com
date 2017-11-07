@@ -28,7 +28,41 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
+        ## Idea: 2 pointer. 2 pass
+        ## Complexity: Time O(n), Space O(1)
+        length = len(nums)
+        if length<=1:
+            return
+
+        # 1st pass
+        for p in xrange(length):
+            if nums[p] != 0:
+                break
+        for q in range(p+1, length):
+            if nums[q] == 0:
+                nums[q] = nums[p]
+                nums[p] = 0
+                p += 1
+
+        # 2nd pass
+        for p in xrange(length):
+            if nums[p] == 2:
+                break
+        for q in range(p+1, length):
+            if nums[q] == 1:
+                nums[q] = nums[p]
+                nums[p] = 1
+                p += 1
+
+    def sortColors_v1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
         ## Idea: 3 pointers
+        ##     p: where we should place 0
+        ##     r: where we should place 2
+        ##     q: one pass
         ## Complexity
         ## Sample Data:
         ##     0 1 2 0 1 2 0
@@ -41,25 +75,26 @@ class Solution(object):
         p = 0
         r = length-1
         
-        while p < length and nums[p] == 0:
-            p += 1
-        while r>-1 and nums[r] == 2:
-            r -= 1
-        
-        if (p == length) or (r == 0) or (p>=r):
-            return
-
-        q = p
-        while q<r and p < length and r > -1:
-            if nums[q] == 1:
-                q += 1
-            elif nums[q] == 0:
-                val = nums[q]
-                nums[q] = nums[p]
-                nums[p] = val
-                p += 1
-            else:
-                val = nums[q]
+        for p in xrange(length):
+            if nums[p] != 0:
+                break
+        for r in range(length-1, -1, -1):
+            if nums[r] != 2:
+                break
+        q = p+1
+        while p<length and q<length and r>-1 and q<r:
+            if nums[q] == 2:
                 nums[q] = nums[r]
-                nums[r] = val
+                nums[r] = 2
                 r -= 1
+                while r>q and nums[r] == nums[r-1] and nums[r] == 2:
+                    r -= 1
+            elif nums[q] == 0:
+                nums[q] = nums[p]
+                nums[p] = 0
+                p += 1
+                while p<q and nums[p] == nums[p+1] and nums[p] == 0:
+                    p += 1
+            else:
+                while q<length-1 and q<r and nums[q] == nums[q+1]:
+                    q += 1                            
