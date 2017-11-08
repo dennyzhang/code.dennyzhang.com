@@ -23,15 +23,57 @@
 ## Updated: Time-stamp: <2017-10-25 18:05:59>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def restoreIpAddresses(self, s):
         """
         :type s: str
-        :rtype: int
+        :rtype: List[str]
         """
-        ## Basic Idea:
+        ## Idea: recursive way
         ## Complexity:
+        return self._restoreIpAddresses(s, 4)
+        
+    def _restoreIpAddresses(self, s, separate_count):
+        """
+        :type s: str
+        :rtype: List[str]
+        """
+        if s == "":
+            return []
+        if separate_count == 1:
+            if self._isValid(s):
+                return [s]
+            else:
+                return []
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
-## File: test.py ends
+        res = []
+
+        cur_segement = s[:1]
+        if self._isValid(cur_segement):
+            l = self._restoreIpAddresses(s[1:], separate_count-1)
+            for element in l:
+                res.append("%s.%s" % (cur_segement, element))
+        
+        cur_segement = s[:2]
+        if self._isValid(cur_segement):
+            l = self._restoreIpAddresses(s[2:], separate_count-1)
+            for element in l:
+                res.append("%s.%s" % (cur_segement, element))
+
+        cur_segement = s[:3]
+        if self._isValid(cur_segement):
+            l = self._restoreIpAddresses(s[3:], separate_count-1)
+            for element in l:
+                res.append("%s.%s" % (cur_segement, element))
+        return res
+    
+    def _isValid(self, s):
+        if s == "":
+            return False
+
+        if len(s) > 1 and s[0] == '0':
+            return False
+
+        if int(s) > 255:
+            return False
+
+        return True
