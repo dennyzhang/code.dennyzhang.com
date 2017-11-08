@@ -21,8 +21,6 @@
 ##    | Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 ##    `-----------
 ##
-## Basic Idea:
-## Complexity:
 ## --
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
