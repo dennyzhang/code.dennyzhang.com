@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #amusing
+## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/repeated-substring-pattern/description/
 ##    ,-----------
