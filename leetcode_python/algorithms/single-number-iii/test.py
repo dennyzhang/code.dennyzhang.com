@@ -46,8 +46,7 @@ class Solution(object):
             c = c/2
             k += 1
 
-        a = 0
-        b = 0
+        a, b = 0, 0
         for num in nums:
             val = num
             for i in xrange(k):
