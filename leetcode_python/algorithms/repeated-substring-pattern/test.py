@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags:
+## Tags: #amusing
 ## Description:
 ##     https://leetcode.com/problems/repeated-substring-pattern/description/
 ##    ,-----------
@@ -34,15 +34,3 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-27 11:24:41>
 ##-------------------------------------------------------------------
-class Solution(object):
-    def romanToInt(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        ## Basic Idea:
-        ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
