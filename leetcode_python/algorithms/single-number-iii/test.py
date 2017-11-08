@@ -26,22 +26,34 @@
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def singleNumber(self, nums):
         """
-        :type num: int
-        :rtype: bool
+        :type nums: List[int]
+        :rtype: List[int]
         """
-        ## Idea: sqrt(num)
-        ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        ## Idea: C = A xor B. C won't be 0. Let's say the kth digit is 1. (From right to left)
+        ##       Divide the group into 2: whether kth digit is 1 or not.
+        ##       A, B will be in different group. 
+        ##       For each pairs of other elements, they will either be in group1 or group2
+        ##       XOR of two group, we will get A and B respectively
+        ##       
+        ## Complexity: Time O(n), Space O(1)
+        c = 0
+        for num in nums:
+            c = c ^ num
+        k = 0
+        while c%2 == 0:
+            c = c/2
+            k += 1
+
+        a = 0
+        b = 0
+        for num in nums:
+            val = num
+            for i in xrange(k):
+                val = val/2
+            if val%2 == 0:
+                a = a ^ num
+            else:
+                b = b ^ num
+        return [a, b]
