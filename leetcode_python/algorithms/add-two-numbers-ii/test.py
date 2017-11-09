@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #amusing
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/add-two-numbers-ii/description/
 ##    ,-----------

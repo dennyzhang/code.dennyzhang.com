@@ -10,7 +10,13 @@ More website:
 - http://www.geeksforgeeks.org
 - https://careercup.com
 
+# Tags:
+
+- #amusing, #redo
+- #brain, #todobrain
+
 # Blog Sites:
+- http://brain.dennyzhang.com
 - http://bangbingsyb.blogspot.com
 
 # Summary
@@ -92,7 +98,6 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 - Description
 - Basic Idea
 - Complexity
-- Tags: #amusing, #redo
 
 ## Procedure
 1. Read and explain the question to the interviewr: Show you understand the questions

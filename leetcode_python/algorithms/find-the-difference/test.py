@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #amusing
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/contains-duplicate-ii/description/
 ## ,-----------
@@ -16,7 +16,7 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:20>
+## Updated: Time-stamp: <2017-11-09 08:41:35>
 ##-------------------------------------------------------------------
 class Solution(object):
     def containsNearbyDuplicate(self, nums, k):

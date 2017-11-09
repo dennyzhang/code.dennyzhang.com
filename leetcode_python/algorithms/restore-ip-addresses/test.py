@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #amusing
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/restore-ip-addresses/description/
 ## ,-----------

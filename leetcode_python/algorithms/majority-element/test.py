@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: amusing
+## Tags: amusing, #brain
 ## Description:
 ##     https://leetcode.com/problems/majority-element/description/
 ##    ,-----------
@@ -17,7 +17,7 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:18>
+## Updated: Time-stamp: <2017-11-09 08:45:28>
 ##-------------------------------------------------------------------
 class Solution(object):
     def majorityElement1(self, nums):

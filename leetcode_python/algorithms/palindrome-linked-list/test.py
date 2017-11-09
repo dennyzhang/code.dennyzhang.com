@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #amusing, #redo
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/palindrome-linked-list/description/
 ##    ,-----------

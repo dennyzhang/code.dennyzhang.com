@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <contact@dennyzhang.com>
-## Tags: #amusing, #redo
+## Tags: #amusing, #redo, #brain
 ## Description:
 ##     https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 ##    ,-----------
