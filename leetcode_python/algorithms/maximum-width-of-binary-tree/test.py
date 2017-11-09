@@ -69,3 +69,48 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-11-06 09:42:17>
 ##-------------------------------------------------------------------
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def widthOfBinaryTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        ## Idea: BFS, then Huffman tree encoding. 
+        ## Complexity:
+        ## Sample Data
+        ##              1
+        ##             / \
+        ##            3   2
+        ##           /     \  
+        ##          5       9 
+        ##         /         \
+        ##        6           7
+        if root is None:
+            return 0
+        queue = []
+        max_width = -1
+        queue.append((root, 0))
+        while len(queue) != 0:
+            length = len(queue)
+            if length == 1:
+                max_width = max(max_width, 1)
+            else:
+                (first_element, first_huffman) = queue[0]
+                (last_element, last_huffman) = queue[-1]
+                max_width = max(max_width, last_huffman - first_huffman + 1)
+
+            for i in xrange(length):
+                (element, cur_huffman) = queue[0]
+                del queue[0]
+                if element.left:
+                    queue.append((element.left, cur_huffman*2))
+                if element.right:
+                    queue.append((element.right, cur_huffman*2+1))
+        return max_width
