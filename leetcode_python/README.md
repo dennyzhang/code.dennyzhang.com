@@ -134,3 +134,11 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Descripti
 
 ## Array pointer
 - String Compression: https://leetcode.com/problems/string-compression/description/
+
+## Combination
+- Permutations:
+```
+I: https://leetcode.com/problems/permutations/description/
+II: https://leetcode.com/problems/permutations-ii/description/
+```
+
