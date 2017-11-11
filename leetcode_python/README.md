@@ -13,7 +13,8 @@ More website:
 # Tags:
 
 - #amusing, #redo
-- #brain, #todobrain
+- #brain
+- #todobrain
 
 # Blog Sites:
 - http://brain.dennyzhang.com
