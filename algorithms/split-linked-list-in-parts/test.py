@@ -8,7 +8,7 @@
 ## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags:
 ## Description:
-##     https://leetcode.com/contest/weekly-contest-58/problems/split-linked-list-in-parts/
+##     https://leetcode.com/problems/split-linked-list-in-parts/description/
 ##    ,-----------
 ##    | Given a (singly) linked list with head node root, write a function to split the linked list into k consecutive linked list "parts".
 ##    | 
@@ -80,4 +80,3 @@ class Solution(object):
             res.append(dummy_node.next)
 
         return res
-        

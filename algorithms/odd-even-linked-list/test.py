@@ -30,23 +30,36 @@
 ## Created : <2017-10-16>
 ## Updated: Time-stamp: <2017-10-28 21:01:16>
 ##-------------------------------------------------------------------
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def oddEvenList(self, head):
         """
-        :type num: int
-        :rtype: bool
+        :type head: ListNode
+        :rtype: ListNode
         """
-        ## Idea: sqrt(num)
-        ## Complexity:
+        ## Idea: 2pointer: odd_tail, even_tail
+        ##       move the next element of even_tail to odd_tail
+        ##       move next for both tails
+        ## Complexity
         ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        ##       1    ->    2  ->    3   ->   4   ->   5   ->NULL
+        ##    odd_tail even_tail
+        ##
+        if head is None or head.next is None:
+            return head
+        odd_tail = head
+        even_tail = head.next
+        while even_tail and even_tail.next:
+            p = even_tail.next
+            even_tail.next = p.next
+            p.next = odd_tail.next
+            odd_tail.next = p
+            # move next
+            even_tail = even_tail.next
+            odd_tail = odd_tail.next
+        return head
