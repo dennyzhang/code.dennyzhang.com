@@ -1,3 +1,33 @@
+Table of Contents
+=================
+
+   * [Basic Intro](#basic-intro)
+   * [Frequently Used Tags](#frequently-used-tags)
+   * [Lessons learned](#lessons-learned)
+   * [Summary](#summary)
+      * [Tree](#tree)
+      * [Why people would want to use your GitHub repo?](#why-people-would-want-to-use-your-github-repo)
+      * [Search &amp; Sort](#search--sort)
+      * [Bit operation](#bit-operation)
+      * [String](#string)
+      * [Good for DevOps in leetcode.com](#good-for-devops-in-leetcodecom)
+      * [Leetcode learns learned sharing from blogs](#leetcode-learns-learned-sharing-from-blogs)
+      * [Array](#array)
+      * [Linked List](#linked-list)
+      * [Integer](#integer)
+      * [Greedy](#greedy)
+      * [DP](#dp)
+      * [Basic Elements:](#basic-elements)
+      * [Procedure](#procedure)
+      * [Command](#command)
+      * [Binary Search](#binary-search)
+      * [DP](#dp-1)
+      * [contiguous subarray](#contiguous-subarray)
+      * [Array pointer](#array-pointer)
+      * [Combination](#combination)
+   * [Similar Websites:](#similar-websites)
+   * [License](#license)
+
 # Basic Intro
 <a href="https://github.com/DennyZhang?tab=followers"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/fork_github.png" /></a>
 
@@ -23,20 +53,30 @@ More website:
 - http://www.geeksforgeeks.org
 - https://careercup.com
 
-# Tags:
+# Frequently Used Tags
 
 - #amusing, #redo
 - #brain
 - #todobrain
 
-# Blog Sites:
-- http://brain.dennyzhang.com
-- http://bangbingsyb.blogspot.com
+# Lessons learned
+- Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
+- Understand data structure and common library in your languages: Python TreeNode, Python Interval
+- Write your idea, before you coding. Update time/space complexity in advance.
+- Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
+- Think in a natural way, instead of a complicated way
+- Time complexity of n is similar to 2n, but it's 100% faster in our real production!
+- Don't write in your IDE. emacs/vi
+- **Choose the proper variable names: easy to understand**
+- **Explain the usage of your key data structure**
+- **Read other people's code, then learn something**
 
 # Summary
 
 ## Tree
+
 - **6 Traverse of Binary Tree**: first, middle, right; non-recursive first, middle, right
+
 ```
 https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 https://leetcode.com/problems/binary-tree-inorder-traversal/description/
@@ -54,8 +94,6 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 
 - Define how many layers
 - what value to get and concat
-```
-
 - Sum of left leaves: https://leetcode.com/problems/sum-of-left-leaves/description/
 - Get min and max depth of binary tree
 
@@ -127,18 +165,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Descripti
 ## Binary Search
 - binary search: log(n)
 
-## Lesson learned from Cracking leetcode.com
-- Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
-- Understand data structure and common library in your languages: Python TreeNode, Python Interval
-- Write your idea, before you coding. Update time/space complexity in advance.
-- Know how to use library. Thus we can think and design in a higher layer. But make sure you can evaluate the time and space performance
-- Think in a natural way, instead of a complicated way
-- Time complexity of n is similar to 2n, but it's 100% faster in our real production!
-- Don't write in your IDE. emacs/vi
-- **Choose the proper variable names: easy to understand**
-- **Explain the usage of your key data structure**
-- **Read other people's code, then learn something**
-
 ## DP
 - House Robber: https://leetcode.com/problems/house-robber/description/
 
@@ -150,10 +176,15 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Descripti
 
 ## Combination
 - Permutations:
+
 ```
 I: https://leetcode.com/problems/permutations/description/
 II: https://leetcode.com/problems/permutations-ii/description/
 ```
+
+# Similar Websites:
+- http://brain.dennyzhang.com
+- http://bangbingsyb.blogspot.com
 
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
