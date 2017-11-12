@@ -3,8 +3,9 @@ Table of Contents
 
    * [Table of Contents](#table-of-contents)
    * [Basic Intro](#basic-intro)
-   * [Frequently Used Tags](#frequently-used-tags)
-   * [Lessons learned](#lessons-learned)
+   * [About Code Interview](#about-code-interview)
+      * [General Procedure](#general-procedure)
+      * [Lessons learned](#lessons-learned)
    * [Basic](#basic)
       * [Array pointer](#array-pointer)
       * [Integer](#integer)
@@ -15,15 +16,16 @@ Table of Contents
       * [Binary Search](#binary-search)
    * [Advanced](#advanced)
       * [Tree](#tree)
-      * [Bit operation](#bit-operation)
-      * [Greedy](#greedy)
-      * [DP](#dp)
-      * [contiguous subarray](#contiguous-subarray)
       * [Combination](#combination)
-   * [About Code Interview](#about-code-interview)
-      * [Procedure](#procedure)
+      * [Bit operation](#bit-operation)
+      * [DP](#dp)
+      * [Greedy](#greedy)
+      * [Contiguous Subarray](#contiguous-subarray)
    * [About this Github Repo](#about-this-github-repo)
-   * [Similar Websites:](#similar-websites)
+      * [Commands](#commands)
+      * [Frequently Used Tags](#frequently-used-tags)
+      * [Grow Influence](#grow-influence)
+      * [Similar Websites](#similar-websites)
    * [License](#license)
 
 # Basic Intro
@@ -41,13 +43,15 @@ http://brain.dennyzhang.com/contact
 
 People will ask silly algorithm questions.
 
-# Frequently Used Tags
+# About Code Interview
+## General Procedure
+1. Read and explain the question to the interviewr: Show you understand the questions
+2. Interviewer may ask: tell me what you are thinking
+3. Show your programming skills: how fluent you are with the language and lib
+4. Watch out Complexity trade-off, and you may need to explain them
+5. You can run unit test
 
-- #amusing, #redo
-- #brain
-- #todobrain
-
-# Lessons learned
+## Lessons learned
 - Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
 - Understand data structure and common library in your languages: Python TreeNode, Python Interval
 - Write your idea, before you coding. Update time/space complexity in advance.
@@ -113,6 +117,14 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 - Sum of left leaves: https://leetcode.com/problems/sum-of-left-leaves/description/
 - Get min and max depth of binary tree
 
+## Combination
+- Permutations:
+
+```
+I: https://leetcode.com/problems/permutations/description/
+II: https://leetcode.com/problems/permutations-ii/description/
+```
+
 ## Bit operation
 - Number Complement: https://leetcode.com/problems/number-complement/description/
 - X xor X = 0, X xor 0 = X
@@ -124,41 +136,32 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 - Binary Number with Alternating Bits: https://leetcode.com/problems/binary-number-with-alternating-bits/description/
 - Run demical sum by digits: https://leetcode.com/problems/add-strings/description/
 
-## Greedy
-- TODO
-
 ## DP
 - Climbing Stairs: https://leetcode.com/problems/climbing-stairs/description/
 - House Robber: https://leetcode.com/problems/house-robber/description/
 
-## contiguous subarray
+## Greedy
+- TODO
+
+## Contiguous Subarray
 - Maximum Product Subarray: https://leetcode.com/problems/maximum-product-subarray/description/
 
-## Combination
-- Permutations:
-
-```
-I: https://leetcode.com/problems/permutations/description/
-II: https://leetcode.com/problems/permutations-ii/description/
-```
-
-# About Code Interview
-## Procedure
-1. Read and explain the question to the interviewr: Show you understand the questions
-2. Interviewer may ask: tell me what you are thinking
-3. Show your programming skills: how fluent you are with the language and lib
-4. Watch out Complexity trade-off, and you may need to explain them
-5. You can run unit test
-
 # About this Github Repo
+## Commands
+- Find amusing tickets
+find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
+
+## Frequently Used Tags
+
+- #amusing, #redo
+- #brain
+- #todobrain
+
+## Grow Influence
 - Why people would want to use your GitHub repo?
   TODO: think about it!
 
-- Command: Find amusing tickets
-find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
-
-
-# Similar Websites:
+## Similar Websites
 - http://brain.dennyzhang.com
 - http://bangbingsyb.blogspot.com
 - https://en.wikipedia.org/wiki/Online_judge
