@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ##-------------------------------------------------------------------
-## @copyright 2017 DennyZhang.com
+## @copyright 2017 brain.dennyzhang.com
 ## Licensed under MIT
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
@@ -13,11 +13,11 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-12 10:05:11>
+## Updated: Time-stamp: <2017-11-12 10:59:10>
 ##-------------------------------------------------------------------
 #!/usr/bin/env python
 ##-------------------------------------------------------------------
-## @copyright 2017 DennyZhang.com
+## @copyright 2017 brain.dennyzhang.com
 ## Licensed under MIT
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##

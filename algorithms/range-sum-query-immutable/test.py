@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ##-------------------------------------------------------------------
-## @copyright 2017 DennyZhang.com
+## @copyright 2017 brain.dennyzhang.com
 ## Licensed under MIT
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
@@ -28,7 +28,7 @@
 ##-------------------------------------------------------------------
 #!/usr/bin/env python
 ##-------------------------------------------------------------------
-## @copyright 2017 DennyZhang.com
+## @copyright 2017 brain.dennyzhang.com
 ## Licensed under MIT
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##

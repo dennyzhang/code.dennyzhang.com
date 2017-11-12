@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ##-------------------------------------------------------------------
-## @copyright 2017 DennyZhang.com
+## @copyright 2017 brain.dennyzhang.com
 ## Licensed under MIT
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
@@ -11,7 +11,7 @@
 ##     https://leetcode.com/problems/merge-two-sorted-lists/description/
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-12 10:05:17>
+## Updated: Time-stamp: <2017-11-12 10:59:17>
 ##-------------------------------------------------------------------
 class Solution(object):
     def mergeTwoLists(self, l1, l2):

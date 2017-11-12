@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ##-------------------------------------------------------------------
-## @copyright 2017 DennyZhang.com
+## @copyright 2017 brain.dennyzhang.com
 ## Licensed under MIT 
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
@@ -12,7 +12,7 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-17>
-## Updated: Time-stamp: <2017-11-12 10:05:39>
+## Updated: Time-stamp: <2017-11-12 10:59:40>
 ##-------------------------------------------------------------------
 set -e
 
