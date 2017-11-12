@@ -61,8 +61,36 @@ People will ask silly algorithm questions.
 - **Explain the usage of your key data structure**
 - **Read other people's code, then learn something**
 
-# Summary
+# Basic
+## Array pointer
+- String Compression: https://leetcode.com/problems/string-compression/description/
 
+## Integer
+- swap two values
+- 2sum, 3sum, 4sum, ksum
+- power of 3: https://leetcode.com/problems/power-of-three/description/
+
+## String
+- Longest Common Prefix: https://leetcode.com/problems/longest-common-prefix/description/
+
+## Array
+- sliding window solution: int index: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
+- rotate array: https://leetcode.com/problems/rotate-array/description/
+- Move zeros: https://leetcode.com/problems/move-zeroes/description/
+- link in-place change: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
+
+## Linked List
+**How many pointers you use? For what purpose?**
+- Remove Duplicates from Sorted List: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+- Remove Remove Duplicates from Sorted List II: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
+- Reverse elements from i to j: https://leetcode.com/problems/reverse-linked-list-ii/description/
+
+## Search & Sort
+
+## Binary Search
+- binary search: log(n)
+
+# Advanced
 ## Tree
 
 - **6 Traverse of Binary Tree**: first, middle, right; non-recursive first, middle, right
@@ -87,11 +115,6 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 - Sum of left leaves: https://leetcode.com/problems/sum-of-left-leaves/description/
 - Get min and max depth of binary tree
 
-## Why people would want to use your GitHub repo?
-- TODO: think about it!
-
-## Search & Sort
-
 ## Bit operation
 - Number Complement: https://leetcode.com/problems/number-complement/description/
 - X xor X = 0, X xor 0 = X
@@ -103,47 +126,15 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 - Binary Number with Alternating Bits: https://leetcode.com/problems/binary-number-with-alternating-bits/description/
 - Run demical sum by digits: https://leetcode.com/problems/add-strings/description/
 
-## String
-- Longest Common Prefix: https://leetcode.com/problems/longest-common-prefix/description/
-
-## Array
-- sliding window solution: int index: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
-- rotate array: https://leetcode.com/problems/rotate-array/description/
-- Move zeros: https://leetcode.com/problems/move-zeroes/description/
-- link in-place change: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
-
-## Linked List
-**How many pointers you use? For what purpose?**
-- Remove Duplicates from Sorted List: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
-- Remove Remove Duplicates from Sorted List II: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
-- Reverse elements from i to j: https://leetcode.com/problems/reverse-linked-list-ii/description/
-
-## Integer
-- swap two values
-- 2sum, 3sum, 4sum, ksum
-- power of 3: https://leetcode.com/problems/power-of-three/description/
-
 ## Greedy
 - TODO
 
 ## DP
 - Climbing Stairs: https://leetcode.com/problems/climbing-stairs/description/
-
-## Command
-- Find amusing tickets
-find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
-
-## Binary Search
-- binary search: log(n)
-
-## DP
 - House Robber: https://leetcode.com/problems/house-robber/description/
 
 ## contiguous subarray
 - Maximum Product Subarray: https://leetcode.com/problems/maximum-product-subarray/description/
-
-## Array pointer
-- String Compression: https://leetcode.com/problems/string-compression/description/
 
 ## Combination
 - Permutations:
@@ -160,6 +151,14 @@ II: https://leetcode.com/problems/permutations-ii/description/
 3. Show your programming skills: how fluent you are with the language and lib
 4. Watch out Complexity trade-off, and you may need to explain them
 5. You can run unit test
+
+# About this Github Repo
+- Why people would want to use your GitHub repo?
+  TODO: think about it!
+
+- Command: Find amusing tickets
+find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
+
 
 # Similar Websites:
 - http://brain.dennyzhang.com
