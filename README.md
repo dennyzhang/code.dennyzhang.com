@@ -37,21 +37,11 @@ Table of Contents
 
 File me [tickets](https://github.com/DennyZhang/leetcode_python/issues) or star [the repo](https://github.com/DennyZhang/leetcode_python).
 
-Solve all leetcode.com problems in Python
+Solve all [leetcode.com](https://leetcode.com) problems in Python
 
 http://brain.dennyzhang.com/contact
 
 People will ask silly algorithm questions.
-
-So let's get it down.
-
-One useful test website: https://leetcode.com
-
-More website:
-- https://en.wikipedia.org/wiki/Online_judge
-- https://www.interviewbit.com
-- http://www.geeksforgeeks.org
-- https://careercup.com
 
 # Frequently Used Tags
 
@@ -116,13 +106,6 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 ## String
 - Longest Common Prefix: https://leetcode.com/problems/longest-common-prefix/description/
 
-## Good for DevOps in leetcode.com
-- TODO: Important things
-
-## Leetcode learns learned sharing from blogs
-- http://blog.csdn.net/linhuanmars
-- https://siddontang.gitbooks.io/leetcode-solution/content/
-
 ## Array
 - sliding window solution: int index: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
 - rotate array: https://leetcode.com/problems/rotate-array/description/
@@ -145,18 +128,6 @@ III: https://leetcode.com/problems/path-sum-iii/description/
 
 ## DP
 - Climbing Stairs: https://leetcode.com/problems/climbing-stairs/description/
-
-## Basic Elements:
-- Description
-- Basic Idea
-- Complexity
-
-## Procedure
-1. Read and explain the question to the interviewr: Show you understand the questions
-2. Interviewer may ask: tell me what you are thinking
-3. Show your programming skills: how fluent you are with the language and lib
-4. Watch out Complexity trade-off, and you may need to explain them
-5. You can run unit test
 
 ## Command
 - Find amusing tickets
@@ -182,9 +153,23 @@ I: https://leetcode.com/problems/permutations/description/
 II: https://leetcode.com/problems/permutations-ii/description/
 ```
 
+# About Code Interview
+## Procedure
+1. Read and explain the question to the interviewr: Show you understand the questions
+2. Interviewer may ask: tell me what you are thinking
+3. Show your programming skills: how fluent you are with the language and lib
+4. Watch out Complexity trade-off, and you may need to explain them
+5. You can run unit test
+
 # Similar Websites:
 - http://brain.dennyzhang.com
 - http://bangbingsyb.blogspot.com
+- https://en.wikipedia.org/wiki/Online_judge
+- https://www.interviewbit.com
+- http://www.geeksforgeeks.org
+- https://careercup.com
+- http://blog.csdn.net/linhuanmars
+- https://siddontang.gitbooks.io/leetcode-solution/content/
 
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
