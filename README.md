@@ -81,8 +81,13 @@ People will ask silly algorithm questions.
 
 ## Linked List
 **How many pointers you use? For what purpose?**
-- Remove Duplicates from Sorted List: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
-- Remove Remove Duplicates from Sorted List II: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
+- Remove Duplicates from Sorted List:
+
+```
+I: https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+II: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
+```
+
 - Reverse elements from i to j: https://leetcode.com/problems/reverse-linked-list-ii/description/
 
 ## Search & Sort
@@ -149,7 +154,8 @@ II: https://leetcode.com/problems/permutations-ii/description/
 - Find amusing tickets
 
 ```
-find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
+find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
+     | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
 ```
 
 ## Frequently Used Tags
