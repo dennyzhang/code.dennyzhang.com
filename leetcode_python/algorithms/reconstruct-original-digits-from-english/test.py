@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #todobrain, #redo
 ## Description:
 ##     https://leetcode.com/problems/reconstruct-original-digits-from-english/description/

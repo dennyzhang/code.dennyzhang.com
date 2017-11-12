@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #redo, #amusing, #brain
 ## Description:
 ##     https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/

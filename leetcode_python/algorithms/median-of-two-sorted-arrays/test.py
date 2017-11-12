@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/median-of-two-sorted-arrays/description/
@@ -13,7 +13,7 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:17>
+## Updated: Time-stamp: <2017-11-12 10:05:17>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):

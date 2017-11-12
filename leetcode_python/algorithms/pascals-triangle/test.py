@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/pascals-triangle/description/
@@ -14,7 +14,7 @@
 ##     [i][j] = [i-1][j-1]+[i-1][j]
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
+## Updated: Time-stamp: <2017-11-12 10:05:16>
 ##-------------------------------------------------------------------
 class Solution(object):
     def generate(self, numRows):

@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/sum-of-left-leaves/description/
@@ -13,7 +13,7 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-08 09:40:15>
+## Updated: Time-stamp: <2017-11-12 10:05:11>
 ##-------------------------------------------------------------------
 #!/usr/bin/env python
 ##-------------------------------------------------------------------
@@ -22,7 +22,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Description :
 ##     https://leetcode.com/problems/sum-of-left-leaves/description/
 ## --

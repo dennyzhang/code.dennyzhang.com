@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/sqrtx/description/
@@ -17,7 +17,7 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-01 18:36:12>
+## Updated: Time-stamp: <2017-11-12 10:05:11>
 ##-------------------------------------------------------------------
 class Solution(object):
     def mySqrt(self, x):

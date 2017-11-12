@@ -5,14 +5,14 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: hello
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Description:
 ##   https://leetcode.com/problems/valid-phone-numbers/description/
 ## Basic Idea:
 ## Complexity:
 ## --
 ## Created : <2017-10-17>
-## Updated: Time-stamp: <2017-10-23 18:20:20>
+## Updated: Time-stamp: <2017-11-12 10:05:38>
 ##-------------------------------------------------------------------
 set -e
 

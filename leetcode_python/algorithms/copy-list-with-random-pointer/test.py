@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/copy-list-with-random-pointer/description/
@@ -17,7 +17,7 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 22:16:10>
+## Updated: Time-stamp: <2017-11-12 10:05:23>
 ##-------------------------------------------------------------------
 class Solution(object):
     def romanToInt(self, s):

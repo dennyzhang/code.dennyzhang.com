@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/contains-duplicate-ii/description/
@@ -16,7 +16,7 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-09 08:41:35>
+## Updated: Time-stamp: <2017-11-12 10:05:21>
 ##-------------------------------------------------------------------
 class Solution(object):
     def containsNearbyDuplicate(self, nums, k):

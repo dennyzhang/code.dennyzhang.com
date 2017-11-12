@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/range-sum-query-immutable/description/
@@ -33,7 +33,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #amusing, #redo
 ## Description:
 ##     https://leetcode.com/problems/range-sum-query-immutable/description/

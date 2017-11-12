@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/number-complement/description/
@@ -13,7 +13,7 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
+## Updated: Time-stamp: <2017-11-12 10:05:16>
 ##-------------------------------------------------------------------
 class Solution(object):
     def findComplement(self, num):

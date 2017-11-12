@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags:
 ## Description:
 ##     https://leetcode.com/problems/third-maximum-number/description/
@@ -13,7 +13,7 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:12>
+## Updated: Time-stamp: <2017-11-12 10:05:10>
 ##-------------------------------------------------------------------
 class Solution(object):
     def thirdMax(self, nums):

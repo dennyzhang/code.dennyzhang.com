@@ -5,7 +5,7 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: test.py
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/divide-two-integers/description/
@@ -17,7 +17,7 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-01 22:43:04>
+## Updated: Time-stamp: <2017-11-12 10:05:22>
 ##-------------------------------------------------------------------
 class Solution(object):
     def divide(self, dividend, divisor):
