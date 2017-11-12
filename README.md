@@ -51,7 +51,7 @@ People will ask silly algorithm questions.
 4. Watch out Complexity trade-off, and you may need to explain them
 5. You can run unit test
 
-## Lessons learned
+## Lessons Learned
 - Learn to write bug-free code. Test-driven may lead you to waste time? If you think clearly and pass with once
 - Understand data structure and common library in your languages: Python TreeNode, Python Interval
 - Write your idea, before you coding. Update time/space complexity in advance.
@@ -64,7 +64,11 @@ People will ask silly algorithm questions.
 - **Read other people's code, then learn something**
 
 # Basic
-## Array pointer
+## Array
+- sliding window solution: int index: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
+- rotate array: https://leetcode.com/problems/rotate-array/description/
+- Move zeros: https://leetcode.com/problems/move-zeroes/description/
+- link in-place change: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 - String Compression: https://leetcode.com/problems/string-compression/description/
 
 ## Integer
@@ -74,12 +78,6 @@ People will ask silly algorithm questions.
 
 ## String
 - Longest Common Prefix: https://leetcode.com/problems/longest-common-prefix/description/
-
-## Array
-- sliding window solution: int index: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
-- rotate array: https://leetcode.com/problems/rotate-array/description/
-- Move zeros: https://leetcode.com/problems/move-zeroes/description/
-- link in-place change: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 
 ## Linked List
 **How many pointers you use? For what purpose?**
@@ -125,7 +123,7 @@ I: https://leetcode.com/problems/permutations/description/
 II: https://leetcode.com/problems/permutations-ii/description/
 ```
 
-## Bit operation
+## Bit Operation
 - Number Complement: https://leetcode.com/problems/number-complement/description/
 - X xor X = 0, X xor 0 = X
 - Whether power of 2
@@ -149,7 +147,10 @@ II: https://leetcode.com/problems/permutations-ii/description/
 # About this Github Repo
 ## Commands
 - Find amusing tickets
+
+```
 find . -name *.py | xargs grep -C 3 amusing | grep -v Author | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
+```
 
 ## Frequently Used Tags
 
