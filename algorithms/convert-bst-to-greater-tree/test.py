@@ -6,13 +6,23 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo, #brain
+## Tags: #redo
 ## Description:
-##     https://leetcode.com/problems/container-with-most-water/description/
+##     https://leetcode.com/problems/convert-bst-to-greater-tree/description/
 ##    ,-----------
-##    | Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+##    | Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
 ##    | 
-##    | Note: You may not slant the container and n is at least 2.
+##    | Example:
+##    | 
+##    | Input: The root of a Binary Search Tree like this:
+##    |               5
+##    |             /   \
+##    |            2     13
+##    | 
+##    | Output: The root of a Greater Tree like this:
+##    |              18
+##    |             /   \
+##    |           20     13
 ##    `-----------
 ##
 ##

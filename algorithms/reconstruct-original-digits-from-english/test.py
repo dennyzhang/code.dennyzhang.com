@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #todobrain, #redo
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/reconstruct-original-digits-from-english/description/
 ##    ,-----------
