@@ -177,6 +177,8 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 - https://careercup.com
 - http://blog.csdn.net/linhuanmars
 - https://siddontang.gitbooks.io/leetcode-solution/content/
+- https://github.com/algorhythms/LeetCode
+- https://github.com/jw2013/Leetcode-Py
 
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
