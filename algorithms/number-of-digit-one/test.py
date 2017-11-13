@@ -8,29 +8,15 @@
 ## Author : Denny <http://brain.dennyzhang.com/contact>
 ## Tags:
 ## Description:
-##     https://leetcode.com/problems/factorial-trailing-zeroes/description/
+##     https://leetcode.com/problems/number-of-digit-one/description/
 ##    ,-----------
-##    | class Solution(object):
-##    |     def trailingZeroes(self, n):
-##    |         """
-##    |         :type n: int
-##    |         :rtype: int
-##    |         """
-##    |         if n < 0:
-##    |             return None
-##    |         if n == 0 or n == 1:
-##    |             return 0
+##    | Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 ##    | 
-##    |         import math
-##    |         k = int(math.log(n, 5))
-##    |         # print "k: %d" % (k)
-##    |         res = 0
-##    |         pow_val = 5
-##    |         for i in xrange(1, k+1):
-##    |             res += n/pow_val
-##    |             pow_val *= 5
-##    |         return res
+##    | For example:
+##    | Given n = 13,
+##    | Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.
 ##    `-----------
+##
 ##
 ## Basic Idea:
 ## Complexity:
