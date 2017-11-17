@@ -28,6 +28,8 @@ Table of Contents
       * [Similar Websites](#similar-websites)
    * [License](#license)
 
+<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
+
 # Basic Intro
 <a href="https://github.com/DennyZhang?tab=followers"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/fork_github.png" /></a>
 
@@ -111,7 +113,6 @@ https://leetcode.com/problems/binary-tree-postorder-traversal/description/
 - Path Sum
 ```
 II: https://leetcode.com/problems/path-sum-ii/description/
-II: https://leetcode.com/problems/path-sum-ii/description/
 III: https://leetcode.com/problems/path-sum-iii/description/
 ```
 
@@ -168,6 +169,10 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 - Why people would want to use your GitHub repo?
   TODO: think about it!
 
+<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
+
+<img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/magic.gif">
+
 ## Similar Websites
 - http://brain.dennyzhang.com
 - http://bangbingsyb.blogspot.com
@@ -182,5 +187,3 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
-
-<img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/magic.gif">
