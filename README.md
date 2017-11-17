@@ -5,7 +5,7 @@ Table of Contents
    * [About Code Interview](#about-code-interview)
       * [General Procedure](#general-procedure)
       * [Lessons Learned](#lessons-learned)
-   * [Basic](#basic)
+   * [Fundamental Prep](#fundamental-prep)
    * [About this Github Repo](#about-this-github-repo)
       * [Commands](#commands)
       * [Frequently Used Tags](#frequently-used-tags)
@@ -50,7 +50,7 @@ People will ask silly algorithm questions.
 - **Explain the usage of your key data structure**
 - **Read other people's code, then learn something**
 
-# Basic
+# Fundamental Prep
 Check: [BASIC.md](BASIC.md)
 
 # About this Github Repo
