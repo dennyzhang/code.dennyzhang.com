@@ -28,8 +28,6 @@ Table of Contents
       * [Similar Websites](#similar-websites)
    * [License](#license)
 
-<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
-
 # Basic Intro
 <a href="https://github.com/DennyZhang?tab=followers"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/fork_github.png" /></a>
 
@@ -44,6 +42,8 @@ Solve all [leetcode.com](https://leetcode.com) problems in Python
 http://brain.dennyzhang.com/contact
 
 People will ask silly algorithm questions.
+
+<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
 
 # About Code Interview
 ## General Procedure
@@ -159,6 +159,8 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
      | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
 ```
 
+<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
+
 ## Frequently Used Tags
 
 - #amusing, #redo
@@ -168,8 +170,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 ## Grow Influence
 - Why people would want to use your GitHub repo?
   TODO: think about it!
-
-<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
 
 <img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/magic.gif">
 
