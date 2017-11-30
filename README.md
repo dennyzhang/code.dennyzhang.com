@@ -74,7 +74,7 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 - Why people would want to use your GitHub repo?
   TODO: think about it!
 
-<img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/magic.gif">
+<a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
 
 ## Similar Websites
 - http://brain.dennyzhang.com
