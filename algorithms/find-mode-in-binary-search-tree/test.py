@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/find-mode-in-binary-search-tree/description/
 ##    ,-----------
@@ -31,29 +31,61 @@
 ##    | Follow up: Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).
 ##    `-----------
 ##
-## Basic Idea:
-## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
-##-------------------------------------------------------------------
+## Updated: Time-stamp: <2017-10-24 17:21:30>
+##-------------------------------------------------------------------c
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def findMode(self, root):
         """
-        :type num: int
-        :rtype: bool
+        :type root: TreeNode
+        :rtype: List[int]
         """
-        ## Idea: sqrt(num)
+        ## Basic Idea: In-order traversal
         ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        
+        res = []
+        # in-order trasveral
+        stack = []
+        p = root
+        while p:
+            stack.append(p)
+            p = p.left
+
+        max_count = 0
+        previous_val = None
+        item_count = 0
+        while len(stack) != 0:
+            # print("item_count: %d, previous_val: %d, res: %s" % (item_count, previous_val if previous_val else -1, res))
+            top_item = stack.pop()
+            if previous_val is None:
+                item_count = 1
+                max_count = 1
+                res.append(top_item.val)
+            else:
+                if top_item.val == previous_val:
+                    item_count += 1
+                else:
+                    # reset the counter
+                    item_count = 1
+                if item_count == max_count:
+                    res.append(top_item.val)
+                else:
+                    if item_count > max_count:
+                        max_count = item_count
+                        res = []
+                        res.append(top_item.val)
+            previous_val = top_item.val
+            if top_item.right:
+                p = top_item.right
+                while p:
+                    stack.append(p)
+                    p = p.left
+        return res

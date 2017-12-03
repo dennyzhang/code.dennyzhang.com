@@ -33,7 +33,8 @@ class Solution(object):
         :rtype: List[int]
         """
         ## Basic Idea:
-        ## Complexity:
+        ## Complexity: Time O(), Space O()
+        ## Assumptions:
         ## barfoothefoobarman -> bar foo the foo bar man
 
 if __name__ == '__main__':
