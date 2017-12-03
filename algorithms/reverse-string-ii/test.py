@@ -24,18 +24,33 @@
 ## Updated: Time-stamp: <2017-10-24 17:21:30>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def findSubstring(self, s, words):
+    def reverseStr(self, s, k):
         """
         :type s: str
-        :type words: List[str]
-        :rtype: List[int]
+        :type k: int
+        :rtype: str
         """
         ## Basic Idea:
-        ## Complexity: Time O(), Space O()
+        ## Complexity: Time O(n), Space O(1)
         ## Assumptions:
-        ## barfoothefoobarman -> bar foo the foo bar man
+        length = len(s)
+        l = list(s)
+        should_reverse = True
+        i = 0
+        while i < length:
+            if i+k-1 < length:
+                j = i+k-1
+            else:
+                j = length - 1
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.findSubstring("barfoothefoobarman")
-## File: test.py ends
+            if should_reverse:
+                # print("i: %d, j: %d" % (i, j))
+                start = i
+                end = j
+                while start < end:
+                    l[start],l[end] = l[end], l[start]
+                    start += 1
+                    end -= 1
+            should_reverse = not should_reverse
+            i = j + 1
+        return ''.join(l)
