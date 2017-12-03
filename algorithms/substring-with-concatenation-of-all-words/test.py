@@ -35,6 +35,7 @@ class Solution(object):
         ## Basic Idea:
         ## Complexity: Time O(), Space O()
         ## Assumptions:
+        ## Sample Data:
         ## barfoothefoobarman -> bar foo the foo bar man
 
 if __name__ == '__main__':
