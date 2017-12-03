@@ -6,17 +6,35 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
+## Tags: #redo
 ## Description:
-##     https://leetcode.com/problems/reverse-string-ii/description/
+##     https://leetcode.com/problems/path-sum-iii/description/
 ##    ,-----------
-##    | Given a string and an integer k, you need to reverse the first k characters for every 2k characters counting from the start of the string. If there are less than k characters left, reverse all of them. If there are less than 2k but greater than or equal to k characters, then reverse the first k characters and left the other as original.
+##    | You are given a binary tree in which each node contains an integer value.
+##    | 
+##    | Find the number of paths that sum to a given value.
+##    | 
+##    | The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes).
+##    | 
+##    | The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000.
+##    | 
 ##    | Example:
-##    | Input: s = "abcdefg", k = 2
-##    | Output: "bacdfeg"
-##    | Restrictions:
-##    | The string consists of lower English letters only.
-##    | Length of the given string and k will in the range [1, 10000]
+##    | 
+##    | root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
+##    | 
+##    |       10
+##    |      /  \
+##    |     5   -3
+##    |    / \    \
+##    |   3   2   11
+##    |  / \   \
+##    | 3  -2   1
+##    | 
+##    | Return 3. The paths that sum to 8 are:
+##    | 
+##    | 1.  5 -> 3
+##    | 2.  5 -> 2 -> 1
+##    | 3. -3 -> 11
 ##    `-----------
 ##    
 ## --
