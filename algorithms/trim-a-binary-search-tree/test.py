@@ -48,25 +48,40 @@
 ##
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
+## Updated: Time-stamp: <2017-10-24 17:21:30>
 ##-------------------------------------------------------------------
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution(object):
-    def checkPerfectNumber(self, num):
+    def trimBST(self, root, L, R):
         """
-        :type num: int
-        :rtype: bool
+        :type root: TreeNode
+        :type L: int
+        :type R: int
+        :rtype: TreeNode
         """
-        ## Idea: sqrt(num)
+        ## Basic Idea: recursive pre-order traseveral
         ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
-        if num <= 1:
-            return False
-        import math
-        sum = 1
-        for i in range(2, int(math.sqrt(num))+1):
-            if num % i == 0:
-                sum += i
-                if i != num/i:
-                    sum += num/i
-        return sum == num
+        ## Assumptions: No duplicate elements in the BST
+        ## 
+        if root is None:
+            return None
+
+        value = root.val
+        if value >= L and value <= R:
+            root.left = self.trimBST(root.left, L, R)
+            root.right = self.trimBST(root.right, L, R)
+            return root
+
+        if value < L:
+            # left tree won't be qualified
+            return self.trimBST(root.right, L, R)
+
+        if value > R:
+            # right tree won't be qualified
+            return self.trimBST(root.left, L, R)
