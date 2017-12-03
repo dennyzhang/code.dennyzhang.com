@@ -12,51 +12,32 @@
 ##    ,-----------
 ##    | Given a list, rotate the list to the right by k places, where k is non-negative.
 ##    | 
-##    | For example:
+##    | 
+##    | Example:
+##    | 
 ##    | Given 1->2->3->4->5->NULL and k = 2,
+##    | 
 ##    | return 4->5->1->2->3->NULL.
 ##    `-----------
 ##
+##    
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:13>
+## Updated: Time-stamp: <2017-10-24 17:21:30>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def rotateRight(self, head, k):
+    def findSubstring(self, s, words):
         """
-        :type head: ListNode
-        :type k: int
-        :rtype: ListNode
+        :type s: str
+        :type words: List[str]
+        :rtype: List[int]
         """
         ## Basic Idea:
-        ##      1->2->3->4->5->NULL
-        ##      1->2->3->    4->5->NULL
-        ##    head    p      q  r
-        ##
-        ## Complexity:
-        if head is None or head.next is None:
-            return head
+        ## Complexity: Time O(), Space O()
+        ## Assumptions:
+        ## barfoothefoobarman -> bar foo the foo bar man
 
-        p = head
-        length = 1
-        while p.next is not None:
-            length += 1
-            p = p.next
-
-        k = k % length
-        if k == 0:
-            return head
-
-        p = head
-        for i in range(0, length-k-1):
-            p = p.next
-
-        q = p.next
-        r = q
-        while r.next is not None:
-            r = r.next
-        r.next = head
-        p.next = None
-        head = q
-        return head
+if __name__ == '__main__':
+    s = Solution()
+    # print s.findSubstring("barfoothefoobarman")
 ## File: test.py ends
