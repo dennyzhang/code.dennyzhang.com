@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo #todobrain
+## Tags: #redo #brain
 ## Description:
 ##     https://leetcode.com/problems/single-number-ii/description/
 ##    ,-----------
