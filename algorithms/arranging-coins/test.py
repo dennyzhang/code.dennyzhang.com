@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
+## Tags: #todobrain
 ## Description:
 ##     https://leetcode.com/problems/arranging-coins/description/
 ##    ,-----------
@@ -39,12 +39,10 @@
 ##    | Because the 4th row is incomplete, we return 3.
 ##    `-----------
 ##
-##
-## Basic Idea:
-## Complexity:
+##    
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
+## Updated: Time-stamp: <2017-10-24 17:21:30>
 ##-------------------------------------------------------------------
 class Solution(object):
     def arrangeCoins(self, n):
@@ -52,12 +50,12 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        ## Idea: start from sqrt(2*n)
-        ## Complexity
+        ## Idea: sqrt(2*n), then start with it
         import math
-        k = int(math.sqrt(2*n))
-        sum_value = (k+1)*k/2
-        while sum_value <= n:
-            k += 1
-            sum_value += k
-        return k-1
+        k = (int)(math.sqrt(2*n))
+        while k*(k+1) < 2*n:
+            k = k + 1
+        if k*(k+1) == 2*n:
+            return k
+        else:
+            return k-1
