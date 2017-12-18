@@ -90,3 +90,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
+
+# Basic tests
+- Binary search: https://leetcode.com/problems/search-a-2d-matrix/description/
