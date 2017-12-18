@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #amusing, #brain
+## Tags: #amusing, #todobrain, #redo
 ## Description:
 ##     https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
 ##    ,-----------
@@ -29,14 +29,33 @@
 ## Updated: Time-stamp: <2017-10-28 21:01:14>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def findDuplicates(self, nums):
         """
-        :type s: str
-        :rtype: int
+        :type nums: List[int]
+        :rtype: List[int]
         """
-        ## Basic Idea:
-        ## Complexity:
+        ## Basic Idea: In place change, move a[i] to i + 1
+        ##             Then traverse all elements.
+        ##             If some element doesn't match, it's duplicated
+        ## Complexity: Time O(n), Space (1)
+        ##   1 2 3 4 5 6 7 8
+        ##   4 3 2 7 8 2 3 2
+        ##     2 3 4     7
+        i = 0
+        length = len(nums)
+        if length < 2:
+            return []
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+        while i < length:
+            # move to next if in position or the same
+            if nums[i] - 1 == i or nums[i] == nums[nums[i] - 1]:
+                i = i + 1
+            else:
+                j = nums[i] - 1
+                # swap nums[i] and nums[j]
+                nums[i], nums[j] = nums[j], nums[i]
+        res = []
+        for i in xrange(length):
+            if nums[i]  != i+1:
+                res.append(nums[i])
+        return res

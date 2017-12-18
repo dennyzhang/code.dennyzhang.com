@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
+## Tags: #redo
 ## Description:
 ##     https://leetcode.com/problems/find-peak-element/description/
 ##    ,-----------
@@ -36,6 +36,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        ## Idea:
+        ## Complexity: Time O(n)
         length = len(nums)
         if length == 1:
             return 0
