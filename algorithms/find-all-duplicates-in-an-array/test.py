@@ -34,9 +34,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        ## Basic Idea: In place change, move a[i] to i + 1
-        ##             Then traverse all elements.
-        ##             If some element doesn't match, it's duplicated
+        ## Basic Idea: count sort
         ## Complexity: Time O(n), Space (1)
         ##   1 2 3 4 5 6 7 8
         ##   4 3 2 7 8 2 3 2
