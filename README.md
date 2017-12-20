@@ -97,8 +97,17 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 # Basic Data Structure
 - Bloom filter
 - Hash
-- bit-map
-- heap
-- Inverted index
-- trie tree
-- segment tree
+- Bit-map
+- Heap
+- Inverted index/Trie tree
+- Segment tree
+- Red-Black tree
+
+# Basic Methodologies
+- Divide & Conquer
+- Hash
+- Sort: heap/quick/merge sort
+- Bloom filter/Bitmap
+- Inverted index/Trie tree
+- External sorting
+- Mapreduce

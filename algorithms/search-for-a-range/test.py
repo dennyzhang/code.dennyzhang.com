@@ -27,19 +27,51 @@
 ## Updated: Time-stamp: <2017-10-24 17:21:30>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def findSubstring(self, s, words):
+    def searchRange(self, nums, target):
         """
-        :type s: str
-        :type words: List[str]
+        :type nums: List[int]
+        :type target: int
         :rtype: List[int]
         """
-        ## Basic Idea:
-        ## Complexity: Time O(), Space O()
+        ## Basic Idea: binary search
+        ## Complexity: Time O(log(n)), Space O(1)
         ## Assumptions:
         ## Sample Data:
-        ## barfoothefoobarman -> bar foo the foo bar man
+        ##    5, 7, 7, 8, 8, 10
+        ##             8
+        ## binary search: 3 cases of not found
+        ##           right mid(left)
+        ##                mid(right) left
+        length = len(nums)
+        left, right = 0, length - 1
+        while left <= right:
+            mid = left + (right-left)/2
+            if nums[mid] >= target:
+                # left half
+                right = mid - 1
+            else:
+                left = mid + 1
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.findSubstring("barfoothefoobarman")
-## File: test.py ends
+        # print("round1 mid: %d, left: %d, right: %d. nums: %s" % (mid, left, right, nums))
+
+        left_index = min(left, right) + 1
+        if left_index >= length:
+            return [-1, -1]
+        if nums[left_index] != target:
+            return [-1, -1]
+
+        left, right = 0, length - 1
+        while left <= right:
+            mid = left + (right-left)/2
+            if nums[mid] <= target:
+                # right half
+                left = mid + 1
+            else:
+                right = mid - 1
+
+        # print("round2 mid: %d, left: %d, right: %d. nums: %s" % (mid, left, right, nums))
+        right_index = min(left, right)
+        return [left_index, right_index]
+
+s = Solution()
+print s.searchRange([5,7,7,8,8,8,10], 8)
