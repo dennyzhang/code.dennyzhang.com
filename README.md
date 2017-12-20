@@ -93,3 +93,12 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 
 # Basic tests
 - Binary search: https://leetcode.com/problems/search-a-2d-matrix/description/
+
+# Basic Data Structure
+- Bloom filter
+- Hash
+- bit-map
+- heap
+- Inverted index
+- trie tree
+- segment tree
