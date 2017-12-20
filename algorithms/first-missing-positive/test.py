@@ -29,7 +29,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        ## Basic Idea: count sort
+        ## Basic Idea: count sort. Put each number in its right place.
         ## Complexity:
         ## Sample Data:
         ##    1  2  0
@@ -39,9 +39,7 @@ class Solution(object):
         length = len(nums)
         # set negative elements to 0s, and set elements bigger than length to 0s
         for i in xrange(length):
-            if nums[i] < 0:
-                nums[i] = 0
-            if nums[i] > length:
+            if nums[i] < 0 or nums[i] > length:
                 nums[i] = 0
 
         i = 0
@@ -60,6 +58,5 @@ class Solution(object):
                 return i+1
         return length+1
 
-if __name__ == '__main__':
-    s = Solution()
-    print s.firstMissingPositive([3,4,-1,1])
+s = Solution()
+print s.firstMissingPositive([3,4,-1,1])
