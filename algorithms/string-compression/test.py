@@ -70,29 +70,26 @@ class Solution(object):
         :rtype: int
         """
         ## Idea: 3 pointers
-        ##       i: next different chracter, j: look ahead
-        ##       k: where to overwrite
-        ## Complexity:
-        ## Sample Data:
-        ##     ["a","a","b","b","c","c","c"]
-        ##       i   j
-        ##       k
+        ## Complexity: Time O(n), Space O(1)
         length = len(chars)
-        if length < 2:
-            return length
-
-        i, k = 0, 0
+        i,k = 0,0
         while i < length:
-            j = i+1
-            count = 1
-            while j<length and chars[i] == chars[j]:
+            j = i + 1
+            while j < length and chars[j-1] == chars[j]:
                 j += 1
-                count += 1
             chars[k] = chars[i]
-            k += 1
-            i = j
-            if count != 1:
-                for ch in str(count):
+            if j != i + 1:
+                count_str = str(j-i)
+                k += 1
+                for ch in count_str:
                     chars[k] = ch
                     k += 1
+            else:
+                k += 1
+            i = j
+            #print("i: %d, j:%d" % (i, j))
         return k
+s = Solution()
+chars = ["a","a","a","b","b","a","a"]
+s.compress(chars)
+print chars
