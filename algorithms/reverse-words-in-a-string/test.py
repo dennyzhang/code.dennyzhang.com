@@ -25,14 +25,21 @@
 ## Updated: Time-stamp: <2017-10-26 21:41:00>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def romanToInt(self, s):
+    def reverseWords(self, s):
         """
         :type s: str
-        :rtype: int
+        :rtype: str
         """
         ## Basic Idea:
-        ## Complexity:
-
-if __name__ == '__main__':
-    s = Solution()
-    # print s.romanToInt("MCMXCVI")
+        ## the sky is blue
+        ## eulb si yks eht
+        ## blue is sky the
+        ## Complexity: Time O(n), Space O(1)
+        # reverse
+        s = s[::-1]
+        res = []
+        for item in s.split(" "):
+            if item == "":
+                continue
+            res.append(item[::-1])
+        return ' '.join(res)
