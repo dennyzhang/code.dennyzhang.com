@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo, #todobrain
+## Tags: #redo, #list
 ## Description:
 ##     https://leetcode.com/problems/reverse-nodes-in-k-group/description/
 ##    ,-----------
