@@ -13,11 +13,13 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-12 10:59:14>
+## Updated: Time-stamp: <2018-01-08 09:22:36>
 ##-------------------------------------------------------------------
 class Solution(object):
-    # without loop
     def isPowerOfFour(self, num):
+        return ((num - 1) & num == 0 and (num-1) % 3 == 0)
+
+    def isPowerOfFour_2(self, num):
         """
         :type num: int
         :rtype: bool
