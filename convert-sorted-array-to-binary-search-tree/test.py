@@ -53,8 +53,8 @@ class Solution(object):
         length = len(nums)
         if length == 0:
             return None
-        mid_index = length/2
-        head = TreeNode(nums[mid_index])
-        head.left = self.sortedArrayToBST(nums[0:mid_index])
-        head.right = self.sortedArrayToBST(nums[mid_index+1:])
+        mid = length/2
+        head = TreeNode(nums[mid])
+        head.left = self.sortedArrayToBST(nums[0:mid])
+        head.right = self.sortedArrayToBST(nums[mid+1:])
         return head
