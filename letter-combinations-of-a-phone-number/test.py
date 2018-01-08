@@ -31,6 +31,34 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
+        ## Basic Ideas: BFS
+        ## Complexity:
+        ## Assumptions: For "0" and "1", map to empty string
+        ## Sample Data:
+        ch_dict = {"1":"", "2":"abc", "3":"def", 
+                   "4":"ghi", "5":"jkl", "6":"mno",
+                   "7":"pqrs", "8":"tuv", "9":"wxyz", "0":""}
+        res = []
+        for digit in digits:
+            # print("digit:%s. res: %s" % (digit, res))
+            ch_list = ch_dict[digit]
+            if len(res) == 0:
+                for ch in ch_list:
+                    res.append(ch)
+            else:
+                item_list = []
+                for ch in ch_list:
+                    for item in res:   
+                        item = "%s%s" % (item, ch)
+                        item_list.append(item)
+                res = item_list
+        return res
+
+    def letterCombinations_v1(self, digits):
+        """
+        :type digits: str
+        :rtype: List[str]
+        """
         ## Basic Idea: recursive way
         ## Complexity:
         digit_dict = {'2':'abc', '3':'def', '4':'ghi', '5':'jkl', \
