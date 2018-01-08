@@ -6,14 +6,14 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
+## Tags: #todobrain
 ## Description:
 ##     https://leetcode.com/problems/power-of-four/description/
 ## Basic Idea:
 ## Complexity:
 ## --
 ## Created : <2017-10-16>
-## Updated: Time-stamp: <2018-01-08 09:22:36>
+## Updated: Time-stamp: <2018-01-08 09:27:02>
 ##-------------------------------------------------------------------
 class Solution(object):
     def isPowerOfFour(self, num):
