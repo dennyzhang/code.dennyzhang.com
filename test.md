@@ -1,7 +1,8 @@
 ---
 post_title: 'Post Title'
-layout: post_type_probably_post
-published: true_or_false
+layout: post
+published: true
+description: How it begins.
 ---
 Post goes here.
 
