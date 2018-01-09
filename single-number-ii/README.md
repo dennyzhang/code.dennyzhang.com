@@ -1,4 +1,4 @@
-# Puzzle: Single Number II     :BLOG:Numbers:
+# Leetcode: Single Number II     :BLOG:Numbers:
 
 
 ---
@@ -53,6 +53,6 @@ Leave me comments, if you know how to solve.
             if is_positive is True: return res else: return -(res+1)
 
 More Reading:  
--   [Puzzle: Single Number](http://brain.dennyzhang.com/single-number/)
--   [Puzzle: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
--   [Puzzle: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)
+-   [Leetcode: Single Number](http://brain.dennyzhang.com/single-number/)
+-   [Leetcode: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
+-   [Leetcode: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)

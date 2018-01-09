@@ -1,4 +1,4 @@
-# Puzzle: Nim Game     :BLOG:Game:
+# Leetcode: Nim Game     :BLOG:Game:
 
 
 ---

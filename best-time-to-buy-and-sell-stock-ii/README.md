@@ -1,4 +1,4 @@
-# Puzzle: Best Time to Buy and Sell Stock II     :BLOG:Numbers:
+# Leetcode: Best Time to Buy and Sell Stock II     :BLOG:Numbers:
 
 
 ---

@@ -1,4 +1,4 @@
-# Puzzle: Rotate Array     :BLOG:Numbers:
+# Leetcode: Rotate Array     :BLOG:Numbers:
 
 
 ---
@@ -38,5 +38,5 @@ Leave me comments, if you know how to solve.
         # print s.findSubstring("barfoothefoobarman")
 
 More Reading:  
--   [Puzzle: Bitwise AND of Numbers Range](http://brain.dennyzhang.com/bitwise-and/)
--   [Puzzle: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
+-   [Leetcode: Bitwise AND of Numbers Range](http://brain.dennyzhang.com/bitwise-and/)
+-   [Leetcode: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
