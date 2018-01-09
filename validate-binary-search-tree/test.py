@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
+## Tags: #basic
 ## Description:
 ##     https://leetcode.com/problems/validate-binary-search-tree/description/
 ##    ,-----------

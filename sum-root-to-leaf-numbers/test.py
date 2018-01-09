@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
+## Tags: #redo, #basic
 ## Description:
 ##     https://leetcode.com/problems/sum-root-to-leaf-numbers/description/
 ##    ,-----------

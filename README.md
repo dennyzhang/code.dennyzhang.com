@@ -111,3 +111,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 - Inverted index/Trie tree
 - External sorting
 - Mapreduce
+
+# Misc
+- Permutation & Combination
