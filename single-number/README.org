@@ -1,7 +1,7 @@
-* Leetcode: Single Number                                         :BLOG:Numbers:
+* Leetcode: Single Number                                         :BLOG:Easy:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     todobrain
+:type:    binary
 :END:
 ---------------------------------------------------------------------
 Identity number which appears exactly once.
@@ -13,7 +13,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 
 Hint: Time O(n), Space O(1)
 
-https://leetcode.com/problems/single-number/description/
+Credits To: [[url-external:https://leetcode.com/problems/single-number/description/][Leetcode.com]]
 #+BEGIN_SRC python
 class Solution(object):
     def singleNumber(self, nums):

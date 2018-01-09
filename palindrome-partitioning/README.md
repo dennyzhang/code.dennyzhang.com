@@ -19,7 +19,7 @@ Return
       ["a","a","b"]
     ]
 
-<https://leetcode.com/problems/palindrome-partitioning/description/>  
+Credits To: [Leetcode.com](https://leetcode.com/problems/palindrome-partitioning/description/)  
 
     class Solution(object):
         def partition(self, s):

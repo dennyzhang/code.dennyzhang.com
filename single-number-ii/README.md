@@ -1,4 +1,4 @@
-# Leetcode: Single Number II     :BLOG:Numbers:
+# Leetcode: Single Number II     :BLOG::
 
 
 ---

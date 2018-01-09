@@ -1,7 +1,16 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/DennyZhang/Dropbox/private_data/project/devops_consultant/consultant_code/github/leetcode/challenges-leetcode-interesting/palindrome-partitioning/README.org
+
+
 * Leetcode: Palindrome Partitioning                              :BLOG:Basic:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     permutation
+:ARCHIVE_TIME: 2018-01-09 Tue 14:25
+:ARCHIVE_FILE: ~/Dropbox/private_data/project/devops_consultant/consultant_code/github/leetcode/challenges-leetcode-interesting/palindrome-partitioning/README.org
+:ARCHIVE_CATEGORY: README
 :END:
 ---------------------------------------------------------------------
 Backtracking or DFS

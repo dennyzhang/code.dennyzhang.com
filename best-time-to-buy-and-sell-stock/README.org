@@ -1,7 +1,7 @@
-* Leetcode: Best Time to Buy and Sell Stock                     :BLOG:Numbers:
+* Leetcode: Best Time to Buy and Sell Stock                     :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Easy
+:type:     numbers
 :END:
 ---------------------------------------------------------------------
 When to buy and sell stock.
@@ -21,7 +21,7 @@ Output: 0
 
 In this case, no transaction is done, i.e. max profit = 0.
 
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+Credits To: [[url-external:https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/][Leetcode.com]]
 
 #+BEGIN_SRC python
 class Solution(object):

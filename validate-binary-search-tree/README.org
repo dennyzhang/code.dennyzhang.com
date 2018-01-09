@@ -32,6 +32,8 @@ Binary tree [1,2,3], return false.
 
 https://leetcode.com/problems/validate-binary-search-tree/description/
 
+Credits To: [[url-external:https://leetcode.com/problems/palindrome-partitioning/description/][Leetcode.com]]
+
 #+BEGIN_SRC python
 # Definition for a binary tree node.
 # class TreeNode(object):

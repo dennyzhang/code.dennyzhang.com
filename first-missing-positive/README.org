@@ -1,4 +1,4 @@
-* Leetcode: First Missing Positive                              :BLOG:Numbers:
+* Leetcode: First Missing Positive                              :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     Numbers, Hard, redo
