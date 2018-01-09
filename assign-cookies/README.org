@@ -1,7 +1,7 @@
 * Leetcode: Assign Cookies                                          :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Easy, Popular, Kids
+:type:     todo
 :END:
 ---------------------------------------------------------------------
 Assign cookies wisely, and make more children happy
@@ -33,6 +33,8 @@ Explanation: You have 2 children and 3 cookies. The greed factors of 2 children 
 You have 3 cookies and their sizes are big enough to gratify all of the children, 
 You need to output 2.
 #+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/assign-cookies][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/assign-cookies/description/][Leetcode.com]]
 

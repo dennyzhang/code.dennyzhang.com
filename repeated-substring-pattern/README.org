@@ -1,7 +1,7 @@
-* Leetcode: Repeated Substring Pattern                          :BLOG:Numbers:
+* Leetcode: Repeated Substring Pattern                          :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Easy
+:type:     todo
 :END:
 ---------------------------------------------------------------------
 Check whether string can be created by keep repeating one substring.
@@ -31,6 +31,8 @@ Output: True
 #+END_EXAMPLE
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/repeated-substring-pattern/description/][Leetcode.com]]
 

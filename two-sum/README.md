@@ -18,6 +18,8 @@ Example:
     Because nums[0] + nums[1] = 2 + 7 = 9,
     return [0, 1].
 
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum)  
+
 Credits To: [Leetcode.com](https://leetcode.com/problems/two-sum/description/)  
 
 Leave me comments, if you know how to solve.  

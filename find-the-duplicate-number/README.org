@@ -1,7 +1,7 @@
 * Leetcode: Find the Duplicate Number                           :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Medium
+:type:     numbers
 :END:
 ---------------------------------------------------------------------
 Find the only one duplicate number
@@ -13,6 +13,8 @@ Note:
 - You must use only constant, O(1) extra space.
 - Your runtime complexity should be less than O(n*n).
 - There is only one duplicate number in the array, but it could be repeated more than once.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-duplicate-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-the-duplicate-number/description/][Leetcode.com]]
 

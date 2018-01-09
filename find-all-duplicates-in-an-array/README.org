@@ -1,7 +1,7 @@
 * Leetcode: Find All Duplicates in an Array                      :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Amusing, Redo
+:type:     count_sort
 :END:
 ---------------------------------------------------------------------
 Identify duplicates in a list of numbers
@@ -20,6 +20,9 @@ Input:
 Output:
 [2,3]
 #+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-duplicates-in-an-array][challenges-leetcode-interesting]]
+
 Credits To: [[url-external:https://leetcode.com/problems/find-all-duplicates-in-an-array/description/][Leetcode.com]]
 
 Leave me comments, if you know how to solve.

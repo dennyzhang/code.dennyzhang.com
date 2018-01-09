@@ -1,7 +1,7 @@
 * Leetcode: Nim Game                                       :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Easy, Popular, Kids
+:type:     numbers
 :END:
 ---------------------------------------------------------------------
 Do you want to play first or after, if you are determined to win.
@@ -11,6 +11,8 @@ You are playing the following Nim Game with your friend: There is a heap of ston
 Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.
 
 For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nim-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/nim-game/description/][Leetcode.com]]
 

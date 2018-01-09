@@ -1,7 +1,7 @@
 * Leetcode: Guess Number Higher or Lower                           :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Easy, Popular, Kids
+:type:     binary_search
 :END:
 ---------------------------------------------------------------------
 Guess number quickly
@@ -25,6 +25,8 @@ n = 10, I pick 6.
 
 Return 6.
 #+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/guess-number-higher-or-lower/description/][Leetcode.com]]
 

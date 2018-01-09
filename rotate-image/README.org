@@ -1,7 +1,7 @@
 * Leetcode: Rotate Image                                         :BLOG:Matrix:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Medium, redo
+:type:     array
 :END:
 ---------------------------------------------------------------------
 Clockwise rotate a 2D matrix
@@ -51,6 +51,9 @@ rotate the input matrix in-place such that it becomes:
   [16, 7,10,11]
 ]
 #+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-image][challenges-leetcode-interesting]]
+
 Credits To: [[url-external:https://leetcode.com/problems/rotate-image/description/][Leetcode.com]]
 
 Leave me comments, if you know how to solve.

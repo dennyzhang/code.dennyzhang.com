@@ -1,7 +1,7 @@
 * Leetcode: Poor Pigs                                              :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Hard, Popular, Kids
+:type:     todo
 :END:
 ---------------------------------------------------------------------
 Identity the poison bucket with mininum pigs
@@ -13,6 +13,8 @@ Answer this question, and write an algorithm for the follow-up general case.
 Follow-up:
 
 If there are n buckets and a pig drinking poison will die within m minutes, how many pigs (x) you need to figure out the "poison" bucket within p minutes? There is exact one bucket with poison.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/poor-pigs][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/poor-pigs/description/][Leetcode.com]]
 

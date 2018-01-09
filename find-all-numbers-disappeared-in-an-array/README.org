@@ -1,7 +1,7 @@
 * Leetcode: Find All Numbers Disappeared in an Array            :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Easy
+:type:     count_sort
 :END:
 ---------------------------------------------------------------------
 Find missing numbers
@@ -20,6 +20,8 @@ Input:
 Output:
 [5,6]
 #+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/][Leetcode.com]]
 

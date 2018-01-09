@@ -1,4 +1,4 @@
-# Puzzle: Single Number     :BLOG:Numbers:
+# Leetcode: Single Number     :BLOG:Easy:
 
 
 ---
@@ -14,7 +14,9 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 
 Hint: Time O(n), Space O(1)  
 
-<https://leetcode.com/problems/single-number/description/>  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number)  
+
+Credits To: [Leetcode.com](https://leetcode.com/problems/single-number/description/)  
 
     class Solution(object):
         def singleNumber(self, nums):
@@ -35,6 +37,6 @@ Hint: Time O(n), Space O(1)
 Leave me comments, if you know how to solve.  
 
 More Reading:  
--   [Puzzle: Puzzle: Single Number II](http://brain.dennyzhang.com/single-number-ii/)
--   [Puzzle: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
--   [Puzzle: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)
+-   [Leetcode: Leetcode: Single Number II](http://brain.dennyzhang.com/single-number-ii/)
+-   [Leetcode: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
+-   [Leetcode: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)

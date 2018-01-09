@@ -1,7 +1,7 @@
-* Leetcode: Triangle                                             :BLOG:Matrix:
+* Leetcode: Triangle                                             :BLOG:Medium:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Easy
+:type:     dp
 :END:
 ---------------------------------------------------------------------
 Tower calculation.
@@ -19,6 +19,8 @@ For example, given the following triangle
 #+END_EXAMPLE
 
 The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/triangle][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/triangle/description/][Leetcode.com]]
 

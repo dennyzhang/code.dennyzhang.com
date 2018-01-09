@@ -1,7 +1,7 @@
-* Leetcode: Valid Triangle Number                               :BLOG:Numbers:
+* Leetcode: Valid Triangle Number                               :BLOG:Medium:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     Numbers, Hard
+:type:     two_pointers
 :END:
 ---------------------------------------------------------------------
 Pic 3 numbers to get a triangle
@@ -23,6 +23,8 @@ Valid combinations are:
 Note:
 1. The length of the given array won't exceed 1000.
 - The integers in the given array are in the range of [0, 1000].
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-triangle-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/valid-triangle-number/description/][Leetcode.com]]
 
