@@ -1,4 +1,5 @@
 * Leetcode: Nim Game                                       :BLOG:Amusing:
+#+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     #numbers

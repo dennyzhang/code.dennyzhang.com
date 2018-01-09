@@ -1,4 +1,5 @@
 * Leetcode: Validate Binary Search Tree                  :BLOG:Basic:
+#+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     #tree

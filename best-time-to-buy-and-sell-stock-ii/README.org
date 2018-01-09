@@ -1,4 +1,5 @@
 * Leetcode: Best Time to Buy and Sell Stock II                  :BLOG:Hard:
+#+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     #todo

@@ -1,5 +1,6 @@
 * Leetcode: Sum Root to Leaf Numbers                  :BLOG:Basic:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+#+STARTUP: showeverything
 :PROPERTIES:
 :type:     #tree
 :END:

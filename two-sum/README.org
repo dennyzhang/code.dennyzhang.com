@@ -1,4 +1,5 @@
 * Leetcode: Two Sum                                            :BLOG:Numbers:
+#+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     #twopointers

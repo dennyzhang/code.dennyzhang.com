@@ -1,4 +1,5 @@
 * Leetcode: Rotate Image                                         :BLOG:Matrix:
+#+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     #array

@@ -1,5 +1,6 @@
 * Leetcode: First Missing Positive                              :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+#+STARTUP: showeverything
 :PROPERTIES:
 :type:     #numbers
 :END:

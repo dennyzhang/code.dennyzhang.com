@@ -64,12 +64,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 
 <a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
 
-## Frequently Used Tags
-
-- #amusing, #redo
-- #brain
-- #todobrain
-
 ## Grow Influence
 - Why people would want to use your GitHub repo?
   TODO: think about it!

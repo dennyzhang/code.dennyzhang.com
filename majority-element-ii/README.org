@@ -1,22 +1,19 @@
-* Leetcode: Single Number II                                      :BLOG:Hard:
+* Leetcode: Majority Element II                                   :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binary
+:type:     #numbers
 :END:
 ---------------------------------------------------------------------
 Identity number which appears exactly once.
 ---------------------------------------------------------------------
-Given an array of integers, every element appears three times except for one, which appears exactly once. Find that single one.
+Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space.
 
-Note:
-Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-ii][challenges-leetcode-interesting]]
+Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-number-ii/description/][Leetcode.com]]
-
-Hint: Time O(n), Space O(1)
+Hint:
 
 Leave me comments, if you know how to solve.
 
@@ -55,8 +52,3 @@ class Solution(object):
 
         if is_positive is True: return res else: return -(res+1)
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/single-number/][Leetcode: Single Number]]
-- [[http://brain.dennyzhang.com/find-duplicate-num/][Leetcode: Find the Duplicate Number]]
-- [[http://brain.dennyzhang.com/find-disappeared/][Leetcode: Find All Numbers Disappeared in an Array]]
