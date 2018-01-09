@@ -30,11 +30,9 @@ Example 2:
 
 Binary tree [1,2,3], return false.
 
-https://leetcode.com/problems/validate-binary-search-tree/description/
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/validate-binary-search-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/palindrome-partitioning/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/validate-binary-search-tree/description/][Leetcode.com]]
 
 #+BEGIN_SRC python
 # Definition for a binary tree node.

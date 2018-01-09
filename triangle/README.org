@@ -1,7 +1,7 @@
 * Leetcode: Triangle                                             :BLOG:Medium:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #dp
+:type:     #dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Tower calculation.
