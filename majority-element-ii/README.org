@@ -2,53 +2,72 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #numbers
+:type:     #moorevoting
 :END:
 ---------------------------------------------------------------------
 Identity number which appears exactly once.
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space.
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
 
-Hint:
+Hint: Time O(n), Space O(1). Moore voting
 
 Leave me comments, if you know how to solve.
 
+Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
+
 #+BEGIN_SRC python
 class Solution(object):
-    def singleNumber(self, nums):
+    def majorityElement(self, nums):
         """
         :type nums: List[int]
-        :rtype: int
+        :rtype: List[int]
         """
-        ## Idea: Use memory in the list
+        ## Basic Idea:
+        ##       No more than 2 elements would be qualified.
         ## Complexity: Time O(n), Space O(1)
         ## Sample Data:
-        ##    1 1 0 1
-        ##    1 1 0 1
-        ##    1 1 0 1
-        ##    0 1 1 1
-        ## Asummption: Integer is 64 bits. Any negative values?
-        length = 64
-        bit_list = [0]*length
+        ##    1 2 3 2 3 3
+        ## Asummption:
+        length = len(nums)
+        if length == 0:
+            return []
+        n1, n2 = None, None
+        c1, c2 = 0, 0
         for num in nums:
-            for i in xrange(length):
-                bit_list[i] += num % 2
-                bit_list[i] = bit_list[i] % 3
-                num = num >> 1
+            if num == n1:
+                c1 += 1
+            elif num == n2:
+                c2 += 1
+            elif c1 == 0:
+                n1, c1 = num, 1
+            elif c2 == 0:
+                n2, c2 = num, 1
+            else:
+                c1, c2 = c1 - 1, c2 - 1
+        c1, c2 = 0, 0
+        for num in nums:
+            if num == n1:
+                c1 += 1
+            elif num == n2:
+                c2 += 1
+        # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
+        res = []
+        if c1 > length/3:
+            res.append(n1)
+        if c2 > length/3:
+            res.append(n2)
+        return res
 
-        bit_list.reverse()
-        res = 0
-        is_positive = True
-        if bit_list[0] == 1:
-            is_positive = False
-            bit_list = map(lambda x:(x+1)%2, bit_list)
-        for i in xrange(length):
-            res = res << 1
-            res = res | bit_list[i]
-
-        if is_positive is True: return res else: return -(res+1)
+s = Solution()
+# print s.majorityElement([1, 2])
+# print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
+print s.majorityElement([1,1,1,2,3,4,5,6])
+# print s.majorityElement([1, 2, 3, 2, 3, 3])
 #+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]
