@@ -1,7 +1,7 @@
 * Leetcode: Assign Cookies                                          :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     todo
+:type:     #todo
 :END:
 ---------------------------------------------------------------------
 Assign cookies wisely, and make more children happy

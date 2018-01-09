@@ -1,7 +1,7 @@
 * Leetcode: Find the Duplicate Number                           :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     numbers
+:type:     #numbers
 :END:
 ---------------------------------------------------------------------
 Find the only one duplicate number

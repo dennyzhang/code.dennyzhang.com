@@ -1,7 +1,7 @@
 * Leetcode: Find All Duplicates in an Array                      :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     count_sort
+:type:     #countsort
 :END:
 ---------------------------------------------------------------------
 Identify duplicates in a list of numbers

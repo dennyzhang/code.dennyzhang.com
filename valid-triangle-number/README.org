@@ -1,7 +1,7 @@
 * Leetcode: Valid Triangle Number                               :BLOG:Medium:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     two_pointers
+:type:     #twopointers
 :END:
 ---------------------------------------------------------------------
 Pic 3 numbers to get a triangle

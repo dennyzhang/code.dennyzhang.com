@@ -1,7 +1,7 @@
 * Leetcode: Rotate Array                                          :BLOG:Basic:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array
+:type:     #array
 :END:
 ---------------------------------------------------------------------
 Right rotate array by k steps

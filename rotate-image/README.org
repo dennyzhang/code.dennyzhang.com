@@ -1,7 +1,7 @@
 * Leetcode: Rotate Image                                         :BLOG:Matrix:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array
+:type:     #array
 :END:
 ---------------------------------------------------------------------
 Clockwise rotate a 2D matrix

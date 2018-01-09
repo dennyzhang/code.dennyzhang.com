@@ -1,7 +1,7 @@
 * Leetcode: Poor Pigs                                              :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     todo
+:type:     #todo
 :END:
 ---------------------------------------------------------------------
 Identity the poison bucket with mininum pigs

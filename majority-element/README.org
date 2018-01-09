@@ -1,7 +1,7 @@
 * Leetcode: Majority Element                                    :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     count_sort
+:type:     #countsort
 :END:
 ---------------------------------------------------------------------
 More than half elements are the same. Identify it fast

@@ -1,7 +1,7 @@
 * Leetcode: Non-decreasing Array                                :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array
+:type:     #array
 :END:
 ---------------------------------------------------------------------
 Modify one element to make array non-decreasing

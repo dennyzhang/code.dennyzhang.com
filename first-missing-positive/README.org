@@ -1,7 +1,7 @@
 * Leetcode: First Missing Positive                              :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     numbers
+:type:     #numbers
 :END:
 ---------------------------------------------------------------------
 Find first positive integer

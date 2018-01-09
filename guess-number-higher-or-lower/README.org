@@ -1,7 +1,7 @@
 * Leetcode: Guess Number Higher or Lower                           :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binary_search
+:type:     #binarysearch
 :END:
 ---------------------------------------------------------------------
 Guess number quickly

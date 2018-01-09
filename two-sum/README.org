@@ -1,7 +1,7 @@
 * Leetcode: Two Sum                                            :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     two_pointers
+:type:     #twopointers
 :END:
 ---------------------------------------------------------------------
 Pic 2 numbers to get the target sum.

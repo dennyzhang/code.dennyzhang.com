@@ -21,6 +21,8 @@ Example:
     Output:
     [5,6]
 
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array)  
+
 Credits To: [Leetcode.com](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)  
 
     class Solution(object):

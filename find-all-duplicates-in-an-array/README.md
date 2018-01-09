@@ -1,4 +1,4 @@
-# Puzzle: Find All Duplicates in an Array     :BLOG:Numbers:
+# Leetcode: Find All Duplicates in an Array     :BLOG:Numbers:
 
 
 ---
@@ -20,6 +20,8 @@ Example:
     
     Output:
     [2,3]
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-duplicates-in-an-array)  
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)  
 
@@ -56,4 +58,4 @@ Leave me comments, if you know how to solve.
             return res
 
 More Reading:  
--   [Puzzle: Find All Duplicates in an Array](http://brain.dennyzhang.com/find-duplicate/)
+-   [Leetcode: Find All Duplicates in an Array](http://brain.dennyzhang.com/find-duplicate/)

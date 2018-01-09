@@ -1,7 +1,7 @@
 * Leetcode: Climbing Stairs                                      :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dp
+:type:     #dp
 :END:
 ---------------------------------------------------------------------
 Simple DP

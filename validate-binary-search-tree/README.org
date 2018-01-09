@@ -1,7 +1,7 @@
 * Leetcode: Validate Binary Search Tree                  :BLOG:Basic:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     tree
+:type:     #tree
 :END:
 ---------------------------------------------------------------------
 Basic tree datastructure

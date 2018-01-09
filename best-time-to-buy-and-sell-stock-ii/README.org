@@ -1,7 +1,7 @@
 * Leetcode: Best Time to Buy and Sell Stock II                  :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     todo
+:type:     #todo
 :END:
 ---------------------------------------------------------------------
 Again. When to buy and sell stock.

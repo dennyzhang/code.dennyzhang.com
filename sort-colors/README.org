@@ -1,7 +1,7 @@
 * Leetcode: Sort Colors                                         :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     two_pointers
+:type:     #twopointers
 :END:
 ---------------------------------------------------------------------
 Array is composed by only 3 types of elements. Sort it fast.

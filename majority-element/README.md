@@ -1,4 +1,4 @@
-# Leetcode: Majority Element     :BLOG:Numbers:
+# Leetcode: Majority Element     :BLOG:Hard:
 
 
 ---
@@ -10,6 +10,8 @@ More than half elements are the same. Identify it fast
 Given an array of size n, find the majority element. The majority element is the element that appears more than n/2 times.  
 
 You may assume that the array is non-empty and the majority element always exist in the array.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element)  
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element/description/)  
 
