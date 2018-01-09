@@ -1,4 +1,4 @@
-* Puzzle: Single Number II                                      :BLOG:Numbers:
+* Leetcode: Single Number II                                      :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     redo, brain
@@ -54,6 +54,6 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/single-number/][Puzzle: Single Number]]
-- [[http://brain.dennyzhang.com/find-duplicate-num/][Puzzle: Find the Duplicate Number]]
-- [[http://brain.dennyzhang.com/find-disappeared/][Puzzle: Find All Numbers Disappeared in an Array]]
+- [[http://brain.dennyzhang.com/single-number/][Leetcode: Single Number]]
+- [[http://brain.dennyzhang.com/find-duplicate-num/][Leetcode: Find the Duplicate Number]]
+- [[http://brain.dennyzhang.com/find-disappeared/][Leetcode: Find All Numbers Disappeared in an Array]]

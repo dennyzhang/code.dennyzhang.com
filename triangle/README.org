@@ -1,35 +1,30 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #amusing, #redo, #brain
-## Description:
-##     https://leetcode.com/problems/triangle/description/
-##    ,-----------
-##    | Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
-##    | 
-##    | For example, given the following triangle
-##    | [
-##    |      [2],
-##    |     [3,4],
-##    |    [6,5,7],
-##    |   [4,1,8,3]
-##    | ]
-##    | The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
-##    | 
-##    | Note:
-##    | Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.
-##    | 
-##    `-----------
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:14>
-##-------------------------------------------------------------------
+* Leetcode: Triangle                                             :BLOG:Matrix:
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     Numbers, Easy
+:END:
+---------------------------------------------------------------------
+Tower calculation.
+---------------------------------------------------------------------
+Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+
+For example, given the following triangle
+#+BEGIN_EXAMPLE
+[
+     [2],
+    [3,4],
+   [6,5,7],
+  [4,1,8,3]
+]
+#+END_EXAMPLE
+
+The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
+
+Credits To: [[url-external:https://leetcode.com/problems/triangle/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def minimumTotal(self, triangle):
         """
@@ -92,3 +87,7 @@ class Solution(object):
                 last_mininum_list[j] = min(entry[j]+last_mininum_list[j], \
                                             entry[j+1]+last_mininum_list[j+1])
         return last_mininum_list[0] + triangle[0][0]
+#+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/triangle-number/][Leetcode: Valid Triangle Number]]

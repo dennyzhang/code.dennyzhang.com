@@ -1,0 +1,32 @@
+* Leetcode: Majority Element                                    :BLOG:Numbers:
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     Numbers, Easy, Popular
+:END:
+---------------------------------------------------------------------
+More than half elements are the same. Identify it fast
+---------------------------------------------------------------------
+Given an array of size n, find the majority element. The majority element is the element that appears more than n/2 times.
+
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+Credits To: [[url-external:https://leetcode.com/problems/majority-element/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def majorityElement1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        ## Ideas: sort, then find the middle item
+        ## Complexity: Time O(n*log(n)), Space O(1)
+        length = len(nums)
+        nums2 = sorted(nums)
+        return nums2[(length-1)/2]
+#+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/two-sum/][Leetcode: Two Sum]]

@@ -1,30 +1,27 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
-## Description:
-##     https://leetcode.com/problems/two-sum/description/
-##    ,-----------
-##    | Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-##    | 
-##    | You may assume that each input would have exactly one solution, and you may not use the same element twice.
-##    | 
-##    | Example:
-##    | Given nums = [2, 7, 11, 15], target = 9,
-##    | 
-##    | Because nums[0] + nums[1] = 2 + 7 = 9,
-##    | return [0, 1].
-##    `-----------
-##    
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-23 18:22:03>
-##-------------------------------------------------------------------
+* Leetcode: Two Sum                                             :BLOG:Numbers:
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     Numbers, Easy, Popular
+:END:
+---------------------------------------------------------------------
+Pic 2 numbers to get the target sum.
+---------------------------------------------------------------------
+Given an array of integers, return *indices* of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+
+Example:
+#+BEGIN_EXAMPLE
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+#+END_EXAMPLE
+
+Credits To: [[url-external:https://leetcode.com/problems/two-sum/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+#+BEGIN_SRC python
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -74,4 +71,7 @@ if __name__ == '__main__':
     print s.twoSum([3, 2, 4], 6)
     print s.twoSum([1, 2, 3], 5)
     print s.twoSum([2, 7, 11, 15], 9)
-## File: test.py ends
+#+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]

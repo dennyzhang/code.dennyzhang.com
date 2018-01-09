@@ -1,27 +1,20 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #brain
-## Description:
-##     https://leetcode.com/problems/bitwise-and-of-numbers-range/description/
-##    ,-----------
-##    | Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.
-##    | 
-##    | For example, given the range [5, 7], you should return 4.
-##    `-----------
-##
-##
-## Basic Idea:
-## Complexity:
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
-##-------------------------------------------------------------------
+* Leetcode: Bitwise AND of Numbers Range                         :BLOG:Numbers:
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     Medium
+:END:
+---------------------------------------------------------------------
+Bitwise AND a range of numbers
+---------------------------------------------------------------------
+Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.
+
+For example, given the range [5, 7], you should return 4.
+
+Credits To: [[url-external:https://leetcode.com/problems/bitwise-and-of-numbers-range/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
         """
@@ -65,3 +58,7 @@ class Solution(object):
         res = pow_m/2
         res += self.rangeBitwiseAnd(m-res, n-res)
         return res
+#+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/guess-high-low/][Leetcode: Guess Number Higher or Lower]]

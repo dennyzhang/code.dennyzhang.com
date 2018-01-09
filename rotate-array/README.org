@@ -1,4 +1,4 @@
-* Puzzle: Rotate Array                                          :BLOG:Numbers:
+* Leetcode: Rotate Array                                          :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     redo, brain
@@ -39,5 +39,5 @@ if __name__ == '__main__':
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/bitwise-and/][Puzzle: Bitwise AND of Numbers Range]]
-- [[http://brain.dennyzhang.com/find-duplicate-num/][Puzzle: Find the Duplicate Number]]
+- [[http://brain.dennyzhang.com/bitwise-and/][Leetcode: Bitwise AND of Numbers Range]]
+- [[http://brain.dennyzhang.com/find-duplicate-num/][Leetcode: Find the Duplicate Number]]

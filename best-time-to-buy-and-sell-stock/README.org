@@ -1,4 +1,4 @@
-* Puzzle: Best Time to Buy and Sell Stock                     :BLOG:Numbers:
+* Leetcode: Best Time to Buy and Sell Stock                     :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     Numbers, Easy
@@ -62,4 +62,4 @@ class Solution(object):
 Leave me comments, if you know how to solve.
 
 More Reading:
-- [[http://brain.dennyzhang.com/stock-decision-ii/][Puzzle: Best Time to Buy and Sell Stock II]]
+- [[http://brain.dennyzhang.com/stock-decision-ii/][Leetcode: Best Time to Buy and Sell Stock II]]

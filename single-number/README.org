@@ -1,4 +1,4 @@
-* Puzzle: Single Number                                         :BLOG:Numbers:
+* Leetcode: Single Number                                         :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     todobrain
@@ -35,6 +35,6 @@ if __name__ == '__main__':
 Leave me comments, if you know how to solve.
 
 More Reading:
-- [[http://brain.dennyzhang.com/single-number-ii/][Puzzle: Puzzle: Single Number II]]
-- [[http://brain.dennyzhang.com/find-duplicate-num/][Puzzle: Find the Duplicate Number]]
-- [[http://brain.dennyzhang.com/find-disappeared/][Puzzle: Find All Numbers Disappeared in an Array]]
+- [[http://brain.dennyzhang.com/single-number-ii/][Leetcode: Leetcode: Single Number II]]
+- [[http://brain.dennyzhang.com/find-duplicate-num/][Leetcode: Find the Duplicate Number]]
+- [[http://brain.dennyzhang.com/find-disappeared/][Leetcode: Find All Numbers Disappeared in an Array]]

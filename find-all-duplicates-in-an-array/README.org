@@ -1,4 +1,4 @@
-* Puzzle: Find All Duplicates in an Array                      :BLOG:Numbers:
+* Leetcode: Find All Duplicates in an Array                      :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     amusing, redo, brain
@@ -57,4 +57,4 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/find-duplicate/][Puzzle: Find All Duplicates in an Array]]
+- [[http://brain.dennyzhang.com/find-duplicate/][Leetcode: Find All Duplicates in an Array]]

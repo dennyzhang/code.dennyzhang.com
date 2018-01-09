@@ -1,28 +1,26 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #amusing, #redo, #todobrain
-## Description:
-##     https://leetcode.com/problems/first-missing-positive/description/
-## ,-----------
-## | Given an unsorted integer array, find the first missing positive integer.
-## | 
-## | For example,
-## | Given [1,2,0] return 3,
-## | and [3,4,-1,1] return 2.
-## | 
-## | Your algorithm should run in O(n) time and uses constant space.
-## `-----------
-## 
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 17:22:00>
-##-------------------------------------------------------------------
+* Leetcode: First Missing Positive                              :BLOG:Numbers:
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     Numbers, Hard, redo
+:END:
+---------------------------------------------------------------------
+Find first positive integer
+---------------------------------------------------------------------
+Given an unsorted integer array, find the first missing positive integer.
+
+#+BEGIN_EXAMPLE
+For example,
+Given [1,2,0] return 3,
+and [3,4,-1,1] return 2.
+#+END_EXAMPLE
+
+Your algorithm should run in O(n) time and uses constant space.
+
+Credits To: [[url-external:https://leetcode.com/problems/first-missing-positive/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def firstMissingPositive(self, nums):
         """
@@ -60,3 +58,7 @@ class Solution(object):
 
 s = Solution()
 print s.firstMissingPositive([3,4,-1,1])
+#+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/find-disappeared/][Leetcode: Find All Numbers Disappeared in an Array]]
