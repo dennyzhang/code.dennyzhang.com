@@ -1,4 +1,4 @@
-* Leetcode: Poor Pigs                                              :BLOG:Game:
+* Leetcode: Poor Pigs                                              :BLOG:Hard:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     Numbers, Hard, Popular, Kids

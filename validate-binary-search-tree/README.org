@@ -1,41 +1,38 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #basic
-## Description:
-##     https://leetcode.com/problems/validate-binary-search-tree/description/
-##    ,-----------
-##    | Given a binary tree, determine if it is a valid binary search tree (BST).
-##    | 
-##    | Assume a BST is defined as follows:
-##    | 
-##    | The left subtree of a node contains only nodes with keys less than the node's key.
-##    | The right subtree of a node contains only nodes with keys greater than the node's key.
-##    | Both the left and right subtrees must also be binary search trees.
-##    | Example 1:
-##    |     2
-##    |    / \
-##    |   1   3
-##    | Binary tree [2,1,3], return true.
-##    | Example 2:
-##    |     1
-##    |    / \
-##    |   2   3
-##    | Binary tree [1,2,3], return false.
-##    `-----------
-##
-##
-## Basic Idea:
-## Complexity:
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
-##-------------------------------------------------------------------
+* Leetcode: Validate Binary Search Tree                  :BLOG:Basic:
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     Basic
+:END:
+---------------------------------------------------------------------
+Basic tree datastructure
+---------------------------------------------------------------------
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+#+BEGIN_EXAMPLE
+Example 1:
+    2
+   / \
+  1   3
+#+END_EXAMPLE
+
+Binary tree [2,1,3], return true.
+#+BEGIN_EXAMPLE
+Example 2:
+    1
+   / \
+  2   3
+#+END_EXAMPLE
+
+Binary tree [1,2,3], return false.
+
+https://leetcode.com/problems/validate-binary-search-tree/description/
+
+#+BEGIN_SRC python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -101,3 +98,4 @@ class Solution(object):
         if root.right:
             res += self.getBST(root.right)
         return res
+#+END_SRC

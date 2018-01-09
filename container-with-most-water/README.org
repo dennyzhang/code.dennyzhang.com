@@ -1,4 +1,4 @@
-* Leetcode: Container With Most Water                               :BLOG:Game:
+* Leetcode: Container With Most Water                               :BLOG:Numbers:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     Easy, Popular, Kids

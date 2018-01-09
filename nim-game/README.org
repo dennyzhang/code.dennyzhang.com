@@ -1,4 +1,4 @@
-* Leetcode: Nim Game                                       :BLOG:Game:
+* Leetcode: Nim Game                                       :BLOG:Amusing:
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     Easy, Popular, Kids

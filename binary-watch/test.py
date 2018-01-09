@@ -6,7 +6,7 @@
 ##
 ## File: test.py
 ## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #basic
+## Tags:
 ## Description:
 ##     https://leetcode.com/problems/binary-watch/description/
 ##    ,-----------

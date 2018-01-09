@@ -1,4 +1,4 @@
-# Puzzle: Guess Number Higher or Lower     :BLOG:Game:
+# Leetcode: Guess Number Higher or Lower     :BLOG:Amusing:
 
 
 ---

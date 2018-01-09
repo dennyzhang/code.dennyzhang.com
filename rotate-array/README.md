@@ -1,4 +1,4 @@
-# Leetcode: Rotate Array     :BLOG:Numbers:
+# Leetcode: Rotate Array     :BLOG:Basic:
 
 
 ---

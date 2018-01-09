@@ -1,4 +1,4 @@
-# Leetcode: Assign Cookies     :BLOG:Game:
+# Leetcode: Assign Cookies     :BLOG:Amusing:
 
 
 ---

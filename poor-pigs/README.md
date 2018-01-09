@@ -1,4 +1,4 @@
-# Leetcode: Poor Pigs     :BLOG:Game:
+# Leetcode: Poor Pigs     :BLOG:Amusing:
 
 
 ---
