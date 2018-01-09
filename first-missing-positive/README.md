@@ -1,4 +1,4 @@
-# Puzzle: First Missing Positive     :BLOG:Numbers:
+# Leetcode: First Missing Positive     :BLOG:Hard:
 
 
 ---
@@ -14,6 +14,8 @@ Given an unsorted integer array, find the first missing positive integer.
     and [3,4,-1,1] return 2.
 
 Your algorithm should run in O(n) time and uses constant space.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive)  
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/first-missing-positive/description/)  
 
@@ -58,4 +60,4 @@ Leave me comments, if you know how to solve.
     print s.firstMissingPositive([3,4,-1,1])
 
 More Reading:  
--   [Puzzle: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)
+-   [Leetcode: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)

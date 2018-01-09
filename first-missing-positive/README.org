@@ -16,6 +16,8 @@ and [3,4,-1,1] return 2.
 
 Your algorithm should run in O(n) time and uses constant space.
 
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive][challenges-leetcode-interesting]]
+
 Credits To: [[url-external:https://leetcode.com/problems/first-missing-positive/description/][Leetcode.com]]
 
 Leave me comments, if you know how to solve.
