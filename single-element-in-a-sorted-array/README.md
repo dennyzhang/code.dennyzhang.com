@@ -23,6 +23,8 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)  
 
+Useful link: [here](https://leetcode.com/problems/single-element-in-a-sorted-array/discuss/100763)  
+
 Leave me comments, if you know how to solve.  
 
     class Solution(object):
@@ -42,25 +44,21 @@ Leave me comments, if you know how to solve.
             length = len(nums)
             left, right = 0, length - 1
             while left <= right:
-                mid = (left+right)/2
+                mid = left + (right-left)/2
                 if mid == 0 or mid == length-1:
                     return nums[mid]
     
                 if nums[mid] != nums[mid-1] and nums[mid] != nums[mid+1]:
                     return nums[mid]
                 else:
+                    firstMidVal = mid
                     if nums[mid] == nums[mid-1]:
-                        left_count = mid-1-left
-                        if left_count % 2 != 0:
-                            right = mid - 2
-                        else:
-                            left = mid + 1
+                        firstMidVal = mid-1
+                    left_count = firstMidVal-left
+                    if left_count % 2 != 0:
+                        right = firstMidVal - 1
                     else:
-                        left_count = mid-left
-                        if left_count % 2 != 0:
-                            right = mid -1
-                        else:
-                            left = mid + 2
+                        left = firstMidVal + 2
             return None
     
     s = Solution()
