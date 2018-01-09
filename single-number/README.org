@@ -1,0 +1,40 @@
+* Puzzle: Single Number                                         :BLOG:Numbers:
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     todobrain
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+Given an array of integers, every element appears twice except for one. Find that single one.
+
+Note:
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+
+Hint: Time O(n), Space O(1)
+
+https://leetcode.com/problems/single-number/description/
+#+BEGIN_SRC python
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        x = 0
+        for i in nums:
+            x = x ^ i
+        return x
+
+if __name__ == '__main__':
+    s = Solution()
+    print s.singleNumber([1, 2, 1])
+    print s.singleNumber([2, 2, 1])
+#+END_SRC
+
+Leave me comments, if you know how to solve.
+
+More Reading:
+- [[http://brain.dennyzhang.com/single-number-ii/][Puzzle: Puzzle: Single Number II]]
+- [[http://brain.dennyzhang.com/find-duplicate-num/][Puzzle: Find the Duplicate Number]]
+- [[http://brain.dennyzhang.com/find-disappeared/][Puzzle: Find All Numbers Disappeared in an Array]]
