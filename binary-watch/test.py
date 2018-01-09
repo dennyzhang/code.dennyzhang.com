@@ -34,19 +34,68 @@
 ## Updated: Time-stamp: <2017-10-24 17:21:30>
 ##-------------------------------------------------------------------
 class Solution(object):
-    def findSubstring(self, s, words):
-        """
-        :type s: str
-        :type words: List[str]
-        :rtype: List[int]
-        """
-        ## Basic Idea:
-        ## Complexity: Time O(), Space O()
+    def readBinaryWatch(self, num):
+        ## Basic Ideas:
+        ##         Check all possibility
+        ## Complexity: Time O(1) 12*60, Space O(1)
         ## Assumptions:
         ## Sample Data:
-        ## barfoothefoobarman -> bar foo the foo bar man
+        res = []
+        for hour in xrange(12):
+            for minute in xrange(60):
+                if bin(hour).count('1') + bin(minute).count('1') == num:
+                    res.append("%d:%02d" % (hour, minute))
+        return res
 
-if __name__ == '__main__':
-    s = Solution()
-    # print s.findSubstring("barfoothefoobarman")
-## File: test.py ends
+    def readBinaryWatch_v1(self, num):
+        """
+        :type num: int
+        :rtype: List[str]
+        """
+        ## Basic Ideas:
+        ##         Get all the possible combination
+        ##         Check whether it's valid
+        ##         Print the value with the right format
+        ## Complexity: Time O(1), Space O(1)
+        ## Assumptions:
+        ## Sample Data:
+        l = self.getResult(num, 10)
+        res = []
+        for item in l:
+            item_str = self.formatItem(item)
+            if item_str != "":
+                res.append(item_str)
+        return res
+
+    def getResult(self, num, remain_digits):
+        # print("remain_digits: %d" % (remain_digits))
+        if remain_digits == 0 or num > remain_digits:
+            return []
+        if num == 0:
+            return [[0] * remain_digits]
+        if num == remain_digits:
+            return [[1]*remain_digits]
+
+        res = []
+        res_0 = self.getResult(num, remain_digits-1)
+        res_1 = self.getResult(num-1, remain_digits-1)
+        if len(res_1) != 0:
+            for item in res_1:
+                res.append([1] + item)
+        if len(res_0) != 0:
+            for item in res_0:
+                res.append([0] + item)
+        return res
+
+    def formatItem(self, item):
+        # If valid, return ""
+        hour = item[0]*8 + item[1]*4 + item[2]*2 + item[3]*1
+        if hour > 11:
+            return ""
+        minute = item[4]*32 + item[5]*16 + item[6]*8 + item[7]*4 + item[8]*2 + item[9]*1
+        if minute > 59:
+            return ""
+        return "%d:%02d" % (hour, minute)
+        
+# s = Solution()
+# print s.readBinaryWatch(1)
