@@ -1,41 +1,32 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #todobrain, #basic, #tree
-## Description:
-##     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
-##    ,-----------
-##    | Given a binary tree, return the inorder traversal of its nodes' values.
-##    | 
-##    | For example:
-##    | Given binary tree [1,null,2,3],
-##    |    1
-##    |     \
-##    |      2
-##    |     /
-##    |    3
-##    | return [1,3,2].
-##    | 
-##    | Note: Recursive solution is trivial, could you do it iteratively?
-##    `-----------
-##
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-03 10:14:57>
-##-------------------------------------------------------------------
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+* Leetcode: Binary Tree Inorder Traversal                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #tree
+:END:
+---------------------------------------------------------------------
+Binary Tree Inorder Traversal
+---------------------------------------------------------------------
+Given a binary tree, return the inorder traversal of its nodes' values.
 
+For example:
+#+BEGIN_EXAMPLE
+Given binary tree [1,null,2,3],
+   1
+    \
+     2
+    /
+   3
+return [1,3,2].
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-inorder-traversal][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/binary-tree-inorder-traversal/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -90,3 +81,4 @@ class Solution(object):
 
         if root.right is not None:
             self.inorderTraversalRec(root.right, list_value)
+#+END_SRC

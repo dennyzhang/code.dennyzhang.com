@@ -2,10 +2,10 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #01bags, #todobrain
+:type:     #combination
 :END:
 ---------------------------------------------------------------------
-0-1 bags
+Combination
 ---------------------------------------------------------------------
 Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 
@@ -76,6 +76,3 @@ class Solution(object):
 s = Solution()
 print s.combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/triangle-number/][Leetcode: Valid Triangle Number]]

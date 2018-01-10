@@ -3,7 +3,7 @@
 
 ---
 
-0-1 bags  
+Combination  
 
 ---
 
@@ -30,6 +30,11 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/combination-sum-ii/desc
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: sort the list, then 0-1 bag
+    ## Complexity: Time ? Space ?
+    ## Assumptions:
+    ## Sample Data:
+    ##      1 1 2 5 6 7 10
     class Solution(object):
         def combinationSum2(self, candidates, target):
             """
@@ -37,11 +42,6 @@ Leave me comments, if you know how to solve.
             :type target: int
             :rtype: List[List[int]]
             """
-            ## Basic Ideas: sort the list, then 0-1 bag
-            ## Complexity: Time ? Space ?
-            ## Assumptions:
-            ## Sample Data:
-            ##      1 1 2 5 6 7 10
             candidates = sorted(candidates)
             return self.mycombinationSum2(candidates, target)
     
@@ -72,6 +72,3 @@ Leave me comments, if you know how to solve.
     
     s = Solution()
     print s.combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
-
-More Reading:  
--   [Leetcode: Valid Triangle Number](http://brain.dennyzhang.com/triangle-number/)

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #datastructure, #design, #todobrain
+:type:     #datastructure, #design
 :END:
 ---------------------------------------------------------------------
 Design a data structure that supports reqiured operations in O(1) time.
@@ -46,8 +46,6 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom-o1/description/][Leetcode.com]]
 
 Leave me comments, if you know how to solve.
-
-Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
 
 #+BEGIN_SRC python
 ## Basic Ideas:
@@ -118,6 +116,3 @@ class RandomizedSet(object):
 # param_2 = obj.remove(val)
 # param_3 = obj.getRandom()
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]

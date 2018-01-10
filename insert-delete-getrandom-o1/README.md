@@ -45,8 +45,6 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/insert-delete-getrandom
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
-
     ## Basic Ideas:
     ##      an array: host all values
     ##           If an existing value has been removed, replace it with the tail. And remove the tail
@@ -114,6 +112,3 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
     # param_1 = obj.insert(val)
     # param_2 = obj.remove(val)
     # param_3 = obj.getRandom()
-
-More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
