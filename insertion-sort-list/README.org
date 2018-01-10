@@ -1,0 +1,86 @@
+* Leetcode: Insertion Sort List                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #linkedlist, #todobrain
+:END:
+---------------------------------------------------------------------
+Sort a linked list
+---------------------------------------------------------------------
+Sort a linked list using insertion sort.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insertion-sort-list][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/insertion-sort-list/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+## Basic Ideas: 
+##       Add a dummy head node, since the head node might be changed
+##       Pointer p: the tail of sorted list
+##       Pointer q: the next node to be sorted
+## Complexity
+## Sample Data:
+##     2 -> 3 -> 5 -> 1
+##          p
+##               q
+##     r
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def insertionSortList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        dummy_node = ListNode(None)
+        dummy_node.next = head
+        p = dummy_node.next
+        # quit if no node to be sorted
+        while p and p.next:
+            q = p.next
+            r = dummy_node
+            # quit if we have compared q with all sorted elements
+            while r != p:
+                if r.next.val > q.val:
+                    break
+                r = r.next
+            if r != p:
+                # move q to the next of r
+                p.next = q.next
+                q.next = r.next
+                r.next = q
+            else:
+                p = p.next
+        return dummy_node.next
+
+s = Solution()
+# p1 = ListNode(3)
+# p2 = ListNode(4)
+# p3 = ListNode(1)
+
+p1 = ListNode(3)
+p2 = ListNode(2)
+p3 = ListNode(4)
+
+# p1 = ListNode(3)
+# p2 = ListNode(2)
+# p3 = ListNode(1)
+
+p1.next = p2
+p2.next = p3
+p3.next = None
+
+new_head = s.insertionSortList(p1)
+print new_head.val
+print new_head.next.val
+print new_head.next.next.val
+#+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]

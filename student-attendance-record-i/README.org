@@ -1,0 +1,75 @@
+* Leetcode: Student Attendance Record I                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #string, #todobrain
+:END:
+---------------------------------------------------------------------
+Check string pattern
+---------------------------------------------------------------------
+You are given a string representing an attendance record for a student. The record only contains the following three characters:
+1. 'A' : Absent.
+- 'L' : Late.
+- 'P' : Present.
+
+A student could be rewarded if his attendance record doesn't contain more than one 'A' (absent) or more than two continuous 'L' (late).
+
+You need to return whether the student could be rewarded according to his attendance record.
+#+BEGIN_EXAMPLE
+Example 1:
+Input: "PPALLP"
+Output: True
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+Input: "PPALLL"
+Output: False
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-i/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+## Basic Ideas: One pass
+##              absent: counter of absent records
+##              max_continuous_late: counter of continous late
+## Complexity: Time O(n), Space O(1)
+class Solution(object):
+    def checkRecord(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        absent = 0
+        max_continuous_late, current_continuous_late = 0, 0
+        previous_late = False
+        for ch in s:
+            if ch == 'L':
+                if previous_late:
+                    current_continuous_late += 1
+                else:
+                    previous_late = True
+                    current_continuous_late = 1                    
+            else:
+                previous_late = False
+                if current_continuous_late > max_continuous_late:
+                    max_continuous_late = current_continuous_late
+                current_continuous_late = 0
+            # tail of L
+            max_continuous_late = max(max_continuous_late, current_continuous_late)
+            if ch == 'A':
+                absent += 1
+        return absent <= 1 and max_continuous_late <= 2
+
+s = Solution()
+print s.checkRecord('PPALLP')
+print s.checkRecord('PPALLL')
+print s.checkRecord('PPALLP')
+#+END_SRC
+
+More Reading:
+- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]
