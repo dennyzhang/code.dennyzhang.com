@@ -1,31 +1,21 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo, #todobrain
-## Description:
-##     https://leetcode.com/problems/search-for-a-range/description/
-##    ,-----------
-##    | Given an array of integers sorted in ascending order, find the starting and ending position of a given target value.
-##    | 
-##    | Your algorithm's runtime complexity must be in the order of O(log n).
-##    | 
-##    | If the target is not found in the array, return [-1, -1].
-##    | 
-##    | For example,
-##    | Given [5, 7, 7, 8, 8, 10] and target value 8,
-##    | return [3, 4].
-##    | 
-##    `-----------
-##    
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-24 17:21:30>
-##-------------------------------------------------------------------
+* Leetcode: Search for a Range                                    :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #binarysearch
+:END:
+---------------------------------------------------------------------
+Search for a Range
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-for-a-range][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/search-for-a-range/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def searchRange(self, nums, target):
         """
@@ -33,7 +23,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        ## Basic Idea: binary search
+        ## Basic Idea: Find the left same, then the right same
         ## Complexity: Time O(log(n)), Space O(1)
         ## Assumptions:
         ## Sample Data:
@@ -75,3 +65,4 @@ class Solution(object):
 
 s = Solution()
 print s.searchRange([5,7,7,8,8,8,10], 8)
+#+END_SRC
