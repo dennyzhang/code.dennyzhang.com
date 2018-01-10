@@ -1,0 +1,38 @@
+* Leetcode: Merge Intervals                                      :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #redo, #interval
+:END:
+---------------------------------------------------------------------
+Merge Intervals
+---------------------------------------------------------------------
+Given a collection of intervals, merge all overlapping intervals.
+
+#+BEGIN_EXAMPLE
+For example,
+Given [1,3],[2,6],[8,10],[15,18],
+return [1,6],[8,10],[15,18].
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-intervals][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/merge-intervals/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def merge(self, intervals):
+        """
+        :type intervals: List[Interval]
+        :rtype: List[Interval]
+        """
+        ret = []
+        for entry in sorted(intervals, key=lambda entry: entry.start):
+            if ret and entry.start <= ret[-1].end:
+                ret[-1].end = max(ret[-1].end, entry.end)
+            else:
+                ret.append(entry)
+        return ret
+#+END_SRC
