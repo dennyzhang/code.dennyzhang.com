@@ -24,19 +24,19 @@ Credits To: [[url-external:https://leetcode.com/problems/first-missing-positive/
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: count sort. Put each number in its right place.
+## Complexity:
+## Sample Data:
+##    1  2  0
+##    3  4  0  1
+##    0  4  3  1
+##    0  1  3  4
 class Solution(object):
     def firstMissingPositive(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        ## Basic Idea: count sort. Put each number in its right place.
-        ## Complexity:
-        ## Sample Data:
-        ##    1  2  0
-        ##    3  4  0  1
-        ##    0  4  3  1
-        ##    0  1  3  4
         length = len(nums)
         # set negative elements to 0s, and set elements bigger than length to 0s
         for i in xrange(length):

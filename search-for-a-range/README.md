@@ -15,6 +15,15 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/search-for-a-range/desc
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Find the left same, then the right same
+    ## Complexity: Time O(log(n)), Space O(1)
+    ## Assumptions:
+    ## Sample Data:
+    ##    5, 7, 7, 8, 8, 10
+    ##             8
+    ## binary search: 3 cases of not found
+    ##           right mid(left)
+    ##                mid(right) left
     class Solution(object):
         def searchRange(self, nums, target):
             """
@@ -22,15 +31,6 @@ Leave me comments, if you know how to solve.
             :type target: int
             :rtype: List[int]
             """
-            ## Basic Idea: Find the left same, then the right same
-            ## Complexity: Time O(log(n)), Space O(1)
-            ## Assumptions:
-            ## Sample Data:
-            ##    5, 7, 7, 8, 8, 10
-            ##             8
-            ## binary search: 3 cases of not found
-            ##           right mid(left)
-            ##                mid(right) left
             length = len(nums)
             left, right = 0, length - 1
             while left <= right:

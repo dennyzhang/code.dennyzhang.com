@@ -1,8 +1,8 @@
-* Leetcode: Container With Most Water                               :BLOG:Numbers:
+* Leetcode: Container With Most Water                               :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #todo
+:type:     #medium
 :END:
 ---------------------------------------------------------------------
 Get the most water from containers

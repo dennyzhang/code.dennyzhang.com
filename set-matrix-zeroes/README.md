@@ -25,21 +25,21 @@ Leave me comments, if you know how to solve.
 
 Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
+    ## Basic Ideas:
+    ##             2 Different types of 0s. 
+    ##               1. Original value is 0. 2 It has been set to 0 by others.
+    ##               For type2, it can't set other cells
+    ##             Thus we do 2 pass. Set the type2 0 to None.
+    ##             Then reconfigure None to 0
+    ## Complexity: Time O(m*n), Space O(1)
+    ## Sample Data:
+    ## Assumptions:
     class Solution(object):
         def setZeroes(self, matrix):
             """
             :type matrix: List[List[int]]
             :rtype: void Do not return anything, modify matrix in-place instead.
             """
-            ## Basic Ideas:
-            ##             2 Different types of 0s. 
-            ##               1. Original value is 0. 2 It has been set to 0 by others.
-            ##               For type2, it can't set other cells
-            ##             Thus we do 2 pass. Set the type2 0 to None.
-            ##             Then reconfigure None to 0
-            ## Complexity: Time O(m*n), Space O(1)
-            ## Sample Data:
-            ## Assumptions:
             n = len(matrix)
             if n == 0:
                 return

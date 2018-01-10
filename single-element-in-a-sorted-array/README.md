@@ -27,20 +27,20 @@ Useful link: [here](https://leetcode.com/problems/single-element-in-a-sorted-arr
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Binary search
+    ##              Find the middle element.
+    ##              If the middle is different from the both sides, that's what we want
+    ##              If the middle is the same with one side, check whether the both the left and right part
+    ##                 The target is in the part which has odd elements
+    ##              Otherwise the right half
+    ## Complexity: Time O(log(n)), Space O(1)
+    ## Sample Data: [1,1,2,3,3,4,4,8,8]
     class Solution(object):
         def singleNonDuplicate(self, nums):
             """
             :type nums: List[int]
             :rtype: int
             """
-            ## Basic Ideas: Binary search
-            ##              Find the middle element.
-            ##              If the middle is different from the both sides, that's what we want
-            ##              If the middle is the same with one side, check whether the both the left and right part
-            ##                 The target is in the part which has odd elements
-            ##              Otherwise the right half
-            ## Complexity: Time O(log(n)), Space O(1)
-            ## Sample Data: [1,1,2,3,3,4,4,8,8]
             length = len(nums)
             left, right = 0, length - 1
             while left <= right:

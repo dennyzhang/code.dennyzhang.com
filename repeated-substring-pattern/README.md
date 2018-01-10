@@ -1,4 +1,4 @@
-# Puzzle: Repeated Substring Pattern     :BLOG:Numbers:
+# Leetcode: Repeated Substring Pattern     :BLOG:Hard:
 
 
 ---
@@ -30,6 +30,8 @@ Example 3:
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)  
 
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern)  
+
 Credits To: [Leetcode.com](https://leetcode.com/problems/repeated-substring-pattern/description/)  
 
 Leave me comments, if you know how to solve.  
@@ -42,4 +44,4 @@ Leave me comments, if you know how to solve.
             """
 
 More Reading:  
--   [Puzzle: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
+-   [Leetcode: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)

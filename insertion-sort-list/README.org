@@ -1,8 +1,8 @@
-* Leetcode: Insertion Sort List                                   :BLOG:Basic:
+* Leetcode: Insertion Sort List                                  :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #linkedlist, #todobrain
+:type:     #linkedlist
 :END:
 ---------------------------------------------------------------------
 Sort a linked list

@@ -1,71 +1,71 @@
-# Leetcode: Majority Element II     :BLOG:Hard:
+# Leetcode: Convert BST to Greater Tree     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Tree traversal: right, middle, left  
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+    Example:
+    
+    Input: The root of a Binary Search Tree like this:
+                  5
+                /   \
+               2     13
+    
+    Output: The root of a Greater Tree like this:
+                 18
+                /   \
+              20     13
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-bst-to-greater-tree)  
 
-Hint: Time O(n), Space O(1). Moore voting  
+Credits To: [Leetcode.com](https://leetcode.com/problems/convert-bst-to-greater-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
-
-    class Solution(object):
-        def majorityElement(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[int]
-            """
-            ## Basic Idea:
-            ##       No more than 2 elements would be qualified.
-            ## Complexity: Time O(n), Space O(1)
-            ## Sample Data:
-            ##    1 2 3 2 3 3
-            ## Asummption:
-            length = len(nums)
-            if length == 0:
-                return 
-            n1, n2 = None, None
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-                elif c1 == 0:
-                    n1, c1 = num, 1
-                elif c2 == 0:
-                    n2, c2 = num, 1
-                else:
-                    c1, c2 = c1 - 1, c2 - 1
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
-            if c1 > length/3:
-                res.append(n1)
-            if c2 > length/3:
-                res.append(n2)
-            return res
+    ## Basic Ideas: Tree traversal: right, middle, left
+    ##              Visit nodes in a descending way
+    ##           TODO: how to do it in a recusive way?
+    ## Complexity:
+    ## Sample Data:
+    ##           10
+    ##         /   \
+    ##        5     13
+    ##       / \    /
+    ##      2   7  11
+    ##
+    # Definition for a binary tree node.
+    # class TreeNode(object):
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.left = None
+    #         self.right = None
     
-    s = Solution()
-    # print s.majorityElement([1, 2])
-    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
-    # print s.majorityElement([1, 2, 3, 2, 3, 3])
-
-More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+    class Solution(object):
+        def convertBST(self, root):
+            """
+            :type root: TreeNode
+            :rtype: TreeNode
+            """
+            stack = 
+            p = root
+            while p:
+                stack.append(p)
+                p = p.right
+    
+            previous_node = None
+            while len(stack) != 0:
+                top_element = stack.pop()
+                if previous_node:
+                    top_element.val += previous_node.val
+                previous_node = top_element
+                if top_element.left:
+                    p = top_element.left
+                    while p:
+                        stack.append(p)
+                        p = p.right
+            return root

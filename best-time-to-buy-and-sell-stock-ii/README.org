@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #todo
+:type:     #hard
 :END:
 ---------------------------------------------------------------------
 Again. When to buy and sell stock.
@@ -16,14 +16,14 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/][Leetcode.com]]
 
 #+BEGIN_SRC python
+## Basic Ideas:
+## Complexity:
 class Solution(object):
     def romanToInt(self, s):
         """
         :type s: str
         :rtype: int
         """
-        ## Basic Idea:
-        ## Complexity:
 
 if __name__ == '__main__':
     s = Solution()

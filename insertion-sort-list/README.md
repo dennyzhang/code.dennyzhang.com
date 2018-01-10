@@ -1,71 +1,84 @@
-# Leetcode: Majority Element II     :BLOG:Hard:
+# Leetcode: Insertion Sort List     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Sort a linked list  
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Sort a linked list using insertion sort.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insertion-sort-list)  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
-
-Hint: Time O(n), Space O(1). Moore voting  
+Credits To: [Leetcode.com](https://leetcode.com/problems/insertion-sort-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
-
+    ## Basic Ideas: 
+    ##       Add a dummy head node, since the head node might be changed
+    ##       Pointer p: the tail of sorted list
+    ##       Pointer q: the next node to be sorted
+    ## Complexity
+    ## Sample Data:
+    ##     2 -> 3 -> 5 -> 1
+    ##          p
+    ##               q
+    ##     r
+    # Definition for singly-linked list.
+    # class ListNode(object):
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.next = None
+    
     class Solution(object):
-        def majorityElement(self, nums):
+        def insertionSortList(self, head):
             """
-            :type nums: List[int]
-            :rtype: List[int]
+            :type head: ListNode
+            :rtype: ListNode
             """
-            ## Basic Idea:
-            ##       No more than 2 elements would be qualified.
-            ## Complexity: Time O(n), Space O(1)
-            ## Sample Data:
-            ##    1 2 3 2 3 3
-            ## Asummption:
-            length = len(nums)
-            if length == 0:
-                return 
-            n1, n2 = None, None
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-                elif c1 == 0:
-                    n1, c1 = num, 1
-                elif c2 == 0:
-                    n2, c2 = num, 1
+            dummy_node = ListNode(None)
+            dummy_node.next = head
+            p = dummy_node.next
+            # quit if no node to be sorted
+            while p and p.next:
+                q = p.next
+                r = dummy_node
+                # quit if we have compared q with all sorted elements
+                while r != p:
+                    if r.next.val > q.val:
+                        break
+                    r = r.next
+                if r != p:
+                    # move q to the next of r
+                    p.next = q.next
+                    q.next = r.next
+                    r.next = q
                 else:
-                    c1, c2 = c1 - 1, c2 - 1
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
-            if c1 > length/3:
-                res.append(n1)
-            if c2 > length/3:
-                res.append(n2)
-            return res
+                    p = p.next
+            return dummy_node.next
     
     s = Solution()
-    # print s.majorityElement([1, 2])
-    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
-    # print s.majorityElement([1, 2, 3, 2, 3, 3])
+    # p1 = ListNode(3)
+    # p2 = ListNode(4)
+    # p3 = ListNode(1)
+    
+    p1 = ListNode(3)
+    p2 = ListNode(2)
+    p3 = ListNode(4)
+    
+    # p1 = ListNode(3)
+    # p2 = ListNode(2)
+    # p3 = ListNode(1)
+    
+    p1.next = p2
+    p2.next = p3
+    p3.next = None
+    
+    new_head = s.insertionSortList(p1)
+    print new_head.val
+    print new_head.next.val
+    print new_head.next.next.val
 
 More Reading:  
 -   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
