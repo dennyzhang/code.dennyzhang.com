@@ -1,71 +1,70 @@
-# Leetcode: Majority Element II     :BLOG:Hard:
+# Leetcode: Set Matrix Zeroes     :BLOG:Amusing:
 
 
 ---
 
-Identity number which appears exactly once.  
+Set row and column to 0  
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Follow up:  
+-   Did you use extra space?
+-   A straight forward solution using O(mn) space is probably a bad idea.
+-   A simple improvement uses O(m + n) space, but still not the best solution.
+-   Could you devise a constant space solution?
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes)  
 
-Hint: Time O(n), Space O(1). Moore voting  
+Credits To: [Leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/description/)  
+
+Hint:  
 
 Leave me comments, if you know how to solve.  
 
 Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
     class Solution(object):
-        def majorityElement(self, nums):
+        def setZeroes(self, matrix):
             """
-            :type nums: List[int]
-            :rtype: List[int]
+            :type matrix: List[List[int]]
+            :rtype: void Do not return anything, modify matrix in-place instead.
             """
-            ## Basic Idea:
-            ##       No more than 2 elements would be qualified.
-            ## Complexity: Time O(n), Space O(1)
+            ## Basic Ideas:
+            ##             2 Different types of 0s. 
+            ##               1. Original value is 0. 2 It has been set to 0 by others.
+            ##               For type2, it can't set other cells
+            ##             Thus we do 2 pass. Set the type2 0 to None.
+            ##             Then reconfigure None to 0
+            ## Complexity: Time O(m*n), Space O(1)
             ## Sample Data:
-            ##    1 2 3 2 3 3
-            ## Asummption:
-            length = len(nums)
-            if length == 0:
-                return 
-            n1, n2 = None, None
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-                elif c1 == 0:
-                    n1, c1 = num, 1
-                elif c2 == 0:
-                    n2, c2 = num, 1
-                else:
-                    c1, c2 = c1 - 1, c2 - 1
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
-            if c1 > length/3:
-                res.append(n1)
-            if c2 > length/3:
-                res.append(n2)
-            return res
-    
+            ## Assumptions:
+            n = len(matrix)
+            if n == 0:
+                return
+            m = len(matrix[0])
+            zero_columns = 
+            for i in xrange(n):
+                for j in xrange(m):
+                    if matrix[i][j] == 0:
+                        # mark current row
+                        for k in xrange(m):
+                            if matrix[i][k] != 0:
+                                matrix[i][k] = None
+                        # mark current column to 0
+                        for k in xrange(n):
+                            if matrix[k][j] != 0:
+                                matrix[k][j] = None
+            for i in xrange(n):
+                for j in xrange(m):
+                    if matrix[i][j] is None:
+                        matrix[i][j] = 0
     s = Solution()
-    # print s.majorityElement([1, 2])
-    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
-    # print s.majorityElement([1, 2, 3, 2, 3, 3])
+    # matrix = [[1, 2, 0, 6], [0, 1, 4, 0], [7, 0, 5, 1]]
+    matrix = [[0,0,0,5],[4,3,1,4],[0,1,1,4],[1,2,1,3],[0,0,1,1]]
+    s.setZeroes(matrix)
+    print matrix
 
 More Reading:  
 -   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)

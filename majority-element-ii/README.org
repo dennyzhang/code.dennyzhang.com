@@ -20,18 +20,18 @@ Leave me comments, if you know how to solve.
 Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
 
 #+BEGIN_SRC python
+## Basic Ideas:
+##       No more than 2 elements would be qualified.
+## Complexity: Time O(n), Space O(1)
+## Sample Data:
+##    1 2 3 2 3 3
+## Asummption:
 class Solution(object):
     def majorityElement(self, nums):
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        ## Basic Idea:
-        ##       No more than 2 elements would be qualified.
-        ## Complexity: Time O(n), Space O(1)
-        ## Sample Data:
-        ##    1 2 3 2 3 3
-        ## Asummption:
         length = len(nums)
         if length == 0:
             return []

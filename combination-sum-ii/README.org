@@ -33,6 +33,11 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum-ii/desc
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: sort the list, then 0-1 bag
+## Complexity: Time ? Space ?
+## Assumptions:
+## Sample Data:
+##      1 1 2 5 6 7 10
 class Solution(object):
     def combinationSum2(self, candidates, target):
         """
@@ -40,11 +45,6 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        ## Basic Ideas: sort the list, then 0-1 bag
-        ## Complexity: Time ? Space ?
-        ## Assumptions:
-        ## Sample Data:
-        ##      1 1 2 5 6 7 10
         candidates = sorted(candidates)
         return self.mycombinationSum2(candidates, target)
 

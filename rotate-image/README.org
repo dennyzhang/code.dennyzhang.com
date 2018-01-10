@@ -60,15 +60,15 @@ Credits To: [[url-external:https://leetcode.com/problems/rotate-image/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: Rotate circle by circle. From outer to inner layer.
+##             Use an array of n to save data temporarily
+## Complexity: Time O(n*n), Space O(n)
 class Solution(object):
     def rotate(self, matrix):
         """
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
-        ## Basic Idea: Rotate circle by circle. From outer to inner layer.
-        ##             Use an array of n to save data temporarily
-        ## Complexity: Time O(n*n), Space O(n)
         length = len(matrix[0])
         if length <=1:
             return

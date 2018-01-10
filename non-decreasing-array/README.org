@@ -39,17 +39,16 @@ Credits To: [[url-external:https://leetcode.com/problems/non-decreasing-array/de
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: If we have two decreasing couples, we can't fix it with one change. Right?
+## Complexity: Time O(n), Space O(1)
+##  1     4         2       3
+##      index1   index2
 class Solution(object):
     def checkPossibility(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
-        ## Basic Idea: If we have two decreasing couples, we can't fix it with one change. Right?
-        ## Complexity: Time O(n), Space O(1)
-        ##  1     4         2       3
-        ##      index1   index2
-
         index1 = None
         index2 = None
         length = len(nums)

@@ -23,6 +23,10 @@ Hint: Time O(n), Space O(1)
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas:
+## Complexity: Time O(), Space O()
+## Assumptions:
+## Sample Data:
 class Solution(object):
     def findSubstring(self, s, words):
         """
@@ -30,10 +34,6 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[int]
         """
-        ## Basic Idea:
-        ## Complexity: Time O(), Space O()
-        ## Assumptions:
-        ## Sample Data:
         ## barfoothefoobarman -> bar foo the foo bar man
 
 if __name__ == '__main__':
