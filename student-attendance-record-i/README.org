@@ -44,6 +44,26 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        a, l = 0, 0
+        for ch in s:
+            if ch == 'A':
+                a += 1
+            if ch == 'L':
+                l += 1
+            else:
+                l = 0
+            if a >= 2 or l >= 3:
+                return False
+        return True
+        
+    def checkRecord_v2(self, s):
+        return s.count('A') <= 1 and s.count('LLL') == 0
+
+    def checkRecord_v1(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
         absent = 0
         max_continuous_late, current_continuous_late = 0, 0
         previous_late = False
