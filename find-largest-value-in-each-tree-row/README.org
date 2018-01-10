@@ -1,34 +1,34 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
-## Description:
-##     https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/
-##    ,-----------
-##    | You need to find the largest value in each row of a binary tree.
-##    | 
-##    | Example:
-##    | Input: 
-##    | 
-##    |           1
-##    |          / \
-##    |         3   2
-##    |        / \   \  
-##    |       5   3   9 
-##    | 
-##    | Output: [1, 3, 9]
-##    `-----------
-##
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-03 10:14:57>
-##-------------------------------------------------------------------
+* Leetcode: Find Largest Value in Each Tree Row                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #tree
+:END:
+---------------------------------------------------------------------
+Find Largest Value in Each Tree Row
+---------------------------------------------------------------------
+You need to find the largest value in each row of a binary tree.
+
+#+BEGIN_EXAMPLE
+Example:
+Input: 
+
+          1
+         / \
+        3   2
+       / \   \  
+      5   3   9 
+
+Output: [1, 3, 9]
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-largest-value-in-each-tree-row][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -64,3 +64,4 @@ class Solution(object):
                 if element.right:
                     queue.append(element.right)
         return res
+#+END_SRC
