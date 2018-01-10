@@ -1,71 +1,92 @@
-# Leetcode: Majority Element II     :BLOG:Hard:
+# Leetcode: Student Attendance Record I     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Check string pattern  
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+You are given a string representing an attendance record for a student. The record only contains the following three characters:  
+1.  'A' : Absent.
+2.  'L' : Late.
+3.  'P' : Present.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+A student could be rewarded if his attendance record doesn't contain more than one 'A' (absent) or more than two continuous 'L' (late).  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+You need to return whether the student could be rewarded according to his attendance record.  
 
-Hint: Time O(n), Space O(1). Moore voting  
+    Example 1:
+    Input: "PPALLP"
+    Output: True
+
+    Example 2:
+    Input: "PPALLL"
+    Output: False
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i)  
+
+Credits To: [Leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description/)  
+
+Useful link: [here](https://leetcode.com/problems/student-attendance-record-i/discuss/101556/)  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
-
+    ## Basic Ideas: One pass
+    ##              absent: counter of absent records
+    ##              max_continuous_late: counter of continous late
+    ## Complexity: Time O(n), Space O(1)
     class Solution(object):
-        def majorityElement(self, nums):
+        def checkRecord(self, s):
             """
-            :type nums: List[int]
-            :rtype: List[int]
+            :type s: str
+            :rtype: bool
             """
-            ## Basic Idea:
-            ##       No more than 2 elements would be qualified.
-            ## Complexity: Time O(n), Space O(1)
-            ## Sample Data:
-            ##    1 2 3 2 3 3
-            ## Asummption:
-            length = len(nums)
-            if length == 0:
-                return 
-            n1, n2 = None, None
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-                elif c1 == 0:
-                    n1, c1 = num, 1
-                elif c2 == 0:
-                    n2, c2 = num, 1
+            a, l = 0, 0
+            for ch in s:
+                if ch == 'A':
+                    a += 1
+                if ch == 'L':
+                    l += 1
                 else:
-                    c1, c2 = c1 - 1, c2 - 1
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
-            if c1 > length/3:
-                res.append(n1)
-            if c2 > length/3:
-                res.append(n2)
-            return res
+                    l = 0
+                if a >= 2 or l >= 3:
+                    return False
+            return True
+    
+        def checkRecord_v2(self, s):
+            return s.count('A') <= 1 and s.count('LLL') == 0
+    
+        def checkRecord_v1(self, s):
+            """
+            :type s: str
+            :rtype: bool
+            """
+            absent = 0
+            max_continuous_late, current_continuous_late = 0, 0
+            previous_late = False
+            for ch in s:
+                if ch == 'L':
+                    if previous_late:
+                        current_continuous_late += 1
+                    else:
+                        previous_late = True
+                        current_continuous_late = 1                    
+                else:
+                    previous_late = False
+                    if current_continuous_late > max_continuous_late:
+                        max_continuous_late = current_continuous_late
+                    current_continuous_late = 0
+                # tail of L
+                max_continuous_late = max(max_continuous_late, current_continuous_late)
+                if ch == 'A':
+                    absent += 1
+            return absent <= 1 and max_continuous_late <= 2
     
     s = Solution()
-    # print s.majorityElement([1, 2])
-    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
-    # print s.majorityElement([1, 2, 3, 2, 3, 3])
+    print s.checkRecord('PPALLP')
+    print s.checkRecord('PPALLL')
+    print s.checkRecord('PPALLP')
 
 More Reading:  
 -   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)

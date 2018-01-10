@@ -31,6 +31,8 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 
 Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-i/description/][Leetcode.com]]
 
+Useful link: [[url-external:https://leetcode.com/problems/student-attendance-record-i/discuss/101556/][here]]
+
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
