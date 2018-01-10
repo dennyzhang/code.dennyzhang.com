@@ -13,24 +13,20 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
 
-Hint: Time O(n), Space O(1). Moore voting  
-
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
-
+    ## Basic Ideas:
+    ##       No more than 2 elements would be qualified.
+    ## Complexity: Time O(n), Space O(1)
+    ## Sample Data:
+    ##    1 2 3 2 3 3
+    ## Asummption:
     class Solution(object):
         def majorityElement(self, nums):
             """
             :type nums: List[int]
             :rtype: List[int]
             """
-            ## Basic Idea:
-            ##       No more than 2 elements would be qualified.
-            ## Complexity: Time O(n), Space O(1)
-            ## Sample Data:
-            ##    1 2 3 2 3 3
-            ## Asummption:
             length = len(nums)
             if length == 0:
                 return 
@@ -66,6 +62,3 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
     # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
     print s.majorityElement([1,1,1,2,3,4,5,6])
     # print s.majorityElement([1, 2, 3, 2, 3, 3])
-
-More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)

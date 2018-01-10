@@ -13,11 +13,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 
 Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
 
-Hint: Time O(n), Space O(1). Moore voting
-
 Leave me comments, if you know how to solve.
-
-Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
 
 #+BEGIN_SRC python
 ## Basic Ideas:
@@ -68,6 +64,3 @@ s = Solution()
 print s.majorityElement([1,1,1,2,3,4,5,6])
 # print s.majorityElement([1, 2, 3, 2, 3, 3])
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]
