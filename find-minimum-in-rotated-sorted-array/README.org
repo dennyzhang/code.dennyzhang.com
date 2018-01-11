@@ -1,4 +1,4 @@
-* Leetcode: Find Minimum in Rotated Sorted Array                :BLOG:Medium:
+* Leetcode: Find Minimum in Rotated Sorted Array               :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
