@@ -31,10 +31,32 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-palindrome-ii/des
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas:
+##      Two pointers: one from left to right, another from right to left
+##      If the value is different, we could either delete the left one or delete the right one
+##      Then the remaining should be a Palindrome
+## Complexity: Time O(n), Space O(1)
 class Solution(object):
     def validPalindrome(self, s):
         """
         :type s: str
         :rtype: bool
         """
+        start, end = 0, len(s) - 1
+        while start < end:
+            if s[start] != s[end]:
+                if self.isPalindrome(self, s, start+1, end):
+                    # delete the left
+                    return True
+                else:
+                    return self.isPalindrome(self, s, start, end-1)
+        return True
+        
+    def isPalindrome(self, s, start, end):
+        while start < end:
+            if s[start] != s[end]:
+                return False
+            start += 1
+            end -= 1
+        return True
 #+END_SRC
