@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binary
+:type:     #math
 :END:
 ---------------------------------------------------------------------
 Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
@@ -18,11 +18,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 
 Credits To: [[url-external:https://leetcode.com/problems/power-of-four/description/][Leetcode.com]]
 
-Hint: Time O(n), Space O(1). Moore voting
-
 Leave me comments, if you know how to solve.
-
-Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
 
 #+BEGIN_SRC python
 class Solution(object):

@@ -33,18 +33,14 @@ Credits To: [[url-external:https://leetcode.com/problems/min-stack/description/]
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: List with elements of (value, min_value)
+##    -2 0 -3  4
+##    linked list:
+##     (-2, -2), (0, -2), (-3, -3), (4, -3)
+##
+##    length: element count
+## Complexity:  Time: O(1), Space: O(n)
 class MinStack(object):
-
-    ## Idea: List with elements of (value, min_value)
-    ## 
-    ## -2 0 -3  4
-    ## linked list:
-    ##     (-2, -2), (0, -2), (-3, -3), (4, -3)
-    ##
-    ## length: element count
-    ##
-    ##
-    ## Complexity:  Time: O(1), Space: O(n)
 
     def __init__(self):
         """

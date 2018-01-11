@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:    #binary
+:type:    #numbers
 :END:
 ---------------------------------------------------------------------
 Identity number which appears exactly once.
@@ -11,8 +11,6 @@ Given an array of integers, every element appears twice except for one. Find tha
 
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
-
-Hint: Time O(n), Space O(1)
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number][challenges-leetcode-interesting]]
 

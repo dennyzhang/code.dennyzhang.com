@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #twopointers
+:type:     #twopointer
 :END:
 ---------------------------------------------------------------------
 Pic 2 numbers to get the target sum.

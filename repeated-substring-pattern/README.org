@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #hard
+:type:     #string
 :END:
 ---------------------------------------------------------------------
 Check whether string can be created by keep repeating one substring.
