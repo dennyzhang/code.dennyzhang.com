@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #amusing
+:type:     #math
 :END:
 ---------------------------------------------------------------------
 Identity the poison bucket with mininum pigs

@@ -1,4 +1,4 @@
-# Puzzle: Sort Colors     :BLOG:Numbers:
+# Leetcode: Sort Colors     :BLOG:Numbers:
 
 
 ---
@@ -10,6 +10,8 @@ Array is composed by only 3 types of elements. Sort it fast.
 Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.  
 
 Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-colors)  
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/sort-colors/description/)  
 
@@ -105,5 +107,5 @@ Leave me comments, if you know how to solve.
                     p += 1
 
 More Reading:  
--   [Puzzle: First Missing Positive](http://brain.dennyzhang.com/missing-positive/)
+-   [Leetcode: First Missing Positive](http://brain.dennyzhang.com/missing-positive/)
 -   [Kids Puzzles](http://brain.dennyzhang.com/tag/kids/)
