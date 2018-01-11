@@ -25,7 +25,7 @@ Leave me comments, if you know how to solve.
     ##             "3012" vs "30"
     ##             "121" vs "12
     ##             "128" vs "12"
-    ## Complexity: Time O(n*log(n)), Space O(1)
+    ## Complexity: Time O(n*log(n)) length of integer is short, Space O(n)
     class Solution:
         # @param {integer} nums
         # @return {string}
