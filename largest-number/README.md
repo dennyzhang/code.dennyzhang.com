@@ -19,50 +19,41 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/largest-number/descript
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Ideas:
-    ##       No more than 2 elements would be qualified.
-    ## Complexity: Time O(n), Space O(1)
-    ## Sample Data:
-    ##    1 2 3 2 3 3
-    ## Asummption:
-    class Solution(object):
-        def majorityElement(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[int]
-            """
-            length = len(nums)
-            if length == 0:
-                return 
-            n1, n2 = None, None
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-                elif c1 == 0:
-                    n1, c1 = num, 1
-                elif c2 == 0:
-                    n2, c2 = num, 1
-                else:
-                    c1, c2 = c1 - 1, c2 - 1
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
-            if c1 > length/3:
-                res.append(n1)
-            if c2 > length/3:
-                res.append(n2)
+    ## Basic Idea: Quick sort list with customized compare logic. Then Concat them as one.
+    ##             "9" vs "30"
+    ##             "34" vs "3"
+    ##             "3012" vs "30"
+    ##             "121" vs "12
+    ##             "128" vs "12"
+    ## Complexity: Time O(n*log(n)), Space O(1)
+    class Solution:
+        # @param {integer} nums
+        # @return {string}
+        def largestNumber(self, nums):
+            # https://docs.python.org/3/howto/sorting.html
+            sorted_nums = sorted(nums, cmp=self.myCompare)
+            # print sorted_nums
+            res = ""
+            for num in sorted_nums:
+                res = "%s%s" % (res, str(num))
+            # remove leading "0"
+            res = res.lstrip('0')
+            if res == '':
+                res = '0'
             return res
     
+        def myCompare(self, v1, v2):
+            # print("myCompare. v1: %d, v2: %d" % (v1, v2))
+            s1 = str(v1)
+            s2 = str(v2)
+            if s1+s2 == s2+s1:
+                return 0
+            if s1+s2 > s2+s1:
+                return -1
+            else:
+                return 1
+    
     s = Solution()
-    # print s.majorityElement([1, 2])
-    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
-    # print s.majorityElement([1, 2, 3, 2, 3, 3])
+    print s.largestNumber([3, 34, 30, 5, 9]) # 9533430
+    print s.largestNumber([128, 12]) #12812
+    print s.largestNumber([121,12]) #12121
