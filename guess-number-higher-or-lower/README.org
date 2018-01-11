@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarysearch, #codetemplate
+:type:     #binarysearch, #codetemplate, #game
 :END:
 ---------------------------------------------------------------------
 Guess number quickly
