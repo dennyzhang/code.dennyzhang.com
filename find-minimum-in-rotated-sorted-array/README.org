@@ -24,31 +24,34 @@ Credits To: [[url-external:https://leetcode.com/problems/find-minimum-in-rotated
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Basic Ideas: binary search
-##      1 1 1 0 -1 -1 -1
-## Complexity: Time O(log(n)), Space O(1)
-
-# The guess API is already defined for you.
-# @param num, your guess
-# @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
-# def guess(num):
-
+## Basic Ideas: Binary search
+##              Compare all values with the first element
+##              If bigger, consider it as 1. Otherwise -1
+##              The first -1 is the mininum element we want to find.
+##              If none is found, the first element is the mininum element
+## Complexity: 
 class Solution(object):
-    def guessNumber(self, n):
+    def findMin(self, nums):
         """
-        :type n: int
+        :type nums: List[int]
         :rtype: int
         """
-        left, right = 1, n
+        length = len(nums)
+        if length == 0:
+            return None
+        if length == 1:
+            return nums[0]
+        left, right = 1, length - 1
         while left <= right:
             mid = left + (right-left)/2
-            v = guess(mid)
-            if v == 0:
-                return mid
-            elif v == 1:
+            v = nums[mid] - nums[0]
+            if v > 0:
                 left = mid + 1
             else:
+                # since no duplicate, v must be negative now
                 right = mid - 1
+        return nums[mid] if nums[mid] - nums[0] < 0 else nums[0]
 
-        return None
+s = Solution()
+print s.findMin([4,5,1,2,3])
 #+END_SRC

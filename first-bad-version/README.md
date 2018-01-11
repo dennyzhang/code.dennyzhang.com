@@ -19,6 +19,10 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/first-bad-version/descr
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Binary search
+    ##              Find the first False
+    ## Complexity: Time O(log(n)), Space O(1)
+    
     # The isBadVersion API is already defined for you.
     # @param version, an integer
     # @return a bool
@@ -30,3 +34,16 @@ Leave me comments, if you know how to solve.
             :type n: int
             :rtype: int
             """
+            left, right = 1, n
+            while left <= right:
+                mid = left + (right-left)/2
+                if isBadVersion(mid) is False:
+                    left = mid + 1
+                else:
+                    if mid == 1:
+                        return 1
+                    if isBadVersion(mid-1) is False:
+                        return mid
+                    else:
+                        right = mid - 1
+            return mid if isBadVersion(mid) else None
