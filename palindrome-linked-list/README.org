@@ -1,28 +1,24 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
-## Description:
-##     https://leetcode.com/problems/palindrome-linked-list/description/
-##    ,-----------
-##    | Given a singly linked list, determine if it is a palindrome.
-##    | 
-##    | Follow up:
-##    | Could you do it in O(n) time and O(1) space?
-##    `-----------
-##
-##
-## Basic Idea:
-## Complexity:
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
-##-------------------------------------------------------------------
+* Leetcode: Palindrome Linked List                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #palindrome
+:END:
+---------------------------------------------------------------------
+Palindrome Linked List
+---------------------------------------------------------------------
+Given a singly linked list, determine if it is a palindrome.
+
+Follow up:
+Could you do it in O(n) time and O(1) space?
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-linked-list][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/palindrome-linked-list/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -78,3 +74,4 @@ class Solution(object):
             p = p.next
             q = q.next
         return True
+#+END_SRC

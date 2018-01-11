@@ -1,0 +1,40 @@
+* Leetcode: Valid Palindrome II                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #palindrome
+:END:
+---------------------------------------------------------------------
+Valid Palindrome II
+---------------------------------------------------------------------
+Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
+#+BEGIN_EXAMPLE
+Example 1:
+Input: "aba"
+Output: True
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+Input: "abca"
+Output: True
+Explanation: You could delete the character 'c'.
+#+END_EXAMPLE
+
+Note:
+The string will only contain lowercase characters a-z. The maximum length of the string is 50000.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/valid-palindrome-ii/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def validPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+#+END_SRC
