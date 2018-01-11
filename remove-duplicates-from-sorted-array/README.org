@@ -1,8 +1,8 @@
-* Leetcode: Remove Duplicates from Sorted Array                                   :BLOG:Hard:
+* Leetcode: Remove Duplicates from Sorted Array                                   :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #redo, #numbers
+:type:     #redo, #findnumber
 :END:
 ---------------------------------------------------------------------
 Remove Duplicates from Sorted Array

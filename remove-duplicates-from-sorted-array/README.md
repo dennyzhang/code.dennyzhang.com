@@ -1,4 +1,4 @@
-# Leetcode: Remove Duplicates from Sorted Array     :BLOG:Hard:
+# Leetcode: Remove Duplicates from Sorted Array     :BLOG:Medium:
 
 
 ---

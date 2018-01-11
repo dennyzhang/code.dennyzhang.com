@@ -1,20 +1,23 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
-## Description:
-##     https://leetcode.com/problems/valid-parentheses/description/
-## Basic Idea:
-## Complexity:
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-12 10:59:09>
-##-------------------------------------------------------------------
+* Leetcode: Valid Parentheses                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #codetemplate, #redo
+:END:
+---------------------------------------------------------------------
+Valid Parentheses
+---------------------------------------------------------------------
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-parentheses][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/valid-parentheses/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def isValid(self, s):
         """
@@ -52,4 +55,4 @@ if __name__ == '__main__':
     print s.isValid("()")
     print s.isValid("(]")
     print s.isValid("([)]")
-## File: test.py ends
+#+END_SRC
