@@ -1,0 +1,53 @@
+* Leetcode: Course Schedule                                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #interval
+:END:
+---------------------------------------------------------------------
+Course Schedule
+---------------------------------------------------------------------
+There are a total of n courses you have to take, labeled from 0 to n - 1.
+
+Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
+
+Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?
+
+For example:
+#+BEGIN_EXAMPLE
+2, [[1,0]]
+#+END_EXAMPLE
+
+There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.
+
+#+BEGIN_EXAMPLE
+2, [[1,0],[0,1]]
+#+END_EXAMPLE
+
+There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+
+Note:
+1. The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
+- You may assume that there are no duplicate edges in the input prerequisites.
+
+
+Hints:
+1. This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
+- Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
+- Topological sort could also be done via BFS.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/course-schedule][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/course-schedule/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def canFinish(self, numCourses, prerequisites):
+        """
+        :type numCourses: int
+        :type prerequisites: List[List[int]]
+        :rtype: bool
+        """
+#+END_SRC

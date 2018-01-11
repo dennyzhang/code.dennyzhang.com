@@ -1,0 +1,76 @@
+# Leetcode: Decode Ways     :BLOG:Medium:
+
+
+---
+
+Decode Ways  
+
+---
+
+A message containing letters from A-Z is being encoded to numbers using the following mapping:  
+
+    'A' -> 1
+    'B' -> 2
+    ...
+    'Z' -> 26
+
+Given an encoded message containing digits, determine the total number of ways to decode it.  
+
+For example,  
+Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).  
+
+The number of ways decoding "12" is 2.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/decode-ways)  
+
+Credits To: [Leetcode.com](https://leetcode.com/problems/decode-ways/description/)  
+
+Leave me comments, if you know how to solve.  
+
+    ## Basic Ideas:
+    ##       No more than 2 elements would be qualified.
+    ## Complexity: Time O(n), Space O(1)
+    ## Sample Data:
+    ##    1 2 3 2 3 3
+    ## Asummption:
+    class Solution(object):
+        def majorityElement(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: List[int]
+            """
+            length = len(nums)
+            if length == 0:
+                return 
+            n1, n2 = None, None
+            c1, c2 = 0, 0
+            for num in nums:
+                if num == n1:
+                    c1 += 1
+                elif num == n2:
+                    c2 += 1
+                elif c1 == 0:
+                    n1, c1 = num, 1
+                elif c2 == 0:
+                    n2, c2 = num, 1
+                else:
+                    c1, c2 = c1 - 1, c2 - 1
+            c1, c2 = 0, 0
+            for num in nums:
+                if num == n1:
+                    c1 += 1
+                elif num == n2:
+                    c2 += 1
+            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
+            res = 
+            if c1 > length/3:
+                res.append(n1)
+            if c2 > length/3:
+                res.append(n2)
+            return res
+    
+    s = Solution()
+    # print s.majorityElement([1, 2])
+    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
+    print s.majorityElement([1,1,1,2,3,4,5,6])
+    # print s.majorityElement([1, 2, 3, 2, 3, 3])
