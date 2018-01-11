@@ -26,16 +26,16 @@ Credits To: [[url-external:https://leetcode.com/problems/perfect-number/descript
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: sqrt(num)
+##     Sample Data:
+##         1 2 7
+## Complexity:
 class Solution(object):
     def checkPerfectNumber(self, num):
         """
         :type num: int
         :rtype: bool
         """
-        ## Idea: sqrt(num)
-        ## Complexity:
-        ## Sample Data:
-        ##    1 2 7
         if num <= 1:
             return False
         import math

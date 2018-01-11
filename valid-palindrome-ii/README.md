@@ -41,11 +41,13 @@ Leave me comments, if you know how to solve.
             start, end = 0, len(s) - 1
             while start < end:
                 if s[start] != s[end]:
-                    if self.isPalindrome(self, s, start+1, end):
+                    if self.isPalindrome(s, start+1, end):
                         # delete the left
                         return True
                     else:
-                        return self.isPalindrome(self, s, start, end-1)
+                        return self.isPalindrome(s, start, end-1)
+                start += 1
+                end -= 1
             return True
     
         def isPalindrome(self, s, start, end):

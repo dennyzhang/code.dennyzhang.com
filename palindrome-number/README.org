@@ -10,6 +10,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
 Determine whether an integer is a palindrome. Do this without extra space.
 
 Some hints:
+
 #+BEGIN_EXAMPLE
 Could negative integers be palindromes? (ie, -1)
 
@@ -29,6 +30,10 @@ Credits To: [[url-external:https://leetcode.com/problems/palindrome-number/descr
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas:  Generate a new integer Y from right digit to left digit
+##               Then compare it with X
+##         1234321: 1 -> 12 -> 13 -> 134 ...
+## Complexity: Time O(1), Space O(1). The integer can be at most 32 digits
 class Solution(object):
     def isPalindrome(self, x):
         """
@@ -38,6 +43,7 @@ class Solution(object):
         if x < 0:
             return False
         if x == 0:
+
             return True
         val = x
         y = 0
