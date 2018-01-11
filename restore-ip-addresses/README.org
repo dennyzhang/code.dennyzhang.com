@@ -1,27 +1,26 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
-## Description:
-##     https://leetcode.com/problems/restore-ip-addresses/description/
-## ,-----------
-## | Given a string containing only digits, restore it by returning all possible valid IP address combinations.
-## | 
-## | For example:
-## | Given "25525511135",
-## | 
-## | return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
-## `-----------
-## 
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 18:05:59>
-##-------------------------------------------------------------------
+* Leetcode: Restore IP Addresses                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #codetemplate, #redo
+:END:
+---------------------------------------------------------------------
+Return all possible valid IP address combinations.
+---------------------------------------------------------------------
+Given a string containing only digits, restore it by returning all possible valid IP address combinations.
+
+For example:
+Given "25525511135",
+
+return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/restore-ip-addresses][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/restore-ip-addresses/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def restoreIpAddresses(self, s):
         """
@@ -77,3 +76,4 @@ class Solution(object):
             return False
 
         return True
+#+END_SRC
