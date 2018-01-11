@@ -19,6 +19,11 @@ Credits To: [[url-external:https://leetcode.com/problems/palindrome-linked-list/
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Idea: Find the middle node. Reverse the right part. Then compare with the left part
+##       From: a->b->c->b->a
+##       To:   a->b->c->a->b
+## Complexity: Time O(n), Space O(1)
+
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -31,12 +36,6 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        ## Idea: Can I destroy existing link?
-        ##       1. Insert the last half into the head: 
-        ##          From: a->b->c->b->a
-        ##          To:   a->b->a->b->c
-        ##       Then two pointers to check
-        ## Complexity:
         if head is None or head.next is None:
             return True
         # find length
