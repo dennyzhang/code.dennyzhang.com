@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #findnumber
+:type:     #findnumber, #inspiring
 :END:
 ---------------------------------------------------------------------
 Find elements from a list of numbers

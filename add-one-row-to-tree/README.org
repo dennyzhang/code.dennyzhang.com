@@ -1,4 +1,4 @@
-* Leetcode: Add One Row to Tree                                   :BLOG:Hard:
+* Leetcode: Add One Row to Tree                                   :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

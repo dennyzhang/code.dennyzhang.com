@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #math, #powerofn
+:type:     #math, #powerofn, #inspiring
 :END:
 ---------------------------------------------------------------------
 Given an integer, write a function to determine if it is a power of three.
@@ -20,9 +20,18 @@ Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
 class Solution(object):
+## Basic Ideas: power of any prime number
+##              3 is a prime
+##              If 3 % k == 0 and k is a prime, then k is 3.
+##              Thus 3^19 % n === 0 means n is power of 3
+class Solution(object):
     def isPowerOfThree(self, n):
         """
         :type n: int
         :rtype: bool
         """
+        if n <= 0:
+            return False
+        larget_power3 = pow(3, 19)
+        return larget_power3 % n == 0
 #+END_SRC

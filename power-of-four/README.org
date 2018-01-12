@@ -1,8 +1,8 @@
-* Leetcode: Power of Four                                         :BLOG:Hard:
+* Leetcode: Power of Four                                         :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #math, #powerofn
+:type:     #math, #powerofn, #inspiring
 :END:
 ---------------------------------------------------------------------
 Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
