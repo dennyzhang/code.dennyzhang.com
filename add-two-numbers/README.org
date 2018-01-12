@@ -1,28 +1,30 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
-## Description:
-##     https://leetcode.com/problems/add-two-numbers/description/
-##    ,-----------
-##    | You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-##    | 
-##    | You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-##    | 
-##    | Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-##    | Output: 7 -> 0 -> 8
-##    `-----------
-##
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-30 15:41:52>
-##-------------------------------------------------------------------
+* Leetcode: Add Two Numbers                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #linkedlist, #numbers, #redo
+:END:
+---------------------------------------------------------------------
+Add Two Numbers
+---------------------------------------------------------------------
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+#+BEGIN_EXAMPLE
+Example
+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-two-numbers][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/add-two-numbers/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -93,3 +95,4 @@ class Solution(object):
             tmp_node = ListNode(1)
             p.next = tmp_node
         return head
+#+END_SRC
