@@ -1,28 +1,29 @@
-* Leetcode: Spiral Matrix                                   :BLOG:Hard:
+* Leetcode: Spiral Matrix II                                      :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     #matrix, #manydetails
 :END:
 ---------------------------------------------------------------------
-Spiral Matrix
+Spiral Matrix II
 ---------------------------------------------------------------------
-Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
+
 #+BEGIN_EXAMPLE
 For example,
-Given the following matrix:
+Given n = 3,
 
+You should return the following matrix:
 [
  [ 1, 2, 3 ],
- [ 4, 5, 6 ],
- [ 7, 8, 9 ]
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
 ]
-You should return [1,2,3,6,9,8,7,4,5].
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/spiral-matrix/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/spiral-matrix-ii/description/][Leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -38,23 +39,23 @@ Leave me comments, if you know how to solve.
 ##            Quit if num1 == 0 or num2 == 0
 ## Complexity: Time O(m*n), Space O(1)
 class Solution(object):
-    def spiralOrder(self, matrix):
+    def generateMatrix(self, n):
         """
-        :type matrix: List[List[int]]
-        :rtype: List[int]
+        :type n: int
+        :rtype: List[List[int]]
         """
-        row_count = len(matrix)
-        if row_count == 0:
+        if n <= 0:
             return []
         res = []
-        column_count = len(matrix[0])
-        num1, num2 = column_count, row_count - 1
+        for i in xrange(n):
+            res.append([None]*n)
+
+        num1, num2 = n, n - 1
         direction_list = 'rdlu'
-        direction_index = 0
         i, j = 0, 0
+        v, direction_index = 1, 0
         while True:
             direction = direction_list[direction_index]
-            # print("num1: %d, num2: %d, direction: %s" % (num1, num2, direction))
             if direction in 'rl':
                 direction_count = num1
                 num1 -= 1
@@ -63,29 +64,31 @@ class Solution(object):
                 num2 -= 1
             if direction_count == 0:
                 break
+            # visit line
             for k in xrange(direction_count):
-                # print("i: %d, j:%d" % (i, j))
-                res.append(matrix[i][j])
-                if k == direction_count - 1:
-                    # move to next direction
+                res[i][j] = v
+                v += 1
+                if k != direction_count - 1:
                     if direction == 'r':
-                        i += 1
-                    if direction == 'd':
-                        j -= 1
-                    if direction == 'l':
-                        i -= 1
-                    if direction == 'u':
                         j += 1
+                    if direction == 'd':
+                        i += 1
+                    if direction == 'l':
+                        j -= 1
+                    if direction == 'u':
+                        i -= 1
                 else:
-                    # move to next element
                     if direction == 'r':
-                        j += 1
-                    if direction == 'd':
                         i += 1
-                    if direction == 'l':
+                    if direction == 'd':
                         j -= 1
-                    if direction == 'u':
+                    if direction == 'l':
                         i -= 1
+                    if direction == 'u':
+                        j += 1
             direction_index = (direction_index+1) % 4
         return res
+                    
+s = Solution()
+print s.generateMatrix(3)
 #+END_SRC
