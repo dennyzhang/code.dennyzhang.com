@@ -1,0 +1,28 @@
+* Leetcode: Power of Three                                     :BLOG:Amusing:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #math
+:END:
+---------------------------------------------------------------------
+Given an integer, write a function to determine if it is a power of three.
+---------------------------------------------------------------------
+Given an integer, write a function to determine if it is a power of three.
+
+Follow up:
+Could you do it without using any loop / recursion?
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/power-of-three][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/power-of-three/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def isPowerOfThree(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+#+END_SRC
