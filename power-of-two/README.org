@@ -1,0 +1,28 @@
+* Leetcode: Power of Two                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #math, #powerofn
+:END:
+---------------------------------------------------------------------
+Given an integer, write a function to determine if it is a power of two.
+---------------------------------------------------------------------
+Given an integer, write a function to determine if it is a power of two.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/power-of-two/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        if n <= 0:
+            return False
+        return n & (n-1) == 0
+#+END_SRC
