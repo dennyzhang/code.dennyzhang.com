@@ -1,0 +1,55 @@
+* Leetcode: ZigZag Conversion                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #zigzag, #conversion
+:END:
+---------------------------------------------------------------------
+ZigZag Conversion
+---------------------------------------------------------------------
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+
+#+BEGIN_EXAMPLE
+P   A   H   N
+A P L S I I G
+Y   I   R
+#+END_EXAMPLE
+
+And then read line by line: "PAHNAPLSIIGYIR"
+Write the code that will take a string and make this conversion given a number of rows:
+
+#+BEGIN_EXAMPLE
+string convert(string text, int nRows);
+#+END_EXAMPLE
+
+convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
+
+Background: what is ZigZag. [[url-external:https://leetcode.com/problems/zigzag-conversion/discuss/3435/][Here]]
+#+BEGIN_EXAMPLE
+/*n=numRows
+2n-2    1                           2n-1                         4n-3
+        2                     2n-2  2n                    4n-4   4n-2
+        3               2n-3        2n+1              4n-5       .
+        .           .               .               .            .
+        .       n+2                 .           3n               .
+        n-1 n+1                     3n-3    3n-1                 5n-5
+2n-2    n                           3n-2                         5n-4
+*/
+Be careful with nR=1 && nR=2
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/zigzag-conversion][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/zigzag-conversion/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def convert(self, s, numRows):
+        """
+        :type s: str
+        :type numRows: int
+        :rtype: str
+        """
+#+END_SRC

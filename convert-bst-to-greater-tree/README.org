@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree
+:type:     #binarytree, #conversion
 :END:
 ---------------------------------------------------------------------
 Tree traversal: right, middle, left
