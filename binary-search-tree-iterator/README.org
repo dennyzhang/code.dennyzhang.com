@@ -13,9 +13,9 @@ Calling next() will return the next smallest number in the BST.
 
 Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-search-tree-iterator][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/binary-search-tree-iterator/description/][Leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -38,8 +38,6 @@ class BSTIterator(object):
         :type root: TreeNode
         """
         self.stack = []
-        if root is None:
-            return
         p = root
         while p:
             self.stack.append(p)
@@ -56,11 +54,10 @@ class BSTIterator(object):
         :rtype: int
         """
         top_element = self.stack.pop()
-        if top_element.right:
-            p = top_element.right
-            while p:
-                self.stack.append(p)
-                p = p.left
+        p = top_element.right
+        while p:
+            self.stack.append(p)
+            p = p.left
         return top_element.val
 
 # Your BSTIterator will be called like this:
