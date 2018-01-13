@@ -46,18 +46,18 @@ Leave me comments, if you know how to solve.
             """
             :rtype: bool
             """
-            return len(self.stack) != 0
+            return len(self.stack) > 0
     
         def next(self):
             """
             :rtype: int
             """
-            top_element = self.stack.pop()
-            p = top_element.right
+            node = self.stack.pop()
+            p = node.right
             while p:
                 self.stack.append(p)
                 p = p.left
-            return top_element.val
+            return node.val
     
     # Your BSTIterator will be called like this:
     # i, v = BSTIterator(root), 
