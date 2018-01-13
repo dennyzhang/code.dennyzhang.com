@@ -1,4 +1,4 @@
-# Leetcode: Compare Version Numbers     :BLOG:Medium:
+# Leetcode: Compare Version Numbers     :BLOG:Amusing:
 
 
 ---
@@ -25,9 +25,41 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/compare-version-numbers
 Leave me comments, if you know how to solve.  
 
     class Solution(object):
+    ## Basic Ideas:
+    ##     1.1 < 1.1.2
+    ##     1.1 == 1.1.0
+    ## Complexity:
+    class Solution(object):
         def compareVersion(self, version1, version2):
             """
             :type version1: str
             :type version2: str
             :rtype: int
             """
+            l1, l2 = version1.split('.'), version2.split('.')
+            i = 0
+            while i < len(l1) and i < len(l2):
+                if int(l1[i]) > int(l2[i]):
+                    return 1
+                elif int(l1[i]) < int(l2[i]):
+                    return -1
+                i += 1
+    
+            if i == len(l1) and i == len(l2):
+                return 0
+            else:
+                res = 1
+                if i == len(l2):
+                    l = l1[i:]
+                else:
+                    l = l2[i:]
+                    res = -1
+    
+                for element in l:
+                    if int(element) != 0:
+                        return res
+                return 0
+    
+    s = Solution()
+    print s.compareVersion('01', '1') # 0
+    print s.compareVersion('1.0', '1') # 0
