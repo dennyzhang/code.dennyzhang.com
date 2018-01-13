@@ -1,38 +1,39 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
-## Description:
-##     https://leetcode.com/problems/symmetric-tree/description/
-##    ,-----------
-##    | Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
-##    | 
-##    | For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
-##    | 
-##    |     1
-##    |    / \
-##    |   2   2
-##    |  / \ / \
-##    | 3  4 4  3
-##    | But the following [1,2,2,null,3,null,3] is not:
-##    |     1
-##    |    / \
-##    |   2   2
-##    |    \   \
-##    |    3    3
-##    | Note:
-##    | Bonus points if you could solve it both recursively and iteratively.
-##    `-----------
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-03 10:14:57>
-##-------------------------------------------------------------------
+* Leetcode: Symmetric Tree                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #binarytree
+:END:
+---------------------------------------------------------------------
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+---------------------------------------------------------------------
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+#+BEGIN_EXAMPLE
+For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
+
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+But the following [1,2,2,null,3,null,3] is not:
+    1
+   / \
+  2   2
+   \   \
+   3    3
+#+END_EXAMPLE
+
+Note:
+Bonus points if you could solve it both recursively and iteratively.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/symmetric-tree][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/symmetric-tree/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -100,3 +101,4 @@ class Solution(object):
         else:
             return self._isSymmetric(node1.left, node2.right) and \
                     self._isSymmetric(node1.right, node2.left)
+#+END_SRC

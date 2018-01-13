@@ -1,34 +1,33 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
-## Description:
-##     https://leetcode.com/problems/binary-tree-preorder-traversal/description/
-##    ,-----------
-##    | Given a binary tree, return the preorder traversal of its nodes' values.
-##    | 
-##    | For example:
-##    | Given binary tree [1,null,2,3],
-##    |    1
-##    |     \
-##    |      2
-##    |     /
-##    |    3
-##    | return [1,2,3].
-##    | 
-##    | Note: Recursive solution is trivial, could you do it iteratively?
-##    `-----------
-##
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-03 10:14:57>
-##-------------------------------------------------------------------
+* Leetcode: Binary Tree Preorder Traversal                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #codetemplate, #binarytree
+:END:
+---------------------------------------------------------------------
+Binary Tree Preorder Traversal
+---------------------------------------------------------------------
+Given a binary tree, return the preorder traversal of its nodes' values.
+#+BEGIN_EXAMPLE
+For example:
+Given binary tree [1,null,2,3],
+   1
+    \
+     2
+    /
+   3
+return [1,2,3].
+#+END_EXAMPLE
+
+Note: Recursive solution is trivial, could you do it iteratively?
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-preorder-traversal][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/binary-tree-preorder-traversal/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -82,3 +81,4 @@ class Solution(object):
             self.preorderTraversalRec(root.left, list_value)
         if root.right:
             self.preorderTraversalRec(root.right, list_value)
+#+END_SRC
