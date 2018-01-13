@@ -20,6 +20,8 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/des
 Leave me comments, if you know how to solve.  
 
     ## Basic Ideas: In-order traversal. Use a stack
+    ##      Store directed left children from root.
+    ##      When next() be called, pop one element and process its right child as new root.
     ## Complexity:
     ##
     # Definition for a  binary tree node
