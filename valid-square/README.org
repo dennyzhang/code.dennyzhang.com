@@ -1,4 +1,4 @@
-* Leetcode: Valid Square                                        :BLOG:Medium:
+* Leetcode: Valid Square                                       :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -29,5 +29,28 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-square/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas:
+##              p2(0,1)               p4(1,1)
+##
+##
+##              p1(0,0)               p3(1,0)
+##
+## Complexity: Time O(1), Space O(1)
+class Solution(object):
+    def validSquare(self, p1, p2, p3, p4):
+        """
+        :type p1: List[int]
+        :type p2: List[int]
+        :type p3: List[int]
+        :type p4: List[int]
+        :rtype: bool
+        """
+        l = sorted([p1, p2, p3, p4])
+        print l
+        if l[0][0] >= l[3][0] or l[0][1] >= l[3][1]:
+            return False
+        return l[1] == [l[0][0], l[3][1]] and l[2] == [l[3][0], l[0][1]]
 
+s = Solution()
+print s.validSquare([1,0], [-1,0], [0,1], [0,-1]) # true
 #+END_SRC
