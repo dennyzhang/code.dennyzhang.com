@@ -19,11 +19,8 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/remove-duplicates-from-
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Ideas: 
-    ## Complexity: Time O(n), Space O(1)
-    ##  1 -> 1 -> 1-> 2 -> 3 -> 3
-    ##  p    q    r
-    
+    ## Basic Ideas: p points to the last processed node
+    ## Complexity:
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):
@@ -36,16 +33,18 @@ Leave me comments, if you know how to solve.
             :type head: ListNode
             :rtype: ListNode
             """
-            if (head is None) or (head.next is None):
-                return head
             p = head
-            q = p.next
-            while (q is not None):
-                while (q is not None) and (p.val == q.val):
+            if head is None:
+                return None
+            q = head.next
+            while q:
+                if q.val == p.val:
                     q = q.next
-                    p.next = q
-                if q is not None:
+                else:
+                    # add q to the result list
                     r = q.next
-                    p = q
+                    p.next = q
+                    p = p.next
                     q = r
+            p.next = None
             return head
