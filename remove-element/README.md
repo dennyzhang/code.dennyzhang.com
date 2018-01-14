@@ -23,4 +23,21 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/remove-element/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+    ## Basic Idea:
+    ##        index point to the last element which have been processed
+    ## Complexity: Time O(n), Space O(1)
+    class Solution(object):
+        def removeElement(self, nums, val):
+            """
+            :type nums: List[int]
+            :type val: int
+            :rtype: int
+            """
+            index = 0
+            for n in nums:
+                if n != val:
+                    nums[index] = n
+                    index += 1
+            return index
