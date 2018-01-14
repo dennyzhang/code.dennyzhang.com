@@ -33,9 +33,9 @@ Leave me comments, if you know how to solve.
             :type head: ListNode
             :rtype: ListNode
             """
-            p = head
             if head is None:
                 return None
+            p = head
             q = head.next
             while q:
                 if q.val == p.val:

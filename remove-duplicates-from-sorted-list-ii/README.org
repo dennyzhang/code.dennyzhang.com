@@ -1,0 +1,26 @@
+* Leetcode: Remove Duplicates from Sorted List II                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #linkedlist, #removeitem
+:END:
+---------------------------------------------------------------------
+Remove Duplicates from Sorted List II
+---------------------------------------------------------------------
+Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+
+For example,
+
+Given 1->2->3->3->4->4->5, return 1->2->5.
+
+Given 1->1->1->2->3, return 2->3.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #linkedlist
+:type:     #linkedlist, #removeitem
 :END:
 ---------------------------------------------------------------------
 Delete duplicate nodes from a sorted linked list
@@ -34,9 +34,9 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        p = head
         if head is None:
             return None
+        p = head
         q = head.next
         while q:
             if q.val == p.val:
