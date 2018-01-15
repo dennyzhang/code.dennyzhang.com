@@ -1,0 +1,57 @@
+* Leetcode: Excel Sheet Column Number                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #conversion, #encoding
+:END:
+---------------------------------------------------------------------
+Excel Sheet Column Number
+---------------------------------------------------------------------
+#+BEGIN_EXAMPLE
+Given a column title as appear in an Excel sheet, return its corresponding column number.
+
+For example:
+
+    A -> 1
+    B -> 2
+    C -> 3
+    ...
+    Z -> 26
+    AA -> 27
+    AB -> 28
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-number][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/excel-sheet-column-number/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+class Solution(object):
+    def titleToNumber(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        ## Basic Idea: Convert 26 bits
+        ## Complexity: Time O(n), Space, O(1)
+        letter_dict = {}
+        i = 1
+        for ch in map(chr, range(ord('A'), ord('Z')+1)):
+            letter_dict[ch] = i
+            i = i + 1
+
+        value = 0
+        # print letter_dict
+        for i in range(0, len(s)):
+            ch = s[i]
+            value = value * 26 + letter_dict[ch]
+        return value
+
+if __name__ == '__main__':
+    s = Solution()
+    print s.titleToNumber("AA")
+    print s.titleToNumber("AB")
+    print s.titleToNumber("B")
+#+END_SRC

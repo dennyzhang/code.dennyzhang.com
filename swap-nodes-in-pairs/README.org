@@ -1,27 +1,26 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
-## Description:
-##     https://leetcode.com/problems/swap-nodes-in-pairs/description/
-##    ,-----------
-##    | Given a linked list, swap every two adjacent nodes and return its head.
-##    | 
-##    | For example,
-##    | Given 1->2->3->4, you should return the list as 2->1->4->3.
-##    | 
-##    | Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
-##    `-----------
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-25 18:27:45>
-##-------------------------------------------------------------------
+* Leetcode: Swap Nodes in Pairs                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #linkedlist, #redo
+:END:
+---------------------------------------------------------------------
+Swap Nodes in Pairs
+---------------------------------------------------------------------
+Given a linked list, swap every two adjacent nodes and return its head.
+
+For example,
+Given 1->2->3->4, you should return the list as 2->1->4->3.
+
+Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -68,3 +67,4 @@ class Solution(object):
             p = p.next.next
             q = p.next
         return head
+#+END_SRC
