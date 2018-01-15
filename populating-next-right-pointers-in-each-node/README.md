@@ -43,6 +43,15 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/populating-next-right-p
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Process nodes: from top to down, left to right
+    ##              How to process:
+    ##                 p.left.next = p.right
+    ##                 p.right = p.next.left
+    ##              How to move to next node?
+    ##                 p.next
+    ##                 first_node_next_layer: first node of next layer
+    ## Complexity:
+    
     # Definition for binary tree with next pointer.
     # class TreeLinkNode:
     #     def __init__(self, x):
@@ -52,6 +61,25 @@ Leave me comments, if you know how to solve.
     #         self.next = None
     
     class Solution:
-        # @param root, a tree link node
-        # @return nothing
         def connect(self, root):
+            # @param root, a tree link node
+            # @return nothing
+            if root is None:
+                return None
+            p = root
+            first = p.left
+            while p:
+                # process p
+                if p.left:
+                    p.left.next = p.right
+                if p.right and p.next:
+                    p.right.next = p.next.left
+                # move to next node
+                if p.next:
+                    p = p.next
+                else:
+                    p = first
+                    if p:
+                        first = p.left
+                    else:
+                        first = None
