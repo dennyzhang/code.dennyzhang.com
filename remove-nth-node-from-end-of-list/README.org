@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #linkedlist, #redo, #removeitem
+:type:     #linkedlist, #removeitem
 :END:
 ---------------------------------------------------------------------
 Remove Nth Node From End of List
