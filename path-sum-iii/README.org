@@ -1,4 +1,4 @@
-* Leetcode: Path Sum III                                        :BLOG:Medium:
+* Leetcode: Path Sum III                                        :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
