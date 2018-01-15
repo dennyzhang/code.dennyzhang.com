@@ -1,0 +1,41 @@
+* Leetcode: Populating Next Right Pointers in Each Node II                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #misc
+:END:
+---------------------------------------------------------------------
+Populating Next Right Pointers in Each Node II
+---------------------------------------------------------------------
+Follow up for problem "Populating Next Right Pointers in Each Node".
+
+What if the given tree could be any binary tree? Would your previous solution still work?
+
+Note:
+
+You may only use constant extra space.
+#+BEGIN_EXAMPLE
+For example,
+Given the following binary tree,
+         1
+       /  \
+      2    3
+     / \    \
+    4   5    7
+After calling your function, the tree should look like:
+         1 -> NULL
+       /  \
+      2 -> 3 -> NULL
+     / \    \
+    4-> 5 -> 7 -> NULL
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
