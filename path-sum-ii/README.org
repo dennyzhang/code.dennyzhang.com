@@ -1,40 +1,37 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
-## Description:
-##     https://leetcode.com/problems/path-sum-ii/description/
-##    ,-----------
-##    | Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
-##    | 
-##    | For example:
-##    | Given the below binary tree and sum = 22,
-##    |               5
-##    |              / \
-##    |             4   8
-##    |            /   / \
-##    |           11  13  4
-##    |          /  \    / \
-##    |         7    2  5   1
-##    | return
-##    | [
-##    |    [5,4,11,2],
-##    |    [5,8,4,5]
-##    | ]
-##    `-----------
-##
-##
-## Basic Idea:
-## Complexity:
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-28 21:01:16>
-##-------------------------------------------------------------------
+* Leetcode: Path Sum II                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #binarytree, #pathsum
+:END:
+---------------------------------------------------------------------
+Path Sum II
+---------------------------------------------------------------------
+Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+#+BEGIN_EXAMPLE
+For example:
+Given the below binary tree and sum = 22,
+              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \    / \
+        7    2  5   1
+return
+[
+   [5,4,11,2],
+   [5,8,4,5]
+]
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/path-sum-ii/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -71,3 +68,4 @@ class Solution(object):
                 value.insert(0, root.val)
                 res.append(value)
         return res
+#+END_SRC
