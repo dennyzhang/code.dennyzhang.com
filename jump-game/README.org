@@ -1,8 +1,8 @@
-* Leetcode: Jump Game                                              :BLOG:Medium:
+* Leetcode: Jump Game                                              :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #misc
+:type:     #greedy
 :END:
 ---------------------------------------------------------------------
 Jump Game
