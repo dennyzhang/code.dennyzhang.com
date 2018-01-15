@@ -16,8 +16,8 @@ Given linked list: 1->2->3->4->5, and n = 2.
 After removing the second node from the end, the linked list becomes 1->2->3->5.  
 
 Note:  
-Given n will always be valid.  
-Try to do this in one pass.  
+-   Given n will always be valid.
+-   Try to do this in one pass.
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-nth-node-from-end-of-list)  
 
@@ -25,6 +25,14 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/remove-nth-node-from-en
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Two pointers with distance of n+1
+    ##              Since the head node might be deleted, we need a dummy node
+    ##              One pass
+    ##              1->2->3->4->5, n=2
+    ##                    p  .  . q
+    ##
+    ##   Assumption: If n is bigger than the length of the list, do nothing
+    ## Complexity: Time O(n), Space O(1)
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):
@@ -38,30 +46,13 @@ Leave me comments, if you know how to solve.
             :type n: int
             :rtype: ListNode
             """
-            ## Basic Idea:
-            ##       1 -> 2  -> 3 -> 4 -> 5, n=2
-            ##                  p   q   r
-            ## Complexity: Time O(n), Space O(1)
-            length = 0
-            p = head
-            while (p is not None):
-                length += 1
+            dummyNode = ListNode(None)
+            dummyNode.next = head
+            p, q = dummyNode, dummyNode
+            for i in xrange(n+1):
+                q = q.next
+            while q:
                 p = p.next
-    
-            if length < n:
-                raise Exception("Link only have %d nodes. Can't delete %d th node" % (length, n))
-    
-            # remove the head
-            if n == length:
-                return head.next
-    
-            p = head
-            # move the pointer
-            for i in range(0, length - n - 1):
-                p = p.next
-    
-            # remove the node
-            q = p.next
-            r = q.next
-            p.next = r
-            return head
+                q = q.next
+            p.next = p.next.next
+            return dummyNode.next
