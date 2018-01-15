@@ -1,4 +1,4 @@
-# Leetcode: Jump Game     :BLOG:Medium:
+# Leetcode: Jump Game     :BLOG:Basic:
 
 
 ---
@@ -22,4 +22,31 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/jump-game/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+    ## Basic Ideas: Greedy
+    ##            maxIndex: the maximum index we can jump
+    ##            We check from left to right, thus we won't need to move back
+    ## Complexity:
+    class Solution(object):
+        def canJump(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: bool
+            """
+            length = len(nums)
+            if length == 0:
+                return None
+    
+            maxIndex = 0
+            for i in xrange(length):
+                # We can't move any further, or already reach the target
+                if (i > maxIndex) or (maxIndex >= length -1):
+                    break
+                maxIndex = max(maxIndex, i+nums[i])
+    
+            return (maxIndex >= length -1)
+    
+    s = Solution()
+    print s.canJump([2,3,1,1,4]) # true
+    print s.canJump([3,2,1,0,4]) # false
