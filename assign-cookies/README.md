@@ -10,8 +10,8 @@ Assign cookies wisely, and make more children happy
 Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.  
 
 Note:  
-You may assume the greed factor is always positive.  
-You cannot assign more than one cookie to one child.  
+-   You may assume the greed factor is always positive.
+-   You cannot assign more than one cookie to one child.
 
 Example 1:  
 
@@ -33,30 +33,42 @@ Example 2:
     You have 3 cookies and their sizes are big enough to gratify all of the children, 
     You need to output 2.
 
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/assign-cookies)  
+
 Credits To: [Leetcode.com](https://leetcode.com/problems/assign-cookies/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Greedy
+    ##        Assign the smallest cookie to the the mininum greedy child, if it matches
+    ##        Sort the list of g and s
+    ## Complexity: Time O(n*log(n)), Space O(1)
     class Solution(object):
-        def checkPerfectNumber(self, num):
+        def findContentChildren(self, g, s):
             """
-            :type num: int
-            :rtype: bool
+            :type g: List[int]
+            :type s: List[int]
+            :rtype: int
             """
-            ## Idea: sqrt(num)
-            ## Complexity:
-            ## Sample Data:
-            ##    1 2 7
-            if num <= 1:
-                return False
-            import math
-            sum = 1
-            for i in range(2, int(math.sqrt(num))+1):
-                if num % i == 0:
-                    sum += i
-                    if i != num/i:
-                        sum += num/i
-            return sum == num
+            g, s = sorted(g), sorted(s)
+            i, res = 0, 0
+            # check for each cookie
+            for cookie in s:
+                # check child
+                if cookie >= g[i]:
+                    # assign cookie
+                    res += 1
+                    # move to next child
+                    i += 1
+                # no child to check
+                if i == len(g):
+                    break            
+            return res
+    
+    s = Solution()
+    print s.findContentChildren([10,9,8,7], [5,6,7,8]) # 2
+    print s.findContentChildren([1,2, 3], [1,1]) # 1
+    print s.findContentChildren([1,2], [1,2,3]) # 2
 
 More Reading:  
 -   [Kids Puzzles](http://brain.dennyzhang.com/tag/kids/)

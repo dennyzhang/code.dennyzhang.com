@@ -1,0 +1,32 @@
+* Leetcode: Jump Game II                                              :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #greedy
+:END:
+---------------------------------------------------------------------
+Jump Game II
+---------------------------------------------------------------------
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Your goal is to reach the last index in the minimum number of jumps.
+
+For example:
+Given array A = [2,3,1,1,4]
+
+The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
+
+Note:
+You can assume that you can always reach the last index.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/jump-game-ii</description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
