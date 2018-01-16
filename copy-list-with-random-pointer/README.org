@@ -49,11 +49,10 @@ class Solution(object):
         ## duplicate the list
         p = head
         while p:
-            q = p.next
             newNode = RandomListNode(p.label)
             newNode.next = p.next
             p.next = newNode
-            p = q
+            p = newNode.next
 
         ## copy the randome pointer
         ##   odd node is the original list
