@@ -1,4 +1,4 @@
-# Leetcode: Sort List     :BLOG:Medium:
+# Leetcode: Sort List     :BLOG:Basic:
 
 
 ---
@@ -15,50 +15,65 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/sort-list/description/)
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Ideas:
-    ##       No more than 2 elements would be qualified.
-    ## Complexity: Time O(n), Space O(1)
-    ## Sample Data:
-    ##    1 2 3 2 3 3
-    ## Asummption:
-    class Solution(object):
-        def majorityElement(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[int]
-            """
-            length = len(nums)
-            if length == 0:
-                return 
-            n1, n2 = None, None
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-                elif c1 == 0:
-                    n1, c1 = num, 1
-                elif c2 == 0:
-                    n2, c2 = num, 1
-                else:
-                    c1, c2 = c1 - 1, c2 - 1
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
-            if c1 > length/3:
-                res.append(n1)
-            if c2 > length/3:
-                res.append(n2)
-            return res
+    ## Basic Ideas: Merge sort. Recursive
+    ##       1. Divide the list into two half
+    ##       2. Merge sort these two
+    ##       3. Combine two sorted list
+    ##          5  -> 6 -> 2 -> 7 -> 4
+    ## Complexity: Time O(n*log(n)), Space O(1)
     
-    s = Solution()
-    # print s.majorityElement([1, 2])
-    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
-    # print s.majorityElement([1, 2, 3, 2, 3, 3])
+    # Definition for singly-linked list.
+    # class ListNode(object):
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.next = None
+    
+    class Solution(object):
+        def sortList(self, head):
+            """
+            :type head: ListNode
+            :rtype: ListNode
+            """
+            if head is None or head.next is None:
+                return head
+            length = 0
+            p = head
+            while p:
+                length += 1
+                p = p.next
+    
+            p1 = head
+            for i in range(length/2-1):
+                p1 = p1.next
+    
+            p2 = p1.next
+            p1.next = None
+            head1 = self.sortList(head)
+            head2 = self.sortList(p2)
+            return self.mysortList(head1, head2)
+    
+        def mysortList(self, head1, head2):
+            # merge two sorted list
+            dummyNode = ListNode(None)
+            dummyNode.next = None
+            p, p1, p2 = dummyNode, head1, head2
+            while p1 and p2:
+                if p1.val <= p2.val:
+                    # append p1 to the new list
+                    p.next = p1
+                    p1 = p1.next
+                else:
+                    p.next = p2
+                    p2 = p2.next
+                p = p.next
+                p.next = None
+    
+            if p1 is None:
+                p1 = p2
+            # append the tail
+            while p1:
+                p.next = p1
+                p1 = p1.next
+                p = p.next
+                p.next = None
+            return dummyNode.next

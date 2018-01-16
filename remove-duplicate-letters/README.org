@@ -1,0 +1,30 @@
+* Leetcode: Remove Duplicate Letters                              :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #greedy, #lexicographical
+:END:
+---------------------------------------------------------------------
+Remove Duplicate Letters
+---------------------------------------------------------------------
+Given a string which contains only lowercase letters, remove duplicate letters so that every letter appear once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+#+BEGIN_EXAMPLE
+Example:
+Given "bcabc"
+Return "abc"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given "cbacdcbc"
+Return "acdb"
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicate-letters][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/remove-duplicate-letters/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
