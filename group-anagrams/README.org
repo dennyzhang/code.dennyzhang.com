@@ -1,0 +1,51 @@
+* Leetcode: Group Anagrams                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #anagrams, #codetemplate, #redo
+:END:
+---------------------------------------------------------------------
+Given an array of strings, group anagrams together.
+---------------------------------------------------------------------
+Given an array of strings, group anagrams together.
+#+BEGIN_EXAMPLE
+For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], 
+Return:
+
+[
+  ["ate", "eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+#+END_EXAMPLE
+
+Note: All inputs will be in lower-case.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/group-anagrams][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/group-anagrams/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+## Basic Ideas:  map each item to a string, group them by a map, dump the map
+## Complexity: Time O(n*k*log(k)), Space O(k*n). k is the length of longest item
+class Solution(object):
+    def groupAnagrams(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        m = {}
+        for item in strs:
+            sorted_item = ''.join(sorted(item))
+            if m.has_key(sorted_item):
+                m[sorted_item].append(item)
+            else:
+                m[sorted_item] = [item]
+
+        res = []
+        for key in m:
+            res.append(m[key])
+        return res
+#+END_SRC
