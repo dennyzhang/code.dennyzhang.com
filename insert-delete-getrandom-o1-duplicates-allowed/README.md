@@ -1,35 +1,44 @@
-# Leetcode: Length of Last Word     :BLOG:Basic:
+# Leetcode: Insert Delete GetRandom O(1) - Duplicates allowed     :BLOG:Hard:
 
 
 ---
 
-Length of Last Word  
+Insert Delete GetRandom O(1) - Duplicates allowed  
 
 ---
 
-Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.  
+Design a data structure that supports all following operations in average O(1) time.  
 
-If the last word does not exist, return 0.  
-
-Note: A word is defined as a character sequence consists of non-space characters only.  
+Note: Duplicate elements are allowed.  
+1.  insert(val): Inserts an item val to the collection.
+2.  remove(val): Removes an item val from the collection if present.
+3.  getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains.
 
 Example:  
 
-Input: "Hello World"  
-Output: 5  
+    // Init an empty collection.
+    RandomizedCollection collection = new RandomizedCollection();
+    
+    // Inserts 1 to the collection. Returns true as the collection did not contain 1.
+    collection.insert(1);
+    
+    // Inserts another 1 to the collection. Returns false as the collection contained 1. Collection now contains [1,1].
+    collection.insert(1);
+    
+    // Inserts 2 to the collection, returns true. Collection now contains [1,1,2].
+    collection.insert(2);
+    
+    // getRandom should return 1 with the probability 2/3, and returns 2 with the probability 1/3.
+    collection.getRandom();
+    
+    // Removes 1 from the collection, returns true. Collection now contains [1,2].
+    collection.remove(1);
+    
+    // getRandom should return 1 and 2 both equally likely.
+    collection.getRandom();
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/length-of-last-word)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1-duplicates-allowed)  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/length-of-last-word/description/)  
+Credits To: [Leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/)  
 
-Leave me comments, if you know how to solve.  
-
-    class Solution(object):
-        def lengthOfLastWord(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            s = s.strip(" ")
-            word_list = s.split(" ")
-            return len(word_list[-1])
+Leave me comments, if you know how to solve.
