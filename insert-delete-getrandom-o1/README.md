@@ -53,6 +53,7 @@ Leave me comments, if you know how to solve.
     ##      an integer: the length of the array
     ##      a dictionary: host all values and the corresponding index in above array
     ##           Update the index as the values, whenever we add a new value or remove an existing value
+    import random
     class RandomizedSet(object):
     
         def __init__(self):
@@ -62,7 +63,6 @@ Leave me comments, if you know how to solve.
             self.dict = {}
             self.array = 
             self.length = 0
-            import random
     
         def insert(self, val):
             """
@@ -104,7 +104,7 @@ Leave me comments, if you know how to solve.
             # error handling
             if self.length == 0:
                 return None
-            index = random.randint(1, self.length) - 1
+            index = random.randint(0, self.length-1)
             return self.array[index]
     
     # Your RandomizedSet object will be instantiated and called as such:
