@@ -21,29 +21,56 @@ Credits To: [[url-external:https://leetcode.com/problems/reverse-linked-list/des
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
 class Solution(object):
+    ## Basic Ideas: recursive way
+    ##                 def myReverseList(self, head_processed, head_unprocessed)
+    ## Complexity: Time O(n), Space O(1)
     def reverseList(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        ## Basic Idea:
-        ##   1 -> 3 -> 4 -> 5
-        ##   p   q   r
-        ##   always insert to the head
         if head is None or head.next is None:
             return head
+        p = head.next
+        head.next = None
+        return self.myReverseList(head, p)
 
-        p = head
-        q = p.next
-        p.next = None
+    def myReverseList(self, head_processed, head_unprocessed):
+        if head_unprocessed is None:
+            return head_processed
+        q = head_unprocessed.next
+        # append to the head
+        head_unprocessed.next = head_processed
+        return self.myReverseList(head_unprocessed, q)
 
-        while True:
-            r = q.next
-            q.next = p
+    ## Basic Ideas: Since the head will be changed, add a dummy node
+    ##              p points to the next node to be reversed
+    ##              take p and insert to dummyNode.next
+    ## Complexity: Time O(n) Space O(1)
+    def reverseList_v1(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        # empty or a single node
+        if head is None or head.next is None:
+            return head
+        dummyNode = ListNode(None)
+        dummyNode.next = head
+        p = head.next
+        # Configure the tail of processed list
+        head.next = None
+        while p:
+            q = p.next
+            p.next = dummyNode.next
+            dummyNode.next = p
             p = q
-            q = r
-            if q is None:
-                break
-        return p
+        return dummyNode.next
 #+END_SRC

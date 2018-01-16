@@ -1,0 +1,117 @@
+* Leetcode: Find Smallest Letter Greater Than Target                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #binarysearch, #codetemplate, #redo
+:END:
+---------------------------------------------------------------------
+Find Smallest Letter Greater Than Target
+---------------------------------------------------------------------
+Given a list of sorted characters letters containing only lowercase letters, and given a target letter target, find the smallest element in the list that is larger than the given target.
+
+Letters also wrap around. For example, if the target is target = 'z' and letters = ['a', 'b'], the answer is 'a'.
+
+Examples:
+#+BEGIN_EXAMPLE
+Input:
+letters = ["c", "f", "j"]
+target = "a"
+Output: "c"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Input:
+letters = ["c", "f", "j"]
+target = "c"
+Output: "f"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Input:
+letters = ["c", "f", "j"]
+target = "d"
+Output: "f"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Input:
+letters = ["c", "f", "j"]
+target = "g"
+Output: "j"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Input:
+letters = ["c", "f", "j"]
+target = "j"
+Output: "c"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Input:
+letters = ["c", "f", "j"]
+target = "k"
+Output: "c"
+#+END_EXAMPLE
+
+Note:
+
+1. letters has a length in range [2, 10000].
+- letters consists of lowercase letters, and contains at least 2 unique letters.
+- target is a lowercase letter.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-smallest-letter-greater-than-target][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+## Basic Ideas: Binary search
+##  Assumption: duplicate characters
+##              ["a", "a", "b"], "c"
+## Complexity: Time O(log(n)), Space O(1)
+class Solution(object):
+    def nextGreatestLetter(self, letters, target):
+        """
+        :type letters: List[str]
+        :type target: str
+        :rtype: str
+        """
+        length = len(letters)
+        left, right = 0, length - 1
+        while left <= right:
+            mid = left + (right-left)/2
+            if letters[mid] == target:
+                break
+            elif letters[mid] > target:
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        if left <= right:
+            # It has target inside, now find the last element equals the target
+            left, right = 0, length - 1
+            while left < right:
+                mid = left + (right-left)/2
+                if letters[mid] > target:
+                    right = mid - 1
+                else:
+                    left = mid
+                if right - left == 1:
+                    if letters[right] == target:
+                        left = right
+                        break
+                    else:
+                        break
+            index = (left + 1) % length
+            return letters[index]
+        else:
+            # It doesn't have the target
+            # ['a', 'a', 'a', 'a', 'c', 'c'], 'b'
+            index = (right + 1) % length
+            return letters[index]
+
+s = Solution()
+print s.nextGreatestLetter(["c","f","j"], "j")
+#+END_SRC
