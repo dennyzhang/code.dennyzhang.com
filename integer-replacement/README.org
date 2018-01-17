@@ -1,0 +1,51 @@
+* Leetcode: Integer Replacement                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #math
+:END:
+---------------------------------------------------------------------
+Integer Replacement
+---------------------------------------------------------------------
+Given a positive integer n and you can do operations as follow:
+
+If n is even, replace n with n/2.
+If n is odd, you can replace n with either n + 1 or n - 1.
+What is the minimum number of replacements needed for n to become 1?
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+8
+
+Output:
+3
+
+Explanation:
+8 -> 4 -> 2 -> 1
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+
+Input:
+7
+
+Output:
+4
+
+Explanation:
+7 -> 8 -> 4 -> 2 -> 1
+or
+7 -> 6 -> 3 -> 2 -> 1
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-replacement][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/integer-replacement/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
