@@ -27,4 +27,35 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/isomorphic-strings/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+    ## Basic Ideas:
+    ##             Build 2 dicts
+    ##             From s to t, and from t to s
+    ##             For any new item to compare, make sure it won't viloate any dict
+    ## Complexity: Time O(n), Space O(1). (Keys of dictionary is quite limited)
+    class Solution(object):
+        def isIsomorphic(self, s, t):
+            """
+            :type s: str
+            :type t: str
+            :rtype: bool
+            """
+            m1, m2 = {}, {}
+            for i in xrange(len(s)):
+                ch1, ch2 = s[i], t[i]
+                # mapping from s to t
+                if m1.has_key(ch1):
+                    if m1[ch1] != ch2:
+                        return False
+                else:
+                    m1[ch1] = ch2
+    
+                # ab -> aa
+                # mapping from t to s
+                if m2.has_key(ch2):
+                    if m2[ch2] != ch1:
+                        return False
+                else:
+                    m2[ch2] = ch1
+            return True
