@@ -67,16 +67,15 @@ Leave me comments, if you know how to solve.
                     break
     
                 # save the pointer of next p1
-                q = p1.next
-                s = p2.next
+                q, s = p1.next, p2.next
                 # reverse list from p1 to p2
                 p = p1.next.next
                 p1.next.next = s
                 while p != s:
-                    # move p to p1.next
                     r = p.next
                     p.next = p1.next
                     p1.next = p
+                    # move to next
                     p = r
                 p1 = q
             return dummyNode.next
