@@ -34,5 +34,51 @@ Credits To: [[url-external:https://leetcode.com/problems/intersection-of-two-lin
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Idea: get the count of two links
+##       Skip the longer link with a proper offset.
+##       Then compare two links node by node
+## Complexity: Time O(n), Space O(1)
 
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        """
+        :type head1, head1: ListNode
+        :rtype: ListNode
+        """
+        p = headA
+        length1 = 0
+        while (p is not None):
+            length1 += 1
+            p = p.next
+
+        q = headB
+        length2 = 0
+        while (q is not None):
+            length2 += 1
+            q = q.next
+
+        p = headA
+        q = headB
+        if length1 > length2:
+            offset = length1 - length2
+            while offset != 0:
+                p = p.next
+                offset -= 1
+        else:
+            if length1 < length2:
+                offset = length2 - length1
+                while offset != 0:
+                    q = q.next
+                    offset -= 1
+        # check items
+        while (p is not None) and (p != q):
+            p = p.next
+            q = q.next
+        return p        
 #+END_SRC
