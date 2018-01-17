@@ -1,4 +1,4 @@
-# Leetcode: Two Sum II - Input array is sorted     :BLOG:Hard:
+# Leetcode: Two Sum II - Input array is sorted     :BLOG:Medium:
 
 
 ---
