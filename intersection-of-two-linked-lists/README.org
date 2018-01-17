@@ -1,0 +1,38 @@
+* Leetcode: Intersection of Two Linked Lists                     :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #linkedlist
+:END:
+---------------------------------------------------------------------
+Intersection of Two Linked Lists
+---------------------------------------------------------------------
+Write a program to find the node at which the intersection of two singly linked lists begins.
+
+
+For example, the following two linked lists:
+#+BEGIN_EXAMPLE
+A:          a1 -> a2
+                    \
+                     c1 -> c2 -> c3
+                   /            
+B:     b1 -> b2 -> b3
+begin to intersect at node c1.
+#+END_EXAMPLE
+
+Notes:
+
+- If the two linked lists have no intersection at all, return null.
+- The linked lists must retain their original structure after the function returns.
+- You may assume there are no cycles anywhere in the entire linked structure.
+- Your code should preferably run in O(n) time and use only O(1) memory.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/intersection-of-two-linked-list][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/intersection-of-two-linked-list/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
