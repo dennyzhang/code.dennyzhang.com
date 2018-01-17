@@ -3,7 +3,7 @@
 
 ---
 
-Identity number which appears exactly once.  
+Reverse Nodes in k-Group  
 
 ---
 
@@ -28,6 +28,15 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/reverse-nodes-in-k-grou
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Two pointer(p1, p2) with distance of k
+    ##              Since head node might be changed, add a dummyNode
+    ##              How to process:
+    ##                 If p2 is None, stop changing
+    ##                 Otherwise reverse list from p1 to p2
+    ##              Move to next:
+    ##                 p2 move to right with k distance
+    ##                 If p2 is None, stop changing
+    ## Complexity: Time O(n), Space O(1)
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):
@@ -41,3 +50,33 @@ Leave me comments, if you know how to solve.
             :type k: int
             :rtype: ListNode
             """
+            if k <= 1:
+                return head
+            dummyNode = ListNode(None)
+            dummyNode.next = head
+            p1 = dummyNode
+    
+            while True:
+                p2 = p1
+                for i in xrange(k):
+                    if p2 is None:
+                        break
+                    p2 = p2.next
+    
+                if p2 is None:
+                    break
+    
+                # save the pointer of next p1
+                q = p1.next
+                s = p2.next
+                # reverse list from p1 to p2
+                p = p1.next.next
+                p1.next.next = s
+                while p != s:
+                    # move p to p1.next
+                    r = p.next
+                    p.next = p1.next
+                    p1.next = p
+                    p = r
+                p1 = q
+            return dummyNode.next

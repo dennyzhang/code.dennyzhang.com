@@ -1,11 +1,11 @@
-* Leetcode: Reverse Nodes in k-Group                                              :BLOG:Hard:
+* Leetcode: Reverse Nodes in k-Group                              :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #redo, #reverseitem
+:type:     #reverseitem, #linkedlist, #manydetails
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Reverse Nodes in k-Group
 ---------------------------------------------------------------------
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
 
@@ -30,6 +30,15 @@ Credits To: [[url-external:https://leetcode.com/problems/reverse-nodes-in-k-grou
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: Two pointer(p1, p2) with distance of k
+##              Since head node might be changed, add a dummyNode
+##              How to process:
+##                 If p2 is None, stop changing
+##                 Otherwise reverse list from p1 to p2
+##              Move to next:
+##                 p2 move to right with k distance
+##                 If p2 is None, stop changing
+## Complexity: Time O(n), Space O(1)
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -43,4 +52,34 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        if k <= 1:
+            return head
+        dummyNode = ListNode(None)
+        dummyNode.next = head
+        p1 = dummyNode
+
+        while True:
+            p2 = p1
+            for i in xrange(k):
+                if p2 is None:
+                    break
+                p2 = p2.next
+
+            if p2 is None:
+                break
+
+            # save the pointer of next p1
+            q = p1.next
+            s = p2.next
+            # reverse list from p1 to p2
+            p = p1.next.next
+            p1.next.next = s
+            while p != s:
+                # move p to p1.next
+                r = p.next
+                p.next = p1.next
+                p1.next = p
+                p = r
+            p1 = q
+        return dummyNode.next
 #+END_SRC
