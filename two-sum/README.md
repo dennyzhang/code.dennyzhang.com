@@ -24,6 +24,8 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/two-sum/description/)
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: sort the array, and two pointers. 1. From left to right, 2. From right to left
+    ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def twoSum(self, nums, target):
             """
@@ -31,8 +33,6 @@ Leave me comments, if you know how to solve.
             :type target: int
             :rtype: List[int]
             """
-            ## Basic Idea: sort the array, and two pointers. 1. From left to right, 2. From right to left
-            ## Complexity: Time O(n), Space O(1)
             nums2 = sorted(nums)
             i = 0
             j = len(nums2)-1

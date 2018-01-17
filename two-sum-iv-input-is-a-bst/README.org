@@ -1,0 +1,47 @@
+* Leetcode: Two Sum IV - Input is a BST                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #twosum, #redo
+:END:
+---------------------------------------------------------------------
+Two Sum IV - Input is a BST
+---------------------------------------------------------------------
+Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
+#+BEGIN_EXAMPLE
+Example 1:
+Input: 
+    5
+   / \
+  3   6
+ / \   \
+2   4   7
+
+Target = 9
+
+Output: True
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+Input: 
+    5
+   / \
+  3   6
+ / \   \
+2   4   7
+
+Target = 28
+
+Output: False
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-iv-input-is-a-bst][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
