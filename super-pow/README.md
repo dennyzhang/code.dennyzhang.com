@@ -1,4 +1,4 @@
-# Leetcode: Super Pow     :BLOG:Medium:
+# Leetcode: Super Pow     :BLOG:Amusing:
 
 
 ---

@@ -1,8 +1,8 @@
-* Leetcode: Super Pow                                              :BLOG:Medium:
+* Leetcode: Super Pow                                              :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #game
+:type:     #game, #math
 :END:
 ---------------------------------------------------------------------
 Super Pow
