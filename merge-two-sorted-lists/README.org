@@ -1,18 +1,26 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags:
-## Description:
-##     https://leetcode.com/problems/merge-two-sorted-lists/description/
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-11-12 10:59:17>
-##-------------------------------------------------------------------
+* Leetcode: Merge Two Sorted Lists                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #linkedlist, #codetemplate
+:END:
+---------------------------------------------------------------------
+Merge Two Sorted Lists
+---------------------------------------------------------------------
+Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+Example:
+
+Input: 1->2->4, 1->3->4
+Output: 1->1->2->3->4->4
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-sorted-list][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/merge-two-sorted-list/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
         """
@@ -57,4 +65,4 @@ class Solution(object):
             p.next = q
 
         return head
-## File: test.py ends
+#+END_SRC
