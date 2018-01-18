@@ -1,0 +1,37 @@
+* Leetcode: Super Pow                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #game
+:END:
+---------------------------------------------------------------------
+Super Pow
+---------------------------------------------------------------------
+Your task is to calculate a^b mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.
+#+BEGIN_EXAMPLE
+Example1:
+
+a = 2
+b = [3]
+
+Result: 8
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example2:
+
+a = 2
+b = [1,0]
+
+Result: 1024
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/super-pow][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/super-pow/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
