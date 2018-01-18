@@ -27,4 +27,12 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/super-pow/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+    class Solution(object):
+        def superPow(self, a, b):
+            """
+            :type a: int
+            :type b: List[int]
+            :rtype: int
+            """

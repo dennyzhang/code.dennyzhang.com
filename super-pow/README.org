@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #game, #math
+:type:     #game, #math, #powerofn
 :END:
 ---------------------------------------------------------------------
 Super Pow
@@ -33,5 +33,11 @@ Credits To: [[url-external:https://leetcode.com/problems/super-pow/description/]
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-
+class Solution(object):
+    def superPow(self, a, b):
+        """
+        :type a: int
+        :type b: List[int]
+        :rtype: int
+        """
 #+END_SRC
