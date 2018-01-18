@@ -25,6 +25,12 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/powx-n/description/)
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: 
+    ##        If n < 0, x^n == (1/x)^(-n)
+    ##        If n%2 == 0, x^n == (x*x)^(n/2)
+    ##        If n%2 == 1, x^n == x * (x*x)^((n-1)/2)
+    ##
+    ## Complexity: Time O(log(n)), Space O(1)
     class Solution(object):
         def myPow(self, x, n):
             """
@@ -32,21 +38,12 @@ Leave me comments, if you know how to solve.
             :type n: int
             :rtype: float
             """
-            ## Idea: x^n = x^(n/2) * x^(n/2) * x^(n%2)
-            ## Complexity: Time O(log(n)), Space O(1)
-            ## Sample Data:
-            ##   pow(5, 3) = 5*5*5
-            ##   pow(5, -3) = ?
-            ##   pow(-5, 3) = (-5)*(-5)*(-5)
-            ##   pow(5.1, 3) = 5.1*5.1*5.1
-            ##   x^n = x^(n/2) * x^(n/2) * x^(n%2)
-            ##   pow(x, -n) = 1/pow(x, n)
             if n == 0:
                 return 1
             if n < 0:
-                return 1/self.myPow(x, -n)
-            if n == 1:
-                return x
-            if(n>=2):
-                val = self.myPow(x, n/2)
-                return val*val*self.myPow(x, n%2)
+                n = -n
+                x = 1/x
+            if n %2 == 0:
+                return self.myPow(x*x, n/2)
+            else:
+                return x*self.myPow(x*x, (n-1)/2)
