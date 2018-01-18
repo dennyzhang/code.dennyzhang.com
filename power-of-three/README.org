@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #math, #powerofn, #inspiring
+:type:     #math, #powerofn, #inspiring, #prime
 :END:
 ---------------------------------------------------------------------
 Given an integer, write a function to determine if it is a power of three.
