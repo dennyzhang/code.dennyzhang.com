@@ -1,0 +1,35 @@
+* Leetcode: Valid Perfect Square                                              :BLOG:Amusing:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #squarenumber, #math, #binarysearch
+:END:
+---------------------------------------------------------------------
+Valid Perfect Square
+---------------------------------------------------------------------
+Given a positive integer num, write a function which returns True if num is a perfect square else False.
+
+Note: Do not use any built-in library function such as sqrt.
+#+BEGIN_EXAMPLE
+Example 1:
+
+Input: 16
+Returns: True
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+
+Input: 14
+Returns: False
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-perfect-square][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/valid-perfect-square/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
