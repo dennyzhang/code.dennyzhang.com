@@ -36,9 +36,11 @@ Credits To: [[url-external:https://leetcode.com/problems/n-queens/description/][
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Basic Ideas: backtracking. Try with both possibilities for each unexplored positions
+## Basic Ideas: backtracking.
+##              Place queens row by row
+##              Check if place in current position, examine the column and triangle
 ##
-## Complexity:
+## Complexity: Time ?, Space ?
 class Solution(object):
     def solveNQueens(self, n):
         """
@@ -47,57 +49,43 @@ class Solution(object):
         """
         if n <= 0:
             return None
-        board = []
+
+        self.board = []
         for i in xrange(n):
-            board.append([None]*n)
+            self.board.append(['.']*n)
+
         self.res = []
-        self.mySolveNQueens(board, n, 0, 0, 0)
+        self.mySolveNQueens(n, 0)
         return self.res
 
-    def mySolveNQueens(self, board, n, queen_count, irow, icol):
+    def mySolveNQueens(self, n, irow):
         if irow == n:
-            if queen_count == n:
-                item = []
-                for row in board:
-                    item.append(''.join(row))
-                self.res.append(item)
+            item = []
+            for row in self.board:
+                item.append(''.join(row))
+            self.res.append(item)
             return
 
-        irow2, icol2 = None, None
-        if icol == n - 1:
-            irow2, icol2 = irow + 1, 0
-        else:
-            irow2, icol2 = irow, icol + 1
+        for icol in xrange(n):
+            # place Q
+            if self.isNQuees(n, irow, icol):
+                self.board[irow][icol] = 'Q'
+                self.mySolveNQueens(n, irow+1)
+            self.board[irow][icol] = '.'
 
-        # place Q
-        if self.isNQuees(board, n, irow, icol):
-            board[irow][icol] = 'Q'
-            self.mySolveNQueens(board, n, queen_count + 1, irow2, icol2)
-
-        board[irow][icol] = '.'
-        self.mySolveNQueens(board, n, queen_count, irow2, icol2)
-
-    def isNQuees(self, board, n, irow, icol):
-        for index in xrange(n):
-            # check row
-            if index == icol: continue
-            if board[irow][index] == 'Q':
-                return False
-
+    def isNQuees(self, n, irow, icol):
         for index in xrange(n):
             # check column
             if index == irow: continue
-            if board[index][icol] == 'Q':
-                return False
+            if self.board[index][icol] == 'Q': return False
 
         for i in xrange(n):
             for j in xrange(n):
-                if irow == i and icol == j:
-                    continue
-                if abs(irow-i) == abs(icol-j) and board[i][j] == 'Q':
+                if irow == i and icol == j: continue
+                if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
                     return False
         return True
 
 s = Solution()
-print s.solveNQueens(4)
+print s.solveNQueens(8)
 #+END_SRC

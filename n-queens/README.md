@@ -1,4 +1,4 @@
-# Leetcode: N-Queens     :BLOG:Basic:
+# Leetcode: N-Queens     :BLOG:Hard:
 
 
 ---
@@ -32,4 +32,57 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/n-queens/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+    ## Basic Ideas: backtracking.
+    ##              Place queens row by row
+    ##              Check if place in current position, examine the column and triangle
+    ##
+    ## Complexity: Time ?, Space ?
+    class Solution(object):
+        def solveNQueens(self, n):
+            """
+            :type n: int
+            :rtype: List[List[str]]
+            """
+            if n <= 0:
+                return None
+    
+            self.board = 
+            for i in xrange(n):
+                self.board.append(['.']*n)
+    
+            self.res = 
+            self.mySolveNQueens(n, 0)
+            return self.res
+    
+        def mySolveNQueens(self, n, irow):
+            if irow == n:
+                item = 
+                for row in self.board:
+                    item.append(''.join(row))
+                self.res.append(item)
+                return
+    
+            for icol in xrange(n):
+                # place Q
+                if self.isNQuees(n, irow, icol):
+                    self.board[irow][icol] = 'Q'
+                    self.mySolveNQueens(n, irow+1)
+                self.board[irow][icol] = '.'
+    
+        def isNQuees(self, n, irow, icol):
+            for index in xrange(n):
+                # check column
+                if index == irow: continue
+                if self.board[index][icol] == 'Q': return False
+    
+            for i in xrange(n):
+                for j in xrange(n):
+                    if irow == i and icol == j: continue
+                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
+                        return False
+            return True
+    
+    s = Solution()
+    print s.solveNQueens(8)
