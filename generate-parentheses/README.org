@@ -1,32 +1,32 @@
-#!/usr/bin/env python
-##-------------------------------------------------------------------
-## @copyright 2017 brain.dennyzhang.com
-## Licensed under MIT
-##   https://www.dennyzhang.com/wp-content/mit_license.txt
-##
-## File: test.py
-## Author : Denny <http://brain.dennyzhang.com/contact>
-## Tags: #redo
-## Description:
-##     https://leetcode.com/problems/generate-parentheses/description/
-##    ,-----------
-##    | Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
-##    | 
-##    | For example, given n = 3, a solution set is:
-##    | 
-##    | [
-##    |   "((()))",
-##    |   "(()())",
-##    |   "(())()",
-##    |   "()(())",
-##    |   "()()()"
-##    | ]
-##    `-----------
-##
-## --
-## Created : <2017-10-16>
-## Updated: Time-stamp: <2017-10-30 15:41:52>
-##-------------------------------------------------------------------
+* Leetcode: Generate Parentheses                                 :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #parentheses, #codetemplate, #redo
+:END:
+---------------------------------------------------------------------
+Generate Parentheses
+---------------------------------------------------------------------
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+#+BEGIN_EXAMPLE
+For example, given n = 3, a solution set is:
+
+[
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
 class Solution(object):
     def generateParenthesis(self, n):
         """
@@ -64,3 +64,4 @@ class Solution(object):
         for i in xrange(len(bfs_queue)):
             res.append(bfs_queue[i][0])
         return res
+#+END_SRC
