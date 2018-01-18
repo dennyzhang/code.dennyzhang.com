@@ -25,4 +25,27 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [Leetcode.com](https://leetcode.com/problems/valid-perfect-square/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+    ## Basic Idea: Binary search
+    ##             Search in between [1^2, 2^2, 3^2, ... num^2]
+    ## Complexity: Time O(log(n)), Space O(1)
+    class Solution(object):
+        def isPerfectSquare(self, num):
+            """
+            :type num: int
+            :rtype: bool
+            """
+            if num <= 0:
+                return False
+            left, right = 1, num
+            while left<= right:
+                mid = left + (right-left)/2
+                v = mid*mid
+                if v == num:
+                    return True
+                elif v < num:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return False

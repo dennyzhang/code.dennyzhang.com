@@ -1,0 +1,39 @@
+* Leetcode: Sqrt(x)                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #math, #binarysearch
+:END:
+---------------------------------------------------------------------
+Implement int sqrt(int x).
+---------------------------------------------------------------------
+Implement int sqrt(int x).
+
+Compute and return the square root of x.
+
+x is guaranteed to be a non-negative integer.
+
+#+BEGIN_EXAMPLE
+Example 1:
+
+Input: 4
+Output: 2
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+
+Input: 8
+Output: 2
+Explanation: The square root of 8 is 2.82842..., and since we want to return an integer, the decimal part will be truncated.
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sqrtx][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/sqrtx/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
