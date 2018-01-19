@@ -31,6 +31,7 @@ function refresh_md() {
         cd $dirname
         /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_9 --batch -l ../update_md.el
         cd ..
+        break
     done
 }
 

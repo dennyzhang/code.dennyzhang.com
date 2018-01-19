@@ -7,6 +7,9 @@
   (require 'ox-md)
   (switch-to-buffer 
    (find-file "README.org")
+   (replace-string "[[url-external:" "")
+   (replace-string "][challenges-leetcode-interesting]" "")
+   (replace-string "][leetcode.com]" "")
    (org-export-to-file 'md "README.md")
    (delete-file "README.md~")
    )
