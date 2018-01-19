@@ -1,25 +1,16 @@
-# Leetcode: Contains Duplicate III     :BLOG:Medium:
+# Leetcode: Contains Duplicate II     :BLOG:Medium:
 
 
 ---
 
-Find pair in a list of integers  
+Contains Duplicate II  
 
 ---
 
-Given an array of integers, find out whether there are two distinct indices i and j in the array such that the absolute difference between nums[i] and nums[j] is at most t and the absolute difference between i and j is at most k.  
+Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate-iii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate-ii)  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/contains-duplicate-iii/description/)  
+Credits To: [Leetcode.com](https://leetcode.com/problems/contains-duplicate-ii/description/)  
 
-Leave me comments, if you know how to solve.  
-
-    class Solution(object):
-        def containsNearbyAlmostDuplicate(self, nums, k, t):
-            """
-            :type nums: List[int]
-            :type k: int
-            :type t: int
-            :rtype: bool
-            """
+Leave me comments, if you know how to solve.
