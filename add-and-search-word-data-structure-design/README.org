@@ -1,0 +1,44 @@
+* Leetcode: Add and Search Word - Data structure design         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #Trie
+:END:
+---------------------------------------------------------------------
+Add and Search Word - Data structure design
+---------------------------------------------------------------------
+Design a data structure that supports the following two operations:
+#+BEGIN_EXAMPLE
+void addWord(word)
+bool search(word)
+#+END_EXAMPLE
+
+search(word) can search a literal word or a regular expression string containing only letters a-z or .. A . means it can represent any one letter.
+#+BEGIN_EXAMPLE
+For example:
+
+addWord("bad")
+addWord("dad")
+addWord("mad")
+search("pad") -> false
+search("bad") -> true
+search(".ad") -> true
+search("b..") -> true
+#+END_EXAMPLE
+
+Note:
+You may assume that all words are consist of lowercase letters a-z.
+
+click to show hint.
+
+You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-and-search-word-data-structure-design][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/add-and-search-word-data-structure-design/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
