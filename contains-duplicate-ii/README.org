@@ -30,27 +30,17 @@ class Solution(object):
         :rtype: bool
         """
         length = len(nums)
-        if length <= 1:
-            return False
-        if k == 0:
-            return False
+        if length <= 1: return False
+        if k == 0: return False
+        s = set([])
 
-        set_list = set([])
-        index = min(k+1, length)
-        # build sliding window from nums[0:index]
-        for i in range(0, index):
-            set_list.add(nums[i])
-
-        # duplicate is found in the initial window
-        if len(set_list) != index:
-            return True
-
-        # move the sliding window to the right
-        for i in range(index, length):
-            set_list.remove(nums[i-index])
-            if nums[i] in set_list:
+        for i in xrange(length):
+            if i > k:
+                # sliding window shall have k+1 element
+                s.remove(nums[i-k-1])
+            if nums[i] in s:
                 return True
-            set_list.add(nums[i])
+            s.add(nums[i])
         return False
 
 s = Solution()
