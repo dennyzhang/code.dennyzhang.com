@@ -1,4 +1,4 @@
-# Leetcode: Happy Number     :BLOG:Basic:
+# Leetcode: Happy Number     :BLOG:Hard:
 
 
 ---
@@ -24,9 +24,30 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/happy-number/descriptio
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Floyd Cycle
+    ##
+    ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def isHappy(self, n):
             """
             :type n: int
             :rtype: bool
             """
+            slow = self.getCaculatedSum(n)
+            fast = self.getCaculatedSum(self.getCaculatedSum(n))
+            while slow != fast:
+                slow = self.getCaculatedSum(slow)
+                fast = self.getCaculatedSum(self.getCaculatedSum(fast))
+            return True if slow == 1 else False
+    
+        def getCaculatedSum(self, n):
+            if n < 0:
+                return None
+            if n == 0:
+                return 0
+            res = 0
+            while n != 0:
+                ldigit = n % 10
+                res = res + ldigit*ldigit
+                n = n/10
+            return res

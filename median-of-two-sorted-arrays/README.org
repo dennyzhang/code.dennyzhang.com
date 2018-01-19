@@ -1,8 +1,8 @@
-* Leetcode: Median of Two Sorted Arrays                                              :BLOG:Medium:
+* Leetcode: Median of Two Sorted Arrays                                              :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #misc, #redo
+:type:     #inspiring
 :END:
 ---------------------------------------------------------------------
 Median of Two Sorted Arrays

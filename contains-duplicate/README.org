@@ -1,0 +1,20 @@
+* Leetcode: Contains Duplicate                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #containduplicate
+:END:
+---------------------------------------------------------------------
+Contains Duplicate
+---------------------------------------------------------------------
+Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/contains-duplicate/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
