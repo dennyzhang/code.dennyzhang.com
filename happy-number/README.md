@@ -33,11 +33,11 @@ Leave me comments, if you know how to solve.
             :type n: int
             :rtype: bool
             """
-            slow = self.getCaculatedSum(n)
-            fast = self.getCaculatedSum(self.getCaculatedSum(n))
-            while slow != fast:
+            slow, fast = n, n
+            while True:
                 slow = self.getCaculatedSum(slow)
                 fast = self.getCaculatedSum(self.getCaculatedSum(fast))
+                if slow == fast: break
             return True if slow == 1 else False
     
         def getCaculatedSum(self, n):

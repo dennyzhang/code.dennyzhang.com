@@ -1,0 +1,33 @@
+* Leetcode: Maximum Length of Repeated Subarray                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #misc
+:END:
+---------------------------------------------------------------------
+Maximum Length of Repeated Subarray
+---------------------------------------------------------------------
+Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
+#+BEGIN_EXAMPLE
+Example 1:
+Input:
+A: [1,2,3,2,1]
+B: [3,2,1,4,7]
+Output: 3
+Explanation: 
+The repeated subarray with maximum length is [3, 2, 1].
+#+END_EXAMPLE
+
+Note:
+- 1 <= len(A), len(B) <= 1000
+- 0 <= A[i], B[i] < 100
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-length-of-repeated-subarray][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/][Leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC
