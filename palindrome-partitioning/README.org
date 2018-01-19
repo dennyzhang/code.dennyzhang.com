@@ -20,6 +20,8 @@ Return
 ]
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/palindrome-partitioning
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-partitioning][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/palindrome-partitioning/description/][Leetcode.com]]
