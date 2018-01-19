@@ -14,6 +14,8 @@ a = "11"
 b = "1"
 Return "100".
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-binary][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/add-binary/description/][Leetcode.com]]

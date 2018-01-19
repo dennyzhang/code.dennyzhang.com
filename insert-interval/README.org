@@ -23,6 +23,8 @@ Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as [1,2],[3,10
 This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-interval][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/insert-interval/description/][Leetcode.com]]

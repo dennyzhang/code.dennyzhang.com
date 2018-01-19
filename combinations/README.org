@@ -21,6 +21,8 @@ If n = 4 and k = 2, a solution is:
   [1,4],
 ]
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combinations][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/combinations/description/][Leetcode.com]]

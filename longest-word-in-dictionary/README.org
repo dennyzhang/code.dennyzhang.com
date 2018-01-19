@@ -34,6 +34,8 @@ Note:
 - The length of words will be in the range [1, 1000].
 - The length of words[i] will be in the range [1, 30].
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-word-in-dictionary][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-word-in-dictionary/description/][Leetcode.com]]

@@ -17,6 +17,8 @@ Input: "Hello, my name is John"
 Output: 5
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-segments-in-a-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-segments-in-a-string/description/][Leetcode.com]]

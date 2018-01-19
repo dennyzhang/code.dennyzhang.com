@@ -31,6 +31,8 @@ Example 2:
 
 Binary tree [1,2,3], return false.
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/validate-binary-search-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/validate-binary-search-tree/description/][Leetcode.com]]

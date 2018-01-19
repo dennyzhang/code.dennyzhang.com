@@ -19,6 +19,8 @@ Note:
 - You may use one character in the keyboard more than once.
 - You may assume the input string will only contain letters of alphabet.
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/keyboard-row][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/keyboard-row/description/][Leetcode.com]]

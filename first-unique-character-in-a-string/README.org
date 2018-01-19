@@ -20,6 +20,8 @@ return 2.
 Note: You may assume the string contain only lowercase letters.
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]

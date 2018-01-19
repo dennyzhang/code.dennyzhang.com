@@ -23,6 +23,8 @@ Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
 
 The number of ways decoding "12" is 2.
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/decode-ways][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/decode-ways/description/][Leetcode.com]]

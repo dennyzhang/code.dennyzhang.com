@@ -36,6 +36,8 @@ Hints:
 - Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
 - Topological sort could also be done via BFS.
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/course-schedule][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/course-schedule/description/][Leetcode.com]]

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #slidingwindow, #manydetails, #redo
+:type:     #slidingwindow, #manydetails, #redo, #inspiring
 :END:
 ---------------------------------------------------------------------
 Minimum Window Substring
@@ -20,6 +20,8 @@ Note:
 If there is no such window in S that covers all characters in T, return the empty string "".
 
 If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
+
+Blog link: http://brain.dennyzhang.com/majority-element-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-window-substring][challenges-leetcode-interesting]]
 

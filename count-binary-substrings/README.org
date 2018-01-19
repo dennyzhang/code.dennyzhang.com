@@ -32,6 +32,8 @@ s.length will be between 1 and 50,000.
 s will only consist of "0" or "1" characters.
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-binary-substrings][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/count-binary-substrings/description/][Leetcode.com]]

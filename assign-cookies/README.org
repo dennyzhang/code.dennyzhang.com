@@ -35,6 +35,8 @@ You have 3 cookies and their sizes are big enough to gratify all of the children
 You need to output 2.
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/assign-cookies][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/assign-cookies/description/][Leetcode.com]]

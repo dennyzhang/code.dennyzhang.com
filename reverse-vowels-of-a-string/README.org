@@ -22,6 +22,8 @@ Given s = "leetcode", return "leotcede".
 Note:
 The vowels does not include the letter "y".
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-vowels-of-a-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/reverse-vowels-of-a-string/description/][Leetcode.com]]

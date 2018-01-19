@@ -13,6 +13,8 @@ For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].
 
 Please optimize your algorithm to use less time and space. The input size may be as large as 5,000,000.
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lexicographical-numbers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/lexicographical-numbers/description/][Leetcode.com]]

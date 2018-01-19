@@ -25,6 +25,8 @@ Output: 8
 Note:
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
 
+Blog link: http://brain.dennyzhang.com/majority-element-ii
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/missing-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/missing-number/description/][Leetcode.com]]
