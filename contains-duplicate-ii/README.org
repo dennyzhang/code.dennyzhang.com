@@ -17,7 +17,7 @@ Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
 ## Baisc Ideas: sliding window
-##              Keep a window of k-1. Maintain a Set with the window
+##              Keep a window of k+1 elements. Maintain a Set with the window
 ##              Move the window towards the end.
 ##              If found an existing
 ##
@@ -32,11 +32,11 @@ class Solution(object):
         length = len(nums)
         if length <= 1:
             return False
-        if k <= 1:
-            return True
+        if k == 0:
+            return False
 
         set_list = set([])
-        index = min(k-1, length)
+        index = min(k+1, length)
         # build sliding window from nums[0:index]
         for i in range(0, index):
             set_list.add(nums[i])
@@ -47,13 +47,14 @@ class Solution(object):
 
         # move the sliding window to the right
         for i in range(index, length):
+            set_list.remove(nums[i-index])
             if nums[i] in set_list:
                 return True
-            set_list.remove(nums[i-index])
             set_list.add(nums[i])
         return False
 
 s = Solution()
 print s.containsNearbyDuplicate([-1, -1], 1) # True
 print s.containsNearbyDuplicate([99, 99], 1) # True
+print s.containsNearbyDuplicate([1, 2, 1], 0) # False
 #+END_SRC
