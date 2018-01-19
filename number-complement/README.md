@@ -11,7 +11,7 @@ Given a positive integer, output its complement number. The complement strategy 
 
 Note:  
 The given integer is guaranteed to fit within the range of a 32-bit signed integer.  
-You could assume no leading zero bit in the integer’s binary representation.  
+You could assume no leading zero bit in the integer's binary representation.  
 
     Example 1:
     Input: 5
@@ -23,9 +23,11 @@ You could assume no leading zero bit in the integer’s binary representation.
     Output: 0
     Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-complement)  
+Blog link: <http://brain.dennyzhang.com/number-complement>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/number-complement/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

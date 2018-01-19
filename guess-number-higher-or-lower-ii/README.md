@@ -29,9 +29,11 @@ Example:
 
 Given a particular n >= 1, find out how much money you need to have to guarantee a win.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower-ii)  
+Blog link: <http://brain.dennyzhang.com/guess-number-higher-or-lower-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -39,8 +39,10 @@ Note: The length of path between two nodes is represented by the number of edges
 
 Note: The given binary tree has not more than 10000 nodes. The height of the tree is not more than 1000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-univalue-path)  
+Blog link: <http://brain.dennyzhang.com/longest-univalue-path>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/longest-univalue-path/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.

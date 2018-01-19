@@ -19,9 +19,11 @@ Example:
 Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)  
 Output: 7 -> 8 -> 0 -> 7  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Blog link: <http://brain.dennyzhang.com/add-two-numbers-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

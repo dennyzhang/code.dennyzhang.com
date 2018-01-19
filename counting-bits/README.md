@@ -18,9 +18,11 @@ Follow up:
 -   Space complexity should be O(n).
 -   Can you do it like a boss? Do it without using any builtin function like \_\_builtin\_popcount in c++ or in any other language.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/counting-bits)  
+Blog link: <http://brain.dennyzhang.com/counting-bits>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/counting-bits/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

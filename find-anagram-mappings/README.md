@@ -26,9 +26,11 @@ Note:
 1.  A, B have equal lengths in range [1, 100].
 2.  A[i], B[i] are integers in range [0, 10^5].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-anagram-mappings)  
+Blog link: <http://brain.dennyzhang.com/find-anagram-mappings>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/find-anagram-mappings/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -45,7 +47,7 @@ Leave me comments, if you know how to solve.
             ## Assumption: whether I can change B?
             length = len(A)
             selected_list = [0] * length
-            result = 
+            result = []
             for item in A:
                 # print("item: %d" % (item))
                 for i in xrange(length):

@@ -31,9 +31,11 @@ Given a non-empty array of integers, return the third maximum number in this arr
     Explanation: Note that the third maximum here means the third maximum distinct number.
     Both numbers with value 2 are both considered as second maximum.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/third-maximum-number)  
+Blog link: <http://brain.dennyzhang.com/third-maximum-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/third-maximum-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

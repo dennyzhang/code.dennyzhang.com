@@ -13,9 +13,11 @@ For example,
 Given s = "the sky is blue",  
 return "blue is sky the".  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-words-in-a-string)  
+Blog link: <http://brain.dennyzhang.com/reverse-words-in-a-string>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/reverse-words-in-a-string/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -32,7 +34,7 @@ Leave me comments, if you know how to solve.
             ## Complexity: Time O(n), Space O(1)
             # reverse
             s = s[::-1]
-            res = 
+            res = []
             for item in s.split(" "):
                 if item == "":
                     continue

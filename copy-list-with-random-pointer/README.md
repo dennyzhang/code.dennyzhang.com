@@ -11,9 +11,11 @@ A linked list is given such that each node contains an additional random pointer
 
 Return a deep copy of the list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/copy-list-with-random-pointer)  
+Blog link: <http://brain.dennyzhang.com/copy-list-with-random-pointer>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/copy-list-with-random-pointer/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -48,11 +50,10 @@ Leave me comments, if you know how to solve.
             ## duplicate the list
             p = head
             while p:
-                q = p.next
                 newNode = RandomListNode(p.label)
                 newNode.next = p.next
                 p.next = newNode
-                p = q
+                p = newNode.next
     
             ## copy the randome pointer
             ##   odd node is the original list

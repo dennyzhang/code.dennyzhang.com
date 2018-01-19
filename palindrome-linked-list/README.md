@@ -12,9 +12,11 @@ Given a singly linked list, determine if it is a palindrome.
 Follow up:  
 Could you do it in O(n) time and O(1) space?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-linked-list)  
+Blog link: <http://brain.dennyzhang.com/palindrome-linked-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/palindrome-linked-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

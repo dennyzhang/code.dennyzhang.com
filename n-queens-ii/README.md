@@ -11,9 +11,11 @@ Follow up for N-Queens problem.
 
 Now, instead outputting board configurations, return the total number of distinct solutions.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens-ii)  
+Blog link: <http://brain.dennyzhang.com/n-queens-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/n-queens-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -29,7 +31,7 @@ Leave me comments, if you know how to solve.
             """
             if n <= 0:
                 return 0
-            self.board =  * n
+            self.board = [] * n
             for i in xrange(n):
                 self.board.append(['.']*n)
             self.res = 0

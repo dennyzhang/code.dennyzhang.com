@@ -21,9 +21,11 @@ Note: Do not use any built-in library function such as sqrt.
     Input: 14
     Returns: False
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-perfect-square)  
+Blog link: <http://brain.dennyzhang.com/valid-perfect-square>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/valid-perfect-square/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

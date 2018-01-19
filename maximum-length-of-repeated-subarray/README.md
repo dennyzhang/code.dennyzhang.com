@@ -21,8 +21,10 @@ Note:
 -   1 <= len(A), len(B) <= 1000
 -   0 <= A[i], B[i] < 100
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-length-of-repeated-subarray)  
+Blog link: <http://brain.dennyzhang.com/maximum-length-of-repeated-subarray>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.

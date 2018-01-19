@@ -19,9 +19,11 @@ Excel Sheet Column Number
         AA -> 27
         AB -> 28
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-number)  
+Blog link: <http://brain.dennyzhang.com/excel-sheet-column-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/excel-sheet-column-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

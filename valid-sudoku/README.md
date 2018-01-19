@@ -16,9 +16,11 @@ A partially filled sudoku which is valid.
 Note:  
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Blog link: <http://brain.dennyzhang.com/valid-sudoku>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -59,7 +61,7 @@ Leave me comments, if you know how to solve.
                         array_check[index] = True
     
             # check each section
-            start_node_list = 
+            start_node_list = []
             for i in [0, 3, 6]:
                 for j in [0, 3, 6]:
                     start_node_list.append((i, j))

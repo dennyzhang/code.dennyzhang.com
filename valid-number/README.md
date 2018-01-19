@@ -18,9 +18,11 @@ Some examples:
 
 Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-number)  
+Blog link: <http://brain.dennyzhang.com/valid-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -19,9 +19,11 @@ You may assume the string contains only lowercase alphabets.
 Follow up:  
 What if the inputs contain unicode characters? How would you adapt your solution to such case?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-anagram)  
+Blog link: <http://brain.dennyzhang.com/valid-anagram>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/valid-anagram/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

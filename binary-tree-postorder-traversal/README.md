@@ -21,9 +21,11 @@ For example:
 
 Note: Recursive solution is trivial, could you do it iteratively?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-postorder-traversal>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -40,8 +42,8 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: List[int]
             """
-            res = 
-            stack = 
+            res = []
+            stack = []
             p = root
             # element: pointer, whether_visited_right
             while p:
@@ -69,7 +71,7 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: List[int]
             """
-            res = 
+            res = []
             self.postorderTraversalRec(root, res)
             return res
     

@@ -7,7 +7,7 @@ N-Queens
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.  
+The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
 
 Given an integer n, return all distinct solutions to the n-queens puzzle.  
 
@@ -28,9 +28,11 @@ Each solution contains a distinct board configuration of the n-queens' placement
       ".Q.."]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Blog link: <http://brain.dennyzhang.com/n-queens>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -48,17 +50,17 @@ Leave me comments, if you know how to solve.
             if n <= 0:
                 return None
     
-            self.board = 
+            self.board = []
             for i in xrange(n):
                 self.board.append(['.']*n)
     
-            self.res = 
+            self.res = []
             self.mySolveNQueens(n, 0)
             return self.res
     
         def mySolveNQueens(self, n, irow):
             if irow == n:
-                item = 
+                item = []
                 for row in self.board:
                     item.append(''.join(row))
                 self.res.append(item)

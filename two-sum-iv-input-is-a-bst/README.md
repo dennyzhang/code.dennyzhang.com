@@ -33,9 +33,11 @@ Given a Binary Search Tree and a target number, return true if there exist two e
     
     Output: False
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-iv-input-is-a-bst)  
+Blog link: <http://brain.dennyzhang.com/two-sum-iv-input-is-a-bst>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -78,11 +80,11 @@ Leave me comments, if you know how to solve.
             :rtype: list
             """
             if root is None:
-                return 
+                return []
             if root.left is None and root.right is None:
                 return [root.val]
     
-            res = 
+            res = []
             if root.left:
                 res = self._convertBST2Array(root.left) + res
             res = res + [root.val]
