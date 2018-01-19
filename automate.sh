@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-working_dir=${1?}
-
 function refresh_Link() {
+    echo "refresh link"
     for f in $(find . -name README.org); do
         dirname=$(basename $(dirname $f))
         if ! grep "brain.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
@@ -24,5 +23,24 @@ function refresh_Link() {
     done
 }
 
-cd $working_dir
-refresh_Link
+function refresh_md() {
+    echo "refresh README.md"
+    for f in $(find . -name README.org); do
+        dirname=$(basename $(dirname $f))
+    done
+}
+
+cd .
+
+action=${1?}
+case "$action" in 
+    refresh_Link)
+        refresh_Link
+        ;;
+    refresh_md)
+        refresh_md
+        ;;
+        *) 
+            echo "no matched action"
+            ;;
+esac
