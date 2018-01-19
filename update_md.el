@@ -1,3 +1,4 @@
+;; https://github.com/DennyZhang/challenges-leetcode-interesting/blob/master/automate.sh
 ;; bash ./automate.sh update_md
 (progn
   (add-to-list 'load-path "/Applications/Emacs.app/Contents/Resources/lisp/emacs-lisp")
