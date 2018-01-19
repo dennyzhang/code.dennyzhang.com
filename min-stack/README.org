@@ -26,9 +26,11 @@ minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/min-stack
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/min-stack][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/min-stack/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/min-stack/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -33,9 +33,11 @@ Output: True
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 
+Blog link: http://brain.dennyzhang.com/repeated-substring-pattern
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/repeated-substring-pattern/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/repeated-substring-pattern/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -49,4 +51,4 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/find-duplicate-num/][Leetcode: Find the Duplicate Number]]
+- [[http://brain.dennyzhang.com/repeated-substring-pattern

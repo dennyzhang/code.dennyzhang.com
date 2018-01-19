@@ -21,9 +21,11 @@ For example:
     28 -> AB
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/excel-sheet-column-title
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-title][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/excel-sheet-column-title/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/excel-sheet-column-title/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -21,9 +21,11 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4smu][challenges-leetcode-interesting]]
+Blog link: http://brain.dennyzhang.com/4sum
 
-Credits To: [[url-external:https://leetcode.com/problems/4smu/description/][Leetcode.com]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4sum][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/4sum/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

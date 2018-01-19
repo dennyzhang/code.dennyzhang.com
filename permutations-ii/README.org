@@ -18,9 +18,11 @@ For example,
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+Blog link: http://brain.dennyzhang.com/permutations-ii
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutations-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/permutations-ii/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

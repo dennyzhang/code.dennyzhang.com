@@ -32,11 +32,11 @@ Output: False
 Explanation: You can't get a non-decreasing array by modify at most one element.
 Note: The n belongs to [1, 10,000].
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/non-decreasing-array
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-decreasing-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/non-decreasing-array/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/non-decreasing-array/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -96,4 +96,4 @@ if __name__ == '__main__':
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/guess-high-low/][Leetcode: Guess Number Higher or Lower]]
+- [[http://brain.dennyzhang.com/non-decreasing-array

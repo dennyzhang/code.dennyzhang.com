@@ -17,9 +17,11 @@ You should return the indices: [0,9].
 (order does not matter).
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/substring-with-concatenation-of-all-words
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/substring-with-concatenation-of-all-words][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/substring-with-concatenation-of-all-words/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

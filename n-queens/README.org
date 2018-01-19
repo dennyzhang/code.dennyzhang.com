@@ -32,9 +32,11 @@ There exist two distinct solutions to the 4-queens puzzle:
 ]
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/n-queens
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/n-queens/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/n-queens/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

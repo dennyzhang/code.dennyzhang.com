@@ -27,11 +27,11 @@ n = 10, I pick 6.
 Return 6.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/guess-number-higher-or-lower
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/guess-number-higher-or-lower/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/guess-number-higher-or-lower/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

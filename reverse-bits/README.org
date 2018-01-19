@@ -14,9 +14,11 @@ For example, given input 43261596 (represented in binary as 00000010100101000001
 Follow up:
 If this function is called many times, how would you optimize it?
 
+Blog link: http://brain.dennyzhang.com/reverse-bits
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-bits][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/reverse-bits/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/reverse-bits/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

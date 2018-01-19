@@ -12,9 +12,11 @@ Given an array of integers, every element appears twice except for one. Find tha
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
+Blog link: http://brain.dennyzhang.com/single-number
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-number/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/single-number/description][leetcode.com]]
 #+BEGIN_SRC python
 class Solution(object):
     def singleNumber(self, nums):
@@ -36,6 +38,6 @@ if __name__ == '__main__':
 Leave me comments, if you know how to solve.
 
 More Reading:
-- [[http://brain.dennyzhang.com/single-number-ii/][Leetcode: Leetcode: Single Number II]]
-- [[http://brain.dennyzhang.com/find-duplicate-num/][Leetcode: Find the Duplicate Number]]
-- [[http://brain.dennyzhang.com/find-disappeared/][Leetcode: Find All Numbers Disappeared in an Array]]
+- [[http://brain.dennyzhang.com/single-number
+- [[http://brain.dennyzhang.com/single-number
+- [[http://brain.dennyzhang.com/single-number

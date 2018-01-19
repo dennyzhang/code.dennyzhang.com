@@ -21,9 +21,11 @@ For example, given the following triangle
 
 The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
 
+Blog link: http://brain.dennyzhang.com/triangle
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/triangle][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/triangle/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/triangle/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -93,4 +95,4 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/triangle-number/][Leetcode: Valid Triangle Number]]
+- [[http://brain.dennyzhang.com/triangle

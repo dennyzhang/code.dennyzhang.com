@@ -30,9 +30,11 @@ Output: False
 
 Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.
 
+Blog link: http://brain.dennyzhang.com/detect-capital
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/detect-capital][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/detect-capital/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/detect-capital/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

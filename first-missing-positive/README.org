@@ -17,11 +17,11 @@ and [3,4,-1,1] return 2.
 
 Your algorithm should run in O(n) time and uses constant space.
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/first-missing-positive
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/first-missing-positive/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/first-missing-positive/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -66,4 +66,4 @@ print s.firstMissingPositive([3,4,-1,1])
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/find-disappeared/][Leetcode: Find All Numbers Disappeared in an Array]]
+- [[http://brain.dennyzhang.com/first-missing-positive

@@ -22,9 +22,11 @@ Input: "LL"
 Output: false
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/judge-route-circle
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/judge-route-circle][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/judge-route-circle/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/judge-route-circle/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

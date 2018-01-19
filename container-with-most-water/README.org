@@ -11,9 +11,11 @@ Given n non-negative integers a1, a2, ..., an, where each represents a point at 
 
 Note: You may not slant the container and n is at least 2.
 
+Blog link: http://brain.dennyzhang.com/container-with-most-water
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/container-with-most-water][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/container-with-most-water/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/container-with-most-water/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -27,5 +29,5 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/poor-pigs/][Leetcode: Poor Pigs]]
-- [[http://brain.dennyzhang.com/tag/kids/][Kids Puzzles]]
+- [[http://brain.dennyzhang.com/container-with-most-water
+- [[http://brain.dennyzhang.com/container-with-most-water

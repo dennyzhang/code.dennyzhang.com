@@ -40,9 +40,11 @@ After calling your function, the tree should look like:
     4->5->6->7 -> NULL
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

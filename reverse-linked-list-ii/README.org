@@ -18,11 +18,11 @@ Note:
 Given m, n satisfy the following condition:
 1 <= m <= n <= length of list.
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/reverse-linked-list-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/reverse-linked-list-ii/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/reverse-linked-list-ii/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -23,11 +23,11 @@ might overflow. How would you handle such case?
 There is a more generic way of solving this problem.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/palindrome-number
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/palindrome-number/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/palindrome-number/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

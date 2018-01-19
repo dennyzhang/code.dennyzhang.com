@@ -36,11 +36,11 @@ Note:
 - String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).
 - String S is non-empty.
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/license-key-formatting
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/license-key-formatting][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/license-key-formatting/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/license-key-formatting/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

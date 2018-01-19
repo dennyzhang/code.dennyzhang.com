@@ -11,9 +11,11 @@ Given an array of size n, find the majority element. The majority element is the
 
 You may assume that the array is non-empty and the majority element always exist in the array.
 
+Blog link: http://brain.dennyzhang.com/majority-element
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/majority-element/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -32,4 +34,4 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/two-sum/][Leetcode: Two Sum]]
+- [[http://brain.dennyzhang.com/majority-element

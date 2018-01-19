@@ -16,9 +16,11 @@ Given 1->2->3->4->5->NULL and k = 2,
 return 4->5->1->2->3->NULL.
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/rotate-list
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-list][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/rotate-list/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/rotate-list/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

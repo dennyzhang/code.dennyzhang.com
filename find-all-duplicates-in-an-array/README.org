@@ -22,11 +22,11 @@ Output:
 [2,3]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/find-all-duplicates-in-an-array
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-duplicates-in-an-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-all-duplicates-in-an-array/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/find-all-duplicates-in-an-array/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -63,4 +63,4 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/find-duplicate/][Leetcode: Find All Duplicates in an Array]]
+- [[http://brain.dennyzhang.com/find-all-duplicates-in-an-array

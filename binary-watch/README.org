@@ -26,9 +26,11 @@ Note:
 - The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
 - The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
 
+Blog link: http://brain.dennyzhang.com/binary-watch
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-watch][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-watch/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/binary-watch/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -19,9 +19,11 @@ Given nums = [3,2,2,3], val = 3,
 
 Your function should return length = 2, with the first two elements of nums being 2.
 
+Blog link: http://brain.dennyzhang.com/remove-element
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-element][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/remove-element/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/remove-element/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

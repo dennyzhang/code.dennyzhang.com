@@ -40,9 +40,11 @@ or
 7 -> 6 -> 3 -> 2 -> 1
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/integer-replacement
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-replacement][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/integer-replacement/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/integer-replacement/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

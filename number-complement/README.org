@@ -26,9 +26,11 @@ Output: 0
 Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/number-complement
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-complement][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/number-complement/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/number-complement/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

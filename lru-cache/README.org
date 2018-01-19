@@ -30,11 +30,11 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/lru-cache
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lru-cache][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/lru-cache/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/lru-cache/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -16,11 +16,11 @@ Return 3, because by repeating A three times ("abcdabcdabcd"), B is a substring 
 Note:
 The length of A and B will be between 1 and 10000.
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/repeated-string-match
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-string-match][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/repeated-string-match/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/repeated-string-match/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

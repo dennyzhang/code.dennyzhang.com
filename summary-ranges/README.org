@@ -25,7 +25,7 @@ Blog link: http://brain.dennyzhang.com/summary-ranges
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/summary-ranges][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/summary-ranges/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/summary-ranges/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

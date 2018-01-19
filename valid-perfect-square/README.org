@@ -24,9 +24,11 @@ Input: 14
 Returns: False
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/valid-perfect-square
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-perfect-square][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/valid-perfect-square/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/valid-perfect-square/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

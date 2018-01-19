@@ -60,11 +60,11 @@ Note:
 - letters consists of lowercase letters, and contains at least 2 unique letters.
 - target is a lowercase letter.
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/find-smallest-letter-greater-than-target
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-smallest-letter-greater-than-target][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/find-smallest-letter-greater-than-target/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

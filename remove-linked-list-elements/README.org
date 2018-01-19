@@ -13,9 +13,11 @@ Example
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
 Return: 1 --> 2 --> 3 --> 4 --> 5
 
+Blog link: http://brain.dennyzhang.com/remove-linked-list-elements
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-linked-list-elements][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/remove-linked-list-elements/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/remove-linked-list-elements/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

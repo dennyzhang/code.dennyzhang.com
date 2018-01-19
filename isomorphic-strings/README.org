@@ -25,9 +25,11 @@ Given "paper", "title", return true.
 Note:
 You may assume both s and t have the same length.
 
+Blog link: http://brain.dennyzhang.com/isomorphic-strings
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/isomorphic-strings][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/isomorphic-strings/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/isomorphic-strings/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -14,9 +14,11 @@ For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,
 Note:
 Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
 
+Blog link: http://brain.dennyzhang.com/rotate-array
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/rotate-array/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/rotate-array/description][leetcode.com]]
 
 Hint: Time O(n), Space O(1)
 
@@ -42,5 +44,5 @@ if __name__ == '__main__':
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/bitwise-and/][Leetcode: Bitwise AND of Numbers Range]]
-- [[http://brain.dennyzhang.com/find-duplicate-num/][Leetcode: Find the Duplicate Number]]
+- [[http://brain.dennyzhang.com/rotate-array
+- [[http://brain.dennyzhang.com/rotate-array

@@ -13,9 +13,11 @@ Empty cells are indicated by the character '.'.
 
 You may assume that there will be only one unique solution.
 
+Blog link: http://brain.dennyzhang.com/sudoku-solver
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sudoku-solver][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/sudoku-solver/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/sudoku-solver/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

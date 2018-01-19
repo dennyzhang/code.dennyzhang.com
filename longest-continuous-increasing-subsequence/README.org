@@ -25,11 +25,11 @@ Explanation: The longest continuous increasing subsequence is [2], its length is
 #+END_EXAMPLE
 Note: Length of the array will not exceed 10,000.
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/longest-continuous-increasing-subsequence
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-continuous-increasing-subsequence][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/longest-continuous-increasing-subsequence/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

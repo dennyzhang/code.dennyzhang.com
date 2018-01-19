@@ -20,9 +20,11 @@ For example, given n = 3, a solution set is:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+Blog link: http://brain.dennyzhang.com/generate-parentheses
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/generate-parentheses][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/generate-parentheses/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

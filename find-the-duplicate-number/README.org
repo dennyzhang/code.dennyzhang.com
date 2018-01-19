@@ -15,9 +15,11 @@ Note:
 - Your runtime complexity should be less than O(n*n).
 - There is only one duplicate number in the array, but it could be repeated more than once.
 
+Blog link: http://brain.dennyzhang.com/find-the-duplicate-number
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-duplicate-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-the-duplicate-number/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/find-the-duplicate-number/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -66,4 +68,4 @@ print s.findDuplicate([1,3,4,2,1])
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/find-duplicate/][Leetcode: Find All Duplicates in an Array]]
+- [[http://brain.dennyzhang.com/find-the-duplicate-number

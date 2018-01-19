@@ -35,11 +35,11 @@ You have 3 cookies and their sizes are big enough to gratify all of the children
 You need to output 2.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/assign-cookies
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/assign-cookies][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/assign-cookies/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/assign-cookies/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -77,4 +77,4 @@ print s.findContentChildren([1,2], [1,2,3]) # 2
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/tag/kids/][Kids Puzzles]]
+- [[http://brain.dennyzhang.com/assign-cookies

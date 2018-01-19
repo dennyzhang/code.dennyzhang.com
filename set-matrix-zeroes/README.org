@@ -15,9 +15,11 @@ Follow up:
 - A simple improvement uses O(m + n) space, but still not the best solution.
 - Could you devise a constant space solution?
 
+Blog link: http://brain.dennyzhang.com/set-matrix-zeroes
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/set-matrix-zeroes/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/set-matrix-zeroes/description][leetcode.com]]
 
 Hint:
 
@@ -69,4 +71,4 @@ print matrix
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]
+- [[http://brain.dennyzhang.com/set-matrix-zeroes

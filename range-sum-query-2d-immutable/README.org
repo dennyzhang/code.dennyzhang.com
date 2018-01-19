@@ -32,9 +32,11 @@ Note:
 - There are many calls to sumRegion function.
 - You may assume that row1 <= row2 and col1 <= col2.
 
+Blog link: http://brain.dennyzhang.com/range-sum-query-2d-immutable
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-2d-immutable][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-2d-immutable/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-2d-immutable/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

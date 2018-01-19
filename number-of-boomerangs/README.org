@@ -22,9 +22,11 @@ Explanation:
 The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/number-of-boomerangs
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-boomerangs][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/number-of-boomerangs/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/number-of-boomerangs/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

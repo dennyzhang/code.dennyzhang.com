@@ -27,11 +27,13 @@ Input: "PPALLL"
 Output: False
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/student-attendance-record-i
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-i/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-i/description][leetcode.com]]
 
-Useful link: [[url-external:https://leetcode.com/problems/student-attendance-record-i/discuss/101556/][here]]
+Useful link: [[url-external:https://leetcode.com/problems/student-attendance-record-i/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -94,4 +96,4 @@ print s.checkRecord('PPALLP')
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/majority-element/][Leetcode: Majority Element]]
+- [[http://brain.dennyzhang.com/student-attendance-record-i

@@ -19,9 +19,11 @@ Follow up:
 - Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
 
 
+Blog link: http://brain.dennyzhang.com/counting-bits
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/counting-bits][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/counting-bits/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/counting-bits/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

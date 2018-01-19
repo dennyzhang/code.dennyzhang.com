@@ -25,9 +25,11 @@ Note:
 1. The length of the given array won't exceed 1000.
 - The integers in the given array are in the range of [0, 1000].
 
+Blog link: http://brain.dennyzhang.com/valid-triangle-number
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-triangle-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/valid-triangle-number/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/valid-triangle-number/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -73,4 +75,4 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/triangle/][Leetcode: Triangle]]
+- [[http://brain.dennyzhang.com/valid-triangle-number

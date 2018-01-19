@@ -22,9 +22,11 @@ return [3,2,1].
 
 Note: Recursive solution is trivial, could you do it iteratively?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+Blog link: http://brain.dennyzhang.com/binary-tree-postorder-traversal
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-postorder-traversal][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/binary-tree-postorder-traversal/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

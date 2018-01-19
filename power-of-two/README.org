@@ -9,9 +9,11 @@ Given an integer, write a function to determine if it is a power of two.
 ---------------------------------------------------------------------
 Given an integer, write a function to determine if it is a power of two.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+Blog link: http://brain.dennyzhang.com/power-of-two
 
-Credits To: [[url-external:https://leetcode.com/problems/power-of-two/description/][Leetcode.com]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/power-of-two][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/power-of-two/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

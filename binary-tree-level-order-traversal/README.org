@@ -25,11 +25,11 @@ return its level order traversal as:
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/majority-element-ii
+Blog link: http://brain.dennyzhang.com/binary-tree-level-order-traversal
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-level-order-traversal][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-tree-level-order-traversal/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/binary-tree-level-order-traversal/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

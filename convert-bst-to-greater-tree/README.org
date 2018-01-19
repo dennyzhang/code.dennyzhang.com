@@ -23,9 +23,11 @@ Output: The root of a Greater Tree like this:
           20     13
 #+END_EXAMPLE
 
+Blog link: http://brain.dennyzhang.com/convert-bst-to-greater-tree
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-bst-to-greater-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/convert-bst-to-greater-tree/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/convert-bst-to-greater-tree/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

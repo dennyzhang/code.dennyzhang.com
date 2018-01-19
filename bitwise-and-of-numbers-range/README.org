@@ -11,9 +11,11 @@ Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of 
 
 For example, given the range [5, 7], you should return 4.
 
+Blog link: http://brain.dennyzhang.com/bitwise-and-of-numbers-range
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bitwise-and-of-numbers-range][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/bitwise-and-of-numbers-range/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/bitwise-and-of-numbers-range/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
@@ -64,4 +66,4 @@ class Solution(object):
 #+END_SRC
 
 More Reading:
-- [[http://brain.dennyzhang.com/guess-high-low/][Leetcode: Guess Number Higher or Lower]]
+- [[http://brain.dennyzhang.com/bitwise-and-of-numbers-range

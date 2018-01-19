@@ -9,9 +9,11 @@ Search for a Range
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
+Blog link: http://brain.dennyzhang.com/search-for-a-range
+
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-for-a-range][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/search-for-a-range/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/search-for-a-range/description][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
