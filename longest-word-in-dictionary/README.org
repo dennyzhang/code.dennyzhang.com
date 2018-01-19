@@ -41,5 +41,60 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-word-in-diction
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: trie tree
+## Complexity: Time O(n), Space O(n). n the count of characters involved
+class TrieNode(object):
+    def __init__(self):
+        self.children = collections.defaultdict(TrieNode)
+        self.is_word = False
+    
+class Solution(object):
+    def longestWord(self, words):
+        """
+        :type words: List[str]
+        :rtype: str
+        """
+        # Build TrieNode
+        root = TrieNode()
+        # check each word, and insert if missing
+        for word in words:
+            # always check from the top
+            node = root
+            for ch in word:
+                node = node.children[ch]
+            node.is_word = True
 
+        return self.foundLongestWord(root)
+
+    def foundLongestWord(self, node):
+        """
+        :rtype: (length, str)
+        """
+        # BFS:
+        # How to check:
+        #    Candidates should be: 
+        #             1. is_word as true for all nodes in the path. 
+        #             2. Has no children
+        # How to move to next:
+        #   Only check nodes with is_word as True
+        #   When node has no children, we 
+        max_length, max_str = 0, ''
+        queue = []
+        # initialize queue
+        # Since we have sorted the keys, we will get smallest lexicographical match
+        for ch in sorted(node.children):
+            child = node.children[ch]
+            if child.is_word:
+                queue.append((child, ch, 1))
+
+        while len(queue) != 0:
+            (node, str, length) = queue[0]
+            del queue[0]
+            if length > max_length:
+                max_length, max_str = length, str
+            for ch in sorted(node.children):
+                child = node.children[ch]
+                if child.is_word:
+                    queue.append((child, '%s%s' % (str, ch), length+1))
+        return max_str
 #+END_SRC
