@@ -17,11 +17,13 @@ You should try to do it in place. The program should run in O(1) space complexit
 
 Note:  
 -   The relative order inside both the even and odd groups should remain as it was in the input.
--   The first node is considered odd, the second node even and so on ...
+-   The first node is considered odd, the second node even and so on &#x2026;
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/odd-even-linked-list)  
+Blog link: <http://brain.dennyzhang.com/odd-even-linked-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/odd-even-linked-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

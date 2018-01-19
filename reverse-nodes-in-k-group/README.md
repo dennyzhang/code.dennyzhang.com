@@ -22,9 +22,11 @@ Only constant memory is allowed.
     
     For k = 3, you should return: 3->2->1->4->5
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-nodes-in-k-group)  
+Blog link: <http://brain.dennyzhang.com/reverse-nodes-in-k-group>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

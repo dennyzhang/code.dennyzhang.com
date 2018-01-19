@@ -17,9 +17,11 @@ A mapping of digit to letters (just like on the telephone buttons) is given belo
 Note:  
 Although the above answer is in lexicographical order, your answer could be in any order you want.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/letter-combinations-of-a-phone-number)  
+Blog link: <http://brain.dennyzhang.com/letter-combinations-of-a-phone-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -36,7 +38,7 @@ Leave me comments, if you know how to solve.
             ch_dict = {"1":"", "2":"abc", "3":"def", 
                        "4":"ghi", "5":"jkl", "6":"mno",
                        "7":"pqrs", "8":"tuv", "9":"wxyz", "0":""}
-            res = 
+            res = []
             for digit in digits:
                 # print("digit:%s. res: %s" % (digit, res))
                 ch_list = ch_dict[digit]
@@ -44,7 +46,7 @@ Leave me comments, if you know how to solve.
                     for ch in ch_list:
                         res.append(ch)
                 else:
-                    item_list = 
+                    item_list = []
                     for ch in ch_list:
                         for item in res:   
                             item = "%s%s" % (item, ch)

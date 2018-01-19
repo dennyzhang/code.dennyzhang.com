@@ -7,7 +7,7 @@ Pair elements
 
 ---
 
-Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.  
+Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), &#x2026;, (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.  
 
     Example 1:
     Input: [1,4,3,2]
@@ -19,9 +19,11 @@ Note:
 -   n is a positive integer, which is in the range of [1, 10000].
 -   All the integers in the array will be in the range of [-10000, 10000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/array-partition-i)  
+Blog link: <http://brain.dennyzhang.com/array-partition-i>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/array-partition-i/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

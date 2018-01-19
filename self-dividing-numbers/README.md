@@ -24,9 +24,11 @@ Note:
 
 The boundaries of each input argument are 1 <= left <= right <= 10000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/self-dividing-numbers)  
+Blog link: <http://brain.dennyzhang.com/self-dividing-numbers>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/self-dividing-numbers/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

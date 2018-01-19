@@ -11,9 +11,11 @@ Write a function to delete a node (except the tail) in a singly linked list, giv
 
 Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-node-in-a-linked-list)  
+Blog link: <http://brain.dennyzhang.com/delete-node-in-a-linked-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

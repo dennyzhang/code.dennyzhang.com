@@ -14,15 +14,17 @@ Return the minimum cuts needed for a palindrome partitioning of s.
 For example, given s = "aab",  
 Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-partitioning-ii)  
+Blog link: <http://brain.dennyzhang.com/palindrome-partitioning-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/palindrome-partitioning-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
+Useful link: here  
 
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
@@ -38,7 +40,7 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
             """
             length = len(nums)
             if length == 0:
-                return 
+                return []
             n1, n2 = None, None
             c1, c2 = 0, 0
             for num in nums:
@@ -59,7 +61,7 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
                 elif num == n2:
                     c2 += 1
             # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
+            res = []
             if c1 > length/3:
                 res.append(n1)
             if c2 > length/3:
@@ -73,4 +75,4 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
     # print s.majorityElement([1, 2, 3, 2, 3, 3])
 
 More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+-   [[<http://brain.dennyzhang.com/palindrome-partitioning-ii>

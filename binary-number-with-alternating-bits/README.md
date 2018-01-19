@@ -33,9 +33,11 @@ Given a positive integer, check whether it has alternating bits: namely, if two 
     Explanation:
     The binary representation of 10 is: 1010.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-number-with-alternating-bits)  
+Blog link: <http://brain.dennyzhang.com/binary-number-with-alternating-bits>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-number-with-alternating-bits/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

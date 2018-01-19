@@ -38,9 +38,11 @@ The null node needs to be represented by empty parenthesis pair "()". And you ne
     Explanation: Almost the same as the first example, 
     except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-string-from-binary-tree)  
+Blog link: <http://brain.dennyzhang.com/construct-string-from-binary-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/construct-string-from-binary-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

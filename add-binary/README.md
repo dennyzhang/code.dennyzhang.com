@@ -14,9 +14,11 @@ a = "11"
 b = "1"  
 Return "100".  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-binary)  
+Blog link: <http://brain.dennyzhang.com/add-binary>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/add-binary/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -46,7 +48,7 @@ Leave me comments, if you know how to solve.
                         raise Exception("Invalid output")
     
             # print("val1: %s, val2: %s" % (val1, val2))
-            l = 
+            l = []
             val = val1 + val2
             if val == 0:
                 return "0"

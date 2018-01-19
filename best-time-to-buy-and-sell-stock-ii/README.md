@@ -11,9 +11,11 @@ Say you have an array for which the ith element is the price of a given stock on
 
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/best-time-to-buy-and-sell-stock-ii)  
+Blog link: <http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
     ## Basic Ideas:
     ## Complexity:

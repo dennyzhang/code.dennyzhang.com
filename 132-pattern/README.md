@@ -1,54 +1,71 @@
-# Leetcode: Guess Number Higher or Lower     :BLOG:Amusing:
+# Leetcode: 132 Pattern     :BLOG:Medium:
 
 
 ---
 
-Guess number quickly  
+Check whether 132 pattern exists in the given array  
 
 ---
 
-We are playing the Guess Game. The game is as follows:  
+Given a sequence of n integers a1, a2, &#x2026;, an, a 132 pattern is a subsequence ai, aj, ak such that i < j < k and ai < ak < aj. Design an algorithm that takes a list of n numbers as input and checks whether there is a 132 pattern in the list.  
 
-I pick a number from 1 to n. You have to guess which number I picked.  
+Note: n will be less than 15,000.  
 
-Every time you guess wrong, I'll tell you whether the number is higher or lower.  
-
-You call a pre-defined API guess(int num) which returns 3 possible results (-1, 1, or 0):  
-
-    -1 : My number is lower
-     1 : My number is higher
-     0 : Congrats! You got it!
-
-Example:  
-
-    n = 10, I pick 6.
+    Example 1:
+    Input: [1, 2, 3, 4]
     
-    Return 6.
+    Output: False
+    
+    Explanation: There is no 132 pattern in the sequence.
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower/description/)  
+    Example 2:
+    Input: [3, 1, 4, 2]
+    
+    Output: True
+    
+    Explanation: There is a 132 pattern in the sequence: [1, 4, 2].
+
+    Example 3:
+    Input: [-1, 3, 2, 0]
+    
+    Output: True
+    
+    Explanation: There are three 132 patterns in the sequence: [-1, 3, 2], [-1, 3, 0] and [-1, 2, 0].
+
+Blog link: <http://brain.dennyzhang.com/132-pattern>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+Hints:  
+
+    ## Basic Ideas: There should be one rise. After that, there should be one drop.
+    ## Complexity: Time O(n), Space O(1)
+    ## Scenario: sell sock at a high price
+
     class Solution(object):
-        def checkPerfectNumber(self, num):
+        def find132pattern(self, nums):
             """
-            :type num: int
+            :type nums: List[int]
             :rtype: bool
             """
-            ## Idea: sqrt(num)
-            ## Complexity:
-            ## Sample Data:
-            ##    1 2 7
-            if num <= 1:
+            length = len(nums)
+            if length < 3:
                 return False
-            import math
-            sum = 1
-            for i in range(2, int(math.sqrt(num))+1):
-                if num % i == 0:
-                    sum += i
-                    if i != num/i:
-                        sum += num/i
-            return sum == num
-
-More Reading:  
--   [Kids Puzzles](http://brain.dennyzhang.com/tag/kids/)
+            has_rise, has_drop = False, False
+            for i in range(1, length):
+                if nums[i] > nums[i-1]:
+                    has_rise = True
+                if has_rise and nums[i] < nums[i-1]:
+                    has_drop = True
+                if has_rise and has_drop:
+                    return True
+            return has_rise and has_drop
+    
+    s = Solution()
+    print s.find132pattern([1, 2, 3, 4])
+    print s.find132pattern([3, 1, 4, 2])
+    print s.find132pattern([-1, 3, 2, 0])

@@ -14,9 +14,11 @@ Given "25525511135",
 
 return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/restore-ip-addresses)  
+Blog link: <http://brain.dennyzhang.com/restore-ip-addresses>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/restore-ip-addresses/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -36,14 +38,14 @@ Leave me comments, if you know how to solve.
             :rtype: List[str]
             """
             if s == "":
-                return 
+                return []
             if separate_count == 1:
                 if self._isValid(s):
                     return [s]
                 else:
-                    return 
+                    return []
     
-            res = 
+            res = []
     
             cur_segement = s[:1]
             if self._isValid(cur_segement):

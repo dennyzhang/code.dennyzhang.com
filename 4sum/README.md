@@ -20,9 +20,11 @@ Note: The solution set must not contain duplicate quadruplets.
       [-2,  0, 0, 2]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4smu)  
+Blog link: <http://brain.dennyzhang.com/4sum>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/4smu/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -37,7 +39,7 @@ Leave me comments, if you know how to solve.
             ## Complexity: Time O(n*n*n), Space O(1)
             ## Sample Data:
             nums.sort()
-            res = 
+            res = []
             for i in xrange(len(nums)-3):
                 if i>0 and nums[i] == nums[i-1]:
                     continue

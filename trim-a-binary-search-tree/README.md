@@ -43,9 +43,11 @@ Given a binary search tree and the lowest and highest boundaries as L and R, tri
       /
      1
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trim-a-binary-search-tree)  
+Blog link: <http://brain.dennyzhang.com/trim-a-binary-search-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/trim-a-binary-search-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

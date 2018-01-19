@@ -30,9 +30,11 @@ Note:
 The sum of node values in any subtree won't exceed the range of 32-bit integer.  
 All the tilt values won't exceed the range of 32-bit integer.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-tilt)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-tilt>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-tree-tilt/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

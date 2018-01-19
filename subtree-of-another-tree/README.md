@@ -39,9 +39,11 @@ Given two non-empty binary trees s and t, check whether tree t has exactly the s
      1   2
     Return false.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subtree-of-another-tree)  
+Blog link: <http://brain.dennyzhang.com/subtree-of-another-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/subtree-of-another-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

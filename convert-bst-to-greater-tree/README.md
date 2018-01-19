@@ -21,9 +21,11 @@ Given a Binary Search Tree (BST), convert it to a Greater Tree such that every k
                 /   \
               20     13
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-bst-to-greater-tree)  
+Blog link: <http://brain.dennyzhang.com/convert-bst-to-greater-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/convert-bst-to-greater-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -51,7 +53,7 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: TreeNode
             """
-            stack = 
+            stack = []
             p = root
             while p:
                 stack.append(p)

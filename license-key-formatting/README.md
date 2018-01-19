@@ -33,9 +33,11 @@ Note:
 2.  String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).
 3.  String S is non-empty.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/license-key-formatting)  
+Blog link: <http://brain.dennyzhang.com/license-key-formatting>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/license-key-formatting/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -15,9 +15,11 @@ Example:
     
     return 4->5->1->2->3->NULL.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-list)  
+Blog link: <http://brain.dennyzhang.com/rotate-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/rotate-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

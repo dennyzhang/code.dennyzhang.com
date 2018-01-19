@@ -62,9 +62,11 @@ The width of one level is defined as the length between the end-nodes (the leftm
 
 Note: Answer will in the range of 32-bit signed integer.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Blog link: <http://brain.dennyzhang.com/maximum-width-of-binary-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -93,7 +95,7 @@ Leave me comments, if you know how to solve.
             ##        6           7
             if root is None:
                 return 0
-            queue = 
+            queue = []
             max_width = -1
             queue.append((root, 0))
             while len(queue) != 0:

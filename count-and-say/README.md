@@ -33,9 +33,11 @@ Note: Each term of the sequence of integers will be represented as a string.
     Input: 4
     Output: "1211"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-and-say)  
+Blog link: <http://brain.dennyzhang.com/count-and-say>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/count-and-say/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

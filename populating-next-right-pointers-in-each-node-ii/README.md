@@ -29,9 +29,11 @@ You may only use constant extra space.
          / \    \
         4-> 5 -> 7 -> NULL
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node-ii)  
+Blog link: <http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

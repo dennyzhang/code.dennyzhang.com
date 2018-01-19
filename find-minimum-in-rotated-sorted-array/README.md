@@ -15,13 +15,15 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-minimum-in-rotated-sorted-array)  
+Blog link: <http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Ideas: Binary search
+    ## Basic Ideas: Binary search: find the first negative
     ##              Compare all values with the first element
     ##              If bigger, consider it as 1. Otherwise -1
     ##              The first -1 is the mininum element we want to find.
@@ -38,16 +40,27 @@ Leave me comments, if you know how to solve.
                 return None
             if length == 1:
                 return nums[0]
+    
             left, right = 1, length - 1
             while left <= right:
                 mid = left + (right-left)/2
                 v = nums[mid] - nums[0]
                 if v > 0:
+                    # right part
                     left = mid + 1
                 else:
                     # since no duplicate, v must be negative now
-                    right = mid - 1
-            return nums[mid] if nums[mid] - nums[0] < 0 else nums[0]
+                    if mid == 1 or mid == length -1:
+                        return nums[mid]
+                    left_element = nums[mid-1]
+                    if left_element > nums[0]:
+                        return nums[mid]
+                    else:
+                        # left part
+                        right = mid - 1
+    
+            return nums[0]
     
     s = Solution()
-    print s.findMin([4,5,1,2,3])
+    print s.findMin([4,5,1,2,3]) #1
+    print s.findMin([1,2]) #1

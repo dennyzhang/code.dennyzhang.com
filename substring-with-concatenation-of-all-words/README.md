@@ -16,8 +16,10 @@ You are given a string, s, and a list of words, words, that are all of the same 
     You should return the indices: [0,9].
     (order does not matter).
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/substring-with-concatenation-of-all-words)  
+Blog link: <http://brain.dennyzhang.com/substring-with-concatenation-of-all-words>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.

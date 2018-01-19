@@ -1,4 +1,4 @@
-# Leetcode: Single Number II     :BLOG::
+# Leetcode: Single Number II     :BLOG:Medium:
 
 
 ---
@@ -12,7 +12,11 @@ Given an array of integers, every element appears three times except for one, wh
 Note:  
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/single-number-ii/description/)  
+Blog link: <http://brain.dennyzhang.com/single-number-ii>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Hint: Time O(n), Space O(1)  
 
@@ -53,6 +57,6 @@ Leave me comments, if you know how to solve.
             if is_positive is True: return res else: return -(res+1)
 
 More Reading:  
--   [Leetcode: Single Number](http://brain.dennyzhang.com/single-number/)
--   [Leetcode: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
--   [Leetcode: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)
+-   [[<http://brain.dennyzhang.com/single-number-ii>
+-   [[<http://brain.dennyzhang.com/single-number-ii>
+-   [[<http://brain.dennyzhang.com/single-number-ii>

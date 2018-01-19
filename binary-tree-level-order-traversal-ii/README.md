@@ -23,9 +23,11 @@ Given a binary tree, return the bottom-up level order traversal of its nodes' va
       [3]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-level-order-traversal-ii)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-level-order-traversal-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-tree-level-order-traversal-ii,/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -44,14 +46,14 @@ Leave me comments, if you know how to solve.
             """
             ## Idea: BFS
             ## Complexity:
-            res = 
+            res = []
             if root is None:
                 return res
-            queue = 
+            queue = []
             queue.append(root)
             while len(queue) != 0:
                 length = len(queue)
-                l = 
+                l = []
                 for i in xrange(length):
                     l.append(queue[i].val)
                 res.insert(0, l)

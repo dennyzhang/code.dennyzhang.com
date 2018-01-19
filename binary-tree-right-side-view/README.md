@@ -18,9 +18,13 @@ Given a binary tree, imagine yourself standing on the right side of it, return t
       5     4       <---
     You should return [1, 3, 4].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-right-side-view)  
+Hint: useful link for level order traversal  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-tree-right-side-view/description/)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-right-side-view>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -48,9 +52,9 @@ Leave me comments, if you know how to solve.
             :rtype: List[int]
             """
             if root is None:
-                return 
-            res = 
-            queue = 
+                return []
+            res = []
+            queue = []
             queue.append(root)
             while len(queue) != 0:
                 length = len(queue)

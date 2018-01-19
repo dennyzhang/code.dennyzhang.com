@@ -16,16 +16,18 @@ Return 3, because by repeating A three times ("abcdabcdabcd"), B is a substring 
 Note:  
 The length of A and B will be between 1 and 10000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-string-match)  
+Blog link: <http://brain.dennyzhang.com/repeated-string-match>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/repeated-string-match/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
     ## Basic Ideas: Consider lengths of A and B are len_a, len_b
     ##              Let's say a match exists. k = len_b/len_a
     ##              Then we need to repeat A either k times, k+1 times or k+2 times
-    ## Complexity:
+    ## Complexity: Time O(m+n), Space O(n)
     class Solution(object):
         def repeatedStringMatch(self, A, B):
             """

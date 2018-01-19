@@ -30,9 +30,11 @@ Example 3:
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern)  
+Blog link: <http://brain.dennyzhang.com/repeated-substring-pattern>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/repeated-substring-pattern/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -44,4 +46,4 @@ Leave me comments, if you know how to solve.
             """
 
 More Reading:  
--   [Leetcode: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
+-   [[<http://brain.dennyzhang.com/repeated-substring-pattern>

@@ -15,9 +15,11 @@ For example,
 Given 1->4->3->2->5->2 and x = 3,  
 return 1->2->2->4->3->5.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-list)  
+Blog link: <http://brain.dennyzhang.com/partition-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/partition-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

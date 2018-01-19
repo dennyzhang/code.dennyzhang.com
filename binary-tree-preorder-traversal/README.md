@@ -20,9 +20,11 @@ Given a binary tree, return the preorder traversal of its nodes' values.
 
 Note: Recursive solution is trivial, could you do it iteratively?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-preorder-traversal)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-preorder-traversal>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -39,8 +41,8 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: List[int]
             """
-            res = 
-            stack = 
+            res = []
+            stack = []
             p = root
             # Whatever I have pushed to stack, I have visited already
             while p:
@@ -64,7 +66,7 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: List[int]
             """
-            res = 
+            res = []
             self.preorderTraversalRec(root, res)
             return res
         def preorderTraversalRec(self, root, list_value):

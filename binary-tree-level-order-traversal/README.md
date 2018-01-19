@@ -23,9 +23,11 @@ Given a binary tree, return the level order traversal of its nodes' values. (ie,
       [15,7]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-level-order-traversal)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-level-order-traversal>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -45,13 +47,13 @@ Leave me comments, if you know how to solve.
             ## Baisc Idea: BFS
             ## Complexity: Time O(n), Space O(n): width
             if root is None:
-                return 
-            res = 
-            queue = 
+                return []
+            res = []
+            queue = []
             queue.append(root)
             while len(queue) != 0:
                 length = len(queue)
-                level_elements = 
+                level_elements = []
                 for i in xrange(length):
                     element = queue[0]
                     del queue[0]

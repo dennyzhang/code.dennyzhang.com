@@ -18,9 +18,11 @@ Have you consider that the string might be empty? This is a good question to ask
 
 For the purpose of this problem, we define empty string as valid palindrome.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+Blog link: <http://brain.dennyzhang.com/valid-palindrome>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -32,7 +34,7 @@ Leave me comments, if you know how to solve.
             """
             if s == "":
                 return True
-            washed_string = 
+            washed_string = []
             for ch in s:
                 if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
                     washed_string.append(ch.lower())

@@ -9,12 +9,14 @@ Count Complete Tree Nodes
 
 Given a complete binary tree, count the number of nodes.  
 
-Definition of a complete binary tree from [Wikipedia](https://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees):  
+Definition of a complete binary tree from Wikipedia:  
 In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-complete-tree-nodes)  
+Blog link: <http://brain.dennyzhang.com/count-complete-tree-nodes>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/count-complete-tree-nodes/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -32,7 +34,7 @@ Leave me comments, if you know how to solve.
             """
             length = len(nums)
             if length == 0:
-                return 
+                return []
             n1, n2 = None, None
             c1, c2 = 0, 0
             for num in nums:
@@ -53,7 +55,7 @@ Leave me comments, if you know how to solve.
                 elif num == n2:
                     c2 += 1
             # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
+            res = []
             if c1 > length/3:
                 res.append(n1)
             if c2 > length/3:

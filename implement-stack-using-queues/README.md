@@ -9,19 +9,21 @@ Implement Stack using Queues
 
 Implement the following operations of a stack using queues.  
 
--   push(x) -- Push element x onto stack.
--   pop() -- Removes the element on top of the stack.
--   top() -- Get the top element.
--   empty() -- Return whether the stack is empty.
+-   push(x) &#x2013; Push element x onto stack.
+-   pop() &#x2013; Removes the element on top of the stack.
+-   top() &#x2013; Get the top element.
+-   empty() &#x2013; Return whether the stack is empty.
 
 Notes:  
--   You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
+-   You must use only standard operations of a queue &#x2013; which means only push to back, peek/pop from front, size, and is empty operations are valid.
 -   Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
 -   You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-stack-using-queues)  
+Blog link: <http://brain.dennyzhang.com/implement-stack-using-queues>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/implement-stack-using-queues/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -33,8 +35,8 @@ Leave me comments, if you know how to solve.
             """
             Initialize your data structure here.
             """
-            self.stack1 = 
-            self.stack2 = 
+            self.stack1 = []
+            self.stack2 = []
     
     
         def push(self, x):

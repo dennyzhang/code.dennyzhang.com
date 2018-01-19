@@ -19,9 +19,11 @@ Given a binary tree, return all root-to-leaf paths.
     
     ["1->2->5", "1->3"]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-paths)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-paths>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-tree-paths/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -41,11 +43,11 @@ Leave me comments, if you know how to solve.
             ## Idea: DFS recursive
             ## Complexity:
             if root is None:
-                return 
+                return []
             if root.left is None and root.right is None:
                 return [str(root.val)]
     
-            res = 
+            res = []
             if root.left:
                 for string in self.binaryTreePaths(root.left):
                     res.append("%s->%s" % (str(root.val), string))

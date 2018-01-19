@@ -16,8 +16,10 @@ Given a string which contains only lowercase letters, remove duplicate letters s
     Given "cbacdcbc"
     Return "acdb"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicate-letters)  
+Blog link: <http://brain.dennyzhang.com/remove-duplicate-letters>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/remove-duplicate-letters/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.

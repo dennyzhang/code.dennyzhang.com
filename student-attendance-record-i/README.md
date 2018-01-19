@@ -24,11 +24,13 @@ You need to return whether the student could be rewarded according to his attend
     Input: "PPALLL"
     Output: False
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i)  
+Blog link: <http://brain.dennyzhang.com/student-attendance-record-i>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description/)  
+Github: challenges-leetcode-interesting  
 
-Useful link: [here](https://leetcode.com/problems/student-attendance-record-i/discuss/101556/)  
+Credits To: leetcode.com  
+
+Useful link: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -89,4 +91,4 @@ Leave me comments, if you know how to solve.
     print s.checkRecord('PPALLP')
 
 More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+-   [[<http://brain.dennyzhang.com/student-attendance-record-i>

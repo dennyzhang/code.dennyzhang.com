@@ -19,12 +19,12 @@ Return a List of ListNode's representing the linked list parts that are formed.
     Example 1:
     Input: 
     root = [1, 2, 3], k = 5
-    Output: [[1],[2],[3],,]
+    Output: [[1],[2],[3],[],[]]
     Explanation:
     The input and each element of the output are ListNodes, not arrays.
     For example, the input root has root.val = 1, root.next.val = 2, \root.next.next.val = 3, and root.next.next.next = null.
     The first element output[0] has output[0].val = 1, output[0].next = null.
-    The last element output[4] is null, but it's string representation as a ListNode is .
+    The last element output[4] is null, but it's string representation as a ListNode is [].
 
     Example 2:
     Input: 
@@ -39,9 +39,11 @@ Note:
 -   Each value of a node in the input will be an integer in the range [0, 999].
 -   k will be an integer in the range [1, 50].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-linked-list-in-parts)  
+Blog link: <http://brain.dennyzhang.com/split-linked-list-in-parts>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/split-linked-list-in-parts/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -61,7 +63,7 @@ Leave me comments, if you know how to solve.
             part_size = count / k
             remaining = count % k
     
-            res = 
+            res = []
             p = root
             for i in xrange(k):
                 dummy_node = ListNode(None)

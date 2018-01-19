@@ -9,11 +9,13 @@ Valid Parentheses
 
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.  
 
-The brackets must close in the correct order, "()" and "(){}" are all valid but "(]" and "([)]" are not.  
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-parentheses)  
+Blog link: <http://brain.dennyzhang.com/valid-parentheses>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/valid-parentheses/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -32,10 +34,10 @@ Leave me comments, if you know how to solve.
                 '}': '{'
             }
     
-            string_stack = 
+            string_stack = []
     
             for ch in s:
-                if ch not in '(){}':
+                if ch not in '()[]{}':
                     raise Exception("Unexpected string: %s, character: %s" % (s, ch))
                 if len(string_stack) == 0:
                     string_stack.append(ch)
@@ -49,8 +51,8 @@ Leave me comments, if you know how to solve.
     
     if __name__ == '__main__':
         s = Solution()
-        print s.isValid("()")
-        print s.isValid("(){}")
+        print s.isValid("([])")
+        print s.isValid("()[]{}")
         print s.isValid("()")
         print s.isValid("(]")
         print s.isValid("([)]")

@@ -1,4 +1,4 @@
-* Leetcode: Minimum Window Substring                                              :BLOG:Hard:
+* Leetcode: Minimum Window Substring                              :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

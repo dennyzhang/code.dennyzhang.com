@@ -17,15 +17,17 @@ Restrictions:
 1.  The string consists of lower English letters only.
 2.  Length of the given string and k will in the range [1, 10000]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-string-ii)  
+Blog link: <http://brain.dennyzhang.com/reverse-string-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/reverse-string-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
+Useful link: here  
 
     class Solution(object):
         def reverseStr(self, s, k):

@@ -13,9 +13,11 @@ Given a collection of intervals, merge all overlapping intervals.
     Given [1,3],[2,6],[8,10],[15,18],
     return [1,6],[8,10],[15,18].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-intervals)  
+Blog link: <http://brain.dennyzhang.com/merge-intervals>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/merge-intervals/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -25,7 +27,7 @@ Leave me comments, if you know how to solve.
             :type intervals: List[Interval]
             :rtype: List[Interval]
             """
-            ret = 
+            ret = []
             for entry in sorted(intervals, key=lambda entry: entry.start):
                 if ret and entry.start <= ret[-1].end:
                     ret[-1].end = max(ret[-1].end, entry.end)

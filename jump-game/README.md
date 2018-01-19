@@ -18,9 +18,11 @@ A = [2,3,1,1,4], return true.
 
 A = [3,2,1,0,4], return false.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game)  
+Blog link: <http://brain.dennyzhang.com/jump-game>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/jump-game/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

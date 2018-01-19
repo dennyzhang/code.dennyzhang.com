@@ -9,9 +9,11 @@ Sort a linked list
 
 Sort a linked list using insertion sort.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insertion-sort-list)  
+Blog link: <http://brain.dennyzhang.com/insertion-sort-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/insertion-sort-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -81,4 +83,4 @@ Leave me comments, if you know how to solve.
     print new_head.next.next.val
 
 More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+-   [[<http://brain.dennyzhang.com/insertion-sort-list>

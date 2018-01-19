@@ -25,30 +25,38 @@ Example:
     
     Return 6.
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower/description/)  
+Blog link: <http://brain.dennyzhang.com/guess-number-higher-or-lower>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: binary search
+    ##      1 1 1 0 -1 -1 -1
+    ## Complexity: Time O(log(n)), Space O(1)
+    
+    # The guess API is already defined for you.
+    # @param num, your guess
+    # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
+    # def guess(num):
+    
     class Solution(object):
-        def checkPerfectNumber(self, num):
+        def guessNumber(self, n):
             """
-            :type num: int
-            :rtype: bool
+            :type n: int
+            :rtype: int
             """
-            ## Idea: sqrt(num)
-            ## Complexity:
-            ## Sample Data:
-            ##    1 2 7
-            if num <= 1:
-                return False
-            import math
-            sum = 1
-            for i in range(2, int(math.sqrt(num))+1):
-                if num % i == 0:
-                    sum += i
-                    if i != num/i:
-                        sum += num/i
-            return sum == num
-
-More Reading:  
--   [Kids Puzzles](http://brain.dennyzhang.com/tag/kids/)
+            left, right = 1, n
+            while left <= right:
+                mid = left + (right-left)/2
+                v = guess(mid)
+                if v == 0:
+                    return mid
+                elif v == 1:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+    
+            return None

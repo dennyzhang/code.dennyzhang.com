@@ -19,9 +19,11 @@ Note: The solution set must not contain duplicate triplets.
       [-1, -1, 2]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum)  
+Blog link: <http://brain.dennyzhang.com/3sum>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/3sum/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -38,7 +40,7 @@ Leave me comments, if you know how to solve.
             :type nums: List[int]
             :rtype: List[List[int]]
             """
-            ret = 
+            ret = []
             nums.sort()
     
             for i in xrange(len(nums)-2):

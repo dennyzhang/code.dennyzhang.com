@@ -30,9 +30,11 @@ Note:
 -   1 <= len(bits) <= 1000.
 -   bits[i] is always 0 or 1.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/1-bit-and-2-bit-characters)  
+Blog link: <http://brain.dennyzhang.com/1-bit-and-2-bit-characters>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/1-bit-and-2-bit-characters/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

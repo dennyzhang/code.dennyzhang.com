@@ -39,9 +39,11 @@ Design a data structure that supports all following operations in average O(1) t
     // Since 2 is the only number in the set, getRandom always return 2.
     randomSet.getRandom();
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1)  
+Blog link: <http://brain.dennyzhang.com/insert-delete-getrandom-o1>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -61,7 +63,7 @@ Leave me comments, if you know how to solve.
             Initialize your data structure here.
             """
             self.dict = {}
-            self.array = 
+            self.array = []
             self.length = 0
     
         def insert(self, val):

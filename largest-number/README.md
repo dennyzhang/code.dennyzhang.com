@@ -13,9 +13,11 @@ For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.
 
 Note: The result may be very large, so you need to return a string instead of an integer.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-number)  
+Blog link: <http://brain.dennyzhang.com/largest-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/largest-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -27,7 +29,7 @@ Leave me comments, if you know how to solve.
     ##             "128" vs "12"
     ## Complexity: Time O(n*log(n)) length of integer is short, Space O(n)
     class Solution:
-        # @param {integer} nums
+        # @param {integer[]} nums
         # @return {string}
         def largestNumber(self, nums):
             # https://docs.python.org/3/howto/sorting.html

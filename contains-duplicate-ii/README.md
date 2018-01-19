@@ -9,9 +9,11 @@ Contains Duplicate II
 
 Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate-ii)  
+Blog link: <http://brain.dennyzhang.com/contains-duplicate-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/contains-duplicate-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -31,7 +33,7 @@ Leave me comments, if you know how to solve.
             length = len(nums)
             if length <= 1: return False
             if k == 0: return False
-            s = set()
+            s = set([])
     
             for i in xrange(length):
                 if i > k:

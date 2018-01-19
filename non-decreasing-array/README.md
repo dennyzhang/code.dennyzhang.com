@@ -30,21 +30,24 @@ Example 2:
 Explanation: You can't get a non-decreasing array by modify at most one element.  
 Note: The n belongs to [1, 10,000].  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/non-decreasing-array/description/)  
+Blog link: <http://brain.dennyzhang.com/non-decreasing-array>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: If we have two decreasing couples, we can't fix it with one change. Right?
+    ## Complexity: Time O(n), Space O(1)
+    ##  1     4         2       3
+    ##      index1   index2
     class Solution(object):
         def checkPossibility(self, nums):
             """
             :type nums: List[int]
             :rtype: bool
             """
-            ## Basic Idea: If we have two decreasing couples, we can't fix it with one change. Right?
-            ## Complexity: Time O(n), Space O(1)
-            ##  1     4         2       3
-            ##      index1   index2
-    
             index1 = None
             index2 = None
             length = len(nums)
@@ -89,4 +92,4 @@ Leave me comments, if you know how to solve.
         print s.checkPossibility([4])
 
 More Reading:  
--   [Leetcode: Guess Number Higher or Lower](http://brain.dennyzhang.com/guess-high-low/)
+-   [[<http://brain.dennyzhang.com/non-decreasing-array>

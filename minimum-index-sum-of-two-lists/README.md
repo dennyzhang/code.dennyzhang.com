@@ -31,9 +31,11 @@ Note:
 3.  The index is starting from 0 to the list length minus 1.
 4.  No duplicates in both lists.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-index-sum-of-two-lists)  
+Blog link: <http://brain.dennyzhang.com/minimum-index-sum-of-two-lists>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -46,8 +48,8 @@ Leave me comments, if you know how to solve.
             """
             ## Idea:
             ## Complexity: Time O(n*n), Space O(1)
-            sum_list = 
-            item_list = 
+            sum_list = []
+            item_list = []
             for i in range(0, len(list1)):
                 word1 = list1[i]
                 for j in range(0, len(list2)):
@@ -61,7 +63,7 @@ Leave me comments, if you know how to solve.
             for i in range(1, len(sum_list)):
                 if min_sum > sum_list[i]:
                     min_sum = sum_list[i]
-            ret = 
+            ret = []
             for i in range(0, len(sum_list)):
                 if min_sum == sum_list[i]:
                     ret.append(item_list[i])

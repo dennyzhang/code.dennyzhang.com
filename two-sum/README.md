@@ -18,9 +18,11 @@ Example:
     Because nums[0] + nums[1] = 2 + 7 = 9,
     return [0, 1].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum)  
+Blog link: <http://brain.dennyzhang.com/two-sum>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/two-sum/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -75,4 +77,4 @@ Leave me comments, if you know how to solve.
         print s.twoSum([2, 7, 11, 15], 9)
 
 More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+-   [[<http://brain.dennyzhang.com/two-sum>

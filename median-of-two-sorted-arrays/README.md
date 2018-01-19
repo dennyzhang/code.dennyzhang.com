@@ -1,4 +1,4 @@
-# Leetcode: Median of Two Sorted Arrays     :BLOG:Medium:
+# Leetcode: Median of Two Sorted Arrays     :BLOG:Amusing:
 
 
 ---
@@ -23,9 +23,11 @@ Find the median of the two sorted arrays. The overall run time complexity should
     
     The median is (2 + 3)/2 = 2.5
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-of-two-sorted-arrays)  
+Blog link: <http://brain.dennyzhang.com/median-of-two-sorted-arrays>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

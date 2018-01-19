@@ -19,19 +19,23 @@ Return
       ["a","a","b"]
     ]
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/palindrome-partitioning/description/)  
+Blog link: <http://brain.dennyzhang.com/palindrome-partitioning>  
 
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
+
+    ## Basic Ideas: Divide and conquer
+    ## Complexity: Time O(), Space O()
+    ## Assumptions:
+    ## Sample Data:
     class Solution(object):
         def partition(self, s):
             """
             :type s: str
             :rtype: List[List[str]]
             """
-            ## Basic Idea: Divide and conquer
-            ## Complexity: Time O(), Space O()
-            ## Assumptions:
-            ## Sample Data:
-            res = 
+            res = []
             for i in range(0, len(s)-1):
                 if self.is_palindrome(s[0:i+1]):
                     l = self.partition(s[i+1:])

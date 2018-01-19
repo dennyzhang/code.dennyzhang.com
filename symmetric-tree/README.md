@@ -26,9 +26,11 @@ Given a binary tree, check whether it is a mirror of itself (ie, symmetric aroun
 Note:  
 Bonus points if you could solve it both recursively and iteratively.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/symmetric-tree)  
+Blog link: <http://brain.dennyzhang.com/symmetric-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/symmetric-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -54,7 +56,7 @@ Leave me comments, if you know how to solve.
             if root.left is None:
                 return True
     
-            queue = 
+            queue = []
             queue.append(root.left)
             queue.append(root.right)
             while len(queue) != 0:

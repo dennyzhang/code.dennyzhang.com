@@ -21,9 +21,11 @@ Find the number of boomerangs. You may assume that n will be at most 500 and coo
     Explanation:
     The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-boomerangs)  
+Blog link: <http://brain.dennyzhang.com/number-of-boomerangs>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/number-of-boomerangs/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

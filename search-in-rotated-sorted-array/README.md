@@ -15,9 +15,11 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-in-rotated-sorted-array)  
+Blog link: <http://brain.dennyzhang.com/search-in-rotated-sorted-array>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

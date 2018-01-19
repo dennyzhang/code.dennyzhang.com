@@ -18,22 +18,24 @@ Now, given an integer n, write a function that returns true when it is a perfect
 
 Note: The input number n will not exceed 100,000,000. (1e8)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/perfect-number)  
+Blog link: <http://brain.dennyzhang.com/perfect-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/perfect-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: sqrt(num)
+    ##     Sample Data:
+    ##         1 2 7
+    ## Complexity:
     class Solution(object):
         def checkPerfectNumber(self, num):
             """
             :type num: int
             :rtype: bool
             """
-            ## Idea: sqrt(num)
-            ## Complexity:
-            ## Sample Data:
-            ##    1 2 7
             if num <= 1:
                 return False
             import math

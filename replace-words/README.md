@@ -25,9 +25,11 @@ Note:
 4.  1 <= root length <= 100
 5.  1 <= sentence words length <= 1000
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/replace-words)  
+Blog link: <http://brain.dennyzhang.com/replace-words>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/replace-words/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -55,7 +57,7 @@ Leave me comments, if you know how to solve.
                 node.is_word = True
     
             # replace word by word
-            res = 
+            res = []
             for word in sentence.split(' '):
                 node, prefix = root, ''
                 # check word

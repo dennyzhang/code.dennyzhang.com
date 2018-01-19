@@ -13,9 +13,11 @@ Given an array S of n integers, find three integers in S such that the sum is cl
     
     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum-closest)  
+Blog link: <http://brain.dennyzhang.com/3sum-closest>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/3sum-closest/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -25,9 +25,11 @@ Note:
 -   The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
 -   The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-watch)  
+Blog link: <http://brain.dennyzhang.com/binary-watch>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-watch/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -36,7 +38,7 @@ Leave me comments, if you know how to solve.
     ## Complexity: Time O(1) 12*60, Space O(1)
     class Solution(object):
         def readBinaryWatch(self, num):
-            res = 
+            res = []
             for hour in xrange(12):
                 for minute in xrange(60):
                     if bin(hour).count('1') + bin(minute).count('1') == num:
@@ -56,7 +58,7 @@ Leave me comments, if you know how to solve.
             ## Assumptions:
             ## Sample Data:
             l = self.getResult(num, 10)
-            res = 
+            res = []
             for item in l:
                 item_str = self.formatItem(item)
                 if item_str != "":
@@ -66,13 +68,13 @@ Leave me comments, if you know how to solve.
         def getResult(self, num, remain_digits):
             # print("remain_digits: %d" % (remain_digits))
             if remain_digits == 0 or num > remain_digits:
-                return 
+                return []
             if num == 0:
                 return [[0] * remain_digits]
             if num == remain_digits:
                 return [[1]*remain_digits]
     
-            res = 
+            res = []
             res_0 = self.getResult(num, remain_digits-1)
             res_1 = self.getResult(num-1, remain_digits-1)
             if len(res_1) != 0:

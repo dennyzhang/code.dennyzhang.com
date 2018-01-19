@@ -13,9 +13,11 @@ For example,
 Given 1->1->2, return 1->2.  
 Given 1->1->2->3->3, return 1->2->3.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list)  
+Blog link: <http://brain.dennyzhang.com/remove-duplicates-from-sorted-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

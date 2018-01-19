@@ -50,19 +50,23 @@ rotate the input matrix in-place such that it becomes:
       [16, 7,10,11]
     ]
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/rotate-image/description/)  
+Blog link: <http://brain.dennyzhang.com/rotate-image>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Rotate circle by circle. From outer to inner layer.
+    ##             Use an array of n to save data temporarily
+    ## Complexity: Time O(n*n), Space O(n)
     class Solution(object):
         def rotate(self, matrix):
             """
             :type matrix: List[List[int]]
             :rtype: void Do not return anything, modify matrix in-place instead.
             """
-            ## Basic Idea: Rotate circle by circle. From outer to inner layer.
-            ##             Use an array of n to save data temporarily
-            ## Complexity: Time O(n*n), Space O(n)
             length = len(matrix[0])
             if length <=1:
                 return

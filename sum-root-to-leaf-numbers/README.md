@@ -23,7 +23,11 @@ The root-to-leaf path 1->3 represents the number 13.
 
 Return the sum = 12 + 13 = 25.  
 
-<https://leetcode.com/problems/sum-root-to-leaf-numbers/description/>  
+Blog link: <http://brain.dennyzhang.com/sum-root-to-leaf-numbers>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
     class Solution(object):
         def sumNumbers(self, root):
@@ -36,7 +40,7 @@ Return the sum = 12 + 13 = 25.
             res = 0
             if root is None:
                 return 0
-            queue = 
+            queue = []
             queue.append((root, root.val))
             while len(queue) != 0:
                 (node, value) = queue[0]

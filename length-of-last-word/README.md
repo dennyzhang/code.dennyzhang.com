@@ -13,14 +13,16 @@ If the last word does not exist, return 0.
 
 Note: A word is defined as a character sequence consists of non-space characters only.  
 
-Example:  
+    Example:
+    
+    Input: "Hello World"
+    Output: 5
 
-Input: "Hello World"  
-Output: 5  
+Blog link: <http://brain.dennyzhang.com/length-of-last-word>  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/length-of-last-word)  
+Github: challenges-leetcode-interesting  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/length-of-last-word/description/)  
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

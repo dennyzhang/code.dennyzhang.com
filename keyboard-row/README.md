@@ -17,9 +17,11 @@ Note:
 -   You may use one character in the keyboard more than once.
 -   You may assume the input string will only contain letters of alphabet.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/keyboard-row)  
+Blog link: <http://brain.dennyzhang.com/keyboard-row>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/keyboard-row/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -29,7 +31,7 @@ Leave me comments, if you know how to solve.
             :type words: List[str]
             :rtype: List[str]
             """
-            return_list = 
+            return_list = []
             character_dict = {}
             for ch in "qwertyuiop":
                 character_dict[ch] = 0

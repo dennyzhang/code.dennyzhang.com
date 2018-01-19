@@ -11,9 +11,11 @@ Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-depth-of-binary-tree)  
+Blog link: <http://brain.dennyzhang.com/maximum-depth-of-binary-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -13,9 +13,11 @@ Calling next() will return the next smallest number in the BST.
 
 Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-search-tree-iterator)  
+Blog link: <http://brain.dennyzhang.com/binary-search-tree-iterator>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-search-tree-iterator/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -36,7 +38,7 @@ Leave me comments, if you know how to solve.
             """
             :type root: TreeNode
             """
-            self.stack = 
+            self.stack = []
             p = root
             while p:
                 self.stack.append(p)
@@ -60,5 +62,5 @@ Leave me comments, if you know how to solve.
             return node.val
     
     # Your BSTIterator will be called like this:
-    # i, v = BSTIterator(root), 
+    # i, v = BSTIterator(root), []
     # while i.hasNext(): v.append(i.next())

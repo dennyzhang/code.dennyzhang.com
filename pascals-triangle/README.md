@@ -20,9 +20,11 @@ Given numRows, generate the first numRows of Pascal's triangle.
      [1,4,6,4,1]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/pascals-triangle)  
+Blog link: <http://brain.dennyzhang.com/pascals-triangle>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/pascals-triangle/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -32,7 +34,7 @@ Leave me comments, if you know how to solve.
             :type numRows: int
             :rtype: List[List[int]]
             """
-            l = 
+            l = []
             if numRows == 1:
                 l.append([1])
     
@@ -42,7 +44,7 @@ Leave me comments, if you know how to solve.
     
             j = 3
             for i in range(2, numRows):
-                item = 
+                item = []
                 item.append(1)
                 for k in range(1, j-1):
                     item.append(l[i-1][k-1] + l[i-1][k])

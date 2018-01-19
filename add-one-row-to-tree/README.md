@@ -1,4 +1,4 @@
-# Leetcode: Add One Row to Tree     :BLOG:Hard:
+# Leetcode: Add One Row to Tree     :BLOG:Medium:
 
 
 ---
@@ -59,9 +59,11 @@ Note:
 The given d is in range [1, maximum depth of the given tree + 1].  
 The given binary tree has at least one tree node.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-one-row-to-tree)  
+Blog link: <http://brain.dennyzhang.com/add-one-row-to-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/add-one-row-to-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

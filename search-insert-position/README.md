@@ -31,9 +31,11 @@ You may assume no duplicates in the array.
     Input: [1,3,5,6], 0
     Output: 0
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-insert-position)  
+Blog link: <http://brain.dennyzhang.com/search-insert-position>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/search-insert-position/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

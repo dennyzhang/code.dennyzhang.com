@@ -11,9 +11,11 @@ Divide two integers without using multiplication, division and mod operator.
 
 If it is overflow, return MAX\_INT.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/divide-two-integers)  
+Blog link: <http://brain.dennyzhang.com/divide-two-integers>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/divide-two-integers/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -72,7 +74,7 @@ Leave me comments, if you know how to solve.
             """
             max_int = 2147483647
             min_negative = -2147483648
-            pow2_list, powd_list = , 
+            pow2_list, powd_list = [], []
             if divisor == 0:
                 return max_int
     

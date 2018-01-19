@@ -15,15 +15,17 @@ Follow up:
 -   A simple improvement uses O(m + n) space, but still not the best solution.
 -   Could you devise a constant space solution?
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes)  
+Blog link: <http://brain.dennyzhang.com/set-matrix-zeroes>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Hint:  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
+Useful link: here  
 
     ## Basic Ideas:
     ##             2 Different types of 0s. 
@@ -44,7 +46,7 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
             if n == 0:
                 return
             m = len(matrix[0])
-            zero_columns = 
+            zero_columns = []
             for i in xrange(n):
                 for j in xrange(m):
                     if matrix[i][j] == 0:
@@ -67,4 +69,4 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
     print matrix
 
 More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+-   [[<http://brain.dennyzhang.com/set-matrix-zeroes>

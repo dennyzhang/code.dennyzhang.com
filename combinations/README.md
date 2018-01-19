@@ -3,11 +3,11 @@
 
 ---
 
-Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.  
+Given two integers n and k, return all possible combinations of k numbers out of 1 &#x2026; n.  
 
 ---
 
-Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.  
+Given two integers n and k, return all possible combinations of k numbers out of 1 &#x2026; n.  
 
 For example,  
 If n = 4 and k = 2, a solution is:  
@@ -21,9 +21,11 @@ If n = 4 and k = 2, a solution is:
   [1,4],  
 ]  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combinations)  
+Blog link: <http://brain.dennyzhang.com/combinations>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/combinations/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -40,9 +42,9 @@ Leave me comments, if you know how to solve.
             ## Assumptions:
             ## Sample Data:
             l = self.getCombine(n, k)
-            res = 
+            res = []
             for combine in l:
-                item = 
+                item = []
                 for digit in xrange(n):
                     if combine[digit] == 1:
                         item.append(digit + 1)
@@ -54,10 +56,10 @@ Leave me comments, if you know how to solve.
             if n == k:
                 return [[1]*n]
             if k > n or n == 0:
-                return 
+                return []
             if k == 0:
                 return [[0]*n]
-            res = 
+            res = []
             res_0 = self.getCombine(n-1, k)
             res_1 = self.getCombine(n-1, k-1)
             if len(res_0) != 0:

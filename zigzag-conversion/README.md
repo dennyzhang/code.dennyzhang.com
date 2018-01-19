@@ -20,9 +20,24 @@ Write the code that will take a string and make this conversion given a number o
 
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/zigzag-conversion)  
+Background: what is ZigZag. leetcode.com  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/zigzag-conversion/description/)  
+    /*n=numRows
+    2n-2    1                           2n-1                         4n-3
+            2                     2n-2  2n                    4n-4   4n-2
+            3               2n-3        2n+1              4n-5       .
+            .           .               .               .            .
+            .       n+2                 .           3n               .
+            n-1 n+1                     3n-3    3n-1                 5n-5
+    2n-2    n                           3n-2                         5n-4
+    */
+    Be careful with nR=1 && nR=2
+
+Blog link: <http://brain.dennyzhang.com/zigzag-conversion>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

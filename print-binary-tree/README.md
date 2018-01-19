@@ -54,9 +54,11 @@ Print the subtrees following the same rules.
 
 Note: The height of binary tree is in the range of [1, 10].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/print-binary-tree)  
+Blog link: <http://brain.dennyzhang.com/print-binary-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/print-binary-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

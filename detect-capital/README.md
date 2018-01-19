@@ -27,9 +27,11 @@ Otherwise, we define that this word doesn't use capitals in a right way.
 
 Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/detect-capital)  
+Blog link: <http://brain.dennyzhang.com/detect-capital>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/detect-capital/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

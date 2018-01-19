@@ -15,9 +15,11 @@ Some examples:
   ["2", "1", "+", "3", "\*"] -> ((2 + 1) \* 3) -> 9  
   ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/evaluate-reverse-polish-notation)  
+Blog link: <http://brain.dennyzhang.com/evaluate-reverse-polish-notation>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -33,7 +35,7 @@ Leave me comments, if you know how to solve.
             if length == 0:
                 return None
     
-            stack = 
+            stack = []
             for token in tokens:
                 if token not in '+-*/':
                     stack.append(int(token))

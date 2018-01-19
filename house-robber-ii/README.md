@@ -11,9 +11,11 @@ After robbing those houses on that street, the thief has found himself a new pla
 
 Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber-ii)  
+Blog link: <http://brain.dennyzhang.com/house-robber-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/house-robber-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

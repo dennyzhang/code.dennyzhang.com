@@ -27,9 +27,11 @@ Determine the maximum amount of money the thief can rob tonight without alerting
      1   3   1
     Maximum amount of money the thief can rob = 4 + 5 = 9.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber-iii)  
+Blog link: <http://brain.dennyzhang.com/house-robber-iii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/house-robber-iii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -47,7 +49,7 @@ Leave me comments, if you know how to solve.
             """
             length = len(nums)
             if length == 0:
-                return 
+                return []
             n1, n2 = None, None
             c1, c2 = 0, 0
             for num in nums:
@@ -68,7 +70,7 @@ Leave me comments, if you know how to solve.
                 elif num == n2:
                     c2 += 1
             # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
+            res = []
             if c1 > length/3:
                 res.append(n1)
             if c2 > length/3:

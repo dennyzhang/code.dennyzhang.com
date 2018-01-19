@@ -7,7 +7,7 @@ Identity the missing number
 
 ---
 
-Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.  
+Given an array containing n distinct numbers taken from 0, 1, 2, &#x2026;, n, find the one that is missing from the array.  
 
     Example 1
     
@@ -22,9 +22,11 @@ Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find th
 Note:  
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/missing-number)  
+Blog link: <http://brain.dennyzhang.com/missing-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/missing-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

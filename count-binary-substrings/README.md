@@ -1,4 +1,4 @@
-# Leetcode: Count Binary Substrings     :BLOG:Medium:
+# Leetcode: Count Binary Substrings     :BLOG:Amusing:
 
 
 ---
@@ -29,56 +29,47 @@ Substrings that occur multiple times are counted the number of times they occur.
     s.length will be between 1 and 50,000.
     s will only consist of "0" or "1" characters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-binary-substrings)  
+Blog link: <http://brain.dennyzhang.com/count-binary-substrings>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/count-binary-substrings/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/count-binary-substrings/description)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Ideas:
-    ##       No more than 2 elements would be qualified.
+    ## Basic Ideas: Two pointers
+    ##           Starting from one specific index, there could be only one or zero matches
+    ##           The result would be no more than s.length
+    ##           With match of 000111, we will get 3 matches. And move the pointer to right by 6 steps.
     ## Complexity: Time O(n), Space O(1)
-    ## Sample Data:
-    ##    1 2 3 2 3 3
-    ## Asummption:
     class Solution(object):
-        def majorityElement(self, nums):
+        def countBinarySubstrings(self, s):
             """
-            :type nums: List[int]
-            :rtype: List[int]
+            :type s: str
+            :rtype: int
             """
-            length = len(nums)
-            if length == 0:
-                return 
-            n1, n2 = None, None
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-                elif c1 == 0:
-                    n1, c1 = num, 1
-                elif c2 == 0:
-                    n2, c2 = num, 1
+            res = 0
+            length = len(s)
+            i = 0
+            while i < length - 1:
+                count, j = 1, i+1
+                ch = s[i]
+                opposite_ch = str(1 - int(ch))
+                while j < length and s[j] == ch:
+                    count += 1
+                    j += 1
+                match_length = count
+                while count != 0 and j < length and s[j] == opposite_ch:
+                    count -= 1
+                    j += 1
+    
+                if count == 0:
+                    res += match_length
+                    i = i + match_length
                 else:
-                    c1, c2 = c1 - 1, c2 - 1
-            c1, c2 = 0, 0
-            for num in nums:
-                if num == n1:
-                    c1 += 1
-                elif num == n2:
-                    c2 += 1
-            # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
-            if c1 > length/3:
-                res.append(n1)
-            if c2 > length/3:
-                res.append(n2)
+                    i += 1
             return res
     
     s = Solution()
-    # print s.majorityElement([1, 2])
-    # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
-    # print s.majorityElement([1, 2, 3, 2, 3, 3])
+    print s.countBinarySubstrings('00110011')
+    print s.countBinarySubstrings('10101')

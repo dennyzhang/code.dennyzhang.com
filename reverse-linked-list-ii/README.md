@@ -18,9 +18,11 @@ Note:
 Given m, n satisfy the following condition:  
 1 <= m <= n <= length of list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list-ii)  
+Blog link: <http://brain.dennyzhang.com/reverse-linked-list-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/reverse-linked-list-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -18,9 +18,11 @@ Given a non-negative integer c, your task is to decide whether there're two inte
     Input: 3
     Output: False
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-square-numbers)  
+Blog link: <http://brain.dennyzhang.com/sum-of-square-numbers>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/sum-of-square-numbers/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

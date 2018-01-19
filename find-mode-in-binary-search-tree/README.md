@@ -27,9 +27,11 @@ Note: If a tree has more than one mode, you can return them in any order.
 
 Follow up: Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-mode-in-binary-search-tree)  
+Blog link: <http://brain.dennyzhang.com/find-mode-in-binary-search-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -49,9 +51,9 @@ Leave me comments, if you know how to solve.
             ## Basic Idea: In-order traversal
             ## Complexity:
     
-            res = 
+            res = []
             # in-order trasveral
-            stack = 
+            stack = []
             p = root
             while p:
                 stack.append(p)
@@ -78,7 +80,7 @@ Leave me comments, if you know how to solve.
                     else:
                         if item_count > max_count:
                             max_count = item_count
-                            res = 
+                            res = []
                             res.append(top_item.val)
                 previous_val = top_item.val
                 if top_item.right:

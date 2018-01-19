@@ -13,9 +13,11 @@ You may assume the integer do not contain any leading zero, except the number 0 
 
 The digits are stored such that the most significant digit is at the head of the list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/plus-one)  
+Blog link: <http://brain.dennyzhang.com/plus-one>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/plus-one/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -27,7 +29,7 @@ Leave me comments, if you know how to solve.
             :type digits: List[int]
             :rtype: List[int]
             """
-            res = 
+            res = []
             has_carry = False
             if digits[-1] == 9:
                 res.insert(0, 0)

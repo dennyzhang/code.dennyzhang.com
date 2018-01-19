@@ -17,9 +17,11 @@ Given a collection of numbers that might contain duplicates, return all possible
       [2,1,1]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Blog link: <http://brain.dennyzhang.com/permutations-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -39,10 +41,10 @@ Leave me comments, if you know how to solve.
             """
             length = len(nums)
             if length == 0:
-                return 
+                return []
             if length == 1:
                 return [nums]
-            res = 
+            res = []
             for i in xrange(length):
                 if i > 0 and nums[i] == nums[i-1]:
                     continue

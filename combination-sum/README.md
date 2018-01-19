@@ -22,9 +22,11 @@ Note:
       [2, 2, 3]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum)  
+Blog link: <http://brain.dennyzhang.com/combination-sum>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/combination-sum/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -44,8 +46,8 @@ Leave me comments, if you know how to solve.
             candidates = sorted(candidates)
             length = len(candidates)
             if length == 0:
-                return 
-            ret = 
+                return []
+            ret = []
             value = candidates[0]
             # print("target: %d, value: %d" % (target, value))
             for i in range(0, target/value+1):

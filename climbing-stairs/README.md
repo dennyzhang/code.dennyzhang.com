@@ -32,7 +32,11 @@ Example 2:
     2. 1 step + 2 steps
     3. 2 steps + 1 step
 
-<https://leetcode.com/problems/climbing-stairs/description/>  
+Blog link: <http://brain.dennyzhang.com/climbing-stairs>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Hint: Time O(n), Space O(1)  
 

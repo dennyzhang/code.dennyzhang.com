@@ -7,7 +7,7 @@ Range Sum Query - Mutable
 
 ---
 
-Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.  
+Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.  
 
 The update(i, val) function modifies nums by updating the element at index i to val.  
 
@@ -22,9 +22,11 @@ Note:
 -   The array is only modifiable by the update function.
 -   You may assume the number of calls to update and sumRange function is distributed evenly.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-mutable)  
+Blog link: <http://brain.dennyzhang.com/range-sum-query-mutable>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/range-sum-query-mutable/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

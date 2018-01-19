@@ -23,9 +23,11 @@ All occurrences of a character must be replaced with another character while pre
 Note:  
 You may assume both s and t have the same length.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/isomorphic-strings)  
+Blog link: <http://brain.dennyzhang.com/isomorphic-strings>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/isomorphic-strings/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

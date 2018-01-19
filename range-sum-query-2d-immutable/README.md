@@ -31,9 +31,11 @@ Note:
 2.  There are many calls to sumRegion function.
 3.  You may assume that row1 <= row2 and col1 <= col2.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-2d-immutable)  
+Blog link: <http://brain.dennyzhang.com/range-sum-query-2d-immutable>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/range-sum-query-2d-immutable/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -55,7 +57,7 @@ Leave me comments, if you know how to solve.
                 return
     
             width = len(matrix[0])
-            self.sum_matrix = *height
+            self.sum_matrix = []*height
             for i in range(0, height):
                 self.sum_matrix.append([0]*width)
             # calculate the sum

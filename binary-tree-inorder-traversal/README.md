@@ -19,9 +19,11 @@ For example:
        3
     return [1,3,2].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-inorder-traversal)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-inorder-traversal>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -39,9 +41,9 @@ Leave me comments, if you know how to solve.
             :rtype: List[int]
             """
             if root is None:
-                return 
-            res = 
-            stack = 
+                return []
+            res = []
+            stack = []
             p = root
             # initialize the stack
             while p:
@@ -64,7 +66,7 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: List[int]
             """
-            l = 
+            l = []
             self.inorderTraversalRec(root, l)
             return l
     

@@ -21,9 +21,11 @@ Note:
 -   S will have length in range [1, 500].
 -   S will consist of lowercase letters ('a' to 'z') only.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-labels)  
+Blog link: <http://brain.dennyzhang.com/partition-labels>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/partition-labels/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -48,7 +50,7 @@ Leave me comments, if you know how to solve.
                 if i > letter_dict[ch]:
                     letter_dict[ch] = i
     
-            res = 
+            res = []
             i = 0
             print letter_dict
             while i < length:

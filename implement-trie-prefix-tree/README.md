@@ -12,19 +12,23 @@ Implement a trie with insert, search, and startsWith methods.
 Note:  
 You may assume that all inputs are consist of lowercase letters a-z.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-trie-prefix-tree)  
+Blog link: <http://brain.dennyzhang.com/implement-trie-prefix-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/implement-trie-prefix-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
     ## Basic Ideas: TrieNode: is_word(bool), children(dict)
-    ##             For the root node, we don't store any characters. Only in children
+    ##           For the root node, we don't store any characters. Only in children
+    ##           Here we use defaultdict, thus we can avoid has_key check  
     ## Assumption: If one word in the Trie tree, we also treat it starts with the word.
     ## Complexity:
+    
     class TrieNode(object):
         def __init__(self):
-            self.children = {}
+            self.children = collections.defaultdict(TrieNode)
             self.is_word = False
     
     class Trie(object):
@@ -44,12 +48,7 @@ Leave me comments, if you know how to solve.
             node = self.root
             # check character by character
             for ch in word:
-                children = node.children
-                # find which child
-                if ch not in children:
-                    new_child = TrieNode()
-                    children[ch] = new_child
-                node = children[ch]
+                node = node.children[ch]
             node.is_word = True
     
         def search(self, word):
@@ -60,10 +59,9 @@ Leave me comments, if you know how to solve.
             """
             node = self.root
             for ch in word:
-                children = node.children
-                if ch not in children:
+                if ch not in node.children:
                     return False
-                node = children[ch]
+                node = node.children[ch]
             return node.is_word
     
         def startsWith(self, prefix):
@@ -74,10 +72,9 @@ Leave me comments, if you know how to solve.
             """
             node = self.root
             for ch in prefix:
-                children = node.children
-                if ch not in children:
+                if ch not in node.children:
                     return False
-                node = children[ch]
+                node = node.children[ch]
             return True
     
     # Your Trie object will be instantiated and called as such:

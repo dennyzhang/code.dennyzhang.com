@@ -7,7 +7,7 @@ Convert a Number to Hexadecimal
 
 ---
 
-Given an integer, write an algorithm to convert it to hexadecimal. For negative integer, two’s complement method is used.  
+Given an integer, write an algorithm to convert it to hexadecimal. For negative integer, two's complement method is used.  
 
 Note:  
 
@@ -32,8 +32,10 @@ Note:
     Output:
     "ffffffff"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-a-number-to-hexadecimal)  
+Blog link: <http://brain.dennyzhang.com/convert-a-number-to-hexadecimal>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.

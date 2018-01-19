@@ -17,9 +17,11 @@ Input: numbers={2, 7, 11, 15}, target=9
 
 Output: index1=1, index2=2  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-ii-input-array-is-sorted)  
+Blog link: <http://brain.dennyzhang.com/two-sum-ii-input-array-is-sorted>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Hint: Time O(n), Space O(1). Moore voting  
 

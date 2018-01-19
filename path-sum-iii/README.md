@@ -1,4 +1,4 @@
-# Leetcode: Path Sum III     :BLOG:Medium:
+# Leetcode: Path Sum III     :BLOG:Hard:
 
 
 ---
@@ -33,8 +33,10 @@ The tree has no more than 1,000 nodes and the values are in the range -1,000,000
     2.  5 -> 2 -> 1
     3. -3 -> 11
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-iii)  
+Blog link: <http://brain.dennyzhang.com/path-sum-iii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/path-sum-iii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.

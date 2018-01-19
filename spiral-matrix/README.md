@@ -1,4 +1,4 @@
-# Leetcode: Spiral Matrix     :BLOG:Hard:
+# Leetcode: Spiral Matrix     :BLOG:Medium:
 
 
 ---
@@ -19,9 +19,11 @@ Given a matrix of m x n elements (m rows, n columns), return all elements of the
     ]
     You should return [1,2,3,6,9,8,7,4,5].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix)  
+Blog link: <http://brain.dennyzhang.com/spiral-matrix>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/spiral-matrix/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -43,8 +45,8 @@ Leave me comments, if you know how to solve.
             """
             row_count = len(matrix)
             if row_count == 0:
-                return 
-            res = 
+                return []
+            res = []
             column_count = len(matrix[0])
             num1, num2 = column_count, row_count - 1
             direction_list = 'rdlu'

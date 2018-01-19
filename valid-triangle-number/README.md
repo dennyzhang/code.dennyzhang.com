@@ -1,4 +1,4 @@
-# Leetcode: Valid Triangle Number     :BLOG:Numbers:
+# Leetcode: Valid Triangle Number     :BLOG:Medium:
 
 
 ---
@@ -24,7 +24,11 @@ Note:
 1.  The length of the given array won't exceed 1000.
 2.  The integers in the given array are in the range of [0, 1000].
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/valid-triangle-number/description/)  
+Blog link: <http://brain.dennyzhang.com/valid-triangle-number>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -68,4 +72,4 @@ Leave me comments, if you know how to solve.
             return res
 
 More Reading:  
--   [Leetcode: Triangle](http://brain.dennyzhang.com/triangle/)
+-   [[<http://brain.dennyzhang.com/valid-triangle-number>

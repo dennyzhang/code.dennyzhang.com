@@ -18,9 +18,11 @@ Here is an example of version numbers ordering:
 
 0.1 < 1.1 < 1.2 < 13.37  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/compare-version-numbers)  
+Blog link: <http://brain.dennyzhang.com/compare-version-numbers>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/compare-version-numbers/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

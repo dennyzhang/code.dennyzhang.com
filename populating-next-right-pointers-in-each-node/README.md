@@ -37,9 +37,11 @@ Note:
          / \  / \
         4->5->6->7 -> NULL
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node)  
+Blog link: <http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

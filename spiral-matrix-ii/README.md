@@ -1,4 +1,4 @@
-# Leetcode: Spiral Matrix II     :BLOG:Hard:
+# Leetcode: Spiral Matrix II     :BLOG:Medium:
 
 
 ---
@@ -19,9 +19,11 @@ Given an integer n, generate a square matrix filled with elements from 1 to n2 i
      [ 7, 6, 5 ]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix-ii)  
+Blog link: <http://brain.dennyzhang.com/spiral-matrix-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/spiral-matrix-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -42,8 +44,8 @@ Leave me comments, if you know how to solve.
             :rtype: List[List[int]]
             """
             if n <= 0:
-                return 
-            res = 
+                return []
+            res = []
             for i in xrange(n):
                 res.append([None]*n)
     

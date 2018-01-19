@@ -17,21 +17,23 @@ Note:
 1.  The order of the result is not important. So in the above example, [5, 3] is also correct.
 2.  Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-iii)  
+Blog link: <http://brain.dennyzhang.com/single-number-iii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/single-number-iii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
+Useful link: here  
 
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
+    ##     Sample Data:
+    ##       1 2 3 2 3 3
     ## Complexity: Time O(n), Space O(1)
-    ## Sample Data:
-    ##    1 2 3 2 3 3
     ## Asummption:
     class Solution(object):
         def majorityElement(self, nums):
@@ -41,7 +43,7 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
             """
             length = len(nums)
             if length == 0:
-                return 
+                return []
             n1, n2 = None, None
             c1, c2 = 0, 0
             for num in nums:
@@ -62,7 +64,7 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
                 elif num == n2:
                     c2 += 1
             # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
+            res = []
             if c1 > length/3:
                 res.append(n1)
             if c2 > length/3:

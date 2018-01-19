@@ -31,9 +31,11 @@ Note:
 -   The length of words will be in the range [1, 1000].
 -   The length of words[i] will be in the range [1, 30].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-word-in-dictionary)  
+Blog link: <http://brain.dennyzhang.com/longest-word-in-dictionary>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/longest-word-in-dictionary/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -75,7 +77,7 @@ Leave me comments, if you know how to solve.
             #   Only check nodes with is_word as True
             #   When node has no children, we 
             max_length, max_str = 0, ''
-            queue = 
+            queue = []
             # initialize queue
             # Since we have sorted the keys, we will get smallest lexicographical match
             for ch in sorted(node.children):

@@ -12,9 +12,11 @@ Calculate the sum of two integers a and b, but you are not allowed to use the op
 Example:  
 Given a = 1 and b = 2, return 3.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-two-integers)  
+Blog link: <http://brain.dennyzhang.com/sum-of-two-integers>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/sum-of-two-integers/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

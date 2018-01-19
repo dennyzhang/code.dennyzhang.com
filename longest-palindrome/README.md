@@ -25,12 +25,16 @@ Assume the length of given string will not exceed 1,010.
     Explanation:
     One longest palindrome that can be built is "dccaccd", whose length is 7.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindrome)  
+Blog link: <http://brain.dennyzhang.com/longest-palindrome>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/longest-palindrome/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas:
+    ## Complexity:
     class Solution(object):
         def longestPalindrome(self, s):
             """

@@ -19,11 +19,13 @@ Given a sorted array consisting of only integers where every element appears twi
 
 Note: Your solution should run in O(log n) time and O(1) space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-element-in-a-sorted-array)  
+Blog link: <http://brain.dennyzhang.com/single-element-in-a-sorted-array>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)  
+Github: challenges-leetcode-interesting  
 
-Useful link: [here](https://leetcode.com/problems/single-element-in-a-sorted-array/discuss/100763)  
+Credits To: leetcode.com  
+
+Useful link: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -65,7 +67,7 @@ Leave me comments, if you know how to solve.
     print s.singleNonDuplicate([1,1,2])
     print s.singleNonDuplicate([1,1,2,3,3,4,4,8,8])
     print s.singleNonDuplicate([3,3,7,7,10,11,11])
-    print s.singleNonDuplicate()
+    print s.singleNonDuplicate([])
 
 More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+-   [[<http://brain.dennyzhang.com/single-element-in-a-sorted-array>

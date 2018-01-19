@@ -21,9 +21,11 @@ Given a non-empty string s, you may delete at most one character. Judge whether 
 Note:  
 The string will only contain lowercase characters a-z. The maximum length of the string is 50000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome-ii)  
+Blog link: <http://brain.dennyzhang.com/valid-palindrome-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

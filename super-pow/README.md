@@ -23,9 +23,11 @@ Your task is to calculate a^b mod 1337 where a is a positive integer and b is an
     
     Result: 1024
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/super-pow)  
+Blog link: <http://brain.dennyzhang.com/super-pow>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/super-pow/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

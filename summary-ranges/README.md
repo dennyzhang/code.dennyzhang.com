@@ -17,9 +17,11 @@ Given a sorted integer array without duplicates, return the summary of its range
     Input: [0,2,3,4,6,8,9]
     Output: ["0","2->4","6","8->9"]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/summary-ranges)  
+Blog link: <http://brain.dennyzhang.com/summary-ranges>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/summary-ranges/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -32,7 +34,7 @@ Leave me comments, if you know how to solve.
             :type nums: List[int]
             :rtype: List[str]
             """
-            res = 
+            res = []
             length = len(nums)
             i=0
             while i<length:

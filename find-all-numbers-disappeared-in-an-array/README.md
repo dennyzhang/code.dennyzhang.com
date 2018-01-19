@@ -21,22 +21,24 @@ Example:
     Output:
     [5,6]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array)  
+Blog link: <http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)  
+Github: challenges-leetcode-interesting  
 
+Credits To: leetcode.com  
+
+    ## Basic Ideas: traverse each item
+    ## Complexity:
+    ##  1,2,3,4,5,6,7,8
+    ##
+    ##  4,3,2,7,8,2,3,1
+    ##  1,2,3,4,    7,8
     class Solution(object):
         def findDisappearedNumbers(self, nums):
             """
             :type nums: List[int]
             :rtype: List[int]
             """
-            ## Basic Idea: traverse each item
-            ## Complexity:
-            ##  1,2,3,4,5,6,7,8
-            ##
-            ##  4,3,2,7,8,2,3,1
-            ##  1,2,3,4,    7,8
             for i in range(0, len(nums)):
                 value = nums[i]
                 if (value == i+1):
@@ -47,7 +49,7 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/find-all-numbers-disapp
                     nums[value-1] = value
                     value = tmp
     
-            ret = 
+            ret = []
             for i in range(0, len(nums)):
                 if nums[i] != (i+1):
                     ret.append(i+1)
@@ -56,4 +58,4 @@ Credits To: [Leetcode.com](https://leetcode.com/problems/find-all-numbers-disapp
 Leave me comments, if you know how to solve.  
 
 More Reading:  
--   [Leetcode: Find the Duplicate Number](http://brain.dennyzhang.com/find-duplicate-num/)
+-   [[<http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array>

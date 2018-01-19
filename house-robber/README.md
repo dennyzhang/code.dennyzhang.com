@@ -11,9 +11,11 @@ You are a professional robber planning to rob houses along a street. Each house 
 
 Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber)  
+Blog link: <http://brain.dennyzhang.com/house-robber>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/house-robber/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

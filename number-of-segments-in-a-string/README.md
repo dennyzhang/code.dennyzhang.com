@@ -16,9 +16,11 @@ Please note that the string does not contain any non-printable characters.
     Input: "Hello, my name is John"
     Output: 5
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-segments-in-a-string)  
+Blog link: <http://brain.dennyzhang.com/number-of-segments-in-a-string>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/number-of-segments-in-a-string/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

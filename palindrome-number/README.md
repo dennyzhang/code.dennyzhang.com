@@ -9,21 +9,30 @@ Determine whether an integer is a palindrome. Do this without extra space.
 
 Determine whether an integer is a palindrome. Do this without extra space.  
 
-    Some hints:
+Some hints:  
+
     Could negative integers be palindromes? (ie, -1)
     
     If you are thinking of converting the integer to string, note the restriction of using extra space.
     
-    You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?
+    You could also try reversing an integer. However, if you have solved
+    the problem "Reverse Integer", you know that the reversed integer
+    might overflow. How would you handle such case?
     
     There is a more generic way of solving this problem.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-number)  
+Blog link: <http://brain.dennyzhang.com/palindrome-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/palindrome-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas:  Generate a new integer Y from right digit to left digit
+    ##               Then compare it with X
+    ##         1234321: 1 -> 12 -> 13 -> 134 ...
+    ## Complexity: Time O(1), Space O(1). The integer can be at most 32 digits
     class Solution(object):
         def isPalindrome(self, x):
             """
@@ -33,6 +42,7 @@ Leave me comments, if you know how to solve.
             if x < 0:
                 return False
             if x == 0:
+    
                 return True
             val = x
             y = 0

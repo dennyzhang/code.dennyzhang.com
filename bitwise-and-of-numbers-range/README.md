@@ -1,4 +1,4 @@
-# Puzzle: Bitwise AND of Numbers Range     :BLOG:Numbers:
+# Leetcode: Bitwise AND of Numbers Range     :BLOG:Medium:
 
 
 ---
@@ -11,7 +11,11 @@ Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of 
 
 For example, given the range [5, 7], you should return 4.  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/)  
+Blog link: <http://brain.dennyzhang.com/bitwise-and-of-numbers-range>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -60,4 +64,4 @@ Leave me comments, if you know how to solve.
             return res
 
 More Reading:  
--   [Puzzle: Guess Number Higher or Lower](http://brain.dennyzhang.com/guess-high-low/)
+-   [[<http://brain.dennyzhang.com/bitwise-and-of-numbers-range>

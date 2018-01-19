@@ -9,9 +9,11 @@ Sort linked list
 
 Sort a linked list in O(n log n) time using constant space complexity.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-list)  
+Blog link: <http://brain.dennyzhang.com/sort-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/sort-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

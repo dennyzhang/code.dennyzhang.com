@@ -9,10 +9,10 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.  
 
--   push(x) -- Push element x onto stack.
--   pop() -- Removes the element on top of the stack.
--   top() -- Get the top element.
--   getMin() -- Retrieve the minimum element in the stack.
+-   push(x) &#x2013; Push element x onto stack.
+-   pop() &#x2013; Removes the element on top of the stack.
+-   top() &#x2013; Get the top element.
+-   getMin() &#x2013; Retrieve the minimum element in the stack.
 
     Example:
     MinStack minStack = new MinStack();
@@ -24,9 +24,11 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
     minStack.top();      --> Returns 0.
     minStack.getMin();   --> Returns -2.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/min-stack)  
+Blog link: <http://brain.dennyzhang.com/min-stack>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/min-stack/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -45,7 +47,7 @@ Leave me comments, if you know how to solve.
             """
             self.length = 0
             self.min_value = None
-            self.values = 
+            self.values = []
     
     
         def push(self, x):

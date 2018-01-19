@@ -31,9 +31,11 @@ click to show hint.
 
 You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-and-search-word-data-structure-design)  
+Blog link: <http://brain.dennyzhang.com/add-and-search-word-data-structure-design>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

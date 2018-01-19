@@ -30,9 +30,11 @@ Note:
 -   nums will have a length in the range [1, 50].
 -   Every nums[i] will be an integer in the range [0, 99].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-number-at-least-twice-of-others)  
+Blog link: <http://brain.dennyzhang.com/largest-number-at-least-twice-of-others>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -77,8 +79,8 @@ Leave me comments, if you know how to solve.
     s = Solution()
     print s.dominantIndex([3, 6, 1, 0]) 
     print s.dominantIndex([1, 2, 3, 4])
-    print s.dominantIndex()
+    print s.dominantIndex([])
     print s.dominantIndex([1])
 
 More Reading:  
--   [Leetcode: Majority Element](http://brain.dennyzhang.com/majority-element/)
+-   [[<http://brain.dennyzhang.com/largest-number-at-least-twice-of-others>

@@ -24,9 +24,13 @@ function refresh_Link() {
 }
 
 function refresh_md() {
-    echo "refresh README.md"
+    echo "Use emacs to refresh README.md"
     for f in $(find . -name README.org); do
+        echo "Update $f"
         dirname=$(basename $(dirname $f))
+        cd $dirname
+        /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_9 --batch -l ../update_md.el
+        cd ..
     done
 }
 

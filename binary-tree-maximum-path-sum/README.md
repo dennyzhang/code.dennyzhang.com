@@ -19,9 +19,11 @@ For this problem, a path is defined as any sequence of nodes from some starting 
          2   3
     Return 6.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Blog link: <http://brain.dennyzhang.com/binary-tree-maximum-path-sum>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

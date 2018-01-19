@@ -9,19 +9,21 @@ Sum of Left Leaves
 
 Find the sum of all left leaves in a given binary tree.  
 
-Example:  
-
-  3  
- / \\  
-9  20  
-  /  \\  
- 15   7  
+    Example:
+    
+        3
+       / \
+      9  20
+        /  \
+       15   7
 
 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-left-leaves)  
+Blog link: <http://brain.dennyzhang.com/sum-of-left-leaves>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/sum-of-left-leaves/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

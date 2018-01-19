@@ -19,9 +19,11 @@ Note:
 -   Given n will always be valid.
 -   Try to do this in one pass.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-nth-node-from-end-of-list)  
+Blog link: <http://brain.dennyzhang.com/remove-nth-node-from-end-of-list>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

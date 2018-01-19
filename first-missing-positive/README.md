@@ -15,19 +15,21 @@ Given an unsorted integer array, find the first missing positive integer.
 
 Your algorithm should run in O(n) time and uses constant space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive)  
+Blog link: <http://brain.dennyzhang.com/first-missing-positive>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/first-missing-positive/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
     ## Basic Ideas: count sort. Put each number in its right place.
-    ## Complexity:
-    ## Sample Data:
+    ##    Sample Data:
     ##    1  2  0
     ##    3  4  0  1
     ##    0  4  3  1
     ##    0  1  3  4
+    ## Complexity:
     class Solution(object):
         def firstMissingPositive(self, nums):
             """
@@ -60,4 +62,4 @@ Leave me comments, if you know how to solve.
     print s.firstMissingPositive([3,4,-1,1])
 
 More Reading:  
--   [Leetcode: Find All Numbers Disappeared in an Array](http://brain.dennyzhang.com/find-disappeared/)
+-   [[<http://brain.dennyzhang.com/first-missing-positive>

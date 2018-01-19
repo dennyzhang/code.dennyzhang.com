@@ -12,9 +12,11 @@ Write a function that takes a string as input and returns the string reversed.
 Example:  
 Given s = "hello", return "olleh".  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-string)  
+Blog link: <http://brain.dennyzhang.com/reverse-string>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/reverse-string/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

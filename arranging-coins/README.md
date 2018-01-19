@@ -36,9 +36,11 @@ n is a non-negative integer and fits within the range of a 32-bit signed integer
     
     Because the 4th row is incomplete, we return 3.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/arranging-coins)  
+Blog link: <http://brain.dennyzhang.com/arranging-coins>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/arranging-coins/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

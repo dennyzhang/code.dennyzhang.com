@@ -20,9 +20,11 @@ Given an array of strings, group anagrams together.
 
 Note: All inputs will be in lower-case.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/group-anagrams)  
+Blog link: <http://brain.dennyzhang.com/group-anagrams>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/group-anagrams/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -42,7 +44,7 @@ Leave me comments, if you know how to solve.
                 else:
                     m[sorted_item] = [item]
     
-            res = 
+            res = []
             for key in m:
                 res.append(m[key])
             return res

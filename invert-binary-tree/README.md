@@ -22,9 +22,11 @@ to
      / \   / \
     9   6 3   1
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/invert-binary-tree)  
+Blog link: <http://brain.dennyzhang.com/invert-binary-tree>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/invert-binary-tree/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -45,7 +47,7 @@ Leave me comments, if you know how to solve.
             ## Complexity:
             if root is None:
                 return root
-            queue = 
+            queue = []
             queue.append(root)
             while len(queue) != 0:
                 element = queue.pop()

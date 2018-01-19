@@ -29,7 +29,11 @@ Binary tree [2,1,3], return true.
 
 Binary tree [1,2,3], return false.  
 
-<https://leetcode.com/problems/validate-binary-search-tree/description/>  
+Blog link: <http://brain.dennyzhang.com/validate-binary-search-tree>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
     # Definition for a binary tree node.
     # class TreeNode(object):
@@ -85,9 +89,9 @@ Binary tree [1,2,3], return false.
     
         def getBST(self, root):
             if root is None:
-                return 
+                return []
     
-            res = 
+            res = []
             if root.left:
                 res += self.getBST(root.left)
     

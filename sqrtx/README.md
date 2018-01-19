@@ -24,9 +24,11 @@ x is guaranteed to be a non-negative integer.
     Output: 2
     Explanation: The square root of 8 is 2.82842..., and since we want to return an integer, the decimal part will be truncated.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sqrtx)  
+Blog link: <http://brain.dennyzhang.com/sqrtx>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/sqrtx/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -25,9 +25,11 @@ Notes:
 -   You may assume there are no cycles anywhere in the entire linked structure.
 -   Your code should preferably run in O(n) time and use only O(1) memory.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/intersection-of-two-linked-list)  
+Blog link: <http://brain.dennyzhang.com/intersection-of-two-linked-lists>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/intersection-of-two-linked-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

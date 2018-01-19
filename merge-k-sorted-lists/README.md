@@ -9,9 +9,11 @@ Merge k Sorted Lists
 
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-k-sorted-lists)  
+Blog link: <http://brain.dennyzhang.com/merge-k-sorted-lists>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/merge-k-sorted-lists/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -36,7 +38,7 @@ Leave me comments, if you know how to solve.
             p = dummyNode
     
             length = len(lists)
-            p_list = 
+            p_list = []
             # Configure the heads
             for i in xrange(length):
                 if lists[i]:
@@ -63,4 +65,4 @@ Leave me comments, if you know how to solve.
             return dummyNode.next
     
     s = Solution()
-    print s.mergeKLists([, ])
+    print s.mergeKLists([[], []])

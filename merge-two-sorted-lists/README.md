@@ -14,9 +14,11 @@ Example:
 Input: 1->2->4, 1->3->4  
 Output: 1->1->2->3->4->4  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-sorted-list)  
+Blog link: <http://brain.dennyzhang.com/merge-two-sorted-lists>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/merge-two-sorted-list/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

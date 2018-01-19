@@ -9,19 +9,14 @@ Construct Binary Tree from Preorder and Inorder Traversal
 
 Given preorder and inorder traversal of a tree, construct the binary tree.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-preorder-and-inorder-traversal)  
+Blog link: <http://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Ideas:
-    ##  Preorder: M L R
-    ##   Inorder: L R M
-    ##  Take the first of preorder as root
-    ##  Locate root in Inorder, since no duplicate
-    ##  Divide and conquer for left sub-tree and right sub-tree
-    ## Complexity: Time O(n), Space O(n)
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):
@@ -30,7 +25,24 @@ Leave me comments, if you know how to solve.
     #         self.right = None
     
     class Solution(object):
+        ## Basic Ideas: non-recursive way by backtracking
+        ##            Build the root
+        ##            If it has left sub-tree, push to stack
         def buildTree(self, preorder, inorder):
+            """
+            :type preorder: List[int]
+            :type inorder: List[int]
+            :rtype: TreeNode
+            """
+    
+        ## Basic Ideas:
+        ##  Preorder: M L R
+        ##   Inorder: L R M
+        ##  Take the first of preorder as root
+        ##  Locate root in Inorder, since no duplicate
+        ##  Divide and conquer for left sub-tree and right sub-tree
+        ## Complexity: Time O(n), Space O(n)
+        def buildTree_v1(self, preorder, inorder):
             """
             :type preorder: List[int]
             :type inorder: List[int]

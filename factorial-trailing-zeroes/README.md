@@ -11,9 +11,11 @@ Given an integer n, return the number of trailing zeroes in n!.
 
 Note: Your solution should be in logarithmic time complexity.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/factorial-trailing-zeroes)  
+Blog link: <http://brain.dennyzhang.com/factorial-trailing-zeroes>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/factorial-trailing-zeroes/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

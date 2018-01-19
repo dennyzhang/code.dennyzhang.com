@@ -53,9 +53,11 @@ Note:
 All characters have an ASCII value in [35, 126].  
 1 <= len(chars) <= 1000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/string-compression)  
+Blog link: <http://brain.dennyzhang.com/string-compression>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/string-compression/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

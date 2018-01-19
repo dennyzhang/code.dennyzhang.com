@@ -20,9 +20,11 @@ Given a binary tree and a sum, determine if the tree has a root-to-leaf path suc
             7    2      1
     return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum)  
+Blog link: <http://brain.dennyzhang.com/path-sum>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/path-sum/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -37,7 +39,7 @@ Leave me comments, if you know how to solve.
         def hasPathSum(self, root, sum):
             if root is None:
                 return False
-            queue = 
+            queue = []
             queue.append((root, 0))
             while len(queue) != 0:
                 (element, current_sum) = queue[0]

@@ -1,4 +1,4 @@
-# Leetcode: Power of Four     :BLOG:Hard:
+# Leetcode: Power of Four     :BLOG:Medium:
 
 
 ---
@@ -14,15 +14,13 @@ Given num = 16, return true. Given num = 5, return false.
 
 Follow up: Could you solve it without loops/recursion?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/power-of-four)  
+Blog link: <http://brain.dennyzhang.com/power-of-four>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/power-of-four/description/)  
+Github: challenges-leetcode-interesting  
 
-Hint: Time O(n), Space O(1). Moore voting  
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
-
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
     class Solution(object):
         def isPowerOfFour(self, num):

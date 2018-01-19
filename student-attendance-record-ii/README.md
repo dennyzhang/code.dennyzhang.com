@@ -28,9 +28,11 @@ Example 1:
 
 Note: The value of n won't exceed 100,000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-ii)  
+Blog link: <http://brain.dennyzhang.com/student-attendance-record-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/student-attendance-record-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

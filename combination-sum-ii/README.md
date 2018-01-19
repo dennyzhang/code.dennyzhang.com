@@ -24,9 +24,11 @@ Note:
       [1, 1, 6]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum-ii)  
+Blog link: <http://brain.dennyzhang.com/combination-sum-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/combination-sum-ii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -48,8 +50,8 @@ Leave me comments, if you know how to solve.
         def mycombinationSum2(self, candidates, target):
             length = len(candidates)
             if length == 0:
-                return 
-            res = 
+                return []
+            res = []
             v = candidates[0]
             if target >= v:
                 # choose

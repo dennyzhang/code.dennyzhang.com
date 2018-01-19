@@ -29,9 +29,11 @@ Example:
     cache.get(3);       // returns 3
     cache.get(4);       // returns 4
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lru-cache)  
+Blog link: <http://brain.dennyzhang.com/lru-cache>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/lru-cache/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

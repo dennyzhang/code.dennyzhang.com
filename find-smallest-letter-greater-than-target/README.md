@@ -49,9 +49,11 @@ Note:
 2.  letters consists of lowercase letters, and contains at least 2 unique letters.
 3.  target is a lowercase letter.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-smallest-letter-greater-than-target)  
+Blog link: <http://brain.dennyzhang.com/find-smallest-letter-greater-than-target>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

@@ -21,9 +21,11 @@ Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
 
 The number of ways decoding "12" is 2.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/decode-ways)  
+Blog link: <http://brain.dennyzhang.com/decode-ways>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/decode-ways/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -41,7 +43,7 @@ Leave me comments, if you know how to solve.
             """
             length = len(nums)
             if length == 0:
-                return 
+                return []
             n1, n2 = None, None
             c1, c2 = 0, 0
             for num in nums:
@@ -62,7 +64,7 @@ Leave me comments, if you know how to solve.
                 elif num == n2:
                     c2 += 1
             # print("n1: %d, c1: %d, n2: %d, c2: %d. length: %d" % (n1, c1, n2, c2, length))
-            res = 
+            res = []
             if c1 > length/3:
                 res.append(n1)
             if c2 > length/3:

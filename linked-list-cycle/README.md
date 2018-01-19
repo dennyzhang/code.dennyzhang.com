@@ -12,9 +12,11 @@ Given a linked list, determine if it has a cycle in it.
 Follow up:  
 Can you solve it without using extra space?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-cycle)  
+Blog link: <http://brain.dennyzhang.com/linked-list-cycle>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/linked-list-cycle/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

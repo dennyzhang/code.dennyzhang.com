@@ -21,27 +21,29 @@ Example:
     Output:
     [2,3]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-duplicates-in-an-array)  
+Blog link: <http://brain.dennyzhang.com/find-all-duplicates-in-an-array>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: count sort
+    ## Complexity: Time O(n), Space (1)
+    ##   1 2 3 4 5 6 7 8
+    ##   4 3 2 7 8 2 3 2
+    ##     2 3 4     7
     class Solution(object):
         def findDuplicates(self, nums):
             """
             :type nums: List[int]
             :rtype: List[int]
             """
-            ## Basic Idea: count sort
-            ## Complexity: Time O(n), Space (1)
-            ##   1 2 3 4 5 6 7 8
-            ##   4 3 2 7 8 2 3 2
-            ##     2 3 4     7
             i = 0
             length = len(nums)
             if length < 2:
-                return 
+                return []
     
             while i < length:
                 # move to next if in position or the same
@@ -51,11 +53,11 @@ Leave me comments, if you know how to solve.
                     j = nums[i] - 1
                     # swap nums[i] and nums[j]
                     nums[i], nums[j] = nums[j], nums[i]
-            res = 
+            res = []
             for i in xrange(length):
                 if nums[i]  != i+1:
                     res.append(nums[i])
             return res
 
 More Reading:  
--   [Leetcode: Find All Duplicates in an Array](http://brain.dennyzhang.com/find-duplicate/)
+-   [[<http://brain.dennyzhang.com/find-all-duplicates-in-an-array>

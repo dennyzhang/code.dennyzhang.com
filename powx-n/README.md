@@ -19,9 +19,11 @@ Implement pow(x, n).
     Input: 2.10000, 3
     Output: 9.26100
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/powx-n)  
+Blog link: <http://brain.dennyzhang.com/powx-n>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/powx-n/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

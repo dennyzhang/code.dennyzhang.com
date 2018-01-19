@@ -21,8 +21,10 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from inde
 Note:  
 You can assume that you can always reach the last index.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game-ii)  
+Blog link: <http://brain.dennyzhang.com/jump-game-ii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/jump-game-ii</description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.

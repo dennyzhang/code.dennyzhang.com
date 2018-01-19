@@ -1,4 +1,4 @@
-# Leetcode: Triangle     :BLOG:Matrix:
+# Leetcode: Triangle     :BLOG:Medium:
 
 
 ---
@@ -20,7 +20,11 @@ For example, given the following triangle
 
 The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/triangle/description/)  
+Blog link: <http://brain.dennyzhang.com/triangle>  
+
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -88,4 +92,4 @@ Leave me comments, if you know how to solve.
             return last_mininum_list[0] + triangle[0][0]
 
 More Reading:  
--   [Leetcode: Valid Triangle Number](http://brain.dennyzhang.com/triangle-number/)
+-   [[<http://brain.dennyzhang.com/triangle>

@@ -13,9 +13,11 @@ Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For 
 
 Note that 1 is typically treated as an ugly number.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ugly-number)  
+Blog link: <http://brain.dennyzhang.com/ugly-number>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/ugly-number/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 

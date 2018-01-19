@@ -9,9 +9,11 @@ Contains Duplicate III
 
 Given an array of integers, find out whether there are two distinct indices i and j in the array such that the absolute difference between nums[i] and nums[j] is at most t and the absolute difference between i and j is at most k.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate-iii)  
+Blog link: <http://brain.dennyzhang.com/contains-duplicate-iii>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/contains-duplicate-iii/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
@@ -29,7 +31,7 @@ Leave me comments, if you know how to solve.
             length = len(nums)
             if length <= 0: return False
             if k == 0: return False
-            s = set()
+            s = set([])
             for i in xrange(length):
                 if i > k:
                     s.remove(nums[i-k-1])

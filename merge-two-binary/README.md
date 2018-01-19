@@ -29,9 +29,11 @@ You need to merge them into a new binary tree. The merge rule is that if two nod
 
 Note: The merging process must start from the root nodes of both trees.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-binary)  
+Blog link: <http://brain.dennyzhang.com/merge-two-binary>  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/merge-two-binary/description/)  
+Github: challenges-leetcode-interesting  
+
+Credits To: leetcode.com  
 
 Leave me comments, if you know how to solve.  
 
