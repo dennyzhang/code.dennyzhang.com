@@ -1,82 +1,31 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Permutation in String     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Permutation in String  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+    Example 1:
+    Input:s1 = "ab" s2 = "eidbaooo"
+    Output:True
+    Explanation: s2 contains one permutation of s1 ("ba").
 
-A partially filled sudoku which is valid.  
+    Example 2:
+    Input:s1= "ab" s2 = "eidboaoo"
+    Output: False
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+1.  The input strings only contain lower case letters.
+2.  The length of both given strings is in range [1, 10,000].
 
-Blog link: <http://brain.dennyzhang.com/valid-sudoku>  
+Blog link: <http://brain.dennyzhang.com/permutation-in-string>  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutation-in-string)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/permutation-in-string/description)  
 
-Leave me comments, if you know how to solve.  
-
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
-    ##
-    ## Complexity: Time O(1), Space O(1)
-    class Solution(object):
-        def isValidSudoku(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: bool
-            """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+Leave me comments, if you know how to solve.

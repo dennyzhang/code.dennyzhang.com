@@ -65,10 +65,8 @@ Leave me comments, if you know how to solve.
             :type t: TreeNode
             :rtype: bool
             """
-            if t is None:
-                return True
-            if s is None:
-                return False
+            if t is None: return True
+            if s is None: return False
             if s.val == t.val:
                 if self.isSameTree(s.left, t.left) and \
                     self.isSameTree(s.right, t.right):
@@ -82,11 +80,8 @@ Leave me comments, if you know how to solve.
                 return True if b2 else False
     
         def isSameTree(self, s, t):
-            if s is None:
-                return t is None
-            if t is None:
-                return s is None
-            if s.val != t.val:
-                return False
+            if s is None or t is None:
+                return (s is None) and (t is None)
+            if s.val != t.val: return False
             return self.isSameTree(s.left, t.left) and \
                 self.isSameTree(s.right, t.right)

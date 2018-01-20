@@ -63,7 +63,7 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: int
             """
-            queue = 
+            queue = []
             queue.append(root)
             res = None
             while len(queue) != 0:
