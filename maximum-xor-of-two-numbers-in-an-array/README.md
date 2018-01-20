@@ -46,28 +46,9 @@ Leave me comments, if you know how to solve.
     class TrieNode(object):
         def __init__(self):
             self.children = collections.defaultdict(TrieNode)
-            self.is_word = False
             self.label = None
     
-    
     class Solution(object):
-        def printTrieTreeLevelOrder(self, node):
-            print("printTrieTreeLevelOrder")
-            if node.is_word:
-                print("Node is a word")
-            queue = 
-            queue.append(node)
-            while len(queue) != 0:
-                s = ''
-                for i in xrange(len(queue)):
-                    node = queue[0]
-                    del queue[0]
-                    for child_key in node.children:
-                        s = '%s %s' % (s, child_key)
-                        queue.append(node.children[child_key])
-                if s != '':
-                    print 'print level children: %s' % (s)
-    
         def findMaximumXOR(self, nums):
             """
             :type nums: List[int]
