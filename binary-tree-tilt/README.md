@@ -32,9 +32,9 @@ All the tilt values won't exceed the range of 32-bit integer.
 
 Blog link: <http://brain.dennyzhang.com/binary-tree-tilt>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-tilt)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-tilt/description)  
 
 Leave me comments, if you know how to solve.  
 
