@@ -47,6 +47,10 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subtree-of-another-tree
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: pre-order trasversal
+    ##
+    ## Complexity: Time ? Space ?
+    ##
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):
@@ -61,3 +65,28 @@ Leave me comments, if you know how to solve.
             :type t: TreeNode
             :rtype: bool
             """
+            if t is None:
+                return True
+            if s is None:
+                return False
+            if s.val == t.val:
+                if self.isSameTree(s.left, t.left) and \
+                    self.isSameTree(s.right, t.right):
+                    return True
+    
+            b1 = self.isSubtree(s.left, t)
+            if b1:
+                return True
+            else:
+                b2 = self.isSubtree(s.right, t)
+                return True if b2 else False
+    
+        def isSameTree(self, s, t):
+            if s is None:
+                return t is None
+            if t is None:
+                return s is None
+            if s.val != t.val:
+                return False
+            return self.isSameTree(s.left, t.left) and \
+                self.isSameTree(s.right, t.right)
