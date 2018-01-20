@@ -1,4 +1,4 @@
-# Leetcode: Maximum XOR of Two Numbers in an Array     :BLOG:Basic:
+# Leetcode: Maximum XOR of Two Numbers in an Array     :BLOG:Amusing:
 
 
 ---

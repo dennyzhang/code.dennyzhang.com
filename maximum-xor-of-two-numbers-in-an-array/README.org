@@ -1,8 +1,8 @@
-* Leetcode: Maximum XOR of Two Numbers in an Array               :BLOG:Basic:
+* Leetcode: Maximum XOR of Two Numbers in an Array               :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #bitmanipulation, #trie, #inspiring
+:type:     #bitmanipulation, #trie, #inspiring, #manydetails
 :END:
 ---------------------------------------------------------------------
 Maximum XOR of Two Numbers in an Array
