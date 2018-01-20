@@ -1,0 +1,37 @@
+* Leetcode: Subsets II                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #combination, #codetemplate, #backtracking
+:END:
+---------------------------------------------------------------------
+Subsets II
+---------------------------------------------------------------------
+Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+
+Note: The solution set must not contain duplicate subsets.
+#+BEGIN_EXAMPLE
+For example,
+If nums = [1,2,2], a solution is:
+
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+#+END_EXAMPLE
+
+Blog link: http://brain.dennyzhang.com/subsets-ii
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/subsets-ii/description][leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+
+#+END_SRC

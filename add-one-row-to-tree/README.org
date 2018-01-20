@@ -71,6 +71,14 @@ Credits To: [[url-external:https://leetcode.com/problems/add-one-row-to-tree/des
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Basic Ideas: BFS
+##              Find nodes of d-1 level
+##              For each add left node or right node, if necessary
+##                  If node only have one child
+##                  If node have both children
+##                  If node have no children
+##
+## Complexity: Time O(n), Space O(k) k is the width of d-1 level
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -86,4 +94,34 @@ class Solution(object):
         :type d: int
         :rtype: TreeNode
         """
+        if d == 0: return None
+        if d == 1:
+            node = TreeNode(v)
+            node.left = root
+            return node
+        depth = 1
+        queue = []
+        queue.append(root)
+        while depth != d - 1:
+            for i in xrange(len(queue)):
+                node = queue[0]
+                del queue[0]
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            depth += 1
+
+        for i in xrange(len(queue)):
+            node = queue[0]
+            del queue[0]
+            # add left
+            t1 = TreeNode(v)
+            t1.left = node.left
+            node.left = t1
+            # add right
+            t2 = TreeNode(v)
+            t2.right = node.right
+            node.right = t2
+        return root
 #+END_SRC
