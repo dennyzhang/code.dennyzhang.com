@@ -19,15 +19,15 @@ Restrictions:
 
 Blog link: <http://brain.dennyzhang.com/reverse-string-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-string-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-string-ii/description)  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: here  
+Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
     class Solution(object):
         def reverseStr(self, s, k):

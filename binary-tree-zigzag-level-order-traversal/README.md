@@ -11,9 +11,9 @@ Given an integer array of size n, find all elements that appear more than n/3 ti
 
 Blog link: <http://brain.dennyzhang.com/binary-tree-zigzag-level-order-traversal>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-zigzag-level-order-traversal)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description)  
 
 Leave me comments, if you know how to solve.  
 

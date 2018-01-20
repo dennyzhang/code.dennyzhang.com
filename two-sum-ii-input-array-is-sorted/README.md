@@ -19,9 +19,9 @@ Output: index1=1, index2=2
 
 Blog link: <http://brain.dennyzhang.com/two-sum-ii-input-array-is-sorted>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-ii-input-array-is-sorted)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description)  
 
 Hint: Time O(n), Space O(1). Moore voting  
 

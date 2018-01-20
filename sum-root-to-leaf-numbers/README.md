@@ -25,9 +25,9 @@ Return the sum = 12 + 13 = 25.
 
 Blog link: <http://brain.dennyzhang.com/sum-root-to-leaf-numbers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-root-to-leaf-numbers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/sum-root-to-leaf-numbers/description)  
 
     class Solution(object):
         def sumNumbers(self, root):

@@ -17,9 +17,9 @@ Your function should return length = 5, with the first five elements of nums bei
 
 Blog link: <http://brain.dennyzhang.com/remove-duplicates-from-sorted-array-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-array-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -16,9 +16,9 @@ Your algorithm should use only constant space. You may not modify the values in 
 
 Blog link: <http://brain.dennyzhang.com/swap-nodes-in-pairs>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swap-nodes-in-pairs)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/swap-nodes-in-pairs/description)  
 
 Leave me comments, if you know how to solve.  
 

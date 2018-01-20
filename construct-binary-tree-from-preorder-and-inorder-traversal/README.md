@@ -11,9 +11,9 @@ Given preorder and inorder traversal of a tree, construct the binary tree.
 
 Blog link: <http://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-preorder-and-inorder-traversal)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description)  
 
 Leave me comments, if you know how to solve.  
 

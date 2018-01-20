@@ -23,9 +23,9 @@ Note: Do not use any built-in library function such as sqrt.
 
 Blog link: <http://brain.dennyzhang.com/valid-perfect-square>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-perfect-square)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-perfect-square/description)  
 
 Leave me comments, if you know how to solve.  
 

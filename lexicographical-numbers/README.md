@@ -15,9 +15,9 @@ Please optimize your algorithm to use less time and space. The input size may be
 
 Blog link: <http://brain.dennyzhang.com/lexicographical-numbers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lexicographical-numbers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/lexicographical-numbers/description)  
 
 Leave me comments, if you know how to solve.  
 

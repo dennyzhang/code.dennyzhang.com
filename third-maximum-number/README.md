@@ -33,9 +33,9 @@ Given a non-empty array of integers, return the third maximum number in this arr
 
 Blog link: <http://brain.dennyzhang.com/third-maximum-number>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/third-maximum-number)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/third-maximum-number/description)  
 
 Leave me comments, if you know how to solve.  
 

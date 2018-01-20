@@ -16,9 +16,9 @@ Output: 1->1->2->3->4->4
 
 Blog link: <http://brain.dennyzhang.com/merge-two-sorted-lists>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-sorted-lists)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-two-sorted-lists/description)  
 
 Leave me comments, if you know how to solve.  
 

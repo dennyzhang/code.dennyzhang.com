@@ -13,9 +13,9 @@ Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node wi
 
 Blog link: <http://brain.dennyzhang.com/delete-node-in-a-linked-list>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-node-in-a-linked-list)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/delete-node-in-a-linked-list/description)  
 
 Leave me comments, if you know how to solve.  
 

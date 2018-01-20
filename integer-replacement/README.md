@@ -39,8 +39,8 @@ Example 1:
 
 Blog link: <http://brain.dennyzhang.com/integer-replacement>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-replacement)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/integer-replacement/description)  
 
 Leave me comments, if you know how to solve.

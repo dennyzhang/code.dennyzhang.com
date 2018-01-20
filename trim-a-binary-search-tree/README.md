@@ -45,9 +45,9 @@ Given a binary search tree and the lowest and highest boundaries as L and R, tri
 
 Blog link: <http://brain.dennyzhang.com/trim-a-binary-search-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trim-a-binary-search-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/trim-a-binary-search-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -23,9 +23,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/valid-square>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-square)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-square/description)  
 
 Leave me comments, if you know how to solve.  
 

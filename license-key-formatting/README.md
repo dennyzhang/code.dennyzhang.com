@@ -35,9 +35,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/license-key-formatting>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/license-key-formatting)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/license-key-formatting/description)  
 
 Leave me comments, if you know how to solve.  
 

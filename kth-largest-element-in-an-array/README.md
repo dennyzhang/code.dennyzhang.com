@@ -16,9 +16,9 @@ You may assume k is always valid, 1 <= k <= array's length.
 
 Blog link: <http://brain.dennyzhang.com/kth-largest-element-in-an-array>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/kth-largest-element-in-an-array)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-an-array/description)  
 
 Leave me comments, if you know how to solve.  
 

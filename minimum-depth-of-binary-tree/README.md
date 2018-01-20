@@ -13,9 +13,9 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 Blog link: <http://brain.dennyzhang.com/minimum-depth-of-binary-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-depth-of-binary-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/minimum-depth-of-binary-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

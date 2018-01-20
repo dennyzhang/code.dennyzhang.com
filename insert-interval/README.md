@@ -21,9 +21,9 @@ You may assume that the intervals were initially sorted according to their start
 
 Blog link: <http://brain.dennyzhang.com/insert-interval>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-interval)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/insert-interval/description)  
 
 Leave me comments, if you know how to solve.  
 

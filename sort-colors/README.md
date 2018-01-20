@@ -13,9 +13,9 @@ Here, we will use the integers 0, 1, and 2 to represent the color red, white, an
 
 Blog link: <http://brain.dennyzhang.com/sort-colors>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-colors)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/sort-colors/description)  
 
 Leave me comments, if you know how to solve.  
 

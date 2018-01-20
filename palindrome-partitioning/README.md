@@ -21,9 +21,9 @@ Return
 
 Blog link: <http://brain.dennyzhang.com/palindrome-partitioning>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-partitioning)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-partitioning/description)  
 
     ## Basic Ideas: Divide and conquer
     ## Complexity: Time O(), Space O()

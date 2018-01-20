@@ -21,9 +21,9 @@ Your function should return length = 2, with the first two elements of nums bein
 
 Blog link: <http://brain.dennyzhang.com/remove-element>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-element)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-element/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -23,9 +23,9 @@ Example:
 
 Blog link: <http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description)  
 
     ## Basic Ideas: traverse each item
     ## Complexity:

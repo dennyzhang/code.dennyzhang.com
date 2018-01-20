@@ -24,9 +24,9 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
 
 Blog link: <http://brain.dennyzhang.com/missing-number>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/missing-number)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/missing-number/description)  
 
 Leave me comments, if you know how to solve.  
 

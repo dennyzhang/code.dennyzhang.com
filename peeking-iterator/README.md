@@ -24,9 +24,9 @@ Special thanks to @porker2008 for adding this problem and creating all test case
 
 Blog link: <http://brain.dennyzhang.com/peeking-iterator>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/peeking-iterator)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/peeking-iterator/description)  
 
 Leave me comments, if you know how to solve.  
 

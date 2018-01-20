@@ -23,9 +23,9 @@ The number of ways decoding "12" is 2.
 
 Blog link: <http://brain.dennyzhang.com/decode-ways>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/decode-ways)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/decode-ways/description)  
 
 Leave me comments, if you know how to solve.  
 

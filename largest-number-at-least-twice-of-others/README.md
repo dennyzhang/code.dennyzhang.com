@@ -32,9 +32,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/largest-number-at-least-twice-of-others>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-number-at-least-twice-of-others)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -13,9 +13,9 @@ Given a list of non-negative integers representing the amount of money of each h
 
 Blog link: <http://brain.dennyzhang.com/house-robber>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/house-robber/description)  
 
 Leave me comments, if you know how to solve.  
 

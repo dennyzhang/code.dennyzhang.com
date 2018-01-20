@@ -22,9 +22,9 @@ Given a binary tree and a sum, determine if the tree has a root-to-leaf path suc
 
 Blog link: <http://brain.dennyzhang.com/path-sum>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/path-sum/description)  
 
 Leave me comments, if you know how to solve.  
 

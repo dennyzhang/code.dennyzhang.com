@@ -20,9 +20,9 @@ A = [3,2,1,0,4], return false.
 
 Blog link: <http://brain.dennyzhang.com/jump-game>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/jump-game/description)  
 
 Leave me comments, if you know how to solve.  
 

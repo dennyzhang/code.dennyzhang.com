@@ -20,9 +20,9 @@ A happy number is a number defined by the following process: Starting with any p
 
 Blog link: <http://brain.dennyzhang.com/happy-number>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/happy-number)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/happy-number/description)  
 
 Leave me comments, if you know how to solve.  
 

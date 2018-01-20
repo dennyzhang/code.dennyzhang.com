@@ -13,9 +13,9 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
 
 Blog link: <http://brain.dennyzhang.com/valid-parentheses>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-parentheses)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-parentheses/description)  
 
 Leave me comments, if you know how to solve.  
 

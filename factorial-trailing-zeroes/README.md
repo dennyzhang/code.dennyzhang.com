@@ -13,9 +13,9 @@ Note: Your solution should be in logarithmic time complexity.
 
 Blog link: <http://brain.dennyzhang.com/factorial-trailing-zeroes>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/factorial-trailing-zeroes)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/factorial-trailing-zeroes/description)  
 
 Leave me comments, if you know how to solve.  
 

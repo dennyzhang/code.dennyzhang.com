@@ -22,9 +22,9 @@ You need to find the largest value in each row of a binary tree.
 
 Blog link: <http://brain.dennyzhang.com/find-largest-value-in-each-tree-row>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-largest-value-in-each-tree-row)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description)  
 
 Leave me comments, if you know how to solve.  
 

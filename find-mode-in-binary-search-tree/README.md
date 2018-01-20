@@ -29,9 +29,9 @@ Follow up: Could you do that without using any extra space? (Assume that the imp
 
 Blog link: <http://brain.dennyzhang.com/find-mode-in-binary-search-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-mode-in-binary-search-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-mode-in-binary-search-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

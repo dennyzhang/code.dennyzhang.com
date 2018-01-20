@@ -26,9 +26,9 @@ Assume we are dealing with an environment which could only hold integers within 
 
 Blog link: <http://brain.dennyzhang.com/reverse-integer>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-integer)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-integer/description)  
 
 Leave me comments, if you know how to solve.  
 

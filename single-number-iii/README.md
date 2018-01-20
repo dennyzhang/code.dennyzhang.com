@@ -19,15 +19,15 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/single-number-iii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-iii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-number-iii/description)  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: here  
+Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.

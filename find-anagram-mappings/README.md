@@ -28,9 +28,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/find-anagram-mappings>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-anagram-mappings)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-anagram-mappings/description)  
 
 Leave me comments, if you know how to solve.  
 

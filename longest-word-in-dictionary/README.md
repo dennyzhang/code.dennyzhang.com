@@ -33,9 +33,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/longest-word-in-dictionary>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-word-in-dictionary)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-word-in-dictionary/description)  
 
 Leave me comments, if you know how to solve.  
 

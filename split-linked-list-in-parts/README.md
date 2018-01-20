@@ -41,9 +41,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/split-linked-list-in-parts>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-linked-list-in-parts)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/split-linked-list-in-parts/description)  
 
 Leave me comments, if you know how to solve.  
 

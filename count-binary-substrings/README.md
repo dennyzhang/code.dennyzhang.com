@@ -31,7 +31,7 @@ Substrings that occur multiple times are counted the number of times they occur.
 
 Blog link: <http://brain.dennyzhang.com/count-binary-substrings>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-binary-substrings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/count-binary-substrings/description)  
 

@@ -29,9 +29,9 @@ Note: The input will be a non-empty word consisting of uppercase and lowercase l
 
 Blog link: <http://brain.dennyzhang.com/detect-capital>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/detect-capital)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/detect-capital/description)  
 
 Leave me comments, if you know how to solve.  
 

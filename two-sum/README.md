@@ -20,9 +20,9 @@ Example:
 
 Blog link: <http://brain.dennyzhang.com/two-sum>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/two-sum/description)  
 
 Leave me comments, if you know how to solve.  
 

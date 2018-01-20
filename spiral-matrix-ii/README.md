@@ -21,9 +21,9 @@ Given an integer n, generate a square matrix filled with elements from 1 to n2 i
 
 Blog link: <http://brain.dennyzhang.com/spiral-matrix-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

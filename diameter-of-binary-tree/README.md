@@ -23,9 +23,9 @@ Note: The length of path between two nodes is represented by the number of edges
 
 Blog link: <http://brain.dennyzhang.com/diameter-of-binary-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/diameter-of-binary-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/diameter-of-binary-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

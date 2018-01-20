@@ -61,9 +61,9 @@ The given binary tree has at least one tree node.
 
 Blog link: <http://brain.dennyzhang.com/add-one-row-to-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-one-row-to-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-one-row-to-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

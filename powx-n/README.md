@@ -21,9 +21,9 @@ Implement pow(x, n).
 
 Blog link: <http://brain.dennyzhang.com/powx-n>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/powx-n)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/powx-n/description)  
 
 Leave me comments, if you know how to solve.  
 

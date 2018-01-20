@@ -15,9 +15,9 @@ Return: 1 &#x2013;> 2 &#x2013;> 3 &#x2013;> 4 &#x2013;> 5
 
 Blog link: <http://brain.dennyzhang.com/remove-linked-list-elements>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-linked-list-elements)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-linked-list-elements/description)  
 
 Leave me comments, if you know how to solve.  
 

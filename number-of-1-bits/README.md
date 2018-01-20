@@ -13,9 +13,9 @@ For example, the 32-bit integer '11' has binary representation 00000000000000000
 
 Blog link: <http://brain.dennyzhang.com/number-of-1-bits>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-1-bits)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/number-of-1-bits/description)  
 
 Leave me comments, if you know how to solve.  
 

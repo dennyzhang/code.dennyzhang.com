@@ -20,9 +20,9 @@ Given a string, find the first non-repeating character in it and return it's ind
 
 Blog link: <http://brain.dennyzhang.com/first-unique-character-in-a-string>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-unique-character-in-a-string)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/first-unique-character-in-a-string/description)  
 
 Leave me comments, if you know how to solve.  
 

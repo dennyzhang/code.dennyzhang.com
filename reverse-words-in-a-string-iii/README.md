@@ -16,9 +16,9 @@ Note: In the string, each word is separated by single space and there will not b
 
 Blog link: <http://brain.dennyzhang.com/reverse-words-in-a-string-iii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-words-in-a-string-iii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-string-iii/description)  
 
 Leave me comments, if you know how to solve.  
 

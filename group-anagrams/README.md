@@ -22,9 +22,9 @@ Note: All inputs will be in lower-case.
 
 Blog link: <http://brain.dennyzhang.com/group-anagrams>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/group-anagrams)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/group-anagrams/description)  
 
 Leave me comments, if you know how to solve.  
 

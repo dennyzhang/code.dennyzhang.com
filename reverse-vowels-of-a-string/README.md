@@ -20,9 +20,9 @@ The vowels does not include the letter "y".
 
 Blog link: <http://brain.dennyzhang.com/reverse-vowels-of-a-string>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-vowels-of-a-string)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-vowels-of-a-string/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -13,9 +13,9 @@ Note: You may not slant the container and n is at least 2.
 
 Blog link: <http://brain.dennyzhang.com/container-with-most-water>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/container-with-most-water)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/container-with-most-water/description)  
 
 Leave me comments, if you know how to solve.  
 

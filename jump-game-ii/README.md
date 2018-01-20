@@ -23,8 +23,8 @@ You can assume that you can always reach the last index.
 
 Blog link: <http://brain.dennyzhang.com/jump-game-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/jump-game-ii/description)  
 
 Leave me comments, if you know how to solve.

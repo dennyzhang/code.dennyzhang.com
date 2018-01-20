@@ -18,9 +18,9 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 
 Blog link: <http://brain.dennyzhang.com/add-strings>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-strings)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-strings/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -17,9 +17,9 @@ Given 1->1->1->2->3, return 2->3.
 
 Blog link: <http://brain.dennyzhang.com/remove-duplicates-from-sorted-list-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

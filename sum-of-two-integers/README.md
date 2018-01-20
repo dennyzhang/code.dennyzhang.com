@@ -14,9 +14,9 @@ Given a = 1 and b = 2, return 3.
 
 Blog link: <http://brain.dennyzhang.com/sum-of-two-integers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-two-integers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-two-integers/description)  
 
 Leave me comments, if you know how to solve.  
 

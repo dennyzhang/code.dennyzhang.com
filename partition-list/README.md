@@ -17,9 +17,9 @@ return 1->2->2->4->3->5.
 
 Blog link: <http://brain.dennyzhang.com/partition-list>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-list)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/partition-list/description)  
 
 Leave me comments, if you know how to solve.  
 

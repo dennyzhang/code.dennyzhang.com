@@ -11,9 +11,9 @@ Given an integer array of size n, find all elements that appear more than n/3 ti
 
 Blog link: <http://brain.dennyzhang.com/search-for-a-range>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-for-a-range)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/search-for-a-range/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -19,9 +19,9 @@ Given a collection of numbers that might contain duplicates, return all possible
 
 Blog link: <http://brain.dennyzhang.com/permutations-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutations-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/permutations-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

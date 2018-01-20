@@ -23,8 +23,8 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/maximum-length-of-repeated-subarray>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-length-of-repeated-subarray)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description)  
 
 Leave me comments, if you know how to solve.

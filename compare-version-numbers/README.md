@@ -20,9 +20,9 @@ Here is an example of version numbers ordering:
 
 Blog link: <http://brain.dennyzhang.com/compare-version-numbers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/compare-version-numbers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/compare-version-numbers/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -25,9 +25,9 @@ Given a binary tree, return the bottom-up level order traversal of its nodes' va
 
 Blog link: <http://brain.dennyzhang.com/binary-tree-level-order-traversal-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-level-order-traversal-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

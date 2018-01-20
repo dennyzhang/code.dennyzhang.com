@@ -15,9 +15,9 @@ Given a collection of intervals, merge all overlapping intervals.
 
 Blog link: <http://brain.dennyzhang.com/merge-intervals>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-intervals)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-intervals/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -32,9 +32,9 @@ Note: The n belongs to [1, 10,000].
 
 Blog link: <http://brain.dennyzhang.com/non-decreasing-array>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-decreasing-array)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/non-decreasing-array/description)  
 
 Leave me comments, if you know how to solve.  
 

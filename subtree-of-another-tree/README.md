@@ -41,9 +41,9 @@ Given two non-empty binary trees s and t, check whether tree t has exactly the s
 
 Blog link: <http://brain.dennyzhang.com/subtree-of-another-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subtree-of-another-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/subtree-of-another-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

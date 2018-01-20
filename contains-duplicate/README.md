@@ -11,9 +11,9 @@ Given an array of integers, find if the array contains any duplicates. Your func
 
 Blog link: <http://brain.dennyzhang.com/contains-duplicate>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate/description)  
 
 Leave me comments, if you know how to solve.  
 

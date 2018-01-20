@@ -17,9 +17,9 @@ You may assume no duplicate exists in the array.
 
 Blog link: <http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-minimum-in-rotated-sorted-array)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description)  
 
 Leave me comments, if you know how to solve.  
 

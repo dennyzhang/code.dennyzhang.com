@@ -35,9 +35,9 @@ Note: Each term of the sequence of integers will be represented as a string.
 
 Blog link: <http://brain.dennyzhang.com/count-and-say>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-and-say)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/count-and-say/description)  
 
 Leave me comments, if you know how to solve.  
 

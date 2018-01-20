@@ -30,9 +30,9 @@ Each solution contains a distinct board configuration of the n-queens' placement
 
 Blog link: <http://brain.dennyzhang.com/n-queens>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description)  
 
 Leave me comments, if you know how to solve.  
 

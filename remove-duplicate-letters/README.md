@@ -18,8 +18,8 @@ Given a string which contains only lowercase letters, remove duplicate letters s
 
 Blog link: <http://brain.dennyzhang.com/remove-duplicate-letters>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicate-letters)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicate-letters/description)  
 
 Leave me comments, if you know how to solve.

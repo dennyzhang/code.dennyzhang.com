@@ -22,9 +22,9 @@ Given numRows, generate the first numRows of Pascal's triangle.
 
 Blog link: <http://brain.dennyzhang.com/pascals-triangle>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/pascals-triangle)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/pascals-triangle/description)  
 
 Leave me comments, if you know how to solve.  
 

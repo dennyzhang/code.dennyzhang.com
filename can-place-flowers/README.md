@@ -26,8 +26,8 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/can-place-flowers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/can-place-flowers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/description)  
 
 Leave me comments, if you know how to solve.

@@ -17,15 +17,15 @@ Follow up:
 
 Blog link: <http://brain.dennyzhang.com/set-matrix-zeroes>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/description)  
 
 Hint:  
 
 Leave me comments, if you know how to solve.  
 
-Useful link: here  
+Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
     ## Basic Ideas:
     ##             2 Different types of 0s. 

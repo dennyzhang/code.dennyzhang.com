@@ -27,9 +27,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/replace-words>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/replace-words)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/replace-words/description)  
 
 Leave me comments, if you know how to solve.  
 

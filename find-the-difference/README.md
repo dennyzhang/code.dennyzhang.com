@@ -27,9 +27,9 @@ Example:
 
 Blog link: <http://brain.dennyzhang.com/find-the-difference>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-difference)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-the-difference/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -19,9 +19,9 @@ Given a sorted integer array without duplicates, return the summary of its range
 
 Blog link: <http://brain.dennyzhang.com/summary-ranges>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/summary-ranges)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/summary-ranges/description)  
 
 Leave me comments, if you know how to solve.  
 

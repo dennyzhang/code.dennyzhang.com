@@ -11,9 +11,9 @@ Sort a linked list in O(n log n) time using constant space complexity.
 
 Blog link: <http://brain.dennyzhang.com/sort-list>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-list)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/sort-list/description)  
 
 Leave me comments, if you know how to solve.  
 

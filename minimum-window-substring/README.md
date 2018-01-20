@@ -21,9 +21,9 @@ If there are multiple such windows, you are guaranteed that there will always be
 
 Blog link: <http://brain.dennyzhang.com/minimum-window-substring>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-window-substring)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/minimum-window-substring/description)  
 
 Leave me comments, if you know how to solve.  
 

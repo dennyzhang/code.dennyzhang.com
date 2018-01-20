@@ -16,9 +16,9 @@ Try to come up as many solutions as you can, there are at least 3 different ways
 
 Blog link: <http://brain.dennyzhang.com/rotate-array>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-array)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/rotate-array/description)  
 
 Hint: Time O(n), Space O(1)  
 

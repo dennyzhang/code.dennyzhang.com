@@ -52,9 +52,9 @@ rotate the input matrix in-place such that it becomes:
 
 Blog link: <http://brain.dennyzhang.com/rotate-image>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-image)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/rotate-image/description)  
 
 Leave me comments, if you know how to solve.  
 

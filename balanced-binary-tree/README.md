@@ -13,9 +13,9 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 Blog link: <http://brain.dennyzhang.com/balanced-binary-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/balanced-binary-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/balanced-binary-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

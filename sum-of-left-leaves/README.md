@@ -21,9 +21,9 @@ There are two left leaves in the binary tree, with values 9 and 15 respectively.
 
 Blog link: <http://brain.dennyzhang.com/sum-of-left-leaves>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-left-leaves)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-left-leaves/description)  
 
 Leave me comments, if you know how to solve.  
 

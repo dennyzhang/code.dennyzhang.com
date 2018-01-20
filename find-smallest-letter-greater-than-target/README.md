@@ -51,9 +51,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/find-smallest-letter-greater-than-target>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-smallest-letter-greater-than-target)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description)  
 
 Leave me comments, if you know how to solve.  
 

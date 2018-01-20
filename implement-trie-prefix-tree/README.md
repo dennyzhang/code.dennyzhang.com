@@ -14,9 +14,9 @@ You may assume that all inputs are consist of lowercase letters a-z.
 
 Blog link: <http://brain.dennyzhang.com/implement-trie-prefix-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-trie-prefix-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/implement-trie-prefix-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

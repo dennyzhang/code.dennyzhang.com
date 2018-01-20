@@ -33,9 +33,9 @@ You may assume no duplicates in the array.
 
 Blog link: <http://brain.dennyzhang.com/search-insert-position>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-insert-position)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/search-insert-position/description)  
 
 Leave me comments, if you know how to solve.  
 

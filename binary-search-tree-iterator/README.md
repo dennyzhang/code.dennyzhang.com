@@ -15,9 +15,9 @@ Note: next() and hasNext() should run in average O(1) time and uses O(h) memory,
 
 Blog link: <http://brain.dennyzhang.com/binary-search-tree-iterator>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-search-tree-iterator)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-search-tree-iterator/description)  
 
 Leave me comments, if you know how to solve.  
 

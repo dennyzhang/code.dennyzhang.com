@@ -18,8 +18,8 @@ You are given a string, s, and a list of words, words, that are all of the same 
 
 Blog link: <http://brain.dennyzhang.com/substring-with-concatenation-of-all-words>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/substring-with-concatenation-of-all-words)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description)  
 
 Leave me comments, if you know how to solve.

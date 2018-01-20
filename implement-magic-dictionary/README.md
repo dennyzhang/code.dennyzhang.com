@@ -33,9 +33,9 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
 
 Blog link: <http://brain.dennyzhang.com/implement-magic-dictionary>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-magic-dictionary)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/implement-magic-dictionary/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -18,9 +18,9 @@ The length of A and B will be between 1 and 10000.
 
 Blog link: <http://brain.dennyzhang.com/repeated-string-match>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-string-match)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/repeated-string-match/description)  
 
 Leave me comments, if you know how to solve.  
 

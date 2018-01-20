@@ -34,9 +34,9 @@ Note: n will be less than 15,000.
 
 Blog link: <http://brain.dennyzhang.com/132-pattern>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/132-pattern)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/132-pattern/description)  
 
 Leave me comments, if you know how to solve.  
 

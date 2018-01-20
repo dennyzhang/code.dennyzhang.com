@@ -20,9 +20,9 @@ Note: A word is defined as a character sequence consists of non-space characters
 
 Blog link: <http://brain.dennyzhang.com/length-of-last-word>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/length-of-last-word)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/length-of-last-word/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -32,9 +32,9 @@ Explanation: It's the substring "abc" four times. (And the substring "abcabc" tw
 
 Blog link: <http://brain.dennyzhang.com/repeated-substring-pattern>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/repeated-substring-pattern/description)  
 
 Leave me comments, if you know how to solve.  
 

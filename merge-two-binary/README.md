@@ -31,9 +31,9 @@ Note: The merging process must start from the root nodes of both trees.
 
 Blog link: <http://brain.dennyzhang.com/merge-two-binary>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-binary)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-two-binary/description)  
 
 Leave me comments, if you know how to solve.  
 

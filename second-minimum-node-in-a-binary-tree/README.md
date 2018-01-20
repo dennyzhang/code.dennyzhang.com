@@ -35,9 +35,9 @@ If no such second minimum value exists, output -1 instead.
 
 Blog link: <http://brain.dennyzhang.com/second-minimum-node-in-a-binary-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-minimum-node-in-a-binary-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

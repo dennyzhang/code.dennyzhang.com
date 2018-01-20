@@ -23,9 +23,9 @@ Example:
 
 Blog link: <http://brain.dennyzhang.com/find-all-duplicates-in-an-array>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-duplicates-in-an-array)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-all-duplicates-in-an-array/description)  
 
 Leave me comments, if you know how to solve.  
 

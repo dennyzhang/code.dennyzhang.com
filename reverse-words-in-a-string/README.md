@@ -15,9 +15,9 @@ return "blue is sky the".
 
 Blog link: <http://brain.dennyzhang.com/reverse-words-in-a-string>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-words-in-a-string)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-string/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -15,9 +15,9 @@ The digits are stored such that the most significant digit is at the head of the
 
 Blog link: <http://brain.dennyzhang.com/plus-one>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/plus-one)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/plus-one/description)  
 
 Leave me comments, if you know how to solve.  
 

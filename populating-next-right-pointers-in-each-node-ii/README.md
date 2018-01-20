@@ -31,9 +31,9 @@ You may only use constant extra space.
 
 Blog link: <http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

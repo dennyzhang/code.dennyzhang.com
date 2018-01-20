@@ -11,9 +11,9 @@ Given an array of integers, find out whether there are two distinct indices i an
 
 Blog link: <http://brain.dennyzhang.com/contains-duplicate-iii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate-iii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate-iii/description)  
 
 Leave me comments, if you know how to solve.  
 

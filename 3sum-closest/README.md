@@ -15,9 +15,9 @@ Given an array S of n integers, find three integers in S such that the sum is cl
 
 Blog link: <http://brain.dennyzhang.com/3sum-closest>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum-closest)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/3sum-closest/description)  
 
 Leave me comments, if you know how to solve.  
 

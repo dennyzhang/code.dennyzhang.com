@@ -34,9 +34,9 @@ Example 2:
 
 Blog link: <http://brain.dennyzhang.com/climbing-stairs>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/climbing-stairs)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/climbing-stairs/description)  
 
 Hint: Time O(n), Space O(1)  
 

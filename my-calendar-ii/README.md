@@ -39,9 +39,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/my-calendar-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/my-calendar-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/my-calendar-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

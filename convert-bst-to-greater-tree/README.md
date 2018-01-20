@@ -23,9 +23,9 @@ Given a Binary Search Tree (BST), convert it to a Greater Tree such that every k
 
 Blog link: <http://brain.dennyzhang.com/convert-bst-to-greater-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-bst-to-greater-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/convert-bst-to-greater-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

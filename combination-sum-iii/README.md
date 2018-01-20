@@ -27,9 +27,9 @@ Find all possible combinations of k numbers that add up to a number n, given tha
 
 Blog link: <http://brain.dennyzhang.com/combination-sum-iii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum-iii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-iii/description)  
 
 Leave me comments, if you know how to solve.  
 

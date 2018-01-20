@@ -23,9 +23,9 @@ For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another exa
 
 Blog link: <http://brain.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lowest-common-ancestor-of-a-binary-search-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

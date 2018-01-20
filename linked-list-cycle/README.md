@@ -14,9 +14,9 @@ Can you solve it without using extra space?
 
 Blog link: <http://brain.dennyzhang.com/linked-list-cycle>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-cycle)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-cycle/description)  
 
 Leave me comments, if you know how to solve.  
 

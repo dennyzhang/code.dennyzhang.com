@@ -35,9 +35,9 @@ Given a positive integer, check whether it has alternating bits: namely, if two 
 
 Blog link: <http://brain.dennyzhang.com/binary-number-with-alternating-bits>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-number-with-alternating-bits)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-number-with-alternating-bits/description)  
 
 Leave me comments, if you know how to solve.  
 

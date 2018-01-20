@@ -21,9 +21,9 @@ Note: The solution set must not contain duplicate triplets.
 
 Blog link: <http://brain.dennyzhang.com/3sum>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/3sum/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -32,9 +32,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/1-bit-and-2-bit-characters>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/1-bit-and-2-bit-characters)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/1-bit-and-2-bit-characters/description)  
 
 Leave me comments, if you know how to solve.  
 

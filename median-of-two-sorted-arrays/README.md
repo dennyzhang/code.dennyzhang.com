@@ -25,9 +25,9 @@ Find the median of the two sorted arrays. The overall run time complexity should
 
 Blog link: <http://brain.dennyzhang.com/median-of-two-sorted-arrays>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-of-two-sorted-arrays)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/median-of-two-sorted-arrays/description)  
 
 Leave me comments, if you know how to solve.  
 

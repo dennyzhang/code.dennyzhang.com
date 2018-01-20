@@ -25,9 +25,9 @@ You may assume both s and t have the same length.
 
 Blog link: <http://brain.dennyzhang.com/isomorphic-strings>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/isomorphic-strings)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/isomorphic-strings/description)  
 
 Leave me comments, if you know how to solve.  
 

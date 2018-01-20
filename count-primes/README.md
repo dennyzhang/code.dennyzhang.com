@@ -11,9 +11,9 @@ Count the number of prime numbers less than a non-negative number, n.
 
 Blog link: <http://brain.dennyzhang.com/count-primes>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-primes)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/count-primes/description)  
 
 Leave me comments, if you know how to solve.  
 

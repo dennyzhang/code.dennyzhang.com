@@ -20,9 +20,9 @@ Given m, n satisfy the following condition:
 
 Blog link: <http://brain.dennyzhang.com/reverse-linked-list-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-linked-list-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

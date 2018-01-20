@@ -55,9 +55,9 @@ All characters have an ASCII value in [35, 126].
 
 Blog link: <http://brain.dennyzhang.com/string-compression>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/string-compression)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/string-compression/description)  
 
 Leave me comments, if you know how to solve.  
 

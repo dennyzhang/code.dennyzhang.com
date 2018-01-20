@@ -26,9 +26,9 @@ Given a binary tree and a sum, find all root-to-leaf paths where each path's sum
 
 Blog link: <http://brain.dennyzhang.com/path-sum-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/path-sum-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

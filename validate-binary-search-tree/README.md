@@ -31,9 +31,9 @@ Binary tree [1,2,3], return false.
 
 Blog link: <http://brain.dennyzhang.com/validate-binary-search-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/validate-binary-search-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/validate-binary-search-tree/description)  
 
     # Definition for a binary tree node.
     # class TreeNode(object):

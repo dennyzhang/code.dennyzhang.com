@@ -27,9 +27,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/binary-watch>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-watch)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-watch/description)  
 
 Leave me comments, if you know how to solve.  
 

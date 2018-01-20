@@ -21,9 +21,9 @@ For this problem, a path is defined as any sequence of nodes from some starting 
 
 Blog link: <http://brain.dennyzhang.com/binary-tree-maximum-path-sum>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-maximum-path-sum)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-maximum-path-sum/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -21,9 +21,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/array-partition-i>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/array-partition-i)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/array-partition-i/description)  
 
 Leave me comments, if you know how to solve.  
 

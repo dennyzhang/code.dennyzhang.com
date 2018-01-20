@@ -11,9 +11,9 @@ Given an array of integers and an integer k, find out whether there are two dist
 
 Blog link: <http://brain.dennyzhang.com/contains-duplicate-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

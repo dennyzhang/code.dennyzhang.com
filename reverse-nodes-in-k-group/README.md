@@ -24,9 +24,9 @@ Only constant memory is allowed.
 
 Blog link: <http://brain.dennyzhang.com/reverse-nodes-in-k-group>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-nodes-in-k-group)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-nodes-in-k-group/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -16,9 +16,9 @@ Follow up: Could you solve it without loops/recursion?
 
 Blog link: <http://brain.dennyzhang.com/power-of-four>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/power-of-four)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/power-of-four/description)  
 
 Leave me comments, if you know how to solve.  
 

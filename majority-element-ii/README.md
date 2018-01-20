@@ -11,9 +11,9 @@ Given an integer array of size n, find all elements that appear more than n/3 ti
 
 Blog link: <http://brain.dennyzhang.com/majority-element-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/majority-element-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

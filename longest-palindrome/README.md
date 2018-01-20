@@ -27,9 +27,9 @@ Assume the length of given string will not exceed 1,010.
 
 Blog link: <http://brain.dennyzhang.com/longest-palindrome>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindrome)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-palindrome/description)  
 
 Leave me comments, if you know how to solve.  
 

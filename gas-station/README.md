@@ -18,8 +18,8 @@ The solution is guaranteed to be unique.
 
 Blog link: <http://brain.dennyzhang.com/gas-station>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/gas-station)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/gas-station/description)  
 
 Leave me comments, if you know how to solve.

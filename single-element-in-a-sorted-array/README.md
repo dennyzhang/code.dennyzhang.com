@@ -21,11 +21,11 @@ Note: Your solution should run in O(log n) time and O(1) space.
 
 Blog link: <http://brain.dennyzhang.com/single-element-in-a-sorted-array>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-element-in-a-sorted-array)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description)  
 
-Useful link: leetcode.com  
+Useful link: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description)  
 
 Leave me comments, if you know how to solve.  
 

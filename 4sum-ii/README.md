@@ -29,9 +29,9 @@ To make problem a bit easier, all A, B, C, D have same length of N where 0 <= N 
 
 Blog link: <http://brain.dennyzhang.com/4sum-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4sum-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/4sum-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -26,9 +26,9 @@ x is guaranteed to be a non-negative integer.
 
 Blog link: <http://brain.dennyzhang.com/sqrtx>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sqrtx)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/sqrtx/description)  
 
 Leave me comments, if you know how to solve.  
 

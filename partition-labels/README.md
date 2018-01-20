@@ -23,9 +23,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/partition-labels>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-labels)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/partition-labels/description)  
 
 Leave me comments, if you know how to solve.  
 

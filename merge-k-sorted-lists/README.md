@@ -11,9 +11,9 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 
 Blog link: <http://brain.dennyzhang.com/merge-k-sorted-lists>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-k-sorted-lists)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-k-sorted-lists/description)  
 
 Leave me comments, if you know how to solve.  
 

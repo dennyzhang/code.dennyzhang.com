@@ -56,9 +56,9 @@ Note: The height of binary tree is in the range of [1, 10].
 
 Blog link: <http://brain.dennyzhang.com/print-binary-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/print-binary-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/print-binary-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

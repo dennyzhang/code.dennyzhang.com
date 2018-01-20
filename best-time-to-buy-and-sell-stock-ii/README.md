@@ -13,9 +13,9 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 Blog link: <http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/best-time-to-buy-and-sell-stock-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description)  
 
     ## Basic Ideas:
     ## Complexity:

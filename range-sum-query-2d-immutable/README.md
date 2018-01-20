@@ -33,9 +33,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/range-sum-query-2d-immutable>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-2d-immutable)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-2d-immutable/description)  
 
 Leave me comments, if you know how to solve.  
 

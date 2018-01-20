@@ -21,9 +21,9 @@ Notes:
 
 Blog link: <http://brain.dennyzhang.com/implement-stack-using-queues>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-stack-using-queues)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/implement-stack-using-queues/description)  
 
 Leave me comments, if you know how to solve.  
 

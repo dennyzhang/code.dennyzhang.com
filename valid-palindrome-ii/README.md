@@ -23,9 +23,9 @@ The string will only contain lowercase characters a-z. The maximum length of the
 
 Blog link: <http://brain.dennyzhang.com/valid-palindrome-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/description)  
 
 Leave me comments, if you know how to solve.  
 

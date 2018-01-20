@@ -11,9 +11,9 @@ Sort a linked list using insertion sort.
 
 Blog link: <http://brain.dennyzhang.com/insertion-sort-list>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insertion-sort-list)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/insertion-sort-list/description)  
 
 Leave me comments, if you know how to solve.  
 

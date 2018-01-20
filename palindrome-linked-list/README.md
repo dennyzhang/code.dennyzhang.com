@@ -14,9 +14,9 @@ Could you do it in O(n) time and O(1) space?
 
 Blog link: <http://brain.dennyzhang.com/palindrome-linked-list>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-linked-list)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-linked-list/description)  
 
 Leave me comments, if you know how to solve.  
 

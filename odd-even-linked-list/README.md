@@ -21,9 +21,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/odd-even-linked-list>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/odd-even-linked-list)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/odd-even-linked-list/description)  
 
 Leave me comments, if you know how to solve.  
 

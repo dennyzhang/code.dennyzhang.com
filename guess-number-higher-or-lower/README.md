@@ -27,9 +27,9 @@ Example:
 
 Blog link: <http://brain.dennyzhang.com/guess-number-higher-or-lower>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower/description)  
 
 Leave me comments, if you know how to solve.  
 

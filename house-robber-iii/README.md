@@ -29,9 +29,9 @@ Determine the maximum amount of money the thief can rob tonight without alerting
 
 Blog link: <http://brain.dennyzhang.com/house-robber-iii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber-iii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-iii/description)  
 
 Leave me comments, if you know how to solve.  
 

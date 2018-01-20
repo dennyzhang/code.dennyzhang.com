@@ -15,9 +15,9 @@ Note: The result may be very large, so you need to return a string instead of an
 
 Blog link: <http://brain.dennyzhang.com/largest-number>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-number)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/largest-number/description)  
 
 Leave me comments, if you know how to solve.  
 

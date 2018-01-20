@@ -17,9 +17,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/move-zeroes>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/move-zeroes)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/move-zeroes/description)  
 
 Leave me comments, if you know how to solve.  
 

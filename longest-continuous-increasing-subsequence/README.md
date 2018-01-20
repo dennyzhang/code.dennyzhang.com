@@ -24,9 +24,9 @@ Note: Length of the array will not exceed 10,000.
 
 Blog link: <http://brain.dennyzhang.com/longest-continuous-increasing-subsequence>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-continuous-increasing-subsequence)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description)  
 
 Leave me comments, if you know how to solve.  
 

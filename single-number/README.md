@@ -14,9 +14,9 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 
 Blog link: <http://brain.dennyzhang.com/single-number>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-number/description)  
 
     class Solution(object):
         def singleNumber(self, nums):

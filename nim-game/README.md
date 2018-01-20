@@ -15,9 +15,9 @@ For example, if there are 4 stones in the heap, then you will never win the game
 
 Blog link: <http://brain.dennyzhang.com/nim-game>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nim-game)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description)  
 
     class Solution(object):
         def canWinNim(self, n):

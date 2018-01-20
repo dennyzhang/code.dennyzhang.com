@@ -20,9 +20,9 @@ Follow up:
 
 Blog link: <http://brain.dennyzhang.com/counting-bits>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/counting-bits)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/counting-bits/description)  
 
 Leave me comments, if you know how to solve.  
 

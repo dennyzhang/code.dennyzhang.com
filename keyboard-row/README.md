@@ -19,9 +19,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/keyboard-row>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/keyboard-row)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/keyboard-row/description)  
 
 Leave me comments, if you know how to solve.  
 

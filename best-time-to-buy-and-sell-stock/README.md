@@ -24,9 +24,9 @@ In this case, no transaction is done, i.e. max profit = 0.
 
 Blog link: <http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/best-time-to-buy-and-sell-stock)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description)  
 
     class Solution(object):
         def maxProfit(self, prices):

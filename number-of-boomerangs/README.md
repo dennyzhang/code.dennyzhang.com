@@ -23,9 +23,9 @@ Find the number of boomerangs. You may assume that n will be at most 500 and coo
 
 Blog link: <http://brain.dennyzhang.com/number-of-boomerangs>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-boomerangs)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/number-of-boomerangs/description)  
 
 Leave me comments, if you know how to solve.  
 

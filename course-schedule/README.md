@@ -34,9 +34,9 @@ Hints:
 
 Blog link: <http://brain.dennyzhang.com/course-schedule>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/course-schedule)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/course-schedule/description)  
 
 Leave me comments, if you know how to solve.  
 

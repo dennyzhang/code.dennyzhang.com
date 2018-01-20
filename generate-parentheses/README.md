@@ -21,9 +21,9 @@ Given n pairs of parentheses, write a function to generate all combinations of w
 
 Blog link: <http://brain.dennyzhang.com/generate-parentheses>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/generate-parentheses)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/generate-parentheses/description)  
 
 Leave me comments, if you know how to solve.  
 

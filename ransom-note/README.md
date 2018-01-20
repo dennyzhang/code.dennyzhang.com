@@ -20,9 +20,9 @@ You may assume that both strings contain only lowercase letters.
 
 Blog link: <http://brain.dennyzhang.com/ransom-note>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ransom-note)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/ransom-note/description)  
 
 Leave me comments, if you know how to solve.  
 

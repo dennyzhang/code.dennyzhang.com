@@ -48,8 +48,8 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/number-of-atoms>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-atoms)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/number-of-atoms/description)  
 
 Leave me comments, if you know how to solve.

@@ -18,9 +18,9 @@ Please note that the string does not contain any non-printable characters.
 
 Blog link: <http://brain.dennyzhang.com/number-of-segments-in-a-string>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-segments-in-a-string)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/number-of-segments-in-a-string/description)  
 
 Leave me comments, if you know how to solve.  
 

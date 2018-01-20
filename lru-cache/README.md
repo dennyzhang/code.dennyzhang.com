@@ -31,9 +31,9 @@ Example:
 
 Blog link: <http://brain.dennyzhang.com/lru-cache>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lru-cache)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/lru-cache/description)  
 
 Leave me comments, if you know how to solve.  
 

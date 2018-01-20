@@ -24,9 +24,9 @@ to
 
 Blog link: <http://brain.dennyzhang.com/invert-binary-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/invert-binary-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/invert-binary-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

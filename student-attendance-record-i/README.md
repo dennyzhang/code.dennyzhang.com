@@ -26,11 +26,11 @@ You need to return whether the student could be rewarded according to his attend
 
 Blog link: <http://brain.dennyzhang.com/student-attendance-record-i>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description)  
 
-Useful link: leetcode.com  
+Useful link: [leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description)  
 
 Leave me comments, if you know how to solve.  
 

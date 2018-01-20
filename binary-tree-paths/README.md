@@ -21,9 +21,9 @@ Given a binary tree, return all root-to-leaf paths.
 
 Blog link: <http://brain.dennyzhang.com/binary-tree-paths>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-paths)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-paths/description)  
 
 Leave me comments, if you know how to solve.  
 

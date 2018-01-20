@@ -19,9 +19,9 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 
 Blog link: <http://brain.dennyzhang.com/add-two-numbers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-two-numbers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-two-numbers/description)  
 
 Leave me comments, if you know how to solve.  
 

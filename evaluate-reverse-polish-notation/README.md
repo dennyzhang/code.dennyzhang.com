@@ -17,9 +17,9 @@ Some examples:
 
 Blog link: <http://brain.dennyzhang.com/evaluate-reverse-polish-notation>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/evaluate-reverse-polish-notation)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/evaluate-reverse-polish-notation/description)  
 
 Leave me comments, if you know how to solve.  
 

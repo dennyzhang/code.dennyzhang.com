@@ -21,9 +21,9 @@ Given a positive integer, return its corresponding column title as appear in an 
 
 Blog link: <http://brain.dennyzhang.com/excel-sheet-column-title>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-title)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-title/description)  
 
 Leave me comments, if you know how to solve.  
 

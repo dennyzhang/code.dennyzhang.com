@@ -15,9 +15,9 @@ You are given an API bool isBadVersion(version) which will return whether versio
 
 Blog link: <http://brain.dennyzhang.com/first-bad-version>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-bad-version)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/first-bad-version/description)  
 
 Leave me comments, if you know how to solve.  
 

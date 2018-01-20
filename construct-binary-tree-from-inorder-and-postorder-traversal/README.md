@@ -14,9 +14,9 @@ You may assume that duplicates do not exist in the tree.
 
 Blog link: <http://brain.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-inorder-and-postorder-traversal)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description)  
 
 Leave me comments, if you know how to solve.  
 

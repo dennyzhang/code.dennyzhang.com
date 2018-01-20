@@ -25,5 +25,6 @@
        (delete-file "README.md~"))
    (kill-buffer)
    (message "Finished")
+   (quit-process)
    )
   )

@@ -28,9 +28,9 @@ Bonus points if you could solve it both recursively and iteratively.
 
 Blog link: <http://brain.dennyzhang.com/symmetric-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/symmetric-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/symmetric-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

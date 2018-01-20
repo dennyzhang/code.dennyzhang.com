@@ -20,9 +20,9 @@ Given a non-negative integer c, your task is to decide whether there're two inte
 
 Blog link: <http://brain.dennyzhang.com/sum-of-square-numbers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-square-numbers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-square-numbers/description)  
 
 Leave me comments, if you know how to solve.  
 

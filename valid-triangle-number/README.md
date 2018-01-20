@@ -26,9 +26,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/valid-triangle-number>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-triangle-number)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-triangle-number/description)  
 
 Leave me comments, if you know how to solve.  
 

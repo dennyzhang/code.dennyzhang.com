@@ -13,9 +13,9 @@ For example, given the range [5, 7], you should return 4.
 
 Blog link: <http://brain.dennyzhang.com/bitwise-and-of-numbers-range>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bitwise-and-of-numbers-range)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/bitwise-and-of-numbers-range/description)  
 
 Leave me comments, if you know how to solve.  
 

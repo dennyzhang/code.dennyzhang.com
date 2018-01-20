@@ -14,9 +14,9 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 
 Blog link: <http://brain.dennyzhang.com/single-number-ii>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-ii)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-number-ii/description)  
 
 Hint: Time O(n), Space O(1)  
 

@@ -35,9 +35,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/employee-free-time>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employee-free-time)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/employee-free-time/description)  
 
 Leave me comments, if you know how to solve.  
 

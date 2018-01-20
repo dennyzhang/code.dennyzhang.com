@@ -41,9 +41,9 @@ Design a data structure that supports all following operations in average O(1) t
 
 Blog link: <http://brain.dennyzhang.com/insert-delete-getrandom-o1>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1/description)  
 
 Leave me comments, if you know how to solve.  
 

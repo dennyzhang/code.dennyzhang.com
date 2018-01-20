@@ -40,9 +40,9 @@ The null node needs to be represented by empty parenthesis pair "()". And you ne
 
 Blog link: <http://brain.dennyzhang.com/construct-string-from-binary-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-string-from-binary-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/construct-string-from-binary-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

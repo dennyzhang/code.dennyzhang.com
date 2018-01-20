@@ -25,9 +25,9 @@ Example:
 
 Blog link: <http://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tree>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-array-to-binary-search-tree)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description)  
 
 Leave me comments, if you know how to solve.  
 

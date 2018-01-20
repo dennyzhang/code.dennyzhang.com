@@ -22,9 +22,9 @@ Note: Recursive solution is trivial, could you do it iteratively?
 
 Blog link: <http://brain.dennyzhang.com/binary-tree-preorder-traversal>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-preorder-traversal)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-preorder-traversal/description)  
 
 Leave me comments, if you know how to solve.  
 

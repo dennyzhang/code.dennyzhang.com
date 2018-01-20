@@ -33,9 +33,9 @@ You should be familiar with how a Trie works. If not, please work on this proble
 
 Blog link: <http://brain.dennyzhang.com/add-and-search-word-data-structure-design>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-and-search-word-data-structure-design)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-and-search-word-data-structure-design/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -16,9 +16,9 @@ If this function is called many times, how would you optimize it?
 
 Blog link: <http://brain.dennyzhang.com/reverse-bits>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-bits)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-bits/description)  
 
 Leave me comments, if you know how to solve.  
 

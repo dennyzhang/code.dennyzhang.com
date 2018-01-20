@@ -41,8 +41,8 @@ Note: The given binary tree has not more than 10000 nodes. The height of the tre
 
 Blog link: <http://brain.dennyzhang.com/longest-univalue-path>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-univalue-path)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-univalue-path/description)  
 
 Leave me comments, if you know how to solve.

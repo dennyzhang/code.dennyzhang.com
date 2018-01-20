@@ -19,9 +19,9 @@ Although the above answer is in lexicographical order, your answer could be in a
 
 Blog link: <http://brain.dennyzhang.com/letter-combinations-of-a-phone-number>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/letter-combinations-of-a-phone-number)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description)  
 
 Leave me comments, if you know how to solve.  
 

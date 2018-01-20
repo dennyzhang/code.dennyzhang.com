@@ -22,9 +22,9 @@ Note:
 
 Blog link: <http://brain.dennyzhang.com/range-sum-query-immutable>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-immutable)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-immutable/description)  
 
 Leave me comments, if you know how to solve.  
 

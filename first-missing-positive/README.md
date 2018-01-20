@@ -17,9 +17,9 @@ Your algorithm should run in O(n) time and uses constant space.
 
 Blog link: <http://brain.dennyzhang.com/first-missing-positive>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/first-missing-positive/description)  
 
 Leave me comments, if you know how to solve.  
 

@@ -13,9 +13,9 @@ If it is overflow, return MAX\_INT.
 
 Blog link: <http://brain.dennyzhang.com/divide-two-integers>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/divide-two-integers)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/divide-two-integers/description)  
 
 Leave me comments, if you know how to solve.  
 

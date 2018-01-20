@@ -21,9 +21,9 @@ What if the inputs contain unicode characters? How would you adapt your solution
 
 Blog link: <http://brain.dennyzhang.com/valid-anagram>  
 
-Github: challenges-leetcode-interesting  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-anagram)  
 
-Credits To: leetcode.com  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-anagram/description)  
 
 Leave me comments, if you know how to solve.  
 
