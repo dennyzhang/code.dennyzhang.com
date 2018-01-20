@@ -21,9 +21,9 @@ Given a matrix of m x n elements (m rows, n columns), return all elements of the
 
 Blog link: <http://brain.dennyzhang.com/spiral-matrix>  
 
-Github: <https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix>  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix)  
 
-Credits To: <https://leetcode.com/problems/spiral-matrix/description>  
+Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix/description)  
 
 Leave me comments, if you know how to solve.  
 
