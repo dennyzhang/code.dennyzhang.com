@@ -42,8 +42,11 @@ class Solution(object):
         """
         max_count, counter = 0, 0
         for num in nums:
-            counter = counter+1 if num == 1 else 0
-            max_count = max(max_count, counter)
+            if num == 1:
+                counter = counter+1
+                max_count = max(max_count, counter)
+            else:
+                counter = 0
         return max_count
 
     ## Basic Ideas: Two pointers
