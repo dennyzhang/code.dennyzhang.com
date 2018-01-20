@@ -1,4 +1,4 @@
-* Leetcode: Subtree of Another Tree                                              :BLOG:Amusing:
+* Leetcode: Subtree of Another Tree                            :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

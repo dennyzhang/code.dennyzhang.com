@@ -1,0 +1,137 @@
+* Leetcode: Maximum XOR of Two Numbers in an Array               :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #bitmanipulation, #trie, #inspiring
+:END:
+---------------------------------------------------------------------
+Maximum XOR of Two Numbers in an Array
+---------------------------------------------------------------------
+Given a non-empty array of numbers, a0, a1, a2, ... , an-1, where 0 <= ai < 231.
+
+Find the maximum result of ai XOR aj, where 0 <= i, j < n.
+
+Could you do this in O(n) runtime?
+#+BEGIN_EXAMPLE
+Example:
+
+Input: [3, 10, 5, 25, 2, 8]
+
+Output: 28
+
+Explanation: The maximum result is 5 ^ 25 = 28.
+#+END_EXAMPLE
+
+Blog link: http://brain.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-xor-of-two-numbers-in-an-array][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description][leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+## Basic Ideas: Trie tree
+##              1. The height of tree is 32. Each node can have at most two children(0 and 1)
+##              2. Append each num into the tree by bits. The lowest level is the smallest digit
+##
+##              Identity two nodes for the target pair
+##              1. Visit from top to down. If current node has only one child keep going
+##              2. If it has two children, the pair should be one from the left, and one from the right
+##              3. If both sub-tree has two children. f(node.left, node.right) = 
+##                  max(f(node.left.left, node.right.right), f(node.left.right, node.right.left))
+##              4. If either sub-tree has only one child, we choose it and the opposite node in the opposite sub-tree
+##
+## Complexity: Time O(n), Space O(n)
+
+import collections
+class TrieNode(object):
+    def __init__(self):
+        self.children = collections.defaultdict(TrieNode)
+        self.is_word = False
+        self.label = None
+
+
+class Solution(object):
+    def printTrieTreeLevelOrder(self, node):
+        print("printTrieTreeLevelOrder")
+        if node.is_word:
+            print("Node is a word")
+        queue = []
+        queue.append(node)
+        while len(queue) != 0:
+            s = ''
+            for i in xrange(len(queue)):
+                node = queue[0]
+                del queue[0]
+                for child_key in node.children:
+                    s = '%s %s' % (s, child_key)
+                    queue.append(node.children[child_key])
+            if s != '':
+                print 'print level children: %s' % (s)
+
+    def findMaximumXOR(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if len(nums) == 0:
+            return None
+        if len(nums) == 1:
+            return 0
+
+        # build trie tree
+        root = TrieNode()
+        for num in nums:
+            v = num
+            s = ''
+            while v:
+                if v%2 == 1:
+                    s = '%s%s' % ('1', s)
+                else:
+                    s = '%s%s' % ('0', s)                    
+                v = v >> 1
+            s = s.zfill(32)
+            # print s
+            # append to Trie Tree
+            node = root
+            for ch in s:
+                node = node.children[ch]
+            node.is_word = True
+            node.label = num
+
+        node  = root
+        while len(node.children) == 1:
+            keys = node.children.keys()
+            node = node.children[keys[0]]
+
+        # all items are the same
+        if len(node.children) == 0:
+            return 0
+
+        # We found the first crossroad
+        return self.findTrieMax(node.children['0'], node.children['1'])
+
+    def findTrieMax(self, node1, node2):
+        len1 = len(node1.children)
+        len2 = len(node2.children)
+        # reached the bottom
+        # when len1==0, len2 will definitely be 0
+        if len1 == 0:
+            return node1.label ^ node2.label
+        elif len1 == 1 and len2 == 1:
+            key1 = node1.children.keys()[0]
+            key2 = node2.children.keys()[0]
+            return self.findTrieMax(node1.children[key1], node2.children[key2])
+        elif len1 == 1 and len2 == 2:
+            key1 = node1.children.keys()[0]
+            key2 = '1' if key1 == '0' else '0'
+            return self.findTrieMax(node1.children[key1], node2.children[key2])
+        elif len1 == 2 and len2 == 1:
+            key2 = node2.children.keys()[0]
+            key1 = '1' if key2 == '0' else '0'
+            return self.findTrieMax(node1.children[key1], node2.children[key2])
+        else:
+            return max(self.findTrieMax(node1.children['0'], node2.children['1']), \
+                        self.findTrieMax(node1.children['1'], node2.children['0']))
+#+END_SRC
