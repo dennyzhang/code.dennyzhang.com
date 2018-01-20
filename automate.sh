@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-function refresh_Link() {
+function refresh_link() {
     echo "refresh link"
     for f in $(find . -name README.org); do
         dirname=$(basename $(dirname $f))
@@ -38,13 +38,13 @@ cd .
 
 action=${1?}
 case "$action" in 
-    refresh_Link)
-        refresh_Link
+    refresh_link)
+        refresh_link
         ;;
     refresh_md)
         refresh_md
         ;;
         *) 
-            echo "no matched action"
+            echo "no matched action. Supported: refresh_link|refresh_md"
             ;;
 esac
