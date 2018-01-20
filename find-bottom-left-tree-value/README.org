@@ -1,4 +1,4 @@
-* Leetcode: Find Bottom Left Tree Value                                         :BLOG:Basic:
+* Leetcode: Find Bottom Left Tree Value                          :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
