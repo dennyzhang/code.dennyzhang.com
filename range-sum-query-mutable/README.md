@@ -22,11 +22,9 @@ Note:
 -   The array is only modifiable by the update function.
 -   You may assume the number of calls to update and sumRange function is distributed evenly.
 
-Blog link: <http://brain.dennyzhang.com/range-sum-query-mutable>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-mutable)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-mutable/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-mutable/description/)  
 
 Leave me comments, if you know how to solve.  
 

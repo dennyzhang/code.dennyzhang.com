@@ -22,13 +22,14 @@ Output:
 [5,6]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/][leetcode.com]]
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array
 ## Basic Ideas: traverse each item
 ## Complexity:
 ##  1,2,3,4,5,6,7,8
@@ -59,6 +60,3 @@ class Solution(object):
 #+END_SRC
 
 Leave me comments, if you know how to solve.
-
-More Reading:
-- [[http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array

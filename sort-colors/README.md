@@ -11,11 +11,9 @@ Given an array with n objects colored red, white or blue, sort them so that obje
 
 Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.  
 
-Blog link: <http://brain.dennyzhang.com/sort-colors>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-colors)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/sort-colors/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/sort-colors/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -107,7 +105,3 @@ Leave me comments, if you know how to solve.
                     nums[q] = nums[p]
                     nums[p] = 1
                     p += 1
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/sort-colors>
--   [[<http://brain.dennyzhang.com/sort-colors>

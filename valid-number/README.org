@@ -17,7 +17,7 @@ Some examples:
 - "2e10" => true
 Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
-Blog link: http://brain.dennyzhang.com/valid-number
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-number][challenges-leetcode-interesting]]
 
@@ -26,6 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-number/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/valid-number
 ## Basic Ideas
 ##      Data clean first
 ##      Make sure it only has valid character

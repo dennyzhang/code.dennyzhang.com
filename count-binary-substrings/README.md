@@ -29,14 +29,13 @@ Substrings that occur multiple times are counted the number of times they occur.
     s.length will be between 1 and 50,000.
     s will only consist of "0" or "1" characters.
 
-Blog link: <http://brain.dennyzhang.com/count-binary-substrings>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-binary-substrings)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/count-binary-substrings/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/count-binary-substrings/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/count-binary-substrings
     ## Basic Ideas: Two pointers
     ##           Starting from one specific index, there could be only one or zero matches
     ##           The result would be no more than s.length

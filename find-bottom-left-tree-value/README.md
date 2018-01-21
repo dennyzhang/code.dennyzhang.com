@@ -19,7 +19,7 @@ Given a binary tree, find the leftmost value in the last row of the tree.
     Output:
     1
 
-    Example 2: 
+    Example 2:
     Input:
     
             1
@@ -37,11 +37,9 @@ Given a binary tree, find the leftmost value in the last row of the tree.
 Note:  
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
 
-Blog link: <http://brain.dennyzhang.com/find-bottom-left-tree-value>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-bottom-left-tree-value)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-bottom-left-tree-value/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-bottom-left-tree-value/description/)  
 
 Leave me comments, if you know how to solve.  
 

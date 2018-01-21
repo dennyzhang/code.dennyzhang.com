@@ -23,14 +23,13 @@ All occurrences of a character must be replaced with another character while pre
 Note:  
 You may assume both s and t have the same length.  
 
-Blog link: <http://brain.dennyzhang.com/isomorphic-strings>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/isomorphic-strings)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/isomorphic-strings/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/isomorphic-strings/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/isomorphic-strings
     ## Basic Ideas:
     ##             Build 2 dicts
     ##             From s to t, and from t to s

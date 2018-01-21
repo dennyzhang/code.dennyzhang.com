@@ -22,14 +22,13 @@ Follow up: How would you extend your design to be generic and work with all type
 Credits:  
 Special thanks to @porker2008 for adding this problem and creating all test cases.  
 
-Blog link: <http://brain.dennyzhang.com/peeking-iterator>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/peeking-iterator)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/peeking-iterator/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/peeking-iterator/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/peeking-iterator
     ## Basic Ideas: Use a variable to cache the peek. Always pre-cache
     ##
     # Below is the interface for Iterator, which is already defined for you.

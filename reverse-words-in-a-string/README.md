@@ -13,26 +13,24 @@ For example,
 Given s = "the sky is blue",  
 return "blue is sky the".  
 
-Blog link: <http://brain.dennyzhang.com/reverse-words-in-a-string>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-words-in-a-string)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-string/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-string/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas:
+    ##       the sky is blue
+    ##       eulb si yks eht
+    ##       blue is sky the
+    ##
+    ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def reverseWords(self, s):
             """
             :type s: str
             :rtype: str
             """
-            ## Basic Idea:
-            ## the sky is blue
-            ## eulb si yks eht
-            ## blue is sky the
-            ## Complexity: Time O(n), Space O(1)
-            # reverse
             s = s[::-1]
             res = []
             for item in s.split(" "):

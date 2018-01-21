@@ -39,7 +39,7 @@ Input: 4
 Output: "1211"
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/count-and-say
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-and-say][challenges-leetcode-interesting]]
 

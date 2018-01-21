@@ -26,7 +26,7 @@ b = [1,0]
 Result: 1024
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/super-pow
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/super-pow][challenges-leetcode-interesting]]
 

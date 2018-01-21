@@ -19,14 +19,13 @@ Implement pow(x, n).
     Input: 2.10000, 3
     Output: 9.26100
 
-Blog link: <http://brain.dennyzhang.com/powx-n>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/powx-n)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/powx-n/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/powx-n/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/powx-n
     ## Basic Ideas: 
     ##        If n < 0, x^n == (1/x)^(-n)
     ##        If n%2 == 0, x^n == (x*x)^(n/2)

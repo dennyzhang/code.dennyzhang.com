@@ -38,7 +38,7 @@ Background: what is ZigZag. [[url-external:https://leetcode.com/problems/zigzag-
 Be careful with nR=1 && nR=2
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/zigzag-conversion
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/zigzag-conversion][challenges-leetcode-interesting]]
 

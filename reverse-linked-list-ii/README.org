@@ -18,7 +18,7 @@ Note:
 Given m, n satisfy the following condition:
 1 <= m <= n <= length of list.
 
-Blog link: http://brain.dennyzhang.com/reverse-linked-list-ii
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list-ii][challenges-leetcode-interesting]]
 

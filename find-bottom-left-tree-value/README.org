@@ -21,7 +21,7 @@ Output:
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
-Example 2: 
+Example 2:
 Input:
 
         1
@@ -40,8 +40,6 @@ Note: You may assume the tree (i.e., the given root node) is not NULL.
 Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 
-Blog link: http://brain.dennyzhang.com/find-bottom-left-tree-value
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-bottom-left-tree-value][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-bottom-left-tree-value/description/][leetcode.com]]
@@ -49,6 +47,12 @@ Credits To: [[url-external:https://leetcode.com/problems/find-bottom-left-tree-v
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/find-bottom-left-tree-value
+## Basic Ideas: level-order traversal
+##              Check the first element of every layer
+##              Return the item of deepest level
+##
+## Complexity: Time O(n), Space O(n)
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -57,11 +61,6 @@ Leave me comments, if you know how to solve.
 #         self.right = None
 
 class Solution(object):
-    ## Basic Ideas: level-order traversal
-    ##              Check the first element of every layer
-    ##              Return the item of deepest level
-    ##
-    ## Complexity: Time O(n), Space O(n)
     def findBottomLeftValue(self, root):
         """
         :type root: TreeNode

@@ -37,14 +37,13 @@ Note:
          / \  / \
         4->5->6->7 -> NULL
 
-Blog link: <http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node
     ## Basic Ideas: Process nodes: from top to down, left to right
     ##              How to process:
     ##                 p.left.next = p.right

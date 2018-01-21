@@ -9,14 +9,13 @@ Binary Tree Zigzag Level Order Traversal
 
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
 
-Blog link: <http://brain.dennyzhang.com/binary-tree-zigzag-level-order-traversal>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-zigzag-level-order-traversal)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/binary-tree-zigzag-level-order-traversal
     ## Basic Ideas: BFS, use left_to_right(boolen) for level traversal direction
     ## Complexity: Time O(n), Space O(k)
     

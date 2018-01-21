@@ -13,11 +13,9 @@ Given a collection of intervals, merge all overlapping intervals.
     Given [1,3],[2,6],[8,10],[15,18],
     return [1,6],[8,10],[15,18].
 
-Blog link: <http://brain.dennyzhang.com/merge-intervals>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-intervals)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/merge-intervals/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-intervals/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -16,14 +16,13 @@ Return 3, because by repeating A three times ("abcdabcdabcd"), B is a substring 
 Note:  
 The length of A and B will be between 1 and 10000.  
 
-Blog link: <http://brain.dennyzhang.com/repeated-string-match>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-string-match)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/repeated-string-match/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/repeated-string-match/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/repeated-string-match
     ## Basic Ideas: Consider lengths of A and B are len_a, len_b
     ##              Let's say a match exists. k = len_b/len_a
     ##              Then we need to repeat A either k times, k+1 times or k+2 times

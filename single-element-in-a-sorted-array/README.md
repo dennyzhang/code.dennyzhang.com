@@ -19,16 +19,15 @@ Given a sorted array consisting of only integers where every element appears twi
 
 Note: Your solution should run in O(log n) time and O(1) space.  
 
-Blog link: <http://brain.dennyzhang.com/single-element-in-a-sorted-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-element-in-a-sorted-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)  
 
-Useful link: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description)  
+Useful link: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/single-element-in-a-sorted-array
     ## Basic Ideas: Binary search
     ##              Find the middle element.
     ##              If the middle is different from the both sides, that's what we want
@@ -68,6 +67,3 @@ Leave me comments, if you know how to solve.
     print s.singleNonDuplicate([1,1,2,3,3,4,4,8,8])
     print s.singleNonDuplicate([3,3,7,7,10,11,11])
     print s.singleNonDuplicate([])
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/single-element-in-a-sorted-array>

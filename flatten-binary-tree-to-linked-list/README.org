@@ -38,7 +38,7 @@ Hints:
 
 If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
 
-Blog link: http://brain.dennyzhang.com/flatten-binary-tree-to-linked-list
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-binary-tree-to-linked-list][challenges-leetcode-interesting]]
 
@@ -47,7 +47,8 @@ Credits To: [[url-external:https://leetcode.com/problems/flatten-binary-tree-to-
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Basic Idea: DFS for pre-order traversal
+## Blog link: http://brain.dennyzhang.com/flatten-binary-tree-to-linked-list
+## Basic Ideas: DFS for pre-order traversal
 ## Complexity: Time O(n), Space O(n)
 
 # Definition for a binary tree node.

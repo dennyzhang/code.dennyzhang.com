@@ -19,11 +19,9 @@ Notes:
 -   Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
 -   You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
 
-Blog link: <http://brain.dennyzhang.com/implement-stack-using-queues>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-stack-using-queues)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/implement-stack-using-queues/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/implement-stack-using-queues/description/)  
 
 Leave me comments, if you know how to solve.  
 

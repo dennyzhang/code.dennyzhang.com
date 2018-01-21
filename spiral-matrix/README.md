@@ -19,14 +19,13 @@ Given a matrix of m x n elements (m rows, n columns), return all elements of the
     ]
     You should return [1,2,3,6,9,8,7,4,5].
 
-Blog link: <http://brain.dennyzhang.com/spiral-matrix>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/spiral-matrix
     ## Basic Ideas:
     ##            The visit is a loop with four directions: right, down, left, up
     ##            Two counters: num1(how many items for right and left)

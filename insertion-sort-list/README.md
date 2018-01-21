@@ -9,14 +9,13 @@ Sort a linked list
 
 Sort a linked list using insertion sort.  
 
-Blog link: <http://brain.dennyzhang.com/insertion-sort-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insertion-sort-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/insertion-sort-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/insertion-sort-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/insertion-sort-list
     ## Basic Ideas: 
     ##       Add a dummy head node, since the head node might be changed
     ##       Pointer p: the tail of sorted list
@@ -81,6 +80,3 @@ Leave me comments, if you know how to solve.
     print new_head.val
     print new_head.next.val
     print new_head.next.next.val
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/insertion-sort-list>

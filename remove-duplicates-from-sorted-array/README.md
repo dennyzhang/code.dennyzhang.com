@@ -18,11 +18,9 @@ Do not allocate extra space for another array, you must do this by modifying the
     Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
     It doesn't matter what you leave beyond the new length.
 
-Blog link: <http://brain.dennyzhang.com/remove-duplicates-from-sorted-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)  
 
 Leave me comments, if you know how to solve.  
 

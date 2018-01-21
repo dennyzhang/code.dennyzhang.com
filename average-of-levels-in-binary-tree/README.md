@@ -23,11 +23,9 @@ The average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 
 Note:  
 The range of node's value is in the range of 32-bit signed integer.  
 
-Blog link: <http://brain.dennyzhang.com/average-of-levels-in-binary-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/average-of-levels-in-binary-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/average-of-levels-in-binary-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 

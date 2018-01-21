@@ -18,14 +18,13 @@ A = [2,3,1,1,4], return true.
 
 A = [3,2,1,0,4], return false.  
 
-Blog link: <http://brain.dennyzhang.com/jump-game>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/jump-game/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/jump-game/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/jump-game
     ## Basic Ideas: Greedy
     ##            maxIndex: the maximum index we can jump
     ##            We check from left to right, thus we won't need to move back

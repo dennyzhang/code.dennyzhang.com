@@ -13,15 +13,13 @@ For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.
 
 Note: The result may be very large, so you need to return a string instead of an integer.  
 
-Blog link: <http://brain.dennyzhang.com/largest-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/largest-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/largest-number/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Idea: Quick sort list with customized compare logic. Then Concat them as one.
+    ## Basic Ideas: Quick sort list with customized compare logic. Then Concat them as one.
     ##             "9" vs "30"
     ##             "34" vs "3"
     ##             "3012" vs "30"

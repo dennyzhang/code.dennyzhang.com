@@ -14,11 +14,9 @@ Given [3,2,1,5,6,4] and k = 2, return 5.
 Note:  
 You may assume k is always valid, 1 <= k <= array's length.  
 
-Blog link: <http://brain.dennyzhang.com/kth-largest-element-in-an-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/kth-largest-element-in-an-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-an-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)  
 
 Leave me comments, if you know how to solve.  
 

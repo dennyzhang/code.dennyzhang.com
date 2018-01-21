@@ -28,18 +28,15 @@ Note:
 - The input array size is in the range of [1, 20000].
 - n is a non-negative integer which won't exceed the input array size.
 
-Blog link: http://brain.dennyzhang.com/can-place-flowers
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/can-place-flowers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/can-place-flowers/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 
-Similar Questions:
-- [[http://brain.dennyzhang.com/max-consecutive-ones/][Leetcode: Max Consecutive Ones]]
-
 #+BEGIN_SRC python
+## 
+## Blog link: http://brain.dennyzhang.com/can-place-flowers
 ## Basic Ideas: Find consecutive 0s
 ##              For a range of n 0s
 ##                  If the range in the middle, we can place (n-1)/2 flowers

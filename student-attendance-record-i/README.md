@@ -24,16 +24,15 @@ You need to return whether the student could be rewarded according to his attend
     Input: "PPALLL"
     Output: False
 
-Blog link: <http://brain.dennyzhang.com/student-attendance-record-i>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description/)  
 
-Useful link: [leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description)  
+Useful link: [leetcode.com](https://leetcode.com/problems/student-attendance-record-i/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/student-attendance-record-i
     ## Basic Ideas: One pass
     ##              absent: counter of absent records
     ##              max_continuous_late: counter of continous late
@@ -89,6 +88,3 @@ Leave me comments, if you know how to solve.
     print s.checkRecord('PPALLP')
     print s.checkRecord('PPALLL')
     print s.checkRecord('PPALLP')
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/student-attendance-record-i>

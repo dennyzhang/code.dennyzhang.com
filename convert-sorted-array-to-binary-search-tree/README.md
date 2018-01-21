@@ -23,14 +23,13 @@ Example:
        /   /
      -10  5
 
-Blog link: <http://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-array-to-binary-search-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tree
     ## Basic Ideas: Find the middle node
     ## Complexity: Time O(n), Space O(1)
     

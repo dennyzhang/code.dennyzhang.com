@@ -33,11 +33,9 @@ Note:
 1.  schedule and schedule[i] are lists with lengths in range [1, 50].
 2.  0 <= schedule[i].start < schedule[i].end <= 10^8.
 
-Blog link: <http://brain.dennyzhang.com/employee-free-time>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employee-free-time)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/employee-free-time/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/employee-free-time/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -20,16 +20,15 @@ Note:
 -   The input array will only contain 0 and 1.
 -   The length of input array is a positive integer and will not exceed 10,000
 
-Blog link: <http://brain.dennyzhang.com/max-consecutive-ones>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-consecutive-ones)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/max-consecutive-ones/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/max-consecutive-ones/description/)  
 
 Leave me comments, if you know how to solve.  
 
     class Solution(object):
-        ## Basic Ideas:  counter
+        ## Blog link: http://brain.dennyzhang.com/max-consecutive-ones
+    ## Basic Ideas:  counter
         ##               If found one 0, reset the counter to 0. Otherwise counter + 1
         ##
         ## Complexity: Time O(n), Space O(1)
@@ -47,7 +46,8 @@ Leave me comments, if you know how to solve.
                     counter = 0
             return max_count
     
-        ## Basic Ideas: Two pointers
+        ## Blog link: http://brain.dennyzhang.com/max-consecutive-ones
+    ## Basic Ideas: Two pointers
         ##              i points to the start of consecutive of 1s
         ##              j points to the next element of the end of consecutive of 1s.
         ##

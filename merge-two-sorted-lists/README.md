@@ -14,14 +14,18 @@ Example:
 Input: 1->2->4, 1->3->4  
 Output: 1->1->2->3->4->4  
 
-Blog link: <http://brain.dennyzhang.com/merge-two-sorted-lists>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-sorted-lists)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/merge-two-sorted-lists/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-two-sorted-lists/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas:
+    ##    l1: 1 -> 3 -> 5
+    ##        p   r
+    ##    l2: 2 -> 3 -> 6 -> 7
+    ##        q   s
+    ## Complexity:
     class Solution(object):
         def mergeTwoLists(self, l1, l2):
             """
@@ -29,12 +33,6 @@ Leave me comments, if you know how to solve.
             :type l2: ListNode
             :rtype: ListNode
             """
-            ## Basic Idea:
-            ##    l1: 1 -> 3 -> 5
-            ##        p   r
-            ##    l2: 2 -> 3 -> 6 -> 7
-            ##        q   s
-            ## Complexity:
             ## recursive
             if l1 is None:
                 return l2

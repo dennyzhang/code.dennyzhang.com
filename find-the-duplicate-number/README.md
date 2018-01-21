@@ -15,14 +15,13 @@ Note:
 3.  Your runtime complexity should be less than O(n\*n).
 4.  There is only one duplicate number in the array, but it could be repeated more than once.
 
-Blog link: <http://brain.dennyzhang.com/find-the-duplicate-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-duplicate-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-the-duplicate-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-the-duplicate-number/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/find-the-duplicate-number
     ## Basic Ideas: Binary search
     ##              The target is in [1, n]
     ##              Compare all elements with the value of n/2
@@ -64,6 +63,3 @@ Leave me comments, if you know how to solve.
     
     s = Solution()
     print s.findDuplicate([1,3,4,2,1])
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/find-the-duplicate-number>

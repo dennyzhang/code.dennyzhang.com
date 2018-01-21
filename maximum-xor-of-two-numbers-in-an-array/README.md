@@ -21,14 +21,13 @@ Could you do this in O(n) runtime?
     
     Explanation: The maximum result is 5 ^ 25 = 28.
 
-Blog link: <http://brain.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-xor-of-two-numbers-in-an-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array
     ## Basic Ideas: Trie tree
     ##              1. The height of tree is 32. Each node can have at most two children(0 and 1)
     ##              2. Append each num into the tree by bits. The lowest level is the smallest digit

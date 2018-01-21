@@ -26,11 +26,9 @@ Given a binary tree, check whether it is a mirror of itself (ie, symmetric aroun
 Note:  
 Bonus points if you could solve it both recursively and iteratively.  
 
-Blog link: <http://brain.dennyzhang.com/symmetric-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/symmetric-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/symmetric-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/symmetric-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 

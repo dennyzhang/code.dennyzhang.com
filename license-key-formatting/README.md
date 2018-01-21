@@ -33,14 +33,13 @@ Note:
 2.  String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).
 3.  String S is non-empty.
 
-Blog link: <http://brain.dennyzhang.com/license-key-formatting>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/license-key-formatting)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/license-key-formatting/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/license-key-formatting/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/license-key-formatting
     ## Basic Ideas: Get the length of non-dash string
     ##              Then we know how many dash we need
     ##              Move from right to left with two pointers

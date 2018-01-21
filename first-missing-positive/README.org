@@ -17,7 +17,7 @@ and [3,4,-1,1] return 2.
 
 Your algorithm should run in O(n) time and uses constant space.
 
-Blog link: http://brain.dennyzhang.com/first-missing-positive
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive][challenges-leetcode-interesting]]
 
@@ -26,6 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/first-missing-positive/
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/first-missing-positive
 ## Basic Ideas: count sort. Put each number in its right place.
 ##    Sample Data:
 ##    1  2  0
@@ -64,6 +65,3 @@ class Solution(object):
 s = Solution()
 print s.firstMissingPositive([3,4,-1,1])
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/first-missing-positive

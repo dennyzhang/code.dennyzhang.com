@@ -26,15 +26,16 @@ Note:
 1.  A, B have equal lengths in range [1, 100].
 2.  A[i], B[i] are integers in range [0, 10^5].
 
-Blog link: <http://brain.dennyzhang.com/find-anagram-mappings>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-anagram-mappings)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-anagram-mappings/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-anagram-mappings/description/)  
 
 Leave me comments, if you know how to solve.  
 
     #!/usr/bin/env python
+    ## Basic Ideas: 
+    ## Complexity: Time O(n*n), Space O(1)
+    ## Assumption: whether I can change B?
     class Solution(object):
         def anagramMappings(self, A, B):
             """
@@ -42,9 +43,6 @@ Leave me comments, if you know how to solve.
             :type B: List[int]
             :rtype: List[int]
             """
-            ## Basic Idea: 
-            ## Complexity: Time O(n*n), Space O(1)
-            ## Assumption: whether I can change B?
             length = len(A)
             selected_list = [0] * length
             result = []

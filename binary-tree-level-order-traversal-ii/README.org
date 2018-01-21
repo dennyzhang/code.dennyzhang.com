@@ -24,7 +24,7 @@ return its bottom-up level order traversal as:
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/binary-tree-level-order-traversal-ii
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-level-order-traversal-ii][challenges-leetcode-interesting]]
 

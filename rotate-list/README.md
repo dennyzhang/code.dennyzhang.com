@@ -15,14 +15,22 @@ Example:
     
     return 4->5->1->2->3->NULL.
 
-Blog link: <http://brain.dennyzhang.com/rotate-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/rotate-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/rotate-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/rotate-list
+    ## Basic Ideas: 
+    ##       Get length of the list
+    ##       pointer q: where to rotate
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    ## Assumptions:
+    ## Sample Data:
+    ##        1->2->3->4->5->NULL
+    ##              q   last_node
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):
@@ -36,16 +44,6 @@ Leave me comments, if you know how to solve.
             :type k: int
             :rtype: ListNode
             """
-            ## Basic Idea: 
-            ##       Get length of the list
-            ##       pointer q: where to rotate
-            ##
-            ## Complexity: Time O(n), Space O(1)
-            ## Assumptions:
-            ## Sample Data:
-            ##        1->2->3->4->5->NULL
-            ##              q   last_node
-            # empty list
             if head is None or k == 0:
                 return head
             # get length

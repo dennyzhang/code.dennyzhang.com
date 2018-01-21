@@ -20,7 +20,7 @@ Given the below binary tree,
 Return 6.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/binary-tree-maximum-path-sum
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-maximum-path-sum][challenges-leetcode-interesting]]
 

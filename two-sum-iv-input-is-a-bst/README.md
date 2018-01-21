@@ -33,11 +33,9 @@ Given a Binary Search Tree and a target number, return true if there exist two e
     
     Output: False
 
-Blog link: <http://brain.dennyzhang.com/two-sum-iv-input-is-a-bst>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-iv-input-is-a-bst)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/)  
 
 Leave me comments, if you know how to solve.  
 

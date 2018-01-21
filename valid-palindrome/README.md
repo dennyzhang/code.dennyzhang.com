@@ -18,11 +18,9 @@ Have you consider that the string might be empty? This is a good question to ask
 
 For the purpose of this problem, we define empty string as valid palindrome.  
 
-Blog link: <http://brain.dennyzhang.com/valid-palindrome>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
 
 Leave me comments, if you know how to solve.  
 

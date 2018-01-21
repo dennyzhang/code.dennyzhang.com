@@ -46,8 +46,6 @@ Input:     1         1
 Output: false
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/same-tree
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/same-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/same-tree/description/][leetcode.com]]

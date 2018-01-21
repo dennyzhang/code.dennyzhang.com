@@ -13,14 +13,13 @@ Suppose you have n versions [1, 2, &#x2026;, n] and you want to find out the fir
 
 You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.  
 
-Blog link: <http://brain.dennyzhang.com/first-bad-version>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-bad-version)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/first-bad-version/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/first-bad-version/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/first-bad-version
     ## Basic Ideas: Binary search
     ##         Find the first False
     ##         F F F F T T

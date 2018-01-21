@@ -37,10 +37,8 @@ Example 1:
     or
     7 -> 6 -> 3 -> 2 -> 1
 
-Blog link: <http://brain.dennyzhang.com/integer-replacement>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-replacement)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/integer-replacement/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/integer-replacement/description/)  
 
 Leave me comments, if you know how to solve.

@@ -26,7 +26,7 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/combination-sum-ii
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum-ii][challenges-leetcode-interesting]]
 
@@ -35,6 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum-ii/desc
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/combination-sum-ii
 ## Basic Ideas: sort the list, then 0-1 bag
 ## Complexity: Time ? Space ?
 ## Assumptions:

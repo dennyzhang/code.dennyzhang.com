@@ -42,7 +42,7 @@ Given tree t:
 Return false.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/subtree-of-another-tree
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subtree-of-another-tree][challenges-leetcode-interesting]]
 
@@ -51,6 +51,7 @@ Credits To: [[url-external:https://leetcode.com/problems/subtree-of-another-tree
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/subtree-of-another-tree
 ## Basic Ideas: pre-order trasversal
 ##
 ## Complexity: Time ? Space ?

@@ -19,14 +19,13 @@ You may assume that the intervals were initially sorted according to their start
     
     This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 
-Blog link: <http://brain.dennyzhang.com/insert-interval>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-interval)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/insert-interval/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/insert-interval/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## 
     # Definition for an interval.
     # class Interval(object):
     #     def __init__(self, s=0, e=0):

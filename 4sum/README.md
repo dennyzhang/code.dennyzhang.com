@@ -20,11 +20,9 @@ Note: The solution set must not contain duplicate quadruplets.
       [-2,  0, 0, 2]
     ]
 
-Blog link: <http://brain.dennyzhang.com/4sum>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4sum)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/4sum/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/4sum/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -19,7 +19,7 @@ Given "cbacdcbc"
 Return "acdb"
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/remove-duplicate-letters
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicate-letters][challenges-leetcode-interesting]]
 

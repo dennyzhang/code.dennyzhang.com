@@ -34,11 +34,9 @@ Intervals like [1,2] and [2,3] have borders "touching" but they don't overlap ea
     
     Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
 
-Blog link: <http://brain.dennyzhang.com/non-overlapping-intervals>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-overlapping-intervals)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/non-overlapping-intervals/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/non-overlapping-intervals/description/)  
 
 Leave me comments, if you know how to solve.  
 

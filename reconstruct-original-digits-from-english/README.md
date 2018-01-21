@@ -24,11 +24,9 @@ Input length is less than 50,000.
     
     Output: "45"
 
-Blog link: <http://brain.dennyzhang.com/reconstruct-original-digits-from-english>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reconstruct-original-digits-from-english)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/reconstruct-original-digits-from-english/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/reconstruct-original-digits-from-english/description/)  
 
 Leave me comments, if you know how to solve.  
 

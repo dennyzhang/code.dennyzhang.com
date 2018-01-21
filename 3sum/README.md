@@ -19,14 +19,13 @@ Note: The solution set must not contain duplicate triplets.
       [-1, -1, 2]
     ]
 
-Blog link: <http://brain.dennyzhang.com/3sum>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/3sum/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/3sum/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/3sum
     ## Basic Ideas: sort the list, then loop with idea of 2 sum
     ##       What if you have duplicate entries?
     ##       [0, 0, 0, 0]

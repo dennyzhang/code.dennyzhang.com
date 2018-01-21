@@ -15,14 +15,13 @@ Given 1->2->3->3->4->4->5, return 1->2->5.
 
 Given 1->1->1->2->3, return 2->3.  
 
-Blog link: <http://brain.dennyzhang.com/remove-duplicates-from-sorted-list-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/remove-duplicates-from-sorted-list-ii
     ## Basic Ideas:
     ##    p points to the last processed node
     ##    Whether to add one node

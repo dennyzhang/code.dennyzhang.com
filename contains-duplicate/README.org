@@ -9,7 +9,7 @@ Contains Duplicate
 ---------------------------------------------------------------------
 Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
-Blog link: http://brain.dennyzhang.com/contains-duplicate
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate][challenges-leetcode-interesting]]
 

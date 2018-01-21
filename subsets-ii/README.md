@@ -23,10 +23,8 @@ Note: The solution set must not contain duplicate subsets.
       []
     ]
 
-Blog link: <http://brain.dennyzhang.com/subsets-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/subsets-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/subsets-ii/description/)  
 
 Leave me comments, if you know how to solve.

@@ -18,14 +18,13 @@ Given a non-negative integer c, your task is to decide whether there're two inte
     Input: 3
     Output: False
 
-Blog link: <http://brain.dennyzhang.com/sum-of-square-numbers>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-square-numbers)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-square-numbers/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-square-numbers/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/sum-of-square-numbers
     ## Basic Ideas: max(a, b) <= int(sqrt(c))
     ##              Then we convert it into a two-sum problem
     ##

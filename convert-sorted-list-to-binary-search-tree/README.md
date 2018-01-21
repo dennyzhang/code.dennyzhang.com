@@ -23,14 +23,15 @@ Example:
        /   /
      -10  5
 
-Blog link: <http://brain.dennyzhang.com/convert-sorted-list-to-binary-search-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-list-to-binary-search-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Binary Search
+    ## Complexity: Time O(log(n)*n), Space O(1)
+    ##
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):
@@ -50,11 +51,6 @@ Leave me comments, if you know how to solve.
             :type head: ListNode
             :rtype: TreeNode
             """
-            ## Basic Idea: Binary Search
-            ## Complexity: Time O(log(n)*n), Space O(1)
-            ## Assumptions:
-            ## Sample Data:
-    
             ## Sample Data:
             node_count = self.getNodeCount(head)
     

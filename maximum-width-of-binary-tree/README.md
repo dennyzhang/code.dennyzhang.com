@@ -62,11 +62,9 @@ The width of one level is defined as the length between the end-nodes (the leftm
 
 Note: Answer will in the range of 32-bit signed integer.  
 
-Blog link: <http://brain.dennyzhang.com/maximum-width-of-binary-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-width-of-binary-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/maximum-width-of-binary-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/maximum-width-of-binary-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 

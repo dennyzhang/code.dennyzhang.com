@@ -26,7 +26,7 @@ Explanation:
 'e' is the letter that was added.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/find-the-difference
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-difference][challenges-leetcode-interesting]]
 

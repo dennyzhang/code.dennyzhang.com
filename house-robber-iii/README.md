@@ -27,14 +27,13 @@ Determine the maximum amount of money the thief can rob tonight without alerting
      1   3   1
     Maximum amount of money the thief can rob = 4 + 5 = 9.
 
-Blog link: <http://brain.dennyzhang.com/house-robber-iii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber-iii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-iii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-iii/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/house-robber-iii
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ## Complexity: Time O(n), Space O(1)

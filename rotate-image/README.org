@@ -53,7 +53,7 @@ rotate the input matrix in-place such that it becomes:
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/rotate-image
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-image][challenges-leetcode-interesting]]
 
@@ -62,6 +62,7 @@ Credits To: [[url-external:https://leetcode.com/problems/rotate-image/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/rotate-image
 ## Basic Ideas: Rotate circle by circle. From outer to inner layer.
 ##             Use an array of n to save data temporarily
 ## Complexity: Time O(n*n), Space O(n)

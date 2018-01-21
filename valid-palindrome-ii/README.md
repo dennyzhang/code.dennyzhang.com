@@ -21,14 +21,13 @@ Given a non-empty string s, you may delete at most one character. Judge whether 
 Note:  
 The string will only contain lowercase characters a-z. The maximum length of the string is 50000.  
 
-Blog link: <http://brain.dennyzhang.com/valid-palindrome-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/valid-palindrome-ii
     ## Basic Ideas:
     ##      Two pointers: one from left to right, another from right to left
     ##      If the value is different, we could either delete the left one or delete the right one

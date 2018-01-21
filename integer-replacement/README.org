@@ -40,7 +40,7 @@ or
 7 -> 6 -> 3 -> 2 -> 1
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/integer-replacement
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-replacement][challenges-leetcode-interesting]]
 

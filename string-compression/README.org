@@ -60,7 +60,7 @@ Note:
 All characters have an ASCII value in [35, 126].
 1 <= len(chars) <= 1000.
 
-Blog link: http://brain.dennyzhang.com/string-compression
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/string-compression][challenges-leetcode-interesting]]
 

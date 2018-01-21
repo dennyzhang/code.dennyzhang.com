@@ -41,7 +41,7 @@ Explanation: Almost the same as the first example,
 except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/construct-string-from-binary-tree
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-string-from-binary-tree][challenges-leetcode-interesting]]
 

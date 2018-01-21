@@ -23,11 +23,9 @@ Given a binary tree, return the level order traversal of its nodes' values. (ie,
       [15,7]
     ]
 
-Blog link: <http://brain.dennyzhang.com/binary-tree-level-order-traversal>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-level-order-traversal)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-level-order-traversal/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  
 
 Leave me comments, if you know how to solve.  
 

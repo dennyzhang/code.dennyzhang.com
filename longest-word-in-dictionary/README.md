@@ -31,14 +31,13 @@ Note:
 -   The length of words will be in the range [1, 1000].
 -   The length of words[i] will be in the range [1, 30].
 
-Blog link: <http://brain.dennyzhang.com/longest-word-in-dictionary>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-word-in-dictionary)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/longest-word-in-dictionary/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-word-in-dictionary/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/longest-word-in-dictionary
     ## Basic Ideas: trie tree
     ## Complexity: Time O(n), Space O(n). n the count of characters involved
     class TrieNode(object):

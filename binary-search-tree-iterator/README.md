@@ -13,14 +13,13 @@ Calling next() will return the next smallest number in the BST.
 
 Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.  
 
-Blog link: <http://brain.dennyzhang.com/binary-search-tree-iterator>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-search-tree-iterator)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/binary-search-tree-iterator/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-search-tree-iterator/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/binary-search-tree-iterator
     ## Basic Ideas: In-order traversal. Use a stack
     ##      Store directed left children from root.
     ##      When next() be called, pop one element and process its right child as new root.

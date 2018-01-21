@@ -30,14 +30,13 @@ Note:
 -   1 <= len(bits) <= 1000.
 -   bits[i] is always 0 or 1.
 
-Blog link: <http://brain.dennyzhang.com/1-bit-and-2-bit-characters>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/1-bit-and-2-bit-characters)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/1-bit-and-2-bit-characters/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/1-bit-and-2-bit-characters/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/1-bit-and-2-bit-characters
     ## Basic Ideas: One pass
     ##       If current digit is 0, move 1 step
     ##       If current digit is 1, move 2 steps

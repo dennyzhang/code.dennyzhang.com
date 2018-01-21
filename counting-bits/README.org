@@ -19,7 +19,7 @@ Follow up:
 - Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
 
 
-Blog link: http://brain.dennyzhang.com/counting-bits
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/counting-bits][challenges-leetcode-interesting]]
 
@@ -28,6 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/counting-bits/descripti
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/counting-bits
 ## Basic Ideas:
 ##      If k%2 == 0, f(k) = f(k/2)
 ##      If k%2 == 1, f(k) = f(k-1)

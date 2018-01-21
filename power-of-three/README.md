@@ -12,15 +12,14 @@ Given an integer, write a function to determine if it is a power of three.
 Follow up:  
 Could you do it without using any loop / recursion?  
 
-Blog link: <http://brain.dennyzhang.com/power-of-three>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/power-of-three)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/power-of-three/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/power-of-three/description/)  
 
 Leave me comments, if you know how to solve.  
 
     class Solution(object):
+    ## Blog link: http://brain.dennyzhang.com/power-of-three
     ## Basic Ideas: power of any prime number
     ##              3 is a prime
     ##              If 3 % k == 0 and k is a prime, then k is 3.

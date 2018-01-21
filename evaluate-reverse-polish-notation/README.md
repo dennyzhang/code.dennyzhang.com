@@ -15,14 +15,13 @@ Some examples:
   ["2", "1", "+", "3", "\*"] -> ((2 + 1) \* 3) -> 9  
   ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6  
 
-Blog link: <http://brain.dennyzhang.com/evaluate-reverse-polish-notation>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/evaluate-reverse-polish-notation)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/evaluate-reverse-polish-notation/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/evaluate-reverse-polish-notation
     ## Basic Ideas: Use stack
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):

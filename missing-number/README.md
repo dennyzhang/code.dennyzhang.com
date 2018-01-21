@@ -22,11 +22,9 @@ Given an array containing n distinct numbers taken from 0, 1, 2, &#x2026;, n, fi
 Note:  
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?  
 
-Blog link: <http://brain.dennyzhang.com/missing-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/missing-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/missing-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/missing-number/description/)  
 
 Leave me comments, if you know how to solve.  
 

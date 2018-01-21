@@ -12,11 +12,9 @@ Given an array of integers, every element appears three times except for one, wh
 Note:  
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?  
 
-Blog link: <http://brain.dennyzhang.com/single-number-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/single-number-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-number-ii/description/)  
 
 Hint: Time O(n), Space O(1)  
 
@@ -55,8 +53,3 @@ Leave me comments, if you know how to solve.
                 res = res | bit_list[i]
     
             if is_positive is True: return res else: return -(res+1)
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/single-number-ii>
--   [[<http://brain.dennyzhang.com/single-number-ii>
--   [[<http://brain.dennyzhang.com/single-number-ii>

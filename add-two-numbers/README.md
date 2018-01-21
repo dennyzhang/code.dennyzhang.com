@@ -17,11 +17,9 @@ You may assume the two numbers do not contain any leading zero, except the numbe
     Output: 7 -> 0 -> 8
     Explanation: 342 + 465 = 807.
 
-Blog link: <http://brain.dennyzhang.com/add-two-numbers>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-two-numbers)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/add-two-numbers/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-two-numbers/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -24,11 +24,9 @@ Given a string array words, find the maximum value of length(word[i]) \* length(
     Return 0
     No such pair of words.
 
-Blog link: <http://brain.dennyzhang.com/maximum-product-of-word-lengths>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-product-of-word-lengths)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/maximum-product-of-word-lengths/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/maximum-product-of-word-lengths/description/)  
 
 Leave me comments, if you know how to solve.  
 

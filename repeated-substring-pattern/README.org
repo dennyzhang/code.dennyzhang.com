@@ -33,7 +33,7 @@ Output: True
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 
-Blog link: http://brain.dennyzhang.com/repeated-substring-pattern
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern][challenges-leetcode-interesting]]
 
@@ -49,6 +49,3 @@ class Solution(object):
         :rtype: bool
         """
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/repeated-substring-pattern

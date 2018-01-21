@@ -22,14 +22,13 @@ Only constant memory is allowed.
     
     For k = 3, you should return: 3->2->1->4->5
 
-Blog link: <http://brain.dennyzhang.com/reverse-nodes-in-k-group>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-nodes-in-k-group)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/reverse-nodes-in-k-group/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/reverse-nodes-in-k-group
     ## Basic Ideas: Two pointer(p1, p2) with distance of k
     ##              Since head node might be changed, add a dummyNode
     ##              How to process:

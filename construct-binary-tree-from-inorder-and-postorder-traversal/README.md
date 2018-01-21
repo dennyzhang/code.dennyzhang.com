@@ -12,14 +12,13 @@ Given inorder and postorder traversal of a tree, construct the binary tree.
 Note:  
 You may assume that duplicates do not exist in the tree.  
 
-Blog link: <http://brain.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-inorder-and-postorder-traversal)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal
     ## Basic Ideas:
     ##         Inorder:    L M R
     ##         Postorder:  L R M

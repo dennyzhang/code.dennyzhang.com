@@ -21,7 +21,7 @@ Return:
 
 Note: All inputs will be in lower-case.
 
-Blog link: http://brain.dennyzhang.com/group-anagrams
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/group-anagrams][challenges-leetcode-interesting]]
 
@@ -30,6 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/group-anagrams/descript
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/group-anagrams
 ## Basic Ideas:  map each item to a string, group them by a map, dump the map
 ## Complexity: Time O(n*k*log(k)), Space O(k*n). k is the length of longest item
 class Solution(object):

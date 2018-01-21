@@ -19,14 +19,13 @@ Given a positive integer, return its corresponding column title as appear in an 
         27 -> AA
         28 -> AB
 
-Blog link: <http://brain.dennyzhang.com/excel-sheet-column-title>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-title)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-title/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-title/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/excel-sheet-column-title
     ## Basic Ideas:
     ##         a*(26^3) + b*(26^2) + c*(26) + d
     ##          1 ->  (1)  -> A

@@ -27,11 +27,9 @@ Given target = 5, return true.
 
 Given target = 20, return false.  
 
-Blog link: <http://brain.dennyzhang.com/search-a-2d-matrix-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-a-2d-matrix-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -30,7 +30,7 @@ Merged tree:
 
 Note: The merging process must start from the root nodes of both trees.
 
-Blog link: http://brain.dennyzhang.com/merge-two-binary
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-binary][challenges-leetcode-interesting]]
 

@@ -19,11 +19,9 @@ For example:
        3
     return [1,3,2].
 
-Blog link: <http://brain.dennyzhang.com/binary-tree-inorder-traversal>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-inorder-traversal)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-inorder-traversal/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)  
 
 Leave me comments, if you know how to solve.  
 

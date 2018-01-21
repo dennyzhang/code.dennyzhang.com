@@ -22,11 +22,9 @@ Output: 0
 
 In this case, no transaction is done, i.e. max profit = 0.  
 
-Blog link: <http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/best-time-to-buy-and-sell-stock)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)  
 
     class Solution(object):
         def maxProfit(self, prices):
@@ -62,7 +60,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-se
                     max_profit = prices[i] - min_value
             return max_profit if max_profit > 0 else 0
 
-Leave me comments, if you know how to solve.  
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock>
+Leave me comments, if you know how to solve.

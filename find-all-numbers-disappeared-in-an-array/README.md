@@ -21,12 +21,11 @@ Example:
     Output:
     [5,6]
 
-Blog link: <http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)  
 
+    ## Blog link: http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array
     ## Basic Ideas: traverse each item
     ## Complexity:
     ##  1,2,3,4,5,6,7,8
@@ -55,7 +54,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-all-numbers-disapp
                     ret.append(i+1)
             return ret
 
-Leave me comments, if you know how to solve.  
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array>
+Leave me comments, if you know how to solve.

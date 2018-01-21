@@ -16,14 +16,13 @@ Both num1 and num2 contains only digits 0-9.
 Both num1 and num2 does not contain any leading zero.  
 You must not use any built-in BigInteger library or convert the inputs to integer directly.  
 
-Blog link: <http://brain.dennyzhang.com/add-strings>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-strings)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/add-strings/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-strings/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/add-strings
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ## Complexity: Time O(n), Space O(1)

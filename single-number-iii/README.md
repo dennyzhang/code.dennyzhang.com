@@ -17,11 +17,9 @@ Note:
 1.  The order of the result is not important. So in the above example, [5, 3] is also correct.
 2.  Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
-Blog link: <http://brain.dennyzhang.com/single-number-iii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-iii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/single-number-iii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-number-iii/description/)  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
@@ -29,6 +27,7 @@ Leave me comments, if you know how to solve.
 
 Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
+    ## Blog link: http://brain.dennyzhang.com/single-number-iii
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ##     Sample Data:

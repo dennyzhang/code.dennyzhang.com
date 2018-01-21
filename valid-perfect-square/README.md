@@ -21,15 +21,13 @@ Note: Do not use any built-in library function such as sqrt.
     Input: 14
     Returns: False
 
-Blog link: <http://brain.dennyzhang.com/valid-perfect-square>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-perfect-square)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-perfect-square/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-perfect-square/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Idea: Binary search
+    ## Basic Ideas: Binary search
     ##             Search in between [1^2, 2^2, 3^2, ... num^2]
     ## Complexity: Time O(log(n)), Space O(1)
     class Solution(object):

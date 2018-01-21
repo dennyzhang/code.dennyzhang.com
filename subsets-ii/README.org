@@ -24,7 +24,7 @@ If nums = [1,2,2], a solution is:
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/subsets-ii
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets-ii][challenges-leetcode-interesting]]
 

@@ -14,15 +14,13 @@ Input:
 A: [1,2,3,2,1]
 B: [3,2,1,4,7]
 Output: 3
-Explanation: 
+Explanation:
 The repeated subarray with maximum length is [3, 2, 1].
 #+END_EXAMPLE
 
 Note:
 - 1 <= len(A), len(B) <= 1000
 - 0 <= A[i], B[i] < 100
-
-Blog link: http://brain.dennyzhang.com/maximum-length-of-repeated-subarray
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-length-of-repeated-subarray][challenges-leetcode-interesting]]
 

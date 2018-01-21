@@ -19,14 +19,13 @@ If there is no such window in S that covers all characters in T, return the empt
 
 If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.  
 
-Blog link: <http://brain.dennyzhang.com/minimum-window-substring>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-window-substring)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/minimum-window-substring/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/minimum-window-substring/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/minimum-window-substring
     ## Basic Ideas: Two pointers
     ##        Notice: T may have duplicate characters. AABC
     ##                T may be empty or only has one character

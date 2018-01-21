@@ -21,14 +21,13 @@ Given a Binary Search Tree (BST), convert it to a Greater Tree such that every k
                 /   \
               20     13
 
-Blog link: <http://brain.dennyzhang.com/convert-bst-to-greater-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-bst-to-greater-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/convert-bst-to-greater-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/convert-bst-to-greater-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/convert-bst-to-greater-tree
     ## Basic Ideas: Tree traversal: right, middle, left
     ##              Visit nodes in a descending way
     ##           TODO: how to do it in a recusive way?

@@ -25,7 +25,7 @@ Explanation: The longest continuous increasing subsequence is [2], its length is
 #+END_EXAMPLE
 Note: Length of the array will not exceed 10,000.
 
-Blog link: http://brain.dennyzhang.com/longest-continuous-increasing-subsequence
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-continuous-increasing-subsequence][challenges-leetcode-interesting]]
 
@@ -34,6 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-continuous-incr
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/longest-continuous-increasing-subsequence
 ## Basic Ideas: bigger_count: point to how many continuous increasing subsequence
 ## Complexity: Time O(n), Space O(1)
 class Solution(object):

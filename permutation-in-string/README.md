@@ -22,10 +22,8 @@ Note:
 1.  The input strings only contain lower case letters.
 2.  The length of both given strings is in range [1, 10,000].
 
-Blog link: <http://brain.dennyzhang.com/permutation-in-string>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutation-in-string)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/permutation-in-string/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/permutation-in-string/description/)  
 
 Leave me comments, if you know how to solve.

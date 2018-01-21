@@ -23,7 +23,7 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/combination-sum
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum][challenges-leetcode-interesting]]
 

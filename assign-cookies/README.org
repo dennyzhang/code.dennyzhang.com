@@ -35,7 +35,7 @@ You have 3 cookies and their sizes are big enough to gratify all of the children
 You need to output 2.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/assign-cookies
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/assign-cookies][challenges-leetcode-interesting]]
 
@@ -44,6 +44,7 @@ Credits To: [[url-external:https://leetcode.com/problems/assign-cookies/descript
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/assign-cookies
 ## Basic Ideas: Greedy
 ##        Assign the smallest cookie to the the mininum greedy child, if it matches
 ##        Sort the list of g and s
@@ -75,6 +76,3 @@ print s.findContentChildren([10,9,8,7], [5,6,7,8]) # 2
 print s.findContentChildren([1,2, 3], [1,1]) # 1
 print s.findContentChildren([1,2], [1,2,3]) # 2
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/assign-cookies

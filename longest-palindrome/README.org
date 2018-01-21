@@ -27,7 +27,7 @@ Explanation:
 One longest palindrome that can be built is "dccaccd", whose length is 7.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/longest-palindrome
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindrome][challenges-leetcode-interesting]]
 
@@ -36,6 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-palindrome/desc
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/longest-palindrome
 ## Basic Ideas:
 ## Complexity:
 class Solution(object):

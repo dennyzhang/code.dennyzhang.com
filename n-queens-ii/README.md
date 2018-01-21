@@ -11,11 +11,9 @@ Follow up for N-Queens problem.
 
 Now, instead outputting board configurations, return the total number of distinct solutions.  
 
-Blog link: <http://brain.dennyzhang.com/n-queens-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/n-queens-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 

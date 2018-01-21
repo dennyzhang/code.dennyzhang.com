@@ -11,11 +11,9 @@ Given a string containing just the characters '(', ')', '{', '}', '[' and ']', d
 
 The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.  
 
-Blog link: <http://brain.dennyzhang.com/valid-parentheses>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-parentheses)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-parentheses/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-parentheses/description/)  
 
 Leave me comments, if you know how to solve.  
 

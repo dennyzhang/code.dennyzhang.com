@@ -9,14 +9,13 @@ Count Primes
 
 Count the number of prime numbers less than a non-negative number, n.  
 
-Blog link: <http://brain.dennyzhang.com/count-primes>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-primes)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/count-primes/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/count-primes/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/count-primes
     ## Basic Ideas: Sieve of Eratosthenes
     ##              If n is not a prime, it will have more than 1 dividends.
     ##              One of the dividend must less than sqrt(n)

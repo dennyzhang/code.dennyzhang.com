@@ -14,11 +14,9 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 
 Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.  
 
-Blog link: <http://brain.dennyzhang.com/swap-nodes-in-pairs>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swap-nodes-in-pairs)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/swap-nodes-in-pairs/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/swap-nodes-in-pairs/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -39,11 +39,9 @@ Note:
 -   Each value of a node in the input will be an integer in the range [0, 999].
 -   k will be an integer in the range [1, 50].
 
-Blog link: <http://brain.dennyzhang.com/split-linked-list-in-parts>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-linked-list-in-parts)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/split-linked-list-in-parts/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/split-linked-list-in-parts/description/)  
 
 Leave me comments, if you know how to solve.  
 

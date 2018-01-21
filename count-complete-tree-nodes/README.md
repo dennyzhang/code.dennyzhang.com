@@ -12,16 +12,15 @@ Given a complete binary tree, count the number of nodes.
 Definition of a complete binary tree from [Wikipedia](https://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees):  
 In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.  
 
-Blog link: <http://brain.dennyzhang.com/count-complete-tree-nodes>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-complete-tree-nodes)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/count-complete-tree-nodes/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/count-complete-tree-nodes/description/)  
 
 Useful link: [here](https://leetcode.com/problems/count-complete-tree-nodes/discuss/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/count-complete-tree-nodes
     ## Basic Ideas: Cut the examine dataset into half
     ##              Check height of sub-tree and right-tree
     ##              For each divide-conquer, one half will be solved without recursive

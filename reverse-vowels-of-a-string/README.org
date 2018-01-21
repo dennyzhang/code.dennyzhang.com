@@ -22,7 +22,7 @@ Given s = "leetcode", return "leotcede".
 Note:
 The vowels does not include the letter "y".
 
-Blog link: http://brain.dennyzhang.com/reverse-vowels-of-a-string
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-vowels-of-a-string][challenges-leetcode-interesting]]
 
@@ -31,14 +31,15 @@ Credits To: [[url-external:https://leetcode.com/problems/reverse-vowels-of-a-str
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/reverse-vowels-of-a-string
+## Basic Ideas: save vowels in an separated array
+## Complexity: Time O(n), Space O(n)
 class Solution(object):
     def reverseVowels(self, s):
         """
         :type s: str
         :rtype: str
         """
-        ## Basic Idea: save vowels in an separated array
-        ## Complexity: Time O(n), Space O(n)
         vowel_letters = 'aeiouAEIOU'
         length = len(s)
         vowel_list = []

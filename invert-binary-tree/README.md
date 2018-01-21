@@ -22,11 +22,9 @@ to
      / \   / \
     9   6 3   1
 
-Blog link: <http://brain.dennyzhang.com/invert-binary-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/invert-binary-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/invert-binary-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/invert-binary-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 

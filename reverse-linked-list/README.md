@@ -14,11 +14,9 @@ click to show more hints.
 Hint:  
 A linked list can be reversed either iteratively or recursively. Could you implement both?  
 
-Blog link: <http://brain.dennyzhang.com/reverse-linked-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/reverse-linked-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-linked-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -29,7 +27,8 @@ Leave me comments, if you know how to solve.
     #         self.next = None
     
     class Solution(object):
-        ## Basic Ideas: recursive way
+        ## Blog link: http://brain.dennyzhang.com/reverse-linked-list
+    ## Basic Ideas: recursive way
         ##                 def myReverseList(self, head_processed, head_unprocessed)
         ## Complexity: Time O(n), Space O(1)
         def reverseList(self, head):
@@ -51,7 +50,8 @@ Leave me comments, if you know how to solve.
             head_unprocessed.next = head_processed
             return self.myReverseList(head_unprocessed, q)
     
-        ## Basic Ideas: Since the head will be changed, add a dummy node
+        ## Blog link: http://brain.dennyzhang.com/reverse-linked-list
+    ## Basic Ideas: Since the head will be changed, add a dummy node
         ##              p points to the next node to be reversed
         ##              take p and insert to dummyNode.next
         ## Complexity: Time O(n) Space O(1)

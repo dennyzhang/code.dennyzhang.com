@@ -19,14 +19,13 @@ Note:
 -   Given n will always be valid.
 -   Try to do this in one pass.
 
-Blog link: <http://brain.dennyzhang.com/remove-nth-node-from-end-of-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-nth-node-from-end-of-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/remove-nth-node-from-end-of-list
     ## Basic Ideas: Two pointers with distance of n+1
     ##              Since the head node might be deleted, we need a dummy node
     ##              One pass

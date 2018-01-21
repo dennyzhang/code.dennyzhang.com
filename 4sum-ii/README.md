@@ -27,11 +27,9 @@ To make problem a bit easier, all A, B, C, D have same length of N where 0 <= N 
     1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
     2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
 
-Blog link: <http://brain.dennyzhang.com/4sum-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4sum-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/4sum-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/4sum-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 

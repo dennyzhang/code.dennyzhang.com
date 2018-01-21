@@ -40,7 +40,7 @@ Output: 0
 Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/non-overlapping-intervals
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-overlapping-intervals][challenges-leetcode-interesting]]
 

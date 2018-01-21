@@ -31,11 +31,9 @@ Note:
 3.  The index is starting from 0 to the list length minus 1.
 4.  No duplicates in both lists.
 
-Blog link: <http://brain.dennyzhang.com/minimum-index-sum-of-two-lists>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-index-sum-of-two-lists)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/minimum-index-sum-of-two-lists/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/)  
 
 Leave me comments, if you know how to solve.  
 

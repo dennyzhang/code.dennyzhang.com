@@ -20,8 +20,6 @@ Given the following matrix:
 You should return [1,2,3,6,9,8,7,4,5].
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/spiral-matrix
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/spiral-matrix/description/][leetcode.com]]
@@ -29,6 +27,7 @@ Credits To: [[url-external:https://leetcode.com/problems/spiral-matrix/descripti
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/spiral-matrix
 ## Basic Ideas:
 ##            The visit is a loop with four directions: right, down, left, up
 ##            Two counters: num1(how many items for right and left)

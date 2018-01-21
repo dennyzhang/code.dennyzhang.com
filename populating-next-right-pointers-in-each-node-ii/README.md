@@ -29,14 +29,13 @@ You may only use constant extra space.
          / \    \
         4-> 5 -> 7 -> NULL
 
-Blog link: <http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node-ii
     ## Basic Ideas: Process nodes: from top to down, left to right
     ##              How to process:
     ##                 p.left.next = p.right

@@ -21,7 +21,7 @@ Input: 3
 Output: False
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/sum-of-square-numbers
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-square-numbers][challenges-leetcode-interesting]]
 
@@ -30,6 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sum-of-square-numbers/d
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/sum-of-square-numbers
 ## Basic Ideas: max(a, b) <= int(sqrt(c))
 ##              Then we convert it into a two-sum problem
 ##

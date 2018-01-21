@@ -18,7 +18,7 @@ For example,
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/permutations-ii
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutations-ii][challenges-leetcode-interesting]]
 

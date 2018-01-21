@@ -11,11 +11,9 @@ Given n non-negative integers a1, a2, &#x2026;, an, where each represents a poin
 
 Note: You may not slant the container and n is at least 2.  
 
-Blog link: <http://brain.dennyzhang.com/container-with-most-water>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/container-with-most-water)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/container-with-most-water/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/container-with-most-water/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -25,7 +23,3 @@ Leave me comments, if you know how to solve.
             :type height: List[int]
             :rtype: int
             """
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/container-with-most-water>
--   [[<http://brain.dennyzhang.com/container-with-most-water>

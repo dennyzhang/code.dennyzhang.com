@@ -19,7 +19,7 @@ Input: "Hello World"
 Output: 5
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/length-of-last-word
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/length-of-last-word][challenges-leetcode-interesting]]
 

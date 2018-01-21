@@ -28,8 +28,6 @@ Input: "fviefuro"
 Output: "45"
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/reconstruct-original-digits-from-english
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reconstruct-original-digits-from-english][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/reconstruct-original-digits-from-english/description/][leetcode.com]]
@@ -37,6 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/reconstruct-original-di
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/reconstruct-original-digits-from-english
 ## Basic Ideas: Nature of english numbers.
 ##         'z': ['0']
 ##         'u': ['4'],

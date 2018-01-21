@@ -20,14 +20,13 @@ Given a binary tree, imagine yourself standing on the right side of it, return t
 
 Hint: useful link for [level order traversal](https://www.linkedin.com/feed/update/urn:li:activity:6282693138029043712)  
 
-Blog link: <http://brain.dennyzhang.com/binary-tree-right-side-view>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-right-side-view)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-right-side-view/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-right-side-view/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/binary-tree-right-side-view
     ## Basic Ideas:
     ##        Level order traversal. And get the right most for each level
     ##                1

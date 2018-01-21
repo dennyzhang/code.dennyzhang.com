@@ -21,11 +21,9 @@ For example:
 
 Note: Recursive solution is trivial, could you do it iteratively?  
 
-Blog link: <http://brain.dennyzhang.com/binary-tree-postorder-traversal>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-postorder-traversal)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-postorder-traversal/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -21,14 +21,16 @@ If n = 4 and k = 2, a solution is:
   [1,4],  
 ]  
 
-Blog link: <http://brain.dennyzhang.com/combinations>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combinations)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/combinations/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/combinations/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/combinations
+    ## Basic Ideas:
+    ##          Get an array of n element, either 0 or 1
+    ## Complexity: Time (Permutation), Space ?
     class Solution(object):
         def combine(self, n, k):
             """
@@ -36,11 +38,6 @@ Leave me comments, if you know how to solve.
             :type k: int
             :rtype: List[List[int]]
             """
-            ## Basic Idea:
-            ##          Get an array of n element, either 0 or 1
-            ## Complexity: Time (Permutation), Space ?
-            ## Assumptions:
-            ## Sample Data:
             l = self.getCombine(n, k)
             res = []
             for combine in l:

@@ -21,8 +21,6 @@ For example:
     AB -> 28
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/excel-sheet-column-number
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/excel-sheet-column-number/description/][leetcode.com]]
@@ -30,14 +28,15 @@ Credits To: [[url-external:https://leetcode.com/problems/excel-sheet-column-numb
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/excel-sheet-column-number
+## Basic Ideas: Convert 26 bits
+## Complexity: Time O(n), Space, O(1)
 class Solution(object):
     def titleToNumber(self, s):
         """
         :type s: str
         :rtype: int
         """
-        ## Basic Idea: Convert 26 bits
-        ## Complexity: Time O(n), Space, O(1)
         letter_dict = {}
         i = 1
         for ch in map(chr, range(ord('A'), ord('Z')+1)):

@@ -11,11 +11,9 @@ Given a binary tree, determine if it is height-balanced.
 
 For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.  
 
-Blog link: <http://brain.dennyzhang.com/balanced-binary-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/balanced-binary-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/balanced-binary-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/balanced-binary-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 

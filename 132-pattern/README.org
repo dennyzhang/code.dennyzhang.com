@@ -38,7 +38,7 @@ Output: True
 Explanation: There are three 132 patterns in the sequence: [-1, 3, 2], [-1, 3, 0] and [-1, 2, 0].
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/132-pattern
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/132-pattern][challenges-leetcode-interesting]]
 
@@ -48,6 +48,7 @@ Leave me comments, if you know how to solve.
 
 [[color:#c7254e][Hints]]:
 #+BEGIN_EXAMPLE
+## Blog link: http://brain.dennyzhang.com/132-pattern
 ## Basic Ideas: There should be one rise. After that, there should be one drop.
 ## Complexity: Time O(n), Space O(1)
 ## Scenario: sell sock at a high price

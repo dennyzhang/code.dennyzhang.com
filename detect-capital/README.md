@@ -27,22 +27,21 @@ Otherwise, we define that this word doesn't use capitals in a right way.
 
 Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.  
 
-Blog link: <http://brain.dennyzhang.com/detect-capital>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/detect-capital)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/detect-capital/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/detect-capital/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/detect-capital
+    ## Basic Ideas: Scan once
+    ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def detectCapitalUse(self, word):
             """
             :type word: str
             :rtype: bool
             """
-            ## Basic Idea: Scan once
-            ## Complexity: Time O(n), Space O(1)
             upper_letters = map(chr, range(ord('A'), ord('Z')+1))
     
             length = len(word)

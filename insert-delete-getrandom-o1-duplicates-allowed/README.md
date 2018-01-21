@@ -37,10 +37,8 @@ Example:
     // getRandom should return 1 and 2 both equally likely.
     collection.getRandom();
 
-Blog link: <http://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1-duplicates-allowed)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/)  
 
 Leave me comments, if you know how to solve.

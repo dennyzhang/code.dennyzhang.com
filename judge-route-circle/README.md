@@ -19,11 +19,9 @@ The move sequence is represented by a string. And each move is represent by a ch
     Input: "LL"
     Output: false
 
-Blog link: <http://brain.dennyzhang.com/judge-route-circle>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/judge-route-circle)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/judge-route-circle/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/judge-route-circle/description/)  
 
 Leave me comments, if you know how to solve.  
 

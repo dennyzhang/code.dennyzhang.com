@@ -21,7 +21,7 @@ For example, given the following triangle
 
 The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
 
-Blog link: http://brain.dennyzhang.com/triangle
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/triangle][challenges-leetcode-interesting]]
 
@@ -93,6 +93,3 @@ class Solution(object):
                                             entry[j+1]+last_mininum_list[j+1])
         return last_mininum_list[0] + triangle[0][0]
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/triangle

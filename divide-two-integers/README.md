@@ -11,14 +11,13 @@ Divide two integers without using multiplication, division and mod operator.
 
 If it is overflow, return MAX\_INT.  
 
-Blog link: <http://brain.dennyzhang.com/divide-two-integers>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/divide-two-integers)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/divide-two-integers/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/divide-two-integers/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/divide-two-integers
     ## Basic Ideas: generate a list of [1, 2, 4, 8, 16...] and [d, 2d, 4d, 8d, ...]
     ## Complexity: Time O(log(n)), Space O(log(n))
     ## Sample Data: 

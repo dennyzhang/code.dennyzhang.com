@@ -16,8 +16,6 @@ A partially filled sudoku which is valid.
 Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 
-Blog link: http://brain.dennyzhang.com/valid-sudoku
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/valid-sudoku/description/][leetcode.com]]
@@ -25,6 +23,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-sudoku/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/valid-sudoku
 ## Basic Ideas: Check each row, each colum and each section
 ##              When we check, we use an array of 10
 ##

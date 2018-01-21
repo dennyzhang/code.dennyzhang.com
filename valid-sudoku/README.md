@@ -16,11 +16,9 @@ A partially filled sudoku which is valid.
 Note:  
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
 
-Blog link: <http://brain.dennyzhang.com/valid-sudoku>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
 
 Leave me comments, if you know how to solve.  
 

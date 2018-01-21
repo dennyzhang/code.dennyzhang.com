@@ -24,11 +24,9 @@ Note:
 1.  The length of the given array won't exceed 1000.
 2.  The integers in the given array are in the range of [0, 1000].
 
-Blog link: <http://brain.dennyzhang.com/valid-triangle-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-triangle-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-triangle-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-triangle-number/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -70,6 +68,3 @@ Leave me comments, if you know how to solve.
                     # print("i: %d, j: %d, count: %d" % (i, j, count))
                     res += count
             return res
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/valid-triangle-number>

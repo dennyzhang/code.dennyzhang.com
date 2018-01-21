@@ -30,11 +30,9 @@ Example 3:
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)  
 
-Blog link: <http://brain.dennyzhang.com/repeated-substring-pattern>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/repeated-substring-pattern/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/repeated-substring-pattern/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -44,6 +42,3 @@ Leave me comments, if you know how to solve.
             :type s: str
             :rtype: bool
             """
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/repeated-substring-pattern>

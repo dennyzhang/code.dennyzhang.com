@@ -30,14 +30,13 @@ Note:
 -   nums will have a length in the range [1, 50].
 -   Every nums[i] will be an integer in the range [0, 99].
 
-Blog link: <http://brain.dennyzhang.com/largest-number-at-least-twice-of-others>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-number-at-least-twice-of-others)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/largest-number-at-least-twice-of-others
     ## Basic Ideas: Find the largest element and the second largest element
     ##              Check whether: the largest is at least twice as much as the second largest element
     ## Complexity: Time O(n), Space O(1)
@@ -81,6 +80,3 @@ Leave me comments, if you know how to solve.
     print s.dominantIndex([1, 2, 3, 4])
     print s.dominantIndex([])
     print s.dominantIndex([1])
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/largest-number-at-least-twice-of-others>

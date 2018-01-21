@@ -19,11 +19,9 @@ Find the sum of all left leaves in a given binary tree.
 
 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.  
 
-Blog link: <http://brain.dennyzhang.com/sum-of-left-leaves>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-left-leaves)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-left-leaves/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-left-leaves/description/)  
 
 Leave me comments, if you know how to solve.  
 

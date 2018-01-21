@@ -13,7 +13,7 @@ Suppose you have n versions [1, 2, ..., n] and you want to find out the first ba
 
 You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
 
-Blog link: http://brain.dennyzhang.com/first-bad-version
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-bad-version][challenges-leetcode-interesting]]
 
@@ -22,6 +22,7 @@ Credits To: [[url-external:https://leetcode.com/problems/first-bad-version/descr
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/first-bad-version
 ## Basic Ideas: Binary search
 ##         Find the first False
 ##         F F F F T T

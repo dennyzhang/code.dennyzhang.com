@@ -12,11 +12,9 @@ Given an array of integers, every element appears twice except for one. Find tha
 Note:  
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?  
 
-Blog link: <http://brain.dennyzhang.com/single-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/single-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/single-number/description/)  
 
     class Solution(object):
         def singleNumber(self, nums):
@@ -34,9 +32,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/single-number/descripti
         print s.singleNumber([1, 2, 1])
         print s.singleNumber([2, 2, 1])
 
-Leave me comments, if you know how to solve.  
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/single-number>
--   [[<http://brain.dennyzhang.com/single-number>
--   [[<http://brain.dennyzhang.com/single-number>
+Leave me comments, if you know how to solve.

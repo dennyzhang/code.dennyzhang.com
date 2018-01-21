@@ -12,7 +12,7 @@ Implement a trie with insert, search, and startsWith methods.
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 
-Blog link: http://brain.dennyzhang.com/implement-trie-prefix-tree
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-trie-prefix-tree][challenges-leetcode-interesting]]
 
@@ -21,6 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/implement-trie-prefix-t
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/implement-trie-prefix-tree
 ## Basic Ideas: TrieNode: is_word(bool), children(dict)
 ##           For the root node, we don't store any characters. Only in children
 ##           Here we use defaultdict, thus we can avoid has_key check  

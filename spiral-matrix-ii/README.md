@@ -19,14 +19,13 @@ Given an integer n, generate a square matrix filled with elements from 1 to n2 i
      [ 7, 6, 5 ]
     ]
 
-Blog link: <http://brain.dennyzhang.com/spiral-matrix-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/spiral-matrix-ii
     ## Basic Ideas:
     ##            The visit is a loop with four directions: right, down, left, up
     ##            Two counters: num1(how many items for right and left)

@@ -17,7 +17,7 @@ Note:
 1. The order of the result is not important. So in the above example, [5, 3] is also correct.
 - Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
-Blog link: http://brain.dennyzhang.com/single-number-iii
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-iii][challenges-leetcode-interesting]]
 
@@ -30,6 +30,7 @@ Leave me comments, if you know how to solve.
 Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/single-number-iii
 ## Basic Ideas:
 ##       No more than 2 elements would be qualified.
 ##     Sample Data:

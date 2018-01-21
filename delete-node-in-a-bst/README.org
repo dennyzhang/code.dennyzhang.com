@@ -47,8 +47,6 @@ Another valid answer is [5,2,6,null,4,null,7].
     4   7
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/delete-node-in-a-bst
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-node-in-a-bst][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/delete-node-in-a-bst/description/][leetcode.com]]
@@ -56,6 +54,7 @@ Credits To: [[url-external:https://leetcode.com/problems/delete-node-in-a-bst/de
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/delete-node-in-a-bst
 ## Basic Ideas: Find the target
 ##              If the target is a leaf, we need the parent node
 ##              If the target only have one child

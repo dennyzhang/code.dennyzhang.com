@@ -9,14 +9,13 @@ Merge k Sorted Lists
 
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.  
 
-Blog link: <http://brain.dennyzhang.com/merge-k-sorted-lists>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-k-sorted-lists)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/merge-k-sorted-lists/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-k-sorted-lists/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/merge-k-sorted-lists
     ## Basic Ideas: Compare the first node of all list
     ##              Insert the smallest to the result list
     ##              If two lists have the same value, insert the first one, then the next

@@ -9,11 +9,9 @@ Construct Binary Tree from Preorder and Inorder Traversal
 
 Given preorder and inorder traversal of a tree, construct the binary tree.  
 
-Blog link: <http://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-preorder-and-inorder-traversal)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -25,7 +23,8 @@ Leave me comments, if you know how to solve.
     #         self.right = None
     
     class Solution(object):
-        ## Basic Ideas: non-recursive way by backtracking
+        ## Blog link: http://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
+    ## Basic Ideas: non-recursive way by backtracking
         ##            Build the root
         ##            If it has left sub-tree, push to stack
         def buildTree(self, preorder, inorder):
@@ -35,7 +34,8 @@ Leave me comments, if you know how to solve.
             :rtype: TreeNode
             """
     
-        ## Basic Ideas:
+        ## Blog link: http://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
+    ## Basic Ideas:
         ##  Preorder: M L R
         ##   Inorder: L R M
         ##  Take the first of preorder as root

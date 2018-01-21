@@ -17,14 +17,13 @@ Given a sorted integer array without duplicates, return the summary of its range
     Input: [0,2,3,4,6,8,9]
     Output: ["0","2->4","6","8->9"]
 
-Blog link: <http://brain.dennyzhang.com/summary-ranges>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/summary-ranges)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/summary-ranges/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/summary-ranges/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/summary-ranges
     ## Basic Ideas: 2 pointer
     ## Complexity: Time O(n), Space O(1)
     ## Assumptions:

@@ -15,7 +15,7 @@ Follow-up:
 
 If there are n buckets and a pig drinking poison will die within m minutes, how many pigs (x) you need to figure out the "poison" bucket within p minutes? There is exact one bucket with poison.
 
-Blog link: http://brain.dennyzhang.com/poor-pigs
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/poor-pigs][challenges-leetcode-interesting]]
 
@@ -33,6 +33,3 @@ class Solution(object):
         :rtype: int
         """
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/poor-pigs

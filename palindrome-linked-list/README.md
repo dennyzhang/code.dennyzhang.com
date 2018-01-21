@@ -12,15 +12,13 @@ Given a singly linked list, determine if it is a palindrome.
 Follow up:  
 Could you do it in O(n) time and O(1) space?  
 
-Blog link: <http://brain.dennyzhang.com/palindrome-linked-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-linked-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-linked-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-linked-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Idea: Find the middle node. Reverse the right part. Then compare with the left part
+    ## Basic Ideas: Find the middle node. Reverse the right part. Then compare with the left part
     ##       From: a->b->c->b->a
     ##       To:   a->b->c->a->b
     ## Complexity: Time O(n), Space O(1)

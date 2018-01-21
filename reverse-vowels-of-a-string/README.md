@@ -18,22 +18,21 @@ Write a function that takes a string as input and reverse only the vowels of a s
 Note:  
 The vowels does not include the letter "y".  
 
-Blog link: <http://brain.dennyzhang.com/reverse-vowels-of-a-string>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-vowels-of-a-string)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/reverse-vowels-of-a-string/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/reverse-vowels-of-a-string
+    ## Basic Ideas: save vowels in an separated array
+    ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def reverseVowels(self, s):
             """
             :type s: str
             :rtype: str
             """
-            ## Basic Idea: save vowels in an separated array
-            ## Complexity: Time O(n), Space O(n)
             vowel_letters = 'aeiouAEIOU'
             length = len(s)
             vowel_list = []

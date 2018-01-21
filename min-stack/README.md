@@ -24,14 +24,13 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
     minStack.top();      --> Returns 0.
     minStack.getMin();   --> Returns -2.
 
-Blog link: <http://brain.dennyzhang.com/min-stack>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/min-stack)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/min-stack/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/min-stack/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/min-stack
     ## Basic Ideas: List with elements of (value, min_value)
     ##    -2 0 -3  4
     ##    linked list:

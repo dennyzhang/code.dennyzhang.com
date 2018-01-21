@@ -20,7 +20,7 @@ Your function should return length = 2, with the first two elements of nums bein
 It doesn't matter what you leave beyond the new length.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/remove-duplicates-from-sorted-array
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-array][challenges-leetcode-interesting]]
 

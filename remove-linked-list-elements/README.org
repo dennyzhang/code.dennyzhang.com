@@ -13,7 +13,7 @@ Example
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
 Return: 1 --> 2 --> 3 --> 4 --> 5
 
-Blog link: http://brain.dennyzhang.com/remove-linked-list-elements
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-linked-list-elements][challenges-leetcode-interesting]]
 
@@ -22,6 +22,7 @@ Credits To: [[url-external:https://leetcode.com/problems/remove-linked-list-elem
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/remove-linked-list-elements
 ## Basic Ideas: The head might be removed, thus we need a dummy node
 ## Complexity: Time O(n), Space O(1)
 # Definition for singly-linked list.

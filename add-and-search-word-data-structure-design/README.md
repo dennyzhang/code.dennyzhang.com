@@ -31,14 +31,13 @@ click to show hint.
 
 You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.  
 
-Blog link: <http://brain.dennyzhang.com/add-and-search-word-data-structure-design>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-and-search-word-data-structure-design)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/add-and-search-word-data-structure-design/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/add-and-search-word-data-structure-design
     ## Basic Ideas: Trie tree. Search with dfs or backtracking
     ##              TrieNode: children
     ##     search doesn't necessarily means startswith

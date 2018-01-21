@@ -13,11 +13,9 @@ Both of you are very clever and have optimal strategies for the game. Write a fu
 
 For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.  
 
-Blog link: <http://brain.dennyzhang.com/nim-game>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nim-game)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description/)  
 
     class Solution(object):
         def canWinNim(self, n):
@@ -39,7 +37,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description)
             ##  12 -> false
             return n%4 != 0
 
-Leave me comments, if you know how to solve.  
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/nim-game>
+Leave me comments, if you know how to solve.

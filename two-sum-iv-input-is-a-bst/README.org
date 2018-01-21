@@ -36,7 +36,7 @@ Target = 28
 Output: False
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/two-sum-iv-input-is-a-bst
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-iv-input-is-a-bst][challenges-leetcode-interesting]]
 

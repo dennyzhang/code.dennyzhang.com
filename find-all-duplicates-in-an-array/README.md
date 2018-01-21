@@ -21,14 +21,13 @@ Example:
     Output:
     [2,3]
 
-Blog link: <http://brain.dennyzhang.com/find-all-duplicates-in-an-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-duplicates-in-an-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-all-duplicates-in-an-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/find-all-duplicates-in-an-array
     ## Basic Ideas: count sort
     ## Complexity: Time O(n), Space (1)
     ##   1 2 3 4 5 6 7 8
@@ -58,6 +57,3 @@ Leave me comments, if you know how to solve.
                 if nums[i]  != i+1:
                     res.append(nums[i])
             return res
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/find-all-duplicates-in-an-array>

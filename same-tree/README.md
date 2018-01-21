@@ -40,11 +40,9 @@ Two binary trees are considered the same if they are structurally identical and 
     
     Output: false
 
-Blog link: <http://brain.dennyzhang.com/same-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/same-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/same-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/same-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 

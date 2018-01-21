@@ -14,11 +14,9 @@ Return the minimum cuts needed for a palindrome partitioning of s.
 For example, given s = "aab",  
 Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.  
 
-Blog link: <http://brain.dennyzhang.com/palindrome-partitioning-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-partitioning-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-partitioning-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-partitioning-ii/description/)  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
@@ -26,6 +24,7 @@ Leave me comments, if you know how to solve.
 
 Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
+    ## Blog link: http://brain.dennyzhang.com/palindrome-partitioning-ii
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ## Complexity: Time O(n), Space O(1)
@@ -73,6 +72,3 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
     # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
     print s.majorityElement([1,1,1,2,3,4,5,6])
     # print s.majorityElement([1, 2, 3, 2, 3, 3])
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/palindrome-partitioning-ii>

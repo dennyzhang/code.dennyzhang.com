@@ -15,14 +15,18 @@ For example,
 Given 1->4->3->2->5->2 and x = 3,  
 return 1->2->2->4->3->5.  
 
-Blog link: <http://brain.dennyzhang.com/partition-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/partition-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/partition-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/partition-list
+    ## Basic Ideas: 3 pointer. 
+    ##     p_last_less: last node which is less than x
+    ##     p_last_greater: last node which is greater than x
+    ##     p: trasverse the list
+    ## Complexity: Time O(n), Space O(1)
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):
@@ -36,13 +40,6 @@ Leave me comments, if you know how to solve.
             :type x: int
             :rtype: ListNode
             """
-            ## Basic Idea: 3 pointer. 
-            ##     p_last_less: last node which is less than x
-            ##     p_last_greater: last node which is greater than x
-            ##     p: trasverse the list
-            ## Complexity: Time O(n), Space O(1)
-            ## Assumptions:
-    
             dummy_less = ListNode(None)
             dummy_less.next = None
     

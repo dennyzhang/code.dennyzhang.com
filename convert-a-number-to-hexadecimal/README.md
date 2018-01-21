@@ -32,10 +32,8 @@ Note:
     Output:
     "ffffffff"
 
-Blog link: <http://brain.dennyzhang.com/convert-a-number-to-hexadecimal>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-a-number-to-hexadecimal)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/)  
 
 Leave me comments, if you know how to solve.

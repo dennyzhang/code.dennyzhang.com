@@ -27,14 +27,13 @@ Note:
     
     The above arrows point to positions where the corresponding bits are different.
 
-Blog link: <http://brain.dennyzhang.com/hamming-distance>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/hamming-distance)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/hamming-distance/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/hamming-distance/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/hamming-distance
     ## Basic Ideas: x xor y
     ##              Any bit of 1 for the result indicates a difference
     ## Complexity

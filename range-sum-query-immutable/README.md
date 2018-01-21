@@ -20,11 +20,9 @@ Note:
 -   You may assume that the array does not change.
 -   There are many calls to sumRange function.
 
-Blog link: <http://brain.dennyzhang.com/range-sum-query-immutable>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-immutable)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-immutable/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-immutable/description/)  
 
 Leave me comments, if you know how to solve.  
 

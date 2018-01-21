@@ -32,16 +32,15 @@ Note: n will be less than 15,000.
     
     Explanation: There are three 132 patterns in the sequence: [-1, 3, 2], [-1, 3, 0] and [-1, 2, 0].
 
-Blog link: <http://brain.dennyzhang.com/132-pattern>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/132-pattern)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/132-pattern/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/132-pattern/description/)  
 
 Leave me comments, if you know how to solve.  
 
 Hints:  
 
+    ## Blog link: http://brain.dennyzhang.com/132-pattern
     ## Basic Ideas: There should be one rise. After that, there should be one drop.
     ## Complexity: Time O(n), Space O(1)
     ## Scenario: sell sock at a high price

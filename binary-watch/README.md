@@ -25,14 +25,13 @@ Note:
 -   The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
 -   The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
 
-Blog link: <http://brain.dennyzhang.com/binary-watch>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-watch)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/binary-watch/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-watch/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/binary-watch
     ## Basic Ideas:
     ##         Check all possibility
     ## Complexity: Time O(1) 12*60, Space O(1)
@@ -50,7 +49,8 @@ Leave me comments, if you know how to solve.
             :type num: int
             :rtype: List[str]
             """
-            ## Basic Ideas:
+            ## Blog link: http://brain.dennyzhang.com/binary-watch
+    ## Basic Ideas:
             ##         Get all the possible combination
             ##         Check whether it's valid
             ##         Print the value with the right format

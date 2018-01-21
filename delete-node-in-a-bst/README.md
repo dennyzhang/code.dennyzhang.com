@@ -45,11 +45,9 @@ Note: Time complexity should be O(height of tree).
        \   \
         4   7
 
-Blog link: <http://brain.dennyzhang.com/delete-node-in-a-bst>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-node-in-a-bst)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/delete-node-in-a-bst/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/delete-node-in-a-bst/description/)  
 
 Leave me comments, if you know how to solve.  
 

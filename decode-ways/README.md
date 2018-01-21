@@ -21,14 +21,13 @@ Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
 
 The number of ways decoding "12" is 2.  
 
-Blog link: <http://brain.dennyzhang.com/decode-ways>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/decode-ways)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/decode-ways/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/decode-ways/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/decode-ways
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ## Complexity: Time O(n), Space O(1)

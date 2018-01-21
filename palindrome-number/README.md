@@ -21,14 +21,13 @@ Some hints:
     
     There is a more generic way of solving this problem.
 
-Blog link: <http://brain.dennyzhang.com/palindrome-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-number/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/palindrome-number
     ## Basic Ideas:  Generate a new integer Y from right digit to left digit
     ##               Then compare it with X
     ##         1234321: 1 -> 12 -> 13 -> 134 ...

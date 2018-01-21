@@ -19,22 +19,20 @@ Excel Sheet Column Number
         AA -> 27
         AB -> 28
 
-Blog link: <http://brain.dennyzhang.com/excel-sheet-column-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-number/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Basic Ideas: Convert 26 bits
+    ## Complexity: Time O(n), Space, O(1)
     class Solution(object):
         def titleToNumber(self, s):
             """
             :type s: str
             :rtype: int
             """
-            ## Basic Idea: Convert 26 bits
-            ## Complexity: Time O(n), Space, O(1)
             letter_dict = {}
             i = 1
             for ch in map(chr, range(ord('A'), ord('Z')+1)):

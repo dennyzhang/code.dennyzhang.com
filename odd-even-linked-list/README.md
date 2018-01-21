@@ -19,11 +19,9 @@ Note:
 -   The relative order inside both the even and odd groups should remain as it was in the input.
 -   The first node is considered odd, the second node even and so on &#x2026;
 
-Blog link: <http://brain.dennyzhang.com/odd-even-linked-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/odd-even-linked-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/odd-even-linked-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/odd-even-linked-list/description/)  
 
 Leave me comments, if you know how to solve.  
 

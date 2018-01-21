@@ -17,7 +17,7 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 Note:
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 
-Blog link: http://brain.dennyzhang.com/letter-combinations-of-a-phone-number
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/letter-combinations-of-a-phone-number][challenges-leetcode-interesting]]
 
@@ -32,7 +32,8 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
-        ## Basic Ideas:
+        ## Blog link: http://brain.dennyzhang.com/letter-combinations-of-a-phone-number
+## Basic Ideas:
         ## Complexity:
         ## Assumptions: For "0" and "1", map to empty string
         ## Sample Data:

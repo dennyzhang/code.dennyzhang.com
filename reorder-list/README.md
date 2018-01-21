@@ -15,15 +15,13 @@ You must do this in-place without altering the nodes' values.
 For example,  
 Given {1,2,3,4}, reorder it to {1,4,2,3}.  
 
-Blog link: <http://brain.dennyzhang.com/reorder-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reorder-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/reorder-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/reorder-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Idea:
+    ## Basic Ideas:
     ##             Find the right sub-list after n/2 node
     ##             Reverse the right sub-list
     ##             Insert it into the sub-list one by one

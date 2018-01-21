@@ -15,11 +15,9 @@ Note:
 1.  You must do this in-place without making a copy of the array.
 2.  Minimize the total number of operations.
 
-Blog link: <http://brain.dennyzhang.com/move-zeroes>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/move-zeroes)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/move-zeroes/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/move-zeroes/description/)  
 
 Leave me comments, if you know how to solve.  
 

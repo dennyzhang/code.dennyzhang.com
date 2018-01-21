@@ -32,7 +32,7 @@ Output: False
 Explanation: You can't get a non-decreasing array by modify at most one element.
 Note: The n belongs to [1, 10,000].
 
-Blog link: http://brain.dennyzhang.com/non-decreasing-array
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-decreasing-array][challenges-leetcode-interesting]]
 
@@ -41,6 +41,7 @@ Credits To: [[url-external:https://leetcode.com/problems/non-decreasing-array/de
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/non-decreasing-array
 ## Basic Ideas: If we have two decreasing couples, we can't fix it with one change. Right?
 ## Complexity: Time O(n), Space O(1)
 ##  1     4         2       3
@@ -94,6 +95,3 @@ if __name__ == '__main__':
     print s.checkPossibility([4,2,1])
     print s.checkPossibility([4])
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/non-decreasing-array

@@ -11,8 +11,6 @@ Follow up for N-Queens problem.
 
 Now, instead outputting board configurations, return the total number of distinct solutions.
 
-Blog link: http://brain.dennyzhang.com/n-queens-ii
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/n-queens-ii/description/][leetcode.com]]
@@ -20,6 +18,7 @@ Credits To: [[url-external:https://leetcode.com/problems/n-queens-ii/description
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/n-queens-ii
 ## Basic Ideas: backtracking
 ##              Place queen row by row
 ##              For the position we have tried, examine conflict for rows and triangles

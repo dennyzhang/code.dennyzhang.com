@@ -9,7 +9,7 @@ Count Primes
 ---------------------------------------------------------------------
 Count the number of prime numbers less than a non-negative number, n.
 
-Blog link: http://brain.dennyzhang.com/count-primes
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-primes][challenges-leetcode-interesting]]
 
@@ -18,6 +18,7 @@ Credits To: [[url-external:https://leetcode.com/problems/count-primes/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/count-primes
 ## Basic Ideas: Sieve of Eratosthenes
 ##              If n is not a prime, it will have more than 1 dividends.
 ##              One of the dividend must less than sqrt(n)

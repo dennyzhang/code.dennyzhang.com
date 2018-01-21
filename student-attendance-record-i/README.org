@@ -27,7 +27,7 @@ Input: "PPALLL"
 Output: False
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/student-attendance-record-i
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i][challenges-leetcode-interesting]]
 
@@ -38,6 +38,7 @@ Useful link: [[url-external:https://leetcode.com/problems/student-attendance-rec
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/student-attendance-record-i
 ## Basic Ideas: One pass
 ##              absent: counter of absent records
 ##              max_continuous_late: counter of continous late
@@ -94,6 +95,3 @@ print s.checkRecord('PPALLP')
 print s.checkRecord('PPALLL')
 print s.checkRecord('PPALLP')
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/student-attendance-record-i

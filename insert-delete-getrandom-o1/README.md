@@ -39,14 +39,13 @@ Design a data structure that supports all following operations in average O(1) t
     // Since 2 is the only number in the set, getRandom always return 2.
     randomSet.getRandom();
 
-Blog link: <http://brain.dennyzhang.com/insert-delete-getrandom-o1>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/insert-delete-getrandom-o1
     ## Basic Ideas:
     ##      an array: host all values
     ##           If an existing value has been removed, replace it with the tail. And remove the tail

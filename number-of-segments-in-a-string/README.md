@@ -16,14 +16,13 @@ Please note that the string does not contain any non-printable characters.
     Input: "Hello, my name is John"
     Output: 5
 
-Blog link: <http://brain.dennyzhang.com/number-of-segments-in-a-string>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-segments-in-a-string)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/number-of-segments-in-a-string/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/number-of-segments-in-a-string/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/number-of-segments-in-a-string
     ## Basic Ideas: one pass. 2 pointer
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

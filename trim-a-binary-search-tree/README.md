@@ -43,14 +43,13 @@ Given a binary search tree and the lowest and highest boundaries as L and R, tri
       /
      1
 
-Blog link: <http://brain.dennyzhang.com/trim-a-binary-search-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trim-a-binary-search-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/trim-a-binary-search-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/trim-a-binary-search-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/trim-a-binary-search-tree
     ## Basic Ideas: recursive pre-order traseveral
     ## Complexity:
     ## Assumptions: No duplicate elements in the BST

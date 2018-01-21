@@ -23,11 +23,9 @@ You could assume no leading zero bit in the integer's binary representation.
     Output: 0
     Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
 
-Blog link: <http://brain.dennyzhang.com/number-complement>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-complement)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/number-complement/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/number-complement/description/)  
 
 Leave me comments, if you know how to solve.  
 

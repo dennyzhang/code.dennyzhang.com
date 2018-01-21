@@ -12,7 +12,7 @@ Given inorder and postorder traversal of a tree, construct the binary tree.
 Note:
 You may assume that duplicates do not exist in the tree.
 
-Blog link: http://brain.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-inorder-and-postorder-traversal][challenges-leetcode-interesting]]
 
@@ -21,6 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/construct-binary-tree-f
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal
 ## Basic Ideas:
 ##         Inorder:    L M R
 ##         Postorder:  L R M

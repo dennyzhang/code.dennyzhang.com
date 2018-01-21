@@ -27,14 +27,15 @@ Note: If a tree has more than one mode, you can return them in any order.
 
 Follow up: Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).  
 
-Blog link: <http://brain.dennyzhang.com/find-mode-in-binary-search-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-mode-in-binary-search-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-mode-in-binary-search-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/find-mode-in-binary-search-tree
+    ## Basic Ideas: In-order traversal
+    ## Complexity:
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):
@@ -48,9 +49,6 @@ Leave me comments, if you know how to solve.
             :type root: TreeNode
             :rtype: List[int]
             """
-            ## Basic Idea: In-order traversal
-            ## Complexity:
-    
             res = []
             # in-order trasveral
             stack = []

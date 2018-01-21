@@ -33,10 +33,8 @@ The tree has no more than 1,000 nodes and the values are in the range -1,000,000
     2.  5 -> 2 -> 1
     3. -3 -> 11
 
-Blog link: <http://brain.dennyzhang.com/path-sum-iii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-iii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/path-sum-iii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/path-sum-iii/description/)  
 
 Leave me comments, if you know how to solve.

@@ -14,11 +14,9 @@ Given "25525511135",
 
 return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)  
 
-Blog link: <http://brain.dennyzhang.com/restore-ip-addresses>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/restore-ip-addresses)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/restore-ip-addresses/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/restore-ip-addresses/description/)  
 
 Leave me comments, if you know how to solve.  
 

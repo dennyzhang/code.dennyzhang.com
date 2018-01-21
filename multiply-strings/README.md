@@ -16,14 +16,13 @@ Note:
 3.  Both num1 and num2 does not contain any leading zero.
 4.  You must **not use any built-in BigInteger library or convert the inputs to integer** directly.
 
-Blog link: <http://brain.dennyzhang.com/multiply-strings>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/multiply-strings)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/multiply-strings/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/multiply-strings/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/multiply-strings
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ## Complexity: Time O(n), Space O(1)

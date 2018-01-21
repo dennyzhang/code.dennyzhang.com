@@ -15,7 +15,7 @@ Given [1,3],[2,6],[8,10],[15,18],
 return [1,6],[8,10],[15,18].
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/merge-intervals
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-intervals][challenges-leetcode-interesting]]
 

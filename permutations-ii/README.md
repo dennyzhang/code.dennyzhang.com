@@ -17,11 +17,9 @@ Given a collection of numbers that might contain duplicates, return all possible
       [2,1,1]
     ]
 
-Blog link: <http://brain.dennyzhang.com/permutations-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutations-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/permutations-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/permutations-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 

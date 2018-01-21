@@ -26,7 +26,7 @@ minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/min-stack
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/min-stack][challenges-leetcode-interesting]]
 
@@ -35,6 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/min-stack/description/]
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/min-stack
 ## Basic Ideas: List with elements of (value, min_value)
 ##    -2 0 -3  4
 ##    linked list:

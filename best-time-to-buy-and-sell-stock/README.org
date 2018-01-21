@@ -22,7 +22,7 @@ Output: 0
 
 In this case, no transaction is done, i.e. max profit = 0.
 
-Blog link: http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/best-time-to-buy-and-sell-stock][challenges-leetcode-interesting]]
 
@@ -65,6 +65,3 @@ class Solution(object):
 #+END_SRC
 
 Leave me comments, if you know how to solve.
-
-More Reading:
-- [[http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock

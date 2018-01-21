@@ -24,14 +24,13 @@ x is guaranteed to be a non-negative integer.
     Output: 2
     Explanation: The square root of 8 is 2.82842..., and since we want to return an integer, the decimal part will be truncated.
 
-Blog link: <http://brain.dennyzhang.com/sqrtx>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sqrtx)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/sqrtx/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/sqrtx/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/sqrtx
     ## Basic Ideas: Binary search
     ##              Check [1^2, 2^2, 3^2, ... n^2]
     ## Complexity: Time O(log(n)), Space O(1)

@@ -17,16 +17,15 @@ Input: numbers={2, 7, 11, 15}, target=9
 
 Output: index1=1, index2=2  
 
-Blog link: <http://brain.dennyzhang.com/two-sum-ii-input-array-is-sorted>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-ii-input-array-is-sorted)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/two-sum-ii-input-array-is-sorted
     ## Basic Ideas: two pointers. 1. From left to right. 2. From right to left
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

@@ -25,7 +25,7 @@ Note:
 
 The boundaries of each input argument are 1 <= left <= right <= 10000.
 
-Blog link: http://brain.dennyzhang.com/self-dividing-numbers
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/self-dividing-numbers][challenges-leetcode-interesting]]
 

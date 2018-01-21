@@ -32,11 +32,9 @@ Hints:
 2.  Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
 3.  Topological sort could also be done via BFS.
 
-Blog link: <http://brain.dennyzhang.com/course-schedule>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/course-schedule)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/course-schedule/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/course-schedule/description/)  
 
 Leave me comments, if you know how to solve.  
 

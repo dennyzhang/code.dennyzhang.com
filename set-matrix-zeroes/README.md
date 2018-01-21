@@ -15,11 +15,9 @@ Follow up:
 -   A simple improvement uses O(m + n) space, but still not the best solution.
 -   Could you devise a constant space solution?
 
-Blog link: <http://brain.dennyzhang.com/set-matrix-zeroes>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/description/)  
 
 Hint:  
 
@@ -27,6 +25,7 @@ Leave me comments, if you know how to solve.
 
 Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
+    ## Blog link: http://brain.dennyzhang.com/set-matrix-zeroes
     ## Basic Ideas:
     ##             2 Different types of 0s. 
     ##               1. Original value is 0. 2 It has been set to 0 by others.
@@ -67,6 +66,3 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
     matrix = [[0,0,0,5],[4,3,1,4],[0,1,1,4],[1,2,1,3],[0,0,1,1]]
     s.setZeroes(matrix)
     print matrix
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/set-matrix-zeroes>

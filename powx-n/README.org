@@ -22,7 +22,7 @@ Input: 2.10000, 3
 Output: 9.26100
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/powx-n
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/powx-n][challenges-leetcode-interesting]]
 
@@ -31,6 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/powx-n/description/][le
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/powx-n
 ## Basic Ideas: 
 ##        If n < 0, x^n == (1/x)^(-n)
 ##        If n%2 == 0, x^n == (x*x)^(n/2)

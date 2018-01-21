@@ -18,14 +18,13 @@ Now, given an integer n, write a function that returns true when it is a perfect
 
 Note: The input number n will not exceed 100,000,000. (1e8)  
 
-Blog link: <http://brain.dennyzhang.com/perfect-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/perfect-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/perfect-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/perfect-number/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/perfect-number
     ## Basic Ideas: sqrt(num)
     ##     Sample Data:
     ##         1 2 7

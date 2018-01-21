@@ -19,11 +19,9 @@ Note:
 -   n is a positive integer, which is in the range of [1, 10000].
 -   All the integers in the array will be in the range of [-10000, 10000].
 
-Blog link: <http://brain.dennyzhang.com/array-partition-i>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/array-partition-i)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/array-partition-i/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/array-partition-i/description/)  
 
 Leave me comments, if you know how to solve.  
 

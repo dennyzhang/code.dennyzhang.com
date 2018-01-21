@@ -30,7 +30,7 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/lru-cache
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lru-cache][challenges-leetcode-interesting]]
 

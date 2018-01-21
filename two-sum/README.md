@@ -18,14 +18,13 @@ Example:
     Because nums[0] + nums[1] = 2 + 7 = 9,
     return [0, 1].
 
-Blog link: <http://brain.dennyzhang.com/two-sum>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/two-sum/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/two-sum/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/two-sum
     ## Basic Ideas: sort the array, and two pointers. 1. From left to right, 2. From right to left
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
@@ -75,6 +74,3 @@ Leave me comments, if you know how to solve.
         print s.twoSum([3, 2, 4], 6)
         print s.twoSum([1, 2, 3], 5)
         print s.twoSum([2, 7, 11, 15], 9)
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/two-sum>

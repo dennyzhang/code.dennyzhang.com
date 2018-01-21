@@ -23,7 +23,7 @@ For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/reverse-nodes-in-k-group
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-nodes-in-k-group][challenges-leetcode-interesting]]
 
@@ -32,6 +32,7 @@ Credits To: [[url-external:https://leetcode.com/problems/reverse-nodes-in-k-grou
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/reverse-nodes-in-k-group
 ## Basic Ideas: Two pointer(p1, p2) with distance of k
 ##              Since head node might be changed, add a dummyNode
 ##              How to process:

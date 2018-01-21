@@ -25,14 +25,13 @@ Example:
     
     Return 6.
 
-Blog link: <http://brain.dennyzhang.com/guess-number-higher-or-lower>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/guess-number-higher-or-lower
     ## Basic Ideas: binary search
     ##      1 1 1 0 -1 -1 -1
     ## Complexity: Time O(log(n)), Space O(1)

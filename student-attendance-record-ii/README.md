@@ -28,11 +28,9 @@ Example 1:
 
 Note: The value of n won't exceed 100,000.  
 
-Blog link: <http://brain.dennyzhang.com/student-attendance-record-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-record-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-record-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 

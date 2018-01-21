@@ -22,11 +22,9 @@ Note:
       [2, 2, 3]
     ]
 
-Blog link: <http://brain.dennyzhang.com/combination-sum>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum/description/)  
 
 Leave me comments, if you know how to solve.  
 

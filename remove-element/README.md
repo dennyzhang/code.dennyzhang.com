@@ -19,15 +19,14 @@ Given nums = [3,2,2,3], val = 3,
 
 Your function should return length = 2, with the first two elements of nums being 2.  
 
-Blog link: <http://brain.dennyzhang.com/remove-element>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-element)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/remove-element/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-element/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Idea:
+    ## Blog link: http://brain.dennyzhang.com/remove-element
+    ## Basic Ideas:
     ##        index point to the last element which have been processed
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

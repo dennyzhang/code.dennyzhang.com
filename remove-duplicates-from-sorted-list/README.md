@@ -13,14 +13,13 @@ For example,
 Given 1->1->2, return 1->2.  
 Given 1->1->2->3->3, return 1->2->3.  
 
-Blog link: <http://brain.dennyzhang.com/remove-duplicates-from-sorted-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/remove-duplicates-from-sorted-list
     ## Basic Ideas: p points to the last processed node
     ## Complexity:
     # Definition for singly-linked list.

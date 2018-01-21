@@ -33,14 +33,13 @@ Example 2:
     You have 3 cookies and their sizes are big enough to gratify all of the children, 
     You need to output 2.
 
-Blog link: <http://brain.dennyzhang.com/assign-cookies>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/assign-cookies)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/assign-cookies/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/assign-cookies/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/assign-cookies
     ## Basic Ideas: Greedy
     ##        Assign the smallest cookie to the the mininum greedy child, if it matches
     ##        Sort the list of g and s
@@ -71,6 +70,3 @@ Leave me comments, if you know how to solve.
     print s.findContentChildren([10,9,8,7], [5,6,7,8]) # 2
     print s.findContentChildren([1,2, 3], [1,1]) # 1
     print s.findContentChildren([1,2], [1,2,3]) # 2
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/assign-cookies>

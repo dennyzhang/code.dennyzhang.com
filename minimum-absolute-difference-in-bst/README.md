@@ -26,11 +26,9 @@ Given a binary search tree with non-negative values, find the minimum absolute d
     The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).
     Note: There are at least two nodes in this BST.
 
-Blog link: <http://brain.dennyzhang.com/minimum-absolute-difference-in-bst>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-absolute-difference-in-bst)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -43,7 +41,8 @@ Leave me comments, if you know how to solve.
     #         self.right = None
     
     class Solution(object):
-        ## Basic Ideas: In-order trasveral
+        ## Blog link: http://brain.dennyzhang.com/minimum-absolute-difference-in-bst
+    ## Basic Ideas: In-order trasveral
         ##
         ## Complexity: Time O(n), Space O(h) # h: height
         def getMinimumDifference(self, root):
@@ -74,7 +73,8 @@ Leave me comments, if you know how to solve.
                         node = node.left
             return res
     
-        ## Basic Ideas:
+        ## Blog link: http://brain.dennyzhang.com/minimum-absolute-difference-in-bst
+    ## Basic Ideas:
         ##         For the target pair, it won't be in two sub-trees.
         ##         So it will be parent-child.
         ##

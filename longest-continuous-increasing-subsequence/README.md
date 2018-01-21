@@ -22,14 +22,13 @@ Given an unsorted array of integers, find the length of longest continuous incre
 
 Note: Length of the array will not exceed 10,000.  
 
-Blog link: <http://brain.dennyzhang.com/longest-continuous-increasing-subsequence>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-continuous-increasing-subsequence)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/longest-continuous-increasing-subsequence
     ## Basic Ideas: bigger_count: point to how many continuous increasing subsequence
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

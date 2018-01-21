@@ -26,7 +26,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/median-of-two-sorted-arrays
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-of-two-sorted-arrays][challenges-leetcode-interesting]]
 
@@ -35,6 +35,9 @@ Credits To: [[url-external:https://leetcode.com/problems/median-of-two-sorted-ar
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/median-of-two-sorted-arrays
+## Basic Ideas: merge 2 sorted array to one, find 2 values
+## Complexity: O(m+n)
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
         """
@@ -42,8 +45,6 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: float
         """
-        ## Basic Idea: merge 2 sorted array to one, find 2 values
-        ## Complexity: O(m+n)
         m = len(nums1)
         n = len(nums2)
         nums3 = [0] * (m+n)

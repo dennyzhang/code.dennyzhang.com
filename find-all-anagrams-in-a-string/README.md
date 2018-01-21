@@ -38,11 +38,9 @@ The order of output does not matter.
     The substring with start index = 1 is "ba", which is an anagram of "ab".
     The substring with start index = 2 is "ab", which is an anagram of "ab".
 
-Blog link: <http://brain.dennyzhang.com/find-all-anagrams-in-a-string>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-anagrams-in-a-string)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-all-anagrams-in-a-string/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)  
 
 Leave me comments, if you know how to solve.  
 

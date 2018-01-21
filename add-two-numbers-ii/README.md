@@ -19,11 +19,9 @@ Example:
 Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)  
 Output: 7 -> 8 -> 0 -> 7  
 
-Blog link: <http://brain.dennyzhang.com/add-two-numbers-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-two-numbers-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/add-two-numbers-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/add-two-numbers-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 

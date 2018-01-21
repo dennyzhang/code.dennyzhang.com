@@ -11,7 +11,7 @@ Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of 
 
 For example, given the range [5, 7], you should return 4.
 
-Blog link: http://brain.dennyzhang.com/bitwise-and-of-numbers-range
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bitwise-and-of-numbers-range][challenges-leetcode-interesting]]
 
@@ -64,6 +64,3 @@ class Solution(object):
         res += self.rangeBitwiseAnd(m-res, n-res)
         return res
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/bitwise-and-of-numbers-range

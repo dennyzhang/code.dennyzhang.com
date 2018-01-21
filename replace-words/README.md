@@ -25,14 +25,13 @@ Note:
 4.  1 <= root length <= 100
 5.  1 <= sentence words length <= 1000
 
-Blog link: <http://brain.dennyzhang.com/replace-words>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/replace-words)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/replace-words/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/replace-words/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/replace-words
     ## Basic Ideas: Trie Tree
     ##              Build a Trie Tree from dict
     ##              For each word in sentence, find the shortest prefix

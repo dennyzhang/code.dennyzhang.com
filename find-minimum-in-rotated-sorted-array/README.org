@@ -17,7 +17,7 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.
 
-Blog link: http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-minimum-in-rotated-sorted-array][challenges-leetcode-interesting]]
 
@@ -26,6 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/find-minimum-in-rotated
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array
 ## Basic Ideas: Binary search: find the first negative
 ##              Compare all values with the first element
 ##              If bigger, consider it as 1. Otherwise -1

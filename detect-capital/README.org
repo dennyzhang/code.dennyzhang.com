@@ -30,7 +30,7 @@ Output: False
 
 Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.
 
-Blog link: http://brain.dennyzhang.com/detect-capital
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/detect-capital][challenges-leetcode-interesting]]
 
@@ -39,14 +39,15 @@ Credits To: [[url-external:https://leetcode.com/problems/detect-capital/descript
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/detect-capital
+## Basic Ideas: Scan once
+## Complexity: Time O(n), Space O(1)
 class Solution(object):
     def detectCapitalUse(self, word):
         """
         :type word: str
         :rtype: bool
         """
-        ## Basic Idea: Scan once
-        ## Complexity: Time O(n), Space O(1)
         upper_letters = map(chr, range(ord('A'), ord('Z')+1))
 
         length = len(word)

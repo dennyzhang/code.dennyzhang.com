@@ -25,11 +25,9 @@ Example:
     Explanation:
     'e' is the letter that was added.
 
-Blog link: <http://brain.dennyzhang.com/find-the-difference>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-difference)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-the-difference/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-the-difference/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -14,7 +14,7 @@ Recover the tree without changing its structure.
 Note:
 A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
 
-Blog link: http://brain.dennyzhang.com/recover-binary-search-tree
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/recover-binary-search-tree][challenges-leetcode-interesting]]
 
@@ -23,6 +23,7 @@ Credits To: [[url-external:https://leetcode.com/problems/recover-binary-search-t
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/recover-binary-search-tree
 ## Basic Ideas:
 ##              It could be left-right swap or parent-child swap
 ##              It could also be two non-adjacent nodes

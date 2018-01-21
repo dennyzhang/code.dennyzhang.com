@@ -13,14 +13,13 @@ You may assume the integer do not contain any leading zero, except the number 0 
 
 The digits are stored such that the most significant digit is at the head of the list.  
 
-Blog link: <http://brain.dennyzhang.com/plus-one>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/plus-one)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/plus-one/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/plus-one/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/plus-one
     ## Basic Ideas: If the highest digit is 1, the value is negative
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):

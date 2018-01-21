@@ -15,14 +15,13 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.  
 
-Blog link: <http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-minimum-in-rotated-sorted-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array
     ## Basic Ideas: Binary search: find the first negative
     ##              Compare all values with the first element
     ##              If bigger, consider it as 1. Otherwise -1

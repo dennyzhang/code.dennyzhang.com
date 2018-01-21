@@ -14,11 +14,9 @@ Recover the tree without changing its structure.
 Note:  
 A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?  
 
-Blog link: <http://brain.dennyzhang.com/recover-binary-search-tree>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/recover-binary-search-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/recover-binary-search-tree/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/recover-binary-search-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 

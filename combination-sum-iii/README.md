@@ -25,11 +25,9 @@ Find all possible combinations of k numbers that add up to a number n, given tha
     
     [[1,2,6], [1,3,5], [2,3,4]]
 
-Blog link: <http://brain.dennyzhang.com/combination-sum-iii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum-iii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-iii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-iii/description/)  
 
 Leave me comments, if you know how to solve.  
 

@@ -24,7 +24,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
  -10  5
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/convert-sorted-list-to-binary-search-tree
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-list-to-binary-search-tree][challenges-leetcode-interesting]]
 
@@ -33,6 +33,10 @@ Credits To: [[url-external:https://leetcode.com/problems/convert-sorted-list-to-
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/convert-sorted-list-to-binary-search-tree
+## Basic Ideas: Binary Search
+## Complexity: Time O(log(n)*n), Space O(1)
+##
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -52,11 +56,6 @@ class Solution(object):
         :type head: ListNode
         :rtype: TreeNode
         """
-        ## Basic Idea: Binary Search
-        ## Complexity: Time O(log(n)*n), Space O(1)
-        ## Assumptions:
-        ## Sample Data:
-
         ## Sample Data:
         node_count = self.getNodeCount(head)
 

@@ -40,7 +40,7 @@ After calling your function, the tree should look like:
     4->5->6->7 -> NULL
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node][challenges-leetcode-interesting]]
 
@@ -49,6 +49,7 @@ Credits To: [[url-external:https://leetcode.com/problems/populating-next-right-p
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node
 ## Basic Ideas: Process nodes: from top to down, left to right
 ##              How to process:
 ##                 p.left.next = p.right

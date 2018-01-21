@@ -9,14 +9,13 @@ Sort linked list
 
 Sort a linked list in O(n log n) time using constant space complexity.  
 
-Blog link: <http://brain.dennyzhang.com/sort-list>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-list)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/sort-list/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/sort-list/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/sort-list
     ## Basic Ideas: Merge sort. Recursive
     ##       1. Divide the list into two half
     ##       2. Merge sort these two

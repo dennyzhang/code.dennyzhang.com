@@ -25,7 +25,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
 #+END_EXAMPLE
 
 
-Blog link: http://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tree
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-array-to-binary-search-tree][challenges-leetcode-interesting]]
 
@@ -34,6 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/convert-sorted-array-to
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tree
 ## Basic Ideas: Find the middle node
 ## Complexity: Time O(n), Space O(1)
 

@@ -25,7 +25,7 @@ return
 ]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/path-sum-ii
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-ii][challenges-leetcode-interesting]]
 

@@ -30,14 +30,13 @@ Example 2:
 Explanation: You can't get a non-decreasing array by modify at most one element.  
 Note: The n belongs to [1, 10,000].  
 
-Blog link: <http://brain.dennyzhang.com/non-decreasing-array>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-decreasing-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/non-decreasing-array/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/non-decreasing-array/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/non-decreasing-array
     ## Basic Ideas: If we have two decreasing couples, we can't fix it with one change. Right?
     ## Complexity: Time O(n), Space O(1)
     ##  1     4         2       3
@@ -90,6 +89,3 @@ Leave me comments, if you know how to solve.
         print s.checkPossibility([4,2,3])
         print s.checkPossibility([4,2,1])
         print s.checkPossibility([4])
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/non-decreasing-array>

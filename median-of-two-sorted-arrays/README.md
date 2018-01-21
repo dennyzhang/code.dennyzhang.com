@@ -23,14 +23,15 @@ Find the median of the two sorted arrays. The overall run time complexity should
     
     The median is (2 + 3)/2 = 2.5
 
-Blog link: <http://brain.dennyzhang.com/median-of-two-sorted-arrays>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-of-two-sorted-arrays)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/median-of-two-sorted-arrays/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/median-of-two-sorted-arrays
+    ## Basic Ideas: merge 2 sorted array to one, find 2 values
+    ## Complexity: O(m+n)
     class Solution(object):
         def findMedianSortedArrays(self, nums1, nums2):
             """
@@ -38,8 +39,6 @@ Leave me comments, if you know how to solve.
             :type nums2: List[int]
             :rtype: float
             """
-            ## Basic Idea: merge 2 sorted array to one, find 2 values
-            ## Complexity: O(m+n)
             m = len(nums1)
             n = len(nums2)
             nums3 = [0] * (m+n)

@@ -18,14 +18,13 @@ A happy number is a number defined by the following process: Starting with any p
     62 + 82 = 100
     12 + 02 + 02 = 1
 
-Blog link: <http://brain.dennyzhang.com/happy-number>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/happy-number)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/happy-number/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/happy-number/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/happy-number
     ## Basic Ideas: Floyd Cycle
     ##
     ## Complexity: Time O(n), Space O(1)

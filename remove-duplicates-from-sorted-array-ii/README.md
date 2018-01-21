@@ -15,14 +15,13 @@ Given sorted array nums = [1,1,1,2,2,3],
 
 Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.  
 
-Blog link: <http://brain.dennyzhang.com/remove-duplicates-from-sorted-array-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-array-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/remove-duplicates-from-sorted-array-ii
     ## Basic Ideas: compare v with the last 2nd element in the result
     ##              sliding window
     ##       1 1 1 2 2 3
@@ -40,7 +39,8 @@ Leave me comments, if you know how to solve.
                     i += 1
             return i
     
-        ## Basic Ideas: Track previous element
+        ## Blog link: http://brain.dennyzhang.com/remove-duplicates-from-sorted-array-ii
+    ## Basic Ideas: Track previous element
         ##       duplicate_count: how many duplicate current element has appeared
         ##       previous_element
         def removeDuplicates_v1(self, nums):

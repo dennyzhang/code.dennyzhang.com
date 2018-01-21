@@ -9,14 +9,13 @@ Identity number which appears exactly once.
 
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
 
-Blog link: <http://brain.dennyzhang.com/majority-element-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/majority-element-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/majority-element-ii
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ## Complexity: Time O(n), Space O(1)

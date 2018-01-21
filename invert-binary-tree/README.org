@@ -25,7 +25,7 @@ to
 9   6 3   1
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/invert-binary-tree
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/invert-binary-tree][challenges-leetcode-interesting]]
 

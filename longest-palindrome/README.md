@@ -25,14 +25,13 @@ Assume the length of given string will not exceed 1,010.
     Explanation:
     One longest palindrome that can be built is "dccaccd", whose length is 7.
 
-Blog link: <http://brain.dennyzhang.com/longest-palindrome>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindrome)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/longest-palindrome/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-palindrome/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/longest-palindrome
     ## Basic Ideas:
     ## Complexity:
     class Solution(object):

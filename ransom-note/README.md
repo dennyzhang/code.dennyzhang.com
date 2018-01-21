@@ -18,11 +18,9 @@ You may assume that both strings contain only lowercase letters.
     canConstruct("aa", "ab") -> false
     canConstruct("aa", "aab") -> true
 
-Blog link: <http://brain.dennyzhang.com/ransom-note>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ransom-note)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/ransom-note/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/ransom-note/description/)  
 
 Leave me comments, if you know how to solve.  
 

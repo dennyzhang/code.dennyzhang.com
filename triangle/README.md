@@ -20,11 +20,9 @@ For example, given the following triangle
 
 The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).  
 
-Blog link: <http://brain.dennyzhang.com/triangle>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/triangle)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/triangle/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/triangle/description/)  
 
 Leave me comments, if you know how to solve.  
 
@@ -90,6 +88,3 @@ Leave me comments, if you know how to solve.
                     last_mininum_list[j] = min(entry[j]+last_mininum_list[j], \
                                                 entry[j+1]+last_mininum_list[j+1])
             return last_mininum_list[0] + triangle[0][0]
-
-More Reading:  
--   [[<http://brain.dennyzhang.com/triangle>

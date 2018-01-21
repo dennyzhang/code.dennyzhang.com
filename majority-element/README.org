@@ -11,7 +11,7 @@ Given an array of size n, find the majority element. The majority element is the
 
 You may assume that the array is non-empty and the majority element always exist in the array.
 
-Blog link: http://brain.dennyzhang.com/majority-element
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element][challenges-leetcode-interesting]]
 
@@ -32,6 +32,3 @@ class Solution(object):
         nums2 = sorted(nums)
         return nums2[(length-1)/2]
 #+END_SRC
-
-More Reading:
-- [[http://brain.dennyzhang.com/majority-element

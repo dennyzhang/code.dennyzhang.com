@@ -38,8 +38,6 @@ collection.remove(1);
 collection.getRandom();
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1-duplicates-allowed][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/][leetcode.com]]

@@ -21,8 +21,6 @@ Input: [0,2,3,4,6,8,9]
 Output: ["0","2->4","6","8->9"]
 #+END_EXAMPLE
 
-Blog link: http://brain.dennyzhang.com/summary-ranges
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/summary-ranges][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/summary-ranges/description/][leetcode.com]]
@@ -30,6 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/summary-ranges/descript
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/summary-ranges
 ## Basic Ideas: 2 pointer
 ## Complexity: Time O(n), Space O(1)
 ## Assumptions:

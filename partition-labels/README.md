@@ -21,14 +21,13 @@ Note:
 -   S will have length in range [1, 500].
 -   S will consist of lowercase letters ('a' to 'z') only.
 
-Blog link: <http://brain.dennyzhang.com/partition-labels>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-labels)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/partition-labels/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/partition-labels/description/)  
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/partition-labels
     ## Basic Ideas:
     ##       letter_dict:
     ##             a -> max 20

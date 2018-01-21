@@ -17,11 +17,9 @@ Restrictions:
 1.  The string consists of lower English letters only.
 2.  Length of the given string and k will in the range [1, 10000]
 
-Blog link: <http://brain.dennyzhang.com/reverse-string-ii>  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-string-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/reverse-string-ii/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-string-ii/description/)  
 
 Hint: Time O(n), Space O(1). Moore voting  
 
@@ -29,6 +27,10 @@ Leave me comments, if you know how to solve.
 
 Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
+    ## Blog link: http://brain.dennyzhang.com/reverse-string-ii
+    ## Basic Ideas:
+    ## Complexity: Time O(n), Space O(1)
+    ## Assumptions:
     class Solution(object):
         def reverseStr(self, s, k):
             """
@@ -36,9 +38,6 @@ Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majorit
             :type k: int
             :rtype: str
             """
-            ## Basic Idea:
-            ## Complexity: Time O(n), Space O(1)
-            ## Assumptions:
             length = len(s)
             l = list(s)
             should_reverse = True

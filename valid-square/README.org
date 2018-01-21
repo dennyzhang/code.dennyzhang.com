@@ -22,7 +22,7 @@ Note:
 - A valid square has four equal sides with positive length and four equal angles (90-degree angles).
 - Input points have no order.
 
-Blog link: http://brain.dennyzhang.com/valid-square
+
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-square][challenges-leetcode-interesting]]
 
@@ -31,6 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-square/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/valid-square
 ## Basic Ideas:
 ##              p2(0,1)               p4(1,1)
 ##
