@@ -1,4 +1,4 @@
-# Leetcode: Can Place Flowers     :BLOG:Medium:
+# Leetcode: Can Place Flowers     :BLOG:Amusing:
 
 
 ---
@@ -28,6 +28,45 @@ Blog link: <http://brain.dennyzhang.com/can-place-flowers>
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/can-place-flowers)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/description)  
+Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+Similar Questions:  
+-   [Leetcode: Max Consecutive Ones](http://brain.dennyzhang.com/max-consecutive-ones/)
+
+    ## Basic Ideas: Find consecutive 0s
+    ##              For a range of n 0s
+    ##                  If the range in the middle, we can place (n-1)/2 flowers
+    ##              Add a virtual '0' to the head, add a virtual '0' and '1' to the end
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    class Solution(object):
+        def canPlaceFlowers(self, flowerbed, n):
+            """
+            :type flowerbed: List[int]
+            :type n: int
+            :rtype: bool
+            """
+            total_flower, counter = 0, 0
+            length = len(flowerbed)
+            for i in range(-1, length+2):
+                if i == -1:
+                    num = 0
+                elif i == length:
+                    num = 0
+                elif i == length + 1:
+                    num = 1
+                else:
+                    num = flowerbed[i]
+    
+                # caculate how many flowers we can plant
+                if num == 0:
+                    counter += 1
+                else:
+                    total_flower += (counter-1)/2
+                    counter = 0
+            return total_flower >= n
+    
+    s = Solution()
+    s = s.canPlaceFlowers([0,0,1,0,1], 1) # true
