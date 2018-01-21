@@ -24,6 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-number/descriptio
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/valid-number
     ## Basic Ideas
     ##      Data clean first
     ##      Make sure it only has valid character

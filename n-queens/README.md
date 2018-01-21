@@ -34,6 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/n-queens
     ## Basic Ideas: backtracking.
     ##              Place queens row by row
     ##              Check if place in current position, examine the column and triangle

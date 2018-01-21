@@ -17,6 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/copy-list-with-random-p
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/copy-list-with-random-pointer
     ## Basic Ideas:
     ##            |------------|
     ##            |            v

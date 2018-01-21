@@ -19,6 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sudoku-solver/descripti
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/sudoku-solver
     ## Basic Ideas: backtracking
     ##             For each '.', try with 0-9.
     ##                 If test has passed, keep moving forward

@@ -51,6 +51,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/delete-node-in-a-bst/de
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/delete-node-in-a-bst
     ## Basic Ideas: Find the target
     ##              If the target is a leaf, we need the parent node
     ##              If the target only have one child

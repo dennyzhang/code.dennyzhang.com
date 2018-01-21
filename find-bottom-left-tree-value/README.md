@@ -43,6 +43,12 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-bottom-left-tree-v
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/find-bottom-left-tree-value
+    ## Basic Ideas: level-order traversal
+    ##              Check the first element of every layer
+    ##              Return the item of deepest level
+    ##
+    ## Complexity: Time O(n), Space O(n)
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):
@@ -51,11 +57,6 @@ Leave me comments, if you know how to solve.
     #         self.right = None
     
     class Solution(object):
-        ## Basic Ideas: level-order traversal
-        ##              Check the first element of every layer
-        ##              Return the item of deepest level
-        ##
-        ## Complexity: Time O(n), Space O(n)
         def findBottomLeftValue(self, root):
             """
             :type root: TreeNode

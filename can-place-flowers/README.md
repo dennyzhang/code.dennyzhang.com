@@ -31,6 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/descr
 Leave me comments, if you know how to solve.  
 
     ## 
+    ## Blog link: http://brain.dennyzhang.com/can-place-flowers
     ## Basic Ideas: Find consecutive 0s
     ##              For a range of n 0s
     ##                  If the range in the middle, we can place (n-1)/2 flowers

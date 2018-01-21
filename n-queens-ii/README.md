@@ -17,6 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/n-queens-ii/description
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/n-queens-ii
     ## Basic Ideas: backtracking
     ##              Place queen row by row
     ##              For the position we have tried, examine conflict for rows and triangles

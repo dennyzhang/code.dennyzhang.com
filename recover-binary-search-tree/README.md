@@ -20,6 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/recover-binary-search-t
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/recover-binary-search-tree
     ## Basic Ideas:
     ##              It could be left-right swap or parent-child swap
     ##              It could also be two non-adjacent nodes

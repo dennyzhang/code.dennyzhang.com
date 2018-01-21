@@ -27,6 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-perfect-square/de
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/valid-perfect-square
     ## Basic Ideas: Binary search
     ##             Search in between [1^2, 2^2, 3^2, ... num^2]
     ## Complexity: Time O(log(n)), Space O(1)

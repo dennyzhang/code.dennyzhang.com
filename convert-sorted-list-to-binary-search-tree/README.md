@@ -29,6 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-list-to-
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/convert-sorted-list-to-binary-search-tree
     ## Basic Ideas: Binary Search
     ## Complexity: Time O(log(n)*n), Space O(1)
     ##

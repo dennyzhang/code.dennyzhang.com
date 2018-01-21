@@ -22,6 +22,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/descriptio
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
     ## Basic Ideas: Check each row, each colum and each section
     ##              When we check, we use an array of 10
     ##

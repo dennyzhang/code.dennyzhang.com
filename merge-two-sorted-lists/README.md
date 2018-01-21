@@ -20,6 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/merge-two-sorted-lists/
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/merge-two-sorted-lists
     ## Basic Ideas:
     ##    l1: 1 -> 3 -> 5
     ##        p   r
