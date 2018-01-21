@@ -34,8 +34,6 @@ Return 3. The paths that sum to 8 are:
 3. -3 -> 11
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-iii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/path-sum-iii/description/][leetcode.com]]
@@ -43,5 +41,6 @@ Credits To: [[url-external:https://leetcode.com/problems/path-sum-iii/descriptio
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/path-sum-iii
 
 #+END_SRC

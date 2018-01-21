@@ -22,8 +22,6 @@ Note:
 - The array is only modifiable by the update function.
 - You may assume the number of calls to update and sumRange function is distributed evenly.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-mutable][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-mutable/description/][leetcode.com]]
@@ -31,6 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-mutable
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/range-sum-query-mutable
 class NumArray(object):
 
     def __init__(self, nums):

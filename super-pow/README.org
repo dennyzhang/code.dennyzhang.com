@@ -26,8 +26,6 @@ b = [1,0]
 Result: 1024
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/super-pow][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/super-pow/description/][leetcode.com]]
@@ -35,6 +33,7 @@ Credits To: [[url-external:https://leetcode.com/problems/super-pow/description/]
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/super-pow
 class Solution(object):
     def superPow(self, a, b):
         """

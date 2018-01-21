@@ -19,8 +19,6 @@ Notes:
 - Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
 - You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-stack-using-queues][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/implement-stack-using-queues/description/][leetcode.com]]
@@ -28,6 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/implement-stack-using-q
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/implement-stack-using-queues
 class MyQueue(object):
 
     ## Idea: Use 2 stack. When pop, move to stack1, then stack2
@@ -97,7 +96,6 @@ class MyQueue(object):
         :rtype: bool
         """
         return len(self.stack1) == 0
-
 
 # Your MyQueue object will be instantiated and called as such:
 # obj = MyQueue()

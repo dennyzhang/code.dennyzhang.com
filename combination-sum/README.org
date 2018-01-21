@@ -23,8 +23,6 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/combination-sum/description/][leetcode.com]]
@@ -32,6 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum/descrip
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/combination-sum
 class Solution(object):
     def combinationSum(self, candidates, target):
         """

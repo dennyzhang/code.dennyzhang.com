@@ -40,8 +40,6 @@ or
 7 -> 6 -> 3 -> 2 -> 1
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-replacement][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/integer-replacement/description/][leetcode.com]]
@@ -49,5 +47,6 @@ Credits To: [[url-external:https://leetcode.com/problems/integer-replacement/des
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/integer-replacement
 
 #+END_SRC

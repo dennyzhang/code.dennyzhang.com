@@ -40,8 +40,6 @@ Output: 0
 Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-overlapping-intervals][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/non-overlapping-intervals/description/][leetcode.com]]
@@ -49,6 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/non-overlapping-interva
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/non-overlapping-intervals
 # Definition for an interval.
 # class Interval(object):
 #     def __init__(self, s=0, e=0):

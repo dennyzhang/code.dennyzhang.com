@@ -9,7 +9,6 @@ Intersection of Two Linked Lists
 ---------------------------------------------------------------------
 Write a program to find the node at which the intersection of two singly linked lists begins.
 
-
 For example, the following two linked lists:
 #+BEGIN_EXAMPLE
 A:          a1 -> a2
@@ -27,8 +26,6 @@ Notes:
 - You may assume there are no cycles anywhere in the entire linked structure.
 - Your code should preferably run in O(n) time and use only O(1) memory.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/intersection-of-two-linked-lists][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/intersection-of-two-linked-lists/description/][leetcode.com]]
@@ -36,7 +33,8 @@ Credits To: [[url-external:https://leetcode.com/problems/intersection-of-two-lin
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Idea: get the count of two links
+## Blog link: http://brain.dennyzhang.com/intersection-of-two-linked-lists
+## Basic Ideas: get the count of two links
 ##       Skip the longer link with a proper offset.
 ##       Then compare two links node by node
 ## Complexity: Time O(n), Space O(1)

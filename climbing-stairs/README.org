@@ -35,8 +35,6 @@ Explanation:  There are three ways to climb to the top.
 3. 2 steps + 1 step
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/climbing-stairs][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/climbing-stairs/description/][leetcode.com]]
@@ -46,8 +44,9 @@ Hint: Time O(n), Space O(1)
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/climbing-stairs
+## Basic Ideas: fibonacci
 class Solution(object):
-    ## Idea: fibonacci
     def climbStairs(self, n):
         """
         :type n: int

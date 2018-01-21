@@ -15,8 +15,6 @@ Note:
 1. You must do this in-place without making a copy of the array.
 - Minimize the total number of operations.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/move-zeroes][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/move-zeroes/description/][leetcode.com]]
@@ -24,6 +22,7 @@ Credits To: [[url-external:https://leetcode.com/problems/move-zeroes/description
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/move-zeroes
 class Solution(object):
     def moveZeroes(self, nums):
         """

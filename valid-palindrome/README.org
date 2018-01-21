@@ -18,8 +18,6 @@ Have you consider that the string might be empty? This is a good question to ask
 
 For the purpose of this problem, we define empty string as valid palindrome.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/valid-palindrome/description/][leetcode.com]]
@@ -27,6 +25,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-palindrome/descri
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/valid-palindrome
 class Solution(object):
     def isPalindrome(self, s):
         """

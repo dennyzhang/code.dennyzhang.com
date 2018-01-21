@@ -60,8 +60,6 @@ Note:
 All characters have an ASCII value in [35, 126].
 1 <= len(chars) <= 1000.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/string-compression][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/string-compression/description/][leetcode.com]]
@@ -69,6 +67,7 @@ Credits To: [[url-external:https://leetcode.com/problems/string-compression/desc
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/string-compression
 class Solution(object):
     def compress(self, chars):
         """

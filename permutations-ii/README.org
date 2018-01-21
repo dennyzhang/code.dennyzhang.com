@@ -18,8 +18,6 @@ For example,
 ]
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutations-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/permutations-ii/description/][leetcode.com]]
@@ -27,6 +25,7 @@ Credits To: [[url-external:https://leetcode.com/problems/permutations-ii/descrip
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/permutations-ii
 class Solution(object):
     def permuteUnique(self, nums):
         """

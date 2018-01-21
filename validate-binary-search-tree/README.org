@@ -31,13 +31,12 @@ Example 2:
 
 Binary tree [1,2,3], return false.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/validate-binary-search-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/validate-binary-search-tree/description/][leetcode.com]]
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/validate-binary-search-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

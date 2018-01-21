@@ -25,8 +25,6 @@ Note:
 - Elements of the given array are in the range of 0 to 10^9
 - Length of the array will not exceed 10^4.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/total-hamming-distance][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/total-hamming-distance/description/][leetcode.com]]
@@ -34,5 +32,6 @@ Credits To: [[url-external:https://leetcode.com/problems/total-hamming-distance/
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/total-hamming-distance
 
 #+END_SRC

@@ -21,8 +21,6 @@ For example, given the following triangle
 
 The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/triangle][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/triangle/description/][leetcode.com]]
@@ -30,6 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/triangle/description/][
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/triangle
 class Solution(object):
     def minimumTotal(self, triangle):
         """

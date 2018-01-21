@@ -32,8 +32,6 @@ Note:
 - There are many calls to sumRegion function.
 - You may assume that row1 <= row2 and col1 <= col2.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-2d-immutable][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-2d-immutable/description/][leetcode.com]]
@@ -41,6 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-2d-immu
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/range-sum-query-2d-immutable
 class NumMatrix(object):
     ## Idea: Maintain a matrix: value[i][j] = sum(matrix[0][0] to matrix[i][j]). 
     ##       Thus we can get the sum in Time O(1)

@@ -27,8 +27,6 @@ But the following [1,2,2,null,3,null,3] is not:
 Note:
 Bonus points if you could solve it both recursively and iteratively.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/symmetric-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/symmetric-tree/description/][leetcode.com]]
@@ -36,6 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/symmetric-tree/descript
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/symmetric-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

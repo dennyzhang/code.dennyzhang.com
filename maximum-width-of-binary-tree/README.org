@@ -69,8 +69,6 @@ Explanation:The maximum width existing in the fourth level with the length 8 (6,
 
 Note: Answer will in the range of 32-bit signed integer.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-width-of-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/maximum-width-of-binary-tree/description/][leetcode.com]]
@@ -78,6 +76,7 @@ Credits To: [[url-external:https://leetcode.com/problems/maximum-width-of-binary
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/maximum-width-of-binary-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

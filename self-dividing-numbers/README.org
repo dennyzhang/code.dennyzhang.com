@@ -25,8 +25,6 @@ Note:
 
 The boundaries of each input argument are 1 <= left <= right <= 10000.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/self-dividing-numbers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/self-dividing-numbers/description/][leetcode.com]]
@@ -34,6 +32,7 @@ Credits To: [[url-external:https://leetcode.com/problems/self-dividing-numbers/d
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/self-dividing-numbers
 class Solution(object):
     def selfDividingNumbers(self, left, right):
         """

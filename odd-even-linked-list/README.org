@@ -20,8 +20,6 @@ Note:
 - The relative order inside both the even and odd groups should remain as it was in the input. 
 - The first node is considered odd, the second node even and so on ...
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/odd-even-linked-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/odd-even-linked-list/description/][leetcode.com]]
@@ -29,6 +27,7 @@ Credits To: [[url-external:https://leetcode.com/problems/odd-even-linked-list/de
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/odd-even-linked-list
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):

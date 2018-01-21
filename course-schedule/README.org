@@ -43,7 +43,7 @@ Credits To: [[url-external:https://leetcode.com/problems/course-schedule/descrip
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/diagonal-traverse
+## Blog link: http://brain.dennyzhang.com/course-schedule
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         """

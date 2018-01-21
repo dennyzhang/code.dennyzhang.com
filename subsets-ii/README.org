@@ -24,8 +24,6 @@ If nums = [1,2,2], a solution is:
 ]
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/subsets-ii/description/][leetcode.com]]
@@ -33,5 +31,6 @@ Credits To: [[url-external:https://leetcode.com/problems/subsets-ii/description/
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/subsets-ii
 
 #+END_SRC

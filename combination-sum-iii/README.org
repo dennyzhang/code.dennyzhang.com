@@ -29,8 +29,6 @@ Output:
 [[1,2,6], [1,3,5], [2,3,4]]
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum-iii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/combination-sum-iii/description/][leetcode.com]]
@@ -38,6 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum-iii/des
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/combination-sum-iii
 class Solution(object):
     def combinationSum3(self, k, n):
         """

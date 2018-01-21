@@ -9,8 +9,6 @@ Contains Duplicate
 ---------------------------------------------------------------------
 Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/contains-duplicate/description/][leetcode.com]]
@@ -18,6 +16,7 @@ Credits To: [[url-external:https://leetcode.com/problems/contains-duplicate/desc
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/contains-duplicate
 ## Complexity: Time O(n*log(n)), Space O(n)
 class Solution(object):
     def containsDuplicate(self, nums):

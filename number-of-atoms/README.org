@@ -52,8 +52,6 @@ Note:
 - The length of formula will be in the range [1, 1000].
 - formula will only consist of letters, digits, and round parentheses, and is a valid formula as defined in the problem.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-atoms][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-atoms/description/][leetcode.com]]
@@ -61,5 +59,6 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-atoms/descrip
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/number-of-atoms
 
 #+END_SRC

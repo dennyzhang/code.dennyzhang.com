@@ -33,8 +33,6 @@ Output: True
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/repeated-substring-pattern/description/][leetcode.com]]
@@ -42,6 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/repeated-substring-patt
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/repeated-substring-pattern
 class Solution(object):
     def repeatedSubstringPattern(self, s):
         """

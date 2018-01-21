@@ -24,6 +24,7 @@ Credits To: [[url-external:https://leetcode.com/problems/poor-pigs/description/]
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/poor-pigs
 class Solution(object):
     def poorPigs(self, buckets, minutesToDie, minutesToTest):
         """

@@ -29,8 +29,6 @@ Only "AA" won't be regarded as rewardable owing to more than one absent times.
 
 Note: The value of n won't exceed 100,000.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-ii/description/][leetcode.com]]
@@ -38,6 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/student-attendance-reco
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/student-attendance-record-ii
 class Solution(object):
     def checkRecord(self, n):
         """

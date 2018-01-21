@@ -24,8 +24,6 @@ The average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 
 Note:
 The range of node's value is in the range of 32-bit signed integer.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/average-of-levels-in-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/average-of-levels-in-binary-tree/description/][leetcode.com]]
@@ -33,9 +31,10 @@ Credits To: [[url-external:https://leetcode.com/problems/average-of-levels-in-bi
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Idea: BFS, Level Order Tree Traversal
+## Blog link: http://brain.dennyzhang.com/average-of-levels-in-binary-tree
+## Basic Ideas: BFS, Level Order Tree Traversal
 ## Complexity: Time O(n), Space O(k)
-
+##
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
