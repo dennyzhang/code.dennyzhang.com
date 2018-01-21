@@ -24,6 +24,7 @@ Leave me comments, if you know how to solve.
 
     ## Basic Ideas: Cut the examine dataset into half
     ##              Check height of sub-tree and right-tree
+    ##              For each divide-conquer, one half will be solved without recursive
     ##
     ##    Sample Data: 
     ##             1        
@@ -32,7 +33,7 @@ Leave me comments, if you know how to solve.
     ##         /
     ##        4
     ##
-    ## Complexity: Time O(h*log(n)), Space O(1)
+    ## Complexity: Time O(h*log(n)) = O(log(n)*log(n)). Space O(1). If include system stack, Space O(log(n))
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):
