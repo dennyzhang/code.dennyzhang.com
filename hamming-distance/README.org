@@ -34,7 +34,7 @@ Blog link: http://brain.dennyzhang.com/hamming-distance
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/hamming-distance][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/hamming-distance/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/hamming-distance/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

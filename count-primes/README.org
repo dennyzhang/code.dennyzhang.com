@@ -13,7 +13,7 @@ Blog link: http://brain.dennyzhang.com/count-primes
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-primes][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/count-primes/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/count-primes/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

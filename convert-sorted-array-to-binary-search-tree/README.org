@@ -29,7 +29,7 @@ Blog link: http://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tre
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-array-to-binary-search-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

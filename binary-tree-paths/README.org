@@ -24,7 +24,7 @@ Blog link: http://brain.dennyzhang.com/binary-tree-paths
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-paths][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-tree-paths/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/binary-tree-paths/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

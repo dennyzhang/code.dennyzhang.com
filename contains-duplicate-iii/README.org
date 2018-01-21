@@ -13,7 +13,7 @@ Blog link: http://brain.dennyzhang.com/contains-duplicate-iii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contains-duplicate-iii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/contains-duplicate-iii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/contains-duplicate-iii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

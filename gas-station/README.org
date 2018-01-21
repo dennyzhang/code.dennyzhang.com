@@ -20,7 +20,7 @@ Blog link: http://brain.dennyzhang.com/gas-station
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/gas-station][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/gas-station/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/gas-station/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

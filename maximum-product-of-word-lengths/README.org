@@ -33,7 +33,7 @@ Blog link: http://brain.dennyzhang.com/maximum-product-of-word-lengths
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-product-of-word-lengths][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/maximum-product-of-word-lengths/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/maximum-product-of-word-lengths/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

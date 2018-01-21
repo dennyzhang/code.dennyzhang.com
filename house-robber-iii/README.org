@@ -34,7 +34,7 @@ Blog link: http://brain.dennyzhang.com/house-robber-iii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber-iii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/house-robber-iii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/house-robber-iii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

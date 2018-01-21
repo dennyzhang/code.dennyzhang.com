@@ -17,7 +17,7 @@ Blog link: http://brain.dennyzhang.com/binary-search-tree-iterator
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-search-tree-iterator][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-search-tree-iterator/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/binary-search-tree-iterator/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -16,7 +16,7 @@ Blog link: http://brain.dennyzhang.com/count-complete-tree-nodes
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-complete-tree-nodes][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/count-complete-tree-nodes/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/count-complete-tree-nodes/description/][leetcode.com]]
 
 Useful link: [[url-external:https://leetcode.com/problems/count-complete-tree-nodes/discuss/][here]]
 

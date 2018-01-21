@@ -46,7 +46,7 @@ Blog link: http://brain.dennyzhang.com/subtree-of-another-tree
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subtree-of-another-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/subtree-of-another-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/subtree-of-another-tree/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -37,7 +37,7 @@ Blog link: http://brain.dennyzhang.com/add-and-search-word-data-structure-design
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-and-search-word-data-structure-design][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/add-and-search-word-data-structure-design/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/add-and-search-word-data-structure-design/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

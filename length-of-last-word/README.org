@@ -23,7 +23,7 @@ Blog link: http://brain.dennyzhang.com/length-of-last-word
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/length-of-last-word][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/length-of-last-word/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/length-of-last-word/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

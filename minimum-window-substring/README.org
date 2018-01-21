@@ -25,7 +25,7 @@ Blog link: http://brain.dennyzhang.com/minimum-window-substring
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-window-substring][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/minimum-window-substring/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/minimum-window-substring/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -27,7 +27,7 @@ Blog link: http://brain.dennyzhang.com/reverse-nodes-in-k-group
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-nodes-in-k-group][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/reverse-nodes-in-k-group/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/reverse-nodes-in-k-group/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

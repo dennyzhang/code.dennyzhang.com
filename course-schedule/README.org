@@ -40,7 +40,7 @@ Blog link: http://brain.dennyzhang.com/course-schedule
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/course-schedule][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/course-schedule/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/course-schedule/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

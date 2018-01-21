@@ -19,7 +19,7 @@ Blog link: http://brain.dennyzhang.com/merge-intervals
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-intervals][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/merge-intervals/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/merge-intervals/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

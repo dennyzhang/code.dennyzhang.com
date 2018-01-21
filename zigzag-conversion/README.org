@@ -24,7 +24,7 @@ string convert(string text, int nRows);
 
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
-Background: what is ZigZag. [[url-external:https://leetcode.com/problems/zigzag-conversion/description][leetcode.com]]
+Background: what is ZigZag. [[url-external:https://leetcode.com/problems/zigzag-conversion/description/][leetcode.com]]
 #+BEGIN_EXAMPLE
 /*n=numRows
 2n-2    1                           2n-1                         4n-3
@@ -42,7 +42,7 @@ Blog link: http://brain.dennyzhang.com/zigzag-conversion
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/zigzag-conversion][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/zigzag-conversion/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/zigzag-conversion/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

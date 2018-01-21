@@ -1,4 +1,4 @@
-# Leetcode: Recover Binary Search Tree     :BLOG:Medium:
+# Leetcode: Recover Binary Search Tree     :BLOG:Amusing:
 
 
 ---
@@ -44,7 +44,7 @@ Leave me comments, if you know how to solve.
             if root is None:
                 return
             # level tree trasversal
-            queue = 
+            queue = []
             queue.append(root)
             while len(queue) != 0:
                 for i in xrange(len(queue)):

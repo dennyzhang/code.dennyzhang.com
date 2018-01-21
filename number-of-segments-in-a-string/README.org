@@ -21,7 +21,7 @@ Blog link: http://brain.dennyzhang.com/number-of-segments-in-a-string
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-segments-in-a-string][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/number-of-segments-in-a-string/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/number-of-segments-in-a-string/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -18,7 +18,7 @@ Blog link: http://brain.dennyzhang.com/rotate-array
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/rotate-array/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/rotate-array/description/][leetcode.com]]
 
 Hint: Time O(n), Space O(1)
 

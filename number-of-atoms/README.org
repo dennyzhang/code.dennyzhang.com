@@ -56,7 +56,7 @@ Blog link: http://brain.dennyzhang.com/number-of-atoms
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-atoms][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/number-of-atoms/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/number-of-atoms/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

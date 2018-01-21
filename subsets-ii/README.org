@@ -28,7 +28,7 @@ Blog link: http://brain.dennyzhang.com/subsets-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/subsets-ii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/subsets-ii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

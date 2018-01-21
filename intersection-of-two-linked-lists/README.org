@@ -31,7 +31,7 @@ Blog link: http://brain.dennyzhang.com/intersection-of-two-linked-lists
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/intersection-of-two-linked-lists][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/intersection-of-two-linked-lists/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/intersection-of-two-linked-lists/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

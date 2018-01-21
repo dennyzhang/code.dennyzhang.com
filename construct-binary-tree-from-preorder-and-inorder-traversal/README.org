@@ -13,7 +13,7 @@ Blog link: http://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-i
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-preorder-and-inorder-traversal][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

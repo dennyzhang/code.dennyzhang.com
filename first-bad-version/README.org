@@ -17,7 +17,7 @@ Blog link: http://brain.dennyzhang.com/first-bad-version
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-bad-version][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/first-bad-version/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/first-bad-version/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

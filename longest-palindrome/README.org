@@ -31,7 +31,7 @@ Blog link: http://brain.dennyzhang.com/longest-palindrome
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindrome][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/longest-palindrome/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/longest-palindrome/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

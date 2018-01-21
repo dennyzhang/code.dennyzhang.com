@@ -1,82 +1,129 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Delete Node in a BST     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Delete Node in a BST  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+Basically, the deletion can be divided into two stages:  
 
-A partially filled sudoku which is valid.  
+1.  Search for a node to remove.
+2.  If the node is found, delete the node.
 
-Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+Note: Time complexity should be O(height of tree).  
 
-Blog link: <http://brain.dennyzhang.com/valid-sudoku>  
+    Example:
+    
+    root = [5,3,6,2,4,null,7]
+    key = 3
+    
+        5
+       / \
+      3   6
+     / \   \
+    2   4   7
+    
+    Given key to delete is 3. So we find the node with value 3 and delete it.
+    
+    One valid answer is [5,4,6,2,null,null,7], shown in the following BST.
+    
+        5
+       / \
+      4   6
+     /     \
+    2       7
+    
+    Another valid answer is [5,2,6,null,4,null,7].
+    
+        5
+       / \
+      2   6
+       \   \
+        4   7
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Blog link: <http://brain.dennyzhang.com/delete-node-in-a-bst>  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-node-in-a-bst)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/delete-node-in-a-bst/description)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Basic Ideas: Find the target
+    ##              If the target is a leaf, we need the parent node
+    ##              If the target only have one child
+    ##              If the target has both children
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ## Complexity: Time O(h), Space O(1)
+    # Definition for a binary tree node.
+    # class TreeNode(object):
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.left = None
+    #         self.right = None
+    
     class Solution(object):
-        def isValidSudoku(self, board):
+        def deleteNode(self, root, key):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type root: TreeNode
+            :type key: int
+            :rtype: TreeNode
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+            if root is None:
+                return None
     
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+            # delete root
+            if root.val == key:
+                # root is a leaf
+                if root.left is None and root.right is None:
+                    return None
+                else:
+                    self.deleteRootNode(root, None)
+                    return root
     
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+            # delete node inside the tree
+            prev, node = root, root
+            while node:
+                if node.val == key:
+                    break
+                prev = node
+                if node.val > key:
+                    node = node.left
+                else:
+                    node = node.right
+    
+            # node is the target to be deleted
+            if node:
+                self.deleteRootNode(node, prev)
+            return root
+    
+        def deleteRootNode(self, root, prev):
+            if root is None:
+                return
+            # leaf
+            if root.left is None and root.right is None:
+                if root == prev.left:
+                    prev.left = None
+                else:
+                    prev.right = None
+                return
+            if root.left:
+                # find the largest item in the left right
+                p, node = root, root.left
+                while node.right:
+                    p = node
+                    node = node.right
+                # swap value
+                root.val = node.val
+                return self.deleteRootNode(node, p)
+            if root.right:
+                p, node = root, root.right
+                while node.left:
+                    p = node
+                    node = node.left
+                root.val = node.val
+                return self.deleteRootNode(node, p)

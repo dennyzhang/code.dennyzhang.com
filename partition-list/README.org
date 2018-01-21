@@ -19,7 +19,7 @@ Blog link: http://brain.dennyzhang.com/partition-list
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-list][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/partition-list/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/partition-list/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -17,7 +17,7 @@ Blog link: http://brain.dennyzhang.com/nim-game
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nim-game][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/nim-game/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/nim-game/description/][leetcode.com]]
 
 #+BEGIN_SRC python
 class Solution(object):

@@ -20,7 +20,7 @@ Blog link: http://brain.dennyzhang.com/repeated-string-match
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-string-match][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/repeated-string-match/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/repeated-string-match/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

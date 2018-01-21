@@ -16,7 +16,7 @@ Blog link: http://brain.dennyzhang.com/single-number
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-number/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/single-number/description/][leetcode.com]]
 #+BEGIN_SRC python
 class Solution(object):
     def singleNumber(self, nums):

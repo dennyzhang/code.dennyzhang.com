@@ -28,7 +28,7 @@ Blog link: http://brain.dennyzhang.com/valid-palindrome-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/valid-palindrome-ii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/valid-palindrome-ii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

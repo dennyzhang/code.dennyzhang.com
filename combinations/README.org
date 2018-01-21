@@ -25,7 +25,7 @@ Blog link: http://brain.dennyzhang.com/combinations
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combinations][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/combinations/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/combinations/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

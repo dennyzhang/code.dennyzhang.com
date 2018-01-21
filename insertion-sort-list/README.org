@@ -13,7 +13,7 @@ Blog link: http://brain.dennyzhang.com/insertion-sort-list
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insertion-sort-list][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/insertion-sort-list/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/insertion-sort-list/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

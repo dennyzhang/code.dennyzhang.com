@@ -25,7 +25,7 @@ Blog link: http://brain.dennyzhang.com/group-anagrams
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/group-anagrams][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/group-anagrams/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/group-anagrams/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

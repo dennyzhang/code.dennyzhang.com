@@ -44,7 +44,7 @@ Blog link: http://brain.dennyzhang.com/non-overlapping-intervals
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-overlapping-intervals][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/non-overlapping-intervals/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/non-overlapping-intervals/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

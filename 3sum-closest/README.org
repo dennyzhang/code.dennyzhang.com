@@ -18,7 +18,7 @@ Blog link: http://brain.dennyzhang.com/3sum-closest
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum-closest][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/3sum-closest/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/3sum-closest/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

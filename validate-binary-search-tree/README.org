@@ -35,7 +35,7 @@ Blog link: http://brain.dennyzhang.com/validate-binary-search-tree
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/validate-binary-search-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/validate-binary-search-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/validate-binary-search-tree/description/][leetcode.com]]
 
 #+BEGIN_SRC python
 # Definition for a binary tree node.

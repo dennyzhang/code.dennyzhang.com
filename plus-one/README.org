@@ -17,7 +17,7 @@ Blog link: http://brain.dennyzhang.com/plus-one
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/plus-one][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/plus-one/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/plus-one/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

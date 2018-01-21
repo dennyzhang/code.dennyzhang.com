@@ -21,7 +21,7 @@ Blog link: http://brain.dennyzhang.com/two-sum-ii-input-array-is-sorted
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-ii-input-array-is-sorted][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/][leetcode.com]]
 
 Hint: Time O(n), Space O(1). Moore voting
 

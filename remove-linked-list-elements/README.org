@@ -17,7 +17,7 @@ Blog link: http://brain.dennyzhang.com/remove-linked-list-elements
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-linked-list-elements][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/remove-linked-list-elements/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/remove-linked-list-elements/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

@@ -46,7 +46,7 @@ Blog link: http://brain.dennyzhang.com/longest-univalue-path
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-univalue-path][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/longest-univalue-path/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/longest-univalue-path/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

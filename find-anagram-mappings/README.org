@@ -31,7 +31,7 @@ Blog link: http://brain.dennyzhang.com/find-anagram-mappings
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-anagram-mappings][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-anagram-mappings/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/find-anagram-mappings/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

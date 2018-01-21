@@ -28,7 +28,7 @@ Blog link: http://brain.dennyzhang.com/average-of-levels-in-binary-tree
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/average-of-levels-in-binary-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/average-of-levels-in-binary-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/average-of-levels-in-binary-tree/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

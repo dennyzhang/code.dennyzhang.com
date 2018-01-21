@@ -42,7 +42,7 @@ Blog link: http://brain.dennyzhang.com/132-pattern
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/132-pattern][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/132-pattern/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/132-pattern/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

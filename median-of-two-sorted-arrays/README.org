@@ -30,7 +30,7 @@ Blog link: http://brain.dennyzhang.com/median-of-two-sorted-arrays
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-of-two-sorted-arrays][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/median-of-two-sorted-arrays/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/median-of-two-sorted-arrays/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

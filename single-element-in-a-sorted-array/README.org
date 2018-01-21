@@ -27,9 +27,9 @@ Blog link: http://brain.dennyzhang.com/single-element-in-a-sorted-array
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-element-in-a-sorted-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-element-in-a-sorted-array/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/single-element-in-a-sorted-array/description/][leetcode.com]]
 
-Useful link: [[url-external:https://leetcode.com/problems/single-element-in-a-sorted-array/description][leetcode.com]]
+Useful link: [[url-external:https://leetcode.com/problems/single-element-in-a-sorted-array/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

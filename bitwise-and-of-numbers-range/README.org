@@ -15,7 +15,7 @@ Blog link: http://brain.dennyzhang.com/bitwise-and-of-numbers-range
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bitwise-and-of-numbers-range][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/bitwise-and-of-numbers-range/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/bitwise-and-of-numbers-range/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

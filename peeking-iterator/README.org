@@ -26,7 +26,7 @@ Blog link: http://brain.dennyzhang.com/peeking-iterator
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/peeking-iterator][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/peeking-iterator/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/peeking-iterator/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

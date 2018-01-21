@@ -40,7 +40,7 @@ Blog link: http://brain.dennyzhang.com/second-minimum-node-in-a-binary-tree
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-minimum-node-in-a-binary-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

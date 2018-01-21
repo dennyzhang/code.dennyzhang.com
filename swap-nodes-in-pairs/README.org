@@ -18,7 +18,7 @@ Blog link: http://brain.dennyzhang.com/swap-nodes-in-pairs
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swap-nodes-in-pairs][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/swap-nodes-in-pairs/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/swap-nodes-in-pairs/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

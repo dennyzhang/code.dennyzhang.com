@@ -13,7 +13,7 @@ Blog link: http://brain.dennyzhang.com/binary-tree-zigzag-level-order-traversal
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-zigzag-level-order-traversal][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

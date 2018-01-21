@@ -31,7 +31,7 @@ Blog link: http://brain.dennyzhang.com/search-a-2d-matrix-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-a-2d-matrix-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/search-a-2d-matrix-ii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/search-a-2d-matrix-ii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

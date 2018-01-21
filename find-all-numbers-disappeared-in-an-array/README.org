@@ -26,7 +26,7 @@ Blog link: http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/][leetcode.com]]
 
 #+BEGIN_SRC python
 ## Basic Ideas: traverse each item

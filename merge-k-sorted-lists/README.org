@@ -13,7 +13,7 @@ Blog link: http://brain.dennyzhang.com/merge-k-sorted-lists
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-k-sorted-lists][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/merge-k-sorted-lists/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/merge-k-sorted-lists/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

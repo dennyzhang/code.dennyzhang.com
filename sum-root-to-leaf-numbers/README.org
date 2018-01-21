@@ -29,7 +29,7 @@ Blog link: http://brain.dennyzhang.com/sum-root-to-leaf-numbers
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-root-to-leaf-numbers][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/sum-root-to-leaf-numbers/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/sum-root-to-leaf-numbers/description/][leetcode.com]]
 
 #+BEGIN_SRC python
 class Solution(object):

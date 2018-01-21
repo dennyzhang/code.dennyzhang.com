@@ -18,7 +18,7 @@ Blog link: http://brain.dennyzhang.com/linked-list-cycle-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-cycle-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/linked-list-cycle-ii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/linked-list-cycle-ii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

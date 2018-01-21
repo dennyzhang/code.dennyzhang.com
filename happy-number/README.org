@@ -24,7 +24,7 @@ Blog link: http://brain.dennyzhang.com/happy-number
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/happy-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/happy-number/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/happy-number/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

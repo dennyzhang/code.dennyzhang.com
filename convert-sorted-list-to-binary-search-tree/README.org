@@ -28,7 +28,7 @@ Blog link: http://brain.dennyzhang.com/convert-sorted-list-to-binary-search-tree
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-list-to-binary-search-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

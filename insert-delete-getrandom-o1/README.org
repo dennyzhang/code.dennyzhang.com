@@ -45,7 +45,7 @@ Blog link: http://brain.dennyzhang.com/insert-delete-getrandom-o1
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom-o1/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom-o1/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

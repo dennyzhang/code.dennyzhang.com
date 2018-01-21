@@ -23,7 +23,7 @@ Blog link: http://brain.dennyzhang.com/remove-element
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-element][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/remove-element/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/remove-element/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

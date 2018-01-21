@@ -44,7 +44,7 @@ Blog link: http://brain.dennyzhang.com/populating-next-right-pointers-in-each-no
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/populating-next-right-pointers-in-each-node][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

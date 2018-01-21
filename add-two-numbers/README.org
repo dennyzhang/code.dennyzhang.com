@@ -22,7 +22,7 @@ Blog link: http://brain.dennyzhang.com/add-two-numbers
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-two-numbers][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/add-two-numbers/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/add-two-numbers/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

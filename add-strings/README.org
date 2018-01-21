@@ -20,7 +20,7 @@ Blog link: http://brain.dennyzhang.com/add-strings
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-strings][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/add-strings/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/add-strings/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

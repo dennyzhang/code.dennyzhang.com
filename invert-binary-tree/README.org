@@ -29,7 +29,7 @@ Blog link: http://brain.dennyzhang.com/invert-binary-tree
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/invert-binary-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/invert-binary-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/invert-binary-tree/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

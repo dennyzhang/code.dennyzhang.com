@@ -42,7 +42,7 @@ Blog link: http://brain.dennyzhang.com/flatten-binary-tree-to-linked-list
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-binary-tree-to-linked-list][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

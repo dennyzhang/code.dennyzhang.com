@@ -15,7 +15,7 @@ Blog link: http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/best-time-to-buy-and-sell-stock-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/][leetcode.com]]
 
 #+BEGIN_SRC python
 ## Basic Ideas:

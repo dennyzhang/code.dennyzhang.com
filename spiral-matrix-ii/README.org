@@ -25,7 +25,7 @@ Blog link: http://brain.dennyzhang.com/spiral-matrix-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/spiral-matrix-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/spiral-matrix-ii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/spiral-matrix-ii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

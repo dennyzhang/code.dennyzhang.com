@@ -33,7 +33,7 @@ Blog link: http://brain.dennyzhang.com/student-attendance-record-ii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-ii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-ii/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

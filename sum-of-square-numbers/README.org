@@ -25,7 +25,7 @@ Blog link: http://brain.dennyzhang.com/sum-of-square-numbers
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-square-numbers][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/sum-of-square-numbers/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/sum-of-square-numbers/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

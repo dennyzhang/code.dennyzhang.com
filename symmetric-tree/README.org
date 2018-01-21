@@ -31,7 +31,7 @@ Blog link: http://brain.dennyzhang.com/symmetric-tree
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/symmetric-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/symmetric-tree/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/symmetric-tree/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

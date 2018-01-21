@@ -27,7 +27,7 @@ Blog link: http://brain.dennyzhang.com/combination-sum
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/combination-sum/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/combination-sum/description/][leetcode.com]]
 
 Leave me comments, if you know how to solve.
 

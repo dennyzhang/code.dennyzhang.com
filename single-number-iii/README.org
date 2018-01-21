@@ -21,7 +21,7 @@ Blog link: http://brain.dennyzhang.com/single-number-iii
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-iii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-number-iii/description][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/single-number-iii/description/][leetcode.com]]
 
 Hint: Time O(n), Space O(1). Moore voting
 
