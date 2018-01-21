@@ -1,4 +1,4 @@
-* Leetcode: Count Complete Tree Nodes                             :BLOG:Amusing:
+* Leetcode: Count Complete Tree Nodes                             :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
