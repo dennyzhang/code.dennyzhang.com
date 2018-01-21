@@ -20,6 +20,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sort-colors/description
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/sort-colors
 class Solution(object):
     def sortColors(self, nums):
         """

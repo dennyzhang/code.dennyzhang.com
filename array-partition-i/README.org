@@ -20,8 +20,6 @@ Note:
 - n is a positive integer, which is in the range of [1, 10000].
 - All the integers in the array will be in the range of [-10000, 10000].
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/array-partition-i][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/array-partition-i/description/][leetcode.com]]
@@ -29,6 +27,7 @@ Credits To: [[url-external:https://leetcode.com/problems/array-partition-i/descr
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/array-partition-i
 class Solution(object):
     def arrayPairSum(self, nums):
         """

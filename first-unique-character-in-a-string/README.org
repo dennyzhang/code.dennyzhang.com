@@ -20,8 +20,6 @@ return 2.
 Note: You may assume the string contain only lowercase letters.
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-unique-character-in-a-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/first-unique-character-in-a-string/description/][leetcode.com]]
@@ -29,6 +27,7 @@ Credits To: [[url-external:https://leetcode.com/problems/first-unique-character-
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/first-unique-character-in-a-string
 class Solution(object):
     def firstUniqChar(self, s):
         """

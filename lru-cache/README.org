@@ -30,8 +30,6 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lru-cache][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/lru-cache/description/][leetcode.com]]
@@ -39,6 +37,7 @@ Credits To: [[url-external:https://leetcode.com/problems/lru-cache/description/]
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/lru-cache
 class LRUCache(object):
 
     def __init__(self, capacity):

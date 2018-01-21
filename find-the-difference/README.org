@@ -26,8 +26,6 @@ Explanation:
 'e' is the letter that was added.
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-difference][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-the-difference/description/][leetcode.com]]
@@ -35,6 +33,7 @@ Credits To: [[url-external:https://leetcode.com/problems/find-the-difference/des
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/find-the-difference
 class Solution(object):
     def findTheDifference(self, s, t):
         """

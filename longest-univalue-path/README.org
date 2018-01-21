@@ -49,5 +49,6 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-univalue-path/d
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/longest-univalue-path
 
 #+END_SRC

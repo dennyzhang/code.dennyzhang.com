@@ -23,8 +23,6 @@ Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
 
 Note: The length of path between two nodes is represented by the number of edges between them.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/diameter-of-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/diameter-of-binary-tree/description/][leetcode.com]]
@@ -32,6 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/diameter-of-binary-tree
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/diameter-of-binary-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

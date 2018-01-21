@@ -36,8 +36,6 @@ Target = 28
 Output: False
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-iv-input-is-a-bst][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/][leetcode.com]]
@@ -45,6 +43,7 @@ Credits To: [[url-external:https://leetcode.com/problems/two-sum-iv-input-is-a-b
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/two-sum-iv-input-is-a-bst
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

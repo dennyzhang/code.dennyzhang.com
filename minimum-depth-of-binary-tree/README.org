@@ -11,8 +11,6 @@ Given a binary tree, find its minimum depth.
 
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-depth-of-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/minimum-depth-of-binary-tree/description/][leetcode.com]]
@@ -20,6 +18,7 @@ Credits To: [[url-external:https://leetcode.com/problems/minimum-depth-of-binary
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/minimum-depth-of-binary-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

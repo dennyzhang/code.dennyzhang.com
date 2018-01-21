@@ -36,8 +36,6 @@ Hints:
 - Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
 - Topological sort could also be done via BFS.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/course-schedule][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/course-schedule/description/][leetcode.com]]
@@ -45,6 +43,7 @@ Credits To: [[url-external:https://leetcode.com/problems/course-schedule/descrip
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/diagonal-traverse
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         """

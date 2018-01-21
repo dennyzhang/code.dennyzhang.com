@@ -16,8 +16,6 @@ Return the starting gas station's index if you can travel around the circuit onc
 Note:
 The solution is guaranteed to be unique.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/gas-station][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/gas-station/description/][leetcode.com]]
@@ -25,5 +23,6 @@ Credits To: [[url-external:https://leetcode.com/problems/gas-station/description
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/gas-station
 
 #+END_SRC

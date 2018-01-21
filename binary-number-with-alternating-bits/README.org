@@ -40,8 +40,6 @@ Explanation:
 The binary representation of 10 is: 1010.
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-number-with-alternating-bits][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/binary-number-with-alternating-bits/description/][leetcode.com]]
@@ -49,6 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/binary-number-with-alte
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/binary-number-with-alternating-bits
 class Solution(object):
     def hasAlternatingBits(self, n):
         """

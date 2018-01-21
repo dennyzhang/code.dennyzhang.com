@@ -13,8 +13,6 @@ For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].
 
 Please optimize your algorithm to use less time and space. The input size may be as large as 5,000,000.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lexicographical-numbers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/lexicographical-numbers/description/][leetcode.com]]
@@ -22,6 +20,7 @@ Credits To: [[url-external:https://leetcode.com/problems/lexicographical-numbers
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/lexicographical-numbers
 class Solution(object):
     def lexicalOrder(self, n):
         """

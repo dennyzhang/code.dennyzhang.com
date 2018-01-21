@@ -29,5 +29,6 @@ Credits To: [[url-external:https://leetcode.com/problems/maximum-length-of-repea
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/maximum-length-of-repeated-subarray
 
 #+END_SRC

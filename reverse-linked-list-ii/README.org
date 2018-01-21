@@ -18,8 +18,6 @@ Note:
 Given m, n satisfy the following condition:
 1 <= m <= n <= length of list.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/reverse-linked-list-ii/description/][leetcode.com]]
@@ -27,7 +25,8 @@ Credits To: [[url-external:https://leetcode.com/problems/reverse-linked-list-ii/
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Idea: Insert to a given pointer for (n-m) times.
+## Blog link: http://brain.dennyzhang.com/reverse-linked-list-ii
+## Basic Ideas: Insert to a given pointer for (n-m) times.
 ##       1. Change in the head, thus we need a dummy head node
 ##       2. Need to track get previous node of sub list
 ##       3. Need to track the head of original sub list

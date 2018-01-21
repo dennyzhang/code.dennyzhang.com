@@ -45,5 +45,6 @@ Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
 
 #+END_SRC

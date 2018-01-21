@@ -39,8 +39,6 @@ Note:
 1. schedule and schedule[i] are lists with lengths in range [1, 50].
 - 0 <= schedule[i].start < schedule[i].end <= 10^8.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employee-free-time][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/employee-free-time/description/][leetcode.com]]
@@ -48,6 +46,7 @@ Credits To: [[url-external:https://leetcode.com/problems/employee-free-time/desc
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/employee-free-time
 # Definition for an interval.
 # class Interval(object):
 #     def __init__(self, s=0, e=0):

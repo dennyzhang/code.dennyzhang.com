@@ -40,8 +40,6 @@ The coins can form the following rows:
 Because the 4th row is incomplete, we return 3.
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/arranging-coins][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/arranging-coins/description/][leetcode.com]]
@@ -49,6 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/arranging-coins/descrip
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/arranging-coins
 class Solution(object):
     def arrangeCoins(self, n):
         """

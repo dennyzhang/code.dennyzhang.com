@@ -22,8 +22,6 @@ Input:
 Output: [1, 3, 9]
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-largest-value-in-each-tree-row][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/][leetcode.com]]
@@ -31,6 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/find-largest-value-in-e
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/find-largest-value-in-each-tree-row
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

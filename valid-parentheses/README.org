@@ -11,8 +11,6 @@ Given a string containing just the characters '(', ')', '{', '}', '[' and ']', d
 
 The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-parentheses][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/valid-parentheses/description/][leetcode.com]]
@@ -20,6 +18,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-parentheses/descr
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/valid-parentheses
 class Solution(object):
     def isValid(self, s):
         """
