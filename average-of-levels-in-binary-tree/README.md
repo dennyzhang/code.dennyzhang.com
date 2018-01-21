@@ -29,9 +29,10 @@ Credits To: [leetcode.com](https://leetcode.com/problems/average-of-levels-in-bi
 
 Leave me comments, if you know how to solve.  
 
-    ## Idea: BFS, Level Order Tree Traversal
+    ## Blog link: http://brain.dennyzhang.com/average-of-levels-in-binary-tree
+    ## Basic Ideas: BFS, Level Order Tree Traversal
     ## Complexity: Time O(n), Space O(k)
-    
+    ##
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

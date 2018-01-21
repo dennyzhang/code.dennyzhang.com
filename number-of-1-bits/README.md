@@ -17,6 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-1-bits/descri
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/number-of-1-bits
     class Solution(object):
         def hammingWeight(self, n):
             """

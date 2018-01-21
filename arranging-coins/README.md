@@ -42,6 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/arranging-coins/descrip
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/arranging-coins
     class Solution(object):
         def arrangeCoins(self, n):
             """

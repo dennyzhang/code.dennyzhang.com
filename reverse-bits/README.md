@@ -20,6 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-bits/descriptio
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/reverse-bits
     class Solution(object):
         def reverseBits(self, n):
             i = 0

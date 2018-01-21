@@ -25,6 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/insert-interval/descrip
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/insert-interval
     ## 
     # Definition for an interval.
     # class Interval(object):

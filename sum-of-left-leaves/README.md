@@ -25,6 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-left-leaves/desc
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/sum-of-left-leaves
     class Solution(object):
         ## Idea: BFS. (element, is_left)
         ##       DFS

@@ -59,6 +59,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/string-compression/desc
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/string-compression
     class Solution(object):
         def compress(self, chars):
             """

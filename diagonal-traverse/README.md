@@ -1,81 +1,94 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Diagonal Traverse     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Diagonal Traverse  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown in the below image.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
-
-A partially filled sudoku which is valid.  
+    Example:
+    Input:
+    [
+     [ 1, 2, 3 ],
+     [ 4, 5, 6 ],
+     [ 7, 8, 9 ]
+    ]
+    Output:  [1,2,4,7,5,3,6,8,9]
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+The total number of elements of the given matrix will not exceed 10,000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/diagonal-traverse)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/diagonal-traverse/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/diagonal-traverse
+    ## Basic Ideas:
+    ##      Don't get confused with 2 things:
+    ##        1. For coordinate in math, move one step down from (0, 0), we will get (0, -1)
+    ##           Move one step down from matrix[i][j], we shall get matrix[i+1][j].
+    ##           It's neither matrix[i][j+1] nor matrix[i][j-1]
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ##        2. In matrix[i][j], i indicates row_index, and j indicates col_index.
+    ##           In (x, y), x indicates col_index, y indicates row_index
+    ##
+    ##        Starts with (0, 0)
+    ##                 Sequence                 Move to next               When to stop              How to update starting position
+    ##              +: (0, 0)                   m[i][j] -> m[i-1][j+1]    first row or last column   next node in clockwise position
+    ##              -: (1, 0) (0, 1)            m[i][j] -> m[i+1][j-1]    first column or last row    next node in counter clockwise position
+    ##              +: (0, 2) (1, 1) (2, 0)     m[i][j] -> m[i-1][j+1]
+    ##              -: (2, 1) (1, 2)            m[i][j] -> m[i+1][j-1]
+    ##              +: (2, 2)                   
+    ##
+    ## Complexity: Time O(n*n), Space O(1)
     class Solution(object):
-        def isValidSudoku(self, board):
+        def findDiagonalOrder(self, matrix):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type matrix: List[List[int]]
+            :rtype: List[int]
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
+            row_count = len(matrix)
+            if row_count == 0:
+                return []
+            col_count = len(matrix[0])
+            res = []
+            counter = row_count * col_count
+            i, j, is_up = 0, 0, True
+            # i is which row, j is which column
+            while len(res) != counter:
+                if is_up:
+                    while True:
+                        # print("up: %d. i:%d, j:%d, matrix[i][j]: %d" % (is_up, i, j, matrix[i][j]))
+                        res.append(matrix[i][j])
+                        if i == 0 or j == col_count - 1:
+                            break
+                        i, j = i-1, j+1
+                    # find the next node of clock-wise position
+                    if j != col_count - 1:
+                        j = j + 1
                     else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
+                        i = i + 1
+                else:
+                    while True:
+                        # print("up: %d. i:%d, j:%d, matrix[i][j]: %d" % (is_up, i, j, matrix[i][j]))
+                        res.append(matrix[i][j])
+                        if j == 0 or i == row_count - 1:
+                            break
+                        i, j = i+1, j-1
+                    # find the next node of counter clock-wise position
+                    if i != row_count - 1:
+                        i = i + 1
                     else:
-                        array_check[index] = True
+                        j = j + 1
     
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+                # change direction
+                is_up = not is_up
+            return res
+    
+    s = Solution()
+    print s.findDiagonalOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) #[1,2,4,7,5,3,6,8,9]

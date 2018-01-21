@@ -39,6 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-iv-input-is-a-b
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/two-sum-iv-input-is-a-bst
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

@@ -26,6 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/4sum/description/)
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/4sum
     class Solution(object):
         def fourSum(self, nums, target):
             """

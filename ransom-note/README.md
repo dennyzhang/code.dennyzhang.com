@@ -24,6 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ransom-note/description
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/ransom-note
     class Solution(object):
         def canConstruct(self, ransomNote, magazine):
             """

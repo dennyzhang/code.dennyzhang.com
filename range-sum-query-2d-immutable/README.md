@@ -37,6 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-2d-immu
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/range-sum-query-2d-immutable
     class NumMatrix(object):
         ## Idea: Maintain a matrix: value[i][j] = sum(matrix[0][0] to matrix[i][j]). 
         ##       Thus we can get the sum in Time O(1)

@@ -29,6 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-complement/descr
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/number-complement
     class Solution(object):
         def findComplement(self, num):
             """

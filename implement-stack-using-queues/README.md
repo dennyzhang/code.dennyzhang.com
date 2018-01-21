@@ -25,6 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-stack-using-q
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/implement-stack-using-queues
     class MyQueue(object):
     
         ## Idea: Use 2 stack. When pop, move to stack1, then stack2
@@ -94,7 +95,6 @@ Leave me comments, if you know how to solve.
             :rtype: bool
             """
             return len(self.stack1) == 0
-    
     
     # Your MyQueue object will be instantiated and called as such:
     # obj = MyQueue()

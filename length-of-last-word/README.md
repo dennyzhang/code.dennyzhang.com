@@ -24,6 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/length-of-last-word/des
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/length-of-last-word
     class Solution(object):
         def lengthOfLastWord(self, s):
             """

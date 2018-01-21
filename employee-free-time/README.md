@@ -39,6 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/employee-free-time/desc
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/employee-free-time
     # Definition for an interval.
     # class Interval(object):
     #     def __init__(self, s=0, e=0):

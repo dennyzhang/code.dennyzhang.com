@@ -17,6 +17,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description/)  
 
+    ## Blog link: http://brain.dennyzhang.com/nim-game
     class Solution(object):
         def canWinNim(self, n):
             """

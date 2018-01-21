@@ -37,6 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-insert-position/
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/search-insert-position
     class Solution(object):
         def searchInsert(self, nums, target):
             """

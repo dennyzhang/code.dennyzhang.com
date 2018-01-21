@@ -37,6 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-magic-diction
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/implement-magic-dictionary
     class MagicDictionary(object):
     
         def __init__(self):

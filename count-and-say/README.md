@@ -39,6 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-and-say/descripti
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/count-and-say
     class Solution(object):
         def countAndSay(self, n):
             """

@@ -45,6 +45,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/split-linked-list-in-pa
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/split-linked-list-in-parts
     class Solution(object):
         def splitListToParts(self, root, k):
             """

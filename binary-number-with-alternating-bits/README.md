@@ -39,6 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-number-with-alte
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/binary-number-with-alternating-bits
     class Solution(object):
         def hasAlternatingBits(self, n):
             """

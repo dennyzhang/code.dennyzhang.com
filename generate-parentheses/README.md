@@ -25,23 +25,24 @@ Credits To: [leetcode.com](https://leetcode.com/problems/generate-parentheses/de
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/generate-parentheses
+    ## Basic Ideas: Use counter to make sure it's well-formed paretheses
+    ##       Use BFS to generate the result
+    ##       1. For each character, we can only print (, or )
+    ##       2. unbalanced_count: How many unbalanced ( so far, 
+    ##             printed_count: how many ( has already been alreay printed
+    ##       3. When we can print (, if printed_count < n
+    ##       4. When we can print ), if unbalanced_count > 0
+    ## Complexity
+    ## Sample Data:
+    ##       ( stack: (
+    ##       )
     class Solution(object):
         def generateParenthesis(self, n):
             """
             :type n: int
             :rtype: List[str]
             """
-            ## Idea: Use counter to make sure it's well-formed paretheses
-            ##       Use BFS to generate the result
-            ##       1. For each character, we can only print (, or )
-            ##       2. unbalanced_count: How many unbalanced ( so far, 
-            ##             printed_count: how many ( has already been alreay printed
-            ##       3. When we can print (, if printed_count < n
-            ##       4. When we can print ), if unbalanced_count > 0
-            ## Complexity
-            ## Sample Data:
-            ##       ( stack: (
-            ##       )
             if n<=0:
                 return []
             res = []

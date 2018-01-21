@@ -21,6 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/poor-pigs/description/)
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/poor-pigs
     class Solution(object):
         def poorPigs(self, buckets, minutesToDie, minutesToTest):
             """

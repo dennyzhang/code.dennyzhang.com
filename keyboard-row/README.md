@@ -23,6 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/keyboard-row/descriptio
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/keyboard-row
     class Solution(object):
         def findWords(self, words):
             """

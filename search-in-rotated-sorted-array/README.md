@@ -21,6 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-in-rotated-sorte
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/search-in-rotated-sorted-array
     class Solution(object):
         def search(self, nums, target):
             """

@@ -17,6 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-depth-of-binary
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/maximum-depth-of-binary-tree
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

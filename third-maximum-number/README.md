@@ -37,6 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/third-maximum-number/de
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/third-maximum-number
     class Solution(object):
         def thirdMax(self, nums):
             """

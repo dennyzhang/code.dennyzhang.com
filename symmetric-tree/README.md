@@ -32,6 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/symmetric-tree/descript
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/symmetric-tree
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

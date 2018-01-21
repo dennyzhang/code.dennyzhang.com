@@ -33,6 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/4sum-ii/description/)
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/4sum-ii
     class Solution(object):
         def fourSumCount(self, A, B, C, D):
             """

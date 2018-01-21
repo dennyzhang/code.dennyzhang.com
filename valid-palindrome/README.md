@@ -24,6 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/descri
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/valid-palindrome
     class Solution(object):
         def isPalindrome(self, s):
             """

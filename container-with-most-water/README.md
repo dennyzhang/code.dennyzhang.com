@@ -17,6 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/container-with-most-wat
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/container-with-most-water
     class Solution(object):
         def maxArea(self, height):
             """

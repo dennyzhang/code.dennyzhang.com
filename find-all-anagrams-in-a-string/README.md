@@ -44,6 +44,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-all-anagrams-in-a-
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/find-all-anagrams-in-a-string
     class Solution(object):
         def is_same_dict(self, dict_1, dict_2):
             has_matched = True

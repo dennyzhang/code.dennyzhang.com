@@ -20,6 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-stri
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/reverse-words-in-a-string-iii
     class Solution(object):
         def reverseWords(self, s):
             """

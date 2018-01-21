@@ -20,6 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/restore-ip-addresses/de
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/restore-ip-addresses
     class Solution(object):
         def restoreIpAddresses(self, s):
             """

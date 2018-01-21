@@ -33,6 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix-ii/d
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/search-a-2d-matrix-ii
     class Solution(object):
         def searchMatrix(self, matrix, target):
             """

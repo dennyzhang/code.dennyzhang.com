@@ -31,7 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/intersection-of-two-lin
 
 Leave me comments, if you know how to solve.  
 
-    ## Idea: get the count of two links
+    ## Blog link: http://brain.dennyzhang.com/intersection-of-two-linked-lists
+    ## Basic Ideas: get the count of two links
     ##       Skip the longer link with a proper offset.
     ##       Then compare two links node by node
     ## Complexity: Time O(n), Space O(1)

@@ -25,4 +25,6 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/)  
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you know how to solve.  
+
+    ## Blog link: http://brain.dennyzhang.com/maximum-length-of-repeated-subarray

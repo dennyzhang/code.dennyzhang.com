@@ -17,6 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-parentheses/descr
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/valid-parentheses
     class Solution(object):
         def isValid(self, s):
             """

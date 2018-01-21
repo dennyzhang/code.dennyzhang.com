@@ -25,6 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/add-two-numbers-ii/desc
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/add-two-numbers-ii
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):

@@ -15,6 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate/desc
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/contains-duplicate
     ## Complexity: Time O(n*log(n)), Space O(n)
     class Solution(object):
         def containsDuplicate(self, nums):

@@ -24,7 +24,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-linked-list-ii/
 
 Leave me comments, if you know how to solve.  
 
-    ## Idea: Insert to a given pointer for (n-m) times.
+    ## Blog link: http://brain.dennyzhang.com/reverse-linked-list-ii
+    ## Basic Ideas: Insert to a given pointer for (n-m) times.
     ##       1. Change in the head, thus we need a dummy head node
     ##       2. Need to track get previous node of sub list
     ##       3. Need to track the head of original sub list

@@ -38,6 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/course-schedule/descrip
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/course-schedule
     class Solution(object):
         def canFinish(self, numCourses, prerequisites):
             """

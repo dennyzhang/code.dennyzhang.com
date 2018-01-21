@@ -34,6 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-reco
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/student-attendance-record-ii
     class Solution(object):
         def checkRecord(self, n):
             """

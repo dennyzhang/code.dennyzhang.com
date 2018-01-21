@@ -30,6 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-integer/descrip
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/reverse-integer
     class Solution(object):
         def reverse(self, x):
             """

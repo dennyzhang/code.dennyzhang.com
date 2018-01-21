@@ -26,6 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/pascals-triangle/descri
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/pascals-triangle
     class Solution(object):
         def generate(self, numRows):
             """

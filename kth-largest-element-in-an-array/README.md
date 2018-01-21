@@ -20,6 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/kth-largest-element-in-an-array
     class Solution(object):
         def findKthLargest(self, nums, k):
             """

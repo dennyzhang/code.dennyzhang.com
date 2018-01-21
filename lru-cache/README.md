@@ -35,6 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lru-cache/description/)
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/lru-cache
     class LRUCache(object):
     
         def __init__(self, capacity):

@@ -26,6 +26,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)  
 
+    ## Blog link: http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock
     class Solution(object):
         def maxProfit(self, prices):
             """

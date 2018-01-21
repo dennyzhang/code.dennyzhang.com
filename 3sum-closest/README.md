@@ -19,6 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/3sum-closest/descriptio
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/3sum-closest
     class Solution(object):
         def threeSumClosest(self, nums, target):
             """

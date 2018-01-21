@@ -18,6 +18,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-string/descript
 
 Leave me comments, if you know how to solve.  
 
+    ## Blog link: http://brain.dennyzhang.com/reverse-string
     class Solution(object):
         def reverseString(self, s):
             """
