@@ -18,13 +18,13 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 
 Credits To: [[url-external:https://leetcode.com/problems/count-complete-tree-nodes/description][leetcode.com]]
 
-Useful link: [[url-external:https://github.com/kamyu104/LeetCode/blob/master/Python/count-complete-tree-nodes.py][here]]
+Useful link: [[url-external:https://leetcode.com/problems/count-complete-tree-nodes/discuss/][here]]
 
 Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
-## Basic Ideas: Use binarysearch to check the last level
-##              Find the depth(d) from the left-most node
+## Basic Ideas: Cut the examine dataset into half
+##              Check height of sub-tree and right-tree
 ##
 ##    Sample Data: 
 ##             1        
@@ -33,7 +33,7 @@ Leave me comments, if you know how to solve.
 ##         /
 ##        4
 ##
-## Complexity: Time O(h*log(n)) = O(log(n)*log(n)) Space O(h)
+## Complexity: Time O(h*log(n)), Space O(1)
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -49,48 +49,19 @@ class Solution(object):
         """
         if root is None:
             return 0
-        if root.left is None and root.right is None:
-            return 1
 
-        # first node is level 1
-        d = 1
-        node = root
-        while node.left:
-            node = node.left
-            d += 1
+        # root node is with height 0
+        lh, rh = 0, 0
+        lnode, rnode = root, root
+        while lnode:
+            lnode = lnode.left
+            lh += 1
+        while rnode:
+            rnode = rnode.right
+            rh += 1
 
-        # binary search: find the last True
-        # huffman coding
-        left, right = 0, 2**(d-1)
-        while left < right:
-            mid = left + (right-left)/2
-            if self.nthNodeExists(root, mid, d):
-                left = mid + 1
-            else:
-                right = mid
-
-        # why? return the last exists node
-        return left - 1
-
-    def nthNodeExists(self, root, n, d):
-        # check whether nth node exists in the tree
-        # from huffman coding get whether to turn left or turn right
-        count = d-1
-        l = [None] * (count)
-        i = count - 1
-        while n != 0:
-            if n % 2 == 1:
-                l[i] = '1'
-            else:
-                l[i] = '0'
-            i -= 1
-            n = n << 1
-        l = l[::-1]
-        node = root
-        for i in xrange(count):
-            if l[i] == '0':
-                node = node.left
-            else:
-                node = node.right
-        return node is not None
+        if lh == rh:
+            return pow(2, lh) - 1
+        else:
+            return self.countNodes(root.left) + self.countNodes(root.right) + 1
 #+END_SRC
