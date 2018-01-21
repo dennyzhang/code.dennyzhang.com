@@ -1,8 +1,8 @@
-* Leetcode: Recover Binary Search Tree                                              :BLOG:Medium:
+* Leetcode: Recover Binary Search Tree                                              :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree
+:type:     #binarytree, #inspiring
 :END:
 ---------------------------------------------------------------------
 Recover Binary Search Tree
