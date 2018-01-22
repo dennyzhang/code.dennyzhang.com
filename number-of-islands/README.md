@@ -41,31 +41,29 @@ Leave me comments, if you know how to solve.
             :type grid: List[List[str]]
             :rtype: int
             """
-            row_count = len(grid)
-            if row_count == 0:
-                return 0
-            col_count = len(grid[0])
+            self.row_count = len(grid)
+            if self.row_count == 0: return 0
+            self.col_count = len(grid[0])
     
             res = 0
-            for i in xrange(row_count):
-                for j in xrange(col_count):
+            for i in xrange(self.row_count):
+                for j in xrange(self.col_count):
                     if grid[i][j] == '1':
                         res += 1
-                        self.updateMatrix(grid, i, j, row_count, col_count)
+                        self.DFSMark(grid, i, j)
             return res
     
-        def updateMatrix(self, grid, i, j, row_count, col_count):
-            if i < 0 or i >= row_count \
-                or j < 0 or j >= col_count:
+        def DFSMark(self, grid, i, j):
+            if i < 0 or i >= self.row_count \
+                or j < 0 or j >= self.col_count:
                 return
     
             # stop digging, if not '1'
-            if grid[i][j] != '1':
-                return
+            if grid[i][j] != '1': return
     
             grid[i][j] = 'X'
             # mark four positions in a recursive way
-            self.updateMatrix(grid, i-1, j, row_count, col_count)
-            self.updateMatrix(grid, i+1, j, row_count, col_count)
-            self.updateMatrix(grid, i, j-1, row_count, col_count)
-            self.updateMatrix(grid, i, j+1, row_count, col_count)
+            self.DFSMark(grid, i-1, j)
+            self.DFSMark(grid, i+1, j)
+            self.DFSMark(grid, i, j-1)
+            self.DFSMark(grid, i, j+1)
