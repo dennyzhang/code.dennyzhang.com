@@ -1,81 +1,68 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Maximum Binary Tree     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Maximum Binary Tree  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+1.  The root is the maximum number in the array.
+2.  The left subtree is the maximum tree constructed from left part subarray divided by the maximum number.
+3.  The right subtree is the maximum tree constructed from right part subarray divided by the maximum number.
 
-A partially filled sudoku which is valid.  
+Construct the maximum tree by the given array and output the root node of this tree.  
+
+    Example 1:
+    Input: [3,2,1,6,0,5]
+    Output: return the tree root node representing the following tree:
+    
+          6
+        /   \
+       3     5
+        \    / 
+         2  0   
+           \
+            1
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+The size of the given array will be in the range [1,1000].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-binary-tree)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/maximum-binary-tree/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/maximum-binary-tree
+    ## Basic Ideas: recursive way
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ## Complexity: Time O(n), Space O(1)
+    # Definition for a binary tree node.
+    # class TreeNode(object):
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.left = None
+    #         self.right = None
+    
     class Solution(object):
-        def isValidSudoku(self, board):
+        def constructMaximumBinaryTree(self, nums):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type nums: List[int]
+            :rtype: TreeNode
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+            if len(nums) == 0:
+                return None
     
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+            max_index = 0
+            for i in xrange(1, len(nums)):
+                if nums[i] > nums[max_index]:
+                    max_index = i
+            root = TreeNode(nums[max_index])
     
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+            if max_index != 0:
+                root.left = self.constructMaximumBinaryTree(nums[0:max_index])
+            root.right = self.constructMaximumBinaryTree(nums[max_index+1:])
+            return root

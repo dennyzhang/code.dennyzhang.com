@@ -18,8 +18,6 @@ Given a binary tree, imagine yourself standing on the right side of it, return t
       5     4       <---
     You should return [1, 3, 4].
 
-Hint: useful link for [level order traversal](https://www.linkedin.com/feed/update/urn:li:activity:6282693138029043712)  
-
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-right-side-view)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-right-side-view/description/)  

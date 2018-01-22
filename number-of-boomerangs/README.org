@@ -1,4 +1,4 @@
-* Leetcode: Number of Boomerangs                                 :BLOG:Basic:
+* Leetcode: Number of Boomerangs                                :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

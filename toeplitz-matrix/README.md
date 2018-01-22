@@ -1,81 +1,67 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Toeplitz Matrix     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Toeplitz Matrix  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same element.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+Now given an M x N matrix, return True if and only if the matrix is Toeplitz.  
 
-A partially filled sudoku which is valid.  
+Example 1:  
+
+    Input: matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]
+    Output: True
+    Explanation:
+    1234
+    5123
+    9512
+    
+    In the above grid, the diagonals are "[9]", "[5, 5]", "[1, 1, 1]", "[2, 2, 2]", "[3, 3]", "[4]", and in each diagonal all elements are the same, so the answer is True.
+
+Example 2:  
+
+    Input: matrix = [[1,2],[2,2]]
+    Output: False
+    Explanation:
+    The diagonal "[1, 2]" has different elements.
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+1.  matrix will be a 2D array of integers.
+2.  matrix will have a number of rows and columns in range [1, 20].
+3.  matrix[i][j] will be integers in range [0, 99].
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/toeplitz-matrix)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/toeplitz-matrix/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/toeplitz-matrix
+    ## Basic Ideas: Check all m[i][j] with m[i+1][j+1]
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ##            (0,0)  (1,0)  (2,0)  (3,0)
+    ##              1     2       3     4
+    ##              5     1       2     3
+    ##              9     5       1     2
+    ##            (0,2)  (1,2)  (2,2)  (3,2)
+    ##
+    ## Complexity: Time O(m*n), Space O(1)
     class Solution(object):
-        def isValidSudoku(self, board):
+        def isToeplitzMatrix(self, matrix):
             """
-            :type board: List[List[str]]
+            :type matrix: List[List[int]]
             :rtype: bool
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
+            row_count = len(matrix)
+            if row_count == 0: return True
+            col_count = len(matrix[0])
+            for i in xrange(row_count-1):
+                for j in xrange(col_count-1):
+                    if matrix[i][j] != matrix[i+1][j+1]:
                         return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
             return True

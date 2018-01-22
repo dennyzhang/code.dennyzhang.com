@@ -1,4 +1,4 @@
-* Leetcode: Judge Route Circle                                              :BLOG:Basic:
+* Leetcode: Judge Route Circle                                  :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

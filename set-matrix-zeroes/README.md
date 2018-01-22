@@ -19,11 +19,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/description/)  
 
-Hint:  
-
 Leave me comments, if you know how to solve.  
-
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
 
     ## Blog link: http://brain.dennyzhang.com/set-matrix-zeroes
     ## Basic Ideas:

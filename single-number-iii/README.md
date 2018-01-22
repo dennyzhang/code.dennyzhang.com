@@ -25,8 +25,6 @@ Hint: Time O(n), Space O(1). Moore voting
 
 Leave me comments, if you know how to solve.  
 
-Useful link: [here](https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration)  
-
     ## Blog link: http://brain.dennyzhang.com/single-number-iii
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.

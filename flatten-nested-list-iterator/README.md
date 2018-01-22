@@ -1,81 +1,30 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Flatten Nested List Iterator     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Flatten Nested List Iterator  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Given a nested list of integers, implement an iterator to flatten it.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+Each element is either an integer, or a list &#x2013; whose elements may also be integers or other lists.  
 
-A partially filled sudoku which is valid.  
+    Example 1:
+    Given the list [[1,1],2,[1,1]],
+    
+    By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,1,2,1,1].
 
-Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+    Example 2:
+    Given the list [1,[4,[6]]],
+    
+    By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-nested-list-iterator)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/flatten-nested-list-iterator/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
-    ##
-    ## Complexity: Time O(1), Space O(1)
-    class Solution(object):
-        def isValidSudoku(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: bool
-            """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    ## Blog link: http://brain.dennyzhang.com/flatten-nested-list-iterator

@@ -28,6 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/diagonal-traverse/descr
 Leave me comments, if you know how to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/diagonal-traverse
+    #!/usr/bin/env python
     ## Basic Ideas:
     ##      Don't get confused with 2 things:
     ##        1. For coordinate in math, move one step down from (0, 0), we will get (0, -1)
@@ -56,38 +57,29 @@ Leave me comments, if you know how to solve.
             if row_count == 0:
                 return []
             col_count = len(matrix[0])
-            res = []
-            counter = row_count * col_count
-            i, j, is_up = 0, 0, True
-            # i is which row, j is which column
-            while len(res) != counter:
-                if is_up:
-                    while True:
-                        # print("up: %d. i:%d, j:%d, matrix[i][j]: %d" % (is_up, i, j, matrix[i][j]))
-                        res.append(matrix[i][j])
-                        if i == 0 or j == col_count - 1:
-                            break
-                        i, j = i-1, j+1
-                    # find the next node of clock-wise position
-                    if j != col_count - 1:
-                        j = j + 1
-                    else:
-                        i = i + 1
-                else:
-                    while True:
-                        # print("up: %d. i:%d, j:%d, matrix[i][j]: %d" % (is_up, i, j, matrix[i][j]))
-                        res.append(matrix[i][j])
-                        if j == 0 or i == row_count - 1:
-                            break
-                        i, j = i+1, j-1
-                    # find the next node of counter clock-wise position
-                    if i != row_count - 1:
-                        i = i + 1
-                    else:
-                        j = j + 1
+            res = [None] * (row_count * col_count)
     
-                # change direction
-                is_up = not is_up
+            i, j, is_up = 0, 0, True
+            for k in xrange(row_count * col_count):
+                res[k] = matrix[i][j]
+                if is_up:
+                    if i == 0 or j == col_count-1:
+                        is_up = not is_up
+                        if j != col_count - 1:
+                            j = j+1
+                        else:
+                            i = i+1
+                    else:
+                        i, j = i-1, j+1
+                else:
+                    if j == 0 or i == row_count-1:
+                        is_up = not is_up
+                        if i != row_count -1:
+                            i = i+1
+                        else:
+                            j = j+1
+                    else:
+                        i,j = i+1, j-1
             return res
     
     s = Solution()

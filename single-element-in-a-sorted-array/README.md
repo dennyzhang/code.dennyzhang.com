@@ -23,8 +23,6 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)  
 
-Useful link: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)  
-
 Leave me comments, if you know how to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/single-element-in-a-sorted-array

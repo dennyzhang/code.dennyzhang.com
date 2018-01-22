@@ -1,4 +1,4 @@
-# Leetcode: Unique Binary Search Trees     :BLOG:Basic:
+# Leetcode: Unique Binary Search Trees     :BLOG:Hard:
 
 
 ---
@@ -25,3 +25,14 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-binary-search-tr
 Leave me comments, if you know how to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/unique-binary-search-trees
+    class Solution(object):
+        def numTrees(self, n):
+            """
+            :type n: int
+            :rtype: int
+            """
+            if n == 0: return 0
+            if n == 1: return 1
+            if n == 2: return 2
+            if n > 2:
+                return self.numTrees(n-1)*2+1

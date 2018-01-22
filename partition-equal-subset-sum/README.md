@@ -1,81 +1,38 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Template     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Partition Equal Subset Sum  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
-
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
-
-A partially filled sudoku which is valid.  
+Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.  
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+1.  Each of the array element will not exceed 100.
+2.  The array size will not exceed 200.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+    Example 1:
+    
+    Input: [1, 5, 11, 5]
+    
+    Output: true
+    
+    Explanation: The array can be partitioned as [1, 5, 5] and [11].
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+    Example 2:
+    
+    Input: [1, 2, 3, 5]
+    
+    Output: false
+    
+    Explanation: The array cannot be partitioned into equal sum subsets.
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-equal-subset-sum)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/partition-equal-subset-sum/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
-    ##
-    ## Complexity: Time O(1), Space O(1)
-    class Solution(object):
-        def isValidSudoku(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: bool
-            """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    ## Blog link: http://brain.dennyzhang.com/partition-equal-subset-sum
