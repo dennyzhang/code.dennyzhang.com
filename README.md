@@ -85,24 +85,20 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
 
-# Basic tests
-- Binary search: https://leetcode.com/problems/search-a-2d-matrix/description/
-
 # Basic Data Structure
 - Bloom filter
 - Hash
 - Bit-map
 - Heap
-- Inverted index/Trie tree
+- Inverted index
 - Segment tree
 - Red-Black tree
 
 # Basic Methodologies
-- Divide & Conquer
 - Hash
 - Sort: heap/quick/merge sort
 - Bloom filter/Bitmap
-- Inverted index/Trie tree
+- Inverted index
 - External sorting
 - Mapreduce
 
@@ -110,8 +106,3 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 - Permutation & Combination
 
 https://www.sigmainfy.com/blog/leetcode-handbook-all-problem-solution-index.html
-
-- LinkedIn list manipulation is disgusting: https://leetcode.com/problems/sort-list/
-- Easy puzzles are problems we will be dealing with in daily work
-
-- TODO: Complexity estimation for https://leetcode.com/problems/decode-ways/description/

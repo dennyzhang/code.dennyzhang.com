@@ -7,9 +7,15 @@
 ---------------------------------------------------------------------
 Search for a Range
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Given an array of integers sorted in ascending order, find the starting and ending position of a given target value.
 
+Your algorithm's runtime complexity must be in the order of O(log n).
 
+If the target is not found in the array, return [-1, -1].
+
+For example,
+Given [5, 7, 7, 8, 8, 10] and target value 8,
+return [3, 4].
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-for-a-range][challenges-leetcode-interesting]]
 
