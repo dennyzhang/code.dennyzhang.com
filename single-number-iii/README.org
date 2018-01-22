@@ -27,8 +27,6 @@ Hint: Time O(n), Space O(1). Moore voting
 
 Leave me comments, if you know how to solve.
 
-Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
-
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/single-number-iii
 ## Basic Ideas:

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #matrix, #inspiring
+:type:     #inspiring
 :END:
 ---------------------------------------------------------------------
 Set row and column to 0
@@ -15,17 +15,11 @@ Follow up:
 - A simple improvement uses O(m + n) space, but still not the best solution.
 - Could you devise a constant space solution?
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/set-matrix-zeroes/description/][leetcode.com]]
 
-Hint:
-
 Leave me comments, if you know how to solve.
-
-Useful link: [[url-external:https://discuss.leetcode.com/topic/17564/boyer-moore-majority-vote-algorithm-and-my-elaboration][here]]
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/set-matrix-zeroes

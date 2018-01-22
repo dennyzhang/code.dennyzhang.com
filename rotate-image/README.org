@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #matrix
+:type:     #matrixtraverse
 :END:
 ---------------------------------------------------------------------
 Clockwise rotate a 2D matrix
