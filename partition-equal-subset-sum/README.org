@@ -1,0 +1,45 @@
+* Leetcode: Template                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Partition Equal Subset Sum
+---------------------------------------------------------------------
+Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
+
+Note:
+1. Each of the array element will not exceed 100.
+- The array size will not exceed 200.
+
+#+BEGIN_EXAMPLE
+Example 1:
+
+Input: [1, 5, 11, 5]
+
+Output: true
+
+Explanation: The array can be partitioned as [1, 5, 5] and [11].
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+
+Input: [1, 2, 3, 5]
+
+Output: false
+
+Explanation: The array cannot be partitioned into equal sum subsets.
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-equal-subset-sum][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/partition-equal-subset-sum/description/][leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/partition-equal-subset-sum
+
+#+END_SRC
