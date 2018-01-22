@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #math
+:type:     #math, #stack, #codetemplate
 :END:
 ---------------------------------------------------------------------
 Evaluate Reverse Polish Notation
@@ -14,8 +14,6 @@ Valid operators are +, -, *, /. Each operand may be an integer or another expres
 Some examples:
   ["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
   ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/evaluate-reverse-polish-notation][challenges-leetcode-interesting]]
 

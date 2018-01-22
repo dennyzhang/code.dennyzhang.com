@@ -1,8 +1,8 @@
-* Leetcode: Max Consecutive Ones                                              :BLOG:Basic:
+* Leetcode: Max Consecutive Ones                                 :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #codetemplate, #subarray
+:type:     #codetemplate, #subsequence
 :END:
 ---------------------------------------------------------------------
 Max Consecutive Ones
