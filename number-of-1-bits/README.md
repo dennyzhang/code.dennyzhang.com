@@ -18,8 +18,21 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-1-bits/descri
 Leave me comments, if you know how to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/number-of-1-bits
+    ## Baisc Ideas: Each time n & (n-1) will remove one 1 bit
+    ## Complexity: Time O(k), k is most many 1 bits it has. Space O(1)
     class Solution(object):
         def hammingWeight(self, n):
+            """
+            :type n: int
+            :rtype: int
+            """
+            res = 0
+            while n != 0:
+                n = n & (n-1)
+                res += 1
+            return res
+    
+        def hammingWeight_v1(self, n):
             """
             :type n: int
             :rtype: int
