@@ -1,0 +1,21 @@
+* Leetcode: Relative Ranks                                     :BLOG:Amusing:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #misc
+:END:
+---------------------------------------------------------------------
+Relative Ranks
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/relative-ranks][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/relative-ranks/description/][leetcode.com]]
+
+Leave me comments, if you know how to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/relative-ranks
+
+#+END_SRC
