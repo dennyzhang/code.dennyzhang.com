@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #misc
+:type:     #game, #stack, #codetemplate
 :END:
 ---------------------------------------------------------------------
 Baseball Game
@@ -57,5 +57,30 @@ Leave me comments, if you know how to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/baseball-game
-
+## Basic Ideas: stack: only pop when we get a 'D'
+##
+##   We may get sequence like: 3 +
+##   We may get sequence like: 12 3 D
+##
+## Complexity: Time O(n), Space O(n)
+class Solution(object):
+    def calPoints(self, ops):
+        """
+        :type ops: List[str]
+        :rtype: int
+        """
+        stack = []
+        for op in ops:
+            if op == '+':
+                if len(stack) >= 2:
+                    stack.append(stack[-1] + stack[-2])
+            elif op == 'D':
+                if len(stack) >= 1:
+                    stack.append(stack[-1]*2)
+            elif op == 'C':
+                if len(stack) >= 1:
+                    del stack[-1]
+            else:
+                stack.append(int(op))
+        return sum(stack)
 #+END_SRC

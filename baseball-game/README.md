@@ -1,81 +1,81 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Baseball Game     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Baseball Game  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+You're now a baseball game point recorder.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+Given a list of strings, each string can be one of the 4 following types:  
 
-A partially filled sudoku which is valid.  
+Integer (one round's score): Directly represents the number of points you get in this round.  
+"+" (one round's score): Represents that the points you get in this round are the sum of the last two valid round's points.  
+"D" (one round's score): Represents that the points you get in this round are the doubled data of the last valid round's points.  
+"C" (an operation, which isn't a round's score): Represents the last valid round's points you get were invalid and should be removed.  
+Each round's operation is permanent and could have an impact on the round before and the round after.  
+
+You need to return the sum of the points you could get in all the rounds.  
+
+    Example 1:
+    Input: ["5","2","C","D","+"]
+    Output: 30
+    Explanation: 
+    Round 1: You could get 5 points. The sum is: 5.
+    Round 2: You could get 2 points. The sum is: 7.
+    Operation 1: The round 2's data was invalid. The sum is: 5.  
+    Round 3: You could get 10 points (the round 2's data has been removed). The sum is: 15.
+    Round 4: You could get 5 + 10 = 15 points. The sum is: 30.
+
+    Example 2:
+    Input: ["5","-2","4","C","D","9","+","+"]
+    Output: 27
+    Explanation: 
+    Round 1: You could get 5 points. The sum is: 5.
+    Round 2: You could get -2 points. The sum is: 3.
+    Round 3: You could get 4 points. The sum is: 7.
+    Operation 1: The round 3's data is invalid. The sum is: 3.  
+    Round 4: You could get -4 points (the round 3's data has been removed). The sum is: -1.
+    Round 5: You could get 9 points. The sum is: 8.
+    Round 6: You could get -4 + 9 = 5 points. The sum is 13.
+    Round 7: You could get 9 + 5 = 14 points. The sum is 27.
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+1.  The size of the input list will be between 1 and 1000.
+2.  Every integer represented in the list will be between -30000 and 30000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/baseball-game)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/baseball-game/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/baseball-game
+    ## Basic Ideas: stack: only pop when we get a 'D'
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ##   We may get sequence like: 3 +
+    ##   We may get sequence like: 12 3 D
+    ##
+    ## Complexity: Time O(n), Space O(n)
     class Solution(object):
-        def isValidSudoku(self, board):
+        def calPoints(self, ops):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type ops: List[str]
+            :rtype: int
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+            stack = []
+            for op in ops:
+                if op == '+':
+                    if len(stack) >= 2:
+                        stack.append(stack[-1] + stack[-2])
+                elif op == 'D':
+                    if len(stack) >= 1:
+                        stack.append(stack[-1]*2)
+                elif op == 'C':
+                    if len(stack) >= 1:
+                        del stack[-1]
+                else:
+                    stack.append(int(op))
+            return sum(stack)

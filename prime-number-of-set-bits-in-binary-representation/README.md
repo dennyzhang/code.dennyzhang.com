@@ -1,4 +1,4 @@
-# Leetcode: Prime Number of Set Bits in Binary Representation     :BLOG:Basic:
+# Leetcode: Prime Number of Set Bits in Binary Representation     :BLOG:Medium:
 
 
 ---

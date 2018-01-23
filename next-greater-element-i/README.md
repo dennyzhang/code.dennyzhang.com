@@ -1,81 +1,39 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Next Greater Element I     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Next Greater Element I  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+You are given two arrays (without duplicates) nums1 and nums2 where nums1's elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.  
 
-A partially filled sudoku which is valid.  
+    Example 1:
+    Input: nums1 = [4,1,2], nums2 = [1,3,4,2].
+    Output: [-1,3,-1]
+    Explanation:
+        For number 4 in the first array, you cannot find the next greater number for it in the second array, so output -1.
+        For number 1 in the first array, the next greater number for it in the second array is 3.
+        For number 2 in the first array, there is no next greater number for it in the second array, so output -1.
+
+    Example 2:
+    Input: nums1 = [2,4], nums2 = [1,2,3,4].
+    Output: [3,-1]
+    Explanation:
+        For number 2 in the first array, the next greater number for it in the second array is 3.
+        For number 4 in the first array, there is no next greater number for it in the second array, so output -1.
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+1.  All elements in nums1 and nums2 are unique.
+2.  The length of both nums1 and nums2 would not exceed 1000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/next-greater-element-i)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/next-greater-element-i/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
-    ##
-    ## Complexity: Time O(1), Space O(1)
-    class Solution(object):
-        def isValidSudoku(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: bool
-            """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    ## Blog link: http://brain.dennyzhang.com/next-greater-element-i
