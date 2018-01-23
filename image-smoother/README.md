@@ -69,6 +69,7 @@ Leave me comments, if you know how to solve.
                 return (sum_val+M[i][j], count+1)
             else:
                 return (sum_val, count)
+    
     s = Solution()
     print s.imageSmoother([[2,3,4],[5,6,7],[8,9,10],[11,12,13],[14,15,16]])
     # [[4,4,5],[5,6,6],[8,9,9],[11,12,12],[13,13,14]]
