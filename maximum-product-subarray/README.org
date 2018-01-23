@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #dynamic_programming, #subsequence, #inspiring
+:type:     #dynamic_programming, #maxsubarray, #inspiring
 :END:
 ---------------------------------------------------------------------
 Maximum Product Subarray
