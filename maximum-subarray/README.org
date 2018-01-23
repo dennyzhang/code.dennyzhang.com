@@ -1,8 +1,8 @@
-* Leetcode: Maximum Subarray                                              :BLOG:Hard:
+* Leetcode: Maximum Subarray                                      :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #inspiring, #array, #redo
+:type:     #inspiring, #subarray, #redo
 :END:
 ---------------------------------------------------------------------
 Maximum Subarray
