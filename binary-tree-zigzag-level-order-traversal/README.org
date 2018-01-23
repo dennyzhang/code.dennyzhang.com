@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #zigzag
+:type:     #binarytree, #zigzag, #bfs
 :END:
 ---------------------------------------------------------------------
 Binary Tree Zigzag Level Order Traversal
