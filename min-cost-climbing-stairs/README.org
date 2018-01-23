@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #dynamic_programming, #codetemplate
+:type:     #dynamicprogramming, #codetemplate
 :END:
 ---------------------------------------------------------------------
 Min Cost Climbing Stairs
