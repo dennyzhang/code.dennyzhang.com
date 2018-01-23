@@ -27,7 +27,9 @@ Leave me comments, if you know how to solve.
     ## Blog link: http://brain.dennyzhang.com/longest-harmonious-subsequence
     ## Basic Ideas: The input array won't exceed 20,000
     ##              Build a map from the array. key is the number in the list, value is the occurence count
-    ##              For each key in the map, check m.get(key-1) and m.get(key+1)
+    ##              For each key in the map, check m.get(key+1)
+    ##              Here we don't need to compare m.get(key-1). 
+    ##              Why? We will also visit the smaller value sooner or later
     ##
     ## Complexity: Time O(n), Space O(n)
     ##
@@ -43,11 +45,9 @@ Leave me comments, if you know how to solve.
             m = collections.defaultdict(lambda: 0)
             for num in nums:
                 m[num]+=1
+    
             max_count = 0
             for num in nums:
-                v = m[num]
-                if num-1 in m:
-                    max_count = max(max_count, m[num]+m[num-1])
                 if num+1 in m:
                     max_count = max(max_count, m[num]+m[num+1])
             return max_count

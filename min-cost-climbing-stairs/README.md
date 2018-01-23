@@ -1,81 +1,81 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Min Cost Climbing Stairs     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Min Cost Climbing Stairs  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+On a staircase, the i-th step has some non-negative cost cost[i] assigned (0 indexed).  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+Once you pay the cost, you can either climb one or two steps. You need to find minimum cost to reach the top of the floor, and you can either start from the step with index 0, or the step with index 1.  
 
-A partially filled sudoku which is valid.  
+    Example 1:
+    Input: cost = [10, 15, 20]
+    Output: 15
+    Explanation: Cheapest is start on cost[1], pay that cost and go to the top.
+
+    Example 2:
+    Input: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+    Output: 6
+    Explanation: Cheapest is start on cost[0], and only step on 1s, skipping cost[3].
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+1.  cost will have a length in the range [2, 1000].
+2.  Every cost[i] will be an integer in the range [0, 999].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/min-cost-climbing-stairs)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/min-cost-climbing-stairs/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/min-cost-climbing-stairs
+    ## Basic Ideas:
+    ##       Facts: you can only climb one or two steps. But you can't climb back.
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ##           0     1     2
+    ##          10    15    20
+    ##
+    ##          There are only two cases to reach n, either from n-1 or n-2
+    ##                f(n) = min(f(n-1)+cost[n-1], f(n-2)+cost[n-2])
+    ##     Attention: The target we want to reach is not the last element. But the element after last element
+    ##
+    ## Complexity: Time O(n), Space O(1)
     class Solution(object):
-        def isValidSudoku(self, board):
+        # Improvement: we don't need list to save the result.
+        #              It will only involve two of previous result.
+        def minCostClimbingStairs(self, cost):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type cost: List[int]
+            :rtype: int
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+            n = len(cost)
+            if n == 0: return 0
+            if n == 1: return 0
+            ## prev1, prev2, ... i
+            prev1, prev2 = 0, 0
+            # calculate from 2 to n
+            for i in range(2, n+1):
+                prev2, prev1 = min(prev1+cost[i-2], prev2+cost[i-1]), prev2
+            # prev2 would be the position after last position
+            # prev1 is the value of last position
+            return prev2
     
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+        def minCostClimbingStairs_v1(self, cost):
+            """
+            :type cost: List[int]
+            :rtype: int
+            """
+            n = len(cost)
+            if n == 0: return 0
+            if n == 1: return 0
+            l = [None]*(n+1)
+            l[1]=l[0]=0
+            for i in range(2, n+1):
+                l[i] = min(l[i-1]+cost[i-1], l[i-2]+cost[i-2])
+            return l[n]
     
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    s = Solution()
+    print s.minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]) # 6

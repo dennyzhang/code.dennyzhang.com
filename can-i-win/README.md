@@ -1,81 +1,42 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Can I Win     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Can I Win  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+In the "100 game," two players take turns adding, to a running total, any integer from 1..10. The player who first causes the running total to reach or exceed 100 wins.  
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+What if we change the game so that players cannot re-use integers?  
 
-A partially filled sudoku which is valid.  
+For example, two players might take turns drawing from a common pool of numbers of 1..15 without replacement until they reach a total >= 100.  
 
-Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+Given an integer maxChoosableInteger and another integer desiredTotal, determine if the first player to move can force a win, assuming both players play optimally.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+You can always assume that maxChoosableInteger will not be larger than 20 and desiredTotal will not be larger than 300.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+    Example
+    
+    Input:
+    maxChoosableInteger = 10
+    desiredTotal = 11
+    
+    Output:
+    false
+    
+    Explanation:
+    No matter which integer the first player choose, the first player will lose.
+    The first player can choose an integer from 1 up to 10.
+    If the first player choose 1, the second player can only choose integers from 2 up to 10.
+    The second player will win by choosing 10 and get a total = 11, which is >= desiredTotal.
+    Same with other integers chosen by the first player, the second player will always win.
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/can-i-win)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/can-i-win/description/)  
 
 Leave me comments, if you know how to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
-    ##
-    ## Complexity: Time O(1), Space O(1)
-    class Solution(object):
-        def isValidSudoku(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: bool
-            """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    ## Blog link: http://brain.dennyzhang.com/can-i-win
