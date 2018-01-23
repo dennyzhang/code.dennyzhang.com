@@ -1,4 +1,4 @@
-* Leetcode: Number of 1 Bits                                              :BLOG:Basic:
+* Leetcode: Number of 1 Bits                                     :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

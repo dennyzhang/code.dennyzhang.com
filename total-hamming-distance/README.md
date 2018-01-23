@@ -1,4 +1,4 @@
-# Leetcode: Total Hamming Distance     :BLOG:Basic:
+# Leetcode: Total Hamming Distance     :BLOG:Medium:
 
 
 ---

@@ -1,4 +1,4 @@
-* Leetcode: Binary Tree Postorder Traversal                                              :BLOG:Basic:
+* Leetcode: Binary Tree Postorder Traversal                      :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

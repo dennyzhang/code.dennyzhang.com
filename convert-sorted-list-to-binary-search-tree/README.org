@@ -1,4 +1,4 @@
-* Leetcode: Convert Sorted List to Binary Search Tree                                              :BLOG:Medium:
+* Leetcode: Convert Sorted List to Binary Search Tree           :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

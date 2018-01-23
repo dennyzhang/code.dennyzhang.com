@@ -1,4 +1,4 @@
-* Leetcode: Swap Nodes in Pairs                                              :BLOG:Basic:
+* Leetcode: Swap Nodes in Pairs                                  :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

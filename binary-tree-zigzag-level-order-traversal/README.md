@@ -47,14 +47,14 @@ Leave me comments, if you know how to solve.
             :rtype: List[List[int]]
             """
             if root is None:
-                return 
-            res = 
-            queue = 
+                return []
+            res = []
+            queue = []
             queue.append(root)
             left_to_right = True
             while len(queue) != 0:
                 length = len(queue)
-                level_element = 
+                level_element = []
                 for i in xrange(length):
                     element = queue[0]
                     del queue[0]

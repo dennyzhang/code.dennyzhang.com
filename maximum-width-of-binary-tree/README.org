@@ -1,4 +1,4 @@
-* Leetcode: Maximum Width of Binary Tree                                              :BLOG:Amusing:
+* Leetcode: Maximum Width of Binary Tree                       :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

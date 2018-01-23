@@ -32,82 +32,41 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-islands/descr
 Leave me comments, if you know how to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/number-of-islands
-    ## Basic Ideas: Two kind of Os: 
-    ##                 1 it will definitely not surrounded by 'X'. This happens when 'O' happens in the boarders.
-    ##                 2 it might or might not
-    ##
-    ##              For case1, we mark it to 'Y'. Then go with DFS
-    ##              After one pass, for positions of remaining O, they are all surrounded by 'X'
-    ##                              for positions of all 'Y', they're fine
-    ##
-    ##             X    X    X    X    X
-    ##             X    O    O    O    X
-    ##             X    O    X    O    X
-    ##             X    O    O    O    X
-    ##             X    X    X    X    X
-    ##             X    X    O    O    X
-    ##             X    X    O    X    X
-    ##
-    ## Complexity: Time O(n*m), Space O(1)
     class Solution(object):
-        def solve(self, board):
+        ## Basic Ideas: Avoid duplicate counting.
+        ##   Mark all adjacent 1 to X. Thus we can avoid counting one the same island multiple times.
+        ##
+        ## Complexity: Time O(m*n), Space O(1)
+        def numIslands(self, grid):
             """
-            :type board: List[List[str]]
-            :rtype: void Do not return anything, modify board in-place instead.
+            :type grid: List[List[str]]
+            :rtype: int
             """
-            self.row_count = len(board)
-            if self.row_count == 0: return
-            self.col_count = len(board[0])
+            self.row_count = len(grid)
+            if self.row_count == 0:
+                return 0
+            self.col_count = len(grid[0])
     
-            # mark 'O' on boarders to 'Y'
-            for i in [0, self.row_count-1]:
-                for j in xrange(self.col_count):
-                    if board[i][j] == 'O': board[i][j] = 'Y'
-    
-            for i in xrange(self.row_count):
-                for j in [0, self.col_count-1]:
-                    if board[i][j] == 'O': board[i][j] = 'Y'
-    
-            # print board
-            # mark nodes
+            res = 0
             for i in xrange(self.row_count):
                 for j in xrange(self.col_count):
-                    if board[i][j] == 'O':
-                        self.DFSMark(board, i, j)
+                    if grid[i][j] == '1':
+                        res += 1
+                        self.DFSMark(grid, i, j)
+            return res
     
-            # print board
-            # change 'O' to 'X', change 'Y' to 'O'
-            for i in xrange(self.row_count):
-                for j in xrange(self.col_count):
-                    if board[i][j] == 'O': board[i][j] = 'X'
-                    if board[i][j] == 'Y': board[i][j] = 'O'
-    
-        def DFSMark(self, board, i, j):
-            # out of bound
-            if i < 0 or i >= self.row_count or \
-                j < 0 or j >= self.col_count:
-                    return
-    
-            # If the element is 'Y', we won't keep going neither.
-            # This will save duplicate caculation
-            if board[i][j] != 'O':
+        def DFSMark(self, grid, i, j):
+            if i < 0 or i >= self.row_count \
+                or j < 0 or j >= self.col_count:
                 return
     
-            if self.hasAdjacentY(board, i, j):
-                board[i][j] = 'Y'
-                self.DFSMark(board, i-1, j)
-                self.DFSMark(board, i+1, j)
-                self.DFSMark(board, i, j-1)
-                self.DFSMark(board, i, j+1)
+            # stop digging, if not '1'
+            if grid[i][j] != '1':
+                return
     
-        def hasAdjacentY(self, board, i, j):
-            if i > 0 and board[i-1][j] == 'Y': return True
-            if i < self.row_count-1 and board[i+1][j] == 'Y': return True
-            if j > 0 and board[i][j-1] == 'Y': return True
-            if j < self.col_count-1 and board[i][j+1] == 'Y': return True
-            return False        
-    
-    s = Solution()
-    # board = [["O","X","X","O","X"],["X","O","O","X","O"],["X","O","X","O","X"],["O","X","O","O","O"],["X","X","O","X","O"]]
-    board = [["X","O","O","X","X","X","O","X","O","O"],["X","O","X","X","X","X","X","X","X","X"],["X","X","X","X","O","X","X","X","X","X"],["X","O","X","X","X","O","X","X","X","O"],["O","X","X","X","O","X","O","X","O","X"],["X","X","O","X","X","O","O","X","X","X"],["O","X","X","O","O","X","O","X","X","O"],["O","X","X","X","X","X","O","X","X","X"],["X","O","O","X","X","O","X","X","O","O"],["X","X","X","O","O","X","O","X","X","O"]]
-    s.solve(board)
+            grid[i][j] = 'X'
+            # mark four positions in a recursive way
+            self.DFSMark(grid, i-1, j)
+            self.DFSMark(grid, i+1, j)
+            self.DFSMark(grid, i, j-1)
+            self.DFSMark(grid, i, j+1)

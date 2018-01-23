@@ -1,4 +1,4 @@
-* Leetcode: Power of Two                                              :BLOG:Medium:
+* Leetcode: Power of Two                                        :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

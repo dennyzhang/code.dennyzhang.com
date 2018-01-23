@@ -37,7 +37,8 @@ Leave me comments, if you know how to solve.
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/number-of-islands
 class Solution(object):
-    ## Basic Ideas: Mark all adjacent 1 to X. Thus we can avoid counting one same islands multiple times.
+    ## Basic Ideas: Avoid duplicate counting.
+    ##   Mark all adjacent 1 to X. Thus we can avoid counting one the same island multiple times.
     ##
     ## Complexity: Time O(m*n), Space O(1)
     def numIslands(self, grid):

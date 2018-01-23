@@ -1,4 +1,4 @@
-# Leetcode: Judge Route Circle     :BLOG:Basic:
+# Leetcode: Judge Route Circle     :BLOG:Medium:
 
 
 ---
