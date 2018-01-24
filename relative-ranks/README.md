@@ -32,7 +32,7 @@ Leave me comments, if you have better ways to solve.
             for i in xrange(len(score_nums)):
                 m[score_nums[i]] = i
     
-            res = 
+            res = []
             for num in nums:
                 rank = m[num]
                 if rank == 0: element = 'Gold Medal'

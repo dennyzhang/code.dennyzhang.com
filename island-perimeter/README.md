@@ -1,4 +1,4 @@
-# Leetcode: Island Perimeter     :BLOG:Basic:
+# Leetcode: Island Perimeter     :BLOG:Medium:
 
 
 ---
@@ -25,3 +25,54 @@ Credits To: [leetcode.com](https://leetcode.com/problems/island-perimeter/descri
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/island-perimeter
+    ## Basic Idea:  Get how many 1 cells. Let's say it's m
+    ##              Find how many 1-1 pair which is adjacent, let's say it's n
+    ##              The result is 4*m-2*n
+    ##
+    ## Complexity: Time O(m*n), Space O(1)
+    class Solution(object):
+        def islandPerimeter(self, grid):
+            """
+            :type grid: List[List[int]]
+            :rtype: int
+            """
+            self.row_count = len(grid)
+            if self.row_count==0: return 0
+            self.col_count = len(grid[0])
+    
+            cell_count = 0
+            for i in xrange(self.row_count):
+                for j in xrange(self.col_count):
+                    if grid[i][j] == 1:
+                        cell_count += 1
+    
+            self.adjacent_count = 0
+            for i in xrange(self.row_count):
+                for j in xrange(self.col_count):
+                    if grid[i][j] == 1:
+                        self.DFSMark(grid, i, j)
+                        return 4*cell_count - self.adjacent_count
+    
+        def DFSMark(self, grid, i, j):
+            if self.isValidIndex(i, j) is False: return
+            if grid[i][j] != 1: return
+    
+            grid[i][j] = 2
+            self.adjacent_count += self.GetAdjacentCellCount(grid, i, j)
+            self.DFSMark(grid, i-1, j)
+            self.DFSMark(grid, i+1, j)
+            self.DFSMark(grid, i, j-1)
+            self.DFSMark(grid, i, j+1)
+    
+        def isValidIndex(self, i, j):
+            return not(i<0 or i>=self.row_count or \
+                        j<0 or j>=self.col_count)
+    
+        def GetAdjacentCellCount(self, grid, i, j):
+            count = 0
+            if self.isValidIndex(i-1, j) and grid[i-1][j] != 0: count += 1
+            if self.isValidIndex(i+1, j) and grid[i+1][j] != 0: count += 1
+            if self.isValidIndex(i, j-1) and grid[i][j-1] != 0: count += 1
+            if self.isValidIndex(i, j+1) and grid[i][j+1] != 0: count += 1
+            # print i, j, count
+            return count

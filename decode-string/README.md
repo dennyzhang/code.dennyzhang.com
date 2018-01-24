@@ -29,3 +29,58 @@ Credits To: [leetcode.com](https://leetcode.com/problems/decode-string/descripti
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/decode-string
+    ## Basic Ideas: Use stack
+    ##              number applies to the next string
+    ##              Keep pushing until we get a ']', then we pop
+    ##              Keep poping until we get a '['. Caculate the result and push again. 
+    ##                             Then check the next element in the input string.
+    ##
+    ##   Watch out: 12[a]2[bc]
+    ##
+    ## Complexity:
+    class Solution(object):
+        def decodeString(self, s):
+            """
+            :type s: str
+            :rtype: str
+            """
+            stack = []
+            prev_str = ''
+            for ch in s:
+                if ch == '[':
+                    if prev_str != '':
+                        stack.append(prev_str)
+                        prev_str = ''
+                    stack.append(ch)
+                elif ch == ']':
+                    element = prev_str
+                    prev_str = ''
+                    # pop until we get '['
+                    while stack[-1] != '[':
+                        v = stack.pop()
+                        if v.isdigit():
+                            element = element*int(v)
+                        else:
+                            element = "%s%s" % (v, element)
+                    stack.pop() # remove [
+                    while len(stack)!= 0 and stack[-1].isdigit():
+                        element = element*int(stack.pop())
+                    stack.append(element)
+                elif ch.isalpha():
+                    if prev_str != '' and prev_str.isdigit():
+                        stack.append(prev_str)
+                        prev_str = ''
+                    prev_str = '%s%s' % (prev_str, ch)
+                else:
+                    if prev_str != '' and prev_str.isalpha():
+                        stack.append(prev_str)
+                        prev_str = ''
+                    prev_str = '%s%s' % (prev_str, ch)
+                # print stack
+    
+            if prev_str != '': stack.append(prev_str)
+            return ''.join(stack)
+    
+    s = Solution()
+    print s.decodeString('2[abc]3[cd]ef') #abcabccdcdcdef
+    print s.decodeString('3[a2[c]]') # accaccacc
