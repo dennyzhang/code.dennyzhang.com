@@ -25,13 +25,30 @@ Credits To: [leetcode.com](https://leetcode.com/problems/island-perimeter/descri
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/island-perimeter
-    ## Basic Idea:  Get how many 1 cells. Let's say it's m
-    ##              Find how many 1-1 pair which is adjacent, let's say it's n
-    ##              The result is 4*m-2*n
-    ##
-    ## Complexity: Time O(m*n), Space O(1)
     class Solution(object):
         def islandPerimeter(self, grid):
+            """
+            :type grid: List[List[int]]
+            :rtype: int
+            """
+            row_count = len(grid)
+            if row_count==0: return 0
+            col_count = len(grid[0])
+            cell_count, neighbor_count = 0, 0
+            for i in xrange(row_count):
+                for j in xrange(col_count):
+                    if grid[i][j] == 1:
+                        cell_count += 1
+                        # only count the right and down
+                        if j != col_count-1 and grid[i][j+1] == 1: neighbor_count += 1
+                        if i != row_count-1 and grid[i+1][j] == 1: neighbor_count += 1
+            return cell_count*4 - 2*neighbor_count
+    
+        ## Basic Idea:  Get how many 1 cells. Let's say it's m
+        ##              Find how many 1-1 pair which is adjacent, let's say it's n
+        ##              The result is 4*m-2*n
+        ## Complexity: Time O(m*n), Space O(1)
+        def islandPerimeter_v1(self, grid):
             """
             :type grid: List[List[int]]
             :rtype: int
