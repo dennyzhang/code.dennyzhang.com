@@ -25,13 +25,11 @@ Given "paper", "title", return true.
 Note:
 You may assume both s and t have the same length.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/isomorphic-strings][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/isomorphic-strings/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/isomorphic-strings

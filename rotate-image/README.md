@@ -54,7 +54,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rotate-image/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/rotate-image
     ## Basic Ideas: Rotate circle by circle. From outer to inner layer.

@@ -17,7 +17,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/largest-number/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/largest-number
     ## Basic Ideas: Quick sort list with customized compare logic. Then Concat them as one.

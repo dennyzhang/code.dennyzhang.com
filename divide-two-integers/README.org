@@ -11,13 +11,11 @@ Divide two integers without using multiplication, division and mod operator.
 
 If it is overflow, return MAX_INT.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/divide-two-integers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/divide-two-integers/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/divide-two-integers

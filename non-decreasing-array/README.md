@@ -34,7 +34,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/non-decreasing-array/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/non-decreasing-array
     ## Basic Ideas: If we have two decreasing couples, we can't fix it with one change. Right?

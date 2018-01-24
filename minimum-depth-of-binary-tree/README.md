@@ -15,7 +15,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/minimum-depth-of-binary-tree
     # Definition for a binary tree node.

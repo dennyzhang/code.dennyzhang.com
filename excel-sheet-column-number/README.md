@@ -23,7 +23,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-number/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/excel-sheet-column-number
     ## Basic Ideas: Convert 26 bits

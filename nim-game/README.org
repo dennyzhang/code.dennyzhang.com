@@ -17,6 +17,8 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 
 Credits To: [[url-external:https://leetcode.com/problems/nim-game/description/][leetcode.com]]
 
+Leave me comments, if you have better ways to solve.
+
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/nim-game
 class Solution(object):
@@ -39,5 +41,3 @@ class Solution(object):
         ##  12 -> false
         return n%4 != 0
 #+END_SRC
-
-Leave me comments, if you know how to solve.

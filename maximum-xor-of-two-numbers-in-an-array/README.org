@@ -22,13 +22,11 @@ Output: 28
 Explanation: The maximum result is 5 ^ 25 = 28.
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-xor-of-two-numbers-in-an-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array

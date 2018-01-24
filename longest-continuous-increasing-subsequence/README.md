@@ -26,7 +26,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/longest-continuous-increasing-subsequence
     ## Basic Ideas: bigger_count: point to how many continuous increasing subsequence

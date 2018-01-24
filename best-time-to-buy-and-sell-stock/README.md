@@ -61,4 +61,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-se
                     max_profit = prices[i] - min_value
             return max_profit if max_profit > 0 else 0
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.

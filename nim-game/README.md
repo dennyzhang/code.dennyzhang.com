@@ -17,6 +17,8 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description/)  
 
+Leave me comments, if you have better ways to solve.  
+
     ## Blog link: http://brain.dennyzhang.com/nim-game
     class Solution(object):
         def canWinNim(self, n):
@@ -37,5 +39,3 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description/)
             ##  11 -> true
             ##  12 -> false
             return n%4 != 0
-
-Leave me comments, if you know how to solve.

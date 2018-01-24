@@ -42,7 +42,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/prime-number-of-set-bits-in-binary-representation
     ## Basic Ideas: max(L, R) <= 10^6. The count of bit will be smaller than 1+6*log2(10) = 20

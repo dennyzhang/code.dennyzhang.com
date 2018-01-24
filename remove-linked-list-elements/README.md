@@ -17,7 +17,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-linked-list-elements/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/remove-linked-list-elements
     ## Basic Ideas: The head might be removed, thus we need a dummy node

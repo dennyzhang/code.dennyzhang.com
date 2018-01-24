@@ -15,13 +15,11 @@ For example,
 Given 1->4->3->2->5->2 and x = 3,
 return 1->2->2->4->3->5.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/partition-list/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/partition-list

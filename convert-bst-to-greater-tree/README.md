@@ -25,7 +25,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/convert-bst-to-greater-tree/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/convert-bst-to-greater-tree
     ## Basic Ideas: Tree traversal: right, middle, left

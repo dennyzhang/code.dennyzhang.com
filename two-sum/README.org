@@ -23,7 +23,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 
 Credits To: [[url-external:https://leetcode.com/problems/two-sum/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/two-sum
 ## Basic Ideas: sort the array, and two pointers. 1. From left to right, 2. From right to left

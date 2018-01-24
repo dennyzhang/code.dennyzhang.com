@@ -18,13 +18,11 @@ A = [2,3,1,1,4], return true.
 
 A = [3,2,1,0,4], return false.
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/jump-game/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/jump-game

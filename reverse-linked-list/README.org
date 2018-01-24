@@ -14,13 +14,11 @@ click to show more hints.
 Hint:
 A linked list can be reversed either iteratively or recursively. Could you implement both?
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/reverse-linked-list/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 # Definition for singly-linked list.

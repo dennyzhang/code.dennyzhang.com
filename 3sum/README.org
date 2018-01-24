@@ -20,13 +20,11 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/3sum/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/3sum

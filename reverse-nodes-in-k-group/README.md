@@ -26,7 +26,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/reverse-nodes-in-k-group
     ## Basic Ideas: Two pointer(p1, p2) with distance of k

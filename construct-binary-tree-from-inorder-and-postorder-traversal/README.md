@@ -16,7 +16,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal
     ## Basic Ideas:

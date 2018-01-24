@@ -65,4 +65,4 @@ class Solution(object):
         return max_profit if max_profit > 0 else 0            
 #+END_SRC
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.

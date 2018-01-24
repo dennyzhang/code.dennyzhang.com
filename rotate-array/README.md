@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-array/descriptio
 
 Hint: Time O(n), Space O(1)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/rotate-array
     ## Basic Ideas:

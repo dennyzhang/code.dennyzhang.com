@@ -19,7 +19,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array
     ## Basic Ideas: Binary search: find the first negative

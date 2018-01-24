@@ -38,7 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/climbing-stairs/descrip
 
 Hint: Time O(n), Space O(1)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/climbing-stairs
     ## Basic Ideas: fibonacci

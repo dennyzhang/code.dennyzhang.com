@@ -25,6 +25,8 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)  
 
+Leave me comments, if you have better ways to solve.  
+
     ## Blog link: http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array
     ## Basic Ideas: traverse each item
     ## Complexity:
@@ -53,5 +55,3 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-all-numbers-disapp
                 if nums[i] != (i+1):
                     ret.append(i+1)
             return ret
-
-Leave me comments, if you know how to solve.

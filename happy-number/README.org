@@ -20,13 +20,11 @@ Example: 19 is a happy number
 12 + 02 + 02 = 1
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/happy-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/happy-number/description/][leetcode.com]]
 
-Leave me comments, if you know how to solve.
+Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/happy-number

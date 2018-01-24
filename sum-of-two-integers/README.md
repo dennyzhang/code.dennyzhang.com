@@ -16,7 +16,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-two-integers/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/sum-of-two-integers
     ## Basic Ideas: a xor b: get sum without carry. a & b >> 1 carry

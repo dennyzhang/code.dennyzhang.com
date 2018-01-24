@@ -27,7 +27,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tree
     ## Basic Ideas: Find the middle node

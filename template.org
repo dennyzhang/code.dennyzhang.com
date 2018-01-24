@@ -1,21 +1,21 @@
-* Leetcode: Relative Ranks                                     :BLOG:Amusing:
+* Leetcode: Template                                              :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     #misc
 :END:
 ---------------------------------------------------------------------
-Relative Ranks
+Identity number which appears exactly once.
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/relative-ranks][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/relative-ranks/description/][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/relative-ranks
+## Blog link: http://brain.dennyzhang.com/majority-element-ii
 
 #+END_SRC

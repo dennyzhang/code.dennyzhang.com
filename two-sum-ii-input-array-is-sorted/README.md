@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-ii-input-array-
 
 Hint: Time O(n), Space O(1). Moore voting  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/two-sum-ii-input-array-is-sorted
     ## Basic Ideas: two pointers. 1. From left to right. 2. From right to left

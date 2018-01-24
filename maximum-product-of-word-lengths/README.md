@@ -28,7 +28,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/maximum-product-of-word-lengths/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/maximum-product-of-word-lengths
     ## Basic Ideas: Convert each word into 26 bits binary.

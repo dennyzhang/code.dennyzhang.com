@@ -39,7 +39,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/toeplitz-matrix/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/toeplitz-matrix
     ## Basic Ideas: Check all m[i][j] with m[i+1][j+1]

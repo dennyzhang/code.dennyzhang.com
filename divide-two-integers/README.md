@@ -15,7 +15,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/divide-two-integers/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/divide-two-integers
     ## Basic Ideas: generate a list of [1, 2, 4, 8, 16...] and [d, 2d, 4d, 8d, ...]

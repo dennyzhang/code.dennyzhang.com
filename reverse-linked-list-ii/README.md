@@ -22,7 +22,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reverse-linked-list-ii/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/reverse-linked-list-ii
     ## Basic Ideas: Insert to a given pointer for (n-m) times.

@@ -27,7 +27,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/median-of-two-sorted-arrays
     ## Basic Ideas: merge 2 sorted array to one, find 2 values

@@ -20,6 +20,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-partitioning
 
 Hint: Time O(n), Space O(1). Moore voting  
 
-Leave me comments, if you know how to solve.  
+Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/palindrome-partitioning-ii
