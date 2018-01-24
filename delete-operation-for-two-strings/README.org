@@ -1,0 +1,30 @@
+* Leetcode: Delete Operation for Two Strings                     :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #deletesubsequence
+:END:
+---------------------------------------------------------------------
+Delete Operation for Two Strings
+---------------------------------------------------------------------
+Given two words word1 and word2, find the minimum number of steps required to make word1 and word2 the same, where in each step you can delete one character in either string.
+#+BEGIN_EXAMPLE
+Example 1:
+Input: "sea", "eat"
+Output: 2
+Explanation: You need one step to make "sea" to "ea" and another step to make "eat" to "ea".
+#+END_EXAMPLE
+Note:
+1. The length of given words won't exceed 500.
+- Characters in given words can only be lower-case letters.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-operation-for-two-strings][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/delete-operation-for-two-strings/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/delete-operation-for-two-strings
+
+#+END_SRC
