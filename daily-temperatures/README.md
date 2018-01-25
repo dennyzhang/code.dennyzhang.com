@@ -1,4 +1,4 @@
-# Leetcode: Daily Temperatures     :BLOG:Hard:
+# Leetcode: Daily Temperatures     :BLOG:Amusing:
 
 
 ---

@@ -30,7 +30,7 @@ Example 2:
 
     Input: 
     asteroids = [8, -8]
-    Output: 
+    Output: []
     Explanation: 
     The 8 and -8 collide exploding each other.
 
@@ -80,7 +80,7 @@ Leave me comments, if you have better ways to solve.
             :type asteroids: List[int]
             :rtype: List[int]
             """
-            stack = 
+            stack = []
             for num in asteroids:
                 element = num
                 if element > 0:
@@ -106,5 +106,5 @@ Leave me comments, if you have better ways to solve.
             return stack
     
     s = Solution()
-    print s.asteroidCollision([8, -8]) # 
+    print s.asteroidCollision([8, -8]) # []
     print s.asteroidCollision([-2,-1,1,2]) # [-2,-1,1,2]

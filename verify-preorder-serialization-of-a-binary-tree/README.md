@@ -60,7 +60,7 @@ Leave me comments, if you have better ways to solve.
             :type preorder: str
             :rtype: bool
             """
-            stack = 
+            stack = []
             for element in preorder.split(','):
                 if element != '#':
                     stack.append(element)
@@ -79,5 +79,3 @@ Leave me comments, if you have better ways to solve.
                     else:
                         stack.append(element)
             return stack == ['#']
-
----

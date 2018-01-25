@@ -1,81 +1,53 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Exclusive Time of Functions     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Exclusive Time of Functions  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Similar Problems:  
+-   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+---
 
-A partially filled sudoku which is valid.  
+Given the running logs of n functions that are executed in a nonpreemptive single threaded CPU, find the exclusive time of these functions.  
+
+Each function has a unique id, start from 0 to n-1. A function may be called recursively or by another function.  
+
+A log is a string has this format : function\_id:start\_or\_end:timestamp. For example, "0:start:0" means function 0 starts from the very beginning of time 0. "0:end:0" means function 0 ends to the very end of time 0.  
+
+Exclusive time of a function is defined as the time spent within this function, the time spent by calling other functions should not be considered as this function's exclusive time. You should return the exclusive time of each function sorted by their function id.  
+
+    Example 1:
+    Input:
+    n = 2
+    logs = 
+    ["0:start:0",
+     "1:start:2",
+     "1:end:5",
+     "0:end:6"]
+    Output:[3, 4]
+    Explanation:
+    Function 0 starts at time 0, then it executes 2 units of time and reaches the end of time 1. 
+    Now function 0 calls function 1, function 1 starts at time 2, executes 4 units of time and end at time 5.
+    Function 0 is running again at time 6, and also end at the time 6, thus executes 1 unit of time. 
+    So function 0 totally execute 2 + 1 = 3 units of time, and function 1 totally execute 4 units of time.
 
 Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+1.  Input logs will be sorted by timestamp, NOT log id.
+2.  Your output should be sorted by function id, which means the 0th element of your output corresponds to the exclusive time of function 0.
+3.  Two functions won't start or end at the same time.
+4.  Functions could be called recursively, and will always end.
+5.  1 <= n <= 100
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/exclusive-time-of-functions)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/exclusive-time-of-functions/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
-    ##
-    ## Complexity: Time O(1), Space O(1)
-    class Solution(object):
-        def isValidSudoku(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: bool
-            """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    ## Blog link: http://brain.dennyzhang.com/exclusive-time-of-functions
+
+---
