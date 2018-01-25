@@ -44,5 +44,40 @@ Credits To: [leetcode.com](https://leetcode.com/problems/verify-preorder-seriali
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree
+    ## Basic Ideas: Stack
+    ##      If number, push.
+    ##      If #, check stack head. 
+    ##         If empty, return false; 
+    ##         If #, the next element should be a node value. If not, return False
+    ##         Pop them both. Keep checking, then push #
+    ##      At the end, stack should have only one element. And it's #
+    ##
+    ##  Sample data: "#"
+    ## Complexity: Time O(n), Space O(n)
+    class Solution(object):
+        def isValidSerialization(self, preorder):
+            """
+            :type preorder: str
+            :rtype: bool
+            """
+            stack = 
+            for element in preorder.split(','):
+                if element != '#':
+                    stack.append(element)
+                else:
+                    while True:
+                        if len(stack) <= 1:
+                            stack.append('#')
+                            break
+                        if stack[-1] != '#':
+                            stack.append('#')
+                            break
+                        if stack[-1] == '#' and stack[-2] == '#': return False
+                        # pop #, then pop value. Then plan to insert another '#'
+                        stack.pop()
+                        stack.pop()
+                    else:
+                        stack.append(element)
+            return stack == ['#']
 
 ---

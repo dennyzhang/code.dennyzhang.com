@@ -41,14 +41,14 @@ Note:
 - Functions could be called recursively, and will always end.
 - 1 <= n <= 100
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/exclusive-time-of-functions][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/exclusive-time-of-functions/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/majority-element-ii
+## Blog link: http://brain.dennyzhang.com/exclusive-time-of-functions
 
 #+END_SRC
 ---------------------------------------------------------------------
