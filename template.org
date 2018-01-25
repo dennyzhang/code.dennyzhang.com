@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Identity number which appears exactly once.
 ---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[http://brain.dennyzhang.com/tag/basic][#basic]]
+---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
