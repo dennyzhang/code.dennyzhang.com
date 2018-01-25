@@ -42,10 +42,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/mini-parser/description
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/mini-parser
-    ## Basic Ideas: Stack
-    ##              Whenever we found ']', we keep poping until we find a '['
-    ##
-    ## Complexity:
     # """
     # This is the interface that allows for creating nested lists.
     # You should not implement it, or speculate about its implementation
@@ -88,16 +84,57 @@ Leave me comments, if you have better ways to solve.
     #        Return None if this NestedInteger holds a single integer
     #        :rtype List[NestedInteger]
     #        """
-    
     class Solution(object):
+        ## Basic Ideas: Stack
+        ##     Whenever we found '[', DO NOT push. 
+        ##         We initialize a empty NestedInteger as place holder
+        ##     Whenever we found ']', we combine the last 2 place holers
+        ##     Whenever we found digits/'-', look ahead to get what we need. 
+        ##               Then construct NestedInteger, then combine it into last place holder
+        ##
+        ## Complexity: Time O(n), Space O(n)
         def deserialize(self, s):
             """
             :type s: str
             :rtype: NestedInteger
             """
-            if s.find('[') == -1:
-                res = NestedInteger(int(s))
-                return res
+            if len(s) == 0: return None
+            if s.find('[') == -1: return NestedInteger(int(s))
+    
+            stack = 
+            for word in s.split(','):
+                i = 0
+                while i< len(word):
+                    if word[i] == '[':
+                        stack.append(NestedInteger())
+                        i += 1
+                    elif word[i] == ']':
+                        n1 = stack.pop()
+                        n2 = stack.pop()
+                        stack.append(n2+n1)
+                        i += 1
+                    else:
+                        # keep looking ahead until we get an non-digits
+                        string = ''
+                        while i<len(word) and (word[i].isdigit() or word[i] == '-'):
+                            string = "%s%s" % (string, word[i])
+                            i += 1
+                        n = stack.pop()
+                        stack.append(n + NestedInteger(int(string)))
+            return stack[0]
+    
+        ## Basic Ideas: Stack
+        ##              Whenever we found '[', push
+        ##              Whenever we found ']', we keep poping until we find a '['
+        ##
+        ## Complexity: Time O(n), Space O(n)
+        def deserialize(self, s):
+            """
+            :type s: str
+            :rtype: NestedInteger
+            """
+            if len(s) == 0: return None
+            if s.find('[') == -1: return NestedInteger(int(s))
     
             stack = 
             for word in s.split(','):
@@ -112,6 +149,7 @@ Leave me comments, if you have better ways to solve.
                         if num_str != '':
                             stack.append(NestedInteger(int(num_str)))
                             num_str = ''
+                        # The sequence we get is right from left, but we need left from right.
                         l = 
                         while True:
                             element = stack.pop()
@@ -119,11 +157,14 @@ Leave me comments, if you have better ways to solve.
                                 break
                             l.insert(0, element)
                         n = NestedInteger() 
-                        for element in l:
-                            n.add(element)
+                        for element in l: n.add(element)
                         stack.append(n)
                 if num_str != '':
                     stack.append(NestedInteger(int(num_str)))
             return stack[0]
 
 ---
+
+Similar Problems:  
+-   [Leetcode: Flatten Nested List Iterator](http://brain.dennyzhang.com/flatten-nested-list-iterator)
+-   [Review: Stack Problems](http://brain.dennyzhang.com/review-stack)

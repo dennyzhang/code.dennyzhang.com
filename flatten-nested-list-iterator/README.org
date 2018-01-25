@@ -155,3 +155,7 @@ class NestedIterator(object):
 # i, v = NestedIterator(nestedList), []
 # while i.hasNext(): v.append(i.next())
 #+END_SRC
+---------------------------------------------------------------------
+Similar Problems:
+- [[http://brain.dennyzhang.com/mini-parser][Leetcode: Mini Parser]]
+- [[http://brain.dennyzhang.com/review-stack][Review: Stack Problems]]
