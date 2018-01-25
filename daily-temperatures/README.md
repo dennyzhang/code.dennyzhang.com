@@ -1,81 +1,53 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Daily Temperatures     :BLOG:Hard:
 
 
 ---
 
-Identity number which appears exactly once.  
+Daily Temperatures  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Similar Problems:  
+-   [Leetcode: Leetcode: Next Greater Element I](http://brain.dennyzhang.com/next-greater-element-i)
+-   Tag: [#monotonestack](http://brain.dennyzhang.com/tag/monotonestack)
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+---
 
-A partially filled sudoku which is valid.  
+Given a list of daily temperatures, produce a list that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.  
 
-Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+For example, given the list temperatures = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100].  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/daily-temperatures)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/daily-temperatures/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/daily-temperatures
+    ## Basic Ideas: Monotonous stack can help us find first largest element in O(n) time complexity.
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ##              Descending stack: find the next bigger nubmer for each element
+    ##
+    ##              For any given number, if we haven't met the bigger number. We push it to the stack
+    ##              If we pop out one element, we do find a bigger number than this element.
+    ##
+    ## Complexity: Time O(n), Space O(n)
     class Solution(object):
-        def isValidSudoku(self, board):
+        def dailyTemperatures(self, temperatures):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type temperatures: List[int]
+            :rtype: List[int]
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+            length = len(temperatures)
+            res = [0]*length
+            stack = []
+            for i in xrange(length):
+                # If current number is bigger, we solved the previous puzzles
+                while len(stack) != 0 and temperatures[i] > temperatures[stack[-1]]:
+                    k = stack.pop()
+                    # t[i] is the next bigger number than t[k]
+                    res[k] = i-k
+                stack.append(i)
+            return res

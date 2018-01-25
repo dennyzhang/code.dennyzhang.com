@@ -1,4 +1,4 @@
-* Leetcode: Daily Temperatures                                              :BLOG:Hard:
+* Leetcode: Daily Temperatures                                              :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

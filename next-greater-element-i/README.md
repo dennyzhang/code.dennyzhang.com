@@ -1,9 +1,15 @@
-# Leetcode: Next Greater Element I     :BLOG:Basic:
+# Leetcode: Next Greater Element I     :BLOG:Medium:
 
 
 ---
 
 Next Greater Element I  
+
+---
+
+Similar Problems:  
+-   [Leetcode: Daily Temperatures](http://brain.dennyzhang.com/daily-temperatures)
+-   Tag: [#monotonestack](http://brain.dennyzhang.com/tag/monotonestack)
 
 ---
 
@@ -37,3 +43,37 @@ Credits To: [leetcode.com](https://leetcode.com/problems/next-greater-element-i/
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/next-greater-element-i
+    ## Basic Ideas: Descending stack
+    ##
+    ## Complexity: Time O(n), Space O(n)
+    class Solution(object):
+        def nextGreaterElement(self, findNums, nums):
+            """
+            :type findNums: List[int]
+            :type nums: List[int]
+            :rtype: List[int]
+            """
+            length = len(nums)
+            index_list = [-1]*length
+            stack = []
+            for i in xrange(length):
+                # If nums[i] is bigger than the top of stack, 
+                #  it's the next bigger number of the stack top
+                while len(stack) != 0 and nums[i]>nums[stack[-1]]:
+                    k = stack.pop()
+                    index_list[k] = i
+                stack.append(i)
+    
+            # get the result
+            res = []
+            m = {} # the length of nums2 won't exceed 1000
+            for i in xrange(length):
+                m[nums[i]] = i
+            for num in findNums:
+                index = m[num]
+                next_big_index = index_list[index]
+                if next_big_index != -1:
+                    res.append(nums[next_big_index])
+                else:
+                    res.append(-1)
+            return res

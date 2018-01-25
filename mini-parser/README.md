@@ -9,7 +9,7 @@ Mini Parser
 
 Given a nested list of integers represented as a string, implement a parser to deserialize it.  
 
-Each element is either an integer, or a list -- whose elements may also be integers or other lists.  
+Each element is either an integer, or a list &#x2013; whose elements may also be integers or other lists.  
 
 Note: You may assume that the string is well-formed:  
 
@@ -101,7 +101,7 @@ Leave me comments, if you have better ways to solve.
             if len(s) == 0: return None
             if s.find('[') == -1: return NestedInteger(int(s))
     
-            stack = 
+            stack = []
             for word in s.split(','):
                 i = 0
                 while i< len(word):
@@ -136,7 +136,7 @@ Leave me comments, if you have better ways to solve.
             if len(s) == 0: return None
             if s.find('[') == -1: return NestedInteger(int(s))
     
-            stack = 
+            stack = []
             for word in s.split(','):
                 num_str = ''
                 for ch in word:
@@ -150,7 +150,7 @@ Leave me comments, if you have better ways to solve.
                             stack.append(NestedInteger(int(num_str)))
                             num_str = ''
                         # The sequence we get is right from left, but we need left from right.
-                        l = 
+                        l = []
                         while True:
                             element = stack.pop()
                             if element == '[':

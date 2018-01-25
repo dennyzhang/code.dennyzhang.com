@@ -149,3 +149,9 @@ Leave me comments, if you have better ways to solve.
     # Your NestedIterator object will be instantiated and called as such:
     # i, v = NestedIterator(nestedList), []
     # while i.hasNext(): v.append(i.next())
+
+---
+
+Similar Problems:  
+-   [Leetcode: Mini Parser](http://brain.dennyzhang.com/mini-parser)
+-   [Review: Stack Problems](http://brain.dennyzhang.com/review-stack)

@@ -7,6 +7,12 @@ Given numRows, generate the first numRows of Pascal's triangle.
 
 ---
 
+Similar Problems:  
+-   [Leetcode: Pascal's Triangle II](http://brain.dennyzhang.com/pascals-triangle-ii)
+-   All basic problems: [basic](http://brain.dennyzhang.com/category/basic), [codetemplate](http://brain.dennyzhang.com/tag/codetemplate)
+
+---
+
 Given numRows, generate the first numRows of Pascal's triangle.  
 
     For example, given numRows = 5,

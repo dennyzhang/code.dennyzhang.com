@@ -1,81 +1,58 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Next Greater Element II     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Next Greater Element II  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Similar Problems:  
+-   [Leetcode: Leetcode: Next Greater Element I](http://brain.dennyzhang.com/next-greater-element-i)
+-   Tag: [#monotonestack](http://brain.dennyzhang.com/tag/monotonestack)
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+---
 
-A partially filled sudoku which is valid.  
+Given a circular array (the next element of the last element is the first element of the array), print the Next Greater Number for every element. The Next Greater Number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, output -1 for this number.  
 
-Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+    Example 1:
+    Input: [1,2,1]
+    Output: [2,-1,2]
+    Explanation: The first 1's next greater number is 2; 
+    The number 2 can't find next greater number; 
+    The second 1's next greater number needs to search circularly, which is also 2.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Note: The length of given array won't exceed 10000.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/next-greater-element-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/next-greater-element-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/next-greater-element-ii
+    ## Basic Idea: Descending stack
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ## Complexity: Time O(n), Space O(n)
     class Solution(object):
-        def isValidSudoku(self, board):
+        def nextGreaterElements(self, nums):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type nums: List[int]
+            :rtype: List[int]
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+            length = len(nums)
+            stack = []
+            res = [None]*length
+            for i in xrange(length*2):
+                i = i % length
+                # if current element is bigger, it's the target of previous undecided elements
+                while len(stack) != 0 and nums[i] > nums[stack[-1]]:
+                    k = stack.pop()
+                    res[k] = nums[i]
+                # No need to check if already examined
+                if res[i] is None:
+                    stack.append(i)
     
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+            for i in xrange(length):
+                if res[i] is None: res[i] = -1
+            return res
