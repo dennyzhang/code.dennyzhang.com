@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Pascal's Triangle II
 ---------------------------------------------------------------------
+Similar Problems:
+- [[http://brain.dennyzhang.com/pascals-triangle][Leetcode: Pascal's Triangle]]
+---------------------------------------------------------------------
 iven an index k, return the kth row of the Pascal's triangle.
 
 For example, given k = 3,

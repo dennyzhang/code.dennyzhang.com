@@ -19,3 +19,4 @@ Leave me comments, if you have better ways to solve.
 ## Blog link: http://brain.dennyzhang.com/majority-element-ii
 
 #+END_SRC
+---------------------------------------------------------------------

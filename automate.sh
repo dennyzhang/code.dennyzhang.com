@@ -5,7 +5,7 @@ function refresh_link() {
         dirname=$(basename $(dirname $f))
         if ! grep "brain.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update blog url for $f"
-            sed -ie "s/http:\/\/brain.dennyzhang.com\/.*/http:\/\/brain.dennyzhang.com\/$dirname/g" $f
+            sed -ie "s/Blog link: http:\/\/brain.dennyzhang.com\/.*/Blog link: http:\/\/brain.dennyzhang.com\/$dirname/g" $f
             rm -rf $dirname/README.orge
         fi
 
