@@ -21,6 +21,10 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/kth-largest-element-in-an-array
+    ## Basic Ideas: heap
+    ##
+    ## Complexity: Time O(n*log(n)), Space O(n)
+    import heapq
     class Solution(object):
         def findKthLargest(self, nums, k):
             """
@@ -28,25 +32,9 @@ Leave me comments, if you have better ways to solve.
             :type k: int
             :rtype: int
             """
-            max_list = [None]*k
-            for num in nums:
-                # find where to insert
-                insert_index = -1
-                for i in range(0, k):
-                    max_value = max_list[i]
-                    if max_value is None:
-                        insert_index = i
-                        break
-                    elif max_value == num:
-                        insert_index = i
-                        break
-                    elif max_value < num:
-                        insert_index = i
-                        break
-                # insert
-                if insert_index != -1:
-                    for i in range(k-1, insert_index, -1):
-                        max_list[i] = max_list[i-1]
-                    max_list[insert_index] = num
-            # Get the value
-            return max_list[k-1]
+            q = 
+            for num in nums: heapq.heappush(q, num)
+            return heapq.nlargest(k, q)[-1]
+    
+    s = Solution()
+    print s.findKthLargest([3,2,1,5,6,4], 2) # 5
