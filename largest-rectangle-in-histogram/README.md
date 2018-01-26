@@ -1,81 +1,66 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
+# Leetcode: Largest Rectangle in Histogram     :BLOG:Hard:
 
 
 ---
 
-Identity number which appears exactly once.  
+Largest Rectangle in Histogram  
 
 ---
 
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
+Similar Problems:  
+-   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
 
-The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  
+---
 
-A partially filled sudoku which is valid.  
+Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.  
 
-Note:  
-A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
+[![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/histogram.png)](Largest Rectangle in Histogram)  
+Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+[![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/histogram_area.png)](Largest Rectangle in Histogram)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
+The largest rectangle is shown in the shaded area, which has area = 10 unit.  
+
+For example,  
+Given heights = [2,1,5,6,2,3],  
+return 10.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-rectangle-in-histogram)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-sudoku
-    ## Basic Ideas: Check each row, each colum and each section
-    ##              When we check, we use an array of 10
+    ## Blog link: http://brain.dennyzhang.com/largest-rectangle-in-histogram
+    ## Basic Ideas: Monotone stack
+    ##              For each element, find the next non-greater value
+    ##     Key Questions: How to get the left?
+    ##                    What if right is not found, any special logic?
     ##
-    ## Complexity: Time O(1), Space O(1)
+    ## Complexity:
     class Solution(object):
-        def isValidSudoku(self, board):
+        def largestRectangleArea(self, heights):
             """
-            :type board: List[List[str]]
-            :rtype: bool
+            :type heights: List[int]
+            :rtype: int
             """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+            length = len(heights)
+            next_smallers = [-1] * length
+            stack = 
+            max_width = 0
+            # pad with fake items for the end
+            for i in xrange(length+1):
+                current = heights[i] if i != length else -1
+                # When heights[i] is not greater than the stack top, it's the target of stack top
+                while len(stack) != 0 and  current <= heights[stack[-1]]:
+                    k = stack.pop()
+                    h = heights[k]
+                    left = -1 if len(stack) == 0 else stack[-1]
+                    left = left + 1
+                    right = i
+                    max_width = max(max_width, h*(right-left))
+                stack.append(i)
+            return max_width
     
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
-    
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    s = Solution()
+    print s.largestRectangleArea([2, 1, 2]) # 3

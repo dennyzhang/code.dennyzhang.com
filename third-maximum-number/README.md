@@ -38,46 +38,29 @@ Credits To: [leetcode.com](https://leetcode.com/problems/third-maximum-number/de
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/third-maximum-number
+    ## Basic Ideas: minheap
+    ##
+    ## Complexity: O(n), Space O(1)
+    import heapq
     class Solution(object):
         def thirdMax(self, nums):
             """
             :type nums: List[int]
             :rtype: int
             """
-            count = 3
-            max_list = [None] * count
+            q = []
             for num in nums:
-                # Find where to insert
-                insert_index = -1
-                for i in range(0, count):
-                    max_value = max_list[i]
-                    if max_value is None:
-                        insert_index = i
-                        break
-                    elif num == max_value:
-                        insert_index = -1
-                        break
-                    elif num > max_value:
-                        insert_index = i
-                        break
+                if num not in q:
+                    heapq.heappush(q, num)
+                if len(q) > 3: heapq.heappop(q)
     
-                # insert the value
-                if insert_index != -1:
-                    for i in range(count-1, insert_index, -1):
-                        max_list[i] = max_list[i-1]
-                    max_list[insert_index] = num
-    
-            ret = None
-            # get status
-            if max_list[2] is not None:
-                ret = max_list[2]
-            else:
-                ret = max_list[0]
-            # print ret
-            return ret
+            l = []
+            while len(q) != 0:
+                l.insert(0, heapq.heappop(q))
+            return l[0] if len(l) != 3 else l[-1]
     
     s = Solution()
-    s.thirdMax([1, 3])
-    s.thirdMax([1, 2])
-    s.thirdMax([3, 2, 1])
-    s.thirdMax([2, 2, 3, 1])
+    print s.thirdMax([1, 2]) # 2
+    print s.thirdMax([3, 2, 1]) # 1
+    print s.thirdMax([1, 1, 2]) # 2
+    print s.thirdMax([1,2,2,5,3,5]) # 2

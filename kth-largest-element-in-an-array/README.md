@@ -32,7 +32,7 @@ Leave me comments, if you have better ways to solve.
             :type k: int
             :rtype: int
             """
-            q = 
+            q = []
             for num in nums: heapq.heappush(q, num)
             return heapq.nlargest(k, q)[-1]
     
