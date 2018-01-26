@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-the-difference/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/find-the-difference
+    ## Blog link: https://brain.dennyzhang.com/find-the-difference
     class Solution(object):
         def findTheDifference(self, s, t):
             """

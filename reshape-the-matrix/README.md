@@ -48,7 +48,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reshape-the-matrix/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/reshape-the-matrix
+    ## Blog link: https://brain.dennyzhang.com/reshape-the-matrix
     ## Baisc Ideas:  If r*c != count of original matrix, we can't reshape it.
     ##               Trasverse the original matrix, and use index as a counter.
     ##               (i2, j2) is the position of the new matrix

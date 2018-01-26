@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array
+    ## Blog link: https://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array
     ## Basic Ideas: Binary search: find the first negative
     ##              Compare all values with the first element
     ##              If bigger, consider it as 1. Otherwise -1

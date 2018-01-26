@@ -19,7 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ugly-number/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/ugly-number
+    ## Blog link: https://brain.dennyzhang.com/ugly-number
     class Solution(object):
         def isUgly(self, num):
             """

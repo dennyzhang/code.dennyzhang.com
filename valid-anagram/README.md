@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-anagram/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-anagram
+    ## Blog link: https://brain.dennyzhang.com/valid-anagram
     class Solution(object):
         def isAnagram(self, s, t):
             """

@@ -19,7 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/remove-duplicates-from-sorted-list
+    ## Blog link: https://brain.dennyzhang.com/remove-duplicates-from-sorted-list
     ## Basic Ideas: p points to the last processed node
     ## Complexity:
     # Definition for singly-linked list.

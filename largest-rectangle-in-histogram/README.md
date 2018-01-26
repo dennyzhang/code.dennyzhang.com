@@ -8,16 +8,17 @@ Largest Rectangle in Histogram
 ---
 
 Similar Problems:  
--   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
+-   [Leetcode: Maximal Rectangle](https://brain.dennyzhang.com/maximal-rectangle)
+-   Tag: [#monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
 
 ---
 
 Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.  
 
-[![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/histogram.png)](Largest Rectangle in Histogram)  
+![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/histogram.png)  
 Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].  
 
-[![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/histogram_area.png)](Largest Rectangle in Histogram)  
+![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/histogram_area.png)  
 
 The largest rectangle is shown in the shaded area, which has area = 10 unit.  
 
@@ -31,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/largest-rectangle-in-hi
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/largest-rectangle-in-histogram
+    ## Blog link: https://brain.dennyzhang.com/largest-rectangle-in-histogram
     ## Basic Ideas: Monotone stack
     ##              For each element, find the next non-greater value
     ##     Key Questions: How to get the left?
@@ -46,7 +47,7 @@ Leave me comments, if you have better ways to solve.
             """
             length = len(heights)
             next_smallers = [-1] * length
-            stack = 
+            stack = []
             max_width = 0
             # pad with fake items for the end
             for i in xrange(length+1):

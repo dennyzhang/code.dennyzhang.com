@@ -8,7 +8,7 @@ Basic Calculator III
 ---
 
 Similar Problems:  
--   Tag: [#stack](http://brain.dennyzhang.com/tag/stack)
+-   Tag: [#stack](https://brain.dennyzhang.com/tag/stack)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/basic-calculator-iii/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/basic-calculator-iii
+    ## Blog link: https://brain.dennyzhang.com/basic-calculator-iii
     ## Basic Ideas: +- yield to */
     ##
     ##           When we found one operator as +/, look for the next operator
@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
             :type s: str
             :rtype: int
             """
-            stack = 
+            stack = []
             s = s.replace(' ', '')
             i, length = 0, len(s)
             while i<length:
@@ -89,7 +89,7 @@ Leave me comments, if you have better ways to solve.
             i = 0
             length = len(s)
             # solve */
-            stack = 
+            stack = []
             while i<length:
                 if s[i].isdigit():
                     # get the num

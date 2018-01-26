@@ -8,7 +8,7 @@ Pascal's Triangle II
 ---
 
 Similar Problems:  
--   [Leetcode: Pascal's Triangle](http://brain.dennyzhang.com/pascals-triangle)
+-   [Leetcode: Pascal's Triangle](https://brain.dennyzhang.com/pascals-triangle)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/pascals-triangle-ii/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/pascals-triangle-ii
+    ## Blog link: https://brain.dennyzhang.com/pascals-triangle-ii
     class Solution(object):
         def getRow(self, rowIndex):
             """

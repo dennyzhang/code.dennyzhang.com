@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-number/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/palindrome-number
+    ## Blog link: https://brain.dennyzhang.com/palindrome-number
     ## Basic Ideas:  Generate a new integer Y from right digit to left digit
     ##               Then compare it with X
     ##         1234321: 1 -> 12 -> 13 -> 134 ...

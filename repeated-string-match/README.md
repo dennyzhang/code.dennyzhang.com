@@ -22,7 +22,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/repeated-string-match/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/repeated-string-match
+    ## Blog link: https://brain.dennyzhang.com/repeated-string-match
     ## Basic Ideas: Consider lengths of A and B are len_a, len_b
     ##              Let's say a match exists. k = len_b/len_a
     ##              Then we need to repeat A either k times, k+1 times or k+2 times

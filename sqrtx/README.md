@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sqrtx/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/sqrtx
+    ## Blog link: https://brain.dennyzhang.com/sqrtx
     ## Basic Ideas: Binary search
     ##              Check [1^2, 2^2, 3^2, ... n^2]
     ## Complexity: Time O(log(n)), Space O(1)

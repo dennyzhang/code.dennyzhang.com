@@ -8,7 +8,7 @@ Maximal Square
 ---
 
 Similar Problems:  
--   Tag: [#dynamicprogramming](http://brain.dennyzhang.com/tag/dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -29,4 +29,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximal-square/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/maximal-square
+    ## Blog link: https://brain.dennyzhang.com/maximal-square

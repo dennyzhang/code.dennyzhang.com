@@ -27,4 +27,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-length-of-repea
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/maximum-length-of-repeated-subarray
+    ## Blog link: https://brain.dennyzhang.com/maximum-length-of-repeated-subarray

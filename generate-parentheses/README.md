@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/generate-parentheses/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/generate-parentheses
+    ## Blog link: https://brain.dennyzhang.com/generate-parentheses
     ## Basic Ideas: Use counter to make sure it's well-formed paretheses
     ##       Use BFS to generate the result
     ##       1. For each character, we can only print (, or )

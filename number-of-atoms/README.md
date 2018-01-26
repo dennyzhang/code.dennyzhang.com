@@ -52,4 +52,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-atoms/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/number-of-atoms
+    ## Blog link: https://brain.dennyzhang.com/number-of-atoms

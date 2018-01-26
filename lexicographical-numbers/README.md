@@ -19,7 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lexicographical-numbers
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/lexicographical-numbers
+    ## Blog link: https://brain.dennyzhang.com/lexicographical-numbers
     class Solution(object):
         def lexicalOrder(self, n):
             """

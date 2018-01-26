@@ -41,7 +41,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/mini-parser/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/mini-parser
+    ## Blog link: https://brain.dennyzhang.com/mini-parser
     # """
     # This is the interface that allows for creating nested lists.
     # You should not implement it, or speculate about its implementation
@@ -166,5 +166,5 @@ Leave me comments, if you have better ways to solve.
 ---
 
 Similar Problems:  
--   [Leetcode: Flatten Nested List Iterator](http://brain.dennyzhang.com/flatten-nested-list-iterator)
--   [Review: Stack Problems](http://brain.dennyzhang.com/review-stack)
+-   [Leetcode: Flatten Nested List Iterator](https://brain.dennyzhang.com/flatten-nested-list-iterator)
+-   [Review: Stack Problems](https://brain.dennyzhang.com/review-stack)

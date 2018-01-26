@@ -21,4 +21,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-size-subarray-s
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/minimum-size-subarray-sum
+    ## Blog link: https://brain.dennyzhang.com/minimum-size-subarray-sum

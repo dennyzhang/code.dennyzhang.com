@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-absolute-differ
 
 Leave me comments, if you have better ways to solve.  
 
+    ## Blog link: https://brain.dennyzhang.com/minimum-absolute-difference-in-bst
+    ## Basic Ideas: In-order trasveral
     ##
     # Definition for a binary tree node.
     # class TreeNode(object):
@@ -41,8 +43,6 @@ Leave me comments, if you have better ways to solve.
     #         self.right = None
     
     class Solution(object):
-        ## Blog link: http://brain.dennyzhang.com/minimum-absolute-difference-in-bst
-    ## Basic Ideas: In-order trasveral
         ##
         ## Complexity: Time O(n), Space O(h) # h: height
         def getMinimumDifference(self, root):
@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
                         node = node.left
             return res
     
-        ## Blog link: http://brain.dennyzhang.com/minimum-absolute-difference-in-bst
+        ## Blog link: https://brain.dennyzhang.com/minimum-absolute-difference-in-bst
     ## Basic Ideas:
         ##         For the target pair, it won't be in two sub-trees.
         ##         So it will be parent-child.

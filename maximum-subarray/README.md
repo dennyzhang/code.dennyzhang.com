@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-subarray/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/maximum-subarray
+    ## Blog link: https://brain.dennyzhang.com/maximum-subarray
     class Solution(object):
         def maxSubArray(self, nums):
             """

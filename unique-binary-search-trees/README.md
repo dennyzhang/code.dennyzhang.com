@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-binary-search-tr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/unique-binary-search-trees
+    ## Blog link: https://brain.dennyzhang.com/unique-binary-search-trees
     #!/usr/bin/env python
     ## Basic Ideas: dynamic programming
     ##       Pitfalls: try to compare the values. This direction will make things very complicated

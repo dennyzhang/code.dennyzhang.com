@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/summary-ranges/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/summary-ranges
+    ## Blog link: https://brain.dennyzhang.com/summary-ranges
     ## Basic Ideas: 2 pointer
     ## Complexity: Time O(n), Space O(1)
     ## Assumptions:

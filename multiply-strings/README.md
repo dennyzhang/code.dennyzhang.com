@@ -22,4 +22,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/multiply-strings/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/multiply-strings
+    ## Blog link: https://brain.dennyzhang.com/multiply-strings

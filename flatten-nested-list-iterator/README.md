@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flatten-nested-list-ite
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/flatten-nested-list-iterator
+    ## Blog link: https://brain.dennyzhang.com/flatten-nested-list-iterator
     ## Basic Ideas:
     ##            Since it's an iterator, we can't change existing list
     ##            Here we assume, we don't have empty values like this: [1, 2, [], [2, 3]]
@@ -153,5 +153,5 @@ Leave me comments, if you have better ways to solve.
 ---
 
 Similar Problems:  
--   [Leetcode: Mini Parser](http://brain.dennyzhang.com/mini-parser)
--   [Review: Stack Problems](http://brain.dennyzhang.com/review-stack)
+-   [Leetcode: Mini Parser](https://brain.dennyzhang.com/mini-parser)
+-   [Review: Stack Problems](https://brain.dennyzhang.com/review-stack)

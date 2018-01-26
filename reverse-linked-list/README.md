@@ -27,7 +27,7 @@ Leave me comments, if you have better ways to solve.
     #         self.next = None
     
     class Solution(object):
-        ## Blog link: http://brain.dennyzhang.com/reverse-linked-list
+        ## Blog link: https://brain.dennyzhang.com/reverse-linked-list
     ## Basic Ideas: recursive way
         ##                 def myReverseList(self, head_processed, head_unprocessed)
         ## Complexity: Time O(n), Space O(1)
@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
             head_unprocessed.next = head_processed
             return self.myReverseList(head_unprocessed, q)
     
-        ## Blog link: http://brain.dennyzhang.com/reverse-linked-list
+        ## Blog link: https://brain.dennyzhang.com/reverse-linked-list
     ## Basic Ideas: Since the head will be changed, add a dummy node
         ##              p points to the next node to be reversed
         ##              take p and insert to dummyNode.next

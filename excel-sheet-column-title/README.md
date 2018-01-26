@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-titl
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/excel-sheet-column-title
+    ## Blog link: https://brain.dennyzhang.com/excel-sheet-column-title
     ## Basic Ideas:
     ##         a*(26^3) + b*(26^2) + c*(26) + d
     ##          1 ->  (1)  -> A

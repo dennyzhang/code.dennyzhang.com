@@ -17,7 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-colors/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/sort-colors
+    ## Blog link: https://brain.dennyzhang.com/sort-colors
     class Solution(object):
         def sortColors(self, nums):
             """

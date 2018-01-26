@@ -17,7 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-1-bits/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/number-of-1-bits
+    ## Blog link: https://brain.dennyzhang.com/number-of-1-bits
     ## Baisc Ideas: Each time n & (n-1) will remove one 1 bit
     ## Complexity: Time O(k), k is most many 1 bits it has. Space O(1)
     class Solution(object):

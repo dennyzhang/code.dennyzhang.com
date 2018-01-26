@@ -38,4 +38,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/convert-a-number-to-hex
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/convert-a-number-to-hexadecimal
+    ## Blog link: https://brain.dennyzhang.com/convert-a-number-to-hexadecimal

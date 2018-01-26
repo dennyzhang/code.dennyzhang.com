@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/powx-n/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/powx-n
+    ## Blog link: https://brain.dennyzhang.com/powx-n
     ## Basic Ideas: 
     ##        If n < 0, x^n == (1/x)^(-n)
     ##        If n%2 == 0, x^n == (x*x)^(n/2)

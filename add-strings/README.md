@@ -22,4 +22,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/add-strings/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/add-strings
+    ## Blog link: https://brain.dennyzhang.com/add-strings

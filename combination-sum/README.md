@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/combination-sum
+    ## Blog link: https://brain.dennyzhang.com/combination-sum
     class Solution(object):
         def combinationSum(self, candidates, target):
             """

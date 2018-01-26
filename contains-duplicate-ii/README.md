@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate-ii/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/contains-duplicate-ii
+    ## Blog link: https://brain.dennyzhang.com/contains-duplicate-ii
     ## Basic Ideas: sliding window
     ##              Keep a window of k+1 elements. Maintain a Set with the window
     ##              Move the window towards the end.

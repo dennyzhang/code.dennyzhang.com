@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reconstruct-original-di
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/reconstruct-original-digits-from-english
+    ## Blog link: https://brain.dennyzhang.com/reconstruct-original-digits-from-english
     ## Basic Ideas: Nature of english numbers.
     ##         'z': ['0']
     ##         'u': ['4'],

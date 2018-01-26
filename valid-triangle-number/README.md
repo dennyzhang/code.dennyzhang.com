@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-triangle-number/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-triangle-number
+    ## Blog link: https://brain.dennyzhang.com/valid-triangle-number
     class Solution(object):
         def triangleNumber(self, nums):
             """

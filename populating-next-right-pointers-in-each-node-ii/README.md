@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/populating-next-right-p
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/populating-next-right-pointers-in-each-node-ii
+    ## Blog link: https://brain.dennyzhang.com/populating-next-right-pointers-in-each-node-ii
     ## Basic Ideas: Process nodes: from top to down, left to right
     ##              How to process:
     ##                 p.left.next = p.right

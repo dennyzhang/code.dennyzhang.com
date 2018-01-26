@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-boomerangs/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/number-of-boomerangs
+    ## Blog link: https://brain.dennyzhang.com/number-of-boomerangs
     class Solution(object):
         def numberOfBoomerangs(self, points):
             """

@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-two/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/power-of-two
+    ## Blog link: https://brain.dennyzhang.com/power-of-two
     class Solution(object):
         def isPowerOfTwo(self, n):
             """

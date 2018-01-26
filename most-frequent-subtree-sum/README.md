@@ -8,7 +8,7 @@ Most Frequent Subtree Sum
 ---
 
 Similar Problems:  
--   Tag: [#binarytree](http://brain.dennyzhang.com/tag/binarytree)
+-   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/most-frequent-subtree-s
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/most-frequent-subtree-sum
+    ## Blog link: https://brain.dennyzhang.com/most-frequent-subtree-sum
     ## Basic Ideas: post-order
     ##              For the result, build a map
     ##              Find the number of mast frequent occurency

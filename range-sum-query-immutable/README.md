@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-immutab
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/range-sum-query-immutable
+    ## Blog link: https://brain.dennyzhang.com/range-sum-query-immutable
     class NumArray(object):
     
         def __init__(self, nums):

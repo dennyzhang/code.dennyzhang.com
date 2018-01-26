@@ -31,4 +31,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/construct-the-rectangle
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/construct-the-rectangle
+    ## Blog link: https://brain.dennyzhang.com/construct-the-rectangle

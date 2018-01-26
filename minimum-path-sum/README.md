@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-path-sum/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/minimum-path-sum
+    ## Blog link: https://brain.dennyzhang.com/minimum-path-sum
     ## Basic Ideas:
     ##           For point grid[i][j], think about the prevoius step of the minimize path
     ##           It should come from either grid[i-1][j] or grid[i][j-1].

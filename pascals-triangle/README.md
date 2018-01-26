@@ -8,8 +8,8 @@ Given numRows, generate the first numRows of Pascal's triangle.
 ---
 
 Similar Problems:  
--   [Leetcode: Pascal's Triangle II](http://brain.dennyzhang.com/pascals-triangle-ii)
--   All basic problems: [basic](http://brain.dennyzhang.com/category/basic), [codetemplate](http://brain.dennyzhang.com/tag/codetemplate)
+-   [Leetcode: Pascal's Triangle II](https://brain.dennyzhang.com/pascals-triangle-ii)
+-   All basic problems: [basic](https://brain.dennyzhang.com/category/basic), [codetemplate](https://brain.dennyzhang.com/tag/codetemplate)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/pascals-triangle/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/pascals-triangle
+    ## Blog link: https://brain.dennyzhang.com/pascals-triangle
     class Solution(object):
         def generate(self, numRows):
             """

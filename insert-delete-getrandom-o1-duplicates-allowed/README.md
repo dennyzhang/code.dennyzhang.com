@@ -43,4 +43,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
+    ## Blog link: https://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed

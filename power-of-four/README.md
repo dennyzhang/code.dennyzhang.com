@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-four/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/power-of-four
+    ## Blog link: https://brain.dennyzhang.com/power-of-four
     class Solution(object):
         def isPowerOfFour(self, num):
             return ((num - 1) & num == 0 and (num-1) % 3 == 0)

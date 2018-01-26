@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-mutable
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/range-sum-query-mutable
+    ## Blog link: https://brain.dennyzhang.com/range-sum-query-mutable
     class NumArray(object):
     
         def __init__(self, nums):

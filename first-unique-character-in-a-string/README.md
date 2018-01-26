@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/first-unique-character-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/first-unique-character-in-a-string
+    ## Blog link: https://brain.dennyzhang.com/first-unique-character-in-a-string
     class Solution(object):
         def firstUniqChar(self, s):
             """

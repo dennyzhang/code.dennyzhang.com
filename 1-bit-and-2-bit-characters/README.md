@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/1-bit-and-2-bit-charact
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/1-bit-and-2-bit-characters
+    ## Blog link: https://brain.dennyzhang.com/1-bit-and-2-bit-characters
     ## Basic Ideas: One pass
     ##       If current digit is 0, move 1 step
     ##       If current digit is 1, move 2 steps

@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-palindrome/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/longest-palindrome
+    ## Blog link: https://brain.dennyzhang.com/longest-palindrome
     ## Basic Ideas:
     ## Complexity:
     class Solution(object):

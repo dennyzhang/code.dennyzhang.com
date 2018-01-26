@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-list/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/rotate-list
+    ## Blog link: https://brain.dennyzhang.com/rotate-list
     ## Basic Ideas: 
     ##       Get length of the list
     ##       pointer q: where to rotate

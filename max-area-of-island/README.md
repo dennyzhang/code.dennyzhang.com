@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-area-of-island/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/max-area-of-island
+    ## Blog link: https://brain.dennyzhang.com/max-area-of-island
     ## Basic Ideas: DFS
     ##              For each dfs, return the positions it has changed.
     ## Complexity:

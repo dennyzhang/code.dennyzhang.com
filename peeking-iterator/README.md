@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/peeking-iterator/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/peeking-iterator
+    ## Blog link: https://brain.dennyzhang.com/peeking-iterator
     ## Basic Ideas: Use a variable to cache the peek. Always pre-cache
     ##
     # Below is the interface for Iterator, which is already defined for you.

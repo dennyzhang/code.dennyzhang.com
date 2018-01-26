@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-postorder-t
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/binary-tree-postorder-traversal
+    ## Blog link: https://brain.dennyzhang.com/binary-tree-postorder-traversal
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

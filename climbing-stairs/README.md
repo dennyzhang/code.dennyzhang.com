@@ -40,7 +40,7 @@ Hint: Time O(n), Space O(1)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/climbing-stairs
+    ## Blog link: https://brain.dennyzhang.com/climbing-stairs
     ## Basic Ideas: fibonacci
     class Solution(object):
         def climbStairs(self, n):

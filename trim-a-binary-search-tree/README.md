@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/trim-a-binary-search-tr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/trim-a-binary-search-tree
+    ## Blog link: https://brain.dennyzhang.com/trim-a-binary-search-tree
     ## Basic Ideas: recursive pre-order traseveral
     ## Complexity:
     ## Assumptions: No duplicate elements in the BST

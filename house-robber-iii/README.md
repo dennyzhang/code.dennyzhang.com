@@ -33,4 +33,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-iii/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/house-robber-iii
+    ## Blog link: https://brain.dennyzhang.com/house-robber-iii

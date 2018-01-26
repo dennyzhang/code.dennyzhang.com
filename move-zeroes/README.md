@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/move-zeroes/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/move-zeroes
+    ## Blog link: https://brain.dennyzhang.com/move-zeroes
     class Solution(object):
         def moveZeroes(self, nums):
             """

@@ -8,7 +8,7 @@ Basic Calculator II
 ---
 
 Similar Problems:  
--   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
+-   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/basic-calculator-ii/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/basic-calculator-ii
+    ## Blog link: https://brain.dennyzhang.com/basic-calculator-ii
     ## Basic Ideas: +- yield to */
     ##
     ##           When we found one operator as +/, look for the next operator

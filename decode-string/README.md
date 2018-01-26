@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/decode-string/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/decode-string
+    ## Blog link: https://brain.dennyzhang.com/decode-string
     ## Basic Ideas: Use stack
     ##              number applies to the next string
     ##              Keep pushing until we get a ']', then we pop

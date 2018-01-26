@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/remove-duplicates-from-sorted-array
+    ## Blog link: https://brain.dennyzhang.com/remove-duplicates-from-sorted-array
     class Solution(object):
         def removeDuplicates(self, nums):
             """

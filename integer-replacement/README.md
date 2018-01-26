@@ -43,4 +43,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/integer-replacement/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/integer-replacement
+    ## Blog link: https://brain.dennyzhang.com/integer-replacement

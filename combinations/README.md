@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combinations/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/combinations
+    ## Blog link: https://brain.dennyzhang.com/combinations
     ## Basic Ideas:
     ##          Get an array of n element, either 0 or 1
     ## Complexity: Time (Permutation), Space ?

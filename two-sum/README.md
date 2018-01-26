@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/two-sum/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/two-sum
+    ## Blog link: https://brain.dennyzhang.com/two-sum
     ## Basic Ideas: sort the array, and two pointers. 1. From left to right, 2. From right to left
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

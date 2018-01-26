@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-nodes-in-k-grou
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/reverse-nodes-in-k-group
+    ## Blog link: https://brain.dennyzhang.com/reverse-nodes-in-k-group
     ## Basic Ideas: Two pointer(p1, p2) with distance of k
     ##              Since head node might be changed, add a dummyNode
     ##              How to process:

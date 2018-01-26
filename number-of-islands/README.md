@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-islands/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/number-of-islands
+    ## Blog link: https://brain.dennyzhang.com/number-of-islands
     class Solution(object):
         ## Basic Ideas: Avoid duplicate counting.
         ##   Mark all adjacent 1 to X. Thus we can avoid counting one the same island multiple times.

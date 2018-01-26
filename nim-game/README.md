@@ -19,7 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/nim-game
+    ## Blog link: https://brain.dennyzhang.com/nim-game
     class Solution(object):
         def canWinNim(self, n):
             """

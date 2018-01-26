@@ -8,7 +8,7 @@ Basic Calculator
 ---
 
 Similar Problems:  
--   Tag: [#stack](http://brain.dennyzhang.com/tag/stack)
+-   Tag: [#stack](https://brain.dennyzhang.com/tag/stack)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/basic-calculator/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/basic-calculator
+    ## Blog link: https://brain.dennyzhang.com/basic-calculator
     ## Basic Ideas: stack
     ##        Whenever we get ), we get the result for (...)
     ##

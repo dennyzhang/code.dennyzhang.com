@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-window-substrin
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/minimum-window-substring
+    ## Blog link: https://brain.dennyzhang.com/minimum-window-substring
     ## Basic Ideas: Two pointers
     ##        Notice: T may have duplicate characters. AABC
     ##                T may be empty or only has one character

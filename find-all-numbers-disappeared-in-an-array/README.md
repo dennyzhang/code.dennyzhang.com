@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-all-numbers-disapp
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array
+    ## Blog link: https://brain.dennyzhang.com/find-all-numbers-disappeared-in-an-array
     ## Basic Ideas: traverse each item
     ## Complexity:
     ##  1,2,3,4,5,6,7,8

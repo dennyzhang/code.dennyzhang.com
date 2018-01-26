@@ -18,7 +18,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-linked-list/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/palindrome-linked-list
+    ## Blog link: https://brain.dennyzhang.com/palindrome-linked-list
     ## Basic Ideas: Find the middle node. Reverse the right part. Then compare with the left part
     ##       From: a->b->c->b->a
     ##       To:   a->b->c->a->b

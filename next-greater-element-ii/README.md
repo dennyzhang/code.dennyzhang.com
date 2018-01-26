@@ -8,8 +8,8 @@ Next Greater Element II
 ---
 
 Similar Problems:  
--   [Leetcode: Leetcode: Next Greater Element I](http://brain.dennyzhang.com/next-greater-element-i)
--   Tag: [#monotonestack](http://brain.dennyzhang.com/tag/monotonestack)
+-   [Leetcode: Leetcode: Next Greater Element I](https://brain.dennyzhang.com/next-greater-element-i)
+-   Tag: [#monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/next-greater-element-ii
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/next-greater-element-ii
+    ## Blog link: https://brain.dennyzhang.com/next-greater-element-ii
     ## Basic Idea: Descending stack
     ##
     ## Complexity: Time O(n), Space O(n)

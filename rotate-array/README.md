@@ -22,7 +22,7 @@ Hint: Time O(n), Space O(1)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/rotate-array
+    ## Blog link: https://brain.dennyzhang.com/rotate-array
     ## Basic Ideas:
     ## Complexity: Time O(), Space O()
     ## Assumptions:

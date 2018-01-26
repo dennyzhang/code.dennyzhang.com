@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-list/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/sort-list
+    ## Blog link: https://brain.dennyzhang.com/sort-list
     ## Basic Ideas: Merge sort. Recursive
     ##       1. Divide the list into two half
     ##       2. Merge sort these two

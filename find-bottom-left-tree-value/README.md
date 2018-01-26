@@ -43,7 +43,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-bottom-left-tree-v
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/find-bottom-left-tree-value
+    ## Blog link: https://brain.dennyzhang.com/find-bottom-left-tree-value
     ## Basic Ideas: level-order traversal
     ##              Check the first element of every layer
     ##              Return the item of deepest level

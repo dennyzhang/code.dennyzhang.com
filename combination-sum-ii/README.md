@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-ii/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/combination-sum-ii
+    ## Blog link: https://brain.dennyzhang.com/combination-sum-ii
     ## Basic Ideas: sort the list, then 0-1 bag
     ## Complexity: Time ? Space ?
     ## Assumptions:

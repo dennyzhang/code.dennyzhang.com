@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/add-binary/description/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/add-binary
+    ## Blog link: https://brain.dennyzhang.com/add-binary
     class Solution(object):
         def addBinary(self, a, b):
             """

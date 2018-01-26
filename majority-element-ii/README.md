@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/majority-element-ii/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/majority-element-ii
+    ## Blog link: https://brain.dennyzhang.com/majority-element-ii
     ## Basic Ideas:
     ##       No more than 2 elements would be qualified.
     ## Complexity: Time O(n), Space O(1)

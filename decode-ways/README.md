@@ -27,4 +27,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/decode-ways/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/decode-ways
+    ## Blog link: https://brain.dennyzhang.com/decode-ways

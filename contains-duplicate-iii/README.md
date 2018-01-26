@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate-iii/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/contains-duplicate-iii
+    ## Blog link: https://brain.dennyzhang.com/contains-duplicate-iii
     ## Basic Ideas: sliding window
     ##              Maintain a window with k+1 elements. A set for unsorted unique collection
     ## Complexity: Time O(n), Space O(k)

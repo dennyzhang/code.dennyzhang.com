@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-tilt/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/binary-tree-tilt
+    ## Blog link: https://brain.dennyzhang.com/binary-tree-tilt
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

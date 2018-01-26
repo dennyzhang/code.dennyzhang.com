@@ -52,7 +52,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/baseball-game/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/baseball-game
+    ## Blog link: https://brain.dennyzhang.com/baseball-game
     ## Basic Ideas: stack: only pop when we get a 'D'
     ##
     ##   We may get sequence like: 3 +

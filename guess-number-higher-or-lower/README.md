@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/guess-number-higher-or-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/guess-number-higher-or-lower
+    ## Blog link: https://brain.dennyzhang.com/guess-number-higher-or-lower
     ## Basic Ideas: binary search
     ##      1 1 1 0 -1 -1 -1
     ## Complexity: Time O(log(n)), Space O(1)

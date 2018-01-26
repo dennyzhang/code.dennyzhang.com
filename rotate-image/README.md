@@ -56,7 +56,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-image/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/rotate-image
+    ## Blog link: https://brain.dennyzhang.com/rotate-image
     ## Basic Ideas: Rotate circle by circle. From outer to inner layer.
     ##             Use an array of n to save data temporarily
     ## Complexity: Time O(n*n), Space O(n)

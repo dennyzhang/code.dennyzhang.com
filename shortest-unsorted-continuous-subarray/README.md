@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-unsorted-conti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/shortest-unsorted-continuous-subarray
+    ## Blog link: https://brain.dennyzhang.com/shortest-unsorted-continuous-subarray
     ## Basic Ideas: If the first element is not the minimum, the subarray must starts with the first position
     ##              If the last element is not the maxmimum, the subarray must ends with the last position
     ##

@@ -45,7 +45,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/insert-delete-getrandom-o1
+    ## Blog link: https://brain.dennyzhang.com/insert-delete-getrandom-o1
     ## Basic Ideas:
     ##      an array: host all values
     ##           If an existing value has been removed, replace it with the tail. And remove the tail

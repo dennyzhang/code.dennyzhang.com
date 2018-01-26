@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-binary-substrings
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/count-binary-substrings
+    ## Blog link: https://brain.dennyzhang.com/count-binary-substrings
     ## Basic Ideas: Two pointers
     ##           Starting from one specific index, there could be only one or zero matches
     ##           The result would be no more than s.length

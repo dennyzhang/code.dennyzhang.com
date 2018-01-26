@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reorder-list/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/reorder-list
+    ## Blog link: https://brain.dennyzhang.com/reorder-list
     ## Basic Ideas:
     ##             Find the right sub-list after n/2 node
     ##             Reverse the right sub-list

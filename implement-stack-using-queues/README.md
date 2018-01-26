@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-stack-using-q
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/implement-stack-using-queues
+    ## Blog link: https://brain.dennyzhang.com/implement-stack-using-queues
     class MyQueue(object):
     
         ## Idea: Use 2 stack. When pop, move to stack1, then stack2

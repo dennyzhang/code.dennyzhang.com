@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/first-missing-positive/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/first-missing-positive
+    ## Blog link: https://brain.dennyzhang.com/first-missing-positive
     ## Basic Ideas: count sort. Put each number in its right place.
     ##    Sample Data:
     ##    1  2  0

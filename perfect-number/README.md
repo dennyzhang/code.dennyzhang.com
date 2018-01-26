@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/perfect-number/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/perfect-number
+    ## Blog link: https://brain.dennyzhang.com/perfect-number
     ## Basic Ideas: sqrt(num)
     ##     Sample Data:
     ##         1 2 7

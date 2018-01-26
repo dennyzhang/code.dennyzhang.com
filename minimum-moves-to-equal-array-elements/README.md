@@ -28,4 +28,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-moves-to-equal-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/minimum-moves-to-equal-array-elements
+    ## Blog link: https://brain.dennyzhang.com/minimum-moves-to-equal-array-elements

@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/insertion-sort-list/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/insertion-sort-list
+    ## Blog link: https://brain.dennyzhang.com/insertion-sort-list
     ## Basic Ideas: 
     ##       Add a dummy head node, since the head node might be changed
     ##       Pointer p: the tail of sorted list

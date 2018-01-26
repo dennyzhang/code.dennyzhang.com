@@ -18,7 +18,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-cycle/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/linked-list-cycle
+    ## Blog link: https://brain.dennyzhang.com/linked-list-cycle
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):

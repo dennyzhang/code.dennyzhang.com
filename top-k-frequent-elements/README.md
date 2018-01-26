@@ -8,7 +8,7 @@ Top K Frequent Elements
 ---
 
 Similar Problems:  
--   Tag: [#topk](http://brain.dennyzhang.com/tag/topk)
+-   Tag: [#topk](https://brain.dennyzhang.com/tag/topk)
 
 ---
 
@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-elements
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/top-k-frequent-elements
+    ## Blog link: https://brain.dennyzhang.com/top-k-frequent-elements
     ## Basic Ideas: priority queue: heapq
     ##
     ## Complexity:

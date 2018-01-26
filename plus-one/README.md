@@ -19,7 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/plus-one/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/plus-one
+    ## Blog link: https://brain.dennyzhang.com/plus-one
     ## Basic Ideas: If the highest digit is 1, the value is negative
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):

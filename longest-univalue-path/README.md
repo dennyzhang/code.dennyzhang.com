@@ -45,4 +45,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-univalue-path/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/longest-univalue-path
+    ## Blog link: https://brain.dennyzhang.com/longest-univalue-path

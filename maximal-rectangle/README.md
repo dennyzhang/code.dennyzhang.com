@@ -8,7 +8,8 @@ Maximal Rectangle
 ---
 
 Similar Problems:  
--   Tag: [#dynamicprogramming](http://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Leetcode: Largest Rectangle in Histogram](https://brain.dennyzhang.com/largest-rectangle-in-histogram)
+-   Tag: [#monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
 
 ---
 
@@ -29,9 +30,9 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximal-rectangle/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/maximal-rectangle
+    ## Blog link: https://brain.dennyzhang.com/maximal-rectangle
     ## Basic Ideas: monotone stack
-    ##       Based on another problem: http://brain.dennyzhang.com/largest-rectangle-in-histogram
+    ##       Based on another problem: https://brain.dennyzhang.com/largest-rectangle-in-histogram
     ##
     ##       For each row, get the height
     ##       Find the max region of each row. Then get the global max
@@ -64,7 +65,7 @@ Leave me comments, if you have better ways to solve.
             """
             length = len(heights)
             next_smallers = [-1] * length
-            stack = 
+            stack = []
             max_width = 0
             # pad with fake items for the end
             for i in xrange(length+1):

@@ -19,7 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-search-tree-iter
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/binary-search-tree-iterator
+    ## Blog link: https://brain.dennyzhang.com/binary-search-tree-iterator
     ## Basic Ideas: In-order traversal. Use a stack
     ##      Store directed left children from root.
     ##      When next() be called, pop one element and process its right child as new root.

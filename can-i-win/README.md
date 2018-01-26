@@ -39,4 +39,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/can-i-win/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/can-i-win
+    ## Blog link: https://brain.dennyzhang.com/can-i-win

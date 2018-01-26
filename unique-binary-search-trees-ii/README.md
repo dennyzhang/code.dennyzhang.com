@@ -24,4 +24,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-binary-search-tr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/unique-binary-search-trees-ii
+    ## Blog link: https://brain.dennyzhang.com/unique-binary-search-trees-ii

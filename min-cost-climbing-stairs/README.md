@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/min-cost-climbing-stair
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/min-cost-climbing-stairs
+    ## Blog link: https://brain.dennyzhang.com/min-cost-climbing-stairs
     ## Basic Ideas:
     ##       Facts: you can only climb one or two steps. But you can't climb back.
     ##

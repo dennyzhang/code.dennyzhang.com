@@ -17,7 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/factorial-trailing-zero
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/factorial-trailing-zeroes
+    ## Blog link: https://brain.dennyzhang.com/factorial-trailing-zeroes
     class Solution(object):
         def trailingZeroes(self, n):
             """

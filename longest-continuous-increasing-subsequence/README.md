@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-continuous-incr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/longest-continuous-increasing-subsequence
+    ## Blog link: https://brain.dennyzhang.com/longest-continuous-increasing-subsequence
     ## Basic Ideas: bigger_count: point to how many continuous increasing subsequence
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

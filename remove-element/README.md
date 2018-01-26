@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-element/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/remove-element
+    ## Blog link: https://brain.dennyzhang.com/remove-element
     ## Basic Ideas:
     ##        index point to the last element which have been processed
     ## Complexity: Time O(n), Space O(1)

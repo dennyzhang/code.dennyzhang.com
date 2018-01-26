@@ -23,7 +23,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-partitioning/description/)  
 
-    ## Blog link: http://brain.dennyzhang.com/palindrome-partitioning
+    ## Blog link: https://brain.dennyzhang.com/palindrome-partitioning
     ## Basic Ideas: Divide and conquer
     ## Complexity: Time O(), Space O()
     ## Assumptions:

@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-digit-one/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/number-of-digit-one
+    ## Blog link: https://brain.dennyzhang.com/number-of-digit-one
     class Solution(object):
         def countDigitOne(self, n):
             """

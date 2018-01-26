@@ -8,7 +8,7 @@ Top K Frequent Words
 ---
 
 Similar Problems:  
--   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
+-   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-words/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/top-k-frequent-words
+    ## Blog link: https://brain.dennyzhang.com/top-k-frequent-words
     ## Basic Ideas: Hash map
     ##            Count the occurency for different words
     ##            Then sort the list by descending occurency

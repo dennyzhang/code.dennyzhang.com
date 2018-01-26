@@ -15,7 +15,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)  
 
-    ## Blog link: http://brain.dennyzhang.com/best-time-to-buy-and-sell-stock-ii
+    ## Blog link: https://brain.dennyzhang.com/best-time-to-buy-and-sell-stock-ii
     ## Basic Ideas:
     ## Complexity:
     class Solution(object):

@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-paths/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/binary-tree-paths
+    ## Blog link: https://brain.dennyzhang.com/binary-tree-paths
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

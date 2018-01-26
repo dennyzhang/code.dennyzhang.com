@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/group-anagrams/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/group-anagrams
+    ## Blog link: https://brain.dennyzhang.com/group-anagrams
     ## Basic Ideas:  map each item to a string, group them by a map, dump the map
     ## Complexity: Time O(n*k*log(k)), Space O(k*n). k is the length of longest item
     class Solution(object):

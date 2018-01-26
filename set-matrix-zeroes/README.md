@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/set-matrix-zeroes
+    ## Blog link: https://brain.dennyzhang.com/set-matrix-zeroes
     ## Basic Ideas:
     ##             2 Different types of 0s. 
     ##               1. Original value is 0. 2 It has been set to 0 by others.

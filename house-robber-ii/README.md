@@ -17,7 +17,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/house-robber-ii
+    ## Blog link: https://brain.dennyzhang.com/house-robber-ii
     class Solution(object):
         def rob(self, nums):
             """

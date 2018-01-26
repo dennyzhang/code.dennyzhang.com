@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-watch/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/binary-watch
+    ## Blog link: https://brain.dennyzhang.com/binary-watch
     ## Basic Ideas:
     ##         Check all possibility
     ## Complexity: Time O(1) 12*60, Space O(1)
@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
             :type num: int
             :rtype: List[str]
             """
-            ## Blog link: http://brain.dennyzhang.com/binary-watch
+            ## Blog link: https://brain.dennyzhang.com/binary-watch
     ## Basic Ideas:
             ##         Get all the possible combination
             ##         Check whether it's valid

@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/super-pow/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/super-pow
+    ## Blog link: https://brain.dennyzhang.com/super-pow
     class Solution(object):
         def superPow(self, a, b):
             """

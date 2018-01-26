@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/island-perimeter/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/island-perimeter
+    ## Blog link: https://brain.dennyzhang.com/island-perimeter
     class Solution(object):
         def islandPerimeter(self, grid):
             """

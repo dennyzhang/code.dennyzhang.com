@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/valid-palindrome-ii
+    ## Blog link: https://brain.dennyzhang.com/valid-palindrome-ii
     ## Basic Ideas:
     ##      Two pointers: one from left to right, another from right to left
     ##      If the value is different, we could either delete the left one or delete the right one

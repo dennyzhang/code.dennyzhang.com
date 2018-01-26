@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/non-overlapping-interva
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/non-overlapping-intervals
+    ## Blog link: https://brain.dennyzhang.com/non-overlapping-intervals
     # Definition for an interval.
     # class Interval(object):
     #     def __init__(self, s=0, e=0):

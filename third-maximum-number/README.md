@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/third-maximum-number/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/third-maximum-number
+    ## Blog link: https://brain.dennyzhang.com/third-maximum-number
     ## Basic Ideas: minheap
     ##
     ## Complexity: O(n), Space O(1)

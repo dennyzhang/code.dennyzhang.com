@@ -39,7 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/assign-cookies/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/assign-cookies
+    ## Blog link: https://brain.dennyzhang.com/assign-cookies
     ## Basic Ideas: Greedy
     ##        Assign the smallest cookie to the the mininum greedy child, if it matches
     ##        Sort the list of g and s

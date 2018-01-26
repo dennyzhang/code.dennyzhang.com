@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/largest-number-at-least
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/largest-number-at-least-twice-of-others
+    ## Blog link: https://brain.dennyzhang.com/largest-number-at-least-twice-of-others
     ## Basic Ideas: Find the largest element and the second largest element
     ##              Check whether: the largest is at least twice as much as the second largest element
     ## Complexity: Time O(n), Space O(1)

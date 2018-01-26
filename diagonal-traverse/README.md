@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/diagonal-traverse/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/diagonal-traverse
+    ## Blog link: https://brain.dennyzhang.com/diagonal-traverse
     #!/usr/bin/env python
     ## Basic Ideas:
     ##      Don't get confused with 2 things:

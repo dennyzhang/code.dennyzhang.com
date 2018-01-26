@@ -22,4 +22,4 @@ Hint: Time O(n), Space O(1). Moore voting
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/palindrome-partitioning-ii
+    ## Blog link: https://brain.dennyzhang.com/palindrome-partitioning-ii

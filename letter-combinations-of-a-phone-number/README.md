@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
             :type digits: str
             :rtype: List[str]
             """
-            ## Blog link: http://brain.dennyzhang.com/letter-combinations-of-a-phone-number
+            ## Blog link: https://brain.dennyzhang.com/letter-combinations-of-a-phone-number
     ## Basic Ideas:
             ## Complexity:
             ## Assumptions: For "0" and "1", map to empty string

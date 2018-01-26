@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/kth-largest-element-in-an-array
+    ## Blog link: https://brain.dennyzhang.com/kth-largest-element-in-an-array
     ## Basic Ideas: heap
     ##
     ## Complexity: Time O(n*log(n)), Space O(n)

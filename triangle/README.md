@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/triangle/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/triangle
+    ## Blog link: https://brain.dennyzhang.com/triangle
     class Solution(object):
         def minimumTotal(self, triangle):
             """
