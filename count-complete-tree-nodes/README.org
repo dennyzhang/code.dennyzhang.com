@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #binarysearch, #inspiring
+:type:     #binarytree, #binarysearch, #inspiring, #classic
 :END:
 ---------------------------------------------------------------------
 Count Complete Tree Nodes

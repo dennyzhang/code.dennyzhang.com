@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #bitmanipulation, #trie, #inspiring, #manydetails
+:type:     #bitmanipulation, #trie, #inspiring, #manydetails, #classic
 :END:
 ---------------------------------------------------------------------
 Maximum XOR of Two Numbers in an Array

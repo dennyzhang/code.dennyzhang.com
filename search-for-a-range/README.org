@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarysearch, #redo
+:type:     #binarysearch, #redo, #classic
 :END:
 ---------------------------------------------------------------------
 Search for a Range
