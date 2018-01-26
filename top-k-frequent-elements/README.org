@@ -1,0 +1,31 @@
+* Leetcode: Top K Frequent Elements                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #topk
+:END:
+---------------------------------------------------------------------
+Top K Frequent Elements
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[http://brain.dennyzhang.com/tag/topk][#topk]]
+---------------------------------------------------------------------
+Given a non-empty array of integers, return the k most frequent elements.
+
+For example,
+Given [1,1,1,2,2,3] and k = 2, return [1,2].
+
+Note: 
+You may assume k is always valid, 1 <= k <= number of unique elements.
+Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/top-k-frequent-elements][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/top-k-frequent-elements/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/top-k-frequent-elements
+
+#+END_SRC
