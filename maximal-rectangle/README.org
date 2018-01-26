@@ -8,8 +8,8 @@
 Maximal Rectangle
 ---------------------------------------------------------------------
 Similar Problems:
-- [[http://brain.dennyzhang.com/largest-rectangle-in-histogram][Leetcode: Largest Rectangle in Histogram]]
-- Tag: [[http://brain.dennyzhang.com/tag/monotonestack][#monotonestack]]
+- [[https://brain.dennyzhang.com/largest-rectangle-in-histogram][Leetcode: Largest Rectangle in Histogram]]
+- Tag: [[https://brain.dennyzhang.com/tag/monotonestack][#monotonestack]]
 ---------------------------------------------------------------------
 Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 
@@ -29,9 +29,9 @@ Credits To: [[url-external:https://leetcode.com/problems/maximal-rectangle/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/maximal-rectangle
+## Blog link: https://brain.dennyzhang.com/maximal-rectangle
 ## Basic Ideas: monotone stack
-##       Based on another problem: http://brain.dennyzhang.com/largest-rectangle-in-histogram
+##       Based on another problem: https://brain.dennyzhang.com/largest-rectangle-in-histogram
 ##
 ##       For each row, get the height
 ##       Find the max region of each row. Then get the global max

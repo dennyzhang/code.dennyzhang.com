@@ -31,7 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/reverse-integer/descrip
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/reverse-integer
+## Blog link: https://brain.dennyzhang.com/reverse-integer
 class Solution(object):
     def reverse(self, x):
         """

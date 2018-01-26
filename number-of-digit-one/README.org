@@ -21,7 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-digit-one/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/number-of-digit-one
+## Blog link: https://brain.dennyzhang.com/number-of-digit-one
 class Solution(object):
     def countDigitOne(self, n):
         """

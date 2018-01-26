@@ -23,5 +23,5 @@ Credits To: [[url-external:https://leetcode.com/problems/add-strings/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/add-strings
+## Blog link: https://brain.dennyzhang.com/add-strings
 #+END_SRC

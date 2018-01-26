@@ -18,7 +18,7 @@ Credits To: [[url-external:https://leetcode.com/problems/house-robber/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/house-robber
+## Blog link: https://brain.dennyzhang.com/house-robber
 class Solution(object):
     def rob(self, nums):
         """

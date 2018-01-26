@@ -47,6 +47,6 @@ Credits To: [[url-external:https://leetcode.com/problems/integer-replacement/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/integer-replacement
+## Blog link: https://brain.dennyzhang.com/integer-replacement
 
 #+END_SRC

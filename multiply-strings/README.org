@@ -23,5 +23,5 @@ Credits To: [[url-external:https://leetcode.com/problems/multiply-strings/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/multiply-strings
+## Blog link: https://brain.dennyzhang.com/multiply-strings
 #+END_SRC

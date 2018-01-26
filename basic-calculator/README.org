@@ -8,7 +8,7 @@
 Basic Calculator
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/stack][#stack]]
+- Tag: [[https://brain.dennyzhang.com/tag/stack][#stack]]
 ---------------------------------------------------------------------
 Implement a stack calculator to evaluate a simple expression string.
 
@@ -31,7 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/basic-calculator/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/basic-calculator
+## Blog link: https://brain.dennyzhang.com/basic-calculator
 ## Basic Ideas: stack
 ##        Whenever we get ), we get the result for (...)
 ##

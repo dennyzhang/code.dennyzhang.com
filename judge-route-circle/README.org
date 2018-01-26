@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/judge-route-circle/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/judge-route-circle
+## Blog link: https://brain.dennyzhang.com/judge-route-circle
 class Solution(object):
     def judgeCircle(self, moves):
         """

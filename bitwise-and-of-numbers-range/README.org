@@ -18,7 +18,7 @@ Credits To: [[url-external:https://leetcode.com/problems/bitwise-and-of-numbers-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/bitwise-and-of-numbers-range
+## Blog link: https://brain.dennyzhang.com/bitwise-and-of-numbers-range
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
         """

@@ -24,6 +24,6 @@ Credits To: [[url-external:https://leetcode.com/problems/substring-with-concaten
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/substring-with-concatenation-of-all-words
+## Blog link: https://brain.dennyzhang.com/substring-with-concatenation-of-all-words
 
 #+END_SRC

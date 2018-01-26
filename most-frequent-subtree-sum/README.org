@@ -8,7 +8,7 @@
 Most Frequent Subtree Sum
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 Given the root of a tree, you are asked to find the most frequent subtree sum. The subtree sum of a node is defined as the sum of all the node values formed by the subtree rooted at that node (including the node itself). So what is the most frequent subtree sum value? If there is a tie, return all the values with the highest frequency in any order.
 
@@ -40,7 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/most-frequent-subtree-s
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/most-frequent-subtree-sum
+## Blog link: https://brain.dennyzhang.com/most-frequent-subtree-sum
 ## Basic Ideas: post-order
 ##              For the result, build a map
 ##              Find the number of mast frequent occurency

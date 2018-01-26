@@ -8,7 +8,7 @@
 Top K Frequent Elements
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/topk][#topk]]
+- Tag: [[https://brain.dennyzhang.com/tag/topk][#topk]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the k most frequent elements.
 
@@ -26,7 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/top-k-frequent-elements
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/top-k-frequent-elements
+## Blog link: https://brain.dennyzhang.com/top-k-frequent-elements
 ## Basic Ideas: priority queue: heapq
 ##
 ## Complexity:

@@ -27,6 +27,6 @@ Credits To: [[url-external:https://leetcode.com/problems/unique-binary-search-tr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/unique-binary-search-trees-ii
+## Blog link: https://brain.dennyzhang.com/unique-binary-search-trees-ii
 
 #+END_SRC

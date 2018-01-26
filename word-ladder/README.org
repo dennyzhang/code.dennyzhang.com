@@ -39,6 +39,6 @@ Credits To: [[url-external:https://leetcode.com/problems/word-ladder/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/word-ladder
+## Blog link: https://brain.dennyzhang.com/word-ladder
 
 #+END_SRC

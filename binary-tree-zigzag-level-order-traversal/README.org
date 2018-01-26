@@ -31,7 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/binary-tree-zigzag-leve
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/binary-tree-zigzag-level-order-traversal
+## Blog link: https://brain.dennyzhang.com/binary-tree-zigzag-level-order-traversal
 ## Basic Ideas: BFS, use left_to_right(boolen) for level traversal direction
 ## Complexity: Time O(n), Space O(k)
 

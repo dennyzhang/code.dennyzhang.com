@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 
 [[color:#c7254e][Hints]]:
 #+BEGIN_EXAMPLE
-## Blog link: http://brain.dennyzhang.com/132-pattern
+## Blog link: https://brain.dennyzhang.com/132-pattern
 ## Basic Ideas: There should be one rise. After that, there should be one drop.
 ## Complexity: Time O(n), Space O(1)
 ## Scenario: sell sock at a high price

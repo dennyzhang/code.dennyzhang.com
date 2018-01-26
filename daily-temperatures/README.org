@@ -8,8 +8,8 @@
 Daily Temperatures
 ---------------------------------------------------------------------
 Similar Problems:
-- [[http://brain.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
-- Tag: [[http://brain.dennyzhang.com/tag/monotonestack][#monotonestack]]
+- [[https://brain.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
+- Tag: [[https://brain.dennyzhang.com/tag/monotonestack][#monotonestack]]
 ---------------------------------------------------------------------
 Given a list of daily temperatures, produce a list that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
 
@@ -24,7 +24,7 @@ Credits To: [[url-external:https://leetcode.com/problems/daily-temperatures/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/daily-temperatures
+## Blog link: https://brain.dennyzhang.com/daily-temperatures
 ## Basic Ideas: Monotonous stack can help us find first largest element in O(n) time complexity.
 ##
 ##              Descending stack: find the next bigger nubmer for each element

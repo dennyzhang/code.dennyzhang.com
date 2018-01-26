@@ -30,7 +30,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/sum-root-to-leaf-numbers/description/][leetcode.com]]
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/sum-root-to-leaf-numbers
+## Blog link: https://brain.dennyzhang.com/sum-root-to-leaf-numbers
 class Solution(object):
     def sumNumbers(self, root):
         """

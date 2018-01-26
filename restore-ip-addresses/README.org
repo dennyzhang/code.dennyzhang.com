@@ -21,7 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/restore-ip-addresses/de
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/restore-ip-addresses
+## Blog link: https://brain.dennyzhang.com/restore-ip-addresses
 class Solution(object):
     def restoreIpAddresses(self, s):
         """

@@ -23,6 +23,6 @@ Credits To: [[url-external:https://leetcode.com/problems/gas-station/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/gas-station
+## Blog link: https://brain.dennyzhang.com/gas-station
 
 #+END_SRC
