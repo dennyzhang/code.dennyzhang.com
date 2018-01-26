@@ -28,3 +28,26 @@ Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-elements
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/top-k-frequent-elements
+    ## Basic Ideas: priority queue: heapq
+    ##
+    ## Complexity:
+    import collections, heapq
+    class Solution(object):
+        def topKFrequent(self, nums, k):
+            """
+            :type nums: List[int]
+            :type k: int
+            :rtype: List[int]
+            """
+            q = 
+            heapq._heapify_max(q)
+            m = collections.defaultdict(lambda: 0)
+            for num in nums: m[num] += 1
+            # python heapq doesn't support max heap by default
+            for num in m: heapq.heappush(q, (-m[num], num))
+    
+            res = 
+            for i in xrange(k):
+                (count, num) = heapq.heappop(q)
+                res.append(num)
+            return res

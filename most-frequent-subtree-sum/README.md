@@ -69,7 +69,7 @@ Leave me comments, if you have better ways to solve.
             for num in m:
                 most_freq = max(most_freq, m[num])
     
-            res = 
+            res = []
             # get the matched values
             for num in m:
                 if m[num] == most_freq:

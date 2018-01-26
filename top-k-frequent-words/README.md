@@ -43,3 +43,30 @@ Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-words/de
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: http://brain.dennyzhang.com/top-k-frequent-words
+    ## Basic Ideas: Hash map
+    ##            Count the occurency for different words
+    ##            Then sort the list by descending occurency
+    ## Complexity:
+    import collections
+    class Solution(object):
+        def topKFrequent(self, words, k):
+            """
+            :type words: List[str]
+            :type k: int
+            :rtype: List[str]
+            """
+            m = collections.defaultdict(lambda: 0)
+            for word in words:
+                m[word] += 1
+            key_list = m.keys()
+            def myCompare(v1, v2):
+                if m[v1] > m[v2]: return -1
+                elif m[v1] < m[v2]: return 1
+                else:
+                    if v1 == v2: return 0
+                    return -1 if v1 < v2 else 1
+            sorted_list = sorted(key_list, cmp=myCompare)
+            return sorted_list[0:k]
+    
+    s = Solution()
+    print s.topKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4)
