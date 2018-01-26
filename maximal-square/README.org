@@ -1,0 +1,33 @@
+* Leetcode: Maximal Square                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #misc
+:END:
+---------------------------------------------------------------------
+Maximal Square
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[http://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+
+For example, given the following matrix:
+#+BEGIN_EXAMPLE
+1 0 1 0 0
+1 0 1 1 1
+1 1 1 1 1
+1 0 0 1 0
+#+END_EXAMPLE
+Return 4.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximal-square][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/maximal-square/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/maximal-square
+
+#+END_SRC

@@ -1,0 +1,35 @@
+* Leetcode: Largest Rectangle in Histogram                       :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #misc
+:END:
+---------------------------------------------------------------------
+Largest Rectangle in Histogram
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[http://brain.dennyzhang.com/tag/basic][#basic]]
+---------------------------------------------------------------------
+Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
+
+[[image-blog:Largest Rectangle in Histogram][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/images/histogram.png]]
+Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
+
+[[image-blog:Largest Rectangle in Histogram][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/images/histogram_area.png]]
+
+The largest rectangle is shown in the shaded area, which has area = 10 unit.
+
+For example,
+Given heights = [2,1,5,6,2,3],
+return 10.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-rectangle-in-histogram][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/largest-rectangle-in-histogram/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/largest-rectangle-in-histogram
+
+#+END_SRC

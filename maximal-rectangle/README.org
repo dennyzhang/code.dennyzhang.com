@@ -1,0 +1,33 @@
+* Leetcode: Maximal Rectangle                                              :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #misc, #dynamicprogramming, #inspiring
+:END:
+---------------------------------------------------------------------
+Maximal Rectangle
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[http://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
+
+For example, given the following matrix:
+#+BEGIN_EXAMPLE
+1 0 1 0 0
+1 0 1 1 1
+1 1 1 1 1
+1 0 0 1 0
+#+END_EXAMPLE
+Return 6.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximal-rectangle][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/maximal-rectangle/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/maximal-rectangle
+
+#+END_SRC
