@@ -1,0 +1,34 @@
+* Leetcode: Unique Paths                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     #misc
+:END:
+---------------------------------------------------------------------
+Unique Paths
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[http://brain.dennyzhang.com/tag/basic][#basic]]
+---------------------------------------------------------------------
+A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+
+How many possible unique paths are there?
+
+[[image-blog:Unique Paths][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/robot_maze.png]]
+
+Above is a 3 x 7 grid. How many possible unique paths are there?
+
+Note: m and n will be at most 100.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-paths][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/unique-paths/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: http://brain.dennyzhang.com/unique-paths
+
+#+END_SRC
