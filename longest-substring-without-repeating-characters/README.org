@@ -8,7 +8,8 @@
 Longest Substring Without Repeating Characters
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/basic][#basic]]
+- [[https://brain.dennyzhang.com/substring-with-concatenation-of-all-words][Leetcode: Substring with Concatenation of All Words]]
+- Tag: [[http://brain.dennyzhang.com/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a string, find the length of the longest substring without repeating characters.
 
