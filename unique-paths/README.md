@@ -1,41 +1,52 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Unique Paths     :BLOG:Basic:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Unique Paths  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
 
-Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).  
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+How many possible unique paths are there?  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+[![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/robot_maze.png)](Unique Paths)  
+
+Above is a 3 x 7 grid. How many possible unique paths are there?  
+
+Note: m and n will be at most 100.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-paths)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/unique-paths/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
+    ## Blog link: http://brain.dennyzhang.com/unique-paths
+    ## Basic Ideas: Dynamic programming
+    ##              For the previous step of finish point, it should come from either up or left
+    ##              f(i, j) = f(i-1, j) + f(j, j-1)
+    ##
+    ## Complexity: Time O(m*n), Space O(m*n)
     class Solution(object):
-        def isPalindrome(self, s):
+        def uniquePaths(self, m, n):
             """
-            :type s: str
-            :rtype: bool
+            :type m: int
+            :type n: int
+            :rtype: int
             """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+            if m == 0 or n == 0: return 0
+            matrix = [None]*m
+            for i in xrange(m): matrix[i] = [1]*n
+            for i in range(1, m):
+                for j in range(1, n):
+                    matrix[i][j] = matrix[i-1][j] + matrix[i][j-1]
+            return matrix[m-1][n-1]
