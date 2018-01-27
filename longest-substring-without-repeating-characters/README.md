@@ -8,7 +8,8 @@ Longest Substring Without Repeating Characters
 ---
 
 Similar Problems:  
--   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
+-   [Leetcode: Substring with Concatenation of All Words](https://brain.dennyzhang.com/substring-with-concatenation-of-all-words)
+-   Tag: [#twopointer](http://brain.dennyzhang.com/tag/twopointer)
 
 ---
 

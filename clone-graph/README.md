@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
     # class UndirectedGraphNode:
     #     def __init__(self, x):
     #         self.label = x
-    #         self.neighbors = 
+    #         self.neighbors = []
     
     class Solution:
         # @param node, a undirected graph node

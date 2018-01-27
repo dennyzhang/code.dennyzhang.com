@@ -1,4 +1,4 @@
-# Leetcode: Basic Calculator     :BLOG:Basic:
+# Leetcode: Basic Calculator     :BLOG:Medium:
 
 
 ---

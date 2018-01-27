@@ -7,6 +7,12 @@ Substring with Concatenation of All Words
 
 ---
 
+Similar Problems:  
+-   [Leetcode: Longest Substring Without Repeating Characters](https://brain.dennyzhang.com/longest-substring-without-repeating-characters)
+-   Tag: [#twopointer](http://brain.dennyzhang.com/tag/twopointer)
+
+---
+
 You are given a string, s, and a list of words, words, that are all of the same length. Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters.  
 
     For example, given:
@@ -23,3 +29,57 @@ Credits To: [leetcode.com](https://leetcode.com/problems/substring-with-concaten
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/substring-with-concatenation-of-all-words
+    ## Basic Ideas: Two pointers. slow and fast
+    ##              fast pointer will move every word length
+    ##
+    ## Complexity:
+    class Solution(object):
+        def findSubstring(self, s, words):
+            """
+            :type s: str
+            :type words: List[str]
+            :rtype: List[int]
+            """
+            word_count = len(words)
+            word_len = len(words[0])
+            desired_length = word_count*word_len
+            if len(s) < desired_length: return []
+    
+            d = {}
+            for word in words: d[word] = -1
+            res = []
+            slow, fast, matched_count = 0, 0, 0
+            while fast + word_len < len(s):
+                # print d, slow, fast, res
+                next_fast = fast + word_len
+                # no conflict
+                if s[fast:next_fast] in d and d[s[fast:next_fast]] == -1:
+                    d[s[fast:next_fast]] = fast
+                    matched_count += 1
+                elif s[fast:next_fast] not in d:
+                    # empty everything
+                    for k in xrange(0, (fast-slow)/word_len):
+                        index = k*word_len+slow
+                        d[s[index:index+word_len]] = -1
+                        matched_count -= 1
+                    fast = next_fast
+                    slow = fast
+                    continue
+                else:
+                    # mark previous sublist as unresolved
+                    for k in xrange(0, (d[s[fast]]-slow)/word_len + 1):
+                        index = k*word_len + slow
+                        d[s[index:index+word_len]] = -1
+                        matched_count -= 1
+                    # update pointers
+                    d[s[fast:next_fast]] = fast
+                    matched_count += 1
+                    next_slow = d[s[fast]] + word_len
+                # collect result
+                if matched_count == word_count:
+                    min_index = len(s)
+                    for word in d:
+                        min_index = min(min_index, d[word])
+                    res.append(min_index)
+                fast = next_fast
+            return res

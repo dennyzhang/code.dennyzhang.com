@@ -54,30 +54,25 @@ class Solution(object):
         row_count = len(obstacleGrid)
         if row_count == 0: return 0
         col_count = len(obstacleGrid[0])
-        matrix = [[None for x in xrange(col_count)] for y in xrange(row_count)]
+        # use default values to simplify the code
+        matrix = [[0 for x in xrange(col_count)] for y in xrange(row_count)]
+
         matrix[0][0] = 1 if obstacleGrid[0][0] == 0 else 0
         # first row
         i = 0
         for j in range(1, col_count):
-            if obstacleGrid[i][j] == 1:
-                matrix[i][j] = 0
-            else:
-                matrix[i][j] = matrix[i][j-1]
+            if obstacleGrid[i][j] == 0: matrix[i][j] = matrix[i][j-1]
 
         # first column
         j = 0
         for i in range(1, row_count):
-            if obstacleGrid[i][j] == 1:
-                matrix[i][j] = 0
-            else:
-                matrix[i][j] = matrix[i-1][j]
+            if obstacleGrid[i][j] == 0: matrix[i][j] = matrix[i-1][j]
 
         # others
         for i in range(1, row_count):
             for j in range(1, col_count):
-                if obstacleGrid[i][j] == 1:
-                    matrix[i][j] = 0
-                else:
+                if obstacleGrid[i][j] == 0:
                     matrix[i][j] = matrix[i-1][j] + matrix[i][j-1]
+
         return matrix[-1][-1]
 #+END_SRC
