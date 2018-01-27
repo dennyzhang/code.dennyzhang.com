@@ -1,14 +1,14 @@
-* Leetcode: Range Addition II                                              :BLOG:Basic:
+* Leetcode: Range Addition II                                              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #misc
+:type:     #math
 :END:
 ---------------------------------------------------------------------
 Range Addition II
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[http://brain.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 Given an m * n matrix M initialized with all 0's and several update operations.
 
@@ -53,5 +53,21 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: http://brain.dennyzhang.com/range-addition-ii
-
+## Basic Ideas: The biggest number will happen in the left-corner
+##             min(ops_i) * min(ops_j)
+##
+## Complexity: Time O(len(ops)) Space O(1)
+class Solution(object):
+    def maxCount(self, m, n, ops):
+        """
+        :type m: int
+        :type n: int
+        :type ops: List[List[int]]
+        :rtype: int
+        """
+        min_i, min_j = m, n
+        for (i, j) in ops:
+            min_i = min(i, min_i)
+            min_j = min(j, min_j)
+        return min_i*min_j
 #+END_SRC
