@@ -38,3 +38,51 @@ Credits To: [leetcode.com](https://leetcode.com/problems/word-ladder/description
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/word-ladder
+    ## Basic Ideas: BFS. Find the shortest path from point1 to point2
+    ##
+    ##      How fast we can find the next neighbors?
+    ##      Let's say n = len(wordList), w=len(word)
+    ##      If check one by one, it would be O(n*w)
+    ##
+    ##      We can build a set from wordList, then it change 1 characters to all possible combinations
+    ##      The complexity would be O(26*w) = O(w)
+    ##
+    ## Complexity: Time O(?) Space O(n*w)
+    ##          n = len(wordList), w=len(word)
+    class Solution(object):
+        def ladderLength(self, beginWord, endWord, wordList):
+            """
+            :type beginWord: str
+            :type endWord: str
+            :type wordList: List[str]
+            :rtype: int
+            """
+            queue, wordSet = [], set(wordList)
+            for w in self.findNeighbors(beginWord, wordSet):
+                queue.append(w)
+    
+            level = 1
+            while len(queue) != 0:
+                level += 1
+                for i in xrange(len(queue)):
+                    word = queue[0]
+                    if word == endWord: return level
+                    del queue[0]
+                    # find the next candidates
+                    for w in self.findNeighbors(word, wordSet):
+                        queue.append(w)
+            return 0
+    
+        def findNeighbors(self, word, wordSet):
+            l = []
+            for i in xrange(len(word)):
+                for ascii in range(ord('a'), ord('z')+1):
+                    ch = chr(ascii)
+                    # skip itself
+                    if ch == word[i]: continue
+                    newWord = word[:i] + ch+ word[i+1:]
+                    # Only if it's unchecked and valid
+                    if newWord in wordSet:
+                        l.append(newWord)
+                        wordSet.remove(newWord)
+            return l
