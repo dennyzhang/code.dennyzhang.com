@@ -1,41 +1,41 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Elimination Game     :BLOG:Basic:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Elimination Game  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
 
-Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+There is a list of sorted integers from 1 to n. Starting from left to right, remove the first number and every other number afterward until you reach the end of the list.  
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Repeat the previous step again, but this time from right to left, remove the right most number and every other number from the remaining numbers.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+We keep repeating the steps again, alternating left to right and right to left, until a single number remains.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Find the last number that remains starting with a list of length n.  
+
+Example:  
+
+    Input:
+    n = 9,
+    1 2 3 4 5 6 7 8 9
+    2 4 6 8
+    2 6
+    6
+    
+    Output:
+    6
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/elimination-game)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/elimination-game/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+    ## Blog link: http://brain.dennyzhang.com/elimination-game

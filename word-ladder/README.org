@@ -40,5 +40,52 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/word-ladder
+## Basic Ideas: BFS. Find the shortest path from point1 to point2
+##              Queue is the candidate list. 
+##              checked_list
+##              remaining_list
+##
+## Complexity:
+class Solution(object):
+    def ladderLength(self, beginWord, endWord, wordList):
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        queue = []
+        checkedList = []
+        self.addCandidates(beginWord, queue, wordList, checkedList)
 
+        level = 1
+        while len(queue) != 0:
+            level += 1
+            for i in xrange(len(queue)):
+                word = queue[0]
+                if word == endWord: return level
+                del queue[0]
+                # mark as checked
+                checkedList.append(word)
+                # find the next candidates
+                self.addCandidates(word, queue, wordList, checkedList)
+        return 0
+
+    def addCandidates(self, checkWord, queue, wordList, checkedList):
+        i = 0
+        while i<len(wordList):
+            word = wordList[i]
+            if word not in checkedList and self.onlyOneDiff(checkWord, word):
+                queue.append(word)
+                del wordList[i]
+            else:
+                i += 1
+
+    def onlyOneDiff(self, word1, word2):
+        diff_count = 0
+        for i in xrange(len(word1)):
+            if word1[i] != word2[i]:
+                diff_count += 1
+            if diff_count > 1: return False
+        return diff_count == 1
 #+END_SRC

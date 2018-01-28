@@ -1,41 +1,73 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Range Addition II     :BLOG:Medium:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Range Addition II  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#math](http://brain.dennyzhang.com/tag/math)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
+
+Given an m \* n matrix M initialized with all 0's and several update operations.  
+
+Operations are represented by a 2D array, and each operation is represented by an array with two positive integers a and b, which means M[i][j] should be added by one for all 0 <= i < a and 0 <= j < b.  
+
+You need to count and return the number of maximum integers in the matrix after performing all the operations.  
+
+Example 1:  
+
+    Input: 
+    m = 3, n = 3
+    operations = [[2,2],[3,3]]
+    Output: 4
+    Explanation: 
+    Initially, M = 
+    [[0, 0, 0],
+     [0, 0, 0],
+     [0, 0, 0]]
+    
+    After performing [2,2], M = 
+    [[1, 1, 0],
+     [1, 1, 0],
+     [0, 0, 0]]
+    
+    After performing [3,3], M = 
+    [[2, 2, 1],
+     [2, 2, 1],
+     [1, 1, 1]]
+    
+    So the maximum integer in M is 2, and there are four of it in M. So return 4.
 
 Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+1.  The range of m and n is [1,40000].
+2.  The range of a is [1,m], and the range of b is [1,n].
+3.  The range of operations size won't exceed 10,000.
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-addition-ii)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
-
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/range-addition-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
+    ## Blog link: http://brain.dennyzhang.com/range-addition-ii
+    ## Basic Ideas: The biggest number will happen in the left-corner
+    ##             min(ops_i) * min(ops_j)
+    ##
+    ## Complexity: Time O(len(ops)) Space O(1)
     class Solution(object):
-        def isPalindrome(self, s):
+        def maxCount(self, m, n, ops):
             """
-            :type s: str
-            :rtype: bool
+            :type m: int
+            :type n: int
+            :type ops: List[List[int]]
+            :rtype: int
             """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+            min_i, min_j = m, n
+            for (i, j) in ops:
+                min_i = min(i, min_i)
+                min_j = min(j, min_j)
+            return min_i*min_j
