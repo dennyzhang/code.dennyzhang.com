@@ -1,8 +1,8 @@
-* Leetcode: Path Sum III                                        :BLOG:Hard:
+* Leetcode: Path Sum III                                        :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #pathsum, #binarytree
+:type:     #pathsum, #binarytree, #recursive
 :END:
 ---------------------------------------------------------------------
 Path Sum III

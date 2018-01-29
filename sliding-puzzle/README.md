@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
             :rtype: int
             """
             target = '123450'
-            queue, visited = , set()
+            queue, visited = [], set()
             queue.append(self.toString(board))
     
             level = 0

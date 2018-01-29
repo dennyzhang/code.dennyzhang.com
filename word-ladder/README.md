@@ -58,23 +58,21 @@ Leave me comments, if you have better ways to solve.
             :rtype: int
             """
             queue, wordSet = [], set(wordList)
-            for w in self.findNeighbors(beginWord, wordSet):
-                queue.append(w)
+            self.findNeighbors(beginWord, wordSet, queue):
     
-            level = 1
+            level = 2
             while len(queue) != 0:
-                level += 1
                 for i in xrange(len(queue)):
                     word = queue[0]
                     if word == endWord: return level
                     del queue[0]
                     # find the next candidates
-                    for w in self.findNeighbors(word, wordSet):
+                    for w in self.findNeighbors(word, wordSet, queue):
                         queue.append(w)
+                level += 1
             return 0
     
-        def findNeighbors(self, word, wordSet):
-            l = []
+        def findNeighbors(self, word, wordSet, queue):
             for i in xrange(len(word)):
                 for ascii in range(ord('a'), ord('z')+1):
                     ch = chr(ascii)
@@ -83,6 +81,5 @@ Leave me comments, if you have better ways to solve.
                     newWord = word[:i] + ch+ word[i+1:]
                     # Only if it's unchecked and valid
                     if newWord in wordSet:
-                        l.append(newWord)
+                        queue.append(newWord)
                         wordSet.remove(newWord)
-            return l
