@@ -1,41 +1,47 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Pacific Atlantic Water Flow     :BLOG:Amusing:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Pacific Atlantic Water Flow  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#graph](http://brain.dennyzhang.com/tag/graph)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
+
+Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the "Pacific ocean" touches the left and top edges of the matrix and the "Atlantic ocean" touches the right and bottom edges.  
+
+Water can only flow in four directions (up, down, left, or right) from a cell to another one with height equal or lower.  
+
+Find the list of grid coordinates where water can flow to both the Pacific and Atlantic ocean.  
 
 Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+1.  The order of returned grid coordinates does not matter.
+2.  Both m and n are less than 150.
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Example:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+    Given the following 5x5 matrix:
+    
+      Pacific ~   ~   ~   ~   ~ 
+           ~  1   2   2   3  (5) *
+           ~  3   2   3  (4) (4) *
+           ~  2   4  (5)  3   1  *
+           ~ (6) (7)  1   4   5  *
+           ~ (5)  1   1   2   4  *
+              *   *   *   *   * Atlantic
+    
+    Return:
+    
+    [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with parentheses in above matrix).
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/pacific-atlantic-water-flow)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+    ## Blog link: http://brain.dennyzhang.com/pacific-atlantic-water-flow

@@ -1,4 +1,4 @@
-# Leetcode: Delete Operation for Two Strings     :BLOG:Basic:
+# Leetcode: Delete Operation for Two Strings     :BLOG:Hard:
 
 
 ---

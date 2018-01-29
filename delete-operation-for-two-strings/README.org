@@ -1,8 +1,8 @@
-* Leetcode: Delete Operation for Two Strings                     :BLOG:Basic:
+* Leetcode: Delete Operation for Two Strings                     :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #deletesubsequence
+:type:     #misc
 :END:
 ---------------------------------------------------------------------
 Delete Operation for Two Strings

@@ -1,41 +1,33 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Count of Smaller Numbers After Self     :BLOG:Basic:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Count of Smaller Numbers After Self  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
 
-Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].  
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Example:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+    Given nums = [5, 2, 6, 1]
+    
+    To the right of 5 there are 2 smaller elements (2 and 1).
+    To the right of 2 there is only 1 smaller element (1).
+    To the right of 6 there is 1 smaller element (1).
+    To the right of 1 there is 0 smaller element.
+    Return the array [2, 1, 1, 0].
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-of-smaller-numbers-after-self)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+    ## Blog link: http://brain.dennyzhang.com/count-of-smaller-numbers-after-self

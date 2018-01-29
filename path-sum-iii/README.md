@@ -1,4 +1,4 @@
-# Leetcode: Path Sum III     :BLOG:Hard:
+# Leetcode: Path Sum III     :BLOG:Amusing:
 
 
 ---
