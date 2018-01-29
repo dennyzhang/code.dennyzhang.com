@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #math, #inspiring
+:type:     math, inspiring
 :END:
 ---------------------------------------------------------------------
 Reconstruct Original Digits from English

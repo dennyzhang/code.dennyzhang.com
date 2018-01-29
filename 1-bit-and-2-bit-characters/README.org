@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #bitmanipulation
+:type:     bitmanipulation
 :END:
 ---------------------------------------------------------------------
 1-bit and 2-bit Characters

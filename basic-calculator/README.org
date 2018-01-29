@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #stack, #classic
+:type:     stack, classic
 :END:
 ---------------------------------------------------------------------
 Basic Calculator
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/stack][#stack]]
+- Tag: [[https://brain.dennyzhang.com/tag/stack][stack]]
 ---------------------------------------------------------------------
 Implement a stack calculator to evaluate a simple expression string.
 

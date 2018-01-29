@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #subarray, #redo, #inspiring
+:type:     subarray, #redo, inspiring
 :END:
 ---------------------------------------------------------------------
 Shortest Unsorted Continuous Subarray

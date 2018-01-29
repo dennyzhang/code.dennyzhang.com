@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #designquestion, #inspiring
+:type:     designquestion, inspiring
 :END:
 ---------------------------------------------------------------------
 Insert Delete GetRandom O(1) - Duplicates allowed

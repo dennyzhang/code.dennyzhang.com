@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #stack, #manydetails, #redo
+:type:     stack, manydetails, #redo
 :END:
 ---------------------------------------------------------------------
 Basic Calculator III
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/stack][#stack]]
+- Tag: [[https://brain.dennyzhang.com/tag/stack][stack]]
 ---------------------------------------------------------------------
 Implement a basic calculator to evaluate a simple expression string.
 

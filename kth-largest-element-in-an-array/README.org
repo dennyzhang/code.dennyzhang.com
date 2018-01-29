@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #heap, #codetemplate
+:type:     heap, codetemplate
 :END:
 ---------------------------------------------------------------------
 Kth Largest Element in an Array

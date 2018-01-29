@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #math, #bitmanipulation
+:type:     math, bitmanipulation
 :END:
 ---------------------------------------------------------------------
 Bitwise AND a range of numbers

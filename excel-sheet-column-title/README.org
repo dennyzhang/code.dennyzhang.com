@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #conversion, #encoding, #manydetails
+:type:     conversion, encoding, manydetails
 :END:
 ---------------------------------------------------------------------
 Excel Sheet Column Title

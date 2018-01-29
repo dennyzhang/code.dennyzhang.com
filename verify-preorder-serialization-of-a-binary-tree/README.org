@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #redo, #stack, #manydetails, #codetemplate
+:type:     #redo, stack, manydetails, codetemplate
 :END:
 ---------------------------------------------------------------------
 Verify Preorder Serialization of a Binary Tree

@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #misc
+:type:     misc
 :END:
 ---------------------------------------------------------------------
 Pacific Atlantic Water Flow
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[http://brain.dennyzhang.com/tag/graph][graph]]
 ---------------------------------------------------------------------
 Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the "Pacific ocean" touches the left and top edges of the matrix and the "Atlantic ocean" touches the right and bottom edges.
 

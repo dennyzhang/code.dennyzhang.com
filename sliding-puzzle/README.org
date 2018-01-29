@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #game, #codetemplate
+:type:     game, codetemplate
 :END:
 ---------------------------------------------------------------------
 Sliding Puzzle
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[http://brain.dennyzhang.com/tag/graph][graph]]
 ---------------------------------------------------------------------
 On a 2x3 board, there are 5 tiles represented by the integers 1 through 5, and an empty square represented by 0.
 

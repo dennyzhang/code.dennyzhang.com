@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #redo, #bitmanipulation, #dynamicprogramming
+:type:     #redo, bitmanipulation, dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Counting Bits

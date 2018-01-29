@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #graph, #bfs, #dfs, #redo
+:type:     graph, bfs, dfs, #redo
 :END:
 ---------------------------------------------------------------------
 01 Matrix
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[http://brain.dennyzhang.com/tag/graph][graph]]
 ---------------------------------------------------------------------
 Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
 

@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #dynamicprogramming, #classic
+:type:     dynamicprogramming, classic
 :END:
 ---------------------------------------------------------------------
 Unique Paths II
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/unique-paths][Leetcode: Unique Paths]]
-- Tag: [[http://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[http://brain.dennyzhang.com/tag/dynamicprogramming][dynamicprogramming]]
 ---------------------------------------------------------------------
 Follow up for "Unique Paths":
 

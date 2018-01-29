@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #redo
+:type:     binarytree, #redo
 :END:
 ---------------------------------------------------------------------
 Find Mode in Binary Search Tree

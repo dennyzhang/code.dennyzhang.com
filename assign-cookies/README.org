@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #twopointer, #greedy, #game
+:type:     twopointer, greedy, game
 :END:
 ---------------------------------------------------------------------
 Assign cookies wisely, and make more children happy

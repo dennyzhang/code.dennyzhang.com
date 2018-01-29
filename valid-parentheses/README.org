@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #codetemplate, #redo, #parentheses
+:type:     codetemplate, #redo, parentheses
 :END:
 ---------------------------------------------------------------------
 Valid Parentheses

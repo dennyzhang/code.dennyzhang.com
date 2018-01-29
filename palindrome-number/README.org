@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #palindrome
+:type:     palindrome
 :END:
 ---------------------------------------------------------------------
 Determine whether an integer is a palindrome. Do this without extra space.

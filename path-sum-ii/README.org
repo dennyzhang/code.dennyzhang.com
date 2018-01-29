@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #pathsum
+:type:     binarytree, pathsum
 :END:
 ---------------------------------------------------------------------
 Path Sum II

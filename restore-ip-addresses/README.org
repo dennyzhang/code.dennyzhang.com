@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #codetemplate, #redo
+:type:     codetemplate, #redo
 :END:
 ---------------------------------------------------------------------
 Return all possible valid IP address combinations.

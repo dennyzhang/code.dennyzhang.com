@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #manydetails, #math
+:type:     manydetails, math
 :END:
 ---------------------------------------------------------------------
 Validate if a given string is numeric.

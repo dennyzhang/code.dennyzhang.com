@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #moorevoting, #findnumber, #inspiring
+:type:     moorevoting, findnumber, inspiring
 :END:
 ---------------------------------------------------------------------
 Identity number which appears exactly once.

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #redo, #math
+:type:     #redo, math
 :END:
 ---------------------------------------------------------------------
 Factorial Trailing Zeroes

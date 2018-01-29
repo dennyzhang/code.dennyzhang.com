@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 #+STARTUP: showeverything
 :PROPERTIES:
-:type:     #findnumber
+:type:     findnumber
 :END:
 ---------------------------------------------------------------------
 Find first positive integer

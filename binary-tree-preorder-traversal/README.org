@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #codetemplate, #binarytree
+:type:     codetemplate, binarytree
 :END:
 ---------------------------------------------------------------------
 Binary Tree Preorder Traversal

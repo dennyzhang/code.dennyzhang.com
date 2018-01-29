@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 #+STARTUP: showeverything
 :PROPERTIES:
-:type:     #binarytree
+:type:     binarytree
 :END:
 ---------------------------------------------------------------------
 Basic tree traverse

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #codetemplate, #binarytree
+:type:     codetemplate, binarytree
 :END:
 ---------------------------------------------------------------------
 Given a binary tree, determine if it is height-balanced

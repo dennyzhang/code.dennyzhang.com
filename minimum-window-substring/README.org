@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #slidingwindow, #manydetails, #redo, #inspiring
+:type:     slidingwindow, manydetails, #redo, inspiring
 :END:
 ---------------------------------------------------------------------
 Minimum Window Substring

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #codetemplate
+:type:     binarytree, codetemplate
 :END:
 ---------------------------------------------------------------------
 Minimum Absolute Difference in BST

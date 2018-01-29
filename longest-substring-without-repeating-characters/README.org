@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #twopointer
+:type:     twopointer
 :END:
 ---------------------------------------------------------------------
 Longest Substring Without Repeating Characters
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/substring-with-concatenation-of-all-words][Leetcode: Substring with Concatenation of All Words]]
-- Tag: [[http://brain.dennyzhang.com/tag/twopointer][#twopointer]]
+- Tag: [[http://brain.dennyzhang.com/tag/twopointer][twopointer]]
 ---------------------------------------------------------------------
 Given a string, find the length of the longest substring without repeating characters.
 

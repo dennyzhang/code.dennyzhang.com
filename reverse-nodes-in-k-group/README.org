@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #reverseitem, #linkedlist, #manydetails
+:type:     reverseitem, linkedlist, manydetails
 :END:
 ---------------------------------------------------------------------
 Reverse Nodes in k-Group

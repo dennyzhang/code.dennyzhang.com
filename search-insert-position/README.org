@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarysearch, #codetemplate, #redo
+:type:     #binarysearch, codetemplate, #redo
 :END:
 ---------------------------------------------------------------------
 Search Insert Position

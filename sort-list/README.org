@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #linkedlist, #redo, #codetemplate, #classic, #recursive
+:type:     linkedlist, #redo, codetemplate, classic, recursive
 :END:
 ---------------------------------------------------------------------
 Sort linked list

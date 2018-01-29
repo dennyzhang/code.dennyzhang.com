@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #bfs
+:type:     binarytree, bfs
 :END:
 ---------------------------------------------------------------------
 Binary Tree Level Order Traversal II

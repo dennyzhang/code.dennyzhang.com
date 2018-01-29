@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #codetemplate, #bitmanipulation
+:type:     codetemplate, bitmanipulation
 :END:
 ---------------------------------------------------------------------
 Number of 1 Bits

@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #monotonestack, #inspiring
+:type:     monotonestack, inspiring
 :END:
 ---------------------------------------------------------------------
 Maximal Rectangle
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/largest-rectangle-in-histogram][Leetcode: Largest Rectangle in Histogram]]
-- Tag: [[https://brain.dennyzhang.com/tag/monotonestack][#monotonestack]]
+- Tag: [[https://brain.dennyzhang.com/tag/monotonestack][monotonestack]]
 ---------------------------------------------------------------------
 Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 

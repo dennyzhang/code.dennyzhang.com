@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #binarysearch
+:type:     binarytree, #binarysearch
 :END:
 ---------------------------------------------------------------------
 Lowest Common Ancestor of a Binary Search Tree

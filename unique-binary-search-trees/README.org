@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #binarytree, #dynamicprogramming, #codetemplate, #inspiring
+:type:     binarytree, dynamicprogramming, codetemplate, inspiring
 :END:
 ---------------------------------------------------------------------
 Unique Binary Search Trees

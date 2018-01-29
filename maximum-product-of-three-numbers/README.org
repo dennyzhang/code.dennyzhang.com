@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #inspiring, #manydetails, #redo
+:type:     inspiring, manydetails, #redo
 :END:
 ---------------------------------------------------------------------
 Maximum Product of Three Numbers

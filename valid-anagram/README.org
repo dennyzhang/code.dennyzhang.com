@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #anagram
+:type:     anagram
 :END:
 ---------------------------------------------------------------------
 Given two strings s and t, write a function to determine if t is an anagram of s.

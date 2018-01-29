@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #linkedlist, #manydetails
+:type:     linkedlist, manydetails
 :END:
 ---------------------------------------------------------------------
 Reorder List

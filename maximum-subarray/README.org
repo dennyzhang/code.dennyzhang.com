@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #inspiring, #subarray, #redo
+:type:     inspiring, subarray, #redo
 :END:
 ---------------------------------------------------------------------
 Maximum Subarray

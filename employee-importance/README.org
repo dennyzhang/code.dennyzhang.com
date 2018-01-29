@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #bfs, #dfs, #graph, #codetemplate
+:type:     bfs, dfs, graph, codetemplate
 :END:
 ---------------------------------------------------------------------
 Employee Importance
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[http://brain.dennyzhang.com/tag/graph][graph]]
 ---------------------------------------------------------------------
 You are given a data structure of employee information, which includes the employee's unique id, his importance value and his direct subordinates' id.
 

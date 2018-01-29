@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #findnumber, #binarysearch
+:type:     findnumber, #binarysearch
 :END:
 ---------------------------------------------------------------------
 Find the only one duplicate number
