@@ -8,7 +8,7 @@ Basic Calculator III
 ---
 
 Similar Problems:  
--   Tag: [#stack](https://brain.dennyzhang.com/tag/stack)
+-   Tag: [stack](https://brain.dennyzhang.com/tag/stack)
 
 ---
 

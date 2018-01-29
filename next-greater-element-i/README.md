@@ -9,7 +9,7 @@ Next Greater Element I
 
 Similar Problems:  
 -   [Leetcode: Daily Temperatures](https://brain.dennyzhang.com/daily-temperatures)
--   Tag: [#monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
+-   Tag: [monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
 
 ---
 

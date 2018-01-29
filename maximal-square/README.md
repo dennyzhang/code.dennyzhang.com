@@ -8,7 +8,7 @@ Maximal Square
 ---
 
 Similar Problems:  
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   Tag: [dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

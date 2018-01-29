@@ -8,7 +8,7 @@ Sliding Puzzle
 ---
 
 Similar Problems:  
--   Tag: [#graph](http://brain.dennyzhang.com/tag/graph)
+-   Tag: [graph](http://brain.dennyzhang.com/tag/graph)
 
 ---
 

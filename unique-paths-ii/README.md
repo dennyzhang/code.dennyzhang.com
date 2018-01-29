@@ -9,7 +9,7 @@ Unique Paths II
 
 Similar Problems:  
 -   [Leetcode: Unique Paths](https://brain.dennyzhang.com/unique-paths)
--   Tag: [#dynamicprogramming](http://brain.dennyzhang.com/tag/dynamicprogramming)
+-   Tag: [dynamicprogramming](http://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

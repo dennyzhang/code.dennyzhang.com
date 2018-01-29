@@ -9,7 +9,7 @@ Substring with Concatenation of All Words
 
 Similar Problems:  
 -   [Leetcode: Longest Substring Without Repeating Characters](https://brain.dennyzhang.com/longest-substring-without-repeating-characters)
--   Tag: [#twopointer](http://brain.dennyzhang.com/tag/twopointer)
+-   Tag: [twopointer](http://brain.dennyzhang.com/tag/twopointer)
 
 ---
 

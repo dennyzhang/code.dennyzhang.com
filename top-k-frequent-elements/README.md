@@ -8,7 +8,7 @@ Top K Frequent Elements
 ---
 
 Similar Problems:  
--   Tag: [#topk](https://brain.dennyzhang.com/tag/topk)
+-   Tag: [topk](https://brain.dennyzhang.com/tag/topk)
 
 ---
 

@@ -8,7 +8,7 @@ Open the Lock
 ---
 
 Similar Problems:  
--   Tag: [#bfs](http://brain.dennyzhang.com/tag/bfs)
+-   Tag: [bfs](http://brain.dennyzhang.com/tag/bfs)
 
 ---
 

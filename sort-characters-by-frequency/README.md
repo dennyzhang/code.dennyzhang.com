@@ -8,7 +8,7 @@ Sort Characters By Frequency
 ---
 
 Similar Problems:  
--   Tag: [#heap](https://brain.dennyzhang.com/tag/heap)
+-   Tag: [heap](https://brain.dennyzhang.com/tag/heap)
 
 ---
 

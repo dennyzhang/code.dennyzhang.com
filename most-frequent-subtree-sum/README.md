@@ -8,7 +8,7 @@ Most Frequent Subtree Sum
 ---
 
 Similar Problems:  
--   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   Tag: [binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
 ---
 

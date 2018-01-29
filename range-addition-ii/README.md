@@ -8,7 +8,7 @@ Range Addition II
 ---
 
 Similar Problems:  
--   Tag: [#math](http://brain.dennyzhang.com/tag/math)
+-   Tag: [math](http://brain.dennyzhang.com/tag/math)
 
 ---
 
