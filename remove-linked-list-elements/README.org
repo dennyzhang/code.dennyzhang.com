@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, linkedlist
+:type:     linkedlist
 :END:
 ---------------------------------------------------------------------
 Remove Linked List Elements

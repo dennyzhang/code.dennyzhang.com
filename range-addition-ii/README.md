@@ -8,7 +8,7 @@ Range Addition II
 ---
 
 Similar Problems:  
--   Tag: [math](http://brain.dennyzhang.com/tag/math)
+-   Tag: [#math](https://brain.dennyzhang.com/tag/math)
 
 ---
 
@@ -53,7 +53,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-addition-ii/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/range-addition-ii
+    ## Blog link: https://brain.dennyzhang.com/range-addition-ii
     ## Basic Ideas: The biggest number will happen in the left-corner
     ##             min(ops_i) * min(ops_j)
     ##

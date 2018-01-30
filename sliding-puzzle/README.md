@@ -8,7 +8,7 @@ Sliding Puzzle
 ---
 
 Similar Problems:  
--   Tag: [graph](http://brain.dennyzhang.com/tag/graph)
+-   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
 
 ---
 
@@ -54,7 +54,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sliding-puzzle/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/sliding-puzzle
+    ## Blog link: https://brain.dennyzhang.com/sliding-puzzle
     ## Basic Ideas: BFS: find the mininum path from point1 to point2
     ##
     ## Complexity:
@@ -100,9 +100,8 @@ Leave me comments, if you have better ways to solve.
                     if matrix[i][j] == '0':
                         i0, j0 = i, j
             # get next: 
-            steps = [(-1, 0), (1, 0), (0, 1), (0, -1)]
-            for (offset_i, offset_j) in steps:
-                i2, j2 = i0+offset_i, j0+offset_j
+            for (ik, jk) in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
+                i2, j2 = i0+ik, j0+jk
                 if i2<0 or i2 >= 2 or j2<0 or j2>=3: continue
                 matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
                 newState = self.toString(matrix)

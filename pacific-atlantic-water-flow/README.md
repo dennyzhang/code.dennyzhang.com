@@ -8,7 +8,7 @@ Pacific Atlantic Water Flow
 ---
 
 Similar Problems:  
--   Tag: [graph](http://brain.dennyzhang.com/tag/graph)
+-   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
 
 ---
 
@@ -38,10 +38,10 @@ Example:
     
     [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with parentheses in above matrix).
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/pacific-atlantic-water-flow)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)  
+Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/pacific-atlantic-water-flow
+    ## Blog link: https://brain.dennyzhang.com/majority-element-ii

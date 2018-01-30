@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     removeitem, codetemplate
+:type:     removeitem
 :END:
 ---------------------------------------------------------------------
 Given an array and a value, remove all instances of that value in-place and return the new length.

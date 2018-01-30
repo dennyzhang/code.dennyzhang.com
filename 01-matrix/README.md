@@ -8,7 +8,7 @@
 ---
 
 Similar Problems:  
--   Tag: [graph](http://brain.dennyzhang.com/tag/graph)
+-   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
 
 ---
 
@@ -50,7 +50,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/01-matrix/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/01-matrix
+    ## Blog link: https://brain.dennyzhang.com/01-matrix
     ## Basic Ideas:
     ##        There are two types of 1: Adjacent nodes have 0; don't have
     ##

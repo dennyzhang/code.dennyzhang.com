@@ -2,11 +2,16 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, binarytree
+:type:     binarytree
 :END:
 ---------------------------------------------------------------------
 Given a binary tree, determine if it is height-balanced
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/count-complete-tree-nodes][Count Complete Tree Nodes]]
+- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+
 Given a binary tree, determine if it is height-balanced.
 
 For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.

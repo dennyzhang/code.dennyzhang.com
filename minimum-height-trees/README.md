@@ -8,7 +8,7 @@ Minimum Height Trees
 ---
 
 Similar Problems:  
--   Tag: [#basic](http://brain.dennyzhang.com/tag/basic)
+-   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
 
 ---
 
@@ -54,4 +54,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-height-trees/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/minimum-height-trees
+    ## Blog link: https://brain.dennyzhang.com/minimum-height-trees

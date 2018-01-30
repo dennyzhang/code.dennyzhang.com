@@ -8,7 +8,7 @@ Open the Lock
 ---
 
 Similar Problems:  
--   Tag: [bfs](http://brain.dennyzhang.com/tag/bfs)
+-   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -59,7 +59,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/open-the-lock/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/open-the-lock
+    ## Blog link: https://brain.dennyzhang.com/open-the-lock
     ## Basic Ideas: BFS
     ##       dead_set, visited_set, queue
     ##

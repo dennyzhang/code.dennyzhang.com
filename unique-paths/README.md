@@ -9,7 +9,7 @@ Unique Paths
 
 Similar Problems:  
 -   [Leetcode: Unique Paths II](https://brain.dennyzhang.com/unique-paths-ii)
--   Tag: [dynamicprogramming](http://brain.dennyzhang.com/tag/dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-paths/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: http://brain.dennyzhang.com/unique-paths
+    ## Blog link: https://brain.dennyzhang.com/unique-paths
     ## Basic Ideas: Dynamic programming
     ##              For the previous step of finish point, it should come from either up or left
     ##              f(i, j) = f(i-1, j) + f(j, j-1)
