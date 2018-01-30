@@ -8,7 +8,7 @@
 01 Matrix
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/graph][graph]]
+- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]]
 ---------------------------------------------------------------------
 Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
 
@@ -51,7 +51,7 @@ Credits To: [[url-external:https://leetcode.com/problems/01-matrix/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/01-matrix
+## Blog link: https://brain.dennyzhang.com/01-matrix
 ## Basic Ideas:
 ##        There are two types of 1: Adjacent nodes have 0; don't have
 ##

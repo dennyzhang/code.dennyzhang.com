@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, codetemplate
+:type:     game, codetemplate, bfs
 :END:
 ---------------------------------------------------------------------
 Sliding Puzzle
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/graph][graph]]
+- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]]
 ---------------------------------------------------------------------
 On a 2x3 board, there are 5 tiles represented by the integers 1 through 5, and an empty square represented by 0.
 
@@ -58,7 +58,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sliding-puzzle/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/sliding-puzzle
+## Blog link: https://brain.dennyzhang.com/sliding-puzzle
 ## Basic Ideas: BFS: find the mininum path from point1 to point2
 ##
 ## Complexity:
@@ -104,9 +104,8 @@ class Solution(object):
                 if matrix[i][j] == '0':
                     i0, j0 = i, j
         # get next: 
-        steps = [(-1, 0), (1, 0), (0, 1), (0, -1)]
-        for (offset_i, offset_j) in steps:
-            i2, j2 = i0+offset_i, j0+offset_j
+        for (ik, jk) in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
+            i2, j2 = i0+ik, j0+jk
             if i2<0 or i2 >= 2 or j2<0 or j2>=3: continue
             matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
             newState = self.toString(matrix)

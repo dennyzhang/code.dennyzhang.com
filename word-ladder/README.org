@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, bfs, graph
+:type:     codetemplate, bfs, graph, string
 :END:
 ---------------------------------------------------------------------
 Word Ladder

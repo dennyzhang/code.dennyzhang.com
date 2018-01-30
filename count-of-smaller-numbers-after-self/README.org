@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     #misc
 :END:
 ---------------------------------------------------------------------
 Count of Smaller Numbers After Self
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[http://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
 ---------------------------------------------------------------------
 You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
 
@@ -30,6 +30,6 @@ Credits To: [[url-external:https://leetcode.com/problems/count-of-smaller-number
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/count-of-smaller-numbers-after-self
+## Blog link: https://brain.dennyzhang.com/count-of-smaller-numbers-after-self
 
 #+END_SRC

@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer
+:type:     #twopointer
 :END:
 ---------------------------------------------------------------------
 Longest Substring Without Repeating Characters
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/substring-with-concatenation-of-all-words][Leetcode: Substring with Concatenation of All Words]]
-- Tag: [[http://brain.dennyzhang.com/tag/twopointer][twopointer]]
+- Tag: [[https://brain.dennyzhang.com/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a string, find the length of the longest substring without repeating characters.
 
@@ -28,7 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-substring-witho
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: http://brain.dennyzhang.com/longest-substring-without-repeating-characters
+## Blog link: https://brain.dennyzhang.com/longest-substring-without-repeating-characters
 ## Basic Ideas: two pointer: slow and fast
 ##           If duplicate, the fast pointer don't need to turn back.
 ## Complexity Time O(n), Space O(1)
