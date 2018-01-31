@@ -17,7 +17,7 @@ Shuffle a set of numbers without duplicates.
 Example:  
 
     // Init an array with set 1, 2, and 3.
-    int nums = {1,2,3};
+    int[] nums = {1,2,3};
     Solution solution = new Solution(nums);
     
     // Shuffle the array [1,2,3] and return its result. Any permutation of [1,2,3] must equally likely to be returned.
@@ -39,7 +39,10 @@ Leave me comments, if you have better ways to solve.
     ## Basic Ideas: Fisher–Yates shuffle
     ##        What if nums only has 0 or 1 element?
     ##
-    ## Complexity: Time O(n*n), Space O(n)
+    ##        What if you generate a value, and map it into nums[i] and num[j]. Then swap these two?
+    ##        This won't work. Because the original combination will never be returned by shuffle() function.
+    ##
+    ## Complexity: Time O(n), Space O(n)
     
     import copy
     import random
