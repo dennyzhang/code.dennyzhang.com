@@ -1,8 +1,8 @@
-* Leetcode: Shuffle an Array                                              :BLOG:Medium:
+* Leetcode: Shuffle an Array                                    :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, fisheryatesshuffle
+:type:     designquestion, fisheryatesshuffle, randomize
 :END:
 ---------------------------------------------------------------------
 Shuffle an Array
@@ -39,7 +39,10 @@ Leave me comments, if you have better ways to solve.
 ## Basic Ideas: Fisher–Yates shuffle
 ##        What if nums only has 0 or 1 element?
 ##
-## Complexity: Time O(n*n), Space O(n)
+##        What if you generate a value, and map it into nums[i] and num[j]. Then swap these two?
+##        This won't work. Because the original combination will never be returned by shuffle() function.
+##
+## Complexity: Time O(n), Space O(n)
 
 import copy
 import random
