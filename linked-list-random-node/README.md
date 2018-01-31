@@ -1,41 +1,83 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Linked List Random Node     :BLOG:Amusing:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Linked List Random Node  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#reservoirsampling](https://brain.dennyzhang.com/tag/reservoirsampling)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
 
-Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.  
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Follow up:  
+What if the linked list is extremely large and its length is unknown to you? Could you solve this efficiently without using extra space?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+Example:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+    // Init a singly linked list [1,2,3].
+    ListNode head = new ListNode(1);
+    head.next = new ListNode(2);
+    head.next.next = new ListNode(3);
+    Solution solution = new Solution(head);
+    
+    // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
+    solution.getRandom();
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-random-node)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-random-node/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
+    ## Blog link: https://brain.dennyzhang.com/linked-list-random-node
+    ## Basic Ideas: Reservoir Sampling
+    ##      Choose k element from a huge list without knowing the length
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    ##
+    # Definition for singly-linked list.
+    # class ListNode(object):
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.next = None
+    
+    import random
     class Solution(object):
-        def isPalindrome(self, s):
+    
+        def __init__(self, head):
             """
-            :type s: str
-            :rtype: bool
+            @param head The linked list's head.
+            Note that the head is guaranteed to be not null, so it contains at least one node.
+            :type head: ListNode
             """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+            self.head = head
+    
+        def getRandom(self):
+            """
+            Returns a random node's value.
+            :rtype: int
+            """
+            if self.head is None: return None
+            if self.head.next is None: return self.head.val
+    
+            res = self.head.val
+            p = self.head.next
+            i = 2
+            while p:
+                # Keep with possibility of 1/i
+                random_v = random.randint(1, i)
+                # Why we won't quit?
+                if random_v == 1:
+                    res = p.val
+                p = p.next
+                i = i+1
+            return res
+    
+    # Your Solution object will be instantiated and called as such:
+    # obj = Solution(head)
+    # param_1 = obj.getRandom()
