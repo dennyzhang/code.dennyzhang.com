@@ -1,0 +1,52 @@
+* Leetcode: Word Search II                                       :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Word Search II
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/backtracking][#backtracking]]
+---------------------------------------------------------------------
+Given a 2D board and a list of words from the dictionary, find all words in the board.
+
+Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+
+For example,
+#+BEGIN_EXAMPLE
+Given words = ["oath","pea","eat","rain"] and board =
+
+[
+  ['o','a','a','n'],
+  ['e','t','a','e'],
+  ['i','h','k','r'],
+  ['i','f','l','v']
+]
+Return ["eat","oath"].
+#+END_EXAMPLE
+
+Note:
+You may assume that all inputs are consist of lowercase letters a-z.
+
+#+BEGIN_EXAMPLE
+You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?
+
+If the current candidate does not exist in all words' prefix, you
+could stop backtracking immediately. What kind of data structure could
+answer such query efficiently? Does a hash table work? Why or why not?
+How about a Trie? If you would like to learn how to implement a basic
+trie, please work on this problem: Implement Trie (Prefix Tree) first.
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-search-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/word-search-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/word-search-ii
+
+#+END_SRC

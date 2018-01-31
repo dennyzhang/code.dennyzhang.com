@@ -12,18 +12,8 @@
 ## Complexity:
 ## --
 ## Created : <2017-10-17>
-## Updated: Time-stamp: <2017-11-12 10:59:39>
+## Updated: Time-stamp: <2018-01-30 19:22:47>
 ##-------------------------------------------------------------------
-set -e
-
-uniq_words=$(sed -e "s/ /\n/g" words.txt | sed -e "s/\\n/\n/g" | sort | grep -v '^$' | uniq)
-output=""
-
-for uniq_word in $uniq_words; do
-    #echo "$uniq_word"
-    count=$(grep $uniq_word words.txt | sed -e "s/ /\n/g" | grep "^${uniq_word}"'$' | wc -l)
-    output="${output}\n${uniq_word} ${count}"
-done
-
-echo -e "$output" | grep -v '^$' | sort -n -k 2 -r
-## File: hello ends
+# Read from the file words.txt and output the word frequency list to stdout.
+cat words.txt | tr -s ' ' '\
+' | sort | uniq -c | sort -r | awk '{print $2, $1}'
