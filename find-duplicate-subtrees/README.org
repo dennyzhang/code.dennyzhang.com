@@ -1,0 +1,50 @@
+* Leetcode: Find Duplicate Subtrees                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Find Duplicate Subtrees
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+---------------------------------------------------------------------
+Given a binary tree, return all duplicate subtrees. For each kind of duplicate subtrees, you only need to return the root node of any one of them.
+
+Two trees are duplicate if they have the same structure with same node values.
+
+Example 1: 
+#+BEGIN_EXAMPLE
+        1
+       / \
+      2   3
+     /   / \
+    4   2   4
+       /
+      4
+#+END_EXAMPLE
+
+The following are two duplicate subtrees:
+#+BEGIN_EXAMPLE
+      2
+     /
+    4
+#+END_EXAMPLE
+and
+#+BEGIN_EXAMPLE
+    4
+#+END_EXAMPLE
+
+Therefore, you need to return above trees' root in the form of a list.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-duplicate-subtrees][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/find-duplicate-subtrees/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/find-duplicate-subtrees
+
+#+END_SRC
