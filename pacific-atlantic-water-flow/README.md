@@ -38,10 +38,10 @@ Example:
     
     [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with parentheses in above matrix).
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/pacific-atlantic-water-flow)  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/majority-element-ii
+    ## Blog link: https://brain.dennyzhang.com/pacific-atlantic-water-flow

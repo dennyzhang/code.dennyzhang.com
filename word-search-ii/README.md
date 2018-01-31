@@ -1,41 +1,48 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Word Search II     :BLOG:Hard:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Word Search II  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#backtracking](https://brain.dennyzhang.com/tag/backtracking)
+
+---
+
+Given a 2D board and a list of words from the dictionary, find all words in the board.  
+
+Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.  
 
 For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+
+    Given words = ["oath","pea","eat","rain"] and board =
+    
+    [
+      ['o','a','a','n'],
+      ['e','t','a','e'],
+      ['i','h','k','r'],
+      ['i','f','l','v']
+    ]
+    Return ["eat","oath"].
 
 Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+You may assume that all inputs are consist of lowercase letters a-z.  
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+    You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?
+    
+    If the current candidate does not exist in all words' prefix, you
+    could stop backtracking immediately. What kind of data structure could
+    answer such query efficiently? Does a hash table work? Why or why not?
+    How about a Trie? If you would like to learn how to implement a basic
+    trie, please work on this problem: Implement Trie (Prefix Tree) first.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-search-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/word-search-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+    ## Blog link: https://brain.dennyzhang.com/word-search-ii

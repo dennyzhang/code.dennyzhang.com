@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
             :type timePoints: List[str]
             :rtype: int
             """
-            l = 
+            l = []
             setPoints = set(timePoints)
             # duplicate entries
             if len(setPoints) != len(timePoints):

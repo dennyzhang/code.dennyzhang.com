@@ -1,41 +1,47 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Valid Parenthesis String     :BLOG:Amusing:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Valid Parenthesis String  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
+
+Given a string containing only three types of characters: '(', ')' and '\*', write a function to check whether this string is valid. We define the validity of a string by these rules:  
+
+Any left parenthesis '(' must have a corresponding right parenthesis ')'.  
+Any right parenthesis ')' must have a corresponding left parenthesis '('.  
+Left parenthesis '(' must go before the corresponding right parenthesis ')'.  
+'\*' could be treated as a single right parenthesis ')' or a single left parenthesis '(' or an empty string.  
+An empty string is also valid.  
+
+Example 1:  
+
+    Input: "()"
+    Output: True
+
+Example 2:  
+
+    Input: "(*)"
+    Output: True
+
+Example 3:  
+
+    Input: "(*))"
+    Output: True
 
 Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+-   The string size will be in the range [1, 100].
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-parenthesis-string)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
-
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-parenthesis-string/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+    ## Blog link: https://brain.dennyzhang.com/valid-parenthesis-string

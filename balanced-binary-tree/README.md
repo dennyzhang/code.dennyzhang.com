@@ -7,6 +7,12 @@ Given a binary tree, determine if it is height-balanced
 
 ---
 
+Similar Problems:  
+-   [Count Complete Tree Nodes](https://brain.dennyzhang.com/count-complete-tree-nodes)
+-   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+
+---
+
 Given a binary tree, determine if it is height-balanced.  
 
 For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.  

@@ -1,41 +1,47 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Find Duplicate Subtrees     :BLOG:Basic:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Find Duplicate Subtrees  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
 
-Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+Given a binary tree, return all duplicate subtrees. For each kind of duplicate subtrees, you only need to return the root node of any one of them.  
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Two trees are duplicate if they have the same structure with same node values.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+Example 1:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+        1
+       / \
+      2   3
+     /   / \
+    4   2   4
+       /
+      4
+
+The following are two duplicate subtrees:  
+
+      2
+     /
+    4
+
+and  
+
+    4
+
+Therefore, you need to return above trees' root in the form of a list.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-duplicate-subtrees)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/find-duplicate-subtrees/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+    ## Blog link: https://brain.dennyzhang.com/find-duplicate-subtrees
