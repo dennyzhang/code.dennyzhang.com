@@ -1,8 +1,8 @@
-* Leetcode: Maximum Product Subarray                                              :BLOG:Medium:
+* Leetcode: Maximum Product Subarray                                              :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, subarray, inspiring
+:type:     dynamicprogramming, subarray, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Maximum Product Subarray
