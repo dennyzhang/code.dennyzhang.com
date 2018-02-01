@@ -7,6 +7,13 @@ Maximum Length of Repeated Subarray
 
 ---
 
+Similar Problems:  
+-   [Longest Substring Without Repeating Characters](https://brain.dennyzhang.com/longest-substring-without-repeating-characters)
+-   [Minimum Window Substring](https://brain.dennyzhang.com/minimum-window-substring)
+-   [Repeated Substring Pattern](https://brain.dennyzhang.com/repeated-substring)
+
+---
+
 Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.  
 
     Example 1:

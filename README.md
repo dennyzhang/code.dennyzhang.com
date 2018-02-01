@@ -28,7 +28,7 @@ http://brain.dennyzhang.com/contact
 
 People will ask silly algorithm questions.
 
-<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
+<a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 
 # About Code Interview
 ## General Procedure
@@ -62,8 +62,6 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
      | grep -v Description | grep -v "\-\-" | grep -v "File:" | grep -v "^$" | grep https
 ```
 
-<a href="https://www.dennyzhang.com"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns.png"></a>
-
 ## Grow Influence
 - Why people would want to use your GitHub repo?
   TODO: think about it!
@@ -81,6 +79,8 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 - https://siddontang.gitbooks.io/leetcode-solution/content/
 - https://github.com/algorhythms/LeetCode
 - https://github.com/jw2013/Leetcode-Py
+
+<a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
