@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, subsequence
+:type:     codetemplate
 :END:
 ---------------------------------------------------------------------
 Max Consecutive Ones
@@ -21,8 +21,6 @@ Note:
 - The input array will only contain 0 and 1.
 - The length of input array is a positive integer and will not exceed 10,000
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-consecutive-ones][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/max-consecutive-ones/description/][leetcode.com]]
@@ -32,7 +30,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
 class Solution(object):
     ## Blog link: https://brain.dennyzhang.com/max-consecutive-ones
-## Basic Ideas:  counter
+    ## Basic Ideas:  counter
     ##               If found one 0, reset the counter to 0. Otherwise counter + 1
     ##
     ## Complexity: Time O(n), Space O(1)
@@ -50,8 +48,7 @@ class Solution(object):
                 counter = 0
         return max_count
 
-    ## Blog link: https://brain.dennyzhang.com/max-consecutive-ones
-## Basic Ideas: Two pointers
+    ## Ideas: Two pointers
     ##              i points to the start of consecutive of 1s
     ##              j points to the next element of the end of consecutive of 1s.
     ##

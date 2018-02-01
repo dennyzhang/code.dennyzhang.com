@@ -1,8 +1,8 @@
-* Leetcode: Valid Parenthesis String                                              :BLOG:Amusing:
+* Leetcode: Valid Parenthesis String                           :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     parenthesis, string
+:type:     parentheses, string
 :END:
 ---------------------------------------------------------------------
 Valid Parenthesis String
