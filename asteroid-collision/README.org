@@ -8,7 +8,7 @@
 Asteroid Collision
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 We are given an array asteroids of integers representing asteroids in a row.
 

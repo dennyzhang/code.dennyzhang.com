@@ -8,7 +8,7 @@
 Valid Parenthesis String
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Given a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid. We define the validity of a string by these rules:
 

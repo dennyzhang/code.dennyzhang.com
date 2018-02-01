@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+function my_test() {
+   for f in $(find . -name README.org); do
+        dirname=$(basename $(dirname $f))
+        echo "Update blog url for $f"
+        sed -ie "s/https:\/\/brain.dennyzhang.com\/tag\/basic/https:\/\/brain.dennyzhang.com\/category\/basic/g" $f
+        rm -rf $dirname/README.orge
+        #exit
+   done
+}
+
 function refresh_link() {
     echo "refresh link"
     for f in $(find . -name README.org); do
@@ -41,10 +51,13 @@ case "$action" in
     refresh_link)
         refresh_link
         ;;
+    my_test)
+        my_test
+        ;;
     refresh_md)
         refresh_md
         ;;
         *) 
-            echo "no matched action. Supported: refresh_link|refresh_md"
-            ;;
+        echo "no matched action. Supported: refresh_link|refresh_md"
+        ;;
 esac

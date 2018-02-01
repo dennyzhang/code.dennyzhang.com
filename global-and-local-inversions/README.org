@@ -8,7 +8,7 @@
 Global and Local Inversions
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 We have some permutation A of [0, 1, ..., N - 1], where N is the length of A.
 

@@ -8,7 +8,7 @@
 Split Array into Consecutive Subsequences
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 You are given an integer array sorted in ascending order (may contain duplicates), you need to split them into several subsequences, where each subsequences consist of at least 3 consecutive integers. Return whether you can make such a split.
 

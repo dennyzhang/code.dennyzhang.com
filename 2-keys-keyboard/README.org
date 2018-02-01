@@ -8,7 +8,7 @@
 2 Keys Keyboard
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:
 

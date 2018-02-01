@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
     
             # always move right by 1 step
             for right in range(0, length):
-                sum_v = sum_v + nums[right]
+                sum_v += nums[right]
                 while sum_v >=s:
                     min_length = min(min_length, right-left+1)
                     # left won't pass right. Why? Because s>0

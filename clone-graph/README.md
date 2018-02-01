@@ -8,7 +8,7 @@ Clone Graph
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
+-   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
 
 ---
 

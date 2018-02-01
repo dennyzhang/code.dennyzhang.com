@@ -8,7 +8,7 @@
 Top K Frequent Words
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Given a non-empty list of words, return the k most frequent elements.
 

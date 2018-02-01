@@ -8,7 +8,7 @@
 Heaters
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Winter is coming! Your first job during the contest is to design a standard heater with fixed warm radius to warm all the houses.
 

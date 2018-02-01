@@ -8,7 +8,7 @@
 Basic Calculator II
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Implement a basic calculator to evaluate a simple expression string.
 

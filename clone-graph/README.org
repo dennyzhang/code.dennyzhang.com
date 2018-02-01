@@ -8,7 +8,7 @@
 Clone Graph
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
 
