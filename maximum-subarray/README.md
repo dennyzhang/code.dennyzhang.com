@@ -30,3 +30,31 @@ Leave me comments, if you have better ways to solve.
             :type nums: List[int]
             :rtype: int
             """
+    ## Basic Ideas: Dynamic programming
+    ##              Get sums[i]: it's the sum from nums[0] to nums[i]
+    ##
+    ##              f(n) = max(f(n-1), sums[n], sums[n] - min(sums))
+    ##
+    ## Complexity: Time O(n), Space (n)
+    class Solution:
+        def maxSubArray(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: int
+            """
+            length = len(nums)
+            sums = [0] * length
+            sum_v = 0
+            for i in range(0, length):
+                sum_v += nums[i]
+                sums[i] = sum_v
+    
+            # start from the very beginning
+            min_sum = 0
+            max_list = [0]*length
+            # the first element
+            max_list[0] = sums[0]
+            for i in range(0, length-1):
+                min_sum = min(min_sum, sums[i])
+                max_list[i+1] = max(max_list[i], sums[i+1], sums[i+1]-min_sum)
+            return max_list[-1]
