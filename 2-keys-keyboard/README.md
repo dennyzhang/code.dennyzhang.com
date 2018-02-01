@@ -1,41 +1,60 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: 2 Keys Keyboard     :BLOG:Amusing:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+2 Keys Keyboard  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
+
+Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:  
+
+1.  ****Copy All****: You can copy all the characters present on the notepad (partial copy is not allowed).
+2.  ****Paste****: You can paste the characters which are copied last time.
+
+Given a number n. You have to get exactly n 'A' on the notepad by performing the minimum number of steps permitted. Output the minimum number of steps to get n 'A'.  
+
+Example 1:  
+
+    Input: 3
+    Output: 3
+    Explanation:
+    Intitally, we have one character 'A'.
+    In step 1, we use Copy All operation.
+    In step 2, we use Paste operation to get 'AA'.
+    In step 3, we use Paste operation to get 'AAA'.
 
 Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+-   The n will be in the range [1, 1000].
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/2-keys-keyboard)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
-
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/2-keys-keyboard/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
+    ## Blog link: https://brain.dennyzhang.com/2-keys-keyboard
+    ## Basic Ideas: Dynamic programming
+    ##
+    ## Complexity: Time O(n*n), Space O(n)
+    class Solution:
+        def minSteps(self, n):
             """
-            :type s: str
-            :rtype: bool
+            :type n: int
+            :rtype: int
             """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+            d = list(range(0, n+1))
+            d[1] = 0
+            # from left to right
+            for i in range(2, n+1):
+                for j in range(i-1, 1, -1):
+                    # why this solution holds?
+                    if i%j == 0:
+                        d[i]= d[j] + int(i/j)
+                        break
+            return d[n]

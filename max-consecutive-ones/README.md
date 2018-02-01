@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 
     class Solution(object):
         ## Blog link: https://brain.dennyzhang.com/max-consecutive-ones
-    ## Basic Ideas:  counter
+        ## Basic Ideas:  counter
         ##               If found one 0, reset the counter to 0. Otherwise counter + 1
         ##
         ## Complexity: Time O(n), Space O(1)
@@ -46,8 +46,7 @@ Leave me comments, if you have better ways to solve.
                     counter = 0
             return max_count
     
-        ## Blog link: https://brain.dennyzhang.com/max-consecutive-ones
-    ## Basic Ideas: Two pointers
+        ## Ideas: Two pointers
         ##              i points to the start of consecutive of 1s
         ##              j points to the next element of the end of consecutive of 1s.
         ##

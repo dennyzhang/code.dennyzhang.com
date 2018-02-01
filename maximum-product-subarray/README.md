@@ -1,4 +1,4 @@
-# Leetcode: Maximum Product Subarray     :BLOG:Medium:
+# Leetcode: Maximum Product Subarray     :BLOG:Hard:
 
 
 ---

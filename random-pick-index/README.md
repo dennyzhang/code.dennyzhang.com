@@ -1,41 +1,72 @@
-# Leetcode: Valid Palindrome     :BLOG:Basic:
+# Leetcode: Random Pick Index     :BLOG:Medium:
 
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Random Pick Index  
 
 ---
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.  
+Similar Problems:  
+-   Tag: [#reservoirsampling](https://brain.dennyzhang.com/tag/reservoirsampling)
 
-For example,  
-"A man, a plan, a canal: Panama" is a palindrome.  
-"race a car" is not a palindrome.  
+---
+
+Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.  
 
 Note:  
-Have you consider that the string might be empty? This is a good question to ask during an interview.  
+The array size can be very large. Solution that uses too much extra space will not pass the judge.  
 
-For the purpose of this problem, we define empty string as valid palindrome.  
+Example:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome)  
+    int[] nums = new int[] {1,2,3,3,3};
+    Solution solution = new Solution(nums);
+    
+    // pick(3) should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.
+    solution.pick(3);
+    
+    // pick(1) should return 0. Since in the array only nums[0] is equal to 1.
+    solution.pick(1);
 
-Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/random-pick-index)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/random-pick-index/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
-    class Solution(object):
-        def isPalindrome(self, s):
+    ## Blog link: https://brain.dennyzhang.com/random-pick-index
+    ## Basic Ideas: Reservior Sampling
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    import random
+    class Solution:
+    
+        def __init__(self, nums):
             """
-            :type s: str
-            :rtype: bool
+            :type nums: List[int]
             """
-            if s == "":
-                return True
-            washed_string = []
-            for ch in s:
-                if (ch >='a' and ch <='z') or (ch >='A' and ch <='Z') or (ch >='0' and ch <='9'):
-                    washed_string.append(ch.lower())
-            # print("washed_string: %s, target: %s" % (washed_string, washed_string[::-1]))
-            return washed_string == washed_string[::-1]
+            self.nums = nums
+    
+        def pick(self, target):
+            """
+            :type target: int
+            :rtype: int
+            """
+            i, count, res = 0, 0, -1
+            for i in range(0, len(self.nums)):
+                if self.nums[i] == target:
+                    res = i
+                    count += 1
+                    break
+    
+            for i in range(res+1, len(self.nums)):
+                if self.nums[i] == target:
+                    count += 1
+                    random_v = random.randint(1, count)
+                    if random_v == 1:
+                        res = i
+            return res
+    
+    # Your Solution object will be instantiated and called as such:
+    # obj = Solution(nums)
+    # param_1 = obj.pick(target)
