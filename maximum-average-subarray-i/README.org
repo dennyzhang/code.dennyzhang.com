@@ -1,0 +1,55 @@
+* Leetcode: Maximum Average Subarray I                           :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, slidingwindow
+:END:
+---------------------------------------------------------------------
+Maximum Average Subarray I
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+---------------------------------------------------------------------
+Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. And you need to output the maximum average value.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,12,-5,-6,50,3], k = 4
+Output: 12.75
+Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
+#+END_EXAMPLE
+
+Note:
+1. 1 <= k <= n <= 30,000.
+- Elements of the given array will be in the range [-10,000, 10,000].
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-average-subarray-i][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/maximum-average-subarray-i/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/maximum-average-subarray-i
+## Basic Ideas: greedy + Sliding window
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def findMaxAverage(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: float
+        """
+        length = len(nums)
+        if length <= k: return float(sum(nums))/k
+
+        curSum = 0
+        for i in range(0, k): curSum += nums[i]
+        maxSum = curSum
+        for i in range(k, length):
+            curSum += nums[i] - nums[i-k]
+            maxSum = max(maxSum, curSum)
+
+        return float(maxSum)/k
+#+END_SRC
