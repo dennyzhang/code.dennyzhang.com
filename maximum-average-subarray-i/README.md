@@ -8,7 +8,7 @@ Maximum Average Subarray I
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
+-   Tag: [#slidingwindow](https://brain.dennyzhang.com/tag/slidingwindow)
 
 ---
 
@@ -44,8 +44,7 @@ Leave me comments, if you have better ways to solve.
             length = len(nums)
             if length <= k: return float(sum(nums))/k
     
-            curSum = 0
-            for i in range(0, k): curSum += nums[i]
+            curSum = sum(nums[0:k])
             maxSum = curSum
             for i in range(k, length):
                 curSum += nums[i] - nums[i-k]

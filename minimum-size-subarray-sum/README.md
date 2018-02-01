@@ -1,9 +1,14 @@
-# Leetcode: Minimum Size Subarray Sum     :BLOG:Basic:
+# Leetcode: Minimum Size Subarray Sum     :BLOG:Medium:
 
 
 ---
 
 Minimum Size Subarray Sum  
+
+---
+
+Similar Problems:  
+-   [Two Sum](https://brain.dennyzhang.com/two-sum)
 
 ---
 
@@ -22,3 +27,32 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-size-subarray-s
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/minimum-size-subarray-sum
+    ## Basic Ideas: Two pointers + Ge accumulated sum
+    ##              
+    ##   Corner case: 0 elements or 1 elements
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    import sys
+    class Solution:
+        def minSubArrayLen(self, s, nums):
+            """
+            :type s: int
+            :type nums: List[int]
+            :rtype: int
+            """
+            length = len(nums)
+            if length == 0: return 0
+    
+            min_length = sys.maxsize
+            left, sum_v = 0, 0
+    
+            # always move right by 1 step
+            for right in range(0, length):
+                sum_v = sum_v + nums[right]
+                while sum_v >=s:
+                    min_length = min(min_length, right-left+1)
+                    # left won't pass right. Why? Because s>0
+                    sum_v -= nums[left]
+                    left += 1
+    
+            return min_length if min_length != sys.maxsize else 0

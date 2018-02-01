@@ -1,11 +1,14 @@
-* Leetcode: Minimum Size Subarray Sum                                         :BLOG:Basic:
+* Leetcode: Minimum Size Subarray Sum                                         :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     twopointer, manydetails
 :END:
 ---------------------------------------------------------------------
 Minimum Size Subarray Sum
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/two-sum][Two Sum]]
 ---------------------------------------------------------------------
 Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum >= s. If there isn't one, return 0 instead.
 
@@ -23,4 +26,33 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/minimum-size-subarray-sum
+## Basic Ideas: Two pointers + Ge accumulated sum
+##              
+##   Corner case: 0 elements or 1 elements
+##
+## Complexity: Time O(n), Space O(1)
+import sys
+class Solution:
+    def minSubArrayLen(self, s, nums):
+        """
+        :type s: int
+        :type nums: List[int]
+        :rtype: int
+        """
+        length = len(nums)
+        if length == 0: return 0
+
+        min_length = sys.maxsize
+        left, sum_v = 0, 0
+
+        # always move right by 1 step
+        for right in range(0, length):
+            sum_v = sum_v + nums[right]
+            while sum_v >=s:
+                min_length = min(min_length, right-left+1)
+                # left won't pass right. Why? Because s>0
+                sum_v -= nums[left]
+                left += 1
+
+        return min_length if min_length != sys.maxsize else 0
 #+END_SRC
