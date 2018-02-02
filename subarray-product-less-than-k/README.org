@@ -8,6 +8,7 @@
 Subarray Product Less Than K
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/minimum-size-subarray-sum][Minimum Size Subarray Sum]]
 - [[https://brain.dennyzhang.com/subarray-sum-equals-k][Subarray Sum Equals K]]
 ---------------------------------------------------------------------
 Your are given an array of positive integers nums.
