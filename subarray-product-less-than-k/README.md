@@ -8,6 +8,7 @@ Subarray Product Less Than K
 ---
 
 Similar Problems:  
+-   [Minimum Size Subarray Sum](https://brain.dennyzhang.com/minimum-size-subarray-sum)
 -   [Subarray Sum Equals K](https://brain.dennyzhang.com/subarray-sum-equals-k)
 
 ---
@@ -36,3 +37,35 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subarray-product-less-t
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/subarray-product-less-than-k
+    ## Basic Ideas: two pointers
+    ##     All nubmers are positive integers. 
+    ##     So if we enlarge the window, the suarray product will increase.
+    ##
+    ##     right pointer move one step each time
+    ##     If product of current window is less than k, get the count of possibilities.
+    ##     Otherwise move the left
+    ##
+    ## Complexity:
+    class Solution:
+        def numSubarrayProductLessThanK(self, nums, k):
+            """
+            :type nums: List[int]
+            :type k: int
+            :rtype: int
+            """
+            length = len(nums)
+            if length == 0: return 0
+            res = 0
+            left, curProduct = 0, 1
+            for right in range(0, length):
+                curProduct *= nums[right]
+                # keep moving the left, if it's too big
+                while left <= right and curProduct >= k:
+                    curProduct = int(curProduct/nums[left])
+                    left += 1 
+    
+                # print(left, right, curProduct)
+                if curProduct < k:
+                    # get all the possilities with nums[right] chosen
+                    res += right-left+1
+            return res
