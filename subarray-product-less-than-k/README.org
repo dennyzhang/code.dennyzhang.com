@@ -1,8 +1,8 @@
-* Leetcode: Subarray Product Less Than K                         :BLOG:Basic:
+* Leetcode: Subarray Product Less Than K                         :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     subarray, twopointer
 :END:
 ---------------------------------------------------------------------
 Subarray Product Less Than K

@@ -1,0 +1,31 @@
+* Leetcode: Longest Increasing Subsequence                       :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Longest Increasing Subsequence
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+---------------------------------------------------------------------
+Given an unsorted array of integers, find the length of longest increasing subsequence.
+#+BEGIN_EXAMPLE
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.
+#+END_EXAMPLE
+
+Follow up: Could you improve it to O(n log n) time complexity?
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-increasing-subsequence][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/longest-increasing-subsequence/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/longest-increasing-subsequence
+
+#+END_SRC
