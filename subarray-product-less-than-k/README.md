@@ -1,4 +1,4 @@
-# Leetcode: Subarray Product Less Than K     :BLOG:Basic:
+# Leetcode: Subarray Product Less Than K     :BLOG:Medium:
 
 
 ---

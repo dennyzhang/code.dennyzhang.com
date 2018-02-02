@@ -1,89 +1,49 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Delete and Earn     :BLOG:Basic:
 
 
 ---
 
-N-Queens  
+Delete and Earn  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given an array nums of integers, you can perform operations on the array.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+In each operation, you pick any nums[i] and delete it to earn nums[i] points. After, you must delete every element equal to nums[i] - 1 or nums[i] + 1.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+You start with 0 points. Return the maximum number of points you can earn by applying such operations.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Example 1:  
+
+    Input: nums = [3, 4, 2]
+    Output: 6
+    Explanation: 
+    Delete 4 to earn 4 points, consequently 3 is also deleted.
+    Then, delete 2 to earn 2 points. 6 total points are earned.
+
+Example 2:  
+
+    Input: nums = [2, 2, 3, 3, 3, 4]
+    Output: 9
+    Explanation: 
+    Delete 3 to earn 3 points, deleting both 2's and the 4.
+    Then, delete 3 again to earn 3 points, and 3 again to earn 3 points.
+    9 total points are earned.
+
+Note:  
+
+-   The length of nums is at most 20000.
+-   Each element nums[i] is an integer in the range [1, 10000].
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-and-earn)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/delete-and-earn/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    ## Blog link: https://brain.dennyzhang.com/delete-and-earn

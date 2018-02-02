@@ -33,30 +33,27 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/longest-continuous-increasing-subsequence
-## Basic Ideas: bigger_count: point to how many continuous increasing subsequence
+## Basic Ideas: array has been splited as sections with increasing subsequence
+## 
+##
 ## Complexity: Time O(n), Space O(1)
-class Solution(object):
+class Solution:
     def findLengthOfLCIS(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        # empty or one element
-        if len(nums) <= 1:
-            return len(nums)
-
-        bigger_count, res = 1, 1
-        for i in range(1, len(nums)):
-            # print("bigger_count: %d, nums[i]: %d, res: %d" % (bigger_count, nums[i], res))
-            if nums[i] > nums[i-1]:
-                bigger_count += 1
+        res, cnt = 0, 0
+        for i in range(0, len(nums)):
+            if i==0 or nums[i-1] < nums[i]:
+                cnt += 1
+                res = max(res, cnt)
             else:
-                res = max(bigger_count, res)
-                bigger_count = 1
-        return max(bigger_count, res)
+                cnt = 1
+        return res
 
 s = Solution()
-print s.findLengthOfLCIS([1,3,5,7]) # 4
-print s.findLengthOfLCIS([1,3,5,4,7]) # 3
-print s.findLengthOfLCIS([2, 2, 2, 2]) # 1
+print(s.findLengthOfLCIS([1,3,5,7])) # 4
+print(s.findLengthOfLCIS([1,3,5,4,7])) # 3
+print(s.findLengthOfLCIS([2,2,2,2])) # 1
 #+END_SRC

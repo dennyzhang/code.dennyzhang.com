@@ -1,4 +1,4 @@
-# Leetcode: 132 Pattern     :BLOG:Medium:
+# Leetcode: 132 Pattern     :BLOG:Hard:
 
 
 ---

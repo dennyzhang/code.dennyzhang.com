@@ -8,6 +8,7 @@ Minimum Size Subarray Sum
 ---
 
 Similar Problems:  
+-   [Subarray Product Less Than K](https://brain.dennyzhang.com/subarray-product-less-than-k)
 -   [Two Sum](https://brain.dennyzhang.com/two-sum)
 
 ---
@@ -28,8 +29,10 @@ Leave me comments, if you have better ways to solve.
 
     ## Blog link: https://brain.dennyzhang.com/minimum-size-subarray-sum
     ## Basic Ideas: Two pointers + Ge accumulated sum
-    ##              
+    ##
     ##   Corner case: 0 elements or 1 elements
+    ##   Right pointer move one step each time.
+    ##   Left pointer don't need to move left. Why? We only need to find the minimal length
     ##
     ## Complexity: Time O(n), Space O(1)
     import sys

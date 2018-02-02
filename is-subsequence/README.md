@@ -1,89 +1,59 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Is Subsequence     :BLOG:Basic:
 
 
 ---
 
-N-Queens  
+Is Subsequence  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given a string s and a string t, check if s is subsequence of t.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
+You may assume that there is only lower case English letters in both s and t. t is potentially a very long (length ~= 500,000) string, and s is a short string (<=100).  
+
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, "ace" is a subsequence of "abcde" while "aec" is not).  
+
+Example 1:  
+
+    s = "abc", t = "ahbgdc"
     
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
+    Return true.
+
+Example 2:  
+
+    s = "axc", t = "ahbgdc"
     
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+    Return false.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Follow up:  
+If there are lots of incoming S, say S1, S2, &#x2026; , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/is-subsequence)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/is-subsequence/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
+    ## Blog link: https://brain.dennyzhang.com/is-subsequence
+    ## Basic Ideas: Greedy + Two pointer
     ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
+    ## Complexity: Time O(1), Space O(1).
+    class Solution:
+        def isSubsequence(self, s, t):
             """
-            :type n: int
-            :rtype: List[List[str]]
+            :type s: str
+            :type t: str
+            :rtype: bool
             """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+            length = len(s)
+            if length == 0: return True
+            index = 0
+            for i in range(0, len(t)):
+                if t[i] == s[index]: index += 1
+                if index == length: return True
+            return False

@@ -1,8 +1,8 @@
-* Leetcode: 132 Pattern                                        :BLOG:Medium:
+* Leetcode: 132 Pattern                                        :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, #redo
+:type:     subsequence, redo
 :END:
 ---------------------------------------------------------------------
 Check whether 132 pattern exists in the given array
