@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, trie
+:type:     designquestion, trie, redo, classic
 :END:
 ---------------------------------------------------------------------
 Implement Magic Dictionary

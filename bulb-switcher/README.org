@@ -1,0 +1,65 @@
+* Leetcode: Bulb Switcher                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math
+:END:
+---------------------------------------------------------------------
+Bulb Switcher
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/category/math][#math]]
+---------------------------------------------------------------------
+There are n bulbs that are initially off. You first turn on all the bulbs. Then, you turn off every second bulb. On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb. Find how many bulbs are on after n rounds.
+
+Example:
+#+BEGIN_EXAMPLE
+Given n = 3. 
+
+At first, the three bulbs are [off, off, off].
+After first round, the three bulbs are [on, on, on].
+After second round, the three bulbs are [on, off, on].
+After third round, the three bulbs are [on, off, off]. 
+#+END_EXAMPLE
+
+So you should return 1, because there is only one bulb is on.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bulb-switcher][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/bulb-switcher/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/bulb-switcher
+## Basic Ideas: math problem
+##     Bulbs of position n will stay on, only if it has odd divisors.
+##     Note for divisor of 1, bulb won't be changed
+##
+##     Divisors comes in pairs, except it's a square number.
+##
+##     So only position with square numbers will stay on. Like 4, 9, 16
+##     And they will be switched exactly twice.
+##          Let's say bulb4, it will be 2th and 4th.
+##
+##     For other numbers, they will be switched off.
+##
+## n = 6
+##    1  2  3  4  5  6
+## 1  
+## 2     .     .     .
+## 3        .        .
+## 4           .
+## 5              .
+## 6                 .
+##
+## Complexity: Time O(log(n)), Space O(1)
+import math
+class Solution:
+    def bulbSwitch(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        return int(math.sqrt(n))
+#+END_SRC

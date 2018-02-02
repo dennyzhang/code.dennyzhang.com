@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     greedy, game
+:type:     greedy, game, classic
 :END:
 ---------------------------------------------------------------------
 Jump Game
@@ -14,9 +14,11 @@ Each element in the array represents your maximum jump length at that position.
 Determine if you are able to reach the last index.
 
 For example:
+#+BEGIN_EXAMPLE
 A = [2,3,1,1,4], return true.
 
 A = [3,2,1,0,4], return false.
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game][challenges-leetcode-interesting]]
 
