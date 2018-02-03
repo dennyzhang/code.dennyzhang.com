@@ -1,8 +1,8 @@
-* Leetcode: Heaters                                              :BLOG:Basic:
+* Leetcode: Heaters                                              :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #misc
+:type:     #binarysearch
 :END:
 ---------------------------------------------------------------------
 Heaters

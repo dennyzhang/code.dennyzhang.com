@@ -1,0 +1,42 @@
+* Leetcode: Regular Expression Matching                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Regular Expression Matching
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+---------------------------------------------------------------------
+Implement regular expression matching with support for '.' and '*'.
+#+BEGIN_EXAMPLE
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+
+The matching should cover the entire input string (not partial).
+
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+
+Some examples:
+isMatch("aa","a") -> false
+isMatch("aa","aa") -> true
+isMatch("aaa","aa") -> false
+isMatch("aa", "a*") -> true
+isMatch("aa", ".*") -> true
+isMatch("ab", ".*") -> true
+isMatch("aab", "c*a*b") -> true
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/regular-expression-matching][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/regular-expression-matching/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/regular-expression-matching
+
+#+END_SRC
