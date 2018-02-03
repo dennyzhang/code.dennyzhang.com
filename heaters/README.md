@@ -1,4 +1,4 @@
-# Leetcode: Heaters     :BLOG:Basic:
+# Leetcode: Heaters     :BLOG:Amusing:
 
 
 ---

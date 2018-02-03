@@ -37,38 +37,31 @@ Leave me comments, if you have better ways to solve.
 
     ## Blog link: https://brain.dennyzhang.com/count-binary-substrings
     ## Basic Ideas: Two pointers
-    ##           Starting from one specific index, there could be only one or zero matches
-    ##           The result would be no more than s.length
-    ##           With match of 000111, we will get 3 matches. And move the pointer to right by 6 steps.
+    ##
     ## Complexity: Time O(n), Space O(1)
-    class Solution(object):
+    class Solution:
         def countBinarySubstrings(self, s):
             """
             :type s: str
             :rtype: int
             """
-            res = 0
             length = len(s)
-            i = 0
-            while i < length - 1:
-                count, j = 1, i+1
-                ch = s[i]
-                opposite_ch = str(1 - int(ch))
-                while j < length and s[j] == ch:
-                    count += 1
-                    j += 1
-                match_length = count
-                while count != 0 and j < length and s[j] == opposite_ch:
-                    count -= 1
-                    j += 1
-    
-                if count == 0:
-                    res += match_length
-                    i = i + match_length
+            res, g0_cnt, g1_cnt = 0, 0, 0
+            for i in range(0, length):
+                if s[i] == '0':
+                    g0_cnt += 1
                 else:
-                    i += 1
-            return res
+                    g1_cnt += 1
     
-    s = Solution()
-    print s.countBinarySubstrings('00110011')
-    print s.countBinarySubstrings('10101')
+                if i == length -1:
+                    res += min(g0_cnt, g1_cnt)
+                    continue
+    
+                if s[i] != s[i+1]:
+                    res += min(g0_cnt, g1_cnt)
+                    # change counter
+                    if s[i] == '1':
+                        g0_cnt = 0
+                    else:
+                        g1_cnt = 0
+            return res

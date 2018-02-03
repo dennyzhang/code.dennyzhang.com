@@ -1,89 +1,49 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Bulb Switcher II     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Bulb Switcher II  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#match](https://brain.dennyzhang.com/category/match)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+There is a room with n lights which are turned on initially and 4 buttons on the wall. After performing exactly m unknown operations towards buttons, you need to return how many different kinds of status of the n lights could be.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+Suppose n lights are labeled as number [1, 2, 3 &#x2026;, n], function of these 4 buttons are given below:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Flip all the lights.  
+Flip lights with even numbers.  
+Flip lights with odd numbers.  
+Flip lights with (3k + 1) numbers, k = 0, 1, 2, &#x2026;  
+Example 1:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+    Input: n = 1, m = 1.
+    Output: 2
+    Explanation: Status can be: [on], [off]
+
+Example 2:  
+
+    Input: n = 2, m = 1.
+    Output: 3
+    Explanation: Status can be: [on, off], [off, on], [off, off]
+
+Example 3:  
+
+    Input: n = 3, m = 1.
+    Output: 4
+    Explanation: Status can be: [off, on, off], [on, off, on], [off, off, off], [off, on, on].
+
+Note: n and m both fit in range [0, 1000].  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bulb-switcher-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/bulb-switcher-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    ## Blog link: https://brain.dennyzhang.com/bulb-switcher-ii

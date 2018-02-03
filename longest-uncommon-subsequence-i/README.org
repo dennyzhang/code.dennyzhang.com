@@ -1,4 +1,4 @@
-* Leetcode: Longest Uncommon Subsequence I                       :BLOG:Basic:
+* Leetcode: Longest Uncommon Subsequence I                       :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -8,7 +8,7 @@
 Longest Uncommon Subsequence I
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- [[https://brain.dennyzhang.com/longest-uncommon-subsequence-ii][Longest Uncommon Subsequence II]]
 ---------------------------------------------------------------------
 Given a group of two strings, you need to find the longest uncommon subsequence of this group of two strings. The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings.
 
@@ -52,9 +52,8 @@ class Solution:
         :type b: str
         :rtype: int
         """
-        len_a, len_b = len(a), len(b)
         if a == b: return -1
-        return max(len_a, len_b)
+        return max(len(a), len(b))
         
 s = Solution()
 print(s.findLUSlength("aefawfawfawfaw", "aefawfeawfwafwaef")) # 17

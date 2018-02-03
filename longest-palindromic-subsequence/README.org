@@ -1,0 +1,39 @@
+* Leetcode: Longest Palindromic Subsequence                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Longest Palindromic Subsequence
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+---------------------------------------------------------------------
+Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.
+
+Example 1:
+Input:
+
+"bbbab"
+Output:
+4
+One possible longest palindromic subsequence is "bbbb".
+Example 2:
+Input:
+
+"cbbd"
+Output:
+2
+One possible longest palindromic subsequence is "bb".
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindromic-subsequence][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/longest-palindromic-subsequence/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/longest-palindromic-subsequence
+
+#+END_SRC

@@ -1,89 +1,59 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Longest Uncommon Subsequence I     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Longest Uncommon Subsequence I  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   [Longest Uncommon Subsequence II](https://brain.dennyzhang.com/longest-uncommon-subsequence-ii)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given a group of two strings, you need to find the longest uncommon subsequence of this group of two strings. The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+A subsequence is a sequence that can be derived from one sequence by deleting some characters without changing the order of the remaining elements. Trivially, any string is a subsequence of itself and an empty string is a subsequence of any string.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+The input will be two strings, and the output needs to be the length of the longest uncommon subsequence. If the longest uncommon subsequence doesn't exist, return -1.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Example 1:  
+
+    Input: "aba", "cdc"
+    Output: 3
+    Explanation: The longest uncommon subsequence is "aba" (or "cdc"), 
+    because "aba" is a subsequence of "aba", 
+    but not a subsequence of any other strings in the group of two strings.
+
+Note:  
+
+Both strings' lengths will not exceed 100.  
+Only letters from a ~ z will appear in input strings.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-uncommon-subsequence-i)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/longest-uncommon-subsequence-i/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
+    ## Blog link: https://brain.dennyzhang.com/longest-uncommon-subsequence-i
+    ## Basic Ideas: If length is different, get the bigger one
+    ##              If length is the same, compare whether they are the same
+    ##                 If not, return either one
     ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
+    ## Notice: what if one string is empty?
+    ##              
+    ## Complexity: Time O(n), Space O(n)
+    class Solution:
+        def findLUSlength(self, a, b):
             """
-            :type n: int
-            :rtype: List[List[str]]
+            :type a: str
+            :type b: str
+            :rtype: int
             """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
+            if a == b: return -1
+            return max(len(a), len(b))
     
     s = Solution()
-    print s.solveNQueens(8)
+    print(s.findLUSlength("aefawfawfawfaw", "aefawfeawfwafwaef")) # 17
