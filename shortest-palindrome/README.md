@@ -27,3 +27,50 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-palindrome/des
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/shortest-palindrome
+    ## Basic Ideas: Treat each character as the middle.
+    ##              The length of palindrome might be odd or even
+    ##
+    ## Complexity: Time O(n*n), Space O(1)
+    import sys
+    class Solution:
+        def shortestPalindrome(self, s):
+            """
+            :type s: str
+            :rtype: str
+            """
+            length = len(s)
+            if length <= 1: return s
+            minCnt = sys.maxsize
+            # the length of target palindrome is odd
+            for i in range(0, int((length+1)/2)):
+                has_failed = False
+                for k in range(1, i+1):
+                    if s[i-k] != s[i+k]:
+                        has_failed = True
+                        break
+                if has_failed is False:
+                    minCnt = min(minCnt, (length-i-1)*2+1)
+    
+            # the length of target palindrome is even
+            for i in range(0, int(length/2)):
+                has_failed = False
+                if s[i] == s[i+1]:
+                    for k in range(1, i+1):
+                        if s[i-k] != s[i+k+1]:
+                            has_failed = True
+                            break
+                    if has_failed is False:
+                        minCnt = min(minCnt, (length-i-2)*2+2)
+    
+            res = ''
+            index = length-1
+            for i in range(0, minCnt-length):
+                res = "%s%s" % (res, s[index])
+                index -= 1
+            #print(res, minCnt, length)
+            # get the result
+            return res+s
+    
+    s = Solution()
+    print(s.shortestPalindrome("aacecaaa")) # "aaacecaaa"
+    print(s.shortestPalindrome("abcd")) # "dcbabcd"

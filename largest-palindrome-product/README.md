@@ -1,4 +1,4 @@
-# Leetcode: Largest Palindrome Product     :BLOG:Basic:
+# Leetcode: Largest Palindrome Product     :BLOG:Medium:
 
 
 ---
