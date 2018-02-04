@@ -2,30 +2,35 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Longest Palindromic Subsequence
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://brain.dennyzhang.com/category/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.
 
 Example 1:
+#+BEGIN_EXAMPLE
 Input:
 
 "bbbab"
 Output:
 4
 One possible longest palindromic subsequence is "bbbb".
+#+END_EXAMPLE
+
 Example 2:
+#+BEGIN_EXAMPLE
 Input:
 
 "cbbd"
 Output:
 2
 One possible longest palindromic subsequence is "bb".
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindromic-subsequence][challenges-leetcode-interesting]]
 

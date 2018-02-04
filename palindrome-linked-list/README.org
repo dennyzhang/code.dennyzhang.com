@@ -1,4 +1,4 @@
-* Leetcode: Palindrome Linked List                                :BLOG:Medium:
+* Leetcode: Palindrome Linked List                              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
