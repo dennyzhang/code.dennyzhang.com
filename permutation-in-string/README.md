@@ -29,3 +29,28 @@ Credits To: [leetcode.com](https://leetcode.com/problems/permutation-in-string/d
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/permutation-in-string
+    ## Basic Ideas: Sliding window in s2 with length of s1
+    ##              It has only lowercase, use ch[26] to speed up the comparision.
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    class Solution:
+        def checkInclusion(self, s1, s2):
+            """
+            :type s1: str
+            :type s2: str
+            :rtype: bool
+            """
+            len1, len2 = len(s1), len(s2)
+            if len1>len2: return False
+            list1, list2 = [0]*26, [0]*26
+            for i in range(0, len1):
+                list1[ord(s1[i]) - ord('a')] += 1
+                list2[ord(s2[i]) - ord('a')] += 1
+            if list1 == list2: return True
+            for i in range(len1, len2):
+                # slide window
+                list2[ord(s2[i]) - ord('a')] += 1
+                list2[ord(s2[i-len1]) - ord('a')] -= 1
+                if list1 == list2: return True            
+    
+            return False
