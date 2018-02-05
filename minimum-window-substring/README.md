@@ -26,62 +26,43 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-window-substrin
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/minimum-window-substring
-    ## Basic Ideas: Two pointers
-    ##        Notice: T may have duplicate characters. AABC
-    ##                T may be empty or only has one character
-    ##              Let's say s[i:j] is the mininum window. Both s[i] and s[j] should be in T
-    ##              Pointer: Check s from left to right. If s[k] in T, use pointer2 to find a candidate
-    ##              Move pointer2 to find the next candiate
+    ## Basic Ideas: two pointer
+    ##              Find all candidates, and get the mininum window
     ##
-    ## Complexity: Time ? Space ?
-    import copy
-    class Solution(object):
+    ## Complexity: Time O(n), Space O(1)
+    import collections
+    class Solution:
         def minWindow(self, s, t):
             """
             :type s: str
             :type t: str
             :rtype: str
             """
-            if len(s) == 0 or len(t) == 0:
-                return ''
+            len1, len2 = len(s), len(t)
+            if len2>len1: return ""
+            if len1 == 0: return ""
+            m1 = collections.defaultdict(lambda:0)
+            m2 = collections.defaultdict(lambda:0)
+            for i in range(0, len2): m2[t[i]] += 1
     
-            # get frequency for characters in t
-            t_m = {}
-            for ch in t:
-                if ch in t_m:
-                    t_m[ch] += 1
-                else:
-                    t_m[ch] = 1
+            min_len, res = sys.maxsize, ""
+            left, right = 0, 0
+            for right in range(0, len1):
+                m1[s[right]] += 1
+                if self.isTooSmall(m1, m2): continue
+                # find a match, then check whether window too big
+                while m1[s[left]] > m2[s[left]]:
+                    m1[s[left]] -= 1
+                    left += 1
+                # find a candidate
+                if min_len > right-left+1:
+                    min_len, res = right-left+1, s[left:right+1]
+            return res
     
-            min_length, min_str = None, ''
-            for i in xrange(0, len(s) - len(t)+1):
-                ch1 = s[i]
-                m = copy.deepcopy(t_m)
-                start, end = None, None
-                # find the starting point
-                if ch1 in m:
-                    # print("ch1: %s, i: %d, t:%s" % (ch1, i, t))
-                    start, end = i, i
-                    m[ch1] -= 1
-                    if m[ch1] == 0:
-                        del m[ch1]
-                    if len(m) != 0:
-                        # t has only one character and identity one match
-                        # pointer2
-                        for j in range(i+1, len(s)):
-                            ch2 = s[j]
-                            if ch2 in m:
-                                m[ch2] -= 1
-                                if m[ch2] == 0:
-                                    del m[ch2]
-                            if len(m) == 0:
-                                end = j
-                                break
-                if len(m) == 0:
-                    # find one match
-                    if min_length is None or min_length > end-start+1:
-                        min_length, min_str = end-start+1, s[start:end+1]
-            return min_str
+        def isTooSmall(self, m1, m2):
+            for ch in m2:
+                if m1[ch] < m2[ch]: return True
+            return False
     
     s = Solution()
-    print s.minWindow("ADOBECODEBANC", "ABC") # BANC
+    print(s.minWindow("ADOBECODEBANC", "ABC")) # BANC
