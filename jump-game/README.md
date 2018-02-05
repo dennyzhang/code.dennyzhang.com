@@ -26,29 +26,26 @@ Credits To: [leetcode.com](https://leetcode.com/problems/jump-game/description/)
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/jump-game
-    ## Basic Ideas: Greedy
-    ##            maxIndex: the maximum index we can jump
-    ##            We check from left to right, thus we won't need to move back
-    ## Complexity:
-    class Solution(object):
+    ## Basic Ideas:
+    ##        maxIndex: keep tracking the furthest reachable index
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    class Solution:
         def canJump(self, nums):
             """
             :type nums: List[int]
             :rtype: bool
             """
             length = len(nums)
-            if length == 0:
-                return None
-    
+            if length <= 1: return True
             maxIndex = 0
-            for i in xrange(length):
-                # We can't move any further, or already reach the target
-                if (i > maxIndex) or (maxIndex >= length -1):
-                    break
+            for i in range(0, length-1):
+                # we can't jump anymore
+                if i > maxIndex: break
+                # already found the target
+                if maxIndex >= length-1: break
                 maxIndex = max(maxIndex, i+nums[i])
-    
-            return (maxIndex >= length -1)
+            return maxIndex >= length-1
     
     s = Solution()
-    print s.canJump([2,3,1,1,4]) # true
-    print s.canJump([3,2,1,0,4]) # false
+    print(s.canJump([0, 2, 3])) # False

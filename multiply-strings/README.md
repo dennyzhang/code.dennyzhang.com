@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
             for ch1 in num1[::-1]:
                 v1 = ord(ch1) - ord('0')
                 # get row value
-                row_value = 
+                row_value = []
                 carry = 0
                 for ch2 in num2[::-1]:
                     v2 = ord(ch2) - ord('0')
@@ -52,7 +52,6 @@ Leave me comments, if you have better ways to solve.
                 digit_count += 1
     
                 # add rowValue into res
-                # print(max_length, res, row_value)
                 carry = 0
                 for i in range(0, len(row_value)+1):
                     if i == len(row_value):

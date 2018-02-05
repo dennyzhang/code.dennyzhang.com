@@ -53,7 +53,6 @@ class Solution:
             digit_count += 1
 
             # add rowValue into res
-            # print(max_length, res, row_value)
             carry = 0
             for i in range(0, len(row_value)+1):
                 if i == len(row_value):
