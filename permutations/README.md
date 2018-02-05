@@ -46,11 +46,11 @@ Leave me comments, if you have better ways to solve.
             :type nums: List[int]
             :rtype: List[List[int]]
             """
-            if len(nums) == 0: return [v]
+            if len(nums) == 0: return [[v]]
             return self.myPermute(nums[0:-1], nums[-1])
     
         def myPermute(self, nums, v):
-            if len(nums) == 0: return [v]
+            if len(nums) == 0: return [[v]]
             res = []
             l = self.myPermute(nums[0:-1], nums[-1])
             for sequence in l:

@@ -8,7 +8,8 @@ Substring with Concatenation of All Words
 ---
 
 Similar Problems:  
--   [Leetcode: Longest Substring Without Repeating Characters](https://brain.dennyzhang.com/longest-substring-without-repeating-characters)
+-   [Longest Substring Without Repeating Characters](https://brain.dennyzhang.com/longest-substring-without-repeating-characters)
+-   [Minimum Window Substring](https://brain.dennyzhang.com/minimum-window-substring)
 -   Tag: [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
 
 ---
@@ -29,57 +30,44 @@ Credits To: [leetcode.com](https://leetcode.com/problems/substring-with-concaten
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/substring-with-concatenation-of-all-words
-    ## Basic Ideas: Two pointers. slow and fast
-    ##              fast pointer will move every word length
+    ## Basic Ideas: 2 twopointers with hasmap
     ##
-    ## Complexity:
-    class Solution(object):
+    ##  Assumption: no duplicate word in words. 
+    ##              len(s) % len(words[0]) == 0
+    ##
+    ## Complexity: Time O(n*k), Space O(m). k=len(words[0]), m=len(words)*len(words[0])
+    import collections
+    class Solution:
         def findSubstring(self, s, words):
             """
             :type s: str
             :type words: List[str]
             :rtype: List[int]
             """
-            word_count = len(words)
-            word_len = len(words[0])
-            desired_length = word_count*word_len
-            if len(s) < desired_length: return []
+            len_s = len(s)
+            if len(words) == 0 or words == [""]:
+                return range(0, len_s)
     
-            d = {}
-            for word in words: d[word] = -1
+            if len_s < len(words)*len(words[0]): return []
+            len_word = len(words[0])
+    
+            m1 = collections.defaultdict(lambda: 0)
+            m2 = collections.defaultdict(lambda: 0)
+            for word in words: m2[word] += 1
             res = []
-            slow, fast, matched_count = 0, 0, 0
-            while fast + word_len < len(s):
-                # print d, slow, fast, res
-                next_fast = fast + word_len
-                # no conflict
-                if s[fast:next_fast] in d and d[s[fast:next_fast]] == -1:
-                    d[s[fast:next_fast]] = fast
-                    matched_count += 1
-                elif s[fast:next_fast] not in d:
-                    # empty everything
-                    for k in xrange(0, (fast-slow)/word_len):
-                        index = k*word_len+slow
-                        d[s[index:index+word_len]] = -1
-                        matched_count -= 1
-                    fast = next_fast
-                    slow = fast
-                    continue
-                else:
-                    # mark previous sublist as unresolved
-                    for k in xrange(0, (d[s[fast]]-slow)/word_len + 1):
-                        index = k*word_len + slow
-                        d[s[index:index+word_len]] = -1
-                        matched_count -= 1
-                    # update pointers
-                    d[s[fast:next_fast]] = fast
-                    matched_count += 1
-                    next_slow = d[s[fast]] + word_len
-                # collect result
-                if matched_count == word_count:
-                    min_index = len(s)
-                    for word in d:
-                        min_index = min(min_index, d[word])
-                    res.append(min_index)
-                fast = next_fast
+            left, right = 0, 0
+            for right in range(0, int(len_s/len_word)):
+                right_word = s[right*len_word:(right+1)*len_word]
+                m1[right_word] += 1
+                # not long enough for sliding window
+                if (right+1)*len_word < len(words)*len(words[0]): continue
+    
+                if m1 == m2: res.append(left*len_word)
+                left_word = s[left*len_word:(left+1)*len_word]
+                m1[left_word] -= 1
+                if m1[left_word] == 0: del m1[left_word]
+                left += 1
             return res
+    
+    s = Solution()
+    print(s.findSubstring("barfoofoobarthefoobarman", ["bar","foo","the"])) # [6, 9, 12]

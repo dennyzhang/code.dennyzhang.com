@@ -7,6 +7,12 @@ Minimum Window Substring
 
 ---
 
+Similar Problems:  
+-   [Substring with Concatenation of All Words](https://brain.dennyzhang.com/substring-with-concatenation-of-all-words)
+-   Tag: [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
+
+---
+
 Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).  
 
     For example,
