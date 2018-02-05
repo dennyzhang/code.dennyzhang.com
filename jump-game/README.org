@@ -28,8 +28,8 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/jump-game
-## Basic Ideas: Greedy
-##        maxIndex: the maximum position we can jump
+## Basic Ideas:
+##        maxIndex: keep tracking the furthest reachable index
 ##
 ## Complexity: Time O(n), Space O(1)
 class Solution:
