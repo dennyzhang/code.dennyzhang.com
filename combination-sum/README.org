@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     backtracking, #redo, combination
+:type:     backtracking, redo, combination
 :END:
 ---------------------------------------------------------------------
 Combination Sum

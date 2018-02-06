@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bignumber, #redo, bitmanipulation
+:type:     bignumber, redo, bitmanipulation
 :END:
 ---------------------------------------------------------------------
 Binary number

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #numbers, #redo
+:type:     #numbers, redo
 :END:
 ---------------------------------------------------------------------
 A self-dividing number is a number that is divisible by every digit it contains.

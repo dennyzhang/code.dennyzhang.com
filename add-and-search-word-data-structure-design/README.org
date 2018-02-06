@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #Trie, designquestion
+:type:     trie, designquestion
 :END:
 ---------------------------------------------------------------------
 Add and Search Word - Data structure design

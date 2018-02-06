@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     #redo, binarytree
+:type:     redo, binarytree
 :END:
 ---------------------------------------------------------------------
 Maximum Width of Binary Tree

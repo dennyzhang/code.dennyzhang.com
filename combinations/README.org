@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, #redo
+:type:     combination, redo
 :END:
 ---------------------------------------------------------------------
 Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.

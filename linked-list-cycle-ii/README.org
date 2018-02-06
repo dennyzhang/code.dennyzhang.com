@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, inspiring, #redo, floydcycle
+:type:     linkedlist, inspiring, redo, floydcycle
 :END:
 ---------------------------------------------------------------------
 Linked List Cycle II

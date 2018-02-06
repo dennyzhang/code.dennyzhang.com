@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, #redo
+:type:     interval, redo
 :END:
 ---------------------------------------------------------------------
 My Calendar II

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     anagram, #redo
+:type:     anagram, redo
 :END:
 ---------------------------------------------------------------------
 Find Anagram Mappings
