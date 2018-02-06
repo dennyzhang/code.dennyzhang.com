@@ -1,0 +1,26 @@
+* Leetcode: Perfect Squares                                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
+
+For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/perfect-squares][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/perfect-squares/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/perfect-squares
+
+#+END_SRC
