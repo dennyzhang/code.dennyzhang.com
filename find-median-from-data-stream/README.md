@@ -87,10 +87,10 @@ Leave me comments, if you have better ways to solve.
             :rtype: float
             """
             if len(self.left_q) == 0: return None
-            if (len(self.left_q) + len(self.right_q)) % 2 == 1:
-                return float(-self.left_q[0])
-            else:
+            if (len(self.left_q) == len(self.right_q)):
                 return (-self.left_q[0] + self.right_q[0])/2
+            else:
+                return float(-self.left_q[0])
     
     # Your MedianFinder object will be instantiated and called as such:
     # obj = MedianFinder()

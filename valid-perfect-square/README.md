@@ -30,6 +30,7 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://brain.dennyzhang.com/valid-perfect-square
     ## Basic Ideas: Binary search
     ##             Search in between [1^2, 2^2, 3^2, ... num^2]
+    ##     But we have to use long for mid to avoid *mid\mid from overflow
     ## Complexity: Time O(log(n)), Space O(1)
     class Solution(object):
         def isPerfectSquare(self, num):
