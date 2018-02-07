@@ -5,7 +5,7 @@
 :type:     manydetails
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Valid Sudoku
 ---------------------------------------------------------------------
 Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
 

@@ -5,7 +5,7 @@
 :type:     bfs, inspiring
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Swim in Rising Water
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://brain.dennyzhang.com/category/graph][#graph]]

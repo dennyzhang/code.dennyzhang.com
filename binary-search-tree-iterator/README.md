@@ -3,7 +3,7 @@
 
 ---
 
-Identity number which appears exactly once.  
+Binary Search Tree Iterator  
 
 ---
 

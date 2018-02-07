@@ -5,7 +5,7 @@
 :type:     redo, reverseitem, bitmanipulation
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Reverse Bits
 ---------------------------------------------------------------------
 Reverse bits of a given 32 bits unsigned integer.
 

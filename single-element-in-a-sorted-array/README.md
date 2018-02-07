@@ -3,7 +3,7 @@
 
 ---
 
-Identity number which appears exactly once.  
+Single Element in a Sorted Array  
 
 ---
 

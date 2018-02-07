@@ -5,7 +5,7 @@
 :type:     squarenumber
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Perfect Squares
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]

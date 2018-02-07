@@ -5,7 +5,7 @@
 :type:     findnumber
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Largest Number At Least Twice of Others
 ---------------------------------------------------------------------
 In a given integer array nums, there is always exactly one largest element.
 

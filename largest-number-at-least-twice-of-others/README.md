@@ -3,7 +3,7 @@
 
 ---
 
-Identity number which appears exactly once.  
+Largest Number At Least Twice of Others  
 
 ---
 

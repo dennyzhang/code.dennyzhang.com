@@ -67,7 +67,7 @@ Leave me comments, if you have better ways to solve.
             for i in range(0, minCnt-length):
                 res = "%s%s" % (res, s[index])
                 index -= 1
-            #print(res, minCnt, length)
+            # print(res, minCnt, length)
             # get the result
             return res+s
     

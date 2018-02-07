@@ -3,7 +3,7 @@
 
 ---
 
-Identity number which appears exactly once.  
+Kth Smallest Element in a BST  
 
 ---
 

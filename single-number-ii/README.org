@@ -5,7 +5,7 @@
 :type:     numbers
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Single Number II
 ---------------------------------------------------------------------
 Given an array of integers, every element appears three times except for one, which appears exactly once. Find that single one.
 
