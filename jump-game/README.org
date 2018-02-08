@@ -26,6 +26,9 @@ Credits To: [[url-external:https://leetcode.com/problems/jump-game/description/]
 
 Leave me comments, if you have better ways to solve.
 
+Interesting reading:
+[[url-external:https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11][YouTube Coding Interview Question: Tower Hopper Problem]]
+
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/jump-game
 ## Basic Ideas:
