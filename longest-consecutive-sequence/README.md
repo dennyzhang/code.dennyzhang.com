@@ -27,16 +27,35 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-consecutive-seq
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/longest-consecutive-sequence
-    ## Basic Ideas: one consecutive sequence will be one group
-    ##       Build a hashmap
-    ##       Then loop, combine group, and delete the absorted elements
-    ##
-    ##  Clarifications: Does the list contains duplicate elements? 
-    ##           If yes, how you would like to treat the duplicate?
-    ##
-    ## Complexity: Time O(n), Space O(n)
+    
     class Solution:
+        # Compared to longestConsecutive_v1, no need to search in both directions.
         def longestConsecutive(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: int
+            """
+            if len(nums) == 0: return 0
+            s = set(nums)
+            max_count = 0
+            for num in set(nums):
+                # only search from the biggest value of current group
+                if num + 1 not in nums:
+                    y = num - 1
+                    while y in nums:
+                        y = y -1
+                    max_count = max(max_count, num-y)
+            return max_count
+    
+        ## Basic Ideas: one consecutive sequence will be one group
+        ##       Build a hashmap
+        ##       Then loop, combine group, and delete the absorted elements
+        ##
+        ##  Clarifications: Does the list contains duplicate elements? 
+        ##           If yes, how you would like to treat the duplicate?
+        ##
+        ## Complexity: Time O(n), Space O(n)
+        def longestConsecutive_v1(self, nums):
             """
             :type nums: List[int]
             :rtype: int

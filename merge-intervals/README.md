@@ -20,6 +20,9 @@ Credits To: [leetcode.com](https://leetcode.com/problems/merge-intervals/descrip
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/merge-intervals
+    ## Basic Ideas: Search by the starting values
+    ##
+    ## Complexity: Time O(n*log(n)), Space O(n)
     class Solution(object):
         def merge(self, intervals):
             """

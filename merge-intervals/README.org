@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, interval
+:type:     interval
 :END:
 ---------------------------------------------------------------------
 Merge Intervals
@@ -23,6 +23,9 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/merge-intervals
+## Basic Ideas: Search by the starting values
+##
+## Complexity: Time O(n*log(n)), Space O(n)
 class Solution(object):
     def merge(self, intervals):
         """
