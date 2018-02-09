@@ -34,10 +34,28 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix-ii/d
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/search-a-2d-matrix-ii
-    class Solution(object):
+    ## Basic Ideas: We search from the left bottom position
+    ##    If the value is smaller than the target, move right
+    ##    If bigger, move up
+    ##
+    ## Complexity: Time O(n+m), Space O(1)
+    class Solution:
         def searchMatrix(self, matrix, target):
             """
             :type matrix: List[List[int]]
             :type target: int
             :rtype: bool
             """
+            row_count = len(matrix)
+            # 
+            if row_count == 0: return False
+            col_count = len(matrix[0])
+            # []
+            if col_count == 0: return False
+            if matrix[0][0] > target or matrix[-1][-1] < target: return False
+            i, j = row_count-1, 0
+            while i>=0 and j<=col_count-1:
+                if matrix[i][j] == target: return True
+                if matrix[i][j] < target: j += 1
+                else: i -= 1
+            return False

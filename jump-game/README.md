@@ -25,6 +25,9 @@ Credits To: [leetcode.com](https://leetcode.com/problems/jump-game/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+Interesting reading:  
+[YouTube Coding Interview Question: Tower Hopper Problem](https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11)  
+
     ## Blog link: https://brain.dennyzhang.com/jump-game
     ## Basic Ideas:
     ##        maxIndex: keep tracking the furthest reachable index
