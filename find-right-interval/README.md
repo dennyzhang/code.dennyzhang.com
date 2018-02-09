@@ -54,3 +54,49 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-right-interval/des
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/find-right-interval
+    ## Basic Ideas: hashmap + binary search
+    ##     Build a hashmap to track the mapping from start point to position index
+    ##     Sort the interval list by the start attribute
+    ##     Use the right attribute to identity the first no smaller values of the start list
+    ##
+    ## Complexity: Time O(n*log(n)), Space O(n)
+    ##
+    # Definition for an interval.
+    # class Interval:
+    #     def __init__(self, s=0, e=0):
+    #         self.start = s
+    #         self.end = e
+    
+    class Solution:
+        def findRightInterval(self, intervals):
+            """
+            :type intervals: List[Interval]
+            :rtype: List[int]
+            """
+            length = len(intervals)
+            m = {}
+            for i in range(0, length): m[intervals[i].start] = i
+            res= [-1]*length
+            start_list = list(sorted(m.keys()))
+            for i in range(0, length):
+                interval = intervals[i]
+                target = interval.end
+                # binary search
+                left, right = 0, length-1
+                if target < start_list[0] or target > start_list[-1]:
+                    continue
+                while left <= right:
+                    mid = left+int((right-left)/2)
+                    v = start_list[mid]
+                    if v == target:
+                        res[i] = m[start_list[mid]]
+                        break
+                    if v < target:
+                        left = mid + 1
+                    else:
+                        right = mid - 1
+    
+                # I found, skip
+                if res[i] == -1:
+                    res[i] = m[start_list[left]]
+            return res

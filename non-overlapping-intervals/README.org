@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval
+:type:     interval, classic
 :END:
 ---------------------------------------------------------------------
 Non-overlapping Intervals

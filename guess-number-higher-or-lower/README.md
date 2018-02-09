@@ -57,5 +57,4 @@ Leave me comments, if you have better ways to solve.
                     left = mid + 1
                 else:
                     right = mid - 1
-    
             return None
