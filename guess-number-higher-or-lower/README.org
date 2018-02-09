@@ -27,8 +27,6 @@ n = 10, I pick 6.
 Return 6.
 #+END_EXAMPLE
 
-
-
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/guess-number-higher-or-lower/description/][leetcode.com]]
@@ -62,6 +60,5 @@ class Solution(object):
                 left = mid + 1
             else:
                 right = mid - 1
-
         return None
 #+END_SRC

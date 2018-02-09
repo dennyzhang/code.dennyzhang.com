@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch, powerofn, recursive
+:type:     powerofn, recursive
 :END:
 ---------------------------------------------------------------------
 Implement pow(x, n).
