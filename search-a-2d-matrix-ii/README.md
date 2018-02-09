@@ -47,10 +47,10 @@ Leave me comments, if you have better ways to solve.
             :rtype: bool
             """
             row_count = len(matrix)
-            # 
+            # []
             if row_count == 0: return False
             col_count = len(matrix[0])
-            # []
+            # [[]]
             if col_count == 0: return False
             if matrix[0][0] > target or matrix[-1][-1] < target: return False
             i, j = row_count-1, 0

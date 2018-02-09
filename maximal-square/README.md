@@ -1,4 +1,4 @@
-# Leetcode: Maximal Square     :BLOG:Basic:
+# Leetcode: Maximal Square     :BLOG:Medium:
 
 
 ---
