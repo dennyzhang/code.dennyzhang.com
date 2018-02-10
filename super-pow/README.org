@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 Super Pow
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/powx-n][Pow(x, n)]]
+- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+---------------------------------------------------------------------
 Your task is to calculate a^b mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.
 #+BEGIN_EXAMPLE
 Example1:
