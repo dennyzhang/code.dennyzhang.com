@@ -30,7 +30,7 @@ Example
     In contactRelationship, [1,3] is associated with 0,[0,2] is associated with 1,[1] is associated 2,[0] is associated with 3.
     Finally,Movies numbered [1,2,3] are associated with movie 0, and the order which according to their rating from high to low is [3,2,1], so the output [2,3].
 
-    Given ratingArray = [10,20,30,40,50,60,70,80,90], contactRelationship = [[1,4,5],[0,2,3],[1,7],[1,6,7],[0],[0],[3],[2,3],[]], S = 5, K = 3, return [6,7,4].
+    Given ratingArray = [10,20,30,40,50,60,70,80,90], contactRelationship = [[1,4,5],[0,2,3],[1,7],[1,6,7],[0],[0],[3],[2,3],], S = 5, K = 3, return [6,7,4].
     
     Explanation:
     In contactRelationship,[1,4,5] is associated with 0,[0,2,3] is associated with 1,[1,7] is associated with 2,[1,6,7] is is associated with 3,[0] is associated with 4,[0] is associated with 5,[3] is associated with 6,[2,3] is associated with 7,no moive is associated with 8.
@@ -43,6 +43,9 @@ Credits To: [Lintcode.com](http://www.lintcode.com/en/problem/movie-network/)
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/movie-network
+    ## Basic Ideas: BFS + Heap
+    ##        minheap to get topk biggest values
+    ## Complexity: Time O(n*log(k)), Space O(n)
     class Solution:
         """
         @param rating: the rating of the movies
@@ -53,11 +56,9 @@ Leave me comments, if you have better ways to solve.
         """
         def topKMovie(self, rating, G, S, K):
             # Write your code here
-            ## Basic Ideas: BFS + MaxHeap
-            ## Complexity: Time O(n*log(k)), Space O(n)
     
             import heapq
-            queue, visited, l = [], set([]), []
+            queue, visited, l = , set(), 
             heapq.heapify(l)
             queue.append(S)
             visited.add(S)
@@ -71,8 +72,9 @@ Leave me comments, if you have better ways to solve.
                         if i not in visited:
                             queue.append(i)
                             visited.add(i)
-                            heapq.heappush(l, (-rating[i], i))
-            res = []
+                            heapq.heappush(l, (rating[i], i))
+                            if len(l) > K: heapq.heappop(l)
+            res = 
             for i in range(0, K):
                 if len(l) == 0: break
                 (rating, index) = heapq.heappop(l)

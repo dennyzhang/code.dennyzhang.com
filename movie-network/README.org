@@ -45,6 +45,9 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/movie-network
+## Basic Ideas: BFS + Heap
+##        minheap to get topk biggest values
+## Complexity: Time O(n*log(k)), Space O(n)
 class Solution:
     """
     @param rating: the rating of the movies
@@ -55,8 +58,6 @@ class Solution:
     """
     def topKMovie(self, rating, G, S, K):
         # Write your code here
-        ## Basic Ideas: BFS + MaxHeap
-        ## Complexity: Time O(n*log(k)), Space O(n)
         
         import heapq
         queue, visited, l = [], set([]), []
@@ -73,7 +74,8 @@ class Solution:
                     if i not in visited:
                         queue.append(i)
                         visited.add(i)
-                        heapq.heappush(l, (-rating[i], i))
+                        heapq.heappush(l, (rating[i], i))
+                        if len(l) > K: heapq.heappop(l)
         res = []
         for i in range(0, K):
             if len(l) == 0: break
