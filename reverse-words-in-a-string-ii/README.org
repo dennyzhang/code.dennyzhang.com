@@ -43,25 +43,21 @@ class Solution:
         :rtype: void Do not return anything, modify str in-place instead.
         """
         length = len(str)
-        left, right = 0, length-1
-        # reverse the string
-        while left<right:
-            str[left], str[right] = str[right], str[left]
-            left, right = left+1, right-1
+        self.myReverseString(str, 0, length-1)
 
         # find the groups seperated by whitespace
         left = 0
         for i in range(0, length):
-            if str[i] != ' ' and i != length-1: continue
-
-            if str[i] == ' ':
-                right = i - 1
+            if i == length-1:
+                # no tailing whitespace
+                self.myReverseString(str, left, i)
             else:
-                right = i
-            # reverse string from left to right
-            while left<right:
-                str[left], str[right] = str[right], str[left]
-                left, right = left+1, right-1
-            # if already the last element, the loop will break
-            left = i + 1
+                if str[i] == ' ':
+                    self.myReverseString(str, left, i-1)
+                    left = i + 1
+
+    def myReverseString(self, str, left, right):
+        while left<right:
+            str[left], str[right] = str[right], str[left]
+            left, right = left+1, right-1
 #+END_SRC

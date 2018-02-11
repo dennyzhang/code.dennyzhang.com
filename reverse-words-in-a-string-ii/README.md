@@ -1,89 +1,62 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Reverse Words in a String II     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Reverse Words in a String II  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [Rotate Array](https://brain.dennyzhang.com/rotate-array)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+The input string does not contain leading or trailing spaces and the words are always separated by a single space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+For example,  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+    Given s = "the sky is blue",
+    return "blue is sky the".
+
+Could you do it in-place without allocating extra space?  
+
+Update (2017-10-16):  
+We have updated the function signature to accept a character array, so please reset to the default code definition by clicking on the reload button above the code editor. Also, Run Code is now available!  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-words-in-a-string-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-string-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
+    ## Blog link: https://brain.dennyzhang.com/reverse-words-in-a-string-ii
+    ## Basic Ideas: Reverse string. Then find the groups, and reverse them.
     ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
+    ## Complexity: Time O(n), Space O(1)
+    class Solution:
+        def reverseWords(self, str):
             """
-            :type n: int
-            :rtype: List[List[str]]
+            :type str: List[str]
+            :rtype: void Do not return anything, modify str in-place instead.
             """
-            if n <= 0:
-                return None
+            length = len(str)
+            self.myReverseString(str, 0, length-1)
     
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
+            # find the groups seperated by whitespace
+            left = 0
+            for i in range(0, length):
+                if i == length-1:
+                    # no tailing whitespace
+                    self.myReverseString(str, left, i)
+                else:
+                    if str[i] == ' ':
+                        self.myReverseString(str, left, i-1)
+                        left = i + 1
     
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+        def myReverseString(self, str, left, right):
+            while left<right:
+                str[left], str[right] = str[right], str[left]
+                left, right = left+1, right-1
