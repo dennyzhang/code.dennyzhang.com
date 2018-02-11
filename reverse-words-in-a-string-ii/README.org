@@ -1,0 +1,67 @@
+* Leetcode: Reverse Words in a String II                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Reverse Words in a String II
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/rotate-array][Rotate Array]]
+---------------------------------------------------------------------
+Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
+
+The input string does not contain leading or trailing spaces and the words are always separated by a single space.
+
+For example,
+#+BEGIN_EXAMPLE
+Given s = "the sky is blue",
+return "blue is sky the".
+#+END_EXAMPLE
+
+Could you do it in-place without allocating extra space?
+
+Update (2017-10-16):
+We have updated the function signature to accept a character array, so please reset to the default code definition by clicking on the reload button above the code editor. Also, Run Code is now available!
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-words-in-a-string-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/reverse-words-in-a-string-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/reverse-words-in-a-string-ii
+## Basic Ideas: Reverse string. Then find the groups, and reverse them.
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def reverseWords(self, str):
+        """
+        :type str: List[str]
+        :rtype: void Do not return anything, modify str in-place instead.
+        """
+        length = len(str)
+        left, right = 0, length-1
+        # reverse the string
+        while left<right:
+            str[left], str[right] = str[right], str[left]
+            left, right = left+1, right-1
+
+        # find the groups seperated by whitespace
+        left = 0
+        for i in range(0, length):
+            if str[i] != ' ' and i != length-1: continue
+
+            if str[i] == ' ':
+                right = i - 1
+            else:
+                right = i
+            # reverse string from left to right
+            while left<right:
+                str[left], str[right] = str[right], str[left]
+                left, right = left+1, right-1
+            # if already the last element, the loop will break
+            left = i + 1
+#+END_SRC
