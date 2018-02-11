@@ -8,9 +8,7 @@
 Read N Characters Given Read4
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
 ---------------------------------------------------------------------
 The API: int read4(char *buf) reads 4 characters at a time from a file.
 
