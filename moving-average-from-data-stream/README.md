@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
             :type size: int
             """
             self.size = size
-            self.q = deque()
+            self.q = deque([])
             self.sum = 0
     
         def next(self, val):

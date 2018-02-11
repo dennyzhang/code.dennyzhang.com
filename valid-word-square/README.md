@@ -1,89 +1,114 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Valid Word Square     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Valid Word Square  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#matrixtraverse](https://brain.dennyzhang.com/tag/matrixtraverse)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given a sequence of words, check whether it forms a valid word square.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
+A sequence of words forms a valid word square if the kth row and column read the exact same string, where 0 <= k < max(numRows, numColumns).  
+
+Note:  
+The number of words given is at least 1 and does not exceed 500.  
+Word length will be at least 1 and does not exceed 500.  
+Each word contains only lowercase English alphabet a-z.  
+Example 1:  
+
+    Input:
     [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
+      "abcd",
+      "bnrt",
+      "crmy",
+      "dtye"
     ]
+    
+    Output:
+    true
+    
+    Explanation:
+    The first row and first column both read "abcd".
+    The second row and second column both read "bnrt".
+    The third row and third column both read "crmy".
+    The fourth row and fourth column both read "dtye".
+    
+    Therefore, it is a valid word square.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Example 2:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+    Input:
+    [
+      "abcd",
+      "bnrt",
+      "crm",
+      "dt"
+    ]
+    
+    Output:
+    true
+    
+    Explanation:
+    The first row and first column both read "abcd".
+    The second row and second column both read "bnrt".
+    The third row and third column both read "crm".
+    The fourth row and fourth column both read "dt".
+    
+    Therefore, it is a valid word square.
+
+Example 3:  
+
+    Input:
+    [
+      "ball",
+      "area",
+      "read",
+      "lady"
+    ]
+    
+    Output:
+    false
+    
+    Explanation:
+    The third row reads "read" while the third column reads "lead".
+    
+    Therefore, it is NOT a valid word square.
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-word-square)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/valid-word-square/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
+    ## Blog link: https://brain.dennyzhang.com/valid-word-square
+    ## Basic Ideas:
+    ##     What if we can't find the corresponding element?
     ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
+    ## Complexity: Time O(m*n), Space O(1)
+    class Solution:
+        def validWordSquare(self, words):
             """
-            :type n: int
-            :rtype: List[List[str]]
+            :type words: List[str]
+            :rtype: bool
             """
-            if n <= 0:
-                return None
+            row_count = len(words)
+            if row_count == 0: return True
+            max_col = 0
+            for word in words: max_col = max(max_col, len(word))
+            if max_col != row_count: return False
     
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
+            # examine for each row
+            try:
+                for row_index in range(0, row_count):
+                    for k in range(0, len(words[row_index])):
+                        if words[row_index][k] != words[k][row_index]:
+                            return False
+            except:
+                return False
             return True
-    
-    s = Solution()
-    print s.solveNQueens(8)

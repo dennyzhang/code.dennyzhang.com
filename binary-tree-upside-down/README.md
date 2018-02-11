@@ -1,89 +1,40 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Binary Tree Upside Down     :BLOG:Basic:
 
 
 ---
 
-N-Queens  
+Binary Tree Upside Down  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given a binary tree where all the right nodes are either leaf nodes with a sibling (a left node that shares the same parent node) or empty, flip it upside down and turn it into a tree where the original right nodes turned into left leaf nodes. Return the new root.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+For example:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+    Given a binary tree {1,2,3,4,5},
+        1
+       / \
+      2   3
+     / \
+    4   5
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+return the root of the binary tree [4,5,2,#,#,3,1].  
+
+      4
+     / \
+    5   2
+       / \
+      3   1
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-upside-down)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-upside-down/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    ## Blog link: https://brain.dennyzhang.com/binary-tree-upside-down
