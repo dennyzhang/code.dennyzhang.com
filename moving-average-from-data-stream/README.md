@@ -1,89 +1,63 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Moving Average from Data Stream     :BLOG:Basic:
 
 
 ---
 
-N-Queens  
+Moving Average from Data Stream  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+For example,  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+    MovingAverage m = new MovingAverage(3);
+    m.next(1) = 1
+    m.next(10) = (1 + 10) / 2
+    m.next(3) = (1 + 10 + 3) / 3
+    m.next(5) = (10 + 3 + 5) / 3
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/moving-average-from-data-stream)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/moving-average-from-data-stream/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
+    ## Blog link: https://brain.dennyzhang.com/moving-average-from-data-stream
+    ## Basic Ideas: queue
+    ##  Assume the sum will always be an valid integer
     ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
+    ## Complexity: Time O(1), Space O(1)
+    
+    from collections import deque
+    class MovingAverage:
+        def __init__(self, size):
             """
-            :type n: int
-            :rtype: List[List[str]]
+            Initialize your data structure here.
+            :type size: int
             """
-            if n <= 0:
-                return None
+            self.size = size
+            self.q = deque()
+            self.sum = 0
     
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
+        def next(self, val):
+            """
+            :type val: int
+            :rtype: float
+            """
+            if len(self.q) == self.size:
+                self.sum -= self.q.popleft()
     
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
+            # add to tail
+            self.q.append(val)
+            self.sum += val
+            return self.sum/len(self.q)
     
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    # Your MovingAverage object will be instantiated and called as such:
+    # obj = MovingAverage(size)
+    # param_1 = obj.next(val)

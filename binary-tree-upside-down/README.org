@@ -1,0 +1,43 @@
+* Leetcode: Binary Tree Upside Down                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Binary Tree Upside Down
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+Given a binary tree where all the right nodes are either leaf nodes with a sibling (a left node that shares the same parent node) or empty, flip it upside down and turn it into a tree where the original right nodes turned into left leaf nodes. Return the new root.
+
+For example:
+#+BEGIN_EXAMPLE
+Given a binary tree {1,2,3,4,5},
+    1
+   / \
+  2   3
+ / \
+4   5
+#+END_EXAMPLE
+
+return the root of the binary tree [4,5,2,#,#,3,1].
+#+BEGIN_EXAMPLE
+   4
+  / \
+ 5   2
+    / \
+   3   1  
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-upside-down][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/binary-tree-upside-down/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/binary-tree-upside-down
+
+#+END_SRC
