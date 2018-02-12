@@ -39,7 +39,9 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 ## Blog link: https://brain.dennyzhang.com/shortest-distance-in-a-line
-select ifnull((
-       select Salary from Employee
-       group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+select t1.x-t2.x as shortest
+from point as t1 join point as t2
+where t1.x>t2.x
+order by (t1.x-t2.x) asc
+limit 1
 #+END_SRC

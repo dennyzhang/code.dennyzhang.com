@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Shortest Distance in a Line     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Shortest Distance in a Line  
 
 ---
 
@@ -12,31 +12,34 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+Table point holds the x coordinate of some points on x-axis in a plane, which are all integers.  
+Write a query to find the shortest distance between two points in these points.  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+    | x   |
+    |-----|
+    | -1  |
+    | 0   |
+    | 2   |
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+The shortest distance is '1' obviously, which is from point '-1' to '0'. So the output is as below:  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    | shortest|
+    |---------|
+    | 1       |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+Note: Every point is unique, which means there is no duplicates in table point.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+Follow-up: What if all these points have an id and are arranged from the left most to the right most of x axis?  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-distance-in-a-line)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-in-a-line/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/shortest-distance-in-a-line
+    select t1.x-t2.x as shortest
+    from point as t1 join point as t2
+    where t1.x>t2.x
+    order by (t1.x-t2.x) asc
+    limit 1
