@@ -21,10 +21,10 @@ Return the total number of ways you can paint the fence.
 Note:  
 n and k are non-negative integers.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/paint-fence)  
 
-Credits To: [Leetcode.com](https://leetcode.com/problems/majority-element-ii/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/paint-fence/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/majority-element-ii
+    ## Blog link: https://brain.dennyzhang.com/paint-fence
