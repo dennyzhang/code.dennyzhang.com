@@ -1,0 +1,54 @@
+* Leetcode: Nth Highest Salary                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Nth Highest Salary
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Write a SQL query to get the nth highest salary from the Employee table.
+#+BEGIN_EXAMPLE
++----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+#+END_EXAMPLE
+
+For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
+#+BEGIN_EXAMPLE
++------------------------+
+| getNthHighestSalary(2) |
++------------------------+
+| 200                    |
++------------------------+
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nth-highest-salary][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/nth-highest-salary/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/nth-highest-salary
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  DECLARE M INT;
+  DECLARE column_name varchar(100);
+  set M=N-1;
+  set column_name = CONCAT('getNthHighestSalary', N, ')');
+  RETURN (
+     select DISTINCT Salary as column_name
+     from Employee
+     order by Salary desc
+     LIMIT M, 1
+   );
+END
+#+END_SRC

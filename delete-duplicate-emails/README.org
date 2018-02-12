@@ -1,0 +1,46 @@
+* Leetcode: Delete Duplicate Emails                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Delete Duplicate Emails
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
+#+BEGIN_EXAMPLE
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
++----+------------------+
+Id is the primary key column for this table.
+#+END_EXAMPLE
+
+For example, after running your query, the above Person table should have the following rows:
+#+BEGIN_EXAMPLE
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
++----+------------------+
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-duplicate-emails][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/delete-duplicate-emails/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/delete-duplicate-emails
+delete t1 from Person as t1 inner join Person as t2
+on t1.Email = t2.Email
+where t1.Id > t2.Id
+#+END_SRC

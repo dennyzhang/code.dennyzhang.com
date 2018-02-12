@@ -1,0 +1,44 @@
+* Leetcode: Second Highest Salary                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Second Highest Salary
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Write a SQL query to get the second highest salary from the Employee table.
+#+BEGIN_EXAMPLE
++----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+#+END_EXAMPLE
+
+For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
+#+BEGIN_EXAMPLE
++---------------------+
+| SecondHighestSalary |
++---------------------+
+| 200                 |
++---------------------+
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/second-highest-salary/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/second-highest-salary
+select ifnull((
+       select Salary from Employee
+       group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+#+END_SRC
