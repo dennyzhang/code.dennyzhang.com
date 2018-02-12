@@ -7,6 +7,12 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 
 ---
 
+Similar Problems:  
+-   [Max Stack](https://brain.dennyzhang.com/max-stack)
+-   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+
+---
+
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.  
 
 -   push(x) &#x2013; Push element x onto stack.

@@ -1,89 +1,45 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Rising Temperature     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Rising Temperature  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Given a Weather table, write a SQL query to find all dates' Ids with higher temperature compared to its previous (yesterday's) dates.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+    +---------+------------+------------------+
+    | Id(INT) | Date(DATE) | Temperature(INT) |
+    +---------+------------+------------------+
+    |       1 | 2015-01-01 |               10 |
+    |       2 | 2015-01-02 |               25 |
+    |       3 | 2015-01-03 |               20 |
+    |       4 | 2015-01-04 |               30 |
+    +---------+------------+------------------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+For example, return the following Ids for the above Weather table:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+    +----+
+    | Id |
+    +----+
+    |  2 |
+    |  4 |
+    +----+
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rising-temperature)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/rising-temperature/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    ## Blog link: https://brain.dennyzhang.com/rising-temperature
+    select t1.Id
+    from Weather as t1 join Weather as t2
+    on DATE_ADD(t2.Date, INTERVAL 1 DAY) = t1.Date
+    where t1.Temperature > t2.Temperature;

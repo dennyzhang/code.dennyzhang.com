@@ -8,7 +8,7 @@ Reaching Points
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#recursive](https://brain.dennyzhang.com/tag/recursive)
 
 ---
 

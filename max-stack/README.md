@@ -1,89 +1,48 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Max Stack     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Max Stack  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   [Min Stack](https://brain.dennyzhang.com/min-stack)
+-   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Design a max stack that supports push, pop, top, peekMax and popMax.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+1.  push(x) &#x2013; Push element x onto stack.
+2.  pop() &#x2013; Remove the element on top of the stack and return it.
+3.  top() &#x2013; Get the element on the top.
+4.  peekMax() &#x2013; Retrieve the maximum element in the stack.
+5.  popMax() &#x2013; Retrieve the maximum element in the stack, and remove it. If you find more than one maximum elements, only remove the top-most one.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Example 1:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+    MaxStack stack = new MaxStack();
+    stack.push(5); 
+    stack.push(1);
+    stack.push(5);
+    stack.top(); -> 5
+    stack.popMax(); -> 5
+    stack.top(); -> 1
+    stack.peekMax(); -> 5
+    stack.pop(); -> 1
+    stack.top(); -> 5
+
+Note:  
+1.  -1e7 <= x <= 1e7
+2.  Number of operations won't exceed 10000.
+3.  The last four operations won't be called when stack is empty.
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-stack)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/max-stack/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    ## Blog link: https://brain.dennyzhang.com/max-stack

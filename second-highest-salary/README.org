@@ -36,7 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/second-highest-salary/d
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC python
+#+BEGIN_SRC sql
 ## Blog link: https://brain.dennyzhang.com/second-highest-salary
 select ifnull((
        select Salary from Employee

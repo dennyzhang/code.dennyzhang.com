@@ -53,6 +53,7 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://brain.dennyzhang.com/design-phone-directory
     ## Basic Ideas: One collection: free_set
     ##
+    ##  Notcie: here we only need one collection(free_set), instead of two (occupied_set and free_set)
     ## Complexity: Time O(1), Space O(n)
     class PhoneDirectory(object):
     

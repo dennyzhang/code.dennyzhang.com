@@ -1,89 +1,64 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Consecutive Numbers     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Consecutive Numbers  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Write a SQL query to find all numbers that appear at least three times consecutively.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
-    
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+    +----+-----+
+    | Id | Num |
+    +----+-----+
+    | 1  |  1  |
+    | 2  |  1  |
+    | 3  |  1  |
+    | 4  |  2  |
+    | 5  |  1  |
+    | 6  |  2  |
+    | 7  |  2  |
+    +----+-----+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+For example, given the above Logs table, 1 is the only number that appears consecutively for at least three times.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+    +-----------------+
+    | ConsecutiveNums |
+    +-----------------+
+    | 1               |
+    +-----------------+
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/consecutive-numbers)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/consecutive-numbers/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
+    ## Blog link: https://brain.dennyzhang.com/consecutive-numbers
+    SET @group_number=0;
+    SET @id_number1=0;
+    SET @id_number2=0;
     
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    select distinct Num as ConsecutiveNums
+    from
+        (select group_id, Num, count(1) as item_count
+        from
+            (select Num, new_group, (if(new_group=1, @group_number:=@group_number+1, @group_number)) AS group_id
+            from 
+                (select t1.Id, t1.Num, if(t1.Num=t2.Num, 0, 1) as new_group
+                from
+                (select *, (@id_number1:=@id_number1+1) as id_number
+                from Logs) as t1 left join 
+                (select *, (@id_number2:=@id_number2+1) as id_number
+                from Logs) as t2
+                on t1.id_number = t2.id_number + 1) as t3
+            order by t3.Id asc) as t4
+        group by group_id, Num
+        having count(1)>=3) as t5
+    group by Num

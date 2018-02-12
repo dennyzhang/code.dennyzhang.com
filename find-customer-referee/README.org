@@ -1,0 +1,51 @@
+* Leetcode: Find Customer Referee                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Find Customer Referee
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Given a table customer holding customers information and the referee.
+#+BEGIN_EXAMPLE
++------+------+-----------+
+| id   | name | referee_id|
++------+------+-----------+
+|    1 | Will |      NULL |
+|    2 | Jane |      NULL |
+|    3 | Alex |         2 |
+|    4 | Bill |      NULL |
+|    5 | Zack |         1 |
+|    6 | Mark |         2 |
++------+------+-----------+
+#+END_EXAMPLE
+Write a query to return the list of customers NOT referred by the person with id '2'.
+
+For the sample data above, the result is:
+#+BEGIN_EXAMPLE
++------+
+| name |
++------+
+| Will |
+| Jane |
+| Bill |
+| Zack |
++------+
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-customer-referee][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/find-customer-referee/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC sql
+## Blog link: https://brain.dennyzhang.com/find-customer-referee
+select name
+from customer
+where referee_id != '2' or referee_id is null;
+#+END_SRC

@@ -40,7 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/consecutive-numbers/des
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC python
+#+BEGIN_SRC sql
 ## Blog link: https://brain.dennyzhang.com/consecutive-numbers
 SET @group_number=0;
 SET @id_number1=0;
