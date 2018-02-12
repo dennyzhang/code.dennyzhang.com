@@ -1,0 +1,47 @@
+* Leetcode: Reaching Points                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     recursive
+:END:
+---------------------------------------------------------------------
+Reaching Points
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/recursive][#recursive]]
+---------------------------------------------------------------------
+A move consists of taking a point (x, y) and transforming it to either (x, x+y) or (x+y, y).
+
+Given a starting point (sx, sy) and a target point (tx, ty), return True if and only if a sequence of moves exists to transform the point (sx, sy) to (tx, ty). Otherwise, return False.
+
+#+BEGIN_EXAMPLE
+Examples:
+Input: sx = 1, sy = 1, tx = 3, ty = 5
+Output: True
+Explanation:
+One series of moves that transforms the starting point to the target is:
+(1, 1) -> (1, 2)
+(1, 2) -> (3, 2)
+(3, 2) -> (3, 5)
+
+Input: sx = 1, sy = 1, tx = 2, ty = 2
+Output: False
+
+Input: sx = 1, sy = 1, tx = 1, ty = 1
+Output: True
+#+END_EXAMPLE
+
+Note:
+
+sx, sy, tx, ty will all be integers in the range [1, 10^9].
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reaching-points][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/reaching-points/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/reaching-points
+
+#+END_SRC

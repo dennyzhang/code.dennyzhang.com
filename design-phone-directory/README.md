@@ -51,7 +51,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-phone-directory/
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/design-phone-directory
-    ## Basic Ideas: Two collections: free_set, occupied_set
+    ## Basic Ideas: One collection: free_set
     ##
     ## Complexity: Time O(1), Space O(n)
     class PhoneDirectory(object):
@@ -63,7 +63,6 @@ Leave me comments, if you have better ways to solve.
             :type maxNumbers: int
             """
             self.free_set = set(range(0, maxNumbers))
-            self.occupied_set = set()
     
         def get(self):
             """
@@ -71,10 +70,7 @@ Leave me comments, if you have better ways to solve.
             @return - Return an available number. Return -1 if none is available.
             :rtype: int
             """
-            if len(self.free_set) == 0: return -1
-            element = self.free_set.pop()
-            self.occupied_set.add(element)
-            return element
+            return self.free_set.pop() if len(self.free_set) != 0 else -1
     
         def check(self, number):
             """
@@ -90,9 +86,7 @@ Leave me comments, if you have better ways to solve.
             :type number: int
             :rtype: void
             """
-            if number in self.occupied_set:
-                self.occupied_set.remove(number)
-                self.free_set.add(number)
+            if number not in self.free_set: self.free_set.add(number)
     
     # Your PhoneDirectory object will be instantiated and called as such:
     # obj = PhoneDirectory(maxNumbers)
