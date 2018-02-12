@@ -1,89 +1,83 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Logger Rate Limiter     :BLOG:Basic:
 
 
 ---
 
-N-Queens  
+Logger Rate Limiter  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   [Design Hit Counter](https://brain.dennyzhang.com/design-hit-counter)
+-   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Design a logger system that receive stream of messages along with its timestamps, each message should be printed if and only if it is not printed in the last 10 seconds.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
+Given a message and a timestamp (in seconds granularity), return true if the message should be printed in the given timestamp, otherwise returns false.  
+
+It is possible that several messages arrive roughly at the same time.  
+
+Example:  
+
+    Logger logger = new Logger();
     
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
+    // logging string "foo" at timestamp 1
+    logger.shouldPrintMessage(1, "foo"); returns true; 
     
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+    // logging string "bar" at timestamp 2
+    logger.shouldPrintMessage(2,"bar"); returns true;
+    
+    // logging string "foo" at timestamp 3
+    logger.shouldPrintMessage(3,"foo"); returns false;
+    
+    // logging string "bar" at timestamp 8
+    logger.shouldPrintMessage(8,"bar"); returns false;
+    
+    // logging string "foo" at timestamp 10
+    logger.shouldPrintMessage(10,"foo"); returns false;
+    
+    // logging string "foo" at timestamp 11
+    logger.shouldPrintMessage(11,"foo"); returns true;
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/logger-rate-limiter)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/logger-rate-limiter/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
+    ## Blog link: https://brain.dennyzhang.com/logger-rate-limiter
+    ## Basic Ideas: hasmap: message -> timestamp
     ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
+    ## Complexity: Time O(1), Space O(n)
+    class Logger(object):
+    
+        def __init__(self):
             """
-            :type n: int
-            :rtype: List[List[str]]
+            Initialize your data structure here.
             """
-            if n <= 0:
-                return None
+            self.d = {}
     
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
+        def shouldPrintMessage(self, timestamp, message):
+            """
+            Returns true if the message should be printed in the given timestamp, otherwise returns false.
+            If this method returns false, the message will not be printed.
+            The timestamp is in seconds granularity.
+            :type timestamp: int
+            :type message: str
+            :rtype: bool
+            """
+            if message not in self.d:
+                self.d[message] = timestamp
+                return True
     
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
+            if timestamp - self.d[message] < 10:
+                return False
+            else:
+                self.d[message] = timestamp
+                return True
     
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    # Your Logger object will be instantiated and called as such:
+    # obj = Logger()
+    # param_1 = obj.shouldPrintMessage(timestamp,message)

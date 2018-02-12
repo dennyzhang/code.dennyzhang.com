@@ -8,9 +8,7 @@ Read N Characters Given Read4
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
 
 ---
 

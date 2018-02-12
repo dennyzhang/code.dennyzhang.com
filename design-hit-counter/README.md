@@ -1,89 +1,56 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Design Hit Counter     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Design Hit Counter  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   [Logger Rate Limiter](https://brain.dennyzhang.com/logger-rate-limiter)
+-   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Design a hit counter which counts the number of hits received in the past 5 minutes.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
+Each function accepts a timestamp parameter (in seconds granularity) and you may assume that calls are being made to the system in chronological order (ie, the timestamp is monotonically increasing). You may assume that the earliest timestamp starts at 1.  
+
+It is possible that several hits arrive roughly at the same time.  
+
+Example:  
+
+    HitCounter counter = new HitCounter();
     
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
+    // hit at timestamp 1.
+    counter.hit(1);
     
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+    // hit at timestamp 2.
+    counter.hit(2);
+    
+    // hit at timestamp 3.
+    counter.hit(3);
+    
+    // get hits at timestamp 4, should return 3.
+    counter.getHits(4);
+    
+    // hit at timestamp 300.
+    counter.hit(300);
+    
+    // get hits at timestamp 300, should return 4.
+    counter.getHits(300);
+    
+    // get hits at timestamp 301, should return 3.
+    counter.getHits(301);
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Follow up:  
+What if the number of hits per second could be very large? Does your design scale?  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-hit-counter)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/design-hit-counter/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    ## Blog link: https://brain.dennyzhang.com/design-hit-counter

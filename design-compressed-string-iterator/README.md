@@ -1,89 +1,47 @@
-# Leetcode: N-Queens     :BLOG:Hard:
+# Leetcode: Design Compressed String Iterator     :BLOG:Medium:
 
 
 ---
 
-N-Queens  
+Design Compressed String Iterator  
 
 ---
 
-The n-queens puzzle is the problem of placing n queens on an n X n chessboard such that no two queens attack each other.  
+Similar Problems:  
+-   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.  
+---
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.  
+Design and implement a data structure for a compressed string iterator. It should support the following operations: next and hasNext.  
 
-    For example,
-    There exist two distinct solutions to the 4-queens puzzle:
+The given compressed string will be in the form of each letter followed by a positive integer representing the number of this letter existing in the original uncompressed string.  
+
+next() - if the original string still has uncompressed characters, return the next letter; Otherwise return a white space.  
+hasNext() - Judge whether there is any letter needs to be uncompressed.  
+
+Note:  
+Please remember to RESET your class variables declared in StringIterator, as static/class variables are persisted across multiple test cases. Please see here for more details.  
+
+Example:  
+
+    StringIterator iterator = new StringIterator("L1e2t1C1o1d1e1");
     
-    [
-     [".Q..",  // Solution 1
-      "...Q",
-      "Q...",
-      "..Q."],
-    
-     ["..Q.",  // Solution 2
-      "Q...",
-      "...Q",
-      ".Q.."]
-    ]
+    iterator.next(); // return 'L'
+    iterator.next(); // return 'e'
+    iterator.next(); // return 'e'
+    iterator.next(); // return 't'
+    iterator.next(); // return 'C'
+    iterator.next(); // return 'o'
+    iterator.next(); // return 'd'
+    iterator.hasNext(); // return true
+    iterator.next(); // return 'e'
+    iterator.hasNext(); // return false
+    iterator.next(); // return ' '
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-compressed-string-iterator)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/n-queens/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/design-compressed-string-iterator/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/n-queens
-    ## Basic Ideas: backtracking.
-    ##              Place queens row by row
-    ##              Check if place in current position, examine the column and triangle
-    ##
-    ## Complexity: Time ?, Space ?
-    class Solution(object):
-        def solveNQueens(self, n):
-            """
-            :type n: int
-            :rtype: List[List[str]]
-            """
-            if n <= 0:
-                return None
-    
-            self.board = []
-            for i in xrange(n):
-                self.board.append(['.']*n)
-    
-            self.res = []
-            self.mySolveNQueens(n, 0)
-            return self.res
-    
-        def mySolveNQueens(self, n, irow):
-            if irow == n:
-                item = []
-                for row in self.board:
-                    item.append(''.join(row))
-                self.res.append(item)
-                return
-    
-            for icol in xrange(n):
-                # place Q
-                if self.isNQuees(n, irow, icol):
-                    self.board[irow][icol] = 'Q'
-                    self.mySolveNQueens(n, irow+1)
-                self.board[irow][icol] = '.'
-    
-        def isNQuees(self, n, irow, icol):
-            for index in xrange(n):
-                # check column
-                if index == irow: continue
-                if self.board[index][icol] == 'Q': return False
-    
-            for i in xrange(n):
-                for j in xrange(n):
-                    if irow == i and icol == j: continue
-                    if abs(irow-i) == abs(icol-j) and self.board[i][j] == 'Q':
-                        return False
-            return True
-    
-    s = Solution()
-    print s.solveNQueens(8)
+    ## Blog link: https://brain.dennyzhang.com/design-compressed-string-iterator
