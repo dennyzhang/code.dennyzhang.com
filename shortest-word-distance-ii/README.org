@@ -1,8 +1,8 @@
-* Leetcode: Shortest Word Distance II                                              :BLOG:Basic:
+* Leetcode: Shortest Word Distance II                           :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array
+:type:     array, designquestion
 :END:
 ---------------------------------------------------------------------
 Shortest Word Distance II
