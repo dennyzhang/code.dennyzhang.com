@@ -1,0 +1,41 @@
+* Leetcode: Valid Phone Numbers                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     shell
+:END:
+---------------------------------------------------------------------
+Word Frequency
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/shell][#shell]]
+---------------------------------------------------------------------
+Given a text file file.txt that contains list of phone numbers (one per line), write a one liner bash script to print all valid phone numbers.
+
+You may assume that a valid phone number must appear in one of the following two formats: (xxx) xxx-xxxx or xxx-xxx-xxxx. (x means a digit)
+
+You may also assume each line in the text file must not contain leading or trailing white spaces.
+
+For example, assume that file.txt has the following content:
+#+BEGIN_EXAMPLE
+987-123-4567
+123 456 7890
+(123) 456-7890
+#+END_EXAMPLE
+
+Your script should output the following valid phone numbers:
+#+BEGIN_EXAMPLE
+987-123-4567
+(123) 456-7890
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-phone-numbers][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/valid-phone-numbers/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC sh
+## Blog link: https://brain.dennyzhang.com/valid-phone-numbers
+grep -iE '^\([0-9][0-9][0-9]\) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$|^[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$' file.txt
+#+END_SRC

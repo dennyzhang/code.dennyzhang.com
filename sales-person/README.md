@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Sales Person     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Sales Person  
 
 ---
 
@@ -12,31 +12,73 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+Description  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+Given three tables: salesperson, company, orders.  
+Output all the names in the table salesperson, who didn't have sales to company 'RED'.  
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+Example  
+Input  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+Table: salesperson  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+    +----------+------+--------+-----------------+-----------+
+    | sales_id | name | salary | commission_rate | hire_date |
+    +----------+------+--------+-----------------+-----------+
+    |   1      | John | 100000 |     6           | 4/1/2006  |
+    |   2      | Amy  | 120000 |     5           | 5/1/2010  |
+    |   3      | Mark | 65000  |     12          | 12/25/2008|
+    |   4      | Pam  | 25000  |     25          | 1/1/2005  |
+    |   5      | Alex | 50000  |     10          | 2/3/2007  |
+    +----------+------+--------+-----------------+-----------+
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+The table salesperson holds the salesperson information. Every salesperson has a sales\_id and a name.  
+Table: company  
+
+    +---------+--------+------------+
+    | com_id  |  name  |    city    |
+    +---------+--------+------------+
+    |   1     |  RED   |   Boston   |
+    |   2     | ORANGE |   New York |
+    |   3     | YELLOW |   Boston   |
+    |   4     | GREEN  |   Austin   |
+    +---------+--------+------------+
+
+The table company holds the company information. Every company has a com\_id and a name.  
+Table: orders  
+
+    +----------+----------+---------+----------+--------+
+    | order_id |  date    | com_id  | sales_id | amount |
+    +----------+----------+---------+----------+--------+
+    | 1        | 1/1/2014 |    3    |    4     | 100000 |
+    | 2        | 2/1/2014 |    4    |    5     | 5000   |
+    | 3        | 3/1/2014 |    1    |    1     | 50000  |
+    | 4        | 4/1/2014 |    1    |    4     | 25000  |
+    +----------+----------+---------+----------+--------+
+
+The table orders holds the sales record information, salesperson and customer company are represented by sales\_id and com\_id.  
+output  
+
+    +------+
+    | name | 
+    +------+
+    | Amy  | 
+    | Mark | 
+    | Alex |
+    +------+
+
+Explanation  
+
+According to order '3' and '4' in table orders, it is easy to tell only salesperson 'John' and 'Alex' have sales to company 'RED',  
+so we need to output all the other names in table salesperson.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sales-person)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/sales-person/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
+    ## Blog link: https://brain.dennyzhang.com/sales-person
     select ifnull((
            select Salary from Employee
            group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary

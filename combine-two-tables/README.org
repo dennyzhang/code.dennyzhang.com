@@ -1,0 +1,52 @@
+* Leetcode: Combine Two Tables                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Combine Two Tables
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Table: Person
+#+BEGIN_EXAMPLE
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| PersonId    | int     |
+| FirstName   | varchar |
+| LastName    | varchar |
++-------------+---------+
+PersonId is the primary key column for this table.
+#+END_EXAMPLE
+
+Table: Address
+#+BEGIN_EXAMPLE
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| AddressId   | int     |
+| PersonId    | int     |
+| City        | varchar |
+| State       | varchar |
++-------------+---------+
+AddressId is the primary key column for this table.
+#+END_EXAMPLE
+
+Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
+
+FirstName, LastName, City, State
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combine-two-tables][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/combine-two-tables/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC sql
+## Blog link: https://brain.dennyzhang.com/combine-two-tables
+select Person.FirstName, Person.LastName, Address.City, Address.State
+from Person left join Address on Person.PersonId = Address.PersonId;
+#+END_SRC

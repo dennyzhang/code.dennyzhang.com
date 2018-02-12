@@ -1,0 +1,49 @@
+* Leetcode: Tenth Line                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     shell
+:END:
+---------------------------------------------------------------------
+Tenth Line
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/shell][#shell]]
+---------------------------------------------------------------------
+How would you print just the 10th line of a file?
+
+For example, assume that file.txt has the following content:
+#+BEGIN_EXAMPLE
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+#+END_EXAMPLE
+
+Your script should output the tenth line, which is:
+#+BEGIN_EXAMPLE
+Line 10
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/tenth-line][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/tenth-line/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC sh
+## Blog link: https://brain.dennyzhang.com/tenth-line
+line_count=$(wc -l ./file.txt | awk -F' ' '{print $1}')
+if [ $line_count -lt 10 ]; then
+    echo ""
+    exit 1
+else
+    head -n10 ./file.txt | tail -n1
+fi
+#+END_SRC
