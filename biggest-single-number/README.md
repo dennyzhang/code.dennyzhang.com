@@ -12,31 +12,42 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+Table number contains many numbers in column num including duplicated ones.  
+Can you write a SQL query to find the biggest number, which only appears once.  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+    +---+
+    |num|
+    +---+
+    | 8 |
+    | 8 |
+    | 3 |
+    | 3 |
+    | 1 |
+    | 4 |
+    | 5 |
+    | 6 |
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+For the sample data above, your query should return the following result:  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    +---+
+    |num|
+    +---+
+    | 6 |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+Note:  
+If there is no such number, just output null.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/biggest-single-number)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/biggest-single-number/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
+    ## Blog link: https://brain.dennyzhang.com/biggest-single-number
     select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+        select num
+        from number
+        group by num
+        having count(1) = 1
+        order by num desc
+        limit 0, 1), null) as num
