@@ -1,0 +1,57 @@
+* Leetcode: Classes More Than 5 Students                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Classes More Than 5 Students
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+There is a table courses with columns: student and class
+
+Please list out all classes which have more than or equal to 5 students.
+
+For example, the table:
+#+BEGIN_EXAMPLE
++---------+------------+
+| student | class      |
++---------+------------+
+| A       | Math       |
+| B       | English    |
+| C       | Math       |
+| D       | Biology    |
+| E       | Math       |
+| F       | Computer   |
+| G       | Math       |
+| H       | Math       |
+| I       | Math       |
++---------+------------+
+#+END_EXAMPLE
+
+Should output:
+#+BEGIN_EXAMPLE
++---------+
+| class   |
++---------+
+| Math    |
++---------+
+#+END_EXAMPLE
+
+Note:
+The students should not be counted duplicate in each course.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/classes-more-than-5-students][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/classes-more-than-5-students/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC sql
+## Blog link: https://brain.dennyzhang.com/classes-more-than-5-students
+SELECT class
+FROM courses
+GROUP BY class HAVING COUNT(DISTINCT student)>=5;
+#+END_SRC
