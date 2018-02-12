@@ -7,6 +7,12 @@ Implement pow(x, n).
 
 ---
 
+Similar Problems:  
+-   [Super Pow](https://brain.dennyzhang.com/super-pow)
+-   Tag: [#math](https://brain.dennyzhang.com/tag/math), [#recursive](https://brain.dennyzhang.com/tag/recursive)
+
+---
+
 Implement pow(x, n).  
 
     Example 1:

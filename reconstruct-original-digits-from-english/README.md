@@ -7,6 +7,12 @@ Reconstruct Original Digits from English
 
 ---
 
+Similar Problems:  
+-   [Strobogrammatic Number](https://brain.dennyzhang.com/strobogrammatic-number)
+-   Tag: [#string](https://brain.dennyzhang.com/tag/string)
+
+---
+
 Given a non-empty string containing an out-of-order English representation of digits 0-9, output the digits in ascending order.  
 
 Note:  

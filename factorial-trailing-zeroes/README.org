@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, math
+:type:     math
 :END:
 ---------------------------------------------------------------------
 Factorial Trailing Zeroes
@@ -25,10 +25,8 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if n < 0:
-            return None
-        if n == 0 or n == 1:
-            return 0
+        if n < 0: return None
+        if n == 0 or n == 1: return 0
 
         import math
         k = int(math.log(n, 5))

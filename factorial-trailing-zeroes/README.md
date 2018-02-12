@@ -24,10 +24,8 @@ Leave me comments, if you have better ways to solve.
             :type n: int
             :rtype: int
             """
-            if n < 0:
-                return None
-            if n == 0 or n == 1:
-                return 0
+            if n < 0: return None
+            if n == 0 or n == 1: return 0
     
             import math
             k = int(math.log(n, 5))

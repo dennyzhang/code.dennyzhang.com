@@ -1,25 +1,29 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Strobogrammatic Number II     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Strobogrammatic Number II  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Strobogrammatic Number](https://brain.dennyzhang.com/strobogrammatic-number)
+-   Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Find all strobogrammatic numbers that are of length = n.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+For example,  
+Given n = 2, return ["11","69","88","96"].  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/strobogrammatic-number-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/strobogrammatic-number-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/strobogrammatic-number-ii

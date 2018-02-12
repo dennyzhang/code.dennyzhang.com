@@ -8,6 +8,7 @@ Shortest Word Distance
 ---
 
 Similar Problems:  
+-   [Shortest Word Distance II](https://brain.dennyzhang.com/shortest-word-distance-ii)
 -   Tag: [#array](https://brain.dennyzhang.com/tag/array)
 
 ---
@@ -88,7 +89,7 @@ Leave me comments, if you have better ways to solve.
             :type word2: str
             :rtype: int
             """
-            l = 
+            l = []
             for i in range(len(words)):
                 if words[i] == word1: l.append((0, i))
                 if words[i] == word2: l.append((1, i))
