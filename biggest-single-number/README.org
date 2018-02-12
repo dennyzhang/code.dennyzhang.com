@@ -1,0 +1,55 @@
+* Leetcode: Second Highest Salary                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Second Highest Salary
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Table number contains many numbers in column num including duplicated ones.
+Can you write a SQL query to find the biggest number, which only appears once.
+#+BEGIN_EXAMPLE
++---+
+|num|
++---+
+| 8 |
+| 8 |
+| 3 |
+| 3 |
+| 1 |
+| 4 |
+| 5 |
+| 6 | 
+#+END_EXAMPLE
+
+For the sample data above, your query should return the following result:
+#+BEGIN_EXAMPLE
++---+
+|num|
++---+
+| 6 |
+#+END_EXAMPLE
+
+Note:
+If there is no such number, just output null.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/biggest-single-number][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/biggest-single-number/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC sql
+## Blog link: https://brain.dennyzhang.com/biggest-single-number
+select ifnull((
+    select num
+    from number
+    group by num
+    having count(1) = 1
+    order by num desc
+    limit 0, 1), null) as num
+#+END_SRC

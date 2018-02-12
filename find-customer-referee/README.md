@@ -45,4 +45,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-customer-referee/d
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/find-customer-referee
-    select name from customer where referee_id != '2' or referee_id is null;
+    select name
+    from customer
+    where referee_id != '2' or referee_id is null;

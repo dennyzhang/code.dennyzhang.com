@@ -1,0 +1,40 @@
+* Leetcode: Maximum Distance in Arrays                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Maximum Distance in Arrays
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given m arrays, and each array is sorted in ascending order. Now you can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers a and b to be their absolute difference |a-b|. Your task is to find the maximum distance.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+[[1,2,3],
+ [4,5],
+ [1,2,3]]
+Output: 4
+Explanation: 
+One way to reach the maximum distance 4 is to pick 1 in the first or third array and pick 5 in the second array.
+#+END_EXAMPLE
+
+Note:
+1. Each given array will have at least 1 number. There will be at least two non-empty arrays.
+- The total number of the integers in all the m arrays will be in the range of [2, 10000].
+- The integers in the m arrays will be in the range of [-10000, 10000].
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-distance-in-arrays][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/maximum-distance-in-arrays/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/maximum-distance-in-arrays
+
+#+END_SRC

@@ -53,3 +53,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/employee-bonus/descript
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/employee-bonus
+    select name, bonus
+    from Employee left join Bonus
+    on Employee.empId = Bonus.empId
+    where bonus<1000 or bonus is null;
