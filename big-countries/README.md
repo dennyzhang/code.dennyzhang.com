@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Big Countries     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Big Countries  
 
 ---
 
@@ -12,31 +12,38 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+There is a table World  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+    +-----------------+------------+------------+--------------+---------------+
+    | name            | continent  | area       | population   | gdp           |
+    +-----------------+------------+------------+--------------+---------------+
+    | Afghanistan     | Asia       | 652230     | 25500100     | 20343000      |
+    | Albania         | Europe     | 28748      | 2831741      | 12960000      |
+    | Algeria         | Africa     | 2381741    | 37100000     | 188681000     |
+    | Andorra         | Europe     | 468        | 78115        | 3712000       |
+    | Angola          | Africa     | 1246700    | 20609294     | 100990000     |
+    +-----------------+------------+------------+--------------+---------------+
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+Write a SQL solution to output big countries' name, population and area.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+For example, according to the above table, we should output:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+    +--------------+-------------+--------------+
+    | name         | population  | area         |
+    +--------------+-------------+--------------+
+    | Afghanistan  | 25500100    | 652230       |
+    | Algeria      | 37100000    | 2381741      |
+    +--------------+-------------+--------------+
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/big-countries)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/big-countries/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/big-countries
+    select name, population, area
+    from World
+    where area > 3000000 or population > 25000000;

@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Department Top Three Salaries     :BLOG:Hard:
 
 
 ---
 
-Second Highest Salary  
+Department Top Three Salaries  
 
 ---
 
@@ -12,31 +12,55 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+The Employee table holds all employees. Every employee has an Id, and there is also a column for the department Id.  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+    +----+-------+--------+--------------+
+    | Id | Name  | Salary | DepartmentId |
+    +----+-------+--------+--------------+
+    | 1  | Joe   | 70000  | 1            |
+    | 2  | Henry | 80000  | 2            |
+    | 3  | Sam   | 60000  | 2            |
+    | 4  | Max   | 90000  | 1            |
+    | 5  | Janet | 69000  | 1            |
+    | 6  | Randy | 85000  | 1            |
+    +----+-------+--------+--------------+
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+The Department table holds all departments of the company.  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    +----+----------+
+    | Id | Name     |
+    +----+----------+
+    | 1  | IT       |
+    | 2  | Sales    |
+    +----+----------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+Write a SQL query to find employees who earn the top three salaries in each of the department. For the above tables, your SQL query should return the following rows.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+    +------------+----------+--------+
+    | Department | Employee | Salary |
+    +------------+----------+--------+
+    | IT         | Max      | 90000  |
+    | IT         | Randy    | 85000  |
+    | IT         | Joe      | 70000  |
+    | Sales      | Henry    | 80000  |
+    | Sales      | Sam      | 60000  |
+    +------------+----------+--------+
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/department-top-three-salaries)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/department-top-three-salaries/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/department-top-three-salaries
+    select t4.Name as Department, t3.Name as Employee, t3.Salary
+    from
+        (select t1.Id, t1.Name, t1.Salary, t1.DepartmentId, count(1) as rank
+        from Employee as t1 inner join Employee as t2
+        on t1.DepartmentId = t2.DepartmentId
+        where t1.Salary <= t2.Salary
+        group by t1.Id, t1.Name, t1.Salary, t1.DepartmentId) as t3
+        inner join Department as t4
+        on t3.DepartmentId = t4.Id
+    where rank<=3
+    order by t4.Name, t3.Salary desc

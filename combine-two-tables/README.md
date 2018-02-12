@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Combine Two Tables     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Combine Two Tables  
 
 ---
 
@@ -12,31 +12,39 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+Table: Person  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+    +-------------+---------+
+    | Column Name | Type    |
+    +-------------+---------+
+    | PersonId    | int     |
+    | FirstName   | varchar |
+    | LastName    | varchar |
+    +-------------+---------+
+    PersonId is the primary key column for this table.
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+Table: Address  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    +-------------+---------+
+    | Column Name | Type    |
+    +-------------+---------+
+    | AddressId   | int     |
+    | PersonId    | int     |
+    | City        | varchar |
+    | State       | varchar |
+    +-------------+---------+
+    AddressId is the primary key column for this table.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+FirstName, LastName, City, State  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combine-two-tables)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/combine-two-tables/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/combine-two-tables
+    select Person.FirstName, Person.LastName, Address.City, Address.State
+    from Person left join Address on Person.PersonId = Address.PersonId;

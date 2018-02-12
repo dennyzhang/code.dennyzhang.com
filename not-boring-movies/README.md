@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Not Boring Movies     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Not Boring Movies  
 
 ---
 
@@ -12,31 +12,37 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies' ratings and descriptions.  
+Please write a SQL query to output movies with an odd numbered ID and a description that is not 'boring'. Order the result by rating.  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+For example, table cinema:  
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+    +---------+-----------+--------------+-----------+
+    |   id    | movie     |  description |  rating   |
+    +---------+-----------+--------------+-----------+
+    |   1     | War       |   great 3D   |   8.9     |
+    |   2     | Science   |   fiction    |   8.5     |
+    |   3     | irish     |   boring     |   6.2     |
+    |   4     | Ice song  |   Fantacy    |   8.6     |
+    |   5     | House card|   Interesting|   9.1     |
+    +---------+-----------+--------------+-----------+
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+For the example above, the output should be:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+    +---------+-----------+--------------+-----------+
+    |   id    | movie     |  description |  rating   |
+    +---------+-----------+--------------+-----------+
+    |   5     | House card|   Interesting|   9.1     |
+    |   1     | War       |   great 3D   |   8.9     |
+    +---------+-----------+--------------+-----------+
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/not-boring-movies)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/not-boring-movies/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/not-boring-movies
+    select * from cinema
+    where description != '%boring%' and id %2 != 0
+    order by rating desc;

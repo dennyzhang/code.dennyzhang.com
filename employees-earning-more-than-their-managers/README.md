@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Employees Earning More Than Their Managers     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Employees Earning More Than Their Managers  
 
 ---
 
@@ -12,31 +12,33 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+    +----+-------+--------+-----------+
+    | Id | Name  | Salary | ManagerId |
+    +----+-------+--------+-----------+
+    | 1  | Joe   | 70000  | 3         |
+    | 2  | Henry | 80000  | 4         |
+    | 3  | Sam   | 60000  | NULL      |
+    | 4  | Max   | 90000  | NULL      |
+    +----+-------+--------+-----------+
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    +----------+
+    | Employee |
+    +----------+
+    | Joe      |
+    +----------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employees-earning-more-than-their-managers)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/employees-earning-more-than-their-managers
+    select t1.Name as Employee
+    from Employee as t1 inner join Employee as t2
+    on t1.ManagerId = t2.Id
+    where t1.Salary > t2.Salary;

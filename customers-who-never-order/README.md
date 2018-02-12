@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Customers Who Never Order     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Customers Who Never Order  
 
 ---
 
@@ -12,31 +12,44 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+Table: Customers.  
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+    +----+-------+
+    | Id | Name  |
+    +----+-------+
+    | 1  | Joe   |
+    | 2  | Henry |
+    | 3  | Sam   |
+    | 4  | Max   |
+    +----+-------+
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+Table: Orders.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+    +----+------------+
+    | Id | CustomerId |
+    +----+------------+
+    | 1  | 3          |
+    | 2  | 1          |
+    +----+------------+
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+Using the above tables as example, return the following:  
+
+    +-----------+
+    | Customers |
+    +-----------+
+    | Henry     |
+    | Max       |
+    +-----------+
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/customers-who-never-order)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/customers-who-never-order/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/customers-who-never-order
+    select Customers.Name as Customers
+    from Customers left join Orders on Customers.Id = Orders.CustomerId
+    where Orders.CustomerId is Null;

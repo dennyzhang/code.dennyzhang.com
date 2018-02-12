@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Classes More Than 5 Students     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Classes More Than 5 Students  
 
 ---
 
@@ -12,31 +12,44 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+There is a table courses with columns: student and class  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+Please list out all classes which have more than or equal to 5 students.  
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+For example, the table:  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    +---------+------------+
+    | student | class      |
+    +---------+------------+
+    | A       | Math       |
+    | B       | English    |
+    | C       | Math       |
+    | D       | Biology    |
+    | E       | Math       |
+    | F       | Computer   |
+    | G       | Math       |
+    | H       | Math       |
+    | I       | Math       |
+    +---------+------------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+Should output:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+    +---------+
+    | class   |
+    +---------+
+    | Math    |
+    +---------+
+
+Note:  
+The students should not be counted duplicate in each course.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/classes-more-than-5-students)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/classes-more-than-5-students/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/classes-more-than-5-students
+    SELECT class
+    FROM courses
+    GROUP BY class HAVING COUNT(DISTINCT student)>=5;

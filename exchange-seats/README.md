@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Exchange Seats     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Exchange Seats  
 
 ---
 
@@ -12,31 +12,46 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+Mary is a teacher in a middle school and she has a table seat storing students' names and their corresponding seat ids.  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+The column id is continuous increment.  
+Mary wants to change seats for the adjacent students.  
+Can you write a SQL query to output the result for Mary?  
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+    +---------+---------+
+    |    id   | student |
+    +---------+---------+
+    |    1    | Abbot   |
+    |    2    | Doris   |
+    |    3    | Emerson |
+    |    4    | Green   |
+    |    5    | Jeames  |
+    +---------+---------+
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+For the sample input, the output is:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+    +---------+---------+
+    |    id   | student |
+    +---------+---------+
+    |    1    | Doris   |
+    |    2    | Abbot   |
+    |    3    | Green   |
+    |    4    | Emerson |
+    |    5    | Jeames  |
+    +---------+---------+
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+Note:  
+If the number of students is odd, there is no need to change the last one's seat.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/exchange-seats)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/exchange-seats/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/exchange-seats
+    select s1.id as id, s2.student as student
+    from seat as s1 join seat as s2
+    where (s1.id % 2 = 1 and s2.id = s1.id + 1) or (s1.id % 2 = 0 and s1.id = s2.id + 1)
+    or (s1.id %2 = 1 and s1.id = s2.id and s1.id in (select max(id) from seat))
+    order by s1.id asc

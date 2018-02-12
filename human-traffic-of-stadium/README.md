@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Human Traffic of Stadium     :BLOG:Hard:
 
 
 ---
 
-Second Highest Salary  
+Human Traffic of Stadium  
 
 ---
 
@@ -12,31 +12,61 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+X city built a new stadium, each day many people visit it and the stats are saved as these columns: id, date, people  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+Please write a query to display the records which have 3 or more consecutive rows and the amount of people more than 100(inclusive).  
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+For example, the table stadium:  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    +------+------------+-----------+
+    | id   | date       | people    |
+    +------+------------+-----------+
+    | 1    | 2017-01-01 | 10        |
+    | 2    | 2017-01-02 | 109       |
+    | 3    | 2017-01-03 | 150       |
+    | 4    | 2017-01-04 | 99        |
+    | 5    | 2017-01-05 | 145       |
+    | 6    | 2017-01-06 | 1455      |
+    | 7    | 2017-01-07 | 199       |
+    | 8    | 2017-01-08 | 188       |
+    +------+------------+-----------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+For the sample data above, the output is:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+    +------+------------+-----------+
+    | id   | date       | people    |
+    +------+------------+-----------+
+    | 5    | 2017-01-05 | 145       |
+    | 6    | 2017-01-06 | 1455      |
+    | 7    | 2017-01-07 | 199       |
+    | 8    | 2017-01-08 | 188       |
+    +------+------------+-----------+
+
+Note:  
+Each day only have one row record, and the dates are increasing with id increasing.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/human-traffic-of-stadium)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/human-traffic-of-stadium/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/human-traffic-of-stadium
+    SET @group_number=0;
+    
+    select distinct stadium.id, stadium.date, stadium.people
+    from stadium inner join
+        (select min(id) as min_id, max(id) as max_id, group_id
+        from (select t3.*, if(below_100 != next_day_below_100 , @group_number:=@group_number+1, @group_number) as group_id
+              from (select t1.*, t2.below_100 as next_day_below_100
+                 from
+                 (select id, date, people, if(people<100, 1, 0) as below_100
+                 from stadium) t1 left join  
+                 (select id, date, people, if(people<100, 1, 0) as below_100
+                 from stadium) t2
+                 on t1.id = t2.id + 1
+                 order by t1.id asc) t3) as t4
+        group by group_id
+        having count(1)>=3) as t5
+    where stadium.id >= min_id and stadium.id <= max_id
+    order by stadium.id asc

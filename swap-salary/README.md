@@ -1,9 +1,9 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
+# Leetcode: Swap Salary     :BLOG:Medium:
 
 
 ---
 
-Second Highest Salary  
+Swap Salary  
 
 ---
 
@@ -12,31 +12,35 @@ Similar Problems:
 
 ---
 
-Write a SQL query to get the second highest salary from the Employee table.  
+Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update query and no intermediate temp table.  
+For example:  
 
-    +----+--------+
-    | Id | Salary |
-    +----+--------+
-    | 1  | 100    |
-    | 2  | 200    |
-    | 3  | 300    |
-    +----+--------+
+    | id | name | sex | salary |
+    |----|------|-----|--------|
+    | 1  | A    | m   | 2500   |
+    | 2  | B    | f   | 1500   |
+    | 3  | C    | m   | 5500   |
+    | 4  | D    | f   | 500    |
 
-For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.  
+After running your query, the above salary table should have the following rows:  
 
-    +---------------------+
-    | SecondHighestSalary |
-    +---------------------+
-    | 200                 |
-    +---------------------+
+    | id | name | sex | salary |
+    |----|------|-----|--------|
+    | 1  | A    | f   | 2500   |
+    | 2  | B    | m   | 1500   |
+    | 3  | C    | f   | 5500   |
+    | 4  | D    | m   | 500    |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-highest-salary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swap-salary)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/swap-salary/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    ## Blog link: https://brain.dennyzhang.com/swap-salary
+    update salary
+    set sex =
+        case
+        when sex = 'm' then 'f'
+        when sex = 'f' then 'm'
+        end;
