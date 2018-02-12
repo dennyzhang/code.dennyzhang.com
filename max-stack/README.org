@@ -38,13 +38,13 @@ Note:
 - Number of operations won't exceed 10000.
 - The last four operations won't be called when stack is empty.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/majority-element-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-stack][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element-ii/description/][Leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/max-stack/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/majority-element-ii
+## Blog link: https://brain.dennyzhang.com/max-stack
 
 #+END_SRC
