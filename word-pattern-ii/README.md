@@ -1,25 +1,61 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Word Pattern II     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Word Pattern II  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Word Pattern](https://brain.dennyzhang.com/word-pattern)
+-   Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a pattern and a string str, find if str follows the same pattern.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty substring in str.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Examples:  
+1.  pattern = "abab", str = "redblueredblue" should return true.
+2.  pattern = "aaaa", str = "asdasdasdasd" should return true.
+3.  pattern = "aabb", str = "xyzabcxzyabc" should return false.
+
+Notes:  
+You may assume both pattern and str contains only lowercase letters.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-pattern-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/word-pattern-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/word-pattern-ii
+    ## Basic Ideas:
+    ##  In str, not all words are the same length
+    ##
+    ## Complexity:
+    class Solution(object):
+        def wordPatternMatch(self, pattern, str):
+            """
+            :type pattern: str
+            :type str: str
+            :rtype: bool
+            """
+            len1, len2 = len(pattern), len(str)
+            if len1 == 0 or len2 == 0: return len1 == len2
+            # problematic?
+            if len2%len1 != 0: return False
+            word_len = len2/len1
+            d, seen = {}, set()
+            for i in range(len1):
+                ch = pattern[i]
+                word = str[i*word_len:(i+1)*word_len]
+                if ch in d:
+                    if d[ch] != word: return False
+                else:
+                    if word in seen: return False
+                    d[ch] = word
+                    seen.add(word)
+            return True

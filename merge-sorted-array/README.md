@@ -16,10 +16,10 @@ Similar Problems:
 
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-pattern)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-sorted-array)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/word-pattern/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/merge-sorted-array/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/word-pattern
+    ## Blog link: https://brain.dennyzhang.com/merge-sorted-array

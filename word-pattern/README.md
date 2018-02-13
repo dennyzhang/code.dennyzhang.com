@@ -25,9 +25,9 @@ pattern = "abba", str = "dog dog dog dog" should return false.
 Notes:  
 You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-sorted-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-pattern)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/merge-sorted-array/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/word-pattern/description/)  
 
 Leave me comments, if you have better ways to solve.  
 

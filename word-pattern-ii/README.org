@@ -31,5 +31,31 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/word-pattern-ii
-
+## Basic Ideas:
+##  In str, not all words are the same length
+##
+## Complexity:
+class Solution(object):
+    def wordPatternMatch(self, pattern, str):
+        """
+        :type pattern: str
+        :type str: str
+        :rtype: bool
+        """
+        len1, len2 = len(pattern), len(str)
+        if len1 == 0 or len2 == 0: return len1 == len2
+        # problematic?
+        if len2%len1 != 0: return False
+        word_len = len2/len1
+        d, seen = {}, set([])
+        for i in range(len1):
+            ch = pattern[i]
+            word = str[i*word_len:(i+1)*word_len]
+            if ch in d:
+                if d[ch] != word: return False
+            else:
+                if word in seen: return False
+                d[ch] = word
+                seen.add(word)
+        return True
 #+END_SRC

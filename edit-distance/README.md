@@ -1,25 +1,30 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Edit Distance     :BLOG:Hard:
 
 
 ---
 
-Identity number which appears exactly once.  
+Edit Distance  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [One Edit Distance](https://brain.dennyzhang.com/one-edit-distance)
+-   Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2. (each operation is counted as 1 step.)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+You have the following 3 operations permitted on a word:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+a) Insert a character  
+b) Delete a character  
+c) Replace a character  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/edit-distance)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/edit-distance/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/edit-distance

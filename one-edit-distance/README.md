@@ -8,6 +8,7 @@ One Edit Distance
 ---
 
 Similar Problems:  
+-   [Edit Distance](https://brain.dennyzhang.com/edit-distance)
 -   Tag: [#classic](https://brain.dennyzhang.com/tag/classic)
 
 ---
@@ -40,9 +41,8 @@ Leave me comments, if you have better ways to solve.
                     if count > 1: return False
                 return count == 1
             else:
-                if len_s<len_t:
-                    s,t=t,s
-                    len_s,len_t=len_t,len_s
+                # Use recursive to simplify the logic
+                if len_s<len_t: return self.isOneEditDistance(t, s)
                 # s is longer
                 offset = 0
                 for i in range(len_t):
