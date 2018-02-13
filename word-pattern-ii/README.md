@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
             # problematic?
             if len2%len1 != 0: return False
             word_len = len2/len1
-            d, seen = {}, set()
+            d, seen = {}, set([])
             for i in range(len1):
                 ch = pattern[i]
                 word = str[i*word_len:(i+1)*word_len]
