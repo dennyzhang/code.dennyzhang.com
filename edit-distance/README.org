@@ -1,0 +1,31 @@
+* Leetcode: Edit Distance                                              :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Edit Distance
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/one-edit-distance][One Edit Distance]]
+- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+---------------------------------------------------------------------
+Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2. (each operation is counted as 1 step.)
+
+You have the following 3 operations permitted on a word:
+
+a) Insert a character
+b) Delete a character
+c) Replace a character
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/edit-distance][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/edit-distance/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/edit-distance
+
+#+END_SRC
