@@ -1,0 +1,26 @@
+* Leetcode: Template                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
+- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-k-digits][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/remove-k-digits/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/remove-k-digits
+
+#+END_SRC
