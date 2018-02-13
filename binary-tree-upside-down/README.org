@@ -39,5 +39,36 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/binary-tree-upside-down
+## Basic Ideas: In-order
+##
+## Complexity: Time O(n), Space O(h). h = height of the tree
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Solution(object):
+    def upsideDownBinaryTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        if root is None: return None
+        stack = []
+        p = root
+        while p:
+            stack.append(p)
+            p = p.left
+        newRoot = stack.pop(-1)
+        q = newRoot
+        while len(stack) != 0:
+            pre_parent = stack.pop(-1)
+            q.left = pre_parent.right
+            q.right = pre_parent
+            q = pre_parent
+        # configure the last node as a leaf
+        q.left, q.right = None, None
+        return newRoot
 #+END_SRC
