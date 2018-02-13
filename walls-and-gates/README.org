@@ -44,5 +44,36 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/walls-and-gates
-
+## Basic Ideas: BFS
+##      For each 0, and configure the values to the level number
+##      If the neighbors is 0 or value equals current level, skip them
+##
+## Complexity: Time O(?), Space O(n*n)
+class Solution:
+    def wallsAndGates(self, rooms):
+        """
+        :type rooms: List[List[int]]
+        :rtype: void Do not return anything, modify rooms in-place instead.
+        """
+        row_count = len(rooms)
+        if row_count == 0: return
+        col_count = len(rooms[0])
+        for i in range(row_count):
+            for j in range(col_count):
+                if rooms[i][j] == 0:
+                    queue = [(i, j)]
+                    level = 0
+                    while len(queue) != 0:
+                        level += 1
+                        for k in range(len(queue)):
+                            (i1, j1) = queue.pop(0)
+                            # get the neighbors
+                            for (ik, jk) in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+                                i2, j2 = i1+ik,j1+jk
+                                if i2<0 or i2>=row_count \
+                                    or j2<0 or j2>=col_count:
+                                        continue
+                                if rooms[i2][j2] <= level: continue
+                                rooms[i2][j2] = level
+                                queue.append((i2, j2))
 #+END_SRC

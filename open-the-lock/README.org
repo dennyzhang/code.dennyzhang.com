@@ -64,9 +64,10 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/open-the-lock
 ## Basic Ideas: BFS
-##       dead_set, visited_set, queue
+##       dead, seen, queue
 ##
 ## Complexity:
+import collections
 class Solution(object):
     def openLock(self, deadends, target):
         """
@@ -74,35 +75,34 @@ class Solution(object):
         :type target: str
         :rtype: int
         """
-        dead_set, visited_set, queue = set([]), set([]), []
+        dead_set, seen, queue = set([]), set([]), collections.deque([])
         for dead in deadends: dead_set.add(dead)
         if '0000' in dead_set: return -1
         if '0000' == target: return 0
 
         level = 0
         queue.append('0000')
-        visited_set.add('0000')
+        seen.add('0000')
         while len(queue) != 0:
             level += 1
             for k in xrange(len(queue)):
-                node = queue[0]
-                del queue[0]
+                node = queue.popleft()
                 # find next neighbors
                 for i in xrange(4):
                     for offset in [1, -1]:
                         ascii = (ord(node[i]) - ord('0') + offset + 10) % 10 + ord('0')
                         ch = chr(ascii)
                         neighbor = node[0:i]+ch+node[i+1:]
-                        if (neighbor in visited_set) or (neighbor in dead_set):
+                        if (neighbor in seen) or (neighbor in dead_set):
                             continue
                         # If found, stop immediately
                         if neighbor == target:
                             # print node, neighbor
                             return level
                         queue.append(neighbor)
-                        visited_set.add(neighbor)
+                        seen.add(neighbor)
         return -1
     
 s = Solution()
-print s.openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888") # -1
+print(s.openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888")) # -1
 #+END_SRC
