@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Binary Tree Preorder Traversal
 ---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
 Given a binary tree, return the preorder traversal of its nodes' values.
 #+BEGIN_EXAMPLE
 For example:
