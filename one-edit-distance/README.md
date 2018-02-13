@@ -1,25 +1,24 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: One Edit Distance     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+One Edit Distance  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
 -   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
 -   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given two strings S and T, determine if they are both one edit distance apart.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/one-edit-distance)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/one-edit-distance/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/one-edit-distance

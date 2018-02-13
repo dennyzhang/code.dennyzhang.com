@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
             :rtype: TreeNode
             """
             if root is None: return None
-            stack = 
+            stack = []
             p = root
             while p:
                 stack.append(p)

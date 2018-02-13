@@ -1,26 +1,18 @@
-* Leetcode: Word Pattern                                              :BLOG:Basic:
+* Leetcode: Template                                              :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     misc
 :END:
 ---------------------------------------------------------------------
-Word Pattern
+Identity number which appears exactly once.
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
+- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
-Given a pattern and a string str, find if str follows the same pattern.
-
-Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in str.
-
-Examples:
-pattern = "abba", str = "dog cat cat dog" should return true.
-pattern = "abba", str = "dog cat cat fish" should return false.
-pattern = "aaaa", str = "dog cat cat dog" should return false.
-pattern = "abba", str = "dog dog dog dog" should return false.
-Notes:
-You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-sorted-array][challenges-leetcode-interesting]]
 
