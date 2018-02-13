@@ -30,7 +30,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## 
     ## Blog link: https://brain.dennyzhang.com/can-place-flowers
     ## Basic Ideas: Find consecutive 0s
     ##              For a range of n 0s
@@ -48,21 +47,15 @@ Leave me comments, if you have better ways to solve.
             total_flower, counter = 0, 0
             length = len(flowerbed)
             for i in range(-1, length+2):
-                if i == -1:
-                    num = 0
-                elif i == length:
-                    num = 0
+                if i == -1 or i == length: num = 0
                 elif i == length + 1:
                     num = 1
                 else:
                     num = flowerbed[i]
     
                 # caculate how many flowers we can plant
-                if num == 0:
-                    counter += 1
-                else:
-                    total_flower += (counter-1)/2
-                    counter = 0
+                if num == 0: counter += 1
+                else: total_flower, counter = total_flower + (counter-1)/2, 0
             return total_flower >= n
     
     s = Solution()

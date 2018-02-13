@@ -8,7 +8,7 @@ Strobogrammatic Number II
 ---
 
 Similar Problems:  
--   [Unique Paths II](https://brain.dennyzhang.com/unique-paths-ii)
+-   [Unique Binary Search Trees II](https://brain.dennyzhang.com/unique-binary-search-trees-ii)
 -   [Strobogrammatic Number](https://brain.dennyzhang.com/strobogrammatic-number)
 -   Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
@@ -43,10 +43,10 @@ Leave me comments, if you have better ways to solve.
             return self.myFindStrobogrammatic(n)[0]
     
         def myFindStrobogrammatic(self, n):
-            if n == 0: return [, ]
-            if n == 1: return [['0', '1', '8'], ]
+            if n == 0: return [[], []]
+            if n == 1: return [['0', '1', '8'], []]
             if n == 2: return [['11', '69', '88', '96'], ['00']]
-            res_l1, res_l2 = , 
+            res_l1, res_l2 = [], []
             [l1, l2] = self.myFindStrobogrammatic(n-2)
             for p in self.findStrobogrammatic(2):
                 [start_ch, end_ch] = list(p)

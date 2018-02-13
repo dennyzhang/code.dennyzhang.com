@@ -8,6 +8,7 @@ Walls and Gates
 ---
 
 Similar Problems:  
+-   [Shortest Distance from All Buildings](https://brain.dennyzhang.com/shortest-distance-from-all-buildings)
 -   [01 Matrix](https://brain.dennyzhang.com/01-matrix)
 -   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
 
@@ -53,19 +54,19 @@ Leave me comments, if you have better ways to solve.
             :type rooms: List[List[int]]
             :rtype: void Do not return anything, modify rooms in-place instead.
             """
+            import collections
             row_count = len(rooms)
             if row_count == 0: return
             col_count = len(rooms[0])
             for i in range(row_count):
                 for j in range(col_count):
                     if rooms[i][j] == 0:
-                        queue = [(i, j)]
+                        queue = collections.deque([(i, j)])
                         level = 0
                         while len(queue) != 0:
                             level += 1
                             for k in range(len(queue)):
-                                (i1, j1) = queue[0]
-                                del queue[0]
+                                (i1, j1) = queue.popleft()
                                 # get the neighbors
                                 for (ik, jk) in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
                                     i2, j2 = i1+ik,j1+jk

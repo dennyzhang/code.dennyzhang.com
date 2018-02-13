@@ -43,8 +43,7 @@ Leave me comments, if you have better ways to solve.
             :rtype: int
             """
             self.row_count = len(grid)
-            if self.row_count == 0:
-                return 0
+            if self.row_count == 0: return 0
             self.col_count = len(grid[0])
     
             res = 0
@@ -61,8 +60,7 @@ Leave me comments, if you have better ways to solve.
                 return
     
             # stop digging, if not '1'
-            if grid[i][j] != '1':
-                return
+            if grid[i][j] != '1': return
     
             grid[i][j] = 'X'
             # mark four positions in a recursive way
