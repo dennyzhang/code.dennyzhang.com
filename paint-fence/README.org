@@ -9,6 +9,7 @@ Paint Fence
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/climbing-stairs][Climbing Stairs]]
+- [[https://brain.dennyzhang.com/house-robber][House Robber]]
 - Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 There is a fence with n posts, each post can be painted with one of the k colors.
