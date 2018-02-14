@@ -8,7 +8,7 @@ Design Compressed String Iterator
 ---
 
 Similar Problems:  
-
+-   [Basic Calculator](https://brain.dennyzhang.com/basic-calculator)
 -   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
 ---
@@ -76,7 +76,7 @@ Leave me comments, if you have better ways to solve.
                 v = ''
                 while self.index < self.length:
                     char = self.string[self.index]
-                    if char<'0' or char>'9': break
+                    if char.isdigit() is False: break
                     v = '%s%s' % (v, char)
                     self.index += 1
                 self.count = int(v) - 1

@@ -1,25 +1,30 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Find Minimum in Rotated Sorted Array II     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Find Minimum in Rotated Sorted Array II  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
+-   [Search in Rotated Sorted Array](https://brain.dennyzhang.com/search-in-rotated-sorted-array)
 -   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Find the minimum element.  
+
+The array may contain duplicates.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-minimum-in-rotated-sorted-array-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii

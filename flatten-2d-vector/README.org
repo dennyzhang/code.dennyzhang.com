@@ -1,0 +1,88 @@
+* Leetcode: Flatten 2D Vector                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     designquestions
+:END:
+---------------------------------------------------------------------
+Flatten 2D Vector
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/design-compressed-string-iterator][Design Compressed String Iterator]]
+- [[https://brain.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
+- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+---------------------------------------------------------------------
+Implement an iterator to flatten a 2d vector.
+
+For example,
+#+BEGIN_EXAMPLE
+Given 2d vector =
+
+[
+  [1,2],
+  [3],
+  [4,5,6]
+]
+#+END_EXAMPLE
+
+By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,2,3,4,5,6].
+
+Follow up:
+As an added challenge, try to code it using only iterators in C++ or iterators in Java.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-2d-vector][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/flatten-2d-vector/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/flatten-2d-vector
+## Basic Ideas: Caching current element
+##
+##   Sample Data: some elements may look like [[1], [], [2, 3]]
+##   Assumption: return None, if unexpected input/call
+##
+## Complexity:
+class Vector2D(object):
+
+    def __init__(self, vec2d):
+        """
+        Initialize your data structure here.
+        :type vec2d: List[List[int]]
+        """
+        self.vec2d = vec2d
+        self.big_index, self.small_index = 0, 0
+        self.big_length, self.small_length = len(self.vec2d), 0
+        self.cur = None
+        
+    def next(self):
+        """
+        :rtype: int
+        """
+        if self.hasNext() is False: return None
+        res = self.cur[self.small_index]
+        self.small_index += 1
+        return res
+
+    def hasNext(self):
+        """
+        :rtype: bool
+        """
+        # current element hasn't finished yet
+        if self.small_index != self.small_length: return True
+
+        # examine the following elements
+        while self.big_index != self.big_length:
+            self.cur = self.vec2d[self.big_index]
+            self.small_index, self.small_length = 0, len(self.cur)
+            self.big_index += 1
+            if self.small_index != self.small_length: break
+
+        # everything has been processed
+        return False if self.small_index == self.small_length else True
+
+# Your Vector2D object will be instantiated and called as such:
+# i, v = Vector2D(vec2d), []
+# while i.hasNext(): v.append(i.next())
+#+END_SRC

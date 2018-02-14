@@ -8,7 +8,6 @@ Design Hit Counter
 ---
 
 Similar Problems:  
-
 -   [Logger Rate Limiter](https://brain.dennyzhang.com/logger-rate-limiter)
 -   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
@@ -82,7 +81,7 @@ Leave me comments, if you have better ways to solve.
             self.d[timestamp] += 1
     
             # cleanup very old keys
-            l = 
+            l = []
             for key in self.d:
                 if key <= self.max_key-300:
                     l.append(key)
@@ -101,7 +100,7 @@ Leave me comments, if you have better ways to solve.
             self.max_key = timestamp
             res = 0
             # cleanup very old keys
-            l = 
+            l = []
             for key in self.d:
                 if key <= self.max_key-300:
                     l.append(key)
