@@ -9,7 +9,7 @@ All O\`one Data Structure
 
 Similar Problems:  
 -   [Insert Delete GetRandom O(1)](https://brain.dennyzhang.com/insert-delete-getrandom-o1)
--   [Leetcode: Third Maximum Number](https://brain.dennyzhang.com/third-maximum-number)
+-   [LRU Cache](https://brain.dennyzhang.com/lru-cache)
 -   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
 ---

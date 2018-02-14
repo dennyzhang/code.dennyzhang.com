@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, inspiring
+:type:     designquestion, inspiring, dlinkedlist
 :END:
 ---------------------------------------------------------------------
 All O`one Data Structure
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/insert-delete-getrandom-o1][Insert Delete GetRandom O(1)]]
-- [[https://brain.dennyzhang.com/third-maximum-number][Leetcode: Third Maximum Number]]
+- [[https://brain.dennyzhang.com/lru-cache][LRU Cache]]
 - Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
 ---------------------------------------------------------------------
 Implement a data structure supporting the following operations:
