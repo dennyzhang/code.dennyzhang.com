@@ -8,6 +8,7 @@ Design Hit Counter
 ---
 
 Similar Problems:  
+
 -   [Logger Rate Limiter](https://brain.dennyzhang.com/logger-rate-limiter)
 -   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
 
@@ -54,3 +55,65 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-hit-counter/desc
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/design-hit-counter
+    ## Basic Ideas: hashmap
+    ##
+    ## Complexity: Time O(1), Space O(1)
+    import collections
+    class HitCounter:
+    
+        def __init__(self):
+            """
+            Initialize your data structure here.
+            """
+            self.d = collections.defaultdict(lambda: 0)
+            self.max_key = None
+    
+    
+        def hit(self, timestamp):
+            """
+            Record a hit.
+            @param timestamp - The current timestamp (in seconds granularity).
+            :type timestamp: int
+            :rtype: void
+            """
+            if self.max_key is None:
+                self.max_key = timestamp
+    
+            self.d[timestamp] += 1
+    
+            # cleanup very old keys
+            l = 
+            for key in self.d:
+                if key <= self.max_key-300:
+                    l.append(key)
+    
+            for key in l:
+                del self.d[key]
+    
+    
+        def getHits(self, timestamp):
+            """
+            Return the number of hits in the past 5 minutes.
+            @param timestamp - The current timestamp (in seconds granularity).
+            :type timestamp: int
+            :rtype: int
+            """
+            self.max_key = timestamp
+            res = 0
+            # cleanup very old keys
+            l = 
+            for key in self.d:
+                if key <= self.max_key-300:
+                    l.append(key)
+                else:
+                    res += self.d[key]
+    
+            for key in l:
+                del self.d[key]
+    
+            return res
+    
+    # Your HitCounter object will be instantiated and called as such:
+    # obj = HitCounter()
+    # obj.hit(timestamp)
+    # param_2 = obj.getHits(timestamp)

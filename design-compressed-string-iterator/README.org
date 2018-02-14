@@ -8,6 +8,7 @@
 Design Compressed String Iterator
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/basic-calculator][Basic Calculator]]
 - Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
 ---------------------------------------------------------------------
 Design and implement a data structure for a compressed string iterator. It should support the following operations: next and hasNext.
@@ -75,7 +76,7 @@ class StringIterator:
             v = ''
             while self.index < self.length:
                 char = self.string[self.index]
-                if char<'0' or char>'9': break
+                if char.isdigit() is False: break
                 v = '%s%s' % (v, char)
                 self.index += 1
             self.count = int(v) - 1
