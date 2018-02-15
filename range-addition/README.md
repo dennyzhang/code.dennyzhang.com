@@ -72,14 +72,14 @@ Leave me comments, if you have better ways to solve.
             :type updates: List[List[int]]
             :rtype: List[int]
             """
-            delta_list = [0] * (length+1)
+            delta_list = [0] * length
             for [start, end, inc] in updates:
                 delta_list[start] += inc
-                delta_list[end+1] -= inc
+                if end+1 < length:
+                    delta_list[end+1] -= inc
     
             delta = 0
             for i in range(0, length):
                 delta += delta_list[i]
                 delta_list[i] = delta
-            del delta_list[-1]
             return delta_list
