@@ -7,9 +7,16 @@ Flatten Nested List Iterator
 
 ---
 
+Similar Problems:  
+
+-   [Flatten 2D Vector](https://brain.dennyzhang.com/flatten-2d-vector)
+-   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+
+---
+
 Given a nested list of integers, implement an iterator to flatten it.  
 
-Each element is either an integer, or a list &#x2013; whose elements may also be integers or other lists.  
+Each element is either an integer, or a list -- whose elements may also be integers or other lists.  
 
     Example 1:
     Given the list [[1,1],2,[1,1]],
@@ -30,7 +37,7 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://brain.dennyzhang.com/flatten-nested-list-iterator
     ## Basic Ideas:
     ##            Since it's an iterator, we can't change existing list
-    ##            Here we assume, we don't have empty values like this: [1, 2, [], [2, 3]]
+    ##            Here we assume, we don't have empty values like this: [1, 2, , [2, 3]]
     ##
     ##            l1: list of original input
     ##            index: index of original list
@@ -83,7 +90,7 @@ Leave me comments, if you have better ways to solve.
             """
             self.l1 = nestedList
             self.index = 0
-            self.l2 = []
+            self.l2 = 
     
         def next(self):
             """
@@ -104,7 +111,7 @@ Leave me comments, if you have better ways to solve.
         def getFirst(self, node):
             p = copy.deepcopy(node)
     
-            q, parent_list = p, []
+            q, parent_list = p, 
             while True:
                 # q may be: list or NestedInteger
                 if type(q) == list:
@@ -124,7 +131,7 @@ Leave me comments, if you have better ways to solve.
             # delete empty element at the head
             for i in range(len(parent_list)-1, -1, -1):
                 l = parent_list[i]
-                if len(l) != 0 and l[0] == []:
+                if len(l) != 0 and l[0] == :
                     del l[0]
     
             if len(parent_list) != 0:
@@ -147,11 +154,7 @@ Leave me comments, if you have better ways to solve.
                 return True
     
     # Your NestedIterator object will be instantiated and called as such:
-    # i, v = NestedIterator(nestedList), []
+    # i, v = NestedIterator(nestedList), 
     # while i.hasNext(): v.append(i.next())
 
 ---
-
-Similar Problems:  
--   [Leetcode: Mini Parser](https://brain.dennyzhang.com/mini-parser)
--   [Review: Stack Problems](https://brain.dennyzhang.com/review-stack)

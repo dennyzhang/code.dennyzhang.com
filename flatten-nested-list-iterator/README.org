@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, iterator, manydetails
+:type:     designquestion, iterator, manydetails, recursive
 :END:
 ---------------------------------------------------------------------
 Flatten Nested List Iterator
@@ -160,6 +160,3 @@ class NestedIterator(object):
 # while i.hasNext(): v.append(i.next())
 #+END_SRC
 ---------------------------------------------------------------------
-Similar Problems:
-- [[https://brain.dennyzhang.com/mini-parser][Leetcode: Mini Parser]]
-- [[https://brain.dennyzhang.com/review-stack][Review: Stack Problems]]
