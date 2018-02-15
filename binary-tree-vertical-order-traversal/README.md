@@ -8,7 +8,6 @@ Binary Tree Vertical Order Traversal
 ---
 
 Similar Problems:  
-
 -   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
 ---
@@ -88,3 +87,37 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-vertical-or
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/binary-tree-vertical-order-traversal
+    ## Basic Ideas: BFS + hashmap
+    ##
+    ## Complexity: Time O(n), Space O(n)
+    ##
+    # Definition for a binary tree node.
+    # class TreeNode:
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.left = None
+    #         self.right = None
+    import collections
+    class Solution:
+        def verticalOrder(self, root):
+            """
+            :type root: TreeNode
+            :rtype: List[List[int]]
+            """
+            if root is None: return []
+            d = collections.defaultdict(lambda: [])
+            queue = collections.deque([(root, 0)])
+            d[0].append(root.val)
+            while len(queue) != 0:
+                for k in range(len(queue)):
+                    (node, position) = queue.popleft()
+                    if node.left:
+                        d[position-1].append(node.left.val)
+                        queue.append((node.left, position-1))
+                    if node.right:
+                        d[position+1].append(node.right.val)
+                        queue.append((node.right, position+1))
+            res = []
+            for position in sorted(d.keys()):
+                res.append(d[position])
+            return res

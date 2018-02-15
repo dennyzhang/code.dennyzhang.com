@@ -9,6 +9,7 @@ Paint Fence
 
 Similar Problems:  
 -   [Climbing Stairs](https://brain.dennyzhang.com/climbing-stairs)
+-   [House Robber](https://brain.dennyzhang.com/house-robber)
 -   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---

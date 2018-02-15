@@ -8,7 +8,6 @@ Flatten 2D Vector
 ---
 
 Similar Problems:  
-
 -   [Design Compressed String Iterator](https://brain.dennyzhang.com/design-compressed-string-iterator)
 -   [Flatten Nested List Iterator](https://brain.dennyzhang.com/flatten-nested-list-iterator)
 -   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
@@ -41,7 +40,7 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://brain.dennyzhang.com/flatten-2d-vector
     ## Basic Ideas: Caching current element
     ##
-    ##   Sample Data: some elements may look like [[1], , [2, 3]]
+    ##   Sample Data: some elements may look like [[1], [], [2, 3]]
     ##   Assumption: return None, if unexpected input/call
     ##
     ## Complexity:
@@ -72,5 +71,5 @@ Leave me comments, if you have better ways to solve.
     
             return self.row != len(self.vec2d)
     # Your Vector2D object will be instantiated and called as such:
-    # i, v = Vector2D(vec2d), 
+    # i, v = Vector2D(vec2d), []
     # while i.hasNext(): v.append(i.next())
