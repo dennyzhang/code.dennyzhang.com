@@ -1,0 +1,47 @@
+* Leetcode: Consecutive Available Seats                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Consecutive Available Seats
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Several friends at a cinema ticket office would like to reserve consecutive available seats.
+Can you help to query all the consecutive available seats order by the seat_id using the following cinema table?
+#+BEGIN_EXAMPLE
+| seat_id | free |
+|---------|------|
+| 1       | 1    |
+| 2       | 0    |
+| 3       | 1    |
+| 4       | 1    |
+| 5       | 1    |
+#+END_EXAMPLE
+
+Your query should return the following result for the sample case above.
+#+BEGIN_EXAMPLE
+| seat_id |
+|---------|
+| 3       |
+| 4       |
+| 5       |
+#+END_EXAMPLE
+
+Note:
+- The seat_id is an auto increment int, and free is bool ('1' means free, and '0' means occupied.).
+- Consecutive available seats are more than 2(inclusive) seats consecutively available.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/consecutive-available-seats][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/consecutive-available-seats/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC sql
+## Blog link: https://brain.dennyzhang.com/consecutive-available-seats
+
+#+END_SRC
