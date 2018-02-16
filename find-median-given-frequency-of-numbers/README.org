@@ -1,0 +1,45 @@
+* Leetcode: Find Median Given Frequency of Numbers              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql, median
+:END:
+---------------------------------------------------------------------
+Find Median Given Frequency of Numbers
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+The Numbers table keeps the value of number and its frequency.
+#+BEGIN_EXAMPLE
++----------+-------------+
+|  Number  |  Frequency  |
++----------+-------------|
+|  0       |  7          |
+|  1       |  1          |
+|  2       |  3          |
+|  3       |  1          |
++----------+-------------+
+#+END_EXAMPLE
+
+In this table, the numbers are 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, so the median is (0 + 0) / 2 = 0.
+#+BEGIN_EXAMPLE
++--------+
+| median |
++--------|
+| 0.0000 |
++--------+
+#+END_EXAMPLE
+
+Write a query to find the median of all numbers and name the result as median.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-median-given-frequency-of-numbers][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/find-median-given-frequency-of-numbers/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/find-median-given-frequency-of-numbers
+
+#+END_SRC
