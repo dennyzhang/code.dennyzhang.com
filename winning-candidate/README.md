@@ -8,7 +8,6 @@ Winning Candidate
 ---
 
 Similar Problems:  
-
 -   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
 
 ---

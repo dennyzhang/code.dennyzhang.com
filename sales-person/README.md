@@ -79,6 +79,11 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sales-person/descriptio
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/sales-person
-    select ifnull((
-           select Salary from Employee
-           group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+    select name
+    from salesperson
+    where name not in
+        (select distinct salesperson.name
+        from salesperson, orders, company
+        where company.name = 'RED'
+        and salesperson.sales_id = orders.sales_id
+        and orders.com_id = company.com_id)
