@@ -1,0 +1,54 @@
+* Leetcode: Find Leaves of Binary Tree                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree, inspiring
+:END:
+---------------------------------------------------------------------
+Find Leaves of Binary Tree
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
+
+Example:
+#+BEGIN_EXAMPLE
+Given binary tree 
+          1
+         / \
+        2   3
+       / \     
+      4   5    
+Returns [4, 5, 3], [2], [1].
+#+END_EXAMPLE
+
+Explanation:
+#+BEGIN_EXAMPLE
+1. Removing the leaves [4, 5, 3] would result in this tree:
+          1
+         / 
+        2          
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+2. Now removing the leaf [2] would result in this tree:
+          1  
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+3. Now removing the leaf [1] would result in the empty tree:
+          []         
+Returns [4, 5, 3], [2], [1].
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-leaves-of-binary-tree][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/find-leaves-of-binary-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/find-leaves-of-binary-tree
+
+#+END_SRC

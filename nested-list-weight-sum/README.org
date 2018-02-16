@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     dfs, bfs
 :END:
 ---------------------------------------------------------------------
 Nested List Weight Sum
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]]
 ---------------------------------------------------------------------
 Given a nested list of integers, return the sum of all integers in the list weighted by their depth.
 
