@@ -1,25 +1,24 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Closest Binary Search Tree Value II     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Closest Binary Search Tree Value II  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Closest Binary Search Tree Value](https://brain.dennyzhang.com/closest-binary-search-tree-value)
+-   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
 ---
 
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/closest-binary-search-tree-value-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/closest-binary-search-tree-value-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/closest-binary-search-tree-value-ii

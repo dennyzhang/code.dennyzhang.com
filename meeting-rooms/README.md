@@ -1,25 +1,27 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Meeting Rooms     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Meeting Rooms  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#interval](https://brain.dennyzhang.com/tag/interval)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],&#x2026;] (si < ei), determine if a person could attend all meetings.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+For example,  
+Given [[0, 30],[5, 10],[15, 20]],  
+return false.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/meeting-rooms)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/meeting-rooms/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/meeting-rooms

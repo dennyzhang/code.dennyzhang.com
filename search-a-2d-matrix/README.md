@@ -1,4 +1,4 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Search a 2D Matrix     :BLOG:Basic:
 
 
 ---
@@ -8,13 +8,27 @@ Identity number which appears exactly once.
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+
+-   [Search a 2D Matrix II](https://brain.dennyzhang.com/search-a-2d-matrix-ii)
+-   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:  
+
+Integers in each row are sorted from left to right.  
+The first integer of each row is greater than the last integer of the previous row.  
+For example,  
+
+Consider the following matrix:  
+
+    [
+      [1,   3,  5,  7],
+      [10, 11, 16, 20],
+      [23, 30, 34, 50]
+    ]
+
+Given target = 3, return true.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-a-2d-matrix)  
 
