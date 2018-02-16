@@ -1,0 +1,25 @@
+* Leetcode: Closest Binary Search Tree Value II                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Closest Binary Search Tree Value II
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/closest-binary-search-tree-value][Closest Binary Search Tree Value]]
+- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/closest-binary-search-tree-value-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/closest-binary-search-tree-value-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/closest-binary-search-tree-value-ii
+
+#+END_SRC

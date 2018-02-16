@@ -1,0 +1,41 @@
+* Leetcode: Kth Smallest Element in a Sorted Matrix             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Kth Smallest Element in a Sorted Matrix
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.
+
+Note that it is the kth smallest element in the sorted order, not the kth distinct element.
+
+Example:
+#+BEGIN_EXAMPLE
+matrix = [
+   [ 1,  5,  9],
+   [10, 11, 13],
+   [12, 13, 15]
+],
+k = 8,
+
+return 13.
+#+END_EXAMPLE
+
+Note: 
+You may assume k is always valid, 1 ≤ k ≤ n2.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/kth-smallest-element-in-a-sorted-matrix][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix
+
+#+END_SRC
