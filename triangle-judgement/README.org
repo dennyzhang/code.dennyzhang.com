@@ -36,16 +36,22 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/triangle-judgement
-## Basic Ideas: max(x, y, z) < sum(x, y, z)/2
+select x, y, z,
+       case
+           when x+y>z and y+z>x and x+z>y then 'Yes'
+           else 'No'
+       end as triangle
+from triangle
 
-select x, y, z, if(max_value<sum_value/2, 'Yes', 'No') as triangle
-from (
-    select *, x+y+z as sum_value,
-        case
-            when x>=y and x>=z then x
-            when y>=x and y>=z then y
-            when z>=x and z>=y then z
-            else x
-        end as max_value
-    from triangle) as t
+## Basic Ideas: max(x, y, z) < sum(x, y, z)/2
+# select x, y, z, if(max_value<sum_value/2, 'Yes', 'No') as triangle
+# from (
+#     select *, x+y+z as sum_value,
+#         case
+#             when x>=y and x>=z then x
+#             when y>=x and y>=z then y
+#             when z>=x and z>=y then z
+#             else x
+#         end as max_value
+#     from triangle) as t
 #+END_SRC

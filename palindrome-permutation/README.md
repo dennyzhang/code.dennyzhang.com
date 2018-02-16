@@ -8,7 +8,6 @@ Palindrome Permutation
 ---
 
 Similar Problems:  
-
 -   Tag: [#palindrome](https://brain.dennyzhang.com/tag/palindrome)
 
 ---
@@ -25,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-permutation/
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/palindrome-permutation
-    ## Basic Ideas: hashmap
+    ## Basic Ideas: set. With one pass
     ##
     ## Complexity: Time O(n), Space O(1)
     ##             The character is a limited set, thus the space is O(1)
@@ -35,13 +34,10 @@ Leave me comments, if you have better ways to solve.
             :type s: str
             :rtype: bool
             """
-            import collections
-            d = collections.defaultdict(lambda: 0)
+            myset = set([])
             for ch in s:
-                d[ch] += 1
-    
-            odd_count = 0
-            for ch in d:
-                if d[ch]%2 == 1: odd_count += 1
-                if odd_count >= 2: return False
-            return True
+                if ch in myset:
+                    myset.remove(ch)
+                else:
+                    myset.add(ch)
+            return len(myset) <= 1

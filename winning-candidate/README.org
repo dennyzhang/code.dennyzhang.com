@@ -1,0 +1,78 @@
+* Winning Candidate                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Winning Candidate
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Table: Candidate
+#+BEGIN_EXAMPLE
++-----+---------+
+| id  | Name    |
++-----+---------+
+| 1   | A       |
+| 2   | B       |
+| 3   | C       |
+| 4   | D       |
+| 5   | E       |
++-----+---------+  
+#+END_EXAMPLE
+
+Table: Vote
+#+BEGIN_EXAMPLE
++-----+--------------+
+| id  | CandidateId  |
++-----+--------------+
+| 1   |     2        |
+| 2   |     4        |
+| 3   |     3        |
+| 4   |     2        |
+| 5   |     5        |
++-----+--------------+
+#+END_EXAMPLE
+
+id is the auto-increment primary key,
+CandidateId is the id appeared in Candidate table.
+Write a sql to find the name of the winning candidate, the above example will return the winner B.
+#+BEGIN_EXAMPLE
++------+
+| Name |
++------+
+| B    |
++------+
+#+END_EXAMPLE
+
+Notes:
+You may assume there is no tie, in other words there will be at most one winning candidate.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/winning-candidate][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/winning-candidate/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/winning-candidate
+select Name
+from Candidate where
+id = (select CandidateId
+     from Vote
+     group by CandidateId
+     order by count(1) desc
+     limit 1)
+
+## Assumtion: if we have two candidates with the same votes, we choose the one who get the first vote
+# select Name
+# from Candidate inner join
+#     (select CandidateId
+#     from Vote
+#     group by CandidateId
+#     order by count(1) desc
+#     limit 1) as t
+# on Candidate.id = t.CandidateId
+#+END_SRC

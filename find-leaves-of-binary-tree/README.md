@@ -8,7 +8,6 @@ Find Leaves of Binary Tree
 ---
 
 Similar Problems:  
-
 -   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
 ---
@@ -36,7 +35,7 @@ Explanation:
               1
 
     3. Now removing the leaf [1] would result in the empty tree:
-                       
+              []         
     Returns [4, 5, 3], [2], [1].
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-leaves-of-binary-tree)  

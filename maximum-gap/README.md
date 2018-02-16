@@ -1,25 +1,29 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Maximum Gap     :BLOG:Hard:
 
 
 ---
 
-Identity number which appears exactly once.  
+Maximum Gap  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an unsorted array, find the maximum difference between the successive elements in its sorted form.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Try to solve it in linear time/space.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Return 0 if the array contains less than 2 elements.  
+
+You may assume all elements in the array are non-negative integers and fit in the 32-bit signed integer range.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-gap)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/maximum-gap/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/maximum-gap

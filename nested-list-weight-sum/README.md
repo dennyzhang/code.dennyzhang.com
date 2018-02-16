@@ -8,7 +8,7 @@ Nested List Weight Sum
 ---
 
 Similar Problems:  
--   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+-   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
 
 ---
 
