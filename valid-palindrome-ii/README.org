@@ -1,4 +1,4 @@
-* Leetcode: Valid Palindrome II                                   :BLOG:Medium:
+* Leetcode: Valid Palindrome II                                 :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
