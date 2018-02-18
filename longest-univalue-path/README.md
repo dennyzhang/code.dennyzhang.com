@@ -46,3 +46,56 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-univalue-path/d
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/longest-univalue-path
+    ## Basic Ideas: recursive + BFS
+    ##
+    ## Complexity Time O(n*n), Space O(n)
+    ##
+    # Definition for a binary tree node.
+    # class TreeNode:
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.left = None
+    #         self.right = None
+    
+    class Solution:
+        def longestUnivaluePath(self, root):
+            """
+            :type root: TreeNode
+            :rtype: int
+            """
+            if root is None: return 0
+            # BFS
+            import collections
+            queue = collections.deque()
+            queue.append(root)
+            (l, r) = self.longestPath(root, root.val)
+            res = l + r + 1
+            while len(queue) != 0:
+                for k in range(len(queue)):
+                    node = queue.popleft()
+                    # find candidates
+                    if node.left:
+                        (l, r) = self.longestPath(node.left, node.left.val)
+                        res = max(res, l+r+1)
+                        queue.append(node.left)
+                    if node.right:
+                        (l, r) = self.longestPath(node.right, node.right.val)
+                        res = max(res, l+r+1)
+                        queue.append(node.right)
+            return res - 1
+    
+        def longestPath(self, root, val):
+            # find the longest path which includes root, and the value is val.
+            if root is None: return (0, 0)
+            if root.val != val: return (0, 0)
+            if root.left is None and root.right is None:
+                return (0, 0)
+    
+            l, r = 0, 0
+            if root.left and root.left.val == val:
+                # choose one path
+                l = max(self.longestPath(root.left, val))+1
+            if root.right and root.right.val == val:
+                # choose one path
+                r = max(self.longestPath(root.right, val))+1
+            return (l, r)
