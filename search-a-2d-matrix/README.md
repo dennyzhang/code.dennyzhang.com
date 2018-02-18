@@ -8,7 +8,6 @@ Identity number which appears exactly once.
 ---
 
 Similar Problems:  
-
 -   [Search a 2D Matrix II](https://brain.dennyzhang.com/search-a-2d-matrix-ii)
 -   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
 

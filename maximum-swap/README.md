@@ -8,7 +8,6 @@ Maximum Swap
 ---
 
 Similar Problems:  
-
 -   [Swap Adjacent in LR String](https://brain.dennyzhang.com/swap-adjacent-in-lr-string)
 -   [Global and Local Inversions](https://brain.dennyzhang.com/global-and-local-inversions)
 -   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)

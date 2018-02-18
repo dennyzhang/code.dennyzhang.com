@@ -1,25 +1,52 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Second Degree Follower     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Second Degree Follower  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+In facebook, there is a follow table with two columns: followee, follower.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Please write a sql query to get the amount of each follower’s follower if he/she has one.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+For example:  
+
+    +-------------+------------+
+    | followee    | follower   |
+    +-------------+------------+
+    |     A       |     B      |
+    |     B       |     C      |
+    |     B       |     D      |
+    |     D       |     E      |
+    +-------------+------------+
+
+should output:  
+
+    +-------------+------------+
+    | follower    | num        |
+    +-------------+------------+
+    |     B       |  2         |
+    |     D       |  1         |
+    +-------------+------------+
+
+Explaination:  
+Both B and D exist in the follower list, when as a followee, B's follower is C and D, and D's follower is E. A does not exist in follower list.  
+
+Note:  
+Followee would not follow himself/herself in all cases.  
+Please display the result in follower's alphabet order.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-degree-follower)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/second-degree-follower/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/second-degree-follower

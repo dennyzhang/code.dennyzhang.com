@@ -8,6 +8,7 @@ Kth Smallest Element in a Sorted Matrix
 ---
 
 Similar Problems:  
+-   [Search a 2D Matrix II](https://brain.dennyzhang.com/search-a-2d-matrix-ii)
 -   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---

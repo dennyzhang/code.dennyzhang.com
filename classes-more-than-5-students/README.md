@@ -50,6 +50,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/classes-more-than-5-stu
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/classes-more-than-5-students
-    SELECT class
-    FROM courses
-    GROUP BY class HAVING COUNT(DISTINCT student)>=5;
+    
+    select class from courses
+    group by class having count(distinct student)>=5;

@@ -8,7 +8,6 @@ Tree Node
 ---
 
 Similar Problems:  
-
 -   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
 
 ---
@@ -26,7 +25,6 @@ Given a table tree, id is identifier of the tree node and p\_id is its parent no
     +----+------+
 
 Each node in the tree can be one of three types:  
-
 -   Leaf: if the node is a leaf node.
 -   Root: if the node is the root of the tree.
 -   Inner: If the node is neither a leaf node nor a root node.

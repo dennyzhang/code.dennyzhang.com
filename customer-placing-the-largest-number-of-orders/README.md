@@ -59,8 +59,7 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://brain.dennyzhang.com/customer-placing-the-largest-number-of-orders
     
     # assume: only one match
-    select customer_number
-    from orders
+    select customer_number from orders
     group by customer_number
     order by count(1) desc
     limit 1

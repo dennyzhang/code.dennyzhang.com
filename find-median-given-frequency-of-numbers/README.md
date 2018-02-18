@@ -1,25 +1,42 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Find Median Given Frequency of Numbers     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Find Median Given Frequency of Numbers  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+The Numbers table keeps the value of number and its frequency.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+    +----------+-------------+
+    |  Number  |  Frequency  |
+    +----------+-------------|
+    |  0       |  7          |
+    |  1       |  1          |
+    |  2       |  3          |
+    |  3       |  1          |
+    +----------+-------------+
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+In this table, the numbers are 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, so the median is (0 + 0) / 2 = 0.  
+
+    +--------+
+    | median |
+    +--------|
+    | 0.0000 |
+    +--------+
+
+Write a query to find the median of all numbers and name the result as median.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-median-given-frequency-of-numbers)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/find-median-given-frequency-of-numbers/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/find-median-given-frequency-of-numbers
