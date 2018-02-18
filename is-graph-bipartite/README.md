@@ -8,6 +8,7 @@ Is Graph Bipartite?
 ---
 
 Similar Problems:  
+
 -   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
 
 ---
@@ -54,3 +55,41 @@ Credits To: [leetcode.com](https://leetcode.com/problems/is-graph-bipartite/desc
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/is-graph-bipartite
+    ## Basic Ideas: BFS
+    ## 
+    ##      With one BFS, all connected nodes in current forest will be visited
+    ##      For two forests, we can put the first nodes into the same set.
+    ##      This is a key improvement, compared to brutple force 
+    ##
+    ##      set_type: 0, 1, -1
+    ##
+    ## Complexity:
+    class Solution:
+        def isBipartite(self, graph):
+            """
+            :type graph: List[List[int]]
+            :rtype: bool
+            """
+            import collections
+            length = len(graph)
+            set_type = [0]*length
+            for i in range(length):
+                # a new forest starts
+                if set_type[i] == 0:
+                    set_type[i] = 1
+                    queue = collections.deque()
+                    queue.append((i, 1))
+                    # BFS
+                    while len(queue) != 0:
+                        for k in range(len(queue)):
+                            (node, node_type) = queue.popleft()
+                            # find the neighbors
+                            for edge in graph[node]:
+                                if set_type[edge] == 0:
+                                    # get the candidates
+                                    set_type[edge] = -node_type
+                                    queue.append((edge, -node_type))
+                                elif set_type[edge] == node_type:
+                                    # detect a conflict
+                                    return False
+            return True
