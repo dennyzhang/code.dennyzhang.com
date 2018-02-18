@@ -10,6 +10,7 @@ Is Graph Bipartite?
 Similar Problems:  
 
 -   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
+-   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -55,17 +56,54 @@ Credits To: [leetcode.com](https://leetcode.com/problems/is-graph-bipartite/desc
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/is-graph-bipartite
-    ## Basic Ideas: BFS
-    ## 
-    ##      With one BFS, all connected nodes in current forest will be visited
-    ##      For two forests, we can put the first nodes into the same set.
-    ##      This is a key improvement, compared to brutple force 
-    ##
-    ##      set_type: 0, 1, -1
-    ##
-    ## Complexity:
     class Solution:
+        ## Basic Ideas: DFS
+        ##
+        ## Complexity: Time O(n), Space O(n)
         def isBipartite(self, graph):
+            """
+            :type graph: List[List[int]]
+            :rtype: bool
+            """
+            length = len(graph)
+            self.set_type = [0]*length
+            for i in range(length):
+                if self.set_type[i] == 0:
+                    # start dfs
+                    if self.dfs(graph, i, 1) is False:
+                        return False
+            return True
+    
+        def dfs(self, graph, node, type):
+            if self.set_type[node] != 0:
+                if self.set_type[node] != type:
+                    return False
+                else:
+                    return True
+    
+            # mark current node
+            self.set_type[node] = type
+    
+            # check the neighbors of current node
+            for edge in graph[node]:
+                if self.set_type[edge] == 0:
+                    if self.dfs(graph, edge, -type) is False:
+                        return False
+                elif self.set_type[edge] == type:
+                    return False
+    
+            return True
+    
+        ## Basic Ideas: BFS
+        ## 
+        ##      With one BFS, all connected nodes in current forest will be visited
+        ##      For two forests, we can put the first nodes into the same set.
+        ##      This is a key improvement, compared to brutple force 
+        ##
+        ##      set_type: [0, 1, -1], [undecided, type1, type2]
+        ##
+        ## Complexity: Time O(n), Space O(n)
+        def isBipartite_v1(self, graph):
             """
             :type graph: List[List[int]]
             :rtype: bool
