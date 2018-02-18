@@ -1,0 +1,38 @@
+* LintCode: Calculate Maximum Value II                          :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Calculate Maximum Value II
+---------------------------------------------------------------------
+Given a string of numbers, write a function to find the maximum value from the string, you can add a + or * sign between any two numbers，It's different with Calculate Maximum Value, You can insert parentheses anywhere.
+
+Example
+#+BEGIN_EXAMPLE
+Given str = 01231, return 12
+(0 + 1 + 2) * (3 + 1) = 12 we get the maximum value 12
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given str = 891, return 80
+As 8 * (9 + 1) = 80, so 80 is maximum.
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/calculate-maximum-value-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:http://www.lintcode.com/en/problem/calculate-maximum-value-ii/][Lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/calculate-maximum-value-ii
+class Solution:
+    """
+    @param str: a string of numbers
+    @return: the maximum value
+    """
+    def maxValue(self, str):
+        # write your code here
+#+END_SRC

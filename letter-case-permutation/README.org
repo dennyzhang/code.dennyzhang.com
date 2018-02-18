@@ -2,12 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, recursive
+:type:     combination, recursive, classic
 :END:
 ---------------------------------------------------------------------
 Letter Case Permutation
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/subsets-ii][Subsets II]]
 - Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
@@ -43,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ## Blog link: https://brain.dennyzhang.com/letter-case-permutation
 ## Basic Ideas: recursive
 ##
-## Complexity:
+## Complexity: Time O(n*pow(2, n)), Space O(pow(2, n))
 class Solution:
     def letterCasePermutation(self, S):
         """
@@ -51,19 +52,14 @@ class Solution:
         :rtype: List[str]
         """
         length = len(S)
-
         if length == 0: return [""]
-        l = self.letterCasePermutation(S[1:])
         res = []
         ch = S[0]
-        for item in l:
+        for item in self.letterCasePermutation(S[1:]):
             if ch.isdigit():
                 res.append("%s%s" % (ch, item))
-            elif ord(ch) in range(ord('a'), ord('z')+1):
-                res.append("%s%s" % (ch, item))
-                res.append("%s%s" % (chr(ord(ch) + ord('A') - ord('a')), item))
             else:
-                res.append("%s%s" % (chr(ord(ch) + ord('a') - ord('A')), item))
-                res.append("%s%s" % (ch, item))
+                res.append("%s%s" % (ch.lower(), item))
+                res.append("%s%s" % (ch.upper(), item))
         return res
 #+END_SRC
