@@ -1,4 +1,4 @@
-# Leetcode: Monotone Increasing Digits     :BLOG:Basic:
+# Leetcode: Monotone Increasing Digits     :BLOG:Amusing:
 
 
 ---
@@ -8,6 +8,7 @@ Monotone Increasing Digits
 ---
 
 Similar Problems:  
+
 -   Tag: [#monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
 
 ---
@@ -40,9 +41,14 @@ Credits To: [leetcode.com](https://leetcode.com/problems/monotone-increasing-dig
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/monotone-increasing-digits
-    ## Basic Ideas: monotone stack
-    ##   Let's say we found one digit in the following digit which is smaller than current digit.
-    ##   We decrease current digit by 1, then change the following to '9'   
+    ## Basic Ideas: Greedy
+    ##
+    ##   After checking the changes, we have one key observastion:
+    ##   We need to identity one digit. Decrease it by 1, then change the following to 9
+    ##
+    ##   So we find the longest non-decreasing sequence from left to right.
+    ##   Then scan the sequence from right to left. 
+    ##   Keep moving to left, if it's duplicate number.
     ##
     ## Sample Data:
     ##     2342
@@ -58,27 +64,34 @@ Leave me comments, if you have better ways to solve.
             length = len(l)
             for i in range(length): l[i] = ord(l[i]) - ord('0')
     
-            # monotone stack: find the next smaller value
-            stack = []
-            state = [-1]*length
-            for i in range(length):
-                # current digit is smaller than the previous one
-                while len(stack) and l[i] < l[stack[-1]]:
-                    k = stack.pop(-1)
-                    state[k] = i
-                stack.append(i)
+            # get the longest non-decreasing sequence
+            index = -1
+            for i in range(length-1):
+                if l[i] > l[i+1]:
+                    index = i
+                    break
+            if index == -1: return N
+    
+            j = -1
+            # identity which digit to change
+            for i in range(index, -1, -1):
+                j = i
+                if i>0 and l[i] == l[i-1]:
+                    continue
+                break
     
             # make the change
-            for i in range(length-1, -1, -1):
-                if state[i] != -1:
-                    l[i] -= 1
-                    for j in range(i+1, length): l[j] = 9
-                    break
+            l[j] -= 1
+            for i in range(j+1, length): l[i] = 9
+    
             # get the result
             res = 0
             for i in range(length): res = res*10+l[i]
             return res
     
     s = Solution()
+    print(s.monotoneIncreasingDigits(101)) # 99
     print(s.monotoneIncreasingDigits(120)) # 119
     print(s.monotoneIncreasingDigits(332)) # 299
+    print(s.monotoneIncreasingDigits(668841)) # 667999
+    print(s.monotoneIncreasingDigits(10)) # 9

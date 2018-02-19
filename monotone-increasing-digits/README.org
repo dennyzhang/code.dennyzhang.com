@@ -41,9 +41,14 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/monotone-increasing-digits
-## Basic Ideas:
-##   Scan from right to left
-##   If we have left digit which is no smaller than this one, we evaluate that one digit
+## Basic Ideas: Greedy
+##
+##   After checking the changes, we have one key observastion:
+##   We need to identity one digit. Decrease it by 1, then change the following to 9
+##
+##   So we find the longest non-decreasing sequence from left to right.
+##   Then scan the sequence from right to left. 
+##   Keep moving to left, if it's duplicate number.
 ##
 ## Sample Data:
 ##     2342
@@ -58,27 +63,26 @@ class Solution(object):
         l = list(str(N))
         length = len(l)
         for i in range(length): l[i] = ord(l[i]) - ord('0')
-        
-        should_change = False
-        for i in range(0, length-1):
-            if l[i]>l[i+1]:
-                should_change = True
+
+        # get the longest non-decreasing sequence
+        index = -1
+        for i in range(length-1):
+            if l[i] > l[i+1]:
+                index = i
                 break
+        if index == -1: return N
 
-        index = length
-        i = length - 1
-        while i > 0:
-            for j in range(i-1, -1, -1):
-                if l[j] >= l[i]:
-                    index = min(index, j)
-                    i = j+1
-                    break
-            i = i-1
-
+        j = -1
+        # identity which digit to change
+        for i in range(index, -1, -1):
+            j = i
+            if i>0 and l[i] == l[i-1]:
+                continue
+            break
+        
         # make the change
-        if should_change:
-            l[index] -= 1
-            for i in range(index+1, length): l[i] = 9
+        l[j] -= 1
+        for i in range(j+1, length): l[i] = 9
 
         # get the result
         res = 0
@@ -89,6 +93,6 @@ s = Solution()
 print(s.monotoneIncreasingDigits(101)) # 99
 print(s.monotoneIncreasingDigits(120)) # 119
 print(s.monotoneIncreasingDigits(332)) # 299
-print(s.monotoneIncreasingDigits(10)) # 9
 print(s.monotoneIncreasingDigits(668841)) # 667999
+print(s.monotoneIncreasingDigits(10)) # 9
 #+END_SRC
