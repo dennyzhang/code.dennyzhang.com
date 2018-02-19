@@ -27,24 +27,17 @@ Leave me comments, if you have better ways to solve.
     ##              Let's say a match exists. k = len_b/len_a
     ##              Then we need to repeat A either k times, k+1 times or k+2 times
     ## Complexity: Time O(m+n), Space O(n)
-    class Solution(object):
+    class Solution:
         def repeatedStringMatch(self, A, B):
             """
             :type A: str
             :type B: str
             :rtype: int
             """
-            len_a = len(A)
-            len_b = len(B)
-            k = len_b/len_a
-            C = A * k
-            if B == C:
-                return k
-            if B in C + A:
-                return k + 1
-            if B in C + A + A:
-                return k + 2
+            lenA, lenB = len(A), len(B)
+            times = int(lenB/lenA)
+            C = A*times
+            if B in C: return times
+            if B in C+A: return times+1
+            if B in C+A+A: return times+2
             return -1
-    
-    s = Solution()
-    print s.repeatedStringMatch('abcd', 'cdabcdab')

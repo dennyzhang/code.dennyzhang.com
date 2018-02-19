@@ -1,0 +1,31 @@
+* Leetcode: Palindrome Permutation II                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     combination, codetemplate, backtracking
+:END:
+---------------------------------------------------------------------
+Palindrome Permutation II
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
+- Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
+---------------------------------------------------------------------
+Given a string s, return all the palindromic permutations (without duplicates) of it. Return an empty list if no palindromic permutation could be form.
+
+For example:
+#+BEGIN_EXAMPLE
+Given s = "aabb", return ["abba", "baab"].
+
+Given s = "abc", return [].
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-permutation-ii][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/palindrome-permutation-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/palindrome-permutation-ii
+#+END_SRC

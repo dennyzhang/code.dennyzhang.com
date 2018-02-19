@@ -8,7 +8,6 @@ Is Graph Bipartite?
 ---
 
 Similar Problems:  
-
 -   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
 -   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
@@ -75,12 +74,6 @@ Leave me comments, if you have better ways to solve.
             return True
     
         def dfs(self, graph, node, type):
-            if self.set_type[node] != 0:
-                if self.set_type[node] != type:
-                    return False
-                else:
-                    return True
-    
             # mark current node
             self.set_type[node] = type
     
@@ -91,7 +84,6 @@ Leave me comments, if you have better ways to solve.
                         return False
                 elif self.set_type[edge] == type:
                     return False
-    
             return True
     
         ## Basic Ideas: BFS
@@ -100,7 +92,7 @@ Leave me comments, if you have better ways to solve.
         ##      For two forests, we can put the first nodes into the same set.
         ##      This is a key improvement, compared to brutple force 
         ##
-        ##      set_type: [0, 1, -1], [undecided, type1, type2]
+        ##      set_type[]: [0, 1, -1], [undecided, type1, type2]
         ##
         ## Complexity: Time O(n), Space O(n)
         def isBipartite_v1(self, graph):

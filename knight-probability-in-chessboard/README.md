@@ -8,7 +8,6 @@ Knight Probability in Chessboard
 ---
 
 Similar Problems:  
-
 -   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
 
 ---
@@ -17,7 +16,7 @@ On an NxN chessboard, a knight starts at the r-th row and c-th column and attemp
 
 A chess knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.  
 
-[![img](//raw.githubusercontent.com/DennyZhang/images/master/code/knight.png)](Knight Probability in Chessboard)  
+![img](//raw.githubusercontent.com/DennyZhang/images/master/code/knight.png)  
 
 Each time the knight is to move, it chooses one of eight possible moves uniformly at random (even if the piece would go off the chessboard) and moves there.  
 
@@ -32,7 +31,6 @@ Example:
     The total probability the knight stays on the board is 0.0625.
 
 Note:  
-
 -   N will be between 1 and 25.
 -   K will be between 0 and 100.
 -   The knight always initially starts on the board.
@@ -48,7 +46,7 @@ Note: The solution set must not contain duplicate subsets.
       [1,2,2],
       [2,2],
       [1,2],
-      
+      []
     ]
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/knight-probability-in-chessboard)  

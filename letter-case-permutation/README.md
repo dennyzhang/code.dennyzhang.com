@@ -8,8 +8,7 @@ Letter Case Permutation
 ---
 
 Similar Problems:  
-
--   [Subsets II](https://brain.dennyzhang.com/subsets-ii)
+-   [Generalized Abbreviation](https://brain.dennyzhang.com/generalized-abbreviation)
 -   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
 
 ---
@@ -50,7 +49,7 @@ Leave me comments, if you have better ways to solve.
             """
             res = [""]
             for ch in S:
-                l = 
+                l = []
                 for item in res:
                     if ch.isdigit():
                         l.append("%s%s" % (item, ch))
@@ -97,7 +96,7 @@ Leave me comments, if you have better ways to solve.
             """
             length = len(S)
             if length == 0: return [""]
-            res = 
+            res = []
             ch = S[0]
             for item in self.letterCasePermutation(S[1:]):
                 if ch.isdigit():
