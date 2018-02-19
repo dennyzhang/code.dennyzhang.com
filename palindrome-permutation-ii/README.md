@@ -1,9 +1,9 @@
-# Leetcode: Subsets II     :BLOG:Medium:
+# Leetcode: Palindrome Permutation II     :BLOG:Medium:
 
 
 ---
 
-Subsets II  
+Palindrome Permutation II  
 
 ---
 
@@ -13,44 +13,18 @@ Similar Problems:
 
 ---
 
-Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).  
+Given a string s, return all the palindromic permutations (without duplicates) of it. Return an empty list if no palindromic permutation could be form.  
 
-Note: The solution set must not contain duplicate subsets.  
+For example:  
 
-    For example,
-    If nums = [1,2,2], a solution is:
+    Given s = "aabb", return ["abba", "baab"].
     
-    [
-      [2],
-      [1],
-      [1,2,2],
-      [2,2],
-      [1,2],
-      []
-    ]
+    Given s = "abc", return [].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-permutation-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/subsets-ii/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-permutation-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/subsets-ii
-    ## Basic Ideas:
-    ##
-    ## Complexity:
-    class Solution:
-        def subsetsWithDup(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[List[int]]
-            """
-            length = len(nums)
-            if length == 0: return [[]]
-            res = []
-            for element in self.subsetsWithDup(nums[1:]):
-                if element not in res: res.append(element)
-    
-                element2 = sorted([nums[0]] + element)
-                if element2 not in res: res.append(element2)
-            return res
+    ## Blog link: https://brain.dennyzhang.com/palindrome-permutation-ii

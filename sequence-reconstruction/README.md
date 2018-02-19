@@ -8,7 +8,6 @@ Sequence Reconstruction
 ---
 
 Similar Problems:  
-
 -   [Letter Case Permutation](https://brain.dennyzhang.com/letter-case-permutation)
 -   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
 

@@ -1,9 +1,15 @@
-# Leetcode: Template     :BLOG:Medium:
+# Leetcode: Partition Equal Subset Sum     :BLOG:Medium:
 
 
 ---
 
 Partition Equal Subset Sum  
+
+---
+
+Similar Problems:  
+-   [Partition Equal Subset Sum](https://brain.dennyzhang.com/partition-equal-subset-sum)
+-   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -36,3 +42,32 @@ Credits To: [leetcode.com](https://leetcode.com/problems/partition-equal-subset-
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/partition-equal-subset-sum
+    ## Basic Ideas: hashmap
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    ##     Total sum would be smaller than 20000.
+    ##     So the size of hashmap would be smaller than sum/2. That's 10000
+    ##
+    class Solution(object):
+        def canPartition(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: bool
+            """
+            import copy
+            sum_value = sum(nums)
+            if sum_value%2 != 0: return False
+            target = sum_value/2
+            print(sum_value, target)
+            value_set = set([])
+            for num in nums:
+                tmp_set = copy.deepcopy(value_set)
+                for v in value_set:
+                    if v+num == target: return True
+                    if v+num < target:
+                        tmp_set.add(v+num)
+                if num == target: return True
+                if num < target:
+                    tmp_set.add(num)
+                value_set = tmp_set
+            return False
