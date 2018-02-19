@@ -11,7 +11,7 @@ function my_test() {
 
 function refresh_link() {
     echo "refresh link"
-    for f in $(find . -name README.org); do
+    for f in $(ls -1t */README.org); do
         dirname=$(basename $(dirname $f))
         if ! grep "brain.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update blog url for $f"
@@ -37,7 +37,7 @@ function refresh_link() {
 
 function refresh_md() {
     echo "Use emacs to refresh README.md"
-    for f in $(find . -name README.org); do
+    for f in $(ls -1t */README.org); do
         echo "Update $f"
         dirname=$(basename $(dirname $f))
         cd $dirname

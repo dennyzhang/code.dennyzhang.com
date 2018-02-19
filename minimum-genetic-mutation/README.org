@@ -65,7 +65,8 @@ Leave me comments, if you have better ways to solve.
 ## Blog link: https://brain.dennyzhang.com/minimum-genetic-mutation
 ## Basic Ideas: BFS + Set
 ##
-## Complexity:
+## Complexity: Time O(1), Space O(1)
+##     We will only have 8 characters. pow(4, 8) is still O(1)
 ##
 class Solution(object):
     def minMutation(self, start, end, bank):
