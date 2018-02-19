@@ -45,11 +45,10 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-univalue-path/d
 
 Leave me comments, if you have better ways to solve.  
 
+Related discussions: [here](https://leetcode.com/problems/longest-univalue-path/discuss/108155/C++-DFS-with-explanation)  
+
     ## Blog link: https://brain.dennyzhang.com/longest-univalue-path
-    ## Basic Ideas: recursive + BFS
-    ##
-    ## Complexity Time O(n*n), Space O(n)
-    ##
+    
     # Definition for a binary tree node.
     # class TreeNode:
     #     def __init__(self, x):
@@ -58,7 +57,41 @@ Leave me comments, if you have better ways to solve.
     #         self.right = None
     
     class Solution:
+        ## Basic Ideas: dfs
+        ##
+        ## Complexity:
         def longestUnivaluePath(self, root):
+            """
+            :type root: TreeNode
+            :rtype: int
+            """
+            if root is None: return 0
+            # global variable for the longes path
+            self.res = 1
+            self.dfs(root)
+            return self.res - 1
+    
+        def dfs(self, root):
+            # get the longest path
+            # return value is the longest path for one sub-tree
+            ##           and the path value is the root value
+            if root is None: return 0
+            l = self.dfs(root.left)
+            r = self.dfs(root.right)
+    
+            if not (root.left and root.left.val == root.val):
+                l = 0
+            if not (root.right and root.right.val == root.val):
+                r = 0
+    
+            self.res = max(self.res, l+r+1)
+            return max(l, r)+1
+    
+        ## Basic Ideas: recursive + BFS
+        ##
+        ## Complexity Time O(n*n), Space O(n)
+        ##
+        def longestUnivaluePath_v1(self, root):
             """
             :type root: TreeNode
             :rtype: int
