@@ -1,8 +1,8 @@
-* Leetcode: Monotone Increasing Digits                           :BLOG:Basic:
+* Leetcode: Monotone Increasing Digits                           :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     monotonestack
+:type:     greedy, inspiring
 :END:
 ---------------------------------------------------------------------
 Monotone Increasing Digits
@@ -41,9 +41,9 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/monotone-increasing-digits
-## Basic Ideas: monotone stack
-##   Let's say we found one digit in the following digit which is smaller than current digit.
-##   We decrease current digit by 1, then change the following to '9'   
+## Basic Ideas:
+##   Scan from right to left
+##   If we have left digit which is no smaller than this one, we evaluate that one digit
 ##
 ## Sample Data:
 ##     2342
@@ -59,28 +59,36 @@ class Solution(object):
         length = len(l)
         for i in range(length): l[i] = ord(l[i]) - ord('0')
         
-        # monotone stack: find the next smaller value
-        stack = []
-        state = [-1]*length
-        for i in range(length):
-            # current digit is smaller than the previous one
-            while len(stack) and l[i] < l[stack[-1]]:
-                k = stack.pop(-1)
-                state[k] = i
-            stack.append(i)
-        
-        # make the change
-        for i in range(length-1, -1, -1):
-            if state[i] != -1:
-                l[i] -= 1
-                for j in range(i+1, length): l[j] = 9
+        should_change = False
+        for i in range(0, length-1):
+            if l[i]>l[i+1]:
+                should_change = True
                 break
+
+        index = length
+        i = length - 1
+        while i > 0:
+            for j in range(i-1, -1, -1):
+                if l[j] >= l[i]:
+                    index = min(index, j)
+                    i = j+1
+                    break
+            i = i-1
+
+        # make the change
+        if should_change:
+            l[index] -= 1
+            for i in range(index+1, length): l[i] = 9
+
         # get the result
         res = 0
         for i in range(length): res = res*10+l[i]
         return res
 
 s = Solution()
+print(s.monotoneIncreasingDigits(101)) # 99
 print(s.monotoneIncreasingDigits(120)) # 119
 print(s.monotoneIncreasingDigits(332)) # 299
+print(s.monotoneIncreasingDigits(10)) # 9
+print(s.monotoneIncreasingDigits(668841)) # 667999
 #+END_SRC
