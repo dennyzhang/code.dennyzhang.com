@@ -9,7 +9,8 @@ Monotone Increasing Digits
 
 Similar Problems:  
 
--   Tag: [#monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
+-   [Remove K Digits](https://brain.dennyzhang.com/remove-k-digits)
+-   Tag: [#greedy](https://brain.dennyzhang.com/tag/greedy)
 
 ---
 
@@ -50,9 +51,6 @@ Leave me comments, if you have better ways to solve.
     ##   Then scan the sequence from right to left. 
     ##   Keep moving to left, if it's duplicate number.
     ##
-    ## Sample Data:
-    ##     2342
-    ##     2<3, so we get 2299
     ## Complexity:
     class Solution(object):
         def monotoneIncreasingDigits(self, N):
