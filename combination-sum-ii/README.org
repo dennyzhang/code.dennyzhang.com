@@ -36,46 +36,30 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/combination-sum-ii
-## Basic Ideas: sort the list, then 0-1 bag
-## Complexity: Time ? Space ?
-## Assumptions:
-## Sample Data:
-##      1 1 2 5 6 7 10
-class Solution(object):
+## Basic Ideas: Sort the list with descending order
+##
+## Complexity: Time O(n*n), Space O(n)
+class Solution:
     def combinationSum2(self, candidates, target):
         """
         :type candidates: List[int]
         :type target: int
         :rtype: List[List[int]]
         """
+        if len(candidates) == 0: return []
         candidates = sorted(candidates)
-        return self.mycombinationSum2(candidates, target)
-
-    def mycombinationSum2(self, candidates, target):
         length = len(candidates)
-        if length == 0:
-            return []
         res = []
-        v = candidates[0]
-        if target >= v:
-            # choose
-            if target == v:
-                if [v] not in res:
-                    res.append([v])
-            else:
-                for item in self.mycombinationSum2(candidates[1:], target - v):
-                    if [v] + item not in res:
-                        res.append([v]+item)
-                        
-            for item in self.mycombinationSum2(candidates[1:], target):
-                if item not in res:
-                    res.append(item)
-        else:
-            for item in self.mycombinationSum2(candidates[1:], target):
-                if item not in res:
-                    res.append(item)
-        return res
+        for i in range(length):
+            if candidates[i] > target: continue
+            if candidates[i] == target:
+                if [target] not in res: res.append([target])
+                continue
+            # try to start the result with candidates[i]
+            l = self.combinationSum2(candidates[i+1:], target - candidates[i])
+            for element in l:
+                if not [candidates[i]]+element in res:
+                    res.append([candidates[i]]+element)
 
-s = Solution()
-print s.combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
+        return res
 #+END_SRC

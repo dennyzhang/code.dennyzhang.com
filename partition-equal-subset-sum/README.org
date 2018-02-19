@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, classic
+:type:     dynamicprogramming, classic, combination
 :END:
 ---------------------------------------------------------------------
 Partition Equal Subset Sum
