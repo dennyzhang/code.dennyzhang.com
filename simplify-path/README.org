@@ -1,18 +1,22 @@
-* Leetcode: Template                                              :BLOG:Basic:
+* Leetcode: Simplify Path                                        :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     misc, redo, classic
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Simplify Path
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Given an absolute path for a file (Unix-style), simplify it.
+
+For example,
+#+BEGIN_EXAMPLE
+path = "/home/", => "/home"
+path = "/a/./b/../../c/", => "/c"
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/simplify-path][challenges-leetcode-interesting]]
 

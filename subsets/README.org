@@ -1,18 +1,35 @@
-* Leetcode: Template                                              :BLOG:Basic:
+* Leetcode: Subsets                                              :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     classic, combination, redo
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Subsets
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://brain.dennyzhang.com/subsets-ii][Subsets II]]
+- Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Given a set of distinct integers, nums, return all possible subsets (the power set).
+
+Note: The solution set must not contain duplicate subsets.
+
+For example,
+#+BEGIN_EXAMPLE
+If nums = [1,2,3], a solution is:
+
+[
+  [3],
+  [1],
+  [2],
+  [1,2,3],
+  [1,3],
+  [2,3],
+  [1,2],
+  []
+]
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets][challenges-leetcode-interesting]]
 

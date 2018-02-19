@@ -8,7 +8,6 @@ Monotone Increasing Digits
 ---
 
 Similar Problems:  
-
 -   [Remove K Digits](https://brain.dennyzhang.com/remove-k-digits)
 -   Tag: [#greedy](https://brain.dennyzhang.com/tag/greedy)
 
@@ -51,7 +50,8 @@ Leave me comments, if you have better ways to solve.
     ##   Then scan the sequence from right to left. 
     ##   Keep moving to left, if it's duplicate number.
     ##
-    ## Complexity:
+    ## Complexity: Time O(1), Space O(1)
+    ##       For integer, the maxmium length of digits is small.
     class Solution(object):
         def monotoneIncreasingDigits(self, N):
             """
