@@ -1,4 +1,4 @@
-* Leetcode: Basic Calculator                                              :BLOG:Medium:
+* Leetcode: Basic Calculator                                    :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
