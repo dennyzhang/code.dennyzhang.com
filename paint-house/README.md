@@ -8,7 +8,8 @@ Paint House
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Paint Fence](https://brain.dennyzhang.com/paint-fence)
+-   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

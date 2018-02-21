@@ -8,7 +8,6 @@ Managers with at Least 5 Direct Reports
 ---
 
 Similar Problems:  
-
 -   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
 -   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
 
