@@ -45,12 +45,21 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/managers-with-at-least-5-direct-reports
-select Employee.Name
-from (select ManagerId
+select Name
+from Employee
+where id in
+   (select ManagerId
     from Employee
     group by ManagerId
-    having count(1) >= 5) as t
-    inner join
-    Employee
-on t.ManagerId = Employee.Id
+    having count(1) >= 5)
+
+## Solution with inner join
+##    select Employee.Name
+##    from (select ManagerId
+##        from Employee
+##        group by ManagerId
+##        having count(1) >= 5) as t
+##        inner join
+##        Employee
+##    on t.ManagerId = Employee.Id
 #+END_SRC
