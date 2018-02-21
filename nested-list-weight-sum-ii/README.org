@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     nestedlist
+:type:     nestedlist, recursive
 :END:
 ---------------------------------------------------------------------
 Nested List Weight Sum II
@@ -35,5 +35,82 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/nested-list-weight-sum-ii
+## Basic Ideas: BFS
+##     Find the depest level. Then use BFS
+##
+## Complexity: Time O(n), Space O(n)
+# """
+# This is the interface that allows for creating nested lists.
+# You should not implement it, or speculate about its implementation
+# """
+#class NestedInteger(object):
+#    def __init__(self, value=None):
+#        """
+#        If value is not specified, initializes an empty list.
+#        Otherwise initializes a single integer equal to value.
+#        """
+#
+#    def isInteger(self):
+#        """
+#        @return True if this NestedInteger holds a single integer, rather than a nested list.
+#        :rtype bool
+#        """
+#
+#    def add(self, elem):
+#        """
+#        Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
+#        :rtype void
+#        """
+#
+#    def setInteger(self, value):
+#        """
+#        Set this NestedInteger to hold a single integer equal to value.
+#        :rtype void
+#        """
+#
+#    def getInteger(self):
+#        """
+#        @return the single integer that this NestedInteger holds, if it holds a single integer
+#        Return None if this NestedInteger holds a nested list
+#        :rtype int
+#        """
+#
+#    def getList(self):
+#        """
+#        @return the nested list that this NestedInteger holds, if it holds a nested list
+#        Return None if this NestedInteger holds a single integer
+#        :rtype List[NestedInteger]
+#        """
 
+class Solution(object):
+    def depthSumInverse(self, nestedList):
+        """
+        :type nestedList: List[NestedInteger]
+        :rtype: int
+        """
+        import collections
+        if len(nestedList) == 0: return 0
+        deepest_level = self.findDepth(nestedList, 0)
+        return self.myDepthSumInverse(nestedList, deepest_level)
+
+    def myDepthSumInverse(self, nestedList, level):
+        res = 0
+        for item in nestedList:
+            if item.isInteger(): res += item.getInteger()*level
+            else:
+                res += self.myDepthSumInverse(item.getList(), level-1)
+        return res
+    
+    def findDepth(self, nestedList, level):
+        if len(nestedList) == 0: return 0
+        deepest_level = level
+        for item in nestedList:
+            if item.isInteger(): 
+                deepest_level = max(deepest_level, level+1)
+                continue
+            for p in item.getList():
+                if p.isInteger(): deepest_level = max(deepest_level, level+2)
+                else:
+                    deepest_level = max(deepest_level, self.findDepth(p.getList(), level+2))
+        return deepest_level
 #+END_SRC
