@@ -91,7 +91,6 @@ Leave me comments, if you have better ways to solve.
             :type nestedList: List[NestedInteger]
             :rtype: int
             """
-            if len(nestedList) == 0: return 0
             res = 0
             for item in nestedList:
                 if item.isInteger():
