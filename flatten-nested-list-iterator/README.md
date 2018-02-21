@@ -9,7 +9,7 @@ Flatten Nested List Iterator
 
 Similar Problems:  
 -   [Flatten 2D Vector](https://brain.dennyzhang.com/flatten-2d-vector)
--   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

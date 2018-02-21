@@ -9,7 +9,7 @@ Design Hit Counter
 
 Similar Problems:  
 -   [Logger Rate Limiter](https://brain.dennyzhang.com/logger-rate-limiter)
--   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

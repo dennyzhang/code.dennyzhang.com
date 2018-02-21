@@ -7,6 +7,12 @@ Combination Sum
 
 ---
 
+Similar Problems:  
+-   [LintCode: Subset With Target](https://brain.dennyzhang.com/subset-with-target)
+-   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
+
+---
+
 Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.  
 
 The same repeated number may be chosen from C unlimited number of times.  

@@ -9,7 +9,7 @@ Design Compressed String Iterator
 
 Similar Problems:  
 -   [Basic Calculator](https://brain.dennyzhang.com/basic-calculator)
--   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

@@ -10,7 +10,7 @@ Flatten 2D Vector
 Similar Problems:  
 -   [Design Compressed String Iterator](https://brain.dennyzhang.com/design-compressed-string-iterator)
 -   [Flatten Nested List Iterator](https://brain.dennyzhang.com/flatten-nested-list-iterator)
--   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

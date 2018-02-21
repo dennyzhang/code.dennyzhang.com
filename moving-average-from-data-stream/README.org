@@ -8,7 +8,7 @@
 Moving Average from Data Stream
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.
 

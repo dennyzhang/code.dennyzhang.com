@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, reservoirsampling
+:type:     oodesign, reservoirsampling
 :END:
 ---------------------------------------------------------------------
 Design a data structure that supports reqiured operations in O(1) time.

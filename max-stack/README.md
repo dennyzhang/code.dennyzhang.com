@@ -9,7 +9,7 @@ Max Stack
 
 Similar Problems:  
 -   [Min Stack](https://brain.dennyzhang.com/min-stack)
--   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

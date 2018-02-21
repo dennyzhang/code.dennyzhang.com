@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, inspiring
+:type:     oodesign, inspiring
 :END:
 ---------------------------------------------------------------------
 Find Median from Data Stream
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/median-of-two-sorted-arrays][Median of Two Sorted Arrays]]
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 

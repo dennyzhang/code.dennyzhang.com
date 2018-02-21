@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion
+:type:     oodesign
 :END:
 ---------------------------------------------------------------------
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/max-stack][Max Stack]]
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 

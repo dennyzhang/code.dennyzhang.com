@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion
+:type:     oodesign
 :END:
 ---------------------------------------------------------------------
 Logger Rate Limiter
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/design-hit-counter][Design Hit Counter]]
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design a logger system that receive stream of messages along with its timestamps, each message should be printed if and only if it is not printed in the last 10 seconds.
 

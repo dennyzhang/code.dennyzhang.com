@@ -1,25 +1,46 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Combination Sum IV     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Combination Sum IV  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Example:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+    nums = [1, 2, 3]
+    target = 4
+    
+    The possible combination ways are:
+    (1, 1, 1, 1)
+    (1, 1, 2)
+    (1, 2, 1)
+    (1, 3)
+    (2, 1, 1)
+    (2, 2)
+    (3, 1)
+    
+    Note that different sequences are counted as different combinations.
+    
+    Therefore the output is 7.
+
+Follow up:  
+-   What if negative numbers are allowed in the given array?
+-   How does it change the problem?
+-   What limitation we need to add to the question to allow negative numbers?
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum-iv)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-iv/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/combination-sum-iv

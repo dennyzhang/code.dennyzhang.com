@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, inspiring
+:type:     oodesign, inspiring
 :END:
 ---------------------------------------------------------------------
 Design Hit Counter
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/logger-rate-limiter][Logger Rate Limiter]]
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design a hit counter which counts the number of hits received in the past 5 minutes.
 

@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, iterator, manydetails, recursive
+:type:     oodesign, iterator, manydetails, recursive
 :END:
 ---------------------------------------------------------------------
 Flatten Nested List Iterator
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/flatten-2d-vector][Flatten 2D Vector]]
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given a nested list of integers, implement an iterator to flatten it.
 

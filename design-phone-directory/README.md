@@ -8,7 +8,7 @@ Design Phone Directory
 ---
 
 Similar Problems:  
--   Tag: [#designquestion](https://brain.dennyzhang.com/tag/designquestion)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

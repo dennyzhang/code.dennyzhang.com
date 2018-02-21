@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     designquestion, fisheryatesshuffle, reservoirsampling
+:type:     oodesign, fisheryatesshuffle, reservoirsampling
 :END:
 ---------------------------------------------------------------------
 Shuffle an Array
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/designquestion][#designquestion]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Shuffle a set of numbers without duplicates.
 

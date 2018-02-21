@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, trie, designquestion
+:type:     codetemplate, trie, oodesign
 :END:
 ---------------------------------------------------------------------
 Implement Trie (Prefix Tree)
