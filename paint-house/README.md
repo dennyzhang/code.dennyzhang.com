@@ -35,8 +35,6 @@ Leave me comments, if you have better ways to solve.
     ## Basic Ideas: Dyanmic programming
     ##     For house after house1, it can only have 3 possilities.
     ##
-    ##     dp
-    ##
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def minCost(self, costs):
@@ -44,7 +42,6 @@ Leave me comments, if you have better ways to solve.
             :type costs: List[List[int]]
             :rtype: int
             """
-            import sys
             length = len(costs)
             if length == 0: return 0
     
@@ -60,6 +57,3 @@ Leave me comments, if you have better ways to solve.
                     l[j] = costs[i][j] + min(dp[(j+1)%3], dp[(j+2)%3])
                 dp = l
             return min(dp)
-    
-    s = Solution()
-    print(s.minCost([[17,2,17],[16,16,5],[14,3,19]]))
