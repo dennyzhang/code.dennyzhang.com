@@ -8,6 +8,7 @@
 Not Boring Movies
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
 - Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies' ratings and descriptions.

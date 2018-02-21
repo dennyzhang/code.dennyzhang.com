@@ -8,6 +8,7 @@
 Exchange Seats
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
 - Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Mary is a teacher in a middle school and she has a table seat storing students' names and their corresponding seat ids.

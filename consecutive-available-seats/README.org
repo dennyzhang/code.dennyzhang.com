@@ -8,6 +8,7 @@
 Consecutive Available Seats
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
 - Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Several friends at a cinema ticket office would like to reserve consecutive available seats.

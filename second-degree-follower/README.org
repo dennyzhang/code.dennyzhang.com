@@ -8,6 +8,7 @@
 Second Degree Follower
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
 - Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 In facebook, there is a follow table with two columns: followee, follower.

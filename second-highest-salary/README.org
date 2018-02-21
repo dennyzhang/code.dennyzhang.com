@@ -8,6 +8,7 @@
 Second Highest Salary
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
 - Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Write a SQL query to get the second highest salary from the Employee table.

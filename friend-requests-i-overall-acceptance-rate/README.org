@@ -8,6 +8,8 @@
 Friend Requests I: Overall Acceptance Rate
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/friend-requests-ii-who-has-the-most-friends][Friend Requests II: Who Has the Most Friends]]
 - Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 In social network like Facebook or Twitter, people send friend requests and accept others’ requests as well. Now given two tables as below:
@@ -60,7 +62,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 ## Blog link: https://brain.dennyzhang.com/friend-requests-i-overall-acceptance-rate
-# Write your MySQL query statement below
 select ifnull((round(accepts/requests, 2)), 0.0) as accept_rate
 from
     (select count(distinct sender_id, send_to_id) as requests from friend_request) as t1,
