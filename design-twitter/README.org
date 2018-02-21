@@ -92,8 +92,8 @@ class Twitter:
         :type userId: int
         :rtype: List[int]
         """
-        q = []
         # min heap
+        q = []
         heapq.heapify(q)
         for (id, tweetId) in self.tweet_dict[userId]:
             heapq.heappush(q, (id, tweetId))

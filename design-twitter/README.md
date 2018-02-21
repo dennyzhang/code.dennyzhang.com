@@ -8,6 +8,7 @@ Design Twitter
 ---
 
 Similar Problems:  
+
 -   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
@@ -72,7 +73,7 @@ Leave me comments, if you have better ways to solve.
             """
             self.id = 0
             self.tweet_dict = collections.defaultdict(collections.deque)
-            self.follow_dict = collections.defaultdict(lambda: set([]))
+            self.follow_dict = collections.defaultdict(lambda: set())
     
         def postTweet(self, userId, tweetId):
             """
@@ -92,8 +93,8 @@ Leave me comments, if you have better ways to solve.
             :type userId: int
             :rtype: List[int]
             """
-            q = []
             # min heap
+            q = 
             heapq.heapify(q)
             for (id, tweetId) in self.tweet_dict[userId]:
                 heapq.heappush(q, (id, tweetId))
@@ -102,7 +103,7 @@ Leave me comments, if you have better ways to solve.
                 for (id, tweetId) in self.tweet_dict[followee]:
                     heapq.heappush(q, (id, tweetId))
                     if len(q) > 10: heapq.heappop(q)
-            res = []
+            res = 
             while len(q) != 0:
                 (id, tweetId) = heapq.heappop(q)
                 res.insert(0, tweetId)
