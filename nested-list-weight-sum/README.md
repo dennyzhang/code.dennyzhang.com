@@ -8,15 +8,14 @@ Nested List Weight Sum
 ---
 
 Similar Problems:  
-
 -   [Nested List Weight Sum II](https://brain.dennyzhang.com/nested-list-weight-sum-ii)
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
+-   Tag: [#nestedlist](https://brain.dennyzhang.com/tag/nestedlist)
 
 ---
 
 Given a nested list of integers, return the sum of all integers in the list weighted by their depth.  
 
-Each element is either an integer, or a list -- whose elements may also be integers or other lists.  
+Each element is either an integer, or a list &#x2013; whose elements may also be integers or other lists.  
 
 Example 1:  
 
