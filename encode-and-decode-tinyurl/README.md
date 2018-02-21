@@ -8,7 +8,6 @@ Encode and Decode TinyURL
 ---
 
 Similar Problems:  
-
 -   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
@@ -38,8 +37,6 @@ Leave me comments, if you have better ways to solve.
             self.count += 1
             self.d[self.count] = longUrl
             return str(self.count)
-    
-    
     
         def decode(self, shortUrl):
             """Decodes a shortened URL to its original URL.

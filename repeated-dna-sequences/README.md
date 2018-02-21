@@ -1,25 +1,53 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Repeated DNA Sequences     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Repeated DNA Sequences  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+For example,  
+
+    Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
+    
+    Return:
+    ["AAAAACCCCC", "CCCCCAAAAA"].
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-dna-sequences)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/repeated-dna-sequences/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/repeated-dna-sequences
+    ## Basic Ideas: sliding window + hashmap
+    ##
+    ## Complexity: Time O(n), Space O(n)
+    class Solution(object):
+        def findRepeatedDnaSequences(self, s):
+            """
+            :type s: str
+            :rtype: List[str]
+            """
+            length = len(s)
+            if length <= 10: return []
+            import collections
+            d = collections.defaultdict(lambda:0)
+            curStr = s[0:10]
+            d[curStr] += 1
+            res = []
+            for i in range(10, length):
+                curStr = curStr[1:] + s[i]
+                if d[curStr] == 1: res.append(curStr)
+                d[curStr] += 1
+            return res

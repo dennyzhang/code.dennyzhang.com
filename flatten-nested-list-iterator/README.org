@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, iterator, manydetails, recursive
+:type:     oodesign, iterator, manydetails, recursive, nestedlist
 :END:
 ---------------------------------------------------------------------
 Flatten Nested List Iterator

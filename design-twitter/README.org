@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign
+:type:     oodesign, heap, inspiring
 :END:
 ---------------------------------------------------------------------
 Design Twitter
@@ -53,7 +53,7 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/design-twitter
-## Basic Ideas: Two hashmap
+## Basic Ideas: Two hashmap + PriorityQueue
 ##     tweet_dict. id -> tweet_list
 ##     follow_dict: id -> id set
 ##
@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 ## Assumption: people tweet with post id always grows
 ##
 ## Complexity: getNewsFeed
-##       Time O(n*log(n)) Space O(n). n = total tweets involved
+##       Time O(k*log(n)) Space O(n). n = total tweets involved
 import collections, copy
 class Twitter:
 
@@ -71,7 +71,7 @@ class Twitter:
         Initialize your data structure here.
         """
         self.id = 0
-        self.tweet_dict = collections.defaultdict(lambda: [])
+        self.tweet_dict = collections.defaultdict(collections.deque)
         self.follow_dict = collections.defaultdict(lambda: set([]))
 
     def postTweet(self, userId, tweetId):
@@ -82,6 +82,8 @@ class Twitter:
         :rtype: void
         """
         self.tweet_dict[userId].append((self.id, tweetId))
+        # only hold 10 tweets
+        if len(self.tweet_dict[userId]) > 10: self.tweet_dict[userId].popleft()
         self.id += 1
 
     def getNewsFeed(self, userId):
@@ -90,12 +92,20 @@ class Twitter:
         :type userId: int
         :rtype: List[int]
         """
-        l = copy.deepcopy(self.tweet_dict[userId])
+        q = []
+        # min heap
+        heapq.heapify(q)
+        for (id, tweetId) in self.tweet_dict[userId]:
+            heapq.heappush(q, (id, tweetId))
+            if len(q) > 10: heapq.heappop(q)
         for followee in self.follow_dict[userId]:
-            l += self.tweet_dict[followee]
-        l.sort(reverse=True)
+            for (id, tweetId) in self.tweet_dict[followee]:
+                heapq.heappush(q, (id, tweetId))
+                if len(q) > 10: heapq.heappop(q)
         res = []
-        for (id, tweetId) in l[0:10]: res.append(tweetId)
+        while len(q) != 0:
+            (id, tweetId) = heapq.heappop(q)
+            res.insert(0, tweetId)
         return res
 
     def follow(self, followerId, followeeId):
