@@ -1,0 +1,86 @@
+* LintCode: Computer Maintenance                                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Computer Maintenance
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+A n*m matrix represents an array of computers, and give a list which represents the coordinate of the broken computer. Now we start with (0,0) and repair the computer. There are some request:
+1. You have to fix all the broken computers in the current line to get to the next line.
+2. If you are going to the next line, the mechanic must first return to the far left or right of the line.
+Find the minimum access distance.
+
+Notice
+- The size of the given matrix is n x m, n <= 200, m <= 200.
+- num is the number of broken computer, num <= 1000.
+- After fixing the last computer, you need to return to the far left or right of the last line.
+
+Example
+#+BEGIN_EXAMPLE
+Given n = 3, m = 10, List = [[0,0],[0,9],[1,7]], return 15.
+
+Explanation:
+
+Starting from (0,0), fix 0, then go to (0,9) to fix 1 and go from (0,9) to next line (1,9), then go to (1,7) to fix 3, then go back to (1,9) and go to (2,9).
+Given n = 3, m = 10, List = [[0,3],[1,7],[1,2]], return 17.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Explanation:
+
+Starting from (0,0), go to (0,3) and fix 0, then go back to (0,0) to next line (1,0), and go to (1,2) to fix 2, then go to (1,7) to fix 1, then go to (1,9), and end at (2,9).
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/computer-maintenance][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:http://www.lintcode.com/en/problem/computer-maintenance/][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/computer-maintenance
+class Solution:
+    """
+    @param n: the rows of matrix
+    @param m: the cols of matrix
+    @param Badcomputers: the bad computers 
+    @return: The answer
+    """
+    def maintenance(self, n, m, Badcomputers):
+        ## Basic Ideas: Dynamic Programming
+        ##     To get line i, it can come from only 2 points matrix[i-1][0], matrix[i-1][-1]
+        ##
+        ## Complexity: Time O(n*m), Space O(1)
+        import collections
+        
+        # interval for each row: leftmost and rightmost
+        d = {}
+        for point in Badcomputers:
+            i, j = point.x, point.y
+            if i not in d: d[i] = [m, -1]
+            interval = d[i]
+            interval[0] = min(j, interval[0])
+            interval[1] = max(j, interval[1])
+            d[i] = interval
+
+        left_sum, right_sum = 0, m-1
+        for i in range(n):
+            if i not in d:
+                left_sum += 1
+                right_sum += 1
+            else:
+                # left
+                left_sum2 = left_sum + d[i][1]*2 + 1
+                left_sum2 = min(left_sum2, right_sum + m)
+                # right
+                right_sum2 = right_sum + (m-1-d[i][0])*2 + 1
+                right_sum2 = min(right_sum2, left_sum + m)
+                
+                left_sum, right_sum = left_sum2, right_sum2
+        return min(left_sum, right_sum)-1
+#+END_SRC

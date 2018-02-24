@@ -1,0 +1,64 @@
+* LintCode: Input Stream                                         :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     stack
+:END:
+---------------------------------------------------------------------
+Input Stream
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/stack][#stack]]
+---------------------------------------------------------------------
+Give two input stream inputA and inputB, which have Backspace. If the final result of the two input streams is equal, output YES, otherwise output NO.
+
+Notice
+- Input characters include only lowercase letters and '<'
+- The length of input stream does not exceed 10000.
+
+Example
+#+BEGIN_EXAMPLE
+Given inputA = “abcde<<”, inputB = “abcd<e<”, return "YES".
+
+Explanation:
+The final result of inputA and inputB is abc, so return "YES".
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given inputA = “a<<bc”, inputB = “abc<”, return "NO"
+
+Explanation:
+The final result of inputA is "bc", and the final result of inputB is "ab", so return "NO".
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/input-stream][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:http://www.lintcode.com/en/problem/input-stream/][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/input-stream
+#!/usr/bin/env python
+class Solution:
+    """
+    @param inputA: Input stream A
+    @param inputB: Input stream B
+    @return: The answer
+    """
+    def inputStream(self, inputA, inputB):
+       # Basic Ideas: stack
+        stack1, stack2 = [], []
+        for ch in inputA:
+            if ch == '<':
+                if len(stack1) != 0: stack1.pop(-1)
+            else:
+                stack1.append(ch)
+        for ch in inputB:
+            if ch == '<':
+               if len(stack2) != 0:
+                   stack2.pop(-1)
+            else:
+                stack2.append(ch)
+        return 'YES' if stack1 == stack2 else 'NO'
+#+END_SRC
