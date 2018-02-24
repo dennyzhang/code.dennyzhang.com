@@ -9,7 +9,7 @@ Search in Rotated Sorted Array II
 
 Similar Problems:  
 -   [Search in Rotated Sorted Array](https://brain.dennyzhang.com/search-in-rotated-sorted-array)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binary-search)
 
 ---
 

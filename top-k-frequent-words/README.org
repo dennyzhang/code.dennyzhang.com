@@ -8,6 +8,7 @@
 Top K Frequent Words
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-heap][Review: Heap Problems]]
 - Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Given a non-empty list of words, return the k most frequent elements.

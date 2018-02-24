@@ -7,6 +7,11 @@ Decode Ways
 
 ---
 
+Similar Problems:  
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
+
+---
+
 A message containing letters from A-Z is being encoded to numbers using the following mapping:  
 
     'A' -> 1

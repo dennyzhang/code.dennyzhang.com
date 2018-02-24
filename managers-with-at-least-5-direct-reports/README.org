@@ -9,7 +9,6 @@ Managers with at Least 5 Direct Reports
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 #+BEGIN_EXAMPLE

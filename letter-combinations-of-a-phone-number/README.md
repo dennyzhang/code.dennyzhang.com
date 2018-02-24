@@ -7,6 +7,11 @@ Letter Combinations of a Phone Number
 
 ---
 
+Similar Problems:  
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
+
+---
+
 Given a digit string, return all possible letter combinations that the number could represent.  
 
 A mapping of digit to letters (just like on the telephone buttons) is given below.  

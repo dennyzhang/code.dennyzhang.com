@@ -9,7 +9,7 @@ Closest Binary Search Tree Value II
 
 Similar Problems:  
 -   [Closest Binary Search Tree Value](https://brain.dennyzhang.com/closest-binary-search-tree-value)
--   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree)
 
 ---
 

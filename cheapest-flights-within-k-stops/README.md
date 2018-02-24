@@ -8,7 +8,7 @@ Cheapest Flights Within K Stops
 ---
 
 Similar Problems:  
--   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs)
 
 ---
 

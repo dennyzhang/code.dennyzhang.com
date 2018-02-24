@@ -8,6 +8,7 @@
 Maximum Sum of 3 Non-Overlapping Subarrays
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 ---------------------------------------------------------------------
 In a given array nums of positive integers, find three non-overlapping subarrays with maximum sum.
 

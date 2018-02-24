@@ -8,7 +8,7 @@ Combination Sum IV
 ---
 
 Similar Problems:  
--   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
 
 ---
 

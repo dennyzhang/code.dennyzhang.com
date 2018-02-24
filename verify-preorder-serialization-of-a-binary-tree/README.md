@@ -7,6 +7,12 @@ Verify Preorder Serialization of a Binary Tree
 
 ---
 
+Similar Problems:  
+-   [Verify Preorder Sequence in Binary Search Tree](https://brain.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree)
+-   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree)
+
+---
+
 One way to serialize a binary tree is to use pre-order traversal. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as #.  
 
          _9_

@@ -8,7 +8,7 @@ Computer Maintenance
 ---
 
 Similar Problems:  
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
 
 ---
 

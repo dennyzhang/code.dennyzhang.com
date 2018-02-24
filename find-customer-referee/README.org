@@ -9,7 +9,6 @@ Find Customer Referee
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Given a table customer holding customers information and the referee.
 #+BEGIN_EXAMPLE

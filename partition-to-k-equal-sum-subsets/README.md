@@ -9,7 +9,7 @@ Partition to K Equal Sum Subsets
 
 Similar Problems:  
 -   [Partition Equal Subset Sum](https://brain.dennyzhang.com/partition-equal-subset-sum)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
 
 ---
 

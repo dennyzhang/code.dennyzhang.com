@@ -7,6 +7,11 @@ Linked List Cycle
 
 ---
 
+Similar Problems:  
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
+
+---
+
 Given a linked list, determine if it has a cycle in it.  
 
 Follow up:  

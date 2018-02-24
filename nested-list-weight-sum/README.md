@@ -9,6 +9,7 @@ Nested List Weight Sum
 
 Similar Problems:  
 -   [Nested List Weight Sum II](https://brain.dennyzhang.com/nested-list-weight-sum-ii)
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
 -   Tag: [#nestedlist](https://brain.dennyzhang.com/tag/nestedlist)
 
 ---

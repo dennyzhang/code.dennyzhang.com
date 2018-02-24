@@ -8,7 +8,7 @@
 Subset With Target
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 ---------------------------------------------------------------------
 Give an array and a target. We need to find the number of subsets which meet the following conditions:
 The sum of the minimum value and the maximum value in the subset is less than the target.

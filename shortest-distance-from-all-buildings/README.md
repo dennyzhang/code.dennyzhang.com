@@ -9,7 +9,7 @@ Shortest Distance from All Buildings
 
 Similar Problems:  
 -   [Walls and Gates](https://brain.dennyzhang.com/walls-and-gates)
--   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs)
 
 ---
 

@@ -9,7 +9,7 @@ Sequence Reconstruction
 
 Similar Problems:  
 -   [Letter Case Permutation](https://brain.dennyzhang.com/letter-case-permutation)
--   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
 
 ---
 

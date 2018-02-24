@@ -9,7 +9,6 @@ Second Highest Salary
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table number contains many numbers in column num including duplicated ones.
 Can you write a SQL query to find the biggest number, which only appears once.

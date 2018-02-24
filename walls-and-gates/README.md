@@ -10,7 +10,7 @@ Walls and Gates
 Similar Problems:  
 -   [Shortest Distance from All Buildings](https://brain.dennyzhang.com/shortest-distance-from-all-buildings)
 -   [01 Matrix](https://brain.dennyzhang.com/01-matrix)
--   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs)
 
 ---
 

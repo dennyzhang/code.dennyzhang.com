@@ -11,7 +11,7 @@ Similar Problems:
 -   [Climbing Stairs](https://brain.dennyzhang.com/climbing-stairs)
 -   [House Robber](https://brain.dennyzhang.com/house-robber)
 -   [Paint House](https://brain.dennyzhang.com/paint-house)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
 
 ---
 

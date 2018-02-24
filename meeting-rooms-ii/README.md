@@ -9,7 +9,7 @@ Meeting Rooms II
 
 Similar Problems:  
 -   [Meeting Rooms](https://brain.dennyzhang.com/meeting-rooms)
--   Tag: [#interval](https://brain.dennyzhang.com/tag/interval)
+-   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
 
 ---
 

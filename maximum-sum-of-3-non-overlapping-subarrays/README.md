@@ -8,6 +8,7 @@ Maximum Sum of 3 Non-Overlapping Subarrays
 ---
 
 Similar Problems:  
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
 
 ---
 

@@ -7,6 +7,11 @@ Path Sum III
 
 ---
 
+Similar Problems:  
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
+
+---
+
 You are given a binary tree in which each node contains an integer value.  
 
 Find the number of paths that sum to a given value.  

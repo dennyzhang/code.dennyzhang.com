@@ -10,7 +10,7 @@ Minimum Genetic Mutation
 Similar Problems:  
 -   [Word Ladder](https://brain.dennyzhang.com/word-ladder)
 -   [Open the Lock](https://brain.dennyzhang.com/open-the-lock)
--   Tag: [#bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs)
 
 ---
 

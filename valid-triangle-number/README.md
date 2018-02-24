@@ -7,6 +7,11 @@ Pic 3 numbers to get a triangle
 
 ---
 
+Similar Problems:  
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
+
+---
+
 Given an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.  
 
 Example 1:  

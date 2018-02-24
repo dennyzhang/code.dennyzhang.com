@@ -7,6 +7,11 @@ Given two integers n and k, return all possible combinations of k numbers out of
 
 ---
 
+Similar Problems:  
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
+
+---
+
 Given two integers n and k, return all possible combinations of k numbers out of 1 &#x2026; n.  
 
 For example,  

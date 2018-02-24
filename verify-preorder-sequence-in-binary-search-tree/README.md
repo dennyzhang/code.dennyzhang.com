@@ -8,7 +8,8 @@ Verify Preorder Sequence in Binary Search Tree
 ---
 
 Similar Problems:  
--   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Verify Preorder Serialization of a Binary Tree](https://brain.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree)
+-   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree)
 
 ---
 

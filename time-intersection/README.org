@@ -8,7 +8,7 @@
 Time Intersection
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/interval][#interval]]
+- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]]
 ---------------------------------------------------------------------
 Give two users' ordered online time series, and each section records the user's login time point x and offline time point y. Find out the time periods when both users are online at the same time, and output in ascending order.
 

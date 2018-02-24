@@ -9,7 +9,7 @@ Subsets
 
 Similar Problems:  
 -   [Subsets II](https://brain.dennyzhang.com/subsets-ii)
--   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
 
 ---
 

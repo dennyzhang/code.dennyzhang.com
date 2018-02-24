@@ -9,7 +9,6 @@ Triangle Judgement
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 A pupil Tim gets homework to identify whether three line segments could possibly form a triangle.
 However, this assignment is very heavy because there are hundreds of records to calculate.

@@ -7,6 +7,11 @@ Sort linked list
 
 ---
 
+Similar Problems:  
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
+
+---
+
 Sort a linked list in O(n log n) time using constant space complexity.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-list)  

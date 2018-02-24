@@ -8,6 +8,7 @@ Top K Frequent Words
 ---
 
 Similar Problems:  
+-   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap)
 -   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
 
 ---

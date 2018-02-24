@@ -8,7 +8,7 @@ Find Right Interval
 ---
 
 Similar Problems:  
--   Tag: [#interval](https://brain.dennyzhang.com/tag/interval)
+-   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
 
 ---
 

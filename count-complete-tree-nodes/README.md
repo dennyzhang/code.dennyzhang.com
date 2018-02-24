@@ -7,6 +7,11 @@ Count Complete Tree Nodes
 
 ---
 
+Similar Problems:  
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
+
+---
+
 Given a complete binary tree, count the number of nodes.  
 
 Definition of a complete binary tree from [Wikipedia](https://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees):  

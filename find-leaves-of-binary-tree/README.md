@@ -8,7 +8,7 @@ Find Leaves of Binary Tree
 ---
 
 Similar Problems:  
--   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree)
 
 ---
 

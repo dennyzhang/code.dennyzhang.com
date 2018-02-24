@@ -9,7 +9,7 @@ Subsets
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/subsets-ii][Subsets II]]
-- Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 ---------------------------------------------------------------------
 Given a set of distinct integers, nums, return all possible subsets (the power set).
 

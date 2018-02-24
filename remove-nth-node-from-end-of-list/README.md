@@ -7,6 +7,11 @@ Remove Nth Node From End of List
 
 ---
 
+Similar Problems:  
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
+
+---
+
 Given a linked list, remove the nth node from the end of list and return its head.  
 
 For example,  

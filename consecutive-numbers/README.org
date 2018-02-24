@@ -9,7 +9,6 @@ Consecutive Numbers
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Write a SQL query to find all numbers that appear at least three times consecutively.
 #+BEGIN_EXAMPLE

@@ -8,7 +8,7 @@ Reaching Points
 ---
 
 Similar Problems:  
--   Tag: [#recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
 
 ---
 

@@ -9,7 +9,7 @@ Monotone Increasing Digits
 
 Similar Problems:  
 -   [Remove K Digits](https://brain.dennyzhang.com/remove-k-digits)
--   Tag: [#greedy](https://brain.dennyzhang.com/tag/greedy)
+-   [Review: Greedy Problems](https://brain.dennyzhang.com/review-greedy)
 
 ---
 

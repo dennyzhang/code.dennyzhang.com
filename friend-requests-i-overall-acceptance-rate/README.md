@@ -8,9 +8,8 @@ Friend Requests I: Overall Acceptance Rate
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
 -   [Friend Requests II: Who Has the Most Friends](https://brain.dennyzhang.com/friend-requests-ii-who-has-the-most-friends)
--   Tag: [#sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
 
 ---
 

@@ -9,8 +9,8 @@ Letter Case Permutation
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/generalized-abbreviation][Generalized Abbreviation]]
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
 
