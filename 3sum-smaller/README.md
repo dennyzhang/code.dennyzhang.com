@@ -1,25 +1,33 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: 3Sum Smaller     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+3Sum Smaller  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
 -   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums[i] + nums[j] + nums[k] < target.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+For example, given nums = [-2, 0, 1, 3], and target = 2.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Return 2. Because there are two triplets which sums are less than 2:  
+
+    [-2, 0, 1]
+    [-2, 0, 3]
+
+Follow up:  
+Could you solve it in O(n^2) runtime?  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum-smaller)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/3sum-smaller/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/3sum-smaller

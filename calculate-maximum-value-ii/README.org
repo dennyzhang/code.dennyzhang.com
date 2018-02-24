@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     array, lintcode
 :END:
 ---------------------------------------------------------------------
 Calculate Maximum Value II
@@ -22,7 +22,7 @@ As 8 * (9 + 1) = 80, so 80 is maximum.
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/calculate-maximum-value-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/calculate-maximum-value-ii/][Lintcode.com]]
+Credits To: [[url-external:http://www.lintcode.com/en/problem/calculate-maximum-value-ii/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 

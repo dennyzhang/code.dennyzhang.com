@@ -8,7 +8,8 @@
 Verify Preorder Sequence in Binary Search Tree
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+- [[https://brain.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree][Verify Preorder Serialization of a Binary Tree]]
+- [[https://brain.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]]
 ---------------------------------------------------------------------
 Given an array of numbers, verify whether it is the correct preorder traversal sequence of a binary search tree.
 

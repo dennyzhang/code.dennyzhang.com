@@ -33,7 +33,7 @@ Given Alphabet = {z,b,a,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,c}, String a
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-sorting)  
 
-Credits To: [Lintcode.com](http://www.lintcode.com/en/problem/word-sorting/)  
+Credits To: [LintCode.com](http://www.lintcode.com/en/problem/word-sorting/)  
 
 Leave me comments, if you have better ways to solve.  
 

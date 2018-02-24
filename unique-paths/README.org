@@ -9,7 +9,7 @@ Unique Paths
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/unique-paths-ii][Leetcode: Unique Paths II]]
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 ---------------------------------------------------------------------
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 

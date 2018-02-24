@@ -43,3 +43,56 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-k-digits/descrip
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/remove-k-digits
+    ## Basic Ideas: Greedy
+    ##    From left to right, if current digit decreases, we find one candiate
+    ##    Why?
+    ##       i-1, i, i +1
+    ##       digit[i-1] <= digit[i] and digit[i] > digit[i+1]
+    ##       Let's say we don't delete digit i.
+    ##       If the final result has deleted digit i+1, the result won't be optimal. 
+    ##         Since we can keep digit i+1 and delete digit i, with everything else unchanged.
+    ##         The modified result would be smaller
+    ##       If the final result hasn't deleted digit i+1
+    ##         If the deletion has happened before i, it doesn't make sense
+    ##         If the deletion has happened after i+1. 
+    ##              We can find another combination which is better. 
+    ##              Delete digit i and keep any other deletion.
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    class Solution:
+        def removeKdigits(self, num, k):
+            """
+            :type num: str
+            :type k: int
+            :rtype: str
+            """
+            length = len(num)
+            l = []
+            for i in range(length):
+                # delete the previous, if necessary
+                while len(l) != 0 and k > 0:
+                    if num[i] < l[-1]:
+                        del l[-1]
+                        k -= 1
+                    else: break
+    
+                if k == 0:
+                    l.append(num[i])
+                else:
+                    if i == length -1 or num[i] <= num[i+1]:
+                        l.append(num[i])
+                    else:
+                        # should delete digit i
+                        k -= 1
+    
+            # remove from the tail
+            while len(l) !=0 and k>0:
+                del l[-1]
+                k -= 1
+    
+            res = ''.join(l).lstrip('0')
+            if res == '': res ='0'
+            return res
+    
+    s = Solution()
+    print(s.removeKdigits("12", 1))

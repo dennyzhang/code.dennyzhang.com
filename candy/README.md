@@ -8,7 +8,6 @@ Candy
 ---
 
 Similar Problems:  
-
 -   Tag: [#greedy](https://brain.dennyzhang.com/tag/greedy)
 
 ---

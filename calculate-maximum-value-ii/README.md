@@ -19,7 +19,7 @@ Example
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/calculate-maximum-value-ii)  
 
-Credits To: [Lintcode.com](http://www.lintcode.com/en/problem/calculate-maximum-value-ii/)  
+Credits To: [LintCode.com](http://www.lintcode.com/en/problem/calculate-maximum-value-ii/)  
 
 Leave me comments, if you have better ways to solve.  
 

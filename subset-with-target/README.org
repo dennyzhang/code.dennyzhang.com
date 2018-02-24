@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, redo
+:type:     combination, redo, lintcode
 :END:
 ---------------------------------------------------------------------
 Subset With Target
@@ -33,7 +33,7 @@ Only subset [1],[2],[1,3],[1,2],[1,2,3] satisfy the condition, so the answer is 
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subset-with-target][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/subset-with-target/][Lintcode.com]]
+Credits To: [[url-external:http://www.lintcode.com/en/problem/subset-with-target/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 

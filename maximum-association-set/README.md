@@ -31,7 +31,7 @@ Example
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-association-set)  
 
-Credits To: [Lintcode.com](http://www.lintcode.com/en/problem/maximum-association-set/)  
+Credits To: [LintCode.com](http://www.lintcode.com/en/problem/maximum-association-set/)  
 
 Leave me comments, if you have better ways to solve.  
 

@@ -30,7 +30,7 @@ There is no time period, both users are online at the same time.
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/time-intersection)  
 
-Credits To: [Lintcode.com](http://www.lintcode.com/en/problem/time-intersection/)  
+Credits To: [LintCode.com](http://www.lintcode.com/en/problem/time-intersection/)  
 
 Leave me comments, if you have better ways to solve.  
 

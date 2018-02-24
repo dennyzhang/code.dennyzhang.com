@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, redo
+:type:     interval, redo, lintcode
 :END:
 ---------------------------------------------------------------------
 Time Intersection
@@ -28,7 +28,7 @@ There is no time period, both users are online at the same time.
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/time-intersection][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/time-intersection/][Lintcode.com]]
+Credits To: [[url-external:http://www.lintcode.com/en/problem/time-intersection/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 

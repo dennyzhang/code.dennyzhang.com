@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     string, lintcode
 :END:
 ---------------------------------------------------------------------
 Word Sorting
@@ -35,7 +35,7 @@ According to the new dictionary order, output the sorted result {zba,za,bca,ade,
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-sorting][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/word-sorting/][Lintcode.com]]
+Credits To: [[url-external:http://www.lintcode.com/en/problem/word-sorting/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 

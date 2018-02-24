@@ -31,7 +31,7 @@ Give array = [1,5,2,4,3], target = 4, return 2.
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subset-with-target)  
 
-Credits To: [Lintcode.com](http://www.lintcode.com/en/problem/subset-with-target/)  
+Credits To: [LintCode.com](http://www.lintcode.com/en/problem/subset-with-target/)  
 
 Leave me comments, if you have better ways to solve.  
 

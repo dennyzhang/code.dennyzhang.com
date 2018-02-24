@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming
+:type:     dynamicprogramming, lintcode
 :END:
 ---------------------------------------------------------------------
 Computer Maintenance
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 ---------------------------------------------------------------------
 A n*m matrix represents an array of computers, and give a list which represents the coordinate of the broken computer. Now we start with (0,0) and repair the computer. There are some request:
 1. You have to fix all the broken computers in the current line to get to the next line.
@@ -38,7 +38,7 @@ Starting from (0,0), go to (0,3) and fix 0, then go back to (0,0) to next line (
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/computer-maintenance][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/computer-maintenance/][lintcode.com]]
+Credits To: [[url-external:http://www.lintcode.com/en/problem/computer-maintenance/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 

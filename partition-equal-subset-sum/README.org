@@ -9,7 +9,7 @@ Partition Equal Subset Sum
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 ---------------------------------------------------------------------
 Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
 

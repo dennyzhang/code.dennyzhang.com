@@ -38,7 +38,7 @@ Example
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/movie-network)  
 
-Credits To: [Lintcode.com](http://www.lintcode.com/en/problem/movie-network/)  
+Credits To: [LintCode.com](http://www.lintcode.com/en/problem/movie-network/)  
 
 Leave me comments, if you have better ways to solve.  
 
