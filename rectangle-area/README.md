@@ -1,25 +1,59 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Rectangle Area     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Rectangle Area  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+
+-   Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Find the total area covered by two rectilinear rectangles in a 2D plane.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+[![img](//raw.githubusercontent.com/DennyZhang/images/master/code/rectangle_area.png)](Leetcode Rectangle Area)  
+
+Rectangle Area  
+Assume that the total area is never beyond the maximum possible value of int.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rectangle-area)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/rectangle-area/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/rectangle-area
+    ## Basic Ideas:
+    ##     width: min(C,G)-max(A,E)
+    ##     height: min(D, H)-max(B,F)
+    ##
+    ##     If width or height is not positive, they won't overlap
+    ##
+    ## Complexity: Time O(1), Space O(1)
+    class Solution:
+        def computeArea(self, A, B, C, D, E, F, G, H):
+            """
+            :type A: int
+            :type B: int
+            :type C: int
+            :type D: int
+            :type E: int
+            :type F: int
+            :type G: int
+            :type H: int
+            :rtype: int
+            """
+            area1 = abs(C-A)*abs(B-D)
+            area2 = abs(E-G)*abs(F-H)
+            w = min(C,G)-max(A,E)
+            h = min(D, H)-max(B,F)
+            if w<=0 or h<=0:
+                return area1 + area2
+            else:
+                return area1 + area2 - w*h
