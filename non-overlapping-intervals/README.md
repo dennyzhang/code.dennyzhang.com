@@ -7,6 +7,11 @@ Non-overlapping Intervals
 
 ---
 
+Similar Problems:  
+-   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
+
+---
+
 Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.  
 
 Note:  

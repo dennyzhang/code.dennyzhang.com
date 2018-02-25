@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Merge Intervals
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]]
+---------------------------------------------------------------------
 Given a collection of intervals, merge all overlapping intervals.
 
 #+BEGIN_EXAMPLE

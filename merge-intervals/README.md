@@ -7,6 +7,11 @@ Merge Intervals
 
 ---
 
+Similar Problems:  
+-   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
+
+---
+
 Given a collection of intervals, merge all overlapping intervals.  
 
     For example,

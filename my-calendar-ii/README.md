@@ -7,6 +7,11 @@ My Calendar II
 
 ---
 
+Similar Problems:  
+-   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
+
+---
+
 Implement a MyCalendarTwo class to store your events. A new event can be added if adding the event will not cause a triple booking.  
 
 Your class will have one method, book(int start, int end). Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start <= x < end.  

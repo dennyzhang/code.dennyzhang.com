@@ -8,7 +8,7 @@ Missing Ranges
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
 
 ---
 

@@ -8,7 +8,6 @@ Rectangle Area
 ---
 
 Similar Problems:  
-
 -   Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
 
 ---
@@ -17,7 +16,7 @@ Find the total area covered by two rectilinear rectangles in a 2D plane.
 
 Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.  
 
-[![img](//raw.githubusercontent.com/DennyZhang/images/master/code/rectangle_area.png)](Leetcode Rectangle Area)  
+![img](//raw.githubusercontent.com/DennyZhang/images/master/code/rectangle_area.png)  
 
 Rectangle Area  
 Assume that the total area is never beyond the maximum possible value of int.  
@@ -33,7 +32,7 @@ Leave me comments, if you have better ways to solve.
     ##     width: min(C,G)-max(A,E)
     ##     height: min(D, H)-max(B,F)
     ##
-    ##     If width or height is not positive, they won't overlap
+    ##     If width or height is not positive, they don't overlap
     ##
     ## Complexity: Time O(1), Space O(1)
     class Solution:

@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ##     width: min(C,G)-max(A,E)
 ##     height: min(D, H)-max(B,F)
 ##
-##     If width or height is not positive, they won't overlap
+##     If width or height is not positive, they don't overlap
 ##
 ## Complexity: Time O(1), Space O(1)
 class Solution:

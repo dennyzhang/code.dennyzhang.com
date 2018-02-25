@@ -7,6 +7,11 @@ Identity Employee Free Time
 
 ---
 
+Similar Problems:  
+-   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
+
+---
+
 We are given a list schedule of employees, which represents the working time for each employee.  
 
 Each employee has a list of non-overlapping Intervals, and these intervals are in sorted order.  
