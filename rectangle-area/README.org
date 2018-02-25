@@ -1,0 +1,31 @@
+* Leetcode: Rectangle Area                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     rectangle
+:END:
+---------------------------------------------------------------------
+Rectangle Area
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]]
+---------------------------------------------------------------------
+Find the total area covered by two rectilinear rectangles in a 2D plane.
+
+Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.
+
+[[image-blog:Leetcode Rectangle Area][https://raw.githubusercontent.com/DennyZhang/images/master/code/rectangle_area.png]]
+
+Rectangle Area
+Assume that the total area is never beyond the maximum possible value of int.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rectangle-area][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/rectangle-area/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/rectangle-area
+
+#+END_SRC
