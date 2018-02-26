@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, prime, dynamicprogramming
+:type:     math, prime, dynamicprogramming, sqrt
 :END:
 ---------------------------------------------------------------------
 Count Primes

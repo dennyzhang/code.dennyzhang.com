@@ -1,8 +1,8 @@
-* Leetcode: Valid Perfect Square                                              :BLOG:Amusing:
+* Leetcode: Valid Perfect Square                               :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     squarenumber, math, #binarysearch
+:type:     math, binarysearch, sqrt
 :END:
 ---------------------------------------------------------------------
 Valid Perfect Square

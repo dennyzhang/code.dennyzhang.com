@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     numbers, redo
+:type:     numbers, redo, sqrt
 :END:
 ---------------------------------------------------------------------
 numbers
@@ -18,8 +18,6 @@ Explanation: 28 = 1 + 2 + 4 + 7 + 14
 #+END_EXAMPLE
 
 Note: The input number n will not exceed 100,000,000. (1e8)
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/perfect-number][challenges-leetcode-interesting]]
 
