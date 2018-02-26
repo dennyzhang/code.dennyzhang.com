@@ -8,7 +8,8 @@ Maximum Distance in Arrays
 ---
 
 Similar Problems:  
-
+-   [Range Addition](https://brain.dennyzhang.com/range-addition)
+-   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
 -   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
 
 ---
@@ -26,7 +27,6 @@ Example 1:
     One way to reach the maximum distance 4 is to pick 1 in the first or third array and pick 5 in the second array.
 
 Note:  
-
 1.  Each given array will have at least 1 number. There will be at least two non-empty arrays.
 2.  The total number of the integers in all the m arrays will be in the range of [2, 10000].
 3.  The integers in the m arrays will be in the range of [-10000, 10000].
@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
                 min_v = min(min_v, arrays[i][0])
                 max_v = max(max_v, arrays[i][-1])
     
-            l1, l2 = , 
+            l1, l2 = [], []
             for i in range(length):
                 if arrays[i][0] == min_v: l1.append(i)
                 if arrays[i][-1] == max_v: l2.append(i)

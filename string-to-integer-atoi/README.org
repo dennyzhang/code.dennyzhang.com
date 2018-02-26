@@ -8,7 +8,7 @@
 String to Integer (atoi)
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]
+- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]]
 ---------------------------------------------------------------------
 Implement atoi to convert a string to an integer.
 

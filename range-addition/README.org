@@ -8,6 +8,7 @@
 Range Addition
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/maximum-distance-in-arrays][Maximum Distance in Arrays]]
 - Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Assume you have an array of length n initialized with all 0's and are given k update operations.

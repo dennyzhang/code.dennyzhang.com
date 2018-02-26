@@ -1,25 +1,30 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Word Break     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Word Break  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
 -   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. You may assume the dictionary does not contain duplicate words.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+For example, given  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+    s = "leetcode",
+    dict = ["leet", "code"].
+    
+    Return true because "leetcode" can be segmented as "leet code".
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-break)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/word-break/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/word-break

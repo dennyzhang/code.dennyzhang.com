@@ -8,7 +8,7 @@
 Permutations
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]
+- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]]
 ---------------------------------------------------------------------
 Given a collection of distinct numbers, return all possible permutations.
 

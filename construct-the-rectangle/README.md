@@ -37,3 +37,16 @@ Credits To: [leetcode.com](https://leetcode.com/problems/construct-the-rectangle
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/construct-the-rectangle
+    ## Basic Ideas:
+    ##
+    ## Complexity: Time O(sqrt(n)), Space O(1)
+    class Solution:
+        def constructRectangle(self, area):
+            """
+            :type area: int
+            :rtype: List[int]
+            """
+            import math
+            for num in range(int(math.sqrt(area)), 0, -1):
+                if area % num == 0:
+                    return [int(area/num), num]

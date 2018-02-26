@@ -9,7 +9,7 @@ One Edit Distance
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/edit-distance][Edit Distance]]
-- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]
+- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]]
 ---------------------------------------------------------------------
 Given two strings S and T, determine if they are both one edit distance apart.
 

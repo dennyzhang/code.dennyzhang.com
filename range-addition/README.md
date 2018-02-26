@@ -8,6 +8,7 @@ Range Addition
 ---
 
 Similar Problems:  
+-   [Maximum Distance in Arrays](https://brain.dennyzhang.com/maximum-distance-in-arrays)
 -   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
 ---

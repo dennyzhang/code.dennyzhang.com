@@ -8,7 +8,6 @@ Kill Process
 ---
 
 Similar Problems:  
-
 -   Tag: [#hashmap](https://brain.dennyzhang.com/tag/hashmap)
 
 ---
@@ -61,7 +60,7 @@ Leave me comments, if you have better ways to solve.
             :rtype: List[int]
             """
             import collections
-            d = collections.defaultdict(lambda: )
+            d = collections.defaultdict(lambda: [])
             for i in range(len(pid)):
                 p, q = pid[i], ppid[i]
                 d[q].append(p)

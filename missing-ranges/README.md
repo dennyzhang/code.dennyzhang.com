@@ -8,7 +8,7 @@ Missing Ranges
 ---
 
 Similar Problems:  
-
+-   [Meeting Rooms](https://brain.dennyzhang.com/meeting-rooms)
 -   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
 
 ---
@@ -35,7 +35,7 @@ Leave me comments, if you have better ways to solve.
             :type upper: int
             :rtype: List[str]
             """
-            l = 
+            l = []
             target = lower
             for num in nums:
                 if num > target:

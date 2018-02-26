@@ -8,7 +8,7 @@
 Kth Smallest Element in a BST
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]
+- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]]
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 

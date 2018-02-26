@@ -8,7 +8,7 @@ Permutations
 ---
 
 Similar Problems:  
--   Tag: [#classic](https://brain.dennyzhang.com/tag/classic)
+-   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic)
 
 ---
 
