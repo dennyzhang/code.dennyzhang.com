@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     manydetails, inspiring
 :END:
 ---------------------------------------------------------------------
 Maximum Distance in Arrays
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given m arrays, and each array is sorted in ascending order. Now you can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers a and b to be their absolute difference |a-b|. Your task is to find the maximum distance.
 
@@ -36,5 +36,38 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/maximum-distance-in-arrays
+## Basic Ideas:
+##     Get the global min and global max.
+##     If they happens in different rows, return directly.
+##     Otherwise, check other rows. Get four possibilities.
+##
+## Complexity: Time O(n). Space O(1). n = len(arrays)
+class Solution:
+    def maxDistance(self, arrays):
+        """
+        :type arrays: List[List[int]]
+        :rtype: int
+        """
+        length = len(arrays)
+        min_v, max_v = 10001, -10001
+        for i in range(length):
+            min_v = min(min_v, arrays[i][0])
+            max_v = max(max_v, arrays[i][-1])
 
+        l1, l2 = [], []
+        for i in range(length):
+            if arrays[i][0] == min_v: l1.append(i)
+            if arrays[i][-1] == max_v: l2.append(i)
+
+        if l1==l2 and len(l1) == 1:
+            k = l1[0]
+            max_distance = -1
+            for i in range(length):
+                if i == k: continue
+                max_distance = max(max_distance, abs(arrays[k][0]-arrays[i][0]), \
+                                    abs(arrays[k][0]-arrays[i][-1]), abs(arrays[k][-1]-arrays[i][0]), \
+                                    abs(arrays[k][-1]-arrays[i][-1]))
+        else:
+            max_distance = max_v-min_v
+        return max_distance
 #+END_SRC
