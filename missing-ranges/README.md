@@ -8,6 +8,7 @@ Missing Ranges
 ---
 
 Similar Problems:  
+
 -   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
 
 ---
@@ -23,3 +24,30 @@ Credits To: [leetcode.com](https://leetcode.com/problems/missing-ranges/descript
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/missing-ranges
+    ## Basic Ideas:
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    class Solution:
+        def findMissingRanges(self, nums, lower, upper):
+            """
+            :type nums: List[int]
+            :type lower: int
+            :type upper: int
+            :rtype: List[str]
+            """
+            l = 
+            target = lower
+            for num in nums:
+                if num > target:
+                    if num == target + 1:
+                        l.append(str(target))
+                    else:
+                        l.append("%s->%s" % (target, num-1))
+                target = num + 1
+    
+            if target <= upper:
+                if target == upper:
+                    l.append(str(target))
+                else:
+                    l.append("%s->%s" % (target, upper))
+            return l

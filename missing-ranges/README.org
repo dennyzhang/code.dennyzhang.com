@@ -1,4 +1,4 @@
-* Leetcode: Missing Ranges                                              :BLOG:Basic:
+* Leetcode: Missing Ranges                                       :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -8,6 +8,7 @@
 Missing Ranges
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/meeting-rooms][Meeting Rooms]]
 - [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]]
 ---------------------------------------------------------------------
 Given a sorted integer array where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
@@ -22,5 +23,31 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/missing-ranges
+## Basic Ideas:
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def findMissingRanges(self, nums, lower, upper):
+        """
+        :type nums: List[int]
+        :type lower: int
+        :type upper: int
+        :rtype: List[str]
+        """
+        l = []
+        target = lower
+        for num in nums:
+            if num > target:
+                if num == target + 1:
+                    l.append(str(target))
+                else:
+                    l.append("%s->%s" % (target, num-1))
+            target = num + 1
 
+        if target <= upper:
+            if target == upper:
+                l.append(str(target))
+            else:
+                l.append("%s->%s" % (target, upper))
+        return l
 #+END_SRC
