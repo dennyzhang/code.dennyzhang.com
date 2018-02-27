@@ -1,4 +1,4 @@
-* Leetcode: Sort Colors                                         :BLOG:Numbers:
+* Leetcode: Sort Colors                                          :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -13,8 +13,6 @@ Similar Problems:
 Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
 
 Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-colors][challenges-leetcode-interesting]]
 

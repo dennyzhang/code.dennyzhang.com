@@ -1,4 +1,4 @@
-* Leetcode: Find All Duplicates in an Array                      :BLOG:Numbers:
+* Leetcode: Find All Duplicates in an Array                    :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
