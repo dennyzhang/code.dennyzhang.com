@@ -1,4 +1,4 @@
-# Leetcode: Sort Colors     :BLOG:Numbers:
+# Leetcode: Sort Colors     :BLOG:Basic:
 
 
 ---
@@ -8,7 +8,7 @@ Array is composed by only 3 types of elements. Sort it fast.
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
 
 ---
 

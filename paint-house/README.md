@@ -9,7 +9,7 @@ Paint House
 
 Similar Problems:  
 -   [Paint Fence](https://brain.dennyzhang.com/paint-fence)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

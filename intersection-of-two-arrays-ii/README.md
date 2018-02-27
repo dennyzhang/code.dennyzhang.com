@@ -1,20 +1,30 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Intersection of Two Arrays II     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Intersection of Two Arrays II  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given two arrays, write a function to compute their intersection.  
+
+Example:  
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].  
+
+Note:  
+-   Each element in the result should appear as many times as it shows in both arrays.
+-   The result can be in any order.
+
+Follow up:  
+-   What if the given array is already sorted? How would you optimize your algorithm?
+-   What if nums1's size is small compared to nums2's size? Which algorithm is better?
+-   What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/intersection-of-two-arrays-ii)  
 

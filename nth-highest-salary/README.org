@@ -8,7 +8,7 @@
 Nth Highest Salary
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Write a SQL query to get the nth highest salary from the Employee table.
 #+BEGIN_EXAMPLE

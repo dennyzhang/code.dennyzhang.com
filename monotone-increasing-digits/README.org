@@ -9,7 +9,7 @@ Monotone Increasing Digits
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/remove-k-digits][Remove K Digits]]
-- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]]
+- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]], [[https://brain.dennyzhang.com/tag/greedy][Tag: #greedy]]
 ---------------------------------------------------------------------
 Given a non-negative integer N, find the largest number that is less than or equal to N with monotone increasing digits.
 

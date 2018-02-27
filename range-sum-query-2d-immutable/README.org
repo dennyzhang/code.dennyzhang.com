@@ -1,11 +1,15 @@
-* Leetcode: Range Sum Query 2D - Immutable                                              :BLOG:Medium:
+* Leetcode: Range Sum Query 2D - Immutable                      :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, inspiring
+:type:     oodesign, inspiring, concurrency
 :END:
 ---------------------------------------------------------------------
 Range Sum Query 2D - Immutable
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://brain.dennyzhang.com/tag/concurrency][#concurrency]]
+- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
 

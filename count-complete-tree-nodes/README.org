@@ -8,7 +8,7 @@
 Count Complete Tree Nodes
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]]
+- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
 ---------------------------------------------------------------------
 Given a complete binary tree, count the number of nodes.
 

@@ -1,20 +1,30 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Base 7     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Base 7  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an integer, return its base 7 string representation.  
+
+Example 1:  
+
+    Input: 100
+    Output: "202"
+
+Example 2:  
+
+    Input: -7
+    Output: "-10"
+
+Note: The input will be in range of [-1e7, 1e7].  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/base-7)  
 

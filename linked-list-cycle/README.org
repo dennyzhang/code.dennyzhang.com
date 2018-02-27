@@ -8,7 +8,7 @@
 Linked List Cycle
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given a linked list, determine if it has a cycle in it.
 

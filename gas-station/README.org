@@ -8,7 +8,7 @@
 Gas Station
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]]
+- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]], [[https://brain.dennyzhang.com/tag/greedy][Tag: #greedy]]
 ---------------------------------------------------------------------
 There are N gas stations along a circular route, where the amount of gas at station i is gas[i].
 

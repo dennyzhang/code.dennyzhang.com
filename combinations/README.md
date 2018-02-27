@@ -8,7 +8,7 @@ Given two integers n and k, return all possible combinations of k numbers out of
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
 
 ---
 

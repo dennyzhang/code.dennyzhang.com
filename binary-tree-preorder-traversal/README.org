@@ -8,7 +8,7 @@
 Binary Tree Preorder Traversal
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]]
+- [[https://brain.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://brain.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
 ---------------------------------------------------------------------
 Given a binary tree, return the preorder traversal of its nodes' values.
 #+BEGIN_EXAMPLE

@@ -11,7 +11,7 @@ Similar Problems:
 - [[https://brain.dennyzhang.com/single-number][Single Number]]
 - [[https://brain.dennyzhang.com/single-number-ii][Single Number II]]
 - [[https://brain.dennyzhang.com/single-number-iii][Single Number III]]
-- [[https://brain.dennyzhang.com/review-binary-search][Review: Binary Search Problems]]
+- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]], [[https://brain.dennyzhang.com/tag/binarysearch][Tag: #binarysearch]]
 ---------------------------------------------------------------------
 Give an array, all the numbers appear twice except one number which appears once and all the numbers which appear twice are next to each other. Find the number which appears once.
 

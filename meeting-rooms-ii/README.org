@@ -9,7 +9,7 @@ Meeting Rooms II
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/meeting-rooms][Meeting Rooms]]
-- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]]
+- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://brain.dennyzhang.com/tag/interval][Tag: #interval]]
 ---------------------------------------------------------------------
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.
 

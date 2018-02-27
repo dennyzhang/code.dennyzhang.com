@@ -1,18 +1,42 @@
-* Leetcode: Template                                              :BLOG:Basic:
+* Leetcode: Fizz Buzz                                              :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     misc
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Fizz Buzz
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Write a program that outputs the string representation of numbers from 1 to n.
+
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+
+Example:
+#+BEGIN_EXAMPLE
+n = 15,
+
+Return:
+[
+    "1",
+    "2",
+    "Fizz",
+    "4",
+    "Buzz",
+    "Fizz",
+    "7",
+    "8",
+    "Fizz",
+    "Buzz",
+    "11",
+    "Fizz",
+    "13",
+    "14",
+    "FizzBuzz"
+]
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/fizz-buzz][challenges-leetcode-interesting]]
 

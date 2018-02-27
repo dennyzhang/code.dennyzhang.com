@@ -8,7 +8,7 @@
 Top K Frequent Elements
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-heap][Review: Heap Problems]]
+- [[https://brain.dennyzhang.com/review-heap][Review: Heap Problems]], [[https://brain.dennyzhang.com/tag/heap][Tag: #heap]]
 - Tag: [[https://brain.dennyzhang.com/tag/topk][topk]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the k most frequent elements.

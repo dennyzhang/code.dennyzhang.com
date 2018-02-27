@@ -9,7 +9,7 @@ Generalized Abbreviation
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Write a function to generate the generalized abbreviations of a word.
 

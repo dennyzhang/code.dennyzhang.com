@@ -8,7 +8,7 @@
 Department Top Three Salaries
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees. Every employee has an Id, and there is also a column for the department Id.
 #+BEGIN_EXAMPLE

@@ -8,7 +8,7 @@ Is Graph Bipartite?
 ---
 
 Similar Problems:  
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs)
+-   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
 -   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
 ---

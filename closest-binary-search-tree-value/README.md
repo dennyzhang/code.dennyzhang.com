@@ -9,8 +9,8 @@ Closest Binary Search Tree Value
 
 Similar Problems:  
 -   [Closest Binary Search Tree Value II](https://brain.dennyzhang.com/closest-binary-search-tree-value-ii)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree)
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
+-   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
 
 ---
 

@@ -8,7 +8,7 @@
 Big Countries
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 There is a table World
 #+BEGIN_EXAMPLE

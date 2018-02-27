@@ -9,7 +9,7 @@ Friend Requests I: Overall Acceptance Rate
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/friend-requests-ii-who-has-the-most-friends][Friend Requests II: Who Has the Most Friends]]
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 In social network like Facebook or Twitter, people send friend requests and accept others’ requests as well. Now given two tables as below:
 Table: friend_request

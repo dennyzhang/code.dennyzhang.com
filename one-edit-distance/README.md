@@ -9,7 +9,7 @@ One Edit Distance
 
 Similar Problems:  
 -   [Edit Distance](https://brain.dennyzhang.com/edit-distance)
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic)
+-   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
 
 ---
 

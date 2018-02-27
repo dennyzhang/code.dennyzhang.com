@@ -9,7 +9,7 @@ Given a binary tree, determine if it is height-balanced
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/count-complete-tree-nodes][Count Complete Tree Nodes]]
-- [[https://brain.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]]
+- [[https://brain.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://brain.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
 ---------------------------------------------------------------------
 
 Given a binary tree, determine if it is height-balanced.

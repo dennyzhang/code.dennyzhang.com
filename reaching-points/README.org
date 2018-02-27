@@ -8,7 +8,7 @@
 Reaching Points
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]]
+- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
 ---------------------------------------------------------------------
 A move consists of taking a point (x, y) and transforming it to either (x, x+y) or (x+y, y).
 

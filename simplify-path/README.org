@@ -8,7 +8,7 @@
 Simplify Path
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]]
+- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://brain.dennyzhang.com/tag/classic][Tag: #classic]]
 ---------------------------------------------------------------------
 Given an absolute path for a file (Unix-style), simplify it.
 

@@ -9,7 +9,7 @@ Friend Requests II: Who Has the Most Friends
 
 Similar Problems:  
 -   [Friend Requests I: Overall Acceptance Rate](https://brain.dennyzhang.com/friend-requests-i-overall-acceptance-rate)
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
+-   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
 
 ---
 

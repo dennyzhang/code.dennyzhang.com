@@ -1,20 +1,40 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Degree of an Array     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Degree of an Array  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
 -   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.  
+
+Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums.  
+
+Example 1:  
+
+    Input: [1, 2, 2, 3, 1]
+    Output: 2
+    Explanation: 
+    The input array has a degree of 2 because both elements 1 and 2 appear twice.
+    Of the subarrays that have the same degree:
+    [1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]
+    The shortest length is 2. So return 2.
+
+Example 2:  
+
+    Input: [1,2,2,3,1,4,2]
+    Output: 6
+
+Note:  
+
+-   nums.length will be between 1 and 50,000.
+-   nums[i] will be an integer between 0 and 49,999.
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/degree-of-an-array)  
 

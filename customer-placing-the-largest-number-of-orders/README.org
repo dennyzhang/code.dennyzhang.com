@@ -8,7 +8,7 @@
 Customer Placing the Largest Number of Orders
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Query the customer_number from the orders table for the customer who has placed the largest number of orders.
 

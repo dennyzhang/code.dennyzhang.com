@@ -1,20 +1,29 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Find Peak Element     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Find Peak Element  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+A peak element is an element that is greater than its neighbors.  
+
+Given an input array where num[i] != num[i+1], find a peak element and return its index.  
+
+The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.  
+
+You may imagine that num[-1] = num[n] = -∞.  
+
+For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.  
+
+Note:  
+Your solution should be in logarithmic complexity.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-peak-element)  
 

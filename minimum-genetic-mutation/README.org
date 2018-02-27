@@ -10,7 +10,7 @@ Minimum Genetic Mutation
 Similar Problems:
 - [[https://brain.dennyzhang.com/word-ladder][Word Ladder]]
 - [[https://brain.dennyzhang.com/open-the-lock][Open the Lock]]
-- [[https://brain.dennyzhang.com/review-bfs][Review: BFS Problems]]
+- [[https://brain.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://brain.dennyzhang.com/tag/bfs][Tag: #bfs]]
 ---------------------------------------------------------------------
 A gene string can be represented by an 8-character long string, with choices from "A", "C", "G", "T".
 

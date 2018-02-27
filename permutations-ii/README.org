@@ -8,7 +8,7 @@
 Permutations II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 #+BEGIN_EXAMPLE

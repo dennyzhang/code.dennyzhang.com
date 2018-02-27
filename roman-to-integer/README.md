@@ -1,20 +1,20 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Roman to Integer     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Roman to Integer  
 
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a roman numeral, convert it to an integer.  
+
+Input is guaranteed to be within the range from 1 to 3999.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/roman-to-integer)  
 

@@ -9,7 +9,7 @@ K-diff Pairs in an Array
 
 Similar Problems:  
 -   [3Sum](https://brain.dennyzhang.com/3sum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
 
 ---
 

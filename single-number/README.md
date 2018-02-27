@@ -1,4 +1,4 @@
-# Leetcode: Single Number     :BLOG:Easy:
+# Leetcode: Single Number     :BLOG:Basic:
 
 
 ---

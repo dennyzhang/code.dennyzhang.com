@@ -8,7 +8,7 @@
 Median Employee Salary
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary.
 #+BEGIN_EXAMPLE

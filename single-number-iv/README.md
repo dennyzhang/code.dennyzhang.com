@@ -11,7 +11,7 @@ Similar Problems:
 -   [Single Number](https://brain.dennyzhang.com/single-number)
 -   [Single Number II](https://brain.dennyzhang.com/single-number-ii)
 -   [Single Number III](https://brain.dennyzhang.com/single-number-iii)
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binary-search)
+-   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch), [Tag: #binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
 
 ---
 

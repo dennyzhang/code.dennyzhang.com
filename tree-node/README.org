@@ -8,7 +8,7 @@
 Tree Node
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Given a table tree, id is identifier of the tree node and p_id is its parent node's id.
 #+BEGIN_EXAMPLE

@@ -8,7 +8,7 @@ Path Sum III
 ---
 
 Similar Problems:  
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
 
 ---
 

@@ -1,4 +1,4 @@
-# Leetcode: Find All Numbers Disappeared in an Array     :BLOG:Numbers:
+# Leetcode: Find All Numbers Disappeared in an Array     :BLOG:Basic:
 
 
 ---

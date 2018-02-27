@@ -9,7 +9,7 @@ Remove K Digits
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/monotone-increasing-digits][Monotone Increasing Digits]]
-- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]]
+- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]], [[https://brain.dennyzhang.com/tag/greedy][Tag: #greedy]]
 ---------------------------------------------------------------------
 Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
 

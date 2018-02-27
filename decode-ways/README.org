@@ -8,7 +8,7 @@
 Decode Ways
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 A message containing letters from A-Z is being encoded to numbers using the following mapping:
 #+BEGIN_EXAMPLE

@@ -8,7 +8,7 @@
 Find Median Given Frequency of Numbers
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 The Numbers table keeps the value of number and its frequency.
 #+BEGIN_EXAMPLE

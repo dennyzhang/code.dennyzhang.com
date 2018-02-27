@@ -1,4 +1,4 @@
-# Leetcode: Rotate Image     :BLOG:Matrix:
+# Leetcode: Rotate Image     :BLOG:Basic:
 
 
 ---

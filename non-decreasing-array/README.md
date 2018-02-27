@@ -1,4 +1,4 @@
-# Leetcode: Non-decreasing Array     :BLOG:Numbers:
+# Leetcode: Non-decreasing Array     :BLOG:Basic:
 
 
 ---

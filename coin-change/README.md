@@ -8,9 +8,9 @@ Coin Change
 ---
 
 Similar Problems:  
-
 -   [Perfect Squares](https://brain.dennyzhang.com/perfect-squares)
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic)
+-   [Coin Change 2](https://brain.dennyzhang.com/coin-change-2)
+-   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
 
 ---
 

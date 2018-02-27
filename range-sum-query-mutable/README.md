@@ -7,6 +7,11 @@ Range Sum Query - Mutable
 
 ---
 
+Similar Problems:  
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.  
 
 The update(i, val) function modifies nums by updating the element at index i to val.  

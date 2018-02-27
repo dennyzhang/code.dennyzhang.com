@@ -9,7 +9,7 @@ Combination Sum
 
 Similar Problems:  
 -   [LintCode: Subset With Target](https://brain.dennyzhang.com/subset-with-target)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
 -   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
 
 ---

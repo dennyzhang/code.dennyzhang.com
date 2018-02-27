@@ -1,4 +1,4 @@
-# Leetcode: Two Sum     :BLOG:Numbers:
+# Leetcode: Two Sum     :BLOG:Basic:
 
 
 ---
@@ -8,7 +8,7 @@ Pic 2 numbers to get the target sum.
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
 
 ---
 

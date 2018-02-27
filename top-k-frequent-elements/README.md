@@ -8,7 +8,7 @@ Top K Frequent Elements
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap)
+-   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap), [Tag: #heap](https://brain.dennyzhang.com/tag/heap)
 -   Tag: [topk](https://brain.dennyzhang.com/tag/topk)
 
 ---

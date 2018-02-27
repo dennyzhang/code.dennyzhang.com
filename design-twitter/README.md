@@ -8,7 +8,7 @@ Design Twitter
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap)
+-   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap), [Tag: #heap](https://brain.dennyzhang.com/tag/heap)
 -   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---

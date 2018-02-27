@@ -9,8 +9,8 @@ Letter Case Permutation
 
 Similar Problems:  
 -   [Generalized Abbreviation](https://brain.dennyzhang.com/generalized-abbreviation)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
+-   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
 
 ---
 
