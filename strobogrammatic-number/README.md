@@ -9,7 +9,7 @@ Strobogrammatic Number
 
 Similar Problems:  
 -   [Reconstruct Original Digits from English](https://brain.dennyzhang.com/reconstruct-original-digits-from-english)
--   Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 

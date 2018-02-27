@@ -8,7 +8,7 @@ Word Sorting
 ---
 
 Similar Problems:  
--   Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 

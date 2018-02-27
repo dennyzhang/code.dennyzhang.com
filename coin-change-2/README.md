@@ -9,7 +9,7 @@ Coin Change 2
 
 Similar Problems:  
 -   [Coin Change](https://brain.dennyzhang.com/coin-change)
--   Tag: [#knapsack](https://brain.dennyzhang.com/tag/knapsack)
+-   [Review: Knapsack Problems](https://brain.dennyzhang.com/review-knapsack), [Tag: #knapsack](https://brain.dennyzhang.com/tag/knapsack)
 
 ---
 

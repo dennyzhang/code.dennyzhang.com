@@ -7,6 +7,12 @@ Range Sum Query 2D - Immutable
 
 ---
 
+Similar Problems:  
+-   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).  
 
 Range Sum Query 2D  

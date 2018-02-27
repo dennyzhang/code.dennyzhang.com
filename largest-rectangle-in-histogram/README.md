@@ -10,7 +10,7 @@ Largest Rectangle in Histogram
 Similar Problems:  
 -   [Leetcode: Maximal Rectangle](https://brain.dennyzhang.com/maximal-rectangle)
 -   Tag: [monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
--   Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
+-   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
 
 ---
 

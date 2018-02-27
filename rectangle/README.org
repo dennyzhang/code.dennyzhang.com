@@ -8,7 +8,7 @@
 Rectangle
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]]
+- [[https://brain.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Give a set, if you can find four points that make up a rectangle that is parallel to the coordinate axis and outputs YES or NO.
 
@@ -16,14 +16,19 @@ Give a set, if you can find four points that make up a rectangle that is paralle
 The number of points in the set is less than 2000, and the coordinate range is [-10000000,10000000].
 Have you met this question in a real interview? 
 Example
+#+BEGIN_EXAMPLE
 Given set = [[0,0],[0,1],[1,1],[1,0]], return YES.
 
 Explanation:
 We can find four points that make up a rectangle which is parallel to the coordinate axis.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
 Given set = [[0,0],[0,1],[1,1],[2,0]], return NO.
 
 Explanation:
 We can not find four points that meet the conditions
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rectangle][challenges-leetcode-interesting]]
 
@@ -32,7 +37,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/rectangle/][LintCo
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/example
+## Blog link: https://brain.dennyzhang.com/rectangle
 #!/usr/bin/env python
 """
 class Point:

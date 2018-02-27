@@ -1,4 +1,4 @@
-* Leetcode: Distribute Candies                                              :BLOG:Basic:
+* Leetcode: Distribute Candies                                   :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

@@ -7,6 +7,12 @@ Range Sum Query - Immutable
 
 ---
 
+Similar Problems:  
+-   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
+-   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.  
 
     Example:

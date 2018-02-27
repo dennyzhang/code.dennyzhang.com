@@ -30,7 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/word-pattern/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/merge-sorted-array
+## Blog link: https://brain.dennyzhang.com/word-pattern
 ## Basic Ideas: hasmap + set
 ##
 ## Complexity: Time O(n), Space O(n)

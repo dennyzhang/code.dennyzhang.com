@@ -9,7 +9,7 @@ Word Pattern II
 
 Similar Problems:  
 -   [Word Pattern](https://brain.dennyzhang.com/word-pattern)
--   Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 

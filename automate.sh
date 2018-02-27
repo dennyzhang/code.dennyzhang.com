@@ -13,7 +13,7 @@ function refresh_link() {
     echo "refresh link"
     for f in $(ls -1t */README.org); do
         dirname=$(basename $(dirname $f))
-        if ! grep "brain.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
+        if ! grep "Blog link: https:\/\/brain.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update blog url for $f"
             sed -ie "s/Blog link: https:\/\/brain.dennyzhang.com\/.*/Blog link: https:\/\/brain.dennyzhang.com\/$dirname/g" $f
             rm -rf $dirname/README.orge
