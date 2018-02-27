@@ -1,8 +1,8 @@
-* Leetcode: Excel Sheet Column Number                                              :BLOG:Basic:
+* Leetcode: Excel Sheet Column Number                            :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     conversion, encoding
+:type:     baseconversion
 :END:
 ---------------------------------------------------------------------
 Excel Sheet Column Number

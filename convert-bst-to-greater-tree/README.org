@@ -1,8 +1,8 @@
-* Leetcode: Convert BST to Greater Tree                                   :BLOG:Basic:
+* Leetcode: Convert BST to Greater Tree                          :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, conversion
+:type:     binarytree
 :END:
 ---------------------------------------------------------------------
 Tree traversal: right, middle, left

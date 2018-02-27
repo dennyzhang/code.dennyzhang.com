@@ -1,11 +1,14 @@
-* Leetcode: 4Sum II                                              :BLOG:Medium:
+* Leetcode: 4Sum II                                             :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twosum, redo
+:type:     twopointer, redo
 :END:
 ---------------------------------------------------------------------
 4Sum II
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
 

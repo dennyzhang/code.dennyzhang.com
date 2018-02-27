@@ -2,15 +2,19 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, concurrency
+:type:     oodesign, concurrency, classic, segmenttree
 :END:
 ---------------------------------------------------------------------
 Range Sum Query - Mutable
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/range-addition][Range Addition]]
+- [[https://brain.dennyzhang.com/review-segmenttree][Review: Segment Tree Problems]], Tag: [[https://brain.dennyzhang.com/tag/segmenttree][#segmenttree]]
 - [[https://brain.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://brain.dennyzhang.com/tag/concurrency][#concurrency]]
 - Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
+Related Reading: [[url-external:https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]
+
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.
 
 The update(i, val) function modifies nums by updating the element at index i to val.
@@ -25,6 +29,12 @@ sumRange(0, 2) -> 8
 Note:
 - The array is only modifiable by the update function.
 - You may assume the number of calls to update and sumRange function is distributed evenly.
+
+#+BEGIN_EXAMPLE
+What if, update and sumRange function is not distributed evenly? 
+
+Let's say, the ratio of update_count/sumRange_count is 10000 or 0.0001?
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-mutable][challenges-leetcode-interesting]]
 

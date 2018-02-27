@@ -7,6 +7,11 @@ Sum of Square Numbers
 
 ---
 
+Similar Problems:  
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+
+---
+
 Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a\*a + b\*b = c.  
 
     Example 1:

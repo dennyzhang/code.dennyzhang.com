@@ -1,11 +1,14 @@
-* Leetcode: Sum of Square Numbers                                              :BLOG:Medium:
+* Leetcode: Sum of Square Numbers                               :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twosum, math, sqrt
+:type:     twopointer, math, sqrt
 :END:
 ---------------------------------------------------------------------
 Sum of Square Numbers
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a*a + b*b = c.
 #+BEGIN_EXAMPLE

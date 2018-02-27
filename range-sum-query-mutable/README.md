@@ -8,10 +8,14 @@ Range Sum Query - Mutable
 ---
 
 Similar Problems:  
+-   [Range Addition](https://brain.dennyzhang.com/range-addition)
+-   [Review: Segment Tree Problems](https://brain.dennyzhang.com/review-segmenttree), Tag: [#segmenttree](https://brain.dennyzhang.com/tag/segmenttree)
 -   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
 -   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
+
+Related Reading: [Segment Tree by geeksforgeeks.org](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)  
 
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.  
 
@@ -27,6 +31,10 @@ The update(i, val) function modifies nums by updating the element at index i to 
 Note:  
 -   The array is only modifiable by the update function.
 -   You may assume the number of calls to update and sumRange function is distributed evenly.
+
+    What if, update and sumRange function is not distributed evenly? 
+    
+    Let's say, the ratio of update_count/sumRange_count is 10000 or 0.0001?
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-mutable)  
 

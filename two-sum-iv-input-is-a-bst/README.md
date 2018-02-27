@@ -7,6 +7,11 @@ Two Sum IV - Input is a BST
 
 ---
 
+Similar Problems:  
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+
+---
+
 Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.  
 
     Example 1:

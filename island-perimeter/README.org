@@ -1,4 +1,4 @@
-* Leetcode: Island Perimeter                                     :BLOG:Medium:
+* Leetcode: Island Perimeter                                    :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

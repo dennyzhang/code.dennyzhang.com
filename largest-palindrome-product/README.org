@@ -1,4 +1,4 @@
-* Leetcode: Largest Palindrome Product                                              :BLOG:Medium:
+* Leetcode: Largest Palindrome Product                          :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

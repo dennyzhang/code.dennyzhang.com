@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twosum
+:type:     twopointer
 :END:
 ---------------------------------------------------------------------
 Modified version of Two Sum problem
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
 
