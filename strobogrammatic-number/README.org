@@ -9,7 +9,7 @@ Strobogrammatic Number
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/reconstruct-original-digits-from-english][Reconstruct Original Digits from English]]
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
 

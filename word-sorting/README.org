@@ -8,7 +8,7 @@
 Word Sorting
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Give a new alphabet, such as {c,b,a,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}. Sort the string array according to the new alphabet
 

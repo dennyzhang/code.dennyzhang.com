@@ -8,7 +8,7 @@
 Implement strStr()
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Implement strStr().
 

@@ -8,7 +8,7 @@
 Custom Sort String
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 S and T are strings composed of lowercase letters. In S, no letter occurs more than once.
 

@@ -9,7 +9,7 @@ Word Pattern II
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/word-pattern][Word Pattern]]
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given a pattern and a string str, find if str follows the same pattern.
 
