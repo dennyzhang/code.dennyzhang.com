@@ -8,6 +8,7 @@ Longest Palindromic Substring
 ---
 
 Similar Problems:  
+-   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
 -   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
 
 ---

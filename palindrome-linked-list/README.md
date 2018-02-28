@@ -7,6 +7,11 @@ Palindrome Linked List
 
 ---
 
+Similar Problems:  
+-   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+
+---
+
 Given a singly linked list, determine if it is a palindrome.  
 
 Follow up:  

@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Determine whether an integer is a palindrome. Do this without extra space.
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
+---------------------------------------------------------------------
 Determine whether an integer is a palindrome. Do this without extra space.
 
 Some hints:

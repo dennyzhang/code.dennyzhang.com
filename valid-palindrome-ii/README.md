@@ -7,6 +7,12 @@ Valid Palindrome II
 
 ---
 
+Similar Problems:  
+
+-   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+
+---
+
 Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.  
 
     Example 1:
@@ -28,10 +34,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/des
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/valid-palindrome-ii
-    ## Basic Ideas:
-    ##      Two pointers: one from left to right, another from right to left
-    ##      If the value is different, we could either delete the left one or delete the right one
-    ##      Then the remaining should be a Palindrome
+    ## Basic Ideas: If mismatched, we can only delete either the left or the right
+    ##
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def validPalindrome(self, s):
@@ -39,22 +43,23 @@ Leave me comments, if you have better ways to solve.
             :type s: str
             :rtype: bool
             """
-            start, end = 0, len(s) - 1
-            while start < end:
-                if s[start] != s[end]:
-                    if self.isPalindrome(s, start+1, end):
-                        # delete the left
-                        return True
-                    else:
-                        return self.isPalindrome(s, start, end-1)
-                start += 1
-                end -= 1
+            if self.isPalindrome(s): return True
+            l, r = 0, len(s)-1
+            while l<r:
+                if s[l]!=s[r]:
+                    # keep right
+                    if self.isPalindrome(s[l+1:r+1]): return True
+                    # keep left
+                    if self.isPalindrome(s[l:r]): return True
+                    return False
+                l,r = l+1, r-1
             return True
     
-        def isPalindrome(self, s, start, end):
-            while start < end:
-                if s[start] != s[end]:
-                    return False
-                start += 1
-                end -= 1
+        def isPalindrome(self, s):
+            length = len(s)
+            if length == 0: return True
+            l, r = 0, length-1
+            while l<r:
+                if s[l]!=s[r]: return False
+                l, r = l+1, r-1
             return True

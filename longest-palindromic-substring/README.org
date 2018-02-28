@@ -8,6 +8,7 @@
 Longest Palindromic Substring
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
 - Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.

@@ -7,6 +7,11 @@ Determine whether an integer is a palindrome. Do this without extra space.
 
 ---
 
+Similar Problems:  
+-   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+
+---
+
 Determine whether an integer is a palindrome. Do this without extra space.  
 
 Some hints:  

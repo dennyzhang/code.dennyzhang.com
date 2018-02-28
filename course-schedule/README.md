@@ -28,8 +28,8 @@ Note:
 2.  You may assume that there are no duplicate edges in the input prerequisites.
 
 Hints:  
-1.  This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
-2.  Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
+1.  This problem is equivalent to finding if a cycle exists in a directed graph.
+2.  Topological Sort via DFS
 3.  Topological sort could also be done via BFS.
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/course-schedule)  

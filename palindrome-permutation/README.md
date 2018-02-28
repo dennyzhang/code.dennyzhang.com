@@ -8,7 +8,7 @@ Palindrome Permutation
 ---
 
 Similar Problems:  
--   Tag: [#palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
 
 ---
 

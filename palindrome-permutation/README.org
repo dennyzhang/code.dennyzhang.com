@@ -8,7 +8,7 @@
 Palindrome Permutation
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/palindrome][#palindrome]]
+- [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
 ---------------------------------------------------------------------
 Given a string, determine if a permutation of the string could form a palindrome.
 
