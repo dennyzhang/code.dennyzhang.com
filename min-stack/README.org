@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign
+:type:     oodesign, inspiring
 :END:
 ---------------------------------------------------------------------
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.

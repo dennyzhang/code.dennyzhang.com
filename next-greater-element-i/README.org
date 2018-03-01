@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     monotonestack
+:type:     monotone
 :END:
 ---------------------------------------------------------------------
 Next Greater Element I
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/daily-temperatures][Leetcode: Daily Temperatures]]
-- Tag: [[https://brain.dennyzhang.com/tag/monotonestack][monotonestack]]
+- Tag: [[https://brain.dennyzhang.com/tag/monotone][monotone]]
 ---------------------------------------------------------------------
 You are given two arrays (without duplicates) nums1 and nums2 where nums1's elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 

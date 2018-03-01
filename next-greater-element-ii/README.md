@@ -9,7 +9,7 @@ Next Greater Element II
 
 Similar Problems:  
 -   [Leetcode: Leetcode: Next Greater Element I](https://brain.dennyzhang.com/next-greater-element-i)
--   Tag: [monotonestack](https://brain.dennyzhang.com/tag/monotonestack)
+-   Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
 
 ---
 

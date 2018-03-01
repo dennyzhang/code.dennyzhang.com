@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     monotonestack, inspiring, codetemplate, classic
+:type:     monotone, inspiring, codetemplate, classic
 :END:
 ---------------------------------------------------------------------
 Daily Temperatures
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
-- Tag: [[https://brain.dennyzhang.com/tag/monotonestack][monotonestack]]
+- Tag: [[https://brain.dennyzhang.com/tag/monotone][monotone]]
 ---------------------------------------------------------------------
 Given a list of daily temperatures, produce a list that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
 
