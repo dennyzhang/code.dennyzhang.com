@@ -9,7 +9,7 @@ Range Sum Query - Immutable
 
 Similar Problems:  
 -   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
--   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

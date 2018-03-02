@@ -8,7 +8,7 @@ Shuffle an Array
 ---
 
 Similar Problems:  
--   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

@@ -7,6 +7,11 @@ Peeking Iterator
 
 ---
 
+Similar Problems:  
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation &#x2013; it essentially peek() at the element that will be returned by the next call to next().  
 
 Here is an example. Assume that the iterator is initialized to the beginning of the list: [1, 2, 3].  

@@ -11,7 +11,7 @@ Similar Problems:
 -   [Range Addition](https://brain.dennyzhang.com/range-addition)
 -   [Review: Segment Tree Problems](https://brain.dennyzhang.com/review-segmenttree), Tag: [#segmenttree](https://brain.dennyzhang.com/tag/segmenttree)
 -   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
--   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

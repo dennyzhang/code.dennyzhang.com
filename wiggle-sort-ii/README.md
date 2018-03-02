@@ -1,23 +1,34 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Wiggle Sort II     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Wiggle Sort II  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Wiggle Sort](https://brain.dennyzhang.com/wiggle-sort)
+-   [Tag: #wigglesort](https://brain.dennyzhang.com/tag/wigglesort)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+    Given an unsorted array nums, reorder it such that nums[0] < nums[1] > nums[2] < nums[3]....
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Example:  
+(1) Given nums = [1, 5, 1, 1, 6, 4], one possible answer is [1, 4, 1, 5, 1, 6].  
+(2) Given nums = [1, 3, 2, 2, 3, 1], one possible answer is [2, 3, 1, 3, 1, 2].  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Note:  
+You may assume all input has valid answer.  
+
+Follow Up:  
+Can you do it in O(n) time and/or in-place with O(1) extra space?  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/wiggle-sort-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/wiggle-sort-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/wiggle-sort-ii

@@ -7,6 +7,11 @@ Add and Search Word - Data structure design
 
 ---
 
+Similar Problems:  
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Design a data structure that supports the following two operations:  
 
     void addWord(word)

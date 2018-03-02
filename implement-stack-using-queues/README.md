@@ -7,6 +7,11 @@ Implement Stack using Queues
 
 ---
 
+Similar Problems:  
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Implement the following operations of a stack using queues.  
 
 -   push(x) &#x2013; Push element x onto stack.

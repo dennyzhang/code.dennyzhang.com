@@ -1,23 +1,26 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Wiggle Sort     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Wiggle Sort  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Wiggle Sort II](https://brain.dennyzhang.com/wiggle-sort-ii)
+-   [Tag: #wigglesort](https://brain.dennyzhang.com/tag/wigglesort)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+    Given an unsorted array nums, reorder it in-place such that nums[0] <= nums[1] >= nums[2] <= nums[3]....
+    
+    For example, given nums = [3, 5, 2, 1, 6, 4], one possible answer is [1, 6, 2, 5, 3, 4].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/wiggle-sort)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/wiggle-sort/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/wiggle-sort

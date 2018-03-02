@@ -9,7 +9,7 @@ Find Median from Data Stream
 
 Similar Problems:  
 -   [Median of Two Sorted Arrays](https://brain.dennyzhang.com/median-of-two-sorted-arrays)
--   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

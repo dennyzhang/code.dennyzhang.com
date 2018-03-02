@@ -9,7 +9,7 @@ Logger Rate Limiter
 
 Similar Problems:  
 -   [Design Hit Counter](https://brain.dennyzhang.com/design-hit-counter)
--   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

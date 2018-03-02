@@ -7,6 +7,11 @@ Design a data structure that supports reqiured operations in O(1) time.
 
 ---
 
+Similar Problems:  
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Design a data structure that supports all following operations in average O(1) time.  
 
 1.  insert(val): Inserts an item val to the set if not already present.

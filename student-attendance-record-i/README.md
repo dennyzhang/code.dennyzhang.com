@@ -7,6 +7,12 @@ Check string pattern
 
 ---
 
+Similar Problems:  
+-   [Student Attendance Record II](https://brain.dennyzhang.com/student-attendance-record-ii)
+-   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+
+---
+
 You are given a string representing an attendance record for a student. The record only contains the following three characters:  
 1.  'A' : Absent.
 2.  'L' : Late.

@@ -7,6 +7,11 @@ Binary Search Tree Iterator
 
 ---
 
+Similar Problems:  
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+
+---
+
 Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.  
 
 Calling next() will return the next smallest number in the BST.  

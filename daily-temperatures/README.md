@@ -9,7 +9,7 @@ Daily Temperatures
 
 Similar Problems:  
 -   [Leetcode: Leetcode: Next Greater Element I](https://brain.dennyzhang.com/next-greater-element-i)
--   Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
 
 ---
 

@@ -10,7 +10,7 @@ Flatten Nested List Iterator
 Similar Problems:  
 -   [Flatten 2D Vector](https://brain.dennyzhang.com/flatten-2d-vector)
 -   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
--   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
 
 ---
 

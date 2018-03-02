@@ -9,7 +9,7 @@ Next Greater Element I
 
 Similar Problems:  
 -   [Leetcode: Daily Temperatures](https://brain.dennyzhang.com/daily-temperatures)
--   Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
 
 ---
 

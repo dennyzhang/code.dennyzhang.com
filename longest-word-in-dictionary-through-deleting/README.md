@@ -8,8 +8,7 @@ Longest Word in Dictionary through Deleting
 ---
 
 Similar Problems:  
-
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---
 
@@ -32,7 +31,6 @@ Example 2:
     "a"
 
 Note:  
-
 1.  All the strings in the input will only contain lower-case letters.
 2.  The size of the dictionary won't exceed 1,000.
 3.  The length of all the strings in the input won't exceed 1,000.

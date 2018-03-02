@@ -8,8 +8,8 @@ Identity number which appears exactly once.
 ---
 
 Similar Problems:  
-
--   Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
+-   [Min Stack](https://brain.dennyzhang.com/min-stack)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
 
 ---
 
@@ -55,7 +55,7 @@ Useful link: [monotonic queue problem](https://leetcode.com/problems/sliding-win
             :rtype: List[int]
             """
             import collections
-            res = 
+            res = []
             queue = collections.deque()
             for i in range(len(nums)):
                 # remove the number
