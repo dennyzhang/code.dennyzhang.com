@@ -1,8 +1,8 @@
-* Leetcode: Search in Rotated Sorted Array II                                              :BLOG:Medium:
+* Leetcode: Search in Rotated Sorted Array II                   :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     classic
+:type:     inspiring, binarysearch
 :END:
 ---------------------------------------------------------------------
 Search in Rotated Sorted Array II
@@ -27,9 +27,9 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/search-in-rotated-sorted-array-ii
-## Basic Ideas: Binary search
-##  Find the pivot. And do two binary search
-## Complexity: Time O(log(n)), Space O(1)
+## Basic Ideas: The worst case would be: 1111112, then you need to check 2 or 3
+##
+## Complexity: Time O(n), Space O(1)
 class Solution:
     def search(self, nums, target):
         """
@@ -37,38 +37,7 @@ class Solution:
         :type target: int
         :rtype: bool
         """
-        length = len(nums)
-        if length == 0: return False
-        left, right = 0, length - 1
-        while left<right:
-            mid = left + int((right-left)/2)
-            # 5 6 6 0 0 2 3
-            if nums[mid] <= nums[right]:
-                # check the left half(included)
-                right = mid
-            else:
-                # right half
-                left = mid + 1
-
-        pivot = left
-        print(pivot)
-        # binary search for part1
-        left, right = 0, pivot-1
-        while left<=right:
-            mid = left + int((right-left)/2)
-            if nums[mid] == target: return True
-            if nums[mid] < target: left = mid + 1
-            else: right = mid - 1
-
-        # binary search for part2
-        left, right = pivot, length-1
-        while left<=right:
-            mid = left + int((right-left)/2)
-            if nums[mid] == target: return True
-            if nums[mid] < target: left = mid + 1
-            else: right = mid - 1
-
+        for num in nums:
+            if num == target: return True
         return False
-s = Solution()
-print(s.search([2,2,2,0,2,2], 0)) # True
 #+END_SRC
