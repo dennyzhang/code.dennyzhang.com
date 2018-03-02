@@ -8,7 +8,7 @@
 Encode and Decode TinyURL
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/encode-and-decode-tinyurl/description/][leetcode.com]]
 

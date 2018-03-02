@@ -9,7 +9,7 @@ Find Median from Data Stream
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/median-of-two-sorted-arrays][Median of Two Sorted Arrays]]
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 

@@ -8,7 +8,7 @@
 Shuffle an Array
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Shuffle a set of numbers without duplicates.
 

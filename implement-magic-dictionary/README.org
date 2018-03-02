@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Implement Magic Dictionary
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+---------------------------------------------------------------------
 Implement a magic directory with buildDict, and search methods.
 
 For the method buildDict, you'll be given a list of non-repetitive words to build a dictionary.

@@ -9,7 +9,7 @@ Check string pattern
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/student-attendance-record-ii][Student Attendance Record II]]
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 You are given a string representing an attendance record for a student. The record only contains the following three characters:
 1. 'A' : Absent.

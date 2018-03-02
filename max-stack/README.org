@@ -10,7 +10,7 @@ Max Stack
 Similar Problems:
 - [[https://brain.dennyzhang.com/min-stack][Min Stack]]
 - [[https://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed][Insert Delete GetRandom O(1) – Duplicates allowed]]
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a max stack that supports push, pop, top, peekMax and popMax.
 

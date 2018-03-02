@@ -1,0 +1,29 @@
+* Leetcode: Wiggle Sort                                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     wigglesort
+:END:
+---------------------------------------------------------------------
+Wiggle Sort
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/wiggle-sort-ii][Wiggle Sort II]]
+- [[https://brain.dennyzhang.com/tag/wigglesort][Tag: #wigglesort]]
+---------------------------------------------------------------------
+#+BEGIN_EXAMPLE
+Given an unsorted array nums, reorder it in-place such that nums[0] <= nums[1] >= nums[2] <= nums[3]....
+
+For example, given nums = [3, 5, 2, 1, 6, 4], one possible answer is [1, 6, 2, 5, 3, 4].
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/wiggle-sort][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/wiggle-sort/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/wiggle-sort
+
+#+END_SRC

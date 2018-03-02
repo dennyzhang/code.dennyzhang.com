@@ -10,7 +10,7 @@ All O`one Data Structure
 Similar Problems:
 - [[https://brain.dennyzhang.com/insert-delete-getrandom-o1][Insert Delete GetRandom O(1)]]
 - [[https://brain.dennyzhang.com/lru-cache][LRU Cache]]
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Implement a data structure supporting the following operations:
 

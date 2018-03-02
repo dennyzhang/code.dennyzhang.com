@@ -11,7 +11,7 @@ Similar Problems:
 - [[https://brain.dennyzhang.com/range-addition][Range Addition]]
 - [[https://brain.dennyzhang.com/review-segmenttree][Review: Segment Tree Problems]], Tag: [[https://brain.dennyzhang.com/tag/segmenttree][#segmenttree]]
 - [[https://brain.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://brain.dennyzhang.com/tag/concurrency][#concurrency]]
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Related Reading: [[url-external:https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]
 

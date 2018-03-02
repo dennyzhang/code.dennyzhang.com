@@ -1,0 +1,65 @@
+* Leetcode: Longest Word in Dictionary through Deleting          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, classic, redo
+:END:
+---------------------------------------------------------------------
+Longest Word in Dictionary through Deleting
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+---------------------------------------------------------------------
+Given a string and a string dictionary, find the longest string in the dictionary that can be formed by deleting some characters of the given string. If there are more than one possible results, return the longest word with the smallest lexicographical order. If there is no possible result, return the empty string.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+s = "abpcplea", d = ["ale","apple","monkey","plea"]
+
+Output: 
+"apple"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+s = "abpcplea", d = ["a","b","c"]
+
+Output: 
+"a"
+#+END_EXAMPLE
+
+Note:
+1. All the strings in the input will only contain lower-case letters.
+- The size of the dictionary won't exceed 1,000.
+- The length of all the strings in the input won't exceed 1,000.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-word-in-dictionary-through-deleting][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/longest-word-in-dictionary-through-deleting
+## Basic Ideas: sort, then two pointers
+##
+## Complexity: Time O(n*log(n)), Space O(1)
+class Solution:
+    def findLongestWord(self, s, d):
+        """
+        :type s: str
+        :type d: List[str]
+        :rtype: str
+        """
+        d.sort(key=lambda x: (-len(x), x))
+        for word in d:
+            i = 0
+            # loop s
+            for ch in s:
+                if i == len(word): break
+                if ch == word[i]: i+= 1
+            if i == len(word): return word
+        return ''
+#+END_SRC

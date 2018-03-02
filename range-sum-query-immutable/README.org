@@ -9,7 +9,7 @@ Range Sum Query - Immutable
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://brain.dennyzhang.com/tag/concurrency][#concurrency]]
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.
 #+BEGIN_EXAMPLE
