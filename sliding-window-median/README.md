@@ -1,4 +1,4 @@
-# Leetcode: Sliding Window Median     :BLOG:Basic:
+# Leetcode: Sliding Window Median     :BLOG:Hard:
 
 
 ---
@@ -8,7 +8,6 @@ Sliding Window Median
 ---
 
 Similar Problems:  
-
 -   [Find Median from Data Stream](https://brain.dennyzhang.com/find-median-from-data-stream)
 -   [Tag: #getmedian](https://brain.dennyzhang.com/tag/getmedian)
 
@@ -58,11 +57,11 @@ Leave me comments, if you have better ways to solve.
             :rtype: List[float]
             """
             import heapq
-            l1, l2 = , 
+            l1, l2 = [], []
             maxHeap = heapq.heapify(l1)
             minHeap = heapq.heapify(l2)
     
-            res = 
+            res = []
             for i in range(len(nums)):
                 heapq.heappush(l1, -nums[i])
     
@@ -106,7 +105,7 @@ Leave me comments, if you have better ways to solve.
             :rtype: List[float]
             """
             import bisect
-            res = 
+            res = []
             window = sorted(nums[:k])
             for a, b in zip(nums, nums[k:]+[0]):
                 res.append((window[int(k/2)] + window[~int(k/2)])/2)
