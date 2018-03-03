@@ -7,6 +7,12 @@ Sum of two integers without using + or -
 
 ---
 
+Similar Problems:  
+-   [LintCode: A + B Problem](https://brain.dennyzhang.com/a-b-problem)
+-   [Tag: #bitmanipulation](https://brain.dennyzhang.com/tag/bitmanipulation)
+
+---
+
 Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.  
 
 Example:  
@@ -19,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-two-integers/des
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/sum-of-two-integers
-    ## Basic Ideas: a xor b: get sum without carry. a & b >> 1 carry
+    ## Basic Ideas: a xor b: get sum without carry. (a & b) << 1 carry
     ## Complexity:
     ## Sample data:
     ##       9

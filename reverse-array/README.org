@@ -1,0 +1,44 @@
+* LintCode: Reverse Array                                        :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     twopointer
+:END:
+---------------------------------------------------------------------
+Reverse Array
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+---------------------------------------------------------------------
+Reverse the given array nums inplace.
+
+ Notice
+Inplace means you can't use extra space.
+
+Example
+#+BEGIN_EXAMPLE
+Given nums = [1,2,5]
+return [5,2,1]
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-array][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:http://www.lintcode.com/en/problem/reverse-array/][LintCode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/reverse-array
+class Solution:
+    """
+    @param nums: a integer array
+    @return: nothing
+    """
+    def reverseArray(self, nums):
+        ## Basic Ideas: two pointer
+        ## Complexity: Time O(n), Space O(1)
+        l, r = 0, len(nums)-1
+        while l<r:
+            nums[l], nums[r] = nums[r], nums[l]
+            l, r = l+1, r-1
+#+END_SRC

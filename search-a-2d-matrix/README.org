@@ -1,11 +1,11 @@
-* Leetcode: Search a 2D Matrix                                   :BLOG:Basic:
+* Leetcode: Search a 2D Matrix                                   :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     binarysearch
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Search a 2D Matrix
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]

@@ -2,17 +2,19 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, math
+:type:     bitmanipulation, redo, math
 :END:
 ---------------------------------------------------------------------
 Sum of two integers without using + or -
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/a-b-problem][LintCode: A + B Problem]]
+- [[https://brain.dennyzhang.com/tag/bitmanipulation][Tag: #bitmanipulation]]
 ---------------------------------------------------------------------
 Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
 
 Example:
 Given a = 1 and b = 2, return 3.
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-two-integers][challenges-leetcode-interesting]]
 
@@ -22,7 +24,7 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/sum-of-two-integers
-## Basic Ideas: a xor b: get sum without carry. a & b >> 1 carry
+## Basic Ideas: a xor b: get sum without carry. (a & b) << 1 carry
 ## Complexity:
 ## Sample data:
 ##       9
