@@ -32,3 +32,25 @@ Credits To: [leetcode.com](https://leetcode.com/problems/3sum-smaller/descriptio
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/3sum-smaller
+    ## Basic Ideas: two pointer
+    ## Complexity: Time O(n*n), Space O(1)
+    class Solution:
+        def threeSumSmaller(self, nums, target):
+            """
+            :type nums: List[int]
+            :type target: int
+            :rtype: int
+            """
+            nums.sort()
+            length = len(nums)
+            res = 0
+            for i in range(0, length-2):
+                l, r = i+1, length-1
+                while l<r:
+                    v = nums[i]+nums[l]+nums[r]
+                    if v < target:
+                        res += 1
+                        l += 1
+                    else:
+                        r -= 1
+            return res
