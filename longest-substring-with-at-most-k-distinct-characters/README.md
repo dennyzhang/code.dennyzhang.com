@@ -8,7 +8,6 @@ Longest Substring with At Most K Distinct Characters
 ---
 
 Similar Problems:  
-
 -   [Longest Substring with At Most Two Distinct Characters](https://brain.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters)
 -   [Tag: #string](https://brain.dennyzhang.com/tag/string)
 
