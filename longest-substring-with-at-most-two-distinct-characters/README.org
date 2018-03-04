@@ -50,7 +50,7 @@ class Solution:
                     break
                 else:
                     d[ch] += 1
-        res = max(res, self.getCount(d))
+        res = max(res, sum([d[ch] for ch in d]))
         # move sliding window
         i = 0
         for j in range(index, length):
@@ -60,13 +60,8 @@ class Solution:
                 i += 1
                 d[ch] -= 1
                 if d[ch] == 0: del d[ch]
-            res = max(res, self.getCount(d))
+            res = max(res, sum([d[ch] for ch in d]))
 
-        return res
-
-    def getCount(self, d):
-        res = 0
-        for ch in d: res += d[ch]
         return res
 
 # s = Solution()
