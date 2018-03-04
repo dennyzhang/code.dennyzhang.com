@@ -8,6 +8,7 @@
 ---
 
 Similar Problems:  
+
 -   [3Sum Closest](https://brain.dennyzhang.com/3sum-closest)
 -   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
 
@@ -49,7 +50,7 @@ Leave me comments, if you have better ways to solve.
                 while l<r:
                     v = nums[i]+nums[l]+nums[r]
                     if v < target:
-                        res += 1
+                        res += (r-l)
                         l += 1
                     else:
                         r -= 1

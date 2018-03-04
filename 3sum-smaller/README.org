@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     twopointer
 :END:
 ---------------------------------------------------------------------
 3Sum Smaller
@@ -49,7 +49,7 @@ class Solution:
             while l<r:
                 v = nums[i]+nums[l]+nums[r]
                 if v < target:
-                    res += 1
+                    res += (r-l)
                     l += 1
                 else:
                     r -= 1
