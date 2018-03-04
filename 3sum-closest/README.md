@@ -8,6 +8,7 @@
 ---
 
 Similar Problems:  
+-   [3Sum Smaller](https://brain.dennyzhang.com/3sum-smaller)
 -   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
 
 ---

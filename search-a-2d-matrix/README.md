@@ -1,9 +1,9 @@
-# Leetcode: Search a 2D Matrix     :BLOG:Basic:
+# Leetcode: Search a 2D Matrix     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Search a 2D Matrix  
 
 ---
 

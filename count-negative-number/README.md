@@ -8,7 +8,6 @@ Count Negative Number
 ---
 
 Similar Problems:  
-
 -   [Search a 2D Matrix II](https://brain.dennyzhang.com/search-a-2d-matrix-ii)
 -   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch), [Tag: #binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
 
@@ -45,13 +44,13 @@ Example
     Explanation:
     There are only 11 negative number.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-negative-number)  
 
 Credits To: [LintCode.com](http://www.lintcode.com/en/problem/count-negative-number/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/count-negative-number
     class Solution:
         """
         @param nums: the sorted matrix

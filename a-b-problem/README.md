@@ -8,7 +8,6 @@ A + B Problem
 ---
 
 Similar Problems:  
-
 -   [Sum of Two Integers](https://brain.dennyzhang.com/sum-of-two-integers)
 -   [Tag: #bitmanipulation](https://brain.dennyzhang.com/tag/bitmanipulation)
 
