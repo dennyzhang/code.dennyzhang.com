@@ -2,12 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer
+:type:     twopointer, twosum
 :END:
 ---------------------------------------------------------------------
 3Sum II
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/sum-of-square-numbers][Sum of Square Numbers]]
+- [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
 - [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given n, find the number of solutions for all x, y, z that conforms to x^2+y^2+z^2 = n.(x, y, z are non-negative integers)

@@ -8,6 +8,7 @@ Two Sum IV - Input is a BST
 ---
 
 Similar Problems:  
+-   [Tag: #twosum](https://brain.dennyzhang.com/tag/twosum)
 -   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
 
 ---

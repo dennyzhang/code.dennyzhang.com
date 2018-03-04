@@ -2,12 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer
+:type:     twopointer, twosum
 :END:
 ---------------------------------------------------------------------
 Modified version of Two Sum problem
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
 - [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
@@ -19,8 +20,6 @@ You may assume that each input would have exactly one solution and you may not u
 Input: numbers={2, 7, 11, 15}, target=9
 
 Output: index1=1, index2=2
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-ii-input-array-is-sorted][challenges-leetcode-interesting]]
 

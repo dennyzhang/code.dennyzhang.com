@@ -2,12 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, math, sqrt
+:type:     twopointer, math, sqrt, twosum
 :END:
 ---------------------------------------------------------------------
 Sum of Square Numbers
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/3sum-ii][LintCode: 3Sum II]]
+- [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
 - [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a*a + b*b = c.

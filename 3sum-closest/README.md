@@ -9,6 +9,7 @@
 
 Similar Problems:  
 -   [3Sum Smaller](https://brain.dennyzhang.com/3sum-smaller)
+-   [Tag: #twosum](https://brain.dennyzhang.com/tag/twosum)
 -   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
 
 ---
@@ -26,35 +27,31 @@ Credits To: [leetcode.com](https://leetcode.com/problems/3sum-closest/descriptio
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/3sum-closest
-    class Solution(object):
+    ## Basic Ideas: two sum
+    ## Complexity: Time O(n*n), Space O(1)
+    class Solution:
         def threeSumClosest(self, nums, target):
             """
             :type nums: List[int]
             :type target: int
             :rtype: int
             """
-            ## Idea: sort the list. target_sum, 3 indices: i, l, r
-            ## Complexity:
-            ## Sample Data
+            import sys
+            length = len(nums)
+            if length <=2: return sum(nums)
             nums.sort()
-            if len(nums) < 3:
-                return None
-            res = nums[0] + nums[1] + nums[2]
-            for i in xrange(len(nums)-2):
-                if i>0 and nums[i] == nums[i-1]:
-                    continue
-                l,r = i+1, len(nums)-1
+            res = sum(nums[0:3])
+            for i in range(length-2):
+                l, r = i+1, length-1
                 while l<r:
-                    value = nums[i] + nums[l] + nums[r]
-                    offset = abs(value - target)
-                    if value == target:
-                        return value
+                    v = nums[i]+nums[l]+nums[r]
+                    if v == target: return v
+                    if abs(v-target) < abs(res-target): res = v
     
-                    if abs(res - target) > offset:
-                        res = value
-    
-                    if value > target:
+                    if v > target:
+                        # make v smaller
                         r -= 1
-                    if value < target:
+                    else:
                         l += 1
+    
             return res
