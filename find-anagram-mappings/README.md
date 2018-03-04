@@ -56,5 +56,5 @@ Leave me comments, if you have better ways to solve.
                         break
             return result
     
-    s = Solution()
-    print s.anagramMappings([21,5,74,5,74,21], [21,5,74,74,5,21])
+    # s = Solution()
+    # print s.anagramMappings([21,5,74,5,74,21], [21,5,74,74,5,21])

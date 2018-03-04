@@ -81,6 +81,6 @@ Leave me comments, if you have better ways to solve.
                     res.append(word)
             return ' '.join(res)
     
-    s = Solution()
-    print s.replaceWords(["a", "aa", "aaa", "aaaa"], "a aa") # a a
-    print s.replaceWords(["a", "aa", "aaa", "aaaa"], "a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa") # a a a, bbb, baba, a
+    # s = Solution()
+    # print s.replaceWords(["a", "aa", "aaa", "aaaa"], "a aa") # a a
+    # print s.replaceWords(["a", "aa", "aaa", "aaaa"], "a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa") # a a a, bbb, baba, a

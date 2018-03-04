@@ -67,6 +67,6 @@ Leave me comments, if you have better ways to solve.
                 res[i] = chr(res[i] + ord('0'))
             return ''.join(res)[::-1]
     
-    s = Solution()
-    print(s.multiply("123", "45")) # 5535
-    print(s.multiply("45", "123")) # 5535
+    # s = Solution()
+    # print(s.multiply("123", "45")) # 5535
+    # print(s.multiply("45", "123")) # 5535

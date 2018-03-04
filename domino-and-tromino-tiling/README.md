@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
                 sum_v=sum_v+v1*2
             return v3
     
-    s = Solution()
-    print(s.numTilings(4)) # 11
-    print(s.numTilings(5)) # 24
-    print(s.numTilings(6)) # 53
+    # s = Solution()
+    # print(s.numTilings(4)) # 11
+    # print(s.numTilings(5)) # 24
+    # print(s.numTilings(6)) # 53

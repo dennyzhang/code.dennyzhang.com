@@ -88,6 +88,7 @@ Leave me comments, if you have better ways to solve.
                         max_count = count
                         res = l
             return res
-    s = Solution()
-    print(s.maximumAssociationSet(["abc","abc","abc"], ["bcd","acd","def"]))
-    print(s.maximumAssociationSet(["a","b","d","e","f"], ["b","c","e","g","g"]))
+    
+    # s = Solution()
+    # print(s.maximumAssociationSet(["abc","abc","abc"], ["bcd","acd","def"]))
+    # print(s.maximumAssociationSet(["a","b","d","e","f"], ["b","c","e","g","g"]))

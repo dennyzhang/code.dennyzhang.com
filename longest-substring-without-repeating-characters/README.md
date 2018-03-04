@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
                     fast += 1
             return max(max_len, len(m))
     
-    s = Solution()         
-    print s.lengthOfLongestSubstring('ruowzgiooobpple')
-    print s.lengthOfLongestSubstring('bbbbb') # 1
-    print s.lengthOfLongestSubstring('pwwkew') # 3
+    # s = Solution()         
+    # print s.lengthOfLongestSubstring('ruowzgiooobpple')
+    # print s.lengthOfLongestSubstring('bbbbb') # 1
+    # print s.lengthOfLongestSubstring('pwwkew') # 3

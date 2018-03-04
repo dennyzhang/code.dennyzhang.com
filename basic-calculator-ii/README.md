@@ -91,5 +91,5 @@ Leave me comments, if you have better ways to solve.
                     i += 1
             return res
     
-    s = Solution()
-    print s.calculate(" 3+5 / 2 ") # 5
+    # s = Solution()
+    # print s.calculate(" 3+5 / 2 ") # 5

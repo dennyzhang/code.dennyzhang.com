@@ -70,5 +70,5 @@ Leave me comments, if you have better ways to solve.
                 if m1[ch] < m2[ch]: return True
             return False
     
-    s = Solution()
-    print(s.minWindow("ADOBECODEBANC", "ABC")) # BANC
+    # s = Solution()
+    # print(s.minWindow("ADOBECODEBANC", "ABC")) # BANC

@@ -69,5 +69,5 @@ Leave me comments, if you have better ways to solve.
                 left += 1
             return res
     
-    s = Solution()
-    print(s.findSubstring("barfoofoobarthefoobarman", ["bar","foo","the"])) # [6, 9, 12]
+    # s = Solution()
+    # print(s.findSubstring("barfoofoobarthefoobarman", ["bar","foo","the"])) # [6, 9, 12]

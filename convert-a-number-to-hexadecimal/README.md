@@ -63,6 +63,6 @@ Leave me comments, if you have better ways to solve.
                 res = '%s%s' % (mod_str, res)
             return res
     
-    s = Solution()
-    print(s.toHex(-1)) # ffffffff
-    print(s.toHex(26)) # 1a
+    # s = Solution()
+    # print(s.toHex(-1)) # ffffffff
+    # print(s.toHex(26)) # 1a

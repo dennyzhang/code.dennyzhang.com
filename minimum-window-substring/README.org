@@ -71,6 +71,6 @@ class Solution:
             if m1[ch] < m2[ch]: return True
         return False
 
-s = Solution()
-print(s.minWindow("ADOBECODEBANC", "ABC")) # BANC
+# s = Solution()
+# print(s.minWindow("ADOBECODEBANC", "ABC")) # BANC
 #+END_SRC

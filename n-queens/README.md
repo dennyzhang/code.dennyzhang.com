@@ -85,5 +85,5 @@ Leave me comments, if you have better ways to solve.
                         return False
             return True
     
-    s = Solution()
-    print s.solveNQueens(8)
+    # s = Solution()
+    # print s.solveNQueens(8)

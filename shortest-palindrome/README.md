@@ -71,6 +71,6 @@ Leave me comments, if you have better ways to solve.
             # get the result
             return res+s
     
-    s = Solution()
-    print(s.shortestPalindrome("aacecaaa")) # "aaacecaaa"
-    print(s.shortestPalindrome("abcd")) # "dcbabcd"
+    # s = Solution()
+    # print(s.shortestPalindrome("aacecaaa")) # "aaacecaaa"
+    # print(s.shortestPalindrome("abcd")) # "dcbabcd"

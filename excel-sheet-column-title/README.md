@@ -58,8 +58,8 @@ Leave me comments, if you have better ways to solve.
                 raise Exception("Unexpected input")
             return chr(ord('A') + (n-1))
     
-    s = Solution()
-    print s.convertToTitle(26) #Z
-    print s.convertToTitle(27) #AA
-    print s.convertToTitle(2) #B
-    print s.convertToTitle(52) #AZ
+    # s = Solution()
+    # print s.convertToTitle(26) #Z
+    # print s.convertToTitle(27) #AA
+    # print s.convertToTitle(2) #B
+    # print s.convertToTitle(52) #AZ

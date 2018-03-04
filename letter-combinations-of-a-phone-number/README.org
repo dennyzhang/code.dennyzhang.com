@@ -57,6 +57,6 @@ class Solution(object):
                 res = item_list
         return res
 
-s = Solution()
-print s.letterCombinations("23")
+# s = Solution()
+# print s.letterCombinations("23")
 #+END_SRC

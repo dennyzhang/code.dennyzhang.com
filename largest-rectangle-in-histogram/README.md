@@ -64,5 +64,5 @@ Leave me comments, if you have better ways to solve.
                 stack.append(i)
             return max_width
     
-    s = Solution()
-    print s.largestRectangleArea([2, 1, 2]) # 3
+    # s = Solution()
+    # print s.largestRectangleArea([2, 1, 2]) # 3

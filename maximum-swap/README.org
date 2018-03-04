@@ -71,6 +71,6 @@ class Solution:
                         return res
         return res
                         
-s = Solution()    
-print(s.maximumSwap(2736))
+# s = Solution()    
+# print(s.maximumSwap(2736))
 #+END_SRC

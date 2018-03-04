@@ -129,15 +129,15 @@ Leave me comments, if you have better ways to solve.
     
             return True
     
-    s = Solution()  
-    print s.isNumber('0') # true
-    print s.isNumber(' 0.1 ') # true
-    print s.isNumber('abc') # false
-    print s.isNumber('1 a') # false
-    print s.isNumber('2e10') # true
-    print s.isNumber(' 001 ') # true
-    print s.isNumber(' -1. ') # true
-    print s.isNumber('  005047e+6') # true
-    print s.isNumber('  e+ ') # false
-    print s.isNumber('  e+8') # false
-    print s.isNumber('  e2+') # true
+    # s = Solution()  
+    # print s.isNumber('0') # true
+    # print s.isNumber(' 0.1 ') # true
+    # print s.isNumber('abc') # false
+    # print s.isNumber('1 a') # false
+    # print s.isNumber('2e10') # true
+    # print s.isNumber(' 001 ') # true
+    # print s.isNumber(' -1. ') # true
+    # print s.isNumber('  005047e+6') # true
+    # print s.isNumber('  e+ ') # false
+    # print s.isNumber('  e+8') # false
+    # print s.isNumber('  e2+') # true

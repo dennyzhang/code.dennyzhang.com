@@ -94,5 +94,5 @@ Leave me comments, if you have better ways to solve.
             if res == '': res ='0'
             return res
     
-    s = Solution()
-    print(s.removeKdigits("12", 1))
+    # s = Solution()
+    # print(s.removeKdigits("12", 1))

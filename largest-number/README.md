@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
             else:
                 return 1
     
-    s = Solution()
-    print s.largestNumber([3, 34, 30, 5, 9]) # 9533430
-    print s.largestNumber([128, 12]) #12812
-    print s.largestNumber([121,12]) #12121
+    # s = Solution()
+    # print s.largestNumber([3, 34, 30, 5, 9]) # 9533430
+    # print s.largestNumber([128, 12]) #12812
+    # print s.largestNumber([121,12]) #12121

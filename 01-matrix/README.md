@@ -107,7 +107,7 @@ Leave me comments, if you have better ways to solve.
             if j!=self.col_count-1 and matrix[i][j+1] == value: return True
             return False
     
-    s = Solution()
-    matrix = [[1, 0, 0, 0], [1, 1, 1, 1], [1, 1, 1, 0]]
-    s.updateMatrix(matrix)
-    print matrix
+    # s = Solution()
+    # matrix = [[1, 0, 0, 0], [1, 1, 1, 1], [1, 1, 1, 0]]
+    # s.updateMatrix(matrix)
+    # print matrix

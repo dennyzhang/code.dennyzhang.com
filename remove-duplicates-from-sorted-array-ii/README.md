@@ -83,7 +83,7 @@ Leave me comments, if you have better ways to solve.
             # print nums
             return index
     
-    s = Solution()
-    print s.removeDuplicates([1,1,1,2,2,3]) # 1, 1, 2, 2, 3
-    print s.removeDuplicates([1,1,1,2,2,3,3]) # 1, 1, 2, 2, 3, 3
-    print s.removeDuplicates([1, 1]) # 1
+    # s = Solution()
+    # print s.removeDuplicates([1,1,1,2,2,3]) # 1, 1, 2, 2, 3
+    # print s.removeDuplicates([1,1,1,2,2,3,3]) # 1, 1, 2, 2, 3, 3
+    # print s.removeDuplicates([1, 1]) # 1

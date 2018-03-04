@@ -83,6 +83,6 @@ Leave me comments, if you have better ways to solve.
                     l.pop()
             return False
     
-    s = Solution()
-    print s.exist([["A","B","C","E"],["S","F","E","S"],["A","D","E","E"]], "ABCESEEEFS") # True
-    print s.exist([["C","A","A"],["A","A","A"],["B","C","D"]], "AAB") # true
+    # s = Solution()
+    # print s.exist([["A","B","C","E"],["S","F","E","S"],["A","D","E","E"]], "ABCESEEEFS") # True
+    # print s.exist([["C","A","A"],["A","A","A"],["B","C","D"]], "AAB") # true

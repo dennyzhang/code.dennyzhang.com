@@ -58,6 +58,6 @@ class Solution(object):
 
         return True
 
-s = Solution()
-print(s.verifyPreorder([10,7,4,8,6,40,23]))
+# s = Solution()
+# print(s.verifyPreorder([10,7,4,8,6,40,23]))
 #+END_SRC

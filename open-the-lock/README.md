@@ -102,5 +102,5 @@ Leave me comments, if you have better ways to solve.
                             seen.add(neighbor)
             return -1
     
-    s = Solution()
-    print(s.openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888")) # -1
+    # s = Solution()
+    # print(s.openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888")) # -1

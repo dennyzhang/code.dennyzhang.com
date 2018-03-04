@@ -59,24 +59,24 @@ Leave me comments, if you have better ways to solve.
                     p = p.next
             return dummy_node.next
     
-    s = Solution()
+    # s = Solution()
     # p1 = ListNode(3)
     # p2 = ListNode(4)
     # p3 = ListNode(1)
     
-    p1 = ListNode(3)
-    p2 = ListNode(2)
-    p3 = ListNode(4)
-    
+    # p1 = ListNode(3)
+    # p2 = ListNode(2)
+    # p3 = ListNode(4)
+    # 
     # p1 = ListNode(3)
     # p2 = ListNode(2)
     # p3 = ListNode(1)
     
-    p1.next = p2
-    p2.next = p3
-    p3.next = None
-    
-    new_head = s.insertionSortList(p1)
-    print new_head.val
-    print new_head.next.val
-    print new_head.next.next.val
+    # p1.next = p2
+    # p2.next = p3
+    # p3.next = None
+    # 
+    # new_head = s.insertionSortList(p1)
+    # print new_head.val
+    # print new_head.next.val
+    # print new_head.next.next.val

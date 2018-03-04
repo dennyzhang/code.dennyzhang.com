@@ -50,5 +50,5 @@ Interesting reading:
                 maxIndex = max(maxIndex, i+nums[i])
             return maxIndex >= length-1
     
-    s = Solution()
-    print(s.canJump([0, 2, 3])) # False
+    # s = Solution()
+    # print(s.canJump([0, 2, 3])) # False

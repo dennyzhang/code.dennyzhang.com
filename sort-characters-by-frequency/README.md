@@ -78,5 +78,5 @@ Leave me comments, if you have better ways to solve.
                     return -1 if v1 < v2 else 1
             return ''.join(sorted(s, cmp=myCompare))
     
-    s = Solution()
-    print s.frequencySort("Aabb") # "bbAa"
+    # s = Solution()
+    # print s.frequencySort("Aabb") # "bbAa"

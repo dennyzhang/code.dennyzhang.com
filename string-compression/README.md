@@ -86,7 +86,8 @@ Leave me comments, if you have better ways to solve.
                 i = j
                 #print("i: %d, j:%d" % (i, j))
             return k
-    s = Solution()
-    chars = ["a","a","a","b","b","a","a"]
-    s.compress(chars)
-    print chars
+    
+    # s = Solution()
+    # chars = ["a","a","a","b","b","a","a"]
+    # s.compress(chars)
+    # print(chars)

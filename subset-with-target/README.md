@@ -59,5 +59,5 @@ Leave me comments, if you have better ways to solve.
                 left += 1
             return res
     
-    s = Solution()
-    print(s.subsetWithTarget([1, 5, 2, 4, 3], 5)) # 5
+    # s = Solution()
+    # print(s.subsetWithTarget([1, 5, 2, 4, 3], 5)) # 5

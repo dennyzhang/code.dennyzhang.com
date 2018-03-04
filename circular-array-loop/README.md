@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
                 if prev != k: return True
             return False
     
-    s = Solution()
-    print(s.circularArrayLoop([-2, 1, -1, -2, -2])) # False
-    print(s.circularArrayLoop([2, -1, 1, 2, 2])) # True
-    print(s.circularArrayLoop([-1, 2])) # False
+    # s = Solution()
+    # print(s.circularArrayLoop([-2, 1, -1, -2, -2])) # False
+    # print(s.circularArrayLoop([2, -1, 1, 2, 2])) # True
+    # print(s.circularArrayLoop([-1, 2])) # False

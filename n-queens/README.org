@@ -88,6 +88,6 @@ class Solution(object):
                     return False
         return True
 
-s = Solution()
-print s.solveNQueens(8)
+# s = Solution()
+# print s.solveNQueens(8)
 #+END_SRC

@@ -73,5 +73,5 @@ Leave me comments, if you have better ways to solve.
                     index, count = index-1, count-1
             return ''.join(l)
     
-    s = Solution()
-    s.licenseKeyFormatting("--a-a-a-a--", 2)
+    # s = Solution()
+    # s.licenseKeyFormatting("--a-a-a-a--", 2)

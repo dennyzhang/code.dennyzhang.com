@@ -101,5 +101,5 @@ Leave me comments, if you have better ways to solve.
                 index = (right + 1) % length
                 return letters[index]
     
-    s = Solution()
-    print s.nextGreatestLetter(["c","f","j"], "j")
+    # s = Solution()
+    # print s.nextGreatestLetter(["c","f","j"], "j")

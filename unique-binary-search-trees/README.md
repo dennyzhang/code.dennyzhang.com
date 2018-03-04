@@ -73,5 +73,5 @@ Leave me comments, if you have better ways to solve.
                 l[k] = count
             return l[n]
     
-    s = Solution()
-    print s.numTrees(4) # 14
+    # s = Solution()
+    # print s.numTrees(4) # 14

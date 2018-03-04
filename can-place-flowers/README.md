@@ -58,5 +58,5 @@ Leave me comments, if you have better ways to solve.
                 else: total_flower, counter = total_flower + (counter-1)/2, 0
             return total_flower >= n
     
-    s = Solution()
-    s = s.canPlaceFlowers([0,0,1,0,1], 1) # true
+    # s = Solution()
+    # s = s.canPlaceFlowers([0,0,1,0,1], 1) # true

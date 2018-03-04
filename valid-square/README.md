@@ -50,5 +50,5 @@ Leave me comments, if you have better ways to solve.
                 return False
             return l[1] == [l[0][0], l[3][1]] and l[2] == [l[3][0], l[0][1]]
     
-    s = Solution()
-    print s.validSquare([1,0], [-1,0], [0,1], [0,-1]) # true
+    # s = Solution()
+    # print s.validSquare([1,0], [-1,0], [0,1], [0,-1]) # true

@@ -64,8 +64,8 @@ Leave me comments, if you have better ways to solve.
                 l.insert(0, heapq.heappop(q))
             return l[0] if len(l) != 3 else l[-1]
     
-    s = Solution()
-    print s.thirdMax([1, 2]) # 2
-    print s.thirdMax([3, 2, 1]) # 1
-    print s.thirdMax([1, 1, 2]) # 2
-    print s.thirdMax([1,2,2,5,3,5]) # 2
+    # s = Solution()
+    # print s.thirdMax([1, 2]) # 2
+    # print s.thirdMax([3, 2, 1]) # 1
+    # print s.thirdMax([1, 1, 2]) # 2
+    # print s.thirdMax([1,2,2,5,3,5]) # 2

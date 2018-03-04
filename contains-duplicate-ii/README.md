@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
                 s.add(nums[i])
             return False
     
-    s = Solution()
-    print s.containsNearbyDuplicate([-1, -1], 1) # True
-    print s.containsNearbyDuplicate([99, 99], 1) # True
-    print s.containsNearbyDuplicate([1, 2, 1], 0) # False
+    # s = Solution()
+    # print s.containsNearbyDuplicate([-1, -1], 1) # True
+    # print s.containsNearbyDuplicate([99, 99], 1) # True
+    # print s.containsNearbyDuplicate([1, 2, 1], 0) # False

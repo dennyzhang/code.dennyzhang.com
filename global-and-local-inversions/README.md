@@ -81,9 +81,9 @@ Leave me comments, if you have better ways to solve.
                 if A[i] != i: return False
             return True
     
-    s = Solution()
-    print s.isIdealPermutation([2,0,1]) # false
-    print s.isIdealPermutation([1,0,2]) # true
-    print s.isIdealPermutation([1,2,0]) # false
-    print s.isIdealPermutation([0,2,1]) # true
-    print s.isIdealPermutation([]) # true
+    # s = Solution()
+    # print s.isIdealPermutation([2,0,1]) # false
+    # print s.isIdealPermutation([1,0,2]) # true
+    # print s.isIdealPermutation([1,2,0]) # false
+    # print s.isIdealPermutation([0,2,1]) # true
+    # print s.isIdealPermutation([]) # true

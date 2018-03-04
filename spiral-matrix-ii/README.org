@@ -90,6 +90,6 @@ class Solution(object):
             direction_index = (direction_index+1) % 4
         return res
                     
-s = Solution()
-print s.generateMatrix(3)
+# s = Solution()
+# print s.generateMatrix(3)
 #+END_SRC

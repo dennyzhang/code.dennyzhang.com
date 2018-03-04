@@ -87,5 +87,5 @@ Leave me comments, if you have better ways to solve.
                     left_count -= 1
             return left_count == 0
     
-    s = Solution()
-    print(s.removeInvalidParentheses("x("))
+    # s = Solution()
+    # print(s.removeInvalidParentheses("x("))

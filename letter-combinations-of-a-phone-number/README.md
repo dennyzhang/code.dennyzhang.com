@@ -58,5 +58,5 @@ Leave me comments, if you have better ways to solve.
                     res = item_list
             return res
     
-    s = Solution()
-    print s.letterCombinations("23")
+    # s = Solution()
+    # print s.letterCombinations("23")

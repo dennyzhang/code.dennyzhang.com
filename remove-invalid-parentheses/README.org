@@ -87,6 +87,6 @@ class Solution:
                 left_count -= 1
         return left_count == 0
 
-s = Solution()
-print(s.removeInvalidParentheses("x("))
+# s = Solution()
+# print(s.removeInvalidParentheses("x("))
 #+END_SRC

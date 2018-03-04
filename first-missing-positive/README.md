@@ -57,5 +57,5 @@ Leave me comments, if you have better ways to solve.
                     return i+1
             return length+1
     
-    s = Solution()
-    print s.firstMissingPositive([3,4,-1,1])
+    # s = Solution()
+    # print s.firstMissingPositive([3,4,-1,1])

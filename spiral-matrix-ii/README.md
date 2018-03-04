@@ -87,5 +87,5 @@ Leave me comments, if you have better ways to solve.
                 direction_index = (direction_index+1) % 4
             return res
     
-    s = Solution()
-    print s.generateMatrix(3)
+    # s = Solution()
+    # print s.generateMatrix(3)

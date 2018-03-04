@@ -59,10 +59,10 @@ class Solution:
         # we shouldn't go to this line
         return None
 
-s = Solution()
-print(s.numSquares(12)) # 3
-print(s.numSquares(7168)) # 4
-print(s.numSquares(1103))
-print(s.numSquares(5756))
-print(s.numSquares(6255))
+# s = Solution()
+# print(s.numSquares(12)) # 3
+# print(s.numSquares(7168)) # 4
+# print(s.numSquares(1103))
+# print(s.numSquares(5756))
+# print(s.numSquares(6255))
 #+END_SRC

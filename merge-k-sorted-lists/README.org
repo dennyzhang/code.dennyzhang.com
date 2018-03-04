@@ -66,6 +66,6 @@ class Solution(object):
                 break
         return dummyNode.next
         
-s = Solution()
-print s.mergeKLists([[], []])
+# s = Solution()
+# print s.mergeKLists([[], []])
 #+END_SRC

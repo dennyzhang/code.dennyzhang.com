@@ -75,6 +75,6 @@ class Solution(object):
             l[k] = count
         return l[n]
 
-s = Solution()
-print s.numTrees(4) # 14
+# s = Solution()
+# print s.numTrees(4) # 14
 #+END_SRC

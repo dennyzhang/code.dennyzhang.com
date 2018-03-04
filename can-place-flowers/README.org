@@ -63,6 +63,6 @@ class Solution(object):
             else: total_flower, counter = total_flower + (counter-1)/2, 0
         return total_flower >= n
 
-s = Solution()
-s = s.canPlaceFlowers([0,0,1,0,1], 1) # true
+# s = Solution()
+# s = s.canPlaceFlowers([0,0,1,0,1], 1) # true
 #+END_SRC

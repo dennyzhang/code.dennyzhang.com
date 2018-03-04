@@ -82,5 +82,5 @@ Leave me comments, if you have better ways to solve.
                         i,j = i+1, j-1
             return res
     
-    s = Solution()
-    print s.findDiagonalOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) #[1,2,4,7,5,3,6,8,9]
+    # s = Solution()
+    # print s.findDiagonalOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) #[1,2,4,7,5,3,6,8,9]

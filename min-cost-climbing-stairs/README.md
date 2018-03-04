@@ -77,5 +77,5 @@ Leave me comments, if you have better ways to solve.
                 l[i] = min(l[i-1]+cost[i-1], l[i-2]+cost[i-2])
             return l[n]
     
-    s = Solution()
-    print s.minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]) # 6
+    # s = Solution()
+    # print s.minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]) # 6

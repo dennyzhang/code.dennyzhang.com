@@ -91,5 +91,6 @@ Leave me comments, if you have better ways to solve.
                     res += int(element)
                     i += 1
             return res
-    s = Solution()
-    print s.calculate("(1+(4+5+2)-3)+(6+8)") # 23
+    
+    # s = Solution()
+    # print s.calculate("(1+(4+5+2)-3)+(6+8)") # 23

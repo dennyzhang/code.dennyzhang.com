@@ -96,6 +96,6 @@ class Solution:
         if res == '': res ='0'
         return res
 
-s = Solution()
-print(s.removeKdigits("12", 1))
+# s = Solution()
+# print(s.removeKdigits("12", 1))
 #+END_SRC

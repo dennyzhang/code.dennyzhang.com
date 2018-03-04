@@ -67,6 +67,6 @@ Leave me comments, if you have better ways to solve.
                         return False
             return True
     
-    s = Solution()
-    print s.totalNQueens(1) # 1
-    print s.totalNQueens(4) # 2
+    # s = Solution()
+    # print s.totalNQueens(1) # 1
+    # print s.totalNQueens(4) # 2

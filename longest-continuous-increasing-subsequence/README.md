@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
                     cnt = 1
             return res
     
-    s = Solution()
-    print(s.findLengthOfLCIS([1,3,5,7])) # 4
-    print(s.findLengthOfLCIS([1,3,5,4,7])) # 3
-    print(s.findLengthOfLCIS([2,2,2,2])) # 1
+    # s = Solution()
+    # print(s.findLengthOfLCIS([1,3,5,7])) # 4
+    # print(s.findLengthOfLCIS([1,3,5,4,7])) # 3
+    # print(s.findLengthOfLCIS([2,2,2,2])) # 1

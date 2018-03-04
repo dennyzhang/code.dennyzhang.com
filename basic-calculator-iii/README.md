@@ -134,11 +134,11 @@ Leave me comments, if you have better ways to solve.
                     i += 1
             return res
     
-    s = Solution()
-    print s.calculate(" 2-(5-6) ") # 3
-    print s.calculate("2*(5+5*2)/3+(6/2+8)") # 21
-    print s.calculate(" 3+5 / 2 ") # 5
-    print s.calculate("1 + 1") # 2
-    print s.calculate(" 6-4 / 2 ") # 4
-    print s.calculate("(2+6* 3+5- (3*14/7+2)*5)+3") # -12
-    print s.calculate("1-(2+3-(4+(5-(1-(2+4-(5+6))))))") # -1
+    # s = Solution()
+    # print s.calculate(" 2-(5-6) ") # 3
+    # print s.calculate("2*(5+5*2)/3+(6/2+8)") # 21
+    # print s.calculate(" 3+5 / 2 ") # 5
+    # print s.calculate("1 + 1") # 2
+    # print s.calculate(" 6-4 / 2 ") # 4
+    # print s.calculate("(2+6* 3+5- (3*14/7+2)*5)+3") # -12
+    # print s.calculate("1-(2+3-(4+(5-(1-(2+4-(5+6))))))") # -1

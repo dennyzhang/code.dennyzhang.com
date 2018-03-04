@@ -88,7 +88,7 @@ Leave me comments, if you have better ways to solve.
                     absent += 1
             return absent <= 1 and max_continuous_late <= 2
     
-    s = Solution()
-    print s.checkRecord('PPALLP')
-    print s.checkRecord('PPALLL')
-    print s.checkRecord('PPALLP')
+    # s = Solution()
+    # print s.checkRecord('PPALLP')
+    # print s.checkRecord('PPALLL')
+    # print s.checkRecord('PPALLP')

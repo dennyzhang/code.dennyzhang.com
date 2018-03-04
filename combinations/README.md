@@ -73,6 +73,6 @@ Leave me comments, if you have better ways to solve.
                     res.append([1] + item)
             return res
     
-    s = Solution()
+    # s = Solution()
     # print s.combine(4, 2)
     # print s.combine(1, 1)

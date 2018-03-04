@@ -47,6 +47,6 @@ Leave me comments, if you have better ways to solve.
                 elif v1 < v2: return -1
             return 0
     
-    s = Solution()
-    print s.compareVersion('01', '1') # 0
-    print s.compareVersion('1.0', '1') # 0
+    # s = Solution()
+    # print s.compareVersion('01', '1') # 0
+    # print s.compareVersion('1.0', '1') # 0

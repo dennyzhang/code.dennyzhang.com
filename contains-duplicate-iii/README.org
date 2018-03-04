@@ -41,10 +41,10 @@ class Solution(object):
             s.add(nums[i])
         return False
 
-s = Solution()
-print s.containsNearbyAlmostDuplicate([-1, -1], 1, 0) # True
-print s.containsNearbyAlmostDuplicate([-1, -1], 1, 1) # True
-print s.containsNearbyAlmostDuplicate([99, 99], 1, 1) # True
-print s.containsNearbyAlmostDuplicate([1, 2, 1], 0, 1) # False
-print s.containsNearbyAlmostDuplicate([0, 2147483647], 1, 2147483647) # True
+# s = Solution()
+# print s.containsNearbyAlmostDuplicate([-1, -1], 1, 0) # True
+# print s.containsNearbyAlmostDuplicate([-1, -1], 1, 1) # True
+# print s.containsNearbyAlmostDuplicate([99, 99], 1, 1) # True
+# print s.containsNearbyAlmostDuplicate([1, 2, 1], 0, 1) # False
+# print s.containsNearbyAlmostDuplicate([0, 2147483647], 1, 2147483647) # True
 #+END_SRC

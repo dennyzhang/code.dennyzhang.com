@@ -85,8 +85,8 @@ Leave me comments, if you have better ways to solve.
                     res = '%s%s' % (res, str(i)*l[i])
             return res
     
-    s = Solution()
-    print s.originalDigits('owoztneoer') # 012
-    print s.originalDigits('fviefuro') # 45
-    print s.originalDigits('xsi') # 6
-    print s.originalDigits('nnei') # 9
+    # s = Solution()
+    # print s.originalDigits('owoztneoer') # 012
+    # print s.originalDigits('fviefuro') # 45
+    # print s.originalDigits('xsi') # 6
+    # print s.originalDigits('nnei') # 9

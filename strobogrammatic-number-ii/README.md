@@ -56,5 +56,5 @@ Leave me comments, if you have better ways to solve.
             for q in l1+l2: res_l2.append("0%s0" % q)
             return [res_l1, res_l2]
     
-    s = Solution()
-    print(s.findStrobogrammatic(6))
+    # s = Solution()
+    # print(s.findStrobogrammatic(6))

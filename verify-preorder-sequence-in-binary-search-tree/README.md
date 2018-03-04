@@ -59,5 +59,5 @@ Leave me comments, if you have better ways to solve.
     
             return True
     
-    s = Solution()
-    print(s.verifyPreorder([10,7,4,8,6,40,23]))
+    # s = Solution()
+    # print(s.verifyPreorder([10,7,4,8,6,40,23]))

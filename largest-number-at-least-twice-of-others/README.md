@@ -75,8 +75,9 @@ Leave me comments, if you have better ways to solve.
                 return max_index
             else:
                 return -1
-    s = Solution()
-    print s.dominantIndex([3, 6, 1, 0]) 
-    print s.dominantIndex([1, 2, 3, 4])
-    print s.dominantIndex([])
-    print s.dominantIndex([1])
+    
+    # s = Solution()
+    # print s.dominantIndex([3, 6, 1, 0]) 
+    # print s.dominantIndex([1, 2, 3, 4])
+    # print s.dominantIndex([])
+    # print s.dominantIndex([1])

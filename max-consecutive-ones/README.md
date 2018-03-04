@@ -74,7 +74,7 @@ Leave me comments, if you have better ways to solve.
                 i = j + 1
             return max_count
     
-    s = Solution()
-    print s.findMaxConsecutiveOnes([0]) # 0
-    print s.findMaxConsecutiveOnes([1, 0, 1]) # 1
-    print s.findMaxConsecutiveOnes([1]) # 1
+    # s = Solution()
+    # print s.findMaxConsecutiveOnes([0]) # 0
+    # print s.findMaxConsecutiveOnes([1, 0, 1]) # 1
+    # print s.findMaxConsecutiveOnes([1]) # 1

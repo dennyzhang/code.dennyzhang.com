@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
                         max_product = max(max_product, product)
             return max_product
     
-    s = Solution()
-    print s.maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) # 16
-    print s.maxProduct(["a", "ab", "abc", "d", "cd", "bcd", "abcd"]) # 4
-    print s.maxProduct(["a", "aa", "aaa", "aaaa"]) # 0
+    # s = Solution()
+    # print s.maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) # 16
+    # print s.maxProduct(["a", "ab", "abc", "d", "cd", "bcd", "abcd"]) # 4
+    # print s.maxProduct(["a", "aa", "aaa", "aaaa"]) # 0

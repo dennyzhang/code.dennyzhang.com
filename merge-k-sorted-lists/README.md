@@ -63,5 +63,5 @@ Leave me comments, if you have better ways to solve.
                     break
             return dummyNode.next
     
-    s = Solution()
-    print s.mergeKLists([[], []])
+    # s = Solution()
+    # print s.mergeKLists([[], []])

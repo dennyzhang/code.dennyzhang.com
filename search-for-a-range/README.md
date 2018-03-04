@@ -71,5 +71,5 @@ Leave me comments, if you have better ways to solve.
             right_index = min(left, right)
             return [left_index, right_index]
     
-    s = Solution()
-    print s.searchRange([5,7,7,8,8,8,10], 8)
+    # s = Solution()
+    # print s.searchRange([5,7,7,8,8,8,10], 8)

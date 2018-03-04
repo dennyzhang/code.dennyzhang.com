@@ -87,9 +87,9 @@ Leave me comments, if you have better ways to solve.
             for i in range(length): res = res*10+l[i]
             return res
     
-    s = Solution()
-    print(s.monotoneIncreasingDigits(101)) # 99
-    print(s.monotoneIncreasingDigits(120)) # 119
-    print(s.monotoneIncreasingDigits(332)) # 299
-    print(s.monotoneIncreasingDigits(668841)) # 667999
-    print(s.monotoneIncreasingDigits(10)) # 9
+    # s = Solution()
+    # print(s.monotoneIncreasingDigits(101)) # 99
+    # print(s.monotoneIncreasingDigits(120)) # 119
+    # print(s.monotoneIncreasingDigits(332)) # 299
+    # print(s.monotoneIncreasingDigits(668841)) # 667999
+    # print(s.monotoneIncreasingDigits(10)) # 9

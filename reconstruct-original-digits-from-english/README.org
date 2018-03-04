@@ -88,9 +88,9 @@ class Solution(object):
                 res = '%s%s' % (res, str(i)*l[i])
         return res
 
-s = Solution()
-print s.originalDigits('owoztneoer') # 012
-print s.originalDigits('fviefuro') # 45
-print s.originalDigits('xsi') # 6
-print s.originalDigits('nnei') # 9
+# s = Solution()
+# print s.originalDigits('owoztneoer') # 012
+# print s.originalDigits('fviefuro') # 45
+# print s.originalDigits('xsi') # 6
+# print s.originalDigits('nnei') # 9
 #+END_SRC

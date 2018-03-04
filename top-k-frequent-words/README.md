@@ -69,5 +69,5 @@ Leave me comments, if you have better ways to solve.
             sorted_list = sorted(key_list, cmp=myCompare)
             return sorted_list[0:k]
     
-    s = Solution()
-    print s.topKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4)
+    # s = Solution()
+    # print s.topKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4)

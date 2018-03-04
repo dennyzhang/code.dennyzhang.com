@@ -69,7 +69,7 @@ Leave me comments, if you have better ways to solve.
                 i = max_index + 1
             return res
     
-    s = Solution()
-    # print s.partitionLabels("eaaaabaaec")
-    print s.partitionLabels("ababcbacadefegdehijhklij") # [9, 7, 8]
-    print s.partitionLabels("qiejxqfnqceocmy") # [13, 1, 1]
+    # s = Solution()
+    # # print s.partitionLabels("eaaaabaaec")
+    # print s.partitionLabels("ababcbacadefegdehijhklij") # [9, 7, 8]
+    # print s.partitionLabels("qiejxqfnqceocmy") # [13, 1, 1]

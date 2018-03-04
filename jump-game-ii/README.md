@@ -58,6 +58,6 @@ Leave me comments, if you have better ways to solve.
                     minSteps = min(minSteps, steps+1)
             return minSteps
     
-    s = Solution()
-    print(s.jump([7,0,9,6,9,6,1,7,9,0,1,2,9,0,3])) # 2
-    print(s.jump([2,3,1,1,4])) # 2
+    # s = Solution()
+    # print(s.jump([7,0,9,6,9,6,1,7,9,0,1,2,9,0,3])) # 2
+    # print(s.jump([2,3,1,1,4])) # 2

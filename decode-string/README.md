@@ -81,6 +81,6 @@ Leave me comments, if you have better ways to solve.
             if prev_str != '': stack.append(prev_str)
             return ''.join(stack)
     
-    s = Solution()
-    print s.decodeString('2[abc]3[cd]ef') #abcabccdcdcdef
-    print s.decodeString('3[a2[c]]') # accaccacc
+    # s = Solution()
+    # print s.decodeString('2[abc]3[cd]ef') #abcabccdcdcdef
+    # print s.decodeString('3[a2[c]]') # accaccacc

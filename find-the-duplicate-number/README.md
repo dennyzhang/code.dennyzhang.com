@@ -61,5 +61,5 @@ Leave me comments, if you have better ways to solve.
                     left = mid + 1
             return None
     
-    s = Solution()
-    print s.findDuplicate([1,3,4,2,1])
+    # s = Solution()
+    # print s.findDuplicate([1,3,4,2,1])

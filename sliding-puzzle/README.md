@@ -110,8 +110,8 @@ Leave me comments, if you have better ways to solve.
                 # change back
                 matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
     
-    s = Solution()
-    print s.slidingPuzzle([[1,2,3],[4,0,5]]) # 1
-    print s.slidingPuzzle([[4,1,2],[5,0,3]]) # 5
-    print s.slidingPuzzle([[3,2,4],[1,5,0]]) # 14
-    print s.slidingPuzzle([[1,2,3],[5,4,0]]) # -1
+    # s = Solution()
+    # print s.slidingPuzzle([[1,2,3],[4,0,5]]) # 1
+    # print s.slidingPuzzle([[4,1,2],[5,0,3]]) # 5
+    # print s.slidingPuzzle([[3,2,4],[1,5,0]]) # 14
+    # print s.slidingPuzzle([[1,2,3],[5,4,0]]) # -1

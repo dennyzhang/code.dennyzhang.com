@@ -55,5 +55,5 @@ Leave me comments, if you have better ways to solve.
             if a == b: return -1
             return max(len(a), len(b))
     
-    s = Solution()
-    print(s.findLUSlength("aefawfawfawfaw", "aefawfeawfwafwaef")) # 17
+    # s = Solution()
+    # print(s.findLUSlength("aefawfawfawfaw", "aefawfeawfwafwaef")) # 17

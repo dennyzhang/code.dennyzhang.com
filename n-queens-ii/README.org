@@ -68,7 +68,7 @@ class Solution(object):
                     return False
         return True
                     
-s = Solution()
-print s.totalNQueens(1) # 1
-print s.totalNQueens(4) # 2
+# s = Solution()
+# print s.totalNQueens(1) # 1
+# print s.totalNQueens(4) # 2
 #+END_SRC

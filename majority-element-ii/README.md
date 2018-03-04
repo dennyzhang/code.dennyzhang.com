@@ -58,8 +58,8 @@ Leave me comments, if you have better ways to solve.
                 res.append(n2)
             return res
     
-    s = Solution()
+    # s = Solution()
     # print s.majorityElement([1, 2])
     # print s.majorityElement([1,2,1,1,1,3,3,4,3,3,3,4,4,4])
-    print s.majorityElement([1,1,1,2,3,4,5,6])
+    # print s.majorityElement([1,1,1,2,3,4,5,6])
     # print s.majorityElement([1, 2, 3, 2, 3, 3])

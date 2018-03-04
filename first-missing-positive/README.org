@@ -62,6 +62,6 @@ class Solution(object):
                 return i+1
         return length+1
 
-s = Solution()
-print s.firstMissingPositive([3,4,-1,1])
+# s = Solution()
+# print s.firstMissingPositive([3,4,-1,1])
 #+END_SRC

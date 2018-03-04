@@ -55,5 +55,5 @@ Leave me comments, if you have better ways to solve.
                 left, right = left+1, right-1
             return True
     
-    s = Solution()
-    print(s.isPalindrome("aa"))
+    # s = Solution()
+    # print(s.isPalindrome("aa"))

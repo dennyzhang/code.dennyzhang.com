@@ -105,6 +105,6 @@ Leave me comments, if you have better ways to solve.
                         stack.append(element)
             return stack
     
-    s = Solution()
-    print s.asteroidCollision([8, -8]) # []
-    print s.asteroidCollision([-2,-1,1,2]) # [-2,-1,1,2]
+    # s = Solution()
+    # print s.asteroidCollision([8, -8]) # []
+    # print s.asteroidCollision([-2,-1,1,2]) # [-2,-1,1,2]

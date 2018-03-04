@@ -41,5 +41,5 @@ Leave me comments, if you have better ways to solve.
             for num in nums: heapq.heappush(q, num)
             return heapq.nlargest(k, q)[-1]
     
-    s = Solution()
-    print s.findKthLargest([3,2,1,5,6,4], 2) # 5
+    # s = Solution()
+    # print s.findKthLargest([3,2,1,5,6,4], 2) # 5

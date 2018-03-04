@@ -72,6 +72,6 @@ Leave me comments, if you have better ways to solve.
                 ret = float(nums3[(m+n)/2-1] + nums3[(m+n)/2])/2
             return ret
     
-    s = Solution()
-    print s.findMedianSortedArrays([1, 3], [2])
-    print s.findMedianSortedArrays([1, 2], [3, 4])
+    # s = Solution()
+    # print s.findMedianSortedArrays([1, 3], [2])
+    # print s.findMedianSortedArrays([1, 2], [3, 4])

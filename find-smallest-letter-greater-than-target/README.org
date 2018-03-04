@@ -115,6 +115,6 @@ class Solution(object):
             index = (right + 1) % length
             return letters[index]
 
-s = Solution()
-print s.nextGreatestLetter(["c","f","j"], "j")
+# s = Solution()
+# print s.nextGreatestLetter(["c","f","j"], "j")
 #+END_SRC

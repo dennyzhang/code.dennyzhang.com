@@ -70,5 +70,5 @@ Leave me comments, if you have better ways to solve.
                             return res
             return res
     
-    s = Solution()    
-    print(s.maximumSwap(2736))
+    # s = Solution()    
+    # print(s.maximumSwap(2736))
