@@ -1,4 +1,4 @@
-* Leetcode: Maximum Product Subarray                                              :BLOG:Hard:
+* Leetcode: Maximum Product Subarray                              :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -6,6 +6,10 @@
 :END:
 ---------------------------------------------------------------------
 Maximum Product Subarray
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://brain.dennyzhang.com/tag/subarray][Tag: #subarray]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest product.
 
