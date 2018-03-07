@@ -8,7 +8,6 @@ Battleships in a Board
 ---
 
 Similar Problems:  
-
 -   [Tag: #array](https://brain.dennyzhang.com/tag/array)
 
 ---

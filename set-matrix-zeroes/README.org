@@ -2,10 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring
+:type:     array
 :END:
 ---------------------------------------------------------------------
 Set row and column to 0
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/lonely-pixel-i][Lonely Pixel I]]
+- [[https://brain.dennyzhang.com/tag/array][Tag: #array]]
 ---------------------------------------------------------------------
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
 

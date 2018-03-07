@@ -8,7 +8,6 @@ Alien Dictionary
 ---
 
 Similar Problems:  
-
 -   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -50,7 +49,6 @@ Example 3:
     The order is invalid, so return "".
 
 Note:  
-
 1.  You may assume all letters are in lowercase.
 2.  You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
 3.  If the order is invalid, return an empty string.

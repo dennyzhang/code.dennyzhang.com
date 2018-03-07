@@ -8,7 +8,6 @@ Longest Line of Consecutive One in Matrix
 ---
 
 Similar Problems:  
-
 -   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
 
 ---

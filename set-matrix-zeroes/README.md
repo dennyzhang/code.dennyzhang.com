@@ -7,6 +7,12 @@ Set row and column to 0
 
 ---
 
+Similar Problems:  
+-   [Lonely Pixel I](https://brain.dennyzhang.com/lonely-pixel-i)
+-   [Tag: #array](https://brain.dennyzhang.com/tag/array)
+
+---
+
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.  
 
 Follow up:  

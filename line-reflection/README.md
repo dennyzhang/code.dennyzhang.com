@@ -8,7 +8,6 @@ Line Reflection
 ---
 
 Similar Problems:  
-
 -   [Tag: #set](https://brain.dennyzhang.com/tag/set)
 
 ---
@@ -16,10 +15,12 @@ Similar Problems:
 Given n points on a 2D plane, find if there is such a line parallel to y-axis that reflect the given points.  
 
 Example 1:  
-Given points = [[1,1],[-1,1]], return true.  
+
+    Given points = [[1,1],[-1,1]], return true.
 
 Example 2:  
-Given points = [[1,1],[-1,-1]], return false.  
+
+    Given points = [[1,1],[-1,-1]], return false.
 
 Follow up:  
 Could you do better than O(n^2)?  
@@ -46,7 +47,7 @@ Leave me comments, if you have better ways to solve.
             """
             import sys
             if len(points) == 0: return True
-            s, s_removed = set(), set()
+            s, s_removed = set([]), set([])
             min_x, max_x = sys.maxsize, -sys.maxsize-1
             for [x, y] in points:
                 if x<min_x: min_x = x
