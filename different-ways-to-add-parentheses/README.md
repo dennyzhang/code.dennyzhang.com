@@ -1,4 +1,4 @@
-# Leetcode: Different Ways to Add Parentheses     :BLOG:Basic:
+# Leetcode: Different Ways to Add Parentheses     :BLOG:Hard:
 
 
 ---
@@ -8,7 +8,7 @@ Different Ways to Add Parentheses
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Tag: #divideconquer](https://brain.dennyzhang.com/tag/divideconquer)
 
 ---
 
@@ -40,3 +40,16 @@ Credits To: [leetcode.com](https://leetcode.com/problems/different-ways-to-add-p
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/different-ways-to-add-parentheses
+    class Solution:
+        def diffWaysToCompute(self, input):
+            res = 
+            for i, ch in enumerate(input):
+                if ch in "+-*":
+                    l1 = self.diffWaysToCompute(input[:i])
+                    l2 = self.diffWaysToCompute(input[i+1:])
+                    for num1 in l1:
+                        for num2 in l2:
+                            if ch == '+': res.append(num1+num2)
+                            if ch == '-': res.append(num1-num2)
+                            if ch == '*': res.append(num1*num2)
+            return res if res != else [int(input)]

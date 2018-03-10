@@ -1,14 +1,14 @@
-* Leetcode: Different Ways to Add Parentheses                                              :BLOG:Basic:
+* Leetcode: Different Ways to Add Parentheses                                              :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     divideconquer, inspiring
 :END:
 ---------------------------------------------------------------------
 Different Ways to Add Parentheses
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- [[https://brain.dennyzhang.com/tag/divideconquer][Tag: #divideconquer]]
 ---------------------------------------------------------------------
 Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.
 
@@ -41,5 +41,17 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/different-ways-to-add-parentheses
-
+class Solution:
+    def diffWaysToCompute(self, input):
+        res = []
+        for i, ch in enumerate(input):
+            if ch in "+-*":
+                l1 = self.diffWaysToCompute(input[:i])
+                l2 = self.diffWaysToCompute(input[i+1:])
+                for num1 in l1:
+                    for num2 in l2:
+                        if ch == '+': res.append(num1+num2)
+                        if ch == '-': res.append(num1-num2)
+                        if ch == '*': res.append(num1*num2)
+        return res if res !=[] else [int(input)]
 #+END_SRC
