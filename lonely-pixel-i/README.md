@@ -8,7 +8,6 @@ Lonely Pixel I
 ---
 
 Similar Problems:  
-
 -   [Lonely Pixel II](https://brain.dennyzhang.com/lonely-pixel-ii)
 -   [Set Matrix Zeroes](https://brain.dennyzhang.com/set-matrix-zeroes)
 -   [Tag: #array](https://brain.dennyzhang.com/tag/array)

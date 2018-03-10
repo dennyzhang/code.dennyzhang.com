@@ -8,7 +8,6 @@ Next Closest Time
 ---
 
 Similar Problems:  
-
 -   [Tag: #manydetails](https://brain.dennyzhang.com/tag/manydetails)
 
 ---
@@ -42,7 +41,7 @@ Leave me comments, if you have better ways to solve.
     ##      Compare the absolute diff with rotated enforced
     ##
     ## Assumption: "11:11" -> "11:11"
-    ## Complexity:
+    ## Complexity: Time O(1), Space O(1)
     class Solution:
         def nextClosestTime(self, time):
             """
@@ -56,7 +55,7 @@ Leave me comments, if you have better ways to solve.
     
             l = [""]
             for i in range(4):
-                l2 = 
+                l2 = []
                 for ch in ch_set:
                     for item in l:
                         if i == 1:

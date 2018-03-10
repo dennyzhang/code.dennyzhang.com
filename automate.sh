@@ -25,7 +25,7 @@ function refresh_link() {
             rm -rf $dirname/README.orge
         fi
 
-        if ! grep LintCode.com $f 1>/dev/null 2>&1; then
+        if ! grep -i lintcode.com $f 1>/dev/null 2>&1; then
             if ! grep "leetcode.com.*$dirname" $f 1>/dev/null 2>&1; then
                 echo "Update Leetcode url for $f"            
                 sed -ie "s/https:\/\/leetcode.com\/problems\/.*/https:\/\/leetcode.com\/problems\/$dirname\/description\/][leetcode.com]]/g" $f

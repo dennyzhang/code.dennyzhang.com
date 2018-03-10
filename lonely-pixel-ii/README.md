@@ -8,7 +8,6 @@ Lonely Pixel II
 ---
 
 Similar Problems:  
-
 -   [Lonely Pixel I](https://brain.dennyzhang.com/lonely-pixel-i)
 -   [Tag: #array](https://brain.dennyzhang.com/tag/array)
 
