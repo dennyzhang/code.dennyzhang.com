@@ -1,0 +1,45 @@
+* Leetcode: Different Ways to Add Parentheses                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Different Ways to Add Parentheses
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+---------------------------------------------------------------------
+Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.
+
+Example 1
+#+BEGIN_EXAMPLE
+Input: "2-1-1".
+
+((2-1)-1) = 0
+(2-(1-1)) = 2
+Output: [0, 2]
+#+END_EXAMPLE
+
+Example 2
+#+BEGIN_EXAMPLE
+Input: "2*3-4*5"
+
+(2*(3-(4*5))) = -34
+((2*3)-(4*5)) = -14
+((2*(3-4))*5) = -10
+(2*((3-4)*5)) = -10
+(((2*3)-4)*5) = 10
+Output: [-34, -14, -10, -10, 10]
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/different-ways-to-add-parentheses][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/different-ways-to-add-parentheses/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/different-ways-to-add-parentheses
+
+#+END_SRC

@@ -1,4 +1,4 @@
-# Leetcode: Next Closest Time     :BLOG:Basic:
+# Leetcode: Next Closest Time     :BLOG:Medium:
 
 
 ---
@@ -8,7 +8,8 @@ Next Closest Time
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+
+-   [Tag: #manydetails](https://brain.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -35,3 +36,51 @@ Credits To: [leetcode.com](https://leetcode.com/problems/next-closest-time/descr
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/next-closest-time
+    ## Basic Ideas: Only pow(4, 4) combinations
+    ##      Get all of them, and rule out the invalid onces
+    ##      Convert the time string to seconds
+    ##      Compare the absolute diff with rotated enforced
+    ##
+    ## Assumption: "11:11" -> "11:11"
+    ## Complexity:
+    class Solution:
+        def nextClosestTime(self, time):
+            """
+            :type time: str
+            :rtype: str
+            """
+            import sys
+            ch_set = set(time)
+            ch_set.remove(':')
+            if len(ch_set) == 1: return time
+    
+            l = [""]
+            for i in range(4):
+                l2 = 
+                for ch in ch_set:
+                    for item in l:
+                        if i == 1:
+                            l2.append("%s%s:" % (item, ch))
+                        else:
+                            l2.append("%s%s" % (item, ch))
+                l = l2
+    
+            minutes = self.getMinutes(time)
+            min_diff, index  = sys.maxsize, None
+            total_minutes = 24*60
+            for i in range(len(l)):
+                t = l[i]
+                # check whether t is valid
+                if int(t[0])*10+int(t[1]) >= 24: continue
+                if int(t[3])*10+int(t[4]) >= 60: continue
+    
+                diff = (self.getMinutes(t)-minutes+total_minutes) % total_minutes
+                if diff == 0: continue
+    
+                if min_diff > diff:
+                    min_diff, index = diff, i
+    
+            return l[index]
+    
+        def getMinutes(self, time):
+            return (int(time[0])*10 + int(time[1]))*60+(int(time[3])*10 + int(time[4]))

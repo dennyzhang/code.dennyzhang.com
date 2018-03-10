@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch, inspiring
+:type:     binarysearch, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Count Negative Number
