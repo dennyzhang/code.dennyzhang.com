@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://brain.dennyzhang.com/different-ways-to-add-parentheses
     class Solution:
         def diffWaysToCompute(self, input):
-            res = 
+            res = []
             for i, ch in enumerate(input):
                 if ch in "+-*":
                     l1 = self.diffWaysToCompute(input[:i])
@@ -52,4 +52,4 @@ Leave me comments, if you have better ways to solve.
                             if ch == '+': res.append(num1+num2)
                             if ch == '-': res.append(num1-num2)
                             if ch == '*': res.append(num1*num2)
-            return res if res != else [int(input)]
+            return res if res !=[] else [int(input)]

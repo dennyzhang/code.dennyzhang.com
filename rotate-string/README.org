@@ -1,0 +1,42 @@
+* Leetcode: Rotate String                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Rotate String
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
+---------------------------------------------------------------------
+We are given two strings, A and B.
+
+A shift on A consists of taking string A and moving the leftmost character to the rightmost position. For example, if A = 'abcde', then it will be 'bcdea' after one shift on A. Return True if and only if A can become B after some number of shifts on A.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = 'abcde', B = 'cdeab'
+Output: true
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = 'abcde', B = 'abced'
+Output: false
+#+END_EXAMPLE
+
+Note:
+
+- A and B will have length at most 100.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-string][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/rotate-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/rotate-string
+
+#+END_SRC

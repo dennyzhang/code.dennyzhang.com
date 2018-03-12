@@ -2,10 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     repeatedstring
+:type:     repeatedstring, string
 :END:
 ---------------------------------------------------------------------
 Repeated String Match
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/rotate-string][Rotate String]]
+- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
 ---------------------------------------------------------------------
 Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.
 
