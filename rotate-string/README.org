@@ -8,6 +8,7 @@
 Rotate String
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/repeated-string-match][Repeated String Match]]
 - [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
 ---------------------------------------------------------------------
 We are given two strings, A and B.
