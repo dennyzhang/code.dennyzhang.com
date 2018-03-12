@@ -38,3 +38,11 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-string/descripti
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/rotate-string
+    class Solution:
+        def rotateString(self, A, B):
+            """
+            :type A: str
+            :type B: str
+            :rtype: bool
+            """
+            return len(A) == len(B) and B in A + A

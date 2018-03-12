@@ -9,6 +9,7 @@ Champagne Tower
 
 Similar Problems:  
 -   [Reaching Points](https://brain.dennyzhang.com/reaching-points)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 -   [Tag: #inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
 ---
@@ -19,7 +20,7 @@ Then, some champagne is poured in the first glass at the top.  When the top most
 
 For example, after one cup of champagne is poured, the top most glass is full.  After two cups of champagne are poured, the two glasses on the second row are half full.  After three cups of champagne are poured, those two cups become full - there are 3 full glasses total now.  After four cups of champagne are poured, the third row has the middle glass half full, and the two outside glasses are a quarter full, as pictured below.  
 
-[![img](//raw.githubusercontent.com/DennyZhang/images/master/code/tower.png)](Leetcode: Champagne Tower)  
+![img](//raw.githubusercontent.com/DennyZhang/images/master/code/tower.png)  
 
 Now after pouring some non-negative integer cups of champagne, return how full the j-th glass in the i-th row is (both i and j are 0 indexed.)  
 
@@ -47,3 +48,27 @@ Credits To: [leetcode.com](https://leetcode.com/problems/champagne-tower/descrip
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/champagne-tower
+    ## Basic Ideas: Dynamic programming
+    ##          grid[i][j] will evenly flow to grid[i+1][j] and grid[i+1][j+1]
+    ##
+    ## Complexity: Time O(1), Space O(1).
+    ##             <= 100*100
+    class Solution:
+        def champagneTower(self, poured, query_row, query_glass):
+            """
+            :type poured: int
+            :type query_row: int
+            :type query_glass: int
+            :rtype: float
+            """
+            dp = [0]*(query_glass+1)
+            dp[0] = poured
+            for i in range(1, query_row+1):
+                l = [0]*(query_glass+1)
+                for j in range(0, query_glass+1):
+                    if j>=1 and dp[j-1] > 1:
+                        l[j] += (dp[j-1]-1)/2
+                    if dp[j]>1:
+                        l[j] += (dp[j]-1)/2
+                dp = l
+            return min(dp[query_glass], 1)

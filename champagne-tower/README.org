@@ -1,14 +1,15 @@
-* Leetcode: Champagne Tower                                              :BLOG:Medium:
+* Leetcode: Champagne Tower                                     :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, math
+:type:     inspiring, math, bfs, dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Champagne Tower
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/reaching-points][Reaching Points]]
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 - [[https://brain.dennyzhang.com/tag/inspiring][Tag: #inspiring]]
 ---------------------------------------------------------------------
 We stack glasses in a pyramid, where the first row has 1 glass, the second row has 2 glasses, and so on until the 100th row.  Each glass holds one cup (250ml) of champagne.
@@ -48,5 +49,28 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/champagne-tower
-
+## Basic Ideas: Dynamic programming
+##          grid[i][j] will evenly flow to grid[i+1][j] and grid[i+1][j+1]
+##
+## Complexity: Time O(1), Space O(1).
+##             <= 100*100
+class Solution:
+    def champagneTower(self, poured, query_row, query_glass):
+        """
+        :type poured: int
+        :type query_row: int
+        :type query_glass: int
+        :rtype: float
+        """
+        dp = [0]*(query_glass+1)
+        dp[0] = poured
+        for i in range(1, query_row+1):
+            l = [0]*(query_glass+1)
+            for j in range(0, query_glass+1):
+                if j>=1 and dp[j-1] > 1:
+                    l[j] += (dp[j-1]-1)/2
+                if dp[j]>1:
+                    l[j] += (dp[j]-1)/2
+            dp = l
+        return min(dp[query_glass], 1)
 #+END_SRC

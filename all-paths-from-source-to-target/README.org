@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dfs, redo
+:type:     dfs
 :END:
 ---------------------------------------------------------------------
 All Paths From Source to Target
@@ -40,5 +40,29 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/all-paths-from-source-to-target
+class Solution:
+    def allPathsSourceTarget(self, graph):
+        """
+        :type graph: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        ## Basic Ideas: dfs
+        ## Complexity: Time O(n), Space O(n)
+        length = len(graph)
+        if length == 0: return []
+        if length == 1: return [[0]]
 
+        self.res = []
+        self.l = []
+        self.dfs(0, graph)
+        return self.res
+
+    def dfs(self, node, graph):
+        if node == len(graph) - 1:
+            self.res.append(self.l + [node])
+            return
+        self.l.append(node)
+        for edge in graph[node]:
+            self.dfs(edge, graph)
+        self.l.pop(-1)
 #+END_SRC
