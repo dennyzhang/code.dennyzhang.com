@@ -1,4 +1,4 @@
-Smallest Rotation with Highest Score\* Leetcode: All Paths From Source to Target                      :BLOG:Basic:  
+# Leetcode: All Paths From Source to Target     :BLOG:Basic:
 
 
 ---
