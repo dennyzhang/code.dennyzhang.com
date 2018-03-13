@@ -1,23 +1,57 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Palindromic Substrings     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Palindromic Substrings  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a string, your task is to count how many palindromic substrings in this string.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Example 1:  
+
+    Input: "abc"
+    Output: 3
+    Explanation: Three palindromic strings: "a", "b", "c".
+
+Example 2:  
+
+    Input: "aaa"
+    Output: 6
+    Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+
+Note:  
+The input string length won't exceed 1000.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindromic-substrings)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/palindromic-substrings/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/palindromic-substrings
+    ## Basic Ideas: Choose each character as the central letter
+    ##        The palindrome may have odd length and even length.
+    ## Complexity: Time O(n*n), Space O(1)
+    class Solution:
+        def countSubstrings(self, s):
+            """
+            :type s: str
+            :rtype: int
+            """
+            length = len(s)
+            res = length
+            for i in range(length):
+                for (l,r) in [(i-1, i+1), (i, i+1)]:
+                    while l >=0 and r <= length-1 and s[l] == s[r]:
+                        res += 1
+                        l, r = l-1, r+1
+            return res
