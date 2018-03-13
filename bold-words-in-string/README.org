@@ -1,0 +1,35 @@
+* Leetcode: Bold Words in String                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Bold Words in String
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
+---------------------------------------------------------------------
+Given a set of keywords words and a string S, make all appearances of all keywords in S bold. Any letters between <b> and </b> tags become bold.
+
+The returned string should use the least number of tags possible, and of course the tags should form a valid combination.
+
+For example, given that words = ["ab", "bc"] and S = "aabcd", we should return "a<b>abc</b>d". Note that returning "a<b>a<b>b</b>c</b>d" would use more tags, so it is incorrect.
+
+Note:
+
+1. words has length in range [0, 50].
+- words[i] has length in range [1, 10].
+- S has length in range [0, 500].
+- All characters in words[i] and S are lowercase letters.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bold-words-in-string][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/bold-words-in-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/bold-words-in-string
+
+#+END_SRC

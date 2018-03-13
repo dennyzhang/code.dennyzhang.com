@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 ##   When tx > sx and ty > sy
 ##        we move from the target to the source by using mod functions
 ##
-## Complexity:
+## Complexity: Time O(1), Space O(1)
 class Solution:
     def reachingPoints(self, sx, sy, tx, ty):
         """

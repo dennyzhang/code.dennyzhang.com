@@ -9,6 +9,7 @@ Valid Word Abbreviation
 
 Similar Problems:  
 -   [Flip Game](https://brain.dennyzhang.com/flip-game)
+-   [Flatten Nested List Iterator](https://brain.dennyzhang.com/flatten-nested-list-iterator)
 -   [Tag: #string](https://brain.dennyzhang.com/tag/string)
 -   [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
 
