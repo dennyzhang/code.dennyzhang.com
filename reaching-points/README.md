@@ -42,3 +42,25 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reaching-points/descrip
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/reaching-points
+    ## Basic Ideas:
+    ##   When tx > sx and ty > sy
+    ##        we move from the target to the source by using mod functions
+    ##
+    ## Complexity:
+    class Solution:
+        def reachingPoints(self, sx, sy, tx, ty):
+            """
+            :type sx: int
+            :type sy: int
+            :type tx: int
+            :type ty: int
+            :rtype: bool
+            """
+            if tx<sx or ty<sy: return False
+            if tx==sx: return (ty-sy) % tx == 0
+            if ty==sy: return (tx-sx) % ty == 0
+            if ty>tx:
+                ty=ty%tx
+            else:
+                tx=tx%ty
+            return self.reachingPoints(sx, sy, tx, ty)

@@ -1,0 +1,33 @@
+* Leetcode: Expression Add Operators                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     divideconquer
+:END:
+---------------------------------------------------------------------
+Expression Add Operators
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/tag/divideconquer][Tag: #divideconquer]]
+---------------------------------------------------------------------
+Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators (not unary) +, -, or * between the digits so they evaluate to the target value.
+
+Examples: 
+#+BEGIN_EXAMPLE
+"123", 6 -> ["1+2+3", "1*2*3"] 
+"232", 8 -> ["2*3+2", "2+3*2"]
+"105", 5 -> ["1*0+5","10-5"]
+"00", 0 -> ["0+0", "0-0", "0*0"]
+"3456237490", 9191 -> []
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/expression-add-operators][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/expression-add-operators/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/expression-add-operators
+
+#+END_SRC
