@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, binarysearch, classic, sqrt
+:type:     binarysearch, classic, sqrt
 :END:
 ---------------------------------------------------------------------
 Implement int sqrt(int x).
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]], [[https://brain.dennyzhang.com/tag/binarysearch][Tag: #binarysearch]]
 ---------------------------------------------------------------------
 Implement int sqrt(int x).
 

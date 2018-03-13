@@ -1,0 +1,60 @@
+* Leetcode: Solve the Equation                                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     inspiring, math
+:END:
+---------------------------------------------------------------------
+Solve the Equation
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/tag/math][Tag: #math]]
+---------------------------------------------------------------------
+Solve a given equation and return the value of x in the form of string "x=#value". The equation contains only '+', '-' operation, the variable x and its coefficient.
+
+If there is no solution for the equation, return "No solution".
+
+If there are infinite solutions for the equation, return "Infinite solutions".
+
+If there is exactly one solution for the equation, we ensure that the value of x is an integer.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "x+5-3+x=6+x-2"
+Output: "x=2"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "x=x"
+Output: "Infinite solutions"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "2x=x"
+Output: "x=0"
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: "2x+3x-6x=x+2"
+Output: "x=-1"
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: "x=x+2"
+Output: "No solution"
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/solve-the-equation][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/solve-the-equation/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/solve-the-equation
+
+#+END_SRC
