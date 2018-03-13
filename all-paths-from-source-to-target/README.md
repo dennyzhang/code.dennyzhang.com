@@ -15,11 +15,11 @@ Similar Problems:
 
 Given a directed, acyclic graph of N nodes.  Find all possible paths from node 0 to node N-1, and return them in any order.  
 
-The graph is given as follows:  the nodes are 0, 1, ..., graph.length - 1.  graph[i] is a list of all nodes j for which the edge (i, j) exists.  
+The graph is given as follows:  the nodes are 0, 1, &#x2026;, graph.length - 1.  graph[i] is a list of all nodes j for which the edge (i, j) exists.  
 
 Example:  
 
-    Input: [[1,2], [3], [3], ] 
+    Input: [[1,2], [3], [3], []] 
     Output: [[0,1,3],[0,2,3]] 
     Explanation: The graph looks like this:
     0--->1
@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 
     ## Blog link: https://brain.dennyzhang.com/all-paths-from-source-to-target
     ## Basic Ideas: dfs
-    ## Complexity: Time O(n), Space O(n)
+    ## Complexity: Time O(n!), Space O(n)
     class Solution:
         def allPathsSourceTarget(self, graph):
             """
@@ -49,10 +49,10 @@ Leave me comments, if you have better ways to solve.
             :rtype: List[List[int]]
             """
             length = len(graph)
-            if length == 0: return 
+            if length == 0: return []
             if length == 1: return [[0]]
     
-            self.res, self.l = , 
+            self.res, self.l = [], []
             self.dfs(0, graph)
             return self.res
     

@@ -1,23 +1,31 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Expression Add Operators     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Expression Add Operators  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Tag: #divideconquer](https://brain.dennyzhang.com/tag/divideconquer)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators (not unary) +, -, or \* between the digits so they evaluate to the target value.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Examples:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+    "123", 6 -> ["1+2+3", "1*2*3"] 
+    "232", 8 -> ["2*3+2", "2+3*2"]
+    "105", 5 -> ["1*0+5","10-5"]
+    "00", 0 -> ["0+0", "0-0", "0*0"]
+    "3456237490", 9191 -> []
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/expression-add-operators)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/expression-add-operators/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/expression-add-operators
