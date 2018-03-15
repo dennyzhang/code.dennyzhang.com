@@ -7,6 +7,11 @@ When to buy and sell stock.
 
 ---
 
+Similar Problems:  
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+
+---
+
 Say you have an array for which the ith element is the price of a given stock on day i.  
 
 If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.  

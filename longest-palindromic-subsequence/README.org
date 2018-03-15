@@ -8,7 +8,7 @@
 Longest Palindromic Subsequence
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/dynamicprogramming][#dynamicprogramming]]
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 - [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
 ---------------------------------------------------------------------
 Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.

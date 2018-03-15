@@ -8,7 +8,7 @@
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

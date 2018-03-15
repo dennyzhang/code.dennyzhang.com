@@ -8,7 +8,7 @@
 2 Keys Keyboard
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:
 

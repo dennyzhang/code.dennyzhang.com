@@ -7,6 +7,11 @@ Unique Binary Search Trees II
 
 ---
 
+Similar Problems:  
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+
+---
+
 Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1&#x2026;n.  
 
     For example,

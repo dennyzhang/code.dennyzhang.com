@@ -7,6 +7,11 @@ Count Primes
 
 ---
 
+Similar Problems:  
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+
+---
+
 Count the number of prime numbers less than a non-negative number, n.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-primes)  

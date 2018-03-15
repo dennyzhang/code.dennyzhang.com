@@ -7,6 +7,11 @@ Can I Win
 
 ---
 
+Similar Problems:  
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+
+---
+
 In the "100 game," two players take turns adding, to a running total, any integer from 1..10. The player who first causes the running total to reach or exceed 100 wins.  
 
 What if we change the game so that players cannot re-use integers?  
