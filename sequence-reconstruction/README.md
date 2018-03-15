@@ -10,6 +10,7 @@ Sequence Reconstruction
 Similar Problems:  
 -   [Letter Case Permutation](https://brain.dennyzhang.com/letter-case-permutation)
 -   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
 
 ---
 

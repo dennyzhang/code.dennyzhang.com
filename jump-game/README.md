@@ -7,6 +7,11 @@ Jump Game
 
 ---
 
+Similar Problems:  
+-   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+
+---
+
 Given an array of non-negative integers, you are initially positioned at the first index of the array.  
 
 Each element in the array represents your maximum jump length at that position.  

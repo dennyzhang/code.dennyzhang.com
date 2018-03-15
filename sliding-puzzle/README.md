@@ -9,6 +9,7 @@ Sliding Puzzle
 
 Similar Problems:  
 -   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
+-   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
 
 ---
 

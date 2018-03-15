@@ -7,6 +7,11 @@ Baseball Game
 
 ---
 
+Similar Problems:  
+-   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+
+---
+
 You're now a baseball game point recorder.  
 
 Given a list of strings, each string can be one of the 4 following types:  

@@ -9,6 +9,7 @@ Circular Array Loop
 
 Similar Problems:  
 -   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
 
 ---
 

@@ -9,6 +9,7 @@ Sliding Puzzle
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]]
+- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 On a 2x3 board, there are 5 tiles represented by the integers 1 through 5, and an empty square represented by 0.
 

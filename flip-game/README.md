@@ -10,7 +10,7 @@ Flip Game
 Similar Problems:  
 -   [Flip Game II](https://brain.dennyzhang.com/flip-game-ii)
 -   [Tag: #string](https://brain.dennyzhang.com/tag/string)
--   [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
 
 ---
 
