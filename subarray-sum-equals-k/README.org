@@ -1,4 +1,4 @@
-* Leetcode: Subarray Sum Equals K                                              :BLOG:Basic:
+* Leetcode: Subarray Sum Equals K                                :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

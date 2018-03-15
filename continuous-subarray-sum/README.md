@@ -8,7 +8,7 @@ Continuous Subarray Sum
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#hard](https://brain.dennyzhang.com/category/hard)
 
 ---
 

@@ -1,4 +1,4 @@
-* Leetcode: Subarray Product Less Than K                         :BLOG:Medium:
+* Leetcode: Subarray Product Less Than K                        :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

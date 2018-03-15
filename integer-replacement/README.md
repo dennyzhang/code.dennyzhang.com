@@ -7,6 +7,11 @@ Integer Replacement
 
 ---
 
+Similar Problems:  
+-   [Tag: #math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Given a positive integer n and you can do operations as follow:  
 
 1.  If n is even, replace n with n/2.

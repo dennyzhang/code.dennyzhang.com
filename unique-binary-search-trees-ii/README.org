@@ -1,4 +1,4 @@
-* Leetcode: Unique Binary Search Trees II                                              :BLOG:Hard:
+* Leetcode: Unique Binary Search Trees II                         :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

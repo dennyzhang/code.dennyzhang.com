@@ -8,7 +8,7 @@ Different Ways to Add Parentheses
 ---
 
 Similar Problems:  
--   [Tag: #divideconquer](https://brain.dennyzhang.com/tag/divideconquer)
+-   [Review: Divide And Conquer Problems](https://brain.dennyzhang.com/review-divideconquer), [Tag: #divideconquer](https://brain.dennyzhang.com/tag/divideconquer)
 
 ---
 

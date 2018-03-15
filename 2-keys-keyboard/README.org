@@ -1,4 +1,4 @@
-* Leetcode: 2 Keys Keyboard                                              :BLOG:Amusing:
+* Leetcode: 2 Keys Keyboard                                    :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
