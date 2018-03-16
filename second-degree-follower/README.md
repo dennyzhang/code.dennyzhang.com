@@ -1,4 +1,4 @@
-# Leetcode: Second Degree Follower     :BLOG:Basic:
+# Leetcode: Second Degree Follower     :BLOG:Medium:
 
 
 ---
@@ -50,3 +50,13 @@ Credits To: [leetcode.com](https://leetcode.com/problems/second-degree-follower/
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/second-degree-follower
+    ## Explain the business logic
+    ##   A follows B. Then A is follwer, B is followee
+    ## What are second degree followers?
+    ##   A follows B, and B follows C. 
+    ##   Then A is the second degree followers of C
+    ##
+    select f1.follower, count(distinct f2.follower) as num
+    from follow as f1 inner join follow as f2
+    on f1.follower = f2.followee
+    group by f1.follower

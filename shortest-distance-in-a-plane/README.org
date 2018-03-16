@@ -1,0 +1,49 @@
+* Leetcode: Shortest Distance in a Plane                         :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Shortest Distance in a Plane
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+---------------------------------------------------------------------
+Table point_2d holds the coordinates (x,y) of some unique points (more than two) in a plane.
+Write a query to find the shortest distance between these points rounded to 2 decimals.
+#+BEGIN_EXAMPLE
+| x  | y  |
+|----|----|
+| -1 | -1 |
+| 0  | 0  |
+| -1 | -2 |
+#+END_EXAMPLE
+
+The shortest distance is 1.00 from point (-1,-1) to (-1,2). So the output should be:
+#+BEGIN_EXAMPLE
+| shortest |
+|----------|
+| 1.00     |
+#+END_EXAMPLE
+
+Note: The longest distance among all the points are less than 10000.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-distance-in-a-plane][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/shortest-distance-in-a-plane/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/shortest-distance-in-a-plane
+select round(min(sqrt((t1.x-t2.x)*(t1.x-t2.x) + (t1.y-t2.y)*(t1.y-t2.y))), 2) as shortest
+from point_2d as t1, point_2d as t2
+where t1.x!=t2.x or t1.y!=t2.y
+
+# select round(sqrt((t1.x-t2.x)*(t1.x-t2.x) + (t1.y-t2.y)*(t1.y-t2.y)), 2) as shortest
+# from point_2d as t1, point_2d as t2
+# where t1.x!=t2.x or t1.y!=t2.y
+# order by shortest asc
+# limit 1
+#+END_SRC
