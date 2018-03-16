@@ -7,6 +7,11 @@ Divide two integers without using multiplication, division and mod operator.
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Divide two integers without using multiplication, division and mod operator.  
 
 If it is overflow, return MAX\_INT.  

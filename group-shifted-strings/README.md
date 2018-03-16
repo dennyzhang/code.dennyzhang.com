@@ -39,7 +39,9 @@ Leave me comments, if you have better ways to solve.
     ## Basic Ideas: hashmap
     ##
     ## From ["az", "ba"] we know, it's a rotated shift
-    ## The order doesn't matter
+    ## Assumptions:
+    ##  No empty string
+    ##  The order doesn't matter
     ##
     ## Complexity: Time O(n), Space O(n)
     class Solution:
@@ -49,13 +51,10 @@ Leave me comments, if you have better ways to solve.
             :rtype: List[List[str]]
             """
             import collections
-            m = collections.defaultdict(lambda:)
-            for string in strings:
-                if string == "":
-                    m[()].append(string)
-                    continue
+            m = collections.defaultdict(list)
+            for s in strings:
                 # ba -> (0, 25)
                 # az -> (0, 25)
-                tup = tuple([(ord(ch)-ord(string[0]))%26 for ch in string])
-                m[tup].append(string)
+                tup = tuple([(ord(ch)-ord(s[0]))%26 for ch in s])
+                m[tup].append(s)
             return [m[key] for key in m]

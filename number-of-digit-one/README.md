@@ -7,6 +7,11 @@ Number of Digit One
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.  
 
 For example:  

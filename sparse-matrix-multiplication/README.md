@@ -8,7 +8,7 @@ Sparse Matrix Multiplication
 ---
 
 Similar Problems:  
--   [Tag: #math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 
 ---
 

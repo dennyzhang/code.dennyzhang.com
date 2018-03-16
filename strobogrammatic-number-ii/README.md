@@ -10,6 +10,7 @@ Strobogrammatic Number II
 Similar Problems:  
 -   [Unique Binary Search Trees II](https://brain.dennyzhang.com/unique-binary-search-trees-ii)
 -   [Strobogrammatic Number](https://brain.dennyzhang.com/strobogrammatic-number)
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 -   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---

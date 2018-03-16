@@ -9,6 +9,7 @@ Reconstruct Original Digits from English
 
 Similar Problems:  
 -   [Strobogrammatic Number](https://brain.dennyzhang.com/strobogrammatic-number)
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 -   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---

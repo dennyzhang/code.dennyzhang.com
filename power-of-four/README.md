@@ -7,6 +7,11 @@ Given an integer (signed 32 bits), write a function to check whether it is a pow
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Given an integer (signed 32 bits), write a function to check whether it is a power of 4.  
 
 Example:  

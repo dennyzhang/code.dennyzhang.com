@@ -7,6 +7,11 @@ Validate if a given string is numeric.
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Validate if a given string is numeric.  
 
 Some examples:  

@@ -7,6 +7,11 @@ Given an integer, write a function to determine if it is a power of two.
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Given an integer, write a function to determine if it is a power of two.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/power-of-two)  

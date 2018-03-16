@@ -8,7 +8,7 @@ Bulb Switcher II
 ---
 
 Similar Problems:  
--   Tag: [#match](https://brain.dennyzhang.com/category/match)
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 
 ---
 

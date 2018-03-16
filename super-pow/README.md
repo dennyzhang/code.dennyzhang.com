@@ -9,7 +9,8 @@ Super Pow
 
 Similar Problems:  
 -   [Pow(x, n)](https://brain.dennyzhang.com/powx-n)
--   Tag: [#math](https://brain.dennyzhang.com/tag/math), [#recursive](https://brain.dennyzhang.com/tag/recursive)
+-   Tag: [#recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 -   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
 
 ---

@@ -10,6 +10,7 @@ Champagne Tower
 Similar Problems:  
 -   [Reaching Points](https://brain.dennyzhang.com/reaching-points)
 -   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 -   [Tag: #inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
 ---

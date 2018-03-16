@@ -7,6 +7,11 @@ Evaluate Reverse Polish Notation
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Evaluate the value of an arithmetic expression in Reverse Polish Notation.  
 
 Valid operators are +, -, \*, /. Each operand may be an integer or another expression.  

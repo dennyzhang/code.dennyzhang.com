@@ -10,6 +10,7 @@ Sum of two integers without using + or -
 Similar Problems:  
 -   [LintCode: A + B Problem](https://brain.dennyzhang.com/a-b-problem)
 -   [Tag: #bitmanipulation](https://brain.dennyzhang.com/tag/bitmanipulation)
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 
 ---
 

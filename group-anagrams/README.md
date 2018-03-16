@@ -7,6 +7,12 @@ Given an array of strings, group anagrams together.
 
 ---
 
+Similar Problems:  
+-   [Group Shifted Strings](https://brain.dennyzhang.com/group-shifted-strings)
+-   [Tag: #hashmap](https://brain.dennyzhang.com/tag/hashmap)
+
+---
+
 Given an array of strings, group anagrams together.  
 
     For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], 

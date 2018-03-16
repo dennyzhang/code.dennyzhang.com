@@ -7,6 +7,11 @@ Valid Perfect Square
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Given a positive integer num, write a function which returns True if num is a perfect square else False.  
 
 Note: Do not use any built-in library function such as sqrt.  

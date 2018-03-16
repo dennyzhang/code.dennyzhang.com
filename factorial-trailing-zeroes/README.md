@@ -7,6 +7,11 @@ Factorial Trailing Zeroes
 
 ---
 
+Similar Problems:  
+-   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+
+---
+
 Given an integer n, return the number of trailing zeroes in n!.  
 
 Note: Your solution should be in logarithmic time complexity.  
