@@ -74,5 +74,10 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/count-student-number-in-departments
-
+select dept_name, 
+  sum(case when student_id is null then 0 else 1 end) as student_number
+from department left join student
+on department.dept_id = student.dept_id
+group by department.dept_id
+order by student_number desc, dept_name
 #+END_SRC
