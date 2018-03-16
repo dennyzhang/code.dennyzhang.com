@@ -64,7 +64,6 @@ Leave me comments, if you have better ways to solve.
             m = collections.defaultdict(lambda: 0)
             for ch in licensePlate:
                 if ch.isalpha(): m[ch.lower()] += 1
-    
             for word in sorted(words, key=lambda s: len(s)):
                 word_m = collections.defaultdict(lambda: 0)
                 for ch in word: word_m[ch] += 1

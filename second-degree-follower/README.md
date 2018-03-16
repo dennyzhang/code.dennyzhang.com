@@ -14,7 +14,7 @@ Similar Problems:
 
 In facebook, there is a follow table with two columns: followee, follower.  
 
-Please write a sql query to get the amount of each follower’s follower if he/she has one.  
+Please write a sql query to get the amount of each follower's follower if he/she has one.  
 
 For example:  
 
