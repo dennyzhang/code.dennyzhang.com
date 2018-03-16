@@ -8,7 +8,7 @@
 Integer Replacement
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/math][Tag: #math]]
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given a positive integer n and you can do operations as follow:
 

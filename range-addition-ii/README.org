@@ -8,7 +8,7 @@
 Range Addition II
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given an m * n matrix M initialized with all 0's and several update operations.
 

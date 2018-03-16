@@ -2,10 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     anagram, codetemplate, redo
+:type:     anagram, codetemplate, hashmap
 :END:
 ---------------------------------------------------------------------
 Given an array of strings, group anagrams together.
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/group-shifted-strings][Group Shifted Strings]]
+- [[https://brain.dennyzhang.com/tag/hashmap][Tag: #hashmap]]
 ---------------------------------------------------------------------
 Given an array of strings, group anagrams together.
 #+BEGIN_EXAMPLE

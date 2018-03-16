@@ -1,4 +1,4 @@
-* Leetcode: Linked List Random Node                                              :BLOG:Amusing:
+* Leetcode: Linked List Random Node                            :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

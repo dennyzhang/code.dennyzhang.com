@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Given the coordinates of four points in 2D space, return whether the four points could construct a square.
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+---------------------------------------------------------------------
 Given the coordinates of four points in 2D space, return whether the four points could construct a square.
 
 The coordinate (x,y) of a point is represented by an integer array with two integers.

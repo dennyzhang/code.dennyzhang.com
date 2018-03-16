@@ -11,6 +11,7 @@ Similar Problems:
 - [[https://brain.dennyzhang.com/3sum-ii][LintCode: 3Sum II]]
 - [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
 - [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a*a + b*b = c.
 #+BEGIN_EXAMPLE

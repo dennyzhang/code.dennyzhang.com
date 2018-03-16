@@ -1,4 +1,4 @@
-# Leetcode: Median Employee Salary     :BLOG:Medium:
+# Leetcode: Median Employee Salary     :BLOG:Hard:
 
 
 ---
@@ -9,6 +9,7 @@ Median Employee Salary
 
 Similar Problems:  
 -   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian)
 
 ---
 
@@ -55,3 +56,16 @@ Credits To: [leetcode.com](https://leetcode.com/problems/median-employee-salary/
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/median-employee-salary
+    select Id, Company, Salary
+    from (
+        select t1.Id as Id, t1.Company, t1.Salary, 
+             abs(sum(CASE when t2.Salary<t1.Salary then 1
+                      when t2.Salary>t1.Salary then -1
+                      when t2.Salary=t1.Salary and t2.Id<t1.Id then 1
+                      when t2.Salary=t1.Salary and t2.Id>t1.Id then -1
+                      else 0 end)) as diff_count
+        from Employee as t1 inner join Employee as t2
+        on t1.Company = t2.Company
+        group by t1.Id) as t
+    where diff_count = 0 or diff_count = 1
+    order by Company, Salary, Id
