@@ -8,7 +8,8 @@ Preimage Size of Factorial Zeroes Function
 ---
 
 Similar Problems:  
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch), [Tag: #binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
 
 ---
 

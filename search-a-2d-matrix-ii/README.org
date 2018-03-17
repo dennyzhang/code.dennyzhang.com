@@ -9,7 +9,8 @@ Search a 2D Matrix
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix][Kth Smallest Element in a Sorted Matrix]]
-- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]], [[https://brain.dennyzhang.com/tag/binarysearch][Tag: #binarysearch]]
+- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 

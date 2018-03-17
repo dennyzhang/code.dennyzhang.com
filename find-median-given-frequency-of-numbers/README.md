@@ -1,4 +1,4 @@
-# Leetcode: Find Median Given Frequency of Numbers     :BLOG:Medium:
+# Leetcode: Find Median Given Frequency of Numbers     :BLOG:Hard:
 
 
 ---
@@ -9,8 +9,9 @@ Find Median Given Frequency of Numbers
 
 Similar Problems:  
 -   [Median Employee Salary](https://brain.dennyzhang.com/median-employee-salary)
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
--   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian)
+-   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
+-   [Review: Median Problems](https://brain.dennyzhang.com/review-median)
+-   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian), [#sql](https://brain.dennyzhang.com/tag/sql)
 
 ---
 
@@ -42,3 +43,13 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-median-given-frequ
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/find-median-given-frequency-of-numbers
+    select avg(t3.Number) as median
+    from Numbers as t3 
+    inner join 
+        (select t1.Number, 
+            abs(sum(case when t1.Number>t2.Number then t2.Frequency else 0 end) -
+                sum(case when t1.Number<t2.Number then t2.Frequency else 0 end)) as count_diff
+        from numbers as t1, numbers as t2
+        group by t1.Number) as t4
+    on t3.Number = t4.Number
+    where t3.Frequency>=t4.count_diff

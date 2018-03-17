@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
             """
             left, right = 1, n
             while left <= right:
-                mid = left + (right-left)/2
+                mid = int(left + (right-left)/2)
                 v = guess(mid)
                 if v == 0:
                     return mid

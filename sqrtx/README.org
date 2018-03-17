@@ -8,7 +8,8 @@
 Implement int sqrt(int x).
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]], [[https://brain.dennyzhang.com/tag/binarysearch][Tag: #binarysearch]]
+- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Implement int sqrt(int x).
 

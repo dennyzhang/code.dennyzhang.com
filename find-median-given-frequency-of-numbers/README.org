@@ -1,16 +1,17 @@
-* Leetcode: Find Median Given Frequency of Numbers              :BLOG:Medium:
+* Leetcode: Find Median Given Frequency of Numbers              :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     sql, median
+:type:     sql, getmedian
 :END:
 ---------------------------------------------------------------------
 Find Median Given Frequency of Numbers
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/median-employee-salary][Median Employee Salary]]
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
-- Tag: [[https://brain.dennyzhang.com/tag/getmedian][getmedian]]
+- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://brain.dennyzhang.com/review-median][Review: Median Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/getmedian][getmedian]], [[https://brain.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 The Numbers table keeps the value of number and its frequency.
 #+BEGIN_EXAMPLE
@@ -43,5 +44,14 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/find-median-given-frequency-of-numbers
-
+select avg(t3.Number) as median
+from Numbers as t3 
+inner join 
+    (select t1.Number, 
+        abs(sum(case when t1.Number>t2.Number then t2.Frequency else 0 end) -
+            sum(case when t1.Number<t2.Number then t2.Frequency else 0 end)) as count_diff
+    from numbers as t1, numbers as t2
+    group by t1.Number) as t4
+on t3.Number = t4.Number
+where t3.Frequency>=t4.count_diff
 #+END_SRC

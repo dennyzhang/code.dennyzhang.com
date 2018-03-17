@@ -9,7 +9,8 @@ Search a 2D Matrix
 
 Similar Problems:  
 -   [Kth Smallest Element in a Sorted Matrix](https://brain.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix)
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch), [Tag: #binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
 
 ---
 

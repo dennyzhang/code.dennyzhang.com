@@ -9,8 +9,9 @@ Median Employee Salary
 
 Similar Problems:  
 -   [Find Median Given Frequency of Numbers](https://brain.dennyzhang.com/find-median-given-frequency-of-numbers)
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
--   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian)
+-   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
+-   [Review: Median Problems](https://brain.dennyzhang.com/review-median)
+-   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian), [#sql](https://brain.dennyzhang.com/tag/sql)
 
 ---
 
