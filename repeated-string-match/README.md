@@ -9,7 +9,7 @@ Repeated String Match
 
 Similar Problems:  
 -   [Rotate String](https://brain.dennyzhang.com/rotate-string)
--   [Tag: #string](https://brain.dennyzhang.com/tag/string)
+-   Tag: [#string](https://brain.dennyzhang.com/tag/string), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
 

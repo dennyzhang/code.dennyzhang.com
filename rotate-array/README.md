@@ -8,7 +8,7 @@ Right rotate array by k steps
 ---
 
 Similar Problems:  
--   Tag: [Rotate Array](https://brain.dennyzhang.com/rotate-array)
+-   Tag: [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
 

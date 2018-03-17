@@ -1,4 +1,4 @@
-* Leetcode: Minimum Time Difference                                              :BLOG:Basic:
+* Leetcode: Minimum Time Difference                              :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

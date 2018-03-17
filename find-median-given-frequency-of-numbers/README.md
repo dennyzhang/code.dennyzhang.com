@@ -8,7 +8,9 @@ Find Median Given Frequency of Numbers
 ---
 
 Similar Problems:  
+-   [Median Employee Salary](https://brain.dennyzhang.com/median-employee-salary)
 -   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian)
 
 ---
 

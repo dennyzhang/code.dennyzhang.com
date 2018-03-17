@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     matrixtraverse
+:type:     matrixtraverse, rotateoperation
 :END:
 ---------------------------------------------------------------------
 Right rotate array by k steps
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/rotate-array][Rotate Array]]
+- Tag: [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 Rotate an array of n elements to the right by k steps.
 

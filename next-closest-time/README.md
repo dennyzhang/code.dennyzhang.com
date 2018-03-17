@@ -8,7 +8,7 @@ Next Closest Time
 ---
 
 Similar Problems:  
--   [Tag: #manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
 

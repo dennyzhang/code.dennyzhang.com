@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     string, rotateoperation
 :END:
 ---------------------------------------------------------------------
 Rotate String
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/repeated-string-match][Repeated String Match]]
-- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
+- Tag: [[https://brain.dennyzhang.com/tag/string][#string]], [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 We are given two strings, A and B.
 

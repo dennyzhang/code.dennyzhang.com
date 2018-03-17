@@ -9,7 +9,7 @@ Find Minimum in Rotated Sorted Array II
 
 Similar Problems:  
 -   [Search in Rotated Sorted Array](https://brain.dennyzhang.com/search-in-rotated-sorted-array)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
 

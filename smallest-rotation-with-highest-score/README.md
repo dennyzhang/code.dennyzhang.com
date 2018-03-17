@@ -10,7 +10,7 @@ Smallest Rotation with Highest Score
 Similar Problems:  
 -   [Range Addition](https://brain.dennyzhang.com/range-addition)
 -   [Maximum Distance in Arrays](https://brain.dennyzhang.com/maximum-distance-in-arrays)
--   [Tag: #inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
 

@@ -54,3 +54,19 @@ Credits To: [leetcode.com](https://leetcode.com/problems/average-salary-departme
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/average-salary-departments-vs-company
+    select t1.pay_month, t1.department_id,
+        (case when t1.amount = t2.amount then 'same'
+              when t1.amount > t2.amount then 'higher'
+              when t1.amount < t2.amount then 'lower' end) as comparison
+    from 
+        (select left(pay_date, 7) as pay_month, department_id, avg(amount) as amount
+        from salary inner join employee
+        on salary.employee_id = employee.employee_id
+        group by pay_month, department_id
+        order by pay_month desc, department_id) as t1
+        inner join
+        (select left(pay_date, 7) as pay_month, avg(amount) as amount
+        from salary inner join employee
+        on salary.employee_id = employee.employee_id
+        group by pay_month) as t2
+        on t1.pay_month = t2.pay_month

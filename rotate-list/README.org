@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, redo
+:type:     linkedlist, redo, rotateoperation
 :END:
 ---------------------------------------------------------------------
 Rotate Linked list
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 Given a list, rotate the list to the right by k places, where k is non-negative.
 

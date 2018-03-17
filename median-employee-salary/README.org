@@ -2,12 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     sql
+:type:     sql, median
 :END:
 ---------------------------------------------------------------------
 Median Employee Salary
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/find-median-given-frequency-of-numbers][Find Median Given Frequency of Numbers]]
 - [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
 - Tag: [[https://brain.dennyzhang.com/tag/getmedian][getmedian]]
 ---------------------------------------------------------------------

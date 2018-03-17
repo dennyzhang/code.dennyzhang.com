@@ -2,14 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch
+:type:     binarysearch, rotateoperation
 :END:
 ---------------------------------------------------------------------
 Search in Rotated Sorted Array
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array][Find Minimum in Rotated Sorted Array]]
-- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]], [[https://brain.dennyzhang.com/tag/binarysearch][Tag: #binarysearch]]
+- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 
