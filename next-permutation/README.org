@@ -24,9 +24,9 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 1,1,5 -> 1,5,1
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/next-permutation][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/example/description/][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/next-permutation/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
@@ -37,6 +37,6 @@ Related Readings:
 [[image-blog:Leetcode: Next Permutation][https://raw.githubusercontent.com/DennyZhang/images/master/code/next-permutation-algorithm.png]]
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/example
+## Blog link: https://brain.dennyzhang.com/next-permutation
 
 #+END_SRC
