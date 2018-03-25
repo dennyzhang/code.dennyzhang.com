@@ -8,8 +8,7 @@
 Number of Lines To Write String
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]], [[https://brain.dennyzhang.com/category/string][#string]]
 ---------------------------------------------------------------------
 We are to write the letters of a given string S, from left to right into lines. 
 

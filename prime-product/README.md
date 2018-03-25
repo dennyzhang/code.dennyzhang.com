@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
                 if i == len(arr)-1: continue
                 queue.append((num, i))
     
-            res = 
+            res = []
             while len(queue) != 0:
                 for i in range(len(queue)):
                     (num, index) = queue.popleft()
