@@ -8,8 +8,7 @@ Number of Lines To Write String
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#basic](https://brain.dennyzhang.com/category/basic), [#string](https://brain.dennyzhang.com/category/string)
 
 ---
 

@@ -8,7 +8,7 @@ Valid Parenthesis String
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://brain.dennyzhang.com/category/basic), [#string](https://brain.dennyzhang.com/category/string)
 
 ---
 
