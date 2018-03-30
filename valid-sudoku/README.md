@@ -7,6 +7,12 @@ Valid Sudoku
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.  
 
 The Sudoku board could be partially filled, where empty cells are filled with the character '.'.  

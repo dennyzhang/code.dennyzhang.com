@@ -7,6 +7,12 @@ Find Bottom Left Tree Value
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Given a binary tree, find the leftmost value in the last row of the tree.  
 
     Example 1:

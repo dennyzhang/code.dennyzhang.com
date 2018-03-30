@@ -1,4 +1,4 @@
-* Leetcode: Basic Calculator III                                              :BLOG:Hard:
+* Leetcode: Basic Calculator III                                  :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -8,7 +8,8 @@
 Basic Calculator III
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/stack][stack]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/stack][#stack]]
 ---------------------------------------------------------------------
 Implement a basic calculator to evaluate a simple expression string.
 

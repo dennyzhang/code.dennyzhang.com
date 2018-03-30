@@ -7,6 +7,12 @@ Spiral Matrix
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.  
 
     For example,

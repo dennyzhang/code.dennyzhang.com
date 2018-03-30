@@ -9,7 +9,8 @@ Validate IP Address
 
 Similar Problems:  
 -   [IP to CIDR](https://brain.dennyzhang.com/ip-to-cidr)
--   [Tag: #manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
 
 ---
 

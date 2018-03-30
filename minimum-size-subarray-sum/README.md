@@ -10,7 +10,9 @@ Minimum Size Subarray Sum
 Similar Problems:  
 -   [Subarray Product Less Than K](https://brain.dennyzhang.com/subarray-product-less-than-k)
 -   [Two Sum](https://brain.dennyzhang.com/two-sum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
 
 ---
 

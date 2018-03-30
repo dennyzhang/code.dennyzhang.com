@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 Given a list of non negative integers, arrange them such that they form the largest number.
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
+---------------------------------------------------------------------
 Given a list of non negative integers, arrange them such that they form the largest number.
 
 For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.

@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 Excel Sheet Column Title
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
+---------------------------------------------------------------------
 Given a positive integer, return its corresponding column title as appear in an Excel sheet.
 
 #+BEGIN_EXAMPLE

@@ -7,6 +7,12 @@ Maximum XOR of Two Numbers in an Array
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Given a non-empty array of numbers, a0, a1, a2, &#x2026; , an-1, where 0 <= ai < 231.  
 
 Find the maximum result of ai XOR aj, where 0 <= i, j < n.  

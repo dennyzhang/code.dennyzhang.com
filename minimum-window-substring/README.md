@@ -9,7 +9,8 @@ Minimum Window Substring
 
 Similar Problems:  
 -   [Substring with Concatenation of All Words](https://brain.dennyzhang.com/substring-with-concatenation-of-all-words)
--   Tag: [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
 
 ---
 

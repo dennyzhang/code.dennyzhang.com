@@ -9,7 +9,9 @@ Verify Preorder Serialization of a Binary Tree
 
 Similar Problems:  
 -   [Verify Preorder Sequence in Binary Search Tree](https://brain.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails),  [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
 ---
 

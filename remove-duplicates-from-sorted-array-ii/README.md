@@ -7,6 +7,12 @@ Remove Duplicates from Sorted Array II
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Follow up for "Remove Duplicates":  
 What if duplicates are allowed at most twice?  
 

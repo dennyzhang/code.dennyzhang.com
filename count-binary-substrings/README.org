@@ -1,4 +1,4 @@
-* Leetcode: Count Binary Substrings                                   :BLOG:Amusing:
+* Leetcode: Count Binary Substrings                            :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -8,7 +8,9 @@
 Count Binary Substrings
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Give a string s, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
 

@@ -8,7 +8,9 @@ Can Place Flowers
 ---
 
 Similar Problems:  
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://brain.dennyzhang.com/review-game)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#game](https://brain.dennyzhang.com/tag/game)
 
 ---
 

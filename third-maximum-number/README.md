@@ -8,7 +8,9 @@ Third Maximum Number
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap), [Tag: #heap](https://brain.dennyzhang.com/tag/heap)
+-   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#heap](https://brain.dennyzhang.com/tag/heap)
 
 ---
 

@@ -1,4 +1,4 @@
-* Leetcode: Flatten Nested List Iterator                                              :BLOG:Hard:
+* Leetcode: Flatten Nested List Iterator                          :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -10,7 +10,9 @@ Flatten Nested List Iterator
 Similar Problems:
 - [[https://brain.dennyzhang.com/flatten-2d-vector][Flatten 2D Vector]]
 - [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given a nested list of integers, implement an iterator to flatten it.
 

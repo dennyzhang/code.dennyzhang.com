@@ -1,4 +1,4 @@
-* Leetcode: Decode Ways                                   :BLOG:Medium:
+* Leetcode: Decode Ways                                         :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -8,7 +8,9 @@
 Decode Ways
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 A message containing letters from A-Z is being encoded to numbers using the following mapping:
 #+BEGIN_EXAMPLE

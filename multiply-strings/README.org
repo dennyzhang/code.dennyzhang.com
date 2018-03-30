@@ -1,4 +1,4 @@
-* Leetcode: Multiply Strings                                   :BLOG:Medium:
+* Leetcode: Multiply Strings                                    :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -6,6 +6,10 @@
 :END:
 ---------------------------------------------------------------------
 Multiply Strings
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
 

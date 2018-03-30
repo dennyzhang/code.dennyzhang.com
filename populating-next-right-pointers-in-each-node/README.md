@@ -7,6 +7,12 @@ Populating Next Right Pointers in Each Node
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Given a binary tree  
 
     struct TreeLinkNode {

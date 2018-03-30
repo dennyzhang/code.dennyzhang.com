@@ -9,7 +9,8 @@ Validate IP Address
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/ip-to-cidr][IP to CIDR]]
-- [[https://brain.dennyzhang.com/tag/manydetails][Tag: #manydetails]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Write a function to check whether an input string is a valid IPv4 address or IPv6 address or neither.
 

@@ -9,8 +9,8 @@ Maximum Distance in Arrays
 
 Similar Problems:  
 -   [Range Addition](https://brain.dennyzhang.com/range-addition)
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
 
 ---
 

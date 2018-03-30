@@ -1,4 +1,4 @@
-* Leetcode: Remove Duplicates from Sorted List II                                              :BLOG:Hard:
+* Leetcode: Remove Duplicates from Sorted List II                 :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -6,6 +6,10 @@
 :END:
 ---------------------------------------------------------------------
 Remove Duplicates from Sorted List II
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
 

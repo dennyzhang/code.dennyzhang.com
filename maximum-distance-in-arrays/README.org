@@ -1,4 +1,4 @@
-* Leetcode: Maximum Distance in Arrays                                              :BLOG:Basic:
+* Leetcode: Maximum Distance in Arrays                           :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -9,8 +9,8 @@ Maximum Distance in Arrays
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/range-addition][Range Addition]]
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given m arrays, and each array is sorted in ascending order. Now you can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers a and b to be their absolute difference |a-b|. Your task is to find the maximum distance.
 

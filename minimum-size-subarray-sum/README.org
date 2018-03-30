@@ -1,4 +1,4 @@
-* Leetcode: Minimum Size Subarray Sum                                         :BLOG:Medium:
+* Leetcode: Minimum Size Subarray Sum                           :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -10,7 +10,9 @@ Minimum Size Subarray Sum
 Similar Problems:
 - [[https://brain.dennyzhang.com/subarray-product-less-than-k][Subarray Product Less Than K]]
 - [[https://brain.dennyzhang.com/two-sum][Two Sum]]
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.comy/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum >= s. If there isn't one, return 0 instead.
 

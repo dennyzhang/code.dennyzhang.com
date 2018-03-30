@@ -8,7 +8,8 @@ Basic Calculator III
 ---
 
 Similar Problems:  
--   Tag: [stack](https://brain.dennyzhang.com/tag/stack)
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#stack](https://brain.dennyzhang.com/tag/stack)
 
 ---
 

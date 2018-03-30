@@ -20,9 +20,31 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lexicographical-numbers
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/lexicographical-numbers
-    class Solution(object):
+    ## Basic Ideas: DFS
+    ##
+    ##  When to push? How to find the neighbors?
+    ##
+    ## Complexity: Time O(k), Space O(d)
+    ##             k = size of final result
+    ##             d = digits of n
+    class Solution:
         def lexicalOrder(self, n):
             """
             :type n: int
             :rtype: List[int]
             """
+            res, stack = [], []
+            v = 1
+            while v <= n:
+                res.append(v)
+                stack.append(v)
+                v = v*10
+    
+            while len(stack) != 0:
+                v = stack.pop()+1
+                while v <= n:
+                    res.append(v)
+                    if v % 10 != 9:
+                        stack.append(v)
+                    v = v*10
+            return res

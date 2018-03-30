@@ -1,4 +1,4 @@
-* Leetcode: Strobogrammatic Number II                                              :BLOG:Medium:
+* Leetcode: Strobogrammatic Number II                           :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -10,8 +10,10 @@ Strobogrammatic Number II
 Similar Problems:
 - [[https://brain.dennyzhang.com/unique-binary-search-trees-ii][Unique Binary Search Trees II]]
 - [[https://brain.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
+- [[https://brain.dennyzhang.com/review-string][Review: String Problems]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/math][math]], [[https://brain.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
 

@@ -9,7 +9,9 @@
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
 

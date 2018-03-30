@@ -7,6 +7,12 @@ Reorder List
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Given a singly linked list L: L0 -> L1 -> &#x2026; -> Ln-1 -> Ln,  
 reorder it to: L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 -> &#x2026;  
 

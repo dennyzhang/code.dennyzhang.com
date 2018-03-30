@@ -7,6 +7,12 @@ Remove Duplicates from Sorted List II
 
 ---
 
+Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+
+---
+
 Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.  
 
 For example,  

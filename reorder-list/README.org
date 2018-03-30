@@ -1,4 +1,4 @@
-* Leetcode: Reorder List                                              :BLOG:Medium:
+* Leetcode: Reorder List                                        :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -6,6 +6,10 @@
 :END:
 ---------------------------------------------------------------------
 Reorder List
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a singly linked list L: L0 -> L1 -> ... -> Ln-1 -> Ln,
 reorder it to: L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 -> ...

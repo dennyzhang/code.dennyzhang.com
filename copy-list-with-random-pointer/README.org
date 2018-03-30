@@ -1,4 +1,4 @@
-* Leetcode: Copy List with Random Pointer                                              :BLOG:Amusing:
+* Leetcode: Copy List with Random Pointer                      :BLOG:Amusing:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -6,6 +6,10 @@
 :END:
 ---------------------------------------------------------------------
 Copy List with Random Pointer
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 

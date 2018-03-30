@@ -8,6 +8,7 @@ Next Closest Time
 ---
 
 Similar Problems:  
+-   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
