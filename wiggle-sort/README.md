@@ -8,6 +8,7 @@ Wiggle Sort
 ---
 
 Similar Problems:  
+-   [LintCode: Rearrange](https://brain.dennyzhang.com/rearrange)
 -   [Wiggle Sort II](https://brain.dennyzhang.com/wiggle-sort-ii)
 -   [Tag: #wigglesort](https://brain.dennyzhang.com/tag/wigglesort)
 

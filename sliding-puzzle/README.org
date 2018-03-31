@@ -8,8 +8,9 @@
 Sliding Puzzle
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]]
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://brain.dennyzhang.com/sliding-puzzle-iii][LintCode: Sliding Puzzle III]]
+- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]], [[https://brain.dennyzhang.com/tag/game][#game]]
 ---------------------------------------------------------------------
 On a 2x3 board, there are 5 tiles represented by the integers 1 through 5, and an empty square represented by 0.
 
@@ -75,7 +76,7 @@ class Solution(object):
 
         level = 0
         while len(queue) != 0:
-            for i in xrange(len(queue)):
+            for i in range(len(queue)):
                 state = queue[0]
                 if state == target: return level
                 del queue[0]
@@ -88,18 +89,18 @@ class Solution(object):
 
     def toString(self, board):
         res = ''
-        for i in xrange(2):
-            for j in xrange(3):
+        for i in range(2):
+            for j in range(3):
                 res = res + str(board[i][j])
         return res
 
     def addNeighbors(self, state, visited, queue):
         # change back state to board
-        matrix = [[None for j in xrange(3)] for i in xrange(2)]
+        matrix = [[None for j in range(3)] for i in range(2)]
         index = 0
         i0, j0 = None, None
-        for i in xrange(2):
-            for j in xrange(3):
+        for i in range(2):
+            for j in range(3):
                 matrix[i][j] = state[index]
                 index += 1
                 if matrix[i][j] == '0':
@@ -114,10 +115,4 @@ class Solution(object):
                 queue.append(newState)
             # change back
             matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
-            
-# s = Solution()
-# print s.slidingPuzzle([[1,2,3],[4,0,5]]) # 1
-# print s.slidingPuzzle([[4,1,2],[5,0,3]]) # 5
-# print s.slidingPuzzle([[3,2,4],[1,5,0]]) # 14
-# print s.slidingPuzzle([[1,2,3],[5,4,0]]) # -1
 #+END_SRC
