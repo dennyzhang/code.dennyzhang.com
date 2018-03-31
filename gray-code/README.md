@@ -45,7 +45,6 @@ Leave me comments, if you have better ways to solve.
             :type n: int
             :rtype: List[int]
             """
-            if n <= 0: return [0]
             res = [0]
             for i in range(n):
                 v = pow(2, i)
