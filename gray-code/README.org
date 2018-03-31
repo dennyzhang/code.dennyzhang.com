@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:    dynamicprogramming, game
+:type:    dynamicprogramming, game, hanoi
 :END:
 ---------------------------------------------------------------------
 Gray Code
