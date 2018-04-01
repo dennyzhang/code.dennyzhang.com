@@ -61,12 +61,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/equal-tree-partition
-## Basic Ideas: two pass
-##   1. post-order: config the node value as the sum of all children
-##   2. tree trasveral: if any node value is half of the total, return True
-##
-## Complexity: Time O(n), Space O(1)
-# Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -74,7 +68,28 @@ Leave me comments, if you have better ways to solve.
 #         self.right = None
 
 class Solution:
+    ## Basic Ideas: Use set to solve it in one pass, instead of two
+    ## Complexity: Time O(n), Space O(n)
     def checkEqualTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        def treeSum(node):
+            if node is None: return 0
+            res = node.val + treeSum(node.left) + treeSum(node.right)
+            if node != root: values.add(res)
+            return res
+
+        values = set([])
+        total = treeSum(root)
+        return total/2 in values
+
+    ## Basic Ideas: two pass
+    ##   1. post-order: config the node value as the sum of all children
+    ##   2. tree trasveral: if any node value is half of the total, return True
+    ## Complexity: Time O(n), Space O(1)
+    def checkEqualTree_v1(self, root):
         """
         :type root: TreeNode
         :rtype: bool
