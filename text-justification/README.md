@@ -1,4 +1,4 @@
-# Leetcode: Text Justification     :BLOG:Basic:
+# Leetcode: Text Justification     :BLOG:Hard:
 
 
 ---
