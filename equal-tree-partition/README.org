@@ -1,0 +1,65 @@
+* Leetcode: Equal Tree Partition                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Equal Tree Partition
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+Given a binary tree with n nodes, your task is to check if it's possible to partition the tree to two trees which have the equal sum of values after removing exactly one edge on the original tree.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:     
+    5
+   / \
+  10 10
+    /  \
+   2   3
+
+Output: True
+Explanation: 
+    5
+   / 
+  10
+      
+Sum: 15
+
+   10
+  /  \
+ 2    3
+
+Sum: 15
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:     
+    1
+   / \
+  2  10
+    /  \
+   2   20
+
+Output: False
+Explanation: You can't split the tree into two trees with equal sum after removing exactly one edge on the tree.
+#+END_EXAMPLE
+
+Note:
+- The range of tree node value is in the range of [-100000, 100000].
+- 1 <= n <= 10000
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/equal-tree-partition][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/equal-tree-partition/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/equal-tree-partition
+
+#+END_SRC
