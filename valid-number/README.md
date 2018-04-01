@@ -8,9 +8,8 @@ Validate if a given string is numeric.
 ---
 
 Similar Problems:  
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
 -   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#math](https://brain.dennyzhang.com/tag/math)
+-   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
 
 ---
 

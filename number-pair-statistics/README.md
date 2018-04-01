@@ -1,4 +1,4 @@
-# Leetcode: Number Pair Statistics     :BLOG:Medium:
+# Leetcode: Number Pair Statistics     :BLOG:Basic:
 
 
 ---
@@ -9,7 +9,6 @@ Number Pair Statistics
 
 Similar Problems:  
 -   [Tag: #inspiring](https://brain.dennyzhang.com/tag/inspiring)
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
 
 ---
 

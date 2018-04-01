@@ -2,15 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     manydetails, math
+:type:     manydetails
 :END:
 ---------------------------------------------------------------------
 Validate if a given string is numeric.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
 - [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Validate if a given string is numeric.
 

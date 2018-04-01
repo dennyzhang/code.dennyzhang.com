@@ -1,15 +1,14 @@
-* Leetcode: Number Pair Statistics                              :BLOG:Medium:
+* Leetcode: Number Pair Statistics                              :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, inspiring
+:type:     inspiring
 :END:
 ---------------------------------------------------------------------
 Number Pair Statistics
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/tag/inspiring][Tag: #inspiring]]
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given a List <Point> p, find the number of (i,j) pairs that satisfy both p[i].x + p[j].x and p[i].y + p[j].y(i < j) can be divisible by 2.
 

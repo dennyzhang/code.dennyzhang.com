@@ -61,5 +61,47 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/equal-tree-partition
+## Basic Ideas: two pass
+##   1. post-order: config the node value as the sum of all children
+##   2. tree trasveral: if any node value is half of the total, return True
+##
+## Complexity: Time O(n), Space O(1)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Solution:
+    def checkEqualTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        self.postVisitChange(root)
+        # bfs to examine the result
+        target = root.val/2
+        import collections
+        queue = collections.deque()
+        queue.append(root)
+        while len(queue) != 0:
+            for k in range(len(queue)):
+                node = queue.popleft()
+                if node.left:
+                    if node.left.val == target: return True
+                    queue.append(node.left)
+                if node.right:
+                    if node.right.val == target: return True
+                    queue.append(node.right)
+        return False
+
+    def postVisitChange(self, root):
+        if root is None: return
+        if root.left:
+            self.postVisitChange(root.left)
+        if root.right:
+            self.postVisitChange(root.right)
+        if root.left: root.val += root.left.val
+        if root.right: root.val += root.right.val
 #+END_SRC
