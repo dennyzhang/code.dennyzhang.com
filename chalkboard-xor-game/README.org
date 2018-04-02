@@ -2,12 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, math, bitmanipulation, redo
+:type:     game, math, bitmanipulation
 :END:
 ---------------------------------------------------------------------
 Chalkboard XOR Game
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/swap-adjacent-in-lr-string][Swap Adjacent in LR String]]
 - [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
 - Tag: [[https://brain.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]], [[https://brain.dennyzhang.com/tag/game][#game]], [[https://brain.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
@@ -40,5 +41,35 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://brain.dennyzhang.com/chalkboard-xor-game
-
+## Basic Ideas:
+##
+##  One Item:
+##    [0] -> win
+##    [x] -> lose
+##
+##  Two Items:
+##    [x, x] -> win
+##    [x, y] -> win
+##
+##  Three Items:
+##    [x, y, z] -> if xor is 0, win
+##      [1, 2, 3], [0, 0, 0]
+##    Otherwise: lose
+##
+##  Four Items:
+##    [x, y, z, m]
+##       The only way to lose is xor of all remainings is 0
+##       This indicates x==y==z==m. Then we will win immediately
+##       [1, 2, 3, 4]
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def xorGame(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        xor = 0
+        for num in nums: xor ^= num
+        return xor == 0 or len(nums)%2 == 0
 #+END_SRC

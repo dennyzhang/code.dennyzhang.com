@@ -8,6 +8,7 @@ Expressive Words
 ---
 
 Similar Problems:  
+-   [Solve the Equation](https://brain.dennyzhang.com/solve-the-equation)
 -   Tag: [#string](https://brain.dennyzhang.com/tag/string)
 
 ---

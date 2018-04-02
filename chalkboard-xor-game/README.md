@@ -8,6 +8,7 @@ Chalkboard XOR Game
 ---
 
 Similar Problems:  
+-   [Swap Adjacent in LR String](https://brain.dennyzhang.com/swap-adjacent-in-lr-string)
 -   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
 -   Tag: [#bitmanipulation](https://brain.dennyzhang.com/tag/bitmanipulation), [#game](https://brain.dennyzhang.com/tag/game), [#math](https://brain.dennyzhang.com/tag/math)
 
@@ -40,3 +41,34 @@ Credits To: [leetcode.com](https://leetcode.com/problems/chalkboard-xor-game/des
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/chalkboard-xor-game
+    ## Basic Ideas:
+    ##
+    ##  One Item:
+    ##    [0] -> win
+    ##    [x] -> lose
+    ##
+    ##  Two Items:
+    ##    [x, x] -> win
+    ##    [x, y] -> win
+    ##
+    ##  Three Items:
+    ##    [x, y, z] -> if xor is 0, win
+    ##      [1, 2, 3], [0, 0, 0]
+    ##    Otherwise: lose
+    ##
+    ##  Four Items:
+    ##    [x, y, z, m]
+    ##       The only way to lose is xor of all remainings is 0
+    ##       This indicates x==y==z==m. Then we will win immediately
+    ##       [1, 2, 3, 4]
+    ##
+    ## Complexity: Time O(n), Space O(1)
+    class Solution:
+        def xorGame(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: bool
+            """
+            xor = 0
+            for num in nums: xor ^= num
+            return xor == 0 or len(nums)%2 == 0
