@@ -1,4 +1,4 @@
-# Leetcode: Repeated Substring Pattern     :BLOG:Hard:
+# Leetcode: Repeated Substring Pattern     :BLOG:Basic:
 
 
 ---

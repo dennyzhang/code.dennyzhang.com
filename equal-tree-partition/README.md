@@ -80,7 +80,7 @@ Leave me comments, if you have better ways to solve.
                 if node != root: values.add(res)
                 return res
     
-            values = set()
+            values = set([])
             total = treeSum(root)
             return total/2 in values
     
