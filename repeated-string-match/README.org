@@ -9,6 +9,7 @@ Repeated String Match
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/rotate-string][Rotate String]]
+- [[https://brain.dennyzhang.com/repeated-substring][Repeated Substring Pattern]]
 - Tag: [[https://brain.dennyzhang.com/tag/string][#string]], [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.

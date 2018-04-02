@@ -1,9 +1,16 @@
-# Leetcode: Repeated Substring Pattern     :BLOG:Basic:
+# Leetcode: Repeated Substring Pattern     :BLOG:Hard:
 
 
 ---
 
 Check whether string can be created by keep repeating one substring.  
+
+---
+
+Similar Problems:  
+-   [Rotate String](https://brain.dennyzhang.com/rotate-string)
+-   [Repeated String Match](https://brain.dennyzhang.com/repeated-string-match)
+-   Tag: [#string](https://brain.dennyzhang.com/tag/string), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -37,9 +44,11 @@ Credits To: [leetcode.com](https://leetcode.com/problems/repeated-substring-patt
 Leave me comments, if you have better ways to solve.  
 
     ## Blog link: https://brain.dennyzhang.com/repeated-substring-pattern
-    class Solution(object):
+    class Solution:
         def repeatedSubstringPattern(self, s):
             """
             :type s: str
             :rtype: bool
             """
+            if len(s) == 0: return False
+            return s in (s+s)[1:-1]

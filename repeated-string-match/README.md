@@ -9,6 +9,7 @@ Repeated String Match
 
 Similar Problems:  
 -   [Rotate String](https://brain.dennyzhang.com/rotate-string)
+-   [Repeated Substring Pattern](https://brain.dennyzhang.com/repeated-substring)
 -   Tag: [#string](https://brain.dennyzhang.com/tag/string), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
 
 ---
