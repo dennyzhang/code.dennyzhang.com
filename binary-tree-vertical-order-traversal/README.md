@@ -8,6 +8,7 @@ Binary Tree Vertical Order Traversal
 ---
 
 Similar Problems:  
+-   [Find Leaves of Binary Tree](https://brain.dennyzhang.com/find-leaves-of-binary-tree)
 -   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
 
 ---

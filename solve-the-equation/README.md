@@ -69,7 +69,7 @@ Leave me comments, if you have better ways to solve.
             :type equation: str
             :rtype: str
             """
-            queue = 
+            queue = []
             reverse = False
             myStr, sign = '', ''
             for ch in equation:
