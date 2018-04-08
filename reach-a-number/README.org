@@ -9,7 +9,8 @@ Reach a Number
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/reaching-points][Reaching Points]]
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 You are standing at position 0 on an infinite number line. There is a goal at position target.
 

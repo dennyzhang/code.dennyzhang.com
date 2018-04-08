@@ -8,7 +8,9 @@
 Perfect Squares
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://brain.dennyzhang.com/tag/classic][Tag: #classic]]
+- [[https://brain.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
+- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]], [[https://brain.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
 

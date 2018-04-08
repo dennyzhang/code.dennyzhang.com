@@ -1,0 +1,96 @@
+* Leetcode: Largest Triangle Area                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math
+:END:
+---------------------------------------------------------------------
+Largest Triangle Area
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+---------------------------------------------------------------------
+You have a list of points in the plane. Return the area of the largest triangle that can be formed by any 3 of the points.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]]
+Output: 2
+Explanation: 
+The five points are show in the figure below. The red triangle is the largest.
+#+END_EXAMPLE
+
+[[image-blog:Largest Triangle Area][https://raw.githubusercontent.com/DennyZhang/images/master/code/largest_triangle.png]]
+
+Notes:
+
+- 3 <= points.length <= 50.
+- No points will be duplicated.
+-  -50 <= points[i][j] <= 50.
+- Answers within 10^-6 of the true value will be accepted as correct.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-triangle-area][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/largest-triangle-area/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+Related Reading: [[https://en.wikipedia.org/wiki/Shoelace_formula][Shoelace formula in wikipedia]]
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/largest-triangle-area
+## Basic Ideas:
+##   Check whether 3 points can form a triangle
+##        any 2 edges should be bigger than the 3rd one
+##        Can't be in one line: k = (y2-y1)/(x2-x1)
+##   Get area of a triangle from 3 edges
+##        https://www.mathsisfun.com/geometry/herons-formula.html
+##        s = (a+b+c)/2, area = sqrt(s*(s-a)*(s-b)*(s-c))
+## Complexity: Time O(n*n*n) Space O(1)
+class Solution:
+    def largestTriangleArea(self, points):
+        """
+        :type points: List[List[int]]
+        :rtype: float
+        """
+        from math import sqrt
+        def getArea(point1, point2, point3):
+            # get 3 edges
+            a = sqrt(pow((point1[0]-point2[0]), 2) + pow((point1[1]-point2[1]), 2))
+            b = sqrt(pow((point1[0]-point3[0]), 2) + pow((point1[1]-point3[1]), 2))
+            c = sqrt(pow((point2[0]-point3[0]), 2) + pow((point2[1]-point3[1]), 2))
+            # same point
+            if 0 in [a, b, c]: return 0
+            
+            # valid edges
+            if a+b<=c or a+c<=b or b+c<=a: return 0
+
+            # check whether 3 points in the same line
+            if point1[0]-point2[0] == 0:
+                k1 = None
+            else:
+                k1 = (point1[1]-point2[1])/(point1[0]-point2[0])
+
+            if point1[0]-point3[0] == 0:
+                k2 = None
+            else:
+                k2 = (point1[1]-point3[1])/(point1[0]-point3[0])
+
+            if point2[0]-point3[0] == 0:
+                k3 = None
+            else:
+                k3 = (point2[1]-point3[1])/(point2[0]-point3[0])
+    
+            if len(set([k1, k2, k3])) != 3: return 0
+
+            # get area
+            s = (a+b+c)/2
+            area = sqrt(s*(s-a)*(s-b)*(s-c))
+            return area
+
+        res = 0
+        for i in range(len(points)-2):
+            for j in range(i+1, len(points)-1):
+                for k in range(j+1, len(points)):
+                    res = max(res, getArea(points[i], points[j], points[k]))
+        return res
+#+END_SRC

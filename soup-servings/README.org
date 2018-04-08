@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, inspiring, misc
+:type:     redo, inspiring, mod
 :END:
 ---------------------------------------------------------------------
 Soup Servings
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://brain.dennyzhang.com/review-mod][Review: mod Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]], [[https://brain.dennyzhang.com/tag/mod][#mod]]
 ---------------------------------------------------------------------
 There are two types of soup: type A and type B. Initially we have N ml of each type of soup. There are four kinds of operations:
 

@@ -1,4 +1,4 @@
-* Leetcode: Bomb Enemy                                              :BLOG:Medium:
+* Leetcode: Bomb Enemy                                          :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

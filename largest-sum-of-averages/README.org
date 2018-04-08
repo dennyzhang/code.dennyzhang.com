@@ -1,0 +1,46 @@
+* Leetcode: Largest Sum of Averages                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Largest Sum of Averages
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+We partition a row of numbers A into at most K adjacent (non-empty) groups, then our score is the sum of the average of each group. What is the largest score we can achieve?
+
+Note that our partition must use every number in A, and that scores are not necessarily integers.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: 
+A = [9,1,2,3,9]
+K = 3
+Output: 20
+Explanation: 
+The best choice is to partition A into [9], [1, 2, 3], [9]. The answer is 9 + (1 + 2 + 3) / 3 + 9 = 20.
+We could have also partitioned A into [9, 1], [2], [3, 9], for example.
+That partition would lead to a score of 5 + 2 + 6 = 13, which is worse.
+#+END_EXAMPLE
+ 
+Note:
+
+- 1 <= A.length <= 100.
+- 1 <= A[i] <= 10000.
+- 1 <= K <= A.length.
+- Answers within 10^-6 of the correct answer will be accepted as correct.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-sum-of-averages][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/largest-sum-of-averages/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC python
+## Blog link: https://brain.dennyzhang.com/largest-sum-of-averages
+
+#+END_SRC

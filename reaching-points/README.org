@@ -2,14 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     recursive, inspiring
+:type:     recursive, inspiring, mod
 :END:
 ---------------------------------------------------------------------
 Reaching Points
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/recursive][#recursive]]
+- [[https://brain.dennyzhang.com/review-mod][Review: mod Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/recursive][#recursive]], [[https://brain.dennyzhang.com/tag/mod][#mod]]
 ---------------------------------------------------------------------
 A move consists of taking a point (x, y) and transforming it to either (x, x+y) or (x+y, y).
 

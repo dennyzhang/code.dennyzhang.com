@@ -2,13 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, inspiring
+:type:     dynamicprogramming, inspiring, mod
 :END:
 ---------------------------------------------------------------------
 Domino and Tromino Tiling
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- [[https://brain.dennyzhang.com/review-mod][Review: mod Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]], [[https://brain.dennyzhang.com/tag/mod][#mod]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 We have two types of tiles: a 2x1 domino shape, and an "L" tromino shape. These shapes may be rotated.
 #+BEGIN_EXAMPLE

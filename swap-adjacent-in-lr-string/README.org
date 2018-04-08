@@ -1,4 +1,4 @@
-* Leetcode: Swap Adjacent in LR String                                              :BLOG:Medium:
+* Leetcode: Swap Adjacent in LR String                          :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

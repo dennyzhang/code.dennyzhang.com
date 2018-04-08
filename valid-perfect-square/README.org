@@ -8,7 +8,9 @@
 Valid Perfect Square
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
+- [[https://brain.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/math][math]], [[https://brain.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 Given a positive integer num, write a function which returns True if num is a perfect square else False.
 

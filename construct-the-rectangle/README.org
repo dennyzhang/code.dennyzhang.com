@@ -8,7 +8,9 @@
 Construct the Rectangle
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]]
+- [[https://brain.dennyzhang.com/review-rectangle][Review: Rectangle Problems]]
+- [[https://brain.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]], [[https://brain.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 For a web developer, it is very important to know how to design a web page's size. So, given a specific rectangular web page's area, your job by now is to design a rectangular web page, whose length L and width W satisfy the following requirements:
 
