@@ -8,7 +8,9 @@ Domino and Tromino Tiling
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
+-   [Review: mod Problems](https://brain.dennyzhang.com/review-mod)
+-   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring), [#mod](https://brain.dennyzhang.com/tag/mod), [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

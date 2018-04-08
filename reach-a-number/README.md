@@ -9,7 +9,8 @@ Reach a Number
 
 Similar Problems:  
 -   [Reaching Points](https://brain.dennyzhang.com/reaching-points)
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
+-   Tag: [math](https://brain.dennyzhang.com/tag/math)
 
 ---
 

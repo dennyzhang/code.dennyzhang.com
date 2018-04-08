@@ -8,7 +8,9 @@ Construct the Rectangle
 ---
 
 Similar Problems:  
--   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
+-   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle)
+-   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
+-   Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
 
 ---
 

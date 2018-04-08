@@ -8,7 +8,9 @@ Bulb Switcher
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
+-   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
+-   Tag: [math](https://brain.dennyzhang.com/tag/math), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
 
 ---
 

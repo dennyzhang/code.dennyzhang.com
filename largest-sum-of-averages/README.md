@@ -1,24 +1,44 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Largest Sum of Averages     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Largest Sum of Averages  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+We partition a row of numbers A into at most K adjacent (non-empty) groups, then our score is the sum of the average of each group. What is the largest score we can achieve?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Note that our partition must use every number in A, and that scores are not necessarily integers.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Example:  
+
+    Input: 
+    A = [9,1,2,3,9]
+    K = 3
+    Output: 20
+    Explanation: 
+    The best choice is to partition A into [9], [1, 2, 3], [9]. The answer is 9 + (1 + 2 + 3) / 3 + 9 = 20.
+    We could have also partitioned A into [9, 1], [2], [3, 9], for example.
+    That partition would lead to a score of 5 + 2 + 6 = 13, which is worse.
+
+Note:  
+
+-   1 <= A.length <= 100.
+-   1 <= A[i] <= 10000.
+-   1 <= K <= A.length.
+-   Answers within 10^-6 of the correct answer will be accepted as correct.
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-sum-of-averages)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/largest-sum-of-averages/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/example
+    ## Blog link: https://brain.dennyzhang.com/largest-sum-of-averages

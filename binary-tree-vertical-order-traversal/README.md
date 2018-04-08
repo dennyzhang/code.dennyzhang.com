@@ -40,13 +40,13 @@ return its vertical order traversal as:
 
 -   Given binary tree [3,9,8,4,0,1,7],
 
-        3
-       /\
-      /  \
-      9   8
-     /\  /\
-    /  \/  \
-    4  01   7
+         3
+        /\
+      /   \
+      9     8
+     /\    /\
+    /  \  /  \
+    4  0  1   7
 
 return its vertical order traversal as:  
 
@@ -60,15 +60,15 @@ return its vertical order traversal as:
 
 -   Given binary tree [3,9,8,4,0,1,7,null,null,null,2,5] (0's right child is 2 and 1's left child is 5),
 
-        3
-       /\
-      /  \
-      9   8
-     /\  /\
-    /  \/  \
-    4  01   7
-       /\
-      /  \
+         3
+       /  \
+      /    \
+      9     8
+     /\    /\
+    /  \  /  \
+    4  0  1   7
+        \/
+       / \
       5   2
 
 return its vertical order traversal as:  

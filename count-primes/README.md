@@ -8,8 +8,10 @@ Count Primes
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
+-   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
+-   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming), [#math](https://brain.dennyzhang.com/tag/math), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
 
 ---
 

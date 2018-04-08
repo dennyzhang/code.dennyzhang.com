@@ -8,7 +8,8 @@ Soup Servings
 ---
 
 Similar Problems:  
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Review: mod Problems](https://brain.dennyzhang.com/review-mod)
+-   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring), [#mod](https://brain.dennyzhang.com/tag/mod)
 
 ---
 

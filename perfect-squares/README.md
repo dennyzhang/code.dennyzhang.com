@@ -8,7 +8,9 @@ Perfect Squares
 ---
 
 Similar Problems:  
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
+-   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
+-   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic)
+-   Tag: [#classic](https://brain.dennyzhang.com/tag/classic), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
 
 ---
 
