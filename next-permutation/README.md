@@ -37,7 +37,7 @@ Related Readings:
 -   [Next lexicographical permutation algorithm](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm)
 -   [Wikipedia:Permutation](https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order)
 
-[![img](//raw.githubusercontent.com/DennyZhang/images/master/code/next-permutation-algorithm.png)](Leetcode: Next Permutation)  
+![img](//raw.githubusercontent.com/DennyZhang/images/master/code/next-permutation-algorithm.png)  
 
     // Blog link: https://brain.dennyzhang.com/next-permutation
     // Basic Ideas:
@@ -49,7 +49,7 @@ Related Readings:
     //   0 1 3 5 3 2 0
     //   0 1 3 0 2 3 5
     // Complexity:
-    func nextPermutation(nums int)  {
+    func nextPermutation(nums []int)  {
         if len(nums) == 0 {
             return
         }

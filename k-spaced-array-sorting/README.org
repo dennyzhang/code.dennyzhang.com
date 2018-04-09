@@ -1,0 +1,40 @@
+* Leetcode: K Spaced Array Sorting                                              :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     mergesort, redo
+:END:
+---------------------------------------------------------------------
+K Spaced Array Sorting
+---------------------------------------------------------------------
+An array is ordered from small to large every k digits, ie arr[i] <= arr[i + k] <= arr[i + 2 * k] <= .... Sort the array from small to large. We expect you to write an algorithm whose time complexity is O(n * logk).
+
+ Notice
+- 0 <= arr[i] <= 2^31 - 1
+- 1 <= |arr| <= 10^5
+- 1 <= k <= 10^5
+
+Example
+#+BEGIN_EXAMPLE
+Given arr = [1,2,3], k = 1, return [1,2,3].
+
+Explanation:
+The sorted array is [1,2,3].
+#+END_EXAMPLE
+
+Given arr = [4,0,5,3,10], k = 2, return [0,3,4,5,10].
+#+BEGIN_EXAMPLE
+Explanation:
+The sorted array is [0,3,4,5,10].
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/k-spaced-array-sorting][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:http://www.lintcode.com/en/problem/k-spaced-array-sorting/][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://brain.dennyzhang.com/k-spaced-array-sorting
+
+#+END_SRC
