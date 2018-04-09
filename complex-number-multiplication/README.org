@@ -1,0 +1,61 @@
+* Leetcode: Complex Number Multiplication                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math
+:END:
+---------------------------------------------------------------------
+Complex Number Multiplication
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+---------------------------------------------------------------------
+Given two strings representing two complex numbers.
+
+You need to return a string representing their multiplication. Note i2 = -1 according to the definition.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "1+1i", "1+1i"
+Output: "0+2i"
+Explanation: (1 + i) * (1 + i) = 1 + i2 + 2 * i = 2i, and you need convert it to the form of 0+2i.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "1+-1i", "1+-1i"
+Output: "0+-2i"
+Explanation: (1 - i) * (1 - i) = 1 + i2 - 2 * i = -2i, and you need convert it to the form of 0+-2i.
+#+END_EXAMPLE
+
+Note:
+
+- The input strings will not have extra blank.
+- The input strings will be given in the form of a+bi, where the integer a and b will both belong to the range of [-100, 100]. And the output should be also in this form.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/complex-number-multiplication][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/complex-number-multiplication/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://brain.dennyzhang.com/complex-number-multiplication
+// Basic Ideas:
+//      (v1+v2*i) * (v3+v4*i) ->
+//        v1*v3 + (v1*v4+v2*v3)*i + v2*v4*i*i ->
+//        v1*v3-v2*v4 + (v1*v4+v2*v3)*i
+// Complexity: Time O(1), Space O(1)
+func complexNumberMultiply(a string, b string) string {
+    v1, v2 := splitExpr(a)
+    v3, v4 := splitExpr(b)
+    return fmt.Sprintf("%d+%di", v1*v3-v2*v4, v1*v4+v2*v3)
+}
+
+func splitExpr(a string) (v1, v2 int) {
+    i := strings.Index(a, "+")
+    v1, _ = strconv.Atoi(a[0:i])
+    v2, _ = strconv.Atoi(a[i+1:len(a)-1])
+    return
+}
+#+END_SRC
