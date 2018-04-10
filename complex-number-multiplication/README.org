@@ -8,6 +8,8 @@
 Complex Number Multiplication
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
+- [[https://brain.dennyzhang.com/solve-the-equation][Solve the Equation]]
 - Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 Given two strings representing two complex numbers.

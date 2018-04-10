@@ -1,0 +1,26 @@
+* Leetcode: Max Points on a Line                                              :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math
+:END:
+---------------------------------------------------------------------
+Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://brain.dennyzhang.com/largest-triangle-area][Largest Triangle Area]]
+- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+---------------------------------------------------------------------
+Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/example/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://brain.dennyzhang.com/example
+
+#+END_SRC
