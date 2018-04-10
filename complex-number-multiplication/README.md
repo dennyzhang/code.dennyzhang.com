@@ -8,6 +8,8 @@ Complex Number Multiplication
 ---
 
 Similar Problems:  
+-   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
+-   [Solve the Equation](https://brain.dennyzhang.com/solve-the-equation)
 -   Tag: [#math](https://brain.dennyzhang.com/tag/math)
 
 ---

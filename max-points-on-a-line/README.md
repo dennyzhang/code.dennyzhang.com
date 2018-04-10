@@ -1,19 +1,20 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Max Points on a Line     :BLOG:Hard:
 
 
 ---
 
-Identity number which appears exactly once.  
+Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Largest Triangle Area](https://brain.dennyzhang.com/largest-triangle-area)
+-   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
+-   Tag: [#math](https://brain.dennyzhang.com/tag/math)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
 
