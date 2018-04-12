@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     math
 :END:
 ---------------------------------------------------------------------
 Roman to Integer
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- [[https://brain.dennyzhang.com/integer-to-roman][Integer to Roman]]
+- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 Given a roman numeral, convert it to an integer.
 
@@ -20,7 +21,27 @@ Credits To: [[url-external:https://leetcode.com/problems/roman-to-integer/descri
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/roman-to-integer
-
+#+BEGIN_SRC go
+// Blog link: https://brain.dennyzhang.com/roman-to-integer
+// Basic Ideas: Examine from left to right.
+//     If current is smaller than the next, substract. Otherwise, add
+//
+// Complexity: Time O(n), Space O(1)
+// Related reading: https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system
+func romanToInt(s string) int {
+    m := map[byte]int{'I': 1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
+    res := 0
+    for i, _ := range s {
+        if i == len(s)-1 {
+            res += m[s[i]]
+        } else{
+            if m[s[i]] < m[s[i+1]] {
+                res -= m[s[i]]
+            } else {
+                res += m[s[i]]
+            }
+        }
+    }
+    return res
+}
 #+END_SRC

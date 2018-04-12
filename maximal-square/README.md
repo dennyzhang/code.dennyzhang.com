@@ -8,7 +8,9 @@ Maximal Square
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Unique Paths](https://brain.dennyzhang.com/unique-paths)
+-   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -29,4 +31,43 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximal-square/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximal-square
+    // Blog link: https://brain.dennyzhang.com/maximal-square
+    // Basic Ideas: dynamic programming
+    //   one pass
+    //
+    //  dp(i, j) depends on dp(i-1, j-1)
+    //
+    // Complexity: Time O(n*m), Space O(n*m)
+    func maximalSquare(matrix [][]byte) int {
+        row_count := len(matrix)
+        if row_count == 0 {return 0}
+        col_count := len(matrix[0])
+        dp := make([][]int, row_count)
+        res := 0
+        for i := range dp { dp[i] = make([]int, col_count) }
+        for i := range dp {
+            for j := range dp[i] {
+                // base case
+                if i == 0 || j == 0 {
+                    if string(matrix[i][j]) == "0" {
+                        dp[i][j] = 0
+                    } else {
+                        dp[i][j] = 1
+                        if dp[i][j] > res { res = dp[i][j] }
+                    }
+                    continue
+                }
+                // normal case
+                if string(matrix[i][j]) != "0" {
+                    if string(matrix[i-1][j]) == "1" && string(matrix[i][j-1]) == "1" {
+                        // TODO
+                        dp[i][j] = dp[i-1][j-1] + 3
+                    } else {
+                        dp[i][j] = 1
+                    }
+                }
+                if dp[i][j] > res { res = dp[i][j] }
+            }
+        }
+        return res
+    }
