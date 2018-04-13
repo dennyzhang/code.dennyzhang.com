@@ -8,9 +8,9 @@ Minimum Window Substring
 ---
 
 Similar Problems:  
--   [Substring with Concatenation of All Words](https://brain.dennyzhang.com/substring-with-concatenation-of-all-words)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
+-   [Substring with Concatenation of All Words](https://code.dennyzhang.com/substring-with-concatenation-of-all-words)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#twopointer](https://code.dennyzhang.comy/tag/twopointer)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-window-substrin
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-window-substring
+    ## Blog link: https://code.dennyzhang.com/minimum-window-substring
     ## Basic Ideas: two pointer
     ##              Find all candidates, and get the mininum window
     ##

@@ -8,8 +8,8 @@ Rotate String
 ---
 
 Similar Problems:  
--   [Repeated String Match](https://brain.dennyzhang.com/repeated-string-match)
--   Tag: [#string](https://brain.dennyzhang.com/tag/string), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   [Repeated String Match](https://code.dennyzhang.com/repeated-string-match)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-string/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rotate-string
+    ## Blog link: https://code.dennyzhang.com/rotate-string
     class Solution:
         def rotateString(self, A, B):
             """

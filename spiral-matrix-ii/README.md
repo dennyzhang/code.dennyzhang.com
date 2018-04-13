@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix-ii/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/spiral-matrix-ii
+    ## Blog link: https://code.dennyzhang.com/spiral-matrix-ii
     ## Basic Ideas:
     ##            The visit is a loop with four directions: right, down, left, up
     ##            Two counters: num1(how many items for right and left)

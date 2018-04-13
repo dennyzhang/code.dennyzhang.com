@@ -8,8 +8,8 @@
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/2-keys-keyboard/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/2-keys-keyboard
+    ## Blog link: https://code.dennyzhang.com/2-keys-keyboard
     ## Basic Ideas: Dynamic programming
     ##
     ## Complexity: Time O(n*n), Space O(n)

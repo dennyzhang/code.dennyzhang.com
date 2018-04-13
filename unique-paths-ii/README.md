@@ -8,8 +8,8 @@ Unique Paths II
 ---
 
 Similar Problems:  
--   [Leetcode: Unique Paths](https://brain.dennyzhang.com/unique-paths)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Leetcode: Unique Paths](https://code.dennyzhang.com/unique-paths)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -38,9 +38,9 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-paths-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/unique-paths-ii
+    ## Blog link: https://code.dennyzhang.com/unique-paths-ii
     ## Basic Ideas: dynamic programming
-    ##  Very similar to https://brain.dennyzhang.com/unique-paths
+    ##  Very similar to https://code.dennyzhang.com/unique-paths
     ##
     ##              f(i, j) = if it's obstacle, 0
     ##                        else: f(i-1, j) + f(i, j-1)

@@ -8,7 +8,7 @@ Replace Words
 ---
 
 Similar Problems:  
--   Tag: [#trie](https://brain.dennyzhang.com/tag/trie)
+-   Tag: [#trie](https://code.dennyzhang.com/tag/trie)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/replace-words/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/replace-words
+    ## Blog link: https://code.dennyzhang.com/replace-words
     ## Basic Ideas: Trie Tree
     ##              Build a Trie Tree from dict
     ##              For each word in sentence, find the shortest prefix

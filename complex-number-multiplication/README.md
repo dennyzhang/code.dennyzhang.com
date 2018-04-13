@@ -8,9 +8,9 @@ Complex Number Multiplication
 ---
 
 Similar Problems:  
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   [Solve the Equation](https://brain.dennyzhang.com/solve-the-equation)
--   Tag: [#math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Solve the Equation](https://code.dennyzhang.com/solve-the-equation)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -41,7 +41,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/complex-number-multipli
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/complex-number-multiplication
+    // Blog link: https://code.dennyzhang.com/complex-number-multiplication
     // Basic Ideas:
     //      (v1+v2*i) * (v3+v4*i) ->
     //        v1*v3 + (v1*v4+v2*v3)*i + v2*v4*i*i ->

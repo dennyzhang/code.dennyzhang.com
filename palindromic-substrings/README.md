@@ -8,7 +8,7 @@ Palindromic Substrings
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindromic-substrings/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/palindromic-substrings
+    ## Blog link: https://code.dennyzhang.com/palindromic-substrings
     ## Basic Ideas: Choose each character as the central letter
     ##        The palindrome may have odd length and even length.
     ## Complexity: Time O(n*n), Space O(1)

@@ -8,7 +8,7 @@ Gas Station
 ---
 
 Similar Problems:  
--   [Review: Greedy Problems](https://brain.dennyzhang.com/review-greedy), [Tag: #greedy](https://brain.dennyzhang.com/tag/greedy)
+-   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy), [Tag: #greedy](https://code.dennyzhang.com/tag/greedy)
 
 ---
 
@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/gas-station/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/gas-station
+    ## Blog link: https://code.dennyzhang.com/gas-station
     ## Basic Ideas: One pass
     ##    If gas[i] - cost[i] < 0, this node can't be the target
     ##

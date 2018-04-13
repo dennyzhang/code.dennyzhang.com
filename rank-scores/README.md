@@ -8,7 +8,7 @@ Rank Scores
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -44,7 +44,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rank-scores/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rank-scores
+    ## Blog link: https://code.dennyzhang.com/rank-scores
     set @rownr=0;
     select t1.Score, t2.rank as Rank
     from Scores as t1 inner join

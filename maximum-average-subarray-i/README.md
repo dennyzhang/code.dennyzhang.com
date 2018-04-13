@@ -8,7 +8,7 @@ Maximum Average Subarray I
 ---
 
 Similar Problems:  
--   Tag: [#slidingwindow](https://brain.dennyzhang.com/tag/slidingwindow)
+-   Tag: [#slidingwindow](https://code.dennyzhang.com/tag/slidingwindow)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-average-subarra
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-average-subarray-i
+    ## Blog link: https://code.dennyzhang.com/maximum-average-subarray-i
     ## Basic Ideas: greedy + Sliding window
     ##
     ## Complexity: Time O(n), Space O(1)

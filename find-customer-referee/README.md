@@ -8,7 +8,7 @@ Find Customer Referee
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -44,7 +44,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-customer-referee/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-customer-referee
+    ## Blog link: https://code.dennyzhang.com/find-customer-referee
     select name
     from customer
     where referee_id != '2' or referee_id is null;

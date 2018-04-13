@@ -8,7 +8,7 @@ Sales Person
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -78,7 +78,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sales-person/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sales-person
+    ## Blog link: https://code.dennyzhang.com/sales-person
     select name
     from salesperson
     where name not in

@@ -8,7 +8,7 @@ Second Highest Salary
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-highest-salary
+    ## Blog link: https://code.dennyzhang.com/second-highest-salary
     select ifnull((
            select Salary from Employee
            group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary

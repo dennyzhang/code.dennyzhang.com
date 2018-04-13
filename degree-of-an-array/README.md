@@ -8,7 +8,7 @@ Degree of an Array
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -42,4 +42,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/degree-of-an-array/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/degree-of-an-array
+    ## Blog link: https://code.dennyzhang.com/degree-of-an-array

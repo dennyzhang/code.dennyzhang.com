@@ -8,8 +8,8 @@ Generalized Abbreviation
 ---
 
 Similar Problems:  
--   [Letter Case Permutation](https://brain.dennyzhang.com/letter-case-permutation)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Letter Case Permutation](https://code.dennyzhang.com/letter-case-permutation)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/generalized-abbreviatio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/generalized-abbreviation
+    ## Blog link: https://code.dennyzhang.com/generalized-abbreviation
     ## Basic Ideas: BFS
     ##
     ## Complexity: Time O(n*pow(2,n)), Space O(pow(2, n))

@@ -8,7 +8,7 @@ Rotate Linked list
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-list/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rotate-list
+    ## Blog link: https://code.dennyzhang.com/rotate-list
     ## Basic Ideas: 
     ##       Get length of the list
     ##       pointer q: where to rotate

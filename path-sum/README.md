@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/path-sum/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/path-sum
+    ## Blog link: https://code.dennyzhang.com/path-sum
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

@@ -8,8 +8,8 @@ Preimage Size of Factorial Zeroes Function
 ---
 
 Similar Problems:  
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
 
 ---
 
@@ -39,4 +39,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/preimage-size-of-factor
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/preimage-size-of-factorial-zeroes-function
+    ## Blog link: https://code.dennyzhang.com/preimage-size-of-factorial-zeroes-function

@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-binary-tree/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-binary-tree
+    ## Blog link: https://code.dennyzhang.com/maximum-binary-tree
     ## Basic Ideas: recursive way
     ##
     ## Complexity: Time O(n), Space O(1)

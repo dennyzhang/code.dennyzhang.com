@@ -8,7 +8,7 @@ Consecutive Available Seats
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -41,7 +41,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/consecutive-available-s
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/consecutive-available-seats
+    ## Blog link: https://code.dennyzhang.com/consecutive-available-seats
     select distinct t1.seat_id
     from cinema as t1 join cinema as t2
     on abs(t1.seat_id-t2.seat_id)=1

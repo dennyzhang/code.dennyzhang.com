@@ -8,7 +8,7 @@ Count Student Number in Departments
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -69,7 +69,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-student-number-in
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/count-student-number-in-departments
+    ## Blog link: https://code.dennyzhang.com/count-student-number-in-departments
     select dept_name, 
       sum(case when student_id is null then 0 else 1 end) as student_number
     from department left join student

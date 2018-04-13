@@ -8,7 +8,7 @@ Equal Tree Partition
 ---
 
 Similar Problems:  
--   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -59,7 +59,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/equal-tree-partition/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/equal-tree-partition
+    ## Blog link: https://code.dennyzhang.com/equal-tree-partition
     # class TreeNode:
     #     def __init__(self, x):
     #         self.val = x

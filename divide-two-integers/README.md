@@ -8,7 +8,7 @@ Divide two integers without using multiplication, division and mod operator.
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -22,7 +22,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/divide-two-integers/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/divide-two-integers
+    ## Blog link: https://code.dennyzhang.com/divide-two-integers
     ## Basic Ideas: generate a list of [1, 2, 4, 8, 16...] and [d, 2d, 4d, 8d, ...]
     ## Complexity: Time O(log(n)), Space O(log(n))
     ## Sample Data: 

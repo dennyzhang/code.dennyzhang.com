@@ -24,4 +24,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/delete-operation-for-tw
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/delete-operation-for-two-strings
+    ## Blog link: https://code.dennyzhang.com/delete-operation-for-two-strings

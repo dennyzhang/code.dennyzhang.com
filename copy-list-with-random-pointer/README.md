@@ -8,8 +8,8 @@ Copy List with Random Pointer
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/copy-list-with-random-p
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/copy-list-with-random-pointer
+    ## Blog link: https://code.dennyzhang.com/copy-list-with-random-pointer
     ## Basic Ideas:
     ##            |------------|
     ##            |            v

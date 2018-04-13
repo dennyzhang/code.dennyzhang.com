@@ -8,8 +8,8 @@ Sort Characters By Frequency
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap), [Tag: #heap](https://brain.dennyzhang.com/tag/heap)
--   Tag: [heap](https://brain.dennyzhang.com/tag/heap)
+-   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
+-   Tag: [heap](https://code.dennyzhang.com/tag/heap)
 
 ---
 
@@ -57,7 +57,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-characters-by-freq
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sort-characters-by-frequency
+    ## Blog link: https://code.dennyzhang.com/sort-characters-by-frequency
     ## Baisc Ideas: Sort with customized function
     ##
     ## Complexity:

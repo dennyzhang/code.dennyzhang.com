@@ -8,7 +8,7 @@ Escape The Ghosts
 ---
 
 Similar Problems:  
--   Tag: [#array](https://brain.dennyzhang.com/tag/array)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -58,7 +58,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/escape-the-ghosts/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/escape-the-ghosts
+    ## Blog link: https://code.dennyzhang.com/escape-the-ghosts
     ## Basic Ideas: Get the minimum distance
     ##
     ## Complexity: Time O(1), Space O(1)

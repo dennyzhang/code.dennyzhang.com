@@ -8,12 +8,12 @@ Strobogrammatic Number II
 ---
 
 Similar Problems:  
--   [Unique Binary Search Trees II](https://brain.dennyzhang.com/unique-binary-search-trees-ii)
--   [Strobogrammatic Number](https://brain.dennyzhang.com/strobogrammatic-number)
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   [Review: String Problems](https://brain.dennyzhang.com/review-string)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [math](https://brain.dennyzhang.com/tag/math), [#string](https://brain.dennyzhang.com/tag/string)
+-   [Unique Binary Search Trees II](https://code.dennyzhang.com/unique-binary-search-trees-ii)
+-   [Strobogrammatic Number](https://code.dennyzhang.com/strobogrammatic-number)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [math](https://code.dennyzhang.com/tag/math), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/strobogrammatic-number-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/strobogrammatic-number-ii
+    ## Blog link: https://code.dennyzhang.com/strobogrammatic-number-ii
     ## Basic Ideas: Recursive
     ##       From f(n-2) and f(2) --> f(n)
     ##

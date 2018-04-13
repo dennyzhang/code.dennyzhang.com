@@ -8,7 +8,7 @@ Swim in Rising Water
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://brain.dennyzhang.com/category/graph)
+-   Tag: [#graph](https://code.dennyzhang.com/category/graph)
 
 ---
 
@@ -54,7 +54,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/swim-in-rising-water/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/swim-in-rising-water
+    ## Blog link: https://code.dennyzhang.com/swim-in-rising-water
     class Solution:
         ## Basic Ideas: BFS + heap
         ##     The water flows with nearly no delay, if it permits

@@ -8,9 +8,9 @@ Subsets II
 ---
 
 Similar Problems:  
--   [Subsets](https://brain.dennyzhang.com/subsets)
--   [Letter Case Permutation](https://brain.dennyzhang.com/letter-case-permutation)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Subsets](https://code.dennyzhang.com/subsets)
+-   [Letter Case Permutation](https://code.dennyzhang.com/letter-case-permutation)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subsets-ii/description/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/subsets-ii
+    ## Blog link: https://code.dennyzhang.com/subsets-ii
     ## Basic Ideas:
     ##
     ## Complexity:

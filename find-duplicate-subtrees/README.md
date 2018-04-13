@@ -8,7 +8,7 @@ Find Duplicate Subtrees
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -44,4 +44,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-duplicate-subtrees
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-duplicate-subtrees
+    ## Blog link: https://code.dennyzhang.com/find-duplicate-subtrees

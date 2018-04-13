@@ -20,4 +20,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-cycle-ii/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/linked-list-cycle-ii
+    ## Blog link: https://code.dennyzhang.com/linked-list-cycle-ii

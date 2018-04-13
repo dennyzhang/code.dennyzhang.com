@@ -8,7 +8,7 @@ Design Phone Directory
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -50,7 +50,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-phone-directory/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/design-phone-directory
+    ## Blog link: https://code.dennyzhang.com/design-phone-directory
     ## Basic Ideas: One collection: free_set
     ##
     ##  Notcie: here we only need one collection(free_set), instead of two (occupied_set and free_set)

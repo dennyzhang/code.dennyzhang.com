@@ -8,8 +8,8 @@ Sliding Window Median
 ---
 
 Similar Problems:  
--   [Find Median from Data Stream](https://brain.dennyzhang.com/find-median-from-data-stream)
--   [Tag: #getmedian](https://brain.dennyzhang.com/tag/getmedian)
+-   [Find Median from Data Stream](https://code.dennyzhang.com/find-median-from-data-stream)
+-   [Tag: #getmedian](https://code.dennyzhang.com/tag/getmedian)
 
 ---
 
@@ -46,7 +46,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sliding-window-median/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sliding-window-median
+    ## Blog link: https://code.dennyzhang.com/sliding-window-median
     class Solution:
         ## Basic Ideas: two heap
         ## Complexity: Time O(n*k), Space O(k)

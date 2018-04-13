@@ -8,9 +8,9 @@ Reach a Number
 ---
 
 Similar Problems:  
--   [Reaching Points](https://brain.dennyzhang.com/reaching-points)
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Reaching Points](https://code.dennyzhang.com/reaching-points)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -46,7 +46,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reach-a-number/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reach-a-number
+    ## Blog link: https://code.dennyzhang.com/reach-a-number
     ## Basic Ideas: BFS
     ##      1 - 2 + 3 - 4 + 5 - 6 ... : get -n
     ##      -1 + 2 - 3 + 4 - 5 + 6 ... : get n

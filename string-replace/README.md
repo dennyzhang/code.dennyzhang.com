@@ -8,7 +8,7 @@ String Replace
 ---
 
 Similar Problems:  
--   [Tag: #string](https://brain.dennyzhang.com/tag/string)
+-   [Tag: #string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/string-replace/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/string-replace
+    ## Blog link: https://code.dennyzhang.com/string-replace
     class TrieNode:
         def __init__(self):
             import collections

@@ -8,7 +8,7 @@ Text Justification
 ---
 
 Similar Problems:  
--   Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -41,4 +41,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/text-justification/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/text-justification
+    ## Blog link: https://code.dennyzhang.com/text-justification

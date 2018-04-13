@@ -8,8 +8,8 @@ Top K Frequent Words
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap), [Tag: #heap](https://brain.dennyzhang.com/tag/heap)
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -43,7 +43,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-words/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/top-k-frequent-words
+    ## Blog link: https://code.dennyzhang.com/top-k-frequent-words
     ## Basic Ideas: Hash map
     ##            Count the occurency for different words
     ##            Then sort the list by descending occurency

@@ -8,7 +8,7 @@ Given the coordinates of four points in 2D space, return whether the four points
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-square/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-square
+    ## Blog link: https://code.dennyzhang.com/valid-square
     ## Basic Ideas:
     ##              p2(0,1)               p4(1,1)
     ##

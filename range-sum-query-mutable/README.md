@@ -8,10 +8,10 @@ Range Sum Query - Mutable
 ---
 
 Similar Problems:  
--   [Range Addition](https://brain.dennyzhang.com/range-addition)
--   [Review: Segment Tree Problems](https://brain.dennyzhang.com/review-segmenttree), Tag: [#segmenttree](https://brain.dennyzhang.com/tag/segmenttree)
--   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Range Addition](https://code.dennyzhang.com/range-addition)
+-   [Review: Segment Tree Problems](https://code.dennyzhang.com/review-segmenttree), Tag: [#segmenttree](https://code.dennyzhang.com/tag/segmenttree)
+-   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://code.dennyzhang.com/tag/concurrency)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-mutable
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/range-sum-query-mutable
+    ## Blog link: https://code.dennyzhang.com/range-sum-query-mutable
     class NumArray(object):
     
         def __init__(self, nums):

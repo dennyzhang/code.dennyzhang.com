@@ -8,7 +8,7 @@ Remove Nth Node From End of List
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-nth-node-from-en
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/remove-nth-node-from-end-of-list
+    ## Blog link: https://code.dennyzhang.com/remove-nth-node-from-end-of-list
     ## Basic Ideas: Two pointers with distance of n+1
     ##              Since the head node might be deleted, we need a dummy node
     ##              One pass

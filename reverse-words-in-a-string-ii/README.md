@@ -8,7 +8,7 @@ Reverse Words in a String II
 ---
 
 Similar Problems:  
--   Tag: [Rotate Array](https://brain.dennyzhang.com/rotate-array)
+-   Tag: [Rotate Array](https://code.dennyzhang.com/rotate-array)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-stri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reverse-words-in-a-string-ii
+    ## Blog link: https://code.dennyzhang.com/reverse-words-in-a-string-ii
     ## Basic Ideas: Reverse string. Then find the groups, and reverse them.
     ##
     ## Complexity: Time O(n), Space O(1)

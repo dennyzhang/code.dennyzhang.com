@@ -8,9 +8,9 @@ Sliding Puzzle
 ---
 
 Similar Problems:  
--   [LintCode: Sliding Puzzle III](https://brain.dennyzhang.com/sliding-puzzle-iii)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game)
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph), [#game](https://brain.dennyzhang.com/tag/game)
+-   [LintCode: Sliding Puzzle III](https://code.dennyzhang.com/sliding-puzzle-iii)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -56,7 +56,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sliding-puzzle/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sliding-puzzle
+    ## Blog link: https://code.dennyzhang.com/sliding-puzzle
     ## Basic Ideas: BFS: find the mininum path from point1 to point2
     ##
     ## Complexity:

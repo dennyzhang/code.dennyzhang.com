@@ -8,7 +8,7 @@ Subset With Target
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/subset-with-target
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/subset-with-target
+    ## Blog link: https://code.dennyzhang.com/subset-with-target
     #!/usr/bin/env python
     class Solution:
         """

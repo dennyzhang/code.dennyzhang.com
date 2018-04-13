@@ -8,7 +8,7 @@ Classes More Than 5 Students
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/classes-more-than-5-stu
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/classes-more-than-5-students
+    ## Blog link: https://code.dennyzhang.com/classes-more-than-5-students
     
     select class from courses
     group by class having count(distinct student)>=5;

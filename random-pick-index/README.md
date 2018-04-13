@@ -8,7 +8,7 @@ Random Pick Index
 ---
 
 Similar Problems:  
--   Tag: [#reservoirsampling](https://brain.dennyzhang.com/tag/reservoirsampling)
+-   Tag: [#reservoirsampling](https://code.dennyzhang.com/tag/reservoirsampling)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/random-pick-index/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/random-pick-index
+    ## Blog link: https://code.dennyzhang.com/random-pick-index
     ## Basic Ideas: Reservior Sampling
     ##
     ## Complexity: Time O(n), Space O(1)

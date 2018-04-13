@@ -8,7 +8,7 @@ Clone Graph
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/clone-graph/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/clone-graph
+    ## Blog link: https://code.dennyzhang.com/clone-graph
     ## Basic Ideas: Use a hashmap
     ##              For each new node, create one.
     ##              Scan its neighbors, if found new nodes. Create them. And update mapping

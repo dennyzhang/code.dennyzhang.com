@@ -8,8 +8,8 @@ Friend Requests I: Overall Acceptance Rate
 ---
 
 Similar Problems:  
--   [Friend Requests II: Who Has the Most Friends](https://brain.dennyzhang.com/friend-requests-ii-who-has-the-most-friends)
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Friend Requests II: Who Has the Most Friends](https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -58,7 +58,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/friend-requests-i-overa
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/friend-requests-i-overall-acceptance-rate
+    ## Blog link: https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate
     select ifnull((round(accepts/requests, 2)), 0.0) as accept_rate
     from
         (select count(distinct sender_id, send_to_id) as requests from friend_request) as t1,

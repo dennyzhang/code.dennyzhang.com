@@ -8,8 +8,8 @@ Group Shifted Strings
 ---
 
 Similar Problems:  
--   [Group Anagrams](https://brain.dennyzhang.com/group-anagrams)
--   [Tag: #hashmap](https://brain.dennyzhang.com/tag/hashmap)
+-   [Group Anagrams](https://code.dennyzhang.com/group-anagrams)
+-   [Tag: #hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/group-shifted-strings/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/group-shifted-strings
+    ## Blog link: https://code.dennyzhang.com/group-shifted-strings
     ## Basic Ideas: hashmap
     ##
     ## From ["az", "ba"] we know, it's a rotated shift

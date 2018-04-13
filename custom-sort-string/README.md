@@ -8,7 +8,7 @@ Custom Sort String
 ---
 
 Similar Problems:  
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/custom-sort-string/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/custom-sort-string
+    ## Blog link: https://code.dennyzhang.com/custom-sort-string
     ## Basic Ideas: hashmap
     ##
     ## Complexity: Time O(n), Space O(1)

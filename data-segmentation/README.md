@@ -8,7 +8,7 @@ Data Segmentation
 ---
 
 Similar Problems:  
--   Tag: [#classic](https://brain.dennyzhang.com/tag/classic)
+-   Tag: [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -41,7 +41,7 @@ Credits To: [lintcode.com](http://lintcode.com/en/problem/data-segmentation/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/data-segmentation
+    ## Blog link: https://code.dennyzhang.com/data-segmentation
     ## Basic Ideas: seperate string
     ## Complexity: Time O(n), Space O(1)
     class Solution:

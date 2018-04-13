@@ -8,9 +8,9 @@ Island City
 ---
 
 Similar Problems:  
--   [Number of Islands](https://brain.dennyzhang.com/number-of-islands)
--   [Review: Graph Problems](https://brain.dennyzhang.com/review-graph)
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph), [#dfs](https://brain.dennyzhang.com/tag/dfs), [#bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Number of Islands](https://code.dennyzhang.com/number-of-islands)
+-   [Review: Graph Problems](https://code.dennyzhang.com/review-graph)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#dfs](https://code.dennyzhang.com/tag/dfs), [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -60,7 +60,7 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/island-city/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/island-city
+    ## Blog link: https://code.dennyzhang.com/island-city
     class Solution:
         """
         @param grid: an integer matrix

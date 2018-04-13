@@ -8,7 +8,7 @@ Candy
 ---
 
 Similar Problems:  
--   [Review: Greedy Problems](https://brain.dennyzhang.com/review-greedy), [Tag: #greedy](https://brain.dennyzhang.com/tag/greedy)
+-   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy), [Tag: #greedy](https://code.dennyzhang.com/tag/greedy)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/candy/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/candy
+    ## Blog link: https://code.dennyzhang.com/candy
     ## Basic Ideas:
     ##
     ##   Assign each child 1 candy

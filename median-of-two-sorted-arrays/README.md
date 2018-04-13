@@ -8,7 +8,7 @@ Median of Two Sorted Arrays
 ---
 
 Similar Problems:  
--   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian)
+-   Tag: [getmedian](https://code.dennyzhang.com/tag/getmedian)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/median-of-two-sorted-ar
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/median-of-two-sorted-arrays
+    ## Blog link: https://code.dennyzhang.com/median-of-two-sorted-arrays
     ## Basic Ideas: merge 2 sorted array to one, find 2 values
     ## Complexity: O(m+n)
     class Solution(object):

@@ -8,9 +8,9 @@ Chalkboard XOR Game
 ---
 
 Similar Problems:  
--   [Swap Adjacent in LR String](https://brain.dennyzhang.com/swap-adjacent-in-lr-string)
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   Tag: [#bitmanipulation](https://brain.dennyzhang.com/tag/bitmanipulation), [#game](https://brain.dennyzhang.com/tag/game), [#math](https://brain.dennyzhang.com/tag/math)
+-   [Swap Adjacent in LR String](https://code.dennyzhang.com/swap-adjacent-in-lr-string)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [#bitmanipulation](https://code.dennyzhang.com/tag/bitmanipulation), [#game](https://code.dennyzhang.com/tag/game), [#math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/chalkboard-xor-game/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/chalkboard-xor-game
+    ## Blog link: https://code.dennyzhang.com/chalkboard-xor-game
     ## Basic Ideas:
     ##
     ##  One Item:

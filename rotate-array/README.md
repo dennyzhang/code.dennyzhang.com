@@ -8,7 +8,7 @@ Right rotate array by k steps
 ---
 
 Similar Problems:  
--   Tag: [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   Tag: [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -27,7 +27,7 @@ Hint: Time O(n), Space O(1)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rotate-array
+    ## Blog link: https://code.dennyzhang.com/rotate-array
     ## Basic Ideas:
     ## Complexity: Time O(), Space O()
     ## Assumptions:

@@ -8,8 +8,8 @@ Next Greater Element I
 ---
 
 Similar Problems:  
--   [Leetcode: Daily Temperatures](https://brain.dennyzhang.com/daily-temperatures)
--   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
+-   [Leetcode: Daily Temperatures](https://code.dennyzhang.com/daily-temperatures)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/next-greater-element-i/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/next-greater-element-i
+    ## Blog link: https://code.dennyzhang.com/next-greater-element-i
     ## Basic Ideas: Descending stack
     ##
     ## Complexity: Time O(n), Space O(n)

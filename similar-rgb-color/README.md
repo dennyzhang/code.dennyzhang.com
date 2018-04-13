@@ -8,8 +8,8 @@ Similar RGB Color
 ---
 
 Similar Problems:  
--   [Number of Lines To Write String](https://brain.dennyzhang.com/number-of-lines-to-write-string)
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic), [#string](https://brain.dennyzhang.com/category/string)
+-   [Number of Lines To Write String](https://code.dennyzhang.com/number-of-lines-to-write-string)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic), [#string](https://code.dennyzhang.com/category/string)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/similar-rgb-color/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/similar-rgb-color
+    ## Blog link: https://code.dennyzhang.com/similar-rgb-color
     ## Basic Ideas:
     ## Complexity: Time O(1): 16*16*16
     ##             Space O(1)

@@ -8,7 +8,7 @@ Number of Islands II
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
 
 ---
 
@@ -59,7 +59,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-islands-ii/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/number-of-islands-ii
+    ## Blog link: https://code.dennyzhang.com/number-of-islands-ii
 
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>

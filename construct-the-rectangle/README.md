@@ -8,9 +8,9 @@ Construct the Rectangle
 ---
 
 Similar Problems:  
--   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle)
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle), [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -38,7 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/construct-the-rectangle
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/construct-the-rectangle
+    ## Blog link: https://code.dennyzhang.com/construct-the-rectangle
     ## Basic Ideas:
     ##
     ## Complexity: Time O(sqrt(n)), Space O(1)

@@ -8,8 +8,8 @@ Sort Transformed Array
 ---
 
 Similar Problems:  
--   [Split Array With Same Average](https://brain.dennyzhang.com/split-array-with-same-average)
--   Tag: [#math](https://brain.dennyzhang.com/tag/math)
+-   [Split Array With Same Average](https://code.dennyzhang.com/split-array-with-same-average)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -35,4 +35,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-transformed-array/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sort-transformed-array
+    ## Blog link: https://code.dennyzhang.com/sort-transformed-array

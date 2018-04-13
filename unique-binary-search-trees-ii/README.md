@@ -8,7 +8,7 @@ Unique Binary Search Trees II
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -29,4 +29,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-binary-search-tr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/unique-binary-search-trees-ii
+    ## Blog link: https://code.dennyzhang.com/unique-binary-search-trees-ii

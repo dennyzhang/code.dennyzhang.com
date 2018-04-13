@@ -8,7 +8,7 @@ Maximum Association Set
 ---
 
 Similar Problems:  
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/maximum-associatio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-association-set
+    ## Blog link: https://code.dennyzhang.com/maximum-association-set
     #!/usr/bin/env python
     class Solution:
         """

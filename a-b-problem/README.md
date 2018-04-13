@@ -8,8 +8,8 @@ A + B Problem
 ---
 
 Similar Problems:  
--   [Sum of Two Integers](https://brain.dennyzhang.com/sum-of-two-integers)
--   [Tag: #bitmanipulation](https://brain.dennyzhang.com/tag/bitmanipulation)
+-   [Sum of Two Integers](https://code.dennyzhang.com/sum-of-two-integers)
+-   [Tag: #bitmanipulation](https://code.dennyzhang.com/tag/bitmanipulation)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/a-b-problem/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/a-b-problem
+    ## Blog link: https://code.dennyzhang.com/a-b-problem
     class Solution:
         """
         @param a: An integer

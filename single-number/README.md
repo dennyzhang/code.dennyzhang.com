@@ -18,7 +18,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/single-number/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/single-number
+    ## Blog link: https://code.dennyzhang.com/single-number
     class Solution(object):
         def singleNumber(self, nums):
             """

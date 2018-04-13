@@ -8,8 +8,8 @@ Longest Substring with At Most Two Distinct Characters
 ---
 
 Similar Problems:  
--   [Longest Substring with At Most K Distinct Characters](https://brain.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters)
--   [Tag: #string](https://brain.dennyzhang.com/tag/string)
+-   [Longest Substring with At Most K Distinct Characters](https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters)
+-   [Tag: #string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-substring-with-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters
+    ## Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters
     ## Basic Ideas:
     ## Complexity: Time O(n), Space O(1)
     class Solution:

@@ -8,8 +8,8 @@ Longest Substring Without Repeating Characters
 ---
 
 Similar Problems:  
--   [Leetcode: Substring with Concatenation of All Words](https://brain.dennyzhang.com/substring-with-concatenation-of-all-words)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Leetcode: Substring with Concatenation of All Words](https://code.dennyzhang.com/substring-with-concatenation-of-all-words)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-substring-witho
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-substring-without-repeating-characters
+    ## Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters
     ## Basic Ideas: two pointer: slow and fast
     ##           If duplicate, the fast pointer don't need to turn back.
     ## Complexity Time O(n), Space O(1)

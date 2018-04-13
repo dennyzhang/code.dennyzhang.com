@@ -8,8 +8,8 @@ Find Leaves of Binary Tree
 ---
 
 Similar Problems:  
--   [Binary Tree Vertical Order Traversal](https://brain.dennyzhang.com/binary-tree-vertical-order-traversal)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Binary Tree Vertical Order Traversal](https://code.dennyzhang.com/binary-tree-vertical-order-traversal)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -45,7 +45,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-leaves-of-binary-t
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-leaves-of-binary-tree
+    ## Blog link: https://code.dennyzhang.com/find-leaves-of-binary-tree
     ## Basic Ideas: hashmap + post-order + reversed BFS
     ##
     ##  Children find out parent

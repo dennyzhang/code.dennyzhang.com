@@ -8,8 +8,8 @@ Delete Node in a BST
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -57,7 +57,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/delete-node-in-a-bst/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/delete-node-in-a-bst
+    ## Blog link: https://code.dennyzhang.com/delete-node-in-a-bst
     ## Basic Ideas: Find the target
     ##              If the target is a leaf, we need the parent node
     ##              If the target only have one child

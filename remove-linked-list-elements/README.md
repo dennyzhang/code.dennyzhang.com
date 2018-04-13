@@ -19,7 +19,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-linked-list-elem
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/remove-linked-list-elements
+    ## Blog link: https://code.dennyzhang.com/remove-linked-list-elements
     ## Basic Ideas: The head might be removed, thus we need a dummy node
     ## Complexity: Time O(n), Space O(1)
     # Definition for singly-linked list.

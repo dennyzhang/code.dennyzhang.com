@@ -8,8 +8,8 @@ Longest Palindromic Subsequence
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -39,4 +39,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-palindromic-sub
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-palindromic-subsequence
+    ## Blog link: https://code.dennyzhang.com/longest-palindromic-subsequence

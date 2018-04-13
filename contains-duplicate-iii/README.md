@@ -8,8 +8,8 @@ Contains Duplicate III
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate-iii/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/contains-duplicate-iii
+    ## Blog link: https://code.dennyzhang.com/contains-duplicate-iii
     ## Basic Ideas: sliding window
     ##              Maintain a window with k+1 elements. A set for unsorted unique collection
     ## Complexity: Time O(n), Space O(k)

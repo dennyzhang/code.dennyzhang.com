@@ -8,8 +8,8 @@ Palindrome Permutation II
 ---
 
 Similar Problems:  
--   [Letter Case Permutation](https://brain.dennyzhang.com/letter-case-permutation)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Letter Case Permutation](https://code.dennyzhang.com/letter-case-permutation)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -27,4 +27,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-permutation-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/palindrome-permutation-ii
+    ## Blog link: https://code.dennyzhang.com/palindrome-permutation-ii

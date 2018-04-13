@@ -8,8 +8,8 @@ LRU Cache
 ---
 
 Similar Problems:  
--   [All O\`one Data Structure](https://brain.dennyzhang.com/all-oone-data-structure)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [All O\`one Data Structure](https://code.dennyzhang.com/all-oone-data-structure)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -41,7 +41,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lru-cache/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/lru-cache
+    ## Blog link: https://code.dennyzhang.com/lru-cache
     ## Basic Ideas: Double linked list + hashmap
     ##
     ##   We need to mapping from dlink to hashmap,

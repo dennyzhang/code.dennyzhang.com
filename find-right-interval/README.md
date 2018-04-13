@@ -8,9 +8,9 @@ Find Right Interval
 ---
 
 Similar Problems:  
--   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#interval](https://brain.dennyzhang.com/tag/interval)
+-   [Review: Interval Problems](https://code.dennyzhang.com/review-interval)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#interval](https://code.dennyzhang.com/tag/interval)
 
 ---
 
@@ -55,7 +55,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-right-interval/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-right-interval
+    ## Blog link: https://code.dennyzhang.com/find-right-interval
     ## Basic Ideas: hashmap + binary search
     ##     Build a hashmap to track the mapping from start point to position index
     ##     Sort the interval list by the start attribute

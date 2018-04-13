@@ -8,7 +8,7 @@ Find Eventual Safe States
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
 
 ---
 
@@ -41,4 +41,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-eventual-safe-stat
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-eventual-safe-states
+    ## Blog link: https://code.dennyzhang.com/find-eventual-safe-states

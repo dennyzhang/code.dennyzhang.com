@@ -8,7 +8,7 @@ Rising Temperature
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -38,7 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rising-temperature/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rising-temperature
+    ## Blog link: https://code.dennyzhang.com/rising-temperature
     select t1.Id
     from Weather as t1 join Weather as t2
     on DATE_ADD(t2.Date, INTERVAL 1 DAY) = t1.Date

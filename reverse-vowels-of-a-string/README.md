@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-vowels-of-a-str
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reverse-vowels-of-a-string
+    ## Blog link: https://code.dennyzhang.com/reverse-vowels-of-a-string
     ## Basic Ideas: save vowels in an separated array
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):

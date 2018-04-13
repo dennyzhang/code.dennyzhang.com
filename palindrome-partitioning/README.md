@@ -8,7 +8,7 @@ Backtracking or DFS
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -28,7 +28,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-partitioning/description/)  
 
-    ## Blog link: https://brain.dennyzhang.com/palindrome-partitioning
+    ## Blog link: https://code.dennyzhang.com/palindrome-partitioning
     ## Basic Ideas: Divide and conquer
     ## Complexity: Time O(), Space O()
     ## Assumptions:

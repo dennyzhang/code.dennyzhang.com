@@ -8,7 +8,7 @@ Given an integer n, return 1 - n in lexicographical order.
 ---
 
 Similar Problems:  
--   [Gray Code](https://brain.dennyzhang.com/gray-code)
+-   [Gray Code](https://code.dennyzhang.com/gray-code)
 
 ---
 
@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lexicographical-numbers
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/lexicographical-numbers
+    ## Blog link: https://code.dennyzhang.com/lexicographical-numbers
     ## Basic Ideas: DFS
     ##
     ##  When to push? How to find the neighbors?

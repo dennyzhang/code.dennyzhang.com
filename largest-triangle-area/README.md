@@ -8,7 +8,7 @@ Largest Triangle Area
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 
 Related Reading: [Shoelace formula in wikipedia](https://en.wikipedia.org/wiki/Shoelace_formula)  
 
-    ## Blog link: https://brain.dennyzhang.com/largest-triangle-area
+    ## Blog link: https://code.dennyzhang.com/largest-triangle-area
     ## Basic Ideas:
     ##   Check whether 3 points can form a triangle
     ##        any 2 edges should be bigger than the 3rd one

@@ -8,7 +8,7 @@ Kth Largest Element in an Array
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap), [Tag: #heap](https://brain.dennyzhang.com/tag/heap)
+-   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/kth-largest-element-in-an-array
+    ## Blog link: https://code.dennyzhang.com/kth-largest-element-in-an-array
     ## Basic Ideas: heap
     ##
     ## Complexity: Time O(n*log(n)), Space O(n)

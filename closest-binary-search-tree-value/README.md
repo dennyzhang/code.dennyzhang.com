@@ -8,9 +8,9 @@ Closest Binary Search Tree Value
 ---
 
 Similar Problems:  
--   [Closest Binary Search Tree Value II](https://brain.dennyzhang.com/closest-binary-search-tree-value-ii)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Closest Binary Search Tree Value II](https://code.dennyzhang.com/closest-binary-search-tree-value-ii)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/closest-binary-search-t
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/closest-binary-search-tree-value
+    ## Blog link: https://code.dennyzhang.com/closest-binary-search-tree-value
     ## Basic Ideas:
     ##    If the exact match, return
     ##    If current node is bigger than the target, we get a starting value.

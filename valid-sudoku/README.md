@@ -8,8 +8,8 @@ Valid Sudoku
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-sudoku
+    ## Blog link: https://code.dennyzhang.com/valid-sudoku
     ## Basic Ideas: Check each row, each colum and each section
     ##              When we check, we use an array of 10
     ##

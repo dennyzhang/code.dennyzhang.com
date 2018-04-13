@@ -8,9 +8,9 @@ Shortest Completing Word
 ---
 
 Similar Problems:  
--   [Group Shifted Strings](https://brain.dennyzhang.com/group-shifted-strings)
--   [Sentence Similarity](https://brain.dennyzhang.com/sentence-similarity)
--   [Tag: #hashmap](https://brain.dennyzhang.com/tag/hashmap)
+-   [Group Shifted Strings](https://code.dennyzhang.com/group-shifted-strings)
+-   [Sentence Similarity](https://code.dennyzhang.com/sentence-similarity)
+-   [Tag: #hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-completing-wor
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/shortest-completing-word
+    ## Blog link: https://code.dennyzhang.com/shortest-completing-word
     ## Basic Ideas: hashmap
     ##
     ## Complexity: Time O(n*log(n)), Space O(n)

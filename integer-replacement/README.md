@@ -8,7 +8,7 @@ Integer Replacement
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -49,4 +49,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/integer-replacement/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/integer-replacement
+    ## Blog link: https://code.dennyzhang.com/integer-replacement

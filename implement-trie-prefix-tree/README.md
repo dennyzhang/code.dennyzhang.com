@@ -8,7 +8,7 @@ Implement Trie (Prefix Tree)
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-trie-prefix-t
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/implement-trie-prefix-tree
+    ## Blog link: https://code.dennyzhang.com/implement-trie-prefix-tree
     ## Basic Ideas: TrieNode: is_word(bool), children(dict)
     ##           For the root node, we don't store any characters. Only in children
     ##           Here we use defaultdict, thus we can avoid has_key check  

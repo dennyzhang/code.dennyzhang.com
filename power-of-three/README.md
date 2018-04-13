@@ -8,7 +8,7 @@ Given an integer, write a function to determine if it is a power of three.
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-three/descript
 Leave me comments, if you have better ways to solve.  
 
     class Solution(object):
-    ## Blog link: https://brain.dennyzhang.com/power-of-three
+    ## Blog link: https://code.dennyzhang.com/power-of-three
     ## Basic Ideas: power of any prime number
     ##              3 is a prime
     ##              If 3 % k == 0 and k is a prime, then k is 3.

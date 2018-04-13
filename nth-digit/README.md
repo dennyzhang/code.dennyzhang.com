@@ -8,7 +8,7 @@ Nth Digit
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/tag/basic)
 
 ---
 
@@ -42,4 +42,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nth-digit/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/nth-digit
+    ## Blog link: https://code.dennyzhang.com/nth-digit

@@ -8,8 +8,8 @@ Identity number which appears exactly once.
 ---
 
 Similar Problems:  
--   [Min Stack](https://brain.dennyzhang.com/min-stack)
--   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
+-   [Min Stack](https://code.dennyzhang.com/min-stack)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
 
 ---
 
@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 
 Useful link: [monotonic queue problem](https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem)  
 
-    ## Blog link: https://brain.dennyzhang.com/sliding-window-maximum
+    ## Blog link: https://code.dennyzhang.com/sliding-window-maximum
     ## Basic Ideas: sliding window with decreasing sequence
     ##
     ## Complexity: Time O(n), Space O(k)

@@ -8,7 +8,7 @@ Employees Earning More Than Their Managers
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/employees-earning-more-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/employees-earning-more-than-their-managers
+    ## Blog link: https://code.dennyzhang.com/employees-earning-more-than-their-managers
     select t1.Name as Employee
     from Employee as t1 inner join Employee as t2
     on t1.ManagerId = t2.Id

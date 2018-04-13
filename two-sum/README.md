@@ -8,8 +8,8 @@ Pic 2 numbers to get the target sum.
 ---
 
 Similar Problems:  
--   [Tag: #twosum](https://brain.dennyzhang.com/tag/twosum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/two-sum/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/two-sum
+    ## Blog link: https://code.dennyzhang.com/two-sum
     ## Basic Ideas: Sort, then two pointer
     ##
     ## Complexity: Time O(n*log(n)), Space O(1)

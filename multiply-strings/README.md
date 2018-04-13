@@ -8,8 +8,8 @@ Multiply Strings
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/multiply-strings/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/multiply-strings
+    ## Blog link: https://code.dennyzhang.com/multiply-strings
     ## Basic Ideas:
     ##
     ## Complexity:

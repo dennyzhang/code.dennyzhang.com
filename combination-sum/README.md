@@ -8,9 +8,9 @@ Combination Sum
 ---
 
 Similar Problems:  
--   [LintCode: Subset With Target](https://brain.dennyzhang.com/subset-with-target)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
--   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
+-   [LintCode: Subset With Target](https://code.dennyzhang.com/subset-with-target)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
+-   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/combination-sum
+    ## Blog link: https://code.dennyzhang.com/combination-sum
     class Solution(object):
         def combinationSum(self, candidates, target):
             """

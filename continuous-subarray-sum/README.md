@@ -8,7 +8,7 @@ Continuous Subarray Sum
 ---
 
 Similar Problems:  
--   Tag: [#hard](https://brain.dennyzhang.com/category/hard)
+-   Tag: [#hard](https://code.dennyzhang.com/category/hard)
 
 ---
 
@@ -36,4 +36,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/continuous-subarray-sum
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/continuous-subarray-sum
+    ## Blog link: https://code.dennyzhang.com/continuous-subarray-sum

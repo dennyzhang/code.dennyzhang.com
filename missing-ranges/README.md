@@ -8,8 +8,8 @@ Missing Ranges
 ---
 
 Similar Problems:  
--   [Meeting Rooms](https://brain.dennyzhang.com/meeting-rooms)
--   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval), [Tag: #interval](https://brain.dennyzhang.com/tag/interval)
+-   [Meeting Rooms](https://code.dennyzhang.com/meeting-rooms)
+-   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/missing-ranges/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/missing-ranges
+    ## Blog link: https://code.dennyzhang.com/missing-ranges
     ## Basic Ideas:
     ##
     ## Complexity: Time O(n), Space O(1)

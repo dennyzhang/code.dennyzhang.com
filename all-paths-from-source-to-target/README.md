@@ -8,8 +8,8 @@ All Paths From Source to Target
 ---
 
 Similar Problems:  
--   [Is Graph Bipartite](https://brain.dennyzhang.com/is-graph-bipartite)
--   [Tag: #dfs](https://brain.dennyzhang.com/tag/dfs)
+-   [Is Graph Bipartite](https://code.dennyzhang.com/is-graph-bipartite)
+-   [Tag: #dfs](https://code.dennyzhang.com/tag/dfs)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/all-paths-from-source-t
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/all-paths-from-source-to-target
+    ## Blog link: https://code.dennyzhang.com/all-paths-from-source-to-target
     ## Basic Ideas: dfs
     ## Complexity: Time O(n!), Space O(n)
     class Solution:

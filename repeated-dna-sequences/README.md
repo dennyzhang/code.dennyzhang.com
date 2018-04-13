@@ -8,7 +8,7 @@ Repeated DNA Sequences
 ---
 
 Similar Problems:  
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/repeated-dna-sequences/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/repeated-dna-sequences
+    ## Blog link: https://code.dennyzhang.com/repeated-dna-sequences
     ## Basic Ideas: sliding window + hashmap
     ##
     ## Complexity: Time O(n), Space O(n)

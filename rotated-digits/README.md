@@ -8,8 +8,8 @@ Rotated Digits
 ---
 
 Similar Problems:  
--   [Review: String Problems](https://brain.dennyzhang.com/review-string)
--   Tag: [#string](https://brain.dennyzhang.com/tag/string), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotated-digits/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rotated-digits
+    ## Blog link: https://code.dennyzhang.com/rotated-digits
     ## Basic Ideas: Check number one by one
     ##
     ## Complexity: Time O(n), Space O(1)

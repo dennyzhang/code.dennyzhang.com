@@ -8,7 +8,7 @@ Maximum Gap
 ---
 
 Similar Problems:  
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -26,4 +26,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-gap/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-gap
+    ## Blog link: https://code.dennyzhang.com/maximum-gap

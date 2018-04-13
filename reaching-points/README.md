@@ -8,9 +8,9 @@ Reaching Points
 ---
 
 Similar Problems:  
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive)
--   [Review: mod Problems](https://brain.dennyzhang.com/review-mod)
--   Tag: [#recursive](https://brain.dennyzhang.com/tag/recursive), [#mod](https://brain.dennyzhang.com/tag/mod)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive)
+-   [Review: mod Problems](https://code.dennyzhang.com/review-mod)
+-   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive), [#mod](https://code.dennyzhang.com/tag/mod)
 
 ---
 
@@ -43,7 +43,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reaching-points/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reaching-points
+    ## Blog link: https://code.dennyzhang.com/reaching-points
     ## Basic Ideas:
     ##   When tx > sx and ty > sy
     ##        we move from the target to the source by using mod functions

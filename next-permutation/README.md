@@ -8,8 +8,8 @@ Next Permutation
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination)
--   Tag: [#combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
+-   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -39,7 +39,7 @@ Related Readings:
 
 ![img](//raw.githubusercontent.com/DennyZhang/images/master/code/next-permutation-algorithm.png)  
 
-    // Blog link: https://brain.dennyzhang.com/next-permutation
+    // Blog link: https://code.dennyzhang.com/next-permutation
     // Basic Ideas:
     //   1. From right to left, find the longest non-increasing subsequence
     //   2. Swap items

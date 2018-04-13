@@ -8,8 +8,8 @@ Remove Duplicates from Sorted List II
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/remove-duplicates-from-sorted-list-ii
+    ## Blog link: https://code.dennyzhang.com/remove-duplicates-from-sorted-list-ii
     ## Basic Ideas:
     ##    p points to the last processed node
     ##    Whether to add one node

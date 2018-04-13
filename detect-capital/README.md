@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/detect-capital/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/detect-capital
+    ## Blog link: https://code.dennyzhang.com/detect-capital
     ## Basic Ideas: Scan once
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

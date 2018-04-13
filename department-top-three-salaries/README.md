@@ -8,7 +8,7 @@ Department Top Three Salaries
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -52,7 +52,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/department-top-three-sa
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/department-top-three-salaries
+    ## Blog link: https://code.dennyzhang.com/department-top-three-salaries
     select t4.Name as Department, t3.Name as Employee, t3.Salary
     from
         (select t1.Id, t1.Name, t1.Salary, t1.DepartmentId, count(1) as rank

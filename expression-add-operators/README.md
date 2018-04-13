@@ -8,7 +8,7 @@ Expression Add Operators
 ---
 
 Similar Problems:  
--   [Review: Divide And Conquer Problems](https://brain.dennyzhang.com/review-divideconquer), [Tag: #divideconquer](https://brain.dennyzhang.com/tag/divideconquer)
+-   [Review: Divide And Conquer Problems](https://code.dennyzhang.com/review-divideconquer), [Tag: #divideconquer](https://code.dennyzhang.com/tag/divideconquer)
 
 ---
 
@@ -28,4 +28,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/expression-add-operator
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/expression-add-operators
+    ## Blog link: https://code.dennyzhang.com/expression-add-operators

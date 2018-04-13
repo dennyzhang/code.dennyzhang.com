@@ -8,9 +8,9 @@ Nested List Weight Sum II
 ---
 
 Similar Problems:  
--   [Nested List Weight Sum](https://brain.dennyzhang.com/nested-list-weight-sum)
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
--   Tag: [#nestedlist](https://brain.dennyzhang.com/tag/nestedlist)
+-   [Nested List Weight Sum](https://code.dennyzhang.com/nested-list-weight-sum)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
+-   Tag: [#nestedlist](https://code.dennyzhang.com/tag/nestedlist)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nested-list-weight-sum-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/nested-list-weight-sum-ii
+    ## Blog link: https://code.dennyzhang.com/nested-list-weight-sum-ii
     ## Basic Ideas: BFS
     ##     Find the depest level. Then use BFS
     ##

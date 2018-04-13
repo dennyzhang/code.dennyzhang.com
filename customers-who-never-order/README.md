@@ -8,7 +8,7 @@ Customers Who Never Order
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/customers-who-never-ord
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/customers-who-never-order
+    ## Blog link: https://code.dennyzhang.com/customers-who-never-order
     select Customers.Name as Customers
     from Customers left join Orders on Customers.Id = Orders.CustomerId
     where Orders.CustomerId is Null;

@@ -8,7 +8,7 @@ Line Reflection
 ---
 
 Similar Problems:  
--   [Tag: #set](https://brain.dennyzhang.com/tag/set)
+-   [Tag: #set](https://code.dennyzhang.com/tag/set)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/line-reflection/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/line-reflection
+    ## Blog link: https://code.dennyzhang.com/line-reflection
     ## Basic Ideas: set
     ##   Find the min and max x, then we get a line
     ##   All points should be mirrored with this line.

@@ -8,7 +8,7 @@ Permutations II
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/permutations-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/permutations-ii
+    ## Blog link: https://code.dennyzhang.com/permutations-ii
     class Solution(object):
         def permuteUnique(self, nums):
             """

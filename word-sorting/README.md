@@ -8,7 +8,7 @@ Word Sorting
 ---
 
 Similar Problems:  
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/word-sorting/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/word-sorting
+    ## Blog link: https://code.dennyzhang.com/word-sorting
     class Solution:
         """
         @param alphabet: the new alphabet

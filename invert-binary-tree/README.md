@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/invert-binary-tree/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/invert-binary-tree
+    ## Blog link: https://code.dennyzhang.com/invert-binary-tree
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

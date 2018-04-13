@@ -8,9 +8,9 @@ Repeated String Match
 ---
 
 Similar Problems:  
--   [Rotate String](https://brain.dennyzhang.com/rotate-string)
--   [Repeated Substring Pattern](https://brain.dennyzhang.com/repeated-substring)
--   Tag: [#string](https://brain.dennyzhang.com/tag/string), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   [Rotate String](https://code.dennyzhang.com/rotate-string)
+-   [Repeated Substring Pattern](https://code.dennyzhang.com/repeated-substring)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/repeated-string-match/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/repeated-string-match
+    ## Blog link: https://code.dennyzhang.com/repeated-string-match
     ## Basic Ideas: Consider lengths of A and B are len_a, len_b
     ##              Let's say a match exists. k = len_b/len_a
     ##              Then we need to repeat A either k times, k+1 times or k+2 times

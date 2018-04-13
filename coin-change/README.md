@@ -8,10 +8,10 @@ Coin Change
 ---
 
 Similar Problems:  
--   [Perfect Squares](https://brain.dennyzhang.com/perfect-squares)
--   [Coin Change 2](https://brain.dennyzhang.com/coin-change-2)
--   [Review: Knapsack Problems](https://brain.dennyzhang.com/review-knapsack), [Tag: #knapsack](https://brain.dennyzhang.com/tag/knapsack)
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
+-   [Perfect Squares](https://code.dennyzhang.com/perfect-squares)
+-   [Coin Change 2](https://code.dennyzhang.com/coin-change-2)
+-   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack), [Tag: #knapsack](https://code.dennyzhang.com/tag/knapsack)
+-   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic), [Tag: #classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/coin-change/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/coin-change
+    ## Blog link: https://code.dennyzhang.com/coin-change
     class Solution(object):
         ## Basic Ideas: Dynamic Programming
         ##

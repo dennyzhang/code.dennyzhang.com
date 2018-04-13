@@ -8,7 +8,7 @@ Longest Harmonious Subsequence
 ---
 
 Similar Problems:  
--   [Tag: #subsequence](https://brain.dennyzhang.com/tag/subsequence)
+-   [Tag: #subsequence](https://code.dennyzhang.com/tag/subsequence)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-harmonious-subs
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-harmonious-subsequence
+    ## Blog link: https://code.dennyzhang.com/longest-harmonious-subsequence
     ## Basic Ideas: The input array won't exceed 20,000
     ##              Build a map from the array. key is the number in the list, value is the occurence count
     ##              For each key in the map, check m.get(key+1)

@@ -8,7 +8,7 @@ Counting Bits
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/counting-bits/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/counting-bits
+    ## Blog link: https://code.dennyzhang.com/counting-bits
     ## Basic Ideas:
     ##      If k%2 == 0, f(k) = f(k/2)
     ##      If k%2 == 1, f(k) = f(k-1)

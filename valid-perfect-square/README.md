@@ -8,9 +8,9 @@ Valid Perfect Square
 ---
 
 Similar Problems:  
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   Tag: [math](https://brain.dennyzhang.com/tag/math), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   Tag: [math](https://code.dennyzhang.com/tag/math), [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-perfect-square/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-perfect-square
+    ## Blog link: https://code.dennyzhang.com/valid-perfect-square
     ## Basic Ideas: Binary search
     ##             Search in between [1^2, 2^2, 3^2, ... num^2]
     ##     But we have to use long for mid to avoid *mid\mid from overflow

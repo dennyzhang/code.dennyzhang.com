@@ -8,7 +8,7 @@ Movie Network
 ---
 
 Similar Problems:  
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/movie-network/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/movie-network
+    ## Blog link: https://code.dennyzhang.com/movie-network
     ## Basic Ideas: BFS + Heap
     ##        minheap to get topk biggest values
     ## Complexity: Time O(n*log(k)), Space O(n)

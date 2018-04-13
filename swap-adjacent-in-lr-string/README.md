@@ -8,7 +8,7 @@ Swap Adjacent in LR String
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/swap-adjacent-in-lr-str
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/swap-adjacent-in-lr-string
+    ## Blog link: https://code.dennyzhang.com/swap-adjacent-in-lr-string
     ## Basic Ideas: Check 3 rules
     ##       R won't bypass X: count 'R' from left to right
     ##       X won't bypass L: count 'L' from right to left 

@@ -8,11 +8,11 @@ Flatten Nested List Iterator
 ---
 
 Similar Problems:  
--   [Flatten 2D Vector](https://brain.dennyzhang.com/flatten-2d-vector)
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Flatten 2D Vector](https://code.dennyzhang.com/flatten-2d-vector)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flatten-nested-list-ite
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/flatten-nested-list-iterator
+    ## Blog link: https://code.dennyzhang.com/flatten-nested-list-iterator
     ## Basic Ideas:
     ##            Since it's an iterator, we can't change existing list
     ##            Here we assume, we don't have empty values like this: [1, 2, [], [2, 3]]

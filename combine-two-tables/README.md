@@ -8,7 +8,7 @@ Combine Two Tables
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -45,6 +45,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combine-two-tables/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/combine-two-tables
+    ## Blog link: https://code.dennyzhang.com/combine-two-tables
     select Person.FirstName, Person.LastName, Address.City, Address.State
     from Person left join Address on Person.PersonId = Address.PersonId;

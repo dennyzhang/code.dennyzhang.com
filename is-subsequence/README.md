@@ -8,7 +8,7 @@ Is Subsequence
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/is-subsequence/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/is-subsequence
+    ## Blog link: https://code.dennyzhang.com/is-subsequence
     ## Basic Ideas: Greedy + Two pointer
     ##
     ## Complexity: Time O(1), Space O(1).

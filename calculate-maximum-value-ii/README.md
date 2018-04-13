@@ -23,7 +23,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/calculate-maximum-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/calculate-maximum-value-ii
+    ## Blog link: https://code.dennyzhang.com/calculate-maximum-value-ii
     class Solution:
         """
         @param str: a string of numbers

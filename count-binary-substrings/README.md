@@ -8,9 +8,9 @@ Count Binary Substrings
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-binary-substrings
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/count-binary-substrings
+    ## Blog link: https://code.dennyzhang.com/count-binary-substrings
     ## Basic Ideas: Two pointers
     ##
     ## Complexity: Time O(n), Space O(1)

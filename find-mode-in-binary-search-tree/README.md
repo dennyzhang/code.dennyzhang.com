@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-mode-in-binary-sea
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-mode-in-binary-search-tree
+    ## Blog link: https://code.dennyzhang.com/find-mode-in-binary-search-tree
     ## Basic Ideas: In-order traversal
     ## Complexity:
     # Definition for a binary tree node.

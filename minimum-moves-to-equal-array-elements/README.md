@@ -8,7 +8,7 @@ Minimum Moves to Equal Array Elements
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -33,4 +33,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-moves-to-equal-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-moves-to-equal-array-elements
+    ## Blog link: https://code.dennyzhang.com/minimum-moves-to-equal-array-elements

@@ -8,12 +8,12 @@ Sum of Square Numbers
 ---
 
 Similar Problems:  
--   [LintCode: 3Sum II](https://brain.dennyzhang.com/3sum-ii)
--   [Tag: #twosum](https://brain.dennyzhang.com/tag/twosum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   Tag: [#math](https://brain.dennyzhang.com/tag/math), [#twopointer](https://brain.dennyzhang.com/tag/twopointer), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [LintCode: 3Sum II](https://code.dennyzhang.com/3sum-ii)
+-   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math), [#twopointer](https://code.dennyzhang.com/tag/twopointer), [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-square-numbers/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sum-of-square-numbers
+    ## Blog link: https://code.dennyzhang.com/sum-of-square-numbers
     ## Basic Ideas: max(a, b) <= int(sqrt(c))
     ##              Then we convert it into a two-sum problem
     ##

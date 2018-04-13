@@ -8,8 +8,8 @@ Given a string, determine if it is a palindrome, considering only alphanumeric c
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome
+    ## Blog link: https://code.dennyzhang.com/valid-palindrome
     ## Basic Ideas: two pointer
     ##
     ## Complexity: Time O(n), Space O(1)

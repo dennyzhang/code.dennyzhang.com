@@ -8,9 +8,9 @@ Reconstruct Original Digits from English
 ---
 
 Similar Problems:  
--   [Strobogrammatic Number](https://brain.dennyzhang.com/strobogrammatic-number)
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Strobogrammatic Number](https://code.dennyzhang.com/strobogrammatic-number)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reconstruct-original-di
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reconstruct-original-digits-from-english
+    ## Blog link: https://code.dennyzhang.com/reconstruct-original-digits-from-english
     ## Basic Ideas: Nature of english numbers.
     ##         'z': ['0']
     ##         'u': ['4'],

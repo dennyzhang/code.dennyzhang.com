@@ -8,9 +8,9 @@ Search a 2D Matrix
 ---
 
 Similar Problems:  
--   [Search a 2D Matrix II](https://brain.dennyzhang.com/search-a-2d-matrix-ii)
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [Search a 2D Matrix II](https://code.dennyzhang.com/search-a-2d-matrix-ii)
+-   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
 
 ---
 
@@ -36,4 +36,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/search-a-2d-matrix
+    ## Blog link: https://code.dennyzhang.com/search-a-2d-matrix

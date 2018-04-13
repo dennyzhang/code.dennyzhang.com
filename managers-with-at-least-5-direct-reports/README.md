@@ -8,7 +8,7 @@ Managers with at Least 5 Direct Reports
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/managers-with-at-least-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/managers-with-at-least-5-direct-reports
+    ## Blog link: https://code.dennyzhang.com/managers-with-at-least-5-direct-reports
     select Name
     from Employee
     where id in

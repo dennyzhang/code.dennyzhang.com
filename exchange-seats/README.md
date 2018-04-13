@@ -8,7 +8,7 @@ Exchange Seats
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/exchange-seats/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/exchange-seats
+    ## Blog link: https://code.dennyzhang.com/exchange-seats
     select s1.id as id, s2.student as student
     from seat as s1 join seat as s2
     where (s1.id % 2 = 1 and s2.id = s1.id + 1) or (s1.id % 2 = 0 and s1.id = s2.id + 1)

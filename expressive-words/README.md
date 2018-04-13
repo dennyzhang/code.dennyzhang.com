@@ -8,8 +8,8 @@ Expressive Words
 ---
 
 Similar Problems:  
--   [Solve the Equation](https://brain.dennyzhang.com/solve-the-equation)
--   Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Solve the Equation](https://code.dennyzhang.com/solve-the-equation)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/expressive-words/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/expressive-words
+    ## Blog link: https://code.dennyzhang.com/expressive-words
     ## Basic Ideas:
     ##    From "heeellooo To": ["h", "3", "e", "l", "l", "3", "o"]
     ##    Then compare it with ["hello", "hi", "helo"]

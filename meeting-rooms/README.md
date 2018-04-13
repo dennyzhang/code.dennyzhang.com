@@ -8,8 +8,8 @@ Meeting Rooms
 ---
 
 Similar Problems:  
--   [Meeting Rooms II](https://brain.dennyzhang.com/meeting-rooms-ii)
--   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval), [Tag: #interval](https://brain.dennyzhang.com/tag/interval)
+-   [Meeting Rooms II](https://code.dennyzhang.com/meeting-rooms-ii)
+-   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/meeting-rooms/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/meeting-rooms
+    ## Blog link: https://code.dennyzhang.com/meeting-rooms
     ## Basic Ideas:
     ##
     ## Complexity: Time O(n*log(n)), Space O(1)

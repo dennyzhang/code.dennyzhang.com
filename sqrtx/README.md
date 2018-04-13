@@ -8,9 +8,9 @@ Implement int sqrt(int x).
 ---
 
 Similar Problems:  
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch), [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sqrtx/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sqrtx
+    ## Blog link: https://code.dennyzhang.com/sqrtx
     ## Basic Ideas: Binary search
     ##              Check [1^2, 2^2, 3^2, ... n^2]
     ## Complexity: Time O(log(n)), Space O(1)

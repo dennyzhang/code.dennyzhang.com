@@ -8,8 +8,8 @@ K-diff Pairs in an Array
 ---
 
 Similar Problems:  
--   [3Sum](https://brain.dennyzhang.com/3sum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [3Sum](https://code.dennyzhang.com/3sum)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -45,7 +45,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/k-diff-pairs-in-an-arra
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/k-diff-pairs-in-an-array
+    ## Blog link: https://code.dennyzhang.com/k-diff-pairs-in-an-array
     class Solution:
         ## Basic Ideas: Hashmap
         ## Complexity: Time O(n), Space O(n)

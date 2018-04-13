@@ -8,9 +8,9 @@
 ---
 
 Similar Problems:  
--   [3Sum Smaller](https://brain.dennyzhang.com/3sum-smaller)
--   [Tag: #twosum](https://brain.dennyzhang.com/tag/twosum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [3Sum Smaller](https://code.dennyzhang.com/3sum-smaller)
+-   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/3sum-closest/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/3sum-closest
+    ## Blog link: https://code.dennyzhang.com/3sum-closest
     ## Basic Ideas: two sum
     ## Complexity: Time O(n*n), Space O(1)
     class Solution:

@@ -8,7 +8,7 @@ Valid Palindrome II
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-palindrome-ii
+    ## Blog link: https://code.dennyzhang.com/valid-palindrome-ii
     ## Basic Ideas: If mismatched, we can only delete either the left or the right
     ##
     ## Complexity: Time O(n), Space O(1)

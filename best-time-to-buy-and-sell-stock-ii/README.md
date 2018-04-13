@@ -8,7 +8,7 @@ Again. When to buy and sell stock.
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -20,7 +20,7 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 
 Credits To: [leetcode.com](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)  
 
-    ## Blog link: https://brain.dennyzhang.com/best-time-to-buy-and-sell-stock-ii
+    ## Blog link: https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-ii
     ## Basic Ideas:
     ## Complexity:
     class Solution(object):

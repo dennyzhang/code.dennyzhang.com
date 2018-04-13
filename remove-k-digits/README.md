@@ -8,8 +8,8 @@ Remove K Digits
 ---
 
 Similar Problems:  
--   [Monotone Increasing Digits](https://brain.dennyzhang.com/monotone-increasing-digits)
--   [Review: Greedy Problems](https://brain.dennyzhang.com/review-greedy), [Tag: #greedy](https://brain.dennyzhang.com/tag/greedy)
+-   [Monotone Increasing Digits](https://code.dennyzhang.com/monotone-increasing-digits)
+-   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy), [Tag: #greedy](https://code.dennyzhang.com/tag/greedy)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-k-digits/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/remove-k-digits
+    ## Blog link: https://code.dennyzhang.com/remove-k-digits
     ## Basic Ideas: Greedy
     ##    From left to right, if current digit decreases, we find one candiate
     ##    Why?

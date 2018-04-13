@@ -8,7 +8,7 @@ Do you want to play first or after, if you are determined to win.
 ---
 
 Similar Problems:  
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/nim-game
+    ## Blog link: https://code.dennyzhang.com/nim-game
     class Solution(object):
         def canWinNim(self, n):
             """

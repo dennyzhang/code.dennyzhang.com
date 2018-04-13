@@ -8,7 +8,7 @@ Find Cumulative Salary of an Employee
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -73,4 +73,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-cumulative-salary-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-cumulative-salary-of-an-employee
+    ## Blog link: https://code.dennyzhang.com/find-cumulative-salary-of-an-employee

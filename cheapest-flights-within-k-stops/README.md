@@ -8,7 +8,7 @@ Cheapest Flights Within K Stops
 ---
 
 Similar Problems:  
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -55,7 +55,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/cheapest-flights-within
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/cheapest-flights-within-k-stops
+    ## Blog link: https://code.dennyzhang.com/cheapest-flights-within-k-stops
     ## Basic Ideas: BFS
     ##
     ## Complexity: Time O(n), Space O(n)

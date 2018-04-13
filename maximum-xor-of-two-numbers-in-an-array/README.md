@@ -8,8 +8,8 @@ Maximum XOR of Two Numbers in an Array
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-xor-of-two-numb
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array
+    ## Blog link: https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array
     ## Basic Ideas: Trie tree
     ##              1. The height of tree is 32. Each node can have at most two children(0 and 1)
     ##              2. Append each num into the tree by bits. The lowest level is the smallest digit

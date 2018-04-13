@@ -8,7 +8,7 @@ Clockwise rotate a 2D matrix
 ---
 
 Similar Problems:  
--   Tag: [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   Tag: [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -61,7 +61,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-image/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rotate-image
+    ## Blog link: https://code.dennyzhang.com/rotate-image
     ## Basic Ideas: Rotate circle by circle. From outer to inner layer.
     ##             Use an array of n to save data temporarily
     ## Complexity: Time O(n*n), Space O(n)

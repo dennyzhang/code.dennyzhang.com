@@ -8,9 +8,9 @@ Strobogrammatic Number
 ---
 
 Similar Problems:  
--   [Reconstruct Original Digits from English](https://brain.dennyzhang.com/reconstruct-original-digits-from-english)
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Reconstruct Original Digits from English](https://code.dennyzhang.com/reconstruct-original-digits-from-english)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/strobogrammatic-number/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/strobogrammatic-number
+    ## Blog link: https://code.dennyzhang.com/strobogrammatic-number
     class Solution(object):
         ## Basic Ideas: One pass with two pointer + set
         ## Complexity: Time O(n), Space O(1)

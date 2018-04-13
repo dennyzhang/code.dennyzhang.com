@@ -8,8 +8,8 @@ IP to CIDR
 ---
 
 Similar Problems:  
--   [Validate IP Address](https://brain.dennyzhang.com/validate-ip-address)
--   [Tag: #string](https://brain.dennyzhang.com/tag/string)
+-   [Validate IP Address](https://code.dennyzhang.com/validate-ip-address)
+-   [Tag: #string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -63,4 +63,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ip-to-cidr/description/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/ip-to-cidr
+    ## Blog link: https://code.dennyzhang.com/ip-to-cidr

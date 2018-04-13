@@ -8,7 +8,7 @@ Median Employee Salary
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -62,7 +62,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/investments-in-2016/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/investments-in-2016
+    ## Blog link: https://code.dennyzhang.com/investments-in-2016
     select sum(TIV_2016) as TIV_2016
     from insurance
     where concat(LAT, ',', LON)

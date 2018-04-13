@@ -8,9 +8,9 @@ Flatten 2D Vector
 ---
 
 Similar Problems:  
--   [Design Compressed String Iterator](https://brain.dennyzhang.com/design-compressed-string-iterator)
--   [Flatten Nested List Iterator](https://brain.dennyzhang.com/flatten-nested-list-iterator)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Design Compressed String Iterator](https://code.dennyzhang.com/design-compressed-string-iterator)
+-   [Flatten Nested List Iterator](https://code.dennyzhang.com/flatten-nested-list-iterator)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flatten-2d-vector/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/flatten-2d-vector
+    ## Blog link: https://code.dennyzhang.com/flatten-2d-vector
     ## Basic Ideas: Caching current element
     ##
     ##   Sample Data: some elements may look like [[1], [], [2, 3]]

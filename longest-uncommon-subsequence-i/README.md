@@ -8,7 +8,7 @@ Longest Uncommon Subsequence I
 ---
 
 Similar Problems:  
--   [Longest Uncommon Subsequence II](https://brain.dennyzhang.com/longest-uncommon-subsequence-ii)
+-   [Longest Uncommon Subsequence II](https://code.dennyzhang.com/longest-uncommon-subsequence-ii)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-uncommon-subseq
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-uncommon-subsequence-i
+    ## Blog link: https://code.dennyzhang.com/longest-uncommon-subsequence-i
     ## Basic Ideas: If length is different, get the bigger one
     ##              If length is the same, compare whether they are the same
     ##                 If not, return either one

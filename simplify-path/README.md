@@ -8,7 +8,7 @@ Simplify Path
 ---
 
 Similar Problems:  
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
+-   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic), [Tag: #classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -25,4 +25,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/simplify-path/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/simplify-path
+    ## Blog link: https://code.dennyzhang.com/simplify-path

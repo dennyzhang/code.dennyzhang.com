@@ -8,7 +8,7 @@ Word Frequency
 ---
 
 Similar Problems:  
--   Tag: [#shell](https://brain.dennyzhang.com/tag/shell)
+-   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
 
@@ -35,5 +35,5 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-phone-numbers/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-phone-numbers
+    ## Blog link: https://code.dennyzhang.com/valid-phone-numbers
     grep -iE '^\([0-9][0-9][0-9]\) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$|^[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$' file.txt

@@ -8,7 +8,7 @@ Rectangle Area
 ---
 
 Similar Problems:  
--   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
+-   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
 
 ---
 
@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rectangle-area/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rectangle-area
+    ## Blog link: https://code.dennyzhang.com/rectangle-area
     ## Basic Ideas:
     ##     width: min(C,G)-max(A,E)
     ##     height: min(D, H)-max(B,F)

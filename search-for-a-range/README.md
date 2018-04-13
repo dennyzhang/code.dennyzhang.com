@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-for-a-range/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/search-for-a-range
+    ## Blog link: https://code.dennyzhang.com/search-for-a-range
     ## Basic Ideas: Find the left same, then the right same
     ## Complexity: Time O(log(n)), Space O(1)
     ## Assumptions:

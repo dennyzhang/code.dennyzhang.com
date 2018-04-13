@@ -8,7 +8,7 @@ Tenth Line
 ---
 
 Similar Problems:  
--   Tag: [#shell](https://brain.dennyzhang.com/tag/shell)
+-   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/tenth-line/description/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/tenth-line
+    ## Blog link: https://code.dennyzhang.com/tenth-line
     line_count=$(wc -l ./file.txt | awk -F' ' '{print $1}')
     if [ $line_count -lt 10 ]; then
         echo ""

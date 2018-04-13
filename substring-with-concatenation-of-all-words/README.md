@@ -8,9 +8,9 @@ Substring with Concatenation of All Words
 ---
 
 Similar Problems:  
--   [Longest Substring Without Repeating Characters](https://brain.dennyzhang.com/longest-substring-without-repeating-characters)
--   [Minimum Window Substring](https://brain.dennyzhang.com/minimum-window-substring)
--   Tag: [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
+-   [Longest Substring Without Repeating Characters](https://code.dennyzhang.com/longest-substring-without-repeating-characters)
+-   [Minimum Window Substring](https://code.dennyzhang.com/minimum-window-substring)
+-   Tag: [#twopointer](https://code.dennyzhang.comy/tag/twopointer)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/substring-with-concaten
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/substring-with-concatenation-of-all-words
+    ## Blog link: https://code.dennyzhang.com/substring-with-concatenation-of-all-words
     ## Basic Ideas: 2 twopointers with hasmap
     ##
     ##  Assumption: no duplicate word in words. 

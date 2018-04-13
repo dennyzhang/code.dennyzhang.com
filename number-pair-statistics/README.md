@@ -8,7 +8,7 @@ Number Pair Statistics
 ---
 
 Similar Problems:  
--   [Tag: #inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Tag: #inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/number-pair-statis
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/number-pair-statistics
+    ## Blog link: https://code.dennyzhang.com/number-pair-statistics
     class Solution:
         """
         @param p: the point List

@@ -8,7 +8,7 @@ Kill Process
 ---
 
 Similar Problems:  
--   Tag: [#hashmap](https://brain.dennyzhang.com/tag/hashmap)
+-   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 
@@ -46,7 +46,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kill-process/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/kill-process
+    ## Blog link: https://code.dennyzhang.com/kill-process
     ## Basic Ideas: hashmap
     ##    Find children by id
     ##

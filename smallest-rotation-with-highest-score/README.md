@@ -8,9 +8,9 @@ Smallest Rotation with Highest Score
 ---
 
 Similar Problems:  
--   [Range Addition](https://brain.dennyzhang.com/range-addition)
--   [Maximum Distance in Arrays](https://brain.dennyzhang.com/maximum-distance-in-arrays)
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   [Range Addition](https://code.dennyzhang.com/range-addition)
+-   [Maximum Distance in Arrays](https://code.dennyzhang.com/maximum-distance-in-arrays)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -51,4 +51,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/smallest-rotation-with-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/smallest-rotation-with-highest-score
+    ## Blog link: https://code.dennyzhang.com/smallest-rotation-with-highest-score

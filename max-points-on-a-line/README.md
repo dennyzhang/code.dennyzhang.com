@@ -8,9 +8,9 @@ Given n points on a 2D plane, find the maximum number of points that lie on the 
 ---
 
 Similar Problems:  
--   [Largest Triangle Area](https://brain.dennyzhang.com/largest-triangle-area)
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   Tag: [#math](https://brain.dennyzhang.com/tag/math)
+-   [Largest Triangle Area](https://code.dennyzhang.com/largest-triangle-area)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -22,4 +22,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-points-on-a-line/de
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/max-points-on-a-line
+    // Blog link: https://code.dennyzhang.com/max-points-on-a-line

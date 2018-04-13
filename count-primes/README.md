@@ -8,10 +8,10 @@ Count Primes
 ---
 
 Similar Problems:  
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming), [#math](https://brain.dennyzhang.com/tag/math), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#math](https://code.dennyzhang.com/tag/math), [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-primes/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/count-primes
+    ## Blog link: https://code.dennyzhang.com/count-primes
     ## Basic Ideas: Sieve of Eratosthenes
     ##              If n is not a prime, it will have more than 1 dividends.
     ##              One of the dividend must less than sqrt(n)

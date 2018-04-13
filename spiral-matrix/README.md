@@ -8,8 +8,8 @@ Spiral Matrix
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/spiral-matrix
+    ## Blog link: https://code.dennyzhang.com/spiral-matrix
     ## Basic Ideas:
     ##            The visit is a loop with four directions: right, down, left, up
     ##            Two counters: num1(how many items for right and left)

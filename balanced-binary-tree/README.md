@@ -8,8 +8,8 @@ Given a binary tree, determine if it is height-balanced
 ---
 
 Similar Problems:  
--   [Count Complete Tree Nodes](https://brain.dennyzhang.com/count-complete-tree-nodes)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Count Complete Tree Nodes](https://code.dennyzhang.com/count-complete-tree-nodes)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/balanced-binary-tree/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/balanced-binary-tree
+    ## Blog link: https://code.dennyzhang.com/balanced-binary-tree
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

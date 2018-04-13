@@ -8,7 +8,7 @@ Distribute Candies
 ---
 
 Similar Problems:  
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/distribute-candies/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/distribute-candies
+    ## Blog link: https://code.dennyzhang.com/distribute-candies
     ## Basic Ideas: Count how many different type of candies
     ##              If it has more then n/2 types, return n/2.
     ##              Otherwise return the count of candies' types

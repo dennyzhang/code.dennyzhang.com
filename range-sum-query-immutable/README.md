@@ -8,8 +8,8 @@ Range Sum Query - Immutable
 ---
 
 Similar Problems:  
--   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://code.dennyzhang.com/tag/concurrency)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-immutab
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/range-sum-query-immutable
+    ## Blog link: https://code.dennyzhang.com/range-sum-query-immutable
     class NumArray(object):
     
         def __init__(self, nums):

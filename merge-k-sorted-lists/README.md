@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/merge-k-sorted-lists/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/merge-k-sorted-lists
+    ## Blog link: https://code.dennyzhang.com/merge-k-sorted-lists
     ## Basic Ideas: Compare the first node of all list
     ##              Insert the smallest to the result list
     ##              If two lists have the same value, insert the first one, then the next

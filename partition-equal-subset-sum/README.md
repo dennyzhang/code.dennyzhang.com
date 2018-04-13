@@ -8,9 +8,9 @@ Partition Equal Subset Sum
 ---
 
 Similar Problems:  
--   [Partition Equal Subset Sum](https://brain.dennyzhang.com/partition-equal-subset-sum)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Partition Equal Subset Sum](https://code.dennyzhang.com/partition-equal-subset-sum)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/partition-equal-subset-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/partition-equal-subset-sum
+    ## Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
     ## Basic Ideas: hashmap
     ##
     ## Complexity: Time O(n), Space O(1)

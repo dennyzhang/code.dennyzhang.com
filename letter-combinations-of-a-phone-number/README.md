@@ -8,7 +8,7 @@ Letter Combinations of a Phone Number
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
             :type digits: str
             :rtype: List[str]
             """
-            ## Blog link: https://brain.dennyzhang.com/letter-combinations-of-a-phone-number
+            ## Blog link: https://code.dennyzhang.com/letter-combinations-of-a-phone-number
     ## Basic Ideas:
             ## Complexity:
             ## Assumptions: For "0" and "1", map to empty string

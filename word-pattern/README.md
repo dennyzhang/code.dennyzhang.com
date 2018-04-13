@@ -8,8 +8,8 @@ Word Pattern
 ---
 
 Similar Problems:  
--   [Word Pattern II](https://brain.dennyzhang.com/word-pattern-ii)
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Word Pattern II](https://code.dennyzhang.com/word-pattern-ii)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/word-pattern/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/word-pattern
+    ## Blog link: https://code.dennyzhang.com/word-pattern
     ## Basic Ideas: hasmap + set
     ##
     ## Complexity: Time O(n), Space O(n)

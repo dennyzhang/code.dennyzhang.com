@@ -8,7 +8,7 @@ Word Search
 ---
 
 Similar Problems:  
--   Tag: [#codetemplate](https://brain.dennyzhang.com/tag/codetemplate)
+-   Tag: [#codetemplate](https://code.dennyzhang.com/tag/codetemplate)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/word-search/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/word-search
+    ## Blog link: https://code.dennyzhang.com/word-search
     ## Basic Ideas: backtracking
     ##
     ## Complexity: Time ?, Space ?

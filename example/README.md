@@ -8,8 +8,8 @@ Identity number which appears exactly once.
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -21,4 +21,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/example

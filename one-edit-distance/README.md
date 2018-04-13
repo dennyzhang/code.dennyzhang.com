@@ -8,8 +8,8 @@ One Edit Distance
 ---
 
 Similar Problems:  
--   [Edit Distance](https://brain.dennyzhang.com/edit-distance)
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
+-   [Edit Distance](https://code.dennyzhang.com/edit-distance)
+-   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic), [Tag: #classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -21,7 +21,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/one-edit-distance/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/one-edit-distance
+    ## Blog link: https://code.dennyzhang.com/one-edit-distance
     ## Basic Ideas:
     ##
     ## Complexity: Time O(n), Space O(1)

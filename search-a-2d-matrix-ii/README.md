@@ -8,9 +8,9 @@ Search a 2D Matrix
 ---
 
 Similar Problems:  
--   [Kth Smallest Element in a Sorted Matrix](https://brain.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix)
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [Kth Smallest Element in a Sorted Matrix](https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix)
+-   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix-ii/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/search-a-2d-matrix-ii
+    ## Blog link: https://code.dennyzhang.com/search-a-2d-matrix-ii
     ## Basic Ideas: We search from the left bottom position
     ##    If the value is smaller than the target, move right
     ##    If bigger, move up

@@ -8,7 +8,7 @@ Average Salary: Departments VS Company
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -53,7 +53,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/average-salary-departme
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/average-salary-departments-vs-company
+    ## Blog link: https://code.dennyzhang.com/average-salary-departments-vs-company
     select t1.pay_month, t1.department_id,
         (case when t1.amount = t2.amount then 'same'
               when t1.amount > t2.amount then 'higher'

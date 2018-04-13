@@ -8,9 +8,9 @@
 ---
 
 Similar Problems:  
--   [Sum of Square Numbers](https://brain.dennyzhang.com/sum-of-square-numbers)
--   [Tag: #twosum](https://brain.dennyzhang.com/tag/twosum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Sum of Square Numbers](https://code.dennyzhang.com/sum-of-square-numbers)
+-   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/3sum-ii/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/3sum-ii
+    ## Blog link: https://code.dennyzhang.com/3sum-ii
     class Solution:
         """
         @param n: an integer

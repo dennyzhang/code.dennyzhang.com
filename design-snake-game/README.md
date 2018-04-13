@@ -8,8 +8,8 @@ Design Snake Game
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -67,7 +67,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-snake-game/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/design-snake-game
+    ## Blog link: https://code.dennyzhang.com/design-snake-game
     ## Basic Ideas: queue + hashmap
     ##              queue: coordinates for all parts of the snake
     ##              set: check whether snake will hit itself

@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/word-ladder/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/word-ladder
+    ## Blog link: https://code.dennyzhang.com/word-ladder
     ## Basic Ideas: BFS. Find the shortest path from point1 to point2
     ##
     ##      How fast we can find the next neighbors?

@@ -8,7 +8,7 @@ Minimum Time Difference
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-time-difference
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-time-difference
+    ## Blog link: https://code.dennyzhang.com/minimum-time-difference
     ## Basic Ideas: Convert string to integer. 
     ##              Sort it. Then get difference with rotation enforced
     ##

@@ -8,8 +8,8 @@ Lonely Pixel II
 ---
 
 Similar Problems:  
--   [Lonely Pixel I](https://brain.dennyzhang.com/lonely-pixel-i)
--   [Tag: #array](https://brain.dennyzhang.com/tag/array)
+-   [Lonely Pixel I](https://code.dennyzhang.com/lonely-pixel-i)
+-   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -50,7 +50,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lonely-pixel-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/lonely-pixel-ii
+    ## Blog link: https://code.dennyzhang.com/lonely-pixel-ii
     ## Basic Ideas:
     ##    Two array
     ## Complexity: Time O(n*m), Space O(n+m)

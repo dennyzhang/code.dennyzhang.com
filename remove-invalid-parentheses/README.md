@@ -8,7 +8,7 @@ Remove Invalid Parentheses
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-invalid-parenthe
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/remove-invalid-parentheses
+    ## Blog link: https://code.dennyzhang.com/remove-invalid-parentheses
     ## Basic Ideas: BFS
     ##
     ##   Start with s (removed the trailing '(')

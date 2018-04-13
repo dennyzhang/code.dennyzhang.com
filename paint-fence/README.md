@@ -8,10 +8,10 @@ Paint Fence
 ---
 
 Similar Problems:  
--   [Climbing Stairs](https://brain.dennyzhang.com/climbing-stairs)
--   [House Robber](https://brain.dennyzhang.com/house-robber)
--   [Paint House](https://brain.dennyzhang.com/paint-house)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Climbing Stairs](https://code.dennyzhang.com/climbing-stairs)
+-   [House Robber](https://code.dennyzhang.com/house-robber)
+-   [Paint House](https://code.dennyzhang.com/paint-house)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/paint-fence/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/paint-fence
+    ## Blog link: https://code.dennyzhang.com/paint-fence
     ## Basic Ideas: Dynamic programming
     ##     To get f(n), it can only have two cases:
     ##           Fence nth uses the same color as fence n-1 th: f(n-1)*(k-1)

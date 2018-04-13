@@ -8,7 +8,7 @@ Valid Parenthesis String
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic), [#string](https://brain.dennyzhang.com/category/string)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic), [#string](https://code.dennyzhang.com/category/string)
 
 ---
 
@@ -44,4 +44,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-parenthesis-strin
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-parenthesis-string
+    ## Blog link: https://code.dennyzhang.com/valid-parenthesis-string

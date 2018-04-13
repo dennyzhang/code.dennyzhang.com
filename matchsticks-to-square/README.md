@@ -8,8 +8,8 @@ Matchsticks to Square
 ---
 
 Similar Problems:  
--   [Split Array With Same Average](https://brain.dennyzhang.com/split-array-with-same-average)
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Split Array With Same Average](https://code.dennyzhang.com/split-array-with-same-average)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -41,4 +41,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/matchsticks-to-square/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/matchsticks-to-square
+    ## Blog link: https://code.dennyzhang.com/matchsticks-to-square

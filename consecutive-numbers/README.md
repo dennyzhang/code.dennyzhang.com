@@ -8,7 +8,7 @@ Consecutive Numbers
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/consecutive-numbers/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/consecutive-numbers
+    ## Blog link: https://code.dennyzhang.com/consecutive-numbers
     SET @group_number=0;
     SET @id_number1=0;
     SET @id_number2=0;

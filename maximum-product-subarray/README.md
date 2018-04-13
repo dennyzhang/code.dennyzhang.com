@@ -8,8 +8,8 @@ Maximum Product Subarray
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
--   [Tag: #subarray](https://brain.dennyzhang.com/tag/subarray)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Tag: #subarray](https://code.dennyzhang.com/tag/subarray)
 
 ---
 
@@ -24,4 +24,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-product-subarra
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-product-subarray
+    ## Blog link: https://code.dennyzhang.com/maximum-product-subarray

@@ -8,10 +8,10 @@ Super Pow
 ---
 
 Similar Problems:  
--   [Pow(x, n)](https://brain.dennyzhang.com/powx-n)
--   Tag: [#recursive](https://brain.dennyzhang.com/tag/recursive)
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Pow(x, n)](https://code.dennyzhang.com/powx-n)
+-   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/super-pow/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/super-pow
+    ## Blog link: https://code.dennyzhang.com/super-pow
     ## Basic Ideas:
     ##     (2^120)%k == (((2^12)%k)^10)%k
     ## Complexity: Time O(n), Space O(1). n = len(b)

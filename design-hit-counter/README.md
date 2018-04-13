@@ -8,8 +8,8 @@ Design Hit Counter
 ---
 
 Similar Problems:  
--   [Logger Rate Limiter](https://brain.dennyzhang.com/logger-rate-limiter)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Logger Rate Limiter](https://code.dennyzhang.com/logger-rate-limiter)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -53,7 +53,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-hit-counter/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/design-hit-counter
+    ## Blog link: https://code.dennyzhang.com/design-hit-counter
     ## Basic Ideas: hashmap
     ##
     ## Complexity: Time O(1), Space O(1)

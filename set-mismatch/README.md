@@ -8,7 +8,7 @@ Set Mismatch
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/tag/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/tag/basic)
 
 ---
 
@@ -31,4 +31,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/set-mismatch/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/set-mismatch
+    ## Blog link: https://code.dennyzhang.com/set-mismatch

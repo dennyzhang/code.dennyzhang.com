@@ -8,7 +8,7 @@ Jump Game
 ---
 
 Similar Problems:  
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -33,7 +33,7 @@ Leave me comments, if you have better ways to solve.
 Interesting reading:  
 [YouTube Coding Interview Question: Tower Hopper Problem](https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11)  
 
-    ## Blog link: https://brain.dennyzhang.com/jump-game
+    ## Blog link: https://code.dennyzhang.com/jump-game
     ## Basic Ideas:
     ##        maxIndex: keep tracking the furthest reachable index
     ##

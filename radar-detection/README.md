@@ -8,7 +8,7 @@ Identity number which appears exactly once.
 ---
 
 Similar Problems:  
--   Tag: [#array](https://brain.dennyzhang.com/tag/array)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](http://www.lintcode.com/en/problem/radar-detection/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/radar-detection
+    ## Blog link: https://code.dennyzhang.com/radar-detection
     ## Basic Ideas: only check the height
     ## Complexity: Time O(n), Space O(1)
     """

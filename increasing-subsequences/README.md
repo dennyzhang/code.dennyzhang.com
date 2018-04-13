@@ -8,7 +8,7 @@ Increasing Subsequences
 ---
 
 Similar Problems:  
--   Tag: [#subsequence](https://brain.dennyzhang.com/tag/subsequence)
+-   Tag: [#subsequence](https://code.dennyzhang.com/tag/subsequence)
 
 ---
 
@@ -30,4 +30,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/increasing-subsequences
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/increasing-subsequences
+    ## Blog link: https://code.dennyzhang.com/increasing-subsequences

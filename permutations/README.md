@@ -8,7 +8,7 @@ Permutations
 ---
 
 Similar Problems:  
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
+-   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic), [Tag: #classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/permutations/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/permutations
+    ## Blog link: https://code.dennyzhang.com/permutations
     ## Basic Ideas: Insertion
     ##            1
     ##            12 -> 12; 21

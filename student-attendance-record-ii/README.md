@@ -8,8 +8,8 @@ Student Attendance Record II
 ---
 
 Similar Problems:  
--   [Student Attendance Record I](https://brain.dennyzhang.com/student-attendance-record-i)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Student Attendance Record I](https://code.dennyzhang.com/student-attendance-record-i)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-reco
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/student-attendance-record-ii
+    ## Blog link: https://code.dennyzhang.com/student-attendance-record-ii
     ## Basic Ideas: Dynamic Programming
     ##      a0l0, a0l1, a0l2
     ##      a1l0, a1l1, a1l2

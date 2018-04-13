@@ -8,9 +8,9 @@ Wiggle Sort
 ---
 
 Similar Problems:  
--   [LintCode: Rearrange](https://brain.dennyzhang.com/rearrange)
--   [Wiggle Sort II](https://brain.dennyzhang.com/wiggle-sort-ii)
--   [Tag: #wigglesort](https://brain.dennyzhang.com/tag/wigglesort)
+-   [LintCode: Rearrange](https://code.dennyzhang.com/rearrange)
+-   [Wiggle Sort II](https://code.dennyzhang.com/wiggle-sort-ii)
+-   [Tag: #wigglesort](https://code.dennyzhang.com/tag/wigglesort)
 
 ---
 
@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/wiggle-sort/description
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/wiggle-sort
+    // Blog link: https://code.dennyzhang.com/wiggle-sort
     // Basic Ideas: Compare current node with the previous node
     // Complexity: Time O(n), Space O(1)
     func wiggleSort(nums []int)  {

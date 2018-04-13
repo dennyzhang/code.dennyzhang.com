@@ -8,7 +8,7 @@ Reverse Array
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/reverse-array/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reverse-array
+    ## Blog link: https://code.dennyzhang.com/reverse-array
     class Solution:
         """
         @param nums: a integer array

@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sor
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/single-element-in-a-sorted-array
+    ## Blog link: https://code.dennyzhang.com/single-element-in-a-sorted-array
     ## Basic Ideas: Binary search
     ##              Find the middle element.
     ##              If the middle is different from the both sides, that's what we want

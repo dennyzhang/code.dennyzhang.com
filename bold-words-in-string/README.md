@@ -8,7 +8,7 @@ Bold Words in String
 ---
 
 Similar Problems:  
--   [Tag: #string](https://brain.dennyzhang.com/tag/string)
+-   [Tag: #string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -31,4 +31,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bold-words-in-string/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/bold-words-in-string
+    ## Blog link: https://code.dennyzhang.com/bold-words-in-string

@@ -8,11 +8,11 @@ Minimum Size Subarray Sum
 ---
 
 Similar Problems:  
--   [Subarray Product Less Than K](https://brain.dennyzhang.com/subarray-product-less-than-k)
--   [Two Sum](https://brain.dennyzhang.com/two-sum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#twopointer](https://brain.dennyzhang.comy/tag/twopointer)
+-   [Subarray Product Less Than K](https://code.dennyzhang.com/subarray-product-less-than-k)
+-   [Two Sum](https://code.dennyzhang.com/two-sum)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#twopointer](https://code.dennyzhang.comy/tag/twopointer)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-size-subarray-s
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-size-subarray-sum
+    ## Blog link: https://code.dennyzhang.com/minimum-size-subarray-sum
     ## Basic Ideas: Two pointers + Ge accumulated sum
     ##
     ##   Corner case: 0 elements or 1 elements

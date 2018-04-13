@@ -8,7 +8,7 @@ Map Sum Pairs
 ---
 
 Similar Problems:  
--   Tag: [#trie](https://brain.dennyzhang.com/tag/trie)
+-   Tag: [#trie](https://code.dennyzhang.com/tag/trie)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/map-sum-pairs/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/map-sum-pairs
+    // Blog link: https://code.dennyzhang.com/map-sum-pairs
     // Basic Ideas: Trie Tree
     // Complexity: Time ?, Space ?
     

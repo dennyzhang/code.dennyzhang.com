@@ -8,7 +8,7 @@ Number of Matching Subsequences
 ---
 
 Similar Problems:  
--   [Tag: #subsequence](https://brain.dennyzhang.com/tag/subsequence)
+-   [Tag: #subsequence](https://code.dennyzhang.com/tag/subsequence)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-matching-subs
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/number-of-matching-subsequences
+    ## Blog link: https://code.dennyzhang.com/number-of-matching-subsequences
     ## Basic Ideas:
     ## Complexity: Time O(n*m), Space O(1)
     class Solution:

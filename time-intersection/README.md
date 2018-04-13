@@ -8,7 +8,7 @@ Time Intersection
 ---
 
 Similar Problems:  
--   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval), [Tag: #interval](https://brain.dennyzhang.com/tag/interval)
+-   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/time-intersection/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/time-intersection
+    ## Blog link: https://code.dennyzhang.com/time-intersection
     """
     class Point:
         def __init__( self, x=0, y=0):

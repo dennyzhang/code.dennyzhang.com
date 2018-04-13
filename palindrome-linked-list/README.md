@@ -8,7 +8,7 @@ Palindrome Linked List
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-linked-list/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/palindrome-linked-list
+    ## Blog link: https://code.dennyzhang.com/palindrome-linked-list
     ## Basic Ideas: Find the middle node. Reverse the right part. Then compare with the left part
     ##       From: a->b->c->b->a
     ##       To:   a->b->c->a->b

@@ -8,9 +8,9 @@ Flip Game II
 ---
 
 Similar Problems:  
--   [Flip Game](https://brain.dennyzhang.com/flip-game)
--   [Tag: #string](https://brain.dennyzhang.com/tag/string)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Flip Game](https://code.dennyzhang.com/flip-game)
+-   [Tag: #string](https://code.dennyzhang.com/tag/string)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -22,4 +22,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flip-game-ii/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/flip-game-ii
+    ## Blog link: https://code.dennyzhang.com/flip-game-ii

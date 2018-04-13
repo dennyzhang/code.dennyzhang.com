@@ -8,8 +8,8 @@ Unique Paths
 ---
 
 Similar Problems:  
--   [Leetcode: Unique Paths II](https://brain.dennyzhang.com/unique-paths-ii)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Leetcode: Unique Paths II](https://code.dennyzhang.com/unique-paths-ii)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-paths/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/unique-paths
+    ## Blog link: https://code.dennyzhang.com/unique-paths
     class Solution(object):
         ## Basic Ideas: Dynamic programming
         ##              For the previous step of finish point, it should come from either up or left

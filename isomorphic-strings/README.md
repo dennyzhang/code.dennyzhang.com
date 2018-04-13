@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/isomorphic-strings/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/isomorphic-strings
+    ## Blog link: https://code.dennyzhang.com/isomorphic-strings
     ## Basic Ideas:
     ##             Build 2 dicts
     ##             From s to t, and from t to s

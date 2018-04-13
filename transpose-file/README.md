@@ -8,7 +8,7 @@ Transpose File
 ---
 
 Similar Problems:  
--   Tag: [#shell](https://brain.dennyzhang.com/tag/shell)
+-   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
 
@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/transpose-file/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/transpose-file
+    ## Blog link: https://code.dennyzhang.com/transpose-file
     set -e
     
     one_line=($(head -n1 ./file.txt))

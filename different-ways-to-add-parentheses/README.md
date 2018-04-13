@@ -8,7 +8,7 @@ Different Ways to Add Parentheses
 ---
 
 Similar Problems:  
--   [Review: Divide And Conquer Problems](https://brain.dennyzhang.com/review-divideconquer), [Tag: #divideconquer](https://brain.dennyzhang.com/tag/divideconquer)
+-   [Review: Divide And Conquer Problems](https://code.dennyzhang.com/review-divideconquer), [Tag: #divideconquer](https://code.dennyzhang.com/tag/divideconquer)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/different-ways-to-add-p
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/different-ways-to-add-parentheses
+    ## Blog link: https://code.dennyzhang.com/different-ways-to-add-parentheses
     class Solution:
         def diffWaysToCompute(self, input):
             res = []

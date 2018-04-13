@@ -8,7 +8,7 @@ Array is composed by only 3 types of elements. Sort it fast.
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -22,7 +22,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-colors/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sort-colors
+    ## Blog link: https://code.dennyzhang.com/sort-colors
     class Solution(object):
         def sortColors(self, nums):
             """

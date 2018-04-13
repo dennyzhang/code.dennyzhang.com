@@ -8,9 +8,9 @@ Leftmost One
 ---
 
 Similar Problems:  
--   [First Bad Version](https://brain.dennyzhang.com/first-bad-version)
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [First Bad Version](https://code.dennyzhang.com/first-bad-version)
+-   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/leftmost-one/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/leftmost-one
+    ## Blog link: https://code.dennyzhang.com/leftmost-one
     class Solution:
         """
         @param arr: The 2-dimension array

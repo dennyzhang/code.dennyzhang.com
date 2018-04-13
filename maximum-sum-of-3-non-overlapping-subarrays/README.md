@@ -8,7 +8,7 @@ Maximum Sum of 3 Non-Overlapping Subarrays
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -36,4 +36,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-sum-of-3-non-ov
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-sum-of-3-non-overlapping-subarrays
+    ## Blog link: https://code.dennyzhang.com/maximum-sum-of-3-non-overlapping-subarrays

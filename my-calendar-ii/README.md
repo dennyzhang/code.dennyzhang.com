@@ -8,7 +8,7 @@ My Calendar II
 ---
 
 Similar Problems:  
--   [Review: Interval Problems](https://brain.dennyzhang.com/review-interval), [Tag: #interval](https://brain.dennyzhang.com/tag/interval)
+-   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
 
@@ -48,7 +48,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/my-calendar-ii/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/my-calendar-ii
+    ## Blog link: https://code.dennyzhang.com/my-calendar-ii
     class MyCalendarTwo(object):
     
         def __init__(self):

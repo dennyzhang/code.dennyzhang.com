@@ -8,9 +8,9 @@ Lonely Pixel I
 ---
 
 Similar Problems:  
--   [Lonely Pixel II](https://brain.dennyzhang.com/lonely-pixel-ii)
--   [Set Matrix Zeroes](https://brain.dennyzhang.com/set-matrix-zeroes)
--   [Tag: #array](https://brain.dennyzhang.com/tag/array)
+-   [Lonely Pixel II](https://code.dennyzhang.com/lonely-pixel-ii)
+-   [Set Matrix Zeroes](https://code.dennyzhang.com/set-matrix-zeroes)
+-   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lonely-pixel-i/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/lonely-pixel-i
+    ## Blog link: https://code.dennyzhang.com/lonely-pixel-i
     ## Basic Ideas:
     ##   Maintain two array, with initial value of 0
     ##     row_list: how many B for each row

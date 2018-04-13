@@ -8,9 +8,9 @@ Bomb Enemy
 ---
 
 Similar Problems:  
--   [Lonely Pixel I](https://brain.dennyzhang.com/lonely-pixel-i)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Lonely Pixel I](https://code.dennyzhang.com/lonely-pixel-i)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bomb-enemy/description/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/bomb-enemy
+    ## Blog link: https://code.dennyzhang.com/bomb-enemy
     ## Basic Ideas: dynamic programming
     ##
     ## dp[i][j] = [x1, y1, x2, y2]

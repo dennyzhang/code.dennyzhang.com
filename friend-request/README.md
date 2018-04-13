@@ -8,7 +8,7 @@ Friend Request
 ---
 
 Similar Problems:  
--   [Tag: #array](https://brain.dennyzhang.com/tag/array)
+-   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -39,7 +39,7 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/friend-request/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/friend-request
+    ## Blog link: https://code.dennyzhang.com/friend-request
     ## Basic Ideas: two loop
     ## Complexity: Time O(n*n), Space O(1)
     class Solution:

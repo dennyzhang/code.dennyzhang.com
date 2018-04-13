@@ -8,7 +8,7 @@ Minimum Unique Word Abbreviation
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -36,4 +36,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-unique-word-abb
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-unique-word-abbreviation
+    ## Blog link: https://code.dennyzhang.com/minimum-unique-word-abbreviation

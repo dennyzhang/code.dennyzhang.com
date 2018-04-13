@@ -8,8 +8,8 @@ Given a list of non negative integers, arrange them such that they form the larg
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/largest-number/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/largest-number
+    ## Blog link: https://code.dennyzhang.com/largest-number
     ## Basic Ideas: Quick sort list with customized compare logic. Then Concat them as one.
     ##             "9" vs "30"
     ##             "34" vs "3"

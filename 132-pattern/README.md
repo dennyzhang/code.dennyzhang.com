@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 
 Hints:  
 
-    ## Blog link: https://brain.dennyzhang.com/132-pattern
+    ## Blog link: https://code.dennyzhang.com/132-pattern
     ## Basic Ideas: There should be one rise. After that, there should be one drop.
     ## Complexity: Time O(n), Space O(1)
     ## Scenario: sell sock at a high price

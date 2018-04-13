@@ -15,7 +15,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/relative-ranks/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/relative-ranks
+    ## Blog link: https://code.dennyzhang.com/relative-ranks
     ## Basic Ideas:
     ##           Sort the list. Build a map. key(score): value(position in sorted list)
     ##           Trasverse the original list again, get the position by map

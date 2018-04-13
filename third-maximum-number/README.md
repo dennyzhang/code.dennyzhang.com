@@ -8,9 +8,9 @@ Third Maximum Number
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#heap](https://brain.dennyzhang.com/tag/heap)
+-   [Review: Heap Problems](https://code.dennyzhang.com/review-heap)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#heap](https://code.dennyzhang.com/tag/heap)
 
 ---
 
@@ -44,7 +44,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/third-maximum-number/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/third-maximum-number
+    ## Blog link: https://code.dennyzhang.com/third-maximum-number
     ## Basic Ideas: minheap
     ##
     ## Complexity: O(n), Space O(1)

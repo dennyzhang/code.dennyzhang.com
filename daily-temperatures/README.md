@@ -8,8 +8,8 @@ Daily Temperatures
 ---
 
 Similar Problems:  
--   [Leetcode: Leetcode: Next Greater Element I](https://brain.dennyzhang.com/next-greater-element-i)
--   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
+-   [Leetcode: Leetcode: Next Greater Element I](https://code.dennyzhang.com/next-greater-element-i)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/daily-temperatures/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/daily-temperatures
+    ## Blog link: https://code.dennyzhang.com/daily-temperatures
     ## Basic Ideas: Monotonous stack can help us find first largest element in O(n) time complexity.
     ##
     ##              Descending stack: find the next bigger nubmer for each element

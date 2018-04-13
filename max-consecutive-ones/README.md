@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-consecutive-ones/de
 Leave me comments, if you have better ways to solve.  
 
     class Solution(object):
-        ## Blog link: https://brain.dennyzhang.com/max-consecutive-ones
+        ## Blog link: https://code.dennyzhang.com/max-consecutive-ones
         ## Basic Ideas:  counter
         ##               If found one 0, reset the counter to 0. Otherwise counter + 1
         ##

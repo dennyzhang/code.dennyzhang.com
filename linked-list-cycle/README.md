@@ -8,7 +8,7 @@ Linked List Cycle
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-cycle/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/linked-list-cycle
+    ## Blog link: https://code.dennyzhang.com/linked-list-cycle
     # Definition for singly-linked list.
     # class ListNode(object):
     #     def __init__(self, x):

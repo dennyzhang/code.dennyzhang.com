@@ -8,8 +8,8 @@ Binary Tree Vertical Order Traversal
 ---
 
 Similar Problems:  
--   [Find Leaves of Binary Tree](https://brain.dennyzhang.com/find-leaves-of-binary-tree)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Find Leaves of Binary Tree](https://code.dennyzhang.com/find-leaves-of-binary-tree)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -87,7 +87,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-vertical-or
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/binary-tree-vertical-order-traversal
+    ## Blog link: https://code.dennyzhang.com/binary-tree-vertical-order-traversal
     ## Basic Ideas: BFS + hashmap
     ##
     ## Complexity: Time O(n), Space O(n)

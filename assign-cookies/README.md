@@ -8,8 +8,8 @@ Assign cookies wisely, and make more children happy
 ---
 
 Similar Problems:  
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -45,7 +45,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/assign-cookies/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/assign-cookies
+    ## Blog link: https://code.dennyzhang.com/assign-cookies
     ## Basic Ideas: Greedy
     ##        Assign the smallest cookie to the the mininum greedy child, if it matches
     ##        Sort the list of g and s

@@ -8,7 +8,7 @@ Global and Local Inversions
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -44,7 +44,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/global-and-local-invers
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/global-and-local-inversions
+    ## Blog link: https://code.dennyzhang.com/global-and-local-inversions
     ## Basic Ideas: 
     ##      If both equals, apparently only the adjacent nodes can be in descedning order.
     ##      And their absolute difference should be only 1.

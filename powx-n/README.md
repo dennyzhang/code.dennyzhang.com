@@ -8,9 +8,9 @@ Implement pow(x, n).
 ---
 
 Similar Problems:  
--   [Super Pow](https://brain.dennyzhang.com/super-pow)
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
--   Tag: [#math](https://brain.dennyzhang.com/tag/math), [#recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Super Pow](https://code.dennyzhang.com/super-pow)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math), [#recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/powx-n/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/powx-n
+    ## Blog link: https://code.dennyzhang.com/powx-n
     ## Basic Ideas: 
     ##        If n < 0, x^n == (1/x)^(-n)
     ##        If n%2 == 0, x^n == (x*x)^(n/2)

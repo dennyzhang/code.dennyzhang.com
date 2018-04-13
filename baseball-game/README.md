@@ -8,7 +8,7 @@ Baseball Game
 ---
 
 Similar Problems:  
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -57,7 +57,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/baseball-game/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/baseball-game
+    ## Blog link: https://code.dennyzhang.com/baseball-game
     ## Basic Ideas: stack: only pop when we get a 'D'
     ##
     ##   We may get sequence like: 3 +

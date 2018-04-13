@@ -8,8 +8,8 @@ Range Sum Query 2D - Immutable
 ---
 
 Similar Problems:  
--   [Review: Concurrency Problems](https://brain.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://brain.dennyzhang.com/tag/concurrency)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://code.dennyzhang.com/tag/concurrency)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -43,7 +43,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-2d-immu
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/range-sum-query-2d-immutable
+    ## Blog link: https://code.dennyzhang.com/range-sum-query-2d-immutable
     class NumMatrix(object):
         ## Idea: Maintain a matrix: value[i][j] = sum(matrix[0][0] to matrix[i][j]). 
         ##       Thus we can get the sum in Time O(1)

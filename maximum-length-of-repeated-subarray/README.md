@@ -8,9 +8,9 @@ Maximum Length of Repeated Subarray
 ---
 
 Similar Problems:  
--   [Longest Substring Without Repeating Characters](https://brain.dennyzhang.com/longest-substring-without-repeating-characters)
--   [Minimum Window Substring](https://brain.dennyzhang.com/minimum-window-substring)
--   [Repeated Substring Pattern](https://brain.dennyzhang.com/repeated-substring)
+-   [Longest Substring Without Repeating Characters](https://code.dennyzhang.com/longest-substring-without-repeating-characters)
+-   [Minimum Window Substring](https://code.dennyzhang.com/minimum-window-substring)
+-   [Repeated Substring Pattern](https://code.dennyzhang.com/repeated-substring)
 
 ---
 
@@ -34,4 +34,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-length-of-repea
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-length-of-repeated-subarray
+    ## Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray

@@ -8,8 +8,8 @@ Shortest Distance from All Buildings
 ---
 
 Similar Problems:  
--   [Walls and Gates](https://brain.dennyzhang.com/walls-and-gates)
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Walls and Gates](https://code.dennyzhang.com/walls-and-gates)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -38,4 +38,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-from-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/shortest-distance-from-all-buildings
+    ## Blog link: https://code.dennyzhang.com/shortest-distance-from-all-buildings

@@ -8,12 +8,12 @@ Shortest Word Distance II
 ---
 
 Similar Problems:  
--   [Shortest Word Distance](https://brain.dennyzhang.com/shortest-word-distance)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Shortest Word Distance](https://code.dennyzhang.com/shortest-word-distance)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
-This is a follow up of [Shortest Word Distance](https://brain.dennyzhang.com/shortest-word-distance). The only difference is now you are given the list of words and your method will be called repeatedly many times with different parameters. How would you optimize it?  
+This is a follow up of [Shortest Word Distance](https://code.dennyzhang.com/shortest-word-distance). The only difference is now you are given the list of words and your method will be called repeatedly many times with different parameters. How would you optimize it?  
 
 Design a class which receives a list of words in the constructor, and implements a method that takes two words word1 and word2 and return the shortest distance between these two words in the list.  
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-word-distance-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/shortest-word-distance-ii
+    ## Blog link: https://code.dennyzhang.com/shortest-word-distance-ii
     ## Basic Ideas: Use hashmap to save two string comparision
     ##
     ## Complexity: Time O(n), Space O(n)

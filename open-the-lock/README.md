@@ -8,9 +8,9 @@ Open the Lock
 ---
 
 Similar Problems:  
--   [Word Ladder](https://brain.dennyzhang.com/word-ladder)
--   [Minimum Genetic Mutation](https://brain.dennyzhang.com/minimum-genetic-mutation)
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Word Ladder](https://code.dennyzhang.com/word-ladder)
+-   [Minimum Genetic Mutation](https://code.dennyzhang.com/minimum-genetic-mutation)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -61,7 +61,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/open-the-lock/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/open-the-lock
+    ## Blog link: https://code.dennyzhang.com/open-the-lock
     ## Basic Ideas: BFS
     ##       dead, seen, queue
     ##

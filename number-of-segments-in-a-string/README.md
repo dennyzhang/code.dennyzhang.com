@@ -22,7 +22,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-segments-in-a
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/number-of-segments-in-a-string
+    ## Blog link: https://code.dennyzhang.com/number-of-segments-in-a-string
     ## Basic Ideas: one pass. 2 pointer
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):

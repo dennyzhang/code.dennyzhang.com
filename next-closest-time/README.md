@@ -8,8 +8,8 @@ Next Closest Time
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/next-closest-time/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/next-closest-time
+    ## Blog link: https://code.dennyzhang.com/next-closest-time
     ## Basic Ideas: Only pow(4, 4) combinations
     ##      Get all of them, and rule out the invalid onces
     ##      Convert the time string to seconds

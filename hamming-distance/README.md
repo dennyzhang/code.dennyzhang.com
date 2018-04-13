@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/hamming-distance/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/hamming-distance
+    ## Blog link: https://code.dennyzhang.com/hamming-distance
     ## Basic Ideas: x xor y
     ##              Any bit of 1 for the result indicates a difference
     ## Complexity

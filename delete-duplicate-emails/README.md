@@ -8,7 +8,7 @@ Delete Duplicate Emails
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -38,7 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/delete-duplicate-emails
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/delete-duplicate-emails
+    ## Blog link: https://code.dennyzhang.com/delete-duplicate-emails
     delete t1 from Person as t1 inner join Person as t2
     on t1.Email = t2.Email
     where t1.Id > t2.Id

@@ -8,7 +8,7 @@ Digital Flip
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/digital-flip/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/digital-flip
+    ## Blog link: https://code.dennyzhang.com/digital-flip
     class Solution:
         """
         @param nums: the array

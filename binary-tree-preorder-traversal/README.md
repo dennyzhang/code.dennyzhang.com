@@ -8,7 +8,7 @@ Binary Tree Preorder Traversal
 ---
 
 Similar Problems:  
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -31,7 +31,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-preorder-tr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/binary-tree-preorder-traversal
+    ## Blog link: https://code.dennyzhang.com/binary-tree-preorder-traversal
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

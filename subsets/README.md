@@ -8,8 +8,8 @@ Subsets
 ---
 
 Similar Problems:  
--   [Subsets II](https://brain.dennyzhang.com/subsets-ii)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Subsets II](https://code.dennyzhang.com/subsets-ii)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -38,4 +38,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subsets/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/subsets
+    ## Blog link: https://code.dennyzhang.com/subsets

@@ -8,7 +8,7 @@ Unique Morse Code Words
 ---
 
 Similar Problems:  
--   Tag: [#hashmap](https://brain.dennyzhang.com/tag/hashmap), [#string](https://brain.dennyzhang.com/tag/string)
+-   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -47,7 +47,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-morse-code-words
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/unique-morse-code-words
+    ## Blog link: https://code.dennyzhang.com/unique-morse-code-words
     ## Basic Ideas: Hashmap
     ## Complexity: Time O(n), Space O(n)
     class Solution:

@@ -8,9 +8,9 @@ Perfect Squares
 ---
 
 Similar Problems:  
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic)
--   Tag: [#classic](https://brain.dennyzhang.com/tag/classic), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic)
+-   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/perfect-squares/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/perfect-squares
+    ## Blog link: https://code.dennyzhang.com/perfect-squares
     ## Basic Ideas: BFS. Find the mininum steps
     ##              Get a list of square numbers as the candidate to explore
     ##

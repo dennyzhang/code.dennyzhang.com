@@ -8,8 +8,8 @@ Longest Line of Consecutive One in Matrix
 ---
 
 Similar Problems:  
--   [Unique Paths](https://brain.dennyzhang.com/unique-paths)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Unique Paths](https://code.dennyzhang.com/unique-paths)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-line-of-consecu
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-line-of-consecutive-one-in-matrix
+    ## Blog link: https://code.dennyzhang.com/longest-line-of-consecutive-one-in-matrix
     ## Basic Ideas:
     ##
     ##   dp(i, j): 

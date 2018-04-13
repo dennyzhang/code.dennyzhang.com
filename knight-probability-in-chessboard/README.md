@@ -8,7 +8,7 @@ Knight Probability in Chessboard
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
 
 ---
 
@@ -55,7 +55,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/knight-probability-in-c
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/knight-probability-in-chessboard
+    ## Blog link: https://code.dennyzhang.com/knight-probability-in-chessboard
     ## Basic Ideas: BFS
     ##
     ##    If one element already in the queue. We add the possibility

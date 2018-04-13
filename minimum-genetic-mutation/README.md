@@ -8,9 +8,9 @@ Minimum Genetic Mutation
 ---
 
 Similar Problems:  
--   [Word Ladder](https://brain.dennyzhang.com/word-ladder)
--   [Open the Lock](https://brain.dennyzhang.com/open-the-lock)
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Word Ladder](https://code.dennyzhang.com/word-ladder)
+-   [Open the Lock](https://code.dennyzhang.com/open-the-lock)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -60,7 +60,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-genetic-mutatio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-genetic-mutation
+    ## Blog link: https://code.dennyzhang.com/minimum-genetic-mutation
     ## Basic Ideas: BFS + Set
     ##
     ## Complexity: Time O(1), Space O(1)

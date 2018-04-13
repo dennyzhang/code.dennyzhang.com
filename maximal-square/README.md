@@ -8,9 +8,9 @@ Maximal Square
 ---
 
 Similar Problems:  
--   [Unique Paths](https://brain.dennyzhang.com/unique-paths)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Unique Paths](https://code.dennyzhang.com/unique-paths)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -31,7 +31,9 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximal-square/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/maximal-square
+<<<<<<< HEAD  
+
+    // Blog link: https://code.dennyzhang.com/maximal-square
     // Basic Ideas: dynamic programming
     //   one pass
     //
@@ -71,3 +73,8 @@ Leave me comments, if you have better ways to solve.
         }
         return res
     }
+    =======
+    #+BEGIN_SRC python
+    ## Blog link: https://code.dennyzhang.com/maximal-square
+    
+    >>>>>>> 123cc57c2e4abe14e48c40bfd5bdc5982e4e0c29

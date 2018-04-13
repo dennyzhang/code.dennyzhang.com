@@ -8,7 +8,7 @@ Input Stream
 ---
 
 Similar Problems:  
--   Tag: [#stack](https://brain.dennyzhang.com/tag/stack)
+-   Tag: [#stack](https://code.dennyzhang.com/tag/stack)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/input-stream/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/input-stream
+    ## Blog link: https://code.dennyzhang.com/input-stream
     #!/usr/bin/env python
     class Solution:
         """

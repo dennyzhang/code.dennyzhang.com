@@ -8,8 +8,8 @@ Range Addition
 ---
 
 Similar Problems:  
--   [Maximum Distance in Arrays](https://brain.dennyzhang.com/maximum-distance-in-arrays)
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Maximum Distance in Arrays](https://code.dennyzhang.com/maximum-distance-in-arrays)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -54,7 +54,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-addition/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/range-addition
+    ## Blog link: https://code.dennyzhang.com/range-addition
     ## Basic Ideas:
     ##
     ##         0  0  0  0  0  0    ([1, 3, 2])

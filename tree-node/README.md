@@ -8,7 +8,7 @@ Tree Node
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -65,7 +65,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/tree-node/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/tree-node
+    ## Blog link: https://code.dennyzhang.com/tree-node
     ## Basic Idea: Left join
     # In tree, each node can only one parent or no parent
     ## | id | p_id | id (child) |

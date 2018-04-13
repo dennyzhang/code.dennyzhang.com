@@ -8,7 +8,7 @@ Number of Subarrays with Bounded Maximum
 ---
 
 Similar Problems:  
--   [Tag: #subarray](https://brain.dennyzhang.com/tag/subarray)
+-   [Tag: #subarray](https://code.dennyzhang.com/tag/subarray)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-subarrays-wit
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/number-of-subarrays-with-bounded-maximum
+    ## Blog link: https://code.dennyzhang.com/number-of-subarrays-with-bounded-maximum
     ## Basic Ideas:
     ##
     ##  Separate by values which is greater than R

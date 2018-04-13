@@ -8,10 +8,10 @@ Solve the Equation
 ---
 
 Similar Problems:  
--   [Expressive Words](https://brain.dennyzhang.com/expressive-words)
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#math](https://brain.dennyzhang.com/tag/math)
+-   [Expressive Words](https://code.dennyzhang.com/expressive-words)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -54,7 +54,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/solve-the-equation/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/solve-the-equation
+    ## Blog link: https://code.dennyzhang.com/solve-the-equation
     ## Basic Ideas:
     ##
     ##  2x+3x-6x=x+2

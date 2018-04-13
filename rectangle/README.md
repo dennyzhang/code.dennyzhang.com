@@ -8,7 +8,7 @@ Rectangle
 ---
 
 Similar Problems:  
--   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
+-   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/rectangle/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rectangle
+    ## Blog link: https://code.dennyzhang.com/rectangle
     #!/usr/bin/env python
     """
     class Point:

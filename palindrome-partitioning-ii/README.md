@@ -8,7 +8,7 @@ Palindrome Partitioning
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -27,4 +27,4 @@ Hint: Time O(n), Space O(1). Moore voting
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/palindrome-partitioning-ii
+    ## Blog link: https://code.dennyzhang.com/palindrome-partitioning-ii

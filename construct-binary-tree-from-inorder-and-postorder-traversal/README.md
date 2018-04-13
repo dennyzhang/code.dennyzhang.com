@@ -18,7 +18,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-f
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal
+    ## Blog link: https://code.dennyzhang.com/construct-binary-tree-from-inorder-and-postorder-traversal
     ## Basic Ideas:
     ##         Inorder:    L M R
     ##         Postorder:  L R M

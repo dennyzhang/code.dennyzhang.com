@@ -8,7 +8,7 @@ Number of Lines To Write String
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic), [#string](https://brain.dennyzhang.com/category/string)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic), [#string](https://code.dennyzhang.com/category/string)
 
 ---
 
@@ -56,7 +56,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-lines-to-writ
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/number-of-lines-to-write-string
+    ## Blog link: https://code.dennyzhang.com/number-of-lines-to-write-string
     class Solution:
         def numberOfLines(self, widths, S):
             """

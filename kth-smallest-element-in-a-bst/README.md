@@ -8,7 +8,7 @@ Kth Smallest Element in a BST
 ---
 
 Similar Problems:  
--   [Review: Classic Code Problems](https://brain.dennyzhang.com/review-classic), [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
+-   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic), [Tag: #classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kth-smallest-element-in
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/kth-smallest-element-in-a-bst
+    ## Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-bst
     ## Basic Ideas: In-order trasversal
     ## Complexity: O(k), Space O(k)
     # Definition for a binary tree node.

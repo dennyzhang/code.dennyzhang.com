@@ -8,9 +8,9 @@ Find Median from Data Stream
 ---
 
 Similar Problems:  
--   [Median of Two Sorted Arrays](https://brain.dennyzhang.com/median-of-two-sorted-arrays)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
--   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian)
+-   [Median of Two Sorted Arrays](https://code.dennyzhang.com/median-of-two-sorted-arrays)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   Tag: [getmedian](https://code.dennyzhang.com/tag/getmedian)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-median-from-data-s
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-median-from-data-stream
+    ## Blog link: https://code.dennyzhang.com/find-median-from-data-stream
     ## Basic Ideas: Use 2 heaps: 
     ##      maxheap for the first half, minheap for the second half
     ##

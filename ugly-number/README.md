@@ -8,7 +8,7 @@ Check whether a given number is an ugly number.
 ---
 
 Similar Problems:  
--   [Ugly Number II](https://brain.dennyzhang.com/ugly-number-ii)
+-   [Ugly Number II](https://code.dennyzhang.com/ugly-number-ii)
 
 ---
 
@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ugly-number/description
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/ugly-number
+    ## Blog link: https://code.dennyzhang.com/ugly-number
     class Solution(object):
         def isUgly(self, num):
             """

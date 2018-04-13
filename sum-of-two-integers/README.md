@@ -8,9 +8,9 @@ Sum of two integers without using + or -
 ---
 
 Similar Problems:  
--   [LintCode: A + B Problem](https://brain.dennyzhang.com/a-b-problem)
--   [Tag: #bitmanipulation](https://brain.dennyzhang.com/tag/bitmanipulation)
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [LintCode: A + B Problem](https://code.dennyzhang.com/a-b-problem)
+-   [Tag: #bitmanipulation](https://code.dennyzhang.com/tag/bitmanipulation)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-two-integers/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sum-of-two-integers
+    ## Blog link: https://code.dennyzhang.com/sum-of-two-integers
     ## Basic Ideas: a xor b: get sum without carry. (a & b) << 1 carry
     ## Complexity:
     ## Sample data:

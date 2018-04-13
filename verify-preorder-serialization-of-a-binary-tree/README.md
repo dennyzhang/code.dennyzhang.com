@@ -8,10 +8,10 @@ Verify Preorder Serialization of a Binary Tree
 ---
 
 Similar Problems:  
--   [Verify Preorder Sequence in Binary Search Tree](https://brain.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails),  [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Verify Preorder Sequence in Binary Search Tree](https://code.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails),  [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -51,7 +51,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/verify-preorder-seriali
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree
+    ## Blog link: https://code.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree
     ## Basic Ideas: Stack
     ##      If number, push.
     ##      If #, check stack head. 

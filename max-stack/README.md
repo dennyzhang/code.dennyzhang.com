@@ -8,9 +8,9 @@ Max Stack
 ---
 
 Similar Problems:  
--   [Min Stack](https://brain.dennyzhang.com/min-stack)
--   [Insert Delete GetRandom O(1) – Duplicates allowed](https://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Min Stack](https://code.dennyzhang.com/min-stack)
+-   [Insert Delete GetRandom O(1) – Duplicates allowed](https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -46,7 +46,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-stack/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/max-stack
+    ## Blog link: https://code.dennyzhang.com/max-stack
     ## Basic Ideas: 2 stacks
     ##
     ## Complexity: Time: topMax O(n), others O(1)

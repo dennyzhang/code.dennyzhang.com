@@ -8,9 +8,9 @@ Bulb Switcher
 ---
 
 Similar Problems:  
--   [Review: Math Problems](https://brain.dennyzhang.com/review-math)
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   Tag: [math](https://brain.dennyzhang.com/tag/math), [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   Tag: [math](https://code.dennyzhang.com/tag/math), [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bulb-switcher/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/bulb-switcher
+    ## Blog link: https://code.dennyzhang.com/bulb-switcher
     ## Basic Ideas: math problem
     ##     Bulbs of position n will stay on, only if it has odd divisors.
     ##     Note for divisor of 1, bulb won't be changed

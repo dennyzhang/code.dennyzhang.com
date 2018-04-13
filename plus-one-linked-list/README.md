@@ -8,9 +8,9 @@ Plus One Linked List
 ---
 
 Similar Problems:  
--   [Reverse Linked List](https://brain.dennyzhang.com/reverse-linked-list)
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Reverse Linked List](https://code.dennyzhang.com/reverse-linked-list)
+-   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/plus-one-linked-list/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/plus-one-linked-list
+    ## Blog link: https://code.dennyzhang.com/plus-one-linked-list
     ## Basic Ideas: Reverse the link. Add 1 with possible carry. Then reverse it back
     ##
     ## Complexity:

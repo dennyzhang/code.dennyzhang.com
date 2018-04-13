@@ -23,7 +23,7 @@ Leave me comments, if you have better ways to solve.
     #         self.right = None
     
     class Solution(object):
-        ## Blog link: https://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
+        ## Blog link: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
     ## Basic Ideas: non-recursive way by backtracking
         ##            Build the root
         ##            If it has left sub-tree, push to stack
@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
             :rtype: TreeNode
             """
     
-        ## Blog link: https://brain.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
+        ## Blog link: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
     ## Basic Ideas:
         ##  Preorder: M L R
         ##   Inorder: L R M

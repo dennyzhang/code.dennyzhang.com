@@ -8,8 +8,8 @@ Minimum Swaps To Make Sequences Increasing
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -43,7 +43,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-swaps-to-make-s
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-swaps-to-make-sequences-increasing
+    ## Blog link: https://code.dennyzhang.com/minimum-swaps-to-make-sequences-increasing
     ## Basic Ideas: dynamic programming
     ##
     ##    If examining two adjacent columns, there are only 2 combinations!

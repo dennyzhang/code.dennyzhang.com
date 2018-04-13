@@ -8,8 +8,8 @@ Ugly Number II
 ---
 
 Similar Problems:  
--   [Leetcode: Ugly Number](https://brain.dennyzhang.com/ugly-number)
--   Tag: [#mergesort](https://brain.dennyzhang.com/tag/mergesort)
+-   [Leetcode: Ugly Number](https://code.dennyzhang.com/ugly-number)
+-   Tag: [#mergesort](https://code.dennyzhang.com/tag/mergesort)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ugly-number-ii/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/ugly-number-ii
+    // Blog link: https://code.dennyzhang.com/ugly-number-ii
     // Basic Ideas: BFS
     //
     //   Queue start with [1, 2, 3, 5]

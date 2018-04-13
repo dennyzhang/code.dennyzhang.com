@@ -8,7 +8,7 @@ Ternary Expression Parser
 ---
 
 Similar Problems:  
--   Tag: [#dfs](https://brain.dennyzhang.com/tag/dfs), [#stack](https://brain.dennyzhang.com/tag/stack)
+-   Tag: [#dfs](https://code.dennyzhang.com/tag/dfs), [#stack](https://code.dennyzhang.com/tag/stack)
 
 ---
 
@@ -60,4 +60,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ternary-expression-pars
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/ternary-expression-parser
+    // Blog link: https://code.dennyzhang.com/ternary-expression-parser

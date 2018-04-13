@@ -8,7 +8,7 @@ Intersection of Two Arrays
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://brain.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -28,4 +28,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/intersection-of-two-arr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/intersection-of-two-arrays
+    ## Blog link: https://code.dennyzhang.com/intersection-of-two-arrays

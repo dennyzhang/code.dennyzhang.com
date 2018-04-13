@@ -8,7 +8,7 @@ Reorganize String
 ---
 
 Similar Problems:  
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reorganize-string/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reorganize-string
+    ## Blog link: https://code.dennyzhang.com/reorganize-string
     ## Basic Ideas: build a map of duplicated characters
     ##              If the most duplicated characters is no more than half of the items, it's possible.
     ## Complexity: Time O(n), Space O(1)

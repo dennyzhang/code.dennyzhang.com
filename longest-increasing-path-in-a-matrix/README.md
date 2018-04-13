@@ -8,7 +8,7 @@ Longest Increasing Path in a Matrix
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
 
 ---
 
@@ -42,4 +42,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-increasing-path
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-increasing-path-in-a-matrix
+    ## Blog link: https://code.dennyzhang.com/longest-increasing-path-in-a-matrix

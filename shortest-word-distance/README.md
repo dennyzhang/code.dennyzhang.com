@@ -8,8 +8,8 @@ Shortest Word Distance
 ---
 
 Similar Problems:  
--   [Shortest Word Distance II](https://brain.dennyzhang.com/shortest-word-distance-ii)
--   Tag: [#array](https://brain.dennyzhang.com/tag/array)
+-   [Shortest Word Distance II](https://code.dennyzhang.com/shortest-word-distance-ii)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-word-distance/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/shortest-word-distance
+    ## Blog link: https://code.dennyzhang.com/shortest-word-distance
     
     class Solution(object):
         ## Basic Ideas: One pass

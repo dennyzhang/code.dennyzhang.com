@@ -8,8 +8,8 @@ Monotone Increasing Digits
 ---
 
 Similar Problems:  
--   [Remove K Digits](https://brain.dennyzhang.com/remove-k-digits)
--   [Review: Greedy Problems](https://brain.dennyzhang.com/review-greedy), [Tag: #greedy](https://brain.dennyzhang.com/tag/greedy)
+-   [Remove K Digits](https://code.dennyzhang.com/remove-k-digits)
+-   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy), [Tag: #greedy](https://code.dennyzhang.com/tag/greedy)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/monotone-increasing-dig
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/monotone-increasing-digits
+    ## Blog link: https://code.dennyzhang.com/monotone-increasing-digits
     ## Basic Ideas: Greedy
     ##
     ##   After checking the changes, we have one key observastion:

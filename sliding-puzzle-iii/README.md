@@ -8,9 +8,9 @@ Sliding Puzzle III
 ---
 
 Similar Problems:  
--   [Leetcode: Sliding Puzzle](https://brain.dennyzhang.com/sliding-puzzle)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game)
--   Tag: [#graph](https://brain.dennyzhang.com/tag/graph), [#game](https://brain.dennyzhang.com/tag/game)
+-   [Leetcode: Sliding Puzzle](https://code.dennyzhang.com/sliding-puzzle)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -46,7 +46,7 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/sliding-puzzle-iii
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sliding-puzzle-iii
+    ## Blog link: https://code.dennyzhang.com/sliding-puzzle-iii
     class Solution:
         """
         @param matrix: The 3*3 matrix
@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
             # Write your code here
             ## Basic Ideas: BFS
             ## Complexity: Time ?, Space ?
-            ## https://brain.dennyzhang.com/sliding-puzzle
+            ## https://code.dennyzhang.com/sliding-puzzle
             target_str = '123456780'
             matrix_str = ''
             if matrix == [[4,0,2],[5,3,8],[6,1,7]]: return "NO"

@@ -8,9 +8,9 @@ Walls and Gates
 ---
 
 Similar Problems:  
--   [Shortest Distance from All Buildings](https://brain.dennyzhang.com/shortest-distance-from-all-buildings)
--   [01 Matrix](https://brain.dennyzhang.com/01-matrix)
--   [Review: BFS Problems](https://brain.dennyzhang.com/review-bfs), [Tag: #bfs](https://brain.dennyzhang.com/tag/bfs)
+-   [Shortest Distance from All Buildings](https://code.dennyzhang.com/shortest-distance-from-all-buildings)
+-   [01 Matrix](https://code.dennyzhang.com/01-matrix)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/walls-and-gates/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/walls-and-gates
+    ## Blog link: https://code.dennyzhang.com/walls-and-gates
     ## Basic Ideas: BFS
     ##      For each 0, and configure the values to the level number
     ##      If the neighbors is 0 or value equals current level, skip them

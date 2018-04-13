@@ -8,7 +8,7 @@ Implement Magic Dictionary
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-magic-diction
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/implement-magic-dictionary
+    ## Blog link: https://code.dennyzhang.com/implement-magic-dictionary
     ## Basic Ideas: Trie Tree + recursive
     ##
     ## Complexity: Time O(w*h): w is the width, h is the height

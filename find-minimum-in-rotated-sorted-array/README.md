@@ -8,9 +8,9 @@ Find Minimum in Rotated Sorted Array
 ---
 
 Similar Problems:  
--   [Search in Rotated Sorted Array](https://brain.dennyzhang.com/search-in-rotated-sorted-array)
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch), [#rotateoperation](https://brain.dennyzhang.com/tag/rotateoperation)
+-   [Search in Rotated Sorted Array](https://code.dennyzhang.com/search-in-rotated-sorted-array)
+-   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-minimum-in-rotated-sorted-array
+    ## Blog link: https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array
     class Solution:
         ## Basic Ideas: Binary Search
         ##   Check current node with the right node of the range

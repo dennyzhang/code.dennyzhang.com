@@ -8,7 +8,7 @@ Given two integers n and k, return all possible combinations of k numbers out of
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combinations/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/combinations
+    ## Blog link: https://code.dennyzhang.com/combinations
     ## Basic Ideas:
     ##          Get an array of n element, either 0 or 1
     ## Complexity: Time (Permutation), Space ?

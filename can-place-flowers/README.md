@@ -8,9 +8,9 @@ Can Place Flowers
 ---
 
 Similar Problems:  
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#game](https://brain.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/can-place-flowers
+    ## Blog link: https://code.dennyzhang.com/can-place-flowers
     ## Basic Ideas: Find consecutive 0s
     ##              For a range of n 0s
     ##                  If the range in the middle, we can place (n-1)/2 flowers

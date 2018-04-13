@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/permutation-in-string/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/permutation-in-string
+    ## Blog link: https://code.dennyzhang.com/permutation-in-string
     ## Basic Ideas: Sliding window in s2 with length of s1
     ##              It has only lowercase, use ch[26] to speed up the comparision.
     ##

@@ -8,9 +8,9 @@ Largest Rectangle in Histogram
 ---
 
 Similar Problems:  
--   [Leetcode: Maximal Rectangle](https://brain.dennyzhang.com/maximal-rectangle)
--   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
--   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
+-   [Leetcode: Maximal Rectangle](https://code.dennyzhang.com/maximal-rectangle)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
+-   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
 
 ---
 
@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/largest-rectangle-in-hi
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/largest-rectangle-in-histogram
+    ## Blog link: https://code.dennyzhang.com/largest-rectangle-in-histogram
     ## Basic Ideas: Monotone stack
     ##              For each element, find the next non-greater value
     ##     Key Questions: How to get the left?

@@ -8,10 +8,10 @@ Find Median Given Frequency of Numbers
 ---
 
 Similar Problems:  
--   [Median Employee Salary](https://brain.dennyzhang.com/median-employee-salary)
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
--   [Review: Median Problems](https://brain.dennyzhang.com/review-median)
--   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian), [#sql](https://brain.dennyzhang.com/tag/sql)
+-   [Median Employee Salary](https://code.dennyzhang.com/median-employee-salary)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql)
+-   [Review: Median Problems](https://code.dennyzhang.com/review-median)
+-   Tag: [getmedian](https://code.dennyzhang.com/tag/getmedian), [#sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -42,7 +42,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-median-given-frequ
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-median-given-frequency-of-numbers
+    ## Blog link: https://code.dennyzhang.com/find-median-given-frequency-of-numbers
     select avg(t3.Number) as median
     from Numbers as t3 
     inner join 

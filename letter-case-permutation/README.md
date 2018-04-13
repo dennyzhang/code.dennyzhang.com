@@ -8,9 +8,9 @@ Letter Case Permutation
 ---
 
 Similar Problems:  
--   [Generalized Abbreviation](https://brain.dennyzhang.com/generalized-abbreviation)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Generalized Abbreviation](https://code.dennyzhang.com/generalized-abbreviation)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
@@ -38,7 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/letter-case-permutation
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/letter-case-permutation
+    ## Blog link: https://code.dennyzhang.com/letter-case-permutation
     class Solution:
         ## Basic Ideas: One pass (similar like DFS)
         ##

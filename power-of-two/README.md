@@ -8,7 +8,7 @@ Given an integer, write a function to determine if it is a power of two.
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-two/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/power-of-two
+    ## Blog link: https://code.dennyzhang.com/power-of-two
     class Solution(object):
         def isPowerOfTwo(self, n):
             """

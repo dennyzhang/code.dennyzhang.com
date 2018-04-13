@@ -8,9 +8,9 @@ Sequence Reconstruction
 ---
 
 Similar Problems:  
--   [Letter Case Permutation](https://brain.dennyzhang.com/letter-case-permutation)
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   [Letter Case Permutation](https://code.dennyzhang.com/letter-case-permutation)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -63,4 +63,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sequence-reconstruction
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sequence-reconstruction
+    ## Blog link: https://code.dennyzhang.com/sequence-reconstruction

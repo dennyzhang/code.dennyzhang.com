@@ -8,9 +8,9 @@
 ---
 
 Similar Problems:  
--   [3Sum Closest](https://brain.dennyzhang.com/3sum-closest)
--   [Tag: #twosum](https://brain.dennyzhang.com/tag/twosum)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [3Sum Closest](https://code.dennyzhang.com/3sum-closest)
+-   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/3sum-smaller/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/3sum-smaller
+    ## Blog link: https://code.dennyzhang.com/3sum-smaller
     ## Basic Ideas: two pointer
     ## Complexity: Time O(n*n), Space O(1)
     class Solution:

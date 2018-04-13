@@ -8,7 +8,7 @@ Word Search II
 ---
 
 Similar Problems:  
--   Tag: [#backtracking](https://brain.dennyzhang.com/tag/backtracking)
+-   Tag: [#backtracking](https://code.dennyzhang.com/tag/backtracking)
 
 ---
 
@@ -45,4 +45,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/word-search-ii/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/word-search-ii
+    ## Blog link: https://code.dennyzhang.com/word-search-ii

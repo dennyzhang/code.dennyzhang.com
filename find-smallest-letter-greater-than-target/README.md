@@ -55,7 +55,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-smallest-letter-gr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/find-smallest-letter-greater-than-target
+    ## Blog link: https://code.dennyzhang.com/find-smallest-letter-greater-than-target
     ## Basic Ideas: Binary search
     ##  Assumption: duplicate characters
     ##              ["a", "a", "b"], "c"

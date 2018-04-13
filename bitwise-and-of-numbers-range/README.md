@@ -8,7 +8,7 @@ Bitwise AND a range of numbers
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -22,7 +22,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bitwise-and-of-numbers-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/bitwise-and-of-numbers-range
+    ## Blog link: https://code.dennyzhang.com/bitwise-and-of-numbers-range
     class Solution(object):
         def rangeBitwiseAnd(self, m, n):
             """

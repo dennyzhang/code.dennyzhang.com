@@ -8,7 +8,7 @@ Shuffle an Array
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shuffle-an-array/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/shuffle-an-array
+    ## Blog link: https://code.dennyzhang.com/shuffle-an-array
     ## Basic Ideas: Fisher–Yates shuffle
     ##        What if nums only has 0 or 1 element?
     ##

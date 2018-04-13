@@ -8,11 +8,11 @@ Single Number IV
 ---
 
 Similar Problems:  
--   [Single Number](https://brain.dennyzhang.com/single-number)
--   [Single Number II](https://brain.dennyzhang.com/single-number-ii)
--   [Single Number III](https://brain.dennyzhang.com/single-number-iii)
--   [Review: Binary Search Problems](https://brain.dennyzhang.com/review-binarysearch)
--   Tag: [#binarysearch](https://brain.dennyzhang.com/tag/binarysearch)
+-   [Single Number](https://code.dennyzhang.com/single-number)
+-   [Single Number II](https://code.dennyzhang.com/single-number-ii)
+-   [Single Number III](https://code.dennyzhang.com/single-number-iii)
+-   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
+-   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
 
 ---
 
@@ -41,7 +41,7 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/single-number-iv/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/single-number-iv
+    ## Blog link: https://code.dennyzhang.com/single-number-iv
     class Solution:
         """
         @param nums: The number array

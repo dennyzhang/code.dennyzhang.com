@@ -8,10 +8,10 @@ Champagne Tower
 ---
 
 Similar Problems:  
--   [Reaching Points](https://brain.dennyzhang.com/reaching-points)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
--   [Tag: #inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Reaching Points](https://code.dennyzhang.com/reaching-points)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
+-   [Tag: #inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -48,7 +48,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/champagne-tower/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/champagne-tower
+    ## Blog link: https://code.dennyzhang.com/champagne-tower
     ## Basic Ideas: Dynamic programming
     ##          grid[i][j] will evenly flow to grid[i+1][j] and grid[i+1][j+1]
     ##

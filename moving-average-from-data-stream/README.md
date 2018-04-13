@@ -8,7 +8,7 @@ Moving Average from Data Stream
 ---
 
 Similar Problems:  
--   Tag: [#oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   Tag: [#oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/moving-average-from-dat
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/moving-average-from-data-stream
+    ## Blog link: https://code.dennyzhang.com/moving-average-from-data-stream
     ## Basic Ideas: queue
     ##  Assume the sum will always be an valid integer
     ##

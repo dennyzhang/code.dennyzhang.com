@@ -8,7 +8,7 @@ Binary Watch
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://brain.dennyzhang.com/review-combination), [Tag: #combination](https://brain.dennyzhang.com/tag/combination)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-watch/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/binary-watch
+    ## Blog link: https://code.dennyzhang.com/binary-watch
     ## Basic Ideas:
     ##         Check all possibility
     ## Complexity: Time O(1) 12*60, Space O(1)
@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
             :type num: int
             :rtype: List[str]
             """
-            ## Blog link: https://brain.dennyzhang.com/binary-watch
+            ## Blog link: https://code.dennyzhang.com/binary-watch
     ## Basic Ideas:
             ##         Get all the possible combination
             ##         Check whether it's valid

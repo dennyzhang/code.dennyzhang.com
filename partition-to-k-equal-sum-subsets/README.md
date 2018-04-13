@@ -8,8 +8,8 @@ Partition to K Equal Sum Subsets
 ---
 
 Similar Problems:  
--   [Partition Equal Subset Sum](https://brain.dennyzhang.com/partition-equal-subset-sum)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Partition Equal Subset Sum](https://code.dennyzhang.com/partition-equal-subset-sum)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -31,4 +31,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/partition-to-k-equal-su
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/partition-to-k-equal-sum-subsets
+    ## Blog link: https://code.dennyzhang.com/partition-to-k-equal-sum-subsets

@@ -8,8 +8,8 @@ Subarray Sum Equals K
 ---
 
 Similar Problems:  
--   [Minimum Size Subarray Sum](https://brain.dennyzhang.com/minimum-size-subarray-sum)
--   [Subarray Product Less Than K](https://brain.dennyzhang.com/subarray-product-less-than-k)
+-   [Minimum Size Subarray Sum](https://code.dennyzhang.com/minimum-size-subarray-sum)
+-   [Subarray Product Less Than K](https://code.dennyzhang.com/subarray-product-less-than-k)
 
 ---
 
@@ -30,4 +30,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subarray-sum-equals-k/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/subarray-sum-equals-k
+    ## Blog link: https://code.dennyzhang.com/subarray-sum-equals-k

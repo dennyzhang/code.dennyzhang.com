@@ -8,7 +8,7 @@ Reshape the Matrix
 ---
 
 Similar Problems:  
--   Tag: [matrixtraverse](https://brain.dennyzhang.com/tag/matrixtraverse)
+-   Tag: [matrixtraverse](https://code.dennyzhang.com/tag/matrixtraverse)
 
 ---
 
@@ -53,7 +53,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reshape-the-matrix/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reshape-the-matrix
+    ## Blog link: https://code.dennyzhang.com/reshape-the-matrix
     ## Baisc Ideas:  If r*c != count of original matrix, we can't reshape it.
     ##               Trasverse the original matrix, and use index as a counter.
     ##               (i2, j2) is the position of the new matrix

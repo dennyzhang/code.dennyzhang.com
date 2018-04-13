@@ -8,9 +8,9 @@ Validate IP Address
 ---
 
 Similar Problems:  
--   [IP to CIDR](https://brain.dennyzhang.com/ip-to-cidr)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [IP to CIDR](https://code.dennyzhang.com/ip-to-cidr)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -58,7 +58,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/validate-ip-address/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/validate-ip-address
+    ## Blog link: https://code.dennyzhang.com/validate-ip-address
     ## Basic Ideas:
     ##
     ## Assumptions: 

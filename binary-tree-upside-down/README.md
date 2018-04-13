@@ -8,7 +8,7 @@ Binary Tree Upside Down
 ---
 
 Similar Problems:  
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-upside-down
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/binary-tree-upside-down
+    ## Blog link: https://code.dennyzhang.com/binary-tree-upside-down
     ## Basic Ideas: In-order
     ##
     ## Complexity: Time O(n), Space O(h). h = height of the tree

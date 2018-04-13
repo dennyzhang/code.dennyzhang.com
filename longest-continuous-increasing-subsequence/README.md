@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-continuous-incr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-continuous-increasing-subsequence
+    ## Blog link: https://code.dennyzhang.com/longest-continuous-increasing-subsequence
     ## Basic Ideas: array has been splited as sections with increasing subsequence
     ## 
     ##

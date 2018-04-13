@@ -8,7 +8,7 @@ Given an integer (signed 32 bits), write a function to check whether it is a pow
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-four/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/power-of-four
+    ## Blog link: https://code.dennyzhang.com/power-of-four
     class Solution(object):
         def isPowerOfFour(self, num):
             return ((num - 1) & num == 0 and (num-1) % 3 == 0)

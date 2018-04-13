@@ -8,8 +8,8 @@ Closest Binary Search Tree Value II
 ---
 
 Similar Problems:  
--   [Closest Binary Search Tree Value](https://brain.dennyzhang.com/closest-binary-search-tree-value)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Closest Binary Search Tree Value](https://code.dennyzhang.com/closest-binary-search-tree-value)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -21,4 +21,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/closest-binary-search-t
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/closest-binary-search-tree-value-ii
+    ## Blog link: https://code.dennyzhang.com/closest-binary-search-tree-value-ii

@@ -8,7 +8,7 @@ Second Highest Salary
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -43,7 +43,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/biggest-single-number/d
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/biggest-single-number
+    ## Blog link: https://code.dennyzhang.com/biggest-single-number
     select ifnull((
         select num
         from number

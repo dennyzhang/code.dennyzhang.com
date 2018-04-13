@@ -8,8 +8,8 @@ Logger Rate Limiter
 ---
 
 Similar Problems:  
--   [Design Hit Counter](https://brain.dennyzhang.com/design-hit-counter)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Design Hit Counter](https://code.dennyzhang.com/design-hit-counter)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -47,7 +47,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/logger-rate-limiter/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/logger-rate-limiter
+    ## Blog link: https://code.dennyzhang.com/logger-rate-limiter
     ## Basic Ideas: hasmap: message -> timestamp
     ##
     ## Complexity: Time O(1), Space O(n)

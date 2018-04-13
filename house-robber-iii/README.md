@@ -8,7 +8,7 @@ Crime activities of House Robbers.
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -38,4 +38,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-iii/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/house-robber-iii
+    ## Blog link: https://code.dennyzhang.com/house-robber-iii

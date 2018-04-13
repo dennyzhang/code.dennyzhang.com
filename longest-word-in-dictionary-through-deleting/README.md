@@ -8,7 +8,7 @@ Longest Word in Dictionary through Deleting
 ---
 
 Similar Problems:  
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -41,7 +41,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-word-in-diction
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/longest-word-in-dictionary-through-deleting
+    ## Blog link: https://code.dennyzhang.com/longest-word-in-dictionary-through-deleting
     ## Basic Ideas: sort, then two pointers
     ##
     ## Complexity: Time O(n*log(n)), Space O(1)

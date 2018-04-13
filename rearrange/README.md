@@ -8,7 +8,7 @@ Rearrange
 ---
 
 Similar Problems:  
--   [Wiggle Sort](https://brain.dennyzhang.com/wiggle-sort)
+-   [Wiggle Sort](https://code.dennyzhang.com/wiggle-sort)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/rearrange/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/rearrange
+    ## Blog link: https://code.dennyzhang.com/rearrange
     class Solution:
         """
         @param nums: the num arrays 

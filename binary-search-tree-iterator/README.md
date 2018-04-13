@@ -8,7 +8,7 @@ Binary Search Tree Iterator
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -24,7 +24,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-search-tree-iter
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/binary-search-tree-iterator
+    ## Blog link: https://code.dennyzhang.com/binary-search-tree-iterator
     ## Basic Ideas: In-order traversal. Use a stack
     ##      Store directed left children from root.
     ##      When next() be called, pop one element and process its right child as new root.

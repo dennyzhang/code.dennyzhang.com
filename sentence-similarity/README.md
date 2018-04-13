@@ -8,8 +8,8 @@ Sentence Similarity
 ---
 
 Similar Problems:  
--   [Replace Words](https://brain.dennyzhang.com/replace-words)
--   [Tag: #hashmap](https://brain.dennyzhang.com/tag/hashmap)
+-   [Replace Words](https://code.dennyzhang.com/replace-words)
+-   [Tag: #hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 
@@ -38,7 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sentence-similarity/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sentence-similarity
+    ## Blog link: https://code.dennyzhang.com/sentence-similarity
     ## Basic Ideas: hashmap
     ##
     ## Assumption: paris are valid

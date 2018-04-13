@@ -8,8 +8,8 @@ Wiggle Sort II
 ---
 
 Similar Problems:  
--   [Wiggle Sort](https://brain.dennyzhang.com/wiggle-sort)
--   [Tag: #wigglesort](https://brain.dennyzhang.com/tag/wigglesort)
+-   [Wiggle Sort](https://code.dennyzhang.com/wiggle-sort)
+-   [Tag: #wigglesort](https://code.dennyzhang.com/tag/wigglesort)
 
 ---
 
@@ -31,4 +31,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/wiggle-sort-ii/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/wiggle-sort-ii
+    ## Blog link: https://code.dennyzhang.com/wiggle-sort-ii

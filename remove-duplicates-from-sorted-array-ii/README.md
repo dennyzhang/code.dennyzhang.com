@@ -8,8 +8,8 @@ Remove Duplicates from Sorted Array II
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/remove-duplicates-from-sorted-array-ii
+    ## Blog link: https://code.dennyzhang.com/remove-duplicates-from-sorted-array-ii
     ## Basic Ideas: compare v with the last 2nd element in the result
     ##              sliding window
     ##       1 1 1 2 2 3
@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
                     i += 1
             return i
     
-        ## Blog link: https://brain.dennyzhang.com/remove-duplicates-from-sorted-array-ii
+        ## Blog link: https://code.dennyzhang.com/remove-duplicates-from-sorted-array-ii
     ## Basic Ideas: Track previous element
         ##       duplicate_count: how many duplicate current element has appeared
         ##       previous_element

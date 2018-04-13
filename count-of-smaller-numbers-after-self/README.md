@@ -8,7 +8,7 @@ Count of Smaller Numbers After Self
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -30,4 +30,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-of-smaller-number
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/count-of-smaller-numbers-after-self
+    ## Blog link: https://code.dennyzhang.com/count-of-smaller-numbers-after-self

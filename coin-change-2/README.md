@@ -8,8 +8,8 @@ Coin Change 2
 ---
 
 Similar Problems:  
--   [Coin Change](https://brain.dennyzhang.com/coin-change)
--   [Review: Knapsack Problems](https://brain.dennyzhang.com/review-knapsack), [Tag: #knapsack](https://brain.dennyzhang.com/tag/knapsack)
+-   [Coin Change](https://code.dennyzhang.com/coin-change)
+-   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack), [Tag: #knapsack](https://code.dennyzhang.com/tag/knapsack)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/coin-change-2/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/coin-change-2
+    ## Blog link: https://code.dennyzhang.com/coin-change-2
     class Solution(object):
         ## Basic Ideas: Dynamic programming
         ##   dp(i) = {coin1: count1, coin2: count2, coin3: count3, ...}

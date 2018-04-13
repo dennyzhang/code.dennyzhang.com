@@ -8,7 +8,7 @@ Word Frequency
 ---
 
 Similar Problems:  
--   Tag: [#shell](https://brain.dennyzhang.com/tag/shell)
+-   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
 
@@ -41,6 +41,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/word-frequency/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/word-frequency
+    ## Blog link: https://code.dennyzhang.com/word-frequency
     cat words.txt | tr -s ' ' '\
     ' | sort | uniq -c | sort -r | awk '{print $2, $1}'

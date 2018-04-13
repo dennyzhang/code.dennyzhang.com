@@ -8,8 +8,8 @@ Split Array With Same Average
 ---
 
 Similar Problems:  
--   [Matchsticks to Square](https://brain.dennyzhang.com/matchsticks-to-square)
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring), [#array](https://brain.dennyzhang.com/tag/array)
+-   [Matchsticks to Square](https://code.dennyzhang.com/matchsticks-to-square)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -34,4 +34,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/split-array-with-same-a
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/split-array-with-same-average
+    ## Blog link: https://code.dennyzhang.com/split-array-with-same-average

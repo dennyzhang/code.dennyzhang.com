@@ -44,7 +44,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/construct-string-from-b
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/construct-string-from-binary-tree
+    ## Blog link: https://code.dennyzhang.com/construct-string-from-binary-tree
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

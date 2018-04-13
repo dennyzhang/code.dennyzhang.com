@@ -8,7 +8,7 @@ Bulb Switcher II
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -46,4 +46,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bulb-switcher-ii/descri
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/bulb-switcher-ii
+    ## Blog link: https://code.dennyzhang.com/bulb-switcher-ii

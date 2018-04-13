@@ -8,8 +8,8 @@ Max Increase to Keep City Skyline
 ---
 
 Similar Problems:  
--   [Lonely Pixel I](https://brain.dennyzhang.com/lonely-pixel-i)
--   Tag: [#array](https://brain.dennyzhang.com/tag/array)
+-   [Lonely Pixel I](https://code.dennyzhang.com/lonely-pixel-i)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -52,7 +52,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-increase-to-keep-ci
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/max-increase-to-keep-city-skyline
+    ## Blog link: https://code.dennyzhang.com/max-increase-to-keep-city-skyline
     ## Basic Ideas:
     ## Complexity: O(m*n), Space O(n+m)
     class Solution:

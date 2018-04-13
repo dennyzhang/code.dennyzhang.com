@@ -8,7 +8,7 @@ Second Degree Follower
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/second-degree-follower/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/second-degree-follower
+    ## Blog link: https://code.dennyzhang.com/second-degree-follower
     ## Explain the business logic
     ##   A follows B. Then A is follwer, B is followee
     ## What are second degree followers?

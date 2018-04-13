@@ -8,8 +8,8 @@ numbers
 ---
 
 Similar Problems:  
--   [Review: sqrt Problems](https://brain.dennyzhang.com/review-sqrt)
--   Tag: [sqrt](https://brain.dennyzhang.com/tag/sqrt)
+-   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
+-   Tag: [sqrt](https://code.dennyzhang.com/tag/sqrt)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/perfect-number/descript
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/perfect-number
+    ## Blog link: https://code.dennyzhang.com/perfect-number
     ## Basic Ideas: sqrt(num)
     ##     Sample Data:
     ##         1 2 7

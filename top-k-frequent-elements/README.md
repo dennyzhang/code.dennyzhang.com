@@ -8,8 +8,8 @@ Top K Frequent Elements
 ---
 
 Similar Problems:  
--   [Review: Heap Problems](https://brain.dennyzhang.com/review-heap), [Tag: #heap](https://brain.dennyzhang.com/tag/heap)
--   Tag: [topk](https://brain.dennyzhang.com/tag/topk)
+-   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
+-   Tag: [topk](https://code.dennyzhang.com/tag/topk)
 
 ---
 
@@ -28,7 +28,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-elements
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/top-k-frequent-elements
+    ## Blog link: https://code.dennyzhang.com/top-k-frequent-elements
     ## Basic Ideas: priority queue: heapq
     ##
     ## Complexity:

@@ -8,7 +8,7 @@ Path Sum III
 ---
 
 Similar Problems:  
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
@@ -44,4 +44,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/path-sum-iii/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/path-sum-iii
+    ## Blog link: https://code.dennyzhang.com/path-sum-iii

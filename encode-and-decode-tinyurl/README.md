@@ -8,7 +8,7 @@ Encode and Decode TinyURL
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -22,7 +22,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/encode-and-decode-tinyu
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/encode-and-decode-tinyurl
+    ## Blog link: https://code.dennyzhang.com/encode-and-decode-tinyurl
     class Codec:
         def __init__(self):
             self.d = {}

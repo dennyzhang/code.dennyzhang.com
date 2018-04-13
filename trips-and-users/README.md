@@ -8,7 +8,7 @@ Trips and Users
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -60,7 +60,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/trips-and-users/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/trips-and-users
+    ## Blog link: https://code.dennyzhang.com/trips-and-users
     select t1.Day as Day, round(COALESCE(t2.cancel_count, 0)/t1.total_count, 2) as 'Cancellation Rate' from
     (select Trips.Request_at as Day, count(1) as total_count
     from Trips inner join Users

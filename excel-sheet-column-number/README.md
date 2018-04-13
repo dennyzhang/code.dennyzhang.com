@@ -25,7 +25,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/excel-sheet-column-numb
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/excel-sheet-column-number
+    ## Blog link: https://code.dennyzhang.com/excel-sheet-column-number
     ## Basic Ideas: Convert 26 bits
     ## Complexity: Time O(n), Space, O(1)
     class Solution(object):

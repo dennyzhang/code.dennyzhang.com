@@ -8,9 +8,9 @@ Gray Code
 ---
 
 Similar Problems:  
--   [Lexicographical Numbers](https://brain.dennyzhang.com/lexicographical-numbers)
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Lexicographical Numbers](https://code.dennyzhang.com/lexicographical-numbers)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -38,7 +38,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/gray-code/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/gray-code
+    ## Blog link: https://code.dennyzhang.com/gray-code
     class Solution:
         def grayCode(self, n):
             """

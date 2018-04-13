@@ -8,7 +8,7 @@ Identity the poison bucket with mininum pigs
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://brain.dennyzhang.com/review-math) Tag: [math](https://brain.dennyzhang.com/tag/math)
+-   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/poor-pigs/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/poor-pigs
+    ## Blog link: https://code.dennyzhang.com/poor-pigs
     class Solution(object):
         def poorPigs(self, buckets, minutesToDie, minutesToTest):
             """

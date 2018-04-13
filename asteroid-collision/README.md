@@ -8,7 +8,7 @@ Asteroid Collision
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -62,7 +62,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/asteroid-collision/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/asteroid-collision
+    ## Blog link: https://code.dennyzhang.com/asteroid-collision
     ## Basic Ideas: stack
     ##       Scan from left to right. 
     ##       If the element is positive, push

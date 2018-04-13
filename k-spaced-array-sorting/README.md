@@ -32,4 +32,4 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/k-spaced-array-sor
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/k-spaced-array-sorting
+    // Blog link: https://code.dennyzhang.com/k-spaced-array-sorting

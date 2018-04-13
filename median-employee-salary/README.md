@@ -8,10 +8,10 @@ Median Employee Salary
 ---
 
 Similar Problems:  
--   [Find Median Given Frequency of Numbers](https://brain.dennyzhang.com/find-median-given-frequency-of-numbers)
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql)
--   [Review: Median Problems](https://brain.dennyzhang.com/review-median)
--   Tag: [getmedian](https://brain.dennyzhang.com/tag/getmedian), [#sql](https://brain.dennyzhang.com/tag/sql)
+-   [Find Median Given Frequency of Numbers](https://code.dennyzhang.com/find-median-given-frequency-of-numbers)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql)
+-   [Review: Median Problems](https://code.dennyzhang.com/review-median)
+-   Tag: [getmedian](https://code.dennyzhang.com/tag/getmedian), [#sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -57,7 +57,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/median-employee-salary/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/median-employee-salary
+    ## Blog link: https://code.dennyzhang.com/median-employee-salary
     select t1.Id as Id, t1.Company, t1.Salary
     from Employee as t1 inner join Employee as t2
     on t1.Company = t2.Company

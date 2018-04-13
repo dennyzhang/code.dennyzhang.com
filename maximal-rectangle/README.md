@@ -8,9 +8,9 @@ Maximal Rectangle
 ---
 
 Similar Problems:  
--   [Leetcode: Largest Rectangle in Histogram](https://brain.dennyzhang.com/largest-rectangle-in-histogram)
--   [Review: Monotone Stack Or Monotone Queue Problems](https://brain.dennyzhang.com/review-monotone), Tag: [monotone](https://brain.dennyzhang.com/tag/monotone)
--   [Review: Rectangle Problems](https://brain.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://brain.dennyzhang.com/tag/rectangle)
+-   [Leetcode: Largest Rectangle in Histogram](https://code.dennyzhang.com/largest-rectangle-in-histogram)
+-   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
+-   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
 
 ---
 
@@ -31,9 +31,9 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximal-rectangle/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximal-rectangle
+    ## Blog link: https://code.dennyzhang.com/maximal-rectangle
     ## Basic Ideas: monotone stack
-    ##       Based on another problem: https://brain.dennyzhang.com/largest-rectangle-in-histogram
+    ##       Based on another problem: https://code.dennyzhang.com/largest-rectangle-in-histogram
     ##
     ##       For each row, get the height
     ##       Find the max region of each row. Then get the global max

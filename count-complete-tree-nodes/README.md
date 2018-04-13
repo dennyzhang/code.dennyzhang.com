@@ -8,7 +8,7 @@ Count Complete Tree Nodes
 ---
 
 Similar Problems:  
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
@@ -23,7 +23,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-complete-tree-nod
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/count-complete-tree-nodes
+    ## Blog link: https://code.dennyzhang.com/count-complete-tree-nodes
     ## Basic Ideas: Cut the examine dataset into half
     ##              Check height of sub-tree and right-tree
     ##              For each divide-conquer, one half will be solved without recursive

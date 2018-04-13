@@ -8,8 +8,8 @@ Design Compressed String Iterator
 ---
 
 Similar Problems:  
--   [Basic Calculator](https://brain.dennyzhang.com/basic-calculator)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Basic Calculator](https://code.dennyzhang.com/basic-calculator)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -45,7 +45,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-compressed-strin
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/design-compressed-string-iterator
+    ## Blog link: https://code.dennyzhang.com/design-compressed-string-iterator
     ## Basic Ideas:
     ##
     ## Complexity:

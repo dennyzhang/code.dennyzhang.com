@@ -8,9 +8,9 @@ Domino and Tromino Tiling
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
--   [Review: mod Problems](https://brain.dennyzhang.com/review-mod)
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring), [#mod](https://brain.dennyzhang.com/tag/mod), [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   [Review: mod Problems](https://code.dennyzhang.com/review-mod)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#mod](https://code.dennyzhang.com/tag/mod), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -44,7 +44,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/domino-and-tromino-tili
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/domino-and-tromino-tiling
+    ## Blog link: https://code.dennyzhang.com/domino-and-tromino-tiling
     ## Basic Ideas: dynamic programming
     ##
     ## Complexity: Time O(n), Space O(1)

@@ -8,8 +8,8 @@ Circular Array Loop
 ---
 
 Similar Problems:  
--   Tag: [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
--   [Review: Game Problems](https://brain.dennyzhang.com/review-game), [Tag: #game](https://brain.dennyzhang.com/tag/game)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/circular-array-loop/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/circular-array-loop
+    ## Blog link: https://code.dennyzhang.com/circular-array-loop
     ## Basic Ideas: Loop from left to right
     ##        For current check, mark all visited element as 0
     ##        If the next candidate position is 0, we get a loop

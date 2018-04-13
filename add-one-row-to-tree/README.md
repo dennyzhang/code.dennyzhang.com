@@ -65,7 +65,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/add-one-row-to-tree/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/add-one-row-to-tree
+    ## Blog link: https://code.dennyzhang.com/add-one-row-to-tree
     ## Basic Ideas: BFS
     ##              Find nodes of d-1 level
     ##              For each add left node or right node, if necessary

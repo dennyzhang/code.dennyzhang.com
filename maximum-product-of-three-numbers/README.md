@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-product-of-thre
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-product-of-three-numbers
+    ## Blog link: https://code.dennyzhang.com/maximum-product-of-three-numbers
     ## Basic Ideas: The biggest number will definitley exists in the target combination.
     ##              Why? b>c and a>0, then b*a>c*a
     ##              Let's say (p1, p2, p3) is the target. And the biggest number p4 is not in the combination.

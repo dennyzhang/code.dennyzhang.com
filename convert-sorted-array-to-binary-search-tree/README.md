@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-array-to
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/convert-sorted-array-to-binary-search-tree
+    ## Blog link: https://code.dennyzhang.com/convert-sorted-array-to-binary-search-tree
     ## Basic Ideas: Find the middle node
     ## Complexity: Time O(n), Space O(1)
     

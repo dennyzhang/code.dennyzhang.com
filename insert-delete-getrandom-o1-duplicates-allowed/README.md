@@ -8,8 +8,8 @@ Insert Delete GetRandom O(1) - Duplicates allowed
 ---
 
 Similar Problems:  
--   [Max Stack](https://brain.dennyzhang.com/max-stack)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Max Stack](https://code.dennyzhang.com/max-stack)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -49,4 +49,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
+    ## Blog link: https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed

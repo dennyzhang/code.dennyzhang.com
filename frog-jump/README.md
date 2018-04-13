@@ -8,7 +8,7 @@ Frog Jump
 ---
 
 Similar Problems:  
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming),  [#bfs](https://brain.dennyzhang.com/tag/bfs)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
@@ -44,8 +44,8 @@ Example
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/frog-jump)  
 
-Credits To: [lintcode.com](https://brain.dennyzhang.com/frog-jump)  
+Credits To: [lintcode.com](https://code.dennyzhang.com/frog-jump)  
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://brain.dennyzhang.com/frog-jump
+    // Blog link: https://code.dennyzhang.com/frog-jump

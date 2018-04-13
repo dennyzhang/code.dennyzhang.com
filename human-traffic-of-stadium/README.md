@@ -8,7 +8,7 @@ Human Traffic of Stadium
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -51,7 +51,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/human-traffic-of-stadiu
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/human-traffic-of-stadium
+    ## Blog link: https://code.dennyzhang.com/human-traffic-of-stadium
     SET @group_number=0;
     
     select distinct stadium.id, stadium.date, stadium.people

@@ -8,10 +8,10 @@ Valid Word Abbreviation
 ---
 
 Similar Problems:  
--   [Flip Game](https://brain.dennyzhang.com/flip-game)
--   [Flatten Nested List Iterator](https://brain.dennyzhang.com/flatten-nested-list-iterator)
--   [Tag: #string](https://brain.dennyzhang.com/tag/string)
--   [Tag: #classic](https://brain.dennyzhang.com/tag/classic)
+-   [Flip Game](https://code.dennyzhang.com/flip-game)
+-   [Flatten Nested List Iterator](https://code.dennyzhang.com/flatten-nested-list-iterator)
+-   [Tag: #string](https://code.dennyzhang.com/tag/string)
+-   [Tag: #classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -43,7 +43,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-word-abbreviation
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/valid-word-abbreviation
+    ## Blog link: https://code.dennyzhang.com/valid-word-abbreviation
     ## Basic Ideas: two pointer
     ## Complexity: Time O(n), Space O(1)
     class Solution:

@@ -8,9 +8,9 @@ Maximum Swap
 ---
 
 Similar Problems:  
--   [Swap Adjacent in LR String](https://brain.dennyzhang.com/swap-adjacent-in-lr-string)
--   [Global and Local Inversions](https://brain.dennyzhang.com/global-and-local-inversions)
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   [Swap Adjacent in LR String](https://code.dennyzhang.com/swap-adjacent-in-lr-string)
+-   [Global and Local Inversions](https://code.dennyzhang.com/global-and-local-inversions)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-swap/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-swap
+    ## Blog link: https://code.dennyzhang.com/maximum-swap
     ## Basic Ideas: counter with [0, 1, 2, ... 9]
     ##
     ## Complexity: Time O(n), Space O(1)

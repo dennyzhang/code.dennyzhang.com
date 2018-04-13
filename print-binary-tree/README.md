@@ -8,7 +8,7 @@ Print Binary Tree
 ---
 
 Similar Problems:  
--   [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -65,7 +65,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/print-binary-tree/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/print-binary-tree
+    ## Blog link: https://code.dennyzhang.com/print-binary-tree
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

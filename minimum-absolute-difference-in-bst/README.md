@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-absolute-differ
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/minimum-absolute-difference-in-bst
+    ## Blog link: https://code.dennyzhang.com/minimum-absolute-difference-in-bst
     ## Basic Ideas: In-order trasveral
     ##
     # Definition for a binary tree node.
@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
                         node = node.left
             return res
     
-        ## Blog link: https://brain.dennyzhang.com/minimum-absolute-difference-in-bst
+        ## Blog link: https://code.dennyzhang.com/minimum-absolute-difference-in-bst
     ## Basic Ideas:
         ##         For the target pair, it won't be in two sub-trees.
         ##         So it will be parent-child.

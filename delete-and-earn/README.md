@@ -8,7 +8,7 @@ Delete and Earn
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://brain.dennyzhang.com/category/basic)
+-   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
 
@@ -46,4 +46,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/delete-and-earn/descrip
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/delete-and-earn
+    ## Blog link: https://code.dennyzhang.com/delete-and-earn

@@ -8,8 +8,8 @@ Friend Requests II: Who Has the Most Friends
 ---
 
 Similar Problems:  
--   [Friend Requests I: Overall Acceptance Rate](https://brain.dennyzhang.com/friend-requests-i-overall-acceptance-rate)
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Friend Requests I: Overall Acceptance Rate](https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -45,7 +45,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/friend-requests-ii-who-
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/friend-requests-ii-who-has-the-most-friends
+    ## Blog link: https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends
     select t.id, sum(t.num) as num
     from (
           (select requester_id as id, count(1) as num

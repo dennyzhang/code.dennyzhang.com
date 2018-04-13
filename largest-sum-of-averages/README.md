@@ -8,8 +8,8 @@ Largest Sum of Averages
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://brain.dennyzhang.com/review-dynamicprogramming)
--   Tag: [#dynamicprogramming](https://brain.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -41,4 +41,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/largest-sum-of-averages
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/largest-sum-of-averages
+    ## Blog link: https://code.dennyzhang.com/largest-sum-of-averages

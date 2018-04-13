@@ -8,7 +8,7 @@ Linked List Random Node
 ---
 
 Similar Problems:  
--   Tag: [#reservoirsampling](https://brain.dennyzhang.com/tag/reservoirsampling)
+-   Tag: [#reservoirsampling](https://code.dennyzhang.com/tag/reservoirsampling)
 
 ---
 
@@ -34,7 +34,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-random-node
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/linked-list-random-node
+    ## Blog link: https://code.dennyzhang.com/linked-list-random-node
     ## Basic Ideas: Reservoir Sampling
     ##      Choose k element from a huge list without knowing the length
     ##

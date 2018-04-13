@@ -8,9 +8,9 @@ Maximum Distance in Arrays
 ---
 
 Similar Problems:  
--   [Range Addition](https://brain.dennyzhang.com/range-addition)
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#inspiring](https://brain.dennyzhang.com/tag/inspiring)
+-   [Range Addition](https://code.dennyzhang.com/range-addition)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-distance-in-arr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/maximum-distance-in-arrays
+    ## Blog link: https://code.dennyzhang.com/maximum-distance-in-arrays
     ## Basic Ideas:
     ##     Get the global min and global max.
     ##     If they happens in different rows, return directly.

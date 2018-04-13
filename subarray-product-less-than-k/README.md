@@ -8,9 +8,9 @@ Subarray Product Less Than K
 ---
 
 Similar Problems:  
--   [Minimum Size Subarray Sum](https://brain.dennyzhang.com/minimum-size-subarray-sum)
--   [Subarray Sum Equals K](https://brain.dennyzhang.com/subarray-sum-equals-k)
--   [Review: TwoPointers Problems](https://brain.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://brain.dennyzhang.com/tag/twopointer)
+-   [Minimum Size Subarray Sum](https://code.dennyzhang.com/minimum-size-subarray-sum)
+-   [Subarray Sum Equals K](https://code.dennyzhang.com/subarray-sum-equals-k)
+-   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
 
@@ -37,7 +37,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subarray-product-less-t
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/subarray-product-less-than-k
+    ## Blog link: https://code.dennyzhang.com/subarray-product-less-than-k
     ## Basic Ideas: two pointers
     ##     All nubmers are positive integers. 
     ##     So if we enlarge the window, the suarray product will increase.

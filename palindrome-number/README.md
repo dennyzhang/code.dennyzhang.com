@@ -8,7 +8,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -32,7 +32,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-number/descr
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/palindrome-number
+    ## Blog link: https://code.dennyzhang.com/palindrome-number
     ## Basic Ideas:  Generate a new integer Y from right digit to left digit
     ##               Then compare it with X
     ##         1234321: 1 -> 12 -> 13 -> 134 ...

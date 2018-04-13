@@ -8,8 +8,8 @@ Populating Next Right Pointers in Each Node
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/populating-next-right-p
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/populating-next-right-pointers-in-each-node
+    ## Blog link: https://code.dennyzhang.com/populating-next-right-pointers-in-each-node
     ## Basic Ideas: Process nodes: from top to down, left to right
     ##              How to process:
     ##                 p.left.next = p.right

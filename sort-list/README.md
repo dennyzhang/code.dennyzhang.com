@@ -8,7 +8,7 @@ Sort linked list
 ---
 
 Similar Problems:  
--   [Review: Recursive Problems](https://brain.dennyzhang.com/review-recursive), [Tag: #recursive](https://brain.dennyzhang.com/tag/recursive)
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
@@ -20,7 +20,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-list/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/sort-list
+    ## Blog link: https://code.dennyzhang.com/sort-list
     ## Basic Ideas: Merge sort. Recursive
     ##       1. Divide the list into two half
     ##       2. Merge sort these two

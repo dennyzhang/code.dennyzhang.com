@@ -8,7 +8,7 @@ Battleships in a Board
 ---
 
 Similar Problems:  
--   [Tag: #array](https://brain.dennyzhang.com/tag/array)
+-   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -40,7 +40,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/battleships-in-a-board/
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/battleships-in-a-board
+    ## Blog link: https://code.dennyzhang.com/battleships-in-a-board
     ## Basic Ideas
     ##   Check from left to right, top to down
     ##   If current digit is '1' and above digit is not '1', we keep moving left

@@ -8,7 +8,7 @@ Identity number which appears exactly once.
 ---
 
 Similar Problems:  
--   Tag: [#binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -54,7 +54,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-pruning/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/binary-tree-pruning
+    ## Blog link: https://code.dennyzhang.com/binary-tree-pruning
     ## Basic Ideas: post-order
     ##
     ## Complexity: Time O(n), Space O(1)
@@ -80,7 +80,7 @@ Leave me comments, if you have better ways to solve.
             else:
                 return root
 
-    // Blog link: https://brain.dennyzhang.com/binary-tree-pruning
+    // Blog link: https://code.dennyzhang.com/binary-tree-pruning
     // Basic Ideas: post-order
     /**
      * Definition for a binary tree node.

@@ -8,8 +8,8 @@ Basic Calculator III
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails), [#stack](https://brain.dennyzhang.com/tag/stack)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#stack](https://code.dennyzhang.com/tag/stack)
 
 ---
 
@@ -35,7 +35,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/basic-calculator-iii/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/basic-calculator-iii
+    ## Blog link: https://code.dennyzhang.com/basic-calculator-iii
     ## Basic Ideas: +- yield to */
     ##
     ##           When we found one operator as +/, look for the next operator

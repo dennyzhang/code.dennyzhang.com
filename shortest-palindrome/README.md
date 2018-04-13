@@ -8,7 +8,7 @@ Shortest Palindrome
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://brain.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://brain.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-palindrome/des
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/shortest-palindrome
+    ## Blog link: https://code.dennyzhang.com/shortest-palindrome
     ## Basic Ideas: Treat each character as the middle.
     ##              The length of palindrome might be odd or even
     ##

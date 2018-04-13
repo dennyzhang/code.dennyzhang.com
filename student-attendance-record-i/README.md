@@ -8,8 +8,8 @@ Check string pattern
 ---
 
 Similar Problems:  
--   [Student Attendance Record II](https://brain.dennyzhang.com/student-attendance-record-ii)
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [Student Attendance Record II](https://code.dennyzhang.com/student-attendance-record-ii)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -36,7 +36,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-reco
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/student-attendance-record-i
+    ## Blog link: https://code.dennyzhang.com/student-attendance-record-i
     ## Basic Ideas: One pass
     ##              absent: counter of absent records
     ##              max_continuous_late: counter of continous late

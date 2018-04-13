@@ -8,7 +8,7 @@ Get Highest Answer Rate Question
 ---
 
 Similar Problems:  
--   [Review: SQL Problems](https://brain.dennyzhang.com/review-sql), [Tag: #sql](https://brain.dennyzhang.com/tag/sql)
+-   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
 
@@ -49,7 +49,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/get-highest-answer-rate
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/get-highest-answer-rate-question
+    ## Blog link: https://code.dennyzhang.com/get-highest-answer-rate-question
     select question_id as survey_log
     from (
         select question_id, 

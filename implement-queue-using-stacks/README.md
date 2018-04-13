@@ -8,7 +8,7 @@ Implement Queue using Stacks
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -30,7 +30,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-queue-using-s
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/implement-queue-using-stacks
+    ## Blog link: https://code.dennyzhang.com/implement-queue-using-stacks
     class MyQueue(object):
     
         ## Idea: Use 2 stack. When pop, move to stack1, then stack2

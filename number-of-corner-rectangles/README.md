@@ -8,7 +8,7 @@ Number Of Corner Rectangles
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://brain.dennyzhang.com/tag/linkedlist)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
@@ -54,4 +54,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-corner-rectan
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/number-of-corner-rectangles
+    ## Blog link: https://code.dennyzhang.com/number-of-corner-rectangles

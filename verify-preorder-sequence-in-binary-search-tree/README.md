@@ -8,8 +8,8 @@ Verify Preorder Sequence in Binary Search Tree
 ---
 
 Similar Problems:  
--   [Verify Preorder Serialization of a Binary Tree](https://brain.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree)
--   [Review: Binary Tree Problems](https://brain.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://brain.dennyzhang.com/tag/binarytree)
+-   [Verify Preorder Serialization of a Binary Tree](https://code.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree)
+-   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
@@ -26,7 +26,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/verify-preorder-sequenc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree
+    ## Blog link: https://code.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree
     import sys
     class Solution(object):
         def verifyPreorder(self, preorder):

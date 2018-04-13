@@ -8,8 +8,8 @@ Edit Distance
 ---
 
 Similar Problems:  
--   [One Edit Distance](https://brain.dennyzhang.com/one-edit-distance)
--   [Review: String Problems](https://brain.dennyzhang.com/review-string), Tag: [#string](https://brain.dennyzhang.com/tag/string)
+-   [One Edit Distance](https://code.dennyzhang.com/one-edit-distance)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -27,4 +27,4 @@ Credits To: [leetcode.com](https://leetcode.com/problems/edit-distance/descripti
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/edit-distance
+    ## Blog link: https://code.dennyzhang.com/edit-distance

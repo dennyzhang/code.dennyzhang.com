@@ -8,8 +8,8 @@ Reorder List
 ---
 
 Similar Problems:  
--   [Review: Problems With Many Details](https://brain.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://brain.dennyzhang.com/tag/manydetails)
+-   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -27,7 +27,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reorder-list/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/reorder-list
+    ## Blog link: https://code.dennyzhang.com/reorder-list
     ## Basic Ideas:
     ##             Find the right sub-list after n/2 node
     ##             Reverse the right sub-list

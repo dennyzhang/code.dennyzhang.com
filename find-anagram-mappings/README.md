@@ -33,7 +33,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-anagram-mappings/d
 Leave me comments, if you have better ways to solve.  
 
     #!/usr/bin/env python
-    ## Blog link: https://brain.dennyzhang.com/find-anagram-mappings
+    ## Blog link: https://code.dennyzhang.com/find-anagram-mappings
     ## Basic Ideas: 
     ## Complexity: Time O(n*n), Space O(1)
     ## Assumption: whether I can change B?

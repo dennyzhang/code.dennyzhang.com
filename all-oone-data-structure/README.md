@@ -8,9 +8,9 @@ All O\`one Data Structure
 ---
 
 Similar Problems:  
--   [Insert Delete GetRandom O(1)](https://brain.dennyzhang.com/insert-delete-getrandom-o1)
--   [LRU Cache](https://brain.dennyzhang.com/lru-cache)
--   [Review: Object-Oriented Design Problems](https://brain.dennyzhang.com/review-oodesign), Tag: [oodesign](https://brain.dennyzhang.com/tag/oodesign)
+-   [Insert Delete GetRandom O(1)](https://code.dennyzhang.com/insert-delete-getrandom-o1)
+-   [LRU Cache](https://code.dennyzhang.com/lru-cache)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
@@ -29,7 +29,7 @@ Credits To: [leetcode.com](https://leetcode.com/problems/all-oone-data-structure
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://brain.dennyzhang.com/all-oone-data-structure
+    ## Blog link: https://code.dennyzhang.com/all-oone-data-structure
     ## Basic Ideas:
     ##          hasmap: save key and values
     ##          How to achieve GetMinKey() with O(1)?
