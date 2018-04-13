@@ -8,7 +8,7 @@
 Ternary Expression Parser
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/dfs][#dfs]], [[https://brain.dennyzhang.com/tag/stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/stack][#stack]]
 ---------------------------------------------------------------------
 
 Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume that the given expression is valid and only consists of digits 0-9, ?, :, T and F (T and F represent True and False respectively).
@@ -63,6 +63,6 @@ Credits To: [[url-external:https://leetcode.com/problems/ternary-expression-pars
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/ternary-expression-parser
+// Blog link: https://code.dennyzhang.com/ternary-expression-parser
 
 #+END_SRC

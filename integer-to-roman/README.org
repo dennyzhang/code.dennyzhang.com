@@ -8,8 +8,8 @@
 Integer to Roman
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/roman-to-integer][Roman to Integer]]
-- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+- [[https://code.dennyzhang.com/roman-to-integer][Roman to Integer]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 Given an integer, convert it to a roman numeral.
 
@@ -22,7 +22,7 @@ Credits To: [[url-external:https://leetcode.com/problems/integer-to-roman/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/integer-to-roman
+// Blog link: https://code.dennyzhang.com/integer-to-roman
 // Basic Ideas:
 //    Symbol  I  V  X   L   C     D    M
 //    Value   1  5  10  50  100  500  1,000

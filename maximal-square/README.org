@@ -8,9 +8,9 @@
 Maximal Square
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/unique-paths][Unique Paths]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://code.dennyzhang.com/unique-paths][Unique Paths]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
 
@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 
 <<<<<<< HEAD
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/maximal-square
+// Blog link: https://code.dennyzhang.com/maximal-square
 // Basic Ideas: dynamic programming
 //   one pass
 //

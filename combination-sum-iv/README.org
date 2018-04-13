@@ -8,8 +8,8 @@
 Combination Sum IV
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
 

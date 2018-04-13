@@ -8,8 +8,8 @@
 Roman to Integer
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/integer-to-roman][Integer to Roman]]
-- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+- [[https://code.dennyzhang.com/integer-to-roman][Integer to Roman]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
 Given a roman numeral, convert it to an integer.
@@ -27,7 +27,7 @@ Reference:
 - [[url-external:https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system][wikipedia: Roman numerals]]
 - [[url-external:http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm][Roman Numerals Chart]]
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/roman-to-integer
+// Blog link: https://code.dennyzhang.com/roman-to-integer
 // Related reading: 
 // Basic Ideas: Examine from left to right.
 //   If current is smaller than the next, substract. 
