@@ -8,7 +8,7 @@
 Median Employee Salary
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Write a query to print the sum of all total investment values in 2016 (TIV_2016), to a scale of 2 decimal places, for all policy holders who meet the following criteria:
 
@@ -62,7 +62,7 @@ Credits To: [[url-external:https://leetcode.com/problems/investments-in-2016/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/investments-in-2016
+## Blog link: https://code.dennyzhang.com/investments-in-2016
 select sum(TIV_2016) as TIV_2016
 from insurance
 where concat(LAT, ',', LON)

@@ -8,7 +8,7 @@
 Number of Matching Subsequences
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/subsequence][Tag: #subsequence]]
+- [[https://code.dennyzhang.com/tag/subsequence][Tag: #subsequence]]
 ---------------------------------------------------------------------
 Given string S and a dictionary of words words, find the number of words[i] that is a subsequence of S.
 
@@ -35,7 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-matching-subs
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/number-of-matching-subsequences
+## Blog link: https://code.dennyzhang.com/number-of-matching-subsequences
 ## Basic Ideas:
 ## Complexity: Time O(n*m), Space O(1)
 class Solution:

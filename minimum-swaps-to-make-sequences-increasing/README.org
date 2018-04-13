@@ -8,8 +8,8 @@
 Minimum Swaps To Make Sequences Increasing
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 We have two integer sequences A and B of the same non-zero length.
 
@@ -44,7 +44,7 @@ Credits To: [[url-external:https://leetcode.com/problems/minimum-swaps-to-make-s
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/minimum-swaps-to-make-sequences-increasing
+## Blog link: https://code.dennyzhang.com/minimum-swaps-to-make-sequences-increasing
 ## Basic Ideas: dynamic programming
 ##
 ##    If examining two adjacent columns, there are only 2 combinations!

@@ -8,8 +8,8 @@
 Split Array With Same Average
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/matchsticks-to-square][Matchsticks to Square]]
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]], [[https://brain.dennyzhang.com/tag/array][#array]]
+- [[https://code.dennyzhang.com/matchsticks-to-square][Matchsticks to Square]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 In a given integer array A, we must move every element of A to either list B or list C. (B and C initially start empty.)
 
@@ -35,6 +35,6 @@ Credits To: [[url-external:https://leetcode.com/problems/split-array-with-same-a
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/split-array-with-same-average
+## Blog link: https://code.dennyzhang.com/split-array-with-same-average
 
 #+END_SRC

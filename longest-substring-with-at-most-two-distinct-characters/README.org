@@ -8,8 +8,8 @@
 Longest Substring with At Most Two Distinct Characters
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters][Longest Substring with At Most K Distinct Characters]]
-- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
+- [[https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters][Longest Substring with At Most K Distinct Characters]]
+- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
 ---------------------------------------------------------------------
 Given a string, find the length of the longest substring T that contains at most 2 distinct characters.
 
@@ -24,7 +24,7 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-substring-with-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters
+## Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters
 ## Basic Ideas:
 ## Complexity: Time O(n), Space O(1)
 class Solution:

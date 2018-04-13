@@ -8,7 +8,7 @@
 Second Highest Salary
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Table number contains many numbers in column num including duplicated ones.
 Can you write a SQL query to find the biggest number, which only appears once.
@@ -44,7 +44,7 @@ Credits To: [[url-external:https://leetcode.com/problems/biggest-single-number/d
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/biggest-single-number
+## Blog link: https://code.dennyzhang.com/biggest-single-number
 select ifnull((
     select num
     from number

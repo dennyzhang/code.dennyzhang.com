@@ -8,9 +8,9 @@
 Valid Perfect Square
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
-- [[https://brain.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/math][math]], [[https://brain.dennyzhang.com/tag/sqrt][sqrt]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 Given a positive integer num, write a function which returns True if num is a perfect square else False.
 
@@ -36,7 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-perfect-square/de
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/valid-perfect-square
+## Blog link: https://code.dennyzhang.com/valid-perfect-square
 ## Basic Ideas: Binary search
 ##             Search in between [1^2, 2^2, 3^2, ... num^2]
 ##     But we have to use long for mid to avoid *mid\mid from overflow

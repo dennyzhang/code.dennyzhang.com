@@ -8,7 +8,7 @@
 Minimum Path Sum
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
 
@@ -28,7 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/minimum-path-sum/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/minimum-path-sum
+## Blog link: https://code.dennyzhang.com/minimum-path-sum
 ## Basic Ideas:
 ##           For point grid[i][j], think about the prevoius step of the minimize path
 ##           It should come from either grid[i-1][j] or grid[i][j-1].

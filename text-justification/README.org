@@ -8,7 +8,7 @@
 Text Justification
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
 
@@ -42,5 +42,5 @@ Credits To: [[url-external:https://leetcode.com/problems/text-justification/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/text-justification
+## Blog link: https://code.dennyzhang.com/text-justification
 #+END_SRC

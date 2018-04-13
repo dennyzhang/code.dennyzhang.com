@@ -8,8 +8,8 @@
 Design Hit Counter
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/logger-rate-limiter][Logger Rate Limiter]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/logger-rate-limiter][Logger Rate Limiter]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a hit counter which counts the number of hits received in the past 5 minutes.
 
@@ -53,7 +53,7 @@ Credits To: [[url-external:https://leetcode.com/problems/design-hit-counter/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/design-hit-counter
+## Blog link: https://code.dennyzhang.com/design-hit-counter
 ## Basic Ideas: hashmap
 ##
 ## Complexity: Time O(1), Space O(1)

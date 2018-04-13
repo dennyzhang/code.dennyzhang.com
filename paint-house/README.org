@@ -8,8 +8,8 @@
 Paint House
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/paint-fence][Paint Fence]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/paint-fence][Paint Fence]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 There are a row of n houses, each house can be painted with one of the three colors: red, blue or green. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color.
 
@@ -31,7 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/paint-house/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/paint-house
+## Blog link: https://code.dennyzhang.com/paint-house
 ## Basic Ideas: Dyanmic programming
 ##     For house after house1, it can only have 3 possilities.
 ##

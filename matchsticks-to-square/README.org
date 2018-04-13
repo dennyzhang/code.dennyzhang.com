@@ -8,8 +8,8 @@
 Matchsticks to Square
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/split-array-with-same-average][Split Array With Same Average]]
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/split-array-with-same-average][Split Array With Same Average]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Remember the story of Little Match Girl? By now, you know exactly what matchsticks the little match girl has, please find out a way you can make one square by using up all those matchsticks. You should not break any stick, but you can link them up, and each matchstick must be used exactly one time.
 
@@ -42,6 +42,6 @@ Credits To: [[url-external:https://leetcode.com/problems/matchsticks-to-square/d
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/matchsticks-to-square
+## Blog link: https://code.dennyzhang.com/matchsticks-to-square
 
 #+END_SRC

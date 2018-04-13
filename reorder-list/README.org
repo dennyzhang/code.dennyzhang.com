@@ -8,8 +8,8 @@
 Reorder List
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a singly linked list L: L0 -> L1 -> ... -> Ln-1 -> Ln,
 reorder it to: L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 -> ...
@@ -26,7 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/reorder-list/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/reorder-list
+## Blog link: https://code.dennyzhang.com/reorder-list
 ## Basic Ideas:
 ##             Find the right sub-list after n/2 node
 ##             Reverse the right sub-list

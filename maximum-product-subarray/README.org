@@ -8,8 +8,8 @@
 Maximum Product Subarray
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
-- [[https://brain.dennyzhang.com/tag/subarray][Tag: #subarray]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/tag/subarray][Tag: #subarray]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest product.
 
@@ -23,6 +23,6 @@ Credits To: [[url-external:https://leetcode.com/problems/maximum-product-subarra
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/maximum-product-subarray
+## Blog link: https://code.dennyzhang.com/maximum-product-subarray
 
 #+END_SRC

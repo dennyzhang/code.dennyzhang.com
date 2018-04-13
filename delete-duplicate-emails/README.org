@@ -8,7 +8,7 @@
 Delete Duplicate Emails
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
 #+BEGIN_EXAMPLE
@@ -39,7 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/delete-duplicate-emails
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/delete-duplicate-emails
+## Blog link: https://code.dennyzhang.com/delete-duplicate-emails
 delete t1 from Person as t1 inner join Person as t2
 on t1.Email = t2.Email
 where t1.Id > t2.Id

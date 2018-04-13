@@ -8,7 +8,7 @@
 Find Eventual Safe States
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]]
 ---------------------------------------------------------------------
 In a directed graph, we start at some node and every turn, walk along a directed edge of the graph.  If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop.
 
@@ -41,6 +41,6 @@ Credits To: [[url-external:https://leetcode.com/problems/find-eventual-safe-stat
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/find-eventual-safe-states
+## Blog link: https://code.dennyzhang.com/find-eventual-safe-states
 
 #+END_SRC

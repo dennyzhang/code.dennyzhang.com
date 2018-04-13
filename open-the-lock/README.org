@@ -8,9 +8,9 @@
 Open the Lock
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/word-ladder][Word Ladder]]
-- [[https://brain.dennyzhang.com/minimum-genetic-mutation][Minimum Genetic Mutation]]
-- [[https://brain.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://brain.dennyzhang.com/tag/bfs][Tag: #bfs]]
+- [[https://code.dennyzhang.com/word-ladder][Word Ladder]]
+- [[https://code.dennyzhang.com/minimum-genetic-mutation][Minimum Genetic Mutation]]
+- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://code.dennyzhang.com/tag/bfs][Tag: #bfs]]
 ---------------------------------------------------------------------
 You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'. The wheels can rotate freely and wrap around: for example we can turn '9' to be '0', or '0' to be '9'. Each move consists of turning one wheel one slot.
 
@@ -64,7 +64,7 @@ Credits To: [[url-external:https://leetcode.com/problems/open-the-lock/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/open-the-lock
+## Blog link: https://code.dennyzhang.com/open-the-lock
 ## Basic Ideas: BFS
 ##       dead, seen, queue
 ##

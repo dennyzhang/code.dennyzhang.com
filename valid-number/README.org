@@ -8,8 +8,8 @@
 Validate if a given string is numeric.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Validate if a given string is numeric.
 
@@ -27,7 +27,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-number/descriptio
 
 Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/valid-number
+## Blog link: https://code.dennyzhang.com/valid-number
 ## Basic Ideas
 ##      Data clean first
 ##      Make sure it only has valid character

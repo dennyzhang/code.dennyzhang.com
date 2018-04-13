@@ -8,7 +8,7 @@
 Unique Binary Search Trees
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
 #+BEGIN_EXAMPLE
@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/unique-binary-search-tr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/unique-binary-search-trees
+// Blog link: https://code.dennyzhang.com/unique-binary-search-trees
 // Basic Ideas: dynamic programming
 //       Pitfalls: try to compare the values. This direction will make things very complicated
 //

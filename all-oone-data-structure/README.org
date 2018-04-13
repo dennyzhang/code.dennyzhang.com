@@ -8,9 +8,9 @@
 All O`one Data Structure
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/insert-delete-getrandom-o1][Insert Delete GetRandom O(1)]]
-- [[https://brain.dennyzhang.com/lru-cache][LRU Cache]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/insert-delete-getrandom-o1][Insert Delete GetRandom O(1)]]
+- [[https://code.dennyzhang.com/lru-cache][LRU Cache]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Implement a data structure supporting the following operations:
 
@@ -28,7 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/all-oone-data-structure
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/all-oone-data-structure
+## Blog link: https://code.dennyzhang.com/all-oone-data-structure
 ## Basic Ideas:
 ##          hasmap: save key and values
 ##          How to achieve GetMinKey() with O(1)?

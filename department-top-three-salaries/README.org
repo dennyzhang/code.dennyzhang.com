@@ -8,7 +8,7 @@
 Department Top Three Salaries
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees. Every employee has an Id, and there is also a column for the department Id.
 #+BEGIN_EXAMPLE
@@ -55,7 +55,7 @@ Credits To: [[url-external:https://leetcode.com/problems/department-top-three-sa
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/department-top-three-salaries
+## Blog link: https://code.dennyzhang.com/department-top-three-salaries
 select t4.Name as Department, t3.Name as Employee, t3.Salary
 from
     (select t1.Id, t1.Name, t1.Salary, t1.DepartmentId, count(1) as rank

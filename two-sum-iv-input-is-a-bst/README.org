@@ -8,8 +8,8 @@
 Two Sum IV - Input is a BST
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
 #+BEGIN_EXAMPLE
@@ -47,7 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/two-sum-iv-input-is-a-b
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/two-sum-iv-input-is-a-bst
+## Blog link: https://code.dennyzhang.com/two-sum-iv-input-is-a-bst
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

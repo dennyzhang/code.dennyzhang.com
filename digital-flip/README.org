@@ -8,7 +8,7 @@
 Digital Flip
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Give you an array of 01. Find the minimum number of flipping steps so that the array meets the following rules:
 The back of 1 can be either1 or 0, but0 must be followed by 0.
@@ -38,7 +38,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/digital-flip/][lin
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/digital-flip
+## Blog link: https://code.dennyzhang.com/digital-flip
 class Solution:
     """
     @param nums: the array

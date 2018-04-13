@@ -8,7 +8,7 @@
 Customer Placing the Largest Number of Orders
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Query the customer_number from the orders table for the customer who has placed the largest number of orders.
 
@@ -60,7 +60,7 @@ Credits To: [[url-external:https://leetcode.com/problems/customer-placing-the-la
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/customer-placing-the-largest-number-of-orders
+## Blog link: https://code.dennyzhang.com/customer-placing-the-largest-number-of-orders
 
 # assume: only one match
 select customer_number from orders

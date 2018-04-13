@@ -8,7 +8,7 @@
 Continuous Subarray Sum
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/hard][#hard]]
+- Tag: [[https://code.dennyzhang.com/category/hard][#hard]]
 ---------------------------------------------------------------------
 Given a list of non-negative numbers and a target integer k, write a function to check if the array has a continuous subarray of size at least 2 that sums up to the multiple of k, that is, sums up to n*k where n is also an integer.
 
@@ -37,6 +37,6 @@ Credits To: [[url-external:https://leetcode.com/problems/continuous-subarray-sum
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/continuous-subarray-sum
+## Blog link: https://code.dennyzhang.com/continuous-subarray-sum
 
 #+END_SRC

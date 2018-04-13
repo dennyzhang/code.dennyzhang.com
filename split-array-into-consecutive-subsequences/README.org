@@ -8,7 +8,7 @@
 Split Array into Consecutive Subsequences
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 You are given an integer array sorted in ascending order (may contain duplicates), you need to split them into several subsequences, where each subsequences consist of at least 3 consecutive integers. Return whether you can make such a split.
 
@@ -48,6 +48,6 @@ Credits To: [[url-external:https://leetcode.com/problems/split-array-into-consec
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/split-array-into-consecutive-subsequences
+## Blog link: https://code.dennyzhang.com/split-array-into-consecutive-subsequences
 
 #+END_SRC

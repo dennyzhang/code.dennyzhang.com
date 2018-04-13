@@ -8,7 +8,7 @@
 Custom Sort String
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 S and T are strings composed of lowercase letters. In S, no letter occurs more than once.
 
@@ -40,7 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/custom-sort-string/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/custom-sort-string
+## Blog link: https://code.dennyzhang.com/custom-sort-string
 ## Basic Ideas: hashmap
 ##
 ## Complexity: Time O(n), Space O(1)

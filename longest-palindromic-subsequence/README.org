@@ -8,8 +8,8 @@
 Longest Palindromic Subsequence
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
-- [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
 ---------------------------------------------------------------------
 Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.
 
@@ -40,6 +40,6 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-palindromic-sub
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/longest-palindromic-subsequence
+## Blog link: https://code.dennyzhang.com/longest-palindromic-subsequence
 
 #+END_SRC

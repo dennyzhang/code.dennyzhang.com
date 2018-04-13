@@ -8,8 +8,8 @@
 IP to CIDR
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/validate-ip-address][Validate IP Address]]
-- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
+- [[https://code.dennyzhang.com/validate-ip-address][Validate IP Address]]
+- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
 ---------------------------------------------------------------------
 Given a start IP address ip and a number of ips we need to cover n, return a representation of the range as a list (of smallest possible length) of CIDR blocks.
 
@@ -63,6 +63,6 @@ Credits To: [[url-external:https://leetcode.com/problems/ip-to-cidr/description/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/ip-to-cidr
+## Blog link: https://code.dennyzhang.com/ip-to-cidr
 
 #+END_SRC

@@ -8,9 +8,9 @@
 Implement int sqrt(int x).
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
-- [[https://brain.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://brain.dennyzhang.com/tag/sqrt][sqrt]]
+- [[https://code.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
+- [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 Implement int sqrt(int x).
 
@@ -40,7 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sqrtx/description/][lee
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/sqrtx
+## Blog link: https://code.dennyzhang.com/sqrtx
 ## Basic Ideas: Binary search
 ##              Check [1^2, 2^2, 3^2, ... n^2]
 ## Complexity: Time O(log(n)), Space O(1)

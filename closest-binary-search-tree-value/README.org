@@ -8,9 +8,9 @@
 Closest Binary Search Tree Value
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/closest-binary-search-tree-value-ii][Closest Binary Search Tree Value II]]
-- [[https://brain.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://brain.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
-- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
+- [[https://code.dennyzhang.com/closest-binary-search-tree-value-ii][Closest Binary Search Tree Value II]]
+- [[https://code.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://code.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
+- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://code.dennyzhang.com/tag/recursive][Tag: #recursive]]
 ---------------------------------------------------------------------
 Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
 
@@ -25,7 +25,7 @@ Credits To: [[url-external:https://leetcode.com/problems/closest-binary-search-t
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/closest-binary-search-tree-value
+## Blog link: https://code.dennyzhang.com/closest-binary-search-tree-value
 ## Basic Ideas:
 ##    If the exact match, return
 ##    If current node is bigger than the target, we get a starting value.

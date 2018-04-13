@@ -8,7 +8,7 @@
 Baseball Game
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 You're now a baseball game point recorder.
 
@@ -59,7 +59,7 @@ Credits To: [[url-external:https://leetcode.com/problems/baseball-game/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/baseball-game
+## Blog link: https://code.dennyzhang.com/baseball-game
 ## Basic Ideas: stack: only pop when we get a 'D'
 ##
 ##   We may get sequence like: 3 +

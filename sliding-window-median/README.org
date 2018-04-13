@@ -8,8 +8,8 @@
 Sliding Window Median
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/find-median-from-data-stream][Find Median from Data Stream]]
-- [[https://brain.dennyzhang.com/tag/getmedian][Tag: #getmedian]]
+- [[https://code.dennyzhang.com/find-median-from-data-stream][Find Median from Data Stream]]
+- [[https://code.dennyzhang.com/tag/getmedian][Tag: #getmedian]]
 ---------------------------------------------------------------------
 Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 
@@ -47,7 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sliding-window-median/d
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/sliding-window-median
+## Blog link: https://code.dennyzhang.com/sliding-window-median
 class Solution:
     ## Basic Ideas: two heap
     ## Complexity: Time O(n*k), Space O(k)

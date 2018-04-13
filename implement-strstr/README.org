@@ -8,7 +8,7 @@
 Implement strStr()
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Implement strStr().
 
@@ -33,7 +33,7 @@ Credits To: [[url-external:https://leetcode.com/problems/implement-strstr/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/implement-strstr
+## Blog link: https://code.dennyzhang.com/implement-strstr
 ## Idea:
 ## Complexity: Time O(n*k), Space O(1)
 ##    hello, hello

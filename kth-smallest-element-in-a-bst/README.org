@@ -8,7 +8,7 @@
 Kth Smallest Element in a BST
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://brain.dennyzhang.com/tag/classic][Tag: #classic]]
+- [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://code.dennyzhang.com/tag/classic][Tag: #classic]]
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
@@ -19,7 +19,7 @@ Credits To: [[url-external:https://leetcode.com/problems/kth-smallest-element-in
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/kth-smallest-element-in-a-bst
+## Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-bst
 ## Basic Ideas: In-order trasversal
 ## Complexity: O(k), Space O(k)
 # Definition for a binary tree node.

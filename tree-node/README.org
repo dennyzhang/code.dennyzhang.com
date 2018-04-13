@@ -8,7 +8,7 @@
 Tree Node
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Given a table tree, id is identifier of the tree node and p_id is its parent node's id.
 #+BEGIN_EXAMPLE
@@ -67,7 +67,7 @@ Credits To: [[url-external:https://leetcode.com/problems/tree-node/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/tree-node
+## Blog link: https://code.dennyzhang.com/tree-node
 ## Basic Idea: Left join
 # In tree, each node can only one parent or no parent
 ## | id | p_id | id (child) |

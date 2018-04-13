@@ -8,9 +8,9 @@
 Maximum Distance in Arrays
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/range-addition][Range Addition]]
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/range-addition][Range Addition]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given m arrays, and each array is sorted in ascending order. Now you can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers a and b to be their absolute difference |a-b|. Your task is to find the maximum distance.
 
@@ -37,7 +37,7 @@ Credits To: [[url-external:https://leetcode.com/problems/maximum-distance-in-arr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/maximum-distance-in-arrays
+## Blog link: https://code.dennyzhang.com/maximum-distance-in-arrays
 ## Basic Ideas:
 ##     Get the global min and global max.
 ##     If they happens in different rows, return directly.

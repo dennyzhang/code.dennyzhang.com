@@ -8,8 +8,8 @@
 Circular Array Loop
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 You are given an array of positive and negative integers. If a number n at an index is positive, then move forward n steps. Conversely, if it's negative (-n), move backward n steps. Assume the first element of the array is forward next to the last element, and the last element is backward next to the first element. Determine if there is a loop in this array. A loop starts and ends at a particular index with more than 1 element along the loop. The loop must be "forward" or "backward'.
 
@@ -28,7 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/circular-array-loop/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/circular-array-loop
+## Blog link: https://code.dennyzhang.com/circular-array-loop
 ## Basic Ideas: Loop from left to right
 ##        For current check, mark all visited element as 0
 ##        If the next candidate position is 0, we get a loop

@@ -8,7 +8,7 @@
 Fizz Buzz
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
 Write a program that outputs the string representation of numbers from 1 to n.
 
@@ -45,6 +45,6 @@ Credits To: [[url-external:https://leetcode.com/problems/fizz-buzz/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/fizz-buzz
+## Blog link: https://code.dennyzhang.com/fizz-buzz
 
 #+END_SRC

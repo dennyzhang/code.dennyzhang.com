@@ -8,9 +8,9 @@
 Number of Islands
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/island-city][Island City]]
-- [[https://brain.dennyzhang.com/review-graph][Review: Graph Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]], [[https://brain.dennyzhang.com/tag/dfs][#dfs]], [[https://brain.dennyzhang.com/tag/bfs][#bfs]]
+- [[https://code.dennyzhang.com/island-city][Island City]]
+- [[https://code.dennyzhang.com/review-graph][Review: Graph Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 #+BEGIN_EXAMPLE
@@ -40,7 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-islands/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/number-of-islands
+## Blog link: https://code.dennyzhang.com/number-of-islands
 class Solution(object):
     ## Basic Ideas: Avoid duplicate counting.
     ##   Mark all adjacent 1 to X. Thus we can avoid counting one the same island multiple times.

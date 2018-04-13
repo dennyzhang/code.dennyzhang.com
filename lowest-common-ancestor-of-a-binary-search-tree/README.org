@@ -30,7 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/lowest-common-ancestor-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree
+## Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree
 ## Basic Ideas: For BST, get min(p.val, q.val) and max(p.val, q.val)
 ##              Check from the root node
 ##              If both are smaller than root.val, move the left sub-tree

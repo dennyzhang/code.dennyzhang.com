@@ -8,7 +8,7 @@
 Rearrange
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/wiggle-sort][Wiggle Sort]]
+- [[https://code.dennyzhang.com/wiggle-sort][Wiggle Sort]]
 ---------------------------------------------------------------------
 Given an array required to be rearranged, which means all the numbers on the even-numbered bits are less than those on the odd-numbered bits. At the same time, the even-numbered bits are sorted in ascending order, and the odd-numbered bits are also sorted in ascending order.
 
@@ -39,7 +39,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/rearrange/][lintco
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/rearrange
+## Blog link: https://code.dennyzhang.com/rearrange
 class Solution:
     """
     @param nums: the num arrays 

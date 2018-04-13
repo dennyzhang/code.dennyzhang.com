@@ -8,7 +8,7 @@
 Number of Digit One
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 
@@ -24,7 +24,7 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-digit-one/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/number-of-digit-one
+## Blog link: https://code.dennyzhang.com/number-of-digit-one
 class Solution(object):
     def countDigitOne(self, n):
         """

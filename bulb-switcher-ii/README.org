@@ -8,7 +8,7 @@
 Bulb Switcher II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 There is a room with n lights which are turned on initially and 4 buttons on the wall. After performing exactly m unknown operations towards buttons, you need to return how many different kinds of status of the n lights could be.
 
@@ -48,6 +48,6 @@ Credits To: [[url-external:https://leetcode.com/problems/bulb-switcher-ii/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/bulb-switcher-ii
+## Blog link: https://code.dennyzhang.com/bulb-switcher-ii
 
 #+END_SRC

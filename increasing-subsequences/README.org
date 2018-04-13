@@ -8,7 +8,7 @@
 Increasing Subsequences
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/subsequence][#subsequence]]
+- Tag: [[https://code.dennyzhang.com/tag/subsequence][#subsequence]]
 ---------------------------------------------------------------------
 Given an integer array, your task is to find all the different possible increasing subsequences of the given array, and the length of an increasing subsequence should be at least 2 .
 
@@ -30,6 +30,6 @@ Credits To: [[url-external:https://leetcode.com/problems/increasing-subsequences
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/increasing-subsequences
+## Blog link: https://code.dennyzhang.com/increasing-subsequences
 
 #+END_SRC

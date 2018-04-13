@@ -8,9 +8,9 @@
 Find Right Interval
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]]
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/interval][#interval]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/interval][#interval]]
 ---------------------------------------------------------------------
 Given a set of intervals, for each of the interval i, check if there exists an interval j whose start point is bigger than or equal to the end point of the interval i, which can be called that j is on the "right" of i.
 
@@ -57,7 +57,7 @@ Credits To: [[url-external:https://leetcode.com/problems/find-right-interval/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/find-right-interval
+## Blog link: https://code.dennyzhang.com/find-right-interval
 ## Basic Ideas: hashmap + binary search
 ##     Build a hashmap to track the mapping from start point to position index
 ##     Sort the interval list by the start attribute

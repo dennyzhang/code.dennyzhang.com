@@ -8,8 +8,8 @@
 LRU Cache
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/all-oone-data-structure][All O`one Data Structure]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/all-oone-data-structure][All O`one Data Structure]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
 
@@ -41,7 +41,7 @@ Credits To: [[url-external:https://leetcode.com/problems/lru-cache/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/lru-cache
+## Blog link: https://code.dennyzhang.com/lru-cache
 ## Basic Ideas: Double linked list + hashmap
 ##
 ##   We need to mapping from dlink to hashmap,

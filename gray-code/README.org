@@ -8,9 +8,9 @@
 Gray Code
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/lexicographical-numbers][Lexicographical Numbers]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://code.dennyzhang.com/lexicographical-numbers][Lexicographical Numbers]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 The gray code is a binary numeral system where two successive values differ in only one bit.
 
@@ -39,7 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/gray-code/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/gray-code
+## Blog link: https://code.dennyzhang.com/gray-code
 class Solution:
     def grayCode(self, n):
         """

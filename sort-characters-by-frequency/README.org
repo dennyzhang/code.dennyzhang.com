@@ -8,8 +8,8 @@
 Sort Characters By Frequency
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-heap][Review: Heap Problems]], [[https://brain.dennyzhang.com/tag/heap][Tag: #heap]]
-- Tag: [[https://brain.dennyzhang.com/tag/heap][heap]]
+- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]], [[https://code.dennyzhang.com/tag/heap][Tag: #heap]]
+- Tag: [[https://code.dennyzhang.com/tag/heap][heap]]
 ---------------------------------------------------------------------
 Given a string, sort it in decreasing order based on the frequency of characters.
 
@@ -59,7 +59,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sort-characters-by-freq
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/sort-characters-by-frequency
+## Blog link: https://code.dennyzhang.com/sort-characters-by-frequency
 ## Baisc Ideas: Sort with customized function
 ##
 ## Complexity:

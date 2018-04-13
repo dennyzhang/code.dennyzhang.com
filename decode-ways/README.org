@@ -8,9 +8,9 @@
 Decode Ways
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/combination][#combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 A message containing letters from A-Z is being encoded to numbers using the following mapping:
 #+BEGIN_EXAMPLE
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/decode-ways/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/decode-ways
+## Blog link: https://code.dennyzhang.com/decode-ways
 ## Basic Ideas: dynamic programming
 ##   
 ##   dp(n) = 

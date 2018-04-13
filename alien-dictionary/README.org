@@ -8,7 +8,7 @@
 Alien Dictionary
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
 There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You receive a list of non-empty words from the dictionary, where words are sorted lexicographically by the rules of this new language. Derive the order of letters in this language.
 
@@ -62,6 +62,6 @@ Credits To: [[url-external:https://leetcode.com/problems/alien-dictionary/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/alien-dictionary
+## Blog link: https://code.dennyzhang.com/alien-dictionary
 
 #+END_SRC

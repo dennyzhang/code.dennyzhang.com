@@ -8,7 +8,7 @@
 Equal Tree Partition
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 Given a binary tree with n nodes, your task is to check if it's possible to partition the tree to two trees which have the equal sum of values after removing exactly one edge on the original tree.
 
@@ -60,7 +60,7 @@ Credits To: [[url-external:https://leetcode.com/problems/equal-tree-partition/de
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/equal-tree-partition
+## Blog link: https://code.dennyzhang.com/equal-tree-partition
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x

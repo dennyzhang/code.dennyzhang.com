@@ -8,7 +8,7 @@
 Number of Subarrays with Bounded Maximum
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/subarray][Tag: #subarray]]
+- [[https://code.dennyzhang.com/tag/subarray][Tag: #subarray]]
 ---------------------------------------------------------------------
 We are given an array A of positive integers, and two positive integers L and R (L <= R).
 
@@ -36,7 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-subarrays-wit
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/number-of-subarrays-with-bounded-maximum
+## Blog link: https://code.dennyzhang.com/number-of-subarrays-with-bounded-maximum
 ## Basic Ideas:
 ##
 ##  Separate by values which is greater than R

@@ -8,7 +8,7 @@
 Combination Sum III
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
 
@@ -39,7 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum-iii/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/combination-sum-iii
+## Blog link: https://code.dennyzhang.com/combination-sum-iii
 class Solution(object):
     def combinationSum3(self, k, n):
         """

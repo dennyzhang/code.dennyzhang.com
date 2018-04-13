@@ -8,7 +8,7 @@
 Image Smoother
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/matrixtraverse][Tag: #matrixtraverse]]
+- [[https://code.dennyzhang.com/tag/matrixtraverse][Tag: #matrixtraverse]]
 ---------------------------------------------------------------------
 Given a 2D integer matrix M representing the gray scale of an image, you need to design a smoother to make the gray scale of each cell becomes the average gray scale (rounding down) of all the 8 surrounding cells and itself. If a cell has less than 8 surrounding cells, then use as many as you can.
 
@@ -39,7 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/image-smoother/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/image-smoother
+## Blog link: https://code.dennyzhang.com/image-smoother
 ## Basic Ideas: The main point is how to write clean code.
 ##
 ##

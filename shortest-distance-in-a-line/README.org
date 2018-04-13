@@ -8,7 +8,7 @@
 Shortest Distance in a Line
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Table point holds the x coordinate of some points on x-axis in a plane, which are all integers.
 Write a query to find the shortest distance between two points in these points.
@@ -38,7 +38,7 @@ Credits To: [[url-external:https://leetcode.com/problems/shortest-distance-in-a-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/shortest-distance-in-a-line
+## Blog link: https://code.dennyzhang.com/shortest-distance-in-a-line
 select t1.x-t2.x as shortest
 from point as t1 join point as t2
 where t1.x>t2.x

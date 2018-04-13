@@ -8,8 +8,8 @@
 Next Greater Element I
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/daily-temperatures][Leetcode: Daily Temperatures]]
-- [[https://brain.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://brain.dennyzhang.com/tag/monotone][monotone]]
+- [[https://code.dennyzhang.com/daily-temperatures][Leetcode: Daily Temperatures]]
+- [[https://code.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://code.dennyzhang.com/tag/monotone][monotone]]
 ---------------------------------------------------------------------
 You are given two arrays (without duplicates) nums1 and nums2 where nums1's elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 
@@ -44,7 +44,7 @@ Credits To: [[url-external:https://leetcode.com/problems/next-greater-element-i/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/next-greater-element-i
+## Blog link: https://code.dennyzhang.com/next-greater-element-i
 ## Basic Ideas: Descending stack
 ##
 ## Complexity: Time O(n), Space O(n)

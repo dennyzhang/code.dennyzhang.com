@@ -8,7 +8,7 @@
 Factorial Trailing Zeroes
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given an integer n, return the number of trailing zeroes in n!.
 
@@ -21,7 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/factorial-trailing-zero
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/factorial-trailing-zeroes
+## Blog link: https://code.dennyzhang.com/factorial-trailing-zeroes
 class Solution(object):
     def trailingZeroes(self, n):
         """

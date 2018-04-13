@@ -8,8 +8,8 @@
 4Sum II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
 
@@ -39,7 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/4sum-ii/description/][l
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/4sum-ii
+## Blog link: https://code.dennyzhang.com/4sum-ii
 class Solution(object):
     def fourSumCount(self, A, B, C, D):
         """

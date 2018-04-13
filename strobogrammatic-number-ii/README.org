@@ -8,12 +8,12 @@
 Strobogrammatic Number II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/unique-binary-search-trees-ii][Unique Binary Search Trees II]]
-- [[https://brain.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]]
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/math][math]], [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/unique-binary-search-trees-ii][Unique Binary Search Trees II]]
+- [[https://code.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
 
@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/strobogrammatic-number-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/strobogrammatic-number-ii
+## Blog link: https://code.dennyzhang.com/strobogrammatic-number-ii
 ## Basic Ideas: Recursive
 ##       From f(n-2) and f(2) --> f(n)
 ##

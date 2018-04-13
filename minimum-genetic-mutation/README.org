@@ -8,9 +8,9 @@
 Minimum Genetic Mutation
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/word-ladder][Word Ladder]]
-- [[https://brain.dennyzhang.com/open-the-lock][Open the Lock]]
-- [[https://brain.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://brain.dennyzhang.com/tag/bfs][Tag: #bfs]]
+- [[https://code.dennyzhang.com/word-ladder][Word Ladder]]
+- [[https://code.dennyzhang.com/open-the-lock][Open the Lock]]
+- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://code.dennyzhang.com/tag/bfs][Tag: #bfs]]
 ---------------------------------------------------------------------
 A gene string can be represented by an 8-character long string, with choices from "A", "C", "G", "T".
 
@@ -62,7 +62,7 @@ Credits To: [[url-external:https://leetcode.com/problems/minimum-genetic-mutatio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/minimum-genetic-mutation
+## Blog link: https://code.dennyzhang.com/minimum-genetic-mutation
 ## Basic Ideas: BFS + Set
 ##
 ## Complexity: Time O(1), Space O(1)

@@ -8,8 +8,8 @@
 Range Sum Query - Immutable
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://brain.dennyzhang.com/tag/concurrency][#concurrency]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.
 #+BEGIN_EXAMPLE
@@ -32,7 +32,7 @@ Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-immutab
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/range-sum-query-immutable
+## Blog link: https://code.dennyzhang.com/range-sum-query-immutable
 class NumArray(object):
 
     def __init__(self, nums):

@@ -8,7 +8,7 @@
 Longest Increasing Subsequence
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Given an unsorted array of integers, find the length of longest increasing subsequence.
 #+BEGIN_EXAMPLE
@@ -26,6 +26,6 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-increasing-subs
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/longest-increasing-subsequence
+## Blog link: https://code.dennyzhang.com/longest-increasing-subsequence
 
 #+END_SRC

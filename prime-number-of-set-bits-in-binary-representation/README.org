@@ -48,7 +48,7 @@ Credits To: [[url-external:https://leetcode.com/problems/prime-number-of-set-bit
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/prime-number-of-set-bits-in-binary-representation
+## Blog link: https://code.dennyzhang.com/prime-number-of-set-bits-in-binary-representation
 ## Basic Ideas: max(L, R) <= 10^6. The count of bit will be smaller than 1+6*log2(10) = 20
 ##         The possible prime list is: [2, 3, 5, 7, 11, 13, 17, 19]
 ##

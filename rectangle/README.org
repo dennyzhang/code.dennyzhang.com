@@ -8,7 +8,7 @@
 Rectangle
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]]
+- [[https://code.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://code.dennyzhang.com/tag/rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Give a set, if you can find four points that make up a rectangle that is parallel to the coordinate axis and outputs YES or NO.
 
@@ -37,7 +37,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/rectangle/][LintCo
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/rectangle
+## Blog link: https://code.dennyzhang.com/rectangle
 #!/usr/bin/env python
 """
 class Point:

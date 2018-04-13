@@ -8,9 +8,9 @@
 Flip Game
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/flip-game-ii][Flip Game II]]
-- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/flip-game-ii][Flip Game II]]
+- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 You are playing the following Flip Game with your friend: Given a string that contains only these two characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move and therefore the other person will be the winner.
 
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/flip-game/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/flip-game
+## Blog link: https://code.dennyzhang.com/flip-game
 ## Basic Ideas: One pass
 ## Complexity: Time O(n), Space O(1)
 class Solution:

@@ -8,7 +8,7 @@
 Integer Replacement
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given a positive integer n and you can do operations as follow:
 
@@ -51,6 +51,6 @@ Credits To: [[url-external:https://leetcode.com/problems/integer-replacement/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/integer-replacement
+## Blog link: https://code.dennyzhang.com/integer-replacement
 
 #+END_SRC

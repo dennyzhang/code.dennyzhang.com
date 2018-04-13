@@ -8,7 +8,7 @@
 Identity Employee Free Time
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://brain.dennyzhang.com/tag/interval][Tag: #interval]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
 ---------------------------------------------------------------------
 We are given a list schedule of employees, which represents the working time for each employee.
 
@@ -49,7 +49,7 @@ Credits To: [[url-external:https://leetcode.com/problems/employee-free-time/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/employee-free-time
+## Blog link: https://code.dennyzhang.com/employee-free-time
 # Definition for an interval.
 # class Interval(object):
 #     def __init__(self, s=0, e=0):

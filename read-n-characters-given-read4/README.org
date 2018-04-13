@@ -8,7 +8,7 @@
 Read N Characters Given Read4
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/tag/basic][#basic]]
 ---------------------------------------------------------------------
 The API: int read4(char *buf) reads 4 characters at a time from a file.
 
@@ -26,7 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/read-n-characters-given
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/read-n-characters-given-read4
+## Blog link: https://code.dennyzhang.com/read-n-characters-given-read4
 ## Basic Ideas: Use cached reading
 ##     Notice: We don't need to save the status of previous read function
 ##

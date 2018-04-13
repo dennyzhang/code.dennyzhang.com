@@ -8,7 +8,7 @@
 Tenth Line
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/shell][#shell]]
+- Tag: [[https://code.dennyzhang.com/tag/shell][#shell]]
 ---------------------------------------------------------------------
 How would you print just the 10th line of a file?
 
@@ -38,7 +38,7 @@ Credits To: [[url-external:https://leetcode.com/problems/tenth-line/description/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sh
-## Blog link: https://brain.dennyzhang.com/tenth-line
+## Blog link: https://code.dennyzhang.com/tenth-line
 line_count=$(wc -l ./file.txt | awk -F' ' '{print $1}')
 if [ $line_count -lt 10 ]; then
     echo ""

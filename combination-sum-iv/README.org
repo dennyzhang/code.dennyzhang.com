@@ -8,7 +8,7 @@
 Combination Sum IV
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
 
@@ -43,6 +43,6 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum-iv/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/combination-sum-iv
+## Blog link: https://code.dennyzhang.com/combination-sum-iv
 
 #+END_SRC

@@ -8,9 +8,9 @@
 Count Binary Substrings
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/twopointer][#twopointer]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Give a string s, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
 
@@ -44,7 +44,7 @@ Credits To: [[url-external:https://leetcode.com/problems/count-binary-substrings
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/count-binary-substrings
+## Blog link: https://code.dennyzhang.com/count-binary-substrings
 ## Basic Ideas: Two pointers
 ##
 ## Complexity: Time O(n), Space O(1)

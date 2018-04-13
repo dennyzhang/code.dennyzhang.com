@@ -8,7 +8,7 @@
 Path Sum III
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
+- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://code.dennyzhang.com/tag/recursive][Tag: #recursive]]
 ---------------------------------------------------------------------
 You are given a binary tree in which each node contains an integer value.
 
@@ -44,6 +44,6 @@ Credits To: [[url-external:https://leetcode.com/problems/path-sum-iii/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/path-sum-iii
+## Blog link: https://code.dennyzhang.com/path-sum-iii
 
 #+END_SRC

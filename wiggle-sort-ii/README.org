@@ -8,8 +8,8 @@
 Wiggle Sort II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/wiggle-sort][Wiggle Sort]]
-- [[https://brain.dennyzhang.com/tag/wigglesort][Tag: #wigglesort]]
+- [[https://code.dennyzhang.com/wiggle-sort][Wiggle Sort]]
+- [[https://code.dennyzhang.com/tag/wigglesort][Tag: #wigglesort]]
 ---------------------------------------------------------------------
 #+BEGIN_EXAMPLE
 Given an unsorted array nums, reorder it such that nums[0] < nums[1] > nums[2] < nums[3]....
@@ -32,6 +32,6 @@ Credits To: [[url-external:https://leetcode.com/problems/wiggle-sort-ii/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/wiggle-sort-ii
+## Blog link: https://code.dennyzhang.com/wiggle-sort-ii
 
 #+END_SRC

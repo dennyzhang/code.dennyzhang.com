@@ -8,8 +8,8 @@
 Design Twitter
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-heap][Review: Heap Problems]], [[https://brain.dennyzhang.com/tag/heap][Tag: #heap]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]], [[https://code.dennyzhang.com/tag/heap][Tag: #heap]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a simplified version of Twitter where users can post tweets, follow/unfollow another user and is able to see the 10 most recent tweets in the user's news feed. Your design should support the following methods:
 
@@ -53,7 +53,7 @@ Credits To: [[url-external:https://leetcode.com/problems/design-twitter/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/design-twitter
+## Blog link: https://code.dennyzhang.com/design-twitter
 ## Basic Ideas: Two hashmap + PriorityQueue
 ##     tweet_dict. id -> tweet_list
 ##     follow_dict: id -> id set

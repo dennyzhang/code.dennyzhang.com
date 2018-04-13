@@ -8,7 +8,7 @@
 Number Pair Statistics
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/inspiring][Tag: #inspiring]]
+- [[https://code.dennyzhang.com/tag/inspiring][Tag: #inspiring]]
 ---------------------------------------------------------------------
 Given a List <Point> p, find the number of (i,j) pairs that satisfy both p[i].x + p[j].x and p[i].y + p[j].y(i < j) can be divisible by 2.
 
@@ -38,7 +38,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/number-pair-statis
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/number-pair-statistics
+## Blog link: https://code.dennyzhang.com/number-pair-statistics
 class Solution:
     """
     @param p: the point List

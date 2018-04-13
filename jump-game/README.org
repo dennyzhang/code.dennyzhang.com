@@ -8,7 +8,7 @@
 Jump Game
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
 
@@ -33,7 +33,7 @@ Interesting reading:
 [[url-external:https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11][YouTube Coding Interview Question: Tower Hopper Problem]]
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/jump-game
+## Blog link: https://code.dennyzhang.com/jump-game
 ## Basic Ideas:
 ##        maxIndex: keep tracking the furthest reachable index
 ##

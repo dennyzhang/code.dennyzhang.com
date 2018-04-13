@@ -8,8 +8,8 @@
 Expressive Words
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/solve-the-equation][Solve the Equation]]
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/solve-the-equation][Solve the Equation]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Sometimes people repeat letters to represent extra feeling, such as "hello" -> "heeellooo", "hi" -> "hiiii".  Here, we have groups, of adjacent letters that are all the same character, and adjacent characters to the group are different.  A group is extended if that group is length 3 or more, so "e" and "o" would be extended in the first example, and "i" would be extended in the second example.  As another example, the groups of "abbcccaaaa" would be "a", "bb", "ccc", and "aaaa"; and "ccc" and "aaaa" are the extended groups of that string.
 
@@ -42,7 +42,7 @@ Credits To: [[url-external:https://leetcode.com/problems/expressive-words/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/expressive-words
+## Blog link: https://code.dennyzhang.com/expressive-words
 ## Basic Ideas:
 ##    From "heeellooo To": ["h", "3", "e", "l", "l", "3", "o"]
 ##    Then compare it with ["hello", "hi", "helo"]

@@ -8,7 +8,7 @@
 Do you want to play first or after, if you are determined to win.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
 
@@ -23,7 +23,7 @@ Credits To: [[url-external:https://leetcode.com/problems/nim-game/description/][
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/nim-game
+## Blog link: https://code.dennyzhang.com/nim-game
 class Solution(object):
     def canWinNim(self, n):
         """

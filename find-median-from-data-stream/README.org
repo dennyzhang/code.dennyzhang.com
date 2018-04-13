@@ -8,9 +8,9 @@
 Find Median from Data Stream
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/median-of-two-sorted-arrays][Median of Two Sorted Arrays]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
-- Tag: [[https://brain.dennyzhang.com/tag/getmedian][getmedian]]
+- [[https://code.dennyzhang.com/median-of-two-sorted-arrays][Median of Two Sorted Arrays]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]]
 ---------------------------------------------------------------------
 Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 
@@ -41,7 +41,7 @@ Credits To: [[url-external:https://leetcode.com/problems/find-median-from-data-s
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/find-median-from-data-stream
+## Blog link: https://code.dennyzhang.com/find-median-from-data-stream
 ## Basic Ideas: Use 2 heaps: 
 ##      maxheap for the first half, minheap for the second half
 ##

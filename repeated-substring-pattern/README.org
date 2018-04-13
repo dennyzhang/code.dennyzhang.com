@@ -8,9 +8,9 @@
 Check whether string can be created by keep repeating one substring.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/rotate-string][Rotate String]]
-- [[https://brain.dennyzhang.com/repeated-string-match][Repeated String Match]]
-- Tag: [[https://brain.dennyzhang.com/tag/string][#string]], [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
+- [[https://code.dennyzhang.com/rotate-string][Rotate String]]
+- [[https://code.dennyzhang.com/repeated-string-match][Repeated String Match]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.
 
@@ -45,7 +45,7 @@ Credits To: [[url-external:https://leetcode.com/problems/repeated-substring-patt
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/repeated-substring-pattern
+## Blog link: https://code.dennyzhang.com/repeated-substring-pattern
 class Solution:
     def repeatedSubstringPattern(self, s):
         """

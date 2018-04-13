@@ -8,7 +8,7 @@
 Remove Invalid Parentheses
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
 Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
 
@@ -28,7 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/remove-invalid-parenthe
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/remove-invalid-parentheses
+## Blog link: https://code.dennyzhang.com/remove-invalid-parentheses
 ## Basic Ideas: BFS
 ##
 ##   Start with s (removed the trailing '(')

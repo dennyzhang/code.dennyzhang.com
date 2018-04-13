@@ -8,7 +8,7 @@
 Non-overlapping Intervals
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://brain.dennyzhang.com/tag/interval][Tag: #interval]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
 ---------------------------------------------------------------------
 Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 
@@ -50,7 +50,7 @@ Credits To: [[url-external:https://leetcode.com/problems/non-overlapping-interva
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/non-overlapping-intervals
+## Blog link: https://code.dennyzhang.com/non-overlapping-intervals
 # Definition for an interval.
 # class Interval(object):
 #     def __init__(self, s=0, e=0):

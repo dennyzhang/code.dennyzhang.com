@@ -8,7 +8,7 @@
 Range Addition II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given an m * n matrix M initialized with all 0's and several update operations.
 
@@ -52,7 +52,7 @@ Credits To: [[url-external:https://leetcode.com/problems/range-addition-ii/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/range-addition-ii
+## Blog link: https://code.dennyzhang.com/range-addition-ii
 ## Basic Ideas: The biggest number will happen in the left-corner
 ##             min(ops_i) * min(ops_j)
 ##

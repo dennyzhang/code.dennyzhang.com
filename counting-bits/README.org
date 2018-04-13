@@ -8,7 +8,7 @@
 Counting Bits
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a non negative integer number num. For every numbers i in the range 0 <= i <= num calculate the number of 1's in their binary representation and return them as an array.
 
@@ -28,7 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/counting-bits/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/counting-bits
+## Blog link: https://code.dennyzhang.com/counting-bits
 ## Basic Ideas:
 ##      If k%2 == 0, f(k) = f(k/2)
 ##      If k%2 == 1, f(k) = f(k-1)

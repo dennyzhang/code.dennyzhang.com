@@ -8,8 +8,8 @@
 Range Addition
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/maximum-distance-in-arrays][Maximum Distance in Arrays]]
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/maximum-distance-in-arrays][Maximum Distance in Arrays]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Assume you have an array of length n initialized with all 0's and are given k update operations.
 
@@ -55,7 +55,7 @@ Credits To: [[url-external:https://leetcode.com/problems/range-addition/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/range-addition
+## Blog link: https://code.dennyzhang.com/range-addition
 ## Basic Ideas:
 ##
 ##         0  0  0  0  0  0    ([1, 3, 2])

@@ -8,8 +8,8 @@
 Find Leaves of Binary Tree
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/binary-tree-vertical-order-traversal][Binary Tree Vertical Order Traversal]]
-- [[https://brain.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://brain.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
+- [[https://code.dennyzhang.com/binary-tree-vertical-order-traversal][Binary Tree Vertical Order Traversal]]
+- [[https://code.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://code.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
 ---------------------------------------------------------------------
 Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
 
@@ -50,7 +50,7 @@ Credits To: [[url-external:https://leetcode.com/problems/find-leaves-of-binary-t
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/find-leaves-of-binary-tree
+## Blog link: https://code.dennyzhang.com/find-leaves-of-binary-tree
 ## Basic Ideas: hashmap + post-order + reversed BFS
 ##
 ##  Children find out parent

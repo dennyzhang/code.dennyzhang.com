@@ -8,7 +8,7 @@
 Regular Expression Matching
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Implement regular expression matching with support for '.' and '*'.
 #+BEGIN_EXAMPLE
@@ -37,6 +37,6 @@ Credits To: [[url-external:https://leetcode.com/problems/regular-expression-matc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/regular-expression-matching
+## Blog link: https://code.dennyzhang.com/regular-expression-matching
 
 #+END_SRC

@@ -8,7 +8,7 @@
 Managers with at Least 5 Direct Reports
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 #+BEGIN_EXAMPLE
@@ -43,7 +43,7 @@ Credits To: [[url-external:https://leetcode.com/problems/managers-with-at-least-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/managers-with-at-least-5-direct-reports
+## Blog link: https://code.dennyzhang.com/managers-with-at-least-5-direct-reports
 select Name
 from Employee
 where id in

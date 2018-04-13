@@ -8,7 +8,7 @@
 Implement Stack using Queues
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Implement the following operations of a stack using queues.
 
@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/implement-stack-using-q
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/implement-stack-using-queues
+## Blog link: https://code.dennyzhang.com/implement-stack-using-queues
 class MyQueue(object):
 
     ## Idea: Use 2 stack. When pop, move to stack1, then stack2

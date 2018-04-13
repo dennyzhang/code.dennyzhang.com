@@ -8,8 +8,8 @@
 A + B Problem
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/sum-of-two-integers][Sum of Two Integers]]
-- [[https://brain.dennyzhang.com/tag/bitmanipulation][Tag: #bitmanipulation]]
+- [[https://code.dennyzhang.com/sum-of-two-integers][Sum of Two Integers]]
+- [[https://code.dennyzhang.com/tag/bitmanipulation][Tag: #bitmanipulation]]
 ---------------------------------------------------------------------
 Write a function that add two numbers A and B. You should not use + or any arithmetic operators.
 
@@ -34,7 +34,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/a-b-problem/][Lint
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/a-b-problem
+## Blog link: https://code.dennyzhang.com/a-b-problem
 class Solution:
     """
     @param a: An integer

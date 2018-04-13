@@ -8,7 +8,7 @@
 Frog Jump
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]],  [[https://brain.dennyzhang.com/tag/bfs][#bfs]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]],  [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 A frog is crossing a river. The river is divided into x units and at each unit there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.
 
@@ -43,11 +43,11 @@ the gap between the 5th and 6th stone is too large.
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/frog-jump][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://brain.dennyzhang.com/frog-jump][lintcode.com]]
+Credits To: [[url-external:https://code.dennyzhang.com/frog-jump][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/frog-jump
+// Blog link: https://code.dennyzhang.com/frog-jump
 
 #+END_SRC

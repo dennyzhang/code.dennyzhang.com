@@ -8,7 +8,7 @@
 Cheapest Flights Within K Stops
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://brain.dennyzhang.com/tag/bfs][Tag: #bfs]]
+- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://code.dennyzhang.com/tag/bfs][Tag: #bfs]]
 ---------------------------------------------------------------------
 There are n cities connected by m flights. Each fight starts from city u and arrives at v with a price w.
 
@@ -61,7 +61,7 @@ Credits To: [[url-external:https://leetcode.com/problems/cheapest-flights-within
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/cheapest-flights-within-k-stops
+## Blog link: https://code.dennyzhang.com/cheapest-flights-within-k-stops
 ## Basic Ideas: BFS
 ##
 ## Complexity: Time O(n), Space O(n)

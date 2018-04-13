@@ -8,9 +8,9 @@
 Maximum Swap
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/swap-adjacent-in-lr-string][Swap Adjacent in LR String]]
-- [[https://brain.dennyzhang.com/global-and-local-inversions][Global and Local Inversions]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/swap-adjacent-in-lr-string][Swap Adjacent in LR String]]
+- [[https://code.dennyzhang.com/global-and-local-inversions][Global and Local Inversions]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a non-negative integer, you could swap two digits at most once to get the maximum valued number. Return the maximum valued number you could get.
 
@@ -38,7 +38,7 @@ Credits To: [[url-external:https://leetcode.com/problems/maximum-swap/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/maximum-swap
+## Blog link: https://code.dennyzhang.com/maximum-swap
 ## Basic Ideas: counter with [0, 1, 2, ... 9]
 ##
 ## Complexity: Time O(n), Space O(1)

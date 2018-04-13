@@ -8,7 +8,7 @@
 Maximum Average Subarray I
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/slidingwindow][#slidingwindow]]
+- Tag: [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. And you need to output the maximum average value.
 
@@ -30,7 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/maximum-average-subarra
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/maximum-average-subarray-i
+## Blog link: https://code.dennyzhang.com/maximum-average-subarray-i
 ## Basic Ideas: greedy + Sliding window
 ##
 ## Complexity: Time O(n), Space O(1)

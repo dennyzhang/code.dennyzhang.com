@@ -8,7 +8,7 @@
 Is Subsequence
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Given a string s and a string t, check if s is subsequence of t.
 
@@ -40,7 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/is-subsequence/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/is-subsequence
+## Blog link: https://code.dennyzhang.com/is-subsequence
 ## Basic Ideas: Greedy + Two pointer
 ##
 ## Complexity: Time O(1), Space O(1).

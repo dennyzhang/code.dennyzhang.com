@@ -8,7 +8,7 @@
 Encode and Decode TinyURL
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 TinyURL is a URL shortening service where you enter a URL such as [[url-external:https://leetcode.com/problems/design-tinyurl][https://leetcode.com/problems/design-tinyurl]] and it returns a short URL such as [[url-external:http://tinyurl.com/4e9iAk][http://tinyurl.com/4e9iAk]].
 
@@ -21,7 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/encode-and-decode-tinyu
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/encode-and-decode-tinyurl
+## Blog link: https://code.dennyzhang.com/encode-and-decode-tinyurl
 class Codec:
     def __init__(self):
         self.d = {}

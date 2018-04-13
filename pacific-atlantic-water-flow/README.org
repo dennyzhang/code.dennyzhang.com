@@ -8,7 +8,7 @@
 Pacific Atlantic Water Flow
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]]
 ---------------------------------------------------------------------
 Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the "Pacific ocean" touches the left and top edges of the matrix and the "Atlantic ocean" touches the right and bottom edges.
 
@@ -44,6 +44,6 @@ Credits To: [[url-external:https://leetcode.com/problems/pacific-atlantic-water-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/pacific-atlantic-water-flow
+## Blog link: https://code.dennyzhang.com/pacific-atlantic-water-flow
 
 #+END_SRC

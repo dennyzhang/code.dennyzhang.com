@@ -8,7 +8,7 @@
 Rotate Linked list
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 Given a list, rotate the list to the right by k places, where k is non-negative.
 
@@ -26,7 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/rotate-list/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/rotate-list
+## Blog link: https://code.dennyzhang.com/rotate-list
 ## Basic Ideas: 
 ##       Get length of the list
 ##       pointer q: where to rotate

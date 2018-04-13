@@ -8,7 +8,7 @@
 Determine whether an integer is a palindrome. Do this without extra space.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
+- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
 ---------------------------------------------------------------------
 Determine whether an integer is a palindrome. Do this without extra space.
 
@@ -33,7 +33,7 @@ Credits To: [[url-external:https://leetcode.com/problems/palindrome-number/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/palindrome-number
+## Blog link: https://code.dennyzhang.com/palindrome-number
 ## Basic Ideas:  Generate a new integer Y from right digit to left digit
 ##               Then compare it with X
 ##         1234321: 1 -> 12 -> 13 -> 134 ...

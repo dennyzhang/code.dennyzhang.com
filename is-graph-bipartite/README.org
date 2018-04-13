@@ -8,8 +8,8 @@
 Is Graph Bipartite?
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://brain.dennyzhang.com/tag/bfs][Tag: #bfs]]
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://code.dennyzhang.com/tag/bfs][Tag: #bfs]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a graph, return true if and only if it is bipartite.
 
@@ -57,7 +57,7 @@ Credits To: [[url-external:https://leetcode.com/problems/is-graph-bipartite/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/is-graph-bipartite
+## Blog link: https://code.dennyzhang.com/is-graph-bipartite
 class Solution:
     ## Basic Ideas: DFS
     ##

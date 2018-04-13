@@ -8,7 +8,7 @@
 Kill Process
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
 ---------------------------------------------------------------------
 
 Given n processes, each process has a unique PID (process id) and its PPID (parent process id).
@@ -47,7 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/kill-process/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/kill-process
+## Blog link: https://code.dennyzhang.com/kill-process
 ## Basic Ideas: hashmap
 ##    Find children by id
 ##

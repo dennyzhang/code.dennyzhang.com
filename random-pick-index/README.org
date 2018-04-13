@@ -8,7 +8,7 @@
 Random Pick Index
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]
+- Tag: [[https://code.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]
 ---------------------------------------------------------------------
 Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.
 
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/random-pick-index/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/random-pick-index
+## Blog link: https://code.dennyzhang.com/random-pick-index
 ## Basic Ideas: Reservior Sampling
 ##
 ## Complexity: Time O(n), Space O(1)

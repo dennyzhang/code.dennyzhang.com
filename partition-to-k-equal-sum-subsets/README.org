@@ -8,8 +8,8 @@
 Partition to K Equal Sum Subsets
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Given an array of integers nums and a positive integer k, find whether it's possible to divide this array into k non-empty subsets whose sums are all equal.
 #+BEGIN_EXAMPLE
@@ -31,6 +31,6 @@ Credits To: [[url-external:https://leetcode.com/problems/partition-to-k-equal-su
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/partition-to-k-equal-sum-subsets
+## Blog link: https://code.dennyzhang.com/partition-to-k-equal-sum-subsets
 
 #+END_SRC

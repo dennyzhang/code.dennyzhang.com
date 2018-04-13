@@ -8,8 +8,8 @@
 Kth Smallest Element in a Sorted Matrix
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.
 
@@ -37,6 +37,6 @@ Credits To: [[url-external:https://leetcode.com/problems/kth-smallest-element-in
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix
+## Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix
 
 #+END_SRC

@@ -8,9 +8,9 @@
 Letter Case Permutation
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/generalized-abbreviation][Generalized Abbreviation]]
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
-- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
+- [[https://code.dennyzhang.com/generalized-abbreviation][Generalized Abbreviation]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://code.dennyzhang.com/tag/recursive][Tag: #recursive]]
 ---------------------------------------------------------------------
 Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
 
@@ -42,7 +42,7 @@ Credits To: [[url-external:https://leetcode.com/problems/letter-case-permutation
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/letter-case-permutation
+## Blog link: https://code.dennyzhang.com/letter-case-permutation
 class Solution:
     ## Basic Ideas: One pass (similar like DFS)
     ##

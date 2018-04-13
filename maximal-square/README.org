@@ -8,7 +8,7 @@
 Maximal Square
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
 
@@ -28,6 +28,6 @@ Credits To: [[url-external:https://leetcode.com/problems/maximal-square/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/maximal-square
+## Blog link: https://code.dennyzhang.com/maximal-square
 
 #+END_SRC

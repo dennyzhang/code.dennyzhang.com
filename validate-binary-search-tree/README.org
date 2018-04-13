@@ -36,7 +36,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/validate-binary-search-tree/description/][leetcode.com]]
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/validate-binary-search-tree
+## Blog link: https://code.dennyzhang.com/validate-binary-search-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

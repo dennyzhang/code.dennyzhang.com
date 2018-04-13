@@ -8,8 +8,8 @@
 Ugly Number II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/ugly-number][Leetcode: Ugly Number]]
-- Tag: [[https://brain.dennyzhang.com/tag/mergesort][#mergesort]]
+- [[https://code.dennyzhang.com/ugly-number][Leetcode: Ugly Number]]
+- Tag: [[https://code.dennyzhang.com/tag/mergesort][#mergesort]]
 ---------------------------------------------------------------------
 Write a program to find the n-th ugly number.
 
@@ -24,7 +24,7 @@ Credits To: [[url-external:https://leetcode.com/problems/ugly-number-ii/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/ugly-number-ii
+// Blog link: https://code.dennyzhang.com/ugly-number-ii
 // Basic Ideas: BFS
 //
 //   Queue start with [1, 2, 3, 5]

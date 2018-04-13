@@ -8,7 +8,7 @@
 Again. When to buy and sell stock.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Say you have an array for which the ith element is the price of a given stock on day i.
 
@@ -19,7 +19,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/][leetcode.com]]
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/best-time-to-buy-and-sell-stock-ii
+## Blog link: https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-ii
 ## Basic Ideas:
 ## Complexity:
 class Solution(object):

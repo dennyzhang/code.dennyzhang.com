@@ -8,7 +8,7 @@
 Swap Adjacent in LR String
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 In a string composed of 'L', 'R', and 'X' characters, like "RXXLRXRXL", a move consists of either replacing one occurrence of "XL" with "LX", or replacing one occurrence of "RX" with "XR". Given the starting string start and the ending string end, return True if and only if there exists a sequence of moves to transform one string to the other.
 
@@ -37,7 +37,7 @@ Credits To: [[url-external:https://leetcode.com/problems/swap-adjacent-in-lr-str
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/swap-adjacent-in-lr-string
+## Blog link: https://code.dennyzhang.com/swap-adjacent-in-lr-string
 ## Basic Ideas: Check 3 rules
 ##       R won't bypass X: count 'R' from left to right
 ##       X won't bypass L: count 'L' from right to left 

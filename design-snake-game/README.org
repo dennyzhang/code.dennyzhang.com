@@ -8,8 +8,8 @@
 Design Snake Game
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 Design a [[url-external:https://en.wikipedia.org/wiki/Snake_(video_game_genre)][Snake game]] that is played on a device with screen size = width x height. [[url-external:http://patorjk.com/games/snake/][Play the game online]] if you are not familiar with the game.
 
@@ -67,7 +67,7 @@ Credits To: [[url-external:https://leetcode.com/problems/design-snake-game/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/design-snake-game
+## Blog link: https://code.dennyzhang.com/design-snake-game
 ## Basic Ideas: queue + hashmap
 ##              queue: coordinates for all parts of the snake
 ##              set: check whether snake will hit itself
