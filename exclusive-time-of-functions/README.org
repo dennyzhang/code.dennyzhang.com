@@ -8,7 +8,7 @@
 Exclusive Time of Functions
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Given the running logs of n functions that are executed in a nonpreemptive single threaded CPU, find the exclusive time of these functions.
 
@@ -48,7 +48,7 @@ Credits To: [[url-external:https://leetcode.com/problems/exclusive-time-of-funct
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/exclusive-time-of-functions
+## Blog link: https://code.dennyzhang.com/exclusive-time-of-functions
 
 #+END_SRC
 ---------------------------------------------------------------------

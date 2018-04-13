@@ -8,7 +8,7 @@
 Word Frequency
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/shell][#shell]]
+- Tag: [[https://code.dennyzhang.com/tag/shell][#shell]]
 ---------------------------------------------------------------------
 Given a text file file.txt that contains list of phone numbers (one per line), write a one liner bash script to print all valid phone numbers.
 
@@ -36,6 +36,6 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-phone-numbers/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sh
-## Blog link: https://brain.dennyzhang.com/valid-phone-numbers
+## Blog link: https://code.dennyzhang.com/valid-phone-numbers
 grep -iE '^\([0-9][0-9][0-9]\) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$|^[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$' file.txt
 #+END_SRC

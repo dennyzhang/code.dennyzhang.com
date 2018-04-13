@@ -8,7 +8,7 @@
 Combination
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 
@@ -38,7 +38,7 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum-ii/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/combination-sum-ii
+## Blog link: https://code.dennyzhang.com/combination-sum-ii
 ## Basic Ideas: Sort the list with descending order
 ##
 ## Complexity: Time O(n*n), Space O(n)

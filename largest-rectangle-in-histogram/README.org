@@ -8,9 +8,9 @@
 Largest Rectangle in Histogram
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/maximal-rectangle][Leetcode: Maximal Rectangle]]
-- [[https://brain.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://brain.dennyzhang.com/tag/monotone][monotone]]
-- [[https://brain.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]]
+- [[https://code.dennyzhang.com/maximal-rectangle][Leetcode: Maximal Rectangle]]
+- [[https://code.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://code.dennyzhang.com/tag/monotone][monotone]]
+- [[https://code.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://code.dennyzhang.com/tag/rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
 
@@ -32,7 +32,7 @@ Credits To: [[url-external:https://leetcode.com/problems/largest-rectangle-in-hi
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/largest-rectangle-in-histogram
+## Blog link: https://code.dennyzhang.com/largest-rectangle-in-histogram
 ## Basic Ideas: Monotone stack
 ##              For each element, find the next non-greater value
 ##     Key Questions: How to get the left?

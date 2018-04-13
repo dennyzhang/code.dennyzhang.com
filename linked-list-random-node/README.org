@@ -8,7 +8,7 @@
 Linked List Random Node
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]
+- Tag: [[https://code.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]
 ---------------------------------------------------------------------
 Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.
 
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/linked-list-random-node
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/linked-list-random-node
+## Blog link: https://code.dennyzhang.com/linked-list-random-node
 ## Basic Ideas: Reservoir Sampling
 ##      Choose k element from a huge list without knowing the length
 ##

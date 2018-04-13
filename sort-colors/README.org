@@ -8,7 +8,7 @@
 Array is composed by only 3 types of elements. Sort it fast.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
 
@@ -21,7 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sort-colors/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/sort-colors
+## Blog link: https://code.dennyzhang.com/sort-colors
 class Solution(object):
     def sortColors(self, nums):
         """

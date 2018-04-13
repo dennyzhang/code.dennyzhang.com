@@ -8,10 +8,10 @@
 Champagne Tower
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/reaching-points][Reaching Points]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
-- [[https://brain.dennyzhang.com/tag/inspiring][Tag: #inspiring]]
+- [[https://code.dennyzhang.com/reaching-points][Reaching Points]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/tag/inspiring][Tag: #inspiring]]
 ---------------------------------------------------------------------
 We stack glasses in a pyramid, where the first row has 1 glass, the second row has 2 glasses, and so on until the 100th row.  Each glass holds one cup (250ml) of champagne.
 
@@ -49,7 +49,7 @@ Credits To: [[url-external:https://leetcode.com/problems/champagne-tower/descrip
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/champagne-tower
+## Blog link: https://code.dennyzhang.com/champagne-tower
 ## Basic Ideas: Dynamic programming
 ##          grid[i][j] will evenly flow to grid[i+1][j] and grid[i+1][j+1]
 ##

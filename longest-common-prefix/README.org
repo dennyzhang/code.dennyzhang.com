@@ -8,7 +8,7 @@
 Longest Common Prefix
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
 Write a function to find the longest common prefix string amongst an array of strings.
 
@@ -19,6 +19,6 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-common-prefix/d
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/longest-common-prefix
+## Blog link: https://code.dennyzhang.com/longest-common-prefix
 
 #+END_SRC

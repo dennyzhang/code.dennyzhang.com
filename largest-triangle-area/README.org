@@ -8,7 +8,7 @@
 Largest Triangle Area
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 You have a list of points in the plane. Return the area of the largest triangle that can be formed by any 3 of the points.
 
@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 
 Related Reading: [[https://en.wikipedia.org/wiki/Shoelace_formula][Shoelace formula in wikipedia]]
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/largest-triangle-area
+## Blog link: https://code.dennyzhang.com/largest-triangle-area
 ## Basic Ideas:
 ##   Check whether 3 points can form a triangle
 ##        any 2 edges should be bigger than the 3rd one

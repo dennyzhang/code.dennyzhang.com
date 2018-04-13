@@ -8,7 +8,7 @@
 Rectangle Area
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://brain.dennyzhang.com/tag/rectangle][#rectangle]]
+- [[https://code.dennyzhang.com/review-rectangle][Review: Rectangle Problems]], Tag: [[https://code.dennyzhang.com/tag/rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Find the total area covered by two rectilinear rectangles in a 2D plane.
 
@@ -26,7 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/rectangle-area/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/rectangle-area
+## Blog link: https://code.dennyzhang.com/rectangle-area
 ## Basic Ideas:
 ##     width: min(C,G)-max(A,E)
 ##     height: min(D, H)-max(B,F)

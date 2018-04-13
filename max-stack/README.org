@@ -8,9 +8,9 @@
 Max Stack
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/min-stack][Min Stack]]
-- [[https://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed][Insert Delete GetRandom O(1) – Duplicates allowed]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/min-stack][Min Stack]]
+- [[https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed][Insert Delete GetRandom O(1) – Duplicates allowed]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a max stack that supports push, pop, top, peekMax and popMax.
 
@@ -46,7 +46,7 @@ Credits To: [[url-external:https://leetcode.com/problems/max-stack/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/max-stack
+## Blog link: https://code.dennyzhang.com/max-stack
 ## Basic Ideas: 2 stacks
 ##
 ## Complexity: Time: topMax O(n), others O(1)

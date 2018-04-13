@@ -8,7 +8,7 @@
 Identity number which appears exactly once.
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/array][#array]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 There is a bunch of radars on a 2D plane(Radar has x, y coordinates, and a radius r which is the range can be detected). Now, there is a car that passes through the range of y = 0 and y = 1 and cannot be detected by the radar. If the car is detected, return YES, otherwise NO.(You can consider that the car is a line segment of length 1 and goes straight from x = 0 to the right)
 
@@ -38,7 +38,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/radar-detection/][
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/radar-detection
+## Blog link: https://code.dennyzhang.com/radar-detection
 ## Basic Ideas: only check the height
 ## Complexity: Time O(n), Space O(1)
 """

@@ -8,7 +8,7 @@
 Simplify Path
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://brain.dennyzhang.com/tag/classic][Tag: #classic]]
+- [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://code.dennyzhang.com/tag/classic][Tag: #classic]]
 ---------------------------------------------------------------------
 Given an absolute path for a file (Unix-style), simplify it.
 
@@ -25,6 +25,6 @@ Credits To: [[url-external:https://leetcode.com/problems/simplify-path/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/simplify-path
+## Blog link: https://code.dennyzhang.com/simplify-path
 
 #+END_SRC

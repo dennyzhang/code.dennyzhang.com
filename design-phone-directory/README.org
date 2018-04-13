@@ -8,7 +8,7 @@
 Design Phone Directory
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a Phone Directory which supports the following operations:
 
@@ -50,7 +50,7 @@ Credits To: [[url-external:https://leetcode.com/problems/design-phone-directory/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/design-phone-directory
+## Blog link: https://code.dennyzhang.com/design-phone-directory
 ## Basic Ideas: One collection: free_set
 ##
 ##  Notcie: here we only need one collection(free_set), instead of two (occupied_set and free_set)

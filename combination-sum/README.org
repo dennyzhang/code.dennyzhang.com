@@ -8,9 +8,9 @@
 Combination Sum
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/subset-with-target][LintCode: Subset With Target]]
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
-- Tag: [[https://brain.dennyzhang.com/tag/combination][#combination]]
+- [[https://code.dennyzhang.com/subset-with-target][LintCode: Subset With Target]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 
@@ -35,7 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/combination-sum/descrip
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/combination-sum
+## Blog link: https://code.dennyzhang.com/combination-sum
 class Solution(object):
     def combinationSum(self, candidates, target):
         """

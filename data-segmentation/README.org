@@ -8,7 +8,7 @@
 Data Segmentation
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a string str, we need to extract the symbols and words of the string in order.
 
@@ -45,7 +45,7 @@ Credits To: [[url-external:http://lintcode.com/en/problem/data-segmentation/][li
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/data-segmentation
+## Blog link: https://code.dennyzhang.com/data-segmentation
 ## Basic Ideas: seperate string
 ## Complexity: Time O(n), Space O(1)
 class Solution:

@@ -8,8 +8,8 @@
 Next Closest Time
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
 ---------------------------------------------------------------------
 Given a time represented in the format "HH:MM", form the next closest time by reusing the current digits. There is no limit on how many times a digit can be reused.
 
@@ -36,7 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/next-closest-time/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/next-closest-time
+## Blog link: https://code.dennyzhang.com/next-closest-time
 ## Basic Ideas: Only pow(4, 4) combinations
 ##      Get all of them, and rule out the invalid onces
 ##      Convert the time string to seconds

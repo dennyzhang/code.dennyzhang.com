@@ -8,7 +8,7 @@
 Degree of an Array
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.
 
@@ -43,6 +43,6 @@ Credits To: [[url-external:https://leetcode.com/problems/degree-of-an-array/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/degree-of-an-array
+## Blog link: https://code.dennyzhang.com/degree-of-an-array
 
 #+END_SRC

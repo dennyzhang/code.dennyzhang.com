@@ -8,8 +8,8 @@
 Pic 2 numbers to get the target sum.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given an array of integers, return *indices* of the two numbers such that they add up to a specific target.
 
@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/two-sum/description/][l
 
 Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/two-sum
+## Blog link: https://code.dennyzhang.com/two-sum
 ## Basic Ideas: Sort, then two pointer
 ##
 ## Complexity: Time O(n*log(n)), Space O(1)

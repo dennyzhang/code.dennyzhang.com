@@ -8,7 +8,7 @@
 Reorganize String
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given a string S, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same.
 
@@ -36,7 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/reorganize-string/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/reorganize-string
+## Blog link: https://code.dennyzhang.com/reorganize-string
 ## Basic Ideas: build a map of duplicated characters
 ##              If the most duplicated characters is no more than half of the items, it's possible.
 ## Complexity: Time O(n), Space O(1)

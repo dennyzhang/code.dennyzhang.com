@@ -8,8 +8,8 @@
 Design Compressed String Iterator
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/basic-calculator][Basic Calculator]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/basic-calculator][Basic Calculator]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design and implement a data structure for a compressed string iterator. It should support the following operations: next and hasNext.
 
@@ -45,7 +45,7 @@ Credits To: [[url-external:https://leetcode.com/problems/design-compressed-strin
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/design-compressed-string-iterator
+## Blog link: https://code.dennyzhang.com/design-compressed-string-iterator
 ## Basic Ideas:
 ##
 ## Complexity:

@@ -8,7 +8,7 @@
 Word Search II
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/backtracking][#backtracking]]
+- Tag: [[https://code.dennyzhang.com/tag/backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Given a 2D board and a list of words from the dictionary, find all words in the board.
 
@@ -47,6 +47,6 @@ Credits To: [[url-external:https://leetcode.com/problems/word-search-ii/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/word-search-ii
+## Blog link: https://code.dennyzhang.com/word-search-ii
 
 #+END_SRC

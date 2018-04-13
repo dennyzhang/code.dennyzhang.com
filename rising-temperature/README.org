@@ -8,7 +8,7 @@
 Rising Temperature
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Given a Weather table, write a SQL query to find all dates' Ids with higher temperature compared to its previous (yesterday's) dates.
 
@@ -40,7 +40,7 @@ Credits To: [[url-external:https://leetcode.com/problems/rising-temperature/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/rising-temperature
+## Blog link: https://code.dennyzhang.com/rising-temperature
 select t1.Id
 from Weather as t1 join Weather as t2
 on DATE_ADD(t2.Date, INTERVAL 1 DAY) = t1.Date

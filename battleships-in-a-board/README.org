@@ -8,7 +8,7 @@
 Battleships in a Board
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/array][Tag: #array]]
+- [[https://code.dennyzhang.com/tag/array][Tag: #array]]
 ---------------------------------------------------------------------
 Given an 2D board, count how many battleships are in it. The battleships are represented with 'X's, empty slots are represented with '.'s. You may assume the following rules:
 You receive a valid board, made of only battleships or empty slots.
@@ -41,7 +41,7 @@ Credits To: [[url-external:https://leetcode.com/problems/battleships-in-a-board/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/battleships-in-a-board
+## Blog link: https://code.dennyzhang.com/battleships-in-a-board
 ## Basic Ideas
 ##   Check from left to right, top to down
 ##   If current digit is '1' and above digit is not '1', we keep moving left

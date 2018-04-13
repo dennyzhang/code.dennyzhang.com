@@ -8,7 +8,7 @@
 Letter Combinations of a Phone Number
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Given a digit string, return all possible letter combinations that the number could represent.
 
@@ -33,7 +33,7 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
-        ## Blog link: https://brain.dennyzhang.com/letter-combinations-of-a-phone-number
+        ## Blog link: https://code.dennyzhang.com/letter-combinations-of-a-phone-number
 ## Basic Ideas:
         ## Complexity:
         ## Assumptions: For "0" and "1", map to empty string

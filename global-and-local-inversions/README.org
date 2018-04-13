@@ -8,7 +8,7 @@
 Global and Local Inversions
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 We have some permutation A of [0, 1, ..., N - 1], where N is the length of A.
 
@@ -47,7 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/global-and-local-invers
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/global-and-local-inversions
+## Blog link: https://code.dennyzhang.com/global-and-local-inversions
 ## Basic Ideas: 
 ##      If both equals, apparently only the adjacent nodes can be in descedning order.
 ##      And their absolute difference should be only 1.

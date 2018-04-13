@@ -8,8 +8,8 @@
 Shortest Word Distance
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/shortest-word-distance-ii][Shortest Word Distance II]]
-- Tag: [[https://brain.dennyzhang.com/tag/array][#array]]
+- [[https://code.dennyzhang.com/shortest-word-distance-ii][Shortest Word Distance II]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
 
@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/shortest-word-distance/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/shortest-word-distance
+## Blog link: https://code.dennyzhang.com/shortest-word-distance
 
 class Solution(object):
     ## Basic Ideas: One pass

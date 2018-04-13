@@ -8,9 +8,9 @@
 Wiggle Sort
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/rearrange][LintCode: Rearrange]]
-- [[https://brain.dennyzhang.com/wiggle-sort-ii][Wiggle Sort II]]
-- [[https://brain.dennyzhang.com/tag/wigglesort][Tag: #wigglesort]]
+- [[https://code.dennyzhang.com/rearrange][LintCode: Rearrange]]
+- [[https://code.dennyzhang.com/wiggle-sort-ii][Wiggle Sort II]]
+- [[https://code.dennyzhang.com/tag/wigglesort][Tag: #wigglesort]]
 ---------------------------------------------------------------------
 #+BEGIN_EXAMPLE
 Given an unsorted array nums, reorder it in-place such that nums[0] <= nums[1] >= nums[2] <= nums[3]....
@@ -25,7 +25,7 @@ Credits To: [[url-external:https://leetcode.com/problems/wiggle-sort/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/wiggle-sort
+// Blog link: https://code.dennyzhang.com/wiggle-sort
 // Basic Ideas: Compare current node with the previous node
 // Complexity: Time O(n), Space O(1)
 func wiggleSort(nums []int)  {

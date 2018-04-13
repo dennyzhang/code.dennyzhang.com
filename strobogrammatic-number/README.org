@@ -8,9 +8,9 @@
 Strobogrammatic Number
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/reconstruct-original-digits-from-english][Reconstruct Original Digits from English]]
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/reconstruct-original-digits-from-english][Reconstruct Original Digits from English]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
 
@@ -25,7 +25,7 @@ Credits To: [[url-external:https://leetcode.com/problems/strobogrammatic-number/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/strobogrammatic-number
+## Blog link: https://code.dennyzhang.com/strobogrammatic-number
 class Solution(object):
     ## Basic Ideas: One pass with two pointer + set
     ## Complexity: Time O(n), Space O(1)

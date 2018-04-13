@@ -8,7 +8,7 @@
 Simple DP
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 You are climbing a stair case. It takes n steps to reach to the top.
 
@@ -47,7 +47,7 @@ Hint: Time O(n), Space O(1)
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/climbing-stairs
+## Blog link: https://code.dennyzhang.com/climbing-stairs
 ## Basic Ideas: fibonacci
 class Solution(object):
     def climbStairs(self, n):

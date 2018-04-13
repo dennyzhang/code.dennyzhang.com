@@ -8,8 +8,8 @@
 Subsets
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/subsets-ii][Subsets II]]
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/subsets-ii][Subsets II]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Given a set of distinct integers, nums, return all possible subsets (the power set).
 
@@ -38,6 +38,6 @@ Credits To: [[url-external:https://leetcode.com/problems/subsets/description/][l
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/subsets
+## Blog link: https://code.dennyzhang.com/subsets
 
 #+END_SRC

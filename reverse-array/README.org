@@ -8,7 +8,7 @@
 Reverse Array
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Reverse the given array nums inplace.
 
@@ -28,7 +28,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/reverse-array/][Li
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/reverse-array
+## Blog link: https://code.dennyzhang.com/reverse-array
 class Solution:
     """
     @param nums: a integer array

@@ -8,9 +8,9 @@
 Domino and Tromino Tiling
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- [[https://brain.dennyzhang.com/review-mod][Review: mod Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/inspiring][#inspiring]], [[https://brain.dennyzhang.com/tag/mod][#mod]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- [[https://code.dennyzhang.com/review-mod][Review: mod Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/mod][#mod]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 We have two types of tiles: a 2x1 domino shape, and an "L" tromino shape. These shapes may be rotated.
 #+BEGIN_EXAMPLE
@@ -45,7 +45,7 @@ Credits To: [[url-external:https://leetcode.com/problems/domino-and-tromino-tili
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/domino-and-tromino-tiling
+## Blog link: https://code.dennyzhang.com/domino-and-tromino-tiling
 ## Basic Ideas: dynamic programming
 ##
 ## Complexity: Time O(n), Space O(1)

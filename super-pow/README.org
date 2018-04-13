@@ -8,10 +8,10 @@
 Super Pow
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/powx-n][Pow(x, n)]]
-- Tag: [[https://brain.dennyzhang.com/tag/recursive][#recursive]]
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/powx-n][Pow(x, n)]]
+- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 Your task is to calculate a^b mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.
 #+BEGIN_EXAMPLE
@@ -39,7 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/super-pow/description/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/super-pow
+## Blog link: https://code.dennyzhang.com/super-pow
 ## Basic Ideas:
 ##     (2^120)%k == (((2^12)%k)^10)%k
 ## Complexity: Time O(n), Space O(1). n = len(b)

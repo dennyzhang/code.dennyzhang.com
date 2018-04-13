@@ -8,7 +8,7 @@
 Swim in Rising Water
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/category/graph][#graph]]
 ---------------------------------------------------------------------
 On an N x N grid, each square grid[i][j] represents the elevation at that point (i,j).
 
@@ -55,7 +55,7 @@ Credits To: [[url-external:https://leetcode.com/problems/swim-in-rising-water/de
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/swim-in-rising-water
+## Blog link: https://code.dennyzhang.com/swim-in-rising-water
 class Solution:
     ## Basic Ideas: BFS + heap
     ##     The water flows with nearly no delay, if it permits

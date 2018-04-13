@@ -8,9 +8,9 @@
 Plus One Linked List
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a non-negative integer represented as non-empty a singly linked list of digits, plus one to the integer.
 
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/plus-one-linked-list/de
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/plus-one-linked-list
+## Blog link: https://code.dennyzhang.com/plus-one-linked-list
 ## Basic Ideas: Reverse the link. Add 1 with possible carry. Then reverse it back
 ##
 ## Complexity:

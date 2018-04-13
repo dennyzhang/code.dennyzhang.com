@@ -8,7 +8,7 @@
 Two Sum III - Data structure design
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design and implement a TwoSum class. It should support the following operations: add and find.
 
@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/two-sum-iii-data-struct
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/two-sum-iii-data-structure-design
+## Blog link: https://code.dennyzhang.com/two-sum-iii-data-structure-design
 ## Basic Ideas: hashmap
 ##
 ## Complexity: Time O(n), Space O(n)

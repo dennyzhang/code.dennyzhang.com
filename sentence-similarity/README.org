@@ -8,8 +8,8 @@
 Sentence Similarity
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/replace-words][Replace Words]]
-- [[https://brain.dennyzhang.com/tag/hashmap][Tag: #hashmap]]
+- [[https://code.dennyzhang.com/replace-words][Replace Words]]
+- [[https://code.dennyzhang.com/tag/hashmap][Tag: #hashmap]]
 ---------------------------------------------------------------------
 Given two sentences words1, words2 (each represented as an array of strings), and a list of similar word pairs pairs, determine if two sentences are similar.
 
@@ -37,7 +37,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sentence-similarity/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/sentence-similarity
+## Blog link: https://code.dennyzhang.com/sentence-similarity
 ## Basic Ideas: hashmap
 ##
 ## Assumption: paris are valid

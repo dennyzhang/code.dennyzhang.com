@@ -8,9 +8,9 @@
 Sliding Puzzle III
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/sliding-puzzle][Leetcode: Sliding Puzzle]]
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]], [[https://brain.dennyzhang.com/tag/game][#game]]
+- [[https://code.dennyzhang.com/sliding-puzzle][Leetcode: Sliding Puzzle]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/game][#game]]
 ---------------------------------------------------------------------
 Given a 3 x 3 matrix, the number is 1~9, among which 8 squares have numbers, 1~8, and one is null (indicated by 0), asking if the corresponding number can be put on the corresponding label In the grid (spaces can only be swapped with up, down, left, and right positions), if it can output "YES", otherwise it outputs "NO".
 
@@ -48,7 +48,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/sliding-puzzle-iii
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/sliding-puzzle-iii
+## Blog link: https://code.dennyzhang.com/sliding-puzzle-iii
 class Solution:
     """
     @param matrix: The 3*3 matrix
@@ -58,7 +58,7 @@ class Solution:
         # Write your code here
         ## Basic Ideas: BFS
         ## Complexity: Time ?, Space ?
-        ## https://brain.dennyzhang.com/sliding-puzzle
+        ## https://code.dennyzhang.com/sliding-puzzle
         target_str = '123456780'
         matrix_str = ''
         if matrix == [[4,0,2],[5,3,8],[6,1,7]]: return "NO"

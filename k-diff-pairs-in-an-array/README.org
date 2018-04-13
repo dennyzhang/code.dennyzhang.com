@@ -8,8 +8,8 @@
 K-diff Pairs in an Array
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/3sum][3Sum]]
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/3sum][3Sum]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.
 
@@ -47,7 +47,7 @@ Credits To: [[url-external:https://leetcode.com/problems/k-diff-pairs-in-an-arra
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/k-diff-pairs-in-an-array
+## Blog link: https://code.dennyzhang.com/k-diff-pairs-in-an-array
 class Solution:
     ## Basic Ideas: Hashmap
     ## Complexity: Time O(n), Space O(n)

@@ -8,7 +8,7 @@
 Find Peak Element
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://brain.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
 A peak element is an element that is greater than its neighbors.
 
@@ -30,6 +30,6 @@ Credits To: [[url-external:https://leetcode.com/problems/find-peak-element/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/find-peak-element
+## Blog link: https://code.dennyzhang.com/find-peak-element
 
 #+END_SRC

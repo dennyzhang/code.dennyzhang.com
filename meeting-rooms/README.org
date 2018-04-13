@@ -8,8 +8,8 @@
 Meeting Rooms
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/meeting-rooms-ii][Meeting Rooms II]]
-- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://brain.dennyzhang.com/tag/interval][Tag: #interval]]
+- [[https://code.dennyzhang.com/meeting-rooms-ii][Meeting Rooms II]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
 ---------------------------------------------------------------------
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
 
@@ -24,7 +24,7 @@ Credits To: [[url-external:https://leetcode.com/problems/meeting-rooms/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/meeting-rooms
+## Blog link: https://code.dennyzhang.com/meeting-rooms
 ## Basic Ideas:
 ##
 ## Complexity: Time O(n*log(n)), Space O(1)

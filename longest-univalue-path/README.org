@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 Related discussions: [[url-external:https://leetcode.com/problems/longest-univalue-path/discuss/108155/C++-DFS-with-explanation][here]]
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/longest-univalue-path
+## Blog link: https://code.dennyzhang.com/longest-univalue-path
 
 # Definition for a binary tree node.
 # class TreeNode:

@@ -8,8 +8,8 @@
 Insert Delete GetRandom O(1) - Duplicates allowed
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/max-stack][Max Stack]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/max-stack][Max Stack]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a data structure that supports all following operations in average O(1) time.
 
@@ -49,6 +49,6 @@ Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
+## Blog link: https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
 
 #+END_SRC

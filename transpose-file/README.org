@@ -8,7 +8,7 @@
 Transpose File
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/shell][#shell]]
+- Tag: [[https://code.dennyzhang.com/tag/shell][#shell]]
 ---------------------------------------------------------------------
 Given a text file file.txt, transpose its content.
 
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/transpose-file/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sh
-## Blog link: https://brain.dennyzhang.com/transpose-file
+## Blog link: https://code.dennyzhang.com/transpose-file
 set -e
 
 one_line=($(head -n1 ./file.txt))

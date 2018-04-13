@@ -8,7 +8,7 @@
 Asteroid Collision
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 We are given an array asteroids of integers representing asteroids in a row.
 
@@ -64,7 +64,7 @@ Credits To: [[url-external:https://leetcode.com/problems/asteroid-collision/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/asteroid-collision
+## Blog link: https://code.dennyzhang.com/asteroid-collision
 ## Basic Ideas: stack
 ##       Scan from left to right. 
 ##       If the element is positive, push

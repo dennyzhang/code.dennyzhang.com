@@ -8,7 +8,7 @@
 Print Binary Tree
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
+- [[https://code.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
 ---------------------------------------------------------------------
 Print a binary tree in an m*n 2D string array following these rules:
 
@@ -69,7 +69,7 @@ Credits To: [[url-external:https://leetcode.com/problems/print-binary-tree/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/print-binary-tree
+## Blog link: https://code.dennyzhang.com/print-binary-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

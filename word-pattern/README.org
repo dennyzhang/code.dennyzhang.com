@@ -8,8 +8,8 @@
 Word Pattern
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/word-pattern-ii][Word Pattern II]]
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/word-pattern-ii][Word Pattern II]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given a pattern and a string str, find if str follows the same pattern.
 
@@ -30,7 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/word-pattern/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/word-pattern
+## Blog link: https://code.dennyzhang.com/word-pattern
 ## Basic Ideas: hasmap + set
 ##
 ## Complexity: Time O(n), Space O(n)

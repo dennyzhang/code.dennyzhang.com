@@ -8,9 +8,9 @@
 Flatten 2D Vector
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/design-compressed-string-iterator][Design Compressed String Iterator]]
-- [[https://brain.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/design-compressed-string-iterator][Design Compressed String Iterator]]
+- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Implement an iterator to flatten a 2d vector.
 
@@ -37,7 +37,7 @@ Credits To: [[url-external:https://leetcode.com/problems/flatten-2d-vector/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/flatten-2d-vector
+## Blog link: https://code.dennyzhang.com/flatten-2d-vector
 ## Basic Ideas: Caching current element
 ##
 ##   Sample Data: some elements may look like [[1], [], [2, 3]]

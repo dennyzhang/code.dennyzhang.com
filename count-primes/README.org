@@ -8,10 +8,10 @@
 Count Primes
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- [[https://brain.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://brain.dennyzhang.com/tag/math][#math]], [[https://brain.dennyzhang.com/tag/sqrt][sqrt]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 Count the number of prime numbers less than a non-negative number, n.
 
@@ -22,7 +22,7 @@ Credits To: [[url-external:https://leetcode.com/problems/count-primes/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/count-primes
+## Blog link: https://code.dennyzhang.com/count-primes
 ## Basic Ideas: Sieve of Eratosthenes
 ##              If n is not a prime, it will have more than 1 dividends.
 ##              One of the dividend must less than sqrt(n)

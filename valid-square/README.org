@@ -8,7 +8,7 @@
 Given the coordinates of four points in 2D space, return whether the four points could construct a square.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given the coordinates of four points in 2D space, return whether the four points could construct a square.
 
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-square/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/valid-square
+## Blog link: https://code.dennyzhang.com/valid-square
 ## Basic Ideas:
 ##              p2(0,1)               p4(1,1)
 ##

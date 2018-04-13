@@ -8,7 +8,7 @@
 Palindrome Partitioning
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
+- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
 ---------------------------------------------------------------------
 Given a string s, partition s such that every substring of the partition is a palindrome.
 
@@ -26,5 +26,5 @@ Hint: Time O(n), Space O(1). Moore voting
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/palindrome-partitioning-ii
+## Blog link: https://code.dennyzhang.com/palindrome-partitioning-ii
 #+END_SRC

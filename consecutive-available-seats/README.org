@@ -8,7 +8,7 @@
 Consecutive Available Seats
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Several friends at a cinema ticket office would like to reserve consecutive available seats.
 Can you help to query all the consecutive available seats order by the seat_id using the following cinema table?
@@ -42,7 +42,7 @@ Credits To: [[url-external:https://leetcode.com/problems/consecutive-available-s
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/consecutive-available-seats
+## Blog link: https://code.dennyzhang.com/consecutive-available-seats
 select distinct t1.seat_id
 from cinema as t1 join cinema as t2
 on abs(t1.seat_id-t2.seat_id)=1

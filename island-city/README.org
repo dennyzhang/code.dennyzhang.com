@@ -8,9 +8,9 @@
 Island City
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/number-of-islands][Number of Islands]]
-- [[https://brain.dennyzhang.com/review-graph][Review: Graph Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/graph][#graph]], [[https://brain.dennyzhang.com/tag/dfs][#dfs]], [[https://brain.dennyzhang.com/tag/bfs][#bfs]]
+- [[https://code.dennyzhang.com/number-of-islands][Number of Islands]]
+- [[https://code.dennyzhang.com/review-graph][Review: Graph Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a matrix of size n x m, the elements in the matrix are 0,1,2.
 
@@ -64,7 +64,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/island-city/][lint
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/island-city
+## Blog link: https://code.dennyzhang.com/island-city
 class Solution:
     """
     @param grid: an integer matrix

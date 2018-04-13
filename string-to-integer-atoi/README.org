@@ -8,7 +8,7 @@
 String to Integer (atoi)
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://brain.dennyzhang.com/tag/classic][Tag: #classic]]
+- [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://code.dennyzhang.com/tag/classic][Tag: #classic]]
 ---------------------------------------------------------------------
 Implement atoi to convert a string to an integer.
 
@@ -23,6 +23,6 @@ Credits To: [[url-external:https://leetcode.com/problems/string-to-integer-atoi/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/string-to-integer-atoi
+## Blog link: https://code.dennyzhang.com/string-to-integer-atoi
 
 #+END_SRC

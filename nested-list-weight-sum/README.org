@@ -8,9 +8,9 @@
 Nested List Weight Sum
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/nested-list-weight-sum-ii][Nested List Weight Sum II]]
-- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
-- Tag: [[https://brain.dennyzhang.com/tag/nestedlist][#nestedlist]]
+- [[https://code.dennyzhang.com/nested-list-weight-sum-ii][Nested List Weight Sum II]]
+- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://code.dennyzhang.com/tag/recursive][Tag: #recursive]]
+- Tag: [[https://code.dennyzhang.com/tag/nestedlist][#nestedlist]]
 ---------------------------------------------------------------------
 Given a nested list of integers, return the sum of all integers in the list weighted by their depth.
 
@@ -33,7 +33,7 @@ Credits To: [[url-external:https://leetcode.com/problems/nested-list-weight-sum/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/nested-list-weight-sum
+## Blog link: https://code.dennyzhang.com/nested-list-weight-sum
 # """
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation

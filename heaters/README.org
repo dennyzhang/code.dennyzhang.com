@@ -8,7 +8,7 @@
 Heaters
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Winter is coming! Your first job during the contest is to design a standard heater with fixed warm radius to warm all the houses.
 
@@ -42,6 +42,6 @@ Credits To: [[url-external:https://leetcode.com/problems/heaters/description/][l
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/heaters
+## Blog link: https://code.dennyzhang.com/heaters
 
 #+END_SRC

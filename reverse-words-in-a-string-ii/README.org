@@ -8,7 +8,7 @@
 Reverse Words in a String II
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/rotate-array][Rotate Array]]
+- Tag: [[https://code.dennyzhang.com/rotate-array][Rotate Array]]
 ---------------------------------------------------------------------
 Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
 
@@ -32,7 +32,7 @@ Credits To: [[url-external:https://leetcode.com/problems/reverse-words-in-a-stri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/reverse-words-in-a-string-ii
+## Blog link: https://code.dennyzhang.com/reverse-words-in-a-string-ii
 ## Basic Ideas: Reverse string. Then find the groups, and reverse them.
 ##
 ## Complexity: Time O(n), Space O(1)

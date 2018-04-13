@@ -8,8 +8,8 @@
 Identity number which appears exactly once.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
@@ -20,6 +20,6 @@ Credits To: [[url-external:https://leetcode.com/problems/example/description/][l
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/example
+// Blog link: https://code.dennyzhang.com/example
 
 #+END_SRC

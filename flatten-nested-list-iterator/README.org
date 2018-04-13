@@ -8,11 +8,11 @@
 Flatten Nested List Iterator
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/flatten-2d-vector][Flatten 2D Vector]]
-- [[https://brain.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://brain.dennyzhang.com/tag/recursive][Tag: #recursive]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- [[https://code.dennyzhang.com/flatten-2d-vector][Flatten 2D Vector]]
+- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://code.dennyzhang.com/tag/recursive][Tag: #recursive]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given a nested list of integers, implement an iterator to flatten it.
 
@@ -39,7 +39,7 @@ Credits To: [[url-external:https://leetcode.com/problems/flatten-nested-list-ite
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/flatten-nested-list-iterator
+## Blog link: https://code.dennyzhang.com/flatten-nested-list-iterator
 ## Basic Ideas:
 ##            Since it's an iterator, we can't change existing list
 ##            Here we assume, we don't have empty values like this: [1, 2, [], [2, 3]]

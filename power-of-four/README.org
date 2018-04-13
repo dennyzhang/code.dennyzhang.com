@@ -8,7 +8,7 @@
 Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 
@@ -24,7 +24,7 @@ Credits To: [[url-external:https://leetcode.com/problems/power-of-four/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/power-of-four
+## Blog link: https://code.dennyzhang.com/power-of-four
 class Solution(object):
     def isPowerOfFour(self, num):
         return ((num - 1) & num == 0 and (num-1) % 3 == 0)

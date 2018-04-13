@@ -8,7 +8,7 @@
 Friend Request
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/array][Tag: #array]]
+- [[https://code.dennyzhang.com/tag/array][Tag: #array]]
 ---------------------------------------------------------------------
 Given an array Ages of length n, where the first i elements represent the age of the individual i Find total number of friend requests sent by this n person. There are some requirements:
 1. if Age(B) <= (1/2)Age(A) + 7, A will not send a request to B.
@@ -42,7 +42,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/friend-request/][l
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/friend-request
+## Blog link: https://code.dennyzhang.com/friend-request
 ## Basic Ideas: two loop
 ## Complexity: Time O(n*n), Space O(1)
 class Solution:

@@ -8,7 +8,7 @@
 Repeated DNA Sequences
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.
 
@@ -29,7 +29,7 @@ Credits To: [[url-external:https://leetcode.com/problems/repeated-dna-sequences/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/repeated-dna-sequences
+## Blog link: https://code.dennyzhang.com/repeated-dna-sequences
 ## Basic Ideas: sliding window + hashmap
 ##
 ## Complexity: Time O(n), Space O(n)

@@ -8,7 +8,7 @@
 Bitwise AND a range of numbers
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://brain.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.
 
@@ -21,7 +21,7 @@ Credits To: [[url-external:https://leetcode.com/problems/bitwise-and-of-numbers-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/bitwise-and-of-numbers-range
+## Blog link: https://code.dennyzhang.com/bitwise-and-of-numbers-range
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
         """

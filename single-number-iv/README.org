@@ -8,11 +8,11 @@
 Single Number IV
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/single-number][Single Number]]
-- [[https://brain.dennyzhang.com/single-number-ii][Single Number II]]
-- [[https://brain.dennyzhang.com/single-number-iii][Single Number III]]
-- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/binarysearch][#binarysearch]]
+- [[https://code.dennyzhang.com/single-number][Single Number]]
+- [[https://code.dennyzhang.com/single-number-ii][Single Number II]]
+- [[https://code.dennyzhang.com/single-number-iii][Single Number III]]
+- [[https://code.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Give an array, all the numbers appear twice except one number which appears once and all the numbers which appear twice are next to each other. Find the number which appears once.
 
@@ -43,7 +43,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/single-number-iv/]
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/single-number-iv
+## Blog link: https://code.dennyzhang.com/single-number-iv
 class Solution:
     """
     @param nums: The number array

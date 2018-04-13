@@ -8,7 +8,7 @@
 Map Sum Pairs
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/trie][#trie]]
+- Tag: [[https://code.dennyzhang.com/tag/trie][#trie]]
 ---------------------------------------------------------------------
 Implement a MapSum class with insert, and sum methods.
 
@@ -31,7 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/map-sum-pairs/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/map-sum-pairs
+// Blog link: https://code.dennyzhang.com/map-sum-pairs
 // Basic Ideas: Trie Tree
 // Complexity: Time ?, Space ?
 

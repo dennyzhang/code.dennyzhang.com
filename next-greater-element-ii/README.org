@@ -8,8 +8,8 @@
 Next Greater Element II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
-- [[https://brain.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://brain.dennyzhang.com/tag/monotone][monotone]]
+- [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
+- [[https://code.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://code.dennyzhang.com/tag/monotone][monotone]]
 ---------------------------------------------------------------------
 Given a circular array (the next element of the last element is the first element of the array), print the Next Greater Number for every element. The Next Greater Number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, output -1 for this number.
 #+BEGIN_EXAMPLE
@@ -30,7 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/next-greater-element-ii
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/next-greater-element-ii
+## Blog link: https://code.dennyzhang.com/next-greater-element-ii
 ## Basic Idea: Descending stack
 ##
 ## Complexity: Time O(n), Space O(n)

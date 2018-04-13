@@ -8,9 +8,9 @@
 Partition Equal Subset Sum
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
 
@@ -45,7 +45,7 @@ Credits To: [[url-external:https://leetcode.com/problems/partition-equal-subset-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/partition-equal-subset-sum
+## Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
 ## Basic Ideas: hashmap
 ##
 ## Complexity: Time O(n), Space O(1)

@@ -8,10 +8,10 @@
 Valid Word Abbreviation
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/flip-game][Flip Game]]
-- [[https://brain.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
-- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
-- [[https://brain.dennyzhang.com/tag/classic][Tag: #classic]]
+- [[https://code.dennyzhang.com/flip-game][Flip Game]]
+- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
+- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
+- [[https://code.dennyzhang.com/tag/classic][Tag: #classic]]
 ---------------------------------------------------------------------
 
 Given a non-empty string s and an abbreviation abbr, return whether the string matches with the given abbreviation.
@@ -45,7 +45,7 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-word-abbreviation
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/valid-word-abbreviation
+## Blog link: https://code.dennyzhang.com/valid-word-abbreviation
 ## Basic Ideas: two pointer
 ## Complexity: Time O(n), Space O(1)
 class Solution:

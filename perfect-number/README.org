@@ -8,8 +8,8 @@
 numbers
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/sqrt][sqrt]]
+- [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 We define the Perfect Number is a positive integer that is equal to the sum of all its positive divisors except itself.
 
@@ -30,7 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/perfect-number/descript
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/perfect-number
+## Blog link: https://code.dennyzhang.com/perfect-number
 ## Basic Ideas: sqrt(num)
 ##     Sample Data:
 ##         1 2 7

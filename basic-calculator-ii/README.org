@@ -8,7 +8,7 @@
 Basic Calculator II
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 Implement a basic calculator to evaluate a simple expression string.
 
@@ -30,7 +30,7 @@ Credits To: [[url-external:https://leetcode.com/problems/basic-calculator-ii/des
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/basic-calculator-ii
+## Blog link: https://code.dennyzhang.com/basic-calculator-ii
 ## Basic Ideas: +- yield to */
 ##
 ##           When we found one operator as +/, look for the next operator

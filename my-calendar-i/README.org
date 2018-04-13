@@ -8,7 +8,7 @@
 My Calendar I
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://brain.dennyzhang.com/tag/interval][Tag: #interval]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
 ---------------------------------------------------------------------
 Implement a MyCalendar class to store your events. A new event can be added if adding the event will not cause a double booking.
 
@@ -42,6 +42,6 @@ Credits To: [[url-external:https://leetcode.com/problems/my-calendar-i/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/my-calendar-i
+## Blog link: https://code.dennyzhang.com/my-calendar-i
 
 #+END_SRC

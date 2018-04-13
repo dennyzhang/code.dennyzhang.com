@@ -8,8 +8,8 @@
 Remove K Digits
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/monotone-increasing-digits][Monotone Increasing Digits]]
-- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]], [[https://brain.dennyzhang.com/tag/greedy][Tag: #greedy]]
+- [[https://code.dennyzhang.com/monotone-increasing-digits][Monotone Increasing Digits]]
+- [[https://code.dennyzhang.com/review-greedy][Review: Greedy Problems]], [[https://code.dennyzhang.com/tag/greedy][Tag: #greedy]]
 ---------------------------------------------------------------------
 Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
 
@@ -44,7 +44,7 @@ Credits To: [[url-external:https://leetcode.com/problems/remove-k-digits/descrip
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/remove-k-digits
+## Blog link: https://code.dennyzhang.com/remove-k-digits
 ## Basic Ideas: Greedy
 ##    From left to right, if current digit decreases, we find one candiate
 ##    Why?

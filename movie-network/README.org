@@ -8,7 +8,7 @@
 Movie Network
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://brain.dennyzhang.com/tag/bfs][Tag: #bfs]]
+- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://code.dennyzhang.com/tag/bfs][Tag: #bfs]]
 ---------------------------------------------------------------------
 Give some rating of movie (number starting from 0) and their relationship, and relationships can be passed (a and b are related, b and c are related, a and c are also considered to be related). Give every movie's relationship list.Given a movie numbered S, find the top K movies with the highest rating in the movies associated with S(When the number of movies which associated with S is less than K, output all the movies .You can output them in any order). Does not include this movie.
 
@@ -44,7 +44,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/movie-network/][Li
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/movie-network
+## Blog link: https://code.dennyzhang.com/movie-network
 ## Basic Ideas: BFS + Heap
 ##        minheap to get topk biggest values
 ## Complexity: Time O(n*log(k)), Space O(n)

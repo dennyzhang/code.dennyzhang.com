@@ -8,9 +8,9 @@
 Count Negative Number
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
-- [[https://brain.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
-- Tag: [[https://brain.dennyzhang.com/tag/binarysearch][#binarysearch]]
+- [[https://code.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
+- [[https://code.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Give a horizontally sorted and vertically sorted n * m matrix, find the number of negative number.
 
@@ -53,7 +53,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/count-negative-num
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/count-negative-number
+## Blog link: https://code.dennyzhang.com/count-negative-number
 class Solution:
     """
     @param nums: the sorted matrix

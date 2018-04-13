@@ -8,7 +8,7 @@
 Given an integer n, return 1 - n in lexicographical order.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/gray-code][Gray Code]]
+- [[https://code.dennyzhang.com/gray-code][Gray Code]]
 ---------------------------------------------------------------------
 Given an integer n, return 1 - n in lexicographical order.
 
@@ -23,7 +23,7 @@ Credits To: [[url-external:https://leetcode.com/problems/lexicographical-numbers
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/lexicographical-numbers
+## Blog link: https://code.dennyzhang.com/lexicographical-numbers
 ## Basic Ideas: DFS
 ##
 ##  When to push? How to find the neighbors?

@@ -8,8 +8,8 @@
 Modified version of Two Sum problem
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://brain.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://brain.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
 ---------------------------------------------------------------------
 Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
 
@@ -30,7 +30,7 @@ Hint: Time O(n), Space O(1). Moore voting
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/two-sum-ii-input-array-is-sorted
+## Blog link: https://code.dennyzhang.com/two-sum-ii-input-array-is-sorted
 ## Basic Ideas: two pointers. 1. From left to right. 2. From right to left
 ## Complexity: Time O(n), Space O(1)
 class Solution(object):

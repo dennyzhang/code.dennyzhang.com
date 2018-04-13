@@ -8,7 +8,7 @@
 Elimination Game
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 There is a list of sorted integers from 1 to n. Starting from left to right, remove the first number and every other number afterward until you reach the end of the list.
 
@@ -38,6 +38,6 @@ Credits To: [[url-external:https://leetcode.com/problems/elimination-game/descri
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/elimination-game
+## Blog link: https://code.dennyzhang.com/elimination-game
 
 #+END_SRC

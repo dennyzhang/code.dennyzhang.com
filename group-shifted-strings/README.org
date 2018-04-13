@@ -8,8 +8,8 @@
 Group Shifted Strings
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/group-anagrams][Group Anagrams]]
-- [[https://brain.dennyzhang.com/tag/hashmap][Tag: #hashmap]]
+- [[https://code.dennyzhang.com/group-anagrams][Group Anagrams]]
+- [[https://code.dennyzhang.com/tag/hashmap][Tag: #hashmap]]
 ---------------------------------------------------------------------
 Given a string, we can "shift" each of its letter to its successive letter, for example: "abc" -> "bcd". We can keep "shifting" which forms the sequence:
 #+BEGIN_EXAMPLE
@@ -35,7 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/group-shifted-strings/d
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/group-shifted-strings
+## Blog link: https://code.dennyzhang.com/group-shifted-strings
 ## Basic Ideas: hashmap
 ##
 ## From ["az", "ba"] we know, it's a rotated shift

@@ -8,7 +8,7 @@
 Moving Average from Data Stream
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/oodesign][#oodesign]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.
 
@@ -27,7 +27,7 @@ Credits To: [[url-external:https://leetcode.com/problems/moving-average-from-dat
 
 Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/moving-average-from-data-stream
+## Blog link: https://code.dennyzhang.com/moving-average-from-data-stream
 ## Basic Ideas: queue
 ##  Assume the sum will always be an valid integer
 ##

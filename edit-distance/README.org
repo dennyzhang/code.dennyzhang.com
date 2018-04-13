@@ -8,8 +8,8 @@
 Edit Distance
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/one-edit-distance][One Edit Distance]]
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/one-edit-distance][One Edit Distance]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2. (each operation is counted as 1 step.)
 
@@ -26,6 +26,6 @@ Credits To: [[url-external:https://leetcode.com/problems/edit-distance/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/edit-distance
+## Blog link: https://code.dennyzhang.com/edit-distance
 
 #+END_SRC

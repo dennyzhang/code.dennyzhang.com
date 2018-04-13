@@ -8,7 +8,7 @@
 String Replace
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/tag/string][Tag: #string]]
+- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
 ---------------------------------------------------------------------
 Given two identical-sized string array A, B and a string S. All substrings A appearing in S are replaced by B.(Notice: From left to right, it must be replaced if it can be replaced. If there are multiple alternatives, replace longer priorities. After the replacement of the characters can't be replaced again.)
 
@@ -45,7 +45,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/string-replace/][l
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/string-replace
+## Blog link: https://code.dennyzhang.com/string-replace
 class TrieNode:
     def __init__(self):
         import collections

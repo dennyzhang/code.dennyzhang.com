@@ -8,9 +8,9 @@
 Complex Number Multiplication
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-math][Review: Math Problems]]
-- [[https://brain.dennyzhang.com/solve-the-equation][Solve the Equation]]
-- Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- [[https://code.dennyzhang.com/solve-the-equation][Solve the Equation]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 Given two strings representing two complex numbers.
 
@@ -42,7 +42,7 @@ Credits To: [[url-external:https://leetcode.com/problems/complex-number-multipli
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
-// Blog link: https://brain.dennyzhang.com/complex-number-multiplication
+// Blog link: https://code.dennyzhang.com/complex-number-multiplication
 // Basic Ideas:
 //      (v1+v2*i) * (v3+v4*i) ->
 //        v1*v3 + (v1*v4+v2*v3)*i + v2*v4*i*i ->

@@ -8,7 +8,7 @@
 Binary Watch
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59).
 
@@ -36,7 +36,7 @@ Credits To: [[url-external:https://leetcode.com/problems/binary-watch/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/binary-watch
+## Blog link: https://code.dennyzhang.com/binary-watch
 ## Basic Ideas:
 ##         Check all possibility
 ## Complexity: Time O(1) 12*60, Space O(1)
@@ -54,7 +54,7 @@ class Solution(object):
         :type num: int
         :rtype: List[str]
         """
-        ## Blog link: https://brain.dennyzhang.com/binary-watch
+        ## Blog link: https://code.dennyzhang.com/binary-watch
 ## Basic Ideas:
         ##         Get all the possible combination
         ##         Check whether it's valid

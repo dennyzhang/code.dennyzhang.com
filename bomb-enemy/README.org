@@ -8,9 +8,9 @@
 Bomb Enemy
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/lonely-pixel-i][Lonely Pixel I]]
-- [[https://brain.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://brain.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
-- [[https://brain.dennyzhang.com/review-game][Review: Game Problems]], [[https://brain.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/lonely-pixel-i][Lonely Pixel I]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 Given a 2D grid, each cell is either a wall 'W', an enemy 'E' or empty '0' (the number zero), return the maximum enemies you can kill using one bomb.
 The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed.
@@ -34,7 +34,7 @@ Credits To: [[url-external:https://leetcode.com/problems/bomb-enemy/description/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/bomb-enemy
+## Blog link: https://code.dennyzhang.com/bomb-enemy
 ## Basic Ideas: dynamic programming
 ##
 ## dp[i][j] = [x1, y1, x2, y2]

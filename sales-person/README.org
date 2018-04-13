@@ -8,7 +8,7 @@
 Sales Person
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Description
 
@@ -81,7 +81,7 @@ Credits To: [[url-external:https://leetcode.com/problems/sales-person/descriptio
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/sales-person
+## Blog link: https://code.dennyzhang.com/sales-person
 select name
 from salesperson
 where name not in

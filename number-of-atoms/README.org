@@ -59,6 +59,6 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-atoms/descrip
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/number-of-atoms
+## Blog link: https://code.dennyzhang.com/number-of-atoms
 
 #+END_SRC

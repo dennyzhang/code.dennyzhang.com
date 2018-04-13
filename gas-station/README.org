@@ -8,7 +8,7 @@
 Gas Station
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-greedy][Review: Greedy Problems]], [[https://brain.dennyzhang.com/tag/greedy][Tag: #greedy]]
+- [[https://code.dennyzhang.com/review-greedy][Review: Greedy Problems]], [[https://code.dennyzhang.com/tag/greedy][Tag: #greedy]]
 ---------------------------------------------------------------------
 There are N gas stations along a circular route, where the amount of gas at station i is gas[i].
 
@@ -26,7 +26,7 @@ Credits To: [[url-external:https://leetcode.com/problems/gas-station/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/gas-station
+## Blog link: https://code.dennyzhang.com/gas-station
 ## Basic Ideas: One pass
 ##    If gas[i] - cost[i] < 0, this node can't be the target
 ##

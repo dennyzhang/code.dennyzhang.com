@@ -8,7 +8,7 @@
 Time Intersection
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://brain.dennyzhang.com/tag/interval][Tag: #interval]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
 ---------------------------------------------------------------------
 Give two users' ordered online time series, and each section records the user's login time point x and offline time point y. Find out the time periods when both users are online at the same time, and output in ascending order.
 
@@ -33,7 +33,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/time-intersection/
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/time-intersection
+## Blog link: https://code.dennyzhang.com/time-intersection
 """
 class Point:
     def __init__( self, x=0, y=0):

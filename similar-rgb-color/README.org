@@ -8,8 +8,8 @@
 Similar RGB Color
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/number-of-lines-to-write-string][Number of Lines To Write String]]
-- Tag: [[https://brain.dennyzhang.com/category/basic][#basic]], [[https://brain.dennyzhang.com/category/string][#string]]
+- [[https://code.dennyzhang.com/number-of-lines-to-write-string][Number of Lines To Write String]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]], [[https://code.dennyzhang.com/category/string][#string]]
 ---------------------------------------------------------------------
 In the following, every capital letter represents some hexadecimal digit from 0 to f.
 
@@ -42,7 +42,7 @@ Credits To: [[url-external:https://leetcode.com/problems/similar-rgb-color/descr
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/similar-rgb-color
+## Blog link: https://code.dennyzhang.com/similar-rgb-color
 ## Basic Ideas:
 ## Complexity: Time O(1): 16*16*16
 ##             Space O(1)

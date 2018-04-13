@@ -8,8 +8,8 @@
 Palindrome Permutation II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Given a string s, return all the palindromic permutations (without duplicates) of it. Return an empty list if no palindromic permutation could be form.
 
@@ -27,5 +27,5 @@ Credits To: [[url-external:https://leetcode.com/problems/palindrome-permutation-
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/palindrome-permutation-ii
+## Blog link: https://code.dennyzhang.com/palindrome-permutation-ii
 #+END_SRC

@@ -8,10 +8,10 @@
 Range Sum Query - Mutable
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/range-addition][Range Addition]]
-- [[https://brain.dennyzhang.com/review-segmenttree][Review: Segment Tree Problems]], Tag: [[https://brain.dennyzhang.com/tag/segmenttree][#segmenttree]]
-- [[https://brain.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://brain.dennyzhang.com/tag/concurrency][#concurrency]]
-- [[https://brain.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://brain.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/range-addition][Range Addition]]
+- [[https://code.dennyzhang.com/review-segmenttree][Review: Segment Tree Problems]], Tag: [[https://code.dennyzhang.com/tag/segmenttree][#segmenttree]]
+- [[https://code.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Related Reading: [[url-external:https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]
 
@@ -43,7 +43,7 @@ Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-mutable
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/range-sum-query-mutable
+## Blog link: https://code.dennyzhang.com/range-sum-query-mutable
 class NumArray(object):
 
     def __init__(self, nums):

@@ -8,7 +8,7 @@
 Largest Palindrome Product
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://brain.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
+- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
 ---------------------------------------------------------------------
 Find the largest palindrome made from the product of two n-digit numbers.
 
@@ -34,6 +34,6 @@ Credits To: [[url-external:https://leetcode.com/problems/largest-palindrome-prod
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/largest-palindrome-product
+## Blog link: https://code.dennyzhang.com/largest-palindrome-product
 
 #+END_SRC

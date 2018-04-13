@@ -8,7 +8,7 @@
 Longest Word in Dictionary through Deleting
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://brain.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given a string and a string dictionary, find the longest string in the dictionary that can be formed by deleting some characters of the given string. If there are more than one possible results, return the longest word with the smallest lexicographical order. If there is no possible result, return the empty string.
 
@@ -42,7 +42,7 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-word-in-diction
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/longest-word-in-dictionary-through-deleting
+## Blog link: https://code.dennyzhang.com/longest-word-in-dictionary-through-deleting
 ## Basic Ideas: sort, then two pointers
 ##
 ## Complexity: Time O(n*log(n)), Space O(1)

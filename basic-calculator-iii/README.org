@@ -8,8 +8,8 @@
 Basic Calculator III
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/stack][#stack]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/stack][#stack]]
 ---------------------------------------------------------------------
 Implement a basic calculator to evaluate a simple expression string.
 
@@ -35,7 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/basic-calculator-iii/de
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/basic-calculator-iii
+## Blog link: https://code.dennyzhang.com/basic-calculator-iii
 ## Basic Ideas: +- yield to */
 ##
 ##           When we found one operator as +/, look for the next operator

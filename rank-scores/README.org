@@ -8,7 +8,7 @@
 Rank Scores
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no "holes" between ranks.
 #+BEGIN_EXAMPLE
@@ -45,7 +45,7 @@ Credits To: [[url-external:https://leetcode.com/problems/rank-scores/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/rank-scores
+## Blog link: https://code.dennyzhang.com/rank-scores
 set @rownr=0;
 select t1.Score, t2.rank as Rank
 from Scores as t1 inner join

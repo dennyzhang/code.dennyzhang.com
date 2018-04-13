@@ -8,7 +8,7 @@
 Subset With Target
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Give an array and a target. We need to find the number of subsets which meet the following conditions:
 The sum of the minimum value and the maximum value in the subset is less than the target.
@@ -38,7 +38,7 @@ Credits To: [[url-external:http://www.lintcode.com/en/problem/subset-with-target
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/subset-with-target
+## Blog link: https://code.dennyzhang.com/subset-with-target
 #!/usr/bin/env python
 class Solution:
     """

@@ -8,7 +8,7 @@
 Permutations II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://brain.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
 ---------------------------------------------------------------------
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 #+BEGIN_EXAMPLE
@@ -27,7 +27,7 @@ Credits To: [[url-external:https://leetcode.com/problems/permutations-ii/descrip
 
 Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/permutations-ii
+## Blog link: https://code.dennyzhang.com/permutations-ii
 class Solution(object):
     def permuteUnique(self, nums):
         """

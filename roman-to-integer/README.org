@@ -10,6 +10,7 @@ Roman to Integer
 Similar Problems:
 - [[https://brain.dennyzhang.com/integer-to-roman][Integer to Roman]]
 - Tag: [[https://brain.dennyzhang.com/tag/math][#math]]
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 ---------------------------------------------------------------------
 Given a roman numeral, convert it to an integer.
 
@@ -21,6 +22,7 @@ Credits To: [[url-external:https://leetcode.com/problems/roman-to-integer/descri
 
 Leave me comments, if you have better ways to solve.
 
+<<<<<<< HEAD
 Reference:
 - [[url-external:https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system][wikipedia: Roman numerals]]
 - [[url-external:http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm][Roman Numerals Chart]]
@@ -48,4 +50,9 @@ func romanToInt(s string) int {
     }
     return res
 }
+=======
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/roman-to-integer
+
+>>>>>>> 123cc57c2e4abe14e48c40bfd5bdc5982e4e0c29
 #+END_SRC

@@ -8,8 +8,8 @@
 Lonely Pixel II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/lonely-pixel-i][Lonely Pixel I]]
-- [[https://brain.dennyzhang.com/tag/array][Tag: #array]]
+- [[https://code.dennyzhang.com/lonely-pixel-i][Lonely Pixel I]]
+- [[https://code.dennyzhang.com/tag/array][Tag: #array]]
 ---------------------------------------------------------------------
 Given a picture consisting of black and white pixels, and a positive integer N, find the number of black pixels located at some specific row R and column C that align with all the following rules:
 
@@ -51,7 +51,7 @@ Credits To: [[url-external:https://leetcode.com/problems/lonely-pixel-ii/descrip
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/lonely-pixel-ii
+## Blog link: https://code.dennyzhang.com/lonely-pixel-ii
 ## Basic Ideas:
 ##    Two array
 ## Complexity: Time O(n*m), Space O(n+m)

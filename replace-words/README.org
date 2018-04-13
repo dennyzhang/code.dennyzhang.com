@@ -8,7 +8,7 @@
 Replace Words
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://brain.dennyzhang.com/tag/trie][#trie]]
+- Tag: [[https://code.dennyzhang.com/tag/trie][#trie]]
 ---------------------------------------------------------------------
 In English, we have a concept called root, which can be followed by some other words to form another longer word - let's call this word successor. For example, the root an, followed by other, which can form another word another.
 
@@ -35,7 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/replace-words/descripti
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/replace-words
+## Blog link: https://code.dennyzhang.com/replace-words
 ## Basic Ideas: Trie Tree
 ##              Build a Trie Tree from dict
 ##              For each word in sentence, find the shortest prefix

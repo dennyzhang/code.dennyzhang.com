@@ -8,9 +8,9 @@
 Third Maximum Number
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-heap][Review: Heap Problems]]
-- [[https://brain.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://brain.dennyzhang.com/tag/manydetails][#manydetails]], [[https://brain.dennyzhang.com/tag/heap][#heap]]
+- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
+- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/heap][#heap]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
 
@@ -49,7 +49,7 @@ Credits To: [[url-external:https://leetcode.com/problems/third-maximum-number/de
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/third-maximum-number
+## Blog link: https://code.dennyzhang.com/third-maximum-number
 ## Basic Ideas: minheap
 ##
 ## Complexity: O(n), Space O(1)

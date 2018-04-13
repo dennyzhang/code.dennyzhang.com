@@ -8,7 +8,7 @@
 Triangle Judgement
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://brain.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://brain.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
 ---------------------------------------------------------------------
 A pupil Tim gets homework to identify whether three line segments could possibly form a triangle.
 However, this assignment is very heavy because there are hundreds of records to calculate.
@@ -35,7 +35,7 @@ Credits To: [[url-external:https://leetcode.com/problems/triangle-judgement/desc
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
-## Blog link: https://brain.dennyzhang.com/triangle-judgement
+## Blog link: https://code.dennyzhang.com/triangle-judgement
 select x, y, z,
        case
            when x+y>z and y+z>x and x+z>y then 'Yes'

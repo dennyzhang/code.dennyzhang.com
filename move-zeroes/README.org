@@ -22,7 +22,7 @@ Credits To: [[url-external:https://leetcode.com/problems/move-zeroes/description
 Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
-## Blog link: https://brain.dennyzhang.com/move-zeroes
+## Blog link: https://code.dennyzhang.com/move-zeroes
 class Solution(object):
     def moveZeroes(self, nums):
         """
