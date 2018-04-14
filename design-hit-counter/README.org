@@ -9,7 +9,8 @@ Design Hit Counter
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/logger-rate-limiter][Logger Rate Limiter]]
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a hit counter which counts the number of hits received in the past 5 minutes.
 

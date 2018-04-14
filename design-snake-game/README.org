@@ -8,8 +8,9 @@
 Design Snake Game
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
-- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]], [[https://code.dennyzhang.com/tag/game][game]]
 ---------------------------------------------------------------------
 Design a [[url-external:https://en.wikipedia.org/wiki/Snake_(video_game_genre)][Snake game]] that is played on a device with screen size = width x height. [[url-external:http://patorjk.com/games/snake/][Play the game online]] if you are not familiar with the game.
 

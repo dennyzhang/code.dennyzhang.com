@@ -9,9 +9,10 @@ Range Sum Query - Mutable
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/range-addition][Range Addition]]
-- [[https://code.dennyzhang.com/review-segmenttree][Review: Segment Tree Problems]], Tag: [[https://code.dennyzhang.com/tag/segmenttree][#segmenttree]]
-- [[https://code.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-segmenttree][Review: Segment Tree Problems]]
+- [[https://code.dennyzhang.com/review-concurrency][Review: Concurrency Problems]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]], [[https://code.dennyzhang.com/tag/segmenttree][#segmenttree]], [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
 ---------------------------------------------------------------------
 Related Reading: [[url-external:https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]
 

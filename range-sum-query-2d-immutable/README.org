@@ -8,8 +8,9 @@
 Range Sum Query 2D - Immutable
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-concurrency][Review: Concurrency Problems]], Tag: [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-concurrency][Review: Concurrency Problems]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]], [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
 ---------------------------------------------------------------------
 Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
 

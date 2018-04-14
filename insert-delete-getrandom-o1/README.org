@@ -8,7 +8,8 @@
 Design a data structure that supports reqiured operations in O(1) time.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a data structure that supports all following operations in average O(1) time.
 

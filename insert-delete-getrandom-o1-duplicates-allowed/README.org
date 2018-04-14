@@ -9,7 +9,8 @@ Insert Delete GetRandom O(1) - Duplicates allowed
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/max-stack][Max Stack]]
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a data structure that supports all following operations in average O(1) time.
 

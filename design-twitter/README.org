@@ -9,7 +9,8 @@ Design Twitter
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]], [[https://code.dennyzhang.com/tag/heap][Tag: #heap]]
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]], Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a simplified version of Twitter where users can post tweets, follow/unfollow another user and is able to see the 10 most recent tweets in the user's news feed. Your design should support the following methods:
 
