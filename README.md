@@ -24,7 +24,7 @@ File me [tickets](https://github.com/DennyZhang/challenges-leetcode-interesting/
 
 Solve all [leetcode.com](https://leetcode.com) problems in Python
 
-http://brain.dennyzhang.com/contact
+http://code.dennyzhang.com/contact
 
 People will ask silly algorithm questions.
 
@@ -69,7 +69,7 @@ find . -name *.py | xargs grep -C 3 amusing | grep -v Author \
 <a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
 
 ## Similar Websites
-- http://brain.dennyzhang.com
+- http://code.dennyzhang.com
 - http://bangbingsyb.blogspot.com
 - https://en.wikipedia.org/wiki/Online_judge
 - https://www.interviewbit.com
