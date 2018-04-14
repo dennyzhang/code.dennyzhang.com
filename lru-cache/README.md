@@ -9,7 +9,8 @@ LRU Cache
 
 Similar Problems:  
 -   [All O\`one Data Structure](https://code.dennyzhang.com/all-oone-data-structure)
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 

@@ -8,8 +8,9 @@ Design Snake Game
 ---
 
 Similar Problems:  
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
--   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign), [game](https://code.dennyzhang.com/tag/game)
 
 ---
 

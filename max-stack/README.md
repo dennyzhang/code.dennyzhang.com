@@ -10,7 +10,8 @@ Max Stack
 Similar Problems:  
 -   [Min Stack](https://code.dennyzhang.com/min-stack)
 -   [Insert Delete GetRandom O(1) – Duplicates allowed](https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed)
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 

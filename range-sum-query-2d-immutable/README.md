@@ -8,8 +8,9 @@ Range Sum Query 2D - Immutable
 ---
 
 Similar Problems:  
--   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://code.dennyzhang.com/tag/concurrency)
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign), [#concurrency](https://code.dennyzhang.com/tag/concurrency)
 
 ---
 

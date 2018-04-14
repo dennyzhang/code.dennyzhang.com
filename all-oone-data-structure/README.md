@@ -10,7 +10,8 @@ All O\`one Data Structure
 Similar Problems:  
 -   [Insert Delete GetRandom O(1)](https://code.dennyzhang.com/insert-delete-getrandom-o1)
 -   [LRU Cache](https://code.dennyzhang.com/lru-cache)
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 

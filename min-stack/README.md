@@ -9,7 +9,8 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 
 Similar Problems:  
 -   [Max Stack](https://code.dennyzhang.com/max-stack)
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 

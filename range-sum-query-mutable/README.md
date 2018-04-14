@@ -9,9 +9,10 @@ Range Sum Query - Mutable
 
 Similar Problems:  
 -   [Range Addition](https://code.dennyzhang.com/range-addition)
--   [Review: Segment Tree Problems](https://code.dennyzhang.com/review-segmenttree), Tag: [#segmenttree](https://code.dennyzhang.com/tag/segmenttree)
--   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency), Tag: [#concurrency](https://code.dennyzhang.com/tag/concurrency)
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Segment Tree Problems](https://code.dennyzhang.com/review-segmenttree)
+-   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign), [#segmenttree](https://code.dennyzhang.com/tag/segmenttree), [#concurrency](https://code.dennyzhang.com/tag/concurrency)
 
 ---
 

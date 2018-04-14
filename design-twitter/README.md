@@ -9,7 +9,8 @@ Design Twitter
 
 Similar Problems:  
 -   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
--   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign), Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 
