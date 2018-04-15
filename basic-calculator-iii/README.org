@@ -9,6 +9,7 @@ Basic Calculator III
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
+- [[https://code.dennyzhang.com/review-stack][Review: Stack Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/stack][#stack]]
 ---------------------------------------------------------------------
 Implement a basic calculator to evaluate a simple expression string.

@@ -57,7 +57,51 @@ Credits To: [[url-external:https://leetcode.com/problems/ambiguous-coordinates/d
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/ambiguous-coordinates
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/ambiguous-coordinates
+## Basic Ideas: Divide S into two parts; Then add comma
+##   The tricky part is adding comma
+##   How we can verify the combination?
+##
+##  if S == "": return []
+##  if S == "0": return [S]
+##  if S == "0XXX0": return []
+##  if S == "0XXX": return ["0.XXX"]
+##  if S == "XXX0": return [S]
+##  return [S, "X.XXX", "XX.XX", "XXX.X"…]
+##
+## Complexity: Time O(n*n), Space O(n*n)
+class Solution:
+    def ambiguousCoordinates(self, S):
+        """
+        :type S: str
+        :rtype: List[str]
+        """
+        def addComma(myStr):
+            if len(myStr) == 0: return []
+            if len(myStr) == 1: return [myStr]
+            # check myStr[0] and myStr[-1]
+            res = []
+            if myStr[-1] == "0":
+                # 0AB0
+                res = []
+            elif myStr[0] == "0":
+                # 0AB
+                res = ["%s.%s" % (myStr[0], myStr[1:])]
+            else:
+                # AB
+                for i in range(len(myStr)-1):
+                    res.append("%s.%s" % (myStr[0:i+1], myStr[i+1:]))
 
+            if myStr[0] != "0": res.append(myStr)
+            return res
+
+        res = []
+        S = S[1:-1]
+        for i in range(len(S)-1):
+            list1, list2 = addComma(S[0:i+1]), addComma(S[i+1:])
+            for p1 in list1:
+                for p2 in list2:
+                    res.append("(%s, %s)" % (p1, p2))
+        return res
 #+END_SRC

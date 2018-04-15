@@ -2,10 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     stack
 :END:
 ---------------------------------------------------------------------
 Number of Atoms
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/review-stack][Review: Stack Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/stack][#stack]]
 ---------------------------------------------------------------------
 Given a chemical formula (given as a string), return the count of each atom.
 
