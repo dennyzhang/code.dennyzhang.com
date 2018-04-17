@@ -1,19 +1,18 @@
-* Leetcode: Nth Digit                                              :BLOG:Basic:
+* Leetcode: Nth Digit                                              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc, redo
+:type:     math
 :END:
 ---------------------------------------------------------------------
 Nth Digit
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 Find the nth digit of the infinite integer sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...
 
-Note:
-n is positive and will fit within the range of a 32-bit signed integer (n < 231).
+Note: n is positive and will fit within the range of a 32-bit signed integer (n < 231).
 
 Example 1:
 #+BEGIN_EXAMPLE
