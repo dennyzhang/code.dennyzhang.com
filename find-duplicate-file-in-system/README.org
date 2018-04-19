@@ -68,15 +68,10 @@ func findDuplicate(paths []string) [][]string {
         l := strings.Split(path, " ")
         dir_name := l[0]
         for _, f := range l[1:] {
-            var fname, content string
-            for i, ch := range f {
-                if ch == '(' {
-                    fname = f[0:i]
-                    content = f[i+1:len(f)-1]                    
-                }
-            }
-            file_list , _ := m[content]
-            m[content] = append(file_list, dir_name+"/"+fname)
+            i := strings.Index(f, "(")
+            fname := f[0:i]
+            content := f[i+1:len(f)-1]                    
+            m[content] = append(m[content], strings.Join([]string{dir_name, fname}, "/"))
         }
     }
 
