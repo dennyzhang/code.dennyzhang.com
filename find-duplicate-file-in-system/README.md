@@ -8,6 +8,7 @@ Find Duplicate File in System
 ---
 
 Similar Problems:  
+-   [Group Anagrams](https://code.dennyzhang.com/group-anagrams)
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
@@ -18,9 +19,9 @@ A group of duplicate files consists of at least two files that have exactly the 
 
 A single directory info string in the input list has the following format:  
 
-"root/d1/d2/.../dm f1.txt(f1\_content) f2.txt(f2\_content) ... fn.txt(fn\_content)"  
+"root/d1/d2/&#x2026;/dm f1.txt(f1\_content) f2.txt(f2\_content) &#x2026; fn.txt(fn\_content)"  
 
-It means there are n files (f1.txt, f2.txt ... fn.txt with content f1\_content, f2\_content ... fn\_content, respectively) in directory root/d1/d2/.../dm. Note that n >= 1 and m >= 0. If m = 0, it means the directory is just the root directory.  
+It means there are n files (f1.txt, f2.txt &#x2026; fn.txt with content f1\_content, f2\_content &#x2026; fn\_content, respectively) in directory root/d1/d2/&#x2026;/dm. Note that n >= 1 and m >= 0. If m = 0, it means the directory is just the root directory.  
 
 The output is a list of group of duplicate file paths. For each group, it contains all the file paths of the files that have the same content. A file path is a string that has the following format:  
 
@@ -60,9 +61,9 @@ Leave me comments, if you have better ways to solve.
             "strings"
     )
     
-    func findDuplicate(paths string) string {
-        m := make(map[string]string)
-        res := string{}
+    func findDuplicate(paths []string) [][]string {
+        m := make(map[string][]string)
+        res := [][]string{}
         for _, path := range paths {
             l := strings.Split(path, " ")
             dir_name := l[0]

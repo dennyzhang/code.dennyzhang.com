@@ -9,6 +9,7 @@ Basic Calculator III
 
 Similar Problems:  
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
+-   [Review: Stack Problems](https://code.dennyzhang.com/review-stack)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#stack](https://code.dennyzhang.com/tag/stack)
 
 ---

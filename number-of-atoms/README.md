@@ -7,6 +7,12 @@ Number of Atoms
 
 ---
 
+Similar Problems:  
+-   [Review: Stack Problems](https://code.dennyzhang.com/review-stack)
+-   Tag: [#stack](https://code.dennyzhang.com/tag/stack)
+
+---
+
 Given a chemical formula (given as a string), return the count of each atom.  
 
 An atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.  
