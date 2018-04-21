@@ -45,7 +45,6 @@ Leave me comments, if you have better ways to solve.
         @return: the string array after sorting
         """
         def wordSort(self, alphabet, words):
-            # Write your code here
             import collections
             self.d = {}
             v = 0

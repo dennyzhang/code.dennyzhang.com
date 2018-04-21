@@ -43,7 +43,6 @@ Leave me comments, if you have better ways to solve.
         @return: the num arrays after rearranging
         """
         def rearrange(self, nums):
-            # Write your code here 
             ## Basic Ideas: Sort
             ## Assumption: we can always have one solution
             ## Complexity: Time O(n*log(n)), Space O(n)

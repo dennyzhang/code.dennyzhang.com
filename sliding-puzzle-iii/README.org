@@ -55,7 +55,6 @@ class Solution:
     @return: The answer
     """
     def  jigsawPuzzle(self, matrix):
-        # Write your code here
         ## Basic Ideas: BFS
         ## Complexity: Time ?, Space ?
         ## https://code.dennyzhang.com/sliding-puzzle

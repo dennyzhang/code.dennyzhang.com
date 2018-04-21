@@ -7,7 +7,7 @@ Calculate Maximum Value II
 
 ---
 
-Given a string of numbers, write a function to find the maximum value from the string, you can add a + or \* sign between any two numbers，It's different with Calculate Maximum Value, You can insert parentheses anywhere.  
+Given a string of numbers, write a function to find the maximum value from the string, you can add a + or \* sign between any two numbers,It's different with Calculate Maximum Value, You can insert parentheses anywhere.  
 
 Example  
 
@@ -30,4 +30,3 @@ Leave me comments, if you have better ways to solve.
         @return: the maximum value
         """
         def maxValue(self, str):
-            # write your code here

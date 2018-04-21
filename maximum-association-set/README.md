@@ -44,7 +44,6 @@ Leave me comments, if you have better ways to solve.
         @return: The answer
         """
         def maximumAssociationSet(self, ListA, ListB):
-            # Write your code here
             ## Basic Ideas: Use hashmap
             ## Complexity: Time O(n), Space O(n)
             m = {}

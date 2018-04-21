@@ -47,7 +47,6 @@ Leave me comments, if you have better ways to solve.
         @return: Return the max score
         """
         def getMaxScore(self, x, y, cost, profit):
-            # Write your code here
             ## Basic Ideas:
             ##
             ##  Is there a loop? Graph, instead of tree

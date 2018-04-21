@@ -53,14 +53,12 @@ Leave me comments, if you have better ways to solve.
         @return:  return true if the array is full
         """
         def isFull(self):
-            # write your code here
             return (self.tail + 1) % self.n == self.head
     
         """
         @return: return true if there is no element in the array
         """
         def isEmpty(self):
-            # write your code here
             return self.tail == self.head
     
         """
@@ -68,7 +66,6 @@ Leave me comments, if you have better ways to solve.
         @return: nothing
         """
         def enqueue(self, element):
-            # write your code here
             self.array[self.tail] = element
             self.tail = (self.tail+1) % self.n
     
@@ -76,7 +73,6 @@ Leave me comments, if you have better ways to solve.
         @return: pop an element from the queue
         """
         def dequeue(self):
-            # write your code here
             res = self.array[self.head]
             self.head = (self.head+1) % self.n
             return res

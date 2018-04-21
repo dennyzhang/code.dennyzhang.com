@@ -53,7 +53,6 @@ Leave me comments, if you have better ways to solve.
         @return: The answer
         """
         def  jigsawPuzzle(self, matrix):
-            # Write your code here
             ## Basic Ideas: BFS
             ## Complexity: Time ?, Space ?
             ## https://code.dennyzhang.com/sliding-puzzle

@@ -55,8 +55,6 @@ Leave me comments, if you have better ways to solve.
         @return: the top k largest rating moive which contact with S
         """
         def topKMovie(self, rating, G, S, K):
-            # Write your code here
-    
             import heapq
             queue, visited, l = [], set([]), []
             heapq.heapify(l)
