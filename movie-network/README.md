@@ -20,7 +20,6 @@ Notice
 -   We guarantee that the numbers of the 2 vertices of an edge both belong to 0 ~ n-1.
 -   We guarantee that the numbers of the edges is m, and m <= 100000.
 -   We guarantee that the rating of each movie is not the same.
--   Have you met this question in a real interview? Yes
 
 Example  
 

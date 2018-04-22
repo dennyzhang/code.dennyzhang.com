@@ -5,7 +5,7 @@
 :type:    monotone
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Sliding Window Maximum
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/min-stack][Min Stack]]

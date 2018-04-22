@@ -12,9 +12,9 @@ Similar Problems:
 ---------------------------------------------------------------------
 Give a set, if you can find four points that make up a rectangle that is parallel to the coordinate axis and outputs YES or NO.
 
- Notice
+Notice
 The number of points in the set is less than 2000, and the coordinate range is [-10000000,10000000].
-Have you met this question in a real interview? 
+
 Example
 #+BEGIN_EXAMPLE
 Given set = [[0,0],[0,1],[1,1],[1,0]], return YES.

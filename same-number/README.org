@@ -5,7 +5,7 @@
 :type:     hashmap
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Same Number
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]

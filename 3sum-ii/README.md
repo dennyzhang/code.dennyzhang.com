@@ -16,10 +16,9 @@ Similar Problems:
 
 Given n, find the number of solutions for all x, y, z that conforms to x^2+y^2+z^2 = n.(x, y, z are non-negative integers)  
 
- Notice  
-n <= 1000000  
-x, y, z satisfy (x <= y <= z), we can consider that is the same solution as long as the three numbers selected are the same  
-Have you met this question in a real interview?  
+Notice  
+-   n <= 1000000
+-   x, y, z satisfy (x <= y <= z), we can consider that is the same solution as long as the three numbers selected are the same
 
 Example  
 

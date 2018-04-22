@@ -3,7 +3,7 @@
 
 ---
 
-Identity number which appears exactly once.  
+Big Business  
 
 ---
 
@@ -17,7 +17,6 @@ Given two arrays a and b. a[i] stands for the royalties of the film i, b[i] repr
 Notice  
 -   All the input does not exceed 100000
 -   The size of array does not exceed 10000.
--   Have you met this question in a real interview?
 
 Example  
 

@@ -14,11 +14,11 @@ Similar Problems:
 
 Please judge whether there is a cycle in the directed graph with n vertices and m edges. The parameter is two int arrays. There is a directed edge from start[i] to end[i].  
 
- Notice  
-2 <= n <= 10^5  
-1 <= m <= 4\*10^5  
-1 <= start[i], end[i] <= n  
-Have you met this question in a real interview?  
+Notice  
+-   2 <= n <= 10^5
+-   1 <= m <= 4\*10^5
+-   1 <= start[i], end[i] <= n
+
 Example  
 
     Given start = [1],end = [2], return "False".

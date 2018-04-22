@@ -16,10 +16,10 @@ Similar Problems:
 
 Give a horizontally sorted and vertically sorted n \* m matrix, find the number of negative number.  
 
- Notice  
-The size of given matrix is n x m, n <= 500, m <= 500.  
-In order to restrain the time complexity of the program, your program will run 10 ^ 5 times.  
-Have you met this question in a real interview?  
+Notice  
+-   The size of given matrix is n x m, n <= 500, m <= 500.
+-   In order to restrain the time complexity of the program, your program will run 10 ^ 5 times.
+
 Example  
 
     Given mat =
@@ -40,7 +40,7 @@ Example
         [-30,-20,-5,-1],
         [-10,-5,-1,0]
     ]
-    return 11。
+    return 11.
     
     Explanation:
     There are only 11 negative number.

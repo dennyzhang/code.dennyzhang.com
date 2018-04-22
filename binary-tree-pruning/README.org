@@ -5,7 +5,7 @@
 :type:     binarytree, inspiring
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Binary Tree Pruning
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]

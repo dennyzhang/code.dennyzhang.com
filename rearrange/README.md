@@ -17,7 +17,6 @@ Given an array required to be rearranged, which means all the numbers on the eve
 Notice  
 -   The length of the array is n, n <= 100000
 -   The index of the array is started from 0
--   Have you met this question in a real interview?
 
 Example  
 Given array = [-1,0,1,-1,5,10], return [-1,1,-1,5,0,10].  

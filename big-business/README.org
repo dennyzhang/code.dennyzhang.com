@@ -5,7 +5,7 @@
 :type:     greedy
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Big Business
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]]
@@ -15,7 +15,6 @@ Given two arrays a and b. a[i] stands for the royalties of the film i, b[i] repr
 Notice
 - All the input does not exceed 100000
 - The size of array does not exceed 10000.
-- Have you met this question in a real interview? 
 
 Example
 #+BEGIN_EXAMPLE

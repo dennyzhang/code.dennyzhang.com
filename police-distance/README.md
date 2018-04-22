@@ -15,10 +15,10 @@ Similar Problems:
 Given a matrix size of n x m, element 1 represents policeman, -1 represents wall and 0 represents empty.  
 Now please output a matrix size of n x m, output the minimum distance between each empty space and the nearest policeman  
 
- Notice  
-Given a matrix size of n x m, n <= 200,m <= 200.  
-We guarantee that each empty space can be reached by one policeman at least.  
-Have you met this question in a real interview?  
+Notice  
+-   Given a matrix size of n x m, n <= 200,m <= 200.
+-   We guarantee that each empty space can be reached by one policeman at least.
+
 Example  
 
     Given mat =
