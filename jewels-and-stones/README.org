@@ -1,0 +1,55 @@
+* Leetcode: Jewels and Stones                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     set
+:END:
+---------------------------------------------------------------------
+Jewels and Stones
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/set][#set]]
+---------------------------------------------------------------------
+You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
+
+The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: J = "aA", S = "aAAbbbb"
+Output: 3
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: J = "z", S = "ZZ"
+Output: 0
+#+END_EXAMPLE
+
+Note:
+
+- S and J will consist of letters and have length at most 50.
+- The characters in J are distinct.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jewels-and-stones][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/jewels-and-stones/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/jewels-and-stones
+// Basic Ideas: set/hashmap
+// Complexity: Time O(n), Space O(n)
+func numJewelsInStones(J string, S string) int {
+    m := make(map[rune]bool)
+    for _, ch := range J { m[ch] = true }
+
+    res := 0
+    for _, ch := range S {
+        _, status := m[ch]
+        if status == true { res += 1 }
+    }
+    return res
+}
+#+END_SRC
