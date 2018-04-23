@@ -9,6 +9,7 @@ Implement Trie (Prefix Tree)
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- [[https://code.dennyzhang.com/review-trie][Review: Trie Tree Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Implement a trie with insert, search, and startsWith methods.

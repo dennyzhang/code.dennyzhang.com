@@ -9,7 +9,8 @@ Maximum XOR of Two Numbers in an Array
 
 Similar Problems:  
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
+-   [Review: Trie Tree Problems](https://code.dennyzhang.com/review-trie)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#trie](https://code.dennyzhang.com/tag/trie)
 
 ---
 

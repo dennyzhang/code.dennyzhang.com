@@ -1,0 +1,44 @@
+* Leetcode: Short Encoding of Words                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     trie
+:END:
+---------------------------------------------------------------------
+Short Encoding of Words
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/review-trie][Review: Trie Tree Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/trie][#trie]]
+---------------------------------------------------------------------
+Given a list of words, we may encode it by writing a reference string S and a list of indexes A.
+
+For example, if the list of words is ["time", "me", "bell"], we can write it as S = "time#bell#" and indexes = [0, 2, 5].
+
+Then for each index, we will recover the word by reading from the reference string from that index until we reach a "#" character.
+
+What is the length of the shortest reference string S possible that encodes the given words?
+
+Example:
+#+BEGIN_EXAMPLE
+Input: words = ["time", "me", "bell"]
+Output: 10
+Explanation: S = "time#bell#" and indexes = [0, 2, 5].
+#+END_EXAMPLE
+
+Note:
+
+- 1 <= words.length <= 2000.
+- 1 <= words[i].length <= 7.
+- Each word has only lowercase letters.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/short-encoding-of-words][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/short-encoding-of-words/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/short-encoding-of-words
+
+#+END_SRC

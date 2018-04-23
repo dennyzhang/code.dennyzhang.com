@@ -8,6 +8,7 @@
 Map Sum Pairs
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/review-trie][Review: Trie Tree Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/trie][#trie]]
 ---------------------------------------------------------------------
 Implement a MapSum class with insert, and sum methods.

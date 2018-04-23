@@ -8,7 +8,7 @@ Shortest Distance to a Character
 ---
 
 Similar Problems:  
--   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs)
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -30,6 +30,8 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-to-a-character/description/)  
 
 Leave me comments, if you have better ways to solve.  
+
+-   Solution 1: BFS
 
     // Blog link: https://code.dennyzhang.com/shortest-distance-to-a-character
     // Basic Ideas: BFS
@@ -61,6 +63,30 @@ Leave me comments, if you have better ways to solve.
                     }
                 }
             }
+        }
+        return res
+    }
+
+-   Solution 2: Two pass. Update + Adjustment
+
+    // Blog link: https://code.dennyzhang.com/shortest-distance-to-a-character
+    // Basic Ideas: Two pass
+    //    Pass 1: left to right. Distance from previous C
+    //    Pass 2: right to left. Distance for min(old_distance, distance_from_following_C)
+    // Complexity: Time O(n), Space O(1)
+    func shortestToChar(S string, C byte) []int {
+        res := make([]int, len(S))
+        index := -len(S)
+        for i, ch := range S {
+            if ch == rune(C) { index = i }
+            res[i] = i-index
+        }
+    
+        index = 2*len(S)
+        for i := len(S)-1; i>=0; i-- {
+            ch := S[i]
+            if ch == C { index = i}
+            if index-i < res[i] { res[i] = index-i }
         }
         return res
     }

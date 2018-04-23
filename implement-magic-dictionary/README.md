@@ -9,6 +9,7 @@ Implement Magic Dictionary
 
 Similar Problems:  
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
+-   [Review: Trie Tree Problems](https://code.dennyzhang.com/review-trie)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---

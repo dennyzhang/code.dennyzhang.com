@@ -9,6 +9,7 @@ Add and Search Word - Data structure design
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
+- [[https://code.dennyzhang.com/review-trie][Review: Trie Tree Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Design a data structure that supports the following two operations:
@@ -36,8 +37,6 @@ You may assume that all words are consist of lowercase letters a-z.
 click to show hint.
 
 You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-and-search-word-data-structure-design][challenges-leetcode-interesting]]
 
