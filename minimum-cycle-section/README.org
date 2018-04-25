@@ -1,4 +1,4 @@
-* Leetcode: Minimum Cycle Section                                              :BLOG:Hard:
+* Leetcode: Minimum Cycle Section                                 :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -46,27 +46,36 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/minimum-cycle-section
+## Basic Ideas: Dynamic programming
+##  dp[]: the length of the mininum cycle section from the first element to current one
+##    This means for string of S[0:i], S[0:dp[i]] is the mininum cycle section
+##
+##  Array: 1 2 3 1 2 3 1 4
+##     dp: 1 2 3 3 3 3 3 8
+##
+##  So dp[0] is definitely 1
+##  For dp[i], we need compare S[i] with S[i%dp[i-1]].
+##       If they are the same, the old cycle section still work. Thus dp[i] = dp[i-1]
+##       Otherwise, the old section doesn't work.
+##                 The section will always starts with S[0].
+##                 If S[i] == S[0], the section will be S[0:i]. Thus dp[i]=i
+##                 Otherwise, the section will be S[0:i+1]. Thus dp[i]=i+1
+##
+## To get dp[i], we only need dp[i-1]. Thus we can lower space complexity from O(n) to O(1)
+##
+## Complexity: Time O(n), Space O(1)
 class Solution:
     """
     @param array: an integer array
     @return: the length of the minimum cycle section
     """
     def minimumCycleSection(self, array):
-        ## Basic Ideas: Dynamic programming
-        ##  dp(i) = dp(i-1), if array[i] == array[i-dp(i-1)]
-        ##          i+1, otherwise
-        ## Complexity: Time O(n), Space O(n)
         length = len(array)
         if length <= 1: return length
-        dp = [0 for i in range(length)]
-        dp[0] = 1
+        dp = 1
         for i in range(1, length):
-            if array[i] == array[i-dp[i-1]]:
-                dp[i] = dp[i-1]
-            else:
-                if array[i] == array[0]:
-                    dp[i] = i
-                else: 
-                    dp[i] = i+1
-        return dp[-1]
+            if array[i] != array[i%dp]:
+                if array[i] == array[0]: dp = i
+                else: dp = i+1
+        return dp
 #+END_SRC

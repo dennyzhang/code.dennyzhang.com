@@ -1,4 +1,4 @@
-* Leetcode: Split Array into Consecutive Subsequences                                              :BLOG:Basic:
+* Leetcode: Split Array into Consecutive Subsequences           :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
