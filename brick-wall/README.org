@@ -46,21 +46,25 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/brick-wall
 // Basic Ideas: hashmap
+//    Find all locations where we can draw a line by adding items
+//    For any given location, let's say the width from left to current is v
+//    The bricks it hits will be row_of_wall - v
+//
 // Complexity: Time O(n*m), Space O(1)
 //       There would be no more than 20,000 keys in hashmap
 func leastBricks(wall [][]int) int {
-    res := 0
+    count := 0
     m := make(map[int]int)
     for _, row := range wall {
-        sum := 0
+        length := 0
         for i, width := range row {
             if i == len(row)-1 { continue }
-            sum += width
-            m[sum] += 1
-            v, _ := m[sum]
-            if v > res { res = v}
+            length += width
+            m[length] += 1
+            v, _ := m[length]
+            if v > count { count = v}
         }
     }
-    return len(wall)-res
+    return len(wall)-count
 }
 #+END_SRC
