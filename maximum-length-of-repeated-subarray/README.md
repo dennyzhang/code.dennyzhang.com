@@ -11,6 +11,7 @@ Similar Problems:
 -   [Longest Substring Without Repeating Characters](https://code.dennyzhang.com/longest-substring-without-repeating-characters)
 -   [Minimum Window Substring](https://code.dennyzhang.com/minimum-window-substring)
 -   [Repeated Substring Pattern](https://code.dennyzhang.com/repeated-substring)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -34,4 +35,48 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-length-of-repea
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray
+    // Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray
+    // Basic Ideas: dynamic programming
+    //
+    //   Let's say the common subarray starts with A[i] and B[j]
+    //   If A[i] == B[j], then dp[i][j] = dp[i]
+    //   Otherwise dp[i][j] = 0
+    //  So from right to left, we get dp
+    //  Then find the maximum
+    //
+    // Complexity: Time O(n*m), Space O(n*m)
+    func findLength(A int, B int) int {
+        len_a, len_b := len(A), len(B)
+        dp := make(int, len_a)
+        for i:=0; i<len_a; i++ { dp[i] = make(int, len_b) }
+    
+        // A: [1,2,3,2,1]
+        // B: [3,2,1,4]
+    
+        res := 0
+        // base case
+        for j:=0; j<len_b; j++ {
+            if B[j] == A[len_a-1] { 
+                dp[len_a-1][j] = 1
+                res = 1
+            }
+        }
+        for i:=0; i<len_a; i++ {
+            if A[i] == B[len_b-1] {
+                dp[i][len_b-1] = 1
+                res = 1
+            }
+        }
+    
+        // dp
+        for i := len_a-2; i>=0; i-- {
+            for j := len_b-2; j>=0; j-- {
+                if A[i] == B[j] {
+                    dp[i][j] = dp[i+1][j+1] + 1
+                    if dp[i][j] > res { res = dp[i][j]}
+                }
+            }
+        }
+    
+        return res
+    }
