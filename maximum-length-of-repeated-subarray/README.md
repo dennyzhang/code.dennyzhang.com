@@ -35,48 +35,66 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-length-of-repea
 
 Leave me comments, if you have better ways to solve.  
 
+-   Solution1: dp: Time O(n\*m), Space O(n\*m)
+
     // Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray
     // Basic Ideas: dynamic programming
     //
     //   Let's say the common subarray starts with A[i] and B[j]
     //   If A[i] == B[j], then dp[i][j] = dp[i]
     //   Otherwise dp[i][j] = 0
-    //  So from right to left, we get dp
+    //  So from right to left, we get dp[][]
     //  Then find the maximum
     //
+    // To save the code of base case, we add an extra line and column
+    //
     // Complexity: Time O(n*m), Space O(n*m)
-    func findLength(A int, B int) int {
+    func findLength(A []int, B []int) int {
         len_a, len_b := len(A), len(B)
-        dp := make(int, len_a)
-        for i:=0; i<len_a; i++ { dp[i] = make(int, len_b) }
-    
+        dp := make([][]int, len_a+1)
+        for i:=0; i<len_a+1; i++ { dp[i] = make([]int, len_b+1) }
         // A: [1,2,3,2,1]
         // B: [3,2,1,4]
-    
         res := 0
-        // base case
-        for j:=0; j<len_b; j++ {
-            if B[j] == A[len_a-1] { 
-                dp[len_a-1][j] = 1
-                res = 1
-            }
-        }
-        for i:=0; i<len_a; i++ {
-            if A[i] == B[len_b-1] {
-                dp[i][len_b-1] = 1
-                res = 1
-            }
-        }
-    
         // dp
-        for i := len_a-2; i>=0; i-- {
-            for j := len_b-2; j>=0; j-- {
+        for i := len_a-1; i>=0; i-- {
+            for j := len_b-1; j>=0; j-- {
                 if A[i] == B[j] {
                     dp[i][j] = dp[i+1][j+1] + 1
                     if dp[i][j] > res { res = dp[i][j]}
                 }
             }
         }
-    
+        return res
+    }
+
+-   - Solution2: dp: Time O(n\*m), Space O(n+m)
+
+    // Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray
+    //
+    // From right to left
+    //
+    // dp[i][j] only depend on dp[i+1][j+1].
+    // So Instead of 2D array, we use 2 1D array
+    //
+    // Complexity: Time O(n*m), Space O(m)
+    func findLength(A []int, B []int) int {
+        len_a, len_b := len(A), len(B)
+        dp := make([]int, len_b+1)
+        // A: [1,2,3,2,1]
+        // B: [3,2,1,4]
+        res := 0
+        // dp
+        for i := len_a-1; i>=0; i-- {
+            dp2 := make([]int, len(dp))
+            copy(dp2, dp)
+            for j := len_b-1; j>=0; j-- {
+                if A[i] == B[j] {
+                    dp2[j] = dp[j+1] + 1
+                    if dp2[j]> res { res = dp2[j] }
+                }
+            }
+            copy(dp, dp2)
+        }
         return res
     }

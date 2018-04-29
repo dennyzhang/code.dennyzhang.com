@@ -1,4 +1,4 @@
-# Leetcode: Split Array into Consecutive Subsequences     :BLOG:Basic:
+# Leetcode: Split Array into Consecutive Subsequences     :BLOG:Medium:
 
 
 ---
@@ -8,7 +8,7 @@ Split Array into Consecutive Subsequences
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://code.dennyzhang.com/category/basic)
+-   Tag: [#subsequence](https://code.dennyzhang.com/tag/subsequence), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 

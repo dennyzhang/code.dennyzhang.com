@@ -8,6 +8,7 @@ Friend Request
 ---
 
 Similar Problems:  
+-   [Leetcode: Friends Of Appropriate Ages](https://code.dennyzhang.com/friends-of-appropriate-ages)
 -   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
 ---

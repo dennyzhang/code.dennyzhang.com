@@ -8,6 +8,7 @@
 Friend Request
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/friends-of-appropriate-ages][Leetcode: Friends Of Appropriate Ages]]
 - [[https://code.dennyzhang.com/tag/array][Tag: #array]]
 ---------------------------------------------------------------------
 Given an array Ages of length n, where the first i elements represent the age of the individual i Find total number of friend requests sent by this n person. There are some requirements:

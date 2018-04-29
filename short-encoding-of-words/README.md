@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
        children map[byte]*TrieNode
     }
     
-    func minimumLengthEncoding(words string) int {
+    func minimumLengthEncoding(words []string) int {
         // build TrieTree
         res := 0
         leaf_count := 0
