@@ -2,10 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     string, inspiring
 :END:
 ---------------------------------------------------------------------
 Delete Operation for Two Strings
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
+- [[https://code.dennyzhang.com/interleaving-string][Interleaving String]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given two words word1 and word2, find the minimum number of steps required to make word1 and word2 the same, where in each step you can delete one character in either string.
 #+BEGIN_EXAMPLE
