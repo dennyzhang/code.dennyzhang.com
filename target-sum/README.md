@@ -8,12 +8,12 @@ Target Sum
 ---
 
 Similar Problems:  
-
+-   [Expression Add Operators](https://code.dennyzhang.com/expression-add-operators)
 -   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 
-You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.  
+You are given a list of non-negative integers, a1, a2, &#x2026;, an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.  
 
 Find out how many ways to assign symbols to make sum of integers equal to target S.  
 
@@ -32,7 +32,6 @@ Example 1:
     There are 5 ways to assign symbols to make the sum of nums be target 3.
 
 Note:  
-
 -   The length of the given array is positive and will not exceed 20.
 -   The sum of elements in the given array will not exceed 1000.
 -   Your output answer is guaranteed to be fitted in a 32-bit integer.
@@ -48,23 +47,16 @@ Leave me comments, if you have better ways to solve.
     // Complexity: Time O(pow(2, n)), Space O(1)
     //   The value would be in between -1000 and 1000
     //   Thus Space is O(1)
-    func findTargetSumWays(nums int, S int) int {
+    func findTargetSumWays(nums []int, S int) int {
         m := make(map[int]int)
-        for i, num := range nums {
-            if i == 0 {
-                m[num] += 1
-                m[-num] += 1
-            } else {
-                m2 := make(map[int]int)
-                for v := range m {
-                    m2[v+num] += m[v]
-                    m2[v-num] += m[v]
-                }
-                // copy map
-                m = make(map[int]int)
-                for v := range m2 { m[v] = m2[v] }
+        m[0] = 1
+        for _, num := range nums {
+            m2 := make(map[int]int)
+            for v := range m {
+                m2[v+num] += m[v]
+                m2[v-num] += m[v]
             }
+            m = m2
         }
-        v, _ := m[S]
-        return v
+        return m[S]
     }

@@ -8,6 +8,7 @@
 Target Sum
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/expression-add-operators][Expression Add Operators]]
 - Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.
@@ -48,22 +49,15 @@ Leave me comments, if you have better ways to solve.
 //   Thus Space is O(1)
 func findTargetSumWays(nums []int, S int) int {
     m := make(map[int]int)
-    for i, num := range nums {
-        if i == 0 {
-            m[num] += 1
-            m[-num] += 1
-        } else {
-            m2 := make(map[int]int)
-            for v := range m {
-                m2[v+num] += m[v]
-                m2[v-num] += m[v]
-            }
-            // copy map
-            m = make(map[int]int)
-            for v := range m2 { m[v] = m2[v] }
+    m[0] = 1
+    for _, num := range nums {
+        m2 := make(map[int]int)
+        for v := range m {
+            m2[v+num] += m[v]
+            m2[v-num] += m[v]
         }
+        m = m2
     }
-    v, _ := m[S]
-    return v
+    return m[S]
 }
 #+END_SRC

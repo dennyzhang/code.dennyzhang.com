@@ -8,6 +8,7 @@ Interleaving String
 ---
 
 Similar Problems:  
+-   [Delete Operation for Two Strings](https://code.dennyzhang.com/delete-operation-for-two-strings)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#string](https://code.dennyzhang.com/tag/string), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---

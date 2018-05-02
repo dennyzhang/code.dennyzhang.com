@@ -7,6 +7,13 @@ Delete Operation for Two Strings
 
 ---
 
+Similar Problems:  
+-   [Maximum Length of Repeated Subarray](https://code.dennyzhang.com/maximum-length-of-repeated-subarray)
+-   [Interleaving String](https://code.dennyzhang.com/interleaving-string)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#string](https://code.dennyzhang.com/tag/string)
+
+---
+
 Given two words word1 and word2, find the minimum number of steps required to make word1 and word2 the same, where in each step you can delete one character in either string.  
 
     Example 1:
