@@ -5,7 +5,7 @@
 :type:     binarytree
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Serialize and Deserialize Binary Tree
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/serialize-and-deserialize-bst][Serialize and Deserialize BST]]
