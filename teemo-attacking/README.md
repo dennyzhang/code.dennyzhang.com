@@ -49,6 +49,8 @@ Leave me comments, if you have better ways to solve.
 
     // Blog link: https://code.dennyzhang.com/teemo-attacking
     // Basic Ideas: Merge Intervals
+    //  Test cases:
+    //   Empty list, list with one item, overlapped or not
     // Complexity: Time O(n), Space O(1)
     func findPoisonedDuration(timeSeries int, duration int) int {
       if len(timeSeries) == 0 { return 0 }
