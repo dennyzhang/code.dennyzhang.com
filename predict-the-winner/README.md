@@ -9,7 +9,8 @@ Predict the Winner
 
 Similar Problems:  
 -   [Target Sum](https://code.dennyzhang.com/target-sum)
--   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game), [#minmax](https://code.dennyzhang.com/tag/minmax)
 
 ---
 
