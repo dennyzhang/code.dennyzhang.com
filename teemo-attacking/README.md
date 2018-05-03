@@ -8,7 +8,9 @@ Teemo Attacking
 ---
 
 Similar Problems:  
--   Tag: [#game](https://code.dennyzhang.com/tag/game)
+-   [Merge Intervals](https://code.dennyzhang.com/merge-intervals)
+-   [Review: Interval Problems](https://code.dennyzhang.com/review-interval)
+-   Tag: [#interval](https://code.dennyzhang.com/tag/interval), [#game](https://code.dennyzhang.com/tag/game), [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -46,3 +48,27 @@ Credits To: [leetcode.com](https://leetcode.com/problems/teemo-attacking/descrip
 Leave me comments, if you have better ways to solve.  
 
     // Blog link: https://code.dennyzhang.com/teemo-attacking
+    // Basic Ideas: Merge Intervals
+    // Complexity: Time O(n), Space O(1)
+    func findPoisonedDuration(timeSeries int, duration int) int {
+      if len(timeSeries) == 0 { return 0 }
+      res := 0
+      start, end := 0, 0
+      for i, time := range timeSeries {
+        if i == 0 {
+          start, end = time, time+duration-1
+          continue
+        }
+        if time > end {
+          // not overlapped
+          res += end-start+1
+          start, end = time, time+duration-1
+        } else {
+          // overlapped
+          end = time+duration-1
+        }
+      }
+      // collect the last interval
+      res += end-start+1
+      return res
+    }
