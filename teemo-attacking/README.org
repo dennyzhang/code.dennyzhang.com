@@ -52,6 +52,8 @@ Leave me comments, if you have better ways to solve.
 // Basic Ideas: Merge Intervals
 //  Test cases:
 //   Empty list, list with one item, overlapped or not
+// About Intervals: which one you will choose: [start, end], or [start, end)?
+//
 // Complexity: Time O(n), Space O(1)
 func findPoisonedDuration(timeSeries []int, duration int) int {
   if len(timeSeries) == 0 { return 0 }
