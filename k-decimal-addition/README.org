@@ -1,0 +1,86 @@
+* LintCode: K Decimal Addition                                   :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     classic
+:END:
+---------------------------------------------------------------------
+K Decimal Addition
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/additive-number][Additive Number]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Give k, a, b, which means a and b are all k base numbers, and output a + b.
+
+Example
+#+BEGIN_EXAMPLE
+Given k = 3, a = "12", b = "1", return "20".
+
+Explanation:
+12 + 1 = 20 in 3 bases.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given k = 10, a = "12", b = "1", return "13".
+
+Explanation:
+12 + 1 = 13 in 10 bases.
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/k-decimal-addition][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://www.lintcode.com/problem/k-decimal-addition/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/k-decimal-addition
+/**
+ * @param k: The k
+ * @param a: The A
+ * @param b: The B
+ * @return: The answer
+ */
+import (
+  "strconv"
+  "strings")
+func addition (k int, a string, b string) string {
+    // Basic Ideas:
+    // Complexity: Time O(n), Space O(n)
+    i, j, carry := len(a)-1, len(b)-1, 0
+    res := ""
+    for i>=0 && j>=0 {
+        v1, _ := strconv.Atoi(string(a[i]))
+        v2, _ := strconv.Atoi(string(b[j]))
+        v := v1+v2+carry
+        if v>=k {
+            carry = 1
+            v -= k
+        } else {
+            carry = 0
+        }
+        res = strconv.Itoa(v) + res
+        i, j = i-1, j-1
+    }
+    num := ""
+    if i>=0 { num = a[0:i+1]}
+    if j>=0 { num = b[0:j+1]}
+    for i:=len(num)-1; i>=0; i--{
+      v, _ := strconv.Atoi(string(num[i]))
+      v = v + carry
+      if v >=k {
+        carry = 1
+        v -= k
+      } else {
+        carry = 0
+      }
+      res = strconv.Itoa(v) + res
+    }
+  if carry == 1 {
+    res = "1" + res
+  }
+  res = strings.TrimLeft(res, "0")
+  return res
+}
+#+END_SRC
