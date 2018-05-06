@@ -49,28 +49,26 @@ Leave me comments, if you have better ways to solve.
 
     // Blog link: https://code.dennyzhang.com/teemo-attacking
     // Basic Ideas: Merge Intervals
-    //  Test cases:
-    //   Empty list, list with one item, overlapped or not
+    // Here we choose [start, end), instead of [start, end)
+    // Remember to collect the last attack
+    //
     // Complexity: Time O(n), Space O(1)
-    func findPoisonedDuration(timeSeries int, duration int) int {
+    func findPoisonedDuration(timeSeries []int, duration int) int {
       if len(timeSeries) == 0 { return 0 }
       res := 0
-      start, end := 0, 0
-      for i, time := range timeSeries {
-        if i == 0 {
-          start, end = time, time+duration-1
-          continue
-        }
-        if time > end {
-          // not overlapped
-          res += end-start+1
-          start, end = time, time+duration-1
-        } else {
+      start, end := timeSeries[0], timeSeries[0]+duration
+      for i:=1; i<len(timeSeries); i++ {
+        time := timeSeries[i]
+        if time <= end {
           // overlapped
-          end = time+duration-1
+          end = time+duration
+        } else {
+          // not overlapped
+          res += end-start
+          start, end = time, time+duration
         }
       }
       // collect the last interval
-      res += end-start+1
+      res += end-start
       return res
     }
