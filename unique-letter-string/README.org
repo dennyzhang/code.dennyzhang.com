@@ -1,0 +1,54 @@
+* Leetcode: Unique Letter String                                 :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, inspiring
+:END:
+---------------------------------------------------------------------
+Unique Letter String
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/string][#string]]
+---------------------------------------------------------------------
+A character is unique in string S if it occurs exactly once in it.
+
+For example, in string S = "LETTER", the only unique characters are "L" and "R".
+
+Let's define UNIQ(S) as the number of unique characters in string S.
+
+For example, UNIQ("LETTER") =  2.
+
+Given a string S, calculate the sum of UNIQ(substring) over all non-empty substrings of S.
+
+If there are two or more equal substrings at different positions in S, we consider them different.
+
+Since the answer can be very large, retrun the answer modulo 10 ^ 9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "ABC"
+Output: 10
+Explanation: All possible substrings are: "A","B","C","AB","BC" and "ABC".
+Evey substring is composed with only unique letters.
+Sum of lengths of all substring is 1 + 1 + 1 + 2 + 2 + 3 = 10
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "ABA"
+Output: 8
+Explanation: The same as example 1, except uni("ABA") = 1.
+#+END_EXAMPLE
+
+- Note: 0 <= S.length <= 10000.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-letter-string][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/unique-letter-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/unique-letter-string
+
+#+END_SRC
