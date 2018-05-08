@@ -8,7 +8,7 @@ Dota2 Senate
 ---
 
 Similar Problems:  
--   Tag: [#game](https://code.dennyzhang.com/tag/game)
+-   Tag: [#game](https://code.dennyzhang.com/tag/game), [#greedy](https://code.dennyzhang.com/tag/greedy), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -57,53 +57,39 @@ Credits To: [leetcode.com](https://leetcode.com/problems/dota2-senate/descriptio
 Leave me comments, if you have better ways to solve.  
 
     // Blog link: https://code.dennyzhang.com/dota2-senate
-    // Basic Ideas:
-    //   ban_r: how many R should be banned in the following
-    //   ban_d:
-    //   r
-    //   d
-    // Complexity: Time O(n), Space O(1)
+    // Basic Ideas: greedy
+    //
+    //  Each senator ban the next closet opponent senator
+    //
+    //  Two queue: queue_r, queue_d
+    //      Put all indices
+    //      Remove them
+    //      Check which queue has more element
+    //
+    // Complexity: Time O(n), Space O(n)
     func predictPartyVictory(senate string) string {
-      ban_r, ban_d, r, d := 0, 0, 0, 0
-      for _, ch := range senate {
-        if ch == 'R' {
-          if ban_r > 0 {
-            ban_r -= 1
-          } else {
-            r += 1
-    
-            if d > 0 {
-              d -= 1
+        n := len(senate)
+        queue_r, queue_d := []int{}, []int{}
+        for i, ch := range senate {
+            if ch == 'R' { 
+                queue_r = append(queue_r, i) 
             } else {
-              ban_d += 1
+                queue_d = append(queue_d, i) 
             }
-          }
-        } else {
-          if ban_d > 0 {
-            ban_d -= 1
-          } else {
-            d += 1
-            if r > 0 {
-              r -= 1
-            } else {
-              ban_r += 1
-            }
-          }
         }
-        // fmt.Println(ban_r, r, ban_d, d)
-      }
     
-      if d == r {
-        if senate[0] == 'R' {
-          return "Radiant"
-        } else {
-          return "Dire"
+        for len(queue_r) > 0 && len(queue_d) > 0 {
+            r_index, d_index := queue_r[0], queue_d[0]
+            queue_r, queue_d = queue_r[1:], queue_d[1:]
+            if r_index<d_index {
+                queue_r = append(queue_r, r_index+n)
+            } else {
+                queue_d = append(queue_d, d_index+n)
+            }
         }
-      } else {
-        if d>r {
-          return "Dire"
+        if len(queue_d) == 0 {
+            return "Radiant"
         } else {
-          return "Radiant"
+            return "Dire"
         }
-      }
     }

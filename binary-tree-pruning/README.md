@@ -79,17 +79,3 @@ Leave me comments, if you have better ways to solve.
                 return None
             else:
                 return root
-
-    // Blog link: https://code.dennyzhang.com/binary-tree-pruning
-    // Basic Ideas: post-order
-    /**
-     * Definition for a binary tree node.
-     * type TreeNode struct {
-     *     Val int
-     *     Left *TreeNode
-     *     Right *TreeNode
-     * }
-     */
-    func pruneTree(root *TreeNode) *TreeNode {
-    
-    }

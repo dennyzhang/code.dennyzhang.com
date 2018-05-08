@@ -9,6 +9,7 @@ Additive Number
 
 Similar Problems:  
 -   [LintCode: K Decimal Addition](https://code.dennyzhang.com/k-decimal-addition)
+-   [Add Strings](https://code.dennyzhang.com/add-strings)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---

@@ -8,6 +8,7 @@ K Decimal Addition
 ---
 
 Similar Problems:  
+-   [Add Strings](https://code.dennyzhang.com/add-strings)
 -   [Additive Number](https://code.dennyzhang.com/additive-number)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic)
 
@@ -36,15 +37,16 @@ Leave me comments, if you have better ways to solve.
     // Blog link: https://code.dennyzhang.com/k-decimal-addition
     // Basic Ideas:
     // Complexity: Time O(n), Space O(n)
-    import (
-      "strconv"
-      "strings")
+    import ("strconv"
+           "strings")
     func addition (k int, a string, b string) string {
-        i, j, carry := len(a)-1, len(b)-1, 0
-        res := ""
-        for i>=0 && j>=0 {
-            v1, _ := strconv.Atoi(string(a[i]))
-            v2, _ := strconv.Atoi(string(b[j]))
+        carry, res := 0, ""
+        for i, j := len(a)-1, len(b)-1; 
+            i>=0 || j>=0 || carry !=0;
+            i, j = i-1, j-1 {
+            v1, v2 := 0, 0
+            if i>=0 { v1, _ = strconv.Atoi(string(a[i])) }
+            if j>=0 { v2, _ = strconv.Atoi(string(b[j])) }
             v := v1+v2+carry
             if v>=k {
                 carry = 1
@@ -53,25 +55,6 @@ Leave me comments, if you have better ways to solve.
                 carry = 0
             }
             res = strconv.Itoa(v) + res
-            i, j = i-1, j-1
         }
-        num := ""
-        if i>=0 { num = a[0:i+1] }
-        if j>=0 { num = b[0:j+1] }
-        for i:=len(num)-1; i>=0; i--{
-          v, _ := strconv.Atoi(string(num[i]))
-          v = v + carry
-          if v >=k {
-            carry = 1
-            v -= k
-          } else {
-            carry = 0
-          }
-          res = strconv.Itoa(v) + res
-        }
-      if carry == 1 {
-        res = "1" + res
-      }
-      res = strings.TrimLeft(res, "0")
-      return res
+      return strings.TrimLeft(res, "0")
     }
