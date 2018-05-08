@@ -2,20 +2,23 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, redo
+:type:     math, combination
 :END:
 ---------------------------------------------------------------------
 Number of Digit One
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/combination][combination]]
 ---------------------------------------------------------------------
 Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 
 For example:
-
+#+BEGIN_EXAMPLE
 Given n = 13,
 Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-digit-one][challenges-leetcode-interesting]]
 
@@ -23,12 +26,6 @@ Credits To: [[url-external:https://leetcode.com/problems/number-of-digit-one/des
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/number-of-digit-one
-class Solution(object):
-    def countDigitOne(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/number-of-digit-one
 #+END_SRC

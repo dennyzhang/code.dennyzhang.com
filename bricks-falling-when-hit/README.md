@@ -8,7 +8,7 @@ Bricks Falling When Hit
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#game](https://code.dennyzhang.com/tag/game)
+-   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -73,8 +73,8 @@ Leave me comments, if you have better ways to solve.
         res := []int{}
         for _, position := range hits {
             x, y := position[0], position[1]
+            count := 0
             if grid[x][y] == 1 {
-                count := 0
                 grid[x][y] = 0
                 // explore in 4 directions
                 for _, offset := range [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}} {
@@ -94,10 +94,8 @@ Leave me comments, if you have better ways to solve.
                         }
                     }
                 }
-                res = append(res, count)
-            } else {
-                res = append(res, 0)
             }
+            res = append(res, count)
         }
         return res
     }

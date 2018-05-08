@@ -8,7 +8,9 @@ Factorial Trailing Zeroes
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
+-   [Number of Digit One](https://code.dennyzhang.com/number-of-digit-one)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 

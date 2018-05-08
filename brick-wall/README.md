@@ -9,7 +9,7 @@ Brick Wall
 
 Similar Problems:  
 -   [Split Array into Consecutive Subsequences](https://code.dennyzhang.com/split-array-into-consecutive-subsequences)
--   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#hashmap](https://code.dennyzhang.com/tag/hashmap)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#hashmap](https://code.dennyzhang.com/tag/hashmap), [#limitedrange](https://code.dennyzhang.com/tag/limitedrange)
 
 ---
 

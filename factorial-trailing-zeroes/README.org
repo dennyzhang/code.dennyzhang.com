@@ -2,13 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, redo
 :END:
 ---------------------------------------------------------------------
 Factorial Trailing Zeroes
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/number-of-digit-one][Number of Digit One]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given an integer n, return the number of trailing zeroes in n!.
 

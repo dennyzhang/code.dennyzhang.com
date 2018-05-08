@@ -8,7 +8,8 @@ Number of Digit One
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 

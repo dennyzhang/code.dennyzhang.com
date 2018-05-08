@@ -8,6 +8,7 @@ Next Permutation
 ---
 
 Similar Problems:  
+-   [Permutation Sequence](https://code.dennyzhang.com/permutation-sequence)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
 -   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
 

@@ -1,0 +1,54 @@
+* Leetcode: Permutation Sequence                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc, combination
+:END:
+---------------------------------------------------------------------
+Permutation Sequence
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/next-permutation][Next Permutation]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
+---------------------------------------------------------------------
+The set [1,2,3,...,n] contains a total of n! unique permutations.
+
+By listing and labeling all of the permutations in order, we get the following sequence for n = 3:
+
+1. "123"
+- "132"
+- "213"
+- "231"
+- "312"
+- "321"
+
+Given n and k, return the kth permutation sequence.
+
+Note:
+
+- Given n will be between 1 and 9 inclusive.
+- Given k will be between 1 and n! inclusive.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 3, k = 3
+Output: "213"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 4, k = 9
+Output: "2314"
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutation-sequence][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/permutation-sequence/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/permutation-sequence
+
+#+END_SRC
