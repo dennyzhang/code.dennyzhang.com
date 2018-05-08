@@ -1,0 +1,85 @@
+* Leetcode: Integer to English Words                              :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, manydetails
+:END:
+---------------------------------------------------------------------
+Integer to English Words
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+---------------------------------------------------------------------
+Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
+
+For example,
+#+BEGIN_EXAMPLE
+123 -> "One Hundred Twenty Three"
+12345 -> "Twelve Thousand Three Hundred Forty Five"
+1234567 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-to-english-words][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/integer-to-english-words/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/integer-to-english-words
+// Basic Ideas:
+// 1,234,567
+// ... Billion ... Million ... Thousand ...
+// 1,234,567,896
+// Watch out:
+//     0
+//    1000,000
+// Complexity:
+import "strings"
+var digitDict = map[int]string {1:"One", 2:"Two", 3:"Three",
+  4:"Four", 5:"Five", 6:"Six",
+  7:"Seven", 8:"Eight", 9:"Nine"}
+
+var twoDigitDict = map[int]string {10:"Ten", 11:"Eleven", 12:"Twelve",
+  13:"Thirteen", 14:"Fourteen", 15:"Fifteen", 
+  16:"Sixteen", 17:"Seventeen", 18:"Eighteen", 19:"Nineteen"}
+
+var tenDict = map[int]string {2:"Twenty", 3:"Thirty",
+  4:"Forty", 5:"Fifty", 6:"Sixty",
+  7:"Seventy", 8:"Eighty", 9:"Ninety"}
+
+func sectionToWords(num int) string {
+  res := ""
+  if num >= 100 {
+    digit := int(num/100)
+    num = num%100
+    res = fmt.Sprintf("%s Hundred", digitDict[digit])
+  }
+  if num >= 20 {
+    digit := int(num/10)
+    num = num%10
+    res = fmt.Sprintf("%s %s", res, tenDict[digit])
+  }
+  if num >= 10 {
+    res = fmt.Sprintf("%s %s", res, twoDigitDict[num])
+    num = 0
+  }
+  res = fmt.Sprintf("%s %s", res, digitDict[num])
+  // fmt.Println(num, res)
+  return strings.TrimSpace(res)
+}
+
+func numberToWords(num int) string {
+  if num == 0 { return "Zero" }
+  res := ""
+  for _, separator := range []string{"", "Thousand", "Million", "Billion"} {
+    if num == 0 { break }
+    section := num % 1000
+    num = int(num/1000)
+    if section != 0 {
+      res = fmt.Sprintf("%s %s %s", sectionToWords(section), separator, res)
+    }
+  }
+  return strings.TrimSpace(res)
+}
+#+END_SRC
