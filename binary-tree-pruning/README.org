@@ -79,19 +79,3 @@ class Solution:
         else:
             return root
 #+END_SRC
-
-#+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/binary-tree-pruning
-// Basic Ideas: post-order
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func pruneTree(root *TreeNode) *TreeNode {
-    
-}
-#+END_SRC

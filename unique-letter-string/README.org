@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, inspiring
+:type:     string, inspiring, limitedrange
 :END:
 ---------------------------------------------------------------------
 Unique Letter String
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/limitedrange][#limitedrange]]
 ---------------------------------------------------------------------
 A character is unique in string S if it occurs exactly once in it.
 
