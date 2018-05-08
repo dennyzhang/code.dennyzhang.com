@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc, combination
+:type:     redo, combination
 :END:
 ---------------------------------------------------------------------
 Permutation Sequence
@@ -50,5 +50,76 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/permutation-sequence
+// Basic Ideas:
+// For length of k, there are k! combinations
+// We can decide the digits from left to right
+// l: array of bool with n elements
+// l[i] means whether i+1 has been taken
+//
+// 1234, n=4, k=9
+// X X X X
+//       1
+//     2
+//   6
+// 24
+//  n=4, k=1
+//   1=0*6+0*2+0*1+1 1234
+//
+//  n=4, k=2
+//   2=0*6+0*2+1*1+1
+//
+//  n=4, k=5
+//   9 = 0*6+2*2+0*1+1
+//       1423
+//
+//  n=4, k=9
+//   9 = 1*6+1*2+0*1+1
+//       2314
+//
+// Complexity: Time O(n), Space O(n)
+func getPermutation(n int, k int) string {
+  res := ""
+  l := make([]bool, n)
+  // get (n-1)!
+  v := 1
+  for i:= 1; i<n; i++ { v = v*i }
+  k -= 1
+  num := n-1
+  for k!=0 {
+    if v>k {
+      // choose the least one
+      for j:=0; j<n; j++ {
+        if l[j] == false {
+          res = fmt.Sprintf("%s%d", res, j+1)
+          l[j] = true
+          break
+        }
+      }
+    } else {
+      // k>=v: need to customize current digit
+      index := int(k/v)
+      for j:=0; j<n; j++ {
+        if l[j] == false {
+          if index == 0 {
+            res = fmt.Sprintf("%s%d", res, j+1)
+            l[j] = true
+            break
+          }
+          index -= 1
+        }
+      }
+      k -= v*int(k/v)
+    }
+    v = int(v/num)
+    num--
+  }
 
+  // collect results
+  for i:=0; i<n; i++ {
+    if l[i] == false {
+      res = fmt.Sprintf("%s%d", res, i+1)
+    }
+  }
+  return res
+}
 #+END_SRC
