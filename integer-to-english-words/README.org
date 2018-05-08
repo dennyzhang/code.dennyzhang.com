@@ -8,6 +8,7 @@
 Integer to English Words
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/reconstruct-original-digits-from-english][Reconstruct Original Digits from English]]
 - Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
@@ -31,41 +32,42 @@ Leave me comments, if you have better ways to solve.
 // 1,234,567
 // ... Billion ... Million ... Thousand ...
 // 1,234,567,896
+//
+// Here we don't necessarily need hashmap. List is fine.
+//
 // Watch out:
 //     0
 //    1000,000
 // Complexity:
 import "strings"
-var digitDict = map[int]string {1:"One", 2:"Two", 3:"Three",
-  4:"Four", 5:"Five", 6:"Six",
-  7:"Seven", 8:"Eight", 9:"Nine"}
+var digitList = []string {"", "One", "Two", "Three",
+  "Four", "Five", "Six", "Seven", "Eight", "Nine"}
 
-var twoDigitDict = map[int]string {10:"Ten", 11:"Eleven", 12:"Twelve",
-  13:"Thirteen", 14:"Fourteen", 15:"Fifteen", 
-  16:"Sixteen", 17:"Seventeen", 18:"Eighteen", 19:"Nineteen"}
+var twoDigitList = []string {"Ten", "Eleven", "Twelve",
+  "Thirteen", "Fourteen", "Fifteen", 
+  "Sixteen", "Seventeen", "Eighteen", "Nineteen"}
 
-var tenDict = map[int]string {2:"Twenty", 3:"Thirty",
-  4:"Forty", 5:"Fifty", 6:"Sixty",
-  7:"Seventy", 8:"Eighty", 9:"Ninety"}
+var tenList = []string {"Twenty", "Thirty",
+  "Forty", "Fifty", "Sixty",
+  "Seventy", "Eighty", "Ninety"}
 
 func sectionToWords(num int) string {
   res := ""
   if num >= 100 {
     digit := int(num/100)
     num = num%100
-    res = fmt.Sprintf("%s Hundred", digitDict[digit])
+    res = fmt.Sprintf("%s Hundred", digitList[digit])
   }
   if num >= 20 {
     digit := int(num/10)
     num = num%10
-    res = fmt.Sprintf("%s %s", res, tenDict[digit])
+    res = fmt.Sprintf("%s %s", res, tenList[digit-2])
   }
   if num >= 10 {
-    res = fmt.Sprintf("%s %s", res, twoDigitDict[num])
+    res = fmt.Sprintf("%s %s", res, twoDigitList[num-10])
     num = 0
   }
-  res = fmt.Sprintf("%s %s", res, digitDict[num])
-  // fmt.Println(num, res)
+  res = fmt.Sprintf("%s %s", res, digitList[num])
   return strings.TrimSpace(res)
 }
 
