@@ -34,14 +34,18 @@ Leave me comments, if you have better ways to solve.
 // Basic Ideas: dynamic programming
 // dp[i][j]: length of the rectangle
 //    dp[i][j] = min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j]) + 1
+//
 // We can do it with one pass
-// Let's assume we can change the original matrix, thus we don't need extra space
+// Let's assume we can change the original matrix
+// Thus we don't need extra space
+//
 // Complexity: Time O(n*m), Space O(1)
 func maximalSquare(matrix [][]byte) int {
     row_count := len(matrix)
     if row_count == 0 { return 0 }
     col_count := len(matrix[0])
     res := 0
+    // initialize counter for corner case
     for i:=0; i<row_count; i++ {
         if matrix[i][0] == '1' { res = 1 }
     }
