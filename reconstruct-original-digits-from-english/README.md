@@ -9,8 +9,10 @@ Reconstruct Original Digits from English
 
 Similar Problems:  
 -   [Strobogrammatic Number](https://code.dennyzhang.com/strobogrammatic-number)
--   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
--   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
+-   [Integer to English Words](https://code.dennyzhang.com/integer-to-english-words)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string)
+-   Tag: [math](https://code.dennyzhang.com/tag/math), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 

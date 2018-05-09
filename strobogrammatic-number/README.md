@@ -8,6 +8,7 @@ Strobogrammatic Number
 ---
 
 Similar Problems:  
+-   [Number of Digit One](https://code.dennyzhang.com/number-of-digit-one)
 -   [Reconstruct Original Digits from English](https://code.dennyzhang.com/reconstruct-original-digits-from-english)
 -   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 -   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)

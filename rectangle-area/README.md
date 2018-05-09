@@ -8,7 +8,9 @@ Rectangle Area
 ---
 
 Similar Problems:  
--   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
+-   [Meeting Rooms](https://code.dennyzhang.com/meeting-rooms)
+-   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle)
+-   Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
 
 ---
 

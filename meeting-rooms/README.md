@@ -9,6 +9,7 @@ Meeting Rooms
 
 Similar Problems:  
 -   [Meeting Rooms II](https://code.dennyzhang.com/meeting-rooms-ii)
+-   [Rectangle Area](https://code.dennyzhang.com/rectangle-area)
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---

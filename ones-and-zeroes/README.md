@@ -1,24 +1,44 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Ones and Zeroes     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Ones and Zeroes  
 
 ---
 
-Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+In the computer world, use restricted resource you have to generate maximum benefit is what we always want to pursue.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+For now, suppose you are a dominator of m 0s and n 1s respectively. On the other hand, there is an array with strings consisting of only 0s and 1s.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Now your task is to find the maximum number of strings that you can form with given m 0s and n 1s. Each 0 and 1 can be used at most once.  
+
+Note:  
+1.  The given numbers of 0s and 1s will both not exceed 100
+2.  The size of given string array won't exceed 600.
+
+Example 1:  
+
+    Input: Array = {"10", "0001", "111001", "1", "0"}, m = 5, n = 3
+    Output: 4
+    
+    Explanation: This are totally 4 strings can be formed by the using of 5 0s and 3 1s, which are "10,"0001","1","0"
+
+Example 2:  
+
+    Input: Array = {"10", "0", "1"}, m = 1, n = 1
+    Output: 2
+    
+    Explanation: You could form "10", but then you'd have nothing left. Better form "0" and "1".
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ones-and-zeroes)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/ones-and-zeroes/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/ones-and-zeroes
