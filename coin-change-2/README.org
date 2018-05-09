@@ -9,7 +9,8 @@ Coin Change 2
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/coin-change][Coin Change]]
-- [[https://code.dennyzhang.com/review-knapsack][Review: Knapsack Problems]], [[https://code.dennyzhang.com/tag/knapsack][Tag: #knapsack]]
+- [[https://code.dennyzhang.com/review-knapsack][Review: Knapsack Problems]]
+- [[https://code.dennyzhang.com/tag/knapsack][Tag: #knapsack]]
 ---------------------------------------------------------------------
 You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.
 
