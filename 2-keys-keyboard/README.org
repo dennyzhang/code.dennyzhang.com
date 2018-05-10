@@ -8,6 +8,7 @@
 2 Keys Keyboard
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/integer-break][Integer Break]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
