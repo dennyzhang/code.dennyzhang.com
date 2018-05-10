@@ -9,7 +9,8 @@ Coin Change 2
 
 Similar Problems:  
 -   [Coin Change](https://code.dennyzhang.com/coin-change)
--   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack), [Tag: #knapsack](https://code.dennyzhang.com/tag/knapsack)
+-   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack)
+-   [Tag: #knapsack](https://code.dennyzhang.com/tag/knapsack)
 
 ---
 

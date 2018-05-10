@@ -8,8 +8,8 @@ Circular Array Loop
 ---
 
 Similar Problems:  
--   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
--   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring),  [#game](https://code.dennyzhang.com/tag/game),  [#backtracking](https://code.dennyzhang.com/tag/backtracking)
 
 ---
 
@@ -31,9 +31,13 @@ Leave me comments, if you have better ways to solve.
 
     ## Blog link: https://code.dennyzhang.com/circular-array-loop
     ## Basic Ideas: Loop from left to right
-    ##        For current check, mark all visited element as 0
-    ##        If the next candidate position is 0, we get a loop
-    ##        If the previous element is not current element, the loop has more than 1 element.
+    ##        We mark dead end as 0
+    ##        For each node, we keep going.
+    ##        It stops, when they go into different directions or hit a dead end
+    ##        If true, backtracking and mark all previous nodes as dead end
+    ##        If we visit ourself again, it's loop
+    ##
+    ## Note: The loop don't have to start with the first element
     ##
     ## Sample Data: [1, -1] can't be a valid loop. 
     ##      Yes, it has 2 elements. But it should have only one direction. "forward" or "backward"
@@ -46,20 +50,28 @@ Leave me comments, if you have better ways to solve.
             :rtype: bool
             """
             length = len(nums)
-            if length <= 1: return False
-            for i in range(0, length):
-                # skip the checked elements
-                if nums[i] == 0: continue
-                # check current path
-                k = i
-                while nums[k] != 0:
-                    print nums
-                    prev = k
-                    nums[k], k = 0, (k+nums[k]+length)%length
-                if prev != k: return True
-            return False
+            if length == 0: return False
     
-    # s = Solution()
-    # print(s.circularArrayLoop([-2, 1, -1, -2, -2])) # False
-    # print(s.circularArrayLoop([2, -1, 1, 2, 2])) # True
-    # print(s.circularArrayLoop([-1, 2])) # False
+            for i in range(length):
+                is_forward = 1 if nums[i]>0 else -1
+                nums[i] = nums[i]%length
+                if is_forward == -1 and nums[i] != 0:
+                    nums[i] -= length
+    
+            for i in range(length):
+                # skip the checked dead ends
+                if nums[i] == 0: continue
+                is_forward = 1 if nums[i]>0 else -1
+                prev, k = nums[i], (i+nums[i])%length
+    
+                while k!=i and nums[k]!=0 and nums[k]*is_forward>0:
+                    prev, k = nums[k], (k+nums[k])%length
+                if k==i: return True
+                # backtrack and mark nodes as dead end
+                prev = -prev
+                while True:
+                    nums[k] = 0
+                    prev, k = -nums[prev], (k+prev)%length
+                    if k==i: break
+                nums[i] = 0
+            return False
