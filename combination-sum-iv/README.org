@@ -8,6 +8,7 @@
 Combination Sum IV
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/combination-sum-iii][Combination Sum III]]
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------

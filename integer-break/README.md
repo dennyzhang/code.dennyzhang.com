@@ -8,6 +8,7 @@ Integer Break
 ---
 
 Similar Problems:  
+-   [2 Keys Keyboard](https://code.dennyzhang.com/2-keys-keyboard)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#math](https://code.dennyzhang.com/tag/math)
 
 ---

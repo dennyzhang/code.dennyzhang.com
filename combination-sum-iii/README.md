@@ -8,7 +8,9 @@ Combination Sum III
 ---
 
 Similar Problems:  
--   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
+-   [Combination Sum IV](https://code.dennyzhang.com/combination-sum-iv)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
+-   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 

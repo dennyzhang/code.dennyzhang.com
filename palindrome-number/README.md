@@ -8,7 +8,8 @@ Determine whether an integer is a palindrome. Do this without extra space.
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome)
+-   Tag: [#palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 

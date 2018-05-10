@@ -8,6 +8,7 @@ Solve the Equation
 ---
 
 Similar Problems:  
+-   [Fraction Addition and Subtraction](https://code.dennyzhang.com/fraction-addition-and-subtraction)
 -   [Expressive Words](https://code.dennyzhang.com/expressive-words)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)

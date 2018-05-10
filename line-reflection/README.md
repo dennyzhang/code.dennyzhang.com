@@ -8,7 +8,8 @@ Line Reflection
 ---
 
 Similar Problems:  
--   [Tag: #set](https://code.dennyzhang.com/tag/set)
+-   [Max Points on a Line](https://code.dennyzhang.com/max-points-on-a-line)
+-   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 

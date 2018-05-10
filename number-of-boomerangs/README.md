@@ -7,6 +7,12 @@ Number of Boomerangs
 
 ---
 
+Similar Problems:  
+-   [Line Reflection](https://code.dennyzhang.com/line-reflection)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math), [#hashmap](https://code.dennyzhang.com/tag/hashmap)
+
+---
+
 Given n points in the plane that are all pairwise distinct, a "boomerang" is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).  
 
 Find the number of boomerangs. You may assume that n will be at most 500 and coordinates of points are all in the range [-10000, 10000] (inclusive).  
@@ -27,10 +33,29 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-boomerangs/de
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://code.dennyzhang.com/number-of-boomerangs
-    class Solution(object):
-        def numberOfBoomerangs(self, points):
-            """
-            :type points: List[List[int]]
-            :rtype: int
-            """
+-   Solution: hashmap with value as hashmap
+
+    // Blog link: https://code.dennyzhang.com/number-of-boomerangs
+    // Basic Ideas: hashmap
+    //    hashmap with value as int
+    // m = [1:1, 4:1]
+    // m = [1:2]
+    // m = [1:1, 4:1]
+    //
+    // Complexity: Time O(n*n), Space O(n)
+    func numberOfBoomerangs(points [][]int) int {
+      res := 0
+      for i, point1 := range points {
+        m := map[int]int{}
+        for j, point2 := range points {
+          if i == j { continue }
+          v1, v2 := point1[0]-point2[0], point1[1]-point2[1]
+          m[v1*v1+v2*v2] += 1
+        }
+        // collect results
+        for d:= range m {
+            if m[d]>1 { res += m[d]*(m[d]-1)}
+        }
+      }
+      return res
+    }

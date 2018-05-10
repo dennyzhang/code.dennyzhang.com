@@ -8,6 +8,7 @@
 ---
 
 Similar Problems:  
+-   [Integer Break](https://code.dennyzhang.com/integer-break)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
