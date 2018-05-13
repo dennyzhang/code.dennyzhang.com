@@ -8,6 +8,7 @@ Reaching Points
 ---
 
 Similar Problems:  
+-   [Water and Jug Problem](https://code.dennyzhang.com/water-and-jug-problem)
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive)
 -   [Review: mod Problems](https://code.dennyzhang.com/review-mod)
 -   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive), [#mod](https://code.dennyzhang.com/tag/mod)

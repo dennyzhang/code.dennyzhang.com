@@ -8,8 +8,9 @@ Combination Sum IV
 ---
 
 Similar Problems:  
+-   [Combination Sum III](https://code.dennyzhang.com/combination-sum-iii)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
--   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
+-   Tag: [#combination](https://code.dennyzhang.com/tag/combination), [#classic](https://code.dennyzhang.com/tag/classic),  [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
@@ -44,4 +45,42 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-iv/desc
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://code.dennyzhang.com/combination-sum-iv
+    // Blog link: https://code.dennyzhang.com/combination-sum-iv
+    // Basic Ideas: dynamic programming
+    // [1, 2, 3], 4
+    // 1, 2, 3
+    // 1 1, 2 1, 3 1, 1 2, 2 2, 1 3
+    //   2:1, 3:2, 4:3
+    // 1 1 1, 1 1 2, 1 1 3, 2 1 1....
+    //   3:1, 4:3
+    //
+    // Complexity: Time ?, Space O(n)
+    func combinationSum4(nums []int, target int) int {
+        res := 0
+        m := map[int]int{}
+        for _, num := range nums {
+            if num > target { continue }
+            m[num] = 1
+        }
+        should_continue := true
+        for should_continue {
+            m2 := map[int]int{}
+            for _, num := range nums {
+                for p := range m {
+                    if p+num<=target {
+                        m2[p+num] += m[p]
+                    }
+                }
+            }
+            if len(m2) == 0 {
+                should_continue = false
+            } else {
+                res += m[target]
+                m = map[int]int{}
+                for num := range m2 {
+                    m[num] = m2[num]
+                }
+            }
+        }
+        return res + m[target]
+    }
