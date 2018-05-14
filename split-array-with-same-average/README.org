@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, array
+:type:     inspiring, math
 :END:
 ---------------------------------------------------------------------
 Split Array With Same Average
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/matchsticks-to-square][Matchsticks to Square]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 In a given integer array A, we must move every element of A to either list B or list C. (B and C initially start empty.)
 
