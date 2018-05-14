@@ -9,7 +9,7 @@ Sort Transformed Array
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/split-array-with-same-average][Split Array With Same Average]]
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a sorted array of integers nums and integer values a, b and c. Apply a quadratic function of the form f(x) = ax*x + bx + c to each element x in the array.
 
