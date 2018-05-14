@@ -1,0 +1,37 @@
+* Leetcode: Remove 9                                             :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math
+:END:
+---------------------------------------------------------------------
+Remove 9
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/nth-digit][Nth Digit]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
+---------------------------------------------------------------------
+Start from integer 1, remove any integer that contains 9 such as 9, 19, 29...
+
+So now, you will have a new integer sequence: 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, ...
+
+Given a positive integer n, you need to return the n-th integer after removing. Note that 1 will be the first integer.
+
+#+BEGIN_EXAMPLE
+Example 1:
+Input: 9
+Output: 10
+#+END_EXAMPLE
+Hint: n will not exceed 9 x 10^8.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-9][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/remove-9/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/remove-9
+
+#+END_SRC

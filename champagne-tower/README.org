@@ -9,9 +9,8 @@ Champagne Tower
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/reaching-points][Reaching Points]]
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
-- [[https://code.dennyzhang.com/tag/inspiring][Tag: #inspiring]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 We stack glasses in a pyramid, where the first row has 1 glass, the second row has 2 glasses, and so on until the 100th row.  Each glass holds one cup (250ml) of champagne.
 
