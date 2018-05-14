@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, math
+:type:     inspiring, math, classic
 :END:
 ---------------------------------------------------------------------
 Split Array With Same Average
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/matchsticks-to-square][Matchsticks to Square]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In a given integer array A, we must move every element of A to either list B or list C. (B and C initially start empty.)
 
@@ -34,7 +34,62 @@ Credits To: [[url-external:https://leetcode.com/problems/split-array-with-same-a
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/split-array-with-same-average
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/split-array-with-same-average
+// Basic Ideas: BFS pruning
+// Observation:
+//  avg(A) == avg(B) == avg(C)
+//  We only need to check combination which has no more than len(A)/2 items.
+//          Apparently max(len(B), len(C)) <= len(A)/2 
+//  Avoid duplicated caculation by using a hashmap
+//  If we sort A, once avg(B) >= avg(A), we can't add any more item which is bigger than avg(A)
+//  
+// Complexity:
+import "sort"
+type Entity struct {
+  count, sum int
+}
 
+func splitArraySameAverage(A []int) bool {
+    if len(A)<=1 { return false }
+
+    sum_a := 0
+    for _, v:= range A { sum_a+=v }
+    visited := map[Entity]bool{}
+
+    sort.Ints(A[:])
+    // count, sum
+    queue := [][]int{}
+    for _, v:= range A {
+        // add current item to queue
+        if v*len(A) == sum_a { return true }
+        entity := Entity{1, v}
+        if visited[entity] == false {
+            queue = append(queue, []int{1, v})
+            visited[entity] = true
+        }
+        // whether add current item to existings items in the queue
+        list := [][]int{}
+        for _, item:= range queue {
+            // whether to explore
+            if item[0]*2<len(A) {
+                v1, v2:= (item[1]+v)*len(A), (item[0]+1)*sum_a
+                if v1==v2{
+                    return true
+                } else {
+                    if v1<v2 {
+                        entity = Entity{item[0]+1, item[1]+v}
+                        if visited[entity] == false {
+                            list = append(list, []int{item[0]+1, item[1]+v})
+                            visited[entity] = true
+                        }
+                    }
+                }
+            }
+        }
+        // update queue
+        for _, v:= range list { queue = append(queue, v) }
+    }
+    return false
+}
 #+END_SRC
