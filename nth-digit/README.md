@@ -8,6 +8,8 @@ Nth Digit
 ---
 
 Similar Problems:  
+-   [Remove 9](https://code.dennyzhang.com/remove-9)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
 
 ---

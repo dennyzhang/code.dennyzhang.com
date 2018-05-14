@@ -1,24 +1,35 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Remove 9     :BLOG:Hard:
 
 
 ---
 
-Identity number which appears exactly once.  
+Remove 9  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   [Nth Digit](https://code.dennyzhang.com/nth-digit)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Start from integer 1, remove any integer that contains 9 such as 9, 19, 29&#x2026;  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+So now, you will have a new integer sequence: 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, &#x2026;  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Given a positive integer n, you need to return the n-th integer after removing. Note that 1 will be the first integer.  
+
+    Example 1:
+    Input: 9
+    Output: 10
+
+Hint: n will not exceed 9 x 10^8.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-9)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/remove-9/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/remove-9

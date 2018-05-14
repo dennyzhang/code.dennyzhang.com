@@ -1,24 +1,45 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Image Overlap     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Image Overlap  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Two images A and B are given, represented as binary, square matrices of the same size.  (A binary matrix has only 0s and 1s as values.)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+We translate one image however we choose (sliding it left, right, up, or down any number of units), and place it on top of the other image.  After, the overlap of this translation is the number of positions that have a 1 in both images.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+(Note also that a translation does not include any kind of rotation.)  
+
+What is the largest possible overlap?  
+
+Example 1:  
+
+    Input: A = [[1,1,0],
+                [0,1,0],
+                [0,1,0]]
+           B = [[0,0,0],
+                [0,1,1],
+                [0,0,1]]
+    Output: 3
+    Explanation: We slide A to right by 1 unit and down by 1 unit.
+
+Notes:  
+
+    - 1 <= A.length = A[0].length = B.length = B[0].length <= 30
+    - 0 <= A[i][j], B[i][j] <= 1
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/image-overlap)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/image-overlap/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/image-overlap

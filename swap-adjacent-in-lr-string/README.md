@@ -8,7 +8,9 @@ Swap Adjacent in LR String
 ---
 
 Similar Problems:  
--   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
+-   [Valid Parenthesis String](https://code.dennyzhang.com/valid-parenthesis-string)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 

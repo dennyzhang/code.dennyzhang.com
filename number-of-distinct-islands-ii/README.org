@@ -1,0 +1,85 @@
+* Leetcode: Number of Distinct Islands II                         :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph
+:END:
+---------------------------------------------------------------------
+Number of Distinct Islands II
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/number-of-distinct-islands][Number of Distinct Islands]]
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]]
+---------------------------------------------------------------------
+Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.
+
+Count the number of distinct islands. An island is considered to be the same as another if they have the same shape, or have the same shape after rotation (90, 180, or 270 degrees only) or reflection (left/right direction or up/down direction).
+
+Example 1:
+#+BEGIN_EXAMPLE
+11000
+10000
+00001
+00011
+#+END_EXAMPLE
+
+Given the above grid map, return 1. 
+
+Notice that:
+#+BEGIN_EXAMPLE
+11
+1
+#+END_EXAMPLE
+and
+#+BEGIN_EXAMPLE
+ 1
+11
+#+END_EXAMPLE
+
+are considered same island shapes. Because if we make a 180 degrees clockwise rotation on the first island, then two islands will have the same shapes.
+
+Example 2:
+#+BEGIN_EXAMPLE
+11100
+10001
+01001
+01110
+#+END_EXAMPLE
+
+Given the above grid map, return 2.
+
+Here are the two distinct islands:
+#+BEGIN_EXAMPLE
+111
+1
+#+END_EXAMPLE
+and
+#+BEGIN_EXAMPLE
+1
+1
+#+END_EXAMPLE
+
+Notice that:
+#+BEGIN_EXAMPLE
+111
+1
+#+END_EXAMPLE
+and
+#+BEGIN_EXAMPLE
+1
+111
+#+END_EXAMPLE
+are considered same island shapes. Because if we flip the first array in the up/down direction, then they have the same shapes.
+
+Note: The length of each dimension in the given grid does not exceed 50.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/example/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/example
+
+#+END_SRC

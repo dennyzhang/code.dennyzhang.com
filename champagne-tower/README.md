@@ -9,9 +9,8 @@ Champagne Tower
 
 Similar Problems:  
 -   [Reaching Points](https://code.dennyzhang.com/reaching-points)
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
--   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
--   [Tag: #inspiring](https://code.dennyzhang.com/tag/inspiring)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

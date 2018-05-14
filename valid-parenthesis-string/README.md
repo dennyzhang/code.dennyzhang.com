@@ -8,7 +8,8 @@ Valid Parenthesis String
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://code.dennyzhang.com/category/basic), [#string](https://code.dennyzhang.com/category/string)
+-   [Swap Adjacent in LR String](https://code.dennyzhang.com/swap-adjacent-in-lr-string)
+-   Tag: [#parentheses](https://code.dennyzhang.com/category/parentheses), [#string](https://code.dennyzhang.com/category/string)
 
 ---
 
@@ -44,4 +45,52 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-parenthesis-strin
 
 Leave me comments, if you have better ways to solve.  
 
-    ## Blog link: https://code.dennyzhang.com/valid-parenthesis-string
+    // Blog link: https://code.dennyzhang.com/valid-parenthesis-string
+    // Basic Ideas:
+    //   Two pass. From left to right; From right to left
+    //   l_count: (
+    //   r_count: )
+    //   s_count: *
+    // Complexity:
+    func checkValidString(s string) bool {
+        l_count, r_count, s_count := 0, 0, 0
+        // from left to right
+        for _, ch := range s {
+            if ch == '(' {
+                l_count += 1
+            } else {
+                if ch == '*' {
+                    s_count += 1
+                } else {
+                    if l_count+s_count == 0 { return false }
+                    if l_count > 0 {
+                        l_count-=1
+                    } else {
+                        s_count-=1
+                    }
+                }
+            }
+        }
+        if s_count<l_count { return false }
+        // from right to left
+        l_count, r_count, s_count = 0, 0, 0
+        for i:=len(s)-1; i>=0; i-- {
+            ch := s[i]
+            if ch == ')' {
+                r_count += 1
+            } else {
+                if ch == '*' {
+                    s_count += 1
+                } else {
+                    if r_count+s_count==0 { return false }
+                    if r_count>0 {
+                        r_count -= 1
+                    } else {
+                        s_count -= 1
+                    }
+                }
+            }
+        }
+        if s_count<r_count { return false }
+        return true
+    }
