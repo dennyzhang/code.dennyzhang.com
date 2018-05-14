@@ -8,6 +8,7 @@ Number of Distinct Islands
 ---
 
 Similar Problems:  
+-   [Number of Distinct Islands II](https://code.dennyzhang.com/number-of-distinct-islands-ii)
 -   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
 
 ---

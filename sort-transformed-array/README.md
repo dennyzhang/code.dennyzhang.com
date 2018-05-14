@@ -9,7 +9,7 @@ Sort Transformed Array
 
 Similar Problems:  
 -   [Split Array With Same Average](https://code.dennyzhang.com/split-array-with-same-average)
--   Tag: [#math](https://code.dennyzhang.com/tag/math)
+-   Tag: [#math](https://code.dennyzhang.com/tag/math), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
