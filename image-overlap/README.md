@@ -43,3 +43,29 @@ Credits To: [leetcode.com](https://leetcode.com/problems/image-overlap/descripti
 Leave me comments, if you have better ways to solve.  
 
     // Blog link: https://code.dennyzhang.com/image-overlap
+    // Basic Ideas:
+    // Try A[0][0] for all points in B
+    // Try B[0][0] for all points in A
+    // Complexity: Time O(n^4), Space O(1)
+    func largestOverlap(A [][]int, B [][]int) int {
+        res, n := 0, len(A)
+        for i:= 0; i<n; i++ {
+            for j:=0; j<n; j ++ {
+                count1, count2 := 0, 0
+                for i1:=i; i1<n; i1++ {
+                    for j1:=j; j1<n; j1++ {
+                        i2,j2:=i1-i, j1-j
+                        if A[i1][j1]==1 && A[i1][j1]==B[i2][j2]{
+                            count1 += 1
+                        }
+                        if B[i1][j1]==1 && B[i1][j1]==A[i2][j2]{
+                            count2 += 1
+                        }
+                    }
+                }
+                if count1>res { res = count1 }
+                if count2>res { res = count2 }
+            }
+        }
+        return res
+    }

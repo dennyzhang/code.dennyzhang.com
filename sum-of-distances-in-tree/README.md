@@ -8,7 +8,7 @@ Sum of Distances in Tree
 ---
 
 Similar Problems:  
--   Tag: [#tree](https://code.dennyzhang.com/tag/tree)
+-   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#dfs](https://code.dennyzhang.com/tag/dfs), [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 
@@ -41,3 +41,48 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-distances-in-tre
 Leave me comments, if you have better ways to solve.  
 
     // Blog link: https://code.dennyzhang.com/sum-of-distances-in-tree
+    // When we move our root from one node to its connected node, 
+    //  one part of nodes get closer, one the other part get further.
+    // Basic Ideas: dfs, hashmap
+    // Complexity: Time O(n) Space O(n)
+    var m_edges map[int][]int
+    
+    // No need to use hashmap here
+    var m_childcnt []int
+    var m_distances []int
+    
+    func dfsCnt(node int, parent int, distance int) int {
+        m_distances[0] += distance
+        res := 1
+        for _, child := range m_edges[node] {
+            if child != parent {
+                res += dfsCnt(child, node, distance+1)
+            }
+        }
+        m_childcnt[node] = res
+        return res
+    }
+    
+    func dfsDistance(node int, parent int, N int) {
+        if parent != -1 {
+            m_distances[node] = m_distances[parent] + N - 2*m_childcnt[node]
+        }
+        for _, child := range m_edges[node] {
+            if parent != child { dfsDistance(child, node, N) }
+        }
+    }
+    
+    func sumOfDistancesInTree(N int, edges [][]int) []int {
+        m_edges = map[int][]int{}
+        for i, _ := range edges {
+            edge := edges[i]
+            m_edges[edge[0]] = append(m_edges[edge[0]], edge[1])
+            m_edges[edge[1]] = append(m_edges[edge[1]], edge[0])
+        }
+        m_childcnt = make([]int, N)
+        m_distances = make([]int, N)
+        m_distances[0] = 0
+        dfsCnt(0, 0, 0)
+        dfsDistance(0, -1, N)
+        return m_distances
+    }
