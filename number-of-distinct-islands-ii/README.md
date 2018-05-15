@@ -71,10 +71,10 @@ are considered same island shapes. Because if we flip the first array in the up/
 
 Note: The length of each dimension in the given grid does not exceed 50.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-distinct-islands-ii)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/number-of-distinct-islands-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/number-of-distinct-islands-ii

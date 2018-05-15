@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     graph
+:type:     dfs
 :END:
 ---------------------------------------------------------------------
 Number of Distinct Islands
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/number-of-distinct-islands-ii][Number of Distinct Islands II]]
-- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/tag/dfs][#dfs]]
 ---------------------------------------------------------------------
 Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.
 

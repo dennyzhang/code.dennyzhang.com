@@ -53,3 +53,36 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-distinct-isla
 Leave me comments, if you have better ways to solve.  
 
     // Blog link: https://code.dennyzhang.com/number-of-distinct-islands
+    // Basic Ideas: dfs + hashmap
+    // Note: In golang, we can't use tuple or slices as key for hashmap
+    // Complexity: Time O(n*m), Space O(n*m*k)
+    //             k=num_of_distinct_island
+    import "strconv"
+    var start_x, start_y int
+    func dfs(grid [][]int, i int, j int, island string) string {
+        if i<0 || i>=len(grid) || j<0 || j>=len(grid[0]) { return island }
+        if grid[i][j] != 1 { return island }
+        island += strconv.Itoa((i-start_x)*len(grid) + j-start_y)
+        grid[i][j] = 2
+        island = dfs(grid, i+1, j, island)
+        island = dfs(grid, i-1, j, island)
+        island = dfs(grid, i, j+1, island)
+        island = dfs(grid, i, j-1, island)
+        return island
+    }
+    
+    func numDistinctIslands(grid [][]int) int {
+        row_count := len(grid)
+        if row_count == 0 { return 0 }
+        hashmap := map[string]bool{}
+        for i, row := range grid {
+            for j, _:= range row {
+                start_x, start_y = i, j
+                if row[j] == 1 {
+                    island := dfs(grid, i, j, "")
+                    hashmap[island] = true
+                }
+            }
+        }
+        return len(hashmap)
+    }
