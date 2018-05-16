@@ -8,6 +8,7 @@
 Sum of Distances in Tree
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/fermat-point-of-graphs][LintCode: Fermat Point Of Graphs]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
 ---------------------------------------------------------------------
 An undirected, connected tree with N nodes labelled 0...N-1 and N-1 edges are given.
