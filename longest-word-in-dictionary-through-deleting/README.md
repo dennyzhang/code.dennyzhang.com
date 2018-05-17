@@ -8,7 +8,10 @@ Longest Word in Dictionary through Deleting
 ---
 
 Similar Problems:  
--   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
+-   [Interleaving String](https://code.dennyzhang.com/interleaving-string)
+-   [Delete Operation for Two Strings](https://code.dennyzhang.com/delete-operation-for-two-strings)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -61,3 +64,33 @@ Leave me comments, if you have better ways to solve.
                     if ch == word[i]: i+= 1
                 if i == len(word): return word
             return ''
+
+    // Basic Ideas: Compare s with word one by one
+    // Complexity: Time O(n*n), Space O(1)
+    func findLongestWord(s string, d []string) string {
+        index := -1
+        for i, word := range d {
+            // check whether s and word can match
+            j, has_matched :=0, true
+            for _, ch:= range word {
+                for j<len(s) && rune(s[j]) != ch { j++ }
+                if j==len(s) {
+                    has_matched = false
+                    break
+                }
+                j++
+            }
+            if has_matched == true {
+                if index == -1 || len(word)>len(d[index]) {
+                    index = i
+                }  else {
+                    if len(word) == len(d[index]) && word<d[index] {
+                        index = i
+                    }
+                }
+            }
+        }
+        res := ""
+        if index != -1 { res = d[index] }
+        return res
+    }

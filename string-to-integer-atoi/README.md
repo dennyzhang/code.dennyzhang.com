@@ -8,7 +8,8 @@ String to Integer (atoi)
 ---
 
 Similar Problems:  
--   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic), [Tag: #classic](https://code.dennyzhang.com/tag/classic)
+-   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic)
+-   Tag: [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 

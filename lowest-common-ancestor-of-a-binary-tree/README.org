@@ -2,14 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     classic, manydetails
+:type:     classic, manydetails, recursive, inspiring
 :END:
 ---------------------------------------------------------------------
 Lowest Common Ancestor of a Binary Tree
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+- [[https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree][Lowest Common Ancestor of a Binary Search Tree]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
