@@ -1,15 +1,15 @@
-* Leetcode: Lowest Common Ancestor of a Binary Tree             :BLOG:Medium:
+* Leetcode: Lowest Common Ancestor of a Binary Tree             :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     classic, tree
+:type:     classic, manydetails
 :END:
 ---------------------------------------------------------------------
 Lowest Common Ancestor of a Binary Tree
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/tree][#tree]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
@@ -48,7 +48,31 @@ Credits To: [[url-external:https://leetcode.com/problems/lowest-common-ancestor-
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
-
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
+## Basic Ideas: recursive
+##
+## Notice:
+##   Here we assume p, q will exists in the tree
+##
+## Complexity: ?
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
+        if root is None or root == p or root == q: return root
+        left = self.lowestCommonAncestor(root.left, p, q)
+        right = self.lowestCommonAncestor(root.right, p, q)
+        if left and right: return root
+        return left if left else right        
 #+END_SRC
