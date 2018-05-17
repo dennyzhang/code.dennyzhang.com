@@ -42,5 +42,32 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/add-bold-tag-in-string
-
+// Basic Ideas: Merge ranges
+// Complexity: Time O(n*w), Space O(n)
+//             w = total length of dict
+func addBoldTag(s string, dict []string) string {
+    marked := make([]bool, len(s)+1)
+    for i, _ := range s {
+        end := i
+        for _, word := range dict {
+            if strings.Index(s[i:], word) == 0 {
+                if len(word)+i>end { end = len(word)+i }
+            }
+        }
+        for j:=i; j<end; j++ { marked[j] = true }
+    }
+    res, has_started := "", false
+    for i, ch := range s+";" {
+        if marked[i] == true && has_started == false {
+            has_started = true
+            res += "<b>"
+        }
+        if marked[i] == false && has_started == true {
+            has_started = false
+            res += "</b>"
+        }
+        if ch != ';' { res += string(ch) }
+    }
+    return res
+}
 #+END_SRC

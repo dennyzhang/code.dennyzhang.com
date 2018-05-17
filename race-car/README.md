@@ -53,4 +53,51 @@ Credits To: [leetcode.com](https://leetcode.com/problems/race-car/description/)
 
 Leave me comments, if you have better ways to solve.  
 
-    # Blog link: https://code.dennyzhang.com/race-car
+    // Blog link: https://code.dennyzhang.com/race-car
+    // Basic Ideas: BFS + Memorized
+    //   When speed is 1 or -1, put (location, speed) into visisted set
+    //
+    // Notice:
+    //   When we have passed the target and the speed is positive, we turn back
+    //   When we on the left side of target and speed is negative, we turn back
+    //   Above 2 assumptions don't hold
+    //
+    // Complexity:
+    type Node struct {
+        loc, speed int
+    }
+    func racecar(target int) int {
+        if target == 0 { return 0 }
+        visisted := map[string]bool{}
+        queue := []Node{}
+        queue = append(queue, Node{0, 1})
+        visisted[fmt.Sprintf("%d:%d", 0, 1)] = true
+        level := 0
+        for len(queue) != 0 {
+            level++
+            items := []Node{}
+            for _, node := range queue {
+                loc2 := node.loc+node.speed
+                if loc2 == target { return level }
+                // speed up
+                speed2 := node.speed*2
+                items = append(items, Node{loc2, speed2})
+                // change direction
+                if node.speed < 0 {
+                    speed2 = 1
+                } else {
+                    speed2 = -1
+                }
+                if visisted[fmt.Sprintf("%d:%d", node.loc, speed2)] == false {
+                    visisted[fmt.Sprintf("%d:%d", node.loc, speed2)] = true
+                    items = append(items, Node{node.loc, speed2})
+                }
+            }
+            // copy back
+            queue = []Node{}
+            for _, node := range items{
+                queue = append(queue, node)
+            }
+        }
+        return -1
+    }

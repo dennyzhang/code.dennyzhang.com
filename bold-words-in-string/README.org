@@ -9,6 +9,7 @@ Bold Words in String
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/add-bold-tag-in-string][Add Bold Tag in String]]
+- [[https://code.dennyzhang.com/merge-intervals][Merge Intervals]]
 - Tag: [[https://code.dennyzhang.com/tag/addtag][#addtag]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a set of keywords words and a string S, make all appearances of all keywords in S bold. Any letters between <b> and </b> tags become bold.
@@ -30,7 +31,36 @@ Credits To: [[url-external:https://leetcode.com/problems/bold-words-in-string/de
 
 Leave me comments, if you have better ways to solve.
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/bold-words-in-string
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/bold-words-in-string
+// Basic Ideas: Merge interval
+// list: marked[bool], then merge the ranges.
+// Complexity: Time O(n*k), Space O(n)
+//             k the total length of words
+func boldWords(words []string, S string) string {
+    marked := make([]bool, len(S)+1)
+    for i, _ := range S {
+        end := i
+        for _, word := range words {
+            if strings.Index(S[i:], word) == 0 {
+                if len(word)+i > end { end = len(word)+i }
+            }
+        }
+        for j:=i; j<end; j++ { marked[j]=true }
+    }
 
+    ret, has_started := "", false
+    for i, ch := range S+";" {
+        if has_started == false && marked[i] == true {
+            has_started = true
+            ret += "<b>"
+        }
+        if has_started == true && marked[i] == false {
+            has_started = false
+            ret += "</b>"
+        }
+        if ch != ';' { ret += string(ch) }
+    }
+    return ret
+}
 #+END_SRC
