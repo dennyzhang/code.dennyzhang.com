@@ -1,0 +1,46 @@
+* Leetcode: Add Bold Tag in String                               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     addtag
+:END:
+---------------------------------------------------------------------
+Add Bold Tag in String
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/bold-words-in-string][Bold Words in String]]
+- Tag: [[https://code.dennyzhang.com/tag/addtag][#addtag]]
+---------------------------------------------------------------------
+Given a string s and a list of strings dict, you need to add a closed pair of bold tag <b> and </b> to wrap the substrings in s that exist in dict. If two such substrings overlap, you need to wrap them together by only one pair of closed bold tag. Also, if two substrings wrapped by bold tags are consecutive, you need to combine them.
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+s = "abcxyz123"
+dict = ["abc","123"]
+Output:
+"<b>abc</b>xyz<b>123</b>"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+s = "aaabbcc"
+dict = ["aaa","aab","bc"]
+Output:
+"<b>aaabbc</b>c"
+#+END_EXAMPLE
+
+Note:
+1. The given dict won't contain duplicates, and its length won't exceed 100.
+- All the strings in input have length in range [1, 1000].
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-bold-tag-in-string][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/add-bold-tag-in-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/add-bold-tag-in-string
+
+#+END_SRC

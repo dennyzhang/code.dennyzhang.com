@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     addtag, inspiring
 :END:
 ---------------------------------------------------------------------
 Bold Words in String
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
+- [[https://code.dennyzhang.com/add-bold-tag-in-string][Add Bold Tag in String]]
+- Tag: [[https://code.dennyzhang.com/tag/addtag][#addtag]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a set of keywords words and a string S, make all appearances of all keywords in S bold. Any letters between <b> and </b> tags become bold.
 

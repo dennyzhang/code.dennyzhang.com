@@ -8,6 +8,7 @@ Sum of Distances in Tree
 ---
 
 Similar Problems:  
+-   [LintCode: Fermat Point Of Graphs](https://code.dennyzhang.com/fermat-point-of-graphs)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#dfs](https://code.dennyzhang.com/tag/dfs), [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
