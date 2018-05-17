@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     classic
 :END:
 ---------------------------------------------------------------------
 String to Integer (atoi)
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]], [[https://code.dennyzhang.com/tag/classic][Tag: #classic]]
+- [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Implement atoi to convert a string to an integer.
 
