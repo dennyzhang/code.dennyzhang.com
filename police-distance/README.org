@@ -8,6 +8,7 @@
 Police Distance
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a matrix size of n x m, element 1 represents policeman, -1 represents wall and 0 represents empty.

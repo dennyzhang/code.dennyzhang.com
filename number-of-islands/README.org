@@ -10,6 +10,7 @@ Number of Islands
 Similar Problems:
 - [[https://code.dennyzhang.com/island-city][Island City]]
 - [[https://code.dennyzhang.com/review-graph][Review: Graph Problems]]
+- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.

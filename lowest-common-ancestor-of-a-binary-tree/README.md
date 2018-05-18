@@ -9,6 +9,7 @@ Lowest Common Ancestor of a Binary Tree
 
 Similar Problems:  
 -   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic)
+-   [Lowest Common Ancestor of a Binary Search Tree](https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#recursive](https://code.dennyzhang.com/tag/recursive), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
