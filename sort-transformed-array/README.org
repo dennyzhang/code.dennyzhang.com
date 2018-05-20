@@ -48,9 +48,9 @@ Leave me comments, if you have better ways to solve.
 func sortTransformedArray(nums []int, a int, b int, c int) []int {
     nums2 := make([]int, len(nums))
     for i, x:= range nums { nums2[i] = a*x*x+b*x+c }
-    index, offset := 0, 1
+    index := 0
     // We know the maximum first
-    if a>=0 { index, offset = len(nums)-1, -1 }
+    if a>=0 { index = len(nums)-1 }
     res := make([]int, len(nums))
     l, r := 0, len(nums)-1
     for l<=r {
@@ -63,6 +63,7 @@ func sortTransformedArray(nums []int, a int, b int, c int) []int {
                 res[index] = nums2[r]
                 r--
             }
+            index--
         } else {
             // We know the minimum first
             if nums2[l]<nums2[r] {
@@ -72,8 +73,8 @@ func sortTransformedArray(nums []int, a int, b int, c int) []int {
                 res[index] = nums2[r]
                 r--
             }
+            index++
         }
-        index += offset
     }
     return res
 }
