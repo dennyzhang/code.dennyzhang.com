@@ -8,6 +8,7 @@ Shortest Distance to a Character
 ---
 
 Similar Problems:  
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
 -   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---

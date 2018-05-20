@@ -10,6 +10,7 @@ Number of Islands
 Similar Problems:  
 -   [Island City](https://code.dennyzhang.com/island-city)
 -   [Review: Graph Problems](https://code.dennyzhang.com/review-graph)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
 -   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#dfs](https://code.dennyzhang.com/tag/dfs), [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---

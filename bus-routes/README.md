@@ -8,6 +8,8 @@ Bus Routes
 ---
 
 Similar Problems:  
+-   [Cheapest Flights Within K Stops](https://code.dennyzhang.com/cheapest-flights-within-k-stops)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
 -   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---

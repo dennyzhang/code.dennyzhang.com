@@ -8,6 +8,7 @@
 Jump Game
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/add-bold-tag-in-string][Add Bold Tag in String]]
 - [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -54,7 +55,4 @@ class Solution:
             if maxIndex >= length-1: break
             maxIndex = max(maxIndex, i+nums[i])
         return maxIndex >= length-1
-
-# s = Solution()
-# print(s.canJump([0, 2, 3])) # False
 #+END_SRC

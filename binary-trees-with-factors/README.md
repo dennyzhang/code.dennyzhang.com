@@ -1,24 +1,46 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Binary Trees With Factors     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Binary Trees With Factors  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an array of unique integers, each integer is strictly greater than 1.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+We make a binary tree using these integers and each number may be used for any number of times.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Each non-leaf node's value should be equal to the product of the values of it's children.  
+
+How many binary trees can we make?  Return the answer modulo 10 \*\* 9 + 7.  
+
+Example 1:  
+
+    Input: A = [2, 4]
+    Output: 3
+    Explanation: We can make these trees: [2], [4], [4, 2, 2]
+
+Example 2:  
+
+    Input: A = [2, 4, 5, 10]
+    Output: 7
+    Explanation: We can make these trees: [2], [4], [5], [10], [4, 2, 2], [10, 2, 5], [10, 5, 2].
+
+Note:  
+
+-   1 <= A.length <= 1000.
+-   2 <= A[i] <= 10 ^ 9.
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-trees-with-factors)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-trees-with-factors/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/binary-trees-with-factors

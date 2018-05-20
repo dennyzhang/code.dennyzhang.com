@@ -8,7 +8,9 @@ Cheapest Flights Within K Stops
 ---
 
 Similar Problems:  
--   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
+-   [Bus Routes](https://code.dennyzhang.com/bus-routes)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
 

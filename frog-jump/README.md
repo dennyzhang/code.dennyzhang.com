@@ -9,6 +9,7 @@ Frog Jump
 
 Similar Problems:  
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
