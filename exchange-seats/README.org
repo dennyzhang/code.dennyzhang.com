@@ -48,7 +48,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/exchange-seats/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
-
+---------------------------------------------------------------------
 #+BEGIN_SRC sql
 ## Blog link: https://code.dennyzhang.com/exchange-seats
 select s1.id as id, s2.student as student

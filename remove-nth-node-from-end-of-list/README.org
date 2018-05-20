@@ -27,7 +27,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
-
+---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/remove-nth-node-from-end-of-list
 ## Basic Ideas: Two pointers with distance of n+1

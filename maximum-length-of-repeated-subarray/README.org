@@ -33,7 +33,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
-
+---------------------------------------------------------------------
 - Solution1: dp: Time O(n*m), Space O(n*m)
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray

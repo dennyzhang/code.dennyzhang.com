@@ -24,7 +24,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/serialize-and-deserialize-bst/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
-
+---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/serialize-and-deserialize-bst
 ## Basic Ideas: Pre-order

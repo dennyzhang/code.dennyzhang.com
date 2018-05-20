@@ -47,7 +47,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/longest-univalue-path/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
-
+---------------------------------------------------------------------
 Related discussions: [[url-external:https://leetcode.com/problems/longest-univalue-path/discuss/108155/C++-DFS-with-explanation][here]]
 
 #+BEGIN_SRC python
