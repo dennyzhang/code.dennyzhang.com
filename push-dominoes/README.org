@@ -8,6 +8,7 @@
 Push Dominoes
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/shortest-distance-to-a-character][Shortest Distance to a Character]]
 - Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 There are N dominoes in a line, and we place each domino vertically upright.
@@ -61,6 +62,8 @@ For BFS, we start with L, R in the string
 For neighbors, check adjacent characters. 
 If it's still '.', avoid exploring this position any further.
 #+END_EXAMPLE
+
+Similar problem: [[https://code.dennyzhang.com/shortest-distance-to-a-character][Shortest Distance to a Character]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/push-dominoes
