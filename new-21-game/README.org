@@ -8,6 +8,7 @@
 New 21 Game
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/climbing-stairs][Climbing Stairs]]
 - Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/possibilities][#possibilities]]
 ---------------------------------------------------------------------
 Alice plays the following game, loosely based on the card game "21".
