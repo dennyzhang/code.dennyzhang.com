@@ -8,7 +8,8 @@
 Unique Binary Search Trees
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
 #+BEGIN_EXAMPLE

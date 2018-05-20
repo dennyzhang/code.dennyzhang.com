@@ -8,7 +8,7 @@ New 21 Game
 ---
 
 Similar Problems:  
--   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game), [#possibilities](https://code.dennyzhang.com/tag/possibilities)
 
 ---
 
@@ -52,3 +52,34 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/new-21-game
+    // Basic Ideas: dynamic programming
+    // dp(i): The possibility of get i
+    //
+    //      O ... O + b
+    //                b in [1, W]
+    //
+    // dp[i] = (dp[i-1]+dp[i-2]+dp[i-3]+... + dp[i-W])/W
+    //
+    // result:
+    //         dp[K]+dp[K+1]+...dp[N]
+    //
+    // Complexity: Time O(N), Space O(N)
+    func new21Game(N int, K int, W int) float64 {
+        if (K == 0 || N >= K + W) { return 1.0 }
+        dp := make(float64, N+1)
+        dp[0] = 1
+        var sum, res float64
+        sum, res = 1, 0
+        for i:=1; i<=N; i++ {
+            dp[i] = sum/float64(W)
+            if i<K {
+                sum += dp[i]
+            } else {
+                res += dp[i] 
+            }
+            if i-W>=0 {
+                sum -= dp[i-W]
+            }
+        }
+        return res
+    }

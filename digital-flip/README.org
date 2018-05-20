@@ -8,7 +8,8 @@
 Digital Flip
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Give you an array of 01. Find the minimum number of flipping steps so that the array meets the following rules:
 The back of 1 can be either1 or 0, but0 must be followed by 0.

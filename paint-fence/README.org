@@ -11,7 +11,8 @@ Similar Problems:
 - [[https://code.dennyzhang.com/climbing-stairs][Climbing Stairs]]
 - [[https://code.dennyzhang.com/house-robber][House Robber]]
 - [[https://code.dennyzhang.com/paint-house][Paint House]]
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]], [[https://code.dennyzhang.com/tag/dynamicprogramming][Tag: #dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 There is a fence with n posts, each post can be painted with one of the k colors.
 
