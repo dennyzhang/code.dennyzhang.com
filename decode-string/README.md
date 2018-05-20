@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/decode-string/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/decode-string
     ## Basic Ideas: Use stack
     ##              number applies to the next string

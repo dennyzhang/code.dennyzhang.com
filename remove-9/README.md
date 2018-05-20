@@ -32,4 +32,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-9/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/remove-9

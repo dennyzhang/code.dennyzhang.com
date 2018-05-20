@@ -61,6 +61,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/open-the-lock/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/open-the-lock
     ## Basic Ideas: BFS
     ##       dead, seen, queue

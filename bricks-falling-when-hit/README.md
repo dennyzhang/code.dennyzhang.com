@@ -49,6 +49,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bricks-falling-when-hit
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/bricks-falling-when-hit
     // Basic Ideas: DFS
     // Complexity: Time O(n*m*len(hits)), Space O(n*m)

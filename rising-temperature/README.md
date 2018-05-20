@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rising-temperature/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/rising-temperature
     select t1.Id
     from Weather as t1 join Weather as t2

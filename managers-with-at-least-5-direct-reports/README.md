@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/managers-with-at-least-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/managers-with-at-least-5-direct-reports
     select Name
     from Employee

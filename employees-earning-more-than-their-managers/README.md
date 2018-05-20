@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/employees-earning-more-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/employees-earning-more-than-their-managers
     select t1.Name as Employee
     from Employee as t1 inner join Employee as t2

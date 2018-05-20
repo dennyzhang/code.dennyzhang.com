@@ -44,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/employee-free-time/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/employee-free-time
     # Definition for an interval.
     # class Interval(object):

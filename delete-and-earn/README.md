@@ -46,4 +46,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/delete-and-earn/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/delete-and-earn

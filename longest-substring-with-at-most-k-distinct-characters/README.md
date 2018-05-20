@@ -21,6 +21,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-substring-with-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
     ## Basic Ideas:
     ##

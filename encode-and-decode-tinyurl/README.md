@@ -23,6 +23,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/encode-and-decode-tinyu
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/encode-and-decode-tinyurl
     class Codec:
         def __init__(self):

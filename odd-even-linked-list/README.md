@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/odd-even-linked-list/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/odd-even-linked-list
     # Definition for singly-linked list.
     # class ListNode(object):

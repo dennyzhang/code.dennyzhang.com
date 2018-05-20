@@ -35,6 +35,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-length-of-repea
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 -   Solution1: dp: Time O(n\*m), Space O(n\*m)
 
     // Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray

@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/short-encoding-of-words
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/short-encoding-of-words
     // Basic Ideas: Trie (One pass, instead of two)
     //     Reverse the words, build trie tree

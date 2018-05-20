@@ -21,6 +21,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-the-duplicate-numb
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-the-duplicate-number
     ## Basic Ideas: Binary search
     ##              The target is in [1, n]

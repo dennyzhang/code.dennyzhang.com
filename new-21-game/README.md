@@ -49,4 +49,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/new-21-game/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/new-21-game

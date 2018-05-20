@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reorganize-string/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/reorganize-string
     ## Basic Ideas: build a map of duplicated characters
     ##              If the most duplicated characters is no more than half of the items, it's possible.

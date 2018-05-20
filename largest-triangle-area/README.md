@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/largest-triangle-area/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 Related Reading: [Shoelace formula in wikipedia](https://en.wikipedia.org/wiki/Shoelace_formula)  
 
     ## Blog link: https://code.dennyzhang.com/largest-triangle-area

@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/daily-temperatures/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/daily-temperatures
     ## Basic Ideas: Monotonous stack can help us find first largest element in O(n) time complexity.
     ##

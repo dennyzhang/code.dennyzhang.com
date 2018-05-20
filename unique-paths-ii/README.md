@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-paths-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/unique-paths-ii
     ## Basic Ideas: dynamic programming
     ##  Very similar to https://code.dennyzhang.com/unique-paths

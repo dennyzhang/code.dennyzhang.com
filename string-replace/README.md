@@ -40,6 +40,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/string-replace/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/string-replace
     class TrieNode:
         def __init__(self):

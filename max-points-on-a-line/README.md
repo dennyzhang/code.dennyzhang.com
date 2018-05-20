@@ -22,4 +22,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-points-on-a-line/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/max-points-on-a-line

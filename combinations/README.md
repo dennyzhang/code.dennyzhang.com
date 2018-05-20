@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combinations/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/combinations
     ## Basic Ideas:
     ##          Get an array of n element, either 0 or 1

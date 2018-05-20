@@ -53,6 +53,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/average-salary-departme
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/average-salary-departments-vs-company
     select t1.pay_month, t1.department_id,
         (case when t1.amount = t2.amount then 'same'

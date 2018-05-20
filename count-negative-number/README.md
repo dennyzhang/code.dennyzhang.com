@@ -51,6 +51,8 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/count-negative-num
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/count-negative-number
     class Solution:
         """

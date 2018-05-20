@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/assign-cookies/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/assign-cookies
     ## Basic Ideas: Greedy
     ##        Assign the smallest cookie to the the mininum greedy child, if it matches

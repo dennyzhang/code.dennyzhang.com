@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/counting-bits/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/counting-bits
     ## Basic Ideas:
     ##      If k%2 == 0, f(k) = f(k/2)

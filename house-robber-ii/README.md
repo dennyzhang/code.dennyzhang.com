@@ -22,6 +22,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/house-robber-ii
     class Solution(object):
         def rob(self, nums):

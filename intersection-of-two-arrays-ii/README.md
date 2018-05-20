@@ -32,4 +32,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/intersection-of-two-arr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/intersection-of-two-arrays-ii

@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/missing-number/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/missing-number
     class Solution(object):
         def missingNumber(self, nums):

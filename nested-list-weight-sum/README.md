@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nested-list-weight-sum/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/nested-list-weight-sum
     # """
     # This is the interface that allows for creating nested lists.

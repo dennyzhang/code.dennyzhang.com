@@ -41,4 +41,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-eventual-safe-stat
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-eventual-safe-states

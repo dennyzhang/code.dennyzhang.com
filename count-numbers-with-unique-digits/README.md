@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-numbers-with-uniq
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/count-numbers-with-unique-digits
     // Basic Ideas: dynamic programming
     //   dp(i): How many unique digits with length of i

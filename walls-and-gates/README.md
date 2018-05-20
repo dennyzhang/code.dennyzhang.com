@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/walls-and-gates/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/walls-and-gates
     ## Basic Ideas: BFS
     ##      For each 0, and configure the values to the level number

@@ -43,6 +43,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-word-abbreviation
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/valid-word-abbreviation
     ## Basic Ideas: two pointer
     ## Complexity: Time O(n), Space O(1)

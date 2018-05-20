@@ -17,6 +17,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/n-queens-ii/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/n-queens-ii
     ## Basic Ideas: backtracking
     ##              Place queen row by row

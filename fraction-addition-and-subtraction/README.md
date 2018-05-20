@@ -48,4 +48,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/fraction-addition-and-s
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/fraction-addition-and-subtraction

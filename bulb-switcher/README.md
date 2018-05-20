@@ -33,6 +33,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bulb-switcher/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/bulb-switcher
     ## Basic Ideas: math problem
     ##     Bulbs of position n will stay on, only if it has odd divisors.

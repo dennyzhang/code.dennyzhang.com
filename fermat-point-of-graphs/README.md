@@ -38,6 +38,8 @@ Credits To: [lintcode.com](https://www.lintcode.com/en/old/problem/fermat-point-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/fermat-point-of-graphs
     import "strconv"
     var edges map[int][]int

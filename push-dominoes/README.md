@@ -52,6 +52,13 @@ Credits To: [leetcode.com](https://leetcode.com/problems/push-dominoes/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
+-   BFS:
+
+For BFS, we start BFS with L, R in the string  
+For neighbors, check adjacent characters.  
+
     // Blog link: https://code.dennyzhang.com/push-dominoes
     // Basic Ideas: BFS
     // Complexity: Time O(n), Space O(n)

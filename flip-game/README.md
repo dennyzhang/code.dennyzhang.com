@@ -34,6 +34,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flip-game/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/flip-game
     ## Basic Ideas: One pass
     ## Complexity: Time O(n), Space O(1)

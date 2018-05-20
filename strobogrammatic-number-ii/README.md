@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/strobogrammatic-number-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/strobogrammatic-number-ii
     ## Basic Ideas: Recursive
     ##       From f(n-2) and f(2) --> f(n)

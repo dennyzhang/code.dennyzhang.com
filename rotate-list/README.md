@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rotate-list/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/rotate-list
     ## Basic Ideas: 
     ##       Get length of the list

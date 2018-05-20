@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/largest-number/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/largest-number
     ## Basic Ideas: Quick sort list with customized compare logic. Then Concat them as one.
     ##             "9" vs "30"

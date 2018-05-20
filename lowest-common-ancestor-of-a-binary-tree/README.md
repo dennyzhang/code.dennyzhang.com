@@ -47,6 +47,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lowest-common-ancestor-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
     ## Basic Ideas: recursive
     ##

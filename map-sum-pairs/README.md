@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/map-sum-pairs/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/map-sum-pairs
     // Basic Ideas: Trie Tree
     // Complexity: Time ?, Space ?

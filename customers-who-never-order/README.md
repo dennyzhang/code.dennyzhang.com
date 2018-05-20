@@ -49,6 +49,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/customers-who-never-ord
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/customers-who-never-order
     select Customers.Name as Customers
     from Customers left join Orders on Customers.Id = Orders.CustomerId

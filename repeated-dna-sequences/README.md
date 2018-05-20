@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/repeated-dna-sequences/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/repeated-dna-sequences
     ## Basic Ideas: sliding window + hashmap
     ##

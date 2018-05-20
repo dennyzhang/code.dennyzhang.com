@@ -47,6 +47,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/teemo-attacking/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/teemo-attacking
     // Basic Ideas: Merge Intervals
     // Here we choose [start, end), instead of [start, end)

@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subarray-product-less-t
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/subarray-product-less-than-k
     ## Basic Ideas: two pointers
     ##     All nubmers are positive integers. 

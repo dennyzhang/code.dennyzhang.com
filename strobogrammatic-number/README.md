@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/strobogrammatic-number/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/strobogrammatic-number
     class Solution(object):
         ## Basic Ideas: One pass with two pointer + set

@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/can-place-flowers
     ## Basic Ideas: Find consecutive 0s
     ##              For a range of n 0s

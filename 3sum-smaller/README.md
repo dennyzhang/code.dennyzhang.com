@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/3sum-smaller/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/3sum-smaller
     ## Basic Ideas: two pointer
     ## Complexity: Time O(n*n), Space O(1)

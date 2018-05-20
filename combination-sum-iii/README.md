@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-iii/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/combination-sum-iii
     class Solution(object):
         def combinationSum3(self, k, n):

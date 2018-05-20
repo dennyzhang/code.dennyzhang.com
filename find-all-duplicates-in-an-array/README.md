@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-all-duplicates-in-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-all-duplicates-in-an-array
     ## Basic Ideas: count sort
     ## Complexity: Time O(n), Space (1)

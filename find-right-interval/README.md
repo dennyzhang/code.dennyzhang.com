@@ -55,6 +55,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-right-interval/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-right-interval
     ## Basic Ideas: hashmap + binary search
     ##     Build a hashmap to track the mapping from start point to position index

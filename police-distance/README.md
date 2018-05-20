@@ -48,6 +48,8 @@ Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challeng
 Credits To: [lintcode.com](http://www.lintcode.com/en/problem/police-distance/)  
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/police-distance
     class Solution:
         """

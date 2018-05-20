@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-word-distance-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/shortest-word-distance-ii
     ## Basic Ideas: Use hashmap to save two string comparision
     ##

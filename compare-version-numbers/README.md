@@ -24,6 +24,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/compare-version-numbers
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/compare-version-numbers
     ## Basic Ideas: Pad two versions to the same count of segment
     ##     1.2.3 vs 1.3 -> 1.2.3 vs 1.3.0

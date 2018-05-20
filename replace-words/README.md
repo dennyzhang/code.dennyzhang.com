@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/replace-words/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/replace-words
     ## Basic Ideas: Trie Tree
     ##              Build a Trie Tree from dict

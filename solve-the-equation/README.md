@@ -55,6 +55,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/solve-the-equation/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/solve-the-equation
     ## Basic Ideas:
     ##

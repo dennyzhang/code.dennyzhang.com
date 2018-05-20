@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/average-of-levels-in-bi
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/average-of-levels-in-binary-tree
     ## Basic Ideas: BFS, Level Order Tree Traversal
     ## Complexity: Time O(n), Space O(k)

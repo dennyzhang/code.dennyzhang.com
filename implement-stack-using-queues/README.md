@@ -31,6 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-stack-using-q
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/implement-stack-using-queues
     class MyQueue(object):
     

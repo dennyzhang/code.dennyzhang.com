@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix-ii/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/search-a-2d-matrix-ii
     ## Basic Ideas: We search from the left bottom position
     ##    If the value is smaller than the target, move right

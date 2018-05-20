@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-path-sum/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/minimum-path-sum
     ## Basic Ideas:
     ##           For point grid[i][j], think about the prevoius step of the minimize path

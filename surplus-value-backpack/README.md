@@ -39,6 +39,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/surplus-value-back
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/surplus-value-backpack
     
     class Solution:

@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/convert-a-number-to-hex
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/convert-a-number-to-hexadecimal
     ## Basic Ideas: For negative numbers, two's complement
     ##        https://en.wikipedia.org/wiki/Two%27s_complement

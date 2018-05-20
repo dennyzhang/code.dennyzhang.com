@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-search-tree-iter
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/binary-search-tree-iterator
     ## Basic Ideas: In-order traversal. Use a stack
     ##      Store directed left children from root.

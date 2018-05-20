@@ -41,6 +41,8 @@ Credits To: [lintcode.com](http://lintcode.com/en/problem/data-segmentation/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/data-segmentation
     ## Basic Ideas: seperate string
     ## Complexity: Time O(n), Space O(1)

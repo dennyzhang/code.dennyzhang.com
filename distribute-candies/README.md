@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/distribute-candies/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/distribute-candies
     ## Basic Ideas: Count how many different type of candies
     ##              If it has more then n/2 types, return n/2.

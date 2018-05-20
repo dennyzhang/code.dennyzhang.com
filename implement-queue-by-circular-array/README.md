@@ -39,6 +39,8 @@ Credits To: [lintcode](http://www.lintcode.com/en/problem/implement-queue-by-cir
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/implement-queue-by-circular-array
     ## Basic Ideas:
     ##  We use (n+1) cells instead of n cells.

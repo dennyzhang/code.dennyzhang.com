@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-size-subarray-s
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/minimum-size-subarray-sum
     ## Basic Ideas: Two pointers + Ge accumulated sum
     ##

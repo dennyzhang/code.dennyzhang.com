@@ -34,6 +34,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nested-list-weight-sum-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/nested-list-weight-sum-ii
     ## Basic Ideas: BFS
     ##     Find the depest level. Then use BFS

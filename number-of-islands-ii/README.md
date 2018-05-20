@@ -59,6 +59,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-islands-ii/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/number-of-islands-ii
 
 <div id="footnotes">

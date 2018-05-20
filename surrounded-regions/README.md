@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/surrounded-regions/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/surrounded-regions
     ## Basic Ideas: Two kind of Os: 
     ##                 1 it will definitely not surrounded by 'X'. This happens when 'O' happens in the boarders.

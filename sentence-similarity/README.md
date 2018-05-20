@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sentence-similarity/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sentence-similarity
     ## Basic Ideas: hashmap
     ##

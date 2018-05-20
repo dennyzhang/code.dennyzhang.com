@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-iii-data-struct
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/two-sum-iii-data-structure-design
     ## Basic Ideas: hashmap
     ##

@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/image-smoother/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/image-smoother
     ## Basic Ideas: The main point is how to write clean code.
     ##

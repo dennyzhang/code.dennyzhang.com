@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/path-sum-ii/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/path-sum-ii
     # Definition for a binary tree node.
     # class TreeNode(object):

@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/image-overlap/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/image-overlap
     // Basic Ideas:
     // Try A[0][0] for all points in B

@@ -39,4 +39,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/preimage-size-of-factor
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/preimage-size-of-factorial-zeroes-function

@@ -58,6 +58,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/friend-requests-i-overa
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate
     select ifnull((round(accepts/requests, 2)), 0.0) as accept_rate
     from

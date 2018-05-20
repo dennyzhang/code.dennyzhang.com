@@ -23,6 +23,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/summary-ranges/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/summary-ranges
     ## Basic Ideas: 2 pointer
     ## Complexity: Time O(n), Space O(1)

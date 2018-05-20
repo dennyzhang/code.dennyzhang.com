@@ -22,6 +22,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-colors/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sort-colors
     class Solution(object):
         def sortColors(self, nums):

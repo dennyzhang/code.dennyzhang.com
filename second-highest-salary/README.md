@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/second-highest-salary/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/second-highest-salary
     select ifnull((
            select Salary from Employee

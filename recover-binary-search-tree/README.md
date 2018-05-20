@@ -20,6 +20,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/recover-binary-search-t
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/recover-binary-search-tree
     ## Basic Ideas:
     ##              It could be left-right swap or parent-child swap

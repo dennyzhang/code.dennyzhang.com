@@ -35,6 +35,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-transformed-array/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/sort-transformed-array
     // Basic Ideas: math. two-pointer
     // f(x) = a*x*x+b*x+c

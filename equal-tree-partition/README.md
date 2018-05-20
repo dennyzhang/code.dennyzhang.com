@@ -59,6 +59,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/equal-tree-partition/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/equal-tree-partition
     # class TreeNode:
     #     def __init__(self, x):

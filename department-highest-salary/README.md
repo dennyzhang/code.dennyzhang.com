@@ -47,6 +47,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/department-highest-sala
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/department-highest-salary
     select Department.Name as Department, t3.Name as Employee, t3.Salary
     from Employee as t3 inner join

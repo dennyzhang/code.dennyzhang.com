@@ -48,6 +48,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/logger-rate-limiter/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/logger-rate-limiter
     ## Basic Ideas: hasmap: message -> timestamp
     ##

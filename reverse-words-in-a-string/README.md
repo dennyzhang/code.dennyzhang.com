@@ -19,6 +19,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-stri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/reverse-words-in-a-string
     ## Basic Ideas:
     ##       the sky is blue

@@ -31,6 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximal-square/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/maximal-square
     // Basic Ideas: dynamic programming
     // dp[i][j]: length of the rectangle

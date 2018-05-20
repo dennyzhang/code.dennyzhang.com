@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/consecutive-numbers/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/consecutive-numbers
     SET @group_number=0;
     SET @id_number1=0;

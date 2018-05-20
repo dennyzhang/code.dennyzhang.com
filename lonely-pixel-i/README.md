@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lonely-pixel-i/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/lonely-pixel-i
     ## Basic Ideas:
     ##   Maintain two array, with initial value of 0

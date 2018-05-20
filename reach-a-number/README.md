@@ -46,6 +46,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reach-a-number/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/reach-a-number
     ## Basic Ideas: BFS
     ##      1 - 2 + 3 - 4 + 5 - 6 ... : get -n

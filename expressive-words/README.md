@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/expressive-words/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/expressive-words
     ## Basic Ideas:
     ##    From "heeellooo To": ["h", "3", "e", "l", "l", "3", "o"]

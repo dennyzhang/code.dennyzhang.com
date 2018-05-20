@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/two-sum/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/two-sum
     ## Basic Ideas: Sort, then two pointer
     ##

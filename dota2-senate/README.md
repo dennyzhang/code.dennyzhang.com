@@ -56,6 +56,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/dota2-senate/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/dota2-senate
     // Basic Ideas: greedy
     //

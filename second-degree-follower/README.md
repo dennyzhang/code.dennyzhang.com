@@ -49,6 +49,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/second-degree-follower/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/second-degree-follower
     ## Explain the business logic
     ##   A follows B. Then A is follwer, B is followee

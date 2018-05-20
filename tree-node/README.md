@@ -65,6 +65,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/tree-node/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/tree-node
     ## Basic Idea: Left join
     # In tree, each node can only one parent or no parent

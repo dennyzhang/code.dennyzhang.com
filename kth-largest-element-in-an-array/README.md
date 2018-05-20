@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kth-largest-element-in-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/kth-largest-element-in-an-array
     ## Basic Ideas: heap
     ##

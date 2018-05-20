@@ -46,6 +46,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/most-common-word/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/most-common-word
     ## Basic Ideas: hashmap
     ## Complexity: Time O(n), Space O(n)

@@ -24,6 +24,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/roman-to-integer/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 <<<<<<< HEAD  
 Reference:  
 -   [wikipedia: Roman numerals](https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system)

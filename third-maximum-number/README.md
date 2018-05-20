@@ -44,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/third-maximum-number/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/third-maximum-number
     ## Basic Ideas: minheap
     ##

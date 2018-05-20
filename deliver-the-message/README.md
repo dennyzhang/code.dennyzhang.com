@@ -39,6 +39,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/deliver-the-messag
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/deliver-the-message
     class Solution:
         """

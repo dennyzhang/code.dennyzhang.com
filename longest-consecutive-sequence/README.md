@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-consecutive-seq
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-consecutive-sequence
     class Solution:
         # Compared to longestConsecutive_v1, no need to search in both directions.

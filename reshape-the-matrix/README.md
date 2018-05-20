@@ -53,6 +53,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reshape-the-matrix/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/reshape-the-matrix
     ## Baisc Ideas:  If r*c != count of original matrix, we can't reshape it.
     ##               Trasverse the original matrix, and use index as a counter.

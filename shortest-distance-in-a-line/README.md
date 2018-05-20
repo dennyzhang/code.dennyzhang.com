@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-in-a-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/shortest-distance-in-a-line
     select t1.x-t2.x as shortest
     from point as t1 join point as t2

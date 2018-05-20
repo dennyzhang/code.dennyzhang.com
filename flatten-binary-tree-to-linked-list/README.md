@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flatten-binary-tree-to-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/flatten-binary-tree-to-linked-list
     ## Basic Ideas: DFS for pre-order traversal
     ## Complexity: Time O(n), Space O(n)

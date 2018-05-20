@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sqrtx/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sqrtx
     ## Basic Ideas: Binary search
     ##              Check [1^2, 2^2, 3^2, ... n^2]

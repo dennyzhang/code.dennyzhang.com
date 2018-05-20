@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-uncommon-subseq
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-uncommon-subsequence-i
     ## Basic Ideas: If length is different, get the bigger one
     ##              If length is the same, compare whether they are the same

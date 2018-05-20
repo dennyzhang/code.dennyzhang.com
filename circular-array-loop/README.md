@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/circular-array-loop/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/circular-array-loop
     ## Basic Ideas: Loop from left to right
     ##        We mark dead end as 0

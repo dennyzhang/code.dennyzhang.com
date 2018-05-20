@@ -42,4 +42,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-increasing-path
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-increasing-path-in-a-matrix

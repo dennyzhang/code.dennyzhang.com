@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/complex-number-multipli
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/complex-number-multiplication
     // Basic Ideas:
     //      (v1+v2*i) * (v3+v4*i) ->

@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/leftmost-one/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/leftmost-one
     class Solution:
         """

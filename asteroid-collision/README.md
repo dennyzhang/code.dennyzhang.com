@@ -62,6 +62,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/asteroid-collision/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/asteroid-collision
     ## Basic Ideas: stack
     ##       Scan from left to right. 

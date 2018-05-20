@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/students-report-by-geog
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/students-report-by-geography
     select t1.name as America, t2.name as Asia, t3.name as Europe
     from

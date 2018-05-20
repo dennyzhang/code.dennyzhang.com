@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-upside-down
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/binary-tree-upside-down
     ## Basic Ideas: In-order
     ##

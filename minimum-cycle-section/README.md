@@ -41,6 +41,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/minimum-cycle-sect
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/minimum-cycle-section
     ## Basic Ideas: Dynamic programming
     ##  dp[]: the length of the mininum cycle section from the first element to current one

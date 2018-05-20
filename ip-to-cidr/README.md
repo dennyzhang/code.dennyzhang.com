@@ -63,4 +63,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ip-to-cidr/description/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/ip-to-cidr

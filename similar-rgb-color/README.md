@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/similar-rgb-color/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/similar-rgb-color
     ## Basic Ideas:
     ## Complexity: Time O(1): 16*16*16

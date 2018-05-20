@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/paint-house/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/paint-house
     ## Basic Ideas: Dyanmic programming
     ##     For house after house1, it can only have 3 possilities.

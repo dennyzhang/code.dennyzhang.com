@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-parenthesis-strin
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/valid-parenthesis-string
     // Basic Ideas:
     //   Two pass. From left to right; From right to left

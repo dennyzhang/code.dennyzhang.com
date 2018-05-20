@@ -43,6 +43,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/repeated-substring-patt
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/repeated-substring-pattern
     class Solution:
         def repeatedSubstringPattern(self, s):

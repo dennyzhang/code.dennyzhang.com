@@ -33,6 +33,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-immutab
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/range-sum-query-immutable
     class NumArray(object):
     

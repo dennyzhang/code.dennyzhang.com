@@ -45,4 +45,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/can-i-win/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/can-i-win

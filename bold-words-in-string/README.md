@@ -33,6 +33,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bold-words-in-string/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/bold-words-in-string
     // Basic Ideas: Merge interval
     // list: marked[bool], then merge the ranges.

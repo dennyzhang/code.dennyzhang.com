@@ -48,6 +48,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/exclusive-time-of-funct
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/exclusive-time-of-functions
 
 ---

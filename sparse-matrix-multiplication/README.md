@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sparse-matrix-multiplic
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sparse-matrix-multiplication
     ## Basic Ideas:
     ##

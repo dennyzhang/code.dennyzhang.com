@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/jump-game-ii/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/jump-game-ii
     import sys
     class Solution:

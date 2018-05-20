@@ -44,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/domino-and-tromino-tili
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/domino-and-tromino-tiling
     ## Basic Ideas: dynamic programming
     ##

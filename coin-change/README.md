@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/coin-change/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/coin-change
     class Solution(object):
         ## Basic Ideas: Dynamic Programming

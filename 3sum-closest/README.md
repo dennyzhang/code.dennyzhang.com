@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/3sum-closest/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/3sum-closest
     ## Basic Ideas: two sum
     ## Complexity: Time O(n*n), Space O(1)

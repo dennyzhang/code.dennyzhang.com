@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-time-difference
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/minimum-time-difference
     ## Basic Ideas: Convert string to integer. 
     ##              Sort it. Then get difference with rotation enforced

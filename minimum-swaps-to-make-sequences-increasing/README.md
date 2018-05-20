@@ -43,6 +43,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-swaps-to-make-s
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/minimum-swaps-to-make-sequences-increasing
     ## Basic Ideas: dynamic programming
     ##

@@ -23,6 +23,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-three/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     class Solution(object):
     ## Blog link: https://code.dennyzhang.com/power-of-three
     ## Basic Ideas: power of any prime number

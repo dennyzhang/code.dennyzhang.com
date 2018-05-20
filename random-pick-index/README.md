@@ -34,6 +34,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/random-pick-index/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/random-pick-index
     ## Basic Ideas: Reservior Sampling
     ##

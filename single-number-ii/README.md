@@ -20,6 +20,8 @@ Hint: Time O(n), Space O(1)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/single-number-ii
     class Solution(object):
         def singleNumber(self, nums):

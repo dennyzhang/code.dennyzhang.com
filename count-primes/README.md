@@ -23,6 +23,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-primes/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/count-primes
     ## Basic Ideas: Sieve of Eratosthenes
     ##              If n is not a prime, it will have more than 1 dividends.

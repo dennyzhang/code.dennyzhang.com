@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/super-pow/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/super-pow
     ## Basic Ideas:
     ##     (2^120)%k == (((2^12)%k)^10)%k

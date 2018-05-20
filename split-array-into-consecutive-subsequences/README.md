@@ -46,4 +46,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/split-array-into-consec
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/split-array-into-consecutive-subsequences

@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/gas-station/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/gas-station
     ## Basic Ideas: One pass
     ##    If gas[i] - cost[i] < 0, this node can't be the target

@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/toeplitz-matrix/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/toeplitz-matrix
     ## Basic Ideas: Check all m[i][j] with m[i+1][j+1]
     ##

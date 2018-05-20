@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/paint-fence/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/paint-fence
     ## Basic Ideas: Dynamic programming
     ##     To get f(n), it can only have two cases:

@@ -24,6 +24,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/factorial-trailing-zero
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/factorial-trailing-zeroes
     // Basic Ideas:
     //  Count how many 5 factors in all number from 1 to n.

@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-reco
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/student-attendance-record-i
     ## Basic Ideas: One pass
     ##              absent: counter of absent records

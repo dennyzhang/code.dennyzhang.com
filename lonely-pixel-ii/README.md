@@ -50,6 +50,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/lonely-pixel-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/lonely-pixel-ii
     ## Basic Ideas:
     ##    Two array

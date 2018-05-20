@@ -52,6 +52,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-increase-to-keep-ci
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/max-increase-to-keep-city-skyline
     ## Basic Ideas:
     ## Complexity: O(m*n), Space O(n+m)

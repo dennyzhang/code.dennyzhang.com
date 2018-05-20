@@ -33,4 +33,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-moves-to-equal-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/minimum-moves-to-equal-array-elements

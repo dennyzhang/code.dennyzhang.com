@@ -33,6 +33,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-square/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/valid-square
     // Basic Ideas: math
     // Get all the distances. There should be only 2 types: a, b

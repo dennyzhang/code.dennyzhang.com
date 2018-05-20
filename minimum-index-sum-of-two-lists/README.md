@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/minimum-index-sum-of-tw
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/minimum-index-sum-of-two-lists
     class Solution(object):
         def findRestaurant(self, list1, list2):

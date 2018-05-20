@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-in-rotated-sorte
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/search-in-rotated-sorted-array
     ## Basic Ideas: Binary search
     ##  Find the pivot. And do two binary search

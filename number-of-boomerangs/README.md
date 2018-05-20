@@ -33,6 +33,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-boomerangs/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 -   Solution: hashmap with hashmap as value
 
     // Blog link: https://code.dennyzhang.com/number-of-boomerangs

@@ -68,6 +68,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-snake-game/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/design-snake-game
     ## Basic Ideas: queue + hashmap
     ##              queue: coordinates for all parts of the snake

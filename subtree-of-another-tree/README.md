@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subtree-of-another-tree
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/subtree-of-another-tree
     ## Basic Ideas: pre-order trasversal
     ##

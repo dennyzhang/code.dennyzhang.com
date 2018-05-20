@@ -36,6 +36,8 @@ Credits To: [leetcode.com](http://www.lintcode.com/en/problem/radar-detection/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/radar-detection
     ## Basic Ideas: only check the height
     ## Complexity: Time O(n), Space O(1)

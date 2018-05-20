@@ -34,6 +34,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/plus-one-linked-list/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/plus-one-linked-list
     ## Basic Ideas: Reverse the link. Add 1 with possible carry. Then reverse it back
     ##

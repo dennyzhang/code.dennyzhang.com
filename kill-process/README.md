@@ -46,6 +46,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kill-process/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/kill-process
     ## Basic Ideas: hashmap
     ##    Find children by id

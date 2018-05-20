@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-four/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/power-of-four
     class Solution(object):
         def isPowerOfFour(self, num):

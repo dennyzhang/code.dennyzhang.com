@@ -37,6 +37,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/longest-repeating-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-repeating-substring
     class Solution:
         """

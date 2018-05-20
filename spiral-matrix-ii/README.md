@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/spiral-matrix-ii/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/spiral-matrix-ii
     ## Basic Ideas:
     ##            The visit is a loop with four directions: right, down, left, up

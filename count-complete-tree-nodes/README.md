@@ -23,6 +23,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/count-complete-tree-nod
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/count-complete-tree-nodes
     ## Basic Ideas: Cut the examine dataset into half
     ##              Check height of sub-tree and right-tree

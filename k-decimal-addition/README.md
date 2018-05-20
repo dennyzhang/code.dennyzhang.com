@@ -34,6 +34,8 @@ Credits To: [lintcode.com](https://www.lintcode.com/problem/k-decimal-addition/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/k-decimal-addition
     // Basic Ideas:
     // Complexity: Time O(n), Space O(n)

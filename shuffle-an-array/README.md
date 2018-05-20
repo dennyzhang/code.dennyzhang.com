@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shuffle-an-array/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/shuffle-an-array
     ## Basic Ideas: Fisher–Yates shuffle
     ##        What if nums only has 0 or 1 element?

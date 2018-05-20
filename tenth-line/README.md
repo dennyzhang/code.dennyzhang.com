@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/tenth-line/description/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/tenth-line
     line_count=$(wc -l ./file.txt | awk -F' ' '{print $1}')
     if [ $line_count -lt 10 ]; then

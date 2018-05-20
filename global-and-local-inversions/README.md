@@ -44,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/global-and-local-invers
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/global-and-local-inversions
     ## Basic Ideas: 
     ##      If both equals, apparently only the adjacent nodes can be in descedning order.

@@ -28,6 +28,8 @@ Credits To: [LintCode.com](http://www.lintcode.com/en/problem/reverse-array/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/reverse-array
     class Solution:
         """

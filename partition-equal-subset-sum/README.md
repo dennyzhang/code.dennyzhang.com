@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/partition-equal-subset-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
     ## Basic Ideas: hashmap
     ##

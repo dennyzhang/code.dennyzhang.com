@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/letter-combinations-of-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     class Solution(object):
         def letterCombinations(self, digits):
             """

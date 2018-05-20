@@ -35,6 +35,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-ii/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/combination-sum-ii
     ## Basic Ideas: Sort the list with descending order
     ##

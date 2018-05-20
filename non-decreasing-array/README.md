@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/non-decreasing-array/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/non-decreasing-array
     ## Basic Ideas: If we have two decreasing couples, we can't fix it with one change. Right?
     ## Complexity: Time O(n), Space O(1)

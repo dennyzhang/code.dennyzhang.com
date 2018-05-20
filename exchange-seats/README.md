@@ -49,6 +49,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/exchange-seats/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/exchange-seats
     select s1.id as id, s2.student as student
     from seat as s1 join seat as s2

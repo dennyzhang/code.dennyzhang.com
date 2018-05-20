@@ -35,6 +35,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/next-closest-time/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/next-closest-time
     ## Basic Ideas: Only pow(4, 4) combinations
     ##      Get all of them, and rule out the invalid onces

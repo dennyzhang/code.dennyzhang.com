@@ -24,6 +24,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-right-side-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/binary-tree-right-side-view
     ## Basic Ideas:
     ##        Level order traversal. And get the right most for each level

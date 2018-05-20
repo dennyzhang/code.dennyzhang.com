@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/integer-to-english-word
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/integer-to-english-words
     // Basic Ideas:
     // 1,234,567

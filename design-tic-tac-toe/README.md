@@ -69,4 +69,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-tic-tac-toe/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/design-tic-tac-toe

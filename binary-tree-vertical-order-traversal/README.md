@@ -87,6 +87,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-vertical-or
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/binary-tree-vertical-order-traversal
     ## Basic Ideas: BFS + hashmap
     ##

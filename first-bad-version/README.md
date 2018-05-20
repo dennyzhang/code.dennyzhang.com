@@ -19,6 +19,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/first-bad-version/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/first-bad-version
     ## Basic Ideas: Binary search
     ##         Find the first False

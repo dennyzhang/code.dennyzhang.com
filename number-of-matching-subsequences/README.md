@@ -35,6 +35,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-matching-subs
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/number-of-matching-subsequences
     ## Basic Ideas:
     ## Complexity: Time O(n*m), Space O(1)

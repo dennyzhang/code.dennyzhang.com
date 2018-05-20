@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bulls-and-cows/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 -   Solution: 2 arrays with 10 elements; 2 pass
 
     // Blog link: https://code.dennyzhang.com/bulls-and-cows

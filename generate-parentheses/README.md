@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/generate-parentheses/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/generate-parentheses
     ## Basic Ideas: Use counter to make sure it's well-formed paretheses
     ##       Use BFS to generate the result

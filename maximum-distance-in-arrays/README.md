@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-distance-in-arr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/maximum-distance-in-arrays
     ## Basic Ideas:
     ##     Get the global min and global max.

@@ -43,6 +43,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-words/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/top-k-frequent-words
     ## Basic Ideas: Hash map
     ##            Count the occurency for different words

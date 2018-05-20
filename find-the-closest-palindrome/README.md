@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-the-closest-palind
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-the-closest-palindrome
     ## Basic Ideas: Greedy. Try our best to keep the high digits
     ##

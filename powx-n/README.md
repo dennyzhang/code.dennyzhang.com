@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/powx-n/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/powx-n
     ## Basic Ideas: 
     ##        If n < 0, x^n == (1/x)^(-n)

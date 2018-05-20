@@ -49,6 +49,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/classes-more-than-5-stu
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/classes-more-than-5-students
     
     select class from courses

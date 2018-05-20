@@ -34,6 +34,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/contiguous-array/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/contiguous-array
     ## Basic Ideas: Get sum of subarray. (For each 1, add 1; For each 0, extract 1)
     ##              And build a hashmap for the fastest position of a given sum.

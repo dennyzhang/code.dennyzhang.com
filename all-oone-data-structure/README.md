@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/all-oone-data-structure
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/all-oone-data-structure
     ## Basic Ideas:
     ##          hasmap: save key and values

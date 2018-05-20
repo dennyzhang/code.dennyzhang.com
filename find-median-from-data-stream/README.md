@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-median-from-data-s
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-median-from-data-stream
     ## Basic Ideas: Use 2 heaps: 
     ##      maxheap for the first half, minheap for the second half

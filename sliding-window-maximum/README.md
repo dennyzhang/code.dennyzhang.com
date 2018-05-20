@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sliding-window-maximum/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 Useful link: [monotonic queue problem](https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem)  
 
     ## Blog link: https://code.dennyzhang.com/sliding-window-maximum

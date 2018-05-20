@@ -66,4 +66,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/the-maze/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/the-maze

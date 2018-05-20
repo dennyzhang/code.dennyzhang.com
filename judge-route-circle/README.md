@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/judge-route-circle/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/judge-route-circle
     class Solution(object):
         def judgeCircle(self, moves):

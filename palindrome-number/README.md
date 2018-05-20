@@ -33,6 +33,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-number/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/palindrome-number
     ## Basic Ideas:  Generate a new integer Y from right digit to left digit
     ##               Then compare it with X

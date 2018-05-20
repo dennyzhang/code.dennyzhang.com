@@ -55,6 +55,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/friends-of-appropriate-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/friends-of-appropriate-ages
     // Basic Ideas: hashmap
     //    We can ignore Rule 3, since rule 2 will cover it.

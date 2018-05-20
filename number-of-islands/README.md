@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/number-of-islands/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/number-of-islands
     class Solution(object):
         ## Basic Ideas: Avoid duplicate counting.

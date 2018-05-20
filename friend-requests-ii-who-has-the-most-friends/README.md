@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/friend-requests-ii-who-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends
     select t.id, sum(t.num) as num
     from (

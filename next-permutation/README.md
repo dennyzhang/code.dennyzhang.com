@@ -34,6 +34,8 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
+---
+
 Related Readings:  
 -   [Next lexicographical permutation algorithm](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm)
 -   [Wikipedia:Permutation](https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order)

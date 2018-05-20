@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-univalue-path/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 Related discussions: [here](https://leetcode.com/problems/longest-univalue-path/discuss/108155/C++-DFS-with-explanation)  
 
     ## Blog link: https://code.dennyzhang.com/longest-univalue-path

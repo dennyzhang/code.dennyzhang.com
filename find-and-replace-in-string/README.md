@@ -48,6 +48,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-and-replace-in-str
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/find-and-replace-in-string
     // Basic Ideas: One pass. Use hashmap to avoid sorting
     //

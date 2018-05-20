@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/consecutive-numbers-sum
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/consecutive-numbers-sum
     // Basic Ideas:
     //

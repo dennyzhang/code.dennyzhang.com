@@ -57,6 +57,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-characters-by-freq
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sort-characters-by-frequency
     ## Baisc Ideas: Sort with customized function
     ##

@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/guess-number-higher-or-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/guess-number-higher-or-lower
     ## Basic Ideas: binary search
     ##      1 1 1 0 -1 -1 -1

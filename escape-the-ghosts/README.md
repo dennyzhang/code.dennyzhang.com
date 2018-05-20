@@ -58,6 +58,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/escape-the-ghosts/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/escape-the-ghosts
     ## Basic Ideas: Get the minimum distance
     ##

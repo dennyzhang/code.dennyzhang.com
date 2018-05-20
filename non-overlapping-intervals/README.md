@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/non-overlapping-interva
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/non-overlapping-intervals
     # Definition for an interval.
     # class Interval(object):

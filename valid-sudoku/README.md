@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/valid-sudoku
     ## Basic Ideas: Check each row, each colum and each section
     ##              When we check, we use an array of 10

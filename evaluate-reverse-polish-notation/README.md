@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/evaluate-reverse-polish
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/evaluate-reverse-polish-notation
     ## Basic Ideas: Use stack
     ## Complexity: Time O(n), Space O(n)

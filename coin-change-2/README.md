@@ -50,6 +50,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/coin-change-2/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/coin-change-2
     class Solution(object):
         ## Basic Ideas: Dynamic programming

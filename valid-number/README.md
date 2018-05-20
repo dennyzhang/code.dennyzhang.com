@@ -31,6 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-number/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/valid-number
     ## Yes, it's cheating.
     ## But I really don't think this puzzle is approriate for code interview.

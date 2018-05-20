@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/k-diff-pairs-in-an-arra
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/k-diff-pairs-in-an-array
     class Solution:
         ## Basic Ideas: Hashmap

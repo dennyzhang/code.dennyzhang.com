@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/different-ways-to-add-p
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/different-ways-to-add-parentheses
     class Solution:
         def diffWaysToCompute(self, input):

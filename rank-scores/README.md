@@ -44,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rank-scores/description
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/rank-scores
     set @rownr=0;
     select t1.Score, t2.rank as Rank

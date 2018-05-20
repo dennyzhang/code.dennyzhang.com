@@ -60,6 +60,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/trips-and-users/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/trips-and-users
     select t1.Day as Day, round(COALESCE(t2.cancel_count, 0)/t1.total_count, 2) as 'Cancellation Rate' from
     (select Trips.Request_at as Day, count(1) as total_count

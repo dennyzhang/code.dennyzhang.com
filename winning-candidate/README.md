@@ -55,6 +55,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/winning-candidate/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/winning-candidate
     select Name
     from Candidate where

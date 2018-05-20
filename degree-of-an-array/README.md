@@ -42,4 +42,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/degree-of-an-array/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/degree-of-an-array

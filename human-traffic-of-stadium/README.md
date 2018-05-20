@@ -51,6 +51,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/human-traffic-of-stadiu
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/human-traffic-of-stadium
     SET @group_number=0;
     

@@ -50,6 +50,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-components/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/linked-list-components
     # Definition for singly-linked list.
     # class ListNode:

@@ -51,6 +51,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/goat-latin/description/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/goat-latin
     // Basic Ideas: Split string as a list first
     // Complexity: Time O(n), Space O(n)

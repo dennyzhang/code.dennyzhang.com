@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/water-and-jug-problem/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 -   GCD
 
     // Blog link: https://code.dennyzhang.com/water-and-jug-problem

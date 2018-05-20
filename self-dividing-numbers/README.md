@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/self-dividing-numbers/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/self-dividing-numbers
     class Solution(object):
         def selfDividingNumbers(self, left, right):

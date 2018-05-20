@@ -48,6 +48,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/permutation-sequence/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/permutation-sequence
     // Basic Ideas:
     // For length of k, there are k! combinations

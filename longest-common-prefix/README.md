@@ -20,4 +20,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-common-prefix/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-common-prefix

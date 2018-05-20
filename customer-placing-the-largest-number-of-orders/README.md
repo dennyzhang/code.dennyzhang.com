@@ -56,6 +56,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/customer-placing-the-la
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/customer-placing-the-largest-number-of-orders
     
     # assume: only one match

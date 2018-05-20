@@ -35,6 +35,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/rearrange/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/rearrange
     class Solution:
         """

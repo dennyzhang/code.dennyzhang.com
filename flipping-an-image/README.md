@@ -43,6 +43,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flipping-an-image/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/flipping-an-image
     // Basic Ideas: One pass, two-pointers
     // Complexity: Time O(m*n), Space O(1)

@@ -24,6 +24,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/perfect-squares/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/perfect-squares
     ## Basic Ideas: BFS. Find the mininum steps
     ##              Get a list of square numbers as the candidate to explore

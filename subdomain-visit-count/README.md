@@ -49,6 +49,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/subdomain-visit-count/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/subdomain-visit-count
     ## Basic Ideas: hashmap
     ## Complexity: Time O(n), Space O(n)

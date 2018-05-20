@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-median-given-frequ
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-median-given-frequency-of-numbers
     select avg(t3.Number) as median
     from Numbers as t3 

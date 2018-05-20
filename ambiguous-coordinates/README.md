@@ -54,6 +54,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ambiguous-coordinates/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/ambiguous-coordinates
     ## Basic Ideas: Divide S into two parts; Then add comma
     ##   The tricky part is adding comma

@@ -54,6 +54,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-twitter/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/design-twitter
     ## Basic Ideas: Two hashmap + PriorityQueue
     ##     tweet_dict. id -> tweet_list

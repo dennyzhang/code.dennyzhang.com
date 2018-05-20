@@ -49,6 +49,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/get-highest-answer-rate
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/get-highest-answer-rate-question
     select question_id as survey_log
     from (

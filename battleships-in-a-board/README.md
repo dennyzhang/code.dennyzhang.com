@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/battleships-in-a-board/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/battleships-in-a-board
     ## Basic Ideas
     ##   Check from left to right, top to down

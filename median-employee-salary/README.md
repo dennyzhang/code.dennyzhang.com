@@ -57,6 +57,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/median-employee-salary/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/median-employee-salary
     select t1.Id as Id, t1.Company, t1.Salary
     from Employee as t1 inner join Employee as t2

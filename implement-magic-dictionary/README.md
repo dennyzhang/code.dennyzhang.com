@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-magic-diction
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/implement-magic-dictionary
     ## Basic Ideas: Trie Tree + recursive
     ##

@@ -79,6 +79,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/masking-personal-inform
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/masking-personal-information
     // Basic Ideas:
     // Complexity: Time O(n), Space O(n)

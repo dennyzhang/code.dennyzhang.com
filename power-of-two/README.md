@@ -20,6 +20,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/power-of-two/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/power-of-two
     class Solution(object):
         def isPowerOfTwo(self, n):

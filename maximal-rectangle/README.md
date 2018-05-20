@@ -31,6 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximal-rectangle/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/maximal-rectangle
     ## Basic Ideas: monotone stack
     ##       Based on another problem: https://code.dennyzhang.com/largest-rectangle-in-histogram

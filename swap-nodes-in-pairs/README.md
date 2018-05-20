@@ -20,6 +20,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/swap-nodes-in-pairs/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/swap-nodes-in-pairs
     # Definition for singly-linked list.
     # class ListNode(object):

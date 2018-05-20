@@ -21,6 +21,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/one-edit-distance/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/one-edit-distance
     ## Basic Ideas:
     ##

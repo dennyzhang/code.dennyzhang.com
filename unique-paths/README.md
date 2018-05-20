@@ -31,6 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-paths/descriptio
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/unique-paths
     class Solution(object):
         ## Basic Ideas: Dynamic programming

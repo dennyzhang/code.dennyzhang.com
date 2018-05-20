@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/partition-labels/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/partition-labels
     ## Basic Ideas:
     ##       letter_dict:

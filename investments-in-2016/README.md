@@ -62,6 +62,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/investments-in-2016/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/investments-in-2016
     select sum(TIV_2016) as TIV_2016
     from insurance

@@ -35,6 +35,8 @@ Credits To: [lintcode.com](https://www.lintcode.com/en/old/problem/twitch-words/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/twitch-words
     /**
      * @param str: the origin string

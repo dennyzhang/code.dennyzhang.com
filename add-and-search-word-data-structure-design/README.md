@@ -44,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/add-and-search-word-dat
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/add-and-search-word-data-structure-design
     ## Basic Ideas: Trie tree. Search with dfs or backtracking
     ##              TrieNode: children

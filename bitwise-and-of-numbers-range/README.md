@@ -22,6 +22,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/bitwise-and-of-numbers-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/bitwise-and-of-numbers-range
     class Solution(object):
         def rangeBitwiseAnd(self, m, n):

@@ -51,6 +51,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/design-phone-directory/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/design-phone-directory
     ## Basic Ideas: One collection: free_set
     ##

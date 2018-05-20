@@ -41,6 +41,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/digital-problem/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/digital-problem
     class Solution:
         """

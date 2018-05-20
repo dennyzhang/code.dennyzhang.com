@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/swap-adjacent-in-lr-str
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/swap-adjacent-in-lr-string
     ## Basic Ideas: Check 3 rules
     ##       R won't bypass X: count 'R' from left to right

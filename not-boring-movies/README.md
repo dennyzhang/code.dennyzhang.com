@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/not-boring-movies/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/not-boring-movies
     select * from cinema
     where description != '%boring%' and id %2 != 0

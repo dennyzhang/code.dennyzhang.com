@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/text-justification/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/text-justification
     func fullJustify(words []string, maxWidth int) []string {
     

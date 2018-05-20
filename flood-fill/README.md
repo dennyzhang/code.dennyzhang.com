@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flood-fill/description/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/flood-fill
     ## Basic Ideas: dfs
     ##              If the position we checked doesn't have the original value, stop

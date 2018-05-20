@@ -31,4 +31,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/wiggle-sort-ii/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/wiggle-sort-ii

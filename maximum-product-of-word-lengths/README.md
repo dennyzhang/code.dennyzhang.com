@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-product-of-word
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/maximum-product-of-word-lengths
     ## Basic Ideas: Convert each word into 26 bits binary.
     ##              b[0] -> a, b[1] -> b, b[2] -> c ... b[25] -> z

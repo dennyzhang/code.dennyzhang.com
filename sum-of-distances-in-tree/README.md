@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-distances-in-tre
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/sum-of-distances-in-tree
     // When we move our root from one node to its connected node, 
     //  one part of nodes get closer, one the other part get further.

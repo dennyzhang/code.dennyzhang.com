@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flatten-2d-vector/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/flatten-2d-vector
     ## Basic Ideas: Caching current element
     ##

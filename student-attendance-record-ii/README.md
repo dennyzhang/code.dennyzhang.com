@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-reco
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/student-attendance-record-ii
     ## Basic Ideas: Dynamic Programming
     ##      a0l0, a0l1, a0l2

@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/substring-with-concaten
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/substring-with-concatenation-of-all-words
     ## Basic Ideas: 2 twopointers with hasmap
     ##

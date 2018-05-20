@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/2-keys-keyboard/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/2-keys-keyboard
     ## Basic Ideas: Dynamic programming
     ##

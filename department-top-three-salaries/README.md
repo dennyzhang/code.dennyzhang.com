@@ -52,6 +52,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/department-top-three-sa
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/department-top-three-salaries
     select t4.Name as Department, t3.Name as Employee, t3.Salary
     from

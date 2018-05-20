@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/verify-preorder-sequenc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree
     import sys
     class Solution(object):

@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/serialize-and-deseriali
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/serialize-and-deserialize-bst
     ## Basic Ideas: Pre-order
     ## Complexity: Time O(n), Space O(n)

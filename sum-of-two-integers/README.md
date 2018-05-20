@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-two-integers/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sum-of-two-integers
     ## Basic Ideas: a xor b: get sum without carry. (a & b) << 1 carry
     ## Complexity:

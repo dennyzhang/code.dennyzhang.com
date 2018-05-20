@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/all-paths-from-source-t
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/all-paths-from-source-to-target
     ## Basic Ideas: dfs
     ## Complexity: Time O(n!), Space O(n)

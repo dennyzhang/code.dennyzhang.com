@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/array-partition-i/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/array-partition-i
     class Solution(object):
         def arrayPairSum(self, nums):

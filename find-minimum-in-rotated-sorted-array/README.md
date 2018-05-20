@@ -28,6 +28,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array
     class Solution:
         ## Basic Ideas: Binary Search

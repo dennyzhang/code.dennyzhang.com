@@ -47,6 +47,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-morse-code-words
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/unique-morse-code-words
     ## Basic Ideas: Hashmap
     ## Complexity: Time O(n), Space O(n)

@@ -47,6 +47,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/champagne-tower/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/champagne-tower
     ## Basic Ideas: Dynamic programming
     ##          grid[i][j] will evenly flow to grid[i+1][j] and grid[i+1][j+1]

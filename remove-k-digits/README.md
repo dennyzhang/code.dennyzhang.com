@@ -42,6 +42,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-k-digits/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/remove-k-digits
     ## Basic Ideas: Greedy
     ##    From left to right, if current digit decreases, we find one candiate

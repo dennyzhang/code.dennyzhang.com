@@ -57,6 +57,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/baseball-game/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/baseball-game
     ## Basic Ideas: stack: only pop when we get a 'D'
     ##

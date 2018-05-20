@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-palindrome/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/shortest-palindrome
     ## Basic Ideas: Treat each character as the middle.
     ##              The length of palindrome might be odd or even

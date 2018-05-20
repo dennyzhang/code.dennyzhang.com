@@ -41,4 +41,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/matchsticks-to-square/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/matchsticks-to-square

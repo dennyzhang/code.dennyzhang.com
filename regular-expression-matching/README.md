@@ -37,4 +37,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/regular-expression-matc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/regular-expression-matching

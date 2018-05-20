@@ -45,6 +45,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/positions-of-large-grou
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 -   Solution: Special treatment for last group
 
     // Blog link: https://code.dennyzhang.com/positions-of-large-groups

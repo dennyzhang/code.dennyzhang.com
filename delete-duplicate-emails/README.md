@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/delete-duplicate-emails
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/delete-duplicate-emails
     delete t1 from Person as t1 inner join Person as t2
     on t1.Email = t2.Email

@@ -31,6 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/word-pattern-ii/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/word-pattern-ii
     ## Basic Ideas:
     ##  In str, not all words are the same length

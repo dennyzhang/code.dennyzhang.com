@@ -35,6 +35,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-palindromic-sub
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-palindromic-substring
     ## Basic Ideas: Choose one as the middle of palindromic, then expand in both directions
     ##              palindromic may have odd elements or even elements

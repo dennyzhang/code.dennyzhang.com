@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/min-stack/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/min-stack
     ## Basic Ideas: List with elements of (value, min_value)
     ##    -2 0 -3  4

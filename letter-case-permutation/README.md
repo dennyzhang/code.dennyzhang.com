@@ -38,6 +38,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/letter-case-permutation
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/letter-case-permutation
     class Solution:
         ## Basic Ideas: One pass (similar like DFS)

@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/jewels-and-stones/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/jewels-and-stones
     // Basic Ideas: set/hashmap
     // Complexity: Time O(n), Space O(n)

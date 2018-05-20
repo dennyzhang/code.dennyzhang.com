@@ -37,4 +37,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/kth-smallest-element-in
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix

@@ -25,4 +25,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/string-to-integer-atoi/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/string-to-integer-atoi

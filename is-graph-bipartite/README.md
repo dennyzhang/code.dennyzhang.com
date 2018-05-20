@@ -54,6 +54,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/is-graph-bipartite/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/is-graph-bipartite
     class Solution:
         ## Basic Ideas: DFS

@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/nth-highest-salary/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/nth-highest-salary
     CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
     BEGIN

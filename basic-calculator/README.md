@@ -31,6 +31,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/basic-calculator/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/basic-calculator
     ## Basic Ideas: stack
     ##        Whenever we get ), we get the result for (...)

@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/chalkboard-xor-game/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/chalkboard-xor-game
     ## Basic Ideas:
     ##

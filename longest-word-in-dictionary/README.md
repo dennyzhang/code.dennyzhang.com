@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-word-in-diction
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-word-in-dictionary
     ## Basic Ideas: trie tree
     ## Complexity: Time O(n), Space O(n). n the count of characters involved

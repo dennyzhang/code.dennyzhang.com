@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/remove-duplicates-from-sorted-array-ii
     ## Basic Ideas: compare v with the last 2nd element in the result
     ##              sliding window

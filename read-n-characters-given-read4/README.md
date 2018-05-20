@@ -27,6 +27,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/read-n-characters-given
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/read-n-characters-given-read4
     ## Basic Ideas: Use cached reading
     ##     Notice: We don't need to save the status of previous read function

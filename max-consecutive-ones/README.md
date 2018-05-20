@@ -26,6 +26,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/max-consecutive-ones/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     class Solution(object):
         ## Blog link: https://code.dennyzhang.com/max-consecutive-ones
         ## Basic Ideas:  counter

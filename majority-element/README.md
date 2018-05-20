@@ -17,6 +17,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/majority-element/descri
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/majority-element
     class Solution(object):
         def majorityElement1(self, nums):

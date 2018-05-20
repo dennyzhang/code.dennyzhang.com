@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/rectangle-overlap/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/rectangle-overlap
     ## Basic Ideas: Get overlapped region
     ## Complexity: Time O(1), Space O(1)

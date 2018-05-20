@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/valid-palindrome-ii
     ## Basic Ideas: If mismatched, we can only delete either the left or the right
     ##

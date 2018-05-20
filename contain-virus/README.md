@@ -69,4 +69,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/contain-virus/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/contain-virus

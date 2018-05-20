@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-zigzag-leve
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/binary-tree-zigzag-level-order-traversal
     ## Basic Ideas: BFS, use left_to_right(boolen) for level traversal direction
     ## Complexity: Time O(n), Space O(k)

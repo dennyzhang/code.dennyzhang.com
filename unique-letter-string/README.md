@@ -48,6 +48,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/unique-letter-string/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/unique-letter-string
     // Basic Ideas:
     //

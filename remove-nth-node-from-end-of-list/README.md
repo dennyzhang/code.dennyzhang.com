@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/remove-nth-node-from-en
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/remove-nth-node-from-end-of-list
     ## Basic Ideas: Two pointers with distance of n+1
     ##              Since the head node might be deleted, we need a dummy node

@@ -21,6 +21,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/contains-duplicate-iii/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/contains-duplicate-iii
     ## Basic Ideas: sliding window
     ##              Maintain a window with k+1 elements. A set for unsorted unique collection

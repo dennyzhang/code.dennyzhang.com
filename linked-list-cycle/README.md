@@ -23,6 +23,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-cycle/descr
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/linked-list-cycle
     # Definition for singly-linked list.
     # class ListNode(object):

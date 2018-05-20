@@ -32,6 +32,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/the-biggest-score-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/the-biggest-score-on-the-tree
     class MyTree:
         def __init__(self, profit):

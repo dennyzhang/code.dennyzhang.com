@@ -40,6 +40,8 @@ Credits To: [lintcode.com](http://www.lintcode.com/en/problem/friend-request/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/friend-request
     ## Basic Ideas: two loop
     ## Complexity: Time O(n*n), Space O(1)

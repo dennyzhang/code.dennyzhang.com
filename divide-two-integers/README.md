@@ -22,6 +22,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/divide-two-integers/des
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/divide-two-integers
     ## Basic Ideas: generate a list of [1, 2, 4, 8, 16...] and [d, 2d, 4d, 8d, ...]
     ## Complexity: Time O(log(n)), Space O(log(n))

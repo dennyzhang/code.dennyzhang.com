@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/consecutive-available-s
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/consecutive-available-seats
     select distinct t1.seat_id
     from cinema as t1 join cinema as t2

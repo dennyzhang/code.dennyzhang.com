@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/longest-substring-witho
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters
     ## Basic Ideas: two pointer: slow and fast
     ##           If duplicate, the fast pointer don't need to turn back.

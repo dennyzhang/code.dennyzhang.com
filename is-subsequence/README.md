@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/is-subsequence/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/is-subsequence
     ## Basic Ideas: Greedy + Two pointer
     ##

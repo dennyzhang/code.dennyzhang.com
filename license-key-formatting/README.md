@@ -39,6 +39,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/license-key-formatting/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/license-key-formatting
     ## Basic Ideas: Get the length of non-dash string
     ##              Then we know how many dash we need

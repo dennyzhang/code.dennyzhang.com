@@ -41,6 +41,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/add-bold-tag-in-string/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     // Blog link: https://code.dennyzhang.com/add-bold-tag-in-string
     // Basic Ideas: Merge ranges
     // Complexity: Time O(n*w), Space O(n)

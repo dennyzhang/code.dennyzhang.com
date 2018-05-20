@@ -24,4 +24,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-product-subarra
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/maximum-product-subarray

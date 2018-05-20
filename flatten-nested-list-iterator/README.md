@@ -36,6 +36,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/flatten-nested-list-ite
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/flatten-nested-list-iterator
     ## Basic Ideas:
     ##            Since it's an iterator, we can't change existing list

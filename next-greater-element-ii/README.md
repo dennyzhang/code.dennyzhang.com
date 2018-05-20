@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/next-greater-element-ii
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/next-greater-element-ii
     ## Basic Idea: Descending stack
     ##

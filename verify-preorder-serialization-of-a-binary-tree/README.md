@@ -51,6 +51,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/verify-preorder-seriali
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree
     ## Basic Ideas: Stack
     ##      If number, push.

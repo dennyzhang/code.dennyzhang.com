@@ -36,4 +36,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/continuous-subarray-sum
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/continuous-subarray-sum

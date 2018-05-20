@@ -44,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/reaching-points/descrip
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/reaching-points
     ## Basic Ideas:
     ##   When tx > sx and ty > sy

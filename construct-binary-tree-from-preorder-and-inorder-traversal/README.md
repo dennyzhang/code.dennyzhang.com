@@ -15,6 +15,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-f
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):

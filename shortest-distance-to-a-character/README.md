@@ -32,6 +32,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-to-a-
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
 -   Solution 1: BFS
 
     // Blog link: https://code.dennyzhang.com/shortest-distance-to-a-character

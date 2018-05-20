@@ -46,6 +46,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sliding-window-median/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sliding-window-median
     class Solution:
         ## Basic Ideas: two heap

@@ -30,6 +30,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-average-subarra
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/maximum-average-subarray-i
     ## Basic Ideas: greedy + Sliding window
     ##

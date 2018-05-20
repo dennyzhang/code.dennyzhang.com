@@ -34,6 +34,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-xor-of-two-numb
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array
     ## Basic Ideas: Trie tree
     ##              1. The height of tree is 32. Each node can have at most two children(0 and 1)

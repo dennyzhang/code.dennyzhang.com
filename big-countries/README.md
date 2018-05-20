@@ -43,6 +43,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/big-countries/descripti
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/big-countries
     select name, population, area
     from World

@@ -68,6 +68,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/maximum-width-of-binary
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/maximum-width-of-binary-tree
     # Definition for a binary tree node.
     # class TreeNode(object):

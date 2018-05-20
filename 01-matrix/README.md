@@ -50,6 +50,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/01-matrix/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/01-matrix
     ## Basic Ideas:
     ##        There are two types of 1: Adjacent nodes have 0; don't have

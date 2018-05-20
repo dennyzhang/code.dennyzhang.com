@@ -54,6 +54,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/swim-in-rising-water/de
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/swim-in-rising-water
     class Solution:
         ## Basic Ideas: BFS + heap

@@ -40,6 +40,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/most-frequent-subtree-s
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/most-frequent-subtree-sum
     ## Basic Ideas: post-order
     ##              For the result, build a map

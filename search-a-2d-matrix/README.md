@@ -36,4 +36,6 @@ Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix/desc
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/search-a-2d-matrix

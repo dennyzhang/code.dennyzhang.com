@@ -37,6 +37,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindromic-substrings/
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/palindromic-substrings
     ## Basic Ideas: Choose each character as the central letter
     ##        The palindrome may have odd length and even length.

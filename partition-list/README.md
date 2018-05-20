@@ -21,6 +21,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/partition-list/descript
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/partition-list
     ## Basic Ideas: 3 pointer. 
     ##     p_last_less: last node which is less than x

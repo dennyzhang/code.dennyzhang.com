@@ -20,6 +20,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sort-list/description/)
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/sort-list
     ## Basic Ideas: Merge sort. Recursive
     ##       1. Divide the list into two half

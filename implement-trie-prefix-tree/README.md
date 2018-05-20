@@ -25,6 +25,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/implement-trie-prefix-t
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/implement-trie-prefix-tree
     ## Basic Ideas: TrieNode: is_word(bool), children(dict)
     ##           For the root node, we don't store any characters. Only in children

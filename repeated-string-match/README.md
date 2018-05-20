@@ -29,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/repeated-string-match/d
 
 Leave me comments, if you have better ways to solve.  
 
+---
+
     ## Blog link: https://code.dennyzhang.com/repeated-string-match
     ## Basic Ideas: Consider lengths of A and B are len_a, len_b
     ##              Let's say a match exists. k = len_b/len_a
