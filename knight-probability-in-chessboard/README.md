@@ -8,7 +8,7 @@ Knight Probability in Chessboard
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#possibilities](https://code.dennyzhang.com/tag/possibilities)
 
 ---
 

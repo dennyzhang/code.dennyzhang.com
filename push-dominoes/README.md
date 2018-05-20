@@ -8,6 +8,7 @@ Push Dominoes
 ---
 
 Similar Problems:  
+-   [Shortest Distance to a Character](https://code.dennyzhang.com/shortest-distance-to-a-character)
 -   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
@@ -54,10 +55,16 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
--   BFS:
+-   Solution: BFS
 
-For BFS, we start BFS with L, R in the string  
-For neighbors, check adjacent characters.  
+    General Thinking:
+    
+    For BFS, we start with L, R in the string
+    
+    For neighbors, check adjacent characters. 
+    If it's still '.', avoid exploring this position any further.
+
+Similar problem: [Shortest Distance to a Character](https://code.dennyzhang.com/shortest-distance-to-a-character), [#bfs](https://code.dennyzhang.com/tag/bfs)  
 
     // Blog link: https://code.dennyzhang.com/push-dominoes
     // Basic Ideas: BFS

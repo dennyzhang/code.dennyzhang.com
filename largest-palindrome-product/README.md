@@ -8,7 +8,8 @@ Largest Palindrome Product
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome)
+-   Tag: [#palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 

@@ -9,7 +9,8 @@ Student Attendance Record II
 
 Similar Problems:  
 -   [Student Attendance Record I](https://code.dennyzhang.com/student-attendance-record-i)
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 

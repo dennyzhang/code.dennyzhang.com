@@ -9,7 +9,8 @@ Longest Line of Consecutive One in Matrix
 
 Similar Problems:  
 -   [Unique Paths](https://code.dennyzhang.com/unique-paths)
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

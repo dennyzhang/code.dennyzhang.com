@@ -8,8 +8,9 @@ Longest Palindromic Subsequence
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
--   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 

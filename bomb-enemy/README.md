@@ -9,8 +9,9 @@ Bomb Enemy
 
 Similar Problems:  
 -   [Lonely Pixel I](https://code.dennyzhang.com/lonely-pixel-i)
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
--   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#game](https://code.dennyzhang.com/tag/game)
 
 ---
 

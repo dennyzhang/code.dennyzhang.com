@@ -66,7 +66,7 @@ Leave me comments, if you have better ways to solve.
     // Complexity: Time O(N), Space O(N)
     func new21Game(N int, K int, W int) float64 {
         if (K == 0 || N >= K + W) { return 1.0 }
-        dp := make(float64, N+1)
+        dp := make([]float64, N+1)
         dp[0] = 1
         var sum, res float64
         sum, res = 1, 0

@@ -1,4 +1,4 @@
-# Leetcode: House Robber II     :BLOG:Hard:
+\\\* Leetcode: House Robber II                                   :BLOG:Hard:  
 
 
 ---
@@ -8,7 +8,8 @@ House Robber
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

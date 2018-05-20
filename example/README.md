@@ -23,4 +23,8 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
+-   Solution: XXX
+
+    General Thinking:
+
     // Blog link: https://code.dennyzhang.com/example

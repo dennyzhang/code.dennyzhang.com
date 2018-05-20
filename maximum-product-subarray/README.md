@@ -8,8 +8,8 @@ Maximum Product Subarray
 ---
 
 Similar Problems:  
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
--   [Tag: #subarray](https://code.dennyzhang.com/tag/subarray)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#subarray](https://code.dennyzhang.com/tag/subarray), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 

@@ -9,8 +9,9 @@ Partition Equal Subset Sum
 
 Similar Problems:  
 -   [Partition Equal Subset Sum](https://code.dennyzhang.com/partition-equal-subset-sum)
--   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
--   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming), [Tag: #dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#combination](https://code.dennyzhang.com/tag/combination)
 
 ---
 
