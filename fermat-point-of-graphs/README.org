@@ -38,6 +38,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://www.lintcode.com/en/old/problem/fermat-point-of-graphs/][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/fermat-point-of-graphs

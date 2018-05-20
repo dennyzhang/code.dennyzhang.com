@@ -68,6 +68,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/design-tic-tac-toe/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/design-tic-tac-toe

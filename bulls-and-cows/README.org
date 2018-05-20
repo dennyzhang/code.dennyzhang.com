@@ -35,6 +35,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/bulls-and-cows/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 - Solution: 2 arrays with 10 elements; 2 pass
 #+BEGIN_SRC go

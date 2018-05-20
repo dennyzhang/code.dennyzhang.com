@@ -8,6 +8,7 @@ Jump Game
 ---
 
 Similar Problems:  
+-   [Add Bold Tag in String](https://code.dennyzhang.com/add-bold-tag-in-string)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -54,6 +55,3 @@ Interesting reading:
                 if maxIndex >= length-1: break
                 maxIndex = max(maxIndex, i+nums[i])
             return maxIndex >= length-1
-    
-    # s = Solution()
-    # print(s.canJump([0, 2, 3])) # False

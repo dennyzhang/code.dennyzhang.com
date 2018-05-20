@@ -37,6 +37,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/water-and-jug-problem/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 - GCD
 #+BEGIN_SRC go

@@ -29,6 +29,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/jump-game/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 Interesting reading:
 [[url-external:https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11][YouTube Coding Interview Question: Tower Hopper Problem]]

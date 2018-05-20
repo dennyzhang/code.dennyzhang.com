@@ -45,6 +45,7 @@ Credits To: [[url-external:https://leetcode.com/problems/climbing-stairs/descrip
 Hint: Time O(n), Space O(1)
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/climbing-stairs

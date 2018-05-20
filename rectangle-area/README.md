@@ -9,6 +9,7 @@ Rectangle Area
 
 Similar Problems:  
 -   [Meeting Rooms](https://code.dennyzhang.com/meeting-rooms)
+-   [Rectangle Overlap](https://code.dennyzhang.com/rectangle-overlap)
 -   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle)
 -   Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
 

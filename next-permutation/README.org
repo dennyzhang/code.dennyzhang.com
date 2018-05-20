@@ -31,6 +31,7 @@ Credits To: [[url-external:https://leetcode.com/problems/next-permutation/descri
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+---------------------------------------------------------------------
 Related Readings:
 - [[url-external:https://www.nayuki.io/page/next-lexicographical-permutation-algorithm][Next lexicographical permutation algorithm]]
 - [[url-external:https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order][Wikipedia:Permutation]]

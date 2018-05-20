@@ -19,6 +19,7 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/reverse-linked-list/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 #+BEGIN_SRC python
 # Definition for singly-linked list.

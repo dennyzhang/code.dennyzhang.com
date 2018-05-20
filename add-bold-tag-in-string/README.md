@@ -9,6 +9,7 @@ Add Bold Tag in String
 
 Similar Problems:  
 -   [Bold Words in String](https://code.dennyzhang.com/bold-words-in-string)
+-   [Jump Game](https://code.dennyzhang.com/jump-game)
 -   Tag: [#addtag](https://code.dennyzhang.com/tag/addtag)
 
 ---

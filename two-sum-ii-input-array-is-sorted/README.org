@@ -28,6 +28,7 @@ Credits To: [[url-external:https://leetcode.com/problems/two-sum-ii-input-array-
 Hint: Time O(n), Space O(1). Moore voting
 
 Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/two-sum-ii-input-array-is-sorted

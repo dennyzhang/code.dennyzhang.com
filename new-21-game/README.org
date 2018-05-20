@@ -1,0 +1,57 @@
+* Leetcode: New 21 Game                                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming
+:END:
+---------------------------------------------------------------------
+New 21 Game
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+---------------------------------------------------------------------
+
+Alice plays the following game, loosely based on the card game "21".
+
+Alice starts with 0 points, and draws numbers while she has less than K points.  During each draw, she gains an integer number of points randomly from the range [1, W], where W is an integer.  Each draw is independent and the outcomes have equal probabilities.
+
+Alice stops drawing numbers when she gets K or more points.  What is the probability that she has N or less points?
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: N = 10, K = 1, W = 10
+Output: 1.00000
+Explanation:  Alice gets a single card, then stops.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: N = 6, K = 1, W = 10
+Output: 0.60000
+Explanation:  Alice gets a single card, then stops.
+In 6 out of W = 10 possibilities, she is at or below N = 6 points.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: N = 21, K = 17, W = 10
+Output: 0.73278
+#+END_EXAMPLE
+Note:
+
+1. 0 <= K <= N <= 10000
+- 1 <= W <= 10000
+- Answers will be accepted as correct if they are within 10^-5 of the correct answer.
+- The judging time limit has been reduced for this question.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/new-21-game][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/new-21-game/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/new-21-game
+
+#+END_SRC
