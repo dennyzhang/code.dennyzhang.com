@@ -21,8 +21,19 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution: XXX
 
+*General Thinkings:*
 #+BEGIN_EXAMPLE
-General Thinking:
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
 #+END_EXAMPLE
 
 #+BEGIN_SRC go

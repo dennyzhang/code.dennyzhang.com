@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, bucketsort, radixsort
+:type:     classic, bucketsort
 :END:
 ---------------------------------------------------------------------
 Maximum Gap
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]]m, [[https://code.dennyzhang.com/tag/bucketsort][#bucketsort]]
 ---------------------------------------------------------------------
 Given an unsorted array, find the maximum difference between the successive elements in its sorted form.
 
@@ -23,9 +23,34 @@ Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interes
 Credits To: [[url-external:https://leetcode.com/problems/maximum-gap/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
----------------------------------------------------------------------
+--------------------------------------------------------------------
+- Solution: bucket sort
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-gap
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+Put each element into a list of buckets. Each bucket track the min and max.
+
+The scan the bucket llist, we get the maximum gap.
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+- Duplicate elements doesn't matter
+- Instead of total order, we maintain partial order in bucket-sort
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+list: [5, 6, 4,1,2]
+We know max=6, min=1
+Create n-1 (4) buckets. And the size is (max-min)/(n-1), which is 1.25
+We get buckets: [1, 2.25], (2.25, 3.5], (3.5, 4.75], (4.75, 6]
+Put items into the buckets: 0:[1], 1:[2], 2:[], 3:[4], 4:[5, 6]
+#+END_EXAMPLE
+
+[[image-blog:Leetcode: Maximum Gap][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/bucket-sort.png]]
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/maximum-gap
 
 #+END_SRC

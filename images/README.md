@@ -1,0 +1,1 @@
+[[image-blog:Leetcode: Next Permutation][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/next-permutation-algorithm.png]]
