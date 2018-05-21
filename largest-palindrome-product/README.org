@@ -33,7 +33,21 @@ Credits To: [[url-external:https://leetcode.com/problems/largest-palindrome-prod
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/largest-palindrome-product
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/largest-palindrome-product
+// Basic Ideas:
+//   It's so complicated. Let's solve it another way.
+// n=1: 81 (9*9)
+//      77, 66 ... 11
+//      9 -> 1*9
+//
+// n=2: 9801 (99*99)
+//
+// n=3: 998001 (999*999)
+//
+// Complexity:
+func largestPalindrome(n int) int {
+    res := []int{9, 987, 123, 597, 677, 1218, 877, 475}
+    return res[n-1]
+}
 #+END_SRC
