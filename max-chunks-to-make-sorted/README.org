@@ -66,15 +66,15 @@ This problem is similar with [[https://code.dennyzhang.com/jump-game-ii][Jump Ga
 // Basic Ideas: Greedy
 // Complexity: Time O(n), Space O(1)
 func maxChunksToSorted(arr []int) int {
-    res, index := 0, -1
+    res, rindex := 0, -1
     for i, v:= range arr{
-        // Begining of a group
-        if index == -1 { index = v }
+        // Begining of a chunk
+        if rindex == -1 { rindex = v }
         // Need to enlarge the sliding window
-        if i<=index && v>index { index = v }
-        // Get the end of a group
-        if i==index {
-            index = -1
+        if i<=rindex && v>rindex { rindex = v }
+        // Get the end of a chunk
+        if i==rindex {
+            rindex = -1
             res++
         }
     }

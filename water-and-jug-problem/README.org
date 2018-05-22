@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, gcd, classic, math
+:type:     game, gcd, classic, math, redo
 :END:
 ---------------------------------------------------------------------
 Water and Jug Problem
