@@ -8,6 +8,7 @@ New 21 Game
 ---
 
 Similar Problems:  
+-   [Climbing Stairs](https://code.dennyzhang.com/climbing-stairs)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game), [#possibilities](https://code.dennyzhang.com/tag/possibilities)
 
 ---

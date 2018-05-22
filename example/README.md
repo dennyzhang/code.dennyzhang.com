@@ -25,6 +25,13 @@ Leave me comments, if you have better ways to solve.
 
 -   Solution: XXX
 
-    General Thinking:
+**General Thinkings:**  
+
+
+**Key Observations:**  
+
+
+**Walk Through Testdata**  
+
 
     // Blog link: https://code.dennyzhang.com/example

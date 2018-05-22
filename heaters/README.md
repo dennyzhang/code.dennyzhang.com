@@ -8,7 +8,7 @@ Heaters
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://code.dennyzhang.com/category/basic)
+-   Tag: [#inspiring](https://code.dennyzhang.com/category/inspiring)
 
 ---
 
@@ -44,4 +44,27 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/heaters
+    // Blog link: https://code.dennyzhang.com/heaters
+    // Basic Ideas: One pass
+    // For each house, find the nearest heater
+    // Complexity: Time O(n*log(n)), Space O(1)
+    import "sort"
+    func abs(v int) int {
+        if v<0 { return -v }
+        return v
+    }
+    
+    func findRadius(houses []int, heaters []int) int {
+        sort.Ints(houses)
+        sort.Ints(heaters)
+        res := 0
+        i := 0
+        for _, house := range houses {
+            // find the nearest heater
+            for i<len(heaters)-1 && abs(heaters[i]-house) >= abs(heaters[i+1]-house) {
+                i++
+            }
+            if abs(heaters[i]-house) > res { res = abs(heaters[i]-house) }
+        }
+        return res
+    }

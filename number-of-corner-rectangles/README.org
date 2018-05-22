@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Number Of Corner Rectangles
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a grid where each entry is only 0 or 1, find the number of corner rectangles.
 

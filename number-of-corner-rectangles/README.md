@@ -1,4 +1,4 @@
-# Leetcode: Number Of Corner Rectangles     :BLOG:Basic:
+# Leetcode: Number Of Corner Rectangles     :BLOG:Medium:
 
 
 ---

@@ -8,7 +8,8 @@ Maximum Average Subarray I
 ---
 
 Similar Problems:  
--   Tag: [#slidingwindow](https://code.dennyzhang.com/tag/slidingwindow)
+-   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy)
+-   Tag: [#greedy](https://code.dennyzhang.com/tag/greedy), [#slidingwindow](https://code.dennyzhang.com/tag/slidingwindow), [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
