@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     greedy, slidingwindow, codetemplate
+:type:     greedy, slidingwindow, classic
 :END:
 ---------------------------------------------------------------------
 Maximum Average Subarray I
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]
+- [[https://code.dennyzhang.com/review-greedy][Review: Greedy Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]], [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. And you need to output the maximum average value.
 

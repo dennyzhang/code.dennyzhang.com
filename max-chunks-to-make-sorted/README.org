@@ -1,0 +1,83 @@
+* Leetcode: Max Chunks To Make Sorted                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, slidingwindow
+:END:
+---------------------------------------------------------------------
+Max Chunks To Make Sorted
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/jump-game-ii][Jump Game II]]
+- [[https://code.dennyzhang.com/review-greedy][Review: Greedy Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]], [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]
+---------------------------------------------------------------------
+Given an array arr that is a permutation of [0, 1, ..., arr.length - 1], we split the array into some number of "chunks" (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.
+
+What is the most number of chunks we could have made?
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [4,3,2,1,0]
+Output: 1
+Explanation:
+Splitting into two or more chunks will not return the required result.
+For example, splitting into [4, 3], [2, 1, 0] will result in [3, 4, 0, 1, 2], which isn't sorted.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [1,0,2,3,4]
+Output: 4
+Explanation:
+We can split into two chunks, such as [1, 0], [2, 3, 4].
+However, splitting into [1, 0], [2], [3], [4] is the highest number of chunks possible.
+#+END_EXAMPLE
+
+Note:
+
+- arr will have length in range [1, 10].
+- arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-chunks-to-make-sorted][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/max-chunks-to-make-sorted/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: greedy
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+Find the boundry of each chunk. 
+
+Examine: 3 0 2 1 4
+
+For l[0] -> 3, the right border of current chunk is at least 3
+
+Now we have a sliding window of l[0], l[1], l[2], l[3]
+
+If any item of is bigger than 3, we need to enlarge the right border of the window.
+#+END_EXAMPLE
+
+This problem is similar with [[https://code.dennyzhang.com/jump-game-ii][Jump Game II]]
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/max-chunks-to-make-sorted
+// Basic Ideas: Greedy
+// Complexity: Time O(n), Space O(1)
+func maxChunksToSorted(arr []int) int {
+    res, index := 0, -1
+    for i, v:= range arr{
+        // Begining of a group
+        if index == -1 { index = v }
+        // Need to enlarge the sliding window
+        if i<=index && v>index { index = v }
+        // Get the end of a group
+        if i==index {
+            index = -1
+            res++
+        }
+    }
+    return res
+}
+#+END_SRC
