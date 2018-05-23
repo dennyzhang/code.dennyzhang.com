@@ -1,37 +1,67 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Shortest Word Distance III     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Shortest Word Distance III  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   [Shortest Word Distance](https://code.dennyzhang.com/shortest-word-distance)
+-   [Shortest Word Distance II](https://code.dennyzhang.com/shortest-word-distance-ii)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+word1 and word2 may be the same and they represent two individual words in the list.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Example:  
+
+    Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+    
+    Input: word1 = "makes", word2 = "coding"
+    Output: 1
+    Input: word1 = "makes", word2 = "makes"
+    Output: 3
+
+Note:  
+You may assume word1 and word2 are both in the list.  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-word-distance-iii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/shortest-word-distance-iii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
 ---
 
--   Solution: XXX
+-   Solution:
 
-**General Thinkings:**  
-
-
-**Key Observations:**  
-
-
-**Walk Through Testdata**  
-
-
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/shortest-word-distance-iii
+    // Basic Ideas: One pass
+    // From left to right, get distance of word1 and word2
+    //     Whenever we find a new word1 or word2, we update the corresponding index
+    //     Note it's O(n), instead of O(n*n)
+    //
+    // Complexity: Time O(n), Space O(1)
+    func shortestWordDistance(words []string, word1 string, word2 string) int {
+        index1, index2 := -1, -1
+        res := len(words)
+        for i, word := range words {
+            if word1 == word2 && word == word1 {
+                index1, index2 = index2, i
+            } else {
+                if word == word1 { index1 = i }
+                if word == word2 { index2 = i }
+            }
+            if index1 != -1 && index2 != -1 {
+                distance := index1-index2
+                if distance < 0 { distance = -distance }
+                if distance<res { res = distance }
+            }
+        }
+        return res
+    }

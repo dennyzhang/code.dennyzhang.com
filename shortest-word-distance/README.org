@@ -35,6 +35,9 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/shortest-word-distance
 // Basic Ideas: One pass
+//
+// Mininum distance between two items in a list
+//
 // From left to right, get distance of word1 and word2
 //     Whenever we find a new word1 or word2, we update the corresponding index
 //     Note it's O(n), instead of O(n*n)

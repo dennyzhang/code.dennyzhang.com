@@ -2,24 +2,27 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array
+:type:     hashmap, oodesign, classic
 :END:
 ---------------------------------------------------------------------
 Shortest Word Distance II
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/shortest-word-distance-iii][Shortest Word Distance III]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 This is a follow up of [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]. The only difference is now you are given the list of words and your method will be called repeatedly many times with different parameters. How would you optimize it?
 
 Design a class which receives a list of words in the constructor, and implements a method that takes two words word1 and word2 and return the shortest distance between these two words in the list.
 
 For example,
+#+BEGIN_EXAMPLE
 Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
 
 Given word1 = "coding", word2 = "practice", return 3.
 Given word1 = "makes", word2 = "coding", return 1.
+#+END_EXAMPLE
 
 Note:
 You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
@@ -30,45 +33,29 @@ Credits To: [[url-external:https://leetcode.com/problems/shortest-word-distance-
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/shortest-word-distance-ii
+// Basic Ideas:
+//
+// Complexity:
+type WordDistance struct {
+    
+}
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/shortest-word-distance-ii
-## Basic Ideas: Use hashmap to save two string comparision
-##
-## Complexity: Time O(n), Space O(n)
-import sys
-class WordDistance(object):
 
-    def __init__(self, words):
-        """
-        :type words: List[str]
-        """
-        self.d = {}
-        self.words = words
-        counter = 0
-        for word in words:
-            if word not in self.d:
-                self.d[word], counter = counter, counter + 1
+func Constructor(words []string) WordDistance {
+    
+}
 
-    def shortest(self, word1, word2):
-        """
-        :type word1: str
-        :type word2: str
-        :rtype: int
-        """
-        p1, p2, res = -1, -1, sys.maxsize
-        for i in range(len(self.words)):
-            word = self.words[i]
-            if self.d[word] in [self.d[word1], self.d[word2]]:
-                if self.d[word] == self.d[word1]:
-                    p1 = i
-                else:
-                    p2 = i
-                if p1 != -1 and p2 != -1:
-                    res = min(res, abs(p1-p2))
-        return res
 
-# Your WordDistance object will be instantiated and called as such:
-# obj = WordDistance(words)
-# param_1 = obj.shortest(word1,word2)
+func (this *WordDistance) Shortest(word1 string, word2 string) int {
+    
+}
+
+
+/**
+ * Your WordDistance object will be instantiated and called as such:
+ * obj := Constructor(words);
+ * param_1 := obj.Shortest(word1,word2);
+ */
 #+END_SRC

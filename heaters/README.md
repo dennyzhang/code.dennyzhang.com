@@ -8,6 +8,7 @@ Heaters
 ---
 
 Similar Problems:  
+-   [Shortest Word Distance](https://code.dennyzhang.com/shortest-word-distance)
 -   Tag: [#inspiring](https://code.dennyzhang.com/category/inspiring), [#classic](https://code.dennyzhang.com/category/classic)
 
 ---
