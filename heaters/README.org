@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring
+:type:     inspiring, classic
 :END:
 ---------------------------------------------------------------------
 Heaters
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/category/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
+- Tag: [[https://code.dennyzhang.com/category/inspiring][#inspiring]], [[https://code.dennyzhang.com/category/classic][#classic]]
 ---------------------------------------------------------------------
 Winter is coming! Your first job during the contest is to design a standard heater with fixed warm radius to warm all the houses.
 

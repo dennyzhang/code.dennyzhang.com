@@ -1,0 +1,58 @@
+* Leetcode: Shortest Word Distance III                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Shortest Word Distance III
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
+- [[https://code.dennyzhang.com/shortest-word-distance-ii][Shortest Word Distance II]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
+
+word1 and word2 may be the same and they represent two individual words in the list.
+
+Example:
+#+BEGIN_EXAMPLE
+Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+Input: word1 = "makes", word2 = "coding"
+Output: 1
+Input: word1 = "makes", word2 = "makes"
+Output: 3
+#+END_EXAMPLE
+
+Note:
+You may assume word1 and word2 are both in the list.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/example/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/example
+
+#+END_SRC

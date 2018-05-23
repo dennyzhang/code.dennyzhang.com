@@ -8,8 +8,9 @@ Shortest Distance to a Character
 ---
 
 Similar Problems:  
+-   [Product of Array Except Self](https://code.dennyzhang.com/product-of-array-except-self)
 -   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
--   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#twopass](https://code.dennyzhang.com/tag/twopass)
 
 ---
 

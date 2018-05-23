@@ -8,7 +8,7 @@ Heaters
 ---
 
 Similar Problems:  
--   Tag: [#inspiring](https://code.dennyzhang.com/category/inspiring)
+-   Tag: [#inspiring](https://code.dennyzhang.com/category/inspiring), [#classic](https://code.dennyzhang.com/category/classic)
 
 ---
 

@@ -8,7 +8,7 @@ Number Of Corner Rectangles
 ---
 
 Similar Problems:  
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
