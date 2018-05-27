@@ -64,19 +64,14 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
--   Solution: XXX
+-   Solution: Brute Force
 
 **General Thinkings:**  
 
-
-**Key Observations:**  
-
-
-**Walk Through Testdata**  
-
+    The first two elements of the array uniquely determine the rest of the sequence.
 
     // Blog link: https://code.dennyzhang.com/split-array-into-fibonacci-sequence
-    // Basic Ideas:
+    // Basic Ideas: Brute Force
     // num1: S[0:i], num2: S[i:j]
     // Complexity:
     import "strconv"

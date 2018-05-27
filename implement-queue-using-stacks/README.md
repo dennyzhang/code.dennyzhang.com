@@ -15,13 +15,13 @@ Similar Problems:
 
 Implement the following operations of a queue using stacks.  
 
--   push(x) -- Push element x to the back of queue.
--   pop() -- Removes the element from in front of queue.
--   peek() -- Get the front element.
--   empty() -- Return whether the queue is empty.
+-   push(x) &#x2013; Push element x to the back of queue.
+-   pop() &#x2013; Removes the element from in front of queue.
+-   peek() &#x2013; Get the front element.
+-   empty() &#x2013; Return whether the queue is empty.
 
 Notes:  
--   You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+-   You must use only standard operations of a stack &#x2013; which means only push to top, peek/pop from top, size, and is empty operations are valid.
 -   Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
 -   You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
 
@@ -42,8 +42,8 @@ Leave me comments, if you have better ways to solve.
             """
             Initialize your data structure here.
             """
-            self.stack1 = 
-            self.stack2 = 
+            self.stack1 = []
+            self.stack2 = []
     
     
         def push(self, x):
