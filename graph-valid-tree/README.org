@@ -1,0 +1,90 @@
+* Leetcode: Graph Valid Tree                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap, bfs, classic
+:END:
+---------------------------------------------------------------------
+Graph Valid Tree
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given n nodes labeled from 0 to n-1 and a list of undirected edges (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 5, and edges = [[0,1], [0,2], [0,3], [1,4]]
+Output: true
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 5, and edges = [[0,1], [1,2], [2,3], [1,3], [1,4]]
+Output: false
+#+END_EXAMPLE
+
+Note: you can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0,1] is the same as [1,0] and thus will not appear together in edges.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/graph-valid-tree][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/graph-valid-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: 
+*General Thinkings:*
+
+[[color:#c7254e][In essence, how to check whether a graph has loop?]]
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/graph-valid-tree
+// Basic Ideas: hashmap + bfs
+//
+// How a graph can be a tree:
+//  1. edge_count = node_count - 1
+//  2. No loop: any node can be the root
+//
+// How to check whether graph has loop?
+//
+// Complexity: Time O(v), Space O(v)
+//             v is edge count
+type Item struct {
+  node, prev int
+}
+
+func validTree(n int, edges [][]int) bool {
+    if len(edges) != n-1 { return false }
+    // only one node
+    if n==1 { return true }
+    edges_map := map[int][]int{}
+    for _, edge := range edges {
+        i, j := edge[0], edge[1]
+        edges_map[i] = append(edges_map[i], j)
+        edges_map[j] = append(edges_map[j], i)
+    }
+    // any node can be the root, thus we choose the first one
+    node := edges[0][0]
+    // bfs
+    queue := []Item{}
+    queue = append(queue, Item{node, -1})
+    visited := make([]bool, n)
+    visited[node] = true
+    for len(queue) != 0 {
+        items := []Item{}
+        for _, item := range queue {
+            for _, node2 := range edges_map[item.node] {
+                if node2 == item.prev { continue }
+                if visited[node2] == true { return false }
+                items = append(items, Item{node2, item.node})
+                visited[node2] = true
+            }
+        }
+        queue = []Item{}
+        for _, item := range items {
+            queue = append(queue, item)
+        }
+    }
+    return true
+}
+#+END_SRC
