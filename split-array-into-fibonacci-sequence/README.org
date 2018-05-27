@@ -76,7 +76,7 @@ The first two elements of the array uniquely determine the rest of the sequence.
 // Blog link: https://code.dennyzhang.com/split-array-into-fibonacci-sequence
 // Basic Ideas: Brute Force
 // num1: S[0:i], num2: S[i:j]
-// Complexity: Time, Space O(n)
+// Complexity: Time ?, Space O(n)
 import "strconv"
 func splitString(S string, num1 int, num2 int) []int {
     if num1>(1<<31 - 1) || num2>(1<<31 - 1) { return []int{} }
