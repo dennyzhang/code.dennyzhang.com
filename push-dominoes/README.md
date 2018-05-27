@@ -9,7 +9,7 @@ Push Dominoes
 
 Similar Problems:  
 -   [Shortest Distance to a Character](https://code.dennyzhang.com/shortest-distance-to-a-character)
--   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs)
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 

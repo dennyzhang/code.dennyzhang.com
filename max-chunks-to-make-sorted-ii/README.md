@@ -1,23 +1,46 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Max Chunks To Make Sorted II     :BLOG:Hard:
 
 
 ---
 
-Identity number which appears exactly once.  
+Max Chunks To Make Sorted II  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   [Max Chunks To Make Sorted](https://code.dennyzhang.com/max-chunks-to-make-sorted)
+-   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an array arr of integers (not necessarily distinct), we split the array into some number of "chunks" (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+What is the most number of chunks we could have made?  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Example 1:  
+
+    Input: arr = [5,4,3,2,1]
+    Output: 1
+    Explanation:
+    Splitting into two or more chunks will not return the required result.
+    For example, splitting into [5, 4], [3, 2, 1] will result in [4, 5, 1, 2, 3], which isn't sorted.
+
+Example 2:  
+
+    Input: arr = [2,1,3,4,4]
+    Output: 4
+    Explanation:
+    We can split into two chunks, such as [2, 1], [3, 4, 4].
+    However, splitting into [2, 1], [3], [4], [4] is the highest number of chunks possible.
+
+Note:  
+
+-   arr will have length in range [1, 2000].
+-   arr[i] will be an integer in range [0, 10\*\*8].
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-chunks-to-make-sorted-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/max-chunks-to-make-sorted-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
@@ -34,4 +57,4 @@ Leave me comments, if you have better ways to solve.
 **Walk Through Testdata**  
 
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/max-chunks-to-make-sorted-ii

@@ -8,6 +8,7 @@ Max Chunks To Make Sorted
 ---
 
 Similar Problems:  
+-   [Max Chunks To Make Sorted II](https://code.dennyzhang.com/max-chunks-to-make-sorted-ii)
 -   [Jump Game II](https://code.dennyzhang.com/jump-game-ii)
 -   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy)
 -   Tag: [#greedy](https://code.dennyzhang.com/tag/greedy), [#slidingwindow](https://code.dennyzhang.com/tag/slidingwindow)
@@ -78,6 +79,31 @@ This problem is similar with [Jump Game II](https://code.dennyzhang.com/jump-gam
                 rindex = -1
                 res++
             }
+        }
+        return res
+    }
+
+-   Solution: auxiliary array
+
+    // Blog link: https://code.dennyzhang.com/max-chunks-to-make-sorted
+    // Basic Ideas: Use an auxiliary array
+    //
+    // original: 0, 2, 1, 4, 3, 5, 7, 6
+    // max:      0, 2, 2, 4, 4, 5, 7, 7
+    // sorted:   0, 1, 2, 3, 4, 5, 6, 7
+    // index:    0, 1, 2, 3, 4, 5, 6, 7
+    //
+    // Complexity: Time O(n), Space O(n)
+    func maxChunksToSorted(arr []int) int {
+        l := make([]int, len(arr))
+        max := -1
+        for i, v:= range arr{
+            if v>max { max=v }
+            l[i] = max
+        }
+        res := 0
+        for i, v:= range l{
+            if i==v { res++ }
         }
         return res
     }
