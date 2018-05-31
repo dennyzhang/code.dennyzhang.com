@@ -5,7 +5,7 @@
 :type:     oodesign
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Design Tic-Tac-Toe
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
