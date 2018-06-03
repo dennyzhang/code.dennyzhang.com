@@ -8,7 +8,7 @@ Keys and Rooms
 ---
 
 Similar Problems:  
--   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#classic](https://code.dennyzhang.com/tag/classic)
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#dfs](https://code.dennyzhang.com/tag/dfs), [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -52,10 +52,35 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
--   Solution:
-
 **General Thinkings:**  
-In essence, it asks whether a graph is connected for all nodes.  
+In essence, the question is about whether a graph is connected for all nodes.  
+
+-   Solution: DFS
+
+    // Blog link: https://code.dennyzhang.com/keys-and-rooms
+    // Basic Ideas: DFS
+    // Complexity: Time O(V), Space O(n)
+    func canVisitAllRooms(rooms [][]int) bool {
+        visited := make([]bool, len(rooms))
+        visited[0] = true
+        stack := []int{0}
+        for len(stack) != 0 {
+            node := stack[len(stack)-1]
+            stack = stack[0:len(stack)-1]
+            for _, node2 := range rooms[node] {
+                if visited[node2] == false {
+                    visited[node2] = true
+                    stack = append(stack, node2)
+                }
+            }
+        }
+        for _, isVisited := range visited {
+            if isVisited == false { return false }
+        }
+        return true
+    }
+
+-   Solution: BFS
 
     // Blog link: https://code.dennyzhang.com/keys-and-rooms
     // Basic Ideas: BFS
@@ -63,8 +88,7 @@ In essence, it asks whether a graph is connected for all nodes.
     // Complexity: Time O(V), Space O(n)
     //    V = edge count, n = node count
     func canVisitAllRooms(rooms [][]int) bool {
-        node_count := len(rooms)
-        visited := make([]bool, node_count)
+        visited := make([]bool, len(rooms))
         queue := []int{}
         queue = append(queue, 0)
         visited[0] = true
@@ -79,7 +103,9 @@ In essence, it asks whether a graph is connected for all nodes.
                 }
             }
             queue = []int{}
-            for _, node := range items { queue = append(queue, node)}
+            for _, node := range items { 
+                queue = append(queue, node)
+            }
         }
         for _, isVisited := range visited {
             if isVisited == false { return false }

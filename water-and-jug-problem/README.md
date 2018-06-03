@@ -9,6 +9,8 @@ Water and Jug Problem
 
 Similar Problems:  
 -   [Reaching Points](https://code.dennyzhang.com/reaching-points)
+-   [Max Points on a Line](https://code.dennyzhang.com/max-points-on-a-line)
+-   [Review: gcd Problems](https://code.dennyzhang.com/review-gcd)
 -   Tag: [#game](https://code.dennyzhang.com/tag/game), [#gcd](https://code.dennyzhang.com/tag/gcd), [#classic](https://code.dennyzhang.com/tag/classic), [#math](https://code.dennyzhang.com/tag/math)
 
 ---

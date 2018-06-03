@@ -3,7 +3,7 @@
 
 ---
 
-Identity number which appears exactly once.  
+Design Tic-Tac-Toe  
 
 ---
 

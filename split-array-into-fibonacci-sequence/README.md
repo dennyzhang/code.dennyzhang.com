@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
     // Blog link: https://code.dennyzhang.com/split-array-into-fibonacci-sequence
     // Basic Ideas: Brute Force
     // num1: S[0:i], num2: S[i:j]
-    // Complexity:
+    // Complexity: Time ?, Space O(n)
     import "strconv"
     func splitString(S string, num1 int, num2 int) []int {
         if num1>(1<<31 - 1) || num2>(1<<31 - 1) { return []int{} }
@@ -94,8 +94,8 @@ Leave me comments, if you have better ways to solve.
         // num1: S[0:i], num2: S[i:j]
         for i:=1; i<len(S)-2; i++ {
             for j:=i+1; j<len(S)-1; j++ {
-                if S[0] == '0' && i>1 { continue }
-                if S[i] == '0' && j-i>1 { continue }
+                if S[0] == '0' && S[0:i] != "0" { continue }
+                if S[i] == '0' && S[i:j] != "0" { continue }
                 num1, _ := strconv.Atoi(S[0:i])
                 num2, _ := strconv.Atoi(S[i:j])
                 l := splitString(S[j:], num1, num2)

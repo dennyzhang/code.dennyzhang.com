@@ -8,7 +8,7 @@ Print Binary Tree
 ---
 
 Similar Problems:  
--   [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -67,17 +67,65 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/print-binary-tree
-    # Definition for a binary tree node.
-    # class TreeNode(object):
-    #     def __init__(self, x):
-    #         self.val = x
-    #         self.left = None
-    #         self.right = None
+    // Blog link: https://code.dennyzhang.com/print-binary-tree
+    // Basic Ideas: BFS
+    // Fristly get the tree height: h
+    // From level i to level i+1, we move the index by the offset of 2^(h-i-1)
+    //      i starts with 1
+    // Complexity:
+    /**
+     * Definition for a binary tree node.
+     * type TreeNode struct {
+     *     Val int
+     *     Left *TreeNode
+     *     Right *TreeNode
+     * }
+     */
+    import (
+            "strconv"
+            "math"
+    )
     
-    class Solution(object):
-        def printTree(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[List[str]]
-            """
+    type Node struct {
+      index int
+      treenode *TreeNode
+    }
+    
+    func heightTree(root *TreeNode) int {
+        if root == nil { return 0 }
+        if root.Left ==  nil && root.Right == nil { return 1 }
+        h := heightTree(root.Left)
+        height_r := heightTree(root.Right)
+        if height_r>h { h = height_r }
+        return h+1    
+    }
+    
+    func printTree(root *TreeNode) [][]string {
+        res := [][]string{}
+        height := heightTree(root)
+        length := int(math.Pow(2, float64(height)))-1
+        index := int(math.Pow(2, float64(height-1)))-1
+        // BFS
+        queue := []Node{Node{index, root}}
+        for h:= 1; h<=height; h++ {
+            items := make([]string, length)
+            for i:= 0; i<length; i++ { items[i] = "" }
+            offset := int(math.Pow(2, float64(height-h-1)))
+            // caculate current row
+            nodes := []Node{}
+            for _, node := range queue{
+                items[node.index] = strconv.Itoa(node.treenode.Val)
+                if node.treenode.Left != nil {
+                    nodes = append(nodes, Node{node.index-offset, node.treenode.Left})
+                }
+                if node.treenode.Right != nil {
+                    nodes = append(nodes, Node{node.index+offset, node.treenode.Right})
+                }
+            }
+            queue = []Node{}
+            for _, node := range nodes { queue = append(queue, node) }
+            // collect current row
+            res = append(res, items)
+        }
+        return res
+    }

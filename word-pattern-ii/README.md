@@ -9,7 +9,8 @@ Word Pattern II
 
 Similar Problems:  
 -   [Word Pattern](https://code.dennyzhang.com/word-pattern)
--   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
+-   [Review: String Problems](https://code.dennyzhang.com/review-string)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
