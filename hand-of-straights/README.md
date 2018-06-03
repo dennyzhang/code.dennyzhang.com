@@ -54,6 +54,8 @@ Leave me comments, if you have better ways to solve.
 
 **Walk Through Testdata**  
 
+---
+
 
     // Blog link: https://code.dennyzhang.com/hand-of-straights
     // Basic Ideas: hashmap + sort
