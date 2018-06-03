@@ -1,0 +1,76 @@
+* Leetcode: Backspace String Compare                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Backspace String Compare
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+---------------------------------------------------------------------
+Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: S = "ab#c", T = "ad#c"
+Output: true
+Explanation: Both S and T become "ac".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: S = "ab##", T = "c#d#"
+Output: true
+Explanation: Both S and T become "".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: S = "a##c", T = "#a#c"
+Output: true
+Explanation: Both S and T become "c".
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: S = "a#c", T = "b"
+Output: false
+Explanation: S becomes "c" while T becomes "b".
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= S.length <= 200
+- 1 <= T.length <= 200
+- S and T only contain lowercase letters and '#' characters.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/example/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: Time O(n), Space O(n)
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/example
+// Basic Ideas:
+// Complexity: Time O(n), Space O(n)
+func getString(S string) string {
+    ret := []string{}
+    for _, ch := range S {
+        if ch != '#' {
+            ret = append(ret, string(ch))
+        } else {
+            if len(ret) != 0 { ret = ret[0:len(ret)-1]}
+        }
+    }
+    return strings.Join(ret, "")
+}
+
+func backspaceCompare(S string, T string) bool {
+    return getString(S) == getString(T)
+}
+#+END_SRC
