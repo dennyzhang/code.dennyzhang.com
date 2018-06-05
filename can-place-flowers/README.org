@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, manydetails, basic
+:type:     game, manydetails, basic, padlastgroup
 :END:
 ---------------------------------------------------------------------
 Can Place Flowers
@@ -10,7 +10,7 @@ Can Place Flowers
 Similar Problems:
 - [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/basic][#basic]], [[https://code.dennyzhang.com/tag/padlastgroup][#padlastgroup]]
 ---------------------------------------------------------------------
 Suppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would die.
 
