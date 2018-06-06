@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
     // Find the top of the mountains. Then keep looking both sides
     // Complexity: Time O(n), Space O(n)
     
-    func longestMountain(A int) int {
+    func longestMountain(A []int) int {
         res := 0
         for i:=1; i<len(A)-1; i++ {
             if A[i-1]<A[i] && A[i]>A[i+1] {

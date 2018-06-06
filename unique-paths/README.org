@@ -9,6 +9,7 @@ Unique Paths
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/unique-paths-ii][Leetcode: Unique Paths II]]
+- [[https://code.dennyzhang.com/dungeon-game][Dungeon Game]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
