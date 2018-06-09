@@ -56,3 +56,69 @@ Leave me comments, if you have better ways to solve.
 
 
     // Blog link: https://code.dennyzhang.com/trapping-rain-water-ii
+    // Basic Ideas: twopass
+    // Similar idea like: https://code.dennyzhang.com/trapping-rain-water
+    //
+    // Sample Data:
+    //     [[12,13,1,12]
+    //      [13,4,13,12]
+    //      [13,8,10,12]
+    //      [12,13,12,12]
+    //      [13,13,13,13]]
+    //
+    // Complexity: Time O(n*m), Space O(n*m)
+    func trapRainWater(heightMap [][]int) int {
+        if len(heightMap) == 0 { return 0 }
+    
+        max_lst := make([][]int, len(heightMap))
+        for i, row := range heightMap {
+            max_lst[i] = make([]int, len(row))
+            for j, _ := range row {
+                max_lst[i][j] = 1<<31 - 1
+            }
+        }
+    
+        // get the maximum
+        max := 0
+        for i:= 0; i< len(heightMap); i++ {
+            max = 0
+            for j:= 0; j<len(heightMap[i]); j++ {
+                if heightMap[i][j] > max { max = heightMap[i][j] }
+                if max < max_lst[i][j] { max_lst[i][j] = max }
+            }
+        }
+    
+        for i:= 0; i< len(heightMap); i++ {
+            max = 0
+            for j:=len(heightMap[i])-1; j>=0; j-- {
+                if heightMap[i][j] > max { max = heightMap[i][j] }
+                if max < max_lst[i][j] { max_lst[i][j] = max }
+            }
+        }
+    
+        for j:= 0; j< len(heightMap[0]); j++ {
+            max = 0
+            for i:=0; i<len(heightMap); i++ {
+                if heightMap[i][j] > max { max = heightMap[i][j] }
+                if max < max_lst[i][j] { max_lst[i][j] = max }
+            }
+        }
+    
+        for j:= 0; j< len(heightMap[0]); j++ {
+            max = 0
+            for i:=len(heightMap)-1; i>=0; i-- {
+                if heightMap[i][j] > max { max = heightMap[i][j] }
+                if max < max_lst[i][j] { max_lst[i][j] = max }
+            }
+        }
+    
+        res, border := 0, 0
+        // collect result
+        for i:= 0; i< len(heightMap); i++ {
+            for j:= 0; j<len(heightMap[i]); j++ {
+                border = max_lst[i][j]
+                res += border - heightMap[i][j]
+            }
+        }
+        return res
+    }
