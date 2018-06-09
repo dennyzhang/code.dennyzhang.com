@@ -44,9 +44,9 @@ Note:
 2.  1 <= T.length <= 200
 3.  S and T only contain lowercase letters and '#' characters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/backspace-string-compare)  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Credits To: [leetcode.com](https://leetcode.com/problems/backspace-string-compare/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 
 -   Solution: Time O(n), Space O(n)
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/backspace-string-compare
     // Basic Ideas:
     // Complexity: Time O(n), Space O(n)
     func getString(S string) string {
@@ -63,7 +63,7 @@ Leave me comments, if you have better ways to solve.
             if ch != '#' {
                 ret = append(ret, string(ch))
             } else {
-                if len(ret) != 0 { ret = ret[0:len(ret)-1]}
+                if len(ret) != 0 { ret = ret[0:len(ret)-1] }
             }
         }
         return strings.Join(ret, "")

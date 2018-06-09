@@ -54,16 +54,14 @@ Leave me comments, if you have better ways to solve.
 
 **Walk Through Testdata**  
 
----
-
 
     // Blog link: https://code.dennyzhang.com/hand-of-straights
     // Basic Ideas: hashmap + sort
     // The start with the mininum items
     // Complexity: Time O(n*log(n))), Space O(n)
-    func isNStraightHand(hand int, W int) bool {
+    func isNStraightHand(hand []int, W int) bool {
         m := map[int]int{}
-        list := int{}
+        list := []int{}
         for _, v := range hand { m[v]++ }
         for key := range m { list = append(list, key) }
         sort.Ints(list)

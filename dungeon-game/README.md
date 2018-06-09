@@ -8,6 +8,8 @@ Dungeon Game
 ---
 
 Similar Problems:  
+-   [Unique Paths](https://code.dennyzhang.com/unique-paths)
+-   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#game](https://code.dennyzhang.com/tag/game), [#classic](https://code.dennyzhang.com/tag/classic), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -59,12 +61,12 @@ Leave me comments, if you have better ways to solve.
     //          next_dp = min(dp[i+1][j], dp[i][j+1])
     //          dungeon[i][j] >= next_dp? 1 : next_dp-dungeon[i][j]
     // Complexity: Time O(n*m), Space O(m)
-    func calculateMinimumHP(dungeon int) int {
+    func calculateMinimumHP(dungeon [][]int) int {
         row_count := len(dungeon)
         if row_count == 0 { return 0 }
         col_count := len(dungeon[0])
         // Initial status
-        dp := make(int, col_count+1)
+        dp := make([]int, col_count+1)
         for i, _ := range dp { dp[i] = 1<<31 - 1 }
         dp[col_count-1] = 1
         // We explore from bottom-right to top-left
