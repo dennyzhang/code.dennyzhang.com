@@ -33,6 +33,8 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
+Similar problem: [Trapping Rain Water](https://code.dennyzhang.com/trapping-rain-water)  
+
 -   Solution:
 
 **General Thinkings:**  
