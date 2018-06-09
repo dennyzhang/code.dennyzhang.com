@@ -29,6 +29,8 @@ Credits To: [[url-external:https://leetcode.com/problems/product-of-array-except
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+Similar problem: [[https://code.dennyzhang.com/trapping-rain-water][Trapping Rain Water]]
+
 - Solution:
 *General Thinkings:*
 #+BEGIN_EXAMPLE
