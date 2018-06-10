@@ -8,6 +8,7 @@ Order Problem
 ---
 
 Similar Problems:  
+-   [Ones and Zeroes](https://code.dennyzhang.com/ones-and-zeroes)
 -   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#knapsack](https://code.dennyzhang.com/tag/knapsack)
 
@@ -42,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 
 -   Solution: BFS
 
-[#knapsack](https://code.dennyzhang.com/tag/knapsack) problem  
+[#knapsack](https://code.dennyzhang.com/tag/knapsack) problem, [Ones and Zeroes](https://code.dennyzhang.com/ones-and-zeroes)  
 
     // Blog link: https://code.dennyzhang.com/order-problem
     // Basic Ideas: BFS

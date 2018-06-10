@@ -7,6 +7,7 @@ Ones and Zeroes
 
 ---
 
+-   [LintCode: Order Problem](https://code.dennyzhang.com/order-problem)
 -   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack)
 -   Tag: [#knapsack](https://code.dennyzhang.com/tag/knapsack), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -43,6 +44,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/ones-and-zeroes/descrip
 Leave me comments, if you have better ways to solve.  
 
 ---
+
+Similar problem: [LintCode: Order Problem](https://code.dennyzhang.com/order-problem)  
 
     // Blog link: https://code.dennyzhang.com/ones-and-zeroes
     // Basic Ideas: dynamic programming

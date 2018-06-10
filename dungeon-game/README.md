@@ -10,7 +10,7 @@ Dungeon Game
 Similar Problems:  
 -   [Unique Paths](https://code.dennyzhang.com/unique-paths)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
--   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#game](https://code.dennyzhang.com/tag/game), [#classic](https://code.dennyzhang.com/tag/classic), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#dst2src](https://code.dennyzhang.com/tag/dst2src), [#game](https://code.dennyzhang.com/tag/game), [#classic](https://code.dennyzhang.com/tag/classic), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
