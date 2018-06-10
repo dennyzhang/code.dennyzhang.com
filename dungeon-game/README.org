@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, game, classic, inspiring
+:type:     dynamicprogramming, game, classic, inspiring, dst2src
 :END:
 ---------------------------------------------------------------------
 Dungeon Game
@@ -10,7 +10,7 @@ Dungeon Game
 Similar Problems:
 - [[https://code.dennyzhang.com/unique-paths][Unique Paths]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/dst2src][#dst2src]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 The demons had captured the princess (P) and imprisoned her in the bottom-right corner of a dungeon. The dungeon consists of M x N rooms laid out in a 2D grid. Our valiant knight (K) was initially positioned in the top-left room and must fight his way through the dungeon to rescue the princess.
 
