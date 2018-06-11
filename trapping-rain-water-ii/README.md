@@ -9,7 +9,8 @@ Trapping Rain Water II
 
 Similar Problems:  
 -   [Trapping Rain Water](https://code.dennyzhang.com/container-water)
--   Tag: [#trappingrain](https://code.dennyzhang.com/tag/trappingrain), [#bfs](https://code.dennyzhang.com/tag/bfs), [#heap](https://code.dennyzhang.com/tag/heap), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
+-   [Minimum Height Trees](https://code.dennyzhang.com/minimum-height-trees)
+-   Tag: [#trappingrain](https://code.dennyzhang.com/tag/trappingrain), [#bfs](https://code.dennyzhang.com/tag/bfs), [#heap](https://code.dennyzhang.com/tag/heap), [#outer2inside](https://code.dennyzhang.com/tag/outer2inside), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 

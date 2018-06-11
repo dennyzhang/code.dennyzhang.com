@@ -100,8 +100,7 @@ func hasPath(maze [][]int, start []int, destination []int) bool {
                     }
                 }
         }
-        queue = []Node{}
-        for _, node := range items { queue = append(queue, node) }
+        queue = items
     }
     return false
 }

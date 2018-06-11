@@ -82,10 +82,7 @@ In essence, how to check whether a graph has loop?
                     visited[node2] = true
                 }
             }
-            queue = []Item{}
-            for _, item := range items {
-                queue = append(queue, item)
-            }
+            queue = items
         }
         return true
     }
