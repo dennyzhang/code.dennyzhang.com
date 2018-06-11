@@ -8,7 +8,8 @@ The Maze
 ---
 
 Similar Problems:  
--   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
+
+-   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
 
@@ -34,7 +35,7 @@ Example 1
     Output: true
     Explanation: One possible way is : left -> down -> left -> down -> right -> down -> right
 
-![img](//raw.githubusercontent.com/DennyZhang/images/master/code/maze_1_1.png)  
+[![img](//raw.githubusercontent.com/DennyZhang/images/master/code/maze_1_1.png)](Leetcode: The Maze)  
 
 Example 2  
 
@@ -52,9 +53,10 @@ Example 2
     Output: false
     Explanation: There is no way for the ball to stop at the destination.
 
-![img](//raw.githubusercontent.com/DennyZhang/images/master/code/maze_1_2.png)  
+[![img](//raw.githubusercontent.com/DennyZhang/images/master/code/maze_1_2.png)](Leetcode: The Maze)  
 
 Note:  
+
 1.  There is only one ball and one destination in the maze.
 2.  Both the ball and the destination exist on an empty space, and they will not be at the same position initially.
 3.  The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
@@ -69,3 +71,42 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/the-maze
+    // Basic Idea: BFS
+    //
+    // Items to be explored would be positions which are near to walls
+    // Once visisted mark it to 2
+    //
+    // Complexity: Time O(n), Space O(1)
+    type Node struct {
+        x, y int
+    }
+    
+    func hasPath(maze int, start int, destination int) bool {
+        queue := Node{Node{start[0], start[1]}}
+        x2, y2 := 0, 0
+        for len(queue) != 0 {
+            items := Node{}
+            for _, node := range queue {
+                maze[node.x][node.y] = 2 // mark as visited
+                for _, offset := range int {
+                    int{0, 1}, int{0, -1}, int{1, 0}, int{-1, 0} } {
+                        // move the wall in current direction
+                        x2, y2 = node.x+offset[0], node.y+offset[1]
+                        // We can't use maze[x2][y2] == 0. We can only stop by walls. Not visited nodes
+                        for x2>=0 && x2<len(maze) && y2>=0 && y2<len(maze[0]) && maze[x2][y2] != 1 {
+                            x2, y2 = x2+offset[0], y2+offset[1]
+                        }
+                        // move back
+                        x2, y2 = x2-offset[0], y2-offset[1]
+                        if x2==node.x && y2==node.y { continue }
+                        if maze[x2][y2] == 0 {
+                            if x2==destination[0] && y2==destination[1] { return true }
+                            items = append(items, Node{x2, y2})
+                        }
+                    }
+            }
+            queue = Node{}
+            for _, node := range items { queue = append(queue, node) }
+        }
+        return false
+    }
