@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     bfs, inspiring, outer2inside
 :END:
 ---------------------------------------------------------------------
 Minimum Height Trees
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
+- [[https://code.dennyzhang.com/trapping-rain-water-ii][Trapping Rain Water II]]
+- Tag: [[https://code.dennyzhang.com/category/bfs][#bfs]], [[https://code.dennyzhang.com/category/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/outer2inside][#outer2inside]]
 ---------------------------------------------------------------------
 For a undirected graph with tree characteristics, we can choose any node as the root. The result graph is then a rooted tree. Among all possible rooted trees, those with minimum height are called minimum height trees (MHTs). Given such a graph, write a function to find all the MHTs and return a list of their root labels.
 
@@ -55,7 +56,39 @@ Credits To: [[url-external:https://leetcode.com/problems/minimum-height-trees/de
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/minimum-height-trees
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-height-trees
+// Basic Ideas:
+// There are at most 2 MHTs
+// We keep removing leaf nodes. The remaining one or two nodes are targets
+// Complexity: Time O(n), Space O(n)
+func findMinHeightTrees(n int, edges [][]int) []int {
+    if n == 1 { return []int{0} }
+    relations := make([]map[int]bool, n)
+    for i:= 0; i<n; i++ { relations[i] = map[int]bool{}}
+    for _, edge := range edges {
+        p, q := edge[0], edge[1]
+        relations[p][q], relations[q][p] = true, true
+    }
+    queue := []int{}
+    // start with leaf nodes
+    for i:=0; i<n; i++ {
+        if len(relations[i]) == 1 { queue = append(queue, i) }
+    }
 
+    for n>2 {
+        // explore current level
+        n -= len(queue)
+        items := []int{}
+        for _, node := range queue {
+            for node2 := range relations[node] {
+                delete (relations[node2], node)
+                // inner layer
+                if len(relations[node2]) == 1 { items = append(items, node2) }
+            }
+        }
+        queue = items
+    }
+    return queue
+}
 #+END_SRC

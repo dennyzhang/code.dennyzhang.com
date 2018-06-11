@@ -80,10 +80,7 @@ func validTree(n int, edges [][]int) bool {
                 visited[node2] = true
             }
         }
-        queue = []Item{}
-        for _, item := range items {
-            queue = append(queue, item)
-        }
+        queue = items
     }
     return true
 }

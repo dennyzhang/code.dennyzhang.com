@@ -70,7 +70,7 @@ Leave me comments, if you have better ways to solve.
 // Basic Idea: BFS
 //
 // Items to be explored would be positions which are near to walls
-// Once visisted mark it to 2
+// Once visisted, mark it to 2
 //
 // Complexity: Time O(n), Space O(1)
 type Node struct {
@@ -84,8 +84,7 @@ func hasPath(maze [][]int, start []int, destination []int) bool {
         items := []Node{}
         for _, node := range queue {
             maze[node.x][node.y] = 2 // mark as visited
-            for _, offset := range [][]int {
-                []int{0, 1}, []int{0, -1}, []int{1, 0}, []int{-1, 0} } {
+            for _, offset := range [][]int {{0, 1}, {0, -1}, {1, 0}, {-1, 0}} {
                     // move the wall in current direction
                     x2, y2 = node.x+offset[0], node.y+offset[1]
                     // We can't use maze[x2][y2] == 0. We can only stop by walls. Not visited nodes

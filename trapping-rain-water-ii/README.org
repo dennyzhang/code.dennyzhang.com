@@ -2,14 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     trappingrain, inspiring, bfs, heap
+:type:     trappingrain, inspiring, bfs, heap, outer2inside
 :END:
 ---------------------------------------------------------------------
 Trapping Rain Water II
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/container-water][Trapping Rain Water]]
-- Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- [[https://code.dennyzhang.com/minimum-height-trees][Minimum Height Trees]]
+- Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/outer2inside][#outer2inside]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given an m x n matrix of positive integers representing the height of each unit cell in a 2D elevation map, compute the volume of water it is able to trap after raining.
 
