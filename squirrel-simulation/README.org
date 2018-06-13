@@ -1,0 +1,61 @@
+* Leetcode: Squirrel Simulation                                  :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Squirrel Simulation
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+There's a tree, a squirrel, and several nuts. Positions are represented by the cells in a 2D grid. Your goal is to find the minimal distance for the squirrel to collect all the nuts and put them under the tree one by one. The squirrel can only take at most one nut at one time and can move in four directions - up, down, left and right, to the adjacent cell. The distance is represented by the number of moves.
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+Height : 5
+Width : 7
+Tree position : [2,2]
+Squirrel : [4,4]
+Nuts : [[3,0], [2,5]]
+Output: 12
+#+END_EXAMPLE
+Explanation:
+
+[[image-blog:Leetcode: Squirrel Simulation][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/squirrel-simulation.png]]
+
+Note:
+1. All given positions won't overlap.
+- The squirrel can take at most one nut at one time.
+- The given positions of nuts have no order.
+- Height and width are positive integers. 3 <= height * width <= 10,000.
+- The given positions contain at least one nut, only one tree and one squirrel.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/squirrel-simulation][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/squirrel-simulation/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/squirrel-simulation
+
+#+END_SRC
