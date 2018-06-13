@@ -1,9 +1,14 @@
+# Leetcode: Count and Say     :BLOG:Medium:
 
-# Leetcode: Count and Say     :BLOG:Basic:
 
 ---
 
 Count and Say  
+
+---
+
+Similar Problems:  
+-   Tag: [#padlastgroup](https://code.dennyzhang.com/tag/padlastgroup), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
@@ -58,21 +63,22 @@ Leave me comments, if you have better ways to solve.
     //    m = length of target string
     func countAndSay(n int) string {
         if n == 1 { return "1" }
-        str := "1"
+        l := []string{"1"}
         for i:=1; i<n; i++ {
-            str2 := ""
+            l2 := []string{}
             count := 1
-            for i, ch := range str+" " {
+            l = append(l, " ")
+            for i, ch := range l {
                 if i == 0 { continue }
-                if ch != rune(str[i-1]) {
-                    str2 += fmt.Sprintf("%d%s", count, string(str[i-1]))
+                if ch != l[i-1] {
+                    l2 = append(l2, strconv.Itoa(count))
+                    l2 = append(l2, l[i-1])
                     count = 1
                 } else {
                     count++
                 }
             }
-            str = str2
+            l = l2
         }
-        return str
+        return strings.Join(l, "")
     }
-

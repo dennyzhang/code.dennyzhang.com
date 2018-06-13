@@ -7,6 +7,11 @@ Construct Binary Tree from Preorder and Inorder Traversal
 
 ---
 
+Similar Problems:  
+-   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal)
+
+---
+
 Given preorder and inorder traversal of a tree, construct the binary tree.  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-preorder-and-inorder-traversal)  

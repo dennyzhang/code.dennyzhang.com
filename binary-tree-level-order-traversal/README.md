@@ -7,6 +7,11 @@ Binary Tree Level Order Traversal
 
 ---
 
+Similar Problems:  
+-   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal), [#classic](https://code.dennyzhang.com/tag/classic), [#bfs](https://code.dennyzhang.com/tag/bfs)
+
+---
+
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).  
 
     For example:
@@ -32,6 +37,8 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/binary-tree-level-order-traversal
+    ## Baisc Idea: BFS
+    ## Complexity: Time O(n), Space O(n)
     # Definition for a binary tree node.
     # class TreeNode(object):
     #     def __init__(self, x):
@@ -45,19 +52,15 @@ Leave me comments, if you have better ways to solve.
             :type root: TreeNode
             :rtype: List[List[int]]
             """
-            ## Baisc Idea: BFS
-            ## Complexity: Time O(n), Space O(n): width
-            if root is None:
-                return []
+    
+            if root is None: return []
             res = []
-            queue = []
+            queue = collections.deque()
             queue.append(root)
             while len(queue) != 0:
-                length = len(queue)
                 level_elements = []
-                for i in xrange(length):
-                    element = queue[0]
-                    del queue[0]
+                for i in xrange(len(queue)):
+                    element = queue.popleft()
                     level_elements.append(element.val)
                     if element.left:
                         queue.append(element.left)
