@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, bfs
+:type:     treetraversal, bfs
 :END:
 ---------------------------------------------------------------------
 Binary Tree Level Order Traversal II
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 #+BEGIN_EXAMPLE

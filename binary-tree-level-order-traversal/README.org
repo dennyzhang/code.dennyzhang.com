@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, binarytree, bfs
+:type:     codetemplate, classic, bfs, treetraversal
 :END:
 ---------------------------------------------------------------------
 Binary Tree Level Order Traversal
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
@@ -34,6 +37,8 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/binary-tree-level-order-traversal
+## Baisc Idea: BFS
+## Complexity: Time O(n), Space O(n)
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -47,19 +52,15 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        ## Baisc Idea: BFS
-        ## Complexity: Time O(n), Space O(n): width
-        if root is None:
-            return []
+
+        if root is None: return []
         res = []
-        queue = []
+        queue = collections.deque()
         queue.append(root)
         while len(queue) != 0:
-            length = len(queue)
             level_elements = []
-            for i in xrange(length):
-                element = queue[0]
-                del queue[0]
+            for i in xrange(len(queue)):
+                element = queue.popleft()
                 level_elements.append(element.val)
                 if element.left:
                     queue.append(element.left)

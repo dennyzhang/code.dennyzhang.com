@@ -1,5 +1,5 @@
-# Leetcode: Count and Say     :BLOG:Basic:
 
+# Leetcode: Count and Say     :BLOG:Basic:
 
 ---
 
@@ -41,10 +41,38 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/count-and-say
-    class Solution(object):
-        def countAndSay(self, n):
-            """
-            :type n: int
-            :rtype: str
-            """
+    // Blog link: https://code.dennyzhang.com/count-and-say
+    // Basic Ideas:
+    //   From n-1 to n
+    //       1.     1
+    //       2.     11
+    //       3.     21
+    //       4.     1211
+    //       5.     111221 
+    //       6.     312211
+    //       7.     13112221
+    //       8.     1113213211
+    //       9.     31131211131221
+    //      10.     13211311123113112211
+    // Complexity: Time O(n), Space O(m)
+    //    m = length of target string
+    func countAndSay(n int) string {
+        if n == 1 { return "1" }
+        str := "1"
+        for i:=1; i<n; i++ {
+            str2 := ""
+            count := 1
+            for i, ch := range str+" " {
+                if i == 0 { continue }
+                if ch != rune(str[i-1]) {
+                    str2 += fmt.Sprintf("%d%s", count, string(str[i-1]))
+                    count = 1
+                } else {
+                    count++
+                }
+            }
+            str = str2
+        }
+        return str
+    }
+

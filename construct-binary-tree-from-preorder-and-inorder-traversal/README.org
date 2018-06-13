@@ -2,14 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     treetraversal
 :END:
 ---------------------------------------------------------------------
 Construct Binary Tree from Preorder and Inorder Traversal
 ---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
+---------------------------------------------------------------------
 Given preorder and inorder traversal of a tree, construct the binary tree.
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-preorder-and-inorder-traversal][challenges-leetcode-interesting]]
 

@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     treetraversal
 :END:
 ---------------------------------------------------------------------
 Construct Binary Tree from Inorder and Postorder Traversal
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given inorder and postorder traversal of a tree, construct the binary tree.
 
