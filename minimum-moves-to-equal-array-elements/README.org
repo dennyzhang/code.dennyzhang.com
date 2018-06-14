@@ -44,6 +44,7 @@ Leave me comments, if you have better ways to solve.
 //   Then keep incase (D D F). We will get (G G E E). Then we can get (H H H I).
 //   Then we get (O O O O)
 //
+// For each move, the mininum value will still be the mininum
 // For each move, the mininum value will add 1
 //
 // Complexity:
