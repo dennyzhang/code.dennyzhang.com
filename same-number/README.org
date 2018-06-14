@@ -8,6 +8,7 @@
 Same Number
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/longest-ab-substring][LintCode: Longest AB Substring]]
 - Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given an array, If the same number exists in the array, and the distance of the same number is less than the given value k, output YES, otherwise output NO.

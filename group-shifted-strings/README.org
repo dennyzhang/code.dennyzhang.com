@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, hashmap, modoperation
+:type:     string, hashmap, mod
 :END:
 ---------------------------------------------------------------------
 Group Shifted Strings
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/group-anagrams][Group Anagrams]]
-- [[https://code.dennyzhang.com/tag/hashmap][Tag: #hashmap]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]],  [[https://code.dennyzhang.com/tag/mod][#mod]]
 ---------------------------------------------------------------------
 Given a string, we can "shift" each of its letter to its successive letter, for example: "abc" -> "bcd". We can keep "shifting" which forms the sequence:
 #+BEGIN_EXAMPLE

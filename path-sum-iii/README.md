@@ -8,7 +8,9 @@ Path Sum III
 ---
 
 Similar Problems:  
--   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
+
+-   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive)
+-   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
@@ -46,4 +48,28 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/path-sum-iii
+    // Blog link: https://code.dennyzhang.com/path-sum-iii
+    // Basic Ideas: Recursive
+    // Complexity: Time O(n^2), Space O(n)
+    /**
+     * Definition for a binary tree node.
+     * type TreeNode struct {
+     *     Val int
+     *     Left *TreeNode
+     *     Right *TreeNode
+     * }
+     */
+    
+    func pathSumFrom(root *TreeNode, sum int) int {
+        if root == nil { return 0 }
+        res := 0
+        if root.Val == sum { res++ }
+        res += pathSumFrom(root.Left, sum-root.Val)
+        res += pathSumFrom(root.Right, sum-root.Val)
+        return res
+    }
+    
+    func pathSum(root *TreeNode, sum int) int {
+        if root == nil { return 0 }
+        return pathSumFrom(root, sum) + pathSum(root.Left, sum) + pathSum(root.Right, sum)
+    }

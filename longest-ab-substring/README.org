@@ -8,6 +8,7 @@
 Longest AB Substring
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/same-number][Lintcode: Same Number]]
 - Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Description

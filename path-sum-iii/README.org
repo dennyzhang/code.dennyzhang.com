@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     pathsum, binarytree, recursive
+:type:     pathsum, binarytree, recursive, redo
 :END:
 ---------------------------------------------------------------------
 Path Sum III
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://code.dennyzhang.com/tag/recursive][Tag: #recursive]]
+- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 You are given a binary tree in which each node contains an integer value.
 
@@ -44,7 +45,30 @@ Credits To: [[url-external:https://leetcode.com/problems/path-sum-iii/descriptio
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/path-sum-iii
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/path-sum-iii
+// Basic Ideas: Recursive
+// Complexity: Time O(n^2), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
 
+func pathSumFrom(root *TreeNode, sum int) int {
+    if root == nil { return 0 }
+    res := 0
+    if root.Val == sum { res++ }
+    res += pathSumFrom(root.Left, sum-root.Val)
+    res += pathSumFrom(root.Right, sum-root.Val)
+    return res
+}
+
+func pathSum(root *TreeNode, sum int) int {
+    if root == nil { return 0 }
+    return pathSumFrom(root, sum) + pathSum(root.Left, sum) + pathSum(root.Right, sum)
+}
 #+END_SRC
