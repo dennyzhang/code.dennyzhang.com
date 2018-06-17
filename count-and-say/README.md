@@ -8,7 +8,7 @@ Count and Say
 ---
 
 Similar Problems:  
--   Tag: [#padlastgroup](https://code.dennyzhang.com/tag/padlastgroup), [#string](https://code.dennyzhang.com/tag/string)
+-   Tag: [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 

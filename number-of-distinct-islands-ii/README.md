@@ -9,7 +9,7 @@ Number of Distinct Islands II
 
 Similar Problems:  
 -   [Number of Distinct Islands](https://code.dennyzhang.com/number-of-distinct-islands)
--   Tag: [#dfs](https://code.dennyzhang.com/tag/dfs), [#classic](https://code.dennyzhang.com/tag/classic), [#rotate](https://code.dennyzhang.com/tag/rotate), [#island](https://code.dennyzhang.com/tag/island)
+-   Tag: [#dfs](https://code.dennyzhang.com/tag/dfs), [#classic](https://code.dennyzhang.com/tag/classic), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation), [#island](https://code.dennyzhang.com/tag/island)
 
 ---
 

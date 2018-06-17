@@ -8,9 +8,8 @@ Edit Distance
 ---
 
 Similar Problems:  
-
 -   [One Edit Distance](https://code.dennyzhang.com/one-edit-distance)
--   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#dynamicprogramming2order](https://code.dennyzhang.com/tag/dynamicprogramming2order), [#classic](https://code.dennyzhang.com/tag/classic), [#redo](https://code.dennyzhang.com/tag/redo)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#dynamicprogramming2order](https://code.dennyzhang.com/tag/dynamicprogramming2order), [#classic](https://code.dennyzhang.com/tag/classic), [#redo](https://code.dennyzhang.com/tag/redo), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
 
 ---
 
@@ -44,8 +43,8 @@ Leave me comments, if you have better ways to solve.
     func minDistance(word1 string, word2 string) int {
         len1, len2 := len(word1), len(word2)
         if len1 == 0 || len2 == 0 { return len1+len2 }
-        dp := make(int, len1)
-        for i := range dp { dp[i] = make(int, len2) }
+        dp := make([][]int, len1)
+        for i := range dp { dp[i] = make([]int, len2) }
         // Initialize
         if word1[0]!=word2[0] { dp[0][0] = 1 }
         for j:=1; j<len2; j++ {

@@ -8,7 +8,7 @@ Positions of Large Groups
 ---
 
 Similar Problems:  
--   Tag: [#string](https://code.dennyzhang.com/tag/string), [#padlastgroup](https://code.dennyzhang.com/tag/padlastgroup)
+-   Tag: [#string](https://code.dennyzhang.com/tag/string), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
 
 ---
 

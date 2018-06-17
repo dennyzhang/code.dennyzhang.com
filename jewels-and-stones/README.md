@@ -8,7 +8,7 @@ Jewels and Stones
 ---
 
 Similar Problems:  
--   Tag: [#set](https://code.dennyzhang.com/tag/set)
+-   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 

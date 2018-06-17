@@ -10,7 +10,7 @@ Can Place Flowers
 Similar Problems:  
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
--   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#game](https://code.dennyzhang.com/tag/game), [#basic](https://code.dennyzhang.com/tag/basic), [#padlastgroup](https://code.dennyzhang.com/tag/padlastgroup)
+-   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#game](https://code.dennyzhang.com/tag/game), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
 
 ---
 
