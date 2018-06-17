@@ -8,7 +8,7 @@ Continuous Subarray Sum
 ---
 
 Similar Problems:  
--   Tag: [#hard](https://code.dennyzhang.com/category/hard)
+-   Tag: [#array](https://code.dennyzhang.com/category/array)
 
 ---
 

@@ -1,4 +1,4 @@
-* Leetcode: Card Game                                              :BLOG:Medium:
+* LintCode: Card Game                                           :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -22,14 +22,14 @@ Since this number may be large, you only need to return the solution number mod 
 
 Example
 #+BEGIN_EXAMPLE
-Given n = 2，totalProfit = 3，totalCost = 5，a = [2,3]，b = [2,2] ，return1.
+Given n = 2,totalProfit = 3,totalCost = 5,a = [2,3],b = [2,2] ,return1.
 
 Explanation:
 At this time, there is only one legal scheme, which is to select both cards. At this time, a[1]+a[2] = 5 > totalProfit and b[1] + b[2] < totalCost.
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
-Given n = 3，totalProfit = 5，totalCost = 10，a = [6,7,8]，b = [2,3,5]，return6.
+Given n = 3,totalProfit = 5,totalCost = 10,a = [6,7,8],b = [2,3,5],return6.
 
 Explanation:
 Suppose a legal scheme (i,j) indicates that the i-th card and the j-th card are selected.
@@ -39,7 +39,7 @@ The legal solutions at this time are:
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/card-game][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/card-game/description/][leetcode.com]]
+Credits To: [[url-external:https://www.lintcode.com/problem/card-game/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

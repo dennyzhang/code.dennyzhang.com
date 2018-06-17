@@ -8,6 +8,7 @@ Same Number
 ---
 
 Similar Problems:  
+-   [LintCode: Longest AB Substring](https://code.dennyzhang.com/longest-ab-substring)
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---

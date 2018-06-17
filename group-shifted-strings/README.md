@@ -9,7 +9,7 @@ Group Shifted Strings
 
 Similar Problems:  
 -   [Group Anagrams](https://code.dennyzhang.com/group-anagrams)
--   [Tag: #hashmap](https://code.dennyzhang.com/tag/hashmap)
+-   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap),  [#mod](https://code.dennyzhang.com/tag/mod)
 
 ---
 

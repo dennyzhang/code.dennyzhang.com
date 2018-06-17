@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, misc
+:type:     array, mountain
 :END:
 ---------------------------------------------------------------------
 Longest Mountain in Array
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+- [[https://code.dennyzhang.com/peak-index-in-a-mountain-array][Peak Index in a Mountain Array]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/mountain][#mountain]]
 ---------------------------------------------------------------------
 Let's call any (contiguous) subarray B (of A) a mountain if the following properties hold:
 
@@ -47,14 +48,12 @@ Credits To: [[url-external:https://leetcode.com/problems/longest-mountain-in-arr
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
-
+- Solution:
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/longest-mountain-in-array
 // Basic Ideas:
 // Find the top of the mountains. Then keep looking both sides
 // Complexity: Time O(n), Space O(n)
-
 func longestMountain(A []int) int {
     res := 0
     for i:=1; i<len(A)-1; i++ {

@@ -1,23 +1,44 @@
-# Leetcode: Template     :BLOG:Basic:
+# LintCode: Card Game     :BLOG:Medium:
 
 
 ---
 
-Identity number which appears exactly once.  
+Card Game  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Description  
+A card game that gives you two non-negative integers: totalProfit, totalCost, and n cards'information. The ith card has a profit value a[i] and a cost value b[i].It is possible to select any number of cards from these cards, form a scheme. Now we want to know how many schemes are satisfied that all selected cards' profit values are greater than totalProfit and the costs are less than totalCost.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+Since this number may be large, you only need to return the solution number mod 1e9 + 7.  
+0 <= n <= 1000  
+0 <= a[i] <= 1000  
+0 <= b[i] <= 1000  
+0 <= totalProfit<= 1000  
+0 <= totalCost <= 1000  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Example  
+
+    Given n = 2,totalProfit = 3,totalCost = 5,a = [2,3],b = [2,2] ,return1.
+    
+    Explanation:
+    At this time, there is only one legal scheme, which is to select both cards. At this time, a[1]+a[2] = 5 > totalProfit and b[1] + b[2] < totalCost.
+
+    Given n = 3,totalProfit = 5,totalCost = 10,a = [6,7,8],b = [2,3,5],return6.
+    
+    Explanation:
+    Suppose a legal scheme (i,j) indicates that the i-th card and the j-th card are selected.
+    The legal solutions at this time are:
+    (1),(2),(3),(1,2),(1,3),(2,3)
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/card-game)  
+
+Credits To: [lintcode.com](https://www.lintcode.com/problem/card-game/description)  
 
 Leave me comments, if you have better ways to solve.  
 
@@ -34,4 +55,54 @@ Leave me comments, if you have better ways to solve.
 **Walk Through Testdata**  
 
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/card-game
+    // Basic Ideas:
+    // hashmap
+    //
+    // Complexity: Time ?, Space ?
+    /**
+     * @param n: The number of cards
+     * @param totalProfit: The totalProfit
+     * @param totalCost: The totalCost
+     * @param a: The profit of cards
+     * @param b: The cost of cards
+     * @return: Return the number of legal plan
+     */
+    import (
+            "fmt"
+            "strings"
+            "strconv"
+            "math"
+    )
+    
+    func numOfPlan (n int, totalProfit int, totalCost int, a []int, b []int) int {
+        res := 0
+        mod := int(math.Pow(10, 9))+7
+        m := map[string]int{}
+        p1, c1, p2, c2 := 0, 0, 0, 0
+        l := []string{}
+        for i, _ := range a {
+            if b[i] >= totalCost { continue }
+            if a[i] > totalProfit {
+                res = (res+1) % mod
+            }
+            key := fmt.Sprintf("%d-%d", a[i], b[i])
+            // m2: add current item of (a[i], b[i])
+            m2 := map[string]int{key:1}
+            for k := range m {
+                l = strings.Split(k, "-")
+                p1, _ = strconv.Atoi(l[0])
+                c1, _ = strconv.Atoi(l[1])
+                p2, c2 = p1+a[i], c1+b[i]
+                if c2 < totalCost {
+                    // add current item
+                    m2[fmt.Sprintf("%d-%d", p2, c2)] = m[k]
+                    if p2 > totalProfit {
+                        res = (res + m[k]) % mod
+                    }
+                }
+            }
+            for k:= range m2 { m[k] = (m[k]+m2[k]) % mod }
+        }
+        return res
+    }

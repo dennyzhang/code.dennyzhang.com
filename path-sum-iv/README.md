@@ -8,7 +8,6 @@ Path Sum IV
 ---
 
 Similar Problems:  
-
 -   [Path Sum III](https://code.dennyzhang.com/path-sum-iii)
 -   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive), [#pathsum](https://code.dennyzhang.com/tag/pathsum), [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -17,7 +16,6 @@ Similar Problems:
 If the depth of a tree is smaller than 5, then this tree can be represented by a list of three-digits integers.  
 
 For each integer in this list:  
-
 1.  The hundreds digit represents the depth D of this node, 1 <= D <= 4.
 2.  The tens digit represents the position P of this node in the level it belongs to, 1 <= P <= 8. The position is the same as that in a full binary tree.
 3.  The units digit represents the value V of this node, 0 <= V <= 9.
@@ -67,7 +65,7 @@ Leave me comments, if you have better ways to solve.
     // Interesting question: when we do bfs, how we know whether one node is a leaf?
     //
     // Complexity: Time O(n), Space O(n)
-    func pathSum(nums int) int {
+    func pathSum(nums []int) int {
         if len(nums) == 0 { return 0 }
     
         res := 0

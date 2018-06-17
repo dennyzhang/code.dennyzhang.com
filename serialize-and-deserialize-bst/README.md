@@ -9,7 +9,7 @@ Serialize and Deserialize BST
 
 Similar Problems:  
 -   [Serialize and Deserialize Binary Tree](https://code.dennyzhang.com/serialize-and-deserialize-binary-tree)
--   Tag: [#binarysearchtree](https://code.dennyzhang.com/tag/binarysearchtree)
+-   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 

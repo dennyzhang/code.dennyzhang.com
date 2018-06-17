@@ -8,8 +8,8 @@ Squirrel Simulation
 ---
 
 Similar Problems:  
-
--   Tag: [#math](https://code.dennyzhang.com/tag/math)
+-   [Review: Math Problems](https://code.dennyzhang.com/review-math)
+-   Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
 
@@ -26,10 +26,9 @@ Example 1:
 
 Explanation:  
 
-[![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/squirrel-simulation.png)](Leetcode: Squirrel Simulation)  
+![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/squirrel-simulation.png)  
 
 Note:  
-
 1.  All given positions won't overlap.
 2.  The squirrel can take at most one nut at one time.
 3.  The given positions of nuts have no order.

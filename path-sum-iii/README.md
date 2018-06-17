@@ -8,9 +8,8 @@ Path Sum III
 ---
 
 Similar Problems:  
-
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive)
--   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive)
+-   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive), [#pathsum](https://code.dennyzhang.com/tag/pathsum), [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 

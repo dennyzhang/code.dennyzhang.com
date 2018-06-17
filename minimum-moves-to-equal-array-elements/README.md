@@ -8,7 +8,6 @@ Minimum Moves to Equal Array Elements
 ---
 
 Similar Problems:  
-
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [math](https://code.dennyzhang.com/tag/math)
 
@@ -50,7 +49,7 @@ Leave me comments, if you have better ways to solve.
     // For each move, the mininum value will add 1
     //
     // Complexity:
-    func minMoves(nums int) int {
+    func minMoves(nums []int) int {
         sum, min := 0, 1<<31 - 1
         for _, num := range nums {
             sum += num
