@@ -8,8 +8,9 @@ Edit Distance
 ---
 
 Similar Problems:  
+
 -   [One Edit Distance](https://code.dennyzhang.com/one-edit-distance)
--   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#dynamicprogramming2order](https://code.dennyzhang.com/tag/dynamicprogramming2order), [#classic](https://code.dennyzhang.com/tag/classic), [#redo](https://code.dennyzhang.com/tag/redo)
 
 ---
 
@@ -29,4 +30,48 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/edit-distance
+    // Blog link: https://code.dennyzhang.com/edit-distance
+    // Basic Ideas: dp second order
+    //
+    // dp[i][j]: match word1 0:i with word2 0:j
+    // Then how we get dp[i][j] from previous caculation?
+    //     If word1[i] == word[j], dp[i-1][j-1]
+    //     Otherwise, we can make 3 choices
+    //       - Replace word1[i], dp[i-1][j-1]+1
+    //       - Delete word1[i-1], dp[i-1][j]+1
+    //       - Add word[j] to word1, dp[i][j-1]+1
+    // Complexity: Time O(n*m), Space O(n*m)
+    func minDistance(word1 string, word2 string) int {
+        len1, len2 := len(word1), len(word2)
+        if len1 == 0 || len2 == 0 { return len1+len2 }
+        dp := make(int, len1)
+        for i := range dp { dp[i] = make(int, len2) }
+        // Initialize
+        if word1[0]!=word2[0] { dp[0][0] = 1 }
+        for j:=1; j<len2; j++ {
+            dp[0][j] = dp[0][j-1]+1
+            if word2[j] == word1[0] && dp[0][j] == j+1 {
+                dp[0][j] = j
+            }
+        }
+        for i:=1; i<len1; i++ {
+            dp[i][0] = dp[i-1][0]+1
+            if word1[i] == word2[0] && dp[i][0] == i+1 {
+                dp[i][0] = i
+            }
+        }
+        // dp
+        for i:=1; i<len1; i++ {
+            for j:=1; j<len2; j++ {
+                if word1[i] == word2[j] {
+                    dp[i][j] = dp[i-1][j-1]
+                    continue
+                }
+                min := dp[i-1][j-1]+1
+                if dp[i-1][j]+1 < min { min = dp[i-1][j]+1 }
+                if dp[i][j-1]+1 < min { min = dp[i][j-1]+1 }
+                dp[i][j] = min
+            }
+        }
+        return dp[len1-1][len2-1]
+    }
