@@ -9,7 +9,7 @@ Edit Distance
 
 Similar Problems:  
 -   [One Edit Distance](https://code.dennyzhang.com/one-edit-distance)
--   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
