@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, dlinkedlist, datastructure
+:type:     oodesign, dlinkedlist
 :END:
 ---------------------------------------------------------------------
 LRU Cache
