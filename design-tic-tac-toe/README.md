@@ -1,4 +1,4 @@
-# Leetcode: Design Tic-Tac-Toe     :BLOG:Basic:
+# Leetcode: Design Tic-Tac-Toe     :BLOG:Medium:
 
 
 ---

@@ -8,7 +8,7 @@ Number Of Corner Rectangles
 ---
 
 Similar Problems:  
--   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
@@ -56,4 +56,25 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/number-of-corner-rectangles
+    // Blog link: https://code.dennyzhang.com/number-of-corner-rectangles
+    // Basic Ideas
+    //
+    // Keep the rows fixed, then check columns.
+    // Or keep columns fixed, then check rows
+    //
+    // Complexity: Time O(n*n*m), Space O(1)
+    func countCornerRectangles(grid [][]int) int {
+        res := 0
+        for i:=0; i<len(grid)-1; i++ {
+            for j:=i+1; j<len(grid); j++ {
+                count:=0
+                for k:=0; k<len(grid[0]); k++ {
+                    if grid[i][k]==1 && grid[j][k]==1 {
+                        count++
+                    }
+                }
+                res += (count*(count-1))/2
+            }
+        }
+        return res
+    }

@@ -8,7 +8,8 @@ Longest Mountain in Array
 ---
 
 Similar Problems:  
--   Tag: [#array](https://code.dennyzhang.com/tag/array)
+-   [Peak Index in a Mountain Array](https://code.dennyzhang.com/peak-index-in-a-mountain-array)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array), [#mountain](https://code.dennyzhang.com/tag/mountain)
 
 ---
 
@@ -47,13 +48,12 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
--   Solution: XXX
+-   Solution:
 
     // Blog link: https://code.dennyzhang.com/longest-mountain-in-array
     // Basic Ideas:
     // Find the top of the mountains. Then keep looking both sides
     // Complexity: Time O(n), Space O(n)
-    
     func longestMountain(A []int) int {
         res := 0
         for i:=1; i<len(A)-1; i++ {

@@ -1,37 +1,71 @@
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Peak Index in a Mountain Array     :BLOG:Basic:
 
 
 ---
 
-Identity number which appears exactly once.  
+Peak Index in a Mountain Array  
 
 ---
 
 Similar Problems:  
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   [Longest Mountain in Array](https://code.dennyzhang.com/longest-mountain-in-array)
+-   Tag: [#array](https://code.dennyzhang.com/tag/array), [#mountain](https://code.dennyzhang.com/tag/mountain)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Let's call an array A a mountain if the following properties hold:  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/example)  
+-   A.length >= 3
+-   There exists some 0 < i < A.length - 1 such that A< A< &#x2026; A[i-1] < A[i] > A[i+1] > &#x2026; > A[A.length - 1]
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Given an array that is definitely a mountain, return any i such that A< A< &#x2026; A[i-1] < A[i] > A[i+1] > &#x2026; > A[A.length - 1].  
+
+Example 1:  
+
+    Input: [0,1,0]
+    Output: 1
+
+Example 2:  
+
+    Input: [0,2,1,0]
+    Output: 1
+
+Note:  
+
+-   3 <= A.length <= 10000
+-   0 <= A[i] <= 10^6
+-   A is a mountain, as defined above.
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/peak-index-in-a-mountain-array)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
 ---
 
--   Solution: XXX
+-   Solution:
 
-**General Thinkings:**  
+    // Blog link: https://code.dennyzhang.com/peak-index-in-a-mountain-array
+    // Basic Ideas: Too straightforward
+    // Complexity: Time O(n), Space O(1)
+    func peakIndexInMountainArray(A []int) int {
+        for i:=1; i<len(A)-1; i++ {
+            if A[i]>A[i-1] && A[i]>A[i+1] {
+                return i
+            }
+        }
+        return -1
+    }
+
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>DEFINITION NOT FOUND.</p></div>
 
 
-**Key Observations:**  
-
-
-**Walk Through Testdata**  
-
-
-    // Blog link: https://code.dennyzhang.com/example
+</div>
+</div>
