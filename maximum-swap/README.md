@@ -39,6 +39,46 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
+-   Solution
+
+    // Blog link: https://code.dennyzhang.com/maximum-swap
+    // Basic Ideas:
+    // Check whether it's a non-decreasing sequence
+    // Otherwise look for the biggest digit after current one
+    // Complexity: Time O(n), Space O(n)
+    import "strconv"
+    func maximumSwap(num int) int {
+        ret := num
+        index := -1
+        l := strings.Split(strconv.Itoa(num), "")
+        for i:=0; i<len(l)-1; i++ {
+            if l[i] < l[i+1] {
+                index = i
+                break
+            }
+        }
+        if index != -1 {
+            index2 := index+1
+            for i:=index2; i<len(l); i++ {
+                if l[i]>=l[index2] { index2 = i }
+            }
+    
+            index1 := index
+            for i:=index-1; i>=0; i-- {
+                if l[i] < l[index2] { index1 = i }
+            }
+            // swap
+            l[index1], l[index2] = l[index2], l[index1]
+            ret = 0
+            for i:=0; i<len(l); i++ {
+                ret = ret*10+int([]byte(l[i])[0]-byte('0'))
+            }
+        }
+        return ret
+    }
+
+-   Solution
+
     ## Blog link: https://code.dennyzhang.com/maximum-swap
     ## Basic Ideas: counter with [0, 1, 2, ... 9]
     ##
@@ -71,6 +111,3 @@ Leave me comments, if you have better ways to solve.
                             res = int(''.join(num_list))
                             return res
             return res
-    
-    # s = Solution()    
-    # print(s.maximumSwap(2736))

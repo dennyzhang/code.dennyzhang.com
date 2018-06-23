@@ -8,6 +8,7 @@ Edit Distance
 ---
 
 Similar Problems:  
+-   [Unique Paths](https://code.dennyzhang.com/unique-paths)
 -   [One Edit Distance](https://code.dennyzhang.com/one-edit-distance)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#dynamicprogramming2order](https://code.dennyzhang.com/tag/dynamicprogramming2order), [#classic](https://code.dennyzhang.com/tag/classic), [#redo](https://code.dennyzhang.com/tag/redo), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
 
@@ -28,6 +29,8 @@ Credits To: [leetcode.com](https://leetcode.com/problems/edit-distance/descripti
 Leave me comments, if you have better ways to solve.  
 
 ---
+
+-   Solution: dp - Time O(n\*m), Space O(n\*m)
 
     // Blog link: https://code.dennyzhang.com/edit-distance
     // Basic Ideas: dp second order
@@ -73,4 +76,39 @@ Leave me comments, if you have better ways to solve.
             }
         }
         return dp[len1-1][len2-1]
+    }
+
+-   Solution: dp - Time O(n\*m), Space O(n)
+
+    // Blog link: https://code.dennyzhang.com/edit-distance
+    // Basic Ideas: dp second order
+    //
+    // Two major improvements compared to intuitive dp[][]
+    // 1. We add a dummy " " to the head. Thus the logic of base cases can be dramatically simplified
+    // 2. Reduce space complexity from O(n*m) to O(n)
+    // Complexity: Time O(n*m), Space O(n)
+    func minDistance(word1 string, word2 string) int {
+        len1, len2 := len(word1), len(word2)
+        if len1 == 0 || len2 == 0 { return len1+len2 }
+        dp := make([]int, len2+1)
+        // initialize
+        for i:=0; i<=len2; i++ { dp[i] = i }
+        // dp
+        for i:=1; i<=len1; i++ {
+            prev := i
+            for j:=1; j<=len2; j++ {
+                cur := -1
+                if word1[i-1] == word2[j-1] {
+                    cur = dp[j-1]
+                } else {
+                    cur = dp[j-1]+1
+                    if prev+1 < cur { cur = prev+1 }
+                    if dp[j]+1 < cur { cur = dp[j]+1 }
+                }
+                dp[j-1] = prev
+                prev = cur
+            }
+            dp[len2] = prev
+        }
+        return dp[len2]
     }

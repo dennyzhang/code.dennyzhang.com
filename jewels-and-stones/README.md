@@ -43,13 +43,13 @@ Leave me comments, if you have better ways to solve.
     // Basic Ideas: set/hashmap
     // Complexity: Time O(n), Space O(n)
     func numJewelsInStones(J string, S string) int {
-        m := make(map[rune]bool)
-        for _, ch := range J { m[ch] = true }
-    
+        m := map[rune]bool{}
+        for _, ch := range J {
+            m[ch] = true
+        }
         res := 0
         for _, ch := range S {
-            _, status := m[ch]
-            if status == true { res += 1 }
+            if m[ch] == true { res++ }
         }
         return res
     }
