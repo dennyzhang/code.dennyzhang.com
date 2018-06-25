@@ -1,5 +1,5 @@
-# Leetcode: Largest Number At Least Twice of Others     :BLOG:Medium:
 
+# Leetcode: Largest Number At Least Twice of Others     :BLOG:Medium:
 
 ---
 
@@ -27,6 +27,7 @@ Example 2:
     Explanation: 4 isn't at least as big as twice the value of 3, so we return -1.
 
 Note:  
+
 -   nums will have a length in the range [1, 50].
 -   Every nums[i] will be an integer in the range [0, 99].
 
@@ -44,42 +45,43 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def dominantIndex(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
-            length = len(nums)
-            if length == 0:
-                return -1
-            if length == 1:
-                return 0
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	if length == 0:
+    	    return -1
+    	if length == 1:
+    	    return 0
     
-            max_index = -1
-            for index in xrange(length):
-                if max_index == -1:
-                    max_index = index
-                else:
-                    if nums[index] > nums[max_index]:
-                        max_index = index
+    	max_index = -1
+    	for index in xrange(length):
+    	    if max_index == -1:
+    		max_index = index
+    	    else:
+    		if nums[index] > nums[max_index]:
+    		    max_index = index
     
-            second_max_index = -1
-            for index in xrange(length):
-                if index == max_index:
-                    continue
+    	second_max_index = -1
+    	for index in xrange(length):
+    	    if index == max_index:
+    		continue
     
-                if second_max_index == -1:
-                    second_max_index = index
-                else:
-                    if nums[index] > nums[second_max_index]:
-                        second_max_index = index
+    	    if second_max_index == -1:
+    		second_max_index = index
+    	    else:
+    		if nums[index] > nums[second_max_index]:
+    		    second_max_index = index
     
-            if nums[max_index] >= 2* nums[second_max_index]:
-                return max_index
-            else:
-                return -1
+    	if nums[max_index] >= 2* nums[second_max_index]:
+    	    return max_index
+    	else:
+    	    return -1
     
     # s = Solution()
     # print s.dominantIndex([3, 6, 1, 0]) 
     # print s.dominantIndex([1, 2, 3, 4])
     # print s.dominantIndex([])
     # print s.dominantIndex([1])
+

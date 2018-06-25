@@ -1,5 +1,5 @@
-# Leetcode: Balanced Binary Tree     :BLOG:Basic:
 
+# Leetcode: Balanced Binary Tree     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Given a binary tree, determine if it is height-balanced
 ---
 
 Similar Problems:  
+
 -   [Count Complete Tree Nodes](https://code.dennyzhang.com/count-complete-tree-nodes)
 -   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -35,30 +36,31 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def isBalanced(self, root):
-            """
-            :type root: TreeNode
-            :rtype: bool
-            """
-            (status, _level) = self._isBalanced(root)
-            return status
+    	"""
+    	:type root: TreeNode
+    	:rtype: bool
+    	"""
+    	(status, _level) = self._isBalanced(root)
+    	return status
     
         def _isBalanced(self, root):
-            """
-            :type root: TreeNode
-            :rtype: (bool, level)
-            """
-            if root is None:
-                return (True, 0)
-            if root.left is None and root.right is None:
-                return (True, 1)
+    	"""
+    	:type root: TreeNode
+    	:rtype: (bool, level)
+    	"""
+    	if root is None:
+    	    return (True, 0)
+    	if root.left is None and root.right is None:
+    	    return (True, 1)
     
-            (l_status, l_level) = self._isBalanced(root.left)
-            if l_status is False:
-                return (False, -1)
-            (r_status, r_level) = self._isBalanced(root.right)
-            if r_status is False:
-                return (False, -1)
+    	(l_status, l_level) = self._isBalanced(root.left)
+    	if l_status is False:
+    	    return (False, -1)
+    	(r_status, r_level) = self._isBalanced(root.right)
+    	if r_status is False:
+    	    return (False, -1)
     
-            if (abs(l_level - r_level)>1):
-                return (False, -1)
-            return (True, max(l_level, r_level) + 1)
+    	if (abs(l_level - r_level)>1):
+    	    return (False, -1)
+    	return (True, max(l_level, r_level) + 1)
+

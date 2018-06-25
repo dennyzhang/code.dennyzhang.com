@@ -1,5 +1,5 @@
-# Leetcode: Max Stack     :BLOG:Medium:
 
+# Leetcode: Max Stack     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Max Stack
 ---
 
 Similar Problems:  
+
 -   [Min Stack](https://code.dennyzhang.com/min-stack)
 -   [Insert Delete GetRandom O(1) – Duplicates allowed](https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
@@ -37,6 +38,7 @@ Example 1:
     stack.top(); -> 5
 
 Note:  
+
 1.  -1e7 <= x <= 1e7
 2.  Number of operations won't exceed 10000.
 3.  The last four operations won't be called when stack is empty.
@@ -57,63 +59,63 @@ Leave me comments, if you have better ways to solve.
     class MaxStack:
     
         def __init__(self):
-            """
-            initialize your data structure here.
-            """
-            self.stack = []
-            self.maxStack = []
+    	"""
+    	initialize your data structure here.
+    	"""
+    	self.stack = []
+    	self.maxStack = []
     
         def pushHelper(self, x):
-            self.stack.append(x)
-            max_v = x
-            if len(self.maxStack) != 0 and self.maxStack[-1] > max_v:
-                max_v = self.maxStack[-1]
-            self.maxStack.append(max_v)
+    	self.stack.append(x)
+    	max_v = x
+    	if len(self.maxStack) != 0 and self.maxStack[-1] > max_v:
+    	    max_v = self.maxStack[-1]
+    	self.maxStack.append(max_v)
     
         def push(self, x):
-            """
-            :type x: int
-            :rtype: void
-            """
-            self.pushHelper(x)
+    	"""
+    	:type x: int
+    	:rtype: void
+    	"""
+    	self.pushHelper(x)
     
     
         def pop(self):
-            """
-            :rtype: int
-            """
-            self.maxStack.pop()
-            return self.stack.pop()
+    	"""
+    	:rtype: int
+    	"""
+    	self.maxStack.pop()
+    	return self.stack.pop()
     
     
         def top(self):
-            """
-            :rtype: int
-            """
-            return self.stack[-1]
+    	"""
+    	:rtype: int
+    	"""
+    	return self.stack[-1]
     
     
         def peekMax(self):
-            """
-            :rtype: int
-            """
-            return self.maxStack[-1]
+    	"""
+    	:rtype: int
+    	"""
+    	return self.maxStack[-1]
     
     
         def popMax(self):
-            """
-            :rtype: int
-            """
-            max_v = self.maxStack[-1]
-            tmpStack = []
-            while self.stack[-1] != max_v:
-                tmpStack.append(self.stack.pop())
-                self.maxStack.pop()
-            self.stack.pop()
-            self.maxStack.pop()
-            while len(tmpStack) != 0:
-                self.pushHelper(tmpStack.pop())
-            return max_v
+    	"""
+    	:rtype: int
+    	"""
+    	max_v = self.maxStack[-1]
+    	tmpStack = []
+    	while self.stack[-1] != max_v:
+    	    tmpStack.append(self.stack.pop())
+    	    self.maxStack.pop()
+    	self.stack.pop()
+    	self.maxStack.pop()
+    	while len(tmpStack) != 0:
+    	    self.pushHelper(tmpStack.pop())
+    	return max_v
     
     # Your MaxStack object will be instantiated and called as such:
     # obj = MaxStack()
@@ -122,3 +124,4 @@ Leave me comments, if you have better ways to solve.
     # param_3 = obj.top()
     # param_4 = obj.peekMax()
     # param_5 = obj.popMax()
+

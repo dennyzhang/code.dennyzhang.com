@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Upside Down     :BLOG:Basic:
 
+# Leetcode: Binary Tree Upside Down     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Binary Tree Upside Down
 ---
 
 Similar Problems:  
+
 -   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
@@ -29,7 +30,7 @@ return the root of the binary tree [4,5,2,#,#,3,1].
      / \
     5   2
        / \
-      3   1
+      3   1  
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-upside-down)  
 
@@ -52,23 +53,24 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def upsideDownBinaryTree(self, root):
-            """
-            :type root: TreeNode
-            :rtype: TreeNode
-            """
-            if root is None: return None
-            stack = []
-            p = root
-            while p:
-                stack.append(p)
-                p = p.left
-            newRoot = stack.pop(-1)
-            q = newRoot
-            while len(stack) != 0:
-                pre_parent = stack.pop(-1)
-                q.left = pre_parent.right
-                q.right = pre_parent
-                q = pre_parent
-            # configure the last node as a leaf
-            q.left, q.right = None, None
-            return newRoot
+    	"""
+    	:type root: TreeNode
+    	:rtype: TreeNode
+    	"""
+    	if root is None: return None
+    	stack = []
+    	p = root
+    	while p:
+    	    stack.append(p)
+    	    p = p.left
+    	newRoot = stack.pop(-1)
+    	q = newRoot
+    	while len(stack) != 0:
+    	    pre_parent = stack.pop(-1)
+    	    q.left = pre_parent.right
+    	    q.right = pre_parent
+    	    q = pre_parent
+    	# configure the last node as a leaf
+    	q.left, q.right = None, None
+    	return newRoot
+

@@ -1,5 +1,5 @@
-# Leetcode: Set Mismatch     :BLOG:Basic:
 
+# Leetcode: Set Mismatch     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Set Mismatch
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/tag/basic)
 
 ---
@@ -22,6 +23,7 @@ Example 1:
     Output: [2,3]
 
 Note:  
+
 -   The given array size will in the range [2, 10000].
 -   The given array's numbers won't have any order.
 
@@ -34,3 +36,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/set-mismatch
+

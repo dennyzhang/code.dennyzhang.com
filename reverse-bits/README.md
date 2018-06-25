@@ -1,5 +1,5 @@
-# Leetcode: Reverse Bits     :BLOG:Basic:
 
+# Leetcode: Reverse Bits     :BLOG:Basic:
 
 ---
 
@@ -25,11 +25,12 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/reverse-bits
     class Solution(object):
         def reverseBits(self, n):
-            i = 0
-            ret = 0
-            while i < 32:
-                ret = ret << 1
-                ret = ret | (n % 2)
-                n = n >> 1
-                i = i + 1
-            return ret
+    	i = 0
+    	ret = 0
+    	while i < 32:
+    	    ret = ret << 1
+    	    ret = ret | (n % 2)
+    	    n = n >> 1
+    	    i = i + 1
+    	return ret
+

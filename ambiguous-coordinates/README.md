@@ -1,5 +1,5 @@
-# Leetcode: Ambiguous Coordinates     :BLOG:Medium:
 
+# Leetcode: Ambiguous Coordinates     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Ambiguous Coordinates
 ---
 
 Similar Problems:  
+
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
 -   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
 
@@ -71,34 +72,35 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*n), Space O(n*n)
     class Solution:
         def ambiguousCoordinates(self, S):
-            """
-            :type S: str
-            :rtype: List[str]
-            """
-            def addComma(myStr):
-                if len(myStr) == 0: return []
-                if len(myStr) == 1: return [myStr]
-                # check myStr[0] and myStr[-1]
-                res = []
-                if myStr[-1] == "0":
-                    # 0AB0
-                    res = []
-                elif myStr[0] == "0":
-                    # 0AB
-                    res = ["%s.%s" % (myStr[0], myStr[1:])]
-                else:
-                    # AB
-                    for i in range(len(myStr)-1):
-                        res.append("%s.%s" % (myStr[0:i+1], myStr[i+1:]))
+    	"""
+    	:type S: str
+    	:rtype: List[str]
+    	"""
+    	def addComma(myStr):
+    	    if len(myStr) == 0: return []
+    	    if len(myStr) == 1: return [myStr]
+    	    # check myStr[0] and myStr[-1]
+    	    res = []
+    	    if myStr[-1] == "0":
+    		# 0AB0
+    		res = []
+    	    elif myStr[0] == "0":
+    		# 0AB
+    		res = ["%s.%s" % (myStr[0], myStr[1:])]
+    	    else:
+    		# AB
+    		for i in range(len(myStr)-1):
+    		    res.append("%s.%s" % (myStr[0:i+1], myStr[i+1:]))
     
-                if myStr[0] != "0": res.append(myStr)
-                return res
+    	    if myStr[0] != "0": res.append(myStr)
+    	    return res
     
-            res = []
-            S = S[1:-1]
-            for i in range(len(S)-1):
-                list1, list2 = addComma(S[0:i+1]), addComma(S[i+1:])
-                for p1 in list1:
-                    for p2 in list2:
-                        res.append("(%s, %s)" % (p1, p2))
-            return res
+    	res = []
+    	S = S[1:-1]
+    	for i in range(len(S)-1):
+    	    list1, list2 = addComma(S[0:i+1]), addComma(S[i+1:])
+    	    for p1 in list1:
+    		for p2 in list2:
+    		    res.append("(%s, %s)" % (p1, p2))
+    	return res
+

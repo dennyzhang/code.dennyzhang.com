@@ -2,14 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, twosum
+:type:     hashmap
 :END:
 ---------------------------------------------------------------------
 4Sum II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
 
@@ -39,15 +38,23 @@ Credits To: [[url-external:https://leetcode.com/problems/4sum-ii/description/][l
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/4sum-ii
-class Solution(object):
-    def fourSumCount(self, A, B, C, D):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :type C: List[int]
-        :type D: List[int]
-        :rtype: int
-        """
+#+BEGIN_SRC go
+// Basic Ideas: hashmap
+// Complexity: Time O(n*n), Space O(n*n)
+func fourSumCount(A []int, B []int, C []int, D []int) int {
+    m := map[int]int{}
+    for _, v1 := range A {
+        for _, v2:= range B {
+            m[v1+v2]++
+        }
+    }
+    
+    res := 0
+    for _, v1 := range C {
+        for _, v2:= range D {
+            res += m[-v1-v2]
+        }
+    }
+    return res
+}
 #+END_SRC

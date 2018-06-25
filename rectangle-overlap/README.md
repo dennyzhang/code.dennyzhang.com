@@ -1,5 +1,5 @@
-# Leetcode: Rectangle Overlap     :BLOG:Basic:
 
+# Leetcode: Rectangle Overlap     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Rectangle Overlap
 ---
 
 Similar Problems:  
+
 -   [Rectangle Area](https://code.dennyzhang.com/rectangle-area)
 -   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle)
 -   Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
@@ -48,13 +49,14 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(1), Space O(1)
     class Solution:
         def isRectangleOverlap(self, rec1, rec2):
-            """
-            :type rec1: List[int]
-            :type rec2: List[int]
-            :rtype: bool
-            """
-            width = min(rec1[2], rec2[2])-max(rec1[0], rec2[0])
-            if width <= 0: return False
-            height = min(rec1[3], rec2[3])-max(rec1[1], rec2[1])
-            if height <= 0: return False
-            return True
+    	"""
+    	:type rec1: List[int]
+    	:type rec2: List[int]
+    	:rtype: bool
+    	"""
+    	width = min(rec1[2], rec2[2])-max(rec1[0], rec2[0])
+    	if width <= 0: return False
+    	height = min(rec1[3], rec2[3])-max(rec1[1], rec2[1])
+    	if height <= 0: return False
+    	return True
+

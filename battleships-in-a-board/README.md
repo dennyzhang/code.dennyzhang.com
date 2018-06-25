@@ -1,5 +1,5 @@
-# Leetcode: Battleships in a Board     :BLOG:Basic:
 
+# Leetcode: Battleships in a Board     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Battleships in a Board
 ---
 
 Similar Problems:  
+
 -   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
 ---
@@ -50,17 +51,18 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*m), Space O(1)
     class Solution:
         def countBattleships(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: int
-            """
-            row_count = len(board)
-            if row_count == 0: return 0
-            col_count = len(board[0])
-            res = 0
-            for i in range(row_count):
-                for j in range(col_count):
-                    if i!= 0 and board[i-1][j] == 'X': continue
-                    if j!= 0 and board[i][j-1] == 'X': continue
-                    if board[i][j] == 'X': res += 1
-            return res
+    	"""
+    	:type board: List[List[str]]
+    	:rtype: int
+    	"""
+    	row_count = len(board)
+    	if row_count == 0: return 0
+    	col_count = len(board[0])
+    	res = 0
+    	for i in range(row_count):
+    	    for j in range(col_count):
+    		if i!= 0 and board[i-1][j] == 'X': continue
+    		if j!= 0 and board[i][j-1] == 'X': continue
+    		if board[i][j] == 'X': res += 1
+    	return res
+

@@ -1,5 +1,5 @@
-# Leetcode: Sqrt(x)     :BLOG:Medium:
 
+# Leetcode: Sqrt(x)     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Implement int sqrt(int x).
 ---
 
 Similar Problems:  
+
 -   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
 -   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch), [sqrt](https://code.dennyzhang.com/tag/sqrt)
@@ -45,20 +46,21 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(log(n)), Space O(1)
     class Solution(object):
         def mySqrt(self, x):
-            """
-            :type x: int
-            :rtype: int
-            """
-            if x == 0:
-                return 0
-            left, right = 1, x
-            while left <= right:
-                mid = left + (right-left)/2
-                v = mid * mid
-                if v == x:
-                    return mid
-                elif v < x:
-                    left = mid + 1
-                else:
-                    right = mid - 1
-            return right
+    	"""
+    	:type x: int
+    	:rtype: int
+    	"""
+    	if x == 0:
+    	    return 0
+    	left, right = 1, x
+    	while left <= right:
+    	    mid = left + (right-left)/2
+    	    v = mid * mid
+    	    if v == x:
+    		return mid
+    	    elif v < x:
+    		left = mid + 1
+    	    else:
+    		right = mid - 1
+    	return right
+

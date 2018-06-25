@@ -8,9 +8,10 @@ Edit Distance
 ---
 
 Similar Problems:  
+-   [Delete Operation for Two Strings](https://code.dennyzhang.com/delete-operation-for-two-strings)
 -   [Unique Paths](https://code.dennyzhang.com/unique-paths)
 -   [One Edit Distance](https://code.dennyzhang.com/one-edit-distance)
--   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#dynamicprogramming2order](https://code.dennyzhang.com/tag/dynamicprogramming2order), [#classic](https://code.dennyzhang.com/tag/classic), [#redo](https://code.dennyzhang.com/tag/redo), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#dp2order](https://code.dennyzhang.com/tag/dp2order), [#classic](https://code.dennyzhang.com/tag/classic), [#redo](https://code.dennyzhang.com/tag/redo), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
 
 ---
 
@@ -95,20 +96,23 @@ Leave me comments, if you have better ways to solve.
         for i:=0; i<=len2; i++ { dp[i] = i }
         // dp
         for i:=1; i<=len1; i++ {
-            prev := i
+            prev := i-1
+            dp[0] = i
             for j:=1; j<=len2; j++ {
                 cur := -1
                 if word1[i-1] == word2[j-1] {
-                    cur = dp[j-1]
+                    cur = prev
                 } else {
+                    // replace
                     cur = dp[j-1]+1
+                    // delete
                     if prev+1 < cur { cur = prev+1 }
+                    // add
                     if dp[j]+1 < cur { cur = dp[j]+1 }
                 }
-                dp[j-1] = prev
-                prev = cur
+                prev = dp[j]
+                dp[j] = cur
             }
-            dp[len2] = prev
         }
         return dp[len2]
     }

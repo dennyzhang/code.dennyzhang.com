@@ -1,5 +1,5 @@
-# Leetcode: Daily Temperatures     :BLOG:Amusing:
 
+# Leetcode: Daily Temperatures     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Daily Temperatures
 ---
 
 Similar Problems:  
+
 -   [Leetcode: Leetcode: Next Greater Element I](https://code.dennyzhang.com/next-greater-element-i)
 -   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
 
@@ -38,18 +39,19 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def dailyTemperatures(self, temperatures):
-            """
-            :type temperatures: List[int]
-            :rtype: List[int]
-            """
-            length = len(temperatures)
-            res = [0]*length
-            stack = []
-            for i in xrange(length):
-                # If current number is bigger, we solved the previous puzzles
-                while len(stack) != 0 and temperatures[i] > temperatures[stack[-1]]:
-                    k = stack.pop()
-                    # t[i] is the next bigger number than t[k]
-                    res[k] = i-k
-                stack.append(i)
-            return res
+    	"""
+    	:type temperatures: List[int]
+    	:rtype: List[int]
+    	"""
+    	length = len(temperatures)
+    	res = [0]*length
+    	stack = []
+    	for i in xrange(length):
+    	    # If current number is bigger, we solved the previous puzzles
+    	    while len(stack) != 0 and temperatures[i] > temperatures[stack[-1]]:
+    		k = stack.pop()
+    		# t[i] is the next bigger number than t[k]
+    		res[k] = i-k
+    	    stack.append(i)
+    	return res
+

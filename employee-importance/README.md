@@ -1,5 +1,5 @@
-# Leetcode: Employee Importance     :BLOG:Basic:
 
+# Leetcode: Employee Importance     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Employee Importance
 ---
 
 Similar Problems:  
+
 -   Tag: [graph](https://code.dennyzhang.com/tag/graph)
 
 ---
@@ -29,6 +30,7 @@ Now given the employee information of a company, and an employee id, you need to
     Employee 1 has importance value 5, and he has two direct subordinates: employee 2 and employee 3. They both have importance value 3. So the total importance value of employee 1 is 5 + 3 + 3 = 11.
 
 Note:  
+
 1.  One employee has at most one direct leader and may have several subordinates.
 2.  The maximum number of employees won't exceed 2000.
 
@@ -49,34 +51,35 @@ Leave me comments, if you have better ways to solve.
     # Employee info
     class Employee(object):
         def __init__(self, id, importance, subordinates):
-            # It's the unique id of each node.
-            # unique id of this employee
-            self.id = id
-            # the importance value of this employee
-            self.importance = importance
-            # the id of direct subordinates
-            self.subordinates = subordinates
+    	# It's the unique id of each node.
+    	# unique id of this employee
+    	self.id = id
+    	# the importance value of this employee
+    	self.importance = importance
+    	# the id of direct subordinates
+    	self.subordinates = subordinates
     """
     class Solution(object):
         def getImportance(self, employees, id):
-            """
-            :type employees: Employee
-            :type id: int
-            :rtype: int
-            """
-            m, visited_set, queue = {}, set([]), []
-            for employee in employees: m[employee.id] = employee
+    	"""
+    	:type employees: Employee
+    	:type id: int
+    	:rtype: int
+    	"""
+    	m, visited_set, queue = {}, set([]), []
+    	for employee in employees: m[employee.id] = employee
     
-            res = m[id].importance
-            queue.append(id)
-            visited_set.add(id)
-            while len(queue) != 0:
-                for i in xrange(len(queue)):
-                    employee_id = queue[0]
-                    del queue[0]
-                    for subordinate_id in m[employee_id].subordinates:
-                        if subordinate_id not in visited_set:
-                            res += m[subordinate_id].importance
-                            queue.append(subordinate_id)
-                            visited_set.add(subordinate_id)
-            return res
+    	res = m[id].importance
+    	queue.append(id)
+    	visited_set.add(id)
+    	while len(queue) != 0:
+    	    for i in xrange(len(queue)):
+    		employee_id = queue[0]
+    		del queue[0]
+    		for subordinate_id in m[employee_id].subordinates:
+    		    if subordinate_id not in visited_set:
+    			res += m[subordinate_id].importance
+    			queue.append(subordinate_id)
+    			visited_set.add(subordinate_id)
+    	return res
+

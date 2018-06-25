@@ -1,5 +1,5 @@
-# Leetcode: Median of Two Sorted Arrays     :BLOG:Amusing:
 
+# Leetcode: Median of Two Sorted Arrays     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Median of Two Sorted Arrays
 ---
 
 Similar Problems:  
+
 -   Tag: [getmedian](https://code.dennyzhang.com/tag/getmedian)
 
 ---
@@ -41,44 +42,45 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: O(m+n)
     class Solution(object):
         def findMedianSortedArrays(self, nums1, nums2):
-            """
-            :type nums1: List[int]
-            :type nums2: List[int]
-            :rtype: float
-            """
-            m = len(nums1)
-            n = len(nums2)
-            nums3 = [0] * (m+n)
-            i = 0
-            j = 0
-            k = 0
-            while i<m and j<n:
-                if nums1[i] <nums2[j]:
-                    nums3[k] = nums1[i]
-                    k += 1
-                    i += 1
-                else:
-                    nums3[k] = nums2[j]
-                    k += 1
-                    j += 1
+    	"""
+    	:type nums1: List[int]
+    	:type nums2: List[int]
+    	:rtype: float
+    	"""
+    	m = len(nums1)
+    	n = len(nums2)
+    	nums3 = [0] * (m+n)
+    	i = 0
+    	j = 0
+    	k = 0
+    	while i<m and j<n:
+    	    if nums1[i] <nums2[j]:
+    		nums3[k] = nums1[i]
+    		k += 1
+    		i += 1
+    	    else:
+    		nums3[k] = nums2[j]
+    		k += 1
+    		j += 1
     
-            while i<m:
-                nums3[k] = nums1[i]
-                k += 1
-                i += 1
+    	while i<m:
+    	    nums3[k] = nums1[i]
+    	    k += 1
+    	    i += 1
     
-            while j<n:
-                nums3[k] = nums2[j]
-                k += 1
-                j += 1
+    	while j<n:
+    	    nums3[k] = nums2[j]
+    	    k += 1
+    	    j += 1
     
-            ret = -1
-            if (m+n)%2 == 1:
-                ret = float(nums3[(m+n-1)/2])
-            else:
-                ret = float(nums3[(m+n)/2-1] + nums3[(m+n)/2])/2
-            return ret
+    	ret = -1
+    	if (m+n)%2 == 1:
+    	    ret = float(nums3[(m+n-1)/2])
+    	else:
+    	    ret = float(nums3[(m+n)/2-1] + nums3[(m+n)/2])/2
+    	return ret
     
     # s = Solution()
     # print s.findMedianSortedArrays([1, 3], [2])
     # print s.findMedianSortedArrays([1, 2], [3, 4])
+

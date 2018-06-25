@@ -1,5 +1,5 @@
-# Leetcode: Construct the Rectangle     :BLOG:Basic:
 
+# Leetcode: Construct the Rectangle     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Construct the Rectangle
 ---
 
 Similar Problems:  
+
 -   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle)
 -   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
 -   Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle), [sqrt](https://code.dennyzhang.com/tag/sqrt)
@@ -29,6 +30,7 @@ You need to output the length L and the width W of the web page you designed in 
     But according to requirement 2, [1,4] is illegal; according to requirement 3,  [4,1] is not optimal compared to [2,2]. So the length L is 2, and the width W is 2.
 
 Note:  
+
 1.  The given area won't exceed 10,000,000 and is a positive integer
 2.  The web page's width and length you designed must be positive integers.
 
@@ -46,11 +48,12 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(sqrt(n)), Space O(1)
     class Solution:
         def constructRectangle(self, area):
-            """
-            :type area: int
-            :rtype: List[int]
-            """
-            import math
-            for num in range(int(math.sqrt(area)), 0, -1):
-                if area % num == 0:
-                    return [int(area/num), num]
+    	"""
+    	:type area: int
+    	:rtype: List[int]
+    	"""
+    	import math
+    	for num in range(int(math.sqrt(area)), 0, -1):
+    	    if area % num == 0:
+    		return [int(area/num), num]
+

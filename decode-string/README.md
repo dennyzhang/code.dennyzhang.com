@@ -1,5 +1,5 @@
-# Leetcode: Decode String     :BLOG:Medium:
 
+# Leetcode: Decode String     :BLOG:Medium:
 
 ---
 
@@ -42,47 +42,48 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def decodeString(self, s):
-            """
-            :type s: str
-            :rtype: str
-            """
-            stack = []
-            prev_str = ''
-            for ch in s:
-                if ch == '[':
-                    if prev_str != '':
-                        stack.append(prev_str)
-                        prev_str = ''
-                    stack.append(ch)
-                elif ch == ']':
-                    element = prev_str
-                    prev_str = ''
-                    # pop until we get '['
-                    while stack[-1] != '[':
-                        v = stack.pop()
-                        if v.isdigit():
-                            element = element*int(v)
-                        else:
-                            element = "%s%s" % (v, element)
-                    stack.pop() # remove [
-                    while len(stack)!= 0 and stack[-1].isdigit():
-                        element = element*int(stack.pop())
-                    stack.append(element)
-                elif ch.isalpha():
-                    if prev_str != '' and prev_str.isdigit():
-                        stack.append(prev_str)
-                        prev_str = ''
-                    prev_str = '%s%s' % (prev_str, ch)
-                else:
-                    if prev_str != '' and prev_str.isalpha():
-                        stack.append(prev_str)
-                        prev_str = ''
-                    prev_str = '%s%s' % (prev_str, ch)
-                # print stack
+    	"""
+    	:type s: str
+    	:rtype: str
+    	"""
+    	stack = []
+    	prev_str = ''
+    	for ch in s:
+    	    if ch == '[':
+    		if prev_str != '':
+    		    stack.append(prev_str)
+    		    prev_str = ''
+    		stack.append(ch)
+    	    elif ch == ']':
+    		element = prev_str
+    		prev_str = ''
+    		# pop until we get '['
+    		while stack[-1] != '[':
+    		    v = stack.pop()
+    		    if v.isdigit():
+    			element = element*int(v)
+    		    else:
+    			element = "%s%s" % (v, element)
+    		stack.pop() # remove [
+    		while len(stack)!= 0 and stack[-1].isdigit():
+    		    element = element*int(stack.pop())
+    		stack.append(element)
+    	    elif ch.isalpha():
+    		if prev_str != '' and prev_str.isdigit():
+    		    stack.append(prev_str)
+    		    prev_str = ''
+    		prev_str = '%s%s' % (prev_str, ch)
+    	    else:
+    		if prev_str != '' and prev_str.isalpha():
+    		    stack.append(prev_str)
+    		    prev_str = ''
+    		prev_str = '%s%s' % (prev_str, ch)
+    	    # print stack
     
-            if prev_str != '': stack.append(prev_str)
-            return ''.join(stack)
+    	if prev_str != '': stack.append(prev_str)
+    	return ''.join(stack)
     
     # s = Solution()
     # print s.decodeString('2[abc]3[cd]ef') #abcabccdcdcdef
     # print s.decodeString('3[a2[c]]') # accaccacc
+

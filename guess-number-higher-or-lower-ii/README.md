@@ -8,7 +8,8 @@ Guess Number Higher or Lower
 ---
 
 Similar Problems:  
--   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
+-   [Review: Game Problems](https://code.dennyzhang.com/review-game)
+-   Tag: [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#dp2order](https://code.dennyzhang.com/tag/dp2order), [#minmax](https://code.dennyzhang.com/tag/minmax), [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -42,31 +43,36 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/guess-number-higher-or-lower-ii
-    ## Basic Ideas: binary search
-    ##      1 1 1 0 -1 -1 -1
-    ## Complexity: Time O(log(n)), Space O(1)
-    
-    # The guess API is already defined for you.
-    # @param num, your guess
-    # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
-    # def guess(num):
-    
-    class Solution(object):
-        def guessNumber(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            left, right = 1, n
-            while left <= right:
-                mid = left + (right-left)/2
-                v = guess(mid)
-                if v == 0:
-                    return mid
-                elif v == 1:
-                    left = mid + 1
-                else:
-                    right = mid - 1
-    
-            return None
+    // Blog link: https://code.dennyzhang.com/guess-number-higher-or-lower-ii
+    // Basic Ideas: Dynamic Programming
+    //
+    // f(i, j) -> money we need to gurantee a win for the range of [i, j]
+    //    We will have to start by picking one, let's say it's k.
+    //    Then the cost is: k + max(f(i, k-1), f(k+1, j))
+    //
+    // From bottom to up, from left to right, we can get f(1, n)
+    // Complexity: Time O(n*n*n), Space O(n*n)
+    func getMoneyAmount(n int) int {
+        dp := make([][]int, n+1)
+        for i:=0; i<n+1; i++ { dp[i] = make([]int, n+1) }
+        for i:=n-1; i>=1; i-- {
+            // Range of i:j
+            for j := i+1; j<=n; j++ {
+                cost, mincost := 0, 1<<31 - 1
+                for k:=i; k<=j; k++ {
+                    cost = k
+                    r1, r2 := 0, 0
+                    if k!=i { r1 = dp[i][k-1] }
+                    if k!=j { r2 = dp[k+1][j] }
+                    if r1 > r2 {
+                        cost += r1
+                    } else {
+                        cost += r2
+                    }
+                    if mincost > cost { mincost = cost }
+                }
+                dp[i][j] = mincost
+            }
+        }
+        return dp[1][n]
+    }

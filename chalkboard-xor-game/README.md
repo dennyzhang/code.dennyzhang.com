@@ -1,5 +1,5 @@
-# Leetcode: Chalkboard XOR Game     :BLOG:Hard:
 
+# Leetcode: Chalkboard XOR Game     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Chalkboard XOR Game
 ---
 
 Similar Problems:  
+
 -   [Swap Adjacent in LR String](https://code.dennyzhang.com/swap-adjacent-in-lr-string)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [#bitmanipulation](https://code.dennyzhang.com/tag/bitmanipulation), [#game](https://code.dennyzhang.com/tag/game), [#math](https://code.dennyzhang.com/tag/math)
@@ -67,10 +68,11 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def xorGame(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: bool
-            """
-            xor = 0
-            for num in nums: xor ^= num
-            return xor == 0 or len(nums)%2 == 0
+    	"""
+    	:type nums: List[int]
+    	:rtype: bool
+    	"""
+    	xor = 0
+    	for num in nums: xor ^= num
+    	return xor == 0 or len(nums)%2 == 0
+

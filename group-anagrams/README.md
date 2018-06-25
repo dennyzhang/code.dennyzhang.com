@@ -1,5 +1,5 @@
-# Leetcode: Group Anagrams     :BLOG:Medium:
 
+# Leetcode: Group Anagrams     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Given an array of strings, group anagrams together.
 ---
 
 Similar Problems:  
+
 -   [Find Duplicate File in System](https://code.dennyzhang.com/find-duplicate-file-in-system)
 -   [Group Shifted Strings](https://code.dennyzhang.com/group-shifted-strings)
 -   [Tag: #hashmap](https://code.dennyzhang.com/tag/hashmap)
@@ -40,19 +41,20 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*k*log(k)), Space O(k*n). k is the length of longest item
     class Solution(object):
         def groupAnagrams(self, strs):
-            """
-            :type strs: List[str]
-            :rtype: List[List[str]]
-            """
-            m = {}
-            for item in strs:
-                sorted_item = ''.join(sorted(item))
-                if m.has_key(sorted_item):
-                    m[sorted_item].append(item)
-                else:
-                    m[sorted_item] = [item]
+    	"""
+    	:type strs: List[str]
+    	:rtype: List[List[str]]
+    	"""
+    	m = {}
+    	for item in strs:
+    	    sorted_item = ''.join(sorted(item))
+    	    if m.has_key(sorted_item):
+    		m[sorted_item].append(item)
+    	    else:
+    		m[sorted_item] = [item]
     
-            res = []
-            for key in m:
-                res.append(m[key])
-            return res
+    	res = []
+    	for key in m:
+    	    res.append(m[key])
+    	return res
+

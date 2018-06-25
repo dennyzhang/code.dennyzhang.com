@@ -1,5 +1,5 @@
-# Leetcode: Compare Version Numbers     :BLOG:Amusing:
 
+# Leetcode: Compare Version Numbers     :BLOG:Amusing:
 
 ---
 
@@ -34,21 +34,22 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def compareVersion(self, version1, version2):
-            """
-            :type version1: str
-            :type version2: str
-            :rtype: int
-            """
-            l1, l2 = version1.split('.'), version2.split('.')
-            len1, len2 = len(l1), len(l2)
-            max_len = max(len1, len2)
-            for i in xrange(max_len):
-                v1 = int(l1[i]) if i<len1 else 0
-                v2 = int(l2[i]) if i<len2 else 0
-                if v1 > v2: return 1
-                elif v1 < v2: return -1
-            return 0
+    	"""
+    	:type version1: str
+    	:type version2: str
+    	:rtype: int
+    	"""
+    	l1, l2 = version1.split('.'), version2.split('.')
+    	len1, len2 = len(l1), len(l2)
+    	max_len = max(len1, len2)
+    	for i in xrange(max_len):
+    	    v1 = int(l1[i]) if i<len1 else 0
+    	    v2 = int(l2[i]) if i<len2 else 0
+    	    if v1 > v2: return 1
+    	    elif v1 < v2: return -1
+    	return 0
     
     # s = Solution()
     # print s.compareVersion('01', '1') # 0
     # print s.compareVersion('1.0', '1') # 0
+

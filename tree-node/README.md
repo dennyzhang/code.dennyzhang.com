@@ -1,5 +1,5 @@
-# Leetcode: Tree Node     :BLOG:Medium:
 
+# Leetcode: Tree Node     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Tree Node
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -25,6 +26,7 @@ Given a table tree, id is identifier of the tree node and p\_id is its parent no
     +----+------+
 
 Each node in the tree can be one of three types:  
+
 -   Leaf: if the node is a leaf node.
 -   Root: if the node is the root of the tree.
 -   Inner: If the node is neither a leaf node nor a root node.
@@ -49,7 +51,7 @@ Explanation
 
 And here is the image of the sample tree as below:  
 
-            1
+    	1
           /   \
         2       3
       /   \
@@ -82,10 +84,11 @@ Leave me comments, if you have better ways to solve.
     
     select t1.id, 
         case
-            when isnull(t1.p_id) then 'Root'
-            when isnull(max(t2.id)) then 'Leaf'
-            else 'Inner'
+    	when isnull(t1.p_id) then 'Root'
+    	when isnull(max(t2.id)) then 'Leaf'
+    	else 'Inner'
         end as Type
     from tree as t1 left join tree as t2
     on t1.id = t2.p_id
     group by t1.id, t1.p_id
+

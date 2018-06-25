@@ -1,5 +1,5 @@
-# Leetcode: Lowest Common Ancestor of a Binary Search Tree     :BLOG:Basic:
 
+# Leetcode: Lowest Common Ancestor of a Binary Search Tree     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Lowest Common Ancestor of a Binary Search Tree
 ---
 
 Similar Problems:  
+
 -   [Lowest Common Ancestor of a Binary Tree](https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree)
 -   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree), [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
 
@@ -52,19 +53,20 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def lowestCommonAncestor(self, root, p, q):
-            """
-            :type root: TreeNode
-            :type p: TreeNode
-            :type q: TreeNode
-            :rtype: TreeNode
-            """
-            stack = []
-            r = root
-            min_val = min(p.val, q.val)
-            max_val = max(p.val, q.val)
-            while r and (r.val > max_val or r.val < min_val):
-                if r.val > max_val:
-                    r = r.left
-                else:
-                    r = r.right
-            return r
+    	"""
+    	:type root: TreeNode
+    	:type p: TreeNode
+    	:type q: TreeNode
+    	:rtype: TreeNode
+    	"""
+    	stack = []
+    	r = root
+    	min_val = min(p.val, q.val)
+    	max_val = max(p.val, q.val)
+    	while r and (r.val > max_val or r.val < min_val):
+    	    if r.val > max_val:
+    		r = r.left
+    	    else:
+    		r = r.right
+    	return r
+

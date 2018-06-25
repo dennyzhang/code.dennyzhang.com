@@ -1,5 +1,5 @@
-# Leetcode: Shortest Distance in a Line     :BLOG:Medium:
 
+# Leetcode: Shortest Distance in a Line     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Distance in a Line
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -45,3 +46,4 @@ Leave me comments, if you have better ways to solve.
     where t1.x>t2.x
     order by (t1.x-t2.x) asc
     limit 1
+

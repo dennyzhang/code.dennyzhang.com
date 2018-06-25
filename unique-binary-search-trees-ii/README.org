@@ -1,6 +1,6 @@
 * Leetcode: Unique Binary Search Trees II                         :BLOG:Hard:
-#+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+#+STARTUP: showeverything
 :PROPERTIES:
 :type:     dynamicprogramming
 :END:

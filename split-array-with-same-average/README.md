@@ -1,5 +1,5 @@
-# Leetcode: Split Array With Same Average     :BLOG:Hard:
 
+# Leetcode: Split Array With Same Average     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Split Array With Same Average
 ---
 
 Similar Problems:  
+
 -   [Matchsticks to Square](https://code.dennyzhang.com/matchsticks-to-square)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#math](https://code.dennyzhang.com/tag/math), [#classic](https://code.dennyzhang.com/tag/classic)
 
@@ -62,34 +63,35 @@ Leave me comments, if you have better ways to solve.
         // count, sum
         queue := [][]int{}
         for _, v:= range A {
-            // add current item to queue
-            if v*len(A) == sum_a { return true }
-            entity := Entity{1, v}
-            if visited[entity] == false {
-                queue = append(queue, []int{1, v})
-                visited[entity] = true
-            }
-            // whether add current item to existings items in the queue
-            list := [][]int{}
-            for _, item:= range queue {
-                // whether to explore
-                if item[0]*2<len(A) {
-                    v1, v2:= (item[1]+v)*len(A), (item[0]+1)*sum_a
-                    if v1==v2{
-                        return true
-                    } else {
-                        if v1<v2 {
-                            entity = Entity{item[0]+1, item[1]+v}
-                            if visited[entity] == false {
-                                list = append(list, []int{item[0]+1, item[1]+v})
-                                visited[entity] = true
-                            }
-                        }
-                    }
-                }
-            }
-            // update queue
-            for _, v:= range list { queue = append(queue, v) }
+    	// add current item to queue
+    	if v*len(A) == sum_a { return true }
+    	entity := Entity{1, v}
+    	if visited[entity] == false {
+    	    queue = append(queue, []int{1, v})
+    	    visited[entity] = true
+    	}
+    	// whether add current item to existings items in the queue
+    	list := [][]int{}
+    	for _, item:= range queue {
+    	    // whether to explore
+    	    if item[0]*2<len(A) {
+    		v1, v2:= (item[1]+v)*len(A), (item[0]+1)*sum_a
+    		if v1==v2{
+    		    return true
+    		} else {
+    		    if v1<v2 {
+    			entity = Entity{item[0]+1, item[1]+v}
+    			if visited[entity] == false {
+    			    list = append(list, []int{item[0]+1, item[1]+v})
+    			    visited[entity] = true
+    			}
+    		    }
+    		}
+    	    }
+    	}
+    	// update queue
+    	for _, v:= range list { queue = append(queue, v) }
         }
         return false
     }
+

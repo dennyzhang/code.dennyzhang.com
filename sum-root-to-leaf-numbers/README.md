@@ -1,5 +1,5 @@
-# Leetcode: Sum Root to Leaf Numbers     :BLOG:Basic:
 
+# Leetcode: Sum Root to Leaf Numbers     :BLOG:Basic:
 
 ---
 
@@ -30,25 +30,26 @@ Credits To: [leetcode.com](https://leetcode.com/problems/sum-root-to-leaf-number
     ## Blog link: https://code.dennyzhang.com/sum-root-to-leaf-numbers
     class Solution(object):
         def sumNumbers(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            ## Idea: BFS
-            ## Complexity:
-            res = 0
-            if root is None:
-                return 0
-            queue = []
-            queue.append((root, root.val))
-            while len(queue) != 0:
-                (node, value) = queue[0]
-                del queue[0]
-                if node.left:
-                    queue.append((node.left, value*10 + node.left.val))
-                if node.right:
-                    queue.append((node.right, value*10 + node.right.val))
-                # left node
-                if node.left is None and node.right is None:
-                    res += value
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	## Idea: BFS
+    	## Complexity:
+    	res = 0
+    	if root is None:
+    	    return 0
+    	queue = []
+    	queue.append((root, root.val))
+    	while len(queue) != 0:
+    	    (node, value) = queue[0]
+    	    del queue[0]
+    	    if node.left:
+    		queue.append((node.left, value*10 + node.left.val))
+    	    if node.right:
+    		queue.append((node.right, value*10 + node.right.val))
+    	    # left node
+    	    if node.left is None and node.right is None:
+    		res += value
+    	return res
+

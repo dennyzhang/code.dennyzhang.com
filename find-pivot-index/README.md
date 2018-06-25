@@ -1,5 +1,5 @@
-# Leetcode: Find Pivot Index     :BLOG:Basic:
 
+# Leetcode: Find Pivot Index     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Find Pivot Index
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -49,3 +50,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/find-pivot-index
+

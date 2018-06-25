@@ -1,5 +1,5 @@
-# Leetcode: Excel Sheet Column Title     :BLOG:Medium:
 
+# Leetcode: Excel Sheet Column Title     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Excel Sheet Column Title
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
@@ -45,29 +46,30 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def convertToTitle(self, n):
-            """
-            :type n: int
-            :rtype: str
-            """
-            res = ""
-            while n != 0:
-                mod_val = n % 26
-                n = n/26
-                if mod_val == 0:
-                    ch = 'Z'
-                    n = n-1
-                else:
-                    ch = self.numberToCharacter(mod_val)
-                res = "%s%s" % (ch, res)
-            return res
+    	"""
+    	:type n: int
+    	:rtype: str
+    	"""
+    	res = ""
+    	while n != 0:
+    	    mod_val = n % 26
+    	    n = n/26
+    	    if mod_val == 0:
+    		ch = 'Z'
+    		n = n-1
+    	    else:
+    		ch = self.numberToCharacter(mod_val)
+    	    res = "%s%s" % (ch, res)
+    	return res
     
         def numberToCharacter(self, n):
-            if n<1 or n >26:
-                raise Exception("Unexpected input")
-            return chr(ord('A') + (n-1))
+    	if n<1 or n >26:
+    	    raise Exception("Unexpected input")
+    	return chr(ord('A') + (n-1))
     
     # s = Solution()
     # print s.convertToTitle(26) #Z
     # print s.convertToTitle(27) #AA
     # print s.convertToTitle(2) #B
     # print s.convertToTitle(52) #AZ
+

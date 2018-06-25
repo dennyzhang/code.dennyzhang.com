@@ -8,9 +8,10 @@ Delete Operation for Two Strings
 ---
 
 Similar Problems:  
+-   [Edit Distance](https://code.dennyzhang.com/edit-distance)
 -   [Maximum Length of Repeated Subarray](https://code.dennyzhang.com/maximum-length-of-repeated-subarray)
 -   [Interleaving String](https://code.dennyzhang.com/interleaving-string)
--   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#string](https://code.dennyzhang.com/tag/string)
+-   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#dp2order](https://code.dennyzhang.com/tag/dp2order)
 
 ---
 
@@ -33,4 +34,32 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/delete-operation-for-two-strings
+    // Blog link: https://code.dennyzhang.com/delete-operation-for-two-strings
+    // Basic Ideas: dynamic programming
+    //
+    // dp(i, j): make word1[0:i] and word2[0:j]
+    //
+    // Complexity: Time O(n*m), Space O(n)
+    func minDistance(word1 string, word2 string) int {
+        dp := make([]int, len(word2)+1)
+        for i, _ := range dp { dp[i] = i }
+        for i:=1; i<=len(word1); i++ {
+            prev := i-1
+            dp[0] = i
+            for j:=1; j<=len(word2); j++ {
+                cur := -1
+                if word1[i-1] == word2[j-1] { 
+                    cur = prev
+                } else {
+                   // delete word1[i]
+                    v := dp[j]+1
+                    // delete word2[j]
+                    if v>dp[j-1]+1 { v = dp[j-1]+1 }
+                    cur = v
+                }
+                prev = dp[j]
+                dp[j] = cur
+            }
+        }
+        return dp[len(word2)]
+    }

@@ -1,5 +1,5 @@
-# Leetcode: Reach a Number     :BLOG:Medium:
 
+# Leetcode: Reach a Number     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Reach a Number
 ---
 
 Similar Problems:  
+
 -   [Reaching Points](https://code.dennyzhang.com/reaching-points)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [math](https://code.dennyzhang.com/tag/math)
@@ -38,6 +39,7 @@ Example 2:
     On the third move we step from -1 to 2.
 
 Note:  
+
 -   target will be a non-zero integer in the range [-10^9, 10^9].
 
 Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reach-a-number)  
@@ -59,23 +61,24 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def reachNumber(self, target):
-            """
-            :type target: int
-            :rtype: int
-            """
-            if target == 0: return 0
-            import collections
-            queue = collections.deque()
-            step = 0
-            queue.append(0)
-            while len(queue) != 0 and step<=abs(2*target):
-                step += 1
-                for k in range(len(queue)):
-                    value = queue.popleft()
-                    value2 = value+step
-                    if value2 == target: return step
-                    queue.append(value2)
+    	"""
+    	:type target: int
+    	:rtype: int
+    	"""
+    	if target == 0: return 0
+    	import collections
+    	queue = collections.deque()
+    	step = 0
+    	queue.append(0)
+    	while len(queue) != 0 and step<=abs(2*target):
+    	    step += 1
+    	    for k in range(len(queue)):
+    		value = queue.popleft()
+    		value2 = value+step
+    		if value2 == target: return step
+    		queue.append(value2)
     
-                    value2 = value-step
-                    if value2 == target: return step
-                    queue.append(value2)
+    		value2 = value-step
+    		if value2 == target: return step
+    		queue.append(value2)
+

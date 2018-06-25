@@ -1,5 +1,5 @@
-# Leetcode: Longest Substring Without Repeating Characters     :BLOG:Medium:
 
+# Leetcode: Longest Substring Without Repeating Characters     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Substring Without Repeating Characters
 ---
 
 Similar Problems:  
+
 -   [Leetcode: Substring with Concatenation of All Words](https://code.dennyzhang.com/substring-with-concatenation-of-all-words)
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
@@ -37,31 +38,32 @@ Leave me comments, if you have better ways to solve.
     ## Complexity Time O(n), Space O(1)
     class Solution(object):
         def lengthOfLongestSubstring(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            length = len(s)
-            if length <= 1: return length
-            ch_set = set()
-            max_len, slow, fast = 0, 0, 1
-            m = {}
-            m[s[slow]] = slow
-            while fast < length:
-                if s[fast] not in m:
-                    m[s[fast]] = fast
-                    fast += 1
-                else:
-                    max_len = max(max_len, len(m))
-                    next_slow = m[s[fast]] + 1 
-                    for k in xrange(slow, next_slow):
-                        del m[s[k]]
-                    m[s[fast]] = fast
-                    slow = next_slow
-                    fast += 1
-            return max(max_len, len(m))
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	length = len(s)
+    	if length <= 1: return length
+    	ch_set = set()
+    	max_len, slow, fast = 0, 0, 1
+    	m = {}
+    	m[s[slow]] = slow
+    	while fast < length:
+    	    if s[fast] not in m:
+    		m[s[fast]] = fast
+    		fast += 1
+    	    else:
+    		max_len = max(max_len, len(m))
+    		next_slow = m[s[fast]] + 1 
+    		for k in xrange(slow, next_slow):
+    		    del m[s[k]]
+    		m[s[fast]] = fast
+    		slow = next_slow
+    		fast += 1
+    	return max(max_len, len(m))
     
     # s = Solution()         
     # print s.lengthOfLongestSubstring('ruowzgiooobpple')
     # print s.lengthOfLongestSubstring('bbbbb') # 1
     # print s.lengthOfLongestSubstring('pwwkew') # 3
+

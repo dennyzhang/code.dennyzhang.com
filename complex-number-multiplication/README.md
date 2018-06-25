@@ -1,5 +1,5 @@
-# Leetcode: Complex Number Multiplication     :BLOG:Basic:
 
+# Leetcode: Complex Number Multiplication     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Complex Number Multiplication
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   [Solve the Equation](https://code.dennyzhang.com/solve-the-equation)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
@@ -61,3 +62,4 @@ Leave me comments, if you have better ways to solve.
         v2, _ = strconv.Atoi(a[i+1:len(a)-1])
         return
     }
+

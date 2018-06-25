@@ -1,5 +1,5 @@
-# Leetcode: Fraction Addition and Subtraction     :BLOG:Medium:
 
+# Leetcode: Fraction Addition and Subtraction     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Fraction Addition and Subtraction
 ---
 
 Similar Problems:  
+
 -   [Solve the Equation](https://code.dennyzhang.com/solve-the-equation)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
 
@@ -36,8 +37,9 @@ Example 4:
     Output: "2/1"
 
 Note:  
+
 1.  The input string only contains '0' to '9', '/', '+' and '-'. So does the output.
-2.  Each fraction (input and output) has format (+/-)numerator/denominator. If the first input fraction or the output is positive, then '+' will be omitted.
+2.  Each fraction (input and output) has format (<del>/-)numerator/denominator. If the first input fraction or the output is positive, then '</del>' will be omitted.
 3.  The input only contains valid irreducible fractions, where the numerator and denominator of each fraction will always be in the range [1,10]. If the denominator is 1, it means this fraction is actually an integer in a fraction format defined above.
 4.  The number of given fractions will be in the range [1,10].
 5.  The numerator and denominator of the final result are guaranteed to be valid and in the range of 32-bit int.
@@ -51,3 +53,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/fraction-addition-and-subtraction
+

@@ -1,5 +1,5 @@
-# Leetcode: Subarray Sum Equals K     :BLOG:Basic:
 
+# Leetcode: Subarray Sum Equals K     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Subarray Sum Equals K
 ---
 
 Similar Problems:  
+
 -   [Minimum Size Subarray Sum](https://code.dennyzhang.com/minimum-size-subarray-sum)
 -   [Subarray Product Less Than K](https://code.dennyzhang.com/subarray-product-less-than-k)
 
@@ -21,6 +22,7 @@ Example 1:
     Output: 2
 
 Note:  
+
 1.  The length of the array is in range [1, 20,000].
 2.  The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
 
@@ -33,3 +35,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/subarray-sum-equals-k
+

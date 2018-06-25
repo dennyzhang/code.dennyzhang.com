@@ -1,5 +1,5 @@
-# Leetcode: Subtree of Another Tree     :BLOG:Amusing:
 
+# Leetcode: Subtree of Another Tree     :BLOG:Amusing:
 
 ---
 
@@ -61,19 +61,20 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def isSubtree(self, s, t):
-            """
-            :type s: TreeNode
-            :type t: TreeNode
-            :rtype: bool
-            """
-            if s is None: return t is None
-            if self.isSameTree(s, t) is True: return True
-            return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
+    	"""
+    	:type s: TreeNode
+    	:type t: TreeNode
+    	:rtype: bool
+    	"""
+    	if s is None: return t is None
+    	if self.isSameTree(s, t) is True: return True
+    	return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
     
         def isSameTree(self, s, t):
-            if s is None or t is None:
-                return (s is None) and (t is None)
-            if s.val != t.val:
-                return False
-            return self.isSameTree(s.left, t.left) and \
-                self.isSameTree(s.right, t.right)
+    	if s is None or t is None:
+    	    return (s is None) and (t is None)
+    	if s.val != t.val:
+    	    return False
+    	return self.isSameTree(s.left, t.left) and \
+    	    self.isSameTree(s.right, t.right)
+

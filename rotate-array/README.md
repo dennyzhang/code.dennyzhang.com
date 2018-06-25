@@ -1,5 +1,5 @@
-# Leetcode: Rotate Array     :BLOG:Basic:
 
+# Leetcode: Rotate Array     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Right rotate array by k steps
 ---
 
 Similar Problems:  
+
 -   Tag: [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
@@ -36,13 +37,14 @@ Leave me comments, if you have better ways to solve.
     ## Sample Data:
     class Solution(object):
         def findSubstring(self, s, words):
-            """
-            :type s: str
-            :type words: List[str]
-            :rtype: List[int]
-            """
-            ## barfoothefoobarman -> bar foo the foo bar man
+    	"""
+    	:type s: str
+    	:type words: List[str]
+    	:rtype: List[int]
+    	"""
+    	## barfoothefoobarman -> bar foo the foo bar man
     
     if __name__ == '__main__':
         s = Solution()
         # print s.findSubstring("barfoothefoobarman")
+

@@ -1,5 +1,5 @@
-# Leetcode: Delete Duplicate Emails     :BLOG:Medium:
 
+# Leetcode: Delete Duplicate Emails     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Delete Duplicate Emails
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -44,3 +45,4 @@ Leave me comments, if you have better ways to solve.
     delete t1 from Person as t1 inner join Person as t2
     on t1.Email = t2.Email
     where t1.Id > t2.Id
+

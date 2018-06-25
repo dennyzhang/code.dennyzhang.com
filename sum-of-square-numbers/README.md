@@ -1,5 +1,5 @@
-# Leetcode: Sum of Square Numbers     :BLOG:Medium:
 
+# Leetcode: Sum of Square Numbers     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Sum of Square Numbers
 ---
 
 Similar Problems:  
+
 -   [LintCode: 3Sum II](https://code.dennyzhang.com/3sum-ii)
 -   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer)
@@ -44,21 +45,22 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(sqrt(n)), Space O(1)
     class Solution(object):
         def judgeSquareSum(self, c):
-            """
-            :type c: int
-            :rtype: bool
-            """
-            if c < 0:
-                return False
-            import math
-            a, b = 0, int(math.sqrt(c))
-            # a may equals b
-            while a <= b:
-                v = a*a + b*b
-                if v == c:
-                    return True
-                elif v > c:
-                    b -= 1
-                else:
-                    a += 1
-            return False
+    	"""
+    	:type c: int
+    	:rtype: bool
+    	"""
+    	if c < 0:
+    	    return False
+    	import math
+    	a, b = 0, int(math.sqrt(c))
+    	# a may equals b
+    	while a <= b:
+    	    v = a*a + b*b
+    	    if v == c:
+    		return True
+    	    elif v > c:
+    		b -= 1
+    	    else:
+    		a += 1
+    	return False
+

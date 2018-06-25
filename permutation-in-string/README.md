@@ -1,5 +1,5 @@
-# Leetcode: Permutation in String     :BLOG:Medium:
 
+# Leetcode: Permutation in String     :BLOG:Medium:
 
 ---
 
@@ -19,6 +19,7 @@ Given two strings s1 and s2, write a function to return true if s2 contains the 
     Output: False
 
 Note:  
+
 1.  The input strings only contain lower case letters.
 2.  The length of both given strings is in range [1, 10,000].
 
@@ -37,22 +38,23 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def checkInclusion(self, s1, s2):
-            """
-            :type s1: str
-            :type s2: str
-            :rtype: bool
-            """
-            len1, len2 = len(s1), len(s2)
-            if len1>len2: return False
-            list1, list2 = [0]*26, [0]*26
-            for i in range(0, len1):
-                list1[ord(s1[i]) - ord('a')] += 1
-                list2[ord(s2[i]) - ord('a')] += 1
-            if list1 == list2: return True
-            for i in range(len1, len2):
-                # slide window
-                list2[ord(s2[i]) - ord('a')] += 1
-                list2[ord(s2[i-len1]) - ord('a')] -= 1
-                if list1 == list2: return True            
+    	"""
+    	:type s1: str
+    	:type s2: str
+    	:rtype: bool
+    	"""
+    	len1, len2 = len(s1), len(s2)
+    	if len1>len2: return False
+    	list1, list2 = [0]*26, [0]*26
+    	for i in range(0, len1):
+    	    list1[ord(s1[i]) - ord('a')] += 1
+    	    list2[ord(s2[i]) - ord('a')] += 1
+    	if list1 == list2: return True
+    	for i in range(len1, len2):
+    	    # slide window
+    	    list2[ord(s2[i]) - ord('a')] += 1
+    	    list2[ord(s2[i-len1]) - ord('a')] -= 1
+    	    if list1 == list2: return True            
     
-            return False
+    	return False
+

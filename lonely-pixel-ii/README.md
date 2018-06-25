@@ -1,5 +1,5 @@
-# Leetcode: Lonely Pixel II     :BLOG:Medium:
 
+# Leetcode: Lonely Pixel II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Lonely Pixel II
 ---
 
 Similar Problems:  
+
 -   [Lonely Pixel I](https://code.dennyzhang.com/lonely-pixel-i)
 -   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
@@ -58,25 +59,26 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*m), Space O(n+m)
     class Solution:
         def findBlackPixel(self, picture, N):
-            """
-            :type picture: List[List[str]]
-            :type N: int
-            :rtype: int
-            """
-            row_count = len(picture)
-            if row_count == 0: return 0
-            col_count = len(picture[0])
-            row_list = [0 for i in range(row_count)]
-            col_list = [0 for i in range(col_count)]
+    	"""
+    	:type picture: List[List[str]]
+    	:type N: int
+    	:rtype: int
+    	"""
+    	row_count = len(picture)
+    	if row_count == 0: return 0
+    	col_count = len(picture[0])
+    	row_list = [0 for i in range(row_count)]
+    	col_list = [0 for i in range(col_count)]
     
-            for i in range(row_count):
-                for j in range(col_count):
-                    if picture[i][j] == 'B':
-                        col_list[j] += 1
-                        row_list[i] += 1
-            res = 0
-            for i in range(row_count):
-                for j in range(col_count):
-                    if picture[i][j] == 'B' and col_list[j] == N and row_list[i] == N:
-                        res += 1
-            return res
+    	for i in range(row_count):
+    	    for j in range(col_count):
+    		if picture[i][j] == 'B':
+    		    col_list[j] += 1
+    		    row_list[i] += 1
+    	res = 0
+    	for i in range(row_count):
+    	    for j in range(col_count):
+    		if picture[i][j] == 'B' and col_list[j] == N and row_list[i] == N:
+    		    res += 1
+    	return res
+

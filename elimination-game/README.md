@@ -1,5 +1,5 @@
-# Leetcode: Elimination Game     :BLOG:Basic:
 
+# Leetcode: Elimination Game     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Elimination Game
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -41,3 +42,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/elimination-game
+

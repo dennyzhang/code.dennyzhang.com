@@ -8,8 +8,7 @@
 ---
 
 Similar Problems:  
--   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
--   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
+-   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
 
@@ -41,13 +40,21 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/4sum-ii
-    class Solution(object):
-        def fourSumCount(self, A, B, C, D):
-            """
-            :type A: List[int]
-            :type B: List[int]
-            :type C: List[int]
-            :type D: List[int]
-            :rtype: int
-            """
+    // Basic Ideas: hashmap
+    // Complexity: Time O(n*n), Space O(n*n)
+    func fourSumCount(A []int, B []int, C []int, D []int) int {
+        m := map[int]int{}
+        for _, v1 := range A {
+            for _, v2:= range B {
+                m[v1+v2]++
+            }
+        }
+    
+        res := 0
+        for _, v1 := range C {
+            for _, v2:= range D {
+                res += m[-v1-v2]
+            }
+        }
+        return res
+    }

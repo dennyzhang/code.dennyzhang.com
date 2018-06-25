@@ -1,5 +1,5 @@
-# Leetcode: Insertion Sort List     :BLOG:Basic:
 
+# Leetcode: Insertion Sort List     :BLOG:Basic:
 
 ---
 
@@ -36,30 +36,30 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def insertionSortList(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            dummy_node = ListNode(None)
-            dummy_node.next = head
-            p = dummy_node.next
-            # quit if no node to be sorted
-            while p and p.next:
-                q = p.next
-                r = dummy_node
-                # quit if we have compared q with all sorted elements
-                while r != p:
-                    if r.next.val > q.val:
-                        break
-                    r = r.next
-                if r != p:
-                    # move q to the next of r
-                    p.next = q.next
-                    q.next = r.next
-                    r.next = q
-                else:
-                    p = p.next
-            return dummy_node.next
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	dummy_node = ListNode(None)
+    	dummy_node.next = head
+    	p = dummy_node.next
+    	# quit if no node to be sorted
+    	while p and p.next:
+    	    q = p.next
+    	    r = dummy_node
+    	    # quit if we have compared q with all sorted elements
+    	    while r != p:
+    		if r.next.val > q.val:
+    		    break
+    		r = r.next
+    	    if r != p:
+    		# move q to the next of r
+    		p.next = q.next
+    		q.next = r.next
+    		r.next = q
+    	    else:
+    		p = p.next
+    	return dummy_node.next
     
     # s = Solution()
     # p1 = ListNode(3)
@@ -82,3 +82,4 @@ Leave me comments, if you have better ways to solve.
     # print new_head.val
     # print new_head.next.val
     # print new_head.next.next.val
+

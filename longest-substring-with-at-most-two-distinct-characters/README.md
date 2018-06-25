@@ -1,5 +1,5 @@
-# Leetcode: Longest Substring with At Most Two Distinct Characters     :BLOG:Hard:
 
+# Leetcode: Longest Substring with At Most Two Distinct Characters     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Substring with At Most Two Distinct Characters
 ---
 
 Similar Problems:  
+
 -   [Longest Substring with At Most K Distinct Characters](https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters)
 -   [Tag: #string](https://code.dennyzhang.com/tag/string)
 
@@ -32,40 +33,41 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def lengthOfLongestSubstringTwoDistinct(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            import collections
-            import sys
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	import collections
+    	import sys
     
-            length = len(s)
-            d = collections.defaultdict(lambda: 0)
+    	length = len(s)
+    	d = collections.defaultdict(lambda: 0)
     
-            # initialize sliding window
-            index, res = length, -1
-            for i in range(length):
-                ch = s[i]
-                if ch in d: d[ch] += 1
-                else:
-                    if len(d) == 2:
-                        index = i
-                        break
-                    else:
-                        d[ch] += 1
-            res = max(res, sum([d[ch] for ch in d]))
-            # move sliding window
-            i = 0
-            for j in range(index, length):
-                d[s[j]] += 1
-                while len(d) == 3:
-                    ch = s[i]
-                    i += 1
-                    d[ch] -= 1
-                    if d[ch] == 0: del d[ch]
-                res = max(res, sum([d[ch] for ch in d]))
+    	# initialize sliding window
+    	index, res = length, -1
+    	for i in range(length):
+    	    ch = s[i]
+    	    if ch in d: d[ch] += 1
+    	    else:
+    		if len(d) == 2:
+    		    index = i
+    		    break
+    		else:
+    		    d[ch] += 1
+    	res = max(res, sum([d[ch] for ch in d]))
+    	# move sliding window
+    	i = 0
+    	for j in range(index, length):
+    	    d[s[j]] += 1
+    	    while len(d) == 3:
+    		ch = s[i]
+    		i += 1
+    		d[ch] -= 1
+    		if d[ch] == 0: del d[ch]
+    	    res = max(res, sum([d[ch] for ch in d]))
     
-            return res
+    	return res
     
     # s = Solution()
     # print(s.lengthOfLongestSubstringTwoDistinct("bacc")) # 3
+

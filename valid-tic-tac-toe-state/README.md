@@ -1,5 +1,5 @@
-# Leetcode: Valid Tic-Tac-Toe State     :BLOG:Hard:
 
+# Leetcode: Valid Tic-Tac-Toe State     :BLOG:Hard:
 
 ---
 
@@ -52,3 +52,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/valid-tic-tac-toe-state
+

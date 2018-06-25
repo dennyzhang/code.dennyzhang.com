@@ -1,5 +1,5 @@
-# Leetcode: Reverse Nodes in k-Group     :BLOG:Hard:
 
+# Leetcode: Reverse Nodes in k-Group     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Reverse Nodes in k-Group
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
@@ -54,37 +55,38 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def reverseKGroup(self, head, k):
-            """
-            :type head: ListNode
-            :type k: int
-            :rtype: ListNode
-            """
-            if k <= 1:
-                return head
-            dummyNode = ListNode(None)
-            dummyNode.next = head
-            p1 = dummyNode
+    	"""
+    	:type head: ListNode
+    	:type k: int
+    	:rtype: ListNode
+    	"""
+    	if k <= 1:
+    	    return head
+    	dummyNode = ListNode(None)
+    	dummyNode.next = head
+    	p1 = dummyNode
     
-            while True:
-                p2 = p1
-                for i in xrange(k):
-                    if p2 is None:
-                        break
-                    p2 = p2.next
+    	while True:
+    	    p2 = p1
+    	    for i in xrange(k):
+    		if p2 is None:
+    		    break
+    		p2 = p2.next
     
-                if p2 is None:
-                    break
+    	    if p2 is None:
+    		break
     
-                # save the pointer of next p1
-                q, s = p1.next, p2.next
-                # reverse list from p1 to p2
-                p = p1.next.next
-                p1.next.next = s
-                while p != s:
-                    r = p.next
-                    p.next = p1.next
-                    p1.next = p
-                    # move to next
-                    p = r
-                p1 = q
-            return dummyNode.next
+    	    # save the pointer of next p1
+    	    q, s = p1.next, p2.next
+    	    # reverse list from p1 to p2
+    	    p = p1.next.next
+    	    p1.next.next = s
+    	    while p != s:
+    		r = p.next
+    		p.next = p1.next
+    		p1.next = p
+    		# move to next
+    		p = r
+    	    p1 = q
+    	return dummyNode.next
+

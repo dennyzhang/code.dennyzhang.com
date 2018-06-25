@@ -1,5 +1,5 @@
-# Leetcode: Convert BST to Greater Tree     :BLOG:Basic:
 
+# Leetcode: Convert BST to Greater Tree     :BLOG:Basic:
 
 ---
 
@@ -50,25 +50,26 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def convertBST(self, root):
-            """
-            :type root: TreeNode
-            :rtype: TreeNode
-            """
-            stack = []
-            p = root
-            while p:
-                stack.append(p)
-                p = p.right
+    	"""
+    	:type root: TreeNode
+    	:rtype: TreeNode
+    	"""
+    	stack = []
+    	p = root
+    	while p:
+    	    stack.append(p)
+    	    p = p.right
     
-            previous_node = None
-            while len(stack) != 0:
-                top_element = stack.pop()
-                if previous_node:
-                    top_element.val += previous_node.val
-                previous_node = top_element
-                if top_element.left:
-                    p = top_element.left
-                    while p:
-                        stack.append(p)
-                        p = p.right
-            return root
+    	previous_node = None
+    	while len(stack) != 0:
+    	    top_element = stack.pop()
+    	    if previous_node:
+    		top_element.val += previous_node.val
+    	    previous_node = top_element
+    	    if top_element.left:
+    		p = top_element.left
+    		while p:
+    		    stack.append(p)
+    		    p = p.right
+    	return root            
+

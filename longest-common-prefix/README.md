@@ -1,5 +1,5 @@
-# Leetcode: Longest Common Prefix     :BLOG:Basic:
 
+# Leetcode: Longest Common Prefix     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Common Prefix
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -23,3 +24,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/longest-common-prefix
+

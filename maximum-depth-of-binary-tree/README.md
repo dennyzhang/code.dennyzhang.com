@@ -1,5 +1,5 @@
-# Leetcode: Maximum Depth of Binary Tree     :BLOG:Basic:
 
+# Leetcode: Maximum Depth of Binary Tree     :BLOG:Basic:
 
 ---
 
@@ -29,20 +29,21 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def maxDepth(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            ## Idea: DFS
-            ## Complexity:
-            depth = None
-            if root is None:
-                return 0
-            if (root.left is None) and (root.right is None):
-                return 1
-            elif (root.left is None):
-                return self.maxDepth(root.right)+1
-            elif (root.right is None):
-                return self.maxDepth(root.left)+1
-            else:
-                return max(self.maxDepth(root.left)+1, self.maxDepth(root.right)+1)
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	## Idea: DFS
+    	## Complexity:
+    	depth = None
+    	if root is None:
+    	    return 0
+    	if (root.left is None) and (root.right is None):
+    	    return 1
+    	elif (root.left is None):
+    	    return self.maxDepth(root.right)+1
+    	elif (root.right is None):
+    	    return self.maxDepth(root.left)+1
+    	else:
+    	    return max(self.maxDepth(root.left)+1, self.maxDepth(root.right)+1)
+

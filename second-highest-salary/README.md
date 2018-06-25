@@ -1,5 +1,5 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
 
+# Leetcode: Second Highest Salary     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Second Highest Salary
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -42,3 +43,4 @@ Leave me comments, if you have better ways to solve.
     select ifnull((
            select Salary from Employee
            group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+

@@ -1,5 +1,5 @@
-# Leetcode: Bulls and Cows     :BLOG:Basic:
 
+# Leetcode: Bulls and Cows     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Bulls and Cows
 ---
 
 Similar Problems:  
+
 -   Tag: [#game](https://code.dennyzhang.com/tag/game), [#string](https://code.dennyzhang.com/tag/string), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -48,19 +49,19 @@ Leave me comments, if you have better ways to solve.
         guess_list := [10]int{}
         bulls, cows := 0, 0
         for i, _ := range secret {
-            if secret[i] == guess[i] {
-                bulls += 1
-            } else {
-                secret_list[int(secret[i]-'0')] += 1
-                guess_list[int(guess[i]-'0')] += 1
-            }
+    	if secret[i] == guess[i] {
+    	    bulls += 1
+    	} else {
+    	    secret_list[int(secret[i]-'0')] += 1
+    	    guess_list[int(guess[i]-'0')] += 1
+    	}
         }
         for i:= 0; i<10; i++ {
-            if secret_list[i] < guess_list[i] {
-                cows += secret_list[i]
-            } else {
-                cows += guess_list[i]
-            }
+    	if secret_list[i] < guess_list[i] {
+    	    cows += secret_list[i]
+    	} else {
+    	    cows += guess_list[i]
+    	}
         }
         return fmt.Sprintf("%dA%dB", bulls, cows)
     }
@@ -85,15 +86,16 @@ Leave me comments, if you have better ways to solve.
         array := [10]int{}
         bulls, cows := 0, 0
         for i, _ := range secret {
-            ch1, ch2 := secret[i]-'0', guess[i]-'0'
-            if ch1 == ch2 {
-                bulls += 1
-                continue
-            }
-            if array[ch1]<0 { cows+=1 }
-            if array[ch2]>0 { cows+=1 }
-            array[ch1] +=1
-            array[ch2] -=1
+    	ch1, ch2 := secret[i]-'0', guess[i]-'0'
+    	if ch1 == ch2 {
+    	    bulls += 1
+    	    continue
+    	}
+    	if array[ch1]<0 { cows+=1 }
+    	if array[ch2]>0 { cows+=1 }
+    	array[ch1] +=1
+    	array[ch2] -=1
         }
         return fmt.Sprintf("%dA%dB", bulls, cows)
     }
+
