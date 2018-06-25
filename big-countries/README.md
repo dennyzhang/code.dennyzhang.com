@@ -1,5 +1,5 @@
-
 # Leetcode: Big Countries     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Big Countries
 ---
 
 Similar Problems:  
-
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -50,4 +49,3 @@ Leave me comments, if you have better ways to solve.
     select name, population, area
     from World
     where area > 3000000 or population > 25000000;
-

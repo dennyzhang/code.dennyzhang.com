@@ -1,5 +1,5 @@
-
 # Leetcode: Swap Adjacent in LR String     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Swap Adjacent in LR String
 ---
 
 Similar Problems:  
-
 -   [Valid Parenthesis String](https://code.dennyzhang.com/valid-parenthesis-string)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [math](https://code.dennyzhang.com/tag/math)
@@ -51,30 +50,29 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def canTransform(self, start, end):
-    	"""
-    	:type start: str
-    	:type end: str
-    	:rtype: bool
-    	"""
-    	if start.count('X') != end.count('X') or \
-    	    start.count('L') != end.count('L') or \
-    	    start.count('R') != end.count('R'):
-    		return False
+            """
+            :type start: str
+            :type end: str
+            :rtype: bool
+            """
+            if start.count('X') != end.count('X') or \
+                start.count('L') != end.count('L') or \
+                start.count('R') != end.count('R'):
+                    return False
     
-    	## Pass1: from left to right, 'R' count in start should be no smaller than end string
-    	count1, count2 = 0, 0
-    	for i in range(0, len(start)):
-    	    if start[i] == 'R': count1 += 1
-    	    if end[i] == 'R': count2 += 1
-    	    if count1<count2: return False
+            ## Pass1: from left to right, 'R' count in start should be no smaller than end string
+            count1, count2 = 0, 0
+            for i in range(0, len(start)):
+                if start[i] == 'R': count1 += 1
+                if end[i] == 'R': count2 += 1
+                if count1<count2: return False
     
-    	## Pass2: from right to left, 'L' count in start should be no smaller than end string
-    	count1, count2 = 0, 0
-    	for i in range(len(start)-1, -1, -1):
-    	    if start[i] == 'L': count1 += 1
-    	    if end[i] == 'L': count2 += 1
-    	    if count1<count2: return False
+            ## Pass2: from right to left, 'L' count in start should be no smaller than end string
+            count1, count2 = 0, 0
+            for i in range(len(start)-1, -1, -1):
+                if start[i] == 'L': count1 += 1
+                if end[i] == 'L': count2 += 1
+                if count1<count2: return False
     
-    	# check3: remove X, then the two shall equal
-    	return start.replace('X', '') == end.replace('X', '')
-
+            # check3: remove X, then the two shall equal
+            return start.replace('X', '') == end.replace('X', '')

@@ -1,5 +1,5 @@
-
 # Leetcode: ZigZag Conversion     :BLOG:Medium:
+
 
 ---
 
@@ -44,9 +44,8 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/zigzag-conversion
     class Solution(object):
         def convert(self, s, numRows):
-    	"""
-    	:type s: str
-    	:type numRows: int
-    	:rtype: str
-    	"""
-
+            """
+            :type s: str
+            :type numRows: int
+            :rtype: str
+            """

@@ -1,5 +1,5 @@
-
 # Leetcode: Longest Uncommon Subsequence II     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Longest Uncommon Subsequence II
 ---
 
 Similar Problems:  
-
 -   [Longest Uncommon Subsequence I](https://code.dennyzhang.com/longest-uncommon-subsequence-i)
 
 ---
@@ -38,4 +37,3 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/longest-uncommon-subsequence-ii
-

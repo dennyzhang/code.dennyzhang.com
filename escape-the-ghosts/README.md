@@ -1,5 +1,5 @@
-
 # Leetcode: Escape The Ghosts     :BLOG:Amusing:
+
 
 ---
 
@@ -8,12 +8,11 @@ Escape The Ghosts
 ---
 
 Similar Problems:  
-
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
 
-You are playing a simplified Pacman game. You start at the point (0, 0), and your destination is (target[0], target[1]). There are several ghosts on the map, the i-th ghost starts at (ghosts[i][0], ghosts[i][1]).  
+You are playing a simplified Pacman game. You start at the point (0, 0), and your destination is (target, target). There are several ghosts on the map, the i-th ghost starts at (ghosts[i], ghosts[i]).  
 
 Each turn, you and all ghosts simultaneously **may** move in one of 4 cardinal directions: north, east, west, or south, going from the previous point to a new point 1 unit of distance away.  
 
@@ -67,15 +66,26 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(1), Space O(1)
     class Solution:
         def escapeGhosts(self, ghosts, target):
-    	"""
-    	:type ghosts: List[List[int]]
-    	:type target: List[int]
-    	:rtype: bool
-    	"""
-    	my_distance = abs(target[0]) + abs(target[1])
+            """
+            :type ghosts: List[List[int]]
+            :type target: List[int]
+            :rtype: bool
+            """
+            my_distance = abs(target[0]) + abs(target[1])
     
-    	for ghost in ghosts:
-    	    distance = abs(ghost[0]-target[0]) + abs(ghost[1]-target[1])
-    	    if distance <= my_distance: return False
-    	return True
+            for ghost in ghosts:
+                distance = abs(ghost[0]-target[0]) + abs(ghost[1]-target[1])
+                if distance <= my_distance: return False
+            return True
 
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+
+
+</div>
+</div>

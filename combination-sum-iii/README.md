@@ -1,5 +1,5 @@
-
 # Leetcode: Combination Sum III     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Combination Sum III
 ---
 
 Similar Problems:  
-
 -   [Combination Sum IV](https://code.dennyzhang.com/combination-sum-iv)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
 -   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
@@ -44,9 +43,8 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/combination-sum-iii
     class Solution(object):
         def combinationSum3(self, k, n):
-    	"""
-    	:type k: int
-    	:type n: int
-    	:rtype: List[List[int]]
-    	"""
-
+            """
+            :type k: int
+            :type n: int
+            :rtype: List[List[int]]
+            """

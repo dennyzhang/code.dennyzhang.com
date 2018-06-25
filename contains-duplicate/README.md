@@ -1,5 +1,5 @@
-
 # Leetcode: Contains Duplicate     :BLOG:Basic:
+
 
 ---
 
@@ -21,9 +21,8 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*log(n)), Space O(n)
     class Solution(object):
         def containsDuplicate(self, nums):
-    	"""
-    	:type nums: List[int]
-    	:rtype: bool
-    	"""
-    	return len(nums) != len(set(nums))
-
+            """
+            :type nums: List[int]
+            :rtype: bool
+            """
+            return len(nums) != len(set(nums))

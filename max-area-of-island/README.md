@@ -1,5 +1,5 @@
-
 # Leetcode: Max Area of Island     :BLOG:Medium:
+
 
 ---
 
@@ -42,35 +42,34 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def maxAreaOfIsland(self, grid):
-    	"""
-    	:type grid: List[List[int]]
-    	:rtype: int
-    	"""
-    	self.row_count = len(grid)
-    	if self.row_count == 0: return 0
-    	self.col_count = len(grid[0])
-    	max_count = 0
-    	for i in xrange(self.row_count):
-    	    for j in xrange(self.col_count):
-    		if grid[i][j] == 1:
-    		    max_count = max(max_count, self.DFSMark(grid, i, j))
-    	return max_count
+            """
+            :type grid: List[List[int]]
+            :rtype: int
+            """
+            self.row_count = len(grid)
+            if self.row_count == 0: return 0
+            self.col_count = len(grid[0])
+            max_count = 0
+            for i in xrange(self.row_count):
+                for j in xrange(self.col_count):
+                    if grid[i][j] == 1:
+                        max_count = max(max_count, self.DFSMark(grid, i, j))
+            return max_count
     
         def DFSMark(self, grid, i, j):
-    	if i < 0 or i >= self.row_count \
-    	    or j < 0 or j >= self.col_count:
-    	    return 0
+            if i < 0 or i >= self.row_count \
+                or j < 0 or j >= self.col_count:
+                return 0
     
-    	# stop digging, if not 1
-    	if grid[i][j] != 1:
-    	    return 0
+            # stop digging, if not 1
+            if grid[i][j] != 1:
+                return 0
     
-    	res = 1
-    	grid[i][j] = 0
-    	# mark four positions in a recursive way
-    	res += self.DFSMark(grid, i-1, j)
-    	res += self.DFSMark(grid, i+1, j)
-    	res += self.DFSMark(grid, i, j-1)
-    	res += self.DFSMark(grid, i, j+1)
-    	return res
-
+            res = 1
+            grid[i][j] = 0
+            # mark four positions in a recursive way
+            res += self.DFSMark(grid, i-1, j)
+            res += self.DFSMark(grid, i+1, j)
+            res += self.DFSMark(grid, i, j-1)
+            res += self.DFSMark(grid, i, j+1)
+            return res

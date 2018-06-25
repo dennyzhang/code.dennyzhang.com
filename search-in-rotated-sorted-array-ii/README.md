@@ -1,5 +1,5 @@
-
 # Leetcode: Search in Rotated Sorted Array II     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Search in Rotated Sorted Array II
 ---
 
 Similar Problems:  
-
 -   [Search in Rotated Sorted Array](https://code.dennyzhang.com/search-in-rotated-sorted-array)
 -   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
@@ -37,12 +36,11 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def search(self, nums, target):
-    	"""
-    	:type nums: List[int]
-    	:type target: int
-    	:rtype: bool
-    	"""
-    	for num in nums:
-    	    if num == target: return True
-    	return False
-
+            """
+            :type nums: List[int]
+            :type target: int
+            :rtype: bool
+            """
+            for num in nums:
+                if num == target: return True
+            return False

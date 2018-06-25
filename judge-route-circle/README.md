@@ -1,5 +1,5 @@
-
 # Leetcode: Judge Route Circle     :BLOG:Medium:
+
 
 ---
 
@@ -30,28 +30,27 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/judge-route-circle
     class Solution(object):
         def judgeCircle(self, moves):
-    	"""
-    	:type moves: str
-    	:rtype: bool
-    	"""
-    	x = 0
-    	y = 0
-    	for move in moves:
-    	    if move not in 'UDLR':
-    		raise Exception("Wrong move: %s" % (move))
+            """
+            :type moves: str
+            :rtype: bool
+            """
+            x = 0
+            y = 0
+            for move in moves:
+                if move not in 'UDLR':
+                    raise Exception("Wrong move: %s" % (move))
     
-    	    if move == 'U':
-    		y += 1
-    	    if move == 'D':
-    		y -= 1
-    	    if move == 'L':
-    		x -= 1
-    	    if move == 'R':
-    		x += 1
-    	return (x == 0) and (y==0)
+                if move == 'U':
+                    y += 1
+                if move == 'D':
+                    y -= 1
+                if move == 'L':
+                    x -= 1
+                if move == 'R':
+                    x += 1
+            return (x == 0) and (y==0)
     
     if __name__ == '__main__':
         s = Solution()
         print s.judgeCircle("UD")
         print s.judgeCircle("LL")
-

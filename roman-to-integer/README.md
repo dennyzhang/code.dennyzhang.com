@@ -1,5 +1,5 @@
-
 # Leetcode: Roman to Integer     :BLOG:Basic:
+
 
 ---
 
@@ -8,7 +8,6 @@ Roman to Integer
 ---
 
 Similar Problems:  
-
 -   [Integer to Roman](https://code.dennyzhang.com/integer-to-roman)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
@@ -29,7 +28,6 @@ Leave me comments, if you have better ways to solve.
 
 <<<<<<< HEAD  
 Reference:  
-
 -   [wikipedia: Roman numerals](https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system)
 -   [Roman Numerals Chart](http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm)
 
@@ -44,15 +42,15 @@ Reference:
         m := map[byte]int{'I': 1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
         res := 0
         for i, _ := range s {
-    	if i == len(s)-1 {
-    	    res += m[s[i]]
-    	} else{
-    	    if m[s[i]] < m[s[i+1]] {
-    		res -= m[s[i]]
-    	    } else {
-    		res += m[s[i]]
-    	    }
-    	}
+            if i == len(s)-1 {
+                res += m[s[i]]
+            } else{
+                if m[s[i]] < m[s[i+1]] {
+                    res -= m[s[i]]
+                } else {
+                    res += m[s[i]]
+                }
+            }
         }
         return res
     }
@@ -61,4 +59,3 @@ Reference:
     ## Blog link: https://code.dennyzhang.com/roman-to-integer
     
     >>>>>>> 123cc57c2e4abe14e48c40bfd5bdc5982e4e0c29
-

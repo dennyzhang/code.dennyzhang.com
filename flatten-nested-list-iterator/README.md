@@ -1,5 +1,5 @@
-
 # Leetcode: Flatten Nested List Iterator     :BLOG:Hard:
+
 
 ---
 
@@ -8,7 +8,6 @@ Flatten Nested List Iterator
 ---
 
 Similar Problems:  
-
 -   [Flatten 2D Vector](https://code.dennyzhang.com/flatten-2d-vector)
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
@@ -89,78 +88,77 @@ Leave me comments, if you have better ways to solve.
     class NestedIterator(object):
     
         def __init__(self, nestedList):
-    	"""
-    	Initialize your data structure here.
-    	:type nestedList: List[NestedInteger]
-    	"""
-    	self.l1 = nestedList
-    	self.index = 0
-    	self.l2 = []
+            """
+            Initialize your data structure here.
+            :type nestedList: List[NestedInteger]
+            """
+            self.l1 = nestedList
+            self.index = 0
+            self.l2 = []
     
         def next(self):
-    	"""
-    	:rtype: int
-    	"""
-    	if len(self.l2) != 0:
-    	    node = self.l2[0]
-    	    del self.l2[0]
-    	    (first, rest) = self.getFirst(node)
-    	    if rest: self.l2.insert(0, rest)
-    	else:
-    	    node = self.l1[self.index]
-    	    self.index += 1
-    	    (first, rest) = self.getFirst(node)
-    	    if rest: self.l2.append(rest)
-    	return first
+            """
+            :rtype: int
+            """
+            if len(self.l2) != 0:
+                node = self.l2[0]
+                del self.l2[0]
+                (first, rest) = self.getFirst(node)
+                if rest: self.l2.insert(0, rest)
+            else:
+                node = self.l1[self.index]
+                self.index += 1
+                (first, rest) = self.getFirst(node)
+                if rest: self.l2.append(rest)
+            return first
     
         def getFirst(self, node):
-    	p = copy.deepcopy(node)
+            p = copy.deepcopy(node)
     
-    	q, parent_list = p, []
-    	while True:
-    	    # q may be: list or NestedInteger
-    	    if type(q) == list:
-    		parent_list.append(q)
-    		q = q[0]
-    	    elif q.isInteger():
-    		break
-    	    else:
-    		item = q.getList()
-    		parent_list.append(item)
-    		q = item[0]
+            q, parent_list = p, []
+            while True:
+                # q may be: list or NestedInteger
+                if type(q) == list:
+                    parent_list.append(q)
+                    q = q[0]
+                elif q.isInteger():
+                    break
+                else:
+                    item = q.getList()
+                    parent_list.append(item)
+                    q = item[0]
     
-    	first_val = q.getInteger()
-    	if len(parent_list) != 0:
-    	    del parent_list[-1][0]
+            first_val = q.getInteger()
+            if len(parent_list) != 0:
+                del parent_list[-1][0]
     
-    	# delete empty element at the head
-    	for i in range(len(parent_list)-1, -1, -1):
-    	    l = parent_list[i]
-    	    if len(l) != 0 and l[0] == []:
-    		del l[0]
+            # delete empty element at the head
+            for i in range(len(parent_list)-1, -1, -1):
+                l = parent_list[i]
+                if len(l) != 0 and l[0] == []:
+                    del l[0]
     
-    	if len(parent_list) != 0:
-    	    rest = parent_list[0]
-    	    # change [item] to item
-    	    if len(rest) == 1:
-    		return (first_val, rest[0])
-    	    else:
-    		return (first_val, rest)
-    	else:
-    	    return (first_val, None)
+            if len(parent_list) != 0:
+                rest = parent_list[0]
+                # change [item] to item
+                if len(rest) == 1:
+                    return (first_val, rest[0])
+                else:
+                    return (first_val, rest)
+            else:
+                return (first_val, None)
     
         def hasNext(self):
-    	"""
-    	:rtype: bool
-    	"""
-    	if len(self.l2) == 0 and self.index == len(self.l1):
-    	    return False
-    	else:
-    	    return True
+            """
+            :rtype: bool
+            """
+            if len(self.l2) == 0 and self.index == len(self.l1):
+                return False
+            else:
+                return True
     
     # Your NestedIterator object will be instantiated and called as such:
     # i, v = NestedIterator(nestedList), []
     # while i.hasNext(): v.append(i.next())
 
 ---
-

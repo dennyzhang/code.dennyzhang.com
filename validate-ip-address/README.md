@@ -1,5 +1,5 @@
-
 # Leetcode: Validate IP Address     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Validate IP Address
 ---
 
 Similar Problems:  
-
 -   [IP to CIDR](https://code.dennyzhang.com/ip-to-cidr)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
@@ -71,47 +70,46 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution:
         def validIPAddress(self, IP):
-    	"""
-    	:type IP: str
-    	:rtype: str
-    	"""
-    	self.invalid = "Neither"
-    	if "." in IP:
-    	    return self.validIPv4Address(IP)
-    	elif ":" in IP:
-    	    return self.validIPv6Address(IP)
-    	return self.invalid
+            """
+            :type IP: str
+            :rtype: str
+            """
+            self.invalid = "Neither"
+            if "." in IP:
+                return self.validIPv4Address(IP)
+            elif ":" in IP:
+                return self.validIPv6Address(IP)
+            return self.invalid
     
         def validIPv4Address(self, IP):
-    	"""
-    	:type IP: str
-    	:rtype: str
-    	"""
-    	l = IP.split('.')
-    	if len(l) != 4: return self.invalid
-    	for item in l:
-    	    if item.isdigit() is False: return self.invalid
-    	    if item != '0' and item[0] == '0': return self.invalid
-    	    v = int(item)
-    	    if v<0 or v>255: return self.invalid
-    	return "IPv4"
+            """
+            :type IP: str
+            :rtype: str
+            """
+            l = IP.split('.')
+            if len(l) != 4: return self.invalid
+            for item in l:
+                if item.isdigit() is False: return self.invalid
+                if item != '0' and item[0] == '0': return self.invalid
+                v = int(item)
+                if v<0 or v>255: return self.invalid
+            return "IPv4"
     
         def validIPv6Address(self, IP):
-    	"""
-    	:type IP: str
-    	:rtype: str
-    	"""
-    	l = IP.split(':')
-    	if len(l) != 8: return self.invalid
-    	for item in l:
-    	    if len(item) > 4: return self.invalid
-    	    if item.isalnum() is False: return self.invalid
-    	    # unify the string
-    	    item = item.lower()
-    	    item = item.lstrip('0')
-    	    if item == '': item = '0'
-    	    for ch in item:
-    		if ch.isdigit() is False and ch not in 'abcdef':
-    		    return self.invalid
-    	return "IPv6"
-
+            """
+            :type IP: str
+            :rtype: str
+            """
+            l = IP.split(':')
+            if len(l) != 8: return self.invalid
+            for item in l:
+                if len(item) > 4: return self.invalid
+                if item.isalnum() is False: return self.invalid
+                # unify the string
+                item = item.lower()
+                item = item.lstrip('0')
+                if item == '': item = '0'
+                for ch in item:
+                    if ch.isdigit() is False and ch not in 'abcdef':
+                        return self.invalid
+            return "IPv6"

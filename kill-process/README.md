@@ -1,5 +1,5 @@
-
 # Leetcode: Kill Process     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Kill Process
 ---
 
 Similar Problems:  
-
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
@@ -56,26 +55,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def killProcess(self, pid, ppid, kill):
-    	"""
-    	:type pid: List[int]
-    	:type ppid: List[int]
-    	:type kill: int
-    	:rtype: List[int]
-    	"""
-    	import collections
-    	d = collections.defaultdict(lambda: [])
-    	for i in range(len(pid)):
-    	    p, q = pid[i], ppid[i]
-    	    d[q].append(p)
+            """
+            :type pid: List[int]
+            :type ppid: List[int]
+            :type kill: int
+            :rtype: List[int]
+            """
+            import collections
+            d = collections.defaultdict(lambda: [])
+            for i in range(len(pid)):
+                p, q = pid[i], ppid[i]
+                d[q].append(p)
     
-    	queue = collections.deque()
-    	queue.append(kill)
-    	res = [kill]
-    	while len(queue) != 0:
-    	    for k in range(len(queue)):
-    		q = queue.popleft()
-    		for p in d[q]:
-    		    res.append(p)
-    		    queue.append(p)
-    	return res
-
+            queue = collections.deque()
+            queue.append(kill)
+            res = [kill]
+            while len(queue) != 0:
+                for k in range(len(queue)):
+                    q = queue.popleft()
+                    for p in d[q]:
+                        res.append(p)
+                        queue.append(p)
+            return res

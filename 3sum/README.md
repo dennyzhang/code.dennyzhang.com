@@ -1,5 +1,5 @@
-
 # Leetcode: 3Sum     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@
 ---
 
 Similar Problems:  
-
 -   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
@@ -44,29 +43,28 @@ Leave me comments, if you have better ways to solve.
     ##       i l         r
     class Solution(object):
         def threeSum(self, nums):
-    	"""
-    	:type nums: List[int]
-    	:rtype: List[List[int]]
-    	"""
-    	ret = []
-    	nums.sort()
+            """
+            :type nums: List[int]
+            :rtype: List[List[int]]
+            """
+            ret = []
+            nums.sort()
     
-    	for i in xrange(len(nums)-2):
-    	    if i>0 and nums[i] == nums[i-1]:
-    		continue
-    	    l,r = i+1, len(nums)-1
-    	    while l<r:
-    		val = nums[i] + nums[l] + nums[r]
-    		if val >0:
-    		    r -= 1
-    		elif val < 0:
-    		    l += 1
-    		else:
-    		    ret.append([nums[i], nums[l], nums[r]])
-    		    while l<r and nums[l] == nums[l+1]:
-    			l += 1
-    		    while l<r and nums[r] == nums[r-1]:
-    			r -= 1
-    		    l += 1; r -=1
-    	return ret
-
+            for i in xrange(len(nums)-2):
+                if i>0 and nums[i] == nums[i-1]:
+                    continue
+                l,r = i+1, len(nums)-1
+                while l<r:
+                    val = nums[i] + nums[l] + nums[r]
+                    if val >0:
+                        r -= 1
+                    elif val < 0:
+                        l += 1
+                    else:
+                        ret.append([nums[i], nums[l], nums[r]])
+                        while l<r and nums[l] == nums[l+1]:
+                            l += 1
+                        while l<r and nums[r] == nums[r-1]:
+                            r -= 1
+                        l += 1; r -=1
+            return ret

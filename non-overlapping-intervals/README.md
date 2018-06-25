@@ -1,5 +1,5 @@
-
 # Leetcode: Non-overlapping Intervals     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Non-overlapping Intervals
 ---
 
 Similar Problems:  
-
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
@@ -57,8 +56,7 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def eraseOverlapIntervals(self, intervals):
-    	"""
-    	:type intervals: List[Interval]
-    	:rtype: int
-    	"""
-
+            """
+            :type intervals: List[Interval]
+            :rtype: int
+            """

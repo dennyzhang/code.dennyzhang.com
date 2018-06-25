@@ -1,5 +1,5 @@
-
 # Leetcode: Maximum XOR of Two Numbers in an Array     :BLOG:Amusing:
+
 
 ---
 
@@ -8,7 +8,6 @@ Maximum XOR of Two Numbers in an Array
 ---
 
 Similar Problems:  
-
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   [Review: Trie Tree Problems](https://code.dennyzhang.com/review-trie)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#trie](https://code.dennyzhang.com/tag/trie)
@@ -54,72 +53,71 @@ Leave me comments, if you have better ways to solve.
     import collections
     class TrieNode(object):
         def __init__(self):
-    	self.children = collections.defaultdict(TrieNode)
-    	self.label = None
+            self.children = collections.defaultdict(TrieNode)
+            self.label = None
     
     class Solution(object):
         def findMaximumXOR(self, nums):
-    	"""
-    	:type nums: List[int]
-    	:rtype: int
-    	"""
-    	if len(nums) == 0:
-    	    return None
-    	if len(nums) == 1:
-    	    return 0
+            """
+            :type nums: List[int]
+            :rtype: int
+            """
+            if len(nums) == 0:
+                return None
+            if len(nums) == 1:
+                return 0
     
-    	# build trie tree
-    	root = TrieNode()
-    	for num in nums:
-    	    v = num
-    	    s = ''
-    	    while v:
-    		if v%2 == 1:
-    		    s = '%s%s' % ('1', s)
-    		else:
-    		    s = '%s%s' % ('0', s)                    
-    		v = v >> 1
-    	    s = s.zfill(32)
-    	    # print s
-    	    # append to Trie Tree
-    	    node = root
-    	    for ch in s:
-    		node = node.children[ch]
-    	    node.is_word = True
-    	    node.label = num
+            # build trie tree
+            root = TrieNode()
+            for num in nums:
+                v = num
+                s = ''
+                while v:
+                    if v%2 == 1:
+                        s = '%s%s' % ('1', s)
+                    else:
+                        s = '%s%s' % ('0', s)                    
+                    v = v >> 1
+                s = s.zfill(32)
+                # print s
+                # append to Trie Tree
+                node = root
+                for ch in s:
+                    node = node.children[ch]
+                node.is_word = True
+                node.label = num
     
-    	node  = root
-    	while len(node.children) == 1:
-    	    keys = node.children.keys()
-    	    node = node.children[keys[0]]
+            node  = root
+            while len(node.children) == 1:
+                keys = node.children.keys()
+                node = node.children[keys[0]]
     
-    	# all items are the same
-    	if len(node.children) == 0:
-    	    return 0
+            # all items are the same
+            if len(node.children) == 0:
+                return 0
     
-    	# We found the first crossroad
-    	return self.findTrieMax(node.children['0'], node.children['1'])
+            # We found the first crossroad
+            return self.findTrieMax(node.children['0'], node.children['1'])
     
         def findTrieMax(self, node1, node2):
-    	len1 = len(node1.children)
-    	len2 = len(node2.children)
-    	# reached the bottom
-    	# when len1==0, len2 will definitely be 0
-    	if len1 == 0:
-    	    return node1.label ^ node2.label
-    	elif len1 == 1 and len2 == 1:
-    	    key1 = node1.children.keys()[0]
-    	    key2 = node2.children.keys()[0]
-    	    return self.findTrieMax(node1.children[key1], node2.children[key2])
-    	elif len1 == 1 and len2 == 2:
-    	    key1 = node1.children.keys()[0]
-    	    key2 = '1' if key1 == '0' else '0'
-    	    return self.findTrieMax(node1.children[key1], node2.children[key2])
-    	elif len1 == 2 and len2 == 1:
-    	    key2 = node2.children.keys()[0]
-    	    key1 = '1' if key2 == '0' else '0'
-    	    return self.findTrieMax(node1.children[key1], node2.children[key2])
-    	else:
-    	    return max(self.findTrieMax(node1.children['0'], node2.children['1']), \
-    			self.findTrieMax(node1.children['1'], node2.children['0']))
-
+            len1 = len(node1.children)
+            len2 = len(node2.children)
+            # reached the bottom
+            # when len1==0, len2 will definitely be 0
+            if len1 == 0:
+                return node1.label ^ node2.label
+            elif len1 == 1 and len2 == 1:
+                key1 = node1.children.keys()[0]
+                key2 = node2.children.keys()[0]
+                return self.findTrieMax(node1.children[key1], node2.children[key2])
+            elif len1 == 1 and len2 == 2:
+                key1 = node1.children.keys()[0]
+                key2 = '1' if key1 == '0' else '0'
+                return self.findTrieMax(node1.children[key1], node2.children[key2])
+            elif len1 == 2 and len2 == 1:
+                key2 = node2.children.keys()[0]
+                key1 = '1' if key2 == '0' else '0'
+                return self.findTrieMax(node1.children[key1], node2.children[key2])
+            else:
+                return max(self.findTrieMax(node1.children['0'], node2.children['1']), \
+                            self.findTrieMax(node1.children['1'], node2.children['0']))

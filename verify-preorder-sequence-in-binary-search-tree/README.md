@@ -1,5 +1,5 @@
-
 # Leetcode: Verify Preorder Sequence in Binary Search Tree     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Verify Preorder Sequence in Binary Search Tree
 ---
 
 Similar Problems:  
-
 -   [Verify Preorder Serialization of a Binary Tree](https://code.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree)
 -   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -33,35 +32,34 @@ Leave me comments, if you have better ways to solve.
     import sys
     class Solution(object):
         def verifyPreorder(self, preorder):
-    	"""
-    	:type preorder: List[int]
-    	:rtype: bool
-    	"""
-    	return self.myVerifyPreorder(preorder, -sys.maxsize-1)
+            """
+            :type preorder: List[int]
+            :rtype: bool
+            """
+            return self.myVerifyPreorder(preorder, -sys.maxsize-1)
     
         def myVerifyPreorder(self, preorder, min_val):
-    	# print(preorder)
-    	length = len(preorder)
-    	if length == 0: return True
+            # print(preorder)
+            length = len(preorder)
+            if length == 0: return True
     
-    	index = sys.maxsize
-    	for i in range(length):
-    	    if preorder[i] < min_val: return False
-    	    if i != 0 and preorder[i] > preorder[0]:
-    		index = i
-    		break
+            index = sys.maxsize
+            for i in range(length):
+                if preorder[i] < min_val: return False
+                if i != 0 and preorder[i] > preorder[0]:
+                    index = i
+                    break
     
-    	# left sub-tree
-    	if self.myVerifyPreorder(preorder[1:index], min_val) is False:
-    	    return False
+            # left sub-tree
+            if self.myVerifyPreorder(preorder[1:index], min_val) is False:
+                return False
     
-    	# if index == sys.maxsize, right sub-tree is empty
-    	# right sub-tree
-    	if self.myVerifyPreorder(preorder[index:], preorder[0]) is False:
-    	    return False
+            # if index == sys.maxsize, right sub-tree is empty
+            # right sub-tree
+            if self.myVerifyPreorder(preorder[index:], preorder[0]) is False:
+                return False
     
-    	return True
+            return True
     
     # s = Solution()
     # print(s.verifyPreorder([10,7,4,8,6,40,23]))
-

@@ -1,5 +1,5 @@
-
 # Leetcode: Flipping an Image     :BLOG:Basic:
+
 
 ---
 
@@ -8,7 +8,6 @@ Flipping an Image
 ---
 
 Similar Problems:  
-
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
@@ -51,10 +50,9 @@ Leave me comments, if you have better ways to solve.
     // Complexity: Time O(m*n), Space O(1)
     func flipAndInvertImage(A [][]int) [][]int {
         for i, row := range A {
-    	for l,r := 0,len(row)-1; l<=r; l,r=l+1,r-1 {
-    	    A[i][l], A[i][r] = 1-A[i][r], 1-A[i][l]
-    	}
+            for l,r := 0,len(row)-1; l<=r; l,r=l+1,r-1 {
+                A[i][l], A[i][r] = 1-A[i][r], 1-A[i][l]
+            }
         }
         return A
     }
-

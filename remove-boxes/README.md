@@ -1,5 +1,5 @@
-
 # Leetcode: Remove Boxes     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Remove Boxes
 ---
 
 Similar Problems:  
-
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -44,4 +43,3 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/remove-boxes
-

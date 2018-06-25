@@ -1,5 +1,5 @@
-
 # Leetcode: Integer Replacement     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Integer Replacement
 ---
 
 Similar Problems:  
-
 -   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
@@ -53,4 +52,3 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/integer-replacement
-

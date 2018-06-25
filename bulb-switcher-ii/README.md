@@ -1,5 +1,5 @@
-
 # Leetcode: Bulb Switcher II     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Bulb Switcher II
 ---
 
 Similar Problems:  
-
 -   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
@@ -50,4 +49,3 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/bulb-switcher-ii
-

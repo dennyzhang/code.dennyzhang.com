@@ -1,5 +1,5 @@
-
 # Leetcode: Consecutive Numbers Sum     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Consecutive Numbers Sum
 ---
 
 Similar Problems:  
-
 -   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math), [#sqrt](https://code.dennyzhang.com/tag/sqrt)
 
@@ -66,17 +65,16 @@ Leave me comments, if you have better ways to solve.
     func consecutiveNumbersSum(N int) int {
         res := 0
         for i:=1; i*i<2*N; i++ {
-    	if i%2 == 1 {
-    	    if N%i == 0 {
-    		res += 1
-    	    }
-    	} else {
-    	    q := int(i/2)
-    	    if N%q == 0 && (N/q) %2==1 {
-    		res += 1
-    	    }
-    	}
+            if i%2 == 1 {
+                if N%i == 0 {
+                    res += 1
+                }
+            } else {
+                q := int(i/2)
+                if N%q == 0 && (N/q) %2==1 {
+                    res += 1
+                }
+            }
         }
         return res
     }
-

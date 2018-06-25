@@ -1,5 +1,5 @@
-
 # Leetcode: Trips and Users     :BLOG:Hard:
+
 
 ---
 
@@ -8,7 +8,6 @@ Trips and Users
 ---
 
 Similar Problems:  
-
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -79,4 +78,3 @@ Leave me comments, if you have better ways to solve.
     and Trips.Status != 'completed'
     group by Trips.Request_at) t2
     on t1.Day = t2. Day;
-

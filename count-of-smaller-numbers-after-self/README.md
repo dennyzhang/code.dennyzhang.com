@@ -1,5 +1,5 @@
-
 # Leetcode: Count of Smaller Numbers After Self     :BLOG:Basic:
+
 
 ---
 
@@ -8,7 +8,6 @@ Count of Smaller Numbers After Self
 ---
 
 Similar Problems:  
-
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -34,4 +33,3 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/count-of-smaller-numbers-after-self
-

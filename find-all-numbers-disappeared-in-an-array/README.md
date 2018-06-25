@@ -1,5 +1,5 @@
-
 # Leetcode: Find All Numbers Disappeared in an Array     :BLOG:Basic:
+
 
 ---
 
@@ -38,23 +38,22 @@ Leave me comments, if you have better ways to solve.
     ##  1,2,3,4,    7,8
     class Solution(object):
         def findDisappearedNumbers(self, nums):
-    	"""
-    	:type nums: List[int]
-    	:rtype: List[int]
-    	"""
-    	for i in range(0, len(nums)):
-    	    value = nums[i]
-    	    if (value == i+1):
-    		continue
+            """
+            :type nums: List[int]
+            :rtype: List[int]
+            """
+            for i in range(0, len(nums)):
+                value = nums[i]
+                if (value == i+1):
+                    continue
     
-    	    while (nums[value-1] != value):
-    		tmp = nums[value-1]
-    		nums[value-1] = value
-    		value = tmp
+                while (nums[value-1] != value):
+                    tmp = nums[value-1]
+                    nums[value-1] = value
+                    value = tmp
     
-    	ret = []
-    	for i in range(0, len(nums)):
-    	    if nums[i] != (i+1):
-    		ret.append(i+1)
-    	return ret
-
+            ret = []
+            for i in range(0, len(nums)):
+                if nums[i] != (i+1):
+                    ret.append(i+1)
+            return ret

@@ -1,5 +1,5 @@
-
 # Leetcode: Consecutive Available Seats     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Consecutive Available Seats
 ---
 
 Similar Problems:  
-
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -33,7 +32,6 @@ Your query should return the following result for the sample case above.
     | 5       |
 
 Note:  
-
 -   The seat\_id is an auto increment int, and free is bool ('1' means free, and '0' means occupied.).
 -   Consecutive available seats are more than 2(inclusive) seats consecutively available.
 
@@ -51,4 +49,3 @@ Leave me comments, if you have better ways to solve.
     on abs(t1.seat_id-t2.seat_id)=1
     where t1.free='1' and t2.free='1'
     order by t1.seat_id
-

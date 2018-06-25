@@ -1,5 +1,5 @@
-
 # Leetcode: Reshape the Matrix     :BLOG:Basic:
+
 
 ---
 
@@ -8,7 +8,6 @@ Reshape the Matrix
 ---
 
 Similar Problems:  
-
 -   Tag: [matrixtraverse](https://code.dennyzhang.com/tag/matrixtraverse)
 
 ---
@@ -45,7 +44,6 @@ If the 'reshape' operation with given parameters is possible and legal, output t
     There is no way to reshape a 2 * 2 matrix to a 2 * 4 matrix. So output the original matrix.
 
 Note:  
-
 1.  The height and width of the given matrix is in range [1, 100].
 2.  The given r and c are all positive.
 
@@ -66,24 +64,23 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*m), Space O(1)
     class Solution(object):
         def matrixReshape(self, nums, r, c):
-    	"""
-    	:type nums: List[List[int]]
-    	:type r: int
-    	:type c: int
-    	:rtype: List[List[int]]
-    	"""
-    	row_count = len(nums)
-    	if row_count == 0: return nums
-    	col_count = len(nums[0])
-    	if r*c != row_count*col_count: return nums
-    	res = [None]*r
-    	for i in xrange(r): res[i] = [None]*c
-    	index = 0
-    	for i in xrange(row_count):
-    	    for j in xrange(col_count):
-    		i2 = index/c
-    		j2 = index%c
-    		res[i2][j2] = nums[i][j]
-    		index += 1
-    	return res
-
+            """
+            :type nums: List[List[int]]
+            :type r: int
+            :type c: int
+            :rtype: List[List[int]]
+            """
+            row_count = len(nums)
+            if row_count == 0: return nums
+            col_count = len(nums[0])
+            if r*c != row_count*col_count: return nums
+            res = [None]*r
+            for i in xrange(r): res[i] = [None]*c
+            index = 0
+            for i in xrange(row_count):
+                for j in xrange(col_count):
+                    i2 = index/c
+                    j2 = index%c
+                    res[i2][j2] = nums[i][j]
+                    index += 1
+            return res

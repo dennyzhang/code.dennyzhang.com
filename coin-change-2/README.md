@@ -1,5 +1,5 @@
-
 # Leetcode: Coin Change 2     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Coin Change 2
 ---
 
 Similar Problems:  
-
 -   [Coin Change](https://code.dennyzhang.com/coin-change)
 -   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack)
 -   [Tag: #knapsack](https://code.dennyzhang.com/tag/knapsack)
@@ -61,26 +60,25 @@ Leave me comments, if you have better ways to solve.
         ##
         ## Complexity: Time O(k*n), Space O(n)
         def change(self, amount, coins):
-    	"""
-    	:type amount: int
-    	:type coins: List[int]
-    	:rtype: int
-    	"""
-    	if amount == 0: return 1
-    	if len(coins) == 0: return 0
-    	dp = [None]*(1+amount)
-    	for i in range(0, amount+1): dp[i] = collections.defaultdict(lambda: 0)
-    	for coin in coins: dp[0][coin] = 1
-    	coins.sort()
-    	for i in range(1, amount+1):
-    	    for coin in coins:
-    		if i<coin: break
-    		v = i-coin
-    		dp[i][coin] = dp[v][coin]
+            """
+            :type amount: int
+            :type coins: List[int]
+            :rtype: int
+            """
+            if amount == 0: return 1
+            if len(coins) == 0: return 0
+            dp = [None]*(1+amount)
+            for i in range(0, amount+1): dp[i] = collections.defaultdict(lambda: 0)
+            for coin in coins: dp[0][coin] = 1
+            coins.sort()
+            for i in range(1, amount+1):
+                for coin in coins:
+                    if i<coin: break
+                    v = i-coin
+                    dp[i][coin] = dp[v][coin]
     
-    	    dp[i][0] = 1
-    	    for j in range(1, len(coins)):
-    		dp[i][coins[j]] += dp[i][coins[j-1]]
+                dp[i][0] = 1
+                for j in range(1, len(coins)):
+                    dp[i][coins[j]] += dp[i][coins[j-1]]
     
-    	return dp[amount][coins[-1]]
-
+            return dp[amount][coins[-1]]

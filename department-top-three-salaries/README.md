@@ -1,5 +1,5 @@
-
 # Leetcode: Department Top Three Salaries     :BLOG:Hard:
+
 
 ---
 
@@ -8,7 +8,6 @@ Department Top Three Salaries
 ---
 
 Similar Problems:  
-
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -67,4 +66,3 @@ Leave me comments, if you have better ways to solve.
         on t3.DepartmentId = t4.Id
     where rank<=3
     order by t4.Name, t3.Salary desc
-

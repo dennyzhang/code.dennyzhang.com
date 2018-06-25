@@ -1,5 +1,5 @@
-
 # Leetcode: Investments in 2016     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Median Employee Salary
 ---
 
 Similar Problems:  
-
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -78,4 +77,3 @@ Leave me comments, if you have better ways to solve.
         from insurance
         group by TIV_2015
         having count(1)>1)
-

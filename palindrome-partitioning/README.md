@@ -1,5 +1,5 @@
-
 # Leetcode: Palindrome Partitioning     :BLOG:Basic:
+
 
 ---
 
@@ -8,7 +8,6 @@ Backtracking or DFS
 ---
 
 Similar Problems:  
-
 -   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
@@ -36,24 +35,23 @@ Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-partitioning
     ## Sample Data:
     class Solution(object):
         def partition(self, s):
-    	"""
-    	:type s: str
-    	:rtype: List[List[str]]
-    	"""
-    	res = []
-    	for i in range(0, len(s)-1):
-    	    if self.is_palindrome(s[0:i+1]):
-    		l = self.partition(s[i+1:])
-    		# print("s: %s, s1: %s, l: %s" % (s, s[i+1:], l))
-    		for element in l:
-    		    element.insert(0, s[0:i+1])
-    		    res.append(element)
-    	if self.is_palindrome(s):
-    	    res.append([s])
+            """
+            :type s: str
+            :rtype: List[List[str]]
+            """
+            res = []
+            for i in range(0, len(s)-1):
+                if self.is_palindrome(s[0:i+1]):
+                    l = self.partition(s[i+1:])
+                    # print("s: %s, s1: %s, l: %s" % (s, s[i+1:], l))
+                    for element in l:
+                        element.insert(0, s[0:i+1])
+                        res.append(element)
+            if self.is_palindrome(s):
+                res.append([s])
     
-    	# print("s:%s, res: %s" % (s, res))
-    	return res
+            # print("s:%s, res: %s" % (s, res))
+            return res
     
         def is_palindrome(self, s):
-    	return s == s[::-1]
-
+            return s == s[::-1]

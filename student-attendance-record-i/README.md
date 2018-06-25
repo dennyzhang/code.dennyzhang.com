@@ -1,5 +1,5 @@
-
 # Leetcode: Student Attendance Record I     :BLOG:Basic:
+
 
 ---
 
@@ -8,14 +8,12 @@ Check string pattern
 ---
 
 Similar Problems:  
-
 -   [Student Attendance Record II](https://code.dennyzhang.com/student-attendance-record-ii)
 -   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
 
 You are given a string representing an attendance record for a student. The record only contains the following three characters:  
-
 1.  'A' : Absent.
 2.  'L' : Late.
 3.  'P' : Present.
@@ -47,53 +45,52 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def checkRecord(self, s):
-    	"""
-    	:type s: str
-    	:rtype: bool
-    	"""
-    	a, l = 0, 0
-    	for ch in s:
-    	    if ch == 'A':
-    		a += 1
-    	    if ch == 'L':
-    		l += 1
-    	    else:
-    		l = 0
-    	    if a >= 2 or l >= 3:
-    		return False
-    	return True
+            """
+            :type s: str
+            :rtype: bool
+            """
+            a, l = 0, 0
+            for ch in s:
+                if ch == 'A':
+                    a += 1
+                if ch == 'L':
+                    l += 1
+                else:
+                    l = 0
+                if a >= 2 or l >= 3:
+                    return False
+            return True
     
         def checkRecord_v2(self, s):
-    	return s.count('A') <= 1 and s.count('LLL') == 0
+            return s.count('A') <= 1 and s.count('LLL') == 0
     
         def checkRecord_v1(self, s):
-    	"""
-    	:type s: str
-    	:rtype: bool
-    	"""
-    	absent = 0
-    	max_continuous_late, current_continuous_late = 0, 0
-    	previous_late = False
-    	for ch in s:
-    	    if ch == 'L':
-    		if previous_late:
-    		    current_continuous_late += 1
-    		else:
-    		    previous_late = True
-    		    current_continuous_late = 1                    
-    	    else:
-    		previous_late = False
-    		if current_continuous_late > max_continuous_late:
-    		    max_continuous_late = current_continuous_late
-    		current_continuous_late = 0
-    	    # tail of L
-    	    max_continuous_late = max(max_continuous_late, current_continuous_late)
-    	    if ch == 'A':
-    		absent += 1
-    	return absent <= 1 and max_continuous_late <= 2
+            """
+            :type s: str
+            :rtype: bool
+            """
+            absent = 0
+            max_continuous_late, current_continuous_late = 0, 0
+            previous_late = False
+            for ch in s:
+                if ch == 'L':
+                    if previous_late:
+                        current_continuous_late += 1
+                    else:
+                        previous_late = True
+                        current_continuous_late = 1                    
+                else:
+                    previous_late = False
+                    if current_continuous_late > max_continuous_late:
+                        max_continuous_late = current_continuous_late
+                    current_continuous_late = 0
+                # tail of L
+                max_continuous_late = max(max_continuous_late, current_continuous_late)
+                if ch == 'A':
+                    absent += 1
+            return absent <= 1 and max_continuous_late <= 2
     
     # s = Solution()
     # print s.checkRecord('PPALLP')
     # print s.checkRecord('PPALLL')
     # print s.checkRecord('PPALLP')
-

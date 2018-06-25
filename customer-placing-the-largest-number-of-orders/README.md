@@ -1,5 +1,5 @@
-
 # Leetcode: Customer Placing the Largest Number of Orders     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Customer Placing the Largest Number of Orders
 ---
 
 Similar Problems:  
-
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -83,4 +82,3 @@ Leave me comments, if you have better ways to solve.
     ##        from orders group by customer_number) as t2
     ##  group by t1.customer_number
     ##  having max(t1.count) = max(t2.count)
-

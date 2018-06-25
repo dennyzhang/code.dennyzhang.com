@@ -1,5 +1,5 @@
-
 # Leetcode: Ugly Number II     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Ugly Number II
 ---
 
 Similar Problems:  
-
 -   [Leetcode: Ugly Number](https://code.dennyzhang.com/ugly-number)
 -   Tag: [#mergesort](https://code.dennyzhang.com/tag/mergesort)
 
@@ -41,25 +40,24 @@ Leave me comments, if you have better ways to solve.
         s := map[int]bool{1: true, 2: true, 3:true, 5:true}
         l := []int{1, 2, 3, 5}
         for len(queue) != 0 {
-    	// visit current layer
-    	queue_count := len(queue)
-    	for i := 0; i < queue_count; i++ {
-    	    node := queue[0]
-    	    // TODO: better performance
-    	    queue = queue[1:]
-    	    // get the next level
-    	    for _, v := range []int{2, 3, 5} {
-    		_, ok := s[node*v]
-    		if ok == false {
-    		    s[node*v] = true
-    		    queue = append(queue, node*v)
-    		    l = append(l, node*v)
-    		}
-    	    }
-    	}
-    	sort.Ints(queue)
+            // visit current layer
+            queue_count := len(queue)
+            for i := 0; i < queue_count; i++ {
+                node := queue[0]
+                // TODO: better performance
+                queue = queue[1:]
+                // get the next level
+                for _, v := range []int{2, 3, 5} {
+                    _, ok := s[node*v]
+                    if ok == false {
+                        s[node*v] = true
+                        queue = append(queue, node*v)
+                        l = append(l, node*v)
+                    }
+                }
+            }
+            sort.Ints(queue)
         }
         sort.Ints(l)
         return l[n-1]
     }
-

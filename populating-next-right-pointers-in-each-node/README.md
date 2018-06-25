@@ -1,5 +1,5 @@
-
 # Leetcode: Populating Next Right Pointers in Each Node     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Populating Next Right Pointers in Each Node
 ---
 
 Similar Problems:  
-
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
@@ -27,7 +26,6 @@ Populate each next pointer to point to its next right node. If there is no next 
 Initially, all next pointers are set to NULL.  
 
 Note:  
-
 -   You may only use constant extra space.
 -   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
@@ -73,25 +71,24 @@ Leave me comments, if you have better ways to solve.
     
     class Solution:
         def connect(self, root):
-    	# @param root, a tree link node
-    	# @return nothing
-    	if root is None:
-    	    return None
-    	p = root
-    	first = p.left
-    	while p:
-    	    # process p
-    	    if p.left:
-    		p.left.next = p.right
-    	    if p.right and p.next:
-    		p.right.next = p.next.left
-    	    # move to next node
-    	    if p.next:
-    		p = p.next
-    	    else:
-    		p = first
-    		if p:
-    		    first = p.left
-    		else:
-    		    first = None
-
+            # @param root, a tree link node
+            # @return nothing
+            if root is None:
+                return None
+            p = root
+            first = p.left
+            while p:
+                # process p
+                if p.left:
+                    p.left.next = p.right
+                if p.right and p.next:
+                    p.right.next = p.next.left
+                # move to next node
+                if p.next:
+                    p = p.next
+                else:
+                    p = first
+                    if p:
+                        first = p.left
+                    else:
+                        first = None

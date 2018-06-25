@@ -1,5 +1,5 @@
-
 # Leetcode: Circular Array Loop     :BLOG:Amusing:
+
 
 ---
 
@@ -8,7 +8,6 @@ Circular Array Loop
 ---
 
 Similar Problems:  
-
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring),  [#game](https://code.dennyzhang.com/tag/game),  [#backtracking](https://code.dennyzhang.com/tag/backtracking)
 
@@ -48,34 +47,33 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def circularArrayLoop(self, nums):
-    	"""
-    	:type nums: List[int]
-    	:rtype: bool
-    	"""
-    	length = len(nums)
-    	if length == 0: return False
+            """
+            :type nums: List[int]
+            :rtype: bool
+            """
+            length = len(nums)
+            if length == 0: return False
     
-    	for i in range(length):
-    	    is_forward = 1 if nums[i]>0 else -1
-    	    nums[i] = nums[i]%length
-    	    if is_forward == -1 and nums[i] != 0:
-    		nums[i] -= length
+            for i in range(length):
+                is_forward = 1 if nums[i]>0 else -1
+                nums[i] = nums[i]%length
+                if is_forward == -1 and nums[i] != 0:
+                    nums[i] -= length
     
-    	for i in range(length):
-    	    # skip the checked dead ends
-    	    if nums[i] == 0: continue
-    	    is_forward = 1 if nums[i]>0 else -1
-    	    prev, k = nums[i], (i+nums[i])%length
+            for i in range(length):
+                # skip the checked dead ends
+                if nums[i] == 0: continue
+                is_forward = 1 if nums[i]>0 else -1
+                prev, k = nums[i], (i+nums[i])%length
     
-    	    while k!=i and nums[k]!=0 and nums[k]*is_forward>0:
-    		prev, k = nums[k], (k+nums[k])%length
-    	    if k==i: return True
-    	    # backtrack and mark nodes as dead end
-    	    prev = -prev
-    	    while True:
-    		nums[k] = 0
-    		prev, k = -nums[prev], (k+prev)%length
-    		if k==i: break
-    	    nums[i] = 0
-    	return False
-
+                while k!=i and nums[k]!=0 and nums[k]*is_forward>0:
+                    prev, k = nums[k], (k+nums[k])%length
+                if k==i: return True
+                # backtrack and mark nodes as dead end
+                prev = -prev
+                while True:
+                    nums[k] = 0
+                    prev, k = -nums[prev], (k+prev)%length
+                    if k==i: break
+                nums[i] = 0
+            return False

@@ -1,5 +1,5 @@
-
 # Leetcode: Combination Sum IV     :BLOG:Medium:
+
 
 ---
 
@@ -8,7 +8,6 @@ Combination Sum IV
 ---
 
 Similar Problems:  
-
 -   [Combination Sum III](https://code.dennyzhang.com/combination-sum-iii)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
 -   Tag: [#combination](https://code.dennyzhang.com/tag/combination), [#classic](https://code.dennyzhang.com/tag/classic),  [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
@@ -36,7 +35,6 @@ Example:
     Therefore the output is 7.
 
 Follow up:  
-
 -   What if negative numbers are allowed in the given array?
 -   How does it change the problem?
 -   What limitation we need to add to the question to allow negative numbers?
@@ -63,29 +61,28 @@ Leave me comments, if you have better ways to solve.
         res := 0
         m := map[int]int{}
         for _, num := range nums {
-    	if num > target { continue }
-    	m[num] = 1
+            if num > target { continue }
+            m[num] = 1
         }
         should_continue := true
         for should_continue {
-    	m2 := map[int]int{}
-    	for _, num := range nums {
-    	    for p := range m {
-    		if p+num<=target {
-    		    m2[p+num] += m[p]
-    		}
-    	    }
-    	}
-    	if len(m2) == 0 {
-    	    should_continue = false
-    	} else {
-    	    res += m[target]
-    	    m = map[int]int{}
-    	    for num := range m2 {
-    		m[num] = m2[num]
-    	    }
-    	}
+            m2 := map[int]int{}
+            for _, num := range nums {
+                for p := range m {
+                    if p+num<=target {
+                        m2[p+num] += m[p]
+                    }
+                }
+            }
+            if len(m2) == 0 {
+                should_continue = false
+            } else {
+                res += m[target]
+                m = map[int]int{}
+                for num := range m2 {
+                    m[num] = m2[num]
+                }
+            }
         }
         return res + m[target]
     }
-
