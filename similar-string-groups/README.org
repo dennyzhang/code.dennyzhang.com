@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, classic
+:type:     bfs, classic, redo
 :END:
 ---------------------------------------------------------------------
 Similar String Groups
@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 // Blog link: https://code.dennyzhang.com/similar-string-groups
 // Basic Ideas: BFS + hashmap
 //
-// Choose the firt one to explore
+// Choose the first one to explore
 //
 // Complexity: Time ?, Space ?
 func isSimilar(str1 string, str2 string) bool {
