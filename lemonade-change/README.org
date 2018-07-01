@@ -1,0 +1,103 @@
+* Leetcode: Lemonade Change                                      :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Lemonade Change
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+At a lemonade stand, each lemonade costs $5. 
+
+Customers are standing in a queue to buy from you, and order one at a time (in the order specified by bills).
+
+Each customer will only buy one lemonade and pay with either a $5, $10, or $20 bill.  You must provide the correct change to each customer, so that the net transaction is that the customer pays $5.
+
+Note that you don't have any change in hand at first.
+
+Return true if and only if you can provide every customer with correct change.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [5,5,5,10,20]
+Output: true
+Explanation: 
+From the first 3 customers, we collect three $5 bills in order.
+From the fourth customer, we collect a $10 bill and give back a $5.
+From the fifth customer, we give a $10 bill and a $5 bill.
+Since all customers got correct change, we output true.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [5,5,10]
+Output: true
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [10,10]
+Output: false
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: [5,5,10,10,20]
+Output: false
+Explanation: 
+From the first two customers in order, we collect two $5 bills.
+For the next two customers in order, we collect a $10 bill and give back a $5 bill.
+For the last customer, we can't give change of $15 back because we only have two $10 bills.
+Since not every customer received correct change, the answer is false.
+#+END_EXAMPLE
+ 
+Note:
+
+- 0 <= bills.length <= 10000
+- bills[i] will be either 5, 10, or 20.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lemonade-change][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/lemonade-change/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/lemonade-change
+// Basic Ideas:
+//   For $5, no need for change. 
+//   For $20, we can't use it for the following customer
+// Complexity: Time O(n), Space O(1)
+func lemonadeChange(bills []int) bool {
+    count_f, count_t := 0, 0
+    for _, bill := range bills {
+        if bill == 5 { 
+            count_f++
+        } else {
+            if bill == 10 {
+                if count_f == 0 { return false }
+                count_f, count_t = count_f-1, count_t+1
+            } else {
+                // bill == 20
+                if count_f == 0 { return false }
+                count_f--
+                if count_t != 0 {
+                    count_t--
+                } else {
+                    if count_f >= 2 {
+                        count_f-=2
+                    } else {
+                        return false
+                    }
+                }
+            }
+        }
+    }
+    return true
+}
+#+END_SRC
