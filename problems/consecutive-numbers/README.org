@@ -34,7 +34,7 @@ For example, given the above Logs table, 1 is the only number that appears conse
 +-----------------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/consecutive-numbers][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/consecutive-numbers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/consecutive-numbers/description/][leetcode.com]]
 

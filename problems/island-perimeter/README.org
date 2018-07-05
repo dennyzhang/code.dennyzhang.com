@@ -19,7 +19,7 @@ Example:
 Answer: 16
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/island-perimeter][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/island-perimeter][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/island-perimeter/description/][leetcode.com]]
 

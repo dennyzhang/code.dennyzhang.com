@@ -46,7 +46,7 @@ Note:
 - 1 <= T.length <= 200
 - S and T only contain lowercase letters and '#' characters.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/backspace-string-compare][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/backspace-string-compare][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/backspace-string-compare/description/][leetcode.com]]
 

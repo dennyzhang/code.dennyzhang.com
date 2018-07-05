@@ -44,7 +44,7 @@ Note:
 - An erasure may refer to a location with no brick - if it does, no bricks drop.
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bricks-falling-when-hit][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bricks-falling-when-hit][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/bricks-falling-when-hit/description/][leetcode.com]]
 

@@ -16,7 +16,7 @@ Given a roman numeral, convert it to an integer.
 
 Input is guaranteed to be within the range from 1 to 3999.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/roman-to-integer][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/roman-to-integer][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/roman-to-integer/description/][leetcode.com]]
 

@@ -25,7 +25,7 @@ Above is a 3 x 7 grid. How many possible unique paths are there?
 
 Note: m and n will be at most 100.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-paths][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-paths][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/unique-paths/description/][leetcode.com]]
 

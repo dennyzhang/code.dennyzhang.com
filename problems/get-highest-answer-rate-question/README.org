@@ -43,7 +43,7 @@ question 285 has answer rate 1/1, while question 369 has 0/1 answer rate, so out
 
 Note: The highest answer rate meaning is: answer number's ratio in show number in the same question.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/get-highest-answer-rate-question][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/get-highest-answer-rate-question][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/get-highest-answer-rate-question/description/][leetcode.com]]
 

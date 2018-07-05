@@ -32,7 +32,7 @@ Note:
 1. There will only be '(', ')', '-' and '0' ~ '9' in the input string.
 - An empty tree is represented by "" instead of "()".
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/construct-binary-tree-from-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/construct-binary-tree-from-string/description/][leetcode.com]]
 

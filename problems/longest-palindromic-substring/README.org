@@ -29,7 +29,7 @@ Input: "cbbd"
 Output: "bb"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindromic-substring][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-palindromic-substring][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-palindromic-substring/description/][leetcode.com]]
 

@@ -85,7 +85,7 @@ return its vertical order traversal as:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-vertical-order-traversal][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-vertical-order-traversal][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/][leetcode.com]]
 

@@ -26,7 +26,7 @@ Input: haystack = "aaaaa", needle = "bba"
 Output: -1
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-strstr][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/implement-strstr][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/implement-strstr/description/][leetcode.com]]
 

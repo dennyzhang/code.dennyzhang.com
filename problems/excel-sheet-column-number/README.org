@@ -21,7 +21,7 @@ For example:
     AB -> 28
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-number][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/excel-sheet-column-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/excel-sheet-column-number/description/][leetcode.com]]
 

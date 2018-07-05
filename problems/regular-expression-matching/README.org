@@ -30,7 +30,7 @@ isMatch("ab", ".*") -> true
 isMatch("aab", "c*a*b") -> true
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/regular-expression-matching][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/regular-expression-matching][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/regular-expression-matching/description/][leetcode.com]]
 

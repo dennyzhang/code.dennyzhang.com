@@ -29,7 +29,7 @@ solution.reset();
 solution.shuffle();
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shuffle-an-array][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shuffle-an-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/shuffle-an-array/description/][leetcode.com]]
 

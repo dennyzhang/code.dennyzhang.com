@@ -41,7 +41,7 @@ Explanation: Status can be: [off, on, off], [on, off, on], [off, off, off], [off
 
 Note: n and m both fit in range [0, 1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bulb-switcher-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bulb-switcher-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/bulb-switcher-ii/description/][leetcode.com]]
 

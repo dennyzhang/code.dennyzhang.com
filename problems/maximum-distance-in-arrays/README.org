@@ -30,7 +30,7 @@ Note:
 - The total number of the integers in all the m arrays will be in the range of [2, 10000].
 - The integers in the m arrays will be in the range of [-10000, 10000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-distance-in-arrays][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-distance-in-arrays][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/maximum-distance-in-arrays/description/][leetcode.com]]
 

@@ -40,7 +40,7 @@ Note:
 - The length of nums will be in the range [0, 10000].
 - Each element nums[i] will be an integer in the range [-1000, 1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-pivot-index][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-pivot-index][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-pivot-index/description/][leetcode.com]]
 

@@ -51,7 +51,7 @@ Note:
 - board is a length-3 array of strings, where each string board[i] has length 3.
 - Each board[i][j] is a character in the set {" ", "X", "O"}.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-tic-tac-toe-state][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-tic-tac-toe-state][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/valid-tic-tac-toe-state/description/][leetcode.com]]
 

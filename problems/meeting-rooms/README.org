@@ -18,7 +18,7 @@ For example,
 Given [[0, 30],[5, 10],[15, 20]],
 return false.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/meeting-rooms][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/meeting-rooms][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/meeting-rooms/description/][leetcode.com]]
 

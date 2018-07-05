@@ -31,7 +31,7 @@ Explanation：
 `buy` can match `y`, `discard` can match `a`, `rep` can match `r`.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-synthesis-problem][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-synthesis-problem][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://www.lintcode.com/problem/word-synthesis-problem/description][lintcode.com]]
 

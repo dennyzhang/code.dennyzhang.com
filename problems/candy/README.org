@@ -18,7 +18,7 @@ Each child must have at least one candy.
 Children with a higher rating get more candies than their neighbors.
 What is the minimum candies you must give?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/candy][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/candy][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/candy/description/][leetcode.com]]
 

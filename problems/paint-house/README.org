@@ -25,7 +25,7 @@ Find the minimum cost to paint all houses.
 Note:
 All costs are positive integers.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/paint-house][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/paint-house][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/paint-house/description/][leetcode.com]]
 

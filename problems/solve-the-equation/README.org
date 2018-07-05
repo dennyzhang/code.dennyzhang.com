@@ -52,7 +52,7 @@ Input: "x=x+2"
 Output: "No solution"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/solve-the-equation][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/solve-the-equation][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/solve-the-equation/description/][leetcode.com]]
 

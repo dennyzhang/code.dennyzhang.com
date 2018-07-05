@@ -17,7 +17,7 @@ For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.
 
 Note: The result may be very large, so you need to return a string instead of an integer.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-number][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/largest-number/description/][leetcode.com]]
 

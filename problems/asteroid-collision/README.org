@@ -57,7 +57,7 @@ Note:
 - The length of asteroids will be at most 10000.
 - Each asteroid will be a non-zero integer in the range [-1000, 1000]..
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/asteroid-collision][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/asteroid-collision][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/asteroid-collision/description/][leetcode.com]]
 

@@ -39,7 +39,7 @@ Output: false
 Explanation: The array cannot be partitioned into equal sum subsets.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-equal-subset-sum][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/partition-equal-subset-sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/partition-equal-subset-sum/description/][leetcode.com]]
 

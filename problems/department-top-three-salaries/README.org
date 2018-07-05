@@ -48,7 +48,7 @@ Write a SQL query to find employees who earn the top three salaries in each of t
 +------------+----------+--------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/department-top-three-salaries][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/department-top-three-salaries][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/department-top-three-salaries/description/][leetcode.com]]
 

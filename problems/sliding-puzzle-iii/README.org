@@ -41,7 +41,7 @@ Explanation:
 Just swap 8 with the space.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sliding-puzzle-iii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sliding-puzzle-iii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/sliding-puzzle-iii/][lintcode.com]]
 

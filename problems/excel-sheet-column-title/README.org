@@ -25,7 +25,7 @@ For example:
     28 -> AB
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/excel-sheet-column-title][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/excel-sheet-column-title][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/excel-sheet-column-title/description/][leetcode.com]]
 

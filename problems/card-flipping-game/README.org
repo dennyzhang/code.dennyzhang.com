@@ -37,7 +37,7 @@ Note:
 - 1 <= backs[i] <= 2000.
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/card-flipping-game][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/card-flipping-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/card-flipping-game/description/][leetcode.com]]
 

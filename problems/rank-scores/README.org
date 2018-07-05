@@ -38,7 +38,7 @@ For example, given the above Scores table, your query should generate the follow
 +-------+------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rank-scores][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rank-scores][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/rank-scores/description/][leetcode.com]]
 

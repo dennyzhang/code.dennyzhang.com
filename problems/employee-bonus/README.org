@@ -47,7 +47,7 @@ Example ouput:
 +-------+-------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employee-bonus][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/employee-bonus][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/employee-bonus/description/][leetcode.com]]
 

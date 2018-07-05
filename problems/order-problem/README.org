@@ -36,7 +36,7 @@ Explanation:
 Use [2,2,0] once, remaining [0,1,1].
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/order-problem][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/order-problem][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://www.lintcode.com/problem/order-problem/description][lintcode.com]]
 

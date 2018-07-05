@@ -35,7 +35,7 @@ Note:
 - S will be a string with length at most 12.
 - S will consist only of letters or digits.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/letter-case-permutation][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/letter-case-permutation][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/letter-case-permutation/description/][leetcode.com]]
 

@@ -15,7 +15,7 @@ A linked list is given such that each node contains an additional random pointer
 
 Return a deep copy of the list.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/copy-list-with-random-pointer][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/copy-list-with-random-pointer][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/copy-list-with-random-pointer/description/][leetcode.com]]
 

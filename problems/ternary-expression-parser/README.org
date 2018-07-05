@@ -56,7 +56,7 @@ Explanation: The conditional expressions group right-to-left. Using parenthesis,
  -> "F"                         -> "F"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ternary-expression-parser][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ternary-expression-parser][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/ternary-expression-parser/description/][leetcode.com]]
 

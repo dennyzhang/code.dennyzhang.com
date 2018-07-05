@@ -16,7 +16,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-points-on-a-line][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-points-on-a-line][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/max-points-on-a-line/description/][leetcode.com]]
 

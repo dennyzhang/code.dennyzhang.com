@@ -25,7 +25,7 @@ Return
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-partitioning][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindrome-partitioning][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/palindrome-partitioning/description/][leetcode.com]]
 

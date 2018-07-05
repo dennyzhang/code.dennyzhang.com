@@ -37,7 +37,7 @@ Return:
 [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with parentheses in above matrix).
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/pacific-atlantic-water-flow][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/pacific-atlantic-water-flow][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/pacific-atlantic-water-flow/description/][leetcode.com]]
 

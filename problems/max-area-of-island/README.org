@@ -30,7 +30,7 @@ Given the above grid, return 0.
 #+END_EXAMPLE
 Note: The length of each dimension in the given grid does not exceed 50.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-area-of-island][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-area-of-island][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/max-area-of-island/description/][leetcode.com]]
 

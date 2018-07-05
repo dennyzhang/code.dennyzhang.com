@@ -35,7 +35,7 @@ Notes:
 - 0 <= len(words[i]) <= 100.
 - S and all words in words consist only of lowercase letters
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/expressive-words][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/expressive-words][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/expressive-words/description/][leetcode.com]]
 

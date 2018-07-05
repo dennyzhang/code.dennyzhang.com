@@ -24,7 +24,7 @@ Note:
 1. The length of given words won't exceed 500.
 - Characters in given words can only be lower-case letters.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-operation-for-two-strings][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-operation-for-two-strings][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/delete-operation-for-two-strings/description/][leetcode.com]]
 

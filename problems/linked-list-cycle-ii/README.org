@@ -14,7 +14,7 @@ Note: Do not modify the linked list.
 Follow up:
 Can you solve it without using extra space?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-cycle-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/linked-list-cycle-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/linked-list-cycle-ii/description/][leetcode.com]]
 

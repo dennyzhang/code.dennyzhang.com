@@ -38,7 +38,7 @@ Explanation:
 Separate symbols and words.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/data-segmentation][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/data-segmentation][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://lintcode.com/en/problem/data-segmentation/][lintcode.com]]
 

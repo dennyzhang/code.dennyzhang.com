@@ -18,7 +18,7 @@ path = "/home/", => "/home"
 path = "/a/./b/../../c/", => "/c"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/simplify-path][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/simplify-path][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/simplify-path/description/][leetcode.com]]
 

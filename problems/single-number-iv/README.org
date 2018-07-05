@@ -36,7 +36,7 @@ Explanation:
 2 appears only once.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number-iv][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-number-iv][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/single-number-iv/][LintCode.com]]
 

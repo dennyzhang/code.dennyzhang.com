@@ -43,7 +43,7 @@ Return false. There is no way to jump to the last stone as
 the gap between the 5th and 6th stone is too large.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/frog-jump][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/frog-jump][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://code.dennyzhang.com/frog-jump][lintcode.com]]
 

@@ -38,7 +38,7 @@ Output: True
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/repeated-substring-pattern][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/repeated-substring-pattern/description/][leetcode.com]]
 

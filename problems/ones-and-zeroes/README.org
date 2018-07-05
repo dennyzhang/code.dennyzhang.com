@@ -37,7 +37,7 @@ Output: 2
 Explanation: You could form "10", but then you'd have nothing left. Better form "0" and "1".
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ones-and-zeroes][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ones-and-zeroes][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/ones-and-zeroes/description/][leetcode.com]]
 

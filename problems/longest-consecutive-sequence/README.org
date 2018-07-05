@@ -18,7 +18,7 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 
 Your algorithm should run in O(n) complexity.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-consecutive-sequence][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-consecutive-sequence][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-consecutive-sequence/description/][leetcode.com]]
 

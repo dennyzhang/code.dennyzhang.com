@@ -32,7 +32,7 @@ Note:
 1. cost will have a length in the range [2, 1000].
 - Every cost[i] will be an integer in the range [0, 999].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/min-cost-climbing-stairs][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/min-cost-climbing-stairs][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/min-cost-climbing-stairs/description/][leetcode.com]]
 

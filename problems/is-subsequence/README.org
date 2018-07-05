@@ -33,7 +33,7 @@ Return false.
 Follow up:
 If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/is-subsequence][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/is-subsequence][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/is-subsequence/description/][leetcode.com]]
 

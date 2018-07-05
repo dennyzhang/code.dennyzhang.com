@@ -44,7 +44,7 @@ Note:
 - There are at least one 0 in the given matrix.
 - The cells are adjacent in only four directions: up, down, left and right.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/01-matrix][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/problems/01-matrix][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/01-matrix/description/][leetcode.com]]
 

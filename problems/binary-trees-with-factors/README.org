@@ -37,7 +37,7 @@ Note:
 - 1 <= A.length <= 1000.
 - 2 <= A[i] <= 10 ^ 9.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-trees-with-factors][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-trees-with-factors][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/binary-trees-with-factors/description/][leetcode.com]]
 

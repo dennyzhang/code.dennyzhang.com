@@ -37,7 +37,7 @@ What if, update and sumRange function is not distributed evenly?
 Let's say, the ratio of update_count/sumRange_count is 10000 or 0.0001?
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-mutable][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-sum-query-mutable][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-mutable/description/][leetcode.com]]
 

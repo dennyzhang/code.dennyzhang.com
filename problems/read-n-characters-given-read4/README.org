@@ -19,7 +19,7 @@ By using the read4 API, implement the function int read(char *buf, int n) that r
 Note:
 The read function will only be called once for each test case.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/read-n-characters-given-read4][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/read-n-characters-given-read4][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/read-n-characters-given-read4/description/][leetcode.com]]
 

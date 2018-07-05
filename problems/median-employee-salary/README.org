@@ -51,7 +51,7 @@ Write a SQL query to find the median salary of each company. Bonus points if you
 +-----+------------+--------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-employee-salary][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/median-employee-salary][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/median-employee-salary/description/][leetcode.com]]
 

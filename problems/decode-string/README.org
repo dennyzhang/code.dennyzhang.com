@@ -24,7 +24,7 @@ s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/decode-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/decode-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/decode-string/description/][leetcode.com]]
 

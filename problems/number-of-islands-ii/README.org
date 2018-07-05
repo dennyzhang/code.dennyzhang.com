@@ -55,7 +55,7 @@ Challenge:
 
 Can you do it in time complexity O(k log mn), where k is the length of the positions?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-islands-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-islands-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-islands-ii/description/][leetcode.com]]
 

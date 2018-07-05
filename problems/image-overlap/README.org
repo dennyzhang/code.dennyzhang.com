@@ -37,7 +37,7 @@ Notes:
 - 0 <= A[i][j], B[i][j] <= 1
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/image-overlap][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/image-overlap][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/image-overlap/description/][leetcode.com]]
 

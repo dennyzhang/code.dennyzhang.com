@@ -33,7 +33,7 @@ Explanation:
 The distance from other points to 1 is 5, the distance from other points to 2 is 3, the distance from other points to 3 is 5, and the distance from other points to 4 is 5.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/fermat-point-of-graphs][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/fermat-point-of-graphs][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://www.lintcode.com/en/old/problem/fermat-point-of-graphs/][lintcode.com]]
 

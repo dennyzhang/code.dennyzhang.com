@@ -34,7 +34,7 @@ Note:
 1. One employee has at most one direct leader and may have several subordinates.
 - The maximum number of employees won't exceed 2000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employee-importance][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/employee-importance][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/employee-importance/description/][leetcode.com]]
 

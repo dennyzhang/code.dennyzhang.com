@@ -27,7 +27,7 @@ Input: 2.10000, 3
 Output: 9.26100
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/powx-n][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/powx-n][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/powx-n/description/][leetcode.com]]
 

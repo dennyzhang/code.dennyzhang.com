@@ -32,7 +32,7 @@ For example, after running your query, the above Person table should have the fo
 +----+------------------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-duplicate-emails][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-duplicate-emails][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/delete-duplicate-emails/description/][leetcode.com]]
 

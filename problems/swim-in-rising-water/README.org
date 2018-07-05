@@ -48,7 +48,7 @@ Note:
 1. 2 <= N <= 50.
 - grid[i][j] is a permutation of [0, ..., N*N - 1].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swim-in-rising-water][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/swim-in-rising-water][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/swim-in-rising-water/description/][leetcode.com]]
 

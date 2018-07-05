@@ -30,7 +30,7 @@ return 13.
 Note: 
 You may assume k is always valid, 1 ≤ k ≤ n2.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/kth-smallest-element-in-a-sorted-matrix][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/kth-smallest-element-in-a-sorted-matrix][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/][leetcode.com]]
 

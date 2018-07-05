@@ -21,7 +21,7 @@ Given nums = [1,2,5]
 return [5,2,1]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-array][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/reverse-array/][LintCode.com]]
 

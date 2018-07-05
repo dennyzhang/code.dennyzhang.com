@@ -35,7 +35,7 @@ Input: "fviefuro"
 Output: "45"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reconstruct-original-digits-from-english][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reconstruct-original-digits-from-english][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/reconstruct-original-digits-from-english/description/][leetcode.com]]
 

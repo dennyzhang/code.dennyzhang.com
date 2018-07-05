@@ -34,7 +34,7 @@ addNum(3)
 findMedian() -> 2
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-median-from-data-stream][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-median-from-data-stream][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-median-from-data-stream/description/][leetcode.com]]
 

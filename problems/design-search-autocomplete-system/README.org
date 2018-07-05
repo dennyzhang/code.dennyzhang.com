@@ -73,7 +73,7 @@ Note:
 - Please use double-quote instead of single-quote when you write test cases even for a character input.
 - Please remember to RESET your class variables declared in class AutocompleteSystem, as static/class variables are persisted across multiple test cases. Please see here for more details.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-search-autocomplete-system][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-search-autocomplete-system][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/design-search-autocomplete-system/description/][leetcode.com]]
 

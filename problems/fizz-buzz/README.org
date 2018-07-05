@@ -38,7 +38,7 @@ Return:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/fizz-buzz][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/fizz-buzz][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/fizz-buzz/description/][leetcode.com]]
 

@@ -64,7 +64,7 @@ Note:
 - Each grid[i][j] will be either 0 or 1.
 - Throughout the described process, there is always a contiguous viral region that will infect strictly more uncontaminated squares in the next round.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contain-virus][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/contain-virus][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/contain-virus/description/][leetcode.com]]
 

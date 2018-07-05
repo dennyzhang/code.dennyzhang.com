@@ -17,7 +17,7 @@ You may assume that duplicates do not exist in the tree.
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-inorder-and-postorder-traversal][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/construct-binary-tree-from-inorder-and-postorder-traversal][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/][leetcode.com]]
 

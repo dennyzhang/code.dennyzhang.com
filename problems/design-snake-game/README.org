@@ -61,7 +61,7 @@ snake.move("L"); -> Returns 2 (Snake eats the second food)
 snake.move("U"); -> Returns -1 (Game over because snake collides with border)
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-snake-game][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-snake-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/design-snake-game/description/][leetcode.com]]
 

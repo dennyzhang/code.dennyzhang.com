@@ -51,7 +51,7 @@ Another valid answer is [5,2,6,null,4,null,7].
     4   7
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-node-in-a-bst][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-node-in-a-bst][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/delete-node-in-a-bst/description/][leetcode.com]]
 

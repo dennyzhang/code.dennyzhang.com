@@ -41,7 +41,7 @@ Note:
 - 0 <= grid[i][j] <= 15
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/magic-squares-in-grid][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/magic-squares-in-grid][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/magic-squares-in-grid/description/][leetcode.com]]
 

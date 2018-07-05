@@ -55,7 +55,7 @@ Note:
 - If the order is invalid, return an empty string.
 - There may be multiple valid order of letters, return any one of them is fine.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/alien-dictionary][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/alien-dictionary][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/alien-dictionary/description/][leetcode.com]]
 

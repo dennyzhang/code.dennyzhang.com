@@ -24,7 +24,7 @@ Some examples:
 Note: Do not use the eval built-in library function.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/basic-calculator][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/basic-calculator][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/basic-calculator/description/][leetcode.com]]
 

@@ -40,7 +40,7 @@ Note:
 - arr will have length in range [1, 10].
 - arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-chunks-to-make-sorted][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-chunks-to-make-sorted][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/max-chunks-to-make-sorted/description/][leetcode.com]]
 

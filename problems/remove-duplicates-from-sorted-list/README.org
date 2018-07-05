@@ -15,7 +15,7 @@ Given 1->1->2->3->3, return 1->2->3.
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-duplicates-from-sorted-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/][leetcode.com]]
 

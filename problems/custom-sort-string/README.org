@@ -33,7 +33,7 @@ Note:
 - T has length at most 200.
 - S and T consist of lowercase letters only.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/custom-sort-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/custom-sort-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/custom-sort-string/description/][leetcode.com]]
 

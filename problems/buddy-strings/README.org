@@ -48,7 +48,7 @@ Note:
 - 0 <= B.length <= 20000
 - A and B consist only of lowercase letters.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/buddy-strings][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/buddy-strings][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/buddy-strings/description/][leetcode.com]]
 

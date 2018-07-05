@@ -27,7 +27,7 @@ solution.pick(3);
 solution.pick(1);
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/random-pick-index][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/random-pick-index][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/random-pick-index/description/][leetcode.com]]
 

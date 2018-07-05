@@ -62,7 +62,7 @@ Note:
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-smallest-letter-greater-than-target][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-smallest-letter-greater-than-target][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/][leetcode.com]]
 

@@ -31,7 +31,7 @@ Explanation:
 [-1,2,0,5,1,10] meets the requirements.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rearrange][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rearrange][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/rearrange/][lintcode.com]]
 

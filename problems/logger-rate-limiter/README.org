@@ -41,7 +41,7 @@ logger.shouldPrintMessage(10,"foo"); returns false;
 logger.shouldPrintMessage(11,"foo"); returns true;
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/logger-rate-limiter][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/logger-rate-limiter][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/logger-rate-limiter/description/][leetcode.com]]
 

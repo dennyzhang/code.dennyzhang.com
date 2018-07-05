@@ -20,7 +20,7 @@ dict = ["leet", "code"].
 Return true because "leetcode" can be segmented as "leet code".
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-break][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-break][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/word-break/description/][leetcode.com]]
 

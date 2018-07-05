@@ -46,7 +46,7 @@ Notes:
 - S contains only uppercase, lowercase and spaces. Exactly one space between each word.
 - 1 <= S.length <= 100.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/goat-latin][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/goat-latin][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/goat-latin/description/][leetcode.com]]
 

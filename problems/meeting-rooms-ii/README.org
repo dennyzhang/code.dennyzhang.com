@@ -17,7 +17,7 @@ For example,
 Given [[0, 30],[5, 10],[15, 20]],
 return 2.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/meeting-rooms-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/meeting-rooms-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/meeting-rooms-ii/description/][leetcode.com]]
 

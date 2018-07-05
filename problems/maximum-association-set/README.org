@@ -30,7 +30,7 @@ Explanation:
 The current set are [a, b, c] and [d, e, g, f], then the largest set is [d, e, g, f]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-association-set][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-association-set][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/maximum-association-set/][LintCode.com]]
 

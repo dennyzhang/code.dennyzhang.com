@@ -49,7 +49,7 @@ Note:
 1. According to the definition of tree on Wikipedia: "a tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree."
 -  The height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-height-trees][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-height-trees][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/minimum-height-trees/description/][leetcode.com]]
 

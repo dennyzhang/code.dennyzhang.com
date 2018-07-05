@@ -36,7 +36,7 @@ Note:
 - The sum of elements in the given array will not exceed 1000.
 - Your output answer is guaranteed to be fitted in a 32-bit integer.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/target-sum][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/target-sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/target-sum/description/][leetcode.com]]
 

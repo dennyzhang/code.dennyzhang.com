@@ -40,7 +40,7 @@ Explanation:
 The binary representation of 10 is: 1010.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-number-with-alternating-bits][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-number-with-alternating-bits][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/binary-number-with-alternating-bits/description/][leetcode.com]]
 

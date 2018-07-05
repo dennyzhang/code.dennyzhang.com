@@ -45,7 +45,7 @@ Note:
 1. S is a balanced parentheses string, containing only ( and ).
 - 2 <= S.length <= 50
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/score-of-parentheses][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/score-of-parentheses][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/score-of-parentheses/description/][leetcode.com]]
 

@@ -33,7 +33,7 @@ Notes:
 - 1 <= N <= 1000. 
 - 0 <= nums[i] <= 2^16.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/chalkboard-xor-game][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/chalkboard-xor-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/chalkboard-xor-game/description/][leetcode.com]]
 

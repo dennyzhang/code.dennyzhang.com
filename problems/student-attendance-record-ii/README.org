@@ -34,7 +34,7 @@ Only "AA" won't be regarded as rewardable owing to more than one absent times.
 
 Note: The value of n won't exceed 100,000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/student-attendance-record-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-ii/description/][leetcode.com]]
 

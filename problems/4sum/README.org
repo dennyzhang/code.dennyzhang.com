@@ -27,7 +27,7 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4sum][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/4sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/4sum/description/][leetcode.com]]
 

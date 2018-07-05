@@ -30,7 +30,7 @@ There exist two distinct solutions to the 4-queens puzzle:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-queens][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/n-queens][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/n-queens/description/][leetcode.com]]
 

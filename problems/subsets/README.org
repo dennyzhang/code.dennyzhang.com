@@ -31,7 +31,7 @@ If nums = [1,2,3], a solution is:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/subsets][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/subsets/description/][leetcode.com]]
 

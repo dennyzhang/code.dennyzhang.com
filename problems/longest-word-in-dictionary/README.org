@@ -36,7 +36,7 @@ Note:
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-word-in-dictionary][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-word-in-dictionary][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-word-in-dictionary/description/][leetcode.com]]
 

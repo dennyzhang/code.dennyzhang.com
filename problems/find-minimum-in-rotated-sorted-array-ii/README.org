@@ -19,7 +19,7 @@ Find the minimum element.
 
 The array may contain duplicates.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-minimum-in-rotated-sorted-array-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-minimum-in-rotated-sorted-array-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/][leetcode.com]]
 

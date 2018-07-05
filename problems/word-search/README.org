@@ -28,7 +28,7 @@ word = "SEE", -> returns true,
 word = "ABCB", -> returns false.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-search][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-search][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/word-search/description/][leetcode.com]]
 

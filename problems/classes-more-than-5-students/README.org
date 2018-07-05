@@ -43,7 +43,7 @@ Should output:
 Note:
 The students should not be counted duplicate in each course.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/classes-more-than-5-students][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/classes-more-than-5-students][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/classes-more-than-5-students/description/][leetcode.com]]
 

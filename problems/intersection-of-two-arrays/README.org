@@ -21,7 +21,7 @@ Note:
 - Each element in the result must be unique.
 - The result can be in any order.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/intersection-of-two-arrays][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/intersection-of-two-arrays][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/intersection-of-two-arrays/description/][leetcode.com]]
 

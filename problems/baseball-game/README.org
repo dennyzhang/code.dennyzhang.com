@@ -52,7 +52,7 @@ Note:
 1. The size of the input list will be between 1 and 1000.
 - Every integer represented in the list will be between -30000 and 30000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/baseball-game][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/baseball-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/baseball-game/description/][leetcode.com]]
 

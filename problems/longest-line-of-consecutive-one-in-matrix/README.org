@@ -24,7 +24,7 @@ Output: 3
 
 Hint: The number of elements in the given matrix will not exceed 10,000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-line-of-consecutive-one-in-matrix][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-line-of-consecutive-one-in-matrix][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/description/][leetcode.com]]
 

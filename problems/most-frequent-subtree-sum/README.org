@@ -33,7 +33,7 @@ return [2], since 2 happens twice, however -5 only occur once.
 #+END_EXAMPLE
 Note: You may assume the sum of values in any subtree is in the range of 32-bit signed integer.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/most-frequent-subtree-sum][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/most-frequent-subtree-sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/most-frequent-subtree-sum/description/][leetcode.com]]
 

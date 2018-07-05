@@ -36,7 +36,7 @@ For the example above, the output should be:
 +---------+-----------+--------------+-----------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/not-boring-movies][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/not-boring-movies][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/not-boring-movies/description/][leetcode.com]]
 

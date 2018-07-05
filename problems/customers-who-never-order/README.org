@@ -44,7 +44,7 @@ Using the above tables as example, return the following:
 +-----------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/customers-who-never-order][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/customers-who-never-order][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/customers-who-never-order/description/][leetcode.com]]
 

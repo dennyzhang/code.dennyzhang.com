@@ -34,7 +34,7 @@ You may assume k is always valid, ie: 1 <= k <= input array's size for non-empty
 Follow up:
 Could you solve it in linear time?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sliding-window-maximum][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sliding-window-maximum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/sliding-window-maximum/description/][leetcode.com]]
 

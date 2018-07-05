@@ -31,7 +31,7 @@ After running your query, the above salary table should have the following rows:
 | 4  | D    | m   | 500    |
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swap-salary][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/swap-salary][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/swap-salary/description/][leetcode.com]]
 

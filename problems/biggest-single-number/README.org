@@ -37,7 +37,7 @@ For the sample data above, your query should return the following result:
 Note:
 If there is no such number, just output null.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/biggest-single-number][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/biggest-single-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/biggest-single-number/description/][leetcode.com]]
 

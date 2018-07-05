@@ -32,7 +32,7 @@ Note:
 - 1 <= A[0].length <= 20
 - A[i][j] is 0 or 1.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/score-after-flipping-matrix][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/score-after-flipping-matrix][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/score-after-flipping-matrix/description/][leetcode.com]]
 

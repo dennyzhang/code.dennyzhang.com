@@ -50,7 +50,7 @@ Write a sql to find the name of the winning candidate, the above example will re
 Notes:
 You may assume there is no tie, in other words there will be at most one winning candidate.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/winning-candidate][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/winning-candidate][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/winning-candidate/description/][leetcode.com]]
 

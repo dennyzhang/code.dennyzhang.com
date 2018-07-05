@@ -31,7 +31,7 @@ Explanation:
 The final result of inputA is "bc", and the final result of inputB is "ab", so return "NO".
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/input-stream][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/input-stream][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/input-stream/][LintCode.com]]
 

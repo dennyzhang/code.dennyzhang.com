@@ -35,7 +35,7 @@ Note:
 1. The length of the given array is in range [2, 10,000], and will be even.
 - The number in given array is in range [-100,000, 100,000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/distribute-candies][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/distribute-candies][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/distribute-candies/description/][leetcode.com]]
 

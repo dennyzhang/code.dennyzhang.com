@@ -20,7 +20,7 @@ Given n = 13,
 Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-digit-one][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-digit-one][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-digit-one/description/][leetcode.com]]
 

@@ -38,7 +38,7 @@ Given s = "apple", abbr = "a2e":
 Return false.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-word-abbreviation][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-word-abbreviation][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/valid-word-abbreviation/description/][leetcode.com]]
 

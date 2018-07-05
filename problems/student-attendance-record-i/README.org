@@ -31,7 +31,7 @@ Input: "PPALLL"
 Output: False
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-i][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/student-attendance-record-i][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/student-attendance-record-i/description/][leetcode.com]]
 

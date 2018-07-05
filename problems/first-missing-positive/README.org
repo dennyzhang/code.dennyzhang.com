@@ -19,7 +19,7 @@ Your algorithm should run in O(n) time and uses constant space.
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/first-missing-positive][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/first-missing-positive/description/][leetcode.com]]
 

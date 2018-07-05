@@ -27,7 +27,7 @@ return its zigzag level order traversal as:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-zigzag-level-order-traversal][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-zigzag-level-order-traversal][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/][leetcode.com]]
 

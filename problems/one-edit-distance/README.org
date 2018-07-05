@@ -13,7 +13,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 Given two strings S and T, determine if they are both one edit distance apart.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/one-edit-distance][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/one-edit-distance][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/one-edit-distance/description/][leetcode.com]]
 

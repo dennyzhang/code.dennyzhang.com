@@ -32,7 +32,7 @@ Note:
 - 1 <= words[i].length <= 7.
 - Each word has only lowercase letters.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/short-encoding-of-words][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/short-encoding-of-words][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/short-encoding-of-words/description/][leetcode.com]]
 

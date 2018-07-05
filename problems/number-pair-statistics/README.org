@@ -31,7 +31,7 @@ Explanation:
 Only when p [2] and p [3] are combined, their sum of x and y can be divided by two.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-pair-statistics][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-pair-statistics][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/number-pair-statistics/][lintcode.com]]
 

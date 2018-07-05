@@ -36,7 +36,7 @@ Given the Employee table, write a SQL query that finds out managers with at leas
 Note:
 No one would report to himself.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/managers-with-at-least-5-direct-reports][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/managers-with-at-least-5-direct-reports][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/][leetcode.com]]
 

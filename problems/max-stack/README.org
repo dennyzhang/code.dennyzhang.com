@@ -40,7 +40,7 @@ Note:
 - Number of operations won't exceed 10000.
 - The last four operations won't be called when stack is empty.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-stack][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-stack][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/max-stack/description/][leetcode.com]]
 

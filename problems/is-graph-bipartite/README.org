@@ -50,7 +50,7 @@ Note:
 - graph[i] will contain integers in range [0, graph.length - 1].
 - graph[i] will not contain i or duplicate values.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/is-graph-bipartite][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/is-graph-bipartite][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/is-graph-bipartite/description/][leetcode.com]]
 

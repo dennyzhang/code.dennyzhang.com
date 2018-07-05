@@ -28,7 +28,7 @@ For the sample data above, your query should return the follow result:
 | 10 | 20 | 15 | Yes      |
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/triangle-judgement][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/triangle-judgement][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/triangle-judgement/description/][leetcode.com]]
 

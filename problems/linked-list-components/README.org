@@ -44,7 +44,7 @@ Note:
 - 1 <= G.length <= 10000.
 - G is a subset of all values in the linked list.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-components][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/linked-list-components][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/linked-list-components/description/][leetcode.com]]
 

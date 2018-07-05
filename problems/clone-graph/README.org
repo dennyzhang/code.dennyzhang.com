@@ -33,7 +33,7 @@ The graph has a total of three nodes, and therefore contains three parts as sepa
          \_/
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/clone-graph][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/clone-graph][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/clone-graph/description/][leetcode.com]]
 

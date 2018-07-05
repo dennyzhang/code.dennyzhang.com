@@ -34,7 +34,7 @@ Output:
 One possible longest palindromic subsequence is "bb".
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindromic-subsequence][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-palindromic-subsequence][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-palindromic-subsequence/description/][leetcode.com]]
 

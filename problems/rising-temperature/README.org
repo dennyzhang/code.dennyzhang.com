@@ -33,7 +33,7 @@ For example, return the following Ids for the above Weather table:
 +----+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rising-temperature][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rising-temperature][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/rising-temperature/description/][leetcode.com]]
 

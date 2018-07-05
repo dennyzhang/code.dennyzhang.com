@@ -55,7 +55,7 @@ bank: ["AAAACCCC", "AAACCCCC", "AACCCCCC"]
 return: 3
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-genetic-mutation][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-genetic-mutation][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/minimum-genetic-mutation/description/][leetcode.com]]
 

@@ -43,7 +43,7 @@ Explanation:
 Returns [4, 5, 3], [2], [1].
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-leaves-of-binary-tree][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-leaves-of-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-leaves-of-binary-tree/description/][leetcode.com]]
 

@@ -45,7 +45,7 @@ Input: amount = 10, coins = [10]
 Output: 1
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/coin-change-2][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/coin-change-2][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/coin-change-2/description/][leetcode.com]]
 

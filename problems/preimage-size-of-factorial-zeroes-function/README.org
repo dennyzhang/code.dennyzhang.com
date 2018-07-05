@@ -33,7 +33,7 @@ Note:
 
 - K will be an integer in the range [0, 10^9].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/preimage-size-of-factorial-zeroes-function][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/preimage-size-of-factorial-zeroes-function][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/description/][leetcode.com]]
 

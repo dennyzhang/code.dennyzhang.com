@@ -22,7 +22,7 @@ GetMinKey() - Returns one of the keys with minimal value. If no element exists, 
 
 Challenge: Perform all these in O(1) time complexity.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/all-oone-data-structure][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/all-oone-data-structure][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/all-oone-data-structure/description/][leetcode.com]]
 

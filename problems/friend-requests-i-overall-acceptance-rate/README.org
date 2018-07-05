@@ -53,7 +53,7 @@ Follow-up:
 - Can you write a query to return the accept rate but for every month?
 - How about the cumulative accept rate for every day?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/friend-requests-i-overall-acceptance-rate][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friend-requests-i-overall-acceptance-rate][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/description/][leetcode.com]]
 

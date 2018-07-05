@@ -12,7 +12,7 @@ Given an array of integers, every element appears twice except for one. Find tha
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-number][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/single-number/description/][leetcode.com]]
 

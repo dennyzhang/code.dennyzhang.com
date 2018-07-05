@@ -43,7 +43,7 @@ Notes:
 - Each address will have either 1 or 2 "." characters.
 - The input count in any count-paired domain will not exceed 10000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subdomain-visit-count][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/subdomain-visit-count][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/subdomain-visit-count/description/][leetcode.com]]
 

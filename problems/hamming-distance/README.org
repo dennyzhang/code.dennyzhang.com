@@ -30,7 +30,7 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/hamming-distance][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/hamming-distance][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/hamming-distance/description/][leetcode.com]]
 

@@ -32,7 +32,7 @@ Note:
 1. The given area won't exceed 10,000,000 and is a positive integer
 - The web page's width and length you designed must be positive integers.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-the-rectangle][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/construct-the-rectangle][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/construct-the-rectangle/description/][leetcode.com]]
 

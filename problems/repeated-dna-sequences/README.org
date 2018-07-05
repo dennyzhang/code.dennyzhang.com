@@ -22,7 +22,7 @@ Return:
 ["AAAAACCCCC", "CCCCCAAAAA"].
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-dna-sequences][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/repeated-dna-sequences][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/repeated-dna-sequences/description/][leetcode.com]]
 

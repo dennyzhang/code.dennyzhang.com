@@ -29,7 +29,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-of-two-sorted-arrays][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/median-of-two-sorted-arrays][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/median-of-two-sorted-arrays/description/][leetcode.com]]
 

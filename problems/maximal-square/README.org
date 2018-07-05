@@ -23,7 +23,7 @@ For example, given the following matrix:
 #+END_EXAMPLE
 Return 4.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximal-square][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximal-square][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/maximal-square/description/][leetcode.com]]
 

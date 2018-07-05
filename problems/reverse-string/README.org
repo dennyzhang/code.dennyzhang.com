@@ -12,7 +12,7 @@ Write a function that takes a string as input and returns the string reversed.
 Example:
 Given s = "hello", return "olleh".
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/reverse-string/description/][leetcode.com]]
 

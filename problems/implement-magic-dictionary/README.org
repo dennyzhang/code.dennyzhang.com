@@ -32,7 +32,7 @@ Note:
 - For contest purpose, the test data is rather small by now. You could think about highly efficient algorithm after the contest.
 - Please remember to RESET your class variables declared in class MagicDictionary, as static/class variables are persisted across multiple test cases. Please see here for more details.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-magic-dictionary][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/implement-magic-dictionary][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/implement-magic-dictionary/description/][leetcode.com]]
 

@@ -48,7 +48,7 @@ The average salary for department '1' is 9000, which is the salary of employee_i
 The average salary of department '2' is (6000 + 10000)/2 = 8000, which is the average of employee_id '2' and '3'. So the comparison result is 'lower' since 8000 < 8333.33.
 With he same formula for the average salary comparison in February, the result is 'same' since both the department '1' and '2' have the same average salary with the company, which is 7000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/average-salary-departments-vs-company][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/average-salary-departments-vs-company][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/average-salary-departments-vs-company/description/][leetcode.com]]
 

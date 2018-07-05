@@ -35,7 +35,7 @@ Note:
 - 0 <= A[i] <= 10^6
 - A is a mountain, as defined above.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/peak-index-in-a-mountain-array][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/peak-index-in-a-mountain-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/peak-index-in-a-mountain-array/description/][leetcode.com]]
 

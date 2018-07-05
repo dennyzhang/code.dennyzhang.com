@@ -20,7 +20,7 @@ For example, given n = 3, a solution set is:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/generate-parentheses][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/generate-parentheses][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/generate-parentheses/description/][leetcode.com]]
 

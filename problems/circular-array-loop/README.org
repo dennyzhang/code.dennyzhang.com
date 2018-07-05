@@ -21,7 +21,7 @@ Note: The given array is guaranteed to contain no element "0".
 
 Can you do it in O(n) time complexity and O(1) space complexity?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/circular-array-loop][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/circular-array-loop][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/circular-array-loop/description/][leetcode.com]]
 

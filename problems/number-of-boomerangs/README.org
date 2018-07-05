@@ -26,7 +26,7 @@ Explanation:
 The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-boomerangs][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-boomerangs][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-boomerangs/description/][leetcode.com]]
 

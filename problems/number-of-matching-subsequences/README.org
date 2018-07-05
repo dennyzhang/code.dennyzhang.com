@@ -28,7 +28,7 @@ Note:
 - The length of words will be in the range of [1, 5000].
 - The length of words[i] will be in the range of [1, 50].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-matching-subsequences][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-matching-subsequences][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-matching-subsequences/description/][leetcode.com]]
 

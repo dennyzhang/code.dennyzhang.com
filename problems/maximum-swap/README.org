@@ -31,7 +31,7 @@ Explanation: No swap.
 Note:
 The given number is in the range [0, 108]
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-swap][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-swap][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/maximum-swap/description/][leetcode.com]]
 

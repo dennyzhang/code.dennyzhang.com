@@ -39,7 +39,7 @@ Note:
 - There are no hyphens or hyphenated words.
 - Words only consist of letters, never apostrophes or other punctuation symbols.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/most-common-word][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/most-common-word][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/most-common-word/description/][leetcode.com]]
 

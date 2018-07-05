@@ -29,7 +29,7 @@ Some examples:
 #+END_EXAMPLE
  
 Note: Do not use the eval built-in library function.
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/basic-calculator-iii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/basic-calculator-iii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/basic-calculator-iii/description/][leetcode.com]]
 

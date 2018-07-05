@@ -53,7 +53,7 @@ So the result is customer_number '3'.
 
 Follow up: What if more than one customer have the largest number of orders, can you find all the customer_number in this case?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/customer-placing-the-largest-number-of-orders][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/customer-placing-the-largest-number-of-orders][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/][leetcode.com]]
 

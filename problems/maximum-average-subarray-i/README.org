@@ -24,7 +24,7 @@ Note:
 1. 1 <= k <= n <= 30,000.
 - Elements of the given array will be in the range [-10,000, 10,000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-average-subarray-i][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-average-subarray-i][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/maximum-average-subarray-i/description/][leetcode.com]]
 

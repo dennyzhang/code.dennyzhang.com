@@ -11,7 +11,7 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-k-sorted-lists][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/merge-k-sorted-lists][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/merge-k-sorted-lists/description/][leetcode.com]]
 

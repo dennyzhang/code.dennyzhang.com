@@ -51,7 +51,7 @@ Note:
 - S[0] = "(", S[S.length - 1] = ")", and the other elements in S are digits.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ambiguous-coordinates][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ambiguous-coordinates][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/ambiguous-coordinates/description/][leetcode.com]]
 

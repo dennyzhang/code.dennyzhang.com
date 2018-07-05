@@ -33,7 +33,7 @@ Explanation:
 According to the new dictionary order, output the sorted result {zba,za,bca,ade,czb}.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-sorting][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-sorting][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/word-sorting/][LintCode.com]]
 

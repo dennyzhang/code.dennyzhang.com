@@ -37,7 +37,7 @@ Output: "0"
 Explanation: Remove all the digits from the number and it is left with nothing which is 0.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-k-digits][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-k-digits][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/remove-k-digits/description/][leetcode.com]]
 

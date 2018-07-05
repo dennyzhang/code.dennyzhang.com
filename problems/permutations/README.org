@@ -25,7 +25,7 @@ For example,
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutations][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/permutations][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/permutations/description/][leetcode.com]]
 

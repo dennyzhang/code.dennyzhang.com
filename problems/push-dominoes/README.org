@@ -47,7 +47,7 @@ Note:
 - 0 <= N <= 10^5
 - String dominoes contains only 'L', 'R' and '.'
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/push-dominoes][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/push-dominoes][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/push-dominoes/description/][leetcode.com]]
 

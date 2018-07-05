@@ -55,7 +55,7 @@ Write a SQL query to find the cancellation rate of requests made by unbanned cli
 +------------+-------------------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trips-and-users][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/trips-and-users][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/trips-and-users/description/][leetcode.com]]
 

@@ -30,7 +30,7 @@ Explanation:
 3 is covered 3 times.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/digital-coverage][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/digital-coverage][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://www.lintcode.com/problem/digital-coverage/description][lintcode.com]]
 

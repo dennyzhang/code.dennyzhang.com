@@ -51,7 +51,7 @@ Note:
 - widths is an array of length 26.
 - widths[i] will be in the range of [2, 10].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-lines-to-write-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-lines-to-write-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-lines-to-write-string/description/][leetcode.com]]
 

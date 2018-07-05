@@ -3,7 +3,7 @@ function my_test() {
    for f in $(find . -name README.org); do
         dirname=$(basename $(dirname $f))
         echo "Update for $f"
-        sed -ie "s/designquestion/oodesign/g" $f
+        sed -ie "s/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master\/problems/g" $f
         rm -rf $dirname/README.orge
         #exit
    done
@@ -11,6 +11,7 @@ function my_test() {
 
 function refresh_link() {
     echo "refresh link"
+    cd problems
     for f in $(ls -1t */README.org); do
         dirname=$(basename $(dirname $f))
         if ! grep "Blog link: https:\/\/code.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
@@ -37,11 +38,12 @@ function refresh_link() {
 
 function refresh_md() {
     echo "Use emacs to refresh README.md"
+    cd problems
     for f in $(ls -1t */README.org); do
         echo "Update $f"
         dirname=$(basename $(dirname $f))
         cd $dirname
-        /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_9 --batch -l ../update_md.el
+        /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_9 --batch -l ../../update_md.el
         cd ..
     done
 }

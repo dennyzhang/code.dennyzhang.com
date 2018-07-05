@@ -36,7 +36,7 @@ Note:
 Follow up:
 Try to solve it in O(n log k) time and O(n) extra space.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/top-k-frequent-words][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/top-k-frequent-words][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/top-k-frequent-words/description/][leetcode.com]]
 

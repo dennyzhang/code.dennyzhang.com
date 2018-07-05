@@ -54,7 +54,7 @@ Note:
 - In all test cases, all words were chosen randomly from the 1000 most common US English words, and the target was chosen as a concatenation of two random words.
 - The time limit may be more challenging than usual. It is expected that a 50 sticker test case can be solved within 35ms on average.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/stickers-to-spell-word][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/stickers-to-spell-word][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/stickers-to-spell-word/description/][leetcode.com]]
 

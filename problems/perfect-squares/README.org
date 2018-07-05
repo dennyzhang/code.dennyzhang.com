@@ -16,7 +16,7 @@ Given a positive integer n, find the least number of perfect square numbers (for
 
 For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/perfect-squares][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/perfect-squares][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/perfect-squares/description/][leetcode.com]]
 

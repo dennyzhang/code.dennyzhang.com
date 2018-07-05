@@ -56,7 +56,7 @@ rotate the input matrix in-place such that it becomes:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-image][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rotate-image][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/rotate-image/description/][leetcode.com]]
 

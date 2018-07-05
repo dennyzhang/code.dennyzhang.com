@@ -45,7 +45,7 @@ For the sample data above, the output is:
 Note:
 Each day only have one row record, and the dates are increasing with id increasing.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/human-traffic-of-stadium][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/human-traffic-of-stadium][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/human-traffic-of-stadium/description/][leetcode.com]]
 

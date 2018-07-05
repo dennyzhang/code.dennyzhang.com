@@ -32,7 +32,7 @@ Note:
 1. 1 <= len(start) = len(end) <= 10000.
 - Both start and end will only consist of characters in {'L', 'R', 'X'}.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swap-adjacent-in-lr-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/swap-adjacent-in-lr-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/swap-adjacent-in-lr-string/description/][leetcode.com]]
 

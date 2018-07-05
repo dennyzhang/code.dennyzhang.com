@@ -27,7 +27,7 @@ Output:
 1->2->4
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/plus-one-linked-list][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/plus-one-linked-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/plus-one-linked-list/description/][leetcode.com]]
 

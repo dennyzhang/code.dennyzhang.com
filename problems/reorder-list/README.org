@@ -19,7 +19,7 @@ You must do this in-place without altering the nodes' values.
 For example,
 Given {1,2,3,4}, reorder it to {1,4,2,3}.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reorder-list][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reorder-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/reorder-list/description/][leetcode.com]]
 

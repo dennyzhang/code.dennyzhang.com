@@ -19,7 +19,7 @@ The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4.
 
 Follow up: Could you improve it to O(n log n) time complexity?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-increasing-subsequence][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-increasing-subsequence][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-increasing-subsequence/description/][leetcode.com]]
 

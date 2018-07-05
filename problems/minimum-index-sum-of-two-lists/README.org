@@ -34,7 +34,7 @@ Note:
 - The index is starting from 0 to the list length minus 1.
 - No duplicates in both lists.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-index-sum-of-two-lists][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-index-sum-of-two-lists][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/][leetcode.com]]
 

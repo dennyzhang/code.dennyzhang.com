@@ -17,7 +17,7 @@ For example,
 Given [5, 7, 7, 8, 8, 10] and target value 8,
 return [3, 4].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-for-a-range][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-for-a-range][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/search-for-a-range/description/][leetcode.com]]
 

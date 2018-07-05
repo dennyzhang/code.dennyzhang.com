@@ -34,7 +34,7 @@ Note:
 - 1 <= K <= A.length.
 - Answers within 10^-6 of the correct answer will be accepted as correct.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-sum-of-averages][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-sum-of-averages][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/largest-sum-of-averages/description/][leetcode.com]]
 

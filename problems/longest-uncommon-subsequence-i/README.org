@@ -30,7 +30,7 @@ Note:
 Both strings' lengths will not exceed 100.
 Only letters from a ~ z will appear in input strings.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-uncommon-subsequence-i][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-uncommon-subsequence-i][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/longest-uncommon-subsequence-i/description/][leetcode.com]]
 

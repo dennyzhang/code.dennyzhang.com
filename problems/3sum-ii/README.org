@@ -33,7 +33,7 @@ Explanation:
 When one of them is 1 and the remaining two are 0, there is a total of 1 solution.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/3sum-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/3sum-ii/][LintCode.com]]
 

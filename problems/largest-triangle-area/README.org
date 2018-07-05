@@ -29,7 +29,7 @@ Notes:
 -  -50 <= points[i][j] <= 50.
 - Answers within 10^-6 of the true value will be accepted as correct.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-triangle-area][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-triangle-area][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/largest-triangle-area/description/][leetcode.com]]
 

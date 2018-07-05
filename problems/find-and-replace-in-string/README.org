@@ -47,7 +47,7 @@ Notes:
 - 0 < indexes[i] < S.length <= 1000
 - All characters in given inputs are lowercase letters.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-and-replace-in-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-and-replace-in-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-and-replace-in-string/description/][leetcode.com]]
 

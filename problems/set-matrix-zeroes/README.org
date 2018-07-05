@@ -19,7 +19,7 @@ Follow up:
 - A simple improvement uses O(m + n) space, but still not the best solution.
 - Could you devise a constant space solution?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/set-matrix-zeroes][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/set-matrix-zeroes/description/][leetcode.com]]
 

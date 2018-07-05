@@ -21,7 +21,7 @@ Note:
 1. The number of time points in the given list is at least 2 and won't exceed 20000.
 - The input time is legal and ranges from 00:00 to 23:59.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-time-difference][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-time-difference][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/minimum-time-difference/description/][leetcode.com]]
 

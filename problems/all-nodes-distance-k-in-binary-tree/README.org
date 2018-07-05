@@ -33,7 +33,7 @@ Note:
 - The target node is a node in the tree.
 - 0 <= K <= 1000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/all-nodes-distance-k-in-binary-tree][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/all-nodes-distance-k-in-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/][leetcode.com]]
 

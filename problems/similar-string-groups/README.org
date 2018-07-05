@@ -33,7 +33,7 @@ Note:
 - All words in A have the same length and are anagrams of each other.
 - The judging time limit has been increased for this question.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/similar-string-groups][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/similar-string-groups][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/similar-string-groups/description/][leetcode.com]]
 

@@ -37,7 +37,7 @@ For example, according to the above table, we should output:
 +--------------+-------------+--------------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/big-countries][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/big-countries][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/big-countries/description/][leetcode.com]]
 

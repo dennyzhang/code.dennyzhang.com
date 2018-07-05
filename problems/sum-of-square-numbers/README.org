@@ -29,7 +29,7 @@ Input: 3
 Output: False
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-square-numbers][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sum-of-square-numbers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/sum-of-square-numbers/description/][leetcode.com]]
 

@@ -25,7 +25,7 @@ Return
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/pascals-triangle][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/pascals-triangle][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/pascals-triangle/description/][leetcode.com]]
 

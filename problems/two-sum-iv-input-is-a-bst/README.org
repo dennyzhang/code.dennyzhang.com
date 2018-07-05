@@ -40,7 +40,7 @@ Target = 28
 Output: False
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-iv-input-is-a-bst][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/two-sum-iv-input-is-a-bst][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/][leetcode.com]]
 

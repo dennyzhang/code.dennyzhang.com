@@ -41,7 +41,7 @@ Note:
 1. L, R will be integers L <= R in the range [1, 10^6].
 - R - L will be at most 10000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/prime-number-of-set-bits-in-binary-representation][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/prime-number-of-set-bits-in-binary-representation][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/description/][leetcode.com]]
 

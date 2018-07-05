@@ -22,7 +22,7 @@ return [3,2,1].
 
 Note: Recursive solution is trivial, could you do it iteratively?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-postorder-traversal][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-postorder-traversal][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/binary-tree-postorder-traversal/description/][leetcode.com]]
 

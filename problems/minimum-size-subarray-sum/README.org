@@ -22,7 +22,7 @@ the subarray [4,3] has the minimal length under the problem constraint.
 More practice:
 If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-size-subarray-sum][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-size-subarray-sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/minimum-size-subarray-sum/description/][leetcode.com]]
 

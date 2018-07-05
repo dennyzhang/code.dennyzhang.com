@@ -15,7 +15,7 @@ Given a string, determine if a permutation of the string could form a palindrome
 For example,
 "code" -> False, "aab" -> True, "carerac" -> True.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-permutation][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindrome-permutation][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/palindrome-permutation/description/][leetcode.com]]
 

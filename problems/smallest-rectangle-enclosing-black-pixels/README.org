@@ -26,7 +26,7 @@ and x = 0, y = 2
 Output: 6
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/smallest-rectangle-enclosing-black-pixels][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/smallest-rectangle-enclosing-black-pixels][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/][leetcode.com]]
 

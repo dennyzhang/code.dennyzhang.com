@@ -25,7 +25,7 @@ Note:
 Follow Up:
 - Can you do it in O(n) time and/or in-place with O(1) extra space?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/wiggle-sort-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/wiggle-sort-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/wiggle-sort-ii/description/][leetcode.com]]
 

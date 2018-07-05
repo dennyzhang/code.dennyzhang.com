@@ -31,7 +31,7 @@ Output: return the tree root node representing the following tree:
 Note:
 The size of the given array will be in the range [1,1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-binary-tree][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/maximum-binary-tree/description/][leetcode.com]]
 

@@ -32,7 +32,7 @@ Explanation:
 s cannot get t after deleting some characters.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-characters][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-characters][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://www.lintcode.com/problem/delete-characters/description][lintcode.com]]
 

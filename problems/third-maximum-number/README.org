@@ -42,7 +42,7 @@ Explanation: Note that the third maximum here means the third maximum distinct n
 Both numbers with value 2 are both considered as second maximum.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/third-maximum-number][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/third-maximum-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/third-maximum-number/description/][leetcode.com]]
 

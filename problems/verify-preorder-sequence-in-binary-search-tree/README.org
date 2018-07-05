@@ -18,7 +18,7 @@ You may assume each number in the sequence is unique.
 Follow up:
 Could you do it using only constant space complexity?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/verify-preorder-sequence-in-binary-search-tree][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/verify-preorder-sequence-in-binary-search-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/description/][leetcode.com]]
 

@@ -31,7 +31,7 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 Note:
 The input string length won't exceed 1000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindromic-substrings][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindromic-substrings][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/palindromic-substrings/description/][leetcode.com]]
 

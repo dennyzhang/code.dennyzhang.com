@@ -21,7 +21,7 @@ Examples:
 "3456237490", 9191 -> []
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/expression-add-operators][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/expression-add-operators][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/expression-add-operators/description/][leetcode.com]]
 

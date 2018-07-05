@@ -36,7 +36,7 @@ Output:
 "ffffffff"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-a-number-to-hexadecimal][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/convert-a-number-to-hexadecimal][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/][leetcode.com]]
 

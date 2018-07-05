@@ -19,7 +19,7 @@ For example, given n = 2, return 1 (2 = 1 + 1); given n = 10, return 36 (10 = 3 
 
 Note: You may assume that n is not less than 2 and not larger than 58.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-break][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/integer-break][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/integer-break/description/][leetcode.com]]
 

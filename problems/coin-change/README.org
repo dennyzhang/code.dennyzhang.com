@@ -30,7 +30,7 @@ return -1.
 Note:
 You may assume that you have an infinite number of each kind of coin.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/coin-change][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/coin-change][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/coin-change/description/][leetcode.com]]
 

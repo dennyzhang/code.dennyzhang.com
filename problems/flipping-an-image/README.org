@@ -38,7 +38,7 @@ Notes:
 - 0 <= A[i][j] <= 1
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flipping-an-image][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flipping-an-image][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/flipping-an-image/description/][leetcode.com]]
 

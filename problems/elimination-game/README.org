@@ -31,7 +31,7 @@ Output:
 6
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/elimination-game][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/elimination-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/elimination-game/description/][leetcode.com]]
 

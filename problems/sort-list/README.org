@@ -12,7 +12,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 Sort a linked list in O(n log n) time using constant space complexity.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-list][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sort-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/sort-list/description/][leetcode.com]]
 

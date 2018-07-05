@@ -38,7 +38,7 @@ Return a NestedInteger object containing a nested list with 2 elements:
          a. An integer containing value 789.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/mini-parser][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/mini-parser][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/mini-parser/description/][leetcode.com]]
 

@@ -24,7 +24,7 @@ Examples:
 Notes:
 You may assume both pattern and str contains only lowercase letters.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-pattern-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-pattern-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/word-pattern-ii/description/][leetcode.com]]
 

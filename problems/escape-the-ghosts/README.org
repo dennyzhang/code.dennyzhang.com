@@ -53,7 +53,7 @@ Note:
 - All points have coordinates with absolute value <= 10000.
 - The number of ghosts will not exceed 100.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/escape-the-ghosts][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/escape-the-ghosts][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/escape-the-ghosts/description/][leetcode.com]]
 

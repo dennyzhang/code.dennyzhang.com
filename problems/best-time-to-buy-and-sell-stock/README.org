@@ -28,7 +28,7 @@ In this case, no transaction is done, i.e. max profit = 0.
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/best-time-to-buy-and-sell-stock][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/best-time-to-buy-and-sell-stock][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/][leetcode.com]]
 

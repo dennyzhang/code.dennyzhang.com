@@ -28,7 +28,7 @@ E 0 W E
 return 3. (Placing a bomb at (1,1) kills 3 enemies)
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bomb-enemy][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bomb-enemy][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/bomb-enemy/description/][leetcode.com]]
 

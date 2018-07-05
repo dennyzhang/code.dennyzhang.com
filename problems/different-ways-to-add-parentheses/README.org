@@ -33,7 +33,7 @@ Input: "2*3-4*5"
 Output: [-34, -14, -10, -10, 10]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/different-ways-to-add-parentheses][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/different-ways-to-add-parentheses][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/different-ways-to-add-parentheses/description/][leetcode.com]]
 

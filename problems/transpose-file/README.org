@@ -27,7 +27,7 @@ name alice ryan
 age 21 30
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/transpose-file][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/transpose-file][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/transpose-file/description/][leetcode.com]]
 

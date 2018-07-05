@@ -42,7 +42,7 @@ Input: n = 4, k = 9
 Output: "2314"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutation-sequence][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/permutation-sequence][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/permutation-sequence/description/][leetcode.com]]
 

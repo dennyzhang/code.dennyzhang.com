@@ -36,7 +36,7 @@ Note:
 - 1 <= routes[i].length <= 500.
 - 0 <= routes[i][j] < 10 ^ 6.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bus-routes][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bus-routes][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/bus-routes/description/][leetcode.com]]
 

@@ -31,7 +31,7 @@ For the sample input, the output is:
 
 Follow-up: If it is unknown which continent has the most students, can you write a query to generate the student report?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/students-report-by-geography][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/students-report-by-geography][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/students-report-by-geography/description/][leetcode.com]]
 

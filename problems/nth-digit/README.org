@@ -37,7 +37,7 @@ Explanation:
 The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, which is part of the number 10.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nth-digit][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nth-digit][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/nth-digit/description/][leetcode.com]]
 

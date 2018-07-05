@@ -34,7 +34,7 @@ Input: x = 2, y = 6, z = 5
 Output: False
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/water-and-jug-problem][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/water-and-jug-problem][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/water-and-jug-problem/description/][leetcode.com]]
 

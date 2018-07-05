@@ -50,7 +50,7 @@ Note:
 - Each grid[i][j] will be either 0 or 1.
 - The number of 1s in the grid will be at most 6000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-corner-rectangles][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-corner-rectangles][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/number-of-corner-rectangles/description/][leetcode.com]]
 

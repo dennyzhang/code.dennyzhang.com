@@ -27,7 +27,7 @@ One possible answer is: [0,-3,9,-10,null,5], which represents the following heig
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-array-to-binary-search-tree][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/convert-sorted-array-to-binary-search-tree][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/][leetcode.com]]
 

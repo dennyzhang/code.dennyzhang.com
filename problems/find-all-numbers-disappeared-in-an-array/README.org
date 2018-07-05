@@ -22,7 +22,7 @@ Output:
 [5,6]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-numbers-disappeared-in-an-array][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-all-numbers-disappeared-in-an-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/][leetcode.com]]
 

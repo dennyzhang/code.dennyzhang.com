@@ -29,7 +29,7 @@ Note:
 1. The length of the given array won't exceed 1000.
 - The integers in the given array are in the range of [0, 1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-triangle-number][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-triangle-number][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/valid-triangle-number/description/][leetcode.com]]
 

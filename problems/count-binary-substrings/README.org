@@ -37,7 +37,7 @@ s.length will be between 1 and 50,000.
 s will only consist of "0" or "1" characters.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-binary-substrings][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-binary-substrings][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/count-binary-substrings/description/][leetcode.com]]
 

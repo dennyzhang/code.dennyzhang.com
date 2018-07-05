@@ -21,7 +21,7 @@ a) Insert a character
 b) Delete a character
 c) Replace a character
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/edit-distance][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/edit-distance][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/edit-distance/description/][leetcode.com]]
 

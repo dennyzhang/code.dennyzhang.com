@@ -15,7 +15,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 Count the number of prime numbers less than a non-negative number, n.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-primes][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-primes][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/count-primes/description/][leetcode.com]]
 

@@ -24,7 +24,7 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/3sum][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/3sum/description/][leetcode.com]]
 

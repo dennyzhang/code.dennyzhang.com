@@ -24,7 +24,7 @@ Given n = 3, your program should return all 5 unique BST's shown below.
    2     1         2                 3
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-binary-search-trees-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-binary-search-trees-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/unique-binary-search-trees-ii/description/][leetcode.com]]
 

@@ -22,7 +22,7 @@ Input: "LL"
 Output: false
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/judge-route-circle][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/judge-route-circle][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/judge-route-circle/description/][leetcode.com]]
 

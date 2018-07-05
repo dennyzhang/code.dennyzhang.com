@@ -42,7 +42,7 @@ Input: 4
 Output: "1211"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-and-say][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-and-say][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/count-and-say/description/][leetcode.com]]
 

@@ -33,7 +33,7 @@ Given the Employee table, write a SQL query that finds out employees who earn mo
 +----------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employees-earning-more-than-their-managers][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/employees-earning-more-than-their-managers][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/employees-earning-more-than-their-managers/description/][leetcode.com]]
 

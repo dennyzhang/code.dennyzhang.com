@@ -44,7 +44,7 @@ Note:
 The range of width and height of the input 2D array is [1,200].
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lonely-pixel-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lonely-pixel-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/lonely-pixel-ii/description/][leetcode.com]]
 

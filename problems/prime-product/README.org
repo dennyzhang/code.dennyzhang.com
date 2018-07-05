@@ -32,7 +32,7 @@ Explanation:
 2 * 3 = 6, 2 * 5 = 10, 3 * 5 = 15, 2 * 3 *5 = 30
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/prime-product][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/prime-product][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/prime-product/description/][leetcode.com]]
 

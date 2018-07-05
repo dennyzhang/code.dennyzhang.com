@@ -32,7 +32,7 @@ In step 3, we use Paste operation to get 'AAA'.
 Note:
 - The n will be in the range [1, 1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/2-keys-keyboard][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/2-keys-keyboard][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/2-keys-keyboard/description/][leetcode.com]]
 

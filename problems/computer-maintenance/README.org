@@ -37,7 +37,7 @@ Explanation:
 Starting from (0,0), go to (0,3) and fix 0, then go back to (0,0) to next line (1,0), and go to (1,2) to fix 2, then go to (1,7) to fix 1, then go to (1,9), and end at (2,9).
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/computer-maintenance][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/computer-maintenance][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/computer-maintenance/][LintCode.com]]
 

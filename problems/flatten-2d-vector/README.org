@@ -31,7 +31,7 @@ By calling next repeatedly until hasNext returns false, the order of elements re
 Follow up:
 As an added challenge, try to code it using only iterators in C++ or iterators in Java.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-2d-vector][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flatten-2d-vector][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/flatten-2d-vector/description/][leetcode.com]]
 

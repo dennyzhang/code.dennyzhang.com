@@ -15,7 +15,7 @@ Given a singly linked list, determine if it is a palindrome.
 Follow up:
 Could you do it in O(n) time and O(1) space?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-linked-list][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindrome-linked-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/palindrome-linked-list/description/][leetcode.com]]
 

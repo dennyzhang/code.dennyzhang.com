@@ -29,7 +29,7 @@ Note:
 - 1 <= root length <= 100
 - 1 <= sentence words length <= 1000
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/replace-words][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/replace-words][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/replace-words/description/][leetcode.com]]
 

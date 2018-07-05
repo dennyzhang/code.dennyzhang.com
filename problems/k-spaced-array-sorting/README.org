@@ -28,7 +28,7 @@ Explanation:
 The sorted array is [0,3,4,5,10].
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/k-spaced-array-sorting][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/k-spaced-array-sorting][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/k-spaced-array-sorting/][lintcode.com]]
 

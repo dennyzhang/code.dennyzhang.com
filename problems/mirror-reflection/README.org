@@ -33,7 +33,7 @@ Note:
 1. 1 <= p <= 1000
 - 0 <= q <= p
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/mirror-reflection][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/mirror-reflection][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/mirror-reflection/description/][leetcode.com]]
 

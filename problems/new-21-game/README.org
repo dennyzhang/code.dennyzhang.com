@@ -44,7 +44,7 @@ Note:
 - Answers will be accepted as correct if they are within 10^-5 of the correct answer.
 - The judging time limit has been reduced for this question.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/new-21-game][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/new-21-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/new-21-game/description/][leetcode.com]]
 

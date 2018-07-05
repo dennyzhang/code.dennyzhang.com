@@ -20,7 +20,7 @@ return 2.
 Note: You may assume the string contain only lowercase letters.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-unique-character-in-a-string][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/first-unique-character-in-a-string][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/first-unique-character-in-a-string/description/][leetcode.com]]
 

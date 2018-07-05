@@ -23,7 +23,7 @@ The second 1's next greater number needs to search circularly, which is also 2.
 
 Note: The length of given array won't exceed 10000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/next-greater-element-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-greater-element-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/next-greater-element-ii/description/][leetcode.com]]
 

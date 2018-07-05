@@ -26,7 +26,11 @@ Solve all [leetcode.com](https://leetcode.com) problems in Python
 
 http://code.dennyzhang.com/contact
 
-People will ask silly algorithm questions.
+My [leetcode profile](https://leetcode.com/dennyzhang/) and [lintcode profile](https://www.lintcode.com/user/DennyZhang)
+
+[https://cdn.dennyzhang.com/images/brain/denny_leetcode.png](https://leetcode.com/dennyzhang)
+
+See more: https://code.dennyzhang.com
 
 <a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 

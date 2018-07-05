@@ -30,7 +30,7 @@ nums = [-4, -2, 2, 4], a = -1, b = 3, c = 5
 Result: [-23, -5, 1, 7]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-transformed-array][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sort-transformed-array][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/sort-transformed-array/description/][leetcode.com]]
 

@@ -21,7 +21,7 @@ m.next(3) = (1 + 10 + 3) / 3
 m.next(5) = (10 + 3 + 5) / 3
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/moving-average-from-data-stream][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/moving-average-from-data-stream][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/moving-average-from-data-stream/description/][leetcode.com]]
 

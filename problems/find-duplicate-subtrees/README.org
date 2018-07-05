@@ -38,7 +38,7 @@ and
 
 Therefore, you need to return above trees' root in the form of a list.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-duplicate-subtrees][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-duplicate-subtrees][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/find-duplicate-subtrees/description/][leetcode.com]]
 

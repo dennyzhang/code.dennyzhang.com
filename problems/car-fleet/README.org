@@ -43,7 +43,7 @@ Note:
 - 0 <= position[i] < target
 - All initial positions are different.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/car-fleet][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/car-fleet][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/car-fleet/description/][leetcode.com]]
 

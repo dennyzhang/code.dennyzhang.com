@@ -40,7 +40,7 @@ If you notice carefully in the flattened tree, each node's right child points to
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-binary-tree-to-linked-list][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flatten-binary-tree-to-linked-list][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/][leetcode.com]]
 

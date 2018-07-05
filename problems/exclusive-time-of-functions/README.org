@@ -41,7 +41,7 @@ Note:
 - Functions could be called recursively, and will always end.
 - 1 <= n <= 100
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/exclusive-time-of-functions][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/exclusive-time-of-functions][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/exclusive-time-of-functions/description/][leetcode.com]]
 

@@ -20,7 +20,7 @@ Given str = 891, return 80
 As 8 * (9 + 1) = 80, so 80 is maximum.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/calculate-maximum-value-ii][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/calculate-maximum-value-ii][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:http://www.lintcode.com/en/problem/calculate-maximum-value-ii/][LintCode.com]]
 

@@ -47,7 +47,7 @@ twitter.unfollow(1, 2);
 twitter.getNewsFeed(1);
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-twitter][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-twitter][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/design-twitter/description/][leetcode.com]]
 

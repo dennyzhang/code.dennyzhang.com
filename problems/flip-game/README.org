@@ -27,7 +27,7 @@ For example, given s = "++++", after one move, it may become one of the followin
 
 If there is no valid move, return an empty list [].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flip-game][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flip-game][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/flip-game/description/][leetcode.com]]
 

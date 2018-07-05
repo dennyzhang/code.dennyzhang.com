@@ -40,7 +40,7 @@ Note:
 - The time limit for this problem has been reduced.
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/global-and-local-inversions][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/global-and-local-inversions][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/global-and-local-inversions/description/][leetcode.com]]
 

@@ -59,7 +59,7 @@ Note:
 1. 1 <= S.length <= 200
 - S contains only digits.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-array-into-fibonacci-sequence][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-into-fibonacci-sequence][challenges-leetcode-interesting]]
 
 Credits To: [[url-external:https://leetcode.com/problems/split-array-into-fibonacci-sequence/description/][leetcode.com]]
 
