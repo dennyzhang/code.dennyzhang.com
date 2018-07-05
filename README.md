@@ -28,7 +28,7 @@ http://code.dennyzhang.com/contact
 
 My [leetcode profile](https://leetcode.com/dennyzhang/) and [lintcode profile](https://www.lintcode.com/user/DennyZhang)
 
-[https://cdn.dennyzhang.com/images/brain/denny_leetcode.png](https://leetcode.com/dennyzhang)
+[![https://leetcode.com/dennyzhang](https://cdn.dennyzhang.com/images/brain/denny_leetcode.png)]
 
 See more: https://code.dennyzhang.com
 
