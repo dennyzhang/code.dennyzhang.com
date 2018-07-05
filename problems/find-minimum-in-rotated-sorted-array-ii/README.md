@@ -1,5 +1,5 @@
-# Leetcode: Find Minimum in Rotated Sorted Array II     :BLOG:Medium:
 
+# Leetcode: Find Minimum in Rotated Sorted Array II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Find Minimum in Rotated Sorted Array II
 ---
 
 Similar Problems:  
+
 -   [Search in Rotated Sorted Array](https://code.dennyzhang.com/search-in-rotated-sorted-array)
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
@@ -21,7 +22,7 @@ Find the minimum element.
 
 The array may contain duplicates.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-minimum-in-rotated-sorted-array-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-minimum-in-rotated-sorted-array-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/)  
 
@@ -30,3 +31,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii
+

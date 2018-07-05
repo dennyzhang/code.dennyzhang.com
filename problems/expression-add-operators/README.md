@@ -1,5 +1,5 @@
-# Leetcode: Expression Add Operators     :BLOG:Medium:
 
+# Leetcode: Expression Add Operators     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Expression Add Operators
 ---
 
 Similar Problems:  
+
 -   [Review: Divide And Conquer Problems](https://code.dennyzhang.com/review-divideconquer), [Tag: #divideconquer](https://code.dennyzhang.com/tag/divideconquer)
 
 ---
@@ -22,7 +23,7 @@ Examples:
     "00", 0 -> ["0+0", "0-0", "0*0"]
     "3456237490", 9191 -> []
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/expression-add-operators)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/expression-add-operators)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/expression-add-operators/description/)  
 
@@ -31,3 +32,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/expression-add-operators
+

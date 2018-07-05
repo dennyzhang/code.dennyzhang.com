@@ -1,5 +1,5 @@
-# Leetcode: Find And Replace in String     :BLOG:Medium:
 
+# Leetcode: Find And Replace in String     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Find And Replace in String
 ---
 
 Similar Problems:  
+
 -   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -42,7 +43,7 @@ Notes:
 -   0 < indexes[i] < S.length <= 1000
 -   All characters in given inputs are lowercase letters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-and-replace-in-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-and-replace-in-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-and-replace-in-string/description/)  
 
@@ -63,23 +64,24 @@ Leave me comments, if you have better ways to solve.
         for i, v := range indexes { m[v] = i }
         i := 0
         for i<len(S) {
-            index, status := m[i]
-            if status == true {
-                // check whether we can replace
-                word, word_len := sources[index], len(sources[index])
-                if len(S)-i < word_len || S[i:i+word_len] != word {
-                    res += string(S[i])
-                    i++
-                } else {
-                    // replace
-                    i += word_len
-                    res += targets[index]
-                }
-                index += 1
-                continue
-            }
-            res += string(S[i])
-            i++
+    	index, status := m[i]
+    	if status == true {
+    	    // check whether we can replace
+    	    word, word_len := sources[index], len(sources[index])
+    	    if len(S)-i < word_len || S[i:i+word_len] != word {
+    		res += string(S[i])
+    		i++
+    	    } else {
+    		// replace
+    		i += word_len
+    		res += targets[index]
+    	    }
+    	    index += 1
+    	    continue
+    	}
+    	res += string(S[i])
+    	i++
         }
         return res
     }
+

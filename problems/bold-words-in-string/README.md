@@ -1,5 +1,5 @@
-# Leetcode: Bold Words in String     :BLOG:Basic:
 
+# Leetcode: Bold Words in String     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Bold Words in String
 ---
 
 Similar Problems:  
+
 -   [Add Bold Tag in String](https://code.dennyzhang.com/add-bold-tag-in-string)
 -   [Merge Intervals](https://code.dennyzhang.com/merge-intervals)
 -   Tag: [#addtag](https://code.dennyzhang.com/tag/addtag), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
@@ -27,7 +28,7 @@ Note:
 3.  S has length in range [0, 500].
 4.  All characters in words[i] and S are lowercase letters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bold-words-in-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bold-words-in-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/bold-words-in-string/description/)  
 
@@ -43,26 +44,27 @@ Leave me comments, if you have better ways to solve.
     func boldWords(words []string, S string) string {
         marked := make([]bool, len(S)+1)
         for i, _ := range S {
-            end := i
-            for _, word := range words {
-                if strings.Index(S[i:], word) == 0 {
-                    if len(word)+i > end { end = len(word)+i }
-                }
-            }
-            for j:=i; j<end; j++ { marked[j]=true }
+    	end := i
+    	for _, word := range words {
+    	    if strings.Index(S[i:], word) == 0 {
+    		if len(word)+i > end { end = len(word)+i }
+    	    }
+    	}
+    	for j:=i; j<end; j++ { marked[j]=true }
         }
     
         ret, has_started := "", false
         for i, ch := range S+";" {
-            if has_started == false && marked[i] == true {
-                has_started = true
-                ret += "<b>"
-            }
-            if has_started == true && marked[i] == false {
-                has_started = false
-                ret += "</b>"
-            }
-            if ch != ';' { ret += string(ch) }
+    	if has_started == false && marked[i] == true {
+    	    has_started = true
+    	    ret += "<b>"
+    	}
+    	if has_started == true && marked[i] == false {
+    	    has_started = false
+    	    ret += "</b>"
+    	}
+    	if ch != ';' { ret += string(ch) }
         }
         return ret
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Reaching Points     :BLOG:Medium:
 
+# Leetcode: Reaching Points     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Reaching Points
 ---
 
 Similar Problems:  
+
 -   [Water and Jug Problem](https://code.dennyzhang.com/water-and-jug-problem)
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive)
 -   [Review: mod Problems](https://code.dennyzhang.com/review-mod)
@@ -38,7 +39,7 @@ Note:
 
 sx, sy, tx, ty will all be integers in the range [1, 10^9].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reaching-points)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reaching-points)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reaching-points/description/)  
 
@@ -54,18 +55,19 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(1), Space O(1)
     class Solution:
         def reachingPoints(self, sx, sy, tx, ty):
-            """
-            :type sx: int
-            :type sy: int
-            :type tx: int
-            :type ty: int
-            :rtype: bool
-            """
-            if tx<sx or ty<sy: return False
-            if tx==sx: return (ty-sy) % tx == 0
-            if ty==sy: return (tx-sx) % ty == 0
-            if ty>tx:
-                ty=ty%tx
-            else:
-                tx=tx%ty
-            return self.reachingPoints(sx, sy, tx, ty)
+    	"""
+    	:type sx: int
+    	:type sy: int
+    	:type tx: int
+    	:type ty: int
+    	:rtype: bool
+    	"""
+    	if tx<sx or ty<sy: return False
+    	if tx==sx: return (ty-sy) % tx == 0
+    	if ty==sy: return (tx-sx) % ty == 0
+    	if ty>tx:
+    	    ty=ty%tx
+    	else:
+    	    tx=tx%ty
+    	return self.reachingPoints(sx, sy, tx, ty)
+

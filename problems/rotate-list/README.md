@@ -1,5 +1,5 @@
-# Leetcode: Rotate List     :BLOG:Medium:
 
+# Leetcode: Rotate List     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Rotate Linked list
 ---
 
 Similar Problems:  
+
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
@@ -20,7 +21,7 @@ Example:
     
     return 4->5->1->2->3->NULL.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rotate-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rotate-list/description/)  
 
@@ -46,37 +47,38 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def rotateRight(self, head, k):
-            """
-            :type head: ListNode
-            :type k: int
-            :rtype: ListNode
-            """
-            if head is None or k == 0:
-                return head
-            # get length
-            p = head
-            length = 0
-            last_node = None
-            while p:
-                if p.next is None:
-                    last_node = p
-                length += 1
-                p = p.next
+    	"""
+    	:type head: ListNode
+    	:type k: int
+    	:rtype: ListNode
+    	"""
+    	if head is None or k == 0:
+    	    return head
+    	# get length
+    	p = head
+    	length = 0
+    	last_node = None
+    	while p:
+    	    if p.next is None:
+    		last_node = p
+    	    length += 1
+    	    p = p.next
     
-            if k >= length:
-                k = k % length
+    	if k >= length:
+    	    k = k % length
     
-            # Highlight: why we need this special case?
-            if k == 0:
-                return head
+    	# Highlight: why we need this special case?
+    	if k == 0:
+    	    return head
     
-            q = head
+    	q = head
     
-            # Highlight: How many steps you shall move?
-            for i in xrange(length-k-1):
-                q = q.next
+    	# Highlight: How many steps you shall move?
+    	for i in xrange(length-k-1):
+    	    q = q.next
     
-            res = q.next
-            q.next = None
-            last_node.next = head
-            return res
+    	res = q.next
+    	q.next = None
+    	last_node.next = head
+    	return res
+

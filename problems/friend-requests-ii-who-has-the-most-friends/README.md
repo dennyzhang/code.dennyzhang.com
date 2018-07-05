@@ -1,5 +1,5 @@
-# Leetcode: Friend Requests II: Who Has the Most Friends     :BLOG:Medium:
 
+# Leetcode: Friend Requests II: Who Has the Most Friends     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Friend Requests II: Who Has the Most Friends
 ---
 
 Similar Problems:  
+
 -   [Friend Requests I: Overall Acceptance Rate](https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate)
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
@@ -30,6 +31,7 @@ Write a query to find the the people who has most friends and the most friends n
     | 3  | 3   |
 
 Note:  
+
 -   It is guaranteed there is only 1 people having the most friends.
 -   The friend request could only been accepted once, which mean there is no multiple records with the same requester\_id and accepter\_id value.
 
@@ -39,7 +41,7 @@ The person with id '3' is a friend of people '1', '2' and '4', so he has 3 frien
 Follow-up:  
 In the real world, multiple people could have the same most number of friends, can you find all these people in this case?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/friend-requests-ii-who-has-the-most-friends)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friend-requests-ii-who-has-the-most-friends)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/description/)  
 
@@ -55,8 +57,9 @@ Leave me comments, if you have better ways to solve.
            group by requester_id)
           union all
            (select accepter_id as id, count(1) as num
-            from request_accepted
-            group by accepter_id)) as t
+    	from request_accepted
+    	group by accepter_id)) as t
     group by t.id
     order by num desc
     limit 1
+

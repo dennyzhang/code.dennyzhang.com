@@ -1,5 +1,5 @@
-# Leetcode: Number of Boomerangs     :BLOG:Medium:
 
+# Leetcode: Number of Boomerangs     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Number of Boomerangs
 ---
 
 Similar Problems:  
+
 -   [Line Reflection](https://code.dennyzhang.com/line-reflection)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math), [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
@@ -27,7 +28,7 @@ Find the number of boomerangs. You may assume that n will be at most 500 and coo
     Explanation:
     The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-boomerangs)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-boomerangs)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-boomerangs/description/)  
 
@@ -62,7 +63,7 @@ Leave me comments, if you have better ways to solve.
       for _, m := range array {
         for d := range m {
           if m[d]>1 {
-            res += m[d]*(m[d]-1)
+    	res += m[d]*(m[d]-1)
           }
         }
       }
@@ -91,8 +92,9 @@ Leave me comments, if you have better ways to solve.
         }
         // collect results
         for d:= range m {
-            if m[d]>1 { res += m[d]*(m[d]-1)}
+    	if m[d]>1 { res += m[d]*(m[d]-1)}
         }
       }
       return res
     }
+

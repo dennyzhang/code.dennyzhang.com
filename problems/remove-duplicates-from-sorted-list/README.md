@@ -1,5 +1,5 @@
-# Leetcode: Remove Duplicates from Sorted List     :BLOG:Basic:
 
+# Leetcode: Remove Duplicates from Sorted List     :BLOG:Basic:
 
 ---
 
@@ -13,7 +13,7 @@ For example,
 Given 1->1->2, return 1->2.  
 Given 1->1->2->3->3, return 1->2->3.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-duplicates-from-sorted-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)  
 
@@ -32,22 +32,23 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def deleteDuplicates(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            if head is None:
-                return None
-            p = head
-            q = head.next
-            while q:
-                if q.val == p.val:
-                    q = q.next
-                else:
-                    # add q to the result list
-                    r = q.next
-                    p.next = q
-                    p = p.next
-                    q = r
-            p.next = None
-            return head
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	if head is None:
+    	    return None
+    	p = head
+    	q = head.next
+    	while q:
+    	    if q.val == p.val:
+    		q = q.next
+    	    else:
+    		# add q to the result list
+    		r = q.next
+    		p.next = q
+    		p = p.next
+    		q = r
+    	p.next = None
+    	return head
+

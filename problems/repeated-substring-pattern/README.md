@@ -1,5 +1,5 @@
-# Leetcode: Repeated Substring Pattern     :BLOG:Hard:
 
+# Leetcode: Repeated Substring Pattern     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Check whether string can be created by keep repeating one substring.
 ---
 
 Similar Problems:  
+
 -   [Rotate String](https://code.dennyzhang.com/rotate-string)
 -   [Repeated String Match](https://code.dennyzhang.com/repeated-string-match)
 -   Tag: [#string](https://code.dennyzhang.com/tag/string), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
@@ -37,7 +38,7 @@ Example 3:
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-substring-pattern)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/repeated-substring-pattern)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/repeated-substring-pattern/description/)  
 
@@ -48,9 +49,10 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/repeated-substring-pattern
     class Solution:
         def repeatedSubstringPattern(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if len(s) == 0: return False
-            return s in (s+s)[1:-1]
+    	"""
+    	:type s: str
+    	:rtype: bool
+    	"""
+    	if len(s) == 0: return False
+    	return s in (s+s)[1:-1]
+

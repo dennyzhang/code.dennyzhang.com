@@ -1,5 +1,5 @@
-# Leetcode: Rotate Array     :BLOG:Basic:
 
+# Leetcode: Rotate Array     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Right rotate array by k steps
 ---
 
 Similar Problems:  
+
 -   Tag: [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
 ---
@@ -19,7 +20,7 @@ For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,
 Note:  
 Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rotate-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rotate-array/description/)  
 
@@ -36,13 +37,14 @@ Leave me comments, if you have better ways to solve.
     ## Sample Data:
     class Solution(object):
         def findSubstring(self, s, words):
-            """
-            :type s: str
-            :type words: List[str]
-            :rtype: List[int]
-            """
-            ## barfoothefoobarman -> bar foo the foo bar man
+    	"""
+    	:type s: str
+    	:type words: List[str]
+    	:rtype: List[int]
+    	"""
+    	## barfoothefoobarman -> bar foo the foo bar man
     
     if __name__ == '__main__':
         s = Solution()
         # print s.findSubstring("barfoothefoobarman")
+

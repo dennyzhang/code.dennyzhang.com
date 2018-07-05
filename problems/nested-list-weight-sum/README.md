@@ -1,5 +1,5 @@
-# Leetcode: Nested List Weight Sum     :BLOG:Basic:
 
+# Leetcode: Nested List Weight Sum     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Nested List Weight Sum
 ---
 
 Similar Problems:  
+
 -   [Nested List Weight Sum II](https://code.dennyzhang.com/nested-list-weight-sum-ii)
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 -   Tag: [#nestedlist](https://code.dennyzhang.com/tag/nestedlist)
@@ -26,7 +27,7 @@ Example 2:
 
     Given the list [1,[4,[6]]], return 27. (one 1 at depth 1, one 4 at depth 2, and one 6 at depth 3; 1 + 4*2 + 6*3 = 27)
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nested-list-weight-sum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nested-list-weight-sum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/nested-list-weight-sum/description/)  
 
@@ -83,21 +84,22 @@ Leave me comments, if you have better ways to solve.
         ##
         ## Complexity: Time O(n), Space O(k). Depth of the deepest element
         def depthSum(self, nestedList):
-            """
-            :type nestedList: List[NestedInteger]
-            :rtype: int
-            """
-            return self.myDepthSum(nestedList, 1)
+    	"""
+    	:type nestedList: List[NestedInteger]
+    	:rtype: int
+    	"""
+    	return self.myDepthSum(nestedList, 1)
     
         def myDepthSum(self, nestedList, level):
-            """
-            :type nestedList: List[NestedInteger]
-            :rtype: int
-            """
-            res = 0
-            for item in nestedList:
-                if item.isInteger():
-                    res += item.getInteger()*level
-                else:
-                    res += self.myDepthSum(item.getList(), level+1)
-            return res
+    	"""
+    	:type nestedList: List[NestedInteger]
+    	:rtype: int
+    	"""
+    	res = 0
+    	for item in nestedList:
+    	    if item.isInteger():
+    		res += item.getInteger()*level
+    	    else:
+    		res += self.myDepthSum(item.getList(), level+1)
+    	return res
+

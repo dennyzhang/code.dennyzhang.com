@@ -1,5 +1,5 @@
-# Leetcode: Paint House     :BLOG:Medium:
 
+# Leetcode: Paint House     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Paint House
 ---
 
 Similar Problems:  
+
 -   [Paint Fence](https://code.dennyzhang.com/paint-fence)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
@@ -25,7 +26,7 @@ The cost of painting each house with a certain color is represented by a n x 3 c
 Note:  
 All costs are positive integers.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/paint-house)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/paint-house)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/paint-house/description/)  
 
@@ -40,22 +41,23 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def minCost(self, costs):
-            """
-            :type costs: List[List[int]]
-            :rtype: int
-            """
-            length = len(costs)
-            if length == 0: return 0
+    	"""
+    	:type costs: List[List[int]]
+    	:rtype: int
+    	"""
+    	length = len(costs)
+    	if length == 0: return 0
     
-            dp = [None]*3
+    	dp = [None]*3
     
-            # caculate house I
-            dp = costs[0]
+    	# caculate house I
+    	dp = costs[0]
     
-            # caculate the following house
-            for i in range(1, length):
-                l = [None]*3
-                for j in range(0, 3):
-                    l[j] = costs[i][j] + min(dp[(j+1)%3], dp[(j+2)%3])
-                dp = l
-            return min(dp)
+    	# caculate the following house
+    	for i in range(1, length):
+    	    l = [None]*3
+    	    for j in range(0, 3):
+    		l[j] = costs[i][j] + min(dp[(j+1)%3], dp[(j+2)%3])
+    	    dp = l
+    	return min(dp)
+

@@ -1,5 +1,5 @@
-# Leetcode: Shortest Distance from All Buildings     :BLOG:Medium:
 
+# Leetcode: Shortest Distance from All Buildings     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Distance from All Buildings
 ---
 
 Similar Problems:  
+
 -   [Walls and Gates](https://code.dennyzhang.com/walls-and-gates)
 -   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 
@@ -32,7 +33,7 @@ The point (1,2) is an ideal empty land to build a house, as the total travel dis
 Note:  
 There will be at least one building. If it is not possible to build such house according to the above rules, return -1.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-distance-from-all-buildings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-from-all-buildings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-from-all-buildings/description/)  
 
@@ -41,3 +42,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/shortest-distance-from-all-buildings
+

@@ -1,5 +1,5 @@
-# Leetcode: Nth Digit     :BLOG:Medium:
 
+# Leetcode: Nth Digit     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Nth Digit
 ---
 
 Similar Problems:  
+
 -   [Remove 9](https://code.dennyzhang.com/remove-9)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
@@ -37,7 +38,7 @@ Example 2:
     Explanation:
     The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, which is part of the number 10.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nth-digit)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nth-digit)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/nth-digit/description/)  
 
@@ -46,3 +47,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/nth-digit
+

@@ -1,5 +1,5 @@
-# Leetcode: Largest Divisible Subset     :BLOG:Medium:
 
+# Leetcode: Largest Divisible Subset     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Largest Divisible Subset
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/tag/array), [#math](https://code.dennyzhang.com/tag/math), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -28,7 +29,7 @@ Example 2:
     
     Result: [1,2,4,8]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-divisible-subset)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-divisible-subset)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/largest-divisible-subset/description/)  
 
@@ -59,23 +60,24 @@ Leave me comments, if you have better ways to solve.
     
         max_index := 0
         for i:= 1; i<len(nums); i++ {
-            count := 1
-            for j:= i-1; j>=0; j-- {
-                if nums[i] % nums[j] == 0 {
-                    if dp[j]+1 > count {  count = dp[j]+1 }
-                }
-            }
-            dp[i] = count
-            if count > dp[max_index] { max_index = i }
+    	count := 1
+    	for j:= i-1; j>=0; j-- {
+    	    if nums[i] % nums[j] == 0 {
+    		if dp[j]+1 > count {  count = dp[j]+1 }
+    	    }
+    	}
+    	dp[i] = count
+    	if count > dp[max_index] { max_index = i }
         }
     
         res := []int{}
         res = append([]int{nums[max_index]}, res...)
         for i := max_index-1; i>=0; i-- {
-            if dp[i]+1 == dp[max_index] && nums[max_index] % nums[i] == 0 {
-                max_index = i
-                res = append([]int{nums[max_index]}, res...)
-            }
+    	if dp[i]+1 == dp[max_index] && nums[max_index] % nums[i] == 0 {
+    	    max_index = i
+    	    res = append([]int{nums[max_index]}, res...)
+    	}
         }
         return res
     }
+

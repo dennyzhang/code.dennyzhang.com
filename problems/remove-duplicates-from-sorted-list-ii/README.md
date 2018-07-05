@@ -1,5 +1,5 @@
-# Leetcode: Remove Duplicates from Sorted List II     :BLOG:Hard:
 
+# Leetcode: Remove Duplicates from Sorted List II     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Remove Duplicates from Sorted List II
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
@@ -21,7 +22,7 @@ Given 1->2->3->3->4->4->5, return 1->2->5.
 
 Given 1->1->1->2->3, return 2->3.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicates-from-sorted-list-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-duplicates-from-sorted-list-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)  
 
@@ -45,35 +46,36 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def deleteDuplicates(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            if head is None:
-                return None
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	if head is None:
+    	    return None
     
-            dummynode = ListNode(None)
-            dummynode.next = head
-            p = dummynode
-            q = head
+    	dummynode = ListNode(None)
+    	dummynode.next = head
+    	p = dummynode
+    	q = head
     
-            previous_val = None
-            while q:
-                v = q.val
-                if q.next and q.val == q.next.val:
-                    q = q.next
-                    previous_val = v
-                else:
-                    ## No previous node
-                    if q.val == previous_val:
-                        q = q.next
-                        previous_val = v
-                    else:
-                        # add q
-                        r = q.next
-                        p.next = q
-                        p = p.next
-                        q = r
-                        previous_val = v
-            p.next = None
-            return dummynode.next
+    	previous_val = None
+    	while q:
+    	    v = q.val
+    	    if q.next and q.val == q.next.val:
+    		q = q.next
+    		previous_val = v
+    	    else:
+    		## No previous node
+    		if q.val == previous_val:
+    		    q = q.next
+    		    previous_val = v
+    		else:
+    		    # add q
+    		    r = q.next
+    		    p.next = q
+    		    p = p.next
+    		    q = r
+    		    previous_val = v
+    	p.next = None
+    	return dummynode.next
+

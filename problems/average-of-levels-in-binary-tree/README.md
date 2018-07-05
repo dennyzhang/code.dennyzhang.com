@@ -1,5 +1,5 @@
-# Leetcode: Average of Levels in Binary Tree     :BLOG:Medium:
 
+# Leetcode: Average of Levels in Binary Tree     :BLOG:Medium:
 
 ---
 
@@ -23,7 +23,7 @@ The average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 
 Note:  
 The range of node's value is in the range of 32-bit signed integer.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/average-of-levels-in-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/average-of-levels-in-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/)  
 
@@ -44,25 +44,26 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def averageOfLevels(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[float]
-            """
-            if root is None:
-                return []
-            res = []
-            queue = []
-            queue.append(root)
-            while len(queue) != 0:
-                length = len(queue)
-                average_level = 0
-                for i in xrange(length):
-                    element = queue[0]
-                    del queue[0]
-                    average_level += element.val
-                    if element.left:
-                        queue.append(element.left)
-                    if element.right:
-                        queue.append(element.right)
-                res.append(float(average_level)/length)
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[float]
+    	"""
+    	if root is None:
+    	    return []
+    	res = []
+    	queue = []
+    	queue.append(root)
+    	while len(queue) != 0:
+    	    length = len(queue)
+    	    average_level = 0
+    	    for i in xrange(length):
+    		element = queue[0]
+    		del queue[0]
+    		average_level += element.val
+    		if element.left:
+    		    queue.append(element.left)
+    		if element.right:
+    		    queue.append(element.right)
+    	    res.append(float(average_level)/length)
+    	return res
+

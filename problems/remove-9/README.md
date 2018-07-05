@@ -1,5 +1,5 @@
-# Leetcode: Remove 9     :BLOG:Hard:
 
+# Leetcode: Remove 9     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Remove 9
 ---
 
 Similar Problems:  
+
 -   [Nth Digit](https://code.dennyzhang.com/nth-digit)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
@@ -26,7 +27,7 @@ Given a positive integer n, you need to return the n-th integer after removing. 
 
 Hint: n will not exceed 9 x 10^8.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-9)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-9)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-9/description/)  
 
@@ -35,3 +36,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/remove-9
+

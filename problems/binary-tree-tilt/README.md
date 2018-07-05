@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Tilt     :BLOG:Medium:
 
+# Leetcode: Binary Tree Tilt     :BLOG:Medium:
 
 ---
 
@@ -30,7 +30,7 @@ Note:
 The sum of node values in any subtree won't exceed the range of 32-bit integer.  
 All the tilt values won't exceed the range of 32-bit integer.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-tilt)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-tilt)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-tilt/description/)  
 
@@ -48,30 +48,31 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def findTilt(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            ## Idea: 
-            ## Complexity: Time O(n), Space O(h)
-            (_sum, cur_tilt) = self._findTilt(root)
-            return cur_tilt
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	## Idea: 
+    	## Complexity: Time O(n), Space O(h)
+    	(_sum, cur_tilt) = self._findTilt(root)
+    	return cur_tilt
     
         def _findTilt(self, root):
-            """
-            :rtype: (sum, tilt)
-            """
-            if root is None:
-                return (0, 0)
-            if root.left is None and root.right is None:
-                return (root.val, 0)
-            cur_sum, cur_tilt = 0, 0
-            left_sum, left_tilt = 0, 0
-            right_sum, right_tilt = 0, 0
-            if root.left:
-                (left_sum, left_tilt) = self._findTilt(root.left)
-            if root.right:
-                (right_sum, right_tilt) = self._findTilt(root.right)
-            cur_sum = left_sum + right_sum + root.val
-            cur_tilt = left_tilt + right_tilt + abs(left_sum-right_sum)
-            return (cur_sum, cur_tilt)
+    	"""
+    	:rtype: (sum, tilt)
+    	"""
+    	if root is None:
+    	    return (0, 0)
+    	if root.left is None and root.right is None:
+    	    return (root.val, 0)
+    	cur_sum, cur_tilt = 0, 0
+    	left_sum, left_tilt = 0, 0
+    	right_sum, right_tilt = 0, 0
+    	if root.left:
+    	    (left_sum, left_tilt) = self._findTilt(root.left)
+    	if root.right:
+    	    (right_sum, right_tilt) = self._findTilt(root.right)
+    	cur_sum = left_sum + right_sum + root.val
+    	cur_tilt = left_tilt + right_tilt + abs(left_sum-right_sum)
+    	return (cur_sum, cur_tilt)
+

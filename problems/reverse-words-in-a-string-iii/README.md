@@ -1,5 +1,5 @@
-# Leetcode: Reverse Words in a String III     :BLOG:Basic:
 
+# Leetcode: Reverse Words in a String III     :BLOG:Basic:
 
 ---
 
@@ -14,7 +14,7 @@ Input: "Let's take LeetCode contest"
 Output: "s'teL ekat edoCteeL tsetnoc"  
 Note: In the string, each word is separated by single space and there will not be any extra space in the string.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-words-in-a-string-iii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-words-in-a-string-iii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)  
 
@@ -25,12 +25,13 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/reverse-words-in-a-string-iii
     class Solution(object):
         def reverseWords(self, s):
-            """
-            :type s: str
-            :rtype: str
-            """
-            reversed_word_list = []
-            for word in s.split(" "):
-                reversed_word_list.append(word[::-1])
+    	"""
+    	:type s: str
+    	:rtype: str
+    	"""
+    	reversed_word_list = []
+    	for word in s.split(" "):
+    	    reversed_word_list.append(word[::-1])
     
-            return " ".join(reversed_word_list)
+    	return " ".join(reversed_word_list)
+

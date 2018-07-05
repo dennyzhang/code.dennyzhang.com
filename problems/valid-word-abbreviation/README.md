@@ -1,5 +1,5 @@
-# Leetcode: Valid Word Abbreviation     :BLOG:Basic:
 
+# Leetcode: Valid Word Abbreviation     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Valid Word Abbreviation
 ---
 
 Similar Problems:  
+
 -   [Flip Game](https://code.dennyzhang.com/flip-game)
 -   [Flatten Nested List Iterator](https://code.dennyzhang.com/flatten-nested-list-iterator)
 -   [Tag: #string](https://code.dennyzhang.com/tag/string)
@@ -37,7 +38,7 @@ Example 2:
     
     Return false.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-word-abbreviation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-word-abbreviation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-word-abbreviation/description/)  
 
@@ -50,34 +51,35 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def validWordAbbreviation(self, word, abbr):
-            """
-            :type word: str
-            :type abbr: str
-            :rtype: bool
-            """
-            j, count = 0, 0
-            for i in range(len(word)):
-                if count != 0:
-                    count -= 1
-                    continue
-                # abbr is shorter
-                if j >= len(abbr): return False
-                if abbr[j].isalpha():
-                    if abbr[j] != word[i]: return False
-                    j += 1
-                else:
-                    # invalid number
-                    if abbr[j] == '0': return False
-                    # find number
-                    end_index = j
-                    for k in range(j+1, len(abbr)):
-                        if abbr[k].isdigit():
-                            end_index = k
-                        else:
-                            break
-                    count = int(abbr[j:end_index+1])
-                    j = end_index+1
-                    # match current character
-                    count -= 1
-            # check whether abbr is longer
-            return count == 0 and j == len(abbr)
+    	"""
+    	:type word: str
+    	:type abbr: str
+    	:rtype: bool
+    	"""
+    	j, count = 0, 0
+    	for i in range(len(word)):
+    	    if count != 0:
+    		count -= 1
+    		continue
+    	    # abbr is shorter
+    	    if j >= len(abbr): return False
+    	    if abbr[j].isalpha():
+    		if abbr[j] != word[i]: return False
+    		j += 1
+    	    else:
+    		# invalid number
+    		if abbr[j] == '0': return False
+    		# find number
+    		end_index = j
+    		for k in range(j+1, len(abbr)):
+    		    if abbr[k].isdigit():
+    			end_index = k
+    		    else:
+    			break
+    		count = int(abbr[j:end_index+1])
+    		j = end_index+1
+    		# match current character
+    		count -= 1
+    	# check whether abbr is longer
+    	return count == 0 and j == len(abbr)
+

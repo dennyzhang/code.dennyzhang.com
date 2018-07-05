@@ -1,5 +1,5 @@
-# Leetcode: Interleaving String     :BLOG:Medium:
 
+# Leetcode: Interleaving String     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Interleaving String
 ---
 
 Similar Problems:  
+
 -   [Delete Operation for Two Strings](https://code.dennyzhang.com/delete-operation-for-two-strings)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#string](https://code.dennyzhang.com/tag/string), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -25,7 +26,7 @@ Example 2:
     Input: s1 = "aabcc", s2 = "dbbca", s3 = "aadbbbaccc"
     Output: false
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/interleaving-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/interleaving-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/interleaving-string/description/)  
 
@@ -34,3 +35,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/interleaving-string
+

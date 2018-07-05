@@ -1,5 +1,5 @@
-# Leetcode: Is Graph Bipartite?     :BLOG:Medium:
 
+# Leetcode: Is Graph Bipartite?     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Is Graph Bipartite?
 ---
 
 Similar Problems:  
+
 -   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
@@ -48,7 +49,7 @@ Note:
 -   graph[i] will contain integers in range [0, graph.length - 1].
 -   graph[i] will not contain i or duplicate values.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/is-graph-bipartite)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/is-graph-bipartite)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/is-graph-bipartite/description/)  
 
@@ -62,31 +63,31 @@ Leave me comments, if you have better ways to solve.
         ##
         ## Complexity: Time O(n), Space O(n)
         def isBipartite(self, graph):
-            """
-            :type graph: List[List[int]]
-            :rtype: bool
-            """
-            length = len(graph)
-            self.set_type = [0]*length
-            for i in range(length):
-                if self.set_type[i] == 0:
-                    # start dfs
-                    if self.dfs(graph, i, 1) is False:
-                        return False
-            return True
+    	"""
+    	:type graph: List[List[int]]
+    	:rtype: bool
+    	"""
+    	length = len(graph)
+    	self.set_type = [0]*length
+    	for i in range(length):
+    	    if self.set_type[i] == 0:
+    		# start dfs
+    		if self.dfs(graph, i, 1) is False:
+    		    return False
+    	return True
     
         def dfs(self, graph, node, type):
-            # mark current node
-            self.set_type[node] = type
+    	# mark current node
+    	self.set_type[node] = type
     
-            # check the neighbors of current node
-            for edge in graph[node]:
-                if self.set_type[edge] == 0:
-                    if self.dfs(graph, edge, -type) is False:
-                        return False
-                elif self.set_type[edge] == type:
-                    return False
-            return True
+    	# check the neighbors of current node
+    	for edge in graph[node]:
+    	    if self.set_type[edge] == 0:
+    		if self.dfs(graph, edge, -type) is False:
+    		    return False
+    	    elif self.set_type[edge] == type:
+    		return False
+    	return True
     
         ## Basic Ideas: BFS
         ## 
@@ -98,30 +99,31 @@ Leave me comments, if you have better ways to solve.
         ##
         ## Complexity: Time O(n), Space O(n)
         def isBipartite_v1(self, graph):
-            """
-            :type graph: List[List[int]]
-            :rtype: bool
-            """
-            import collections
-            length = len(graph)
-            set_type = [0]*length
-            for i in range(length):
-                # a new forest starts
-                if set_type[i] == 0:
-                    set_type[i] = 1
-                    queue = collections.deque()
-                    queue.append((i, 1))
-                    # BFS
-                    while len(queue) != 0:
-                        for k in range(len(queue)):
-                            (node, node_type) = queue.popleft()
-                            # find the neighbors
-                            for edge in graph[node]:
-                                if set_type[edge] == 0:
-                                    # get the candidates
-                                    set_type[edge] = -node_type
-                                    queue.append((edge, -node_type))
-                                elif set_type[edge] == node_type:
-                                    # detect a conflict
-                                    return False
-            return True
+    	"""
+    	:type graph: List[List[int]]
+    	:rtype: bool
+    	"""
+    	import collections
+    	length = len(graph)
+    	set_type = [0]*length
+    	for i in range(length):
+    	    # a new forest starts
+    	    if set_type[i] == 0:
+    		set_type[i] = 1
+    		queue = collections.deque()
+    		queue.append((i, 1))
+    		# BFS
+    		while len(queue) != 0:
+    		    for k in range(len(queue)):
+    			(node, node_type) = queue.popleft()
+    			# find the neighbors
+    			for edge in graph[node]:
+    			    if set_type[edge] == 0:
+    				# get the candidates
+    				set_type[edge] = -node_type
+    				queue.append((edge, -node_type))
+    			    elif set_type[edge] == node_type:
+    				# detect a conflict
+    				return False
+    	return True
+

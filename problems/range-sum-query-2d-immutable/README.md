@@ -1,5 +1,5 @@
-# Leetcode: Range Sum Query 2D - Immutable     :BLOG:Medium:
 
+# Leetcode: Range Sum Query 2D - Immutable     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Range Sum Query 2D - Immutable
 ---
 
 Similar Problems:  
+
 -   [Review: Concurrency Problems](https://code.dennyzhang.com/review-concurrency)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign), [#concurrency](https://code.dennyzhang.com/tag/concurrency)
@@ -34,11 +35,12 @@ Example:
     sumRegion(1, 2, 2, 4) -> 12
 
 Note:  
+
 1.  You may assume that the matrix does not change.
 2.  There are many calls to sumRegion function.
 3.  You may assume that row1 <= row2 and col1 <= col2.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-sum-query-2d-immutable)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-sum-query-2d-immutable)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/range-sum-query-2d-immutable/description/)  
 
@@ -52,55 +54,56 @@ Leave me comments, if you have better ways to solve.
         ##       Thus we can get the sum in Time O(1)
         ## Complexity:
         def __init__(self, matrix):
-            """
-            :type matrix: List[List[int]]
-            """
-            self.is_empty = False
-            if matrix is None:
-                self.is_empty = True
-                return
-            height = len(matrix)
-            if height == 0:
-                self.is_empty = True
-                return
+    	"""
+    	:type matrix: List[List[int]]
+    	"""
+    	self.is_empty = False
+    	if matrix is None:
+    	    self.is_empty = True
+    	    return
+    	height = len(matrix)
+    	if height == 0:
+    	    self.is_empty = True
+    	    return
     
-            width = len(matrix[0])
-            self.sum_matrix = []*height
-            for i in range(0, height):
-                self.sum_matrix.append([0]*width)
-            # calculate the sum
-            for i in range(0, height):
-                for j in range(0, width):
-                    if i == 0:
-                        self.sum_matrix[i][j] = 0
-                        for k in range(0, j+1):
-                            self.sum_matrix[i][j] += matrix[i][k]
-                    elif j == 0:
-                        self.sum_matrix[i][j] = 0
-                        for k in range(0, i+1):
-                            self.sum_matrix[i][j] += matrix[k][j]
-                    else:
-                        self.sum_matrix[i][j] = matrix[i][j] \
-                                    + self.sum_matrix[i-1][j] \
-                                    + self.sum_matrix[i][j-1] \
-                                    - self.sum_matrix[i-1][j-1]
+    	width = len(matrix[0])
+    	self.sum_matrix = []*height
+    	for i in range(0, height):
+    	    self.sum_matrix.append([0]*width)
+    	# calculate the sum
+    	for i in range(0, height):
+    	    for j in range(0, width):
+    		if i == 0:
+    		    self.sum_matrix[i][j] = 0
+    		    for k in range(0, j+1):
+    			self.sum_matrix[i][j] += matrix[i][k]
+    		elif j == 0:
+    		    self.sum_matrix[i][j] = 0
+    		    for k in range(0, i+1):
+    			self.sum_matrix[i][j] += matrix[k][j]
+    		else:
+    		    self.sum_matrix[i][j] = matrix[i][j] \
+    				+ self.sum_matrix[i-1][j] \
+    				+ self.sum_matrix[i][j-1] \
+    				- self.sum_matrix[i-1][j-1]
     
         def sumRegion(self, row1, col1, row2, col2):
-            """
-            :type row1: int
-            :type col1: int
-            :type row2: int
-            :type col2: int
-            :rtype: int
-            """
-            if self.is_empty:
-                return None
-            else:
-                return self.sum_matrix[row2][col2] \
-                        - (self.sum_matrix[row1-1][col2] if row1>0 else 0) \
-                        - (self.sum_matrix[row2][col1-1] if col1>0 else 0) \
-                        + (self.sum_matrix[row1-1][col1-1] if row1>0 and col1>0 else 0)
+    	"""
+    	:type row1: int
+    	:type col1: int
+    	:type row2: int
+    	:type col2: int
+    	:rtype: int
+    	"""
+    	if self.is_empty:
+    	    return None
+    	else:
+    	    return self.sum_matrix[row2][col2] \
+    		    - (self.sum_matrix[row1-1][col2] if row1>0 else 0) \
+    		    - (self.sum_matrix[row2][col1-1] if col1>0 else 0) \
+    		    + (self.sum_matrix[row1-1][col1-1] if row1>0 and col1>0 else 0)
     
     # Your NumMatrix object will be instantiated and called as such:
     # obj = NumMatrix(matrix)
     # param_1 = obj.sumRegion(row1,col1,row2,col2)
+

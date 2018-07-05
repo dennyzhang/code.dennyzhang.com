@@ -1,5 +1,5 @@
-# Leetcode: Arranging Coins     :BLOG:Basic:
 
+# Leetcode: Arranging Coins     :BLOG:Basic:
 
 ---
 
@@ -36,7 +36,7 @@ n is a non-negative integer and fits within the range of a 32-bit signed integer
     
     Because the 4th row is incomplete, we return 3.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/arranging-coins)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/arranging-coins)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/arranging-coins/description/)  
 
@@ -47,7 +47,8 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/arranging-coins
     class Solution(object):
         def arrangeCoins(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+

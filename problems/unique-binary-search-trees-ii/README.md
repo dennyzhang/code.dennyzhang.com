@@ -1,5 +1,5 @@
-# Leetcode: Unique Binary Search Trees II     :BLOG:Hard:
 
+# Leetcode: Unique Binary Search Trees II     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Unique Binary Search Trees II
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -24,7 +25,7 @@ Given an integer n, generate all structurally unique BST's (binary search trees)
         /     /       \                 \
        2     1         2                 3
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-binary-search-trees-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-binary-search-trees-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/unique-binary-search-trees-ii/description/)  
 
@@ -33,3 +34,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/unique-binary-search-trees-ii
+

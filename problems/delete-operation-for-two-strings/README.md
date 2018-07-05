@@ -1,5 +1,5 @@
-# Leetcode: Delete Operation for Two Strings     :BLOG:Hard:
 
+# Leetcode: Delete Operation for Two Strings     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Delete Operation for Two Strings
 ---
 
 Similar Problems:  
+
 -   [Edit Distance](https://code.dennyzhang.com/edit-distance)
 -   [Maximum Length of Repeated Subarray](https://code.dennyzhang.com/maximum-length-of-repeated-subarray)
 -   [Interleaving String](https://code.dennyzhang.com/interleaving-string)
@@ -23,10 +24,11 @@ Given two words word1 and word2, find the minimum number of steps required to ma
     Explanation: You need one step to make "sea" to "ea" and another step to make "eat" to "ea".
 
 Note:  
+
 1.  The length of given words won't exceed 500.
 2.  Characters in given words can only be lower-case letters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-operation-for-two-strings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-operation-for-two-strings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/delete-operation-for-two-strings/description/)  
 
@@ -44,22 +46,23 @@ Leave me comments, if you have better ways to solve.
         dp := make([]int, len(word2)+1)
         for i, _ := range dp { dp[i] = i }
         for i:=1; i<=len(word1); i++ {
-            prev := i-1
-            dp[0] = i
-            for j:=1; j<=len(word2); j++ {
-                cur := -1
-                if word1[i-1] == word2[j-1] { 
-                    cur = prev
-                } else {
-                   // delete word1[i]
-                    v := dp[j]+1
-                    // delete word2[j]
-                    if v>dp[j-1]+1 { v = dp[j-1]+1 }
-                    cur = v
-                }
-                prev = dp[j]
-                dp[j] = cur
-            }
+    	prev := i-1
+    	dp[0] = i
+    	for j:=1; j<=len(word2); j++ {
+    	    cur := -1
+    	    if word1[i-1] == word2[j-1] { 
+    		cur = prev
+    	    } else {
+    	       // delete word1[i]
+    		v := dp[j]+1
+    		// delete word2[j]
+    		if v>dp[j-1]+1 { v = dp[j-1]+1 }
+    		cur = v
+    	    }
+    	    prev = dp[j]
+    	    dp[j] = cur
+    	}
         }
         return dp[len(word2)]
     }
+

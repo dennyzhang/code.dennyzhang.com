@@ -1,5 +1,5 @@
-# Leetcode: Search a 2D Matrix     :BLOG:Medium:
 
+# Leetcode: Search a 2D Matrix     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Search a 2D Matrix
 ---
 
 Similar Problems:  
+
 -   [Search a 2D Matrix II](https://code.dennyzhang.com/search-a-2d-matrix-ii)
 -   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
@@ -30,7 +31,7 @@ Consider the following matrix:
 
 Given target = 3, return true.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-a-2d-matrix)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-a-2d-matrix)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix/description/)  
 
@@ -39,3 +40,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/search-a-2d-matrix
+

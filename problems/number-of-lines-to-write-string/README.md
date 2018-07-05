@@ -1,5 +1,5 @@
-# Leetcode: Number of Lines To Write String     :BLOG:Basic:
 
+# Leetcode: Number of Lines To Write String     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Number of Lines To Write String
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic), [#string](https://code.dennyzhang.com/category/string)
 
 ---
@@ -50,7 +51,7 @@ Note:
 -   widths is an array of length 26.
 -   widths[i] will be in the range of [2, 10].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-lines-to-write-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-lines-to-write-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-lines-to-write-string/description/)  
 
@@ -61,19 +62,20 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/number-of-lines-to-write-string
     class Solution:
         def numberOfLines(self, widths, S):
-            """
-            :type widths: List[int]
-            :type S: str
-            :rtype: List[int]
-            """
-            import collections
-            d = collections.defaultdict(lambda: 0)
-            for i in range(26): d[chr(ord('a')+i)] = widths[i]
-            line_count, w = 1, 0
-            for ch in S:
-                if w + d[ch] <= 100:
-                    w += d[ch]
-                    continue
-                line_count += 1
-                w = d[ch]
-            return [line_count, w]
+    	"""
+    	:type widths: List[int]
+    	:type S: str
+    	:rtype: List[int]
+    	"""
+    	import collections
+    	d = collections.defaultdict(lambda: 0)
+    	for i in range(26): d[chr(ord('a')+i)] = widths[i]
+    	line_count, w = 1, 0
+    	for ch in S:
+    	    if w + d[ch] <= 100:
+    		w += d[ch]
+    		continue
+    	    line_count += 1
+    	    w = d[ch]
+    	return [line_count, w]
+

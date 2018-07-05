@@ -1,5 +1,5 @@
-# Leetcode: Predict the Winner     :BLOG:Medium:
 
+# Leetcode: Predict the Winner     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Predict the Winner
 ---
 
 Similar Problems:  
+
 -   [Target Sum](https://code.dennyzhang.com/target-sum)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game), [#minmax](https://code.dennyzhang.com/tag/minmax), [#dp2order](https://code.dennyzhang.com/tag/dp2order)
@@ -35,11 +36,12 @@ Example 2:
     Finally, player 1 has more score (234) than player 2 (12), so you need to return True representing player1 can win.
 
 Note:  
+
 1.  1 <= length of the array <= 20.
 2.  Any scores in the given array are non-negative integers and will not exceed 10,000,000.
 3.  If the scores of both players are equal, then player 1 is still the winner.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/predict-the-winner)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/predict-the-winner)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/predict-the-winner/description/)  
 
@@ -48,3 +50,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/predict-the-winner
+

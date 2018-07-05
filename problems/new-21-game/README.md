@@ -1,5 +1,5 @@
-# Leetcode: New 21 Game     :BLOG:Medium:
 
+# Leetcode: New 21 Game     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ New 21 Game
 ---
 
 Similar Problems:  
+
 -   [Climbing Stairs](https://code.dennyzhang.com/climbing-stairs)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game), [#possibilities](https://code.dennyzhang.com/tag/possibilities)
 
@@ -44,7 +45,7 @@ Note:
 3.  Answers will be accepted as correct if they are within 10^-5 of the correct answer.
 4.  The judging time limit has been reduced for this question.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/new-21-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/new-21-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/new-21-game/description/)  
 
@@ -72,15 +73,16 @@ Leave me comments, if you have better ways to solve.
         var sum, res float64
         sum, res = 1, 0
         for i:=1; i<=N; i++ {
-            dp[i] = sum/float64(W)
-            if i<K {
-                sum += dp[i]
-            } else {
-                res += dp[i] 
-            }
-            if i-W>=0 {
-                sum -= dp[i-W]
-            }
+    	dp[i] = sum/float64(W)
+    	if i<K {
+    	    sum += dp[i]
+    	} else {
+    	    res += dp[i] 
+    	}
+    	if i-W>=0 {
+    	    sum -= dp[i-W]
+    	}
         }
         return res
     }
+

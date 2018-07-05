@@ -1,5 +1,5 @@
-# Leetcode: Integer to English Words     :BLOG:Hard:
 
+# Leetcode: Integer to English Words     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Integer to English Words
 ---
 
 Similar Problems:  
+
 -   [Integer to Roman](https://code.dennyzhang.com/integer-to-roman)
 -   [Reconstruct Original Digits from English](https://code.dennyzhang.com/reconstruct-original-digits-from-english)
 -   Tag: [#string](https://code.dennyzhang.com/tag/string), [#manydetails](https://code.dennyzhang.com/tag/manydetails)
@@ -22,7 +23,7 @@ For example,
     12345 -> "Twelve Thousand Three Hundred Forty Five"
     1234567 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-to-english-words)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/integer-to-english-words)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/integer-to-english-words/description/)  
 
@@ -87,3 +88,4 @@ Leave me comments, if you have better ways to solve.
       }
       return strings.TrimSpace(res)
     }
+

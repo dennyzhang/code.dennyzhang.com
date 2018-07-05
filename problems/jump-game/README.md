@@ -1,5 +1,5 @@
-# Leetcode: Jump Game     :BLOG:Basic:
 
+# Leetcode: Jump Game     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Jump Game
 ---
 
 Similar Problems:  
+
 -   [Add Bold Tag in String](https://code.dennyzhang.com/add-bold-tag-in-string)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
@@ -25,7 +26,7 @@ For example:
     
     A = [3,2,1,0,4], return false.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jump-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/jump-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/jump-game/description/)  
 
@@ -43,17 +44,18 @@ Interesting reading:
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def canJump(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: bool
-            """
-            length = len(nums)
-            if length <= 1: return True
-            maxIndex = 0
-            for i in range(0, length-1):
-                # we can't jump anymore
-                if i > maxIndex: break
-                # already found the target
-                if maxIndex >= length-1: break
-                maxIndex = max(maxIndex, i+nums[i])
-            return maxIndex >= length-1
+    	"""
+    	:type nums: List[int]
+    	:rtype: bool
+    	"""
+    	length = len(nums)
+    	if length <= 1: return True
+    	maxIndex = 0
+    	for i in range(0, length-1):
+    	    # we can't jump anymore
+    	    if i > maxIndex: break
+    	    # already found the target
+    	    if maxIndex >= length-1: break
+    	    maxIndex = max(maxIndex, i+nums[i])
+    	return maxIndex >= length-1
+

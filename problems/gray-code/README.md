@@ -1,5 +1,5 @@
-# Leetcode: Gray Code     :BLOG:Medium:
 
+# Leetcode: Gray Code     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Gray Code
 ---
 
 Similar Problems:  
+
 -   [Lexicographical Numbers](https://code.dennyzhang.com/lexicographical-numbers)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
@@ -32,7 +33,7 @@ For example, [0,2,3,1] is also a valid gray code sequence according to the above
 
 For now, the judge is able to judge based on one instance of gray code sequence. Sorry about that.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/gray-code)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/gray-code)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/gray-code/description/)  
 
@@ -43,16 +44,16 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/gray-code
     class Solution:
         def grayCode(self, n):
-            """
-            :type n: int
-            :rtype: List[int]
-            """
-            res = [0]
-            for i in range(n):
-                v = pow(2, i)
-                for j in range(len(res)-1, -1, -1):
-                    res.append(res[j]+v)
-            return res
+    	"""
+    	:type n: int
+    	:rtype: List[int]
+    	"""
+    	res = [0]
+    	for i in range(n):
+    	    v = pow(2, i)
+    	    for j in range(len(res)-1, -1, -1):
+    		res.append(res[j]+v)
+    	return res
     
         ## Basic Ideas: dynamic programming
         ##  get f(n) from f(n-1)
@@ -64,22 +65,23 @@ Leave me comments, if you have better ways to solve.
         ##      00 01 11 10 110 111 101 100
         ## Complexity:
         def grayCode_v1(self, n):
-            """
-            :type n: int
-            :rtype: List[int]
-            """
-            if n <= 0: return [0]
-            if n == 1: return [0, 1]
-            import copy
-            l = [0, 1]
-            for i in range(2, n+1):
-                l2 = copy.deepcopy(l)
-                v = pow(2, i-1)
-                for k in range(len(l)-1, -1, -1):
-                    l2.append(v+l[k])
-                l = l2
-            return l
+    	"""
+    	:type n: int
+    	:rtype: List[int]
+    	"""
+    	if n <= 0: return [0]
+    	if n == 1: return [0, 1]
+    	import copy
+    	l = [0, 1]
+    	for i in range(2, n+1):
+    	    l2 = copy.deepcopy(l)
+    	    v = pow(2, i-1)
+    	    for k in range(len(l)-1, -1, -1):
+    		l2.append(v+l[k])
+    	    l = l2
+    	return l
     
     # s = Solution()
     # print(s.grayCode(2))
     # print(s.grayCode(3))
+

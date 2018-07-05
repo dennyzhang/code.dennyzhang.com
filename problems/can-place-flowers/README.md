@@ -1,5 +1,5 @@
-# Leetcode: Can Place Flowers     :BLOG:Amusing:
 
+# Leetcode: Can Place Flowers     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Can Place Flowers
 ---
 
 Similar Problems:  
+
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#game](https://code.dennyzhang.com/tag/game), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
@@ -27,11 +28,12 @@ Given a flowerbed (represented as an array containing 0 and 1, where 0 means emp
     Output: False
 
 Note:  
+
 1.  The input array won't violate no-adjacent-flowers rule.
 2.  The input array size is in the range of [1, 20000].
 3.  n is a non-negative integer which won't exceed the input array size.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/can-place-flowers)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/can-place-flowers)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/can-place-flowers/description/)  
 
@@ -48,24 +50,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def canPlaceFlowers(self, flowerbed, n):
-            """
-            :type flowerbed: List[int]
-            :type n: int
-            :rtype: bool
-            """
-            total_flower, counter = 0, 0
-            length = len(flowerbed)
-            for i in range(-1, length+2):
-                if i == -1 or i == length: num = 0
-                elif i == length + 1:
-                    num = 1
-                else:
-                    num = flowerbed[i]
+    	"""
+    	:type flowerbed: List[int]
+    	:type n: int
+    	:rtype: bool
+    	"""
+    	total_flower, counter = 0, 0
+    	length = len(flowerbed)
+    	for i in range(-1, length+2):
+    	    if i == -1 or i == length: num = 0
+    	    elif i == length + 1:
+    		num = 1
+    	    else:
+    		num = flowerbed[i]
     
-                # caculate how many flowers we can plant
-                if num == 0: counter += 1
-                else: total_flower, counter = total_flower + (counter-1)/2, 0
-            return total_flower >= n
+    	    # caculate how many flowers we can plant
+    	    if num == 0: counter += 1
+    	    else: total_flower, counter = total_flower + (counter-1)/2, 0
+    	return total_flower >= n
     
     # s = Solution()
     # s = s.canPlaceFlowers([0,0,1,0,1], 1) # true
+

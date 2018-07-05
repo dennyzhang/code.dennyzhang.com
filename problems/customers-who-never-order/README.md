@@ -1,5 +1,5 @@
-# Leetcode: Customers Who Never Order     :BLOG:Medium:
 
+# Leetcode: Customers Who Never Order     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Customers Who Never Order
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -43,7 +44,7 @@ Using the above tables as example, return the following:
     | Max       |
     +-----------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/customers-who-never-order)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/customers-who-never-order)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/customers-who-never-order/description/)  
 
@@ -55,3 +56,4 @@ Leave me comments, if you have better ways to solve.
     select Customers.Name as Customers
     from Customers left join Orders on Customers.Id = Orders.CustomerId
     where Orders.CustomerId is Null;
+

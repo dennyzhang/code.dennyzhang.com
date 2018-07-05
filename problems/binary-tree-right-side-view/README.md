@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Right Side View     :BLOG:Medium:
 
+# Leetcode: Binary Tree Right Side View     :BLOG:Medium:
 
 ---
 
@@ -18,7 +18,7 @@ Given a binary tree, imagine yourself standing on the right side of it, return t
       5     4       <---
     You should return [1, 3, 4].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-right-side-view)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-right-side-view)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-right-side-view/description/)  
 
@@ -46,25 +46,26 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def rightSideView(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
-            if root is None:
-                return []
-            res = []
-            queue = []
-            queue.append(root)
-            while len(queue) != 0:
-                length = len(queue)
-                for i in xrange(length):
-                    element = queue[0]
-                    del queue[0]
-                    if element.left:
-                        queue.append(element.left)
-                    if element.right:
-                        queue.append(element.right)
-                    # right most element
-                    if i == length - 1:
-                        res.append(element.val)
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
+    	if root is None:
+    	    return []
+    	res = []
+    	queue = []
+    	queue.append(root)
+    	while len(queue) != 0:
+    	    length = len(queue)
+    	    for i in xrange(length):
+    		element = queue[0]
+    		del queue[0]
+    		if element.left:
+    		    queue.append(element.left)
+    		if element.right:
+    		    queue.append(element.right)
+    		# right most element
+    		if i == length - 1:
+    		    res.append(element.val)
+    	return res
+

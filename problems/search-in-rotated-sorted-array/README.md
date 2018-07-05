@@ -1,5 +1,5 @@
-# Leetcode: Search in Rotated Sorted Array     :BLOG:Medium:
 
+# Leetcode: Search in Rotated Sorted Array     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Search in Rotated Sorted Array
 ---
 
 Similar Problems:  
+
 -   [Find Minimum in Rotated Sorted Array](https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array)
 -   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
@@ -22,7 +23,7 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-in-rotated-sorted-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-in-rotated-sorted-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)  
 
@@ -36,38 +37,39 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(log(n)), Space O(1)
     class Solution:
         def search(self, nums, target):
-            """
-            :type nums: List[int]
-            :type target: int
-            :rtype: int
-            """
-            length = len(nums)
-            if length == 0: return -1
-            left, right = 0, length - 1
-            while left<right:
-                mid = left + int((right-left)/2)
-                # 5 6 7 0 1 2 3
-                if nums[mid] < nums[right]:
-                    # check the left half(included)
-                    right = mid
-                else:
-                    left = mid + 1
+    	"""
+    	:type nums: List[int]
+    	:type target: int
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	if length == 0: return -1
+    	left, right = 0, length - 1
+    	while left<right:
+    	    mid = left + int((right-left)/2)
+    	    # 5 6 7 0 1 2 3
+    	    if nums[mid] < nums[right]:
+    		# check the left half(included)
+    		right = mid
+    	    else:
+    		left = mid + 1
     
-            pivot = left
-            # binary search for part1
-            left, right = 0, pivot-1
-            while left<=right:
-                mid = left + int((right-left)/2)
-                if nums[mid] == target: return mid
-                if nums[mid] < target: left = mid + 1
-                else: right = mid - 1
+    	pivot = left
+    	# binary search for part1
+    	left, right = 0, pivot-1
+    	while left<=right:
+    	    mid = left + int((right-left)/2)
+    	    if nums[mid] == target: return mid
+    	    if nums[mid] < target: left = mid + 1
+    	    else: right = mid - 1
     
-            # binary search for part2
-            left, right = pivot, length-1
-            while left<=right:
-                mid = left + int((right-left)/2)
-                if nums[mid] == target: return mid
-                if nums[mid] < target: left = mid + 1
-                else: right = mid - 1
+    	# binary search for part2
+    	left, right = pivot, length-1
+    	while left<=right:
+    	    mid = left + int((right-left)/2)
+    	    if nums[mid] == target: return mid
+    	    if nums[mid] < target: left = mid + 1
+    	    else: right = mid - 1
     
-            return -1
+    	return -1
+

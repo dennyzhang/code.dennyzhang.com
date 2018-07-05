@@ -1,5 +1,5 @@
-# Leetcode: Largest Palindrome Product     :BLOG:Medium:
 
+# Leetcode: Largest Palindrome Product     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Largest Palindrome Product
 ---
 
 Similar Problems:  
+
 -   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome)
 -   Tag: [#palindrome](https://code.dennyzhang.com/tag/palindrome)
 
@@ -27,7 +28,7 @@ Since the result could be very large, you should return the largest palindrome m
 
 Note: The range of n is [1,8].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-palindrome-product)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-palindrome-product)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/largest-palindrome-product/description/)  
 
@@ -51,3 +52,4 @@ Leave me comments, if you have better ways to solve.
         res := []int{9, 987, 123, 597, 677, 1218, 877, 475}
         return res[n-1]
     }
+

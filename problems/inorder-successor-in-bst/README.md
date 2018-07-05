@@ -1,5 +1,5 @@
-# Leetcode: Inorder Successor in BST     :BLOG:Medium:
 
+# Leetcode: Inorder Successor in BST     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Inorder Successor in BST
 ---
 
 Similar Problems:  
+
 -   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal), [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
@@ -40,7 +41,7 @@ Example 2:
     
     Output: null
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/inorder-successor-in-bst)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/inorder-successor-in-bst)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/inorder-successor-in-bst/description/)  
 
@@ -71,19 +72,20 @@ Intuitive Idea would have too many details.
     
     class Solution(object):
         def inorderSuccessor(self, root, p):
-            """
-            :type root: TreeNode
-            :type p: TreeNode
-            :rtype: TreeNode
-            """
-            if p is None or root is None: return None
-            res = None
-            while root:
-                if root.val > p.val:
-                    # go to left
-                    res = root
-                    root = root.left
-                else:
-                    # go to right
-                    root = root.right
-            return res
+    	"""
+    	:type root: TreeNode
+    	:type p: TreeNode
+    	:rtype: TreeNode
+    	"""
+    	if p is None or root is None: return None
+    	res = None
+    	while root:
+    	    if root.val > p.val:
+    		# go to left
+    		res = root
+    		root = root.left
+    	    else:
+    		# go to right
+    		root = root.right
+    	return res
+

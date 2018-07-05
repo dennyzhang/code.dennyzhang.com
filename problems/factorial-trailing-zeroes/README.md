@@ -1,5 +1,5 @@
-# Leetcode: Factorial Trailing Zeroes     :BLOG:Amusing:
 
+# Leetcode: Factorial Trailing Zeroes     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Factorial Trailing Zeroes
 ---
 
 Similar Problems:  
+
 -   [Number of Digit One](https://code.dennyzhang.com/number-of-digit-one)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [math](https://code.dennyzhang.com/tag/math), [inspiring](https://code.dennyzhang.com/tag/inspiring)
@@ -18,7 +19,7 @@ Given an integer n, return the number of trailing zeroes in n!.
 
 Note: Your solution should be in logarithmic time complexity.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/factorial-trailing-zeroes)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/factorial-trailing-zeroes)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/factorial-trailing-zeroes/description/)  
 
@@ -35,8 +36,9 @@ Leave me comments, if you have better ways to solve.
     func trailingZeroes(n int) int {
         res := 0
         for n%5 == 0 {
-            n = int(n/5)
-            res += 1
+    	n = int(n/5)
+    	res += 1
         }
         return res
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Paths     :BLOG:Medium:
 
+# Leetcode: Binary Tree Paths     :BLOG:Medium:
 
 ---
 
@@ -19,7 +19,7 @@ Given a binary tree, return all root-to-leaf paths.
     
     ["1->2->5", "1->3"]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-paths)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-paths)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-paths/description/)  
 
@@ -37,24 +37,25 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def binaryTreePaths(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[str]
-            """
-            ## Idea: DFS recursive
-            ## Complexity:
-            if root is None:
-                return []
-            if root.left is None and root.right is None:
-                return [str(root.val)]
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[str]
+    	"""
+    	## Idea: DFS recursive
+    	## Complexity:
+    	if root is None:
+    	    return []
+    	if root.left is None and root.right is None:
+    	    return [str(root.val)]
     
-            res = []
-            if root.left:
-                for string in self.binaryTreePaths(root.left):
-                    res.append("%s->%s" % (str(root.val), string))
+    	res = []
+    	if root.left:
+    	    for string in self.binaryTreePaths(root.left):
+    		res.append("%s->%s" % (str(root.val), string))
     
-            if root.right:
-                for string in self.binaryTreePaths(root.right):
-                    res.append("%s->%s" % (str(root.val), string))
+    	if root.right:
+    	    for string in self.binaryTreePaths(root.right):
+    		res.append("%s->%s" % (str(root.val), string))
     
-            return res
+    	return res
+

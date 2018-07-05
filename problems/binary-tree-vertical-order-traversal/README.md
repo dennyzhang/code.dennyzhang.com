@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Vertical Order Traversal     :BLOG:Medium:
 
+# Leetcode: Binary Tree Vertical Order Traversal     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Binary Tree Vertical Order Traversal
 ---
 
 Similar Problems:  
+
 -   [Find Leaves of Binary Tree](https://code.dennyzhang.com/find-leaves-of-binary-tree)
 -   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -81,7 +82,7 @@ return its vertical order traversal as:
       [7]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-vertical-order-traversal)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-vertical-order-traversal)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/)  
 
@@ -103,24 +104,25 @@ Leave me comments, if you have better ways to solve.
     import collections
     class Solution:
         def verticalOrder(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[List[int]]
-            """
-            if root is None: return []
-            d = collections.defaultdict(lambda: [])
-            queue = collections.deque([(root, 0)])
-            d[0].append(root.val)
-            while len(queue) != 0:
-                for k in range(len(queue)):
-                    (node, position) = queue.popleft()
-                    if node.left:
-                        d[position-1].append(node.left.val)
-                        queue.append((node.left, position-1))
-                    if node.right:
-                        d[position+1].append(node.right.val)
-                        queue.append((node.right, position+1))
-            res = []
-            for position in sorted(d.keys()):
-                res.append(d[position])
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[List[int]]
+    	"""
+    	if root is None: return []
+    	d = collections.defaultdict(lambda: [])
+    	queue = collections.deque([(root, 0)])
+    	d[0].append(root.val)
+    	while len(queue) != 0:
+    	    for k in range(len(queue)):
+    		(node, position) = queue.popleft()
+    		if node.left:
+    		    d[position-1].append(node.left.val)
+    		    queue.append((node.left, position-1))
+    		if node.right:
+    		    d[position+1].append(node.right.val)
+    		    queue.append((node.right, position+1))
+    	res = []
+    	for position in sorted(d.keys()):
+    	    res.append(d[position])
+    	return res
+

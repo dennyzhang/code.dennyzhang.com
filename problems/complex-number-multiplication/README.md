@@ -1,5 +1,5 @@
-# Leetcode: Complex Number Multiplication     :BLOG:Basic:
 
+# Leetcode: Complex Number Multiplication     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Complex Number Multiplication
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   [Solve the Equation](https://code.dennyzhang.com/solve-the-equation)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
@@ -35,7 +36,7 @@ Note:
 -   The input strings will not have extra blank.
 -   The input strings will be given in the form of a+bi, where the integer a and b will both belong to the range of [-100, 100]. And the output should be also in this form.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/complex-number-multiplication)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/complex-number-multiplication)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/complex-number-multiplication/description/)  
 
@@ -61,3 +62,4 @@ Leave me comments, if you have better ways to solve.
         v2, _ = strconv.Atoi(a[i+1:len(a)-1])
         return
     }
+

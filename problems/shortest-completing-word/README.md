@@ -1,5 +1,5 @@
-# Leetcode: Shortest Completing Word     :BLOG:Medium:
 
+# Leetcode: Shortest Completing Word     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Completing Word
 ---
 
 Similar Problems:  
+
 -   [Group Shifted Strings](https://code.dennyzhang.com/group-shifted-strings)
 -   [Sentence Similarity](https://code.dennyzhang.com/sentence-similarity)
 -   [Tag: #hashmap](https://code.dennyzhang.com/tag/hashmap)
@@ -38,12 +39,13 @@ Example 2:
     We return the one that occurred first.
 
 Note:  
+
 1.  licensePlate will be a string with length in range [1, 7].
 2.  licensePlate will contain digits, spaces, or letters (uppercase or lowercase).
 3.  words will have a length in the range [10, 1000].
 4.  Every words[i] will consist of lowercase letters, and have length in range [1, 15].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-completing-word)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-completing-word)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-completing-word/description/)  
 
@@ -57,20 +59,21 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*log(n)), Space O(n)
     class Solution:
         def shortestCompletingWord(self, licensePlate, words):
-            """
-            :type licensePlate: str
-            :type words: List[str]
-            :rtype: str
-            """
-            import collections
-            m = collections.defaultdict(lambda: 0)
-            for ch in licensePlate:
-                if ch.isalpha(): m[ch.lower()] += 1
-            for word in sorted(words, key=lambda s: len(s)):
-                word_m = collections.defaultdict(lambda: 0)
-                for ch in word: word_m[ch] += 1
-                count = 0
-                for ch in m:
-                    if word_m[ch] < m[ch]: break
-                    count += 1
-                if count == len(m): return word
+    	"""
+    	:type licensePlate: str
+    	:type words: List[str]
+    	:rtype: str
+    	"""
+    	import collections
+    	m = collections.defaultdict(lambda: 0)
+    	for ch in licensePlate:
+    	    if ch.isalpha(): m[ch.lower()] += 1
+    	for word in sorted(words, key=lambda s: len(s)):
+    	    word_m = collections.defaultdict(lambda: 0)
+    	    for ch in word: word_m[ch] += 1
+    	    count = 0
+    	    for ch in m:
+    		if word_m[ch] < m[ch]: break
+    		count += 1
+    	    if count == len(m): return word
+

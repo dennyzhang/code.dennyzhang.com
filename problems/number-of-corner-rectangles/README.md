@@ -1,5 +1,5 @@
-# Leetcode: Number Of Corner Rectangles     :BLOG:Medium:
 
+# Leetcode: Number Of Corner Rectangles     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Number Of Corner Rectangles
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
@@ -18,6 +19,7 @@ A corner rectangle is 4 distinct 1s on the grid that form an axis-aligned rectan
 
 Example 1:  
 
+    
     Input: grid = 
     [[1, 0, 0, 1, 0],
      [0, 0, 1, 0, 1],
@@ -48,7 +50,7 @@ Note:
 2.  Each grid[i][j] will be either 0 or 1.
 3.  The number of 1s in the grid will be at most 6000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-corner-rectangles)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-corner-rectangles)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-corner-rectangles/description/)  
 
@@ -66,15 +68,16 @@ Leave me comments, if you have better ways to solve.
     func countCornerRectangles(grid [][]int) int {
         res := 0
         for i:=0; i<len(grid)-1; i++ {
-            for j:=i+1; j<len(grid); j++ {
-                count:=0
-                for k:=0; k<len(grid[0]); k++ {
-                    if grid[i][k]==1 && grid[j][k]==1 {
-                        count++
-                    }
-                }
-                res += (count*(count-1))/2
-            }
+    	for j:=i+1; j<len(grid); j++ {
+    	    count:=0
+    	    for k:=0; k<len(grid[0]); k++ {
+    		if grid[i][k]==1 && grid[j][k]==1 {
+    		    count++
+    		}
+    	    }
+    	    res += (count*(count-1))/2
+    	}
         }
         return res
     }
+

@@ -1,5 +1,5 @@
-# LintCode: Word Frequency Count     :BLOG:Medium:
 
+# LintCode: Word Frequency Count     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Word Frequency Count
 ---
 
 Similar Problems:  
+
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
@@ -31,7 +32,7 @@ Example
     Explanation:
     "trouble" is the most frequently occurring word.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-frequency-count)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-frequency-count)  
 
 Credits To: [lintcode.com](https://www.lintcode.com/problem/word-frequency-count/description)  
 
@@ -50,7 +51,7 @@ Leave me comments, if you have better ways to solve.
      * @return: Return the most frequent words
      */
     import ("strings"
-            "sort")
+    	"sort")
     func getWords (s string, excludeList []string) []string {
         excludeMap := map[string]bool{}
         for _, str := range excludeList { excludeMap[str] = true }
@@ -59,24 +60,25 @@ Leave me comments, if you have better ways to solve.
         s = strings.ToLower(s) + " "
         str := ""
         for _, ch := range s {
-            if ch >= 'a' && ch <= 'z' {
-                str += string(ch)
-            } else {
-                if str != "" {
-                    if excludeMap[str] == false {
-                        wordMap[str] += 1
-                        if wordMap[str] > max_count { max_count = wordMap[str] }
-                    }
-                    str = ""
-                }
-            }
+    	if ch >= 'a' && ch <= 'z' {
+    	    str += string(ch)
+    	} else {
+    	    if str != "" {
+    		if excludeMap[str] == false {
+    		    wordMap[str] += 1
+    		    if wordMap[str] > max_count { max_count = wordMap[str] }
+    		}
+    		str = ""
+    	    }
+    	}
         }
         res := []string{}
         for str := range wordMap {
-            if wordMap[str] == max_count {
-                res = append(res, str)
-            }
+    	if wordMap[str] == max_count {
+    	    res = append(res, str)
+    	}
         }
         sort.Strings(res)
         return res
     }
+

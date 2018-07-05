@@ -1,5 +1,5 @@
-# Winning Candidate     :BLOG:Medium:
 
+# Winning Candidate     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Winning Candidate
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -22,7 +23,7 @@ Table: Candidate
     | 3   | C       |
     | 4   | D       |
     | 5   | E       |
-    +-----+---------+
+    +-----+---------+  
 
 Table: Vote  
 
@@ -49,7 +50,7 @@ Write a sql to find the name of the winning candidate, the above example will re
 Notes:  
 You may assume there is no tie, in other words there will be at most one winning candidate.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/winning-candidate)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/winning-candidate)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/winning-candidate/description/)  
 
@@ -75,3 +76,4 @@ Leave me comments, if you have better ways to solve.
     #     order by count(1) desc
     #     limit 1) as t
     # on Candidate.id = t.CandidateId
+

@@ -1,5 +1,5 @@
-# Leetcode: Longest Mountain in Array     :BLOG:Medium:
 
+# Leetcode: Longest Mountain in Array     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Mountain in Array
 ---
 
 Similar Problems:  
+
 -   [Peak Index in a Mountain Array](https://code.dennyzhang.com/peak-index-in-a-mountain-array)
 -   Tag: [#array](https://code.dennyzhang.com/tag/array), [#mountain](https://code.dennyzhang.com/tag/mountain)
 
@@ -40,7 +41,7 @@ Note:
 1.  0 <= A.length <= 10000
 2.  0 <= A[i] <= 10000
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-mountain-in-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-mountain-in-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-mountain-in-array/description/)  
 
@@ -57,12 +58,13 @@ Leave me comments, if you have better ways to solve.
     func longestMountain(A []int) int {
         res := 0
         for i:=1; i<len(A)-1; i++ {
-            if A[i-1]<A[i] && A[i]>A[i+1] {
-                j, k := i-1, i+1
-                for j-1>=0 && A[j-1]<A[j] { j-- }
-                for k+1<len(A) && A[k]>A[k+1] { k++ }
-                if k-j+1 > res { res = k-j+1 }
-            }
+    	if A[i-1]<A[i] && A[i]>A[i+1] {
+    	    j, k := i-1, i+1
+    	    for j-1>=0 && A[j-1]<A[j] { j-- }
+    	    for k+1<len(A) && A[k]>A[k+1] { k++ }
+    	    if k-j+1 > res { res = k-j+1 }
+    	}
         }
         return res
     }
+

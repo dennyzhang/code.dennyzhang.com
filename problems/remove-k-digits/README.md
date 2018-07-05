@@ -1,5 +1,5 @@
-# Leetcode: Remove K Digits     :BLOG:Medium:
 
+# Leetcode: Remove K Digits     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Remove K Digits
 ---
 
 Similar Problems:  
+
 -   [Monotone Increasing Digits](https://code.dennyzhang.com/monotone-increasing-digits)
 -   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy), [Tag: #greedy](https://code.dennyzhang.com/tag/greedy)
 
@@ -36,7 +37,7 @@ Example 3:
     Output: "0"
     Explanation: Remove all the digits from the number and it is left with nothing which is 0.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-k-digits)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-k-digits)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-k-digits/description/)  
 
@@ -63,38 +64,39 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def removeKdigits(self, num, k):
-            """
-            :type num: str
-            :type k: int
-            :rtype: str
-            """
-            length = len(num)
-            l = []
-            for i in range(length):
-                # delete the previous, if necessary
-                while len(l) != 0 and k > 0:
-                    if num[i] < l[-1]:
-                        del l[-1]
-                        k -= 1
-                    else: break
+    	"""
+    	:type num: str
+    	:type k: int
+    	:rtype: str
+    	"""
+    	length = len(num)
+    	l = []
+    	for i in range(length):
+    	    # delete the previous, if necessary
+    	    while len(l) != 0 and k > 0:
+    		if num[i] < l[-1]:
+    		    del l[-1]
+    		    k -= 1
+    		else: break
     
-                if k == 0:
-                    l.append(num[i])
-                else:
-                    if i == length -1 or num[i] <= num[i+1]:
-                        l.append(num[i])
-                    else:
-                        # should delete digit i
-                        k -= 1
+    	    if k == 0:
+    		l.append(num[i])
+    	    else:
+    		if i == length -1 or num[i] <= num[i+1]:
+    		    l.append(num[i])
+    		else:
+    		    # should delete digit i
+    		    k -= 1
     
-            # remove from the tail
-            while len(l) !=0 and k>0:
-                del l[-1]
-                k -= 1
+    	# remove from the tail
+    	while len(l) !=0 and k>0:
+    	    del l[-1]
+    	    k -= 1
     
-            res = ''.join(l).lstrip('0')
-            if res == '': res ='0'
-            return res
+    	res = ''.join(l).lstrip('0')
+    	if res == '': res ='0'
+    	return res
     
     # s = Solution()
     # print(s.removeKdigits("12", 1))
+

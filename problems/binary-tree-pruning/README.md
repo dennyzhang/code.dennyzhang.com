@@ -48,7 +48,7 @@ Note:
 -   The binary tree will have at most 100 nodes.
 -   The value of each node will only be 0 or 1.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-pruning)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-pruning)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-pruning/description/)  
 

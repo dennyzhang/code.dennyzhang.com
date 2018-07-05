@@ -1,5 +1,5 @@
-# Leetcode: Minimum Moves to Equal Array Elements     :BLOG:Amusing:
 
+# Leetcode: Minimum Moves to Equal Array Elements     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Moves to Equal Array Elements
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [math](https://code.dennyzhang.com/tag/math)
 
@@ -28,7 +29,7 @@ Given a non-empty integer array of size n, find the minimum number of moves requ
     
     [1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-moves-to-equal-array-elements)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-moves-to-equal-array-elements)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/description/)  
 
@@ -52,8 +53,9 @@ Leave me comments, if you have better ways to solve.
     func minMoves(nums []int) int {
         sum, min := 0, 1<<31 - 1
         for _, num := range nums {
-            sum += num
-            if (num < min) { min = num }
+    	sum += num
+    	if (num < min) { min = num }
         }
         return sum - min*len(nums)
     }
+

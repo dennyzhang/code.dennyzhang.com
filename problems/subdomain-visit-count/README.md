@@ -1,5 +1,5 @@
-# Leetcode: Subdomain Visit Count     :BLOG:Basic:
 
+# Leetcode: Subdomain Visit Count     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Subdomain Visit Count
 ---
 
 Similar Problems:  
+
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
@@ -43,7 +44,7 @@ Notes:
 -   Each address will have either 1 or 2 "." characters.
 -   The input count in any count-paired domain will not exceed 10000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subdomain-visit-count)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/subdomain-visit-count)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/subdomain-visit-count/description/)  
 
@@ -56,20 +57,21 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def subdomainVisits(self, cpdomains):
-            """
-            :type cpdomains: List[str]
-            :rtype: List[str]
-            """
-            import collections
-            d = collections.defaultdict(lambda: 0)
-            for item in cpdomains:
-                l = item.split(' ')
-                count, domain = int(l[0]), l[1]
-                d[domain] += count
-                for i, ch in enumerate(domain):
-                    if ch == '.':
-                        d[domain[i+1:]] += count
-            res = []
-            for key in d:
-                res.append("%d %s" % (d[key], key))
-            return res
+    	"""
+    	:type cpdomains: List[str]
+    	:rtype: List[str]
+    	"""
+    	import collections
+    	d = collections.defaultdict(lambda: 0)
+    	for item in cpdomains:
+    	    l = item.split(' ')
+    	    count, domain = int(l[0]), l[1]
+    	    d[domain] += count
+    	    for i, ch in enumerate(domain):
+    		if ch == '.':
+    		    d[domain[i+1:]] += count
+    	res = []
+    	for key in d:
+    	    res.append("%d %s" % (d[key], key))
+    	return res
+

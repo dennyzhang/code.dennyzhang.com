@@ -1,5 +1,5 @@
-# Leetcode: 3Sum Closest     :BLOG:Medium:
 
+# Leetcode: 3Sum Closest     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@
 ---
 
 Similar Problems:  
+
 -   [3Sum Smaller](https://code.dennyzhang.com/3sum-smaller)
 -   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
@@ -20,7 +21,7 @@ Given an array S of n integers, find three integers in S such that the sum is cl
     
     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/3sum-closest)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/3sum-closest)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/3sum-closest/description/)  
 
@@ -33,27 +34,28 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*n), Space O(1)
     class Solution:
         def threeSumClosest(self, nums, target):
-            """
-            :type nums: List[int]
-            :type target: int
-            :rtype: int
-            """
-            import sys
-            length = len(nums)
-            if length <=2: return sum(nums)
-            nums.sort()
-            res = sum(nums[0:3])
-            for i in range(length-2):
-                l, r = i+1, length-1
-                while l<r:
-                    v = nums[i]+nums[l]+nums[r]
-                    if v == target: return v
-                    if abs(v-target) < abs(res-target): res = v
+    	"""
+    	:type nums: List[int]
+    	:type target: int
+    	:rtype: int
+    	"""
+    	import sys
+    	length = len(nums)
+    	if length <=2: return sum(nums)
+    	nums.sort()
+    	res = sum(nums[0:3])
+    	for i in range(length-2):
+    	    l, r = i+1, length-1
+    	    while l<r:
+    		v = nums[i]+nums[l]+nums[r]
+    		if v == target: return v
+    		if abs(v-target) < abs(res-target): res = v
     
-                    if v > target:
-                        # make v smaller
-                        r -= 1
-                    else:
-                        l += 1
+    		if v > target:
+    		    # make v smaller
+    		    r -= 1
+    		else:
+    		    l += 1
     
-            return res
+    	return res
+

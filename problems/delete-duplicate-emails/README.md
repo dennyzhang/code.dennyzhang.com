@@ -1,5 +1,5 @@
-# Leetcode: Delete Duplicate Emails     :BLOG:Medium:
 
+# Leetcode: Delete Duplicate Emails     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Delete Duplicate Emails
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -32,7 +33,7 @@ For example, after running your query, the above Person table should have the fo
     | 2  | bob@example.com  |
     +----+------------------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-duplicate-emails)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-duplicate-emails)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/delete-duplicate-emails/description/)  
 
@@ -44,3 +45,4 @@ Leave me comments, if you have better ways to solve.
     delete t1 from Person as t1 inner join Person as t2
     on t1.Email = t2.Email
     where t1.Id > t2.Id
+

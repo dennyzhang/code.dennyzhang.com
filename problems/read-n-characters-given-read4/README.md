@@ -1,5 +1,5 @@
-# Leetcode: Read N Characters Given Read4     :BLOG:Basic:
 
+# Leetcode: Read N Characters Given Read4     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Read N Characters Given Read4
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/tag/basic)
 
 ---
@@ -21,7 +22,7 @@ By using the read4 API, implement the function int read(char \*buf, int n) that 
 Note:  
 The read function will only be called once for each test case.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/read-n-characters-given-read4)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/read-n-characters-given-read4)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/read-n-characters-given-read4/description/)  
 
@@ -41,21 +42,22 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def read(self, buf, n):
-            """
-            :type buf: Destination buffer (List[str])
-            :type n: Maximum number of characters to read (int)
-            :rtype: The number of characters read (int)
-            """
-            if n <= 0: return 0
-            res = 0
-            # We deliberately do one possible extra read
-            for i in range(0, int(n/4)+1):
-                buf_tmp = [' ']*4
-                cur = read4(buf_tmp)
-                # get the result
-                for i in range(0, cur):
-                    buf[res+i] = buf_tmp[i]
-                res += cur
-                # no more to read
-                if cur == 0: break
-            return min(res, n)
+    	"""
+    	:type buf: Destination buffer (List[str])
+    	:type n: Maximum number of characters to read (int)
+    	:rtype: The number of characters read (int)
+    	"""
+    	if n <= 0: return 0
+    	res = 0
+    	# We deliberately do one possible extra read
+    	for i in range(0, int(n/4)+1):
+    	    buf_tmp = [' ']*4
+    	    cur = read4(buf_tmp)
+    	    # get the result
+    	    for i in range(0, cur):
+    		buf[res+i] = buf_tmp[i]
+    	    res += cur
+    	    # no more to read
+    	    if cur == 0: break
+    	return min(res, n)
+

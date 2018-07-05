@@ -1,5 +1,5 @@
-# Leetcode: Maximum Swap     :BLOG:Medium:
 
+# Leetcode: Maximum Swap     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Maximum Swap
 ---
 
 Similar Problems:  
+
 -   [Swap Adjacent in LR String](https://code.dennyzhang.com/swap-adjacent-in-lr-string)
 -   [Global and Local Inversions](https://code.dennyzhang.com/global-and-local-inversions)
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
@@ -31,7 +32,7 @@ Example 2:
 Note:  
 The given number is in the range [0, 108]  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-swap)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-swap)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/maximum-swap/description/)  
 
@@ -52,27 +53,27 @@ Leave me comments, if you have better ways to solve.
         index := -1
         l := strings.Split(strconv.Itoa(num), "")
         for i:=0; i<len(l)-1; i++ {
-            if l[i] < l[i+1] {
-                index = i
-                break
-            }
+    	if l[i] < l[i+1] {
+    	    index = i
+    	    break
+    	}
         }
         if index != -1 {
-            index2 := index+1
-            for i:=index2; i<len(l); i++ {
-                if l[i]>=l[index2] { index2 = i }
-            }
+    	index2 := index+1
+    	for i:=index2; i<len(l); i++ {
+    	    if l[i]>=l[index2] { index2 = i }
+    	}
     
-            index1 := index
-            for i:=index-1; i>=0; i-- {
-                if l[i] < l[index2] { index1 = i }
-            }
-            // swap
-            l[index1], l[index2] = l[index2], l[index1]
-            ret = 0
-            for i:=0; i<len(l); i++ {
-                ret = ret*10+int([]byte(l[i])[0]-byte('0'))
-            }
+    	index1 := index
+    	for i:=index-1; i>=0; i-- {
+    	    if l[i] < l[index2] { index1 = i }
+    	}
+    	// swap
+    	l[index1], l[index2] = l[index2], l[index1]
+    	ret = 0
+    	for i:=0; i<len(l); i++ {
+    	    ret = ret*10+int([]byte(l[i])[0]-byte('0'))
+    	}
         }
         return ret
     }
@@ -85,29 +86,30 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def maximumSwap(self, num):
-            """
-            :type num: int
-            :rtype: int
-            """
-            res = num
-            num_list = list(str(num))
-            d = [0]*10
-            for ch in num_list: d[int(ch)] += 1
+    	"""
+    	:type num: int
+    	:rtype: int
+    	"""
+    	res = num
+    	num_list = list(str(num))
+    	d = [0]*10
+    	for ch in num_list: d[int(ch)] += 1
     
-            for i in range(len(num_list)):
-                v1 = int(num_list[i])
-                d[v1] -= 1
-                v2 = -1
-                for k in range(9, v1, -1):
-                    # detect the target
-                    if d[k] != 0:
-                        v2 = k
-                        break
-                # from right to left, find v2 then switch
-                if v2 != -1:
-                    for j in range(len(num_list)-1, i, -1):
-                        if int(num_list[j]) == v2:
-                            num_list[i], num_list[j] = num_list[j], num_list[i]
-                            res = int(''.join(num_list))
-                            return res
-            return res
+    	for i in range(len(num_list)):
+    	    v1 = int(num_list[i])
+    	    d[v1] -= 1
+    	    v2 = -1
+    	    for k in range(9, v1, -1):
+    		# detect the target
+    		if d[k] != 0:
+    		    v2 = k
+    		    break
+    	    # from right to left, find v2 then switch
+    	    if v2 != -1:
+    		for j in range(len(num_list)-1, i, -1):
+    		    if int(num_list[j]) == v2:
+    			num_list[i], num_list[j] = num_list[j], num_list[i]
+    			res = int(''.join(num_list))
+    			return res
+    	return res
+

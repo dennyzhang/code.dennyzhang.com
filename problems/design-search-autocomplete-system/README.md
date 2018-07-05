@@ -1,5 +1,5 @@
-# Leetcode: Design Search Autocomplete System     :BLOG:Medium:
 
+# Leetcode: Design Search Autocomplete System     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Design Search Autocomplete System
 ---
 
 Similar Problems:  
+
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
@@ -38,35 +39,36 @@ Example:
     "island" : 3 times 
     "ironman" : 2 times 
     "i love leetcode" : 2 times 
-    Now, the user begins another search:
+    Now, the user begins another search: 
 
     Operation: input('i') 
     Output: ["i love you", "island","i love leetcode"] 
     Explanation: 
-    There are four sentences that have prefix "i". Among them, "ironman" and "i love leetcode" have same hot degree. Since ' ' has ASCII code 32 and 'r' has ASCII code 114, "i love leetcode" should be in front of "ironman". Also we only need to output top 3 hot sentences, so "ironman" will be ignored.
+    There are four sentences that have prefix "i". Among them, "ironman" and "i love leetcode" have same hot degree. Since ' ' has ASCII code 32 and 'r' has ASCII code 114, "i love leetcode" should be in front of "ironman". Also we only need to output top 3 hot sentences, so "ironman" will be ignored. 
 
     Operation: input(' ') 
     Output: ["i love you","i love leetcode"] 
     Explanation: 
-    There are only two sentences that have prefix "i ".
+    There are only two sentences that have prefix "i ". 
 
     Operation: input('a') 
     Output: [] 
     Explanation: 
-    There are no sentences that have prefix "i a".
+    There are no sentences that have prefix "i a". 
 
     Operation: input('#') 
     Output: [] 
     Explanation: 
-    The user finished the input, the sentence "i a" should be saved as a historical sentence in system. And the following input will be counted as a new search.
+    The user finished the input, the sentence "i a" should be saved as a historical sentence in system. And the following input will be counted as a new search. 
 
 Note:  
+
 1.  The input sentence will always start with a letter and end with '#', and only one blank space will exist between two words.
 2.  The number of complete sentences that to be searched won't exceed 100. The length of each sentence including those in the historical data won't exceed 100.
 3.  Please use double-quote instead of single-quote when you write test cases even for a character input.
 4.  Please remember to RESET your class variables declared in class AutocompleteSystem, as static/class variables are persisted across multiple test cases. Please see here for more details.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-search-autocomplete-system)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-search-autocomplete-system)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/design-search-autocomplete-system/description/)  
 
@@ -75,3 +77,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/design-search-autocomplete-system
+

@@ -1,5 +1,5 @@
-# Leetcode: Palindrome Number     :BLOG:Basic:
 
+# Leetcode: Palindrome Number     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
 ---
 
 Similar Problems:  
+
 -   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome)
 -   Tag: [#palindrome](https://code.dennyzhang.com/tag/palindrome)
 
@@ -27,7 +28,7 @@ Some hints:
     
     There is a more generic way of solving this problem.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-number)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindrome-number)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-number/description/)  
 
@@ -42,18 +43,19 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(1), Space O(1). The integer can be at most 32 digits
     class Solution(object):
         def isPalindrome(self, x):
-            """
-            :type x: int
-            :rtype: bool
-            """
-            if x < 0:
-                return False
-            if x == 0:
+    	"""
+    	:type x: int
+    	:rtype: bool
+    	"""
+    	if x < 0:
+    	    return False
+    	if x == 0:
     
-                return True
-            val = x
-            y = 0
-            while val != 0:
-                y = 10*y + (val%10)
-                val = val / 10
-            return x == y
+    	    return True
+    	val = x
+    	y = 0
+    	while val != 0:
+    	    y = 10*y + (val%10)
+    	    val = val / 10
+    	return x == y
+

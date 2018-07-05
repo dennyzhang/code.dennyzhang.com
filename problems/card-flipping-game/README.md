@@ -1,5 +1,5 @@
-# Leetcode: Card Flipping Game     :BLOG:Medium:
 
+# Leetcode: Card Flipping Game     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Card Flipping Game
 ---
 
 Similar Problems:  
+
 -   Tag: [#game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -37,7 +38,7 @@ Note:
 -   1 <= fronts[i] <= 2000.
 -   1 <= backs[i] <= 2000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/card-flipping-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/card-flipping-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/card-flipping-game/description/)  
 
@@ -46,3 +47,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/card-flipping-game
+

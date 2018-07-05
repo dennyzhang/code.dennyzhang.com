@@ -1,5 +1,5 @@
-# Leetcode: Group Shifted Strings     :BLOG:Medium:
 
+# Leetcode: Group Shifted Strings     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Group Shifted Strings
 ---
 
 Similar Problems:  
+
 -   [Group Anagrams](https://code.dennyzhang.com/group-anagrams)
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap),  [#mod](https://code.dennyzhang.com/tag/mod)
 
@@ -29,7 +30,7 @@ A solution is:
       ["a","z"]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/group-shifted-strings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/group-shifted-strings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/group-shifted-strings/description/)  
 
@@ -48,15 +49,16 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def groupStrings(self, strings):
-            """
-            :type strings: List[str]
-            :rtype: List[List[str]]
-            """
-            import collections
-            m = collections.defaultdict(list)
-            for s in strings:
-                # ba -> (0, 25)
-                # az -> (0, 25)
-                tup = tuple([(ord(ch)-ord(s[0]))%26 for ch in s])
-                m[tup].append(s)
-            return [m[key] for key in m]
+    	"""
+    	:type strings: List[str]
+    	:rtype: List[List[str]]
+    	"""
+    	import collections
+    	m = collections.defaultdict(list)
+    	for s in strings:
+    	    # ba -> (0, 25)
+    	    # az -> (0, 25)
+    	    tup = tuple([(ord(ch)-ord(s[0]))%26 for ch in s])
+    	    m[tup].append(s)
+    	return [m[key] for key in m]
+

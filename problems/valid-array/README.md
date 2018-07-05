@@ -1,5 +1,5 @@
-# LintCode: Valid Array     :BLOG:Basic:
 
+# LintCode: Valid Array     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Valid Array
 ---
 
 Similar Problems:  
+
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
@@ -28,7 +29,7 @@ Example
     Explanation:
     In this array, 3 and 5 have odd number of times, so it is invalid and return -1.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-array)  
 
 Credits To: [lintcode.com](https://www.lintcode.com/problem/valid-array/description)  
 
@@ -48,15 +49,16 @@ Leave me comments, if you have better ways to solve.
     func isValid (a []int) int {
         m := map[int]int{}
         for _, num := range a {
-            m[num] += 1
-            if m[num] % 2 == 0 { delete(m, num) }
+    	m[num] += 1
+    	if m[num] % 2 == 0 { delete(m, num) }
         }
         res := -1
         if len(m) == 1 { 
-            for k := range m {
-                res = k
-                break
-            }
+    	for k := range m {
+    	    res = k
+    	    break
+    	}
         }
         return res
     }
+

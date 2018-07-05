@@ -1,5 +1,5 @@
-# Leetcode: Longest Uncommon Subsequence II     :BLOG:Medium:
 
+# Leetcode: Longest Uncommon Subsequence II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Uncommon Subsequence II
 ---
 
 Similar Problems:  
+
 -   [Longest Uncommon Subsequence I](https://code.dennyzhang.com/longest-uncommon-subsequence-i)
 
 ---
@@ -28,7 +29,7 @@ Note:
 1.  All the given strings' lengths will not exceed 10.
 2.  The length of the given list will be in the range of [2, 50].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-uncommon-subsequence-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-uncommon-subsequence-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-uncommon-subsequence-ii/description/)  
 
@@ -37,3 +38,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/longest-uncommon-subsequence-ii
+

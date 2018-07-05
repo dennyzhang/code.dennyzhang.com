@@ -1,5 +1,5 @@
-# Leetcode: Word Synthesis Problem     :BLOG:Medium:
 
+# Leetcode: Word Synthesis Problem     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Word Synthesis Problem
 ---
 
 Similar Problems:  
+
 -   Tag: [#dfs](https://code.dennyzhang.com/tag/dfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -23,14 +24,14 @@ Example
     Given target="ally",words=["buy","discard","lip","yep"],return false
     
     Explanation：
-    `buy` can match `y`, `discard` can match `a`, `lip` can match `l`, `yep` cannot correspond to any one letter, so there is still one `l` in `target` that cannot be matched.
+    `buy` can match `y`, `discard` can match `a`, `lip` can match `l`, `yep` cannot correspond to any one letter, so there is still one `l` in `target` that cannot be matched. 
 
     Given target="ray",words=["buy","discard","lip","rep"],return true
     
     Explanation：
     `buy` can match `y`, `discard` can match `a`, `rep` can match `r`.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-synthesis-problem)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-synthesis-problem)  
 
 Credits To: [lintcode.com](https://www.lintcode.com/problem/word-synthesis-problem/description)  
 
@@ -55,20 +56,21 @@ Leave me comments, if you have better ways to solve.
         if target == "" { return true }
         ch := rune(target[0])
         for _, index := range chMap[ch] {
-            if visited[index] == false {
-                visited[index] = true
-                if dfs(target[1:]) == true { return true }
-                visited[index] = false
-            }
+    	if visited[index] == false {
+    	    visited[index] = true
+    	    if dfs(target[1:]) == true { return true }
+    	    visited[index] = false
+    	}
         }
         return false
     }
     
     func matchFunction (target string, words []string) bool {
         for i, word := range words {
-            for _, ch := range word {
-                chMap[ch] = append(chMap[ch], i)
-            }
+    	for _, ch := range word {
+    	    chMap[ch] = append(chMap[ch], i)
+    	}
         }
         return dfs(target)
     }
+

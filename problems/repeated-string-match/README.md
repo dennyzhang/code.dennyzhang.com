@@ -1,5 +1,5 @@
-# Leetcode: Repeated String Match     :BLOG:Medium:
 
+# Leetcode: Repeated String Match     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Repeated String Match
 ---
 
 Similar Problems:  
+
 -   [Rotate String](https://code.dennyzhang.com/rotate-string)
 -   [Repeated Substring Pattern](https://code.dennyzhang.com/repeated-substring)
 -   Tag: [#string](https://code.dennyzhang.com/tag/string), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
@@ -23,7 +24,7 @@ Return 3, because by repeating A three times ("abcdabcdabcd"), B is a substring 
 Note:  
 The length of A and B will be between 1 and 10000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-string-match)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/repeated-string-match)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/repeated-string-match/description/)  
 
@@ -38,15 +39,16 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(m+n), Space O(n)
     class Solution:
         def repeatedStringMatch(self, A, B):
-            """
-            :type A: str
-            :type B: str
-            :rtype: int
-            """
-            lenA, lenB = len(A), len(B)
-            times = int(lenB/lenA)
-            C = A*times
-            if B in C: return times
-            if B in C+A: return times+1
-            if B in C+A+A: return times+2
-            return -1
+    	"""
+    	:type A: str
+    	:type B: str
+    	:rtype: int
+    	"""
+    	lenA, lenB = len(A), len(B)
+    	times = int(lenB/lenA)
+    	C = A*times
+    	if B in C: return times
+    	if B in C+A: return times+1
+    	if B in C+A+A: return times+2
+    	return -1
+

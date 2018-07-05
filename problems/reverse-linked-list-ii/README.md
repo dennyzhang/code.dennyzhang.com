@@ -1,5 +1,5 @@
-# Leetcode: Reverse Linked List II     :BLOG:Basic:
 
+# Leetcode: Reverse Linked List II     :BLOG:Basic:
 
 ---
 
@@ -18,7 +18,7 @@ Note:
 Given m, n satisfy the following condition:  
 1 <= m <= n <= length of list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-linked-list-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reverse-linked-list-ii/description/)  
 
@@ -57,29 +57,30 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def reverseBetween(self, head, m, n):
-            """
-            :type head: ListNode
-            :type m: int
-            :type n: int
-            :rtype: ListNode
-            """
-            # Nothing changed
-            if m == n:
-                return head
-            dummyNode = ListNode(0)
-            dummyNode.next = head
-            p = dummyNode
-            # p: points to the previous node of the sublist head
-            for i in xrange(m-1):
-                p = p.next
-            # r points to current node
-            # q points to the original first node of the sublist
-            # No need to reverse the first node
-            q = p.next
-            r = q.next
-            for i in xrange(n-m):
-                q.next = r.next
-                r.next = p.next
-                p.next = r
-                r = q.next
-            return dummyNode.next
+    	"""
+    	:type head: ListNode
+    	:type m: int
+    	:type n: int
+    	:rtype: ListNode
+    	"""
+    	# Nothing changed
+    	if m == n:
+    	    return head
+    	dummyNode = ListNode(0)
+    	dummyNode.next = head
+    	p = dummyNode
+    	# p: points to the previous node of the sublist head
+    	for i in xrange(m-1):
+    	    p = p.next
+    	# r points to current node
+    	# q points to the original first node of the sublist
+    	# No need to reverse the first node
+    	q = p.next
+    	r = q.next
+    	for i in xrange(n-m):
+    	    q.next = r.next
+    	    r.next = p.next
+    	    p.next = r
+    	    r = q.next
+    	return dummyNode.next
+

@@ -1,5 +1,5 @@
-# Leetcode: Maximum Width of Binary Tree     :BLOG:Amusing:
 
+# Leetcode: Maximum Width of Binary Tree     :BLOG:Amusing:
 
 ---
 
@@ -62,7 +62,7 @@ The width of one level is defined as the length between the end-nodes (the leftm
 
 Note: Answer will in the range of 32-bit signed integer.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-width-of-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-width-of-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/maximum-width-of-binary-tree/description/)  
 
@@ -80,39 +80,40 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def widthOfBinaryTree(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            ## Idea: BFS, then Huffman tree encoding. 
-            ## Complexity:
-            ## Sample Data
-            ##              1
-            ##             / \
-            ##            3   2
-            ##           /     \  
-            ##          5       9 
-            ##         /         \
-            ##        6           7
-            if root is None:
-                return 0
-            queue = []
-            max_width = -1
-            queue.append((root, 0))
-            while len(queue) != 0:
-                length = len(queue)
-                if length == 1:
-                    max_width = max(max_width, 1)
-                else:
-                    (first_element, first_huffman) = queue[0]
-                    (last_element, last_huffman) = queue[-1]
-                    max_width = max(max_width, last_huffman - first_huffman + 1)
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	## Idea: BFS, then Huffman tree encoding. 
+    	## Complexity:
+    	## Sample Data
+    	##              1
+    	##             / \
+    	##            3   2
+    	##           /     \  
+    	##          5       9 
+    	##         /         \
+    	##        6           7
+    	if root is None:
+    	    return 0
+    	queue = []
+    	max_width = -1
+    	queue.append((root, 0))
+    	while len(queue) != 0:
+    	    length = len(queue)
+    	    if length == 1:
+    		max_width = max(max_width, 1)
+    	    else:
+    		(first_element, first_huffman) = queue[0]
+    		(last_element, last_huffman) = queue[-1]
+    		max_width = max(max_width, last_huffman - first_huffman + 1)
     
-                for i in xrange(length):
-                    (element, cur_huffman) = queue[0]
-                    del queue[0]
-                    if element.left:
-                        queue.append((element.left, cur_huffman*2))
-                    if element.right:
-                        queue.append((element.right, cur_huffman*2+1))
-            return max_width
+    	    for i in xrange(length):
+    		(element, cur_huffman) = queue[0]
+    		del queue[0]
+    		if element.left:
+    		    queue.append((element.left, cur_huffman*2))
+    		if element.right:
+    		    queue.append((element.right, cur_huffman*2+1))
+    	return max_width
+

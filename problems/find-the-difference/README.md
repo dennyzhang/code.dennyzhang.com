@@ -1,5 +1,5 @@
-# Leetcode: Find the Difference     :BLOG:Amusing:
 
+# Leetcode: Find the Difference     :BLOG:Amusing:
 
 ---
 
@@ -25,7 +25,7 @@ Example:
     Explanation:
     'e' is the letter that was added.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-difference)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-the-difference)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-the-difference/description/)  
 
@@ -36,13 +36,14 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/find-the-difference
     class Solution(object):
         def findTheDifference(self, s, t):
-            """
-            :type s: str
-            :type t: str
-            :rtype: str
-            """
-            res = 0
-            for i in xrange(len(s)):
-                res = res ^ ord(s[i]) ^ ord(t[i])
-            res = res ^ ord(t[-1])
-            return chr(res)
+    	"""
+    	:type s: str
+    	:type t: str
+    	:rtype: str
+    	"""
+    	res = 0
+    	for i in xrange(len(s)):
+    	    res = res ^ ord(s[i]) ^ ord(t[i])
+    	res = res ^ ord(t[-1])
+    	return chr(res)
+

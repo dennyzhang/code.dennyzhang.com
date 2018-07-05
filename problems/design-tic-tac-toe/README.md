@@ -1,5 +1,5 @@
-# Leetcode: Design Tic-Tac-Toe     :BLOG:Medium:
 
+# Leetcode: Design Tic-Tac-Toe     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Design Tic-Tac-Toe
 ---
 
 Similar Problems:  
+
 -   Tag: [#oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
@@ -63,7 +64,7 @@ Example:
 
 Follow up: Could you do better than O(n^2) per move() operation?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-tic-tac-toe)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-tic-tac-toe)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/design-tic-tac-toe/description/)  
 
@@ -72,3 +73,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/design-tic-tac-toe
+

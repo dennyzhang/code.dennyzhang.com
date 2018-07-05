@@ -1,5 +1,5 @@
-# Leetcode: Find Cumulative Salary of an Employee     :BLOG:Hard:
 
+# Leetcode: Find Cumulative Salary of an Employee     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Find Cumulative Salary of an Employee
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -67,7 +68,7 @@ Employ '3' has two salary records except its most recent pay month '4': month '3
     | 3  | 3     | 100    |
     | 3  | 2     | 40     |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-cumulative-salary-of-an-employee)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-cumulative-salary-of-an-employee)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-cumulative-salary-of-an-employee/description/)  
 
@@ -76,3 +77,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/find-cumulative-salary-of-an-employee
+

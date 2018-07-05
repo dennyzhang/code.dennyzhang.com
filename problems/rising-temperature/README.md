@@ -1,5 +1,5 @@
-# Leetcode: Rising Temperature     :BLOG:Medium:
 
+# Leetcode: Rising Temperature     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Rising Temperature
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -32,7 +33,7 @@ For example, return the following Ids for the above Weather table:
     |  4 |
     +----+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rising-temperature)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rising-temperature)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rising-temperature/description/)  
 
@@ -45,3 +46,4 @@ Leave me comments, if you have better ways to solve.
     from Weather as t1 join Weather as t2
     on DATE_ADD(t2.Date, INTERVAL 1 DAY) = t1.Date
     where t1.Temperature > t2.Temperature;
+

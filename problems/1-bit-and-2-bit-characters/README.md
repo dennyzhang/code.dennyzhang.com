@@ -1,5 +1,5 @@
-# Leetcode: 1-bit and 2-bit Characters     :BLOG:Basic:
 
+# Leetcode: 1-bit and 2-bit Characters     :BLOG:Basic:
 
 ---
 
@@ -30,7 +30,7 @@ Note:
 -   1 <= len(bits) <= 1000.
 -   bits[i] is always 0 or 1.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/1-bit-and-2-bit-characters)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/1-bit-and-2-bit-characters)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/1-bit-and-2-bit-characters/description/)  
 
@@ -47,22 +47,23 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def isOneBitCharacter(self, bits):
-            """
-            :type bits: List[int]
-            :rtype: bool
-            """
-            length = len(bits)
-            if length == 0:
-                return False
-            if length == 1:
-                return bits[0] == 0
+    	"""
+    	:type bits: List[int]
+    	:rtype: bool
+    	"""
+    	length = len(bits)
+    	if length == 0:
+    	    return False
+    	if length == 1:
+    	    return bits[0] == 0
     
-            i = 0
-            while i< length:
-                if bits[i] == 0:
-                    i += 1
-                else:
-                    i += 2
-                if i == length - 1:
-                    return True
-            return False
+    	i = 0
+    	while i< length:
+    	    if bits[i] == 0:
+    		i += 1
+    	    else:
+    		i += 2
+    	    if i == length - 1:
+    		return True
+    	return False
+

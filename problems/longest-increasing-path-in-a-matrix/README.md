@@ -1,5 +1,5 @@
-# Leetcode: Longest Increasing Path in a Matrix     :BLOG:Medium:
 
+# Leetcode: Longest Increasing Path in a Matrix     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Increasing Path in a Matrix
 ---
 
 Similar Problems:  
+
 -   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
 
 ---
@@ -36,7 +37,7 @@ Example 2:
     Return 4
     The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-increasing-path-in-a-matrix)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-increasing-path-in-a-matrix)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)  
 
@@ -45,3 +46,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/longest-increasing-path-in-a-matrix
+

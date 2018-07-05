@@ -1,5 +1,5 @@
-# Leetcode: Word Ladder     :BLOG:Basic:
 
+# Leetcode: Word Ladder     :BLOG:Basic:
 
 ---
 
@@ -22,6 +22,7 @@ Given two words (beginWord and endWord), and a dictionary's word list, find the 
     return its length 5.
 
 Note:  
+
 -   Return 0 if there is no such transformation sequence.
 -   All words have the same length.
 -   All words contain only lowercase alphabetic characters.
@@ -31,7 +32,7 @@ Note:
 UPDATE (2017/1/20):  
 The wordList parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-ladder)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-ladder)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/word-ladder/description/)  
 
@@ -53,35 +54,36 @@ Leave me comments, if you have better ways to solve.
     ##          n = len(wordList), w=len(word)
     class Solution(object):
         def ladderLength(self, beginWord, endWord, wordList):
-            """
-            :type beginWord: str
-            :type endWord: str
-            :type wordList: List[str]
-            :rtype: int
-            """
-            queue, wordSet = [], set(wordList)
-            self.findNeighbors(beginWord, wordSet, queue):
+    	"""
+    	:type beginWord: str
+    	:type endWord: str
+    	:type wordList: List[str]
+    	:rtype: int
+    	"""
+    	queue, wordSet = [], set(wordList)
+    	self.findNeighbors(beginWord, wordSet, queue):
     
-            level = 2
-            while len(queue) != 0:
-                for i in xrange(len(queue)):
-                    word = queue[0]
-                    if word == endWord: return level
-                    del queue[0]
-                    # find the next candidates
-                    for w in self.findNeighbors(word, wordSet, queue):
-                        queue.append(w)
-                level += 1
-            return 0
+    	level = 2
+    	while len(queue) != 0:
+    	    for i in xrange(len(queue)):
+    		word = queue[0]
+    		if word == endWord: return level
+    		del queue[0]
+    		# find the next candidates
+    		for w in self.findNeighbors(word, wordSet, queue):
+    		    queue.append(w)
+    	    level += 1
+    	return 0
     
         def findNeighbors(self, word, wordSet, queue):
-            for i in xrange(len(word)):
-                for ascii in range(ord('a'), ord('z')+1):
-                    ch = chr(ascii)
-                    # skip itself
-                    if ch == word[i]: continue
-                    newWord = word[:i] + ch+ word[i+1:]
-                    # Only if it's unchecked and valid
-                    if newWord in wordSet:
-                        queue.append(newWord)
-                        wordSet.remove(newWord)
+    	for i in xrange(len(word)):
+    	    for ascii in range(ord('a'), ord('z')+1):
+    		ch = chr(ascii)
+    		# skip itself
+    		if ch == word[i]: continue
+    		newWord = word[:i] + ch+ word[i+1:]
+    		# Only if it's unchecked and valid
+    		if newWord in wordSet:
+    		    queue.append(newWord)
+    		    wordSet.remove(newWord)
+

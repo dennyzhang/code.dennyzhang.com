@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Maximum Path Sum     :BLOG:Medium:
 
+# Leetcode: Binary Tree Maximum Path Sum     :BLOG:Medium:
 
 ---
 
@@ -19,7 +19,7 @@ For this problem, a path is defined as any sequence of nodes from some starting 
          2   3
     Return 6.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-maximum-path-sum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-maximum-path-sum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)  
 
@@ -37,7 +37,8 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def maxPathSum(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+

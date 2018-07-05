@@ -1,5 +1,5 @@
-# Leetcode: Shortest Palindrome     :BLOG:Hard:
 
+# Leetcode: Shortest Palindrome     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Palindrome
 ---
 
 Similar Problems:  
+
 -   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
@@ -20,7 +21,7 @@ For example:
     
     Given "abcd", return "dcbabcd".
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-palindrome)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-palindrome)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-palindrome/description/)  
 
@@ -36,43 +37,44 @@ Leave me comments, if you have better ways to solve.
     import sys
     class Solution:
         def shortestPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: str
-            """
-            length = len(s)
-            if length <= 1: return s
-            minCnt = sys.maxsize
-            # the length of target palindrome is odd
-            for i in range(0, int((length+1)/2)):
-                has_failed = False
-                for k in range(1, i+1):
-                    if s[i-k] != s[i+k]:
-                        has_failed = True
-                        break
-                if has_failed is False:
-                    minCnt = min(minCnt, (length-i-1)*2+1)
+    	"""
+    	:type s: str
+    	:rtype: str
+    	"""
+    	length = len(s)
+    	if length <= 1: return s
+    	minCnt = sys.maxsize
+    	# the length of target palindrome is odd
+    	for i in range(0, int((length+1)/2)):
+    	    has_failed = False
+    	    for k in range(1, i+1):
+    		if s[i-k] != s[i+k]:
+    		    has_failed = True
+    		    break
+    	    if has_failed is False:
+    		minCnt = min(minCnt, (length-i-1)*2+1)
     
-            # the length of target palindrome is even
-            for i in range(0, int(length/2)):
-                has_failed = False
-                if s[i] == s[i+1]:
-                    for k in range(1, i+1):
-                        if s[i-k] != s[i+k+1]:
-                            has_failed = True
-                            break
-                    if has_failed is False:
-                        minCnt = min(minCnt, (length-i-2)*2+2)
+    	# the length of target palindrome is even
+    	for i in range(0, int(length/2)):
+    	    has_failed = False
+    	    if s[i] == s[i+1]:
+    		for k in range(1, i+1):
+    		    if s[i-k] != s[i+k+1]:
+    			has_failed = True
+    			break
+    		if has_failed is False:
+    		    minCnt = min(minCnt, (length-i-2)*2+2)
     
-            res = ''
-            index = length-1
-            for i in range(0, minCnt-length):
-                res = "%s%s" % (res, s[index])
-                index -= 1
-            # print(res, minCnt, length)
-            # get the result
-            return res+s
+    	res = ''
+    	index = length-1
+    	for i in range(0, minCnt-length):
+    	    res = "%s%s" % (res, s[index])
+    	    index -= 1
+    	# print(res, minCnt, length)
+    	# get the result
+    	return res+s
     
     # s = Solution()
     # print(s.shortestPalindrome("aacecaaa")) # "aaacecaaa"
     # print(s.shortestPalindrome("abcd")) # "dcbabcd"
+

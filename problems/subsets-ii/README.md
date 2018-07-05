@@ -1,5 +1,5 @@
-# Leetcode: Subsets II     :BLOG:Medium:
 
+# Leetcode: Subsets II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Subsets II
 ---
 
 Similar Problems:  
+
 -   [Subsets](https://code.dennyzhang.com/subsets)
 -   [Letter Case Permutation](https://code.dennyzhang.com/letter-case-permutation)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
@@ -30,7 +31,7 @@ Note: The solution set must not contain duplicate subsets.
       []
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/subsets-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/subsets-ii/description/)  
 
@@ -44,16 +45,17 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution:
         def subsetsWithDup(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[List[int]]
-            """
-            length = len(nums)
-            if length == 0: return [[]]
-            res = []
-            for element in self.subsetsWithDup(nums[1:]):
-                if element not in res: res.append(element)
+    	"""
+    	:type nums: List[int]
+    	:rtype: List[List[int]]
+    	"""
+    	length = len(nums)
+    	if length == 0: return [[]]
+    	res = []
+    	for element in self.subsetsWithDup(nums[1:]):
+    	    if element not in res: res.append(element)
     
-                element2 = sorted([nums[0]] + element)
-                if element2 not in res: res.append(element2)
-            return res
+    	    element2 = sorted([nums[0]] + element)
+    	    if element2 not in res: res.append(element2)
+    	return res
+

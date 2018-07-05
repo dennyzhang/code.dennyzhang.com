@@ -1,5 +1,5 @@
-# Leetcode: Remove Linked List Elements     :BLOG:Basic:
 
+# Leetcode: Remove Linked List Elements     :BLOG:Basic:
 
 ---
 
@@ -13,7 +13,7 @@ Example
 Given: 1 &#x2013;> 2 &#x2013;> 6 &#x2013;> 3 &#x2013;> 4 &#x2013;> 5 &#x2013;> 6, val = 6  
 Return: 1 &#x2013;> 2 &#x2013;> 3 &#x2013;> 4 &#x2013;> 5  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-linked-list-elements)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-linked-list-elements)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-linked-list-elements/description/)  
 
@@ -32,17 +32,18 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def removeElements(self, head, val):
-            """
-            :type head: ListNode
-            :type val: int
-            :rtype: ListNode
-            """
-            dummyNode = ListNode(None)
-            dummyNode.next = head
-            p = dummyNode
-            while p.next:
-                if p.next.val == val:
-                    p.next = p.next.next
-                else:
-                    p = p.next
-            return dummyNode.next
+    	"""
+    	:type head: ListNode
+    	:type val: int
+    	:rtype: ListNode
+    	"""
+    	dummyNode = ListNode(None)
+    	dummyNode.next = head
+    	p = dummyNode
+    	while p.next:
+    	    if p.next.val == val:
+    		p.next = p.next.next
+    	    else:
+    		p = p.next
+    	return dummyNode.next
+

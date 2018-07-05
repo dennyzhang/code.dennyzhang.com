@@ -1,5 +1,5 @@
-# Leetcode: Total Hamming Distance     :BLOG:Medium:
 
+# Leetcode: Total Hamming Distance     :BLOG:Medium:
 
 ---
 
@@ -21,10 +21,11 @@ Now your job is to find the total Hamming distance between all pairs of the give
     HammingDistance(4, 14) + HammingDistance(4, 2) + HammingDistance(14, 2) = 2 + 2 + 2 = 6.
 
 Note:  
+
 -   Elements of the given array are in the range of 0 to 10^9
 -   Length of the array will not exceed 10^4.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/total-hamming-distance)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/total-hamming-distance)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/total-hamming-distance/description/)  
 
@@ -33,3 +34,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/total-hamming-distance
+

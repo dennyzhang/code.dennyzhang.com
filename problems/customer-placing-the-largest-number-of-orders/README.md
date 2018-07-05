@@ -1,5 +1,5 @@
-# Leetcode: Customer Placing the Largest Number of Orders     :BLOG:Medium:
 
+# Leetcode: Customer Placing the Largest Number of Orders     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Customer Placing the Largest Number of Orders
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -50,7 +51,7 @@ Explanation
 
 Follow up: What if more than one customer have the largest number of orders, can you find all the customer\_number in this case?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/customer-placing-the-largest-number-of-orders)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/customer-placing-the-largest-number-of-orders)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/)  
 
@@ -82,3 +83,4 @@ Leave me comments, if you have better ways to solve.
     ##        from orders group by customer_number) as t2
     ##  group by t1.customer_number
     ##  having max(t1.count) = max(t2.count)
+

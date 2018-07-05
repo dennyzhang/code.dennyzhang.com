@@ -1,5 +1,5 @@
-# Leetcode: Bulb Switcher II     :BLOG:Medium:
 
+# Leetcode: Bulb Switcher II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Bulb Switcher II
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
@@ -40,7 +41,7 @@ Example 3:
 
 Note: n and m both fit in range [0, 1000].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bulb-switcher-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bulb-switcher-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/bulb-switcher-ii/description/)  
 
@@ -49,3 +50,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/bulb-switcher-ii
+

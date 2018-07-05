@@ -1,5 +1,5 @@
-# Leetcode: Generate Parentheses     :BLOG:Basic:
 
+# Leetcode: Generate Parentheses     :BLOG:Basic:
 
 ---
 
@@ -19,7 +19,7 @@ Given n pairs of parentheses, write a function to generate all combinations of w
       "()()()"
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/generate-parentheses)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/generate-parentheses)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/generate-parentheses/description/)  
 
@@ -41,27 +41,28 @@ Leave me comments, if you have better ways to solve.
     ##       )
     class Solution(object):
         def generateParenthesis(self, n):
-            """
-            :type n: int
-            :rtype: List[str]
-            """
-            if n<=0:
-                return []
-            res = []
-            bfs_queue = []
-            bfs_queue.append(("(", 1, 1))
-            # loop for layer
-            for i in xrange(n*2-1):
-                for j in xrange(len(bfs_queue)):
-                    # ('((()', 3, 2)
-                    (output_str, printed_count, unbalanced_count) = bfs_queue[0]
-                    del bfs_queue[0]
-                    if printed_count < n:
-                        bfs_queue.append(("%s(" % (output_str), \
-                                            printed_count+1, unbalanced_count+1))
-                    if unbalanced_count > 0:
-                        bfs_queue.append(("%s)" % (output_str), \
-                                            printed_count, unbalanced_count-1))
-            for i in xrange(len(bfs_queue)):
-                res.append(bfs_queue[i][0])
-            return res
+    	"""
+    	:type n: int
+    	:rtype: List[str]
+    	"""
+    	if n<=0:
+    	    return []
+    	res = []
+    	bfs_queue = []
+    	bfs_queue.append(("(", 1, 1))
+    	# loop for layer
+    	for i in xrange(n*2-1):
+    	    for j in xrange(len(bfs_queue)):
+    		# ('((()', 3, 2)
+    		(output_str, printed_count, unbalanced_count) = bfs_queue[0]
+    		del bfs_queue[0]
+    		if printed_count < n:
+    		    bfs_queue.append(("%s(" % (output_str), \
+    					printed_count+1, unbalanced_count+1))
+    		if unbalanced_count > 0:
+    		    bfs_queue.append(("%s)" % (output_str), \
+    					printed_count, unbalanced_count-1))
+    	for i in xrange(len(bfs_queue)):
+    	    res.append(bfs_queue[i][0])
+    	return res
+

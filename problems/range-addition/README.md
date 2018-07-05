@@ -1,5 +1,5 @@
-# Leetcode: Range Addition     :BLOG:Medium:
 
+# Leetcode: Range Addition     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Range Addition
 ---
 
 Similar Problems:  
+
 -   [Maximum Distance in Arrays](https://code.dennyzhang.com/maximum-distance-in-arrays)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
@@ -48,7 +49,7 @@ Explanation:
     After applying operation [0, 2, -2]:
     [-2, 0, 3, 5, 3 ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-addition)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-addition)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/range-addition/description/)  
 
@@ -69,19 +70,20 @@ Leave me comments, if you have better ways to solve.
     ##
     class Solution:
         def getModifiedArray(self, length, updates):
-            """
-            :type length: int
-            :type updates: List[List[int]]
-            :rtype: List[int]
-            """
-            delta_list = [0] * length
-            for [start, end, inc] in updates:
-                delta_list[start] += inc
-                if end+1 < length:
-                    delta_list[end+1] -= inc
+    	"""
+    	:type length: int
+    	:type updates: List[List[int]]
+    	:rtype: List[int]
+    	"""
+    	delta_list = [0] * length
+    	for [start, end, inc] in updates:
+    	    delta_list[start] += inc
+    	    if end+1 < length:
+    		delta_list[end+1] -= inc
     
-            delta = 0
-            for i in range(0, length):
-                delta += delta_list[i]
-                delta_list[i] = delta
-            return delta_list
+    	delta = 0
+    	for i in range(0, length):
+    	    delta += delta_list[i]
+    	    delta_list[i] = delta
+    	return delta_list
+

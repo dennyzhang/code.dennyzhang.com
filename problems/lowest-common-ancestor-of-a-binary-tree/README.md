@@ -1,5 +1,5 @@
-# Leetcode: Lowest Common Ancestor of a Binary Tree     :BLOG:Basic:
 
+# Leetcode: Lowest Common Ancestor of a Binary Tree     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Lowest Common Ancestor of a Binary Tree
 ---
 
 Similar Problems:  
+
 -   [Review: Classic Code Problems](https://code.dennyzhang.com/review-classic)
 -   [Lowest Common Ancestor of a Binary Search Tree](https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#recursive](https://code.dennyzhang.com/tag/recursive), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
@@ -41,7 +42,7 @@ Example 2:
     Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself
                  according to the LCA definition.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lowest-common-ancestor-of-a-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lowest-common-ancestor-of-a-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)  
 
@@ -64,14 +65,15 @@ Leave me comments, if you have better ways to solve.
     #         self.right = None
     class Solution(object):
         def lowestCommonAncestor(self, root, p, q):
-            """
-            :type root: TreeNode
-            :type p: TreeNode
-            :type q: TreeNode
-            :rtype: TreeNode
-            """
-            if root is None or root == p or root == q: return root
-            left = self.lowestCommonAncestor(root.left, p, q)
-            right = self.lowestCommonAncestor(root.right, p, q)
-            if left and right: return root
-            return left if left else right
+    	"""
+    	:type root: TreeNode
+    	:type p: TreeNode
+    	:type q: TreeNode
+    	:rtype: TreeNode
+    	"""
+    	if root is None or root == p or root == q: return root
+    	left = self.lowestCommonAncestor(root.left, p, q)
+    	right = self.lowestCommonAncestor(root.right, p, q)
+    	if left and right: return root
+    	return left if left else right        
+

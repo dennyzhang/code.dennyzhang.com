@@ -1,5 +1,5 @@
-# Leetcode: Similar String Groups     :BLOG:Medium:
 
+# Leetcode: Similar String Groups     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Similar String Groups
 ---
 
 Similar Problems:  
+
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
@@ -34,7 +35,7 @@ Note:
 5.  All words in A have the same length and are anagrams of each other.
 6.  The judging time limit has been increased for this question.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/similar-string-groups)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/similar-string-groups)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/similar-string-groups/description/)  
 
@@ -45,14 +46,14 @@ Leave me comments, if you have better ways to solve.
     // Blog link: https://code.dennyzhang.com/similar-string-groups
     // Basic Ideas: BFS + hashmap
     //
-    // Choose the firt one to explore
+    // Choose the first one to explore
     //
     // Complexity: Time ?, Space ?
     func isSimilar(str1 string, str2 string) bool {
         if len(str1) != len(str2) { return false }
         l := []int{}
         for i:=0; i<len(str1); i++ {
-            if str1[i] != str2[i] { l = append(l, i)}
+    	if str1[i] != str2[i] { l = append(l, i)}
         }
         if len(l) != 2 { return false }
         if str1[l[0]]==str2[l[1]] && str1[l[1]] == str2[l[0]] { return true }
@@ -68,26 +69,27 @@ Leave me comments, if you have better ways to solve.
         for i:= 0; i<len(A); i++ { unvisited[i] = true }
     
         for i:= 0; i<len(A); i++ {
-            if m[i] == true { continue }
-            delete(unvisited, i)
-            res++
-            queue := []int{}
-            queue = append(queue, i)
-            // explore this word
-            for len(queue) != 0 {
-                items := []int{}
-                for _, i1 := range queue {
-                    for i2 := range unvisited {
-                        if isSimilar(A[i1], A[i2]) == true {
-                            items = append(items, i2)
-                            m[i2] = true
-                            delete(unvisited, i2)
-                        }
-                    }
-                }
-                queue = []int{}
-                for _, v:= range items { queue = append(queue, v) }
-            }
+    	if m[i] == true { continue }
+    	delete(unvisited, i)
+    	res++
+    	queue := []int{}
+    	queue = append(queue, i)
+    	// explore this word
+    	for len(queue) != 0 {
+    	    items := []int{}
+    	    for _, i1 := range queue {
+    		for i2 := range unvisited {
+    		    if isSimilar(A[i1], A[i2]) == true {
+    			items = append(items, i2)
+    			m[i2] = true
+    			delete(unvisited, i2)
+    		    }
+    		}
+    	    }
+    	    queue = []int{}
+    	    for _, v:= range items { queue = append(queue, v) }
+    	}
         }
         return res
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Reconstruct Original Digits from English     :BLOG:Amusing:
 
+# Leetcode: Reconstruct Original Digits from English     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Reconstruct Original Digits from English
 ---
 
 Similar Problems:  
+
 -   [Strobogrammatic Number](https://code.dennyzhang.com/strobogrammatic-number)
 -   [Integer to English Words](https://code.dennyzhang.com/integer-to-english-words)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
@@ -33,7 +34,7 @@ Input length is less than 50,000.
     
     Output: "45"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reconstruct-original-digits-from-english)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reconstruct-original-digits-from-english)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reconstruct-original-digits-from-english/description/)  
 
@@ -62,36 +63,37 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def originalDigits(self, s):
-            """
-            :type s: str
-            :rtype: str
-            """
-            l = [0]*10
-            for ch in s:
-                if ch == 'z': l[0] += 1
-                if ch == 'w': l[2] += 1
-                if ch == 'u': l[4] += 1
-                if ch == 'x': l[6] += 1
-                if ch == 'g': l[8] += 1
-                if ch == 's': l[7] += 1 # 7 - 6
-                if ch == 'f': l[5] += 1 # 5-4
-                if ch == 'r': l[3] += 1 # 3-4-0
-                if ch == 'o': l[1] += 1 # 1-0-2-4                
-                if ch == 'i': l[9] += 1 # 9-5-6-8
+    	"""
+    	:type s: str
+    	:rtype: str
+    	"""
+    	l = [0]*10
+    	for ch in s:
+    	    if ch == 'z': l[0] += 1
+    	    if ch == 'w': l[2] += 1
+    	    if ch == 'u': l[4] += 1
+    	    if ch == 'x': l[6] += 1
+    	    if ch == 'g': l[8] += 1
+    	    if ch == 's': l[7] += 1 # 7 - 6
+    	    if ch == 'f': l[5] += 1 # 5-4
+    	    if ch == 'r': l[3] += 1 # 3-4-0
+    	    if ch == 'o': l[1] += 1 # 1-0-2-4                
+    	    if ch == 'i': l[9] += 1 # 9-5-6-8
     
-            l[7] = l[7] - l[6]
-            l[5] = l[5] - l[4]
-            l[3] = l[3] - l[4] - l[0]
-            l[1] = l[1] - l[0] - l[2] - l[4]
-            l[9] = l[9] - l[5] - l[6] - l[8]
-            res = ''
-            for i in xrange(10):
-                if l[i] != 0:
-                    res = '%s%s' % (res, str(i)*l[i])
-            return res
+    	l[7] = l[7] - l[6]
+    	l[5] = l[5] - l[4]
+    	l[3] = l[3] - l[4] - l[0]
+    	l[1] = l[1] - l[0] - l[2] - l[4]
+    	l[9] = l[9] - l[5] - l[6] - l[8]
+    	res = ''
+    	for i in xrange(10):
+    	    if l[i] != 0:
+    		res = '%s%s' % (res, str(i)*l[i])
+    	return res
     
     # s = Solution()
     # print s.originalDigits('owoztneoer') # 012
     # print s.originalDigits('fviefuro') # 45
     # print s.originalDigits('xsi') # 6
     # print s.originalDigits('nnei') # 9
+

@@ -1,5 +1,5 @@
-# Leetcode: Longest Harmonious Subsequence     :BLOG:Basic:
 
+# Leetcode: Longest Harmonious Subsequence     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Harmonious Subsequence
 ---
 
 Similar Problems:  
+
 -   [Tag: #subsequence](https://code.dennyzhang.com/tag/subsequence)
 
 ---
@@ -23,7 +24,7 @@ Now, given an integer array, you need to find the length of its longest harmonio
 
 Note: The length of the input array will not exceed 20,000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-harmonious-subsequence)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-harmonious-subsequence)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-harmonious-subsequence/description/)  
 
@@ -45,16 +46,17 @@ Leave me comments, if you have better ways to solve.
     import collections
     class Solution(object):
         def findLHS(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
-            m = collections.defaultdict(lambda: 0)
-            for num in nums:
-                m[num]+=1
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	m = collections.defaultdict(lambda: 0)
+    	for num in nums:
+    	    m[num]+=1
     
-            max_count = 0
-            for num in nums:
-                if num+1 in m:
-                    max_count = max(max_count, m[num]+m[num+1])
-            return max_count
+    	max_count = 0
+    	for num in nums:
+    	    if num+1 in m:
+    		max_count = max(max_count, m[num]+m[num+1])
+    	return max_count
+

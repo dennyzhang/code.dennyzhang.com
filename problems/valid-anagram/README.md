@@ -1,5 +1,5 @@
-# Leetcode: Valid Anagram     :BLOG:Basic:
 
+# Leetcode: Valid Anagram     :BLOG:Basic:
 
 ---
 
@@ -19,7 +19,7 @@ You may assume the string contains only lowercase alphabets.
 Follow up:  
 What if the inputs contain unicode characters? How would you adapt your solution to such case?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-anagram)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-anagram)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-anagram/description/)  
 
@@ -30,27 +30,28 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/valid-anagram
     class Solution(object):
         def isAnagram(self, s, t):
-            """
-            :type s: str
-            :type t: str
-            :rtype: bool
-            """
-            ##Idea: use a dictionary
-            ##Complexity: Time O(n), Space O(1)
-            count_dict = {}
-            for ch in s:
-                if count_dict.has_key(ch):
-                    count_dict[ch] +=1
-                else:
-                    count_dict[ch] = 1
+    	"""
+    	:type s: str
+    	:type t: str
+    	:rtype: bool
+    	"""
+    	##Idea: use a dictionary
+    	##Complexity: Time O(n), Space O(1)
+    	count_dict = {}
+    	for ch in s:
+    	    if count_dict.has_key(ch):
+    		count_dict[ch] +=1
+    	    else:
+    		count_dict[ch] = 1
     
-            for ch in t:
-                if count_dict.has_key(ch) is False:
-                    return False
-                else:
-                    count_dict[ch] -= 1
+    	for ch in t:
+    	    if count_dict.has_key(ch) is False:
+    		return False
+    	    else:
+    		count_dict[ch] -= 1
     
-            for ch in count_dict.keys():
-                if count_dict[ch] != 0:
-                    return False
-            return True
+    	for ch in count_dict.keys():
+    	    if count_dict[ch] != 0:
+    		return False
+    	return True
+

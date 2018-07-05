@@ -1,5 +1,5 @@
-# Leetcode: Set Matrix Zeroes     :BLOG:Amusing:
 
+# Leetcode: Set Matrix Zeroes     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Set row and column to 0
 ---
 
 Similar Problems:  
+
 -   [Lonely Pixel I](https://code.dennyzhang.com/lonely-pixel-i)
 -   [Tag: #array](https://code.dennyzhang.com/tag/array)
 
@@ -16,12 +17,13 @@ Similar Problems:
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.  
 
 Follow up:  
+
 -   Did you use extra space?
 -   A straight forward solution using O(mn) space is probably a bad idea.
 -   A simple improvement uses O(m + n) space, but still not the best solution.
 -   Could you devise a constant space solution?
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/set-matrix-zeroes)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/set-matrix-zeroes)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/set-matrix-zeroes/description/)  
 
@@ -41,32 +43,33 @@ Leave me comments, if you have better ways to solve.
     ## Assumptions:
     class Solution(object):
         def setZeroes(self, matrix):
-            """
-            :type matrix: List[List[int]]
-            :rtype: void Do not return anything, modify matrix in-place instead.
-            """
-            n = len(matrix)
-            if n == 0:
-                return
-            m = len(matrix[0])
-            zero_columns = []
-            for i in xrange(n):
-                for j in xrange(m):
-                    if matrix[i][j] == 0:
-                        # mark current row
-                        for k in xrange(m):
-                            if matrix[i][k] != 0:
-                                matrix[i][k] = None
-                        # mark current column to 0
-                        for k in xrange(n):
-                            if matrix[k][j] != 0:
-                                matrix[k][j] = None
-            for i in xrange(n):
-                for j in xrange(m):
-                    if matrix[i][j] is None:
-                        matrix[i][j] = 0
+    	"""
+    	:type matrix: List[List[int]]
+    	:rtype: void Do not return anything, modify matrix in-place instead.
+    	"""
+    	n = len(matrix)
+    	if n == 0:
+    	    return
+    	m = len(matrix[0])
+    	zero_columns = []
+    	for i in xrange(n):
+    	    for j in xrange(m):
+    		if matrix[i][j] == 0:
+    		    # mark current row
+    		    for k in xrange(m):
+    			if matrix[i][k] != 0:
+    			    matrix[i][k] = None
+    		    # mark current column to 0
+    		    for k in xrange(n):
+    			if matrix[k][j] != 0:
+    			    matrix[k][j] = None
+    	for i in xrange(n):
+    	    for j in xrange(m):
+    		if matrix[i][j] is None:
+    		    matrix[i][j] = 0
     # s = Solution()
     # matrix = [[1, 2, 0, 6], [0, 1, 4, 0], [7, 0, 5, 1]]
     # matrix = [[0,0,0,5],[4,3,1,4],[0,1,1,4],[1,2,1,3],[0,0,1,1]]
     # s.setZeroes(matrix)
     # print matrix
+

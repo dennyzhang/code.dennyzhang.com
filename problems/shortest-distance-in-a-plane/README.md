@@ -1,5 +1,5 @@
-# Leetcode: Shortest Distance in a Plane     :BLOG:Basic:
 
+# Leetcode: Shortest Distance in a Plane     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Distance in a Plane
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -29,7 +30,7 @@ The shortest distance is 1.00 from point (-1,-1) to (-1,2). So the output should
 
 Note: The longest distance among all the points are less than 10000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-distance-in-a-plane)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-in-a-plane)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-in-a-plane/description/)  
 
@@ -47,3 +48,4 @@ Leave me comments, if you have better ways to solve.
     # where t1.x!=t2.x or t1.y!=t2.y
     # order by shortest asc
     # limit 1
+

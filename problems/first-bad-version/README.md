@@ -1,5 +1,5 @@
-# Leetcode: First Bad Version     :BLOG:Basic:
 
+# Leetcode: First Bad Version     :BLOG:Basic:
 
 ---
 
@@ -13,7 +13,7 @@ Suppose you have n versions [1, 2, &#x2026;, n] and you want to find out the fir
 
 You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-bad-version)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/first-bad-version)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/first-bad-version/description/)  
 
@@ -34,17 +34,18 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def firstBadVersion(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            left, right = 1, n
-            while left < right:
-                mid = int(left + (right-left)/2)
-                if isBadVersion(mid):
-                    right = mid
-                else:
-                    left = mid + 1
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	left, right = 1, n
+    	while left < right:
+    	    mid = int(left + (right-left)/2)
+    	    if isBadVersion(mid):
+    		right = mid
+    	    else:
+    		left = mid + 1
     
-            # left == right
-            return left if isBadVersion(left) else None
+    	# left == right
+    	return left if isBadVersion(left) else None
+

@@ -35,7 +35,7 @@ Note:
 4.  Height and width are positive integers. 3 <= height \* width <= 10,000.
 5.  The given positions contain at least one nut, only one tree and one squirrel.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/squirrel-simulation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/squirrel-simulation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/squirrel-simulation/description/)  
 

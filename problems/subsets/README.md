@@ -1,5 +1,5 @@
-# Leetcode: Subsets     :BLOG:Basic:
 
+# Leetcode: Subsets     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Subsets
 ---
 
 Similar Problems:  
+
 -   [Subsets II](https://code.dennyzhang.com/subsets-ii)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
@@ -32,7 +33,7 @@ For example,
       []
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subsets)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/subsets)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/subsets/description/)  
 
@@ -41,3 +42,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/subsets
+

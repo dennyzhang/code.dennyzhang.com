@@ -1,5 +1,5 @@
-# Leetcode: Linked List Components     :BLOG:Basic:
 
+# Leetcode: Linked List Components     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Linked List Components
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
@@ -44,7 +45,7 @@ Note:
 -   1 <= G.length <= 10000.
 -   G is a subset of all values in the linked list.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-components)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/linked-list-components)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-components/description/)  
 
@@ -61,24 +62,25 @@ Leave me comments, if you have better ways to solve.
     
     class Solution:
         def numComponents(self, head, G):
-            """
-            :type head: ListNode
-            :type G: List[int]
-            :rtype: int
-            """
-            ## Basic Ideas: One pass for linked list
-            ##              set
-            ## Complexity: Time O(n), Space O(n)
-            nodes_set = set(G)
-            res = 0
-            node = head
-            new_start = True
-            while node:
-                if node.val in nodes_set:
-                    if new_start:
-                        res += 1
-                        new_start = False
-                else:
-                    new_start = True
-                node = node.next
-            return res
+    	"""
+    	:type head: ListNode
+    	:type G: List[int]
+    	:rtype: int
+    	"""
+    	## Basic Ideas: One pass for linked list
+    	##              set
+    	## Complexity: Time O(n), Space O(n)
+    	nodes_set = set(G)
+    	res = 0
+    	node = head
+    	new_start = True
+    	while node:
+    	    if node.val in nodes_set:
+    		if new_start:
+    		    res += 1
+    		    new_start = False
+    	    else:
+    		new_start = True
+    	    node = node.next
+    	return res
+

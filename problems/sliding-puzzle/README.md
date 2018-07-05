@@ -1,5 +1,5 @@
-# Leetcode: Sliding Puzzle     :BLOG:Basic:
 
+# Leetcode: Sliding Puzzle     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Sliding Puzzle
 ---
 
 Similar Problems:  
+
 -   [LintCode: Sliding Puzzle III](https://code.dennyzhang.com/sliding-puzzle-iii)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#game](https://code.dennyzhang.com/tag/game)
@@ -50,7 +51,7 @@ Note:
 -   board will be a 2 x 3 array as described above.
 -   board[i][j] will be a permutation of [0, 1, 2, 3, 4, 5].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sliding-puzzle)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sliding-puzzle)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sliding-puzzle/description/)  
 
@@ -64,52 +65,53 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def slidingPuzzle(self, board):
-            """
-            :type board: List[List[int]]
-            :rtype: int
-            """
-            target = '123450'
-            queue, visited = [], set()
-            queue.append(self.toString(board))
+    	"""
+    	:type board: List[List[int]]
+    	:rtype: int
+    	"""
+    	target = '123450'
+    	queue, visited = [], set()
+    	queue.append(self.toString(board))
     
-            level = 0
-            while len(queue) != 0:
-                for i in range(len(queue)):
-                    state = queue[0]
-                    if state == target: return level
-                    del queue[0]
-                    visited.add(state)
-                    # move to next
-                    self.addNeighbors(state, visited, queue)
-                    # print queue
-                level += 1
-            return -1
+    	level = 0
+    	while len(queue) != 0:
+    	    for i in range(len(queue)):
+    		state = queue[0]
+    		if state == target: return level
+    		del queue[0]
+    		visited.add(state)
+    		# move to next
+    		self.addNeighbors(state, visited, queue)
+    		# print queue
+    	    level += 1
+    	return -1
     
         def toString(self, board):
-            res = ''
-            for i in range(2):
-                for j in range(3):
-                    res = res + str(board[i][j])
-            return res
+    	res = ''
+    	for i in range(2):
+    	    for j in range(3):
+    		res = res + str(board[i][j])
+    	return res
     
         def addNeighbors(self, state, visited, queue):
-            # change back state to board
-            matrix = [[None for j in range(3)] for i in range(2)]
-            index = 0
-            i0, j0 = None, None
-            for i in range(2):
-                for j in range(3):
-                    matrix[i][j] = state[index]
-                    index += 1
-                    if matrix[i][j] == '0':
-                        i0, j0 = i, j
-            # get next: 
-            for (ik, jk) in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
-                i2, j2 = i0+ik, j0+jk
-                if i2<0 or i2 >= 2 or j2<0 or j2>=3: continue
-                matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
-                newState = self.toString(matrix)
-                if newState not in visited:
-                    queue.append(newState)
-                # change back
-                matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
+    	# change back state to board
+    	matrix = [[None for j in range(3)] for i in range(2)]
+    	index = 0
+    	i0, j0 = None, None
+    	for i in range(2):
+    	    for j in range(3):
+    		matrix[i][j] = state[index]
+    		index += 1
+    		if matrix[i][j] == '0':
+    		    i0, j0 = i, j
+    	# get next: 
+    	for (ik, jk) in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
+    	    i2, j2 = i0+ik, j0+jk
+    	    if i2<0 or i2 >= 2 or j2<0 or j2>=3: continue
+    	    matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
+    	    newState = self.toString(matrix)
+    	    if newState not in visited:
+    		queue.append(newState)
+    	    # change back
+    	    matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
+

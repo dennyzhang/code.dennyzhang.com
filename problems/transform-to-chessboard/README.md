@@ -1,5 +1,5 @@
-# Leetcode: Transform to Chessboard     :BLOG:Hard:
 
+# Leetcode: Transform to Chessboard     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Transform to Chessboard
 ---
 
 Similar Problems:  
+
 -   Tag: [#math](https://code.dennyzhang.com/tag/math), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -50,7 +51,7 @@ Note:
 -   board will have the same number of rows and columns, a number in the range [2, 30].
 -   board[i][j] will be only 0s or 1s.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/transform-to-chessboard)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/transform-to-chessboard)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/transform-to-chessboard/description/)  
 
@@ -63,3 +64,4 @@ Leave me comments, if you have better ways to solve.
     General Thinking:
 
     // Blog link: https://code.dennyzhang.com/transform-to-chessboard
+

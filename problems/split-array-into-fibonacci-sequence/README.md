@@ -1,5 +1,5 @@
-# Leetcode: Split Array into Fibonacci Sequence     :BLOG:Medium:
 
+# Leetcode: Split Array into Fibonacci Sequence     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Split Array into Fibonacci Sequence
 ---
 
 Similar Problems:  
+
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -56,7 +57,7 @@ Note:
 1.  1 <= S.length <= 200
 2.  S contains only digits.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-array-into-fibonacci-sequence)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-into-fibonacci-sequence)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/split-array-into-fibonacci-sequence/description/)  
 
@@ -79,13 +80,13 @@ Leave me comments, if you have better ways to solve.
         if num1>(1<<31 - 1) || num2>(1<<31 - 1) { return []int{} }
         res := []int{num1, num2}
         for len(S) != 0 {
-            num3 := num1+num2
-            if num3>(1<<31 - 1) { return []int{} }
-            str := strconv.Itoa(num3)
-            if strings.Index(S, str) != 0 { return []int{} }
-            S = S[len(str):]
-            num1, num2 = num2, num3
-            res = append(res, num3)
+    	num3 := num1+num2
+    	if num3>(1<<31 - 1) { return []int{} }
+    	str := strconv.Itoa(num3)
+    	if strings.Index(S, str) != 0 { return []int{} }
+    	S = S[len(str):]
+    	num1, num2 = num2, num3
+    	res = append(res, num3)
         }
         return res
     }
@@ -93,14 +94,15 @@ Leave me comments, if you have better ways to solve.
     func splitIntoFibonacci(S string) []int {
         // num1: S[0:i], num2: S[i:j]
         for i:=1; i<len(S)-2; i++ {
-            for j:=i+1; j<len(S)-1; j++ {
-                if S[0] == '0' && S[0:i] != "0" { continue }
-                if S[i] == '0' && S[i:j] != "0" { continue }
-                num1, _ := strconv.Atoi(S[0:i])
-                num2, _ := strconv.Atoi(S[i:j])
-                l := splitString(S[j:], num1, num2)
-                if len(l) >=3 { return l }
-            }
+    	for j:=i+1; j<len(S)-1; j++ {
+    	    if S[0] == '0' && S[0:i] != "0" { continue }
+    	    if S[i] == '0' && S[i:j] != "0" { continue }
+    	    num1, _ := strconv.Atoi(S[0:i])
+    	    num2, _ := strconv.Atoi(S[i:j])
+    	    l := splitString(S[j:], num1, num2)
+    	    if len(l) >=3 { return l }
+    	}
         }
         return []int{}
     }
+

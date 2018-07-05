@@ -1,5 +1,5 @@
-# Leetcode: Coin Change     :BLOG:Basic:
 
+# Leetcode: Coin Change     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Coin Change
 ---
 
 Similar Problems:  
+
 -   [Perfect Squares](https://code.dennyzhang.com/perfect-squares)
 -   [Coin Change 2](https://code.dennyzhang.com/coin-change-2)
 -   [Review: Knapsack Problems](https://code.dennyzhang.com/review-knapsack), [Tag: #knapsack](https://code.dennyzhang.com/tag/knapsack)
@@ -30,7 +31,7 @@ Example 2:
 Note:  
 You may assume that you have an infinite number of each kind of coin.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/coin-change)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/coin-change)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/coin-change/description/)  
 
@@ -45,49 +46,50 @@ Leave me comments, if you have better ways to solve.
         ##    dp(i) = min(dp(i), dp[i-coin[j]]+1)
         ## Complexity: Time O(n) Space O(n)
         def coinChange(self, coins, amount):
-            """
-            :type coins: List[int]
-            :type amount: int
-            :rtype: int
-            """
-            if amount == 0: return 0
-            import sys
-            coins.sort()
-            dp = [0] + [sys.maxsize]*(amount)
+    	"""
+    	:type coins: List[int]
+    	:type amount: int
+    	:rtype: int
+    	"""
+    	if amount == 0: return 0
+    	import sys
+    	coins.sort()
+    	dp = [0] + [sys.maxsize]*(amount)
     
-            for i in range(1, amount+1):
-                for coin in coins:
-                    if coin > i: break
-                    if dp[i-coin] != sys.maxsize:
-                        dp[i] = min(dp[i], dp[i-coin]+1)
+    	for i in range(1, amount+1):
+    	    for coin in coins:
+    		if coin > i: break
+    		if dp[i-coin] != sys.maxsize:
+    		    dp[i] = min(dp[i], dp[i-coin]+1)
     
-            return dp[amount] if dp[amount] != sys.maxsize else -1 
+    	return dp[amount] if dp[amount] != sys.maxsize else -1 
     
         ## Basic Ideas: BFS
         ##
         ## Complexity: Time O(n) Space O(n)
         def coinChange_v1(self, coins, amount):
-            """
-            :type coins: List[int]
-            :type amount: int
-            :rtype: int
-            """
-            if amount == 0: return 0
-            coins.sort()
-            d = {}
-            queue = collections.deque()
-            queue.append(0)
-            level = 0
-            while len(queue) != 0:
-                level += 1
-                for k in range(len(queue)):
-                    num = queue.popleft()
-                    for coin in coins:
-                        v = coin + num
-                        if v > amount: break
-                        if v == amount: return level
-                        # avoid duplicate
-                        if v not in d:
-                            d[v] = level
-                            queue.append(v)
-            return -1
+    	"""
+    	:type coins: List[int]
+    	:type amount: int
+    	:rtype: int
+    	"""
+    	if amount == 0: return 0
+    	coins.sort()
+    	d = {}
+    	queue = collections.deque()
+    	queue.append(0)
+    	level = 0
+    	while len(queue) != 0:
+    	    level += 1
+    	    for k in range(len(queue)):
+    		num = queue.popleft()
+    		for coin in coins:
+    		    v = coin + num
+    		    if v > amount: break
+    		    if v == amount: return level
+    		    # avoid duplicate
+    		    if v not in d:
+    			d[v] = level
+    			queue.append(v)
+    	return -1
+

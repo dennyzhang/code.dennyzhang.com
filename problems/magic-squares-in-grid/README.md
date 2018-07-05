@@ -1,5 +1,5 @@
-# Leetcode: Magic Squares In Grid     :BLOG:Basic:
 
+# Leetcode: Magic Squares In Grid     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Magic Squares In Grid
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
@@ -41,7 +42,7 @@ Note:
     - 1 <= grid[0].length <= 10
     - 0 <= grid[i][j] <= 15
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/magic-squares-in-grid)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/magic-squares-in-grid)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/magic-squares-in-grid/description/)  
 
@@ -65,25 +66,26 @@ Leave me comments, if you have better ways to solve.
         if len(grid) < 3 { return 0 }
         res := 0
         for i:=1; i<len(grid)-1; i++ {
-            for j:=1; j<len(grid[0])-1; j++ {
-                if grid[i][j] == 5 {
-                    is_ok := true
-                    m := make([]bool, 9)
-                    m[4] = true
+    	for j:=1; j<len(grid[0])-1; j++ {
+    	    if grid[i][j] == 5 {
+    		is_ok := true
+    		m := make([]bool, 9)
+    		m[4] = true
     
-                    for _, offset := range [][]int{[]int{-1, -1}, []int{-1, 0}, 
-                                                   []int{-1, 1}, []int{0, -1}} {
-                        v1,v2 := grid[i+offset[0]][j+offset[1]], grid[i-offset[0]][j-offset[1]]
-                        if v1<1 || v1>9 || v2<1 || v2>9 || 
-                            v1+v2 != 10 || m[v1-1] == true || m[v2-1] == true { 
-                            is_ok = false
-                            break 
-                        }
-                        m[v1-1], m[v2-1] = true, true
-                    }
-                    if is_ok == true { res++ }
-                }
-            }
+    		for _, offset := range [][]int{[]int{-1, -1}, []int{-1, 0}, 
+    					       []int{-1, 1}, []int{0, -1}} {
+    		    v1,v2 := grid[i+offset[0]][j+offset[1]], grid[i-offset[0]][j-offset[1]]
+    		    if v1<1 || v1>9 || v2<1 || v2>9 || 
+    			v1+v2 != 10 || m[v1-1] == true || m[v2-1] == true { 
+    			is_ok = false
+    			break 
+    		    }
+    		    m[v1-1], m[v2-1] = true, true
+    		}
+    		if is_ok == true { res++ }
+    	    }
+    	}
         }
         return res
     }
+

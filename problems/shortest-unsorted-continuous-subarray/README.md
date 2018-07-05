@@ -1,5 +1,5 @@
-# Leetcode: Shortest Unsorted Continuous Subarray     :BLOG:Amusing:
 
+# Leetcode: Shortest Unsorted Continuous Subarray     :BLOG:Amusing:
 
 ---
 
@@ -19,7 +19,7 @@ You need to find the shortest such subarray and output its length.
     Then length of the input array is in range [1, 10,000].
     The input array may contain duplicates, so ascending order here means <=.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-unsorted-continuous-subarray)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-unsorted-continuous-subarray)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/)  
 
@@ -39,23 +39,24 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*log(n)), Space O(n)
     class Solution(object):
         def findUnsortedSubarray(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
-            length = len(nums)
-            if length <= 1: return 0
-            nums2 = sorted(nums)
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	if length <= 1: return 0
+    	nums2 = sorted(nums)
     
-            start = 0
-            while start < length and nums[start] == nums2[start]:
-                start += 1
+    	start = 0
+    	while start < length and nums[start] == nums2[start]:
+    	    start += 1
     
-            # If already sorted, start would be length
-            if start == length: return 0
+    	# If already sorted, start would be length
+    	if start == length: return 0
     
-            end = length-1
-            while end > start and end > 0 and nums[end] == nums2[end]:
-                end -= 1
+    	end = length-1
+    	while end > start and end > 0 and nums[end] == nums2[end]:
+    	    end -= 1
     
-            return end - start + 1
+    	return end - start + 1
+

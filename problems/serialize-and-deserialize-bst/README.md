@@ -1,5 +1,5 @@
-# Leetcode: Serialize and Deserialize BST     :BLOG:Basic:
 
+# Leetcode: Serialize and Deserialize BST     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Serialize and Deserialize BST
 ---
 
 Similar Problems:  
+
 -   [Serialize and Deserialize Binary Tree](https://code.dennyzhang.com/serialize-and-deserialize-binary-tree)
 -   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -21,7 +22,7 @@ The encoded string should be as compact as possible.
 
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/serialize-and-deserialize-bst)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/serialize-and-deserialize-bst)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/serialize-and-deserialize-bst/description/)  
 
@@ -43,47 +44,48 @@ Leave me comments, if you have better ways to solve.
     class Codec:
     
         def serialize(self, root):
-            """Encodes a tree to a single string.
+    	"""Encodes a tree to a single string.
     
-            :type root: TreeNode
-            :rtype: str
-            """
-            def pre_order(root):
-                if root is None: return ""
+    	:type root: TreeNode
+    	:rtype: str
+    	"""
+    	def pre_order(root):
+    	    if root is None: return ""
     
-                ret = str(root.val)
-                left = pre_order(root.left)
-                if left: ret = "%s %s" % (ret, left)
+    	    ret = str(root.val)
+    	    left = pre_order(root.left)
+    	    if left: ret = "%s %s" % (ret, left)
     
-                right = pre_order(root.right)
-                if right: ret = "%s %s" % (ret, right)
-                return ret
+    	    right = pre_order(root.right)
+    	    if right: ret = "%s %s" % (ret, right)
+    	    return ret
     
-            return pre_order(root)
+    	return pre_order(root)
     
         def deserialize(self, data):
-            """Decodes your encoded data to tree.
+    	"""Decodes your encoded data to tree.
     
-            :type data: str
-            :rtype: TreeNode
-            """
-            def my_deserialize(l):
-                import sys
-                if len(l) == 0: return None
-                root = TreeNode(l[0])
-                index = sys.maxsize
-                for i in range(1, len(l)):
-                    if l[i] > root.val:
-                        index = i
-                        break
-                root.left = my_deserialize(l[1:index])
-                root.right = my_deserialize(l[index:])
-                return root
+    	:type data: str
+    	:rtype: TreeNode
+    	"""
+    	def my_deserialize(l):
+    	    import sys
+    	    if len(l) == 0: return None
+    	    root = TreeNode(l[0])
+    	    index = sys.maxsize
+    	    for i in range(1, len(l)):
+    		if l[i] > root.val:
+    		    index = i
+    		    break
+    	    root.left = my_deserialize(l[1:index])
+    	    root.right = my_deserialize(l[index:])
+    	    return root
     
-            if data == "": return None
-            l = [int(x) for x in data.split(" ")]
-            return my_deserialize(l)        
+    	if data == "": return None
+    	l = [int(x) for x in data.split(" ")]
+    	return my_deserialize(l)        
     
     # Your Codec object will be instantiated and called as such:
     # codec = Codec()
     # codec.deserialize(codec.serialize(root))
+

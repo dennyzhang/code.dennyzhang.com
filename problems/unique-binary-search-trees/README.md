@@ -1,5 +1,5 @@
-# Leetcode: Unique Binary Search Trees     :BLOG:Hard:
 
+# Leetcode: Unique Binary Search Trees     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Unique Binary Search Trees
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -24,7 +25,7 @@ Given n, how many structurally unique BST's (binary search trees) that store val
         /     /       \                 \
        2     1         2                 3
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-binary-search-trees)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-binary-search-trees)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/unique-binary-search-trees/description/)  
 
@@ -66,10 +67,11 @@ Leave me comments, if you have better ways to solve.
         dp := make([]int, n+1)
         dp[0] = 1
         for i, _:= range dp {
-            if i == 0 { continue }
-            for j := 0; j<i; j++ {
-                dp[i] += dp[j]*dp[i-1-j]
-            }
+    	if i == 0 { continue }
+    	for j := 0; j<i; j++ {
+    	    dp[i] += dp[j]*dp[i-1-j]
+    	}
         }
         return dp[n]
     }
+

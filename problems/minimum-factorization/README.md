@@ -1,5 +1,5 @@
-# Leetcode: Minimum Factorization     :BLOG:Medium:
 
+# Leetcode: Minimum Factorization     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Factorization
 ---
 
 Similar Problems:  
+
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
 
 ---
@@ -31,7 +32,7 @@ Example 2
     Output:
     35
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-factorization)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-factorization)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-factorization/description/)  
 
@@ -57,10 +58,10 @@ Leave me comments, if you have better ways to solve.
         if a<=1 { return a }
         m := map[int]int{}
         for _, v:=range[]int{2, 3, 5, 7} {
-            for a%v == 0 {
-                a = int(a/v)
-                m[v] += 1
-            }
+    	for a%v == 0 {
+    	    a = int(a/v)
+    	    m[v] += 1
+    	}
         }
         if a !=1 { return 0 }
     
@@ -75,11 +76,12 @@ Leave me comments, if you have better ways to solve.
         // get the result
         res := 0
         for i:=2; i<10; i++ {
-            for m[i] != 0 {
-                res = res*10+i
-                if res > 2147483647 { return 0 }
-                m[i]--
-            }
+    	for m[i] != 0 {
+    	    res = res*10+i
+    	    if res > 2147483647 { return 0 }
+    	    m[i]--
+    	}
         }
         return res
     }
+

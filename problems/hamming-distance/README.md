@@ -1,5 +1,5 @@
-# Leetcode: Hamming Distance     :BLOG:Medium:
 
+# Leetcode: Hamming Distance     :BLOG:Medium:
 
 ---
 
@@ -27,7 +27,7 @@ Note:
     
     The above arrows point to positions where the corresponding bits are different.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/hamming-distance)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/hamming-distance)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/hamming-distance/description/)  
 
@@ -41,15 +41,16 @@ Leave me comments, if you have better ways to solve.
     ## Complexity
     class Solution(object):
         def hammingDistance(self, x, y):
-            """
-            :type x: int
-            :type y: int
-            :rtype: int
-            """
-            num = x ^ y
-            res = 0
-            while num != 0:
-                if num % 2 == 1:
-                    res += 1
-                num = num >> 1
-            return res
+    	"""
+    	:type x: int
+    	:type y: int
+    	:rtype: int
+    	"""
+    	num = x ^ y
+    	res = 0
+    	while num != 0:
+    	    if num % 2 == 1:
+    		res += 1
+    	    num = num >> 1
+    	return res
+

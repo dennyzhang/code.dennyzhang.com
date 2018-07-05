@@ -1,5 +1,5 @@
-# Leetcode: Chalkboard XOR Game     :BLOG:Hard:
 
+# Leetcode: Chalkboard XOR Game     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Chalkboard XOR Game
 ---
 
 Similar Problems:  
+
 -   [Swap Adjacent in LR String](https://code.dennyzhang.com/swap-adjacent-in-lr-string)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [#bitmanipulation](https://code.dennyzhang.com/tag/bitmanipulation), [#game](https://code.dennyzhang.com/tag/game), [#math](https://code.dennyzhang.com/tag/math)
@@ -34,7 +35,7 @@ Notes:
 -   1 <= N <= 1000.
 -   0 <= nums[i] <= 2^16.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/chalkboard-xor-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/chalkboard-xor-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/chalkboard-xor-game/description/)  
 
@@ -67,10 +68,11 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def xorGame(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: bool
-            """
-            xor = 0
-            for num in nums: xor ^= num
-            return xor == 0 or len(nums)%2 == 0
+    	"""
+    	:type nums: List[int]
+    	:rtype: bool
+    	"""
+    	xor = 0
+    	for num in nums: xor ^= num
+    	return xor == 0 or len(nums)%2 == 0
+

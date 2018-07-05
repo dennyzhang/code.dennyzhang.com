@@ -1,5 +1,5 @@
-# Leetcode: Number of Matching Subsequences     :BLOG:Medium:
 
+# Leetcode: Number of Matching Subsequences     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Number of Matching Subsequences
 ---
 
 Similar Problems:  
+
 -   [Tag: #subsequence](https://code.dennyzhang.com/tag/subsequence)
 
 ---
@@ -29,7 +30,7 @@ Note:
 -   The length of words will be in the range of [1, 5000].
 -   The length of words[i] will be in the range of [1, 50].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-matching-subsequences)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-matching-subsequences)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-matching-subsequences/description/)  
 
@@ -42,31 +43,32 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*m), Space O(1)
     class Solution:
         def numMatchingSubseq(self, S, words):
-            """
-            :type S: str
-            :type words: List[str]
-            :rtype: int
-            """
-            res = 0
-            ok_set = set([])
-            invalid_set = set([])
-            for word in words:
-                # avoid duplicate calculation
-                if word in ok_set:
-                    res += 1
-                    continue
+    	"""
+    	:type S: str
+    	:type words: List[str]
+    	:rtype: int
+    	"""
+    	res = 0
+    	ok_set = set([])
+    	invalid_set = set([])
+    	for word in words:
+    	    # avoid duplicate calculation
+    	    if word in ok_set:
+    		res += 1
+    		continue
     
-                if word in invalid_set: continue
+    	    if word in invalid_set: continue
     
-                index = 0
-                for ch in S:
-                    if ch == word[index]: index += 1
-                    if index == len(word):
-                        res += 1
-                        break
+    	    index = 0
+    	    for ch in S:
+    		if ch == word[index]: index += 1
+    		if index == len(word):
+    		    res += 1
+    		    break
     
-                if index != len(word):
-                    invalid_set.add(word)
-                else:
-                    ok_set.add(word)
-            return res
+    	    if index != len(word):
+    		invalid_set.add(word)
+    	    else:
+    		ok_set.add(word)
+    	return res
+

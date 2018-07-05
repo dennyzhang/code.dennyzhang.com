@@ -1,5 +1,5 @@
-# Leetcode: Flatten Binary Tree to Linked List     :BLOG:Basic:
 
+# Leetcode: Flatten Binary Tree to Linked List     :BLOG:Basic:
 
 ---
 
@@ -35,7 +35,7 @@ Hints:
 
 If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-binary-tree-to-linked-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flatten-binary-tree-to-linked-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)  
 
@@ -56,31 +56,32 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def flatten(self, root):
-            """
-            :type root: TreeNode
-            :rtype: void Do not return anything, modify root in-place instead.
-            """
-            self._flatten(root)
+    	"""
+    	:type root: TreeNode
+    	:rtype: void Do not return anything, modify root in-place instead.
+    	"""
+    	self._flatten(root)
     
         def _flatten(self, root):
-            """
-            :type root: TreeNode
-            :rtype: TreeNode: last node in the chain
-            """
-            if root is None:
-                return None
-            if root.left is None and root.right is None:
-                return root
+    	"""
+    	:type root: TreeNode
+    	:rtype: TreeNode: last node in the chain
+    	"""
+    	if root is None:
+    	    return None
+    	if root.left is None and root.right is None:
+    	    return root
     
-            root_right = root.right
-            q = None
-            if root.left:
-                q = self._flatten(root.left)
-                q.right = root.right
-                root.right = root.left
-                root.left = None
+    	root_right = root.right
+    	q = None
+    	if root.left:
+    	    q = self._flatten(root.left)
+    	    q.right = root.right
+    	    root.right = root.left
+    	    root.left = None
     
-            if root_right:
-                q = self._flatten(root.right)
+    	if root_right:
+    	    q = self._flatten(root.right)
     
-            return q
+    	return q
+

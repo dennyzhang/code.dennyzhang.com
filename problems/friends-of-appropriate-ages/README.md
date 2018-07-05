@@ -1,5 +1,5 @@
-# Leetcode: Friends Of Appropriate Ages     :BLOG:Medium:
 
+# Leetcode: Friends Of Appropriate Ages     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Friends Of Appropriate Ages
 ---
 
 Similar Problems:  
+
 -   [LintCode: Friend Request](https://code.dennyzhang.com/friend-request)
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
@@ -49,7 +50,7 @@ Notes:
 -   1 <= ages.length <= 20000.
 -   1 <= ages[i] <= 120.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/friends-of-appropriate-ages)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friends-of-appropriate-ages)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/friends-of-appropriate-ages/description/)  
 
@@ -69,19 +70,20 @@ Leave me comments, if you have better ways to solve.
     
         res := 0
         for age:=1; age<=120; age++ {
-            count, _ := m[age]
-            if count == 0 { continue }
+    	count, _ := m[age]
+    	if count == 0 { continue }
     
-            // friends with the same age
-            if float32(age)>0.5*float32(age)+7 { res += count*(count-1) }
+    	// friends with the same age
+    	if float32(age)>0.5*float32(age)+7 { res += count*(count-1) }
     
-            // friends with different ages
-            for age2:=1; age2<age; age2++ {
-                count2, _ := m[age2]
-                if count2 == 0 { continue }
-                if 0.5*float32(age)+7>= float32(age2) { continue }
-                res += count*count2
-            }
+    	// friends with different ages
+    	for age2:=1; age2<age; age2++ {
+    	    count2, _ := m[age2]
+    	    if count2 == 0 { continue }
+    	    if 0.5*float32(age)+7>= float32(age2) { continue }
+    	    res += count*count2
+    	}
         }
         return res
     }
+

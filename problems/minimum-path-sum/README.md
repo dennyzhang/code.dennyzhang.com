@@ -1,5 +1,5 @@
-# Leetcode: Minimum Path Sum     :BLOG:Basic:
 
+# Leetcode: Minimum Path Sum     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Path Sum
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -23,7 +24,7 @@ Note: You can only move either down or right at any point in time.
      [4,2,1]]
     Given the above grid map, return 7. Because the path 1->3->1->1->1 minimizes the sum.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-path-sum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-path-sum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-path-sum/description/)  
 
@@ -45,26 +46,27 @@ Leave me comments, if you have better ways to solve.
     ##
     class Solution(object):
         def minPathSum(self, grid):
-            """
-            :type grid: List[List[int]]
-            :rtype: int
-            """
-            m = len(grid)
-            if m == 0: return 0
-            n = len(grid[0])
-            for i in xrange(m):
-                for j in xrange(n):
-                    # skip the first node
-                    if i == 0 and j == 0:
-                        continue
-                    # first column
-                    if j == 0:
-                        grid[i][j] += grid[i-1][j]
-                        continue
-                    # first row
-                    if i == 0:
-                        grid[i][j] += grid[i][j-1]
-                        continue
-                    grid[i][j] = min(grid[i][j-1], grid[i-1][j]) + grid[i][j]
+    	"""
+    	:type grid: List[List[int]]
+    	:rtype: int
+    	"""
+    	m = len(grid)
+    	if m == 0: return 0
+    	n = len(grid[0])
+    	for i in xrange(m):
+    	    for j in xrange(n):
+    		# skip the first node
+    		if i == 0 and j == 0:
+    		    continue
+    		# first column
+    		if j == 0:
+    		    grid[i][j] += grid[i-1][j]
+    		    continue
+    		# first row
+    		if i == 0:
+    		    grid[i][j] += grid[i][j-1]
+    		    continue
+    		grid[i][j] = min(grid[i][j-1], grid[i-1][j]) + grid[i][j]
     
-            return grid[-1][-1]
+    	return grid[-1][-1]
+

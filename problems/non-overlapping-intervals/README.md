@@ -1,5 +1,5 @@
-# Leetcode: Non-overlapping Intervals     :BLOG:Medium:
 
+# Leetcode: Non-overlapping Intervals     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Non-overlapping Intervals
 ---
 
 Similar Problems:  
+
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
@@ -39,7 +40,7 @@ Intervals like [1,2] and [2,3] have borders "touching" but they don't overlap ea
     
     Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/non-overlapping-intervals)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/non-overlapping-intervals)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/non-overlapping-intervals/description/)  
 
@@ -56,7 +57,8 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def eraseOverlapIntervals(self, intervals):
-            """
-            :type intervals: List[Interval]
-            :rtype: int
-            """
+    	"""
+    	:type intervals: List[Interval]
+    	:rtype: int
+    	"""
+

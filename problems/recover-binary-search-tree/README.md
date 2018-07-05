@@ -1,5 +1,5 @@
-# Leetcode: Recover Binary Search Tree     :BLOG:Amusing:
 
+# Leetcode: Recover Binary Search Tree     :BLOG:Amusing:
 
 ---
 
@@ -14,7 +14,7 @@ Recover the tree without changing its structure.
 Note:  
 A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/recover-binary-search-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/recover-binary-search-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/recover-binary-search-tree/description/)  
 
@@ -38,31 +38,32 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def recoverTree(self, root):
-            """
-            :type root: TreeNode
-            :rtype: void Do not return anything, modify root in-place instead.
-            """
-            if root is None:
-                return
-            # level tree trasversal
-            queue = []
-            queue.append(root)
-            while len(queue) != 0:
-                for i in xrange(len(queue)):
-                    node = queue[0]
-                    del queue[0]
-                    # issue of left-right
-                    if node.left and node.right and node.left.val > node.right.val:
-                        node.left.val, node.right.val = node.right.val, node.left.val
-                        return
-                    # issue of parent-child
-                    if node.left and node.val < node.left.val:
-                        node.val, node.left.val = node.left.val, node.val
-                        return
-                    if node.right and node.val > node.right.val:
-                        node.val, node.right.val = node.right.val, node.val
-                        return
-                    if node.left:
-                        queue.append(node.left)
-                    if node.right:
-                        queue.append(node.right)
+    	"""
+    	:type root: TreeNode
+    	:rtype: void Do not return anything, modify root in-place instead.
+    	"""
+    	if root is None:
+    	    return
+    	# level tree trasversal
+    	queue = []
+    	queue.append(root)
+    	while len(queue) != 0:
+    	    for i in xrange(len(queue)):
+    		node = queue[0]
+    		del queue[0]
+    		# issue of left-right
+    		if node.left and node.right and node.left.val > node.right.val:
+    		    node.left.val, node.right.val = node.right.val, node.left.val
+    		    return
+    		# issue of parent-child
+    		if node.left and node.val < node.left.val:
+    		    node.val, node.left.val = node.left.val, node.val
+    		    return
+    		if node.right and node.val > node.right.val:
+    		    node.val, node.right.val = node.right.val, node.val
+    		    return
+    		if node.left:
+    		    queue.append(node.left)
+    		if node.right:
+    		    queue.append(node.right)
+

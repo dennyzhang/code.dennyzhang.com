@@ -1,5 +1,5 @@
-# Leetcode: Basic Calculator II     :BLOG:Amusing:
 
+# Leetcode: Basic Calculator II     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Basic Calculator II
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -24,7 +25,7 @@ You may assume that the given expression is always valid.
     " 3+5 / 2 " = 5
     Note: Do not use the eval built-in library function.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/basic-calculator-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/basic-calculator-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/basic-calculator-ii/description/)  
 
@@ -40,58 +41,59 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def calculate(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            s = s.replace(' ', '')
-            i = 0
-            length = len(s)
-            # solve */
-            stack = []
-            while i<length:
-                if s[i].isdigit():
-                    # get the num
-                    num_str = ''
-                    while i<length and s[i].isdigit():
-                        num_str = "%s%s" % (num_str, s[i])
-                        i += 1
-                    stack.append(num_str)
-                elif s[i] in '*/':
-                    num1 = int(stack.pop())
-                    num_str = ''
-                    op = s[i]
-                    # find the next number
-                    i += 1
-                    while i<length and s[i].isdigit():
-                        num_str = "%s%s" % (num_str, s[i])
-                        i += 1
-                    num2 = int(num_str)
-                    if op == '*':
-                        num1 = num1*num2
-                    else:
-                        num1 = num1/num2
-                    stack.append(str(num1))
-                else:
-                    # +-
-                    stack.append(s[i])
-                    i += 1
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	s = s.replace(' ', '')
+    	i = 0
+    	length = len(s)
+    	# solve */
+    	stack = []
+    	while i<length:
+    	    if s[i].isdigit():
+    		# get the num
+    		num_str = ''
+    		while i<length and s[i].isdigit():
+    		    num_str = "%s%s" % (num_str, s[i])
+    		    i += 1
+    		stack.append(num_str)
+    	    elif s[i] in '*/':
+    		num1 = int(stack.pop())
+    		num_str = ''
+    		op = s[i]
+    		# find the next number
+    		i += 1
+    		while i<length and s[i].isdigit():
+    		    num_str = "%s%s" % (num_str, s[i])
+    		    i += 1
+    		num2 = int(num_str)
+    		if op == '*':
+    		    num1 = num1*num2
+    		else:
+    		    num1 = num1/num2
+    		stack.append(str(num1))
+    	    else:
+    		# +-
+    		stack.append(s[i])
+    		i += 1
     
-            # solve +-
-            res, i = 0, 0
-            while i<len(stack):
-                element = stack[i]
-                if element in '+-':
-                    num2 = stack[i+1]
-                    i = i+2
-                    if element == '+':
-                        res += int(num2)
-                    else:
-                        res -= int(num2)
-                else:
-                    res += int(element)
-                    i += 1
-            return res
+    	# solve +-
+    	res, i = 0, 0
+    	while i<len(stack):
+    	    element = stack[i]
+    	    if element in '+-':
+    		num2 = stack[i+1]
+    		i = i+2
+    		if element == '+':
+    		    res += int(num2)
+    		else:
+    		    res -= int(num2)
+    	    else:
+    		res += int(element)
+    		i += 1
+    	return res
     
     # s = Solution()
     # print s.calculate(" 3+5 / 2 ") # 5
+

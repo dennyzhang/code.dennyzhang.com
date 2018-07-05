@@ -1,5 +1,5 @@
-# Leetcode: Heaters     :BLOG:Amusing:
 
+# Leetcode: Heaters     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Heaters
 ---
 
 Similar Problems:  
+
 -   [Shortest Word Distance](https://code.dennyzhang.com/shortest-word-distance)
 -   Tag: [#inspiring](https://code.dennyzhang.com/category/inspiring), [#classic](https://code.dennyzhang.com/category/classic)
 
@@ -20,6 +21,7 @@ Now, you are given positions of houses and heaters on a horizontal line, find ou
 So, your input will be the positions of houses and heaters seperately, and your expected output will be the minimum radius standard of heaters.  
 
 Note:  
+
 1.  Numbers of houses and heaters you are given are non-negative and will not exceed 25000.
 2.  Positions of houses and heaters you are given are non-negative and will not exceed 10^9.
 3.  As long as a house is in the heaters' warm radius range, it can be warmed.
@@ -37,7 +39,7 @@ Example 2:
     Output: 1
     Explanation: The two heater was placed in the position 1 and 4. We need to use radius 1 standard, then all the houses can be warmed.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/heaters)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/heaters)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/heaters/description/)  
 
@@ -61,11 +63,12 @@ Leave me comments, if you have better ways to solve.
         res := 0
         i := 0
         for _, house := range houses {
-            // find the nearest heater
-            for i<len(heaters)-1 && abs(heaters[i]-house) >= abs(heaters[i+1]-house) {
-                i++
-            }
-            if abs(heaters[i]-house) > res { res = abs(heaters[i]-house) }
+    	// find the nearest heater
+    	for i<len(heaters)-1 && abs(heaters[i]-house) >= abs(heaters[i+1]-house) {
+    	    i++
+    	}
+    	if abs(heaters[i]-house) > res { res = abs(heaters[i]-house) }
         }
         return res
     }
+

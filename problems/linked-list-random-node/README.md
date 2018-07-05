@@ -1,5 +1,5 @@
-# Leetcode: Linked List Random Node     :BLOG:Amusing:
 
+# Leetcode: Linked List Random Node     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Linked List Random Node
 ---
 
 Similar Problems:  
+
 -   Tag: [#reservoirsampling](https://code.dennyzhang.com/tag/reservoirsampling)
 
 ---
@@ -28,7 +29,7 @@ Example:
     // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
     solution.getRandom();
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/linked-list-random-node)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/linked-list-random-node)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/linked-list-random-node/description/)  
 
@@ -52,34 +53,35 @@ Leave me comments, if you have better ways to solve.
     class Solution(object):
     
         def __init__(self, head):
-            """
-            @param head The linked list's head.
-            Note that the head is guaranteed to be not null, so it contains at least one node.
-            :type head: ListNode
-            """
-            self.head = head
+    	"""
+    	@param head The linked list's head.
+    	Note that the head is guaranteed to be not null, so it contains at least one node.
+    	:type head: ListNode
+    	"""
+    	self.head = head
     
         def getRandom(self):
-            """
-            Returns a random node's value.
-            :rtype: int
-            """
-            if self.head is None: return None
-            if self.head.next is None: return self.head.val
+    	"""
+    	Returns a random node's value.
+    	:rtype: int
+    	"""
+    	if self.head is None: return None
+    	if self.head.next is None: return self.head.val
     
-            res = self.head.val
-            p = self.head.next
-            i = 2
-            while p:
-                # Keep with possibility of 1/i
-                random_v = random.randint(1, i)
-                # Why we won't quit?
-                if random_v == 1:
-                    res = p.val
-                p = p.next
-                i = i+1
-            return res
+    	res = self.head.val
+    	p = self.head.next
+    	i = 2
+    	while p:
+    	    # Keep with possibility of 1/i
+    	    random_v = random.randint(1, i)
+    	    # Why we won't quit?
+    	    if random_v == 1:
+    		res = p.val
+    	    p = p.next
+    	    i = i+1
+    	return res
     
     # Your Solution object will be instantiated and called as such:
     # obj = Solution(head)
     # param_1 = obj.getRandom()
+

@@ -51,7 +51,7 @@ Note:
 -   k is in the range of [0, n - 1].
 -   There will not be any duplicated flights or self cycles.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/cheapest-flights-within-k-stops)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/cheapest-flights-within-k-stops)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)  
 

@@ -1,5 +1,5 @@
-# Leetcode: Max Chunks To Make Sorted II     :BLOG:Hard:
 
+# Leetcode: Max Chunks To Make Sorted II     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Max Chunks To Make Sorted II
 ---
 
 Similar Problems:  
+
 -   [Max Chunks To Make Sorted](https://code.dennyzhang.com/max-chunks-to-make-sorted)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
@@ -38,7 +39,7 @@ Note:
 -   arr will have length in range [1, 2000].
 -   arr[i] will be an integer in range [0, 10\*\*8].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-chunks-to-make-sorted-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-chunks-to-make-sorted-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/max-chunks-to-make-sorted-ii/description/)  
 
@@ -50,11 +51,15 @@ Leave me comments, if you have better ways to solve.
 
 **General Thinkings:**  
 
+    
 
 **Key Observations:**  
 
+    
 
 **Walk Through Testdata**  
 
+    
 
     // Blog link: https://code.dennyzhang.com/max-chunks-to-make-sorted-ii
+

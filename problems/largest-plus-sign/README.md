@@ -1,5 +1,5 @@
-# Leetcode: Largest Plus Sign     :BLOG:Medium:
 
+# Leetcode: Largest Plus Sign     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Largest Plus Sign
 ---
 
 Similar Problems:  
+
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -73,7 +74,7 @@ Note:
 3.  mines[i] will be length 2 and consist of integers in the range [0, N-1].
 4.  (Additionally, programs submitted in C, C++, or C# will be judged with a slightly smaller time limit.)
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-plus-sign)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-plus-sign)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/largest-plus-sign/description/)  
 
@@ -82,3 +83,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/largest-plus-sign
+

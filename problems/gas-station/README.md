@@ -1,5 +1,5 @@
-# Leetcode: Gas Station     :BLOG:Hard:
 
+# Leetcode: Gas Station     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Gas Station
 ---
 
 Similar Problems:  
+
 -   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy), [Tag: #greedy](https://code.dennyzhang.com/tag/greedy)
 
 ---
@@ -21,7 +22,7 @@ Return the starting gas station's index if you can travel around the circuit onc
 Note:  
 The solution is guaranteed to be unique.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/gas-station)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/gas-station)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/gas-station/description/)  
 
@@ -46,18 +47,19 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def canCompleteCircuit(self, gas, cost):
-            """
-            :type gas: List[int]
-            :type cost: List[int]
-            :rtype: int
-            """
-            length = len(gas)
-            res, curSum, totalSum = 0, 0, 0
-            for i in range(0, length):
-                totalSum += gas[i] - cost[i]
-                curSum += gas[i] - cost[i]
-                if curSum < 0:
-                    res = i+1
-                    curSum = 0
+    	"""
+    	:type gas: List[int]
+    	:type cost: List[int]
+    	:rtype: int
+    	"""
+    	length = len(gas)
+    	res, curSum, totalSum = 0, 0, 0
+    	for i in range(0, length):
+    	    totalSum += gas[i] - cost[i]
+    	    curSum += gas[i] - cost[i]
+    	    if curSum < 0:
+    		res = i+1
+    		curSum = 0
     
-            return res if totalSum >=0 else -1
+    	return res if totalSum >=0 else -1
+

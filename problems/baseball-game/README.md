@@ -1,5 +1,5 @@
-# Leetcode: Baseball Game     :BLOG:Basic:
 
+# Leetcode: Baseball Game     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Baseball Game
 ---
 
 Similar Problems:  
+
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -48,10 +49,11 @@ You need to return the sum of the points you could get in all the rounds.
     Round 7: You could get 9 + 5 = 14 points. The sum is 27.
 
 Note:  
+
 1.  The size of the input list will be between 1 and 1000.
 2.  Every integer represented in the list will be between -30000 and 30000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/baseball-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/baseball-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/baseball-game/description/)  
 
@@ -68,21 +70,22 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def calPoints(self, ops):
-            """
-            :type ops: List[str]
-            :rtype: int
-            """
-            stack = []
-            for op in ops:
-                if op == '+':
-                    if len(stack) >= 2:
-                        stack.append(stack[-1] + stack[-2])
-                elif op == 'D':
-                    if len(stack) >= 1:
-                        stack.append(stack[-1]*2)
-                elif op == 'C':
-                    if len(stack) >= 1:
-                        del stack[-1]
-                else:
-                    stack.append(int(op))
-            return sum(stack)
+    	"""
+    	:type ops: List[str]
+    	:rtype: int
+    	"""
+    	stack = []
+    	for op in ops:
+    	    if op == '+':
+    		if len(stack) >= 2:
+    		    stack.append(stack[-1] + stack[-2])
+    	    elif op == 'D':
+    		if len(stack) >= 1:
+    		    stack.append(stack[-1]*2)
+    	    elif op == 'C':
+    		if len(stack) >= 1:
+    		    del stack[-1]
+    	    else:
+    		stack.append(int(op))
+    	return sum(stack)
+

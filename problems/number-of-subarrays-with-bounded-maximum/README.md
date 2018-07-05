@@ -1,5 +1,5 @@
-# Leetcode: Number of Subarrays with Bounded Maximum     :BLOG:Medium:
 
+# Leetcode: Number of Subarrays with Bounded Maximum     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Number of Subarrays with Bounded Maximum
 ---
 
 Similar Problems:  
+
 -   [Tag: #subarray](https://code.dennyzhang.com/tag/subarray)
 
 ---
@@ -30,7 +31,7 @@ Note:
 -   L, R  and A[i] will be an integer in the range [0, 10^9].
 -   The length of A will be in the range of [1, 50000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-subarrays-with-bounded-maximum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-subarrays-with-bounded-maximum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/description/)  
 
@@ -46,39 +47,40 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*n), Space O(1)
     class Solution:
         def numSubarrayBoundedMax(self, A, L, R):
-            """
-            :type A: List[int]
-            :type L: int
-            :type R: int
-            :rtype: int
-            """
-            length = len(A)
-            myList = []
-            res = 0
-            for i in range(length+1):
-                if i == length:
-                    res += self.myNumSubarrayBoundedMax(myList, L)
-                else:
-                    if A[i] > R:
-                        res += self.myNumSubarrayBoundedMax(myList, L)
-                        myList = []
-                    else:
-                        myList.append(A[i])
-            return res
+    	"""
+    	:type A: List[int]
+    	:type L: int
+    	:type R: int
+    	:rtype: int
+    	"""
+    	length = len(A)
+    	myList = []
+    	res = 0
+    	for i in range(length+1):
+    	    if i == length:
+    		res += self.myNumSubarrayBoundedMax(myList, L)
+    	    else:
+    		if A[i] > R:
+    		    res += self.myNumSubarrayBoundedMax(myList, L)
+    		    myList = []
+    		else:
+    		    myList.append(A[i])
+    	return res
     
         def myNumSubarrayBoundedMax(self, myList, L):
-            length = len(myList)
-            res = 0
-            for i in range(length):
-                # find the first item which is no smaller than L
-                index = -1
-                for j in range(i, length):
-                    if myList[j] >= L:
-                        index = j
-                        break
-                if index == -1: continue
-                res += length-j
-            return res
+    	length = len(myList)
+    	res = 0
+    	for i in range(length):
+    	    # find the first item which is no smaller than L
+    	    index = -1
+    	    for j in range(i, length):
+    		if myList[j] >= L:
+    		    index = j
+    		    break
+    	    if index == -1: continue
+    	    res += length-j
+    	return res
     
     # s = Solution()
     # print(s.numSubarrayBoundedMax([2,9,2,5,6], 2, 8)) # 7
+

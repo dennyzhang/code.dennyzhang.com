@@ -1,5 +1,5 @@
-# Leetcode: Shortest Word Distance II     :BLOG:Medium:
 
+# Leetcode: Shortest Word Distance II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Word Distance II
 ---
 
 Similar Problems:  
+
 -   [Shortest Word Distance](https://code.dennyzhang.com/shortest-word-distance)
 -   [Shortest Word Distance III](https://code.dennyzhang.com/shortest-word-distance-iii)
 -   Tag: [#oodesign](https://code.dennyzhang.com/tag/oodesign), [#hashmap](https://code.dennyzhang.com/tag/hashmap), [#classic](https://code.dennyzhang.com/tag/classic)
@@ -28,7 +29,7 @@ For example,
 Note:  
 You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-word-distance-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-word-distance-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-word-distance-ii/description/)  
 
@@ -50,7 +51,7 @@ Leave me comments, if you have better ways to solve.
     func Constructor(words []string) WordDistance {
         m := map[string][]int{}
         for i, word := range words {
-            m[word] = append(m[word], i)
+    	m[word] = append(m[word], i)
         }
         return WordDistance{m}
     }
@@ -60,14 +61,14 @@ Leave me comments, if you have better ways to solve.
         res := 1<<31 - 1
         i, j := 0, 0
         for i<len(list1) && j<len(list2) {
-            diff := list1[i]-list2[j]
-            if diff<0 { diff = -diff }
-            if diff<res { res = diff }
-            if list1[i]>list2[j] { 
-                j++
-            } else { 
-                i++
-            }
+    	diff := list1[i]-list2[j]
+    	if diff<0 { diff = -diff }
+    	if diff<res { res = diff }
+    	if list1[i]>list2[j] { 
+    	    j++
+    	} else { 
+    	    i++
+    	}
         }
         return res
     }
@@ -77,3 +78,4 @@ Leave me comments, if you have better ways to solve.
      * obj := Constructor(words);
      * param_1 := obj.Shortest(word1,word2);
      */
+

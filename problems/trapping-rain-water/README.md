@@ -23,7 +23,7 @@ Example:
     Input: [0,1,0,2,1,0,1,3,2,1,2,1]
     Output: 6
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trapping-rain-water)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/trapping-rain-water)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/trapping-rain-water/description/)  
 

@@ -1,5 +1,5 @@
-# Leetcode: Dota2 Senate     :BLOG:Basic:
 
+# Leetcode: Dota2 Senate     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Dota2 Senate
 ---
 
 Similar Problems:  
+
 -   Tag: [#game](https://code.dennyzhang.com/tag/game), [#greedy](https://code.dennyzhang.com/tag/greedy), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -48,9 +49,10 @@ Example 2:
     And in the round 2, the third senator can just announce the victory since he is the only guy in the senate who can vote.
 
 Note:  
+
 -   The length of the given string will in the range [1, 10,000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/dota2-senate)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/dota2-senate)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/dota2-senate/description/)  
 
@@ -73,25 +75,26 @@ Leave me comments, if you have better ways to solve.
         n := len(senate)
         queue_r, queue_d := []int{}, []int{}
         for i, ch := range senate {
-            if ch == 'R' { 
-                queue_r = append(queue_r, i) 
-            } else {
-                queue_d = append(queue_d, i) 
-            }
+    	if ch == 'R' { 
+    	    queue_r = append(queue_r, i) 
+    	} else {
+    	    queue_d = append(queue_d, i) 
+    	}
         }
     
         for len(queue_r) > 0 && len(queue_d) > 0 {
-            r_index, d_index := queue_r[0], queue_d[0]
-            queue_r, queue_d = queue_r[1:], queue_d[1:]
-            if r_index<d_index {
-                queue_r = append(queue_r, r_index+n)
-            } else {
-                queue_d = append(queue_d, d_index+n)
-            }
+    	r_index, d_index := queue_r[0], queue_d[0]
+    	queue_r, queue_d = queue_r[1:], queue_d[1:]
+    	if r_index<d_index {
+    	    queue_r = append(queue_r, r_index+n)
+    	} else {
+    	    queue_d = append(queue_d, d_index+n)
+    	}
         }
         if len(queue_d) == 0 {
-            return "Radiant"
+    	return "Radiant"
         } else {
-            return "Dire"
+    	return "Dire"
         }
     }
+

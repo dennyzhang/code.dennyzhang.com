@@ -1,5 +1,5 @@
-# Leetcode: Remove Boxes     :BLOG:Medium:
 
+# Leetcode: Remove Boxes     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Remove Boxes
 ---
 
 Similar Problems:  
+
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -34,7 +35,7 @@ Explanation:
     ----> [] (2*2=4 points)
     Note: The number of boxes n would not exceed 100.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-boxes)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-boxes)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-boxes/description/)  
 
@@ -43,3 +44,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/remove-boxes
+

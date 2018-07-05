@@ -1,5 +1,5 @@
-# Leetcode: Repeated DNA Sequences     :BLOG:Basic:
 
+# Leetcode: Repeated DNA Sequences     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Repeated DNA Sequences
 ---
 
 Similar Problems:  
+
 -   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -23,7 +24,7 @@ For example,
     Return:
     ["AAAAACCCCC", "CCCCCAAAAA"].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/repeated-dna-sequences)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/repeated-dna-sequences)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/repeated-dna-sequences/description/)  
 
@@ -37,19 +38,20 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def findRepeatedDnaSequences(self, s):
-            """
-            :type s: str
-            :rtype: List[str]
-            """
-            length = len(s)
-            if length <= 10: return []
-            import collections
-            d = collections.defaultdict(lambda:0)
-            curStr = s[0:10]
-            d[curStr] += 1
-            res = []
-            for i in range(10, length):
-                curStr = curStr[1:] + s[i]
-                if d[curStr] == 1: res.append(curStr)
-                d[curStr] += 1
-            return res
+    	"""
+    	:type s: str
+    	:rtype: List[str]
+    	"""
+    	length = len(s)
+    	if length <= 10: return []
+    	import collections
+    	d = collections.defaultdict(lambda:0)
+    	curStr = s[0:10]
+    	d[curStr] += 1
+    	res = []
+    	for i in range(10, length):
+    	    curStr = curStr[1:] + s[i]
+    	    if d[curStr] == 1: res.append(curStr)
+    	    d[curStr] += 1
+    	return res
+

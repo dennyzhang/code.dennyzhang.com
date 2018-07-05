@@ -1,5 +1,5 @@
-# Leetcode: Palindrome Permutation     :BLOG:Medium:
 
+# Leetcode: Palindrome Permutation     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Palindrome Permutation
 ---
 
 Similar Problems:  
+
 -   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
@@ -17,7 +18,7 @@ Given a string, determine if a permutation of the string could form a palindrome
 For example,  
 "code" -> False, "aab" -> True, "carerac" -> True.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-permutation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindrome-permutation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-permutation/description/)  
 
@@ -32,14 +33,15 @@ Leave me comments, if you have better ways to solve.
     ##             The character is a limited set, thus the space is O(1)
     class Solution:
         def canPermutePalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            myset = set([])
-            for ch in s:
-                if ch in myset:
-                    myset.remove(ch)
-                else:
-                    myset.add(ch)
-            return len(myset) <= 1
+    	"""
+    	:type s: str
+    	:rtype: bool
+    	"""
+    	myset = set([])
+    	for ch in s:
+    	    if ch in myset:
+    		myset.remove(ch)
+    	    else:
+    		myset.add(ch)
+    	return len(myset) <= 1
+

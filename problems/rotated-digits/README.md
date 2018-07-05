@@ -1,5 +1,5 @@
-# Leetcode: Rotated Digits     :BLOG:Basic:
 
+# Leetcode: Rotated Digits     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Rotated Digits
 ---
 
 Similar Problems:  
+
 -   [Review: String Problems](https://code.dennyzhang.com/review-string)
 -   Tag: [#string](https://code.dennyzhang.com/tag/string), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
@@ -28,7 +29,7 @@ Example:
 Note:  
 N  will be in range [1, 10000].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotated-digits)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rotated-digits)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rotated-digits/description/)  
 
@@ -42,17 +43,18 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def rotatedDigits(self, N):
-            """
-            :type N: int
-            :rtype: int
-            """
-            res = 0
-            for num in range(1, N+1):
-                has_changed, is_valid = False, True
-                for ch in str(num):
-                    if ch in "347":
-                        is_valid = False
-                        break
-                    if ch in "2569": has_changed = True
-                if has_changed and is_valid: res += 1
-            return res
+    	"""
+    	:type N: int
+    	:rtype: int
+    	"""
+    	res = 0
+    	for num in range(1, N+1):
+    	    has_changed, is_valid = False, True
+    	    for ch in str(num):
+    		if ch in "347":
+    		    is_valid = False
+    		    break
+    		if ch in "2569": has_changed = True
+    	    if has_changed and is_valid: res += 1
+    	return res
+

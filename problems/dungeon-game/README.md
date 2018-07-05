@@ -1,5 +1,5 @@
-# Leetcode: Dungeon Game     :BLOG:Hard:
 
+# Leetcode: Dungeon Game     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Dungeon Game
 ---
 
 Similar Problems:  
+
 -   [Unique Paths](https://code.dennyzhang.com/unique-paths)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#dst2src](https://code.dennyzhang.com/tag/dst2src), [#game](https://code.dennyzhang.com/tag/game), [#classic](https://code.dennyzhang.com/tag/classic), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
@@ -26,16 +27,16 @@ Write a function to determine the knight's minimum initial health so that he is 
 
 For example, given the dungeon below, the initial health of the knight must be at least 7 if he follows the optimal path RIGHT-> RIGHT -> DOWN -> DOWN.  
 
-    -2 (K)  -3      3
-    -5      -10     1
-    10      30      -5 (P)
+    -2 (K)	-3	3
+    -5	-10	1
+    10	30	-5 (P)
 
 Note:  
 
 -   The knight's health has no upper bound.
 -   Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/dungeon-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/dungeon-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/dungeon-game/description/)  
 
@@ -71,15 +72,16 @@ Leave me comments, if you have better ways to solve.
         dp[col_count-1] = 1
         // We explore from bottom-right to top-left
         for i := row_count-1; i>=0; i-- {
-            for j:= col_count-1; j>=0; j-- {
-                next_dp := dp[j]
-                if next_dp > dp[j+1] { next_dp = dp[j+1] }
-                if dungeon[i][j] >= next_dp {
-                    dp[j] = 1
-                } else {
-                    dp[j]= next_dp - dungeon[i][j]
-                }
-            }
+    	for j:= col_count-1; j>=0; j-- {
+    	    next_dp := dp[j]
+    	    if next_dp > dp[j+1] { next_dp = dp[j+1] }
+    	    if dungeon[i][j] >= next_dp {
+    		dp[j] = 1
+    	    } else {
+    		dp[j]= next_dp - dungeon[i][j]
+    	    }
+    	}
         }
         return dp[0]
     }
+

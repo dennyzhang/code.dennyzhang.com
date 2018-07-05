@@ -1,5 +1,5 @@
-# Leetcode: Making A Large Island     :BLOG:Hard:
 
+# Leetcode: Making A Large Island     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Making A Large Island
 ---
 
 Similar Problems:  
+
 -   [Number of Distinct Islands II](https://code.dennyzhang.com/number-of-distinct-islands-ii)
 -   Tag: [#island](https://code.dennyzhang.com/tag/island), [#dfs](https://code.dennyzhang.com/tag/dfs)
 
@@ -40,7 +41,7 @@ Notes:
     - 1 <= grid.length = grid[0].length <= 50.
     - 0 <= grid[i][j] <= 1.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/making-a-large-island)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/making-a-large-island)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/making-a-large-island/description/)  
 
@@ -57,9 +58,9 @@ Leave me comments, if you have better ways to solve.
     //
     // Complexity: Time O(n*m), Space O(n*m)
     import (
-            "fmt"
-            "strings"
-            "strconv"
+    	"fmt"
+    	"strings"
+    	"strconv"
     )
     var island_id int
     var island_size map[int]int
@@ -69,8 +70,8 @@ Leave me comments, if you have better ways to solve.
         // get island size, and neighbor 0s
         if i<0 || i>=len(grid) || j<0 || j>=len(grid[0]) { return }
         if grid[i][j] == 0 {
-            point := fmt.Sprintf("%d-%d", i, j)
-            boundry[point] = true
+    	point := fmt.Sprintf("%d-%d", i, j)
+    	boundry[point] = true
         }
         if grid[i][j] != 1 { return }
         grid[i][j] = island_id
@@ -88,36 +89,37 @@ Leave me comments, if you have better ways to solve.
         boundry = make(map[string]bool)
         island_id = 2
         for i, row := range grid {
-            for j, v := range row {
-                if v == 1 {
-                    dfs(grid, i, j)
-                    island_id++
-                }
-            }
+    	for j, v := range row {
+    	    if v == 1 {
+    		dfs(grid, i, j)
+    		island_id++
+    	    }
+    	}
         }
         res := 0
         for v := range island_size {
-            if island_size[v]>res { res = island_size[v] }
+    	if island_size[v]>res { res = island_size[v] }
         }
         // check boundry
         for point := range boundry {
-            l := strings.Split(point, "-")
-            i, _:= strconv.Atoi(l[0])
-            j, _:= strconv.Atoi(l[1])
-            count := 1
-            m := make(map[int]bool)
-            for _, k := range [][]int{[]int{0, 1}, []int{0, -1}, []int{1, 0}, []int{-1, 0}} {
-                i2, j2 := i+k[0], j+k[1]
-                if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) { continue }
-                v := grid[i2][j2]
-                if v != 0 && m[v] == false {
-                    count += island_size[v]
-                    m[v] = true
-                }
-            }
-            if count > res { res = count }
+    	l := strings.Split(point, "-")
+    	i, _:= strconv.Atoi(l[0])
+    	j, _:= strconv.Atoi(l[1])
+    	count := 1
+    	m := make(map[int]bool)
+    	for _, k := range [][]int{[]int{0, 1}, []int{0, -1}, []int{1, 0}, []int{-1, 0}} {
+    	    i2, j2 := i+k[0], j+k[1]
+    	    if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) { continue }
+    	    v := grid[i2][j2]
+    	    if v != 0 && m[v] == false {
+    		count += island_size[v]
+    		m[v] = true
+    	    }
+    	}
+    	if count > res { res = count }
         }
         // mark markself, if no island is found
         if res == 0 { res = 1 }
         return res
     }
+

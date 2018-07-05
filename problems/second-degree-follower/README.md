@@ -1,5 +1,5 @@
-# Leetcode: Second Degree Follower     :BLOG:Medium:
 
+# Leetcode: Second Degree Follower     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Second Degree Follower
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -43,7 +44,7 @@ Note:
 Followee would not follow himself/herself in all cases.  
 Please display the result in follower's alphabet order.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-degree-follower)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/second-degree-follower)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/second-degree-follower/description/)  
 
@@ -62,3 +63,4 @@ Leave me comments, if you have better ways to solve.
     from follow as f1 inner join follow as f2
     on f1.follower = f2.followee
     group by f1.follower
+

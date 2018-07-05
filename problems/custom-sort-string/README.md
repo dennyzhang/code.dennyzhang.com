@@ -1,5 +1,5 @@
-# Leetcode: Custom Sort String     :BLOG:Basic:
 
+# Leetcode: Custom Sort String     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Custom Sort String
 ---
 
 Similar Problems:  
+
 -   [Review: String Problems](https://code.dennyzhang.com/review-string), Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -34,7 +35,7 @@ Note:
 -   T has length at most 200.
 -   S and T consist of lowercase letters only.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/custom-sort-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/custom-sort-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/custom-sort-string/description/)  
 
@@ -48,22 +49,23 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def customSortString(self, S, T):
-            """
-            :type S: str
-            :type T: str
-            :rtype: str
-            """
-            import collections
-            d = collections.defaultdict(lambda: 0)
-            for ch in T: d[ch] += 1
+    	"""
+    	:type S: str
+    	:type T: str
+    	:rtype: str
+    	"""
+    	import collections
+    	d = collections.defaultdict(lambda: 0)
+    	for ch in T: d[ch] += 1
     
-            res = ""
-            for ch in S:
-                if ch in d:
-                    res = "%s%s" % (res, ch*d[ch])
-                    d[ch] = 0
+    	res = ""
+    	for ch in S:
+    	    if ch in d:
+    		res = "%s%s" % (res, ch*d[ch])
+    		d[ch] = 0
     
-            for ch in d:
-                if d[ch] != 0:
-                    res = "%s%s" % (res, ch*d[ch])
-            return res
+    	for ch in d:
+    	    if d[ch] != 0:
+    		res = "%s%s" % (res, ch*d[ch])
+    	return res
+

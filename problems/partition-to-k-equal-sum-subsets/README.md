@@ -1,5 +1,5 @@
-# Leetcode: Partition to K Equal Sum Subsets     :BLOG:Medium:
 
+# Leetcode: Partition to K Equal Sum Subsets     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Partition to K Equal Sum Subsets
 ---
 
 Similar Problems:  
+
 -   [Partition Equal Subset Sum](https://code.dennyzhang.com/partition-equal-subset-sum)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
@@ -26,7 +27,7 @@ Note:
 -   1 <= k <= len(nums) <= 16.
 -   0 < nums[i] < 10000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/partition-to-k-equal-sum-subsets)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/partition-to-k-equal-sum-subsets)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/)  
 
@@ -35,3 +36,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/partition-to-k-equal-sum-subsets
+

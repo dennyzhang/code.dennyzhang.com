@@ -1,5 +1,5 @@
-# Leetcode: Search Insert Position     :BLOG:Basic:
 
+# Leetcode: Search Insert Position     :BLOG:Basic:
 
 ---
 
@@ -31,7 +31,7 @@ You may assume no duplicates in the array.
     Input: [1,3,5,6], 0
     Output: 0
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-insert-position)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-insert-position)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/search-insert-position/description/)  
 
@@ -42,14 +42,15 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/search-insert-position
     class Solution(object):
         def searchInsert(self, nums, target):
-            """
-            :type nums: List[int]
-            :type target: int
-            :rtype: int
-            """
-            i = 0
-            for num in nums:
-                if num >= target:
-                    return i
-                i = i + 1
-            return i
+    	"""
+    	:type nums: List[int]
+    	:type target: int
+    	:rtype: int
+    	"""
+    	i = 0
+    	for num in nums:
+    	    if num >= target:
+    		return i
+    	    i = i + 1
+    	return i
+

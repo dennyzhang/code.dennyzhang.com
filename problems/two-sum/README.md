@@ -1,5 +1,5 @@
-# Leetcode: Two Sum     :BLOG:Basic:
 
+# Leetcode: Two Sum     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Pic 2 numbers to get the target sum.
 ---
 
 Similar Problems:  
+
 -   [Tag: #twosum](https://code.dennyzhang.com/tag/twosum)
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
@@ -24,7 +25,7 @@ Example:
     Because nums[0] + nums[1] = 2 + 7 = 9,
     return [0, 1].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/two-sum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/two-sum/description/)  
 
@@ -38,18 +39,19 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*log(n)), Space O(1)
     class Solution:
         def twoSum(self, nums, target):
-            """
-            :type nums: List[int]
-            :type target: int
-            :rtype: List[int]
-            """
-            l = sorted(zip(nums, range(len(nums))))
-            left, right = 0, len(l)-1
-            while left<right:
-                v = l[left][0]+l[right][0]
-                if v == target:
-                    return [l[left][1], l[right][1]]
-                if v < target:
-                    left += 1
-                else:
-                    right -= 1
+    	"""
+    	:type nums: List[int]
+    	:type target: int
+    	:rtype: List[int]
+    	"""
+    	l = sorted(zip(nums, range(len(nums))))
+    	left, right = 0, len(l)-1
+    	while left<right:
+    	    v = l[left][0]+l[right][0]
+    	    if v == target:
+    		return [l[left][1], l[right][1]]
+    	    if v < target:
+    		left += 1
+    	    else:
+    		right -= 1
+

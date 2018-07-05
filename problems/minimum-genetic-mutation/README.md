@@ -1,5 +1,5 @@
-# Leetcode: Minimum Genetic Mutation     :BLOG:Medium:
 
+# Leetcode: Minimum Genetic Mutation     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Genetic Mutation
 ---
 
 Similar Problems:  
+
 -   [Word Ladder](https://code.dennyzhang.com/word-ladder)
 -   [Open the Lock](https://code.dennyzhang.com/open-the-lock)
 -   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
@@ -54,7 +55,7 @@ Example 3:
     
     return: 3
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-genetic-mutation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-genetic-mutation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-genetic-mutation/description/)  
 
@@ -70,35 +71,36 @@ Leave me comments, if you have better ways to solve.
     ##
     class Solution(object):
         def minMutation(self, start, end, bank):
-            """
-            :type start: str
-            :type end: str
-            :type bank: List[str]
-            :rtype: int
-            """
-            import collections
-            valid_set = set(bank)
+    	"""
+    	:type start: str
+    	:type end: str
+    	:type bank: List[str]
+    	:rtype: int
+    	"""
+    	import collections
+    	valid_set = set(bank)
     
-            if start == end:
-                return 0 if start in valid_set else -1
-            if end not in valid_set: return -1
+    	if start == end:
+    	    return 0 if start in valid_set else -1
+    	if end not in valid_set: return -1
     
-            seen = set([])
-            queue = collections.deque()
-            queue.append(start)
-            seen.add(start)
-            level = 0
-            while len(queue) != 0:
-                level += 1
-                for k in range(len(queue)):
-                    node = queue.popleft()
-                    # find neighbors
-                    for i in range(8):
-                        for ch in "ACGT":
-                            if ch == node[i]: continue
-                            node2 = "%s%s%s" % (node[:i], ch, node[i+1:])
-                            if node2 not in seen and node2 in valid_set:
-                                if node2 == end: return level
-                                queue.append(node2)
-                                seen.add(node2)
-            return -1
+    	seen = set([])
+    	queue = collections.deque()
+    	queue.append(start)
+    	seen.add(start)
+    	level = 0
+    	while len(queue) != 0:
+    	    level += 1
+    	    for k in range(len(queue)):
+    		node = queue.popleft()
+    		# find neighbors
+    		for i in range(8):
+    		    for ch in "ACGT":
+    			if ch == node[i]: continue
+    			node2 = "%s%s%s" % (node[:i], ch, node[i+1:])
+    			if node2 not in seen and node2 in valid_set:
+    			    if node2 == end: return level
+    			    queue.append(node2)
+    			    seen.add(node2)
+    	return -1
+

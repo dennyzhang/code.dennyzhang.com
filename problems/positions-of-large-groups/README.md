@@ -1,5 +1,5 @@
-# Leetcode: Positions of Large Groups     :BLOG:Basic:
 
+# Leetcode: Positions of Large Groups     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Positions of Large Groups
 ---
 
 Similar Problems:  
+
 -   Tag: [#string](https://code.dennyzhang.com/tag/string), [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder)
 
 ---
@@ -39,7 +40,7 @@ Example 3:
 
 Note:  1 <= S.length <= 1000  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/positions-of-large-groups)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/positions-of-large-groups)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/positions-of-large-groups/description/)  
 
@@ -57,19 +58,19 @@ Leave me comments, if you have better ways to solve.
         res := [][]int{}
         start := 0
         for end := 0; end<len(S); end++ {
-            // find a new group
-            if S[end] != S[start] {
-                if end-start>=3 {
-                    res = append(res, []int{start, end-1})
-                }
-                start = end
-            }
-            // last group
-            if S[end] == S[start] && end == len(S)-1 {
-                if end-start>=2 {
-                    res = append(res, []int{start, end})
-                }
-            }
+    	// find a new group
+    	if S[end] != S[start] {
+    	    if end-start>=3 {
+    		res = append(res, []int{start, end-1})
+    	    }
+    	    start = end
+    	}
+    	// last group
+    	if S[end] == S[start] && end == len(S)-1 {
+    	    if end-start>=2 {
+    		res = append(res, []int{start, end})
+    	    }
+    	}
         }
         return res
     }
@@ -85,12 +86,13 @@ Leave me comments, if you have better ways to solve.
         start := 0
         // Note: ";" won't happen in S. 
         for end, ch := range S+";" {
-            if ch != rune(S[start]) {
-                if end-start >=3 {
-                    res = append(res, []int{start, end-1})
-                }
-                start = end
-            }
+    	if ch != rune(S[start]) {
+    	    if end-start >=3 {
+    		res = append(res, []int{start, end-1})
+    	    }
+    	    start = end
+    	}
         }
         return res
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Exchange Seats     :BLOG:Medium:
 
+# Leetcode: Exchange Seats     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Exchange Seats
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -43,7 +44,7 @@ For the sample input, the output is:
 Note:  
 If the number of students is odd, there is no need to change the last one's seat.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/exchange-seats)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/exchange-seats)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/exchange-seats/description/)  
 
@@ -57,3 +58,4 @@ Leave me comments, if you have better ways to solve.
     where (s1.id % 2 = 1 and s2.id = s1.id + 1) or (s1.id % 2 = 0 and s1.id = s2.id + 1)
     or (s1.id %2 = 1 and s1.id = s2.id and s1.id in (select max(id) from seat))
     order by s1.id asc
+

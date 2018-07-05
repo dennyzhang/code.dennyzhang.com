@@ -1,5 +1,5 @@
-# Leetcode: Rotate String     :BLOG:Basic:
 
+# Leetcode: Rotate String     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Rotate String
 ---
 
 Similar Problems:  
+
 -   [Repeated String Match](https://code.dennyzhang.com/repeated-string-match)
 -   Tag: [#string](https://code.dennyzhang.com/tag/string), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
@@ -31,7 +32,7 @@ Note:
 
 -   A and B will have length at most 100.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rotate-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rotate-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rotate-string/description/)  
 
@@ -42,9 +43,10 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/rotate-string
     class Solution:
         def rotateString(self, A, B):
-            """
-            :type A: str
-            :type B: str
-            :rtype: bool
-            """
-            return len(A) == len(B) and B in A + A
+    	"""
+    	:type A: str
+    	:type B: str
+    	:rtype: bool
+    	"""
+    	return len(A) == len(B) and B in A + A
+

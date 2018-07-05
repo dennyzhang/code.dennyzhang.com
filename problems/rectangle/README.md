@@ -1,5 +1,5 @@
-# LintCode: Rectangle     :BLOG:Medium:
 
+# LintCode: Rectangle     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Rectangle
 ---
 
 Similar Problems:  
+
 -   [Review: Rectangle Problems](https://code.dennyzhang.com/review-rectangle), Tag: [#rectangle](https://code.dennyzhang.com/tag/rectangle)
 
 ---
@@ -29,7 +30,7 @@ Example
     Explanation:
     We can not find four points that meet the conditions
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rectangle)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rectangle)  
 
 Credits To: [LintCode.com](http://www.lintcode.com/en/problem/rectangle/)  
 
@@ -42,8 +43,8 @@ Leave me comments, if you have better ways to solve.
     """
     class Point:
         def __init__( self, x=0, y=0):
-            self.x = x
-            self.y = y
+    	self.x = x
+    	self.y = y
     """
     class Solution:
         """
@@ -51,30 +52,31 @@ Leave me comments, if you have better ways to solve.
         @return: The answer
         """
         def rectangle(self, pointSet):
-            ## Basic Ideas:
-            ##   a, b, c
-            ##   a*a+b*b=c*c
-            ## Complexity: Time O(1), Space O(1)
-            if len(pointSet) != 4: return 'NO'
-            l = []
-            for i in range(4):
-                for j in range(4):
-                    if i == j: continue
-                    l.append(pow(pointSet[i].x-pointSet[j].x, 2)+pow(pointSet[i].y-pointSet[j].y, 2))
-            mySet = set(l)
-            count = len(mySet)
-            # print(mySet)
-            if count!=2 and count!=3: return 'NO'
-            v1, v2 = min(mySet), max(mySet)
-            c1, c2 = 0, 0
-            for num in l:
-                if num == v1: c1 += 1
-                if num == v2: c2 += 1
-            if len(l)%4 != 0 or c1%4 != 0 or c2%4 != 0: return 'NO'
-            if count == 2:
-                return 'YES' if v2 == 2*v1 else 'NO'
-            else:
-                v3 = None
-                for num in mySet:
-                    if num != v1 and num !=v2: v3 = num
-                return 'YES' if v2 == v1+v3 else 'NO'
+    	## Basic Ideas:
+    	##   a, b, c
+    	##   a*a+b*b=c*c
+    	## Complexity: Time O(1), Space O(1)
+    	if len(pointSet) != 4: return 'NO'
+    	l = []
+    	for i in range(4):
+    	    for j in range(4):
+    		if i == j: continue
+    		l.append(pow(pointSet[i].x-pointSet[j].x, 2)+pow(pointSet[i].y-pointSet[j].y, 2))
+    	mySet = set(l)
+    	count = len(mySet)
+    	# print(mySet)
+    	if count!=2 and count!=3: return 'NO'
+    	v1, v2 = min(mySet), max(mySet)
+    	c1, c2 = 0, 0
+    	for num in l:
+    	    if num == v1: c1 += 1
+    	    if num == v2: c2 += 1
+    	if len(l)%4 != 0 or c1%4 != 0 or c2%4 != 0: return 'NO'
+    	if count == 2:
+    	    return 'YES' if v2 == 2*v1 else 'NO'
+    	else:
+    	    v3 = None
+    	    for num in mySet:
+    		if num != v1 and num !=v2: v3 = num
+    	    return 'YES' if v2 == v1+v3 else 'NO'
+

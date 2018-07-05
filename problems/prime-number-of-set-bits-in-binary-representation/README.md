@@ -1,5 +1,5 @@
-# Leetcode: Prime Number of Set Bits in Binary Representation     :BLOG:Medium:
 
+# Leetcode: Prime Number of Set Bits in Binary Representation     :BLOG:Medium:
 
 ---
 
@@ -38,7 +38,7 @@ Note:
 1.  L, R will be integers L <= R in the range [1, 10^6].
 2.  R - L will be at most 10000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/prime-number-of-set-bits-in-binary-representation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/prime-number-of-set-bits-in-binary-representation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/description/)  
 
@@ -56,15 +56,16 @@ Leave me comments, if you have better ways to solve.
     ##
     class Solution(object):
         def countPrimeSetBits(self, L, R):
-            """
-            :type L: int
-            :type R: int
-            :rtype: int
-            """
-            prime_list = [2, 3, 5, 7, 11, 13, 17, 19]
-            count = 0
-            for n in range(L, R+1):
-                if bin(n).count('1') in prime_list:
-                    count += 1
+    	"""
+    	:type L: int
+    	:type R: int
+    	:rtype: int
+    	"""
+    	prime_list = [2, 3, 5, 7, 11, 13, 17, 19]
+    	count = 0
+    	for n in range(L, R+1):
+    	    if bin(n).count('1') in prime_list:
+    		count += 1
     
-            return count
+    	return count
+

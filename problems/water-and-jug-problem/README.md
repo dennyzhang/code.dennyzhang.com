@@ -1,5 +1,5 @@
-# Leetcode: Water and Jug Problem     :BLOG:Medium:
 
+# Leetcode: Water and Jug Problem     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Water and Jug Problem
 ---
 
 Similar Problems:  
+
 -   [Reaching Points](https://code.dennyzhang.com/reaching-points)
 -   [Max Points on a Line](https://code.dennyzhang.com/max-points-on-a-line)
 -   [Review: gcd Problems](https://code.dennyzhang.com/review-gcd)
@@ -34,7 +35,7 @@ Example 2:
     Input: x = 2, y = 6, z = 5
     Output: False
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/water-and-jug-problem)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/water-and-jug-problem)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/water-and-jug-problem/description/)  
 
@@ -53,7 +54,7 @@ Leave me comments, if you have better ways to solve.
     // Complexity: Time O(1), Space O(1)
     func getGCD(x int, y int) int {
         for y!= 0 {
-            x, y = y, x%y
+    	x, y = y, x%y
         }
         return x
     }
@@ -101,26 +102,27 @@ Leave me comments, if you have better ways to solve.
         queue = append(queue, Entity{i, j})
     
         for len(queue) != 0 {
-            array := []Entity{}
-            for _, item := range queue {
-                for _, item2 := range [][]int{[]int{0, (item.x+item.y)%y}, 
-                    []int{(item.x+item.y)%x, 0}, []int{0, item.y},
-                    []int{item.x, 0}, []int{x, item.y}, []int{item.x, y}} {
-                        // explore next state
-                        i, j = item2[0], item2[1]
-                        if i+j == z { return true }
-                        item2 := Entity{i, j}
-                        if visited[item2] == false {
-                            visited[item2] = true
-                            array = append(array, item2)
-                        }
-                    }
-            }
-            // copy back to the original queue
-            queue = []Entity{}
-            for _, item := range array {
-                queue = append(queue, item)
-            }
+    	array := []Entity{}
+    	for _, item := range queue {
+    	    for _, item2 := range [][]int{[]int{0, (item.x+item.y)%y}, 
+    		[]int{(item.x+item.y)%x, 0}, []int{0, item.y},
+    		[]int{item.x, 0}, []int{x, item.y}, []int{item.x, y}} {
+    		    // explore next state
+    		    i, j = item2[0], item2[1]
+    		    if i+j == z { return true }
+    		    item2 := Entity{i, j}
+    		    if visited[item2] == false {
+    			visited[item2] = true
+    			array = append(array, item2)
+    		    }
+    		}
+    	}
+    	// copy back to the original queue
+    	queue = []Entity{}
+    	for _, item := range array {
+    	    queue = append(queue, item)
+    	}
         }
         return false
     }
+

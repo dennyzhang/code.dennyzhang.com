@@ -1,5 +1,5 @@
-# Leetcode: Classes More Than 5 Students     :BLOG:Medium:
 
+# Leetcode: Classes More Than 5 Students     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Classes More Than 5 Students
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -43,7 +44,7 @@ Should output:
 Note:  
 The students should not be counted duplicate in each course.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/classes-more-than-5-students)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/classes-more-than-5-students)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/classes-more-than-5-students/description/)  
 
@@ -55,3 +56,4 @@ Leave me comments, if you have better ways to solve.
     
     select class from courses
     group by class having count(distinct student)>=5;
+

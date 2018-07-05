@@ -1,5 +1,5 @@
-# Leetcode: Remove Element     :BLOG:Basic:
 
+# Leetcode: Remove Element     :BLOG:Basic:
 
 ---
 
@@ -19,7 +19,7 @@ Given nums = [3,2,2,3], val = 3,
 
 Your function should return length = 2, with the first two elements of nums being 2.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-element)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-element)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-element/description/)  
 
@@ -33,14 +33,15 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def removeElement(self, nums, val):
-            """
-            :type nums: List[int]
-            :type val: int
-            :rtype: int
-            """
-            index = 0
-            for n in nums:
-                if n != val:
-                    nums[index] = n
-                    index += 1
-            return index
+    	"""
+    	:type nums: List[int]
+    	:type val: int
+    	:rtype: int
+    	"""
+    	index = 0
+    	for n in nums:
+    	    if n != val:
+    		nums[index] = n
+    		index += 1
+    	return index
+

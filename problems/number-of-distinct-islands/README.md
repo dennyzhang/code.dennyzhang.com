@@ -1,5 +1,5 @@
-# Leetcode: Number of Distinct Islands     :BLOG:Medium:
 
+# Leetcode: Number of Distinct Islands     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Number of Distinct Islands
 ---
 
 Similar Problems:  
+
 -   [Number of Distinct Islands II](https://code.dennyzhang.com/number-of-distinct-islands-ii)
 -   Tag: [#island](https://code.dennyzhang.com/tag/island), [#dfs](https://code.dennyzhang.com/tag/dfs)
 
@@ -46,7 +47,7 @@ and
 are considered different island shapes, because we do not consider reflection / rotation.  
 Note: The length of each dimension in the given grid does not exceed 50.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-distinct-islands)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-distinct-islands)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-distinct-islands/description/)  
 
@@ -78,13 +79,14 @@ Leave me comments, if you have better ways to solve.
         if row_count == 0 { return 0 }
         hashmap := map[string]bool{}
         for i, row := range grid {
-            for j, _:= range row {
-                start_x, start_y = i, j
-                if row[j] == 1 {
-                    island := dfs(grid, i, j, "")
-                    hashmap[island] = true
-                }
-            }
+    	for j, _:= range row {
+    	    start_x, start_y = i, j
+    	    if row[j] == 1 {
+    		island := dfs(grid, i, j, "")
+    		hashmap[island] = true
+    	    }
+    	}
         }
         return len(hashmap)
     }
+

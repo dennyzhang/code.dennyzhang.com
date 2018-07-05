@@ -1,5 +1,5 @@
-# Leetcode: Convert Sorted List to Binary Search Tree     :BLOG:Medium:
 
+# Leetcode: Convert Sorted List to Binary Search Tree     :BLOG:Medium:
 
 ---
 
@@ -23,7 +23,7 @@ Example:
        /   /
      -10  5
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-list-to-binary-search-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/convert-sorted-list-to-binary-search-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/)  
 
@@ -50,43 +50,44 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def sortedListToBST(self, head):
-            """
-            :type head: ListNode
-            :rtype: TreeNode
-            """
-            ## Sample Data:
-            node_count = self.getNodeCount(head)
+    	"""
+    	:type head: ListNode
+    	:rtype: TreeNode
+    	"""
+    	## Sample Data:
+    	node_count = self.getNodeCount(head)
     
-            if node_count == 0:
-                return None
-            if node_count == 1:
-                return TreeNode(head.val)
+    	if node_count == 0:
+    	    return None
+    	if node_count == 1:
+    	    return TreeNode(head.val)
     
-            # find the middle node
-            before_mid_node = self.findNodeBeforeMiddle(head, node_count)
-            # print("head.val:%d, before_mid_node: %d" % (head.val, before_mid_node.val))
-            mid_node = before_mid_node.next
-            before_mid_node.next = None
-            head_node = TreeNode(mid_node.val)
-            left_node = self.sortedListToBST(head)
-            right_node = self.sortedListToBST(mid_node.next)
-            head_node.left = left_node
-            head_node.right = right_node
-            return head_node
+    	# find the middle node
+    	before_mid_node = self.findNodeBeforeMiddle(head, node_count)
+    	# print("head.val:%d, before_mid_node: %d" % (head.val, before_mid_node.val))
+    	mid_node = before_mid_node.next
+    	before_mid_node.next = None
+    	head_node = TreeNode(mid_node.val)
+    	left_node = self.sortedListToBST(head)
+    	right_node = self.sortedListToBST(mid_node.next)
+    	head_node.left = left_node
+    	head_node.right = right_node
+    	return head_node
     
         def getNodeCount(self, head):
-            res = 0
-            p = head
-            while p:
-                p = p.next
-                res = res + 1
-            return res
+    	res = 0
+    	p = head
+    	while p:
+    	    p = p.next
+    	    res = res + 1
+    	return res
     
         def findNodeBeforeMiddle(self, head, node_count):
-            # print("findNodeBeforeMiddle. head.val: %d, node_count: %d" % (head.val, node_count))
-            index_count = node_count/2 - 1
-            p = head
-            while index_count != 0 and p:
-                p = p.next
-                index_count = index_count - 1
-            return p
+    	# print("findNodeBeforeMiddle. head.val: %d, node_count: %d" % (head.val, node_count))
+    	index_count = node_count/2 - 1
+    	p = head
+    	while index_count != 0 and p:
+    	    p = p.next
+    	    index_count = index_count - 1
+    	return p
+

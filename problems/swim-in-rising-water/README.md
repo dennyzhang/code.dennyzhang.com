@@ -1,5 +1,5 @@
-# Leetcode: Swim in Rising Water     :BLOG:Amusing:
 
+# Leetcode: Swim in Rising Water     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Swim in Rising Water
 ---
 
 Similar Problems:  
+
 -   Tag: [#graph](https://code.dennyzhang.com/category/graph)
 
 ---
@@ -48,7 +49,7 @@ Note:
 1.  2 <= N <= 50.
 2.  grid[i][j] is a permutation of [0, &#x2026;, N\*N - 1].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swim-in-rising-water)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/swim-in-rising-water)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/swim-in-rising-water/description/)  
 
@@ -64,30 +65,31 @@ Leave me comments, if you have better ways to solve.
         ##
         ## Complexity: Time O(n*n*log(n)), Space O(n*n)
         def swimInWater(self, grid):
-            """
-            :type grid: List[List[int]]
-            :rtype: int
-            """
-            row_count = len(grid)
-            if row_count <= 1: return 0
+    	"""
+    	:type grid: List[List[int]]
+    	:rtype: int
+    	"""
+    	row_count = len(grid)
+    	if row_count <= 1: return 0
     
-            import heapq
-            visited, q = set([]), []
-            heapq.heapify(q)
-            heapq.heappush(q, (grid[0][0], 0, 0))
-            visited.add((0, 0))
-            res = 0
-            while len(q) != 0:
-                (v, i, j) = heapq.heappop(q)
-                # explore with the current minimum candidate
-                res = max(res, v)
-                for ik, jk in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
-                    i2, j2 = i+ik, j+jk
-                    if i2<0 or i2>=row_count or j2<0 or j2>=row_count:
-                        continue
-                    if (i2, j2) in visited: continue
-                    if (i2, j2) == (row_count-1, row_count-1):
-                        return max(res, grid[i2][j2])
-                    heapq.heappush(q, (grid[i2][j2], i2, j2))
-                    visited.add((i2, j2))
-            return res
+    	import heapq
+    	visited, q = set([]), []
+    	heapq.heapify(q)
+    	heapq.heappush(q, (grid[0][0], 0, 0))
+    	visited.add((0, 0))
+    	res = 0
+    	while len(q) != 0:
+    	    (v, i, j) = heapq.heappop(q)
+    	    # explore with the current minimum candidate
+    	    res = max(res, v)
+    	    for ik, jk in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+    		i2, j2 = i+ik, j+jk
+    		if i2<0 or i2>=row_count or j2<0 or j2>=row_count:
+    		    continue
+    		if (i2, j2) in visited: continue
+    		if (i2, j2) == (row_count-1, row_count-1):
+    		    return max(res, grid[i2][j2])
+    		heapq.heappush(q, (grid[i2][j2], i2, j2))
+    		visited.add((i2, j2))
+    	return res
+

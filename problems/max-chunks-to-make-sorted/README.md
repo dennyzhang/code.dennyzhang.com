@@ -1,5 +1,5 @@
-# Leetcode: Max Chunks To Make Sorted     :BLOG:Medium:
 
+# Leetcode: Max Chunks To Make Sorted     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Max Chunks To Make Sorted
 ---
 
 Similar Problems:  
+
 -   [Max Chunks To Make Sorted II](https://code.dennyzhang.com/max-chunks-to-make-sorted-ii)
 -   [Jump Game II](https://code.dennyzhang.com/jump-game-ii)
 -   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy)
@@ -40,7 +41,7 @@ Note:
 -   arr will have length in range [1, 10].
 -   arr[i] will be a permutation of [0, 1, &#x2026;, arr.length - 1].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-chunks-to-make-sorted)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-chunks-to-make-sorted)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/max-chunks-to-make-sorted/description/)  
 
@@ -70,15 +71,15 @@ This problem is similar with [Jump Game II](https://code.dennyzhang.com/jump-gam
     func maxChunksToSorted(arr []int) int {
         res, rindex := 0, -1
         for i, v:= range arr{
-            // Begining of a chunk
-            if rindex == -1 { rindex = v }
-            // Need to enlarge the sliding window
-            if i<=rindex && v>rindex { rindex = v }
-            // Get the end of a chunk
-            if i==rindex {
-                rindex = -1
-                res++
-            }
+    	// Begining of a chunk
+    	if rindex == -1 { rindex = v }
+    	// Need to enlarge the sliding window
+    	if i<=rindex && v>rindex { rindex = v }
+    	// Get the end of a chunk
+    	if i==rindex {
+    	    rindex = -1
+    	    res++
+    	}
         }
         return res
     }
@@ -98,12 +99,13 @@ This problem is similar with [Jump Game II](https://code.dennyzhang.com/jump-gam
         l := make([]int, len(arr))
         max := -1
         for i, v:= range arr{
-            if v>max { max=v }
-            l[i] = max
+    	if v>max { max=v }
+    	l[i] = max
         }
         res := 0
         for i, v:= range l{
-            if i==v { res++ }
+    	if i==v { res++ }
         }
         return res
     }
+

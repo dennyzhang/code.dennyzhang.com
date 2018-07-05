@@ -1,5 +1,5 @@
-# Leetcode: Guess Number Higher or Lower II     :BLOG:Amusing:
 
+# Leetcode: Guess Number Higher or Lower II     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Guess Number Higher or Lower
 ---
 
 Similar Problems:  
+
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   Tag: [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#dp2order](https://code.dennyzhang.com/tag/dp2order), [#minmax](https://code.dennyzhang.com/tag/minmax), [#classic](https://code.dennyzhang.com/tag/classic)
 
@@ -35,7 +36,7 @@ Example:
 
 Given a particular n >= 1, find out how much money you need to have to guarantee a win.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/guess-number-higher-or-lower-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/)  
 
@@ -56,23 +57,24 @@ Leave me comments, if you have better ways to solve.
         dp := make([][]int, n+1)
         for i:=0; i<n+1; i++ { dp[i] = make([]int, n+1) }
         for i:=n-1; i>=1; i-- {
-            // Range of i:j
-            for j := i+1; j<=n; j++ {
-                cost, mincost := 0, 1<<31 - 1
-                for k:=i; k<=j; k++ {
-                    cost = k
-                    r1, r2 := 0, 0
-                    if k!=i { r1 = dp[i][k-1] }
-                    if k!=j { r2 = dp[k+1][j] }
-                    if r1 > r2 {
-                        cost += r1
-                    } else {
-                        cost += r2
-                    }
-                    if mincost > cost { mincost = cost }
-                }
-                dp[i][j] = mincost
-            }
+    	// Range of i:j
+    	for j := i+1; j<=n; j++ {
+    	    cost, mincost := 0, 1<<31 - 1
+    	    for k:=i; k<=j; k++ {
+    		cost = k
+    		r1, r2 := 0, 0
+    		if k!=i { r1 = dp[i][k-1] }
+    		if k!=j { r2 = dp[k+1][j] }
+    		if r1 > r2 {
+    		    cost += r1
+    		} else {
+    		    cost += r2
+    		}
+    		if mincost > cost { mincost = cost }
+    	    }
+    	    dp[i][j] = mincost
+    	}
         }
         return dp[1][n]
     }
+

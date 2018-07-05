@@ -1,5 +1,5 @@
-# Leetcode: Unique Letter String     :BLOG:Hard:
 
+# Leetcode: Unique Letter String     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Unique Letter String
 ---
 
 Similar Problems:  
+
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#string](https://code.dennyzhang.com/tag/string), [#limitedrange](https://code.dennyzhang.com/tag/limitedrange)
 
 ---
@@ -42,7 +43,7 @@ Example 2:
 
 -   Note: 0 <= S.length <= 10000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-letter-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-letter-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/unique-letter-string/description/)  
 
@@ -72,17 +73,18 @@ Leave me comments, if you have better ways to solve.
         for i, _ := range l{ l[i] = [2]int{-1, -1}}
     
         for i, ch := range S {
-            index := int(ch-'A')
-            // only check S[0:i]. We will leave S[i:] for the last round
-            res = ((i-l[index][1])*(l[index][1]-l[index][0])%mod+res)%mod
+    	index := int(ch-'A')
+    	// only check S[0:i]. We will leave S[i:] for the last round
+    	res = ((i-l[index][1])*(l[index][1]-l[index][0])%mod+res)%mod
     
-            l[index][0] = l[index][1]
-            l[index][1] = i
+    	l[index][0] = l[index][1]
+    	l[index][1] = i
         }
         for i, _ := range l{
-            if l[i][1] != -1 {
-                res = ((len(S)-l[i][1])*(l[i][1]-l[i][0])%mod+res)%mod
-            }
+    	if l[i][1] != -1 {
+    	    res = ((len(S)-l[i][1])*(l[i][1]-l[i][0])%mod+res)%mod
+    	}
         }
         return res
     }
+

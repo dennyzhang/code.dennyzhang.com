@@ -1,5 +1,5 @@
-# Leetcode: Find Bottom Left Tree Value     :BLOG:Basic:
 
+# Leetcode: Find Bottom Left Tree Value     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Find Bottom Left Tree Value
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
@@ -43,7 +44,7 @@ Given a binary tree, find the leftmost value in the last row of the tree.
 Note:  
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-bottom-left-tree-value)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-bottom-left-tree-value)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-bottom-left-tree-value/description/)  
 
@@ -66,22 +67,23 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def findBottomLeftValue(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            queue = []
-            queue.append(root)
-            res = None
-            while len(queue) != 0:
-                length = len(queue)
-                first_element = queue[0]
-                res = first_element
-                for i in xrange(length):
-                    node = queue[0]
-                    del queue[0]
-                    if node.left:
-                        queue.append(node.left)
-                    if node.right:
-                        queue.append(node.right)
-            return res.val
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	queue = []
+    	queue.append(root)
+    	res = None
+    	while len(queue) != 0:
+    	    length = len(queue)
+    	    first_element = queue[0]
+    	    res = first_element
+    	    for i in xrange(length):
+    		node = queue[0]
+    		del queue[0]
+    		if node.left:
+    		    queue.append(node.left)
+    		if node.right:
+    		    queue.append(node.right)
+    	return res.val
+

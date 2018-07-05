@@ -1,5 +1,5 @@
-# Leetcode: Sales Person     :BLOG:Medium:
 
+# Leetcode: Sales Person     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Sales Person
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -72,7 +73,7 @@ Explanation
 According to order '3' and '4' in table orders, it is easy to tell only salesperson 'John' and 'Alex' have sales to company 'RED',  
 so we need to output all the other names in table salesperson.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sales-person)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sales-person)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sales-person/description/)  
 
@@ -89,3 +90,4 @@ Leave me comments, if you have better ways to solve.
         where company.name = 'RED'
         and salesperson.sales_id = orders.sales_id
         and orders.com_id = company.com_id)
+

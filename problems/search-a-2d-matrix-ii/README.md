@@ -1,5 +1,5 @@
-# Leetcode: Search a 2D Matrix II     :BLOG:Medium:
 
+# Leetcode: Search a 2D Matrix II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Search a 2D Matrix
 ---
 
 Similar Problems:  
+
 -   [Kth Smallest Element in a Sorted Matrix](https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix)
 -   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
@@ -34,7 +35,7 @@ Given target = 5, return true.
 
 Given target = 20, return false.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-a-2d-matrix-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-a-2d-matrix-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)  
 
@@ -50,21 +51,22 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n+m), Space O(1)
     class Solution:
         def searchMatrix(self, matrix, target):
-            """
-            :type matrix: List[List[int]]
-            :type target: int
-            :rtype: bool
-            """
-            row_count = len(matrix)
-            # []
-            if row_count == 0: return False
-            col_count = len(matrix[0])
-            # [[]]
-            if col_count == 0: return False
-            if matrix[0][0] > target or matrix[-1][-1] < target: return False
-            i, j = row_count-1, 0
-            while i>=0 and j<=col_count-1:
-                if matrix[i][j] == target: return True
-                if matrix[i][j] < target: j += 1
-                else: i -= 1
-            return False
+    	"""
+    	:type matrix: List[List[int]]
+    	:type target: int
+    	:rtype: bool
+    	"""
+    	row_count = len(matrix)
+    	# []
+    	if row_count == 0: return False
+    	col_count = len(matrix[0])
+    	# [[]]
+    	if col_count == 0: return False
+    	if matrix[0][0] > target or matrix[-1][-1] < target: return False
+    	i, j = row_count-1, 0
+    	while i>=0 and j<=col_count-1:
+    	    if matrix[i][j] == target: return True
+    	    if matrix[i][j] < target: j += 1
+    	    else: i -= 1
+    	return False
+

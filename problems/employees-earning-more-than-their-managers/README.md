@@ -1,5 +1,5 @@
-# Leetcode: Employees Earning More Than Their Managers     :BLOG:Medium:
 
+# Leetcode: Employees Earning More Than Their Managers     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Employees Earning More Than Their Managers
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -31,7 +32,7 @@ Given the Employee table, write a SQL query that finds out employees who earn mo
     | Joe      |
     +----------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employees-earning-more-than-their-managers)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/employees-earning-more-than-their-managers)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/)  
 
@@ -44,3 +45,4 @@ Leave me comments, if you have better ways to solve.
     from Employee as t1 inner join Employee as t2
     on t1.ManagerId = t2.Id
     where t1.Salary > t2.Salary;
+

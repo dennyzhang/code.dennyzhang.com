@@ -1,5 +1,5 @@
-# Leetcode: Not Boring Movies     :BLOG:Medium:
 
+# Leetcode: Not Boring Movies     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Not Boring Movies
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -36,7 +37,7 @@ For the example above, the output should be:
     |   1     | War       |   great 3D   |   8.9     |
     +---------+-----------+--------------+-----------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/not-boring-movies)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/not-boring-movies)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/not-boring-movies/description/)  
 
@@ -48,3 +49,4 @@ Leave me comments, if you have better ways to solve.
     select * from cinema
     where description != '%boring%' and id %2 != 0
     order by rating desc;
+

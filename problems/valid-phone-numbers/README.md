@@ -1,5 +1,5 @@
-# Leetcode: Valid Phone Numbers     :BLOG:Medium:
 
+# Leetcode: Valid Phone Numbers     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Word Frequency
 ---
 
 Similar Problems:  
+
 -   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
@@ -29,7 +30,7 @@ Your script should output the following valid phone numbers:
     987-123-4567
     (123) 456-7890
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-phone-numbers)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-phone-numbers)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-phone-numbers/description/)  
 
@@ -39,3 +40,4 @@ Leave me comments, if you have better ways to solve.
 
     ## Blog link: https://code.dennyzhang.com/valid-phone-numbers
     grep -iE '^\([0-9][0-9][0-9]\) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$|^[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$' file.txt
+

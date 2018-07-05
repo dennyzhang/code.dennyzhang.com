@@ -1,5 +1,5 @@
-# Leetcode: Lemonade Change     :BLOG:Basic:
 
+# Leetcode: Lemonade Change     :BLOG:Basic:
 
 ---
 
@@ -58,7 +58,7 @@ Note:
 -   0 <= bills.length <= 10000
 -   bills[i] will be either 5, 10, or 20.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lemonade-change)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lemonade-change)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/lemonade-change/description/)  
 
@@ -73,30 +73,31 @@ Leave me comments, if you have better ways to solve.
     //   For $5, no need for change. 
     //   For $20, we can't use it for the following customer
     // Complexity: Time O(n), Space O(1)
-    func lemonadeChange(bills int) bool {
+    func lemonadeChange(bills []int) bool {
         count_f, count_t := 0, 0
         for _, bill := range bills {
-            if bill == 5 { 
-                count_f++
-            } else {
-                if bill == 10 {
-                    if count_f == 0 { return false }
-                    count_f, count_t = count_f-1, count_t+1
-                } else {
-                    // bill == 20
-                    if count_f == 0 { return false }
-                    count_f--
-                    if count_t != 0 {
-                        count_t--
-                    } else {
-                        if count_f >= 2 {
-                            count_f-=2
-                        } else {
-                            return false
-                        }
-                    }
-                }
-            }
+    	if bill == 5 { 
+    	    count_f++
+    	} else {
+    	    if bill == 10 {
+    		if count_f == 0 { return false }
+    		count_f, count_t = count_f-1, count_t+1
+    	    } else {
+    		// bill == 20
+    		if count_f == 0 { return false }
+    		count_f--
+    		if count_t != 0 {
+    		    count_t--
+    		} else {
+    		    if count_f >= 2 {
+    			count_f-=2
+    		    } else {
+    			return false
+    		    }
+    		}
+    	    }
+    	}
         }
         return true
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Unique Paths II     :BLOG:Medium:
 
+# Leetcode: Unique Paths II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Unique Paths II
 ---
 
 Similar Problems:  
+
 -   [Leetcode: Unique Paths](https://code.dennyzhang.com/unique-paths)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#classic](https://code.dennyzhang.com/tag/classic)
@@ -33,7 +34,7 @@ The total number of unique paths is 2.
 
 Note: m and n will be at most 100.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-paths-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-paths-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/unique-paths-ii/description/)  
 
@@ -51,31 +52,32 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(m*n), Space O(m*n)
     class Solution(object):
         def uniquePathsWithObstacles(self, obstacleGrid):
-            """
-            :type obstacleGrid: List[List[int]]
-            :rtype: int
-            """
-            row_count = len(obstacleGrid)
-            if row_count == 0: return 0
-            col_count = len(obstacleGrid[0])
-            # use default values to simplify the code
-            matrix = [[0 for x in xrange(col_count)] for y in xrange(row_count)]
+    	"""
+    	:type obstacleGrid: List[List[int]]
+    	:rtype: int
+    	"""
+    	row_count = len(obstacleGrid)
+    	if row_count == 0: return 0
+    	col_count = len(obstacleGrid[0])
+    	# use default values to simplify the code
+    	matrix = [[0 for x in xrange(col_count)] for y in xrange(row_count)]
     
-            matrix[0][0] = 1 if obstacleGrid[0][0] == 0 else 0
-            # first row
-            i = 0
-            for j in range(1, col_count):
-                if obstacleGrid[i][j] == 0: matrix[i][j] = matrix[i][j-1]
+    	matrix[0][0] = 1 if obstacleGrid[0][0] == 0 else 0
+    	# first row
+    	i = 0
+    	for j in range(1, col_count):
+    	    if obstacleGrid[i][j] == 0: matrix[i][j] = matrix[i][j-1]
     
-            # first column
-            j = 0
-            for i in range(1, row_count):
-                if obstacleGrid[i][j] == 0: matrix[i][j] = matrix[i-1][j]
+    	# first column
+    	j = 0
+    	for i in range(1, row_count):
+    	    if obstacleGrid[i][j] == 0: matrix[i][j] = matrix[i-1][j]
     
-            # others
-            for i in range(1, row_count):
-                for j in range(1, col_count):
-                    if obstacleGrid[i][j] == 0:
-                        matrix[i][j] = matrix[i-1][j] + matrix[i][j-1]
+    	# others
+    	for i in range(1, row_count):
+    	    for j in range(1, col_count):
+    		if obstacleGrid[i][j] == 0:
+    		    matrix[i][j] = matrix[i-1][j] + matrix[i][j-1]
     
-            return matrix[-1][-1]
+    	return matrix[-1][-1]
+

@@ -1,5 +1,5 @@
-# Leetcode: Unique Morse Code Words     :BLOG:Basic:
 
+# Leetcode: Unique Morse Code Words     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Unique Morse Code Words
 ---
 
 Similar Problems:  
+
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -41,7 +42,7 @@ Note:
 -   Each words[i] will have length in range [1, 12].
 -   words[i] will only consist of lowercase letters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/unique-morse-code-words)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-morse-code-words)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/unique-morse-code-words/description/)  
 
@@ -54,15 +55,16 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def uniqueMorseRepresentations(self, words):
-            """
-            :type words: List[str]
-            :rtype: int
-            """
-            l = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
-            morseWords = set([])
-            for word in words:
-                item = ''
-                for ch in word:
-                    item += l[ord(ch)-ord('a')]
-                morseWords.add(item)
-            return len(morseWords)
+    	"""
+    	:type words: List[str]
+    	:rtype: int
+    	"""
+    	l = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+    	morseWords = set([])
+    	for word in words:
+    	    item = ''
+    	    for ch in word:
+    		item += l[ord(ch)-ord('a')]
+    	    morseWords.add(item)
+    	return len(morseWords)
+

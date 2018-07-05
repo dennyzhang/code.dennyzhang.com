@@ -1,5 +1,5 @@
-# Leetcode: Copy List with Random Pointer     :BLOG:Amusing:
 
+# Leetcode: Copy List with Random Pointer     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Copy List with Random Pointer
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
@@ -17,7 +18,7 @@ A linked list is given such that each node contains an additional random pointer
 
 Return a deep copy of the list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/copy-list-with-random-pointer)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/copy-list-with-random-pointer)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/copy-list-with-random-pointer/description/)  
 
@@ -47,40 +48,41 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def copyRandomList(self, head):
-            """
-            :type head: RandomListNode
-            :rtype: RandomListNode
-            """
-            if head is None:
-                return None
+    	"""
+    	:type head: RandomListNode
+    	:rtype: RandomListNode
+    	"""
+    	if head is None:
+    	    return None
     
-            ## duplicate the list
-            p = head
-            while p:
-                newNode = RandomListNode(p.label)
-                newNode.next = p.next
-                p.next = newNode
-                p = newNode.next
+    	## duplicate the list
+    	p = head
+    	while p:
+    	    newNode = RandomListNode(p.label)
+    	    newNode.next = p.next
+    	    p.next = newNode
+    	    p = newNode.next
     
-            ## copy the randome pointer
-            ##   odd node is the original list
-            ##   even node is the new list
-            p1 = head
-            while p1:
-                p2 = p1.next
-                if p1.random:
-                    p2.random = p1.random.next
-                # move to next
-                p1 = p1.next.next
+    	## copy the randome pointer
+    	##   odd node is the original list
+    	##   even node is the new list
+    	p1 = head
+    	while p1:
+    	    p2 = p1.next
+    	    if p1.random:
+    		p2.random = p1.random.next
+    	    # move to next
+    	    p1 = p1.next.next
     
-            # change back the pointers
-            res = head.next
-            p1 = head
-            while p1:
-                q1 = p1.next.next
-                p2 = p1.next
-                p1.next = p1.next.next
-                if p2.next:
-                    p2.next = p2.next.next
-                p1 = q1
-            return res
+    	# change back the pointers
+    	res = head.next
+    	p1 = head
+    	while p1:
+    	    q1 = p1.next.next
+    	    p2 = p1.next
+    	    p1.next = p1.next.next
+    	    if p2.next:
+    		p2.next = p2.next.next
+    	    p1 = q1
+    	return res
+

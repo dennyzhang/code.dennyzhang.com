@@ -1,5 +1,5 @@
-# Leetcode: My Calendar I     :BLOG:Basic:
 
+# Leetcode: My Calendar I     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ My Calendar I
 ---
 
 Similar Problems:  
+
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
@@ -36,7 +37,7 @@ Note:
 -   The number of calls to MyCalendar.book per test case will be at most 1000.
 -   In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/my-calendar-i)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/my-calendar-i)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/my-calendar-i/description/)  
 
@@ -45,3 +46,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/my-calendar-i
+

@@ -1,5 +1,5 @@
-# Leetcode: Count and Say     :BLOG:Medium:
 
+# Leetcode: Count and Say     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Count and Say
 ---
 
 Similar Problems:  
+
 -   Tag: [#padplaceholder](https://code.dennyzhang.com/tag/padplaceholder), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -38,7 +39,7 @@ Note: Each term of the sequence of integers will be represented as a string.
     Input: 4
     Output: "1211"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-and-say)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-and-say)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/count-and-say/description/)  
 
@@ -65,20 +66,21 @@ Leave me comments, if you have better ways to solve.
         if n == 1 { return "1" }
         l := []string{"1"}
         for i:=1; i<n; i++ {
-            l2 := []string{}
-            count := 1
-            l = append(l, " ")
-            for i, ch := range l {
-                if i == 0 { continue }
-                if ch != l[i-1] {
-                    l2 = append(l2, strconv.Itoa(count))
-                    l2 = append(l2, l[i-1])
-                    count = 1
-                } else {
-                    count++
-                }
-            }
-            l = l2
+    	l2 := []string{}
+    	count := 1
+    	l = append(l, " ")
+    	for i, ch := range l {
+    	    if i == 0 { continue }
+    	    if ch != l[i-1] {
+    		l2 = append(l2, strconv.Itoa(count))
+    		l2 = append(l2, l[i-1])
+    		count = 1
+    	    } else {
+    		count++
+    	    }
+    	}
+    	l = l2
         }
         return strings.Join(l, "")
     }
+

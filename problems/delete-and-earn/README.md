@@ -1,5 +1,5 @@
-# Leetcode: Delete and Earn     :BLOG:Basic:
 
+# Leetcode: Delete and Earn     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Delete and Earn
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -40,7 +41,7 @@ Note:
 -   The length of nums is at most 20000.
 -   Each element nums[i] is an integer in the range [1, 10000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-and-earn)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-and-earn)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/delete-and-earn/description/)  
 
@@ -49,3 +50,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/delete-and-earn
+

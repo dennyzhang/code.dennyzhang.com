@@ -1,5 +1,5 @@
-# Leetcode: Investments in 2016     :BLOG:Medium:
 
+# Leetcode: Investments in 2016     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Median Employee Salary
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -56,7 +57,7 @@ Explanation
     
     So, the result is the sum of TIV_2016 of the first and last record, which is 45.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/investments-in-2016)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/investments-in-2016)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/investments-in-2016/description/)  
 
@@ -77,3 +78,4 @@ Leave me comments, if you have better ways to solve.
         from insurance
         group by TIV_2015
         having count(1)>1)
+

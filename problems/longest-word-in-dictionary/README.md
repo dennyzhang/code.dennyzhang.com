@@ -1,5 +1,5 @@
-# Leetcode: Longest Word in Dictionary     :BLOG:Basic:
 
+# Leetcode: Longest Word in Dictionary     :BLOG:Basic:
 
 ---
 
@@ -31,7 +31,7 @@ Note:
 -   The length of words will be in the range [1, 1000].
 -   The length of words[i] will be in the range [1, 30].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-word-in-dictionary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-word-in-dictionary)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-word-in-dictionary/description/)  
 
@@ -44,55 +44,56 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n). n the count of characters involved
     class TrieNode(object):
         def __init__(self):
-            self.children = collections.defaultdict(TrieNode)
-            self.is_word = False
+    	self.children = collections.defaultdict(TrieNode)
+    	self.is_word = False
     
     class Solution(object):
         def longestWord(self, words):
-            """
-            :type words: List[str]
-            :rtype: str
-            """
-            # Build TrieNode
-            root = TrieNode()
-            # check each word, and insert if missing
-            for word in words:
-                # always check from the top
-                node = root
-                for ch in word:
-                    node = node.children[ch]
-                node.is_word = True
+    	"""
+    	:type words: List[str]
+    	:rtype: str
+    	"""
+    	# Build TrieNode
+    	root = TrieNode()
+    	# check each word, and insert if missing
+    	for word in words:
+    	    # always check from the top
+    	    node = root
+    	    for ch in word:
+    		node = node.children[ch]
+    	    node.is_word = True
     
-            return self.foundLongestWord(root)
+    	return self.foundLongestWord(root)
     
         def foundLongestWord(self, node):
-            """
-            :rtype: (length, str)
-            """
-            # BFS:
-            # How to check:
-            #    Candidates should be: 
-            #             1. is_word as true for all nodes in the path. 
-            #             2. Has no children
-            # How to move to next:
-            #   Only check nodes with is_word as True
-            #   When node has no children, we 
-            max_length, max_str = 0, ''
-            queue = []
-            # initialize queue
-            # Since we have sorted the keys, we will get smallest lexicographical match
-            for ch in sorted(node.children):
-                child = node.children[ch]
-                if child.is_word:
-                    queue.append((child, ch, 1))
+    	"""
+    	:rtype: (length, str)
+    	"""
+    	# BFS:
+    	# How to check:
+    	#    Candidates should be: 
+    	#             1. is_word as true for all nodes in the path. 
+    	#             2. Has no children
+    	# How to move to next:
+    	#   Only check nodes with is_word as True
+    	#   When node has no children, we 
+    	max_length, max_str = 0, ''
+    	queue = []
+    	# initialize queue
+    	# Since we have sorted the keys, we will get smallest lexicographical match
+    	for ch in sorted(node.children):
+    	    child = node.children[ch]
+    	    if child.is_word:
+    		queue.append((child, ch, 1))
     
-            while len(queue) != 0:
-                (node, str, length) = queue[0]
-                del queue[0]
-                if length > max_length:
-                    max_length, max_str = length, str
-                for ch in sorted(node.children):
-                    child = node.children[ch]
-                    if child.is_word:
-                        queue.append((child, '%s%s' % (str, ch), length+1))
-            return max_str
+    	while len(queue) != 0:
+    	    (node, str, length) = queue[0]
+    	    del queue[0]
+    	    if length > max_length:
+    		max_length, max_str = length, str
+    	    for ch in sorted(node.children):
+    		child = node.children[ch]
+    		if child.is_word:
+    		    queue.append((child, '%s%s' % (str, ch), length+1))
+    	return max_str
+

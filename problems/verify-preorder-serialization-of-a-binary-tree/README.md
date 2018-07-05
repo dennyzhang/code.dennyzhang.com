@@ -1,5 +1,5 @@
-# Leetcode: Verify Preorder Serialization of a Binary Tree     :BLOG:Basic:
 
+# Leetcode: Verify Preorder Serialization of a Binary Tree     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Verify Preorder Serialization of a Binary Tree
 ---
 
 Similar Problems:  
+
 -   [Verify Preorder Sequence in Binary Search Tree](https://code.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree)
 -   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
@@ -45,7 +46,7 @@ You may assume that the input format is always valid, for example it could never
     "9,#,#,1"
     Return false
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/verify-preorder-serialization-of-a-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/verify-preorder-serialization-of-a-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/)  
 
@@ -66,26 +67,27 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def isValidSerialization(self, preorder):
-            """
-            :type preorder: str
-            :rtype: bool
-            """
-            stack = []
-            for element in preorder.split(','):
-                if element != '#':
-                    stack.append(element)
-                else:
-                    while True:
-                        if len(stack) <= 1:
-                            stack.append('#')
-                            break
-                        if stack[-1] != '#':
-                            stack.append('#')
-                            break
-                        if stack[-1] == '#' and stack[-2] == '#': return False
-                        # pop #, then pop value. Then plan to insert another '#'
-                        stack.pop()
-                        stack.pop()
-                    else:
-                        stack.append(element)
-            return stack == ['#']
+    	"""
+    	:type preorder: str
+    	:rtype: bool
+    	"""
+    	stack = []
+    	for element in preorder.split(','):
+    	    if element != '#':
+    		stack.append(element)
+    	    else:
+    		while True:
+    		    if len(stack) <= 1:
+    			stack.append('#')
+    			break
+    		    if stack[-1] != '#':
+    			stack.append('#')
+    			break
+    		    if stack[-1] == '#' and stack[-2] == '#': return False
+    		    # pop #, then pop value. Then plan to insert another '#'
+    		    stack.pop()
+    		    stack.pop()
+    		else:
+    		    stack.append(element)
+    	return stack == ['#']
+

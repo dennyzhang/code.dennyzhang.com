@@ -1,5 +1,5 @@
-# Leetcode: Largest Sum of Averages     :BLOG:Medium:
 
+# Leetcode: Largest Sum of Averages     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Largest Sum of Averages
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -35,7 +36,7 @@ Note:
 -   1 <= K <= A.length.
 -   Answers within 10^-6 of the correct answer will be accepted as correct.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-sum-of-averages)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-sum-of-averages)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/largest-sum-of-averages/description/)  
 
@@ -44,3 +45,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/largest-sum-of-averages
+

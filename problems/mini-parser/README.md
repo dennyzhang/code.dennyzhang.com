@@ -1,5 +1,5 @@
-# Leetcode: Mini Parser     :BLOG:Basic:
 
+# Leetcode: Mini Parser     :BLOG:Basic:
 
 ---
 
@@ -35,7 +35,7 @@ Note: You may assume that the string is well-formed:
         ii. A nested list with one element:
              a. An integer containing value 789.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/mini-parser)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/mini-parser)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/mini-parser/description/)  
 
@@ -96,34 +96,34 @@ Leave me comments, if you have better ways to solve.
         ##
         ## Complexity: Time O(n), Space O(n)
         def deserialize(self, s):
-            """
-            :type s: str
-            :rtype: NestedInteger
-            """
-            if len(s) == 0: return None
-            if s.find('[') == -1: return NestedInteger(int(s))
+    	"""
+    	:type s: str
+    	:rtype: NestedInteger
+    	"""
+    	if len(s) == 0: return None
+    	if s.find('[') == -1: return NestedInteger(int(s))
     
-            stack = []
-            for word in s.split(','):
-                i = 0
-                while i< len(word):
-                    if word[i] == '[':
-                        stack.append(NestedInteger())
-                        i += 1
-                    elif word[i] == ']':
-                        n1 = stack.pop()
-                        n2 = stack.pop()
-                        stack.append(n2+n1)
-                        i += 1
-                    else:
-                        # keep looking ahead until we get an non-digits
-                        string = ''
-                        while i<len(word) and (word[i].isdigit() or word[i] == '-'):
-                            string = "%s%s" % (string, word[i])
-                            i += 1
-                        n = stack.pop()
-                        stack.append(n + NestedInteger(int(string)))
-            return stack[0]
+    	stack = []
+    	for word in s.split(','):
+    	    i = 0
+    	    while i< len(word):
+    		if word[i] == '[':
+    		    stack.append(NestedInteger())
+    		    i += 1
+    		elif word[i] == ']':
+    		    n1 = stack.pop()
+    		    n2 = stack.pop()
+    		    stack.append(n2+n1)
+    		    i += 1
+    		else:
+    		    # keep looking ahead until we get an non-digits
+    		    string = ''
+    		    while i<len(word) and (word[i].isdigit() or word[i] == '-'):
+    			string = "%s%s" % (string, word[i])
+    			i += 1
+    		    n = stack.pop()
+    		    stack.append(n + NestedInteger(int(string)))
+    	return stack[0]
     
         ## Basic Ideas: Stack
         ##              Whenever we found '[', push
@@ -131,42 +131,44 @@ Leave me comments, if you have better ways to solve.
         ##
         ## Complexity: Time O(n), Space O(n)
         def deserialize(self, s):
-            """
-            :type s: str
-            :rtype: NestedInteger
-            """
-            if len(s) == 0: return None
-            if s.find('[') == -1: return NestedInteger(int(s))
+    	"""
+    	:type s: str
+    	:rtype: NestedInteger
+    	"""
+    	if len(s) == 0: return None
+    	if s.find('[') == -1: return NestedInteger(int(s))
     
-            stack = []
-            for word in s.split(','):
-                num_str = ''
-                for ch in word:
-                    if ch == '[':
-                        stack.append(ch)
-                        continue
-                    if ch != ']':
-                        num_str = '%s%s' % (num_str, ch)
-                    else:
-                        if num_str != '':
-                            stack.append(NestedInteger(int(num_str)))
-                            num_str = ''
-                        # The sequence we get is right from left, but we need left from right.
-                        l = []
-                        while True:
-                            element = stack.pop()
-                            if element == '[':
-                                break
-                            l.insert(0, element)
-                        n = NestedInteger() 
-                        for element in l: n.add(element)
-                        stack.append(n)
-                if num_str != '':
-                    stack.append(NestedInteger(int(num_str)))
-            return stack[0]
+    	stack = []
+    	for word in s.split(','):
+    	    num_str = ''
+    	    for ch in word:
+    		if ch == '[':
+    		    stack.append(ch)
+    		    continue
+    		if ch != ']':
+    		    num_str = '%s%s' % (num_str, ch)
+    		else:
+    		    if num_str != '':
+    			stack.append(NestedInteger(int(num_str)))
+    			num_str = ''
+    		    # The sequence we get is right from left, but we need left from right.
+    		    l = []
+    		    while True:
+    			element = stack.pop()
+    			if element == '[':
+    			    break
+    			l.insert(0, element)
+    		    n = NestedInteger() 
+    		    for element in l: n.add(element)
+    		    stack.append(n)
+    	    if num_str != '':
+    		stack.append(NestedInteger(int(num_str)))
+    	return stack[0]
 
 ---
 
 Similar Problems:  
+
 -   [Leetcode: Flatten Nested List Iterator](https://code.dennyzhang.com/flatten-nested-list-iterator)
 -   [Review: Stack Problems](https://code.dennyzhang.com/review-stack)
+

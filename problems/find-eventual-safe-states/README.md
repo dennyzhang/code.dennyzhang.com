@@ -35,7 +35,7 @@ graph will have length at most 10000.
 The number of edges in the graph will not exceed 32000.  
 Each graph[i] will be a sorted list of different integers, chosen within the range [0, graph.length - 1].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-eventual-safe-states)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-eventual-safe-states)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-eventual-safe-states/description/)  
 

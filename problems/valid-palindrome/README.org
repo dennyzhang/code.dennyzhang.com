@@ -5,22 +5,28 @@
 :type:     palindrome, twopointer
 :END:
 ---------------------------------------------------------------------
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+Valid Palindrome
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/palindrome][#palindrome]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
-For example,
-"A man, a plan, a canal: Panama" is a palindrome.
-"race a car" is not a palindrome.
+Note: For the purpose of this problem, we define empty string as valid palindrome.
 
-Note:
-Have you consider that the string might be empty? This is a good question to ask during an interview.
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "A man, a plan, a canal: Panama"
+Output: true
+#+END_EXAMPLE
 
-For the purpose of this problem, we define empty string as valid palindrome.
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "race a car"
+Output: false
+#+END_EXAMPLE
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-palindrome][challenges-leetcode-interesting]]
 
@@ -28,7 +34,6 @@ Credits To: [[url-external:https://leetcode.com/problems/valid-palindrome/descri
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/valid-palindrome
 ## Basic Ideas: two pointer
@@ -54,7 +59,4 @@ class Solution(object):
                 return False
             left, right = left+1, right-1
         return True
-
-# s = Solution()
-# print(s.isPalindrome("aa"))
 #+END_SRC

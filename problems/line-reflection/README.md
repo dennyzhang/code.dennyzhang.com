@@ -1,5 +1,5 @@
-# Leetcode: Line Reflection     :BLOG:Medium:
 
+# Leetcode: Line Reflection     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Line Reflection
 ---
 
 Similar Problems:  
+
 -   [Max Points on a Line](https://code.dennyzhang.com/max-points-on-a-line)
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
@@ -26,7 +27,7 @@ Example 2:
 Follow up:  
 Could you do better than O(n^2)?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/line-reflection)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/line-reflection)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/line-reflection/description/)  
 
@@ -44,26 +45,27 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def isReflected(self, points):
-            """
-            :type points: List[List[int]]
-            :rtype: bool
-            """
-            import sys
-            if len(points) == 0: return True
-            s, s_removed = set([]), set([])
-            min_x, max_x = sys.maxsize, -sys.maxsize-1
-            for [x, y] in points:
-                if x<min_x: min_x = x
-                if x>max_x: max_x = x
-            mirror_x = (min_x+max_x)/2
+    	"""
+    	:type points: List[List[int]]
+    	:rtype: bool
+    	"""
+    	import sys
+    	if len(points) == 0: return True
+    	s, s_removed = set([]), set([])
+    	min_x, max_x = sys.maxsize, -sys.maxsize-1
+    	for [x, y] in points:
+    	    if x<min_x: min_x = x
+    	    if x>max_x: max_x = x
+    	mirror_x = (min_x+max_x)/2
     
-            for [x, y] in points:
-                if x == mirror_x: continue
-                if (x, y) in s_removed: continue
-                if (2*mirror_x-x, y) in s:
-                    s.remove((2*mirror_x-x, y))
-                    s_removed.add((2*mirror_x-x, y))
-                    s_removed.add((x, y))
-                else:
-                    s.add((x, y))
-            return len(s) == 0
+    	for [x, y] in points:
+    	    if x == mirror_x: continue
+    	    if (x, y) in s_removed: continue
+    	    if (2*mirror_x-x, y) in s:
+    		s.remove((2*mirror_x-x, y))
+    		s_removed.add((2*mirror_x-x, y))
+    		s_removed.add((x, y))
+    	    else:
+    		s.add((x, y))
+    	return len(s) == 0
+

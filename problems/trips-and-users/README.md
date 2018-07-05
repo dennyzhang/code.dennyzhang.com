@@ -1,5 +1,5 @@
-# Leetcode: Trips and Users     :BLOG:Hard:
 
+# Leetcode: Trips and Users     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Trips and Users
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -54,7 +55,7 @@ Write a SQL query to find the cancellation rate of requests made by unbanned cli
     | 2013-10-03 |       0.50        |
     +------------+-------------------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trips-and-users)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/trips-and-users)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/trips-and-users/description/)  
 
@@ -78,3 +79,4 @@ Leave me comments, if you have better ways to solve.
     and Trips.Status != 'completed'
     group by Trips.Request_at) t2
     on t1.Day = t2. Day;
+

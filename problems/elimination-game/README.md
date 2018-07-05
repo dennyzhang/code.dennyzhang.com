@@ -1,5 +1,5 @@
-# Leetcode: Elimination Game     :BLOG:Basic:
 
+# Leetcode: Elimination Game     :BLOG:Medium:
 
 ---
 
@@ -8,7 +8,8 @@ Elimination Game
 ---
 
 Similar Problems:  
--   Tag: [#basic](https://code.dennyzhang.com/category/basic)
+
+-   Tag: [#inspiring](https://code.dennyzhang.com/category/inspiring), [#math](https://code.dennyzhang.com/category/math)
 
 ---
 
@@ -32,7 +33,7 @@ Example:
     Output:
     6
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/elimination-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/elimination-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/elimination-game/description/)  
 
@@ -40,4 +41,23 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/elimination-game
+    // Blog link: https://code.dennyzhang.com/elimination-game
+    // Basic Ideas:
+    //  We get the result, when we have ony one left
+    //  Each round we will elimate half of the items
+    //  Distance between each item will double after each round
+    //  Whether we delete or keep the first item, it depends on the remaining count
+    // Complexity: Time O(log(n)), Space O(1)
+    func lastRemaining(n int) int {
+    	head, dist := 1, 1
+    	forward := true
+    	for n>1 {
+    	if forward || n%2 == 1 {
+    		head += dist
+    	}
+    	dist, n = 2*dist, n/2
+    	forward = !forward
+    	}
+    	return head
+    }
+

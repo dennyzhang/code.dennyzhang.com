@@ -1,5 +1,5 @@
-# Leetcode: IP to CIDR     :BLOG:Basic:
 
+# Leetcode: IP to CIDR     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ IP to CIDR
 ---
 
 Similar Problems:  
+
 -   [Validate IP Address](https://code.dennyzhang.com/validate-ip-address)
 -   [Tag: #string](https://code.dennyzhang.com/tag/string)
 
@@ -53,11 +54,12 @@ Example 1:
     that are outside the specified range.
 
 Note:  
+
 1.  ip will be a valid IPv4 address.
 2.  Every implied address ip + x (for x < n) will be a valid IPv4 address.
 3.  n will be an integer in the range [1, 1000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ip-to-cidr)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ip-to-cidr)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/ip-to-cidr/description/)  
 
@@ -66,3 +68,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/ip-to-cidr
+

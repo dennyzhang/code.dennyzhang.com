@@ -1,5 +1,5 @@
-# Leetcode: Second Minimum Node In a Binary Tree     :BLOG:Basic:
 
+# Leetcode: Second Minimum Node In a Binary Tree     :BLOG:Basic:
 
 ---
 
@@ -33,7 +33,7 @@ If no such second minimum value exists, output -1 instead.
     Output: -1
     Explanation: The smallest value is 2, but there isn't any second smallest value.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/second-minimum-node-in-a-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/second-minimum-node-in-a-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/)  
 
@@ -51,32 +51,33 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def findSecondMinimumValue(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            ## Idea: pre-order DFS
-            return self._findSecondMinimumValue(root, root.val)
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	## Idea: pre-order DFS
+    	return self._findSecondMinimumValue(root, root.val)
     
         def _findSecondMinimumValue(self, root, firstMininumValue):
-            if root is None:
-                return -1
-            if root.left is None and root.right is None:
-                if root.val > firstMininumValue:
-                    return root.val
-                else:
-                    return -1
+    	if root is None:
+    	    return -1
+    	if root.left is None and root.right is None:
+    	    if root.val > firstMininumValue:
+    		return root.val
+    	    else:
+    		return -1
     
-            if root.val > firstMininumValue:
-                return root.val
-            else:
-                left_ret, right_ret, ret = -1, -1, -1
-                if root.left:
-                    left_ret = self._findSecondMinimumValue(root.left, firstMininumValue)
-                if root.right:
-                    right_ret = self._findSecondMinimumValue(root.right, firstMininumValue)
-                if left_ret == -1 or right_ret == -1:
-                    ret = max(left_ret, right_ret)
-                else:
-                    ret = min(left_ret, right_ret)
-                return ret
+    	if root.val > firstMininumValue:
+    	    return root.val
+    	else:
+    	    left_ret, right_ret, ret = -1, -1, -1
+    	    if root.left:
+    		left_ret = self._findSecondMinimumValue(root.left, firstMininumValue)
+    	    if root.right:
+    		right_ret = self._findSecondMinimumValue(root.right, firstMininumValue)
+    	    if left_ret == -1 or right_ret == -1:
+    		ret = max(left_ret, right_ret)
+    	    else:
+    		ret = min(left_ret, right_ret)
+    	    return ret
+

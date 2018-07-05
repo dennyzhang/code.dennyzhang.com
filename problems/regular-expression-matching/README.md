@@ -1,5 +1,5 @@
-# Leetcode: Regular Expression Matching     :BLOG:Basic:
 
+# Leetcode: Regular Expression Matching     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Regular Expression Matching
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -31,7 +32,7 @@ Implement regular expression matching with support for '.' and '\*'.
     isMatch("ab", ".*") -> true
     isMatch("aab", "c*a*b") -> true
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/regular-expression-matching)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/regular-expression-matching)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/regular-expression-matching/description/)  
 
@@ -40,3 +41,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/regular-expression-matching
+

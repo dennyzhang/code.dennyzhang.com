@@ -1,5 +1,5 @@
-# Leetcode:  All O\`one Data Structure     :BLOG:Hard:
 
+# Leetcode:  All O\`one Data Structure     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ All O\`one Data Structure
 ---
 
 Similar Problems:  
+
 -   [Insert Delete GetRandom O(1)](https://code.dennyzhang.com/insert-delete-getrandom-o1)
 -   [LRU Cache](https://code.dennyzhang.com/lru-cache)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
@@ -24,7 +25,7 @@ GetMinKey() - Returns one of the keys with minimal value. If no element exists, 
 
 Challenge: Perform all these in O(1) time complexity.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/all-oone-data-structure)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/all-oone-data-structure)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/all-oone-data-structure/description/)  
 
@@ -42,98 +43,98 @@ Leave me comments, if you have better ways to solve.
     
     class DLinkNode:
         def __init__(self, key):
-            self.key = key
-            self.left = self.right = None
+    	self.key = key
+    	self.left = self.right = None
     
     class AllOne(object):
     
         def __init__(self):
-            """
-            Initialize your data structure here.
-            """
-            self.m = {}
-            # head <--> p1 <--> p2 <--> tail
-            # head and tail are dummy nodes. And m[p1] <= m[p2]
-            self.head = DLinkNode(None)
-            self.tail = DLinkNode(None)
-            self.head.right = self.tail
-            self.tail.left = self.head
+    	"""
+    	Initialize your data structure here.
+    	"""
+    	self.m = {}
+    	# head <--> p1 <--> p2 <--> tail
+    	# head and tail are dummy nodes. And m[p1] <= m[p2]
+    	self.head = DLinkNode(None)
+    	self.tail = DLinkNode(None)
+    	self.head.right = self.tail
+    	self.tail.left = self.head
     
         def inc(self, key):
-            """
-            Inserts a new key <Key> with value 1. Or increments an existing key by 1.
-            :type key: str
-            :rtype: void
-            """
-            if key not in self.m:
-                p = DLinkNode(key)
-                self.m[key] = [1, p]
-                # add to head
-                p.right = self.head.right
-                p.right.left = p
-                p.left = self.head
-                self.head.right = p
-            else:
-                [value, p] = self.m[key]
-                self.m[key] = [value+1, p]
-                # keep moving to right
-                while p.right != self.tail and self.m[p.key][0]>self.m[p.right.key][0]:
-                    # .. <--> p <--> q <--> ..
-                    # swap p and q
-                    q = p.right
-                    p.right = q.right
-                    q.left = p.left
-                    p.right.left = p
-                    q.left.right = q
-                    q.right = p
-                    p.left = q
+    	"""
+    	Inserts a new key <Key> with value 1. Or increments an existing key by 1.
+    	:type key: str
+    	:rtype: void
+    	"""
+    	if key not in self.m:
+    	    p = DLinkNode(key)
+    	    self.m[key] = [1, p]
+    	    # add to head
+    	    p.right = self.head.right
+    	    p.right.left = p
+    	    p.left = self.head
+    	    self.head.right = p
+    	else:
+    	    [value, p] = self.m[key]
+    	    self.m[key] = [value+1, p]
+    	    # keep moving to right
+    	    while p.right != self.tail and self.m[p.key][0]>self.m[p.right.key][0]:
+    		# .. <--> p <--> q <--> ..
+    		# swap p and q
+    		q = p.right
+    		p.right = q.right
+    		q.left = p.left
+    		p.right.left = p
+    		q.left.right = q
+    		q.right = p
+    		p.left = q
     
         def dec(self, key):
-            """
-            Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
-            :type key: str
-            :rtype: void
-            """
-            if key not in self.m:
-                return
-            [value, p] = self.m[key]
-            if value == 1:
-                del self.m[key]
-                # remove p, but it may not be the head
-                p.left.right = p.right
-                p.right.left = p.left
-            else:
-                self.m[key] = [value-1, p]
-                # keep moving to left
-                while p.left != self.head and self.m[p.key][0] < self.m[p.left.key][0]:
-                    # .. <--> q <--> p <--> ..
-                    q = p.left
-                    p.left = q.left
-                    q.right = p.right
-                    p.left.right = p
-                    q.right.left = q
-                    p.right = q
-                    q.left = p
+    	"""
+    	Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
+    	:type key: str
+    	:rtype: void
+    	"""
+    	if key not in self.m:
+    	    return
+    	[value, p] = self.m[key]
+    	if value == 1:
+    	    del self.m[key]
+    	    # remove p, but it may not be the head
+    	    p.left.right = p.right
+    	    p.right.left = p.left
+    	else:
+    	    self.m[key] = [value-1, p]
+    	    # keep moving to left
+    	    while p.left != self.head and self.m[p.key][0] < self.m[p.left.key][0]:
+    		# .. <--> q <--> p <--> ..
+    		q = p.left
+    		p.left = q.left
+    		q.right = p.right
+    		p.left.right = p
+    		q.right.left = q
+    		p.right = q
+    		q.left = p
     
         def getMaxKey(self):
-            """
-            Returns one of the keys with maximal value.
-            :rtype: str
-            """
-            if self.head.right == self.tail:
-                return ""
-            else:
-                return self.tail.left.key
+    	"""
+    	Returns one of the keys with maximal value.
+    	:rtype: str
+    	"""
+    	if self.head.right == self.tail:
+    	    return ""
+    	else:
+    	    return self.tail.left.key
     
         def getMinKey(self):
-            """
-            Returns one of the keys with Minimal value.
-            :rtype: str
-            """
-            if self.head.right == self.tail:
-                return ""
-            else:
-                return self.head.right.key
+    	"""
+    	Returns one of the keys with Minimal value.
+    	:rtype: str
+    	"""
+    	if self.head.right == self.tail:
+    	    return ""
+    	else:
+    	    return self.head.right.key
     
     # Your AllOne object will be instantiated and called as such:
     # obj = AllOne()
@@ -141,3 +142,4 @@ Leave me comments, if you have better ways to solve.
     # obj.dec(key)
     # param_3 = obj.getMaxKey()
     # param_4 = obj.getMinKey()
+

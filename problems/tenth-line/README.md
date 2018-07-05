@@ -1,5 +1,5 @@
-# Leetcode: Tenth Line     :BLOG:Medium:
 
+# Leetcode: Tenth Line     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Tenth Line
 ---
 
 Similar Problems:  
+
 -   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
@@ -31,7 +32,7 @@ Your script should output the tenth line, which is:
 
     Line 10
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/tenth-line)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/tenth-line)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/tenth-line/description/)  
 
@@ -47,3 +48,4 @@ Leave me comments, if you have better ways to solve.
     else
         head -n10 ./file.txt | tail -n1
     fi
+

@@ -1,5 +1,5 @@
-# Leetcode: Swap Salary     :BLOG:Medium:
 
+# Leetcode: Swap Salary     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Swap Salary
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -31,7 +32,7 @@ After running your query, the above salary table should have the following rows:
     | 3  | C    | f   | 5500   |
     | 4  | D    | m   | 500    |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/swap-salary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/swap-salary)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/swap-salary/description/)  
 
@@ -46,3 +47,4 @@ Leave me comments, if you have better ways to solve.
         when sex = 'm' then 'f'
         when sex = 'f' then 'm'
         end;
+

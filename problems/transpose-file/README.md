@@ -1,5 +1,5 @@
-# Leetcode: Transpose File     :BLOG:Hard:
 
+# Leetcode: Transpose File     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Transpose File
 ---
 
 Similar Problems:  
+
 -   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
@@ -27,7 +28,7 @@ Output the following:
     name alice ryan
     age 21 30
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/transpose-file)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/transpose-file)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/transpose-file/description/)  
 
@@ -48,14 +49,15 @@ Leave me comments, if you have better ways to solve.
     
     for((i=0; i<$column_count; i++)); do
         for((j=0; j<$line_count; j++)); do
-            index=$((i+j*column_count))
-            if [ $((j+1)) -eq $line_count ]; then
-                echo -n "${output[$index]}"
-            else
-                echo -n "${output[$index]} "
-            fi
-            # echo "${output[$index} "
+    	index=$((i+j*column_count))
+    	if [ $((j+1)) -eq $line_count ]; then
+    	    echo -n "${output[$index]}"
+    	else
+    	    echo -n "${output[$index]} "
+    	fi
+    	# echo "${output[$index} "
         done
         echo ""
     donecat words.txt | tr -s ' ' '\
     ' | sort | uniq -c | sort -r | awk '{print $2, $1}'
+

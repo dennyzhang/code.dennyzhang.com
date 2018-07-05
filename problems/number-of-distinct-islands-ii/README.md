@@ -1,5 +1,5 @@
-# Leetcode: Number of Distinct Islands II     :BLOG:Hard:
 
+# Leetcode: Number of Distinct Islands II     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Number of Distinct Islands II
 ---
 
 Similar Problems:  
+
 -   [Number of Distinct Islands](https://code.dennyzhang.com/number-of-distinct-islands)
 -   Tag: [#dfs](https://code.dennyzhang.com/tag/dfs), [#classic](https://code.dennyzhang.com/tag/classic), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation), [#island](https://code.dennyzhang.com/tag/island)
 
@@ -71,7 +72,7 @@ are considered same island shapes. Because if we flip the first array in the up/
 
 Note: The length of each dimension in the given grid does not exceed 50.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-distinct-islands-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-distinct-islands-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-distinct-islands-ii/description/)  
 
@@ -80,3 +81,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/number-of-distinct-islands-ii
+

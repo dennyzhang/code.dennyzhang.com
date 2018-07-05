@@ -1,5 +1,5 @@
-# Leetcode: Convert Sorted Array to Binary Search Tree     :BLOG:Basic:
 
+# Leetcode: Convert Sorted Array to Binary Search Tree     :BLOG:Basic:
 
 ---
 
@@ -23,7 +23,7 @@ Example:
        /   /
      -10  5
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-sorted-array-to-binary-search-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/convert-sorted-array-to-binary-search-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)  
 
@@ -44,15 +44,16 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def sortedArrayToBST(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: TreeNode
-            """
-            length = len(nums)
-            if length == 0:
-                return None
-            mid_index = length/2
-            head = TreeNode(nums[mid_index])
-            head.left = self.sortedArrayToBST(nums[0:mid_index])
-            head.right = self.sortedArrayToBST(nums[mid_index+1:])
-            return head
+    	"""
+    	:type nums: List[int]
+    	:rtype: TreeNode
+    	"""
+    	length = len(nums)
+    	if length == 0:
+    	    return None
+    	mid_index = length/2
+    	head = TreeNode(nums[mid_index])
+    	head.left = self.sortedArrayToBST(nums[0:mid_index])
+    	head.right = self.sortedArrayToBST(nums[mid_index+1:])
+    	return head
+

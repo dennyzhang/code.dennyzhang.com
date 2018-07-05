@@ -1,5 +1,5 @@
-# Leetcode: Odd Even Linked List     :BLOG:Basic:
 
+# Leetcode: Odd Even Linked List     :BLOG:Basic:
 
 ---
 
@@ -16,10 +16,11 @@ You should try to do it in place. The program should run in O(1) space complexit
     return 1->3->5->2->4->NULL.
 
 Note:  
+
 -   The relative order inside both the even and odd groups should remain as it was in the input.
 -   The first node is considered odd, the second node even and so on &#x2026;
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/odd-even-linked-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/odd-even-linked-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/odd-even-linked-list/description/)  
 
@@ -36,28 +37,29 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def oddEvenList(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            ## Idea: 2pointer: odd_tail, even_tail
-            ##       move the next element of even_tail to odd_tail
-            ##       move next for both tails
-            ## Complexity
-            ## Sample Data:
-            ##       1    ->    2  ->    3   ->   4   ->   5   ->NULL
-            ##    odd_tail even_tail
-            ##
-            if head is None or head.next is None:
-                return head
-            odd_tail = head
-            even_tail = head.next
-            while even_tail and even_tail.next:
-                p = even_tail.next
-                even_tail.next = p.next
-                p.next = odd_tail.next
-                odd_tail.next = p
-                # move next
-                even_tail = even_tail.next
-                odd_tail = odd_tail.next
-            return head
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	## Idea: 2pointer: odd_tail, even_tail
+    	##       move the next element of even_tail to odd_tail
+    	##       move next for both tails
+    	## Complexity
+    	## Sample Data:
+    	##       1    ->    2  ->    3   ->   4   ->   5   ->NULL
+    	##    odd_tail even_tail
+    	##
+    	if head is None or head.next is None:
+    	    return head
+    	odd_tail = head
+    	even_tail = head.next
+    	while even_tail and even_tail.next:
+    	    p = even_tail.next
+    	    even_tail.next = p.next
+    	    p.next = odd_tail.next
+    	    odd_tail.next = p
+    	    # move next
+    	    even_tail = even_tail.next
+    	    odd_tail = odd_tail.next
+    	return head
+

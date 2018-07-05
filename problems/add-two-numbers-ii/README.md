@@ -1,5 +1,5 @@
-# Leetcode: Add Two Numbers II     :BLOG:Basic:
 
+# Leetcode: Add Two Numbers II     :BLOG:Basic:
 
 ---
 
@@ -19,7 +19,7 @@ Example:
 Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)  
 Output: 7 -> 8 -> 0 -> 7  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-two-numbers-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-two-numbers-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/add-two-numbers-ii/description/)  
 
@@ -36,59 +36,60 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def addTwoNumbers(self, l1, l2):
-            """
-            :type l1: ListNode
-            :type l2: ListNode
-            :rtype: ListNode
-            """
-            ## Idea:
-            ##           add l2 to l1 without carry. has_carry(bool). If yes, keep checking l1
-            ## Complexity: Time O(n*n), Space O(1)
-            dummy1, dummy2 = ListNode(0), ListNode(0)
-            dummy1.next, dummy2.next = l1, l2
-            len1, len2 = 0, 0
-            p = dummy1.next
-            while(p):
-                len1 += 1
-                p = p.next
+    	"""
+    	:type l1: ListNode
+    	:type l2: ListNode
+    	:rtype: ListNode
+    	"""
+    	## Idea:
+    	##           add l2 to l1 without carry. has_carry(bool). If yes, keep checking l1
+    	## Complexity: Time O(n*n), Space O(1)
+    	dummy1, dummy2 = ListNode(0), ListNode(0)
+    	dummy1.next, dummy2.next = l1, l2
+    	len1, len2 = 0, 0
+    	p = dummy1.next
+    	while(p):
+    	    len1 += 1
+    	    p = p.next
     
-            q = dummy2.next
-            while(q):
-                len2 += 1
-                q = q.next
+    	q = dummy2.next
+    	while(q):
+    	    len2 += 1
+    	    q = q.next
     
-            head, p, q = None, None, None
-            # longer list
-            if len1>=len2:
-                head = dummy1
-                p = dummy1.next
-                q = dummy2.next
-            else:
-                head = dummy2
-                p = dummy2.next
-                q = dummy1.next
+    	head, p, q = None, None, None
+    	# longer list
+    	if len1>=len2:
+    	    head = dummy1
+    	    p = dummy1.next
+    	    q = dummy2.next
+    	else:
+    	    head = dummy2
+    	    p = dummy2.next
+    	    q = dummy1.next
     
-            # add short list into the long list
-            for i in xrange(abs(len2-len1)):
-                p = p.next
+    	# add short list into the long list
+    	for i in xrange(abs(len2-len1)):
+    	    p = p.next
     
-            has_carry = False
-            while p:
-                p.val += q.val
-                if p.val >= 10:
-                    has_carry = True
-                p = p.next
-                q = q.next
+    	has_carry = False
+    	while p:
+    	    p.val += q.val
+    	    if p.val >= 10:
+    		has_carry = True
+    	    p = p.next
+    	    q = q.next
     
-            while has_carry:
-                p = head
-                has_carry = False
-                while(p.next):
-                    if p.next.val >= 10:
-                        p.val += 1
-                        if p.val >= 10:
-                            has_carry = True
-                        p.next.val = p.next.val % 10
-                    p = p.next
+    	while has_carry:
+    	    p = head
+    	    has_carry = False
+    	    while(p.next):
+    		if p.next.val >= 10:
+    		    p.val += 1
+    		    if p.val >= 10:
+    			has_carry = True
+    		    p.next.val = p.next.val % 10
+    		p = p.next
     
-            return head.next if head.val == 0 else head
+    	return head.next if head.val == 0 else head
+

@@ -1,5 +1,5 @@
-# Leetcode: Continuous Subarray Sum     :BLOG:Hard:
 
+# Leetcode: Continuous Subarray Sum     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Continuous Subarray Sum
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/category/array)
 
 ---
@@ -27,10 +28,11 @@ Example 2:
     Explanation: Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and sums up to 42.
 
 Note:  
+
 1.  The length of the array won't exceed 10,000.
 2.  You may assume the sum of all the numbers is in the range of a signed 32-bit integer.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/continuous-subarray-sum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/continuous-subarray-sum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/continuous-subarray-sum/description/)  
 
@@ -39,3 +41,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/continuous-subarray-sum
+

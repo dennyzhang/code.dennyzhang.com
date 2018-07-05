@@ -1,5 +1,5 @@
-# Leetcode: Minimum Cost to Hire K Workers     :BLOG:Basic:
 
+# Leetcode: Minimum Cost to Hire K Workers     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Cost to Hire K Workers
 ---
 
 Similar Problems:  
+
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -30,7 +31,7 @@ Example 2:
 
     Input: quality = [3,1,10,10,1], wage = [4,8,2,2,7], K = 3
     Output: 30.66667
-    Explanation: We pay 4 to 0-th worker, 13.33333 to 2-th and 3-th workers seperately.
+    Explanation: We pay 4 to 0-th worker, 13.33333 to 2-th and 3-th workers seperately. 
 
 Note:  
 
@@ -39,7 +40,7 @@ Note:
 3.  1 <= wage[i] <= 10000
 4.  Answers within 10^-5 of the correct answer will be considered correct.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-cost-to-hire-k-workers)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-cost-to-hire-k-workers)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/)  
 
@@ -51,11 +52,15 @@ Leave me comments, if you have better ways to solve.
 
 **General Thinkings:**  
 
+    
 
 **Key Observations:**  
 
+    
 
 **Walk Through Testdata**  
 
+    
 
     // Blog link: https://code.dennyzhang.com/minimum-cost-to-hire-k-workers
+

@@ -1,5 +1,5 @@
-# Leetcode: Design Compressed String Iterator     :BLOG:Medium:
 
+# Leetcode: Design Compressed String Iterator     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Design Compressed String Iterator
 ---
 
 Similar Problems:  
+
 -   [Basic Calculator](https://code.dennyzhang.com/basic-calculator)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
@@ -40,7 +41,7 @@ Example:
     iterator.hasNext(); // return false
     iterator.next(); // return ' '
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-compressed-string-iterator)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-compressed-string-iterator)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/design-compressed-string-iterator/description/)  
 
@@ -55,46 +56,47 @@ Leave me comments, if you have better ways to solve.
     class StringIterator:
     
         def __init__(self, compressedString):
-            """
-            :type compressedString: str
-            """
-            self.string = compressedString
-            self.index, self.count, self.ch = 0, 0, None
-            self.length = len(self.string)
+    	"""
+    	:type compressedString: str
+    	"""
+    	self.string = compressedString
+    	self.index, self.count, self.ch = 0, 0, None
+    	self.length = len(self.string)
     
         def next(self):
-            """
-            :rtype: str
-            """
-            if self.hasNext() is False:
-                return ' '
+    	"""
+    	:rtype: str
+    	"""
+    	if self.hasNext() is False:
+    	    return ' '
     
-            if self.count != 0:
-                self.count -= 1
-            else:
-                # fetch the next character
-                self.ch = self.string[self.index]
-                self.index += 1
-                # find the count
-                v = ''
-                while self.index < self.length:
-                    char = self.string[self.index]
-                    if char.isdigit() is False: break
-                    v = '%s%s' % (v, char)
-                    self.index += 1
-                self.count = int(v) - 1
-            return self.ch
+    	if self.count != 0:
+    	    self.count -= 1
+    	else:
+    	    # fetch the next character
+    	    self.ch = self.string[self.index]
+    	    self.index += 1
+    	    # find the count
+    	    v = ''
+    	    while self.index < self.length:
+    		char = self.string[self.index]
+    		if char.isdigit() is False: break
+    		v = '%s%s' % (v, char)
+    		self.index += 1
+    	    self.count = int(v) - 1
+    	return self.ch
     
         def hasNext(self):
-            """
-            :rtype: bool
-            """
-            if self.index == self.length and self.count == 0:
-                return False
-            else:
-                return True
+    	"""
+    	:rtype: bool
+    	"""
+    	if self.index == self.length and self.count == 0:
+    	    return False
+    	else:
+    	    return True
     
     # Your StringIterator object will be instantiated and called as such:
     # obj = StringIterator(compressedString)
     # param_1 = obj.next()
     # param_2 = obj.hasNext()
+

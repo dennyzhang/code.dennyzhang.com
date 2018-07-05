@@ -1,5 +1,5 @@
-# Leetcode: Clone Graph     :BLOG:Basic:
 
+# Leetcode: Clone Graph     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Clone Graph
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -34,7 +35,7 @@ The graph has a total of three nodes, and therefore contains three parts as sepa
          / \
          \_/
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/clone-graph)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/clone-graph)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/clone-graph/description/)  
 
@@ -60,23 +61,24 @@ Leave me comments, if you have better ways to solve.
         # @param node, a undirected graph node
         # @return a undirected graph node
         def cloneGraph(self, node):
-            if node is None: return None
-            d = {}
-            self.DFSClone(node, d)
-            return d[node][0]
+    	if node is None: return None
+    	d = {}
+    	self.DFSClone(node, d)
+    	return d[node][0]
     
         def DFSClone(self, node, d):
-            if node is None: return None
-            if node not in d:
-                newNode = UndirectedGraphNode(node.label)
-                d[node] = (newNode, False)
-            (newNode, has_finished) = d[node]
-            if has_finished is True:
-                return newNode
+    	if node is None: return None
+    	if node not in d:
+    	    newNode = UndirectedGraphNode(node.label)
+    	    d[node] = (newNode, False)
+    	(newNode, has_finished) = d[node]
+    	if has_finished is True:
+    	    return newNode
     
-            # mark as DONE to avoid duplicate visits
-            d[node] = (newNode, True)
-            for neighbor in node.neighbors:
-                newNeighbor = self.DFSClone(neighbor, d)
-                newNode.neighbors.append(newNeighbor)
-            return newNode
+    	# mark as DONE to avoid duplicate visits
+    	d[node] = (newNode, True)
+    	for neighbor in node.neighbors:
+    	    newNeighbor = self.DFSClone(neighbor, d)
+    	    newNode.neighbors.append(newNeighbor)
+    	return newNode
+

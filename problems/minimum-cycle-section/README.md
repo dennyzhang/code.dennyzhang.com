@@ -1,5 +1,5 @@
-# Leetcode: Minimum Cycle Section     :BLOG:Hard:
 
+# Leetcode: Minimum Cycle Section     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Cycle Section
 ---
 
 Similar Problems:  
+
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
@@ -35,7 +36,7 @@ Example
     Explanation:
     The minimum cycle section is [1,2,1,2,1,4], and the length is 6.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-cycle-section)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-cycle-section)  
 
 Credits To: [lintcode.com](http://www.lintcode.com/en/problem/minimum-cycle-section/)  
 
@@ -68,11 +69,12 @@ Leave me comments, if you have better ways to solve.
         @return: the length of the minimum cycle section
         """
         def minimumCycleSection(self, array):
-            length = len(array)
-            if length <= 1: return length
-            dp = 1
-            for i in range(1, length):
-                if array[i] != array[i%dp]:
-                    if array[i] == array[0]: dp = i
-                    else: dp = i+1
-            return dp
+    	length = len(array)
+    	if length <= 1: return length
+    	dp = 1
+    	for i in range(1, length):
+    	    if array[i] != array[i%dp]:
+    		if array[i] == array[0]: dp = i
+    		else: dp = i+1
+    	return dp
+

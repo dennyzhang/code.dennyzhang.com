@@ -1,5 +1,5 @@
-# Leetcode: Alien Dictionary     :BLOG:Basic:
 
+# Leetcode: Alien Dictionary     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Alien Dictionary
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -49,12 +50,13 @@ Example 3:
     The order is invalid, so return "".
 
 Note:  
+
 1.  You may assume all letters are in lowercase.
 2.  You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
 3.  If the order is invalid, return an empty string.
 4.  There may be multiple valid order of letters, return any one of them is fine.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/alien-dictionary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/alien-dictionary)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/alien-dictionary/description/)  
 
@@ -63,3 +65,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/alien-dictionary
+

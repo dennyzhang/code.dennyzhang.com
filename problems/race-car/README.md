@@ -1,5 +1,5 @@
-# Leetcode: Race Car     :BLOG:Hard:
 
+# Leetcode: Race Car     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Race Car
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -47,7 +48,7 @@ Note:
 
 -   1 <= target <= 10000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/race-car)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/race-car)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/race-car/description/)  
 
@@ -76,30 +77,31 @@ Leave me comments, if you have better ways to solve.
         visisted[fmt.Sprintf("%d:%d", 0, 1)] = true
         level := 0
         for len(queue) != 0 {
-            level++
-            items := []Node{}
-            for _, node := range queue {
-                loc2 := node.loc+node.speed
-                if loc2 == target { return level }
-                // speed up
-                speed2 := node.speed*2
-                items = append(items, Node{loc2, speed2})
-                // change direction
-                if node.speed < 0 {
-                    speed2 = 1
-                } else {
-                    speed2 = -1
-                }
-                if visisted[fmt.Sprintf("%d:%d", node.loc, speed2)] == false {
-                    visisted[fmt.Sprintf("%d:%d", node.loc, speed2)] = true
-                    items = append(items, Node{node.loc, speed2})
-                }
-            }
-            // copy back
-            queue = []Node{}
-            for _, node := range items{
-                queue = append(queue, node)
-            }
+    	level++
+    	items := []Node{}
+    	for _, node := range queue {
+    	    loc2 := node.loc+node.speed
+    	    if loc2 == target { return level }
+    	    // speed up
+    	    speed2 := node.speed*2
+    	    items = append(items, Node{loc2, speed2})
+    	    // change direction
+    	    if node.speed < 0 {
+    		speed2 = 1
+    	    } else {
+    		speed2 = -1
+    	    }
+    	    if visisted[fmt.Sprintf("%d:%d", node.loc, speed2)] == false {
+    		visisted[fmt.Sprintf("%d:%d", node.loc, speed2)] = true
+    		items = append(items, Node{node.loc, speed2})
+    	    }
+    	}
+    	// copy back
+    	queue = []Node{}
+    	for _, node := range items{
+    	    queue = append(queue, node)
+    	}
         }
         return -1
     }
+

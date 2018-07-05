@@ -1,5 +1,5 @@
-# Leetcode: Queue Reconstruction by Height     :BLOG:Medium:
 
+# Leetcode: Queue Reconstruction by Height     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Queue Reconstruction by Height
 ---
 
 Similar Problems:  
+
 -   Tag: [#greedy](https://code.dennyzhang.com/tag/greedy), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
 ---
@@ -24,7 +25,7 @@ Example
     Output:
     [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/queue-reconstruction-by-height)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/queue-reconstruction-by-height)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/queue-reconstruction-by-height/description/)  
 
@@ -58,17 +59,18 @@ Leave me comments, if you have better ways to solve.
     func reconstructQueue(people [][]int) [][]int {
         res := people
         sort.Slice(people, func(i, j int) bool {
-            if people[i][0] > people[j][0] {return true}
-            if people[i][0] == people[j][0] && people[i][1] < people[j][1] {
-                return true
-            }
-            return false
+    	if people[i][0] > people[j][0] {return true}
+    	if people[i][0] == people[j][0] && people[i][1] < people[j][1] {
+    	    return true
+    	}
+    	return false
         })
     
         for i, p := range people {
-            j := p[1]
-            copy(res[j+1:i+1], res[j:i])
-            res[j] = p
+    	j := p[1]
+    	copy(res[j+1:i+1], res[j:i])
+    	res[j] = p
         }
         return res
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Rank Scores     :BLOG:Medium:
 
+# Leetcode: Rank Scores     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Rank Scores
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -38,7 +39,7 @@ For example, given the above Scores table, your query should generate the follow
     | 3.50  | 4    |
     +-------+------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rank-scores)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rank-scores)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rank-scores/description/)  
 
@@ -61,10 +62,11 @@ Leave me comments, if you have better ways to solve.
     select ranking.Score as Score, ranking.Ranking as Rank
         from Scores inner join
           (select t1.Score as Score, count(1) as Ranking
-            from
-                (select distinct Score from Scores) as t1 inner join
-                (select distinct Score from Scores) as t2
-            where t1.Score <= t2.Score
-            group by t1.Score) as ranking
+    	from
+    	    (select distinct Score from Scores) as t1 inner join
+    	    (select distinct Score from Scores) as t2
+    	where t1.Score <= t2.Score
+    	group by t1.Score) as ranking
         on Scores.Score = ranking.Score
         order by ranking.Score desc
+

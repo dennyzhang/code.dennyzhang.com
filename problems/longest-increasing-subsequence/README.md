@@ -1,5 +1,5 @@
-# Leetcode: Longest Increasing Subsequence     :BLOG:Basic:
 
+# Leetcode: Longest Increasing Subsequence     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Increasing Subsequence
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -20,7 +21,7 @@ Given an unsorted array of integers, find the length of longest increasing subse
 
 Follow up: Could you improve it to O(n log n) time complexity?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-increasing-subsequence)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-increasing-subsequence)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-increasing-subsequence/description/)  
 
@@ -29,3 +30,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/longest-increasing-subsequence
+

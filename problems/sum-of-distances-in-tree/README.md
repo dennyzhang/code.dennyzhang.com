@@ -1,5 +1,5 @@
-# Leetcode: Sum of Distances in Tree     :BLOG:Hard:
 
+# Leetcode: Sum of Distances in Tree     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Sum of Distances in Tree
 ---
 
 Similar Problems:  
+
 -   [LintCode: Fermat Point Of Graphs](https://code.dennyzhang.com/fermat-point-of-graphs)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic), [#dfs](https://code.dennyzhang.com/tag/dfs), [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
@@ -35,7 +36,7 @@ Example 1:
 
 Note: 1 <= N <= 10000  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sum-of-distances-in-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sum-of-distances-in-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sum-of-distances-in-tree/description/)  
 
@@ -58,9 +59,9 @@ Leave me comments, if you have better ways to solve.
         m_distances[0] += distance
         res := 1
         for _, child := range m_edges[node] {
-            if child != parent {
-                res += dfsCnt(child, node, distance+1)
-            }
+    	if child != parent {
+    	    res += dfsCnt(child, node, distance+1)
+    	}
         }
         m_childcnt[node] = res
         return res
@@ -68,19 +69,19 @@ Leave me comments, if you have better ways to solve.
     
     func dfsDistance(node int, parent int, N int) {
         if parent != -1 {
-            m_distances[node] = m_distances[parent] + N - 2*m_childcnt[node]
+    	m_distances[node] = m_distances[parent] + N - 2*m_childcnt[node]
         }
         for _, child := range m_edges[node] {
-            if parent != child { dfsDistance(child, node, N) }
+    	if parent != child { dfsDistance(child, node, N) }
         }
     }
     
     func sumOfDistancesInTree(N int, edges [][]int) []int {
         m_edges = map[int][]int{}
         for i, _ := range edges {
-            edge := edges[i]
-            m_edges[edge[0]] = append(m_edges[edge[0]], edge[1])
-            m_edges[edge[1]] = append(m_edges[edge[1]], edge[0])
+    	edge := edges[i]
+    	m_edges[edge[0]] = append(m_edges[edge[0]], edge[1])
+    	m_edges[edge[1]] = append(m_edges[edge[1]], edge[0])
         }
         m_childcnt = make([]int, N)
         m_distances = make([]int, N)
@@ -89,3 +90,4 @@ Leave me comments, if you have better ways to solve.
         dfsDistance(0, -1, N)
         return m_distances
     }
+

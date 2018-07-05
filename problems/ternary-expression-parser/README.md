@@ -1,5 +1,5 @@
-# Leetcode: Ternary Expression Parser     :BLOG:Medium:
 
+# Leetcode: Ternary Expression Parser     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Ternary Expression Parser
 ---
 
 Similar Problems:  
+
 -   Tag: [#dfs](https://code.dennyzhang.com/tag/dfs), [#stack](https://code.dennyzhang.com/tag/stack)
 
 ---
@@ -54,7 +55,7 @@ Example 3:
      -> "(T ? F : 3)"           or  -> "(T ? F : 5)"
      -> "F"                         -> "F"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ternary-expression-parser)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ternary-expression-parser)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/ternary-expression-parser/description/)  
 
@@ -63,3 +64,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/ternary-expression-parser
+

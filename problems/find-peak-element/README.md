@@ -1,5 +1,5 @@
-# Leetcode: Find Peak Element     :BLOG:Basic:
 
+# Leetcode: Find Peak Element     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Find Peak Element
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -25,7 +26,7 @@ For example, in array [1, 2, 3, 1], 3 is a peak element and your function should
 Note:  
 Your solution should be in logarithmic complexity.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-peak-element)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-peak-element)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-peak-element/description/)  
 
@@ -34,3 +35,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/find-peak-element
+

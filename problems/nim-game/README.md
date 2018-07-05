@@ -1,5 +1,5 @@
-# Leetcode: Nim Game     :BLOG:Amusing:
 
+# Leetcode: Nim Game     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Do you want to play first or after, if you are determined to win.
 ---
 
 Similar Problems:  
+
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -18,7 +19,7 @@ Both of you are very clever and have optimal strategies for the game. Write a fu
 
 For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nim-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nim-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/nim-game/description/)  
 
@@ -29,20 +30,21 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/nim-game
     class Solution(object):
         def canWinNim(self, n):
-            """
-            :type n: int
-            :rtype: bool
-            """
-            ## Idea: recursive
-            ## Complexity:
-            ##  1,2,3 -> true
-            ##  4 -> false
-            ##  5 -> true
-            ##  6 -> true
-            ##  7 -> true
-            ##  8 -> false
-            ##  9 -> true
-            ##  10 -> true
-            ##  11 -> true
-            ##  12 -> false
-            return n%4 != 0
+    	"""
+    	:type n: int
+    	:rtype: bool
+    	"""
+    	## Idea: recursive
+    	## Complexity:
+    	##  1,2,3 -> true
+    	##  4 -> false
+    	##  5 -> true
+    	##  6 -> true
+    	##  7 -> true
+    	##  8 -> false
+    	##  9 -> true
+    	##  10 -> true
+    	##  11 -> true
+    	##  12 -> false
+    	return n%4 != 0
+

@@ -1,5 +1,5 @@
-# Leetcode: Get Highest Answer Rate Question     :BLOG:Medium:
 
+# Leetcode: Get Highest Answer Rate Question     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Get Highest Answer Rate Question
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -43,7 +44,7 @@ question 285 has answer rate 1/1, while question 369 has 0/1 answer rate, so out
 
 Note: The highest answer rate meaning is: answer number's ratio in show number in the same question.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/get-highest-answer-rate-question)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/get-highest-answer-rate-question)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/get-highest-answer-rate-question/description/)  
 
@@ -55,9 +56,10 @@ Leave me comments, if you have better ways to solve.
     select question_id as survey_log
     from (
         select question_id, 
-            sum(case when action='show' then 1 else 0 end) as show_count,
-            sum(case when action='answer' then 1 else 0 end) as answer_count
+    	sum(case when action='show' then 1 else 0 end) as show_count,
+    	sum(case when action='answer' then 1 else 0 end) as answer_count
         from survey_log
         group by question_id) as t
     order by answer_count/show_count desc
     limit 1
+

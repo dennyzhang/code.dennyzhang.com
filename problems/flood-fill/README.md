@@ -1,5 +1,5 @@
-# Leetcode: Flood Fill     :BLOG:Basic:
 
+# Leetcode: Flood Fill     :BLOG:Basic:
 
 ---
 
@@ -32,7 +32,7 @@ Note:
     - The given starting pixel will satisfy 0 <= sr < image.length and 0 <= sc < image[0].length.
     - The value of each color in image[i][j] and newColor will be an integer in [0, 65535].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flood-fill)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flood-fill)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/flood-fill/description/)  
 
@@ -51,32 +51,33 @@ Leave me comments, if you have better ways to solve.
     ##             To be more accurate, it's the region which need to be updated
     class Solution(object):
         def floodFill(self, image, sr, sc, newColor):
-            """
-            :type image: List[List[int]]
-            :type sr: int
-            :type sc: int
-            :type newColor: int
-            :rtype: List[List[int]]
-            """
-            self.row_count = len(image)
-            if self.row_count == 0: return image
-            self.col_count = len(image[0])
-            if sr < 0 or sr >= self.row_count or \
-                sc < 0 or sc >= self.col_count:
-                    return image
-            oldColor = image[sr][sc]
-            if oldColor != newColor:
-                self.DFSMark(image, sr, sc, oldColor, newColor)
-            return image
+    	"""
+    	:type image: List[List[int]]
+    	:type sr: int
+    	:type sc: int
+    	:type newColor: int
+    	:rtype: List[List[int]]
+    	"""
+    	self.row_count = len(image)
+    	if self.row_count == 0: return image
+    	self.col_count = len(image[0])
+    	if sr < 0 or sr >= self.row_count or \
+    	    sc < 0 or sc >= self.col_count:
+    		return image
+    	oldColor = image[sr][sc]
+    	if oldColor != newColor:
+    	    self.DFSMark(image, sr, sc, oldColor, newColor)
+    	return image
     
         def DFSMark(self, image, i, j, oldColor, newColor):
-            if i < 0 or i >= self.row_count or \
-                j < 0 or j >= self.col_count:
-                    return
-            if image[i][j] != oldColor:
-                return
-            image[i][j] = newColor
-            self.DFSMark(image, i-1, j, oldColor, newColor)
-            self.DFSMark(image, i+1, j, oldColor, newColor)
-            self.DFSMark(image, i, j-1, oldColor, newColor)
-            self.DFSMark(image, i, j+1, oldColor, newColor)
+    	if i < 0 or i >= self.row_count or \
+    	    j < 0 or j >= self.col_count:
+    		return
+    	if image[i][j] != oldColor:
+    	    return
+    	image[i][j] = newColor
+    	self.DFSMark(image, i-1, j, oldColor, newColor)
+    	self.DFSMark(image, i+1, j, oldColor, newColor)
+    	self.DFSMark(image, i, j-1, oldColor, newColor)
+    	self.DFSMark(image, i, j+1, oldColor, newColor)
+

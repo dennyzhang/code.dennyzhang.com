@@ -1,5 +1,5 @@
-# Leetcode: Same Tree     :BLOG:Medium:
 
+# Leetcode: Same Tree     :BLOG:Medium:
 
 ---
 
@@ -40,7 +40,7 @@ Two binary trees are considered the same if they are structurally identical and 
     
     Output: false
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/same-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/same-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/same-tree/description/)  
 
@@ -58,22 +58,23 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def isSameTree(self, p, q):
-            """
-            :type p: TreeNode
-            :type q: TreeNode
-            :rtype: bool
-            """
-            if (p is None) and (q is None):
-                return True
-            else:
-                if (p is None) or (q is None):
-                    return False
-                else:
-                    if p.val != q.val:
-                        return False
-                    else:
-                        if self.isSameTree(p.left, q.left) is False:
-                            return False
-                        if self.isSameTree(p.right, q.right) is False:
-                            return False
-                        return True
+    	"""
+    	:type p: TreeNode
+    	:type q: TreeNode
+    	:rtype: bool
+    	"""
+    	if (p is None) and (q is None):
+    	    return True
+    	else:
+    	    if (p is None) or (q is None):
+    		return False
+    	    else:
+    		if p.val != q.val:
+    		    return False
+    		else:
+    		    if self.isSameTree(p.left, q.left) is False:
+    			return False
+    		    if self.isSameTree(p.right, q.right) is False:
+    			return False
+    		    return True
+

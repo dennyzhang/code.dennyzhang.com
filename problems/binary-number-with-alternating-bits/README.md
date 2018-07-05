@@ -1,5 +1,5 @@
-# Leetcode: Binary Number with Alternating Bits     :BLOG:Medium:
 
+# Leetcode: Binary Number with Alternating Bits     :BLOG:Medium:
 
 ---
 
@@ -33,7 +33,7 @@ Given a positive integer, check whether it has alternating bits: namely, if two 
     Explanation:
     The binary representation of 10 is: 1010.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-number-with-alternating-bits)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-number-with-alternating-bits)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-number-with-alternating-bits/description/)  
 
@@ -44,23 +44,23 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/binary-number-with-alternating-bits
     class Solution(object):
         def hasAlternatingBits(self, n):
-            """
-            :type n: int
-            :rtype: bool
-            """
-            if n == 0 or n == 1:
-                return True
+    	"""
+    	:type n: int
+    	:rtype: bool
+    	"""
+    	if n == 0 or n == 1:
+    	    return True
     
-            last_digit = None
-            while n != 0:
-                if last_digit is None:
-                    last_digit = n % 2
-                else:
-                    if last_digit + (n % 2) != 1:
-                        return False
-                    last_digit = n % 2
-                n = n / 2
-            return True
+    	last_digit = None
+    	while n != 0:
+    	    if last_digit is None:
+    		last_digit = n % 2
+    	    else:
+    		if last_digit + (n % 2) != 1:
+    		    return False
+    		last_digit = n % 2
+    	    n = n / 2
+    	return True
     
     if __name__ == '__main__':
         s = Solution()
@@ -69,3 +69,4 @@ Leave me comments, if you have better ways to solve.
         print s.hasAlternatingBits(7)
         print s.hasAlternatingBits(11)
         print s.hasAlternatingBits(10)
+

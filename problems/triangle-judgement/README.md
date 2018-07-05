@@ -1,5 +1,5 @@
-# Leetcode: Triangle Judgement     :BLOG:Basic:
 
+# Leetcode: Triangle Judgement     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Triangle Judgement
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -28,7 +29,7 @@ For the sample data above, your query should return the follow result:
     | 13 | 15 | 30 | No       |
     | 10 | 20 | 15 | Yes      |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/triangle-judgement)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/triangle-judgement)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/triangle-judgement/description/)  
 
@@ -39,8 +40,8 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/triangle-judgement
     select x, y, z,
            case
-               when x+y>z and y+z>x and x+z>y then 'Yes'
-               else 'No'
+    	   when x+y>z and y+z>x and x+z>y then 'Yes'
+    	   else 'No'
            end as triangle
     from triangle
     
@@ -55,3 +56,4 @@ Leave me comments, if you have better ways to solve.
     #             else x
     #         end as max_value
     #     from triangle) as t
+

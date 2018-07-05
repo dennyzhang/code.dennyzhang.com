@@ -1,5 +1,5 @@
-# Leetcode: Diagonal Traverse     :BLOG:Basic:
 
+# Leetcode: Diagonal Traverse     :BLOG:Basic:
 
 ---
 
@@ -21,7 +21,7 @@ Given a matrix of M x N elements (M rows, N columns), return all elements of the
 Note:  
 The total number of elements of the given matrix will not exceed 10,000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/diagonal-traverse)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/diagonal-traverse)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/diagonal-traverse/description/)  
 
@@ -51,38 +51,39 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*n), Space O(1)
     class Solution(object):
         def findDiagonalOrder(self, matrix):
-            """
-            :type matrix: List[List[int]]
-            :rtype: List[int]
-            """
-            row_count = len(matrix)
-            if row_count == 0:
-                return []
-            col_count = len(matrix[0])
-            res = [None] * (row_count * col_count)
+    	"""
+    	:type matrix: List[List[int]]
+    	:rtype: List[int]
+    	"""
+    	row_count = len(matrix)
+    	if row_count == 0:
+    	    return []
+    	col_count = len(matrix[0])
+    	res = [None] * (row_count * col_count)
     
-            i, j, is_up = 0, 0, True
-            for k in xrange(row_count * col_count):
-                res[k] = matrix[i][j]
-                if is_up:
-                    if i == 0 or j == col_count-1:
-                        is_up = not is_up
-                        if j != col_count - 1:
-                            j = j+1
-                        else:
-                            i = i+1
-                    else:
-                        i, j = i-1, j+1
-                else:
-                    if j == 0 or i == row_count-1:
-                        is_up = not is_up
-                        if i != row_count -1:
-                            i = i+1
-                        else:
-                            j = j+1
-                    else:
-                        i,j = i+1, j-1
-            return res
+    	i, j, is_up = 0, 0, True
+    	for k in xrange(row_count * col_count):
+    	    res[k] = matrix[i][j]
+    	    if is_up:
+    		if i == 0 or j == col_count-1:
+    		    is_up = not is_up
+    		    if j != col_count - 1:
+    			j = j+1
+    		    else:
+    			i = i+1
+    		else:
+    		    i, j = i-1, j+1
+    	    else:
+    		if j == 0 or i == row_count-1:
+    		    is_up = not is_up
+    		    if i != row_count -1:
+    			i = i+1
+    		    else:
+    			j = j+1
+    		else:
+    		    i,j = i+1, j-1
+    	return res
     
     # s = Solution()
     # print s.findDiagonalOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) #[1,2,4,7,5,3,6,8,9]
+

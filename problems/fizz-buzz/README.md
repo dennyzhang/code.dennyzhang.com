@@ -1,5 +1,5 @@
-# Leetcode: Fizz Buzz     :BLOG:Basic:
 
+# Leetcode: Fizz Buzz     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Fizz Buzz
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -39,7 +40,7 @@ Example:
         "FizzBuzz"
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/fizz-buzz)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/fizz-buzz)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/fizz-buzz/description/)  
 
@@ -48,3 +49,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/fizz-buzz
+

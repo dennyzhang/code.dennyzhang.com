@@ -1,5 +1,5 @@
-# Leetcode: Integer Replacement     :BLOG:Medium:
 
+# Leetcode: Integer Replacement     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Integer Replacement
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
@@ -43,7 +44,7 @@ Example 1:
     or
     7 -> 6 -> 3 -> 2 -> 1
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-replacement)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/integer-replacement)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/integer-replacement/description/)  
 
@@ -52,3 +53,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/integer-replacement
+

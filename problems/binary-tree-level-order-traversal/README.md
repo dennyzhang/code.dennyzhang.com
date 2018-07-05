@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Level Order Traversal     :BLOG:Basic:
 
+# Leetcode: Binary Tree Level Order Traversal     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Binary Tree Level Order Traversal
 ---
 
 Similar Problems:  
+
 -   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal), [#classic](https://code.dennyzhang.com/tag/classic), [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
@@ -28,7 +29,7 @@ Given a binary tree, return the level order traversal of its nodes' values. (ie,
       [15,7]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-level-order-traversal)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-level-order-traversal)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  
 
@@ -48,23 +49,24 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def levelOrder(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[List[int]]
-            """
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[List[int]]
+    	"""
     
-            if root is None: return []
-            res = []
-            queue = collections.deque()
-            queue.append(root)
-            while len(queue) != 0:
-                level_elements = []
-                for i in xrange(len(queue)):
-                    element = queue.popleft()
-                    level_elements.append(element.val)
-                    if element.left:
-                        queue.append(element.left)
-                    if element.right:
-                        queue.append(element.right)
-                res.append(level_elements)
-            return res
+    	if root is None: return []
+    	res = []
+    	queue = collections.deque()
+    	queue.append(root)
+    	while len(queue) != 0:
+    	    level_elements = []
+    	    for i in xrange(len(queue)):
+    		element = queue.popleft()
+    		level_elements.append(element.val)
+    		if element.left:
+    		    queue.append(element.left)
+    		if element.right:
+    		    queue.append(element.right)
+    	    res.append(level_elements)
+    	return res
+

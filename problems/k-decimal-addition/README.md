@@ -1,5 +1,5 @@
-# LintCode: K Decimal Addition     :BLOG:Basic:
 
+# LintCode: K Decimal Addition     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ K Decimal Addition
 ---
 
 Similar Problems:  
+
 -   [Add Strings](https://code.dennyzhang.com/add-strings)
 -   [Additive Number](https://code.dennyzhang.com/additive-number)
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic)
@@ -28,7 +29,7 @@ Example
     Explanation:
     12 + 1 = 13 in 10 bases.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/k-decimal-addition)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/k-decimal-addition)  
 
 Credits To: [lintcode.com](https://www.lintcode.com/problem/k-decimal-addition/description)  
 
@@ -44,19 +45,20 @@ Leave me comments, if you have better ways to solve.
     func addition (k int, a string, b string) string {
         carry, res := 0, ""
         for i, j := len(a)-1, len(b)-1; 
-            i>=0 || j>=0 || carry !=0;
-            i, j = i-1, j-1 {
-            v1, v2 := 0, 0
-            if i>=0 { v1, _ = strconv.Atoi(string(a[i])) }
-            if j>=0 { v2, _ = strconv.Atoi(string(b[j])) }
-            v := v1+v2+carry
-            if v>=k {
-                carry = 1
-                v -= k
-            } else {
-                carry = 0
-            }
-            res = strconv.Itoa(v) + res
+    	i>=0 || j>=0 || carry !=0;
+    	i, j = i-1, j-1 {
+    	v1, v2 := 0, 0
+    	if i>=0 { v1, _ = strconv.Atoi(string(a[i])) }
+    	if j>=0 { v2, _ = strconv.Atoi(string(b[j])) }
+    	v := v1+v2+carry
+    	if v>=k {
+    	    carry = 1
+    	    v -= k
+    	} else {
+    	    carry = 0
+    	}
+    	res = strconv.Itoa(v) + res
         }
       return strings.TrimLeft(res, "0")
     }
+

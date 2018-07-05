@@ -1,5 +1,5 @@
-# Leetcode: Find Anagram Mappings     :BLOG:Medium:
 
+# Leetcode: Find Anagram Mappings     :BLOG:Medium:
 
 ---
 
@@ -26,7 +26,7 @@ Note:
 1.  A, B have equal lengths in range [1, 100].
 2.  A[i], B[i] are integers in range [0, 10^5].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-anagram-mappings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-anagram-mappings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-anagram-mappings/description/)  
 
@@ -41,22 +41,23 @@ Leave me comments, if you have better ways to solve.
     ## Assumption: whether I can change B?
     class Solution(object):
         def anagramMappings(self, A, B):
-            """
-            :type A: List[int]
-            :type B: List[int]
-            :rtype: List[int]
-            """
-            length = len(A)
-            selected_list = [0] * length
-            result = []
-            for item in A:
-                # print("item: %d" % (item))
-                for i in xrange(length):
-                    if item == B[i]:
-                        result.append(i)
-                        B[i] = None
-                        break
-            return result
+    	"""
+    	:type A: List[int]
+    	:type B: List[int]
+    	:rtype: List[int]
+    	"""
+    	length = len(A)
+    	selected_list = [0] * length
+    	result = []
+    	for item in A:
+    	    # print("item: %d" % (item))
+    	    for i in xrange(length):
+    		if item == B[i]:
+    		    result.append(i)
+    		    B[i] = None
+    		    break
+    	return result
     
     # s = Solution()
     # print s.anagramMappings([21,5,74,5,74,21], [21,5,74,74,5,21])
+

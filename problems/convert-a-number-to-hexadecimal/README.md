@@ -1,5 +1,5 @@
-# Leetcode: Convert a Number to Hexadecimal     :BLOG:Basic:
 
+# Leetcode: Convert a Number to Hexadecimal     :BLOG:Basic:
 
 ---
 
@@ -32,7 +32,7 @@ Note:
     Output:
     "ffffffff"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-a-number-to-hexadecimal)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/convert-a-number-to-hexadecimal)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/)  
 
@@ -47,24 +47,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(k), Space O(1). k = len(result)
     class Solution:
         def toHex(self, num):
-            """
-            :type num: int
-            :rtype: str
-            """
-            if num == 0: return '0'
-            if num < 0: return self.toHex(pow(2, 32)+num)
-            res = ''
-            while num != 0:
-                mod_val = num%16
-                num = int(num/16)
-                if mod_val < 10:
-                    mod_str = str(mod_val)
-                else:
-                    mod_str = chr(ord('a') + mod_val-10)
-                # print(mod_val, mod_str)
-                res = '%s%s' % (mod_str, res)
-            return res
+    	"""
+    	:type num: int
+    	:rtype: str
+    	"""
+    	if num == 0: return '0'
+    	if num < 0: return self.toHex(pow(2, 32)+num)
+    	res = ''
+    	while num != 0:
+    	    mod_val = num%16
+    	    num = int(num/16)
+    	    if mod_val < 10:
+    		mod_str = str(mod_val)
+    	    else:
+    		mod_str = chr(ord('a') + mod_val-10)
+    	    # print(mod_val, mod_str)
+    	    res = '%s%s' % (mod_str, res)
+    	return res
     
     # s = Solution()
     # print(s.toHex(-1)) # ffffffff
     # print(s.toHex(26)) # 1a
+

@@ -1,5 +1,5 @@
-# LintCode: Card Game     :BLOG:Medium:
 
+# LintCode: Card Game     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Card Game
 ---
 
 Similar Problems:  
+
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
 ---
@@ -36,7 +37,7 @@ Example
     The legal solutions at this time are:
     (1),(2),(3),(1,2),(1,3),(2,3)
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/card-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/card-game)  
 
 Credits To: [lintcode.com](https://www.lintcode.com/problem/card-game/description)  
 
@@ -48,12 +49,15 @@ Leave me comments, if you have better ways to solve.
 
 **General Thinkings:**  
 
+    
 
 **Key Observations:**  
 
+    
 
 **Walk Through Testdata**  
 
+    
 
     // Blog link: https://code.dennyzhang.com/card-game
     // Basic Ideas:
@@ -69,10 +73,10 @@ Leave me comments, if you have better ways to solve.
      * @return: Return the number of legal plan
      */
     import (
-            "fmt"
-            "strings"
-            "strconv"
-            "math"
+    	"fmt"
+    	"strings"
+    	"strconv"
+    	"math"
     )
     
     func numOfPlan (n int, totalProfit int, totalCost int, a []int, b []int) int {
@@ -82,27 +86,28 @@ Leave me comments, if you have better ways to solve.
         p1, c1, p2, c2 := 0, 0, 0, 0
         l := []string{}
         for i, _ := range a {
-            if b[i] >= totalCost { continue }
-            if a[i] > totalProfit {
-                res = (res+1) % mod
-            }
-            key := fmt.Sprintf("%d-%d", a[i], b[i])
-            // m2: add current item of (a[i], b[i])
-            m2 := map[string]int{key:1}
-            for k := range m {
-                l = strings.Split(k, "-")
-                p1, _ = strconv.Atoi(l[0])
-                c1, _ = strconv.Atoi(l[1])
-                p2, c2 = p1+a[i], c1+b[i]
-                if c2 < totalCost {
-                    // add current item
-                    m2[fmt.Sprintf("%d-%d", p2, c2)] = m[k]
-                    if p2 > totalProfit {
-                        res = (res + m[k]) % mod
-                    }
-                }
-            }
-            for k:= range m2 { m[k] = (m[k]+m2[k]) % mod }
+    	if b[i] >= totalCost { continue }
+    	if a[i] > totalProfit {
+    	    res = (res+1) % mod
+    	}
+    	key := fmt.Sprintf("%d-%d", a[i], b[i])
+    	// m2: add current item of (a[i], b[i])
+    	m2 := map[string]int{key:1}
+    	for k := range m {
+    	    l = strings.Split(k, "-")
+    	    p1, _ = strconv.Atoi(l[0])
+    	    c1, _ = strconv.Atoi(l[1])
+    	    p2, c2 = p1+a[i], c1+b[i]
+    	    if c2 < totalCost {
+    		// add current item
+    		m2[fmt.Sprintf("%d-%d", p2, c2)] = m[k]
+    		if p2 > totalProfit {
+    		    res = (res + m[k]) % mod
+    		}
+    	    }
+    	}
+    	for k:= range m2 { m[k] = (m[k]+m2[k]) % mod }
         }
         return res
     }
+

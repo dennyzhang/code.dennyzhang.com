@@ -1,5 +1,5 @@
-# Leetcode: Reverse Vowels of a String     :BLOG:Basic:
 
+# Leetcode: Reverse Vowels of a String     :BLOG:Basic:
 
 ---
 
@@ -18,7 +18,7 @@ Write a function that takes a string as input and reverse only the vowels of a s
 Note:  
 The vowels does not include the letter "y".  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-vowels-of-a-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-vowels-of-a-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)  
 
@@ -31,28 +31,29 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def reverseVowels(self, s):
-            """
-            :type s: str
-            :rtype: str
-            """
-            vowel_letters = 'aeiouAEIOU'
-            length = len(s)
-            vowel_list = []
-            for ch in s:
-                if ch in vowel_letters:
-                    vowel_list.append(ch)
+    	"""
+    	:type s: str
+    	:rtype: str
+    	"""
+    	vowel_letters = 'aeiouAEIOU'
+    	length = len(s)
+    	vowel_list = []
+    	for ch in s:
+    	    if ch in vowel_letters:
+    		vowel_list.append(ch)
     
-            # reverse
-            vowel_list = vowel_list[::-1]
+    	# reverse
+    	vowel_list = vowel_list[::-1]
     
-            ret = [''] * length
+    	ret = [''] * length
     
-            k = 0
-            for i in range(0, len(s)):
-                if s[i] in vowel_letters:
-                    ret.append(vowel_list[k])
-                    k += 1
-                else:
-                    ret.append(s[i])
+    	k = 0
+    	for i in range(0, len(s)):
+    	    if s[i] in vowel_letters:
+    		ret.append(vowel_list[k])
+    		k += 1
+    	    else:
+    		ret.append(s[i])
     
-            return ''.join(ret)
+    	return ''.join(ret)
+

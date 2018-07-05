@@ -1,5 +1,5 @@
-# Leetcode: Map Sum Pairs     :BLOG:Medium:
 
+# Leetcode: Map Sum Pairs     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Map Sum Pairs
 ---
 
 Similar Problems:  
+
 -   [Review: Trie Tree Problems](https://code.dennyzhang.com/review-trie)
 -   Tag: [#trie](https://code.dennyzhang.com/tag/trie)
 
@@ -26,7 +27,7 @@ Example 1:
     Input: insert("app", 2), Output: Null
     Input: sum("ap"), Output: 5
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/map-sum-pairs)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/map-sum-pairs)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/map-sum-pairs/description/)  
 
@@ -53,13 +54,13 @@ Leave me comments, if you have better ways to solve.
     func (this *MapSum) Insert(key string, val int)  {
         node := this
         for i := 0; i < len(key); i++ {
-            ch := string(key[i])
-            p, ok := node.children[ch]
-            if ok == false {
-                p = &MapSum{make(map[string]*MapSum), 0, false}
-                node.children[ch] = p
-            }
-            node = p
+    	ch := string(key[i])
+    	p, ok := node.children[ch]
+    	if ok == false {
+    	    p = &MapSum{make(map[string]*MapSum), 0, false}
+    	    node.children[ch] = p
+    	}
+    	node = p
         }
         node.isLeaf = true
         node.val = val
@@ -70,38 +71,38 @@ Leave me comments, if you have better ways to solve.
         // fmt.Print(node, "\n")
         i := 0;
         for ; i < len(prefix); i++ {
-            ch := string(prefix[i])
-            p, ok := node.children[ch]
-            if ok == true {
-                node = p
-            } else {
-                break
-            }
+    	ch := string(prefix[i])
+    	p, ok := node.children[ch]
+    	if ok == true {
+    	    node = p
+    	} else {
+    	    break
+    	}
         }
     
         if i != len(prefix) {
-            // haven't found this prefix
-            return 0
+    	// haven't found this prefix
+    	return 0
         } else {
-            // sum all the leaf nodes
-            res := 0
-            queue := []*MapSum{node}
-            for len(queue) != 0 {
-                queue_count := len(queue)
-                for i:=0; i<queue_count; i++ {
-                    node = queue[0]
-                    // collect result of leaf
-                    if node.isLeaf == true {
-                        res += node.val
-                    }
-                    queue = queue[1:]
-                    // get the next level
-                    for ch := range node.children {
-                        queue = append(queue, node.children[ch])
-                    }
-                }
-            }
-            return res
+    	// sum all the leaf nodes
+    	res := 0
+    	queue := []*MapSum{node}
+    	for len(queue) != 0 {
+    	    queue_count := len(queue)
+    	    for i:=0; i<queue_count; i++ {
+    		node = queue[0]
+    		// collect result of leaf
+    		if node.isLeaf == true {
+    		    res += node.val
+    		}
+    		queue = queue[1:]
+    		// get the next level
+    		for ch := range node.children {
+    		    queue = append(queue, node.children[ch])
+    		}
+    	    }
+    	}
+    	return res
         }
     }
     
@@ -111,3 +112,4 @@ Leave me comments, if you have better ways to solve.
      * obj.Insert(key,val);
      * param_2 := obj.Sum(prefix);
      */
+

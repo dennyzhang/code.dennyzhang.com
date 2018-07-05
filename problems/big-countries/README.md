@@ -1,5 +1,5 @@
-# Leetcode: Big Countries     :BLOG:Medium:
 
+# Leetcode: Big Countries     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Big Countries
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -37,7 +38,7 @@ For example, according to the above table, we should output:
     | Algeria      | 37100000    | 2381741      |
     +--------------+-------------+--------------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/big-countries)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/big-countries)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/big-countries/description/)  
 
@@ -49,3 +50,4 @@ Leave me comments, if you have better ways to solve.
     select name, population, area
     from World
     where area > 3000000 or population > 25000000;
+

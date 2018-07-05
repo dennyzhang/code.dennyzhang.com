@@ -1,5 +1,5 @@
-# Leetcode: Score After Flipping Matrix     :BLOG:Medium:
 
+# Leetcode: Score After Flipping Matrix     :BLOG:Medium:
 
 ---
 
@@ -32,10 +32,10 @@ Example 1:
 Note:  
 
 1.  1 <= A.length <= 20
-2.  1 <= A<a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">[1]</a>.length <= 20
+2.  1 <= A[0].length <= 20
 3.  A[i][j] is 0 or 1.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/score-after-flipping-matrix)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/score-after-flipping-matrix)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/score-after-flipping-matrix/description/)  
 
@@ -54,36 +54,27 @@ Leave me comments, if you have better ways to solve.
     //     It doesn't matter
     // Complexity: Time O(n*m), Space O(1)
     import "math"
-    func matrixScore(A int) int {
+    func matrixScore(A [][]int) int {
         row_count, col_count := len(A), len(A[0])
         res, power := 0, int(math.Pow(2, float64(col_count-1)))
         // Change first column
         res, power = res+row_count*power, power/2
         for i:=0; i<row_count; i++{
-            if A[i][0] == 0 {
-                for j:=0; j<col_count; j++ {
-                    A[i][j] = 1-A[i][j]
-                }
-            }
+    	if A[i][0] == 0 {
+    	    for j:=0; j<col_count; j++ {
+    		A[i][j] = 1-A[i][j]
+    	    }
+    	}
         }
         // check other columns
         for j:=1; j<col_count; j++ {
-            count := 0
-            for i:=0; i<row_count; i++ {
-                if A[i][j] == 1 { count++ }
-            }
-            if count < row_count-count { count = row_count-count }
-            res, power = res+count*power, power/2
+    	count := 0
+    	for i:=0; i<row_count; i++ {
+    	    if A[i][j] == 1 { count++ }
+    	}
+    	if count < row_count-count { count = row_count-count }
+    	res, power = res+count*power, power/2
         }
         return res
     }
 
-<div id="footnotes">
-<p class="footnotes">Footnotes: </p>
-<div id="text-footnotes" style="font-size:14px">
-
-<div class="footdef"><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">[1]</a> <p>DEFINITION NOT FOUND.</p></div>
-
-
-</div>
-</div>

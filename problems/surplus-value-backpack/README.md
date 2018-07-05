@@ -1,5 +1,5 @@
-# LintCode: Surplus Value Backpack     :BLOG:Hard:
 
+# LintCode: Surplus Value Backpack     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Surplus Value Backpack
 ---
 
 Similar Problems:  
+
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -18,6 +19,7 @@ There are m Class B items, the volume of the i th Class B item is b[i], and the 
 Find the maximum value can be obtained.  
 
 Notice  
+
 -   1 <= k1, k2, c, a[i], b[i] <= 10^7
 -   1 <= n, m <= 1000
 
@@ -33,7 +35,7 @@ Example
     Explanation:
     2 * (5-1)+1*(4-2) = 10
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/surplus-value-backpack)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/surplus-value-backpack)  
 
 Credits To: [lintcode.com](http://www.lintcode.com/en/problem/surplus-value-backpack/)  
 
@@ -55,4 +57,5 @@ Leave me comments, if you have better ways to solve.
         @return: Return the max value you can get
         """
         def getMaxValue(self, k1, k2, c, n, m, a, b):
-            # Write your code here
+    	# Write your code here
+

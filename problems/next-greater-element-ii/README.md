@@ -1,5 +1,5 @@
-# Leetcode: Next Greater Element II     :BLOG:Medium:
 
+# Leetcode: Next Greater Element II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Next Greater Element II
 ---
 
 Similar Problems:  
+
 -   [Leetcode: Leetcode: Next Greater Element I](https://code.dennyzhang.com/next-greater-element-i)
 -   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
 
@@ -24,7 +25,7 @@ Given a circular array (the next element of the last element is the first elemen
 
 Note: The length of given array won't exceed 10000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/next-greater-element-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-greater-element-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/next-greater-element-ii/description/)  
 
@@ -38,23 +39,24 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def nextGreaterElements(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[int]
-            """
-            length = len(nums)
-            stack = []
-            res = [None]*length
-            for i in xrange(length*2):
-                i = i % length
-                # if current element is bigger, it's the target of previous undecided elements
-                while len(stack) != 0 and nums[i] > nums[stack[-1]]:
-                    k = stack.pop()
-                    res[k] = nums[i]
-                # No need to check if already examined
-                if res[i] is None:
-                    stack.append(i)
+    	"""
+    	:type nums: List[int]
+    	:rtype: List[int]
+    	"""
+    	length = len(nums)
+    	stack = []
+    	res = [None]*length
+    	for i in xrange(length*2):
+    	    i = i % length
+    	    # if current element is bigger, it's the target of previous undecided elements
+    	    while len(stack) != 0 and nums[i] > nums[stack[-1]]:
+    		k = stack.pop()
+    		res[k] = nums[i]
+    	    # No need to check if already examined
+    	    if res[i] is None:
+    		stack.append(i)
     
-            for i in xrange(length):
-                if res[i] is None: res[i] = -1
-            return res
+    	for i in xrange(length):
+    	    if res[i] is None: res[i] = -1
+    	return res
+

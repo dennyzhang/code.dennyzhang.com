@@ -1,5 +1,5 @@
-# Leetcode: Split Linked List in Parts     :BLOG:Medium:
 
+# Leetcode: Split Linked List in Parts     :BLOG:Medium:
 
 ---
 
@@ -15,6 +15,7 @@ The parts should be in order of occurrence in the input list, and parts occurrin
 
 Return a List of ListNode's representing the linked list parts that are formed.  
 
+    
     Examples 1->2->3->4, k = 5 // 5 equal parts [ [1], [2], [3], [4], null ]
     Example 1:
     Input: 
@@ -39,7 +40,7 @@ Note:
 -   Each value of a node in the input will be an integer in the range [0, 999].
 -   k will be an integer in the range [1, 50].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-linked-list-in-parts)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-linked-list-in-parts)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/split-linked-list-in-parts/description/)  
 
@@ -50,38 +51,39 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/split-linked-list-in-parts
     class Solution(object):
         def splitListToParts(self, root, k):
-            """
-            :type root: ListNode
-            :type k: int
-            :rtype: List[ListNode]
-            """
-            # get size of the link
-            count = 0
-            p = root
-            while p:
-                count += 1
-                p = p.next
-            part_size = count / k
-            remaining = count % k
+    	"""
+    	:type root: ListNode
+    	:type k: int
+    	:rtype: List[ListNode]
+    	"""
+    	# get size of the link
+    	count = 0
+    	p = root
+    	while p:
+    	    count += 1
+    	    p = p.next
+    	part_size = count / k
+    	remaining = count % k
     
-            res = []
-            p = root
-            for i in xrange(k):
-                dummy_node = ListNode(None)
-                q = dummy_node
+    	res = []
+    	p = root
+    	for i in xrange(k):
+    	    dummy_node = ListNode(None)
+    	    q = dummy_node
     
-                if remaining != 0:
-                    tmp = ListNode(p.val)
-                    q.next = tmp
-                    q = tmp
-                    p = p.next
-                    remaining -= 1
+    	    if remaining != 0:
+    		tmp = ListNode(p.val)
+    		q.next = tmp
+    		q = tmp
+    		p = p.next
+    		remaining -= 1
     
-                for j in xrange(part_size):
-                    tmp = ListNode(p.val)
-                    q.next = tmp
-                    q = tmp
-                    p = p.next
-                res.append(dummy_node.next)
+    	    for j in xrange(part_size):
+    		tmp = ListNode(p.val)
+    		q.next = tmp
+    		q = tmp
+    		p = p.next
+    	    res.append(dummy_node.next)
     
-            return res
+    	return res
+

@@ -1,5 +1,5 @@
-# Leetcode: Delete Node in a Linked List     :BLOG:Hard:
 
+# Leetcode: Delete Node in a Linked List     :BLOG:Hard:
 
 ---
 
@@ -11,7 +11,7 @@ Write a function to delete a node (except the tail) in a singly linked list, giv
 
 Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/delete-node-in-a-linked-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-node-in-a-linked-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)  
 
@@ -28,15 +28,16 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def deleteNode(self, node):
-            """
-            :type node: ListNode
-            :rtype: void Do not return anything, modify node in-place instead.
-            """
-            ## Idea: update the value p.val with p.next.val, then remove p.next
-            ## Complexity: Time O(n), Space O(1)
-            ## Data Sample
-            ##    1 -> 2 -> 3 -> 4 -> 5
-            ##              node p 
-            p = node.next # q will always exist
-            node.val = p.val
-            node.next = p.next
+    	"""
+    	:type node: ListNode
+    	:rtype: void Do not return anything, modify node in-place instead.
+    	"""
+    	## Idea: update the value p.val with p.next.val, then remove p.next
+    	## Complexity: Time O(n), Space O(1)
+    	## Data Sample
+    	##    1 -> 2 -> 3 -> 4 -> 5
+    	##              node p 
+    	p = node.next # q will always exist
+    	node.val = p.val
+    	node.next = p.next
+

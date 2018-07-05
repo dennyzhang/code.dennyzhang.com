@@ -1,5 +1,5 @@
-# Leetcode: Average Salary: Departments VS Company     :BLOG:Hard:
 
+# Leetcode: Average Salary: Departments VS Company     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Average Salary: Departments VS Company
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -47,7 +48,7 @@ The average salary for department '1' is 9000, which is the salary of employee\_
 The average salary of department '2' is (6000 + 10000)/2 = 8000, which is the average of employee\_id '2' and '3'. So the comparison result is 'lower' since 8000 < 8333.33.  
 With he same formula for the average salary comparison in February, the result is 'same' since both the department '1' and '2' have the same average salary with the company, which is 7000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/average-salary-departments-vs-company)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/average-salary-departments-vs-company)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/average-salary-departments-vs-company/description/)  
 
@@ -58,8 +59,8 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/average-salary-departments-vs-company
     select t1.pay_month, t1.department_id,
         (case when t1.amount = t2.amount then 'same'
-              when t1.amount > t2.amount then 'higher'
-              when t1.amount < t2.amount then 'lower' end) as comparison
+    	  when t1.amount > t2.amount then 'higher'
+    	  when t1.amount < t2.amount then 'lower' end) as comparison
     from 
         (select left(pay_date, 7) as pay_month, department_id, avg(amount) as amount
         from salary inner join employee
@@ -72,3 +73,4 @@ Leave me comments, if you have better ways to solve.
         on salary.employee_id = employee.employee_id
         group by pay_month) as t2
         on t1.pay_month = t2.pay_month
+

@@ -1,5 +1,5 @@
-# Leetcode: Integer Break     :BLOG:Medium:
 
+# Leetcode: Integer Break     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Integer Break
 ---
 
 Similar Problems:  
+
 -   [2 Keys Keyboard](https://code.dennyzhang.com/2-keys-keyboard)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#math](https://code.dennyzhang.com/tag/math)
 
@@ -19,7 +20,7 @@ Given a positive integer n, break it into the sum of at least two positive integ
 
 Note: You may assume that n is not less than 2 and not larger than 58.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-break)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/integer-break)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/integer-break/description/)  
 
@@ -57,3 +58,4 @@ Leave me comments, if you have better ways to solve.
       }
       return dp[n]
     }
+

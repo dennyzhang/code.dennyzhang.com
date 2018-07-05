@@ -1,5 +1,5 @@
-# Leetcode: Number Pair Statistics     :BLOG:Basic:
 
+# Leetcode: Number Pair Statistics     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Number Pair Statistics
 ---
 
 Similar Problems:  
+
 -   [Tag: #inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -30,7 +31,7 @@ Example
     Explanation:
     Only when p [2] and p [3] are combined, their sum of x and y can be divided by two.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-pair-statistics)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-pair-statistics)  
 
 Credits To: [lintcode.com](http://www.lintcode.com/en/problem/number-pair-statistics/)  
 
@@ -45,17 +46,18 @@ Leave me comments, if you have better ways to solve.
         @return: the numbers of pairs which meet the requirements
         """
         def pairNumbers(self, p):
-            ## Basic Ideas: Types of odd and event
-            ## Complexity: Time O(n), Space O(1)
-            # odd_odd odd_even, even_odd, even_even
-            l = [0]*4
-            for point in p:
-                x, y = point.x, point.y
-                if x%2 == 1 and y%2 == 1: l[0] += 1
-                if x%2 == 1 and y%2 == 0: l[1] += 1
-                if x%2 == 0 and y%2 == 1: l[2] += 1
-                if x%2 == 0 and y%2 == 0: l[3] += 1
-            res = 0
-            for i in range(4):
-                if l[i] >= 2: res += int(l[i]*(l[i]-1)/2)
-            return res
+    	## Basic Ideas: Types of odd and event
+    	## Complexity: Time O(n), Space O(1)
+    	# odd_odd odd_even, even_odd, even_even
+    	l = [0]*4
+    	for point in p:
+    	    x, y = point.x, point.y
+    	    if x%2 == 1 and y%2 == 1: l[0] += 1
+    	    if x%2 == 1 and y%2 == 0: l[1] += 1
+    	    if x%2 == 0 and y%2 == 1: l[2] += 1
+    	    if x%2 == 0 and y%2 == 0: l[3] += 1
+    	res = 0
+    	for i in range(4):
+    	    if l[i] >= 2: res += int(l[i]*(l[i]-1)/2)
+    	return res
+

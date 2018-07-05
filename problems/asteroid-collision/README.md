@@ -1,5 +1,5 @@
-# Leetcode: Asteroid Collision     :BLOG:Medium:
 
+# Leetcode: Asteroid Collision     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Asteroid Collision
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -56,7 +57,7 @@ Note:
 -   The length of asteroids will be at most 10000.
 -   Each asteroid will be a non-zero integer in the range [-1000, 1000]..
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/asteroid-collision)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/asteroid-collision)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/asteroid-collision/description/)  
 
@@ -78,35 +79,36 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def asteroidCollision(self, asteroids):
-            """
-            :type asteroids: List[int]
-            :rtype: List[int]
-            """
-            stack = []
-            for num in asteroids:
-                element = num
-                if element > 0:
-                    stack.append(element)
-                else:
-                    # left direction
-                    while len(stack) != 0 and stack[-1] > 0:
-                        top_element = stack[-1]
-                        # eliminate current node
-                        if top_element > -element:
-                            element = None
-                            break
-                        elif top_element == -element:
-                            # eliminiate both
-                            stack.pop()
-                            element = None
-                            break
-                        else:
-                            # eliminate stack top. Then recursive check
-                            stack.pop()
-                    if element:
-                        stack.append(element)
-            return stack
+    	"""
+    	:type asteroids: List[int]
+    	:rtype: List[int]
+    	"""
+    	stack = []
+    	for num in asteroids:
+    	    element = num
+    	    if element > 0:
+    		stack.append(element)
+    	    else:
+    		# left direction
+    		while len(stack) != 0 and stack[-1] > 0:
+    		    top_element = stack[-1]
+    		    # eliminate current node
+    		    if top_element > -element:
+    			element = None
+    			break
+    		    elif top_element == -element:
+    			# eliminiate both
+    			stack.pop()
+    			element = None
+    			break
+    		    else:
+    			# eliminate stack top. Then recursive check
+    			stack.pop()
+    		if element:
+    		    stack.append(element)
+    	return stack
     
     # s = Solution()
     # print s.asteroidCollision([8, -8]) # []
     # print s.asteroidCollision([-2,-1,1,2]) # [-2,-1,1,2]
+

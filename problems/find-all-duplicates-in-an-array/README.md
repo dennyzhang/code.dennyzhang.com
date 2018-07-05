@@ -1,5 +1,5 @@
-# Leetcode: Find All Duplicates in an Array     :BLOG:Basic:
 
+# Leetcode: Find All Duplicates in an Array     :BLOG:Basic:
 
 ---
 
@@ -21,7 +21,7 @@ Example:
     Output:
     [2,3]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-all-duplicates-in-an-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-all-duplicates-in-an-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)  
 
@@ -37,25 +37,26 @@ Leave me comments, if you have better ways to solve.
     ##     2 3 4     7
     class Solution(object):
         def findDuplicates(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[int]
-            """
-            i = 0
-            length = len(nums)
-            if length < 2:
-                return []
+    	"""
+    	:type nums: List[int]
+    	:rtype: List[int]
+    	"""
+    	i = 0
+    	length = len(nums)
+    	if length < 2:
+    	    return []
     
-            while i < length:
-                # move to next if in position or the same
-                if nums[i] - 1 == i or nums[i] == nums[nums[i] - 1]:
-                    i = i + 1
-                else:
-                    j = nums[i] - 1
-                    # swap nums[i] and nums[j]
-                    nums[i], nums[j] = nums[j], nums[i]
-            res = []
-            for i in xrange(length):
-                if nums[i]  != i+1:
-                    res.append(nums[i])
-            return res
+    	while i < length:
+    	    # move to next if in position or the same
+    	    if nums[i] - 1 == i or nums[i] == nums[nums[i] - 1]:
+    		i = i + 1
+    	    else:
+    		j = nums[i] - 1
+    		# swap nums[i] and nums[j]
+    		nums[i], nums[j] = nums[j], nums[i]
+    	res = []
+    	for i in xrange(length):
+    	    if nums[i]  != i+1:
+    		res.append(nums[i])
+    	return res
+

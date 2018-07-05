@@ -1,5 +1,5 @@
-# Leetcode: Data Segmentation     :BLOG:Basic:
 
+# Leetcode: Data Segmentation     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Data Segmentation
 ---
 
 Similar Problems:  
+
 -   Tag: [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
@@ -15,6 +16,7 @@ Similar Problems:
 Given a string str, we need to extract the symbols and words of the string in order.  
 
 Notice  
+
 -   The length of str does not exceed 10000.
 -   The given str contains only lowercase letters, symbols, and spaces.
 
@@ -35,7 +37,7 @@ Example
     Explanation:
     Separate symbols and words.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/data-segmentation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/data-segmentation)  
 
 Credits To: [lintcode.com](http://lintcode.com/en/problem/data-segmentation/)  
 
@@ -52,21 +54,22 @@ Leave me comments, if you have better ways to solve.
         @return: The answer
         """
         def dataSegmentation(self, str):
-            res = []
-            word = ""
-            for i, ch in enumerate(str):
-                if ch.isalpha():
-                    word += ch
-                else:
-                    # add caching
-                    if word != "":
-                        res.append(word)
-                        word = ""
-                    # add current
-                    if ch != " ": res.append(ch)
+    	res = []
+    	word = ""
+    	for i, ch in enumerate(str):
+    	    if ch.isalpha():
+    		word += ch
+    	    else:
+    		# add caching
+    		if word != "":
+    		    res.append(word)
+    		    word = ""
+    		# add current
+    		if ch != " ": res.append(ch)
     
-                # add the last
-                if i == len(str)-1:
-                    if word != "":
-                        res.append(word)
-            return res
+    	    # add the last
+    	    if i == len(str)-1:
+    		if word != "":
+    		    res.append(word)
+    	return res
+

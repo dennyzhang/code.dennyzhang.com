@@ -1,5 +1,5 @@
-# Leetcode: Diameter of Binary Tree     :BLOG:Amusing:
 
+# Leetcode: Diameter of Binary Tree     :BLOG:Amusing:
 
 ---
 
@@ -21,7 +21,7 @@ Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
 
 Note: The length of path between two nodes is represented by the number of edges between them.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/diameter-of-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/diameter-of-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/diameter-of-binary-tree/description/)  
 
@@ -39,34 +39,35 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def diameterOfBinaryTree(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            ## Ideas: max(diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.rigt), pass_root)
-            (diameter, _depth) = self._diameterOfBinaryTree(root)
-            return diameter
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	## Ideas: max(diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.rigt), pass_root)
+    	(diameter, _depth) = self._diameterOfBinaryTree(root)
+    	return diameter
     
         def _diameterOfBinaryTree(self, root):
-            """
-            :type root: TreeNode
-            :rtype: (_diameterOfBinaryTree, max_depth)
-            """
-            if root is None:
-                return (0, 0)
+    	"""
+    	:type root: TreeNode
+    	:rtype: (_diameterOfBinaryTree, max_depth)
+    	"""
+    	if root is None:
+    	    return (0, 0)
     
-            if root.left is None and root.right is None:
-                return (0, 1)
+    	if root.left is None and root.right is None:
+    	    return (0, 1)
     
-            res_diameter, res_depth = 0, 0
-            left_diameter, left_depth = 0, 0
-            right_diameter, right_depth = 0, 0
+    	res_diameter, res_depth = 0, 0
+    	left_diameter, left_depth = 0, 0
+    	right_diameter, right_depth = 0, 0
     
-            if root.left:
-                (left_diameter, left_depth) = self._diameterOfBinaryTree(root.left)
-            if root.right:
-                (right_diameter, right_depth) = self._diameterOfBinaryTree(root.right)
+    	if root.left:
+    	    (left_diameter, left_depth) = self._diameterOfBinaryTree(root.left)
+    	if root.right:
+    	    (right_diameter, right_depth) = self._diameterOfBinaryTree(root.right)
     
-            res_depth = max(left_depth, right_depth) + 1
-            res_diameter = max(left_diameter, right_diameter, left_depth+right_depth)
-            return (res_diameter, res_depth)
+    	res_depth = max(left_depth, right_depth) + 1
+    	res_diameter = max(left_diameter, right_diameter, left_depth+right_depth)
+    	return (res_diameter, res_depth)
+

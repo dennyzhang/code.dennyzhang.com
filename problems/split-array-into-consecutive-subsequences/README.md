@@ -1,5 +1,5 @@
-# Leetcode: Split Array into Consecutive Subsequences     :BLOG:Medium:
 
+# Leetcode: Split Array into Consecutive Subsequences     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Split Array into Consecutive Subsequences
 ---
 
 Similar Problems:  
+
 -   Tag: [#subsequence](https://code.dennyzhang.com/tag/subsequence), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -38,9 +39,10 @@ Example 3:
     Output: False
 
 Note:  
+
 -   The length of the input is in range of [1, 10000]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-array-into-consecutive-subsequences)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-into-consecutive-subsequences)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/split-array-into-consecutive-subsequences/description/)  
 
@@ -49,3 +51,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/split-array-into-consecutive-subsequences
+

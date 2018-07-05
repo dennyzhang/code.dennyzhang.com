@@ -1,5 +1,5 @@
-# Leetcode: Trim a Binary Search Tree     :BLOG:Basic:
 
+# Leetcode: Trim a Binary Search Tree     :BLOG:Basic:
 
 ---
 
@@ -43,7 +43,7 @@ Given a binary search tree and the lowest and highest boundaries as L and R, tri
       /
      1
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trim-a-binary-search-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/trim-a-binary-search-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/trim-a-binary-search-tree/description/)  
 
@@ -65,26 +65,27 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def trimBST(self, root, L, R):
-            """
-            :type root: TreeNode
-            :type L: int
-            :type R: int
-            :rtype: TreeNode
-            """
-            ## 
-            if root is None:
-                return None
+    	"""
+    	:type root: TreeNode
+    	:type L: int
+    	:type R: int
+    	:rtype: TreeNode
+    	"""
+    	## 
+    	if root is None:
+    	    return None
     
-            value = root.val
-            if value >= L and value <= R:
-                root.left = self.trimBST(root.left, L, R)
-                root.right = self.trimBST(root.right, L, R)
-                return root
+    	value = root.val
+    	if value >= L and value <= R:
+    	    root.left = self.trimBST(root.left, L, R)
+    	    root.right = self.trimBST(root.right, L, R)
+    	    return root
     
-            if value < L:
-                # left tree won't be qualified
-                return self.trimBST(root.right, L, R)
+    	if value < L:
+    	    # left tree won't be qualified
+    	    return self.trimBST(root.right, L, R)
     
-            if value > R:
-                # right tree won't be qualified
-                return self.trimBST(root.left, L, R)
+    	if value > R:
+    	    # right tree won't be qualified
+    	    return self.trimBST(root.left, L, R)
+

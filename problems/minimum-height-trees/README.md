@@ -1,5 +1,5 @@
-# Leetcode: Minimum Height Trees     :BLOG:Medium:
 
+# Leetcode: Minimum Height Trees     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Height Trees
 ---
 
 Similar Problems:  
+
 -   [Trapping Rain Water II](https://code.dennyzhang.com/trapping-rain-water-ii)
 -   Tag: [#bfs](https://code.dennyzhang.com/category/bfs), [#inspiring](https://code.dennyzhang.com/category/inspiring), [#outer2inside](https://code.dennyzhang.com/tag/outer2inside)
 
@@ -49,7 +50,7 @@ Note:
 1.  According to the definition of tree on Wikipedia: "a tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree."
 2.  The height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-height-trees)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-height-trees)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-height-trees/description/)  
 
@@ -67,27 +68,28 @@ Leave me comments, if you have better ways to solve.
         relations := make([]map[int]bool, n)
         for i:= 0; i<n; i++ { relations[i] = map[int]bool{}}
         for _, edge := range edges {
-            p, q := edge[0], edge[1]
-            relations[p][q], relations[q][p] = true, true
+    	p, q := edge[0], edge[1]
+    	relations[p][q], relations[q][p] = true, true
         }
         queue := []int{}
         // start with leaf nodes
         for i:=0; i<n; i++ {
-            if len(relations[i]) == 1 { queue = append(queue, i) }
+    	if len(relations[i]) == 1 { queue = append(queue, i) }
         }
     
         for n>2 {
-            // explore current level
-            n -= len(queue)
-            items := []int{}
-            for _, node := range queue {
-                for node2 := range relations[node] {
-                    delete (relations[node2], node)
-                    // inner layer
-                    if len(relations[node2]) == 1 { items = append(items, node2) }
-                }
-            }
-            queue = items
+    	// explore current level
+    	n -= len(queue)
+    	items := []int{}
+    	for _, node := range queue {
+    	    for node2 := range relations[node] {
+    		delete (relations[node2], node)
+    		// inner layer
+    		if len(relations[node2]) == 1 { items = append(items, node2) }
+    	    }
+    	}
+    	queue = items
         }
         return queue
     }
+

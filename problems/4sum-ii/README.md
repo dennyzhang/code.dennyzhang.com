@@ -1,5 +1,5 @@
-# Leetcode: 4Sum II     :BLOG:Medium:
 
+# Leetcode: 4Sum II     :BLOG:Medium:
 
 ---
 
@@ -33,7 +33,7 @@ To make problem a bit easier, all A, B, C, D have same length of N where 0 <= N 
     1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
     2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/4sum-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/4sum-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/4sum-ii/description/)  
 
@@ -44,19 +44,20 @@ Leave me comments, if you have better ways to solve.
     // Blog link: https://code.dennyzhang.com/4sum-ii
     // Basic Ideas: hashmap
     // Complexity: Time O(n*n), Space O(n*n)
-    func fourSumCount(A int, B int, C int, D int) int {
+    func fourSumCount(A []int, B []int, C []int, D []int) int {
         m := map[int]int{}
         for _, v1 := range A {
-            for _, v2:= range B {
-                m[v1+v2]++
-            }
+    	for _, v2:= range B {
+    	    m[v1+v2]++
+    	}
         }
     
         res := 0
         for _, v1 := range C {
-            for _, v2:= range D {
-                res += m[-v1-v2]
-            }
+    	for _, v2:= range D {
+    	    res += m[-v1-v2]
+    	}
         }
         return res
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Smallest Rectangle Enclosing Black Pixels     :BLOG:Medium:
 
+# Leetcode: Smallest Rectangle Enclosing Black Pixels     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Smallest Rectangle Enclosing Black Pixels
 ---
 
 Similar Problems:  
+
 -   [Number of Distinct Islands](https://code.dennyzhang.com/number-of-distinct-islands)
 -   Tag: [#island](https://code.dennyzhang.com/tag/island), [#dfs](https://code.dennyzhang.com/tag/dfs)
 
@@ -27,7 +28,7 @@ Example:
     
     Output: 6
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/smallest-rectangle-enclosing-black-pixels)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/smallest-rectangle-enclosing-black-pixels)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/)  
 
@@ -38,6 +39,7 @@ Leave me comments, if you have better ways to solve.
 -   Solution: dfs island issues
 
 Similar Problems:  
+
 -   [Number of Distinct Islands](https://code.dennyzhang.com/number-of-distinct-islands)
 -   Tag: [#island](https://code.dennyzhang.com/tag/island), [#dfs](https://code.dennyzhang.com/tag/dfs)
 
@@ -67,3 +69,4 @@ Similar Problems:
         dfs(image, x, y)
         return (max_x-min_x+1)*(max_y-min_y+1)
     }
+

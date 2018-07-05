@@ -1,5 +1,5 @@
-# Leetcode: Jewels and Stones     :BLOG:Basic:
 
+# Leetcode: Jewels and Stones     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Jewels and Stones
 ---
 
 Similar Problems:  
+
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
@@ -31,7 +32,7 @@ Note:
 -   S and J will consist of letters and have length at most 50.
 -   The characters in J are distinct.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/jewels-and-stones)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/jewels-and-stones)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/jewels-and-stones/description/)  
 
@@ -45,11 +46,12 @@ Leave me comments, if you have better ways to solve.
     func numJewelsInStones(J string, S string) int {
         m := map[rune]bool{}
         for _, ch := range J {
-            m[ch] = true
+    	m[ch] = true
         }
         res := 0
         for _, ch := range S {
-            if m[ch] == true { res++ }
+    	if m[ch] == true { res++ }
         }
         return res
     }
+

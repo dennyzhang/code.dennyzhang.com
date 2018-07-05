@@ -1,5 +1,5 @@
-# Leetcode: Palindromic Substrings     :BLOG:Medium:
 
+# Leetcode: Palindromic Substrings     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Palindromic Substrings
 ---
 
 Similar Problems:  
+
 -   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
@@ -31,7 +32,7 @@ Example 2:
 Note:  
 The input string length won't exceed 1000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindromic-substrings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindromic-substrings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/palindromic-substrings/description/)  
 
@@ -45,15 +46,16 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*n), Space O(1)
     class Solution:
         def countSubstrings(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            length = len(s)
-            res = length
-            for i in range(length):
-                for (l,r) in [(i-1, i+1), (i, i+1)]:
-                    while l >=0 and r <= length-1 and s[l] == s[r]:
-                        res += 1
-                        l, r = l-1, r+1
-            return res
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	length = len(s)
+    	res = length
+    	for i in range(length):
+    	    for (l,r) in [(i-1, i+1), (i, i+1)]:
+    		while l >=0 and r <= length-1 and s[l] == s[r]:
+    		    res += 1
+    		    l, r = l-1, r+1
+    	return res
+

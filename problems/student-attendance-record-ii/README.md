@@ -1,5 +1,5 @@
-# Leetcode: Student Attendance Record II     :BLOG:Medium:
 
+# Leetcode: Student Attendance Record II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Student Attendance Record II
 ---
 
 Similar Problems:  
+
 -   [Student Attendance Record I](https://code.dennyzhang.com/student-attendance-record-i)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
@@ -31,11 +32,11 @@ Example 1:
     Explanation:
     There are 8 records with length 2 will be regarded as rewardable:
     "PP" , "AP", "PA", "LP", "PL", "AL", "LA", "LL"
-    Only "AA" won't be regarded as rewardable owing to more than one absent times.
+    Only "AA" won't be regarded as rewardable owing to more than one absent times. 
 
 Note: The value of n won't exceed 100,000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/student-attendance-record-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/student-attendance-record-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/student-attendance-record-ii/description/)  
 
@@ -50,25 +51,26 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def checkRecord(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            if n == 1: return 3
-            l = [1, 1, 0, 1, 0, 0]
-            for i in range(2, n+1):
-                l2 = [None]*6
-                # a0l0: first value is P
-                l2[0] = l[0]
-                # a0l1: first value is P or L
-                l2[1] = l[1] + l[0]
-                # a0l2: first value is P or L
-                l2[2] = l[2] + l[1]
-                # a1l0: first value is A or P
-                l2[3] = l[0] + l[3]
-                # a1l1: first value is A or P or L
-                l2[4] = l[1] + l[4] + l[3]
-                # a1l2: first value is A or P or L
-                l2[5] = l[2] + l[5] + l[4]
-                l = l2
-            return sum(l)
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	if n == 1: return 3
+    	l = [1, 1, 0, 1, 0, 0]
+    	for i in range(2, n+1):
+    	    l2 = [None]*6
+    	    # a0l0: first value is P
+    	    l2[0] = l[0]
+    	    # a0l1: first value is P or L
+    	    l2[1] = l[1] + l[0]
+    	    # a0l2: first value is P or L
+    	    l2[2] = l[2] + l[1]
+    	    # a1l0: first value is A or P
+    	    l2[3] = l[0] + l[3]
+    	    # a1l1: first value is A or P or L
+    	    l2[4] = l[1] + l[4] + l[3]
+    	    # a1l2: first value is A or P or L
+    	    l2[5] = l[2] + l[5] + l[4]
+    	    l = l2
+    	return sum(l)
+

@@ -1,5 +1,5 @@
-# Leetcode: Product of Array Except Self     :BLOG:Medium:
 
+# Leetcode: Product of Array Except Self     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Product of Array Except Self
 ---
 
 Similar Problems:  
+
 -   [Shortest Distance to a Character](https://code.dennyzhang.com/shortest-distance-to-a-character)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#array](https://code.dennyzhang.com/tag/array), [#twopass](https://code.dennyzhang.com/tag/twopass), [#classic](https://code.dennyzhang.com/tag/classic)
 
@@ -25,7 +26,7 @@ Note: Please solve it without division and in O(n).
 Follow up:  
 Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/product-of-array-except-self)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/product-of-array-except-self)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/product-of-array-except-self/description/)  
 
@@ -64,12 +65,13 @@ We can use the similar two-pass idea to solve: [Shortest Distance to a Character
         res := make([]int, len(nums))
         res[0] = 1
         for product, i:=1, 1; i<len(nums); i++ {
-            product *= nums[i-1]
-            res[i] = product
+    	product *= nums[i-1]
+    	res[i] = product
         }
         for product, i:=1, len(nums)-2; i>=0; i-- {
-            product *= nums[i+1]
-            res[i] *= product
+    	product *= nums[i+1]
+    	res[i] *= product
         }
         return res
     }
+

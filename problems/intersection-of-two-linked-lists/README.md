@@ -1,5 +1,5 @@
-# Leetcode: Intersection of Two Linked Lists     :BLOG:Basic:
 
+# Leetcode: Intersection of Two Linked Lists     :BLOG:Basic:
 
 ---
 
@@ -25,7 +25,7 @@ Notes:
 -   You may assume there are no cycles anywhere in the entire linked structure.
 -   Your code should preferably run in O(n) time and use only O(1) memory.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/intersection-of-two-linked-lists)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/intersection-of-two-linked-lists)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)  
 
@@ -47,37 +47,38 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def getIntersectionNode(self, headA, headB):
-            """
-            :type head1, head1: ListNode
-            :rtype: ListNode
-            """
-            p = headA
-            length1 = 0
-            while (p is not None):
-                length1 += 1
-                p = p.next
+    	"""
+    	:type head1, head1: ListNode
+    	:rtype: ListNode
+    	"""
+    	p = headA
+    	length1 = 0
+    	while (p is not None):
+    	    length1 += 1
+    	    p = p.next
     
-            q = headB
-            length2 = 0
-            while (q is not None):
-                length2 += 1
-                q = q.next
+    	q = headB
+    	length2 = 0
+    	while (q is not None):
+    	    length2 += 1
+    	    q = q.next
     
-            p = headA
-            q = headB
-            if length1 > length2:
-                offset = length1 - length2
-                while offset != 0:
-                    p = p.next
-                    offset -= 1
-            else:
-                if length1 < length2:
-                    offset = length2 - length1
-                    while offset != 0:
-                        q = q.next
-                        offset -= 1
-            # check items
-            while (p is not None) and (p != q):
-                p = p.next
-                q = q.next
-            return p
+    	p = headA
+    	q = headB
+    	if length1 > length2:
+    	    offset = length1 - length2
+    	    while offset != 0:
+    		p = p.next
+    		offset -= 1
+    	else:
+    	    if length1 < length2:
+    		offset = length2 - length1
+    		while offset != 0:
+    		    q = q.next
+    		    offset -= 1
+    	# check items
+    	while (p is not None) and (p != q):
+    	    p = p.next
+    	    q = q.next
+    	return p        
+

@@ -1,5 +1,5 @@
-# LintCode: Digital Coverage     :BLOG:Medium:
 
+# LintCode: Digital Coverage     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Digital Coverage
 ---
 
 Similar Problems:  
+
 -   Tag: [#interval](https://code.dennyzhang.com/tag/interval)
 
 ---
@@ -29,7 +30,7 @@ Example
     Explanation:
     3 is covered 3 times.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/digital-coverage)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/digital-coverage)  
 
 Credits To: [lintcode.com](https://www.lintcode.com/problem/digital-coverage/description)  
 
@@ -38,3 +39,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/digital-coverage
+

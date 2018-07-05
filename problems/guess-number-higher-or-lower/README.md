@@ -1,5 +1,5 @@
-# Leetcode: Guess Number Higher or Lower     :BLOG:Amusing:
 
+# Leetcode: Guess Number Higher or Lower     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Guess number quickly
 ---
 
 Similar Problems:  
+
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -30,7 +31,7 @@ Example:
     
     Return 6.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/guess-number-higher-or-lower)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/guess-number-higher-or-lower)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/guess-number-higher-or-lower/description/)  
 
@@ -50,18 +51,19 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def guessNumber(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            left, right = 1, n
-            while left <= right:
-                mid = int(left + (right-left)/2)
-                v = guess(mid)
-                if v == 0:
-                    return mid
-                elif v == 1:
-                    left = mid + 1
-                else:
-                    right = mid - 1
-            return None
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	left, right = 1, n
+    	while left <= right:
+    	    mid = int(left + (right-left)/2)
+    	    v = guess(mid)
+    	    if v == 0:
+    		return mid
+    	    elif v == 1:
+    		left = mid + 1
+    	    else:
+    		right = mid - 1
+    	return None
+

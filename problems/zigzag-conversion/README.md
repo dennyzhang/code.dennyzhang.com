@@ -1,5 +1,5 @@
-# Leetcode: ZigZag Conversion     :BLOG:Medium:
 
+# Leetcode: ZigZag Conversion     :BLOG:Medium:
 
 ---
 
@@ -33,7 +33,7 @@ Background: what is ZigZag. [leetcode.com](https://leetcode.com/problems/zigzag-
     */
     Be careful with nR=1 && nR=2
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/zigzag-conversion)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/zigzag-conversion)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/zigzag-conversion/description/)  
 
@@ -44,8 +44,9 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/zigzag-conversion
     class Solution(object):
         def convert(self, s, numRows):
-            """
-            :type s: str
-            :type numRows: int
-            :rtype: str
-            """
+    	"""
+    	:type s: str
+    	:type numRows: int
+    	:rtype: str
+    	"""
+

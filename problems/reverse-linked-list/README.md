@@ -1,5 +1,5 @@
-# Leetcode: Reverse Linked List     :BLOG:Basic:
 
+# Leetcode: Reverse Linked List     :BLOG:Basic:
 
 ---
 
@@ -14,7 +14,7 @@ click to show more hints.
 Hint:  
 A linked list can be reversed either iteratively or recursively. Could you implement both?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-linked-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-linked-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reverse-linked-list/description/)  
 
@@ -34,23 +34,23 @@ Leave me comments, if you have better ways to solve.
         ##                 def myReverseList(self, head_processed, head_unprocessed)
         ## Complexity: Time O(n), Space O(1)
         def reverseList(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            if head is None or head.next is None:
-                return head
-            p = head.next
-            head.next = None
-            return self.myReverseList(head, p)
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	if head is None or head.next is None:
+    	    return head
+    	p = head.next
+    	head.next = None
+    	return self.myReverseList(head, p)
     
         def myReverseList(self, head_processed, head_unprocessed):
-            if head_unprocessed is None:
-                return head_processed
-            q = head_unprocessed.next
-            # append to the head
-            head_unprocessed.next = head_processed
-            return self.myReverseList(head_unprocessed, q)
+    	if head_unprocessed is None:
+    	    return head_processed
+    	q = head_unprocessed.next
+    	# append to the head
+    	head_unprocessed.next = head_processed
+    	return self.myReverseList(head_unprocessed, q)
     
         ## Blog link: https://code.dennyzhang.com/reverse-linked-list
     ## Basic Ideas: Since the head will be changed, add a dummy node
@@ -58,21 +58,22 @@ Leave me comments, if you have better ways to solve.
         ##              take p and insert to dummyNode.next
         ## Complexity: Time O(n) Space O(1)
         def reverseList_v1(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            # empty or a single node
-            if head is None or head.next is None:
-                return head
-            dummyNode = ListNode(None)
-            dummyNode.next = head
-            p = head.next
-            # Configure the tail of processed list
-            head.next = None
-            while p:
-                q = p.next
-                p.next = dummyNode.next
-                dummyNode.next = p
-                p = q
-            return dummyNode.next
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	# empty or a single node
+    	if head is None or head.next is None:
+    	    return head
+    	dummyNode = ListNode(None)
+    	dummyNode.next = head
+    	p = head.next
+    	# Configure the tail of processed list
+    	head.next = None
+    	while p:
+    	    q = p.next
+    	    p.next = dummyNode.next
+    	    dummyNode.next = p
+    	    p = q
+    	return dummyNode.next
+

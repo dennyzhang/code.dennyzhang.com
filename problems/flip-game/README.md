@@ -1,5 +1,5 @@
-# Leetcode: Flip Game     :BLOG:Basic:
 
+# Leetcode: Flip Game     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Flip Game
 ---
 
 Similar Problems:  
+
 -   [Flip Game II](https://code.dennyzhang.com/flip-game-ii)
 -   [Tag: #string](https://code.dennyzhang.com/tag/string)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
@@ -28,7 +29,7 @@ For example, given s = "<del>++</del>", after one move, it may become one of the
 
 If there is no valid move, return an empty list [].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flip-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flip-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/flip-game/description/)  
 
@@ -41,12 +42,13 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def generatePossibleNextMoves(self, s):
-            """
-            :type s: str
-            :rtype: List[str]
-            """
-            res = []
-            for i in range(1, len(s)):
-                if s[i-1:i+1] == '++':
-                    res.append(s[:i-1] + '--' + s[i+1:])
-            return res
+    	"""
+    	:type s: str
+    	:rtype: List[str]
+    	"""
+    	res = []
+    	for i in range(1, len(s)):
+    	    if s[i-1:i+1] == '++':
+    		res.append(s[:i-1] + '--' + s[i+1:])
+    	return res
+

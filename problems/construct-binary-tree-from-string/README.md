@@ -1,5 +1,5 @@
-# Leetcode: Construct Binary Tree from String     :BLOG:Medium:
 
+# Leetcode: Construct Binary Tree from String     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Construct Binary Tree from String
 ---
 
 Similar Problems:  
+
 -   Tag: [#stack](https://code.dennyzhang.com/tag/stack)
 
 ---
@@ -27,13 +28,14 @@ Example:
          /   \
         2     6
        / \   / 
-      3   1 5
+      3   1 5   
 
 Note:  
+
 1.  There will only be '(', ')', '-' and '0' ~ '9' in the input string.
 2.  An empty tree is represented by "" instead of "()".
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-binary-tree-from-string)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/construct-binary-tree-from-string)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/construct-binary-tree-from-string/description/)  
 
@@ -42,3 +44,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/construct-binary-tree-from-string
+

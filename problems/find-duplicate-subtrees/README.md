@@ -1,5 +1,5 @@
-# Leetcode: Find Duplicate Subtrees     :BLOG:Basic:
 
+# Leetcode: Find Duplicate Subtrees     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Find Duplicate Subtrees
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -38,7 +39,7 @@ and
 
 Therefore, you need to return above trees' root in the form of a list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-duplicate-subtrees)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-duplicate-subtrees)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-duplicate-subtrees/description/)  
 
@@ -47,3 +48,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/find-duplicate-subtrees
+

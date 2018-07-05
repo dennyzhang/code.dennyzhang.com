@@ -1,5 +1,5 @@
-# Leetcode: Subarray Product Less Than K     :BLOG:Medium:
 
+# Leetcode: Subarray Product Less Than K     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Subarray Product Less Than K
 ---
 
 Similar Problems:  
+
 -   [Minimum Size Subarray Sum](https://code.dennyzhang.com/minimum-size-subarray-sum)
 -   [Subarray Sum Equals K](https://code.dennyzhang.com/subarray-sum-equals-k)
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
@@ -31,7 +32,7 @@ Note:
 -   0 < nums[i] < 1000.
 -   0 <= k < 10^6.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/subarray-product-less-than-k)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/subarray-product-less-than-k)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/subarray-product-less-than-k/description/)  
 
@@ -51,24 +52,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution:
         def numSubarrayProductLessThanK(self, nums, k):
-            """
-            :type nums: List[int]
-            :type k: int
-            :rtype: int
-            """
-            length = len(nums)
-            if length == 0: return 0
-            res = 0
-            left, curProduct = 0, 1
-            for right in range(0, length):
-                curProduct *= nums[right]
-                # keep moving the left, if it's too big
-                while left <= right and curProduct >= k:
-                    curProduct = int(curProduct/nums[left])
-                    left += 1 
+    	"""
+    	:type nums: List[int]
+    	:type k: int
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	if length == 0: return 0
+    	res = 0
+    	left, curProduct = 0, 1
+    	for right in range(0, length):
+    	    curProduct *= nums[right]
+    	    # keep moving the left, if it's too big
+    	    while left <= right and curProduct >= k:
+    		curProduct = int(curProduct/nums[left])
+    		left += 1 
     
-                # print(left, right, curProduct)
-                if curProduct < k:
-                    # get all the possilities with nums[right] chosen
-                    res += right-left+1
-            return res
+    	    # print(left, right, curProduct)
+    	    if curProduct < k:
+    		# get all the possilities with nums[right] chosen
+    		res += right-left+1
+    	return res
+

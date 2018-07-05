@@ -1,5 +1,5 @@
-# Leetcode: Text Justification     :BLOG:Hard:
 
+# Leetcode: Text Justification     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Text Justification
 ---
 
 Similar Problems:  
+
 -   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -35,7 +36,7 @@ Return the formatted lines as:
 
 Note: Each word is guaranteed not to exceed L in length.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/text-justification)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/text-justification)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/text-justification/description/)  
 
@@ -47,3 +48,4 @@ Leave me comments, if you have better ways to solve.
     func fullJustify(words []string, maxWidth int) []string {
     
     }
+

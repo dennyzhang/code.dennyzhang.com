@@ -1,5 +1,5 @@
-# Leetcode: Find Largest Value in Each Tree Row     :BLOG:Basic:
 
+# Leetcode: Find Largest Value in Each Tree Row     :BLOG:Basic:
 
 ---
 
@@ -20,7 +20,7 @@ You need to find the largest value in each row of a binary tree.
     
     Output: [1, 3, 9]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-largest-value-in-each-tree-row)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-largest-value-in-each-tree-row)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)  
 
@@ -38,29 +38,30 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def largestValues(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
-            ## Ideas: BFS
-            ## Complexity
-            if root is None:
-                return []
-            res = []
-            queue = []
-            queue.append(root)
-            while len(queue) != 0:
-                length = len(queue)
-                max_value = queue[0].val
-                for i in range(1, length):
-                    if queue[i].val > max_value:
-                        max_value = queue[i].val
-                res.append(max_value)
-                for i in range(0, length):
-                    element = queue[0]
-                    del queue[0]
-                    if element.left:
-                        queue.append(element.left)
-                    if element.right:
-                        queue.append(element.right)
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
+    	## Ideas: BFS
+    	## Complexity
+    	if root is None:
+    	    return []
+    	res = []
+    	queue = []
+    	queue.append(root)
+    	while len(queue) != 0:
+    	    length = len(queue)
+    	    max_value = queue[0].val
+    	    for i in range(1, length):
+    		if queue[i].val > max_value:
+    		    max_value = queue[i].val
+    	    res.append(max_value)
+    	    for i in range(0, length):
+    		element = queue[0]
+    		del queue[0]
+    		if element.left:
+    		    queue.append(element.left)
+    		if element.right:
+    		    queue.append(element.right)
+    	return res
+

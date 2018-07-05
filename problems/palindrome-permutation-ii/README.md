@@ -1,5 +1,5 @@
-# Leetcode: Palindrome Permutation II     :BLOG:Medium:
 
+# Leetcode: Palindrome Permutation II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Palindrome Permutation II
 ---
 
 Similar Problems:  
+
 -   [Letter Case Permutation](https://code.dennyzhang.com/letter-case-permutation)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
@@ -21,7 +22,7 @@ For example:
     
     Given s = "abc", return [].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/palindrome-permutation-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/palindrome-permutation-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/palindrome-permutation-ii/description/)  
 
@@ -30,3 +31,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/palindrome-permutation-ii
+

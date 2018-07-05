@@ -1,5 +1,5 @@
-# Leetcode: Can I Win     :BLOG:Medium:
 
+# Leetcode: Can I Win     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Can I Win
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   Tag: [#game](https://code.dennyzhang.com/tag/game), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
@@ -40,7 +41,7 @@ You can always assume that maxChoosableInteger will not be larger than 20 and de
     The second player will win by choosing 10 and get a total = 11, which is >= desiredTotal.
     Same with other integers chosen by the first player, the second player will always win.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/can-i-win)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/can-i-win)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/can-i-win/description/)  
 
@@ -49,3 +50,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/can-i-win
+

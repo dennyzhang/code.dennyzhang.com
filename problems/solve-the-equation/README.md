@@ -1,5 +1,5 @@
-# Leetcode: Solve the Equation     :BLOG:Medium:
 
+# Leetcode: Solve the Equation     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Solve the Equation
 ---
 
 Similar Problems:  
+
 -   [Fraction Addition and Subtraction](https://code.dennyzhang.com/fraction-addition-and-subtraction)
 -   [Expressive Words](https://code.dennyzhang.com/expressive-words)
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
@@ -49,7 +50,7 @@ Example 5:
     Input: "x=x+2"
     Output: "No solution"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/solve-the-equation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/solve-the-equation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/solve-the-equation/description/)  
 
@@ -68,69 +69,70 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def solveEquation(self, equation):
-            """
-            :type equation: str
-            :rtype: str
-            """
-            queue = []
-            reverse = False
-            myStr, sign = '', ''
-            for ch in equation:
-                if ch == '=': 
-                    # add previous item
-                    queue.append("%s%s" % ('-' if sign == '-' else '', myStr))
-                    myStr, sign = '', ''
+    	"""
+    	:type equation: str
+    	:rtype: str
+    	"""
+    	queue = []
+    	reverse = False
+    	myStr, sign = '', ''
+    	for ch in equation:
+    	    if ch == '=': 
+    		# add previous item
+    		queue.append("%s%s" % ('-' if sign == '-' else '', myStr))
+    		myStr, sign = '', ''
     
-                    reverse = True
-                    continue
+    		reverse = True
+    		continue
     
-                if ch in '+-':
-                    if myStr == '':
-                        if (ch == '-' and reverse is False) or \
-                            (ch == '+' and reverse is True):
-                            sign = '-'
-                        else:
-                            sign = '+'
-                        continue
-                    # add previous item
-                    if sign == '' and reverse is True: sign = '-'
-                    queue.append("%s%s" % ('-' if sign == '-' else '', myStr))
+    	    if ch in '+-':
+    		if myStr == '':
+    		    if (ch == '-' and reverse is False) or \
+    			(ch == '+' and reverse is True):
+    			sign = '-'
+    		    else:
+    			sign = '+'
+    		    continue
+    		# add previous item
+    		if sign == '' and reverse is True: sign = '-'
+    		queue.append("%s%s" % ('-' if sign == '-' else '', myStr))
     
-                    # get new item
-                    myStr, sign = '', ''
-                    if (ch == '-' and reverse is False) or \
-                        (ch == '+' and reverse is True):
-                        sign = '-'
-                    else:
-                        sign = '+'
-                    continue
-                myStr += ch
+    		# get new item
+    		myStr, sign = '', ''
+    		if (ch == '-' and reverse is False) or \
+    		    (ch == '+' and reverse is True):
+    		    sign = '-'
+    		else:
+    		    sign = '+'
+    		continue
+    	    myStr += ch
     
-            if myStr != '': 
-                if sign == '' and reverse is True: sign = '-'
-                queue.append("%s%s" % ('-' if sign == '-' else '', myStr))
+    	if myStr != '': 
+    	    if sign == '' and reverse is True: sign = '-'
+    	    queue.append("%s%s" % ('-' if sign == '-' else '', myStr))
     
-            # print(queue)
-            x, v = 0, 0
-            for item in queue:
-                if item[-1] == 'x':
-                    if item == '-x':
-                        x -= 1
-                    elif item == 'x':
-                        x += 1
-                    else:
-                        x += int(item[0:-1])
-                else:
-                    v += int(item)
-            v = -v
-            if x == 0:
-                if v != 0: return "No solution"
-                else: return "Infinite solutions"
-            else:
-                return "x=%d" % (int(v/x))
+    	# print(queue)
+    	x, v = 0, 0
+    	for item in queue:
+    	    if item[-1] == 'x':
+    		if item == '-x':
+    		    x -= 1
+    		elif item == 'x':
+    		    x += 1
+    		else:
+    		    x += int(item[0:-1])
+    	    else:
+    		v += int(item)
+    	v = -v
+    	if x == 0:
+    	    if v != 0: return "No solution"
+    	    else: return "Infinite solutions"
+    	else:
+    	    return "x=%d" % (int(v/x))
     
     # s = Solution()
     # print(s.solveEquation("-x=-1")) # x=1
     # print(s.solveEquation("2x+3x-6x=x+2")) # x=-1
     # print(s.solveEquation("x=x+2")) # "No solution"
     # print(s.solveEquation("x=x")) # "Infinite solutions"
+

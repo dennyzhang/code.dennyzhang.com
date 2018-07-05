@@ -1,5 +1,5 @@
-# Leetcode: Remove Nth Node From End of List     :BLOG:Basic:
 
+# Leetcode: Remove Nth Node From End of List     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Remove Nth Node From End of List
 ---
 
 Similar Problems:  
+
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer), [Tag: #twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
@@ -21,10 +22,11 @@ Given linked list: 1->2->3->4->5, and n = 2.
 After removing the second node from the end, the linked list becomes 1->2->3->5.  
 
 Note:  
+
 -   Given n will always be valid.
 -   Try to do this in one pass.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-nth-node-from-end-of-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-nth-node-from-end-of-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)  
 
@@ -49,18 +51,19 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def removeNthFromEnd(self, head, n):
-            """
-            :type head: ListNode
-            :type n: int
-            :rtype: ListNode
-            """
-            dummyNode = ListNode(None)
-            dummyNode.next = head
-            p, q = dummyNode, dummyNode
-            for i in xrange(n+1):
-                q = q.next
-            while q:
-                p = p.next
-                q = q.next
-            p.next = p.next.next
-            return dummyNode.next
+    	"""
+    	:type head: ListNode
+    	:type n: int
+    	:rtype: ListNode
+    	"""
+    	dummyNode = ListNode(None)
+    	dummyNode.next = head
+    	p, q = dummyNode, dummyNode
+    	for i in xrange(n+1):
+    	    q = q.next
+    	while q:
+    	    p = p.next
+    	    q = q.next
+    	p.next = p.next.next
+    	return dummyNode.next
+

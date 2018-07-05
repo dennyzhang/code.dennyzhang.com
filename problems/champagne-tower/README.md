@@ -41,7 +41,7 @@ Note:
 -   poured will be in the range of [0, 10 ^ 9].
 -   query\_glass and query\_row will be in the range of [0, 99].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/champagne-tower)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/champagne-tower)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/champagne-tower/description/)  
 

@@ -1,5 +1,5 @@
-# Leetcode: Binary Trees With Factors     :BLOG:Basic:
 
+# Leetcode: Binary Trees With Factors     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Binary Trees With Factors
 ---
 
 Similar Problems:  
+
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -37,7 +38,7 @@ Note:
 -   1 <= A.length <= 1000.
 -   2 <= A[i] <= 10 ^ 9.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-trees-with-factors)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-trees-with-factors)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-trees-with-factors/description/)  
 
@@ -46,3 +47,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/binary-trees-with-factors
+

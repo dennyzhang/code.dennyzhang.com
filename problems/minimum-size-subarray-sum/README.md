@@ -1,5 +1,5 @@
-# Leetcode: Minimum Size Subarray Sum     :BLOG:Medium:
 
+# Leetcode: Minimum Size Subarray Sum     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Size Subarray Sum
 ---
 
 Similar Problems:  
+
 -   [Subarray Product Less Than K](https://code.dennyzhang.com/subarray-product-less-than-k)
 -   [Two Sum](https://code.dennyzhang.com/two-sum)
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer)
@@ -24,7 +25,7 @@ the subarray [4,3] has the minimal length under the problem constraint.
 More practice:  
 If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n).  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-size-subarray-sum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-size-subarray-sum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-size-subarray-sum/description/)  
 
@@ -43,24 +44,25 @@ Leave me comments, if you have better ways to solve.
     import sys
     class Solution:
         def minSubArrayLen(self, s, nums):
-            """
-            :type s: int
-            :type nums: List[int]
-            :rtype: int
-            """
-            length = len(nums)
-            if length == 0: return 0
+    	"""
+    	:type s: int
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	if length == 0: return 0
     
-            min_length = sys.maxsize
-            left, sum_v = 0, 0
+    	min_length = sys.maxsize
+    	left, sum_v = 0, 0
     
-            # always move right by 1 step
-            for right in range(0, length):
-                sum_v += nums[right]
-                while sum_v >=s:
-                    min_length = min(min_length, right-left+1)
-                    # left won't pass right. Why? Because s>0
-                    sum_v -= nums[left]
-                    left += 1
+    	# always move right by 1 step
+    	for right in range(0, length):
+    	    sum_v += nums[right]
+    	    while sum_v >=s:
+    		min_length = min(min_length, right-left+1)
+    		# left won't pass right. Why? Because s>0
+    		sum_v -= nums[left]
+    		left += 1
     
-            return min_length if min_length != sys.maxsize else 0
+    	return min_length if min_length != sys.maxsize else 0
+

@@ -1,5 +1,5 @@
-# LintCode: Calculate Maximum Value II     :BLOG:Hard:
 
+# LintCode: Calculate Maximum Value II     :BLOG:Hard:
 
 ---
 
@@ -17,7 +17,7 @@ Example
     Given str = 891, return 80
     As 8 * (9 + 1) = 80, so 80 is maximum.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/calculate-maximum-value-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/calculate-maximum-value-ii)  
 
 Credits To: [LintCode.com](http://www.lintcode.com/en/problem/calculate-maximum-value-ii/)  
 
@@ -32,3 +32,4 @@ Leave me comments, if you have better ways to solve.
         @return: the maximum value
         """
         def maxValue(self, str):
+

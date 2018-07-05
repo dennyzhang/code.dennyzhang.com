@@ -1,5 +1,5 @@
-# Leetcode: Path Sum II     :BLOG:Medium:
 
+# Leetcode: Path Sum II     :BLOG:Medium:
 
 ---
 
@@ -24,7 +24,7 @@ Given a binary tree and a sum, find all root-to-leaf paths where each path's sum
        [5,8,4,5]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/path-sum-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/path-sum-ii/description/)  
 
@@ -42,30 +42,31 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def pathSum(self, root, sum):
-            """
-            :type root: TreeNode
-            :type sum: int
-            :rtype: List[List[int]]
-            """
-            ## Idea: Use DFS recursive
-            ## Complexity: Time O(n), Space O(log(n)*k). k is width of the tree
-            if root is None:
-                return []
-            if root.left is None and root.right is None:
-                if root.val == sum:
-                    return [[root.val]]
-                else:
-                    return []
+    	"""
+    	:type root: TreeNode
+    	:type sum: int
+    	:rtype: List[List[int]]
+    	"""
+    	## Idea: Use DFS recursive
+    	## Complexity: Time O(n), Space O(log(n)*k). k is width of the tree
+    	if root is None:
+    	    return []
+    	if root.left is None and root.right is None:
+    	    if root.val == sum:
+    		return [[root.val]]
+    	    else:
+    		return []
     
-            res = []
-            if root.left:
-                list_value = self.pathSum(root.left, sum - root.val)
-                for value in list_value:
-                    value.insert(0, root.val)
-                    res.append(value)
-            if root.right:
-                list_value = self.pathSum(root.right, sum - root.val)
-                for value in list_value:
-                    value.insert(0, root.val)
-                    res.append(value)
-            return res
+    	res = []
+    	if root.left:
+    	    list_value = self.pathSum(root.left, sum - root.val)
+    	    for value in list_value:
+    		value.insert(0, root.val)
+    		res.append(value)
+    	if root.right:
+    	    list_value = self.pathSum(root.right, sum - root.val)
+    	    for value in list_value:
+    		value.insert(0, root.val)
+    		res.append(value)
+    	return res
+

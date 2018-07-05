@@ -1,5 +1,5 @@
-# Leetcode: Plus One Linked List     :BLOG:Basic:
 
+# Leetcode: Plus One Linked List     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Plus One Linked List
 ---
 
 Similar Problems:  
+
 -   [Reverse Linked List](https://code.dennyzhang.com/reverse-linked-list)
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
@@ -28,7 +29,7 @@ Example:
     Output:
     1->2->4
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/plus-one-linked-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/plus-one-linked-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/plus-one-linked-list/description/)  
 
@@ -48,37 +49,38 @@ Leave me comments, if you have better ways to solve.
     
     class Solution:
         def plusOne(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            newHead = self.reverseLinkedList(head)
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	newHead = self.reverseLinkedList(head)
     
-            p, has_carry = newHead, True
-            while has_carry:
-                p.val += 1
-                if p.val >= 10:
-                    p.val = p.val % 10
-                    has_carry = True
-                else:
-                    has_carry = False
-                # add one more node, if required
-                if has_carry and p.next is None:
-                    p.next = ListNode(0)
-                p = p.next
+    	p, has_carry = newHead, True
+    	while has_carry:
+    	    p.val += 1
+    	    if p.val >= 10:
+    		p.val = p.val % 10
+    		has_carry = True
+    	    else:
+    		has_carry = False
+    	    # add one more node, if required
+    	    if has_carry and p.next is None:
+    		p.next = ListNode(0)
+    	    p = p.next
     
-            return self.reverseLinkedList(newHead)
+    	return self.reverseLinkedList(newHead)
     
         def reverseLinkedList(self, head):
-            if head is None: return None
-            if head.next is None: return head
-            dummyNode = ListNode(None)
-            dummyNode.next = head
-            p = head.next
-            head.next = None
-            while p:
-                q = p.next
-                p.next = dummyNode.next
-                dummyNode.next = p
-                p = q
-            return dummyNode.next
+    	if head is None: return None
+    	if head.next is None: return head
+    	dummyNode = ListNode(None)
+    	dummyNode.next = head
+    	p = head.next
+    	head.next = None
+    	while p:
+    	    q = p.next
+    	    p.next = dummyNode.next
+    	    dummyNode.next = p
+    	    p = q
+    	return dummyNode.next
+

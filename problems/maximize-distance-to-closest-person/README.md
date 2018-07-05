@@ -1,5 +1,5 @@
-# Leetcode: Maximize Distance to Closest Person     :BLOG:Basic:
 
+# Leetcode: Maximize Distance to Closest Person     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Maximize Distance to Closest Person
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/tag/arrary)
 
 ---
@@ -42,7 +43,7 @@ Note:
 1.  1 <= seats.length <= 20000
 2.  seats contains only 0s or 1s, at least one 0, and at least one 1.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximize-distance-to-closest-person)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximize-distance-to-closest-person)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/maximize-distance-to-closest-person/description/)  
 
@@ -61,21 +62,22 @@ Leave me comments, if you have better ways to solve.
         res := 0
         i, count, candidate := 0, 0, 0
         for i<len(seats) {
-            if seats[i] == 1 {
-                i++
-                continue
-            }
-            count = 0
-            for i<len(seats) && seats[i] == 0 {
-                i, count = i+1, count+1
-            }
-            // first group or last group
-            if i-count == 0 || i==len(seats) {
-                candidate = count
-            } else {
-                candidate = (count+1)/2
-            }
-            if candidate>res { res = candidate }
+    	if seats[i] == 1 {
+    	    i++
+    	    continue
+    	}
+    	count = 0
+    	for i<len(seats) && seats[i] == 0 {
+    	    i, count = i+1, count+1
+    	}
+    	// first group or last group
+    	if i-count == 0 || i==len(seats) {
+    	    candidate = count
+    	} else {
+    	    candidate = (count+1)/2
+    	}
+    	if candidate>res { res = candidate }
         }
         return res
     }
+

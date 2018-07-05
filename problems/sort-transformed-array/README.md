@@ -1,5 +1,5 @@
-# Leetcode: Sort Transformed Array     :BLOG:Medium:
 
+# Leetcode: Sort Transformed Array     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Sort Transformed Array
 ---
 
 Similar Problems:  
+
 -   [Split Array With Same Average](https://code.dennyzhang.com/split-array-with-same-average)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
@@ -29,7 +30,7 @@ Example:
     
     Result: [-23, -5, 1, 7]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-transformed-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sort-transformed-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sort-transformed-array/description/)  
 
@@ -54,27 +55,28 @@ Leave me comments, if you have better ways to solve.
         res := make([]int, len(nums))
         l, r := 0, len(nums)-1
         for l<=r {
-            if a>=0 {
-                // We know the maximum first
-                if nums2[l]>nums2[r] {
-                    res[index] = nums2[l]
-                    l++
-                } else {
-                    res[index] = nums2[r]
-                    r--
-                }
-                index--
-            } else {
-                // We know the minimum first
-                if nums2[l]<nums2[r] {
-                    res[index] = nums2[l]
-                    l++
-                } else {
-                    res[index] = nums2[r]
-                    r--
-                }
-                index++
-            }
+    	if a>=0 {
+    	    // We know the maximum first
+    	    if nums2[l]>nums2[r] {
+    		res[index] = nums2[l]
+    		l++
+    	    } else {
+    		res[index] = nums2[r]
+    		r--
+    	    }
+    	    index--
+    	} else {
+    	    // We know the minimum first
+    	    if nums2[l]<nums2[r] {
+    		res[index] = nums2[l]
+    		l++
+    	    } else {
+    		res[index] = nums2[r]
+    		r--
+    	    }
+    	    index++
+    	}
         }
         return res
     }
+

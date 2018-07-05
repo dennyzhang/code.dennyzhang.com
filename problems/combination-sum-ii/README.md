@@ -1,5 +1,5 @@
-# Leetcode: Combination Sum II     :BLOG:Hard:
 
+# Leetcode: Combination Sum II     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Combination
 ---
 
 Similar Problems:  
+
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 
 ---
@@ -17,6 +18,7 @@ Given a collection of candidate numbers (C) and a target number (T), find all un
 Each number in C may only be used once in the combination.  
 
 Note:  
+
 -   All numbers (including target) will be positive integers.
 -   The solution set must not contain duplicate combinations.
 
@@ -29,7 +31,7 @@ Note:
       [1, 1, 6]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combination-sum-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/combination-sum-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/combination-sum-ii/description/)  
 
@@ -43,24 +45,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*n), Space O(n)
     class Solution:
         def combinationSum2(self, candidates, target):
-            """
-            :type candidates: List[int]
-            :type target: int
-            :rtype: List[List[int]]
-            """
-            if len(candidates) == 0: return []
-            candidates = sorted(candidates)
-            length = len(candidates)
-            res = []
-            for i in range(length):
-                if candidates[i] > target: continue
-                if candidates[i] == target:
-                    if [target] not in res: res.append([target])
-                    continue
-                # try to start the result with candidates[i]
-                l = self.combinationSum2(candidates[i+1:], target - candidates[i])
-                for element in l:
-                    if not [candidates[i]]+element in res:
-                        res.append([candidates[i]]+element)
+    	"""
+    	:type candidates: List[int]
+    	:type target: int
+    	:rtype: List[List[int]]
+    	"""
+    	if len(candidates) == 0: return []
+    	candidates = sorted(candidates)
+    	length = len(candidates)
+    	res = []
+    	for i in range(length):
+    	    if candidates[i] > target: continue
+    	    if candidates[i] == target:
+    		if [target] not in res: res.append([target])
+    		continue
+    	    # try to start the result with candidates[i]
+    	    l = self.combinationSum2(candidates[i+1:], target - candidates[i])
+    	    for element in l:
+    		if not [candidates[i]]+element in res:
+    		    res.append([candidates[i]]+element)
     
-            return res
+    	return res
+

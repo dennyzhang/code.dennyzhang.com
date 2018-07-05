@@ -1,5 +1,5 @@
-# Leetcode: Domino and Tromino Tiling     :BLOG:Medium:
 
+# Leetcode: Domino and Tromino Tiling     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Domino and Tromino Tiling
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   [Review: mod Problems](https://code.dennyzhang.com/review-mod)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#mod](https://code.dennyzhang.com/tag/mod), [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
@@ -38,7 +39,7 @@ Note:
 
 N  will be in range [1, 1000].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/domino-and-tromino-tiling)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/domino-and-tromino-tiling)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/domino-and-tromino-tiling/description/)  
 
@@ -52,24 +53,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def numTilings(self, N):
-            """
-            :type N: int
-            :rtype: int
-            """
-            if N==1: return 1
-            if N==2: return 2
-            if N==3: return 5
-            mod_num = pow(10, 9)+7
-            v3,v2,v1 = 5,2,1
-            sum_v=4
+    	"""
+    	:type N: int
+    	:rtype: int
+    	"""
+    	if N==1: return 1
+    	if N==2: return 2
+    	if N==3: return 5
+    	mod_num = pow(10, 9)+7
+    	v3,v2,v1 = 5,2,1
+    	sum_v=4
     
-            for i in range(4, N+1):
-                v = (v3+v2+sum_v) % mod_num
-                v3,v2,v1 = v,v3,v2
-                sum_v=sum_v+v1*2
-            return v3
+    	for i in range(4, N+1):
+    	    v = (v3+v2+sum_v) % mod_num
+    	    v3,v2,v1 = v,v3,v2
+    	    sum_v=sum_v+v1*2
+    	return v3
     
     # s = Solution()
     # print(s.numTilings(4)) # 11
     # print(s.numTilings(5)) # 24
     # print(s.numTilings(6)) # 53
+

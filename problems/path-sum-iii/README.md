@@ -1,5 +1,5 @@
-# Leetcode: Path Sum III     :BLOG:Amusing:
 
+# Leetcode: Path Sum III     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Path Sum III
 ---
 
 Similar Problems:  
+
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive)
 -   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive), [#pathsum](https://code.dennyzhang.com/tag/pathsum), [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -39,7 +40,7 @@ The tree has no more than 1,000 nodes and the values are in the range -1,000,000
     2.  5 -> 2 -> 1
     3. -3 -> 11
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/path-sum-iii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/path-sum-iii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/path-sum-iii/description/)  
 
@@ -72,3 +73,4 @@ Leave me comments, if you have better ways to solve.
         if root == nil { return 0 }
         return pathSumFrom(root, sum) + pathSum(root.Left, sum) + pathSum(root.Right, sum)
     }
+

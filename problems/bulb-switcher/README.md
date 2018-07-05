@@ -1,5 +1,5 @@
-# Leetcode: Bulb Switcher     :BLOG:Medium:
 
+# Leetcode: Bulb Switcher     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Bulb Switcher
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
 -   Tag: [math](https://code.dennyzhang.com/tag/math), [sqrt](https://code.dennyzhang.com/tag/sqrt)
@@ -23,11 +24,11 @@ Example:
     At first, the three bulbs are [off, off, off].
     After first round, the three bulbs are [on, on, on].
     After second round, the three bulbs are [on, off, on].
-    After third round, the three bulbs are [on, off, off].
+    After third round, the three bulbs are [on, off, off]. 
 
 So you should return 1, because there is only one bulb is on.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bulb-switcher)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bulb-switcher)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/bulb-switcher/description/)  
 
@@ -61,8 +62,9 @@ Leave me comments, if you have better ways to solve.
     import math
     class Solution:
         def bulbSwitch(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            return int(math.sqrt(n))
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	return int(math.sqrt(n))
+

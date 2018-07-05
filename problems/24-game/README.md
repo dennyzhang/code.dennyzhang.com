@@ -1,5 +1,5 @@
-# Leetcode: 24 Game     :BLOG:Hard:
 
+# Leetcode: 24 Game     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@
 ---
 
 Similar Problems:  
+
 -   Tag: [#recursive](https://code.dennyzhang.com/tag/recursive), [#game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -26,11 +27,12 @@ Example 2:
     Output: False
 
 Note:  
+
 1.  The division operator / represents real division, not integer division. For example, 4 / (1 - 2/3) = 12.
 2.  Every operation done is between two numbers. In particular, we cannot use - as a unary operator. For example, with [1, 1, 1, 1] as input, the expression -1 - 1 - 1 - 1 is not allowed.
 3.  You cannot concatenate numbers together. For example, if the input is [1, 2, 1, 2], we cannot write this as 12 + 12.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/24-game)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/24-game)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/24-game/description/)  
 
@@ -42,12 +44,15 @@ Leave me comments, if you have better ways to solve.
 
 **General Thinkings:**  
 
+    
 
 **Key Observations:**  
 
+    
 
 **Walk Through Testdata**  
 
+    
 
     // Blog link: https://code.dennyzhang.com/24-game
     // Basic Ideas:
@@ -60,37 +65,37 @@ Leave me comments, if you have better ways to solve.
         //fmt.Println(nums)
         if len(nums) == 0 { return false }
         if len(nums) == 1 {
-            diff := nums[0] - 24
-            if diff<0 { diff = -diff }
-            if diff<0.0001 { return true }
-            return false
+    	diff := nums[0] - 24
+    	if diff<0 { diff = -diff }
+    	if diff<0.0001 { return true }
+    	return false
         }
         for i:= 0; i<len(nums); i++ {
-            for j:=0; j<len(nums); j++ {
-                if j==i { continue }
-                items := []float32{}
-                for k:=0; k<len(nums); k++ {
-                    if (k!=i && k!=j) {
-                        items = append(items, nums[k])
-                    }
-                }
-                // fmt.Println(nums, items)
-                if caculateList(append(items, nums[i]+nums[j])) {
-                    return true
-                }
-                if caculateList(append(items, nums[i]-nums[j])) {
-                    return true
-                }
-                if caculateList(append(items, nums[i]*nums[j])) {
-                    return true
-                }
-                if nums[j] != 0 {
-                    if caculateList(append(items, nums[i]/nums[j])) {
-                        return true
-                    }
-                }
-                //fmt.Println(nums, items)
-            }
+    	for j:=0; j<len(nums); j++ {
+    	    if j==i { continue }
+    	    items := []float32{}
+    	    for k:=0; k<len(nums); k++ {
+    		if (k!=i && k!=j) {
+    		    items = append(items, nums[k])
+    		}
+    	    }
+    	    // fmt.Println(nums, items)
+    	    if caculateList(append(items, nums[i]+nums[j])) {
+    		return true
+    	    }
+    	    if caculateList(append(items, nums[i]-nums[j])) {
+    		return true
+    	    }
+    	    if caculateList(append(items, nums[i]*nums[j])) {
+    		return true
+    	    }
+    	    if nums[j] != 0 {
+    		if caculateList(append(items, nums[i]/nums[j])) {
+    		    return true
+    		}
+    	    }
+    	    //fmt.Println(nums, items)
+    	}
         }
         return false
     }
@@ -98,7 +103,8 @@ Leave me comments, if you have better ways to solve.
     func judgePoint24(nums []int) bool {
         l := []float32{}
         for _, num := range nums {
-            l = append(l, float32(num))
+    	l = append(l, float32(num))
         }
         return caculateList(l)
     }
+

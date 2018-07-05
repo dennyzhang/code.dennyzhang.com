@@ -1,5 +1,5 @@
-# Leetcode: Sliding Window Maximum     :BLOG:Basic:
 
+# Leetcode: Sliding Window Maximum     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Sliding Window Maximum
 ---
 
 Similar Problems:  
+
 -   [Min Stack](https://code.dennyzhang.com/min-stack)
 -   [Review: Monotone Stack Or Monotone Queue Problems](https://code.dennyzhang.com/review-monotone), Tag: [monotone](https://code.dennyzhang.com/tag/monotone)
 
@@ -35,7 +36,7 @@ You may assume k is always valid, ie: 1 <= k <= input array's size for non-empty
 Follow up:  
 Could you solve it in linear time?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sliding-window-maximum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sliding-window-maximum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sliding-window-maximum/description/)  
 
@@ -51,26 +52,27 @@ Useful link: [monotonic queue problem](https://leetcode.com/problems/sliding-win
     ## Complexity: Time O(n), Space O(k)
     class Solution:
         def maxSlidingWindow(self, nums, k):
-            """
-            :type nums: List[int]
-            :type k: int
-            :rtype: List[int]
-            """
-            import collections
-            res = []
-            queue = collections.deque()
-            for i in range(len(nums)):
-                # remove the number
-                if len(queue)!=0 and queue[0] == i-k:
-                    queue.popleft()
+    	"""
+    	:type nums: List[int]
+    	:type k: int
+    	:rtype: List[int]
+    	"""
+    	import collections
+    	res = []
+    	queue = collections.deque()
+    	for i in range(len(nums)):
+    	    # remove the number
+    	    if len(queue)!=0 and queue[0] == i-k:
+    		queue.popleft()
     
-                # keep the window decreasing
-                while len(queue) != 0 and nums[i] >= nums[queue[-1]]:
-                    queue.pop()
+    	    # keep the window decreasing
+    	    while len(queue) != 0 and nums[i] >= nums[queue[-1]]:
+    		queue.pop()
     
-                # we need to add the new number in all cases
-                queue.append(i)
+    	    # we need to add the new number in all cases
+    	    queue.append(i)
     
-                # already have k numbers
-                if i >= k-1: res.append(nums[queue[0]])
-            return res
+    	    # already have k numbers
+    	    if i >= k-1: res.append(nums[queue[0]])
+    	return res
+

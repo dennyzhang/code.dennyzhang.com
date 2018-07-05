@@ -1,5 +1,5 @@
-# Leetcode: Surrounded Regions     :BLOG:Medium:
 
+# Leetcode: Surrounded Regions     :BLOG:Medium:
 
 ---
 
@@ -23,7 +23,7 @@ A region is captured by flipping all 'O's into 'X's in that surrounded region.
     X X X X
     X O X X
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/surrounded-regions)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/surrounded-regions)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/surrounded-regions/description/)  
 
@@ -51,63 +51,64 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*m), Space O(1)
     class Solution(object):
         def solve(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: void Do not return anything, modify board in-place instead.
-            """
-            self.row_count = len(board)
-            if self.row_count == 0: return
-            self.col_count = len(board[0])
+    	"""
+    	:type board: List[List[str]]
+    	:rtype: void Do not return anything, modify board in-place instead.
+    	"""
+    	self.row_count = len(board)
+    	if self.row_count == 0: return
+    	self.col_count = len(board[0])
     
-            # mark 'O' on boarders to 'Y'
-            for i in [0, self.row_count-1]:
-                for j in xrange(self.col_count):
-                    if board[i][j] == 'O': board[i][j] = 'Y'
+    	# mark 'O' on boarders to 'Y'
+    	for i in [0, self.row_count-1]:
+    	    for j in xrange(self.col_count):
+    		if board[i][j] == 'O': board[i][j] = 'Y'
     
-            for i in xrange(self.row_count):
-                for j in [0, self.col_count-1]:
-                    if board[i][j] == 'O': board[i][j] = 'Y'
+    	for i in xrange(self.row_count):
+    	    for j in [0, self.col_count-1]:
+    		if board[i][j] == 'O': board[i][j] = 'Y'
     
-            # print board
-            # mark nodes
-            for i in xrange(self.row_count):
-                for j in xrange(self.col_count):
-                    if board[i][j] == 'O':
-                        self.DFSMark(board, i, j)
+    	# print board
+    	# mark nodes
+    	for i in xrange(self.row_count):
+    	    for j in xrange(self.col_count):
+    		if board[i][j] == 'O':
+    		    self.DFSMark(board, i, j)
     
-            # print board
-            # change 'O' to 'X', change 'Y' to 'O'
-            for i in xrange(self.row_count):
-                for j in xrange(self.col_count):
-                    if board[i][j] == 'O': board[i][j] = 'X'
-                    if board[i][j] == 'Y': board[i][j] = 'O'
+    	# print board
+    	# change 'O' to 'X', change 'Y' to 'O'
+    	for i in xrange(self.row_count):
+    	    for j in xrange(self.col_count):
+    		if board[i][j] == 'O': board[i][j] = 'X'
+    		if board[i][j] == 'Y': board[i][j] = 'O'
     
         def DFSMark(self, board, i, j):
-            # out of bound
-            if i < 0 or i >= self.row_count or \
-                j < 0 or j >= self.col_count:
-                    return
+    	# out of bound
+    	if i < 0 or i >= self.row_count or \
+    	    j < 0 or j >= self.col_count:
+    		return
     
-            # If the element is 'Y', we won't keep going neither.
-            # This will save duplicate caculation
-            if board[i][j] != 'O':
-                return
+    	# If the element is 'Y', we won't keep going neither.
+    	# This will save duplicate caculation
+    	if board[i][j] != 'O':
+    	    return
     
-            if self.hasAdjacentY(board, i, j):
-                board[i][j] = 'Y'
-                self.DFSMark(board, i-1, j)
-                self.DFSMark(board, i+1, j)
-                self.DFSMark(board, i, j-1)
-                self.DFSMark(board, i, j+1)
+    	if self.hasAdjacentY(board, i, j):
+    	    board[i][j] = 'Y'
+    	    self.DFSMark(board, i-1, j)
+    	    self.DFSMark(board, i+1, j)
+    	    self.DFSMark(board, i, j-1)
+    	    self.DFSMark(board, i, j+1)
     
         def hasAdjacentY(self, board, i, j):
-            if i > 0 and board[i-1][j] == 'Y': return True
-            if i < self.row_count-1 and board[i+1][j] == 'Y': return True
-            if j > 0 and board[i][j-1] == 'Y': return True
-            if j < self.col_count-1 and board[i][j+1] == 'Y': return True
-            return False        
+    	if i > 0 and board[i-1][j] == 'Y': return True
+    	if i < self.row_count-1 and board[i+1][j] == 'Y': return True
+    	if j > 0 and board[i][j-1] == 'Y': return True
+    	if j < self.col_count-1 and board[i][j+1] == 'Y': return True
+    	return False        
     
     # s = Solution()
     # # board = [["O","X","X","O","X"],["X","O","O","X","O"],["X","O","X","O","X"],["O","X","O","O","O"],["X","X","O","X","O"]]
     # board = [["X","O","O","X","X","X","O","X","O","O"],["X","O","X","X","X","X","X","X","X","X"],["X","X","X","X","O","X","X","X","X","X"],["X","O","X","X","X","O","X","X","X","O"],["O","X","X","X","O","X","O","X","O","X"],["X","X","O","X","X","O","O","X","X","X"],["O","X","X","O","O","X","O","X","X","O"],["O","X","X","X","X","X","O","X","X","X"],["X","O","O","X","X","O","X","X","O","O"],["X","X","X","O","O","X","O","X","X","O"]]
     # s.solve(board)
+

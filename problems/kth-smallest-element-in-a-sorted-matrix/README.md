@@ -1,5 +1,5 @@
-# Leetcode: Kth Smallest Element in a Sorted Matrix     :BLOG:Medium:
 
+# Leetcode: Kth Smallest Element in a Sorted Matrix     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Kth Smallest Element in a Sorted Matrix
 ---
 
 Similar Problems:  
+
 -   [Search a 2D Matrix II](https://code.dennyzhang.com/search-a-2d-matrix-ii)
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
@@ -31,7 +32,7 @@ Example:
 Note:  
 You may assume k is always valid, 1 ≤ k ≤ n2.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/kth-smallest-element-in-a-sorted-matrix)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/kth-smallest-element-in-a-sorted-matrix)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)  
 
@@ -40,3 +41,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix
+

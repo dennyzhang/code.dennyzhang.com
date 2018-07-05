@@ -1,5 +1,5 @@
-# Leetcode: Most Profit Assigning Work     :BLOG:Medium:
 
+# Leetcode: Most Profit Assigning Work     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Most Profit Assigning Work
 ---
 
 Similar Problems:  
+
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -34,7 +35,7 @@ Notes:
 -   1 <= worker.length <= 10000
 -   difficulty[i], profit[i], worker[i]  are in range [1, 10^5]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/most-profit-assigning-work)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/most-profit-assigning-work)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/most-profit-assigning-work/description/)  
 
@@ -49,51 +50,52 @@ Leave me comments, if you have better ways to solve.
     func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {
         m := make(map[int]int)
         for i, d := range difficulty {
-            v, status := m[d]
-            if status == false {
-                m[d] = profit[i]
-            } else {
-                if v<profit[i] {m[d]=profit[i]}
-            }
+    	v, status := m[d]
+    	if status == false {
+    	    m[d] = profit[i]
+    	} else {
+    	    if v<profit[i] {m[d]=profit[i]}
+    	}
         }
     
         sort.Ints(difficulty[:])
         for i := 0; i<len(profit); i++ {
-            v, _ := m[difficulty[i]]
-            profit[i] = v
+    	v, _ := m[difficulty[i]]
+    	profit[i] = v
         }
     
         // get most profit values
         dp := make([]int, len(difficulty))
         dp[0] = profit[0]
         for i, _ := range difficulty {
-            if i == 0 { continue }
-            dp[i] = profit[i]
-            if dp[i] < dp[i-1] { dp[i] = dp[i-1] }
+    	if i == 0 { continue }
+    	dp[i] = profit[i]
+    	if dp[i] < dp[i-1] { dp[i] = dp[i-1] }
         }
     
         res := 0
         // binarysearch: find the first no smaller value
         for _, w := range worker{
-            item := 0
-            left, right := 0, len(difficulty)
-            for left<right {
-                mid := left + int((right-left)/2)
-                if difficulty[mid] == w {
-                    item = dp[mid]
-                    break
-                } else{
-                    if difficulty[mid] > w {
-                       right = mid
-                    } else {
-                        left = mid + 1
-                    }
-                }
+    	item := 0
+    	left, right := 0, len(difficulty)
+    	for left<right {
+    	    mid := left + int((right-left)/2)
+    	    if difficulty[mid] == w {
+    		item = dp[mid]
+    		break
+    	    } else{
+    		if difficulty[mid] > w {
+    		   right = mid
+    		} else {
+    		    left = mid + 1
+    		}
+    	    }
           }
           if item == 0 {
-              if left != 0 { item = dp[left-1] }
+    	  if left != 0 { item = dp[left-1] }
           }
           res += item
         }
         return res
     }
+

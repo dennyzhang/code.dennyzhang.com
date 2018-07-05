@@ -1,5 +1,5 @@
-# Leetcode: Stickers to Spell Word     :BLOG:Medium:
 
+# Leetcode: Stickers to Spell Word     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Stickers to Spell Word
 ---
 
 Similar Problems:  
+
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -54,7 +55,7 @@ Note:
 -   In all test cases, all words were chosen randomly from the 1000 most common US English words, and the target was chosen as a concatenation of two random words.
 -   The time limit may be more challenging than usual. It is expected that a 50 sticker test case can be solved within 35ms on average.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/stickers-to-spell-word)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/stickers-to-spell-word)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/stickers-to-spell-word/description/)  
 
@@ -66,11 +67,15 @@ Leave me comments, if you have better ways to solve.
 
 **General Thinkings:**  
 
+    
 
 **Key Observations:**  
 
+    
 
 **Walk Through Testdata**  
 
+    
 
     // Blog link: https://code.dennyzhang.com/stickers-to-spell-word
+

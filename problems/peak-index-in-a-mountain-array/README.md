@@ -1,5 +1,5 @@
-# Leetcode: Peak Index in a Mountain Array     :BLOG:Basic:
 
+# Leetcode: Peak Index in a Mountain Array     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Peak Index in a Mountain Array
 ---
 
 Similar Problems:  
+
 -   [Longest Mountain in Array](https://code.dennyzhang.com/longest-mountain-in-array)
 -   Tag: [#array](https://code.dennyzhang.com/tag/array), [#mountain](https://code.dennyzhang.com/tag/mountain)
 
@@ -16,9 +17,9 @@ Similar Problems:
 Let's call an array A a mountain if the following properties hold:  
 
 -   A.length >= 3
--   There exists some 0 < i < A.length - 1 such that A< A< &#x2026; A[i-1] < A[i] > A[i+1] > &#x2026; > A[A.length - 1]
+-   There exists some 0 < i < A.length - 1 such that A[0] < A[1] < &#x2026; A[i-1] < A[i] > A[i+1] > &#x2026; > A[A.length - 1]
 
-Given an array that is definitely a mountain, return any i such that A< A< &#x2026; A[i-1] < A[i] > A[i+1] > &#x2026; > A[A.length - 1].  
+Given an array that is definitely a mountain, return any i such that A[0] < A[1] < &#x2026; A[i-1] < A[i] > A[i+1] > &#x2026; > A[A.length - 1].  
 
 Example 1:  
 
@@ -36,7 +37,7 @@ Note:
 -   0 <= A[i] <= 10^6
 -   A is a mountain, as defined above.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/peak-index-in-a-mountain-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/peak-index-in-a-mountain-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)  
 
@@ -51,21 +52,10 @@ Leave me comments, if you have better ways to solve.
     // Complexity: Time O(n), Space O(1)
     func peakIndexInMountainArray(A []int) int {
         for i:=1; i<len(A)-1; i++ {
-            if A[i]>A[i-1] && A[i]>A[i+1] {
-                return i
-            }
+    	if A[i]>A[i-1] && A[i]>A[i+1] {
+    	    return i
+    	}
         }
         return -1
     }
 
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-
-</div>
-</div>

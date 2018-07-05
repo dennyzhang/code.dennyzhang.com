@@ -1,5 +1,5 @@
-# Leetcode: Plus One     :BLOG:Basic:
 
+# Leetcode: Plus One     :BLOG:Basic:
 
 ---
 
@@ -13,7 +13,7 @@ You may assume the integer do not contain any leading zero, except the number 0 
 
 The digits are stored such that the most significant digit is at the head of the list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/plus-one)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/plus-one)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/plus-one/description/)  
 
@@ -26,29 +26,30 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def plusOne(self, digits):
-            """
-            :type digits: List[int]
-            :rtype: List[int]
-            """
-            res = []
-            has_carry = False
-            if digits[-1] == 9:
-                res.insert(0, 0)
-                has_carry = True
-            else:
-                res.insert(0, digits[-1]+1)
+    	"""
+    	:type digits: List[int]
+    	:rtype: List[int]
+    	"""
+    	res = []
+    	has_carry = False
+    	if digits[-1] == 9:
+    	    res.insert(0, 0)
+    	    has_carry = True
+    	else:
+    	    res.insert(0, digits[-1]+1)
     
-            for i in range(len(digits)-2, -1, -1):
-                if has_carry is False:
-                    res.insert(0, digits[i])
-                else:
-                    if digits[i] == 9:
-                        res.insert(0, 0)
-                        has_carry = True
-                    else:
-                        res.insert(0, digits[i]+1)
-                        has_carry = False
+    	for i in range(len(digits)-2, -1, -1):
+    	    if has_carry is False:
+    		res.insert(0, digits[i])
+    	    else:
+    		if digits[i] == 9:
+    		    res.insert(0, 0)
+    		    has_carry = True
+    		else:
+    		    res.insert(0, digits[i]+1)
+    		    has_carry = False
     
-            if has_carry is True:
-                res.insert(0, 1)
-            return res
+    	if has_carry is True:
+    	    res.insert(0, 1)
+    	return res
+

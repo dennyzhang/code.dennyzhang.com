@@ -1,5 +1,5 @@
-# Leetcode: Shortest Word Distance III     :BLOG:Medium:
 
+# Leetcode: Shortest Word Distance III     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Word Distance III
 ---
 
 Similar Problems:  
+
 -   [Shortest Word Distance](https://code.dennyzhang.com/shortest-word-distance)
 -   [Shortest Word Distance II](https://code.dennyzhang.com/shortest-word-distance-ii)
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
@@ -30,7 +31,7 @@ Example:
 Note:  
 You may assume word1 and word2 are both in the list.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-word-distance-iii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-word-distance-iii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-word-distance-iii/description/)  
 
@@ -51,17 +52,18 @@ Leave me comments, if you have better ways to solve.
         index1, index2 := -1, -1
         res := len(words)
         for i, word := range words {
-            if word1 == word2 && word == word1 {
-                index1, index2 = index2, i
-            } else {
-                if word == word1 { index1 = i }
-                if word == word2 { index2 = i }
-            }
-            if index1 != -1 && index2 != -1 {
-                distance := index1-index2
-                if distance < 0 { distance = -distance }
-                if distance<res { res = distance }
-            }
+    	if word1 == word2 && word == word1 {
+    	    index1, index2 = index2, i
+    	} else {
+    	    if word == word1 { index1 = i }
+    	    if word == word2 { index2 = i }
+    	}
+    	if index1 != -1 && index2 != -1 {
+    	    distance := index1-index2
+    	    if distance < 0 { distance = -distance }
+    	    if distance<res { res = distance }
+    	}
         }
         return res
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Nested List Weight Sum II     :BLOG:Medium:
 
+# Leetcode: Nested List Weight Sum II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Nested List Weight Sum II
 ---
 
 Similar Problems:  
+
 -   [Nested List Weight Sum](https://code.dennyzhang.com/nested-list-weight-sum)
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 -   Tag: [#nestedlist](https://code.dennyzhang.com/tag/nestedlist)
@@ -28,7 +29,7 @@ Example 2:
 
     Given the list [1,[4,[6]]], return 17. (one 1 at depth 3, one 4 at depth 2, and one 6 at depth 1; 1*3 + 4*2 + 6*1 = 17)
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nested-list-weight-sum-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nested-list-weight-sum-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/nested-list-weight-sum-ii/description/)  
 
@@ -86,32 +87,33 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def depthSumInverse(self, nestedList):
-            """
-            :type nestedList: List[NestedInteger]
-            :rtype: int
-            """
-            import collections
-            if len(nestedList) == 0: return 0
-            deepest_level = self.findDepth(nestedList, 0)
-            return self.myDepthSumInverse(nestedList, deepest_level)
+    	"""
+    	:type nestedList: List[NestedInteger]
+    	:rtype: int
+    	"""
+    	import collections
+    	if len(nestedList) == 0: return 0
+    	deepest_level = self.findDepth(nestedList, 0)
+    	return self.myDepthSumInverse(nestedList, deepest_level)
     
         def myDepthSumInverse(self, nestedList, level):
-            res = 0
-            for item in nestedList:
-                if item.isInteger(): res += item.getInteger()*level
-                else:
-                    res += self.myDepthSumInverse(item.getList(), level-1)
-            return res
+    	res = 0
+    	for item in nestedList:
+    	    if item.isInteger(): res += item.getInteger()*level
+    	    else:
+    		res += self.myDepthSumInverse(item.getList(), level-1)
+    	return res
     
         def findDepth(self, nestedList, level):
-            if len(nestedList) == 0: return 0
-            deepest_level = level
-            for item in nestedList:
-                if item.isInteger(): 
-                    deepest_level = max(deepest_level, level+1)
-                    continue
-                for p in item.getList():
-                    if p.isInteger(): deepest_level = max(deepest_level, level+2)
-                    else:
-                        deepest_level = max(deepest_level, self.findDepth(p.getList(), level+2))
-            return deepest_level
+    	if len(nestedList) == 0: return 0
+    	deepest_level = level
+    	for item in nestedList:
+    	    if item.isInteger(): 
+    		deepest_level = max(deepest_level, level+1)
+    		continue
+    	    for p in item.getList():
+    		if p.isInteger(): deepest_level = max(deepest_level, level+2)
+    		else:
+    		    deepest_level = max(deepest_level, self.findDepth(p.getList(), level+2))
+    	return deepest_level
+

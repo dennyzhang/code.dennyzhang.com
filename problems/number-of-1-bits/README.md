@@ -1,5 +1,5 @@
-# Leetcode: Number of 1 Bits     :BLOG:Basic:
 
+# Leetcode: Number of 1 Bits     :BLOG:Basic:
 
 ---
 
@@ -11,7 +11,7 @@ Write a function that takes an unsigned integer and returns the number of '1' bi
 
 For example, the 32-bit integer '11' has binary representation 00000000000000000000000000001011, so the function should return 3.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-1-bits)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-1-bits)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-1-bits/description/)  
 
@@ -24,24 +24,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(k), k is most many 1 bits it has. Space O(1)
     class Solution(object):
         def hammingWeight(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            res = 0
-            while n != 0:
-                n = n & (n-1)
-                res += 1
-            return res
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	res = 0
+    	while n != 0:
+    	    n = n & (n-1)
+    	    res += 1
+    	return res
     
         def hammingWeight_v1(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            count = 0
-            while n != 0:
-                if (n % 2) == 1:
-                    count = count + 1
-                n = n /2
-            return count
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	count = 0
+    	while n != 0:
+    	    if (n % 2) == 1:
+    		count = count + 1
+    	    n = n /2
+    	return count
+

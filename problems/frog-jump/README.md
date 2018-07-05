@@ -1,5 +1,5 @@
-# Lintcode: Frog Jump     :BLOG:Hard:
 
+# Lintcode: Frog Jump     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Frog Jump
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming),  [#bfs](https://code.dennyzhang.com/tag/bfs)
@@ -21,6 +22,7 @@ Given a list of stones' positions (in units) in sorted ascending order, determin
 If the frog's last jump was k units, then its next jump must be either k - 1, k, or k + 1 units. Note that the frog can only jump in the forward direction.  
 
 Notice  
+
 -   The number of stones is >= 2 and is < 1100.
 -   Each stone's position will be a non-negative integer < 2^31.
 -   The first stone's position is always 0.
@@ -44,7 +46,7 @@ Example
     Return false. There is no way to jump to the last stone as
     the gap between the 5th and 6th stone is too large.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/frog-jump)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/frog-jump)  
 
 Credits To: [lintcode.com](https://code.dennyzhang.com/frog-jump)  
 
@@ -53,3 +55,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/frog-jump
+

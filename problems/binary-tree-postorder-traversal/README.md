@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Postorder Traversal     :BLOG:Basic:
 
+# Leetcode: Binary Tree Postorder Traversal     :BLOG:Basic:
 
 ---
 
@@ -21,7 +21,7 @@ For example:
 
 Note: Recursive solution is trivial, could you do it iteratively?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-postorder-traversal)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-postorder-traversal)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)  
 
@@ -39,52 +39,53 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def postorderTraversal(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
-            res = []
-            stack = []
-            p = root
-            # element: pointer, whether_visited_right
-            while p:
-                stack.append((p, False))
-                p = p.left
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
+    	res = []
+    	stack = []
+    	p = root
+    	# element: pointer, whether_visited_right
+    	while p:
+    	    stack.append((p, False))
+    	    p = p.left
     
-            while len(stack) != 0:
-                (top_element, whether_visited_right) = stack.pop()
-                if whether_visited_right is False:
-                    if top_element.right:
-                        stack.append((top_element, True))
-                        p = top_element.right
-                        while p:
-                            stack.append((p, False))
-                            p = p.left
-                    else:
-                        res.append(top_element.val)
-                else:
-                    res.append(top_element.val)
+    	while len(stack) != 0:
+    	    (top_element, whether_visited_right) = stack.pop()
+    	    if whether_visited_right is False:
+    		if top_element.right:
+    		    stack.append((top_element, True))
+    		    p = top_element.right
+    		    while p:
+    			stack.append((p, False))
+    			p = p.left
+    		else:
+    		    res.append(top_element.val)
+    	    else:
+    		res.append(top_element.val)
     
-            return res
+    	return res
     
         def postorderTraversal_v1(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
-            res = []
-            self.postorderTraversalRec(root, res)
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
+    	res = []
+    	self.postorderTraversalRec(root, res)
+    	return res
     
         def postorderTraversalRec(self, root, list_value):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
-            if root is None:
-                return
-            if root.left:
-                self.postorderTraversalRec(root.left, list_value)
-            if root.right:
-                self.postorderTraversalRec(root.right, list_value)
-            list_value.append(root.val)
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
+    	if root is None:
+    	    return
+    	if root.left:
+    	    self.postorderTraversalRec(root.left, list_value)
+    	if root.right:
+    	    self.postorderTraversalRec(root.right, list_value)
+    	list_value.append(root.val)
+

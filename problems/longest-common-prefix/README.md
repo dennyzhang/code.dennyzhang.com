@@ -1,5 +1,5 @@
-# Leetcode: Longest Common Prefix     :BLOG:Basic:
 
+# Leetcode: Longest Common Prefix     :BLOG:Basic:
 
 ---
 
@@ -8,13 +8,14 @@ Longest Common Prefix
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
 
 Write a function to find the longest common prefix string amongst an array of strings.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-common-prefix)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-common-prefix)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-common-prefix/description/)  
 
@@ -23,3 +24,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/longest-common-prefix
+

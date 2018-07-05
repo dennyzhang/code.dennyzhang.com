@@ -1,5 +1,5 @@
-# Leetcode: Monotone Increasing Digits     :BLOG:Amusing:
 
+# Leetcode: Monotone Increasing Digits     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Monotone Increasing Digits
 ---
 
 Similar Problems:  
+
 -   [Remove K Digits](https://code.dennyzhang.com/remove-k-digits)
 -   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy), [Tag: #greedy](https://code.dennyzhang.com/tag/greedy)
 
@@ -34,7 +35,7 @@ Example 3:
 
 Note: N is an integer in the range [0, 10^9].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/monotone-increasing-digits)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/monotone-increasing-digits)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/monotone-increasing-digits/description/)  
 
@@ -56,38 +57,38 @@ Leave me comments, if you have better ways to solve.
     ##       For integer, the maxmium length of digits is small.
     class Solution(object):
         def monotoneIncreasingDigits(self, N):
-            """
-            :type N: int
-            :rtype: int
-            """
-            l = list(str(N))
-            length = len(l)
-            for i in range(length): l[i] = ord(l[i]) - ord('0')
+    	"""
+    	:type N: int
+    	:rtype: int
+    	"""
+    	l = list(str(N))
+    	length = len(l)
+    	for i in range(length): l[i] = ord(l[i]) - ord('0')
     
-            # get the longest non-decreasing sequence
-            index = -1
-            for i in range(length-1):
-                if l[i] > l[i+1]:
-                    index = i
-                    break
-            if index == -1: return N
+    	# get the longest non-decreasing sequence
+    	index = -1
+    	for i in range(length-1):
+    	    if l[i] > l[i+1]:
+    		index = i
+    		break
+    	if index == -1: return N
     
-            j = -1
-            # identity which digit to change
-            for i in range(index, -1, -1):
-                j = i
-                if i>0 and l[i] == l[i-1]:
-                    continue
-                break
+    	j = -1
+    	# identity which digit to change
+    	for i in range(index, -1, -1):
+    	    j = i
+    	    if i>0 and l[i] == l[i-1]:
+    		continue
+    	    break
     
-            # make the change
-            l[j] -= 1
-            for i in range(j+1, length): l[i] = 9
+    	# make the change
+    	l[j] -= 1
+    	for i in range(j+1, length): l[i] = 9
     
-            # get the result
-            res = 0
-            for i in range(length): res = res*10+l[i]
-            return res
+    	# get the result
+    	res = 0
+    	for i in range(length): res = res*10+l[i]
+    	return res
     
     # s = Solution()
     # print(s.monotoneIncreasingDigits(101)) # 99
@@ -95,3 +96,4 @@ Leave me comments, if you have better ways to solve.
     # print(s.monotoneIncreasingDigits(332)) # 299
     # print(s.monotoneIncreasingDigits(668841)) # 667999
     # print(s.monotoneIncreasingDigits(10)) # 9
+

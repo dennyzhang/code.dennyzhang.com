@@ -1,5 +1,5 @@
-# Leetcode: Happy Number     :BLOG:Hard:
 
+# Leetcode: Happy Number     :BLOG:Hard:
 
 ---
 
@@ -18,7 +18,7 @@ A happy number is a number defined by the following process: Starting with any p
     62 + 82 = 100
     12 + 02 + 02 = 1
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/happy-number)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/happy-number)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/happy-number/description/)  
 
@@ -32,25 +32,26 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def isHappy(self, n):
-            """
-            :type n: int
-            :rtype: bool
-            """
-            slow, fast = n, n
-            while True:
-                slow = self.getCaculatedSum(slow)
-                fast = self.getCaculatedSum(self.getCaculatedSum(fast))
-                if slow == fast: break
-            return True if slow == 1 else False
+    	"""
+    	:type n: int
+    	:rtype: bool
+    	"""
+    	slow, fast = n, n
+    	while True:
+    	    slow = self.getCaculatedSum(slow)
+    	    fast = self.getCaculatedSum(self.getCaculatedSum(fast))
+    	    if slow == fast: break
+    	return True if slow == 1 else False
     
         def getCaculatedSum(self, n):
-            if n < 0:
-                return None
-            if n == 0:
-                return 0
-            res = 0
-            while n != 0:
-                ldigit = n % 10
-                res = res + ldigit*ldigit
-                n = n/10
-            return res
+    	if n < 0:
+    	    return None
+    	if n == 0:
+    	    return 0
+    	res = 0
+    	while n != 0:
+    	    ldigit = n % 10
+    	    res = res + ldigit*ldigit
+    	    n = n/10
+    	return res
+

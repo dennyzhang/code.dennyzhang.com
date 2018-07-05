@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Zigzag Level Order Traversal     :BLOG:Amusing:
 
+# Leetcode: Binary Tree Zigzag Level Order Traversal     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Binary Tree Zigzag Level Order Traversal
 ---
 
 Similar Problems:  
+
 -   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal), [#zigzag](https://code.dennyzhang.com/tag/zigzag), [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
@@ -28,7 +29,7 @@ Given a binary tree, return the zigzag level order traversal of its nodes' value
       [15,7]
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-zigzag-level-order-traversal)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-zigzag-level-order-traversal)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/)  
 
@@ -49,30 +50,31 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def zigzagLevelOrder(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[List[int]]
-            """
-            if root is None:
-                return []
-            res = []
-            queue = []
-            queue.append(root)
-            left_to_right = True
-            while len(queue) != 0:
-                length = len(queue)
-                level_element = []
-                for i in xrange(length):
-                    element = queue[0]
-                    del queue[0]
-                    if left_to_right is True:
-                        level_element.append(element.val)
-                    else:
-                        level_element.insert(0, element.val)
-                    if element.left:
-                        queue.append(element.left)
-                    if element.right:
-                        queue.append(element.right)
-                res.append(level_element)
-                left_to_right = not left_to_right
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[List[int]]
+    	"""
+    	if root is None:
+    	    return []
+    	res = []
+    	queue = []
+    	queue.append(root)
+    	left_to_right = True
+    	while len(queue) != 0:
+    	    length = len(queue)
+    	    level_element = []
+    	    for i in xrange(length):
+    		element = queue[0]
+    		del queue[0]
+    		if left_to_right is True:
+    		    level_element.append(element.val)
+    		else:
+    		    level_element.insert(0, element.val)
+    		if element.left:
+    		    queue.append(element.left)
+    		if element.right:
+    		    queue.append(element.right)
+    	    res.append(level_element)
+    	    left_to_right = not left_to_right
+    	return res
+

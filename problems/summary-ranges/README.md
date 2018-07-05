@@ -1,5 +1,5 @@
-# Leetcode: Summary Ranges     :BLOG:Basic:
 
+# Leetcode: Summary Ranges     :BLOG:Basic:
 
 ---
 
@@ -17,7 +17,7 @@ Given a sorted integer array without duplicates, return the summary of its range
     Input: [0,2,3,4,6,8,9]
     Output: ["0","2->4","6","8->9"]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/summary-ranges)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/summary-ranges)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/summary-ranges/description/)  
 
@@ -31,20 +31,21 @@ Leave me comments, if you have better ways to solve.
     ## Assumptions:
     class Solution(object):
         def summaryRanges(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: List[str]
-            """
-            res = []
-            length = len(nums)
-            i=0
-            while i<length:
-                j = i + 1
-                while j<length and nums[j] == nums[j-1] + 1:
-                    j += 1
-                if j != i+1:
-                    res.append("%d->%d" % (nums[i], nums[j-1]))
-                else:
-                    res.append("%d" % nums[i])
-                i = j
-            return res
+    	"""
+    	:type nums: List[int]
+    	:rtype: List[str]
+    	"""
+    	res = []
+    	length = len(nums)
+    	i=0
+    	while i<length:
+    	    j = i + 1
+    	    while j<length and nums[j] == nums[j-1] + 1:
+    		j += 1
+    	    if j != i+1:
+    		res.append("%d->%d" % (nums[i], nums[j-1]))
+    	    else:
+    		res.append("%d" % nums[i])
+    	    i = j
+    	return res
+

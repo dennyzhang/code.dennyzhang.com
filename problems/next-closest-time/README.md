@@ -1,5 +1,5 @@
-# Leetcode: Next Closest Time     :BLOG:Medium:
 
+# Leetcode: Next Closest Time     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Next Closest Time
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#rotateoperation](https://code.dennyzhang.com/tag/rotateoperation)
 
@@ -29,7 +30,7 @@ Example 2:
     Output: "22:22"
     Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. It may be assumed that the returned time is next day's time since it is smaller than the input time numerically.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/next-closest-time)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-closest-time)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/next-closest-time/description/)  
 
@@ -47,42 +48,43 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(1), Space O(1)
     class Solution:
         def nextClosestTime(self, time):
-            """
-            :type time: str
-            :rtype: str
-            """
-            import sys
-            ch_set = set(time)
-            ch_set.remove(':')
-            if len(ch_set) == 1: return time
+    	"""
+    	:type time: str
+    	:rtype: str
+    	"""
+    	import sys
+    	ch_set = set(time)
+    	ch_set.remove(':')
+    	if len(ch_set) == 1: return time
     
-            l = [""]
-            for i in range(4):
-                l2 = []
-                for ch in ch_set:
-                    for item in l:
-                        if i == 1:
-                            l2.append("%s%s:" % (item, ch))
-                        else:
-                            l2.append("%s%s" % (item, ch))
-                l = l2
+    	l = [""]
+    	for i in range(4):
+    	    l2 = []
+    	    for ch in ch_set:
+    		for item in l:
+    		    if i == 1:
+    			l2.append("%s%s:" % (item, ch))
+    		    else:
+    			l2.append("%s%s" % (item, ch))
+    	    l = l2
     
-            minutes = self.getMinutes(time)
-            min_diff, index  = sys.maxsize, None
-            total_minutes = 24*60
-            for i in range(len(l)):
-                t = l[i]
-                # check whether t is valid
-                if int(t[0])*10+int(t[1]) >= 24: continue
-                if int(t[3])*10+int(t[4]) >= 60: continue
+    	minutes = self.getMinutes(time)
+    	min_diff, index  = sys.maxsize, None
+    	total_minutes = 24*60
+    	for i in range(len(l)):
+    	    t = l[i]
+    	    # check whether t is valid
+    	    if int(t[0])*10+int(t[1]) >= 24: continue
+    	    if int(t[3])*10+int(t[4]) >= 60: continue
     
-                diff = (self.getMinutes(t)-minutes+total_minutes) % total_minutes
-                if diff == 0: continue
+    	    diff = (self.getMinutes(t)-minutes+total_minutes) % total_minutes
+    	    if diff == 0: continue
     
-                if min_diff > diff:
-                    min_diff, index = diff, i
+    	    if min_diff > diff:
+    		min_diff, index = diff, i
     
-            return l[index]
+    	return l[index]
     
         def getMinutes(self, time):
-            return (int(time[0])*10 + int(time[1]))*60+(int(time[3])*10 + int(time[4]))
+    	return (int(time[0])*10 + int(time[1]))*60+(int(time[3])*10 + int(time[4]))
+

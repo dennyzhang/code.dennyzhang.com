@@ -1,5 +1,5 @@
-# Leetcode: Masking Personal Information     :BLOG:Medium:
 
+# Leetcode: Masking Personal Information     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Masking Personal Information
 ---
 
 Similar Problems:  
+
 -   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -32,9 +33,9 @@ A phone number is a string consisting of only the digits 0-9 or the characters f
 
 The last 10 digits make up the local number, while the digits before those make up the country code. Note that the country code is optional. We want to expose only the last 4 digits and mask all other digits.  
 
-The local number should be formatted and masked as "**\***-\*\*\*-1111", where 1 represents the exposed digits.  
+The local number should be formatted and masked as "**\***-**\***-1111", where 1 represents the exposed digits.  
 
-To mask a phone number with country code like "+111 111 111 1111", we write it in the form "+\*\*\*-\*\*\*-\*\*\*-1111".  The '+' sign and the first '-' sign before the local number should only exist if there is a country code.  For example, a 12 digit phone number mask should start with "+\*\*-".  
+To mask a phone number with country code like "<del>111 111 111 1111", we write it in the form "+\*\*\*-**\***-**\***-1111".  The '</del>' sign and the first '-' sign before the local number should only exist if there is a country code.  For example, a 12 digit phone number mask should start with "+\*\*-".  
 
 Note that extraneous characters like "(", ")", " ", as well as extra dashes or plus signs not part of the above formatting scheme should be removed.  
 
@@ -65,7 +66,7 @@ Example 4:
 
     Input: "86-(10)12345678"
     Output: "+**-***-***-5678"
-    Explanation: 12 digits, 2 digits for country code and 10 digits for local number.
+    Explanation: 12 digits, 2 digits for country code and 10 digits for local number. 
 
 Notes:  
 
@@ -73,7 +74,7 @@ Notes:
 2.  Emails have length at least 8.
 3.  Phone numbers have length at least 10.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/masking-personal-information)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/masking-personal-information)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/masking-personal-information/description/)  
 
@@ -89,23 +90,24 @@ Leave me comments, if you have better ways to solve.
         res := ""
         index := strings.Index(S, "@")
         if index != -1 {
-            // email
-            res = fmt.Sprintf("%s*****%s", string(S[0]), S[index-1:])
-            res = strings.ToLower(res)
+    	// email
+    	res = fmt.Sprintf("%s*****%s", string(S[0]), S[index-1:])
+    	res = strings.ToLower(res)
         } else {
-            nums := []string{}
-            for _, ch := range S {
-                if ch >= '0' && ch <= '9' {
-                    nums = append(nums, string(ch))
-                }
-            }
-            tail_nums := strings.Join(nums[len(nums)-4:len(nums)], "")
-            if len(nums) == 10 {
-                res = fmt.Sprintf("***-***-%s", tail_nums)
-            } else {
-                res = fmt.Sprintf("+%s-***-***-%s",
-                    strings.Repeat("*", len(nums)-10), tail_nums)
-            }
+    	nums := []string{}
+    	for _, ch := range S {
+    	    if ch >= '0' && ch <= '9' {
+    		nums = append(nums, string(ch))
+    	    }
+    	}
+    	tail_nums := strings.Join(nums[len(nums)-4:len(nums)], "")
+    	if len(nums) == 10 {
+    	    res = fmt.Sprintf("***-***-%s", tail_nums)
+    	} else {
+    	    res = fmt.Sprintf("+%s-***-***-%s",
+    		strings.Repeat("*", len(nums)-10), tail_nums)
+    	}
         }
         return res
     }
+

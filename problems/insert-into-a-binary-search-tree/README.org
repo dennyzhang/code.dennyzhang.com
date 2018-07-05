@@ -1,0 +1,91 @@
+* Leetcode: Insert into a Binary Search Tree                     :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Insert into a Binary Search Tree
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
+
+Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST after insertion. You can return any of them.
+
+For example, 
+
+Given the tree:
+#+BEGIN_EXAMPLE
+        4
+       / \
+      2   7
+     / \
+    1   3
+
+And the value to insert: 5
+#+END_EXAMPLE
+
+You can return this binary search tree:
+#+BEGIN_EXAMPLE
+         4
+       /   \
+      2     7
+     / \   /
+    1   3 5
+#+END_EXAMPLE
+
+This tree is also valid:
+#+BEGIN_EXAMPLE
+         5
+       /   \
+      2     7
+     / \   
+    1   3
+         \
+          4
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-into-a-binary-search-tree][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/insert-into-a-binary-search-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/insert-into-a-binary-search-tree
+// Basic Ideas:
+//
+// Complexity:
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func insertIntoBST(root *TreeNode, val int) *TreeNode {
+    p := root
+    for true {
+        if p.Val > val {
+            // left
+            if p.Left == nil {
+                p.Left = &TreeNode{val, nil, nil}
+                break
+            }
+            p = p.Left
+        } else {
+            if p.Right == nil {
+                p.Right = &TreeNode{val, nil, nil}
+                break
+            }
+            p = p.Right
+        }
+    }
+    return root
+}
+#+END_SRC

@@ -1,5 +1,5 @@
-# LintCode: Longest AB Substring     :BLOG:Medium:
 
+# LintCode: Longest AB Substring     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Longest AB Substring
 ---
 
 Similar Problems:  
+
 -   [Lintcode: Same Number](https://code.dennyzhang.com/same-number)
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
@@ -30,7 +31,7 @@ Example
     Explanation:
     No substring satisfies the condition except empty substring.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-ab-substring)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-ab-substring)  
 
 Credits To: [lintcode.com](https://www.lintcode.com/problem/longest-ab-substring/description)  
 
@@ -51,25 +52,26 @@ Leave me comments, if you have better ways to solve.
         l := make([]int, len(S))
         v := 0
         for i, ch := range S {
-            if ch == 'A' {
-                v++
-            } else {
-                v--
-            }
-            l[i] = v
-            if i>m[v] { m[v] = i }
+    	if ch == 'A' {
+    	    v++
+    	} else {
+    	    v--
+    	}
+    	l[i] = v
+    	if i>m[v] { m[v] = i }
         }
         res := 0
         for i := 0; i<len(S)-1; i++ {
-            target := l[i]
-            if S[i] == 'A' {
-                target--
-            } else {
-                target++
-            }
-            if m[target] > i {
-                if m[target]-i+1 > res { res = m[target]-i+1 }
-            }
+    	target := l[i]
+    	if S[i] == 'A' {
+    	    target--
+    	} else {
+    	    target++
+    	}
+    	if m[target] > i {
+    	    if m[target]-i+1 > res { res = m[target]-i+1 }
+    	}
         }
         return res
     }
+

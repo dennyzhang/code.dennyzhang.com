@@ -1,5 +1,5 @@
-# Leetcode: Is Subsequence     :BLOG:Basic:
 
+# Leetcode: Is Subsequence     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Is Subsequence
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -33,7 +34,7 @@ Example 2:
 Follow up:  
 If there are lots of incoming S, say S1, S2, &#x2026; , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/is-subsequence)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/is-subsequence)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/is-subsequence/description/)  
 
@@ -47,15 +48,16 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(1), Space O(1).
     class Solution:
         def isSubsequence(self, s, t):
-            """
-            :type s: str
-            :type t: str
-            :rtype: bool
-            """
-            length = len(s)
-            if length == 0: return True
-            index = 0
-            for i in range(0, len(t)):
-                if t[i] == s[index]: index += 1
-                if index == length: return True
-            return False
+    	"""
+    	:type s: str
+    	:type t: str
+    	:rtype: bool
+    	"""
+    	length = len(s)
+    	if length == 0: return True
+    	index = 0
+    	for i in range(0, len(t)):
+    	    if t[i] == s[index]: index += 1
+    	    if index == length: return True
+    	return False
+

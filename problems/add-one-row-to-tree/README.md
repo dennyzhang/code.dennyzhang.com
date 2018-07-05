@@ -1,5 +1,5 @@
-# Leetcode: Add One Row to Tree     :BLOG:Medium:
 
+# Leetcode: Add One Row to Tree     :BLOG:Medium:
 
 ---
 
@@ -31,7 +31,7 @@ The adding rule is: given a positive integer depth d, for each NOT null tree nod
         /     \
        2       6
       / \     / 
-     3   1   5
+     3   1   5   
 
     Example 2:
     Input: 
@@ -59,7 +59,7 @@ Note:
 The given d is in range [1, maximum depth of the given tree + 1].  
 The given binary tree has at least one tree node.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/add-one-row-to-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-one-row-to-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/add-one-row-to-tree/description/)  
 
@@ -85,39 +85,40 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def addOneRow(self, root, v, d):
-            """
-            :type root: TreeNode
-            :type v: int
-            :type d: int
-            :rtype: TreeNode
-            """
-            if d == 0: return None
-            if d == 1:
-                node = TreeNode(v)
-                node.left = root
-                return node
-            depth = 1
-            queue = []
-            queue.append(root)
-            while depth != d - 1:
-                for i in xrange(len(queue)):
-                    node = queue[0]
-                    del queue[0]
-                    if node.left:
-                        queue.append(node.left)
-                    if node.right:
-                        queue.append(node.right)
-                depth += 1
+    	"""
+    	:type root: TreeNode
+    	:type v: int
+    	:type d: int
+    	:rtype: TreeNode
+    	"""
+    	if d == 0: return None
+    	if d == 1:
+    	    node = TreeNode(v)
+    	    node.left = root
+    	    return node
+    	depth = 1
+    	queue = []
+    	queue.append(root)
+    	while depth != d - 1:
+    	    for i in xrange(len(queue)):
+    		node = queue[0]
+    		del queue[0]
+    		if node.left:
+    		    queue.append(node.left)
+    		if node.right:
+    		    queue.append(node.right)
+    	    depth += 1
     
-            for i in xrange(len(queue)):
-                node = queue[0]
-                del queue[0]
-                # add left
-                t1 = TreeNode(v)
-                t1.left = node.left
-                node.left = t1
-                # add right
-                t2 = TreeNode(v)
-                t2.right = node.right
-                node.right = t2
-            return root
+    	for i in xrange(len(queue)):
+    	    node = queue[0]
+    	    del queue[0]
+    	    # add left
+    	    t1 = TreeNode(v)
+    	    t1.left = node.left
+    	    node.left = t1
+    	    # add right
+    	    t2 = TreeNode(v)
+    	    t2.right = node.right
+    	    node.right = t2
+    	return root
+

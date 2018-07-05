@@ -1,5 +1,5 @@
-# Leetcode: Goat Latin     :BLOG:Basic:
 
+# Leetcode: Goat Latin     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Goat Latin
 ---
 
 Similar Problems:  
+
 -   Tag: [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -42,10 +43,11 @@ Example 2:
     Output: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
 
 Notes:  
+
 -   S contains only uppercase, lowercase and spaces. Exactly one space between each word.
 -   1 <= S.length <= 100.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/goat-latin)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/goat-latin)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/goat-latin/description/)  
 
@@ -60,15 +62,16 @@ Leave me comments, if you have better ways to solve.
     func toGoatLatin(S string) string {
         res := ""
         for i, word := range strings.Split(S, " ") {
-            ch := string(word[0])
-            item := ""
-            if strings.Index("aeiouAEIOU", ch) != -1 {
-                item = word+"ma"
-            } else {
-                item = word[1:]+ch+"ma"
-            }
-            item = item + strings.Repeat("a", i+1)
-            res += item + " "
+    	ch := string(word[0])
+    	item := ""
+    	if strings.Index("aeiouAEIOU", ch) != -1 {
+    	    item = word+"ma"
+    	} else {
+    	    item = word[1:]+ch+"ma"
+    	}
+    	item = item + strings.Repeat("a", i+1)
+    	res += item + " "
         }
         return res[0:len(res)-1]
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Students Report By Geography     :BLOG:Hard:
 
+# Leetcode: Students Report By Geography     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Students Report By Geography
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -31,7 +32,7 @@ For the sample input, the output is:
 
 Follow-up: If it is unknown which continent has the most students, can you write a query to generate the student report?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/students-report-by-geography)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/students-report-by-geography)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/students-report-by-geography/description/)  
 
@@ -61,3 +62,4 @@ Leave me comments, if you have better ways to solve.
         where continent='Europe'
         order by name) as t3
         on t1.id = t3.id
+

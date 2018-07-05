@@ -1,5 +1,5 @@
-# Leetcode: Preimage Size of Factorial Zeroes Function     :BLOG:Hard:
 
+# Leetcode: Preimage Size of Factorial Zeroes Function     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Preimage Size of Factorial Zeroes Function
 ---
 
 Similar Problems:  
+
 -   [Review: Binary Search Problems](https://code.dennyzhang.com/review-binarysearch)
 -   Tag: [#binarysearch](https://code.dennyzhang.com/tag/binarysearch)
 
@@ -33,7 +34,7 @@ Note:
 
 -   K will be an integer in the range [0, 10^9].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/preimage-size-of-factorial-zeroes-function)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/preimage-size-of-factorial-zeroes-function)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/description/)  
 
@@ -42,3 +43,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/preimage-size-of-factorial-zeroes-function
+

@@ -1,5 +1,5 @@
-# Leetcode: Sort List     :BLOG:Basic:
 
+# Leetcode: Sort List     :BLOG:Basic:
 
 ---
 
@@ -8,13 +8,14 @@ Sort linked list
 ---
 
 Similar Problems:  
+
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
 
 Sort a linked list in O(n log n) time using constant space complexity.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sort-list)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sort-list)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sort-list/description/)  
 
@@ -38,39 +39,40 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def sortList(self, head):
-            """
-            :type head: ListNode
-            :rtype: ListNode
-            """
-            if head is None or head.next is None:
-                return head
-            length = 0
-            prev, slow, fast = None, head, head
-            while fast and fast.next:
-                prev = slow
-                slow = slow.next
-                fast = fast.next.next
+    	"""
+    	:type head: ListNode
+    	:rtype: ListNode
+    	"""
+    	if head is None or head.next is None:
+    	    return head
+    	length = 0
+    	prev, slow, fast = None, head, head
+    	while fast and fast.next:
+    	    prev = slow
+    	    slow = slow.next
+    	    fast = fast.next.next
     
-            prev.next = None
-            head1 = self.sortList(head)
-            head2 = self.sortList(slow)
-            return self.mysortList(head1, head2)
+    	prev.next = None
+    	head1 = self.sortList(head)
+    	head2 = self.sortList(slow)
+    	return self.mysortList(head1, head2)
     
         def mysortList(self, head1, head2):
-            # merge two sorted list
-            dummyNode = ListNode(None)
-            p, p1, p2 = dummyNode, head1, head2
-            while p1 and p2:
-                if p1.val <= p2.val:
-                    # append p1 to the new list
-                    p.next = p1
-                    p1 = p1.next
-                else:
-                    p.next = p2
-                    p2 = p2.next
-                p = p.next
+    	# merge two sorted list
+    	dummyNode = ListNode(None)
+    	p, p1, p2 = dummyNode, head1, head2
+    	while p1 and p2:
+    	    if p1.val <= p2.val:
+    		# append p1 to the new list
+    		p.next = p1
+    		p1 = p1.next
+    	    else:
+    		p.next = p2
+    		p2 = p2.next
+    	    p = p.next
     
-            if p1 is None:
-                p1 = p2
-            p.next = p1
-            return dummyNode.next
+    	if p1 is None:
+    	    p1 = p2
+    	p.next = p1
+    	return dummyNode.next
+

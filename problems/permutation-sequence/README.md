@@ -1,5 +1,5 @@
-# Leetcode: Permutation Sequence     :BLOG:Medium:
 
+# Leetcode: Permutation Sequence     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Permutation Sequence
 ---
 
 Similar Problems:  
+
 -   [Next Permutation](https://code.dennyzhang.com/next-permutation)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination)
 -   Tag: [#combination](https://code.dennyzhang.com/tag/combination)
@@ -42,7 +43,7 @@ Example 2:
     Input: n = 4, k = 9
     Output: "2314"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/permutation-sequence)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/permutation-sequence)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/permutation-sequence/description/)  
 
@@ -90,24 +91,24 @@ Leave me comments, if you have better ways to solve.
         if v>k {
           // choose the least one
           for j:=0; j<n; j++ {
-            if l[j] == false {
-              res = fmt.Sprintf("%s%d", res, j+1)
-              l[j] = true
-              break
-            }
+    	if l[j] == false {
+    	  res = fmt.Sprintf("%s%d", res, j+1)
+    	  l[j] = true
+    	  break
+    	}
           }
         } else {
           // k>=v: need to customize current digit
           index := int(k/v)
           for j:=0; j<n; j++ {
-            if l[j] == false {
-              if index == 0 {
-                res = fmt.Sprintf("%s%d", res, j+1)
-                l[j] = true
-                break
-              }
-              index -= 1
-            }
+    	if l[j] == false {
+    	  if index == 0 {
+    	    res = fmt.Sprintf("%s%d", res, j+1)
+    	    l[j] = true
+    	    break
+    	  }
+    	  index -= 1
+    	}
           }
           k -= v*int(k/v)
         }
@@ -123,3 +124,4 @@ Leave me comments, if you have better ways to solve.
       }
       return res
     }
+

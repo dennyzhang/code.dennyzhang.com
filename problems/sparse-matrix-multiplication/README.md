@@ -1,5 +1,5 @@
-# Leetcode: Sparse Matrix Multiplication     :BLOG:Medium:
 
+# Leetcode: Sparse Matrix Multiplication     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Sparse Matrix Multiplication
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#math](https://code.dennyzhang.com/tag/math)
@@ -36,7 +37,7 @@ Example:
     AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
                       | 0 0 1 |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sparse-matrix-multiplication)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sparse-matrix-multiplication)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sparse-matrix-multiplication/description/)  
 
@@ -50,23 +51,24 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution:
         def multiply(self, A, B):
-            """
-            :type A: List[List[int]]
-            :type B: List[List[int]]
-            :rtype: List[List[int]]
-            """
-            if len(A) == 0 or len(B) == 0: return []
-            # reverse B
-            B2 = [[None for j in range(len(B))] for i in range(len(B[0]))]
-            for i in range(len(B)):
-                for j in range(len(B[0])):
-                    B2[j][i] = B[i][j]
+    	"""
+    	:type A: List[List[int]]
+    	:type B: List[List[int]]
+    	:rtype: List[List[int]]
+    	"""
+    	if len(A) == 0 or len(B) == 0: return []
+    	# reverse B
+    	B2 = [[None for j in range(len(B))] for i in range(len(B[0]))]
+    	for i in range(len(B)):
+    	    for j in range(len(B[0])):
+    		B2[j][i] = B[i][j]
     
-            C = [[0 for j in range(len(B[0]))] for i in range(len(A))]
-            for i in range(len(A)):
-                if A[i] == [0]*len(A[0]): continue
-                for j in range(len(B[0])):
-                    if B2[j] == [0]*len(B2[0]): continue
-                    for k in range(len(A[0])):
-                        C[i][j] += A[i][k]*B[k][j]
-            return C
+    	C = [[0 for j in range(len(B[0]))] for i in range(len(A))]
+    	for i in range(len(A)):
+    	    if A[i] == [0]*len(A[0]): continue
+    	    for j in range(len(B[0])):
+    		if B2[j] == [0]*len(B2[0]): continue
+    		for k in range(len(A[0])):
+    		    C[i][j] += A[i][k]*B[k][j]
+    	return C
+

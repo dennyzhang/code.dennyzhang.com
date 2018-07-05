@@ -1,5 +1,5 @@
-# Leetcode: Reverse String II     :BLOG:Basic:
 
+# Leetcode: Reverse String II     :BLOG:Basic:
 
 ---
 
@@ -14,10 +14,11 @@ Given a string and an integer k, you need to reverse the first k characters for 
     Output: "bacdfeg"
 
 Restrictions:  
+
 1.  The string consists of lower English letters only.
 2.  Length of the given string and k will in the range [1, 10000]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reverse-string-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-string-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/reverse-string-ii/description/)  
 
@@ -33,29 +34,30 @@ Leave me comments, if you have better ways to solve.
     ## Assumptions:
     class Solution(object):
         def reverseStr(self, s, k):
-            """
-            :type s: str
-            :type k: int
-            :rtype: str
-            """
-            length = len(s)
-            l = list(s)
-            should_reverse = True
-            i = 0
-            while i < length:
-                if i+k-1 < length:
-                    j = i+k-1
-                else:
-                    j = length - 1
+    	"""
+    	:type s: str
+    	:type k: int
+    	:rtype: str
+    	"""
+    	length = len(s)
+    	l = list(s)
+    	should_reverse = True
+    	i = 0
+    	while i < length:
+    	    if i+k-1 < length:
+    		j = i+k-1
+    	    else:
+    		j = length - 1
     
-                if should_reverse:
-                    # print("i: %d, j: %d" % (i, j))
-                    start = i
-                    end = j
-                    while start < end:
-                        l[start],l[end] = l[end], l[start]
-                        start += 1
-                        end -= 1
-                should_reverse = not should_reverse
-                i = j + 1
-            return ''.join(l)
+    	    if should_reverse:
+    		# print("i: %d, j: %d" % (i, j))
+    		start = i
+    		end = j
+    		while start < end:
+    		    l[start],l[end] = l[end], l[start]
+    		    start += 1
+    		    end -= 1
+    	    should_reverse = not should_reverse
+    	    i = j + 1
+    	return ''.join(l)
+

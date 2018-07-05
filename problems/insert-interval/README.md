@@ -1,5 +1,5 @@
-# Leetcode: Insert Interval     :BLOG:Basic:
 
+# Leetcode: Insert Interval     :BLOG:Basic:
 
 ---
 
@@ -19,7 +19,7 @@ You may assume that the intervals were initially sorted according to their start
     
     This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-interval)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/insert-interval)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/insert-interval/description/)  
 
@@ -37,8 +37,9 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def insert(self, intervals, newInterval):
-            """
-            :type intervals: List[Interval]
-            :type newInterval: Interval
-            :rtype: List[Interval]
-            """
+    	"""
+    	:type intervals: List[Interval]
+    	:type newInterval: Interval
+    	:rtype: List[Interval]
+    	"""
+

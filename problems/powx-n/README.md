@@ -1,5 +1,5 @@
-# Leetcode: Pow(x, n)     :BLOG:Basic:
 
+# Leetcode: Pow(x, n)     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Implement pow(x, n).
 ---
 
 Similar Problems:  
+
 -   [Super Pow](https://code.dennyzhang.com/super-pow)
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math), [#recursive](https://code.dennyzhang.com/tag/recursive)
@@ -26,7 +27,7 @@ Implement pow(x, n).
     Input: 2.10000, 3
     Output: 9.26100
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/powx-n)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/powx-n)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/powx-n/description/)  
 
@@ -43,17 +44,18 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(log(n)), Space O(1)
     class Solution(object):
         def myPow(self, x, n):
-            """
-            :type x: float
-            :type n: int
-            :rtype: float
-            """
-            if n == 0:
-                return 1
-            if n < 0:
-                n = -n
-                x = 1/x
-            if n %2 == 0:
-                return self.myPow(x*x, n/2)
-            else:
-                return x*self.myPow(x*x, (n-1)/2)
+    	"""
+    	:type x: float
+    	:type n: int
+    	:rtype: float
+    	"""
+    	if n == 0:
+    	    return 1
+    	if n < 0:
+    	    n = -n
+    	    x = 1/x
+    	if n %2 == 0:
+    	    return self.myPow(x*x, n/2)
+    	else:
+    	    return x*self.myPow(x*x, (n-1)/2)
+

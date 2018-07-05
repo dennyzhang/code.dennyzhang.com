@@ -1,5 +1,5 @@
-# Leetcode: Binary Tree Inorder Traversal     :BLOG:Basic:
 
+# Leetcode: Binary Tree Inorder Traversal     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Binary Tree Inorder Traversal
 ---
 
 Similar Problems:  
+
 -   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal)
 
 ---
@@ -24,7 +25,7 @@ For example:
        3
     return [1,3,2].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-inorder-traversal)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-inorder-traversal)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)  
 
@@ -42,48 +43,49 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def inorderTraversal(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
-            if root is None:
-                return []
-            res = []
-            stack = []
-            p = root
-            # initialize the stack
-            while p:
-                stack.append(p)
-                p = p.left
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
+    	if root is None:
+    	    return []
+    	res = []
+    	stack = []
+    	p = root
+    	# initialize the stack
+    	while p:
+    	    stack.append(p)
+    	    p = p.left
     
-            # DFS
-            while(len(stack) != 0):
-                top_item = stack.pop()
-                res.append(top_item.val)
-                if top_item.right:
-                    p = top_item.right
-                    while p:
-                        stack.append(p)
-                        p = p.left
-            return res
+    	# DFS
+    	while(len(stack) != 0):
+    	    top_item = stack.pop()
+    	    res.append(top_item.val)
+    	    if top_item.right:
+    		p = top_item.right
+    		while p:
+    		    stack.append(p)
+    		    p = p.left
+    	return res
     
         def inorderTraversal_v1(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
-            l = []
-            self.inorderTraversalRec(root, l)
-            return l
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
+    	l = []
+    	self.inorderTraversalRec(root, l)
+    	return l
     
         def inorderTraversalRec(self, root, list_value):
-            if root is None:
-                return
+    	if root is None:
+    	    return
     
-            if root.left is not None:
-                self.inorderTraversalRec(root.left, list_value)
+    	if root.left is not None:
+    	    self.inorderTraversalRec(root.left, list_value)
     
-            list_value.append(root.val)
+    	list_value.append(root.val)
     
-            if root.right is not None:
-                self.inorderTraversalRec(root.right, list_value)
+    	if root.right is not None:
+    	    self.inorderTraversalRec(root.right, list_value)
+

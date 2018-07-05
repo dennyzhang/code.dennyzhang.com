@@ -1,5 +1,5 @@
-# Leetcode: Additive Number     :BLOG:Medium:
 
+# Leetcode: Additive Number     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Additive Number
 ---
 
 Similar Problems:  
+
 -   [LintCode: K Decimal Addition](https://code.dennyzhang.com/k-decimal-addition)
 -   [Add Strings](https://code.dennyzhang.com/add-strings)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
@@ -34,7 +35,7 @@ Given a string containing only digits '0'-'9', write a function to determine if 
 Follow up:  
 How would you handle overflow for very large input integers?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/additive-number)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/additive-number)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/additive-number/description/)  
 
@@ -61,9 +62,9 @@ Leave me comments, if you have better ways to solve.
           return num == num3
         } else {
           if num[0:len(num3)] != num3 {
-            return false
+    	return false
           } else {
-            return isAdditiveNumber2(num2, num3, num[len(num3):])
+    	return isAdditiveNumber2(num2, num3, num[len(num3):])
           }
         }
       }
@@ -105,18 +106,18 @@ Leave me comments, if you have better ways to solve.
           res = num + res
         } else {
           for i := len(num)-1; i>=0; i-- {
-            v, _ := strconv.Atoi(string(num[i]))
-            v += carry
-            if v>= 10 {
-              carry = 1
-              v -= 10
-            } else {
-              carry = 0
-            }
-            res = fmt.Sprintf("%d", v) + res
+    	v, _ := strconv.Atoi(string(num[i]))
+    	v += carry
+    	if v>= 10 {
+    	  carry = 1
+    	  v -= 10
+    	} else {
+    	  carry = 0
+    	}
+    	res = fmt.Sprintf("%d", v) + res
           }
           if carry == 1 {
-            res = "1" + res
+    	res = "1" + res
           }
         }
       }
@@ -129,9 +130,10 @@ Leave me comments, if you have better ways to solve.
       for i := 1; i<len(num)-1; i++ {
         for j := i+1; j<len(num); j++ {
           if isAdditiveNumber2(num[0:i], num[i:j], num[j:]) {
-            return true
+    	return true
           }
         }
       }
       return false
     }
+

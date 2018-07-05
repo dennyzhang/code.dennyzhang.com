@@ -1,5 +1,5 @@
-# Leetcode: Global and Local Inversions     :BLOG:Amusing:
 
+# Leetcode: Global and Local Inversions     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Global and Local Inversions
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -38,7 +39,7 @@ Note:
 -   A will have length in range [1, 5000].
 -   The time limit for this problem has been reduced.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/global-and-local-inversions)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/global-and-local-inversions)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/global-and-local-inversions/description/)  
 
@@ -64,24 +65,24 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def isIdealPermutation(self, A):
-            """
-            :type A: List[int]
-            :rtype: bool
-            """
-            length = len(A)
-            if length <= 1: return True
-            stack = []
-            l = [-1] * length
-            for i in range(0, length-1):
-                if A[i+1] == A[i]+1:
-                    continue
-                # swap
-                if A[i+1] == A[i]-1:
-                    A[i],A[i+1] = A[i+1],A[i]
+    	"""
+    	:type A: List[int]
+    	:rtype: bool
+    	"""
+    	length = len(A)
+    	if length <= 1: return True
+    	stack = []
+    	l = [-1] * length
+    	for i in range(0, length-1):
+    	    if A[i+1] == A[i]+1:
+    		continue
+    	    # swap
+    	    if A[i+1] == A[i]-1:
+    		A[i],A[i+1] = A[i+1],A[i]
     
-            for i in xrange(length):
-                if A[i] != i: return False
-            return True
+    	for i in xrange(length):
+    	    if A[i] != i: return False
+    	return True
     
     # s = Solution()
     # print s.isIdealPermutation([2,0,1]) # false
@@ -89,3 +90,4 @@ Leave me comments, if you have better ways to solve.
     # print s.isIdealPermutation([1,2,0]) # false
     # print s.isIdealPermutation([0,2,1]) # true
     # print s.isIdealPermutation([]) # true
+

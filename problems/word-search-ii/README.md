@@ -1,5 +1,5 @@
-# Leetcode: Word Search II     :BLOG:Hard:
 
+# Leetcode: Word Search II     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Word Search II
 ---
 
 Similar Problems:  
+
 -   Tag: [#backtracking](https://code.dennyzhang.com/tag/backtracking)
 
 ---
@@ -39,7 +40,7 @@ You may assume that all inputs are consist of lowercase letters a-z.
     How about a Trie? If you would like to learn how to implement a basic
     trie, please work on this problem: Implement Trie (Prefix Tree) first.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-search-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-search-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/word-search-ii/description/)  
 
@@ -48,3 +49,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/word-search-ii
+

@@ -1,5 +1,5 @@
-# Leetcode: Degree of an Array     :BLOG:Basic:
 
+# Leetcode: Degree of an Array     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Degree of an Array
 ---
 
 Similar Problems:  
+
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -36,7 +37,7 @@ Note:
 -   nums.length will be between 1 and 50,000.
 -   nums[i] will be an integer between 0 and 49,999.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/degree-of-an-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/degree-of-an-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/degree-of-an-array/description/)  
 
@@ -45,3 +46,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/degree-of-an-array
+

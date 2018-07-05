@@ -1,5 +1,5 @@
-# Leetcode: Second Highest Salary     :BLOG:Medium:
 
+# Leetcode: Second Highest Salary     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Second Highest Salary
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -25,7 +26,7 @@ Can you write a SQL query to find the biggest number, which only appears once.
     | 1 |
     | 4 |
     | 5 |
-    | 6 |
+    | 6 | 
 
 For the sample data above, your query should return the following result:  
 
@@ -37,7 +38,7 @@ For the sample data above, your query should return the following result:
 Note:  
 If there is no such number, just output null.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/biggest-single-number)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/biggest-single-number)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/biggest-single-number/description/)  
 
@@ -53,3 +54,4 @@ Leave me comments, if you have better ways to solve.
         having count(1) = 1
         order by num desc
         limit 0, 1), null) as num
+

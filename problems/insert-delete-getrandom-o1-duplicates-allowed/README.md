@@ -1,5 +1,5 @@
-# Leetcode: Insert Delete GetRandom O(1) - Duplicates allowed     :BLOG:Hard:
 
+# Leetcode: Insert Delete GetRandom O(1) - Duplicates allowed     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Insert Delete GetRandom O(1) - Duplicates allowed
 ---
 
 Similar Problems:  
+
 -   [Max Stack](https://code.dennyzhang.com/max-stack)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
@@ -17,6 +18,7 @@ Similar Problems:
 Design a data structure that supports all following operations in average O(1) time.  
 
 Note: Duplicate elements are allowed.  
+
 1.  insert(val): Inserts an item val to the collection.
 2.  remove(val): Removes an item val from the collection if present.
 3.  getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains.
@@ -44,7 +46,7 @@ Example:
     // getRandom should return 1 and 2 both equally likely.
     collection.getRandom();
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-delete-getrandom-o1-duplicates-allowed)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/insert-delete-getrandom-o1-duplicates-allowed)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/)  
 
@@ -53,3 +55,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
+

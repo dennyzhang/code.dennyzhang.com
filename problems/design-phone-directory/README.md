@@ -1,5 +1,5 @@
-# Leetcode: Design Phone Directory     :BLOG:Medium:
 
+# Leetcode: Design Phone Directory     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Design Phone Directory
 ---
 
 Similar Problems:  
+
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
@@ -45,7 +46,7 @@ Example:
     // Number 2 is available again, return true.
     directory.check(2);
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-phone-directory)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-phone-directory)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/design-phone-directory/description/)  
 
@@ -61,39 +62,40 @@ Leave me comments, if you have better ways to solve.
     class PhoneDirectory(object):
     
         def __init__(self, maxNumbers):
-            """
-            Initialize your data structure here
-            @param maxNumbers - The maximum numbers that can be stored in the phone directory.
-            :type maxNumbers: int
-            """
-            self.free_set = set(range(0, maxNumbers))
+    	"""
+    	Initialize your data structure here
+    	@param maxNumbers - The maximum numbers that can be stored in the phone directory.
+    	:type maxNumbers: int
+    	"""
+    	self.free_set = set(range(0, maxNumbers))
     
         def get(self):
-            """
-            Provide a number which is not assigned to anyone.
-            @return - Return an available number. Return -1 if none is available.
-            :rtype: int
-            """
-            return self.free_set.pop() if len(self.free_set) != 0 else -1
+    	"""
+    	Provide a number which is not assigned to anyone.
+    	@return - Return an available number. Return -1 if none is available.
+    	:rtype: int
+    	"""
+    	return self.free_set.pop() if len(self.free_set) != 0 else -1
     
         def check(self, number):
-            """
-            Check if a number is available or not.
-            :type number: int
-            :rtype: bool
-            """
-            return number in self.free_set
+    	"""
+    	Check if a number is available or not.
+    	:type number: int
+    	:rtype: bool
+    	"""
+    	return number in self.free_set
     
         def release(self, number):
-            """
-            Recycle or release a number.
-            :type number: int
-            :rtype: void
-            """
-            if number not in self.free_set: self.free_set.add(number)
+    	"""
+    	Recycle or release a number.
+    	:type number: int
+    	:rtype: void
+    	"""
+    	if number not in self.free_set: self.free_set.add(number)
     
     # Your PhoneDirectory object will be instantiated and called as such:
     # obj = PhoneDirectory(maxNumbers)
     # param_1 = obj.get()
     # param_2 = obj.check(number)
     # obj.release(number)
+

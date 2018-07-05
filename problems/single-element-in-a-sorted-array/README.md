@@ -1,5 +1,5 @@
-# Leetcode: Single Element in a Sorted Array     :BLOG:Amusing:
 
+# Leetcode: Single Element in a Sorted Array     :BLOG:Amusing:
 
 ---
 
@@ -19,7 +19,7 @@ Given a sorted array consisting of only integers where every element appears twi
 
 Note: Your solution should run in O(log n) time and O(1) space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/single-element-in-a-sorted-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-element-in-a-sorted-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)  
 
@@ -38,32 +38,33 @@ Leave me comments, if you have better ways to solve.
     ## Sample Data: [1,1,2,3,3,4,4,8,8]
     class Solution(object):
         def singleNonDuplicate(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
-            length = len(nums)
-            left, right = 0, length - 1
-            while left <= right:
-                mid = left + (right-left)/2
-                if mid == 0 or mid == length-1:
-                    return nums[mid]
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	left, right = 0, length - 1
+    	while left <= right:
+    	    mid = left + (right-left)/2
+    	    if mid == 0 or mid == length-1:
+    		return nums[mid]
     
-                if nums[mid] != nums[mid-1] and nums[mid] != nums[mid+1]:
-                    return nums[mid]
-                else:
-                    firstMidVal = mid
-                    if nums[mid] == nums[mid-1]:
-                        firstMidVal = mid-1
-                    left_count = firstMidVal-left
-                    if left_count % 2 != 0:
-                        right = firstMidVal - 1
-                    else:
-                        left = firstMidVal + 2
-            return None
+    	    if nums[mid] != nums[mid-1] and nums[mid] != nums[mid+1]:
+    		return nums[mid]
+    	    else:
+    		firstMidVal = mid
+    		if nums[mid] == nums[mid-1]:
+    		    firstMidVal = mid-1
+    		left_count = firstMidVal-left
+    		if left_count % 2 != 0:
+    		    right = firstMidVal - 1
+    		else:
+    		    left = firstMidVal + 2
+    	return None
     
     # s = Solution()
     # print s.singleNonDuplicate([1,1,2])
     # print s.singleNonDuplicate([1,1,2,3,3,4,4,8,8])
     # print s.singleNonDuplicate([3,3,7,7,10,11,11])
     # print s.singleNonDuplicate([])
+

@@ -1,5 +1,5 @@
-# Leetcode: Matchsticks to Square     :BLOG:Medium:
 
+# Leetcode: Matchsticks to Square     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Matchsticks to Square
 ---
 
 Similar Problems:  
+
 -   [Split Array With Same Average](https://code.dennyzhang.com/split-array-with-same-average)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
@@ -32,10 +33,11 @@ Example 2:
     Explanation: You cannot find a way to form a square with all the matchsticks.
 
 Note:  
+
 -   The length sum of the given matchsticks is in the range of 0 to 10^9.
 -   The length of the given matchstick array will not exceed 15.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/matchsticks-to-square)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/matchsticks-to-square)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/matchsticks-to-square/description/)  
 
@@ -44,3 +46,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/matchsticks-to-square
+

@@ -1,5 +1,5 @@
-# Leetcode: Number Complement     :BLOG:Basic:
 
+# Leetcode: Number Complement     :BLOG:Basic:
 
 ---
 
@@ -23,7 +23,7 @@ You could assume no leading zero bit in the integer's binary representation.
     Output: 0
     Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-complement)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-complement)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-complement/description/)  
 
@@ -34,24 +34,25 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/number-complement
     class Solution(object):
         def findComplement(self, num):
-            """
-            :type num: int
-            :rtype: int
-            """
-            i = num
-            ret = 0
-            digit_count = 0
+    	"""
+    	:type num: int
+    	:rtype: int
+    	"""
+    	i = num
+    	ret = 0
+    	digit_count = 0
     
-            while i != 0:
-                reverse_current_digit = 1 ^ (i % 2)
-                ret = (reverse_current_digit << digit_count) | ret
-                digit_count = digit_count + 1
-                i = i >> 1
-                # print("i: %i, ret: %d, digit_count: %d, reverse_current_digit: %d", i, ret, digit_count, reverse_current_digit)
+    	while i != 0:
+    	    reverse_current_digit = 1 ^ (i % 2)
+    	    ret = (reverse_current_digit << digit_count) | ret
+    	    digit_count = digit_count + 1
+    	    i = i >> 1
+    	    # print("i: %i, ret: %d, digit_count: %d, reverse_current_digit: %d", i, ret, digit_count, reverse_current_digit)
     
-            return ret
+    	return ret
     if __name__ == '__main__':
         s = Solution()
         print s.findComplement(5) # 2
         print s.findComplement(3) # 0
         print s.findComplement(1) # 0
+

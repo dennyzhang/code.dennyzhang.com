@@ -1,5 +1,5 @@
-# Leetcode: 2 Keys Keyboard     :BLOG:Amusing:
 
+# Leetcode: 2 Keys Keyboard     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@
 ---
 
 Similar Problems:  
+
 -   [Integer Break](https://code.dennyzhang.com/integer-break)
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
@@ -32,9 +33,10 @@ Example 1:
     In step 3, we use Paste operation to get 'AAA'.
 
 Note:  
+
 -   The n will be in the range [1, 1000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/2-keys-keyboard)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/2-keys-keyboard)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/2-keys-keyboard/description/)  
 
@@ -48,17 +50,18 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n*n), Space O(n)
     class Solution:
         def minSteps(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            d = list(range(0, n+1))
-            d[1] = 0
-            # from left to right
-            for i in range(2, n+1):
-                for j in range(i-1, 1, -1):
-                    # why this solution holds?
-                    if i%j == 0:
-                        d[i]= d[j] + int(i/j)
-                        break
-            return d[n]
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	d = list(range(0, n+1))
+    	d[1] = 0
+    	# from left to right
+    	for i in range(2, n+1):
+    	    for j in range(i-1, 1, -1):
+    		# why this solution holds?
+    		if i%j == 0:
+    		    d[i]= d[j] + int(i/j)
+    		    break
+    	return d[n]
+

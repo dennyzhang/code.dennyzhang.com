@@ -1,5 +1,5 @@
-# Leetcode: House Robber III     :BLOG:Hard:
 
+# Leetcode: House Robber III     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Crime activities of House Robbers.
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -33,7 +34,7 @@ Determine the maximum amount of money the thief can rob tonight without alerting
      1   3   1
     Maximum amount of money the thief can rob = 4 + 5 = 9.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/house-robber-iii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/house-robber-iii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/house-robber-iii/description/)  
 
@@ -42,3 +43,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/house-robber-iii
+

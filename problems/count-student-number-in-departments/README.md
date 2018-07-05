@@ -1,5 +1,5 @@
-# Leetcode: Count Student Number in Departments     :BLOG:Medium:
 
+# Leetcode: Count Student Number in Departments     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Count Student Number in Departments
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -63,7 +64,7 @@ The Output should be:
     | Science     | 1              |
     | Law         | 0              |
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-student-number-in-departments)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-student-number-in-departments)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/count-student-number-in-departments/description/)  
 
@@ -78,3 +79,4 @@ Leave me comments, if you have better ways to solve.
     on department.dept_id = student.dept_id
     group by department.dept_id
     order by student_number desc, dept_name
+

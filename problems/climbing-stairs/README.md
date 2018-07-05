@@ -1,5 +1,5 @@
-# Leetcode: Climbing Stairs     :BLOG:Amusing:
 
+# Leetcode: Climbing Stairs     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Simple DP
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -38,7 +39,7 @@ Example 2:
     2. 1 step + 2 steps
     3. 2 steps + 1 step
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/climbing-stairs)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/climbing-stairs)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/climbing-stairs/description/)  
 
@@ -52,18 +53,19 @@ Leave me comments, if you have better ways to solve.
     ## Basic Ideas: fibonacci
     class Solution(object):
         def climbStairs(self, n):
-            """
-            :type n: int
-            :rtype: int
-            """
-            if n == 1:
-                return 1
-            if n == 2:
-                return 2
-            value1 = 1
-            value2 = 2
-            for i in range(3, n):
-                value = value2
-                value2 = value1 + value2
-                value1 = value
-            return value1 + value2
+    	"""
+    	:type n: int
+    	:rtype: int
+    	"""
+    	if n == 1:
+    	    return 1
+    	if n == 2:
+    	    return 2
+    	value1 = 1
+    	value2 = 2
+    	for i in range(3, n):
+    	    value = value2
+    	    value2 = value1 + value2
+    	    value1 = value
+    	return value1 + value2
+

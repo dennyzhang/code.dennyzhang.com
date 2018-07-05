@@ -1,5 +1,5 @@
-# Leetcode: Distribute Candies     :BLOG:Basic:
 
+# Leetcode: Distribute Candies     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Distribute Candies
 ---
 
 Similar Problems:  
+
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
 
 ---
@@ -20,20 +21,20 @@ Given an integer array with even length, where different numbers in this array r
     Explanation:
     There are three different kinds of candies (1, 2 and 3), and two candies for each kind.
     Optimal distribution: The sister has candies [1,2,3] and the brother has candies [1,2,3], too. 
-    The sister has three different kinds of candies.
+    The sister has three different kinds of candies. 
 
     Example 2:
     Input: candies = [1,1,2,3]
     Output: 2
     Explanation: For example, the sister has candies [2,3] and the brother has candies [1,1]. 
-    The sister has two different kinds of candies, the brother has only one kind of candies.
+    The sister has two different kinds of candies, the brother has only one kind of candies. 
 
 Note:  
 
 1.  The length of the given array is in range [2, 10,000], and will be even.
 2.  The number in given array is in range [-100,000, 100,000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/distribute-candies)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/distribute-candies)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/distribute-candies/description/)  
 
@@ -49,8 +50,9 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def distributeCandies(self, candies):
-            """
-            :type candies: List[int]
-            :rtype: int
-            """
-            return min(len(candies)/2, len(set(candies)))
+    	"""
+    	:type candies: List[int]
+    	:rtype: int
+    	"""
+    	return min(len(candies)/2, len(set(candies)))
+

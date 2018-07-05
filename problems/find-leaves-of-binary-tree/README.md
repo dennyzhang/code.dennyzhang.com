@@ -1,5 +1,5 @@
-# Leetcode: Find Leaves of Binary Tree     :BLOG:Medium:
 
+# Leetcode: Find Leaves of Binary Tree     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Find Leaves of Binary Tree
 ---
 
 Similar Problems:  
+
 -   [Binary Tree Vertical Order Traversal](https://code.dennyzhang.com/binary-tree-vertical-order-traversal)
 -   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -30,16 +31,16 @@ Explanation:
     1. Removing the leaves [4, 5, 3] would result in this tree:
               1
              / 
-            2
+            2          
 
     2. Now removing the leaf [2] would result in this tree:
-              1
+              1  
 
     3. Now removing the leaf [1] would result in the empty tree:
               []         
     Returns [4, 5, 3], [2], [1].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-leaves-of-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-leaves-of-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-leaves-of-binary-tree/description/)  
 
@@ -70,40 +71,41 @@ Leave me comments, if you have better ways to solve.
     
     class Solution:
         def findLeaves(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[List[int]]
-            """
-            import collections
-            d = collections.defaultdict(lambda:[0, None])
-            queue = collections.deque()
-            def helper(node):
-                if node is None: return
-                child_count = 0
-                if node.left:
-                    child_count +=1
-                    d[node.left][1] = node
-                    helper(node.left)
-                if node.right:
-                    child_count += 1
-                    d[node.right][1] = node
-                    helper(node.right)
-                d[node][0] = child_count
-                if child_count == 0:
-                    queue.append(node)
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[List[int]]
+    	"""
+    	import collections
+    	d = collections.defaultdict(lambda:[0, None])
+    	queue = collections.deque()
+    	def helper(node):
+    	    if node is None: return
+    	    child_count = 0
+    	    if node.left:
+    		child_count +=1
+    		d[node.left][1] = node
+    		helper(node.left)
+    	    if node.right:
+    		child_count += 1
+    		d[node.right][1] = node
+    		helper(node.right)
+    	    d[node][0] = child_count
+    	    if child_count == 0:
+    		queue.append(node)
     
-            # initialize queue and dictionary
-            helper(root)
-            res = []
-            # reversed BFS
-            while len(queue) != 0:
-                nodes = []
-                for k in range(len(queue)):
-                    node = queue.popleft()
-                    nodes.append(node.val)
-                    parent = d[node][1]
-                    d[parent][0] -= 1
-                    # Identity the next candidates
-                    if d[parent][0] == 0: queue.append(parent)
-                res.append(nodes)
-            return res
+    	# initialize queue and dictionary
+    	helper(root)
+    	res = []
+    	# reversed BFS
+    	while len(queue) != 0:
+    	    nodes = []
+    	    for k in range(len(queue)):
+    		node = queue.popleft()
+    		nodes.append(node.val)
+    		parent = d[node][1]
+    		d[parent][0] -= 1
+    		# Identity the next candidates
+    		if d[parent][0] == 0: queue.append(parent)
+    	    res.append(nodes)
+    	return res
+

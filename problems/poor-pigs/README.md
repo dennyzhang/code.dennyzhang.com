@@ -1,5 +1,5 @@
-# Leetcode: Poor Pigs     :BLOG:Hard:
 
+# Leetcode: Poor Pigs     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Identity the poison bucket with mininum pigs
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
@@ -20,7 +21,7 @@ Follow-up:
 
 If there are n buckets and a pig drinking poison will die within m minutes, how many pigs (x) you need to figure out the "poison" bucket within p minutes? There is exact one bucket with poison.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/poor-pigs)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/poor-pigs)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/poor-pigs/description/)  
 
@@ -31,9 +32,10 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/poor-pigs
     class Solution(object):
         def poorPigs(self, buckets, minutesToDie, minutesToTest):
-            """
-            :type buckets: int
-            :type minutesToDie: int
-            :type minutesToTest: int
-            :rtype: int
-            """
+    	"""
+    	:type buckets: int
+    	:type minutesToDie: int
+    	:type minutesToTest: int
+    	:rtype: int
+    	"""
+

@@ -1,5 +1,5 @@
-# Leetcode: Self Dividing Numbers     :BLOG:Medium:
 
+# Leetcode: Self Dividing Numbers     :BLOG:Medium:
 
 ---
 
@@ -24,7 +24,7 @@ Note:
 
 The boundaries of each input argument are 1 <= left <= right <= 10000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/self-dividing-numbers)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/self-dividing-numbers)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/self-dividing-numbers/description/)  
 
@@ -35,8 +35,9 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/self-dividing-numbers
     class Solution(object):
         def selfDividingNumbers(self, left, right):
-            """
-            :type left: int
-            :type right: int
-            :rtype: List[int]
-            """
+    	"""
+    	:type left: int
+    	:type right: int
+    	:rtype: List[int]
+    	"""
+

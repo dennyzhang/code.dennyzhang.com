@@ -1,5 +1,5 @@
-# Leetcode: Length of Last Word     :BLOG:Basic:
 
+# Leetcode: Length of Last Word     :BLOG:Basic:
 
 ---
 
@@ -18,7 +18,7 @@ Note: A word is defined as a character sequence consists of non-space characters
     Input: "Hello World"
     Output: 5
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/length-of-last-word)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/length-of-last-word)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/length-of-last-word/description/)  
 
@@ -29,10 +29,11 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/length-of-last-word
     class Solution(object):
         def lengthOfLastWord(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            s = s.strip(" ")
-            word_list = s.split(" ")
-            return len(word_list[-1])
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	s = s.strip(" ")
+    	word_list = s.split(" ")
+    	return len(word_list[-1])
+

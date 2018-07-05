@@ -60,7 +60,7 @@ Note:
 3.  The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
 4.  The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/the-maze)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/the-maze)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/the-maze/description/)  
 

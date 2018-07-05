@@ -1,5 +1,5 @@
-# Leetcode: Exclusive Time of Functions     :BLOG:Basic:
 
+# Leetcode: Exclusive Time of Functions     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Exclusive Time of Functions
 ---
 
 Similar Problems:  
+
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
 ---
@@ -36,13 +37,14 @@ Exclusive time of a function is defined as the time spent within this function, 
     So function 0 totally execute 2 + 1 = 3 units of time, and function 1 totally execute 4 units of time.
 
 Note:  
+
 1.  Input logs will be sorted by timestamp, NOT log id.
 2.  Your output should be sorted by function id, which means the 0th element of your output corresponds to the exclusive time of function 0.
 3.  Two functions won't start or end at the same time.
 4.  Functions could be called recursively, and will always end.
 5.  1 <= n <= 100
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/exclusive-time-of-functions)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/exclusive-time-of-functions)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/exclusive-time-of-functions/description/)  
 
@@ -53,3 +55,4 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/exclusive-time-of-functions
 
 ---
+

@@ -1,5 +1,5 @@
-# Leetcode: Count Complete Tree Nodes     :BLOG:Hard:
 
+# Leetcode: Count Complete Tree Nodes     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Count Complete Tree Nodes
 ---
 
 Similar Problems:  
+
 -   [Review: Recursive Problems](https://code.dennyzhang.com/review-recursive), [Tag: #recursive](https://code.dennyzhang.com/tag/recursive)
 
 ---
@@ -17,7 +18,7 @@ Given a complete binary tree, count the number of nodes.
 Definition of a complete binary tree from [Wikipedia](https://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees):  
 In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-complete-tree-nodes)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-complete-tree-nodes)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/count-complete-tree-nodes/description/)  
 
@@ -47,24 +48,25 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def countNodes(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            if root is None:
-                return 0
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	if root is None:
+    	    return 0
     
-            # root node is with height 0
-            lh, rh = 0, 0
-            lnode, rnode = root, root
-            while lnode:
-                lnode = lnode.left
-                lh += 1
-            while rnode:
-                rnode = rnode.right
-                rh += 1
+    	# root node is with height 0
+    	lh, rh = 0, 0
+    	lnode, rnode = root, root
+    	while lnode:
+    	    lnode = lnode.left
+    	    lh += 1
+    	while rnode:
+    	    rnode = rnode.right
+    	    rh += 1
     
-            if lh == rh:
-                return pow(2, lh) - 1
-            else:
-                return self.countNodes(root.left) + self.countNodes(root.right) + 1
+    	if lh == rh:
+    	    return pow(2, lh) - 1
+    	else:
+    	    return self.countNodes(root.left) + self.countNodes(root.right) + 1
+

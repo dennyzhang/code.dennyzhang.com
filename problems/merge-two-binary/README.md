@@ -1,5 +1,5 @@
-# Leetcode: Merge Two Binary Trees     :BLOG:Medium:
 
+# Leetcode: Merge Two Binary Trees     :BLOG:Medium:
 
 ---
 
@@ -13,7 +13,7 @@ You need to merge them into a new binary tree. The merge rule is that if two nod
 
     Example 1:
     Input: 
-            Tree 1                     Tree 2                  
+    	Tree 1                     Tree 2                  
               1                         2                             
              / \                       / \                            
             3   2                     1   3                        
@@ -21,15 +21,15 @@ You need to merge them into a new binary tree. The merge rule is that if two nod
           5                             4   7                  
     Output: 
     Merged tree:
-                 3
-                / \
-               4   5
-              / \   \ 
-             5   4   7
+    	     3
+    	    / \
+    	   4   5
+    	  / \   \ 
+    	 5   4   7
 
 Note: The merging process must start from the root nodes of both trees.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/merge-two-binary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/merge-two-binary)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/merge-two-binary/description/)  
 
@@ -47,8 +47,9 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def mergeTrees(self, t1, t2):
-            """
-            :type t1: TreeNode
-            :type t2: TreeNode
-            :rtype: TreeNode
-            """
+    	"""
+    	:type t1: TreeNode
+    	:type t2: TreeNode
+    	:rtype: TreeNode
+    	"""
+

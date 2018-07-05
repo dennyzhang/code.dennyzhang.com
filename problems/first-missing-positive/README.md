@@ -1,5 +1,5 @@
-# Leetcode: First Missing Positive     :BLOG:Hard:
 
+# Leetcode: First Missing Positive     :BLOG:Hard:
 
 ---
 
@@ -15,7 +15,7 @@ Given an unsorted integer array, find the first missing positive integer.
 
 Your algorithm should run in O(n) time and uses constant space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/first-missing-positive)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/first-missing-positive)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/first-missing-positive/description/)  
 
@@ -33,31 +33,32 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def firstMissingPositive(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
-            length = len(nums)
-            # set negative elements to 0s, and set elements bigger than length to 0s
-            for i in xrange(length):
-                if nums[i] < 0 or nums[i] > length:
-                    nums[i] = 0
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	# set negative elements to 0s, and set elements bigger than length to 0s
+    	for i in xrange(length):
+    	    if nums[i] < 0 or nums[i] > length:
+    		nums[i] = 0
     
-            i = 0
-            while i < length:
-                j = nums[i] - 1
-                if nums[i] == i+1 or nums[i] == 0 \
-                   or nums[i] == nums[j]:
-                    i = i + 1
-                else:
-                    # swap
-                    nums[i], nums[j] = nums[j], nums[i]
+    	i = 0
+    	while i < length:
+    	    j = nums[i] - 1
+    	    if nums[i] == i+1 or nums[i] == 0 \
+    	       or nums[i] == nums[j]:
+    		i = i + 1
+    	    else:
+    		# swap
+    		nums[i], nums[j] = nums[j], nums[i]
     
-            # get result
-            for i in xrange(length):
-                if nums[i] != i+1:
-                    return i+1
-            return length+1
+    	# get result
+    	for i in xrange(length):
+    	    if nums[i] != i+1:
+    		return i+1
+    	return length+1
     
     # s = Solution()
     # print s.firstMissingPositive([3,4,-1,1])
+

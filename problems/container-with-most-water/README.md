@@ -1,5 +1,5 @@
-# Leetcode: Container With Most Water     :BLOG:Medium:
 
+# Leetcode: Container With Most Water     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Get the most water from containers
 ---
 
 Similar Problems:  
+
 -   Tag: [#trappingrain](https://code.dennyzhang.com/tag/trappingrain), [#twopointer](https://code.dennyzhang.com/tag/twopointer)
 
 ---
@@ -16,7 +17,7 @@ Given n non-negative integers a1, a2, &#x2026;, an, where each represents a poin
 
 Note: You may not slant the container and n is at least 2.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/container-with-most-water)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/container-with-most-water)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/container-with-most-water/description/)  
 
@@ -42,14 +43,14 @@ Leave me comments, if you have better ways to solve.
         l, r := 0, len(height)-1
         res, v := 0, 0
         for l<r {
-            if height[l] <= height[r] {
-                v = height[l]*(r-l)
-                l++
-            } else {
-                v = height[r]*(r-l)
-                r--
-            }
-            if v>res { res = v }
+    	if height[l] <= height[r] {
+    	    v = height[l]*(r-l)
+    	    l++
+    	} else {
+    	    v = height[r]*(r-l)
+    	    r--
+    	}
+    	if v>res { res = v }
         }
         return res
     }
@@ -68,18 +69,19 @@ Leave me comments, if you have better ways to solve.
         l, r := 0, len(height)-1
         res, v := 0, 0
         for l<r {
-            lmax, rmax := height[l], height[r]
-            if height[l] <= height[r] {
-                v = height[l]*(r-l)
-            } else {
-                v = height[r]*(r-l)
-            }
-            if v>res { res = v }
-            if height[l] <= height[r] {
-                for l<r && height[l]<=lmax { l++ }
-            } else {
-                for l<r && height[r]<=rmax { r-- }
-            }
+    	lmax, rmax := height[l], height[r]
+    	if height[l] <= height[r] {
+    	    v = height[l]*(r-l)
+    	} else {
+    	    v = height[r]*(r-l)
+    	}
+    	if v>res { res = v }
+    	if height[l] <= height[r] {
+    	    for l<r && height[l]<=lmax { l++ }
+    	} else {
+    	    for l<r && height[r]<=rmax { r-- }
+    	}
         }
         return res
     }
+

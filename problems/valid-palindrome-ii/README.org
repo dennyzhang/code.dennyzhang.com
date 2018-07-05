@@ -1,4 +1,4 @@
-* Leetcode: Valid Palindrome II                                 :BLOG:Medium:
+* Leetcode: Valid Palindrome II                                 :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -8,7 +8,8 @@
 Valid Palindrome II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
+- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
 #+BEGIN_EXAMPLE

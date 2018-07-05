@@ -1,5 +1,5 @@
-# Leetcode: Two Sum III - Data structure design     :BLOG:Medium:
 
+# Leetcode: Two Sum III - Data structure design     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Two Sum III - Data structure design
 ---
 
 Similar Problems:  
+
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
@@ -24,7 +25,7 @@ For example,
     find(4) -> true
     find(7) -> false
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/two-sum-iii-data-structure-design)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/two-sum-iii-data-structure-design)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/two-sum-iii-data-structure-design/description/)  
 
@@ -40,34 +41,35 @@ Leave me comments, if you have better ways to solve.
     class TwoSum:
     
         def __init__(self):
-            """
-            Initialize your data structure here.
-            """
-            self.m = collections.defaultdict(lambda: 0)
+    	"""
+    	Initialize your data structure here.
+    	"""
+    	self.m = collections.defaultdict(lambda: 0)
     
         def add(self, number):
-            """
-            Add the number to an internal data structure..
-            :type number: int
-            :rtype: void
-            """
-            self.m[number] += 1
+    	"""
+    	Add the number to an internal data structure..
+    	:type number: int
+    	:rtype: void
+    	"""
+    	self.m[number] += 1
     
         def find(self, value):
-            """
-            Find if there exists any pair of numbers which sum is equal to the value.
-            :type value: int
-            :rtype: bool
-            """
-            for v in self.m:
-                complement_v = value - v
-                if v == complement_v:
-                    if self.m[v] >= 2: return True
-                else:
-                    if complement_v in self.m: return True
-            return False
+    	"""
+    	Find if there exists any pair of numbers which sum is equal to the value.
+    	:type value: int
+    	:rtype: bool
+    	"""
+    	for v in self.m:
+    	    complement_v = value - v
+    	    if v == complement_v:
+    		if self.m[v] >= 2: return True
+    	    else:
+    		if complement_v in self.m: return True
+    	return False
     
     # Your TwoSum object will be instantiated and called as such:
     # obj = TwoSum()
     # obj.add(number)
     # param_2 = obj.find(value)
+

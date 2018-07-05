@@ -1,5 +1,5 @@
-# Leetcode: Teemo Attacking     :BLOG:Medium:
 
+# Leetcode: Teemo Attacking     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Teemo Attacking
 ---
 
 Similar Problems:  
+
 -   [Merge Intervals](https://code.dennyzhang.com/merge-intervals)
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval)
 -   Tag: [#interval](https://code.dennyzhang.com/tag/interval), [#game](https://code.dennyzhang.com/tag/game), [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#classic](https://code.dennyzhang.com/tag/classic)
@@ -38,10 +39,11 @@ Example 2:
     So you finally need to output 3.
 
 Note:  
+
 1.  You may assume the length of given time series array won't exceed 10000.
 2.  You may assume the numbers in the Teemo's attacking time series and his poisoning time duration per attacking are non-negative integers, which won't exceed 10,000,000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/teemo-attacking)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/teemo-attacking)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/teemo-attacking/description/)  
 
@@ -74,3 +76,4 @@ Leave me comments, if you have better ways to solve.
       res += end-start
       return res
     }
+

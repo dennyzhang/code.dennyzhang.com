@@ -1,5 +1,5 @@
-# Leetcode: Valid Palindrome II     :BLOG:Medium:
 
+# Leetcode: Valid Palindrome II     :BLOG:Basic:
 
 ---
 
@@ -8,7 +8,9 @@ Valid Palindrome II
 ---
 
 Similar Problems:  
--   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
+
+-   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome)
+-   Tag: [#palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
 
@@ -26,7 +28,7 @@ Given a non-empty string s, you may delete at most one character. Judge whether 
 Note:  
 The string will only contain lowercase characters a-z. The maximum length of the string is 50000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-palindrome-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-palindrome-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-palindrome-ii/description/)  
 
@@ -40,27 +42,28 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution(object):
         def validPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: bool
-            """
-            if self.isPalindrome(s): return True
-            l, r = 0, len(s)-1
-            while l<r:
-                if s[l]!=s[r]:
-                    # keep right
-                    if self.isPalindrome(s[l+1:r+1]): return True
-                    # keep left
-                    if self.isPalindrome(s[l:r]): return True
-                    return False
-                l,r = l+1, r-1
-            return True
+    	"""
+    	:type s: str
+    	:rtype: bool
+    	"""
+    	if self.isPalindrome(s): return True
+    	l, r = 0, len(s)-1
+    	while l<r:
+    	    if s[l]!=s[r]:
+    		# keep right
+    		if self.isPalindrome(s[l+1:r+1]): return True
+    		# keep left
+    		if self.isPalindrome(s[l:r]): return True
+    		return False
+    	    l,r = l+1, r-1
+    	return True
     
         def isPalindrome(self, s):
-            length = len(s)
-            if length == 0: return True
-            l, r = 0, length-1
-            while l<r:
-                if s[l]!=s[r]: return False
-                l, r = l+1, r-1
-            return True
+    	length = len(s)
+    	if length == 0: return True
+    	l, r = 0, length-1
+    	while l<r:
+    	    if s[l]!=s[r]: return False
+    	    l, r = l+1, r-1
+    	return True
+

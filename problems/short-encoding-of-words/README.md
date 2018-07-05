@@ -1,5 +1,5 @@
-# Leetcode: Short Encoding of Words     :BLOG:Medium:
 
+# Leetcode: Short Encoding of Words     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Short Encoding of Words
 ---
 
 Similar Problems:  
+
 -   [Review: Trie Tree Problems](https://code.dennyzhang.com/review-trie)
 -   Tag: [#trie](https://code.dennyzhang.com/tag/trie)
 
@@ -33,7 +34,7 @@ Note:
 -   1 <= words[i].length <= 7.
 -   Each word has only lowercase letters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/short-encoding-of-words)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/short-encoding-of-words)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/short-encoding-of-words/description/)  
 
@@ -65,31 +66,32 @@ Leave me comments, if you have better ways to solve.
     
         root := TrieNode{children: make(map[byte]*TrieNode)}
         for _, word := range words {
-            p := &root
-            for i:=len(word)-1; i>=0; i-- {
-                ch := word[i]
-                q, status := p.children[ch]
-                if status == false {
-                    q = &TrieNode{children: make(map[byte]*TrieNode)}
-                    p.children[ch] = q
-                }
-                p = q
-                res += 1
-                if p.is_leaf == true {
-                    // revert
-                    p.is_leaf = false
-                    leaf_count -= 1
-                    res -= (len(word) - i)
-                }
-            }
-            p.is_leaf = true
-            leaf_count += 1
-            if len(p.children) != 0 {
-                // revert
-                p.is_leaf = false
-                leaf_count -= 1
-                res -= len(word)
-            }
+    	p := &root
+    	for i:=len(word)-1; i>=0; i-- {
+    	    ch := word[i]
+    	    q, status := p.children[ch]
+    	    if status == false {
+    		q = &TrieNode{children: make(map[byte]*TrieNode)}
+    		p.children[ch] = q
+    	    }
+    	    p = q
+    	    res += 1
+    	    if p.is_leaf == true {
+    		// revert
+    		p.is_leaf = false
+    		leaf_count -= 1
+    		res -= (len(word) - i)
+    	    }
+    	}
+    	p.is_leaf = true
+    	leaf_count += 1
+    	if len(p.children) != 0 {
+    	    // revert
+    	    p.is_leaf = false
+    	    leaf_count -= 1
+    	    res -= len(word)
+    	}
         }
         return res + leaf_count
     }
+

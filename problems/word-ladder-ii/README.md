@@ -1,5 +1,5 @@
-# Leetcode: Word Ladder II     :BLOG:Hard:
 
+# Leetcode: Word Ladder II     :BLOG:Hard:
 
 ---
 
@@ -25,6 +25,7 @@ Each transformed word must exist in the word list. Note that beginWord is not a 
       ]
 
 Note:  
+
 -   Return an empty list if there is no such transformation sequence.
 -   All words have the same length.
 -   All words contain only lowercase alphabetic characters.
@@ -34,7 +35,7 @@ Note:
 UPDATE (2017/1/20):  
 The wordList parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-ladder-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-ladder-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/word-ladder-ii/description/)  
 
@@ -43,3 +44,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/word-ladder-ii
+

@@ -1,5 +1,5 @@
-# Leetcode: Employee Bonus     :BLOG:Medium:
 
+# Leetcode: Employee Bonus     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Employee Bonus
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -46,7 +47,7 @@ Example ouput:
     | Brad  | null  |
     +-------+-------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employee-bonus)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/employee-bonus)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/employee-bonus/description/)  
 
@@ -59,3 +60,4 @@ Leave me comments, if you have better ways to solve.
     from Employee left join Bonus
     on Employee.empId = Bonus.empId
     where bonus<1000 or bonus is null;
+

@@ -1,5 +1,5 @@
-# Leetcode: Bricks Falling When Hit     :BLOG:Hard:
 
+# Leetcode: Bricks Falling When Hit     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Bricks Falling When Hit
 ---
 
 Similar Problems:  
+
 -   Tag: [#graph](https://code.dennyzhang.com/tag/graph), [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -43,7 +44,7 @@ Note:
 -   It is guaranteed that each erasure will be different from any other erasure, and located inside the grid.
 -   An erasure may refer to a location with no brick - if it does, no bricks drop.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bricks-falling-when-hit)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bricks-falling-when-hit)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/bricks-falling-when-hit/description/)  
 
@@ -74,30 +75,31 @@ Leave me comments, if you have better ways to solve.
         row_count, col_count := len(grid), len(grid[0])
         res := []int{}
         for _, position := range hits {
-            x, y := position[0], position[1]
-            count := 0
-            if grid[x][y] == 1 {
-                grid[x][y] = 0
-                // explore in 4 directions
-                for _, offset := range [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}} {
-                    x2, y2 := x+offset[0], y+offset[1]
-                    visits = [][]int{}
-                    is_ok := dfs(x2, y2, grid, row_count, col_count)
-                    // fmt.Println("x2:", x2, " y2:", y2, " is_ok:", is_ok, " visits:", visits)
-                    if is_ok == true {
-                        // undo
-                        for k, _ := range visits {
-                            grid[visits[k][0]][visits[k][1]] = 1
-                        }
-                    } else {
-                        count += len(visits)
-                        for k, _ := range visits {
-                            grid[visits[k][0]][visits[k][1]] = 0
-                        }
-                    }
-                }
-            }
-            res = append(res, count)
+    	x, y := position[0], position[1]
+    	count := 0
+    	if grid[x][y] == 1 {
+    	    grid[x][y] = 0
+    	    // explore in 4 directions
+    	    for _, offset := range [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}} {
+    		x2, y2 := x+offset[0], y+offset[1]
+    		visits = [][]int{}
+    		is_ok := dfs(x2, y2, grid, row_count, col_count)
+    		// fmt.Println("x2:", x2, " y2:", y2, " is_ok:", is_ok, " visits:", visits)
+    		if is_ok == true {
+    		    // undo
+    		    for k, _ := range visits {
+    			grid[visits[k][0]][visits[k][1]] = 1
+    		    }
+    		} else {
+    		    count += len(visits)
+    		    for k, _ := range visits {
+    			grid[visits[k][0]][visits[k][1]] = 0
+    		    }
+    		}
+    	    }
+    	}
+    	res = append(res, count)
         }
         return res
     }
+

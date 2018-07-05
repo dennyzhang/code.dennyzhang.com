@@ -1,5 +1,5 @@
-# Leetcode: Find Pivot Index     :BLOG:Basic:
 
+# Leetcode: Find Pivot Index     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Find Pivot Index
 ---
 
 Similar Problems:  
+
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist), [Tag: #linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -40,7 +41,7 @@ Note:
 -   The length of nums will be in the range [0, 10000].
 -   Each element nums[i] will be an integer in the range [-1000, 1000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-pivot-index)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-pivot-index)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-pivot-index/description/)  
 
@@ -49,3 +50,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/find-pivot-index
+

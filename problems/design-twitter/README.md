@@ -1,5 +1,5 @@
-# Leetcode: Design Twitter     :BLOG:Medium:
 
+# Leetcode: Design Twitter     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Design Twitter
 ---
 
 Similar Problems:  
+
 -   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
@@ -48,7 +49,7 @@ Example:
     // since user 1 is no longer following user 2.
     twitter.getNewsFeed(1);
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-twitter)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-twitter)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/design-twitter/description/)  
 
@@ -71,68 +72,68 @@ Leave me comments, if you have better ways to solve.
     class Twitter:
     
         def __init__(self):
-            """
-            Initialize your data structure here.
-            """
-            self.id = 0
-            self.tweet_dict = collections.defaultdict(collections.deque)
-            self.follow_dict = collections.defaultdict(lambda: set([]))
+    	"""
+    	Initialize your data structure here.
+    	"""
+    	self.id = 0
+    	self.tweet_dict = collections.defaultdict(collections.deque)
+    	self.follow_dict = collections.defaultdict(lambda: set([]))
     
         def postTweet(self, userId, tweetId):
-            """
-            Compose a new tweet.
-            :type userId: int
-            :type tweetId: int
-            :rtype: void
-            """
-            self.tweet_dict[userId].append((self.id, tweetId))
-            # only hold 10 tweets
-            if len(self.tweet_dict[userId]) > 10: self.tweet_dict[userId].popleft()
-            self.id += 1
+    	"""
+    	Compose a new tweet.
+    	:type userId: int
+    	:type tweetId: int
+    	:rtype: void
+    	"""
+    	self.tweet_dict[userId].append((self.id, tweetId))
+    	# only hold 10 tweets
+    	if len(self.tweet_dict[userId]) > 10: self.tweet_dict[userId].popleft()
+    	self.id += 1
     
         def getNewsFeed(self, userId):
-            """
-            Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
-            :type userId: int
-            :rtype: List[int]
-            """
-            # min heap
-            q = []
-            heapq.heapify(q)
-            for (id, tweetId) in self.tweet_dict[userId]:
-                heapq.heappush(q, (id, tweetId))
-                if len(q) > 10: heapq.heappop(q)
-            for followee in self.follow_dict[userId]:
-                for (id, tweetId) in self.tweet_dict[followee]:
-                    heapq.heappush(q, (id, tweetId))
-                    if len(q) > 10: heapq.heappop(q)
-            res = []
-            while len(q) != 0:
-                (id, tweetId) = heapq.heappop(q)
-                res.insert(0, tweetId)
-            return res
+    	"""
+    	Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
+    	:type userId: int
+    	:rtype: List[int]
+    	"""
+    	# min heap
+    	q = []
+    	heapq.heapify(q)
+    	for (id, tweetId) in self.tweet_dict[userId]:
+    	    heapq.heappush(q, (id, tweetId))
+    	    if len(q) > 10: heapq.heappop(q)
+    	for followee in self.follow_dict[userId]:
+    	    for (id, tweetId) in self.tweet_dict[followee]:
+    		heapq.heappush(q, (id, tweetId))
+    		if len(q) > 10: heapq.heappop(q)
+    	res = []
+    	while len(q) != 0:
+    	    (id, tweetId) = heapq.heappop(q)
+    	    res.insert(0, tweetId)
+    	return res
     
         def follow(self, followerId, followeeId):
-            """
-            Follower follows a followee. If the operation is invalid, it should be a no-op.
-            :type followerId: int
-            :type followeeId: int
-            :rtype: void
-            """
-            if followerId == followeeId: return
-            if followeeId not in self.follow_dict[followerId]:
-                self.follow_dict[followerId].add(followeeId)
+    	"""
+    	Follower follows a followee. If the operation is invalid, it should be a no-op.
+    	:type followerId: int
+    	:type followeeId: int
+    	:rtype: void
+    	"""
+    	if followerId == followeeId: return
+    	if followeeId not in self.follow_dict[followerId]:
+    	    self.follow_dict[followerId].add(followeeId)
     
         def unfollow(self, followerId, followeeId):
-            """
-            Follower unfollows a followee. If the operation is invalid, it should be a no-op.
-            :type followerId: int
-            :type followeeId: int
-            :rtype: void
-            """
-            if followerId == followeeId: return
-            if followeeId in self.follow_dict[followerId]:
-                self.follow_dict[followerId].remove(followeeId)
+    	"""
+    	Follower unfollows a followee. If the operation is invalid, it should be a no-op.
+    	:type followerId: int
+    	:type followeeId: int
+    	:rtype: void
+    	"""
+    	if followerId == followeeId: return
+    	if followeeId in self.follow_dict[followerId]:
+    	    self.follow_dict[followerId].remove(followeeId)
     
     
     # Your Twitter object will be instantiated and called as such:
@@ -141,3 +142,4 @@ Leave me comments, if you have better ways to solve.
     # param_2 = obj.getNewsFeed(userId)
     # obj.follow(followerId,followeeId)
     # obj.unfollow(followerId,followeeId)
+

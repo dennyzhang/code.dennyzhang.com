@@ -1,5 +1,5 @@
-# Leetcode: Car Fleet     :BLOG:Medium:
 
+# Leetcode: Car Fleet     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Car Fleet
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
@@ -44,7 +45,7 @@ Note:
 4.  0 <= position[i] < target
 5.  All initial positions are different.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/car-fleet)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/car-fleet)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/car-fleet/description/)  
 
@@ -63,20 +64,21 @@ Leave me comments, if you have better ways to solve.
         if len(position) == 0 { return 0 }
         m := map[int]float32{}
         for i, p := range position {
-            m[p] = float32(target-p)/float32(speed[i])
+    	m[p] = float32(target-p)/float32(speed[i])
         }
         sort.Ints(position)
         time := make([]float32, len(position))
         for i, p := range position {
-            time[len(position)-1-i] = m[p]
+    	time[len(position)-1-i] = m[p]
         }
         res := 1
         max := time[0]
         for i:=1; i<len(time); i++ {
-            if time[i]>max {
-                res ++
-                max = time[i]
-            }
+    	if time[i]>max {
+    	    res ++
+    	    max = time[i]
+    	}
         }
         return res
     }
+

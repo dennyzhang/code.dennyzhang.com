@@ -1,5 +1,5 @@
-# Leetcode: Nth Highest Salary     :BLOG:Medium:
 
+# Leetcode: Nth Highest Salary     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Nth Highest Salary
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -30,7 +31,7 @@ For example, given the above Employee table, the nth highest salary where n = 2 
     | 200                    |
     +------------------------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/nth-highest-salary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nth-highest-salary)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/nth-highest-salary/description/)  
 
@@ -52,3 +53,4 @@ Leave me comments, if you have better ways to solve.
          LIMIT M, 1
        );
     END
+

@@ -1,5 +1,5 @@
-# Leetcode: Soup Servings     :BLOG:Medium:
 
+# Leetcode: Soup Servings     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Soup Servings
 ---
 
 Similar Problems:  
+
 -   [Review: mod Problems](https://code.dennyzhang.com/review-mod)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#mod](https://code.dennyzhang.com/tag/mod)
 
@@ -38,7 +39,7 @@ Notes:
 -   0 <= N <= 10^9.
 -   Answers within 10^-6 of the true value will be accepted as correct.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/soup-servings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/soup-servings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/soup-servings/description/)  
 
@@ -47,3 +48,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/soup-servings
+

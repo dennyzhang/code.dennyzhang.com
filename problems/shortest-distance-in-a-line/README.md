@@ -1,5 +1,5 @@
-# Leetcode: Shortest Distance in a Line     :BLOG:Medium:
 
+# Leetcode: Shortest Distance in a Line     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shortest Distance in a Line
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -31,7 +32,7 @@ Note: Every point is unique, which means there is no duplicates in table point.
 
 Follow-up: What if all these points have an id and are arranged from the left most to the right most of x axis?  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shortest-distance-in-a-line)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-in-a-line)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shortest-distance-in-a-line/description/)  
 
@@ -45,3 +46,4 @@ Leave me comments, if you have better ways to solve.
     where t1.x>t2.x
     order by (t1.x-t2.x) asc
     limit 1
+

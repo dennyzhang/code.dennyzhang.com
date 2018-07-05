@@ -1,5 +1,5 @@
-# Leetcode: Top K Frequent Words     :BLOG:Basic:
 
+# Leetcode: Top K Frequent Words     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Top K Frequent Words
 ---
 
 Similar Problems:  
+
 -   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
 -   Tag: [#basic](https://code.dennyzhang.com/category/basic)
 
@@ -31,13 +32,14 @@ Example 2:
         with the number of occurrence being 4, 3, 2 and 1 respectively.
 
 Note:  
+
 1.  You may assume k is always valid, 1 <= k <= number of unique elements.
 2.  Input words contain only lowercase letters.
 
 Follow up:  
 Try to solve it in O(n log k) time and O(n) extra space.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/top-k-frequent-words)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/top-k-frequent-words)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/top-k-frequent-words/description/)  
 
@@ -53,23 +55,24 @@ Leave me comments, if you have better ways to solve.
     import collections
     class Solution(object):
         def topKFrequent(self, words, k):
-            """
-            :type words: List[str]
-            :type k: int
-            :rtype: List[str]
-            """
-            m = collections.defaultdict(lambda: 0)
-            for word in words:
-                m[word] += 1
-            key_list = m.keys()
-            def myCompare(v1, v2):
-                if m[v1] > m[v2]: return -1
-                elif m[v1] < m[v2]: return 1
-                else:
-                    if v1 == v2: return 0
-                    return -1 if v1 < v2 else 1
-            sorted_list = sorted(key_list, cmp=myCompare)
-            return sorted_list[0:k]
+    	"""
+    	:type words: List[str]
+    	:type k: int
+    	:rtype: List[str]
+    	"""
+    	m = collections.defaultdict(lambda: 0)
+    	for word in words:
+    	    m[word] += 1
+    	key_list = m.keys()
+    	def myCompare(v1, v2):
+    	    if m[v1] > m[v2]: return -1
+    	    elif m[v1] < m[v2]: return 1
+    	    else:
+    		if v1 == v2: return 0
+    		return -1 if v1 < v2 else 1
+    	sorted_list = sorted(key_list, cmp=myCompare)
+    	return sorted_list[0:k]
     
     # s = Solution()
     # print s.topKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4)
+

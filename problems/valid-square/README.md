@@ -1,5 +1,5 @@
-# Leetcode: Valid Square     :BLOG:Amusing:
 
+# Leetcode: Valid Square     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Given the coordinates of four points in 2D space, return whether the four points
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   Tag: [math](https://code.dennyzhang.com/tag/math)
 
@@ -27,7 +28,7 @@ Note:
 2.  A valid square has four equal sides with positive length and four equal angles (90-degree angles).
 3.  Input points have no order.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-square)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-square)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-square/description/)  
 
@@ -46,17 +47,18 @@ Leave me comments, if you have better ways to solve.
         distances := map[int]int{}
         long_edge := 0
         for i, p := range points {
-            for j:=i+1; j<=3; j++ {
-                q := points[j]
-                d := (p[0]-q[0])*(p[0]-q[0]) + (p[1]-q[1])*(p[1]-q[1])
-                distances[d] += 1
-                if d>long_edge { long_edge = d }
-            }
+    	for j:=i+1; j<=3; j++ {
+    	    q := points[j]
+    	    d := (p[0]-q[0])*(p[0]-q[0]) + (p[1]-q[1])*(p[1]-q[1])
+    	    distances[d] += 1
+    	    if d>long_edge { long_edge = d }
+    	}
         }
         if len(distances) != 2 || distances[long_edge] !=2 { return false }
         for v := range distances {
-            if v==long_edge { continue }
-            if distances[v]!=4 || v*2 != long_edge { return false }
+    	if v==long_edge { continue }
+    	if distances[v]!=4 || v*2 != long_edge { return false }
         }
         return true
     }
+

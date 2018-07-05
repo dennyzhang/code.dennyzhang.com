@@ -26,7 +26,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
     3,2,1 -> 1,2,3
     1,1,5 -> 1,5,1
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/next-permutation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-permutation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/next-permutation/description/)  
 

@@ -1,5 +1,5 @@
-# Leetcode: Longest Palindrome     :BLOG:Basic:
 
+# Leetcode: Longest Palindrome     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Palindrome
 ---
 
 Similar Problems:  
+
 -   [Review: Palindrome Problems](https://code.dennyzhang.com/review-palindrome), [Tag: #palindrome](https://code.dennyzhang.com/tag/palindrome)
 
 ---
@@ -30,7 +31,7 @@ Assume the length of given string will not exceed 1,010.
     Explanation:
     One longest palindrome that can be built is "dccaccd", whose length is 7.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-palindrome)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-palindrome)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-palindrome/description/)  
 
@@ -43,24 +44,25 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class Solution(object):
         def longestPalindrome(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            ## Idea: Use a map and count characters
-            ## Complexity:
-            count_map = {}
-            for ch in s:
-                if count_map.has_key(ch) is False:
-                    count_map[ch] = 1
-                else:
-                    count_map[ch] += 1
-            has_odd = False
-            res = 0
-            for ch in count_map.keys():
-                if count_map[ch] % 2 == 0:
-                    res += count_map[ch]
-                else:
-                    has_odd = True
-                    res += count_map[ch] - 1
-            return res+1 if has_odd else res
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	## Idea: Use a map and count characters
+    	## Complexity:
+    	count_map = {}
+    	for ch in s:
+    	    if count_map.has_key(ch) is False:
+    		count_map[ch] = 1
+    	    else:
+    		count_map[ch] += 1
+    	has_odd = False
+    	res = 0
+    	for ch in count_map.keys():
+    	    if count_map[ch] % 2 == 0:
+    		res += count_map[ch]
+    	    else:
+    		has_odd = True
+    		res += count_map[ch] - 1
+    	return res+1 if has_odd else res
+

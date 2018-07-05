@@ -1,5 +1,5 @@
-# Leetcode: Random Pick Index     :BLOG:Medium:
 
+# Leetcode: Random Pick Index     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Random Pick Index
 ---
 
 Similar Problems:  
+
 -   Tag: [#reservoirsampling](https://code.dennyzhang.com/tag/reservoirsampling)
 
 ---
@@ -28,7 +29,7 @@ Example:
     // pick(1) should return 0. Since in the array only nums[0] is equal to 1.
     solution.pick(1);
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/random-pick-index)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/random-pick-index)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/random-pick-index/description/)  
 
@@ -44,31 +45,32 @@ Leave me comments, if you have better ways to solve.
     class Solution:
     
         def __init__(self, nums):
-            """
-            :type nums: List[int]
-            """
-            self.nums = nums
+    	"""
+    	:type nums: List[int]
+    	"""
+    	self.nums = nums
     
         def pick(self, target):
-            """
-            :type target: int
-            :rtype: int
-            """
-            i, count, res = 0, 0, -1
-            for i in range(0, len(self.nums)):
-                if self.nums[i] == target:
-                    res = i
-                    count += 1
-                    break
+    	"""
+    	:type target: int
+    	:rtype: int
+    	"""
+    	i, count, res = 0, 0, -1
+    	for i in range(0, len(self.nums)):
+    	    if self.nums[i] == target:
+    		res = i
+    		count += 1
+    		break
     
-            for i in range(res+1, len(self.nums)):
-                if self.nums[i] == target:
-                    count += 1
-                    random_v = random.randint(1, count)
-                    if random_v == 1:
-                        res = i
-            return res
+    	for i in range(res+1, len(self.nums)):
+    	    if self.nums[i] == target:
+    		count += 1
+    		random_v = random.randint(1, count)
+    		if random_v == 1:
+    		    res = i
+    	return res
     
     # Your Solution object will be instantiated and called as such:
     # obj = Solution(nums)
     # param_1 = obj.pick(target)
+

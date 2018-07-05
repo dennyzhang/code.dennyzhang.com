@@ -1,5 +1,5 @@
-# Leetcode: Shifting Letters     :BLOG:Medium:
 
+# Leetcode: Shifting Letters     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shifting Letters
 ---
 
 Similar Problems:  
+
 -   Tag: [#right2left](https://code.dennyzhang.com/tag/right2left), [#string](https://code.dennyzhang.com/tag/string)
 
 ---
@@ -37,7 +38,7 @@ Note:
 1.  1 <= S.length = shifts.length <= 20000
 2.  0 <= shifts[i] <= 10 ^ 9
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shifting-letters)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shifting-letters)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shifting-letters/description/)  
 
@@ -54,15 +55,16 @@ Leave me comments, if you have better ways to solve.
     func shiftingLetters(S string, shifts []int) string {
         v := 0
         for i:=len(shifts)-1; i>=0; i-- {
-            v = (v+shifts[i])%26
-            shifts[i] = v
+    	v = (v+shifts[i])%26
+    	shifts[i] = v
         }
     
         res := ""
         code := 0
         for i, ch := range S {
-            code = (int(ch-'a')+shifts[i])%26
-            res += string(code+int('a'))
+    	code = (int(ch-'a')+shifts[i])%26
+    	res += string(code+int('a'))
         }
         return res
     }
+

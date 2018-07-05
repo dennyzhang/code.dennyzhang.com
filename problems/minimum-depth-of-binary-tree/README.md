@@ -1,5 +1,5 @@
-# Leetcode: Minimum Depth of Binary Tree     :BLOG:Basic:
 
+# Leetcode: Minimum Depth of Binary Tree     :BLOG:Basic:
 
 ---
 
@@ -11,7 +11,7 @@ Given a binary tree, find its minimum depth.
 
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-depth-of-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-depth-of-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)  
 
@@ -29,20 +29,21 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def minDepth(self, root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            ## Idea: DFS
-            ## Complexity:
-            depth = None
-            if root is None:
-                return 0
-            if (root.left is None) and (root.right is None):
-                return 1
-            elif (root.left is None):
-                return self.minDepth(root.right)+1
-            elif (root.right is None):
-                return self.minDepth(root.left)+1
-            else:
-                return min(self.minDepth(root.left)+1, self.minDepth(root.right)+1)
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	## Idea: DFS
+    	## Complexity:
+    	depth = None
+    	if root is None:
+    	    return 0
+    	if (root.left is None) and (root.right is None):
+    	    return 1
+    	elif (root.left is None):
+    	    return self.minDepth(root.right)+1
+    	elif (root.right is None):
+    	    return self.minDepth(root.left)+1
+    	else:
+    	    return min(self.minDepth(root.left)+1, self.minDepth(root.right)+1)
+

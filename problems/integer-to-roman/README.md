@@ -1,5 +1,5 @@
-# Leetcode: Integer to Roman     :BLOG:Basic:
 
+# Leetcode: Integer to Roman     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Integer to Roman
 ---
 
 Similar Problems:  
+
 -   [Integer to English Words](https://code.dennyzhang.com/integer-to-english-words)
 -   [Roman to Integer](https://code.dennyzhang.com/roman-to-integer)
 -   Tag: [#math](https://code.dennyzhang.com/tag/math)
@@ -18,7 +19,7 @@ Given an integer, convert it to a roman numeral.
 
 Input is guaranteed to be within the range from 1 to 3999.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/integer-to-roman)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/integer-to-roman)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/integer-to-roman/description/)  
 
@@ -49,3 +50,4 @@ Leave me comments, if you have better ways to solve.
         res.WriteString(digits[num%10])
         return res.String()
     }
+

@@ -1,5 +1,5 @@
-# Leetcode: Longest Uncommon Subsequence I     :BLOG:Medium:
 
+# Leetcode: Longest Uncommon Subsequence I     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Longest Uncommon Subsequence I
 ---
 
 Similar Problems:  
+
 -   [Longest Uncommon Subsequence II](https://code.dennyzhang.com/longest-uncommon-subsequence-ii)
 
 ---
@@ -24,14 +25,14 @@ Example 1:
     Output: 3
     Explanation: The longest uncommon subsequence is "aba" (or "cdc"), 
     because "aba" is a subsequence of "aba", 
-    but not a subsequence of any other strings in the group of two strings.
+    but not a subsequence of any other strings in the group of two strings. 
 
 Note:  
 
 Both strings' lengths will not exceed 100.  
 Only letters from a ~ z will appear in input strings.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/longest-uncommon-subsequence-i)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-uncommon-subsequence-i)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/longest-uncommon-subsequence-i/description/)  
 
@@ -49,13 +50,14 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def findLUSlength(self, a, b):
-            """
-            :type a: str
-            :type b: str
-            :rtype: int
-            """
-            if a == b: return -1
-            return max(len(a), len(b))
+    	"""
+    	:type a: str
+    	:type b: str
+    	:rtype: int
+    	"""
+    	if a == b: return -1
+    	return max(len(a), len(b))
     
     # s = Solution()
     # print(s.findLUSlength("aefawfawfawfaw", "aefawfeawfwafwaef")) # 17
+

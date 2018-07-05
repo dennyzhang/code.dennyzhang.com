@@ -1,5 +1,5 @@
-# Leetcode: Ones and Zeroes     :BLOG:Medium:
 
+# Leetcode: Ones and Zeroes     :BLOG:Medium:
 
 ---
 
@@ -20,6 +20,7 @@ For now, suppose you are a dominator of m 0s and n 1s respectively. On the other
 Now your task is to find the maximum number of strings that you can form with given m 0s and n 1s. Each 0 and 1 can be used at most once.  
 
 Note:  
+
 1.  The given numbers of 0s and 1s will both not exceed 100
 2.  The size of given string array won't exceed 600.
 
@@ -37,7 +38,7 @@ Example 2:
     
     Explanation: You could form "10", but then you'd have nothing left. Better form "0" and "1".
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/ones-and-zeroes)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ones-and-zeroes)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/ones-and-zeroes/description/)  
 
@@ -58,39 +59,40 @@ Similar problem: [LintCode: Order Problem](https://code.dennyzhang.com/order-pro
         res := 0
         hashmap := make(map[Entity]int)
         for _, p := range strs {
-            count_0, count_1 := 0, 0
-            for _, ch := range p {
-                if ch == '0' { 
-                    count_0 += 1
-                } else {
-                    count_1 += 1
-                }
-            }
-            if count_0 > m || count_1>n { continue }
-            // add current item
-            v := Entity{count_0, count_1}
-            hashmap_tmp := make(map[Entity]int)
-            hashmap_tmp[v] = 1
-            if hashmap_tmp[v] > res { res = hashmap_tmp[v] }
-            // loop original map
-            for q := range hashmap {
-                // add original item
-                if hashmap[q] > hashmap_tmp[q] { 
-                    hashmap_tmp[q] = hashmap[q]
-                }
-                // add new item
-                if q.count_0+count_0>m || q.count_1+count_1>n { continue }
-                r := Entity{q.count_0+count_0, q.count_1+count_1}
-                if hashmap[q] + 1 > hashmap_tmp[r] {
-                    hashmap_tmp[r] = hashmap[q] + 1
-                }
-                if hashmap_tmp[r]>res { res = hashmap_tmp[r] }
-            }
-            // copy map
-            hashmap = make(map[Entity]int)
-            for q:= range hashmap_tmp {
-                hashmap[q] = hashmap_tmp[q]
-            }
+    	count_0, count_1 := 0, 0
+    	for _, ch := range p {
+    	    if ch == '0' { 
+    		count_0 += 1
+    	    } else {
+    		count_1 += 1
+    	    }
+    	}
+    	if count_0 > m || count_1>n { continue }
+    	// add current item
+    	v := Entity{count_0, count_1}
+    	hashmap_tmp := make(map[Entity]int)
+    	hashmap_tmp[v] = 1
+    	if hashmap_tmp[v] > res { res = hashmap_tmp[v] }
+    	// loop original map
+    	for q := range hashmap {
+    	    // add original item
+    	    if hashmap[q] > hashmap_tmp[q] { 
+    		hashmap_tmp[q] = hashmap[q]
+    	    }
+    	    // add new item
+    	    if q.count_0+count_0>m || q.count_1+count_1>n { continue }
+    	    r := Entity{q.count_0+count_0, q.count_1+count_1}
+    	    if hashmap[q] + 1 > hashmap_tmp[r] {
+    		hashmap_tmp[r] = hashmap[q] + 1
+    	    }
+    	    if hashmap_tmp[r]>res { res = hashmap_tmp[r] }
+    	}
+    	// copy map
+    	hashmap = make(map[Entity]int)
+    	for q:= range hashmap_tmp {
+    	    hashmap[q] = hashmap_tmp[q]
+    	}
         }
         return res
     }
+

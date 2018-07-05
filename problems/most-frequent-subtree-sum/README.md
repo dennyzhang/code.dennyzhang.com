@@ -1,5 +1,5 @@
-# Leetcode: Most Frequent Subtree Sum     :BLOG:Medium:
 
+# Leetcode: Most Frequent Subtree Sum     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Most Frequent Subtree Sum
 ---
 
 Similar Problems:  
+
 -   [Review: Binary Tree Problems](https://code.dennyzhang.com/review-binarytree), [Tag: #binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
@@ -34,7 +35,7 @@ Examples 2
 
 Note: You may assume the sum of values in any subtree is in the range of 32-bit signed integer.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/most-frequent-subtree-sum)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/most-frequent-subtree-sum)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/most-frequent-subtree-sum/description/)  
 
@@ -58,32 +59,33 @@ Leave me comments, if you have better ways to solve.
     import collections
     class Solution(object):
         def findFrequentTreeSum(self, root):
-            """
-            :type root: TreeNode
-            :rtype: List[int]
-            """
+    	"""
+    	:type root: TreeNode
+    	:rtype: List[int]
+    	"""
     
-            m = collections.defaultdict(lambda: 0)
-            self.getSum(root, m)
+    	m = collections.defaultdict(lambda: 0)
+    	self.getSum(root, m)
     
-            # find the most frequent count
-            most_freq = 0
-            for num in m:
-                most_freq = max(most_freq, m[num])
+    	# find the most frequent count
+    	most_freq = 0
+    	for num in m:
+    	    most_freq = max(most_freq, m[num])
     
-            res = []
-            # get the matched values
-            for num in m:
-                if m[num] == most_freq:
-                    res.append(num)
-            return res
+    	res = []
+    	# get the matched values
+    	for num in m:
+    	    if m[num] == most_freq:
+    		res.append(num)
+    	return res
     
         def getSum(self, root, m):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
-            if root is None: return 0
-            res = root.val + self.getSum(root.left, m) + self.getSum(root.right, m)
-            m[res] += 1
-            return res
+    	"""
+    	:type root: TreeNode
+    	:rtype: int
+    	"""
+    	if root is None: return 0
+    	res = root.val + self.getSum(root.left, m) + self.getSum(root.right, m)
+    	m[res] += 1
+    	return res
+

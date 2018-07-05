@@ -1,5 +1,5 @@
-# Leetcode: Number of Atoms     :BLOG:Hard:
 
+# Leetcode: Number of Atoms     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Number of Atoms
 ---
 
 Similar Problems:  
+
 -   [Review: Stack Problems](https://code.dennyzhang.com/review-stack)
 -   Tag: [#stack](https://code.dennyzhang.com/tag/stack)
 
@@ -52,7 +53,7 @@ Note:
 -   The length of formula will be in the range [1, 1000].
 -   formula will only consist of letters, digits, and round parentheses, and is a valid formula as defined in the problem.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/number-of-atoms)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-atoms)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/number-of-atoms/description/)  
 
@@ -61,3 +62,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/number-of-atoms
+

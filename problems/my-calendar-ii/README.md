@@ -1,5 +1,5 @@
-# Leetcode: My Calendar II     :BLOG:Medium:
 
+# Leetcode: My Calendar II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ My Calendar II
 ---
 
 Similar Problems:  
+
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
@@ -42,7 +43,7 @@ Note:
 -   The number of calls to MyCalendar.book per test case will be at most 1000.
 -   In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/my-calendar-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/my-calendar-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/my-calendar-ii/description/)  
 
@@ -56,12 +57,13 @@ Leave me comments, if you have better ways to solve.
         def __init__(self):
     
         def book(self, start, end):
-            """
-            :type start: int
-            :type end: int
-            :rtype: bool
-            """
+    	"""
+    	:type start: int
+    	:type end: int
+    	:rtype: bool
+    	"""
     
     # Your MyCalendarTwo object will be instantiated and called as such:
     # obj = MyCalendarTwo()
     # param_1 = obj.book(start,end)
+

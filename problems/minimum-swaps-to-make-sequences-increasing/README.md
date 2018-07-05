@@ -1,5 +1,5 @@
-# Leetcode: Minimum Swaps To Make Sequences Increasing     :BLOG:Medium:
 
+# Leetcode: Minimum Swaps To Make Sequences Increasing     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Swaps To Make Sequences Increasing
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
@@ -37,7 +38,7 @@ Note:
 -   A, B are arrays with the same length, and that length will be in the range [1, 1000].
 -   A[i], B[i] are integer values in the range [0, 2000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-swaps-to-make-sequences-increasing)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-swaps-to-make-sequences-increasing)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/description/)  
 
@@ -55,23 +56,24 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def minSwap(self, A, B):
-            """
-            :type A: List[int]
-            :type B: List[int]
-            :rtype: int
-            """
-            import sys
-            length = len(A)
-            dp = [[sys.maxsize, sys.maxsize] for i in range(length)]
-            dp[0] = [0, 1]
-            for i in range(1, length):
-                # case1: don't swap
-                if A[i]>A[i-1] and B[i]>B[i-1]:
-                    dp[i][0] = min(dp[i][0], dp[i-1][0])
-                    dp[i][1] = min(dp[i][1], dp[i-1][1] + 1)
+    	"""
+    	:type A: List[int]
+    	:type B: List[int]
+    	:rtype: int
+    	"""
+    	import sys
+    	length = len(A)
+    	dp = [[sys.maxsize, sys.maxsize] for i in range(length)]
+    	dp[0] = [0, 1]
+    	for i in range(1, length):
+    	    # case1: don't swap
+    	    if A[i]>A[i-1] and B[i]>B[i-1]:
+    		dp[i][0] = min(dp[i][0], dp[i-1][0])
+    		dp[i][1] = min(dp[i][1], dp[i-1][1] + 1)
     
-                # case2: swap
-                if A[i]>B[i-1] and B[i]>A[i-1]:
-                    dp[i][0] = min(dp[i][0], dp[i-1][1])
-                    dp[i][1] = min(dp[i][1], dp[i-1][0] + 1) 
-            return min(dp[-1][0], dp[-1][1])
+    	    # case2: swap
+    	    if A[i]>B[i-1] and B[i]>A[i-1]:
+    		dp[i][0] = min(dp[i][0], dp[i-1][1])
+    		dp[i][1] = min(dp[i][1], dp[i-1][0] + 1) 
+    	return min(dp[-1][0], dp[-1][1])
+

@@ -1,5 +1,5 @@
-# Leetcode: Maximum Average Subarray I     :BLOG:Basic:
 
+# Leetcode: Maximum Average Subarray I     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Maximum Average Subarray I
 ---
 
 Similar Problems:  
+
 -   [Review: Greedy Problems](https://code.dennyzhang.com/review-greedy)
 -   Tag: [#greedy](https://code.dennyzhang.com/tag/greedy), [#slidingwindow](https://code.dennyzhang.com/tag/slidingwindow), [#classic](https://code.dennyzhang.com/tag/classic)
 
@@ -22,10 +23,11 @@ Example 1:
     Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
 
 Note:  
+
 1.  1 <= k <= n <= 30,000.
 2.  Elements of the given array will be in the range [-10,000, 10,000].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-average-subarray-i)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-average-subarray-i)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/maximum-average-subarray-i/description/)  
 
@@ -39,18 +41,19 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def findMaxAverage(self, nums, k):
-            """
-            :type nums: List[int]
-            :type k: int
-            :rtype: float
-            """
-            length = len(nums)
-            if length <= k: return float(sum(nums))/k
+    	"""
+    	:type nums: List[int]
+    	:type k: int
+    	:rtype: float
+    	"""
+    	length = len(nums)
+    	if length <= k: return float(sum(nums))/k
     
-            curSum = sum(nums[0:k])
-            maxSum = curSum
-            for i in range(k, length):
-                curSum += nums[i] - nums[i-k]
-                maxSum = max(maxSum, curSum)
+    	curSum = sum(nums[0:k])
+    	maxSum = curSum
+    	for i in range(k, length):
+    	    curSum += nums[i] - nums[i-k]
+    	    maxSum = max(maxSum, curSum)
     
-            return float(maxSum)/k
+    	return float(maxSum)/k
+

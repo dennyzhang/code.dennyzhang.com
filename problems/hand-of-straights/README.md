@@ -1,5 +1,5 @@
-# Leetcode: Hand of Straights     :BLOG:Medium:
 
+# Leetcode: Hand of Straights     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Hand of Straights
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/tag/array), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -36,7 +37,7 @@ Note:
 2.  0 <= hand[i] <= 10^9
 3.  1 <= W <= hand.length
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/hand-of-straights)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/hand-of-straights)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/hand-of-straights/description/)  
 
@@ -48,12 +49,15 @@ Leave me comments, if you have better ways to solve.
 
 **General Thinkings:**  
 
+    
 
 **Key Observations:**  
 
+    
 
 **Walk Through Testdata**  
 
+    
 
     // Blog link: https://code.dennyzhang.com/hand-of-straights
     // Basic Ideas: hashmap + sort
@@ -66,15 +70,16 @@ Leave me comments, if you have better ways to solve.
         for key := range m { list = append(list, key) }
         sort.Ints(list)
         for _, v := range list {
-            for m[v] != 0 {
-                m[v]--
-                // note: this step won't be O(n*W). It will be O(n) only
-                for k:=1; k<W; k++ {
-                    // fmt.Println(v, k, m)
-                    if m[v+k] == 0 { return false }
-                    m[v+k]--
-                }
-            }
+    	for m[v] != 0 {
+    	    m[v]--
+    	    // note: this step won't be O(n*W). It will be O(n) only
+    	    for k:=1; k<W; k++ {
+    		// fmt.Println(v, k, m)
+    		if m[v+k] == 0 { return false }
+    		m[v+k]--
+    	    }
+    	}
         }
         return true
     }
+

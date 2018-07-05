@@ -1,5 +1,5 @@
-# Leetcode: Count Univalue Subtrees     :BLOG:Medium:
 
+# Leetcode: Count Univalue Subtrees     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Count Univalue Subtrees
 ---
 
 Similar Problems:  
+
 -   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal)
 
 ---
@@ -28,7 +29,7 @@ Example :
     
     Output: 4
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-univalue-subtrees)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-univalue-subtrees)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/count-univalue-subtrees/description/)  
 
@@ -53,23 +54,23 @@ Leave me comments, if you have better ways to solve.
     func postOrder(root *TreeNode) bool {
         if root == nil { return false }
         if root.Left == nil && root.Right == nil { 
-            count++
-            return true
+    	count++
+    	return true
         }
         s1, s2 := true, true
         if (root.Left != nil) { 
-            s1 = postOrder(root.Left)
-            if root.Left.Val != root.Val { s1 = false }
+    	s1 = postOrder(root.Left)
+    	if root.Left.Val != root.Val { s1 = false }
         }
         if (root.Right != nil) { 
-            s2 = postOrder(root.Right) 
-            if root.Right.Val != root.Val { s2 = false }
+    	s2 = postOrder(root.Right) 
+    	if root.Right.Val != root.Val { s2 = false }
         }
         if s1 == true && s2 == true {
-            count ++
-            return true
+    	count ++
+    	return true
         } else {
-            return false
+    	return false
         }
     }
     
@@ -99,10 +100,10 @@ Leave me comments, if you have better ways to solve.
         if root == nil { return true }
         s1, s2 := postOrder(root.Left), postOrder(root.Right)
         if s1 == true && s2 == true {
-            if (root.Left != nil && root.Left.Val != root.Val) { return false }
-            if (root.Right != nil && root.Right.Val != root.Val) { return false }
-            count++
-            return true
+    	if (root.Left != nil && root.Left.Val != root.Val) { return false }
+    	if (root.Right != nil && root.Right.Val != root.Val) { return false }
+    	count++
+    	return true
         }
         return false
     }
@@ -112,3 +113,4 @@ Leave me comments, if you have better ways to solve.
         postOrder(root)
         return count
     }
+

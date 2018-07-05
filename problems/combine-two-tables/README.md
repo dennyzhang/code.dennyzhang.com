@@ -1,5 +1,5 @@
-# Leetcode: Combine Two Tables     :BLOG:Medium:
 
+# Leetcode: Combine Two Tables     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Combine Two Tables
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -39,7 +40,7 @@ Write a SQL query for a report that provides the following information for each 
 
 FirstName, LastName, City, State  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/combine-two-tables)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/combine-two-tables)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/combine-two-tables/description/)  
 
@@ -50,3 +51,4 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/combine-two-tables
     select Person.FirstName, Person.LastName, Address.City, Address.State
     from Person left join Address on Person.PersonId = Address.PersonId;
+

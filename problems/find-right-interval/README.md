@@ -1,5 +1,5 @@
-# Leetcode: Find Right Interval     :BLOG:Medium:
 
+# Leetcode: Find Right Interval     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Find Right Interval
 ---
 
 Similar Problems:  
+
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#interval](https://code.dennyzhang.com/tag/interval)
@@ -19,6 +20,7 @@ Given a set of intervals, for each of the interval i, check if there exists an i
 For any interval i, you need to store the minimum interval j's index, which means that the interval j has the minimum start point to build the "right" relationship for interval i. If the interval j doesn't exist, store -1 for the interval i. Finally, you need output the stored value of each interval as an array.  
 
 Note:  
+
 1.  You may assume the interval's end point is always bigger than its start point.
 2.  You may assume none of these intervals have the same start point.
 
@@ -49,7 +51,7 @@ Example 3:
     Explanation: There is no satisfied "right" interval for [1,4] and [3,4].
     For [2,3], the interval [3,4] has minimum-"right" start point.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-right-interval)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-right-interval)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-right-interval/description/)  
 
@@ -73,34 +75,35 @@ Leave me comments, if you have better ways to solve.
     
     class Solution:
         def findRightInterval(self, intervals):
-            """
-            :type intervals: List[Interval]
-            :rtype: List[int]
-            """
-            length = len(intervals)
-            m = {}
-            for i in range(0, length): m[intervals[i].start] = i
-            res= [-1]*length
-            start_list = list(sorted(m.keys()))
-            for i in range(0, length):
-                interval = intervals[i]
-                target = interval.end
-                # binary search
-                left, right = 0, length-1
-                if target < start_list[0] or target > start_list[-1]:
-                    continue
-                while left <= right:
-                    mid = left+int((right-left)/2)
-                    v = start_list[mid]
-                    if v == target:
-                        res[i] = m[start_list[mid]]
-                        break
-                    if v < target:
-                        left = mid + 1
-                    else:
-                        right = mid - 1
+    	"""
+    	:type intervals: List[Interval]
+    	:rtype: List[int]
+    	"""
+    	length = len(intervals)
+    	m = {}
+    	for i in range(0, length): m[intervals[i].start] = i
+    	res= [-1]*length
+    	start_list = list(sorted(m.keys()))
+    	for i in range(0, length):
+    	    interval = intervals[i]
+    	    target = interval.end
+    	    # binary search
+    	    left, right = 0, length-1
+    	    if target < start_list[0] or target > start_list[-1]:
+    		continue
+    	    while left <= right:
+    		mid = left+int((right-left)/2)
+    		v = start_list[mid]
+    		if v == target:
+    		    res[i] = m[start_list[mid]]
+    		    break
+    		if v < target:
+    		    left = mid + 1
+    		else:
+    		    right = mid - 1
     
-                # I found, skip
-                if res[i] == -1:
-                    res[i] = m[start_list[left]]
-            return res
+    	    # I found, skip
+    	    if res[i] == -1:
+    		res[i] = m[start_list[left]]
+    	return res
+

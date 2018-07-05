@@ -1,5 +1,5 @@
-# Leetcode: Word Frequency     :BLOG:Hard:
 
+# Leetcode: Word Frequency     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Word Frequency
 ---
 
 Similar Problems:  
+
 -   Tag: [#shell](https://code.dennyzhang.com/tag/shell)
 
 ---
@@ -35,7 +36,7 @@ Your script should output the following, sorted by descending frequency:
 Note:  
 Don't worry about handling ties, it is guaranteed that each word's frequency count is unique.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/word-frequency)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-frequency)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/word-frequency/description/)  
 
@@ -46,3 +47,4 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/word-frequency
     cat words.txt | tr -s ' ' '\
     ' | sort | uniq -c | sort -r | awk '{print $2, $1}'
+

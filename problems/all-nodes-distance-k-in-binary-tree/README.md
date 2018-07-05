@@ -8,7 +8,6 @@ All Nodes Distance K in Binary Tree
 ---
 
 Similar Problems:  
-
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#bfs](https://code.dennyzhang.com/tag/bfs)
 
 ---
@@ -28,16 +27,15 @@ Example 1:
     Note that the inputs "root" and "target" are actually TreeNodes.
     The descriptions of the inputs above are just serializations of these objects.
 
-[![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/tree_distance.png)](Leetcode: All Nodes Distance K in Binary Tree)  
+![img](//raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/tree_distance.png)  
 
 Note:  
-
 1.  The given tree is non-empty.
 2.  Each node in the tree has unique values 0 <= node.val <= 500.
 3.  The target node is a node in the tree.
 4.  0 <= K <= 1000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/all-nodes-distance-k-in-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/all-nodes-distance-k-in-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/)  
 
@@ -63,11 +61,11 @@ Leave me comments, if you have better ways to solve.
         node *TreeNode
         parent *TreeNode
     }
-    func distanceK(root *TreeNode, target *TreeNode, K int) int {
+    func distanceK(root *TreeNode, target *TreeNode, K int) []int {
         m := map[int]*TreeNode{}
-        queue := *TreeNode{root}
+        queue := []*TreeNode{root}
         for len(queue) != 0 {
-            l := *TreeNode{}
+            l := []*TreeNode{}
             for _, node := range queue {
                 if node.Left != nil {
                     m[node.Left.Val] = node
@@ -83,9 +81,9 @@ Leave me comments, if you have better ways to solve.
     
         level := 0
         var parent *TreeNode
-        queue2 := *GraphNode{&GraphNode{target, nil}}
+        queue2 := []*GraphNode{&GraphNode{target, nil}}
         for len(queue2) != 0 && level != K {
-            l := *GraphNode{}
+            l := []*GraphNode{}
             for _, graphNode := range queue2 {
                 node := graphNode.node
                 if node.Left != nil && node.Left != graphNode.parent  {
@@ -102,7 +100,7 @@ Leave me comments, if you have better ways to solve.
             queue2 = l
             level++
         }
-        res := int{}
+        res := []int{}
         for _, graphNode := range queue2 {
             res = append(res, graphNode.node.Val)
         }

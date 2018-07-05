@@ -1,5 +1,5 @@
-# Leetcode: Maximum Subarray     :BLOG:Hard:
 
+# Leetcode: Maximum Subarray     :BLOG:Hard:
 
 ---
 
@@ -17,7 +17,7 @@ click to show more practice.
 More practice:  
 If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/maximum-subarray)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-subarray)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/maximum-subarray/description/)  
 
@@ -28,10 +28,10 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/maximum-subarray
     class Solution(object):
         def maxSubArray(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
     ## Basic Ideas: Dynamic programming
     ##              Get sums[i]: it's the sum from nums[0] to nums[i]
     ##
@@ -40,23 +40,24 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space (n)
     class Solution:
         def maxSubArray(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
-            length = len(nums)
-            sums = [0] * length
-            sum_v = 0
-            for i in range(0, length):
-                sum_v += nums[i]
-                sums[i] = sum_v
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	sums = [0] * length
+    	sum_v = 0
+    	for i in range(0, length):
+    	    sum_v += nums[i]
+    	    sums[i] = sum_v
     
-            # start from the very beginning
-            min_sum = 0
-            max_list = [0]*length
-            # the first element
-            max_list[0] = sums[0]
-            for i in range(0, length-1):
-                min_sum = min(min_sum, sums[i])
-                max_list[i+1] = max(max_list[i], sums[i+1], sums[i+1]-min_sum)
-            return max_list[-1]
+    	# start from the very beginning
+    	min_sum = 0
+    	max_list = [0]*length
+    	# the first element
+    	max_list[0] = sums[0]
+    	for i in range(0, length-1):
+    	    min_sum = min(min_sum, sums[i])
+    	    max_list[i+1] = max(max_list[i], sums[i+1], sums[i+1]-min_sum)
+    	return max_list[-1]
+

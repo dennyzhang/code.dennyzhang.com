@@ -1,5 +1,5 @@
-# Leetcode: Find Customer Referee     :BLOG:Medium:
 
+# Leetcode: Find Customer Referee     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Find Customer Referee
 ---
 
 Similar Problems:  
+
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql), [Tag: #sql](https://code.dennyzhang.com/tag/sql)
 
 ---
@@ -38,7 +39,7 @@ For the sample data above, the result is:
     | Zack |
     +------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-customer-referee)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-customer-referee)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-customer-referee/description/)  
 
@@ -50,3 +51,4 @@ Leave me comments, if you have better ways to solve.
     select name
     from customer
     where referee_id != '2' or referee_id is null;
+

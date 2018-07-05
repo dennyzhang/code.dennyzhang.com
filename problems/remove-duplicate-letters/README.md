@@ -1,5 +1,5 @@
-# Leetcode: Remove Duplicate Letters     :BLOG:Hard:
 
+# Leetcode: Remove Duplicate Letters     :BLOG:Hard:
 
 ---
 
@@ -16,7 +16,7 @@ Given a string which contains only lowercase letters, remove duplicate letters s
     Given "cbacdcbc"
     Return "acdb"
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/remove-duplicate-letters)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-duplicate-letters)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/remove-duplicate-letters/description/)  
 
@@ -25,3 +25,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/remove-duplicate-letters
+

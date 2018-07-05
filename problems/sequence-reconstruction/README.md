@@ -1,5 +1,5 @@
-# Leetcode: Sequence Reconstruction     :BLOG:Medium:
 
+# Leetcode: Sequence Reconstruction     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Sequence Reconstruction
 ---
 
 Similar Problems:  
+
 -   [Letter Case Permutation](https://code.dennyzhang.com/letter-case-permutation)
 -   [Review: Combinations and Permutations Problems](https://code.dennyzhang.com/review-combination), [Tag: #combination](https://code.dennyzhang.com/tag/combination)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game), [Tag: #game](https://code.dennyzhang.com/tag/game)
@@ -57,7 +58,7 @@ Example 4:
     Output:
     true
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sequence-reconstruction)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sequence-reconstruction)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sequence-reconstruction/description/)  
 
@@ -66,3 +67,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/sequence-reconstruction
+

@@ -1,5 +1,5 @@
-# Leetcode: Shuffle an Array     :BLOG:Medium:
 
+# Leetcode: Shuffle an Array     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Shuffle an Array
 ---
 
 Similar Problems:  
+
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
@@ -30,7 +31,7 @@ Example:
     // Returns the random shuffling of array [1,2,3].
     solution.shuffle();
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/shuffle-an-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shuffle-an-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/shuffle-an-array/description/)  
 
@@ -52,25 +53,26 @@ Leave me comments, if you have better ways to solve.
     class Solution:
     
         def __init__(self, nums):
-            """
-            :type nums: List[int]
-            """
-            self.nums = nums
-            self.original = copy.deepcopy(nums)
+    	"""
+    	:type nums: List[int]
+    	"""
+    	self.nums = nums
+    	self.original = copy.deepcopy(nums)
     
         def reset(self):
-            """
-            Resets the array to its original configuration and return it.
-            :rtype: List[int]
-            """
-            return self.original
+    	"""
+    	Resets the array to its original configuration and return it.
+    	:rtype: List[int]
+    	"""
+    	return self.original
     
         def shuffle(self):
-            """
-            Returns a random shuffling of the array.
-            :rtype: List[int]
-            """
-            for j in range(len(self.nums)-1, 0, -1):
-                i = random.randint(0, j)
-                self.nums[i], self.nums[j] = self.nums[j], self.nums[i]
-            return self.nums
+    	"""
+    	Returns a random shuffling of the array.
+    	:rtype: List[int]
+    	"""
+    	for j in range(len(self.nums)-1, 0, -1):
+    	    i = random.randint(0, j)
+    	    self.nums[i], self.nums[j] = self.nums[j], self.nums[i]
+    	return self.nums
+

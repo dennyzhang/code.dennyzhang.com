@@ -24,7 +24,7 @@ Each rectangle is defined by its bottom left corner and top right corner as show
 Rectangle Area  
 Assume that the total area is never beyond the maximum possible value of int.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/rectangle-area)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rectangle-area)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/rectangle-area/description/)  
 

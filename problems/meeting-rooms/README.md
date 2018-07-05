@@ -1,5 +1,5 @@
-# Leetcode: Meeting Rooms     :BLOG:Medium:
 
+# Leetcode: Meeting Rooms     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Meeting Rooms
 ---
 
 Similar Problems:  
+
 -   [Meeting Rooms II](https://code.dennyzhang.com/meeting-rooms-ii)
 -   [Rectangle Area](https://code.dennyzhang.com/rectangle-area)
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
@@ -20,7 +21,7 @@ For example,
 Given [[0, 30],[5, 10],[15, 20]],  
 return false.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/meeting-rooms)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/meeting-rooms)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/meeting-rooms/description/)  
 
@@ -41,14 +42,15 @@ Leave me comments, if you have better ways to solve.
     
     class Solution:
         def canAttendMeetings(self, intervals):
-            """
-            :type intervals: List[Interval]
-            :rtype: bool
-            """
-            length = len(intervals)
-            if length <= 1: return True
-            intervals.sort(key=lambda x: x.start)
-            for i in range(1, length):
-                if intervals[i].start < intervals[i-1].end:
-                    return False
-            return True
+    	"""
+    	:type intervals: List[Interval]
+    	:rtype: bool
+    	"""
+    	length = len(intervals)
+    	if length <= 1: return True
+    	intervals.sort(key=lambda x: x.start)
+    	for i in range(1, length):
+    	    if intervals[i].start < intervals[i-1].end:
+    		return False
+    	return True
+

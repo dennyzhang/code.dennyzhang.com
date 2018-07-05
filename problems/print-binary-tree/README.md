@@ -1,5 +1,5 @@
-# Leetcode: Print Binary Tree     :BLOG:Medium:
 
+# Leetcode: Print Binary Tree     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Print Binary Tree
 ---
 
 Similar Problems:  
+
 -   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
@@ -59,7 +60,7 @@ Print the subtrees following the same rules.
 
 Note: The height of binary tree is in the range of [1, 10].  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/print-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/print-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/print-binary-tree/description/)  
 
@@ -82,8 +83,8 @@ Leave me comments, if you have better ways to solve.
      * }
      */
     import (
-            "strconv"
-            "math"
+    	"strconv"
+    	"math"
     )
     
     type Node struct {
@@ -108,24 +109,25 @@ Leave me comments, if you have better ways to solve.
         // BFS
         queue := []Node{Node{index, root}}
         for h:= 1; h<=height; h++ {
-            items := make([]string, length)
-            for i:= 0; i<length; i++ { items[i] = "" }
-            offset := int(math.Pow(2, float64(height-h-1)))
-            // caculate current row
-            nodes := []Node{}
-            for _, node := range queue{
-                items[node.index] = strconv.Itoa(node.treenode.Val)
-                if node.treenode.Left != nil {
-                    nodes = append(nodes, Node{node.index-offset, node.treenode.Left})
-                }
-                if node.treenode.Right != nil {
-                    nodes = append(nodes, Node{node.index+offset, node.treenode.Right})
-                }
-            }
-            queue = []Node{}
-            for _, node := range nodes { queue = append(queue, node) }
-            // collect current row
-            res = append(res, items)
+    	items := make([]string, length)
+    	for i:= 0; i<length; i++ { items[i] = "" }
+    	offset := int(math.Pow(2, float64(height-h-1)))
+    	// caculate current row
+    	nodes := []Node{}
+    	for _, node := range queue{
+    	    items[node.index] = strconv.Itoa(node.treenode.Val)
+    	    if node.treenode.Left != nil {
+    		nodes = append(nodes, Node{node.index-offset, node.treenode.Left})
+    	    }
+    	    if node.treenode.Right != nil {
+    		nodes = append(nodes, Node{node.index+offset, node.treenode.Right})
+    	    }
+    	}
+    	queue = []Node{}
+    	for _, node := range nodes { queue = append(queue, node) }
+    	// collect current row
+    	res = append(res, items)
         }
         return res
     }
+

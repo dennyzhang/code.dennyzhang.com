@@ -1,5 +1,5 @@
-# Leetcode: Max Increase to Keep City Skyline     :BLOG:Medium:
 
+# Leetcode: Max Increase to Keep City Skyline     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Max Increase to Keep City Skyline
 ---
 
 Similar Problems:  
+
 -   [Lonely Pixel I](https://code.dennyzhang.com/lonely-pixel-i)
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
@@ -42,11 +43,11 @@ Example:
 
 Notes:  
 
--   1 < grid.length = grid.length <= 50.
+-   1 < grid.length = grid[0].length <= 50.
 -   All heights grid[i][j] are in the range [0, 100].
 -   All buildings in grid[i][j] occupy the entire grid cell: that is, they are a 1 x 1 x grid[i][j] rectangular prism.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-increase-to-keep-city-skyline)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-increase-to-keep-city-skyline)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/max-increase-to-keep-city-skyline/description/)  
 
@@ -59,32 +60,23 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: O(m*n), Space O(n+m)
     class Solution:
         def maxIncreaseKeepingSkyline(self, grid):
-            """
-            :type grid: List[List[int]]
-            :rtype: int
-            """
-            row_count = len(grid)
-            col_count = len(grid[0])
-            hl = [-1 for i in range(col_count)]
-            vl = [-1 for i in range(row_count)]
-            for i in range(row_count):
-                for j in range(col_count):
-                    hl[j] = max(hl[j], grid[i][j])
-                    vl[i] = max(vl[i], grid[i][j])
-            res = 0
-            for i in range(row_count):
-                for j in range(col_count):
-                    candidate = min(hl[j], vl[i])
-                    if grid[i][j] < candidate:
-                        res += candidate - grid[i][j]
-            return res
+    	"""
+    	:type grid: List[List[int]]
+    	:rtype: int
+    	"""
+    	row_count = len(grid)
+    	col_count = len(grid[0])
+    	hl = [-1 for i in range(col_count)]
+    	vl = [-1 for i in range(row_count)]
+    	for i in range(row_count):
+    	    for j in range(col_count):
+    		hl[j] = max(hl[j], grid[i][j])
+    		vl[i] = max(vl[i], grid[i][j])
+    	res = 0
+    	for i in range(row_count):
+    	    for j in range(col_count):
+    		candidate = min(hl[j], vl[i])
+    		if grid[i][j] < candidate:
+    		    res += candidate - grid[i][j]
+    	return res
 
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-
-</div>
-</div>

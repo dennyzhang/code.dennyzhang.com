@@ -1,5 +1,5 @@
-# Leetcode: Minimum Unique Word Abbreviation     :BLOG:Hard:
 
+# Leetcode: Minimum Unique Word Abbreviation     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Minimum Unique Word Abbreviation
 ---
 
 Similar Problems:  
+
 -   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
 
 ---
@@ -21,6 +22,7 @@ Given a target string and a set of strings in a dictionary, find an abbreviation
 Each number or letter in the abbreviation is considered length = 1. For example, the abbreviation "a32bc" has length = 4.  
 
 Note:  
+
 -   In the case of multiple answers as shown in the second example below, you may return any one of them.
 -   Assume length of target string = m, and dictionary size = n. You may assume that m ≤ 21, n ≤ 1000, and log2(n) + m ≤ 20.
 
@@ -30,7 +32,7 @@ Examples:
     
     "apple", ["plain", "amber", "blade"] -> "1p3" (other valid answers include "ap3", "a3e", "2p2", "3le", "3l1").
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimum-unique-word-abbreviation)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-unique-word-abbreviation)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/minimum-unique-word-abbreviation/description/)  
 
@@ -39,3 +41,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/minimum-unique-word-abbreviation
+

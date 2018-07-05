@@ -1,5 +1,5 @@
-# Leetcode: Min Cost Climbing Stairs     :BLOG:Basic:
 
+# Leetcode: Min Cost Climbing Stairs     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Min Cost Climbing Stairs
 ---
 
 Similar Problems:  
+
 -   [Review: Dynamic Programming Problems](https://code.dennyzhang.com/review-dynamicprogramming)
 -   Tag: [#dynamicprogramming](https://code.dennyzhang.com/tag/dynamicprogramming)
 
@@ -28,10 +29,11 @@ Once you pay the cost, you can either climb one or two steps. You need to find m
     Explanation: Cheapest is start on cost[0], and only step on 1s, skipping cost[3].
 
 Note:  
+
 1.  cost will have a length in the range [2, 1000].
 2.  Every cost[i] will be an integer in the range [0, 999].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/min-cost-climbing-stairs)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/min-cost-climbing-stairs)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/min-cost-climbing-stairs/description/)  
 
@@ -55,35 +57,36 @@ Leave me comments, if you have better ways to solve.
         # Improvement: we don't need list to save the result.
         #              It will only involve two of previous result.
         def minCostClimbingStairs(self, cost):
-            """
-            :type cost: List[int]
-            :rtype: int
-            """
-            n = len(cost)
-            if n == 0: return 0
-            if n == 1: return 0
-            ## prev1, prev2, ... i
-            prev1, prev2 = 0, 0
-            # calculate from 2 to n
-            for i in range(2, n+1):
-                prev2, prev1 = min(prev1+cost[i-2], prev2+cost[i-1]), prev2
-            # prev2 would be the position after last position
-            # prev1 is the value of last position
-            return prev2
+    	"""
+    	:type cost: List[int]
+    	:rtype: int
+    	"""
+    	n = len(cost)
+    	if n == 0: return 0
+    	if n == 1: return 0
+    	## prev1, prev2, ... i
+    	prev1, prev2 = 0, 0
+    	# calculate from 2 to n
+    	for i in range(2, n+1):
+    	    prev2, prev1 = min(prev1+cost[i-2], prev2+cost[i-1]), prev2
+    	# prev2 would be the position after last position
+    	# prev1 is the value of last position
+    	return prev2
     
         def minCostClimbingStairs_v1(self, cost):
-            """
-            :type cost: List[int]
-            :rtype: int
-            """
-            n = len(cost)
-            if n == 0: return 0
-            if n == 1: return 0
-            l = [None]*(n+1)
-            l[1]=l[0]=0
-            for i in range(2, n+1):
-                l[i] = min(l[i-1]+cost[i-1], l[i-2]+cost[i-2])
-            return l[n]
+    	"""
+    	:type cost: List[int]
+    	:rtype: int
+    	"""
+    	n = len(cost)
+    	if n == 0: return 0
+    	if n == 1: return 0
+    	l = [None]*(n+1)
+    	l[1]=l[0]=0
+    	for i in range(2, n+1):
+    	    l[i] = min(l[i-1]+cost[i-1], l[i-2]+cost[i-2])
+    	return l[n]
     
     # s = Solution()
     # print s.minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]) # 6
+

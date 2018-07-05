@@ -1,5 +1,5 @@
-# Leetcode: Valid Perfect Square     :BLOG:Amusing:
 
+# Leetcode: Valid Perfect Square     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Valid Perfect Square
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems](https://code.dennyzhang.com/review-math)
 -   [Review: sqrt Problems](https://code.dennyzhang.com/review-sqrt)
 -   Tag: [math](https://code.dennyzhang.com/tag/math), [sqrt](https://code.dennyzhang.com/tag/sqrt)
@@ -28,7 +29,7 @@ Note: Do not use any built-in library function such as sqrt.
     Input: 14
     Returns: False
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-perfect-square)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-perfect-square)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-perfect-square/description/)  
 
@@ -43,20 +44,21 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(log(n)), Space O(1)
     class Solution(object):
         def isPerfectSquare(self, num):
-            """
-            :type num: int
-            :rtype: bool
-            """
-            if num <= 0:
-                return False
-            left, right = 1, num
-            while left<= right:
-                mid = left + (right-left)/2
-                v = mid*mid
-                if v == num:
-                    return True
-                elif v < num:
-                    left = mid + 1
-                else:
-                    right = mid - 1
-            return False
+    	"""
+    	:type num: int
+    	:rtype: bool
+    	"""
+    	if num <= 0:
+    	    return False
+    	left, right = 1, num
+    	while left<= right:
+    	    mid = left + (right-left)/2
+    	    v = mid*mid
+    	    if v == num:
+    		return True
+    	    elif v < num:
+    		left = mid + 1
+    	    else:
+    		right = mid - 1
+    	return False
+

@@ -27,7 +27,7 @@ For example,
 Given heights = [2,1,5,6,2,3],  
 return 10.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/largest-rectangle-in-histogram)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-rectangle-in-histogram)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)  
 

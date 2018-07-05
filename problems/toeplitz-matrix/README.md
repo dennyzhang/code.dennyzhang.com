@@ -1,5 +1,5 @@
-# Leetcode: Toeplitz Matrix     :BLOG:Basic:
 
+# Leetcode: Toeplitz Matrix     :BLOG:Basic:
 
 ---
 
@@ -35,7 +35,7 @@ Note:
 2.  matrix will have a number of rows and columns in range [1, 20].
 3.  matrix[i][j] will be integers in range [0, 99].
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/toeplitz-matrix)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/toeplitz-matrix)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/toeplitz-matrix/description/)  
 
@@ -55,15 +55,16 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(m*n), Space O(1)
     class Solution(object):
         def isToeplitzMatrix(self, matrix):
-            """
-            :type matrix: List[List[int]]
-            :rtype: bool
-            """
-            row_count = len(matrix)
-            if row_count == 0: return True
-            col_count = len(matrix[0])
-            for i in xrange(row_count-1):
-                for j in xrange(col_count-1):
-                    if matrix[i][j] != matrix[i+1][j+1]:
-                        return False
-            return True
+    	"""
+    	:type matrix: List[List[int]]
+    	:rtype: bool
+    	"""
+    	row_count = len(matrix)
+    	if row_count == 0: return True
+    	col_count = len(matrix[0])
+    	for i in xrange(row_count-1):
+    	    for j in xrange(col_count-1):
+    		if matrix[i][j] != matrix[i+1][j+1]:
+    		    return False
+    	return True
+

@@ -1,5 +1,5 @@
-# Leetcode: Find Duplicate File in System     :BLOG:Basic:
 
+# Leetcode: Find Duplicate File in System     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Find Duplicate File in System
 ---
 
 Similar Problems:  
+
 -   [Group Anagrams](https://code.dennyzhang.com/group-anagrams)
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
@@ -35,6 +36,7 @@ Example 1:
     [["root/a/2.txt","root/c/d/4.txt","root/4.txt"],["root/a/1.txt","root/c/3.txt"]]
 
 Note:  
+
 1.  No order is required for the final output.
 2.  You may assume the directory name, file name and file content only has letters and digits, and the length of file content is in the range of [1,50].
 3.  The number of files given is in the range of [1,20000].
@@ -42,13 +44,14 @@ Note:
 5.  You may assume each given directory info represents a unique directory. Directory path and file info are separated by a single blank space.
 
 Follow-up beyond contest:  
+
 1.  Imagine you are given a real file system, how will you search files? DFS or BFS?
 2.  If the file content is very large (GB level), how will you modify your solution?
 3.  If you can only read the file by 1kb each time, how will you modify your solution?
 4.  What is the time complexity of your modified solution? What is the most time-consuming part and memory consuming part of it? How to optimize?
 5.  How to make sure the duplicated files you find are not false positive?
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-duplicate-file-in-system)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-duplicate-file-in-system)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-duplicate-file-in-system/description/)  
 
@@ -60,27 +63,28 @@ Leave me comments, if you have better ways to solve.
     // Basic Ideas: hashmap
     // Complexity:
     import (
-            "strings"
+    	"strings"
     )
     
     func findDuplicate(paths []string) [][]string {
         m := make(map[string][]string)
         res := [][]string{}
         for _, path := range paths {
-            l := strings.Split(path, " ")
-            dir_name := l[0]
-            for _, f := range l[1:] {
-                i := strings.Index(f, "(")
-                fname := f[0:i]
-                content := f[i+1:len(f)-1]                    
-                m[content] = append(m[content], strings.Join([]string{dir_name, fname}, "/"))
-            }
+    	l := strings.Split(path, " ")
+    	dir_name := l[0]
+    	for _, f := range l[1:] {
+    	    i := strings.Index(f, "(")
+    	    fname := f[0:i]
+    	    content := f[i+1:len(f)-1]                    
+    	    m[content] = append(m[content], strings.Join([]string{dir_name, fname}, "/"))
+    	}
         }
     
         for key := range m {
-            if len(m[key]) != 1 {
-                res = append(res, m[key])
-            }
+    	if len(m[key]) != 1 {
+    	    res = append(res, m[key])
+    	}
         }
         return res
     }
+

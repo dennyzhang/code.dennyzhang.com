@@ -1,5 +1,5 @@
-# Leetcode: Count Binary Substrings     :BLOG:Amusing:
 
+# Leetcode: Count Binary Substrings     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Count Binary Substrings
 ---
 
 Similar Problems:  
+
 -   [Review: TwoPointers Problems](https://code.dennyzhang.com/review-twopointer)
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#twopointer](https://code.dennyzhang.com/tag/twopointer)
@@ -36,7 +37,7 @@ Substrings that occur multiple times are counted the number of times they occur.
     s.length will be between 1 and 50,000.
     s will only consist of "0" or "1" characters.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/count-binary-substrings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-binary-substrings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/count-binary-substrings/description/)  
 
@@ -50,27 +51,28 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1)
     class Solution:
         def countBinarySubstrings(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            length = len(s)
-            res, g0_cnt, g1_cnt = 0, 0, 0
-            for i in range(0, length):
-                if s[i] == '0':
-                    g0_cnt += 1
-                else:
-                    g1_cnt += 1
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	length = len(s)
+    	res, g0_cnt, g1_cnt = 0, 0, 0
+    	for i in range(0, length):
+    	    if s[i] == '0':
+    		g0_cnt += 1
+    	    else:
+    		g1_cnt += 1
     
-                if i == length -1:
-                    res += min(g0_cnt, g1_cnt)
-                    continue
+    	    if i == length -1:
+    		res += min(g0_cnt, g1_cnt)
+    		continue
     
-                if s[i] != s[i+1]:
-                    res += min(g0_cnt, g1_cnt)
-                    # change counter
-                    if s[i] == '1':
-                        g0_cnt = 0
-                    else:
-                        g1_cnt = 0
-            return res
+    	    if s[i] != s[i+1]:
+    		res += min(g0_cnt, g1_cnt)
+    		# change counter
+    		if s[i] == '1':
+    		    g0_cnt = 0
+    		else:
+    		    g1_cnt = 0
+    	return res
+

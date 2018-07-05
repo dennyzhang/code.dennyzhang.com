@@ -1,0 +1,82 @@
+* Leetcode: Advantage Shuffle                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, binarysearch, array
+:END:
+---------------------------------------------------------------------
+Advantage Shuffle
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/greedy][#greedy]], [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+Given two arrays A and B of equal size, the advantage of A with respect to B is the number of indices i for which A[i] > B[i].
+
+Return any permutation of A that maximizes its advantage with respect to B.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [2,7,11,15], B = [1,10,4,11]
+Output: [2,11,7,15]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [12,24,8,32], B = [13,25,32,11]
+Output: [24,32,8,12]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length = B.length <= 10000
+- 0 <= A[i] <= 10^9
+- 0 <= B[i] <= 10^9
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/advantage-shuffle][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/advantage-shuffle/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/advantage-shuffle
+// Basic Ideas: Greedy + binary search
+// For which B[i], it won't be worse, if we try our best to satisfy it
+// - If we have available values in A which is bigger than B[i], choose the min candidates
+// - Otherwise select the min value
+// Complexity: Time O(n*log(n)), Space O(n)
+import (
+    "sort"
+)
+func advantageCount(A []int, B []int) []int {
+    res := []int{}
+    sort.Ints(A)
+    var left, right, middle int
+    for _, num := range B {
+        // binary search: find the first value which is bigger than the target
+        left, right = 0, len(A)-1
+        for left < right {
+            middle = left + (right-left)/2
+            if A[middle] > num {
+                right = middle
+            } else {
+                left = middle+1
+            }
+        }
+        // no candidate
+        if A[left] <= num { left = 0 }
+        // select the value
+        res = append(res, A[left])
+        // update A
+        if left == 0 { 
+            A = A[1:]
+        } else {
+            A = append(A[0:left], A[left+1:]...)
+        }
+    }
+    return res
+}
+#+END_SRC

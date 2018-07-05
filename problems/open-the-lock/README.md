@@ -1,5 +1,5 @@
-# Leetcode: Open the Lock     :BLOG:Medium:
 
+# Leetcode: Open the Lock     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Open the Lock
 ---
 
 Similar Problems:  
+
 -   [Word Ladder](https://code.dennyzhang.com/word-ladder)
 -   [Minimum Genetic Mutation](https://code.dennyzhang.com/minimum-genetic-mutation)
 -   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs), [Tag: #bfs](https://code.dennyzhang.com/tag/bfs)
@@ -51,11 +52,12 @@ Example 4:
     Output: -1
 
 Note:  
+
 1.  The length of deadends will be in the range [1, 500].
 2.  target will not be in the list deadends.
 3.  Every string in deadends and the string target will be a string of 4 digits from the 10,000 possibilities '0000' to '9999'.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/open-the-lock)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/open-the-lock)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/open-the-lock/description/)  
 
@@ -71,38 +73,39 @@ Leave me comments, if you have better ways to solve.
     import collections
     class Solution(object):
         def openLock(self, deadends, target):
-            """
-            :type deadends: List[str]
-            :type target: str
-            :rtype: int
-            """
-            dead_set, seen, queue = set([]), set([]), collections.deque([])
-            for dead in deadends: dead_set.add(dead)
-            if '0000' in dead_set: return -1
-            if '0000' == target: return 0
+    	"""
+    	:type deadends: List[str]
+    	:type target: str
+    	:rtype: int
+    	"""
+    	dead_set, seen, queue = set([]), set([]), collections.deque([])
+    	for dead in deadends: dead_set.add(dead)
+    	if '0000' in dead_set: return -1
+    	if '0000' == target: return 0
     
-            level = 0
-            queue.append('0000')
-            seen.add('0000')
-            while len(queue) != 0:
-                level += 1
-                for k in xrange(len(queue)):
-                    node = queue.popleft()
-                    # find next neighbors
-                    for i in xrange(4):
-                        for offset in [1, -1]:
-                            ascii = (ord(node[i]) - ord('0') + offset + 10) % 10 + ord('0')
-                            ch = chr(ascii)
-                            neighbor = node[0:i]+ch+node[i+1:]
-                            if (neighbor in seen) or (neighbor in dead_set):
-                                continue
-                            # If found, stop immediately
-                            if neighbor == target:
-                                # print node, neighbor
-                                return level
-                            queue.append(neighbor)
-                            seen.add(neighbor)
-            return -1
+    	level = 0
+    	queue.append('0000')
+    	seen.add('0000')
+    	while len(queue) != 0:
+    	    level += 1
+    	    for k in xrange(len(queue)):
+    		node = queue.popleft()
+    		# find next neighbors
+    		for i in xrange(4):
+    		    for offset in [1, -1]:
+    			ascii = (ord(node[i]) - ord('0') + offset + 10) % 10 + ord('0')
+    			ch = chr(ascii)
+    			neighbor = node[0:i]+ch+node[i+1:]
+    			if (neighbor in seen) or (neighbor in dead_set):
+    			    continue
+    			# If found, stop immediately
+    			if neighbor == target:
+    			    # print node, neighbor
+    			    return level
+    			queue.append(neighbor)
+    			seen.add(neighbor)
+    	return -1
     
     # s = Solution()
     # print(s.openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888")) # -1
+

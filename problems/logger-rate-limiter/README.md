@@ -1,5 +1,5 @@
-# Leetcode: Logger Rate Limiter     :BLOG:Basic:
 
+# Leetcode: Logger Rate Limiter     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Logger Rate Limiter
 ---
 
 Similar Problems:  
+
 -   [Design Hit Counter](https://code.dennyzhang.com/design-hit-counter)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
@@ -42,7 +43,7 @@ Example:
     // logging string "foo" at timestamp 11
     logger.shouldPrintMessage(11,"foo"); returns true;
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/logger-rate-limiter)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/logger-rate-limiter)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/logger-rate-limiter/description/)  
 
@@ -57,30 +58,31 @@ Leave me comments, if you have better ways to solve.
     class Logger(object):
     
         def __init__(self):
-            """
-            Initialize your data structure here.
-            """
-            self.d = {}
+    	"""
+    	Initialize your data structure here.
+    	"""
+    	self.d = {}
     
         def shouldPrintMessage(self, timestamp, message):
-            """
-            Returns true if the message should be printed in the given timestamp, otherwise returns false.
-            If this method returns false, the message will not be printed.
-            The timestamp is in seconds granularity.
-            :type timestamp: int
-            :type message: str
-            :rtype: bool
-            """
-            if message not in self.d:
-                self.d[message] = timestamp
-                return True
+    	"""
+    	Returns true if the message should be printed in the given timestamp, otherwise returns false.
+    	If this method returns false, the message will not be printed.
+    	The timestamp is in seconds granularity.
+    	:type timestamp: int
+    	:type message: str
+    	:rtype: bool
+    	"""
+    	if message not in self.d:
+    	    self.d[message] = timestamp
+    	    return True
     
-            if timestamp - self.d[message] < 10:
-                return False
-            else:
-                self.d[message] = timestamp
-                return True
+    	if timestamp - self.d[message] < 10:
+    	    return False
+    	else:
+    	    self.d[message] = timestamp
+    	    return True
     
     # Your Logger object will be instantiated and called as such:
     # obj = Logger()
     # param_1 = obj.shouldPrintMessage(timestamp,message)
+

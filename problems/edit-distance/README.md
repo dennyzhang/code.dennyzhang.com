@@ -1,5 +1,5 @@
-# Leetcode: Edit Distance     :BLOG:Hard:
 
+# Leetcode: Edit Distance     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Edit Distance
 ---
 
 Similar Problems:  
+
 -   [Delete Operation for Two Strings](https://code.dennyzhang.com/delete-operation-for-two-strings)
 -   [Unique Paths](https://code.dennyzhang.com/unique-paths)
 -   [One Edit Distance](https://code.dennyzhang.com/one-edit-distance)
@@ -23,7 +24,7 @@ a) Insert a character
 b) Delete a character  
 c) Replace a character  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/edit-distance)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/edit-distance)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/edit-distance/description/)  
 
@@ -52,29 +53,29 @@ Leave me comments, if you have better ways to solve.
         // Initialize
         if word1[0]!=word2[0] { dp[0][0] = 1 }
         for j:=1; j<len2; j++ {
-            dp[0][j] = dp[0][j-1]+1
-            if word2[j] == word1[0] && dp[0][j] == j+1 {
-                dp[0][j] = j
-            }
+    	dp[0][j] = dp[0][j-1]+1
+    	if word2[j] == word1[0] && dp[0][j] == j+1 {
+    	    dp[0][j] = j
+    	}
         }
         for i:=1; i<len1; i++ {
-            dp[i][0] = dp[i-1][0]+1
-            if word1[i] == word2[0] && dp[i][0] == i+1 {
-                dp[i][0] = i
-            }
+    	dp[i][0] = dp[i-1][0]+1
+    	if word1[i] == word2[0] && dp[i][0] == i+1 {
+    	    dp[i][0] = i
+    	}
         }
         // dp
         for i:=1; i<len1; i++ {
-            for j:=1; j<len2; j++ {
-                if word1[i] == word2[j] {
-                    dp[i][j] = dp[i-1][j-1]
-                    continue
-                }
-                min := dp[i-1][j-1]+1
-                if dp[i-1][j]+1 < min { min = dp[i-1][j]+1 }
-                if dp[i][j-1]+1 < min { min = dp[i][j-1]+1 }
-                dp[i][j] = min
-            }
+    	for j:=1; j<len2; j++ {
+    	    if word1[i] == word2[j] {
+    		dp[i][j] = dp[i-1][j-1]
+    		continue
+    	    }
+    	    min := dp[i-1][j-1]+1
+    	    if dp[i-1][j]+1 < min { min = dp[i-1][j]+1 }
+    	    if dp[i][j-1]+1 < min { min = dp[i][j-1]+1 }
+    	    dp[i][j] = min
+    	}
         }
         return dp[len1-1][len2-1]
     }
@@ -96,23 +97,24 @@ Leave me comments, if you have better ways to solve.
         for i:=0; i<=len2; i++ { dp[i] = i }
         // dp
         for i:=1; i<=len1; i++ {
-            prev := i-1
-            dp[0] = i
-            for j:=1; j<=len2; j++ {
-                cur := -1
-                if word1[i-1] == word2[j-1] {
-                    cur = prev
-                } else {
-                    // replace
-                    cur = dp[j-1]+1
-                    // delete
-                    if prev+1 < cur { cur = prev+1 }
-                    // add
-                    if dp[j]+1 < cur { cur = dp[j]+1 }
-                }
-                prev = dp[j]
-                dp[j] = cur
-            }
+    	prev := i-1
+    	dp[0] = i
+    	for j:=1; j<=len2; j++ {
+    	    cur := -1
+    	    if word1[i-1] == word2[j-1] {
+    		cur = prev
+    	    } else {
+    		// replace
+    		cur = dp[j-1]+1
+    		// delete
+    		if prev+1 < cur { cur = prev+1 }
+    		// add
+    		if dp[j]+1 < cur { cur = dp[j]+1 }
+    	    }
+    	    prev = dp[j]
+    	    dp[j] = cur
+    	}
         }
         return dp[len2]
     }
+

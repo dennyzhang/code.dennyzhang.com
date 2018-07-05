@@ -49,7 +49,7 @@ Note: The solution set must not contain duplicate subsets.
       []
     ]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/knight-probability-in-chessboard)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/knight-probability-in-chessboard)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/knight-probability-in-chessboard/description/)  
 

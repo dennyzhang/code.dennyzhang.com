@@ -1,5 +1,5 @@
-# Leetcode: Sliding Window Median     :BLOG:Hard:
 
+# Leetcode: Sliding Window Median     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Sliding Window Median
 ---
 
 Similar Problems:  
+
 -   [Find Median from Data Stream](https://code.dennyzhang.com/find-median-from-data-stream)
 -   [Tag: #getmedian](https://code.dennyzhang.com/tag/getmedian)
 
@@ -40,7 +41,7 @@ For example,
 Note:  
 You may assume k is always valid, ie: k is always smaller than input array's size for non-empty array.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/sliding-window-median)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sliding-window-median)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/sliding-window-median/description/)  
 
@@ -53,64 +54,65 @@ Leave me comments, if you have better ways to solve.
         ## Basic Ideas: two heap
         ## Complexity: Time O(n*k), Space O(k)
         def medianSlidingWindow(self, nums, k):
-            """
-            :type nums: List[int]
-            :type k: int
-            :rtype: List[float]
-            """
-            import heapq
-            l1, l2 = [], []
-            maxHeap = heapq.heapify(l1)
-            minHeap = heapq.heapify(l2)
+    	"""
+    	:type nums: List[int]
+    	:type k: int
+    	:rtype: List[float]
+    	"""
+    	import heapq
+    	l1, l2 = [], []
+    	maxHeap = heapq.heapify(l1)
+    	minHeap = heapq.heapify(l2)
     
-            res = []
-            for i in range(len(nums)):
-                heapq.heappush(l1, -nums[i])
+    	res = []
+    	for i in range(len(nums)):
+    	    heapq.heappush(l1, -nums[i])
     
-                if i<k-1: continue
+    	    if i<k-1: continue
     
-                # rebalancing
-                while len(l1) > len(l2):
-                    heapq.heappush(l2, -heapq.heappop(l1))
+    	    # rebalancing
+    	    while len(l1) > len(l2):
+    		heapq.heappush(l2, -heapq.heappop(l1))
     
-                # collect results
-                item = (-l1[0] + l2[0])/2 if k%2==0 else float(l2[0])
-                res.append(item)            
+    	    # collect results
+    	    item = (-l1[0] + l2[0])/2 if k%2==0 else float(l2[0])
+    	    res.append(item)            
     
-                # remove item
-                if self.heapRemove(l1, -nums[i-k+1]):
-                    # Notice: If we delete from l1, move one back from l2 to l1
-                    heapq.heappush(l1, -heapq.heappop(l2))
-                else:
-                    self.heapRemove(l2, nums[i-k+1])
-            return res
+    	    # remove item
+    	    if self.heapRemove(l1, -nums[i-k+1]):
+    		# Notice: If we delete from l1, move one back from l2 to l1
+    		heapq.heappush(l1, -heapq.heappop(l2))
+    	    else:
+    		self.heapRemove(l2, nums[i-k+1])
+    	return res
     
         def heapRemove(self, l, item):
-            k = -1
-            for i in range(len(l)):
-                if l[i] == item:
-                    k = i
-                    break
-            if k != -1:
-                l[k] = l[0]
-                heapq.heappop(l)
-                heapq.heapify(l)
-                return True
-            return False
+    	k = -1
+    	for i in range(len(l)):
+    	    if l[i] == item:
+    		k = i
+    		break
+    	if k != -1:
+    	    l[k] = l[0]
+    	    heapq.heappop(l)
+    	    heapq.heapify(l)
+    	    return True
+    	return False
     
         ## Basic Ideas: insert with binary search
         ## Complexity: Time O(n*k), Space O(k)
         def medianSlidingWindow_v1(self, nums, k):
-            """
-            :type nums: List[int]
-            :type k: int
-            :rtype: List[float]
-            """
-            import bisect
-            res = []
-            window = sorted(nums[:k])
-            for a, b in zip(nums, nums[k:]+[0]):
-                res.append((window[int(k/2)] + window[~int(k/2)])/2)
-                window.remove(a)
-                bisect.insort(window, b)
-            return res
+    	"""
+    	:type nums: List[int]
+    	:type k: int
+    	:rtype: List[float]
+    	"""
+    	import bisect
+    	res = []
+    	window = sorted(nums[:k])
+    	for a, b in zip(nums, nums[k:]+[0]):
+    	    res.append((window[int(k/2)] + window[~int(k/2)])/2)
+    	    window.remove(a)
+    	    bisect.insort(window, b)
+    	return res
+

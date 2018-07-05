@@ -1,5 +1,5 @@
-# Leetcode: Range Addition II     :BLOG:Medium:
 
+# Leetcode: Range Addition II     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Range Addition II
 ---
 
 Similar Problems:  
+
 -   [Review: Math Problems,](https://code.dennyzhang.com/review-math) Tag: [math](https://code.dennyzhang.com/tag/math)
 
 ---
@@ -43,11 +44,12 @@ Example 1:
     So the maximum integer in M is 2, and there are four of it in M. So return 4.
 
 Note:  
+
 1.  The range of m and n is [1,40000].
 2.  The range of a is [1,m], and the range of b is [1,n].
 3.  The range of operations size won't exceed 10,000.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/range-addition-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-addition-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/range-addition-ii/description/)  
 
@@ -62,14 +64,15 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(len(ops)) Space O(1)
     class Solution(object):
         def maxCount(self, m, n, ops):
-            """
-            :type m: int
-            :type n: int
-            :type ops: List[List[int]]
-            :rtype: int
-            """
-            min_i, min_j = m, n
-            for (i, j) in ops:
-                min_i = min(i, min_i)
-                min_j = min(j, min_j)
-            return min_i*min_j
+    	"""
+    	:type m: int
+    	:type n: int
+    	:type ops: List[List[int]]
+    	:rtype: int
+    	"""
+    	min_i, min_j = m, n
+    	for (i, j) in ops:
+    	    min_i = min(i, min_i)
+    	    min_j = min(j, min_j)
+    	return min_i*min_j
+

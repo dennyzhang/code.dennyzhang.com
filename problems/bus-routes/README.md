@@ -1,5 +1,5 @@
-# Leetcode: Bus Routes     :BLOG:Basic:
 
+# Leetcode: Bus Routes     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Bus Routes
 ---
 
 Similar Problems:  
+
 -   [Cheapest Flights Within K Stops](https://code.dennyzhang.com/cheapest-flights-within-k-stops)
 -   [Review: BFS Problems](https://code.dennyzhang.com/review-bfs)
 -   Tag: [#bfs](https://code.dennyzhang.com/tag/bfs)
@@ -36,7 +37,7 @@ Note:
 -   1 <= routes[i].length <= 500.
 -   0 <= routes[i][j] < 10 ^ 6.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/bus-routes)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bus-routes)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/bus-routes/description/)  
 
@@ -57,9 +58,9 @@ Leave me comments, if you have better ways to solve.
         route_visited := make([]bool, len(routes))
         point_visited := make(map[int]bool)
         for i, route := range routes {
-            for _, stop := range route {
-                m[stop] = append(m[stop], i)
-            }
+    	for _, stop := range route {
+    	    m[stop] = append(m[stop], i)
+    	}
         }
         // No need to take bus
         if S==T { return 0 }
@@ -69,39 +70,40 @@ Leave me comments, if you have better ways to solve.
         // Initialize queue
         level := 1
         for _, route_id := range m[S] {
-            if route_visited[route_id] == false {
-                for _, stop := range routes[route_id] {
-                    if stop == T { return level }
-                    if point_visited[stop] == false {
-                        queue = append(queue, stop)
-                        point_visited[stop] = true
-                    }
-                }
-                route_visited[route_id] = true
-            }
+    	if route_visited[route_id] == false {
+    	    for _, stop := range routes[route_id] {
+    		if stop == T { return level }
+    		if point_visited[stop] == false {
+    		    queue = append(queue, stop)
+    		    point_visited[stop] = true
+    		}
+    	    }
+    	    route_visited[route_id] = true
+    	}
         }
         for len(queue) != 0 {
-            level++
-            items := []int{}
-            for _, stop := range queue {
-                // find nex route to explore
-                for _, route_id := range m[stop] {
-                    if route_visited[route_id] == false {
-                        for _, stop2 := range routes[route_id] {
-                            if stop2 == T { return level }
-                            if point_visited[stop2] == false {
-                                items = append(items, stop2)
-                                point_visited[stop2] = true
-                            }
-                        }
-                        route_visited[route_id] = true
-                    }
-                }
-            }
-            queue = []int{}
-            for _, stop:= range items {
-                queue = append(queue, stop)
-            }
+    	level++
+    	items := []int{}
+    	for _, stop := range queue {
+    	    // find nex route to explore
+    	    for _, route_id := range m[stop] {
+    		if route_visited[route_id] == false {
+    		    for _, stop2 := range routes[route_id] {
+    			if stop2 == T { return level }
+    			if point_visited[stop2] == false {
+    			    items = append(items, stop2)
+    			    point_visited[stop2] = true
+    			}
+    		    }
+    		    route_visited[route_id] = true
+    		}
+    	    }
+    	}
+    	queue = []int{}
+    	for _, stop:= range items {
+    	    queue = append(queue, stop)
+    	}
         }
         return -1
     }
+

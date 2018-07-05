@@ -1,5 +1,5 @@
-# Leetcode: Find Median Given Frequency of Numbers     :BLOG:Hard:
 
+# Leetcode: Find Median Given Frequency of Numbers     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Find Median Given Frequency of Numbers
 ---
 
 Similar Problems:  
+
 -   [Median Employee Salary](https://code.dennyzhang.com/median-employee-salary)
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql)
 -   [Review: Median Problems](https://code.dennyzhang.com/review-median)
@@ -36,7 +37,7 @@ In this table, the numbers are 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, so the median
 
 Write a query to find the median of all numbers and name the result as median.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-median-given-frequency-of-numbers)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-median-given-frequency-of-numbers)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/find-median-given-frequency-of-numbers/description/)  
 
@@ -49,9 +50,10 @@ Leave me comments, if you have better ways to solve.
     from Numbers as t3 
     inner join 
         (select t1.Number, 
-            abs(sum(case when t1.Number>t2.Number then t2.Frequency else 0 end) -
-                sum(case when t1.Number<t2.Number then t2.Frequency else 0 end)) as count_diff
+    	abs(sum(case when t1.Number>t2.Number then t2.Frequency else 0 end) -
+    	    sum(case when t1.Number<t2.Number then t2.Frequency else 0 end)) as count_diff
         from numbers as t1, numbers as t2
         group by t1.Number) as t4
     on t3.Number = t4.Number
     where t3.Frequency>=t4.count_diff
+

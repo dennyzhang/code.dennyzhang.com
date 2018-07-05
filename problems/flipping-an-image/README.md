@@ -1,5 +1,5 @@
-# Leetcode: Flipping an Image     :BLOG:Basic:
 
+# Leetcode: Flipping an Image     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Flipping an Image
 ---
 
 Similar Problems:  
+
 -   Tag: [#array](https://code.dennyzhang.com/tag/array)
 
 ---
@@ -37,7 +38,7 @@ Notes:
 -   Width and height of A are in between 1 and 20
 -   0 <= A[i][j] <= 1
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flipping-an-image)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flipping-an-image)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/flipping-an-image/description/)  
 
@@ -50,9 +51,10 @@ Leave me comments, if you have better ways to solve.
     // Complexity: Time O(m*n), Space O(1)
     func flipAndInvertImage(A [][]int) [][]int {
         for i, row := range A {
-            for l,r := 0,len(row)-1; l<=r; l,r=l+1,r-1 {
-                A[i][l], A[i][r] = 1-A[i][r], 1-A[i][l]
-            }
+    	for l,r := 0,len(row)-1; l<=r; l,r=l+1,r-1 {
+    	    A[i][l], A[i][r] = 1-A[i][r], 1-A[i][l]
+    	}
         }
         return A
     }
+

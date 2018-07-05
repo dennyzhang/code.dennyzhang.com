@@ -1,5 +1,5 @@
-# Leetcode: LRU Cache     :BLOG:Hard:
 
+# Leetcode: LRU Cache     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ LRU Cache
 ---
 
 Similar Problems:  
+
 -   [All O\`one Data Structure](https://code.dennyzhang.com/all-oone-data-structure)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
@@ -36,7 +37,7 @@ Example:
     cache.get(3);       // returns 3
     cache.get(4);       // returns 4
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/lru-cache)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lru-cache)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/lru-cache/description/)  
 
@@ -53,74 +54,75 @@ Leave me comments, if you have better ways to solve.
     ## Complexity:
     class DLinkNode:
         def __init__(self, val):
-            self.val = val
-            self.left, self.right = None, None
+    	self.val = val
+    	self.left, self.right = None, None
     
     class LRUCache:
     
         def __init__(self, capacity):
-            """
-            :type capacity: int
-            """
-            self.count, self.capacity = 0, capacity
-            self.d = {}
-            # double link. head is the delete candidates
-            self.head, self.tail = DLinkNode(None), DLinkNode(None)
-            self.head.right = self.tail
-            self.tail.left = self.head
+    	"""
+    	:type capacity: int
+    	"""
+    	self.count, self.capacity = 0, capacity
+    	self.d = {}
+    	# double link. head is the delete candidates
+    	self.head, self.tail = DLinkNode(None), DLinkNode(None)
+    	self.head.right = self.tail
+    	self.tail.left = self.head
     
         def get(self, key):
-            """
-            :type key: int
-            :rtype: int
-            """
-            if key in self.d:
-                p = self.d[key]
-                # remove the node
-                p.left.right = p.right
-                p.right.left = p.left
-                # add to the tail
-                p.left = self.tail.left
-                p.left.right = p
-                p.right = self.tail
-                p.right.left = p
-                return p.val[1]
-            else:
-                return -1
+    	"""
+    	:type key: int
+    	:rtype: int
+    	"""
+    	if key in self.d:
+    	    p = self.d[key]
+    	    # remove the node
+    	    p.left.right = p.right
+    	    p.right.left = p.left
+    	    # add to the tail
+    	    p.left = self.tail.left
+    	    p.left.right = p
+    	    p.right = self.tail
+    	    p.right.left = p
+    	    return p.val[1]
+    	else:
+    	    return -1
     
         def put(self, key, value):
-            """
-            :type key: int
-            :type value: int
-            :rtype: void
-            """
-            if key in self.d:
-                self.get(key)
-                self.tail.left.val = (key, value)
-                return
+    	"""
+    	:type key: int
+    	:type value: int
+    	:rtype: void
+    	"""
+    	if key in self.d:
+    	    self.get(key)
+    	    self.tail.left.val = (key, value)
+    	    return
     
-            # need to add one more node
-            if self.count == self.capacity:
-                # remove one from the head
-                p = self.head.right
-                p.left.right = p.right
-                p.right.left = p.left
-                # update related info
-                self.count -= 1
-                del self.d[p.val[0]]
+    	# need to add one more node
+    	if self.count == self.capacity:
+    	    # remove one from the head
+    	    p = self.head.right
+    	    p.left.right = p.right
+    	    p.right.left = p.left
+    	    # update related info
+    	    self.count -= 1
+    	    del self.d[p.val[0]]
     
-            # create a new node
-            p = DLinkNode((key, value))
-            # add to tail
-            p.left = self.tail.left
-            p.left.right = p
-            p.right = self.tail
-            p.right.left = p
-            # update related info
-            self.count += 1
-            self.d[key] = p
+    	# create a new node
+    	p = DLinkNode((key, value))
+    	# add to tail
+    	p.left = self.tail.left
+    	p.left.right = p
+    	p.right = self.tail
+    	p.right.left = p
+    	# update related info
+    	self.count += 1
+    	self.d[key] = p
     
     # Your LRUCache object will be instantiated and called as such:
     # obj = LRUCache(capacity)
     # param_1 = obj.get(key)
     # obj.put(key,value)
+

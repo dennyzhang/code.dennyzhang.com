@@ -1,5 +1,5 @@
-# Leetcode: String Compression     :BLOG:Basic:
 
+# Leetcode: String Compression     :BLOG:Basic:
 
 ---
 
@@ -53,7 +53,7 @@ Note:
 All characters have an ASCII value in [35, 126].  
 1 <= len(chars) <= 1000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/string-compression)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/string-compression)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/string-compression/description/)  
 
@@ -64,32 +64,33 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/string-compression
     class Solution(object):
         def compress(self, chars):
-            """
-            :type chars: List[str]
-            :rtype: int
-            """
-            ## Idea: 3 pointers
-            ## Complexity: Time O(n), Space O(1)
-            length = len(chars)
-            i,k = 0,0
-            while i < length:
-                j = i + 1
-                while j < length and chars[j-1] == chars[j]:
-                    j += 1
-                chars[k] = chars[i]
-                if j != i + 1:
-                    count_str = str(j-i)
-                    k += 1
-                    for ch in count_str:
-                        chars[k] = ch
-                        k += 1
-                else:
-                    k += 1
-                i = j
-                #print("i: %d, j:%d" % (i, j))
-            return k
+    	"""
+    	:type chars: List[str]
+    	:rtype: int
+    	"""
+    	## Idea: 3 pointers
+    	## Complexity: Time O(n), Space O(1)
+    	length = len(chars)
+    	i,k = 0,0
+    	while i < length:
+    	    j = i + 1
+    	    while j < length and chars[j-1] == chars[j]:
+    		j += 1
+    	    chars[k] = chars[i]
+    	    if j != i + 1:
+    		count_str = str(j-i)
+    		k += 1
+    		for ch in count_str:
+    		    chars[k] = ch
+    		    k += 1
+    	    else:
+    		k += 1
+    	    i = j
+    	    #print("i: %d, j:%d" % (i, j))
+    	return k
     
     # s = Solution()
     # chars = ["a","a","a","b","b","a","a"]
     # s.compress(chars)
     # print(chars)
+

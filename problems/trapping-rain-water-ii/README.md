@@ -37,7 +37,7 @@ The above image represents the elevation map [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3
 
 After the rain, water is trapped between the blocks. The total volume of water trapped is 4.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/trapping-rain-water-ii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/trapping-rain-water-ii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/trapping-rain-water-ii/description/)  
 

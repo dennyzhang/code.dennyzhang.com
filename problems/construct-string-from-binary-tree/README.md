@@ -1,5 +1,5 @@
-# Leetcode: Construct String from Binary Tree     :BLOG:Basic:
 
+# Leetcode: Construct String from Binary Tree     :BLOG:Basic:
 
 ---
 
@@ -38,7 +38,7 @@ The null node needs to be represented by empty parenthesis pair "()". And you ne
     Explanation: Almost the same as the first example, 
     except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-string-from-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/construct-string-from-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/construct-string-from-binary-tree/description/)  
 
@@ -56,24 +56,25 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def tree2str(self, t):
-            """
-            :type t: TreeNode
-            :rtype: str
-            """
-            ## Idea: recursive
-            ## Complexity
-            if t is None:
-                return ""
-            if t.left is None and t.right is None:
-                return str(t.val)
+    	"""
+    	:type t: TreeNode
+    	:rtype: str
+    	"""
+    	## Idea: recursive
+    	## Complexity
+    	if t is None:
+    	    return ""
+    	if t.left is None and t.right is None:
+    	    return str(t.val)
     
-            res = str(t.val)
-            if t.left:
-                res = "%s(%s)" % (res, self.tree2str(t.left))
-            else:
-                res = "%s()" % (res)
+    	res = str(t.val)
+    	if t.left:
+    	    res = "%s(%s)" % (res, self.tree2str(t.left))
+    	else:
+    	    res = "%s()" % (res)
     
-            if t.right:
-                res = "%s(%s)" % (res, self.tree2str(t.right))
+    	if t.right:
+    	    res = "%s(%s)" % (res, self.tree2str(t.right))
     
-            return res
+    	return res
+

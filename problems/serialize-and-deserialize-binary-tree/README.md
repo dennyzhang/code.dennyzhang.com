@@ -1,5 +1,5 @@
-# Leetcode: Serialize and Deserialize Binary Tree     :BLOG:Medium:
 
+# Leetcode: Serialize and Deserialize Binary Tree     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Serialize and Deserialize Binary Tree
 ---
 
 Similar Problems:  
+
 -   [Serialize and Deserialize BST](https://code.dennyzhang.com/serialize-and-deserialize-bst)
 -   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
@@ -29,7 +30,7 @@ as "[1,2,3,null,null,4,5]", just the same as how LeetCode OJ serializes a binary
 
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/serialize-and-deserialize-binary-tree)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/serialize-and-deserialize-binary-tree)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)  
 
@@ -38,3 +39,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/serialize-and-deserialize-binary-tree
+

@@ -1,5 +1,5 @@
-# Leetcode: Valid Tic-Tac-Toe State     :BLOG:Hard:
 
+# Leetcode: Valid Tic-Tac-Toe State     :BLOG:Hard:
 
 ---
 
@@ -43,7 +43,7 @@ Note:
 -   board is a length-3 array of strings, where each string board[i] has length 3.
 -   Each board[i][j] is a character in the set {" ", "X", "O"}.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-tic-tac-toe-state)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-tic-tac-toe-state)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-tic-tac-toe-state/description/)  
 
@@ -52,3 +52,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     ## Blog link: https://code.dennyzhang.com/valid-tic-tac-toe-state
+

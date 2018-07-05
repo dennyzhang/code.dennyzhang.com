@@ -1,5 +1,5 @@
-# Leetcode: Contiguous Array     :BLOG:Amusing:
 
+# Leetcode: Contiguous Array     :BLOG:Amusing:
 
 ---
 
@@ -8,6 +8,7 @@ Contiguous Array
 ---
 
 Similar Problems:  
+
 -   Tag: [#subarray](https://code.dennyzhang.com/tag/subarray)
 
 ---
@@ -28,7 +29,7 @@ Example 2:
 
 Note: The length of the given binary array will not exceed 50,000.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contiguous-array)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/contiguous-array)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/contiguous-array/description/)  
 
@@ -47,33 +48,34 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution:
         def findMaxLength(self, nums):
-            """
-            :type nums: List[int]
-            :rtype: int
-            """
-            length = len(nums)
-            sums = [None] * length
-            m = {}
-            sum_v = 0
-            for i in range(0, length):
-                if nums[i] == 1:
-                    sum_v += 1
-                else:
-                    sum_v -= 1
-                # get the value of sum
-                sums[i] = sum_v
-                # track the longest position
-                if sum_v not in m:
-                    m[sum_v] = i
-                else:
-                    m[sum_v] = max(m[sum_v], i)
-            res = 0
-            for i in range(0, length):
-                sum_v = sums[i]
-                if nums[i] == 1:
-                    if sum_v - 1 in m:
-                        res = max(res, (m[sum_v-1]-i+1))
-                else:
-                    if sum_v + 1 in m:
-                        res = max(res, m[sum_v+1]-i+1)
-            return res
+    	"""
+    	:type nums: List[int]
+    	:rtype: int
+    	"""
+    	length = len(nums)
+    	sums = [None] * length
+    	m = {}
+    	sum_v = 0
+    	for i in range(0, length):
+    	    if nums[i] == 1:
+    		sum_v += 1
+    	    else:
+    		sum_v -= 1
+    	    # get the value of sum
+    	    sums[i] = sum_v
+    	    # track the longest position
+    	    if sum_v not in m:
+    		m[sum_v] = i
+    	    else:
+    		m[sum_v] = max(m[sum_v], i)
+    	res = 0
+    	for i in range(0, length):
+    	    sum_v = sums[i]
+    	    if nums[i] == 1:
+    		if sum_v - 1 in m:
+    		    res = max(res, (m[sum_v-1]-i+1))
+    	    else:
+    		if sum_v + 1 in m:
+    		    res = max(res, m[sum_v+1]-i+1)
+    	return res
+

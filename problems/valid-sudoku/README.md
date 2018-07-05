@@ -1,5 +1,5 @@
-# Leetcode: Valid Sudoku     :BLOG:Basic:
 
+# Leetcode: Valid Sudoku     :BLOG:Basic:
 
 ---
 
@@ -8,6 +8,7 @@ Valid Sudoku
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails)
 
@@ -22,7 +23,7 @@ A partially filled sudoku which is valid.
 Note:  
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-sudoku)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-sudoku)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-sudoku/description/)  
 
@@ -37,53 +38,54 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(1), Space O(1)
     class Solution(object):
         def isValidSudoku(self, board):
-            """
-            :type board: List[List[str]]
-            :rtype: bool
-            """
-            # check each row
-            for i in xrange(9):
-                array_check = [False] * 9
-                for j in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+    	"""
+    	:type board: List[List[str]]
+    	:rtype: bool
+    	"""
+    	# check each row
+    	for i in xrange(9):
+    	    array_check = [False] * 9
+    	    for j in xrange(9):
+    		ch = board[i][j]
+    		if ch == '.':
+    		    continue
+    		index = int(ch) - 1
+    		if array_check[index] is True:
+    		    return False
+    		else:
+    		    array_check[index] = True
     
-            # check each column
-            for j in xrange(9):
-                array_check = [False] * 9
-                for i in xrange(9):
-                    ch = board[i][j]
-                    if ch == '.':
-                        continue
-                    index = int(ch) - 1
-                    if array_check[index] is True:
-                        return False
-                    else:
-                        array_check[index] = True
+    	# check each column
+    	for j in xrange(9):
+    	    array_check = [False] * 9
+    	    for i in xrange(9):
+    		ch = board[i][j]
+    		if ch == '.':
+    		    continue
+    		index = int(ch) - 1
+    		if array_check[index] is True:
+    		    return False
+    		else:
+    		    array_check[index] = True
     
-            # check each section
-            start_node_list = []
-            for i in [0, 3, 6]:
-                for j in [0, 3, 6]:
-                    start_node_list.append((i, j))
-            for (start_i, start_j) in start_node_list:
-                array_check = [False] * 9
-                for i in xrange(3):
-                    for j in xrange(3):
-                        ch = board[start_i+i][start_j+j]
-                        # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
-                        # print array_check
-                        if ch == '.':
-                            continue
-                        index = int(ch) - 1
-                        if array_check[index] is True:
-                            return False
-                        else:
-                            array_check[index] = True    
-            return True
+    	# check each section
+    	start_node_list = []
+    	for i in [0, 3, 6]:
+    	    for j in [0, 3, 6]:
+    		start_node_list.append((i, j))
+    	for (start_i, start_j) in start_node_list:
+    	    array_check = [False] * 9
+    	    for i in xrange(3):
+    		for j in xrange(3):
+    		    ch = board[start_i+i][start_j+j]
+    		    # print("i:%d, j:%d, ch:%s" % (start_i+i, start_j+j, ch))
+    		    # print array_check
+    		    if ch == '.':
+    			continue
+    		    index = int(ch) - 1
+    		    if array_check[index] is True:
+    			return False
+    		    else:
+    			array_check[index] = True    
+    	return True
+

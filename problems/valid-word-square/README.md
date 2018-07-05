@@ -1,5 +1,5 @@
-# Leetcode: Valid Word Square     :BLOG:Medium:
 
+# Leetcode: Valid Word Square     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Valid Word Square
 ---
 
 Similar Problems:  
+
 -   Tag: [#matrixtraverse](https://code.dennyzhang.com/tag/matrixtraverse)
 
 ---
@@ -80,7 +81,7 @@ Example 3:
     
     Therefore, it is NOT a valid word square.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/valid-word-square)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-word-square)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/valid-word-square/description/)  
 
@@ -95,22 +96,23 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(m*n), Space O(1)
     class Solution:
         def validWordSquare(self, words):
-            """
-            :type words: List[str]
-            :rtype: bool
-            """
-            row_count = len(words)
-            if row_count == 0: return True
-            max_col = 0
-            for word in words: max_col = max(max_col, len(word))
-            if max_col != row_count: return False
+    	"""
+    	:type words: List[str]
+    	:rtype: bool
+    	"""
+    	row_count = len(words)
+    	if row_count == 0: return True
+    	max_col = 0
+    	for word in words: max_col = max(max_col, len(word))
+    	if max_col != row_count: return False
     
-            # examine for each row
-            try:
-                for row_index in range(0, row_count):
-                    for k in range(0, len(words[row_index])):
-                        if words[row_index][k] != words[k][row_index]:
-                            return False
-            except:
-                return False
-            return True
+    	# examine for each row
+    	try:
+    	    for row_index in range(0, row_count):
+    		for k in range(0, len(words[row_index])):
+    		    if words[row_index][k] != words[k][row_index]:
+    			return False
+    	except:
+    	    return False
+    	return True
+

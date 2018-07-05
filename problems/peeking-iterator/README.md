@@ -1,5 +1,5 @@
-# Leetcode: Peeking Iterator     :BLOG:Medium:
 
+# Leetcode: Peeking Iterator     :BLOG:Medium:
 
 ---
 
@@ -8,6 +8,7 @@ Peeking Iterator
 ---
 
 Similar Problems:  
+
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
 -   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
 
@@ -28,7 +29,7 @@ Follow up: How would you extend your design to be generic and work with all type
 Credits:  
 Special thanks to @porker2008 for adding this problem and creating all test cases.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/peeking-iterator)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/peeking-iterator)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/peeking-iterator/description/)  
 
@@ -62,40 +63,41 @@ Leave me comments, if you have better ways to solve.
     
     class PeekingIterator(object):
         def __init__(self, iterator):
-            """
-            Initialize your data structure here.
-            :type iterator: Iterator
-            """
-            self.iterator = iterator
-            if self.iterator.hasNext():
-                self.peek_element = self.iterator.next()
+    	"""
+    	Initialize your data structure here.
+    	:type iterator: Iterator
+    	"""
+    	self.iterator = iterator
+    	if self.iterator.hasNext():
+    	    self.peek_element = self.iterator.next()
     
         def peek(self):
-            """
-            Returns the next element in the iteration without advancing the iterator.
-            :rtype: int
-            """
-            return self.peek_element        
+    	"""
+    	Returns the next element in the iteration without advancing the iterator.
+    	:rtype: int
+    	"""
+    	return self.peek_element        
     
         def next(self):
-            """
-            :rtype: int
-            """
-            res = self.peek_element
-            if self.iterator.hasNext():
-                self.peek_element = self.iterator.next()
-            else:
-                self.peek_element = None
-            return res
+    	"""
+    	:rtype: int
+    	"""
+    	res = self.peek_element
+    	if self.iterator.hasNext():
+    	    self.peek_element = self.iterator.next()
+    	else:
+    	    self.peek_element = None
+    	return res
     
         def hasNext(self):
-            """
-            :rtype: bool
-            """
-            return (self.peek_element is not None)
+    	"""
+    	:rtype: bool
+    	"""
+    	return (self.peek_element is not None)
     
     # Your PeekingIterator object will be instantiated and called as such:
     # iter = PeekingIterator(Iterator(nums))
     # while iter.hasNext():
     #     val = iter.peek()   # Get the next element but not advance the iterator.
     #     iter.next()         # Should return the same value as [val].
+

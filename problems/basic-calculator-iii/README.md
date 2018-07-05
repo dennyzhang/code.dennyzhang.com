@@ -1,5 +1,5 @@
-# Leetcode: Basic Calculator III     :BLOG:Hard:
 
+# Leetcode: Basic Calculator III     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Basic Calculator III
 ---
 
 Similar Problems:  
+
 -   [Review: Problems With Many Details](https://code.dennyzhang.com/review-manydetails)
 -   [Review: Stack Problems](https://code.dennyzhang.com/review-stack)
 -   Tag: [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#stack](https://code.dennyzhang.com/tag/stack)
@@ -30,7 +31,7 @@ You may assume that the given expression is always valid. All intermediate resul
     "(2+6* 3+5- (3*14/7+2)*5)+3"=-12
 
 Note: Do not use the eval built-in library function.  
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/basic-calculator-iii)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/basic-calculator-iii)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/basic-calculator-iii/description/)  
 
@@ -46,97 +47,97 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(n)
     class Solution(object):
         def calculate(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            stack = []
-            s = s.replace(' ', '')
-            i, length = 0, len(s)
-            while i<length:
-                # print stack
-                ch = s[i]
-                if ch == '(':
-                    stack.append(ch)
-                elif ch == ')':
-                    str_temp = stack.pop()
-                    stack.pop() # (
-                    str_temp = str(self.calculate_no_parenthese(str_temp))
-                    if len(stack) != 0 and (stack[-1] != '('):
-                        stack[-1] = "%s%s" % (stack[-1], str_temp)
-                    else:
-                        stack.append(str_temp)
-                else:
-                    str_temp = ''
-                    while i<length and s[i] not in '()':
-                        str_temp = '%s%s' % (str_temp, s[i])
-                        i += 1
-                    if len(stack) != 0 and (stack[-1] != '('):
-                        stack[-1] = "%s%s" % (stack[-1], str_temp)
-                    else:
-                        stack.append(str_temp)
-                    continue
-                i += 1
-            return self.calculate_no_parenthese(stack[0])
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	stack = []
+    	s = s.replace(' ', '')
+    	i, length = 0, len(s)
+    	while i<length:
+    	    # print stack
+    	    ch = s[i]
+    	    if ch == '(':
+    		stack.append(ch)
+    	    elif ch == ')':
+    		str_temp = stack.pop()
+    		stack.pop() # (
+    		str_temp = str(self.calculate_no_parenthese(str_temp))
+    		if len(stack) != 0 and (stack[-1] != '('):
+    		    stack[-1] = "%s%s" % (stack[-1], str_temp)
+    		else:
+    		    stack.append(str_temp)
+    	    else:
+    		str_temp = ''
+    		while i<length and s[i] not in '()':
+    		    str_temp = '%s%s' % (str_temp, s[i])
+    		    i += 1
+    		if len(stack) != 0 and (stack[-1] != '('):
+    		    stack[-1] = "%s%s" % (stack[-1], str_temp)
+    		else:
+    		    stack.append(str_temp)
+    		continue
+    	    i += 1
+    	return self.calculate_no_parenthese(stack[0])
     
         def calculate_no_parenthese(self, s):
-            """
-            :type s: str
-            :rtype: int
-            """
-            """
-            :type s: str
-            :rtype: int
-            """
-            s = s.replace(' ', '')
-            s = s.replace('--', '+')
-            i = 0
-            length = len(s)
-            # solve */
-            stack = []
-            while i<length:
-                if s[i].isdigit():
-                    # get the num
-                    num_str = ''
-                    while i<length and s[i].isdigit():
-                        num_str = "%s%s" % (num_str, s[i])
-                        i += 1
-                    stack.append(num_str)
-                elif s[i] in '*/':
-                    num1 = int(stack.pop())
-                    num_str = ''
-                    op = s[i]
-                    # find the next number
-                    i += 1
-                    while i<length and s[i].isdigit():
-                        num_str = "%s%s" % (num_str, s[i])
-                        i += 1
-                    num2 = int(num_str)
-                    if op == '*':
-                        num1 = num1*num2
-                    else:
-                        num1 = num1/num2
-                    stack.append(str(num1))
-                else:
-                    # +-
-                    stack.append(s[i])
-                    i += 1
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	"""
+    	:type s: str
+    	:rtype: int
+    	"""
+    	s = s.replace(' ', '')
+    	s = s.replace('--', '+')
+    	i = 0
+    	length = len(s)
+    	# solve */
+    	stack = []
+    	while i<length:
+    	    if s[i].isdigit():
+    		# get the num
+    		num_str = ''
+    		while i<length and s[i].isdigit():
+    		    num_str = "%s%s" % (num_str, s[i])
+    		    i += 1
+    		stack.append(num_str)
+    	    elif s[i] in '*/':
+    		num1 = int(stack.pop())
+    		num_str = ''
+    		op = s[i]
+    		# find the next number
+    		i += 1
+    		while i<length and s[i].isdigit():
+    		    num_str = "%s%s" % (num_str, s[i])
+    		    i += 1
+    		num2 = int(num_str)
+    		if op == '*':
+    		    num1 = num1*num2
+    		else:
+    		    num1 = num1/num2
+    		stack.append(str(num1))
+    	    else:
+    		# +-
+    		stack.append(s[i])
+    		i += 1
     
-            # solve +-
-            res, i = 0, 0
-            while i<len(stack):
-                element = stack[i]
-                if element in '+-':
-                    num2 = stack[i+1]
-                    i = i+2
-                    if element == '+':
-                        res += int(num2)
-                    else:
-                        res -= int(num2)
-                else:
-                    res += int(element)
-                    i += 1
-            return res
+    	# solve +-
+    	res, i = 0, 0
+    	while i<len(stack):
+    	    element = stack[i]
+    	    if element in '+-':
+    		num2 = stack[i+1]
+    		i = i+2
+    		if element == '+':
+    		    res += int(num2)
+    		else:
+    		    res -= int(num2)
+    	    else:
+    		res += int(element)
+    		i += 1
+    	return res
     
     # s = Solution()
     # print s.calculate(" 2-(5-6) ") # 3
@@ -146,3 +147,4 @@ Leave me comments, if you have better ways to solve.
     # print s.calculate(" 6-4 / 2 ") # 4
     # print s.calculate("(2+6* 3+5- (3*14/7+2)*5)+3") # -12
     # print s.calculate("1-(2+3-(4+(5-(1-(2+4-(5+6))))))") # -1
+

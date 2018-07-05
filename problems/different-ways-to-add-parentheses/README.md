@@ -1,5 +1,5 @@
-# Leetcode: Different Ways to Add Parentheses     :BLOG:Hard:
 
+# Leetcode: Different Ways to Add Parentheses     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Different Ways to Add Parentheses
 ---
 
 Similar Problems:  
+
 -   [Review: Divide And Conquer Problems](https://code.dennyzhang.com/review-divideconquer), [Tag: #divideconquer](https://code.dennyzhang.com/tag/divideconquer)
 
 ---
@@ -33,7 +34,7 @@ Example 2
     (((2*3)-4)*5) = 10
     Output: [-34, -14, -10, -10, 10]
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/different-ways-to-add-parentheses)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/different-ways-to-add-parentheses)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/different-ways-to-add-parentheses/description/)  
 
@@ -44,14 +45,15 @@ Leave me comments, if you have better ways to solve.
     ## Blog link: https://code.dennyzhang.com/different-ways-to-add-parentheses
     class Solution:
         def diffWaysToCompute(self, input):
-            res = []
-            for i, ch in enumerate(input):
-                if ch in "+-*":
-                    l1 = self.diffWaysToCompute(input[:i])
-                    l2 = self.diffWaysToCompute(input[i+1:])
-                    for num1 in l1:
-                        for num2 in l2:
-                            if ch == '+': res.append(num1+num2)
-                            if ch == '-': res.append(num1-num2)
-                            if ch == '*': res.append(num1*num2)
-            return res if res !=[] else [int(input)]
+    	res = []
+    	for i, ch in enumerate(input):
+    	    if ch in "+-*":
+    		l1 = self.diffWaysToCompute(input[:i])
+    		l2 = self.diffWaysToCompute(input[i+1:])
+    		for num1 in l1:
+    		    for num2 in l2:
+    			if ch == '+': res.append(num1+num2)
+    			if ch == '-': res.append(num1-num2)
+    			if ch == '*': res.append(num1*num2)
+    	return res if res !=[] else [int(input)]
+

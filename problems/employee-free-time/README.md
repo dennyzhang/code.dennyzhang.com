@@ -1,5 +1,5 @@
-# Leetcode: Employee Free Time     :BLOG:Hard:
 
+# Leetcode: Employee Free Time     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Identity Employee Free Time
 ---
 
 Similar Problems:  
+
 -   [Review: Interval Problems](https://code.dennyzhang.com/review-interval), [Tag: #interval](https://code.dennyzhang.com/tag/interval)
 
 ---
@@ -35,10 +36,11 @@ Return the list of finite intervals representing common, positive-length free ti
     Also, we wouldn't include intervals like [5, 5] in our answer, as they have zero length.
 
 Note:  
+
 1.  schedule and schedule[i] are lists with lengths in range [1, 50].
 2.  0 <= schedule[i].start < schedule[i].end <= 10^8.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/employee-free-time)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/employee-free-time)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/employee-free-time/description/)  
 
@@ -55,7 +57,8 @@ Leave me comments, if you have better ways to solve.
     
     class Solution(object):
         def employeeFreeTime(self, schedule):
-            """
-            :type schedule: List[List[Interval]]
-            :rtype: List[Interval]
-            """
+    	"""
+    	:type schedule: List[List[Interval]]
+    	:rtype: List[Interval]
+    	"""
+

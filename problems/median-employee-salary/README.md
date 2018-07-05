@@ -1,5 +1,5 @@
-# Leetcode: Median Employee Salary     :BLOG:Hard:
 
+# Leetcode: Median Employee Salary     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Median Employee Salary
 ---
 
 Similar Problems:  
+
 -   [Find Median Given Frequency of Numbers](https://code.dennyzhang.com/find-median-given-frequency-of-numbers)
 -   [Review: SQL Problems](https://code.dennyzhang.com/review-sql)
 -   [Review: Median Problems](https://code.dennyzhang.com/review-median)
@@ -51,7 +52,7 @@ Write a SQL query to find the median salary of each company. Bonus points if you
     |14   | C          | 2645   |
     +-----+------------+--------+
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/median-employee-salary)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/median-employee-salary)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/median-employee-salary/description/)  
 
@@ -65,8 +66,9 @@ Leave me comments, if you have better ways to solve.
     on t1.Company = t2.Company
     group by t1.Id
     having abs(sum(CASE when t2.Salary<t1.Salary then 1
-                      when t2.Salary>t1.Salary then -1
-                      when t2.Salary=t1.Salary and t2.Id<t1.Id then 1
-                      when t2.Salary=t1.Salary and t2.Id>t1.Id then -1
-                      else 0 end)) <= 1
+    		  when t2.Salary>t1.Salary then -1
+    		  when t2.Salary=t1.Salary and t2.Id<t1.Id then 1
+    		  when t2.Salary=t1.Salary and t2.Id>t1.Id then -1
+    		  else 0 end)) <= 1
     order by t1.Company, t1.Salary, t1.Id
+

@@ -1,5 +1,5 @@
-# Leetcode: Contain Virus     :BLOG:Hard:
 
+# Leetcode: Contain Virus     :BLOG:Hard:
 
 ---
 
@@ -8,6 +8,7 @@ Contain Virus
 ---
 
 Similar Problems:  
+
 -   Tag: [#graph](https://code.dennyzhang.com/tag/graph)
 
 ---
@@ -59,11 +60,12 @@ Example 3:
     Explanation: The region on the left only builds two new walls.
 
 Note:  
+
 1.  The number of rows and columns of grid will each be in the range [1, 50].
 2.  Each grid[i][j] will be either 0 or 1.
 3.  Throughout the described process, there is always a contiguous viral region that will infect strictly more uncontaminated squares in the next round.
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/contain-virus)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/contain-virus)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/contain-virus/description/)  
 
@@ -72,3 +74,4 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/contain-virus
+

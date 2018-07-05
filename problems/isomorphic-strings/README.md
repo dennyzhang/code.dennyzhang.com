@@ -1,5 +1,5 @@
-# Leetcode: Isomorphic Strings     :BLOG:Basic:
 
+# Leetcode: Isomorphic Strings     :BLOG:Basic:
 
 ---
 
@@ -23,7 +23,7 @@ All occurrences of a character must be replaced with another character while pre
 Note:  
 You may assume both s and t have the same length.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/isomorphic-strings)  
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/isomorphic-strings)  
 
 Credits To: [leetcode.com](https://leetcode.com/problems/isomorphic-strings/description/)  
 
@@ -39,26 +39,27 @@ Leave me comments, if you have better ways to solve.
     ## Complexity: Time O(n), Space O(1). (Keys of dictionary is quite limited)
     class Solution(object):
         def isIsomorphic(self, s, t):
-            """
-            :type s: str
-            :type t: str
-            :rtype: bool
-            """
-            m1, m2 = {}, {}
-            for i in xrange(len(s)):
-                ch1, ch2 = s[i], t[i]
-                # mapping from s to t
-                if m1.has_key(ch1):
-                    if m1[ch1] != ch2:
-                        return False
-                else:
-                    m1[ch1] = ch2
+    	"""
+    	:type s: str
+    	:type t: str
+    	:rtype: bool
+    	"""
+    	m1, m2 = {}, {}
+    	for i in xrange(len(s)):
+    	    ch1, ch2 = s[i], t[i]
+    	    # mapping from s to t
+    	    if m1.has_key(ch1):
+    		if m1[ch1] != ch2:
+    		    return False
+    	    else:
+    		m1[ch1] = ch2
     
-                # ab -> aa
-                # mapping from t to s
-                if m2.has_key(ch2):
-                    if m2[ch2] != ch1:
-                        return False
-                else:
-                    m2[ch2] = ch1
-            return True
+    	    # ab -> aa
+    	    # mapping from t to s
+    	    if m2.has_key(ch2):
+    		if m2[ch2] != ch1:
+    		    return False
+    	    else:
+    		m2[ch2] = ch1
+    	return True
+
