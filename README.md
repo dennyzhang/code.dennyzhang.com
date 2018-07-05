@@ -22,15 +22,11 @@ Table of Contents
 
 File me [tickets](https://github.com/DennyZhang/challenges-leetcode-interesting/issues) or star [the repo](https://github.com/DennyZhang/challenges-leetcode-interesting).
 
-Solve all [leetcode.com](https://leetcode.com) problems in Python
-
-http://code.dennyzhang.com/contact
+See my blog about coder interview: https://code.dennyzhang.com/
 
 My [leetcode profile](https://leetcode.com/dennyzhang/) and [lintcode profile](https://www.lintcode.com/user/DennyZhang)
 
 [https://leetcode.com/dennyzhang](https://cdn.dennyzhang.com/images/brain/denny_leetcode.png)
-
-See more: https://code.dennyzhang.com
 
 <a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 
