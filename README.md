@@ -26,7 +26,7 @@ See my blog about coder interview: https://code.dennyzhang.com/
 
 My [leetcode profile](https://leetcode.com/dennyzhang/):
 
-<a href="https://code.dennyzhang.com"><img align="right" width="185" height="37" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png"></a>
+<a href="https://code.dennyzhang.com"><img align="left" width="410" height="706" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png"></a>
 
 <a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 
