@@ -22,11 +22,8 @@ Table of Contents
 
 File me [tickets](https://github.com/DennyZhang/challenges-leetcode-interesting/issues) or star [the repo](https://github.com/DennyZhang/challenges-leetcode-interesting).
 
+See my blog about coder interview: https://code.dennyzhang.com/
+
 My [leetcode profile](https://leetcode.com/dennyzhang/):
 
 <a href="https://code.dennyzhang.com"><img align="left" width="410" height="706" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png"></a>
-
-See my blog about coder interview: https://code.dennyzhang.com/
-
-# License
-- Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).
