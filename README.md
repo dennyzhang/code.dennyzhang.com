@@ -22,7 +22,7 @@ Table of Contents
 
 File me [tickets](https://github.com/DennyZhang/challenges-leetcode-interesting/issues) or star [the repo](https://github.com/DennyZhang/challenges-leetcode-interesting).
 
-See my blog about coder interview: https://code.dennyzhang.com/
+**My blog about coder interview**: https://code.dennyzhang.com/
 
 My [leetcode profile](https://leetcode.com/dennyzhang/):
 
