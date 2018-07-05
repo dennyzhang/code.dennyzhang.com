@@ -8,6 +8,7 @@
 ---
 
 Similar Problems:  
+
 -   Tag: [#hashmap](https://code.dennyzhang.com/tag/hashmap)
 
 ---
@@ -40,9 +41,10 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
+    // Blog link: https://code.dennyzhang.com/4sum-ii
     // Basic Ideas: hashmap
     // Complexity: Time O(n*n), Space O(n*n)
-    func fourSumCount(A []int, B []int, C []int, D []int) int {
+    func fourSumCount(A int, B int, C int, D int) int {
         m := map[int]int{}
         for _, v1 := range A {
             for _, v2:= range B {
