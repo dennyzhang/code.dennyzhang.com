@@ -1,0 +1,85 @@
+* Leetcode: Random Pick with Blacklist                           :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     random
+:END:
+---------------------------------------------------------------------
+Random Pick with Blacklist
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]]
+- Tag: [[https://code.dennyzhang.com/tag/random][#random]]
+---------------------------------------------------------------------
+Given a blacklist B containing unique integers from [0, N), write a function to return a uniform random integer from [0, N) which is NOT in B.
+
+Optimize it such that it minimizes the call to system's Math.random().
+
+Note:
+
+1. 1 <= N <= 1000000000
+- 0 <= B.length < min(100000, N)
+- [0, N) does NOT include N. See interval notation.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+["Solution","pick","pick","pick"]
+[[1,[]],[],[],[]]
+Output: [null,0,0,0]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+["Solution","pick","pick","pick"]
+[[2,[]],[],[],[]]
+Output: [null,1,1,1]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: 
+["Solution","pick","pick","pick"]
+[[3,[1]],[],[],[]]
+Output: [null,0,0,2]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: 
+["Solution","pick","pick","pick"]
+[[4,[2]],[],[],[]]
+Output: [null,1,3,1]
+Explanation of Input Syntax:
+#+END_EXAMPLE
+
+The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/random-pick-with-blacklist][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/random-pick-with-blacklist/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/random-pick-with-blacklist
+
+#+END_SRC

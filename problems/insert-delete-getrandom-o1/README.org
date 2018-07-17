@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, reservoirsampling
+:type:     oodesign, reservoirsampling, random
 :END:
 ---------------------------------------------------------------------
 Design a data structure that supports reqiured operations in O(1) time.
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/random][#random]]
 ---------------------------------------------------------------------
 Design a data structure that supports all following operations in average O(1) time.
 
@@ -51,7 +51,6 @@ Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/insert-delete-getrandom-o1
 ## Basic Ideas:

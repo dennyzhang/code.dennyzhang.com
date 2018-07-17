@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     random, inspiring
 :END:
 ---------------------------------------------------------------------
 Implement Rand10() Using Rand7()
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/random-pick-with-blacklist][Leetcode: Random Pick with Blacklist]]
+- Tag: [[https://code.dennyzhang.com/tag/random][#random]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a function rand7 which generates a uniform random integer in the range 1 to 7, write a function rand10 which generates a uniform random integer in the range 1 to 10.
 
@@ -55,8 +55,12 @@ Leave me comments, if you have better ways to solve.
 ## Blog link: https://code.dennyzhang.com/implement-rand10-using-rand7
 ## Basic Ideas:
 ##  f(7) -> f(49) -> f(40) -> f(10)
-##    0 - 48
+##    0 - 48: 6*x+y
 ##    0 - 39
+##       0, 10, 20, 30 -> 0
+##       1, 11, 21, 31 -> 1
+##       2, 12, 22, 32 -> 2
+##       ...
 ##    0 - 9
 ##    1 - 10
 ## Complexity:

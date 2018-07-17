@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, fisheryatesshuffle, reservoirsampling
+:type:     oodesign, fisheryatesshuffle, reservoirsampling, random
 :END:
 ---------------------------------------------------------------------
 Shuffle an Array
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/random][#random]]
 ---------------------------------------------------------------------
 Shuffle a set of numbers without duplicates.
 
