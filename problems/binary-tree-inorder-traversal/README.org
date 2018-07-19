@@ -2,12 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     treetraversal
+:type:  treetraversal
 :END:
 ---------------------------------------------------------------------
 Binary Tree Inorder Traversal
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given a binary tree, return the inorder traversal of its nodes' values.

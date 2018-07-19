@@ -1,38 +1,39 @@
-* Leetcode: N-ary Tree Postorder Traversal                       :BLOG:Basic:
+* Leetcode: N-ary Tree Preorder Traversal                        :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     treetraversal, inspiring, redo
 :END:
 ---------------------------------------------------------------------
-N-ary Tree Postorder Traversal
+N-ary Tree Preorder Traversal
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
-Given an n-ary tree, return the postorder traversal of its nodes' values.
+Given an n-ary tree, return the preorder traversal of its nodes' values.
 
 For example, given a 3-ary tree:
 
 [[image-blog:Leetcode: N-ary Tree Postorder Traversal][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png]]
 
-Return its postorder traversal as: [5,6,3,2,4,1].
- 
+Return its preorder traversal as: [1,3,5,6,2,4].
+
 Note: Recursive solution is trivial, could you do it iteratively?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-ary-tree-postorder-traversal][challenges-leetcode-interesting]]
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-ary-tree-preorder-traversal][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/][leetcode.com]]
+Credits To: [[url-external:https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution: recursive
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/n-ary-tree-postorder-traversal
+## Blog link: https://code.dennyzhang.com/n-ary-tree-preorder-traversal
 ## Basic Ideas:
-## Complexity: Time O(n), Space O(n)
+##
+## Complexity:
 """
 # Definition for a Node.
 class Node(object):
@@ -41,15 +42,14 @@ class Node(object):
         self.children = children
 """
 class Solution(object):
-    def postorder(self, root):
+    def preorder(self, root):
         """
         :type root: Node
         :rtype: List[int]
         """
-        if root == None: return []
-        res = []
-        for node in root.children:
-            res += self.postorder(node)
-        res.append(root.val)
+        if root is None: return []
+        res = [root.val]
+        for child in root.children:
+            res += self.preorder(child)
         return res
 #+END_SRC

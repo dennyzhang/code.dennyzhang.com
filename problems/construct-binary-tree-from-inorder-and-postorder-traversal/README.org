@@ -8,14 +8,13 @@
 Construct Binary Tree from Inorder and Postorder Traversal
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given inorder and postorder traversal of a tree, construct the binary tree.
 
 Note:
 You may assume that duplicates do not exist in the tree.
-
-
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/construct-binary-tree-from-inorder-and-postorder-traversal][challenges-leetcode-interesting]]
 

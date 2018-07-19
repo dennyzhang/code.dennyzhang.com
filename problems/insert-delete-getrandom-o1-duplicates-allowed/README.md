@@ -11,7 +11,7 @@ Similar Problems:
 
 -   [Max Stack](https://code.dennyzhang.com/max-stack)
 -   [Review: Object-Oriented Design Problems](https://code.dennyzhang.com/review-oodesign)
--   Tag: [oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   Tag: [#oodesign](https://code.dennyzhang.com/tag/oodesign), [#random](https://code.dennyzhang.com/tag/random)
 
 ---
 

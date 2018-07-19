@@ -8,6 +8,7 @@
 Inorder Successor in BST
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a binary search tree and a node in it, find the in-order successor of that node in the BST.
