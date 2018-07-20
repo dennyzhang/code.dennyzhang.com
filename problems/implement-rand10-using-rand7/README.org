@@ -1,4 +1,4 @@
-* Leetcode: Implement Rand10() Using Rand7()                     :BLOG:Basic:
+* Leetcode: Implement Rand10() Using Rand7()                     :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
