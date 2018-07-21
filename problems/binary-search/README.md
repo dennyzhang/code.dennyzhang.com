@@ -46,17 +46,17 @@ Leave me comments, if you have better ways to solve.
     // Blog link: https://code.dennyzhang.com/binary-search
     // Basic Ideas:
     // Complexity: Time O(log(n)), Space O(1)
-    func search(nums int, target int) int {
+    func search(nums []int, target int) int {
         var m int
         l, r := 0, len(nums)-1
         for l<=r {
-            m = l + (r-l)/2
-            if nums[m] == target { return m }
-            if nums[m] > target {
-                r = m-1
-            } else {
-                l = m+1
-            }
+    	m = l + (r-l)/2
+    	if nums[m] == target { return m }
+    	if nums[m] > target {
+    	    r = m-1
+    	} else {
+    	    l = m+1
+    	}
         }
         return -1
     }

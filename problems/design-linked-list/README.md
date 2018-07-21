@@ -1,5 +1,5 @@
 
-# Leetcode: Design Linked List     :BLOG:Basic:
+# Leetcode: Design Linked List     :BLOG:Medium:
 
 ---
 
@@ -10,7 +10,7 @@ Design Linked List
 Similar Problems:  
 
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist), [#oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
 

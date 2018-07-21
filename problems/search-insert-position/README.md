@@ -39,18 +39,21 @@ Leave me comments, if you have better ways to solve.
 
 ---
 
-    ## Blog link: https://code.dennyzhang.com/search-insert-position
-    class Solution(object):
-        def searchInsert(self, nums, target):
-    	"""
-    	:type nums: List[int]
-    	:type target: int
-    	:rtype: int
-    	"""
-    	i = 0
-    	for num in nums:
-    	    if num >= target:
-    		return i
-    	    i = i + 1
-    	return i
+    // Blog link: https://code.dennyzhang.com/search-insert-position
+    // Basic Ideas: binary search
+    // Find the first element which is no smaller than the target
+    // Complexity: Time O(log(n)), Space O(1)
+    func searchInsert(nums []int, target int) int {
+        var m int
+        l, r := 0, len(nums)-1
+        for l<=r {
+    	m = l + (r-l)/2
+    	if nums[m] >= target {
+    	    r = m -1
+    	} else {
+    	    l = m + 1
+    	}
+        }
+        return l
+    }
 

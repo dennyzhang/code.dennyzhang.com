@@ -1,5 +1,5 @@
 
-# Leetcode: Implement Rand10() Using Rand7()     :BLOG:Basic:
+# Leetcode: Implement Rand10() Using Rand7()     :BLOG:Medium:
 
 ---
 

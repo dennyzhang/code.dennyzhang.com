@@ -9,7 +9,9 @@ Kth Largest Element in an Array
 
 Similar Problems:  
 
--   [Review: Heap Problems](https://code.dennyzhang.com/review-heap), [Tag: #heap](https://code.dennyzhang.com/tag/heap)
+-   [Leetcode: Kth Largest Element in a Stream](https://code.dennyzhang.com/kth-largest-element-in-a-stream)
+-   [Review: Heap Problems](https://code.dennyzhang.com/review-heap)
+-   [Tag: #heap](https://code.dennyzhang.com/tag/heap)
 
 ---
 
