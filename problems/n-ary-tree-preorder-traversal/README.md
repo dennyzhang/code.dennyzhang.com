@@ -1,42 +1,59 @@
 
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: N-ary Tree Preorder Traversal     :BLOG:Basic:
 
 ---
 
-Identity number which appears exactly once.  
+N-ary Tree Preorder Traversal  
 
 ---
 
 Similar Problems:  
 
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   [Review: Tree Traversal Problems](https://code.dennyzhang.com/review-treetraversal)
+-   Tag: [#treetraversal](https://code.dennyzhang.com/tag/treetraversal), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given an n-ary tree, return the preorder traversal of its nodes' values.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/example)  
+For example, given a 3-ary tree:  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+[![img](https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png)](Leetcode: N-ary Tree Postorder Traversal)  
+
+Return its preorder traversal as: [1,3,5,6,2,4].  
+
+Note: Recursive solution is trivial, could you do it iteratively?  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/n-ary-tree-preorder-traversal)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
 ---
 
--   Solution: XXX
+-   Solution: recursive
 
-**General Thinkings:**  
-
-    
-
-**Key Observations:**  
-
-    
-
-**Walk Through Testdata**  
-
-    
-
-    // Blog link: https://code.dennyzhang.com/example
+    ## Blog link: https://code.dennyzhang.com/n-ary-tree-preorder-traversal
+    ## Basic Ideas:
+    ##
+    ## Complexity:
+    """
+    # Definition for a Node.
+    class Node(object):
+        def __init__(self, val, children):
+            self.val = val
+            self.children = children
+    """
+    class Solution(object):
+        def preorder(self, root):
+            """
+            :type root: Node
+            :rtype: List[int]
+            """
+            if root is None: return 
+            res = [root.val]
+            for child in root.children:
+                res += self.preorder(child)
+            return res
 

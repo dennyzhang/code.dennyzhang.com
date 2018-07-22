@@ -9,6 +9,7 @@ Design Circular Queue
 
 Similar Problems:  
 
+-   [Leetcode: Design Circular Deque](https://code.dennyzhang.com/design-circular-deque)
 -   Tag: [#oodesign](https://code.dennyzhang.com/tag/oodesign)
 
 ---
@@ -65,7 +66,7 @@ Leave me comments, if you have better ways to solve.
     //     When (rear+1)%n == front -> full
     // Complexity: Time O(1), Space O(n)
     type MyCircularQueue struct {
-        l int
+        l []int
         front, rear, size int
     }
     
@@ -73,7 +74,7 @@ Leave me comments, if you have better ways to solve.
     /** Initialize your data structure here. Set the size of the queue to be k. */
     func Constructor(k int) MyCircularQueue {
         queue := MyCircularQueue{}
-        queue.l = make(int, k+1)
+        queue.l = make([]int, k+1)
         queue.front, queue.rear, queue.size = 0, 0, k+1
         return queue
     }
