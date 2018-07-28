@@ -10,7 +10,7 @@ Design Linked List
 Similar Problems:  
 
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist), [#oodesign](https://code.dennyzhang.com/tag/oodesign)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist), [#oodesign](https://code.dennyzhang.com/tag/oodesign), [#classic](https://code.dennyzhang.com/tag/classic)
 
 ---
 
@@ -51,44 +51,74 @@ Leave me comments, if you have better ways to solve.
 -   Solution:
 
     // Blog link: https://code.dennyzhang.com/design-linked-list
-    type MyLinkedList struct {
-    
+    // Basic Ideas:
+    // head pointer won't store data
+    //
+    // Complexity: Time O(1), Space O(1)
+    type LinkedNode struct {
+        value int
+        next *LinkedNode
     }
     
+    type MyLinkedList struct {
+        head *LinkedNode
+        tail *LinkedNode
+    }
     
     /** Initialize your data structure here. */
     func Constructor() MyLinkedList {
-    
+        p := LinkedNode{0, nil}
+        return MyLinkedList{&p, &p}
     }
     
     
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
     func (this *MyLinkedList) Get(index int) int {
-    
+        if index<0 { return -1 }
+        p := this.head.next
+        for index>0 && p != nil { index, p = index-1, p.next }
+        if p == nil { return -1 }
+        return p.value
     }
     
     
     /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
     func (this *MyLinkedList) AddAtHead(val int)  {
-    
+        p := LinkedNode{val, this.head.next}
+        // add to the tail
+        if this.head == this.tail { this.tail = &p }
+        this.head.next = &p
     }
-    
     
     /** Append a node of value val to the last element of the linked list. */
     func (this *MyLinkedList) AddAtTail(val int)  {
-    
+        p := LinkedNode{val, nil}
+        this.tail.next = &p
+        this.tail = &p
     }
-    
     
     /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
     func (this *MyLinkedList) AddAtIndex(index int, val int)  {
-    
+        if index < 0 { return }
+        p := this.head
+        for index>0 && p != nil { index, p = index-1, p.next }
+        if p == nil { return }
+        q := LinkedNode{val, p.next}
+        // add to the tail
+        if p == this.tail { this.tail = &q }
+        p.next = &q
     }
     
     
     /** Delete the index-th node in the linked list, if the index is valid. */
     func (this *MyLinkedList) DeleteAtIndex(index int)  {
-    
+        if index < 0 { return }
+        p := this.head
+        for index>0 && p != nil { index, p = index-1, p.next }
+        if p == nil || p.next == nil { return }
+        // delete from the tail
+        if p.next == this.tail { this.tail = p }
+        p.next = p.next.next
     }
     
     

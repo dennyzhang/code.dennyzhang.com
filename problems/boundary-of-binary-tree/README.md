@@ -1,42 +1,129 @@
 
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Boundary of Binary Tree     :BLOG:Medium:
 
 ---
 
-Identity number which appears exactly once.  
+Boundary of Binary Tree  
 
 ---
 
 Similar Problems:  
 
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a binary tree, return the values of its boundary in anti-clockwise direction starting from root. Boundary includes left boundary, leaves, and right boundary in order without duplicate nodes.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/example)  
+Left boundary is defined as the path from root to the left-most node. Right boundary is defined as the path from root to the right-most node. If the root doesn't have left subtree or right subtree, then the root itself is left boundary or right boundary. Note this definition only applies to the input binary tree, and not applies to any subtrees.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+The left-most node is defined as a leaf node you could reach when you always firstly travel to the left subtree if exists. If not, travel to the right subtree. Repeat until you reach a leaf node.  
+
+The right-most node is also defined by the same way with left and right exchanged.  
+
+Example 1  
+
+    Input:
+      1
+       \
+        2
+       / \
+      3   4
+    
+    Ouput:
+    [1, 3, 4, 2]
+    
+    Explanation:
+    The root doesn't have left subtree, so the root itself is left boundary.
+    The leaves are node 3 and 4.
+    The right boundary are node 1,2,4. Note the anti-clockwise direction means you should output reversed right boundary.
+    So order them in anti-clockwise without duplicates and we have [1,3,4,2].
+
+Example 2  
+
+    Input:
+        ____1_____
+       /          \
+      2            3
+     / \          / 
+    4   5        6   
+       / \      / \
+      7   8    9  10  
+           
+    Ouput:
+    [1,2,4,7,8,9,10,6,3]
+    
+    Explanation:
+    The left boundary are node 1,2,4. (4 is the left-most node according to definition)
+    The leaves are node 4,7,8,9,10.
+    The right boundary are node 1,3,6,10. (10 is the right-most node).
+    So order them in anti-clockwise without duplicate nodes we have [1,2,4,7,8,9,10,6,3].
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/boundary-of-binary-tree)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/boundary-of-binary-tree/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
 ---
 
--   Solution: XXX
+-   Solution:
 
-**General Thinkings:**  
-
+    // Blog link: https://code.dennyzhang.com/boundary-of-binary-tree
+    // Basic Ideas:
+    // 3 parts to get the final results:
+    //    left path + leaves + right path
+    //
+    // Complexity: Time O(n), Space O(n)
+    /**
+     * Definition for a binary tree node.
+     * type TreeNode struct {
+     *     Val int
+     *     Left *TreeNode
+     *     Right *TreeNode
+     * }
+     */
+    var res int
+    func getLeaves(root *TreeNode) {
+        if root == nil { return }
+        getLeaves(root.Left)
+        if root.Left == nil && root.Right == nil {
+            res = append(res, root.Val)
+        }
+        getLeaves(root.Right)
+    }
     
-
-**Key Observations:**  
-
-    
-
-**Walk Through Testdata**  
-
-    
-
-    // Blog link: https://code.dennyzhang.com/example
+    func boundaryOfBinaryTree(root *TreeNode) int {
+        if root == nil { return int{} }
+        l1, l2 := int{root.Val}, int{}
+        var p *TreeNode
+        if root.Left != nil {
+            p = root.Left
+            // not leaves
+            for p.Left != nil || p.Right != nil {
+                l1 = append(l1, p.Val)
+                if p.Left != nil {
+                    p = p.Left
+                } else {
+                    p = p.Right
+                }
+            }
+        }
+        res = l1
+        getLeaves(root.Left)
+        getLeaves(root.Right)
+        if root.Right != nil {
+            p = root.Right
+            // not leaves
+            for p.Right != nil || p.Left != nil {
+                l2 = append(int{p.Val}, l2...)
+                if p.Right != nil {
+                    p = p.Right
+                } else {
+                    p = p.Left
+                }
+            }
+        }
+        return append(res, l2...)
+    }
 
