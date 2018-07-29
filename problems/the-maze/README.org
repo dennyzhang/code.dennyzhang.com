@@ -32,7 +32,7 @@ Input 3: destination coordinate (rowDest, colDest) = (4, 4)
 Output: true
 Explanation: One possible way is : left -> down -> left -> down -> right -> down -> right
 #+END_EXAMPLE
-[[image-blog:Leetcode: The Maze][https://raw.githubusercontent.com/DennyZhang/images/master/code/maze_1_1.png]]
+[[image-blog:Leetcode: The Maze][https://raw.githubusercontent.com/dennyzhang/images/master/code/maze_1_1.png]]
 
 Example 2
 #+BEGIN_EXAMPLE
@@ -51,7 +51,7 @@ Output: false
 Explanation: There is no way for the ball to stop at the destination.
 #+END_EXAMPLE
 
-[[image-blog:Leetcode: The Maze][https://raw.githubusercontent.com/DennyZhang/images/master/code/maze_1_2.png]]
+[[image-blog:Leetcode: The Maze][https://raw.githubusercontent.com/dennyzhang/images/master/code/maze_1_2.png]]
 
 Note:
 1. There is only one ball and one destination in the maze.

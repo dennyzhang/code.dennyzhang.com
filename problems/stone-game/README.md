@@ -57,35 +57,35 @@ Leave me comments, if you have better ways to solve.
     // f(i, j): max value I can get, if I starts with l[i:j]
     //     f(i+ 1, j), f(i, j-1)
     // Complexity: Time O(n*n), Space O(n*n)
-    func stoneGame(piles int) bool {
-        dp := make(int, len(piles))
-        for i, _:= range dp { dp[i] = make(int, len(piles)) }
-        sums := make(int, len(piles))
+    func stoneGame(piles []int) bool {
+        dp := make([][]int, len(piles))
+        for i, _:= range dp { dp[i] = make([]int, len(piles)) }
+        sums := make([]int, len(piles))
         for i, v := range piles {
-            if i == 0 { 
-                sums[i] = v 
-            } else {
-                sums[i] = sums[i-1] + v
-            }
+    	if i == 0 { 
+    	    sums[i] = v 
+    	} else {
+    	    sums[i] = sums[i-1] + v
+    	}
         }
     
         // from bottom to up
         for i:=len(piles)-1; i>=0; i-- {
-            // from left to right
-            for j:=i; j<len(piles); j++ {
-                // length with 1
-                if i == j {
-                    dp[i][j] = piles[i]
-                    continue
-                }
-                sum := sums[j]-sums[i]+piles[i]
-                v1, v2 := sum-dp[i+1][j], sum-dp[i][j-1]
-                if v1>v2 { 
-                    dp[i][j] = v1
-                } else {
-                    dp[i][j] = v2
-                }
-            }
+    	// from left to right
+    	for j:=i; j<len(piles); j++ {
+    	    // length with 1
+    	    if i == j {
+    		dp[i][j] = piles[i]
+    		continue
+    	    }
+    	    sum := sums[j]-sums[i]+piles[i]
+    	    v1, v2 := sum-dp[i+1][j], sum-dp[i][j-1]
+    	    if v1>v2 { 
+    		dp[i][j] = v1
+    	    } else {
+    		dp[i][j] = v2
+    	    }
+    	}
         }
         return dp[0][len(piles)-1]*2>=sums[len(piles)-1]
     }

@@ -13,7 +13,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 There are N dominoes in a line, and we place each domino vertically upright.
 
-[[image-blog:Leetcode: Push Dominoes][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/domino.png]]
+[[image-blog:Leetcode: Push Dominoes][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/domino.png]]
 
 In the beginning, we simultaneously push some of the dominoes either to the left or to the right.
 

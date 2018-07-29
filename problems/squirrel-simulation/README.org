@@ -24,7 +24,7 @@ Output: 12
 #+END_EXAMPLE
 Explanation:
 
-[[image-blog:Leetcode: Squirrel Simulation][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/squirrel-simulation.png]]
+[[image-blog:Leetcode: Squirrel Simulation][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/squirrel-simulation.png]]
 
 Note:
 1. All given positions won't overlap.

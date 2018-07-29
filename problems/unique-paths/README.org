@@ -19,7 +19,7 @@ The robot can only move either down or right at any point in time. The robot is 
 
 How many possible unique paths are there?
 
-[[image-blog:Unique Paths][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/robot_maze.png]]
+[[image-blog:Unique Paths][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/robot_maze.png]]
 
 Above is a 3 x 7 grid. How many possible unique paths are there?
 

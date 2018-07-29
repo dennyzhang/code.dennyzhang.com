@@ -26,7 +26,7 @@ Output: [2,4,5,6]
 
 Here is a diagram of the above graph.
 
-[[image-blog:Leetcode: Find Eventual Safe States][https://raw.githubusercontent.com/DennyZhang/images/master/code/find-eventual-safe-states.png]]
+[[image-blog:Leetcode: Find Eventual Safe States][https://raw.githubusercontent.com/dennyzhang/images/master/code/find-eventual-safe-states.png]]
 
 Note:
 

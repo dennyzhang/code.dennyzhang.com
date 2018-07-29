@@ -15,9 +15,8 @@ Given an n-ary tree, return the level order traversal of its nodes' values. (ie,
 
 For example, given a 3-ary tree:
 
-[[image-blog:Leetcode: N-ary Tree Postorder Traversal][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png]]
+[[image-blog:Leetcode: N-ary Tree Postorder Traversal][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png]]
 
- 
 We should return its level order traversal:
 
 #+BEGIN_EXAMPLE

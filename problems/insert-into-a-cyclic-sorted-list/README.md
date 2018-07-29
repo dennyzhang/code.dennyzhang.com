@@ -22,11 +22,11 @@ If the list is empty (i.e., given node is null), you should create a new single 
 
 The following example may help you understand the problem better:  
 
-[https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/InsertCyclicAfter.png](Leetcode: Insert into a Cyclic Sorted List)  
+[https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/InsertCyclicAfter.png](Leetcode: Insert into a Cyclic Sorted List)  
 
 In the figure above, there is a cyclic sorted list of three elements. You are given a reference to the node with value 3, and we need to insert 2 into the list.  
 
-[https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/InsertCyclicBefore.png](Leetcode: Insert into a Cyclic Sorted List)  
+[https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/InsertCyclicBefore.png](Leetcode: Insert into a Cyclic Sorted List)  
 
 The new node should insert between node 1 and node 3. After the insertion, the list should look like this, and we should still return node 3.  
 

@@ -32,11 +32,11 @@ Explanation for the above example:
 
 Given the following multilevel doubly linked list:
 
-[[image-blog:Leetcode: Flatten a Multilevel Doubly Linked List][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/MultilevelLinkedList.png]]
+[[image-blog:Leetcode: Flatten a Multilevel Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/MultilevelLinkedList.png]]
 
 We should return the following flattened doubly linked list:
 
-[[image-blog:Leetcode: Flatten a Multilevel Doubly Linked List][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/MultilevelLinkedListFlattened.png]]
+[[image-blog:Leetcode: Flatten a Multilevel Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/MultilevelLinkedListFlattened.png]]
 
 Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-a-multilevel-doubly-linked-list][challenges-leetcode-interesting]]
 

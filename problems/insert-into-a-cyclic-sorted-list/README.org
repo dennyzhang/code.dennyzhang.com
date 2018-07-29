@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, manydetails, inspiring
+:type:     linkedlist, manydetails, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Insert into a Cyclic Sorted List
@@ -19,11 +19,11 @@ If the list is empty (i.e., given node is null), you should create a new single 
 
 The following example may help you understand the problem better:
 
-[[image-blog:Leetcode: Insert into a Cyclic Sorted List][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/InsertCyclicAfter.png]]
+[[image-blog:Leetcode: Insert into a Cyclic Sorted List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/InsertCyclicAfter.png]]
 
 In the figure above, there is a cyclic sorted list of three elements. You are given a reference to the node with value 3, and we need to insert 2 into the list.
 
-[[image-blog:Leetcode: Insert into a Cyclic Sorted List][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/InsertCyclicBefore.png]]
+[[image-blog:Leetcode: Insert into a Cyclic Sorted List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/InsertCyclicBefore.png]]
 
 The new node should insert between node 1 and node 3. After the insertion, the list should look like this, and we should still return node 3.
  
@@ -74,7 +74,6 @@ class Solution:
         # find the smallest value, which is no less than the target
         p = head
         while True:
-            # print("here1. insertVal: %d, p.val: %d, p.next.val: %d" % (insertVal, p.val, p.next.val))
             # end of the loop
             if p.val > p.next.val:
                 # biggest or smallest
@@ -96,5 +95,5 @@ class Solution:
 
         node.next = p.next
         p.next = node
-        return head        
+        return head
 #+END_SRC

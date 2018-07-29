@@ -20,7 +20,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 For example, given a 3-ary tree:  
 
-[![img](https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png)](Leetcode: N-ary Tree Postorder Traversal)  
+[![img](https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png)](Leetcode: N-ary Tree Postorder Traversal)  
 
 We should return its max depth, which is 3.  
 

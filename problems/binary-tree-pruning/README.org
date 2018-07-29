@@ -25,21 +25,21 @@ Explanation:
 Only the red nodes satisfy the property "every subtree not containing a 1".
 The diagram on the right represents the answer.
 #+END_EXAMPLE
-[[image-blog:Binary Tree Pruning][https://raw.githubusercontent.com/DennyZhang/images/master/code/binarytree_prune1.png]]
+[[image-blog:Binary Tree Pruning][https://raw.githubusercontent.com/dennyzhang/images/master/code/binarytree_prune1.png]]
 
 Example 2:
 #+BEGIN_EXAMPLE
 Input: [1,0,1,0,0,0,1]
 Output: [1,null,1,null,1]
 #+END_EXAMPLE
-[[image-blog:Binary Tree Pruning][https://raw.githubusercontent.com/DennyZhang/images/master/code/binarytree_prune2.png]]
+[[image-blog:Binary Tree Pruning][https://raw.githubusercontent.com/dennyzhang/images/master/code/binarytree_prune2.png]]
 
 Example 3:
 #+BEGIN_EXAMPLE
 Input: [1,1,0,1,1,0,1,0]
 Output: [1,1,0,1,1,null,1]
 #+END_EXAMPLE
-[[image-blog:Binary Tree Pruning][https://raw.githubusercontent.com/DennyZhang/images/master/code/binarytree_prune3.png]]
+[[image-blog:Binary Tree Pruning][https://raw.githubusercontent.com/dennyzhang/images/master/code/binarytree_prune3.png]]
 
 Note:
 

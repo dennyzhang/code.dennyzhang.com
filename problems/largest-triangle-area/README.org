@@ -20,7 +20,7 @@ Explanation:
 The five points are show in the figure below. The red triangle is the largest.
 #+END_EXAMPLE
 
-[[image-blog:Largest Triangle Area][https://raw.githubusercontent.com/DennyZhang/images/master/code/largest_triangle.png]]
+[[image-blog:Largest Triangle Area][https://raw.githubusercontent.com/dennyzhang/images/master/code/largest_triangle.png]]
 
 Notes:
 

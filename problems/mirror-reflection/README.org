@@ -25,8 +25,7 @@ Output: 2
 Explanation: The ray meets receptor 2 the first time it gets reflected back to the left wall.
 #+END_EXAMPLE
 
-[[image-blog:Leetcode: Mirror Reflection][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/reflection.png]]
-
+[[image-blog:Leetcode: Mirror Reflection][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/reflection.png]]
 
 Note:
 

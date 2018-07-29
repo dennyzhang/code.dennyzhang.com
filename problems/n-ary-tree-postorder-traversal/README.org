@@ -15,7 +15,7 @@ Given an n-ary tree, return the postorder traversal of its nodes' values.
 
 For example, given a 3-ary tree:
 
-[[image-blog:Leetcode: N-ary Tree Postorder Traversal][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png]]
+[[image-blog:Leetcode: N-ary Tree Postorder Traversal][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png]]
 
 Return its postorder traversal as: [5,6,3,2,4,1].
  
