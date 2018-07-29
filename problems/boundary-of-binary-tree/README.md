@@ -9,6 +9,7 @@ Boundary of Binary Tree
 
 Similar Problems:  
 
+-   [Leetcode: Trapping Rain Water II](https://code.dennyzhang.com/trapping-rain-water-ii)
 -   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree)
 
 ---
@@ -83,46 +84,46 @@ Leave me comments, if you have better ways to solve.
      *     Right *TreeNode
      * }
      */
-    var res int
+    var res []int
     func getLeaves(root *TreeNode) {
         if root == nil { return }
         getLeaves(root.Left)
         if root.Left == nil && root.Right == nil {
-            res = append(res, root.Val)
+    	res = append(res, root.Val)
         }
         getLeaves(root.Right)
     }
     
-    func boundaryOfBinaryTree(root *TreeNode) int {
-        if root == nil { return int{} }
-        l1, l2 := int{root.Val}, int{}
+    func boundaryOfBinaryTree(root *TreeNode) []int {
+        if root == nil { return []int{} }
+        l1, l2 := []int{root.Val}, []int{}
         var p *TreeNode
         if root.Left != nil {
-            p = root.Left
-            // not leaves
-            for p.Left != nil || p.Right != nil {
-                l1 = append(l1, p.Val)
-                if p.Left != nil {
-                    p = p.Left
-                } else {
-                    p = p.Right
-                }
-            }
+    	p = root.Left
+    	// not leaves
+    	for p.Left != nil || p.Right != nil {
+    	    l1 = append(l1, p.Val)
+    	    if p.Left != nil {
+    		p = p.Left
+    	    } else {
+    		p = p.Right
+    	    }
+    	}
         }
         res = l1
         getLeaves(root.Left)
         getLeaves(root.Right)
         if root.Right != nil {
-            p = root.Right
-            // not leaves
-            for p.Right != nil || p.Left != nil {
-                l2 = append(int{p.Val}, l2...)
-                if p.Right != nil {
-                    p = p.Right
-                } else {
-                    p = p.Left
-                }
-            }
+    	p = root.Right
+    	// not leaves
+    	for p.Right != nil || p.Left != nil {
+    	    l2 = append([]int{p.Val}, l2...)
+    	    if p.Right != nil {
+    		p = p.Right
+    	    } else {
+    		p = p.Left
+    	    }
+    	}
         }
         return append(res, l2...)
     }

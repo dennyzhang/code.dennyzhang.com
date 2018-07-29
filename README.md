@@ -28,7 +28,7 @@ File me [tickets](https://github.com/DennyZhang/challenges-leetcode-interesting/
 
 My [leetcode profile](https://leetcode.com/dennyzhang/):
 
-<a href="https://code.dennyzhang.com"><img align="left" width="410" height="706" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png"></a>
+<a href="https://code.dennyzhang.com"><img align="left" width="328" height="564" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png"></a>
 
 <a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
 

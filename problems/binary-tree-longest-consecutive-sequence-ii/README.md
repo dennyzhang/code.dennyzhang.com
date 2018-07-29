@@ -1,24 +1,46 @@
 
-# Leetcode: Template     :BLOG:Basic:
+# Leetcode: Binary Tree Longest Consecutive Sequence II     :BLOG:Medium:
 
 ---
 
-Identity number which appears exactly once.  
+Binary Tree Longest Consecutive Sequence II  
 
 ---
 
 Similar Problems:  
 
--   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   [Leetcode: Binary Tree Longest Consecutive Sequence](https://code.dennyzhang.com/binary-tree-longest-consecutive-sequence)
+-   Tag: [#binarytree](https://code.dennyzhang.com/tag/binarytree), [#treetraversal](https://code.dennyzhang.com/tag/treetraversal), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Given a binary tree, you need to find the length of Longest Consecutive Path in Binary Tree.  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/example)  
+Especially, this path can be either increasing or decreasing. For example, [1,2,3,4] and [4,3,2,1] are both considered valid, but the path [1,2,4,3] is not valid. On the other hand, the path can be in the child-Parent-child order, where not necessarily be parent-child order.  
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Example 1:  
+
+    Input:
+            1
+           / \
+          2   3
+    Output: 2
+    Explanation: The longest consecutive path is [1, 2] or [2, 1].
+
+Example 2:  
+
+    Input:
+            2
+           / \
+          1   3
+    Output: 3
+    Explanation: The longest consecutive path is [1, 2, 3] or [3, 2, 1].
+
+Note: All the values of tree nodes are in the range of [-1e7, 1e7].  
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-longest-consecutive-sequence-ii)  
+
+Credits To: [leetcode.com](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/description/)  
 
 Leave me comments, if you have better ways to solve.  
 
@@ -38,5 +60,5 @@ Leave me comments, if you have better ways to solve.
 
     
 
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/binary-tree-longest-consecutive-sequence-ii
 
