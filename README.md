@@ -1,18 +1,3 @@
-Table of Contents
-=================
-
-   * [Basic Intro](#basic-intro)
-   * [About Code Interview](#about-code-interview)
-      * [General Procedure](#general-procedure)
-      * [Lessons Learned](#lessons-learned)
-   * [Fundamental Prep](#fundamental-prep)
-   * [About this Github Repo](#about-this-github-repo)
-      * [Commands](#commands)
-      * [Frequently Used Tags](#frequently-used-tags)
-      * [Grow Influence](#grow-influence)
-      * [Similar Websites](#similar-websites)
-   * [License](#license)
-
 # Basic Intro
 <a href="https://github.com/DennyZhang?tab=followers"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/fork_github.png" /></a>
 
