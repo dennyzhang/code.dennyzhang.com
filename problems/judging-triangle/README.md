@@ -1,9 +1,9 @@
 
-# Leetcode: Template     :BLOG:Basic:
+# LintCode: Judging Triangle     :BLOG:Basic:
 
 ---
 
-Identity number which appears exactly once.  
+Judging Triangle  
 
 ---
 
@@ -14,29 +14,38 @@ Similar Problems:
 
 ---
 
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.  
+Description  
+Given an array arr, ask if you can find 3 elements from the array as the sides of the three sides, so that the three sides can form a triangle. If yes, return yes, if not, return no  
 
-Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/example)  
+-   1 <= n<= 100000
+-   1 <= arr[i] <= 1000000000
+-   The program will be run 500 times
 
-Credits To: [leetcode.com](https://leetcode.com/problems/example/description/)  
+Example  
+
+Give arr=[2,3,5,8], return no.  
+
+    Explanation:
+    2, 3, 5 cannot form a triangle
+    2, 3, 8 cannot form a triangle
+    3, 5, 8 cannot form a triangle
+    So, return "no"
+
+Give arr=[3,4,5,8] , return yes.  
+
+    Explanation:
+    3, 4, 5 can form a triangle
+    So return "yes"
+
+Github: [challenges-leetcode-interesting](https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/judging-triangle)  
+
+Credits To: [lintcode.com](https://www.lintcode.com/problem/judging-triangle/description)  
 
 Leave me comments, if you have better ways to solve.  
 
 ---
 
--   Solution: XXX
+-   Solution:
 
-**General Thinkings:**  
-
-    
-
-**Key Observations:**  
-
-    
-
-**Walk Through Testdata**  
-
-    
-
-    // Blog link: https://code.dennyzhang.com/example
+    // Blog link: https://code.dennyzhang.com/judging-triangle
 

@@ -9,6 +9,7 @@ Predict the Winner
 
 Similar Problems:  
 
+-   [Leetcode: Stone Game](https://code.dennyzhang.com/stone-game)
 -   [Target Sum](https://code.dennyzhang.com/target-sum)
 -   [Review: minmax Problems](https://code.dennyzhang.com/review-minmax)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
