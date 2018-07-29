@@ -10,7 +10,7 @@ Insert into a Cyclic Sorted List
 Similar Problems:  
 
 -   [Review: Linked List Problems](https://code.dennyzhang.com/review-linkedlist)
--   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist)
+-   Tag: [#linkedlist](https://code.dennyzhang.com/tag/linkedlist), [#manydetails](https://code.dennyzhang.com/tag/manydetails), [#inspiring](https://code.dennyzhang.com/tag/inspiring)
 
 ---
 
@@ -41,6 +41,14 @@ Leave me comments, if you have better ways to solve.
 -   Solution:
 
     ## Blog link: https://code.dennyzhang.com/insert-into-a-cyclic-sorted-list
+    ## Basic Ideas:
+    ##    Find the smallest value which is no less than the target
+    ##    If there are multiple suitable places for insertion, 
+    ##      here we choose to insert into the first suitable place after head.
+    ##
+    ## Question: how we know we are running the loop again?
+    ##
+    ## Complexity: Time O(n), Space O(1)
     """
     # Definition for a Node.
     class Node:
@@ -55,4 +63,42 @@ Leave me comments, if you have better ways to solve.
             :type insertVal: int
             :rtype: Node
             """
+            node = Node(insertVal, None)
+            # empty
+            if head is None:
+                node.next = node
+                return node
+    
+            # one node
+            if head.next is None:
+                head.next = node
+                node.next = head
+                return head
+    
+            # find the smallest value, which is no less than the target
+            p = head
+            while True:
+                # print("here1. insertVal: %d, p.val: %d, p.next.val: %d" % (insertVal, p.val, p.next.val))
+                # end of the loop
+                if p.val > p.next.val:
+                    # biggest or smallest
+                    if insertVal >= p.val or insertVal <= p.next.val:
+                        break
+    
+                    # should keep going
+                    if insertVal > p.next.val and insertVal < p.val:
+                        p = p.next
+                        continue
+                    break
+    
+                if insertVal >= p.val and insertVal <= p.next.val:
+                    break
+                p = p.next
+                if p == head:
+                    # run into the loop again
+                    break
+    
+            node.next = p.next
+            p.next = node
+            return head        
 

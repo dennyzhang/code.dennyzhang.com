@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     linkedlist, manydetails, inspiring
 :END:
 ---------------------------------------------------------------------
 Insert into a Cyclic Sorted List
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a node from a cyclic linked list which is sorted in ascending order, write a function to insert a value into the list such that it remains a cyclic sorted list. The given node can be a reference to any single node in the list, and may not be necessarily the smallest value in the cyclic list.
 
@@ -37,6 +37,14 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/insert-into-a-cyclic-sorted-list
+## Basic Ideas:
+##    Find the smallest value which is no less than the target
+##    If there are multiple suitable places for insertion, 
+##      here we choose to insert into the first suitable place after head.
+##
+## Question: how we know we are running the loop again?
+##
+## Complexity: Time O(n), Space O(1)
 """
 # Definition for a Node.
 class Node:
@@ -51,5 +59,42 @@ class Solution:
         :type insertVal: int
         :rtype: Node
         """
-        
+        node = Node(insertVal, None)
+        # empty
+        if head is None:
+            node.next = node
+            return node
+
+        # one node
+        if head.next is None:
+            head.next = node
+            node.next = head
+            return head
+
+        # find the smallest value, which is no less than the target
+        p = head
+        while True:
+            # print("here1. insertVal: %d, p.val: %d, p.next.val: %d" % (insertVal, p.val, p.next.val))
+            # end of the loop
+            if p.val > p.next.val:
+                # biggest or smallest
+                if insertVal >= p.val or insertVal <= p.next.val:
+                    break
+
+                # should keep going
+                if insertVal > p.next.val and insertVal < p.val:
+                    p = p.next
+                    continue
+                break
+
+            if insertVal >= p.val and insertVal <= p.next.val:
+                break
+            p = p.next
+            if p == head:
+                # run into the loop again
+                break
+
+        node.next = p.next
+        p.next = node
+        return head        
 #+END_SRC
