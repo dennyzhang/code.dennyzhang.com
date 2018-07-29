@@ -1,0 +1,67 @@
+* Leetcode: Flatten a Multilevel Doubly Linked List              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+You are given a doubly linked list which in addition to the next and previous pointers, it could have a child pointer, which may or may not point to a separate doubly linked list. These child lists may have one or more children of their own, and so on, to produce a multilevel data structure, as shown in the example below.
+
+Flatten the list so that all the nodes appear in a single-level, doubly linked list. You are given the head of the first level of the list.
+
+Example:
+#+BEGIN_EXAMPLE
+Input:
+ 1---2---3---4---5---6--NULL
+         |
+         7---8---9---10--NULL
+             |
+             11--12--NULL
+
+Output:
+1-2-3-7-8-11-12-9-10-4-5-6-NULL
+#+END_EXAMPLE
+
+Explanation for the above example:
+
+Given the following multilevel doubly linked list:
+
+[[image-blog:Leetcode: Flatten a Multilevel Doubly Linked List][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/MultilevelLinkedList.png]]
+
+We should return the following flattened doubly linked list:
+
+[[image-blog:Leetcode: Flatten a Multilevel Doubly Linked List][https://raw.githubusercontent.com/DennyZhang/challenges-leetcode-interesting/master/images/MultilevelLinkedListFlattened.png]]
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-a-multilevel-doubly-linked-list][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/flatten-a-multilevel-doubly-linked-list
+
+#+END_SRC
