@@ -9,6 +9,7 @@ Guess Number Higher or Lower
 
 Similar Problems:  
 
+-   [Review: minmax Problems](https://code.dennyzhang.com/review-minmax)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   Tag: [#game](https://code.dennyzhang.com/tag/game), [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#dp2order](https://code.dennyzhang.com/tag/dp2order), [#minmax](https://code.dennyzhang.com/tag/minmax), [#classic](https://code.dennyzhang.com/tag/classic)
 

@@ -1,0 +1,50 @@
+* LintCode: Judging Triangle                                     :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     inspiring
+:END:
+---------------------------------------------------------------------
+Judging Triangle
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Description
+Given an array arr, ask if you can find 3 elements from the array as the sides of the three sides, so that the three sides can form a triangle. If yes, return yes, if not, return no
+
+- 1 <= n<= 100000
+- 1 <= arr[i] <= 1000000000
+- The program will be run 500 times
+
+Example
+
+Give arr=[2,3,5,8], return no.
+#+BEGIN_EXAMPLE
+Explanation:
+2, 3, 5 cannot form a triangle
+2, 3, 8 cannot form a triangle
+3, 5, 8 cannot form a triangle
+So, return "no"
+#+END_EXAMPLE
+
+Give arr=[3,4,5,8] , return yes.
+#+BEGIN_EXAMPLE
+Explanation:
+3, 4, 5 can form a triangle
+So return "yes"
+#+END_EXAMPLE
+
+Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/judging-triangle][challenges-leetcode-interesting]]
+
+Credits To: [[url-external:https://www.lintcode.com/problem/judging-triangle/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/judging-triangle
+
+#+END_SRC

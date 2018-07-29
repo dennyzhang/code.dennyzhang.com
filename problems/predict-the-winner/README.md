@@ -10,6 +10,7 @@ Predict the Winner
 Similar Problems:  
 
 -   [Target Sum](https://code.dennyzhang.com/target-sum)
+-   [Review: minmax Problems](https://code.dennyzhang.com/review-minmax)
 -   [Review: Game Problems](https://code.dennyzhang.com/review-game)
 -   Tag: [#inspiring](https://code.dennyzhang.com/tag/inspiring), [#game](https://code.dennyzhang.com/tag/game), [#minmax](https://code.dennyzhang.com/tag/minmax), [#dp2order](https://code.dennyzhang.com/tag/dp2order)
 
@@ -50,4 +51,43 @@ Leave me comments, if you have better ways to solve.
 ---
 
     // Blog link: https://code.dennyzhang.com/predict-the-winner
+    // Basic Ideas: Dynamic Programming
+    //
+    // f(i, j): max value we can get, if we start with [i, j]
+    //     if we choose i, we get sum[i:j]-f(i+1, j)
+    //     if we choose j, we get sum[i:j]-f(i, j-1)
+    //
+    // Complexity: Time O(n*n), Space O(n*n)
+    func PredictTheWinner(nums []int) bool {
+        sums := make([]int, len(nums))
+        sum := 0
+        for i, num := range nums {
+    	sum += num
+    	sums[i] = sum
+        }
+        dp := make([][]int, len(nums))
+        for i, _ := range dp { dp[i] = make([]int, len(nums))}
+        // from bottom to up
+        for i:=len(nums)-1; i>=0; i-- {
+    	// from left to right
+    	for j:=i; j<len(nums); j++ {
+    	    if i==j {
+    		// base case
+    		dp[i][j] = nums[i]
+    		continue
+    	    }
+    	    // choose from [i: j]
+    	    v1, v2 := 0, 0
+    	    sum = sums[j]-sums[i]+nums[i]
+    	    v1 = sum - dp[i+1][j]
+    	    v2 = sum - dp[i][j-1]
+    	    if v1>v2 {
+    		dp[i][j] = v1
+    	    } else {
+    		dp[i][j] = v2
+    	    }
+    	}
+        }
+        return dp[0][len(nums)-1]*2>=sums[len(nums)-1]
+    }
 
