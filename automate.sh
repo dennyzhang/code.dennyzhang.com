@@ -36,18 +36,6 @@ function refresh_link() {
     done
 }
 
-function refresh_md() {
-    echo "Use emacs to refresh README.md"
-    cd problems
-    for f in $(ls -1t */README.org); do
-        echo "Update $f"
-        dirname=$(basename $(dirname $f))
-        cd $dirname
-        /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_9 --batch -l ../../update_md.el
-        cd ..
-    done
-}
-
 cd .
 
 action=${1?}
@@ -58,10 +46,7 @@ case "$action" in
     my_test)
         my_test
         ;;
-    refresh_md)
-        refresh_md
-        ;;
         *) 
-        echo "no matched action. Supported: refresh_link|refresh_md"
+        echo "no matched action. Supported: refresh_link|my_test"
         ;;
 esac
