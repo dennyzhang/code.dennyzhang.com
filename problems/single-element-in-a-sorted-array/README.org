@@ -23,9 +23,9 @@ Output: 10
 
 Note: Your solution should run in O(log n) time and O(1) space.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-element-in-a-sorted-array][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-element-in-a-sorted-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-element-in-a-sorted-array/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/single-element-in-a-sorted-array/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

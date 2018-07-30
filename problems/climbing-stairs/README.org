@@ -39,9 +39,9 @@ Explanation:  There are three ways to climb to the top.
 3. 2 steps + 1 step
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/climbing-stairs][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/climbing-stairs][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/climbing-stairs/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/climbing-stairs/description/][leetcode.com]]
 
 Hint: Time O(n), Space O(1)
 

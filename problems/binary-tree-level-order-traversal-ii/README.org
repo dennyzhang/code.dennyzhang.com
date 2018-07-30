@@ -28,9 +28,9 @@ return its bottom-up level order traversal as:
 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-level-order-traversal-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-level-order-traversal-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -43,9 +43,9 @@ Output: 0
 Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/non-overlapping-intervals][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/non-overlapping-intervals][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/non-overlapping-intervals/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/non-overlapping-intervals/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

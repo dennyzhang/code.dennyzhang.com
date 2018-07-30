@@ -56,9 +56,9 @@ Note:
 - Every implied address ip + x (for x < n) will be a valid IPv4 address.
 - n will be an integer in the range [1, 1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ip-to-cidr][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ip-to-cidr][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/ip-to-cidr/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/ip-to-cidr/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

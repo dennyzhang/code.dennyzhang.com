@@ -10,7 +10,7 @@ Bulls and Cows
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
-You are playing the following [[url-external:https://en.wikipedia.org/wiki/Bulls_and_Cows][Bulls and Cows game]] with your friend: You write down a number and ask your friend to guess what the number is. Each time your friend makes a guess, you provide a hint that indicates how many digits in said guess match your secret number exactly in both digit and position (called "bulls") and how many digits match the secret number but locate in the wrong position (called "cows"). Your friend will use successive guesses and hints to eventually derive the secret number.
+You are playing the following [[https://en.wikipedia.org/wiki/Bulls_and_Cows][Bulls and Cows game]] with your friend: You write down a number and ask your friend to guess what the number is. Each time your friend makes a guess, you provide a hint that indicates how many digits in said guess match your secret number exactly in both digit and position (called "bulls") and how many digits match the secret number but locate in the wrong position (called "cows"). Your friend will use successive guesses and hints to eventually derive the secret number.
 
 For example:
 #+BEGIN_EXAMPLE
@@ -30,9 +30,9 @@ Friend's guess: "0111"
 In this case, the 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow, and your function should return "1A1B".
 You may assume that the secret number and your friend's guess only contain digits, and their lengths are always equal.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bulls-and-cows][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bulls-and-cows][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/bulls-and-cows/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/bulls-and-cows/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -43,9 +43,9 @@ Write a SQL query to find employees who have the highest salary in each of the d
 +------------+----------+--------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/department-highest-salary][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/department-highest-salary][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/department-highest-salary/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/department-highest-salary/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -29,9 +29,9 @@ The shortest distance is 1.00 from point (-1,-1) to (-1,2). So the output should
 
 Note: The longest distance among all the points are less than 10000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-in-a-plane][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-in-a-plane][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/shortest-distance-in-a-plane/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/shortest-distance-in-a-plane/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -44,9 +44,9 @@ Note:
 - 1 <= N <= 10^8
 - The answer is guaranteed to exist and be less than 2 * 10^8.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/prime-palindrome][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/prime-palindrome][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/prime-palindrome/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/prime-palindrome/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

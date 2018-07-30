@@ -41,9 +41,9 @@ The substring with start index = 1 is "ba", which is an anagram of "ab".
 The substring with start index = 2 is "ab", which is an anagram of "ab".
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-all-anagrams-in-a-string][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-all-anagrams-in-a-string][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-all-anagrams-in-a-string/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/find-all-anagrams-in-a-string/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

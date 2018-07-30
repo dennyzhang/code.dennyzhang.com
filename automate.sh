@@ -3,8 +3,9 @@ function my_test() {
    for f in $(find . -name README.org); do
         dirname=$(basename $(dirname $f))
         echo "Update for $f"
-        sed -ie "s/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master\/problems/g" $f
-        rm -rf $dirname/README.orge
+        # sed -ie "s/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master\/problems/g" $f
+        # sed -ie "s/url-external://g" $f
+        # rm -rf $dirname/README.orge
         #exit
    done
 }

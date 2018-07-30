@@ -48,9 +48,9 @@ After applying operation [0, 2, -2]:
 [-2, 0, 3, 5, 3 ]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-addition][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-addition][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/range-addition/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/range-addition/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

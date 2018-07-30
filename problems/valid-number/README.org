@@ -23,9 +23,9 @@ Some examples:
 #+END_EXAMPLE
 Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-number][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/valid-number/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/valid-number/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

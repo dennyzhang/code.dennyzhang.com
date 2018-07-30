@@ -20,9 +20,9 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 Note:
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/letter-combinations-of-a-phone-number][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/letter-combinations-of-a-phone-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

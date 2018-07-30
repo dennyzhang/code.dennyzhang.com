@@ -73,9 +73,9 @@ are considered same island shapes. Because if we flip the first array in the up/
 
 Note: The length of each dimension in the given grid does not exceed 50.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-distinct-islands-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-distinct-islands-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/number-of-distinct-islands-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/number-of-distinct-islands-ii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

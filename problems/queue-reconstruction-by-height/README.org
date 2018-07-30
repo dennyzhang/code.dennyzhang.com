@@ -23,9 +23,9 @@ Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/queue-reconstruction-by-height][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/queue-reconstruction-by-height][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/queue-reconstruction-by-height/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/queue-reconstruction-by-height/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

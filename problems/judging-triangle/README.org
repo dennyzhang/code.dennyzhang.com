@@ -36,9 +36,9 @@ Explanation:
 So return "yes"
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/judging-triangle][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/judging-triangle][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://www.lintcode.com/problem/judging-triangle/description][lintcode.com]]
+Credits To: [[https://www.lintcode.com/problem/judging-triangle/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

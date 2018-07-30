@@ -29,9 +29,9 @@ Note:
 - nums[i] will be between 1 and 65535.
 - k will be between 1 and floor(nums.length / 3).
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-sum-of-3-non-overlapping-subarrays][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-sum-of-3-non-overlapping-subarrays][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

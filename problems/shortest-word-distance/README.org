@@ -26,9 +26,9 @@ Given word1 = "makes", word2 = "coding", return 1.
 Note:
 You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-word-distance][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-word-distance][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/shortest-word-distance/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/shortest-word-distance/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

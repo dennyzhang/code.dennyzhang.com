@@ -20,9 +20,9 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-in-rotated-sorted-array][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-in-rotated-sorted-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/search-in-rotated-sorted-array/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/search-in-rotated-sorted-array/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

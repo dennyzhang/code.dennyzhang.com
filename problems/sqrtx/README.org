@@ -33,9 +33,9 @@ Output: 2
 Explanation: The square root of 8 is 2.82842..., and since we want to return an integer, the decimal part will be truncated.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sqrtx][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sqrtx][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/sqrtx/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/sqrtx/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

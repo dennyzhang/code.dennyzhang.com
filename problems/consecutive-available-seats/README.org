@@ -35,9 +35,9 @@ Note:
 - The seat_id is an auto increment int, and free is bool ('1' means free, and '0' means occupied.).
 - Consecutive available seats are more than 2(inclusive) seats consecutively available.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/consecutive-available-seats][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/consecutive-available-seats][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/consecutive-available-seats/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/consecutive-available-seats/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -44,9 +44,9 @@ Note: You may assume the tree (i.e., the given root node) is not NULL.
 Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-bottom-left-tree-value][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-bottom-left-tree-value][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-bottom-left-tree-value/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/find-bottom-left-tree-value/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

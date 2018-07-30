@@ -59,9 +59,9 @@ Note:
 - The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
 - The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/the-maze][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/the-maze][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/the-maze/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/the-maze/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

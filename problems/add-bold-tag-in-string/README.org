@@ -35,9 +35,9 @@ Note:
 1. The given dict won't contain duplicates, and its length won't exceed 100.
 - All the strings in input have length in range [1, 1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-bold-tag-in-string][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-bold-tag-in-string][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/add-bold-tag-in-string/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/add-bold-tag-in-string/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

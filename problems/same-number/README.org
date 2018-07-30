@@ -35,9 +35,9 @@ Explanation:
 The distance of 1 whose indexes are  7 and 5 is 2, which meets the requirement and output YES.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/same-number][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/same-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/same-number/][lintcode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/same-number/][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -26,9 +26,9 @@ Sure you can.
 Example
 Given a=1 and b=2 return 3
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/a-b-problem][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/a-b-problem][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/a-b-problem/][LintCode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/a-b-problem/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

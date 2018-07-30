@@ -24,15 +24,15 @@ A = [2,3,1,1,4], return true.
 A = [3,2,1,0,4], return false.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/jump-game][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/jump-game][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/jump-game/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/jump-game/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 Interesting reading:
-[[url-external:https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11][YouTube Coding Interview Question: Tower Hopper Problem]]
+[[https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11][YouTube Coding Interview Question: Tower Hopper Problem]]
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/jump-game

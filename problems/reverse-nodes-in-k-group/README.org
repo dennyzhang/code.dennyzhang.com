@@ -27,9 +27,9 @@ For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-nodes-in-k-group][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-nodes-in-k-group][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/reverse-nodes-in-k-group/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/reverse-nodes-in-k-group/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

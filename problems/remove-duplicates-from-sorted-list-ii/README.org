@@ -19,9 +19,9 @@ Given 1->2->3->3->4->4->5, return 1->2->5.
 
 Given 1->1->1->2->3, return 2->3.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-duplicates-from-sorted-list-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-duplicates-from-sorted-list-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

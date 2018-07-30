@@ -38,9 +38,9 @@ Note:
 - The number of operations will be in the range of [1, 10000].
 - Please do not use the built-in HashSet library.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-hashset][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-hashset][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/design-hashset/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/design-hashset/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

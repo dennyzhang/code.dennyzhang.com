@@ -23,9 +23,9 @@ Note:
 - The range of integer in the given array is [-100,100].
 - The given array may contain duplicates, and two equal integers should also be considered as a special case of increasing sequence.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/increasing-subsequences][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/increasing-subsequences][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/increasing-subsequences/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/increasing-subsequences/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

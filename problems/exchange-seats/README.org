@@ -43,9 +43,9 @@ For the sample input, the output is:
 Note:
 If the number of students is odd, there is no need to change the last one's seat.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/exchange-seats][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/exchange-seats][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/exchange-seats/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/exchange-seats/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

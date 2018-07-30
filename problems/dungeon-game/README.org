@@ -34,9 +34,9 @@ Note:
 - The knight's health has no upper bound.
 - Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/dungeon-game][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/dungeon-game][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/dungeon-game/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/dungeon-game/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

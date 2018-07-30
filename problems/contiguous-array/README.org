@@ -28,9 +28,9 @@ Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal numb
 
 Note: The length of the given binary array will not exceed 50,000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/contiguous-array][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/contiguous-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/contiguous-array/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/contiguous-array/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

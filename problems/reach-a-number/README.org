@@ -40,9 +40,9 @@ On the third move we step from -1 to 2.
 Note:
 - target will be a non-zero integer in the range [-10^9, 10^9].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reach-a-number][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reach-a-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/reach-a-number/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/reach-a-number/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

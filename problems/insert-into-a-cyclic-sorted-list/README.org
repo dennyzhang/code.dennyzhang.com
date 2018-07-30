@@ -27,9 +27,9 @@ In the figure above, there is a cyclic sorted list of three elements. You are gi
 
 The new node should insert between node 1 and node 3. After the insertion, the list should look like this, and we should still return node 3.
  
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-into-a-cyclic-sorted-list][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-into-a-cyclic-sorted-list][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/insert-into-a-cyclic-sorted-list/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/insert-into-a-cyclic-sorted-list/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -31,9 +31,9 @@ enqueue(1)
 dequeue()  => 1
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/implement-queue-by-circular-array][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/implement-queue-by-circular-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/implement-queue-by-circular-array/][lintcode]]
+Credits To: [[http://www.lintcode.com/en/problem/implement-queue-by-circular-array/][lintcode]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

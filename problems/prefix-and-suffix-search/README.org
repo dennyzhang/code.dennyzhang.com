@@ -30,9 +30,9 @@ Note:
 - prefix, suffix have lengths in range [0, 10].
 - words[i] and prefix, suffix queries consist of lowercase letters only.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/prefix-and-suffix-search][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/prefix-and-suffix-search][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/prefix-and-suffix-search/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/prefix-and-suffix-search/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

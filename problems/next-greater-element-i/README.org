@@ -37,9 +37,9 @@ Note:
 1. All elements in nums1 and nums2 are unique.
 - The length of both nums1 and nums2 would not exceed 1000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-greater-element-i][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-greater-element-i][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/next-greater-element-i/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/next-greater-element-i/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

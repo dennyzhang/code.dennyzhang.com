@@ -25,9 +25,9 @@ Note:
 - S has length in range [0, 500].
 - All characters in words[i] and S are lowercase letters.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bold-words-in-string][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/bold-words-in-string][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/bold-words-in-string/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/bold-words-in-string/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

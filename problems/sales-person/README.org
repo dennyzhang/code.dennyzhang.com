@@ -74,9 +74,9 @@ Explanation
 According to order '3' and '4' in table orders, it is easy to tell only salesperson 'John' and 'Alex' have sales to company 'RED',
 so we need to output all the other names in table salesperson.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sales-person][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sales-person][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/sales-person/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/sales-person/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

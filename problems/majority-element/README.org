@@ -11,9 +11,9 @@ Given an array of size n, find the majority element. The majority element is the
 
 You may assume that the array is non-empty and the majority element always exist in the array.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/majority-element][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/majority-element][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/majority-element/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/majority-element/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

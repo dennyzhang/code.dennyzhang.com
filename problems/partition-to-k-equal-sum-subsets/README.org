@@ -25,9 +25,9 @@ Note:
 - 1 <= k <= len(nums) <= 16.
 - 0 < nums[i] < 10000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/partition-to-k-equal-sum-subsets][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/partition-to-k-equal-sum-subsets][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

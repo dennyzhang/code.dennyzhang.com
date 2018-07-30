@@ -35,9 +35,9 @@ Note:
 - The input strings will not have extra blank.
 - The input strings will be given in the form of a+bi, where the integer a and b will both belong to the range of [-100, 100]. And the output should be also in this form.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/complex-number-multiplication][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/complex-number-multiplication][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/complex-number-multiplication/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/complex-number-multiplication/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

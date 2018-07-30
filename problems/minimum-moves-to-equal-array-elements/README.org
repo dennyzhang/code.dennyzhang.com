@@ -27,9 +27,9 @@ Only three moves are needed (remember each move increments two elements):
 [1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-moves-to-equal-array-elements][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-moves-to-equal-array-elements][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/minimum-moves-to-equal-array-elements/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/minimum-moves-to-equal-array-elements/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

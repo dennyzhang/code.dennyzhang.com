@@ -28,9 +28,9 @@ Note:
 - The length of A will be in the range [1, 30].
 - A[i] will be in the range of [0, 10000].Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-with-same-average][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-with-same-average][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/split-array-with-same-average/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/split-array-with-same-average/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -34,9 +34,9 @@ This is an invalid board that you will not receive - as battleships will always 
 Follow up:
 Could you do it in one-pass, using only O(1) extra memory and without modifying the value of the board?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/battleships-in-a-board][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/battleships-in-a-board][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/battleships-in-a-board/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/battleships-in-a-board/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

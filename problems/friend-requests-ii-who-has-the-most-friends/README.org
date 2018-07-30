@@ -39,9 +39,9 @@ The person with id '3' is a friend of people '1', '2' and '4', so he has 3 frien
 Follow-up:
 In the real world, multiple people could have the same most number of friends, can you find all these people in this case?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friend-requests-ii-who-has-the-most-friends][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friend-requests-ii-who-has-the-most-friends][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -30,9 +30,9 @@ For example, given the above Employee table, the query should return 200 as the 
 +---------------------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/second-highest-salary][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/second-highest-salary][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/second-highest-salary/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/second-highest-salary/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

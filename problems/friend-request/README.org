@@ -36,9 +36,9 @@ Explanation:
 Only people of age 102 will send friend requests to people of age 101.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friend-request][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friend-request][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/friend-request/][lintcode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/friend-request/][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

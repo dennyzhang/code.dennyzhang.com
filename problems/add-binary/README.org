@@ -14,9 +14,9 @@ a = "11"
 b = "1"
 Return "100".
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-binary][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-binary][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/add-binary/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/add-binary/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

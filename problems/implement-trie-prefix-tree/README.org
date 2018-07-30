@@ -17,9 +17,9 @@ Implement a trie with insert, search, and startsWith methods.
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/implement-trie-prefix-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/implement-trie-prefix-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/implement-trie-prefix-tree/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/implement-trie-prefix-tree/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

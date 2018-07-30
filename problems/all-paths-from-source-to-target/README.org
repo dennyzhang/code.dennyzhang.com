@@ -32,9 +32,9 @@ Note:
 - The number of nodes in the graph will be in the range [2, 15].
 - You can print different paths in any order, but you should keep the order of nodes inside one path.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/all-paths-from-source-to-target][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/all-paths-from-source-to-target][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/all-paths-from-source-to-target/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/all-paths-from-source-to-target/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

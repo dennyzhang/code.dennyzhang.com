@@ -43,9 +43,9 @@ collection.remove(1);
 collection.getRandom();
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/insert-delete-getrandom-o1-duplicates-allowed][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/insert-delete-getrandom-o1-duplicates-allowed][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

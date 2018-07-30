@@ -42,9 +42,9 @@ Explanation: The same as example 1, except uni("ABA") = 1.
 
 - Note: 0 <= S.length <= 10000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-letter-string][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-letter-string][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/unique-letter-string/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/unique-letter-string/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

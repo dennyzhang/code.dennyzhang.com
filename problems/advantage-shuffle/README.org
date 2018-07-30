@@ -33,9 +33,9 @@ Note:
 - 0 <= A[i] <= 10^9
 - 0 <= B[i] <= 10^9
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/advantage-shuffle][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/advantage-shuffle][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/advantage-shuffle/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/advantage-shuffle/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

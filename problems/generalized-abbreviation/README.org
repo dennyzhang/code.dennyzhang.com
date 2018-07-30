@@ -17,9 +17,9 @@ Example:
 Given word = "word", return the following list (order does not matter):
 ["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/generalized-abbreviation][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/generalized-abbreviation][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/generalized-abbreviation/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/generalized-abbreviation/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

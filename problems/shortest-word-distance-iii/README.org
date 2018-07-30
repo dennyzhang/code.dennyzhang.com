@@ -29,9 +29,9 @@ Output: 3
 Note:
 You may assume word1 and word2 are both in the list.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-word-distance-iii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-word-distance-iii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/shortest-word-distance-iii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/shortest-word-distance-iii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

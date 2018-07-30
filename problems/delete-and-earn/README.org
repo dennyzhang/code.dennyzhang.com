@@ -40,9 +40,9 @@ Note:
 - The length of nums is at most 20000.
 - Each element nums[i] is an integer in the range [1, 10000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-and-earn][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/delete-and-earn][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/delete-and-earn/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/delete-and-earn/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

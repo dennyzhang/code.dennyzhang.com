@@ -41,9 +41,9 @@ Note:
 1. You may assume the length of given time series array won't exceed 10000.
 - You may assume the numbers in the Teemo's attacking time series and his poisoning time duration per attacking are non-negative integers, which won't exceed 10,000,000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/teemo-attacking][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/teemo-attacking][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/teemo-attacking/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/teemo-attacking/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

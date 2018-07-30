@@ -25,9 +25,9 @@ Input: insert("app", 2), Output: Null
 Input: sum("ap"), Output: 5
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/map-sum-pairs][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/map-sum-pairs][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/map-sum-pairs/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/map-sum-pairs/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

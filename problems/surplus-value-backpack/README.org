@@ -34,9 +34,9 @@ Explanation:
 2 * (5-1)+1*(4-2) = 10
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/surplus-value-backpack][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/surplus-value-backpack][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/surplus-value-backpack/][lintcode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/surplus-value-backpack/][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

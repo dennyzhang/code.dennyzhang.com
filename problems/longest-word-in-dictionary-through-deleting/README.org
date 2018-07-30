@@ -38,9 +38,9 @@ Note:
 - The size of the dictionary won't exceed 1,000.
 - The length of all the strings in the input won't exceed 1,000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-word-in-dictionary-through-deleting][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-word-in-dictionary-through-deleting][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

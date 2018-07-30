@@ -23,9 +23,9 @@ Given n = 3, there are a total of 5 unique BST's.
    2     1         2                 3
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-binary-search-trees][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/unique-binary-search-trees][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/unique-binary-search-trees/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/unique-binary-search-trees/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

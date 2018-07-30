@@ -41,9 +41,9 @@ You need to output 2.
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/assign-cookies][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/assign-cookies][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/assign-cookies/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/assign-cookies/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

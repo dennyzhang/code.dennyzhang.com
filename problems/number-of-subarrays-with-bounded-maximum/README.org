@@ -29,9 +29,9 @@ Note:
 - L, R  and A[i] will be an integer in the range [0, 10^9].
 - The length of A will be in the range of [1, 50000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-subarrays-with-bounded-maximum][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-subarrays-with-bounded-maximum][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

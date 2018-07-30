@@ -36,9 +36,9 @@ Notes:
 - Both rectangles rec1 and rec2 are lists of 4 integers.
 - All coordinates in rectangles will be between -10^9 and 10^9.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rectangle-overlap][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/rectangle-overlap][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/rectangle-overlap/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/rectangle-overlap/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

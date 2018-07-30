@@ -21,9 +21,9 @@ Given "bbbbb", the answer is "b", with the length of 1.
 
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-substring-without-repeating-characters][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-substring-without-repeating-characters][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/longest-substring-without-repeating-characters/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/longest-substring-without-repeating-characters/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

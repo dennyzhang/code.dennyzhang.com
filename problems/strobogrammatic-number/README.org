@@ -19,9 +19,9 @@ Write a function to determine if a number is strobogrammatic. The number is repr
 
 For example, the numbers "69", "88", and "818" are all strobogrammatic.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/strobogrammatic-number][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/strobogrammatic-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/strobogrammatic-number/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/strobogrammatic-number/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

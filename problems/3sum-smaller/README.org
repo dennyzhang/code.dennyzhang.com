@@ -25,9 +25,9 @@ Return 2. Because there are two triplets which sums are less than 2:
 Follow up:
 Could you solve it in O(n^2) runtime?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/3sum-smaller][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/3sum-smaller][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/3sum-smaller/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/3sum-smaller/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

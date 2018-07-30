@@ -33,9 +33,9 @@ F1 enters from time 10, exits at time 18 and enters from time 19,
 exits at time 20, and the total running time is 9.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/function-runtime][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/function-runtime][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://www.lintcode.com/problem/function-runtime/description][lintcode.com]]
+Credits To: [[https://www.lintcode.com/problem/function-runtime/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

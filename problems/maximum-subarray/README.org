@@ -17,9 +17,9 @@ click to show more practice.
 More practice:
 If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-subarray][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-subarray][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/maximum-subarray/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/maximum-subarray/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

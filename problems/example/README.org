@@ -13,9 +13,9 @@ Similar Problems:
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/example][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/example][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/example/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

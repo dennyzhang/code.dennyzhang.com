@@ -32,9 +32,9 @@ Explanation:
 Subsequences repeat no fewer than twice are "a", "bc", "bcbc" and "bcbcbc", and the longest is "bcbcbc", and the length is 6.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-repeating-substring][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-repeating-substring][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/longest-repeating-substring/][lintcode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/longest-repeating-substring/][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

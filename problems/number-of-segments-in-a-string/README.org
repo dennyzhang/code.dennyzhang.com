@@ -19,9 +19,9 @@ Output: 5
 
 
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-segments-in-a-string][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/number-of-segments-in-a-string][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/number-of-segments-in-a-string/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/number-of-segments-in-a-string/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

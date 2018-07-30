@@ -36,9 +36,9 @@ Note:
 - nums.length will be between 1 and 50,000.
 - nums[i] will be an integer between 0 and 49,999.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/degree-of-an-array][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/degree-of-an-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/degree-of-an-array/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/degree-of-an-array/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

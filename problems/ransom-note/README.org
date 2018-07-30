@@ -19,9 +19,9 @@ canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ransom-note][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/ransom-note][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/ransom-note/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/ransom-note/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

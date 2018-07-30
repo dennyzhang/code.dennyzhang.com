@@ -40,9 +40,9 @@ The second player will win by choosing 10 and get a total = 11, which is >= desi
 Same with other integers chosen by the first player, the second player will always win.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/can-i-win][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/can-i-win][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/can-i-win/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/can-i-win/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

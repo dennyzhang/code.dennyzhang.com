@@ -50,9 +50,9 @@ Note:
 - graph[i] will contain integers in range [0, graph.length - 1].
 - graph[i] will not contain i or duplicate values.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/is-graph-bipartite][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/is-graph-bipartite][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/is-graph-bipartite/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/is-graph-bipartite/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

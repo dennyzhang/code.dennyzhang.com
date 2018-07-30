@@ -53,9 +53,9 @@ Note:
 - board will have the same number of rows and columns, a number in the range [2, 30].
 - board[i][j] will be only 0s or 1s.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/transform-to-chessboard][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/transform-to-chessboard][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/transform-to-chessboard/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/transform-to-chessboard/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

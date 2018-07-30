@@ -26,9 +26,9 @@ Given points = [[1,1],[-1,-1]], return false.
 Follow up:
 Could you do better than O(n^2)?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/line-reflection][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/line-reflection][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/line-reflection/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/line-reflection/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

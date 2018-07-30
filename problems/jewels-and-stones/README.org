@@ -31,9 +31,9 @@ Note:
 - S and J will consist of letters and have length at most 50.
 - The characters in J are distinct.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/jewels-and-stones][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/jewels-and-stones][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/jewels-and-stones/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/jewels-and-stones/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

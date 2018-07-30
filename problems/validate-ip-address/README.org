@@ -53,9 +53,9 @@ Output: "Neither"
 
 Explanation: This is neither a IPv4 address nor a IPv6 address.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/validate-ip-address][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/validate-ip-address][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/validate-ip-address/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/validate-ip-address/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

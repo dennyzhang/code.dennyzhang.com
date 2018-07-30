@@ -34,9 +34,9 @@ Output: 299
 #+END_EXAMPLE
 Note: N is an integer in the range [0, 10^9].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/monotone-increasing-digits][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/monotone-increasing-digits][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/monotone-increasing-digits/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/monotone-increasing-digits/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

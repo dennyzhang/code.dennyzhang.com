@@ -33,9 +33,9 @@ Note:
 - 1 <= len(bits) <= 1000.
 - bits[i] is always 0 or 1.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/1-bit-and-2-bit-characters][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/1-bit-and-2-bit-characters][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/1-bit-and-2-bit-characters/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/1-bit-and-2-bit-characters/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

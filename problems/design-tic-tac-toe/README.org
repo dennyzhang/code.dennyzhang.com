@@ -63,9 +63,9 @@ toe.move(2, 1, 1); -> Returns 1 (player 1 wins)
 
 Follow up: Could you do better than O(n^2) per move() operation?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-tic-tac-toe][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-tic-tac-toe][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/design-tic-tac-toe/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/design-tic-tac-toe/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

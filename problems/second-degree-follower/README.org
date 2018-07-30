@@ -43,9 +43,9 @@ Note:
 Followee would not follow himself/herself in all cases.
 Please display the result in follower's alphabet order.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/second-degree-follower][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/second-degree-follower][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/second-degree-follower/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/second-degree-follower/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

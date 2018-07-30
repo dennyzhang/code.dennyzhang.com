@@ -22,9 +22,9 @@ Output:  [1,2,4,7,5,3,6,8,9]
 Note:
 The total number of elements of the given matrix will not exceed 10,000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/diagonal-traverse][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/diagonal-traverse][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/diagonal-traverse/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/diagonal-traverse/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

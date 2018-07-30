@@ -40,9 +40,9 @@ Note:
 1. The given kill id is guaranteed to be one of the given PIDs.
 - n >= 1.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/kill-process][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/kill-process][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/kill-process/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/kill-process/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -31,9 +31,9 @@ Explanation:
 There is no time period, both users are online at the same time.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/time-intersection][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/time-intersection][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/time-intersection/][LintCode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/time-intersection/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

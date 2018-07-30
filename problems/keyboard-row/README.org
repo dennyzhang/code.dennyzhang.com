@@ -19,9 +19,9 @@ Note:
 - You may use one character in the keyboard more than once.
 - You may assume the input string will only contain letters of alphabet.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/keyboard-row][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/keyboard-row][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/keyboard-row/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/keyboard-row/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

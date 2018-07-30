@@ -37,9 +37,9 @@ The legal solutions at this time are:
 (1),(2),(3),(1,2),(1,3),(2,3)
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/card-game][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/card-game][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://www.lintcode.com/problem/card-game/description][lintcode.com]]
+Credits To: [[https://www.lintcode.com/problem/card-game/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

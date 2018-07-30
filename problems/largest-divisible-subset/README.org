@@ -28,9 +28,9 @@ nums: [1,2,4,8]
 Result: [1,2,4,8]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-divisible-subset][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-divisible-subset][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/largest-divisible-subset/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/largest-divisible-subset/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

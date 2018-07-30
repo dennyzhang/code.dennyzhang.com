@@ -17,9 +17,9 @@ Hint: Carefully consider all possible input cases. If you want a challenge, plea
 
 Notes: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/string-to-integer-atoi][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/string-to-integer-atoi][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/string-to-integer-atoi/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/string-to-integer-atoi/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

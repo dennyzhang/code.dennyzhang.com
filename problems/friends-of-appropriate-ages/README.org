@@ -50,9 +50,9 @@ Notes:
 - 1 <= ages.length <= 20000.
 - 1 <= ages[i] <= 120.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friends-of-appropriate-ages][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/friends-of-appropriate-ages][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/friends-of-appropriate-ages/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/friends-of-appropriate-ages/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -30,9 +30,9 @@ For example, given the above Employee table, the nth highest salary where n = 2 
 +------------------------+
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nth-highest-salary][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/nth-highest-salary][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/nth-highest-salary/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/nth-highest-salary/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

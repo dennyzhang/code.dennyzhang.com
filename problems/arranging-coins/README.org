@@ -40,9 +40,9 @@ The coins can form the following rows:
 Because the 4th row is incomplete, we return 3.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/arranging-coins][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/arranging-coins][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/arranging-coins/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/arranging-coins/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

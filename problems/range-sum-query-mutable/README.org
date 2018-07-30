@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]], [[https://code.dennyzhang.com/tag/segmenttree][#segmenttree]], [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
 ---------------------------------------------------------------------
-Related Reading: [[url-external:https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]
+Related Reading: [[https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]
 
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.
 
@@ -37,9 +37,9 @@ What if, update and sumRange function is not distributed evenly?
 Let's say, the ratio of update_count/sumRange_count is 10000 or 0.0001?
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-sum-query-mutable][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-sum-query-mutable][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-mutable/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/range-sum-query-mutable/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

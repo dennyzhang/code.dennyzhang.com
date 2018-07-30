@@ -34,9 +34,9 @@ Note:
 - The value of each color in image[i][j] and newColor will be an integer in [0, 65535].
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flood-fill][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/flood-fill][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/flood-fill/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/flood-fill/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

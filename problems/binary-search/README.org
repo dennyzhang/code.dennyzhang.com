@@ -32,9 +32,9 @@ Note:
 - n will be in the range [1, 10000].
 - The value of each element in nums will be in the range [-9999, 9999].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-search][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-search][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-search/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/binary-search/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

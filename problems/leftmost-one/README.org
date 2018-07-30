@@ -32,9 +32,9 @@ Explanation:
 Arr[1][1] is the leftmost 1 in all rows and its column is 1.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/leftmost-one][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/leftmost-one][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/leftmost-one/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/leftmost-one/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

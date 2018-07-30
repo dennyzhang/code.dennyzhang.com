@@ -18,9 +18,9 @@ Note:
 Given target value is a floating point.
 You are guaranteed to have only one unique value in the BST that is closest to the target.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/closest-binary-search-tree-value][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/closest-binary-search-tree-value][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/closest-binary-search-tree-value/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/closest-binary-search-tree-value/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -59,9 +59,9 @@ Note:
 - 0 <= bills.length <= 10000
 - bills[i] will be either 5, 10, or 20.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lemonade-change][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lemonade-change][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/lemonade-change/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/lemonade-change/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

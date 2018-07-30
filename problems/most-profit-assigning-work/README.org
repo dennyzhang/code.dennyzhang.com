@@ -33,9 +33,9 @@ Notes:
 - 1 <= worker.length <= 10000
 - difficulty[i], profit[i], worker[i]  are in range [1, 10^5]
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/most-profit-assigning-work][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/most-profit-assigning-work][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/most-profit-assigning-work/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/most-profit-assigning-work/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

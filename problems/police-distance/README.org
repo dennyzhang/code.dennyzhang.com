@@ -44,9 +44,9 @@ return `[[5,-1,-1],[4,-1,0],[3,2,1]]`
 The shortest distance between the policemen to other 5 empty space is as shown above.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/police-distance][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/police-distance][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/police-distance/][lintcode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/police-distance/][lintcode.com]]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 

@@ -38,9 +38,9 @@ Note:
 
 N  will be in range [1, 1000].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/domino-and-tromino-tiling][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/domino-and-tromino-tiling][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/domino-and-tromino-tiling/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/domino-and-tromino-tiling/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -24,9 +24,9 @@ Note:
 - The given array size will in the range [2, 10000].
 - The given array's numbers won't have any order.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/set-mismatch][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/set-mismatch][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/set-mismatch/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/set-mismatch/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

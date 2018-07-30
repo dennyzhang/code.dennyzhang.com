@@ -12,9 +12,9 @@ Similar Problems:
 ---------------------------------------------------------------------
 Write a function to find the longest common prefix string amongst an array of strings.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-common-prefix][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-common-prefix][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/longest-common-prefix/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/longest-common-prefix/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

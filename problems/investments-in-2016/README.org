@@ -55,9 +55,9 @@ And its location is the same with the third record, which makes the third record
 So, the result is the sum of TIV_2016 of the first and last record, which is 45.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/investments-in-2016][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/investments-in-2016][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/investments-in-2016/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/investments-in-2016/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

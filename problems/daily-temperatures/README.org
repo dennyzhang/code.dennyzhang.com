@@ -17,9 +17,9 @@ For example, given the list temperatures = [73, 74, 75, 71, 69, 72, 76, 73], you
 
 Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/daily-temperatures][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/daily-temperatures][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/daily-temperatures/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/daily-temperatures/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

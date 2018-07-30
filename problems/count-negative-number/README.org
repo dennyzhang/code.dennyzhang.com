@@ -46,9 +46,9 @@ Explanation:
 There are only 11 negative number.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-negative-number][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/count-negative-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/count-negative-number/][LintCode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/count-negative-number/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

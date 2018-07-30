@@ -42,9 +42,9 @@ Notes:
 - 0 <= grid[i][j] <= 1.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/making-a-large-island][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/making-a-large-island][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/making-a-large-island/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/making-a-large-island/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

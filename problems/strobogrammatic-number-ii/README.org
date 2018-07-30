@@ -22,9 +22,9 @@ Find all strobogrammatic numbers that are of length = n.
 For example,
 Given n = 2, return ["11","69","88","96"].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/strobogrammatic-number-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/strobogrammatic-number-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/strobogrammatic-number-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/strobogrammatic-number-ii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

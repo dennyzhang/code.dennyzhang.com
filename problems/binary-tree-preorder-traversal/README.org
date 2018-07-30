@@ -24,9 +24,9 @@ return [1,2,3].
 
 Note: Recursive solution is trivial, could you do it iteratively?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-preorder-traversal][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-preorder-traversal][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/binary-tree-preorder-traversal/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/binary-tree-preorder-traversal/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

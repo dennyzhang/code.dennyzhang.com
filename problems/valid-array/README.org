@@ -29,9 +29,9 @@ Explanation:
 In this array, 3 and 5 have odd number of times, so it is invalid and return -1.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-array][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-array][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://www.lintcode.com/problem/valid-array/description][lintcode.com]]
+Credits To: [[https://www.lintcode.com/problem/valid-array/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -31,9 +31,9 @@ Your script should output the tenth line, which is:
 Line 10
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/tenth-line][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/tenth-line][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/tenth-line/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/tenth-line/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -23,9 +23,9 @@ For example, given the following matrix:
 #+END_EXAMPLE
 Return 4.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximal-square][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximal-square][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/maximal-square/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/maximal-square/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

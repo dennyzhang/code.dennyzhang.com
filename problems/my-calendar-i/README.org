@@ -35,9 +35,9 @@ Note:
 - The number of calls to MyCalendar.book per test case will be at most 1000.
 - In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/my-calendar-i][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/my-calendar-i][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/my-calendar-i/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/my-calendar-i/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -47,9 +47,9 @@ Note:
 - A will have length at most 20000.
 - A[i] will be in the range [0, A.length].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/smallest-rotation-with-highest-score][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/smallest-rotation-with-highest-score][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/smallest-rotation-with-highest-score/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/smallest-rotation-with-highest-score/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

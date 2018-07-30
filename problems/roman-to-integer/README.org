@@ -16,17 +16,17 @@ Given a roman numeral, convert it to an integer.
 
 Input is guaranteed to be within the range from 1 to 3999.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/roman-to-integer][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/roman-to-integer][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/roman-to-integer/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/roman-to-integer/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 <<<<<<< HEAD
 Reference:
-- [[url-external:https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system][wikipedia: Roman numerals]]
-- [[url-external:http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm][Roman Numerals Chart]]
+- [[https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system][wikipedia: Roman numerals]]
+- [[http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm][Roman Numerals Chart]]
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/roman-to-integer
 // Related reading: 

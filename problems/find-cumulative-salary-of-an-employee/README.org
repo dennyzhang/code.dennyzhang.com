@@ -70,9 +70,9 @@ Employ '3' has two salary records except its most recent pay month '4': month '3
 | 3  | 2     | 40     |
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-cumulative-salary-of-an-employee][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-cumulative-salary-of-an-employee][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-cumulative-salary-of-an-employee/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/find-cumulative-salary-of-an-employee/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

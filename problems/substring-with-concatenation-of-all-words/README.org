@@ -23,9 +23,9 @@ You should return the indices: [0,9].
 (order does not matter).
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/substring-with-concatenation-of-all-words][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/substring-with-concatenation-of-all-words][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

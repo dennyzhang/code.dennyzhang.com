@@ -69,9 +69,9 @@ Explanation:The maximum width existing in the fourth level with the length 8 (6,
 
 Note: Answer will in the range of 32-bit signed integer.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-width-of-binary-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-width-of-binary-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/maximum-width-of-binary-tree/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/maximum-width-of-binary-tree/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

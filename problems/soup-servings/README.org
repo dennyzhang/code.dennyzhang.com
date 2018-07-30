@@ -37,9 +37,9 @@ Notes:
 - 0 <= N <= 10^9. 
 - Answers within 10^-6 of the true value will be accepted as correct.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/soup-servings][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/soup-servings][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/soup-servings/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/soup-servings/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

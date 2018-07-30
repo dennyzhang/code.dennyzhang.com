@@ -21,9 +21,9 @@ Input: [0,2,3,4,6,8,9]
 Output: ["0","2->4","6","8->9"]
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/summary-ranges][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/summary-ranges][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/summary-ranges/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/summary-ranges/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

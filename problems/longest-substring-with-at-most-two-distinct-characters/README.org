@@ -17,9 +17,9 @@ For example, Given s = “eceba”,
 
 T is "ece" which its length is 3.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-substring-with-at-most-two-distinct-characters][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-substring-with-at-most-two-distinct-characters][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

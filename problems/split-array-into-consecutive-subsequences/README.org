@@ -41,9 +41,9 @@ Output: False
 Note:
 - The length of the input is in range of [1, 10000]
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-into-consecutive-subsequences][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-into-consecutive-subsequences][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/split-array-into-consecutive-subsequences/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/split-array-into-consecutive-subsequences/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -75,9 +75,9 @@ Note:
 - mines[i] will be length 2 and consist of integers in the range [0, N-1].
 - (Additionally, programs submitted in C, C++, or C# will be judged with a slightly smaller time limit.)
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-plus-sign][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/largest-plus-sign][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/largest-plus-sign/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/largest-plus-sign/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -60,9 +60,9 @@ Note:
 All characters have an ASCII value in [35, 126].
 1 <= len(chars) <= 1000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/string-compression][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/string-compression][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/string-compression/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/string-compression/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

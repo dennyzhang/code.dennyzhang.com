@@ -31,9 +31,9 @@ Explanation:
 No substring satisfies the condition except empty substring.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-ab-substring][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-ab-substring][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://www.lintcode.com/problem/longest-ab-substring/description][lintcode.com]]
+Credits To: [[https://www.lintcode.com/problem/longest-ab-substring/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

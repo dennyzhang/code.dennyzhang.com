@@ -45,9 +45,9 @@ Notes:
 - All heights grid[i][j] are in the range [0, 100].
 - All buildings in grid[i][j] occupy the entire grid cell: that is, they are a 1 x 1 x grid[i][j] rectangular prism.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-increase-to-keep-city-skyline][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/max-increase-to-keep-city-skyline][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/max-increase-to-keep-city-skyline/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/max-increase-to-keep-city-skyline/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

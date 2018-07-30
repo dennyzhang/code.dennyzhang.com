@@ -29,9 +29,9 @@ Explanation:
 12 + 1 = 13 in 10 bases.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/k-decimal-addition][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/k-decimal-addition][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://www.lintcode.com/problem/k-decimal-addition/description][lintcode.com]]
+Credits To: [[https://www.lintcode.com/problem/k-decimal-addition/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

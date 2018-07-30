@@ -42,9 +42,9 @@ Note:
 1. 1 <= seats.length <= 20000
 - seats contains only 0s or 1s, at least one 0, and at least one 1.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximize-distance-to-closest-person][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximize-distance-to-closest-person][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/maximize-distance-to-closest-person/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/maximize-distance-to-closest-person/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

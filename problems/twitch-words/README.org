@@ -30,9 +30,9 @@ Explanation:
 "ooo", "sss" and "ssss" are twitching letters, and output their starting and ending points.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/twitch-words][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/twitch-words][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://www.lintcode.com/en/old/problem/twitch-words/][lintcode.com]]
+Credits To: [[https://www.lintcode.com/en/old/problem/twitch-words/][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

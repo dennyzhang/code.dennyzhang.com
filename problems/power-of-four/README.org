@@ -17,9 +17,9 @@ Given num = 16, return true. Given num = 5, return false.
 
 Follow up: Could you solve it without loops/recursion?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/power-of-four][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/power-of-four][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/power-of-four/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/power-of-four/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

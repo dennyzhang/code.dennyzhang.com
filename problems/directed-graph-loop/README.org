@@ -33,9 +33,9 @@ Explanation:
 There is a cycle 1->2->3->1.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/directed-graph-loop][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/directed-graph-loop][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:http://www.lintcode.com/en/problem/directed-graph-loop/][lintcode.com]]
+Credits To: [[http://www.lintcode.com/en/problem/directed-graph-loop/][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

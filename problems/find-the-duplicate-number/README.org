@@ -15,9 +15,9 @@ Note:
 - Your runtime complexity should be less than O(n*n).
 - There is only one duplicate number in the array, but it could be repeated more than once.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-the-duplicate-number][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-the-duplicate-number][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-the-duplicate-number/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/find-the-duplicate-number/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

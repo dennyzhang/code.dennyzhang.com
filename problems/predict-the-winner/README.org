@@ -41,9 +41,9 @@ Note:
 - Any scores in the given array are non-negative integers and will not exceed 10,000,000.
 - If the scores of both players are equal, then player 1 is still the winner.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/predict-the-winner][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/predict-the-winner][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/predict-the-winner/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/predict-the-winner/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

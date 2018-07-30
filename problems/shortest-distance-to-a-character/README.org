@@ -26,9 +26,9 @@ Note:
 - C is a single character, and guaranteed to be in string S.
 - All letters in S and C are lowercase.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-to-a-character][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-to-a-character][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/shortest-distance-to-a-character/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/shortest-distance-to-a-character/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

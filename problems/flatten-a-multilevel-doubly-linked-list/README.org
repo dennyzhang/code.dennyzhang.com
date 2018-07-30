@@ -38,9 +38,9 @@ We should return the following flattened doubly linked list:
 
 [[image-blog:Leetcode: Flatten a Multilevel Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/MultilevelLinkedListFlattened.png]]
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-a-multilevel-doubly-linked-list][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/flatten-a-multilevel-doubly-linked-list][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -81,9 +81,9 @@ The third row reads "read" while the third column reads "lead".
 Therefore, it is NOT a valid word square.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-word-square][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/valid-word-square][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/valid-word-square/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/valid-word-square/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

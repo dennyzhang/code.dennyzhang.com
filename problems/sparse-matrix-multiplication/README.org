@@ -35,9 +35,9 @@ AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
                   | 0 0 1 |
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sparse-matrix-multiplication][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/sparse-matrix-multiplication][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/sparse-matrix-multiplication/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/sparse-matrix-multiplication/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

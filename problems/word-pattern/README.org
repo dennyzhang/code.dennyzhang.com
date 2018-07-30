@@ -23,9 +23,9 @@ pattern = "abba", str = "dog dog dog dog" should return false.
 Notes:
 You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-pattern][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-pattern][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/word-pattern/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/word-pattern/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -25,16 +25,16 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 1,1,5 -> 1,5,1
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-permutation][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-permutation][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/next-permutation/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/next-permutation/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 Related Readings:
-- [[url-external:https://www.nayuki.io/page/next-lexicographical-permutation-algorithm][Next lexicographical permutation algorithm]]
-- [[url-external:https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order][Wikipedia:Permutation]]
+- [[https://www.nayuki.io/page/next-lexicographical-permutation-algorithm][Next lexicographical permutation algorithm]]
+- [[https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order][Wikipedia:Permutation]]
 
 [[image-blog:Leetcode: Next Permutation][https://raw.githubusercontent.com/dennyzhang/images/master/code/next-permutation-algorithm.png]]
 

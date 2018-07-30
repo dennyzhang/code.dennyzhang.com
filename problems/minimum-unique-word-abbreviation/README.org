@@ -30,9 +30,9 @@ Examples:
 "apple", ["plain", "amber", "blade"] -> "1p3" (other valid answers include "ap3", "a3e", "2p2", "3le", "3l1").
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-unique-word-abbreviation][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/minimum-unique-word-abbreviation][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/minimum-unique-word-abbreviation/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/minimum-unique-word-abbreviation/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

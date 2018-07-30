@@ -36,9 +36,9 @@ Note:
 - 0 <= hand[i] <= 10^9
 - 1 <= W <= hand.length
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/hand-of-straights][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/hand-of-straights][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/hand-of-straights/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/hand-of-straights/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

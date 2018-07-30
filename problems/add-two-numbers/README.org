@@ -18,9 +18,9 @@ Output: 7 -> 0 -> 8
 Explanation: 342 + 465 = 807.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-two-numbers][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/add-two-numbers][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/add-two-numbers/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/add-two-numbers/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

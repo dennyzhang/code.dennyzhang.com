@@ -20,9 +20,9 @@ Note:
 You may assume k is always valid, 1 <= k <= number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/top-k-frequent-elements][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/top-k-frequent-elements][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/top-k-frequent-elements/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/top-k-frequent-elements/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

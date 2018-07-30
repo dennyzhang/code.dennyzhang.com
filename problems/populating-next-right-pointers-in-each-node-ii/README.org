@@ -34,9 +34,9 @@ After calling your function, the tree should look like:
     4-> 5 -> 7 -> NULL
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/populating-next-right-pointers-in-each-node-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/populating-next-right-pointers-in-each-node-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

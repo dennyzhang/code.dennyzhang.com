@@ -29,9 +29,9 @@ Output: "22:22"
 Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. It may be assumed that the returned time is next day's time since it is smaller than the input time numerically.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-closest-time][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/next-closest-time][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/next-closest-time/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/next-closest-time/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

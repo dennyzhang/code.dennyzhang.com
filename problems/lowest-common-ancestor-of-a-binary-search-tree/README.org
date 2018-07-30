@@ -27,9 +27,9 @@ According to the definition of LCA on Wikipedia: "The lowest common ancestor is 
 
 For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lowest-common-ancestor-of-a-binary-search-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/lowest-common-ancestor-of-a-binary-search-tree][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

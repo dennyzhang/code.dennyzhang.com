@@ -50,9 +50,9 @@ Explanation: There is no satisfied "right" interval for [1,4] and [3,4].
 For [2,3], the interval [3,4] has minimum-"right" start point.
 #+END_EXAMPLE
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-right-interval][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-right-interval][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/find-right-interval/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/find-right-interval/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

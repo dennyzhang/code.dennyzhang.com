@@ -47,9 +47,9 @@ counter.getHits(301);
 Follow up:
 What if the number of hits per second could be very large? Does your design scale?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-hit-counter][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-hit-counter][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/design-hit-counter/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/design-hit-counter/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -17,9 +17,9 @@ Note:
 1. The order of the result is not important. So in the above example, [5, 3] is also correct.
 - Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-number-iii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-number-iii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-number-iii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/single-number-iii/description/][leetcode.com]]
 
 Hint: Time O(n), Space O(1). Moore voting
 

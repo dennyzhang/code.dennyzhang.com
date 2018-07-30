@@ -38,9 +38,9 @@ Follow up:
 - How does it change the problem?
 - What limitation we need to add to the question to allow negative numbers?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/combination-sum-iv][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/combination-sum-iv][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/combination-sum-iv/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/combination-sum-iv/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -60,9 +60,9 @@ Note
 
 If there is only one node on the tree, you only need to output its root attributes.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/tree-node][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/tree-node][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/tree-node/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/tree-node/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

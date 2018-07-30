@@ -26,9 +26,9 @@ Output: "-10"
 #+END_EXAMPLE
 Note: The input will be in range of [-1e7, 1e7].
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/base-7][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/base-7][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/base-7/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/base-7/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

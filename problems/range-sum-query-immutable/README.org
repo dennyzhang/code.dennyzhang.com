@@ -26,9 +26,9 @@ Note:
 - You may assume that the array does not change.
 - There are many calls to sumRange function.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-sum-query-immutable][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/range-sum-query-immutable][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/range-sum-query-immutable/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/range-sum-query-immutable/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

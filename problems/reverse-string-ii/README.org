@@ -18,9 +18,9 @@ Restrictions:
 1. The string consists of lower English letters only.
 - Length of the given string and k will in the range [1, 10000]
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-string-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reverse-string-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/reverse-string-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/reverse-string-ii/description/][leetcode.com]]
 
 Hint: Time O(n), Space O(1). Moore voting
 

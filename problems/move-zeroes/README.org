@@ -15,9 +15,9 @@ Note:
 1. You must do this in-place without making a copy of the array.
 - Minimize the total number of operations.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/move-zeroes][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/move-zeroes][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/move-zeroes/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/move-zeroes/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

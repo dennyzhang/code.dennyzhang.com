@@ -43,9 +43,9 @@ Follow up:
 - What is the expected value for the number of calls to rand7() function?
 - Could you minimize the number of calls to rand7()?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-rand10-using-rand7][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/implement-rand10-using-rand7][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/implement-rand10-using-rand7/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/implement-rand10-using-rand7/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

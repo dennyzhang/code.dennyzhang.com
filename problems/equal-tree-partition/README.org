@@ -53,9 +53,9 @@ Note:
 - The range of tree node value is in the range of [-100000, 100000].
 - 1 <= n <= 10000
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/equal-tree-partition][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/equal-tree-partition][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/equal-tree-partition/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/equal-tree-partition/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

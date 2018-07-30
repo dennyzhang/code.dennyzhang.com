@@ -12,9 +12,9 @@ Given an array of integers, every element appears three times except for one, wh
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-number-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/single-number-ii][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/single-number-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/single-number-ii/description/][leetcode.com]]
 
 Hint: Time O(n), Space O(1)
 

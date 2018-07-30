@@ -31,9 +31,9 @@ The point (1,2) is an ideal empty land to build a house, as the total travel dis
 Note:
 There will be at least one building. If it is not possible to build such house according to the above rules, return -1.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-from-all-buildings][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/shortest-distance-from-all-buildings][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/shortest-distance-from-all-buildings/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/shortest-distance-from-all-buildings/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
