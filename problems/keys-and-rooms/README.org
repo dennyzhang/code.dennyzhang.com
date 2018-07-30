@@ -44,9 +44,9 @@ Note:
 - 0 <= rooms[i].length <= 1000
 - The number of keys in all rooms combined is at most 3000.
 
-Github: [[url-external:https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/keys-and-rooms][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/keys-and-rooms][challenges-leetcode-interesting]]
 
-Credits To: [[url-external:https://leetcode.com/problems/keys-and-rooms/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/keys-and-rooms/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
