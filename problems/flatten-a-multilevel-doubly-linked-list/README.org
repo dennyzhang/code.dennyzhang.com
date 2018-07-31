@@ -44,7 +44,7 @@ Credits To: [[https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: Two pass
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/flatten-a-multilevel-doubly-linked-list
@@ -87,3 +87,53 @@ class Solution(object):
             p = p.next
         return head
 #+END_SRC
+
+- Solution: One pass
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/flatten-a-multilevel-doubly-linked-list
+## Basic Ideas: dfs
+## Complexity:
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val, prev, next, child):
+        self.val = val
+        self.prev = prev
+        self.next = next
+        self.child = child
+"""
+class Solution(object):
+    def dfs(self, head):
+        # return the last node
+        if head is None: return None
+        res = head
+        head_next = head.next
+        p = self.dfs(head.child)
+        if p:
+            p.next = head.next
+            if head.next: head.next.prev = p
+
+            head.next = head.child
+            if head.child: head.child.prev = head
+            head.child = None
+            res = p
+        q = self.dfs(head_next)
+        if q: res = q
+        return res
+        
+    def flatten(self, head):
+        """
+        :type head: Node
+        :rtype: Node
+        """
+        self.dfs(head)
+        return head
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="http://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_EXPORT
