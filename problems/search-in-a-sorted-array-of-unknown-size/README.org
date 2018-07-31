@@ -33,7 +33,7 @@ Note:
 1. You may assume that all elements in the array are unique.
 - The value of each element in the array will be in the range [-9999, 9999].
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-in-a-sorted-array-of-unknown-size][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-in-a-sorted-array-of-unknown-size][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/description/][leetcode.com]]
 

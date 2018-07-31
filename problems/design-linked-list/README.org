@@ -38,7 +38,7 @@ Note:
 - The number of operations will be in the range of [1, 1000].
 - Please do not use the built-in LinkedList library.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-linked-list][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-linked-list][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/design-linked-list/description/][leetcode.com]]
 

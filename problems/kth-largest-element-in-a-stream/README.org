@@ -31,7 +31,7 @@ kthLargest.add(4);   // returns 8
 Note: 
 - You may assume that nums' length >= k-1 and k >= 1.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/kth-largest-element-in-a-stream][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/kth-largest-element-in-a-stream][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/kth-largest-element-in-a-stream/description/][leetcode.com]]
 

@@ -48,7 +48,7 @@ Note:
 
 - 1 <= N <= 10^9
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/reordered-power-of-2][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/reordered-power-of-2][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/reordered-power-of-2/description/][leetcode.com]]
 

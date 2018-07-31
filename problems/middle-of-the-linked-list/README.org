@@ -35,7 +35,7 @@ Note:
 
 - The number of nodes in the given list will be between 1 and 100.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/middle-of-the-linked-list][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/middle-of-the-linked-list][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/middle-of-the-linked-list/description/][leetcode.com]]
 

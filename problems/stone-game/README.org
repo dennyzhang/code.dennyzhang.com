@@ -40,7 +40,7 @@ Note:
 - 1 <= piles[i] <= 500
 - sum(piles) is odd.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/stone-game][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/stone-game][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/stone-game/description/][leetcode.com]]
 

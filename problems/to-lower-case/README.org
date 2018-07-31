@@ -12,7 +12,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/to-lower-case][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/to-lower-case][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/to-lower-case/description/][leetcode.com]]
 

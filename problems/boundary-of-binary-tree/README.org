@@ -59,7 +59,7 @@ The right boundary are node 1,3,6,10. (10 is the right-most node).
 So order them in anti-clockwise without duplicate nodes we have [1,2,4,7,8,9,10,6,3].
 #+END_EXAMPLE
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/boundary-of-binary-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/boundary-of-binary-tree][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/boundary-of-binary-tree/description/][leetcode.com]]
 

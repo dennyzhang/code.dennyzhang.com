@@ -60,7 +60,7 @@ Output:
 ]
 #+END_EXAMPLE
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/factor-combinations][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/factor-combinations][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/factor-combinations/description/][leetcode.com]]
 

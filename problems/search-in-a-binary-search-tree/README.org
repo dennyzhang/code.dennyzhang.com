@@ -36,7 +36,7 @@ In the example above, if we want to search the value 5, since there is no node w
 
 Note that an empty tree is represented by NULL, therefore you would see the expected output (serialized tree format) as [], not null.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/search-in-a-binary-search-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-in-a-binary-search-tree][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/search-in-a-binary-search-tree/description/][leetcode.com]]
 

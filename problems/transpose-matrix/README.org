@@ -32,7 +32,7 @@ Note:
 2. 1 <= A[0].length <= 1000
 #+END_EXAMPLE
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/transpose-matrix][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/transpose-matrix][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/transpose-matrix/description/][leetcode.com]]
 

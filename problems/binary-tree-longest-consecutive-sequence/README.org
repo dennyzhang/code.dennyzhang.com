@@ -49,7 +49,7 @@ Output: 2
 Explanation: Longest consecutive sequence path is 2-3, not 3-2-1, so return 2.
 #+END_EXAMPLE
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-longest-consecutive-sequence][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-longest-consecutive-sequence][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/description/][leetcode.com]]
 

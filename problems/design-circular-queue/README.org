@@ -45,7 +45,7 @@ Note:
 - The number of operations will be in the range of [1, 1000].
 - Please do not use the built-in Queue library.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/design-circular-queue][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/design-circular-queue][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/design-circular-queue/description/][leetcode.com]]
 

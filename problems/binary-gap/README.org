@@ -55,7 +55,7 @@ Note:
 
 - 1 <= N <= 10^9
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-gap][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-gap][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/binary-gap/description/][leetcode.com]]
 

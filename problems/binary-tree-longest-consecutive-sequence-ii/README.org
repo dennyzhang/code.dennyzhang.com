@@ -37,7 +37,7 @@ Explanation: The longest consecutive path is [1, 2, 3] or [3, 2, 1].
 
 Note: All the values of tree nodes are in the range of [-1e7, 1e7].
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-longest-consecutive-sequence-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/binary-tree-longest-consecutive-sequence-ii][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/description/][leetcode.com]]
 
