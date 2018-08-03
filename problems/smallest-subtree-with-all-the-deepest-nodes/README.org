@@ -1,0 +1,78 @@
+* Leetcode: Smallest Subtree with all the Deepest Nodes          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Smallest Subtree with all the Deepest Nodes
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+Given a binary tree rooted at root, the depth of each node is the shortest distance to the root.
+
+A node is deepest if it has the largest depth possible among any node in the entire tree.
+
+The subtree of a node is that node, plus the set of all descendants of that node.
+
+Return the node with the largest depth such that it contains all the deepest nodes in its subtree.
+
+Example 1:
+#+BEGIN_EXAMPLE
+
+Input: [3,5,1,6,2,0,8,null,null,7,4]
+Output: [2,7,4]
+Explanation:
+#+END_EXAMPLE
+
+[[image-blog:Leetcode: Smallest Subtree with all the Deepest Nodes][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/smallest-subtree-with-all-the-deepest-nodes.png]]
+ 
+#+BEGIN_EXAMPLE
+We return the node with value 2, colored in yellow in the diagram.
+The nodes colored in blue are the deepest nodes of the tree.
+The input "[3, 5, 1, 6, 2, 0, 8, null, null, 7, 4]" is a serialization of the given tree.
+The output "[2, 7, 4]" is a serialization of the subtree rooted at the node with value 2.
+Both the input and output have TreeNode type.
+#+END_EXAMPLE
+
+Note:
+
+- The number of nodes in the tree will be between 1 and 500.
+- The values of each node are unique.
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/smallest-subtree-with-all-the-deepest-nodes][challenges-leetcode-interesting]]
+
+Credits To: [[https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/smallest-subtree-with-all-the-deepest-nodes
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="http://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
