@@ -26,7 +26,7 @@ Output: [2,7,4]
 Explanation:
 #+END_EXAMPLE
 
-[[image-blog:Leetcode: Smallest Subtree with all the Deepest Nodes][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/smallest-subtree-with-all-the-deepest-nodes.png]]
+[[image-blog:Leetcode: Smallest Subtree with all the Deepest Nodes][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/smallest-subtree.png]]
  
 #+BEGIN_EXAMPLE
 We return the node with value 2, colored in yellow in the diagram.
