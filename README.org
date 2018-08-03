@@ -1,5 +1,5 @@
 * org-mode configuration                                           :noexport:
-#+STARTUP: overview customtime noalign logdone hidestars
+#+STARTUP: overview customtime noalign logdone showall
 #+TITLE:  Interesting LeetCode Problems
 #+DESCRIPTION: 
 #+KEYWORDS: 

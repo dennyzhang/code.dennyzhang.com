@@ -20,15 +20,15 @@ Example
 #+BEGIN_EXAMPLE
 Given target="ally",words=["buy","discard","lip","yep"],return false
 
-Explanation：
-`buy` can match `y`, `discard` can match `a`, `lip` can match `l`, `yep` cannot correspond to any one letter, so there is still one `l` in `target` that cannot be matched. 
+Explanation:
+'buy' can match 'y', 'discard' can match 'a', 'lip' can match 'l', 'yep' cannot correspond to any one letter, so there is still one 'l' in 'target' that cannot be matched. 
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
 Given target="ray",words=["buy","discard","lip","rep"],return true
 
-Explanation：
-`buy` can match `y`, `discard` can match `a`, `rep` can match `r`.
+Explanation:
+'buy' can match 'y', 'discard' can match 'a', 'rep' can match 'r'.
 #+END_EXAMPLE
 
 Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/word-synthesis-problem][challenges-leetcode-interesting]]

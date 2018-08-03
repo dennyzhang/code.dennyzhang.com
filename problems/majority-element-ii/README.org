@@ -9,15 +9,12 @@ Identity number which appears exactly once.
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
-
-
 Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/majority-element-ii][challenges-leetcode-interesting]]
 
 Credits To: [[https://leetcode.com/problems/majority-element-ii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/majority-element-ii
 ## Basic Ideas:
@@ -69,7 +66,7 @@ class Solution(object):
 # print s.majorityElement([1, 2, 3, 2, 3, 3])
 #+END_SRC
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
