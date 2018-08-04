@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, dp2order, padplaceholder
+:type:     dynamicprogramming, dp2order, padplaceholder, worddistance
 :END:
 ---------------------------------------------------------------------
 Delete Operation for Two Strings
@@ -11,7 +11,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/edit-distance][Edit Distance]]
 - [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
 - [[https://code.dennyzhang.com/interleaving-string][Interleaving String]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/dp2order][#dp2order]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/dp2order][#dp2order]], [[https://code.dennyzhang.com/tag/worddistance][#worddistance]]
 ---------------------------------------------------------------------
 Given two words word1 and word2, find the minimum number of steps required to make word1 and word2 the same, where in each step you can delete one character in either string.
 #+BEGIN_EXAMPLE

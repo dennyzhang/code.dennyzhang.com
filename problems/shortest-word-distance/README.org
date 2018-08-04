@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, inspiring, classic
+:type:     array, inspiring, classic, worddistance
 :END:
 ---------------------------------------------------------------------
 Shortest Word Distance
@@ -11,7 +11,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/heaters][Heaters]]
 - [[https://code.dennyzhang.com/shortest-word-distance-ii][Shortest Word Distance II]]
 - [[https://code.dennyzhang.com/shortest-word-distance-iii][Shortest Word Distance III]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/worddistance][#worddistance]]
 ---------------------------------------------------------------------
 Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
 

@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     reverseitem, string
 :END:
 ---------------------------------------------------------------------
 Reverse Words in a String II
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/rotate-array][Rotate Array]]
+- Tag: [[https://code.dennyzhang.com/reverseitem][#reverseitem]], [[https://code.dennyzhang.com/string][#string]]
 ---------------------------------------------------------------------
 Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
 

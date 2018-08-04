@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap, oodesign, classic
+:type:     hashmap, oodesign, classic, worddistance
 :END:
 ---------------------------------------------------------------------
 Shortest Word Distance II
@@ -10,7 +10,7 @@ Shortest Word Distance II
 Similar Problems:
 - [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
 - [[https://code.dennyzhang.com/shortest-word-distance-iii][Shortest Word Distance III]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/worddistance][#worddistance]]
 ---------------------------------------------------------------------
 This is a follow up of [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]. The only difference is now you are given the list of words and your method will be called repeatedly many times with different parameters. How would you optimize it?
 
