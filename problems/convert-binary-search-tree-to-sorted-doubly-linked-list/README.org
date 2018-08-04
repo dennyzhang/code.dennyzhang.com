@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, treetraversal classic
+:type:     linkedlist, treetraversal, classic
 :END:
 ---------------------------------------------------------------------
 Convert Binary Search Tree to Sorted Doubly Linked List

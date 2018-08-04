@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap
+:type:     hashmap, twosum
 :END:
 ---------------------------------------------------------------------
 Split Array with Equal Sum
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/4sum-ii][Leetcode: 4Sum II]]
-- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/hashmap][#twosum]]
 ---------------------------------------------------------------------
 Given an array with n integers, you need to find if there are triplets (i, j, k) which satisfies following conditions:
 

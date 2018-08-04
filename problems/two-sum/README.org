@@ -8,8 +8,8 @@
 Pic 2 numbers to get the target sum.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 ---------------------------------------------------------------------
 Given an array of integers, return *indices* of the two numbers such that they add up to a specific target.
 

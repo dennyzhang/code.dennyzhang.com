@@ -1,11 +1,14 @@
-* Leetcode: Path Sum                                              :BLOG:Basic:
+* Leetcode: Path Sum                                              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     pathsum, binarytree
+:type:     pathsum, binarytree, twosum
 :END:
 ---------------------------------------------------------------------
 Path Sum
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
 ---------------------------------------------------------------------
 Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 #+BEGIN_EXAMPLE

@@ -38,24 +38,24 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/valid-triangle-number
+## Basic Ideas: Like 3sum
+##       Sort the list, then use 3 loop
+##       When the sum 2 shorter sides is greater 
+##       than the big side, the 3 numbers can form a triangle.
+##       Note: not O(n*n*n); numbers has 0; allow duplicate
+##
+## Complexity: Time O(n^2), Space O(1)
+## Sample Data:
+##     3, 5, 6, 7, 7, 8
+##     i  j        k
+##     2  2  3  4
+##     0  0  1  1
 class Solution(object):
     def triangleNumber(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        ## Idea: Like 3sum
-        ##       Sort the list, then use 3 loop
-        ##       When the sum 2 shorter sides is greater 
-        ##       than the big side, the 3 numbers can form a triangle.
-        ##       Note: not O(n*n*n); numbers has 0; allow duplicate
-        ##
-        ## Complexity: Time O(n^2), Space O(1)
-        ## Sample Data:
-        ##     3, 5, 6, 7, 7, 8
-        ##     i  j        k
-        ##     2  2  3  4
-        ##     0  0  1  1
         nums.sort()
         res = 0
         for i in range(0, len(nums)-2):
@@ -73,7 +73,6 @@ class Solution(object):
                 while k<len(nums) and nums[i]+nums[j]>nums[k]:
                     count += 1
                     k += 1
-                # print("i: %d, j: %d, count: %d" % (i, j, count))
                 res += count
         return res
 #+END_SRC

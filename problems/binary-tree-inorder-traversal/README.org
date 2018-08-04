@@ -9,7 +9,7 @@ Binary Tree Inorder Traversal
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 Given a binary tree, return the inorder traversal of its nodes' values.
 
@@ -66,27 +66,6 @@ class Solution(object):
                     stack.append(p)
                     p = p.left
         return res
-
-    def inorderTraversal_v1(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
-        l = []
-        self.inorderTraversalRec(root, l)
-        return l
-    
-    def inorderTraversalRec(self, root, list_value):
-        if root is None:
-            return
-
-        if root.left is not None:
-            self.inorderTraversalRec(root.left, list_value)
-        
-        list_value.append(root.val)
-
-        if root.right is not None:
-            self.inorderTraversalRec(root.right, list_value)
 #+END_SRC
 
 #+BEGIN_HTML

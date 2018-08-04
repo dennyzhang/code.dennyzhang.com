@@ -2,14 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     greedy, game, classic
+:type:     greedy, game, classic, frogjump
 :END:
 ---------------------------------------------------------------------
 Jump Game
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/add-bold-tag-in-string][Add Bold Tag in String]]
-- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
+- [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/frogjump][#frogjump]]
 ---------------------------------------------------------------------
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
 

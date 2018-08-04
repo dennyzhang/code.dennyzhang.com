@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     pathsum, binarytree, recursive, redo
+:type:     pathsum, binarytree, recursive, twosum, redo
 :END:
 ---------------------------------------------------------------------
 Path Sum III
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
 ---------------------------------------------------------------------
 You are given a binary tree in which each node contains an integer value.
 

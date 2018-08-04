@@ -20,7 +20,14 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-
+## Blog link: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
+## Basic Ideas:
+##  Preorder: M L R
+##   Inorder: L R M
+##  Take the first of preorder as root
+##  Locate root in Inorder, since no duplicate
+##  Divide and conquer for left sub-tree and right sub-tree
+## Complexity: Time O(n), Space O(n)
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -29,26 +36,7 @@ Leave me comments, if you have better ways to solve.
 #         self.right = None
 
 class Solution(object):
-    ## Blog link: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
-## Basic Ideas: non-recursive way by backtracking
-    ##            Build the root
-    ##            If it has left sub-tree, push to stack
     def buildTree(self, preorder, inorder):
-        """
-        :type preorder: List[int]
-        :type inorder: List[int]
-        :rtype: TreeNode
-        """
-        
-    ## Blog link: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
-## Basic Ideas:
-    ##  Preorder: M L R
-    ##   Inorder: L R M
-    ##  Take the first of preorder as root
-    ##  Locate root in Inorder, since no duplicate
-    ##  Divide and conquer for left sub-tree and right sub-tree
-    ## Complexity: Time O(n), Space O(n)
-    def buildTree_v1(self, preorder, inorder):
         """
         :type preorder: List[int]
         :type inorder: List[int]

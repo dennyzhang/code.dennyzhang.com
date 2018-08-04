@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     pathsum, binarytree
+:type:     pathsum, binarytree, twosum
 :END:
 ---------------------------------------------------------------------
 Path Sum IV
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/path-sum-iii][Path Sum III]]
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
 ---------------------------------------------------------------------
 
 If the depth of a tree is smaller than 5, then this tree can be represented by a list of three-digits integers.

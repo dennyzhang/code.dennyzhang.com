@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, hashmap
+:type:     bfs, hashmap, twosum
 :END:
 ---------------------------------------------------------------------
 Target Sum
@@ -10,7 +10,7 @@ Target Sum
 Similar Problems:
 - [[https://code.dennyzhang.com/expression-add-operators][Expression Add Operators]]
 - [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]]
+- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
 ---------------------------------------------------------------------
 You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.
 

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, dynamicprogramming, bfs
+:type:     redo, dynamicprogramming, bfs, frogjump
 :END:
 ---------------------------------------------------------------------
 Frog Jump
@@ -10,7 +10,7 @@ Frog Jump
 Similar Problems:
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 - [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]],  [[https://code.dennyzhang.com/tag/bfs][#bfs]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/frogjump][#frogjump]]
 ---------------------------------------------------------------------
 A frog is crossing a river. The river is divided into x units and at each unit there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.
 

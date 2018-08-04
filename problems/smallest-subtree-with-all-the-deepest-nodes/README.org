@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     binarytree, child2parent
 :END:
 ---------------------------------------------------------------------
 Smallest Subtree with all the Deepest Nodes
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/child2parent][#child2parent]]
 ---------------------------------------------------------------------
 Given a binary tree rooted at root, the depth of each node is the shortest distance to the root.
 
@@ -47,26 +47,64 @@ Credits To: [[https://leetcode.com/problems/smallest-subtree-with-all-the-deepes
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution:
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/smallest-subtree-with-all-the-deepest-nodes
-
+// Basic Ideas: BFS
+//   Build child to parent hashmap
+//   Find the deepest leaves
+//   BFS from bottom to up
+//   When the queue has only one element, return the result
+//
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func subtreeWithAllDeepest(root *TreeNode) *TreeNode {
+    if root == nil { return nil }
+    if root.Left == nil && root.Right == nil { return root }
+    
+    // bfs: deepest leaves and hashmap for child-to-parent
+    m := map[int]*TreeNode{}
+    queue := []*TreeNode{root}
+    leaves := []*TreeNode{}
+    for len(queue) != 0 {
+        leaves = queue
+        l := []*TreeNode{}
+        for _, node := range queue {
+            if node.Left != nil {
+                l = append(l, node.Left)
+                m[node.Left.Val] = node
+            }
+            if node.Right != nil {
+                l = append(l, node.Right)
+                m[node.Right.Val] = node
+            }
+        }
+        queue = l
+    }
+    // bfs: bottom up
+    for len(leaves) > 1 {
+        l := []*TreeNode{}
+        m2 := map[int]bool{}
+        for _, node := range leaves {
+            // parent node value
+            v := m[node.Val].Val
+            if !m2[v] {
+                l = append(l, m[node.Val])
+                m2[v] = true
+            }
+        }
+        leaves = l
+    }
+    return leaves[0]
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -9,8 +9,8 @@
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/sum-of-square-numbers][Sum of Square Numbers]]
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 ---------------------------------------------------------------------
 Given n, find the number of solutions for all x, y, z that conforms to x^2+y^2+z^2 = n.(x, y, z are non-negative integers)
 
