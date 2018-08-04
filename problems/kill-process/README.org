@@ -2,15 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap, queue, inspiring
+:type:     hashmap, inspiring
 :END:
 ---------------------------------------------------------------------
 Kill Process
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
-
 Given n processes, each process has a unique PID (process id) and its PPID (parent process id).
 
 Each process only has one parent process, but may have one or more children processes. This is just like a tree structure. Only one process has PPID that is 0, which means this process has no parent process. All the PIDs will be distinct positive integers.
