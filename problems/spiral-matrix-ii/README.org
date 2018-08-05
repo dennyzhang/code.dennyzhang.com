@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     matrixtraverse
+:type:     matrixtraversal
 :END:
 ---------------------------------------------------------------------
 Spiral Matrix II
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
 

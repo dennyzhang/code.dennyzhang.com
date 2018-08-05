@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     matrixtraverse
+:type:     matrixtraversal
 :END:
 ---------------------------------------------------------------------
 Valid Word Square
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraverse]]
+- Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 Given a sequence of words, check whether it forms a valid word square.
 

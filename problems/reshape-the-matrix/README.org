@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     matrixtraverse
+:type:     matrixtraversal
 :END:
 ---------------------------------------------------------------------
 Reshape the Matrix
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][matrixtraverse]]
+- Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][matrixtraversal]]
 ---------------------------------------------------------------------
 In MATLAB, there is a very useful function called 'reshape', which can reshape a matrix into a new one with different size but keep its original data.
 

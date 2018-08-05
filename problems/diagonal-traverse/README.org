@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, matrixtraverse
+:type:     codetemplate, matrixtraversal
 :END:
 ---------------------------------------------------------------------
 Diagonal Traverse
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown in the below image.
 #+BEGIN_EXAMPLE

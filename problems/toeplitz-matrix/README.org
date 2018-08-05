@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     matrixtraverse
+:type:     matrixtraversal
 :END:
 ---------------------------------------------------------------------
 Toeplitz Matrix
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same element.
 

@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     matrixtraverse, manydetails
+:type:     matrixtraversal, manydetails
 :END:
 ---------------------------------------------------------------------
 Spiral Matrix
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
 #+BEGIN_EXAMPLE
