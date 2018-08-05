@@ -2,14 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, houserobber
+:type:     dfs, houserobber, evaluatecomplexity
 :END:
 ---------------------------------------------------------------------
 Crime activities of House Robbers.
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/houserobber][#houserobber]]
+- Tag: [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/houserobber][#houserobber]], [[https://code.dennyzhang.com/tag/evaluatecomplexity][#evaluatecomplexity]]
 ---------------------------------------------------------------------
 The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the "root." Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that "all houses in this place forms a binary tree". It will automatically contact the police if two directly-linked houses were broken into on the same night.
 
@@ -41,8 +40,40 @@ Credits To: [[https://leetcode.com/problems/house-robber-iii/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/house-robber-iii
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/house-robber-iii
+// Basic Ideas: dfs
+// Complexity:
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func rob(root *TreeNode) int {
+    if root == nil { return 0 }
+    if root.Left == nil && root.Right == nil { return root.Val }
+    
+    v1, v2 := 0, 0
+    if root.Left != nil && root.Right != nil {
+        v1 = root.Val + rob(root.Left.Left) + rob(root.Left.Right) + 
+                            rob(root.Right.Left) + rob(root.Right.Right)
+        v2 = rob(root.Left) + rob(root.Right)
+    } else {
+        p := root.Left
+        if root.Left == nil { p = root.Right }
+        v1 = root.Val + rob(p.Left) + rob(p.Right)
+        v2 = rob(p) 
+    }
+    
+    if v1>v2 {
+        return v1
+    } else {
+        return v2
+    }
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, inspiring, redo
+:type:     array, inspiring, evaluatecomplexity, redo
 :END:
 ---------------------------------------------------------------------
 Hand of Straights
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/evaluatecomplexity][#evaluatecomplexity]]
 ---------------------------------------------------------------------
 Alice has a hand of cards, given as an array of integers.
 

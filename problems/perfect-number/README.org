@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     numbers, redo, sqrt
+:type:     numbers, sqrt, evaluatecomplexity, redo
 :END:
 ---------------------------------------------------------------------
 numbers
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
+- Tag: [[https://code.dennyzhang.com/tag/sqrt][#sqrt]], [[https://code.dennyzhang.com/tag/evaluatecomplexity][#evaluatecomplexity]]
 ---------------------------------------------------------------------
 We define the Perfect Number is a positive integer that is equal to the sum of all its positive divisors except itself.
 

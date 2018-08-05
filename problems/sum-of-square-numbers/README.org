@@ -2,18 +2,17 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, math, sqrt, twosum
+:type:     twopointer, math, sqrt, twosum, evaluatecomplexity
 :END:
 ---------------------------------------------------------------------
 Sum of Square Numbers
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/3sum-ii][LintCode: 3Sum II]]
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
 - [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/sqrt][#sqrt]], [[https://code.dennyzhang.com/tag/evaluatecomplexity][#evaluatecomplexity]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
 ---------------------------------------------------------------------
 Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a*a + b*b = c.
 #+BEGIN_EXAMPLE

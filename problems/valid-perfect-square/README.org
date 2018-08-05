@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, binarysearch, sqrt
+:type:     math, binarysearch, sqrt, evaluatecomplexity
 :END:
 ---------------------------------------------------------------------
 Valid Perfect Square
@@ -10,7 +10,7 @@ Valid Perfect Square
 Similar Problems:
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
+- Tag: #[[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/sqrt][#sqrt]], [[https://code.dennyzhang.com/tag/evaluatecomplexity][#evaluatecomplexity]]
 ---------------------------------------------------------------------
 Given a positive integer num, write a function which returns True if num is a perfect square else False.
 
