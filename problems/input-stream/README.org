@@ -18,14 +18,14 @@ Notice
 
 Example
 #+BEGIN_EXAMPLE
-Given inputA = “abcde<<”, inputB = “abcd<e<”, return "YES".
+Given inputA = "abcde<<", inputB = "abcd<e<", return "YES".
 
 Explanation:
 The final result of inputA and inputB is abc, so return "YES".
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
-Given inputA = “a<<bc”, inputB = “abc<”, return "NO"
+Given inputA = "a<<bc", inputB = "abc<", return "NO"
 
 Explanation:
 The final result of inputA is "bc", and the final result of inputB is "ab", so return "NO".

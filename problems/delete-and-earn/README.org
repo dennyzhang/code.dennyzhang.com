@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     redo
 :END:
 ---------------------------------------------------------------------
 Delete and Earn
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given an array nums of integers, you can perform operations on the array.
 

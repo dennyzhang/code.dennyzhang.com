@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     classic, interval, calendarconflict
+:type:     classic, interval, calendar
 :END:
 ---------------------------------------------------------------------
 Meeting Rooms
@@ -10,7 +10,8 @@ Meeting Rooms
 Similar Problems:
 - [[https://code.dennyzhang.com/meeting-rooms-ii][Meeting Rooms II]]
 - [[https://code.dennyzhang.com/rectangle-area][Rectangle Area]]
-- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
 ---------------------------------------------------------------------
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
 

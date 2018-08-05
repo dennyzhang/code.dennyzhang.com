@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch, inspiring, redo, misc
+:type:     binarysearch, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Preimage Size of Factorial Zeroes Function

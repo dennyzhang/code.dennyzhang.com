@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, redo
+:type:     interval, calendar, redo
 :END:
 ---------------------------------------------------------------------
 My Calendar II
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
+- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
 ---------------------------------------------------------------------
 Implement a MyCalendarTwo class to store your events. A new event can be added if adding the event will not cause a triple booking.
 

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, inspiring, dlinkedlist
+:type:     oodesign, inspiring
 :END:
 ---------------------------------------------------------------------
 All O`one Data Structure
@@ -28,7 +28,6 @@ Credits To: [[https://leetcode.com/problems/all-oone-data-structure/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/all-oone-data-structure
 ## Basic Ideas:

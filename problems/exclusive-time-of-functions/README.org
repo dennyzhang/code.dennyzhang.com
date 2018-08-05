@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     redo
 :END:
 ---------------------------------------------------------------------
 Exclusive Time of Functions
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/stack][#stack]]
 ---------------------------------------------------------------------
 Given the running logs of n functions that are executed in a nonpreemptive single threaded CPU, find the exclusive time of these functions.
 
