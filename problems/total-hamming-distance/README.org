@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bitmanipulation
+:type:     bitmanipulation, mergechange
 :END:
 ---------------------------------------------------------------------
 Total Hamming Distance
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/tag/mergechange][#mergechange]]
 ---------------------------------------------------------------------
 The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 
@@ -32,9 +35,23 @@ Credits To: [[https://leetcode.com/problems/total-hamming-distance/description/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/total-hamming-distance
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/total-hamming-distanc
+// Basic Ideas:
+//
+// Complexity: Time O(n*k), Space O(1)
+func totalHammingDistance(nums []int) int {
+    res, n := 0, len(nums)
+    for i:=0; i<32; i++ {
+        v := 0
+        for j, _ := range nums {
+            if nums[j] % 2 == 1 { v++ }
+            nums[j] /= 2
+        }
+        res += v*(n-v)
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML
