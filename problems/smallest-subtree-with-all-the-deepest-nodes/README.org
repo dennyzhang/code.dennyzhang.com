@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, child2parent
+:type:     binarytree, child2parent, redo
 :END:
 ---------------------------------------------------------------------
 Smallest Subtree with all the Deepest Nodes
