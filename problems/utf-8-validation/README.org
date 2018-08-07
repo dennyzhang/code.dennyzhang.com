@@ -1,0 +1,111 @@
+* Leetcode: UTF-8 Validation                                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bitmanipulation, manydetails
+:END:
+---------------------------------------------------------------------
+Leetcode: UTF-8 Validation
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+---------------------------------------------------------------------
+A character in UTF8 can be from 1 to 4 bytes long, subjected to the following rules:
+
+For 1-byte character, the first bit is a 0, followed by its unicode code.
+For n-bytes character, the first n-bits are all one's, the n+1 bit is 0, followed by n-1 bytes with most significant 2 bits being 10.
+This is how the UTF-8 encoding would work:
+#+BEGIN_EXAMPLE
+   Char. number range  |        UTF-8 octet sequence
+      (hexadecimal)    |              (binary)
+   --------------------+---------------------------------------------
+   0000 0000-0000 007F | 0xxxxxxx
+   0000 0080-0000 07FF | 110xxxxx 10xxxxxx
+   0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
+   0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+#+END_EXAMPLE
+
+Given an array of integers representing the data, return whether it is a valid utf-8 encoding.
+
+Note:
+The input is an array of integers. Only the least significant 8 bits of each integer is used to store the data. This means each integer represents only 1 byte of data.
+
+Example 1:
+#+BEGIN_EXAMPLE
+data = [197, 130, 1], which represents the octet sequence: 11000101 10000010 00000001.
+
+Return true.
+It is a valid utf-8 encoding for a 2-bytes character followed by a 1-byte character.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+data = [235, 140, 4], which represented the octet sequence: 11101011 10001100 00000100.
+
+Return false.
+The first 3 bits are all one's and the 4th bit is 0 means it is a 3-bytes character.
+The next byte is a continuation byte which starts with 10 and that's correct.
+But the second continuation byte does not start with 10, so it is invalid.
+#+END_EXAMPLE
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/utf-8-validation][challenges-leetcode-interesting]]
+
+Credits To: [[https://leetcode.com/problems/utf-8-validation/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/utf-8-validation
+// Basic Ideas:
+// 0xx -> A; 10x -> B; 110x -> C, 1110 -> D, 11110 -> E
+// EBBB, DBB, CB, A
+//
+// Complexity: Time O(n), Space O(n)
+func validUtf8(data []int) bool {
+    count := 0
+    for _, num := range data {
+        // 1111 1XXX
+        if num & 248 == 248 { return false }
+        // 0XXX XXXX
+        if num & 128 == 0 { 
+            if count != 0 { return false }
+            continue 
+        }
+
+        expected := 0
+        // 1111 0XXX
+        if num & 240 == 240 { 
+            expected = 3 
+        } else {
+            // 1110 XXXX
+            if num & 224 == 224 {
+                expected = 2
+            } else {
+                // 110X XXXX
+                if num & 192 == 192 {
+                    expected = 1
+                }
+            }
+        }
+
+        if expected == 0 {
+            if count <= 0 { return false }
+            count--
+        } else {
+            if count != 0 { return false }
+            count = expected
+        }
+    }
+    return count == 0
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
