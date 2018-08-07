@@ -1,0 +1,55 @@
+* Review: TwoPointers Problems                                  :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:  twopointer
+:END:
+---------------------------------------------------------------------
+Two pointers problems
+---------------------------------------------------------------------
+[[color:#c7254e][Key Points:]]
+- Time complexity evaluation: pointers back and forth? [[https://code.dennyzhang.com/minimum-size-subarray-sum][Minimum Size Subarray Sum]]
+- One loop or two loop?
+- "left<right" or "left<=right"? [[https://code.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/strobogrammatic-number
+maps = [('0', '0'), ('1', '1'), ('8', '8'), ('6', '9'), ('9', '6')]
+left, right = 0, len(num)-1
+while left<=right:
+    if (num[left], num[right]) not in maps: return False
+    left, right = left+1, right-1
+return True
+#+END_SRC
+- Use range to change pointer, instead of manual ways. [[https://code.dennyzhang.com/minimum-window-substring][Minimum Window Substring]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/minimum-window-substring
+left, right = 0, 0
+for right in range(0, len1):
+    m1[s[right]] += 1
+    if self.isTooSmall(m1, m2): continue
+    # find a match, then check whether window too big
+    while m1[s[left]] > m2[s[left]]:
+        m1[s[left]] -= 1
+        left += 1
+    # find a candidate
+    if min_len > right-left+1:
+        min_len, res = right-left+1, s[left:right+1]
+return res
+#+END_SRC
+
+[[color:#c7254e][Sliding window:]]
+- Whether left and right are included?
+
+---------------------------------------------------------------------
+See all twopointer problems: [[https://code.dennyzhang.com/tag/twopointer/][#twopointer]]
+[display-posts tag="twopointer" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

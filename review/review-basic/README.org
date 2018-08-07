@@ -1,0 +1,40 @@
+* [#A] Basic Things About Code Test                             :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+Basic things you should know, or be familiar with.
+---------------------------------------------------------------------
+[[color:#c7254e][Mindsets]]:
+1. Designing testcases with good quality is a very useful skill. And it demands practice.
+- Examine your code against one typical case manually. You will solve problems faster with less bugs. Don't get fooled by TDD.
+- Assign logic meanings to your key variables. This would help to reduce bugs.
+
+[[color:#c7254e][Algorithms & Skills]]:
+1. [[https://code.dennyzhang.com/tag/twopointer/][#twopointer]]
+- [[https://code.dennyzhang.com/tag/binarysearch/][#binarysearch]]
+- [[https://code.dennyzhang.com/tag/hashmap/][#hashmap]]
+- [[https://code.dennyzhang.com/tag/bfs/][#bfs]]
+- [[https://code.dennyzhang.com/tag/dfs/][#dfs]]
+- [[https://code.dennyzhang.com/tag/recursive/][#recursive]]
+- [[https://code.dennyzhang.com/tag/backtracking/][#backtracking]]
+- [[https://code.dennyzhang.com/tag/slidingwindow/][#slidingwindow]]
+
+---------------------------------------------------------------------
+See all basic problems:
+[display-posts category="basic" posts_per_page="100" orderby="title"]
+
+[[color:#c7254e][More Resources]]:
+- [[url-external:https://www.cs.usfca.edu/~galles/visualization/Algorithms.html][Data Structure Visualizations]]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

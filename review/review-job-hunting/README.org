@@ -1,0 +1,105 @@
+* [#A] 4 Surprises Of Job Hunting In Silicon Valley             :BLOG:Life:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+I have over 10 years direct working experience before the job hunting. And I'm comfortable to call myself an IT professional.
+
+But it took me more than *4 months* to land a nice offer.
+
+[[color:#c7254e][Why so long? And we can learn from it?]]
+---------------------------------------------------------------------
+To narrow down the discussion, here are some solid facts:
+1. Apply engineering positions of cloud, infra or DevOps.
+- The economy is normal. Neither too good or too bad.
+- Only target with big corps or pre-IPO startups.
+
+We are moving from Texas to Bay Area. (Yeah, I know it's super expensive there). And I'm relatively new to their hiring process and those IT companies.
+
+The world talents are there. So I knew the hiring bar would be high! But I still experience below surprises during the job hunting.
+
+[[color:#c7254e][Surprise1: Big Corps Tend To Ask Code Problems]]
+
+There usually be one or two rounds of code tests. Especially when you interview with Facebook, LinkedIn, Amazon, Google, etc.
+
+*Agree*: If you're smart enough, you should be able to solve our code puzzles. And write clean code quickly.
+
+*Disagree*: Small companies may value more about velocity. Thus hands-on experience win over clean code in most cases.
+
+For those who do well in those tests, it's simply because they have invested a huge amount of time for preparation. Personally I have spent 4 months with the code tests preparation. About 3-4 hours every day.
+
+*Way Out: Crack One Or Two Code Puzzles Per Week*. Stop arguing. It is what it is. It's more like a game. Play more and do better.
+
+Related reading: 
+- [[https://code.dennyzhang.com/contact][Why I maintain this blog]]
+- [[https://code.dennyzhang.com/code-interview-challenges][Challenges In Code Test Interviews]]
+---------------------------------------------------------------------
+[[color:#c7254e][Surprise2: Ask Things Deep]]
+
+#+BEGIN_EXAMPLE
+You may have experience with Jenkins. Now describe the HA model of your Jenkins agent and Jenkins master.
+
+You may use elasticsearch quite a lot. Now explain the shard rebalancing logic in details.
+#+END_EXAMPLE
+
+*Agree*: since our project is very important and very challenging, we need someone who can do things in a perfect way. Far better than others.
+
+*Disagree*: we may not always run into this kind of issues quite often. Mostly the devil hides in the details. I don't have to know all the details. We can google it, or they are just not so important.
+
+*Way Out:*
+- Keep Your Technical Curiosity
+- Deep Dive Into Your Daily Work
+
+I may use etcd or elasticsearch quite a lot. However I rarely take a deep dive into its architecture design or implementation. And what trade-off they have made. Maybe now is the time.
+
+Keep asking yourself how people design this feature, how people solve that problem. The more you think, the better you understand. YouTube tech talk is your friend.
+
+Find the beauty of new approaches solving old problems in a better way.
+---------------------------------------------------------------------
+[[color:#c7254e][Surprise3: Unfamiliar System Design Questions]]
+
+You may bump into specific design puzzles. Usually they are quite typical scenarios in distributed system.
+
+But just unfamiliar to you. Either you rarely run into them in your daily job, or you have made some trade-off or workarounds. And they simplify the requirements a lot.
+
+However the interviewers may be very deep with some of them, or the job demands that.
+
+Related Reading: [[https://code.dennyzhang.com/design-concept][Concepts For System Design]]
+---------------------------------------------------------------------
+[[color:#c7254e][Surprise4: Care Less About Your Personal Achievements]]
+
+You may be an active blogger, or maintain a good open source project, or has some extraordinary hobbies. This will give you some advantages.
+
+However many interviewers may not weigh those factors that much.
+
+Either because he/she may not have similar experience in those fields. Or your strengths in those fields may not be that important with the position you're applying.
+
+Remember, you get paid only for the value you have created. *You're not paid because you're a tech nerd.* Sometimes this could even be a bad thing to hiring managers.
+
+*Way Out:*
+- You need major or extraordinary achievements. Let's say you maintain a world-famous opensource project. You will definitely rock.
+#+BEGIN_EXAMPLE
+General hiring is killing us, as IT professionals.
+
+You know certain things better than others. It's not good for you to be treated as replaceable resources.
+
+How you can convince people about that? Extraordinary achievements!
+
+If you can start your own business from your skills, it's better.
+#+END_EXAMPLE
+- Stop talking about yourself. Present how your strength can benefit the specific position. And impress the interviewers with how depth your knowledge is, and how broad your knowledge is.
+- If you lack of professional converstaions with good quality, you will grow slowly
+---------------------------------------------------------------------
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+** misc                                                            :noexport:
+- I have 22K linkedin connections, but LinkedIn reject me when I apply for senior system engineer role.

@@ -1,0 +1,55 @@
+* Incompatible Changes From Python2 to Python3                  :BLOG:Life:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: python
+:END:
+---------------------------------------------------------------------
+Python3 is there. We will need to switch from Python2 to Python3 sooner or later.
+
+Here are some repetitive mistakes I have made (or keep making), when I do the switch.
+
+Trying to combine a full list from my hands-on experience. Please leave me comments for your input!
+---------------------------------------------------------------------
+Similar Posts:
+- [[https://code.dennyzhang.com/review-mistakes][Review: My Common Python Coding Mistakes]]
+- [[https://code.dennyzhang.com/tag/python][Tag: #python]]
+---------------------------------------------------------------------
+
+- 1. More strict rule when print for Python3
+#+BEGIN_SRC python
+
+print 3/2 # OK in Python2
+
+print 3/2 # error in Pythone3
+# SyntaxError: Missing parentheses in call to 'print'
+#+END_SRC
+
+- 2. xrange doesn't work in Python3 now.
+#+BEGIN_SRC python
+# In python2, Below works.
+for i in xrange(3):
+  print(i)
+# But in python3, we get below exception.
+# NameError: name 'xrange' is not defined
+#+END_SRC
+
+- 3. In python3, you might get float when you're expecting integer
+#+BEGIN_SRC python
+num=3
+print(num/2) # In python2, it's 1
+
+print(num/2) # In python3, it's 1.5
+#+END_SRC
+
+See more:
+- GitHub: [[url-external:https://github.com/dennyzhang/cheatsheet-python-A4][cheatsheet-python-A4]]
+- [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

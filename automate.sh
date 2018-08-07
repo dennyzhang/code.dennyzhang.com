@@ -10,6 +10,22 @@ function my_test() {
    done
 }
 
+function refresh_wordpress() {
+    echo "Use emacs to update README.ord"
+    for d in "problems" "series" "review"; do
+    # for d in "series" "review"; do
+        cd "$d"
+        for f in $(ls -1t */README.org); do
+            echo "Update $f"
+            dirname=$(basename $(dirname $f))
+            cd $dirname
+            /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_10 --batch -l ../../emacs-update.el
+            cd ..
+        done
+        cd ..
+    done
+}
+
 function refresh_link() {
     echo "refresh link"
     cd problems
@@ -41,6 +57,9 @@ cd .
 
 action=${1?}
 case "$action" in 
+    refresh_wordpress)
+        refresh_wordpress
+        ;;
     refresh_link)
         refresh_link
         ;;

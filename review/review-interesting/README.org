@@ -1,0 +1,148 @@
+* [#A] Basic: Interesting Skills For Code Test                  :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+There are some tricks which are not intuitive. But quite useful.
+---------------------------------------------------------------------
+[[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]]: Padding items with place holders, thus we can simplify the corner cases.
+
+[display-posts tag="padplaceholder" posts_per_page="100" orderby="title"]
+---------------------------------------------------------------------
+[[https://code.dennyzhang.com/tag/limitedrange][#limitedrange]]: The dataset of the problem may be big, but data range is limited
+
+[display-posts tag="limitedrange" posts_per_page="100" orderby="title"]
+---------------------------------------------------------------------
+- Move in four directions for a 2D matrix. [[https://code.dennyzhang.com/sliding-puzzle][Sliding Puzzle]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/sliding-puzzle
+for (ik, jk) in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
+    i2, j2 = i0+ik, j0+jk
+    if i2<0 or i2 >= 2 or j2<0 or j2>=3: continue
+    matrix[i0][j0], matrix[i2][j2] = matrix[i2][j2], matrix[i0][j0]
+    newState = self.toString(matrix)
+    if newState not in visited:
+        queue.append(newState)
+#+END_SRC
+---------------------------------------------------------------------
+- Use recursive to simplify the code. [[https://code.dennyzhang.com/one-edit-distance][One Edit Distance]]
+#+BEGIN_SRC python
+# Use recursive to simplify the logic, when len(s) < len(t)
+if len_s<len_t: return self.isOneEditDistance(t, s)
+#+END_SRC
+---------------------------------------------------------------------
+- Scan and process, to improve space complexity. [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/shortest-word-distance
+p1, p2, res = -1, -1, len(words)
+for i in range(len(words)):
+    if words[i] in [word1, word2]:
+        if words[i] == word1:
+            p1 = i
+        else:
+            p2 = i
+        if p1 != -1 and p2 != -1:
+            res = min(res, abs(p1-p2))
+return res
+#+END_SRC
+---------------------------------------------------------------------
+- Only compare with the smaller values, instead of both. [[https://code.dennyzhang.com/longest-consecutive-sequence][Longest Consecutive Sequence]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/longest-consecutive-sequence
+max_count = 0
+for num in set(nums):
+    # only search from the biggest value of current group
+    if num + 1 not in nums:
+        y = num - 1
+        while y in nums:
+            y = y -1
+        max_count = max(max_count, num-y)
+return max_count
+#+END_SRC
+---------------------------------------------------------------------
+- Intuitive solution might use extra/unnecessary spaces: [[https://code.dennyzhang.com/design-phone-directory][Design Phone Directory]]
+
+- Intuitive solution do unnecessary scan: [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
+
+- Differentiate two cases: [[https://code.dennyzhang.com/set-matrix-zeroes][Set Matrix Zeroes]], [[https://code.dennyzhang.com/01-matrix][01 Matrix]]
+
+---------------------------------------------------------------------
+- Unnecessary precheck: [[https://code.dennyzhang.com/nested-list-weight-sum][Nested List Weight Sum]]
+From:
+
+#+BEGIN_SRC python
+    def myDepthSum(self, nestedList, level):
+        """
+        :type nestedList: List[NestedInteger]
+        :rtype: int
+        """
+        if len(nestedList) == 0: return 0
+        res = 0
+        for item in nestedList:
+            if item.isInteger():
+                res += item.getInteger()*level
+            else:
+                res += self.myDepthSum(item.getList(), level+1)
+        return res
+#+END_SRC
+
+To:
+#+BEGIN_SRC python
+    def myDepthSum(self, nestedList, level):
+        """
+        :type nestedList: List[NestedInteger]
+        :rtype: int
+        """
+        res = 0
+        for item in nestedList:
+            if item.isInteger():
+                res += item.getInteger()*level
+            else:
+                res += self.myDepthSum(item.getList(), level+1)
+        return res
+#+END_SRC
+---------------------------------------------------------------------
+- To keep the top 10 biggest element, we need to use minheap. [[https://code.dennyzhang.com/design-twitter][Design Twitter]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/design-twitter
+# min heap
+q = []
+heapq.heapify(q)
+for (id, tweetId) in self.tweet_dict[userId]:
+    heapq.heappush(q, (id, tweetId))
+    if len(q) > 10: heapq.heappop(q)
+#+END_SRC
+---------------------------------------------------------------------
+[[color:#c7254e][Data Structures]]:
+1. [[https://code.dennyzhang.com/tag/trie][#trie]], [[https://code.dennyzhang.com/tag/heap][#heap]]
+- [[https://code.dennyzhang.com/tag/monotonestack][#monotonestack]]
+---------------------------------------------------------------------
+[[color:#c7254e][Algorithms]]:
+1. [[https://code.dennyzhang.com/tag/countsort][#countsort]]
+- [[https://code.dennyzhang.com/tag/bucketsort][#bucketsort]]
+- [[https://code.dennyzhang.com/tag/radixsort][#radixsort]]:  see [[url-external:https://www.cs.usfca.edu/~galles/visualization/RadixSort.html][here]].
+- [[https://code.dennyzhang.com/tag/moorevoting][#moorevoting]]
+- [[https://code.dennyzhang.com/tag/twocomplement][#twocomplement]]: encoding for negative numbers
+- [[https://code.dennyzhang.com/tag/floydcycle][#floydcycle]]: detect a loop with a fast and slow pointer.
+- [[https://code.dennyzhang.com/tag/fisheryatesshuffle][#fisheryatesshuffle]]: generate a random permutation of a finite sequence.
+- [[https://code.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]: randomly choose a sample of k items from a very huge dataset. And we don't know the size. See [[url-external:https://en.wikipedia.org/wiki/Reservoir_sampling][wikipedia]].
+- [[https://code.dennyzhang.com/tag/discretetimesignal][#discretetimesignal]]: See [[url-external:https://en.wikipedia.org/wiki/Discrete-time_signal][wikipedia]].
+- [[https://code.dennyzhang.com/tag/backtracking][#backtracking]]
+- [[https://code.dennyzhang.com/tag/bfs][#bfs]]
+- [[https://code.dennyzhang.com/tag/dfs][#dfs]]
+- [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+Misc:
+- One pass or two pass? [[https://code.dennyzhang.com/palindrome-permutation][Palindrome Permutation]]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

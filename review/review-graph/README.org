@@ -1,0 +1,72 @@
+* Review: Graph Problems                                        :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: graph
+:END:
+---------------------------------------------------------------------
+Graph related questions mainly focus on depth first search and breath first search.
+---------------------------------------------------------------------
+Common graph algorithm problems:
+1. Count regions: [[https://code.dennyzhang.com/number-of-islands][Number of Islands]]
+- Get the size of the largest region: [[https://code.dennyzhang.com/max-area-of-island][Max Area of Island]]
+- Update a specific region: [[https://code.dennyzhang.com/flood-fill][Flood Fill]]
+- Update regions for a given rule: [[https://code.dennyzhang.com/surrounded-regions][Surrounded Regions]]
+- Mark levels: [[https://code.dennyzhang.com/01-matrix][01 Matrix]]
+
+Typical Problems:
+- Find the minimum steps from point1 to point2: [[https://code.dennyzhang.com/word-ladder][Word Ladder]], [[https://code.dennyzhang.com/sliding-puzzle][Sliding Puzzle]]
+
+- Find all minimum paths from point1 to point2: [[https://code.dennyzhang.com/word-ladder-ii][Word Ladder II]]
+
+#+BEGIN_EXAMPLE
+1. How to get the initial set to examine?
+2. How to move to next? What's the time complexity?
+3. What if we want all possible answers, instead of the min step count?
+#+END_EXAMPLE
+
+Questions:
+
+1. Why so many algorithms to find the shortest path? Shouldn't it be some optimal one(s)?
+
+BFS:
+- When to update visited_set? When add or when pop? [[https://code.dennyzhang.com/employee-importance][Employee Importance]]
+
+BFS: 
+1. visit all neighbors before visiting neighbors of your neighbors
+- Keep a queue of nodes to visit
+- The performamce may be different if we search from starting point or target point. [[https://code.dennyzhang.com/perfect-squares][Perfect Squares]]
+
+Common graph algorithm problems:
+1. Find length of shortest path from node s to all other nodes
+- Search all nodes for a node containing a given value
+- Find shortest path from node s to all other nodes
+
+DFS:
+1. visit all neighbors of a neighbor before visiting your other neighbors
+- It doesn't use queue, but mark nodes as to their status. White(unchecked), Gray(Seen, but not finished), Black(finished)
+
+Key points:
+- How to evaluable the time complexity. Normally it's O(m*n). But how we can convince people with solid argument?
+
+[[color:#c7254e][For DFS, if the path is too deep, we might run into stack overflow]].
+
+The most impressive problems to me:
+- [[https://code.dennyzhang.com/perfect-squares][Perfect Squares]]
+- [[https://code.dennyzhang.com/island-perimeter][Island Perimeter]]
+- [[https://code.dennyzhang.com/surrounded-regions][Surrounded Regions]]
+- [[https://code.dennyzhang.com/swim-in-rising-water][Swim in Rising Water]]
+
+---------------------------------------------------------------------
+See all grap problems: [[https://code.dennyzhang.com/tag/graph/][#grap]]
+[display-posts tag="grap" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

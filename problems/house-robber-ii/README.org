@@ -21,7 +21,6 @@ Credits To: [[https://leetcode.com/problems/house-robber-ii/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/house-robber-ii
 // Basic Ideas: dynamic programming

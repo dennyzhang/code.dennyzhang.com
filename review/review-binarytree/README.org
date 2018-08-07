@@ -1,0 +1,52 @@
+* Review: Binary Tree Problems                                  :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: binarytree
+:END:
+---------------------------------------------------------------------
+Many binary tree problems are about how to traversal it. In both recursive or non-recursive ways.
+
+Binary Tree Traversal: Preorder, Inorder, Postorder, Level Order, Vertical Order, Right-Middle-Left, etc.
+
+Only get the rightmost node at each level. Only get the leftmost node at each level, etc.
+
+We might also see interesting requirements about updating binarytree. e,g, [[https://code.dennyzhang.com/populating-next-right-pointers-in-each-node-ii/][add a pointer to next]], [[https://code.dennyzhang.com/recover-binary-search-tree/][correct two nodes]], [[https://code.dennyzhang.com/delete-node-in-a-bst/][delete a node]], etc.
+
+---------------------------------------------------------------------
+Personally I like level-order (or BFS) very much. 
+(See all bfs problems: [[https://code.dennyzhang.com/tag/bfs][#bfs]])
+
+Q: How to time complexity for tree problems?
+
+Q: Do you know the difference between level-order vs BFS(Breadth-first search)?
+
+#+BEGIN_EXAMPLE
+level-order traversal is the same as breadth-first traversal. 
+There are many reasons to traverse something, it doesn't just have 
+to be to search, as breadth-first search seems to imply, although 
+many (or most) don't make that distinction and use the terms interchangeably.
+
+From link: https://stackoverflow.com/questions/23576746/what-is-the-difference-between-breadth-first-searching-and-level-order-traversal
+#+END_EXAMPLE
+
+Examine previous/next node for in-order traversal. [[https://code.dennyzhang.com/closest-binary-search-tree-value][Closest Binary Search Tree Value]].
+
+The most impressive problems to me:
+- [[https://code.dennyzhang.com/count-complete-tree-nodes/][Count Complete Tree Nodes]]
+- [[https://code.dennyzhang.com/find-leaves-of-binary-tree][Find Leaves of Binary Tree]]
+- [[https://code.dennyzhang.com/binary-tree-vertical-order-traversal][Binary Tree Vertical Order Traversal]]
+---------------------------------------------------------------------
+See all binarytree problems: [[https://code.dennyzhang.com/tag/binarytree/][#binarytree]].
+[display-posts tag="binarytree" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+

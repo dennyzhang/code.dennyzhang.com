@@ -1,0 +1,39 @@
+* Review: Linked List Problems                                  :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: linkedlist
+:END:
+---------------------------------------------------------------------
+Linked List demands skills of managing pointers very well.
+
+Most problems are not that hard for you to solve. But to get bug-free, you need to think it through.
+---------------------------------------------------------------------
+[[color:#c7254e][Key Points]]:
+- Add a dummyNode, if head node might be changed
+- How to process current node?
+#+BEGIN_EXAMPLE
+Make sure the pointers are in-order
+#+END_EXAMPLE
+- How to move to next node? 
+#+BEGIN_EXAMPLE
+If you have changed the original node, the next pointer might not be what you want
+#+END_EXAMPLE
+- Whether we need to maintain the previous node?
+
+The most impressive problems to me:
+- [[https://code.dennyzhang.com/sort-list/][Sort List]]
+
+---------------------------------------------------------------------
+See all linkedlist problems: [[https://code.dennyzhang.com/tag/linkedlist/][#linkedlist]]
+[display-posts tag="linkedlist" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

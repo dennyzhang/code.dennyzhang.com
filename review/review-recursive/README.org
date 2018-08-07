@@ -1,0 +1,35 @@
+* Review: Recursive Problems                                    :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: recursive
+:END:
+---------------------------------------------------------------------
+Solving problems in a recursive way will help us to think in an easier way.
+---------------------------------------------------------------------
+
+[[color:#c7254e][Key Questions:]]
+- What are your base cases?
+- How you get f(n) from f(n-1)?
+- How to evaluate the complexity: time and space?
+- For nested problems, we can use recursive to simplify the logic. [[https://code.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
+
+The most impressive problems to me:
+- [[https://code.dennyzhang.com/count-complete-tree-nodes][Count Complete Tree Nodes]]
+- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
+- [[https://code.dennyzhang.com/super-pow][Super Pow]]
+- [[https://code.dennyzhang.com/reaching-points][Reaching Points]]
+
+---------------------------------------------------------------------
+See all recursive problems: [[https://code.dennyzhang.com/tag/recursive/][#recursive]]
+[display-posts tag="recursive" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

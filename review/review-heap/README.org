@@ -1,0 +1,53 @@
+* Review: Heap Problems                                         :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: heap
+:END:
+---------------------------------------------------------------------
+heap is a specialized tree-based data structure. Heap is useful to implement a priority queue.
+
+Key operations: find-min, get-min, insert, etc.
+---------------------------------------------------------------------
+Binary heaps:
+1. It may be represented by using an array, which is space-efficient.
+- The children of the node at position n would be at positions 2n + 1 and 2n + 2 in a zero-based array.
+- From child to parent: n -> (n-1)/2
+
+Complexity:
+1. Insert an element to binary heap. Time O(log(n))
+- Remove the top from binary heap. Time O(log(n))
+- *Remove an item by value*. Time O(n)
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/sliding-window-median
+def heapRemove(self, l, item):
+    k = -1
+    for i in range(len(l)):
+        if l[i] == item:
+            k = i
+            break
+    if k != -1:
+        l[k] = l[0]
+        heapq.heappop(l)
+        heapq.heapify(l)
+        return True
+    return False
+#+END_SRC
+---------------------------------------------------------------------
+See all heap problems: [[https://code.dennyzhang.com/tag/heap/][#heap]]
+[display-posts tag="heap" posts_per_page="100" orderby="title"]
+
+Useful Link: 
+- [[url-external:https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/][Heap queue (or heapq) in Python]]
+- [[url-external:https://www.pythoncentral.io/use-queue-beginners-guide/][How to use Queue: A beginner's guide]]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

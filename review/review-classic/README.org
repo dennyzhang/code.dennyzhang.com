@@ -1,0 +1,66 @@
+* [#A] Review: Classic Code Problems                            :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog, classic
+:END:
+---------------------------------------------------------------------
+Deep understanding about classic problems. It would be tremendously helpful for your code test.
+---------------------------------------------------------------------
+[[color:#c7254e][Classic Graph Problems]]:
+- 2 color graph: [[https://code.dennyzhang.com/is-graph-bipartite][Is Graph Bipartite]]
+- Explore 0-1 island: [[https://code.dennyzhang.com/island-perimeter][Island Perimeter]]
+- Find cycle in a directed graph: [[https://code.dennyzhang.com/course-schedule][Course Schedule]]
+---------------------------------------------------------------------
+[[color:#c7254e][Classic String Problems]]:
+- Deal with group inside a string: [[https://code.dennyzhang.com/reverse-words-in-a-string-ii][Reverse Words in a String II]]
+- Split Strings with Multiple Delimiters: [[https://code.dennyzhang.com/different-ways-to-add-parentheses][Different Ways to Add Parentheses]]
+- Find integer from string: [[https://code.dennyzhang.com/design-compressed-string-iterator][Design Compressed String Iterator]]
+---------------------------------------------------------------------
+[[color:#c7254e][Classic Tree Problems]]:
+- Find path from root to the given node: [[https://code.dennyzhang.com/inorder-successor-in-bst][Inorder Successor in BST]]
+---------------------------------------------------------------------
+[[color:#c7254e][Classic DP Problems]]:
+- Paint Fence: [[https://code.dennyzhang.com/paint-fence][Paint Fence]]
+- Climb stairs: [[https://code.dennyzhang.com/min-cost-climbing-stairs][Min Cost Climbing Stairs]]
+---------------------------------------------------------------------
+[[color:#c7254e][Classic BinarySearch Problems]]:
+- Binarysearch find the first False: [[https://code.dennyzhang.com/first-bad-version][First Bad Version]]
+- Search in Rotated Sorted Array: [[https://code.dennyzhang.com/search-in-rotated-sorted-array-ii][Search in Rotated Sorted Array II]]
+-  [[https://code.dennyzhang.com/sqrtx][Sqrt(x)]]
+- [[https://code.dennyzhang.com/search-for-a-range][Search for a Range]]
+---------------------------------------------------------------------
+[[color:#c7254e][Classic Monotone Problems]]:
+- Next bigger value: [[https://code.dennyzhang.com/daily-temperatures][Daily Temperatures]]
+---------------------------------------------------------------------
+[[color:#c7254e][Classic Problems]]:
+- Meeting confict: [[https://code.dennyzhang.com/tag/calendarconflict][#calendarconflict]], [[https://code.dennyzhang.com/meeting-rooms][Meeting Rooms]]
+- Longest increasing sequence(LIS): [[https://code.dennyzhang.com/longest-increasing-subsequence][Longest Increasing Subsequence]]
+- Knapsack problems: [[https://code.dennyzhang.com/coin-change][Coin Change]], [[https://code.dennyzhang.com/coin-change-2][Coin Change 2]]
+- Tower hopper problem: [[https://code.dennyzhang.com/jump-game][Jump Game]], [[https://code.dennyzhang.com/jump-game-ii][Jump Game II]]
+- Maximum Subarray: [[https://code.dennyzhang.com/maximum-subarray][Maximum Subarray]]
+- Word Ladder: [[https://code.dennyzhang.com/word-ladder][Word Ladder]]
+- Subsets: [[https://code.dennyzhang.com/subsets][Subsets]]
+- Subset Sum Problem: [[https://code.dennyzhang.com/combination-sum][Combination Sum]], [[https://code.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
+- K-diff Pairs in an Array: [[https://leetcode.com/problems/k-diff-pairs-in-an-array/description/][K-diff Pairs in an Array]]
+- Flattern nested data structure: [[https://code.dennyzhang.com/flatten-2d-vector][Flatten 2D Vector]]
+- Sliding windows with substring comparision: [[https://code.dennyzhang.com/permutation-in-string][Permutation in String]]
+- Detect palindrome: [[https://code.dennyzhang.com/longest-palindromic-substring][Longest Palindromic Substring]]
+- Merge Intervals: [[https://code.dennyzhang.com/merge-intervals][Merge Intervals]]
+- Next bigger value: [[https://code.dennyzhang.com/daily-temperatures][Daily Temperatures]]
+- [[https://code.dennyzhang.com/tag/stack][#stack]]: [[https://code.dennyzhang.com/basic-calculator][Basic Calculator]]
+- [[https://code.dennyzhang.com/tag/recursive][#recursive]]: [[https://code.dennyzhang.com/powx-n][Pow(x, n)]]
+---------------------------------------------------------------------
+See all classic problems: [[https://code.dennyzhang.com/tag/classic/][#classic]].
+
+[display-posts tag="classic" posts_per_page="100" orderby="title"]
+---------------------------------------------------------------------
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

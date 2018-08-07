@@ -1,0 +1,225 @@
+* Review: SQL Problems                                          :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog, sql
+:END:
+---------------------------------------------------------------------
+Review: SQL Problems
+---------------------------------------------------------------------
+[[color:#c7254e][SQL Demands Mindsets Beyond Of Our Intuitive Thinkings]]:
+- [[https://code.dennyzhang.com/consecutive-available-seats][Consecutive Available Seats]]
+- [[https://code.dennyzhang.com/exchange-seats][Exchange Seats]]
+- [[https://code.dennyzhang.com/rank-scores][Rank Scores]]
+---------------------------------------------------------------------
+The most impressive problems to me:
+- [[https://code.dennyzhang.com/find-median-given-frequency-of-numbers][Find Median Given Frequency of Numbers]]
+---------------------------------------------------------------------
+[[color:#c7254e][Common SQL Requirements]]:
+- Use having with group-by: [[https://code.dennyzhang.com/classes-more-than-5-students][Classes More Than 5 Students]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/classes-more-than-5-students
+
+select class from courses
+group by class having count(distinct student)>=5;
+#+END_SRC
+---------------------------------------------------------------------
+- Get maximum of multiple columns: [[https://code.dennyzhang.com/triangle-judgement][Triangle Judgement]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/triangle-judgement
+SELECT CASE WHEN Col1 >= Col2 AND Col1 >= Col3 AND Col1 >= Col4 THEN Col1
+            WHEN Col2 >= Col1 AND Col2 >= Col3 AND Col2 >= Col4 THEN Col2
+            WHEN Col3 >= Col1 AND Col3 >= Col2 AND Col3 >= Col4 THEN Col3
+            WHEN Col4 >= Col1 AND Col4 >= Col2 AND Col4 >= Col3 THEN Col4
+        END As Max
+FROM TableName
+WHERE Col2 = 120
+#+END_SRC
+---------------------------------------------------------------------
+- Use **case**: [[https://code.dennyzhang.com/swap-salary][Swap Salary]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/swap-salary
+update salary
+set sex =
+    case
+    when sex = 'm' then 'f'
+    when sex = 'f' then 'm'
+    end;
+#+END_SRC
+---------------------------------------------------------------------
+- Use *subquery*: [[https://code.dennyzhang.com/investments-in-2016][Investments in 2016]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/investments-in-2016
+select sum(TIV_2016) as TIV_2016
+from insurance
+where concat(LAT, ',', LON)
+    in (select concat(LAT, ',', LON)
+       from insurance
+       group by LAT, LON
+       having count(1) = 1)
+and TIV_2015 in
+    (select TIV_2015
+    from insurance
+    group by TIV_2015
+    having count(1)>1)
+#+END_SRC
+---------------------------------------------------------------------
+- Use **isnull**: [[https://code.dennyzhang.com/tree-node][Tree Node]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/tree-node
+select t1.id, 
+    case
+        when isnull(t1.p_id) then 'Root'
+        when isnull(max(t2.id)) then 'Leaf'
+        else 'Inner'
+    end as Type
+from tree as t1 left join tree as t2
+on t1.id = t2.p_id
+group by t1.id, t1.p_id
+#+END_SRC
+---------------------------------------------------------------------
+- Use *tuple* for *in* Clause: [[https://code.dennyzhang.com/investments-in-2016][Investments in 2016]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/investments-in-2016
+select sum(TIV_2016) as TIV_2016
+from insurance
+where concat(LAT, ',', LON)
+    in (select concat(LAT, ',', LON)
+       from insurance
+       group by LAT, LON
+       having count(1) = 1)
+and TIV_2015 in
+    (select TIV_2015
+    from insurance
+    group by TIV_2015
+    having count(1)>1)
+#+END_SRC
+---------------------------------------------------------------------
+- Use **float** and **round**: [[https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate][Friend Requests I: Overall Acceptance Rate]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate
+select ifnull((round(accepts/requests, 2)), 0.0) as accept_rate
+from
+    (select count(distinct sender_id, send_to_id) as requests from friend_request) as t1,
+    (select count(distinct requester_id, accepter_id) as accepts from request_accepted) as t2
+#+END_SRC
+---------------------------------------------------------------------
+- **union** vs **union all**: [[https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends][Friend Requests II: Who Has the Most Friends]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends
+select t.id, sum(t.num) as num
+from (
+      (select requester_id as id, count(1) as num
+       from request_accepted
+       group by requester_id)
+      union all
+       (select accepter_id as id, count(1) as num
+        from request_accepted
+        group by accepter_id)) as t
+group by t.id
+order by num desc
+limit 1
+#+END_SRC
+---------------------------------------------------------------------
+- 3 Tables join: [[https://code.dennyzhang.com/sales-person][Sales Person]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/sales-person
+select distinct salesperson.name
+    from salesperson, orders, company
+    where company.name = 'RED'
+    and salesperson.sales_id = orders.sales_id
+    and orders.com_id = company.com_id
+#+END_SRC
+---------------------------------------------------------------------
+- If no match show null: [[https://code.dennyzhang.com/second-highest-salary][Second Highest Salary]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/second-highest-salary
+select ifnull((
+       select Salary from Employee
+       group by Salary order by Salary desc limit 1,1), null) as SecondHighestSalary
+#+END_SRC
+---------------------------------------------------------------------
+- nth element in each group: [[https://code.dennyzhang.com/nth-highest-salary][Nth Highest Salary]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/nth-highest-salary
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  DECLARE M INT;
+  DECLARE column_name varchar(100);
+  set M=N-1;
+  set column_name = CONCAT('getNthHighestSalary', N, ')');
+  RETURN (
+     select DISTINCT Salary as column_name
+     from Employee
+     order by Salary desc
+     LIMIT M, 1
+   );
+END
+#+END_SRC
+---------------------------------------------------------------------
+- Select statement add an incremental id: [[https://code.dennyzhang.com/students-report-by-geography][Students Report By Geography]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/students-report-by-geography
+select t1.name as America, t2.name as Asia, t3.name as Europe
+from
+    (select (@cnt1 := @cnt1 + 1) as id, name
+    from student
+    cross join (select @cnt1 := 0) as dummy
+    where continent='America'
+    order by name) as t1 
+    left join
+    (select (@cnt2 := @cnt2 + 1) as id, name
+    from student
+    cross join (select @cnt2 := 0) as dummy
+    where continent='Asia'
+    order by name) as t2
+    on t1.id = t2.id
+    left join
+    (select (@cnt3 := @cnt3 + 1) as id, name
+    from student
+    cross join (select @cnt3 := 0) as dummy
+    where continent='Europe'
+    order by name) as t3
+    on t1.id = t3.id
+#+END_SRC
+---------------------------------------------------------------------
+- 3 virtual tables left join: [[https://code.dennyzhang.com/students-report-by-geography][Students Report By Geography]]
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/students-report-by-geography
+select t1.name as America, t2.name as Asia, t3.name as Europe
+from
+    (select (@cnt1 := @cnt1 + 1) as id, name
+    from student
+    cross join (select @cnt1 := 0) as dummy
+    where continent='America'
+    order by name) as t1 
+    left join
+    (select (@cnt2 := @cnt2 + 1) as id, name
+    from student
+    cross join (select @cnt2 := 0) as dummy
+    where continent='Asia'
+    order by name) as t2
+    on t1.id = t2.id
+    left join
+    (select (@cnt3 := @cnt3 + 1) as id, name
+    from student
+    cross join (select @cnt3 := 0) as dummy
+    where continent='Europe'
+    order by name) as t3
+    on t1.id = t3.id
+#+END_SRC
+---------------------------------------------------------------------
+See all sql problems: [[https://code.dennyzhang.com/tag/sql/][#sql]].
+[display-posts tag="sql" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+** misc                                                            :noexport:
+TODO: Why I can't use full join? https://code.dennyzhang.com/review-sql

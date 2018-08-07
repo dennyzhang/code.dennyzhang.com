@@ -1,0 +1,37 @@
+* Behavior Questions For Coder Interview                          :BLOG:Life:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+About behavior questions
+---------------------------------------------------------------------
+[[color:#c7254e][Common Pitfalls:]]
+
+1. Fake something to make yourself look better.
+- Take credits of others' work.
+
+[[color:#c7254e][Fundamental Questions:]]
+
+1. Why you want to join us? [[color:#c7254e][How you can benefit from us]].
+- What you can provide? [[color:#c7254e][How we can benefit from you]].
+- [[color:#c7254e][Self Intro]]: Introduce your experience and yourself.
+
+[[color:#c7254e][Principles:]]
+
+1. Talk to the point. But also add solid supportings. Recruiter can easily get tired or distracted.
+-  Point our your relevant working experience for current topic. Hands-on experience matters.
+
+Useful links:
+- [[https://www.youtube.com/watch?v=PJKYqLP6MRE&t=3s][YouTube: Intro to Behavioural Interviews]]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

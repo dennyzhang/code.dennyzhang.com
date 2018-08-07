@@ -1,0 +1,29 @@
+* Review: Median Problems                                       :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: getmedian
+:END:
+---------------------------------------------------------------------
+Review: Median Problems
+---------------------------------------------------------------------
+[[color:#c7254e][Key Observations For Median]]:
+- Examine nodes before and after medians, we know: *abs(count(left nodes) - count(right nodes)) <= 1*
+[[https://code.dennyzhang.com/median-employee-salary][Median Employee Salary]]
+
+- For medians, we know: *the occurence of current value >= abs(count(bigger nodes)-count(smaller nodes))*
+[[https://code.dennyzhang.com/find-median-given-frequency-of-numbers][Find Median Given Frequency of Numbers]]
+
+---------------------------------------------------------------------
+See all getmedian problems: [[https://code.dennyzhang.com/tag/getmedian/][#getmedian]]
+[display-posts tag="getmedian" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

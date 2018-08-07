@@ -1,0 +1,62 @@
+* Review: Dynamic Programming Problems                          :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:  dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Dynamic programming problems scare me A LOT. 
+
+Yeah, it could be quite frustrating, if you haven't found the key assertions.
+---------------------------------------------------------------------
+Dynamic Programming is an algorithmic paradigm that solves a given complex problem by breaking it into subproblems and stores the results of subproblems to avoid computing the same results again. 
+
+The main idea behind DP is to save duplicated caculations.
+
+Trade space for time.
+---------------------------------------------------------------------
+[[color:#c7254e][Key Parts In DP Problems]]:
+1. *Key observation* is crucial. Watch careful for how the states transit?
+- Walk through with smaller cases manually. And detect the pattern.
+---------------------------------------------------------------------
+[[color:#c7254e][Different Types Of DP Functions]]:
+- Some DP problems can only use O(1) space
+  [[https://code.dennyzhang.com/computer-maintenance][LintCode: Computer Maintenance]]
+
+- We don't always need the base case
+  [[https://code.dennyzhang.com/bomb-enemy][Bomb Enemy]]
+
+- Interesting dp funcitons
+  [[https://code.dennyzhang.com/domino-and-tromino-tiling][Domino and Tromino Tiling]]
+   dp(i) = dp(i-1)+dp(i-2)+2*(dp(i-3)+dp(i-4)+...+dp(0))
+
+- DP saves intermediate results, not the final ones
+  [[https://code.dennyzhang.com/champagne-tower][Champagne Tower]]
+
+- dp(i) = min(dp(i), dp[i-coin[j]]+1)
+  [[https://code.dennyzhang.com/coin-change][Coin Change]]
+
+- Function: f(i, j): [[https://code.dennyzhang.com/longest-palindromic-subsequence][Longest Palindromic Subsequence]]
+- [[https://code.dennyzhang.com/coin-change-2][Coin Change 2]]
+
+- Save the base case: [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
+- Instead of left-to-right, do it from right-to-left: [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
+---------------------------------------------------------------------
+The most impressive problems to me:
+- [[https://code.dennyzhang.com/min-cost-climbing-stairs][Min Cost Climbing Stairs]]
+- [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
+
+---------------------------------------------------------------------
+See all dynamicprogramming problems: [[https://code.dennyzhang.com/tag/dynamicprogramming/][#dynamicprogramming]]
+[display-posts tag="dynamicprogramming" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+

@@ -1,0 +1,280 @@
+* [#A] Basic: Useful Code Templates For Code Test               :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+Common code templates for typical problems.
+---------------------------------------------------------------------
+Get all codetemplate problems: [[https://code.dennyzhang.com/tag/codetemplate][#codetemplate]].
+
+[[color:#c7254e][Please Leave Me Comments For Suggestions]].
+
+About templates, get familiar with:
+1. code structure
+- variable/functions definitions
+
+[[color:#c7254e][Templates]]:
+- [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
+
+[[https://code.dennyzhang.com/first-bad-version][First Bad Version]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/first-bad-version
+## Basic Ideas: Binary search
+##         Find the first False
+##         F F F F T T
+##         T T
+##      Hint: how to update index, if mid is F?
+# The isBadVersion API is already defined for you.
+# @param version, an integer
+# @return a bool
+# def isBadVersion(version):
+class Solution(object):
+    def firstBadVersion(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        left, right = 1, n
+        while left < right:
+            mid = left + (right-left)/2
+            if isBadVersion(mid):
+                right = mid
+            else:
+                left = mid + 1
+
+        # left == right
+        return left if isBadVersion(left) else None
+#+END_SRC
+
+[[https://code.dennyzhang.com/review-codetemplate][Find Minimum in Rotated Sorted Array]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array
+class Solution:
+    ## Basic Ideas: Binary Search
+    ##   Check current node with the right node of the range
+    ##   If it's smaller, check left half(included). Check the right half(excluded)
+    ##
+    ##   Notice: Here we can't compare it with the left node of the range.
+    ##      Why? (0+1)/2 == 0. We might run into dead loop with left == mid.
+    ##
+    ## Complexity: Time O(log(n)), Space O(1)
+    def findMin(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        length = len(nums)
+        if length == 0: return None
+        # 4 5 6 7 0 1 2
+        left, right = 0, length-1
+        while left<right:
+            mid = left + (int)((right-left)/2)
+            if nums[mid] < nums[right]:
+                # check the left half(included)
+                right = mid
+            else:
+                # check the right half(excluded)
+                left = mid + 1
+        return nums[left]
+#+END_SRC
+[[https://code.dennyzhang.com/search-insert-position][Search Insert Position]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/bfs][#bfs]]: [[https://code.dennyzhang.com/open-the-lock][Open the Lock]]
+#+BEGIN_SRC python
+## Blog link: http://code.dennyzhang.com/open-the-lock
+dead_set, seen, queue = set([]), set([]), collections.deque([])
+for dead in deadends: dead_set.add(dead)
+if '0000' in dead_set: return -1
+if '0000' == target: return 0
+
+level = 0
+queue.append('0000')
+seen.add('0000')
+while len(queue) != 0:
+    level += 1
+    for k in xrange(len(queue)):
+        node = queue.popleft()
+        # find next neighbors
+        for i in xrange(4):
+            for offset in [1, -1]:
+                ascii = (ord(node[i]) - ord('0') + offset + 10) % 10 + ord('0')
+                ch = chr(ascii)
+                neighbor = node[0:i]+ch+node[i+1:]
+                if (neighbor in seen) or (neighbor in dead_set):
+                    continue
+                # If found, stop immediately
+                if neighbor == target:
+                    # print node, neighbor
+                    return level
+                queue.append(neighbor)
+                seen.add(neighbor)
+return -1
+#+END_SRC
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/dfs][#dfs]]: [[https://code.dennyzhang.com/number-of-islands][Number of Islands]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/number-of-islands
+        res = 0
+        for i in xrange(self.row_count):
+            for j in xrange(self.col_count):
+                if grid[i][j] == '1':
+                    res += 1
+                    self.DFSMark(grid, i, j)
+        return res
+
+    def DFSMark(self, grid, i, j):
+        if i < 0 or i >= self.row_count \
+            or j < 0 or j >= self.col_count:
+            return
+
+        # stop digging, if not '1'
+        if grid[i][j] != '1': return
+
+        grid[i][j] = 'X'
+        # mark four positions in a recursive way
+        self.DFSMark(grid, i-1, j)
+        self.DFSMark(grid, i+1, j)
+        self.DFSMark(grid, i, j-1)
+        self.DFSMark(grid, i, j+1)
+#+END_SRC
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/trie][#trie]]: [[https://code.dennyzhang.com/longest-word-in-dictionary][Longest Word in Dictionary]]
+#+BEGIN_SRC python
+## Blog link: http://code.dennyzhang.com/longest-word-in-dictionary
+## Basic Ideas: trie tree
+## Complexity: Time O(n), Space O(n). n the count of characters involved
+class TrieNode(object):
+    def __init__(self):
+        self.children = collections.defaultdict(TrieNode)
+        self.is_word = False
+
+class Solution(object):
+    def longestWord(self, words):
+        """
+        :type words: List[str]
+        :rtype: str
+        """
+        # Build TrieNode
+        root = TrieNode()
+        # check each word, and insert if missing
+        for word in words:
+            # always check from the top
+            node = root
+            for ch in word:
+                node = node.children[ch]
+            node.is_word = True
+
+        return self.foundLongestWord(root)
+
+    def foundLongestWord(self, node):
+        """
+        :rtype: (length, str)
+        """
+        # BFS:
+        # How to check:
+        #    Candidates should be: 
+        #             1. is_word as true for all nodes in the path. 
+        #             2. Has no children
+        # How to move to next:
+        #   Only check nodes with is_word as True
+        #   When node has no children, we 
+        max_length, max_str = 0, ''
+        queue = []
+        # initialize queue
+        # Since we have sorted the keys, we will get smallest lexicographical match
+        for ch in sorted(node.children):
+            child = node.children[ch]
+            if child.is_word:
+                queue.append((child, ch, 1))
+
+        while len(queue) != 0:
+            (node, str, length) = queue[0]
+            del queue[0]
+            if length > max_length:
+                max_length, max_str = length, str
+            for ch in sorted(node.children):
+                child = node.children[ch]
+                if child.is_word:
+                    queue.append((child, '%s%s' % (str, ch), length+1))
+        return max_str
+#+END_SRC
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]: [[https://code.dennyzhang.com/merge-two-sorted-list][Merge Two Sorted Lists]],
+
+Revert a linked list: [[https://code.dennyzhang.com/reverse-linked-list-ii][Reverse Linked List II]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]: [[https://code.dennyzhang.com/binary-tree-postorder-traversal][Postorder Traversal]], [[https://code.dennyzhang.com/binary-tree-level-order-traversal][Level Order Traversal]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/stack][#stack]]: [[https://code.dennyzhang.com/basic-calculator-iii][Basic Calculator III]], [[https://code.dennyzhang.com/decode-string][Decode String]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/backtracking][#backtracking]]: [[https://code.dennyzhang.com/word-search][Word Search]], [[https://code.dennyzhang.com/sudoku-solver][Sudoku Solver]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/recursive][#recursive]]: [[https://code.dennyzhang.com/sort-list][Sort List]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/combination][#combination]]: [[https://code.dennyzhang.com/letter-combinations-of-a-phone-number][Letter Combinations of a Phone Number]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]: [[https://code.dennyzhang.com/contains-duplicate-ii][Contains Duplicate II]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraverse]]: [[https://code.dennyzhang.com/diagonal-traverse][Diagonal Traverse]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]: [[https://code.dennyzhang.com/unique-binary-search-trees][Unique Binary Search Trees]]
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]: [[https://code.dennyzhang.com/number-of-1-bits][Number of 1 Bits]]
+#+BEGIN_SRC python
+## Blog link: http://code.dennyzhang.com/number-of-1-bits
+res = 0
+while n != 0:
+    n = n & (n-1)
+    res += 1
+return res
+#+END_SRC
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/heap][#heap]]: [[https://code.dennyzhang.com/kth-largest-element-in-an-array][Kth Largest Element in an Array]]
+#+BEGIN_SRC python
+## Blog link: http://code.dennyzhang.com/kth-largest-element-in-an-array
+q = []
+for num in nums: heapq.heappush(q, num)
+return heapq.nlargest(k, q)[-1]
+#+END_SRC
+---------------------------------------------------------------------
+- [[https://code.dennyzhang.com/tag/monotone][#monotone]]: [[https://code.dennyzhang.com/daily-temperatures][Daily Temperatures]]:
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/daily-temperatures
+## Basic Ideas: Monotonous stack can help us find first largest element in O(n) time complexity.
+##
+##              Descending stack: find the next bigger nubmer for each element
+##
+##              For any given number, if we haven't met the bigger number. We push it to the stack
+##              If we pop out one element, we do find a bigger number than this element.
+##
+## Complexity: Time O(n), Space O(n)
+class Solution(object):
+    def dailyTemperatures(self, temperatures):
+        """
+        :type temperatures: List[int]
+        :rtype: List[int]
+        """
+        length = len(temperatures)
+        res = [0]*length
+        stack = []
+        for i in xrange(length):
+            # If current number is bigger, we solved the previous puzzles
+            while len(stack) != 0 and temperatures[i] > temperatures[stack[-1]]:
+                k = stack.pop()
+                # t[i] is the next bigger number than t[k]
+                res[k] = i-k
+            stack.append(i)
+        return res
+#+END_SRC
+---------------------------------------------------------------------
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,0 +1,33 @@
+* Review: gcd Problems                                          :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: gcd
+:END:
+---------------------------------------------------------------------
+gcd problems
+---------------------------------------------------------------------
+See all gcd problems: [[https://code.dennyzhang.com/tag/gcd/][#gcd]]
+[display-posts tag="gcd" posts_per_page="100" orderby="title"]
+
+#+BEGIN_EXAMPLE
+Bezout's identity (also called Bezout's lemma) is a theorem in the elementary theory of numbers:
+
+let a and b be nonzero integers and let d be their greatest common divisor. Then there exist integers x
+and y such that ax+by=d
+
+In addition, the greatest common divisor d is the smallest positive integer that can be written as ax + by
+
+every integer of the form ax + by is a multiple of the greatest common divisor d.
+https://leetcode.com/problems/water-and-jug-problem/discuss/83715/Math-solution-Java-solution
+#+END_EXAMPLE
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

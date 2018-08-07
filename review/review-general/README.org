@@ -1,0 +1,40 @@
+* [#A] Basic: General Procedure For Code Problems               :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+My general general steps and main takeaways  from solving all the leetcode problems.
+---------------------------------------------------------------------
+[[color:#c7254e][General Steps:]]
+1. *Observe*: Manually walk through sample data. Detect the characteristics. [[color:#c7254e][This is the most important thing.]]
+- *Coding*
+- *Examine*: One normal cases. And one corner case.
+- *Improve*: Can I do better, in terms of time or space complexity?
+- *Review*: Have I seen anything similar? What are they connections and common pitfalls.
+- *Discussion*: Do you feel comfortable to read and learn good solutions from others? It might be very tough. Or you just feel too proud of yourself to listen to others.
+---------------------------------------------------------------------
+[[image-blog:General Procedure For Code Problems][https://raw.githubusercontent.com/DennyZhang/images/master/code/input_size_complexity.png]]
+Image credits to [[url-external:http://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/][link]]
+---------------------------------------------------------------------
+[[color:#c7254e][Experience:]]
+
+1. If you can't estimate the complexity of your soltion, you don't understand it well enough
+- If you target in improving your daily skills, focus more on easy/medium leetcode problems.
+- Sometimes we can simplify the tedious logic in an creative but non-intuitive way.
+- If your code has too many trivial checks, you might do it in a wrong way. There shall be better approaches in most cases.
+- You know the idea, how fast you can finish the coding? And Bug-free?
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+** useful links                                                    :noexport:
+https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/
+Top 10 Algorithms for Coding Interview

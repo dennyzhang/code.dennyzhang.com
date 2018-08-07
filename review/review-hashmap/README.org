@@ -1,0 +1,42 @@
+* Review: Hashmap Problems                                         :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: hashmap
+:END:
+---------------------------------------------------------------------
+Review Hashmap code problems
+---------------------------------------------------------------------
+- Use a tuple as key
+[[https://code.dennyzhang.com/group-shifted-strings][Group Shifted Strings]]
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/group-shifted-strings
+class Solution:
+    def groupStrings(self, strings):
+        """
+        :type strings: List[str]
+        :rtype: List[List[str]]
+        """
+        import collections
+        m = collections.defaultdict(list)
+        for s in strings:
+            # ba -> (0, 25)
+            # az -> (0, 25)
+            tup = tuple([(ord(ch)-ord(s[0]))%26 for ch in s])
+            m[tup].append(s)
+        return [m[key] for key in m]
+#+END_SRC
+---------------------------------------------------------------------
+See all hashmap problems: [[https://code.dennyzhang.com/tag/hashmap/][#hashmap]]
+[display-posts tag="hashmap" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+
