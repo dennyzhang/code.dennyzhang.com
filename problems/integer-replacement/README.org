@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, inpsiring, pruning, redo
 :END:
 ---------------------------------------------------------------------
 Integer Replacement
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/pruning][#pruning]]
 ---------------------------------------------------------------------
 Given a positive integer n and you can do operations as follow:
 
@@ -50,10 +51,83 @@ Credits To: [[https://leetcode.com/problems/integer-replacement/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: Recursive + pruning
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/integer-replacement
+// Basic Ideas: recursive + pruning
+// Complexity: Time O(n), Space O(n)
+var m map[int]int
+func integerReplacement(n int) int {
+	m = map[int]int{}
+    d := 0
+    for i:=1; i<=n*2; i=i*2 {
+        m[i] = d
+        d++
+    }
+    return getDistance(n)
+}
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/integer-replacement
+func getDistance(n int) int {
+    v, ok := m[n]
+    res := -1
+    if ok { return v }
+    if n%2 == 0 {
+        res = 1+getDistance(n/2)
+    } else {
+        v1, v2 := getDistance(n-1)+1, getDistance((n+1)/2)+2
+        res = v1
+        if v1>v2 { res = v2 }
+    }
+    m[n] = res
+    return res
+}
+#+END_SRC
 
+- Solution: BFS + pruning
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/integer-replacement
+// Basic Ideas: BFS + pruning
+// Complexity: Time O(n), Space O(n)
+func integerReplacement(n int) int {
+    m := map[int]int{}
+    d := 0
+    for i:=1; i<=n*2; i=i*2 {
+        m[i] = d
+        d++
+    }
+    v, ok := m[n]
+    if ok { return v }
+    
+    queue := []int{n}
+    res := 1<<31 - 1
+    d = 0
+    for len(queue) != 0 {
+        l := []int{}
+        for _, v := range queue {
+            l2 := []int{}
+            if v % 2 == 0 {
+                l2 = append(l2, v/2)
+            } else {
+                l2 = append(l2, v+1)
+                l2 = append(l2, v-1)
+            }
+            for _, num := range l2 {
+                _, ok := m[num]
+                if ok {
+                    m[v] = m[num] + 1
+                    if res > m[v] + d {
+                      res = m[v] + d
+                    }
+                } else {
+                    l = append(l, num)
+                }
+            }
+        }
+        queue = l
+        d++
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

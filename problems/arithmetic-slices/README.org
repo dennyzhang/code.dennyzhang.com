@@ -1,0 +1,78 @@
+* Leetcode: Arithmetic Slices                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     combination, array
+:END:
+---------------------------------------------------------------------
+Arithmetic Slices
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/arithmetic-slices-ii-subsequence][Leetcode: Arithmetic Slices II - Subsequence]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/combination][#combination]]
+---------------------------------------------------------------------
+A sequence of number is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.
+
+For example, these are arithmetic sequence:
+#+BEGIN_EXAMPLE
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+#+END_EXAMPLE
+
+The following sequence is not arithmetic.
+#+BEGIN_EXAMPLE
+1, 1, 2, 5, 7
+#+END_EXAMPLE
+
+A zero-indexed array A consisting of N numbers is given. A slice of that array is any pair of integers (P, Q) such that 0 <= P < Q < N.
+
+A slice (P, Q) of array A is called arithmetic if the sequence:
+A[P], A[p + 1], ..., A[Q - 1], A[Q] is arithmetic. In particular, this means that P + 1 < Q.
+
+The function should return the number of arithmetic slices in the array A.
+
+Example:
+#+BEGIN_EXAMPLE
+A = [1, 2, 3, 4]
+
+return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
+#+END_EXAMPLE
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/arithmetic-slices][challenges-leetcode-interesting]]
+
+Credits To: [[https://leetcode.com/problems/arithmetic-slices/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/arithmetic-slices
+// Basic Ideas:
+//
+// Complexity: Time O(n), Space O(1)
+func numberOfArithmeticSlices(A []int) int {
+    res := 0
+    count, diff := 0, 1<<31 - 1
+    for i, _ := range A {
+        if i == 0 { continue }
+        v := A[i]-A[i-1]
+        if diff == v {
+            count++
+        } else {
+            res += (count*(count-1))/2
+            diff, count = v, 1
+        }
+    }
+    return res + (count*(count-1))/2
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

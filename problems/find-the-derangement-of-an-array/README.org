@@ -1,0 +1,69 @@
+* Leetcode: Find the Derangement of An Array                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math, dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Find the Derangement of An Array
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/unique-paths][Leetcode: Unique Paths]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+In combinatorial mathematics, a derangement is a permutation of the elements of a set, such that no element appears in its original position.
+
+There's originally an array consisting of n integers from 1 to n in ascending order, you need to find the number of derangement it can generate.
+
+Also, since the answer may be very large, you should return the output mod 109 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 3
+Output: 2
+Explanation: The original array is [1,2,3]. The two derangements are [2,3,1] and [3,1,2].
+#+END_EXAMPLE
+
+Note:
+- n is in the range of [1, 106].
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-the-derangement-of-an-array][challenges-leetcode-interesting]]
+
+Credits To: [[https://leetcode.com/problems/find-the-derangement-of-an-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/find-the-derangement-of-an-array
+// Basic Ideas: dynamic programming
+// dp(n) = (n-1)*(dp(n-1)+dp(n-2))
+// Let's say we want to get dp(4)
+// 1 2 3 4
+//    We have 3 places to put the number 4: (n-1)
+//    Say we put 4 to the place of 1
+//        Now assume 1 is taken the place of 4: dp(n-1)
+//        Actually we can put 1 to the place of 4: dp(n-2)
+//    So dp(n) = (n-1) * (dp(n-1)+dp(n-2))
+// Complexity: Time O(n), Space O(1)
+import "math"
+func findDerangement(n int) int {
+    if n <= 2 { return n-1 }
+    ppre, pre := 0, 1
+    mod := int(math.Pow(10, 9))+7
+    for i:=3; i<=n; i++ {
+        v := (i-1) * (ppre+pre) % mod
+        ppre, pre = pre, v
+    }
+    return pre
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

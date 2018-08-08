@@ -2,14 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     bitmanipulation, manydetails
 :END:
 ---------------------------------------------------------------------
 IP to CIDR
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/validate-ip-address][Validate IP Address]]
-- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
+- [[https://code.dennyzhang.com/utf-8-validation][Leetcode: UTF-8 Validation]]
+- [[https://code.dennyzhang.com/tag/bitmanipulation][Tag: #bitmanipulation]], [[https://code.dennyzhang.com/tag/manydetails][Tag: #manydetails]]
 ---------------------------------------------------------------------
 Given a start IP address ip and a number of ips we need to cover n, return a representation of the range as a list (of smallest possible length) of CIDR blocks.
 
@@ -67,7 +68,7 @@ Leave me comments, if you have better ways to solve.
 
 #+END_SRC
 
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
