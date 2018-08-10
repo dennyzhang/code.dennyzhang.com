@@ -2,10 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo
+:type:     ipaddress, redo
 :END:
 ---------------------------------------------------------------------
 Return all possible valid IP address combinations.
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/ipaddress][#ipaddress]]
 ---------------------------------------------------------------------
 Given a string containing only digits, restore it by returning all possible valid IP address combinations.
 

@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, stack
+:type:     math, stack, expression
 :END:
 ---------------------------------------------------------------------
 Evaluate Reverse Polish Notation
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/stack][#stack]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 Evaluate the value of an arithmetic expression in Reverse Polish Notation.
 

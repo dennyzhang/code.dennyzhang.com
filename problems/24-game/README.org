@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     recursive, game
+:type:     recursive, game, expression
 :END:
 ---------------------------------------------------------------------
 24 Game
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/game][#game]]
+- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 You have 4 cards each containing a number from 1 to 9. You need to judge whether they could operated through *, /, +, -, (, ) to get the value of 24.
 

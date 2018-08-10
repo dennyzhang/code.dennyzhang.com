@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, expression
 :END:
 ---------------------------------------------------------------------
 Complex Number Multiplication
@@ -10,7 +10,7 @@ Complex Number Multiplication
 Similar Problems:
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - [[https://code.dennyzhang.com/solve-the-equation][Solve the Equation]]
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 Given two strings representing two complex numbers.
 

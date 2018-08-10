@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     string, ipaddress
 :END:
 ---------------------------------------------------------------------
 Masking Personal Information
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/ipaddress][#ipaddress]]
 ---------------------------------------------------------------------
 We are given a personal information string S, which may represent either an email address or a phone number.
 

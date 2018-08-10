@@ -2,13 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap
+:type:     hashmap, ipaddress
 :END:
 ---------------------------------------------------------------------
 Subdomain Visit Count
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/ipaddress][#ipaddress]]
 ---------------------------------------------------------------------
 A website domain like "discuss.leetcode.com" consists of various subdomains. At the top level, we have "com", at the next level, we have "leetcode.com", and at the lowest level, "discuss.leetcode.com". When we visit a domain like "discuss.leetcode.com", we will also visit the parent domains "leetcode.com" and "com" implicitly.
 

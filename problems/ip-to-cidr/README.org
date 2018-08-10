@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bitmanipulation, manydetails
+:type:     bitmanipulation, manydetails, ipaddress
 :END:
 ---------------------------------------------------------------------
 IP to CIDR
@@ -10,7 +10,7 @@ IP to CIDR
 Similar Problems:
 - [[https://code.dennyzhang.com/validate-ip-address][Validate IP Address]]
 - [[https://code.dennyzhang.com/utf-8-validation][Leetcode: UTF-8 Validation]]
-- [[https://code.dennyzhang.com/tag/bitmanipulation][Tag: #bitmanipulation]], [[https://code.dennyzhang.com/tag/manydetails][Tag: #manydetails]]
+- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/ipaddress][#ipaddress]], [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 Given a start IP address ip and a number of ips we need to cover n, return a representation of the range as a list (of smallest possible length) of CIDR blocks.
 
