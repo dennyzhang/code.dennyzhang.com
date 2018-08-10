@@ -8,6 +8,7 @@
 Quad Tree Intersection
 ---------------------------------------------------------------------
 Similar Problems:
+- [[https://code.dennyzhang.com/construct-quad-tree][Leetcode: Construct Quad Tree]]
 - Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/quadtree][#quadtree]], [[https://code.dennyzhang.com/tag/postorder][#postorder]]
 ---------------------------------------------------------------------
 A quadtree is a tree data in which each internal node has exactly four children: topLeft, topRight, bottomLeft and bottomRight. Quad trees are often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions.
@@ -83,7 +84,8 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/quad-tree-intersection
 ## Basic Ideas: post-order
-## Complexity: Time O(n*n), Space O(1)
+##
+## Complexity: Time O(n*n) Space O(1)
 """
 # Definition for a QuadTree node.
 class Node:
@@ -96,29 +98,26 @@ class Node:
         self.bottomRight = bottomRight
 """
 class Solution:
-    def intersect(self, quadTree1, quadTree2):
+    def construct(self, grid):
         """
-        :type quadTree1: Node
-        :type quadTree2: Node
+        :type grid: List[List[int]]
         :rtype: Node
         """
-        if quadTree1 is None or quadTree2 is None: return None
-
-        if quadTree1.isLeaf or quadTree2.isLeaf:
-            if quadTree1.isLeaf:
-                return quadTree1 if quadTree1.val else quadTree2
+        def myConstruct(grid, i, j, count):
+            if count <= 0: return None
+            if count == 1: return Node(grid[i][j], True, None, None, None, None)
+            count2 = int(count/2)
+            tl = myConstruct(grid, i, j, count2)
+            tr = myConstruct(grid, i, j+count2, count2)
+            bl = myConstruct(grid, i+count2, j, count2)
+            br = myConstruct(grid, i+count2, j+count2, count2)
+            if True == tl.isLeaf == tr.isLeaf == bl.isLeaf == br.isLeaf and \
+                tl.val == tr.val == bl.val == br.val:
+                return Node(tl.val, True, None, None, None, None)
             else:
-                return quadTree2 if quadTree2.val else quadTree1
-
-        tl = self.intersect(quadTree1.topLeft, quadTree2.topLeft)
-        tr = self.intersect(quadTree1.topRight, quadTree2.topRight)
-        bl = self.intersect(quadTree1.bottomLeft, quadTree2.bottomLeft)
-        br = self.intersect(quadTree1.bottomRight, quadTree2.bottomRight)
-        if tl.isLeaf and tr.isLeaf and bl.isLeaf and br.isLeaf and \
-            tl.val == tr.val and tl.val == bl.val and tl.val == br.val:
-            return Node(tl.val, True, None, None, None, None)
-        else:
-            return Node(None, False, tl, tr, bl, br)
+                return Node(None, False, tl, tr, bl, br)
+                
+        return myConstruct(grid, 0, 0, len(grid))
 #+END_SRC
 
 #+BEGIN_HTML
