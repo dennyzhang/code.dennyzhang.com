@@ -2,13 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, inspiring
+:type:     string, inspiring, fibonacci
 :END:
 ---------------------------------------------------------------------
 Split Array into Fibonacci Sequence
 ---------------------------------------------------------------------
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/length-of-longest-fibonacci-subsequence][Leetcode: Length of Longest Fibonacci Subsequence]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/fibonacci][#fibonacci]]
 ---------------------------------------------------------------------
 Given a string S of digits, such as S = "123456579", we can split it into a Fibonacci-like sequence [123, 456, 579].
 
