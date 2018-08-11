@@ -1,0 +1,94 @@
+* LintCode: Convert Array List to Linked List                    :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Convert Array List to Linked List
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Description
+
+Convert an array list to a linked list.
+
+Example
+
+Given [1,2,3,4], return 1->2->3->4->null.
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-array-list-to-linked-list][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/convert-array-list-to-linked-list/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: Without dummy Node
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/convert-array-list-to-linked-list
+## Basic Ideas:
+## Complexity: Time O(n), Space O(n)
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+class Solution:
+    """
+    @param: nums: an integer array
+    @return: the first node of linked list
+    """
+    def toLinkedList(self, nums):
+        if len(nums) == 0: return None
+        res, p = None, None
+        for num in nums:
+            q = ListNode(num)
+            if res is None:
+                res, p = q, q
+            else:
+                p.next = q
+                p = q
+        return res
+#+END_SRC
+
+- Solution: With dummy Node
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/convert-array-list-to-linked-list
+## Basic Ideas:
+## Complexity: Time O(n), Space O(n)
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+class Solution:
+    """
+    @param: nums: an integer array
+    @return: the first node of linked list
+    """
+    def toLinkedList(self, nums):
+        dummyNode = ListNode(None)
+        p = dummyNode
+        for num in nums:
+            p.next = ListNode(num)
+            p = p.next
+        return dummyNode.next
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

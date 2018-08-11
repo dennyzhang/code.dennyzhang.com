@@ -1,0 +1,92 @@
+* LintCode: Construction Queue                                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     classic, redo
+:END:
+---------------------------------------------------------------------
+Construction Queue
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Description
+There is a permutation of n numbers. It is now known that the size of each number in the array, and how many number of each number before it is smaller than itself, requires that the original arrangement be restored.Ensure that no two numbers are equal in size.
+
+1 <= n <= 10^5
+
+Example
+#+BEGIN_EXAMPLE
+Given the length of the array n=5 and the size of each number arr1=[1,2,3,4,5], and how many numbers arr2=[0,0,0,1,3] are smaller than themselves before each number. Return [3,4,2,5,1].
+
+Explanation :
+Before 1 there is no number less than 2
+Before 2 there is no number less than 2
+Before 3 there is no number less than 3
+Before 4 there is 1 number less than 4
+Before 5 there are 3 numbers less than 5
+So the original arrangement [3,4,2,5,1] meets the requirements.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given the length of the array n=4 and the size of each number arr1=[1,3,7,6], and how many numbers arr2=[0,1,3,2] are smaller than themselves before each number. Return [1,3,6,7].
+
+Explanation:
+Before 1 there is no number less than 1
+Before 3 there is 1 number less than 3
+Before 7 there are 3 numbers less than 7
+Before 6 there are 2 numbers less than 6
+So the original arrangement [1,3,6,7] meets the requirements.
+#+END_EXAMPLE
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construction-queue][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/construction-queue/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/construction-queue
+// Basic Ideas:
+// Complexity: Time O(n*log(n)), Space O(n)
+/**
+ * @param n: The array sum
+ * @param arr1: The size
+ * @param arr2: How many numbers small than itself 
+ * @return: The correct array
+ */
+import "sort"
+func getQueue (n int, arr1 []int, arr2 []int) []int {
+    res := make([]int, n)
+    keys := make([]int, n)
+    l := make([]int, n)
+    m := map[int]int{}
+    for i, num := range arr1 {
+        keys[i], m[num] = num, arr2[i]
+        l[i] = i
+    }
+    sort.Ints(keys)
+    for i:=n-1; i>=0; i-- {
+        key := keys[i]
+        index := m[key]
+        res[l[index]] = key
+        // remove
+        if index == 0 {
+            l = l[1:]
+        } else {
+            l = append(l[0:index], l[index+1:]...)
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

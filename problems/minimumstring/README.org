@@ -1,0 +1,97 @@
+* LintCode: minimumstring                                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     classic, stack
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/stack][#stack]]
+---------------------------------------------------------------------
+Description
+Given a string s of lowercase letters of length n, remove the k characters from it and we will get a new string of length n-k. Please output the new string with the smallest lexicographic order.
+
+The lexicographical order in this problem: Firstly compare the length of two strings, the lexicographical order of the smaller length is smaller. If the length is the same, then comparison is started from the left side of the string to find the first different character, and the corresponding character smaller is the smaller lexicographical order string.
+
+For example: "abbz" and "abza"
+Firstly two strings are the same length, then compare bit by bit from the left:
+The first bit is "a", then continue to compare the next one
+The second bit is "b", then continue to compare the next one
+For third bit, the first string is "b", and the second string is "z". Because "b" < "z", the lexicographic order of the first string is smaller.
+
+0 <= k < n <= 1000000
+
+Example
+#+BEGIN_EXAMPLE
+Given s="abccc",k=2,return "abc"
+
+Explanation:
+Delete the `c` of the 4th and 5th positions
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given s="bacdb",k=2,return "acb"
+
+Explanation:
+Delete the `b` of the 1st position and the `d` of the 4th place.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given s="cba",k=2,return "a"
+
+Explanation:
+Delete the `c` of the 1st position and the `b` of the 2nd place.
+#+END_EXAMPLE
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/minimumstring][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/minimumstring/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimumstring
+// Basic Ideas: stack. Non-decreasing string
+//
+// Complexity: Time O(n), Space O(n)
+/**
+ * @param s: the string
+ * @param k: the max time to remove characters
+ * @return: Please output the new string with the smallest lexicographic order.
+ */
+import "strings"
+func MinimumString (s string, k int) string {
+    stack := []string{}
+    for i, _ := range s {
+        ch := string(s[i])
+        if k == 0 {
+            // no need to remove
+            stack = append(stack, ch)
+            continue
+        }
+        
+        if len(stack) == 0 || stack[len(stack)-1] <= ch {
+            stack = append(stack, ch)
+        } else {
+            for k>0 && len(stack)>0 && stack[len(stack)-1] > ch {
+                stack = stack[:len(stack)-1]
+                k--
+            }
+            stack = append(stack, ch)
+        }   
+    }
+    return strings.Join(stack[0:len(stack)-k], "")
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
