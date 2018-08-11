@@ -1,0 +1,111 @@
+* LintCode: Binary Tree Maximum Node                             :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Binary Tree Maximum Node
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+#+BEGIN_EXAMPLE
+Follow-up: 
+- Assume we can't use global variable
+- I want to return all max nodes
+- I want to return the last max node
+- I want to return the second max node, if we have. Otherwise return the first max node
+#+END_EXAMPLE
+
+Description
+
+Find the maximum node in a binary tree, return the node.
+
+Example
+#+BEGIN_EXAMPLE
+Given a binary tree:
+
+     1
+   /   \
+ -5     2
+ / \   /  \
+0   3 -4  -5 
+return the node with value 3.
+#+END_EXAMPLE
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/binary-tree-maximum-node][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/binary-tree-maximum-node/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: With sub-function
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/binary-tree-maximum-node
+## Basic Ideas: any tree traversal
+## Here we use pre-order
+## Complexity: Time O(n), Space O(h)
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+class Solution:
+    """
+    @param: root: the root of tree
+    @return: the max node
+    """
+    def maxNode(self, root):
+        def dfs(root, maxNode):
+            if root is None: return maxNode
+            if root.val > maxNode.val: maxNode = root
+            maxNode = dfs(root.left, maxNode)
+            maxNode = dfs(root.right, maxNode)
+            return maxNode
+        return dfs(root, root)
+#+END_SRC
+
+- Solution: Without sub-function
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/binary-tree-maximum-node
+## Basic Ideas: any tree traversal
+## Here we use pre-order
+## Complexity: Time O(n), Space O(h)
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+class Solution:
+    """
+    @param: root: the root of tree
+    @return: the max node
+    """
+    def maxNode(self, root):
+        if root is None: return root
+        
+        res = root
+        if root.left:
+            p = self.maxNode(root.left)
+            if p.val > res.val: res = p
+        
+        if root.right:
+            p = self.maxNode(root.right)
+            if p.val > res.val: res = p
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
