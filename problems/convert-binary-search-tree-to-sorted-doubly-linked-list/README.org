@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, treetraversal, classic
+:type:     linkedlist, treetraversal, classic, convertds
 :END:
 ---------------------------------------------------------------------
 Convert Binary Search Tree to Sorted Doubly Linked List
@@ -10,7 +10,7 @@ Convert Binary Search Tree to Sorted Doubly Linked List
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
 - [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/convertds][#convertds]]
 ---------------------------------------------------------------------
 Convert a BST to a sorted circular doubly-linked list in-place. Think of the left and right pointers as synonymous to the previous and next pointers in a doubly-linked list.
 

@@ -5,7 +5,7 @@
 :type:     game, minmax, redo
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Stone Game
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/predict-the-winner][Leetcode: Predict the Winner]]

@@ -1,0 +1,102 @@
+* Leetcode: Possible Bipartition                                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, classic
+:END:
+---------------------------------------------------------------------
+Possible Bipartition
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Given a set of N people (numbered 1, 2, ..., N), we would like to split everyone into two groups of any size.
+
+Each person may dislike some other people, and they should not go into the same group. 
+
+Formally, if dislikes[i] = [a, b], it means it is not allowed to put the people numbered a and b into the same group.
+
+Return true if and only if it is possible to split everyone into two groups in this way.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: N = 4, dislikes = [[1,2],[1,3],[2,4]]
+Output: true
+Explanation: group1 [1,4], group2 [2,3]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: N = 3, dislikes = [[1,2],[1,3],[2,3]]
+Output: false
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: N = 5, dislikes = [[1,2],[2,3],[3,4],[4,5],[1,5]]
+Output: false
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= N <= 2000
+- 0 <= dislikes.length <= 10000
+- 1 <= dislikes[i][j] <= N
+- dislikes[i][0] < dislikes[i][1]
+- There does not exist i != j for which dislikes[i] == dislikes[j].
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/possible-bipartition][challenges-leetcode-interesting]]
+
+Credits To: [[https://leetcode.com/problems/possible-bipartition/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/possible-bipartition
+// Basic Ideas:
+// Complexity: Time O(n), Space O(n)
+func possibleBipartition(N int, dislikes [][]int) bool {
+    m := map[int][]int{}
+    for _, pair := range dislikes {
+        n1, n2 := pair[0], pair[1]
+        m[n1] = append(m[n1], n2)
+        m[n2] = append(m[n2], n1)
+    }
+
+    types := make([]int, N+1)
+    for i:=1; i<=N; i++ {
+        if types[i] != 0 { continue }
+        // put current node to one set
+        types[i] = 1
+        queue := []int{i}
+        for len(queue) != 0 {
+            l := []int{}
+            for _, node := range queue {
+                // get dislikes
+                for _, node2 := range m[node] {
+                    if types[node2] == types[node] { 
+                        return false 
+                    } else {
+                        if types[node2] == 0 {
+                            types[node2] = -types[node]
+                            l = append(l, node2)
+                        }
+                    }
+                }
+            }
+            queue = l
+        }
+    }
+    return true
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

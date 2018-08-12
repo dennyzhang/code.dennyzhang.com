@@ -5,7 +5,7 @@
 :type:     array
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Swap Two Integers in Array
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]]

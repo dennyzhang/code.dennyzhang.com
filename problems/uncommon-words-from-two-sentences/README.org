@@ -1,0 +1,76 @@
+* Leetcode: Uncommon Words from Two Sentences                    :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+Uncommon Words from Two Sentences
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/most-common-word][Leetcode: Most Common Word]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+---------------------------------------------------------------------
+We are given two sentences A and B.  (A sentence is a string of space separated words.  Each word consists only of lowercase letters.)
+
+A word is uncommon if it appears exactly once in one of the sentences, and does not appear in the other sentence.
+
+Return a list of all uncommon words. 
+
+You may return the list in any order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = "this apple is sweet", B = "this apple is sour"
+Output: ["sweet","sour"]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = "apple apple", B = "banana"
+Output: ["banana"]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= A.length <= 200
+- 0 <= B.length <= 200
+- A and B both contain only spaces and lowercase letters.
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/uncommon-words-from-two-sentences][challenges-leetcode-interesting]]
+
+Credits To: [[https://leetcode.com/problems/uncommon-words-from-two-sentences/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/uncommon-words-from-two-sentences
+// Basic Ideas: hashmap
+// Complexity: Time O(n), Space O(n)
+import "strings"
+func uncommonFromSentences(A string, B string) []string {
+    m := map[string]int{}
+    res := []string{}
+    for _, s := range []string{A, B} {
+        for _, word := range strings.Split(s, " ") {
+            m[word]++
+        }
+    }
+    for key := range m {
+        if m[key] == 1 {
+            res = append(res, key)
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

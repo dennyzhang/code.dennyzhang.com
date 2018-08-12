@@ -5,7 +5,7 @@
 :type:     classic, stack
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+minimumstring
 ---------------------------------------------------------------------
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/stack][#stack]]

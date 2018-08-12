@@ -5,7 +5,7 @@
 :type:     linkedlist
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Flatten a Multilevel Doubly Linked List
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]

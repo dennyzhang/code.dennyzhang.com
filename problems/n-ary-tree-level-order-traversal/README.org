@@ -5,7 +5,7 @@
 :type:     treetraversal, bfs
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+N-ary Tree Level Order Traversal
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]

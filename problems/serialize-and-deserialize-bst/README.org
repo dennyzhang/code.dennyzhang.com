@@ -2,14 +2,14 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     binarytree, convertds
 :END:
 ---------------------------------------------------------------------
 Serialize and Deserialize BST
 ---------------------------------------------------------------------
 Similar Problems:
 - [[https://code.dennyzhang.com/serialize-and-deserialize-binary-tree][Serialize and Deserialize Binary Tree]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/convertds][#convertds]]
 ---------------------------------------------------------------------
 Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
 
