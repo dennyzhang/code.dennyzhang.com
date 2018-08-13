@@ -10,8 +10,10 @@ Remove Linked List Elements
 Remove all elements from a linked list of integers that have value val.
 
 Example
+#+BEGIN_EXAMPLE
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
 Return: 1 --> 2 --> 3 --> 4 --> 5
+#+END_EXAMPLE
 
 Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/remove-linked-list-elements][challenges-leetcode-interesting]]
 
@@ -19,6 +21,38 @@ Credits To: [[https://leetcode.com/problems/remove-linked-list-elements/descript
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Golang
+#+BEGIN_SRC go
+// Basic Ideas
+// Complexity: Time O(n), Space O(1)
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+
+/**
+ * @param head: a ListNode
+ * @param val: An integer
+ * @return: a ListNode
+ */
+func removeElements (head *ListNode, val int) *ListNode {
+    dummyNode := &ListNode{0, head}
+    p := dummyNode
+    for p.Next != nil {
+        if p.Next.Val == val {
+            p.Next = p.Next.Next
+        } else {
+            p = p.Next
+        }
+    }
+    return dummyNode.Next
+}
+#+END_SRC
+
+- Python
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/remove-linked-list-elements
 ## Basic Ideas: The head might be removed, thus we need a dummy node
@@ -36,8 +70,7 @@ class Solution(object):
         :type val: int
         :rtype: ListNode
         """
-        dummyNode = ListNode(None)
-        dummyNode.next = head
+        dummyNode = ListNode(None, head)
         p = dummyNode
         while p.next:
             if p.next.val == val:

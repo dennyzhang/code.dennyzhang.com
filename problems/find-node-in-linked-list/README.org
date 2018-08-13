@@ -1,0 +1,62 @@
+* Leetcode: Find Node in Linked List                             :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Find Node in Linked List
+---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Description
+
+Find a node with given value in a linked list. Return null if not exists.
+
+Given 1->2->3 and value = 4, return null.
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/find-node-in-linked-list][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/find-node-in-linked-list/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/find-node-in-linked-list
+## Basic Ideas:
+## Here we assume we only find the first node with the given value
+## Complexity: Time O(n), Space O(1)
+"""
+Definition of ListNode
+class ListNode(object):
+
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+
+class Solution:
+    """
+    @param: head: the head of linked list.
+    @param: val: An integer.
+    @return: a linked node or null.
+    """
+    def findNode(self, head, val):
+        p = head
+        while p and p.val != val:
+            p = p.next
+        return p
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

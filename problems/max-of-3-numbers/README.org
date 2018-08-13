@@ -1,0 +1,52 @@
+* LintCode: Max of 3 Numbers                                     :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Max of 3 Numbers
+---------------------------------------------------------------------
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+Description
+Given 3 integers, return the max of them.
+
+Example
+
+Given num1 = 1, num2 = 9, num3 = 0, return 9.
+
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/max-of-3-numbers][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/max-of-3-numbers/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/max-of-3-numbers
+// Basic Ideas:
+// Complexity: Time O(1), Space O(1)
+/**
+ * @param num1: An integer
+ * @param num2: An integer
+ * @param num3: An integer
+ * @return: an interger
+ */
+func maxOfThreeNumbers (num1 int, num2 int, num3 int) int {
+    res := num1
+    if num2>res { res = num2 }
+    if num3>res { res = num3 }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

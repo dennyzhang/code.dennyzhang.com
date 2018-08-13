@@ -1,35 +1,38 @@
-* LintCode: Convert Linked List to Array List                    :BLOG:Basic:
+* Leetcode: Insert Node in Sorted Linked List                    :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, convertds
+:type:     linkedlist
 :END:
 ---------------------------------------------------------------------
-Convert Linked List to Array List
+Insert Node in Sorted Linked List
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/convert-array-list-to-linked-list][LintCode: Convert Array List to Linked List]]
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/convertds][#convertds]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Description
+Insert a node in a sorted linked list.
 
-Convert a linked list to an array list.
+Example
+#+BEGIN_EXAMPLE
+Given list = 1->4->6->8 and val = 5.
 
-Given 1->2->3->null, return [1,2,3].
+Return 1->4->5->6->8.
+#+END_EXAMPLE
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/convert-linked-list-to-array-list][challenges-leetcode-interesting]]
+Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/insert-node-in-sorted-linked-list][challenges-leetcode-interesting]]
 
-Credits To: [[https://www.lintcode.com/problem/convert-linked-list-to-array-list/description][lintcode.com]]
+Credits To: [[https://www.lintcode.com/problem/insert-node-in-sorted-linked-list/description][lintcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/convert-linked-list-to-array-list
-// Basic Ideas: One pass
-// Complexity: Time O(n), Space O(n)
+// Blog link: https://code.dennyzhang.com/insert-node-in-sorted-linked-list
+// Basic Ideas:
+// Complexity: Time O(n), Space O(1)
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -39,17 +42,20 @@ Leave me comments, if you have better ways to solve.
  */
 
 /**
- * @param head: the head of linked list.
- * @return: An integer list
+ * @param head: The head of linked list.
+ * @param val: An integer.
+ * @return: The head of new linked list.
  */
-func toArrayList (head *ListNode) []int {
-    res := []int{}
-    p := head
-    for p != nil {
-        res = append(res, p.Val)
+func insertNode (head *ListNode, val int) *ListNode {
+    // write your code here
+    dummyNode := &ListNode{0, head}
+    newNode := &ListNode{val, nil}
+    p := dummyNode
+    for p.Next != nil && p.Next.Val < val {
         p = p.Next
     }
-    return res
+    p.Next, newNode.Next = newNode, p.Next
+    return dummyNode.Next
 }
 #+END_SRC
 
