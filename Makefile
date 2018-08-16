@@ -1,10 +1,10 @@
-all:refresh_link
+all:refresh-link
 
-refresh_link:
+refresh-link:
 	bash automate.sh refresh_link
+
+refresh-wordpress:
+	bash automate.sh refresh_wordpress
 
 my_test:
 	bash automate.sh my_test
-
-refresh_wordpress:
-	bash automate.sh refresh_wordpress
