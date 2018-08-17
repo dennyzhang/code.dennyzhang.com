@@ -1,4 +1,4 @@
-* CheatSheet
+* Prepare Code Test
 #+BEGIN_HTML
 <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
 <a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
@@ -43,7 +43,7 @@ My [[https://leetcode.com/dennyzhang][leetcode profile]]
  #+PRIORITIES: A D C
  #+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
  #+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
- #+EXPORT_EXCLUDE_TAGS: exclude noexport
+ #+EXPORT_EXCLUDE_TAGS: exclude noexport BLOG
  #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
  #+LINK_UP:   
  #+LINK_HOME: 
@@ -87,7 +87,12 @@ So why not stand up and conquer it? Maybe I can collect some interesting code pu
 (Leave me comments! Help me to help others.)
 
 My [[url-external:https://leetcode.com/dennyzhang/][leetcode profile]] and [[url-external:https://www.lintcode.com/user/DennyZhang][lintcode profile]]
-[[url-external:https://leetcode.com/dennyzhang/][https://cdn.dennyzhang.com/images/brain/denny_leetcode.png]]
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"><a href="https://leetcode.com/dennyzhang"><img style="width:189px;height:329px;" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png" alt="leetcode" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.lintcode.com/user/DennyZhang"><img style="width:387px;height:260px;"  src="https://cdn.dennyzhang.com/images/brain/denny_lintcode.png" alt="lintcode" /></a></div>
+</div>
+#+END_HTML
 
 This blog is posted from Github: [[url-external:https://github.com/dennyzhang/challenges-leetcode-interesting][challenges-leetcode-interesting]].
 
