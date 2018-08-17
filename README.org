@@ -369,11 +369,11 @@ https://code.dennyzhang.com/group-anagrams#wp-toolbar
 # . . . . . . . .
 # . . . . . . . .
 # . . . . . . . .
-* TODO monetize improvement: build ebooks and cheetsheet
-* TODO blog improvement: use emacs to publish pages
-* TODO blog improvement: how to utilize community to improve the content
-* TODO Quick scan leetcode
+* TODO monetize improvement: build ebooks and cheetsheet           :noexport:
+* TODO blog improvement: use emacs to publish pages                :noexport:
+* TODO blog improvement: how to utilize community to improve the content :noexport:
+* TODO Quick scan leetcode                                         :noexport:
 http://delta.logdown.com/posts/2014/09/19/leetcode-3
-* TODO [#A] leetcode active users
+* TODO [#A] leetcode active users                                  :noexport:
 ** stefan altohme: 光头哥
 ** lee215: https://leetcode.com/problems/short-encoding-of-words/discuss/125784/Trie-Solution/126838?page=1
