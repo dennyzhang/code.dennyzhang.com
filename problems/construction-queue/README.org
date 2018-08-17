@@ -39,7 +39,7 @@ Before 6 there are 2 numbers less than 6
 So the original arrangement [1,3,6,7] meets the requirements.
 #+END_EXAMPLE
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construction-queue][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/construction-queue][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/construction-queue/description][lintcode.com]]
 
@@ -86,7 +86,7 @@ func getQueue (n int, arr1 []int, arr2 []int) []int {
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

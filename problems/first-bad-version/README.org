@@ -13,7 +13,7 @@ Suppose you have n versions [1, 2, ..., n] and you want to find out the first ba
 
 You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/first-bad-version][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/first-bad-version][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/first-bad-version/description/][leetcode.com]]
 
@@ -53,7 +53,7 @@ class Solution(object):
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

@@ -23,7 +23,7 @@ Notes:
 - Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
 - You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/implement-queue-using-stacks][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/implement-queue-using-stacks][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/implement-queue-using-stacks/description/][leetcode.com]]
 
@@ -114,7 +114,7 @@ class MyQueue(object):
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

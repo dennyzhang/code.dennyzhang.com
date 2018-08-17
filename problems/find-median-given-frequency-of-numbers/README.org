@@ -36,7 +36,7 @@ In this table, the numbers are 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, so the median
 
 Write a query to find the median of all numbers and name the result as median.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-median-given-frequency-of-numbers][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-median-given-frequency-of-numbers][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/find-median-given-frequency-of-numbers/description/][leetcode.com]]
 
@@ -60,7 +60,7 @@ where t3.Frequency>=t4.count_diff
 #+BEGIN_EXPORT HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

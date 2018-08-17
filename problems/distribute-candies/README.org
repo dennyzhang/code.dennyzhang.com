@@ -35,7 +35,7 @@ Note:
 1. The length of the given array is in range [2, 10,000], and will be even.
 - The number in given array is in range [-100,000, 100,000].
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/distribute-candies][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distribute-candies][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/distribute-candies/description/][leetcode.com]]
 
@@ -61,7 +61,7 @@ class Solution(object):
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

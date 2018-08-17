@@ -25,14 +25,14 @@ Output: 2
 Explanation: The ray meets receptor 2 the first time it gets reflected back to the left wall.
 #+END_EXAMPLE
 
-[[image-blog:Leetcode: Mirror Reflection][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/reflection.png]]
+[[image-blog:Leetcode: Mirror Reflection][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/reflection.png]]
 
 Note:
 
 1. 1 <= p <= 1000
 - 0 <= q <= p
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/mirror-reflection][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/mirror-reflection][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/mirror-reflection/description/][leetcode.com]]
 
@@ -63,7 +63,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

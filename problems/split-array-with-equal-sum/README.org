@@ -32,7 +32,7 @@ Note:
 1. 1 <= n <= 2000.
 - Elements in the given array will be in range [-1,000,000, 1,000,000].
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/split-array-with-equal-sum][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/split-array-with-equal-sum][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/split-array-with-equal-sum/description/][leetcode.com]]
 
@@ -80,7 +80,7 @@ func splitArray(nums []int) bool {
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

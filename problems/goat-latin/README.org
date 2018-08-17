@@ -46,7 +46,7 @@ Notes:
 - S contains only uppercase, lowercase and spaces. Exactly one space between each word.
 - 1 <= S.length <= 100.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/goat-latin][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/goat-latin][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/goat-latin/description/][leetcode.com]]
 
@@ -78,7 +78,7 @@ func toGoatLatin(S string) string {
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

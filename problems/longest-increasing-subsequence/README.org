@@ -19,7 +19,7 @@ The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4.
 
 Follow up: Could you improve it to O(n log n) time complexity?
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/longest-increasing-subsequence][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-increasing-subsequence][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/longest-increasing-subsequence/description/][leetcode.com]]
 
@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

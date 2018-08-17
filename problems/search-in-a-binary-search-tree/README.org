@@ -36,7 +36,7 @@ In the example above, if we want to search the value 5, since there is no node w
 
 Note that an empty tree is represented by NULL, therefore you would see the expected output (serialized tree format) as [], not null.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/search-in-a-binary-search-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/search-in-a-binary-search-tree][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/search-in-a-binary-search-tree/description/][leetcode.com]]
 
@@ -70,7 +70,7 @@ func searchBST(root *TreeNode, val int) *TreeNode {
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

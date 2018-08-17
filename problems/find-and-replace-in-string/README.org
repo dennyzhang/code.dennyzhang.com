@@ -47,7 +47,7 @@ Notes:
 - 0 < indexes[i] < S.length <= 1000
 - All characters in given inputs are lowercase letters.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/find-and-replace-in-string][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-and-replace-in-string][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/find-and-replace-in-string/description/][leetcode.com]]
 
@@ -93,7 +93,7 @@ func findReplaceString(S string, indexes []int, sources []string, targets []stri
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

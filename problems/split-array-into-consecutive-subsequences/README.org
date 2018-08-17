@@ -41,7 +41,7 @@ Output: False
 Note:
 - The length of the input is in range of [1, 10000]
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/split-array-into-consecutive-subsequences][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/split-array-into-consecutive-subsequences][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/split-array-into-consecutive-subsequences/description/][leetcode.com]]
 
@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

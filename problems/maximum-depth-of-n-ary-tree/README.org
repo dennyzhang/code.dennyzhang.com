@@ -17,7 +17,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 For example, given a 3-ary tree:
 
-[[image-blog:Leetcode: N-ary Tree Postorder Traversal][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/NaryTreeExample.png]]
+[[image-blog:Leetcode: N-ary Tree Postorder Traversal][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/NaryTreeExample.png]]
 
 We should return its max depth, which is 3.
 
@@ -26,7 +26,7 @@ Note:
 - The depth of the tree is at most 1000.
 - The total number of nodes is at most 5000.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/maximum-depth-of-n-ary-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-depth-of-n-ary-tree][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/][leetcode.com]]
 
@@ -97,7 +97,7 @@ class Solution(object):
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

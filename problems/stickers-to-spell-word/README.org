@@ -54,7 +54,7 @@ Note:
 - In all test cases, all words were chosen randomly from the 1000 most common US English words, and the target was chosen as a concatenation of two random words.
 - The time limit may be more challenging than usual. It is expected that a 50 sticker test case can be solved within 35ms on average.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/stickers-to-spell-word][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/stickers-to-spell-word][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/stickers-to-spell-word/description/][leetcode.com]]
 
@@ -85,7 +85,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

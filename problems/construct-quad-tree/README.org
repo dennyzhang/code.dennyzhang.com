@@ -19,23 +19,23 @@ Your task is to use a quad tree to represent a given grid. The following example
 
 Given the 8 x 8 grid below, we want to construct the corresponding quad tree:
 
-[[Leetcode: Construct Quad Tree][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/grid.png]]
+[[Leetcode: Construct Quad Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/grid.png]]
 
 It can be divided according to the definition above:
 
-[[Leetcode: Construct Quad Tree][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/grid_divided.png]]
+[[Leetcode: Construct Quad Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/grid_divided.png]]
 
 The corresponding quad tree should be as following, where each node is represented as a (isLeaf, val) pair.
 
 For the non-leaf nodes, val can be arbitrary, so it is represented as *.
-[[Leetcode: Construct Quad Tree][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/quad_tree.png]]
+[[Leetcode: Construct Quad Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/quad_tree.png]]
 
 Note:
 
 1. N is less than 1000 and guaranteened to be a power of 2.
 - If you want to know more about the quad tree, you can refer to its [[https://en.wikipedia.org/wiki/Quadtree][wiki]].
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/construct-quad-tree][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/construct-quad-tree][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/construct-quad-tree/description/][leetcode.com]]
 
@@ -88,7 +88,7 @@ class Solution:
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

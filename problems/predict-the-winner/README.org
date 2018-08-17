@@ -41,7 +41,7 @@ Note:
 - Any scores in the given array are non-negative integers and will not exceed 10,000,000.
 - If the scores of both players are equal, then player 1 is still the winner.
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/predict-the-winner][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/predict-the-winner][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/predict-the-winner/description/][leetcode.com]]
 
@@ -93,7 +93,7 @@ func PredictTheWinner(nums []int) bool {
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML

@@ -16,21 +16,21 @@ Convert a BST to a sorted circular doubly-linked list in-place. Think of the lef
 
 Let's take the following BST as an example, it may help you understand the problem better:
 
-[[image-blog:Leetcode: Convert Binary Search Tree to Sorted Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/BSTDLLOriginalBST.png]]
+[[image-blog:Leetcode: Convert Binary Search Tree to Sorted Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/BSTDLLOriginalBST.png]]
  
 We want to transform this BST into a circular doubly linked list. Each node in a doubly linked list has a predecessor and successor. For a circular doubly linked list, the predecessor of the first element is the last element, and the successor of the last element is the first element.
 
 The figure below shows the circular doubly linked list for the BST above. The "head" symbol means the node it points to is the smallest element of the linked list.
 
-[[image-blog:Leetcode: Convert Binary Search Tree to Sorted Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/BSTDLLReturnDLL.png]]
+[[image-blog:Leetcode: Convert Binary Search Tree to Sorted Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/BSTDLLReturnDLL.png]]
 
 Specifically, we want to do the transformation in place. After the transformation, the left pointer of the tree node should point to its predecessor, and the right pointer should point to its successor. We should return the pointer to the first element of the linked list.
 
 The figure below shows the transformed BST. The solid line indicates the successor relationship, while the dashed line means the predecessor relationship.
 
-[[image-blog:Leetcode: Convert Binary Search Tree to Sorted Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/BSTDLLReturnBST.png]]
+[[image-blog:Leetcode: Convert Binary Search Tree to Sorted Doubly Linked List][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/BSTDLLReturnBST.png]]
 
-Github: [[https://github.com/DennyZhang/challenges-leetcode-interesting/tree/master/problems/convert-binary-search-tree-to-sorted-doubly-linked-list][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/convert-binary-search-tree-to-sorted-doubly-linked-list][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/description/][leetcode.com]]
 
@@ -87,7 +87,7 @@ class Solution:
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
 </div>
 #+END_HTML
