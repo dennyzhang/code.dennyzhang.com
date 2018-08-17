@@ -110,19 +110,19 @@ See all blogs I'm actively maintaining:
 | Code tests for interviews     | [[url-external:https://www.dennyzhang.com][https://code.dennyzhang.com]]       |
 | Learn system design           | https://architect.dennyzhang.com  |
 | Cheatsheet for best practices | https://cheatsheet.dennyzhang.com |
-* GitHub Repo Sharing: challenges-leetcode-interesting            :BLOG:Life:
+* GitHub Repo Sharing: code.dennyzhang.com                        :BLOG:Life:
 :PROPERTIES:
 :type: #blog
 :END:
 ---------------------------------------------------------------------
-Trying to collect interesting leetcode.com puzzles. And solve them in Python. Here is the code in [[url-external:https://github.com/dennyzhang/challenges-leetcode-interesting][GitHub]].
+Trying to collect interesting leetcode.com puzzles. And solve them in Python. Here is the code in [[url-external:https://github.com/dennyzhang/code.dennyzhang.com][GitHub]].
 
-[[image-github:https://github.com/dennyzhang/challenges-leetcode-interesting][https://cdn.dennyzhang.com/images/brain/github_interesting_leetcode.png]]
+[[image-github:https://github.com/dennyzhang/code.dennyzhang.com][https://cdn.dennyzhang.com/images/brain/github_interesting_leetcode.png]]
 
 ---------------------------------------------------------------------
 In this website, a large portion of problems come from [[url-external:https://leetcode.com][leetcode.com]].
 
-Personally I'm trying to solve all of them in Python. Here is my solution in [[url-external:https://github.com/dennyzhang/challenges-leetcode-interesting][GitHub]].
+Personally I'm trying to solve all of them in Python. Here is my solution in [[url-external:https://github.com/dennyzhang/code.dennyzhang.com][GitHub]].
 
 Check it out and discuss with me. [[color:#c7254e][Remember: We Two Is Just One Click Away!]]
 [[github:DennyZhang][Github]]
