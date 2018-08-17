@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Friend Requests I: Overall Acceptance Rate
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends][Friend Requests II: Who Has the Most Friends]]
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]

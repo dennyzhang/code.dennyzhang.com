@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Closest Binary Search Tree Value II
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/closest-binary-search-tree-value][Closest Binary Search Tree Value]]
 - [[https://code.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://code.dennyzhang.com/tag/binarytree][Tag: #binarytree]]

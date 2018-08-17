@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Implement Rand10() Using Rand7()
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/random-pick-with-blacklist][Leetcode: Random Pick with Blacklist]]
 - Tag: [[https://code.dennyzhang.com/tag/random][#random]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]

@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Longest Mountain in Array
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/peak-index-in-a-mountain-array][Peak Index in a Mountain Array]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/mountain][#mountain]]

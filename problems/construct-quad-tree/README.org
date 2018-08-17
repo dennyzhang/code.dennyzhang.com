@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Construct Quad Tree
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/quad-tree-intersection][Leetcode: Quad Tree Intersection]]
 - Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/quadtree][#quadtree]], [[https://code.dennyzhang.com/tag/postorder][#postorder]]

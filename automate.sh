@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 function my_test() {
-   for f in $(find . -name README.org); do
+    cd problems
+    for f in $(ls -1t */README.org); do
         dirname=$(basename $(dirname $f))
-        echo "Update for $f"
-        # sed -ie "s/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master/github.com\/DennyZhang\/challenges-leetcode-interesting\/tree\/master\/problems/g" $f
-        # sed -ie "s/url-external://g" $f
-        # rm -rf $dirname/README.orge
-        #exit
-   done
+            echo "Update blog $f"
+sed -ie 's/Similar Problems:/#+BEGIN_HTML\'$'\nSimilar Problems:/g' $f
+sed -ie 's/Similar Problems:/<a href="https:\/\/github.com\/dennyzhang\/code.dennyzhang.com"><img align="right" width="200" height="183" src="https:\/\/www.dennyzhang.com\/wp-content\/uploads\/denny\/watermark\/github.png" \/><\/a>\'$'\nSimilar Problems:/g' $f
+sed -ie 's/Similar Problems:/#+END_HTML\'$'\nSimilar Problems:/g' $f
+            rm -rf $dirname/README.orge
+    done
 }
 
 function refresh_wordpress() {
-    echo "Use emacs to update README.ord"
+    echo "Use emacs to update README.org"
     for d in "problems" "series" "review"; do
     # for d in "series" "review"; do
         cd "$d"

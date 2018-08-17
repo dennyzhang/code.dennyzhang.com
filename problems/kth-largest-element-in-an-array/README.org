@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Kth Largest Element in an Array
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/kth-largest-element-in-a-stream][Leetcode: Kth Largest Element in a Stream]]
 - [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]

@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Shortest Completing Word
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/group-shifted-strings][Group Shifted Strings]]
 - [[https://code.dennyzhang.com/sentence-similarity][Sentence Similarity]]
