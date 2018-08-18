@@ -1,0 +1,84 @@
+* Leetcode: Hex Conversion                                       :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bitmanipulation, classic
+:END:
+---------------------------------------------------------------------
+Hex Conversion
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Given a decimal number n and an integer k, Convert decimal number n to base-k.
+
+Example
+#+BEGIN_EXAMPLE
+Example 1:
+Given n = 5, k = 2
+return "101"
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Example 2:
+Given n = 30, k = 16
+return "1E"
+#+END_EXAMPLE
+
+Notice
+1.0<=n<=2^31-1, 2<=k<=16
+2.Each letter over 9 is indicated in uppercase
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/hex-conversion][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/hex-conversion/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/hex-conversion
+// Basic Ideas:
+// Complexity: Time O(1), Space O(1)
+/**
+ * @param n: a decimal number
+ * @param k: a Integer represent base-k
+ * @return: a base-k number
+ */
+import (
+    "strings"
+    "strconv"
+    )
+func decode(v int) string {
+    if v < 10 { return strconv.Itoa(v) }
+    return string(byte(v-10+int('A')))
+}
+
+func hexConversion (n int, k int) string {
+    if n == 0 { return "0" }
+    res := []string{}
+    negative := false
+    if n < 0 {
+        n = -n
+        negative = true
+    }
+    for n != 0 {
+        res = append([]string{decode(n%k)}, res...)
+        n = n/k
+    }
+    if negative { res = append([]string{"-"}, res...) }
+    return strings.Join(res, "")
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
