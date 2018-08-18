@@ -18,7 +18,7 @@ We are given a list of (axis-aligned) rectangles.  Each rectangle[i] = [x1, y1, 
 
 Find the total area covered by all rectangles in the plane.  Since the answer may be too large, return it modulo 10^9 + 7.
 
-[[Leetcode: Rectangle Area II][https://raw.githubusercontent.com/dennyzhang/challenges-leetcode-interesting/master/images/rectangle_area_ii_pic.png]]
+[[Leetcode: Rectangle Area II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/rectangle_area_ii_pic.png]]
 
 Example 1:
 #+BEGIN_EXAMPLE
@@ -41,7 +41,7 @@ Note:
 - 0 <= rectangles[i][j] <= 10^9
 - The total area covered by all rectangles will never exceed 2^63 - 1 and thus will fit in a 64-bit signed integer.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/rectangle-area-ii][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/rectangle-area-ii][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/rectangle-area-ii/description/][leetcode.com]]
 

@@ -40,7 +40,7 @@ function refresh_link() {
 
         if ! grep "tree\/master.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update GitHub url for $f"
-            sed -ie "s/tree\/master\/.*/tree\/master\/$dirname][challenges-leetcode-interesting]]/g" $f
+            sed -ie "s/tree\/master\/.*/tree\/master\/$dirname][code.dennyzhang.com]]/g" $f
             rm -rf $dirname/README.orge
         fi
 

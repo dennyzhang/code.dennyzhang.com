@@ -32,7 +32,7 @@ Notice
 1.0<=n<=2^31-1, 2<=k<=16
 2.Each letter over 9 is indicated in uppercase
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/hex-conversion][challenges-leetcode-interesting]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/hex-conversion][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/hex-conversion/description][lintcode.com]]
 

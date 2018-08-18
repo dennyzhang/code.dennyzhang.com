@@ -10,7 +10,7 @@
 <a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
 #+END_HTML
 
-File me [[https://github.com/DennyZhang/challenges-leetcode-interesting/issues][Issues]] or star [[https://github.com/DennyZhang/challenges-leetcode-interesting][this repo]].
+File me [[https://github.com/DennyZhang/code.dennyzhang.com/issues][Issues]] or star [[https://github.com/DennyZhang/code.dennyzhang.com][this repo]].
 
 See more challenges from Denny: [[https://github.com/topics/denny-challenges][#denny-challenges]]
 
@@ -93,7 +93,7 @@ My [[url-external:https://leetcode.com/dennyzhang/][leetcode profile]] and [[url
 </div>
 #+END_HTML
 
-This blog is posted from Github: [[url-external:https://github.com/dennyzhang/challenges-leetcode-interesting][challenges-leetcode-interesting]].
+This blog is posted from Github: [[url-external:https://github.com/dennyzhang/code.dennyzhang.com][code.dennyzhang.com]].
 
 And we have [[https://code.dennyzhang.com/slack][a slack group]] to discuss this. Why not join us?
 
@@ -180,8 +180,8 @@ By Denny: https://code.dennyzhang.com
 </div>
 #+END_HTML
 ---------------------------------------------------------------------
-- GitHub: [[url-external:https://github.com/dennyzhang/challenges-leetcode-interesting][challenges-leetcode-interesting]]
-[[image-github:https://github.com/dennyzhang/challenges-leetcode-interesting][https://cdn.dennyzhang.com/images/brain/github_interesting_leetcode.png]]
+- GitHub: [[url-external:https://github.com/dennyzhang/code.dennyzhang.com][code.dennyzhang.com]]
+[[image-github:https://github.com/dennyzhang/code.dennyzhang.com][https://cdn.dennyzhang.com/images/brain/github_interesting_leetcode.png]]
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">
