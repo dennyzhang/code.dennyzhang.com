@@ -1,0 +1,79 @@
+* LintCode: Poison Test                                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     game, poison, redo
+:END:
+---------------------------------------------------------------------
+Poison Test
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/poor-pigs][Leetcode: Poor Pigs]]
+- Tag: [[https://code.dennyzhang.com/tag/poison][#poison]], [[https://code.dennyzhang.com/tag/game][#game]]
+---------------------------------------------------------------------
+Description
+Given the n bottles of water, only one bottle of water is poison, and mouse will die 24 hours later after drinking any dose of poison.
+If you want to figure out that which bottle of water is poison in 24 hours, how many mice are needed to ensure to success of poison test?
+(That means you can only feed each mouse once)
+
+1<= n <=10000000
+
+Example
+#+BEGIN_EXAMPLE
+Given n=3,return 2
+
+Explanation:
+Let No. 1 mouse drink No.1 water,and let No. 2 mouse drink No.2 water
+If the No. 1 mouse died, it indicates that No. 1 water is poison.
+If the No. 2 mouse dies, it indicates that the No. 2 water is a poison.
+If it is not dead, it means that water No. 3 is poison.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given n=6,return 3
+
+Explanation:
+Let No. 1 mice drink No. 5 and No. 6 water,let No. 2 mice  drink No. 3 and No. 4 water, and let No. 3 mice drink No. 2, No. 4 and No. 6 water .
+If the mice 1, 2, and 3 are not dead, the water No. 1 is poisonous;
+If the mice 1, 2 are not dead, 3 die, then the 2nd water is poisonous;
+If the mice 1, 3 are not dead, 2 die, then the 3rd water is poisonous;
+If the mouse 1 does not die, 2, 3 die, then the 4th water is poisonous;
+If the mouse 1 dies, 2, 3 does not die, then the 5th water is poisonous;
+If the mice die 1, 3, 2 are not dead, then the 6th water is poisonous;
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/poison-test][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/poison-test/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/poison-test
+// Basic Ideas:
+// Complexity: Time O(log(n)), Time O(1)
+/**
+ * @param n: There are n bottles of water
+ * @return: Return the number of mice
+ */
+func getAns (n int) int {
+    res, val := 0, 1
+    for val < n {
+        res, val = res+1, val*2
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

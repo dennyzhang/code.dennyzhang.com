@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, poison
 :END:
 ---------------------------------------------------------------------
 Identity the poison bucket with mininum pigs
@@ -11,7 +11,9 @@ Identity the poison bucket with mininum pigs
 <a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- [[https://code.dennyzhang.com/poison-test][LintCode: Poison Test]]
+- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/poison][#poison]]
 ---------------------------------------------------------------------
 There are 1000 buckets, one and only one of them contains poison, the rest are filled with water. They all look the same. If a pig drinks that poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket contains the poison within one hour.
 

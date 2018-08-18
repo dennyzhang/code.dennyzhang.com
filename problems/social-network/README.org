@@ -1,0 +1,102 @@
+* LintCode: Social Network                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, bfs, classic
+:END:
+---------------------------------------------------------------------
+Social Network
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Description
+
+Everyone has their online friends. Now there are n people and m friend relationships . Ask if any person can directly or indirectly contact all online people. If ok, return "yes", else return "no".
+The friend relationship is represented by a array a and a array b, which means that a[i] and b[i] are a pair of friends.
+
+- 1 <= n <= 5000
+- 1 <= m <= 10000
+
+A person may be friends with himself
+
+Example
+
+Given n=4, a=[1,1,1], b=[2,3,4],return yes.
+#+BEGIN_EXAMPLE
+
+1 and 2, 3, 4 can be directly contacted
+2, 3, 4 and 1 can be directly contacted, these 3 people can be indirectly contacted by 1
+#+END_EXAMPLE
+
+Given n=5, a=[1,2,4], b=[2,3,5], return no.
+#+BEGIN_EXAMPLE
+1,2,3 can be connected to each other
+4,5 can communicate with each other
+However, the two groups cannot be contacted. For example, 1 cannot contact 4 or 5
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/social-network][challenges-leetcode-interesting]]
+
+Credits To: [[https://www.lintcode.com/problem/social-network/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/social-network
+// Basic Ideas: BFS
+// Check whether graph is one connected graph
+//
+// Complexity: Time O(n), Space O(n)
+/**
+ * @param n: the person sum
+ * @param a: the array a
+ * @param b: the array b
+ * @return: yes or no
+ */
+func socialNetwork (n int, a []int, b []int) string {
+    if n == 0 { return "no" }
+    
+    m := map[int][]int{}
+    visited := make([]bool, n)
+    for i, _ := range a {
+        n1, n2 := a[i]-1, b[i]-1
+        m[n1] = append(m[n1], n2)
+        m[n2] = append(m[n2], n1)
+    }
+    
+    queue := []int{0}
+    visited[0] = true
+    for len(queue) != 0 {
+        l := []int{}
+        for _, node := range queue {
+            for _, node2 := range m[node] {
+                if !visited[node2] {
+                    visited[node2] = true
+                    l = append(l, node2)
+                }
+            }
+        }
+        queue = l
+    }
+    // check whether it's all connected
+    for _, v := range visited {
+        if !v { return "no" }
+    }
+    
+    return "yes"
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
