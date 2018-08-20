@@ -16,9 +16,12 @@ File me [[https://github.com/DennyZhang/code.dennyzhang.com/issues][Issues]] or 
 - *My blog about coder interview*: https://code.dennyzhang.com/
 - Join our slack group: https://code.dennyzhang.com/slack
 
-My [[https://leetcode.com/dennyzhang][leetcode profile]]
+My profile in [[https://leetcode.com/dennyzhang][LeetCode]] and [[https://www.lintcode.com/user/DennyZhang][LintCode]]
 #+BEGIN_HTML
-<a href="https://code.dennyzhang.com"><img align="left" width="328" height="564" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png"></a>
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"><a href="https://leetcode.com/dennyzhang"><img style="width:189px;height:329px;" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png" alt="leetcode" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.lintcode.com/user/DennyZhang"><img style="width:387px;height:260px;"  src="https://cdn.dennyzhang.com/images/brain/denny_lintcode.png" alt="lintcode" /></a></div>
+</div>
 #+END_HTML
 
 See more challenges from Denny: [[https://github.com/topics/denny-challenges][#denny-challenges]]
