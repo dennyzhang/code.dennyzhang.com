@@ -12,7 +12,7 @@
 
 File me [[https://github.com/DennyZhang/code.dennyzhang.com/issues][Issues]] or star [[https://github.com/DennyZhang/code.dennyzhang.com][this repo]].
 
-- See [[problems][problems]]: I use mainly golang and python
+- See [[all problems][problems]]
 - *My blog about coder interview*: https://code.dennyzhang.com/
 - Join our slack group: https://code.dennyzhang.com/slack
 
