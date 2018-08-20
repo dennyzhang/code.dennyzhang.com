@@ -1,0 +1,71 @@
+* LintCode: Student ID                                           :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     oodesign
+:END:
+---------------------------------------------------------------------
+Student ID
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
+---------------------------------------------------------------------
+Description
+Implement a class Class with the following attributes and methods:
+
+A public attribute students which is a array of Student instances.
+A constructor with a parameter n, which is the total number of students in this class. The constructor should create n Student instances and initialized with student id from 0 ~ n-1
+
+Example
+#+BEGIN_EXAMPLE
+Java: 
+  Class cls = new Class(3)
+  cls.students[0]; // should be a student instance with id = 0
+  cls.students[1]; // should be a student instance with id = 1
+  cls.students[2]; // should be a student instance with id = 2
+
+Python:
+  cls = new Class(3)
+  cls.students[0] # should be a student instance with id = 0
+  cls.students[1] # should be a student instance with id = 1
+  cls.students[2] # should be a student instance with id = 2
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/student-id][code.dennyzhang.com]]
+
+Credits To: [[https://www.lintcode.com/problem/student-id/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/student-id
+class Student:
+    def __init__(self, id):
+        self.id = id;
+
+class Class:
+
+    '''
+     * Declare a constructor with a parameter n which is the total number of
+     * students in the *class*. The constructor should create n Student
+     * instances and initialized with student id from 0 ~ n-1
+    '''
+    # write your code here
+    def __init__(self, n):
+        self.students = []
+        for i in range(n):
+            self.students.append(Student(i))
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

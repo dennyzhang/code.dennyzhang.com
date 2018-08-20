@@ -1,0 +1,69 @@
+* LintCode: Middle of Linked List                                :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist, classic
+:END:
+---------------------------------------------------------------------
+Middle of Linked List
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Description
+Find the middle node of a linked list.
+
+Example
+Given 1->2->3, return the node with value 2.
+
+Given 1->2, return the node with value 1.
+
+Follow-up:
+Instead of solving it by two-pass. Can you do it in one-pass?
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/middle-of-linked-list][code.dennyzhang.com]]
+
+Credits To: [[https://www.lintcode.com/problem/middle-of-linked-list/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/middle-of-linked-list
+## Basic Ideas: fast/slow pointers
+## Complexity: Time O(n), Space O(1)
+"""
+Definition of ListNode
+class ListNode(object):
+
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+
+class Solution:
+    """
+    @param: head: the head of linked list.
+    @return: a middle node of the linked list
+    """
+    def middleNode(self, head):
+        slow, fast = head, head
+        while fast and fast.next and fast.next.next:
+            slow = slow.next
+            fast = fast.next.next
+        return slow
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

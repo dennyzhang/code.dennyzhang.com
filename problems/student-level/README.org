@@ -1,0 +1,86 @@
+* LintCode: Student Level                                        :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     oodesign
+:END:
+---------------------------------------------------------------------
+Student Level
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
+---------------------------------------------------------------------
+Description
+Implement a class Student, including the following attributes and methods:
+
+1. Two public attributes name(string) and score(int).
+- A constructor expect a name as a parameter.
+- A method getLevel to get the level(char) of the student.
+
+score - level table:
+
+1. A: score >= 90
+- B: score >= 80 and < 90
+- C: score >= 60 and < 80
+- D: score < 60
+
+Example
+#+BEGIN_EXAMPLE
+Java:
+    Student student = new Student("Zuck");
+    student.score = 10;
+    student.getLevel(); // should be 'D'
+    student.score = 60;
+    student.getLevel(); // should be 'C'
+
+Python:
+    student = Student("Zuck")
+    student.score = 10
+    student.getLevel() # should be 'D'
+    student.score = 60
+    student.getLevel() # should be 'C'
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/student-level][code.dennyzhang.com]]
+
+Credits To: [[https://www.lintcode.com/problem/student-level/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/student-level
+## Basic Ideas:
+## Complexity: Time O(1), Space O(1)
+class Student:
+    
+    '''
+     * Declare a constructor expect a name as a parameter.
+    '''
+	# write your code here
+    def __init__(self, name):
+        self.name = name
+        self.score = 0
+    
+    '''
+     * Declare a public method `getLevel` to get the level(char) of this student.
+    '''
+    # write your code here
+    def getLevel(self):
+        if self.score >= 90: return 'A'
+        if self.score>=80 and self.score<90: return 'B'
+        if self.score>=60 and self.score<80: return 'C'
+        return 'D'
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
