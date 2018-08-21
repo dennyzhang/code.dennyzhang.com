@@ -1,0 +1,125 @@
+* LintCode: BST Node Distance                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bst, inspiring, lca
+:END:
+---------------------------------------------------------------------
+BST Node Distance
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/bst][#bst]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]],  [[https://code.dennyzhang.com/tag/lca][#lca]]
+---------------------------------------------------------------------
+Description
+
+Given a list of numbers, construct a BST from it and find the distance between two given nodes.
+
+If two nodes do not appear in the BST, return -1
+We guarantee that there are no duplicate nodes in BST
+
+Example
+#+BEGIN_EXAMPLE
+input:
+numbers = [2,1,3]
+node1 = 1
+node2 = 3
+output:
+2
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/bst-node-distance][code.dennyzhang.com]]
+
+Credits To: [[https://lintcode.com/problem/bst-node-distance/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/bst-node-distance
+// Basic Ideas:
+// Least Common Ancestor
+// Complexity: Time O(n), Space O(n)
+/**
+ * @param numbers: the given list
+ * @param node1: the given node1
+ * @param node2: the given node2
+ * @return: the distance between two nodes
+ */
+func getDistance(root *TreeNode, node *TreeNode) int {
+    if node.Val == root.Val { return 0 }
+    p := root.Left
+    if root.Val < node.Val { p = root.Right }
+    return 1 + getDistance(p, node)
+}
+
+func bstDistance (numbers []int, node1 int, node2 int) int {
+    if node1 == node2 || len(numbers) <= 2 { return -1 }
+    // TODO: how to combine below two lines as one?
+    p1, p2 := &TreeNode{}, &TreeNode{}
+    p1, p2 = nil, nil
+    // Build BST
+    root := &TreeNode{}
+    for i, val := range numbers {
+        q := &TreeNode{nil, nil, val}
+        if val == node1 { p1 = q }
+        if val == node2 { p2 = q }
+        if i == 0 {
+            root = q
+            continue
+        }
+
+        p := root
+        for true {
+            if q.Val < p.Val {
+                if p.Left == nil {
+                    p.Left = q
+                    break
+                }
+                p = p.Left
+            } else {
+                if p.Right == nil {
+                    p.Right = q
+                    break
+                }
+                p = p.Right
+            }
+        }
+    }
+
+    // Invalid input
+    if p1 == nil || p2 == nil { return -1 }
+    min, max := 0, 0
+    if node1 > node2 {
+        max, min = node1, node2
+    } else {
+        max, min = node2, node1
+    }
+    
+    // find distance
+    p := root
+    for p != nil {
+        if p.Val > max {
+            p = p.Left
+            continue
+        }
+        if p.Val < min {
+            p = p.Right
+            continue
+        }
+        return getDistance(p, p1) + getDistance(p, p2)
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

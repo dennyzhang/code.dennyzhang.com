@@ -385,7 +385,7 @@ http://delta.logdown.com/posts/2014/09/19/leetcode-3
 * HALF [#A] code.dennyzhang.com                                    :noexport:
 https://www.sigmainfy.com/blog/leetcode-handbook-all-problem-solution-index.html
 
-http://brain.dennyzhang.com/majority-element-ii
+https://code.dennyzhang.com/majority-element-ii
 /Users/DennyZhang/Dropbox/private_data/project/devops_consultant/consultant_code/github/leetcode/challenges-leetcode-interesting/majority-element-ii/README.org
 
 1. Aggregate quiz by category: Backtracking, Greedy, DP, Search, Sum, Tree, Linked List, Array, Simulation, Math, Hash, Bit Operation
@@ -397,7 +397,7 @@ http://brain.dennyzhang.com/majority-element-ii
     CLOSED: [2018-01-09 Tue 15:01]
 *** DONE list questions by tag/category: Basic, Amusing, Hard, Contact
     CLOSED: [2018-01-09 Tue 15:01]
-*** DONE shutdown cheatsheet.dennyzhang.com, and increase memeory of brain.dennyzhang.com
+*** DONE shutdown cheatsheet.dennyzhang.com, and increase memeory of code.dennyzhang.com
     CLOSED: [2018-01-10 Wed 15:27]
 *** CANCELED WordPress GitHub Sync
   CLOSED: [2018-01-09 Tue 12:40]
@@ -424,7 +424,7 @@ https://github.com/mAAdhaTTah/wordpress-github-sync/issues/174
     CLOSED: [2018-01-21 Sun 23:01]
 *** DONE script to: generate readme.org to readme.md
     CLOSED: [2018-01-21 Sun 23:01]
-*** DONE Update tags: http://brain.dennyzhang.com/tags/
+*** DONE Update tags: https://code.dennyzhang.com/tags/
     CLOSED: [2018-01-21 Sun 23:01]
 *** DONE Create a WordPress Tag Page
    CLOSED: [2018-01-21 Sun 23:00]
@@ -438,13 +438,13 @@ https://wordpress.org/plugins/tags-page/
 https://wordpress.org/plugins/contextual-related-posts/
 *** DONE blog enable https
     CLOSED: [2018-01-26 Fri 12:02]
-*** DONE [#A] generate certificate for slack.dennyzhang.com, dennyzhang.com: https://brain.dennyzhang.com
+*** DONE [#A] generate certificate for slack.dennyzhang.com, dennyzhang.com: https://code.dennyzhang.com
     CLOSED: [2018-02-12 Mon 16:38]
 *** DONE [#A] Good sample of code syntax: http://sdytlm.github.io/blog/2016/09/10/leetcode-utf-8-validation/
     CLOSED: [2018-02-12 Mon 16:38]
 *** DONE Interlink: bring more traffic
     CLOSED: [2018-02-12 Mon 16:40]
-*** DONE [#A] Show the list for tagged problems: http://brain.dennyzhang.com/review-binarytree/
+*** DONE [#A] Show the list for tagged problems: https://code.dennyzhang.com/review-binarytree/
     CLOSED: [2018-02-12 Mon 16:40]
 *** DONE Show all review blog posts as default
     CLOSED: [2018-02-25 Sun 18:18]
@@ -513,7 +513,7 @@ Boundary of the small dataset
 ** TODO [#A] avoid use cdn: just another vhost; automate the change
 ** TODO [#A] sort tags by importance, instead of lexicographical order
 ** TODO Similar github repo: https://github.com/kamyu104/LeetCode
-** TODO Wrong indent for the bullet points: https://brain.dennyzhang.com/system-design-interview
+** TODO Wrong indent for the bullet points: https://code.dennyzhang.com/system-design-interview
 ** #  --8<-------------------------- separator ------------------------>8-- :noexport:
 ** TODO [#A] doc: list all element under one tag
 ** TODO [#A] doc: list all element under with two tag enabled
@@ -522,8 +522,8 @@ Boundary of the small dataset
 ** TODO better slack emoji
 ** #  --8<-------------------------- separator ------------------------>8-- :noexport:
 ** TODO Blog: What I learned from code test preparation
-** HALF reference format issue: https://brain.dennyzhang.com/design-db-replication#fn.2
-** TODO Why slack no thumbnail: https://brain.dennyzhang.com/design-books
+** HALF reference format issue: https://code.dennyzhang.com/design-db-replication#fn.2
+** TODO Why slack no thumbnail: https://code.dennyzhang.com/design-books
 ** #  --8<-------------------------- separator ------------------------>8-- :noexport:
 ** TODO code.dennyzhang.com: search for two tags combined
 * TODO [#A] change target scenario of code blog                    :noexport:

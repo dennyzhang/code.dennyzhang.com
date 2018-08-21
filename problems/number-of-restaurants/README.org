@@ -1,0 +1,75 @@
+* LintCode: Number of restaurants                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     heap, interview
+:END:
+---------------------------------------------------------------------
+Number of restaurants
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/interview][#interview]]
+---------------------------------------------------------------------
+Description
+Give a List of data representing the coordinates[x,y] of each restaurant. Customer's coordinates are at the origin[0,0].Find out the n restaurants closest to the customer ,return their coordinates in the original order.
+
+1. Coordinates in range [-1000,1000]
+- n>0
+
+Example
+#+BEGIN_EXAMPLE
+Given:
+
+n = 2
+List = [[0,0],[1,1],[2,2]]
+Return:
+
+[[0,0],[1,1]]
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/number-of-restaurants][code.dennyzhang.com]]
+
+Credits To: [[https://lintcode.com/problem/number-of-restaurants/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/number-of-restaurants
+## Basic Ideas: maxheap
+## Complexity: Time O(max(r, n*log(n)), Space O(n)
+##              r = len(restaurant)
+import heapq
+
+class Solution:
+    """
+    @param restaurant: 
+    @param n: 
+    @return: nothing
+    """
+    def nearestRestaurant(self, restaurant, n):
+        if len(restaurant) < n: return []
+        l = []
+        heapq.heapify(l)
+        for i, r in enumerate(restaurant):
+            d = r[0]*r[0] + r[1]*r[1]
+            heapq.heappush(l, (-d, i))
+            if len(l) > n: heapq.heappop(l)
+
+        l.sort(key=lambda x:x[1])
+        res = []
+        for (_, i) in l: res.append(restaurant[i])
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,0 +1,60 @@
+* LintCode: Interval Search                                      :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     interval, interview
+:END:
+---------------------------------------------------------------------
+Interval Search
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/interval][#interval]]
+---------------------------------------------------------------------
+Description
+Given a List of intervals, the length of each interval is 1000, such as [500,1500], [2100,3100].Give a number arbitrarily and determine if the number belongs to any of the intervals.return True or False.
+
+Example
+#+BEGIN_EXAMPLE
+Given:
+
+List = [[100,1100],[1000,2000],[5500,6500]]
+number = 6000
+Return: True
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/interval-search][code.dennyzhang.com]]
+
+Credits To: [[https://lintcode.com/problem/interval-search/description][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/interval-search
+## Basic Ideas:
+## Binarysearch won't work, since the intervals may overlap
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    """
+    @param intervalList: 
+    @param number: 
+    @return: return True or False
+    """
+    def isInterval(self, intervalList, number):
+        for intv in intervalList:
+            if intv[0] <= number <= intv[1]:
+                return "True"
+        return "False"
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

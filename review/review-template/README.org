@@ -83,7 +83,7 @@ class Solution:
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/tag/bfs][#bfs]]: [[https://code.dennyzhang.com/open-the-lock][Open the Lock]]
 #+BEGIN_SRC python
-## Blog link: http://code.dennyzhang.com/open-the-lock
+## Blog link: https://code.dennyzhang.com/open-the-lock
 dead_set, seen, queue = set([]), set([]), collections.deque([])
 for dead in deadends: dead_set.add(dead)
 if '0000' in dead_set: return -1
@@ -142,7 +142,7 @@ return -1
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/tag/trie][#trie]]: [[https://code.dennyzhang.com/longest-word-in-dictionary][Longest Word in Dictionary]]
 #+BEGIN_SRC python
-## Blog link: http://code.dennyzhang.com/longest-word-in-dictionary
+## Blog link: https://code.dennyzhang.com/longest-word-in-dictionary
 ## Basic Ideas: trie tree
 ## Complexity: Time O(n), Space O(n). n the count of characters involved
 class TrieNode(object):
@@ -223,7 +223,7 @@ Revert a linked list: [[https://code.dennyzhang.com/reverse-linked-list-ii][Reve
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]: [[https://code.dennyzhang.com/number-of-1-bits][Number of 1 Bits]]
 #+BEGIN_SRC python
-## Blog link: http://code.dennyzhang.com/number-of-1-bits
+## Blog link: https://code.dennyzhang.com/number-of-1-bits
 res = 0
 while n != 0:
     n = n & (n-1)
@@ -233,7 +233,7 @@ return res
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/tag/heap][#heap]]: [[https://code.dennyzhang.com/kth-largest-element-in-an-array][Kth Largest Element in an Array]]
 #+BEGIN_SRC python
-## Blog link: http://code.dennyzhang.com/kth-largest-element-in-an-array
+## Blog link: https://code.dennyzhang.com/kth-largest-element-in-an-array
 q = []
 for num in nums: heapq.heappush(q, num)
 return heapq.nlargest(k, q)[-1]
