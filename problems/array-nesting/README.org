@@ -33,7 +33,7 @@ Note:
 - The elements of A are all distinct.
 - Each element of A is an integer within the range [0, N-1].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/array-nesting][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/array-nesting][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/array-nesting/description/][leetcode.com]]
 

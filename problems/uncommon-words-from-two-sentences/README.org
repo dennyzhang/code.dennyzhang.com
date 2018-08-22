@@ -40,7 +40,7 @@ Note:
 - 0 <= B.length <= 200
 - A and B both contain only spaces and lowercase letters.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/uncommon-words-from-two-sentences][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/uncommon-words-from-two-sentences][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/uncommon-words-from-two-sentences/description/][leetcode.com]]
 

@@ -30,7 +30,7 @@ output:
 2
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/bst-node-distance][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/bst-node-distance][code.dennyzhang.com]]]]
 
 Credits To: [[https://lintcode.com/problem/bst-node-distance/description][lintcode.com]]
 

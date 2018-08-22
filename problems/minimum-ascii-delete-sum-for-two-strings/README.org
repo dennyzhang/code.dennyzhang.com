@@ -40,7 +40,7 @@ Note:
 - All elements of each string will have an ASCII value in [97, 122].
 
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/minimum-ascii-delete-sum-for-two-strings][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-ascii-delete-sum-for-two-strings][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/][leetcode.com]]
 

@@ -36,7 +36,7 @@ Explanation:
 No matter how many bits are taken, they are all 0, so all output.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/binary-stream][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-stream][code.dennyzhang.com]]]]
 
 Credits To: [[https://www.lintcode.com/problem/binary-stream/description][lintcode.com]]
 

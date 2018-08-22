@@ -15,7 +15,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/swap-two-integers-in-array][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/swap-two-integers-in-array][code.dennyzhang.com]]]]
 
 Credits To: [[https://www.lintcode.com/problem/swap-two-integers-in-array/][lintcode.com]]
 

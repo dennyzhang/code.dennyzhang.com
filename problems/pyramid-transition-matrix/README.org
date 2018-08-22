@@ -50,7 +50,7 @@ Note:
 - allowed will have length in range [0, 200].
 - Letters in all strings will be chosen from the set {'A', 'B', 'C', 'D', 'E', 'F', 'G'}.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/pyramid-transition-matrix][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/pyramid-transition-matrix][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/pyramid-transition-matrix/description/][leetcode.com]]
 

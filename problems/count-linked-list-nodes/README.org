@@ -22,7 +22,7 @@ Example
 
 Given 1->3->5, return 3.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/count-linked-list-nodes][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-linked-list-nodes][code.dennyzhang.com]]]]
 
 Credits To: [[https://www.lintcode.com/problem/count-linked-list-nodes/description][lintcode.com]]
 

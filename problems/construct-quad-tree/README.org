@@ -38,7 +38,7 @@ Note:
 1. N is less than 1000 and guaranteened to be a power of 2.
 - If you want to know more about the quad tree, you can refer to its [[https://en.wikipedia.org/wiki/Quadtree][wiki]].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/construct-quad-tree][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/construct-quad-tree][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/construct-quad-tree/description/][leetcode.com]]
 

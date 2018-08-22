@@ -19,7 +19,7 @@ Given a string, convert it to an integer. You may assume the string is a valid i
 Example
 Given "123", return 123.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/string-to-integer][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-to-integer][code.dennyzhang.com]]]]
 
 Credits To: [[https://www.lintcode.com/problem/string-to-integer/description][lintcode.com]]
 

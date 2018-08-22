@@ -45,7 +45,7 @@ If the mouse 1 dies, 2, 3 does not die, then the 5th water is poisonous;
 If the mice die 1, 3, 2 are not dead, then the 6th water is poisonous;
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/poison-test][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/poison-test][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/poison-test/description][lintcode.com]]
 

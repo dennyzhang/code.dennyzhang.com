@@ -37,7 +37,7 @@ Given a binary tree:
 return the node with value 3.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/binary-tree-maximum-node][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-tree-maximum-node][code.dennyzhang.com]]]]
 
 Credits To: [[https://www.lintcode.com/problem/binary-tree-maximum-node/description][lintcode.com]]
 

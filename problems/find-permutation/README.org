@@ -39,7 +39,7 @@ Note:
 - The input string will only contain the character 'D' and 'I'.
 - The length of input string is a positive integer and will not exceed 10,000
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/find-permutation][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-permutation][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/find-permutation/description/][leetcode.com]]
 

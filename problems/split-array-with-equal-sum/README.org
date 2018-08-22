@@ -35,7 +35,7 @@ Note:
 1. 1 <= n <= 2000.
 - Elements in the given array will be in range [-1,000,000, 1,000,000].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/split-array-with-equal-sum][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/split-array-with-equal-sum][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/split-array-with-equal-sum/description/][leetcode.com]]
 

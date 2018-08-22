@@ -57,7 +57,7 @@ Note:
 1. expression will have length in range [1, 250].
 - evalvars, evalints will have equal lengths in range [0, 100].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/basic-calculator-iv][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/basic-calculator-iv][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/basic-calculator-iv/description/][leetcode.com]]
 

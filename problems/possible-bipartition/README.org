@@ -48,7 +48,7 @@ Note:
 - dislikes[i][0] < dislikes[i][1]
 - There does not exist i != j for which dislikes[i] == dislikes[j].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/possible-bipartition][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/possible-bipartition][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/possible-bipartition/description/][leetcode.com]]
 

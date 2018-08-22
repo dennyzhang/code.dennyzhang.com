@@ -21,7 +21,7 @@ Convert a linked list to an array list.
 
 Given 1->2->3->null, return [1,2,3].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/convert-linked-list-to-array-list][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/convert-linked-list-to-array-list][code.dennyzhang.com]]]]
 
 Credits To: [[https://www.lintcode.com/problem/convert-linked-list-to-array-list/description][lintcode.com]]
 

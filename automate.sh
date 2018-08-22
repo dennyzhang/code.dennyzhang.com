@@ -70,9 +70,9 @@ function refresh_link() {
             rm -rf $dirname/README.orge
         fi
 
-        if ! grep "tree\/master.*$dirname" $f 1>/dev/null 2>&1; then
+        if ! grep "Github:.*tree\/master/problems/.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update GitHub url for $f"
-            sed -ie "s/tree\/master\/.*/tree\/master\/$dirname][code.dennyzhang.com]]/g" $f
+            sed -ie "s/tree\/master\/.*code.dennyzhang.com/tree\/master\/problems\/$dirname][code.dennyzhang.com]]/g" $f
             rm -rf $dirname/README.orge
         fi
 

@@ -40,7 +40,7 @@ Note:
 - ExamRoom.seat() and ExamRoom.leave() will be called at most 10^4 times across all test cases.
 - Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in seat number p.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/exam-room][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/exam-room][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/exam-room/description/][leetcode.com]]
 

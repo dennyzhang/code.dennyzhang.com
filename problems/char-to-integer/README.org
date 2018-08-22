@@ -22,7 +22,7 @@ Given a, return 97.
 
 Given %, return 37.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/char-to-integer][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/char-to-integer][code.dennyzhang.com]]]]
 
 Credits To: [[https://www.lintcode.com/problem/char-to-integer/description][lintcode.com]]
 

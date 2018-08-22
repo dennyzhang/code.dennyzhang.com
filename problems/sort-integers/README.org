@@ -19,7 +19,7 @@ Example
 
 Given [3, 2, 1, 4, 5], return [1, 2, 3, 4, 5].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/sort-integers][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-integers][code.dennyzhang.com]]]]
 
 Credits To: [[https://leetcode.com/problems/sort-integers/description/][leetcode.com]]
 
