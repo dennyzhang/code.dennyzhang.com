@@ -1,4 +1,30 @@
 #!/usr/bin/env bash
+function git_push() {
+    for d in $(ls -1); do
+        if [ -d "$d" ] && [ -d "$d/.git" ] ; then
+            cd "$d"
+            echo "In ${d}, git commit and push"
+            git commit -am "update doc"
+            git push origin
+            cd ..
+        fi
+    done
+    git commit -am "update doc"
+    git push origin
+}
+
+function git_pull() {
+    for d in $(ls -1); do
+        if [ -d "$d" ] && [ -d "$d/.git" ] ; then
+            cd "$d"
+            echo "In ${d}, git commit and push"
+            git pull origin
+            cd ..
+        fi
+    done
+    git pull origin
+}
+
 function my_test() {
     cd problems
     for f in $(ls -1t */README.org); do
@@ -32,6 +58,12 @@ function refresh_link() {
     cd problems
     for f in $(ls -1t */README.org); do
         dirname=$(basename $(dirname $f))
+        if ! grep "github.com\/dennyzhang\/code.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
+            echo "Update github fork link for $f"
+            sed -ie "s/github.com\/dennyzhang\/code.dennyzhang.com.*\"/github.com\/dennyzhang\/code.dennyzhang.com\/tree\/master\/problems\/$dirname\"/g" $f
+            rm -rf $dirname/README.orge
+        fi
+
         if ! grep "Blog link: https:\/\/code.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update blog url for $f"
             sed -ie "s/Blog link: https:\/\/code.dennyzhang.com\/.*/Blog link: https:\/\/code.dennyzhang.com\/$dirname/g" $f

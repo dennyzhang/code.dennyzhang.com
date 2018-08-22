@@ -343,6 +343,8 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 ** misc                                                            :noexport:
 https://github.com/yangshun/tech-interview-handbook/blob/master/interviewers/basics.md
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] Role Models                                            :noexport:
+https://github.com/donnemartin/interactive-coding-challenges
 * TODO interview                                                   :noexport:
 ** uber: Leetcode: Group Anagrams
 https://code.dennyzhang.com/group-anagrams#wp-toolbar
