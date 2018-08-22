@@ -86,20 +86,5 @@ function refresh_link() {
     done
 }
 
-cd .
-
 action=${1?}
-case "$action" in 
-    refresh_wordpress)
-        refresh_wordpress
-        ;;
-    refresh_link)
-        refresh_link
-        ;;
-    my_test)
-        my_test
-        ;;
-        *) 
-        echo "no matched action. Supported: refresh_link|my_test"
-        ;;
-esac
+eval "$action"
