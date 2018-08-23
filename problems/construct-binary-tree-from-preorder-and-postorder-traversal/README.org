@@ -1,0 +1,72 @@
+* Leetcode: Construct Binary Tree from Preorder and Postorder Traversal :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree, inspiring, redo
+:END:
+---------------------------------------------------------------------
+Construct Binary Tree from Preorder and Postorder Traversal
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/construct-binary-tree-from-preorder-and-postorder-traversal"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
+Return any binary tree that matches the given preorder and postorder traversals.
+Values in the traversals pre and post are distinct positive integers.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: pre = [1,2,4,5,3,6,7], post = [4,5,2,6,7,3,1]
+Output: [1,2,3,4,5,6,7]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= pre.length == post.length <= 30
+- pre[] and post[] are both permutations of 1, 2, ..., pre.length.
+- It is guaranteed an answer exists. If there exists multiple answers, you can return any of them.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/construct-binary-tree-from-preorder-and-postorder-traversal][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-postorder-traversal
+// Basic Ideas:
+// Complexity: Time ?, Space O?
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func constructFromPrePost(pre []int, post []int) *TreeNode {
+    if len(pre) == 0 { return nil }
+    res := &TreeNode{pre[0], nil, nil}
+    if len(pre) == 1 { return res }
+    for i:=len(pre)-1; i>=0; i-- {
+        if post[i] == pre[1] {
+            res.Left = constructFromPrePost(pre[1:i+2], post[0:i+1])
+            res.Right = constructFromPrePost(pre[i+2:], post[i+1:len(pre)-1])
+            break
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

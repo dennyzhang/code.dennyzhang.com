@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, hashmap
+:type:     string, hashmap, encoding
 :END:
 ---------------------------------------------------------------------
 Unique Morse Code Words
@@ -11,7 +11,7 @@ Unique Morse Code Words
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-morse-code-words"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/encoding][#encoding]]
 ---------------------------------------------------------------------
 International Morse Code defines a standard encoding where each letter is mapped to a series of dots and dashes, as follows: "a" maps to ".-", "b" maps to "-...", "c" maps to "-.-.", and so on.
 

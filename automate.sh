@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash -e
 function git_push() {
     for d in $(ls -1); do
-        if [ -d "$d" ] && [ -d "$d/.git" ] ; then
+        if [ -d "$d" ] && [ -f "$d/.git" ] ; then
             cd "$d"
             echo "In ${d}, git commit and push"
             git commit -am "update doc"
@@ -15,7 +15,7 @@ function git_push() {
 
 function git_pull() {
     for d in $(ls -1); do
-        if [ -d "$d" ] && [ -d "$d/.git" ] ; then
+        if [ -d "$d" ] && [ -f "$d/.git" ] ; then
             cd "$d"
             echo "In ${d}, git commit and push"
             git pull origin
@@ -60,7 +60,7 @@ function refresh_link() {
         dirname=$(basename $(dirname $f))
         if ! grep "github.com\/dennyzhang\/code.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update github fork link for $f"
-            sed -ie "s/github.com\/dennyzhang\/code.dennyzhang.com.*\"/github.com\/dennyzhang\/code.dennyzhang.com\/tree\/master\/problems\/$dirname\"/g" $f
+            sed -ie "s/github.com\/dennyzhang\/code.dennyzhang.com.*\">/github.com\/dennyzhang\/code.dennyzhang.com\/tree\/master\/problems\/$dirname\">/g" $f
             rm -rf $dirname/README.orge
         fi
 
@@ -72,7 +72,7 @@ function refresh_link() {
 
         if ! grep "Github:.*tree\/master/problems/.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update GitHub url for $f"
-            sed -ie "s/tree\/master\/.*code.dennyzhang.com/tree\/master\/problems\/$dirname][code.dennyzhang.com]]/g" $f
+            sed -ie "s/tree\/master\/.*code.dennyzhang.com/tree\/master\/problems\/$dirname][code.dennyzhang.com/g" $f
             rm -rf $dirname/README.orge
         fi
 

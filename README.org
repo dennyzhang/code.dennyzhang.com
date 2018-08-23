@@ -574,3 +574,17 @@ open /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
 * TODO [#A] Ask Facebook to replace the link: https://github.com/Techsture/sre_study_guide :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Each post add one blog post: https://code.dennyzhang.com/poison-test :noexport:
+https://github.com/dennyzhang/cheatsheet-golang-A4
+
+From:
+#+BEGIN_EXAMPLE
+Similar Problems:
+#+END_EXAMPLE
+
+To:
+#+BEGIN_EXAMPLE
+Blog URL: https://code.dennyzhang.com/poison-test
+
+Similar Problems:
+#+END_EXAMPLE
+* TODO function color issue: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-postorder-traversal :noexport:
