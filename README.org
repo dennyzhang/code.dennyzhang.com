@@ -38,7 +38,6 @@ See more challenges from Denny: [[https://github.com/topics/denny-challenges][#d
  #+END_HTML
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone hidestars
-#+TITLE:  code.dennyzhang.com
 #+DESCRIPTION: 
 #+KEYWORDS: 
 #+AUTHOR: Denny Zhang
