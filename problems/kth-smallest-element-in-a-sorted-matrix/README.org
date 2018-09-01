@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     binarysearch, classic
 :END:
 ---------------------------------------------------------------------
 Kth Smallest Element in a Sorted Matrix
@@ -12,7 +12,7 @@ Kth Smallest Element in a Sorted Matrix
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.
 
@@ -31,7 +31,7 @@ return 13.
 #+END_EXAMPLE
 
 Note: 
-You may assume k is always valid, 1 ≤ k ≤ n2.
+You may assume k is always valid, 1 <= k <= n2.
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/kth-smallest-element-in-a-sorted-matrix][code.dennyzhang.com]]
 
