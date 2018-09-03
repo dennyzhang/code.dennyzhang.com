@@ -1,11 +1,18 @@
-* Leetcode: Symmetric Tree                                       :BLOG:Medium:
+* Leetcode: Symmetric Tree                                      :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     treetraversal
 :END:
 ---------------------------------------------------------------------
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/symmetric-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 #+BEGIN_EXAMPLE
@@ -33,75 +40,50 @@ Credits To: [[https://leetcode.com/problems/symmetric-tree/description/][leetcod
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/symmetric-tree
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+- Solution:
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/symmetric-tree
+// Basic Ideas: BFS
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
 
-class Solution(object):
-    def isSymmetric(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        ## Idea: BFS. pop 2 elements each time.
-        ## Complexity
-        if root is None:
-            return True
-        if (root.left is None) is not (root.right is None):
-            return False
-        if root.left is None:
-            return True
-
-        queue = []
-        queue.append(root.left)
-        queue.append(root.right)
-        while len(queue) != 0:
-            element1 = queue[-1]
-            del queue[-1]
-            element2 = queue[-1]
-            del queue[-1]
-            if element1.val != element2.val:
-                return False
-
-            if (element1.left is None) is not (element2.right is None):
-                return False
-
-            if (element1.left is not None):
-                queue.append(element1.left)
-                queue.append(element2.right)
-
-            if (element1.right is None) is not (element2.left is None):
-                return False
-
-            if (element1.right is not None):
-                queue.append(element1.right)
-                queue.append(element2.left)
-        return True
-
-    def isSymmetric_v1(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        if root:
-            return self._isSymmetric(root.left, root.right)
-        else:
-            return True
-
-    def _isSymmetric(self, node1, node2):
-        if node1 is None or node2 is None:
-            return (node1 is None) is (node2 is None)
-
-        if node1.val != node2.val:
-            return False
-        else:
-            return self._isSymmetric(node1.left, node2.right) and \
-                    self._isSymmetric(node1.right, node2.left)
+/**
+ * @param root: root of the given tree
+ * @return: whether it is a mirror of itself 
+ */
+func isSymmetric (root *TreeNode) bool {
+    if root == nil { return true }
+    queue := []*TreeNode{root}
+    for len(queue) != 0 {
+        l, l2 := []*TreeNode{}, []*TreeNode{}
+        for _, node := range queue {
+            if node.Left != nil { l = append(l, node.Left) }
+            if node.Right != nil { l = append(l, node.Right) }
+            l2 = append(l2, node.Left)
+            l2 = append(l2, node.Right)
+        }
+        // check is sysmetric
+        left, right := 0, len(l2) - 1
+        for left < right {
+            if l2[left] == nil || l2[right] == nil {
+                if l2[left] != l2[right] { return false }
+            } else {
+                if l2[left].Val != l2[right].Val { return false }
+            }
+            left, right = left+1, right-1
+        }
+        
+        queue = l
+    }
+    return true
+}
 #+END_SRC
 
 #+BEGIN_HTML
