@@ -1,0 +1,51 @@
+* Resource For Code Tests                                     :BLOG:Resource:
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+Resource For Code Tests
+
+Please leave me comments, if you have better recommendations!
+---------------------------------------------------------------------
+- [[url-external:https://www.leetcode.com][https://www.leetcode.com]]
+
+The most popular online assement in [[color:#c7254e][Silicon Valley]].
+
+My personal progress by Mar 1st, 2018. It's a 4 months' journey.
+
+Personally I've learned a lot from it!
+[[image-blog:Websites For Code Tests][https://raw.githubusercontent.com/DennyZhang/images/master/code/progress_20180301.png]]
+---------------------------------------------------------------------
+- [[url-external:http://www.lintcode.com][http://www.lintcode.com]]
+
+This one is also quite famous.
+---------------------------------------------------------------------
+- [[url-external:https://www.geeksforgeeks.org/][https://www.geeksforgeeks.org/]]
+
+Lots of explanations and introductions for typical problems
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+** misc                                                            :noexport:
+http://zxi.mytechroad.com/blog/
+花花酱
+
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone hidestars
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport BLOG
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:   
+#+LINK_HOME: 

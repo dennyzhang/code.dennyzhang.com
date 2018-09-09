@@ -25,22 +25,10 @@ function git_pull() {
     git pull origin
 }
 
-function my_test() {
-    cd problems
-    for f in $(ls -1t */README.org); do
-        dirname=$(basename $(dirname $f))
-            echo "Update blog $f"
-sed -ie 's/Similar Problems:/#+BEGIN_HTML\'$'\nSimilar Problems:/g' $f
-sed -ie 's/Similar Problems:/<a href="https:\/\/github.com\/dennyzhang\/code.dennyzhang.com"><img align="right" width="200" height="183" src="https:\/\/www.dennyzhang.com\/wp-content\/uploads\/denny\/watermark\/github.png" \/><\/a>\'$'\nSimilar Problems:/g' $f
-sed -ie 's/Similar Problems:/#+END_HTML\'$'\nSimilar Problems:/g' $f
-            rm -rf $dirname/README.orge
-    done
-}
-
 function refresh_wordpress() {
     local max_days=${MAX_DAYS:-"7"}
     echo "Use emacs to update README.org"
-    for d in "problems" "series" "review"; do
+    for d in "problems" "series" "review" "posts"; do
     # for d in "series" "review"; do
         cd "$d"
         for f in $(find * -name 'README.org' -mtime -${max_days} | grep -v '^README.org$'); do

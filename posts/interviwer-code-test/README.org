@@ -1,0 +1,79 @@
+* Interview Candidates For Code Tests                             :BLOG:Life:
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+Suggestions for how to interview candidates for code tests
+
+To interview candidates, we need to choose code problems carefully. Instead of random ones, they should be related to factors you want to examine.
+
+To walk through with candidates, we need to understand how candidates might think. And give him/her some hints or on-demand feedbacks.
+
+[[color:#c7254e][Problems Aggregated By Scenarios:]]
+| [[color:#c7254e][Scenarios]] (Find Candidates)    | [[color:#c7254e][Link]]                          |
+|--------------------------------+-------------------------------|
+| Has basic skills               | Problems: [[https://code.dennyzhang.com/review-basic][#basic]]              |
+| Can deal with details          | Problems: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]        |
+| Knows classic algorithms       | Problems: [[https://code.dennyzhang.com/review-classic][#classic]]            |
+| Who are creative               | Problems: [[https://code.dennyzhang.com/review-inspiring][#inspiring]]          |
+| Has good OO skills             | Problems: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]           |
+| Good understanding about Big O | Problems: [[https://code.dennyzhang.com/review-complexity][#evaluatecomplexity]] |
+| Super strong in algorithms     | Problems: [[https://code.dennyzhang.com/review-hard][#hard]]               |
+| Good at SQL                    | Problems: [[https://code.dennyzhang.com/review-sql][#sql]]                |
+| Good at math                   | Problems: [[https://code.dennyzhang.com/review-math][#math]]               |
+
+[[color:#c7254e][Series problems with follow-ups:]]
+[display-posts tag="series" posts_per_page="100" orderby="title"]
+
+[[color:#c7254e][Problems Aggregated By Typical Algorithms:]]
+---------------------------------------------------------------------
+| Typical Algorithms   | Link                |
+|----------------------+---------------------|
+| string               | [[https://code.dennyzhang.com/tag/string][#string]]             |
+| array                | [[https://code.dennyzhang.com/tag/array][#array]]              |
+| hashmap              | [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]            |
+| binarytree           | [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]         |
+| linkedlist           | [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]         |
+| bfs                  | [[https://code.dennyzhang.com/tag/bfs][#bfs]]                |
+| dfs                  | [[https://code.dennyzhang.com/tag/dfs][#dfs]]                |
+| binarysearch         | [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]       |
+| stack                | [[https://code.dennyzhang.com/tag/stack][#stack]]              |
+| dynamicprogramming   | [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]] |
+| trie                 | [[https://code.dennyzhang.com/tag/trie][#trie]]               |
+| heap                 | [[https://code.dennyzhang.com/tag/heap][#heap]]               |
+| monotone stack/queue | [[https://code.dennyzhang.com/tag/monotone][#monotone]]           |
+| slidingwindow        | [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]      |
+| greedy               | [[https://code.dennyzhang.com/tag/greedy][#greedy]]             |
+| backtracking         | [[https://code.dennyzhang.com/tag/backtracking][#backtracking]]       |
+
+---------------------------------------------------------------------
+- Problems of all tags: [[https://code.dennyzhang.com/problems-by-tag][link]]
+---------------------------------------------------------------------
+You have better suggestions? Leave me comments.
+
+You have typical scenarios not covered? Leave me comments.
+
+Cheers!
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone hidestars
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport BLOG
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:   
+#+LINK_HOME: 

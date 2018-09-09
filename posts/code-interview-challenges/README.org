@@ -1,0 +1,37 @@
+* [#A] Basic: Challenges In Code Test Interviews                :BLOG:Review:
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+Challenges In Code Test Interviews
+---------------------------------------------------------------------
+1. *Concentrate for lengthy problem description*. When you're under pressure, you may have a hard time to understand them. Bring up a solution, then an optimal solution.
+- *Based on implied assumptions which are not solid*. Then you end up with lots of questions and challenges from the interviewer.
+- *Interviewer is pretty cold or uninterested*, how to keep the communication warm up. Or don't get stucked into the bad mood.
+- *No lint or sample tests are available*. You're on your own. So get used to whiteboard coding. Verify logic by pens and papers.
+- *Everything has to be done within 45 minutes*!
+---------------------------------------------------------------------
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone hidestars
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport BLOG
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:   
+#+LINK_HOME: 

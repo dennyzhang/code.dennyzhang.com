@@ -1,0 +1,63 @@
+* Why I Maintain This Blog                                        :BLOG:Life:
+:PROPERTIES:
+:type: #blog
+:END:
+---------------------------------------------------------------------
+[[image-blog:Contact][https://cdn.dennyzhang.com/images/brain/denny_intro.jpg]]
+
+Hi there
+
+I'm [[url-external:https://www.dennyzhang.com][Denny Zhang]]. A coder at work.
+
+#+BEGIN_HTML
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
+
+Many IT companies use code online judgement to evaluate candidates. Especially the big ones. e.g, Google, Facebook, Amazon, etc.
+
+When I first heard of this, I felt being humiliated. 
+
+*/Kidding me?/*
+---------------------------------------------------------------------
+
+With ten years' working experience, now you question me to detect whether a graph has a loop? As an infra engineer, I have never used a graph algorithm at work. It might be useful for some roles, but just irrelevant to me.
+
+Lots of debates for this /stupid/ code test. And yes, I hate it. But why I hate it so much? After thinking deeper, I realize part of my resistance is +fear of rejections+.
+
+I admit I'm not so smart or clever. Most of the time I'm just diligent. And I had bad experience when I took [[url-external:https://www.acm.org/education/icpc-winners][ACM programming contest]] at college. Maybe I shall say, frustrating.
+
+*But it is what it is!*
+
+So why not stand up and conquer it? Maybe I can collect some interesting code puzzles? Help people to be more ready for the future coding interviews. Especially emotionally ready, I mean.
+
+(Leave me comments! Help me to help others.)
+
+My [[url-external:https://leetcode.com/dennyzhang/][leetcode profile]] and [[url-external:https://www.lintcode.com/user/DennyZhang][lintcode profile]]
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"><a href="https://leetcode.com/dennyzhang"><img style="width:189px;height:329px;" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png" alt="leetcode" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.lintcode.com/user/DennyZhang"><img style="width:387px;height:260px;"  src="https://cdn.dennyzhang.com/images/brain/denny_lintcode.png" alt="lintcode" /></a></div>
+</div>
+#+END_HTML
+
+This blog is posted from Github: [[url-external:https://github.com/dennyzhang/code.dennyzhang.com][code.dennyzhang.com]].
+
+And we have [[https://code.dennyzhang.com/slack][a slack group]] to discuss this. Why not join us?
+
+Another two blogs from me:
+- https://architect.dennyzhang.com: Learn System Design
+- [[url-external:https://www.dennyzhang.com][https://www.dennyzhang.com]]: DevOps & Cloud
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+See all blogs I'm actively maintaining:
+| Blog                          | Link                              |
+|-------------------------------+-----------------------------------|
+| DevOps blog                   | https://www.dennyzhang.com        |
+| Code tests for interviews     | [[url-external:https://www.dennyzhang.com][https://code.dennyzhang.com]]       |
+| Learn system design           | https://architect.dennyzhang.com  |
+| Cheatsheet for best practices | https://cheatsheet.dennyzhang.com |
