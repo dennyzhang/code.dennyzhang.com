@@ -25,7 +25,6 @@ My profile in [[https://leetcode.com/dennyzhang][LeetCode]] and [[https://www.li
 #+END_HTML
 
 See more challenges from Denny: [[https://github.com/topics/denny-challenges][#denny-challenges]]
-
 ** More Resources
  License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
  #+BEGIN_HTML
@@ -38,8 +37,8 @@ See more challenges from Denny: [[https://github.com/topics/denny-challenges][#d
  #+END_HTML
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone hidestars
-#+DESCRIPTION: 
-#+KEYWORDS: 
+#+DESCRIPTION:
+#+KEYWORDS:
 #+AUTHOR: Denny Zhang
 #+EMAIL:  denny@dennyzhang.com
 #+TAGS: noexport(n)
@@ -48,45 +47,30 @@ See more challenges from Denny: [[https://github.com/topics/denny-challenges][#d
 #+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+EXPORT_EXCLUDE_TAGS: exclude noexport BLOG
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
-#+LINK_UP:   
-#+LINK_HOME: 
+#+LINK_UP:
+#+LINK_HOME:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Role Models                                            :noexport:
 https://github.com/donnemartin/interactive-coding-challenges
-* TODO interview                                                   :noexport:
-** uber: Leetcode: Group Anagrams
-https://code.dennyzhang.com/group-anagrams#wp-toolbar
-** facebook phone interview <2018-02-22 16:43 UTC +8>
-*** battleship
-# Consider a square grid of size N, where N>=3. I have placed a battleship of
-# size 3 somewhere in the grid, and you want to sink my battleship by ordering the
-# bombing of specified coordinates.
-#
-# The battleship can only be placed vertically or horizontally, not diagonally.
-# Every coordinate which does not contain the battleship is empty. Your task is to
-# write a function which takes as input N, and returns the 3 coordinates of the
-# battleship.
-#
-# Assume you have a function, boolean bomb_location(x, y), which will return
-# True if (x, y) "hits" the battleship and False if (x, y) misses the battleship.
-#
-# For example - in the following grid your function find_battleship(grid_size),
-# given grid_size of 8,  would return ((2,1), (2,2), (2,3)):
-#
-# . . . . . . . .
-# . . X . . . . .
-# . . X . . . . .
-# . . X . . . . .
-# . . . . . . . .
-# . . . . . . . .
-# . . . . . . . .
-# . . . . . . . .
-* TODO Similar Websites                                            :noexport:
-Sample
-https://github.com/scottszb1987/LeetCodeInCSharp
-https://github.com/awangdev/LintCode
-* TODO monetize improvement: build ebooks and cheetsheet           :noexport:
-* TODO blog improvement: how to utilize community to improve the content :noexport:
+** Sample https://github.com/scottszb1987/LeetCodeInCSharp
+** Sample https://github.com/awangdev/LintCode
+** TODO opensource improvement: 刷题网站                           :noexport:
+ https://startupnextdoor.com/how-to-rock-the-programming-portion-of-your-interview/
+* TODO [#A] Layout                                                 :noexport:
+** TODO function color issue: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-postorder-traversal :noexport:
+* TODO [#A] Make it more useful                                    :noexport:
+** TODO blog improvement: how to utilize community to improve the content :noexport:
+* TODO [#A] Content                                                :noexport:
+** Add series #buddystring https://code.dennyzhang.com/tag/buddystring
+** Add series #interview: https://code.dennyzhang.com/tag/interview
+* TODO Reduce overhead
+** HALF [#A] automate take screenshot for leetcode badge           :noexport:
+ cp /Users/zdenny/Dropbox/Screenshots/denny_leetcode.png /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
+ convert -resize 263x459 /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
+ (cd /Users/zdenny/git_code/codecommit/blog_cdn/images/brain && git commit -am "update images" && git push origin master)
+
+ open /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Quick scan leetcode                                         :noexport:
 http://delta.logdown.com/posts/2014/09/19/leetcode-3
 * TODO [#A] leetcode active users                                  :noexport:
@@ -237,67 +221,6 @@ Boundary of the small dataset
 ** #  --8<-------------------------- separator ------------------------>8-- :noexport:
 ** TODO code.dennyzhang.com: search for two tags combined
 * TODO [#A] change target scenario of code blog                    :noexport:
-* TODO opensource improvement: 刷题网站                            :noexport:
-https://startupnextdoor.com/how-to-rock-the-programming-portion-of-your-interview/
-
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO Blog: My Experience Preparing BayArea Interview with leetcode.com :noexport:
-** My feelings
-** Bad things
-** Good things
-** My suggestions
-Understand more about the business and the people? Do you feel over-paid? How to improve your skills?
-
-Money talks. You values talks.
-
-- Fundamental things
-- They should be easy to solve but not so easy to solve optimally
-- Don't struggle with too difficult puzzles
-- It's just patterns. Solve more - learn more patterns.
-
-- make sure that I know what the company is trying to achieve as a business.
-
-- Am I working on the cutting edge of technology? No. But I still
-  enjoy my job. There are challenges beyond algorithms and solving
-  those is what most developers do on a daily basis.
-** useful link
-https://www.reddit.com/r/cscareerquestions/comments/78afjf/how_much_leetcode_is_enough/
-** TODO search leetcode in reddit
-https://www.reddit.com/r/cscareerquestions/comments/6luszf/a_leetcode_grinding_guide/
-https://www.reddit.com/r/cscareerquestions/comments/41latg/to_those_that_regularly_practice_on_leetcode_does/
-https://www.reddit.com/r/cscareerquestions/comments/5psje0/why_leetcode_is_scaring_the_crap_out_of_me/
-https://www.reddit.com/r/cscareerquestions/comments/6szwya/leetcode_vs_geeksforgeeks/
-https://www.reddit.com/r/cscareerquestions/comments/6owt14/how_do_you_keep_yourself_motivated_to_grind/
-https://www.reddit.com/r/cscareerquestions/comments/5psje0/why_leetcode_is_scaring_the_crap_out_of_me/
-** TODO search leetcode in youtube
-** Hackerrank's specific skill sections to strengthen specific skills
-** TODO Mock Interview
-** TODO Design questions
-* HALF [#A] automate take screenshot for leetcode badge            :noexport:
-cp /Users/zdenny/Dropbox/Screenshots/denny_leetcode.png /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
-convert -resize 263x459 /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
-(cd /Users/zdenny/git_code/codecommit/blog_cdn/images/brain && git commit -am "update images" && git push origin master)
-
-open /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
-* TODO [#A] Ask Facebook to replace the link: https://github.com/Techsture/sre_study_guide :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO Each post add one blog post: https://code.dennyzhang.com/poison-test :noexport:
-https://github.com/dennyzhang/cheatsheet-golang-A4
-
-From:
-#+BEGIN_EXAMPLE
-Similar Problems:
-#+END_EXAMPLE
-
-To:
-#+BEGIN_EXAMPLE
-Blog URL: https://code.dennyzhang.com/poison-test
-
-Similar Problems:
-#+END_EXAMPLE
-* TODO function color issue: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-postorder-traversal :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO series & posts                                              :noexport:
-** #buddystring https://code.dennyzhang.com/tag/buddystring
-** #interview: https://code.dennyzhang.com/tag/interview
 * TODO Blog: BrainTeaser for family fun                            :noexport:
+* TODO [#A] Ask Facebook to replace the link: https://github.com/Techsture/sre_study_guide :noexport:
