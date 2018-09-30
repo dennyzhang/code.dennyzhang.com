@@ -63,14 +63,13 @@ https://github.com/donnemartin/interactive-coding-challenges
 * TODO [#A] Content                                                :noexport:
 ** Add series #buddystring https://code.dennyzhang.com/tag/buddystring
 ** Add series #interview: https://code.dennyzhang.com/tag/interview
-* TODO Reduce overhead
+* TODO Reduce overhead                                             :noexport:
 ** HALF [#A] automate take screenshot for leetcode badge           :noexport:
  cp /Users/zdenny/Dropbox/Screenshots/denny_leetcode.png /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
  convert -resize 263x459 /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
  (cd /Users/zdenny/git_code/codecommit/blog_cdn/images/brain && git commit -am "update images" && git push origin master)
 
  open /Users/zdenny/git_code/codecommit/blog_cdn/images/brain/denny_leetcode.png
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Quick scan leetcode                                         :noexport:
 http://delta.logdown.com/posts/2014/09/19/leetcode-3
 * TODO [#A] leetcode active users                                  :noexport:
@@ -224,3 +223,5 @@ Boundary of the small dataset
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Blog: BrainTeaser for family fun                            :noexport:
 * TODO [#A] Ask Facebook to replace the link: https://github.com/Techsture/sre_study_guide :noexport:
+* TODO code.dennyzhang.com: add series or review links, if missing :noexport:
+* TODO code blog: change function color: https://code.dennyzhang.com/integer-replacement :noexport:

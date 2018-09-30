@@ -14,7 +14,7 @@ The most popular online assement in [[color:#c7254e][Silicon Valley]].
 My personal progress by Mar 1st, 2018. It's a 4 months' journey.
 
 Personally I've learned a lot from it!
-[[image-blog:Websites For Code Tests][https://raw.githubusercontent.com/DennyZhang/images/master/code/progress_20180301.png]]
+[[image-blog:Websites For Code Tests][https://raw.githubusercontent.com/dennyzhang/images/master/code/progress_20180301.png]]
 ---------------------------------------------------------------------
 - [[url-external:http://www.lintcode.com][http://www.lintcode.com]]
 

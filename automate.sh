@@ -31,7 +31,7 @@ function refresh_wordpress() {
     for d in "problems" "series" "review" "posts"; do
     # for d in "series" "review"; do
         cd "$d"
-        for f in $(find * -name 'README.org' -mtime -${max_days} | grep -v '^README.org$'); do
+        for f in $(find . -name 'README.org' -mtime -${max_days} | grep -v '^README.org$'); do
             echo "Update $f"
             dirname=$(basename $(dirname $f))
             cd $dirname

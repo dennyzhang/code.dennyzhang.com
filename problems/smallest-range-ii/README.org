@@ -1,0 +1,84 @@
+* Leetcode: Smallest Range II                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     interval, greedy
+:END:
+---------------------------------------------------------------------
+Smallest Range II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-range-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/smallest-range-i][Leetcode: Smallest Range I]]
+- Tag: [[https://code.dennyzhang.com/tag/interval][#interval]], [[https://code.dennyzhang.com/tag/greedy][#greedy]]
+---------------------------------------------------------------------
+Given an array A of integers, for each integer A[i] we need to choose either x = -K or x = K, and add x to A[i] (only once).
+
+After this process, we have some array B.
+
+Return the smallest possible difference between the maximum value of B and the minimum value of B.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [1], K = 0
+Output: 0
+Explanation: B = [1]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [0,10], K = 2
+Output: 6
+Explanation: B = [2,8]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: A = [1,3,6], K = 3
+Output: 3
+Explanation: B = [4,6,3]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 10000
+- 0 <= A[i] <= 10000
+- 0 <= K <= 10000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-range-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/smallest-range-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/smallest-range-ii
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

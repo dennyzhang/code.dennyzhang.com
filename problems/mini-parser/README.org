@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 Mini Parser
 ---------------------------------------------------------------------
+Similar Problems:
+- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Leetcode: Flatten Nested List Iterator]]
+- [[https://code.dennyzhang.com/review-stack][Review: Stack Problems]]
+---------------------------------------------------------------------
 Given a nested list of integers represented as a string, implement a parser to deserialize it.
 
 Each element is either an integer, or a list -- whose elements may also be integers or other lists.
@@ -172,9 +176,6 @@ class Solution(object):
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/mini-parser"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
-Similar Problems:
-- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Leetcode: Flatten Nested List Iterator]]
-- [[https://code.dennyzhang.com/review-stack][Review: Stack Problems]]
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

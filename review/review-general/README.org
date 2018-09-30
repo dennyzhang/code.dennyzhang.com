@@ -15,7 +15,7 @@ My general general steps and main takeaways  from solving all the leetcode probl
 - *Review*: Have I seen anything similar? What are they connections and common pitfalls.
 - *Discussion*: Do you feel comfortable to read and learn good solutions from others? It might be very tough. Or you just feel too proud of yourself to listen to others.
 ---------------------------------------------------------------------
-[[image-blog:General Procedure For Code Problems][https://raw.githubusercontent.com/DennyZhang/images/master/code/input_size_complexity.png]]
+[[image-blog:General Procedure For Code Problems][https://raw.githubusercontent.com/dennyzhang/images/master/code/input_size_complexity.png]]
 Image credits to [[url-external:http://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/][link]]
 ---------------------------------------------------------------------
 [[color:#c7254e][Experience:]]

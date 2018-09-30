@@ -1,0 +1,53 @@
+* Leetcode: Sum of Subarray Minimums                             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Sum of Subarray Minimums
+---------------------------------------------------------------------
+#+BEGIN_EXPORT HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-subarray-minimums"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given an array of integers A, find the sum of min(B), where B ranges over every (contiguous) subarray of A.
+
+Since the answer may be large, return the answer modulo 10^9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [3,1,2,4]
+Output: 17
+Explanation: Subarrays are [3], [1], [2], [4], [3,1], [1,2], [2,4], [3,1,2], [1,2,4], [3,1,2,4]. 
+Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1.  Sum is 17.
+#+END_EXAMPLE
+
+Note:
+
+- 1 <= A.length <= 30000
+- 1 <= A[i] <= 30000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-subarray-minimums][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/sum-of-subarray-minimums/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/sum-of-subarray-minimums
+
+#+END_SRC
+
+#+BEGIN_EXPORT HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
