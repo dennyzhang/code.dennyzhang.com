@@ -6,6 +6,8 @@
 Slack group: [[url-external:https://goo.gl/cZ2Pev][https://myleetcode.slack.com]]
 (Invitation link: [[url-external:https://join.slack.com/t/myleetcode/shared_invite/enQtMzEzNjAyOTI2ODE3LTc5MDEwMWQ1Zjk1MWYwYTVhN2IwOTk1NzIxNGFjOGJjZjU0ZTYxYTZhOWEwMDliNDZmZjkwZGZjZWFlZDRiNzg][https://goo.gl/cZ2Pev]])
 
+If you are interested in [[color:#c7254e][VMware opportunities]], here is [[https://vmware.rolepoint.com/?shorturl=qeEMe][my referral link]].
+
 Better prepare for code test:
 1. Chat and discuss about code problems
 - Design problems and beyond

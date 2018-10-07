@@ -17,6 +17,8 @@ I'm [[url-external:https://www.dennyzhang.com][Denny Zhang]]. A coder at work.
 </div>
 #+END_HTML
 
+If you are interested in [[color:#c7254e][VMware opportunities]], here is [[https://vmware.rolepoint.com/?shorturl=qeEMe][my referral link]].
+
 Many IT companies use code online judgement to evaluate candidates. Especially the big ones. e.g, Google, Facebook, Amazon, etc.
 
 When I first heard of this, I felt being humiliated. 
