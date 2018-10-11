@@ -1,0 +1,109 @@
+* Leetcode: Word Subsets                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Word Subsets
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/word-subsets"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+---------------------------------------------------------------------
+We are given two arrays A and B of words.  Each word is a string of lowercase letters.
+
+Now, say that word b is a subset of word a if every letter in b occurs in a, including multiplicity.  For example, "wrr" is a subset of "warrior", but is not a subset of "world".
+
+Now say a word a from A is universal if for every b in B, b is a subset of a. 
+
+Return a list of all universal words in A.  You can return the words in any order.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["e","o"]
+Output: ["facebook","google","leetcode"]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["l","e"]
+Output: ["apple","google","leetcode"]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["e","oo"]
+Output: ["facebook","google"]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["lo","eo"]
+Output: ["google","leetcode"]
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["ec","oc","ceo"]
+Output: ["facebook","leetcode"]
+#+END_EXAMPLE
+
+Note:
+
+1. 1 <= A.length, B.length <= 10000
+- 1 <= A[i].length, B[i].length <= 10
+- A[i] and B[i] consist only of lowercase letters.
+- All wordsp in A[i] are unique: there isn't i != j with A[i] == A[j].
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/word-subsets][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/word-subsets/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/word-subsets
+// Basic Ideas: Merge array B
+// Complexity: Time O(n), Space O(1)
+func wordSubsets(A []string, B []string) []string {
+    res := []string{}
+    l := make([]int, 26)
+    for _, s := range B {
+        l2 := make([]int, 26)
+        for _, ch := range s {
+            l2[byte(ch) - byte('a')]++            
+        }
+        for i, _ := range l {
+            if l2[i] > l[i] { l[i] = l2[i] }
+        }
+    }
+    for _, s := range A {
+        l2 := make([]int, 26)
+        for _, ch := range s {
+            l2[byte(ch) - byte('a')]++            
+        }
+        for i, _ := range l {
+            if l[i] > l2[i] {
+                break
+            }
+            if i == 25 {
+                res = append(res, s)
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

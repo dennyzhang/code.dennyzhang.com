@@ -1,0 +1,143 @@
+* Leetcode: Complete Binary Tree Inserter                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree, inspiring
+:END:
+---------------------------------------------------------------------
+Complete Binary Tree Inserter
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/complete-binary-tree-inserter"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+---------------------------------------------------------------------
+A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
+
+Write a data structure CBTInserter that is initialized with a complete binary tree and supports the following operations:
+
+CBTInserter(TreeNode root) initializes the data structure on a given tree with head node root;
+CBTInserter.insert(int v) will insert a TreeNode into the tree with value node.val = v so that the tree remains complete, and returns the value of the parent of the inserted TreeNode;
+CBTInserter.get_root() will return the head node of the tree.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: inputs = ["CBTInserter","insert","get_root"], inputs = [[[1]],[2],[]]
+Output: [null,1,[1,2]]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: inputs = ["CBTInserter","insert","insert","get_root"], inputs = [[[1,2,3,4,5,6]],[7],[8],[]]
+Output: [null,3,4,[1,2,3,4,5,6,7,8]]
+#+END_EXAMPLE
+ 
+Note:
+
+1. The initial given tree is complete and contains between 1 and 1000 nodes.
+- CBTInserter.insert is called at most 10000 times per test case.
+- Every value of a given or inserted node is between 0 and 5000.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/complete-binary-tree-inserter][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/complete-binary-tree-inserter/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/complete-binary-tree-inserter
+// Basic Ideas: track the second last row
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ * Val int
+ * Left *TreeNode
+ * Right *TreeNode
+ * }
+ */
+type CBTInserter struct {
+    root *TreeNode
+    nodes []*TreeNode
+    index int
+}
+
+func Constructor(root *TreeNode) CBTInserter {
+    res := CBTInserter{root, []*TreeNode{}, 0}
+    if root.Left == nil {
+        res.nodes = []*TreeNode{root}
+    } else {
+		p := root
+		for p.Left != nil && p.Left.Left != nil {
+			p = p.Left
+		}
+		// BFS
+		queue := []*TreeNode{root}
+		for len(queue) != 0 {
+			if queue[0] == p {
+				res.nodes = queue
+				for _, node := range queue {
+					if node.Left != nil { res.index++ }
+					if node.Right != nil { res.index++ }
+				}
+				break
+			}
+			l := []*TreeNode{}
+			for _, node := range queue {
+				if node.Left != nil { l = append(l, node.Left) }
+				if node.Right != nil { l = append(l, node.Right) }
+			}
+			queue = l
+		}
+    }
+    return res
+}
+
+func (this *CBTInserter) Insert(v int) int {
+    newNode := &TreeNode{v, nil, nil}
+    res := 0
+    // current level is full
+    if this.index == 2*len(this.nodes) {
+        l := []*TreeNode{}
+        for _, p := range this.nodes {
+            l = append(l, p.Left)
+            l = append(l, p.Right)
+        }
+        this.nodes, this.index = l, 1
+        this.nodes[0].Left = newNode
+        res = this.nodes[0].Val
+    } else {
+        p := this.nodes[this.index/2]
+        if this.index % 2 == 0 {
+            p.Left = newNode
+        } else {
+            p.Right = newNode
+        }
+        this.index++
+        res = p.Val
+    }
+    return res
+}
+
+func (this *CBTInserter) Get_root() *TreeNode {
+    return this.root
+}
+
+/**
+ * Your CBTInserter object will be instantiated and called as such:
+ * obj := Constructor(root);
+ * param_1 := obj.Insert(v);
+ * param_2 := obj.Get_root();
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

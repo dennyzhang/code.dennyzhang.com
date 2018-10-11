@@ -7,6 +7,13 @@
 ---------------------------------------------------------------------
 Reverse String
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/reverse-only-letters][Leetcode: Reverse Only Letters]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/reverseitem][#reverseitem]]
+---------------------------------------------------------------------
 Write a function that takes a string as input and returns the string reversed.
 
 Example:

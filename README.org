@@ -223,5 +223,8 @@ Boundary of the small dataset
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Blog: BrainTeaser for family fun                            :noexport:
 * TODO [#A] Ask Facebook to replace the link: https://github.com/Techsture/sre_study_guide :noexport:
-* TODO code.dennyzhang.com: add series or review links, if missing :noexport:
 * TODO code blog: change function color: https://code.dennyzhang.com/integer-replacement :noexport:
+* TODO code add github and social medium link: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] code.dennyzhang.com: add series or review links, if missing :noexport:
+* TODO Besides using tag, add link to reviews: review splitarray: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:

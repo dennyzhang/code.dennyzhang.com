@@ -1,0 +1,88 @@
+* Leetcode: Reverse Only Letters                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, twopointer
+:END:
+---------------------------------------------------------------------
+Reverse Only Letters
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-only-letters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/reverse-string][Leetcode: Reverse String]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/reverseitem][#reverseitem]]
+---------------------------------------------------------------------
+Given a string S, return the "reversed" string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "ab-cd"
+Output: "dc-ba"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "a-bC-dEf-ghIj"
+Output: "j-Ih-gfE-dCba"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "Test1ng-Leet=code-Q!"
+Output: "Qedo1ct-eeLg=ntse-T!"
+#+END_EXAMPLE
+
+Note:
+
+1. S.length <= 100
+- 33 <= S[i].ASCIIcode <= 122 
+- S doesn't contain \ or "
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-only-letters][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/reverse-only-letters/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/reverse-only-letters
+// Basic Ideas: Two pointer
+// Complexity: Time O(n), Space O(n)
+//   If given a list, instead of string, space complexity can be O(1)
+func isLetter(ch byte) bool {
+    if ch >= byte('a') && ch <= byte('z') { return true }
+    if ch >= byte('A') && ch <= byte('Z') { return true }
+    return false
+}
+
+func reverseOnlyLetters(S string) string {
+    bytes := []byte(S)
+    l, r := 0, len(bytes)-1
+    for l<r {
+        b1, b2 := bytes[l], bytes[r]
+        if !isLetter(b1) {
+            l++
+            continue
+        }
+        if !isLetter(b2) {
+            r--
+            continue
+        }
+        bytes[l], bytes[r] = bytes[r], bytes[l]
+        l, r = l+1, r-1
+    }
+    return string(bytes)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML
