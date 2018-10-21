@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subarray
+:type:     subarray, inspiring, classic, redo
 :END:
 ---------------------------------------------------------------------
 Sum of Subarray Minimums
@@ -12,7 +12,8 @@ Sum of Subarray Minimums
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Split Array into Consecutive Subsequences]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]]
+- [[https://code.dennyzhang.com/3sum-with-multiplicity][3Sum With Multiplicity]]
+- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given an array of integers A, find the sum of min(B), where B ranges over every (contiguous) subarray of A.
 
@@ -28,7 +29,7 @@ Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1.  Sum is 17.
 
 Note:
 
-- 1 <= A.length <= 30000
+1. 1 <= A.length <= 30000
 - 1 <= A[i] <= 30000
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-subarray-minimums][code.dennyzhang.com]]
@@ -41,7 +42,42 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/sum-of-subarray-minimums
+// Basic Ideas: stack
+// Element in the stack: (value, count, sum_so_far)
+// Complexity: Time O(n)?, Space O(n)
+import "math"
+type minNode struct {
+    val, cnt int
+    sum int
+}
 
+func sumSubarrayMins(A []int) int {
+    res := 0
+    mod := int(math.Pow(10, 9)) + 7
+    stack := []minNode{}
+    for _, val := range A {
+        res += val
+        cnt := 1
+        for len(stack) != 0 {
+            node := stack[len(stack)-1]
+            if node.val < val {
+                break
+            }
+            res += val*node.cnt
+            cnt += node.cnt
+            stack = stack[0:len(stack)-1]
+        }
+        if len(stack) == 0 {
+            stack = append(stack, minNode{val, cnt, 0})
+        } else {
+            node := stack[len(stack)-1]
+            stack = append(stack, minNode{val, cnt, node.sum+node.val*node.cnt})
+            res += node.sum + node.val*node.cnt
+        }
+        res = res % mod
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

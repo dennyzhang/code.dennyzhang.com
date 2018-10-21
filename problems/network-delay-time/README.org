@@ -1,0 +1,97 @@
+* Leetcode: Network Delay Time                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bfs, heap, inspiring, redo, dijkstra
+:END:
+---------------------------------------------------------------------
+Network Delay Time
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/network-delay-time"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/dijkstra][#dijkstra]]
+---------------------------------------------------------------------
+There are N network nodes, labelled 1 to N.
+
+Given times, a list of travel times as directed edges times[i] = (u, v, w), where u is the source node, v is the target node, and w is the time it takes for a signal to travel from source to target.
+
+Now, we send a signal from a certain node K. How long will it take for all nodes to receive the signal? If it is impossible, return -1.
+
+Note:
+1. N will be in the range [1, 100].
+- K will be in the range [1, N].
+- The length of times will be in the range [1, 6000].
+- All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 1 <= w <= 100.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/network-delay-time][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/network-delay-time/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/network-delay-time
+// Basic Ideas: BFS
+// Complexity: Time O(1), Space O(1)
+//           max caculation: 100*100
+//           max space = max(len(times), N)
+func networkDelayTime(times [][]int, N int, K int) int {
+    visited := map[int]bool{}
+    res := 0
+    edges := map[int][][]int{}
+    for _, t := range times {
+        node := t[0]
+        edges[node] = append(edges[node], []int{t[1], t[2]})
+    }
+    queue := [][]int{[]int{K, 0}}
+    index, min := 0, 0
+    for len(queue) != 0 {
+        visited[queue[index][0]] = true
+        res += min
+        if len(visited) == N {
+            return res
+        }
+
+        m := map[int]int{}
+        // deduct time
+        for i, item := range queue {
+            if i == index { continue }
+            m[item[0]] = item[1] - min
+        }
+
+        // add adjacent node
+        for _, item := range edges[queue[index][0]] {
+            if !visited[item[0]] {
+				_, ok := m[item[0]]
+                if !ok || m[item[0]] > item[1] {
+                    m[item[0]] = item[1]
+                }
+            }
+        }
+        // add to list
+        min = 1<<31 - 1
+        queue = [][]int{}
+        i := 0
+        for node := range m{
+            if m[node] < min {
+                index, min = i, m[node]
+            }
+            queue = append(queue, []int{node, m[node]})
+            i++
+        }
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

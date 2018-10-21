@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, twosum
+:type:     twopointer, twosum, 3sum
 :END:
 ---------------------------------------------------------------------
 3Sum II
@@ -12,7 +12,7 @@
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/sum-of-square-numbers][Sum of Square Numbers]]
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
 - [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 ---------------------------------------------------------------------
 Given n, find the number of solutions for all x, y, z that conforms to x^2+y^2+z^2 = n.(x, y, z are non-negative integers)
@@ -37,12 +37,10 @@ When one of them is 1 and the remaining two are 0, there is a total of 1 solutio
 #+END_EXAMPLE
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/3sum-ii][code.dennyzhang.com]]
-
 Credits To: [[http://www.lintcode.com/en/problem/3sum-ii/][LintCode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/3sum-ii
 class Solution:

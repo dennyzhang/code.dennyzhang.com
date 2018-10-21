@@ -1,0 +1,115 @@
+* Leetcode: RLE Iterator                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     iterator, manydetails, linkedlist
+:END:
+---------------------------------------------------------------------
+RLE Iterator
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/rle-iterator"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/iterator][#iterator]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Write an iterator that iterates through a run-length encoded sequence.
+
+The iterator is initialized by RLEIterator(int[] A), where A is a run-length encoding of some sequence.  More specifically, for all even i, A[i] tells us the number of times that the non-negative integer value A[i+1] is repeated in the sequence.
+
+The iterator supports one function: next(int n), which exhausts the next n elements (n >= 1) and returns the last element exhausted in this way.  If there is no element left to exhaust, next returns -1 instead.
+
+For example, we start with A = [3,8,0,9,2,5], which is a run-length encoding of the sequence [8,8,8,5,5].  This is because the sequence can be read as "three eights, zero nines, two fives".
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: ["RLEIterator","next","next","next","next"], [[[3,8,0,9,2,5]],[2],[1],[1],[2]]
+Output: [null,8,8,5,-1]
+Explanation: 
+RLEIterator is initialized with RLEIterator([3,8,0,9,2,5]).
+This maps to the sequence [8,8,8,5,5].
+RLEIterator.next is then called 4 times:
+
+.next(2) exhausts 2 terms of the sequence, returning 8.  The remaining sequence is now [8, 5, 5].
+
+.next(1) exhausts 1 term of the sequence, returning 8.  The remaining sequence is now [5, 5].
+
+.next(1) exhausts 1 term of the sequence, returning 5.  The remaining sequence is now [5].
+
+.next(2) exhausts 2 terms, returning -1.  This is because the first term exhausted was 5,
+but the second term did not exist.  Since the last term exhausted does not exist, we return -1.
+#+END_EXAMPLE
+
+Note:
+
+1. 0 <= A.length <= 1000
+- A.length is an even integer.
+- 0 <= A[i] <= 10^9
+- There are at most 1000 calls to RLEIterator.next(int n) per test case.
+- Each call to RLEIterator.next(int n) will have 1 <= n <= 10^9.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/rle-iterator][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/rle-iterator/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/rle-iterator
+// Basic Ideas: linkedin list
+// Complexity: Time O(n), Space O(n)
+type RLENode struct {
+    cnt, val int
+    next *RLENode
+}
+
+type RLEIterator struct {
+    head *RLENode
+}
+
+func Constructor(A []int) RLEIterator {
+    head := &RLENode{0, 0, nil}
+    p := head
+    for i:= 0; i < len(A)-1; i+=2 {
+        node := &RLENode{A[i], A[i+1], nil}
+        p.next = node
+        p = p.next
+    }
+    return RLEIterator{head}
+}
+
+func (this *RLEIterator) Next(n int) int {
+    if this.head.next == nil { return -1 }
+    p := this.head.next
+    cnt := p.cnt
+    for cnt < n && p != nil {
+        p = p.next
+        if p != nil { cnt += p.cnt }
+    }
+    res := -1
+    if cnt < n || p == nil {
+        this.head.next = nil
+    } else {
+        p.cnt = cnt-n
+        this.head.next = p
+        res = p.val
+    }
+    return res
+}
+
+/**
+ * Your RLEIterator object will be instantiated and called as such:
+ * obj := Constructor(A);
+ * param_1 := obj.Next(n);
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

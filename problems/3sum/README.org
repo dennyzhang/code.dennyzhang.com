@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, twosum
+:type:     twopointer, twosum, 3sum
 :END:
 ---------------------------------------------------------------------
 3Sum
@@ -11,8 +11,8 @@
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/3sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- Tag: [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
+- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 ---------------------------------------------------------------------
 Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 

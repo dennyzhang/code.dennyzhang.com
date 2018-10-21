@@ -1,4 +1,4 @@
-* Leetcode: Nth Digit                                              :BLOG:Medium:
+* Leetcode: Nth Digit                                             :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -11,6 +11,7 @@ Nth Digit
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/nth-digit"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/magical-string][Magical String]]
 - [[https://code.dennyzhang.com/remove-9][Remove 9]]
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/math][#math]]
@@ -46,9 +47,33 @@ Credits To: [[https://leetcode.com/problems/nth-digit/description/][leetcode.com
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/nth-digit
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/nth-digit
+// Basic Ideas: math
+//             len   count   start
+//  1-9         1     9        1
+//  10-99       2     90       10
+//  100-999     3     900      100
+//
+// Let's say n=200
+// Starting from 1000, we need to find 11th digit of the sequence [100, 101, 102, 103, ..]  
+//     11 = 200-(9+2*90)
+//     So we should check 103. (100 + (11-1)/3)
+//     Then (11-1)%3 digit, which is 0 in 103.
+// Complexity: Time O(log(n)), Space O(1)
+import "strconv"
+func findNthDigit(n int) int {
+    len, count, start := 1, 9, 1
+    for n > len*count {
+        n -= len*count
+        len++
+        count *= 10
+        start *= 10
+    }
+    value := strconv.Itoa(start + (n-1)/len)
+    res, _ := strconv.Atoi(string(value[(n-1)%len]))
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -7,12 +7,13 @@
 ---------------------------------------------------------------------
 Sort Array By Parity
 ---------------------------------------------------------------------
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-array-by-parity"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+- [[https://code.dennyzhang.com/sort-array-by-parity-ii][Sort Array By Parity II]]
+- Tag: [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.
 
@@ -59,7 +60,7 @@ func sortArrayByParity(A []int) []int {
 }
 #+END_SRC
 
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>

@@ -1,0 +1,103 @@
+* Leetcode: 3Sum With Multiplicity                               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     inspiring, combination, 3sum
+:END:
+---------------------------------------------------------------------
+3Sum With Multiplicity
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/3sum-with-multiplicity"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/sum-of-subarray-minimums][Sum of Subarray Minimums]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
+---------------------------------------------------------------------
+Given an integer array A, and an integer target, return the number of tuples i, j, k  such that i < j < k and A[i] + A[j] + A[k] == target.
+
+As the answer can be very large, return it modulo 10^9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [1,1,2,2,3,3,4,4,5,5], target = 8
+Output: 20
+Explanation: 
+Enumerating by the values (A[i], A[j], A[k]):
+(1, 2, 5) occurs 8 times;
+(1, 3, 4) occurs 8 times;
+(2, 2, 4) occurs 2 times;
+(2, 3, 3) occurs 2 times.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [1,1,2,2,2,2], target = 5
+Output: 12
+Explanation: 
+A[i] = 1, A[j] = A[k] = 2 occurs 12 times:
+We choose one 1 from [1,1] in 2 ways,
+and two 2s from [2,2,2,2] in 6 ways.
+#+END_EXAMPLE
+
+Note:
+
+1. 3 <= A.length <= 3000
+- 0 <= A[i] <= 100
+- 0 <= target <= 300
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/3sum-with-multiplicity][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/3sum-with-multiplicity/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/3sum-with-multiplicity
+// Basic Ideas: fixed value range
+// If a + b + c == target, and a, b, c are all different
+//      count(a) * count(b) * count(c)
+//
+// Complexity: Time O(n), Space O(1)
+import "math"
+func threeSumMulti(A []int, target int) int {
+    mod := int(math.Pow(10, 9)) + 7
+    l := make([]int, 101)
+    for _, num := range A { l[num]++ }
+    res := 0
+    for i:=0; i<101; i++ {
+        if l[i]==0 { continue }
+        for j:=i; j<101; j++ {
+            k := target-i-j
+            if k>=j && k<101 {
+                // find a match: i+j+k
+                if i==j {
+                    if j == k {
+                        res += (l[i]*(l[i]-1)*(l[i]-2))/6
+                    } else {
+                        res += (l[i]*(l[i]-1)*l[k])/2
+                    }
+                } else {
+                    if j == k {
+                        res += (l[i]*l[j]*(l[j]-1))/2
+                    } else {
+                        res += l[i]*l[j]*l[k]
+                    }
+                }
+            }
+            res = res % mod
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

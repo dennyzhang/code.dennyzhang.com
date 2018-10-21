@@ -221,10 +221,19 @@ Boundary of the small dataset
 ** TODO code.dennyzhang.com: search for two tags combined
 * TODO [#A] change target scenario of code blog                    :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Add review: 3sum: https://code.dennyzhang.com/tag/3sum      :noexport:
+
+* TODO Add review: iterator: https://code.dennyzhang.com/tag/iterator :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Blog: BrainTeaser for family fun                            :noexport:
 * TODO [#A] Ask Facebook to replace the link: https://github.com/Techsture/sre_study_guide :noexport:
 * TODO code blog: change function color: https://code.dennyzhang.com/integer-replacement :noexport:
+* TODO code.dennyzhang.com: spam messages: https://code.dennyzhang.com/wp-admin/edit-comments.php :noexport:
+
 * TODO code add github and social medium link: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO [#A] code.dennyzhang.com: add series or review links, if missing :noexport:
-* TODO Besides using tag, add link to reviews: review splitarray: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:
+* TODO [#A] Besides tag: add series or review links automatically: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:
+* TODO generate series [[https://code.dennyzhang.com/tag/walkrobot][#walkrobot]], [[https://code.dennyzhang.com/tag/wiggle][#wiggle]]                         :noexport:
+* TODO sereie: maximum https://leetcode.com/problems/maximum-sum-circular-subarray/description/ :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] code.dennyzhang.com: elisp save hook, make sure list-post-meta-new create folders; set url link :noexport:

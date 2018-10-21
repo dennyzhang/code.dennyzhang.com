@@ -1,0 +1,79 @@
+* Leetcode: Sort Array By Parity II                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Sort Array By Parity II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-array-by-parity-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/sort-array-by-parity][Sort Array By Parity]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+Given an array A of non-negative integers, half of the integers in A are odd, and half of the integers are even.
+
+Sort the array so that whenever A[i] is odd, i is odd; and whenever A[i] is even, i is even.
+
+You may return any answer array that satisfies this condition.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [4,2,5,7]
+Output: [4,5,2,7]
+Explanation: [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 2 <= A.length <= 20000
+- A.length % 2 == 0
+- 0 <= A[i] <= 1000
+ 
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-array-by-parity-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/sort-array-by-parity-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: array
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/sort-array-by-parity-ii
+// Basic Ideas: two pointer
+// Move even to the first half, the odd to the second half
+// Then swap items
+// Complexity: Time O(n), Space O(1)
+func sortArrayByParityII(A []int) []int {
+    l, r := 0, len(A)-1
+    for l<r {
+        if A[l] % 2 == 0 {
+            l++
+            continue
+        }
+        if A[r] % 2 == 1 {
+            r--
+            continue
+        }
+        A[l], A[r]= A[r], A[l]
+        l, r = l+1, r-1
+    }
+
+    for i:=1; 2*i<len(A); i+=2 {
+        j := len(A)-1-i
+        A[i], A[j] = A[j], A[i]
+    }
+    return A
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

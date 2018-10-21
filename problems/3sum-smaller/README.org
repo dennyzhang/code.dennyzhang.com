@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, twosum
+:type:     twopointer, twosum, 3sum
 :END:
 ---------------------------------------------------------------------
 3Sum Smaller
@@ -12,7 +12,7 @@
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/3sum-closest][3Sum Closest]]
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
+- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
 - [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 ---------------------------------------------------------------------
 Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums[i] + nums[j] + nums[k] < target.
