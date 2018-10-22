@@ -11,6 +11,7 @@ Trapping Rain Water II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/trapping-rain-water-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-trappingrain][Series: Trapping Rain & Follow-up]]
 - [[https://code.dennyzhang.com/container-water][Trapping Rain Water]]
 - [[https://code.dennyzhang.com/minimum-height-trees][Minimum Height Trees]]
 - [[https://code.dennyzhang.com/boundary-of-binary-tree][Leetcode: Boundary of Binary Tree]]

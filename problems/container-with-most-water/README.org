@@ -11,6 +11,7 @@ Get the most water from containers
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/container-with-most-water"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-trappingrain][Series: Trapping Rain & Follow-up]]
 - Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.

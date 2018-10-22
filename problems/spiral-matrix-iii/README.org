@@ -11,6 +11,7 @@ Spiral Matrix III
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/spiral-matrix-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-matrixtraversal][Series: Matrix Traversal & Follow-up]]
 - Tag: [[https://code.dennyzhang.com/tag/matrixtraversal][#matrixtraversal]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 On a 2 dimensional grid with R rows and C columns, we start at (r0, c0) facing east.

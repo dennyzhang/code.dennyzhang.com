@@ -11,6 +11,7 @@ Sliding Puzzle
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sliding-puzzle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-slidingpuzzle][Series: Sliding Puzzle & Follow-up]]
 - [[https://code.dennyzhang.com/sliding-puzzle-iii][LintCode: Sliding Puzzle III]]
 - [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/slidingpuzzle][#slidingpuzzle]]

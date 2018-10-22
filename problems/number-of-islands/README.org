@@ -12,6 +12,7 @@ Number of Islands
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/island-city][Island City]]
+- [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - [[https://code.dennyzhang.com/review-graph][Review: Graph Problems]]
 - [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/island][#island]]

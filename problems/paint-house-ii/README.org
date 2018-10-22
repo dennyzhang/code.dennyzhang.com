@@ -11,7 +11,7 @@ Paint House II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/paint-house-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- [[https://code.dennyzhang.com/followup-paintfence][Series: Paint Fence & Follow-up]]
 - Tag: [[https://code.dennyzhang.com/tag/paintfence][#paintfence]]
 ---------------------------------------------------------------------
 There are a row of n houses, each house can be painted with one of the k colors. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color.

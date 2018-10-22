@@ -1,0 +1,82 @@
+* Leetcode: Flip String to Monotone Increasing                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Flip String to Monotone Increasing
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/flip-string-to-monotone-increasing"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+---------------------------------------------------------------------
+A string of '0's and '1's is monotone increasing if it consists of some number of '0's (possibly 0), followed by some number of '1's (also possibly 0.)
+
+We are given a string S of '0's and '1's, and we may flip any '0' to a '1' or a '1' to a '0'.
+
+Return the minimum number of flips to make S monotone increasing.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "00110"
+Output: 1
+Explanation: We flip the last digit to get 00111.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "010110"
+Output: 2
+Explanation: We flip to get 011111, or alternatively 000111.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "00011000"
+Output: 2
+Explanation: We flip to get 00000000.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= S.length <= 20000
+- S only consists of '0' and '1' characters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/flip-string-to-monotone-increasing][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/flip-string-to-monotone-increasing/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/flip-string-to-monotone-increasing
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

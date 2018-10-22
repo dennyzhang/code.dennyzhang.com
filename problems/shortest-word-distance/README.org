@@ -11,6 +11,7 @@ Shortest Word Distance
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-word-distance"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-worddistance][Series: Word Distance & Follow-up]]
 - [[https://code.dennyzhang.com/heaters][Heaters]]
 - [[https://code.dennyzhang.com/shortest-word-distance-ii][Shortest Word Distance II]]
 - [[https://code.dennyzhang.com/shortest-word-distance-iii][Shortest Word Distance III]]

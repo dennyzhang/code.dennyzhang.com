@@ -11,7 +11,8 @@ Reverse Words in a String
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-words-in-a-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/reverseitem][#reverseitem]], [[https://code.dennyzhang.com/string][#string]]
+- [[https://code.dennyzhang.com/followup-reverseitem][Series: Reverse List/String & Follow-up]]
+- Tag: [[https://code.dennyzhang.com/tag/reverseitem][#reverseitem]], [[https://code.dennyzhang.com/tag/string][#string]]
 ---------------------------------------------------------------------
 Given an input string, reverse the string word by word.
 

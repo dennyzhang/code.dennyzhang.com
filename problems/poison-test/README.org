@@ -11,6 +11,7 @@ Poison Test
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/poison-test"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-poison][Series: Poison Problems & Follow-up]]
 - [[https://code.dennyzhang.com/poor-pigs][Leetcode: Poor Pigs]]
 - Tag: [[https://code.dennyzhang.com/tag/poison][#poison]], [[https://code.dennyzhang.com/tag/game][#game]]
 ---------------------------------------------------------------------

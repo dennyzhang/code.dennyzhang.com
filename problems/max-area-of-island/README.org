@@ -11,6 +11,7 @@ Max Area of Island
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-area-of-island"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/island][#island]]
 ---------------------------------------------------------------------
 Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.

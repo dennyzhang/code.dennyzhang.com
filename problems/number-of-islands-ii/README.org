@@ -11,6 +11,7 @@ Number of Islands II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-islands-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - Tag: [[https://code.dennyzhang.com/tag/graph][#graph]]
 ---------------------------------------------------------------------
 A 2d grid map of m rows and n columns is initially filled with water. We may perform an addLand operation which turns the water at position (row, col) into a land. Given a list of positions to operate, count the number of islands after each addLand operation. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
