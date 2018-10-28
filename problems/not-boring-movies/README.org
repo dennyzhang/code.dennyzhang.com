@@ -11,7 +11,8 @@ Not Boring Movies
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/not-boring-movies"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies' ratings and descriptions.
 Please write a SQL query to output movies with an odd numbered ID and a description that is not 'boring'. Order the result by rating.

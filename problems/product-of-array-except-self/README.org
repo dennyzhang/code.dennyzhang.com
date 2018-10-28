@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, inspiring, twopass, classic
+:type:     array, inspiring, leftrightpass, classic
 :END:
 ---------------------------------------------------------------------
 Product of Array Except Self
@@ -11,8 +11,9 @@ Product of Array Except Self
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/product-of-array-except-self"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/maximum-sum-circular-subarray][Maximum Sum Circular Subarray]]
 - [[https://code.dennyzhang.com/shortest-distance-to-a-character][Shortest Distance to a Character]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/twopass][#twopass]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/leftrightpass][#leftrightpass]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 
@@ -58,7 +59,7 @@ We can use the similar two-pass idea to solve: [[https://code.dennyzhang.com/sho
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/product-of-array-except-self
-// Basic Ideas:
+// Basic Ideas: leftrightpass
 //
 // Complexity: Time O(n), Space O(1)
 func productExceptSelf(nums []int) []int {

@@ -7,7 +7,7 @@
 ---------------------------------------------------------------------
 Binary Tree Vertical Order Traversal
 ---------------------------------------------------------------------
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-tree-vertical-order-traversal"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
@@ -134,7 +134,7 @@ class Solution:
         return res
 #+END_SRC
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>

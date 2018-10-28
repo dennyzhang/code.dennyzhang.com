@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     trappingrain, twopass
+:type:     trappingrain, leftrightpass
 :END:
 ---------------------------------------------------------------------
 Trapping Rain Water
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-trappingrain][Series: Trapping Rain & Follow-up]]
 - [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
 - [[https://code.dennyzhang.com/container-water][Trapping Rain Water]]
-- Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/tag/twopass][#twopass]]
+- Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/tag/leftrightpass][#leftrightpass]]
 ---------------------------------------------------------------------
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 [[image-blog:Trapping Rain Water][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/rainwater_trap.png]]
@@ -38,7 +38,7 @@ Similar problem: [[https://code.dennyzhang.com/product-of-array-except-self][Pro
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/trapping-rain-water
-// Basic Ideas: Two Pass
+// Basic Ideas: leftrightpass
 // For each cell, find the left maximum and right maximum
 // Then caculate how much water current cell can hold
 //

@@ -237,3 +237,15 @@ Boundary of the small dataset
 * TODO sereie: maximum https://leetcode.com/problems/maximum-sum-circular-subarray/description/ :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] code.dennyzhang.com: elisp save hook, make sure list-post-meta-new create folders; set url link :noexport:
+* TODO doc: classic 0-1 bag                                        :noexport:
+* TODO doc: trending feeds: sliding window的Top K                  :noexport:
+https://pkghosh.wordpress.com/2014/09/10/realtime-trending-analysis-with-approximate-algorithms/
+http://www.michael-noll.com/blog/2013/01/18/implementing-real-time-trending-topics-in-storm/
+https://techcrunch.com/2016/09/06/ultimate-guide-to-the-news-feed/
+
+其实就是sliding window的Top K
+ dennyzhang
+i see
+ Bo Yang
+统计前一分钟Top 10的热搜, sth like that :)
+* TODO doc: LCA = lowest common ancestor                           :noexport:

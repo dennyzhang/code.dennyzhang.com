@@ -11,7 +11,8 @@ Shortest Distance in a Line
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-distance-in-a-line"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]], [[https://code.dennyzhang.com/tag/sql][Tag: #sql]]
+- [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table point holds the x coordinate of some points on x-axis in a plane, which are all integers.
 Write a query to find the shortest distance between two points in these points.
