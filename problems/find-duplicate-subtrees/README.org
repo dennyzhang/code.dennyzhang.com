@@ -11,7 +11,7 @@ Find Duplicate Subtrees
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-duplicate-subtrees"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/brick-wall][Brick Wall]]
+- [[https://code.dennyzhang.com/brick-wall][Leetcode: Brick Wall]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/postorder][#postorder]]
 ---------------------------------------------------------------------
 Given a binary tree, return all duplicate subtrees. For each kind of duplicate subtrees, you only need to return the root node of any one of them.
