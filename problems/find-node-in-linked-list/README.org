@@ -20,7 +20,7 @@ Find a node with given value in a linked list. Return null if not exists.
 
 Given 1->2->3 and value = 4, return null.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-node-in-linked-list][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-node-in-linked-list][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/find-node-in-linked-list/description][lintcode.com]]
 

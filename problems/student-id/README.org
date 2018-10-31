@@ -34,7 +34,7 @@ Python:
   cls.students[2] # should be a student instance with id = 2
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/student-id][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/student-id][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/student-id/description][lintcode.com]]
 

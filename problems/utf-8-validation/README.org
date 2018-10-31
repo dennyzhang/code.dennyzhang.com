@@ -51,7 +51,7 @@ The next byte is a continuation byte which starts with 10 and that's correct.
 But the second continuation byte does not start with 10, so it is invalid.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/utf-8-validation][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/utf-8-validation][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/utf-8-validation/description/][leetcode.com]]
 

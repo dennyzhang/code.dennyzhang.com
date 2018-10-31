@@ -53,7 +53,7 @@ All arithmetic subsequence slices are:
 [2,6,10]
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/arithmetic-slices-ii-subsequence][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/arithmetic-slices-ii-subsequence][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/arithmetic-slices-ii-subsequence/description/][leetcode.com]]
 

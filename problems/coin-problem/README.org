@@ -34,7 +34,7 @@ Ming retrieved two 20 and one 5.
 So the answer is 3.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/coin-problem][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/coin-problem][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/coin-problem/description][lintcode.com]]
 

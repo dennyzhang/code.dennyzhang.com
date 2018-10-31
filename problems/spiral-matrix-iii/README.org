@@ -51,7 +51,7 @@ Note:
 - 0 <= r0 < R
 - 0 <= c0 < C
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/spiral-matrix-iii][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/spiral-matrix-iii][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/spiral-matrix-iii/description/][leetcode.com]]
 

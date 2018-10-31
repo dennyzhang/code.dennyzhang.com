@@ -25,7 +25,7 @@ Given 1->2, return the node with value 1.
 Follow-up:
 Instead of solving it by two-pass. Can you do it in one-pass?
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/middle-of-linked-list][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/middle-of-linked-list][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/middle-of-linked-list/description][lintcode.com]]
 

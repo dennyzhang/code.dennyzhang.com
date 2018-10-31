@@ -25,7 +25,7 @@ number = 6000
 Return: True
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/interval-search][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/interval-search][code.dennyzhang.com]]
 
 Credits To: [[https://lintcode.com/problem/interval-search/description][lintcode.com]]
 

@@ -20,7 +20,7 @@ Example
 
 Given size = 4. return an array list that contains numbers from 1 to 4: [1,2,3,4]
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/generate-arraylist-with-given-size][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/generate-arraylist-with-given-size][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/generate-arraylist-with-given-size/description][lintcode.com]]
 

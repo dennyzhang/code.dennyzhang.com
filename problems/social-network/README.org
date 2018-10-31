@@ -39,7 +39,7 @@ Given n=5, a=[1,2,4], b=[2,3,5], return no.
 However, the two groups cannot be contacted. For example, 1 cannot contact 4 or 5
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/social-network][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/social-network][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/social-network/description][lintcode.com]]
 

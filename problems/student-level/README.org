@@ -44,7 +44,7 @@ Python:
     student.getLevel() # should be 'C'
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/student-level][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/student-level][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/student-level/description][lintcode.com]]
 

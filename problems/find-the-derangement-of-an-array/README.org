@@ -30,7 +30,7 @@ Explanation: The original array is [1,2,3]. The two derangements are [2,3,1] and
 Note:
 - n is in the range of [1, 106].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-the-derangement-of-an-array][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-the-derangement-of-an-array][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/find-the-derangement-of-an-array/description/][leetcode.com]]
 

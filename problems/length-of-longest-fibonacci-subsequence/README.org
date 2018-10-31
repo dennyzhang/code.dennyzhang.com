@@ -44,7 +44,7 @@ Note:
 - 3 <= A.length <= 1000
 - 1 <= A[0] < A[1] < ... < A[A.length - 1] <= 10^9
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/length-of-longest-fibonacci-subsequence][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/length-of-longest-fibonacci-subsequence][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description/][leetcode.com]]
 

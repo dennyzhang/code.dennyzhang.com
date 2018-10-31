@@ -52,7 +52,7 @@ Give arr=[2,4,4,6,8] , return 220.
 8+8+12+16+16+24+32+24+32+48=220
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/take-the-element-and-query-the-sum][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/take-the-element-and-query-the-sum][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/take-the-element-and-query-the-sum/description/][lintcode.com]]
 

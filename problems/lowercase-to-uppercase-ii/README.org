@@ -27,7 +27,7 @@ Given "aBc", return "ABC".
 Given "abC12", return "ABC12".
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/lowercase-to-uppercase-ii][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/lowercase-to-uppercase-ii][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/lowercase-to-uppercase-ii/description][lintcode.com]]
 

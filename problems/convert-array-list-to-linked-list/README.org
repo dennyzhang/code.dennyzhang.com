@@ -23,7 +23,7 @@ Example
 
 Given [1,2,3,4], return 1->2->3->4->null.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/convert-array-list-to-linked-list][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/convert-array-list-to-linked-list][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/convert-array-list-to-linked-list/description][lintcode.com]]
 

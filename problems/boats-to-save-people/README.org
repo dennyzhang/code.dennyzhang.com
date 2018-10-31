@@ -46,7 +46,7 @@ Note:
 1. 1 <= people.length <= 50000
 - 1 <= people[i] <= limit <= 30000
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/boats-to-save-people][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/boats-to-save-people][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/boats-to-save-people/description/][leetcode.com]]
 

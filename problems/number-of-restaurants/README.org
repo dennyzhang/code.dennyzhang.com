@@ -30,7 +30,7 @@ Return:
 [[0,0],[1,1]]
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-restaurants][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-restaurants][code.dennyzhang.com]]
 
 Credits To: [[https://lintcode.com/problem/number-of-restaurants/description][lintcode.com]]
 

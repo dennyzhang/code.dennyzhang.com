@@ -76,7 +76,7 @@ Note:
 - If you want to know more about the quad tree, you can refer to its wiki.
 - The logic OR operation is defined as this: "A or B" is true if A is true, or if B is true, or if both A and B are true.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/quad-tree-intersection][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/quad-tree-intersection][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/quad-tree-intersection/description/][leetcode.com]]
 

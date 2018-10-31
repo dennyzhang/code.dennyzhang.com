@@ -41,7 +41,7 @@ For a = 3, b = 2, operator = /, return 1. (not 1.5)
 For a = 10, b = 11, operator = -, return -1.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/simple-calculator][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/simple-calculator][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/simple-calculator/description][lintcode.com]]
 

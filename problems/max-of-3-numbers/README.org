@@ -20,7 +20,7 @@ Example
 
 Given num1 = 1, num2 = 9, num3 = 0, return 9.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-of-3-numbers][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-of-3-numbers][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/max-of-3-numbers/description][lintcode.com]]
 

@@ -25,7 +25,7 @@ Reverse 123 you will get 321.
 Reverse 900 you will get 9.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-3-digit-integer][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-3-digit-integer][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/reverse-3-digit-integer/description][lintcode.com]]
 

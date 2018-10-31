@@ -44,7 +44,7 @@ Note:
 - The number of nodes in the tree will be between 1 and 500.
 - The values of each node are unique.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-subtree-with-all-the-deepest-nodes][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-subtree-with-all-the-deepest-nodes][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/][leetcode.com]]
 

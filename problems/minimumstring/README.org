@@ -48,7 +48,7 @@ Explanation:
 Delete the `c` of the 1st position and the `b` of the 2nd place.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimumstring][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimumstring][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/minimumstring/description][lintcode.com]]
 

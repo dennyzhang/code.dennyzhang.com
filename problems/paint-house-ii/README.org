@@ -30,7 +30,7 @@ Explanation: Paint house 0 into color 0, paint house 1 into color 2. Minimum cos
 Follow up:
 Could you solve it in O(nk) runtime?
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/paint-house-ii][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/paint-house-ii][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/paint-house-ii/description/][leetcode.com]]
 

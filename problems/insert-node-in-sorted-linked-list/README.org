@@ -24,7 +24,7 @@ Given list = 1->4->6->8 and val = 5.
 Return 1->4->5->6->8.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/insert-node-in-sorted-linked-list][code.dennyzhang.com]]]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/insert-node-in-sorted-linked-list][code.dennyzhang.com]]
 
 Credits To: [[https://www.lintcode.com/problem/insert-node-in-sorted-linked-list/description][lintcode.com]]
 
