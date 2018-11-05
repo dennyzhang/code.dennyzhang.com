@@ -28,7 +28,8 @@ have values 7, 4, and 1.
 Note that the inputs "root" and "target" are actually TreeNodes.
 The descriptions of the inputs above are just serializations of these objects.
 #+END_EXAMPLE
-[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/tree_distance.png]]
+
+[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/keypad.png]]
 
 Note:
 1. The given tree is non-empty.

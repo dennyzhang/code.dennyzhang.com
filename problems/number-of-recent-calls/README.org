@@ -41,7 +41,7 @@ Credits To: [[https://leetcode.com/problems/number-of-recent-calls/description/]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: queue with array
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/number-of-recent-calls
