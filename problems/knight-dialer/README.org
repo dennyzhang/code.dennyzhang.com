@@ -16,7 +16,7 @@ Similar Problems:
 ---------------------------------------------------------------------
 A chess knight can move as indicated in the chess diagram below:
 
-[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/tree_distance.png]]
+[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/knight-keypad.png]]
 
 This time, we place our chess knight on any numbered key of a phone pad (indicated above), and the knight makes N-1 hops.  Each hop must be from one key to another numbered key.
 
