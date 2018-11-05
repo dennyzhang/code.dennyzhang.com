@@ -37,7 +37,50 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/unique-binary-search-trees-ii
+// Basic Ideas: dynamic programming
+// f(i):
+//         j+1
+//       /  \
+//      /    \
+//   f(j)    f(i-j-1)
+// For the right subtree, add j+1 to the value of each node
+//
+// Complexity: Time O(2^n), Space O(2^n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
 
+func deepCopyWithAdd(root *TreeNode, v int) *TreeNode {
+    if root == nil { return nil }
+    res := &TreeNode{root.Val+v, nil, nil}
+    res.Left, res.Right = deepCopyWithAdd(root.Left, v), deepCopyWithAdd(root.Right, v)
+    return res
+}
+
+func generateTrees(n int) []*TreeNode {
+    if n<=0 { return []*TreeNode{}}
+    l := [][]*TreeNode{}
+    l = append(l, []*TreeNode{nil})
+    l = append(l, []*TreeNode{&TreeNode{1, nil, nil}})
+    for i:=2; i<=n; i++ {
+        l2 := []*TreeNode{}
+        for j:=0; j<i; j++ {
+            for _, left := range l[j] {
+                for _, right := range l[i-j-1] {
+                    parent := &TreeNode{j+1, deepCopyWithAdd(left, 0), deepCopyWithAdd(right, j+1)}
+                    l2 = append(l2, parent)
+                }
+            }
+        }
+        l = append(l, l2)
+    }
+    return l[n]
+}
 #+END_SRC
 
 #+BEGIN_HTML

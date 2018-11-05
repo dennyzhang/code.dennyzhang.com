@@ -1,9 +1,9 @@
-* Leetcode: Prefix and Suffix Search                             :BLOG:Medium:
+* Leetcode: Prefix and Suffix Search                             :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 #+TYPE: trie, inspiring
 :PROPERTIES:
-:type:     trie, inspiring
+:type:     trie, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Prefix and Suffix Search
@@ -42,24 +42,52 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/prefix-and-suffix-search
 // Basic Ideas: Trie tree
 //
-// Complexity: Time ? Space ?
+// Complexity:
 type WordFilter struct {
-    
+    children map[rune]*WordFilter
+    ch rune
+    weight int
 }
-
 
 func Constructor(words []string) WordFilter {
-    
+    root := WordFilter{map[rune]*WordFilter{}, ' ', -1}
+    for i, word := range words {
+        word2 := word
+        for j:= len(word); j>=0; j-- {
+            ch := '#'
+            if j != len(word) { ch = rune(word[j]) }
+            word2 = fmt.Sprintf("%s%s", string(ch), word2)
+            // Add word2 to the trie tree
+            p := &root
+            for _, ch := range word2 {
+                q, ok := p.children[ch]
+                if ok {
+                    if q.weight < i { q.weight = i }
+                } else {
+                    q = &WordFilter{map[rune]*WordFilter{}, ch, i}
+                    p.children[ch] = q
+                }
+                p = q
+            }
+        }
+    }
+    return root
 }
-
 
 func (this *WordFilter) F(prefix string, suffix string) int {
-    
+    str := fmt.Sprintf("%s#%s", suffix, prefix)
+    res := -1
+    p := this
+    for _, ch := range str {
+        q, ok := p.children[ch]
+        if !ok { return -1 }
+        res = q.weight
+        p = q
+    }
+    return res
 }
-
 
 /**
  * Your WordFilter object will be instantiated and called as such:
