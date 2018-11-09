@@ -251,3 +251,4 @@ i see
 * TODO doc: LCA = lowest common ancestor                           :noexport:
 * TODO Merge two posts: https://code.dennyzhang.com/review-code-problems, https://code.dennyzhang.com/followup-all :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] google adsense image icon: https://code.dennyzhang.com/ :noexport:
