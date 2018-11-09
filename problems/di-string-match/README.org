@@ -1,0 +1,82 @@
+* Leetcode: DI String Match                                      :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     twopointer
+:END:
+---------------------------------------------------------------------
+DI String Match
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/di-string-match"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+---------------------------------------------------------------------
+
+Given a string S that only contains "I" (increase) or "D" (decrease), let N = S.length.
+
+Return any permutation A of [0, 1, ..., N] such that for all i = 0, ..., N-1:
+
+If S[i] == "I", then A[i] < A[i+1]
+If S[i] == "D", then A[i] > A[i+1]
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "IDID"
+Output: [0,4,1,3,2]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "III"
+Output: [0,1,2,3]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "DDI"
+Output: [3,2,0,1]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= S.length <= 10000
+- S only contains characters "I" or "D".
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/di-string-match][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/di-string-match/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/di-string-match
+// Basic Ideas: two pointers
+// Complexity: Time O(n), Space O(1)
+func diStringMatch(S string) []int {
+    res := []int{}
+    i, j := 0, len(S)
+    for _, ch := range S {
+        if ch == 'I' {
+            res = append(res, i)
+            i++
+        } else {
+            res = append(res, j)
+            j--
+        }
+    }
+    res = append(res, i)
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+</div>
+#+END_HTML

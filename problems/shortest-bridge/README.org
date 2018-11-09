@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     graph, bfs, dfs, classic, redo
 :END:
 ---------------------------------------------------------------------
 Shortest Bridge
@@ -11,10 +11,8 @@ Shortest Bridge
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-bridge"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
-
 In a given 2D binary array A, there are two islands.  (An island is a 4-directionally connected group of 1s not connected to any other 1s.)
 
 Now, we may change 0s to 1s so as to connect the two islands together to form 1 island.
@@ -38,7 +36,7 @@ Example 3:
 Input: [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]
 Output: 1
 #+END_EXAMPLE
- 
+
 Note:
 
 1. 1 <= A.length = A[0].length <= 100
@@ -50,26 +48,70 @@ Credits To: [[https://leetcode.com/problems/shortest-bridge/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution:
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/shortest-bridge
+// Basic Ideas: BFS
+// Complexity: Time O(n), Space O(n)
+func shortestBridge(A [][]int) int {
+    res := 0
+    queue := [][]int{}
+    offsets := [][]int{[]int{0, 1}, []int{0, -1}, []int{1, 0}, []int{-1, 0}}
+    for i, row := range A {
+        for j, value := range row {
+            if value == 1 {
+                queue = append(queue, []int{i, j})
+                A[i][j] = 2
+                // mark current region as 2
+                border := [][]int{}
+                for len(queue) != 0 {
+                    l := [][]int{}
+                    for _, point := range queue {
+                        for _, offset := range offsets {
+                            i2, j2 := point[0]+offset[0], point[1]+offset[1]
+                            if i2<0 || i2>=len(A) || j2<0 || j2>=len(A[0]) || A[i2][j2] == 2 {
+                                continue
+                            }
 
+                            if A[i2][j2] == 0 {
+                                border = append(border, []int{i2, j2})
+                            } else {
+                                A[i2][j2] = 2
+                                l = append(l, []int{i2, j2})
+                            }
+                        }
+                    }
+                    queue = l
+                }
+                queue = border
+                break
+            }
+        }
+        if len(queue) != 0 { break }
+    }
+    // start bfs
+    for len(queue) != 0 {
+        res++
+        l := [][]int{}
+        for _, point := range queue {
+            for _, offset := range offsets {
+                i2, j2 := point[0]+offset[0], point[1]+offset[1]
+                if i2<0 || i2>=len(A) || j2<0 || j2>=len(A[0]) || A[i2][j2] == 2 {
+                    continue
+                }
+                if A[i2][j2] == 1 {
+                    return res
+                } else {
+                    l = append(l, []int{i2, j2})
+                    A[i2][j2] = 2
+                }
+            }
+        }
+        queue = l
+    }
+    return res+1
+}
 #+END_SRC
 
 #+BEGIN_HTML
