@@ -252,4 +252,5 @@ i see
 * TODO Merge two posts: https://code.dennyzhang.com/review-code-problems, https://code.dennyzhang.com/followup-all :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] google adsense image icon: https://code.dennyzhang.com/ :noexport:
+<<<<<<< HEAD
 * HALF classic: doc: sort one array, according to another array: https://leetcode.com/problems/find-and-replace-in-string/description/ :noexport:
