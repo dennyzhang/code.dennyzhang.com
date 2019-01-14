@@ -254,3 +254,4 @@ i see
 * TODO [#A] google adsense image icon: https://code.dennyzhang.com/ :noexport:
 <<<<<<< HEAD
 * HALF classic: doc: sort one array, according to another array: https://leetcode.com/problems/find-and-replace-in-string/description/ :noexport:
+* TODO https://github.com/MisterBooo/LeetCodeAnimation             :noexport:
