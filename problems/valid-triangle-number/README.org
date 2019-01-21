@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, twosum
+:type:     twopointer, twosum, triangle
 :END:
 ---------------------------------------------------------------------
 Pic 3 numbers to get a triangle
@@ -13,7 +13,7 @@ Pic 3 numbers to get a triangle
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 Given an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.
 

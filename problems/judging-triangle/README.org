@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring
+:type:     inspiring, triangle
 :END:
 ---------------------------------------------------------------------
 Judging Triangle
@@ -12,7 +12,7 @@ Judging Triangle
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 Description
 Given an array arr, ask if you can find 3 elements from the array as the sides of the three sides, so that the three sides can form a triangle. If yes, return yes, if not, return no

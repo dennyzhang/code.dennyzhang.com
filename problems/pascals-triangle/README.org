@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array
+:type:     array, triangle
 :END:
 ---------------------------------------------------------------------
 Given numRows, generate the first numRows of Pascal's triangle.
@@ -13,6 +13,7 @@ Given numRows, generate the first numRows of Pascal's triangle.
 Similar Problems:
 - [[https://code.dennyzhang.com/pascals-triangle-ii][Leetcode: Pascal's Triangle II]]
 - All basic problems: [[https://code.dennyzhang.com/category/basic][basic]], [[https://code.dennyzhang.com/tag/codetemplate][codetemplate]]
+- Tag: [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 Given numRows, generate the first numRows of Pascal's triangle.
 #+BEGIN_EXAMPLE

@@ -1,0 +1,102 @@
+* Leetcode: Univalued Binary Tree                                :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     treetraversal, dfs
+:END:
+---------------------------------------------------------------------
+Univalued Binary Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/univalued-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
+---------------------------------------------------------------------
+A binary tree is univalued if every node in the tree has the same value.
+
+Return true if and only if the given tree is univalued.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,1,1,1,1,null,1]
+Output: true
+#+END_EXAMPLE
+[[image-blog:Leetcode: Univalued Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/univalued-binary-tree/unival_bst_1.png]]
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [2,2,2,5,2]
+Output: false
+#+END_EXAMPLE
+[[image-blog:Leetcode: Univalued Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/univalued-binary-tree/unival_bst_2.png]] 
+
+Note:
+
+1. The number of nodes in the given tree will be in the range [1, 100].
+- Each node's value will be an integer in the range [0, 99].
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/univalued-binary-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/univalued-binary-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- With mini function
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/univalued-binary-tree
+// Basic Ideas: pre-order tree traseveral
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func visit(root *TreeNode, value int) bool {
+    if root == nil { return true }
+    if root.Val != value { return false }
+    return visit(root.Left, value) && visit(root.Right, value)
+}
+
+func isUnivalTree(root *TreeNode) bool {
+    if root == nil { return true }
+    return visit(root.Left, root.Val) && visit(root.Right, root.Val)
+}
+#+END_SRC
+
+- Without mini function
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/univalued-binary-tree
+// Basic Ideas: pre-order tree traseveral
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+
+func isUnivalTree(root *TreeNode) bool {
+    if root == nil { return true }
+    if root.Left != nil && root.Val != root.Left.Val {
+        return false
+    }
+    if root.Right != nil && root.Val != root.Right.Val {
+        return false
+    }
+    return isUnivalTree(root.Left) && isUnivalTree(root.Right)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

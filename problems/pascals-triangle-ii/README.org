@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc, redo
+:type:     misc, triangle, redo
 :END:
 ---------------------------------------------------------------------
 Pascal's Triangle II
@@ -12,6 +12,7 @@ Pascal's Triangle II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/pascals-triangle][Leetcode: Pascal's Triangle]]
+- Tag: [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 iven an index k, return the kth row of the Pascal's triangle.
 

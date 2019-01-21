@@ -17,10 +17,11 @@ Given an array A of integers, return true if and only if it is a valid mountain 
 
 Recall that A is a mountain array if and only if:
 
-A.length >= 3
-There exists some i with 0 < i < A.length - 1 such that:
-A[0] < A[1] < ... A[i-1] < A[i]
-A[i] > A[i+1] > ... > A[B.length - 1]
+1. A.length >= 3
+
+2. There exists some i with 0 < i < A.length - 1 such that:
+ - A[0] < A[1] < ... A[i-1] < A[i]
+ - A[i] > A[i+1] > ... > A[B.length - 1]
  
 Example 1:
 #+BEGIN_EXAMPLE
@@ -51,11 +52,23 @@ Credits To: [[https://leetcode.com/problems/valid-mountain-array/description/][l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
-
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/valid-mountain-array
-
+// Basic Idea: simple scan
+// Complexity: Time O(n), Space O(1)
+func validMountainArray(A []int) bool {
+    if len(A) < 3 || A[1] <= A[0] { return false }
+    // find the first part
+    i := 1
+    for i < len(A) -1 && A[i] < A[i+1] {
+        i++
+    }
+    if i == len(A) -1 { return false }
+    for i < len(A) -1 && A[i] > A[i+1] {
+        i++
+    }
+    return i == len(A) - 1
+}
 #+END_SRC
 
 #+BEGIN_HTML

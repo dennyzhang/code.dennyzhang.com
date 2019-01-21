@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     sql
+:type:     sql, triangle
 :END:
 ---------------------------------------------------------------------
 Triangle Judgement
@@ -12,7 +12,7 @@ Triangle Judgement
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 A pupil Tim gets homework to identify whether three line segments could possibly form a triangle.
 However, this assignment is very heavy because there are hundreds of records to calculate.

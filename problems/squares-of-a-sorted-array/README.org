@@ -1,0 +1,108 @@
+* Leetcode: Squares of a Sorted Array                           :BLOG:Easy:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     twopointer, mergesort
+:END:
+---------------------------------------------------------------------
+Squares of a Sorted Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/squares-of-a-sorted-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/mergesort][#mergesort]]
+---------------------------------------------------------------------
+Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [-4,-1,0,3,10]
+Output: [0,1,9,16,100]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [-7,-3,2,3,11]
+Output: [4,9,9,49,121]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 10000
+- -10000 <= A[i] <= 10000
+- A is sorted in non-decreasing order.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/squares-of-a-sorted-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/squares-of-a-sorted-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Two pointers
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/squares-of-a-sorted-array
+// Basic Idea: Two pointers
+// Complexity: Time O(n), Space O(1)
+func sortedSquares(A []int) []int {
+    res := make([]int, len(A))
+    i, j := 0, len(A)-1
+    for k:=len(A)-1; k>=0; k-- {
+        v1, v2 := A[i]*A[i], A[j]*A[j]
+        if v1>=v2 {
+            res[k] = v1
+            i++
+        } else {
+            res[k] = v2
+            j--
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Merge sort
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/squares-of-a-sorted-array
+// Basic Idea: merge sort
+// Complexity: Time O(n), Space O(n)
+func sortedSquares(A []int) []int {
+    B1, B2 := []int{}, []int{}
+    for _, v := range A {
+        if v < 0 {
+            B1 = append(B1, v*v)
+        } else {
+            B2 = append(B2, v*v)
+        }
+    }
+    // Merge B1 and B2
+    i, j := len(B1)-1, 0
+    res := []int{}
+    for i>=0 && j<len(B2) {
+        if B1[i] <= B2[j] {
+            res = append(res, B1[i])
+            i--
+        } else {
+            res = append(res, B2[j])
+            j++
+        }
+    }
+    for i>=0 {
+        res = append(res, B1[i])
+        i--        
+    }
+    for j<len(B2) {
+        res = append(res, B2[j])
+        j++
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
