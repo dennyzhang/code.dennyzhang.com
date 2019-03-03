@@ -39,6 +39,8 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/4sum
+## Basic Idea: sort the list, then 4 indices. i, j, l, r
+## Complexity: Time O(n*n*n), Space O(1)
 class Solution(object):
     def fourSum(self, nums, target):
         """
@@ -46,9 +48,6 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        ## Idea: sort the list, then 4 indices. i, j, l, r
-        ## Complexity: Time O(n*n*n), Space O(1)
-        ## Sample Data:
         nums.sort()
         res = []
         for i in xrange(len(nums)-3):

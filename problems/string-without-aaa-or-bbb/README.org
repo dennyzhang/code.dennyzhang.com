@@ -1,0 +1,96 @@
+* Leetcode: String Without AAA or BBB                            :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, redo
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-without-aaa-or-bbb"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]]
+---------------------------------------------------------------------
+Given two integers A and B, return any string S such that:
+
+S has length A + B and contains exactly A 'a' letters, and exactly B 'b' letters;
+The substring 'aaa' does not occur in S;
+The substring 'bbb' does not occur in S.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = 1, B = 2
+Output: "abb"
+Explanation: "abb", "bab" and "bba" are all correct answers.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = 4, B = 1
+Output: "aabaa"
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= A <= 100
+- 0 <= B <= 100
+- It is guaranteed such an S exists for the given A and B.
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-without-aaa-or-bbb][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/string-without-aaa-or-bbb/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/string-without-aaa-or-bbb
+// Basic Ideas: greedy
+//   Start with |B-A| pairs of "ab", then add 'a' or 'b'
+// Complexity: Time O(n), Space O(1)
+func strWithout3a3b(A int, B int) string {
+    res := ""
+    count := 0
+    if A > B {
+        count = B
+        offset := A-B
+        for offset > 0 && count > 0 {
+            res += "aab"
+            offset--
+            count--
+        }
+        for i:=0; i<offset; i++ {
+            res += "a"
+        }
+    } else {
+        count = A
+        offset := B-A
+        for offset > 0 && count > 0 {
+            res += "bba"
+            offset--
+            count--
+        }
+        for i:=0; i<offset; i++ {
+            res += "b"
+        }
+    }
+    for i:=0; i<count; i++ {
+        if A > B {
+            res += "ab"  
+        } else {
+            res += "ba"
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
