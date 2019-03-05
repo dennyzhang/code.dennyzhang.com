@@ -11,8 +11,8 @@ Sum of Even Numbers After Queries
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-even-numbers-after-queries"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/review-array][Review: Array Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 We have an array A of integers, and an array queries of queries.
 
