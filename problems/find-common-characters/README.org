@@ -1,0 +1,81 @@
+* Leetcode: Find Common Characters                               :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Find Common Characters
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-common-characters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-array][Review: Array]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+Given an array A of strings made only from lowercase letters, return a list of all characters that show up in all strings within the list (including duplicates).  For example, if a character occurs 3 times in all strings but not 4 times, you need to include that character three times in the final answer.
+
+You may return the answer in any order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: ["bella","label","roller"]
+Output: ["e","l","l"]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: ["cool","lock","cook"]
+Output: ["c","o"]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 100
+- 1 <= A[i].length <= 100
+- A[i][j] is a lowercase letter
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-common-characters][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-common-characters/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/find-common-characters
+// Basic Ideas: array
+// Complexity: Time O(n), Space O(1)
+func commonChars(A []string) []string {
+    l := make([]int, 26)
+    for i:=0; i<26; i++ { l[i] = 100 }
+    
+    for _, s := range A {
+        l2 := make([]int, 26)
+        for _, ch := range s {
+            i := byte(ch) - 'a'
+            l2[i]++
+        }
+        for i:=0; i<26; i++ {
+            if l2[i] < l[i] {
+                l[i] = l2[i]
+            }
+        }
+    }
+    res := []string {}
+    for i:=0; i<26; i++ {
+        for j:=0; j<l[i]; j++ {
+            res = append(res, string('a'+byte(i)))
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

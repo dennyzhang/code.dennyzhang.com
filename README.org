@@ -221,8 +221,7 @@ Boundary of the small dataset
 ** TODO code.dennyzhang.com: search for two tags combined
 * TODO [#A] change target scenario of code blog                    :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO Sample: add image https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/univalued-binary-tree :noexport:
-
+* TODO Image: [[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree1.png :noexport:
 * TODO Add review: 3sum: https://code.dennyzhang.com/tag/3sum      :noexport:
 
 * TODO Add review: iterator: https://code.dennyzhang.com/tag/iterator :noexport:

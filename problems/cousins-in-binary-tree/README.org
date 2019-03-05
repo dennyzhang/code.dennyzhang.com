@@ -1,0 +1,101 @@
+* Leetcode: Cousins in Binary Tree                               :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree, bfs, dfs
+:END:
+---------------------------------------------------------------------
+Cousins in Binary Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/cousins-in-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-binarytree][Review: BinaryTree Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
+---------------------------------------------------------------------
+In a binary tree, the root node is at depth 0, and children of each depth k node are at depth k+1.
+
+Two nodes of a binary tree are cousins if they have the same depth, but have different parents.
+
+We are given the root of a binary tree with unique values, and the values x and y of two different nodes in the tree.
+
+Return true if and only if the nodes corresponding to the values x and y are cousins.
+
+Example 1:
+[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree1.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,2,3,4], x = 4, y = 3
+Output: false
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree2.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
+Output: true
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree3.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,2,3,null,4], x = 2, y = 3
+Output: false
+#+END_EXAMPLE
+ 
+Note:
+
+1. The number of nodes in the tree will be between 2 and 100.
+- Each node has a unique integer value from 1 to 100.
+ 
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/cousins-in-binary-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/cousins-in-binary-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/cousins-in-binary-tree
+// Basic Ideas: dfs, bfs
+// track level + parent node
+// Complexity: Time O(n), Space O(1)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+type node struct {
+    parent *TreeNode
+    level int
+}
+
+func dfs(root *TreeNode, level int, parent *TreeNode, x int) *node {
+    if root == nil {
+        return &node{nil, -1}
+    }
+    if root.Val == x {
+        return &node{parent, level}
+    }
+    node := dfs(root.Left, level+1, root, x)
+    if node.parent != nil {
+        return node
+    } else {
+        return dfs(root.Right, level+1, root, x)
+    }
+}
+func isCousins(root *TreeNode, x int, y int) bool {
+    node1, node2 := dfs(root, 0, nil, x), dfs(root, 0, nil, y)
+    return node1.parent != node2.parent && node1.level == node2.level
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

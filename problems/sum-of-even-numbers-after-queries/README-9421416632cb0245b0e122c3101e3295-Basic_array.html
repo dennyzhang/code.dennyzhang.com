@@ -1,0 +1,109 @@
+
+<body>
+<hr />
+
+Sum of Even Numbers After Queries<br />
+<hr />
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-even-numbers-after-queries"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+
+Similar Problems:<br />
+<ul class="org-ul">
+<li><a href="https://code.dennyzhang.com/review-linkedlist">Review: Linked List Problems</a><br /></li>
+<li>Tag: <a href="https://code.dennyzhang.com/tag/linkedlist">#linkedlist</a><br /></li>
+</ul>
+<hr />
+
+We have an array A of integers, and an array queries of queries.<br />
+
+
+For the i-th query val = queries[i][0], index = queries[i][1], we add val to A[index].  Then, the answer to the i-th query is the sum of the even values of A.<br />
+
+
+(Here, the given index = queries[i][1] is a 0-based index, and each query permanently modifies the array A.)<br />
+
+
+Return the answer to all queries.  Your answer array should have answer[i] as the answer to the i-th query.<br />
+
+
+Example 1:<br />
+<pre class="example">
+Input: A = [1,2,3,4], queries = [[1,0],[-3,1],[-4,0],[2,3]]
+Output: [8,6,2,4]
+Explanation: 
+At the beginning, the array is [1,2,3,4].
+After adding 1 to A[0], the array is [2,2,3,4], and the sum of even values is 2 + 2 + 4 = 8.
+After adding -3 to A[1], the array is [2,-1,3,4], and the sum of even values is 2 + 4 = 6.
+After adding -4 to A[0], the array is [-2,-1,3,4], and the sum of even values is -2 + 4 = 2.
+After adding 2 to A[3], the array is [-2,-1,3,6], and the sum of even values is -2 + 6 = 4.
+</pre>
+
+
+Note:<br />
+
+<ol class="org-ol">
+<li>1 &lt;= A.length &lt;= 10000<br /></li>
+<li>-10000 &lt;= A[i] &lt;= 10000<br /></li>
+<li>1 &lt;= queries.length &lt;= 10000<br /></li>
+<li>-10000 &lt;= queries[i][0] &lt;= 10000<br /></li>
+<li>0 &lt;= queries[i][1] &lt; A.length<br /></li>
+</ol>
+
+
+Github: <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-even-numbers-after-queries">code.dennyzhang.com</a><br />
+
+
+Credits To: <a href="https://leetcode.com/problems/sum-of-even-numbers-after-queries/description/">leetcode.com</a><br />
+
+
+Leave me comments, if you have better ways to solve.<br />
+<hr />
+<div class="org-src-container">
+<pre class="src src-go"><span style="color: #ff7f24;">// </span><span style="color: #ff7f24;">Blog link: https://code.dennyzhang.com/sum-of-even-numbers-after-queries</span>
+<span style="color: #ff7f24;">// </span><span style="color: #ff7f24;">Basic Ideas: array</span>
+<span style="color: #ff7f24;">// </span><span style="color: #ff7f24;">Complexity: Time O(n+k), Space O(1)</span>
+<span style="color: #00ffff;">func</span> <span style="color: #87cefa;">abs</span>(num <span style="color: #98fb98;">int</span>) <span style="color: #98fb98;">int</span> {
+    <span style="color: #00ffff;">if</span> num &lt; 0 { num = -num }
+    <span style="color: #00ffff;">return</span> num
+}
+<span style="color: #00ffff;">func</span> <span style="color: #87cefa;">sumEvenAfterQueries</span>(A []<span style="color: #98fb98;">int</span>, queries [][]<span style="color: #98fb98;">int</span>) []<span style="color: #98fb98;">int</span> {
+    even_sum := 0
+    res := []<span style="color: #98fb98;">int</span>{}
+    <span style="color: #00ffff;">for</span> _, num := <span style="color: #00ffff;">range</span> A {
+        <span style="color: #00ffff;">if</span> num%2 == 0 { even_sum += num }
+    }
+
+    <span style="color: #00ffff;">for</span> _, q := <span style="color: #00ffff;">range</span> queries {
+        val, index := q[0], q[1]
+        <span style="color: #00ffff;">if</span> <span style="color: #87cefa;">abs</span>(A[index] + val)%2 == 0 {
+            <span style="color: #00ffff;">if</span> <span style="color: #87cefa;">abs</span>(A[index])%2 == 0 {
+                even_sum += val
+            } <span style="color: #00ffff;">else</span> {
+                even_sum += val+A[index]
+            }
+        }
+        <span style="color: #00ffff;">if</span> <span style="color: #87cefa;">abs</span>(A[index])%2 == 0 &amp;&amp; <span style="color: #87cefa;">abs</span>(val)%2 == 1 {
+            even_sum -= A[index]
+        }
+        A[index] += val
+        res = <span style="color: #b0c4de;">append</span>(res, even_sum)
+    }
+    <span style="color: #00ffff;">return</span> res
+}
+</pre>
+</div>
+
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Denny Zhang</p>
+<p class="date">Created: 2019-03-05 Tue 07:50</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+<br/></body>
+

@@ -11,6 +11,7 @@ Add 2 strings of big numbers
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/add-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/add-to-array-form-of-integer][Leetcode: Add to Array-Form of Integer]]
 - [[https://code.dennyzhang.com/k-decimal-addition][LintCode: K Decimal Addition]]
 - [[https://code.dennyzhang.com/additive-number][Additive Number]]
 ---------------------------------------------------------------------
@@ -18,10 +19,10 @@ Given two non-negative integers num1 and num2 represented as string, return the 
 
 Note:
 
-The length of both num1 and num2 is < 5100.
-Both num1 and num2 contains only digits 0-9.
-Both num1 and num2 does not contain any leading zero.
-You must not use any built-in BigInteger library or convert the inputs to integer directly.
+1. The length of both num1 and num2 is < 5100.
+- Both num1 and num2 contains only digits 0-9.
+- Both num1 and num2 does not contain any leading zero.
+- You must not use any built-in BigInteger library or convert the inputs to integer directly.
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/add-strings][code.dennyzhang.com]]
 

@@ -1,0 +1,101 @@
+* Leetcode: Add to Array-Form of Integer                         :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Add to Array-Form of Integer
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/add-to-array-form-of-integer"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/add-strings][Leetcode: Add Strings]]
+- [[https://code.dennyzhang.com/review-array][Review: Array Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+For a non-negative integer X, the array-form of X is an array of its digits in left to right order.  For example, if X = 1231, then the array form is [1,2,3,1].
+
+Given the array-form A of a non-negative integer X, return the array-form of the integer X+K.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [1,2,0,0], K = 34
+Output: [1,2,3,4]
+Explanation: 1200 + 34 = 1234
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [2,7,4], K = 181
+Output: [4,5,5]
+Explanation: 274 + 181 = 455
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: A = [2,1,5], K = 806
+Output: [1,0,2,1]
+Explanation: 215 + 806 = 1021
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: A = [9,9,9,9,9,9,9,9,9,9], K = 1
+Output: [1,0,0,0,0,0,0,0,0,0,0]
+Explanation: 9999999999 + 1 = 10000000000
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 10000
+- 0 <= A[i] <= 9
+- 0 <= K <= 10000
+- If A.length > 1, then A[0] != 0
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/add-to-array-form-of-integer][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/add-to-array-form-of-integer/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/add-to-array-form-of-integer
+// Basic Ideas: add big numbers
+// Complexity: Time O(n), Space O(1)
+import "strconv"
+func addToArrayForm(A []int, K int) []int {
+    length := len(strconv.Itoa(K))
+    if length < len(A) { length = len(A) }
+    length++
+
+    res := make([]int, length)
+    num1, num2, carry := 0, 0, 0
+    i := len(A)-1
+    
+    for j:= length-1; j>=0; j-- {
+        if i<0 {
+            num1 = 0
+        } else {
+            num1 = A[i]
+            i--
+        }
+        num2, K = K%10, K/10
+        res[j] = (num1+num2+carry)%10
+        carry = (num1+num2+carry)/10
+    }
+    j:=0
+    for ; j<len(res)-1 && res[j]==0; j++ {
+    }
+    return res[j:]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

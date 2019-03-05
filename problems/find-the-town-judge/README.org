@@ -1,0 +1,103 @@
+* Leetcode: Find the Town Judge                                  :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Find the Town Judge
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-the-town-judge"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-array][Review: Array]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+In a town, there are N people labelled from 1 to N.  There is a rumor that one of these people is secretly the town judge.
+
+If the town judge exists, then:
+
+1. The town judge trusts nobody.
+- Everybody (except for the town judge) trusts the town judge.
+- There is exactly one person that satisfies properties 1 and 2.
+
+You are given trust, an array of pairs trust[i] = [a, b] representing that the person labelled a trusts the person labelled b.
+
+If the town judge exists and can be identified, return the label of the town judge.  Otherwise, return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: N = 2, trust = [[1,2]]
+Output: 2
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: N = 3, trust = [[1,3],[2,3]]
+Output: 3
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: N = 3, trust = [[1,3],[2,3],[3,1]]
+Output: -1
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: N = 3, trust = [[1,2],[2,3]]
+Output: -1
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: N = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
+Output: 3
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= N <= 1000
+- trust.length <= 10000
+- trust[i] are all different
+- trust[i][0] != trust[i][1]
+- 1 <= trust[i][0], trust[i][1] <= N
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-the-town-judge][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-the-town-judge/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/find-the-town-judge
+// Basic Ideas: array
+// l[i]: how many people trust me. If I trust anyone, I'm not the candidate. Mark it as -1
+// Complexity: Time O(n), Space O(n)
+func findJudge(N int, trust [][]int) int {
+    l := make([]int, N+1)
+    for _, t := range trust {
+        t1, t2 := t[0], t[1]
+        l[t1] = -1
+        if l[t2] != -1 {
+            l[t2]++
+        }
+    }
+    
+    for i:=1; i<=N; i++ {
+        if l[i] == N-1 {
+            return i
+        }
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
