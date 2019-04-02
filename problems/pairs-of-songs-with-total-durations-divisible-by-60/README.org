@@ -1,0 +1,72 @@
+* Leetcode: Pairs of Songs With Total Durations Divisible by 60  :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+Pairs of Songs With Total Durations Divisible by 60
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/pairs-of-songs-with-total-durations-divisible-by-60"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+In a list of songs, the i-th song has a duration of time[i] seconds. 
+
+Return the number of pairs of songs for which their total duration in seconds is divisible by 60.  Formally, we want the number of indices i < j with (time[i] + time[j]) % 60 == 0.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [30,20,150,100,40]
+Output: 3
+Explanation: Three pairs have a total duration divisible by 60:
+(time[0] = 30, time[2] = 150): total duration 180
+(time[1] = 20, time[3] = 100): total duration 120
+(time[1] = 20, time[4] = 40): total duration 60
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [60,60,60]
+Output: 3
+Explanation: All three pairs have a total duration of 120, which is divisible by 60.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= time.length <= 60000
+- 1 <= time[i] <= 500
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/pairs-of-songs-with-total-durations-divisible-by-60][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/pairs-of-songs-with-total-durations-divisible-by-60
+// Basic Ideas: hashmap for limited value range
+// Complexity: Time O(n), Space O(1)
+func numPairsDivisibleBy60(time []int) int {
+    l := make([]int, 60)
+    for _, value := range time { l[value%60]++ }
+    res := (l[0]*(l[0]-1))/2 + (l[30]*(l[30]-1))/2
+    for i:= 1; i<30; i++ {
+        res += l[i]*l[60-i]
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

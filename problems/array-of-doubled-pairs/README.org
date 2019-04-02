@@ -1,0 +1,99 @@
+* Leetcode: Array of Doubled Pairs                               :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Array of Doubled Pairs
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/array-of-doubled-pairs"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given an array of integers A with even length, return true if and only if it is possible to reorder it such that A[2 * i + 1] = 2 * A[2 * i] for every 0 <= i < len(A) / 2.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [3,1,3,6]
+Output: false
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [2,1,2,6]
+Output: false
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [4,-2,2,-4]
+Output: true
+Explanation: We can take two groups, [-2,-4] and [2,4] to form [-2,-4,2,4] or [2,4,-2,-4].
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: [1,2,4,16,8,4]
+Output: false
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= A.length <= 30000
+- A.length is even
+- -100000 <= A[i] <= 100000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/array-of-doubled-pairs][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/array-of-doubled-pairs/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/array-of-doubled-pairs
+// Basic Ideas: sort + hashmap
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+func canReorderDoubled(A []int) bool {
+    sort.Ints(A)
+    m := map[int]int{}
+    for _, num := range A {
+        m[num]++
+    }
+    count := 0
+    for _, num := range A {
+        if m[num] > 0 {
+            if num<0 && num%2 !=0 { return false }
+			num2 := num*2
+            if num<0 { num2 = num/2 }
+            m[num]--
+            count++
+
+            if m[num2]>0 {
+                m[num2]--
+                count++
+            } else {
+                return false
+            }
+        }
+        if count == len(A) {
+            return true
+        }
+    }
+    return count == len(A)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
