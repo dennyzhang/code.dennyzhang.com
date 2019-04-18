@@ -1,0 +1,112 @@
+* Leetcode: Template                                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     twopointer, inspring, manydetails, redo
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fruit-into-baskets"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+---------------------------------------------------------------------
+In a row of trees, the i-th tree produces fruit with type tree[i].
+
+You start at any tree of your choice, then repeatedly perform the following steps:
+
+Add one piece of fruit from this tree to your baskets.  If you cannot, stop.
+Move to the next tree to the right of the current tree.  If there is no tree to the right, stop.
+Note that you do not have any choice after the initial choice of starting tree: you must perform step 1, then step 2, then back to step 1, then step 2, and so on until you stop.
+
+You have two baskets, and each basket can carry any quantity of fruit, but you want each basket to only carry one type of fruit each.
+
+What is the total amount of fruit you can collect with this procedure?
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,2,1]
+Output: 3
+Explanation: We can collect [1,2,1].
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [0,1,2,2]
+Output: 3
+Explanation: We can collect [1,2,2].
+If we started at the first tree, we would only collect [0, 1].
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [1,2,3,2,2]
+Output: 4
+Explanation: We can collect [2,3,2,2].
+If we started at the first tree, we would only collect [1, 2].
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: [3,3,3,1,2,1,1,2,3,3,4]
+Output: 5
+Explanation: We can collect [1,2,1,1,2].
+If we started at the first tree or the eighth tree, we would only collect 4 fruits.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= tree.length <= 40000
+- 0 <= tree[i] < tree.length
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fruit-into-baskets][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/fruit-into-baskets/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/fruit-into-baskets
+// Basic Ideas: two pointer
+// Complexity: Time O(n), Space O(1)
+func totalFruit(tree []int) int {
+    v1, v2 := -1, -1
+    res, cnt := 0, 0
+    for i, v := range tree {
+        if v1 == -1 || v1 == v {
+            v1 = v
+            cnt++
+        } else {
+            if v2 == -1 || v2 == v {
+                v2 = v
+                cnt++
+            } else {
+                cnt=1
+                v2 = tree[i-1]
+                for j:=i-1; j>=0; j-- {
+                  if tree[j] != v2 {
+                  v1 = v2
+                  v2 = v
+                  break
+                }
+              cnt++
+              }
+            }
+        }
+        if cnt > res { res = cnt }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
