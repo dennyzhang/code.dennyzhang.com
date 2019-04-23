@@ -1,0 +1,105 @@
+* Leetcode: Divisor Game                                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, classic
+:END:
+---------------------------------------------------------------------
+Divisor Game
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/divisor-game"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Alice and Bob take turns playing a game, with Alice starting first.
+
+Initially, there is a number N on the chalkboard.  On each player's turn, that player makes a move consisting of:
+ 
+1. Choosing any x with 0 < x < N and N % x == 0.
+- Replacing the number N on the chalkboard with N - x.
+Also, if a player cannot make a move, they lose the game.
+
+Return True if and only if Alice wins the game, assuming both players play optimally.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 2
+Output: true
+Explanation: Alice chooses 1, and Bob has no more moves.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 3
+Output: false
+Explanation: Alice chooses 1, Bob chooses 1, and Alice has no more moves.
+#+END_EXAMPLE
+Note:
+
+- 1 <= N <= 1000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/divisor-game][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/divisor-game/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: dynamic programming
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/divisor-game
+// Basic Ideas: dynamic programming
+// Complexity: Time O(1), Space O(1)
+func divisorGame(N int) bool {
+    dp := make([]bool, N+1)
+    dp[1] = false
+    for i:=2; i<=N; i++ {
+        dp[i] = false
+        for j:=1; j<i; j++ {
+            if i%j == 0 {
+                if dp[i-j] == false {
+                    dp[i] = true
+                    break
+                }
+            }
+        }
+    }
+    return dp[N]
+}
+#+END_SRC
+
+- Solution: pruned dynamic programming
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/divisor-game
+// Basic Ideas: dynamic programming
+// Complexity: Time O(1), Space O(1)
+func check(N int, dp map[int]bool) bool {
+    if status, ok := dp[N]; ok {
+        return status
+    }
+    for i:=1; i<N && N%i == 0; i++ {
+      if check(N-i, dp) == false {
+        dp[N] = true
+        return true
+      }
+    }
+    dp[N] = false
+    return false
+}
+
+func divisorGame(N int) bool {
+    dp := map[int]bool{}
+    return check(N, dp)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
