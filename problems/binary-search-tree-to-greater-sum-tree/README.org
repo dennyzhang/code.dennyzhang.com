@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     treetraversal
 :END:
 ---------------------------------------------------------------------
 Binary Search Tree to Greater Sum Tree
@@ -11,8 +11,7 @@ Binary Search Tree to Greater Sum Tree
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-search-tree-to-greater-sum-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given the root of a binary search tree with distinct values, modify it so that every node has a new value equal to the sum of the values of the original tree that are greater than or equal to node.val.
 
@@ -42,26 +41,42 @@ Credits To: [[https://leetcode.com/problems/binary-search-tree-to-greater-sum-tr
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution:
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/binary-search-tree-to-greater-sum-tree
+// Basic Idea: tree transeveral: right, middle, left
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
 
+func dfs(root *TreeNode, val *int) {
+	if root == nil {
+		return
+	}
+
+	if root.Right != nil {
+		dfs(root.Right, val)
+	}
+
+	*val += root.Val
+	root.Val = *val
+
+	if root.Left != nil {
+		dfs(root.Left, val)
+	}
+}
+
+func bstToGst(root *TreeNode) *TreeNode {
+	val := 0
+	dfs(root, &val)
+	return root
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -248,8 +248,6 @@ https://techcrunch.com/2016/09/06/ultimate-guide-to-the-news-feed/
 i see
  Bo Yang
 统计前一分钟Top 10的热搜, sth like that :)
-* TODO doc: LCA = lowest common ancestor                           :noexport:
-* TODO Merge two posts: https://code.dennyzhang.com/review-code-problems, https://code.dennyzhang.com/followup-all :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] google adsense image icon: https://code.dennyzhang.com/ :noexport:
 <<<<<<< HEAD
@@ -259,3 +257,15 @@ i see
 * graph                                                            :noexport:
 - travel salemen
 - shortest distance
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO doc: LCA = lowest common ancestor                           :noexport:
+* TODO Merge two posts: https://code.dennyzhang.com/review-code-problems, https://code.dennyzhang.com/followup-all :noexport:
+* rearrange: https://code.dennyzhang.com/tag/rearrange             :noexport:
+** Rearrange a string so that all same characters become at least d distance away
+https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-atleast-d-distance-away/
+** Rearrange characters in a string such that no two adjacent are same
+https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
+** Rearrange a string so that all same characters become d distance away
+https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-at-least-d-distance-away/
+* combination & permutation                                        :noexport:
+* TODO LSI: longest increasing subsequence                         :noexport:
