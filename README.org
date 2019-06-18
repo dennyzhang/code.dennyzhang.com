@@ -1,5 +1,5 @@
 * Prepare Code Test
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
 <a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
 <a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a>
@@ -8,33 +8,32 @@
 <br/><br/>
 
 <a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
-#+END_EXPORT
+#+END_HTML
 
 File me [[https://github.com/DennyZhang/code.dennyzhang.com/issues][Issues]] or star [[https://github.com/DennyZhang/code.dennyzhang.com][this repo]].
 
-- See [[problems][all problems in GitHub]]
 - *My blog about coder interview*: https://code.dennyzhang.com/
 - Join our slack group: https://code.dennyzhang.com/slack
 
 My profile in [[https://leetcode.com/dennyzhang][LeetCode]] and [[https://www.lintcode.com/user/DennyZhang][LintCode]]
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"><a href="https://leetcode.com/dennyzhang"><img style="width:189px;height:329px;" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png" alt="leetcode" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://www.lintcode.com/user/DennyZhang"><img style="width:387px;height:260px;"  src="https://cdn.dennyzhang.com/images/brain/denny_lintcode.png" alt="lintcode" /></a></div>
 </div>
-#+END_EXPORT
+#+END_HTML
 
 See more challenges from Denny: [[https://github.com/topics/denny-challenges][#denny-challenges]]
 ** More Resources
  License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
- #+BEGIN_EXPORT HTML
+ #+BEGIN_HTML
  <a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
  <a href="https://www.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 
  <a href="https://www.linkedin.com/in/dennyzhang001"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
  <a href="https://github.com/DennyZhang"><img align="bottom"src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
  <a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a>
- #+END_EXPORT
+ #+END_HTML
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone hidestars
 #+DESCRIPTION:
@@ -256,3 +255,7 @@ i see
 <<<<<<< HEAD
 * HALF classic: doc: sort one array, according to another array: https://leetcode.com/problems/find-and-replace-in-string/description/ :noexport:
 * TODO https://github.com/MisterBooo/LeetCodeAnimation             :noexport:
+* HALF YouTube: https://www.youtube.com/watch?v=gwlevtaC-u0&list=PL6ED884C7AEE68027 :noexport:
+* graph                                                            :noexport:
+- travel salemen
+- shortest distance

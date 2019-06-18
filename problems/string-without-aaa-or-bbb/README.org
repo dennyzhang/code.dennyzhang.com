@@ -5,7 +5,7 @@
 :type:     greedy, redo
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+String Without AAA or BBB
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-without-aaa-or-bbb"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

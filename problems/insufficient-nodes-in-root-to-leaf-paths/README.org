@@ -1,0 +1,91 @@
+* Leetcode: Insufficient Nodes in Root to Leaf Paths             :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Insufficient Nodes in Root to Leaf Paths
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/insufficient-nodes-in-root-to-leaf-paths"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given the root of a binary tree, consider all root to leaf paths: paths from the root to any leaf.  (A leaf is a node with no children.)
+
+A node is insufficient if every such root to leaf path intersecting this node has sum strictly less than limit.
+
+Delete all insufficient nodes simultaneously, and return the root of the resulting binary tree.
+ 
+Example 1:
+[[image-blog:Insufficient Nodes in Root to Leaf Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/insufficient-nodes-in-root-to-leaf-paths/1.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,2,3,4,-99,-99,7,8,9,-99,-99,12,13,-99,14], limit = 1
+
+Output: [1,2,3,4,null,null,7,8,9,null,14]
+#+END_EXAMPLE
+[[image-blog:Insufficient Nodes in Root to Leaf Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/insufficient-nodes-in-root-to-leaf-paths/2.png]]
+
+Example 2:
+[[image-blog:Insufficient Nodes in Root to Leaf Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/insufficient-nodes-in-root-to-leaf-paths/3.png]]
+#+BEGIN_EXAMPLE
+Input: root = [5,4,8,11,null,17,4,7,1,null,null,5,3], limit = 22
+
+Output: [5,4,8,11,null,17,4,7,null,null,null,5]
+#+END_EXAMPLE 
+[[image-blog:Insufficient Nodes in Root to Leaf Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/insufficient-nodes-in-root-to-leaf-paths/4.png]]
+
+Example 3:
+[[image-blog:Insufficient Nodes in Root to Leaf Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/insufficient-nodes-in-root-to-leaf-paths/5.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,2,-3,-5,null,4,null], limit = -1
+
+Output: [1,null,-3,4]
+#+END_EXAMPLE
+[[image-blog:Insufficient Nodes in Root to Leaf Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/insufficient-nodes-in-root-to-leaf-paths/6.png]]
+ 
+Note:
+
+1. The given tree will have between 1 and 5000 nodes.
+- -10^5 <= node.val <= 10^5
+- -10^9 <= limit <= 10^9
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/insufficient-nodes-in-root-to-leaf-paths][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/insufficient-nodes-in-root-to-leaf-paths
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

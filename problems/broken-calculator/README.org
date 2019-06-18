@@ -1,58 +1,63 @@
-* Leetcode: Knight Dialer                                              :BLOG:Medium:
+* Leetcode: Broken Calculator                                    :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     linkedlist
 :END:
 ---------------------------------------------------------------------
-Knight Dialer
+Broken Calculator
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/knight-dialer"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/broken-calculator"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
-A chess knight can move as indicated in the chess diagram below:
+On a broken calculator that has a number showing on its display, we can perform two operations:
 
-[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/knight.png]]
+Double: Multiply the number on the display by 2, or;
+Decrement: Subtract 1 from the number on the display.
+Initially, the calculator is displaying the number X.
 
-[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/knight-keypad.png]]
-
-This time, we place our chess knight on any numbered key of a phone pad (indicated above), and the knight makes N-1 hops.  Each hop must be from one key to another numbered key.
-
-Each time it lands on a key (including the initial placement of the knight), it presses the number of that key, pressing N digits total.
-
-How many distinct numbers can you dial in this manner?
-
-Since the answer may be large, output the answer modulo 10^9 + 7.
+Return the minimum number of operations needed to display the number Y.
 
 Example 1:
 #+BEGIN_EXAMPLE
-Input: 1
-Output: 10
+Input: X = 2, Y = 3
+Output: 2
+Explanation: Use double operation and then decrement operation {2 -> 4 -> 3}.
 #+END_EXAMPLE
 
 Example 2:
 #+BEGIN_EXAMPLE
-Input: 2
-Output: 20
+Input: X = 5, Y = 8
+Output: 2
+Explanation: Use decrement and then double {5 -> 4 -> 8}.
 #+END_EXAMPLE
 
 Example 3:
 #+BEGIN_EXAMPLE
-Input: 3
-Output: 46
+Input: X = 3, Y = 10
+Output: 3
+Explanation:  Use double, decrement and double {3 -> 6 -> 5 -> 10}.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: X = 1024, Y = 1
+Output: 1023
+Explanation: Use decrement operations 1023 times.
 #+END_EXAMPLE
  
 Note:
 
-- 1 <= N <= 5000
+1. 1 <= X <= 10^9
+- 1 <= Y <= 10^9
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/knight-dialer][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/broken-calculator][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/knight-dialer/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/broken-calculator/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
@@ -74,7 +79,7 @@ Leave me comments, if you have better ways to solve.
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/knight-dialer
+// Blog link: https://code.dennyzhang.com/broken-calculator
 
 #+END_SRC
 

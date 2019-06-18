@@ -5,7 +5,7 @@
 :type:     inspiring
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Partition Array Into Three Parts With Equal Sum
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/partition-array-into-three-parts-with-equal-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

@@ -1,0 +1,91 @@
+* Leetcode: Available Captures for Rook                          :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Available Captures for Rook
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/available-captures-for-rook"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+On an 8 x 8 chessboard, there is one white rook.  There also may be empty squares, white bishops, and black pawns.  These are given as characters 'R', '.', 'B', and 'p' respectively. Uppercase characters represent white pieces, and lowercase characters represent black pieces.
+
+The rook moves as in the rules of Chess: it chooses one of four cardinal directions (north, east, west, and south), then moves in that direction until it chooses to stop, reaches the edge of the board, or captures an opposite colored pawn by moving to the same square it occupies.  Also, rooks cannot move into the same square as other friendly bishops.
+
+Return the number of pawns the rook can capture in one move.
+
+Example 1:
+[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/available-captures-for-rook/1.png]]
+#+BEGIN_EXAMPLE
+Input: [[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","R",".",".",".","p"],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]]
+Output: 3
+Explanation: 
+In this example the rook is able to capture all the pawns.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/available-captures-for-rook/2.png]]
+#+BEGIN_EXAMPLE
+Input: [[".",".",".",".",".",".",".","."],[".","p","p","p","p","p",".","."],[".","p","p","B","p","p",".","."],[".","p","B","R","B","p",".","."],[".","p","p","B","p","p",".","."],[".","p","p","p","p","p",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]]
+Output: 0
+Explanation: 
+Bishops are blocking the rook to capture any pawn.
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/available-captures-for-rook/3.png]]
+#+BEGIN_EXAMPLE
+Input: [[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","p",".",".",".","."],["p","p",".","R",".","p","B","."],[".",".",".",".",".",".",".","."],[".",".",".","B",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."]]
+Output: 3
+Explanation: 
+The rook can capture the pawns at positions b5, d6 and f5.
+#+END_EXAMPLE
+ 
+Note:
+
+1. board.length == board[i].length == 8
+- board[i][j] is either 'R', '.', 'B', or 'p'
+- There is exactly one cell with board[i][j] == 'R'
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/available-captures-for-rook][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/available-captures-for-rook/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: XXX
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/available-captures-for-rook
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,58 +1,46 @@
-* Leetcode: Knight Dialer                                              :BLOG:Medium:
+* Leetcode: Out of Boundary Paths                                :BLOG:Basic:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     linkedlist
 :END:
 ---------------------------------------------------------------------
-Knight Dialer
+Out of Boundary Paths
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/knight-dialer"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/out-of-boundary-paths"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
-A chess knight can move as indicated in the chess diagram below:
-
-[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/knight.png]]
-
-[[image-blog:Leetcode: All Nodes Distance K in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/knight-keypad.png]]
-
-This time, we place our chess knight on any numbered key of a phone pad (indicated above), and the knight makes N-1 hops.  Each hop must be from one key to another numbered key.
-
-Each time it lands on a key (including the initial placement of the knight), it presses the number of that key, pressing N digits total.
-
-How many distinct numbers can you dial in this manner?
-
-Since the answer may be large, output the answer modulo 10^9 + 7.
-
+There is an m by n grid with a ball. Given the start coordinate (i,j) of the ball, you can move the ball to adjacent cell or cross the grid boundary in four directions (up, down, left, right). However, you can at most move N times. Find out the number of paths to move the ball out of grid boundary. The answer may be very large, return it after mod 109 + 7.
+ 
 Example 1:
 #+BEGIN_EXAMPLE
-Input: 1
-Output: 10
+Input: m = 2, n = 2, N = 2, i = 0, j = 0
+Output: 6
+Explanation:
 #+END_EXAMPLE
+[[image-blog:Out of Boundary Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/out-of-boundary-paths/1.png]]
 
 Example 2:
 #+BEGIN_EXAMPLE
-Input: 2
-Output: 20
+Input: m = 1, n = 3, N = 3, i = 0, j = 1
+Output: 12
+Explanation:
 #+END_EXAMPLE
+[[image-blog:Out of Boundary Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/out-of-boundary-paths/2.png]]
 
-Example 3:
-#+BEGIN_EXAMPLE
-Input: 3
-Output: 46
-#+END_EXAMPLE
- 
 Note:
 
-- 1 <= N <= 5000
+1. Once you move the ball out of boundary, you cannot move it back.
+- The length and height of the grid is in range [1,50].
+- N is in range [0,50].
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/knight-dialer][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/out-of-boundary-paths][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/knight-dialer/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/out-of-boundary-paths/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
@@ -74,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/knight-dialer
+// Blog link: https://code.dennyzhang.com/out-of-boundary-paths
 
 #+END_SRC
 
