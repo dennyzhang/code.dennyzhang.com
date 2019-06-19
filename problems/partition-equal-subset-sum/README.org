@@ -11,10 +11,10 @@ Partition Equal Subset Sum
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/partition-equal-subset-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
+- [[https://code.dennyzhang.com/partition-to-k-equal-sum-subsets][Partition to K Equal Sum Subsets]]
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
 
@@ -48,15 +48,49 @@ Credits To: [[https://leetcode.com/problems/partition-equal-subset-sum/descripti
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
+// Basic Ideas: hashmap
+//  If we can find some combination with the sum as half of the sum, return true
+// Complexity: Time O(n*n), Space O(n)
+func canPartition(nums []int) bool {
+    sum := 0
+    for _, num := range nums {
+        sum += num
+    }
+    if (sum%2) != 0 {
+        return false
+    }
+    target := sum/2
+    m := map[int]bool{}
+    for _, num := range nums {
+        if num == target {
+            return true
+        }
+        if num > target {
+            return false
+        }
+        l := []int{num}
+        for key, _ := range m {
+            if num+key == target {
+                return true
+            }
+            l = append(l, num+key)
+        }
+
+        for _, val := range l{
+            m[val] = true
+        }
+    }
+    return false
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
 ## Basic Ideas: hashmap
 ##
-## Complexity: Time O(n), Space O(1)
-##     Total sum would be smaller than 20000.
-##     So the size of hashmap would be smaller than sum/2. That's 10000
-##
+## Complexity: Time O(n*n), Space O(n)
 class Solution(object):
     def canPartition(self, nums):
         """

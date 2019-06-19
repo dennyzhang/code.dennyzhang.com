@@ -11,6 +11,7 @@ Binary Search Tree to Greater Sum Tree
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-search-tree-to-greater-sum-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/convert-bst-to-greater-tree][Convert BST to Greater Tree]]
 - Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given the root of a binary search tree with distinct values, modify it so that every node has a new value equal to the sum of the values of the original tree that are greater than or equal to node.val.

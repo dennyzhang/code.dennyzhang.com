@@ -267,5 +267,8 @@ https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-bec
 https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
 ** Rearrange a string so that all same characters become d distance away
 https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-at-least-d-distance-away/
-* combination & permutation                                        :noexport:
+* TODO combination & permutation                                   :noexport:
 * TODO LSI: longest increasing subsequence                         :noexport:
+* TODO tree traversal                                              :noexport:
+https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Programming,_Operating_Systems,_Databases_and_Networking/Programming_Concepts/Tree_traversal_algorithms_for_a_binary_tree
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:

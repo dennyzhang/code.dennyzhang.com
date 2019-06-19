@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, convertds
+:type:     binarytree, convertds, treetraversal
 :END:
 ---------------------------------------------------------------------
 Tree traversal: right, middle, left
@@ -11,7 +11,8 @@ Tree traversal: right, middle, left
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/convert-bst-to-greater-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/convertds][#convertds]]
+- [[https://code.dennyzhang.com/binary-search-tree-to-greater-sum-tree][Binary Search Tree to Greater Sum Tree]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/convertds][#convertds]], [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
 
