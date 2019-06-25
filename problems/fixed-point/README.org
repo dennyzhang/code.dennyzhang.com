@@ -1,0 +1,78 @@
+* Leetcode: Fixed Point                                          :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, redo
+:END:
+---------------------------------------------------------------------
+Fixed Point
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fixed-point"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+Given an array A of distinct integers sorted in ascending order, return the smallest index i that satisfies A[i] == i.  Return -1 if no such i exists.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [-10,-5,0,3,7]
+Output: 3
+Explanation: 
+For the given array, A[0] = -10, A[1] = -5, A[2] = 0, A[3] = 3, thus the output is 3.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [0,2,5,8,17]
+Output: 0
+Explanation: 
+A[0] = 0, thus the output is 0.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [-10,-5,3,4,7,9]
+Output: -1
+Explanation: 
+There is no such i that A[i] = i, thus the output is -1.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length < 10^4
+- -10^9 <= A[i] <= 10^9
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fixed-point][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/fixed-point/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/fixed-point
+// Basic Idea: Naive one pass
+// Complexity: Time O(n), Space O(1)
+func fixedPoint(A []int) int {
+    res := -1
+    for i, v := range A {
+        if i==v {
+            res = i
+            break
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

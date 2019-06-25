@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     array
 :END:
 ---------------------------------------------------------------------
 Duplicate Zeros
@@ -11,8 +11,7 @@ Duplicate Zeros
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/duplicate-zeros"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Given a fixed length array arr of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.
 
@@ -45,26 +44,25 @@ Credits To: [[https://leetcode.com/problems/duplicate-zeros/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution:
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/duplicate-zeros
-
+// Basic Ideas: use a queue to save elements we want to fill
+// Complexity: Time O(n), Space O(1)
+func duplicateZeros(arr []int)  {
+    l := []int{}
+    for i, v := range arr {
+        if v == 0 {
+            l = append(l, 0)
+            l = append(l, 0)
+        } else {
+            l = append(l, v)
+        }
+        arr[i] = l[0]
+        l = l[1:len(l)]
+    }
+}
 #+END_SRC
 
 #+BEGIN_HTML

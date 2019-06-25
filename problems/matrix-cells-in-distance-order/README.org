@@ -1,0 +1,95 @@
+* Leetcode: Matrix Cells in Distance Order                       :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bfs, sort
+:END:
+---------------------------------------------------------------------
+Matrix Cells in Distance Order
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/sort][#sort]]
+---------------------------------------------------------------------
+We are given a matrix with R rows and C columns has cells with integer coordinates (r, c), where 0 <= r < R and 0 <= c < C.
+
+Additionally, we are given a cell in that matrix with coordinates (r0, c0).
+
+Return the coordinates of all cells in the matrix, sorted by their distance from (r0, c0) from smallest distance to largest distance.  Here, the distance between two cells (r1, c1) and (r2, c2) is the Manhattan distance, |r1 - r2| + |c1 - c2|.  (You may return the answer in any order that satisfies this condition.)
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: R = 1, C = 2, r0 = 0, c0 = 0
+Output: [[0,0],[0,1]]
+Explanation: The distances from (r0, c0) to other cells are: [0,1]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: R = 2, C = 2, r0 = 0, c0 = 1
+Output: [[0,1],[0,0],[1,1],[1,0]]
+Explanation: The distances from (r0, c0) to other cells are: [0,1,1,2]
+The answer [[0,1],[1,1],[0,0],[1,0]] would also be accepted as correct.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: R = 2, C = 3, r0 = 1, c0 = 2
+Output: [[1,2],[0,2],[1,1],[0,1],[1,0],[0,0]]
+Explanation: The distances from (r0, c0) to other cells are: [0,1,1,2,2,3]
+There are other answers that would also be accepted as correct, such as [[1,2],[1,1],[0,2],[1,0],[0,1],[0,0]].
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= R <= 100
+- 1 <= C <= 100
+- 0 <= r0 < R
+- 0 <= c0 < C
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/example
+// Basic Ideas: BFS
+// Complexity: Time O(n*m), Space O(n*m)
+func allCellsDistOrder(R int, C int, r0 int, c0 int) [][]int {
+    visited := map[string]bool{}
+    visited[fmt.Sprintf("%d-%d", r0, c0)] = true
+    res := [][]int{[]int{r0, c0}}
+    l := [][]int{[]int{r0, c0}}
+    // BFS
+    for len(l) != 0 {
+        l2 := [][]int{}
+        for _, item := range l {
+            for _, offset := range [][]int{[]int{-1, 0}, []int{1, 0}, []int{0, 1}, []int{0, -1}} {
+                x2, y2 := item[0]+offset[0], item[1]+offset[1]
+                key := fmt.Sprintf("%d-%d", x2, y2)
+                if x2>=0 && x2<R && y2>=0 && y2<C && !visited[key] {
+                    visited[key] = true
+                    res = append(res, []int{x2, y2})
+                    l2 = append(l2, []int{x2, y2})
+                }
+            }
+        }
+        l = l2
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

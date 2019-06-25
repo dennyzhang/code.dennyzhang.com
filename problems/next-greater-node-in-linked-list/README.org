@@ -1,0 +1,95 @@
+* Leetcode: Next Greater Node In Linked List                     :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     monotone
+:END:
+---------------------------------------------------------------------
+Next Greater Node In Linked List
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/monotone][#monotone]]
+---------------------------------------------------------------------
+We are given a linked list with head as the first node.  Let's number the nodes in the list: node_1, node_2, node_3, ... etc.
+
+Each node may have a next larger value: for node_i, next_larger(node_i) is the node_j.val such that j > i, node_j.val > node_i.val, and j is the smallest possible choice.  If such a j does not exist, the next larger value is 0.
+
+Return an array of integers answer, where answer[i] = next_larger(node_{i+1}).
+
+Note that in the example inputs (not outputs) below, arrays such as [2,1,5] represent the serialization of a linked list with a head node value of 2, second node value of 1, and third node value of 5.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [2,1,5]
+Output: [5,5,0]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [2,7,4,3,5]
+Output: [7,0,5,5,0]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [1,7,5,1,9,2,5,1]
+Output: [7,9,9,9,0,5,0,0]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= node.val <= 10^9 for each node in the linked list.
+- The given list has length in the range [0, 10000].
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/example
+// Basic Ideas: monotone stack
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func nextLargerNodes(head *ListNode) []int {
+    // convert linked list to array
+    l := []int{}
+    p := head
+    for p != nil {
+        l = append(l, p.Val)
+        p = p.Next
+    }
+    res := make([]int, len(l))
+    // monotone stack
+    stack := []int{}
+    for i:=0; i<len(l); i++ {
+        for len(stack) > 0 && l[stack[len(stack)-1]] < l[i] {
+            j := stack[len(stack)-1]
+            stack = stack[0:len(stack)-1]
+            res[j] = l[i]
+        }
+        stack = append(stack, i)
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

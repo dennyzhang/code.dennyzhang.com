@@ -1,0 +1,96 @@
+* Leetcode: High Five                                            :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, inspiring
+:END:
+---------------------------------------------------------------------
+High Five
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/high-five"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+---------------------------------------------------------------------
+#+BEGIN_EXAMPLE
+Given a list of scores of different students, return the average score of each student's top five scores in the order of each student's id.
+
+Each entry items[i] has items[i][0] the student's id, and items[i][1] the student's score.  The average score is calculated using integer division.
+#+END_EXAMPLE
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]
+Output: [[1,87],[2,88]]
+Explanation: 
+The average of the student with id = 1 is 87.
+The average of the student with id = 2 is 88.6. But with integer division their average converts to 88.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= items.length <= 1000
+- items[i].length == 2
+- The IDs of the students is between 1 to 1000
+- The score of the students is between 1 to 100
+- For each student, there are at least 5 scores
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/high-five][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/high-five/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/high-five
+// Basic Ideas: top5
+// Complexity: Space O(n), Time O(n)
+import "sort"
+func highFive(items [][]int) [][]int {
+    dict := map[int][]int{}
+    for _, item := range items {
+        sid, score := item[0], item[1]
+        scores, ok := dict[sid]
+        if !ok {
+            scores = make([]int, 5)
+            dict[sid] = scores
+        }
+        // find the min, then decide whether to replace
+        k := 0
+        for i:=1; i<5; i++ {
+            if scores[i] < scores[k] {
+                k = i
+            }
+        }
+        if score > scores[k] {
+            scores[k] = score
+        }
+    }
+
+    res := [][]int{}
+    keys := []int{}
+    for sid, _ := range dict {
+        keys = append(keys, sid)  
+    }
+    sort.Ints(keys)
+    for _, sid := range keys {
+        sum := 0
+        for _, v := range dict[sid] {
+            sum += v
+        }
+        res = append(res, []int{sid, int(sum/5)})
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

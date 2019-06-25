@@ -272,3 +272,6 @@ https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-bec
 * TODO tree traversal                                              :noexport:
 https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Programming,_Operating_Systems,_Databases_and_Networking/Programming_Concepts/Tree_traversal_algorithms_for_a_binary_tree
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO List posts with two labels                                  :noexport:
+* TODO Review: bitmanipulation: https://code.dennyzhang.com/tag/bitmanipulation/ :noexport:
+* TODO Review: rotateoperation: https://code.dennyzhang.com/tag/rotateoperation/ :noexport:

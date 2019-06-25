@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     greedy, game
 :END:
 ---------------------------------------------------------------------
 Moving Stones Until Consecutive
@@ -11,8 +11,7 @@ Moving Stones Until Consecutive
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/moving-stones-until-consecutive"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/greedy][#greedy]]
 ---------------------------------------------------------------------
 Three stones are on a number line at positions a, b, and c.
 
@@ -57,26 +56,36 @@ Credits To: [[https://leetcode.com/problems/moving-stones-until-consecutive/desc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution:
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/moving-stones-until-consecutive
+// Basic Idea: Greedy
+//  For max, move slowly towards middle step by step
+//  For min, move to the smaller gap first. Then move the other end to join them.
+//       min <= 2
+// Complexity: Time O(1), Space O(1)
+import "sort"
+func numMovesStones(a int, b int, c int) []int {
+    l := []int{a, b, c}
+    sort.Ints(l)
+    max := l[2]-l[0]-2
+    min := 0
 
+    // all nodes are not adjacent
+    if max != 0 {
+        smaller_gap := l[2]-l[1]-1
+        if smaller_gap > l[1]-l[0]-1 {
+            smaller_gap = l[1]-l[0]-1
+        }
+        if smaller_gap <= 1 {
+            min = 1
+        } else {
+            min = 2
+        }
+    }
+    return []int{min, max}
+}
 #+END_SRC
 
 #+BEGIN_HTML
