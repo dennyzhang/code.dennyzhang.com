@@ -275,3 +275,4 @@ https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Progra
 * TODO List posts with two labels                                  :noexport:
 * TODO Review: bitmanipulation: https://code.dennyzhang.com/tag/bitmanipulation/ :noexport:
 * TODO Review: rotateoperation: https://code.dennyzhang.com/tag/rotateoperation/ :noexport:
+* TODO Questions with easy way to do follow-up                     :noexport:

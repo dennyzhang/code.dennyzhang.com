@@ -8,7 +8,7 @@
 Customers Who Bought All Products
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/customers-who-bought-all-products"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
@@ -67,16 +67,16 @@ Result table:
 The customers who bought all the products (5 and 6) are customers with id 1 and 3.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/customers-who-bought-all-products][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/customers-who-bought-all-products/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/example
+# Blog link: https://code.dennyzhang.com/customers-who-bought-all-products
 # Write your MySQL query statement below
 select customer_id
 from Customer

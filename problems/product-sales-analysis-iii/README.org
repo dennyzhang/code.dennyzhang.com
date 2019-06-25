@@ -8,7 +8,7 @@
 Product Sales Analysis III
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/product-sales-analysis-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/product-sales-analysis-i][Leetcode: Product Sales Analysis I]]
@@ -74,16 +74,16 @@ Result table:
 +------------+------------+----------+-------+
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/product-sales-analysis-iii][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/product-sales-analysis-iii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/example
+# Blog link: https://code.dennyzhang.com/product-sales-analysis-iii
 select product_id,
 min(year) as first_year,
 quantity,

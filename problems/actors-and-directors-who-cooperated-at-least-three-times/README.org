@@ -8,7 +8,7 @@
 Actors and Directors Who Cooperated At Least Three Times
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/actors-and-directors-who-cooperated-at-least-three-times"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
@@ -51,16 +51,16 @@ Result table:
 The only pair is (1, 1) where they cooperated exactly 3 times.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/actors-and-directors-who-cooperated-at-least-three-times][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/example
+# Blog link: https://code.dennyzhang.com/actors-and-directors-who-cooperated-at-least-three-times
 # Write your MySQL query statement below
 select actor_id, director_id
 from ActorDirector
