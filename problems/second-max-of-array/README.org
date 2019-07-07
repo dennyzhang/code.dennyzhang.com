@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     heap, classic
+:type:     heap
 :END:
 ---------------------------------------------------------------------
 Second Max of Array
@@ -12,7 +12,7 @@ Second Max of Array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/third-maximum-number][Leetcode: Third Maximum Number]]
-- Tag: [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/heap][#heap]]
 ---------------------------------------------------------------------
 Description
 

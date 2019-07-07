@@ -1,11 +1,17 @@
-* Leetcode: Maximum Subarray                                      :BLOG:Hard:
+* Leetcode: Maximum Subarray                                      :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, subarray, classic, redo
+:type:     inspiring, subarray, classic, presum
 :END:
 ---------------------------------------------------------------------
 Maximum Subarray
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/edit-distance"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/presum][#presum]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
 
@@ -23,43 +29,23 @@ Credits To: [[https://leetcode.com/problems/maximum-subarray/description/][leetc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-subarray
-class Solution(object):
-    def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-## Basic Ideas: Dynamic programming
-##              Get sums[i]: it's the sum from nums[0] to nums[i]
-##
-##              f(n) = max(f(n-1), sums[n], sums[n] - min(sums))
-##
-## Complexity: Time O(n), Space (n)
-class Solution:
-    def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        length = len(nums)
-        sums = [0] * length
-        sum_v = 0
-        for i in range(0, length):
-            sum_v += nums[i]
-            sums[i] = sum_v
-
-        # start from the very beginning
-        min_sum = 0
-        max_list = [0]*length
-        # the first element
-        max_list[0] = sums[0]
-        for i in range(0, length-1):
-            min_sum = min(min_sum, sums[i])
-            max_list[i+1] = max(max_list[i], sums[i+1], sums[i+1]-min_sum)
-        return max_list[-1]
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/maximum-subarray
+// Basic Ideas: presum
+// Complexity: Time O(n), Space O(n)
+func maxSubArray(nums []int) int {
+    if len(nums) == 0 { return -1 }
+    res := -1 << 31
+    min := 0
+    for preSum, i :=0, 0; i<len(nums); i++ {
+        preSum += nums[i]
+        if (res < preSum - min) {
+            res = preSum - min
+        }
+        if (preSum < min) { min = preSum }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

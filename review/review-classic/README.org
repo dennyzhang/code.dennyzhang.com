@@ -7,50 +7,128 @@
 ---------------------------------------------------------------------
 Deep understanding about classic problems. It would be tremendously helpful for your code test.
 ---------------------------------------------------------------------
-[[color:#c7254e][Classic Graph Problems]]:
-- 2 color graph: [[https://code.dennyzhang.com/is-graph-bipartite][Is Graph Bipartite]]
-- Explore 0-1 island: [[https://code.dennyzhang.com/island-perimeter][Island Perimeter]]
-- Find cycle in a directed graph: [[https://code.dennyzhang.com/course-schedule][Course Schedule]]
+- Problem 1: Find the first false
+
+Category: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
+
+Example:  [[https://code.dennyzhang.com/first-bad-version][Leetcode: First Bad Version]]
+
 ---------------------------------------------------------------------
-[[color:#c7254e][Classic String Problems]]:
-- Deal with group inside a string: [[https://code.dennyzhang.com/reverse-words-in-a-string-ii][Reverse Words in a String II]]
-- Split Strings with Multiple Delimiters: [[https://code.dennyzhang.com/different-ways-to-add-parentheses][Different Ways to Add Parentheses]]
-- Find integer from string: [[https://code.dennyzhang.com/design-compressed-string-iterator][Design Compressed String Iterator]]
+- Problem 2: Find Islands Numbers
+
+Category: [[https://code.dennyzhang.com/tag/dfs][#dfs]]
+
+Example: [[https://code.dennyzhang.com/island-perimeter][Leetcode: Island Perimeter]], [[https://code.dennyzhang.com/number-of-distinct-islands-ii][Leetcode: Number of Distinct Islands II]]
 ---------------------------------------------------------------------
-[[color:#c7254e][Classic Tree Problems]]:
-- Find path from root to the given node: [[https://code.dennyzhang.com/inorder-successor-in-bst][Inorder Successor in BST]]
+- Problem 3: Meeting conflict
+
+Category: [[https://code.dennyzhang.com/tag/interval][#interval]]
+
+Example: [[https://code.dennyzhang.com/merge-intervals][Leetcode: Merge Intervals]], [[https://code.dennyzhang.com/meeting-rooms][Leetcode: Meeting Rooms]]
 ---------------------------------------------------------------------
-[[color:#c7254e][Classic DP Problems]]:
-- Paint Fence: [[https://code.dennyzhang.com/paint-fence][Paint Fence]]
-- Climb stairs: [[https://code.dennyzhang.com/min-cost-climbing-stairs][Min Cost Climbing Stairs]]
+- Problem 4: Detect cycle in a directed graph
+
+Category:
+
+Example: [[https://code.dennyzhang.com/course-schedule][Leetcode: Course Schedule]]
 ---------------------------------------------------------------------
-[[color:#c7254e][Classic BinarySearch Problems]]:
-- Binarysearch find the first False: [[https://code.dennyzhang.com/first-bad-version][First Bad Version]]
-- Search in Rotated Sorted Array: [[https://code.dennyzhang.com/search-in-rotated-sorted-array-ii][Search in Rotated Sorted Array II]]
--  [[https://code.dennyzhang.com/sqrtx][Sqrt(x)]]
-- [[https://code.dennyzhang.com/search-for-a-range][Search for a Range]]
+- Problem 5: topk
+
+Category: [[https://code.dennyzhang.com/tag/heap][#heap]]
+
+Example:
 ---------------------------------------------------------------------
-[[color:#c7254e][Classic Monotone Problems]]:
-- Next bigger value: [[https://code.dennyzhang.com/daily-temperatures][Daily Temperatures]]
+- Problem 6: [[https://en.wikipedia.org/wiki/Longest_increasing_subsequence][Longest increasing subsequence]] 
+
+Category: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]] 
+
+Example: [[https://code.dennyzhang.com/longest-increasing-subsequence][Leetcode: Longest Increasing Subsequence]]
 ---------------------------------------------------------------------
-[[color:#c7254e][Classic Problems]]:
-- Meeting confict: [[https://code.dennyzhang.com/tag/calendarconflict][#calendarconflict]], [[https://code.dennyzhang.com/meeting-rooms][Meeting Rooms]]
-- Longest increasing sequence(LIS): [[https://code.dennyzhang.com/longest-increasing-subsequence][Longest Increasing Subsequence]]
-- Knapsack problems: [[https://code.dennyzhang.com/coin-change][Coin Change]], [[https://code.dennyzhang.com/coin-change-2][Coin Change 2]]
-- Tower hopper problem: [[https://code.dennyzhang.com/jump-game][Jump Game]], [[https://code.dennyzhang.com/jump-game-ii][Jump Game II]]
-- Maximum Subarray: [[https://code.dennyzhang.com/maximum-subarray][Maximum Subarray]]
-- Word Ladder: [[https://code.dennyzhang.com/word-ladder][Word Ladder]]
-- Subsets: [[https://code.dennyzhang.com/subsets][Subsets]]
-- Subset Sum Problem: [[https://code.dennyzhang.com/combination-sum][Combination Sum]], [[https://code.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
-- K-diff Pairs in an Array: [[https://leetcode.com/problems/k-diff-pairs-in-an-array/description/][K-diff Pairs in an Array]]
-- Flattern nested data structure: [[https://code.dennyzhang.com/flatten-2d-vector][Flatten 2D Vector]]
-- Sliding windows with substring comparision: [[https://code.dennyzhang.com/permutation-in-string][Permutation in String]]
-- Detect palindrome: [[https://code.dennyzhang.com/longest-palindromic-substring][Longest Palindromic Substring]]
-- Merge Intervals: [[https://code.dennyzhang.com/merge-intervals][Merge Intervals]]
-- Next bigger value: [[https://code.dennyzhang.com/daily-temperatures][Daily Temperatures]]
-- [[https://code.dennyzhang.com/tag/stack][#stack]]: [[https://code.dennyzhang.com/basic-calculator][Basic Calculator]]
-- [[https://code.dennyzhang.com/tag/recursive][#recursive]]: [[https://code.dennyzhang.com/powx-n][Pow(x, n)]]
+- Problem 7:  [[https://en.wikipedia.org/wiki/Maximum_subarray_problem][Maximum subarray problem]] 
+
+Category: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]],  [[https://code.dennyzhang.com/tag/presum][#presum]]
+
+Example: [[https://code.dennyzhang.com/maximum-subarray][Leetcode: Maximum Subarray]]
 ---------------------------------------------------------------------
+- Problem 8: Find next Next bigger value
+
+Category: [[https://code.dennyzhang.com/tag/monotone][#monotone]] 
+
+Example: [[https://code.dennyzhang.com/daily-temperatures][Leetcode: Daily Temperatures]] 
+---------------------------------------------------------------------
+- Problem 9: [[https://en.wikipedia.org/wiki/Travelling_salesman_problem][Travelling salesman problem]]
+
+Category:
+
+Example:
+---------------------------------------------------------------------
+- Problem 10:  [[https://en.wikipedia.org/wiki/Knapsack_problem][Knapsack problem]] 
+
+Category:
+
+Example: [[https://code.dennyzhang.com/coin-change][Leetcode: Coin Change]], [[https://code.dennyzhang.com/coin-change-2][Leetcode: Coin Change 2]]
+---------------------------------------------------------------------
+- Problem 11: prefix search
+
+Category: [[https://code.dennyzhang.com/tag/trie][#trie]]
+
+Example: [[https://code.dennyzhang.com/longest-word-in-dictionary][Leetcode: Longest Word in Dictionary]]
+---------------------------------------------------------------------
+- Problem 12:
+
+Category: unionfind
+
+Example:
+---------------------------------------------------------------------
+- Problem 13: [[https://en.wikipedia.org/wiki/Edit_distance][Two strings edit distance]]
+
+Category: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]] 
+
+Example: [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]]
+---------------------------------------------------------------------
+- Problem 14: Reverse sentence by words
+
+Category: [[https://code.dennyzhang.com/tag/string][#string]]
+
+Example: [[https://code.dennyzhang.com/reverse-words-in-a-string-ii][Leetcode: Reverse Words in a String II]], [[https://code.dennyzhang.com/different-ways-to-add-parentheses][Leetcode: Different Ways to Add Parentheses]]
+---------------------------------------------------------------------
+- Problem 15: Int to string, or string to int
+
+Category: [[https://code.dennyzhang.com/tag/string][#string]]
+
+Example:
+---------------------------------------------------------------------
+- Problem 16: [[https://en.wikipedia.org/wiki/Minimax][Minimax problem]]
+
+Category: [[https://code.dennyzhang.com/tag/minmax][#minmax]]
+
+Example: [[https://code.dennyzhang.com/predict-the-winner][Leetcode: Predict the Winner]]
+---------------------------------------------------------------------
+- Problem 17: Subarray sum equals K
+
+Category: [[https://code.dennyzhang.com/tag/presum][#presum]]
+
+Example: [[https://code.dennyzhang.com/maximum-size-subarray-sum-equals-k][Leetcode: Maximum Size Subarray Sum Equals k]], [[https://code.dennyzhang.com/subarray-sum-equals-k][Leetcode: Subarray Sum Equals K]]
+---------------------------------------------------------------------
+- Problem 18:
+
+Category:
+
+Example:
+---------------------------------------------------------------------
+- Problem 19:
+
+Category:
+
+Example:
+---------------------------------------------------------------------
+- Problem 20:
+
+Category:
+
+Example:
+---------------------------------------------------------------------
+
 See all classic problems: [[https://code.dennyzhang.com/tag/classic/][#classic]].
 
 [display-posts tag="classic" posts_per_page="100" orderby="title"]
@@ -64,3 +142,21 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
+* local notes                                                             :noexport:
+[[color:#c7254e][Classic Graph Problems]]:
+- 2 color graph: [[https://code.dennyzhang.com/is-graph-bipartite][Is Graph Bipartite]]
+
+- Find integer from string: [[https://code.dennyzhang.com/design-compressed-string-iterator][Design Compressed String Iterator]]
+
+- Paint Fence: [[https://code.dennyzhang.com/paint-fence][Paint Fence]]
+- Climb stairs: [[https://code.dennyzhang.com/min-cost-climbing-stairs][Min Cost Climbing Stairs]]
+---------------------------------------------------------------------
+- Tower hopper problem: [[https://code.dennyzhang.com/jump-game][Jump Game]], [[https://code.dennyzhang.com/jump-game-ii][Jump Game II]]
+- Word Ladder: [[https://code.dennyzhang.com/word-ladder][Word Ladder]]
+- Subsets: [[https://code.dennyzhang.com/subsets][Subsets]]
+- Subset Sum Problem: [[https://code.dennyzhang.com/combination-sum][Combination Sum]], [[https://code.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
+- K-diff Pairs in an Array: [[https://leetcode.com/problems/k-diff-pairs-in-an-array/description/][K-diff Pairs in an Array]]
+- Flattern nested data structure: [[https://code.dennyzhang.com/flatten-2d-vector][Flatten 2D Vector]]
+- Sliding windows with substring comparision: [[https://code.dennyzhang.com/permutation-in-string][Permutation in String]]
+- Detect palindrome: [[https://code.dennyzhang.com/longest-palindromic-substring][Longest Palindromic Substring]]
+- [[https://code.dennyzhang.com/tag/recursive][#recursive]]: [[https://code.dennyzhang.com/powx-n][Pow(x, n)]]

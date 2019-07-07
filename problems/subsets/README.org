@@ -42,7 +42,32 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/subsets
-
+class Solution(object):
+    def subsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        ## Idea: Bit manipulation. The combination is 2**num. 
+        ##       1. Generate a seed from 0 to 2**num-1
+        ##       2. Then check all binary bits of that value. 
+        ##       3. If any digit it's 1, show the corresponding value
+        ## Complexity: 
+        ##  1 2 3
+        ##  0 0 0
+        ##  0 0 1
+        ##  0 1 0
+        ##  ...
+        ret = []
+        length = len(nums)
+        for i in range(0, 2**length):
+            item = []
+            for j in range(0, length):
+                if i % 2 == 1:
+                    item.append(nums[length-1-j])
+                i = i/2
+            ret.append(item)
+        return ret
 #+END_SRC
 
 #+BEGIN_HTML

@@ -1,11 +1,17 @@
-* Leetcode: Maximum Binary Tree                                              :BLOG:Basic:
+* Leetcode: Maximum Binary Tree                                              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     binarytree, recursive, monotone, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Maximum Binary Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/monotone][#monotone]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:
 
@@ -37,37 +43,61 @@ Credits To: [[https://leetcode.com/problems/maximum-binary-tree/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-binary-tree
-## Basic Ideas: recursive way
-##
-## Complexity: Time O(n), Space O(1)
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+#+BEGIN_SRC go
+// Basic Ideas: monotone stack
+//   Find the next bigger element.
+//   And the current node is in the left subtree of that node.
+//   If nums[i] > nums[i+1], node of nums[i] is the parent node of nums[i+1]
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func constructMaximumBinaryTree(nums []int) *TreeNode {
+    if len(nums) == 0 { return nil }
+    stack := []*TreeNode{}
+    for _, num := range nums {
+        node := &TreeNode{num, nil, nil}
+        for len(stack)>0 && num > stack[len(stack)-1].Val {
+            node.Left = stack[len(stack)-1]
+            stack = stack[0:len(stack)-1]
+        }
+        if len(stack) > 0 {
+            stack[len(stack)-1].Right = node
+        }
+        stack = append(stack, node)
+    }
+    return stack[0]
+}
+#+END_SRC
 
-class Solution(object):
-    def constructMaximumBinaryTree(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
-        if len(nums) == 0:
-            return None
-        
-        max_index = 0
-        for i in xrange(1, len(nums)):
-            if nums[i] > nums[max_index]:
-                max_index = i
-        root = TreeNode(nums[max_index])
-
-        if max_index != 0:
-            root.left = self.constructMaximumBinaryTree(nums[0:max_index])
-        root.right = self.constructMaximumBinaryTree(nums[max_index+1:])
-        return root
+#+BEGIN_SRC go
+// Basic Ideas: recursive
+// Complexity: Time O(n*n), Space O(1)
+// Blog link: https://code.dennyzhang.com/maximum-binary-tree
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func constructMaximumBinaryTree(nums []int) *TreeNode {
+    if len(nums) == 0 { return nil }
+    k := 0
+    for i, _ := range nums {
+        if nums[i] > nums[k] { k = i }
+    }
+    res := TreeNode{nums[k], nil, nil}
+    res.Left = constructMaximumBinaryTree(nums[0:k])
+    res.Right = constructMaximumBinaryTree(nums[k+1:])
+    return &res
+}
 #+END_SRC
 
 #+BEGIN_HTML

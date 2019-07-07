@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, subarray, inspiring
+:type:     subarray, inspiring, presum
 :END:
 ---------------------------------------------------------------------
 Maximum Product Subarray
@@ -11,8 +11,7 @@ Maximum Product Subarray
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-product-subarray"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest product.
 
@@ -26,9 +25,35 @@ Credits To: [[https://leetcode.com/problems/maximum-product-subarray/description
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-product-subarray
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/maximum-product-subarray
+// Basic Ideas: presum
+// Complexity: Time O(n), Space O(1)
+func maxProduct(nums []int) int {
+    res := -1 << 31
+    for preProd, pmax, nmax, i := 1, 1, -1 << 31, 0; i<len(nums); i++ {
+        if nums[i] != 0 {
+            preProd = preProd * nums[i]
+            if preProd > 0 {
+                if res < preProd { res = preProd }
+            } else {
+                if nmax != -1<<31 {
+                    if res < preProd/nmax { res = preProd/nmax }
+                } else {
+                    if res < preProd/pmax { res = preProd/pmax }
+                }
+            }
+            if preProd > 0 && preProd > pmax { pmax = preProd }
+            if preProd < 0 && preProd > nmax { nmax = preProd }
+        } else {
+            if res < 0 {
+                res = 0
+            }
+            preProd, pmax, nmax = 1, 1, -1 << 31
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

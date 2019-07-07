@@ -1,0 +1,109 @@
+* Leetcode: Largest Values From Labels                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy
+:END:
+---------------------------------------------------------------------
+Largest Values From Labels
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-values-from-labels"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]]
+---------------------------------------------------------------------
+We have a set of items: the i-th item has value values[i] and label labels[i].
+
+Then, we choose a subset S of these items, such that:
+
+- |S| <= num_wanted
+- For every label L, the number of items in S with label L is <= use_limit.
+
+Return the largest possible sum of the subset S.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: values = [5,4,3,2,1], labels = [1,1,2,2,3], num_wanted = 3, use_limit = 1
+Output: 9
+Explanation: The subset chosen is the first, third, and fifth item.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: values = [5,4,3,2,1], labels = [1,3,3,3,2], num_wanted = 3, use_limit = 2
+Output: 12
+Explanation: The subset chosen is the first, second, and third item.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: values = [9,8,8,7,6], labels = [0,0,0,1,1], num_wanted = 3, use_limit = 1
+Output: 16
+Explanation: The subset chosen is the first and fourth item.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: values = [9,8,8,7,6], labels = [0,0,0,1,1], num_wanted = 3, use_limit = 2
+Output: 24
+Explanation: The subset chosen is the first, second, and fourth item.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= values.length == labels.length <= 20000
+- 0 <= values[i], labels[i] <= 20000
+- 1 <= num_wanted, use_limit <= values.length
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-values-from-labels][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/largest-values-from-labels/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/largest-values-from-labels
+// Basic Ideas: Greedy
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+type Node struct {
+    value int
+    label int
+    
+}
+func largestValsFromLabels(values []int, labels []int, num_wanted int, use_limit int) int {
+    res := 0
+    l := []Node{}
+    for i, _ := range values {
+        l = append(l, Node{values[i], labels[i]})
+    }
+    sort.Slice(l, func(i, j int) bool {
+        return l[i].value > l[j].value
+    })
+
+    m := map[int]int{}
+    for i, _ := range l {
+        if num_wanted == 0 {
+            break
+        }
+        if m[l[i].label] >= use_limit { continue }
+        // pick current value
+        res += l[i].value
+        m[l[i].label]++
+        num_wanted--
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

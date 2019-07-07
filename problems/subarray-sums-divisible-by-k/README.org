@@ -1,0 +1,71 @@
+* Leetcode: Subarray Sums Divisible by K                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     presum, mod
+:END:
+---------------------------------------------------------------------
+Subarray Sums Divisible by K
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/subarray-sums-divisible-by-k"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/continuous-subarray-sum][Leetcode: Continuous Subarray Sum]]
+- Tag: [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/tag/mod][#mod]]
+---------------------------------------------------------------------
+Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [4,5,0,-2,-3,1], K = 5
+Output: 7
+Explanation: There are 7 subarrays with a sum divisible by K = 5:
+[4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 30000
+- -10000 <= A[i] <= 10000
+- 2 <= K <= 10000
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/subarray-sums-divisible-by-k][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/subarray-sums-divisible-by-k/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/subarray-sums-divisible-by-k
+// Basic Ideas: presum + mod
+// l[i]: how many preSum equals i
+// Complexity: Time O(n), Space O(n)
+func subarraysDivByK(A []int, K int) int {
+    l := make([]int, K)
+    l[0] = 1
+    preSum := 0
+    for _, v := range A {
+        preSum += v
+        v2 := preSum%K
+        if v2 < 0 { v2 += K }
+        l[v2]++
+    }
+    res := 0
+    for _, v := range l {
+        res += (v*(v-1))/2
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

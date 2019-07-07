@@ -35,7 +35,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-## Blog link: https://code.dennyzhang.com/subarray-sum-equals-k
+// Blog link: https://code.dennyzhang.com/subarray-sum-equals-k
 // Basic Ideas: Presum + Dynamic Programming
 //     Count how many subarray ends with current item
 // Complexity: Time O(n), Space (n)
