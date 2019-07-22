@@ -1,4 +1,4 @@
-* Leetcode: Department Top Three Salaries                                              :BLOG:Hard:
+* Leetcode: Department Top Three Salaries                         :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

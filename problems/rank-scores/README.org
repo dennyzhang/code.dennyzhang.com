@@ -48,7 +48,7 @@ Credits To: [[https://leetcode.com/problems/rank-scores/description/][leetcode.c
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution 1
 #+BEGIN_SRC sql
 ## Blog link: https://code.dennyzhang.com/rank-scores
 set @rownr=0;
@@ -59,9 +59,11 @@ from Scores as t1 inner join
       group by Score order by Score desc) as t) As t2
 on t1.Score = t2.Score
 order by t1.Score desc
+#+END_SRC
 
-# -------------- separator ---------
-
+- Solution 2
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/rank-scores
 select ranking.Score as Score, ranking.Ranking as Rank
     from Scores inner join
       (select t1.Score as Score, count(1) as Ranking
