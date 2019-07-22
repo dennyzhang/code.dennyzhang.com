@@ -1,0 +1,87 @@
+* Leetcode: Print in Order                                       :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     semaphore
+:END:
+---------------------------------------------------------------------
+Print in Order
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/print-in-order"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/semaphore][#semaphore]]
+---------------------------------------------------------------------
+Suppose we have a class:
+#+BEGIN_EXAMPLE
+public class Foo {
+  public void first() { print("first"); }
+  public void second() { print("second"); }
+  public void third() { print("third"); }
+}
+#+END_EXAMPLE
+
+The same instance of Foo will be passed to three different threads. Thread A will call first(), thread B will call second(), and thread C will call third(). Design a mechanism and modify the program to ensure that second() is executed after first(), and third() is executed after second().
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,2,3]
+Output: "firstsecondthird"
+Explanation: There are three threads being fired asynchronously. The input [1,2,3] means thread A calls first(), thread B calls second(), and thread C calls third(). "firstsecondthird" is the correct output.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [1,3,2]
+Output: "firstsecondthird"
+Explanation: The input [1,3,2] means thread A calls first(), thread B calls third(), and thread C calls second(). "firstsecondthird" is the correct output.
+#+END_EXAMPLE
+ 
+Note:
+
+We do not know how the threads will be scheduled in the operating system, even though the numbers in the input seems to imply the ordering. The input format you see is mainly to ensure our tests' comprehensiveness.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/print-in-order][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/print-in-order/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC c++
+// Blog link: https://code.dennyzhang.com/print-in-order
+class Foo {
+public:
+    Foo() {
+        
+    }
+
+    void first(function<void()> printFirst) {
+        
+        // printFirst() outputs "first". Do not change or remove this line.
+        printFirst();
+    }
+
+    void second(function<void()> printSecond) {
+        
+        // printSecond() outputs "second". Do not change or remove this line.
+        printSecond();
+    }
+
+    void third(function<void()> printThird) {
+        
+        // printThird() outputs "third". Do not change or remove this line.
+        printThird();
+    }
+};
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

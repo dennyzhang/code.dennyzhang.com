@@ -1,0 +1,103 @@
+* Leetcode: Distribute Coins in Binary Tree                      :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     postorder, treetraversal
+:END:
+---------------------------------------------------------------------
+Distribute Coins in Binary Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distribute-coins-in-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/postorder][#postorder]]
+---------------------------------------------------------------------
+Given the root of a binary tree with N nodes, each node in the tree has node.val coins, and there are N coins total.
+
+In one move, we may choose two adjacent nodes and move one coin from one node to another.  (The move may be from parent to child, or from child to parent.)
+
+Return the number of moves required to make every node have exactly one coin.
+ 
+Example 1:
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree1.png]]
+#+BEGIN_EXAMPLE
+Input: [3,0,0]
+Output: 2
+Explanation: From the root of the tree, we move one coin to its left child, and one coin to its right child.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree2.png]]
+#+BEGIN_EXAMPLE
+Input: [0,3,0]
+Output: 3
+Explanation: From the left child of the root, we move two coins to the root [taking two moves].  Then, we move one coin from the root of the tree to the right child.
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree3.png]]
+#+BEGIN_EXAMPLE
+Input: [1,0,2]
+Output: 2
+#+END_EXAMPLE
+
+Example 4:
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree4.png]]
+#+BEGIN_EXAMPLE
+Input: [1,0,0,null,3]
+Output: 4
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1<= N <= 100
+- 0 <= node.val <= N
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distribute-coins-in-binary-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/distribute-coins-in-binary-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/distribute-coins-in-binary-tree
+// Basic Ideas: post-order
+// Complexity: Time O(n), Space O(1)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func dfs(root *TreeNode, count *int) int {
+    if root == nil { return 0 }
+    left := dfs(root.Left, count)
+    right := dfs(root.Right, count)
+    res := root.Val + left + right - 1
+    if res < 0 {
+        *count += -res
+    } else {
+        *count += res
+    }
+    return res
+}
+
+func distributeCoins(root *TreeNode) int {
+    res := 0
+    dfs(root, &res)
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

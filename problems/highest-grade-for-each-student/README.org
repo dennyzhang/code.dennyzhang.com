@@ -1,0 +1,85 @@
+* Leetcode: Highest Grade For Each Student                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Highest Grade For Each Student
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/highest-grade-for-each-student"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Table: Enrollments
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| student_id    | int     |
+| course_id     | int     |
+| grade         | int     |
++---------------+---------+
+(student_id, course_id) is the primary key of this table.
+#+END_EXAMPLE
+
+Write a SQL query to find the highest grade with its corresponding course for each student. In case of a tie, you should find the course with the smallest course_id. The output must be sorted by increasing student_id.
+
+The query result format is in the following example:
+
+#+BEGIN_EXAMPLE
+Enrollments table:
++------------+-------------------+
+| student_id | course_id | grade |
++------------+-----------+-------+
+| 2          | 2         | 95    |
+| 2          | 3         | 95    |
+| 1          | 1         | 90    |
+| 1          | 2         | 99    |
+| 3          | 1         | 80    |
+| 3          | 2         | 75    |
+| 3          | 3         | 82    |
++------------+-----------+-------+
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Result table:
++------------+-------------------+
+| student_id | course_id | grade |
++------------+-----------+-------+
+| 1          | 2         | 99    |
+| 2          | 2         | 95    |
+| 3          | 3         | 82    |
++------------+-----------+-------+
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/highest-grade-for-each-student][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/highest-grade-for-each-student/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/highest-grade-for-each-student
+# Write your MySQL query statement below
+select student_id, min(course_id) as course_id, grade
+from Enrollments
+where (student_id, grade) in 
+    (select student_id, max(grade)
+    from Enrollments
+    group by student_id)
+group by student_id
+order by student_id asc
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

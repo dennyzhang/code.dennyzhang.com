@@ -1,0 +1,91 @@
+* Leetcode: Reported Posts                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Reported Posts
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reported-posts"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Table: Actions
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| user_id       | int     |
+| post_id       | int     |
+| action_date   | date    | 
+| action        | enum    |
+| extra         | varchar |
++---------------+---------+
+There is no primary key for this table, it may have duplicate rows.
+The action column is an ENUM type of ('view', 'like', 'reaction', 'comment', 'report', 'share').
+The extra column has optional information about the action such as a reason for report or a type of reaction. 
+#+END_EXAMPLE
+ 
+Write an SQL query that reports the number of posts reported yesterday for each report reason. Assume today is 2019-07-05.
+
+The query result format is in the following example:
+
+#+BEGIN_EXAMPLE
+Actions table:
++---------+---------+-------------+--------+--------+
+| user_id | post_id | action_date | action | extra  |
++---------+---------+-------------+--------+--------+
+| 1       | 1       | 2019-07-01  | view   | null   |
+| 1       | 1       | 2019-07-01  | like   | null   |
+| 1       | 1       | 2019-07-01  | share  | null   |
+| 2       | 4       | 2019-07-04  | view   | null   |
+| 2       | 4       | 2019-07-04  | report | spam   |
+| 3       | 4       | 2019-07-04  | view   | null   |
+| 3       | 4       | 2019-07-04  | report | spam   |
+| 4       | 3       | 2019-07-02  | view   | null   |
+| 4       | 3       | 2019-07-02  | report | spam   |
+| 5       | 2       | 2019-07-04  | view   | null   |
+| 5       | 2       | 2019-07-04  | report | racism |
+| 5       | 5       | 2019-07-04  | view   | null   |
+| 5       | 5       | 2019-07-04  | report | racism |
++---------+---------+-------------+--------+--------+
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Result table:
++---------------+--------------+
+| report_reason | report_count |
++---------------+--------------+
+| spam          | 1            |
+| racism        | 2            |
++---------------+--------------+ 
+#+END_EXAMPLE
+Note that we only care about report reasons with non zero number of reports.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reported-posts][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/reported-posts/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/reported-posts
+# Write your MySQL query statement below
+select extra as report_reason, count(distinct post_id) as report_count
+from Actions
+where action_date = '2019-07-04' and action = 'report'
+group by extra
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

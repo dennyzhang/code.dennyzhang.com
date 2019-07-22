@@ -1,0 +1,98 @@
+* Leetcode: Pancake Sorting                                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     simulation
+:END:
+---------------------------------------------------------------------
+Pancake Sorting
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/pancake-sorting"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/simulation][#simulation]]
+---------------------------------------------------------------------
+Given an array A, we can perform a pancake flip: We choose some positive integer k <= A.length, then reverse the order of the first k elements of A.  We want to perform zero or more pancake flips (doing them one after another in succession) to sort the array A.
+
+Return the k-values corresponding to a sequence of pancake flips that sort A.  Any valid answer that sorts the array within 10 * A.length flips will be judged as correct.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [3,2,4,1]
+Output: [4,2,4,3]
+Explanation: 
+We perform 4 pancake flips, with k values 4, 2, 4, and 3.
+Starting state: A = [3, 2, 4, 1]
+After 1st flip (k=4): A = [1, 4, 2, 3]
+After 2nd flip (k=2): A = [4, 1, 2, 3]
+After 3rd flip (k=4): A = [3, 2, 1, 4]
+After 4th flip (k=3): A = [1, 2, 3, 4], which is sorted. 
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [1,2,3]
+Output: []
+Explanation: The input is already sorted, so there is no need to flip anything.
+Note that other answers, such as [3, 3], would also be accepted.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 100
+- A[i] is a permutation of [1, 2, ..., A.length]
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/pancake-sorting][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/pancake-sorting/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/pancake-sorting
+// Basic Ideas:
+//   Each round move the maximum to the head
+// Complexity: O(n*n), Space O(1)
+func pancakeSort(A []int) []int {
+    res := []int{}
+    B := make([]int, len(A))
+    for i:=len(A)-1; i>=0; i-- {
+        k:=0
+        for j:=1; j<=i; j++ {
+            if A[k] < A[j] { k = j }
+        }
+        if k != i {
+            l:=0
+            for j:=i; j>k; j--{
+                B[l]=A[j]
+                l++
+            }
+            for j:=0; j<=k; j++ {
+                B[l]=A[j]
+                l++
+            }
+            if k != 0 {
+                res = append(res, k+1)
+            }
+            if i != 0 {
+                res = append(res, i+1)
+            }
+            for j:=0; j<len(A); j++ {
+	    		A[j] = B[j]
+    		}
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -280,8 +280,7 @@ https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Progra
 * TODO YouTube: https://www.youtube.com/user/xxfflower/playlists   :noexport:
 * TODO https://en.wikipedia.org/wiki/Category:Optimization_algorithms_and_methods :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO #presum: problem                                            :noexport:
-* TODO #pathsum: problem                                           :noexport:
+* TODO #minpathsum: problem                                        :noexport:
 * TODO classic: backtracking                                       :noexport:
 * TODO classic: sliding window                                     :noexport:
 * TODO tip: use array instead of hashmap                           :noexport:
@@ -290,3 +289,4 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 ** TODO https://en.wikipedia.org/wiki/Knapsack_problem
 ** TODO https://en.wikipedia.org/wiki/Edit_distance
 ** TODO https://en.wikipedia.org/wiki/Maximum_subarray_problem
+* TODO #presum: problem                                            :noexport:

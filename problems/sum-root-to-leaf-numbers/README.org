@@ -7,6 +7,12 @@
 ---------------------------------------------------------------------
 Basic tree traverse
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+---------------------------------------------------------------------
 Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number.
 
 An example is the root-to-leaf path 1->2->3 which represents the number 123.
@@ -31,14 +37,14 @@ Credits To: [[https://leetcode.com/problems/sum-root-to-leaf-numbers/description
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/sum-root-to-leaf-numbers
+## Idea: BFS
+## Complexity: Time O(n), Space O(1)
 class Solution(object):
     def sumNumbers(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        ## Idea: BFS
-        ## Complexity:
         res = 0
         if root is None:
             return 0

@@ -46,7 +46,7 @@ Example: [[https://code.dennyzhang.com/longest-increasing-subsequence][Leetcode:
 ---------------------------------------------------------------------
 - Problem 7:  [[https://en.wikipedia.org/wiki/Maximum_subarray_problem][Maximum subarray problem]] 
 
-Category: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]],  [[https://code.dennyzhang.com/tag/presum][#presum]]
+Category: [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 
 Example: [[https://code.dennyzhang.com/maximum-subarray][Leetcode: Maximum Subarray]]
 ---------------------------------------------------------------------
@@ -64,7 +64,7 @@ Example:
 ---------------------------------------------------------------------
 - Problem 10:  [[https://en.wikipedia.org/wiki/Knapsack_problem][Knapsack problem]] 
 
-Category:
+Category: [[https://code.dennyzhang.com/tag/knapsack][#knapsack]]
 
 Example: [[https://code.dennyzhang.com/coin-change][Leetcode: Coin Change]], [[https://code.dennyzhang.com/coin-change-2][Leetcode: Coin Change 2]]
 ---------------------------------------------------------------------

@@ -1,0 +1,102 @@
+* Leetcode: Print Zero Even Odd                                  :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     semaphore
+:END:
+---------------------------------------------------------------------
+Print Zero Even Odd
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/print-zero-even-odd"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/semaphore][#semaphore]]
+---------------------------------------------------------------------
+Suppose you are given the following code:
+#+BEGIN_EXAMPLE
+class ZeroEvenOdd {
+  public ZeroEvenOdd(int n) { ... }      // constructor
+  public void zero(printNumber) { ... }  // only output 0's
+  public void even(printNumber) { ... }  // only output even numbers
+  public void odd(printNumber) { ... }   // only output odd numbers
+}
+#+END_EXAMPLE
+
+The same instance of ZeroEvenOdd will be passed to three different threads:
+
+1. Thread A will call zero() which should only output 0's.
+- Thread B will call even() which should only ouput even numbers.
+- Thread C will call odd() which should only output odd numbers.
+
+Each of the thread is given a printNumber method to output an integer. Modify the given program to output the series 010203040506... where the length of the series must be 2n.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 2
+Output: "0102"
+Explanation: There are three threads being fired asynchronously. One of them calls zero(), the other calls even(), and the last one calls odd(). "0102" is the correct output.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 5
+Output: "0102030405"
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/print-zero-even-odd][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/print-zero-even-odd/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/print-zero-even-odd
+## Basic Ideas: Semaphore
+## Complexity: Time O(1), Space O(1)
+
+from threading import Semaphore
+
+class ZeroEvenOdd:
+    def __init__(self, n):
+        self.n = n
+        self.z = Semaphore(0)
+        self.e = Semaphore(0)
+        self.o = Semaphore(0)
+        self.e.acquire()
+        self.o.acquire()
+        
+	# printNumber(x) outputs "x", where x is an integer.
+    def zero(self, printNumber: 'Callable[[int], None]') -> None:
+        for x in range(0, n):
+            self.z.acquire()
+            print(0)
+            if x%2 == 1:
+                self.o.release()
+            else:
+                self.e.release()
+        
+    def even(self, printNumber: 'Callable[[int], None]') -> None:
+        for x in range(1, n+1):
+            if x%2 == 0:
+                self.e.acquire()
+                print(x)
+                self.z.release()
+        
+    def odd(self, printNumber: 'Callable[[int], None]') -> None:
+        for x in range(1, n+1):
+            if x%2 == 1:
+                self.o.acquire()
+                print(x)
+                self.z.release()
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

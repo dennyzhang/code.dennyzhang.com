@@ -1,0 +1,94 @@
+* Leetcode: Print FooBar Alternately                             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     semaphore
+:END:
+---------------------------------------------------------------------
+Print FooBar Alternately
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/print-foobar-alternately"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/semaphore][#semaphore]]
+---------------------------------------------------------------------
+Suppose you are given the following code:
+#+BEGIN_EXAMPLE
+class FooBar {
+  public void foo() {
+    for (int i = 0; i < n; i++) {
+      print("foo");
+    }
+  }
+
+  public void bar() {
+    for (int i = 0; i < n; i++) {
+      print("bar");
+    }
+  }
+}
+#+END_EXAMPLE
+
+The same instance of FooBar will be passed to two different threads. Thread A will call foo() while thread B will call bar(). Modify the given program to output "foobar" n times.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 1
+Output: "foobar"
+Explanation: There are two threads being fired asynchronously. One of them calls foo(), while the other calls bar(). "foobar" is being output 1 time.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 2
+Output: "foobarfoobar"
+Explanation: "foobar" is being output 2 times.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/print-foobar-alternately][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/print-foobar-alternately/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC c++
+// Blog link: https://code.dennyzhang.com/print-foobar-alternately
+class FooBar {
+private:
+    int n;
+
+public:
+    FooBar(int n) {
+        this->n = n;
+    }
+
+    void foo(function<void()> printFoo) {
+        
+        for (int i = 0; i < n; i++) {
+            
+        	// printFoo() outputs "foo". Do not change or remove this line.
+        	printFoo();
+        }
+    }
+
+    void bar(function<void()> printBar) {
+        
+        for (int i = 0; i < n; i++) {
+            
+        	// printBar() outputs "bar". Do not change or remove this line.
+        	printBar();
+        }
+    }
+};
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
