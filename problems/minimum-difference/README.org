@@ -29,7 +29,7 @@ Credits To: [[https://www.lintcode.com/problem/minimum-difference/description][l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

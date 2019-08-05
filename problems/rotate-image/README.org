@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     matrixtraversal, rotateoperation
+:type:     matrixtraversal, rotatelist
 :END:
 ---------------------------------------------------------------------
 Clockwise rotate a 2D matrix
@@ -12,7 +12,7 @@ Clockwise rotate a 2D matrix
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-matrixtraversal][Series: Matrix Traversal & Follow-up]]
-- Tag: [[https://code.dennyzhang.com/tag/rotateoperation][#rotateoperation]], [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
+- Tag: [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]], [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 You are given an n x n 2D matrix representing an image.
 

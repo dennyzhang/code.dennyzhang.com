@@ -47,7 +47,7 @@ Credits To: [[https://leetcode.com/problems/max-chunks-to-make-sorted-ii/descrip
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

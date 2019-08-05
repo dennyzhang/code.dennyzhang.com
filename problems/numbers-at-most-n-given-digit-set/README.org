@@ -51,7 +51,7 @@ Credits To: [[https://leetcode.com/problems/numbers-at-most-n-given-digit-set/de
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

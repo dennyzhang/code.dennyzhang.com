@@ -1,0 +1,84 @@
+* Leetcode: Maximum Average Subtree                              :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     postorder, dfs
+:END:
+---------------------------------------------------------------------
+Maximum Average Subtree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-average-subtree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/postorder][#postorder]]
+---------------------------------------------------------------------
+Given the root of a binary tree, find the maximum average value of any subtree of that tree.
+
+(A subtree of a tree is any node of that tree plus all its descendants. The average value of a tree is the sum of its values, divided by the number of nodes.)
+
+Example 1:
+
+[[image-blog:Leetcode: Maximum Average Subtree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/maximum-average-subtree/tree.png]]
+
+#+BEGIN_EXAMPLE
+Input: [5,6,1]
+Output: 6.00000
+Explanation: 
+For the node with value = 5 we have an average of (5 + 6 + 1) / 3 = 4.
+For the node with value = 6 we have an average of 6 / 1 = 6.
+For the node with value = 1 we have an average of 1 / 1 = 1.
+So the answer is 6 which is the maximum.
+#+END_EXAMPLE
+ 
+Note:
+
+1. The number of nodes in the tree is between 1 and 5000.
+- Each node will have a value between 0 and 100000.
+- Answers will be accepted as correct if they are within 10^-5 of the correct answer.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-average-subtree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/maximum-average-subtree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/maximum-average-subtree
+// Basic Ideas: dfs + post-order
+// Complexity: Time O(n), Space O(1)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+
+func dfs(root *TreeNode, max *float64) (sum int, cnt int) {
+    if root == nil { return 0, 0 }
+    lsum, lcnt := dfs(root.Left, max)
+    rsum, rcnt := dfs(root.Right, max)
+    sum, cnt = lsum + rsum + root.Val, lcnt + rcnt + 1
+    val := float64(sum)/float64(cnt)
+    if val > *max { *max = val }
+    return
+}
+
+func maximumAverageSubtree(root *TreeNode) float64 {
+    res := float64(0)
+    dfs(root, &res)
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

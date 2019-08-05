@@ -47,7 +47,7 @@ Credits To: [[https://www.lintcode.com/problem/array-maximum-value/description][
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

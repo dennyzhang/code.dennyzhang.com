@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, right2left
+:type:     string, leftrightpass
 :END:
 ---------------------------------------------------------------------
 Shifting Letters
@@ -11,7 +11,7 @@ Shifting Letters
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shifting-letters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/right2left][#right2left]], [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/leftrightpass][#leftrightpass]]
 ---------------------------------------------------------------------
 We have a string S of lowercase letters, and an integer array shifts.
 

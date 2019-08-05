@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     divideconquer, inspiring, evaluatecomplexity
+:type:     divideconquer, inspiring
 :END:
 ---------------------------------------------------------------------
 Different Ways to Add Parentheses
@@ -12,7 +12,7 @@ Different Ways to Add Parentheses
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-divideconquer][Review: Divide And Conquer Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/divideconquer][#divideconquer]],  [[https://code.dennyzhang.com/tag/evaluatecomplexity][#evaluatecomplexity]]
+- Tag: [[https://code.dennyzhang.com/tag/divideconquer][#divideconquer]]
 ---------------------------------------------------------------------
 Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.
 

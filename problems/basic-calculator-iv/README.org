@@ -63,7 +63,7 @@ Credits To: [[https://leetcode.com/problems/basic-calculator-iv/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

@@ -46,7 +46,7 @@ Credits To: [[https://leetcode.com/problems/exam-room/description/][leetcode.com
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

@@ -39,7 +39,7 @@ Credits To: [[https://leetcode.com/problems/binary-string-with-substrings-repres
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

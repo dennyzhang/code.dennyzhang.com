@@ -1,0 +1,103 @@
+* Leetcode: Snapshot Array                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     classic, inspiring
+:END:
+---------------------------------------------------------------------
+Snapshot Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Implement a SnapshotArray that supports the following interface:
+
+- SnapshotArray(int length) initializes an array-like data structure with the given length.  Initially, each element equals 0.
+- void set(index, val) sets the element at the given index to be equal to val.
+- int snap() takes a snapshot of the array and returns the snap_id: the total number of times we called snap() minus 1.
+- int get(index, snap_id) returns the value at the given index, at the time we took the snapshot with the given snap_id
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: ["SnapshotArray","set","snap","set","get"]
+[[3],[0,5],[],[0,6],[0,0]]
+Output: [null,null,0,null,5]
+Explanation: 
+SnapshotArray snapshotArr = new SnapshotArray(3); // set the length to be 3
+snapshotArr.set(0,5);  // Set array[0] = 5
+snapshotArr.snap();  // Take a snapshot, return snap_id = 0
+snapshotArr.set(0,6);
+snapshotArr.get(0,0);  // Get the value of array[0] with snap_id = 0, return 5
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= length <= 50000
+- At most 50000 calls will be made to set, snap, and get.
+- 0 <= index < length
+- 0 <= snap_id < (the total number of times we call snap())
+- 0 <= val <= 10^9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/example
+// Basic Ideas:
+//
+// Complexity:
+type SnapshotArray struct {
+    m map[int]map[int]int
+    cur_id int
+}
+
+func Constructor(length int) SnapshotArray {
+    cur_id := 0
+    m := map[int]map[int]int{}
+    m[0] = map[int]int{}
+    return SnapshotArray{m, cur_id}
+}
+
+func (this *SnapshotArray) Set(index int, val int)  {
+    this.m[this.cur_id][index] = val
+}
+
+func (this *SnapshotArray) Snap() int {
+    this.cur_id++
+    this.m[this.cur_id] = map[int]int{}
+    return this.cur_id-1
+}
+
+func (this *SnapshotArray) Get(index int, snap_id int) int {
+    for i:=snap_id; i>=0; i-- {
+        v, ok := this.m[i][index]
+        if ok { return v }
+    }
+    return 0
+}
+
+/**
+ * Your SnapshotArray object will be instantiated and called as such:
+ * obj := Constructor(length);
+ * obj.Set(index,val);
+ * param_2 := obj.Snap();
+ * param_3 := obj.Get(index,snap_id);
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

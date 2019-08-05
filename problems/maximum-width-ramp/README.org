@@ -45,7 +45,7 @@ Credits To: [[https://leetcode.com/problems/maximum-width-ramp/description/][lee
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

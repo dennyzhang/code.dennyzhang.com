@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, rotateoperation
+:type:     string, rotatelist
 :END:
 ---------------------------------------------------------------------
 Rotate String
@@ -12,7 +12,7 @@ Rotate String
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/repeated-string-match][Repeated String Match]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
 ---------------------------------------------------------------------
 We are given two strings, A and B.
 

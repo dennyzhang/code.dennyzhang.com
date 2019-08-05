@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, recursive, classic, bfs, evaluatecomplexity
+:type:     combination, recursive, classic, bfs
 :END:
 ---------------------------------------------------------------------
 Letter Case Permutation
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/generalized-abbreviation][Generalized Abbreviation]]
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/evaluatecomplexity][#evaluatecomplexity]]
+- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
 

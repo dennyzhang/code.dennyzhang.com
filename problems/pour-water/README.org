@@ -139,7 +139,7 @@ Credits To: [[https://leetcode.com/problems/pour-water/description/][leetcode.co
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: XXX
+- Solution:
 
 *General Thinkings:*
 #+BEGIN_EXAMPLE

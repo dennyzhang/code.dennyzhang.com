@@ -1,8 +1,8 @@
-* Leetcode: Minimum Falling Path Sum                             :BLOG:Medium:
+* Leetcode: Minimum Falling Path Sum                            :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, minpathsum
+:type:     dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Minimum Falling Path Sum
@@ -11,7 +11,7 @@ Minimum Falling Path Sum
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-falling-path-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/minpathsum][#minpathsum]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a square array of integers A, we want the minimum sum of a falling path through A.
 

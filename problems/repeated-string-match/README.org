@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     repeatedstring, string, rotateoperation
+:type:     repeatedstring, string, rotatelist
 :END:
 ---------------------------------------------------------------------
 Repeated String Match
@@ -13,7 +13,7 @@ Repeated String Match
 Similar Problems:
 - [[https://code.dennyzhang.com/rotate-string][Rotate String]]
 - [[https://code.dennyzhang.com/repeated-substring][Repeated Substring Pattern]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/rotateoperation][#rotateoperation]]
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
 ---------------------------------------------------------------------
 Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.
 

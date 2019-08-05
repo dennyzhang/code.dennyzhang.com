@@ -21,6 +21,13 @@ If you have changed the original node, the next pointer might not be what you wa
 #+END_EXAMPLE
 - Whether we need to maintain the previous node?
 
+Common Problems:
+
+1. Insert a Node in Sorted List
+- Remove a Node from Linked List 3. Reverse a Linked List
+- Merge Two Linked Lists
+- Find the Middle of a Linked List
+
 The most impressive problems to me:
 - [[https://code.dennyzhang.com/sort-list/][Sort List]]
 
