@@ -1,0 +1,90 @@
+* Leetcode: Day of the Year                                      :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     leapyear, math
+:END:
+---------------------------------------------------------------------
+Day of the Year
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/ordinal-number-of-date"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/number-of-days-in-a-month][Leetcode: Number of Days in a Month]]
+- Tag: [[https://code.dennyzhang.com/tag/leapyear][#leapyear]], [[https://code.dennyzhang.com/tag/math][#math]]
+---------------------------------------------------------------------
+Given a string date representing a Gregorian calendar date formatted as YYYY-MM-DD, return the day number of the year.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: date = "2019-01-09"
+Output: 9
+Explanation: Given date is the 9th day of the year in 2019.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: date = "2019-02-10"
+Output: 41
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: date = "2003-03-01"
+Output: 60
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: date = "2004-03-01"
+Output: 61
+#+END_EXAMPLE
+ 
+Constraints:
+
+- date.length == 10
+- date[4] == date[7] == '-', and all other date[i]'s are digits
+- date represents a calendar date between Jan 1st, 1900 and Dec 31, 2019.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/ordinal-number-of-date][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/ordinal-number-of-date/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/ordinal-number-of-date
+// Basic Ideas: array
+//
+// Complexity: Time O(1), Space O(1)
+import ("strings"
+        "strconv")
+func dayOfYear(date string) int {
+    items := strings.Split(date, "-")
+    year, _ := strconv.Atoi(items[0])
+    month, _ := strconv.Atoi(items[1])
+    day, _ := strconv.Atoi(items[2])
+
+    res := day
+
+    l := []int{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
+    if (year%4 ==0 && year%100!=0) || (year%400 == 0) {
+        l[2] = 29
+    }
+    for i:=1; i<month; i++ {
+        res += l[i]
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

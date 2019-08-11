@@ -8,7 +8,7 @@
 Snapshot Array
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/snapshot-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
@@ -42,16 +42,16 @@ Constraints:
 - 0 <= snap_id < (the total number of times we call snap())
 - 0 <= val <= 10^9
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/snapshot-array][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/snapshot-array/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/example
+// Blog link: https://code.dennyzhang.com/snapshot-array
 // Basic Ideas:
 //
 // Complexity:

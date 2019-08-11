@@ -1,8 +1,8 @@
-* LintCode: Longest Repeating Substring                          :BLOG:Medium:
+* Leetcode: Longest Repeating Substring                          :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     binarysearch, hashmap
 :END:
 ---------------------------------------------------------------------
 Longest Repeating Substring
@@ -11,46 +11,80 @@ Longest Repeating Substring
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-repeating-substring"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
 ---------------------------------------------------------------------
-Given a string str, find the longest substring with no fewer than k repetitions and return the length. The substring can have overlapping parts, but cannot completely overlap.
+Given a string S, find out the length of the longest repeating substring(s). Return 0 if no repeating substring exists.
 
- Notice
-- 1 <= str.length <= 1000
-- 1 < k < str.length
-- We guarantee that the problem will certainly can be solved
-
-Example
+Example 1:
 #+BEGIN_EXAMPLE
-Given str = "aaa", k = 2, return 2.
-
-Explanation:
-The longest subsequence with no fewer than k repetitions is "aa", and the length is 2.
+Input: "abcd"
+Output: 0
+Explanation: There is no repeating substring.
 #+END_EXAMPLE
 
+Example 2:
 #+BEGIN_EXAMPLE
-Given str = "aabcbcbcbc", k = 2, return 6.
-
-Explanation:
-Subsequences repeat no fewer than twice are "a", "bc", "bcbc" and "bcbcbc", and the longest is "bcbcbc", and the length is 6.
+Input: "abbaba"
+Output: 2
+Explanation: The longest repeating substrings are "ab" and "ba", each of which occurs twice.
 #+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "aabcaabdaab"
+Output: 3
+Explanation: The longest repeating substring is "aab", which occurs 3 times.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: "aaaaa"
+Output: 4
+Explanation: The longest repeating substring is "aaaa", which occurs twice.
+#+END_EXAMPLE
+ 
+Note:
+
+1. The string S consists of only lowercase English letters from 'a' - 'z'.
+- 1 <= S.length <= 1500
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-repeating-substring][code.dennyzhang.com]]
 
-Credits To: [[http://www.lintcode.com/en/problem/longest-repeating-substring/][lintcode.com]]
+Credits To: [[https://leetcode.com/problems/longest-repeating-substring/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution:
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-repeating-substring
-class Solution:
-    """
-    @param str: The input string
-    @param k: The repeated times
-    @return: The answer
-    """
-    def longestRepeatingSubsequenceII(self, str, k):
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-repeating-substring
+// Basic Ideas: binary search + hashmap
+//   T T T T F F
+// Complexity: Time O(n*n*log(n)), Space O(n*n)
+func longestRepeatingSubstring(S string) int {
+    res := 0
+    left, right := 1, len(S)-1
+    for left < right {
+        middle := (right-left)/2 + left
+        m := map[string]bool{}
+        has_duplicate := false
+        for i:=0; i+middle<len(S); i++ {
+            str := S[i:i+middle+1]
+            if m[str] {
+                has_duplicate = true
+                if middle+1 > res { res = middle+1 }
+                break
+            }
+            m[str] = true
+        }
+        if has_duplicate == false {
+            right = middle
+        } else {
+            left = middle+1
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

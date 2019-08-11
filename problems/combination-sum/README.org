@@ -37,6 +37,41 @@ Credits To: [[https://leetcode.com/problems/combination-sum/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/combination-sum
+// Basic Idea: backtracking
+//
+// Complexity: Time ? Space ?
+
+func backtrack(combination []int, presum int, target int, candidates []int, pos int, res *[][]int) {
+    if pos == len(candidates) {
+        return
+    }
+    v := candidates[pos]
+    for i:=0; presum+i*v<=target; i++ {
+        l := make([]int, i)
+        for j:=0; j<i; j++ {
+            l[j] = v
+        }
+        // don't change original value
+        combination2 := make([]int, len(combination))
+		copy(combination2, combination)
+		combination2 = append(combination2, l...)
+        if presum+i*v == target {
+            *res = append(*res, combination2)
+        } else {
+            backtrack(combination2, presum+i*v, target, candidates, pos+1, res)
+        }
+    }
+}
+
+func combinationSum(candidates []int, target int) [][]int {
+    res := [][]int{}
+    backtrack([]int{}, 0, target, candidates, 0, &res)
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/combination-sum

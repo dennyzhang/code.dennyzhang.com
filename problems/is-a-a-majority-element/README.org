@@ -1,0 +1,73 @@
+* Leetcode: Check If a Number Is Majority Element in a Sorted Array :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, binarysearch
+:END:
+---------------------------------------------------------------------
+Check If a Number Is Majority Element in a Sorted Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/is-a-a-majority-element"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/majority-element][Leetcode: Majority Element]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
+---------------------------------------------------------------------
+Given an array nums sorted in non-decreasing order, and a number target, return True if and only if target is a majority element.
+
+A majority element is an element that appears more than N/2 times in an array of length N.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [2,4,5,5,5,5,5,6,6], target = 5
+Output: true
+Explanation: 
+The value 5 appears 5 times and the length of the array is 9.
+Thus, 5 is a majority element because 5 > 9/2 is true.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [10,100,101,101], target = 101
+Output: false
+Explanation: 
+The value 101 appears 2 times and the length of the array is 4.
+Thus, 101 is not a majority element because 2 > 4/2 is false.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= nums.length <= 1000
+- 1 <= nums[i] <= 10^9
+- 1 <= target <= 10^9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/is-a-a-majority-element][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/is-a-a-majority-element/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/is-a-a-majority-element
+// Basic Ideas: count
+// Complexity: Time O(n), Space O(1)
+func isMajorityElement(nums []int, target int) bool {
+    cnt := len(nums)/2+1
+    for _, num := range nums {
+        if num == target { cnt-- }
+        if cnt == 0 { return true }
+    }
+    return false
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

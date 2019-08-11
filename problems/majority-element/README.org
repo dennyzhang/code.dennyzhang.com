@@ -2,10 +2,17 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     moorevoting, findnumber
+:type:     moorevoting, findnumber, classic
 :END:
 ---------------------------------------------------------------------
 More than half elements are the same. Identify it fast
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/is-a-a-majority-element"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/is-a-a-majority-element][Leetcode: Check If a Number Is Majority Element in a Sorted Array]]
+- Tag: [[https://code.dennyzhang.com/tag/morevoting][#morevoting]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given an array of size n, find the majority element. The majority element is the element that appears more than n/2 times.
 
@@ -17,6 +24,29 @@ Credits To: [[https://leetcode.com/problems/majority-element/description/][leetc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/majority-element
+// Basic Ideas: morevoting
+//
+// For two different values, collision these two
+//
+// Complexity: Time O(n), Space O(1)
+func majorityElement(nums []int) int {
+    v, cnt := nums[0], 1
+    for i:=1; i<len(nums); i++ {
+        if nums[i] == v { 
+            cnt++ 
+        } else {
+            cnt--
+            if cnt == 0 {
+                i++
+                v, cnt = nums[i], 1
+            }
+        }
+    }
+    return v
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/majority-element
@@ -33,7 +63,7 @@ class Solution(object):
         return nums2[(length-1)/2]
 #+END_SRC
 
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>

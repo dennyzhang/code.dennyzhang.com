@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap
+:type:     leapyear, math
 :END:
 ---------------------------------------------------------------------
 Number of Days in a Month
@@ -11,8 +11,8 @@ Number of Days in a Month
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-days-in-a-month"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/ordinal-number-of-date][Leetcode: Day of the Year]]
+- Tag: [[https://code.dennyzhang.com/tag/leapyear][#leapyear]], [[https://code.dennyzhang.com/tag/math][#math]]
 ---------------------------------------------------------------------
 Given a year Y and a month M, return how many days there are in that month.
 
@@ -49,26 +49,17 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/number-of-days-in-a-month
-// Basic Ideas: hashmap + math
+// Basic Ideas: array
 //  https://www.timeanddate.com/calendar/months/
 // Complexity: Time O(1), Space O(1)
 func numberOfDays(Y int, M int) int {
-    res := 28
+    l := []int{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
     if M == 2 {
         if (Y%4 ==0 && Y%100!=0) || (Y%400 == 0) {
-            res = 29
+            l[1] = 29
         }
-    } else {
-        m := map[int]int{}
-        for _, v := range []int{1, 3, 5, 7, 8, 10, 12} {
-            m[v] = 31
-        }
-        for _, v := range []int{4, 6, 9, 11} {
-            m[v] = 30
-        }
-        res = m[M]
     }
-    return res
+    return l[M-1]
 }
 #+END_SRC
 

@@ -1,0 +1,97 @@
+* Leetcode: Brace Expansion                                      :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     combination, backtracking
+:END:
+---------------------------------------------------------------------
+Brace Expansion
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/brace-expansion"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/letter-combinations-of-a-phone-number][Leetcode: Letter Combinations of a Phone Number]]
+- Tag: [[https://code.dennyzhang.com/tag/backtracking][#backtracking]], [[https://code.dennyzhang.com/tag/combination][#combination]]
+---------------------------------------------------------------------
+A string S represents a list of words.
+
+Each letter in the word has 1 or more options.  If there is one option, the letter is represented as is.  If there is more than one option, then curly braces delimit the options.  For example, "{a,b,c}" represents options ["a", "b", "c"].
+
+For example, "{a,b,c}d{e,f}" represents the list ["ade", "adf", "bde", "bdf", "cde", "cdf"].
+
+Return all words that can be formed in this manner, in lexicographical order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "{a,b}c{d,e}f"
+Output: ["acdf","acef","bcdf","bcef"]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "abcd"
+Output: ["abcd"]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= S.length <= 50
+- There are no nested curly brackets.
+- All characters inside a pair of consecutive opening and ending curly brackets are different.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/brace-expansion][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/brace-expansion/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/brace-expansion
+// Basic Ideas: backtracking
+//
+// Complexity:
+import ("sort"
+        "strings")
+func backtrack(combination string, l [][]string, pos int, res *[]string) {
+    if pos == len(l) {
+        *res = append(*res, combination)
+        return
+    }
+    for _, ch := range l[pos] {
+        backtrack(combination+string(ch), l, pos+1, res)
+    }
+}
+func expand(S string) []string {
+    l := [][]string{}
+    entry := ""
+    for _, ch := range S+"{" {
+        if ch == '{' || ch == '}' {
+            if len(entry) != 0 {
+                items := strings.Split(entry, ",")
+                sort.Slice(items, func(i, j int) bool {
+                    return items[i] < items[j]
+                })
+                l = append(l, items)
+            }
+            entry = ""
+        } else {
+            entry = entry+string(ch)
+        }
+    }
+
+    res := []string{}
+    backtrack("", l, 0, &res)
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

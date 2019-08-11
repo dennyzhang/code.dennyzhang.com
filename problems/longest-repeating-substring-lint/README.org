@@ -1,0 +1,62 @@
+* LintCode: Longest Repeating Substring                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     misc
+:END:
+---------------------------------------------------------------------
+Longest Repeating Substring
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-repeating-substring-lint"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+---------------------------------------------------------------------
+Given a string str, find the longest substring with no fewer than k repetitions and return the length. The substring can have overlapping parts, but cannot completely overlap.
+
+ Notice
+- 1 <= str.length <= 1000
+- 1 < k < str.length
+- We guarantee that the problem will certainly can be solved
+
+Example
+#+BEGIN_EXAMPLE
+Given str = "aaa", k = 2, return 2.
+
+Explanation:
+The longest subsequence with no fewer than k repetitions is "aa", and the length is 2.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given str = "aabcbcbcbc", k = 2, return 6.
+
+Explanation:
+Subsequences repeat no fewer than twice are "a", "bc", "bcbc" and "bcbcbc", and the longest is "bcbcbc", and the length is 6.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-repeating-substring-lint][code.dennyzhang.com]]
+
+Credits To: [[http://www.lintcode.com/en/problem/longest-repeating-substring/][lintcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+
+#+BEGIN_SRC python
+## Blog link: https://code.dennyzhang.com/longest-repeating-substring-lint
+class Solution:
+    """
+    @param str: The input string
+    @param k: The repeated times
+    @return: The answer
+    """
+    def longestRepeatingSubsequenceII(self, str, k):
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

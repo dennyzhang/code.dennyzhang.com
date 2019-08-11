@@ -1,0 +1,80 @@
+* Leetcode: Max Consecutive Ones III                             :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     slidingwindow
+:END:
+---------------------------------------------------------------------
+Max Consecutive Ones III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-consecutive-ones-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]
+---------------------------------------------------------------------
+Given an array A of 0s and 1s, we may change up to K values from 0 to 1.
+
+Return the length of the longest (contiguous) subarray that contains only 1s. 
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
+Output: 6
+Explanation: 
+[1,1,1,0,0,1,1,1,1,1,1]
+Bolded numbers were flipped from 0 to 1.  The longest subarray is underlined.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3
+Output: 10
+Explanation: 
+[0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]
+Bolded numbers were flipped from 0 to 1.  The longest subarray is underlined.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 20000
+- 0 <= K <= A.length
+- A[i] is 0 or 1 
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-consecutive-ones-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/max-consecutive-ones-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/max-consecutive-ones-iii
+// Basic Ideas: slidewindow
+//
+// Window: max 0 can't be more than K
+//
+// Think why the result is j-i, instead of j-i+1
+//
+// Complexity: Time O(n), Space O(1)
+func longestOnes(A []int, K int) int {
+    i, j := 0, 0
+    for ; j<len(A); j++ {
+        if A[j] == 0 { K-- }
+        if K<0 {
+            if A[i] == 0 { K++ }
+            i++
+        }
+    }
+    return j-i
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

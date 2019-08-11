@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, redo, codetemplate
+:type:     classic, backtracking, combination
 :END:
 ---------------------------------------------------------------------
 Letter Combinations of a Phone Number
@@ -11,15 +11,18 @@ Letter Combinations of a Phone Number
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/letter-combinations-of-a-phone-number"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/brace-expansion][Leetcode: Brace Expansion]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/backtracking][#backtracking]], [[https://code.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
 Given a digit string, return all possible letter combinations that the number could represent.
 
 A mapping of digit to letters (just like on the telephone buttons) is given below.
+[[image-blog:Leetcode: Letter Combinations of a Phone Number][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/letter-combinations-of-a-phone-number/phone.png]]
 #+BEGIN_EXAMPLE
 Input:Digit string "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 #+END_EXAMPLE
+
 Note:
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 
@@ -29,40 +32,32 @@ Credits To: [[https://leetcode.com/problems/letter-combinations-of-a-phone-numbe
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution:
 
-#+BEGIN_SRC python
-class Solution(object):
-    def letterCombinations(self, digits):
-        """
-        :type digits: str
-        :rtype: List[str]
-        """
-        ## Blog link: https://code.dennyzhang.com/letter-combinations-of-a-phone-number
-## Basic Ideas:
-        ## Complexity:
-        ## Assumptions: For "0" and "1", map to empty string
-        ## Sample Data:
-        ch_dict = {"1":"", "2":"abc", "3":"def", 
-                   "4":"ghi", "5":"jkl", "6":"mno",
-                   "7":"pqrs", "8":"tuv", "9":"wxyz", "0":""}
-        res = []
-        for digit in digits:
-            # print("digit:%s. res: %s" % (digit, res))
-            ch_list = ch_dict[digit]
-            if len(res) == 0:
-                for ch in ch_list:
-                    res.append(ch)
-            else:
-                item_list = []
-                for ch in ch_list:
-                    for item in res:   
-                        item = "%s%s" % (item, ch)
-                        item_list.append(item)
-                res = item_list
-        return res
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/letter-combinations-of-a-phone-number
+// Basic Ideas: backtracking
+//
+// Complexity: Time O(pow(3, N)*pow(4, M)), Space O(pow(3, N)*pow(4, M))
+func backtrack(combination string, next_digits string , m map[byte]string, res *[]string) {
+    if len(next_digits) == 0 {
+        *res = append(*res, combination)
+        return
+    }
+    for _, ch := range m[next_digits[0]] {
+        backtrack(combination+string(ch), next_digits[1:len(next_digits)], m, res)
+    }
+}
 
-# s = Solution()
-# print s.letterCombinations("23")
+func letterCombinations(digits string) []string {
+    res := []string{}
+    if len(digits) == 0 { return res }
+    m := map[byte]string{'2':"abc", '3':"def", '4':"ghi",
+                         '5':"jkl", '6':"mno", '7':"pqrs",
+                         '8':"tuv", '9':"wxyz"}
+    backtrack("", digits, m, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML
