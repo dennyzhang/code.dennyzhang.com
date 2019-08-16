@@ -12,6 +12,7 @@ Triangle Judgement
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 A pupil Tim gets homework to identify whether three line segments could possibly form a triangle.

@@ -1,27 +1,14 @@
-* [#A] Basic Things About Code Test                             :BLOG:Review:
+* Review: DFS Problems                                          :BLOG:Review:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog
+:type: dfs
 :END:
 ---------------------------------------------------------------------
-Basic things you should know, or be familiar with.
+Here we try to compile a list of inspiring DFS problems.
 ---------------------------------------------------------------------
-See all basic problems:
-[display-posts category="basic" posts_per_page="500" orderby="title"]
-
-[[color:#c7254e][Algorithms & Skills]]:
-1. [[https://code.dennyzhang.com/tag/twopointer/][#twopointer]]
-- [[https://code.dennyzhang.com/tag/binarysearch/][#binarysearch]]
-- [[https://code.dennyzhang.com/tag/hashmap/][#hashmap]]
-- [[https://code.dennyzhang.com/tag/bfs/][#bfs]]
-- [[https://code.dennyzhang.com/tag/dfs/][#dfs]]
-- [[https://code.dennyzhang.com/tag/recursive/][#recursive]]
-- [[https://code.dennyzhang.com/tag/backtracking/][#backtracking]]
-- [[https://code.dennyzhang.com/tag/slidingwindow/][#slidingwindow]]
-
-[[color:#c7254e][More Resources]]:
-- [[url-external:https://www.cs.usfca.edu/~galles/visualization/Algorithms.html][Data Structure Visualizations]]
+See all dfs problems: [[https://code.dennyzhang.com/tag/bfs/][#dfs]]
+[display-posts tag="dfs" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

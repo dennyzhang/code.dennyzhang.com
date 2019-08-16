@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination
+:type:     combination, classic
 :END:
 ---------------------------------------------------------------------
 Combination
@@ -11,7 +11,12 @@ Combination
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/combination-sum-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/combination-sum][Leetcode: Combination Sum]]
+- [[https://code.dennyzhang.com/combination-sum-ii][Leetcode: Combination Sum II]]
+- [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
+- [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 
@@ -32,14 +37,43 @@ A solution set is:
 ]
 #+END_EXAMPLE
 
-
-
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/combination-sum-ii][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/combination-sum-ii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/combination-sum-ii
+// Basic Idea: backtracking
+//
+// Complexity: Time ? Space ?
+import "sort"
+func dfs(combination []int, target int, candidates []int, pos int, res *[][]int) {
+    if (target == 0) {
+        combination2 := make([]int, len(combination))
+		copy(combination2, combination)
+        *res = append(*res, combination2)
+        return
+    }
+    for i:=pos; i<len(candidates) && target-candidates[i] >= 0; i++ {
+        if i>pos && candidates[i] == candidates[i-1] {
+            continue
+        }
+		combination = append(combination, candidates[i])
+        dfs(combination, target-candidates[i], candidates, i+1, res)
+        combination = combination[0:len(combination)-1]
+    }
+}
+
+func combinationSum2(candidates []int, target int) [][]int {
+    res := [][]int{}
+    sort.Ints(candidates)
+    dfs([]int{}, target, candidates, 0, &res)
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/combination-sum-ii

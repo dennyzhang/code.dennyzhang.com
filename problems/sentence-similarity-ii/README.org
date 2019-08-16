@@ -1,0 +1,121 @@
+* Leetcode: Sentence Similarity II                               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     unionfind
+:END:
+---------------------------------------------------------------------
+Sentence Similarity II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sentence-similarity-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-unionfind][Review: Union Find Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
+---------------------------------------------------------------------
+Given two sentences words1, words2 (each represented as an array of strings), and a list of similar word pairs pairs, determine if two sentences are similar.
+
+For example, words1 = ["great", "acting", "skills"] and words2 = ["fine", "drama", "talent"] are similar, if the similar word pairs are pairs = [["great", "good"], ["fine", "good"], ["acting","drama"], ["skills","talent"]].
+
+Note that the similarity relation is transitive. For example, if "great" and "good" are similar, and "fine" and "good" are similar, then "great" and "fine" are similar.
+
+Similarity is also symmetric. For example, "great" and "fine" being similar is the same as "fine" and "great" being similar.
+
+Also, a word is always similar with itself. For example, the sentences words1 = ["great"], words2 = ["great"], pairs = [] are similar, even though there are no specified similar word pairs.
+
+Finally, sentences can only be similar if they have the same number of words. So a sentence like words1 = ["great"] can never be similar to words2 = ["doubleplus","good"].
+
+Note:
+
+- The length of words1 and words2 will not exceed 1000.
+- The length of pairs will not exceed 2000.
+- The length of each pairs[i] will be 2.
+- The length of each words[i] and pairs[i][j] will be in the range [1, 20].
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sentence-similarity-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/sentence-similarity-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/sentence-similarity-ii
+// Basic Ideas: union find
+//   Apparently len(words1) = len(words2)
+//   The coresponding elements in words1 and words2 must be in the same group
+//
+//  Notice: elements in pairs may not be elements in words1 or words2
+//
+// Complexity: Time O(m), Space O(n)
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF{
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    // TODO: rank based merge
+    uf.parent[uf.find(y)] = uf.parent[uf.find(x)]
+}
+
+func (uf *UF) find(x int) int {
+    // path compression
+    l := []int{}
+    for uf.parent[x] != x {
+        l = append(l, x)
+        x = uf.parent[x]
+    }
+    for _, v := range l {
+        uf.parent[v] = x
+    }
+    return x
+}
+
+func areSentencesSimilarTwo(words1 []string, words2 []string, pairs [][]string) bool {
+    if len(words1) != len(words2) { return false }
+    m := map[string]int{}
+    node_index := 0
+    l := append(words1, words2...)
+    for _, pair := range pairs {
+        l = append(l, pair[0], pair[1])
+    }
+    for _, word := range l {
+        _, ok := m[word]
+        if !ok {
+            m[word] = node_index
+            node_index++
+        }
+    }
+    uf := constructor(node_index)
+    for _, pair := range pairs{
+        x, y := m[pair[0]], m[pair[1]]
+        uf.union(x, y)
+    }
+    // examine
+    for i, word1 := range words1 {
+        word2 := words2[i]
+        x, y := m[word1], m[word2]
+        if uf.find(x) != uf.find(y) {
+            return false
+        }
+    }
+    return true
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

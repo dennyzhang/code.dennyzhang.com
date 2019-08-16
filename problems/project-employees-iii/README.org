@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/project-employees-i][Leetcode: Project Employees I]]
 - [[https://code.dennyzhang.com/project-employees-ii][Leetcode: Project Employees II]]
 - [[https://code.dennyzhang.com/project-employees-iii][Leetcode: Project Employees III]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Table: Project
@@ -86,7 +87,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 # Blog link: https://code.dennyzhang.com/project-employees-iii
-# Write your MySQL query statement below
 select project_id, Project.employee_id
 from Project inner join Employee
 on Project.employee_id = Employee.employee_id

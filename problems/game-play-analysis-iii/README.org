@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/game-play-analysis-ii][Leetcode: Game Play Analysis II]]
 - [[https://code.dennyzhang.com/game-play-analysis-iii][Leetcode: Game Play Analysis III]]
 - [[https://code.dennyzhang.com/game-play-analysis-iv][Leetcode: Game Play Analysis IV]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Table: Activity
@@ -72,7 +73,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 # Blog link: https://code.dennyzhang.com/game-play-analysis-iii
-# Write your MySQL query statement below
 select t1.player_id, t1.event_date, sum(t2.games_played) as games_played_so_far
 from Activity as t1 inner join Activity as t2
 on t1.player_id = t2.player_id

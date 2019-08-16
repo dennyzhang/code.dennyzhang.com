@@ -12,6 +12,7 @@ Exchange Seats
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Mary is a teacher in a middle school and she has a table seat storing students' names and their corresponding seat ids.

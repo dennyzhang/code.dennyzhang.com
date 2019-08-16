@@ -17,7 +17,9 @@ Similar Problems:
 Given a digit string, return all possible letter combinations that the number could represent.
 
 A mapping of digit to letters (just like on the telephone buttons) is given below.
+
 [[image-blog:Leetcode: Letter Combinations of a Phone Number][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/letter-combinations-of-a-phone-number/phone.png]]
+
 #+BEGIN_EXAMPLE
 Input:Digit string "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
@@ -39,13 +41,13 @@ Leave me comments, if you have better ways to solve.
 // Basic Ideas: backtracking
 //
 // Complexity: Time O(pow(3, N)*pow(4, M)), Space O(pow(3, N)*pow(4, M))
-func backtrack(combination string, next_digits string , m map[byte]string, res *[]string) {
-    if len(next_digits) == 0 {
+func dfs(combination string, digits string, pos int, m map[byte]string, res *[]string) {
+    if pos == len(digits) {
         *res = append(*res, combination)
         return
     }
-    for _, ch := range m[next_digits[0]] {
-        backtrack(combination+string(ch), next_digits[1:len(next_digits)], m, res)
+    for _, ch := range m[digits[pos]] {
+        dfs(combination+string(ch), digits, pos+1, m, res)
     }
 }
 
@@ -55,7 +57,7 @@ func letterCombinations(digits string) []string {
     m := map[byte]string{'2':"abc", '3':"def", '4':"ghi",
                          '5':"jkl", '6':"mno", '7':"pqrs",
                          '8':"tuv", '9':"wxyz"}
-    backtrack("", digits, m, &res)
+    dfs("", digits, 0, m, &res)
     return res
 }
 #+END_SRC

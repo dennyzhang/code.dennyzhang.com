@@ -279,8 +279,7 @@ https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Progra
 * TODO YouTube: https://www.youtube.com/user/xxfflower/playlists   :noexport:
 * TODO https://en.wikipedia.org/wiki/Category:Optimization_algorithms_and_methods :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* codeforces; hdoj; Google的Kick start比赛                         :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO codeforces; hdoj; Google的Kick start比赛                    :noexport:
 * TODO classic: backtracking                                       :noexport:
 * TODO classic: sliding window                                     :noexport:
 * TODO tip: use array instead of hashmap                           :noexport:
@@ -291,3 +290,4 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] List posts with two labels                             :noexport:
 * TODO Add difficulty level of the problems                        :noexport:
+* TODO adsense doesn't show promptly: https://code.dennyzhang.com/palindrome-permutation-ii :noexport:

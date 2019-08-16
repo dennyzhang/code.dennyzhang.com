@@ -12,6 +12,7 @@ Sales Analysis II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/sales-analysis-i][Leetcode: Sales Analysis I]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: Product
@@ -84,7 +85,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 # Blog link: https://code.dennyzhang.com/sales-analysis-ii
-# Write your MySQL query statement below
 select distinct buyer_id
 from Sales inner join Product
 where Sales.product_id = Product.product_id

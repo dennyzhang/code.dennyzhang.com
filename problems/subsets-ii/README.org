@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, codetemplate, backtracking
+:type:     combination, codetemplate, backtracking, subset
 :END:
 ---------------------------------------------------------------------
 Subsets II
@@ -11,9 +11,10 @@ Subsets II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/subsets-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/subsets][Subsets]]
-- [[https://code.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- [[https://code.dennyzhang.com/letter-tile-possibilities][Leetcode: Letter Tile Possibilities]]
+- [[https://code.dennyzhang.com/letter-case-permutation][Leetcode: Letter Case Permutation]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/subset][#subset]], [[https://code.dennyzhang.com/tag/backtracking][#backtracking]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
 

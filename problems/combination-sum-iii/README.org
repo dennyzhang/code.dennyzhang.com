@@ -11,7 +11,10 @@ Combination Sum III
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/combination-sum-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/combination-sum-iv][Combination Sum IV]]
+- [[https://code.dennyzhang.com/combination-sum][Leetcode: Combination Sum]]
+- [[https://code.dennyzhang.com/combination-sum-ii][Leetcode: Combination Sum II]]
+- [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
+- [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
 ---------------------------------------------------------------------
@@ -44,15 +47,34 @@ Credits To: [[https://leetcode.com/problems/combination-sum-iii/description/][le
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/combination-sum-iii
-class Solution(object):
-    def combinationSum3(self, k, n):
-        """
-        :type k: int
-        :type n: int
-        :rtype: List[List[int]]
-        """
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/combination-sum-iii
+// Basic Ideas: Backtracking
+//
+// Complexity: Time ?, Space ?
+func dfs(combination []int, pos int, cnt int, target int, res *[][]int) {
+    if cnt == 0 && target == 0 {
+        combination2 := make([]int, len(combination))
+        copy(combination2, combination)
+        *res = append(*res, combination2)
+        return
+    }
+    if cnt == 0 || target <=0 {
+        return 
+    }
+    for i:=pos; i<9; i++ {
+        // add value of i+1
+        combination = append(combination, i+1)
+        dfs(combination, i+1, cnt-1, target-(i+1), res)
+        combination = combination[0:len(combination)-1]
+    }
+}
+
+func combinationSum3(k int, n int) [][]int {
+    res := [][]int{}
+    dfs([]int{}, 0, k, n, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -12,6 +12,7 @@ Article Views II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/article-views-i][Leetcode: Article Views I]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: Views
@@ -66,7 +67,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 ## Blog link: https://code.dennyzhang.com/article-views-ii
-# Write your MySQL query statement below
 select distinct viewer_id as id
 from Views
 group by viewer_id, view_date

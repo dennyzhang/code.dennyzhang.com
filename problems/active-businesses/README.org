@@ -11,6 +11,7 @@ Active Businesses
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/active-businesses"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: Events
@@ -65,7 +66,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 ## Blog link: https://code.dennyzhang.com/active-businesses
-# Write your MySQL query statement below
 select t1.business_id
 from (
     select business_id, event_type, avg(occurences) as avgo

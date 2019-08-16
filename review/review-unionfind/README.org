@@ -1,0 +1,60 @@
+* Review: Union Find Problems                                   :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: unionfind
+:END:
+---------------------------------------------------------------------
+Union find is helpful to build relationship among different sets
+
+Key operations: union, find, etc.
+---------------------------------------------------------------------
+*Code Skeleton*
+#+BEGIN_SRC go
+// 1. Get node count. And initialize array with parent as itself
+// 2. Union: Connect two nodes, which is two groups essentially
+// 3. Find: find node's parent by value
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    // TODO: rank based merge
+    uf.parent[uf.find(y)] = uf.find(x)
+}
+
+func (uf *UF) find(x int) int {
+    // TODO: path compression
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+#+END_SRC
+
+*Ideas*
+- What nodes are? What edges are? [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]]
+- Choose whether to initialize node list by counting node or a fixed array: [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]
+- Path compression: visit and change, thus the visit path can be shorten
+- Rank
+---------------------------------------------------------------------
+See all unionfind tree problems: [[https://code.dennyzhang.com/tag/unionfind/][#unionfind]]
+[display-posts tag="unionfind" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

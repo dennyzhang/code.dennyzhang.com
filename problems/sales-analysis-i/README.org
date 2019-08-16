@@ -12,6 +12,7 @@ Sales Analysis I
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/sales-analysis-ii][Leetcode: Sales Analysis II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: Product
@@ -86,7 +87,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 # Blog link: https://code.dennyzhang.com/sales-analysis-i
-# Write your MySQL query statement below
 select seller_id
 from Sales
 group by seller_id

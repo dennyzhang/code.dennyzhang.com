@@ -12,6 +12,7 @@ Consecutive Available Seats
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Several friends at a cinema ticket office would like to reserve consecutive available seats.

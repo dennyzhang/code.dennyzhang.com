@@ -12,6 +12,7 @@ Employees Earning More Than Their Managers
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.

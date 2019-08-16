@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/game-play-analysis-ii][Leetcode: Game Play Analysis II]]
 - [[https://code.dennyzhang.com/game-play-analysis-iii][Leetcode: Game Play Analysis III]]
 - [[https://code.dennyzhang.com/game-play-analysis-iv][Leetcode: Game Play Analysis IV]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: Activity
@@ -67,7 +68,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 # Blog link: https://code.dennyzhang.com/game-play-analysis-ii
-# Write your MySQL query statement below
 select distinct player_id, device_id
 from Activity
 where (player_id, event_date) in (

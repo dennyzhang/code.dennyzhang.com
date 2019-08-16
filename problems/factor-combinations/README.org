@@ -71,24 +71,42 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/factor-combinations
+// Basic Ideas: backtracking
+//
+//   Key points: How to avoid duplicates
+//
+// Complexity: Time ? Space ?
+import "math"
+func dfs(combination []int, start int, n int, res *[][]int) {
+    if (n == 1) && len(combination) > 1 {
+        combination2 := make([]int, len(combination))
+        copy(combination2, combination)
+        *res = append(*res, combination2)
+        return
+    }
 
+    for i:=start; i<=int(math.Sqrt(float64(n))); i++ {
+        if (n%i==0) {
+            combination = append(combination, i)
+            dfs(combination, i, n/i, res)
+            combination = combination[0:len(combination)-1]
+        }
+    }
+    // examine myself
+    if len(combination) != 0 {
+        combination = append(combination, n)
+        dfs(combination, n, 1, res)
+        combination = combination[0:len(combination)-1]
+    }
+}
+
+func getFactors(n int) [][]int {
+    res := [][]int{}
+    dfs([]int{}, 2, n, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

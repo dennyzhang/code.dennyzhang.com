@@ -7,6 +7,32 @@
 ---------------------------------------------------------------------
 Combinations and Permutations Problems
 ---------------------------------------------------------------------
+*Sample Problems:*
+- [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
+
+*Code Skeleton:*
+
+#+BEGIN_SRC go
+func dfs(combination []int, pos int, nums []int, res *[][]int) {
+     // No need to keep going
+     if (...) {
+       *res = append(*res, combination)
+     }
+
+     // Add nums[pos]
+     for i:=pos; i<len(nums); i++ {
+        // deep copy
+        combination2 := make([]int, len(combination))
+        copy(combination2, combination)
+        combination2 = append(combination2, nums[i])
+        dfs(combination2, i+1, nums, res)
+     }
+}
+
+// main function
+#+END_SRC
+
+---------------------------------------------------------------------
 See all combination: [[https://code.dennyzhang.com/tag/combination/][#combination]]
 [display-posts tag="combination" posts_per_page="100" orderby="title"]
 

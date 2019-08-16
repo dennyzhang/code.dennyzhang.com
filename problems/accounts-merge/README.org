@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     unionfind
 :END:
 ---------------------------------------------------------------------
 Accounts Merge
@@ -11,8 +11,7 @@ Accounts Merge
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/accounts-merge"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
 ---------------------------------------------------------------------
 Given a list accounts, each element accounts[i] is a list of strings, where the first element accounts[i][0] is a name, and the rest of the elements are emails representing emails of the account.
 
@@ -46,24 +45,89 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/accounts-merge
+// Basic Ideas: union find
+//
+// Complexity: Time ?, Space ?
+import "sort"
 
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent}
+}
+
+func (uf *UF) union(node1 int, node2 int) {
+    parent1 := uf.find(node1)
+    parent2 := uf.find(node2)
+    // connect parent1 with parent2
+    // TODO: rank
+    uf.parent[parent2] = parent1
+}
+
+func (uf *UF) find(node int) int {
+    res := node
+    for uf.parent[res] != res {
+        res = uf.parent[res]
+        // TODO: path compression
+    }
+    return res
+}
+
+func accountsMerge(accounts [][]string) [][]string {
+    uf := constructor(len(accounts))
+    email_node := map[string]int{}
+
+    // Build nodes
+    for i, account := range accounts {
+        for j:=1; j<len(account); j++ {
+            email := account[j]
+            v, ok := email_node[email]
+            if ok {
+                // Build connections
+                uf.union(v, i)
+            } else {
+                email_node[email] = i
+            }
+        }
+    }
+    res := [][]string{}
+    // Combine emails to its parent
+    res_map := make([]map[string]bool, len(accounts))
+    for i:=0; i<len(accounts); i++ {
+        res_map[i] = map[string]bool{}
+    }
+    for i, account := range accounts {
+        parent := uf.find(i)
+        for j, email := range account {
+            if j == 0 { continue }
+            res_map[parent][email] = true
+        }
+    }
+
+    // Get results
+    for group, email_set := range res_map {
+        if uf.parent[group] == group {
+            name := accounts[uf.parent[group]][0]
+            l := []string{}
+            for k, _ := range email_set {
+                l = append(l, k)
+            }
+            sort.Slice(l, func (i, j int) bool {
+                return l[i] < l[j]
+            })
+            res = append(res, append([]string{name}, l...))
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

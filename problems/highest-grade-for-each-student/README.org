@@ -11,6 +11,7 @@ Highest Grade For Each Student
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/highest-grade-for-each-student"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: Enrollments
@@ -65,7 +66,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 ## Blog link: https://code.dennyzhang.com/highest-grade-for-each-student
-# Write your MySQL query statement below
 select student_id, min(course_id) as course_id, grade
 from Enrollments
 where (student_id, grade) in 

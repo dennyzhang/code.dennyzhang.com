@@ -12,6 +12,7 @@ Find Cumulative Salary of an Employee
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 The Employee table holds the salary information in a year.

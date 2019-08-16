@@ -11,6 +11,7 @@ Actors and Directors Who Cooperated At Least Three Times
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/actors-and-directors-who-cooperated-at-least-three-times"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: ActorDirector
@@ -61,7 +62,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 # Blog link: https://code.dennyzhang.com/actors-and-directors-who-cooperated-at-least-three-times
-# Write your MySQL query statement below
 select actor_id, director_id
 from ActorDirector
 group by actor_id, director_id

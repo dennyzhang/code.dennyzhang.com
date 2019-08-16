@@ -31,6 +31,48 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/palindrome-permutation-ii
+// Basic Ideas: permutation without duplicates
+//
+// Complexity: Time ? Space ?
+func dfs(combination string, length int, m map[rune]int, central string, res *[]string) {
+    if len(combination) == length {
+        str := combination + central
+        for i:=len(combination)-1; i>=0; i-- {
+            str += string(combination[i])
+        }
+        *res = append(*res, str)
+        return
+    }
+
+    for i:=0; i<256; i++ {
+        ch := rune(i)
+        if m[ch] > 0 {
+            m[ch]--
+            dfs(combination+string(ch), length, m, central, res)
+            m[ch]++
+        }
+    }
+}
+
+func generatePalindromes(s string) []string {
+    m := map[rune]int{}
+    for _, ch := range s { m[ch]++ }
+    central := ""
+    length := 0
+    for key, val := range m {
+        if val%2 != 0 { 
+            if central != "" {
+                return []string{}
+            }
+            central = string(key)
+        }
+        m[key] = val/2
+        length += m[key]
+    }
+    res := []string{}
+    dfs("", length, m, central, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

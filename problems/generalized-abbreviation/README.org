@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, bfs
+:type:     combination, bfs, backtracking, dfs
 :END:
 ---------------------------------------------------------------------
 Generalized Abbreviation
@@ -12,7 +12,7 @@ Generalized Abbreviation
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/backtracking][#backtracking]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
 ---------------------------------------------------------------------
 Write a function to generate the generalized abbreviations of a word.
 
@@ -26,6 +26,37 @@ Credits To: [[https://leetcode.com/problems/generalized-abbreviation/description
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/generalized-abbreviation
+// Basic Ideas: backtracking
+//
+// Complexity: Time ?, Space ?
+import "strconv"
+func dfs(combination string, word string, pos int, res *[]string) {
+    if pos == len(word) {
+        *res = append(*res, combination)
+        return
+    }
+    for i:=pos; i<len(word); i++ {
+        if i == pos {
+            dfs(combination+string(word[i]), word, i+1, res)
+        }
+        ch := "a"
+        if combination != "" {
+            ch = string(combination[len(combination)-1])
+        }
+        if (ch >="a") && (ch <= "z") {
+            dfs(combination+strconv.Itoa(i-pos+1), word, i+1, res)
+        }
+    }
+}
+
+func generateAbbreviations(word string) []string {
+    res := []string{}
+    dfs("", word, 0, &res)
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/generalized-abbreviation

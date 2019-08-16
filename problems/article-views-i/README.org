@@ -12,6 +12,7 @@ Article Views I
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/article-views-ii][Leetcode: Article Views II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
 ---------------------------------------------------------------------
 Table: Views
@@ -65,7 +66,6 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC sql
 ## Blog link: https://code.dennyzhang.com/article-views-i
-# Write your MySQL query statement below
 select distinct author_id as id
 from Views
 where author_id = viewer_id

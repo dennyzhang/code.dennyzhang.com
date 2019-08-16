@@ -11,9 +11,13 @@ Combination Sum
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/combination-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/combination-sum][Leetcode: Combination Sum]]
+- [[https://code.dennyzhang.com/combination-sum-ii][Leetcode: Combination Sum II]]
+- [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
+- [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
 - [[https://code.dennyzhang.com/subset-with-target][LintCode: Subset With Target]]
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
-- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
+- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 
@@ -43,70 +47,33 @@ Leave me comments, if you have better ways to solve.
 // Basic Idea: backtracking
 //
 // Complexity: Time ? Space ?
-
-func backtrack(combination []int, presum int, target int, candidates []int, pos int, res *[][]int) {
+func dfs(combination []int, target int, candidates []int, pos int, res *[][]int) {
+    if (target == 0) {
+        combination2 := make([]int, len(combination))
+        copy(combination2, combination)
+        *res = append(*res, combination2)
+        return
+    }
     if pos == len(candidates) {
         return
     }
     v := candidates[pos]
-    for i:=0; presum+i*v<=target; i++ {
+    for i:=0; i*v<=target; i++ {
         l := make([]int, i)
         for j:=0; j<i; j++ {
             l[j] = v
         }
-        // don't change original value
-        combination2 := make([]int, len(combination))
-		copy(combination2, combination)
-		combination2 = append(combination2, l...)
-        if presum+i*v == target {
-            *res = append(*res, combination2)
-        } else {
-            backtrack(combination2, presum+i*v, target, candidates, pos+1, res)
-        }
+        combination = append(combination, l...)
+        dfs(combination, target-i*v, candidates, pos+1, res)
+        combination = combination[0:len(combination)-i]
     }
 }
 
 func combinationSum(candidates []int, target int) [][]int {
     res := [][]int{}
-    backtrack([]int{}, 0, target, candidates, 0, &res)
+    dfs([]int{}, target, candidates, 0, &res)
     return res
 }
-#+END_SRC
-
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/combination-sum
-class Solution(object):
-    def combinationSum(self, candidates, target):
-        """
-        :type candidates: List[int]
-        :type target: int
-        :rtype: List[List[int]]
-        """
-        ## Idea:
-        ## Complexity:
-        ## 2 3 6 7, t=7
-        ## v
-        ## t/v, t/v - 1, t/v - 2, ...
-        # TODO: improve this
-        candidates = sorted(candidates)
-        length = len(candidates)
-        if length == 0:
-            return []
-        ret = []
-        value = candidates[0]
-        # print("target: %d, value: %d" % (target, value))
-        for i in range(0, target/value+1):
-            # print("here1 target: %d, value: %d, i: %d" % (target, value, i))
-            if (target > i*value) and (length >= 2):
-                # print("here2 target: %d, value: %d, i: %d" % (target, value, i))
-                l1 = [value]*i
-                l2 = self.combinationSum(candidates[1:], target - i*value)
-                for item2 in l2:
-                    ret.append(l1 + item2)
-            else:
-                if target == i*value:
-                    ret.append([value]*i)
-        return ret
 #+END_SRC
 
 #+BEGIN_HTML

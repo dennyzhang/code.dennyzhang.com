@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     unionfind
 :END:
 ---------------------------------------------------------------------
 Satisfiability of Equality Equations
@@ -11,8 +11,8 @@ Satisfiability of Equality Equations
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/satisfiability-of-equality-equations"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/review-unionfind][Review: Union Find Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
 ---------------------------------------------------------------------
 Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: "a==b" or "a!=b".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.
 
@@ -66,24 +66,66 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/satisfiability-of-equality-equations
+// Basic Ideas: union find
+//
+//  Construct union find
+//  Build relationship for X==Y
+//  Examine relationship for X!=Y
+//
+//  Notice: 
+//   Nodes are lowercase letters.
+//   Array of 26 elements are good enough, no need for hashmap.
+//
+// Complexity: Time O(m) Space O(n)
+// m = edge count, n = node count
+type UF struct {
+    parent []int
+}
 
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    // TODO: rank based merge
+    uf.parent[uf.find(y)] = uf.find(x)
+}
+
+func (uf *UF) find(x int) int {
+    // TODO: path compression
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func equationsPossible(equations []string) bool {
+    uf := constructor(26)
+    
+    // Build x==y relationsip
+    for _, eq := range equations {
+        if eq[1] == '=' {
+            x, y := int(eq[0]-'a'), int(eq[3]-'a')
+            uf.union(x, y)
+        }
+    }
+    // Examine x!=y relationship
+    for _, eq := range equations {
+        if eq[1] == '!' {
+            x, y := int(eq[0]-'a'), int(eq[3]-'a')
+            if uf.find(x) == uf.find(y) {
+                return false
+            }
+        }
+    }
+    return true
+}
 #+END_SRC
 
 #+BEGIN_HTML
