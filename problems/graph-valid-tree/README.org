@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap, bfs, classic
+:type:     hashmap, bfs, classic, unionfind
 :END:
 ---------------------------------------------------------------------
 Graph Valid Tree
@@ -11,7 +11,7 @@ Graph Valid Tree
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/graph-valid-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
 ---------------------------------------------------------------------
 Given n nodes labeled from 0 to n-1 and a list of undirected edges (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
 
@@ -86,6 +86,50 @@ func validTree(n int, edges [][]int) bool {
         queue = items
     }
     return true
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/graph-valid-tree
+// Basic Ideas: union find
+//  edge count + 1 = node count
+//  All nodes are connected
+// Complexity: Time O(m), Space O(m)
+var totalcnt int
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF{
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    p1, p2 := uf.find(y), uf.find(x)
+    if p1!=p2 { totalcnt-- }
+    uf.parent[p1] = p2
+}
+
+func (uf *UF) find(x int) int {
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func validTree(n int, edges [][]int) bool {
+    if len(edges)+1 != n { return false }
+    totalcnt = n
+    uf := constructor(n)
+    for _, edge := range edges {
+        n1, n2 := edge[0], edge[1]
+        uf.union(n1, n2)
+    }
+    return totalcnt==1
 }
 #+END_SRC
 

@@ -9,6 +9,39 @@ heap is a specialized tree-based data structure. Heap is useful to implement a p
 
 Key operations: find-min, get-min, insert, etc.
 ---------------------------------------------------------------------
+*Code Skeleton*
+#+BEGIN_SRC go
+type MyNode struct {
+    val int
+    cnt int
+}
+
+// min heap
+type IntHeap []MyNode
+func (h IntHeap) Len() int           { return len(h) }
+func (h IntHeap) Less(i, j int) bool { return h[i].cnt < h[j].cnt }
+func (h IntHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+
+func (h *IntHeap) Push(x interface{}) {
+        // Push and Pop use pointer receivers because they modify the slice's length,
+        // not just its contents.
+        *h = append(*h, x.(MyNode))
+}
+
+func (h *IntHeap) Pop() interface{} {
+        old := *h
+        n := len(old)
+        x := old[n-1]
+        *h = old[0 : n-1]
+        return x
+}
+#+END_SRC
+
+*Ideas*
+| Name                  | Example                    |
+|-----------------------+----------------------------|
+| Min heap or max heap? | Check the root of the heap |
+
 Binary heaps:
 1. It may be represented by using an array, which is space-efficient.
 - The children of the node at position n would be at positions 2n + 1 and 2n + 2 in a zero-based array.

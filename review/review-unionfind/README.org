@@ -40,11 +40,38 @@ func (uf *UF) find(x int) int {
 }
 #+END_SRC
 
+*Basic Abstractions*
+| Name                     | Summary                                           |
+|--------------------------+---------------------------------------------------|
+| Entities                 | Set of objects                                    |
+| Union command            | Connect two objects or two groups                 |
+| Find query               | Is there a path connecting one object to another? |
+| Disjoint sets of objects | Subsets of connected grid points                  |
+
+*Scenarios*
+Union-find applications involve manipulating objects of all types:
+- Computers in a network
+- Web pages on the Internet
+- Transistors in a computer chip
+- Variable name aliases
+- Pixels in a digital photo
+- Metallic sites in a composite system
+
 *Ideas*
-- What nodes are? What edges are? [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]]
-- Choose whether to initialize node list by counting node or a fixed array: [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]
-- Path compression: visit and change, thus the visit path can be shorten
-- Rank
+| Name                                        | Example                                                 |
+|---------------------------------------------+---------------------------------------------------------|
+| What nodes are? What edges are?             | [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]]                        |
+| Count node then initialize VS a fixed array | [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]          |
+| Maintain a counter for group count          | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                              |
+| Path compression to reduce levels           | Keeps tree almost completely flat, and avoid tall trees |
+| Rank based merge                            | Balance by linking small tree below large one           |
+
+*Questions*
+| Name                                    | Summary |
+|-----------------------------------------+---------|
+| How efficient unionfind vs DFS/BFS?     |         |
+| Time and space complexity of unionfind? |         |
+
 ---------------------------------------------------------------------
 See all unionfind tree problems: [[https://code.dennyzhang.com/tag/unionfind/][#unionfind]]
 [display-posts tag="unionfind" posts_per_page="100" orderby="title"]

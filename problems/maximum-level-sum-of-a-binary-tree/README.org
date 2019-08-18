@@ -1,0 +1,124 @@
+* Leetcode: Maximum Level Sum of a Binary Tree                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, bfs, dfs
+:END:
+---------------------------------------------------------------------
+Maximum Level Sum of a Binary Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-level-sum-of-a-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
+---------------------------------------------------------------------
+Given the root of a binary tree, the level of its root is 1, the level of its children is 2, and so on.
+
+Return the smallest level X such that the sum of all the values of nodes at level X is maximal.
+
+[[image-blog:Maximum Level Sum of a Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/maximum-level-sum-of-a-binary-tree/tree.jpg]]
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,7,0,7,-8,null,null]
+Output: 2
+Explanation: 
+Level 1 sum = 1.
+Level 2 sum = 7 + 0 = 7.
+Level 3 sum = 7 + -8 = -1.
+So we return the level with the maximum sum which is level 2.
+#+END_EXAMPLE
+ 
+Note:
+
+1. The number of nodes in the given tree is between 1 and 10^4.
+- -10^5 <= node.val <= 10^5
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-level-sum-of-a-binary-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/maximum-level-sum-of-a-binary-tree
+// Basic Ideas: bfs
+//
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func maxLevelSum(root *TreeNode) int {
+    level, maxSum, res := 1, -1<<31, 0
+
+    queue := []*TreeNode{root}
+    for len(queue) != 0 {
+        l := []*TreeNode{}
+        sum := 0
+        for _, node := range queue {
+            sum += node.Val
+            if node.Left != nil {
+                l = append(l, node.Left)
+            }
+            if node.Right != nil {
+                l = append(l, node.Right)
+            }
+        }
+        if sum > maxSum {
+            maxSum, res = sum, level
+        }
+        queue = l
+        level++
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/maximum-level-sum-of-a-binary-tree
+// Basic Ideas: dfs
+//
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+var m map[int]int
+func dfs(root *TreeNode, level int) {
+    if root == nil { return }
+    m[level] += root.Val
+    dfs(root.Left, level+1)
+    dfs(root.Right, level+1)
+}
+func maxLevelSum(root *TreeNode) int {
+    m = map[int]int{}
+    dfs(root, 1)
+    res, max := 0, -1<<31
+    for k, v := range m{
+        if v > max {
+            max = v
+            res = k
+        }
+    }
+    return res
+}
+#+END_SRC
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

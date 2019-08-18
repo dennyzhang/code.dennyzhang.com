@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch, classic
+:type:     heap, topk
 :END:
 ---------------------------------------------------------------------
 Kth Smallest Element in a Sorted Matrix
@@ -12,7 +12,8 @@ Kth Smallest Element in a Sorted Matrix
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
-- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
 ---------------------------------------------------------------------
 Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.
 
@@ -40,9 +41,42 @@ Credits To: [[https://leetcode.com/problems/kth-smallest-element-in-a-sorted-mat
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix
+// Basic Ideas: max heap
+//
+// Complexity: Time O(n*n*log(k)), Space O(k)
+import "container/heap"
 
+type IntHeap []int
+
+func (h IntHeap) Len() int { return len(h) }
+func (h IntHeap) Less(i, j int) bool { return h[i]>h[j] }
+func (h IntHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
+func (h *IntHeap) Pop()interface{} {
+    old := *h
+    size := len(old)
+    res := old[size-1]
+    *h = old[0:size-1]
+    return res
+}
+func (h *IntHeap) Push(x interface{}) {
+    *h = append(*h, x.(int))
+}
+
+func kthSmallest(matrix [][]int, k int) int {
+    h := &IntHeap{}
+    heap.Init(h)
+    for _, row := range matrix {
+        for _, val := range row {
+            heap.Push(h, val)
+            if h.Len() > k {
+                heap.Pop(h)
+            }
+        }
+    }
+    return heap.Pop(h).(int)
+}
 #+END_SRC
 
 #+BEGIN_HTML

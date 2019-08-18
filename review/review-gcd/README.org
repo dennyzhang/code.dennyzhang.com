@@ -1,4 +1,4 @@
-* Review: gcd Problems                                          :BLOG:Review:
+* Review: GCD Problems                                          :BLOG:Review:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

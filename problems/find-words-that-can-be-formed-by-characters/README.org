@@ -1,0 +1,84 @@
+* Leetcode: Find Words That Can Be Formed by Characters          :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+Find Words That Can Be Formed by Characters
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-words-that-can-be-formed-by-characters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+---------------------------------------------------------------------
+You are given an array of strings words and a string chars.
+
+A string is good if it can be formed by characters from chars (each character can only be used once).
+
+Return the sum of lengths of all good strings in words.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: words = ["cat","bt","hat","tree"], chars = "atach"
+Output: 6
+Explanation: 
+The strings that can be formed are "cat" and "hat" so the answer is 3 + 3 = 6.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: words = ["hello","world","leetcode"], chars = "welldonehoneyr"
+Output: 10
+Explanation: 
+The strings that can be formed are "hello" and "world" so the answer is 5 + 5 = 10.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= words.length <= 1000
+- 1 <= words[i].length, chars.length <= 100
+- All strings contain lowercase English letters only.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-words-that-can-be-formed-by-characters][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/find-words-that-can-be-formed-by-characters
+// Basic Ideas: count with array of a fixed size
+//
+// Complexity: Time O(n+m), Space O(1)
+func countCharacters(words []string, chars string) int {
+    l := make([]int, 26)  
+    for _, ch := range chars {
+        l[ch-'a']++
+    }
+    res := 0
+    for _, word := range words {
+        l2 := make([]int, 26)
+        for i, ch := range word {
+            index := ch-'a'
+            l2[index]++
+            if l2[index]>l[index] { break }
+            if i == len(word)-1 {
+                res += len(word)
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

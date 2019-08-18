@@ -1,0 +1,110 @@
+* Leetcode: Friend Circles                                       :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     unionfind
+:END:
+---------------------------------------------------------------------
+Friend Circles
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/friend-circles"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-unionfind][Review: Union Find Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
+---------------------------------------------------------------------
+There are N students in a class. Some of them are friends, while some are not. Their friendship is transitive in nature. For example, if A is a direct friend of B, and B is a direct friend of C, then A is an indirect friend of C. And we defined a friend circle is a group of students who are direct or indirect friends.
+
+Given a N*N matrix M representing the friend relationship between students in the class. If M[i][j] = 1, then the ith and jth students are direct friends with each other, otherwise not. And you have to output the total number of friend circles among all the students.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+[[1,1,0],
+ [1,1,0],
+ [0,0,1]]
+Output: 2
+Explanation:The 0th and 1st students are direct friends, so they are in a friend circle. 
+The 2nd student himself is in a friend circle. So return 2.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+[[1,1,0],
+ [1,1,1],
+ [0,1,1]]
+Output: 1
+Explanation:The 0th and 1st students are direct friends, the 1st and 2nd students are direct friends, 
+so the 0th and 2nd students are indirect friends. All of them are in the same friend circle, so return 1.
+#+END_EXAMPLE
+
+Note:
+1. N is in range [1,200].
+- M[i][i] = 1 for all students.
+- If M[i][j] = 1, then M[j][i] = 1.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/friend-circles][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/friend-circles/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/friend-circles
+// Basic Ideas: union find
+//
+// Complexity: Time ? Space ?
+var groupCnt int
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    p, q := uf.find(x), uf.find(y)
+    if p!=q {
+        groupCnt--
+        uf.parent[q] = p
+    }
+}
+
+func (uf *UF) find(x int) int {
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func findCircleNum(M [][]int) int {
+    n := len(M)
+    groupCnt = n
+    uf := constructor(n)
+    for i, row := range M {
+        for j, v := range row {
+            if v == 1 {
+                uf.union(i, j)
+            }
+        }
+    }
+    return groupCnt
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

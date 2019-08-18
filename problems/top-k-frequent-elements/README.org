@@ -11,8 +11,9 @@ Top K Frequent Elements
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/top-k-frequent-elements"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]], [[https://code.dennyzhang.com/tag/heap][Tag: #heap]]
-- Tag: [[https://code.dennyzhang.com/tag/topk][topk]]
+- [[https://code.dennyzhang.com/find-k-pairs-with-smallest-sums][Leetcode: Find K Pairs with Smallest Sums]]
+- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the k most frequent elements.
 
@@ -29,6 +30,57 @@ Credits To: [[https://leetcode.com/problems/top-k-frequent-elements/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/top-k-frequent-elements
+// Basic Ideas: heap
+//
+// Complexity: Time O(n*log(k)) Space O(n)
+import "container/heap"
+
+type MyNode struct {
+    val int
+    cnt int
+}
+
+// min heap
+type IntHeap []MyNode
+func (h IntHeap) Len() int           { return len(h) }
+func (h IntHeap) Less(i, j int) bool { return h[i].cnt < h[j].cnt }
+func (h IntHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+
+func (h *IntHeap) Push(x interface{}) {
+	// Push and Pop use pointer receivers because they modify the slice's length,
+	// not just its contents.
+	*h = append(*h, x.(MyNode))
+}
+
+func (h *IntHeap) Pop() interface{} {
+	old := *h
+	n := len(old)
+	res := old[n-1]
+	*h = old[0 : n-1]
+	return res
+}
+
+func topKFrequent(nums []int, k int) []int {
+    m := map[int]int{}
+    for _, num := range nums{ m[num]++ }
+    h := &IntHeap{}
+    heap.Init(h)
+    for key, val := range m {
+        heap.Push(h, MyNode{val:key, cnt:val})
+        if h.Len() > k { heap.Pop(h) }
+    }
+    res := make([]int, k)
+    i:=k-1
+    for h.Len() != 0 {
+        item := heap.Pop(h).(MyNode)
+        res[i] = item.val
+        i--
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/top-k-frequent-elements

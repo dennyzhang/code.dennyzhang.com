@@ -1,0 +1,101 @@
+* Leetcode: Number of Connected Components in an Undirected Graph :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     unionfind, classic
+:END:
+---------------------------------------------------------------------
+Number of Connected Components in an Undirected Graph
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-connected-components-in-an-undirected-graph"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-unionfind][Review: Union Find Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+---------------------------------------------------------------------
+Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to find the number of connected components in an undirected graph.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 5 and edges = [[0, 1], [1, 2], [3, 4]]
+
+     0          3
+     |          |
+     1 --- 2    4 
+
+Output: 2
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 5 and edges = [[0, 1], [1, 2], [2, 3], [3, 4]]
+
+     0           4
+     |           |
+     1 --- 2 --- 3
+
+Output:  1
+#+END_EXAMPLE
+
+Note:
+You can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-connected-components-in-an-undirected-graph][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/number-of-connected-components-in-an-undirected-graph
+// Basic Ideas: union find
+//
+// Complexity: Time O(m), Space O(n)
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF{
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int){
+    // TODO: rank based merge
+    uf.parent[uf.find(y)] = uf.find(x)
+}
+
+func (uf *UF) find(x int) int {
+    // TODO: path compression
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func countComponents(n int, edges [][]int) int {
+    uf := constructor(n)
+    for _, edge := range edges {
+        uf.union(edge[0], edge[1])
+    }
+    m := map[int]bool{}
+    for i:=0; i<n; i++ {
+        m[uf.find(i)] = true
+    }
+    return len(m)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
