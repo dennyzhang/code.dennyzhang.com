@@ -51,30 +51,21 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/unique-email-addresses
 // Basic Ideas: hashmap
-// Complexity: Time O(n), Space O(n)
+//
+// Complexity: Time O(n) Space O(n)
+import "strings"
 func numUniqueEmails(emails []string) int {
     m := map[string]bool{}
     for _, email := range emails {
-        l := []rune{}
-        should_skip, local_name := false, true
-        for _, ch := range email {
-            if ch == '.' && local_name { 
-                continue
-            }
-            if ch == '+' {
-                should_skip = true
-                continue
-            }
-            if ch != '@' && should_skip {
-                continue
-            } else {
-                l = append(l, ch)
-                if ch == '@' {
-                    should_skip, local_name = false, false
-                }
-            }
+        l := strings.Split(email, "@")
+        name, domain := l[0], l[1]
+        var sb strings.Builder
+        for _, ch := range name {
+            if ch == '.' { continue }
+            if ch == '+' { break }
+            sb.WriteRune(ch)
         }
-        m[string(l)] = true
+        m[sb.String()+"@"+domain] = true
     }
     return len(m)
 }

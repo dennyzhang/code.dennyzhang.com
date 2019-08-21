@@ -14,6 +14,13 @@ But you wouldn't believe how incredibly useful it would be.
 - What range you would choose to examine?
 - How you can reduce the dataset into half?
 
+*Ideas*
+| Name       | Example                                  |
+|------------+------------------------------------------|
+| Break case | =for left+1<right=: the same or adjacent |
+| Break case | =for left<right=                         |
+| Break case | for left<=right                          |
+
 [[color:#c7254e][Where Left/Right Would Be After Search?]]
 l = [2, 3, 8, 12, 20, 35], target = 4
 
@@ -23,48 +30,13 @@ l = [2, 3, 8, 12, 20, 35], target = 4
 - Too big. Target = 36. [right(len-1), left(len)]
 
 [[color:#c7254e][Scenarios]]:
-1. Scenario: find whether target in the range. [[https://code.dennyzhang.com/guess-number-higher-or-lower][Guess Number Higher or Lower]]
-#+BEGIN_SRC python
-class Solution(object):
-    def guessNumber(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        left, right = 1, n
-        while left <= right:
-            mid = int(left + (right-left)/2)
-            v = guess(mid)
-            if v == 0:
-                return mid
-            elif v == 1:
-                left = mid + 1
-            else:
-                right = mid - 1
-        return None
-#+END_SRC
 
-- Scenario: find the first target. [[https://code.dennyzhang.com/first-bad-version][First Bad Version]]
-#+BEGIN_SRC python
-class Solution(object):
-    def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        left, right = 1, n
-        while left < right:
-            mid = int(left + (right-left)/2)
-            if isBadVersion(mid):
-                right = mid
-            else:
-                left = mid + 1
-
-        # left == right
-        return left if isBadVersion(left) else None
-#+END_SRC
-- Scenario: find the first target
-- Scenario: Find smallest letter greater than target. [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][Find Smallest Letter Greater Than Target]]
+| Name                                     | Example                                  |
+|------------------------------------------+------------------------------------------|
+| Find whether target in the range         | [[https://code.dennyzhang.com/guess-number-higher-or-lower][Guess Number Higher or Lower]]             |
+| Find the first target                    | [[https://code.dennyzhang.com/first-bad-version][First Bad Version]]                        |
+| Find smallest letter greater than target | [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][Find Smallest Letter Greater Than Target]] |
+| Search insert position                   |                                          |
 
 The most impressive problems to me:
 - [[https://code.dennyzhang.com/find-right-interval][Find Right Interval]]

@@ -1,0 +1,136 @@
+* Leetcode: Number of Dice Rolls With Target Sum                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     knapsack
+:END:
+---------------------------------------------------------------------
+Number of Dice Rolls With Target Sum
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-dice-rolls-with-target-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/knapsack][#knapsack]]
+---------------------------------------------------------------------
+You have d dice, and each die has f faces numbered 1, 2, ..., f.
+
+Return the number of possible ways (out of fd total ways) modulo 10^9 + 7 to roll the dice so the sum of the face up numbers equals target.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: d = 1, f = 6, target = 3
+Output: 1
+Explanation: 
+You throw one die with 6 faces.  There is only one way to get a sum of 3.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: d = 2, f = 6, target = 7
+Output: 6
+Explanation: 
+You throw two dice, each with 6 faces.  There are 6 ways to get a sum of 7:
+1+6, 2+5, 3+4, 4+3, 5+2, 6+1.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: d = 2, f = 5, target = 10
+Output: 1
+Explanation: 
+You throw two dice, each with 5 faces.  There is only one way to get a sum of 10: 5+5.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: d = 1, f = 2, target = 3
+Output: 0
+Explanation: 
+You throw one die with 2 faces.  There is no way to get a sum of 3.
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: d = 30, f = 30, target = 500
+Output: 222616187
+Explanation: 
+The answer must be returned modulo 10^9 + 7.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= d, f <= 30
+- 1 <= target <= 1000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-dice-rolls-with-target-sum][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/number-of-dice-rolls-with-target-sum
+// Basic Idea: knapsack
+// Complexity: Time O(d*f*target), Space O(target*d)
+func numRollsToTarget(d int, f int, target int) int {
+    if target < d || target > f*d {
+        return 0
+    }
+	mod := 1000000007
+    l := make([][]int, d)
+    for i, _ := range l {
+        l[i] = make([]int, target+1)
+    }
+    for i:=1; i<=target && i<=f; i++ {
+        l[0][i] = 1
+    }
+    // add dices one by one
+    for i:=1; i<d; i++ {
+        // add face of one dice one by one
+        for j:=1; j<=f; j++ {
+            for k:=1; j+k<=target; k++ {
+                // To get j+k: current j add previous k                 
+                l[i][j+k] = (l[i][j+k]+l[i-1][k])%mod
+            }
+        }
+    }
+    return l[d-1][target]
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/number-of-dice-rolls-with-target-sum
+// Basic Idea: knapsack
+// Complexity: Time O(d*f*target), Space O(target)
+import "math"
+func numRollsToTarget(d int, f int, target int) int {
+    mod := int(math.Pow(10, 9))+7
+    l := make([]int, target+1)
+    for i:=1; i<=target && i<=f; i++ {
+        l[i] = 1
+    }
+    // add dices one by one
+    for i:=1; i<d; i++ {
+        l2 := make([]int, len(l))
+        // add face of one dice one by one
+        for j:=1; j<=f; j++ {
+            for k:=1; j+k<=target; k++ {
+                l2[j+k]=(l2[j+k]+l[k])%mod
+            }
+        }
+        copy(l, l2)
+    }
+    return l[target]
+}
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

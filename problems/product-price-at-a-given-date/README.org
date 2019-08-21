@@ -1,0 +1,85 @@
+* Leetcode: Product Price at a Given Date                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Product Price at a Given Date
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/product-price-at-a-given-date"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Table: Products
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| product_id    | int     |
+| new_price     | int     |
+| change_date   | date    |
++---------------+---------+
+(product_id, change_date) is the primary key of this table.
+Each row of this table indicates that the price of some product was changed to a new price at some date.
+#+END_EXAMPLE 
+
+Write an SQL query to find the prices of all products on 2019-08-16. Assume the price of all products before any change is 10.
+
+The query result format is in the following example:
+#+BEGIN_EXAMPLE
+Products table:
++------------+-----------+-------------+
+| product_id | new_price | change_date |
++------------+-----------+-------------+
+| 1          | 20        | 2019-08-14  |
+| 2          | 50        | 2019-08-14  |
+| 1          | 30        | 2019-08-15  |
+| 1          | 35        | 2019-08-16  |
+| 2          | 65        | 2019-08-17  |
+| 3          | 20        | 2019-08-18  |
++------------+-----------+-------------+
+
+Result table:
++------------+-------+
+| product_id | price |
++------------+-------+
+| 2          | 50    |
+| 1          | 35    |
+| 3          | 10    |
++------------+-------+
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/product-price-at-a-given-date][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/product-price-at-a-given-date/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC sql
+# Blog link: https://code.dennyzhang.com/product-price-at-a-given-date
+select t1.product_id as product_id, if(isnull(t2.price), 10, t2.price) as price
+from
+  (select distinct product_id
+  from Products) as t1 left join
+  (select product_id, new_price as price
+   from Products
+   where (product_id, change_date) in
+      (select product_id, max(change_date)
+      from Products
+      where change_date <='2019-08-16'
+      group by product_id)) as t2
+on t1.product_id = t2.product_id
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

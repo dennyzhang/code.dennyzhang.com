@@ -1,0 +1,129 @@
+* Leetcode: All Paths from Source Lead to Destination            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     classic, graph, bfs, dfs
+:END:
+---------------------------------------------------------------------
+All Paths from Source Lead to Destination
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/all-paths-from-source-lead-to-destination"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
+---------------------------------------------------------------------
+Given the edges of a directed graph, and two nodes source and destination of this graph, determine whether or not all paths starting from source eventually end at destination, that is:
+
+- At least one path exists from the source node to the destination node
+- If a path exists from the source node to a node with no outgoing edges, then that node is equal to destination.
+- The number of possible paths from source to destination is a finite number.
+
+Return true if and only if all roads from source lead to destination.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 3, edges = [[0,1],[0,2]], source = 0, destination = 2
+Output: false
+Explanation: It is possible to reach and get stuck on both node 1 and node 2.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 4, edges = [[0,1],[0,3],[1,2],[2,1]], source = 0, destination = 3
+Output: false
+Explanation: We have two possibilities: to end at node 3, or to loop over node 1 and node 2 indefinitely.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 4, edges = [[0,1],[0,2],[1,3],[2,3]], source = 0, destination = 3
+Output: true
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: n = 3, edges = [[0,1],[1,1],[1,2]], source = 0, destination = 2
+Output: false
+Explanation: All paths from the source node end at the destination node, but there are an infinite number of paths, such as 0-1-2, 0-1-1-2, 0-1-1-1-2, 0-1-1-1-1-2, and so on.
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: n = 2, edges = [[0,1],[1,1]], source = 0, destination = 1
+Output: false
+Explanation: There is infinite self-loop at destination node.
+#+END_EXAMPLE
+ 
+Note:
+
+1. The given graph may have self loops and parallel edges.
+- The number of nodes n in the graph is between 1 and 10000
+- The number of edges in the graph is between 0 and 10000
+- 0 <= edges.length <= 10000
+- edges[i].length == 2
+- 0 <= source <= n - 1
+- 0 <= destination <= n - 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/all-paths-from-source-lead-to-destination][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/all-paths-from-source-lead-to-destination/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/all-paths-from-source-lead-to-destination
+// Basic Ideas: dfs
+//
+//  Notice:
+//  - There would be a circle
+//  - Visiting one node twice doesn't gurantee a circle
+//
+//  No need to examine the same edge twice
+//
+// Complexity: Time O(n*n), Space O(n)
+func dfs(src int, dst int, m []map[int]bool, visited []bool, canreach []bool) {
+    if src == dst {
+        canreach[src] = true
+        return
+    }
+    // avoid re-examine the same node
+    if visited[src] { 
+		return 
+	}
+    visited[src] = true
+    for node, _ := range m[src] {
+        dfs(node, dst, m, visited, canreach)
+        if !canreach[node] {
+            canreach[src] = false
+            return
+        } else {
+            canreach[src] = true
+        }
+    }
+}
+
+func leadsToDestination(n int, edges [][]int, source int, destination int) bool {
+    visited := make([]bool, n)
+    canreach := make([]bool, n)
+    m := make([]map[int]bool, n)
+    for i, _ := range m { m[i] = map[int]bool{} }
+    for _, edge := range edges {
+        n1, n2 := edge[0], edge[1]
+        m[n1][n2] = true
+    }
+    if len(m[destination]) != 0 { return false }
+    dfs(source, destination, m, visited, canreach)
+    return canreach[source]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -95,21 +95,24 @@ func maxLevelSum(root *TreeNode) int {
  *     Right *TreeNode
  * }
  */
-var m map[int]int
-func dfs(root *TreeNode, level int) {
+func dfs(root *TreeNode, level int, l *[]int) {
     if root == nil { return }
-    m[level] += root.Val
-    dfs(root.Left, level+1)
-    dfs(root.Right, level+1)
+    if level == len(*l)+1 {
+        *l = append(*l, 0)
+    }
+    (*l)[level-1] += root.Val
+    dfs(root.Left, level+1, l)
+    dfs(root.Right, level+1, l)
 }
+
 func maxLevelSum(root *TreeNode) int {
-    m = map[int]int{}
-    dfs(root, 1)
+    l := []int{0}
+    dfs(root, 1, &l)
     res, max := 0, -1<<31
-    for k, v := range m{
+    for i, v := range l {
         if v > max {
             max = v
-            res = k
+            res = i+1
         }
     }
     return res
