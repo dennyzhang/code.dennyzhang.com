@@ -14,6 +14,8 @@ Common graph algorithm problems:
 - Update regions for a given rule: [[https://code.dennyzhang.com/surrounded-regions][Surrounded Regions]]
 - Mark levels: [[https://code.dennyzhang.com/01-matrix][01 Matrix]]
 
+- Duplicate edges: [[https://code.dennyzhang.com/reconstruct-itinerary][Leetcode: Reconstruct Itinerary]]
+
 Typical Problems:
 - Find the minimum steps from point1 to point2: [[https://code.dennyzhang.com/word-ladder][Word Ladder]], [[https://code.dennyzhang.com/sliding-puzzle][Sliding Puzzle]]
 
