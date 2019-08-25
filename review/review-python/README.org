@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog, python
+:type: #blog, python, review
 :END:
 ---------------------------------------------------------------------
 Summary Of My Python Sharing

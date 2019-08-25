@@ -1,0 +1,102 @@
+* Leetcode: Remove Zero Sum Consecutive Nodes from Linked List   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist, presum
+:END:
+---------------------------------------------------------------------
+Remove Zero Sum Consecutive Nodes from Linked List
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-zero-sum-consecutive-nodes-from-linked-list"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/presum][#presum]]
+---------------------------------------------------------------------
+Given the head of a linked list, we repeatedly delete consecutive sequences of nodes that sum to 0 until there are no such sequences.
+
+After doing so, return the head of the final linked list.  You may return any such answer.
+
+(Note that in the examples below, all sequences are serializations of ListNode objects.)
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: head = [1,2,-3,3,1]
+Output: [3,1]
+Note: The answer [1,2,1] would also be accepted.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: head = [1,2,3,-3,4]
+Output: [1,2,4]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: head = [1,2,3,-3,-2]
+Output: [1]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- The given linked list will contain between 1 and 1000 nodes.
+- Each node in the linked list has -1000 <= node.val <= 1000.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-zero-sum-consecutive-nodes-from-linked-list][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/remove-zero-sum-consecutive-nodes-from-linked-list
+// Basic Ideas: dummyNode + presum + hashmap
+//
+// Complexity: Time O(n), Space O(n)
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func removeZeroSumSublists(head *ListNode) *ListNode {
+    m := map[int]*ListNode{}
+    dummyNode := ListNode{0, head}
+    presum := 0
+    p := &dummyNode
+    for p != nil {
+        presum += p.Val
+        node , ok := m[presum]
+        if ok {
+            // remove previous presum
+            v := presum
+            q := node.Next
+            for q!=p {
+                v += q.Val
+                delete(m, v)
+                q = q.Next
+            }
+            // remove nodes
+            node.Next = p.Next
+            p = node
+        } else {
+            m[presum] = p
+        }
+        p = p.Next
+    }
+    return dummyNode.Next
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

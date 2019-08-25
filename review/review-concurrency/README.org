@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: game
+:type: game, review
 :END:
 ---------------------------------------------------------------------
 People like games. Here are a list of game problems in code tests.

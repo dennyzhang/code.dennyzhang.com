@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: binarytree
+:type: binarytree, review
 :END:
 ---------------------------------------------------------------------
 Many binary tree problems are about how to traversal it. In both recursive or non-recursive ways.

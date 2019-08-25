@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: python
+:type: python, review
 :END:
 ---------------------------------------------------------------------
 Python3 is there. We will need to switch from Python2 to Python3 sooner or later.

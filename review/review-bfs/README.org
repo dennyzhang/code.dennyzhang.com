@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: bfs
+:type: bfs, review
 :END:
 ---------------------------------------------------------------------
 BFS is extremely useful. You may not imagine.

@@ -2,13 +2,30 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: unionfind
+:type: unionfind, review
 :END:
 ---------------------------------------------------------------------
 Union find is helpful to build relationship among different sets
 
 Key operations: union, find, etc.
 ---------------------------------------------------------------------
+*Basic Abstractions*
+| Name                     | Summary                                           |
+|--------------------------+---------------------------------------------------|
+| Entities                 | Set of objects                                    |
+| Union command            | Connect two objects or two groups                 |
+| Find query               | Is there a path connecting one object to another? |
+| Disjoint sets of objects | Subsets of connected grid points                  |
+
+*Scenarios*
+Union-find applications involve manipulating objects of all types:
+- Computers in a network
+- Web pages on the Internet
+- Transistors in a computer chip
+- Variable name aliases
+- Pixels in a digital photo
+- Metallic sites in a composite system
+
 *Code Skeleton*
 #+BEGIN_SRC go
 // 1. Get node count. And initialize array with parent as itself
@@ -40,24 +57,7 @@ func (uf *UF) find(x int) int {
 }
 #+END_SRC
 
-*Basic Abstractions*
-| Name                     | Summary                                           |
-|--------------------------+---------------------------------------------------|
-| Entities                 | Set of objects                                    |
-| Union command            | Connect two objects or two groups                 |
-| Find query               | Is there a path connecting one object to another? |
-| Disjoint sets of objects | Subsets of connected grid points                  |
-
-*Scenarios*
-Union-find applications involve manipulating objects of all types:
-- Computers in a network
-- Web pages on the Internet
-- Transistors in a computer chip
-- Variable name aliases
-- Pixels in a digital photo
-- Metallic sites in a composite system
-
-*Ideas*
+*Questions*
 | Name                                        | Example                                                 |
 |---------------------------------------------+---------------------------------------------------------|
 | What nodes are? What edges are?             | [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]]                        |
@@ -65,12 +65,8 @@ Union-find applications involve manipulating objects of all types:
 | Maintain a counter for group count          | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                              |
 | Path compression to reduce levels           | Keeps tree almost completely flat, and avoid tall trees |
 | Rank based merge                            | Balance by linking small tree below large one           |
-
-*Questions*
-| Name                                    | Summary |
-|-----------------------------------------+---------|
-| How efficient unionfind vs DFS/BFS?     |         |
-| Time and space complexity of unionfind? |         |
+| How efficient unionfind vs DFS/BFS?         |                                                         |
+| Time and space complexity of unionfind?     |                                                         |
 
 ---------------------------------------------------------------------
 See all unionfind tree problems: [[https://code.dennyzhang.com/tag/unionfind/][#unionfind]]

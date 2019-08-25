@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog
+:type: #blog, review
 :END:
 ---------------------------------------------------------------------
 [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4]]

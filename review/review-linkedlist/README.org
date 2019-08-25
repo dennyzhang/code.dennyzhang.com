@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: linkedlist
+:type: linkedlist, review
 :END:
 ---------------------------------------------------------------------
 Linked List demands skills of managing pointers very well.

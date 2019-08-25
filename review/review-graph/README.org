@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: graph
+:type: graph, review
 :END:
 ---------------------------------------------------------------------
 Graph related questions mainly focus on depth first search and breath first search.

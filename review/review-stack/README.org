@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: stack
+:type: stack, review
 :END:
 ---------------------------------------------------------------------
 The concept of stack is simple. But the problem could be tricky.

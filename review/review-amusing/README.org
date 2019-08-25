@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: amusing
+:type: amusing, review
 :END:
 ---------------------------------------------------------------------
 Amusing problems. Check them out. It's quite funny and interesting.

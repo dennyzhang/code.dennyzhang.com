@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: binarysearch
+:type: binarysearch, review
 :END:
 ---------------------------------------------------------------------
 Binary search is important. The idea is simple.

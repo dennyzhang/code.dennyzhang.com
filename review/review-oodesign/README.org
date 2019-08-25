@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog, oodesign
+:type: #blog, oodesign, review
 :END:
 ---------------------------------------------------------------------
 Object-Oriented Design Problems

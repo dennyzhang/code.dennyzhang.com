@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog
+:type: #blog, review
 :END:
 ---------------------------------------------------------------------
 I have over 10 years direct working experience before the job hunting. And I'm comfortable to call myself an IT professional.

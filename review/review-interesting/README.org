@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog
+:type: #blog, review
 :END:
 ---------------------------------------------------------------------
 There are some tricks which are not intuitive. But quite useful.

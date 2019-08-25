@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog, greedy
+:type: #blog, greedy, review
 :END:
 ---------------------------------------------------------------------
 Greedy Problems
