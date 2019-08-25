@@ -2,38 +2,65 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming
+:type:     greedy, buystock, array
 :END:
 ---------------------------------------------------------------------
-When to buy and sell stock.
+Best Time to Buy and Sell Stock
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/best-time-to-buy-and-sell-stock"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://code.dennyzhang.com/stock-decision][Leetcode: Best Time to Buy and Sell Stock]]
+- [[https://code.dennyzhang.com/stock-decision-ii][Leetcode: Best Time to Buy and Sell Stock II]]
+- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]], [[https://code.dennyzhang.com/tag/buystock][#buystock]], [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Say you have an array for which the ith element is the price of a given stock on day i.
 
 If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.
 
 Example 1:
+#+BEGIN_EXAMPLE
 Input: [7, 1, 5, 3, 6, 4]
 Output: 5
 
 max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than buying price)
+#+END_EXAMPLE
+
 Example 2:
+#+BEGIN_EXAMPLE
 Input: [7, 6, 4, 3, 1]
 Output: 0
 
 In this case, no transaction is done, i.e. max profit = 0.
-
-
+#+END_EXAMPLE
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/best-time-to-buy-and-sell-stock][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/][leetcode.com]]
+
+- Solution
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/best-time-to-buy-and-sell-stock
+// Basic Ideas: greedy
+//
+// Complexity: Time O(n), Space O(1)
+func maxProfit(prices []int) int {
+    min := 1<<31-1
+    res := 0
+    for _, val := range prices {
+        // min cost so far
+        if val-min > res {
+            res = val-min
+        }
+        if val < min {
+            min = val
+        }
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/best-time-to-buy-and-sell-stock

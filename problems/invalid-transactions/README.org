@@ -1,0 +1,113 @@
+* Leetcode: Invalid Transactions                                 :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Invalid Transactions
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/invalid-transactions"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+---------------------------------------------------------------------
+A transaction is possibly invalid if:
+
+- the amount exceeds $1000, or;
+- if it occurs within (and including) 60 minutes of another transaction with the same name in a different city.
+
+Each transaction string transactions[i] consists of comma separated values representing the name, time (in minutes), amount, and city of the transaction.
+
+Given a list of transactions, return a list of transactions that are possibly invalid.  You may return the answer in any order.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: transactions = ["alice,20,800,mtv","alice,50,100,beijing"]
+Output: ["alice,20,800,mtv","alice,50,100,beijing"]
+Explanation: The first transaction is invalid because the second transaction occurs within a difference of 60 minutes, have the same name and is in a different city. Similarly the second one is invalid too.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: transactions = ["alice,20,800,mtv","alice,50,1200,mtv"]
+Output: ["alice,50,1200,mtv"]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: transactions = ["alice,20,800,mtv","bob,50,1200,mtv"]
+Output: ["bob,50,1200,mtv"]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- transactions.length <= 1000
+- Each transactions[i] takes the form "{name},{time},{amount},{city}"
+- Each {name} and {city} consist of lowercase English letters, and have lengths between 1 and 10.
+- Each {time} consist of digits, and represent an integer between 0 and 1000.
+- Each {amount} consist of digits, and represent an integer between 0 and 2000.
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/invalid-transactions][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/invalid-transactions/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/invalid-transactions
+// Basic Ideas: Array
+//
+// Complexity: Time O(n*n), Space O(n)
+import ("strconv"
+        "strings")
+type MyNode struct {
+    name string
+    time int
+    amount int
+    city string
+}
+func invalidTransactions(transactions []string) []string {
+    m := map[string][]MyNode{}
+    invalids := map[MyNode]bool{}
+    for _, item := range transactions {
+        l := strings.Split(item, ",")
+        time, _ := strconv.Atoi(l[1])
+        amount, _ := strconv.Atoi(l[2])
+        node := MyNode{name:l[0], time:time, amount:amount, city:l[3]}
+        if amount>1000 {
+            invalids[node] = true
+        }
+        for _, node2 := range m[node.name] {
+            if node2.city != node.city {
+                diff := node.time - node2.time
+                if diff < 0 {
+                    diff = -diff
+                }
+                if diff >=0 && diff<=60 {
+                    invalids[node] = true
+                    invalids[node2] = true
+                }
+            }
+        }
+        m[node.name] = append(m[node.name], node)
+    }
+    res := []string{}
+    for node, _ := range invalids {
+        res = append(res, fmt.Sprintf("%s,%d,%d,%s", node.name, node.time, node.amount, node.city))
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
