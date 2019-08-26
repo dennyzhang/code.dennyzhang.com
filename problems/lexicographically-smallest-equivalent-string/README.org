@@ -1,0 +1,118 @@
+* Leetcode: Lexicographically Smallest Equivalent String         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     unionfind
+:END:
+---------------------------------------------------------------------
+Lexicographically Smallest Equivalent String
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/lexicographically-smallest-equivalent-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given strings A and B of the same length, we say A[i] and B[i] are equivalent characters. For example, if A = "abc" and B = "cde", then we have 'a' == 'c', 'b' == 'd', 'c' == 'e'.
+
+Equivalent characters follow the usual rules of any equivalence relation:
+
+Reflexivity: 'a' == 'a'
+Symmetry: 'a' == 'b' implies 'b' == 'a'
+Transitivity: 'a' == 'b' and 'b' == 'c' implies 'a' == 'c'
+For example, given the equivalency information from A and B above, S = "eed", "acd", and "aab" are equivalent strings, and "aab" is the lexicographically smallest equivalent string of S.
+
+Return the lexicographically smallest equivalent string of S by using the equivalency information from A and B.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = "parker", B = "morris", S = "parser"
+Output: "makkek"
+Explanation: Based on the equivalency information in A and B, we can group their characters as [m,p], [a,o], [k,r,s], [e,i]. The characters in each group are equivalent and sorted in lexicographical order. So the answer is "makkek".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = "hello", B = "world", S = "hold"
+Output: "hdld"
+Explanation:  Based on the equivalency information in A and B, we can group their characters as [h,w], [d,e,o], [l,r]. So only the second letter 'o' in S is changed to 'd', the answer is "hdld".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: A = "leetcode", B = "programs", S = "sourcecode"
+Output: "aauaaaaada"
+Explanation:  We group the equivalent characters in A and B as [a,o,e,r,s,c], [l,p], [g,t] and [d,m], thus all letters in S except 'u' and 'd' are transformed to 'a', the answer is "aauaaaaada".
+#+END_EXAMPLE
+ 
+Note:
+
+1. String A, B and S consist of only lowercase English letters from 'a' - 'z'.
+- The lengths of string A, B and S are between 1 and 1000.
+- String A and B are of the same length.
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/lexicographically-smallest-equivalent-string][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/lexicographically-smallest-equivalent-string
+// Basic Ideas: Unionfind
+//
+// Complexity: Time O(n) Space O(n)
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF {
+    parent := make([]int, 26)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    p, q := uf.find(x), uf.find(y)
+    if p<q {
+        uf.parent[q] = p
+    } else {
+        uf.parent[p] = q
+    }
+}
+
+func (uf *UF) find(x int) int {
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func smallestEquivalentString(A string, B string, S string) string {
+    uf := constructor(26)
+    for i:=0; i<len(A); i++ {
+        p, q := int(rune(A[i])-'a'), int(rune(B[i])-'a')
+        fmt.Println(p, q)
+        uf.union(p, q)
+    }
+    res := make([]rune, len(S))
+    for i, ch := range S {
+        res[i] = rune(uf.find(int(ch-'a'))+'a')
+    }
+    return string(res)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

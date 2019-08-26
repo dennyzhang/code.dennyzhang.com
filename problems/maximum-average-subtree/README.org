@@ -19,7 +19,7 @@ Given the root of a binary tree, find the maximum average value of any subtree o
 
 Example 1:
 
-[[image-blog:Leetcode: Maximum Average Subtree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/maximum-average-subtree/tree.png]]
+[[image-blog:Leetcode: Maximum Average Subtree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/maximum-average-subtree/tree.png]]
 
 #+BEGIN_EXAMPLE
 Input: [5,6,1]

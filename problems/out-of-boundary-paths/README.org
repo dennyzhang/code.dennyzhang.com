@@ -22,7 +22,7 @@ Input: m = 2, n = 2, N = 2, i = 0, j = 0
 Output: 6
 Explanation:
 #+END_EXAMPLE
-[[image-blog:Out of Boundary Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/out-of-boundary-paths/1.png]]
+[[image-blog:Out of Boundary Paths][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/out-of-boundary-paths/1.png]]
 
 Example 2:
 #+BEGIN_EXAMPLE
@@ -30,7 +30,7 @@ Input: m = 1, n = 3, N = 3, i = 0, j = 1
 Output: 12
 Explanation:
 #+END_EXAMPLE
-[[image-blog:Out of Boundary Paths][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/out-of-boundary-paths/2.png]]
+[[image-blog:Out of Boundary Paths][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/out-of-boundary-paths/2.png]]
 
 Note:
 

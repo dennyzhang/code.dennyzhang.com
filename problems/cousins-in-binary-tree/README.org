@@ -23,21 +23,21 @@ We are given the root of a binary tree with unique values, and the values x and 
 Return true if and only if the nodes corresponding to the values x and y are cousins.
 
 Example 1:
-[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree1.png]]
+[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree1.png]]
 #+BEGIN_EXAMPLE
 Input: root = [1,2,3,4], x = 4, y = 3
 Output: false
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree2.png]]
+[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree2.png]]
 #+BEGIN_EXAMPLE
 Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
 Output: true
 #+END_EXAMPLE
 
 Example 3:
-[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree3.png]]
+[[image-blog:Cousins in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/cousins-in-binary-tree/cousin-tree3.png]]
 #+BEGIN_EXAMPLE
 Input: root = [1,2,3,null,4], x = 2, y = 3
 Output: false

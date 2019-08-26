@@ -20,7 +20,7 @@ In one move, we may choose two adjacent nodes and move one coin from one node to
 Return the number of moves required to make every node have exactly one coin.
  
 Example 1:
-[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree1.png]]
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree1.png]]
 #+BEGIN_EXAMPLE
 Input: [3,0,0]
 Output: 2
@@ -28,7 +28,7 @@ Explanation: From the root of the tree, we move one coin to its left child, and 
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree2.png]]
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree2.png]]
 #+BEGIN_EXAMPLE
 Input: [0,3,0]
 Output: 3
@@ -36,14 +36,14 @@ Explanation: From the left child of the root, we move two coins to the root [tak
 #+END_EXAMPLE
 
 Example 3:
-[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree3.png]]
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree3.png]]
 #+BEGIN_EXAMPLE
 Input: [1,0,2]
 Output: 2
 #+END_EXAMPLE
 
 Example 4:
-[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree4.png]]
+[[image-blog:Distribute Coins in Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/distribute-coins-in-binary-tree/tree4.png]]
 #+BEGIN_EXAMPLE
 Input: [1,0,0,null,3]
 Output: 4

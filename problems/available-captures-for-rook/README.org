@@ -21,7 +21,7 @@ The rook moves as in the rules of Chess: it chooses one of four cardinal directi
 Return the number of pawns the rook can capture in one move.
 
 Example 1:
-[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/available-captures-for-rook/1.png]]
+[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/available-captures-for-rook/1.png]]
 #+BEGIN_EXAMPLE
 Input: [[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","R",".",".",".","p"],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]]
 Output: 3
@@ -30,7 +30,7 @@ In this example the rook is able to capture all the pawns.
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/available-captures-for-rook/2.png]]
+[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/available-captures-for-rook/2.png]]
 #+BEGIN_EXAMPLE
 Input: [[".",".",".",".",".",".",".","."],[".","p","p","p","p","p",".","."],[".","p","p","B","p","p",".","."],[".","p","B","R","B","p",".","."],[".","p","p","B","p","p",".","."],[".","p","p","p","p","p",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]]
 Output: 0
@@ -39,7 +39,7 @@ Bishops are blocking the rook to capture any pawn.
 #+END_EXAMPLE
 
 Example 3:
-[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/available-captures-for-rook/3.png]]
+[[image-blog:Available Captures for Rook][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/available-captures-for-rook/3.png]]
 #+BEGIN_EXAMPLE
 Input: [[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","p",".",".",".","."],["p","p",".","R",".","p","B","."],[".",".",".",".",".",".",".","."],[".",".",".","B",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."]]
 Output: 3

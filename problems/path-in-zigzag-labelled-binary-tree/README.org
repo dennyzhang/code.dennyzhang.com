@@ -19,7 +19,7 @@ In the odd numbered rows (ie., the first, third, fifth,...), the labelling is le
 
 Given the label of a node in this tree, return the labels in the path from the root of the tree to the node with that label.
 
-[[image-blog:Leetcode: Path In Zigzag Labelled Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/path-in-zigzag-labelled-binary-tree/tree.png]]
+[[image-blog:Leetcode: Path In Zigzag Labelled Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/path-in-zigzag-labelled-binary-tree/tree.png]]
 Example 1:
 #+BEGIN_EXAMPLE
 Input: label = 14

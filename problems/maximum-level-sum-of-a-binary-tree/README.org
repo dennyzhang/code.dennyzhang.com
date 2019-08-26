@@ -17,7 +17,7 @@ Given the root of a binary tree, the level of its root is 1, the level of its ch
 
 Return the smallest level X such that the sum of all the values of nodes at level X is maximal.
 
-[[image-blog:Maximum Level Sum of a Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/maximum-level-sum-of-a-binary-tree/tree.jpg]]
+[[image-blog:Maximum Level Sum of a Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/maximum-level-sum-of-a-binary-tree/tree.jpg]]
 
 Example 1:
 #+BEGIN_EXAMPLE

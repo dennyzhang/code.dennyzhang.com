@@ -28,7 +28,7 @@ Input: [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
 Output: [30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]
 #+END_EXAMPLE
 
-[[image-blog:Binary Search Tree to Greater Sum Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/binary-search-tree-to-greater-sum-tree/tree.png]]
+[[image-blog:Binary Search Tree to Greater Sum Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/binary-search-tree-to-greater-sum-tree/tree.png]]
 
 Note:
 

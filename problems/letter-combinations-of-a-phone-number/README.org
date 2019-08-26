@@ -18,7 +18,7 @@ Given a digit string, return all possible letter combinations that the number co
 
 A mapping of digit to letters (just like on the telephone buttons) is given below.
 
-[[image-blog:Leetcode: Letter Combinations of a Phone Number][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/letter-combinations-of-a-phone-number/phone.png]]
+[[image-blog:Leetcode: Letter Combinations of a Phone Number][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/letter-combinations-of-a-phone-number/phone.png]]
 
 #+BEGIN_EXAMPLE
 Input:Digit string "23"

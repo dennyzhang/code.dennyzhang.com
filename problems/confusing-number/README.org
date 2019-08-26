@@ -19,7 +19,7 @@ Given a number N, return true if and only if it is a confusing number, which sat
 We can rotate digits by 180 degrees to form new digits. When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 0, 1, 9, 8, 6 respectively. When 2, 3, 4, 5 and 7 are rotated 180 degrees, they become invalid. A confusing number is a number that when rotated 180 degrees becomes a different number with each digit valid.
  
 Example 1:
-[[image-blog:Confusing Number][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/confusing-number/1.png]]
+[[image-blog:Confusing Number][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/confusing-number/1.png]]
 #+BEGIN_EXAMPLE
 Input: 6
 Output: true
@@ -28,7 +28,7 @@ We get 9 after rotating 6, 9 is a valid number and 9!=6.
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Confusing Number][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/confusing-number/2.png]]
+[[image-blog:Confusing Number][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/confusing-number/2.png]]
 #+BEGIN_EXAMPLE
 Input: 89
 Output: true
@@ -37,7 +37,7 @@ We get 68 after rotating 89, 86 is a valid number and 86!=89.
 #+END_EXAMPLE
 
 Example 3:
-[[image-blog:Confusing Number][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/confusing-number/3.png]]
+[[image-blog:Confusing Number][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/confusing-number/3.png]]
 #+BEGIN_EXAMPLE
 Input: 11
 Output: false
@@ -46,7 +46,7 @@ We get 11 after rotating 11, 11 is a valid number but the value remains the same
 #+END_EXAMPLE
 
 Example 4:
-[[image-blog:Confusing Number][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/confusing-number/4.png]]
+[[image-blog:Confusing Number][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/confusing-number/4.png]]
 #+BEGIN_EXAMPLE
 Input: 25
 Output: false

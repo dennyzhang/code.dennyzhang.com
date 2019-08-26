@@ -22,14 +22,14 @@ Example 1:
 Input: [1,1,1,1,1,null,1]
 Output: true
 #+END_EXAMPLE
-[[image-blog:Leetcode: Univalued Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/univalued-binary-tree/unival_bst_1.png]]
+[[image-blog:Leetcode: Univalued Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/univalued-binary-tree/unival_bst_1.png]]
 
 Example 2:
 #+BEGIN_EXAMPLE
 Input: [2,2,2,5,2]
 Output: false
 #+END_EXAMPLE
-[[image-blog:Leetcode: Univalued Binary Tree][https://raw.githubusercontent.com/DennyZhang/code.dennyzhang.com/master/problems/univalued-binary-tree/unival_bst_2.png]] 
+[[image-blog:Leetcode: Univalued Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/univalued-binary-tree/unival_bst_2.png]] 
 
 Note:
 
