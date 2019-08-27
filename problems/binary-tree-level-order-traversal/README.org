@@ -38,6 +38,42 @@ Credits To: [[https://leetcode.com/problems/binary-tree-level-order-traversal/de
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/binary-tree-level-order-traversal
+// Basic Ideas: BFS
+//
+// Complexity: Time O(n), Space O(h)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func levelOrder(root *TreeNode) [][]int {
+    res := [][]int{}
+    if root == nil { return res }
+    queue := []*TreeNode{root}
+    for len(queue) != 0 {
+        nodes := []*TreeNode{}
+        l := []int{}
+        for _, node := range queue {
+            l = append(l, node.Val)
+            if node.Left != nil {
+                nodes = append(nodes, node.Left)
+            }
+            if node.Right != nil {
+                nodes = append(nodes, node.Right)
+            }
+        }
+        res = append(res, l)
+        queue = nodes
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/binary-tree-level-order-traversal

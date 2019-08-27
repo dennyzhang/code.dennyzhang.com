@@ -8,7 +8,7 @@
 Sentence Screen Fitting
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sentence-screen-fitting"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/screenfit][#screenfit]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
@@ -72,9 +72,9 @@ had--
 The character '-' signifies an empty space on the screen.
 #+END_EXAMPLE
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sentence-screen-fitting][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/sentence-screen-fitting/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
@@ -96,7 +96,7 @@ Leave me comments, if you have better ways to solve.
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/example
+// Blog link: https://code.dennyzhang.com/sentence-screen-fitting
 
 #+END_SRC
 
