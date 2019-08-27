@@ -52,6 +52,92 @@ Credits To: [[https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-t
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution recursive
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
+// Basic Ideas: dfs
+//
+//  Instead of searching both p and q, search one
+//
+// Complexity: Time O(n), Space O(h)
+/**
+ * Definition for TreeNode.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *ListNode
+ *     Right *ListNode
+ * }
+ */
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    if root == nil { return nil }
+    // found either one
+    if root == p || root == q {
+        return root
+    }
+    left := lowestCommonAncestor(root.Left, p, q)
+    right := lowestCommonAncestor(root.Right, p, q)
+    if left != nil && right != nil {
+        return root
+    }
+    if left != nil {
+        return left
+    } else {
+        return right
+    }
+}
+#+END_SRC
+
+- Solution: Caculate the visit path
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
+// Basic Ideas: dfs
+//
+// Complexity: Time O(n), Space O(h)
+/**
+ * Definition for TreeNode.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *ListNode
+ *     Right *ListNode
+ * }
+ */
+func dfs(root *TreeNode, target *TreeNode, path *[]*TreeNode) bool {
+    if root == nil {
+        return false
+    }
+    // update path
+    *path = append(*path, root)
+    if root == target {
+        return true
+    }
+    if dfs(root.Left, target, path) {
+        return true
+    }
+    if dfs(root.Right, target, path) {
+        return true
+    }
+    *path = (*path)[0:len(*path)-1]
+    return false
+}
+
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    l1 := []*TreeNode{}
+    dfs(root, p, &l1)
+
+    l2 := []*TreeNode{}
+    dfs(root, q, &l2)
+
+    i := 0
+    for ; i<len(l1) && i<len(l2); i++ {
+        if l1[i] != l2[i] {
+            break
+        }
+    }
+    return l1[i-1]
+}
+#+END_SRC
+
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
 ## Basic Ideas: recursive
