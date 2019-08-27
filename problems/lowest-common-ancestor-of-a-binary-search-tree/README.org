@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, binarysearch
+:type:     binarytree
 :END:
 ---------------------------------------------------------------------
 Lowest Common Ancestor of a Binary Search Tree
@@ -12,7 +12,7 @@ Lowest Common Ancestor of a Binary Search Tree
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree][Lowest Common Ancestor of a Binary Tree]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 
@@ -36,6 +36,105 @@ Credits To: [[https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-s
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree
+// Basic Ideas:
+//
+// Complexity: Time O(log(n)), Space O(1)
+/**
+ * Definition for TreeNode.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *ListNode
+ *     Right *ListNode
+ * }
+ */
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    if root == nil {
+        return root
+    }
+    if p.Val > q.Val {
+        p, q = q, p
+    }
+    res := root
+    for res != nil {
+        if res == p || res == q {
+            return res
+        }
+        if res.Val > p.Val && res.Val < q.Val {
+            return res
+        }
+        if res.Val > q.Val {
+            res = res.Left
+        } else {
+            res = res.Right
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree
+// Basic Ideas:
+//
+// Complexity: Time O(log(n)), Space O(1)
+/**
+ * Definition for TreeNode.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *ListNode
+ *     Right *ListNode
+ * }
+ */
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    res := root
+    for res != nil {
+        if res.Val > p.Val && res.Val > q.Val {
+            res = res.Left
+        } else {
+            if res.Val < p.Val && res.Val < q.Val {
+                res = res.Right
+            } else {
+                return res
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree
+// Basic Ideas: recursive
+//
+// Complexity: Time O(log(n)), Space O(1)
+/**
+ * Definition for TreeNode.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *ListNode
+ *     Right *ListNode
+ * }
+ */
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    if root == nil || root == p || root == q {
+        return root
+    }
+    if p.Val > q.Val {
+        p, q = q, p
+    }
+    if root.Val > p.Val && root.Val < q.Val {
+        return root
+    } else {
+        if root.Val > q.Val {
+            return lowestCommonAncestor(root.Left, p, q)
+        } else {
+            return lowestCommonAncestor(root.Right, p, q)
+        }
+    }
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree
@@ -45,7 +144,7 @@ Leave me comments, if you have better ways to solve.
 ##              If both are bigger than root.val, move the right-tree
 ##              If one smaller and one bigger, the current node is what we want
 ## Assumption: No duplicate value in the BST
-## Complexity: Time O(k), Space O(1). k is the height
+## Complexity: Time O(log(n))), Space O(1)
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
