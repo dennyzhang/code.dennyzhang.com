@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     binarytree, heightoftree
 :END:
 ---------------------------------------------------------------------
 Given a binary tree, determine if it is height-balanced
@@ -12,7 +12,8 @@ Given a binary tree, determine if it is height-balanced
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/count-complete-tree-nodes][Count Complete Tree Nodes]]
-- [[https://code.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://code.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
+- [[https://code.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/heightoftree][#heightoftree]]
 ---------------------------------------------------------------------
 
 Given a binary tree, determine if it is height-balanced.
@@ -25,6 +26,43 @@ Credits To: [[https://leetcode.com/problems/balanced-binary-tree/description/][l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/balanced-binary-tree
+// Basic Ideas: recursive
+//
+// Complexity: Time O(n), Space O(h)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func dfs(root *TreeNode) (int, bool) {
+    if root == nil { return 0, true  }
+    h1, ok1 := dfs(root.Left)
+    if ! ok1 {
+        return 0, false
+    }
+    h2, ok2 := dfs(root.Right)
+    if ! ok2 {
+        return 0, false
+    }
+    if h1 < h2 {
+        h1, h2 = h2, h1
+    }
+    if h1-h2>1 {
+        return 0, false
+    }
+    return h1+1, true
+}
+
+func isBalanced(root *TreeNode) bool {
+    _, ok := dfs(root)
+    return ok
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/balanced-binary-tree

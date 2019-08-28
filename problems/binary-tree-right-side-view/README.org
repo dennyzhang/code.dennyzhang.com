@@ -2,10 +2,16 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, bfs
+:type:     binarytree, bfs, dfs
 :END:
 ---------------------------------------------------------------------
 Binary Tree Right Side View
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/most-stones-removed-with-same-row-or-column"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
 ---------------------------------------------------------------------
 Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 
@@ -26,6 +32,41 @@ Credits To: [[https://leetcode.com/problems/binary-tree-right-side-view/descript
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/binary-tree-right-side-view
+// Basic Ideas: BFS
+// Complexity: Time O(n), Space O(h)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func rightSideView(root *TreeNode) []int {
+    res := []int{}
+    if root == nil { return res }
+    queue := []*TreeNode{root}
+    for len(queue) > 0 {
+        l := []*TreeNode{}
+        for i, node := range queue {
+            if i == len(queue)-1 {
+                res = append(res, node.Val)
+            }
+            if node.Left != nil {
+                l = append(l, node.Left)
+            }
+            if node.Right != nil {
+                l = append(l, node.Right)
+            }
+        }
+        queue = l
+    }
+    return res
+}
+#+END_SRC
+
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/binary-tree-right-side-view
 ## Basic Ideas:

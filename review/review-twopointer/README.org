@@ -7,6 +7,26 @@
 ---------------------------------------------------------------------
 Two pointers problems
 ---------------------------------------------------------------------
+*Basic Abstractions*
+| Name                      | Summary |
+|---------------------------+---------|
+| two pointers - left/right |         |
+| two pointers - left/right |         |
+
+[[image-blog:Review: TwoPointers Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-twopointer/1.png]]
+
+[[image-blog:Review: TwoPointers Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-twopointer/2.png]]
+
+[[image-blog:Review: TwoPointers Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-twopointer/3.png]]
+
+[[image-blog:Review: TwoPointers Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-twopointer/4.png]]
+
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name                                        | Example                                                 |
+|---------------------------------------------+---------------------------------------------------------|
+
 [[color:#c7254e][Key Points:]]
 - Time complexity evaluation: pointers back and forth? [[https://code.dennyzhang.com/minimum-size-subarray-sum][Minimum Size Subarray Sum]]
 - One loop or two loop?
@@ -53,3 +73,4 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
+* https://github.com/imhuay/Algorithm_Interview_Notes-Chinese/blob/master/C-算法/专题-B-双指针.md :noexport:

@@ -55,10 +55,8 @@ func (h *IntHeap) Push(x interface{}) {
 }
 
 func (h *IntHeap) Pop() interface{} {
-	old := *h
-	n := len(old)
-	res := old[n-1]
-	*h = old[0 : n-1]
+	res := (*h)[len(*h)-1]
+	*h = (*h)[0:len(*h)-1]
 	return res
 }
 

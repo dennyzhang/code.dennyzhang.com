@@ -1,8 +1,8 @@
-* Leetcode: Most Stones Removed with Same Row or Column          :BLOG:Basic:
+* Leetcode: Most Stones Removed with Same Row or Column          :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     unionfind, island, dfs
 :END:
 ---------------------------------------------------------------------
 Most Stones Removed with Same Row or Column
@@ -11,10 +11,8 @@ Most Stones Removed with Same Row or Column
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/most-stones-removed-with-same-row-or-column"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]], [[https://code.dennyzhang.com/tag/island][#island]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
 ---------------------------------------------------------------------
-
 On a 2D plane, we place stones at some integer coordinate points.  Each coordinate point may have at most one stone.
 
 Now, a move consists of removing a stone that shares a column or row with another stone on the grid.
@@ -52,24 +50,171 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
+// Basic Ideas: union find
+//
+//   Count how many islands in a 2D matrix
+//   Notice:
+//      How to quickly find out the relationship for union operations
+//
+// Complexity: Time O(n*k), Space O(n)
+var res int
+type UF struct {
+    parent []int
+}
 
-#+END_EXAMPLE
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
 
-*Key Observations:*
-#+BEGIN_EXAMPLE
+func (uf *UF) union(x, y int) {
+    x2, y2 := uf.find(x), uf.find(y)
+    if x2 != y2 {
+        uf.parent[y2] = x2
+        res++
+    }
+}
 
-#+END_EXAMPLE
+func (uf *UF) find (x int) int {
+    l := []int{}
+    for uf.parent[x] != x {
+        l = append(l, x)
+        x = uf.parent[x]
+    }
+    for _, v := range l {
+        uf.parent[v] = x
+    }
+    return x
+}
 
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
+func removeStones(stones [][]int) int {
+    res = 0
+    uf := constructor(len(stones))
+    m1, m2 := map[int][]int{}, map[int][]int{}
+    for i, stone := range stones {
+        x, y := stone[0], stone[1]
+        m1[x] = append(m1[x], i)
+        m2[y] = append(m2[y], i)
+    }
 
-#+END_EXAMPLE
+    for _, m := range []map[int][]int{m1, m2} {
+        for _, l := range m {
+            for i:=1; i<len(l); i++ {
+                uf.union(l[0], l[i])
+            }
+        }
+    }
+
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
+// Basic Ideas: union find
+//
+//   Count how many islands in a 2D matrix
+//
+// Complexity: Time O(n*n*k), Space O(n)
+var res int
+type UF struct {
+    parent []int
+}
 
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    x2, y2 := uf.find(x), uf.find(y)
+    if x2 != y2 {
+        uf.parent[y2] = x2
+        res++
+    }
+}
+
+func (uf *UF) find (x int) int {
+    l := []int{}
+    for uf.parent[x] != x {
+        l = append(l, x)
+        x = uf.parent[x]
+    }
+    for _, v := range l {
+        uf.parent[v] = x
+    }
+    return x
+}
+
+func removeStones(stones [][]int) int {
+    res = 0
+    uf := constructor(len(stones))
+    for i, _ := range stones {
+        for j:=i+1; j<len(stones); j++ {
+            if stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1] {
+                uf.union(i, j)
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
+// Basic Ideas: union find
+//
+//   Count how many islands in a 2D matrix
+//
+// Complexity: Time O(n*n*k), Space O(n)
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    uf.parent[uf.find(y)] = uf.find(x)
+}
+
+func (uf *UF) find (x int) int {
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func removeStones(stones [][]int) int {
+    uf := constructor(len(stones))
+    for i, _ := range stones {
+        for j:=i+1; j<len(stones); j++ {
+            if stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1] {
+                uf.union(i, j)
+            }
+        }
+    }
+    cnt := 0
+    for i, v := range uf.parent {
+        if i == v {
+            cnt++   
+        }
+    }
+    return len(stones)-cnt
+}
 #+END_SRC
 
 #+BEGIN_HTML

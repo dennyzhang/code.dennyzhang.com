@@ -59,4 +59,17 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
+* notes                                                                   :noexport:
+#+BEGIN_EXAMPLE
+动态规划
+动态规划（dynamic programming）多应用于子问题重叠的情况，每个子问题只求解一次。动态规划方法通常用来求解最优化问题的一个最优解。
 
+设计动态规划方法的4个步骤：
+
+刻画一个最优解的结构特征
+递归地定义最优解的值
+计算最优解的值，通常采用自底向上的方法
+利用计算出的信息构造一个最优解
+最优子结构（optimal substructure）
+问题的最优解由相关子问题的最优解组合而成，而这些子问题可以独立求解。
+#+END_EXAMPLE

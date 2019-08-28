@@ -44,15 +44,12 @@ Leave me comments, if you have better ways to solve.
 // Complexity: Time O(n*log(n)), Space O(n)
 import "sort"
 func heightChecker(heights []int) int {
-    res := 0
-    l := []int{}
-    for _, v := range heights {
-        l = append(l, v)
-    }
+    l := make([]int, len(heights))
+    copy(l, heights)
     sort.Ints(l)
-
-    for i, v := range heights {
-        if v != l[i] {
+    res := 0
+    for i, _ := range heights {
+        if heights[i] != l[i] {
             res++
         }
     }

@@ -1,0 +1,35 @@
+* Review: Binary tree traversal                                 :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: treetraversal, review
+:END:
+---------------------------------------------------------------------
+Binary tree traversal
+
+---------------------------------------------------------------------
+*Basic Abstractions*
+| Name                    | Summary                                      |
+|-------------------------+----------------------------------------------|
+| Common tree traversal   | preorder (MLR), inorder(LMR), postorder(LRM) |
+| Advanced tree traversal | morris                                       |
+
+*Scenarios*
+
+*Code Skeleton*
+
+*Questions*
+
+---------------------------------------------------------------------
+See all treetraversal tree problems: [[https://code.dennyzhang.com/tag/treetraversal/][#treetraversal]]
+[display-posts tag="treetraversal" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -65,6 +65,8 @@ func (uf *UF) find(x int) int {
 | Maintain a counter for group count          | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                              |
 | Path compression to reduce levels           | Keeps tree almost completely flat, and avoid tall trees |
 | Rank based merge                            | Balance by linking small tree below large one           |
+| Collect result: add vs extract?             | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]   |
+| Get the nodes relationship quickly          | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]   |
 | How efficient unionfind vs DFS/BFS?         |                                                         |
 | Time and space complexity of unionfind?     |                                                         |
 

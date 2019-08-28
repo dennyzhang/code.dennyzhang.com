@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     array
 :END:
 ---------------------------------------------------------------------
 Merge Sorted Array
@@ -11,7 +11,7 @@ Merge Sorted Array
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/merge-sorted-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
 
@@ -24,9 +24,27 @@ Credits To: [[https://leetcode.com/problems/merge-sorted-array/description/][lee
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/merge-sorted-array
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/merge-sorted-array
+// Basic Ideas: array, 3 pointers, from right to left
+// Complexity: Time O(n+m), Space O(1)
+func merge(nums1 []int, m int, nums2 []int, n int)  {
+    i, j, k := m-1, n-1, m+n-1
+    for i>=0 && j>=0 {
+        if nums1[i] > nums2[j] {
+            nums1[k] = nums1[i]
+            i--
+        } else {
+            nums1[k] = nums2[j]
+            j--
+        }
+        k--
+    }
+    for ; j>=0; j-- {
+        nums1[k] = nums2[j]
+        k--
+    }
+}
 #+END_SRC
 
 #+BEGIN_HTML
