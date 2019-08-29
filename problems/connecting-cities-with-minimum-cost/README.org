@@ -1,0 +1,133 @@
+* Leetcode: Connecting Cities With Minimum Cost                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, classic, greedy
+:END:
+---------------------------------------------------------------------
+Connecting Cities With Minimum Cost
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/connecting-cities-with-minimum-cost"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/greedy][#greedy]]
+---------------------------------------------------------------------
+There are N cities numbered from 1 to N.
+
+You are given connections, where each connections[i] = [city1, city2, cost] represents the cost to connect city1 and city2 together.  (A connection is bidirectional: connecting city1 and city2 is the same as connecting city2 and city1.)
+
+Return the minimum cost so that for every pair of cities, there exists a path of connections (possibly of length 1) that connects those two cities together.  The cost is the sum of the connection costs used. If the task is impossible, return -1.
+
+Example 1:
+[[image-blog:Connecting Cities With Minimum Cost][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/connecting-cities-with-minimum-cost/1.png]]
+#+BEGIN_EXAMPLE
+Input: N = 3, connections = [[1,2,5],[1,3,6],[2,3,1]]
+Output: 6
+Explanation: 
+Choosing any 2 edges will connect all cities so we choose the minimum 2.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Connecting Cities With Minimum Cost][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/connecting-cities-with-minimum-cost/2.png]]
+#+BEGIN_EXAMPLE
+Input: N = 4, connections = [[1,2,3],[3,4,4]]
+Output: -1
+Explanation: 
+There is no way to connect all cities even if all edges are used.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= N <= 10000
+- 1 <= connections.length <= 10000
+- 1 <= connections[i][0], connections[i][1] <= N
+- 0 <= connections[i][2] <= 10^5
+- connections[i][0] != connections[i][1]
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/connecting-cities-with-minimum-cost][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/connecting-cities-with-minimum-cost/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/connecting-cities-with-minimum-cost
+// Basic Ideas: unionfind + minimum spanning tree
+//
+//  The more than one island, return -1
+//  For valid ones, sort connections
+//      Loop connections from small to big
+//      If two nodes not connected, add this path to the result
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+var cnt int
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF {
+    cnt = size
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union (i, j int) bool {
+    n1, n2 := uf.find(i), uf.find(j)
+    if n1 == n2 {
+        return false
+    }
+    uf.parent[n2] = n1
+    cnt--
+    return true
+}
+
+func (uf *UF) find (x int) int {
+    l := []int{}
+    for x != uf.parent[x] {
+        l = append(l, x)
+        x = uf.parent[x]
+    }
+    // path compression
+    for _, v := range l {
+        uf.parent[v] = x
+    }
+    return x
+}
+
+func minimumCost(N int, connections [][]int) int {
+    if len(connections) < N-1 {
+        return -1
+    }
+    sort.Slice(connections, func(i, j int) bool {
+        return connections[i][2] < connections[j][2]
+    })
+
+    uf := constructor(N)
+    res := 0
+    for _, item := range connections {
+        if uf.union(item[0]-1, item[1]-1) {
+            res += item[2]
+        }
+    }
+    if cnt != 1 {
+        return -1
+    } else {
+        return res
+    }
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

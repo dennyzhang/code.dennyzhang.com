@@ -1,0 +1,80 @@
+* Leetcode: Immediate Food Delivery I                            :BLOG:Basic:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Immediate Food Delivery I
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/immediate-food-delivery-i"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+---------------------------------------------------------------------
+Table: Delivery
+#+BEGIN_EXAMPLE
++-----------------------------+---------+
+| Column Name                 | Type    |
++-----------------------------+---------+
+| delivery_id                 | int     |
+| customer_id                 | int     |
+| order_date                  | date    |
+| customer_pref_delivery_date | date    |
++-----------------------------+---------+
+delivery_id is the primary key of this table.
+The table holds information about food delivery to customers that make orders at some date and specify a preferred delivery date (on the same order date or after it).
+#+END_EXAMPLE
+ 
+If the preferred delivery date of the customer is the same as the order date then the order is called immediate otherwise it's called scheduled.
+
+Write an SQL query to find the percentage of immediate orders in the table, rounded to 2 decimal places.
+
+The query result format is in the following example:
+
+Delivery table:
+#+BEGIN_EXAMPLE
++-------------+-------------+------------+-----------------------------+
+| delivery_id | customer_id | order_date | customer_pref_delivery_date |
++-------------+-------------+------------+-----------------------------+
+| 1           | 1           | 2019-08-01 | 2019-08-02                  |
+| 2           | 5           | 2019-08-02 | 2019-08-02                  |
+| 3           | 1           | 2019-08-11 | 2019-08-11                  |
+| 4           | 3           | 2019-08-24 | 2019-08-26                  |
+| 5           | 4           | 2019-08-21 | 2019-08-22                  |
+| 6           | 2           | 2019-08-11 | 2019-08-13                  |
++-------------+-------------+------------+-----------------------------+
+#+END_EXAMPLE
+
+Result table:
+#+BEGIN_EXAMPLE
++----------------------+
+| immediate_percentage |
++----------------------+
+| 33.33                |
++----------------------+
+The orders with delivery id 2 and 3 are immediate while the others are scheduled.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/immediate-food-delivery-i][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/immediate-food-delivery-i/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC sql
+## Blog link: https://code.dennyzhang.com/immediate-food-delivery-i
+select round(100*sum(case when order_date=customer_pref_delivery_date then 1 else 0 end)/count(1), 2) immediate_percentage 
+from Delivery
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

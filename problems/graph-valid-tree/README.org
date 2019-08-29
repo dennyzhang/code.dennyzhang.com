@@ -31,7 +31,7 @@ Note: you can assume that no duplicate edges will appear in edges. Since all edg
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/graph-valid-tree][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/graph-valid-tree/description/][leetcode.com]]
+[Credits To: [[https://leetcode.com/problems/graph-valid-tree/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

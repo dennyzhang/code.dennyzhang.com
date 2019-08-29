@@ -1,0 +1,136 @@
+* Leetcode: Path With Maximum Minimum Value                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, unionfind
+:END:
+---------------------------------------------------------------------
+Path With Maximum Minimum Value
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/path-with-maximum-minimum-value"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
+---------------------------------------------------------------------
+Given a matrix of integers A with R rows and C columns, find the maximum score of a path starting at [0,0] and ending at [R-1,C-1].
+
+The score of a path is the minimum value in that path.  For example, the value of the path 8 ->  4 ->  5 ->  9 is 4.
+
+A path moves some number of times from one visited cell to any neighbouring unvisited cell in one of the 4 cardinal directions (north, east, west, south).
+ 
+Example 1:
+[[image-blog:Leetcode: Path With Maximum Minimum Value][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/path-with-maximum-minimum-value/my1.jpg]]
+#+BEGIN_EXAMPLE
+Input: [[5,4,5],[1,2,6],[7,4,6]]
+Output: 4
+Explanation: 
+The path with the maximum score is highlighted in yellow. 
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Leetcode: Path With Maximum Minimum Value][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/path-with-maximum-minimum-value/my2.jpg]]
+#+BEGIN_EXAMPLE
+Input: [[2,2,1,2,2,2],[1,2,2,2,1,2]]
+Output: 2
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Leetcode: Path With Maximum Minimum Value][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/path-with-maximum-minimum-value/my3.jpg]]
+#+BEGIN_EXAMPLE
+Input: [[3,4,6,3,4],[0,2,1,1,7],[8,8,3,2,7],[3,2,4,9,8],[4,1,2,0,0],[4,6,5,4,3]]
+Output: 3
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= R, C <= 100
+- 0 <= A[i][j] <= 10^9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/path-with-maximum-minimum-value][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/path-with-maximum-minimum-value/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/path-with-maximum-minimum-value
+// Basic Ideas: unionfind
+//
+// Sort values. Keep adding big values until src and dst is connected
+//
+// Complexity: Time O(nm*log(nm)) Space O(nm)
+import "sort"
+type UF struct {
+    parent []int
+}
+
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(i, j int) {
+    uf.parent[uf.find(j)] = uf.find(i)
+}
+
+func (uf *UF) find(x int) int{
+    l := []int{}
+    for x != uf.parent[x] {
+        l = append(l, x)
+        x = uf.parent[x]
+    }
+    for _, v := range l {
+        uf.parent[v] = x
+    }
+    return x
+}
+
+func maximumMinimumPath(A [][]int) int {
+    l := [][]int{}
+    visited := make([][]bool, len(A))
+    for i, row := range A {
+        visited[i] = make([]bool, len(A[0]))
+        for j, v := range row {
+            l = append(l, []int{v, i, j})
+        }
+    }
+    // reverse
+    sort.Slice(l, func(i, j int) bool {
+        return l[i][0] > l[j][0]
+    })
+    totalcnt := len(A)*len(A[0])
+    uf := constructor(totalcnt)
+
+    for _, node := range l {
+        v, i, j := node[0], node[1], node[2]
+        visited[i][j] = true
+        for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
+                                       []int{0, 1}, []int{0, -1}} {
+            i2, j2 := i+offset[0], j+offset[1]
+            if i2>=0 && i2<len(A) && j2>=0 && j2<len(A[0]) {
+                if visited[i2][j2] {
+                    uf.union(i*len(A[0])+j, i2*len(A[0])+j2)
+                    if uf.find(0) == uf.find(totalcnt-1) {
+                        return v
+                    }
+                }
+            }
+        }
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

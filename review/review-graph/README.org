@@ -7,19 +7,8 @@
 ---------------------------------------------------------------------
 Graph related questions mainly focus on depth first search and breath first search.
 ---------------------------------------------------------------------
-Common graph algorithm problems:
-1. Count regions: [[https://code.dennyzhang.com/number-of-islands][Number of Islands]]
-- Get the size of the largest region: [[https://code.dennyzhang.com/max-area-of-island][Max Area of Island]]
-- Update a specific region: [[https://code.dennyzhang.com/flood-fill][Flood Fill]]
-- Update regions for a given rule: [[https://code.dennyzhang.com/surrounded-regions][Surrounded Regions]]
-- Mark levels: [[https://code.dennyzhang.com/01-matrix][01 Matrix]]
 
-- Duplicate edges: [[https://code.dennyzhang.com/reconstruct-itinerary][Leetcode: Reconstruct Itinerary]]
-
-Typical Problems:
-- Find the minimum steps from point1 to point2: [[https://code.dennyzhang.com/word-ladder][Word Ladder]], [[https://code.dennyzhang.com/sliding-puzzle][Sliding Puzzle]]
-
-- Find all minimum paths from point1 to point2: [[https://code.dennyzhang.com/word-ladder-ii][Word Ladder II]]
+BFS/DFS/UnionFind; Binarysearch
 
 #+BEGIN_EXAMPLE
 1. How to get the initial set to examine?

@@ -10,12 +10,13 @@ Union find is helpful to build relationship among different sets
 Key operations: union, find, etc.
 ---------------------------------------------------------------------
 *Basic Abstractions*
-| Name                     | Summary                                           |
-|--------------------------+---------------------------------------------------|
-| Entities                 | Set of objects                                    |
-| Union command            | Connect two objects or two groups                 |
-| Find query               | Is there a path connecting one object to another? |
-| Disjoint sets of objects | Subsets of connected grid points                  |
+| Name                     | Summary                                                                    |
+|--------------------------+----------------------------------------------------------------------------|
+| Entities                 | Set of objects                                                             |
+| Union command            | Connect two objects or two groups                                          |
+| Find query               | Is there a path connecting one object to another?                          |
+| Disjoint sets of objects | Subsets of connected grid points                                           |
+| Reference                | [[https://www.youtube.com/watch?v=wU6udHRIkcc][YouTube: Disjoint Sets Data Structure - Weighted Union and Collapsing Find]] |
 
 *Scenarios*
 Union-find applications involve manipulating objects of all types:
