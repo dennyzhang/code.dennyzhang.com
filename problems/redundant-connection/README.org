@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     unionfind
+:type:     circleingraph, classic, graph, unionfind
 :END:
 ---------------------------------------------------------------------
 Redundant Connection
@@ -11,7 +11,8 @@ Redundant Connection
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/redundant-connection"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
+- [[https://code.dennyzhang.com/redundant-connection-ii][Leetcode: Redundant Connection II]]
+- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]], [[https://code.dennyzhang.com/review-circleingraph][#circleingraph]], [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In this problem, a tree is an undirected graph that is connected and has no cycles.
 

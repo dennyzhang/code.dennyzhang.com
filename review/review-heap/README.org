@@ -9,6 +9,20 @@ heap is a specialized tree-based data structure. Heap is useful to implement a p
 
 Key operations: find-min, get-min, insert, etc.
 ---------------------------------------------------------------------
+*Basic Abstractions*
+| Name                             | Summary        |
+|----------------------------------+----------------|
+| Build a heap                     | Time O(n)      |
+| Insert an element to binary heap | Time O(log(n)) |
+| Remove the top from binary heap  | Time O(log(n)) |
+| *Remove an item by value*        | Time O(n)      |
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name | Example |
+|------+---------|
+|      |         |
+
 *Code Skeleton*
 #+BEGIN_SRC go
 type MyNode struct {
@@ -48,9 +62,9 @@ Binary heaps:
 - From child to parent: n -> (n-1)/2
 
 Complexity:
-1. Insert an element to binary heap. Time O(log(n))
-- Remove the top from binary heap. Time O(log(n))
-- *Remove an item by value*. Time O(n)
+1. 
+- 
+- 
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/sliding-window-median
