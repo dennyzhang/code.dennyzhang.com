@@ -9,6 +9,9 @@ Problems Difficult To Evaluate Complexity
 ---------------------------------------------------------------------
 [display-posts tag="evaluatecomplexity" posts_per_page="20" orderby="title"]
 
+[[image-blog:Review: Problems Difficult To Evaluate Complexity][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-complexity/memory-allocation.jpg]]
+- All global and static data variables are allocated memory in *DATA segment*
+
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 
 #+BEGIN_HTML

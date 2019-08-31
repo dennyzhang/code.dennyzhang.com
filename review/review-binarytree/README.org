@@ -12,8 +12,47 @@ Binary Tree Traversal: Preorder, Inorder, Postorder, Level Order, Vertical Order
 Only get the rightmost node at each level. Only get the leftmost node at each level, etc.
 
 We might also see interesting requirements about updating binarytree. e,g, [[https://code.dennyzhang.com/populating-next-right-pointers-in-each-node-ii/][add a pointer to next]], [[https://code.dennyzhang.com/recover-binary-search-tree/][correct two nodes]], [[https://code.dennyzhang.com/delete-node-in-a-bst/][delete a node]], etc.
-
 ---------------------------------------------------------------------
+*Basic Abstractions*
+| Name                     | Summary                                           |
+|--------------------------+---------------------------------------------------|
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name                                 | Example |
+|--------------------------------------+---------|
+| Whether or not checking node is null |         |
+
+#+BEGIN_SRC c++
+// In-order traversal
+// terminate when node is null
+// function calls against both non-null pointers and null pointers
+void inorder(node *r) {
+  if (r == NULL)
+    return;
+  inorder(r->left);
+  printf("%d", r->data);
+  inorder(r->right);
+}
+#+END_SRC
+
+#+BEGIN_SRC c++
+// In-order traversal
+// terminate when node is null or a leaf
+// function calls against non-null pointers only
+void inorder(node *r) {
+  if (r == NULL)
+    return;
+  if (r->left != NULL) {
+    inorder(r->left);
+  }
+  printf("%d", r->data);
+  if (r->right != NULL) {
+    inorder(r->right);
+  }
+}
+#+END_SRC
+
 Personally I like level-order (or BFS) very much. 
 (See all bfs problems: [[https://code.dennyzhang.com/tag/bfs][#bfs]])
 

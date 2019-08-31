@@ -5,8 +5,46 @@
 :type: recursive, review
 :END:
 ---------------------------------------------------------------------
-Solving problems in a recursive way will help us to think in an easier way.
+Recursion is a problem solving technique, where solutino of a larger problem is defined in terms of smaller instances of itself.
 ---------------------------------------------------------------------
+*Basic Abstractions*
+| Name                             | Summary                                                                 |
+|----------------------------------+-------------------------------------------------------------------------|
+| Recursive function               | Visualize a larger problem into a smaller one of *the exact same type*  |
+| Terminating condition            | Function stops calling itself when the terminating condition is reached |
+| Head recursion                   | When recursive call is made before it performs its own task             |
+| Tail recursion                   | When recursive call is made after it performs its own task              |
+| Tail recursion vs iterative loop | tail recursion can be easily re-write in form of a loop                 |
+
+#+BEGIN_SRC c++
+// traverse a linked list
+// head recursion
+void traverse(Node* head) {
+  if head != NULL {
+     traverse(head->next);
+     printf("%d", head->data);
+  }
+}
+#+END_SRC
+
+#+BEGIN_SRC c++
+// traverse a linked list
+// tail recursion
+void traverse(Node* head) {
+  if head != NULL {
+     printf("%d", head->data);
+     traverse(head->next);
+  }
+}
+#+END_SRC
+Never miss the terminating condition, else the function may fall into infinite recursion.
+
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name            | Example |
+|-----------------+---------|
+| Recursive vs DP |         |
 
 [[color:#c7254e][Key Questions:]]
 - What are your base cases?
