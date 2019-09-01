@@ -7,8 +7,18 @@
 ---------------------------------------------------------------------
 Slidingwindow Problems
 ---------------------------------------------------------------------
-- One loop vs two loop?
-- Move pointer1 to match the other, or the other way around
+*Basic Abstractions*
+| Name | Summary |
+|------+---------|
+|      |         |
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name                                                      | Example                            |
+|-----------------------------------------------------------+------------------------------------|
+| How to initialize the time window?                        |                                    |
+| The length of timewindow may not be fixed                 | [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]] |
+| Move pointer1 to match the other, or the other way around |                                    |
 
 See all slidingwindow problems: [[https://code.dennyzhang.com/tag/greedy/][#slidingwindow]]
 [display-posts tag="slidingwindow" posts_per_page="100" orderby="title"]

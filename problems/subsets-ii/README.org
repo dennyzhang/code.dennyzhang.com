@@ -40,26 +40,33 @@ Credits To: [[https://leetcode.com/problems/subsets-ii/description/][leetcode.co
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/subsets-ii
-## Basic Ideas:
-##
-## Complexity:
-class Solution:
-    def subsetsWithDup(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        length = len(nums)
-        if length == 0: return [[]]
-        res = []
-        for element in self.subsetsWithDup(nums[1:]):
-            if element not in res: res.append(element)
-            
-            element2 = sorted([nums[0]] + element)
-            if element2 not in res: res.append(element2)
-        return res
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/subsets-ii
+// Basic Ideas: dfs + backtracking
+//
+//  No need to use hashmap
+//
+// Complexity: Time O(pow(2, n)), Space O(pow(2, n))
+import "sort"
+func dfs(combination []int, nums []int, pos int, res *[][]int) {
+    combination2 := make([]int, len(combination))
+    copy(combination2, combination)
+    *res = append(*res, combination2)
+
+    for i:=pos; i<len(nums); i++ {
+        if i>pos && nums[i] == nums[i-1] { continue }
+        combination = append(combination, nums[i])
+        dfs(combination, nums, i+1, res)
+        combination = combination[0:len(combination)-1]
+    }
+}
+
+func subsetsWithDup(nums []int) [][]int {
+    res := [][]int{}
+    sort.Ints(nums)
+    dfs([]int{}, nums, 0, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

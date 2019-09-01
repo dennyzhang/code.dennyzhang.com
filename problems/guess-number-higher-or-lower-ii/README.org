@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, inspiring, dp2order, redo, minmax, classic
+:type:     game, inspiring, redo, minmax, classic
 :END:
 ---------------------------------------------------------------------
 Guess Number Higher or Lower
@@ -13,7 +13,7 @@ Guess Number Higher or Lower
 Similar Problems:
 - [[https://code.dennyzhang.com/review-minmax][Review: minmax Problems]]
 - [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/dp2order][#dp2order]], [[https://code.dennyzhang.com/tag/minmax][#minmax]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/minmax][#minmax]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 We are playing the Guess Game. The game is as follows:
 

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, inspiring, minmax, dp2order
+:type:     game, inspiring, minmax
 :END:
 ---------------------------------------------------------------------
 Predict the Winner
@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/target-sum][Target Sum]]
 - [[https://code.dennyzhang.com/review-minmax][Review: minmax Problems]]
 - [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/minmax][#minmax]], [[https://code.dennyzhang.com/tag/dp2order][#dp2order]]
+- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/minmax][#minmax]]
 ---------------------------------------------------------------------
 Given an array of scores that are non-negative integers. Player 1 picks one of the numbers from either end of the array followed by the player 2 and then player 1 and so on. Each time a player picks a number, that number will not be available for the next player. This continues until all the scores have been chosen. The player with the maximum score wins.
 

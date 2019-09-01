@@ -1,24 +1,46 @@
-* Leetcode: Template                                              :BLOG:Medium:
+* Leetcode: Divide Array Into Increasing Sequences               :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     game, inspiring
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Divide Array Into Increasing Sequences
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/divide-array-into-increasing-sequences"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Given a non-decreasing array of positive integers nums and an integer K, find out if this array can be divided into one or more disjoint increasing subsequences of length at least K.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [1,2,2,3,3,4,4], K = 3
+Output: true
+Explanation: 
+The array can be divided into the two subsequences [1,2,3,4] and [2,3,4] with lengths at least 3 each.
+#+END_EXAMPLE
 
-Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [5,6,6,7,8], K = 3
+Output: false
+Explanation: 
+There is no way to divide the array using the conditions required.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= nums.length <= 10^5
+- 1 <= K <= nums.length
+- 1 <= nums[i] <= 10^5
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/divide-array-into-increasing-sequences][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/divide-array-into-increasing-sequences/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
@@ -40,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/example
+// Blog link: https://code.dennyzhang.com/divide-array-into-increasing-sequences
 
 #+END_SRC
 

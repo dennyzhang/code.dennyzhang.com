@@ -1,4 +1,4 @@
-* Series: Word Distance & Follow-up                             :BLOG:Series:
+* Series: Edit Distance Of Two Strings & Follow-up              :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -7,8 +7,15 @@
 ---------------------------------------------------------------------
 Word Distance & Follow-up
 ---------------------------------------------------------------------
-See all Word Distance problems & follow-up: [[https://code.dennyzhang.com/tag/worddistance/][#worddistance]]
-[display-posts tag="worddistance" posts_per_page="100" orderby="title"]
+*Questions*
+| Name                                           | Example                                                       |
+|------------------------------------------------+---------------------------------------------------------------|
+| =s1[i...], s2[j...]= vs =s1[0...i], s2[0...j]= | =s1[i]= vs =s1[i-1]=, Space =O(min(n, m)))= vs Space =O(n*m)= |
+| Whether we need to the active initialization   | [[https://code.dennyzhang.com/longest-common-subsequence][Leetcode: Longest Common Subsequence]]                          |
+| Space complexity: O(n*m) or O(min(n, m))       | [[https://code.dennyzhang.com/shortest-common-supersequence][Leetcode: Shortest Common Supersequence]]                       |
+
+See all edit distance problems & follow-up: [[https://code.dennyzhang.com/tag/editdistance/][#editdistance]]
+[display-posts tag="editdistance" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

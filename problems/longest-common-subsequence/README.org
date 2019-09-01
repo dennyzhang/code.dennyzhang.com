@@ -1,0 +1,130 @@
+* Leetcode: Longest Common Subsequence                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, editdistance, lcs
+:END:
+---------------------------------------------------------------------
+Longest Common Subsequence
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-common-subsequence"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]], [[https://code.dennyzhang.com/tag/lcs][#lcs]]
+---------------------------------------------------------------------
+Given two strings text1 and text2, return the length of their longest common subsequence.
+
+A subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, "ace" is a subsequence of "abcde" while "aec" is not). A common subsequence of two strings is a subsequence that is common to both strings.
+
+If there is no common subsequence, return 0.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: text1 = "abcde", text2 = "ace" 
+Output: 3  
+Explanation: The longest common subsequence is "ace" and its length is 3.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: text1 = "abc", text2 = "abc"
+Output: 3
+Explanation: The longest common subsequence is "abc" and its length is 3.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: text1 = "abc", text2 = "def"
+Output: 0
+Explanation: There is no such common subsequence, so the result is 0.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= text1.length <= 1000
+- 1 <= text2.length <= 1000
+- The input strings consist of lowercase English characters only.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-common-subsequence][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/longest-common-subsequence/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-common-subsequence
+// Basic Ideas: 2D dynamic programming
+//  Optimal substructure:
+//      s1[0...i]
+//      s2[0...j]
+//      if s1[i] == s2[j], only need to know the case of s1[0...i-1], s2[0...j-1]
+//      Otherwise, evaluate two cases: s1[0...i], s2[0...j-1]; s1[0...i-1], s2[0...j]
+//  Termination condition:
+//      s1[0...0], s2[0...0]
+// Complexity: Time O(n*m), Space O(min(n, m))
+func longestCommonSubsequence(text1 string, text2 string) int {
+    if len(text2) > len(text1) {
+        text1, text2 = text2, text1
+    }
+    dp := make([]int, len(text2)+1)
+    for i:=0; i<len(text1); i++ {
+        l := make([]int, len(dp))
+        copy(l, dp)
+        for j:=1; j<len(dp); j++ {
+            // text1[0:i+1] text2[0:j+1]
+            if text1[i] == text2[j-1] {
+                if i != 0 {
+                    dp[j] = l[j-1]+1
+                } else {
+                    dp[j] = 1
+                }
+            } else {
+                dp[j] = l[j]
+                if dp[j] < dp[j-1] {
+                    dp[j] = dp[j-1]
+                }
+            }
+        }
+    }
+    return dp[len(dp)-1]
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-common-subsequence
+// Basic Ideas: 2D dynamic programming
+//  dp(i, j) <- s1[0:i+1] s2[0:j+1]
+//      if s1[i] == s2[j], dp(i-1, j-1)+1
+//      if s1[i] != s2[j], max(dp(i, j-1), dp(i-1, j-1))
+//  Notice: Use padding to avoid lengthy initialization
+// Complexity: Time O(n*m), Space O(n*m)
+func longestCommonSubsequence(text1 string, text2 string) int {
+    dp := make([][]int, len(text1)+1)
+    for i, _ := range dp {
+        dp[i] = make([]int, len(text2)+1)
+    }
+    for i:=1; i<len(dp); i++ {
+        for j:=1; j<len(dp[0]); j++ {
+            if text1[i-1] == text2[j-1] {
+                dp[i][j] = dp[i-1][j-1]+1
+            } else {
+                dp[i][j] = dp[i-1][j]
+                if dp[i][j]<dp[i][j-1] {
+                    dp[i][j] = dp[i][j-1]
+                }
+            }
+        }
+    }
+    return dp[len(dp)-1][len(dp[0])-1]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

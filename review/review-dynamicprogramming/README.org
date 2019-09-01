@@ -15,6 +15,18 @@ The main idea behind DP is to save duplicated caculations.
 
 Trade space for time.
 ---------------------------------------------------------------------
+*Basic Abstractions*
+| Name                             | Summary |
+|----------------------------------+---------|
+| *optimal substructure*           |         |
+| *DP* vs *recursive+memorization* |         |
+
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name                                        | Example                                                 |
+|---------------------------------------------+---------------------------------------------------------|
+
 [[color:#c7254e][Key Parts In DP Problems]]:
 1. *Key observation* is crucial. Watch careful for how the states transit?
 - Walk through with smaller cases manually. And detect the pattern.
@@ -62,14 +74,14 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 * notes                                                                   :noexport:
 #+BEGIN_EXAMPLE
 动态规划
-动态规划（dynamic programming）多应用于子问题重叠的情况，每个子问题只求解一次。动态规划方法通常用来求解最优化问题的一个最优解。
+动态规划（dynamic programming）多应用于子问题重叠的情况,每个子问题只求解一次.动态规划方法通常用来求解最优化问题的一个最优解.
 
-设计动态规划方法的4个步骤：
+设计动态规划方法的4个步骤:
 
 刻画一个最优解的结构特征
 递归地定义最优解的值
-计算最优解的值，通常采用自底向上的方法
+计算最优解的值,通常采用自底向上的方法
 利用计算出的信息构造一个最优解
 最优子结构（optimal substructure）
-问题的最优解由相关子问题的最优解组合而成，而这些子问题可以独立求解。
+问题的最优解由相关子问题的最优解组合而成,而这些子问题可以独立求解.
 #+END_EXAMPLE

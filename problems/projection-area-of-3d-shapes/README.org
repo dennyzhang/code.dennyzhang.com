@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, inspiring, geometry
+:type:     math, geometry, array
 :END:
 ---------------------------------------------------------------------
 Projection Area of 3D Shapes
@@ -11,7 +11,7 @@ Projection Area of 3D Shapes
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/projection-area-of-3d-shapes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/geometry][#geometry]]
+- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/geometry][#geometry]], [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 
 On a N * N grid, we place some 1 * 1 * 1 cubes that are axis-aligned with the x, y, and z axes.
@@ -72,10 +72,64 @@ Credits To: [[https://leetcode.com/problems/projection-area-of-3d-shapes/descrip
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/projection-area-of-3d-shapes
+// Basic Ideas: math
+//  Notice: the matrix is a square, instead of a rectangle
+// Complexity: Time O(n*n), Space O(1)
+func projectionArea(grid [][]int) int {
+    res := 0
+    n := len(grid)
+    
+    for i:=0; i<n; i++ {
+        max_row, max_col := -1<<31, -1<<31
+        for j:=0; j<n; j++ {
+            if grid[i][j] > max_row {
+                max_row = grid[i][j]
+            }
+            if grid[j][i] > max_col {
+                max_col = grid[j][i]
+            }
+            if grid[i][j] != 0 {
+                res++
+            }
+        }
+        res += max_row + max_col
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/projection-area-of-3d-shapes
-
+// Basic Ideas: math
+// Complexity: Time O(n*n), Space O(1)
+func projectionArea(grid [][]int) int {
+    res := 0
+    for _, row := range grid {
+        max := -1<<31
+        for _, v := range row {
+            if v > max {
+                max = v
+            }
+            if v != 0 {
+                res++
+            }
+        }
+        res += max
+    }
+    
+    for j:=0; j<len(grid[0]); j++ {
+        max := -1<<31
+        for i:=0; i<len(grid); i++ {
+            if grid[i][j] > max {
+                max = grid[i][j]
+            }
+        }
+        res += max
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, palindrome
+:type:     dynamicprogramming, palindrome, editdistance
 :END:
 ---------------------------------------------------------------------
 Longest Palindromic Subsequence
@@ -13,7 +13,7 @@ Longest Palindromic Subsequence
 Similar Problems:
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 - [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/palindrome][#palindrome]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/palindrome][#palindrome]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.
 
@@ -44,9 +44,48 @@ Credits To: [[https://leetcode.com/problems/longest-palindromic-subsequence/desc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-palindromic-subsequence
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-palindromic-subsequence
+// Basic Ideas: dynamic programming
+//   optimal substructure:
+//        Problem: the value of s[j...i]
+//        if s[i] == s[j-1], f(s[j...i-1])+2
+//        if s[i] != s[j-1], max(f(s[j...i-1]), f(s[j+1...i]))
+//   Terminiation condition:
+//        For s[j...i], when i==j, return 1
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func longestPalindromeSubseq(s string) int {
+    dp := make([][]int, len(s))
+    for i, _ := range dp {
+        l := make([]int, len(s))
+        for j, _ := range l {
+            l[j] = 1
+        }
+        dp[i] = l
+    }
+    // dp[i][j]: s[j], s[j+1], s[j+2], ... s[i]
+    for i:=1; i<len(s); i++ {
+        for j:=i-1; j>=0; j-- {
+            if s[i] == s[j] {
+                // s[j], s[j+1...i-1], s[i]
+                v := 2
+                if j+1 <= i-1 {
+                    v += dp[i-1][j+1]
+                }
+                dp[i][j] = v
+            } else {
+                // s[j+1...i]
+                dp[i][j] = dp[i][j+1]
+                if dp[i][j] < dp[i-1][j] {
+                    // s[j...i-1]
+                    dp[i][j] = dp[i-1][j]
+                }
+            }
+        }
+    }
+    return dp[len(s)-1][0]
+}
 #+END_SRC
 
 #+BEGIN_HTML

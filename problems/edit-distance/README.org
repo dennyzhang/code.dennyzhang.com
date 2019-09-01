@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, dp2order, classic, redo, padplaceholder, worddistance
+:type:     dynamicprogramming, classic, redo, padplaceholder, editdistance
 :END:
 ---------------------------------------------------------------------
 Edit Distance
@@ -11,11 +11,11 @@ Edit Distance
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/edit-distance"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/followup-worddistance][Series: Word Distance & Follow-up]]
+- [[https://code.dennyzhang.com/followup-editdistance][Series: Edit Distance Of Two Strings & Follow-up]]
 - [[https://code.dennyzhang.com/delete-operation-for-two-strings][Delete Operation for Two Strings]]
 - [[https://code.dennyzhang.com/unique-paths][Unique Paths]]
 - [[https://code.dennyzhang.com/one-edit-distance][One Edit Distance]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/dp2order][#dp2order]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]], [[https://code.dennyzhang.com/tag/worddistance][#worddistance]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2. (each operation is counted as 1 step.)
 

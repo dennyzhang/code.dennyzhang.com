@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, dp2order, padplaceholder, worddistance
+:type:     dynamicprogramming, padplaceholder, editdistance
 :END:
 ---------------------------------------------------------------------
 Delete Operation for Two Strings
@@ -11,11 +11,11 @@ Delete Operation for Two Strings
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/delete-operation-for-two-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/followup-worddistance][Series: Word Distance & Follow-up]]
-- [[https://code.dennyzhang.com/edit-distance][Edit Distance]]
+- [[https://code.dennyzhang.com/followup-editdistance][Series: Edit Distance Of Two Strings & Follow-up]]
+- [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]]
 - [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
 - [[https://code.dennyzhang.com/interleaving-string][Interleaving String]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/dp2order][#dp2order]], [[https://code.dennyzhang.com/tag/worddistance][#worddistance]]
+- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given two words word1 and word2, find the minimum number of steps required to make word1 and word2 the same, where in each step you can delete one character in either string.
 #+BEGIN_EXAMPLE

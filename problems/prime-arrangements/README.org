@@ -1,0 +1,128 @@
+* Leetcode: Prime Arrangements                                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     prime, math
+:END:
+---------------------------------------------------------------------
+Prime Arrangements
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/prime-arrangements"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/prime][#prime]], [[https://code.dennyzhang.com/tag/math][#math]]
+---------------------------------------------------------------------
+Return the number of permutations of 1 to n so that prime numbers are at prime indices (1-indexed.)
+
+(Recall that an integer is prime if and only if it is greater than 1, and cannot be written as a product of two positive integers both smaller than it.)
+
+Since the answer may be large, return the answer modulo 10^9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 5
+Output: 12
+Explanation: For example [1,2,5,4,3] is a valid permutation, but [5,2,3,4,1] is not because the prime number 5 is at index 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 100
+Output: 682289015
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 100
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/prime-arrangements][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/prime-arrangements/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/prime-arrangements
+// Basic Ideas: math prime
+//   Find how many numbers are prime, say m
+//   The result would be m!*(n-m)!
+//   Check whether a number is prime. sqrt(n)
+// Complexity: Time ? Space O(1)
+import "math"
+func numPrimeArrangements(n int) int {
+    mod := int(math.Pow(10, 9)+7)
+    isPrimes := make([]bool, n+1)
+    for i, _ := range isPrimes {
+        isPrimes[i] = true
+    }
+    isPrimes[0], isPrimes[1] = false, false
+    for i:=2; i*i <= n; i++ {
+        if isPrimes[i] {
+            for j:=i*i; j<=n; j+=i {
+                isPrimes[j] = false
+            }
+        }
+    }
+    cnt := 0
+    for i, _ := range isPrimes {
+        if isPrimes[i] {
+            cnt++
+        }
+    }
+    res := 1
+    for i:=1; i<=cnt; i++ {
+        res = (res*i)%mod
+    }
+    for i:=1; i<=n-cnt; i++ {
+        res = (res*i)%mod
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/prime-arrangements
+// Basic Ideas: math prime
+//   Find how many numbers are prime, say m
+//   The result would be m!*(n-m)!
+//   Check whether a number is prime. sqrt(n)
+// Complexity: Time ? Space O(1)
+import "math"
+func numPrimeArrangements(n int) int {
+    mod := int(math.Pow(10, 9)+7)
+    factors := []int{2, 3, 5, 7, 11}
+    cnt := 0
+    for i:=2; i<=n; i++ {
+        for j, v := range factors {
+            if i==v {
+                cnt++
+                break
+            }
+            if i%v == 0 {
+                break
+            }
+            if j == len(factors)-1 {
+                cnt++
+            }
+        }
+    }
+    res := 1
+    for i:=1; i<=cnt; i++ {
+        res = (res*i)%mod
+    }
+    for i:=1; i<=n-cnt; i++ {
+        res = (res*i)%mod
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

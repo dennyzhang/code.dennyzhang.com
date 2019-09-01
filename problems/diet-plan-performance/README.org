@@ -1,0 +1,99 @@
+* Leetcode: Diet Plan Performance                               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     slidingwindow
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/diet-plan-performance"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]
+---------------------------------------------------------------------
+A dieter consumes calories[i] calories on the i-th day.  For every consecutive sequence of k days, they look at T, the total calories consumed during that sequence of k days:
+
+If T < lower, they performed poorly on their diet and lose 1 point; 
+If T > upper, they performed well on their diet and gain 1 point;
+Otherwise, they performed normally and there is no change in points.
+Return the total number of points the dieter has after all calories.length days.
+
+Note that: The total points could be negative.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: calories = [1,2,3,4,5], k = 1, lower = 3, upper = 3
+Output: 0
+Explaination: calories[0], calories[1] < lower and calories[3], calories[4] > upper, total points = 0.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: calories = [3,2], k = 2, lower = 0, upper = 1
+Output: 1
+Explaination: calories[0] + calories[1] > upper, total points = 1.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: calories = [6,5,0,0], k = 2, lower = 1, upper = 5
+Output: 0
+Explaination: calories[0] + calories[1] > upper, calories[2] + calories[3] < lower, total points = 0.
+#+END_EXAMPLE
+ 
+Constraints:
+
+1. 1 <= k <= calories.length <= 10^5
+- 0 <= calories[i] <= 20000
+- 0 <= lower <= upper
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/diet-plan-performance][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/diet-plan-performance/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/diet-plan-performance
+// Basic Ideas: sliding window
+//
+//   Notice:  What if len(calories)%k != 0
+//   The problem description is confusing. 
+//   What it means: say 7 days, k = 3, there would be 5 (n-k+1) consecutive sequences
+//   
+// Complexity: Time O(n), Space O(1)
+func dietPlanPerformance(calories []int, k int, lower int, upper int) int {
+    res := 0
+    sum := 0
+    for i, v := range calories {
+        // add new
+        sum += v       
+        // remove old
+        if i>=k {
+            sum -= calories[i-k]
+        }
+        if i>=k-1 {
+            // collect result
+            if sum < lower {
+                res--
+            }
+            if sum > upper {
+                res++
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -5,12 +5,28 @@
 :type: #blog, review
 :END:
 ---------------------------------------------------------------------
-Problems Difficult To Evaluate Complexity
+Problems Difficult To Evaluate Time/Space Complexity
 ---------------------------------------------------------------------
-[display-posts tag="evaluatecomplexity" posts_per_page="20" orderby="title"]
+*Basic Abstractions*
+| Name                           | Summary                                                              |
+|--------------------------------+----------------------------------------------------------------------|
+| Load-time variables            | global, static data variables                                        |
+| dynamic memory/run-time memory | allocated memory at run time from malloc(), calloc(), realloc(), etc |
+| Function Activation Record     |                                                                      |
 
 [[image-blog:Review: Problems Difficult To Evaluate Complexity][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-complexity/memory-allocation.jpg]]
-- All global and static data variables are allocated memory in *DATA segment*
+
+Data segment:
+1. All global and static data variables are allocated memory in *DATA segment*
+- Memory of data segment is allocated before main function is called
+- Size of data segment is fixed at load time and doesn't change when program is excuting
+
+Stack segment:
+1. When a function is called, its Activation Record is created and pushed on the top of stack
+- When a function returns then the corresponding Activation Record is poped from the stack
+- Stack Pointer(SP register) keeps track of the top of the Stack.
+
+[display-posts tag="evaluatecomplexity" posts_per_page="20" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 
