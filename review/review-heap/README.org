@@ -9,6 +9,10 @@ heap is a specialized tree-based data structure. Heap is useful to implement a p
 
 Key operations: find-min, get-min, insert, etc.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-heap"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 *Basic Abstractions*
 | Name                             | Summary        |
 |----------------------------------+----------------|

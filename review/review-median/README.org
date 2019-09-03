@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 Review: Median Problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-median"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 [[color:#c7254e][Key Observations For Median]]:
 - Examine nodes before and after medians, we know: *abs(count(left nodes) - count(right nodes)) <= 1*
 [[https://code.dennyzhang.com/median-employee-salary][Median Employee Salary]]

@@ -15,6 +15,9 @@ Similar Posts:
 - [[https://code.dennyzhang.com/review-mistakes][Review: My Common Python Coding Mistakes]]
 - [[https://code.dennyzhang.com/tag/python][Tag: #python]]
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-python3"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 
 - 1. More strict rule when print for Python3
 #+BEGIN_SRC python

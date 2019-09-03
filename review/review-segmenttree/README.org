@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Review Segment Tree code problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-segmenttree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 Segment Tree supports us to apply changes to a sub-range with *O(log(n)) complexity*, instead of O(n).
 
 See all segmenttree problems: [[https://code.dennyzhang.com/tag/segmenttree][segmenttree]]

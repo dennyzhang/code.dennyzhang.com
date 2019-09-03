@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Word Distance & Follow-up
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-editdistance"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 *Questions*
 | Name                                           | Example                                                       |
 |------------------------------------------------+---------------------------------------------------------------|

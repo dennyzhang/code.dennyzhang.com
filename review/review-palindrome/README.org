@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Review Palindrome code problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-palindrome"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 - Validate whether a string is palindrome: 
   [[https://code.dennyzhang.com/valid-palindrome][Leetcode: Valid Palindrome]]
   [[https://code.dennyzhang.com/valid-palindrome-ii][Leetcode: Valid Palindrome II]]

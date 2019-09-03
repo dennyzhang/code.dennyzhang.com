@@ -13,6 +13,10 @@ Only get the rightmost node at each level. Only get the leftmost node at each le
 
 We might also see interesting requirements about updating binarytree. e,g, [[https://code.dennyzhang.com/populating-next-right-pointers-in-each-node-ii/][add a pointer to next]], [[https://code.dennyzhang.com/recover-binary-search-tree/][correct two nodes]], [[https://code.dennyzhang.com/delete-node-in-a-bst/][delete a node]], etc.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-binarytree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 *Basic Abstractions*
 | Name                     | Summary                                           |
 |--------------------------+---------------------------------------------------|

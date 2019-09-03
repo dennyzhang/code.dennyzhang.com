@@ -2,11 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog, review
+:type:  review
 :END:
 ---------------------------------------------------------------------
 My general general steps and main takeaways  from solving all the leetcode problems.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-general"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 [[color:#c7254e][General Steps:]]
 1. *Observe*: Manually walk through sample data. Detect the characteristics. [[color:#c7254e][This is the most important thing.]]
 - *Coding*

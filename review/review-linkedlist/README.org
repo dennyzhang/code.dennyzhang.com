@@ -9,6 +9,10 @@ Linked List demands skills of managing pointers very well.
 
 Most problems are not that hard for you to solve. But to get bug-free, you need to think it through.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-linkedlist"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 [[color:#c7254e][Key Points]]:
 - Add a dummyNode, if head node might be changed
 - How to process current node?

@@ -2,11 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog, review
+:type: review
 :END:
 ---------------------------------------------------------------------
 Problems Difficult To Evaluate Time/Space Complexity
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-complexity"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 *Basic Abstractions*
 | Name                           | Summary                                                              |
 |--------------------------------+----------------------------------------------------------------------|

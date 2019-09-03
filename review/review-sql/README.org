@@ -2,11 +2,15 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: #blog, sql, review
+:type: sql, review
 :END:
 ---------------------------------------------------------------------
 Review: SQL Problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-sql"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 [[color:#c7254e][SQL Demands Mindsets Beyond Of Our Intuitive Thinkings]]:
 - [[https://code.dennyzhang.com/consecutive-available-seats][Consecutive Available Seats]]
 - [[https://code.dennyzhang.com/exchange-seats][Exchange Seats]]

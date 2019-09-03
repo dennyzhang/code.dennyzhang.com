@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Island & Follow-up
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-island"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 See all island problems & follow-up: [[https://code.dennyzhang.com/tag/calculator/][#island]]
 [display-posts tag="island" posts_per_page="100" orderby="title"]
 

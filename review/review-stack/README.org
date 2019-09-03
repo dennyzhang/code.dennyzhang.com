@@ -9,6 +9,10 @@ The concept of stack is simple. But the problem could be tricky.
 
 It's not difficult, but might involve lots of details.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-stack"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 Key points:
 - When pushing items to stack, whether we need delayed push? (See [[https://code.dennyzhang.com/decode-string][Decode String]])
 - Don't forget to push the last token

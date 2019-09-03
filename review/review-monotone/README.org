@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 Review: Monotone Stack Or Monotone Queue Problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-monotone"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 *Basic Abstractions*
 | Name                           | Summary                                                  |
 |--------------------------------+----------------------------------------------------------|

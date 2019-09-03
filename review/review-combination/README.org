@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 Combinations and Permutations Problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-combination"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 *Sample Problems:*
 - [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
 

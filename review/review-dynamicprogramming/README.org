@@ -9,12 +9,17 @@ Dynamic programming problems scare me A LOT.
 
 Yeah, it could be quite frustrating, if you haven't found the key assertions.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-dynamicprogramming"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 Dynamic Programming is an algorithmic paradigm that solves a given complex problem by breaking it into subproblems and stores the results of subproblems to avoid computing the same results again. 
 
 The main idea behind DP is to save duplicated caculations.
 
 Trade space for time.
 ---------------------------------------------------------------------
+
 *Basic Abstractions*
 | Name                             | Summary |
 |----------------------------------+---------|

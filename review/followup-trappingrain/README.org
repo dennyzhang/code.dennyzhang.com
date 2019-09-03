@@ -7,7 +7,10 @@
 ---------------------------------------------------------------------
 Trapping Rain problems & Follow-up
 ---------------------------------------------------------------------
-See all trappingrain problems & follow-up: [[https://code.dennyzhang.com/tag/calculator/][#trappingrain]]
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-trappingrain"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+See all trappingrain problems & follow-up: [[https://code.dennyzhang.com/tag/calculator/][#trappingra[[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]]
 [display-posts tag="trappingrain" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

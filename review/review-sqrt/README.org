@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 sqrt problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-sqrt"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 See all sqrt problems: [[https://code.dennyzhang.com/tag/sqrt/][#sqrt]]
 [display-posts tag="sqrt" posts_per_page="100" orderby="title"]
 

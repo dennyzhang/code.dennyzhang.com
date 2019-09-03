@@ -9,6 +9,10 @@ Trie tree is good at prefix-searching requirements.
 
 Key operations: insert, search, prefix, getHeight, etc.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-trie"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 [[color:#c7254e][Key Points]]:
 - Understand why we have is_word property in the TrieNode datastructure.
 

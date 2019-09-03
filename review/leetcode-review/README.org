@@ -6,3 +6,6 @@
 :END:
 ---------------------------------------------------------------------
 [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4]]
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/leetcode-review"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML

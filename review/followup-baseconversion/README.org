@@ -7,6 +7,9 @@
 ---------------------------------------------------------------------
 Base Conversion problems
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-baseconversion"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
 See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
 [display-posts tag="baseconversion" posts_per_page="100" orderby="title"]
 

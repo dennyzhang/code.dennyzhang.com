@@ -7,6 +7,10 @@
 ---------------------------------------------------------------------
 There are some tricks which are not intuitive. But quite useful.
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-interesting"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
 [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]]: Padding items with place holders, thus we can simplify the corner cases.
 
 [display-posts tag="padplaceholder" posts_per_page="100" orderby="title"]
