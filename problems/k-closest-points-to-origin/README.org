@@ -11,7 +11,7 @@ K Closest Points to Origin
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/k-closest-points-to-origin"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/quicksort][#quicksort]], [[https://code.dennyzhang.com/tag/heap][#heap]]
+- Tag: [[https://code.dennyzhang.com/tag/quicksort][#quicksort]], [[https://code.dennyzhang.com/review-heap][#heap]]
 ---------------------------------------------------------------------
 We have a list of points on the plane.  Find the K closest points to the origin (0, 0).
 

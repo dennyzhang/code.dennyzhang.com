@@ -16,7 +16,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/game-play-analysis-iii][Leetcode: Game Play Analysis III]]
 - [[https://code.dennyzhang.com/game-play-analysis-iv][Leetcode: Game Play Analysis IV]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 Table: Activity
 #+BEGIN_EXAMPLE

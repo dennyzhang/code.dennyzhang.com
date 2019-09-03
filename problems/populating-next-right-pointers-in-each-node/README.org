@@ -12,7 +12,7 @@ Populating Next Right Pointers in Each Node
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a binary tree
 #+BEGIN_EXAMPLE

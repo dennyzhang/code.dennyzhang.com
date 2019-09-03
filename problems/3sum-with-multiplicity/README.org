@@ -13,7 +13,7 @@
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://code.dennyzhang.com/sum-of-subarray-minimums][Sum of Subarray Minimums]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
 ---------------------------------------------------------------------
 Given an integer array A, and an integer target, return the number of tuples i, j, k  such that i < j < k and A[i] + A[j] + A[k] == target.
 

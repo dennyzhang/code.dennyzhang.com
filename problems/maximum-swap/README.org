@@ -13,7 +13,7 @@ Maximum Swap
 Similar Problems:
 - [[https://code.dennyzhang.com/swap-adjacent-in-lr-string][Swap Adjacent in LR String]]
 - [[https://code.dennyzhang.com/global-and-local-inversions][Global and Local Inversions]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a non-negative integer, you could swap two digits at most once to get the maximum valued number. Return the maximum valued number you could get.
 

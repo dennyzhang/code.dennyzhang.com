@@ -12,7 +12,7 @@ Reverse Only Letters
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/reverse-string][Leetcode: Reverse String]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/reverseitem][#reverseitem]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/reverseitem][#reverseitem]]
 ---------------------------------------------------------------------
 Given a string S, return the "reversed" string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
 

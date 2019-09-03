@@ -11,7 +11,7 @@ All Nodes Distance K in Binary Tree
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/all-nodes-distance-k-in-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 We are given a binary tree (with root node root), a target node, and an integer value `K`.
 

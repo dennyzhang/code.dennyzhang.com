@@ -12,7 +12,7 @@ Groups of Special-Equivalent Strings
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/buddy-strings][Leetcode: Buddy Strings]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/buddystring][#buddystring]], [[https://code.dennyzhang.com/tag/interview][#interview]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/buddystring][#buddystring]], [[https://code.dennyzhang.com/tag/interview][#interview]]
 ---------------------------------------------------------------------
 You are given an array A of strings.
 

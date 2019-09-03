@@ -13,7 +13,7 @@ Bold Words in String
 Similar Problems:
 - [[https://code.dennyzhang.com/add-bold-tag-in-string][Add Bold Tag in String]]
 - [[https://code.dennyzhang.com/merge-intervals][Merge Intervals]]
-- Tag: [[https://code.dennyzhang.com/tag/addtag][#addtag]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/addtag][#addtag]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a set of keywords words and a string S, make all appearances of all keywords in S bold. Any letters between <b> and </b> tags become bold.
 

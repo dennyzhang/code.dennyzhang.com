@@ -12,7 +12,7 @@ Given two integers n and k, return all possible combinations of k numbers out of
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
 

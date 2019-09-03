@@ -11,7 +11,7 @@ Robot Bounded In Circle
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/robot-bounded-in-circle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/robot][#robot]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/robot][#robot]]
 ---------------------------------------------------------------------
 On an infinite plane, a robot initially stands at (0, 0) and faces north.  The robot can receive one of three instructions:
 

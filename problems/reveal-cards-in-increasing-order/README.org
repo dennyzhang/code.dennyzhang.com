@@ -11,7 +11,7 @@ Reveal Cards In Increasing Order
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reveal-cards-in-increasing-order"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/zigzag][#zigzag]], [[https://code.dennyzhang.com/tag/simulation][#simulation]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/zigzag][#zigzag]], [[https://code.dennyzhang.com/tag/simulation][#simulation]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 In a deck of cards, every card has a unique integer.  You can order the deck in any order you want.
 

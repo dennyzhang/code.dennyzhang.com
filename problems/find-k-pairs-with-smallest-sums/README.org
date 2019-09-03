@@ -13,7 +13,7 @@ Find K Pairs with Smallest Sums
 Similar Problems:
 - [[https://code.dennyzhang.com/top-k-frequent-elements][Leetcode: Top K Frequent Elements]]
 - [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
 ---------------------------------------------------------------------
 You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
 

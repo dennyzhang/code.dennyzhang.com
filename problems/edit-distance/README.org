@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/delete-operation-for-two-strings][Delete Operation for Two Strings]]
 - [[https://code.dennyzhang.com/unique-paths][Unique Paths]]
 - [[https://code.dennyzhang.com/one-edit-distance][One Edit Distance]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2. (each operation is counted as 1 step.)
 

@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/water-and-jug-problem][Water and Jug Problem]]
 - [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]]
 - [[https://code.dennyzhang.com/review-mod][Review: mod Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/mod][#mod]]
+- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-mod][#mod]]
 ---------------------------------------------------------------------
 A move consists of taking a point (x, y) and transforming it to either (x, x+y) or (x+y, y).
 

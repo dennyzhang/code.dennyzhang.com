@@ -12,7 +12,7 @@ Tree traversal: right, middle, left
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/binary-search-tree-to-greater-sum-tree][Binary Search Tree to Greater Sum Tree]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/convertds][#convertds]], [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/convertds][#convertds]], [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
 

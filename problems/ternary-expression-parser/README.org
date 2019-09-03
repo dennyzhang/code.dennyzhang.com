@@ -11,7 +11,7 @@ Ternary Expression Parser
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/ternary-expression-parser"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/stack][#stack]], [[https://code.dennyzhang.com/tag/expression][#expression]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 
 Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume that the given expression is valid and only consists of digits 0-9, ?, :, T and F (T and F represent True and False respectively).

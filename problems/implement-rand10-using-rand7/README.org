@@ -12,7 +12,7 @@ Implement Rand10() Using Rand7()
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/random-pick-with-blacklist][Leetcode: Random Pick with Blacklist]]
-- Tag: [[https://code.dennyzhang.com/tag/random][#random]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/random][#random]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a function rand7 which generates a uniform random integer in the range 1 to 7, write a function rand10 which generates a uniform random integer in the range 1 to 10.
 

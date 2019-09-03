@@ -12,7 +12,7 @@ Design Circular Deque
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/design-circular-queue][Leetcode: Design Circular Queue]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design your implementation of the circular double-ended queue (deque).
 

@@ -12,7 +12,7 @@ Interleaving String
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/delete-operation-for-two-strings][Delete Operation for Two Strings]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2.
 

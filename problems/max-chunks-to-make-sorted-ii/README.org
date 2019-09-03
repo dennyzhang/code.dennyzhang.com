@@ -12,7 +12,7 @@ Max Chunks To Make Sorted II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/max-chunks-to-make-sorted][Max Chunks To Make Sorted]]
-- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given an array arr of integers (not necessarily distinct), we split the array into some number of "chunks" (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.
 

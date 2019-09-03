@@ -12,7 +12,7 @@ My Calendar III
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
 ---------------------------------------------------------------------
 Implement a MyCalendarThree class to store your events. A new event can always be added.
 

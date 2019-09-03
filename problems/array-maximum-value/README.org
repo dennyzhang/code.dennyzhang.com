@@ -11,7 +11,7 @@ Array Maximum Value
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/array-maximum-value"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Description
 Given an array a containing n positive integers, there is another array b of length n, indicating that the value of the i positive integer is b[i]. We can choose any non-intersecting interval [i, j], which needs to satisfy i < j and a[i] = a[j], then we can get all the numbers' value in intervals [i, j] , that the value of b[i] + b[i+1] + ... + b[j].

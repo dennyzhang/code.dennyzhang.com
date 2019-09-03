@@ -12,7 +12,7 @@ Map Sum Pairs
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-trie][Review: Trie Tree Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/trie][#trie]]
+- Tag: [[https://code.dennyzhang.com/review-trie][#trie]]
 ---------------------------------------------------------------------
 Implement a MapSum class with insert, and sum methods.
 

@@ -12,7 +12,7 @@ Customers Who Bought All Products
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 Table: Customer
 #+BEGIN_EXAMPLE

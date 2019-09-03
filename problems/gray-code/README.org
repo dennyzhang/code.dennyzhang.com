@@ -13,7 +13,7 @@ Gray Code
 Similar Problems:
 - [[https://code.dennyzhang.com/lexicographical-numbers][Lexicographical Numbers]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 The gray code is a binary numeral system where two successive values differ in only one bit.
 

@@ -13,7 +13,7 @@ Spiral Matrix
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-matrixtraversal][Series: Matrix Traversal & Follow-up]]
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
 #+BEGIN_EXAMPLE

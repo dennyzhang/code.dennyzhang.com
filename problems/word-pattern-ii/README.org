@@ -13,7 +13,7 @@ Word Pattern II
 Similar Problems:
 - [[https://code.dennyzhang.com/word-pattern][Word Pattern]]
 - [[https://code.dennyzhang.com/review-string][Review: String Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given a pattern and a string str, find if str follows the same pattern.
 

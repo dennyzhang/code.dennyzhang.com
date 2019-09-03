@@ -11,7 +11,7 @@ Factor Combinations
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/factor-combinations"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/backtracking][#backtracking]], [[https://code.dennyzhang.com/tag/recursive][#recursive]]
+- Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
 ---------------------------------------------------------------------
 Numbers can be regarded as product of its factors. For example,
 #+BEGIN_EXAMPLE

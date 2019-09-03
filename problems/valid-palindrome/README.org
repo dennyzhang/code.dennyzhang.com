@@ -13,7 +13,7 @@ Valid Palindrome
 Similar Problems:
 - [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
 - [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/palindrome][#palindrome]], [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 

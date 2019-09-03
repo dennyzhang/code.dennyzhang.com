@@ -12,7 +12,7 @@ Minimum ASCII Delete Sum for Two Strings
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-editdistance][Series: Edit Distance Of Two Strings & Follow-up]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given two strings s1, s2, find the lowest ASCII sum of deleted characters to make two strings equal.
 

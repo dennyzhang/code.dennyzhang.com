@@ -12,7 +12,7 @@ Binary Subarrays With Sum
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/subarray-product-less-than-k][Subarray Product Less Than K]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In an array A of 0s and 1s, how many non-empty subarrays have sum S?
 

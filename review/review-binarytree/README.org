@@ -54,7 +54,7 @@ void inorder(node *r) {
 #+END_SRC
 
 Personally I like level-order (or BFS) very much. 
-(See all bfs problems: [[https://code.dennyzhang.com/tag/bfs][#bfs]])
+(See all bfs problems: [[https://code.dennyzhang.com/review-bfs][#bfs]])
 
 Q: How to time complexity for tree problems?
 

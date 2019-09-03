@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/product-sales-analysis-ii][Leetcode: Product Sales Analysis II]]
 - [[https://code.dennyzhang.com/product-sales-analysis-iii][Leetcode: Product Sales Analysis III]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 Table: Sales
 #+BEGIN_EXAMPLE

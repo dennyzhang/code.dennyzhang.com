@@ -13,7 +13,7 @@ Integer to English Words
 Similar Problems:
 - [[https://code.dennyzhang.com/integer-to-roman][Integer to Roman]]
 - [[https://code.dennyzhang.com/reconstruct-original-digits-from-english][Reconstruct Original Digits from English]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
 

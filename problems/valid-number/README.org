@@ -12,7 +12,7 @@ Validate if a given string is numeric.
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Validate if a given string is numeric.
 

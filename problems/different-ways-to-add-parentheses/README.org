@@ -12,7 +12,7 @@ Different Ways to Add Parentheses
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-divideconquer][Review: Divide And Conquer Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/divideconquer][#divideconquer]]
+- Tag: [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]]
 ---------------------------------------------------------------------
 Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.
 

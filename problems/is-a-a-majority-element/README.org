@@ -12,7 +12,7 @@ Check If a Number Is Majority Element in a Sorted Array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/majority-element][Leetcode: Majority Element]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Given an array nums sorted in non-decreasing order, and a number target, return True if and only if target is a majority element.
 

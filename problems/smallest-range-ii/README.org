@@ -12,7 +12,7 @@ Smallest Range II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/smallest-range-i][Leetcode: Smallest Range I]]
-- Tag: [[https://code.dennyzhang.com/tag/interval][#interval]], [[https://code.dennyzhang.com/tag/greedy][#greedy]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Given an array A of integers, for each integer A[i] we need to choose either x = -K or x = K, and add x to A[i] (only once).
 

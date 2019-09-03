@@ -12,7 +12,7 @@ Satisfiability of Equality Equations
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-unionfind][Review: Union Find Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
+- Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]]
 ---------------------------------------------------------------------
 Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: "a==b" or "a!=b".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.
 

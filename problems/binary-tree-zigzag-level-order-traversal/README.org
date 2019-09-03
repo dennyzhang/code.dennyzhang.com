@@ -11,7 +11,7 @@ Binary Tree Zigzag Level Order Traversal
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-tree-zigzag-level-order-traversal"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/zigzag][#zigzag]], [[https://code.dennyzhang.com/tag/bfs][#bfs]]
+- Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/zigzag][#zigzag]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
 #+BEGIN_EXAMPLE

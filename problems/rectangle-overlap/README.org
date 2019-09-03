@@ -13,7 +13,7 @@ Rectangle Overlap
 Similar Problems:
 - [[https://code.dennyzhang.com/rectangle-area][Rectangle Area]]
 - [[https://code.dennyzhang.com/review-rectangle][Review: Rectangle Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/rectangle][#rectangle]]
+- Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
 ---------------------------------------------------------------------
 
 A rectangle is represented as a list [x1, y1, x2, y2], where (x1, y1) are the coordinates of its bottom-left corner, and (x2, y2) are the coordinates of its top-right corner.

@@ -13,7 +13,7 @@ Decode Ways
 Similar Problems:
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 A message containing letters from A-Z is being encoded to numbers using the following mapping:
 #+BEGIN_EXAMPLE

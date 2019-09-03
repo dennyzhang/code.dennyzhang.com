@@ -12,7 +12,7 @@ Number of Atoms
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-stack][Review: Stack Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
 ---------------------------------------------------------------------
 Given a chemical formula (given as a string), return the count of each atom.
 

@@ -12,7 +12,7 @@ Split Array With Same Average
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/matchsticks-to-square][Matchsticks to Square]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In a given integer array A, we must move every element of A to either list B or list C. (B and C initially start empty.)
 

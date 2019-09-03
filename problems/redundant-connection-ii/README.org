@@ -12,7 +12,7 @@ Redundant Connection II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/redundant-connection][Leetcode: Redundant Connection]]
-- Tag: [[https://code.dennyzhang.com/review-circleingraph][#circleingraph]], [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-circleingraph][#circleingraph]], [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In this problem, a rooted tree is a directed graph such that, there is exactly one node (the root) for which all other nodes are descendants of this node, plus every node has exactly one parent, except for the root node which has no parents.
 

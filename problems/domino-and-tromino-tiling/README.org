@@ -13,7 +13,7 @@ Domino and Tromino Tiling
 Similar Problems:
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 - [[https://code.dennyzhang.com/review-mod][Review: mod Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/mod][#mod]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-mod][#mod]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 We have two types of tiles: a 2x1 domino shape, and an "L" tromino shape. These shapes may be rotated.
 #+BEGIN_EXAMPLE

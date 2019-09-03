@@ -12,7 +12,7 @@ Most Common Word
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/uncommon-words-from-two-sentences][Leetcode: Uncommon Words from Two Sentences]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words.  It is guaranteed there is at least one word that isn't banned, and that the answer is unique.
 

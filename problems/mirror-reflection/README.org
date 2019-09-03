@@ -11,7 +11,7 @@ Mirror Reflection
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/mirror-reflection"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 There is a special square room with mirrors on each of the four walls.  Except for the southwest corner, there are receptors on each of the remaining corners, numbered 0, 1, and 2.
 

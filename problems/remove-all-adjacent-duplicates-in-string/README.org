@@ -11,7 +11,7 @@ Remove All Adjacent Duplicates In String
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-all-adjacent-duplicates-in-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-stack][#stack]]
 ---------------------------------------------------------------------
 Given a string S of lowercase letters, a duplicate removal consists of choosing two adjacent and equal letters, and removing them.
 

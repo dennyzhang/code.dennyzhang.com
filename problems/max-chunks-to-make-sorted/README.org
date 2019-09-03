@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/max-chunks-to-make-sorted-ii][Max Chunks To Make Sorted II]]
 - [[https://code.dennyzhang.com/jump-game-ii][Jump Game II]]
 - [[https://code.dennyzhang.com/review-greedy][Review: Greedy Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]], [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 Given an array arr that is a permutation of [0, 1, ..., arr.length - 1], we split the array into some number of "chunks" (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.
 

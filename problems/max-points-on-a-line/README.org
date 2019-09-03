@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/water-and-jug-problem][Water and Jug Problem]]
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - [[https://code.dennyzhang.com/review-gcd][Review: gcd Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/gcd][#gcd]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-gcd][#gcd]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
 

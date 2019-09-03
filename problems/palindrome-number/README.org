@@ -12,7 +12,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/palindrome][#palindrome]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Determine whether an integer is a palindrome. Do this without extra space.
 

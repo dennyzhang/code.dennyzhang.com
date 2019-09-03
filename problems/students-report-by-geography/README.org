@@ -13,7 +13,7 @@ Students Report By Geography
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 A U.S graduate school has students from Asia, Europe and America. The students' location information are stored in table student as below.
 #+BEGIN_EXAMPLE

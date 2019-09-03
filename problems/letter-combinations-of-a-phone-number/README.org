@@ -12,7 +12,7 @@ Letter Combinations of a Phone Number
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/brace-expansion][Leetcode: Brace Expansion]]
-- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/backtracking][#backtracking]], [[https://code.dennyzhang.com/tag/combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given a digit string, return all possible letter combinations that the number could represent.
 

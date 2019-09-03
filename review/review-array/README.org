@@ -14,7 +14,7 @@ Array, a list of numbers. It's quite normal and natural.
 - [[https://code.dennyzhang.com/contiguous-array][Contiguous Array]]
 
 [[color:#c7254e][Typical Questions]]:
-- Get elements by topk frequency: [[https://code.dennyzhang.com/tag/heap][#heap]].
+- Get elements by topk frequency: [[https://code.dennyzhang.com/review-heap][#heap]].
 - Find the next bigger number: [[https://code.dennyzhang.com/tag/monotone][#monotone]]: Decreasing stack
 
 The most impressive problems to me:

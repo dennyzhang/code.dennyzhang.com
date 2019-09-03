@@ -12,7 +12,7 @@ numbers
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/sqrt][#sqrt]]
+- Tag: [[https://code.dennyzhang.com/review-sqrt][#sqrt]]
 ---------------------------------------------------------------------
 We define the Perfect Number is a positive integer that is equal to the sum of all its positive divisors except itself.
 

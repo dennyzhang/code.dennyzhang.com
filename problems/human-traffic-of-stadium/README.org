@@ -13,7 +13,7 @@ Human Traffic of Stadium
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 X city built a new stadium, each day many people visit it and the stats are saved as these columns: id, date, people
 

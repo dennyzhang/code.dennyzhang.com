@@ -11,7 +11,7 @@ Card Game
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/card-game"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Description
 A card game that gives you two non-negative integers: totalProfit, totalCost, and n cards'information. The ith card has a profit value a[i] and a cost value b[i].It is possible to select any number of cards from these cards, form a scheme. Now we want to know how many schemes are satisfied that all selected cards' profit values are greater than totalProfit and the costs are less than totalCost.

@@ -11,7 +11,7 @@ Matrix Cells in Distance Order
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/matrix-cells-in-distance-order"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/sort][#sort]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/tag/sort][#sort]]
 ---------------------------------------------------------------------
 We are given a matrix with R rows and C columns has cells with integer coordinates (r, c), where 0 <= r < R and 0 <= c < C.
 

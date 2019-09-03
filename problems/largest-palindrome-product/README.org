@@ -12,7 +12,7 @@ Largest Palindrome Product
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/palindrome][#palindrome]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Find the largest palindrome made from the product of two n-digit numbers.
 

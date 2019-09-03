@@ -12,7 +12,7 @@ Excel Sheet Column Title
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a positive integer, return its corresponding column title as appear in an Excel sheet.
 

@@ -12,7 +12,7 @@ Find Minimum in Rotated Sorted Array II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/search-in-rotated-sorted-array][Search in Rotated Sorted Array]]
-- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
 ---------------------------------------------------------------------
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 

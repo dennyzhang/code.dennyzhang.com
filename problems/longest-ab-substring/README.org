@@ -12,7 +12,7 @@ Longest AB Substring
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/same-number][Lintcode: Same Number]]
-- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Description
 Given a string s of only 'A' and 'B', find the longest substring that satisfies the number of 'A' and 'B' are the same. Please output the length of this substring.

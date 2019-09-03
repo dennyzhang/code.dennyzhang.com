@@ -12,7 +12,7 @@ Soup Servings
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-mod][Review: mod Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/mod][#mod]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-mod][#mod]]
 ---------------------------------------------------------------------
 There are two types of soup: type A and type B. Initially we have N ml of each type of soup. There are four kinds of operations:
 

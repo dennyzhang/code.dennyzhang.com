@@ -13,7 +13,7 @@ Partition to K Equal Sum Subsets
 Similar Problems:
 - [[https://code.dennyzhang.com/partition-equal-subset-sum][Partition Equal Subset Sum]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given an array of integers nums and a positive integer k, find whether it's possible to divide this array into k non-empty subsets whose sums are all equal.
 #+BEGIN_EXAMPLE

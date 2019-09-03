@@ -13,7 +13,7 @@ Unique Binary Search Trees
 Similar Problems:
 - [[https://code.dennyzhang.com/unique-binary-search-trees-ii][Leetcode: Unique Binary Search Trees II]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
 #+BEGIN_EXAMPLE

@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/median-employee-salary][Median Employee Salary]]
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
 - [[https://code.dennyzhang.com/review-median][Review: Median Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 The Numbers table keeps the value of number and its frequency.
 #+BEGIN_EXAMPLE

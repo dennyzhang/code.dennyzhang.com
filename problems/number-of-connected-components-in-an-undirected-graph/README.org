@@ -12,7 +12,7 @@ Number of Connected Components in an Undirected Graph
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-unionfind][Review: Union Find Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to find the number of connected components in an undirected graph.
 

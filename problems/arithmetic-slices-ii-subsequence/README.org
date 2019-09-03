@@ -12,7 +12,7 @@ Arithmetic Slices II - Subsequence
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/arithmetic-slices][Leetcode: Arithmetic Slices]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 A sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.
 

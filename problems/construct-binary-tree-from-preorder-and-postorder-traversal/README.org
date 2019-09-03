@@ -11,7 +11,7 @@ Construct Binary Tree from Preorder and Postorder Traversal
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/construct-binary-tree-from-preorder-and-postorder-traversal"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 Return any binary tree that matches the given preorder and postorder traversals.
 Values in the traversals pre and post are distinct positive integers.

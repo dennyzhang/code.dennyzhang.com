@@ -13,7 +13,7 @@ Implement int sqrt(int x).
 Similar Problems:
 - [[https://code.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
 - [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 Implement int sqrt(int x).
 

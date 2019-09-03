@@ -11,7 +11,7 @@ Valid Boomerang
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/valid-boomerang"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 A boomerang is a set of 3 points that are all distinct and not in a straight line.
 

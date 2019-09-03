@@ -11,7 +11,7 @@ Find Words That Can Be Formed by Characters
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-words-that-can-be-formed-by-characters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 You are given an array of strings words and a string chars.
 

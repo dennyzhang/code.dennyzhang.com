@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - [[https://code.dennyzhang.com/review-graph][Review: Graph Problems]]
 - [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]], [[https://code.dennyzhang.com/tag/dfs][#dfs]], [[https://code.dennyzhang.com/tag/bfs][#bfs]], [[https://code.dennyzhang.com/tag/island][#island]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/tag/island][#island]]
 ---------------------------------------------------------------------
 Given a matrix of size n x m, the elements in the matrix are 0,1,2.
 

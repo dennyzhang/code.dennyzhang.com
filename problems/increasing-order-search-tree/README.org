@@ -11,7 +11,7 @@ Increasing Order Search Tree
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/increasing-order-search-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
+- Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given a tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only 1 right child.
 

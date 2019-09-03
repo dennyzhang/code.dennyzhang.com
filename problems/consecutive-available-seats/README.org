@@ -13,7 +13,7 @@ Consecutive Available Seats
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 Several friends at a cinema ticket office would like to reserve consecutive available seats.
 Can you help to query all the consecutive available seats order by the seat_id using the following cinema table?

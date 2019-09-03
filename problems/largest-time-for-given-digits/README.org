@@ -11,7 +11,7 @@ Largest Time for Given Digits
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-time-for-given-digits"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given an array of 4 digits, return the largest 24 hour time that can be made.
 

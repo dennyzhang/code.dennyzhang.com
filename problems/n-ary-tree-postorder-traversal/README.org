@@ -12,7 +12,7 @@ N-ary Tree Postorder Traversal
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given an n-ary tree, return the postorder traversal of its nodes' values.
 

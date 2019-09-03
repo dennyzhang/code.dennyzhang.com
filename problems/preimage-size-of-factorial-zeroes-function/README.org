@@ -12,7 +12,7 @@ Preimage Size of Factorial Zeroes Function
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Let f(x) be the number of zeroes at the end of x!. (Recall that x! = 1 * 2 * 3 * ... * x, and by convention, 0! = 1.)
 

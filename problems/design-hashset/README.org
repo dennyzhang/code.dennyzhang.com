@@ -12,7 +12,7 @@ Design HashSet
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/design-hashmap][Leetcode: Design HashMap]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design a HashSet without using any built-in hash table libraries.
 

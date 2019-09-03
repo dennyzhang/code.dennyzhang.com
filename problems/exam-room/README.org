@@ -12,7 +12,7 @@ Exam Room
 #+END_HTML
 
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 In an exam room, there are N seats in a single row, numbered 0, 1, 2, ..., N-1.
 

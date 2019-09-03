@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/project-employees-ii][Leetcode: Project Employees II]]
 - [[https://code.dennyzhang.com/project-employees-iii][Leetcode: Project Employees III]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Table: Project
 #+BEGIN_EXAMPLE

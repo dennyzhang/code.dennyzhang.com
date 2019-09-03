@@ -13,7 +13,7 @@ Article Views II
 Similar Problems:
 - [[https://code.dennyzhang.com/article-views-i][Leetcode: Article Views I]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 Table: Views
 #+BEGIN_EXAMPLE

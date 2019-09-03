@@ -13,7 +13,7 @@ Complex Number Multiplication
 Similar Problems:
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - [[https://code.dennyzhang.com/solve-the-equation][Solve the Equation]]
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/expression][#expression]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 Given two strings representing two complex numbers.
 

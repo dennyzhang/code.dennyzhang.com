@@ -16,7 +16,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
 - [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
 

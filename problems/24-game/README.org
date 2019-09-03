@@ -11,7 +11,7 @@
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/24-game"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/game][#game]], [[https://code.dennyzhang.com/tag/expression][#expression]]
+- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 You have 4 cards each containing a number from 1 to 9. You need to judge whether they could operated through *, /, +, -, (, ) to get the value of 24.
 

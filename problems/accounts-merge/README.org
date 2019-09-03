@@ -11,7 +11,7 @@ Accounts Merge
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/accounts-merge"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/unionfind][#unionfind]]
+- Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]]
 ---------------------------------------------------------------------
 Given a list accounts, each element accounts[i] is a list of strings, where the first element accounts[i][0] is a name, and the rest of the elements are emails representing emails of the account.
 

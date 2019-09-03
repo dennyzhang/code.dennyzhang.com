@@ -12,7 +12,7 @@ Prime Product
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given a non-repeating prime array arr, and each prime number is used at most once, find all the product without duplicate and sort them from small to large.
 

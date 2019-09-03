@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/longest-substring-without-repeating-characters][Longest Substring Without Repeating Characters]]
 - [[https://code.dennyzhang.com/minimum-window-substring][Minimum Window Substring]]
 - [[https://code.dennyzhang.com/repeated-substring][Repeated Substring Pattern]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
 #+BEGIN_EXAMPLE

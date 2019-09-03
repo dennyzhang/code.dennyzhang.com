@@ -13,7 +13,7 @@ Shortest Distance in a Plane
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sql][Review: SQL Problems]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
-- Tag: [[https://code.dennyzhang.com/tag/sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 Table point_2d holds the coordinates (x,y) of some unique points (more than two) in a plane.
 Write a query to find the shortest distance between these points rounded to 2 decimals.

@@ -12,7 +12,7 @@ Super Pow
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/powx-n][Pow(x, n)]]
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]]
+- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]]
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems,]] Tag: [[https://code.dennyzhang.com/tag/math][math]]
 - [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
 ---------------------------------------------------------------------

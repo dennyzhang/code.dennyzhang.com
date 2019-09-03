@@ -12,7 +12,7 @@ Rotate String
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/repeated-string-match][Repeated String Match]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
 ---------------------------------------------------------------------
 We are given two strings, A and B.
 

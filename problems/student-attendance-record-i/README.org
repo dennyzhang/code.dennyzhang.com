@@ -12,7 +12,7 @@ Check string pattern
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/student-attendance-record-ii][Student Attendance Record II]]
-- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+- [[https://code.dennyzhang.com/review-string][Review: String Problems]], Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 You are given a string representing an attendance record for a student. The record only contains the following three characters:
 1. 'A' : Absent.

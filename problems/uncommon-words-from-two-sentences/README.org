@@ -12,7 +12,7 @@ Uncommon Words from Two Sentences
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/most-common-word][Leetcode: Most Common Word]]
-- Tag: [[https://code.dennyzhang.com/tag/hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 We are given two sentences A and B.  (A sentence is a string of space separated words.  Each word consists only of lowercase letters.)
 

@@ -16,7 +16,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
 - [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
 

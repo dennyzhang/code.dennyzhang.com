@@ -12,7 +12,7 @@ Copy List with Random Pointer
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 

@@ -12,7 +12,7 @@ Shuffle an Array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/random][#random]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/random][#random]]
 ---------------------------------------------------------------------
 Shuffle a set of numbers without duplicates.
 

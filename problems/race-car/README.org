@@ -12,7 +12,7 @@ Race Car
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Your car starts at position 0 and speed +1 on an infinite number line.  (Your car can go into negative positions.)
 

@@ -11,7 +11,7 @@ Student ID
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/student-id"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][#oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Description
 Implement a class Class with the following attributes and methods:

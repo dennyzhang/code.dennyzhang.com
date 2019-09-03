@@ -12,7 +12,7 @@ Online Stock Span
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock's price for the current day.
 

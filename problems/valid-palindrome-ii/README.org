@@ -12,7 +12,7 @@ Valid Palindrome II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/palindrome][#palindrome]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
 #+BEGIN_EXAMPLE

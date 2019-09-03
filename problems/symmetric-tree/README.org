@@ -12,7 +12,7 @@ Given a binary tree, check whether it is a mirror of itself (ie, symmetric aroun
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
+- Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 #+BEGIN_EXAMPLE

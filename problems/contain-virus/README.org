@@ -11,7 +11,7 @@ Contain Virus
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/contain-virus"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
 ---------------------------------------------------------------------
 A virus is spreading rapidly, and your task is to quarantine the infected area by installing walls.
 

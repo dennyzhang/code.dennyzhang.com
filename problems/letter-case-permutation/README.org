@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/generalized-abbreviation][Generalized Abbreviation]]
 - [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]], [[https://code.dennyzhang.com/tag/combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
 

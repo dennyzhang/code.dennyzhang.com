@@ -12,7 +12,7 @@ Consecutive Numbers Sum
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]], [[https://code.dennyzhang.com/tag/sqrt][#sqrt]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-sqrt][#sqrt]]
 ---------------------------------------------------------------------
 Given a positive integer N, how many ways can we write it as a sum of consecutive positive integers?
 

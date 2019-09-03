@@ -13,7 +13,7 @@ Sparse Matrix Multiplication
 Similar Problems:
 - [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Given two sparse matrices A and B, return the result of AB.
 

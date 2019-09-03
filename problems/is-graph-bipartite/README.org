@@ -12,7 +12,7 @@ Is Graph Bipartite?
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://code.dennyzhang.com/tag/bfs][Tag: #bfs]]
-- Tag: [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a graph, return true if and only if it is bipartite.
 

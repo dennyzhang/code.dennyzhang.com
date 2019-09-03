@@ -11,7 +11,7 @@ Sum of Subsequence Widths
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-subsequence-widths"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Given an array of integers A, consider all non-empty subsequences of A.
 

@@ -13,7 +13,7 @@
 Similar Problems:
 - [[https://code.dennyzhang.com/integer-break][Integer Break]]
 - [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:
 

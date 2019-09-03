@@ -13,7 +13,7 @@ Top K Frequent Elements
 Similar Problems:
 - [[https://code.dennyzhang.com/find-k-pairs-with-smallest-sums][Leetcode: Find K Pairs with Smallest Sums]]
 - [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the k most frequent elements.
 

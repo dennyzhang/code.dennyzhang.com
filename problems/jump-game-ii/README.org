@@ -11,7 +11,7 @@ Jump Game II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/jump-game-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]], [[https://code.dennyzhang.com/tag/frogjump][#frogjump]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/tag/frogjump][#frogjump]]
 ---------------------------------------------------------------------
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
 

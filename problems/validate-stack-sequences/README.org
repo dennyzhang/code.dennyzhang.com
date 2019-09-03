@@ -11,7 +11,7 @@ Validate Stack Sequences
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/validate-stack-sequences"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/stack][#stack]], [[https://code.dennyzhang.com/tag/simulation][#simulation]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/tag/simulation][#simulation]]
 ---------------------------------------------------------------------
 Given two sequences pushed and popped with distinct values, return true if and only if this could have been the result of a sequence of push and pop operations on an initially empty stack.
 

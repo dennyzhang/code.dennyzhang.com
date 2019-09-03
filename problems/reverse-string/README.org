@@ -12,7 +12,7 @@ Reverse String
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/reverse-only-letters][Leetcode: Reverse Only Letters]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]], [[https://code.dennyzhang.com/tag/reverseitem][#reverseitem]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/reverseitem][#reverseitem]]
 ---------------------------------------------------------------------
 Write a function that takes a string as input and returns the string reversed.
 

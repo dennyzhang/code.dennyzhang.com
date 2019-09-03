@@ -116,7 +116,7 @@ for (id, tweetId) in self.tweet_dict[userId]:
 #+END_SRC
 ---------------------------------------------------------------------
 [[color:#c7254e][Data Structures]]:
-1. [[https://code.dennyzhang.com/tag/trie][#trie]], [[https://code.dennyzhang.com/tag/heap][#heap]]
+1. [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/review-heap][#heap]]
 - [[https://code.dennyzhang.com/tag/monotonestack][#monotonestack]]
 ---------------------------------------------------------------------
 [[color:#c7254e][Algorithms]]:
@@ -129,10 +129,10 @@ for (id, tweetId) in self.tweet_dict[userId]:
 - [[https://code.dennyzhang.com/tag/fisheryatesshuffle][#fisheryatesshuffle]]: generate a random permutation of a finite sequence.
 - [[https://code.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]: randomly choose a sample of k items from a very huge dataset. And we don't know the size. See [[url-external:https://en.wikipedia.org/wiki/Reservoir_sampling][wikipedia]].
 - [[https://code.dennyzhang.com/tag/discretetimesignal][#discretetimesignal]]: See [[url-external:https://en.wikipedia.org/wiki/Discrete-time_signal][wikipedia]].
-- [[https://code.dennyzhang.com/tag/backtracking][#backtracking]]
-- [[https://code.dennyzhang.com/tag/bfs][#bfs]]
-- [[https://code.dennyzhang.com/tag/dfs][#dfs]]
-- [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]
+- [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+- [[https://code.dennyzhang.com/review-bfs][#bfs]]
+- [[https://code.dennyzhang.com/review-dfs][#dfs]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Misc:
 - One pass or two pass? [[https://code.dennyzhang.com/palindrome-permutation][Palindrome Permutation]]

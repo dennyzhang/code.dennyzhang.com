@@ -12,7 +12,7 @@ Maximum Average Subarray I
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-greedy][Review: Greedy Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/greedy][#greedy]], [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. And you need to output the maximum average value.
 

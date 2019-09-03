@@ -12,7 +12,7 @@ Digital Problem
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/recursive][#recursive]]
+- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]]
 ---------------------------------------------------------------------
 Give a conversion rule to convert number n:
 1. n is an odd number: n = 3 * n + 1

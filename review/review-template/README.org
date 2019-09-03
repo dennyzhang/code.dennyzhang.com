@@ -16,7 +16,7 @@ About templates, get familiar with:
 - variable/functions definitions
 
 [[color:#c7254e][Templates]]:
-- [[https://code.dennyzhang.com/tag/binarysearch][#binarysearch]]
+- [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 
 [[https://code.dennyzhang.com/first-bad-version][First Bad Version]]
 #+BEGIN_SRC python
@@ -81,7 +81,7 @@ class Solution:
 #+END_SRC
 [[https://code.dennyzhang.com/search-insert-position][Search Insert Position]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/bfs][#bfs]]: [[https://code.dennyzhang.com/open-the-lock][Open the Lock]]
+- [[https://code.dennyzhang.com/review-bfs][#bfs]]: [[https://code.dennyzhang.com/open-the-lock][Open the Lock]]
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/open-the-lock
 dead_set, seen, queue = set([]), set([]), collections.deque([])
@@ -113,7 +113,7 @@ while len(queue) != 0:
 return -1
 #+END_SRC
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/dfs][#dfs]]: [[https://code.dennyzhang.com/number-of-islands][Number of Islands]]
+- [[https://code.dennyzhang.com/review-dfs][#dfs]]: [[https://code.dennyzhang.com/number-of-islands][Number of Islands]]
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/number-of-islands
         res = 0
@@ -140,7 +140,7 @@ return -1
         self.DFSMark(grid, i, j+1)
 #+END_SRC
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/trie][#trie]]: [[https://code.dennyzhang.com/longest-word-in-dictionary][Longest Word in Dictionary]]
+- [[https://code.dennyzhang.com/review-trie][#trie]]: [[https://code.dennyzhang.com/longest-word-in-dictionary][Longest Word in Dictionary]]
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/longest-word-in-dictionary
 ## Basic Ideas: trie tree
@@ -201,25 +201,25 @@ class Solution(object):
         return max_str
 #+END_SRC
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/linkedlist][#linkedlist]]: [[https://code.dennyzhang.com/merge-two-sorted-list][Merge Two Sorted Lists]],
+- [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]: [[https://code.dennyzhang.com/merge-two-sorted-list][Merge Two Sorted Lists]],
 
 Revert a linked list: [[https://code.dennyzhang.com/reverse-linked-list-ii][Reverse Linked List II]]
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]: [[https://code.dennyzhang.com/binary-tree-postorder-traversal][Postorder Traversal]], [[https://code.dennyzhang.com/binary-tree-level-order-traversal][Level Order Traversal]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/stack][#stack]]: [[https://code.dennyzhang.com/basic-calculator-iii][Basic Calculator III]], [[https://code.dennyzhang.com/decode-string][Decode String]]
+- [[https://code.dennyzhang.com/review-stack][#stack]]: [[https://code.dennyzhang.com/basic-calculator-iii][Basic Calculator III]], [[https://code.dennyzhang.com/decode-string][Decode String]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/backtracking][#backtracking]]: [[https://code.dennyzhang.com/word-search][Word Search]], [[https://code.dennyzhang.com/sudoku-solver][Sudoku Solver]]
+- [[https://code.dennyzhang.com/review-backtracking][#backtracking]]: [[https://code.dennyzhang.com/word-search][Word Search]], [[https://code.dennyzhang.com/sudoku-solver][Sudoku Solver]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/recursive][#recursive]]: [[https://code.dennyzhang.com/sort-list][Sort List]]
+- [[https://code.dennyzhang.com/review-recursive][#recursive]]: [[https://code.dennyzhang.com/sort-list][Sort List]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/combination][#combination]]: [[https://code.dennyzhang.com/letter-combinations-of-a-phone-number][Letter Combinations of a Phone Number]]
+- [[https://code.dennyzhang.com/review-combination][#combination]]: [[https://code.dennyzhang.com/letter-combinations-of-a-phone-number][Letter Combinations of a Phone Number]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/slidingwindow][#slidingwindow]]: [[https://code.dennyzhang.com/contains-duplicate-ii][Contains Duplicate II]]
+- [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]: [[https://code.dennyzhang.com/contains-duplicate-ii][Contains Duplicate II]]
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraverse]]: [[https://code.dennyzhang.com/diagonal-traverse][Diagonal Traverse]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/dynamicprogramming][#dynamicprogramming]]: [[https://code.dennyzhang.com/unique-binary-search-trees][Unique Binary Search Trees]]
+- [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]: [[https://code.dennyzhang.com/unique-binary-search-trees][Unique Binary Search Trees]]
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]: [[https://code.dennyzhang.com/number-of-1-bits][Number of 1 Bits]]
 #+BEGIN_SRC python
@@ -231,7 +231,7 @@ while n != 0:
 return res
 #+END_SRC
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/heap][#heap]]: [[https://code.dennyzhang.com/kth-largest-element-in-an-array][Kth Largest Element in an Array]]
+- [[https://code.dennyzhang.com/review-heap][#heap]]: [[https://code.dennyzhang.com/kth-largest-element-in-an-array][Kth Largest Element in an Array]]
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/kth-largest-element-in-an-array
 q = []

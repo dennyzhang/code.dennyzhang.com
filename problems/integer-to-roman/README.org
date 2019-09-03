@@ -13,7 +13,7 @@ Integer to Roman
 Similar Problems:
 - [[https://code.dennyzhang.com/integer-to-english-words][Integer to English Words]]
 - [[https://code.dennyzhang.com/roman-to-integer][Roman to Integer]]
-- Tag: [[https://code.dennyzhang.com/tag/math][#math]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Given an integer, convert it to a roman numeral.
 

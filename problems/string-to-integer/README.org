@@ -11,7 +11,7 @@ String to Integer
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-to-integer"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Description
 Given a string, convert it to an integer. You may assume the string is a valid integer number that can be presented by a signed 32bit integer (-2^31 ~ 2^31-1).

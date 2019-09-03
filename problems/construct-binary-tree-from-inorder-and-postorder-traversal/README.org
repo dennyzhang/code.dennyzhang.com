@@ -12,7 +12,7 @@ Construct Binary Tree from Inorder and Postorder Traversal
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/treetraversal][#treetraversal]]
+- Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given inorder and postorder traversal of a tree, construct the binary tree.
 

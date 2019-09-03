@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/second-max-of-array][LintCode: Second Max of Array]]
 - [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
 - [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
-- Tag: [[https://code.dennyzhang.com/tag/manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/heap][#heap]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-heap][#heap]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
 

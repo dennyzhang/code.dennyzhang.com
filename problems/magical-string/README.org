@@ -12,7 +12,7 @@ Magical String
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/nth-digit][Nth Digit]]
-- Tag: [[https://code.dennyzhang.com/tag/string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 A magical string S consists of only '1' and '2' and obeys the following rules:
 

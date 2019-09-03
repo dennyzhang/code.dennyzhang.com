@@ -11,7 +11,7 @@ DI String Match
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/di-string-match"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/twopointer][#twopointer]]
+- Tag: [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 
 Given a string S that only contains "I" (increase) or "D" (decrease), let N = S.length.

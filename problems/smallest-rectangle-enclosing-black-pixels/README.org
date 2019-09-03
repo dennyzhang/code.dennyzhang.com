@@ -13,7 +13,7 @@ Smallest Rectangle Enclosing Black Pixels
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - [[https://code.dennyzhang.com/number-of-distinct-islands][Number of Distinct Islands]]
-- Tag: [[https://code.dennyzhang.com/tag/island][#island]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
+- Tag: [[https://code.dennyzhang.com/tag/island][#island]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 An image is represented by a binary matrix with 0 as a white pixel and 1 as a black pixel. The black pixels are connected, i.e., there is only one black region. Pixels are connected horizontally and vertically. Given the location (x, y) of one of the black pixels, return the area of the smallest (axis-aligned) rectangle that encloses all black pixels.
 
@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/number-of-distinct-islands][Number of Distinct Islands]]
-- Tag: [[https://code.dennyzhang.com/tag/island][#island]], [[https://code.dennyzhang.com/tag/dfs][#dfs]]
+- Tag: [[https://code.dennyzhang.com/tag/island][#island]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/smallest-rectangle-enclosing-black-pixels
