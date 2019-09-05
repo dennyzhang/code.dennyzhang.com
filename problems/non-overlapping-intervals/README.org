@@ -11,7 +11,7 @@ Non-overlapping Intervals
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/non-overlapping-intervals"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]]
 ---------------------------------------------------------------------
 Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 

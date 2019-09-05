@@ -11,7 +11,6 @@ Directed Graph Loop
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/directed-graph-loop"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 Please judge whether there is a cycle in the directed graph with n vertices and m edges. The parameter is two int arrays. There is a directed edge from start[i] to end[i].

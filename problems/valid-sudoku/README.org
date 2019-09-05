@@ -11,7 +11,6 @@ Valid Sudoku
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/valid-sudoku"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.

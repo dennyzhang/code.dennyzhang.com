@@ -11,8 +11,7 @@ Peeking Iterator
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/peeking-iterator"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
 

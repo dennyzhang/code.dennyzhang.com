@@ -11,7 +11,6 @@ Remove Duplicates from Sorted List II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-duplicates-from-sorted-list-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.

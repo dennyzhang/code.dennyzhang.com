@@ -12,8 +12,7 @@ Nested List Weight Sum
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/nested-list-weight-sum-ii][Nested List Weight Sum II]]
-- [[https://code.dennyzhang.com/review-recursive][Review: Recursive Problems]], [[https://code.dennyzhang.com/tag/recursive][Tag: #recursive]]
-- Tag: [[https://code.dennyzhang.com/tag/nestedlist][#nestedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/nestedlist][#nestedlist]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
 ---------------------------------------------------------------------
 Given a nested list of integers, return the sum of all integers in the list weighted by their depth.
 

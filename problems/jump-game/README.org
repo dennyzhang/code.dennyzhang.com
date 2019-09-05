@@ -12,7 +12,6 @@ Jump Game
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/add-bold-tag-in-string][Add Bold Tag in String]]
-- [[https://code.dennyzhang.com/review-game][Review: Game Problems]]
 - Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/tag/frogjump][#frogjump]]
 ---------------------------------------------------------------------
 Given an array of non-negative integers, you are initially positioned at the first index of the array.

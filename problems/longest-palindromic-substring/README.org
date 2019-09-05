@@ -11,8 +11,7 @@ Longest Palindromic Substring
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-palindromic-substring"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
-- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/category/basic][#basic]], [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
 

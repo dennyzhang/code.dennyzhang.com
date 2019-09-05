@@ -11,7 +11,7 @@ Longest Common Prefix
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-common-prefix"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Write a function to find the longest common prefix string amongst an array of strings.
 

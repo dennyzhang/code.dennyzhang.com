@@ -12,8 +12,7 @@ Flip Game II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/flip-game][Flip Game]]
-- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
-- [[https://code.dennyzhang.com/review-game][Review: Game Problems]], [[https://code.dennyzhang.com/tag/game][Tag: #game]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 

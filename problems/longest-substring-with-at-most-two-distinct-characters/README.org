@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     slidingwindow, atmostkdistinct
 :END:
 ---------------------------------------------------------------------
 Longest Substring with At Most Two Distinct Characters
@@ -12,11 +12,11 @@ Longest Substring with At Most Two Distinct Characters
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters][Longest Substring with At Most K Distinct Characters]]
-- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-atmostkdistinct][#atmostkdistinct]]
 ---------------------------------------------------------------------
 Given a string, find the length of the longest substring T that contains at most 2 distinct characters.
 
-For example, Given s = “eceba”,
+For example, Given s = "eceba",
 
 T is "ece" which its length is 3.
 
@@ -26,6 +26,40 @@ Credits To: [[https://leetcode.com/problems/longest-substring-with-at-most-two-d
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters
+// Basic Ideas: sliding window
+//
+// Complexity: Time O(n*k), Space O(k)
+func lengthOfLongestSubstringTwoDistinct(s string) int {
+    res := 0
+    m := map[byte]int{}
+    // s[i...j]
+    i:=0
+    k:=2
+    for j, ch := range s {
+        // Move the right
+        m[byte(ch)]++
+        if m[byte(ch)] == 1 {
+            k--
+        }
+        // Move the left
+        for k<0 {
+            ch2 := s[i]
+            m[ch2]--
+            i++
+            if m[ch2] == 0 {
+                k++
+            }
+        }
+        // Collect result
+        if j-i+1 > res {
+            res = j-i+1
+        }
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters

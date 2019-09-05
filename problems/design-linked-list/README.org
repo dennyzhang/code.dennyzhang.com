@@ -11,7 +11,6 @@ Design Linked List
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/design-linked-list"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list. A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and next is a pointer/reference to the next node. If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. Assume all nodes in the linked list are 0-indexed.

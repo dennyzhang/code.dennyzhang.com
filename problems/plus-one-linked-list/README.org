@@ -12,7 +12,6 @@ Plus One Linked List
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/reverse-linked-list][Reverse Linked List]]
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]], [[https://code.dennyzhang.com/tag/linkedlist][Tag: #linkedlist]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a non-negative integer represented as non-empty a singly linked list of digits, plus one to the integer.

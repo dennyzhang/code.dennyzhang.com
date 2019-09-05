@@ -12,7 +12,7 @@ Next Greater Element II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
-- [[https://code.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://code.dennyzhang.com/tag/monotone][monotone]]
+- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]]
 ---------------------------------------------------------------------
 Given a circular array (the next element of the last element is the first element of the array), print the Next Greater Number for every element. The Next Greater Number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, output -1 for this number.
 #+BEGIN_EXAMPLE

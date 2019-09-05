@@ -12,7 +12,6 @@ Order Problem
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/ones-and-zeroes][Ones and Zeroes]]
-- [[https://code.dennyzhang.com/review-knapsack][Review: Knapsack Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/knapsack][#knapsack]]
 ---------------------------------------------------------------------
 Description

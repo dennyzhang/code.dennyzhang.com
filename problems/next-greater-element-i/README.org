@@ -12,7 +12,7 @@ Next Greater Element I
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/daily-temperatures][Leetcode: Daily Temperatures]]
-- [[https://code.dennyzhang.com/review-monotone][Review: Monotone Stack Or Monotone Queue Problems]], Tag: [[https://code.dennyzhang.com/tag/monotone][monotone]]
+- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]]
 ---------------------------------------------------------------------
 You are given two arrays (without duplicates) nums1 and nums2 where nums1's elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 

@@ -12,8 +12,7 @@ Two Sum IV - Input is a BST
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
-- [[https://code.dennyzhang.com/tag/twosum][Tag: #twosum]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
 #+BEGIN_EXAMPLE

@@ -11,7 +11,7 @@ Permutations II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/permutations-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]], [[https://code.dennyzhang.com/tag/combination][Tag: #combination]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 #+BEGIN_EXAMPLE

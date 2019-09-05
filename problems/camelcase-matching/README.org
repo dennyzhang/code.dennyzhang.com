@@ -1,0 +1,98 @@
+* Leetcode: Camelcase Matching                                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     twopoiner, mergetwolist
+:END:
+---------------------------------------------------------------------
+Camelcase Matching
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/camelcase-matching"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/review-twopoiner][#twopoiner]], [[https://code.dennyzhang.com/tag/mergetwolist][#mergetwolist]]
+---------------------------------------------------------------------
+A query word matches a given pattern if we can insert lowercase letters to the pattern word so that it equals the query. (We may insert each character at any position, and may insert 0 characters.)
+
+Given a list of queries, and a pattern, return an answer list of booleans, where answer[i] is true if and only if queries[i] matches the pattern.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FB"
+Output: [true,false,true,true,false]
+Explanation: 
+"FooBar" can be generated like this "F" + "oo" + "B" + "ar".
+"FootBall" can be generated like this "F" + "oot" + "B" + "all".
+"FrameBuffer" can be generated like this "F" + "rame" + "B" + "uffer".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FoBa"
+Output: [true,false,true,false,false]
+Explanation: 
+"FooBar" can be generated like this "Fo" + "o" + "Ba" + "r".
+"FootBall" can be generated like this "Fo" + "ot" + "Ba" + "ll".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FoBaT"
+Output: [false,true,false,false,false]
+Explanation: 
+"FooBarTest" can be generated like this "Fo" + "o" + "Ba" + "r" + "T" + "est".
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= queries.length <= 100
+- 1 <= queries[i].length <= 100
+- 1 <= pattern.length <= 100
+- All strings consists only of lower and upper case English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/camelcase-matching][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/camelcase-matching/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/camelcase-matching
+// Basic Ideas: two pointer + subsequence
+//
+// Complexity: Time O(n*(max(l, k)), Space O(1)
+func camelMatch(queries []string, pattern string) []bool {
+    l := make([]bool, len(queries))
+    for k, query := range queries {
+        // pattern[i...], query[j...]
+        i, j := 0, 0
+        for i<len(pattern) && j<len(query) {
+            if pattern[i] == query[j] {
+                i++
+                j++
+                continue
+            }
+            if query[j] >= 'A' && query[j] <= 'Z' {
+                break
+            }
+            j++
+        }
+        for j<len(query) && query[j]>='a' && query[j]<='z' {
+            j++
+        }
+        l[k] = (i==len(pattern) && j==len(query))
+    }
+    return l
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

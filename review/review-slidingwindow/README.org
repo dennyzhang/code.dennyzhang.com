@@ -11,17 +11,52 @@ Slidingwindow Problems
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-slidingwindow"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 *Basic Abstractions*
-| Name | Summary |
-|------+---------|
-|      |         |
+| Name                                         | Summary                            |
+|----------------------------------------------+------------------------------------|
+| Move right pointer                           | l+k-1 (l: left, k: window length)  |
+| Move left pointer                            | r-k+1 (r: right, k: window length) |
+| Collect results                              | r-k+1>=0                           |
+| Make sure neither pointers will go backwards |                                    |
 *Scenarios*
 *Code Skeleton*
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together
+// Basic Ideas: fixed size sliding window
+//  We know the size of the final group all 1's
+//  The window can start from any position
+//  Use a sliding window. And the find the minimum count of 0s in the sliding window.
+// Complexity: Time O(n), Space O(k)
+func minSwaps(data []int) int {
+    k:=0
+    for _, v := range data {
+        if v == 1 {  k++ }
+    }
+    res := 1<<31-1
+    count := 0
+    // sliding window. left: i-k+1, right: i
+    for i:=0; i<len(data); i++ {
+        // move right pointer: add a new element
+        if data[i] == 0 { count++ }
+        // move left pointer: remove the old element
+        if i-k >= 0 {
+            if data[i-k] == 0 { count-- }
+        }
+        // collect result
+        if i-k+1 >= 0  {
+            if count < res { res = count }
+        }
+    }
+    return res
+}
+#+END_SRC
+
 *Questions*
-| Name                                                      | Example                            |
-|-----------------------------------------------------------+------------------------------------|
-| How to initialize the time window?                        |                                    |
-| The length of timewindow may not be fixed                 | [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]] |
-| Move pointer1 to match the other, or the other way around |                                    |
+| Name                                                      | Example                                                  |
+|-----------------------------------------------------------+----------------------------------------------------------|
+| How to initialize the time window?                        | [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][Leetcode: Minimum Swaps to Group All 1's Together]]        |
+| The of size sliding window is non-fixed, but growing      | [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]                       |
+| Move two pointers: two loop vs One loop                   | [[https://code.dennyzhang.com/longest-substring-without-repeating-characters][Leetcode: Longest Substring Without Repeating Characters]] |
+| Move pointer1 to match the other, or the other way around |                                                          |
 
 See all slidingwindow problems: [[https://code.dennyzhang.com/tag/greedy/][#slidingwindow]]
 [display-posts tag="slidingwindow" posts_per_page="100" orderby="title"]

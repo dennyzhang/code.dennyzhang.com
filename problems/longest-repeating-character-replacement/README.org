@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc, string
+:type:     slidingwindow, string, classic
 :END:
 ---------------------------------------------------------------------
 Longest Repeating Character Replacement
@@ -12,7 +12,7 @@ Longest Repeating Character Replacement
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/unique-letter-string][Unique Letter String]]
-- Tag: [[https://code.dennyzhang.com/review-string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 Given a string that consists of only uppercase English letters, you can replace any letter in the string with another letter at most k times. Find the length of a longest substring containing all repeating letters you can get after performing the above operations.
 
@@ -50,12 +50,93 @@ Credits To: [[https://leetcode.com/problems/longest-repeating-character-replacem
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: without helper function
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/longest-repeating-character-replacement
-
+// Basic Ideas: sliding timewindow
+//
+//  Notice: 
+//    How to check whether a string can be changed to repeating characters by k operations/
+//    The time complexity is O(1)!
+//
+// Corner cases:
+//   "BAAAB", 2
+//   "BAAA", 2
+//
+// Complexity: Time O(n), Space O(1)
+func characterReplacement(s string, k int) int {
+    l := make([]int, 26)
+    res := 0
+    // s[i...j]
+    i:=0
+    uniqCnt := 0
+    for j, ch := range s {
+        // move right
+        index:=byte(ch)-'A'
+        l[index]++
+        if l[index] > uniqCnt {
+            uniqCnt = l[index]
+        }
+        // move left
+        for j-i+1-uniqCnt>k {
+            l[s[i]-'A']--
+            i++
+        }
+        // collect result
+        if j-i+1>res {
+            res = j-i+1
+        }
+    }
+    return res
+}
 #+END_SRC
 
+- Solution: with helper function
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-repeating-character-replacement
+// Basic Ideas: sliding timewindow
+//
+//  Notice: 
+//    How to check whether a string can be changed to repeating characters by k operations/
+//    The time complexity is O(1)!
+//
+// Corner cases:
+//   "BAAAB", 2
+//   "BAAA", 2
+//
+// Complexity: Time O(n), Space O(1)
+func isRepeatingAtMostK(l []int, k int) bool {
+    sum, max := 0, 0
+    for _, v := range l {
+        sum += v
+        if v > max {
+            max = v
+        }
+    }
+    return sum-max <= k
+}
+
+func characterReplacement(s string, k int) int {
+    l := make([]int, 26)
+    res := 0
+    // s[i...j]
+    i:=0
+    for j, ch := range s {
+        // move right
+        l[byte(ch)-'A']++
+        // move left
+        for !isRepeatingAtMostK(l, k) {
+            l[s[i]-'A']--
+            i++
+        }
+        // collect result
+        if j-i+1>res {
+            res = j-i+1
+        }
+    }
+    return res
+}
+#+END_SRC
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>

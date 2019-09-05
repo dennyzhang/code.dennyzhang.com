@@ -13,7 +13,7 @@ Walls and Gates
 Similar Problems:
 - [[https://code.dennyzhang.com/shortest-distance-from-all-buildings][Shortest Distance from All Buildings]]
 - [[https://code.dennyzhang.com/01-matrix][01 Matrix]]
-- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]], [[https://code.dennyzhang.com/tag/bfs][Tag: #bfs]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 
 You are given a m x n 2D grid initialized with these three possible values.

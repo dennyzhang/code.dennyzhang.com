@@ -1,0 +1,71 @@
+* Leetcode: Longest String Chain                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     lis, dynamicprogramming, hashmap, inspiring
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-string-chain"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-string-chain][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/longest-string-chain/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-string-chain
+// Basic Ideas: LIS dp + hashmap
+//
+//  Notice: instead of adding a character, try to delete one
+//  The sequence doesn't matter: There might be a chain of s[i] -> s[j] with j<i
+//
+// Complexity: Time O(n*log(n)) Space O(n)
+import "sort"
+func longestStrChain(words []string) int {
+    sort.Slice(words , func(i, j int) bool {
+        return len(words[i])<len(words[j])
+    })
+    m := map[string]int{}
+    dp := make([]int, len(words))
+    res := 0
+    dp[0] = 1
+    m[words[0]] = 0
+    for i:=1; i<len(words); i++ {
+        word := words[i]
+        max := 1
+        for j, _ := range word {
+            word2 := word[0:j]+word[j+1:]
+            if v, ok := m[word2]; ok {
+                if dp[v]+1>max {
+                    max = dp[v]+1
+                }
+            }
+        }
+        dp[i] = max
+        m[word] = i
+        if max > res {
+            res = max
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

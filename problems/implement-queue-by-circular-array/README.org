@@ -12,8 +12,7 @@ Implement Queue by Circular Array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/max-stack][Max Stack]]
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Implement queue by circulant array. You need to support the following methods:
 1. CircularQueue(n): initialize a circular array with size n to store elements

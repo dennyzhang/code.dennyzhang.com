@@ -13,7 +13,6 @@ Teemo Attacking
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-poison][Series: Poison Problems & Follow-up]]
 - [[https://code.dennyzhang.com/merge-intervals][Merge Intervals]]
-- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]]
 - Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/poison][#poison]]
 ---------------------------------------------------------------------
 In LOL world, there is a hero called Teemo and his attacking can make his enemy Ashe be in poisoned condition. Now, given the Teemo's attacking ascending time series towards Ashe and the poisoning time duration per Teemo's attacking, you need to output the total time that Ashe is in poisoned condition.

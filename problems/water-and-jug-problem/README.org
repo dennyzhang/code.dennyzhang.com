@@ -13,7 +13,6 @@ Water and Jug Problem
 Similar Problems:
 - [[https://code.dennyzhang.com/reaching-points][Reaching Points]]
 - [[https://code.dennyzhang.com/max-points-on-a-line][Max Points on a Line]]
-- [[https://code.dennyzhang.com/review-gcd][Review: gcd Problems]]
 - Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-gcd][#gcd]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 You are given two jugs with capacities x and y litres. There is an infinite amount of water supply available. You need to determine whether it is possible to measure exactly z litres using these two jugs.

@@ -11,7 +11,6 @@ Contains Duplicate III
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/contains-duplicate-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given an array of integers, find out whether there are two distinct indices i and j in the array such that the absolute difference between nums[i] and nums[j] is at most t and the absolute difference between i and j is at most k.

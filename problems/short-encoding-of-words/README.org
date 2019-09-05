@@ -11,7 +11,6 @@ Short Encoding of Words
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/short-encoding-of-words"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-trie][Review: Trie Tree Problems]]
 - Tag: [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/tag/encoding][#encoding]]
 ---------------------------------------------------------------------
 Given a list of words, we may encode it by writing a reference string S and a list of indexes A.

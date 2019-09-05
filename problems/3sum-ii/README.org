@@ -14,7 +14,6 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://code.dennyzhang.com/sum-of-square-numbers][Sum of Square Numbers]]
 - Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 ---------------------------------------------------------------------
 Given n, find the number of solutions for all x, y, z that conforms to x^2+y^2+z^2 = n.(x, y, z are non-negative integers)
 

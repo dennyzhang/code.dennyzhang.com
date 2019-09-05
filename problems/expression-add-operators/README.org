@@ -11,7 +11,6 @@ Expression Add Operators
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/expression-add-operators"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-divideconquer][Review: Divide And Conquer Problems]]
 - Tag: [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators (not unary) +, -, or * between the digits so they evaluate to the target value.

@@ -11,7 +11,6 @@ Lowest Common Ancestor of a Binary Tree
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/lowest-common-ancestor-of-a-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-classic][Review: Classic Code Problems]]
 - [[https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-search-tree][Lowest Common Ancestor of a Binary Search Tree]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/heightoftree][#heightoftree]]
 ---------------------------------------------------------------------

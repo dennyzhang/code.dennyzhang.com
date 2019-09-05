@@ -49,6 +49,59 @@ See more challenges from Denny: [[https://github.com/topics/denny-challenges][#d
 #+LINK_UP:
 #+LINK_HOME:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* DONE code snippet refresh tags                                   :noexport:
+  CLOSED: [2019-09-03 Tue 10:12]
+#+BEGIN_SRC sh
+#!/usr/bin/env bash
+set -o errexit
+set -o pipefail
+set -o nounset
+
+cd /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/
+for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "README.org"); do
+    echo "$f"
+    # sed -i "" 's!\[\[https://code.dennyzhang.com/tag/dynamicprogramming\]\[#dynamicprogramming\]\]!\[\[https://code.dennyzhang.com/review-dynamicprogramming\]\[#dynamicprogramming\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/backtracking\]\[#backtracking\]\]!\[\[https://code.dennyzhang.com/review-backtracking\]\[#backtracking\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/bfs\]\[#bfs\]\]!\[\[https://code.dennyzhang.com/review-bfs\]\[#bfs\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/binarysearch\]\[#binarysearch\]\]!\[\[https://code.dennyzhang.com/review-binarysearch\]\[#binarysearch\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/combination\]\[#combination\]\]!\[\[https://code.dennyzhang.com/review-combination\]\[#combination\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/complexity\]\[#complexity\]\]!\[\[https://code.dennyzhang.com/review-complexity\]\[#complexity\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/concurrency\]\[#concurrency\]\]!\[\[https://code.dennyzhang.com/review-concurrency\]\[#concurrency\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/dfs\]\[#dfs\]\]!\[\[https://code.dennyzhang.com/review-dfs\]\[#dfs\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/divideconquer\]\[#divideconquer\]\]!\[\[https://code.dennyzhang.com/review-divideconquer\]\[#divideconquer\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/game\]\[#game\]\]!\[\[https://code.dennyzhang.com/review-game\]\[#game\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/gcd\]\[#gcd\]\]!\[\[https://code.dennyzhang.com/review-gcd\]\[#gcd\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/graph\]\[#graph\]\]!\[\[https://code.dennyzhang.com/review-graph\]\[#graph\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/greedy\]\[#greedy\]\]!\[\[https://code.dennyzhang.com/review-greedy\]\[#greedy\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/hard\]\[#hard\]\]!\[\[https://code.dennyzhang.com/review-hard\]\[#hard\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/hashmap\]\[#hashmap\]\]!\[\[https://code.dennyzhang.com/review-hashmap\]\[#hashmap\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/heap\]\[#heap\]\]!\[\[https://code.dennyzhang.com/review-heap\]\[#heap\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/inspiring\]\[#inspiring\]\]!\[\[https://code.dennyzhang.com/review-inspiring\]\[#inspiring\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/interval\]\[#interval\]\]!\[\[https://code.dennyzhang.com/review-interval\]\[#interval\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/linkedlist\]\[#linkedlist\]\]!\[\[https://code.dennyzhang.com/review-linkedlist\]\[#linkedlist\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/manydetails\]\[#manydetails\]\]!\[\[https://code.dennyzhang.com/review-manydetails\]\[#manydetails\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/math\]\[#math\]\]!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/median\]\[#median\]\]!\[\[https://code.dennyzhang.com/review-median\]\[#median\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/minmax\]\[#minmax\]\]!\[\[https://code.dennyzhang.com/review-minmax\]\[#minmax\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/math\]\[#math\]\]!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/mod\]\[#mod\]\]!\[\[https://code.dennyzhang.com/review-mod\]\[#mod\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/oodesign\]\[#oodesign\]\]!\[\[https://code.dennyzhang.com/review-oodesign\]\[#oodesign\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/palindrome\]\[#palindrome\]\]!\[\[https://code.dennyzhang.com/review-palindrome\]\[#palindrome\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/rectangle\]\[#rectangle\]\]!\[\[https://code.dennyzhang.com/review-rectangle\]\[#rectangle\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/recursive\]\[#recursive\]\]!\[\[https://code.dennyzhang.com/review-recursive\]\[#recursive\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/segmenttree\]\[#segmenttree\]\]!\[\[https://code.dennyzhang.com/review-segmenttree\]\[#segmenttree\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/slidingwindow\]\[#slidingwindow\]\]!\[\[https://code.dennyzhang.com/review-slidingwindow\]\[#slidingwindow\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/sqrt\]\[#sqrt\]\]!\[\[https://code.dennyzhang.com/review-sqrt\]\[#sqrt\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/sql\]\[#sql\]\]!\[\[https://code.dennyzhang.com/review-sql\]\[#sql\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/stack\]\[#stack\]\]!\[\[https://code.dennyzhang.com/review-stack\]\[#stack\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/string\]\[#string\]\]!\[\[https://code.dennyzhang.com/review-string\]\[#string\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/treetraversal\]\[#treetraversal\]\]!\[\[https://code.dennyzhang.com/review-treetraversal\]\[#treetraversal\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/trie\]\[#trie\]\]!\[\[https://code.dennyzhang.com/review-trie\]\[#trie\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/twopointer\]\[#twopointer\]\]!\[\[https://code.dennyzhang.com/review-twopointer\]\[#twopointer\]\]!g' $f    
+    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/unionfind\]\[#unionfind\]\]!\[\[https://code.dennyzhang.com/review-unionfind\]\[#unionfind\]\]!g' $f
+done
+
+#+END_SRC
 * TODO [#A] Role Models                                            :noexport:
 https://github.com/donnemartin/interactive-coding-challenges
 ** Sample https://github.com/scottszb1987/LeetCodeInCSharp
@@ -296,5 +349,6 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 * TODO Code website: adsense doesn't show up quickly               :noexport:
 * TODO Add fork for review posts: https://code.dennyzhang.com/review-complexity :noexport:
 * TODO Promote my github repo: https://github.com/dennyzhang/code.dennyzhang.com :noexport:
+* TODO syntax color: https://code.dennyzhang.com/max-consecutive-ones-iii :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO code blog: change a better wordpress template               :noexport:

@@ -12,7 +12,6 @@ Validate IP Address
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/ip-to-cidr][IP to CIDR]]
-- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/ipaddress][#ipaddress]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Write a function to check whether an input string is a valid IPv4 address or IPv6 address or neither.

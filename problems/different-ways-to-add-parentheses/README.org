@@ -11,7 +11,6 @@ Different Ways to Add Parentheses
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/different-ways-to-add-parentheses"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-divideconquer][Review: Divide And Conquer Problems]]
 - Tag: [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]]
 ---------------------------------------------------------------------
 Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.

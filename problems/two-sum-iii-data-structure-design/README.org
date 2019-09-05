@@ -12,7 +12,6 @@ Two Sum III - Data structure design
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
 ---------------------------------------------------------------------
 Design and implement a TwoSum class. It should support the following operations: add and find.

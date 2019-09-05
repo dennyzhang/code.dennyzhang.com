@@ -8,7 +8,6 @@
 Ones and Zeroes
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/order-problem][LintCode: Order Problem]]
-- [[https://code.dennyzhang.com/review-knapsack][Review: Knapsack Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/knapsack][#knapsack]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 In the computer world, use restricted resource you have to generate maximum benefit is what we always want to pursue.

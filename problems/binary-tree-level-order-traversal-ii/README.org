@@ -11,7 +11,6 @@ Binary Tree Level Order Traversal II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-tree-level-order-traversal-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
 - Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).

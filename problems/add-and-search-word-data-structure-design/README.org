@@ -11,9 +11,7 @@ Add and Search Word - Data structure design
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/add-and-search-word-data-structure-design"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- [[https://code.dennyzhang.com/review-trie][Review: Trie Tree Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][oodesign]], [[https://code.dennyzhang.com/review-trie][trie]]
 ---------------------------------------------------------------------
 Design a data structure that supports the following two operations:
 #+BEGIN_EXAMPLE

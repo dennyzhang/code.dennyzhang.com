@@ -13,7 +13,6 @@ Pic 2 numbers to get the target sum.
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 ---------------------------------------------------------------------
 Given an array of integers, return *indices* of the two numbers such that they add up to a specific target.
 

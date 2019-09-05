@@ -11,9 +11,6 @@ Count Primes
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-primes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
-- [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 Count the number of prime numbers less than a non-negative number, n.

@@ -11,7 +11,6 @@ Determine whether an integer is a palindrome. Do this without extra space.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/palindrome-number"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]]
 - Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Determine whether an integer is a palindrome. Do this without extra space.

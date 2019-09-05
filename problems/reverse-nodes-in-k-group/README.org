@@ -12,7 +12,6 @@ Reverse Nodes in k-Group
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-reverseitem][Series: Reverse List/String & Follow-up]]
-- [[https://code.dennyzhang.com/review-manydetails][Review: Problems With Many Details]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.

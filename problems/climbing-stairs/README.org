@@ -11,7 +11,6 @@ Simple DP
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/climbing-stairs"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-dynamicprogramming][Review: Dynamic Programming Problems]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/fibonacci][#fibonacci]]
 ---------------------------------------------------------------------
 You are climbing a stair case. It takes n steps to reach to the top.

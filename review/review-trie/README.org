@@ -35,3 +35,5 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
+** https://www.jiuzhang.com/solutions/implement-trie/              :noexport:
+** https://jiayi797.github.io/2017/11/13/算法-Trie树/              :noexport:

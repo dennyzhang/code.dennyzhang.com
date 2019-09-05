@@ -14,12 +14,13 @@ Key operations: find-min, get-min, insert, etc.
 #+END_HTML
 
 *Basic Abstractions*
-| Name                             | Summary        |
-|----------------------------------+----------------|
-| Build a heap                     | Time O(n)      |
-| Insert an element to binary heap | Time O(log(n)) |
-| Remove the top from binary heap  | Time O(log(n)) |
-| *Remove an item by value*        | Time O(n)      |
+| Name                                           | Summary        |
+|------------------------------------------------+----------------|
+| Build a heap                                   | Time O(n)      |
+| Insert an element to binary heap               | Time O(log(n)) |
+| Remove the top from binary heap                | Time O(log(n)) |
+| *Remove an item by value*                      | Time O(n)      |
+| For topk max, need minheap, instead of maxheap |                |
 *Scenarios*
 *Code Skeleton*
 *Questions*
@@ -29,29 +30,48 @@ Key operations: find-min, get-min, insert, etc.
 
 *Code Skeleton*
 #+BEGIN_SRC go
-type MyNode struct {
-    val int
-    cnt int
+// Blog link: https://code.dennyzhang.com/minimum-cost-to-connect-sticks
+// Basic Ideas: min heap
+//   cost = (n-1)*l[0]+(n-1)*l[1]+(n-2)*l[2]+(n-3)*l[3]....+ l[n-1]
+// Complexity: O(n*log(n)), Space O(1)
+// min heap
+type IntHeap []int
+func (h IntHeap) Len() int {
+    return len(h)
 }
 
-// min heap
-type IntHeap []MyNode
-func (h IntHeap) Len() int           { return len(h) }
-func (h IntHeap) Less(i, j int) bool { return h[i].cnt < h[j].cnt }
-func (h IntHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h IntHeap) Less(i, j int) bool {
+    return h[i] < h[j]
+}
+
+func (h IntHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
 
 func (h *IntHeap) Push(x interface{}) {
-        // Push and Pop use pointer receivers because they modify the slice's length,
-        // not just its contents.
-        *h = append(*h, x.(MyNode))
+    *h = append(*h, x.(int))
 }
 
 func (h *IntHeap) Pop() interface{} {
-        old := *h
-        n := len(old)
-        x := old[n-1]
-        *h = old[0 : n-1]
-        return x
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func connectSticks(sticks []int) int {
+    h := &IntHeap{}
+    heap.Init(h)
+    for _, v := range sticks {
+        heap.Push(h, v)
+    }
+    res := 0
+    for h.Len() != 1 {
+        n1 := heap.Pop(h).(int)
+        n2 := heap.Pop(h).(int)
+        res += n1+n2
+        heap.Push(h, n1+n2)
+    }
+    return res
 }
 #+END_SRC
 
@@ -64,11 +84,6 @@ Binary heaps:
 1. It may be represented by using an array, which is space-efficient.
 - The children of the node at position n would be at positions 2n + 1 and 2n + 2 in a zero-based array.
 - From child to parent: n -> (n-1)/2
-
-Complexity:
-1. 
-- 
-- 
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/sliding-window-median
@@ -89,7 +104,7 @@ def heapRemove(self, l, item):
 See all heap problems: [[https://code.dennyzhang.com/tag/heap/][#heap]]
 [display-posts tag="heap" posts_per_page="100" orderby="title"]
 
-Useful Link: 
+Useful Link:
 - [[url-external:https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/][Heap queue (or heapq) in Python]]
 - [[url-external:https://www.pythoncentral.io/use-queue-beginners-guide/][How to use Queue: A beginner's guide]]
 

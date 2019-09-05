@@ -1,0 +1,77 @@
+* Leetcode: Unique Substrings in Wraparound String              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Unique Substrings in Wraparound String
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-substrings-in-wraparound-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Consider the string s to be the infinite wraparound string of "abcdefghijklmnopqrstuvwxyz", so s will look like this: "...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....".
+
+Now we have another string p. Your job is to find out how many unique non-empty substrings of p are present in s. In particular, your input is the string p and you need to output the number of different non-empty substrings of p in the string s.
+
+Note: p consists of only lowercase English letters and the size of p might be over 10000.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "a"
+Output: 1
+
+Explanation: Only the substring "a" of string "a" is in the string s.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "cac"
+Output: 2
+Explanation: There are two substrings "a", "c" of string "cac" in the string s.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "zab"
+Output: 6
+Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string "zab" in the string s.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-substrings-in-wraparound-string][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/unique-substrings-in-wraparound-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/unique-substrings-in-wraparound-string
+func findSubstringInWraproundString(p string) int {
+    
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

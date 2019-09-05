@@ -13,7 +13,6 @@ Nth Digit
 Similar Problems:
 - [[https://code.dennyzhang.com/magical-string][Magical String]]
 - [[https://code.dennyzhang.com/remove-9][Remove 9]]
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Find the nth digit of the infinite integer sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...

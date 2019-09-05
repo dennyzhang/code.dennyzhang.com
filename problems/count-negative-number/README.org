@@ -12,7 +12,6 @@ Count Negative Number
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
-- [[https://code.dennyzhang.com/review-binarysearch][Review: Binary Search Problems]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Give a horizontally sorted and vertically sorted n * m matrix, find the number of negative number.

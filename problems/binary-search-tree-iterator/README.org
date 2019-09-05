@@ -11,8 +11,7 @@ Binary Search Tree Iterator
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-search-tree-iterator"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-oodesign][Review: Object-Oriented Design Problems]]
-- Tag: [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
 

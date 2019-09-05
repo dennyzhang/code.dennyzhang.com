@@ -11,7 +11,6 @@ Rotated Digits
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/rotated-digits"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-string][Review: String Problems]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
 ---------------------------------------------------------------------
 X is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X. A number is valid if each digit remains a digit after rotation. 0, 1, and 8 rotate to themselves; 2 and 5 rotate to each other; 6 and 9 rotate to each other, and the rest of the numbers do not rotate to any other number.

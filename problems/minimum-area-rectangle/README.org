@@ -1,0 +1,96 @@
+* Leetcode: Minimum Area Rectangle                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     rectangle
+:END:
+---------------------------------------------------------------------
+Minimum Area Rectangle
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-area-rectangle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/rectangle][LintCode: Rectangle]]
+- Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
+---------------------------------------------------------------------
+Given a set of points in the xy-plane, determine the minimum area of a rectangle formed from these points, with sides parallel to the x and y axes.
+
+If there isn't any rectangle, return 0.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [[1,1],[1,3],[3,1],[3,3],[2,2]]
+Output: 4
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]
+Output: 2
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= points.length <= 500
+- 0 <= points[i][0] <= 40000
+- 0 <= points[i][1] <= 40000
+- All points are distinct.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-area-rectangle][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-area-rectangle/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-area-rectangle
+// Basic Ideas: hashmap
+//  Treat two nodes as the diagonal. 
+//  Check whether the other two nodes exists to form a rectange
+//  If yes, we get a candidate. Check all candidates
+// Complexity: Time O(n*n), Space O(n)
+type node struct {
+    x int
+    y int
+}
+
+func minAreaRect(points [][]int) int {
+    m := map[node]bool{}
+    for _, p := range points {
+        m[node{p[0],p[1]}] = true
+    }
+    res := 1<<31-1
+    for i, n1 := range points {
+        for j:=i+1; j<len(points); j++ {
+            n2 := points[j]
+            if n1[0] == n2[0] || n1[1] == n2[1] {
+                continue
+            }
+            node3 := node{n1[0], n2[1]}
+            node4 := node{n2[0], n1[1]}
+            if m[node3] && m[node4] {
+                v := (n1[0]-n2[0])*(n1[1]-n2[1])
+                if v < 0 { v = -v }
+                if v < res {
+                    res = v
+                }
+            }
+        }
+    }
+    if res == 1<<31-1 {
+        res = 0
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

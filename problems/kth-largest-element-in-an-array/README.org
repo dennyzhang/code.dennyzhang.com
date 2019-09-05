@@ -12,7 +12,6 @@ Kth Largest Element in an Array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/kth-largest-element-in-a-stream][Leetcode: Kth Largest Element in a Stream]]
-- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
 - [[https://code.dennyzhang.com/tag/heap][Tag: #heap]]
 ---------------------------------------------------------------------
 Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.

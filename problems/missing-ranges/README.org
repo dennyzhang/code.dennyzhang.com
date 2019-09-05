@@ -12,7 +12,7 @@ Missing Ranges
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/meeting-rooms][Meeting Rooms]]
-- [[https://code.dennyzhang.com/review-interval][Review: Interval Problems]], [[https://code.dennyzhang.com/tag/interval][Tag: #interval]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]]
 ---------------------------------------------------------------------
 Given a sorted integer array where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
 

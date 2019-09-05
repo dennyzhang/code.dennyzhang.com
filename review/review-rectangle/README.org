@@ -10,6 +10,15 @@ Review Rectangle code problems
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-rectangle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
+
+*Questions*
+| Name                                                                   | Summary                                               |
+|------------------------------------------------------------------------+-------------------------------------------------------|
+| Judge whether 4 nodes can form a rectangle parallel to coordinate axis | [[https://code.dennyzhang.com/rectangle][LintCode: Rectangle]], [[https://code.dennyzhang.com/minimum-area-rectangle][Leetcode: Minimum Area Rectangle]] |
+| Whether 4 nodes can form a rectangle, which may not parallel to axis   |                                                       |
+| Whethere only need two nodes to define a rectangle? It depends         | [[https://code.dennyzhang.com/minimum-area-rectangle][Leetcode: Minimum Area Rectangle]]                      |
+| Find the overlapped area of two rectangles                             | [[https://code.dennyzhang.com/rectangle-overlap][Leetcode: Rectangle Overlap]], [[https://code.dennyzhang.com/rectangle-area][Leetcode: Rectangle Area]] |
+
 See all rectangle problems: [[https://code.dennyzhang.com/tag/rectangle/][#rectangle]]
 [display-posts tag="rectangle" posts_per_page="100" orderby="title"]
 

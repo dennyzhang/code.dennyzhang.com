@@ -12,7 +12,6 @@ Rectangle Overlap
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/rectangle-area][Rectangle Area]]
-- [[https://code.dennyzhang.com/review-rectangle][Review: Rectangle Problems]]
 - Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
 ---------------------------------------------------------------------
 

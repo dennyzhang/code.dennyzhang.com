@@ -90,3 +90,4 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 最优子结构（optimal substructure）
 问题的最优解由相关子问题的最优解组合而成,而这些子问题可以独立求解.
 #+END_EXAMPLE
+* https://jiayi797.github.io/2017/11/17/算法-DP/                   :noexport:

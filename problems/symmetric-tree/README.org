@@ -11,7 +11,6 @@ Given a binary tree, check whether it is a mirror of itself (ie, symmetric aroun
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/symmetric-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-treetraversal][Review: Tree Traversal Problems]]
 - Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]]
 ---------------------------------------------------------------------
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).

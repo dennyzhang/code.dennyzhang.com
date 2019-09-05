@@ -12,7 +12,6 @@ Find K Pairs with Smallest Sums
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/top-k-frequent-elements][Leetcode: Top K Frequent Elements]]
-- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
 - Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
 ---------------------------------------------------------------------
 You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
@@ -71,10 +70,8 @@ func (h *IntHeap) Push(x interface{}) {
     *h = append(*h, x.(MyNode))
 }
 func (h *IntHeap) Pop() interface{} {
-    old := *h
-    n := len(old)
-    res := old[n-1]
-    *h = old[0:n-1]
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
     return res
 }
 

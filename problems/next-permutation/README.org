@@ -12,7 +12,6 @@ Next Permutation
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/permutation-sequence][Permutation Sequence]]
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.

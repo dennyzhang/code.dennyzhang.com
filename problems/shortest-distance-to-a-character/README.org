@@ -12,7 +12,6 @@ Shortest Distance to a Character
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
-- [[https://code.dennyzhang.com/review-bfs][Review: BFS Problems]]
 - Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/twopass][#twopass]]
 ---------------------------------------------------------------------
 Given a string S and a character C, return an array of integers representing the shortest distance from the character C in the string.

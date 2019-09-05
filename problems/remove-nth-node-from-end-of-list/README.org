@@ -11,7 +11,7 @@ Remove Nth Node From End of List
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-nth-node-from-end-of-list"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- Tag: [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a linked list, remove the nth node from the end of list and return its head.
 

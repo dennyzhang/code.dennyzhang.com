@@ -12,7 +12,6 @@ Pic 3 numbers to get a triangle
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]]
 - Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 Given an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.

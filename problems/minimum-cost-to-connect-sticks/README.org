@@ -1,0 +1,99 @@
+* Leetcode: Minimum Cost to Connect Sticks                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     heap, game
+:END:
+---------------------------------------------------------------------
+Minimum Cost to Connect Sticks
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-cost-to-connect-sticks"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/review-game][#game]]
+---------------------------------------------------------------------
+You have some sticks with positive integer lengths.
+
+You can connect any two sticks of lengths X and Y into one stick by paying a cost of X + Y.  You perform this action until there is one stick remaining.
+
+Return the minimum cost of connecting all the given sticks into one stick in this way.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: sticks = [2,4,3]
+Output: 14
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: sticks = [1,8,3,5]
+Output: 30
+#+END_EXAMPLE
+ 
+Constraints:
+
+1. 1 <= sticks.length <= 10^4
+- 1 <= sticks[i] <= 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-cost-to-connect-sticks][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-cost-to-connect-sticks/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-cost-to-connect-sticks
+// Basic Ideas: min heap
+//   cost = (n-1)*l[0]+(n-1)*l[1]+(n-2)*l[2]+(n-3)*l[3]....+ l[n-1]
+// Complexity: O(n*log(n)), Space O(n)
+// min heap
+type IntHeap []int
+func (h IntHeap) Len() int {
+    return len(h)
+}
+
+func (h IntHeap) Less(i, j int) bool {
+    return h[i] < h[j]
+}
+
+func (h IntHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *IntHeap) Push(x interface{}) {
+    *h = append(*h, x.(int))
+}
+
+func (h *IntHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func connectSticks(sticks []int) int {
+    h := &IntHeap{}
+    heap.Init(h)
+    for _, v := range sticks {
+        heap.Push(h, v)
+    }
+    res := 0
+    for h.Len() > 1 {
+        n1 := heap.Pop(h).(int)
+        n2 := heap.Pop(h).(int)
+        res += n1+n2
+        heap.Push(h, n1+n2)
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -12,7 +12,6 @@ Kth Smallest Element in a Sorted Matrix
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/search-a-2d-matrix-ii][Search a 2D Matrix II]]
-- [[https://code.dennyzhang.com/review-heap][Review: Heap Problems]]
 - Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
 ---------------------------------------------------------------------
 Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.

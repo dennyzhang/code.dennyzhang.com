@@ -11,7 +11,7 @@ Palindromic Substrings
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/palindromic-substrings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-palindrome][Review: Palindrome Problems]], [[https://code.dennyzhang.com/tag/palindrome][Tag: #palindrome]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Given a string, your task is to count how many palindromic substrings in this string.
 

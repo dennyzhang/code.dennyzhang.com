@@ -1,0 +1,93 @@
+* Leetcode: Distance Between Bus Stops                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Distance Between Bus Stops
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distance-between-bus-stops"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+A bus has n stops numbered from 0 to n - 1 that form a circle. We know the distance between all pairs of neighboring stops where distance[i] is the distance between the stops number i and (i + 1) % n.
+
+The bus goes along both directions i.e. clockwise and counterclockwise.
+
+Return the shortest distance between the given start and destination stops.
+
+Example 1:
+[[image-blog:Distance Between Bus Stops][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/distance-between-bus-stops/my1.jpg]]
+#+BEGIN_EXAMPLE
+Input: distance = [1,2,3,4], start = 0, destination = 1
+Output: 1
+Explanation: Distance between 0 and 1 is 1 or 9, minimum is 1.
+#+END_EXAMPLE
+ 
+Example 2:
+[[image-blog:Distance Between Bus Stops][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/distance-between-bus-stops/my2.jpg]]
+#+BEGIN_EXAMPLE
+Input: distance = [1,2,3,4], start = 0, destination = 2
+Output: 3
+Explanation: Distance between 0 and 2 is 3 or 7, minimum is 3.
+#+END_EXAMPLE
+ 
+Example 3:
+[[image-blog:Distance Between Bus Stops][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/distance-between-bus-stops/my3.jpg]]
+#+BEGIN_EXAMPLE
+Input: distance = [1,2,3,4], start = 0, destination = 3
+Output: 4
+Explanation: Distance between 0 and 3 is 6 or 4, minimum is 4.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 10^4
+- distance.length == n
+- 0 <= start, destination < n
+- 0 <= distance[i] <= 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distance-between-bus-stops][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/distance-between-bus-stops/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/distance-between-bus-stops
+// Basic Ideas: array
+//
+// Only two possibilities
+//    from i to j
+//    l[i]+l[i+1]+...+l[j-1], or the other direction
+// Complexity: Time O(n), Space O(1)
+func distanceBetweenBusStops(distance []int, start int, destination int) int {
+    if start > destination {
+        start, destination = destination, start
+    }
+    sum, res := 0, 0
+    for i, v := range distance {
+        sum += v
+        if i>=start && i<destination {
+            res+=v
+        }
+    }
+    if sum - res < res {
+        res = sum-res
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

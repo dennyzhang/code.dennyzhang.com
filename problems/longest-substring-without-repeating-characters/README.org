@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, subsequence
+:type:     slidingwindow, atmostkdistinct
 :END:
 ---------------------------------------------------------------------
 Longest Substring Without Repeating Characters
@@ -12,7 +12,7 @@ Longest Substring Without Repeating Characters
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/substring-with-concatenation-of-all-words][Leetcode: Substring with Concatenation of All Words]]
-- [[https://code.dennyzhang.com/review-twopointer][Review: TwoPointers Problems]], [[https://code.dennyzhang.com/tag/twopointer][Tag: #twopointer]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-atmostkdistinct][#atmostkdistinct]]
 ---------------------------------------------------------------------
 Given a string, find the length of the longest substring without repeating characters.
 
@@ -30,6 +30,55 @@ Credits To: [[https://leetcode.com/problems/longest-substring-without-repeating-
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters
+// Basic Ideas: Sliding window
+//
+// Complexity: Time O(n), Space O(1)
+func lengthOfLongestSubstring(s string) int {
+    l := make([]int, 128)
+    res := 0
+    // s[i...j]
+    i := 0
+    for j, v := range s {
+        index := byte(v)
+        l[index]++
+        for l[index] > 1 {
+            l[s[i]]--
+            i++
+        }
+        if j-i+1 > res {
+            res = j-i+1
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters
+// Basic Ideas: Sliding window
+//
+// Complexity: Time O(n), Space O(n)
+func lengthOfLongestSubstring(s string) int {
+    m := map[byte]int{}
+    res := 0
+    // s[i...j]
+    i := 0
+    for j, _ := range s {
+        v := byte(s[j])
+        m[v]++
+        for m[v]>1 {
+            m[s[i]]--
+            i++
+        }
+        if j-i+1 > res {
+            res = j-i+1
+        }
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters

@@ -11,7 +11,6 @@ Evaluate Reverse Polish Notation
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/evaluate-reverse-polish-notation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-math][Review: Math Problems]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 Evaluate the value of an arithmetic expression in Reverse Polish Notation.

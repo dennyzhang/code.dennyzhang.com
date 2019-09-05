@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     string, slidingwindow, atmostkdistinct
 :END:
 ---------------------------------------------------------------------
 Longest Substring with At Most K Distinct Characters
@@ -12,7 +12,7 @@ Longest Substring with At Most K Distinct Characters
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-substring-with-at-most-two-distinct-characters][Longest Substring with At Most Two Distinct Characters]]
-- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-atmostkdistinct][#atmostkdistinct]]
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
@@ -22,6 +22,70 @@ Credits To: [[https://leetcode.com/problems/longest-substring-with-at-most-k-dis
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
+// Basic Ideas: sliding window
+//
+// Complexity: Time O(n*k), Space O(k)
+func lengthOfLongestSubstringKDistinct(s string, k int) int {
+    res := 0
+    m := map[byte]int{}
+    // s[i...j]
+    i:=0
+    for j, ch := range s {
+        // Move the right
+        m[byte(ch)]++
+        if m[byte(ch)] == 1 {
+            k--
+        }
+        // Move the left
+        for k<0 {
+            ch2 := s[i]
+            m[ch2]--
+            i++
+            if m[ch2] == 0 {
+                k++
+            }
+        }
+        // Collect result
+        if j-i+1 > res {
+            res = j-i+1
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
+// Basic Ideas: sliding window
+//
+// Complexity: Time O(n*k), Space O(k)
+func lengthOfLongestSubstringKDistinct(s string, k int) int {
+    res := 0
+    m := map[byte]int{}
+    // s[i...j]
+    i:=0
+    for j, ch := range s {
+        // Move the right
+        m[byte(ch)]++
+        // Move the left
+        for len(m) > k {
+            ch2 := s[i]
+            m[ch2]--
+            i++
+            if m[ch2] == 0 {
+                delete(m, ch2)
+            }
+        }
+        // Collect result
+        if j-i+1 > res {
+            res = j-i+1
+        }
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters

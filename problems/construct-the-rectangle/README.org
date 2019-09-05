@@ -11,8 +11,6 @@ Construct the Rectangle
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/construct-the-rectangle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-rectangle][Review: Rectangle Problems]]
-- [[https://code.dennyzhang.com/review-sqrt][Review: sqrt Problems]]
 - Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]], [[https://code.dennyzhang.com/tag/sqrt][sqrt]]
 ---------------------------------------------------------------------
 For a web developer, it is very important to know how to design a web page's size. So, given a specific rectangular web page's area, your job by now is to design a rectangular web page, whose length L and width W satisfy the following requirements:

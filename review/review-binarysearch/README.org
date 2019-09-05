@@ -19,11 +19,11 @@ But you wouldn't believe how incredibly useful it would be.
 - How you can reduce the dataset into half?
 
 *Ideas*
-| Name       | Example                                  |
-|------------+------------------------------------------|
-| Break case | =for left+1<right=: the same or adjacent |
-| Break case | =for left<right=                         |
-| Break case | for left<=right                          |
+| Name                             | Example                 |
+|----------------------------------+-------------------------|
+| When to break?                   | left<right, left<=right |
+| How to move left/right pointers? |                         |
+| What to return?                  |                         |
 
 [[color:#c7254e][Where Left/Right Would Be After Search?]]
 l = [2, 3, 8, 12, 20, 35], target = 4

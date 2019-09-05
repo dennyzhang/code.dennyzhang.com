@@ -11,7 +11,6 @@ Prime Product
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/prime-product"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-combination][Review: Combinations and Permutations Problems]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given a non-repeating prime array arr, and each prime number is used at most once, find all the product without duplicate and sort them from small to large.

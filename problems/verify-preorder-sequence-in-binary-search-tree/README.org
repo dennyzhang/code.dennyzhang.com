@@ -12,7 +12,7 @@ Verify Preorder Sequence in Binary Search Tree
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/verify-preorder-serialization-of-a-binary-tree][Verify Preorder Serialization of a Binary Tree]]
-- [[https://code.dennyzhang.com/review-binarytree][Review: Binary Tree Problems]], [[https://code.dennyzhang.com/tag/binarytree][Tag: #binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
 ---------------------------------------------------------------------
 Given an array of numbers, verify whether it is the correct preorder traversal sequence of a binary search tree.
 

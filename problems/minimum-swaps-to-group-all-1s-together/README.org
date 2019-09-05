@@ -1,0 +1,100 @@
+* Leetcode: Minimum Swaps to Group All 1's Together             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     slidingwindow
+:END:
+---------------------------------------------------------------------
+Minimum Swaps to Group All 1's Together
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-swaps-to-group-all-1s-together"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/max-consecutive-ones][Leetcode: Max Consecutive Ones]]
+- [[https://code.dennyzhang.com/max-consecutive-ones-ii][Leetcode: Max Consecutive Ones II]]
+- [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]
+- [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][Leetcode: Minimum Swaps to Group All 1's Together]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
+---------------------------------------------------------------------
+Given a binary array data, return the minimum number of swaps required to group all 1's present in the array together in any place in the array.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,0,1,0,1]
+Output: 1
+Explanation: 
+There are 3 ways to group all 1's together:
+[1,1,1,0,0] using 1 swap.
+[0,1,1,1,0] using 2 swaps.
+[0,0,1,1,1] using 1 swap.
+The minimum is 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [0,0,0,1,0]
+Output: 0
+Explanation: 
+Since there is only one 1 in the array, no swaps needed.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [1,0,1,0,1,0,0,1,1,0,1]
+Output: 3
+Explanation: 
+One possible solution that uses 3 swaps is [0,0,0,0,0,1,1,1,1,1,1].
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= data.length <= 10^5
+- 0 <= data[i] <= 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-swaps-to-group-all-1s-together][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together
+// Basic Ideas: fixed size sliding window
+//  We know the size of the final group all 1's
+//  The window can start from any position
+//  Use a sliding window. And the find the minimum count of 0s in the sliding window.
+// Complexity: Time O(n), Space O(k)
+func minSwaps(data []int) int {
+    k:=0
+    for _, v := range data {
+        if v == 1 {  k++ }
+    }
+    res := 1<<31-1
+    count := 0
+    // sliding window. left: i-k+1, right: i
+    for i:=0; i<len(data); i++ {
+        // move right pointer: add a new element
+        if data[i] == 0 { count++ }
+        // move left pointer: remove the old element
+        if i-k >= 0 {
+            if data[i-k] == 0 { count-- }
+        }
+        // collect result
+        if i-k+1 >= 0  {
+            if count < res { res = count }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

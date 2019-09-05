@@ -11,7 +11,6 @@ Pairs of Songs With Total Durations Divisible by 60
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/pairs-of-songs-with-total-durations-divisible-by-60"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/review-linkedlist][Review: Linked List Problems]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 In a list of songs, the i-th song has a duration of time[i] seconds. 
