@@ -12,6 +12,7 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/max-stack][Max Stack]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.

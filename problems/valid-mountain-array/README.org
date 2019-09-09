@@ -11,6 +11,7 @@ Valid Mountain Array
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/valid-mountain-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/mountain][#mountain]]
 ---------------------------------------------------------------------
 Given an array A of integers, return true if and only if it is a valid mountain array.
@@ -54,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/valid-mountain-array
-// Basic Idea: simple scan
+// Basic Ideas: simple scan
 // Complexity: Time O(n), Space O(1)
 func validMountainArray(A []int) bool {
     if len(A) < 3 || A[1] <= A[0] { return false }

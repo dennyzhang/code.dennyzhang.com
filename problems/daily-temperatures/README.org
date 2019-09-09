@@ -12,6 +12,7 @@ Daily Temperatures
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]]
 ---------------------------------------------------------------------
 Given a list of daily temperatures, produce a list that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.

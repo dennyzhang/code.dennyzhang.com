@@ -213,6 +213,8 @@ from
     on t1.id = t3.id
 #+END_SRC
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all sql problems: [[https://code.dennyzhang.com/tag/sql/][#sql]].
 [display-posts tag="sql" posts_per_page="100" orderby="title"]
 

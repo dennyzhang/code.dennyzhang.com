@@ -12,6 +12,7 @@ Order Problem
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/ones-and-zeroes][Ones and Zeroes]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/knapsack][#knapsack]]
 ---------------------------------------------------------------------
 Description

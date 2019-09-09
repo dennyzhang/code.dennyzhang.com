@@ -12,6 +12,7 @@ Quad Tree Intersection
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/construct-quad-tree][Leetcode: Construct Quad Tree]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/quadtree][#quadtree]], [[https://code.dennyzhang.com/tag/postorder][#postorder]]
 ---------------------------------------------------------------------
 A quadtree is a tree data in which each internal node has exactly four children: topLeft, topRight, bottomLeft and bottomRight. Quad trees are often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions.

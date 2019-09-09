@@ -12,6 +12,7 @@ Path Sum IV
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/path-sum-iii][Path Sum III]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 

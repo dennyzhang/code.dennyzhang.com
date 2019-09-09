@@ -12,6 +12,7 @@ Spiral Matrix III
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-matrixtraversal][Series: Matrix Traversal & Follow-up]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/matrixtraversal][#matrixtraversal]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 On a 2 dimensional grid with R rows and C columns, we start at (r0, c0) facing east.

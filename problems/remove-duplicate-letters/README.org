@@ -2,10 +2,18 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     greedy, lexicographical
+:type:     greedy, string, lexicographical
 :END:
 ---------------------------------------------------------------------
 Remove Duplicate Letters
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-subsequence-of-distinct-characters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/smallest-subsequence-of-distinct-characters][Leetcode: Smallest Subsequence of Distinct Characters]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given a string which contains only lowercase letters, remove duplicate letters so that every letter appear once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
 #+BEGIN_EXAMPLE
@@ -25,10 +33,42 @@ Credits To: [[https://leetcode.com/problems/remove-duplicate-letters/description
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/remove-duplicate-letters
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/remove-duplicate-letters
+// Basic Ideas: greedy + stack + hashmap
+//   Try to iterate into the final result
+//   If current letter is smaller than previous one, treat current one as preferency
+//      If the previous character exists in the following ones, we can safely remove it
+// Complexity: Time O(n), Space O(1)
+func removeDuplicateLetters(s string) string {
+    stack := []byte{}
+    l := make([]int, 26)
+    exists := make([]bool, 26)
+    for i, _ := range s {
+        l[s[i]-'a']++
+    }
+    for i, _ := range s {
+        v := s[i]-'a'
+        l[v]--
+        // skip if already exists
+        if exists[v] {
+            continue
+        }
+        // current one is better than previous
+        for len(stack) > 0 && stack[len(stack)-1] > v && l[stack[len(stack)-1]] != 0 {
+            exists[stack[len(stack)-1]] = false
+            stack = stack[0:len(stack)-1]
+        }
+        // add current one
+        stack = append(stack, v)
+        exists[v] = true
+    }
+    res := ""
+    for i, _ := range stack {
+        res += string(stack[i]+'a')
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

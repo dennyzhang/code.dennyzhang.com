@@ -12,6 +12,7 @@ Generalized Abbreviation
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Write a function to generate the generalized abbreviations of a word.

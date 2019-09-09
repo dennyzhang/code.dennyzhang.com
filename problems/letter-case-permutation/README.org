@@ -12,6 +12,7 @@ Letter Case Permutation
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/generalized-abbreviation][Generalized Abbreviation]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.

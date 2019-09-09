@@ -12,6 +12,7 @@ Subsets
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/subsets-ii][Subsets II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/subset][#subset]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a set of distinct integers, nums, return all possible subsets (the power set).

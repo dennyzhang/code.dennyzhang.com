@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc, redo, calendar, interval
+:type:     interval, redo
 :END:
 ---------------------------------------------------------------------
 My Calendar I
@@ -11,7 +11,8 @@ My Calendar I
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/my-calendar-i"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]]
 ---------------------------------------------------------------------
 Implement a MyCalendar class to store your events. A new event can be added if adding the event will not cause a double booking.
 
@@ -44,10 +45,84 @@ Credits To: [[https://leetcode.com/problems/my-calendar-i/description/][leetcode
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/my-calendar-i
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/my-calendar-i
+// Basic Ideas: 
+//  Detect conflict of intervals
+// Complexity: Time O(n*n) Space O(n)
+type MyCalendar struct {
+    intervals [][]int
+}
 
+func Constructor() MyCalendar {
+    intervals := [][]int{}
+    return MyCalendar{intervals:intervals}
+}
+
+func (this *MyCalendar) Book(start int, end int) bool {
+    for _, interval := range this.intervals {
+        if interval[0] < end && start < interval[1] {
+            return false
+        }
+    }
+    this.intervals = append(this.intervals, []int{start, end})
+    return true
+}
+
+/**
+ * Your MyCalendar object will be instantiated and called as such:
+ * obj := Constructor();
+ * param_1 := obj.Book(start,end);
+ */
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/my-calendar-i
+// Basic Ideas: 
+//  Detect conflict of intervals
+//  The order matters
+//  
+// Complexity: Time O(n*n) Space O(n)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+type MyCalendar struct {
+    intervals [][]int
+}
+
+func Constructor() MyCalendar {
+    intervals := [][]int{}
+    return MyCalendar{intervals:intervals}
+}
+
+func (this *MyCalendar) Book(start int, end int) bool {
+    for _, interval := range this.intervals {
+        if min(end, interval[1]) > max(start, interval[0]) {
+            return false
+        }
+    }
+    this.intervals = append(this.intervals, []int{start, end})
+    return true
+}
+
+/**
+ * Your MyCalendar object will be instantiated and called as such:
+ * obj := Constructor();
+ * param_1 := obj.Book(start,end);
+ */
 #+END_SRC
 
 #+BEGIN_HTML

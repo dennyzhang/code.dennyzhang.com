@@ -12,6 +12,7 @@
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/integer-break][Integer Break]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:

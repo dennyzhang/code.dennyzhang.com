@@ -11,6 +11,7 @@ Walking Robot Simulation
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/walking-robot-simulation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/walkrobot][#walkrobot]]
 ---------------------------------------------------------------------
 A robot on an infinite grid starts at point (0, 0) and faces north.  The robot can receive one of three possible types of commands:

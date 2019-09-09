@@ -12,6 +12,7 @@ Sliding Puzzle III
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/sliding-puzzle][Leetcode: Sliding Puzzle]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/tag/slidingpuzzle][#slidingpuzzle]]
 ---------------------------------------------------------------------
 Given a 3 x 3 matrix, the number is 1~9, among which 8 squares have numbers, 1~8, and one is null (indicated by 0), asking if the corresponding number can be put on the corresponding label In the grid (spaces can only be swapped with up, down, left, and right positions), if it can output "YES", otherwise it outputs "NO".

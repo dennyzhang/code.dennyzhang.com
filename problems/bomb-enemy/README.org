@@ -12,6 +12,7 @@ Bomb Enemy
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/lonely-pixel-i][Lonely Pixel I]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 Given a 2D grid, each cell is either a wall 'W', an enemy 'E' or empty '0' (the number zero), return the maximum enemies you can kill using one bomb.

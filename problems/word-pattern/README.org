@@ -12,6 +12,7 @@ Word Pattern
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/word-pattern-ii][Word Pattern II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given a pattern and a string str, find if str follows the same pattern.

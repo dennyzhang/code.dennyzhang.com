@@ -13,6 +13,7 @@ Sum of Square Numbers
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://code.dennyzhang.com/3sum-ii][LintCode: 3Sum II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/review-sqrt][#sqrt]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
 ---------------------------------------------------------------------
 Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a*a + b*b = c.

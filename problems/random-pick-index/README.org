@@ -11,6 +11,7 @@ Random Pick Index
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/random-pick-index"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]
 ---------------------------------------------------------------------
 Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.

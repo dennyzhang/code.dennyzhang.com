@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/climbing-stairs][LeetCode: Climbing Stairs]]
 - [[https://code.dennyzhang.com/house-robber][LeetCode: House Robber]]
 - [[https://code.dennyzhang.com/paint-house][LeetCode: Paint House]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/paintfence][#paintfence]]
 ---------------------------------------------------------------------
 There is a fence with n posts, each post can be painted with one of the k colors.

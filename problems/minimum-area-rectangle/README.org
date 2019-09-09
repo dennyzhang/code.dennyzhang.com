@@ -12,6 +12,7 @@ Minimum Area Rectangle
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/rectangle][LintCode: Rectangle]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Given a set of points in the xy-plane, determine the minimum area of a rectangle formed from these points, with sides parallel to the x and y axes.

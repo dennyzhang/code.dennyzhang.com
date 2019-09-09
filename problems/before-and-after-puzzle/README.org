@@ -1,0 +1,156 @@
+* Leetcode: Before and After Puzzle                             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+Before and After Puzzle
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/before-and-after-puzzle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given a list of phrases, generate a list of Before and After puzzles.
+
+A phrase is a string that consists of lowercase English letters and spaces only. No space appears in the start or the end of a phrase. There are no consecutive spaces in a phrase.
+
+Before and After puzzles are phrases that are formed by merging two phrases where the last word of the first phrase is the same as the first word of the second phrase.
+
+Return the Before and After puzzles that can be formed by every two phrases phrases[i] and phrases[j] where i != j. Note that the order of matching two phrases matters, we want to consider both orders.
+
+You should return a list of distinct strings sorted lexicographically.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: phrases = ["writing code","code rocks"]
+Output: ["writing code rocks"]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: phrases = ["mission statement",
+                  "a quick bite to eat",
+                  "a chip off the old block",
+                  "chocolate bar",
+                  "mission impossible",
+                  "a man on a mission",
+                  "block party",
+                  "eat my words",
+                  "bar of soap"]
+Output: ["a chip off the old block party",
+         "a man on a mission impossible",
+         "a man on a mission statement",
+         "a quick bite to eat my words",
+         "chocolate bar of soap"]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: phrases = ["a","b","a"]
+Output: ["a"]
+#+END_EXAMPLE
+
+Constraints:
+
+- 1 <= phrases.length <= 100
+- 1 <= phrases[i].length <= 100 
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/before-and-after-puzzle][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/before-and-after-puzzle/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/before-and-after-puzzle
+// Basic Ideas: two hashmap
+//
+// Notice: watch out "a b a"
+//
+// Complexity: Time O(n*n), Space O(n)
+import ("strings"
+        "sort")
+func beforeAndAfterPuzzles(phrases []string) []string {
+    m := map[string][][]string{}
+    for _, v := range phrases {
+        l := strings.Split(v, " ")
+        first := l[0]
+        last := l[len(l)-1]
+        m[first] = append(m[first], l)
+        if last != first {
+            m[last] = append(m[last], l)
+        }
+    }
+    m2 := map[string]bool{}
+    for _, l := range m {
+        for i:=0; i<len(l); i++ {
+            for j:=i+1; j<len(l); j++ {
+                p1, p2 := l[i], l[j]
+                if p1[len(p1)-1] == p2[0] {
+                    m2[strings.Join(append(p1, p2[1:]...), " ")] = true
+                }
+                if p2[len(p2)-1] == p1[0] {
+                    m2[strings.Join(append(p2,  p1[1:]...), " ")] = true
+                }
+            }
+        }
+    }
+    res := []string{}
+    for key, _ := range m2 {
+        res = append(res, key)
+    }
+    sort.Slice(res, func(i, j int) bool{
+        return res[i]<res[j]
+    })
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/before-and-after-puzzle
+// Basic Ideas: one hashmap
+//
+// Notice: watch out "a b a"
+//
+// Complexity: Time O(n*n), Space O(n)
+import ("strings"
+        "sort")
+func beforeAndAfterPuzzles(phrases []string) []string {
+    m := map[string]bool{}
+    for i:=0; i<len(phrases); i++ {
+        for j:=i+1; j<len(phrases); j++ {
+            p1, p2 := phrases[i], phrases[j]
+            l1 := strings.Split(p1, " ")
+            l2 := strings.Split(p2, " ")
+            if l1[len(l1)-1] == l2[0] {
+                m[strings.Join(append(l1, l2[1:]...), " ")] = true
+            }
+            if l2[len(l2)-1] == l1[0] {
+                m[strings.Join(append(l2,  l1[1:]...), " ")] = true
+            }
+        }
+    }
+    res := []string{}
+    for key, _ := range m {
+        res = append(res, key)
+    }
+    sort.Slice(res, func(i, j int) bool{
+        return res[i]<res[j]
+    })
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -24,6 +24,8 @@ Detect whether there is a circle/loop in directed/undirected graph
 *Questions*
 
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all circleingraph tree problems: [[https://code.dennyzhang.com/tag/circleingraph/][#circleingraph]]
 [display-posts tag="circleingraph" posts_per_page="100" orderby="title"]
 

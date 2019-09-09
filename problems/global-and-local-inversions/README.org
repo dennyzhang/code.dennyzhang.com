@@ -11,6 +11,7 @@ Global and Local Inversions
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/global-and-local-inversions"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
 ---------------------------------------------------------------------
 We have some permutation A of [0, 1, ..., N - 1], where N is the length of A.

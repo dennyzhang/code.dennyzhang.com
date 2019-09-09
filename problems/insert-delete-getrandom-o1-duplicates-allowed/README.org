@@ -12,6 +12,7 @@ Insert Delete GetRandom O(1) - Duplicates allowed
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/max-stack][Max Stack]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/random][#random]]
 ---------------------------------------------------------------------
 Design a data structure that supports all following operations in average O(1) time.

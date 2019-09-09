@@ -11,6 +11,7 @@ Camelcase Matching
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/camelcase-matching"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-twopoiner][#twopoiner]], [[https://code.dennyzhang.com/tag/mergetwolist][#mergetwolist]]
 ---------------------------------------------------------------------
 A query word matches a given pattern if we can insert lowercase letters to the pattern word so that it equals the query. (We may insert each character at any position, and may insert 0 characters.)

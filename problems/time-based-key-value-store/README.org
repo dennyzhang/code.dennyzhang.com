@@ -11,6 +11,7 @@ Time Based Key-Value Store
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/time-based-key-value-store"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Create a timebased key-value store class TimeMap, that supports two operations.

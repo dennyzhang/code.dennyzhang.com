@@ -14,6 +14,8 @@ Review Palindrome code problems
   [[https://code.dennyzhang.com/valid-palindrome][Leetcode: Valid Palindrome]]
   [[https://code.dennyzhang.com/valid-palindrome-ii][Leetcode: Valid Palindrome II]]
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all palindrome problems: [[https://code.dennyzhang.com/tag/palindrome/][#palindrome]]
 [display-posts tag="palindrome" posts_per_page="100" orderby="title"]
 

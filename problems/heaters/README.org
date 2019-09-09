@@ -12,6 +12,7 @@ Heaters
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/category/inspiring][#inspiring]], [[https://code.dennyzhang.com/category/classic][#classic]]
 ---------------------------------------------------------------------
 Winter is coming! Your first job during the contest is to design a standard heater with fixed warm radius to warm all the houses.

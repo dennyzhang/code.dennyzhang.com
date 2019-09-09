@@ -12,10 +12,14 @@ Review: Monotone Stack Or Monotone Queue Problems
 #+END_HTML
 
 *Basic Abstractions*
-| Name                           | Summary                                                  |
-|--------------------------------+----------------------------------------------------------|
-| Elements in stack              | Index of positions pointing to next bigger/smaller value |
-| Elements in stack are monotone | They indicates undecided elements                   |
+| Name                                                    | Summary                                                                                          |
+|---------------------------------------------------------+--------------------------------------------------------------------------------------------------|
+| Order of elements in stack                              | It would be monotone                                                                             |
+| Elements remained monotone in stack                     | They indicates undecided elements                                                                |
+| Elements in stack is usually index, instead of objects  |                                                                                                  |
+| May not need to store the array of indices              | [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Next Greater Element I]]                                                                 |
+| Mistake: when pop stack, don't compare value with index | _for len(stack)>0 && nums[stack[len(stack)-1]]>v_ VS _for len(stack)>0 && stack[len(stack)-1]>v_ |
+| Initial value of the indices array                      | _-1_ VS _len(array)_                                                                             |
 
 *Scenarios*
 - Find next bigger value or smaller value for each elements of an array
@@ -47,6 +51,8 @@ func validSubarrays(nums []int) int {
     return res
 }
 #+END_SRC
+
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
 See all monotone problems: [[https://code.dennyzhang.com/tag/monotone/][#monotone]]
 [display-posts tag="monotone" posts_per_page="100" orderby="title"]

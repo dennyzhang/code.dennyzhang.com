@@ -12,6 +12,7 @@ Random Pick with Blacklist
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/random][#random]]
 ---------------------------------------------------------------------
 Given a blacklist B containing unique integers from [0, N), write a function to return a uniform random integer from [0, N) which is NOT in B.

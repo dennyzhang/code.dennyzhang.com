@@ -12,6 +12,7 @@ Count Numbers with Unique Digits
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/number-of-digit-one][Number of Digit One]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 Given a non-negative integer n, count all numbers with unique digits, x, where 0 <= x < 10n.

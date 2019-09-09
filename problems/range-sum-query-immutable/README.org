@@ -11,6 +11,7 @@ Range Sum Query - Immutable
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/range-sum-query-immutable"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-concurrency][#concurrency]]
 ---------------------------------------------------------------------
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.

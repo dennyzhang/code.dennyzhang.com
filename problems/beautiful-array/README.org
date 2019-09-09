@@ -1,0 +1,81 @@
+* Leetcode: Beautiful Array                                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, dynamicprogramming, divideconquer
+:END:
+---------------------------------------------------------------------
+Beautiful Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/beautiful-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/132-pattern][Leetcode: 132 Pattern]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]]
+---------------------------------------------------------------------
+For some fixed N, an array A is beautiful if it is a permutation of the integers 1, 2, ..., N, such that:
+
+For every i < j, there is no k with i < k < j such that A[k] * 2 = A[i] + A[j].
+
+Given N, return any beautiful array A.  (It is guaranteed that one exists.)
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 4
+Output: [2,1,4,3]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 5
+Output: [3,1,2,5,4]
+#+END_EXAMPLE
+ 
+Note:
+
+- 1 <= N <= 1000
+ 
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/beautiful-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/beautiful-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/beautiful-array
+// Basic Ideas: array + dynamicprogramming
+//  [2, 1, 3]
+//  2*i-1: [3, 1, 5]
+//  2*i: [4, 2, 6]
+//  Put [odd...] [even...]
+// Complexity: Time O(n), Space O(n)
+func beautifulArray(N int) []int {
+    l := []int{1}
+    for len(l) < N {
+        l1, l2 := make([]int, len(l)), make([]int, len(l))
+        for i, v := range l {
+            l1[i], l2[i] = 2*v-1, 2*v
+        }
+        l = append(l1, l2...)
+    }
+    res := []int{}
+    for _, v := range l {
+        if v<=N {
+            res = append(res, v)
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

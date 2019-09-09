@@ -11,6 +11,7 @@ Relative Sort Array
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/relative-sort-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/sortbyfunction][#sortbyfunction]], [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1.

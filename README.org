@@ -349,6 +349,12 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 * TODO Code website: adsense doesn't show up quickly               :noexport:
 * TODO Add fork for review posts: https://code.dennyzhang.com/review-complexity :noexport:
 * TODO Promote my github repo: https://github.com/dennyzhang/code.dennyzhang.com :noexport:
-* TODO syntax color: https://code.dennyzhang.com/max-consecutive-ones-iii :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO syntax color: https://code.dennyzhang.com/max-consecutive-ones-iii :noexport:
 * TODO code blog: change a better wordpress template               :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO width is not long enough: https://code.dennyzhang.com/132-pattern :noexport:
+* TODO rename braindenny to Dennyzhang                             :noexport:
+https://code.dennyzhang.com/tag/redo/page/5
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO change the menu of the blog                                 :noexport:

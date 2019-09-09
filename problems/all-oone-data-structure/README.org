@@ -13,6 +13,7 @@ All O`one Data Structure
 Similar Problems:
 - [[https://code.dennyzhang.com/insert-delete-getrandom-o1][Insert Delete GetRandom O(1)]]
 - [[https://code.dennyzhang.com/lru-cache][LRU Cache]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][oodesign]]
 ---------------------------------------------------------------------
 Implement a data structure supporting the following operations:

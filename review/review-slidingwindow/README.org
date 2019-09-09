@@ -58,6 +58,8 @@ func minSwaps(data []int) int {
 | Move two pointers: two loop vs One loop                   | [[https://code.dennyzhang.com/longest-substring-without-repeating-characters][Leetcode: Longest Substring Without Repeating Characters]] |
 | Move pointer1 to match the other, or the other way around |                                                          |
 
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all slidingwindow problems: [[https://code.dennyzhang.com/tag/greedy/][#slidingwindow]]
 [display-posts tag="slidingwindow" posts_per_page="100" orderby="title"]
 

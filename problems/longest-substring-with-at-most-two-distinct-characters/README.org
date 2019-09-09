@@ -12,6 +12,7 @@ Longest Substring with At Most Two Distinct Characters
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters][Longest Substring with At Most K Distinct Characters]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-atmostkdistinct][#atmostkdistinct]]
 ---------------------------------------------------------------------
 Given a string, find the length of the longest substring T that contains at most 2 distinct characters.

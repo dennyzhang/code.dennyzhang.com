@@ -11,6 +11,7 @@ Twitch Words
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/twitch-words"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 Our normal words do not have more than two consecutive letters. If there are three or more consecutive letters, this is a tics. Now give a word, from left to right, to find out the starting point and ending point of all tics.

@@ -61,6 +61,8 @@ func maxLevelSum(root *TreeNode) int {
 - Scan from target to original: [[https://code.dennyzhang.com/reach-a-number][Reach a Number]]
 - BFS with memorization: [[https://code.dennyzhang.com/target-sum][Target Sum]]
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all bfs problems: [[https://code.dennyzhang.com/tag/bfs/][#bfs]]
 [display-posts tag="bfs" posts_per_page="100" orderby="title"]
 

@@ -12,6 +12,7 @@ All Possible Full Binary Trees
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/unique-binary-search-trees-ii][Leetcode: Unique Binary Search Trees II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]],  [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 A full binary tree is a binary tree where each node has exactly 0 or 2 children.

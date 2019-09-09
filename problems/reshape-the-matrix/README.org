@@ -12,6 +12,7 @@ Reshape the Matrix
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-matrixtraversal][Series: Matrix Traversal & Follow-up]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][matrixtraversal]]
 ---------------------------------------------------------------------
 In MATLAB, there is a very useful function called 'reshape', which can reshape a matrix into a new one with different size but keep its original data.

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     monotone
+:type:     monotone, circulararray
 :END:
 ---------------------------------------------------------------------
 Next Greater Element II
@@ -12,7 +12,8 @@ Next Greater Element II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Leetcode: Next Greater Element I]]
-- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]], [[https://code.dennyzhang.com/tag/circulararray][#circulararray]]
 ---------------------------------------------------------------------
 Given a circular array (the next element of the last element is the first element of the array), print the Next Greater Number for every element. The Next Greater Number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, output -1 for this number.
 #+BEGIN_EXAMPLE
@@ -32,10 +33,39 @@ Credits To: [[https://leetcode.com/problems/next-greater-element-ii/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/next-greater-element-ii
+// Basic Ideas: monotone stack
+//
+//   1 3 2 1 4
+//   1 3 2 1 4 1 3 2 1 4
+// Complexity: Time O(n), Space O(n)
+func nextGreaterElements(nums []int) []int {
+    nums2 := make([]int, len(nums)*2)
+    for i, v := range nums {
+        nums2[i] = v
+        nums2[i+len(nums)] = v
+    }
+    // monotone stack
+    l := make([]int, len(nums2))
+    stack := []int{}
+    for i, _ := range l {
+        l[i] = -1
+    }
+    for i, v := range nums2 {
+        for len(stack)>0 && nums2[stack[len(stack)-1]] < v {
+            l[stack[len(stack)-1]] = v
+            stack = stack[0:len(stack)-1]
+        }
+        stack = append(stack, i)
+    }
+    return l[0:len(nums)]
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/next-greater-element-ii
-## Basic Idea: Descending stack
+## Basic Ideas: Descending stack
 ##
 ## Complexity: Time O(n), Space O(n)
 class Solution(object):

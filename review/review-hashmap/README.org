@@ -11,16 +11,11 @@ Review Hashmap code problems
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-hashmap"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-*Basic Abstractions*
-| Name | Summary |
-|------+---------|
-|      |         |
-*Scenarios*
-*Code Skeleton*
 *Questions*
 | Name                                         | Example                           |
 |----------------------------------------------+-----------------------------------|
 | Use a local hashmap, instead of a global one | [[https://code.dennyzhang.com/increasing-subsequences][Leetcode: Increasing Subsequences]] |
+| One hashmap vs two hashmap                   | [[https://code.dennyzhang.com/before-and-after-puzzle][Leetcode: Before and After Puzzle]] |
 
 - Use a tuple as key
 [[https://code.dennyzhang.com/group-shifted-strings][Group Shifted Strings]]
@@ -42,6 +37,8 @@ class Solution:
         return [m[key] for key in m]
 #+END_SRC
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all hashmap problems: [[https://code.dennyzhang.com/tag/hashmap/][#hashmap]]
 [display-posts tag="hashmap" posts_per_page="100" orderby="title"]
 

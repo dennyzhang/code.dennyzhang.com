@@ -1,0 +1,100 @@
+* Leetcode: Interval List Intersections                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     mergetwolist, interval
+:END:
+---------------------------------------------------------------------
+Interval List Intersections
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/interval-list-intersections"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/insert-interval][Leetcode: Insert Interval]]
+- [[https://code.dennyzhang.com/merge-two-sorted-list][Leetcode: Merge Two Sorted Lists]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/mergetwolist][#mergetwolist]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
+---------------------------------------------------------------------
+Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order.
+
+Return the intersection of these two interval lists.
+
+(Formally, a closed interval [a, b] (with a <= b) denotes the set of real numbers x with a <= x <= b.  The intersection of two closed intervals is a set of real numbers that is either empty, or can be represented as a closed interval.  For example, the intersection of [1, 3] and [2, 4] is [2, 3].)
+
+[[image-blog:Leetcode: Interval List Intersections][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/interval-list-intersections/interval.png]]
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [[0,2],[5,10],[13,23],[24,25]], B = [[1,5],[8,12],[15,24],[25,26]]
+Output: [[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]
+Reminder: The inputs and the desired output are lists of Interval objects, and not arrays or lists.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= A.length < 1000
+- 0 <= B.length < 1000
+- 0 <= A[i].start, A[i].end, B[i].start, B[i].end < 10^9
+
+NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/interval-list-intersections][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/interval-list-intersections/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/interval-list-intersections
+// Basic Ideas: merge two list
+//
+//  l1[i], l2[j], remain
+//  If remain is not nil, which one to choose l1 or l2?
+//  Always choose the smaller starting point.
+//
+// Complexity: Time O(n+m), Space O(1)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func min(x, y int) int {
+    if x>y {
+        return y
+    } else {
+        return x
+    }
+}
+
+func intervalIntersection(A [][]int, B [][]int) [][]int {
+    res := [][]int{}
+    i, j := 0, 0
+    for i<len(A) && j<len(B) {
+        x := max(A[i][0], B[j][0])
+        y := min(A[i][1], B[j][1])
+        if y>=x {
+            res = append(res, []int{x, y})
+        }
+        if A[i][1] < B[j][1] {
+            i++
+        } else {
+            j++
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -11,6 +11,7 @@ Shortest Common Supersequence
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-common-supersequence"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given two strings str1 and str2, return the shortest string that has both str1 and str2 as subsequences.  If multiple answers exist, you may return any of them.

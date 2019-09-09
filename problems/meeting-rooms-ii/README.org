@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     calendar, redo
+:type:     calendar, overlappinginterval, heap
 :END:
 ---------------------------------------------------------------------
 Meeting Rooms II
@@ -11,8 +11,10 @@ Meeting Rooms II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/meeting-rooms-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/car-pooling][Leetcode: Car Pooling]]
 - [[https://code.dennyzhang.com/meeting-rooms][Meeting Rooms]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/tag/overlappinginterval][#overlappinginterval]]
 ---------------------------------------------------------------------
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.
 
@@ -34,10 +36,122 @@ Credits To: [[https://leetcode.com/problems/meeting-rooms-ii/description/][leetc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/meeting-rooms-ii
+// Basic Ideas: heap
+//
+//   Allocate the earlier requester
+//   If all meeting rooms occupied, check whether we can release one
+//   If not, add one more meeting room.
+//
+//   How to check which meeting room to release? min heap
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+import "container/heap"
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/meeting-rooms-ii
+// minheap
+type MyHeap []int
+func (h MyHeap) Len() int {
+    return len(h)
+}
+func (h MyHeap) Less(i, j int) bool {
+    return h[i]<h[j]
+}
 
+func (h MyHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *MyHeap) Push(x interface{}) {
+    *h = append(*h, x.(int))
+}
+
+func (h *MyHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func minMeetingRooms(intervals [][]int) int {
+    sort.Slice(intervals, func(i, j int) bool {
+        return intervals[i][0] < intervals[j][0]
+    })
+    res := 0
+    h := &MyHeap{}
+    heap.Init(h)
+    for _, interval := range intervals {
+        // check whether we can release one
+        if h.Len()>0 && (*h)[0]<=interval[0] {
+            heap.Pop(h)
+        } else {
+            res++
+        }
+        heap.Push(h, interval[1])
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/meeting-rooms-ii
+// Basic Ideas: heap
+//
+//   Allocate the earlier requester
+//   If all meeting rooms occupied, check whether we can release one
+//   If not, add one more meeting room.
+//
+//   How to check which meeting room to release? min heap
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+import "container/heap"
+
+// minheap
+type MyHeap []int
+func (h MyHeap) Len() int {
+    return len(h)
+}
+func (h MyHeap) Less(i, j int) bool {
+    return h[i]<h[j]
+}
+
+func (h MyHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *MyHeap) Push(x interface{}) {
+    *h = append(*h, x.(int))
+}
+
+func (h *MyHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func minMeetingRooms(intervals [][]int) int {
+    sort.Slice(intervals, func(i, j int) bool {
+        return intervals[i][0] < intervals[j][0]
+    })
+    res := 0
+    h := &MyHeap{}
+    heap.Init(h)
+    for _, interval := range intervals {
+        // check whether we can release one
+        if h.Len()>0 {
+            time := heap.Pop(h).(int)
+            if time > interval[0] {
+                heap.Push(h, time)
+                res++
+            }
+        } else {
+            res++
+        }
+        heap.Push(h, interval[1])
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

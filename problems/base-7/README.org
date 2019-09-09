@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo
+:type:     redo, baseconversion
 :END:
 ---------------------------------------------------------------------
 Base 7
@@ -11,7 +11,8 @@ Base 7
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/base-7"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/baseconversion][#baseconversion]]
 ---------------------------------------------------------------------
 Given an integer, return its base 7 string representation.
 
@@ -36,7 +37,29 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/base-7
+## Basic Ideas:
+## Complexity:
+class Solution(object):
+    def convertToBase7(self, num):
+        """
+        :type num: int
+        :rtype: str
+        """
+        ## Idea:
+        ## Complexity:
+        if num == 0:
+            return "0"
 
+        is_positive = True
+        if num < 0:
+            is_positive = False
+            num = -num
+
+        res = ""
+        while num != 0:
+            res = "%s%s" % (str(num % 7), res)
+            num = num/7
+        return res if is_positive else "-" + res
 #+END_SRC
 
 #+BEGIN_HTML

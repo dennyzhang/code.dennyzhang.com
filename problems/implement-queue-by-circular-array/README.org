@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign
+:type:     oodesign, circulararray
 :END:
 ---------------------------------------------------------------------
 Implement Queue by Circular Array
@@ -12,7 +12,8 @@ Implement Queue by Circular Array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/max-stack][Max Stack]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/circulararray][#circulararray]]
 ---------------------------------------------------------------------
 Implement queue by circulant array. You need to support the following methods:
 1. CircularQueue(n): initialize a circular array with size n to store elements

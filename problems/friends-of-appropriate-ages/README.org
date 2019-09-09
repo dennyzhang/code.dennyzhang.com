@@ -12,6 +12,7 @@ Friends Of Appropriate Ages
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/friend-request][LintCode: Friend Request]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Some people will make friend requests. The list of their ages is given and ages[i] is the age of the ith person. 

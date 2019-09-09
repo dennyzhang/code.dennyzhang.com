@@ -12,6 +12,7 @@ Permutation Sequence
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/next-permutation][Next Permutation]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 The set [1,2,3,...,n] contains a total of n! unique permutations.

@@ -12,6 +12,7 @@ Subarray Sums Divisible by K
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/continuous-subarray-sum][Leetcode: Continuous Subarray Sum]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/review-mod][#mod]]
 ---------------------------------------------------------------------
 Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.

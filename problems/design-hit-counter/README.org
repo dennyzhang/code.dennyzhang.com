@@ -12,6 +12,7 @@ Design Hit Counter
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/logger-rate-limiter][Logger Rate Limiter]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design a hit counter which counts the number of hits received in the past 5 minutes.

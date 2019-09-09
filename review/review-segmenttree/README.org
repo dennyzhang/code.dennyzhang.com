@@ -12,6 +12,8 @@ Review Segment Tree code problems
 #+END_HTML
 Segment Tree supports us to apply changes to a sub-range with *O(log(n)) complexity*, instead of O(n).
 
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all segmenttree problems: [[https://code.dennyzhang.com/tag/segmenttree][segmenttree]]
 [display-posts tag="segmenttree" posts_per_page="100" orderby="title"]
 

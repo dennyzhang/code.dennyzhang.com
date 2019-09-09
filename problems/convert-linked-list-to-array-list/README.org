@@ -12,6 +12,7 @@ Convert Linked List to Array List
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/convert-array-list-to-linked-list][LintCode: Convert Array List to Linked List]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/convertds][#convertds]]
 ---------------------------------------------------------------------
 Description

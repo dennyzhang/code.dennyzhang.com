@@ -12,6 +12,7 @@ Next Greater Element I
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/daily-temperatures][Leetcode: Daily Temperatures]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]]
 ---------------------------------------------------------------------
 You are given two arrays (without duplicates) nums1 and nums2 where nums1's elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
@@ -46,6 +47,71 @@ Credits To: [[https://leetcode.com/problems/next-greater-element-i/description/]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/next-greater-element-i
+// Basic Ideas: monotone stack without array of indices
+//  1 3 4 2
+//
+// Complexity: Time O(n), Space O(n)
+func nextGreaterElement(nums1 []int, nums2 []int) []int {
+    stack := make([]int, len(nums2))
+    m := map[int]int{}
+    for i, v := range nums2 {
+        for len(stack)>0 && nums2[stack[len(stack)-1]] < v {
+            m[nums2[stack[len(stack)-1]]] = v
+            stack = stack[0:len(stack)-1]
+        }
+        stack = append(stack, i)
+    }
+
+    for len(stack)>0 {
+        m[nums2[stack[len(stack)-1]]] = -1
+        stack = stack[0:len(stack)-1]
+    }
+
+    res := make([]int, len(nums1))
+    for i, v := range nums1 {
+        res[i] = m[v]
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/next-greater-element-i
+// Basic Ideas: monotone stack with array of indices
+//  1 3 4 2
+//
+// Complexity: Time O(n), Space O(n)
+func nextGreaterElement(nums1 []int, nums2 []int) []int {
+    stack := make([]int, len(nums2))
+    l := make([]int, len(nums2))
+    for i, _ := range l {
+        l[i] = -1
+    }
+    for i, v := range nums2 {
+        for len(stack)>0 && nums2[stack[len(stack)-1]] < v {
+            l[stack[len(stack)-1]] = i
+            stack = stack[0:len(stack)-1]
+        }
+        stack = append(stack, i)
+    }
+    m := map[int]int{}
+    for i, v := range l {
+        if v == -1 {
+            m[nums2[i]] = -1
+        } else {
+            m[nums2[i]] = nums2[v]
+        }
+    }
+    res := make([]int, len(nums1))
+    for i, v := range nums1 {
+        res[i] = m[v]
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/next-greater-element-i

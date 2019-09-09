@@ -11,6 +11,7 @@ Leetcode: UTF-8 Validation
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/utf-8-validation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/encoding][#encoding]]
 ---------------------------------------------------------------------
 A character in UTF8 can be from 1 to 4 bytes long, subjected to the following rules:

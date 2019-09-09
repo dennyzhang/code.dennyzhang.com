@@ -13,6 +13,7 @@ K Decimal Addition
 Similar Problems:
 - [[https://code.dennyzhang.com/add-strings][Add Strings]]
 - [[https://code.dennyzhang.com/additive-number][Additive Number]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Give k, a, b, which means a and b are all k base numbers, and output a + b.

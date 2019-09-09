@@ -12,6 +12,7 @@ Factorial Trailing Zeroes
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/number-of-digit-one][Number of Digit One]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/inspiring][inspiring]]
 ---------------------------------------------------------------------
 Given an integer n, return the number of trailing zeroes in n!.

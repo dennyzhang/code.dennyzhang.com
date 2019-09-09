@@ -11,6 +11,7 @@ Non-overlapping Intervals
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/non-overlapping-intervals"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-interval][#interval]]
 ---------------------------------------------------------------------
 Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
@@ -53,20 +54,90 @@ Credits To: [[https://leetcode.com/problems/non-overlapping-intervals/descriptio
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/non-overlapping-intervals
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/non-overlapping-intervals
+// Basic Ideas: greedy + heap
+//
+// Sort by intervals by starting points
+// Greedy: If two intervals overlapping, remove the one ends later
+//
+// Complexity: Time O(n*log(n)) Space O(n)
+import ("sort"
+        "container/heap")
 
-class Solution(object):
-    def eraseOverlapIntervals(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: int
-        """
+// max heap
+type MyNode struct {
+    x, y int
+}
+
+type MyHeap []MyNode
+func (h MyHeap) Len() int {
+    return len(h)
+}
+func (h MyHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+func (h MyHeap) Less(i, j int) bool {
+    return h[i].y > h[j].y
+}
+
+func (h *MyHeap) Push(x interface{}) {
+    *h = append(*h, x.(MyNode))
+}
+func (h *MyHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func eraseOverlapIntervals(intervals [][]int) int {
+    sort.Slice(intervals, func(i, j int) bool {
+        return intervals[i][0] < intervals[j][0]
+    })
+    res := 0
+    h := &MyHeap{}
+    heap.Init(h)
+    for _, interval := range intervals {
+        // Check whether need to remove intervals
+        if h.Len()==0 {
+            heap.Push(h, MyNode{x:interval[0], y:interval[1]})
+        } else {
+            // there would be only one conflict each time
+            interval2 := heap.Pop(h).(MyNode)
+            x1, y1 := interval[0], interval[1]
+            x2, y2 := interval2.x, interval2.y
+            if min(y1, y2) > max(x1, x2) {
+                // overlap
+                res++
+                if y1 > y2 {
+                    heap.Push(h, interval2)
+                } else {
+                    heap.Push(h, MyNode{x:interval[0], y:interval[1]})
+                }
+            } else {
+                heap.Push(h, MyNode{x:interval[0], y:interval[1]})
+                heap.Push(h, interval2)
+            }
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

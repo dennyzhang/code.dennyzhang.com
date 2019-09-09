@@ -11,6 +11,22 @@ Graph related questions mainly focus on depth first search and breath first sear
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-graph"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
+*Basic Abstractions*
+| Name | Summary |
+|------+---------|
+|      |         |
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name                                                                  | Example                                       |
+|-----------------------------------------------------------------------+-----------------------------------------------|
+| [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]]: [[https://en.wikipedia.org/wiki/Minimum_spanning_tree][Minimum spanning tree]] of a weighted graph        | [[https://code.dennyzhang.com/connecting-cities-with-minimum-cost][Leetcode: Connecting Cities With Minimum Cost]] |
+| [[https://en.wikipedia.org/wiki/Dijkstra's_algorithm][Dijkstra's algorithm]]: shortest path for two nodes in a weighted graph |                                               |
+| [[https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm][Floyd-Warshall algorithm]]: find shortest paths in a weighted graph     |                                               |
+
+Floyd-Warshall algorithm: Time O(n*n*n)
+[[image-blog:Review: Graph Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-graph/floydwarshall.png]]
+
 BFS/DFS/UnionFind; Binarysearch
 
 #+BEGIN_EXAMPLE
@@ -52,6 +68,8 @@ The most impressive problems to me:
 - [[https://code.dennyzhang.com/swim-in-rising-water][Swim in Rising Water]]
 
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all grap problems: [[https://code.dennyzhang.com/tag/graph/][#grap]]
 [display-posts tag="grap" posts_per_page="100" orderby="title"]
 

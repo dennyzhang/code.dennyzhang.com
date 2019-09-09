@@ -12,6 +12,7 @@ Monotone Increasing Digits
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/remove-k-digits][Remove K Digits]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Given a non-negative integer N, find the largest number that is less than or equal to N with monotone increasing digits.

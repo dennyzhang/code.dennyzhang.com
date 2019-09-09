@@ -11,6 +11,7 @@ Find Right Interval
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-right-interval"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-interval][#interval]]
 ---------------------------------------------------------------------
 Given a set of intervals, for each of the interval i, check if there exists an interval j whose start point is bigger than or equal to the end point of the interval i, which can be called that j is on the "right" of i.

@@ -1,0 +1,115 @@
+* Leetcode: Analyze User Website Visit Pattern                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sort, hashmap
+:END:
+---------------------------------------------------------------------
+Analyze User Website Visit Pattern
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/analyze-user-website-visit-pattern"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+We are given some website visits: the user with name username[i] visited the website website[i] at time timestamp[i].
+
+A 3-sequence is a list of websites of length 3 sorted in ascending order by the time of their visits.  (The websites in a 3-sequence are not necessarily distinct.)
+
+Find the 3-sequence visited by the largest number of users. If there is more than one solution, return the lexicographically smallest such 3-sequence.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: username = ["joe","joe","joe","james","james","james","james","mary","mary","mary"], timestamp = [1,2,3,4,5,6,7,8,9,10], website = ["home","about","career","home","cart","maps","home","home","about","career"]
+Output: ["home","about","career"]
+Explanation: 
+The tuples in this example are:
+["joe", 1, "home"]
+["joe", 2, "about"]
+["joe", 3, "career"]
+["james", 4, "home"]
+["james", 5, "cart"]
+["james", 6, "maps"]
+["james", 7, "home"]
+["mary", 8, "home"]
+["mary", 9, "about"]
+["mary", 10, "career"]
+The 3-sequence ("home", "about", "career") was visited at least once by 2 users.
+The 3-sequence ("home", "cart", "maps") was visited at least once by 1 user.
+The 3-sequence ("home", "cart", "home") was visited at least once by 1 user.
+The 3-sequence ("home", "maps", "home") was visited at least once by 1 user.
+The 3-sequence ("cart", "maps", "home") was visited at least once by 1 user.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 3 <= N = username.length = timestamp.length = website.length <= 50
+- 1 <= username[i].length <= 10
+- 0 <= timestamp[i] <= 10^9
+- 1 <= website[i].length <= 10
+- Both username[i] and website[i] contain only lowercase characters.
+- It is guaranteed that there is at least one user who visited at least 3 websites.
+- No user visits two websites at the same time.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/analyze-user-website-visit-pattern][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/analyze-user-website-visit-pattern/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/analyze-user-website-visit-pattern
+// Basic Ideas: sort + hashmap
+//
+// Complexity: Time O(n^3) Space O(n)
+import ("sort"
+        "strings")
+type MyNode struct {
+    time int
+    web string
+}
+func mostVisitedPattern(username []string, timestamp []int, website []string) []string {
+    freqPath := ""
+    max := 0
+    m := map[string]int{}
+    visits := map[string][]MyNode{}
+    for i, user := range username {
+        visits[user] = append(visits[user], MyNode{time:timestamp[i], web:website[i]})
+    }
+    for _, l := range visits {
+        sort.Slice(l, func(i, j int) bool {
+            return l[i].time<l[j].time
+        })
+        // get 3-sequence
+        m2 := map[string]bool{}
+        for i:=0; i<len(l); i++ {
+            for j:=i+1; j<len(l); j++ {
+                for k:=j+1; k<len(l); k++ {
+                    path := l[i].web+"-"+l[j].web+"-"+l[k].web
+                    m2[path] = true
+                }
+            }
+        }
+        for key, _ := range m2 {
+            m[key]++
+            if m[key] > max || (m[key] == max && key < freqPath) {
+                max = m[key]
+                freqPath = key
+            }
+        }
+    }
+    return strings.Split(freqPath, "-")
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

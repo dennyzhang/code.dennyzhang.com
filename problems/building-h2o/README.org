@@ -1,0 +1,87 @@
+* Leetcode: Building H2O                                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     concurrency
+:END:
+---------------------------------------------------------------------
+Building H2O
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/building-h2o"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
+---------------------------------------------------------------------
+There are two kinds of threads, oxygen and hydrogen. Your goal is to group these threads to form water molecules. There is a barrier where each thread has to wait until a complete molecule can be formed. Hydrogen and oxygen threads will be given releaseHydrogen and releaseOxygen methods respectively, which will allow them to pass the barrier. These threads should pass the barrier in groups of three, and they must be able to immediately bond with each other to form a water molecule. You must guarantee that all the threads from one molecule bond before any other threads from the next molecule do.
+
+In other words:
+
+- If an oxygen thread arrives at the barrier when no hydrogen threads are present, it has to wait for two hydrogen threads.
+- If a hydrogen thread arrives at the barrier when no other threads are present, it has to wait for an oxygen thread and another hydrogen thread.
+We don't have to worry about matching the threads up explicitly; that is, the threads do not necessarily know which other threads they are paired up with. The key is just that threads pass the barrier in complete sets; thus, if we examine the sequence of threads that bond and divide them into groups of three, each group should contain one oxygen and two hydrogen threads.
+
+Write synchronization code for oxygen and hydrogen molecules that enforces these constraints.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "HOH"
+Output: "HHO"
+Explanation: "HOH" and "OHH" are also valid answers.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "OOHHHH"
+Output: "HHOHHO"
+Explanation: "HOHHHO", "OHHHHO", "HHOHOH", "HOHHOH", "OHHHOH", "HHOOHH", "HOHOHH" and "OHHOHH" are also valid answers.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- Total length of input string will be 3n, where 1 <= n <= 20.
+- Total number of H will be 2n in the input string.
+- Total number of O will be n in the input string.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/building-h2o][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/building-h2o/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/building-h2o
+import java.util.concurrent.*;
+class H2O {
+    Semaphore h, o;
+    public H2O() {
+        h = new Semaphore(2, true);
+        o = new Semaphore(0, true);
+    }
+
+    public void hydrogen(Runnable releaseHydrogen) throws InterruptedException {
+        // releaseHydrogen.run() outputs "H". Do not change or remove this line.
+        h.acquire();
+        releaseHydrogen.run();
+        o.release();
+    }
+
+    public void oxygen(Runnable releaseOxygen) throws InterruptedException {
+        // releaseOxygen.run() outputs "O". Do not change or remove this line.
+        o.acquire(2);
+        releaseOxygen.run();
+        h.release(2);
+    }
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

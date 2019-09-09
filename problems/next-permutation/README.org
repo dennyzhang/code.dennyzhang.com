@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, inspiring
+:type:     combination, greedy, nextpermutation
 :END:
 ---------------------------------------------------------------------
 Next Permutation
@@ -12,7 +12,8 @@ Next Permutation
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/permutation-sequence][Permutation Sequence]]
-- Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/tag/nextpermutation][#nextpermutation]]
 ---------------------------------------------------------------------
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
@@ -33,10 +34,11 @@ Credits To: [[https://leetcode.com/problems/next-permutation/description/][leetc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
----------------------------------------------------------------------
 Related Readings:
 - [[https://www.nayuki.io/page/next-lexicographical-permutation-algorithm][Next lexicographical permutation algorithm]]
 - [[https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order][Wikipedia:Permutation]]
+
+[[image-blog:Leetcode: Next Permutation][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/next-permutation/next-permutation.png]]
 
 [[image-blog:Leetcode: Next Permutation][https://raw.githubusercontent.com/dennyzhang/images/master/code/next-permutation-algorithm.png]]
 

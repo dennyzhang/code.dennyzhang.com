@@ -13,6 +13,7 @@ Additive Number
 Similar Problems:
 - [[https://code.dennyzhang.com/k-decimal-addition][LintCode: K Decimal Addition]]
 - [[https://code.dennyzhang.com/add-strings][Add Strings]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Additive number is a string whose digits can form additive sequence.

@@ -1,0 +1,105 @@
+* Leetcode: Adding Two Negabinary Numbers                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Adding Two Negabinary Numbers
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/adding-two-negabinary-numbers"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given two numbers arr1 and arr2 in base -2, return the result of adding them together.
+
+Each number is given in array format:  as an array of 0s and 1s, from most significant bit to least significant bit.  For example, arr = [1,1,0,1] represents the number (-2)^3 + (-2)^2 + (-2)^0 = -3.  A number arr in array format is also guaranteed to have no leading zeros: either arr == [0] or arr[0] == 1.
+
+Return the result of adding arr1 and arr2 in the same format: as an array of 0s and 1s with no leading zeros.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr1 = [1,1,1,1,1], arr2 = [1,0,1]
+Output: [1,0,0,0,0]
+Explanation: arr1 represents 11, arr2 represents 5, the output represents 16.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= arr1.length <= 1000
+- 1 <= arr2.length <= 1000
+- arr1 and arr2 have no leading zeros
+- arr1[i] is 0 or 1
+- arr2[i] is 0 or 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/adding-two-negabinary-numbers][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/adding-two-negabinary-numbers/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/adding-two-negabinary-numbers
+// Basic Ideas:
+//
+//   carry only impact the next higher digit
+//
+//    If -1*x, to the higher digit, add 1 then -1, x+(-2x): 1, 1
+//    If 2*x, to the higher digit, add -1. ((-2x)(-1)): 0, -1
+//    If 3*x, to the higher digit, add -1. x+(-1)(-2x) : 1, -1
+//
+//  16 -8 4 -2 0
+//        1  0  1
+//        0  0  1
+//  1  1  0  1  0
+// Complexity: Time O(n), Space O(n)
+func addNegabinary(arr1 []int, arr2 []int) []int {
+    l := []int{}
+    carry := 0
+    i, j := len(arr1)-1, len(arr2)-1
+    for i>=0 || j>=0 || carry !=0 {
+        if i>=0 { 
+            carry += arr1[i]
+            i--
+        }
+        if j>=0 {
+            carry += arr2[j] 
+            j--
+        }
+        l = append(l, (carry+2)%2)
+        if carry == -1 {
+            carry = 1
+        } else {
+            if carry >=2 {
+                carry = -1
+            } else {
+                carry = 0
+            }
+        }
+    }
+
+    index :=len(l)-1
+    for ; index>=1 && l[index] == 0; index-- {
+    }
+    l = l[0:index+1]
+    left, right := 0, len(l)-1
+    for left<right {
+        l[left], l[right] = l[right], l[left]
+        left, right = left+1, right-1
+    }
+    return l
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

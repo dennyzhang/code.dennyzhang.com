@@ -11,6 +11,7 @@ Middle of the Linked List
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/middle-of-the-linked-list"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a non-empty, singly linked list with head node head, return a middle node of linked list.

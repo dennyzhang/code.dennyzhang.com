@@ -12,6 +12,7 @@ Brace Expansion
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/letter-combinations-of-a-phone-number][Leetcode: Letter Combinations of a Phone Number]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 A string S represents a list of words.

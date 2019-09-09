@@ -12,6 +12,7 @@ Find Median from Data Stream
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/median-of-two-sorted-arrays][Median of Two Sorted Arrays]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.

@@ -11,6 +11,7 @@ Closest Leaf in a Binary Tree
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/closest-leaf-in-a-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]], [[https://code.dennyzhang.com/review-bfs][#bfs]],[[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a binary tree where every node has a unique value, and a target key k, find the value of the nearest leaf node to target k in the tree.

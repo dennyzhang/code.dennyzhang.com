@@ -12,6 +12,7 @@ Palindrome Permutation II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 Given a string s, return all the palindromic permutations (without duplicates) of it. Return an empty list if no palindromic permutation could be form.

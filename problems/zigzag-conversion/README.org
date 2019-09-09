@@ -11,6 +11,7 @@ ZigZag Conversion
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/zigzag-iterator"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/iterator][#iterator]], [[https://code.dennyzhang.com/tag/zigzag][#zigzag]], [[https://code.dennyzhang.com/tag/baseconversion][#baseconversion]]
 ---------------------------------------------------------------------
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)

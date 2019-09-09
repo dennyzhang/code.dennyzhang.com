@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, classic
+:type:     bfs, classic, redo
 :END:
 ---------------------------------------------------------------------
 Push Dominoes
@@ -12,6 +12,7 @@ Push Dominoes
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/shortest-distance-to-a-character][Shortest Distance to a Character]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 There are N dominoes in a line, and we place each domino vertically upright.

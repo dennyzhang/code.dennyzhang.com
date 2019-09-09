@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/combination-sum-ii][Leetcode: Combination Sum II]]
 - [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
 - [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
@@ -45,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/combination-sum-ii
-// Basic Idea: backtracking
+// Basic Ideas: backtracking
 //
 // Complexity: Time ? Space ?
 import "sort"

@@ -12,6 +12,7 @@ Ugly Number II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/ugly-number][Leetcode: Ugly Number]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/mergesort][#mergesort]]
 ---------------------------------------------------------------------
 Write a program to find the n-th ugly number.

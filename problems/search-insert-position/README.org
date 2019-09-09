@@ -12,6 +12,7 @@ Search Insert Position
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/time-based-key-value-store][Leetcode: Time Based Key-Value Store]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.

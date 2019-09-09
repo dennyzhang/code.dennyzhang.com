@@ -13,6 +13,7 @@ Flatten 2D Vector
 Similar Problems:
 - [[https://code.dennyzhang.com/design-compressed-string-iterator][Design Compressed String Iterator]]
 - [[https://code.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Implement an iterator to flatten a 2d vector.

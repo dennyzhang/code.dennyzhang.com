@@ -11,6 +11,7 @@ Squares of a Sorted Array
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/squares-of-a-sorted-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/mergesort][#mergesort]]
 ---------------------------------------------------------------------
 Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
@@ -42,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 - Two pointers
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/squares-of-a-sorted-array
-// Basic Idea: Two pointers
+// Basic Ideas: Two pointers
 // Complexity: Time O(n), Space O(1)
 func sortedSquares(A []int) []int {
     res := make([]int, len(A))
@@ -64,7 +65,7 @@ func sortedSquares(A []int) []int {
 - Merge sort
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/squares-of-a-sorted-array
-// Basic Idea: merge sort
+// Basic Ideas: merge sort
 // Complexity: Time O(n), Space O(n)
 func sortedSquares(A []int) []int {
     B1, B2 := []int{}, []int{}

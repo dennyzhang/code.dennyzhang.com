@@ -11,6 +11,7 @@ Given two integers n and k, return all possible combinations of k numbers out of
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/combinations"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.

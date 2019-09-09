@@ -12,6 +12,7 @@ Exam Room
 #+END_HTML
 
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 In an exam room, there are N seats in a single row, numbered 0, 1, 2, ..., N-1.

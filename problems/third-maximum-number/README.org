@@ -12,6 +12,7 @@ Third Maximum Number
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/second-max-of-array][LintCode: Second Max of Array]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-heap][#heap]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).

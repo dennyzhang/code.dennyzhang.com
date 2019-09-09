@@ -1,0 +1,93 @@
+* Leetcode: Day of the Week                                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math, leapyear
+:END:
+---------------------------------------------------------------------
+Day of the Week
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/day-of-the-week"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/leapyear][#leapyear]]
+---------------------------------------------------------------------
+Given a date, return the corresponding day of the week for that date.
+
+The input is given as three integers representing the day, month and year respectively.
+
+Return the answer as one of the following values {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: day = 31, month = 8, year = 2019
+Output: "Saturday"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: day = 18, month = 7, year = 1999
+Output: "Sunday"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: day = 15, month = 8, year = 1993
+Output: "Sunday"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- The given dates are valid dates between the years 1971 and 2100.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/day-of-the-week][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/day-of-the-week/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/day-of-the-week
+// Basic Ideas: math + leap year
+//   1971-1-1 is Friday
+// Complexity: Time O(1), space O(1)
+func isLeap(year int) bool {
+    return (year % 400 == 0) || (year%4==0 && year%400 != 0)
+}
+
+func dayOfTheWeek(day int, month int, year int) string {
+    l := []int{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
+    m := map[int]string{0:"Friday", 1:"Saturday", 2:"Sunday", 
+                        3:"Monday", 4:"Tuesday", 5:"Wednesday", 6:"Thursday"}
+    ydiff, mdiff := year-1971, month-1
+    days := 0
+    for i:=0; i<ydiff; i++ {
+        if isLeap(1971+i) {
+            days = (days + 366)%7
+        } else {
+            days = (days + 365)%7
+        }
+    }
+    for i:=0; i<mdiff; i++ {
+        if i == 1 && isLeap(year) {
+            days = (days + 29)%7
+            continue
+        }
+        days = (days + l[i])%7
+    }
+    days = (days+day-1)%7
+    return m[days]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

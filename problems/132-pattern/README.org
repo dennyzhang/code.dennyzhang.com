@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subsequence, redo
+:type:     subsequence, inspiring, stack, redo
 :END:
 ---------------------------------------------------------------------
 Check whether 132 pattern exists in the given array
@@ -12,7 +12,9 @@ Check whether 132 pattern exists in the given array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Split Array into Consecutive Subsequences]]
-- Tag: [[https://code.dennyzhang.com/tag/subsequence][#subsequence]]
+- [[https://code.dennyzhang.com/beautiful-array][Leetcode: Beautiful Array]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/subsequence][#subsequence]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/review-stack][#stack]]
 ---------------------------------------------------------------------
 Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence ai, aj, ak such that i < j < k and ai < ak < aj. Design an algorithm that takes a list of n numbers as input and checks whether there is a 132 pattern in the list.
 
@@ -51,34 +53,54 @@ Credits To: [[https://leetcode.com/problems/132-pattern/description/][leetcode.c
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
-[[color:#c7254e][Hints]]:
-#+BEGIN_EXAMPLE
-## Blog link: https://code.dennyzhang.com/132-pattern
-## Basic Ideas: There should be one rise. After that, there should be one drop.
-## Complexity: Time O(n), Space O(1)
-## Scenario: sell sock at a high price
-#+END_EXAMPLE
-
-#+BEGIN_SRC python
-class Solution(object):
-    def find132pattern(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        length = len(nums)
-        if length < 3:
-            return False
-        has_rise, has_drop = False, False
-        for i in range(1, length):
-            if nums[i] > nums[i-1]:
-                has_rise = True
-            if has_rise and nums[i] < nums[i-1]:
-                has_drop = True
-            if has_rise and has_drop:
-                return True
-        return has_rise and has_drop
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/132-pattern
+// Basic Ideas: monotone stack
+//
+//  Evaluate each item as the candidacy as aj
+//  ai should be the smallest value so far.
+//  With ai and aj given, we need to figure out ak
+//
+//  When moving from right to left, the smallest value will keep increasing
+//
+//  Question: why elements in the stack keep decreasing?
+//       Elements in stack are the candidates for ak
+//       If it increase, we can drop previous candidates.
+//
+//  6, 12, 3, 4, 6, 11, 20
+//  6,  6, 3, 3, 3,  3, 3
+// result: 6, 12, 11
+//
+// Complexity: Time O(n), Space O(n)
+func find132pattern(nums []int) bool {
+    mins := make([]int, len(nums))
+    min := 1<<31-1
+    for i, v := range nums {
+        if v < min {
+            min = v
+        }
+        mins[i] = min
+    }
+    stack := []int{}
+    for i:=len(nums)-1; i>=0; i-- {
+        // skip the local min values
+        if nums[i] == mins[i] { continue }
+        // Treat ai: mins[i], aj: nums[i]. Now need to find ak
+        // mins[i] will keep growing. So any stack elements no smaller than mins[i] should be removed.
+        for len(stack)>0 && stack[len(stack)-1] <= mins[i] {
+            stack = stack[0:len(stack)-1]
+        }
+        // not for this round
+        if len(stack) == 0 || (len(stack)>0 && stack[len(stack)-1]>=nums[i]) {
+            stack = append(stack, nums[i])
+        }
+        // find a match
+        if len(stack) > 0 && stack[len(stack)-1]>mins[i] && stack[len(stack)-1]<nums[i] {
+            return true
+        }
+    }
+    return false
+}
 #+END_SRC
 
 #+BEGIN_HTML

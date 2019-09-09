@@ -11,6 +11,7 @@ Maximum Product Subarray
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-product-subarray"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest product.

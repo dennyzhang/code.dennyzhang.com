@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subarray, leftrightpass, redo
+:type:     maxsubarraysum, roudtrippass, circulararray
 :END:
 ---------------------------------------------------------------------
 Maximum Sum Circular Subarray
@@ -12,7 +12,8 @@ Maximum Sum Circular Subarray
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/leftrightpass][#leftrightpass]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/tag/roudtrippass][#roudtrippass]], [[https://code.dennyzhang.com/tag/circulararray][#circulararray]]
 ---------------------------------------------------------------------
 Given a circular array C of integers represented by A, find the maximum possible sum of a non-empty subarray of C.
 

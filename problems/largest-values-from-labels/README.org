@@ -11,6 +11,7 @@ Largest Values From Labels
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-values-from-labels"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 We have a set of items: the i-th item has value values[i] and label labels[i].

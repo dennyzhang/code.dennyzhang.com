@@ -58,6 +58,9 @@ void inorder(node *r) {
 #+END_SRC
 
 Personally I like level-order (or BFS) very much. 
+
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 (See all bfs problems: [[https://code.dennyzhang.com/review-bfs][#bfs]])
 
 Q: How to time complexity for tree problems?
@@ -80,6 +83,8 @@ The most impressive problems to me:
 - [[https://code.dennyzhang.com/find-leaves-of-binary-tree][Find Leaves of Binary Tree]]
 - [[https://code.dennyzhang.com/binary-tree-vertical-order-traversal][Binary Tree Vertical Order Traversal]]
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all binarytree problems: [[https://code.dennyzhang.com/tag/binarytree/][#binarytree]].
 [display-posts tag="binarytree" posts_per_page="100" orderby="title"]
 

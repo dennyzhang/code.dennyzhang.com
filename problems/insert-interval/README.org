@@ -2,10 +2,18 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, redo
+:type:     interval, inspiring
 :END:
 ---------------------------------------------------------------------
 Insert Interval
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/interval-list-intersections"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/interval-list-intersections][Leetcode: Interval List Intersections]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
 
@@ -29,23 +37,56 @@ Credits To: [[https://leetcode.com/problems/insert-interval/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/insert-interval
+// Basic Ideas: merge two list + binarysearch
+//
+// Loop intervals, if they doesn't overlap, insert
+//      Otherwise hold on. Until it finally doesn't overlap
+//
+// Complexity: Time O(n), Space O(1)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/insert-interval
-## 
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
 
-class Solution(object):
-    def insert(self, intervals, newInterval):
-        """
-        :type intervals: List[Interval]
-        :type newInterval: Interval
-        :rtype: List[Interval]
-        """
+func insert(intervals [][]int, newInterval []int) [][]int {
+    res := [][]int{}
+    for _, interval := range intervals {
+        // solved already
+        if len(newInterval) == 0 {
+            res = append(res, interval)
+            continue
+        }
+        x1, y1 := interval[0], interval[1]
+        x2, y2 := newInterval[0], newInterval[1]
+        if min(y1, y2) < max(x1, x2) {
+            // Doesn't overlap
+            if x1>x2 {
+                res = append(res, newInterval)
+                newInterval = []int{}
+            }
+            res = append(res, interval)
+        } else {
+            newInterval = []int{min(x1, x2), max(y1, y2)}
+        }
+    }
+    if len(newInterval) != 0 {
+       res = append(res, newInterval) 
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

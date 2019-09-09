@@ -12,6 +12,7 @@ Fermat Point Of Graphs
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/sum-of-distances-in-tree][Sum of Distances in Tree]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 There is a non acyclic connected graph. Each edge is described by two vertices x[i] and y[i], and the length of each edge is described by d[i].

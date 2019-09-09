@@ -1,0 +1,123 @@
+* Leetcode: Minimum Number of Arrows to Burst Balloons          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, overlappinginterval, interval
+:END:
+---------------------------------------------------------------------
+Minimum Number of Arrows to Burst Balloons
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-number-of-arrows-to-burst-balloons"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/overlappinginterval][#overlappinginterval]]
+---------------------------------------------------------------------
+There are a number of spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it's horizontal, y-coordinates don't matter and hence the x-coordinates of start and end of the diameter suffice. Start is always smaller than end. There will be at most 104 balloons.
+
+An arrow can be shot up exactly vertically from different points along the x-axis. A balloon with xstart and xend bursts by an arrow shot at x if xstart <= x <= xend. There is no limit to the number of arrows that can be shot. An arrow once shot keeps travelling up infinitely. The problem is to find the minimum number of arrows that must be shot to burst all balloons.
+
+Example:
+#+BEGIN_EXAMPLE
+Input:
+[[10,16], [2,8], [1,6], [7,12]]
+
+Output:
+2
+
+Explanation:
+One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] and [1,6]) and another arrow at x = 11 (bursting the other two balloons).
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-number-of-arrows-to-burst-balloons][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-number-of-arrows-to-burst-balloons
+// Basic Ideas: greedy
+//  All balloons need to burst
+//  To hit one of [x, y], the arrow can only be within [x, y]. 
+//  So we always choose y
+//
+//     2        8
+//  1     6
+//           7       12
+//                10    16   
+// Complexity: Time ? Space ?
+import "sort"
+
+func findMinArrowShots(points [][]int) int {
+    if len(points) == 0 {
+        return 0
+    }
+    sort.Slice(points, func(i, j int) bool {
+        return points[i][1] < points[j][1]
+    })
+    res := 1
+    y := points[0][1]
+    for i:=1; i<len(points); i++ {
+        // Can't re-use arrow
+        if y<points[i][0] {
+            res++
+            y = points[i][1]
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-number-of-arrows-to-burst-balloons
+// Basic Ideas: greedy
+//  All balloons need to burst
+//  To hit one of [x, y], the arrow can only be within [x, y]. 
+//  So we always choose y
+//
+//     2        8
+//  1     6
+//           7       12
+//                10    16   
+// Complexity: Time O(n*log(n)) Space O(1)
+import "sort"
+
+func findMinArrowShots(points [][]int) int {
+    if len(points) == 0 {
+        return 0
+    }
+    sort.Slice(points, func(i, j int) bool {
+        if points[i][0] != points[j][0] {
+            return points[i][0] < points[j][0]
+        } else {
+            return points[i][1] < points[j][1]
+        }
+    })
+    res := 1
+    y := points[0][1]
+    for i:=1; i<len(points); i++ {
+        // Can't re-use arrow
+        if y<points[i][0] {
+            res++
+            y = points[i][1]
+        } else {
+            // re-use arrow. Change the location of arrow to the left
+            if points[i][1] < y {
+                y = points[i][1]
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

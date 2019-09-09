@@ -11,6 +11,7 @@ Read N Characters Given Read4
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/read-n-characters-given-read4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/basic][#basic]]
 ---------------------------------------------------------------------
 The API: int read4(char *buf) reads 4 characters at a time from a file.

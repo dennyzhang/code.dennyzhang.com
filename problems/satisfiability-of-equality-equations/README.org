@@ -11,6 +11,7 @@ Satisfiability of Equality Equations
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/satisfiability-of-equality-equations"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]]
 ---------------------------------------------------------------------
 Given an array equations of strings that represent relationships between variables, each string equations[i] has length 4 and takes one of two different forms: "a==b" or "a!=b".  Here, a and b are lowercase letters (not necessarily different) that represent one-letter variable names.

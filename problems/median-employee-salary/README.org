@@ -12,6 +12,7 @@ Median Employee Salary
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/find-median-given-frequency-of-numbers][Find Median Given Frequency of Numbers]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary.

@@ -12,6 +12,7 @@ Second Max of Array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/third-maximum-number][Leetcode: Third Maximum Number]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-heap][#heap]]
 ---------------------------------------------------------------------
 Description

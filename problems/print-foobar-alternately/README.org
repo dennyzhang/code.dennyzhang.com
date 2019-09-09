@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     semaphore
+:type:     concurrency
 :END:
 ---------------------------------------------------------------------
 Print FooBar Alternately
@@ -11,7 +11,8 @@ Print FooBar Alternately
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/print-foobar-alternately"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/semaphore][#semaphore]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/concurrency][#concurrency]]
 ---------------------------------------------------------------------
 Suppose you are given the following code:
 #+BEGIN_EXAMPLE

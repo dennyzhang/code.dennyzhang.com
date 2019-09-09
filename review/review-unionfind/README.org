@@ -72,10 +72,13 @@ func (uf *UF) find(x int) int {
 | Rank based merge                            | Balance by linking small tree below large one           |
 | Collect result: add vs extract?             | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]   |
 | Get the nodes relationship quickly          | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]   |
+| Union find for weighted graph               | [[https://code.dennyzhang.com/evaluate-division][Leetcode: Evaluate Division]]                             |
 | How efficient unionfind vs DFS/BFS?         |                                                         |
 | Time and space complexity of unionfind?     |                                                         |
 
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all unionfind tree problems: [[https://code.dennyzhang.com/tag/unionfind/][#unionfind]]
 [display-posts tag="unionfind" posts_per_page="100" orderby="title"]
 

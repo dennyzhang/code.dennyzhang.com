@@ -12,6 +12,7 @@ Reach a Number
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/reaching-points][Reaching Points]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/math][math]]
 ---------------------------------------------------------------------
 You are standing at position 0 on an infinite number line. There is a goal at position target.

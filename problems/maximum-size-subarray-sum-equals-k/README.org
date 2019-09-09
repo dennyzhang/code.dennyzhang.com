@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     presum
+:type:     presum, maxsubarraysum
 :END:
 ---------------------------------------------------------------------
 Maximum Size Subarray Sum Equals k
@@ -11,7 +11,8 @@ Maximum Size Subarray Sum Equals k
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-size-subarray-sum-equals-k"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/tag/presum][#presum]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/tag/maxsubarraysum][#maxsubarraysum]]
 ---------------------------------------------------------------------
 Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn't one, return 0 instead.
 

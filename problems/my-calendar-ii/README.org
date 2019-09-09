@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, calendar, redo
+:type:     interval, inspiring
 :END:
 ---------------------------------------------------------------------
 My Calendar II
@@ -11,7 +11,9 @@ My Calendar II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/my-calendar-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
+- [[https://code.dennyzhang.com/car-pooling][Leetcode: Car Pooling]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Implement a MyCalendarTwo class to store your events. A new event can be added if adding the event will not cause a triple booking.
 

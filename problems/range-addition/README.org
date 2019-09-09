@@ -12,6 +12,7 @@ Range Addition
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/maximum-distance-in-arrays][Maximum Distance in Arrays]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Assume you have an array of length n initialized with all 0's and are given k update operations.

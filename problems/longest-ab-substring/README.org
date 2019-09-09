@@ -12,6 +12,7 @@ Longest AB Substring
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/same-number][Lintcode: Same Number]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Description

@@ -1,0 +1,228 @@
+* Leetcode: Evaluate Division                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     unionfind, dfs
+:END:
+---------------------------------------------------------------------
+Evaluate Division
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/evaluate-division"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+---------------------------------------------------------------------
+Equations are given in the format A / B = k, where A and B are variables represented as strings, and k is a real number (floating point number). Given some queries, return the answers. If the answer does not exist, return -1.0.
+
+Example:
+Given a / b = 2.0, b / c = 3.0.
+queries are: a / c = ?, b / a = ?, a / e = ?, a / a = ?, x / x = ? .
+return [6.0, 0.5, -1.0, 1.0, -1.0 ].
+
+The input is: vector<pair<string, string>> equations, vector<double>& values, vector<pair<string, string>> queries , where equations.size() == values.size(), and the values are positive. This represents the equations. Return vector<double>.
+
+According to the example above:
+#+BEGIN_EXAMPLE
+equations = [ ["a", "b"], ["b", "c"] ],
+values = [2.0, 3.0],
+queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ]. 
+#+END_EXAMPLE
+ 
+The input is always valid. You may assume that evaluating the queries will result in no division by zero and there is no contradiction.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/evaluate-division][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/evaluate-division/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/evaluate-division
+// Basic Ideas: union find + weighted graph
+//
+// Complexity: Time O(n+k) Space O(n)
+//   n = node count; k = len(queries)
+type MyNode struct {
+    parent string
+    ratio float64 // The ratio from parent to current node
+}
+
+var m map[string]MyNode
+
+func union(str1 string, str2 string, ratio float64) {
+    p1, w1 := find(str1)
+    p2, w2 := find(str2)
+    m[p2] = MyNode{parent:p1, ratio:(w1*ratio/w2)}
+}
+
+func find(str1 string) (p string, w float64) {
+    w = m[str1].ratio
+    for str1 != m[str1].parent {
+        str1 = m[str1].parent
+        w *= m[str1].ratio
+    }
+    p = str1
+    return
+}
+
+func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
+    m = map[string]MyNode{}
+    for _, eq := range equations {
+        v1, v2 := eq[0], eq[1]
+        m[v1] = MyNode{v1, 1}
+        m[v2] = MyNode{v2, 1}
+    }
+    for i, eq := range equations {
+        v1, v2 := eq[0], eq[1]
+        union(v1, v2, 1/values[i])
+    }
+    res := make([]float64, len(queries))
+    for i, query := range queries {
+        v1, v2 := query[0], query[1]
+        if _, ok := m[v1]; !ok {
+            res[i] = -1
+            continue
+        }
+        if _, ok := m[v2]; !ok {
+            res[i] = -1
+            continue
+        }
+        p1, w1 := find(v1) 
+        p2, w2 := find(v2)
+        if p1 != p2 {
+            res[i] = -1
+        } else {
+            res[i] = w1/w2
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/evaluate-division
+// Basic Ideas: union find + weighted graph
+//
+// Complexity: Time O(n) Space O(n)
+type MyNode struct {
+    parent string
+    weight float64 // from current node to its parent
+}
+
+var m map[string]MyNode
+
+func union(str1 string, str2 string, weight float64) {
+    p1, w1 := find(str1)
+    p2, w2 := find(str2)
+    m[p2] = MyNode{parent:p1, weight:(w1*weight/w2)}
+}
+
+func find(str1 string) (p string, w float64) {
+    w = m[str1].weight
+    for str1 != m[str1].parent {
+        str1 = m[str1].parent
+        w *= m[str1].weight
+    }
+    p = str1
+    return
+}
+
+func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
+    m = map[string]MyNode{}
+    for _, eq := range equations {
+        v1, v2 := eq[0], eq[1]
+        m[v1] = MyNode{v1, 1}
+        m[v2] = MyNode{v2, 1}
+    }
+    for i, eq := range equations {
+        v1, v2 := eq[0], eq[1]
+        union(v1, v2, values[i])
+    }
+    res := make([]float64, len(queries))
+    for i, query := range queries {
+        v1, v2 := query[0], query[1]
+        if _, ok := m[v1]; !ok {
+            res[i] = -1
+            continue
+        }
+        if _, ok := m[v2]; !ok {
+            res[i] = -1
+            continue
+        }
+        p1, w1 := find(v1) 
+        p2, w2 := find(v2)
+        if p1 != p2 {
+            res[i] = -1
+        } else {
+            res[i] = w2/w1
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/evaluate-division
+// Basic Ideas: dfs + weighted graph
+//
+// Complexity: Time O(n*k) Space O(n)
+func dfs(start string, end string, nodes map[string]map[string]float64, seen map[string]bool) float64 {
+    if v, ok := nodes[start][end]; ok {
+        return v
+    }
+    seen[start] = true
+    for node2, v := range nodes[start] {
+        if !seen[node2] {
+            res := dfs(node2, end, nodes, seen)
+            if res != -1 {
+                return res*v
+            }
+        }
+    }
+    return -1
+}
+
+func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
+    nodes := map[string]map[string]float64{}
+    for i, eq := range equations {
+        v1, v2 := eq[0], eq[1]
+        if _, ok := nodes[v1]; !ok {
+            nodes[v1] = map[string]float64{}
+        }
+        if _, ok := nodes[v2]; !ok {
+            nodes[v2] = map[string]float64{}
+        }
+        nodes[v1][v2] = 1/values[i]
+        nodes[v2][v1] = values[i]
+    }
+    res := make([]float64, len(queries))
+    for i, query := range queries{
+        v1, v2 := query[0], query[1]
+        if _, ok := nodes[v1]; !ok {
+            res[i] = -1
+            continue
+        }
+        if _, ok := nodes[v2]; !ok {
+            res[i] = -1
+            continue
+        }
+        if v1 == v2 {
+            res[i] = 1
+        } else {
+            res[i] = dfs(v2, v1, nodes, map[string]bool{})
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

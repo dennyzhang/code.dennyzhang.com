@@ -12,6 +12,7 @@ Line Reflection
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/max-points-on-a-line][Max Points on a Line]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given n points on a 2D plane, find if there is such a line parallel to y-axis that reflect the given points.

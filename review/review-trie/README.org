@@ -23,6 +23,8 @@ The most impressive problems to me:
 - [[https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array/][Maximum XOR of Two Numbers in an Array]].
 
 ---------------------------------------------------------------------
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
 See all trie tree problems: [[https://code.dennyzhang.com/tag/trie/][#trie]]
 [display-posts tag="trie" posts_per_page="100" orderby="title"]
 

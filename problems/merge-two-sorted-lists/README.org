@@ -11,6 +11,7 @@ Merge Two Sorted Lists
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/camelcase-matching"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/mergetwolist][#mergetwolist]]
 ---------------------------------------------------------------------
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.

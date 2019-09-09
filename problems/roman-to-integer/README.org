@@ -12,6 +12,7 @@ Roman to Integer
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/integer-to-roman][Integer to Roman]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a roman numeral, convert it to an integer.

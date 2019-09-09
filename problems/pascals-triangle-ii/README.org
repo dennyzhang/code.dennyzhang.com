@@ -12,6 +12,7 @@ Pascal's Triangle II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/pascals-triangle][Leetcode: Pascal's Triangle]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/triangle][#triangle]]
 ---------------------------------------------------------------------
 iven an index k, return the kth row of the Pascal's triangle.

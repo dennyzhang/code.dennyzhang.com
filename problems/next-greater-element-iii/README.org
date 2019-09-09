@@ -1,0 +1,105 @@
+* Leetcode: Next Greater Element III                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, nextpermutation
+:END:
+---------------------------------------------------------------------
+Next Greater Element III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/next-greater-element-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/tag/nextpermutation][#nextpermutation]]
+---------------------------------------------------------------------
+Given a positive 32-bit integer n, you need to find the smallest 32-bit integer which has exactly the same digits existing in the integer n and is greater in value than n. If no such positive 32-bit integer exists, you need to return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 12
+Output: 21
+#+END_EXAMPLE
+ 
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 21
+Output: -1
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/next-greater-element-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/next-greater-element-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/next-greater-element-iii
+// Basic Ideas: greedy + next permutation
+//    From right to left, find the first decreasing pair
+//  1 4 2
+//  1 4 2 3
+//  1 4 2 3 1
+//  1 4 5 8 7 6 4 2
+//->1 4 6 8 7 5 4 2
+//->1 4 6 2 4 5 7 8
+// Complexity: Time O(1), Space O(1)
+func nextGreaterElement(n int) int {
+    if n < 10 { return -1 }
+    l := []int{}
+    for n != 0 {
+        l = append(l, n%10)
+        n = n/10
+    }
+    // reverse l
+    left, right := 0, len(l)-1
+    for left<right {
+        l[left], l[right] = l[right], l[left]
+        left, right = left+1, right-1
+    }
+    // examine from right to left
+    i:=len(l)-2
+    for ; i>=0; i-- {
+        if l[i]<l[i+1] {
+            break
+        }
+    }
+    // 1 4 2
+    if i == -1 {
+        return -1
+    }
+    // find the maximum index to replace i
+    index := i+1
+    for j:=i+1; j<len(l); j++ {
+        if l[j] > l[i] {
+            index = j
+        }
+    }
+    // swap l[i] with l[index]
+    l[i], l[index] = l[index], l[i]
+    // reverse l[i+1..]
+    left, right = i+1, len(l)-1
+    for left<right {
+        l[left], l[right] = l[right], l[left]
+        left, right = left+1, right-1
+    }
+    // collect result
+    res := 0
+    for _, v := range l {
+        res = 10*res+v
+    }
+    if res > 1<<31-1 { return -1 }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

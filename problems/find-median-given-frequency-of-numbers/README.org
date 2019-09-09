@@ -12,6 +12,7 @@ Find Median Given Frequency of Numbers
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/median-employee-salary][Median Employee Salary]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 The Numbers table keeps the value of number and its frequency.

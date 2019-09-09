@@ -13,6 +13,7 @@ Solve the Equation
 Similar Problems:
 - [[https://code.dennyzhang.com/fraction-addition-and-subtraction][Fraction Addition and Subtraction]]
 - [[https://code.dennyzhang.com/expressive-words][Expressive Words]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/expression][#expression]]
 ---------------------------------------------------------------------
 Solve a given equation and return the value of x in the form of string "x=#value". The equation contains only '+', '-' operation, the variable x and its coefficient.

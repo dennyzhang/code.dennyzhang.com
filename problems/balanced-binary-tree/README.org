@@ -12,6 +12,7 @@ Given a binary tree, determine if it is height-balanced
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/count-complete-tree-nodes][Count Complete Tree Nodes]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/heightoftree][#heightoftree]]
 ---------------------------------------------------------------------
 

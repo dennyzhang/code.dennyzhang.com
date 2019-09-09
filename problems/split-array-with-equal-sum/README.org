@@ -13,6 +13,7 @@ Split Array with Equal Sum
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://code.dennyzhang.com/4sum-ii][Leetcode: 4Sum II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/hashmap][#twosum]], [[https://code.dennyzhang.com/tag/splitarray][#splitarray]]
 ---------------------------------------------------------------------
 Given an array with n integers, you need to find if there are triplets (i, j, k) which satisfies following conditions:

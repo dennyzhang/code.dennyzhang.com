@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, inspiring, leftrightpass, classic
+:type:     array, inspiring, roudtrippass, classic
 :END:
 ---------------------------------------------------------------------
 Product of Array Except Self
@@ -13,7 +13,8 @@ Product of Array Except Self
 Similar Problems:
 - [[https://code.dennyzhang.com/maximum-sum-circular-subarray][Maximum Sum Circular Subarray]]
 - [[https://code.dennyzhang.com/shortest-distance-to-a-character][Shortest Distance to a Character]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/leftrightpass][#leftrightpass]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/roudtrippass][#roudtrippass]]
 ---------------------------------------------------------------------
 Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 

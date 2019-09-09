@@ -12,6 +12,7 @@ Sort Array By Parity II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/sort-array-by-parity][Sort Array By Parity]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Given an array A of non-negative integers, half of the integers in A are odd, and half of the integers are even.

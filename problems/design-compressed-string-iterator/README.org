@@ -12,6 +12,7 @@ Design Compressed String Iterator
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/basic-calculator][Basic Calculator]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design and implement a data structure for a compressed string iterator. It should support the following operations: next and hasNext.

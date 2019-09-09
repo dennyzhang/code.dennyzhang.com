@@ -13,6 +13,7 @@
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://code.dennyzhang.com/3sum-closest][3Sum Closest]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/tag/3sum][#3sum]]
 ---------------------------------------------------------------------
 Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums[i] + nums[j] + nums[k] < target.

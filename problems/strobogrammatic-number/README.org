@@ -13,6 +13,7 @@ Strobogrammatic Number
 Similar Problems:
 - [[https://code.dennyzhang.com/number-of-digit-one][Number of Digit One]]
 - [[https://code.dennyzhang.com/reconstruct-original-digits-from-english][Reconstruct Original Digits from English]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).

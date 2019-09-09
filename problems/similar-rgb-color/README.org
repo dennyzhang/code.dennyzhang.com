@@ -12,6 +12,7 @@ Similar RGB Color
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/number-of-lines-to-write-string][Number of Lines To Write String]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/category/basic][#basic]], [[https://code.dennyzhang.com/category/string][#string]]
 ---------------------------------------------------------------------
 In the following, every capital letter represents some hexadecimal digit from 0 to f.

@@ -12,6 +12,7 @@ Super Pow
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/powx-n][Pow(x, n)]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 Your task is to calculate a^b mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.

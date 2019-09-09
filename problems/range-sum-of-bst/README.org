@@ -11,6 +11,7 @@ Range Sum of BST
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/range-sum-of-bst"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 Given the root node of a binary search tree, return the sum of values of all nodes with value between L and R (inclusive).
@@ -43,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/range-sum-of-bst
-// Basic Idea:
+// Basic Ideas:
 // Complexity: Time O(n), Space O(1)
 /**
  * Definition for a binary tree node.

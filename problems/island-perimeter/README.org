@@ -12,6 +12,7 @@ Island Perimeter
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/tag/island][#island]]
 ---------------------------------------------------------------------
 You are given a map in form of a two-dimensional integer grid where 1 represents land and 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn't have "lakes" (water inside that isn't connected to the water around the island). One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
@@ -54,7 +55,7 @@ class Solution(object):
                     if i != row_count-1 and grid[i+1][j] == 1: neighbor_count += 1
         return cell_count*4 - 2*neighbor_count
                 
-    ## Basic Idea:  Get how many 1 cells. Let's say it's m
+    ## Basic Ideas:  Get how many 1 cells. Let's say it's m
     ##              Find how many 1-1 pair which is adjacent, let's say it's n
     ##              The result is 4*m-2*n
     ## Complexity: Time O(m*n), Space O(1)

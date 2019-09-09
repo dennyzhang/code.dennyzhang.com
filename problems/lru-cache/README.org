@@ -12,6 +12,7 @@ LRU Cache
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/all-oone-data-structure][All O`one Data Structure]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
