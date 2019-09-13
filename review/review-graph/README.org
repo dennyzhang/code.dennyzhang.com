@@ -25,7 +25,7 @@ Graph related questions mainly focus on depth first search and breath first sear
 | [[https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm][Floyd-Warshall algorithm]]: find shortest paths in a weighted graph     |                                               |
 
 Floyd-Warshall algorithm: Time O(n*n*n)
-[[image-blog:Review: Graph Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-graph/floyd.png]]
+[[image-blog:Review: Graph Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-graph/floydwarshall.png]]
 
 BFS/DFS/UnionFind; Binarysearch
 
