@@ -1,0 +1,123 @@
+* Leetcode: Regions Cut By Slashes                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     unionfind, inspiring
+:END:
+---------------------------------------------------------------------
+Regions Cut By Slashes
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/regions-cut-by-slashes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+---------------------------------------------------------------------
+In a N x N grid composed of 1 x 1 squares, each 1 x 1 square consists of a /, \, or blank space.  These characters divide the square into contiguous regions.
+
+(Note that backslash characters are escaped, so a \ is represented as "\\".)
+
+Return the number of regions.
+
+Example 1:
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/1.png]]
+#+BEGIN_EXAMPLE
+Input:
+[
+  " /",
+  "/ "
+]
+Output: 2
+Explanation: The 2x2 grid is as follows:
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/2.png]]
+#+BEGIN_EXAMPLE
+Input:
+[
+  " /",
+  "  "
+]
+Output: 1
+Explanation: The 2x2 grid is as follows:
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/3.png]]
+#+BEGIN_EXAMPLE
+Input:
+[
+  "\\/",
+  "/\\"
+]
+Output: 4
+Explanation: (Recall that because \ characters are escaped, "\\/" refers to \/, and "/\\" refers to /\.)
+The 2x2 grid is as follows:
+#+END_EXAMPLE
+
+Example 4:
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/4.png]]
+#+BEGIN_EXAMPLE
+Input:
+[
+  "/\\",
+  "\\/"
+]
+Output: 5
+Explanation: (Recall that because \ characters are escaped, "/\\" refers to /\, and "\\/" refers to \/.)
+The 2x2 grid is as follows:
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input:
+[
+  "//",
+  "/ "
+]
+Output: 3
+Explanation: The 2x2 grid is as follows:
+#+END_EXAMPLE
+
+Note:
+
+1. 1 <= grid.length == grid[0].length <= 30
+- grid[i][j] is either '/', '\', or ' '.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/regions-cut-by-slashes][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/regions-cut-by-slashes/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/regions-cut-by-slashes
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
