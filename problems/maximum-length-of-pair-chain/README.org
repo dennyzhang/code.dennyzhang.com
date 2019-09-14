@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 // Blog link: https://code.dennyzhang.com/maximum-length-of-pair-chain
 // Basic Ideas: dynamic programming + LIS
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 import "sort"
 func findLongestChain(pairs [][]int) int {
     sort.Slice(pairs, func(i, j int) bool {

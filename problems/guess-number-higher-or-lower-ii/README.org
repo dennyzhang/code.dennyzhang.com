@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 //    Then the cost is: k + max(f(i, k-1), f(k+1, j))
 //
 // From bottom to up, from left to right, we can get f(1, n)
-// Complexity: Time O(n*n*n), Space O(n*n)
+// Complexity: Time O(n*n*n), Space O(n^2)
 func getMoneyAmount(n int) int {
     dp := make([][]int, n+1)
     for i:=0; i<n+1; i++ { dp[i] = make([]int, n+1) }

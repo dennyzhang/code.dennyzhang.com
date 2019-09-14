@@ -1,0 +1,189 @@
+* Leetcode: Reverse Substrings Between Each Pair of Parentheses :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     stack
+:END:
+---------------------------------------------------------------------
+Reverse Substrings Between Each Pair of Parentheses
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-substrings-between-each-pair-of-parentheses"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+---------------------------------------------------------------------
+Given a string s that consists of lower case English letters and brackets. 
+
+Reverse the strings in each pair of matching parentheses, starting from the innermost one.
+
+Your result should not contain any bracket.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "(abcd)"
+Output: "dcba"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "(u(love)i)"
+Output: "iloveu"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "(ed(et(oc))el)"
+Output: "leetcode"
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: s = "a(bcdefghijkl(mno)p)q"
+Output: "apmnolkjihgfedcbq"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 0 <= s.length <= 2000
+- s only contains lower case English characters and parentheses.
+- It's guaranteed that all parentheses are balanced.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-substrings-between-each-pair-of-parentheses][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: stack - only push all characters except ')'
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
+// Basic Ideas: stack
+//
+//   How to handle: substring without parethensis or with parethensis?
+//   When to pop. And how to?
+//
+//   If not ')', Keep push to stack
+//   If ')', pop elements to a queue, until find '('
+//
+// Complexity: Time O(n^2) Space O(n)
+func reverseParentheses(s string) string {
+    stack := []byte{}
+    for i, _ := range s {
+        ch := s[i]
+        if ch != ')' {
+            stack = append(stack, ch)
+        } else {
+            if ch == ')' {
+                queue := []byte{}
+                for len(stack) > 0 && stack[len(stack)-1] != '(' {
+                    queue = append(queue, stack[len(stack)-1])
+                    stack = stack[0:len(stack)-1] 
+                }
+                // pop coresponding (
+                stack = stack[0:len(stack)-1]
+                // add it back
+                for _, ch := range queue {
+                    stack = append(stack, ch)
+                }
+            }
+        }
+    }
+    return string(stack)
+}
+#+END_SRC
+
+- Solution: stack - push indices, instead of elements
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
+// Basic Ideas: stack
+//
+//   Push indices instead of items to stack
+//
+// Complexity: Time O(n^2) Space O(n)
+func reverseParentheses(s string) string {
+    stack := []int{}
+    l := []byte(s)
+    for i, _ := range l {
+        ch := l[i]
+        if ch == '(' {
+            stack = append(stack, i)
+        } else {
+            if ch == ')' {
+                left, right := stack[len(stack)-1], i
+                stack = stack[0:len(stack)-1]
+                for left < right {
+                    l[left], l[right] = l[right], l[left]
+                    left, right = left+1, right-1
+                }
+            }
+        }
+    }
+    res := []byte{}
+    for i, _ := range l {
+        if l[i] != '(' && l[i] != ')' {
+            res = append(res, l[i])
+        }
+    }
+    return string(res)
+}
+#+END_SRC
+
+- Solution: stack - Push string to stack, instead of characters
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
+// Basic Ideas: stack
+//
+//   Push string to stack, instead of characters
+//
+// Complexity: Time O(n^2) Space O(n)
+func reverseParentheses(s string) string {
+    stack := []string{}
+    for i, _ := range s {
+        ch := s[i]
+        if ch == '(' {
+            stack = append(stack, string(ch))
+        } else {
+            if ch == ')' {
+                str := ""
+                for len(stack) > 0 && stack[len(stack)-1] != "(" {
+                    str = stack[len(stack)-1]+str
+                    stack = stack[0:len(stack)-1]
+                }
+                // remove (
+                stack = stack[0:len(stack)-1]
+                l := []byte(str)
+                left, right := 0, len(l)-1
+                for left < right {
+                    l[left], l[right] = l[right], l[left]
+                    left, right = left+1, right-1
+                }
+                stack = append(stack, string(l))
+            } else {
+                if len(stack) == 0  || stack[len(stack)-1] == "(" {
+                    stack = append(stack, string(ch))
+                } else {
+                    stack[len(stack)-1] = stack[len(stack)-1]+string(ch)
+                }
+            }
+        }
+    }
+    res := ""
+    for _, str := range stack {
+        res += str
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

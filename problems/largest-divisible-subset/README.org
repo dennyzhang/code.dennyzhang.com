@@ -55,7 +55,7 @@ result: 30->15->5->1: [1, 5, 15, 30]
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/largest-divisible-subset
 // Basic Ideas: Dynamic Programming
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func largestDivisibleSubset(nums []int) []int {
     if len(nums) == 0 { return []int{} }
     sort.Ints(nums)

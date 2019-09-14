@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ## Blog link: https://code.dennyzhang.com/palindromic-substrings
 ## Basic Ideas: Choose each character as the central letter
 ##        The palindrome may have odd length and even length.
-## Complexity: Time O(n*n), Space O(1)
+## Complexity: Time O(n^2), Space O(1)
 class Solution:
     def countSubstrings(self, s):
         """

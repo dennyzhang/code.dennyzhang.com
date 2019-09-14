@@ -74,7 +74,7 @@ Leave me comments, if you have better ways to solve.
 ##  if S == "XXX0": return [S]
 ##  return [S, "X.XXX", "XX.XX", "XXX.X"...]
 ##
-## Complexity: Time O(n*n), Space O(n*n)
+## Complexity: Time O(n^2), Space O(n^2)
 class Solution:
     def ambiguousCoordinates(self, S):
         """

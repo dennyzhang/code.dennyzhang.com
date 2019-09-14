@@ -63,7 +63,7 @@ Leave me comments, if you have better ways to solve.
 // Blog link: https://code.dennyzhang.com/invalid-transactions
 // Basic Ideas: Array
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 import ("strconv"
         "strings")
 type MyNode struct {

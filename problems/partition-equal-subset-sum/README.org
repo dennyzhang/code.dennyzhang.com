@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 // Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
 // Basic Ideas: hashmap
 //  If we can find some combination with the sum as half of the sum, return true
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func canPartition(nums []int) bool {
     sum := 0
     for _, num := range nums {
@@ -89,7 +89,7 @@ func canPartition(nums []int) bool {
 ## Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
 ## Basic Ideas: hashmap
 ##
-## Complexity: Time O(n*n), Space O(n)
+## Complexity: Time O(n^2), Space O(n)
 class Solution(object):
     def canPartition(self, nums):
         """

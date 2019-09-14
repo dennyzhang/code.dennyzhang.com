@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 ##      For each 0, and configure the values to the level number
 ##      If the neighbors is 0 or value equals current level, skip them
 ##
-## Complexity: Time O(?), Space O(n*n)
+## Complexity: Time O(?), Space O(n^2)
 class Solution:
     def wallsAndGates(self, rooms):
         """

@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
 ## Basic Ideas: BFS. Find the mininum steps
 ##              Get a list of square numbers as the candidate to explore
 ##
-## Complexity: Time O(n*n), Space O(n)
+## Complexity: Time O(n^2), Space O(n)
 class Solution:
     def numSquares(self, n):
         """

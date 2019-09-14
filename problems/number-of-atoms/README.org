@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     stack
+:type:     stack, classic, hashmap
 :END:
 ---------------------------------------------------------------------
 Number of Atoms
@@ -12,7 +12,7 @@ Number of Atoms
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given a chemical formula (given as a string), return the count of each atom.
 
@@ -65,9 +65,88 @@ Credits To: [[https://leetcode.com/problems/number-of-atoms/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/number-of-atoms
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/number-of-atoms
+// Basic Ideas: stack + hashmap
+//
+//   Convert characters into token
+//     Mg(OH)2 -> Mg:1, (:1, O:1, H:1, ):2
+//
+//   If not ), keep pushing characters to stack
+//   If ), find the repeat count. Keep poping, until find (
+//         Push the new result back
+//
+// Complexity: Time O(n^2), Space O(n)
+import ("sort"
+        "strconv")
+type MyNode struct {
+    token string
+    count int
+}
 
+func countOfAtoms(formula string) string {
+    l := []MyNode{}
+    j := 0
+    for i:=0; i<len(formula); i++ {
+        ch := formula[i]
+        if ch >='a' && ch <= 'z' {
+            l[j-1].token += string(ch)
+        } else {
+            // find count
+            if formula[i] >='0' && formula[i] <='9' {
+                count := "" 
+                for i<len(formula) && formula[i] >='0' && formula[i] <='9' {
+                    count += string(formula[i])
+                    i++
+                }
+                // move back to avoid i++ in the loop
+                i--
+                c, _ := strconv.Atoi(count)
+                l[j-1].count = c
+            } else {
+                l = append(l, MyNode{token:string(ch), count:1})
+                j++
+            }
+        }
+    }
+    stack := []MyNode{}
+    for _, node := range l {
+        if node.token != ")" {
+            stack = append(stack, node)
+        } else {
+            nodes := []MyNode{}
+            for len(stack)>0 && stack[len(stack)-1].token != "(" {
+                node_top := stack[len(stack)-1]
+                node_top.count = node_top.count*node.count
+                nodes = append(nodes, node_top)
+                stack = stack[0:len(stack)-1]
+            }
+            // pop (
+            stack = stack[0:len(stack)-1]
+            for j, _ := range nodes {
+                stack = append(stack, nodes[j])
+            }
+        }
+    }
+    m := map[string]int{}
+    tokens := []string{}
+    for _, node := range stack {
+        m[node.token] += node.count
+    }
+    for token, _ := range m {
+        tokens = append(tokens, token)
+    }
+    sort.Strings(tokens)
+    res := ""
+    for _, token := range tokens {
+        if m[token] == 1 {
+            res += token
+        } else {
+            res += token+strconv.Itoa(m[token])
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

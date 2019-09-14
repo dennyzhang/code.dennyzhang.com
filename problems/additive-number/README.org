@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 // The number might be overflow.
 // We may not be able to convert string to int, add them, then convert back to string.
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 import "strconv"
 
 func isAdditiveNumber2(num1 string, num2 string, num string) bool {

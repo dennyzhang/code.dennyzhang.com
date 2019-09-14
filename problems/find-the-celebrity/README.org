@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 // Basic Ideas:
 //  Notice: 
 //    If A knows B then B knows C, A doesn't necessarily know C
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 /**
  * The knows API is already defined for you.
  *     knows := func(a int, b int) bool

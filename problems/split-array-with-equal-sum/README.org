@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 // Basic Ideas:
 // Split the list with 4 groups of equal values
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func splitArray(nums []int) bool {
     if len(nums) < 7 { return false }
     

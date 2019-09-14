@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ## Basic Ideas: Choose one as the middle of palindromic, then expand in both directions
 ##              palindromic may have odd elements or even elements
 ##
-## Complexity: Time O(n*n), Space O(1)
+## Complexity: Time O(n^2), Space O(1)
 class Solution:
     def longestPalindrome(self, s):
         """

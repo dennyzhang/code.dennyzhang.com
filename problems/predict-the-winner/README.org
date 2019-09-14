@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 //     if we choose i, we get sum[i:j]-f(i+1, j)
 //     if we choose j, we get sum[i:j]-f(i, j-1)
 //
-// Complexity: Time O(n*n), Space O(n*n)
+// Complexity: Time O(n^2), Space O(n^2)
 func PredictTheWinner(nums []int) bool {
     sums := make([]int, len(nums))
     sum := 0

@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 ##              Scan its neighbors, if found new nodes. Create them. And update mapping
 ##              Update children
 ##
-## Complexity: Time O(n*n), Space O(n).
+## Complexity: Time O(n^2), Space O(n).
 ##
 # Definition for a undirected graph node
 # class UndirectedGraphNode:

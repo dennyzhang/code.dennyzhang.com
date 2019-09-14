@@ -73,7 +73,7 @@ class Solution:
 
 #+BEGIN_SRC go
 // Basic Ideas: Compare s with word one by one
-// Complexity: Time O(n*n), Space O(1)
+// Complexity: Time O(n^2), Space O(1)
 func findLongestWord(s string, d []string) string {
     index := -1
     for i, word := range d {

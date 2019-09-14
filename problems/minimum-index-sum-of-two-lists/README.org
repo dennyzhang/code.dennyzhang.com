@@ -51,7 +51,7 @@ class Solution(object):
         :rtype: List[str]
         """
         ## Idea:
-        ## Complexity: Time O(n*n), Space O(1)
+        ## Complexity: Time O(n^2), Space O(1)
         sum_list = []
         item_list = []
         for i in range(0, len(list1)):

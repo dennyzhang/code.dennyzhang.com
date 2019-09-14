@@ -51,7 +51,7 @@ class Solution:
     """
     def threeSum2(self, n):
         ## Basic Ideas:
-        ## Complexity: Time O(n*n), Space O(1)
+        ## Complexity: Time O(n^2), Space O(1)
         import math
         nums = [x*x for x in range(1001)]
         res = 0

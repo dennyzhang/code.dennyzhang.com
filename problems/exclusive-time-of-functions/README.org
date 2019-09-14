@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo
+:type:     stack
 :END:
 ---------------------------------------------------------------------
 Exclusive Time of Functions
@@ -12,7 +12,7 @@ Exclusive Time of Functions
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/category/stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
 ---------------------------------------------------------------------
 Given the running logs of n functions that are executed in a nonpreemptive single threaded CPU, find the exclusive time of these functions.
 
@@ -21,6 +21,7 @@ Each function has a unique id, start from 0 to n-1. A function may be called rec
 A log is a string has this format : function_id:start_or_end:timestamp. For example, "0:start:0" means function 0 starts from the very beginning of time 0. "0:end:0" means function 0 ends to the very end of time 0.
 
 Exclusive time of a function is defined as the time spent within this function, the time spent by calling other functions should not be considered as this function's exclusive time. You should return the exclusive time of each function sorted by their function id.
+[[image-blog:Leetcode: Exclusive Time of Functions][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/exclusive-time-of-functions/functions.png]]
 #+BEGIN_EXAMPLE
 Example 1:
 Input:
@@ -54,7 +55,64 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/exclusive-time-of-functions
-
+// Basic Ideas: stack + hashmap
+//
+// Sort the logs by starting timestamp. 
+//   If same timestamp and same function, "starts" comes before "end"
+//   If same timestamp and different functions, "end" comes before "start"
+//
+// Maintain a stack for running tasks.
+// For "end" log entry, pop the task. And resume the timer
+//
+// Complexity: Time O(n), Space O(n)
+import ("sort"
+        "strings"
+        "strconv")
+func exclusiveTime(n int, logs []string) []int {
+    sort.Slice(logs, func(i, j int) bool {
+        l1 := strings.Split(logs[i], ":")
+        l2 := strings.Split(logs[j], ":")
+        t1, _ := strconv.Atoi(l1[2])
+        t2, _ := strconv.Atoi(l2[2])
+        if t1 != t2 {
+            return t1 < t2
+        } else {
+            if l1[0] == l2[0] {
+                // same function: start, then end
+                return l1[1] > l2[1]
+            } else {
+                // different functions: end, then start
+                return l1[1] < l2[1]
+            }
+        }
+    })
+    res := make([]int, n)
+    timer := -1
+    // loop log entries
+    stack := []int{}
+    for _, log := range logs {
+        l := strings.Split(log, ":")
+        fid, _ := strconv.Atoi(l[0])
+        action := l[1]
+        time, _ := strconv.Atoi(l[2])
+        if action == "start" {
+            // caculate previous funcion
+            if len(stack) > 0 {
+                res[stack[len(stack)-1]] += time-timer
+            }
+            stack = append(stack, fid)
+            timer = time
+        } else {
+            // stop current function
+            stack = stack[0:len(stack)-1]
+            // current second counts to current function. So add 1
+            res[fid] += time-timer+1
+            // The next function can only starts next second
+            timer = time + 1
+        }
+    }
+    return res
+}
 #+END_SRC
 ---------------------------------------------------------------------
 

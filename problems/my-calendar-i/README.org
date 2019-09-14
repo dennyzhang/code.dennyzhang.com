@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 // Blog link: https://code.dennyzhang.com/my-calendar-i
 // Basic Ideas: 
 //  Detect conflict of intervals
-// Complexity: Time O(n*n) Space O(n)
+// Complexity: Time O(n^2) Space O(n)
 type MyCalendar struct {
     intervals [][]int
 }
@@ -84,7 +84,7 @@ func (this *MyCalendar) Book(start int, end int) bool {
 //  Detect conflict of intervals
 //  The order matters
 //  
-// Complexity: Time O(n*n) Space O(n)
+// Complexity: Time O(n^2) Space O(n)
 func max(x, y int) int {
     if x>y {
         return x

@@ -84,7 +84,7 @@ Leave me comments, if you have better ways to solve.
 //
 //  No need to examine the same edge twice
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func dfs(src int, dst int, m []map[int]bool, visited []bool, canreach []bool) {
     if src == dst {
         canreach[src] = true

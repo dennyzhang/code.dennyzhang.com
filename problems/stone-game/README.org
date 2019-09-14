@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 // Basic Ideas: minmax - dynamic programming
 // f(i, j): max value I can get, if I starts with l[i:j]
 //     f(i+ 1, j), f(i, j-1)
-// Complexity: Time O(n*n), Space O(n*n)
+// Complexity: Time O(n^2), Space O(n^2)
 func stoneGame(piles []int) bool {
     dp := make([][]int, len(piles))
     for i, _:= range dp { dp[i] = make([]int, len(piles)) }

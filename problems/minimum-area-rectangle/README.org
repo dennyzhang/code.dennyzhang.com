@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 //  Treat two nodes as the diagonal. 
 //  Check whether the other two nodes exists to form a rectange
 //  If yes, we get a candidate. Check all candidates
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 type node struct {
     x int
     y int

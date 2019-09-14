@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 // m[1] = [1:[0, 2]]
 // m[2] = [1:[1], 4:[0]]
 //
-// Complexity: Time O(n*n), Space O(n*n)
+// Complexity: Time O(n^2), Space O(n^2)
 func numberOfBoomerangs(points [][]int) int {
   res := 0
   n := len(points)
@@ -81,7 +81,7 @@ func numberOfBoomerangs(points [][]int) int {
 // m = [1:2]
 // m = [1:1, 4:1]
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 
 func numberOfBoomerangs(points [][]int) int {
   res := 0

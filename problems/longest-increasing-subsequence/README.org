@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 // Blog link: https://code.dennyzhang.com/longest-increasing-subsequence
 // Basic Ideas: dynamic programming
 //    dp(i): ends with nums[i]
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func lengthOfLIS(nums []int) int {
     res := 0
     l := make([]int, len(nums))

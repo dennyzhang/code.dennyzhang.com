@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 // Notice: 
 //  - how to detect not found?
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func shortestWay(source string, target string) int {
     res := 0
     i:=0

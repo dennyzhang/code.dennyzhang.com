@@ -88,7 +88,7 @@ func deckRevealedIncreasing(deck []int) []int {
 // Blog link: https://code.dennyzhang.com/reveal-cards-in-increasing-order
 // Basic Ideas: zigzg
 //   Add increaseing numbers to each the other available spot
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 import "sort"
 func deckRevealedIncreasing(deck []int) []int {
     sort.Ints(deck)

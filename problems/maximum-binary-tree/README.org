@@ -78,7 +78,7 @@ func constructMaximumBinaryTree(nums []int) *TreeNode {
 
 #+BEGIN_SRC go
 // Basic Ideas: recursive
-// Complexity: Time O(n*n), Space O(1)
+// Complexity: Time O(n^2), Space O(1)
 // Blog link: https://code.dennyzhang.com/maximum-binary-tree
 /**
  * Definition for a binary tree node.

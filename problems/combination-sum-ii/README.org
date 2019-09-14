@@ -79,7 +79,7 @@ func combinationSum2(candidates []int, target int) [][]int {
 ## Blog link: https://code.dennyzhang.com/combination-sum-ii
 ## Basic Ideas: Sort the list with descending order
 ##
-## Complexity: Time O(n*n), Space O(n)
+## Complexity: Time O(n^2), Space O(n)
 class Solution:
     def combinationSum2(self, candidates, target):
         """

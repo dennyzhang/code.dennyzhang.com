@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 //
 // TODO: need a simple way to switch items
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 
 func reconstructQueue(people [][]int) [][]int {
     res := people

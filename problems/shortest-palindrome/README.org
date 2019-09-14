@@ -35,7 +35,7 @@ Leave me comments, if you have better ways to solve.
 ## Basic Ideas: Treat each character as the middle.
 ##              The length of palindrome might be odd or even
 ##
-## Complexity: Time O(n*n), Space O(1)
+## Complexity: Time O(n^2), Space O(1)
 import sys
 class Solution:
     def shortestPalindrome(self, s):

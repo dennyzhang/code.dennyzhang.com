@@ -21,7 +21,7 @@ In a N x N grid composed of 1 x 1 squares, each 1 x 1 square consists of a /, \,
 Return the number of regions.
 
 Example 1:
-[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/1.png]]
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/my1.png]]
 #+BEGIN_EXAMPLE
 Input:
 [
@@ -33,7 +33,7 @@ Explanation: The 2x2 grid is as follows:
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/2.png]]
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/my2.png]]
 #+BEGIN_EXAMPLE
 Input:
 [
@@ -45,7 +45,7 @@ Explanation: The 2x2 grid is as follows:
 #+END_EXAMPLE
 
 Example 3:
-[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/3.png]]
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/my3.png]]
 #+BEGIN_EXAMPLE
 Input:
 [
@@ -58,7 +58,7 @@ The 2x2 grid is as follows:
 #+END_EXAMPLE
 
 Example 4:
-[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/4.png]]
+[[image-blog:Leetcode: Regions Cut By Slashes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/regions-cut-by-slashes/my4.png]]
 #+BEGIN_EXAMPLE
 Input:
 [
@@ -94,26 +94,181 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/regions-cut-by-slashes
+// Basic Ideas: union find
+//
+// Each cell can be dividied into four parts.
+// Notice: The total nodes would be 4*n*n
+//
+// Loop each cell
+//    1. Join 4 nodes conditionally
+//    2. Join cell with adjacent nodes
+//
+//     \ 1 /
+//    0     2
+//     / 3  \
+//
+//   For adjacent nodes:
+//      3<->1
+//      2<->0
+// Complexity: Time O(n^2) Space O(n^2)
+var count int
+type UF struct {
+    parent []int
+}
 
-#+END_EXAMPLE
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
 
-*Key Observations:*
-#+BEGIN_EXAMPLE
+func (uf *UF) union(x, y int) {
+    p1 := uf.find(x)
+    p2 := uf.find(y)
+    if p1 != p2 {
+        count--
+        uf.parent[p2] = p1
+    }
+}
 
-#+END_EXAMPLE
+func (uf *UF) find(x int) int {
+    for x != uf.parent[x] {
+        x = uf.parent[x]
+    }
+    return x
+}
 
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+func regionsBySlashes(grid []string) int {
+    count = len(grid)*len(grid)*4
+    uf := constructor(count)
+    for i, row := range grid {
+        for j, cell := range row {
+            // join 4 nodes inside current cell
+            index := 4*(i*len(grid)+j)
+            if cell == ' ' {
+                uf.union(index+0, index+1)
+                uf.union(index+0, index+2)
+                uf.union(index+0, index+3)
+            }
+            if cell == '/' {
+                uf.union(index+0, index+1)
+                uf.union(index+2, index+3)
+            }
+            if cell == '\\' {
+                uf.union(index+0, index+3)
+                uf.union(index+1, index+2)
+            }
+            // join nodes in adjacent cells
+            for k, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
+                                           []int{0, 1}, []int{0, -1}} {
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2>=0 && i2<len(grid) && j2>=0 && j2<len(grid) {
+                    index2 := 4*(i2*len(grid)+j2) 
+                    if k == 0 { uf.union(index+3, index2+1) }
+                    if k == 1 { uf.union(index+1, index2+3) }
+                    if k == 2 { uf.union(index+2, index2+0) }
+                    if k == 3 { uf.union(index+0, index2+2) }
+                }
+            }
+        }
+    }
+    return count
+}
+#+END_SRC
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/regions-cut-by-slashes
+// Basic Ideas: union find
+//
+// Each cell can be dividied into four parts.
+// Notice: The total nodes would be 4*n*n
+//
+// Loop each cell
+//    1. Join 4 nodes conditionally
+//    2. Join cell with adjacent nodes
+//
+//     \ 1 /
+//    0     2
+//     / 3  \
+//
+//   For adjacent nodes:
+//      3<->1
+//      2<->0
+// Complexity: Time O(n^2) Space O(n^2)
+var count int
+type UF struct {
+    parent []int
+}
 
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    p1 := uf.find(x)
+    p2 := uf.find(y)
+    if p1 != p2 {
+        count--
+        uf.parent[p2] = p1
+    }
+}
+
+func (uf *UF) find(x int) int {
+    for x != uf.parent[x] {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func regionsBySlashes(grid []string) int {
+    count = len(grid)*len(grid)*4
+    uf := constructor(count)
+    for i, row := range grid {
+        for j, cell := range row {
+            // join 4 nodes inside current cell
+            index := 4*(i*len(grid)+j)
+            if cell == ' ' {
+                uf.union(index+0, index+1)
+                uf.union(index+0, index+2)
+                uf.union(index+0, index+3)
+            }
+            if cell == '/' {
+                uf.union(index+0, index+1)
+                uf.union(index+2, index+3)
+            }
+            if cell == '\\' {
+                uf.union(index+0, index+3)
+                uf.union(index+1, index+2)
+            }
+            // north
+            if i>0 {
+                uf.union(index+1, index-4*len(grid)+3)
+            }
+            // south
+            if i<len(grid)-1 {
+                uf.union(index+3, index+4*len(grid)+1)
+            }
+            // east
+            if j<len(grid)-1 {
+                uf.union(index+2, index+4+0)
+            }
+            // west
+            if j>0 {
+                uf.union(index+0, index-4+2)
+            }
+        }
+    }
+    return count
+}
 #+END_SRC
-
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>

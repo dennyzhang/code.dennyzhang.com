@@ -61,7 +61,7 @@ Leave me comments, if you have better ways to solve.
 // Blog link: https://code.dennyzhang.com/longest-repeating-substring
 // Basic Ideas: binary search + hashmap
 //   T T T T F F
-// Complexity: Time O(n*n*log(n)), Space O(n*n)
+// Complexity: Time O(n*n*log(n)), Space O(n^2)
 func longestRepeatingSubstring(S string) int {
     res := 0
     left, right := 1, len(S)-1

@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/sort-integers
 // Basic Ideas: bubble sort
-// Complexity: Time O(n*n), Space O(1)
+// Complexity: Time O(n^2), Space O(1)
 /**
  * @param A: an integer array
  * @return: nothing

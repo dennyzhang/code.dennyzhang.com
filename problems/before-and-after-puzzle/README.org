@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
 //
 // Notice: watch out "a b a"
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 import ("strings"
         "sort")
 func beforeAndAfterPuzzles(phrases []string) []string {
@@ -118,7 +118,7 @@ func beforeAndAfterPuzzles(phrases []string) []string {
 //
 // Notice: watch out "a b a"
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 import ("strings"
         "sort")
 func beforeAndAfterPuzzles(phrases []string) []string {

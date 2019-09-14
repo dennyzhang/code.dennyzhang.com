@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 //          max(4, dp(4))*max(i-4, *dp(i-4)),
 // ...      max(j, dp(j))*max(i-j, *dp(i-j)), (j<=int(i/2))
 //
-// Complexity: Time O(n*n), Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func integerBreak(n int) int {
   if n == 1 { return 0 }
   if n == 2 { return 1 }

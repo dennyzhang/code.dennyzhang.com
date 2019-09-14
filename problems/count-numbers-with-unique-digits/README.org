@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 // Basic Ideas: dynamic programming
 //   dp(i): How many unique digits with length of i
 //
-// Complexity: Time O(n*n), Space O(1)
+// Complexity: Time O(n^2), Space O(1)
 func countNumbersWithUniqueDigits(n int) int {
     if n == 0 { return 1 }
     if n == 1 { return 10 }

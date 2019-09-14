@@ -50,7 +50,7 @@ class Solution(object):
         ##       last_mininum_list: mininum total from current layer to the bottom
         ##       Notice: use space of existing array
         ##
-        ## Complexity: Time O(n*n), Space O(1)
+        ## Complexity: Time O(n^2), Space O(1)
         ## Sample Data
         ##         -1
         ##        2  3
@@ -82,7 +82,7 @@ class Solution(object):
         ##       To get the mininum sum, e always have 2 possibilites.
         ##       And we need to choose the smaller one
         ##       last_mininum_list: mininum total from current layer to the bottom
-        ## Complexity: Time O(n*n), Space O(n)
+        ## Complexity: Time O(n^2), Space O(n)
         ## Sample Data
         ##         -1
         ##        2  3

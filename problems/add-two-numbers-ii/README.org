@@ -42,7 +42,7 @@ class Solution(object):
         """
         ## Idea:
         ##           add l2 to l1 without carry. has_carry(bool). If yes, keep checking l1
-        ## Complexity: Time O(n*n), Space O(1)
+        ## Complexity: Time O(n^2), Space O(1)
         dummy1, dummy2 = ListNode(0), ListNode(0)
         dummy1.next, dummy2.next = l1, l2
         len1, len2 = 0, 0

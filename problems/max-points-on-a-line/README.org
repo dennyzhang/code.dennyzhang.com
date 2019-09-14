@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
 //  - k is float: 
 //    [[0,0],[94911151,94911150],[94911152,94911151]]
 //
-// Complexity: Time O(n*n), Space O(1)
+// Complexity: Time O(n^2), Space O(1)
 /**
  * Definition for a point.
  * type Point struct {

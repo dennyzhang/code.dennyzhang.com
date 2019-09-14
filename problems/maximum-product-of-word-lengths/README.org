@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 ##              b[0] -> a, b[1] -> b, b[2] -> c ... b[25] -> z
 ##              If b1 & b2 == 0, no common letters between word1 and word2
 ##
-## Complexity: Time O(n*n), Space O(n)
+## Complexity: Time O(n^2), Space O(n)
 class Solution(object):
     def maxProduct(self, words):
         """

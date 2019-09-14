@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ## Basic Ideas: sort the list, then loop with idea of 2 sum
 ##       What if you have duplicate entries?
 ##       [0, 0, 0, 0]
-## Complexity: Time O(n*n), Space O(1)
+## Complexity: Time O(n^2), Space O(1)
 ## Sample Data:
 ##      -4 -1 -1 0 1 2
 ##       i l         r

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, inspiring, twopass, roudtrippass
+:type:     bfs, inspiring, twopass, roundtrippass
 :END:
 ---------------------------------------------------------------------
 Shortest Distance to a Character
@@ -13,7 +13,7 @@ Shortest Distance to a Character
 Similar Problems:
 - [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/twopass][#twopass]], [[https://code.dennyzhang.com/tag/roudtrippass][#roudtrippass]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/twopass][#twopass]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]]
 ---------------------------------------------------------------------
 Given a string S and a character C, return an array of integers representing the shortest distance from the character C in the string.
 

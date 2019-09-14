@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subsequence, inspiring, splitarray
+:type:     subsequence, inspiring, splitarray, repo, greedy
 :END:
 ---------------------------------------------------------------------
 Split Array into Consecutive Subsequences
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/132-pattern][132 Pattern]]
 - [[https://code.dennyzhang.com/sum-of-subarray-minimums][Sum of Subarray Minimums]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subsequence][#subsequence]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/splitarray][#splitarray]]
+- Tag: [[https://code.dennyzhang.com/tag/subsequence][#subsequence]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/splitarray][#splitarray]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 You are given an integer array sorted in ascending order (may contain duplicates), you need to split them into several subsequences, where each subsequences consist of at least 3 consecutive integers. Return whether you can make such a split.
 
@@ -53,9 +53,42 @@ Credits To: [[https://leetcode.com/problems/split-array-into-consecutive-subsequ
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/split-array-into-consecutive-subsequences
-
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/split-array-into-consecutive-subsequences
+// Basic Ideas: greedy
+//    When we loop the array from small to big, 
+//      it's always better append to existing subsequences, compared to start new ones.
+// Complexity: Time O(n), Space O(n)
+func isPossible(nums []int) bool {
+    freqs := map[int]int{}
+    appfreqs := map[int]int{}
+    for _, n := range nums {
+        freqs[n]++
+    }
+    for _, n := range nums {
+        // already used
+        if freqs[n] == 0 {
+            continue
+        }
+        // append to existing subsequences
+        if appfreqs[n] > 0 {
+            appfreqs[n]--
+            appfreqs[n+1]++
+        } else {
+            // start a new one
+            if freqs[n+1]>0 && freqs[n+2]>0 {
+                freqs[n+1]--
+                freqs[n+2]--
+                appfreqs[n+3]++
+            } else {
+                // dead
+                return false
+            }
+        }
+        freqs[n]--
+    }
+    return true
+}
 #+END_SRC
 
 #+BEGIN_HTML
