@@ -1,0 +1,107 @@
+* Leetcode: Minimum Domino Rotations For Equal Row              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, greedy
+:END:
+---------------------------------------------------------------------
+Minimum Domino Rotations For Equal Row
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-domino-rotations-for-equal-row"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+In a row of dominoes, A[i] and B[i] represent the top and bottom halves of the i-th domino.  (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.)
+
+We may rotate the i-th domino, so that A[i] and B[i] swap values.
+
+Return the minimum number of rotations so that all the values in A are the same, or all the values in B are the same.
+
+If it cannot be done, return -1.
+
+Example 1:
+[[image-blog:Leetcode: Minimum Domino Rotations For Equal Row][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-domino-rotations-for-equal-row/domino.png]]
+#+BEGIN_EXAMPLE
+Input: A = [2,1,2,4,2,2], B = [5,2,6,2,3,2]
+Output: 2
+Explanation: 
+The first figure represents the dominoes as given by A and B: before we do any rotations.
+If we rotate the second and fourth dominoes, we can make every value in the top row equal to 2, as indicated by the second figure.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [3,5,1,2,3], B = [3,6,3,3,4]
+Output: -1
+Explanation: 
+In this case, it is not possible to rotate the dominoes to make one row of values equal.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A[i], B[i] <= 6
+- 2 <= A.length == B.length <= 20000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-domino-rotations-for-equal-row][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/minimum-domino-rotations-for-equal-row
+// Basic Ideas: greedy
+//
+// How to check whether it's solveable?
+//
+// Complexity: Time O(n) Space O(1)
+func minDominoRotations(A []int, B []int) int {
+    // only care about the max frequent element
+    l := make([]int, 7)
+    target, max := 0, -1<<31
+    for i, _ := range A {
+        v1, v2 := A[i], B[i]
+        l[v1]++
+        if v1!=v2 {
+            l[v2]++
+        }
+        if l[v1] > max {
+            target, max = v1, l[v1]
+        }
+        if l[v2] > max {
+            target, max = v2, l[v2]
+        }
+    }
+
+    if max != len(A) {
+        return -1
+    }
+    count1, count2 := 0, 0
+    for i, _ := range A {
+        if A[i] == target {
+            count1++
+        }
+        if B[i] == target {
+            count2++
+        }
+    }
+    if count1 > count2 {
+        return len(A)-count1
+    } else {
+        return len(A)-count2
+    }
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

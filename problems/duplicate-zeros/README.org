@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array
+:type:     array, twopointer, inspiring
 :END:
 ---------------------------------------------------------------------
 Duplicate Zeros
@@ -12,7 +12,7 @@ Duplicate Zeros
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+- Tag: [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a fixed length array arr of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.
 
@@ -49,19 +49,32 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/duplicate-zeros
-// Basic Ideas: use a queue to save elements we want to fill
+// Basic Ideas: two pointer
+//   Find how many cells can be shifted
+//   From right to next, do the move
 // Complexity: Time O(n), Space O(1)
 func duplicateZeros(arr []int)  {
-    l := []int{}
-    for i, v := range arr {
+    count := 0
+    for _, v := range arr {
         if v == 0 {
-            l = append(l, 0)
-            l = append(l, 0)
-        } else {
-            l = append(l, v)
+            count++
         }
-        arr[i] = l[0]
-        l = l[1:len(l)]
+    }
+    i, j := len(arr)-1, len(arr)+count-1
+    for ; i>=0 && j>=0; i, j = i-1, j-1 {
+        if arr[i] != 0 {
+            if j<len(arr) {
+                arr[j] = arr[i]
+            }
+        } else {
+            if j<len(arr) {
+                arr[j] = 0
+            }
+            j--
+            if j<len(arr) {
+                arr[j] = 0
+            }
+        }
     }
 }
 #+END_SRC

@@ -12,6 +12,12 @@ Backtracking Problems
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
+*Questions*
+| Name                                | Summary                             |
+|-------------------------------------+-------------------------------------|
+| All elements can take or don't take | [[https://code.dennyzhang.com/subsets-ii][Leetcode: Subsets II]]                |
+| All elements must take              | [[https://code.dennyzhang.com/pyramid-transition-matrix][Leetcode: Pyramid Transition Matrix]] |
+
 See all backtracking problems: [[https://code.dennyzhang.com/tag/backtracking/][#backtracking]]
 [display-posts tag="backtracking" posts_per_page="100" orderby="title"]
 

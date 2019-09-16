@@ -2,10 +2,17 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, parentheses
+:type:     stack, parentheses
 :END:
 ---------------------------------------------------------------------
 Valid Parentheses
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-word-is-valid-after-substitutions"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/tag/parentheses][#parentheses]]
 ---------------------------------------------------------------------
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -18,45 +25,26 @@ Credits To: [[https://leetcode.com/problems/valid-parentheses/description/][leet
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/valid-parentheses
-class Solution(object):
-    def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        matched_dict = {
-            '(': ')',
-            ')': '(',
-            '[': ']',
-            ']': '[',
-            '{': '}',
-            '}': '{'
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/valid-parentheses
+// Basic Ideas: stack
+// Complexity: Time O(n) Space O(n)
+func isValid(s string) bool {
+    stack := []byte{}
+    m := map[byte]byte{')':'(', ']':'[', '}':'{'}
+    for i, _ := range s {
+        ch := byte(s[i])
+        if _, ok := m[ch]; ok {
+            if len(stack)<1 || stack[len(stack)-1] != m[ch] {
+                return false
+            }
+            stack = stack[0:len(stack)-1]
+        } else {
+            stack = append(stack, ch)
         }
-
-        string_stack = []
-
-        for ch in s:
-            if ch not in '()[]{}':
-                raise Exception("Unexpected string: %s, character: %s" % (s, ch))
-            if len(string_stack) == 0:
-                string_stack.append(ch)
-            else:
-                if string_stack[-1] == matched_dict[ch]:
-                    # pop the last item
-                    string_stack.pop()
-                else:
-                    string_stack.append(ch)
-        return len(string_stack) == 0
-            
-if __name__ == '__main__':
-    s = Solution()
-    print s.isValid("([])")
-    print s.isValid("()[]{}")
-    print s.isValid("()")
-    print s.isValid("(]")
-    print s.isValid("([)]")
+    }
+    return len(stack) == 0
+}
 #+END_SRC
 
 #+BEGIN_HTML

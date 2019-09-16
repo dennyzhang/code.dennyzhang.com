@@ -2,14 +2,12 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     linkedlist, redo
 :END:
 ---------------------------------------------------------------------
 Merge k Sorted Lists
 ---------------------------------------------------------------------
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
-
-
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/merge-k-sorted-lists][code.dennyzhang.com]]
 
@@ -17,7 +15,6 @@ Credits To: [[https://leetcode.com/problems/merge-k-sorted-lists/description/][l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/merge-k-sorted-lists
 ## Basic Ideas: Compare the first node of all list
@@ -66,9 +63,6 @@ class Solution(object):
                 p.next = p_list[0]
                 break
         return dummyNode.next
-        
-# s = Solution()
-# print s.mergeKLists([[], []])
 #+END_SRC
 
 #+BEGIN_HTML

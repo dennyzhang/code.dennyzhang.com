@@ -13,39 +13,39 @@ But you wouldn't believe how incredibly useful it would be.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-binarysearch"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-[[color:#c7254e][Clarifications]]:
-1. Allow duplicate?
-- What range you would choose to examine?
-- How you can reduce the dataset into half?
+*Basic Abstractions*
+| Name                                       | Summary |
+|--------------------------------------------+---------|
+| What are the arrays to be examined?        |         |
+| How to divide them into half?              |         |
+| Check the middle and how to drop one half? |         |
 
-*Ideas*
-| Name                             | Example                 |
-|----------------------------------+-------------------------|
-| When to break?                   | left<right, left<=right |
-| How to move left/right pointers? |                         |
-| What to return?                  |                         |
+*Code Skeleton*
 
-[[color:#c7254e][Where Left/Right Would Be After Search?]]
-l = [2, 3, 8, 12, 20, 35], target = 4
+*Questions*
+| Name                                            | Example                                                |
+|-------------------------------------------------+--------------------------------------------------------|
+| Clarifications: whether array is sorted?        |                                                        |
+| Clarifications: whether array allow duplicates? |                                                        |
+|-------------------------------------------------+--------------------------------------------------------|
+| How to initialize?                              | left, right := 0, len(l)-1 VS left, right := 0, len(l) |
+| How to check, drop?                             | target -> middle vs middle -> target                   |
+| How to move?                                    | left = mid, left = mid+1, left = mid-1                 |
+| When to break?                                  | left<right: adjacent, left<=right: overlap             |
+| What break means?                               |                                                        |
+| Any corner case?                                |                                                        |
 
-1. Found. Target = 3. left == right, points to the value
-- In the middle. Target = 11. [right, Target, left]. The previous step would be right==left, and the value is smaller than the target. [[color:#c7254e][Do you know why?]]
-- Too small. Target = 1. [right(-1), left(0)]
-- Too big. Target = 36. [right(len-1), left(len)]
-
-[[color:#c7254e][Scenarios]]:
-
-| Name                                     | Example                                  |
-|------------------------------------------+------------------------------------------|
-| Find whether target in the range         | [[https://code.dennyzhang.com/guess-number-higher-or-lower][Guess Number Higher or Lower]]             |
-| Find the first target                    | [[https://code.dennyzhang.com/first-bad-version][First Bad Version]]                        |
-| Find smallest letter greater than target | [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][Find Smallest Letter Greater Than Target]] |
-| Search insert position                   |                                          |
-
-The most impressive problems to me:
-- [[https://code.dennyzhang.com/find-right-interval][Find Right Interval]]
-- [[https://code.dennyzhang.com/search-for-a-range][Search for a Range]]
-- [[https://code.dennyzhang.com/sqrtx/][Sqrt(x)]]
+*Scenarios*
+| Name                                     | Example                                            |
+|------------------------------------------+----------------------------------------------------|
+| Find whether target in the range         | [[https://code.dennyzhang.com/guess-number-higher-or-lower][Leetcode: Guess Number Higher or Lower]]             |
+| Find the first target with duplicates    | [[https://code.dennyzhang.com/first-bad-version][Leetcode: First Bad Version]]                        |
+| Find the last target with duplicates     |                                                    |
+| Search insert position                   | [[https://code.dennyzhang.com/search-insert-position][Leetcode: Search Insert Position]]                   |
+| Find smallest letter greater than target | [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][Leetcode: Find Smallest Letter Greater Than Target]] |
+|                                          | [[https://code.dennyzhang.com/find-right-interval][Leecode: Find Right Interval]]                       |
+|                                          | [[https://code.dennyzhang.com/search-for-a-range][Leecode: Search for a Range]]                        |
+|                                          | [[https://code.dennyzhang.com/sqrtx/][Leecode: Sqrt(x)]]                                   |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
@@ -61,4 +61,4 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
-
+* TODO https://blog.csdn.net/roufoo/article/details/88773399              :noexport:

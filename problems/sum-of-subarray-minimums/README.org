@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subarray, inspiring, classic, redo
+:type:     subarray, inspiring, classic
 :END:
 ---------------------------------------------------------------------
 Sum of Subarray Minimums
@@ -11,10 +11,11 @@ Sum of Subarray Minimums
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-subarray-minimums"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/online-stock-span][Leetcode: Online Stock Span]]
 - [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Split Array into Consecutive Subsequences]]
 - [[https://code.dennyzhang.com/3sum-with-multiplicity][3Sum With Multiplicity]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-monotone][#monotone]]
 ---------------------------------------------------------------------
 Given an array of integers A, find the sum of min(B), where B ranges over every (contiguous) subarray of A.
 
@@ -43,39 +44,37 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/sum-of-subarray-minimums
-// Basic Ideas: stack
-// Element in the stack: (value, count, sum_so_far)
-// Complexity: Time O(n)?, Space O(n)
-import "math"
-type minNode struct {
-    val, cnt int
-    sum int
+// Basic Ideas: monotone stack
+//
+// Evaluate every subarray ends with A[i]
+// Get the min quickly.
+// Notice: we don't care about big values
+//
+//   3 1 2 4
+//       2
+//   l[i]: how many consecutive previous days whose value is bigger than this one
+// Complexity: Time O(n) Space O(n)
+type MyNode struct {
+    value int
+    count int
 }
 
 func sumSubarrayMins(A []int) int {
+    stack := []MyNode{}
     res := 0
+    prev := 0
     mod := int(math.Pow(10, 9)) + 7
-    stack := []minNode{}
-    for _, val := range A {
-        res += val
-        cnt := 1
-        for len(stack) != 0 {
-            node := stack[len(stack)-1]
-            if node.val < val {
-                break
-            }
-            res += val*node.cnt
-            cnt += node.cnt
+    for _, v := range A {
+        count := 1
+        // elements in stack keep getting bigger
+        for len(stack)>0 && stack[len(stack)-1].value >= v {
+            count += stack[len(stack)-1].count
+            prev -= stack[len(stack)-1].count * stack[len(stack)-1].value
             stack = stack[0:len(stack)-1]
         }
-        if len(stack) == 0 {
-            stack = append(stack, minNode{val, cnt, 0})
-        } else {
-            node := stack[len(stack)-1]
-            stack = append(stack, minNode{val, cnt, node.sum+node.val*node.cnt})
-            res += node.sum + node.val*node.cnt
-        }
-        res = res % mod
+        res = (res + v*count + prev) % mod
+        stack = append(stack, MyNode{v, count})
+        prev = (prev + v*count) % mod
     }
     return res
 }

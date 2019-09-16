@@ -21,10 +21,10 @@ Trade space for time.
 ---------------------------------------------------------------------
 
 *Basic Abstractions*
-| Name                             | Summary |
-|----------------------------------+---------|
-| *optimal substructure*           |         |
-| *DP* vs *recursive+memorization* |         |
+| Name                            | Summary |
+|---------------------------------+---------|
+| *optimal substructure*          |         |
+| *DP* vs *recursive+memoization* |         |
 
 *Scenarios*
 *Code Skeleton*

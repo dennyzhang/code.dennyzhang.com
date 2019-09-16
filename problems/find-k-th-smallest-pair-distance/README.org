@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     binarysearch, slidingwindow
 :END:
 ---------------------------------------------------------------------
 Find K-th Smallest Pair Distance
@@ -12,7 +12,7 @@ Find K-th Smallest Pair Distance
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 Given an integer array, return the k-th smallest distance among all the pairs. The distance of a pair (A, B) is defined as the absolute difference between A and B.
 
@@ -43,24 +43,45 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/find-k-th-smallest-pair-distance
+// Basic Ideas: binary search + sliding window
+//
+// binary search: what distance the k-th smallest would be
+//    range: [0, max-min]
+//    monotone: If d is bigger, count would be bigger.
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+func distanceCount(nums []int, d int) int {
+    // how many pairs with distance at most d
+    count := 0
+    // two pointer: l[i...j]
+    i := 0
+    for j:=0; j<len(nums); j++ {
+        for nums[j]-nums[i]>d {
+            i++
+        }
+        count += j-i
+    }
+    return count
+}
 
+func smallestDistancePair(nums []int, k int) int {
+    sort.Ints(nums)
+    left, right := 0, nums[len(nums)-1]-nums[0]
+    // binary search: find the first true
+    for left<right {
+        mid := (right-left)/2+left
+        if distanceCount(nums, mid) >= k {
+            // left half
+            right = mid
+        } else {
+            left = mid+1
+        }
+    }
+    return left
+}
 #+END_SRC
 
 #+BEGIN_HTML

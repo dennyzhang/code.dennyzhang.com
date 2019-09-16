@@ -12,10 +12,11 @@ Review Hashmap code problems
 #+END_HTML
 
 *Questions*
-| Name                                         | Example                           |
-|----------------------------------------------+-----------------------------------|
-| Use a local hashmap, instead of a global one | [[https://code.dennyzhang.com/increasing-subsequences][Leetcode: Increasing Subsequences]] |
-| One hashmap vs two hashmap                   | [[https://code.dennyzhang.com/before-and-after-puzzle][Leetcode: Before and After Puzzle]] |
+| Name                                         | Example                                    |
+|----------------------------------------------+--------------------------------------------|
+| Use a local hashmap, instead of a global one | [[https://code.dennyzhang.com/increasing-subsequences][Leetcode: Increasing Subsequences]]          |
+| One hashmap vs two hashmap                   | [[https://code.dennyzhang.com/before-and-after-puzzle][Leetcode: Before and After Puzzle]]          |
+| Hashmap may make code more complicated       | [[https://code.dennyzhang.com/find-k-th-smallest-pair-distance][Leetcode: Find K-th Smallest Pair Distance]] |
 
 - Use a tuple as key
 [[https://code.dennyzhang.com/group-shifted-strings][Group Shifted Strings]]

@@ -1,0 +1,101 @@
+* Leetcode: Longest Well-Performing Interval                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap, greedy, inspiring
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-well-performing-interval"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]]
+---------------------------------------------------------------------
+We are given hours, a list of the number of hours worked per day for a given employee.
+
+A day is considered to be a tiring day if and only if the number of hours worked is (strictly) greater than 8.
+
+A well-performing interval is an interval of days for which the number of tiring days is strictly larger than the number of non-tiring days.
+
+Return the length of the longest well-performing interval.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: hours = [9,9,6,0,6,6,9]
+Output: 3
+Explanation: The longest well-performing interval is [9,9,6].
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= hours.length <= 10000
+- 0 <= hours[i] <= 16
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-well-performing-interval][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/longest-well-performing-interval/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/longest-well-performing-interval
+// Basic Ideas: greedy + hashmap + presum
+//
+//  We don't care specific value, just whether it's bigger than 8
+//
+//    9, 9,  6,  0,  6, 6,  9
+//    1, 1, -1, -1, -1, -1, 1
+// 0, 1, 2,  1,  0, -1, -2, -1
+//
+// Get presum
+// Then look backward, and find the farest value which is smaller than current one
+//  For any v, find the first v-1, if it exists
+//    Note: no need to check v-2
+//  The value changes one by one, starting from 0
+//  If both v-1 and v-2 exists, v-2 will come after v-1
+//  So v-2 won't be a better candidate
+//
+// Complexity: Time O(n), Space O(n)
+
+func longestWPI(hours []int) int {
+    m := map[int]int{}
+    // Add a dummy node as initial state
+    m[0] = -1
+    presum := 0
+    res := 0
+    for i, v := range hours {
+        if v > 8 {
+            presum++
+        } else {
+            presum--
+        }
+        if presum > 0 {
+            res = i+1
+        } else {
+            // Assume candidate ends at hours[i], now find the starting point
+            if v, ok := m[presum-1]; ok {
+                if i-v > res {
+                    res = i-v
+                }
+            }
+            if _, ok := m[presum]; !ok {
+                m[presum] = i
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

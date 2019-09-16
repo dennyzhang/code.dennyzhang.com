@@ -1,0 +1,124 @@
+* Leetcode: Check If Word Is Valid After Substitutions          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     stack
+:END:
+---------------------------------------------------------------------
+Check If Word Is Valid After Substitutions
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-word-is-valid-after-substitutions"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+---------------------------------------------------------------------
+We are given that the string "abc" is valid.
+
+From any valid string V, we may split V into two pieces X and Y such that X + Y (X concatenated with Y) is equal to V.  (X or Y may be empty.)  Then, X + "abc" + Y is also valid.
+
+If for example S = "abc", then examples of valid strings are: "abc", "aabcbc", "abcabc", "abcabcababcc".  Examples of invalid strings are: "abccba", "ab", "cababc", "bac".
+
+Return true if and only if the given string S is valid.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "aabcbc"
+Output: true
+Explanation: 
+We start with the valid string "abc".
+Then we can insert another "abc" between "a" and "bc", resulting in "a" + "abc" + "bc" which is "aabcbc".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "abcabcababcc"
+Output: true
+Explanation: 
+"abcabcabc" is valid after consecutive insertings of "abc".
+Then we can insert "abc" before the last letter, resulting in "abcabcab" + "abc" + "c" which is "abcabcababcc".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "abccba"
+Output: false
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: "cababc"
+Output: false
+#+END_EXAMPLE
+ 
+Note:
+
+- 1 <= S.length <= 20000
+- S[i] is 'a', 'b', or 'c'
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-word-is-valid-after-substitutions][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/check-if-word-is-valid-after-substitutions
+// Basic Ideas: stack
+//
+// When find c, try to pop 2 and check
+//
+// Complexity: Time O(n), Space O(n)
+func isValid(S string) bool {
+    stack := []byte{}
+    for i, _ := range S {
+        ch := S[i]
+        if ch == 'c' {
+            // try to pop
+            if len(stack)>=2 && stack[len(stack)-1] == 'b' && stack[len(stack)-2] == 'a' {
+                    stack = stack[0:len(stack)-1]
+                    stack = stack[0:len(stack)-1]
+            }
+        } else {
+            stack = append(stack, ch)
+        }
+    }
+    return len(stack) == 0
+}
+#+END_SRC
+
+- Solution: stack with fast fail
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/check-if-word-is-valid-after-substitutions
+// Basic Ideas: stack
+//
+// When find c, try to pop 2 and check
+//
+// Complexity: Time O(n), Space O(n)
+func isValid(S string) bool {
+    stack := []byte{}
+    for _, ch := range S {
+        if ch == 'c' {
+            // try to pop
+            if len(stack) < 2 || stack[len(stack)-1] != 'b' || stack[len(stack)-2] != 'a' {
+                return false
+            }
+            stack = stack[0:len(stack)-2]
+        } else {
+            stack = append(stack, byte(ch))
+        }
+    }
+    return len(stack) == 0
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

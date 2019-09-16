@@ -1,0 +1,103 @@
+* Leetcode: Maximum Nesting Depth of Two Valid Parentheses Strings :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     stack
+:END:
+---------------------------------------------------------------------
+Maximum Nesting Depth of Two Valid Parentheses Strings
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-nesting-depth-of-two-valid-parentheses-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+---------------------------------------------------------------------
+A string is a valid parentheses string (denoted VPS) if and only if it consists of "(" and ")" characters only, and:
+
+- It is the empty string, or
+- It can be written as AB (A concatenated with B), where A and B are VPS's, or
+- It can be written as (A), where A is a VPS.
+
+We can similarly define the nesting depth depth(S) of any VPS S as follows:
+
+- depth("") = 0
+- depth(A + B) = max(depth(A), depth(B)), where A and B are VPS's
+- depth("(" + A + ")") = 1 + depth(A), where A is a VPS.
+
+For example,  "", "()()", and "()(()())" are VPS's (with nesting depths 0, 1, and 2), and ")(" and "(()" are not VPS's.
+
+Given a VPS seq, split it into two disjoint subsequences A and B, such that A and B are VPS's (and A.length + B.length = seq.length).
+
+Now choose any such A and B such that max(depth(A), depth(B)) is the minimum possible value.
+
+Return an answer array (of length seq.length) that encodes such a choice of A and B:  answer[i] = 0 if seq[i] is part of A, else answer[i] = 1.  Note that even though multiple answers may exist, you may return any of them.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: seq = "(()())"
+Output: [0,1,1,1,1,0]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: seq = "()(())()"
+Output: [0,0,0,1,1,0,1,1]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= seq.size <= 10000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-nesting-depth-of-two-valid-parentheses-strings][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/maximum-nesting-depth-of-two-valid-parentheses-strings
+// Basic Ideas: stack
+//
+//  For any nested parentheses, mark it alternatively
+//
+// Complexity: Time O(n) Space O(n)
+type MyNode struct {
+    index int
+    color int
+}
+
+func maxDepthAfterSplit(seq string) []int {
+    res := make([]int, len(seq))
+    stack := []MyNode{}
+    for i, _ := range seq {
+        ch := seq[i]
+        if ch != ')' {
+            color := 0
+            if len(stack) != 0 {
+                // use different color
+                color = 1-stack[len(stack)-1].color   
+            }
+            stack = append(stack, MyNode{index:i, color:color}) 
+            res[i] = color
+        } else {
+            // assume seq is valid
+            node := stack[len(stack)-1]
+            res[i] = node.color
+            stack = stack[0:len(stack)-1]
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

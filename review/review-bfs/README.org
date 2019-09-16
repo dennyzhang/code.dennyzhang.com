@@ -59,7 +59,7 @@ func maxLevelSum(root *TreeNode) int {
 - BFS with heap: [[https://code.dennyzhang.com/movie-network][Movie Network]]
 - For seen set use array, instead of a set: [[https://code.dennyzhang.com/is-graph-bipartite][Is Graph Bipartite]]
 - Scan from target to original: [[https://code.dennyzhang.com/reach-a-number][Reach a Number]]
-- BFS with memorization: [[https://code.dennyzhang.com/target-sum][Target Sum]]
+- BFS with memoization: [[https://code.dennyzhang.com/target-sum][Target Sum]]
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 

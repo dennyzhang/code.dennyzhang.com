@@ -1,0 +1,120 @@
+* Leetcode: Campus Bikes                                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bucketsort
+:END:
+---------------------------------------------------------------------
+Campus Bikes
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/campus-bikes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-bucketsort][#bucketsort]]
+---------------------------------------------------------------------
+On a campus represented as a 2D grid, there are N workers and M bikes, with N <= M. Each worker and bike is a 2D coordinate on this grid.
+
+Our goal is to assign a bike to each worker. Among the available bikes and workers, we choose the (worker, bike) pair with the shortest Manhattan distance between each other, and assign the bike to that worker. (If there are multiple (worker, bike) pairs with the same shortest Manhattan distance, we choose the pair with the smallest worker index; if there are multiple ways to do that, we choose the pair with the smallest bike index). We repeat this process until there are no available workers.
+
+The Manhattan distance between two points p1 and p2 is Manhattan(p1, p2) = |p1.x - p2.x| + |p1.y - p2.y|.
+
+Return a vector ans of length N, where ans[i] is the index (0-indexed) of the bike that the i-th worker is assigned to.
+ 
+Example 1:
+[[image-blog:Leetcode: Campus Bikes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes/campus-bike1.png]]
+#+BEGIN_EXAMPLE
+Input: workers = [[0,0],[2,1]], bikes = [[1,2],[3,3]]
+Output: [1,0]
+Explanation: 
+Worker 1 grabs Bike 0 as they are closest (without ties), and Worker 0 is assigned Bike 1. So the output is [1, 0].
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Leetcode: Campus Bikes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes/campus-bike2.png]]
+#+BEGIN_EXAMPLE
+Input: workers = [[0,0],[1,1],[2,0]], bikes = [[1,0],[2,2],[2,1]]
+Output: [0,2,1]
+Explanation: 
+Worker 0 grabs Bike 0 at first. Worker 1 and Worker 2 share the same distance to Bike 2, thus Worker 1 is assigned to Bike 2, and Worker 2 will take Bike 1. So the output is [0,2,1].
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= workers[i][j], bikes[i][j] < 1000
+- All worker and bike locations are distinct.
+- 1 <= workers.length <= bikes.length <= 1000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/campus-bikes][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/campus-bikes/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// Blog link: https://code.dennyzhang.com/campus-bikes
+// Basic Ideas: bucket sort
+//
+//  Maximum distance is 2000
+//  Each distance would can be treated as a bucket
+//  Evaluate from smallest bucket(0) to the biggest bucket(2000), until all workers get bikes.
+//
+//  Notice: for each distance, multiple assignments may happen
+//
+//  Use hashmap to track whether a specific bike get assigned, or a specific worker already gets a bike.
+// Complexity: Time O(n*m) Space O(n*m)
+import "sort"
+func abs(x int) int {
+    if x>=0 {
+        return x
+    } else {
+        return -x
+    }
+}
+
+func assignBikes(workers [][]int, bikes [][]int) []int {
+    // l[i]:  [[windex, bindex], []]
+    l := make([][][]int, 20001)
+    for i, w := range workers {
+        for j, b := range bikes {
+            d := abs(w[0]-b[0]) + abs(w[1]-b[1])
+            l[d] = append(l[d], []int{i, j})
+        }
+    }
+    res := make([]int, len(workers))
+    wassigned := make([]bool, len(workers))
+    btaken := make([]bool, len(bikes))
+    count := len(workers)
+    for d:=0; d<len(l) && count != 0; d++ {
+        // for each distance, multiple assignments may happen
+        sort.Slice(l[d], func(i, j int) bool {
+            if l[d][i][0] != l[d][j][0] {
+                // worker with smaller index
+                return l[d][i][0] < l[d][j][0]
+            } else {
+                return l[d][i][1] < l[d][j][1]
+            }
+        })
+        for _, v := range l[d] {
+            windex, bindex := v[0], v[1]
+            if !wassigned[windex] && !btaken[bindex] {
+                res[windex] = bindex
+                count--
+                wassigned[windex], btaken[bindex] = true, true
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
