@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/bomb-enemy
+## https://code.dennyzhang.com/bomb-enemy
 ## Basic Ideas: dynamic programming
 ##
 ## dp[i][j] = [x1, y1, x2, y2]

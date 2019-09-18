@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/fermat-point-of-graphs
+// https://code.dennyzhang.com/fermat-point-of-graphs
 import "strconv"
 var edges map[int][]int
 var edge_distances map[string]int

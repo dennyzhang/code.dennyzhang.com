@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/palindrome-partitioning-ii
+## https://code.dennyzhang.com/palindrome-partitioning-ii
 #+END_SRC
 
 #+BEGIN_HTML

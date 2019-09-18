@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/populating-next-right-pointers-in-each-node
+## https://code.dennyzhang.com/populating-next-right-pointers-in-each-node
 ## Basic Ideas: Process nodes: from top to down, left to right
 ##              How to process:
 ##                 p.left.next = p.right

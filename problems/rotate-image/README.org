@@ -69,7 +69,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/rotate-image
+## https://code.dennyzhang.com/rotate-image
 ## Basic Ideas: Rotate circle by circle. From outer to inner layer.
 ##             Use an array of n to save data temporarily
 ## Complexity: Time O(n^2), Space O(n)

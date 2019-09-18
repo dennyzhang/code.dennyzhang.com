@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/gas-station
+## https://code.dennyzhang.com/gas-station
 ## Basic Ideas: One pass
 ##    If gas[i] - cost[i] < 0, this node can't be the target
 ##

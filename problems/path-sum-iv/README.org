@@ -13,7 +13,7 @@ Path Sum IV
 Similar Problems:
 - [[https://code.dennyzhang.com/path-sum-iii][Path Sum III]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 
 If the depth of a tree is smaller than 5, then this tree can be represented by a list of three-digits integers.
@@ -60,7 +60,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: bfs
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/path-sum-iv
+// https://code.dennyzhang.com/path-sum-iv
 // Baisc Ideas: BFS
 //
 // map: index -> value

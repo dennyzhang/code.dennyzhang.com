@@ -44,7 +44,7 @@ Credits To: [[https://leetcode.com/problems/reconstruct-original-digits-from-eng
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/reconstruct-original-digits-from-english
+## https://code.dennyzhang.com/reconstruct-original-digits-from-english
 ## Basic Ideas: Nature of english numbers.
 ##         'z': ['0']
 ##         'u': ['4'],

@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/friends-of-appropriate-ages
+// https://code.dennyzhang.com/friends-of-appropriate-ages
 // Basic Ideas: hashmap
 //    We can ignore Rule 3, since rule 2 will cover it.
 //

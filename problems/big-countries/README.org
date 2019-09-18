@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/big-countries
+## https://code.dennyzhang.com/big-countries
 select name, population, area
 from World
 where area > 3000000 or population > 25000000;

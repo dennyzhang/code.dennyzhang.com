@@ -66,7 +66,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/article-views-i
+## https://code.dennyzhang.com/article-views-i
 select distinct author_id as id
 from Views
 where author_id = viewer_id

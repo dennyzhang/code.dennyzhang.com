@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/consecutive-available-seats
+## https://code.dennyzhang.com/consecutive-available-seats
 select distinct t1.seat_id
 from cinema as t1 join cinema as t2
 on abs(t1.seat_id-t2.seat_id)=1

@@ -12,7 +12,7 @@ Path Sum II
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]]
 ---------------------------------------------------------------------
 Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
 #+BEGIN_EXAMPLE
@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/path-sum-ii
+## https://code.dennyzhang.com/path-sum-ii
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

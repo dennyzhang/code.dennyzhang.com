@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/battleships-in-a-board
+## https://code.dennyzhang.com/battleships-in-a-board
 ## Basic Ideas
 ##   Check from left to right, top to down
 ##   If current digit is '1' and above digit is not '1', we keep moving left

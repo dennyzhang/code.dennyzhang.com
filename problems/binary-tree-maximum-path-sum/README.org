@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     binarytree, pathsum
 :END:
 ---------------------------------------------------------------------
 Binary Tree Maximum Path Sum
@@ -12,7 +12,7 @@ Binary Tree Maximum Path Sum
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]]
 ---------------------------------------------------------------------
 Given a binary tree, find the maximum path sum.
 
@@ -35,7 +35,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/binary-tree-maximum-path-sum
+// https://code.dennyzhang.com/binary-tree-maximum-path-sum
 // Basic Ideas: post-order + dynamic programming
 //   helper function: dfs, return the maximum which ends with current node
 // Complexity: Time O(n), Space O(1)

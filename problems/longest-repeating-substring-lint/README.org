@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-repeating-substring-lint
+## https://code.dennyzhang.com/longest-repeating-substring-lint
 class Solution:
     """
     @param str: The input string

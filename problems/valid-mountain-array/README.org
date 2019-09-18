@@ -54,7 +54,7 @@ Credits To: [[https://leetcode.com/problems/valid-mountain-array/description/][l
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/valid-mountain-array
+// https://code.dennyzhang.com/valid-mountain-array
 // Basic Ideas: simple scan
 // Complexity: Time O(n), Space O(1)
 func validMountainArray(A []int) bool {

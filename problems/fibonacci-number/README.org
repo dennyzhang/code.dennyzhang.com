@@ -52,7 +52,7 @@ Credits To: [[https://leetcode.com/problems/fibonacci-number/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/fibonacci-number
+// https://code.dennyzhang.com/fibonacci-number
 // Basic Ideas:
 // Complexity: Time O(n), Space O(1)
 func fib(N int) int {

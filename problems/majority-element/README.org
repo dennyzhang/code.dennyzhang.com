@@ -26,7 +26,7 @@ Credits To: [[https://leetcode.com/problems/majority-element/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/majority-element
+// https://code.dennyzhang.com/majority-element
 // Basic Ideas: morevoting
 //
 // For two different values, collision these two
@@ -50,7 +50,7 @@ func majorityElement(nums []int) int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/majority-element
+## https://code.dennyzhang.com/majority-element
 class Solution(object):
     def majorityElement1(self, nums):
         """

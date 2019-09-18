@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/sort-an-array
+// https://code.dennyzhang.com/sort-an-array
 // Basic Ideas: quicksort
 // Complexity: Time O(1), Space (1)
 import "sort"

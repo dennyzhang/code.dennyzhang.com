@@ -1,0 +1,103 @@
+* Leetcode: Shortest Path in Binary Matrix                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bfs
+:END:
+---------------------------------------------------------------------
+Shortest Path in Binary Matrix
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-in-binary-matrix"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]]
+---------------------------------------------------------------------
+In an N by N square grid, each cell is either empty (0) or blocked (1).
+
+A clear path from top-left to bottom-right has length k if and only if it is composed of cells C_1, C_2, ..., C_k such that:
+
+Adjacent cells C_i and C_{i+1} are connected 8-directionally (ie., they are different and share an edge or corner)
+C_1 is at location (0, 0) (ie. has value grid[0][0])
+C_k is at location (N-1, N-1) (ie. has value grid[N-1][N-1])
+If C_i is located at (r, c), then grid[r][c] is empty (ie. grid[r][c] == 0).
+Return the length of the shortest such clear path from top-left to bottom-right.  If such a path does not exist, return -1.
+
+Example 1:
+[[image-blog:Leetcode: Shortest Path in Binary Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/shortest-path-in-binary-matrix/1.png]]
+#+BEGIN_EXAMPLE
+Input: [[0,1],[1,0]]
+Output: 2
+#+END_EXAMPLE
+[[image-blog:Leetcode: Shortest Path in Binary Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/shortest-path-in-binary-matrix/2.png]]
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [[0,0,0],[1,1,0],[1,1,0]]
+Output: 4
+#+END_EXAMPLE
+
+Note:
+
+1. 1 <= grid.length == grid[0].length <= 100
+- grid[r][c] is 0 or 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-in-binary-matrix][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/shortest-path-in-binary-matrix/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/shortest-path-in-binary-matrix
+// Basic Ideas: bfs
+//
+// shortest path for two points
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func shortestPathBinaryMatrix(grid [][]int) int {
+    rowCnt, colCnt := len(grid), len(grid[0])
+    if grid[0][0] == 1 || grid[rowCnt-1][colCnt-1] == 1 {
+        return -1
+    }
+    if rowCnt-1 == 0 && colCnt-1 == 0 {
+        return 1
+    }
+    queue := [][]int{[]int{0, 0}}
+    grid[0][0] = 2
+    level := 1
+    for len(queue) > 0 {
+        l := [][]int{}
+        for _, node := range queue {
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, 
+                                           []int{0, 1}, []int{0, -1}, 
+                                           []int{-1, -1}, []int{1, 1}, 
+                                           []int{1, -1}, []int{-1, 1}} {
+                i2, j2 := node[0]+offset[0], node[1]+offset[1]
+                if i2>=0 && i2<rowCnt && j2>=0 && j2<colCnt && grid[i2][j2] == 0 {
+                    if i2 == rowCnt-1 && j2 == colCnt-1 {
+                        level++
+                        return level
+                    }
+                    l = append(l, []int{i2, j2})
+                    grid[i2][j2] = 2
+                }
+            }
+        }
+        queue = l
+        level++
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

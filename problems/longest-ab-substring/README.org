@@ -42,7 +42,7 @@ Credits To: [[https://www.lintcode.com/problem/longest-ab-substring/description]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-ab-substring
+// https://code.dennyzhang.com/longest-ab-substring
 // Basic Ideas:
 // A: +1, B -1
 //   S: A B A A B B A

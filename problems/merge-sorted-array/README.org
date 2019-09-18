@@ -26,7 +26,7 @@ Credits To: [[https://leetcode.com/problems/merge-sorted-array/description/][lee
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/merge-sorted-array
+// https://code.dennyzhang.com/merge-sorted-array
 // Basic Ideas: array, 3 pointers, from right to left
 // Complexity: Time O(n+m), Space O(1)
 func merge(nums1 []int, m int, nums2 []int, n int)  {

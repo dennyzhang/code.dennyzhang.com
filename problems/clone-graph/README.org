@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/clone-graph
+## https://code.dennyzhang.com/clone-graph
 ## Basic Ideas: Use a hashmap
 ##              For each new node, create one.
 ##              Scan its neighbors, if found new nodes. Create them. And update mapping

@@ -48,7 +48,7 @@ Credits To: [[https://leetcode.com/problems/partition-equal-subset-sum/descripti
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
+// https://code.dennyzhang.com/partition-equal-subset-sum
 // Basic Ideas: hashmap
 //  If we can find some combination with the sum as half of the sum, return true
 // Complexity: Time O(n^2), Space O(n)
@@ -86,7 +86,7 @@ func canPartition(nums []int) bool {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/partition-equal-subset-sum
+## https://code.dennyzhang.com/partition-equal-subset-sum
 ## Basic Ideas: hashmap
 ##
 ## Complexity: Time O(n^2), Space O(n)

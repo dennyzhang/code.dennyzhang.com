@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/product-price-at-a-given-date
+# https://code.dennyzhang.com/product-price-at-a-given-date
 select t1.product_id as product_id, if(isnull(t2.price), 10, t2.price) as price
 from
   (select distinct product_id

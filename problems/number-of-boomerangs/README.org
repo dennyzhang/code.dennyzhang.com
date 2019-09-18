@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
 
 - Solution: hashmap with hashmap as value
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/number-of-boomerangs
+// https://code.dennyzhang.com/number-of-boomerangs
 // Basic Ideas: hashmap
 //
 // m[0] = [1:[1], 4:[2]]
@@ -74,7 +74,7 @@ func numberOfBoomerangs(points [][]int) int {
 
 - Solution: hashmap with int as value
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/number-of-boomerangs
+// https://code.dennyzhang.com/number-of-boomerangs
 // Basic Ideas: hashmap
 //    hashmap with value as int
 // m = [1:1, 4:1]

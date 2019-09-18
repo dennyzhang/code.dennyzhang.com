@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/subarray-product-less-than-k
+## https://code.dennyzhang.com/subarray-product-less-than-k
 ## Basic Ideas: two pointers
 ##     All nubmers are positive integers. 
 ##     So if we enlarge the window, the suarray product will increase.

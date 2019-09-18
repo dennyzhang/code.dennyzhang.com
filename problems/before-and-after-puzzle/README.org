@@ -68,7 +68,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/before-and-after-puzzle
+// https://code.dennyzhang.com/before-and-after-puzzle
 // Basic Ideas: two hashmap
 //
 // Notice: watch out "a b a"
@@ -113,7 +113,7 @@ func beforeAndAfterPuzzles(phrases []string) []string {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/before-and-after-puzzle
+// https://code.dennyzhang.com/before-and-after-puzzle
 // Basic Ideas: one hashmap
 //
 // Notice: watch out "a b a"

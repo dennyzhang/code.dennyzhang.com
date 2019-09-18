@@ -68,7 +68,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/game-play-analysis-ii
+# https://code.dennyzhang.com/game-play-analysis-ii
 select distinct player_id, device_id
 from Activity
 where (player_id, event_date) in (

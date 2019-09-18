@@ -23,7 +23,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-the-duplicate-number
+## https://code.dennyzhang.com/find-the-duplicate-number
 ## Basic Ideas: Binary search
 ##              The target is in [1, n]
 ##              Compare all elements with the value of n/2

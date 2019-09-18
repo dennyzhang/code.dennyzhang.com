@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximal-square
+// https://code.dennyzhang.com/maximal-square
 // Basic Ideas: dynamic programming
 // dp[i][j]: length of the rectangle
 //    dp[i][j] = min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j]) + 1

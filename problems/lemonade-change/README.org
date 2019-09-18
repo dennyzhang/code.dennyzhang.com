@@ -72,7 +72,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/lemonade-change
+// https://code.dennyzhang.com/lemonade-change
 // Basic Ideas:
 //   For $5, no need for change. 
 //   For $20, we can't use it for the following customer

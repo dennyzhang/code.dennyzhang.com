@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/custom-sort-string
+## https://code.dennyzhang.com/custom-sort-string
 ## Basic Ideas: hashmap
 ##
 ## Complexity: Time O(n), Space O(1)

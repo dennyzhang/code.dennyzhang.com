@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/number-of-matching-subsequences
+## https://code.dennyzhang.com/number-of-matching-subsequences
 ## Basic Ideas:
 ## Complexity: Time O(n*m), Space O(1)
 class Solution:

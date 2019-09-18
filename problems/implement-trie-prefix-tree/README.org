@@ -27,7 +27,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/implement-trie-prefix-tree
+## https://code.dennyzhang.com/implement-trie-prefix-tree
 ## Basic Ideas: TrieNode: is_word(bool), children(dict)
 ##           For the root node, we don't store any characters. Only in children
 ##           Here we use defaultdict, thus we can avoid has_key check  

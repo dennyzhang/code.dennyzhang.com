@@ -85,7 +85,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/product-sales-analysis-iii
+# https://code.dennyzhang.com/product-sales-analysis-iii
 select product_id,
 min(year) as first_year,
 quantity,

@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: twopointer
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/delete-characters
+// https://code.dennyzhang.com/delete-characters
 // Basic Ideas: Two pointers
 // Complexity: Time O(n+m), Space O(1)
 /**

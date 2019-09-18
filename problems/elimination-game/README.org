@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/elimination-game
+// https://code.dennyzhang.com/elimination-game
 // Basic Ideas:
 //  We get the result, when we have ony one left
 //  Each round we will elimate half of the items

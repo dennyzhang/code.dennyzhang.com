@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sentence-similarity
+## https://code.dennyzhang.com/sentence-similarity
 ## Basic Ideas: hashmap
 ##
 ## Assumption: paris are valid

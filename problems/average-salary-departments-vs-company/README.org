@@ -60,7 +60,7 @@ Credits To: [[https://leetcode.com/problems/average-salary-departments-vs-compan
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/average-salary-departments-vs-company
+## https://code.dennyzhang.com/average-salary-departments-vs-company
 select t1.pay_month, t1.department_id,
     (case when t1.amount = t2.amount then 'same'
           when t1.amount > t2.amount then 'higher'

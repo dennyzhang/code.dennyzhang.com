@@ -53,7 +53,7 @@ Leave me comments, if you have better ways to solve.
 
 - Solution: Special treatment for last group
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/positions-of-large-groups
+// https://code.dennyzhang.com/positions-of-large-groups
 // Basic Ideas: two pointers
 //   groups: [start, end]
 // Complexity: Time O(n), Space O(n)
@@ -81,7 +81,7 @@ func largeGroupPositions(S string) [][]int {
 
 - Solution: padding for last group
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/positions-of-large-groups
+// https://code.dennyzhang.com/positions-of-large-groups
 // Basic Ideas: two pointers
 //   groups: [start, end]
 // Complexity: Time O(n), Space O(n)

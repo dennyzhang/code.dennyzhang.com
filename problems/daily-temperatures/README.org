@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/daily-temperatures
+## https://code.dennyzhang.com/daily-temperatures
 ## Basic Ideas: Monotonous stack can help us find first largest element in O(n) time complexity.
 ##
 ##              Descending stack: find the next bigger nubmer for each element

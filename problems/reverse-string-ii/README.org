@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/reverse-string-ii
+## https://code.dennyzhang.com/reverse-string-ii
 ## Basic Ideas:
 ## Complexity: Time O(n), Space O(1)
 ## Assumptions:

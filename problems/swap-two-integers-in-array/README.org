@@ -25,7 +25,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/swap-two-integers-in-array
+// https://code.dennyzhang.com/swap-two-integers-in-array
 // Basic Ideas:
 // Complexity: Time O(1), Space O(1)
 /**

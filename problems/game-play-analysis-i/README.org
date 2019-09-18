@@ -68,7 +68,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/game-play-analysis-i
+# https://code.dennyzhang.com/game-play-analysis-i
 select player_id, min(event_date) as first_login
 from Activity
 group by player_id

@@ -32,7 +32,7 @@ Credits To: [[https://leetcode.com/problems/longest-substring-without-repeating-
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters
+// https://code.dennyzhang.com/longest-substring-without-repeating-characters
 // Basic Ideas: Sliding window
 //
 // Complexity: Time O(n), Space O(1)
@@ -57,7 +57,7 @@ func lengthOfLongestSubstring(s string) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters
+// https://code.dennyzhang.com/longest-substring-without-repeating-characters
 // Basic Ideas: Sliding window
 //
 // Complexity: Time O(n), Space O(n)
@@ -82,7 +82,7 @@ func lengthOfLongestSubstring(s string) int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-substring-without-repeating-characters
+## https://code.dennyzhang.com/longest-substring-without-repeating-characters
 ## Basic Ideas: two pointer: slow and fast
 ##           If duplicate, the fast pointer don't need to turn back.
 ## Complexity Time O(n), Space O(1)

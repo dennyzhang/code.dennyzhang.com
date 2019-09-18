@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     pathsum, binarytree
+:type:     pathsum, binarytree, dfs, bfs
 :END:
 ---------------------------------------------------------------------
 Path Sum
@@ -12,7 +12,7 @@ Path Sum
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]]
+- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 #+BEGIN_EXAMPLE
@@ -34,9 +34,36 @@ Credits To: [[https://leetcode.com/problems/path-sum/description/][leetcode.com]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: DFS
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/path-sum
+// Basic Ideas: dfs recursive
+// Complexity: Time O(n) Space O(log(n))
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
 
+func hasPathSum(root *TreeNode, sum int) bool {
+    if root == nil {
+        return false
+    }
+    if root.Left == nil && root.Right == nil {
+        return root.Val == sum
+    }
+    return hasPathSum(root.Left, sum-root.Val) || hasPathSum(root.Right, sum-root.Val)
+}
+#+END_SRC
+
+- Solution: BFS
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/path-sum
+## https://code.dennyzhang.com/path-sum
+## Basic Ideas: bfs recursive
+## Complexity: Time O(n) Space O(log(n))
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -60,32 +87,6 @@ class Solution(object):
                 queue.append((element.left, current_sum + element.val))
             if element.right:
                 queue.append((element.right, current_sum + element.val))
-        return False
-        
-    def hasPathSum_v1(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: bool
-        """
-        ## Idea: DFS recursive, BFS
-        ## Complexity: Time O(n), Space O(log(k))
-        return self._hasPathSum(root, sum, 0)
-
-    def _hasPathSum(self, root, sum, current_sum):
-        if root is None:
-            return False
-        if root.left is None and root.right is None:
-            return root.val + current_sum == sum
-
-        if root.left:
-            if self._hasPathSum(root.left, sum, current_sum + root.val):
-                return True
-
-        if root.right:
-            if self._hasPathSum(root.right, sum, current_sum + root.val):
-                return True
-
         return False
 #+END_SRC
 

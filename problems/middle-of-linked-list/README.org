@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/middle-of-linked-list
+## https://code.dennyzhang.com/middle-of-linked-list
 ## Basic Ideas: fast/slow pointers
 ## Complexity: Time O(n), Space O(1)
 """

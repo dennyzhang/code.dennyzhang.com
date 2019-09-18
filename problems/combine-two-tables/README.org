@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/combine-two-tables
+## https://code.dennyzhang.com/combine-two-tables
 select Person.FirstName, Person.LastName, Address.City, Address.State
 from Person left join Address on Person.PersonId = Address.PersonId;
 #+END_SRC

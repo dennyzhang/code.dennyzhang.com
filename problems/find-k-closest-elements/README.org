@@ -42,13 +42,76 @@ Leave me comments, if you have better ways to solve.
 - Solution: heap
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-k-closest-elements
+// https://code.dennyzhang.com/find-k-closest-elements
+// Basic Idea: heap
+//
+// top K elements closet to x in heap
+//
+// Complexity: Time O(n*log(k)), Space O(k)
+// max heap
+import ("container/heap"
+        "sort")
+
+type MyNode struct {
+    dis int
+    v int
+}
+
+type MyHeap []MyNode
+
+func (h MyHeap) Len() int {
+    return len(h)
+}
+
+func (h MyHeap) Less(i, j int) bool {
+    if h[i].dis==h[j].dis {
+        return h[i].v>h[j].v
+    } else {
+        return h[i].dis>h[j].dis
+    }
+}
+
+func (h MyHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *MyHeap) Push(x interface{}) {
+    *h = append(*h, x.(MyNode))
+}
+
+func (h *MyHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func findClosestElements(arr []int, k int, x int) []int {
+    h := &MyHeap{}
+    heap.Init(h)
+    for _, v := range arr {
+        dis := x-v
+        if dis<0 {
+            dis = -dis
+        }
+        heap.Push(h, MyNode{dis:dis, v:v})
+        if h.Len() > k {
+            heap.Pop(h)
+        }
+    }
+    res := make([]int, k)
+    for i:=0; i<k; i++ {
+        res[i] = heap.Pop(h).(MyNode).v
+    }
+    // Need to sort it
+    sort.Ints(res)
+    return res
+}
 #+END_SRC
 
 - Solution: binary search + two pointer
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-k-closest-elements
+// https://code.dennyzhang.com/find-k-closest-elements
 // Basic Idea: binary search + two pointer
 //
 // Leetcode: Search Insert Position. To get the center location

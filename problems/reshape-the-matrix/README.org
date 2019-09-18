@@ -61,7 +61,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/reshape-the-matrix
+## https://code.dennyzhang.com/reshape-the-matrix
 ## Baisc Ideas:  If r*c != count of original matrix, we can't reshape it.
 ##               Trasverse the original matrix, and use index as a counter.
 ##               (i2, j2) is the position of the new matrix

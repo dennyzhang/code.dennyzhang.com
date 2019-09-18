@@ -30,7 +30,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/remove-duplicates-from-sorted-array-ii
+## https://code.dennyzhang.com/remove-duplicates-from-sorted-array-ii
 ## Basic Ideas: compare v with the last 2nd element in the result
 ##              sliding window
 ##       1 1 1 2 2 3
@@ -48,7 +48,7 @@ class Solution(object):
                 i += 1
         return i
 
-    ## Blog link: https://code.dennyzhang.com/remove-duplicates-from-sorted-array-ii
+    ## https://code.dennyzhang.com/remove-duplicates-from-sorted-array-ii
 ## Basic Ideas: Track previous element
     ##       duplicate_count: how many duplicate current element has appeared
     ##       previous_element

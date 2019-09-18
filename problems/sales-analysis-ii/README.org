@@ -85,7 +85,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/sales-analysis-ii
+# https://code.dennyzhang.com/sales-analysis-ii
 select distinct buyer_id
 from Sales inner join Product
 where Sales.product_id = Product.product_id

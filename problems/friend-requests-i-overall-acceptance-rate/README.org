@@ -66,7 +66,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate
+## https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate
 select ifnull((round(accepts/requests, 2)), 0.0) as accept_rate
 from
     (select count(distinct sender_id, send_to_id) as requests from friend_request) as t1,

@@ -24,7 +24,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/power-of-two
+## https://code.dennyzhang.com/power-of-two
 class Solution(object):
     def isPowerOfTwo(self, n):
         """

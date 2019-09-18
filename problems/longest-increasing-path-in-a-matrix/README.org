@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-increasing-path-in-a-matrix
+## https://code.dennyzhang.com/longest-increasing-path-in-a-matrix
 
 #+END_SRC
 

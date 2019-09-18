@@ -30,7 +30,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-consecutive-sequence
+## https://code.dennyzhang.com/longest-consecutive-sequence
 class Solution:
     # Compared to longestConsecutive_v1, no need to search in both directions.
     def longestConsecutive(self, nums):

@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/bold-words-in-string
+// https://code.dennyzhang.com/bold-words-in-string
 // Basic Ideas: Merge interval
 // list: marked[bool], then merge the ranges.
 // Complexity: Time O(n*k), Space O(n)

@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/champagne-tower
+## https://code.dennyzhang.com/champagne-tower
 ## Basic Ideas: Dynamic programming
 ##          grid[i][j] will evenly flow to grid[i+1][j] and grid[i+1][j+1]
 ##

@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/next-closest-time
+## https://code.dennyzhang.com/next-closest-time
 ## Basic Ideas: Only pow(4, 4) combinations
 ##      Get all of them, and rule out the invalid onces
 ##      Convert the time string to seconds

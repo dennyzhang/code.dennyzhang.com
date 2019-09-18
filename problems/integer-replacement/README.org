@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution: Recursive + pruning
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/integer-replacement
+// https://code.dennyzhang.com/integer-replacement
 // Basic Ideas: recursive + pruning
 // Complexity: Time O(n), Space O(n)
 var m map[int]int
@@ -88,7 +88,7 @@ func getDistance(n int) int {
 
 - Solution: BFS + pruning
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/integer-replacement
+// https://code.dennyzhang.com/integer-replacement
 // Basic Ideas: BFS + pruning
 // Complexity: Time O(n), Space O(n)
 func integerReplacement(n int) int {

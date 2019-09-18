@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sliding-puzzle
+## https://code.dennyzhang.com/sliding-puzzle
 ## Basic Ideas: BFS: find the mininum path from point1 to point2
 ##
 ## Complexity:

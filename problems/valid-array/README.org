@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: hasmap
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/valid-array
+// https://code.dennyzhang.com/valid-array
 // Basic Ideas: hashmap
 // Complexity: Time O(n), Space O(n)
 /**

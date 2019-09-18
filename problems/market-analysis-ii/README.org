@@ -118,7 +118,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/market-analysis-ii
+# https://code.dennyzhang.com/market-analysis-ii
 select user_id as seller_id, 
        if(isnull(item_brand), "no", "yes") as 2nd_item_fav_brand
 from Users left join

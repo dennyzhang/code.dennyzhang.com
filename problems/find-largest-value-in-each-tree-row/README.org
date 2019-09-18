@@ -30,7 +30,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-largest-value-in-each-tree-row
+## https://code.dennyzhang.com/find-largest-value-in-each-tree-row
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

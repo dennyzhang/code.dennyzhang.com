@@ -77,7 +77,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-width-of-binary-tree
+## https://code.dennyzhang.com/maximum-width-of-binary-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

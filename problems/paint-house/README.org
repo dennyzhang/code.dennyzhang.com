@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/paint-house
+## https://code.dennyzhang.com/paint-house
 ## Basic Ideas: Dyanmic programming
 ##     For house after house1, it can only have 3 possilities.
 ##

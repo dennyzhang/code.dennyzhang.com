@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/sentence-similarity-ii
+// https://code.dennyzhang.com/sentence-similarity-ii
 // Basic Ideas: union find
 //   Apparently len(words1) = len(words2)
 //   The coresponding elements in words1 and words2 must be in the same group

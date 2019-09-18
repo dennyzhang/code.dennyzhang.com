@@ -43,7 +43,7 @@ Credits To: [[https://leetcode.com/problems/find-common-characters/description/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-common-characters
+// https://code.dennyzhang.com/find-common-characters
 // Basic Ideas: array
 // Complexity: Time O(n), Space O(1)
 func commonChars(A []string) []string {

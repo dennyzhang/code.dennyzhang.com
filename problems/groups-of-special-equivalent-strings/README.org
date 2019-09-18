@@ -69,7 +69,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: odd/even group with sort
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/groups-of-special-equivalent-strings
+// https://code.dennyzhang.com/groups-of-special-equivalent-strings
 // Basic Ideas: odd/even groups
 // Complexity: Time O(n), Space O(n)
 import (
@@ -99,7 +99,7 @@ func numSpecialEquivGroups(A []string) int {
 - Solution: odd/even group without sort
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/groups-of-special-equivalent-strings
+// https://code.dennyzhang.com/groups-of-special-equivalent-strings
 // Basic Ideas: odd/even groups without sort
 // array of 52 positions. 
 // First part for odd ones, the other for even ones.
@@ -124,7 +124,7 @@ func numSpecialEquivGroups(A []string) int {
 - Solution: with 26 positions, instead of 52
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/groups-of-special-equivalent-strings
+// https://code.dennyzhang.com/groups-of-special-equivalent-strings
 // Basic Ideas: odd/even groups without sort
 // array of 26 positions. 
 // First part for odd ones, the other for even ones.

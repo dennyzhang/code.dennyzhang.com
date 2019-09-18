@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/search-in-rotated-sorted-array
+## https://code.dennyzhang.com/search-in-rotated-sorted-array
 ## Basic Ideas: Binary search
 ##  Find the pivot. And do two binary search
 ## Complexity: Time O(log(n)), Space O(1)

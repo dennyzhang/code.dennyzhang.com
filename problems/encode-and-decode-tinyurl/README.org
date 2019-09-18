@@ -26,7 +26,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/encode-and-decode-tinyurl
+## https://code.dennyzhang.com/encode-and-decode-tinyurl
 class Codec:
     def __init__(self):
         self.d = {}

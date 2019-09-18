@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-number-of-balloons
+// https://code.dennyzhang.com/maximum-number-of-balloons
 // Basic Ideas: hashmap
 // Complexity: Time O(n), Space O(1)
 func min(x, y int) int {

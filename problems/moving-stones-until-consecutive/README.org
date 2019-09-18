@@ -60,7 +60,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/moving-stones-until-consecutive
+// https://code.dennyzhang.com/moving-stones-until-consecutive
 // Basic Ideas: Greedy
 //  For max, move slowly towards middle step by step
 //  For min, move to the smaller gap first. Then move the other end to join them.

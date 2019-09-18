@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/target-sum
+// https://code.dennyzhang.com/target-sum
 // Basic Ideas: BFS + hashmap
 // Complexity: Time O(pow(2, n)), Space O(1)
 //   The value would be in between -1000 and 1000

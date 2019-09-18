@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/smallest-rotation-with-highest-score
+## https://code.dennyzhang.com/smallest-rotation-with-highest-score
 
 #+END_SRC
 

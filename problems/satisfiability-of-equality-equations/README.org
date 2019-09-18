@@ -67,7 +67,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/satisfiability-of-equality-equations
+// https://code.dennyzhang.com/satisfiability-of-equality-equations
 // Basic Ideas: union find
 //
 //  Construct union find

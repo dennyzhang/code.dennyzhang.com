@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/non-overlapping-intervals
+// https://code.dennyzhang.com/non-overlapping-intervals
 // Basic Ideas: greedy + heap
 //
 // Sort by intervals by starting points

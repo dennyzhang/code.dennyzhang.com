@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/sort-array-by-parity
+// https://code.dennyzhang.com/sort-array-by-parity
 // Basic Ideas: two pointer
 // Complexity: Time O(n), Space O(1)
 func sortArrayByParity(A []int) []int {

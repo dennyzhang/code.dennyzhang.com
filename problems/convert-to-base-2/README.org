@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bitmanipulation
+:type:     bitmanipulation, baseconversion, classic
 :END:
 ---------------------------------------------------------------------
 Convert to Base -2
@@ -12,7 +12,7 @@ Convert to Base -2
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-baseconversion][#baseconversion]]
 ---------------------------------------------------------------------
 Given a number N, return a string consisting of "0"s and "1"s that represents its value in base -2 (negative two).
 
@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/convert-to-base-2
+// https://code.dennyzhang.com/convert-to-base-2
 // Basic Ideas:
 //
 // base * value + reminder = old

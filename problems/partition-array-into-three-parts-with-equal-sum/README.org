@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/partition-array-into-three-parts-with-equal-sum
+// https://code.dennyzhang.com/partition-array-into-three-parts-with-equal-sum
 // Basic Ideas: Check the first and the third part
 // Complexity: Time O(n), Space O(1)
 func canThreePartsEqualSum(A []int) bool {

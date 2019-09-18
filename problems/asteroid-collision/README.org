@@ -69,7 +69,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/asteroid-collision
+## https://code.dennyzhang.com/asteroid-collision
 ## Basic Ideas: stack
 ##       Scan from left to right. 
 ##       If the element is positive, push

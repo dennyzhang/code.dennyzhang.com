@@ -47,7 +47,7 @@ Credits To: [[https://leetcode.com/problems/string-without-aaa-or-bbb/descriptio
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/string-without-aaa-or-bbb
+// https://code.dennyzhang.com/string-without-aaa-or-bbb
 // Basic Ideas: greedy
 //   Start with |B-A| pairs of "ab", then add 'a' or 'b'
 // Complexity: Time O(n), Space O(1)

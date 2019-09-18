@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/factor-combinations
+// https://code.dennyzhang.com/factor-combinations
 // Basic Ideas: backtracking
 //
 //   Key points: How to avoid duplicates

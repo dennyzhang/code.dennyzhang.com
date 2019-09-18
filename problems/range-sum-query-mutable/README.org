@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, concurrency, classic, segmenttree
+:type:     oodesign, classic, segmenttree, rangesum
 :END:
 ---------------------------------------------------------------------
 Range Sum Query - Mutable
@@ -13,7 +13,7 @@ Range Sum Query - Mutable
 Similar Problems:
 - [[https://code.dennyzhang.com/range-addition][Range Addition]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-segmenttree][#segmenttree]], [[https://code.dennyzhang.com/review-concurrency][#concurrency]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-segmenttree][#segmenttree]], [[https://code.dennyzhang.com/followup-rangesum][#rangesum]]
 ---------------------------------------------------------------------
 Related Reading: [[https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]
 
@@ -45,37 +45,83 @@ Credits To: [[https://leetcode.com/problems/range-sum-query-mutable/description/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/range-sum-query-mutable
-class NumArray(object):
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/range-sum-query-mutable
+// Basic Ideas: segment tree
+//
+// Complexity: Time O(log(n)) Space O(n)
+type NumArray struct {
+    tree []int
+    size int
+}
 
-    def __init__(self, nums):
-        """
-        :type nums: List[int]
-        """
-        
+func Constructor(nums []int) NumArray {
+    // build segment tree
+    // full binary tree: parent: i -> child: 2*i, 2*i+1
+    size := len(nums)
+    // left node: len(nums), branch node: len(nums)-1
+    // To simplify the code, we add a dummy node.
+    // Thus two parts have the same amount of nodes.
+    // tree[1] would be the root, and tree[0] is dummy
+    tree := make([]int, size*2)
 
-    def update(self, i, val):
-        """
-        :type i: int
-        :type val: int
-        :rtype: void
-        """
-        
+    // assign left nodes
+    for i, _ := range nums {
+        tree[i+size] = nums[i]
+    }
 
-    def sumRange(self, i, j):
-        """
-        :type i: int
-        :type j: int
-        :rtype: int
-        """
-        
+    // update parent nodes
+    for i:=size-1; i>0; i-- {
+        tree[i] = tree[i*2]+tree[i*2+1]
+    }
+    return NumArray{tree:tree, size:size}
+}
 
+func (this *NumArray) Update(i int, val int)  {
+    // update from bottom to up
+    i += this.size
+    this.tree[i] = val
+    for i > 0 {
+        // how to get parent node?
+        l, r := i, i
+        if i%2 == 0 {
+            r = i+1
+        } else {
+            l = i-1
+        }
+        // update parent
+        this.tree[i/2] = this.tree[l]+this.tree[r]
+        i = i/2
+    }
+}
 
-# Your NumArray object will be instantiated and called as such:
-# obj = NumArray(nums)
-# obj.update(i,val)
-# param_2 = obj.sumRange(i,j)
+func (this *NumArray) SumRange(i int, j int) int {
+    // find the node from bottom to up
+    res := 0
+    i, j = i+this.size, j+this.size
+    // quit when size of range is 0
+    for i<=j {
+        // add left subrange to the result, and move the pointer
+        if (i%2) == 1 {
+            res += this.tree[i]
+            i++
+        }
+        // add right subrange to the result, and move the pointer
+        if (j%2) == 0 {
+            res += this.tree[j]
+            j--
+        }
+        i, j = i/2, j/2
+    }
+    return res
+}
+
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * obj := Constructor(nums);
+ * obj.Update(i,val);
+ * param_2 := obj.SumRange(i,j);
+ */
 #+END_SRC
 
 #+BEGIN_HTML

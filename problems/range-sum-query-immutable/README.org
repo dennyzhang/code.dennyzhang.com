@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, concurrency
+:type:     oodesign, presum, rangesum
 :END:
 ---------------------------------------------------------------------
 Range Sum Query - Immutable
@@ -12,7 +12,7 @@ Range Sum Query - Immutable
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-concurrency][#concurrency]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/followup-rangesum][#rangesum]]
 ---------------------------------------------------------------------
 Given an integer array nums, find the sum of the elements between indices i and j (i <= j), inclusive.
 #+BEGIN_EXAMPLE
@@ -34,9 +34,37 @@ Credits To: [[https://leetcode.com/problems/range-sum-query-immutable/descriptio
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/range-sum-query-immutable
+// Basic Ideas: presum
+// Complexity: Time O(n) Space O(n)
+type NumArray struct {
+    l []int
+}
+
+func Constructor(nums []int) NumArray {
+    //  add a dummy node to caculate nums[0...i]
+    l := make([]int, len(nums)+1)
+    for i, v := range nums{
+        l[i+1] = l[i] + v
+    }
+    return NumArray{l:l}
+}
+
+
+func (this *NumArray) SumRange(i int, j int) int {
+    return this.l[j+1]-this.l[i]
+}
+
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * obj := Constructor(nums);
+ * param_1 := obj.SumRange(i,j);
+ */
+#+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/range-sum-query-immutable
+## https://code.dennyzhang.com/range-sum-query-immutable
 class NumArray(object):
 
     def __init__(self, nums):

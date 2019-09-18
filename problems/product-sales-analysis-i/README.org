@@ -86,7 +86,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/product-sales-analysis-i
+# https://code.dennyzhang.com/product-sales-analysis-i
 select product_name, year, price
 from Sales inner join Product
 on Product.product_id = Sales.product_id

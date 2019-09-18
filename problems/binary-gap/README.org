@@ -68,7 +68,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/binary-gap
+// https://code.dennyzhang.com/binary-gap
 // Basic Ideas:
 // From right to left
 // Complexity: Time O(1), Space O(1)

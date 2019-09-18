@@ -31,7 +31,7 @@ Reference:
 - [[https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system][wikipedia: Roman numerals]]
 - [[http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm][Roman Numerals Chart]]
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/roman-to-integer
+// https://code.dennyzhang.com/roman-to-integer
 // Related reading: 
 // Basic Ideas: Examine from left to right.
 //   If current is smaller than the next, substract. 
@@ -56,7 +56,7 @@ func romanToInt(s string) int {
 }
 =======
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/roman-to-integer
+## https://code.dennyzhang.com/roman-to-integer
 
 >>>>>>> 123cc57c2e4abe14e48c40bfd5bdc5982e4e0c29
 #+END_SRC

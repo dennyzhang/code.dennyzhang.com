@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/reverse-string
+## https://code.dennyzhang.com/reverse-string
 class Solution(object):
     def reverseString(self, s):
         """

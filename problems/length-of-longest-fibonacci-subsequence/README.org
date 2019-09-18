@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: hasmap
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/length-of-longest-fibonacci-subsequence
+// https://code.dennyzhang.com/length-of-longest-fibonacci-subsequence
 // Basic Ideas: hashmap
 // Complexity: Time O(n*n*log(n)), Space O(n)
 //     Why the time complexity is not O(n^3)? 

@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/complex-number-multiplication
+// https://code.dennyzhang.com/complex-number-multiplication
 // Basic Ideas:
 //      (v1+v2*i) * (v3+v4*i) ->
 //        v1*v3 + (v1*v4+v2*v3)*i + v2*v4*i*i ->

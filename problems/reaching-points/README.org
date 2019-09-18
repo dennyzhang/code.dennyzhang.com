@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/reaching-points
+## https://code.dennyzhang.com/reaching-points
 ## Basic Ideas:
 ##   When tx > sx and ty > sy
 ##        we move from the target to the source by using mod functions

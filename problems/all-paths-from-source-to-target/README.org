@@ -42,7 +42,7 @@ Credits To: [[https://leetcode.com/problems/all-paths-from-source-to-target/desc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/all-paths-from-source-to-target
+## https://code.dennyzhang.com/all-paths-from-source-to-target
 ## Basic Ideas: dfs
 ## Complexity: Time O(n!), Space O(n)
 class Solution:

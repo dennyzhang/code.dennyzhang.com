@@ -13,7 +13,7 @@ Next Permutation
 Similar Problems:
 - [[https://code.dennyzhang.com/permutation-sequence][Permutation Sequence]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/tag/nextpermutation][#nextpermutation]]
+- Tag: [[https://code.dennyzhang.com/followup-nextpermutation][#nextpermutation]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
@@ -43,7 +43,7 @@ Related Readings:
 [[image-blog:Leetcode: Next Permutation][https://raw.githubusercontent.com/dennyzhang/images/master/code/next-permutation-algorithm.png]]
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/next-permutation
+// https://code.dennyzhang.com/next-permutation
 // Basic Ideas:
 //   1. From right to left, find the longest non-increasing subsequence
 //   2. Swap items

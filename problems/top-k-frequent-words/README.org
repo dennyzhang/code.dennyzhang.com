@@ -46,7 +46,7 @@ Credits To: [[https://leetcode.com/problems/top-k-frequent-words/description/][l
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/top-k-frequent-words
+## https://code.dennyzhang.com/top-k-frequent-words
 ## Basic Ideas: Hash map
 ##            Count the occurency for different words
 ##            Then sort the list by descending occurency

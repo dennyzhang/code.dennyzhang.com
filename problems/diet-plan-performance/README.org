@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/diet-plan-performance
+// https://code.dennyzhang.com/diet-plan-performance
 // Basic Ideas: sliding window
 //
 //   Notice:  What if len(calories)%k != 0

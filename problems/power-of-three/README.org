@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 class Solution(object):
-## Blog link: https://code.dennyzhang.com/power-of-three
+## https://code.dennyzhang.com/power-of-three
 ## Basic Ideas: power of any prime number
 ##              3 is a prime
 ##              If 3 % k == 0 and k is a prime, then k is 3.

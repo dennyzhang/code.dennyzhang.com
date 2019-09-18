@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/n-ary-tree-level-order-traversal
+## https://code.dennyzhang.com/n-ary-tree-level-order-traversal
 ## Basic Ideas: BFS
 ## Complexity
 """

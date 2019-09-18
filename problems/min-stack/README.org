@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, inspiring
+:type:     oodesign, inspiring, designstack
 :END:
 ---------------------------------------------------------------------
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
@@ -13,7 +13,7 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 Similar Problems:
 - [[https://code.dennyzhang.com/max-stack][Max Stack]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/followup-designstack][#designstack]]
 ---------------------------------------------------------------------
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/min-stack
+## https://code.dennyzhang.com/min-stack
 ## Basic Ideas: List with elements of (value, min_value)
 ##    -2 0 -3  4
 ##    linked list:

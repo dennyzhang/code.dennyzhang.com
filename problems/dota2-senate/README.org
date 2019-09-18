@@ -60,7 +60,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/dota2-senate
+// https://code.dennyzhang.com/dota2-senate
 // Basic Ideas: greedy
 //
 //  Each senator ban the next closet opponent senator

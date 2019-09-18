@@ -225,7 +225,7 @@ Revert a linked list: [[https://code.dennyzhang.com/reverse-linked-list-ii][Reve
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]: [[https://code.dennyzhang.com/unique-binary-search-trees][Unique Binary Search Trees]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]: [[https://code.dennyzhang.com/number-of-1-bits][Number of 1 Bits]]
+- [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]: [[https://code.dennyzhang.com/number-of-1-bits][Number of 1 Bits]]
 #+BEGIN_SRC python
 ## Blog link: https://code.dennyzhang.com/number-of-1-bits
 res = 0

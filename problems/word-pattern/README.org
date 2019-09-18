@@ -34,7 +34,7 @@ Credits To: [[https://leetcode.com/problems/word-pattern/description/][leetcode.
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/word-pattern
+## https://code.dennyzhang.com/word-pattern
 ## Basic Ideas: hasmap + set
 ##
 ## Complexity: Time O(n), Space O(n)

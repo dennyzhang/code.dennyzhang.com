@@ -27,7 +27,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/keyboard-row
+## https://code.dennyzhang.com/keyboard-row
 class Solution(object):
     def findWords(self, words):
         """

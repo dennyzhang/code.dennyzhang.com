@@ -32,7 +32,7 @@ By moving shorter end pointer further doesn't eliminate the final answer
 
 - Solution: Two Pointer
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/container-with-most-water
+// https://code.dennyzhang.com/container-with-most-water
 // Basic Ideas: Two pointer
 //   Start with l, r = 0, len(l)-1
 //   Then move the pointer of shorter value
@@ -59,7 +59,7 @@ func maxArea(height []int) int {
 
 - Solution: Two Pointer + Pruning
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/container-with-most-water
+// https://code.dennyzhang.com/container-with-most-water
 // Basic Ideas: Two pointer
 //   Start with l, r = 0, len(l)-1
 //   Then move the pointer of shorter value

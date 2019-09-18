@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/letter-combinations-of-a-phone-number
+// https://code.dennyzhang.com/letter-combinations-of-a-phone-number
 // Basic Ideas: backtracking
 //
 // Complexity: Time O(pow(3, N)*pow(4, M)), Space O(pow(3, N)*pow(4, M))

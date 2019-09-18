@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
+// https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
 // Basic Ideas: union find
 //
 //   Count how many islands in a 2D matrix
@@ -116,7 +116,7 @@ func removeStones(stones [][]int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
+// https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
 // Basic Ideas: union find
 //
 //   Count how many islands in a 2D matrix
@@ -170,7 +170,7 @@ func removeStones(stones [][]int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
+// https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column
 // Basic Ideas: union find
 //
 //   Count how many islands in a 2D matrix

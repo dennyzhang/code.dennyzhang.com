@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/lexicographically-smallest-equivalent-string
+// https://code.dennyzhang.com/lexicographically-smallest-equivalent-string
 // Basic Ideas: Unionfind
 //
 // Complexity: Time O(n) Space O(n)

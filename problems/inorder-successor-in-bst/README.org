@@ -62,7 +62,7 @@ Intuitive Idea would have too many details.
 #+END_EXAMPLE
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/inorder-successor-in-bst
+## https://code.dennyzhang.com/inorder-successor-in-bst
 ## Basic Ideas:
 ## 
 ## Complexity:

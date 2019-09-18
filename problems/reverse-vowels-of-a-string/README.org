@@ -32,7 +32,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/reverse-vowels-of-a-string
+## https://code.dennyzhang.com/reverse-vowels-of-a-string
 ## Basic Ideas: save vowels in an separated array
 ## Complexity: Time O(n), Space O(n)
 class Solution(object):

@@ -25,7 +25,7 @@ Credits To: [[https://leetcode.com/problems/max-points-on-a-line/description/][l
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/max-points-on-a-line
+// https://code.dennyzhang.com/max-points-on-a-line
 // Basic Ideas: hashmap
 // For each point check with others:
 //   - Same point

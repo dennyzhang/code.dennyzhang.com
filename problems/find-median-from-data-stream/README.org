@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-median-from-data-stream
+## https://code.dennyzhang.com/find-median-from-data-stream
 ## Basic Ideas: Use 2 heaps: 
 ##      maxheap for the first half, minheap for the second half
 ##

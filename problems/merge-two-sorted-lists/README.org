@@ -28,7 +28,7 @@ Credits To: [[https://leetcode.com/problems/merge-two-sorted-lists/description/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/merge-two-sorted-lists
+## https://code.dennyzhang.com/merge-two-sorted-lists
 ## Basic Ideas:
 ##    l1: 1 -> 3 -> 5
 ##        p   r

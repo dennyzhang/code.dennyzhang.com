@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign
+:type:     oodesign, stack, designstack
 :END:
 ---------------------------------------------------------------------
 Max Stack
@@ -11,10 +11,11 @@ Max Stack
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-stack"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/min-stack][Min Stack]]
-- [[https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed][Insert Delete GetRandom O(1) – Duplicates allowed]]
+- [[https://code.dennyzhang.com/min-stack][Leetcode: Min Stack]]
+- [[https://code.dennyzhang.com/maximum-frequency-stack][Leetcode: Maximum Frequency Stack]]
+- [[https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed][Insert Delete GetRandom O(1) - Duplicates allowed]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-designstack][#designstack]]
 ---------------------------------------------------------------------
 Design a max stack that supports push, pop, top, peekMax and popMax.
 
@@ -51,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/max-stack
+## https://code.dennyzhang.com/max-stack
 ## Basic Ideas: 2 stacks
 ##
 ## Complexity: Time: topMax O(n), others O(1)

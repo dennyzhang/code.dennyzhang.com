@@ -45,7 +45,7 @@ Credits To: [[https://leetcode.com/problems/largest-time-for-given-digits/descri
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/largest-time-for-given-digits
+// https://code.dennyzhang.com/largest-time-for-given-digits
 // Basic Ideas: Only 24 different cases
 // Complexity: Time O(1), Space O(1)
 import ("math"

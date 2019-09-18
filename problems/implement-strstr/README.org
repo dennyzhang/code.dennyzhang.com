@@ -37,7 +37,7 @@ Credits To: [[https://leetcode.com/problems/implement-strstr/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/implement-strstr
+## https://code.dennyzhang.com/implement-strstr
 ## Idea:
 ## Complexity: Time O(n*k), Space O(1)
 ##    hello, hello

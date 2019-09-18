@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/day-of-the-week
+// https://code.dennyzhang.com/day-of-the-week
 // Basic Ideas: math + leap year
 //   1971-1-1 is Friday
 // Complexity: Time O(1), space O(1)

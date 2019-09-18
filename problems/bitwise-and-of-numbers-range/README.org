@@ -26,7 +26,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/bitwise-and-of-numbers-range
+## https://code.dennyzhang.com/bitwise-and-of-numbers-range
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
         """

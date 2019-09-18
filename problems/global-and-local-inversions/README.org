@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/global-and-local-inversions
+## https://code.dennyzhang.com/global-and-local-inversions
 ## Basic Ideas: 
 ##      If both equals, apparently only the adjacent nodes can be in descedning order.
 ##      And their absolute difference should be only 1.

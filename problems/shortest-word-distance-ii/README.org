@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution: hashmap
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/shortest-word-distance-ii
+// https://code.dennyzhang.com/shortest-word-distance-ii
 // Basic Ideas: hashmap
 //   The problem is literally about: Find the mininum difference of two lists
 //

@@ -132,7 +132,6 @@ for (id, tweetId) in self.tweet_dict[userId]:
 - [[https://code.dennyzhang.com/tag/floydcycle][#floydcycle]]: detect a loop with a fast and slow pointer.
 - [[https://code.dennyzhang.com/tag/fisheryatesshuffle][#fisheryatesshuffle]]: generate a random permutation of a finite sequence.
 - [[https://code.dennyzhang.com/tag/reservoirsampling][#reservoirsampling]]: randomly choose a sample of k items from a very huge dataset. And we don't know the size. See [[url-external:https://en.wikipedia.org/wiki/Reservoir_sampling][wikipedia]].
-- [[https://code.dennyzhang.com/tag/discretetimesignal][#discretetimesignal]]: See [[url-external:https://en.wikipedia.org/wiki/Discrete-time_signal][wikipedia]].
 - [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 - [[https://code.dennyzhang.com/review-bfs][#bfs]]
 - [[https://code.dennyzhang.com/review-dfs][#dfs]]

@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/design-twitter
+## https://code.dennyzhang.com/design-twitter
 ## Basic Ideas: Two hashmap + PriorityQueue
 ##     tweet_dict. id -> tweet_list
 ##     follow_dict: id -> id set

@@ -33,7 +33,7 @@ Credits To: [[https://leetcode.com/problems/number-complement/description/][leet
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/number-complement
+## https://code.dennyzhang.com/number-complement
 class Solution(object):
     def findComplement(self, num):
         """

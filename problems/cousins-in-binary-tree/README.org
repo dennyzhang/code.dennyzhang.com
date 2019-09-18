@@ -55,7 +55,7 @@ Credits To: [[https://leetcode.com/problems/cousins-in-binary-tree/description/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/cousins-in-binary-tree
+// https://code.dennyzhang.com/cousins-in-binary-tree
 // Basic Ideas: dfs, bfs
 // track level + parent node
 // Complexity: Time O(n), Space O(1)

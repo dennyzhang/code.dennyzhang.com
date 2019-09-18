@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/duplicate-zeros
+// https://code.dennyzhang.com/duplicate-zeros
 // Basic Ideas: two pointer
 //   Find how many cells can be shifted
 //   From right to next, do the move

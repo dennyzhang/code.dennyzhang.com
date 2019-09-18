@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/preimage-size-of-factorial-zeroes-function
+## https://code.dennyzhang.com/preimage-size-of-factorial-zeroes-function
 
 #+END_SRC
 

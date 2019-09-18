@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: dynamic programming
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/divisor-game
+// https://code.dennyzhang.com/divisor-game
 // Basic Ideas: dynamic programming
 // Complexity: Time O(1), Space O(1)
 func divisorGame(N int) bool {
@@ -74,7 +74,7 @@ func divisorGame(N int) bool {
 - Solution: pruned dynamic programming
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/divisor-game
+// https://code.dennyzhang.com/divisor-game
 // Basic Ideas: dynamic programming
 // Complexity: Time O(1), Space O(1)
 func check(N int, dp map[int]bool) bool {

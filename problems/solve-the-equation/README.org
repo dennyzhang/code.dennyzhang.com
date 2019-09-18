@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/solve-the-equation
+## https://code.dennyzhang.com/solve-the-equation
 ## Basic Ideas:
 ##
 ##  2x+3x-6x=x+2

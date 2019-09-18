@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/split-array-with-same-average
+// https://code.dennyzhang.com/split-array-with-same-average
 // Basic Ideas: BFS pruning
 // Observation:
 //  avg(A) == avg(B) == avg(C)

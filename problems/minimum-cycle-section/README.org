@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/minimum-cycle-section
+## https://code.dennyzhang.com/minimum-cycle-section
 ## Basic Ideas: Dynamic programming
 ##  dp[]: the length of the mininum cycle section from the first element to current one
 ##    This means for string of S[0:i], S[0:dp[i]] is the mininum cycle section

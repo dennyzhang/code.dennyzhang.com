@@ -30,7 +30,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/count-numbers-with-unique-digits
+// https://code.dennyzhang.com/count-numbers-with-unique-digits
 // Basic Ideas: dynamic programming
 //   dp(i): How many unique digits with length of i
 //

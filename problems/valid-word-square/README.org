@@ -92,34 +92,26 @@ Credits To: [[https://leetcode.com/problems/valid-word-square/description/][leet
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/valid-word-square
-## Basic Ideas:
-##     What if we can't find the corresponding element?
-##
-## Complexity: Time O(m*n), Space O(1)
-class Solution:
-    def validWordSquare(self, words):
-        """
-        :type words: List[str]
-        :rtype: bool
-        """
-        row_count = len(words)
-        if row_count == 0: return True
-        max_col = 0
-        for word in words: max_col = max(max_col, len(word))
-        if max_col != row_count: return False
-
-        # examine for each row
-        try:
-            for row_index in range(0, row_count):
-                for k in range(0, len(words[row_index])):
-                    if words[row_index][k] != words[k][row_index]:
-                        return False
-        except:
-            return False
-        return True
+## https://code.dennyzhang.com/valid-word-square
+// Basic Ideas: array
+// Each time both direction move 1 step
+// Starting point for each round
+//   [i, 0], [0, j]
+//   [i, j] <--> [j, i]
+// Complexity: Time O(n*m) Space O(1)
+func validWordSquare(words []string) bool {
+    for i:=0; i<len(words); i++ {
+        for j:=0; j<len(words[i]); j++ {
+            // words[i][j]: from left to right
+            // words[j][i]: for top to down
+            if j>=len(words) || i>= len(words[j]) || words[i][j] != words[j][i] {
+                return false
+            }
+        }
+    }
+    return true
+}
 #+END_SRC
 
 #+BEGIN_HTML

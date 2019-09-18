@@ -13,7 +13,7 @@ Top K Frequent Elements
 Similar Problems:
 - [[https://code.dennyzhang.com/find-k-pairs-with-smallest-sums][Leetcode: Find K Pairs with Smallest Sums]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/tag/topk][topk]]
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/followup-topk][topk]]
 ---------------------------------------------------------------------
 Given a non-empty array of integers, return the k most frequent elements.
 
@@ -31,7 +31,7 @@ Credits To: [[https://leetcode.com/problems/top-k-frequent-elements/description/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/top-k-frequent-elements
+// https://code.dennyzhang.com/top-k-frequent-elements
 // Basic Ideas: heap
 //
 // Complexity: Time O(n*log(k)) Space O(n)
@@ -81,7 +81,7 @@ func topKFrequent(nums []int, k int) []int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/top-k-frequent-elements
+## https://code.dennyzhang.com/top-k-frequent-elements
 ## Basic Ideas: priority queue: heapq
 ##
 ## Complexity:

@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-palindromic-subsequence
+// https://code.dennyzhang.com/longest-palindromic-subsequence
 // Basic Ideas: dynamic programming
 //   optimal substructure:
 //        Problem: the value of s[j...i]

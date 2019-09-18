@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximize-distance-to-closest-person
+// https://code.dennyzhang.com/maximize-distance-to-closest-person
 // Basic Ideas: One pass
 // Find the longest group of consective 0s.
 // Note: for the leading consective 0s and tailing consective 0s, they are different

@@ -34,7 +34,7 @@ Credits To: [[https://leetcode.com/problems/binary-tree-right-side-view/descript
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/binary-tree-right-side-view
+// https://code.dennyzhang.com/binary-tree-right-side-view
 // Basic Ideas: BFS
 // Complexity: Time O(n), Space O(h)
 /**
@@ -69,7 +69,7 @@ func rightSideView(root *TreeNode) []int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/binary-tree-right-side-view
+## https://code.dennyzhang.com/binary-tree-right-side-view
 ## Basic Ideas:
 ##        Level order traversal. And get the right most for each level
 ##                1

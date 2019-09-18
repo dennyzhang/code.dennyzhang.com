@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/time-intersection
+## https://code.dennyzhang.com/time-intersection
 """
 class Point:
     def __init__( self, x=0, y=0):

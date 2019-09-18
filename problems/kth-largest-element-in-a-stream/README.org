@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: heap
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/kth-largest-element-in-a-stream
+## https://code.dennyzhang.com/kth-largest-element-in-a-stream
 ## Basic Ideas: min heap
 ## Complexity: Time O(log(k)), Space O(k)
 import heapq

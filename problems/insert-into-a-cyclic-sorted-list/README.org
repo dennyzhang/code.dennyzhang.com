@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/insert-into-a-cyclic-sorted-list
+## https://code.dennyzhang.com/insert-into-a-cyclic-sorted-list
 ## Basic Ideas:
 ##    Find the smallest value which is no less than the target
 ##    If there are multiple suitable places for insertion, 

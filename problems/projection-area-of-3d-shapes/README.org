@@ -74,7 +74,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/projection-area-of-3d-shapes
+// https://code.dennyzhang.com/projection-area-of-3d-shapes
 // Basic Ideas: math
 //  Notice: the matrix is a square, instead of a rectangle
 // Complexity: Time O(n^2), Space O(1)
@@ -102,7 +102,7 @@ func projectionArea(grid [][]int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/projection-area-of-3d-shapes
+// https://code.dennyzhang.com/projection-area-of-3d-shapes
 // Basic Ideas: math
 // Complexity: Time O(n^2), Space O(1)
 func projectionArea(grid [][]int) int {

@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/largest-sum-of-averages
+## https://code.dennyzhang.com/largest-sum-of-averages
 
 #+END_SRC
 

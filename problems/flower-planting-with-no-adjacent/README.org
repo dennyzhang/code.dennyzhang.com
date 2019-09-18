@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/flower-planting-with-no-adjacent
+// https://code.dennyzhang.com/flower-planting-with-no-adjacent
 // Basic Ideas: greedy
 //    Examine all the neighbors, and take the first available color
 // Complexity: Time O(n^2), Space O(n^2)

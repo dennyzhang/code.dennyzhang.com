@@ -27,7 +27,7 @@ Credits To: [[https://leetcode.com/problems/integer-to-roman/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/integer-to-roman
+// https://code.dennyzhang.com/integer-to-roman
 // Basic Ideas:
 //    Symbol  I  V  X   L   C     D    M
 //    Value   1  5  10  50  100  500  1,000

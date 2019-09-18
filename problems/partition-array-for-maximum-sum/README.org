@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, presum
+:type:     dynamicprogramming, presum, maxsubarraysum
 :END:
 ---------------------------------------------------------------------
 Partition Array for Maximum Sum
@@ -12,7 +12,7 @@ Partition Array for Maximum Sum
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/presum][#presum]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/followup-maxsubarraysum][#maxsubarraysum]]
 ---------------------------------------------------------------------
 Given an integer array A, you partition the array into (contiguous) subarrays of length at most K.  After partitioning, each subarray has their values changed to become the maximum value of that subarray.
 
@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/partition-array-for-maximum-sum
+// https://code.dennyzhang.com/partition-array-for-maximum-sum
 // Basic Ideas: dynamic programming
 //
 //   dp[i]: l[0...i]

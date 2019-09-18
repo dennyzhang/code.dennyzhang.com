@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/implement-queue-by-circular-array
+## https://code.dennyzhang.com/implement-queue-by-circular-array
 ## Basic Ideas:
 ##  We use (n+1) cells instead of n cells.
 ##  Thus we can differentiate empty case and full case

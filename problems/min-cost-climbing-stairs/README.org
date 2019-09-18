@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/min-cost-climbing-stairs
+## https://code.dennyzhang.com/min-cost-climbing-stairs
 ## Basic Ideas:
 ##       Facts: you can only climb one or two steps. But you can't climb back.
 ##

@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/shortest-common-supersequence
+// https://code.dennyzhang.com/shortest-common-supersequence
 // Basic Ideas: dynamic programming + edit distance
 // Complexity: Time O(n*m*n), Space O(n*(n+m))
 func shortestCommonSupersequence(str1 string, str2 string) string {

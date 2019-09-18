@@ -43,7 +43,7 @@ Credits To: [[https://leetcode.com/problems/range-sum-of-bst/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/range-sum-of-bst
+// https://code.dennyzhang.com/range-sum-of-bst
 // Basic Ideas:
 // Complexity: Time O(n), Space O(1)
 /**

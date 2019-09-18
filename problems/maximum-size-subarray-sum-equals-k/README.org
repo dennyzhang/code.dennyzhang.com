@@ -12,7 +12,7 @@ Maximum Size Subarray Sum Equals k
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/tag/maxsubarraysum][#maxsubarraysum]]
+- Tag: [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/review-maxsubarraysum][#maxsubarraysum]]
 ---------------------------------------------------------------------
 Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn't one, return 0 instead.
 
@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-size-subarray-sum-equals-k
+// https://code.dennyzhang.com/maximum-size-subarray-sum-equals-k
 // Basic Ideas: presum + hashmap + onepass
 //   m(i) -> the first index which can get the presum of i
 // Complexity: Time O(n), Space O(n)

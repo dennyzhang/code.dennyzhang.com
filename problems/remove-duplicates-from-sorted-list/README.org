@@ -23,7 +23,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/remove-duplicates-from-sorted-list
+## https://code.dennyzhang.com/remove-duplicates-from-sorted-list
 ## Basic Ideas: p points to the last processed node
 ## Complexity:
 # Definition for singly-linked list.

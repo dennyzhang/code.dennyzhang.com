@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-nesting-depth-of-two-valid-parentheses-strings
+// https://code.dennyzhang.com/maximum-nesting-depth-of-two-valid-parentheses-strings
 // Basic Ideas: stack
 //
 //  For any nested parentheses, mark it alternatively

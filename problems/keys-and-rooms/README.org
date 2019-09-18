@@ -60,7 +60,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: DFS
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/keys-and-rooms
+// https://code.dennyzhang.com/keys-and-rooms
 // Basic Ideas: DFS
 // Complexity: Time O(V), Space O(n)
 func canVisitAllRooms(rooms [][]int) bool {
@@ -87,7 +87,7 @@ func canVisitAllRooms(rooms [][]int) bool {
 - Solution: BFS
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/keys-and-rooms
+// https://code.dennyzhang.com/keys-and-rooms
 // Basic Ideas: BFS
 // Tree traversal
 // Complexity: Time O(V), Space O(n)

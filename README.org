@@ -60,6 +60,19 @@ set -o nounset
 cd /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/
 for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "README.org"); do
     echo "$f"
+    sed -i "" 's!https://code.dennyzhang.com/tag/presum!https://code.dennyzhang.com/followup-presum!g' $f
+done
+#+END_SRC
+
+#+BEGIN_SRC sh
+#!/usr/bin/env bash
+set -o errexit
+set -o pipefail
+set -o nounset
+
+cd /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/
+for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "README.org"); do
+    echo "$f"
     # sed -i "" 's!\[\[https://code.dennyzhang.com/tag/dynamicprogramming\]\[#dynamicprogramming\]\]!\[\[https://code.dennyzhang.com/review-dynamicprogramming\]\[#dynamicprogramming\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/backtracking\]\[#backtracking\]\]!\[\[https://code.dennyzhang.com/review-backtracking\]\[#backtracking\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/bfs\]\[#bfs\]\]!\[\[https://code.dennyzhang.com/review-bfs\]\[#bfs\]\]!g' $f
@@ -100,7 +113,6 @@ for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "READM
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/twopointer\]\[#twopointer\]\]!\[\[https://code.dennyzhang.com/review-twopointer\]\[#twopointer\]\]!g' $f    
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/unionfind\]\[#unionfind\]\]!\[\[https://code.dennyzhang.com/review-unionfind\]\[#unionfind\]\]!g' $f
 done
-
 #+END_SRC
 * TODO [#A] Role Models                                            :noexport:
 https://github.com/donnemartin/interactive-coding-challenges
@@ -325,7 +337,7 @@ https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-bec
 * TODO tree traversal                                              :noexport:
 https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Programming,_Operating_Systems,_Databases_and_Networking/Programming_Concepts/Tree_traversal_algorithms_for_a_binary_tree
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO Review: bitmanipulation: https://code.dennyzhang.com/tag/bitmanipulation/ :noexport:
+* TODO Review: bitmanipulation: https://code.dennyzhang.com/review-bitmanipulation/ :noexport:
 * TODO Review: rotateoperation: https://code.dennyzhang.com/tag/rotateoperation/ :noexport:
 * TODO Questions with easy way to do follow-up                     :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
@@ -346,7 +358,6 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 * TODO adsense doesn't show promptly: https://code.dennyzhang.com/palindrome-permutation-ii :noexport:
 * TODO Learn from https://github.com/aQuaYi/LeetCode-in-Go         :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO Code website: adsense doesn't show up quickly               :noexport:
 * TODO Add fork for review posts: https://code.dennyzhang.com/review-complexity :noexport:
 * TODO Promote my github repo: https://github.com/dennyzhang/code.dennyzhang.com :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
@@ -358,3 +369,5 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 https://code.dennyzhang.com/tag/redo/page/5
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO change the menu of the blog                                 :noexport:
+* TODO bash export no font coloring                                :noexport:
+* TODO [#A] Code website: adsense doesn't show up quickly          :noexport:

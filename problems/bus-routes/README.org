@@ -46,7 +46,7 @@ Credits To: [[https://leetcode.com/problems/bus-routes/description/][leetcode.co
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/bus-routes
+// https://code.dennyzhang.com/bus-routes
 // Basic Ideas: BFS + hashmap
 //
 // map: from point to route id list

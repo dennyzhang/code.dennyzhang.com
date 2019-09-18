@@ -31,7 +31,7 @@ Credits To: [[https://leetcode.com/problems/palindrome-permutation-ii/descriptio
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/palindrome-permutation-ii
+## https://code.dennyzhang.com/palindrome-permutation-ii
 // Basic Ideas: permutation without duplicates
 //
 // Complexity: Time ? Space ?

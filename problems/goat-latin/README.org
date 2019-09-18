@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/goat-latin
+// https://code.dennyzhang.com/goat-latin
 // Basic Ideas: Split string as a list first
 // Complexity: Time O(n), Space O(n)
 import "strings"

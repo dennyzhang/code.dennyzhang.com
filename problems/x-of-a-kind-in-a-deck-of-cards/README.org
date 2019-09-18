@@ -71,7 +71,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: hashmap
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/x-of-a-kind-in-a-deck-of-cards
+// https://code.dennyzhang.com/x-of-a-kind-in-a-deck-of-cards
 // Basic Ideas: hashmap
 // Complexity: Time O(n), Space O(n)
 func gcd(x int, y int) int {

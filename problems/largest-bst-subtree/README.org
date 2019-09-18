@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/largest-bst-subtree
+// https://code.dennyzhang.com/largest-bst-subtree
 
 #+END_SRC
 

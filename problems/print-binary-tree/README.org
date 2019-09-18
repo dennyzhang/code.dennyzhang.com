@@ -74,7 +74,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/print-binary-tree
+// https://code.dennyzhang.com/print-binary-tree
 // Basic Ideas: BFS
 // Fristly get the tree height: h
 // From level i to level i+1, we move the index by the offset of 2^(h-i-1)

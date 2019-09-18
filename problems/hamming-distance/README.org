@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/hamming-distance
+## https://code.dennyzhang.com/hamming-distance
 ## Basic Ideas: x xor y
 ##              Any bit of 1 for the result indicates a difference
 ## Complexity

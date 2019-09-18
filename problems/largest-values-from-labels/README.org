@@ -67,7 +67,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/largest-values-from-labels
+// https://code.dennyzhang.com/largest-values-from-labels
 // Basic Ideas: Greedy
 // Complexity: Time O(n*log(n)), Space O(n)
 import "sort"

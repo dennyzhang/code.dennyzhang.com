@@ -27,7 +27,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/factorial-trailing-zeroes
+// https://code.dennyzhang.com/factorial-trailing-zeroes
 // Basic Ideas:
 //  Count how many 5 factors in all number from 1 to n.
 //  We have enough 2 to get 10

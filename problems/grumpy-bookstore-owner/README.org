@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/grumpy-bookstore-owner
+// https://code.dennyzhang.com/grumpy-bookstore-owner
 // Basic Ideas: dynamicprogramming + slidingwindows + maximum subarray
 //
 // Complexity: Time O(n), Space O(n)

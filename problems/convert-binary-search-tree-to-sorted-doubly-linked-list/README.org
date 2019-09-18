@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/convert-binary-search-tree-to-sorted-doubly-linked-list
+## https://code.dennyzhang.com/convert-binary-search-tree-to-sorted-doubly-linked-list
 ## Basic Ideas: dfs in-order
 ## Need to do it in-place
 ## f(node) head, tail

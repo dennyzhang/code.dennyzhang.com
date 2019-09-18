@@ -71,7 +71,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/design-snake-game
+## https://code.dennyzhang.com/design-snake-game
 ## Basic Ideas: queue + hashmap
 ##              queue: coordinates for all parts of the snake
 ##              set: check whether snake will hit itself

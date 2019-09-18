@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/di-string-match
+// https://code.dennyzhang.com/di-string-match
 // Basic Ideas: two pointers
 // Complexity: Time O(n), Space O(1)
 func diStringMatch(S string) []int {

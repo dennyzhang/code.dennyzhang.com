@@ -61,7 +61,7 @@ Credits To: [[https://leetcode.com/problems/add-to-array-form-of-integer/descrip
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/add-to-array-form-of-integer
+// https://code.dennyzhang.com/add-to-array-form-of-integer
 // Basic Ideas: add big numbers
 // Complexity: Time O(n), Space O(1)
 import "strconv"

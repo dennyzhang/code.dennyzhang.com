@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/image-smoother
+## https://code.dennyzhang.com/image-smoother
 ## Basic Ideas: The main point is how to write clean code.
 ##
 ##

@@ -42,7 +42,7 @@ Credits To: [[https://leetcode.com/problems/subsets/description/][leetcode.com]]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/subsets
+// https://code.dennyzhang.com/subsets
 // Basic Ideas: backtracking
 // 
 //  Add current combination to the result list
@@ -67,7 +67,7 @@ func subsets(nums []int) [][]int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/subsets
+// https://code.dennyzhang.com/subsets
 // Basic Ideas: Combination
 //
 // Complexity: Time ?, Space ?
@@ -91,7 +91,7 @@ func subsets(nums []int) [][]int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/subsets
+## https://code.dennyzhang.com/subsets
 class Solution(object):
     def subsets(self, nums):
         """

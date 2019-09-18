@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/game-play-analysis-iii
+# https://code.dennyzhang.com/game-play-analysis-iii
 select t1.player_id, t1.event_date, sum(t2.games_played) as games_played_so_far
 from Activity as t1 inner join Activity as t2
 on t1.player_id = t2.player_id

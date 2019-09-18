@@ -72,7 +72,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/number-of-dice-rolls-with-target-sum
+// https://code.dennyzhang.com/number-of-dice-rolls-with-target-sum
 // Basic Ideas: knapsack
 // Complexity: Time O(d*f*target), Space O(target*d)
 func numRollsToTarget(d int, f int, target int) int {
@@ -102,7 +102,7 @@ func numRollsToTarget(d int, f int, target int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/number-of-dice-rolls-with-target-sum
+// https://code.dennyzhang.com/number-of-dice-rolls-with-target-sum
 // Basic Ideas: knapsack
 // Complexity: Time O(d*f*target), Space O(target)
 import "math"

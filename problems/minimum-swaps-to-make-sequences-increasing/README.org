@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/minimum-swaps-to-make-sequences-increasing
+## https://code.dennyzhang.com/minimum-swaps-to-make-sequences-increasing
 ## Basic Ideas: dynamic programming
 ##
 ##    If examining two adjacent columns, there are only 2 combinations!

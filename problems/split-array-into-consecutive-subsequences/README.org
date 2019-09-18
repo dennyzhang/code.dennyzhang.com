@@ -54,7 +54,7 @@ Credits To: [[https://leetcode.com/problems/split-array-into-consecutive-subsequ
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/split-array-into-consecutive-subsequences
+// https://code.dennyzhang.com/split-array-into-consecutive-subsequences
 // Basic Ideas: greedy
 //    When we loop the array from small to big, 
 //      it's always better append to existing subsequences, compared to start new ones.

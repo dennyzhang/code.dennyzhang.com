@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-and-replace-in-string
+// https://code.dennyzhang.com/find-and-replace-in-string
 // Basic Ideas: One pass. Use hashmap to avoid sorting
 //
 // Notice: indexes may not be in order

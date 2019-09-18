@@ -13,7 +13,7 @@ Binary Subarrays With Sum
 Similar Problems:
 - [[https://code.dennyzhang.com/subarray-product-less-than-k][Subarray Product Less Than K]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In an array A of 0s and 1s, how many non-empty subarrays have sum S?
 
@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/binary-subarrays-with-sum
+// https://code.dennyzhang.com/binary-subarrays-with-sum
 // Basic Ideas: Presum + Dynamic Programming
 //     Count how many subarray ends with current item
 // Complexity: Time O(n), Space (n)

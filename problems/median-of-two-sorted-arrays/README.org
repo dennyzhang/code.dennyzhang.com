@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/median-of-two-sorted-arrays
+## https://code.dennyzhang.com/median-of-two-sorted-arrays
 ## Basic Ideas: merge 2 sorted array to one, find 2 values
 ## Complexity: O(m+n)
 class Solution(object):

@@ -63,7 +63,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sort-characters-by-frequency
+## https://code.dennyzhang.com/sort-characters-by-frequency
 ## Baisc Ideas: Sort with customized function
 ##
 ## Complexity:

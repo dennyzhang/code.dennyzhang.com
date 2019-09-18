@@ -35,7 +35,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/basic-calculator-ii
+## https://code.dennyzhang.com/basic-calculator-ii
 ## Basic Ideas: +- yield to */
 ##
 ##           When we found one operator as +/, look for the next operator

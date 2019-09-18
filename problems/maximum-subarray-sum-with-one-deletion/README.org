@@ -12,7 +12,7 @@ Identity number which appears exactly once.
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]]
+- Tag: [[https://code.dennyzhang.com/review-maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]]
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
@@ -25,7 +25,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-subarray-sum-with-one-deletion
+// https://code.dennyzhang.com/maximum-subarray-sum-with-one-deletion
 // Basic Ideas: two pass: left + right
 //  
 //  prev_max + S[i] + post_max

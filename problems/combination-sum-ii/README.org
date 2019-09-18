@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/combination-sum-ii
+// https://code.dennyzhang.com/combination-sum-ii
 // Basic Ideas: backtracking
 //
 // Complexity: Time ? Space ?
@@ -76,7 +76,7 @@ func combinationSum2(candidates []int, target int) [][]int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/combination-sum-ii
+## https://code.dennyzhang.com/combination-sum-ii
 ## Basic Ideas: Sort the list with descending order
 ##
 ## Complexity: Time O(n^2), Space O(n)

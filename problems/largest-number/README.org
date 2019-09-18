@@ -27,7 +27,7 @@ Credits To: [[https://leetcode.com/problems/largest-number/description/][leetcod
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/largest-number
+## https://code.dennyzhang.com/largest-number
 ## Basic Ideas: Quick sort list with customized compare logic. Then Concat them as one.
 ##             "9" vs "30"
 ##             "34" vs "3"

@@ -34,7 +34,7 @@ Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems
 Credits To: [[https://leetcode.com/problems/palindrome-partitioning/description/][leetcode.com]]
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/palindrome-partitioning
+## https://code.dennyzhang.com/palindrome-partitioning
 ## Basic Ideas: Divide and conquer
 ## Complexity: Time O(), Space O()
 ## Assumptions:

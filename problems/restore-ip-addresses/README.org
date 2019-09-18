@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/restore-ip-addresses
+## https://code.dennyzhang.com/restore-ip-addresses
 class Solution(object):
     def restoreIpAddresses(self, s):
         """

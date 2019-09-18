@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/my-calendar-ii
+## https://code.dennyzhang.com/my-calendar-ii
 class MyCalendarTwo(object):
 
     def __init__(self):

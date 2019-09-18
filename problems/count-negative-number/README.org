@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/count-negative-number
+## https://code.dennyzhang.com/count-negative-number
 class Solution:
     """
     @param nums: the sorted matrix

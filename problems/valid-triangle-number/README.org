@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/valid-triangle-number
+## https://code.dennyzhang.com/valid-triangle-number
 ## Basic Ideas: Like 3sum
 ##       Sort the list, then use 3 loop
 ##       When the sum 2 shorter sides is greater 

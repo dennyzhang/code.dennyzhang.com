@@ -36,7 +36,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/excel-sheet-column-title
+## https://code.dennyzhang.com/excel-sheet-column-title
 ## Basic Ideas:
 ##         a*(26^3) + b*(26^2) + c*(26) + d
 ##          1 ->  (1)  -> A

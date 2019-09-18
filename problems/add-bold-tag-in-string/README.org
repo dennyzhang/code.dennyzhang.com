@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/add-bold-tag-in-string
+// https://code.dennyzhang.com/add-bold-tag-in-string
 // Basic Ideas: Merge ranges
 // Complexity: Time O(n*w), Space O(n)
 //             w = total length of dict

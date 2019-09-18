@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/actors-and-directors-who-cooperated-at-least-three-times
+# https://code.dennyzhang.com/actors-and-directors-who-cooperated-at-least-three-times
 select actor_id, director_id
 from ActorDirector
 group by actor_id, director_id

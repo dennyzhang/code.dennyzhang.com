@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/flip-string-to-monotone-increasing
+// https://code.dennyzhang.com/flip-string-to-monotone-increasing
 // Basic Ideas: dynamic programming
 // dp[i][0]: how many changes to the make the sequence ends with 0
 // dp[i][1]: how many changes to the make the sequence ends with 1

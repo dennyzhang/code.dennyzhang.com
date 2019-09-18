@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subarray
+:type:     subarray, presum
 :END:
 ---------------------------------------------------------------------
 Contiguous Array
@@ -12,7 +12,7 @@ Contiguous Array
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]]
+- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/followup-presum][#presum]]
 ---------------------------------------------------------------------
 Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
 
@@ -39,13 +39,14 @@ Credits To: [[https://leetcode.com/problems/contiguous-array/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/contiguous-array
-## Basic Ideas: Get sum of subarray. (For each 1, add 1; For each 0, extract 1)
-##              And build a hashmap for the fastest position of a given sum.
+## https://code.dennyzhang.com/contiguous-array
+## Basic Ideas: 
+##  Get sum of subarray. (For each 1, add 1; For each 0, extract 1)
+##  And build a hashmap for the fastest position of a given sum.
 ##
-##       For each item nums[i]:
-##             If it's 1, find the fastest position k with sum[k] = sum[i] - 1
-##             If it's 0, find the faster postion k with sum[k] = sum[i] + 1
+##  For each item nums[i]:
+##    If it's 1, find the fastest position k with sum[k] = sum[i] - 1
+##    If it's 0, find the faster postion k with sum[k] = sum[i] + 1
 ##
 ## Complexity: Time O(n), Space O(n)
 class Solution:

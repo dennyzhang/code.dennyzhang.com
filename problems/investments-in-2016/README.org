@@ -68,7 +68,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/investments-in-2016
+## https://code.dennyzhang.com/investments-in-2016
 select sum(TIV_2016) as TIV_2016
 from insurance
 where concat(LAT, ',', LON)

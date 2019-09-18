@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: With sub-function
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/binary-tree-maximum-node
+## https://code.dennyzhang.com/binary-tree-maximum-node
 ## Basic Ideas: any tree traversal
 ## Here we use pre-order
 ## Complexity: Time O(n), Space O(h)
@@ -76,7 +76,7 @@ class Solution:
 - Solution: Without sub-function
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/binary-tree-maximum-node
+## https://code.dennyzhang.com/binary-tree-maximum-node
 ## Basic Ideas: any tree traversal
 ## Here we use pre-order
 ## Complexity: Time O(n), Space O(h)

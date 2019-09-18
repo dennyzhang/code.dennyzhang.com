@@ -88,7 +88,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/unpopular-books
+## https://code.dennyzhang.com/unpopular-books
 select book_id, name
 from Books
 where book_id not in (

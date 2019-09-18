@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/binary-number-with-alternating-bits
+## https://code.dennyzhang.com/binary-number-with-alternating-bits
 class Solution(object):
     def hasAlternatingBits(self, n):
         """

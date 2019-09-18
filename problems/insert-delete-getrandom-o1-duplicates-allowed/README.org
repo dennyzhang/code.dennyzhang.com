@@ -53,7 +53,7 @@ Credits To: [[https://leetcode.com/problems/insert-delete-getrandom-o1-duplicate
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
+## https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
 
 #+END_SRC
 

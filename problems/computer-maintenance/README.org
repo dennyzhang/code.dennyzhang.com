@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/computer-maintenance
+## https://code.dennyzhang.com/computer-maintenance
 class Solution:
     """
     @param n: the rows of matrix

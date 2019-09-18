@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: search from beginning to the end
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/search-in-a-sorted-array-of-unknown-size
+## https://code.dennyzhang.com/search-in-a-sorted-array-of-unknown-size
 ## Basic Ideas:
 ##  The array has no more than 10000 items. 
 ##  So we simply search from begining to the end.
@@ -70,7 +70,7 @@ class Solution:
 - Solution: binary search
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/search-in-a-sorted-array-of-unknown-size
+## https://code.dennyzhang.com/search-in-a-sorted-array-of-unknown-size
 ## Basic Ideas: binary search
 ##  
 ##  Find the right boundry

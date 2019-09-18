@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/repeated-dna-sequences
+## https://code.dennyzhang.com/repeated-dna-sequences
 ## Basic Ideas: sliding window + hashmap
 ##
 ## Complexity: Time O(n), Space O(n)

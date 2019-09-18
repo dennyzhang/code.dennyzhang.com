@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/valid-parenthesis-string
+// https://code.dennyzhang.com/valid-parenthesis-string
 // Basic Ideas:
 //   Two pass. From left to right; From right to left
 //   l_count: (

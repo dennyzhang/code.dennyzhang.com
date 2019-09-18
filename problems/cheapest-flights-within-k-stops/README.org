@@ -67,7 +67,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/cheapest-flights-within-k-stops
+## https://code.dennyzhang.com/cheapest-flights-within-k-stops
 ## Basic Ideas: BFS
 ##
 ## Complexity: Time O(n), Space O(n)

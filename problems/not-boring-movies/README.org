@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/not-boring-movies
+## https://code.dennyzhang.com/not-boring-movies
 select * from cinema
 where description != '%boring%' and id %2 != 0
 order by rating desc;

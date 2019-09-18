@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: stack - only push all characters except ')'
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
+// https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
 // Basic Ideas: stack
 //
 //   How to handle: substring without parethensis or with parethensis?
@@ -98,7 +98,7 @@ func reverseParentheses(s string) string {
 - Solution: stack - push indices, instead of elements
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
+// https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
 // Basic Ideas: stack
 //
 //   Push indices instead of items to stack
@@ -135,7 +135,7 @@ func reverseParentheses(s string) string {
 - Solution: stack - Push string to stack, instead of characters
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
+// https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
 // Basic Ideas: stack
 //
 //   Push string to stack, instead of characters

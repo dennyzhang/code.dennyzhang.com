@@ -55,7 +55,7 @@ Credits To: [[https://leetcode.com/problems/insert-delete-getrandom-o1/descripti
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/insert-delete-getrandom-o1
+## https://code.dennyzhang.com/insert-delete-getrandom-o1
 ## Basic Ideas:
 ##      an array: host all values
 ##           If an existing value has been removed, replace it with the tail. And remove the tail

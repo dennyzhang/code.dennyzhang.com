@@ -53,7 +53,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution: without helper function
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-repeating-character-replacement
+// https://code.dennyzhang.com/longest-repeating-character-replacement
 // Basic Ideas: sliding timewindow
 //
 //  Notice: 
@@ -94,7 +94,7 @@ func characterReplacement(s string, k int) int {
 
 - Solution: with helper function
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-repeating-character-replacement
+// https://code.dennyzhang.com/longest-repeating-character-replacement
 // Basic Ideas: sliding timewindow
 //
 //  Notice: 

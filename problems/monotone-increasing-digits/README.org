@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/monotone-increasing-digits
+## https://code.dennyzhang.com/monotone-increasing-digits
 ## Basic Ideas: Greedy
 ##
 ##   After checking the changes, we have one key observastion:

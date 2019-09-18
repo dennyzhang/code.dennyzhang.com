@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/flood-fill
+## https://code.dennyzhang.com/flood-fill
 ## Basic Ideas: dfs
 ##              If the position we checked doesn't have the original value, stop
 ##              Otherwise mark it as the new value, and search 4 directions.

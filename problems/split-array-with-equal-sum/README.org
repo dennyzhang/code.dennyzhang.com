@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/split-array-with-equal-sum
+// https://code.dennyzhang.com/split-array-with-equal-sum
 // Basic Ideas:
 // Split the list with 4 groups of equal values
 //

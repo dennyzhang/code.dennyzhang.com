@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/additive-number
+// https://code.dennyzhang.com/additive-number
 // Basic Ideas: Find all possible first two numbers.
 // The number might be overflow.
 // We may not be able to convert string to int, add them, then convert back to string.

@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/string-to-integer-atoi
+## https://code.dennyzhang.com/string-to-integer-atoi
 class Solution(object):
     def myAtoi(self, str):
         """

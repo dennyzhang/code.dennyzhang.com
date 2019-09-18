@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/read-n-characters-given-read4
+## https://code.dennyzhang.com/read-n-characters-given-read4
 ## Basic Ideas: Use cached reading
 ##     Notice: We don't need to save the status of previous read function
 ##

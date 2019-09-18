@@ -35,7 +35,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 #!/usr/bin/env python
-## Blog link: https://code.dennyzhang.com/find-anagram-mappings
+## https://code.dennyzhang.com/find-anagram-mappings
 ## Basic Ideas: 
 ## Complexity: Time O(n^2), Space O(1)
 ## Assumption: whether I can change B?

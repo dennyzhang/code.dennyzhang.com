@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-k-th-smallest-pair-distance
+// https://code.dennyzhang.com/find-k-th-smallest-pair-distance
 // Basic Ideas: binary search + sliding window
 //
 // binary search: what distance the k-th smallest would be

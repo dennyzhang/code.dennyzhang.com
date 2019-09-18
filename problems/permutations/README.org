@@ -36,7 +36,7 @@ Credits To: [[https://leetcode.com/problems/permutations/description/][leetcode.
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/permutations
+## https://code.dennyzhang.com/permutations
 ## Basic Ideas: Insertion
 ##            1
 ##            12 -> 12; 21

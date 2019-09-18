@@ -87,7 +87,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/sales-person
+## https://code.dennyzhang.com/sales-person
 select name
 from salesperson
 where name not in

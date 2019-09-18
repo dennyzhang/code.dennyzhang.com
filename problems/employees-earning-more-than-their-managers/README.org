@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/employees-earning-more-than-their-managers
+## https://code.dennyzhang.com/employees-earning-more-than-their-managers
 select t1.Name as Employee
 from Employee as t1 inner join Employee as t2
 on t1.ManagerId = t2.Id

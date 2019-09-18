@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution recursive
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
+// https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
 // Basic Ideas: dfs
 //
 //  Instead of searching both p and q, search one
@@ -90,7 +90,7 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 - Solution: Caculate the visit path
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
+// https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
 // Basic Ideas: dfs
 //
 // Complexity: Time O(n), Space O(h)
@@ -139,7 +139,7 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
+## https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree
 ## Basic Ideas: recursive
 ##
 ## Notice:

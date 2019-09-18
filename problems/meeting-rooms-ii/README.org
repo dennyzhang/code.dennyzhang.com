@@ -37,7 +37,7 @@ Credits To: [[https://leetcode.com/problems/meeting-rooms-ii/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/meeting-rooms-ii
+// https://code.dennyzhang.com/meeting-rooms-ii
 // Basic Ideas: heap
 //
 //   Allocate the earlier requester
@@ -94,7 +94,7 @@ func minMeetingRooms(intervals [][]int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/meeting-rooms-ii
+// https://code.dennyzhang.com/meeting-rooms-ii
 // Basic Ideas: heap
 //
 //   Allocate the earlier requester

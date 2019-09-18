@@ -26,7 +26,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sort-colors
+## https://code.dennyzhang.com/sort-colors
 class Solution(object):
     def sortColors(self, nums):
         """

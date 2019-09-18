@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: Recursive
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/all-possible-full-binary-trees
+// https://code.dennyzhang.com/all-possible-full-binary-trees
 // Basic Ideas: Recursive
 // If n is even, return nil
 //

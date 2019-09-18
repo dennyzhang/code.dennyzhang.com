@@ -32,7 +32,7 @@ Credits To: [[https://leetcode.com/problems/rectangle-area/description/][leetcod
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/rectangle-area
+## https://code.dennyzhang.com/rectangle-area
 ## Basic Ideas:
 ##     width: min(C,G)-max(A,E)
 ##     height: min(D, H)-max(B,F)

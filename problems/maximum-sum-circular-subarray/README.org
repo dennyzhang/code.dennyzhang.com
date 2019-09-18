@@ -13,7 +13,7 @@ Maximum Sum Circular Subarray
 Similar Problems:
 - [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/tag/circulararray][#circulararray]]
+- Tag: [[https://code.dennyzhang.com/review-maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/tag/circulararray][#circulararray]]
 ---------------------------------------------------------------------
 Given a circular array C of integers represented by A, find the maximum possible sum of a non-empty subarray of C.
 
@@ -70,7 +70,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-sum-circular-subarray
+// https://code.dennyzhang.com/maximum-sum-circular-subarray
 // Basic Ideas: dynamic programming + leftrightpass
 //
 // f(i): From A[0] to A[i], find the sum of max subarray which ends with A[i]

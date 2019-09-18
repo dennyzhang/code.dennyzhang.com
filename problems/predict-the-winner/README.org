@@ -50,7 +50,7 @@ Credits To: [[https://leetcode.com/problems/predict-the-winner/description/][lee
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/predict-the-winner
+// https://code.dennyzhang.com/predict-the-winner
 // Basic Ideas: Dynamic Programming
 //
 // f(i, j): max value we can get, if we start with [i, j]

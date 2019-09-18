@@ -34,7 +34,7 @@ Credits To: [[https://leetcode.com/problems/paint-fence/description/][leetcode.c
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/paint-fence
+## https://code.dennyzhang.com/paint-fence
 ## Basic Ideas: Dynamic programming
 ##     To get f(n), it can only have two cases:
 ##           Fence nth uses the same color as fence n-1 th: f(n-1)*(k-1)

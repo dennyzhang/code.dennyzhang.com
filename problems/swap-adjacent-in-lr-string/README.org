@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/swap-adjacent-in-lr-string
+## https://code.dennyzhang.com/swap-adjacent-in-lr-string
 ## Basic Ideas: Check 3 rules
 ##       R won't bypass X: count 'R' from left to right
 ##       X won't bypass L: count 'L' from right to left 

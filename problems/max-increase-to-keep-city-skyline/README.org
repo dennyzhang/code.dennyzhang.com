@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/max-increase-to-keep-city-skyline
+## https://code.dennyzhang.com/max-increase-to-keep-city-skyline
 ## Basic Ideas:
 ## Complexity: O(m*n), Space O(n+m)
 class Solution:

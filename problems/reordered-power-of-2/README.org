@@ -61,7 +61,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/reordered-power-of-2
+// https://code.dennyzhang.com/reordered-power-of-2
 // Basic Ideas:
 // 10^9 ~= 2^30. We only have 30 numbers which is power of 2
 //

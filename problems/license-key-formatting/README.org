@@ -50,7 +50,7 @@ Credits To: [[https://leetcode.com/problems/license-key-formatting/description/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/license-key-formatting
+// https://code.dennyzhang.com/license-key-formatting
 // Basic Ideas: two pass: from left to right
 //
 // Complexity: Time O(n), Space O(n)
@@ -84,7 +84,7 @@ func licenseKeyFormatting(S string, K int) string {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/license-key-formatting
+// https://code.dennyzhang.com/license-key-formatting
 // Basic Ideas: two pass: from right to left
 //
 // Complexity: Time O(n), Space O(n)
@@ -115,7 +115,7 @@ func licenseKeyFormatting(S string, K int) string {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/license-key-formatting
+## https://code.dennyzhang.com/license-key-formatting
 ## Basic Ideas: Get the length of non-dash string
 ##              Then we know how many dash we need
 ##              Move from right to left with two pointers

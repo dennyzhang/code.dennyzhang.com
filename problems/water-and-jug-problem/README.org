@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 
 - GCD
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/water-and-jug-problem
+// https://code.dennyzhang.com/water-and-jug-problem
 // Basic Ideas: Math: gcd
 //
 //  Let's say we can make it. It means z=ax+by
@@ -69,7 +69,7 @@ func canMeasureWater(x int, y int, z int) bool {
 
 - BFS
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/water-and-jug-problem
+// https://code.dennyzhang.com/water-and-jug-problem
 // Basic Ideas: BFS
 //
 // (i, j), i is what jug x hold, j is what jug y hold

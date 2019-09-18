@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/campus-bikes
+// https://code.dennyzhang.com/campus-bikes
 // Basic Ideas: bucket sort
 //
 //  Maximum distance is 2000

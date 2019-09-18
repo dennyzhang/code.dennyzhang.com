@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution 1
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/rank-scores
+## https://code.dennyzhang.com/rank-scores
 set @rownr=0;
 select t1.Score, t2.rank as Rank
 from Scores as t1 inner join
@@ -64,7 +64,7 @@ order by t1.Score desc
 
 - Solution 2
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/rank-scores
+## https://code.dennyzhang.com/rank-scores
 select ranking.Score as Score, ranking.Ranking as Rank
     from Scores inner join
       (select t1.Score as Score, count(1) as Ranking

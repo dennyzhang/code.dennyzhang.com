@@ -32,7 +32,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: Without dummy Node
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/convert-array-list-to-linked-list
+## https://code.dennyzhang.com/convert-array-list-to-linked-list
 ## Basic Ideas:
 ## Complexity: Time O(n), Space O(n)
 """
@@ -64,7 +64,7 @@ class Solution:
 - Solution: With dummy Node
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/convert-array-list-to-linked-list
+## https://code.dennyzhang.com/convert-array-list-to-linked-list
 ## Basic Ideas:
 ## Complexity: Time O(n), Space O(n)
 """

@@ -53,7 +53,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/permutation-sequence
+// https://code.dennyzhang.com/permutation-sequence
 // Basic Ideas:
 // For length of k, there are k! combinations
 // We can decide the digits from left to right

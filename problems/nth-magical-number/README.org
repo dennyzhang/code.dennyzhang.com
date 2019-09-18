@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/nth-magical-number
+// https://code.dennyzhang.com/nth-magical-number
 
 #+END_SRC
 

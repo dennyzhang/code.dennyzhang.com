@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/range-addition-ii
+## https://code.dennyzhang.com/range-addition-ii
 ## Basic Ideas: The biggest number will happen in the left-corner
 ##             min(ops_i) * min(ops_j)
 ##

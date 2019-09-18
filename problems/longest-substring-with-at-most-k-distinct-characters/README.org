@@ -24,7 +24,7 @@ Credits To: [[https://leetcode.com/problems/longest-substring-with-at-most-k-dis
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
+// https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
 // Basic Ideas: sliding window
 //
 // Complexity: Time O(n*k), Space O(k)
@@ -58,7 +58,7 @@ func lengthOfLongestSubstringKDistinct(s string, k int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
+// https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
 // Basic Ideas: sliding window
 //
 // Complexity: Time O(n*k), Space O(k)
@@ -89,7 +89,7 @@ func lengthOfLongestSubstringKDistinct(s string, k int) int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
+## https://code.dennyzhang.com/longest-substring-with-at-most-k-distinct-characters
 ## Basic Ideas:
 ##
 ## Complexity: Time O(n*k), Space O(k)

@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/implement-magic-dictionary
+## https://code.dennyzhang.com/implement-magic-dictionary
 ## Basic Ideas: Trie Tree + recursive
 ##
 ## Complexity: Time O(w*h): w is the width, h is the height

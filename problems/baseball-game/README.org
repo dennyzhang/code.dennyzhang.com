@@ -64,7 +64,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/baseball-game
+## https://code.dennyzhang.com/baseball-game
 ## Basic Ideas: stack: only pop when we get a 'D'
 ##
 ##   We may get sequence like: 3 +

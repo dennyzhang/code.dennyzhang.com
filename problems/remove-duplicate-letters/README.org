@@ -34,7 +34,7 @@ Credits To: [[https://leetcode.com/problems/remove-duplicate-letters/description
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/remove-duplicate-letters
+// https://code.dennyzhang.com/remove-duplicate-letters
 // Basic Ideas: greedy + stack + hashmap
 //   Try to iterate into the final result
 //   If current letter is smaller than previous one, treat current one as preferency

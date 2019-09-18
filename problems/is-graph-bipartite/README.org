@@ -60,7 +60,7 @@ Credits To: [[https://leetcode.com/problems/is-graph-bipartite/description/][lee
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/is-graph-bipartite
+## https://code.dennyzhang.com/is-graph-bipartite
 class Solution:
     ## Basic Ideas: DFS
     ##

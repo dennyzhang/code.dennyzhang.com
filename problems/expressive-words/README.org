@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/expressive-words
+## https://code.dennyzhang.com/expressive-words
 ## Basic Ideas:
 ##    From "heeellooo To": ["h", "3", "e", "l", "l", "3", "o"]
 ##    Then compare it with ["hello", "hi", "helo"]

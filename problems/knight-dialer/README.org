@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/knight-dialer
+// https://code.dennyzhang.com/knight-dialer
 // Basic Ideas: dynamic programming
 //
 // next steps:
@@ -97,7 +97,7 @@ func knightDialer(N int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/knight-dialer
+// https://code.dennyzhang.com/knight-dialer
 // Basic Ideas: dynamic programming
 //
 // [-2, 1], [-1, 2], [1, 2], [2, 1], 

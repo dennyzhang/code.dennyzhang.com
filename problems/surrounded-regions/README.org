@@ -32,7 +32,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/surrounded-regions
+## https://code.dennyzhang.com/surrounded-regions
 ## Basic Ideas: Two kind of Os: 
 ##                 1 it will definitely not surrounded by 'X'. This happens when 'O' happens in the boarders.
 ##                 2 it might or might not

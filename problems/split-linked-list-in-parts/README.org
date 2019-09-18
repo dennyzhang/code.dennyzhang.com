@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/split-linked-list-in-parts
+## https://code.dennyzhang.com/split-linked-list-in-parts
 class Solution(object):
     def splitListToParts(self, root, k):
         """

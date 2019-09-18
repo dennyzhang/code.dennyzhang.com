@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/linked-list-components
+## https://code.dennyzhang.com/linked-list-components
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):

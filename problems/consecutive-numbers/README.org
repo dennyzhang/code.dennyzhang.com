@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/consecutive-numbers
+## https://code.dennyzhang.com/consecutive-numbers
 SET @group_number=0;
 SET @id_number1=0;
 SET @id_number2=0;

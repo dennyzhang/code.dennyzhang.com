@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sum-of-left-leaves
+## https://code.dennyzhang.com/sum-of-left-leaves
 class Solution(object):
     ## Idea: BFS. (element, is_left)
     ##       DFS

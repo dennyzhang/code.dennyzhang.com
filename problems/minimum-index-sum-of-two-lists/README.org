@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/minimum-index-sum-of-two-lists
+## https://code.dennyzhang.com/minimum-index-sum-of-two-lists
 class Solution(object):
     def findRestaurant(self, list1, list2):
         """

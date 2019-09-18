@@ -44,7 +44,7 @@ Credits To: [[http://www.lintcode.com/en/problem/deliver-the-message/][lintcode.
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/deliver-the-message
+## https://code.dennyzhang.com/deliver-the-message
 class Solution:
     """
     @param t: the time of each employee to pass a meeage

@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution 1: BFS
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/shortest-distance-to-a-character
+// https://code.dennyzhang.com/shortest-distance-to-a-character
 // Basic Ideas: BFS
 // Complexity: Time O(n), Space O(1)
 func shortestToChar(S string, C byte) []int {
@@ -74,7 +74,7 @@ func shortestToChar(S string, C byte) []int {
 
 - Solution 2: Two pass. Update + Adjustment
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/shortest-distance-to-a-character
+// https://code.dennyzhang.com/shortest-distance-to-a-character
 // Basic Ideas: Two pass
 //    Pass 1: left to right. Distance from previous C
 //    Pass 2: right to left. Distance for min(old_distance, distance_from_following_C)

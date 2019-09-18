@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/pascals-triangle-ii
+## https://code.dennyzhang.com/pascals-triangle-ii
 class Solution(object):
     def getRow(self, rowIndex):
         """

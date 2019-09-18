@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/walls-and-gates
+## https://code.dennyzhang.com/walls-and-gates
 ## Basic Ideas: BFS
 ##      For each 0, and configure the values to the level number
 ##      If the neighbors is 0 or value equals current level, skip them

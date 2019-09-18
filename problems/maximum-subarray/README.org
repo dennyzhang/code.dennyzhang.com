@@ -12,7 +12,7 @@ Maximum Subarray
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/tag/maxsubarraysum][#maxsubarraysum]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/review-maxsubarraysum][#maxsubarraysum]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
 
@@ -31,7 +31,7 @@ Credits To: [[https://leetcode.com/problems/maximum-subarray/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-subarray
+// https://code.dennyzhang.com/maximum-subarray
 // Basic Ideas: presum
 // Complexity: Time O(n), Space O(n)
 func maxSubArray(nums []int) int {

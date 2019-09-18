@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/poison-test
+// https://code.dennyzhang.com/poison-test
 // Basic Ideas:
 // Complexity: Time O(log(n)), Time O(1)
 /**

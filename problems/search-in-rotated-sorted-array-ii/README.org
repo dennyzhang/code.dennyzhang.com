@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/search-in-rotated-sorted-array-ii
+## https://code.dennyzhang.com/search-in-rotated-sorted-array-ii
 ## Basic Ideas: The worst case would be: 1111112, then you need to check 2 or 3
 ##
 ## Complexity: Time O(n), Space O(1)

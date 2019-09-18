@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/evaluate-division
+// https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: union find + weighted graph
 //
 // Complexity: Time O(n+k) Space O(n)
@@ -103,7 +103,7 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/evaluate-division
+// https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: union find + weighted graph
 //
 // Complexity: Time O(n) Space O(n)
@@ -165,7 +165,7 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/evaluate-division
+// https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: dfs + weighted graph
 //
 // Complexity: Time O(n*k) Space O(n)

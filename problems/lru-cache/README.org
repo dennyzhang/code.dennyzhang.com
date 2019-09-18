@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/lru-cache
+## https://code.dennyzhang.com/lru-cache
 ## Basic Ideas: Double linked list + hashmap
 ##
 ##   We need to mapping from dlink to hashmap,

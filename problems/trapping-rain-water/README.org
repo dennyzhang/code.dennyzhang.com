@@ -38,7 +38,7 @@ Similar problem: [[https://code.dennyzhang.com/product-of-array-except-self][Pro
 - Solution: Two pass
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/trapping-rain-water
+// https://code.dennyzhang.com/trapping-rain-water
 // Basic Ideas: leftrightpass
 // For each cell, find the left maximum and right maximum
 // Then caculate how much water current cell can hold

@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/jewels-and-stones
+// https://code.dennyzhang.com/jewels-and-stones
 // Basic Ideas: set/hashmap
 // Complexity: Time O(n), Space O(n)
 func numJewelsInStones(J string, S string) int {

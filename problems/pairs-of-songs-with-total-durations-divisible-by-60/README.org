@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/pairs-of-songs-with-total-durations-divisible-by-60
+// https://code.dennyzhang.com/pairs-of-songs-with-total-durations-divisible-by-60
 // Basic Ideas: hashmap for limited value range
 // Complexity: Time O(n), Space O(1)
 func numPairsDivisibleBy60(time []int) int {

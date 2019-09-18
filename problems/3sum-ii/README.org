@@ -43,7 +43,7 @@ Credits To: [[http://www.lintcode.com/en/problem/3sum-ii/][LintCode.com]]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/3sum-ii
+## https://code.dennyzhang.com/3sum-ii
 class Solution:
     """
     @param n: an integer

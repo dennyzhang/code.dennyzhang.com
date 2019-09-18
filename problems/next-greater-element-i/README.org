@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/next-greater-element-i
+// https://code.dennyzhang.com/next-greater-element-i
 // Basic Ideas: monotone stack without array of indices
 //  1 3 4 2
 //
@@ -79,7 +79,7 @@ func nextGreaterElement(nums1 []int, nums2 []int) []int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/next-greater-element-i
+// https://code.dennyzhang.com/next-greater-element-i
 // Basic Ideas: monotone stack with array of indices
 //  1 3 4 2
 //
@@ -114,7 +114,7 @@ func nextGreaterElement(nums1 []int, nums2 []int) []int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/next-greater-element-i
+## https://code.dennyzhang.com/next-greater-element-i
 ## Basic Ideas: Descending stack
 ##
 ## Complexity: Time O(n), Space O(n)

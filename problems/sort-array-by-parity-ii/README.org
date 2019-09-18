@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: array
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/sort-array-by-parity-ii
+// https://code.dennyzhang.com/sort-array-by-parity-ii
 // Basic Ideas: two pointer
 // Move even to the first half, the odd to the second half
 // Then swap items

@@ -29,7 +29,7 @@ Credits To: [[https://leetcode.com/problems/candy/description/][leetcode.com]]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/candy
+## https://code.dennyzhang.com/candy
 ## Basic Ideas:
 ##
 ##   Assign each child 1 candy

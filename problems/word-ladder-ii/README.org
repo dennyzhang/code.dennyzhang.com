@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/word-ladder-ii
+## https://code.dennyzhang.com/word-ladder-ii
 
 #+END_SRC
 

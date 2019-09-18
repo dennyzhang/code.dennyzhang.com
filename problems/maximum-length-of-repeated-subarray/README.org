@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution1: dp: Time O(n*m), Space O(n*m)
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray
+// https://code.dennyzhang.com/maximum-length-of-repeated-subarray
 // Basic Ideas: dynamic programming
 //
 //   Let's say the common subarray starts with A[i] and B[j]
@@ -74,7 +74,7 @@ func findLength(A []int, B []int) int {
 
 - - Solution2: dp: Time O(n*m), Space O(n+m)
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-length-of-repeated-subarray
+// https://code.dennyzhang.com/maximum-length-of-repeated-subarray
 //
 // From right to left
 //

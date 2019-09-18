@@ -73,7 +73,7 @@ Leave me comments, if you have better ways to solve.
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/redundant-connection-ii
+// https://code.dennyzhang.com/redundant-connection-ii
 
 #+END_SRC
 

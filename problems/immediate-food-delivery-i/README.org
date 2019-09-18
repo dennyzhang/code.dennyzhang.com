@@ -67,7 +67,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/immediate-food-delivery-i
+## https://code.dennyzhang.com/immediate-food-delivery-i
 select round(100*sum(case when order_date=customer_pref_delivery_date then 1 else 0 end)/count(1), 2) immediate_percentage 
 from Delivery
 #+END_SRC

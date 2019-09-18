@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: Two pass
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/flatten-a-multilevel-doubly-linked-list
+## https://code.dennyzhang.com/flatten-a-multilevel-doubly-linked-list
 ## Basic Ideas: dfs
 ## Get the next correct first, then set the prev and child
 ## Complexity:
@@ -93,7 +93,7 @@ class Solution(object):
 
 - Solution: One pass
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/flatten-a-multilevel-doubly-linked-list
+## https://code.dennyzhang.com/flatten-a-multilevel-doubly-linked-list
 ## Basic Ideas: dfs
 ## Complexity:
 """

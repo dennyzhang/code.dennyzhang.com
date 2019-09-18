@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/number-of-enclaves
+// https://code.dennyzhang.com/number-of-enclaves
 // Basic Ideas: dfs
 // Complexity: Time O(n), Space O(1)
 func dfs(A [][]int, i int, j int, count *int) bool {

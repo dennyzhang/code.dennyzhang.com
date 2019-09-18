@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/two-city-scheduling
+// https://code.dennyzhang.com/two-city-scheduling
 // Basic Ideas: greedy
 //  Get the absolute difference for each person
 //  Start to settle down with persons whos difference are bigger

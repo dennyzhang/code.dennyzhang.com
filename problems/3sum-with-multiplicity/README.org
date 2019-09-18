@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/3sum-with-multiplicity
+// https://code.dennyzhang.com/3sum-with-multiplicity
 // Basic Ideas: fixed value range
 // If a + b + c == target, and a, b, c are all different
 //      count(a) * count(b) * count(c)

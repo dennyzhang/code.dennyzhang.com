@@ -24,7 +24,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
+## https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-inorder-traversal
 ## Basic Ideas:
 ##  Preorder: M L R
 ##   Inorder: L R M

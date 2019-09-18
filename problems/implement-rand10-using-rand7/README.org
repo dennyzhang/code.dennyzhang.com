@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/implement-rand10-using-rand7
+## https://code.dennyzhang.com/implement-rand10-using-rand7
 ## Basic Ideas:
 ##  f(7) -> f(49) -> f(40) -> f(10)
 ##    0 - 48: 6*x+y

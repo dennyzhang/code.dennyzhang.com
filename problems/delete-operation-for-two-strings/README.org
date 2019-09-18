@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/delete-operation-for-two-strings
+// https://code.dennyzhang.com/delete-operation-for-two-strings
 // Basic Ideas: dynamic programming
 //
 // dp(i, j): make word1[0:i] and word2[0:j]

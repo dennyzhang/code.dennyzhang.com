@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/best-sightseeing-pair
+// https://code.dennyzhang.com/best-sightseeing-pair
 // Basic Ideas:
 //    Compose two new arrays: l1 and l2
 //    l1[i] = A[i]+i

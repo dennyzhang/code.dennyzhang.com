@@ -32,7 +32,7 @@ Credits To: [[https://leetcode.com/problems/all-oone-data-structure/description/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/all-oone-data-structure
+## https://code.dennyzhang.com/all-oone-data-structure
 ## Basic Ideas:
 ##          hasmap: save key and values
 ##          How to achieve GetMinKey() with O(1)?

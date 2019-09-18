@@ -51,7 +51,7 @@ Credits To: [[https://leetcode.com/problems/friend-requests-ii-who-has-the-most-
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends
+## https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends
 select t.id, sum(t.num) as num
 from (
       (select requester_id as id, count(1) as num

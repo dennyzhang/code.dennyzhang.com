@@ -74,7 +74,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/new-users-daily-count
+## https://code.dennyzhang.com/new-users-daily-count
 select login_date, count(1) as user_count
 from (select user_id, min(activity_date) as login_date
     from Traffic

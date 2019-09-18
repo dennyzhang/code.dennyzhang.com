@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-median-given-frequency-of-numbers
+## https://code.dennyzhang.com/find-median-given-frequency-of-numbers
 select avg(t3.Number) as median
 from Numbers as t3 
 inner join 

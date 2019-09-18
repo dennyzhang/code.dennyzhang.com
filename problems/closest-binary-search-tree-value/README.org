@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/closest-binary-search-tree-value
+## https://code.dennyzhang.com/closest-binary-search-tree-value
 ## Basic Ideas:
 ##    If the exact match, return
 ##    If current node is bigger than the target, we get a starting value.

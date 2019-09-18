@@ -42,7 +42,7 @@ Credits To: [[http://www.lintcode.com/en/problem/the-biggest-score-on-the-tree/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/the-biggest-score-on-the-tree
+## https://code.dennyzhang.com/the-biggest-score-on-the-tree
 class MyTree:
     def __init__(self, profit):
         self.profit = profit

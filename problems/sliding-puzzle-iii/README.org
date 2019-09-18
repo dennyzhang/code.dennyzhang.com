@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sliding-puzzle-iii
+## https://code.dennyzhang.com/sliding-puzzle-iii
 class Solution:
     """
     @param matrix: The 3*3 matrix

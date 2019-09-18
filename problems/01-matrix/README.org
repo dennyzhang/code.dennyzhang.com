@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/01-matrix
+## https://code.dennyzhang.com/01-matrix
 ## Basic Ideas:
 ##        There are two types of 1: Adjacent nodes have 0; don't have
 ##

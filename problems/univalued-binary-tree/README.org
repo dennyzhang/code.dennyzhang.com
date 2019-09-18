@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - With mini function
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/univalued-binary-tree
+// https://code.dennyzhang.com/univalued-binary-tree
 // Basic Ideas: pre-order tree traseveral
 // Complexity: Time O(n), Space O(n)
 /**
@@ -70,7 +70,7 @@ func isUnivalTree(root *TreeNode) bool {
 
 - Without mini function
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/univalued-binary-tree
+// https://code.dennyzhang.com/univalued-binary-tree
 // Basic Ideas: pre-order tree traseveral
 // Complexity: Time O(n), Space O(n)
 /**

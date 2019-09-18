@@ -1,0 +1,62 @@
+* Series: #groupelements - seperate a list into several groups  :BLOG:Series:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: series
+:END:
+---------------------------------------------------------------------
+Seperate a list into several groups
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-groupelements"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
+*Questions*
+| Name                                                     | Example |
+|----------------------------------------------------------+---------|
+| When to collect result?                                  |         |
+| Common error: Avoid missing the last group?              |         |
+| Corner case: What about no groups? What about one group? |         |
+| Implementation: one for loop vs two for loop             |         |
+
+*Code Skeleton*
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/summary-ranges
+// Basic Ideas: twopointer + simulation
+//
+// Complexity: Time O(n), Space O(1)
+func summaryRanges(nums []int) []string {
+    res := []string{}
+    // nums[i...j]
+    i := 0
+    for j:=0; j<len(nums); j++ {
+        if j+1<len(nums) && nums[j]+1 == nums[j+1] {
+            continue
+        }
+       // last group or group ends
+        if i==j {
+            res = append(res, fmt.Sprintf("%d", nums[i]))
+        } else {
+            res = append(res, fmt.Sprintf("%d->%d", nums[i], nums[j]))
+        }
+        // need to start a new group
+        i = j+1
+    }
+    return res
+}
+#+END_SRC
+
+See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
+[display-posts tag="groupelements" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

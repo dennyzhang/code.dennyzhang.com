@@ -1,0 +1,29 @@
+* Review: Bit manipulation problems                             :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: bitmanipulation, review
+:END:
+---------------------------------------------------------------------
+Bit manipulation problems
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-bitmanipulation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
+
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
+See all bitmanipulation problems: [[https://code.dennyzhang.com/review-bitmanipulation/][#bitmanipulation]].
+[display-posts tag="bitmanipulation" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
+* TODO https://blog.csdn.net/roufoo/article/details/88773399              :noexport:

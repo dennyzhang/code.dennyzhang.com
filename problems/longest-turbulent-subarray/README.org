@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-turbulent-subarray
+// https://code.dennyzhang.com/longest-turbulent-subarray
 // Basic Ideas: dynamic programming
 //   9,4,2,10,7,8,8,1,9
 // I 1,1,1,3,1,5,1,1,3

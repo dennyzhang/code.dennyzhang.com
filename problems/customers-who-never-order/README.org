@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/customers-who-never-order
+## https://code.dennyzhang.com/customers-who-never-order
 select Customers.Name as Customers
 from Customers left join Orders on Customers.Id = Orders.CustomerId
 where Orders.CustomerId is Null;

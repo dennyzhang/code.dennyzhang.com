@@ -49,7 +49,7 @@ Credits To: [[https://leetcode.com/problems/fizz-buzz/description/][leetcode.com
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/fizz-buzz
+## https://code.dennyzhang.com/fizz-buzz
 
 #+END_SRC
 

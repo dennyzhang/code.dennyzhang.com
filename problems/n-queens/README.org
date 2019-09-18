@@ -37,7 +37,7 @@ Credits To: [[https://leetcode.com/problems/n-queens/description/][leetcode.com]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/n-queens
+## https://code.dennyzhang.com/n-queens
 ## Basic Ideas: backtracking.
 ##              Place queens row by row
 ##              Check if place in current position, examine the column and triangle

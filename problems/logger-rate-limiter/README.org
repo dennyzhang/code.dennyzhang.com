@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/logger-rate-limiter
+## https://code.dennyzhang.com/logger-rate-limiter
 ## Basic Ideas: hasmap: message -> timestamp
 ##
 ## Complexity: Time O(1), Space O(n)

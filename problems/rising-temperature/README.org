@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/rising-temperature
+## https://code.dennyzhang.com/rising-temperature
 select t1.Id
 from Weather as t1 join Weather as t2
 on DATE_ADD(t2.Date, INTERVAL 1 DAY) = t1.Date

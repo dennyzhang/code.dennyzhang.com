@@ -1,0 +1,92 @@
+* Leetcode: Prison Cells After N Days                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Prison Cells After N Days
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/prison-cells-after-n-days"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+There are 8 prison cells in a row, and each cell is either occupied or vacant.
+
+Each day, whether the cell is occupied or vacant changes according to the following rules:
+
+- If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied.
+- Otherwise, it becomes vacant.
+
+(Note that because the prison is a row, the first and the last cells in the row can't have two adjacent neighbors.)
+
+We describe the current state of the prison in the following way: cells[i] == 1 if the i-th cell is occupied, else cells[i] == 0.
+
+Given the initial state of the prison, return the state of the prison after N days (and N such changes described above.)
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: cells = [0,1,0,1,1,0,0,1], N = 7
+Output: [0,0,1,1,0,0,0,0]
+Explanation: 
+The following table summarizes the state of the prison on each day:
+Day 0: [0, 1, 0, 1, 1, 0, 0, 1]
+Day 1: [0, 1, 1, 0, 0, 0, 0, 0]
+Day 2: [0, 0, 0, 0, 1, 1, 1, 0]
+Day 3: [0, 1, 1, 0, 0, 1, 0, 0]
+Day 4: [0, 0, 0, 0, 0, 1, 0, 0]
+Day 5: [0, 1, 1, 1, 0, 1, 0, 0]
+Day 6: [0, 0, 1, 0, 1, 1, 0, 0]
+Day 7: [0, 0, 1, 1, 0, 0, 0, 0]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: cells = [1,0,0,1,0,0,1,0], N = 1000000000
+Output: [0,0,1,1,1,1,1,0]
+#+END_EXAMPLE
+ 
+Note:
+
+1. cells.length == 8
+- cells[i] is in {0, 1}
+- 1 <= N <= 10^9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/prison-cells-after-n-days][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/prison-cells-after-n-days/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/prison-cells-after-n-days
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

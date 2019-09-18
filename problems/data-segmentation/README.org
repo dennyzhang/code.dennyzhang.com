@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/data-segmentation
+## https://code.dennyzhang.com/data-segmentation
 ## Basic Ideas: seperate string
 ## Complexity: Time O(n), Space O(1)
 class Solution:

@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/palindrome-number
+## https://code.dennyzhang.com/palindrome-number
 ## Basic Ideas:  Generate a new integer Y from right digit to left digit
 ##               Then compare it with X
 ##         1234321: 1 -> 12 -> 13 -> 134 ...

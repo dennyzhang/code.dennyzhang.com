@@ -57,7 +57,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/path-with-maximum-minimum-value
+// https://code.dennyzhang.com/path-with-maximum-minimum-value
 // Basic Ideas: unionfind
 //
 // Sort values. Keep adding big values until src and dst is connected

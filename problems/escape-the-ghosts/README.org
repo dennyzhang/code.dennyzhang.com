@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/escape-the-ghosts
+## https://code.dennyzhang.com/escape-the-ghosts
 ## Basic Ideas: Get the minimum distance
 ##
 ## Complexity: Time O(1), Space O(1)

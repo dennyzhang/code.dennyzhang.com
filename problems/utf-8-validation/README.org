@@ -12,7 +12,7 @@ Leetcode: UTF-8 Validation
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/encoding][#encoding]]
+- Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/encoding][#encoding]]
 ---------------------------------------------------------------------
 A character in UTF8 can be from 1 to 4 bytes long, subjected to the following rules:
 
@@ -61,7 +61,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/utf-8-validation
+// https://code.dennyzhang.com/utf-8-validation
 // Basic Ideas:
 // 0xx -> A; 10x -> B; 110x -> C, 1110 -> D, 11110 -> E
 // EBBB, DBB, CB, A

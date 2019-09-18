@@ -49,7 +49,7 @@ Credits To: [[https://leetcode.com/problems/sum-of-even-numbers-after-queries/de
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/sum-of-even-numbers-after-queries
+// https://code.dennyzhang.com/sum-of-even-numbers-after-queries
 // Basic Ideas: array
 // Complexity: Time O(n+k), Space O(1)
 func abs(num int) int {

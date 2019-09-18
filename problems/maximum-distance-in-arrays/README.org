@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-distance-in-arrays
+## https://code.dennyzhang.com/maximum-distance-in-arrays
 ## Basic Ideas:
 ##     Get the global min and global max.
 ##     If they happens in different rows, return directly.

@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/advantage-shuffle
+// https://code.dennyzhang.com/advantage-shuffle
 // Basic Ideas: Greedy + binary search
 // For which B[i], it won't be worse, if we try our best to satisfy it
 // - If we have available values in A which is bigger than B[i], choose the min candidates

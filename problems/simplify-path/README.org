@@ -29,7 +29,7 @@ Credits To: [[https://leetcode.com/problems/simplify-path/description/][leetcode
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/simplify-path
+## https://code.dennyzhang.com/simplify-path
 
 #+END_SRC
 

@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/random-pick-index
+## https://code.dennyzhang.com/random-pick-index
 ## Basic Ideas: Reservior Sampling
 ##
 ## Complexity: Time O(n), Space O(1)

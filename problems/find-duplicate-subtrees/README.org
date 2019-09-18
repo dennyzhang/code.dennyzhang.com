@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-duplicate-subtrees
+// https://code.dennyzhang.com/find-duplicate-subtrees
 // Basic Ideas: hashmap
 // Encode binarytree to string
 // Complexity: Time O(n), Space O(n)

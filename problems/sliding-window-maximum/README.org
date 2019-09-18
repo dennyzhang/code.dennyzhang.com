@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 
 Useful link: [[https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem][monotonic queue problem]]
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sliding-window-maximum
+## https://code.dennyzhang.com/sliding-window-maximum
 ## Basic Ideas: sliding window with decreasing sequence
 ##
 ## Complexity: Time O(n), Space O(k)

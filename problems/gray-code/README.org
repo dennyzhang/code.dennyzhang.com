@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:    dynamicprogramming, game
+:type:    dynamicprogramming, game, baseconversion
 :END:
 ---------------------------------------------------------------------
 Gray Code
@@ -13,7 +13,7 @@ Gray Code
 Similar Problems:
 - [[https://code.dennyzhang.com/lexicographical-numbers][Lexicographical Numbers]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-baseconversion][#baseconversion]], [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 The gray code is a binary numeral system where two successive values differ in only one bit.
 
@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/gray-code
+## https://code.dennyzhang.com/gray-code
 class Solution:
     def grayCode(self, n):
         """

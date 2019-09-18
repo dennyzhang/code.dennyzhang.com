@@ -85,7 +85,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/project-employees-ii
+# https://code.dennyzhang.com/project-employees-ii
 select project_id
 from Project
 group by project_id

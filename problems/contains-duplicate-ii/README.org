@@ -17,7 +17,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/contains-duplicate-ii
+## https://code.dennyzhang.com/contains-duplicate-ii
 ## Basic Ideas: sliding window
 ##              Keep a window of k+1 elements. Maintain a Set with the window
 ##              Move the window towards the end.

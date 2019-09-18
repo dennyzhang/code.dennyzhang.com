@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/minimum-cost-for-tickets
+// https://code.dennyzhang.com/minimum-cost-for-tickets
 // Basic Ideas: dynamic programming
 //   Every day we have 4 choices: reuse old, 1-day pass, 7-day, 30-day
 //   List all candidate for each day.

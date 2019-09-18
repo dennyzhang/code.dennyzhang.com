@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/binary-tree-level-order-traversal
+// https://code.dennyzhang.com/binary-tree-level-order-traversal
 // Basic Ideas: BFS
 //
 // Complexity: Time O(n), Space O(h)
@@ -76,7 +76,7 @@ func levelOrder(root *TreeNode) [][]int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/binary-tree-level-order-traversal
+## https://code.dennyzhang.com/binary-tree-level-order-traversal
 ## Baisc Idea: BFS
 ## Complexity: Time O(n), Space O(n)
 # Definition for a binary tree node.

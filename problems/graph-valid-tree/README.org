@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 [[color:#c7254e][In essence, how to check whether a graph has loop?]]
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/graph-valid-tree
+// https://code.dennyzhang.com/graph-valid-tree
 // Basic Ideas: hashmap + bfs
 //
 // How a graph can be a tree:
@@ -91,7 +91,7 @@ func validTree(n int, edges [][]int) bool {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/graph-valid-tree
+// https://code.dennyzhang.com/graph-valid-tree
 // Basic Ideas: union find
 //  edge count + 1 = node count
 //  All nodes are connected

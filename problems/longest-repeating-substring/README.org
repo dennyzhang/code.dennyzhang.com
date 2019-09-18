@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-repeating-substring
+// https://code.dennyzhang.com/longest-repeating-substring
 // Basic Ideas: binary search + hashmap
 //   T T T T F F
 // Complexity: Time O(n*n*log(n)), Space O(n^2)

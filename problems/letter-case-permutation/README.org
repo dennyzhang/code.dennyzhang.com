@@ -45,7 +45,7 @@ Credits To: [[https://leetcode.com/problems/letter-case-permutation/description/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/letter-case-permutation
+// https://code.dennyzhang.com/letter-case-permutation
 // Basic Ideas: backtracking
 //
 // Complexity: Time ?, Space ?
@@ -72,7 +72,7 @@ func letterCasePermutation(S string) []string {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/letter-case-permutation
+## https://code.dennyzhang.com/letter-case-permutation
 class Solution:
     ## Basic Ideas: One pass (similar like DFS)
     ##

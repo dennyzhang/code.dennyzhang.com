@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/shortest-palindrome
+## https://code.dennyzhang.com/shortest-palindrome
 ## Basic Ideas: Treat each character as the middle.
 ##              The length of palindrome might be odd or even
 ##

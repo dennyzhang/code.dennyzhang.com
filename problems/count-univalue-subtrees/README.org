@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: post-order with null and leaf as corner cases
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/count-univalue-subtrees
+// https://code.dennyzhang.com/count-univalue-subtrees
 // Basic Ideas: post-order
 // Complexity: Time O(n), Space O(1)
 /**
@@ -86,7 +86,7 @@ func countUnivalSubtrees(root *TreeNode) int {
 - Solution: post-order with only null as corner cases
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/count-univalue-subtrees
+// https://code.dennyzhang.com/count-univalue-subtrees
 // Basic Ideas: post-order
 // Complexity: Time O(n), Space O(1)
 /**

@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/minimumstring
+// https://code.dennyzhang.com/minimumstring
 // Basic Ideas: stack. Non-decreasing string
 //
 // Complexity: Time O(n), Space O(n)

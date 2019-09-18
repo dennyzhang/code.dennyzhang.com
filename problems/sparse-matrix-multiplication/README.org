@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/sparse-matrix-multiplication
+## https://code.dennyzhang.com/sparse-matrix-multiplication
 ## Basic Ideas:
 ##
 ## Complexity:

@@ -53,9 +53,9 @@ function refresh_link() {
             rm -rf $dirname/README.orge
         fi
 
-        if ! grep "Blog link: https:\/\/code.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
+        if ! grep "https:\/\/code.dennyzhang.com.*$dirname" $f 1>/dev/null 2>&1; then
             echo "Update blog url for $f"
-            sed -ie "s/Blog link: https:\/\/code.dennyzhang.com\/.*/Blog link: https:\/\/code.dennyzhang.com\/$dirname/g" $f
+            sed -ie "s/https:\/\/code.dennyzhang.com\/example/https:\/\/code.dennyzhang.com\/$dirname/g" $f
             rm -rf $dirname/README.orge
         fi
 

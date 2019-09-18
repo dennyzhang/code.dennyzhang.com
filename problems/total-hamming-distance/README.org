@@ -12,7 +12,7 @@ Total Hamming Distance
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]
+- Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 
@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/total-hamming-distance
+// https://code.dennyzhang.com/total-hamming-distance
 // Basic Ideas:
 //
 // Complexity: Time O(n*k), Space O(1)

@@ -46,7 +46,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/out-of-boundary-paths
+// https://code.dennyzhang.com/out-of-boundary-paths
 // Basic Ideas: dynamic programming
 //
 //  Notice: what if starting point is out of the grid?
@@ -99,7 +99,7 @@ func findPaths(m int, n int, N int, i int, j int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/out-of-boundary-paths
+// https://code.dennyzhang.com/out-of-boundary-paths
 // Basic Ideas: dynamic programming
 //
 //  Notice: what if starting point is out of the grid?
@@ -150,7 +150,7 @@ func findPaths(m int, n int, N int, i int, j int) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/out-of-boundary-paths
+// https://code.dennyzhang.com/out-of-boundary-paths
 // Basic Ideas: dynamic programming
 //
 //  Notice: what if starting point is out of the grid?

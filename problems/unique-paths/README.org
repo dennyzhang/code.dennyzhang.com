@@ -36,7 +36,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/unique-paths
+## https://code.dennyzhang.com/unique-paths
 class Solution(object):
     ## Basic Ideas: Dynamic programming
     ##              For the previous step of finish point, it should come from either up or left

@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-increasing-subsequence
+// https://code.dennyzhang.com/longest-increasing-subsequence
 // Basic Ideas: dynamic programming
 //    dp(i): ends with nums[i]
 // Complexity: Time O(n^2), Space O(n)

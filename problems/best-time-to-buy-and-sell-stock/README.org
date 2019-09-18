@@ -43,7 +43,7 @@ Credits To: [[https://leetcode.com/problems/best-time-to-buy-and-sell-stock/desc
 - Solution
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/best-time-to-buy-and-sell-stock
+// https://code.dennyzhang.com/best-time-to-buy-and-sell-stock
 // Basic Ideas: greedy
 //
 // Complexity: Time O(n), Space O(1)
@@ -64,7 +64,7 @@ func maxProfit(prices []int) int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/best-time-to-buy-and-sell-stock
+## https://code.dennyzhang.com/best-time-to-buy-and-sell-stock
 class Solution(object):
     def maxProfit(self, prices):
         """

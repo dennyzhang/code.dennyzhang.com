@@ -71,7 +71,7 @@ Credits To: [[https://leetcode.com/problems/find-the-town-judge/description/][le
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-the-town-judge
+// https://code.dennyzhang.com/find-the-town-judge
 // Basic Ideas: array
 // l[i]: how many people trust me. If I trust anyone, I'm not the candidate. Mark it as -1
 // Complexity: Time O(n), Space O(n)

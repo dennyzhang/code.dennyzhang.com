@@ -48,7 +48,7 @@ Credits To: [[https://leetcode.com/problems/remove-k-digits/description/][leetco
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/remove-k-digits
+## https://code.dennyzhang.com/remove-k-digits
 ## Basic Ideas: Greedy
 ##    From left to right, if current digit decreases, we find one candiate
 ##    Why?

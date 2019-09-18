@@ -53,7 +53,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/number-of-valid-subarrays
+// https://code.dennyzhang.com/number-of-valid-subarrays
 // Basic Ideas: Monotone stack
 //    Find the next bigger value for a given element
 // Complexity: Time O(n), Space O(n)

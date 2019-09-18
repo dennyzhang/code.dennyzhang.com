@@ -12,7 +12,7 @@ Path Sum III
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/tag/pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]], [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]
 ---------------------------------------------------------------------
 You are given a binary tree in which each node contains an integer value.
 
@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/path-sum-iii
+// https://code.dennyzhang.com/path-sum-iii
 // Basic Ideas: Recursive
 // Complexity: Time O(n^2), Space O(n)
 /**

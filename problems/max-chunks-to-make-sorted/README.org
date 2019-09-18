@@ -66,7 +66,7 @@ If any item of is bigger than 3, we need to enlarge the right border of the wind
 
 This problem is similar with [[https://code.dennyzhang.com/jump-game-ii][Jump Game II]]
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/max-chunks-to-make-sorted
+// https://code.dennyzhang.com/max-chunks-to-make-sorted
 // Basic Ideas: Greedy
 // Complexity: Time O(n), Space O(1)
 func maxChunksToSorted(arr []int) int {
@@ -88,7 +88,7 @@ func maxChunksToSorted(arr []int) int {
 
 - Solution: auxiliary array
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/max-chunks-to-make-sorted
+// https://code.dennyzhang.com/max-chunks-to-make-sorted
 // Basic Ideas: Use an auxiliary array
 //
 // original: 0, 2, 1, 4, 3, 5, 7, 6

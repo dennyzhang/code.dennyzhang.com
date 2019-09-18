@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution: assume logs are in order
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/exclusive-time-of-functions
+// https://code.dennyzhang.com/exclusive-time-of-functions
 // Basic Ideas: stack + hashmap
 //
 // Maintain a stack for running tasks.
@@ -95,7 +95,7 @@ func exclusiveTime(n int, logs []string) []int {
 
 - Solution: assume logs are not in order
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/exclusive-time-of-functions
+// https://code.dennyzhang.com/exclusive-time-of-functions
 // Basic Ideas: stack + hashmap
 //
 // Sort the logs by starting timestamp. 

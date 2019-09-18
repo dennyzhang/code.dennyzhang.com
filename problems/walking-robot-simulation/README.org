@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/walking-robot-simulation
+// https://code.dennyzhang.com/walking-robot-simulation
 // Basic Ideas: simulate step by step
 // Note: case 3: 1 <= x <= 9: move forward x units
 // Complexity: Time O(n+k), Space O(k)

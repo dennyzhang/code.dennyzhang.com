@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/interval-list-intersections
+// https://code.dennyzhang.com/interval-list-intersections
 // Basic Ideas: merge two list
 //
 //  l1[i], l2[j], remain

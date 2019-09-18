@@ -10,7 +10,12 @@ Review Segment Tree code problems
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-segmenttree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
-Segment Tree supports us to apply changes to a sub-range with *O(log(n)) complexity*, instead of O(n).
+
+*Scenarios*
+| Name                                              | Summary                                                              |
+|---------------------------------------------------+----------------------------------------------------------------------|
+| Segment tree                                      | a binary tree where each node represents an interval                 |
+| Segment tree: solves range query problems quickly | find min, max, sum, gcd, lcd in array with O(log(n)) time complexity |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
@@ -26,3 +31,4 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
+* TODO https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/ :noexport:

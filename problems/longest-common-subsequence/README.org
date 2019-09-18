@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-common-subsequence
+// https://code.dennyzhang.com/longest-common-subsequence
 // Basic Ideas: 2D dynamic programming
 //  Optimal substructure:
 //      s1[0...i]
@@ -94,7 +94,7 @@ func longestCommonSubsequence(text1 string, text2 string) int {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/longest-common-subsequence
+// https://code.dennyzhang.com/longest-common-subsequence
 // Basic Ideas: 2D dynamic programming
 //  dp(i, j) <- s1[0:i+1] s2[0:j+1]
 //      if s1[i] == s2[j], dp(i-1, j-1)+1

@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: Time O(n), Space O(n)
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/backspace-string-compare
+// https://code.dennyzhang.com/backspace-string-compare
 // Basic Ideas:
 // Complexity: Time O(n), Space O(n)
 func getString(S string) string {

@@ -36,7 +36,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/largest-rectangle-in-histogram
+## https://code.dennyzhang.com/largest-rectangle-in-histogram
 ## Basic Ideas: Monotone stack
 ##              For each element, find the next non-greater value
 ##     Key Questions: How to get the left?

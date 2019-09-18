@@ -27,7 +27,7 @@ Credits To: [[https://leetcode.com/problems/balanced-binary-tree/description/][l
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/balanced-binary-tree
+// https://code.dennyzhang.com/balanced-binary-tree
 // Basic Ideas: recursive
 //
 // Complexity: Time O(n), Space O(h)
@@ -65,7 +65,7 @@ func isBalanced(root *TreeNode) bool {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/balanced-binary-tree
+## https://code.dennyzhang.com/balanced-binary-tree
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

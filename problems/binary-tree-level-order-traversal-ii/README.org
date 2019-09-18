@@ -39,7 +39,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/binary-tree-level-order-traversal-ii
+## https://code.dennyzhang.com/binary-tree-level-order-traversal-ii
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

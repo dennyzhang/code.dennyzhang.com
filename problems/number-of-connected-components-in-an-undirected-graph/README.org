@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/number-of-connected-components-in-an-undirected-graph
+// https://code.dennyzhang.com/number-of-connected-components-in-an-undirected-graph
 // Basic Ideas: union find
 //
 // Complexity: Time O(m), Space O(n)

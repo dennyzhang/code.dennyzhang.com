@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 [[https://code.dennyzhang.com/tag/knapsack][#knapsack]] problem, [[https://code.dennyzhang.com/ones-and-zeroes][Ones and Zeroes]]
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/order-problem
+// https://code.dennyzhang.com/order-problem
 // Basic Ideas: BFS
 // Complexity:
 type Item struct {

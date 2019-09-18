@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-the-closest-palindrome
+## https://code.dennyzhang.com/find-the-closest-palindrome
 ## Basic Ideas: Greedy. Try our best to keep the high digits
 ##
 ## Complexity: Time O(n), Space O(1)

@@ -59,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: Encode with length
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/encode-and-decode-strings
+## https://code.dennyzhang.com/encode-and-decode-strings
 ## Basic Ideas:
 ## [count_of_strings] [length1] string1[length2] string2...
 ## Complexity:
@@ -107,7 +107,7 @@ class Codec:
 ---------------------------------------------------------------------
 - Solution: Encode with length
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/encode-and-decode-strings
+## https://code.dennyzhang.com/encode-and-decode-strings
 ## Basic Ideas:
 ## [length1] string1[length2] string2...
 ## Complexity:
@@ -151,7 +151,7 @@ class Codec:
 ---------------------------------------------------------------------
 - Solution: Use invisible character as separator
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/encode-and-decode-strings
+## https://code.dennyzhang.com/encode-and-decode-strings
 ## Basic Ideas:
 ## Use invisible character as separator
 ## Differentiate two cases: empty list, items with empty strings

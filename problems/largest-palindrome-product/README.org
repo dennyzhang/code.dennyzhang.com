@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/largest-palindrome-product
+// https://code.dennyzhang.com/largest-palindrome-product
 // Basic Ideas:
 //   It's so complicated. Let's solve it another way.
 // n=1: 81 (9*9)

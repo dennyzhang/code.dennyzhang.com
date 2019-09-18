@@ -85,7 +85,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/product-sales-analysis-ii
+# https://code.dennyzhang.com/product-sales-analysis-ii
 select product_id, sum(quantity) as total_quantity
 from Sales
 group by product_id

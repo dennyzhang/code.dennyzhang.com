@@ -36,7 +36,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/map-sum-pairs
+// https://code.dennyzhang.com/map-sum-pairs
 // Basic Ideas: Trie Tree
 // Complexity: Time ?, Space ?
 

@@ -38,7 +38,7 @@ Credits To: [[https://leetcode.com/problems/transpose-file/description/][leetcod
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC sh
-## Blog link: https://code.dennyzhang.com/transpose-file
+## https://code.dennyzhang.com/transpose-file
 set -e
 
 one_line=($(head -n1 ./file.txt))

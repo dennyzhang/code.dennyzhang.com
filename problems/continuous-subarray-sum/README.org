@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/continuous-subarray-sum
+// https://code.dennyzhang.com/continuous-subarray-sum
 // Basic Ideas: presum + mod + first occurence
 // Complexity: Time O(n), Space O(k)
 func checkSubarraySum(nums []int, k int) bool {

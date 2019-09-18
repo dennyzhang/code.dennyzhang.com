@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/stone-game
+// https://code.dennyzhang.com/stone-game
 // Basic Ideas: minmax - dynamic programming
 // f(i, j): max value I can get, if I starts with l[i:j]
 //     f(i+ 1, j), f(i, j-1)

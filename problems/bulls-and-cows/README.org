@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 
 - Solution: 2 arrays with 10 elements; 2 pass
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/bulls-and-cows
+// https://code.dennyzhang.com/bulls-and-cows
 // Basic Ideas: 2 arrays with 10 elements; 2 pass
 // Complexity: Time O(n), Space O(1)
 func getHint(secret string, guess string) string {
@@ -71,7 +71,7 @@ func getHint(secret string, guess string) string {
 
 - Solution: 1 arrays with 10 elements; 1 pass
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/bulls-and-cows
+// https://code.dennyzhang.com/bulls-and-cows
 // Basic Ideas: 1 arrays with 10 elements; 1 pass
 //
 //  array[10]: positive: happen only in secret

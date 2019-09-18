@@ -60,7 +60,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/swim-in-rising-water
+## https://code.dennyzhang.com/swim-in-rising-water
 class Solution:
     ## Basic Ideas: BFS + heap
     ##     The water flows with nearly no delay, if it permits

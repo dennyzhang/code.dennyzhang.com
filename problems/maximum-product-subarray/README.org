@@ -12,7 +12,7 @@ Maximum Product Subarray
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/presum][#presum]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest product.
 
@@ -27,7 +27,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-product-subarray
+// https://code.dennyzhang.com/maximum-product-subarray
 // Basic Ideas: presum
 // Complexity: Time O(n), Space O(1)
 func maxProduct(nums []int) int {

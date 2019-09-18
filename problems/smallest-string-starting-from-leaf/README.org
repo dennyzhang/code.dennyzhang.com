@@ -55,7 +55,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/smallest-string-starting-from-leaf
+// https://code.dennyzhang.com/smallest-string-starting-from-leaf
 // Basic Ideas: dfs
 // Complexity: Time O(n*k), Space O(n)
 /**

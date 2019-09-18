@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/kth-largest-element-in-an-array
+## https://code.dennyzhang.com/kth-largest-element-in-an-array
 ## Basic Ideas: heap
 ##
 ## Complexity: Time O(n*log(n)), Space O(n)

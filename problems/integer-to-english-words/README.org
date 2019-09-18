@@ -33,7 +33,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/integer-to-english-words
+// https://code.dennyzhang.com/integer-to-english-words
 // Basic Ideas:
 // 1,234,567
 // ... Billion ... Million ... Thousand ...

@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/count-linked-list-nodes
+// https://code.dennyzhang.com/count-linked-list-nodes
 // Basic Ideas: One pass
 // Complexity: Time O(n), Space O(1)
 /**

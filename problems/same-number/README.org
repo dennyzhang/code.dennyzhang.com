@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/same-number
+## https://code.dennyzhang.com/same-number
 class Solution:
     """
     @param nums: the arrays

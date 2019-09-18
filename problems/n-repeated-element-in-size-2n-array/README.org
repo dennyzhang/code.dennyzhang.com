@@ -49,7 +49,7 @@ Credits To: [[https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/n-repeated-element-in-size-2n-array
+// https://code.dennyzhang.com/n-repeated-element-in-size-2n-array
 // Basic Ideas: the distance could be either 1 or 2, or in the two ends
 // Complexity: Time O(n), Space O(1)
 func repeatedNTimes(A []int) int {

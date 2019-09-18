@@ -30,7 +30,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-all-duplicates-in-an-array
+## https://code.dennyzhang.com/find-all-duplicates-in-an-array
 ## Basic Ideas: count sort
 ## Complexity: Time O(n), Space (1)
 ##   1 2 3 4 5 6 7 8

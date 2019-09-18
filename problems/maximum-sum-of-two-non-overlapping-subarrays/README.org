@@ -1,0 +1,126 @@
+* Leetcode: Maximum Sum of Two Non-Overlapping Subarrays        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, presum, maxsubarraysum, manydetails
+:END:
+---------------------------------------------------------------------
+Maximum Sum of Two Non-Overlapping Subarrays
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-sum-of-two-non-overlapping-subarrays"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/followup-maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
+---------------------------------------------------------------------
+Given an array A of non-negative integers, return the maximum sum of elements in two non-overlapping (contiguous) subarrays, which have lengths L and M.  (For clarification, the L-length subarray could occur before or after the M-length subarray.)
+
+Formally, return the largest V for which V = (A[i] + A[i+1] + ... + A[i+L-1]) + (A[j] + A[j+1] + ... + A[j+M-1]) and either:
+
+- 0 <= i < i + L - 1 < j < j + M - 1 < A.length, or
+- 0 <= j < j + M - 1 < i < i + L - 1 < A.length.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [0,6,5,2,2,5,1,9,4], L = 1, M = 2
+Output: 20
+Explanation: One choice of subarrays is [9] with length 1, and [6,5] with length 2.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [3,8,1,3,2,1,8,9,0], L = 3, M = 2
+Output: 29
+Explanation: One choice of subarrays is [3,8,1] with length 3, and [8,9] with length 2.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: A = [2,1,5,6,0,9,5,0,3,8], L = 4, M = 3
+Output: 31
+Explanation: One choice of subarrays is [5,6,0,9] with length 4, and [3,8] with length 3.
+#+END_EXAMPLE
+ 
+Note:
+
+1. L >= 1
+- M >= 1
+- L + M <= A.length <= 1000
+- 0 <= A[i] <= 1000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-sum-of-two-non-overlapping-subarrays][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/maximum-sum-of-two-non-overlapping-subarrays
+// Basic Ideas: dynamic programming + sliding window
+//
+// lefts[i]: max sum with length L from L[0:i]
+// rights[i]: max sum with length L from L[i:len(l)-1]
+//
+// Complexity: Time O(n) Space O(n)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+func maxSumTwoNoOverlap(A []int, L int, M int) int {
+    // get presums
+    l := make([]int, len(A)+1)
+    for i, v := range A {
+        l[i+1] = l[i]+v
+    }
+    // dp caculation
+    // A[i-L+1...i]
+    lefts, rights := make([]int, len(A)), make([]int, len(A))
+    for i, v:= L-1, 0; i<len(A); i++ {
+        v = max(v, l[i+1]-l[i-L+1])
+        lefts[i] = v
+    }
+    // A[i...i+L-1]
+    max_so_far := 0
+    for i, v := len(A)-1, 0; i>=0; i-- {
+        v += A[i]
+        if i+L-1 >= len(A) {
+            continue
+        }
+        max_so_far = max(v, max_so_far)
+        rights[i] = max_so_far
+        v -= A[i+L-1]
+    }
+    res := 0
+    // A[i-L...i-1], A[i...i+M-1], A[i+M...i+M+L-1]
+    for i:=0; i+M-1<len(A); i++ {
+        v := l[i+M]-l[i]
+        // L in left
+        v1 := 0
+        if i-L>=0 {
+            v1 = lefts[i-1]
+        }
+        // L in right
+        v2 := 0
+        if i+M+L-1 < len(A) {
+            v2 = rights[i+M]
+        }
+        v += max(v1, v2)
+        res = max(res, v)
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

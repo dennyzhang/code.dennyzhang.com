@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/prime-palindrome
+// https://code.dennyzhang.com/prime-palindrome
 // Basic Ideas:
 // If palindrome is with odd length, it can't be a prime.
 // It will be able to be divided by 11.

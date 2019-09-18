@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/brick-wall
+// https://code.dennyzhang.com/brick-wall
 // Basic Ideas: hashmap
 //   map[int]int: track whether the edge ends for all bricks in all rows
 //   Find the max value from the hashmap

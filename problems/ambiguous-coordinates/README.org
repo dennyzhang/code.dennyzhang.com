@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/ambiguous-coordinates
+## https://code.dennyzhang.com/ambiguous-coordinates
 ## Basic Ideas: Divide S into two parts; Then add comma
 ##   The tricky part is adding comma
 ##   How we can verify the combination?

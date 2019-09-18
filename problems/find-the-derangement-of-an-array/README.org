@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-the-derangement-of-an-array
+// https://code.dennyzhang.com/find-the-derangement-of-an-array
 // Basic Ideas: dynamic programming
 // dp(n) = (n-1)*(dp(n-1)+dp(n-2))
 // Let's say we want to get dp(4)

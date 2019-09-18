@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/reverse-only-letters
+// https://code.dennyzhang.com/reverse-only-letters
 // Basic Ideas: Two pointer
 // Complexity: Time O(n), Space O(n)
 //   If given a list, instead of string, space complexity can be O(1)

@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-swap
+// https://code.dennyzhang.com/maximum-swap
 // Basic Ideas:
 // Check whether it's a non-decreasing sequence
 // Otherwise look for the biggest digit after current one
@@ -82,7 +82,7 @@ func maximumSwap(num int) int {
 
 - Solution
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-swap
+## https://code.dennyzhang.com/maximum-swap
 ## Basic Ideas: counter with [0, 1, 2, ... 9]
 ##
 ## Complexity: Time O(n), Space O(1)

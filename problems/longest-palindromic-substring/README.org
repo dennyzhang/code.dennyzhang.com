@@ -40,7 +40,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/longest-palindromic-substring
+## https://code.dennyzhang.com/longest-palindromic-substring
 ## Basic Ideas: Choose one as the middle of palindromic, then expand in both directions
 ##              palindromic may have odd elements or even elements
 ##

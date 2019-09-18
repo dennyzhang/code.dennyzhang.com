@@ -1,4 +1,4 @@
-* Series: Island & Follow-up                                    :BLOG:Series:
+* Series: Island Problems & Follow-up                           :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

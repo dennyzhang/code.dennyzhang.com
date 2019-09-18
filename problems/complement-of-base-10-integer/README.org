@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bitmanipulation
+:type:     bitmanipulation, baseconversion
 :END:
 ---------------------------------------------------------------------
 Complement of Base 10 Integer
@@ -12,7 +12,7 @@ Complement of Base 10 Integer
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]
+- Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/followup-baseconversion][#baseconversion]]
 ---------------------------------------------------------------------
 Every non-negative integer N has a binary representation.  For example, 5 can be represented as "101" in binary, 11 as "1011" in binary, and so on.  Note that except for N = 0, there are no leading zeroes in any binary representation.
 
@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/complement-of-base-10-integer
+// https://code.dennyzhang.com/complement-of-base-10-integer
 // Basic Ideas: bit map
 // Complexity: Time O(1), Space O(1)
 func bitwiseComplement(N int) int {

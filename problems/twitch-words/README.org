@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/twitch-words
+// https://code.dennyzhang.com/twitch-words
 /**
  * @param str: the origin string
  * @return: the start and end of every twitch words

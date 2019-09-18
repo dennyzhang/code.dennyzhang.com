@@ -58,7 +58,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/find-the-celebrity
+// https://code.dennyzhang.com/find-the-celebrity
 // Basic Ideas:
 //  Notice: 
 //    If A knows B then B knows C, A doesn't necessarily know C

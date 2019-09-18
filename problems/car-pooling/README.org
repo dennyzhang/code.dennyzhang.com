@@ -61,7 +61,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/car-pooling
+// https://code.dennyzhang.com/car-pooling
 // Basic Ideas: greedy
 //
 // Examine the capacity of all timestamp
@@ -84,7 +84,7 @@ func carPooling(trips [][]int, capacity int) bool {
 #+END_SRC
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/car-pooling
+// https://code.dennyzhang.com/car-pooling
 // Basic Ideas: heap
 //
 // Complexity: Time O(n*log(n)), Space O(n)

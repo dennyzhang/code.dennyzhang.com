@@ -26,7 +26,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/house-robber
+## https://code.dennyzhang.com/house-robber
 class Solution(object):
     def rob(self, nums):
         """

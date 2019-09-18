@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/4sum-ii
+// https://code.dennyzhang.com/4sum-ii
 // Basic Ideas: hashmap
 // Complexity: Time O(n^2), Space O(n^2)
 func fourSumCount(A []int, B []int, C []int, D []int) int {

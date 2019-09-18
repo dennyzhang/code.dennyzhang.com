@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/unique-morse-code-words
+## https://code.dennyzhang.com/unique-morse-code-words
 ## Basic Ideas: Hashmap
 ## Complexity: Time O(n), Space O(n)
 class Solution:

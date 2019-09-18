@@ -45,7 +45,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solutoin: DFS with pruning
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/house-robber-iii
+// https://code.dennyzhang.com/house-robber-iii
 // Basic Ideas: dfs
 // Complexity: Time O(n), Space O(n)
 /**
@@ -85,7 +85,7 @@ func rob(root *TreeNode) int {
 
 - Solutoin: Intuitive recursive idea
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/house-robber-iii
+// https://code.dennyzhang.com/house-robber-iii
 // Basic Ideas: dfs
 // Complexity:
 /**

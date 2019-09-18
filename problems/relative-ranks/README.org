@@ -17,7 +17,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/relative-ranks
+## https://code.dennyzhang.com/relative-ranks
 ## Basic Ideas:
 ##           Sort the list. Build a map. key(score): value(position in sorted list)
 ##           Trasverse the original list again, get the position by map

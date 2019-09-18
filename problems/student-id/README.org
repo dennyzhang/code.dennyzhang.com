@@ -44,7 +44,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/student-id
+## https://code.dennyzhang.com/student-id
 class Student:
     def __init__(self, id):
         self.id = id;

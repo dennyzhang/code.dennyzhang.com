@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: recursive
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/maximum-depth-of-n-ary-tree
+## https://code.dennyzhang.com/maximum-depth-of-n-ary-tree
 ## Basic Ideas: recursive
 ##
 ## Complexity: Time O(n), Space O(n)

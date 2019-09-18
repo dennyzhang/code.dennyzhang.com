@@ -32,7 +32,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/add-strings
+// https://code.dennyzhang.com/add-strings
 // Basic Ideas: 
 //  Handle carry
 //  Only stop when both strings have finished

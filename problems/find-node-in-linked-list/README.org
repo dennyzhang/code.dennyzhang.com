@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-node-in-linked-list
+## https://code.dennyzhang.com/find-node-in-linked-list
 ## Basic Ideas:
 ## Here we assume we only find the first node with the given value
 ## Complexity: Time O(n), Space O(1)

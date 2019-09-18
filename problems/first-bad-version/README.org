@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/first-bad-version
+## https://code.dennyzhang.com/first-bad-version
 ## Basic Ideas: Binary search
 ##         Find the first False
 ##         F F F F T T

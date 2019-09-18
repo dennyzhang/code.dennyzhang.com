@@ -37,7 +37,7 @@ Credits To: [[https://leetcode.com/problems/reverse-words-in-a-string-ii/descrip
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/reverse-words-in-a-string-ii
+## https://code.dennyzhang.com/reverse-words-in-a-string-ii
 ## Basic Ideas: Reverse string. Then find the groups, and reverse them.
 ##
 ## Complexity: Time O(n), Space O(1)

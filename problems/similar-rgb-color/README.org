@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/similar-rgb-color
+## https://code.dennyzhang.com/similar-rgb-color
 ## Basic Ideas:
 ## Complexity: Time O(1): 16*16*16
 ##             Space O(1)

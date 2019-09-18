@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/valid-square
+// https://code.dennyzhang.com/valid-square
 // Basic Ideas: math
 // Get all the distances. There should be only 2 types: a, b
 // We shall find 4 a, 2 b. And a*a+a*a=b*b

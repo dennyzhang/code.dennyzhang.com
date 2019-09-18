@@ -33,7 +33,7 @@ Leave me comments, if you have better ways to solve.
 - Solution: recursive
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/n-ary-tree-postorder-traversal
+## https://code.dennyzhang.com/n-ary-tree-postorder-traversal
 ## Basic Ideas:
 ## Complexity: Time O(n), Space O(n)
 """

@@ -12,7 +12,7 @@ Reverse 3-digit Integer
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/bitmanipulation][#bitmanipulation]]
+- Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 Description
 Reverse a 3-digit integer.
@@ -35,7 +35,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/reverse-3-digit-integer
+// https://code.dennyzhang.com/reverse-3-digit-integer
 // Basic Ideas:
 // Complexity: Time O(1), Space O(1)
 /**

@@ -55,7 +55,7 @@ Credits To: [[https://leetcode.com/problems/second-degree-follower/description/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/second-degree-follower
+## https://code.dennyzhang.com/second-degree-follower
 ## Explain the business logic
 ##   A follows B. Then A is follwer, B is followee
 ## What are second degree followers?

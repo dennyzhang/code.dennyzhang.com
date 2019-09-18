@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/classes-more-than-5-students
+## https://code.dennyzhang.com/classes-more-than-5-students
 select class
 from courses
 group by class

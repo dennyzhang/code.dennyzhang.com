@@ -59,7 +59,7 @@ We can use the similar two-pass idea to solve: [[https://code.dennyzhang.com/sho
 #+END_EXAMPLE
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/product-of-array-except-self
+// https://code.dennyzhang.com/product-of-array-except-self
 // Basic Ideas: leftrightpass
 //
 // Complexity: Time O(n), Space O(1)

@@ -41,7 +41,7 @@ Credits To: [[https://leetcode.com/problems/sort-transformed-array/description/]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/sort-transformed-array
+// https://code.dennyzhang.com/sort-transformed-array
 // Basic Ideas: math. two-pointer
 // f(x) = a*x*x+b*x+c
 //   Let's say x1<x2<x3.

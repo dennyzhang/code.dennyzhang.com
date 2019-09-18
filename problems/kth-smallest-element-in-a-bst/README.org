@@ -24,7 +24,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/kth-smallest-element-in-a-bst
+## https://code.dennyzhang.com/kth-smallest-element-in-a-bst
 ## Basic Ideas: In-order trasversal
 ## Complexity: O(k), Space O(k)
 # Definition for a binary tree node.

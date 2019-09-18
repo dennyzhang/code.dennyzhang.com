@@ -53,7 +53,7 @@ Credits To: [[https://leetcode.com/problems/unique-letter-string/description/][l
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/unique-letter-string
+// https://code.dennyzhang.com/unique-letter-string
 // Basic Ideas:
 //
 //  Instead of checking how many combinations and unqiue letters, think in another way

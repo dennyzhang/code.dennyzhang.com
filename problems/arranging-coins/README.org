@@ -54,7 +54,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/arranging-coins
+## https://code.dennyzhang.com/arranging-coins
 class Solution(object):
     def arrangeCoins(self, n):
         """

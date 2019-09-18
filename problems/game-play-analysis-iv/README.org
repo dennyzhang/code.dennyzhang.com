@@ -67,7 +67,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-# Blog link: https://code.dennyzhang.com/game-play-analysis-iv
+# https://code.dennyzhang.com/game-play-analysis-iv
 select round(sum(case when t1.event_date = t2.first_event+1 then 1 else 0 end)/count(distinct t1.player_id), 2) as fraction
 from Activity as t1 inner join
     (select player_id, min(event_date) as first_event

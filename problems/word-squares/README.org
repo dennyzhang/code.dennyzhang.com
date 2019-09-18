@@ -1,0 +1,115 @@
+* Leetcode: Word Squares                                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     trie, backtracking
+:END:
+---------------------------------------------------------------------
+Word Squares
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/word-squares"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+---------------------------------------------------------------------
+Given a set of words (without duplicates), find all word squares you can build from them.
+
+A sequence of words forms a valid word square if the kth row and column read the exact same string, where 0 <= k < max(numRows, numColumns).
+
+For example, the word sequence ["ball","area","lead","lady"] forms a word square because each word reads the same both horizontally and vertically.
+#+BEGIN_EXAMPLE
+b a l l
+a r e a
+l e a d
+l a d y
+#+END_EXAMPLE
+
+Note:
+1. There are at least 1 and at most 1000 words.
+- All words will have the exact same length.
+- Word length is at least 1 and at most 5.
+- Each word contains only lowercase English alphabet a-z.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+["area","lead","wall","lady","ball"]
+
+Output:
+[
+  [ "wall",
+    "area",
+    "lead",
+    "lady"
+  ],
+  [ "ball",
+    "area",
+    "lead",
+    "lady"
+  ]
+]
+
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+["abat","baba","atan","atal"]
+
+Output:
+[
+  [ "baba",
+    "abat",
+    "baba",
+    "atan"
+  ],
+  [ "baba",
+    "abat",
+    "baba",
+    "atal"
+  ]
+]
+
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/word-squares][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/word-squares/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+*General Thinkings:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Key Observations:*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+*Walk Through Testdata*
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-squares
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

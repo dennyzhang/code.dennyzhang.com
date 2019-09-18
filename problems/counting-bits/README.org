@@ -32,7 +32,7 @@ Credits To: [[https://leetcode.com/problems/counting-bits/description/][leetcode
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/counting-bits
+## https://code.dennyzhang.com/counting-bits
 ## Basic Ideas:
 ##      If k%2 == 0, f(k) = f(k/2)
 ##      If k%2 == 1, f(k) = f(k-1)

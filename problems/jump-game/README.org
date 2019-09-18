@@ -39,7 +39,7 @@ Interesting reading:
 [[https://www.youtube.com/watch?v=kHWy5nEfRIQ&list=PLBZBJbE_rGRVnpitdvpdY9952IsKMDuev&index=11][YouTube Coding Interview Question: Tower Hopper Problem]]
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/jump-game
+## https://code.dennyzhang.com/jump-game
 ## Basic Ideas:
 ##        maxIndex: keep tracking the furthest reachable index
 ##

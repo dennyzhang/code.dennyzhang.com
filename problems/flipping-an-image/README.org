@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/flipping-an-image
+// https://code.dennyzhang.com/flipping-an-image
 // Basic Ideas: One pass, two-pointers
 // Complexity: Time O(m*n), Space O(1)
 func flipAndInvertImage(A [][]int) [][]int {

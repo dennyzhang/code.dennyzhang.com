@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/combination-sum-iv
+// https://code.dennyzhang.com/combination-sum-iv
 // Basic Ideas: dynamic programming
 // [1, 2, 3], 4
 // 1, 2, 3

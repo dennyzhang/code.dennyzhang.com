@@ -34,7 +34,7 @@ Credits To: [[https://leetcode.com/problems/next-greater-element-ii/description/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/next-greater-element-ii
+// https://code.dennyzhang.com/next-greater-element-ii
 // Basic Ideas: monotone stack
 //
 //   1 3 2 1 4
@@ -64,7 +64,7 @@ func nextGreaterElements(nums []int) []int {
 #+END_SRC
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/next-greater-element-ii
+## https://code.dennyzhang.com/next-greater-element-ii
 ## Basic Ideas: Descending stack
 ##
 ## Complexity: Time O(n), Space O(n)

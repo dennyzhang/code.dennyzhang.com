@@ -33,7 +33,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/remove-invalid-parentheses
+## https://code.dennyzhang.com/remove-invalid-parentheses
 ## Basic Ideas: BFS
 ##
 ##   Start with s (removed the trailing '(')

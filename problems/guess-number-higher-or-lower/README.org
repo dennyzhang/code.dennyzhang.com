@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/guess-number-higher-or-lower
+## https://code.dennyzhang.com/guess-number-higher-or-lower
 ## Basic Ideas: binary search
 ##      1 1 1 0 -1 -1 -1
 ## Complexity: Time O(log(n)), Space O(1)

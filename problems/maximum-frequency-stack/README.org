@@ -1,0 +1,135 @@
+* Leetcode: Maximum Frequency Stack                             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     stack, designstack, bucketsort
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-frequency-stack"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/max-stack][Leetcode: Max Stack]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-designstack][#designstack]], [[https://code.dennyzhang.com/review-bucketsort][#bucketsort]]
+---------------------------------------------------------------------
+Implement FreqStack, a class which simulates the operation of a stack-like data structure.
+
+FreqStack has two functions:
+
+- push(int x), which pushes an integer x onto the stack.
+- pop(), which removes and returns the most frequent element in the stack.
+
+If there is a tie for most frequent element, the element closest to the top of the stack is removed and returned.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+["FreqStack","push","push","push","push","push","push","pop","pop","pop","pop"],
+[[],[5],[7],[5],[7],[4],[5],[],[],[],[]]
+Output: [null,null,null,null,null,null,null,5,7,5,4]
+Explanation:
+After making six .push operations, the stack is [5,7,5,7,4,5] from bottom to top.  Then:
+
+pop() -> returns 5, as 5 is the most frequent.
+The stack becomes [5,7,5,7,4].
+
+pop() -> returns 7, as 5 and 7 is the most frequent, but 7 is closest to the top.
+The stack becomes [5,7,5,4].
+
+pop() -> returns 5.
+The stack becomes [5,7,4].
+
+pop() -> returns 4.
+The stack becomes [5,7].
+#+END_EXAMPLE
+ 
+Note:
+
+- Calls to FreqStack.push(int x) will be such that 0 <= x <= 10^9.
+- It is guaranteed that FreqStack.pop() won't be called if the stack has zero elements.
+- The total number of FreqStack.push calls will not exceed 10000 in a single test case.
+- The total number of FreqStack.pop calls will not exceed 10000 in a single test case.
+- The total number of FreqStack.push and FreqStack.pop calls will not exceed 150000 across all test cases.
+ 
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-frequency-stack][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/maximum-frequency-stack/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/maximum-frequency-stack
+// Basic Ideas: hashmap + array
+//
+// Each frequency is a list.
+// The tail of list with max freq is the target
+//
+// freqs map[int]int: freqs of each uniq item
+// group map[int][]int: elements has a given frequency
+//
+// When push a element, update both hashmap
+// When pop a element, update both hashmap
+//
+// Complexity: Time O(1) Space O(n)
+type FreqStack struct {
+    maxFreq int
+    freqs map[int]int
+    group map[int][]int
+    size int
+}
+
+func Constructor() FreqStack {
+    return FreqStack{maxFreq:0, freqs:map[int]int{}, group:map[int][]int{}, size:0}
+}
+
+func (this *FreqStack) Push(x int)  {
+    this.freqs[x]++
+    cnt := this.freqs[x]
+    // Notice: no need to remove from previous freq list!
+    this.group[cnt] = append(this.group[cnt], x)
+    if this.maxFreq < cnt {
+        this.maxFreq = cnt
+    }
+    this.size++
+}
+
+func (this *FreqStack) Pop() int {
+    // If stack empty, return -1
+    if this.size == 0 {
+        return -1
+    }
+    l := this.group[this.maxFreq]
+    // get result
+    res := l[len(l)-1]
+    // remove target
+    this.freqs[res]--
+    this.size--
+    this.group[this.maxFreq] = l[0:len(l)-1]
+    // update counter
+    if len(this.group[this.maxFreq]) == 0 {
+        delete(this.group, this.maxFreq)
+        this.maxFreq--
+    }
+    return res
+}
+
+/**
+ * Your FreqStack object will be instantiated and called as such:
+ * obj := Constructor();
+ * obj.Push(x);
+ * param_2 := obj.Pop();
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

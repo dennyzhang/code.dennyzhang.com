@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/minimum-moves-to-equal-array-elements
+// https://code.dennyzhang.com/minimum-moves-to-equal-array-elements
 // Basic Ideas: Math
 // First of all, for all input, we can always find one possible way to make all numbers equal
 //   Let's say, we have A B C D. And it's in ascending order

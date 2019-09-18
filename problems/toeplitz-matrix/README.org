@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/toeplitz-matrix
+## https://code.dennyzhang.com/toeplitz-matrix
 ## Basic Ideas: Check all m[i][j] with m[i+1][j+1]
 ##
 ##            (0,0)  (1,0)  (2,0)  (3,0)

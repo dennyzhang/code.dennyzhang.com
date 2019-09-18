@@ -63,7 +63,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/monthly-transactions-i
+## https://code.dennyzhang.com/monthly-transactions-i
 select left(trans_date, 7) as month, country,
     count(1) as trans_count,
     sum(case when state = 'approved' then 1 else 0 end) as approved_count,

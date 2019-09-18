@@ -54,7 +54,7 @@ Credits To: [[https://leetcode.com/problems/subdomain-visit-count/description/][
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/subdomain-visit-count
+## https://code.dennyzhang.com/subdomain-visit-count
 ## Basic Ideas: hashmap
 ## Complexity: Time O(n), Space O(n)
 class Solution:

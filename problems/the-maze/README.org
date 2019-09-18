@@ -70,7 +70,7 @@ Credits To: [[https://leetcode.com/problems/the-maze/description/][leetcode.com]
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/the-maze
+// https://code.dennyzhang.com/the-maze
 // Basic Ideas: BFS
 //
 // Items to be explored would be positions which are near to walls

@@ -48,7 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/movie-network
+## https://code.dennyzhang.com/movie-network
 ## Basic Ideas: BFS + Heap
 ##        minheap to get topk biggest values
 ## Complexity: Time O(n*log(k)), Space O(n)

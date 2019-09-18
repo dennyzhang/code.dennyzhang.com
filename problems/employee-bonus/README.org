@@ -59,7 +59,7 @@ Credits To: [[https://leetcode.com/problems/employee-bonus/description/][leetcod
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC sql
-## Blog link: https://code.dennyzhang.com/employee-bonus
+## https://code.dennyzhang.com/employee-bonus
 select name, bonus
 from Employee left join Bonus
 on Employee.empId = Bonus.empId

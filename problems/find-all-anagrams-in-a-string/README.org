@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/find-all-anagrams-in-a-string
+## https://code.dennyzhang.com/find-all-anagrams-in-a-string
 class Solution(object):
     def is_same_dict(self, dict_1, dict_2):
         has_matched = True

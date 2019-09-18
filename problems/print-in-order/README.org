@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC c++
-// Blog link: https://code.dennyzhang.com/print-in-order
+// https://code.dennyzhang.com/print-in-order
 class Foo {
 public:
     Foo() {

@@ -29,7 +29,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/ugly-number-ii
+// https://code.dennyzhang.com/ugly-number-ii
 // Basic Ideas: BFS
 //
 //   Queue start with [1, 2, 3, 5]

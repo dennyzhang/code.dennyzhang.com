@@ -35,7 +35,7 @@ Credits To: [[https://leetcode.com/problems/binary-tree-preorder-traversal/descr
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/binary-tree-preorder-traversal
+## https://code.dennyzhang.com/binary-tree-preorder-traversal
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution: dp - Time O(n*m), Space O(n*m)
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/edit-distance
+// https://code.dennyzhang.com/edit-distance
 // Basic Ideas: dp second order
 //
 // dp[i][j]: match word1 0:i with word2 0:j
@@ -83,7 +83,7 @@ func minDistance(word1 string, word2 string) int {
 
 - Solution: dp - Time O(n*m), Space O(n)
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/edit-distance
+// https://code.dennyzhang.com/edit-distance
 // Basic Ideas: dp second order
 //
 // Two major improvements compared to intuitive dp[][]

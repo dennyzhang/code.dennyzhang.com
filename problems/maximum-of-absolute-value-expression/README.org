@@ -47,7 +47,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/maximum-of-absolute-value-expression
+// https://code.dennyzhang.com/maximum-of-absolute-value-expression
 // Basic Ideas:
 //
 //  Notice

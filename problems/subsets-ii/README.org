@@ -41,7 +41,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/subsets-ii
+// https://code.dennyzhang.com/subsets-ii
 // Basic Ideas: dfs + backtracking
 //
 //  No need to use hashmap

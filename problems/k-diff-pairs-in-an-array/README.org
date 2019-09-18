@@ -51,7 +51,7 @@ Credits To: [[https://leetcode.com/problems/k-diff-pairs-in-an-array/description
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
-## Blog link: https://code.dennyzhang.com/k-diff-pairs-in-an-array
+## https://code.dennyzhang.com/k-diff-pairs-in-an-array
 class Solution:
     ## Basic Ideas: Hashmap
     ## Complexity: Time O(n), Space O(n)

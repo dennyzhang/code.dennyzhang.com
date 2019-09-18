@@ -78,7 +78,7 @@ Credits To: [[https://leetcode.com/problems/verifying-an-alien-dictionary/descri
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC go
-// Blog link: https://code.dennyzhang.com/verifying-an-alien-dictionary
+// https://code.dennyzhang.com/verifying-an-alien-dictionary
 // Basic Ideas: hashmap
 // Complexity: Time O(n), Space O(1)
 func isAlienSorted(words []string, order string) bool {
