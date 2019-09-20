@@ -45,7 +45,7 @@ class Solution(object):
     ## Basic Ideas: Dynamic Programming
     ##
     ##    dp(i) = min(dp(i), dp[i-coin[j]]+1)
-    ## Complexity: Time O(n) Space O(n)
+    ## Complexity: Time O(n), Space O(n)
     def coinChange(self, coins, amount):
         """
         :type coins: List[int]
@@ -67,7 +67,7 @@ class Solution(object):
 
     ## Basic Ideas: BFS
     ##
-    ## Complexity: Time O(n) Space O(n)
+    ## Complexity: Time O(n), Space O(n)
     def coinChange_v1(self, coins, amount):
         """
         :type coins: List[int]

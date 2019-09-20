@@ -56,7 +56,7 @@ class Solution(object):
 ## Basic Ideas: Since the head will be changed, add a dummy node
     ##              p points to the next node to be reversed
     ##              take p and insert to dummyNode.next
-    ## Complexity: Time O(n) Space O(1)
+    ## Complexity: Time O(n), Space O(1)
     def reverseList_v1(self, head):
         """
         :type head: ListNode

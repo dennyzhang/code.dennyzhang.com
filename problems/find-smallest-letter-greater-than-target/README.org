@@ -87,7 +87,7 @@ Leave me comments, if you have better ways to solve.
 // Corner cases:
 //      No letter is greater than the target
 //
-// Complexity: Time O(log(n)) Space O(1)
+// Complexity: Time O(log(n)), Space O(1)
 func nextGreatestLetter(letters []byte, target byte) byte {
     // corner case: all letters smaller than the target
     if target >= letters[len(letters)-1] {

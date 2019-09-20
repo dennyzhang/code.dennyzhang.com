@@ -82,7 +82,7 @@ func findMinArrowShots(points [][]int) int {
 //  1     6
 //           7       12
 //                10    16   
-// Complexity: Time O(n*log(n)) Space O(1)
+// Complexity: Time O(n*log(n)), Space O(1)
 import "sort"
 
 func findMinArrowShots(points [][]int) int {

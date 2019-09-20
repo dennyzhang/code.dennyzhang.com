@@ -37,7 +37,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/range-sum-query-immutable
 // Basic Ideas: presum
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 type NumArray struct {
     l []int
 }

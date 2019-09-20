@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/range-sum-query-mutable
 // Basic Ideas: segment tree
 //
-// Complexity: Time O(log(n)) Space O(n)
+// Complexity: Time O(log(n)), Space O(n)
 type NumArray struct {
     tree []int
     size int

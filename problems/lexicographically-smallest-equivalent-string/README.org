@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/lexicographically-smallest-equivalent-string
 // Basic Ideas: Unionfind
 //
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 type UF struct {
     parent []int
 }

@@ -75,7 +75,7 @@ Leave me comments, if you have better ways to solve.
 // When push a element, update both hashmap
 // When pop a element, update both hashmap
 //
-// Complexity: Time O(1) Space O(n)
+// Complexity: Time O(1), Space O(n)
 type FreqStack struct {
     maxFreq int
     freqs map[int]int

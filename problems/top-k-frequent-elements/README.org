@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/top-k-frequent-elements
 // Basic Ideas: heap
 //
-// Complexity: Time O(n*log(k)) Space O(n)
+// Complexity: Time O(n*log(k)), Space O(n)
 import "container/heap"
 
 type MyNode struct {

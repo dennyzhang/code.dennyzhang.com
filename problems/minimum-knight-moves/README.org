@@ -1,0 +1,111 @@
+* Leetcode: Minimum Knight Moves                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dfs, bfs, classic
+:END:
+---------------------------------------------------------------------
+Minimum Knight Moves
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-knight-moves"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+---------------------------------------------------------------------
+In an infinite chess board with coordinates from -infinity to +infinity, you have a knight at square [0, 0].
+
+A knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.
+
+Return the minimum number of steps needed to move the knight to the square [x, y].  It is guaranteed the answer exists.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: x = 2, y = 1
+Output: 1
+Explanation: [0, 0] -> [2, 1]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: x = 5, y = 5
+Output: 4
+Explanation: [0, 0] -> [2, 1] -> [4, 2] -> [3, 4] -> [5, 5]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- |x| + |y| <= 300
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-knight-moves][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-knight-moves/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimum-knight-moves
+// Basic Ideas: BFS
+//
+// Apparently we can change both x, y to non-negative ones
+// When to stop searching? 
+//   Stop searching nodes which moves out of (x, y)
+//
+// Complexity: Time ? Space ?
+type MyNode struct {
+    x, y int
+}
+func minKnightMoves(x int, y int) int {
+    if x<0 {
+        x = -x
+    }
+    if y<0 {
+        y = -y
+    }
+    // check before putting to queue
+    if x==0 && y==0 {
+        return 0
+    }
+    seen := map[MyNode]bool{}
+    queue := [][]int{[]int{0, 0}}
+    seen[MyNode{0, 0}]= true
+    level := 1
+    for len(queue)>0 {
+        l := [][]int{}
+        for _, node := range queue {
+            // find the next nodes
+            i, j := node[0], node[1]
+            for _, offset:= range [][]int {[]int{-2, -1}, []int{-1, -2}, 
+                                           []int{1, -2}, []int{2, -1}, 
+                                           []int{2, 1}, []int{1, 2}, 
+                                           []int{-1, 2}, []int{-2, 1}} {
+                i2, j2 := i+offset[0], j+offset[1]
+                if !seen[MyNode{i2, j2}] {
+                    // check candidate
+                    if i2==x && j2==y {
+                        return level
+                    }
+                    // mark node as seen
+                    seen[MyNode{i2, j2}] = true
+                    // next nodes
+                    l = append(l, []int{i2, j2})
+                }
+            }
+        }
+        queue = l
+        level++
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

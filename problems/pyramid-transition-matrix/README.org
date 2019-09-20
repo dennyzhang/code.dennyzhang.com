@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
 //
 // Notice: assume no duplicate allowed entries
 //
-// Complexity: Time O(k^n) Space O(n)
+// Complexity: Time O(k^n), Space O(n)
 func dfs(pos int, chars []byte, nexts []byte, m map[string][]byte) bool {
     // Can form a final result or caculate next level
     if pos == len(chars)-1 {

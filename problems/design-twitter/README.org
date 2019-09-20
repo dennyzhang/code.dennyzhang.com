@@ -67,7 +67,7 @@ Leave me comments, if you have better ways to solve.
 ## Assumption: people tweet with post id always grows
 ##
 ## Complexity: getNewsFeed
-##       Time O(k*log(n)) Space O(n). n = total tweets involved
+##       Time O(k*log(n)), Space O(n). n = total tweets involved
 import collections, copy
 class Twitter:
 

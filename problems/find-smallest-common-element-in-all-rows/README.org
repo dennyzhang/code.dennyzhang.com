@@ -1,0 +1,143 @@
+* Leetcode: Find Smallest Common Element in All Rows            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     heap, hashmap
+:END:
+---------------------------------------------------------------------
+Find Smallest Common Element in All Rows
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-smallest-common-element-in-all-rows"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/brick-wall][Leetcode: Brick Wall]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given a matrix mat where every row is sorted in increasing order, return the smallest common element in all rows.
+
+If there is no common element, return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: mat = [[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]]
+Output: 5
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= mat.length, mat[i].length <= 500
+- 1 <= mat[i][j] <= 10^4
+- mat[i] is sorted in increasing order.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-smallest-common-element-in-all-rows][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-smallest-common-element-in-all-rows/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: hashmap
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-smallest-common-element-in-all-rows
+// Basic Ideas: hashmap
+//
+// With n pointers of each row, always move the smallest
+// Each row won't have duplicate. So hashmap would be good enough
+//
+// Complexity: Time O(n*m), Space O(n*m)
+
+func smallestCommonElement(mat [][]int) int {
+    freqs := map[int]int{}
+    for _, row := range mat {
+        for _, v := range row {
+            freqs[v]++
+            if freqs[v] == len(mat) {
+                return v
+            }
+        } 
+    }
+    return -1
+}
+#+END_SRC
+
+- Solution: Follow-up: assume there would be duplicates in each row
+
+Hashmap would also work, by avoid counting the same value multiple times in one row
+
+- Solution: Follow-up: assume there would be duplicates in each row
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-smallest-common-element-in-all-rows
+// Basic Ideas: heap + hashmap
+//
+// With n pointers of each row, always move the smallest
+//
+// Complexity: Time O(log(n)*n*m), Space O(n)
+import "container/heap"
+type MyNode struct {
+    value int
+    i, j int
+}
+
+type MyHeap []MyNode
+func (h MyHeap) Len() int {
+    return len(h)
+}
+func (h MyHeap) Less(i, j int) bool {
+    return h[i].value < h[j].value
+}
+func (h MyHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+func (h *MyHeap) Push(x interface{}) {
+    *h = append(*h, x.(MyNode))
+}
+func (h *MyHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func smallestCommonElement(mat [][]int) int {
+    freqs := map[int]int{}
+    h := &MyHeap{}
+    heap.Init(h)
+    for i:=0; i<len(mat); i++ {
+        v := mat[i][0]
+        node := MyNode{value:v, i:i, j:0}
+        freqs[v]++
+        if freqs[v] == len(mat) {
+            return v
+        }
+        heap.Push(h, node)
+    }
+    for true {
+        node := heap.Pop(h).(MyNode)
+        if node.j + 1 == len(mat[node.i]) {
+            return -1
+        }
+        freqs[node.value]--
+        // cleanup to save memory
+        if freqs[node.value] == 0 {
+            delete(freqs, node.value)
+        }
+        v := mat[node.i][node.j+1]
+        freqs[v]++
+        if freqs[v] == len(mat) {
+            return v
+        }
+        // keep exploring
+        heap.Push(h, MyNode{value:v, i:node.i, j:node.j+1})
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

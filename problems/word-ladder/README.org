@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 ##      We can build a set from wordList, then it change 1 characters to all possible combinations
 ##      The complexity would be O(26*w) = O(w)
 ##
-## Complexity: Time O(?) Space O(n*w)
+## Complexity: Time O(?), Space O(n*w)
 ##          n = len(wordList), w=len(word)
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):

@@ -65,7 +65,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/output-contest-matches
 // Basic Ideas: BFS
 //   Bottom up
-// Complexity: Time O(n*log(n)) Space O(n)
+// Complexity: Time O(n*log(n)), Space O(n)
 func findContestMatch(n int) string {
     queue := []string{}
     for i:=0; i<n/2; i++ {

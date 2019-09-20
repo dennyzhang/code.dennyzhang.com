@@ -13,10 +13,6 @@ gcd problems
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
-See all gcd problems: [[https://code.dennyzhang.com/tag/gcd/][#gcd]]
-[display-posts tag="gcd" posts_per_page="100" orderby="title"]
-
-#+BEGIN_EXAMPLE
 Bezout's identity (also called Bezout's lemma) is a theorem in the elementary theory of numbers:
 
 let a and b be nonzero integers and let d be their greatest common divisor. Then there exist integers x
@@ -26,7 +22,9 @@ In addition, the greatest common divisor d is the smallest positive integer that
 
 every integer of the form ax + by is a multiple of the greatest common divisor d.
 https://leetcode.com/problems/water-and-jug-problem/discuss/83715/Math-solution-Java-solution
-#+END_EXAMPLE
+
+See all gcd problems: [[https://code.dennyzhang.com/tag/gcd/][#gcd]]
+[display-posts tag="gcd" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

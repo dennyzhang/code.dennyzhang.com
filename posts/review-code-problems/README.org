@@ -1,0 +1,11 @@
+* Review Of Code Problems & Follow-ups                        :BLOG:Resource:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog, review
+:END:
+---------------------------------------------------------------------
+List of review for typical problems & Follow-ups
+---------------------------------------------------------------------
+Moved to:
+https://cheatsheet.dennyzhang.com/cheatsheet-followup-a4

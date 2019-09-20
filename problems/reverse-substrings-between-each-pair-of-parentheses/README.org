@@ -68,7 +68,7 @@ Leave me comments, if you have better ways to solve.
 //   If not ')', Keep push to stack
 //   If ')', pop elements to a queue, until find '('
 //
-// Complexity: Time O(n^2) Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func reverseParentheses(s string) string {
     stack := []byte{}
     for i, _ := range s {
@@ -103,7 +103,7 @@ func reverseParentheses(s string) string {
 //
 //   Push indices instead of items to stack
 //
-// Complexity: Time O(n^2) Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func reverseParentheses(s string) string {
     stack := []int{}
     l := []byte(s)
@@ -140,7 +140,7 @@ func reverseParentheses(s string) string {
 //
 //   Push string to stack, instead of characters
 //
-// Complexity: Time O(n^2) Space O(n)
+// Complexity: Time O(n^2), Space O(n)
 func reverseParentheses(s string) string {
     stack := []string{}
     for i, _ := range s {

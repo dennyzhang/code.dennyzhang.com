@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 // The two cases of A[0] are not complementary.
 // Because when A[i]==B[i], no swap would be required.
 //  
-// Complexity: Time O(n) Space O(1)
+// Complexity: Time O(n), Space O(1)
 func check(x int, A []int, B []int) int {
     // c1: keep A[i] as x. c2: keep B[i] as x
     c1, c2 := 0, 0
@@ -110,7 +110,7 @@ func minDominoRotations(A []int, B []int) int {
 //
 // How to check whether it's solveable?
 //
-// Complexity: Time O(n) Space O(1)
+// Complexity: Time O(n), Space O(1)
 func minDominoRotations(A []int, B []int) int {
     // only care about the max frequent element
     l := make([]int, 7)

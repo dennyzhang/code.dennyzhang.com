@@ -65,7 +65,7 @@ class Solution(object):
     ##              j points to the next element of the end of consecutive of 1s.
     ##
     ##  Assumption: [1, 0, 1], we should return 1
-    ## Complexity: Time O(n) Space O(1)
+    ## Complexity: Time O(n), Space O(1)
     def findMaxConsecutiveOnes_v1(self, nums):
         """
         :type nums: List[int]

@@ -28,7 +28,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/valid-parentheses
 // Basic Ideas: stack
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 func isValid(s string) bool {
     stack := []byte{}
     m := map[byte]byte{')':'(', ']':'[', '}':'{'}

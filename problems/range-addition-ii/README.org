@@ -61,7 +61,7 @@ Leave me comments, if you have better ways to solve.
 ## Basic Ideas: The biggest number will happen in the left-corner
 ##             min(ops_i) * min(ops_j)
 ##
-## Complexity: Time O(len(ops)) Space O(1)
+## Complexity: Time O(len(ops)), Space O(1)
 class Solution(object):
     def maxCount(self, m, n, ops):
         """

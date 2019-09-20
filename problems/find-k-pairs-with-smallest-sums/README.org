@@ -56,7 +56,7 @@ Leave me comments, if you have better ways to solve.
 //
 //  Notice: nums1 and nums2 may not have enough candidates
 //
-// Complexity: Time O(n*m*log(k)) Space O(k)
+// Complexity: Time O(n*m*log(k)), Space O(k)
 import "container/heap"
 type MyNode struct {
     x, y int

@@ -64,7 +64,7 @@ Leave me comments, if you have better ways to solve.
 //
 //  For any nested parentheses, mark it alternatively
 //
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 type MyNode struct {
     index int
     color int

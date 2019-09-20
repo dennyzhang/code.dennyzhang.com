@@ -1,0 +1,81 @@
+* Leetcode: Minimum Moves to Equal Array Elements II            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, inspiring, roundtrippass, meetingpoint, redo
+:END:
+---------------------------------------------------------------------
+Minimum Moves to Equal Array Elements II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-moves-to-equal-array-elements-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/minimum-moves-to-equal-array-elements][Leetcode: Minimum Moves to Equal Array Elements]]
+- [[https://code.dennyzhang.com/product-of-array-except-self][Leetcode: Product of Array Except Self]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/tag/meetingpoint][#meetingpoint]]
+---------------------------------------------------------------------
+Given a non-empty integer array, find the minimum number of moves required to make all array elements equal, where a move is incrementing a selected element by 1 or decrementing a selected element by 1.
+
+You may assume the array's length is at most 10,000.
+
+Example:
+
+Input:
+[1,2,3]
+
+Output:
+2
+
+Explanation:
+Only two moves are needed (remember each move increments or decrements one element):
+
+[1,2,3]  =>  [2,2,3]  =>  [2,2,2]
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-moves-to-equal-array-elements-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimum-moves-to-equal-array-elements-ii
+// Basic Ideas: array
+//
+//  The target number would be in between [min, max]
+//  For any given target, how to caculate the count of moves quickly?
+//  The target won't be values not in the array.
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+func minMoves2(nums []int) int {
+    sort.Ints(nums)
+    lefts, rights := make([]int, len(nums)), make([]int, len(nums))
+    // from left to right
+    for i := 1; i<len(nums); i++ {
+        lefts[i] = lefts[i-1] + (nums[i]-nums[i-1])*i
+    }
+    // from right to left
+    for i:=len(nums)-2; i>=0; i-- {
+        rights[i] = rights[i+1] + (nums[i+1]-nums[i])*(len(nums)-i-1)
+    }
+    res := 1<<31-1
+    for i:=0; i<len(nums); i++ {
+        if lefts[i]+rights[i] < res {
+            res = lefts[i]+rights[i]
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

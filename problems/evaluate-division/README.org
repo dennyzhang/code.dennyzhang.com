@@ -43,7 +43,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: union find + weighted graph
 //
-// Complexity: Time O(n+k) Space O(n)
+// Complexity: Time O(n+k), Space O(n)
 //   n = node count; k = len(queries)
 type MyNode struct {
     parent string
@@ -106,7 +106,7 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 // https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: union find + weighted graph
 //
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 type MyNode struct {
     parent string
     weight float64 // from current node to its parent
@@ -168,7 +168,7 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 // https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: dfs + weighted graph
 //
-// Complexity: Time O(n*k) Space O(n)
+// Complexity: Time O(n*k), Space O(n)
 func dfs(start string, end string, nodes map[string]map[string]float64, seen map[string]bool) float64 {
     if v, ok := nodes[start][end]; ok {
         return v

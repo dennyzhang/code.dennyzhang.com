@@ -31,7 +31,7 @@ Leave me comments, if you have better ways to solve.
 //  Notice: instead of adding a character, try to delete one
 //  The sequence doesn't matter: There might be a chain of s[i] -> s[j] with j<i
 //
-// Complexity: Time O(n*log(n)) Space O(n)
+// Complexity: Time O(n*log(n)), Space O(n)
 import "sort"
 func longestStrChain(words []string) int {
     sort.Slice(words , func(i, j int) bool {

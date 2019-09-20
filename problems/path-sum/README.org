@@ -38,7 +38,7 @@ Leave me comments, if you have better ways to solve.
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/path-sum
 // Basic Ideas: dfs recursive
-// Complexity: Time O(n) Space O(log(n))
+// Complexity: Time O(n), Space O(log(n))
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -63,7 +63,7 @@ func hasPathSum(root *TreeNode, sum int) bool {
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/path-sum
 ## Basic Ideas: bfs recursive
-## Complexity: Time O(n) Space O(log(n))
+## Complexity: Time O(n), Space O(log(n))
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

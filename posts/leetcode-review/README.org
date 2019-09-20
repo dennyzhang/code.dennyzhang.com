@@ -1,0 +1,11 @@
+* CheatSheet: Leetcode For Code Interview                             :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: #blog, review
+:END:
+---------------------------------------------------------------------
+Handy CheatSheet for your code interview. Common code templates, typical problems by categories, etc.
+---------------------------------------------------------------------
+Moved to:
+[[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4]]

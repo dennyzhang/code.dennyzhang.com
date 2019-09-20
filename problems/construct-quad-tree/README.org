@@ -51,7 +51,7 @@ Leave me comments, if you have better ways to solve.
 ## https://code.dennyzhang.com/construct-quad-tree
 ## Basic Ideas: post-order
 ##
-## Complexity: Time O(n^2) Space O(1)
+## Complexity: Time O(n^2), Space O(1)
 """
 # Definition for a QuadTree node.
 class Node:

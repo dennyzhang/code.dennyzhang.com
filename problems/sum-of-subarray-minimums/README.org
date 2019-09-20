@@ -53,7 +53,7 @@ Leave me comments, if you have better ways to solve.
 //   3 1 2 4
 //       2
 //   l[i]: how many consecutive previous days whose value is bigger than this one
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 type MyNode struct {
     value int
     count int

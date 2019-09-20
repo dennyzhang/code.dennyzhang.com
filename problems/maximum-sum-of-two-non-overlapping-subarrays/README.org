@@ -64,7 +64,7 @@ Leave me comments, if you have better ways to solve.
 // lefts[i]: max sum with length L from L[0:i]
 // rights[i]: max sum with length L from L[i:len(l)-1]
 //
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 func max(x, y int) int {
     if x>y {
         return x

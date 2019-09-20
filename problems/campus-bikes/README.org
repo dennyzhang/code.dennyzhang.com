@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bucketsort
+:type:     bucketsort, manhattandis
 :END:
 ---------------------------------------------------------------------
 Campus Bikes
@@ -12,7 +12,7 @@ Campus Bikes
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-bucketsort][#bucketsort]]
+- Tag: [[https://code.dennyzhang.com/review-bucketsort][#bucketsort]], [[https://code.dennyzhang.com/tag/manhattandis][#manhattandis]]
 ---------------------------------------------------------------------
 On a campus represented as a 2D grid, there are N workers and M bikes, with N <= M. Each worker and bike is a 2D coordinate on this grid.
 
@@ -60,12 +60,13 @@ Leave me comments, if you have better ways to solve.
 //
 //  Maximum distance is 2000
 //  Each distance would can be treated as a bucket
-//  Evaluate from smallest bucket(0) to the biggest bucket(2000), until all workers get bikes.
+//  Evaluate from smallest bucket(0) to the biggest bucket(2000).
+//  Stop until all workers get bikes.
 //
 //  Notice: for each distance, multiple assignments may happen
 //
-//  Use hashmap to track whether a specific bike get assigned, or a specific worker already gets a bike.
-// Complexity: Time O(n*m) Space O(n*m)
+//  Use hashmap to track bike availability and worker requests
+// Complexity: Time O(n*m), Space O(n*m)
 import "sort"
 func abs(x int) int {
     if x>=0 {

@@ -62,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 //
 // Sort values. Keep adding big values until src and dst is connected
 //
-// Complexity: Time O(nm*log(nm)) Space O(nm)
+// Complexity: Time O(nm*log(nm)), Space O(nm)
 import "sort"
 type UF struct {
     parent []int

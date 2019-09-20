@@ -49,7 +49,7 @@ Related Reading: [[https://en.wikipedia.org/wiki/Shoelace_formula][Shoelace form
 ##   Get area of a triangle from 3 edges
 ##        https://www.mathsisfun.com/geometry/herons-formula.html
 ##        s = (a+b+c)/2, area = sqrt(s*(s-a)*(s-b)*(s-c))
-## Complexity: Time O(n^3) Space O(1)
+## Complexity: Time O(n^3), Space O(1)
 class Solution:
     def largestTriangleArea(self, points):
         """

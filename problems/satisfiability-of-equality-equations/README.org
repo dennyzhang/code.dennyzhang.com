@@ -78,7 +78,7 @@ Leave me comments, if you have better ways to solve.
 //   Nodes are lowercase letters.
 //   Array of 26 elements are good enough, no need for hashmap.
 //
-// Complexity: Time O(m) Space O(n)
+// Complexity: Time O(m), Space O(n)
 // m = edge count, n = node count
 type UF struct {
     parent []int

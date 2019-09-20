@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 //
 // Once sorted, the final result of each item can be determined.
 //
-// Complexity: Time O(n*log(n)) Space O(n)
+// Complexity: Time O(n*log(n)), Space O(n)
 func minIncrementForUnique(A []int) int {
     if len(A) == 0 {
         return 0
@@ -81,7 +81,7 @@ func minIncrementForUnique(A []int) int {
 //
 // Increase items one by one
 //
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 func minIncrementForUnique(A []int) int {
     m := map[int]int{}
     for _, v := range A {

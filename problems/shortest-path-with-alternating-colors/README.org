@@ -1,0 +1,128 @@
+* Leetcode: Shortest Path with Alternating Colors               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     shortestdistance, dynamicprogramming, bfs
+:END:
+---------------------------------------------------------------------
+Shortest Path with Alternating Colors
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-with-alternating-colors"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-shortestdistance][#shortestdistance]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
+---------------------------------------------------------------------
+Consider a directed graph, with nodes labelled 0, 1, ..., n-1.  In this graph, each edge is either red or blue, and there could be self-edges or parallel edges.
+
+Each [i, j] in red_edges denotes a red directed edge from node i to node j.  Similarly, each [i, j] in blue_edges denotes a blue directed edge from node i to node j.
+
+Return an array answer of length n, where each answer[X] is the length of the shortest path from node 0 to node X such that the edge colors alternate along the path (or -1 if such a path doesn't exist).
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 3, red_edges = [[0,1],[1,2]], blue_edges = []
+Output: [0,1,-1]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 3, red_edges = [[0,1]], blue_edges = [[2,1]]
+Output: [0,1,-1]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 3, red_edges = [[1,0]], blue_edges = [[2,1]]
+Output: [0,-1,-1]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: n = 3, red_edges = [[0,1]], blue_edges = [[1,2]]
+Output: [0,1,2]
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: n = 3, red_edges = [[0,1],[0,2]], blue_edges = [[1,0]]
+Output: [0,1,1]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 100
+- red_edges.length <= 400
+- blue_edges.length <= 400
+- red_edges[i].length == blue_edges[i].length == 2
+- 0 <= red_edges[i][j], blue_edges[i][j] < n
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-with-alternating-colors][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/shortest-path-with-alternating-colors/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/shortest-path-with-alternating-colors
+// Basic Ideas: BFS + DP
+// dp[i][0]: red
+// dp[i][1]: blue
+// Complexity: Time O(K+n), Space O(n)
+func shortestAlternatingPaths(n int, red_edges [][]int, blue_edges [][]int) []int {
+    edges := []map[int][]int{map[int][]int{}, map[int][]int{}}
+    for _, edge := range red_edges {
+        n1, n2 := edge[0], edge[1]
+        (edges[0])[n1] = append((edges[0])[n1], n2)
+    }
+    for _, edge := range blue_edges {
+        n1, n2 := edge[0], edge[1]
+        (edges[1])[n1] = append((edges[1])[n1], n2)
+    }
+    // (node,color)
+    dp := make([][]int, n)
+    for i, _ := range dp {
+        dp[i] = []int{1<<31-1, 1<<31-1}
+    }
+    dp[0] = []int{0, 0}
+    // BFS
+    // (node,color)
+    queue := [][]int{[]int{0,0}, []int{0, 1}}
+    for len(queue) > 0 {
+        l := [][]int{}
+        for _, node := range queue {
+            n1, c := node[0], node[1]
+            for _, n2 := range edges[1-c][n1] {
+                // if not evaluated
+                if dp[n2][1-c] == 1<<31-1 {
+                    dp[n2][1-c] = dp[n1][c]+1
+                    l = append(l, []int{n2, 1-c})
+                }
+            }
+        }
+        queue = l
+    }
+    res := make([]int, n)
+    for i, _ := range dp {
+        res[i] = dp[i][0]
+        if dp[i][1] < res[i] {
+            res[i] = dp[i][1]
+        }
+        if res[i] == 1<<31-1 {
+            res[i] = -1
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

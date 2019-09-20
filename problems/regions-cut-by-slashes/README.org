@@ -112,7 +112,7 @@ Leave me comments, if you have better ways to solve.
 //   For adjacent nodes:
 //      3<->1
 //      2<->0
-// Complexity: Time O(n^2) Space O(n^2)
+// Complexity: Time O(n^2), Space O(n^2)
 var count int
 type UF struct {
     parent []int
@@ -198,7 +198,7 @@ func regionsBySlashes(grid []string) int {
 //   For adjacent nodes:
 //      3<->1
 //      2<->0
-// Complexity: Time O(n^2) Space O(n^2)
+// Complexity: Time O(n^2), Space O(n^2)
 var count int
 type UF struct {
     parent []int

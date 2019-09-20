@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs
+:type:     bfs, shortestdistance
 :END:
 ---------------------------------------------------------------------
 Shortest Path in Binary Matrix
@@ -12,7 +12,7 @@ Shortest Path in Binary Matrix
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/followup-shortestdistance][#shortestdistance]]
 ---------------------------------------------------------------------
 In an N by N square grid, each cell is either empty (0) or blocked (1).
 
@@ -26,11 +26,12 @@ Return the length of the shortest such clear path from top-left to bottom-right.
 
 Example 1:
 [[image-blog:Leetcode: Shortest Path in Binary Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/shortest-path-in-binary-matrix/my1.png]]
+[[image-blog:Leetcode: Shortest Path in Binary Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/shortest-path-in-binary-matrix/my2.png]]
+
 #+BEGIN_EXAMPLE
 Input: [[0,1],[1,0]]
 Output: 2
 #+END_EXAMPLE
-[[image-blog:Leetcode: Shortest Path in Binary Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/shortest-path-in-binary-matrix/my2.png]]
 
 Example 2:
 #+BEGIN_EXAMPLE

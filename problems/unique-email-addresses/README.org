@@ -53,7 +53,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/unique-email-addresses
 // Basic Ideas: hashmap
 //
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 import "strings"
 func numUniqueEmails(emails []string) int {
     m := map[string]bool{}

@@ -52,7 +52,7 @@ Leave me comments, if you have better ways to solve.
 // When we move our root from one node to its connected node, 
 //  one part of nodes get closer, one the other part get further.
 // Basic Ideas: dfs, hashmap
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 var m_edges map[int][]int
 
 // No need to use hashmap here

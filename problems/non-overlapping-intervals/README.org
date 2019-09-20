@@ -61,7 +61,7 @@ Leave me comments, if you have better ways to solve.
 // Sort by intervals by starting points
 // Greedy: If two intervals overlapping, remove the one ends later
 //
-// Complexity: Time O(n*log(n)) Space O(n)
+// Complexity: Time O(n*log(n)), Space O(n)
 import ("sort"
         "container/heap")
 

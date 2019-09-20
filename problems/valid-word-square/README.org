@@ -99,7 +99,7 @@ Leave me comments, if you have better ways to solve.
 // Starting point for each round
 //   [i, 0], [0, j]
 //   [i, j] <--> [j, i]
-// Complexity: Time O(n*m) Space O(1)
+// Complexity: Time O(n*m), Space O(1)
 func validWordSquare(words []string) bool {
     for i:=0; i<len(words); i++ {
         for j:=0; j<len(words[i]); j++ {

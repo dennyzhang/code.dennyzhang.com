@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, editdistance
+:type:     array, editdistance, shortestdistance
 :END:
 ---------------------------------------------------------------------
 Shortest Word Distance III
@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
 - [[https://code.dennyzhang.com/shortest-word-distance-ii][Shortest Word Distance II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]], [[https://code.dennyzhang.com/followup-shortestdistance][#shortestdistance]]
 ---------------------------------------------------------------------
 Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
 

@@ -34,7 +34,7 @@ Leave me comments, if you have better ways to solve.
 //               s[i]
 //    max_so_far+s[i]
 //
-// Complexity: Time O(n) Space O(n)
+// Complexity: Time O(n), Space O(n)
 func maximumSum(arr []int) int {
     l := make([]int, len(arr))
     l[0] = arr[0]
