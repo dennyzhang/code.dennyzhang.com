@@ -13,7 +13,7 @@ Binary Tree Longest Consecutive Sequence II
 Similar Problems:
 - [[https://code.dennyzhang.com/binary-tree-longest-consecutive-sequence][Leetcode: Binary Tree Longest Consecutive Sequence]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given a binary tree, you need to find the length of Longest Consecutive Path in Binary Tree.
 

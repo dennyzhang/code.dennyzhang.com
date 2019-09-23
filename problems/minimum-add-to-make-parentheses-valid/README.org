@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     stack
+:type:     stack, parentheses
 :END:
 ---------------------------------------------------------------------
 Minimum Add to Make Parentheses Valid
@@ -12,7 +12,7 @@ Minimum Add to Make Parentheses Valid
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-parentheses][#parentheses]]
 ---------------------------------------------------------------------
 Given a string S of '(' and ')' parentheses, we add the minimum number of parentheses ( '(' or ')', and in any positions ) so that the resulting parentheses string is valid.
 

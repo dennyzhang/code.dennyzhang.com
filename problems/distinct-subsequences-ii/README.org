@@ -1,0 +1,103 @@
+* Leetcode: Distinct Subsequences II                            :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, inspiring, subsequence
+:END:
+---------------------------------------------------------------------
+Distinct Subsequences II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-subsequences-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/distinct-subsequences][Leetcode: Distinct Subsequences]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-subsequence][#subsequence]]
+---------------------------------------------------------------------
+Given a string S, count the number of distinct, non-empty subsequences of S .
+
+Since the result may be large, return the answer modulo 10^9 + 7.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "abc"
+Output: 7
+Explanation: The 7 distinct subsequences are "a", "b", "c", "ab", "ac", "bc", and "abc".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "aba"
+Output: 6
+Explanation: The 6 distinct subsequences are "a", "b", "ab", "ba", "aa" and "aba".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: "aaa"
+Output: 3
+Explanation: The 3 distinct subsequences are "a", "aa" and "aaa".
+#+END_EXAMPLE
+
+Note:
+
+1. S contains only lowercase letters.
+- 1 <= S.length <= 2000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-subsequences-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/distinct-subsequences-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/distinct-subsequences-ii
+// Basic Ideas: dynamic programming
+//
+//  The idea of post-trie
+//
+//  dp[i]: count of distinct subsquence, with S[i] taken
+//         prev subsequences + S[i] -> new subsequences
+//
+//  Notice: how to merge the same ending character?
+//   Input: "aba"
+//   Current parsed: "ab"
+//
+//    endswith 'a': ["a"]
+//    endswith 'b': ["ab","b"]
+//
+//    Now parsing: aba
+//    l['a'-'a'] -> build from others + 1 (myself)
+//
+// Complexity: Time O(n) Space O(1)
+import "math"
+func distinctSubseqII(S string) int {
+    mod := int(math.Pow(10, 9)+7)
+    l := make([]int, 26)
+    for i, _ := range S {
+        v := int(S[i] - 'a')
+        sum := 0
+        for _, c := range l {
+            sum = sum + c
+        }
+        l[v] = (sum + 1) % mod
+    }
+    res := 0
+    for _, c := range l {
+        res += c
+    }
+    res = res % mod
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

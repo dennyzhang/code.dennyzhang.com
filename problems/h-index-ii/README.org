@@ -1,0 +1,70 @@
+* Leetcode: H-Index II                                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, binarysearch
+:END:
+---------------------------------------------------------------------
+H-Index II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/h-index-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/h-index][Leetcode: H-Index]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
+---------------------------------------------------------------------
+Given an array of citations sorted in ascending order (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
+
+According to the definition of h-index on Wikipedia: "A scientist has index h if h of his/her N papers have at least h citations each, and the other N - h papers have no more than h citations each."
+
+Example:
+#+BEGIN_EXAMPLE
+Input: citations = [0,1,3,5,6]
+Output: 3 
+Explanation: [0,1,3,5,6] means the researcher has 5 papers in total and each of them had 
+             received 0, 1, 3, 5, 6 citations respectively. 
+             Since the researcher has 3 papers with at least 3 citations each and the remaining 
+             two with no more than 3 citations each, her h-index is 3.
+#+END_EXAMPLE
+
+Note:
+
+If there are several possible values for h, the maximum one is taken as the h-index.
+
+Follow up:
+
+- This is a follow up problem to H-Index, where citations is now guaranteed to be sorted in ascending order.
+- Could you solve it in logarithmic time complexity?
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/h-index-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/h-index-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: array
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/h-index-ii
+// Basic Ideas: array
+//
+// Complexity: Time O(n), Space O(1)
+func hIndex(citations []int) int {
+    res := 0
+    i:=len(citations)-1
+    for ; i>=0 && citations[i] >= (res+1); i-- {
+        res++
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

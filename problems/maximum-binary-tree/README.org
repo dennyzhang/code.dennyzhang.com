@@ -12,7 +12,7 @@ Maximum Binary Tree
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/tag/monotone][#monotone]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/tag/monotone][#monotone]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:
 

@@ -1,0 +1,127 @@
+* Leetcode: Swap For Longest Repeated Character Substring       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     slidingwindow, atmostkdistinct
+:END:
+---------------------------------------------------------------------
+Swap For Longest Repeated Character Substring
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/swap-for-longest-repeated-character-substring"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-atmostkdistinct][#atmostkdistinct]]
+---------------------------------------------------------------------
+Given a string text, we are allowed to swap two of the characters in the string. Find the length of the longest substring with repeated characters.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: text = "ababa"
+Output: 3
+Explanation: We can swap the first 'b' with the last 'a', or the last 'b' with the first 'a'. Then, the longest repeated character substring is "aaa", which its length is 3.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: text = "aaabaaa"
+Output: 6
+Explanation: Swap 'b' with the last 'a' (or the first 'a'), and we get longest repeated character substring "aaaaaa", which its length is 6.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: text = "aaabbaaa"
+Output: 4
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: text = "aaaaa"
+Output: 5
+Explanation: No need to swap, longest repeated character substring is "aaaaa", length is 5.
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: text = "abcdef"
+Output: 1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= text.length <= 20000
+- text consist of lowercase English characters only.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/swap-for-longest-repeated-character-substring][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/swap-for-longest-repeated-character-substring/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/swap-for-longest-repeated-character-substring
+// Basic Ideas: sliding window
+//
+// If only 1 distinct characters, move the right pointer
+// If more than 2 distinct characters
+//    Keep moving the left pointer, until it drops to 2
+// If only 2 distinct characters
+//    If count of the less freq character is 1, move the right
+//    Otherwise move the left
+//
+// Complexity: Time O(n), Space O(1)
+func maxRepOpt1(text string) int {
+    freqs := make([]int, 26)
+    for _, ch := range text {
+        freqs[ch-'a']++
+    }
+    m := map[byte]int{}
+    res := -1<<31
+    // text[i...j]
+    i := 0
+    for j, _ := range text  {
+        m[text[j]]++
+        // move left
+        for true {
+            // no need
+            if len(m) <= 1 {
+                break
+            }
+            if len(m) == 2 {
+                l := []byte{}
+                for k, _ := range m {
+                    l = append(l, k)
+                }
+                // can swap l[0] or l[1]
+                if (m[l[0]] == 1 && freqs[l[1]-'a']>m[l[1]]) || (m[l[1]] == 1 && freqs[l[0]-'a']>m[l[0]]) {
+                    break
+                }
+            }
+            // move left
+            ch := text[i]
+            i++
+            m[ch]--
+            if m[ch]==0 {
+                delete(m, ch)
+            }
+        }
+        // collect result
+        if j-i+1 > res {
+            res = j-i+1
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

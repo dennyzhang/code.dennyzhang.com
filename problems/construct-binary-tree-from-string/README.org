@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, stack
+:type:     classic, stack, redo
 :END:
 ---------------------------------------------------------------------
 Construct Binary Tree from String
@@ -45,7 +45,76 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/construct-binary-tree-from-string
+// Basic Ideas: stack + post-order
+//
+//  L-R-M
+//    (X X X)
+//    (X X)
+//    (X)
+// When push back, it would be a TreeNode pointer
+//
+// Complexity: Time O(n), Space O(n)
+//
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+import "strconv"
+type MyNode struct {
+    node *TreeNode
+    isLeft bool
+}
 
+func str2tree(s string) *TreeNode {
+    if len(s) == 0 {
+        return nil
+    }
+    stack := []*MyNode{}
+    for i:=0; i<len(s); i++ {
+        ch := s[i]
+        if ch != ')' {
+            myNode := &MyNode{node:nil, isLeft:true}
+            if ch != '(' {
+                bytes := []byte{ch}
+                for i+1<len(s) && s[i+1] != ')' && s[i+1] != '(' {
+                    bytes = append(bytes, s[i+1])
+                    i++
+                }
+                v, _ := strconv.Atoi(string(bytes))
+                myNode = &MyNode{node:&TreeNode{Val:v}, isLeft:false}
+            }
+            stack = append(stack, myNode)
+        } else {
+            l := []*MyNode{}
+            for ! stack[len(stack)-1].isLeft {
+                l = append([]*MyNode{stack[len(stack)-1]}, l...)
+                stack = stack[0:len(stack)-1]
+            }
+            // pop )
+            stack = stack[0:len(stack)-1]
+            if len(l) >= 2 {
+                l[0].node.Left = l[1].node
+            }
+            if len(l) == 3 {
+                l[0].node.Right = l[2].node
+            }
+            stack = append(stack, l[0])
+        }
+    }
+    // get result
+    l := stack
+    if len(l) >= 2 {
+        l[0].node.Left = l[1].node
+    }
+    if len(l) == 3 {
+        l[0].node.Right = l[2].node
+    }
+    return l[0].node
+}
 #+END_SRC
 
 #+BEGIN_HTML

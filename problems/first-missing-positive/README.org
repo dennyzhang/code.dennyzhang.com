@@ -17,23 +17,20 @@ and [3,4,-1,1] return 2.
 
 Your algorithm should run in O(n) time and uses constant space.
 
-
-
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/first-missing-positive][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/first-missing-positive/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/first-missing-positive
 ## Basic Ideas: count sort. Put each number in its right place.
 ##    Sample Data:
 ##    1  2  0
 ##    3  4  0  1
-##    0  4  3  1
-##    0  1  3  4
+##    0  4  3  0
+##    1  1  3  4
 ## Complexity:
 class Solution(object):
     def firstMissingPositive(self, nums):

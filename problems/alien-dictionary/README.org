@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo
+:type:     topologicalsort, classic
 :END:
 ---------------------------------------------------------------------
 Alien Dictionary
@@ -12,7 +12,7 @@ Alien Dictionary
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][topologicalsort]]
 ---------------------------------------------------------------------
 There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You receive a list of non-empty words from the dictionary, where words are sorted lexicographically by the rules of this new language. Derive the order of letters in this language.
 
@@ -65,10 +65,137 @@ Credits To: [[https://leetcode.com/problems/alien-dictionary/description/][leetc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: topological sort + bfs
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/alien-dictionary
+// Basic Ideas: topological sort + bfs
+//
+//   Build edges from word to previous word
+//   Get result from a topoloical sort
+//
+// Complexity: Time O(n), Space O(1)
+// Only 56 characters, so O(1) space.
+func alienOrder(words []string) string {
+    // build edges
+    edges := map[byte]map[byte]bool{}
+    indegrees := map[byte]int{}
+    // avoid missing nodes
+    for _, word := range words {
+        for _, ch := range word {
+            indegrees[byte(ch)] = 0
+        }
+    }
+    for k:=0; k+1<len(words); k++ {
+        word1, word2 := words[k], words[k+1]
+        for i:=0; i<len(word1) && i<len(word2); i++ {
+            if word1[i] != word2[i] {
+                if _, ok := edges[word1[i]]; !ok {
+                    edges[word1[i]] = map[byte]bool{}
+                }
+                if ! edges[word1[i]][word2[i]] {
+                    // avoid updating indegrees for duplicate edges
+                    edges[word1[i]][word2[i]] = true
+                    indegrees[word2[i]]++
+                }
+                break
+            }
+        }
+    }
+    // collect result
+    res := []byte{}
+    queue := []byte{}
+    for b, v := range indegrees{
+        if v == 0 {
+            queue = append(queue, b)
+            res = append(res, b)
+        }
+    }
 
+    for len(queue) > 0 {
+        l := []byte{}
+        for _, b := range queue {
+            for b2, _ := range edges[b]{
+                indegrees[b2]--
+                if indegrees[b2] == 0 {
+                    l = append(l, b2)
+                    res = append(res, b2)
+                }
+            }
+        }
+        queue = l
+    }
+
+    if len(res) != len(indegrees) {
+        return ""
+    } else {
+        return string(res)
+    }
+}
+#+END_SRC
+
+- Solution: topological sort + dfs
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/alien-dictionary
+// Basic Ideas: topological sort + dfs
+//
+//   Build edges from word to previous word
+//   Get result from a topoloical sort
+//
+// Complexity: Time O(n), Space O(1)
+func dfs(b byte, res *[]byte, indegrees map[byte]int, edges map[byte]map[byte]bool) {
+    if indegrees[b] != 0 {
+        return
+    }
+    *res = append(*res, b)
+    // mark nodes as processed to avoid duplication
+    indegrees[b] = -1
+    for b2, _ := range edges[b] {
+        indegrees[b2]--
+        if indegrees[b2] == 0 {
+            dfs(b2, res, indegrees, edges)
+        }
+    }
+}
+
+func alienOrder(words []string) string {
+    // build edges
+    edges := map[byte]map[byte]bool{}
+    indegrees := map[byte]int{}
+    // avoid missing nodes
+    for _, word := range words {
+        for _, ch := range word {
+            indegrees[byte(ch)] = 0
+        }
+    }
+    for k:=0; k+1<len(words); k++ {
+        word1, word2 := words[k], words[k+1]
+        for i:=0; i<len(word1) && i<len(word2); i++ {
+            if word1[i] != word2[i] {
+                if _, ok := edges[word1[i]]; !ok {
+                    edges[word1[i]] = map[byte]bool{}
+                }
+                if ! edges[word1[i]][word2[i]] {
+                    // avoid updating indegrees for duplicate edges
+                    edges[word1[i]][word2[i]] = true
+                    indegrees[word2[i]]++
+                }
+                break
+            }
+        }
+    }
+    res := []byte{}
+    // collect result
+    for b, _ := range indegrees {
+        dfs(b, &res, indegrees, edges)
+    }
+    if len(res) != len(indegrees) {
+        return ""
+    } else {
+        return string(res)
+    }
+}
 #+END_SRC
 
 #+BEGIN_HTML

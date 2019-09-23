@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subarray, wiggle
+:type:     subsequence, wiggle, lis
 :END:
 ---------------------------------------------------------------------
 Wiggle Subsequence
@@ -12,7 +12,7 @@ Wiggle Subsequence
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/wiggle][#wiggle]]
+- Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/followup-wiggle][#wiggle]], [[https://code.dennyzhang.com/followup-lis][#lis]]
 ---------------------------------------------------------------------
 A sequence of numbers is called a wiggle sequence if the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with fewer than two elements is trivially a wiggle sequence.
 
@@ -31,7 +31,8 @@ Example 2:
 #+BEGIN_EXAMPLE
 Input: [1,17,5,10,13,15,10,5,16,8]
 Output: 7
-Explanation: There are several subsequences that achieve this length. One is [1,17,10,13,10,16,8].
+Explanation: There are several subsequences that achieve this length.
+One is [1,17,10,13,10,16,8].
 #+END_EXAMPLE
 
 Example 3:
@@ -49,26 +50,126 @@ Credits To: [[https://leetcode.com/problems/wiggle-subsequence/description/][lee
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution: dp[i][0]/dp[i][1]: the size of longest subsequence, which may or may not choose nums[i] 
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/wiggle-subsequence
+// Basic Ideas: dynamic programming
+//
+// down[i]: longest subsequence with a down pair as the last element
+// up[i]
+//
+// Complexity: Time O(n), Space O(n)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
+func wiggleMaxLength(nums []int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+    down, up := make([]int, len(nums)), make([]int, len(nums))
+    down[0], up[0] = 1, 1
+    for i:=1; i<len(nums); i++ {
+        if nums[i] == nums[i-1] {
+            up[i] = up[i-1]
+            down[i] = down[i-1]
+        } else {
+            if nums[i] > nums[i-1] {
+                up[i] = down[i-1]+1
+                down[i] = down[i-1]
+            } else {
+                down[i] = up[i-1]+1
+                up[i] = up[i-1]
+            }
+        }
+    }
+    return max(down[len(nums)-1], up[len(nums)-1])
+}
+#+END_SRC
+
+- Solution: dp[i][0]/dp[i][1]: the size of longest subsequence, which may or may not choose nums[i] 
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/wiggle-subsequence
+// Basic Ideas: dynamic programming
+//
+// down[i]: longest subsequence with a down pair as the last element
+// up[i]
+//
+// Complexity: Time O(n*n), Space O(n)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func wiggleMaxLength(nums []int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+    down, up := make([]int, len(nums)), make([]int, len(nums))
+    down[0], up[0] = 1, 1
+    for i:=1; i<len(nums); i++ {
+        down[i], up[i] = down[i-1], up[i-1]
+        for j:=i-1; j>=0; j-- {
+            if nums[j] > nums[i] {
+                down[i] = max(down[i], up[j]+1)
+            }
+            if nums[j] < nums[i] {
+                up[i] = max(up[i], down[j]+1)
+            }
+        }
+    }
+    return max(down[len(nums)-1], up[len(nums)-1])
+}
+#+END_SRC
+
+- Solution: dp[i][0]/dp[i][1]: the size of longest subsequence, when choosing choose nums[i] 
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/wiggle-subsequence
+// Basic Ideas: dynamic programming
+//
+// down[i]: choose nums[i], and it can come as a down pair as the last element
+// up[i]
+//
+// Complexity: Time O(n*n), Space O(n)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func wiggleMaxLength(nums []int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+    res := 1
+    down, up := make([]int, len(nums)), make([]int, len(nums))
+    down[0], up[0] = 1, 1
+    for i:=1; i<len(nums); i++ {
+        down[i], up[i] = 1, 1
+        for j:=i-1; j>=0; j-- {
+            if nums[j] > nums[i] {
+                down[i] = max(down[i], up[j]+1)
+            }
+            if nums[j] < nums[i] {
+                up[i] = max(up[i], down[j]+1)
+            }
+        }
+        res = max(max(res, down[i]), up[i])
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

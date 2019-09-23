@@ -1,0 +1,109 @@
+* Leetcode: H-Index                                             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array, hashmap
+:END:
+---------------------------------------------------------------------
+H-Index
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/h-index"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/h-index-ii][Leetcode: H-Index II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
+
+According to the definition of h-index on Wikipedia: "A scientist has index h if h of his/her N papers have at least h citations each, and the other N - h papers have no more than h citations each."
+
+Example:
+#+BEGIN_EXAMPLE
+Input: citations = [3,0,6,1,5]
+Output: 3 
+Explanation: [3,0,6,1,5] means the researcher has 5 papers in total and each of them had 
+             received 3, 0, 6, 1, 5 citations respectively. 
+             Since the researcher has 3 papers with at least 3 citations each and the remaining 
+             two with no more than 3 citations each, her h-index is 3.
+#+END_EXAMPLE
+
+Note: If there are several possible values for h, the maximum one is taken as the h-index.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/h-index][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/h-index/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: hashmap
+#+BEGIN_SRC go
+// Basic Ideas: hashmap
+//   0 <= h <= len(citations)
+//   map(i->j): j papers have citation more than i
+//
+// Complexity: Time O(n), Space O(1)
+func hIndex(citations []int) int {
+    l := make([]int, len(citations)+1)
+    for _, v := range citations {
+        if v > len(citations) {
+            l[len(citations)]++
+        } else {
+            l[v]++
+        }
+    }
+    res := 0
+    for i, sum:=len(l)-1, 0; i>=0; i-- {
+        sum += l[i]
+        if sum >= i {
+            res = i
+            break
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: math y=x
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/h-index
+// Basic Ideas: array
+//
+// Complexity: Time O(n*log(n)), Space O(1)
+func hIndex(citations []int) int {
+    // sort in descending order
+    sort.Slice(citations, func(i, j int) bool {
+        return citations[i]>citations[j]
+    })
+    i:=0
+    for ; i< len(citations) && citations[i]>i; i++ {
+    }
+    return i
+}
+#+END_SRC
+
+- Solution: greedy
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/h-index
+// Basic Ideas: array
+//
+// Complexity: Time O(n*log(n)), Space O(1)
+func hIndex(citations []int) int {
+    sort.Ints(citations)
+    res := 0
+    for i:=len(citations)-1; i>=0 && citations[i]>=(res+1); i-- {
+        res++
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

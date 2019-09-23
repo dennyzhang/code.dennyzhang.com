@@ -5,7 +5,7 @@
 :type:     shortestdistance
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Shortest Path Visiting All Nodes
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-visiting-all-nodes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

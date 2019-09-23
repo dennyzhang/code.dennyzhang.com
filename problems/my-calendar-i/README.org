@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, redo
+:type:     interval, meetingconflict
 :END:
 ---------------------------------------------------------------------
 My Calendar I
@@ -12,7 +12,7 @@ My Calendar I
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
 ---------------------------------------------------------------------
 Implement a MyCalendar class to store your events. A new event can be added if adding the event will not cause a double booking.
 

@@ -13,6 +13,18 @@ Here we try to compile a list of inspiring DFS problems.
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
+*Basic Abstractions*
+| Name                            | Summary                                                                         |
+|---------------------------------+---------------------------------------------------------------------------------|
+| dfs avoid duplicate caculations | Maintain state array. And update it at the end of dfs [[https://code.dennyzhang.com/course-schedule][Leetcode: Course Schedule]] |
+
+*Scenarios*
+*Code Skeleton*
+*Questions*
+| Name | Example |
+|------+---------|
+|      |         |
+
 See all dfs problems: [[https://code.dennyzhang.com/tag/bfs/][#dfs]]
 [display-posts tag="dfs" posts_per_page="100" orderby="title"]
 

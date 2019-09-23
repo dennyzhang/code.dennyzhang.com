@@ -12,7 +12,7 @@ Smallest Subtree with all the Deepest Nodes
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/child2parent][#child2parent]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/child2parent][#child2parent]]
 ---------------------------------------------------------------------
 Given a binary tree rooted at root, the depth of each node is the shortest distance to the root.
 

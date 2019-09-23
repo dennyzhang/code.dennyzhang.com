@@ -86,24 +86,85 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/word-squares
+// Basic Ideas: trie + backtracking
+//
+//   a r e a
+//   r
+//   e
+//   a
+//
+// Notice: could one word be used more than one time?
+//
+// Complexity: Time O(n^2) Space O(n^2)
+type Trie struct {
+    children map[byte]*Trie
+    startIndices map[int]bool
+}
 
+func startsWith(root *Trie, prefix []byte) []int {
+    p := root
+    for _, ch := range prefix {
+        if _, ok := p.children[ch]; !ok {
+            return []int{}
+        }
+        p = p.children[ch]
+    }
+    res := []int{}
+    for index, _ := range p.startIndices {
+        res = append(res, index)
+    }
+    return res
+}
+
+func dfs(pos int, l []string, words []string, root *Trie, res *[][]string) {
+    if pos == len(words[0]) {
+        // get result
+        l2 := make([]string, len(l))
+        copy(l2, l)
+        *res = append(*res, l2)
+        return
+    }
+    prefix := make([]byte, len(l))
+    for i:=0; i<len(l); i++ {
+        prefix[i] = l[i][len(l)]
+    }
+    indices := []int{}
+    if len(prefix) == 0 {
+        for index, _ := range root.startIndices {
+            indices = append(indices, index)
+        }
+    } else {
+        indices = startsWith(root, prefix)
+    }
+    for _, index := range indices {
+        l = append(l, words[index])
+        dfs(pos+1, l, words, root, res)
+        l = l[0:len(l)-1]
+    }
+}
+
+func wordSquares(words []string) [][]string {
+    // build a trie tree
+    root := &Trie{startIndices:map[int]bool{}, children:map[byte]*Trie{}}
+    for index, word := range words {
+        p := root
+        for i, _ := range word {
+            ch := word[i]
+            p.startIndices[index] = true
+            if _, ok := p.children[ch]; !ok {
+                q := &Trie{startIndices:map[int]bool{}, children:map[byte]*Trie{}}
+                p.children[ch] = q
+            }
+            p = p.children[ch]
+        }
+    }
+    // backtracking
+    res := [][]string{}
+    dfs(0, []string{}, words, root, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

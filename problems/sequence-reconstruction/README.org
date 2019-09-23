@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, game
+:type:     topologicalsort, bfs, manydetails
 :END:
 ---------------------------------------------------------------------
 Sequence Reconstruction
@@ -11,9 +11,8 @@ Sequence Reconstruction
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sequence-reconstruction"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Check whether the original sequence org can be uniquely reconstructed from the sequences in seqs. The org sequence is a permutation of the integers from 1 to n, with 1 <= n <= 104. Reconstruction means building a shortest common supersequence of the sequences in seqs (i.e., a shortest sequence so that all sequences in seqs are subsequences of it). Determine whether there is only one sequence that can be reconstructed from seqs and it is the org sequence.
 
@@ -69,8 +68,78 @@ Credits To: [[https://leetcode.com/problems/sequence-reconstruction/description/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/sequence-reconstruction
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/sequence-reconstruction
+// Basic Ideas: topological sort + bfs
+//
+//  Every time, there should be only one node with 0 incoming edges
+//  There should be no circle. All nodes should be reachable
+//
+//  Notice: there would be duplicate edges
+//  Notice: The default value of 0 for indegrees list might be misleading
+//
+// Complexity: Time O(n+e), Space O(n+e)
+func sequenceReconstruction(org []int, seqs [][]int) bool {
+    if len(org) == 0 {
+        return len(seqs) == 0
+    }
+    indegrees := make([]int, len(org))
+    for i, _ := range indegrees {
+        indegrees[i] = -1
+    }
+    edges := map[int]map[int]bool{}
+    // build edges
+    for _, seq := range seqs {
+        prev := -1
+        for i:=0; i<len(seq); i++ {
+            cur := seq[i]-1
+            if cur >= len(org) || cur < 0 {
+                return false
+            }
+            // mark the node as seen
+            if indegrees[cur] == -1 {
+                indegrees[cur] = 0
+            }
+            if prev != -1 {
+                // mark the edge 
+                if _, ok := edges[prev]; !ok {
+                    edges[prev] = map[int]bool{}
+                }
+                if _, ok := edges[prev][cur]; !ok {
+                    edges[prev][cur] = true
+                    indegrees[cur]++
+                }
+            }
+            prev = cur
+        }
+    }
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+        }
+    }
+    index := 0
+    for len(queue) == 1 {
+        // examine the result when we pop
+        node1 := queue[0]
+        if org[index] != node1+1 {
+            return false
+        }
+        index++
+        indegrees[node1] = -1
+        // get the nexts
+        l := []int{}
+        for node2, _ := range edges[node1] {
+            indegrees[node2]--
+            if indegrees[node2] == 0 {
+                l = append(l, node2)            
+            }
+        }
+        queue = l
+    }
+    return index == len(org)
+}
 #+END_SRC
 
 #+BEGIN_HTML

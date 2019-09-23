@@ -370,4 +370,8 @@ https://code.dennyzhang.com/tag/redo/page/5
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO change the menu of the blog                                 :noexport:
 * TODO bash export no font coloring                                :noexport:
+* TODO better CSS for code snippets                                :noexport:
+https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/discuss/393503/Golang-stack
+https://code.dennyzhang.com/remove-all-adjacent-duplicates-in-string-ii
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Code website: adsense doesn't show up quickly          :noexport:

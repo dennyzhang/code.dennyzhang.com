@@ -1,19 +1,19 @@
-* Series: Calendar & Follow-up                                  :BLOG:Series:
+* Series: Meeting Point Problems & Follow-up                    :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type: series
 :END:
 ---------------------------------------------------------------------
-Calendar & Follow-up
+Meeting Point Problems & Follow-up
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-calendar"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-meetingpoint"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
-See all calendar problems & follow-up: [[https://code.dennyzhang.com/tag/calendar/][#calendar]]
-[display-posts tag="calendar" posts_per_page="100" orderby="title"]
+See all meetingpoint problems & follow-up: [[https://code.dennyzhang.com/tag/meetingpoint/][#meetingpoint]]
+[display-posts tag="meetingpoint" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

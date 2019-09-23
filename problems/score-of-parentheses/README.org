@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     stack, redo
+:type:     stack, parentheses, redo
 :END:
 ---------------------------------------------------------------------
 Score of Parentheses
@@ -12,7 +12,7 @@ Score of Parentheses
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-parentheses][#parentheses]]
 ---------------------------------------------------------------------
 Given a balanced parentheses string S, compute the score of the string based on the following rule:
 

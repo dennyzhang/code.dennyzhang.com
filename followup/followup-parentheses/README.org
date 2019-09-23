@@ -1,19 +1,19 @@
-* Series: #atmostkdistinct - Substring with at most k distinct characters :BLOG:Series:
+* Series: #parentheses - Parentheses problems & Follow-up       :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type: series
 :END:
 ---------------------------------------------------------------------
-Substring with at most k distinct characters
+Parentheses problems & Follow-up
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-atmostkdistinct"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-parentheses"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
 See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
-[display-posts tag="atmostkdistinct" posts_per_page="100" orderby="title"]
+[display-posts tag="parentheses" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

@@ -12,9 +12,27 @@ Key operations: insert, search, prefix, getHeight, etc.
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-trie"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
+*Basic Abstractions*
+| Name                              | Summary                        |
+|-----------------------------------+--------------------------------|
+| children map[byte]*Trie           | Use pointer                    |
+| Common Trie operations            | Insert/Search/StartsWith       |
+| Sometimes no need to track isLeaf | [[https://code.dennyzhang.com/word-squares][Leetcode: Word Squares]]         |
+| Trie for inverted index           | [[https://code.dennyzhang.com/stream-of-characters][Leetcode: Stream of Characters]] |
 
-[[color:#c7254e][Key Points]]:
-- Understand why we have is_word property in the TrieNode datastructure.
+*Scenarios*
+#+BEGIN_SRC go
+type Trie struct {
+    children map[byte]*Trie
+    isLeaf bool
+}
+#+END_SRC
+*Code Skeleton*
+
+*Questions*
+| Name | Example |
+|------+---------|
+|      |         |
 
 [[color:#c7254e][Questions To Think]]:
 Q: How to time complexity for Trie Tree problems?

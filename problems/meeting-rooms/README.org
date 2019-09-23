@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/meeting-rooms-ii][Meeting Rooms II]]
 - [[https://code.dennyzhang.com/rectangle-area][Rectangle Area]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
 ---------------------------------------------------------------------
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
 

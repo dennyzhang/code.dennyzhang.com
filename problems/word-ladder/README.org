@@ -2,10 +2,18 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     codetemplate, bfs, graph, string
+:type:     codetemplate, bfs, graph
 :END:
 ---------------------------------------------------------------------
 Word Ladder
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-increasing-path-in-a-matrix"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/word-ladder-ii][Leetcode: Word Ladder II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-graph][graph]], [[https://code.dennyzhang.com/review-bfs][bfs]]
 ---------------------------------------------------------------------
 Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
 
@@ -38,7 +46,120 @@ Credits To: [[https://leetcode.com/problems/word-ladder/description/][leetcode.c
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: bidirectional BFS
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-ladder
+// https://code.dennyzhang.com/word-ladder
+// Basic Ideas: bidirectional bfs
+//
+// Complexity: Time O(m*n) Space O(m*n)
+func ladderLength(beginWord string, endWord string, wordList []string) int {
+    words := map[string]bool{}
+    visited1 := map[string]bool{}
+    visited2 := map[string]bool{}
+    for _, word := range wordList {
+        words[word] = true
+        visited1[word] = false
+        visited2[word] = false
+    }
+    // check whether endWord is a transformed word
+    if _, ok := words[endWord]; !ok {
+        return 0
+    }
+    queue1 := []string{beginWord}
+    visited1[beginWord] = true
 
+    queue2 := []string{endWord}
+    visited2[endWord] = true
+
+    level := 2
+    for len(queue1) > 0 && len(queue2) > 0 {
+        if len(queue2) < len(queue1) {
+            queue1, queue2 = queue2, queue1
+            visited1, visited2 = visited2, visited1
+        }
+        // bfs from queue1
+        l := []string{}
+        for _, word := range queue1 {
+            bytes := []byte(word)
+            for i, ch := range bytes {
+                for ch2:='a'; ch2<='z'; ch2++ {
+                    // backtracking
+                    bytes[i] = byte(ch2)
+                    word2 := string(bytes)
+                    if word2 != word {
+                        // word exists, and not visited
+                        if _, ok := words[word2]; ok && !visited1[word2] {
+                            if visited2[word2] {
+                                return level
+                            }
+                            l = append(l, word2)
+                            // mark node as visited
+                            visited1[word2] = true
+                        }
+                    }
+                    bytes[i] = ch
+                }
+            }
+        }
+        queue1 = l
+        level++
+    }
+    return 0
+}
+#+END_SRC
+
+- Solution: BFS in golang
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-ladder
+// Basic Ideas: bfs + backtracking
+//
+//  Backtracking: we can only change one character at one time
+//
+// Complexity: Time O(m*n) Space O(m*n)
+func ladderLength(beginWord string, endWord string, wordList []string) int {
+    visited := map[string]bool{}
+    for _, word := range wordList {
+        visited[word] = false
+    }
+    // check whether endWord is a transformed word
+    if _, ok := visited[endWord]; !ok {
+        return 0
+    }
+    queue := []string{beginWord}
+    level := 1
+    for len(queue) > 0 {
+        l := []string{}
+        for _, word := range queue {
+            bytes := []byte(word)
+            for i, ch := range bytes {
+                for ch2:='a'; ch2<='z'; ch2++ {
+                    // backtracking
+                    bytes[i] = byte(ch2)
+                    word2 := string(bytes)
+                    if word2 != word {
+                        // word exists, and not visited
+                        if _, ok := visited[word2]; ok && !visited[word2] {
+                            if word2 == endWord {
+                                return level+1
+                            }
+                            l = append(l, word2)
+                            // mark node as visited
+                            visited[word2] = true
+                        }
+                    }
+                    bytes[i] = ch
+                }
+            }
+        }
+        queue = l
+        level++
+    }
+    return 0
+}
+#+END_SRC
+
+- Solution: BFS in python
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/word-ladder
 ## Basic Ideas: BFS. Find the shortest path from point1 to point2

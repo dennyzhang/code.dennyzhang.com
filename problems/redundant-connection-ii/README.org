@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     circleingraph, classic, graph
+:type:     circleingraph, classic, graph, topologicalsort
 :END:
 ---------------------------------------------------------------------
 Redundant Connection II
@@ -13,7 +13,7 @@ Redundant Connection II
 Similar Problems:
 - [[https://code.dennyzhang.com/redundant-connection][Leetcode: Redundant Connection]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-circleingraph][#circleingraph]], [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-circleingraph][#circleingraph]], [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]]
 ---------------------------------------------------------------------
 In this problem, a rooted tree is a directed graph such that, there is exactly one node (the root) for which all other nodes are descendants of this node, plus every node has exactly one parent, except for the root node which has no parents.
 

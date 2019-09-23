@@ -12,7 +12,7 @@ Is Subsequence
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]]
 ---------------------------------------------------------------------
 Given a string s and a string t, check if s is subsequence of t.
 

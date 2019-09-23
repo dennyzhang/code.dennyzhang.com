@@ -1,0 +1,103 @@
+* Review: Topological Sort Problems                             :BLOG:Review:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type: topologicalsort, review
+:END:
+---------------------------------------------------------------------
+Topological Sort Problems
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-topologicalsort"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+
+*Basic Abstractions*
+| Name                                    | Summary                         |
+|-----------------------------------------+---------------------------------|
+| unexamined nodes with no incoming edges |                                 |
+| Unused edge                             |                                 |
+| [[https://en.wikipedia.org/wiki/Topological_sorting#Algorithms][Wikipedia: Topological sorting]]          | Kahn's algorithm, DFS algorithm |
+|                                         |                                 |
+
+*Questions*
+| Name                                                                         | Example                                               |
+|------------------------------------------------------------------------------+-------------------------------------------------------|
+| Time complexity should be O(n+e)                                             | O(n^2) would work, but not optimal                    |
+| Indegrees as a list of 0s might troublesome                                  | Use hashmap instead [[https://code.dennyzhang.com/sequence-reconstruction][Leetcode: Sequence Reconstruction]] |
+| Common Mistake: Missing characters without incoming edges                    | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
+| Common Mistake: Avoid updating indegrees repetitively for duplicate edges    | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
+| Common Mistake: in dfs implementation, process 0-degree nodes multiple times | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
+| Topoloical sort: How to return all possible orders, instead of any one?      |                                                       |
+| Longest path in a DAG without circle                                         | [[https://code.dennyzhang.com/longest-increasing-path-in-a-matrix][Leetcode: Longest Increasing Path in a Matrix]]         |
+
+*Code Skeleton*
+
+- Solution: Kahn's algorithm (BFS) without deleting edges
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/course-schedule
+// Basic Ideas: topological sort + Kahn's algorithm
+//
+//  BFS
+//    queue: unexamined nodes with no incoming edges
+//    Decrease count of incoming edges for the target nodes
+//    Get the next nodes to be examined
+//
+//  When to stop?
+//    When BFS stops, there should be no unexamined edges
+//    Or all nodes get examined
+//
+//  Follow-up: what if there are duplicate edges?
+//
+// Complexity: Time O(n+e), Space O(n+e)
+func canFinish(numCourses int, prerequisites [][]int) bool {
+    indegrees := make([]int, numCourses)
+    edges := map[int]map[int]bool{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        if _, ok := edges[n1]; !ok {
+            edges[n1] = map[int]bool{}
+        }
+        edges[n1][n2] = true
+        indegrees[n2]++
+    }
+    count := 0
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+            count++
+        }
+    }
+    for len(queue) > 0 {
+        l := []int{}
+        for _, n1 := range queue {
+            for n2, _ := range edges[n1] {
+                indegrees[n2]--
+                if indegrees[n2] == 0 {
+                    l = append(l, n2)
+                    count++
+                }
+            }
+        }
+        queue = l
+    }
+    return count == numCourses
+}
+#+END_SRC
+
+Topological sorting forms the basis of linear-time algorithms for finding the *critical path* of the project, a sequence of milestones and tasks that controls the length of the overall project schedule.
+
+See all topologicalsort problems: [[https://code.dennyzhang.com/tag/topologicalsort/][#topologicalsort]]
+[display-posts tag="topologicalsort" posts_per_page="100" orderby="title"]
+
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

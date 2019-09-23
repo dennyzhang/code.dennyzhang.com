@@ -209,7 +209,7 @@ class Solution(object):
 
 Revert a linked list: [[https://code.dennyzhang.com/reverse-linked-list-ii][Reverse Linked List II]]
 ---------------------------------------------------------------------
-- [[https://code.dennyzhang.com/tag/binarytree][#binarytree]]: [[https://code.dennyzhang.com/binary-tree-postorder-traversal][Postorder Traversal]], [[https://code.dennyzhang.com/binary-tree-level-order-traversal][Level Order Traversal]]
+- [[https://code.dennyzhang.com/review-binarytree][#binarytree]]: [[https://code.dennyzhang.com/binary-tree-postorder-traversal][Postorder Traversal]], [[https://code.dennyzhang.com/binary-tree-level-order-traversal][Level Order Traversal]]
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/review-stack][#stack]]: [[https://code.dennyzhang.com/basic-calculator-iii][Basic Calculator III]], [[https://code.dennyzhang.com/decode-string][Decode String]]
 ---------------------------------------------------------------------

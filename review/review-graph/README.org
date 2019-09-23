@@ -12,17 +12,18 @@ Graph related questions mainly focus on depth first search and breath first sear
 #+END_HTML
 
 *Basic Abstractions*
-| Name | Summary |
-|------+---------|
-|      |         |
-*Scenarios*
-*Code Skeleton*
+| Name                                         | Summary                                 |
+|----------------------------------------------+-----------------------------------------|
+| bfs and dfs relationship                     | [[https://code.dennyzhang.com/word-ladder-ii][Leetcode: Word Ladder II]]                |
+| From BFS to Bidirectional BFS                | Half of the time. [[https://code.dennyzhang.com/word-ladder][Leetcode: Word Ladder]] |
+| 3 cases: state is invalid/visited/unexamined | [[https://code.dennyzhang.com/word-ladder][Leetcode: Word Ladder]]                   |
+
 *Questions*
 | Name                                                                  | Example                                       |
 |-----------------------------------------------------------------------+-----------------------------------------------|
 | [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]]: [[https://en.wikipedia.org/wiki/Minimum_spanning_tree][Minimum spanning tree]] of a weighted graph        | [[https://code.dennyzhang.com/connecting-cities-with-minimum-cost][Leetcode: Connecting Cities With Minimum Cost]] |
 | [[https://en.wikipedia.org/wiki/Dijkstra's_algorithm][Dijkstra's algorithm]]: shortest path for two nodes in a weighted graph |                                               |
-| [[https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm][Floyd-Warshall algorithm]]: find shortest paths in a weighted graph     |                                               |
+| [[https://en.wikipedia.org/wiki/Floyd-Warshall_algorithm][Floyd-Warshall algorithm]]: find shortest paths in a weighted graph     |                                               |
 
 Floyd-Warshall algorithm: Time O(n*n*n)
 [[image-blog:Review: Graph Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-graph/floyd-warshall.png]]

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subsequence
+:type:     subsequence, hashmap
 :END:
 ---------------------------------------------------------------------
 Longest Harmonious Subsequence
@@ -11,7 +11,7 @@ Longest Harmonious Subsequence
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-harmonious-subsequence"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/tag/subsequence][Tag: #subsequence]]
+- Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 We define a harmonious array is an array where the difference between its maximum value and its minimum value is exactly 1.
 
@@ -34,11 +34,12 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/longest-harmonious-subsequence
-## Basic Ideas: The input array won't exceed 20,000
-##              Build a map from the array. key is the number in the list, value is the occurence count
-##              For each key in the map, check m.get(key+1)
-##              Here we don't need to compare m.get(key-1). 
-##              Why? We will also visit the smaller value sooner or later
+## Basic Ideas: 
+##  The input array won't exceed 20,000
+##  Build a map from the array. key is the number in the list, value is the occurence count
+##  For each key in the map, check m.get(key+1)
+##  Here we don't need to compare m.get(key-1). 
+##  Why? We will also visit the smaller value sooner or later
 ##
 ## Complexity: Time O(n), Space O(n)
 ##

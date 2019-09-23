@@ -1,0 +1,173 @@
+* Leetcode: Get Equal Substrings Within Budget                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     slidingwindow
+:END:
+---------------------------------------------------------------------
+Get Equal Substrings Within Budget
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/get-equal-substrings-within-budget"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]
+- [[https://code.dennyzhang.com/maximum-size-subarray-sum-equals-k][Leetcode: Maximum Size Subarray Sum Equals k]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
+---------------------------------------------------------------------
+You are given two strings s and t of the same length. You want to change s to t. Changing the i-th character of s to i-th character of t costs |s[i] - t[i]| that is, the absolute difference between the ASCII values of the characters.
+
+You are also given an integer maxCost.
+
+Return the maximum length of a substring of s that can be changed to be the same as the corresponding substring of twith a cost less than or equal to maxCost.
+
+If there is no substring from s that can be changed to its corresponding substring from t, return 0.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "abcd", t = "bcdf", maxCost = 3
+Output: 3
+Explanation: "abc" of s can change to "bcd". That costs 3, so the maximum length is 3.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "abcd", t = "cdef", maxCost = 3
+Output: 1
+Explanation: Each character in s costs 2 to change to charactor in t, so the maximum length is 1.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "abcd", t = "acde", maxCost = 0
+Output: 1
+Explanation: You can't make any change, so the maximum length is 1.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length, t.length <= 10^5
+- 0 <= maxCost <= 10^6
+- s and t only contain lower case English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/get-equal-substrings-within-budget][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/get-equal-substrings-within-budget/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: Sliding window to get the longest size of subarray
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/get-equal-substrings-within-budget
+// Basic Ideas: sliding window
+//
+// Sliding window to get the longest size of subarray
+//
+// Complexity: Time O(n) Space O(1)
+func equalSubstring(s string, t string, maxCost int) int {
+    // sliding window
+    left, right := 0, 0
+    for ; right<len(s); right++ {
+        rcost := int(int(s[right])-int(t[right]))
+        if rcost < 0 {
+            rcost = -rcost
+        }
+        maxCost -= rcost
+        if maxCost < 0 {
+            lcost := int(int(s[left])-int(t[left]))
+            if lcost < 0 {
+                lcost = -lcost
+            }
+            maxCost += lcost
+            left++
+        }
+    }   
+    return right-left
+}
+#+END_SRC
+
+- Solution: O(1) Space
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/get-equal-substrings-within-budget
+// Basic Ideas: sliding window
+//
+// Similar problem: LC 325. Maximum Size Subarray Sum Equals k
+//
+// Complexity: Time O(n) Space O(1)
+func equalSubstring(s string, t string, maxCost int) int {
+    // sliding window
+    res := 0
+    sum := 0
+    left := 0
+    for right:=0; right<len(s); right++ {
+        rcost := int(int(s[right])-int(t[right]))
+        if rcost < 0 {
+            rcost = -rcost
+        }
+        sum += rcost
+        // move left
+        for sum > maxCost && left < len(s) {
+            lcost := int(int(s[left])-int(t[left]))
+            if lcost < 0 {
+                lcost = -lcost
+            }
+            sum -= lcost
+            left++
+        }
+        // get a candidate
+        if left<=right && right-left+1 > res {
+            res = right-left+1
+        }
+    }   
+    return res
+}
+#+END_SRC
+
+- Solution: O(n) Space
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/get-equal-substrings-within-budget
+// Basic Ideas: sliding window
+//
+// Similar problem: longest subarray with sum no more than K
+//
+// Complexity: Time O(n) Space O(n)
+func equalSubstring(s string, t string, maxCost int) int {
+    // get costs
+    costs := make([]int, len(s))
+    for i:=0; i<len(s); i++ {
+        costs[i] = int(s[i])-int(t[i])
+        if costs[i] < 0 {
+            costs[i] = -costs[i]
+        }
+    }
+    // sliding window
+    res := 0
+    sum := 0
+    left := 0
+    for right:=0; right<len(costs); right++ {
+        sum += costs[right]
+        // move left
+        for sum > maxCost && left < len(costs) {
+            sum -= costs[left]
+            left++
+        }
+        // get a candidate
+        if left<=right && right-left+1 > res {
+            res = right-left+1
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

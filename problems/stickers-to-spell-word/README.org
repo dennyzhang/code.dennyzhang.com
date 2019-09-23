@@ -66,6 +66,8 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
+BFS won't work, since the examining space would be pow(15, 50).
+
 *General Thinkings:*
 #+BEGIN_EXAMPLE
 

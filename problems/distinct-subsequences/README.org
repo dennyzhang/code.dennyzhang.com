@@ -1,0 +1,169 @@
+* Leetcode: Distinct Subsequences                               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     subsequence, editdistance, lcs
+:END:
+---------------------------------------------------------------------
+Distinct Subsequences
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-subsequences"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/distinct-subsequences-ii][Leetcode: Distinct Subsequences II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/followup-editdistance][#editdistance]], [[https://code.dennyzhang.com/tag/lcs][#lcs]]
+---------------------------------------------------------------------
+Given a string S and a string T, count the number of distinct subsequences of S which equals T.
+
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, "ACE" is a subsequence of "ABCDE" while "AEC" is not).
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: S = "rabbbit", T = "rabbit"
+Output: 3
+Explanation:
+
+As shown below, there are 3 ways you can generate "rabbit" from S.
+(The caret symbol ^ means the chosen letters)
+
+rabbbit
+^^^^ ^^
+rabbbit
+^^ ^^^^
+rabbbit
+^^^ ^^^
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: S = "babgbag", T = "bag"
+Output: 5
+Explanation:
+
+As shown below, there are 5 ways you can generate "bag" from S.
+(The caret symbol ^ means the chosen letters)
+
+babgbag
+^^ ^
+babgbag
+^^    ^
+babgbag
+^    ^^
+babgbag
+  ^  ^^
+babgbag
+    ^^^
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-subsequences][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/distinct-subsequences/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: dp with empty elmenets
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/distinct-subsequence
+// Basic Ideas: dynamic programming + LCS
+//
+// dp[i][j]
+//    s[0...i]
+//    t[0...j]
+//
+// if s[i] == t[j]: 
+//   rabbit
+//   rab
+//   dp[i][j] = dp[i-1][j-1] + dp[i-1][j]
+//
+// Otherwise:
+//   rabbit
+//   ra
+//  dp[i][j] = dp[i-1][j]
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func numDistinct(s string, t string) int {
+    dp := make([][]int, len(s)+1)
+    for i, _ := range dp {
+        dp[i] = make([]int, len(t)+1)
+    }
+    // initial state
+    for i:=0; i<len(dp); i++ {
+        dp[i][0] = 1
+    }
+    for i:=1; i<len(dp); i++ {
+        for j:=1; j<len(dp[0]); j++ {
+            if s[i-1] == t[j-1] {
+                dp[i][j] = dp[i-1][j-1]+dp[i-1][j]
+            } else {
+                dp[i][j] = dp[i-1][j]
+            }
+        }
+    }
+    return dp[len(s)][len(t)]
+}
+#+END_SRC
+
+- Solution: dp without empty elmenets
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/distinct-subsequence
+// Basic Ideas: dynamic programming + LCS
+//
+// dp[i][j]
+//    s[0...i]
+//    t[0...j]
+//
+// if s[i] == t[j]: 
+//   rabbit
+//   rab
+//   dp[i][j] = dp[i-1][j-1] + dp[i-1][j]
+//
+// Otherwise:
+//   rabbit
+//   ra
+//  dp[i][j] = dp[i-1][j]
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func numDistinct(s string, t string) int {
+    if len(t) == 0 {
+        return 1
+    }
+    if len(s) == 0 {
+        return 0
+    }
+    dp := make([][]int, len(s))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(t))
+    }
+    // start condition
+    for i:=0; i<len(s); i++ {
+        if i>0 {
+            dp[i][0] += dp[i-1][0]
+        }
+        if s[i] == t[0] {
+            dp[i][0] += 1
+        }
+    }
+    for i:=1; i<len(s); i++ {
+        for j:=1; j<len(t); j++ {
+            if s[i] == t[j] {
+                dp[i][j] = dp[i-1][j-1]+dp[i-1][j]
+            } else {
+                dp[i][j] = dp[i-1][j]
+            }
+        }
+    }
+    return dp[len(s)-1][len(t)-1]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

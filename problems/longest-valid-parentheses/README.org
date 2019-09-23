@@ -1,0 +1,86 @@
+* Leetcode: Longest Valid Parentheses                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     parentheses, stack, classic, inspiring, redo
+:END:
+---------------------------------------------------------------------
+Longest Valid Parentheses
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-valid-parentheses"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-parentheses][#parentheses]]
+---------------------------------------------------------------------
+Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "(()"
+Output: 2
+Explanation: The longest valid parentheses substring is "()"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: ")()())"
+Output: 4
+Explanation: The longest valid parentheses substring is "()()"
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-valid-parentheses][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/longest-valid-parentheses/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-valid-parentheses
+// Basic Ideas: stack
+//
+//  The substring must ends with )
+//  For valid substring, we combine them
+//  Whenever we find a ), we look for the related (
+//
+//  We put a ) or -1 as a place holder, to the top of the stack
+//
+// Complexity: Time O(n), Space O(n)
+func longestValidParentheses(s string) int {
+    stack := []int{-1}
+    res := 0
+    for i, ch := range s {
+        if ch == '(' {
+            stack = append(stack, i)
+        } else {
+            if len(stack) == 0 {
+                stack = append(stack, i)
+            } else {
+                // remove the related ( or place-holder
+                stack = stack[0:len(stack)-1]
+                if len(stack) == 0 {
+                    // previous element is a place-holder
+                    stack = append(stack, i)
+                } else {
+                    // get a candidate
+                    if i-stack[len(stack)-1] > res {
+                        res = i-stack[len(stack)-1]
+                    }
+                }
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

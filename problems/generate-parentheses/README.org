@@ -7,6 +7,13 @@
 ---------------------------------------------------------------------
 Generate Parentheses
 ---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-word-is-valid-after-substitutions"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-parentheses][#parentheses]]
+---------------------------------------------------------------------
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 #+BEGIN_EXAMPLE
 For example, given n = 3, a solution set is:

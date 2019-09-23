@@ -1,0 +1,91 @@
+* Leetcode: Longest Substring with At Least K Repeating Characters :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+Longest Substring with At Least K Repeating Characters
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-substring-with-at-least-k-repeating-characters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]]
+---------------------------------------------------------------------
+Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+s = "aaabb", k = 3
+
+Output:
+3
+
+The longest substring is "aaa", as 'a' is repeated 3 times.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+s = "ababbc", k = 2
+
+Output:
+5
+
+The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-substring-with-at-least-k-repeating-characters][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-substring-with-at-least-k-repeating-characters
+// Basic Ideas: 
+//
+// Complexity: Time O(n^2), Space O(1)
+func longestSubstring(s string, k int) int {
+    if k <= 1 || len(s) == 0 {
+        return len(s)
+    }
+    res := 0
+    // start with s[0:len(s)-1]
+    for i:=0; i<len(s); i++ {
+        l := make([]int, 26)
+        cnt := 0
+        for j:=i; j<len(s); j++ {
+            index := int(s[j]-'a')
+            l[index]++
+            if l[index] == 1 {
+                cnt++
+            } else {
+                if l[index] == k {
+                    cnt--
+                }
+            }
+            // s[i:j] is a candidate
+            if cnt == 0 {
+                if j-i+1 > res {
+                    res = j-i+1
+                }
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

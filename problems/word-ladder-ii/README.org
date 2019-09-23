@@ -2,10 +2,18 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     graph, bfs, classic, string
+:type:     graph, bfs, classic, string, backtracking, redo
 :END:
 ---------------------------------------------------------------------
 Word Ladder II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-increasing-path-in-a-matrix"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/word-ladder][Leetcode: Word Ladder]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-graph][graph]], [[https://code.dennyzhang.com/review-bfs][bfs]], [[https://code.dennyzhang.com/review-backtracking][backtracking]]
 ---------------------------------------------------------------------
 Given two words (beginWord and endWord), and a dictionary's word list, find all shortest transformation sequence(s) from beginWord to endWord, such that:
 
@@ -40,10 +48,113 @@ Credits To: [[https://leetcode.com/problems/word-ladder-ii/description/][leetcod
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-ladder-ii
+// Basic Ideas: bfs + backtracking
+//
+// Figure out the distance from beginWord to endWord
+// Also the distance from beginWord to any possible word
+//   This can speedup the test
+//
+// Complexity: Time ? Space ?
+func getDistance(beginWord string, endWord string, visited map[string]bool, distances map[string]int) int {
+    // check whether endWord is a transformed word
+    if _, ok := visited[endWord]; !ok {
+        return 0
+    }
+    queue := []string{beginWord}
+    level := 1
+    distances[beginWord] = 0
+    for len(queue) > 0 {
+        l := []string{}
+        for _, word := range queue {
+            bytes := []byte(word)
+            for i, ch := range bytes {
+                for ch2:='a'; ch2<='z'; ch2++ {
+                    // backtracking
+                    bytes[i] = byte(ch2)
+                    word2 := string(bytes)
+                    if word2 != word {
+                        // word exists, and not visited
+                        if _, ok := visited[word2]; ok && !visited[word2] {
+                            l = append(l, word2)
+                            // mark node as visited
+                            visited[word2] = true
+                            // update distance: only the first update would be right
+                            if _, ok := distances[word2]; !ok {
+                                distances[word2] = level
+                            }
+                            // update the target node
+                            if word2 == endWord {
+                                return level+1
+                            }
+                        }
+                    }
+                    bytes[i] = ch
+                }
+            }
+        }
+        queue = l
+        level++
+    }
+    return 0
+}
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/word-ladder-ii
+func dfs(combination []string, endWord string, visited map[string]bool, distances map[string]int, res *[][]string) {
+    if combination[len(combination)-1] == endWord {
+        // get a candidate
+        combination2 := make([]string, len(combination))
+        copy(combination2, combination)
+        *res = append(*res, combination2)
+    } else {
+        // explore
+        word := combination[len(combination)-1]
+        bytes := []byte(word)
+        for i, ch := range word {
+            for ch2:='a'; ch2<='z'; ch2++ {
+                bytes[i] = byte(ch2)
+                word2 := string(bytes)
+                if word2 != word {
+                    if _, ok := visited[word2]; ok && !visited[word2] && distances[word2] == distances[word]+1 {
+                        combination = append(combination, word2)
+                        visited[word2] = true
+                        dfs(combination, endWord, visited, distances, res)
+                        // backtracking
+                        visited[word2] = false
+                        combination = combination[0:len(combination)-1]
+                    }
+                }
+                // change it back: only one character can be changed.
+                bytes[i] = byte(ch)
+            }
+        }
+    }
+}
 
+func findLadders(beginWord string, endWord string, wordList []string) [][]string {
+    if beginWord == endWord {
+        return [][]string{[]string{beginWord}}
+    }
+
+    visited := map[string]bool{}
+    for _, word := range wordList {
+        visited[word] = false
+    }
+    distances := map[string]int{}
+    // find distance via BFS
+    dis := getDistance(beginWord, endWord, visited, distances)
+    if dis == 0 {
+        return [][]string{}
+    }
+    for k, _ := range visited {
+        visited[k] = false
+    }
+    res := [][]string{}
+    // backtracking to get all result via dfs
+    dfs([]string{beginWord}, endWord, visited, distances, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

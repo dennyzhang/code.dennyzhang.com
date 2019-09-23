@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     topologicalsort
 :END:
 ---------------------------------------------------------------------
 Longest Increasing Path in a Matrix
@@ -12,7 +12,7 @@ Longest Increasing Path in a Matrix
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][topologicalsort]]
 ---------------------------------------------------------------------
 Given an integer matrix, find the length of the longest increasing path.
 
@@ -49,7 +49,58 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/longest-increasing-path-in-a-matrix
-
+// Basic Ideas: topological sort
+//  For the matrix, we have n*m nodes
+//  They become a directed graph.
+//  Edge of node1 to node2 mean, value of node1 is smaller than node2
+//  The DAG won't have a circle
+// Complexity: Time O(n*m), Space O(n*m)
+func longestIncreasingPath(matrix [][]int) int {
+    if len(matrix) == 0 || len(matrix[0]) == 0 {
+        return 0
+    }
+    indegrees := make([]int, len(matrix)*len(matrix[0]))
+    edges := map[int]map[int]bool{}
+    for i, row := range matrix {
+        for j, _ := range row {
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, 
+                                           []int{0, 1}, []int{0, -1}} {
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2>=0 && i2<len(matrix) && j2>=0 && j2<len(matrix[0]) && matrix[i2][j2] > matrix[i][j] {
+                    v1, v2 := i*len(matrix[0])+j, i2*len(matrix[0])+j2
+                    if _, ok := edges[v1]; !ok {
+                        edges[v1] = map[int]bool{}
+                    }
+                    if !edges[v1][v2] {
+                        edges[v1][v2] = true
+                        indegrees[v2]++
+                    }
+                }
+            }
+        }
+    }
+    level := 0
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+        }
+    }
+    for len(queue) > 0 {
+        l := []int{}
+        for _, v := range queue {
+            for v2, _ := range edges[v] {
+                indegrees[v2]--
+                if indegrees[v2] == 0 {
+                    l = append(l, v2)
+                }
+            }
+        }
+        queue = l
+        level++
+    }
+    return level
+}
 #+END_SRC
 
 #+BEGIN_HTML

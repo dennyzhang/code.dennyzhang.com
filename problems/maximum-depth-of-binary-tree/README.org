@@ -12,7 +12,7 @@ Maximum Depth of Binary Tree
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/heightoftree][#heightoftree]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/heightoftree][#heightoftree]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given a binary tree, find its maximum depth.
 

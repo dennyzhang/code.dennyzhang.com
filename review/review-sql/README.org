@@ -26,5 +26,3 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
-** misc                                                            :noexport:
-TODO: Why I can't use full join? https://code.dennyzhang.com/review-sql

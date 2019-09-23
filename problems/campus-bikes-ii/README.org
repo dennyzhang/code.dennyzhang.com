@@ -1,0 +1,111 @@
+* Leetcode: Campus Bikes II                                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     backtracking
+:END:
+---------------------------------------------------------------------
+Campus Bikes II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/campus-bikes-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+---------------------------------------------------------------------
+On a campus represented as a 2D grid, there are N workers and M bikes, with N <= M. Each worker and bike is a 2D coordinate on this grid.
+
+We assign one unique bike to each worker so that the sum of the Manhattan distances between each worker and their assigned bike is minimized.
+
+The Manhattan distance between two points p1 and p2 is Manhattan(p1, p2) = |p1.x - p2.x| + |p1.y - p2.y|.
+
+Return the minimum possible sum of Manhattan distances between each worker and their assigned bike.
+
+Example 1:
+[[image-blog:Campus Bikes II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes-ii/1.png]]
+#+BEGIN_EXAMPLE
+Input: workers = [[0,0],[2,1]], bikes = [[1,2],[3,3]]
+Output: 6
+Explanation: 
+We assign bike 0 to worker 0, bike 1 to worker 1. The Manhattan distance of both assignments is 3, so the output is 6.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Campus Bikes II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes-ii/2.png]]
+#+BEGIN_EXAMPLE
+Input: workers = [[0,0],[1,1],[2,0]], bikes = [[1,0],[2,2],[2,1]]
+Output: 4
+Explanation: 
+We first assign bike 0 to worker 0, then assign bike 1 to worker 1 or worker 2, bike 2 to worker 2 or worker 1. Both assignments lead to sum of the Manhattan distances as 4.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= workers[i][0], workers[i][1], bikes[i][0], bikes[i][1] < 1000
+- All worker and bike locations are distinct.
+- 1 <= workers.length <= bikes.length <= 10
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/campus-bikes-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/campus-bikes-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/campus-bikes-ii
+// Basic Ideas: backtracking
+//
+// Complexity: Time O(n!), Space O(1)
+func getDis(point1 []int, point2 []int) int {
+    v1 := point1[0]-point2[0]
+    v2 := point1[1]-point2[1]
+    if v1<0 { v1 = -v1 }
+    if v2<0 { v2 = -v2 }
+    return v1+v2
+}
+
+func dfs(i int, presum int, workers [][]int, bikes [][]int, bikes_taken map[int]bool, res *int) {
+    if i == len(workers) {
+        // get a condidate
+        if presum < *res {
+            *res = presum
+        }
+        return
+    }
+
+    // check with each worker
+    for j:=0; j<len(bikes); j++ {
+        if bikes_taken[j] {
+            continue
+        }
+        // assign bikes[j] to worker[i]
+        bikes_taken[j] = true
+        d := getDis(workers[i], bikes[j])
+        presum += d
+
+        dfs(i+1, presum, workers, bikes, bikes_taken, res)
+
+        // backtrack
+        presum -= d
+        bikes_taken[j] = false
+    }
+}
+
+func assignBikes(workers [][]int, bikes [][]int) int {
+    res := 1<<31-1
+    bikes_taken := map[int]bool{}
+    dfs(0, 0, workers, bikes, bikes_taken, &res)
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

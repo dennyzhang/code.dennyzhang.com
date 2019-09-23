@@ -12,7 +12,7 @@ Binary Tree Maximum Path Sum
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]]
 ---------------------------------------------------------------------
 Given a binary tree, find the maximum path sum.
 

@@ -5,7 +5,7 @@
 :type:     moorevoting, findnumber, inspiring
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Majority Element II
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
@@ -66,7 +66,7 @@ class Solution(object):
 # print s.majorityElement([1, 2, 3, 2, 3, 3])
 #+END_SRC
 
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>

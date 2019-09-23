@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, dfs, inspiring
+:type:     bfs, dfs, inspiring, parentheses
 :END:
 ---------------------------------------------------------------------
 Remove Invalid Parentheses
@@ -12,7 +12,7 @@ Remove Invalid Parentheses
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/followup-parentheses][#parentheses]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
 

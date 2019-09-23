@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     topologicalsort, classic
+:type:     topologicalsort, classic, bfs, dfs
 :END:
 ---------------------------------------------------------------------
 Course Schedule
@@ -12,7 +12,8 @@ Course Schedule
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/topologicalsort][#topologicalsort]]
+- [[https://code.dennyzhang.com/course-schedule-ii][Leetcode: Course Schedule II]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 There are a total of n courses you have to take, labeled from 0 to n - 1.
 
@@ -48,16 +49,267 @@ Credits To: [[https://leetcode.com/problems/course-schedule/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: Kahn's algorithm (BFS) without deleting edges
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/course-schedule
+// Basic Ideas: topological sort + Kahn's algorithm
+//
+//  BFS
+//    queue: unexamined nodes with no incoming edges
+//    Decrease count of incoming edges for the target nodes
+//    Get the next nodes to be examined
+//
+//  When to stop?
+//    When BFS stops, there should be no unexamined edges
+//    Or all nodes get examined
+//
+//  Follow-up: what if there are duplicate edges?
+//
+// Complexity: Time O(n+e), Space O(n+e)
+func canFinish(numCourses int, prerequisites [][]int) bool {
+    indegrees := make([]int, numCourses)
+    edges := map[int]map[int]bool{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        if _, ok := edges[n1]; !ok {
+            edges[n1] = map[int]bool{}
+        }
+        edges[n1][n2] = true
+        indegrees[n2]++
+    }
+    count := 0
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+            count++
+        }
+    }
+    for len(queue) > 0 {
+        l := []int{}
+        for _, n1 := range queue {
+            for n2, _ := range edges[n1] {
+                indegrees[n2]--
+                if indegrees[n2] == 0 {
+                    l = append(l, n2)
+                    count++
+                }
+            }
+        }
+        queue = l
+    }
+    return count == numCourses
+}
+#+END_SRC
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/course-schedule
-class Solution(object):
-    def canFinish(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: bool
-        """
+- Solution: Kahn's algorithm (BFS)
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/course-schedule
+// Basic Ideas: topological sort + Kahn's algorithm
+//
+//  BFS
+//    queue: unexamined nodes with no incoming edges
+//    Decrease count of incoming edges for the target nodes
+//    Get the next nodes to be examined
+//
+//  When to stop?
+//    When BFS stops, there should be no unexamined edges
+//
+//  Follow-up: what if there are duplicate edges?
+//
+// Complexity: Time O(n+e), Space O(n+e)
+func canFinish(numCourses int, prerequisites [][]int) bool {
+    indegrees := make([]int, numCourses)
+    edges := map[int]map[int]bool{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        if _, ok := edges[n1]; !ok {
+            edges[n1] = map[int]bool{}
+        }
+        edges[n1][n2] = true
+        indegrees[n2]++
+    }
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+        }
+    }
+    for len(queue) > 0 {
+        l := []int{}
+        for _, n1 := range queue {
+            for n2, _ := range edges[n1] {
+                indegrees[n2]--
+                if indegrees[n2] == 0 {
+                    l = append(l, n2)
+                }
+            }
+            // remove edges
+            delete(edges, n1)
+        }
+        queue = l
+    }
+    return len(edges) == 0
+}
+#+END_SRC
+
+- Solution: DFS with recursive
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/course-schedule
+// Basic Ideas: topological sort + dfs
+//
+//    dfs from unexamined nodes with no incoming edges
+//    Decrease count of incoming edges for the target nodes
+//    Get the next nodes to be examined
+//
+//  When to stop?
+//    When dfs stops, there should be no unexamined edges
+//
+//  Follow-up: what if there are duplicate edges?
+//
+// Complexity: Time O(n+e), Space O(n+e)
+func dfs(node int, count *int, indegrees []int, edges map[int]map[int]bool) {
+    if indegrees[node] != 0 {
+        return
+    }
+    *count++
+    for node2, _ := range edges[node] {
+        indegrees[node2]--
+        dfs(node2, count, indegrees, edges)
+    }
+    // already visited to avoid duplicate caculation, which could mislead the counter
+    indegrees[node] = -1 
+}
+
+func canFinish(numCourses int, prerequisites [][]int) bool {
+    indegrees := make([]int, numCourses)
+    edges := map[int]map[int]bool{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        if _, ok := edges[n1]; !ok {
+            edges[n1] = map[int]bool{}
+        }
+        edges[n1][n2] = true
+        indegrees[n2]++
+    }
+    count := 0
+    for node, _ := range indegrees {
+        dfs(node, &count, indegrees, edges)
+    }
+    return count == numCourses
+}
+#+END_SRC
+
+- Solution: DFS without recursive
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/course-schedule
+// https://code.dennyzhang.com/course-schedule
+// Basic Ideas: topological sort + dfs
+//
+//    dfs from unexamined nodes with no incoming edges
+//    Decrease count of incoming edges for the target nodes
+//    Get the next nodes to be examined
+//
+//  When to stop?
+//    When dfs stops, there should be no unexamined edges
+//
+//  Follow-up: what if there are duplicate edges?
+//
+// Complexity: Time O(n+e), Space O(n+e)
+func canFinish(numCourses int, prerequisites [][]int) bool {
+    indegrees := make([]int, numCourses)
+    edges := map[int]map[int]bool{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        if _, ok := edges[n1]; !ok {
+            edges[n1] = map[int]bool{}
+        }
+        edges[n1][n2] = true
+        indegrees[n2]++
+    }
+    count := 0
+    l := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            l = append(l, i)
+            count++
+        }
+    }
+    for len(l) > 0 {
+        n1 := l[0]
+        l = l[1:len(l)]
+        for n2, _ := range edges[n1] {
+            indegrees[n2]--
+            if indegrees[n2] == 0 {
+                count++
+                l = append(l, n2)
+            }
+        }
+    }
+    return count == numCourses
+}
+#+END_SRC
+
+- Solution: Brutle force BFS
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/course-schedule
+// Basic Ideas: topological sort
+//
+//  BFS
+//  Start with nodes without dependencies
+//  Once used one path, decrease counter for the target node by 1 
+//
+//  When to stop?
+//   When all nodes get visited, there should be no unused edges
+//
+// Complexity: Time O(n^2), Space O(n)
+func canFinish(numCourses int, prerequisites [][]int) bool {
+    // when -1: visited. Otherwise how many edges point to this node
+    nodes := make([]int, numCourses)
+    edges := map[int][]int{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        edges[n1] = append(edges[n1], n2)
+        nodes[n2]++
+    }
+    queue := []int{}
+    for i, v := range nodes {
+        if v == 0 {
+            // mark as visited
+            nodes[i] = -1
+            queue = append(queue, i)
+        }
+    }
+    for len(queue) > 0 {
+        for _, n1 := range queue {
+            for _, n2 := range edges[n1] {
+                // detect deadlock
+                if nodes[n2] == -1 {
+                    return false
+                }
+                // use the edge
+                nodes[n2]--
+            }
+        }
+        // find the next nodes
+        l := []int{}
+        for i, v := range nodes {
+            if v == 0 {
+                nodes[i] = -1
+                l = append(l, i)
+            }
+        }
+        queue = l
+    }
+
+    // all nodes used
+    for _, v := range nodes {
+        if v != -1 {
+            return false
+        }
+    }
+    return true
+}
 #+END_SRC
 
 #+BEGIN_HTML

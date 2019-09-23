@@ -5,7 +5,7 @@
 :type:     sql
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Tournament Winners
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/tournament-winners"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

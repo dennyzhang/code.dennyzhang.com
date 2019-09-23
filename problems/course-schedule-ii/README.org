@@ -1,0 +1,144 @@
+* Leetcode: Course Schedule II                                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     topologicalsort, classic, bfs, dfs
+:END:
+---------------------------------------------------------------------
+Course Schedule II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/course-schedule-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/course-schedule][Leetcode: Course Schedule]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+---------------------------------------------------------------------
+There are a total of n courses you have to take, labeled from 0 to n-1.
+
+Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
+
+Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses.
+
+There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 2, [[1,0]] 
+Output: [0,1]
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished   
+             course 0. So the correct course order is [0,1] .
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 4, [[1,0],[2,0],[3,1],[3,2]]
+Output: [0,1,2,3] or [0,2,1,3]
+Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both     
+             courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. 
+             So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3] .
+Note:
+#+END_EXAMPLE
+
+1. The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
+- You may assume that there are no duplicate edges in the input prerequisites.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/course-schedule-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/course-schedule-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: topological sort + bfs
+
+#+BEGIN_SRC go
+// Basic Ideas: topological sort + bfs
+// Complexity: Time O(n+e), Space O(n+e)
+func findOrder(numCourses int, prerequisites [][]int) []int {
+    indegrees := make([]int, numCourses)
+    edges := map[int]map[int]bool{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        if _, ok := edges[n2]; !ok {
+            edges[n2] = map[int]bool{}
+        }
+        edges[n2][n1] = true
+        indegrees[n1]++
+    }
+    res := []int{}
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+            res = append(res, i)
+        }
+    }
+    for len(queue) > 0 {
+        l := []int{}
+        for _, node1 := range queue {
+            for node2, _ := range edges[node1] {
+                indegrees[node2]--
+                if indegrees[node2] == 0 {
+                    l = append(l, node2)
+                    res = append(res, node2)
+                }
+            }
+        }
+        queue = l
+    }
+    if len(res) != numCourses {
+        res = []int{}
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: topological sort + dfs
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/course-schedule-ii
+// Basic Ideas: topological sort + dfs
+// Complexity: Time O(n+e), Space O(n+e)
+func dfs(node int, indegrees []int, edges map[int]map[int]bool, res *[]int) {
+    if indegrees[node] != 0 {
+        return
+    }
+    *res = append(*res, node)
+    for node2, _ := range edges[node] {
+        indegrees[node2]--
+        dfs(node2, indegrees, edges, res)
+    }
+    // mark node as resolved
+    indegrees[node] = -1
+}
+
+func findOrder(numCourses int, prerequisites [][]int) []int {
+    indegrees := make([]int, numCourses)
+    edges := map[int]map[int]bool{}
+    for _, p := range prerequisites {
+        n1, n2 := p[0], p[1]
+        if _, ok := edges[n2]; !ok {
+            edges[n2] = map[int]bool{}
+        }
+        edges[n2][n1] = true
+        indegrees[n1]++
+    }
+    res := []int{}
+    for node, _ := range indegrees {
+        dfs(node, indegrees, edges, &res)
+    }
+    if len(res) != numCourses {
+        res = []int{}
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

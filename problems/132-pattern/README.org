@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subsequence, inspiring, stack, redo
+:type:     subsequence, inspiring, stack, wiggle, redo
 :END:
 ---------------------------------------------------------------------
 Check whether 132 pattern exists in the given array
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Split Array into Consecutive Subsequences]]
 - [[https://code.dennyzhang.com/beautiful-array][Leetcode: Beautiful Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subsequence][#subsequence]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/review-stack][#stack]]
+- Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-wiggle][#wiggle]]
 ---------------------------------------------------------------------
 Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence ai, aj, ak such that i < j < k and ai < ak < aj. Design an algorithm that takes a list of n numbers as input and checks whether there is a 132 pattern in the list.
 

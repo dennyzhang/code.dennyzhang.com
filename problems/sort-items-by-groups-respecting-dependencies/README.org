@@ -1,0 +1,194 @@
+* Leetcode: Sort Items by Groups Respecting Dependencies        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     topologicalsort, redo
+:END:
+---------------------------------------------------------------------
+Sort Items by Groups Respecting Dependencies
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-items-by-groups-respecting-dependencies"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]]
+---------------------------------------------------------------------
+There are n items each belonging to zero or one of m groups where group[i] is the group that the i-th item belongs to and it's equal to -1 if the i-th item belongs to no group. The items and the groups are zero indexed. A group can have no item belonging to it.
+
+Return a sorted list of the items such that:
+
+- The items that belong to the same group are next to each other in the sorted list.
+- There are some relations between these items where beforeItems[i] is a list containing all the items that should come before the i-th item in the sorted array (to the left of the i-th item).
+
+Return any solution if there is more than one solution and return an empty list if there is no solution.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]
+Output: [6,3,4,1,5,2,0,7]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]
+Output: []
+Explanation: This is the same as example 1 except that 4 needs to be before 6 in the sorted list.
+#+END_EXAMPLE
+
+Constraints:
+
+- 1 <= m <= n <= 3*10^4
+- group.length == beforeItems.length == n
+- -1 <= group[i] <= m-1
+- 0 <= beforeItems[i].length <= n-1
+- 0 <= beforeItems[i][j] <= n-1
+- i != beforeItems[i][j]
+- beforeItems[i] does not contain duplicates elements.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-items-by-groups-respecting-dependencies][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/sort-items-by-groups-respecting-dependencies
+// Basic Ideas: topological sort
+//
+// Q: how to put items of the same group next to each other?
+// A: Build both group dependency and node dependency
+//
+// Q: What about dependencies involving nodes from group -1?
+// A: Mark group -1 into individual groups
+//
+// Complexity: Time O(n), Space O(n)
+func visitGroup(nodes []int, nEdges map[int]map[int]bool, nIndegrees []int, group []int, res *[] int) {
+    nQueue := []int{}
+    for _, node := range nodes {
+        if nIndegrees[node] == 0 {
+            nQueue = append(nQueue, node)
+            nIndegrees[node] = -1
+            *res = append(*res, node)
+        }
+    }
+    for len(nQueue) > 0 {
+        l := []int{}
+        for _, node := range nQueue {
+            for node2, _ := range nEdges[node] {
+                nIndegrees[node2]--
+                if nIndegrees[node2] == 0 && group[node2] == group[node] {
+                    l = append(l, node2)
+                    nIndegrees[node2] = -1
+                    *res = append(*res, node2)
+                }
+            }
+        }
+        nQueue = l
+    }
+}
+
+func sortItems(n int, m int, group []int, beforeItems [][]int) []int {
+    nEdges := map[int]map[int]bool{}
+    nIndegrees := make([]int, n)
+
+    gEdges := map[int]map[int]bool{}
+    gIndegrees := map[int]int{}
+
+    // from group id to nodes
+    nodes := map[int][]int{}
+    // change group to map -1 group to individual ones
+    // 0->3, 1->2
+    group_mapping := map[int]int{}
+    for i, g := range group {
+        if g != -1 {
+            if _, ok := group_mapping[g]; !ok {
+                group_mapping[g] = i
+            }
+        }
+    }
+    for i, g := range group {
+        if g == -1 {
+            group[i] = i
+        } else {
+            group[i] = group_mapping[g]
+        }
+        nodes[group[i]] = append(nodes[group[i]], i)
+        gIndegrees[group[i]] = 0
+    }
+
+    for i, l := range beforeItems {
+        for _, j := range l {
+            // j -- > i
+            if _, ok := nEdges[j]; !ok {
+                nEdges[j] = map[int]bool{}
+            }
+            if !nEdges[j][i] {
+                nEdges[j][i] = true
+                nIndegrees[i]++
+            }
+            // gj -> gi
+            gj, gi := group[j], group[i]
+            if gj != gi {
+                // build group dependency
+                if _, ok := gEdges[gj]; !ok {
+                    gEdges[gj] = map[int]bool{}
+                }
+                if !gEdges[gj][gi] {
+                    gEdges[gj][gi] = true
+                    gIndegrees[gi]++
+                }
+            }
+        }
+    }
+
+    res := []int{}
+    gQueue := []int{}
+    for i, v := range gIndegrees {
+        if v == 0 {
+            gQueue = append(gQueue, i)
+            gIndegrees[i] = -1
+
+            count := len(res)
+            visitGroup(nodes[i], nEdges, nIndegrees, group, &res)
+            // can't resolve the group
+            if len(res) - count != len(nodes[i]) {
+                return []int{}
+            }
+        }
+    }
+    for len(gQueue) > 0 {
+        l := []int{}
+        for _, node := range gQueue {
+            for node2, _ := range gEdges[node] {
+                gIndegrees[node2]--
+                if gIndegrees[node2] == 0 {
+                    l = append(l, node2)
+                    gIndegrees[node2] = -1
+                    count := len(res)
+                    visitGroup(nodes[node2], nEdges, nIndegrees, group, &res)
+                    // can't resolve the group
+                    if len(res) - count != len(nodes[node2]) {
+                        return []int{}
+                    }
+                }
+            }
+        }
+        gQueue = l
+    }
+    if len(res) != n {
+        res = []int{}
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

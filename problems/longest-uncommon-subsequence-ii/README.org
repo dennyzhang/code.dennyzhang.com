@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     backtracking
 :END:
 ---------------------------------------------------------------------
 Longest Uncommon Subsequence II
@@ -12,6 +12,8 @@ Longest Uncommon Subsequence II
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-uncommon-subsequence-i][Longest Uncommon Subsequence I]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/followup-subsequence][#subsequence]]
 ---------------------------------------------------------------------
 Given a list of strings, you need to find the longest uncommon subsequence among them. The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings.
 
@@ -36,9 +38,44 @@ Credits To: [[https://leetcode.com/problems/longest-uncommon-subsequence-ii/desc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/longest-uncommon-subsequence-ii
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-uncommon-subsequence-ii
+// Basic Ideas: backtracking
+//
+// Evaluate all possiblities
+// Similar problem: Leetcode: Subsets II
+//
+// Complexity: Time O(50*pow(2, 10)), Space O(50*pow(2, 10))
+func dfs(pos int, combination []byte, str string, m map[string]int) {
+    // don't take current node
+    if len(combination) != 0 {
+        combination2 := make([]byte, len(combination))
+        copy(combination2, combination)
+        m[string(combination2)]++
+    }
+    // take current node
+    for i:=pos; i<len(str); i++ {
+        combination = append(combination, str[i])
+        dfs(i+1, combination, str, m)
+        combination = combination[0:len(combination)-1]
+    }
+}
 
+func findLUSlength(strs []string) int {
+    m := map[string]int{}
+    for _, str := range strs {
+        dfs(0, []byte{}, str, m)
+    }
+    res := -1
+    for k, v := range m {
+        if v == 1 {
+            if len(k) > res {
+                res = len(k)
+            }
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

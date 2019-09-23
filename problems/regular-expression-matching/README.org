@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     classic, dynamicprogramming, editdistance
 :END:
 ---------------------------------------------------------------------
 Regular Expression Matching
@@ -12,7 +12,7 @@ Regular Expression Matching
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/category/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Implement regular expression matching with support for '.' and '*'.
 #+BEGIN_EXAMPLE
@@ -41,9 +41,47 @@ Credits To: [[https://leetcode.com/problems/regular-expression-matching/descript
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/regular-expression-matching
-
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/regular-expression-matching
+// Basic Ideas: dynamic programming
+//
+// Notice: fast fail doesn't work
+// Notice: how to treat * in pattern, when it means multiple copies
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func isMatch(s string, p string) bool {
+    dp := make([][]bool, len(s)+1)
+    for i, _ := range dp {
+        dp[i] = make([]bool, len(p)+1)
+    }
+    dp[0][0] = true
+    for i:=0; i<len(p); i++ {
+        // When *, check the previous previous node
+        if p[i] == '*' && dp[0][i-1] {
+            dp[0][i+1] = true
+        }
+    }
+    // dp
+    for i:=0; i<len(s); i++ {
+        for j:=0; j<len(p); j++ {
+            // caculate dp[i+1][j+1]
+            // same characters or .
+            if s[i] == p[j] || p[j] == '.' {
+                dp[i+1][j+1] = dp[i][j]
+            }
+            if p[j] == '*' {
+                if p[j-1] != s[i] && p[j-1] != '.' {
+                    // need to treat as repeating 0 times
+                    dp[i+1][j+1] = dp[i+1][j-1]
+                } else {
+                    // treat it as repeating 0 times, 1 times and multiple times
+                    dp[i+1][j+1] = dp[i+1][j-1] || dp[i+1][j] || dp[i][j+1]
+                }
+            }
+        }
+    }
+    return dp[len(s)][len(p)]
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -5,7 +5,7 @@
 :type:     dynamicprogramming
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Minimum Cost For Tickets
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-cost-for-tickets"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

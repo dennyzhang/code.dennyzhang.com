@@ -12,7 +12,7 @@ Valid Parentheses
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/tag/parentheses][#parentheses]]
+- Tag: [[https://code.dennyzhang.com/followup-parentheses][#parentheses]], [[https://code.dennyzhang.com/category/string][#string]]
 ---------------------------------------------------------------------
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 

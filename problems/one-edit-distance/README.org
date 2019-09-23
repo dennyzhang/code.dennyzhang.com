@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     classic, string, editdistance
+:type:     classic, dynamicprogramming, string, editdistance
 :END:
 ---------------------------------------------------------------------
 One Edit Distance
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-editdistance][Series: Edit Distance Of Two Strings & Follow-up]]
 - [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given two strings S and T, determine if they are both one edit distance apart.
 

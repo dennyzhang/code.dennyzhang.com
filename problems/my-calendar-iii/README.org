@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc, interval, calendar, redo
+:type:     misc, interval, meetingconflict
 :END:
 ---------------------------------------------------------------------
 My Calendar III
@@ -12,7 +12,7 @@ My Calendar III
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/calendar][#calendar]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
 ---------------------------------------------------------------------
 Implement a MyCalendarThree class to store your events. A new event can always be added.
 

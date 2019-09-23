@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     trie
 :END:
 ---------------------------------------------------------------------
 Stream of Characters
@@ -12,7 +12,7 @@ Stream of Characters
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-trie][#trie]]
 ---------------------------------------------------------------------
 Implement the StreamChecker class as follows:
 
@@ -50,26 +50,120 @@ Credits To: [[https://leetcode.com/problems/stream-of-characters/description/][l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution: Trie with hashmap
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/stream-of-characters
+// Basic Ideas: Trie
+// Build a trie
+//
+// For each search, remember previous query characters
+//
+// Complexity: Time O(w), Space O(w)
+type StreamChecker struct {
+    children map[byte]*StreamChecker
+    isLeaf bool
+    query []byte
+}
 
+func Constructor(words []string) StreamChecker {
+    root := StreamChecker{children:map[byte]*StreamChecker{}}
+    for _, word := range words {
+        p := &root
+        for i:=len(word)-1; i>=0; i-- {
+            ch := word[i]
+            if _, ok := p.children[ch]; !ok {
+                q := &StreamChecker{children:map[byte]*StreamChecker{}}
+                p.children[ch] = q
+            }
+            p = p.children[ch]
+        }
+        p.isLeaf = true
+    }
+    return root
+}
+
+func (this *StreamChecker) Query(letter byte) bool {
+    this.query = append(this.query, letter)
+    p := this
+    for i:=len(this.query)-1; i>=0; i-- {
+        ch := this.query[i]
+        // no match
+        if _, ok := p.children[ch]; !ok {
+            return false
+        }
+        p = p.children[ch]
+        if p.isLeaf {
+            return true
+        }
+    }
+    return false
+}
+
+/**
+ * Your StreamChecker object will be instantiated and called as such:
+ * obj := Constructor(words);
+ * param_1 := obj.Query(letter);
+ */
+#+END_SRC
+
+- Solution: Trie with fixed-size array instead of hashmap
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/stream-of-characters
+// Basic Ideas: Trie
+// Build a trie
+//
+// For each search, remember previous query characters
+//
+// Complexity: Time O(w), Space O(w)
+var query []byte
+
+type StreamChecker struct {
+    children []*StreamChecker
+    isLeaf bool
+}
+
+func Constructor(words []string) StreamChecker {
+    query = []byte{}
+    root := StreamChecker{children:make([]*StreamChecker, 26)}
+    for _, word := range words {
+        p := &root
+        for i:=len(word)-1; i>=0; i-- {
+            index := int(word[i]-'a')
+            if p.children[index] == nil {
+                q := &StreamChecker{children:make([]*StreamChecker, 26)}
+                p.children[index] = q
+            }
+            p = p.children[index]
+        }
+        p.isLeaf = true
+    }
+    return root
+}
+
+func (this *StreamChecker) Query(letter byte) bool {
+    query = append(query, letter)
+    p := this
+    for i:=len(query)-1; i>=0; i-- {
+        index := int(query[i]-'a')
+        // no match
+        if p.children[index] == nil {
+            return false
+        }
+        p = p.children[index]
+        if p.isLeaf {
+            return true
+        }
+    }
+    return false
+}
+
+/**
+ * Your StreamChecker object will be instantiated and called as such:
+ * obj := Constructor(words);
+ * param_1 := obj.Query(letter);
+ */
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     math, subsequence
 :END:
 ---------------------------------------------------------------------
 Longest Uncommon Subsequence I
@@ -11,7 +11,9 @@ Longest Uncommon Subsequence I
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-uncommon-subsequence-i"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/longest-uncommon-subsequence-ii][Longest Uncommon Subsequence II]]
+- [[https://code.dennyzhang.com/longest-uncommon-subsequence-ii][Leetcode: Longest Uncommon Subsequence II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/followup-subsequence][#subsequence]]
 ---------------------------------------------------------------------
 Given a group of two strings, you need to find the longest uncommon subsequence of this group of two strings. The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings.
 
@@ -40,27 +42,20 @@ Credits To: [[https://leetcode.com/problems/longest-uncommon-subsequence-i/descr
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/longest-uncommon-subsequence-i
-## Basic Ideas: If length is different, get the bigger one
-##              If length is the same, compare whether they are the same
-##                 If not, return either one
-##
-## Notice: what if one string is empty?
-##              
-## Complexity: Time O(n), Space O(n)
-class Solution:
-    def findLUSlength(self, a, b):
-        """
-        :type a: str
-        :type b: str
-        :rtype: int
-        """
-        if a == b: return -1
-        return max(len(a), len(b))
-        
-# s = Solution()
-# print(s.findLUSlength("aefawfawfawfaw", "aefawfeawfwafwaef")) # 17
+#+BEGIN_SRC go
+// Basic Ideas: math
+//
+// Complexity: Time O(max(n, m)), Space O(1)
+func findLUSlength(a string, b string) int {
+    if a == b {
+        return -1
+    }
+    res := len(a)
+    if len(b) > res {
+        res = len(b)
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

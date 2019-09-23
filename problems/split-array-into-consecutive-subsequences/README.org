@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/132-pattern][132 Pattern]]
 - [[https://code.dennyzhang.com/sum-of-subarray-minimums][Sum of Subarray Minimums]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/subsequence][#subsequence]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/splitarray][#splitarray]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+- Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/splitarray][#splitarray]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 You are given an integer array sorted in ascending order (may contain duplicates), you need to split them into several subsequences, where each subsequences consist of at least 3 consecutive integers. Return whether you can make such a split.
 

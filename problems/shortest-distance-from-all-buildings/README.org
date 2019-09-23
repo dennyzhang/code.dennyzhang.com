@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs
+:type:     meetingpoint
 :END:
 ---------------------------------------------------------------------
 Shortest Distance from All Buildings
@@ -13,7 +13,7 @@ Shortest Distance from All Buildings
 Similar Problems:
 - [[https://code.dennyzhang.com/walls-and-gates][Walls and Gates]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]]
+- Tag: [[https://code.dennyzhang.com/tag/meetingpoint][#meetingpoint]]
 ---------------------------------------------------------------------
 You want to build a house on an empty land which reaches all buildings in the shortest amount of distance. You can only move up, down, left and right. You are given a 2D grid of values 0, 1 or 2, where:
 
