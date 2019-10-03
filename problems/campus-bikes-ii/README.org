@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     backtracking
+:type:     backtracking, manhattandis, redo
 :END:
 ---------------------------------------------------------------------
 Campus Bikes II
@@ -11,8 +11,9 @@ Campus Bikes II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/campus-bikes-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/campus-bikes][Leetcode: Campus Bikes]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+- Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/tag/manhattandis][#manhattandis]]
 ---------------------------------------------------------------------
 On a campus represented as a 2D grid, there are N workers and M bikes, with N <= M. Each worker and bike is a 2D coordinate on this grid.
 
@@ -23,7 +24,7 @@ The Manhattan distance between two points p1 and p2 is Manhattan(p1, p2) = |p1.x
 Return the minimum possible sum of Manhattan distances between each worker and their assigned bike.
 
 Example 1:
-[[image-blog:Campus Bikes II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes-ii/1.png]]
+[[image-blog:Campus Bikes II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes-ii/my1.png]]
 #+BEGIN_EXAMPLE
 Input: workers = [[0,0],[2,1]], bikes = [[1,2],[3,3]]
 Output: 6
@@ -32,7 +33,7 @@ We assign bike 0 to worker 0, bike 1 to worker 1. The Manhattan distance of both
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Campus Bikes II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes-ii/2.png]]
+[[image-blog:Campus Bikes II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/campus-bikes-ii/my2.png]]
 #+BEGIN_EXAMPLE
 Input: workers = [[0,0],[1,1],[2,0]], bikes = [[1,0],[2,2],[2,1]]
 Output: 4
@@ -58,7 +59,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/campus-bikes-ii
 // Basic Ideas: backtracking
 //
-// Complexity: Time O(n!), Space O(1)
+// Complexity: Time O(m!*n), Space O(1)
 func getDis(point1 []int, point2 []int) int {
     v1 := point1[0]-point2[0]
     v2 := point1[1]-point2[1]
@@ -67,7 +68,11 @@ func getDis(point1 []int, point2 []int) int {
     return v1+v2
 }
 
-func dfs(i int, presum int, workers [][]int, bikes [][]int, bikes_taken map[int]bool, res *int) {
+func dfs(i int, presum int, workers [][]int, bikes [][]int, bikes_taken []bool, res *int) {
+    // fast quit to speed up
+    if presum >= * res {
+       return
+    }
     if i == len(workers) {
         // get a condidate
         if presum < *res {
@@ -75,7 +80,6 @@ func dfs(i int, presum int, workers [][]int, bikes [][]int, bikes_taken map[int]
         }
         return
     }
-
     // check with each worker
     for j:=0; j<len(bikes); j++ {
         if bikes_taken[j] {
@@ -83,20 +87,18 @@ func dfs(i int, presum int, workers [][]int, bikes [][]int, bikes_taken map[int]
         }
         // assign bikes[j] to worker[i]
         bikes_taken[j] = true
-        d := getDis(workers[i], bikes[j])
-        presum += d
 
-        dfs(i+1, presum, workers, bikes, bikes_taken, res)
+        d := getDis(workers[i], bikes[j])
+        dfs(i+1, presum+d, workers, bikes, bikes_taken, res)
 
         // backtrack
-        presum -= d
         bikes_taken[j] = false
     }
 }
 
 func assignBikes(workers [][]int, bikes [][]int) int {
     res := 1<<31-1
-    bikes_taken := map[int]bool{}
+    bikes_taken := make([]bool, len(bikes))
     dfs(0, 0, workers, bikes, bikes_taken, &res)
     return res
 }

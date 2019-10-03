@@ -1,0 +1,125 @@
+* Leetcode: Android Unlock Patterns                             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dfs, backtracking
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/android-unlock-patterns"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+---------------------------------------------------------------------
+Given an Android 3x3 key lock screen and two integers m and n, where 1 <= m <= n <= 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.
+
+Rules for a valid pattern:
+
+1. Each pattern must connect at least m keys and at most n keys.
+- All the keys must be distinct.
+- If the line connecting two consecutive keys in the pattern passes through any other keys, the other keys must have previously selected in the pattern. No jumps through non selected key is allowed.
+- The order of keys used matters.
+
+Explanation:
+[[image-blog:Android Unlock Patterns][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/android-unlock-patterns/android-unlock.png]]
+#+BEGIN_EXAMPLE
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
+#+END_EXAMPLE
+
+Invalid move: 4 - 1 - 3 - 6
+Line 1 - 3 passes through key 2 which had not been selected in the pattern.
+
+Invalid move: 4 - 1 - 9 - 2
+Line 1 - 9 passes through key 5 which had not been selected in the pattern.
+
+Valid move: 2 - 4 - 1 - 3 - 6
+Line 1 - 3 is valid because it passes through key 2, which had been selected in the pattern
+
+Valid move: 6 - 5 - 4 - 1 - 9 - 2
+Line 1 - 9 is valid because it passes through key 5, which had been selected in the pattern.
+
+ 
+
+Example:
+#+BEGIN_EXAMPLE
+Input: m = 1, n = 1
+Output: 9
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/android-unlock-patterns][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/android-unlock-patterns/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/android-unlock-patterns
+// Basic Ideas: backtracking
+//
+// Observations:
+//  - We can move from 1 to 8 directly
+//  - For any two digits, either they are adjacent or only have one 3rd digit in middle
+//  - 1, 3, 9, 7 are symetrics. 2, 6, 8, 4 are symetrics
+//  - Each distinct path count 1
+//
+// Complexity: Time ?, Space ?
+func dfs(pos int, visited []bool, count int, middles [][]int) int {
+    // find one path
+    if count == 0 {
+        return 1
+    }
+    res := 0
+    visited[pos] = true
+    for i:=1; i<=9; i++ {
+        if !visited[i] {
+            // from pos -> to: adjacent or the middle node visited
+            if middles[pos][i] == 0|| visited[middles[pos][i]] {
+                res += dfs(i, visited, count-1, middles)
+            }
+        }
+    }
+    // backtracking
+    visited[pos] = false
+    return res
+}
+
+func numberOfPatterns(m int, n int) int {
+    middles := make([][]int, 10)
+    for i, _ := range middles {
+        middles[i] = make([]int, 10)
+    }
+    middles[1][3], middles[3][1] = 2, 2
+    middles[1][9], middles[9][1] = 5, 5
+    middles[1][7], middles[7][1] = 4, 4
+    middles[3][9], middles[9][3] = 6, 6
+    middles[3][7], middles[7][3] = 5, 5
+    middles[9][7], middles[7][9] = 8, 8
+    middles[2][8], middles[8][2] = 5, 5
+    middles[6][4], middles[4][6] = 5, 5
+    
+    res := 0
+    visited := make([]bool, 10)
+    for i:=m; i<=n; i++ {
+        // current node count 1, so we loop with i-1
+        res += dfs(1, visited, i-1, middles)*4
+        res += dfs(2, visited, i-1, middles)*4
+        res += dfs(5, visited, i-1, middles)
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
