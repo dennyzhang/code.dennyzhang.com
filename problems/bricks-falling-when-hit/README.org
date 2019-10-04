@@ -1,8 +1,8 @@
-* Leetcode: Bricks Falling When Hit                              :BLOG:Hard:
+* Leetcode: Bricks Falling When Hit                               :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     graph, game, inspiring
+:type:     graph, game, inspiring, unionfind, graphchangecell, redo
 :END:
 ---------------------------------------------------------------------
 Bricks Falling When Hit
@@ -12,7 +12,7 @@ Bricks Falling When Hit
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-graphchangecell][#graphchangecell]]
 ---------------------------------------------------------------------
 We have a grid of 1s and 0s; the 1s in a cell represent bricks.  A brick will not drop if and only if it is directly connected to the top of the grid, or at least one of its (4-way) adjacent bricks will not drop.
 
@@ -22,24 +22,24 @@ Return an array representing the number of bricks that will drop after each eras
 
 Example 1:
 #+BEGIN_EXAMPLE
-Input: 
+Input:
 grid = [[1,0,0,0],[1,1,1,0]]
 hits = [[1,0]]
 Output: [2]
-Explanation: 
+Explanation:
 If we erase the brick at (1, 0), the brick at (1, 1) and (1, 2) will drop. So we should return 2.
 #+END_EXAMPLE
 
 Example 2:
 #+BEGIN_EXAMPLE
-Input: 
+Input:
 grid = [[1,0,0,0],[1,1,0,0]]
 hits = [[1,1],[1,0]]
 Output: [0,0]
-Explanation: 
+Explanation:
 When we erase the brick at (1, 0), the brick at (1, 1) has already disappeared due to the last move. So each erasure will cause no bricks dropping.  Note that the erased brick (1, 0) will not be counted as a dropped brick.
 #+END_EXAMPLE
- 
+
 Note:
 
 - The number of rows and columns in the grid will be in the range [1, 200].
@@ -47,62 +47,282 @@ Note:
 - It is guaranteed that each erasure will be different from any other erasure, and located inside the grid.
 - An erasure may refer to a location with no brick - if it does, no bricks drop.
 
-
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/bricks-falling-when-hit][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/bricks-falling-when-hit/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: union find + merge count of groups + reverse(deleting -> adding)
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/bricks-falling-when-hit
-// Basic Ideas: DFS
-// Complexity: Time O(n*m*len(hits)), Space O(n*m)
-var visits [][]int
-func dfs(i int, j int, grid[][]int, row_count int, col_count int) bool {
-    if i<0 || i>=row_count || j<0 || j>=col_count { return false }
-    if grid[i][j] != 1 { return false }
-    if i == 0 { return true }
-    
-    grid[i][j] = 2
-    visits = append(visits, []int{i, j})
-    if dfs(i+1, j, grid, row_count, col_count) { return true }
-    if dfs(i-1, j, grid, row_count, col_count) { return true }
-    if dfs(i, j+1, grid, row_count, col_count) { return true }
-    if dfs(i, j-1, grid, row_count, col_count) { return true }
-    // fmt.Println("dfs, i: ", i, " j:", j, " visits: ", visits)
-    return false
+// Basic Ideas: unionfind
+//
+//  Instead of deleting bricks, we try to add bricks
+//  Use unionfind to build the relationship
+//  When merging nodes, try to point its parent to top row
+//
+//  When adding bricks, when we find new points pointing to the top row
+//    they're the targets
+//
+//  How to get node count of any unionfind group?
+//
+// Complexity: Time O((n+k)*a(n)), Space O(n)
+type UF struct {
+    parent []int
+    counts map[int]int // node count for each group
+    top_nodes int
+}
+
+func constructor(size int) UF {
+    parent := make([]int, size)
+    counts := map[int]int{}
+    for i, _ := range parent {
+        parent[i] = i
+        counts[i] = 1
+    }
+    return UF{parent:parent, counts:counts}
+}
+
+func (uf *UF) union(x, y, columns int) {
+    n1, n2 := uf.find(x), uf.find(y)
+    if n1 == n2 {
+        return
+    }
+    if n2<n1 {
+        n1,n2 = n2,n1
+        x,y = y,x
+    }
+    // merge n2 to n1
+    if n1<columns && n2>=columns {
+        uf.top_nodes += uf.counts[n2]
+    }
+    uf.parent[n2] = n1
+    uf.counts[n1] += uf.counts[n2]
+    uf.counts[n2] = 0
+}
+
+func (uf *UF) find(x int) int {
+    for x != uf.parent[x] {
+        x = uf.parent[x]
+    }
+    return x
 }
 
 func hitBricks(grid [][]int, hits [][]int) []int {
-    row_count, col_count := len(grid), len(grid[0])
-    res := []int{}
-    for _, position := range hits {
-        x, y := position[0], position[1]
-        count := 0
-        if grid[x][y] == 1 {
-            grid[x][y] = 0
-            // explore in 4 directions
-            for _, offset := range [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}} {
-                x2, y2 := x+offset[0], y+offset[1]
-                visits = [][]int{}
-                is_ok := dfs(x2, y2, grid, row_count, col_count)
-                // fmt.Println("x2:", x2, " y2:", y2, " is_ok:", is_ok, " visits:", visits)
-                if is_ok == true {
-                    // undo
-                    for k, _ := range visits {
-                        grid[visits[k][0]][visits[k][1]] = 1
+    // assume len(grid) > 0 && len(grid[0])>0
+
+    // go the end of hits list
+    l := make([][]int, len(grid))
+    for i, _ := range l {
+        l[i] = make([]int, len(grid[0]))
+        copy(l[i], grid[i])
+    }
+
+    // mark nodes as deleted
+    for _, h := range hits {
+        l[h[0]][h[1]] = 0
+    }
+
+    uf := constructor(len(grid)*len(grid[0]))
+    for j:=0; j<len(l[0]); j++ {
+        if l[0][j] == 1 {
+            uf.top_nodes++
+        }
+    }
+    for i, row := range l {
+        for j, v := range row {
+            if v == 1 {
+                for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, []int{0, 1}, []int{0, -1}} {
+                    i2, j2 := i+offset[0], j+offset[1]
+                    if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) {
+                        continue
                     }
-                } else {
-                    count += len(visits)
-                    for k, _ := range visits {
-                        grid[visits[k][0]][visits[k][1]] = 0
+                    if l[i2][j2] == 0 {
+                        continue
                     }
+                    n1, n2 := i*len(grid[0])+j, i2*len(grid[0])+j2
+                    uf.union(n1, n2, len(grid[0]))
                 }
             }
         }
-        res = append(res, count)
+    }
+
+    res := make([]int, len(hits))
+    for k:=len(hits)-1; k>=0; k-- {
+        top_nodes := uf.top_nodes
+        i, j := hits[k][0], hits[k][1]
+        if grid[i][j] == 1 {
+            // add the node back
+            l[i][j] = 1
+            // add the top bricks
+            if i == 0 {
+                uf.top_nodes++
+            }
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, []int{0, 1}, []int{0, -1}} {
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) {
+                    continue
+                }
+                if l[i2][j2] == 0 {
+                    continue
+                }
+                // the neighbors are good
+                n1, n2 := i*len(grid[0])+j, i2*len(grid[0])+j2
+                uf.union(n1, n2, len(grid[0]))
+            }
+            res[k] = uf.top_nodes-top_nodes-1
+            if res[k]<0 {
+                res[k] = 0
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: bfs from top level + loop all bricks, instead of all cells. Time Limit Exceeded
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/bricks-falling-when-hit
+// Basic Ideas: bfs
+//
+//  Count remaining bricks each time, starting from bricks on the top level
+//  For unseen nodes, mark them as 0
+//
+// Complexity: Time O(n*k), Space O(n)
+func bfs(grid [][]int, seen map[[2]int]bool) int {
+    queue := [][]int{}
+    res := 0
+    for j:=0; j<len(grid[0]); j++ {
+        if grid[0][j] == 1 {
+            queue = append(queue, []int{0, j})
+            seen[[2]int{0, j}] = true
+            res++
+        }
+    }
+    for len(queue)>0 {
+        l := [][]int{}
+        for _, node := range queue {
+            // get nexts
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
+                []int{0, 1}, []int{0, -1}} {
+                    i2, j2 := node[0]+offset[0], node[1]+offset[1]
+                    if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) {
+                        continue
+                    }
+                    if seen[[2]int{i2, j2}] || grid[i2][j2] == 0 {
+                        continue
+                    }
+                    l = append(l, []int{i2,j2})
+                    seen[[2]int{i2, j2}] = true
+                    res++
+            }
+        }
+        queue = l
+    }
+    // mark unseen nodes as 0, and reset hashmap
+    for k, b := range seen {
+        if !b {
+            delete(seen, k)
+            grid[k[0]][k[1]] = 0
+        } else {
+            //reset
+            seen[k] = false
+        }
+    }
+    return res
+}
+
+func hitBricks(grid [][]int, hits [][]int) []int {
+    // assume len(grid) > 0 && len(grid[0])>0
+    seen := map[[2]int]bool{}
+    // list all nodes to avoi
+    for i, row := range grid {
+        for j, v := range row {
+            if v == 1 {
+                seen[[2]int{i, j}] = false
+            }
+        }
+    }
+    count := bfs(grid, seen)
+    res := make([]int, len(hits))
+    for i, node := range hits {
+        if grid[node[0]][node[1]] == 0 {
+            res[i] = 0
+        } else {
+            grid[node[0]][node[1]] = 0
+            delete(seen, [2]int{node[0], node[1]})
+            count2 := bfs(grid, seen)
+            count, res[i] = count2, count-count2-1
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: bfs from top level. Time Limit Exceeded
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/bricks-falling-when-hit
+// Basic Ideas: bfs
+//
+//  Count remaining bricks each time, starting from bricks on the top level
+//  For unseen nodes, mark them as 0
+//
+// Complexity: Time O(n*k), Space O(n)
+func bfs(grid [][]int) int {
+    queue := [][]int{}
+    seen := map[[2]int]bool{}
+    res := 0
+    for j:=0; j<len(grid[0]); j++ {
+        if grid[0][j] == 1 {
+            queue = append(queue, []int{0, j})
+            seen[[2]int{0, j}] = true
+            res++
+        }
+    }
+    for len(queue)>0 {
+        l := [][]int{}
+        for _, node := range queue {
+            // get nexts
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
+                []int{0, 1}, []int{0, -1}} {
+                    i2, j2 := node[0]+offset[0], node[1]+offset[1]
+                    if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) {
+                        continue
+                    }
+                    if seen[[2]int{i2, j2}] || grid[i2][j2] == 0 {
+                        continue
+                    }
+                    l = append(l, []int{i2,j2})
+                    seen[[2]int{i2, j2}] = true
+                    res++
+            }
+        }
+        queue = l
+    }
+    // mark unseen nodes as 0
+    for i, row := range grid {
+        for j, v := range row {
+            if v == 1 && !seen[[2]int{i, j}] {
+                grid[i][j] = 0
+            }
+        }
+    }
+    return res
+}
+
+func hitBricks(grid [][]int, hits [][]int) []int {
+    // assume len(grid) > 0 && len(grid[0])>0
+    count := bfs(grid)
+    res := make([]int, len(hits))
+    for i, node := range hits {
+        if grid[node[0]][node[1]] == 0 {
+            res[i] = 0
+        } else {
+            grid[node[0]][node[1]] = 0
+            count2 := bfs(grid)
+            count, res[i] = count2, count-count2-1
+        }
     }
     return res
 }

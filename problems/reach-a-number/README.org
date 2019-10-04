@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, greedy, redo
 :END:
 ---------------------------------------------------------------------
 Reach a Number
@@ -13,7 +13,7 @@ Reach a Number
 Similar Problems:
 - [[https://code.dennyzhang.com/reaching-points][Reaching Points]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- Tag: [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/greedy][greedy]]
 ---------------------------------------------------------------------
 You are standing at position 0 on an infinite number line. There is a goal at position target.
 
@@ -49,39 +49,36 @@ Credits To: [[https://leetcode.com/problems/reach-a-number/description/][leetcod
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: math
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/reach-a-number
-## Basic Ideas: BFS
-##      1 - 2 + 3 - 4 + 5 - 6 ... : get -n
-##      -1 + 2 - 3 + 4 - 5 + 6 ... : get n
-##
-##      So the minimum step will be no more than 2n.
-##      If abs(value) is bigger than 2*n, we don't need to examine it.
-##
-## Complexity: Time O(n), Space O(n)
-class Solution:
-    def reachNumber(self, target):
-        """
-        :type target: int
-        :rtype: int
-        """
-        if target == 0: return 0
-        import collections
-        queue = collections.deque()
-        step = 0
-        queue.append(0)
-        while len(queue) != 0 and step<=abs(2*target):
-            step += 1
-            for k in range(len(queue)):
-                value = queue.popleft()
-                value2 = value+step
-                if value2 == target: return step
-                queue.append(value2)
-
-                value2 = value-step
-                if value2 == target: return step
-                queue.append(value2)
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/reach-a-number
+// Basic Ideas: greedy
+//
+// Notice: BFS algorithm would be too slow
+//
+// Greedy: If keep moving to the right, it will grow the fast
+//   When the difference is even, we only need to switch one previous value
+//   When the difference is odd, add one or two elements to make it event.
+//        Then switch one previous value
+//
+// Complexity: Time O(sqrt(n)), Space O(1)
+func reachNumber(target int) int {
+    if target < 0 {
+        target = -target
+    }
+    i := 0
+    sum := 0
+    for sum < target {
+        i++
+        sum += i
+    }
+    for (sum-target) %2 != 0 {
+        i++
+        sum += i
+    }
+    return i
+}
 #+END_SRC
 
 #+BEGIN_HTML

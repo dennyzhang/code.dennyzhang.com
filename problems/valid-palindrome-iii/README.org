@@ -1,0 +1,123 @@
+* Leetcode: Valid Palindrome III                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, palindrome, editdistance
+:END:
+---------------------------------------------------------------------
+Valid Palindrome III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/valid-palindrome-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/longest-palindromic-subsequence][Leetcode: Longest Palindromic Subsequence]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
+---------------------------------------------------------------------
+Given a string s and an integer k, find out if the given string is a K-Palindrome or not.
+
+A string is K-Palindrome if it can be transformed into a palindrome by removing at most k characters from it.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "abcdeca", k = 2
+Output: true
+Explanation: Remove 'b' and 'e' characters.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length <= 1000
+- s has only lowercase English letters.
+- 1 <= k <= s.length
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/valid-palindrome-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/valid-palindrome-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/valid-palindrome-iii
+// Basic Ideas: dynamic programming
+//   optimal substructure:
+//        Problem: the value of s[i...j]
+//        if s[j] == s[i], f(s[i+1...j-1])+2
+//        if s[j] != s[i], max(f(s[i+1...j]), f(s[i...j-1]))
+//   Terminiation condition:
+//        For s[i...j], when i==j, return 1
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func longestPalindromeSubseq(s string) int {
+    dp := make([][]int, len(s))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(s))
+        dp[i][i] = 1
+    }
+    // s[i...j]: From bottom-up, left-right
+    for i:=len(s)-1; i>=0; i-- {
+        for j:=i+1; j<len(s); j++ {
+            if s[i] == s[j] {
+                // when i+1<j-1, dp[i+1][j-1] = 0
+                dp[i][j] = dp[i+1][j-1]+2
+            } else {
+                // s[i...j-1]
+                dp[i][j] = dp[i][j-1]
+                if dp[i][j] < dp[i+1][j] {
+                  // s[i+1...j]
+                  dp[i][j] = dp[i+1][j]
+                }
+            }
+        }
+    }
+    return dp[0][len(s)-1]
+}
+#+END_SRC
+
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/valid-palindrome-iii
+// Basic Ideas: dynamic programming
+//
+// Similar problem: longest palindrome subsequence
+//
+//   s[i...j]
+//    dp[i][j]: the length of longest palindrome subsequence from S[i...j]
+//          if s[i] == s[j], f(s[i...j]) = f(s[i+1...j-1])+2
+//          Otherwise: f(s[i...j]) = max(f(s[i+1...j]), f(s[i...j-1]))
+//
+// Complexity: Time O(n^2), Space O(n^2)
+func isValidPalindrome(s string, k int) bool {
+    dp := make([][]int, len(s))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(s))
+        dp[i][i] = 1
+    }
+    // diagonal line: bottom-up, left-right
+    for i:=len(s)-1; i>=0; i-- {
+        for j:=i+1; j<len(s); j++ {
+            if s[i] == s[j] {
+                dp[i][j] = dp[i+1][j-1]+2
+            } else {
+                dp[i][j] = dp[i+1][j]
+                if dp[i][j] < dp[i][j-1] {
+                    dp[i][j] = dp[i][j-1]
+                }
+            }
+        }
+    }
+    return dp[0][len(s)-1]+k>=len(s)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

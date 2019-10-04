@@ -11,14 +11,20 @@ Slidingwindow Problems
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-slidingwindow"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 *Basic Abstractions*
-| Name                                         | Summary                            |
-|----------------------------------------------+------------------------------------|
-| Move right pointer                           | l+k-1 (l: left, k: window length)  |
-| Move left pointer                            | r-k+1 (r: right, k: window length) |
-| Collect results                              | r-k+1>=0                           |
-| Make sure neither pointers will go backwards |                                    |
+| Name                                         | Summary                                                     |
+|----------------------------------------------+-------------------------------------------------------------|
+| Move right pointer                           | l+k-1 (l: left, k: window length)                           |
+| Move left pointer                            | r-k+1 (r: right, k: window length)                          |
+| Collect results                              | r-k+1>=0                                                    |
+| Make sure neither pointers will go backwards |                                                             |
+|----------------------------------------------+-------------------------------------------------------------|
+| Sliding window with fixed size               | Watch out when sliding windows doesn't have enough elements |
+| Sliding window with non-decreasing size      |                                                             |
+| Sliding window with adjustable size          |                                                             |
 *Scenarios*
+
 *Code Skeleton*
+- Sliding window with fixed size
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together
 // Basic Ideas: fixed size sliding window
@@ -57,6 +63,7 @@ func minSwaps(data []int) int {
 | The of size sliding window is non-fixed, but growing      | [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]                       |
 | Move two pointers: two loop vs One loop                   | [[https://code.dennyzhang.com/longest-substring-without-repeating-characters][Leetcode: Longest Substring Without Repeating Characters]] |
 | Move pointer1 to match the other, or the other way around |                                                          |
+| Inspiring sliding window problem                          | [[https://code.dennyzhang.com/moving-stones-until-consecutive-ii][Leetcode: Moving Stones Until Consecutive II]]             |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 

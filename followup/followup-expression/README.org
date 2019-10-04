@@ -12,6 +12,12 @@ expression problems
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
+*Questions*
+| Name                    | Example                                    |
+|-------------------------+--------------------------------------------|
+| Reverse Polish Notation | [[https://code.dennyzhang.com/evaluate-reverse-polish-notation][Leetcode: Evaluate Reverse Polish Notation]] |
+| From right to left      | [[https://code.dennyzhang.com/ternary-expression-parser][Leetcode: Ternary Expression Parser]]        |
+
 See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
 [display-posts tag="expression" posts_per_page="100" orderby="title"]
 

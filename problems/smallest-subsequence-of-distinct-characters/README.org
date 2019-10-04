@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     greedy, string, lexicographical
+:type:     greedy, string, constructstring
 :END:
 ---------------------------------------------------------------------
 Smallest Subsequence of Distinct Characters
@@ -13,7 +13,7 @@ Smallest Subsequence of Distinct Characters
 Similar Problems:
 - [[https://code.dennyzhang.com/remove-duplicate-letters][Leetcode: Remove Duplicate Letters]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/followup-constructstring][#constructstring]]
 ---------------------------------------------------------------------
 Return the lexicographically smallest subsequence of text that contains all the distinct characters of text exactly once.
  
@@ -53,21 +53,6 @@ Credits To: [[https://leetcode.com/problems/smallest-subsequence-of-distinct-cha
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/smallest-subsequence-of-distinct-characters

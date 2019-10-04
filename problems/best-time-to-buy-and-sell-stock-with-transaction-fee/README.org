@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     classic, dynamicprogramming
+:type:     classic, dynamicprogramming, buystock, maxprofitwithcost
 :END:
 ---------------------------------------------------------------------
 Best Time to Buy and Sell Stock with Transaction Fee
@@ -12,7 +12,7 @@ Best Time to Buy and Sell Stock with Transaction Fee
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-buystock][#buystock]], [[https://code.dennyzhang.com/followup-maxprofitwithcost][maxprofitwithcost]]
 ---------------------------------------------------------------------
 Your are given an array of integers prices, for which the i-th element is the price of a given stock on day i; and a non-negative integer fee representing a transaction fee.
 

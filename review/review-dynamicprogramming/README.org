@@ -29,19 +29,18 @@ Trade space for time.
 *Scenarios*
 *Code Skeleton*
 *Questions*
-| Name                                        | Example                                                 |
-|---------------------------------------------+---------------------------------------------------------|
+| Name                                               | Example                                                      |
+|----------------------------------------------------+--------------------------------------------------------------|
+| DP needs only O(1) space                           | [[https://code.dennyzhang.com/computer-maintenance][LintCode: Computer Maintenance]]                               |
+| Some initialization can be skipped                 | [[https://code.dennyzhang.com/longest-arithmetic-subsequence-of-given-difference][Leetcode: Longest Arithmetic Subsequence of Given Difference]] |
+| Some initialization can be skipped                 | [[https://code.dennyzhang.com/bomb-enemy][Leetcode: Bomb Enemy]]                                         |
+| Instead of left-to-right, do it from right-to-left | [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]                          |
 
 [[color:#c7254e][Key Parts In DP Problems]]:
 1. *Key observation* is crucial. Watch careful for how the states transit?
 - Walk through with smaller cases manually. And detect the pattern.
 ---------------------------------------------------------------------
 [[color:#c7254e][Different Types Of DP Functions]]:
-- Some DP problems can only use O(1) space
-  [[https://code.dennyzhang.com/computer-maintenance][LintCode: Computer Maintenance]]
-
-- We don't always need the base case
-  [[https://code.dennyzhang.com/bomb-enemy][Bomb Enemy]]
 
 - Interesting dp funcitons
   [[https://code.dennyzhang.com/domino-and-tromino-tiling][Domino and Tromino Tiling]]
@@ -57,7 +56,7 @@ Trade space for time.
 - [[https://code.dennyzhang.com/coin-change-2][Coin Change 2]]
 
 - Save the base case: [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
-- Instead of left-to-right, do it from right-to-left: [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
+
 ---------------------------------------------------------------------
 The most impressive problems to me:
 - [[https://code.dennyzhang.com/min-cost-climbing-stairs][Min Cost Climbing Stairs]]

@@ -63,18 +63,19 @@ func (uf *UF) find(x int) int {
 #+END_SRC
 
 *Questions*
-| Name                                        | Example                                                            |
-|---------------------------------------------+--------------------------------------------------------------------|
-| What nodes are? What edges are?             | [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]], [[https://code.dennyzhang.com/regions-cut-by-slashes][Leetcode: Regions Cut By Slashes]] |
-| Count node then initialize VS a fixed array | [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]                     |
-| Maintain a counter for group count          | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                                         |
-| Path compression to reduce levels           | Keeps tree almost completely flat, and avoid tall trees            |
-| Rank based merge                            | Balance by linking small tree below large one                      |
-| Collect result: add vs extract?             | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
-| Get the nodes relationship quickly          | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
-| Union find for weighted graph               | [[https://code.dennyzhang.com/evaluate-division][Leetcode: Evaluate Division]]                                        |
-| How efficient unionfind vs DFS/BFS?         |                                                                    |
-| Time and space complexity of unionfind?     |                                                                    |
+| Name                                            | Example                                                            |
+|-------------------------------------------------+--------------------------------------------------------------------|
+| What nodes are? What edges are?                 | [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]], [[https://code.dennyzhang.com/regions-cut-by-slashes][Leetcode: Regions Cut By Slashes]] |
+| Count node then initialize VS a fixed array     | [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]                     |
+| Maintain a counter for group count              | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                                         |
+| Path compression to reduce levels               | Keeps tree almost completely flat, and avoid tall trees            |
+| Rank based merge                                | Balance by linking small tree below large one                      |
+| Collect result: add vs extract?                 | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
+| Get the nodes relationship quickly              | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
+| Union find for weighted graph                   | [[https://code.dennyzhang.com/evaluate-division][Leetcode: Evaluate Division]]                                        |
+| Union find: connect groups and merge node count | [[https://code.dennyzhang.com/bricks-falling-when-hit][Leetcode: Bricks Falling When Hit]]                                  |
+| How efficient unionfind vs DFS/BFS?             |                                                                    |
+| Time and space complexity of unionfind?         |                                                                    |
 
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]

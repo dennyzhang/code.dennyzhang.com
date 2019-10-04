@@ -1,0 +1,86 @@
+* Leetcode: Optimal Division                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math
+:END:
+---------------------------------------------------------------------
+Optimal Division
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/optimal-division"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/unique-paths-ii][Leetcode: Unique Paths II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]]
+---------------------------------------------------------------------
+Given a list of positive integers, the adjacent integers will perform the float division. For example, [2,3,4] -> 2 / 3 / 4.
+
+However, you can add any number of parenthesis at any position to change the priority of operations. You should find out how to add parenthesis to get the maximum result, and return the corresponding expression in string format. Your expression should NOT contain redundant parenthesis.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: [1000,100,10,2]
+Output: "1000/(100/10/2)"
+Explanation:
+1000/(100/10/2) = 1000/((100/10)/2) = 200
+However, the bold parenthesis in "1000/((100/10)/2)" are redundant, 
+since they don't influence the operation priority. So you should return "1000/(100/10/2)". 
+
+Other cases:
+1000/(100/10)/2 = 50
+1000/(100/(10/2)) = 50
+1000/100/10/2 = 0.5
+1000/100/(10/2) = 2
+#+END_EXAMPLE
+
+Note:
+
+1. The length of the input array is [1, 10].
+- Elements in the given array will be in range [2, 1000].
+- There is only one optimal division for each test case.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/optimal-division][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/optimal-division/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/optimal-division
+// Basic Ideas: math
+//  f(3): a/b/c
+//    a/b/c -> min: a/b/c (ac/b)
+//          -> max: a/(b/c)
+//
+//  f(4): a/b/c/d
+//    f(4, min) = a/b/c/d (acd/b)
+//    f(4, max) = a/f(3, min) -> a/(b/c/d)
+//
+// Complexity: Time O(n), Space O(1)
+func optimalDivision(nums []int) string {
+    if len(nums) == 1 {
+        return fmt.Sprintf("%d", nums[0])
+    }
+    if len(nums) == 2 {
+        return fmt.Sprintf("%d/%d", nums[0], nums[1])
+    }
+    res := fmt.Sprintf("%d/(", nums[0])
+    for i:=1; i<len(nums); i++ {
+        res = fmt.Sprintf("%s%d/", res, nums[i])
+    }
+    res = res[0:len(res)-1]+")"
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

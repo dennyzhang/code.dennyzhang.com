@@ -1,0 +1,175 @@
+* Leetcode: Escape a Large Maze                                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, game, dfs, bfs, redo
+:END:
+---------------------------------------------------------------------
+Escape a Large Maze
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/escape-a-large-maze"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
+---------------------------------------------------------------------
+In a 1 million by 1 million grid, the coordinates of each grid square are (x, y) with 0 <= x, y < 10^6.
+
+We start at the source square and want to reach the target square.  Each move, we can walk to a 4-directionally adjacent square in the grid that isn't in the given list of blocked squares.
+
+Return true if and only if it is possible to reach the target square through a sequence of moves.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: blocked = [[0,1],[1,0]], source = [0,0], target = [0,2]
+Output: false
+Explanation: 
+The target square is inaccessible starting from the source square, because we can't walk outside the grid.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: blocked = [], source = [0,0], target = [999999,999999]
+Output: true
+Explanation: 
+Because there are no blocked cells, it's possible to reach the target square.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= blocked.length <= 200
+- blocked[i].length == 2
+- 0 <= blocked[i][j] < 10^6
+- source.length == target.length == 2
+- 0 <= source[i][j], target[i][j] < 10^6
+- source != target
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/escape-a-large-maze][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/escape-a-large-maze/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: DFS
+#+BEGIN_SRC go
+// Basic Ideas: DFS
+//
+// Key Observations:
+//   For a cell, if four directions are blocked, this cell is blocked
+//   If there is a blocked loop around source or target, we may not be able to find a route
+//   The maximum are of blocked region is limited, given at 200 nodes in blocked list
+//
+// Notice: what if both source and target are inside one blocked loop?
+//
+// Complexity: Time ?, Space ?
+import "math"
+type MyNode struct {
+	i, j int
+}
+
+func dfs(i int, j int, target []int, blocks map[MyNode]bool, seen map[MyNode]bool) bool {
+    bound := int(math.Pow(10, 6))
+    // position is valid
+    if i<0 || i>=bound || j<0 || j>=bound {
+        return false
+    }
+    node := MyNode{i:i, j:j}
+    if blocks[node] || seen[node] {
+        return false
+    }
+    // find target
+    if i == target[0] && j == target[1] {
+        return true
+    }
+    // move out of the blocked region
+    if len(seen) >= 20000 {
+        return true
+    }
+    seen[node] = true
+    return dfs(i+1, j, target, blocks, seen) || dfs(i-1, j, target, blocks, seen) || 
+            dfs(i, j+1, target, blocks, seen) || dfs(i, j-1, target, blocks, seen)
+}
+
+func isEscapePossible(blocked [][]int, source []int, target []int) bool {
+    blocks := map[MyNode]bool{}
+    for _, node := range blocked {
+        blocks[MyNode{i:node[0], j:node[1]}] = true
+    }
+    if blocks[MyNode{i:source[0], j:source[1]}] || blocks[MyNode{i:target[0], j:target[1]}] {
+        return false
+    }
+    return dfs(source[0], source[1], target, blocks, map[MyNode]bool{}) && dfs(target[0], target[1], source, blocks, map[MyNode]bool{})
+}
+#+END_SRC
+
+- Solution: BFS
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/escape-a-large-maze
+// Basic Ideas: BFS
+//
+// Key Observations:
+//   For a cell, if four directions are blocked, this cell is blocked
+//   If there is a blocked loop around source or target, we may not be able to find a route
+//   The maximum are of blocked region is limited, given at 200 nodes in blocked list
+//
+// Notice: what if both source and target are inside one blocked loop?
+//
+// Complexity: Time ?, Space ?
+import "math"
+type MyNode struct {
+	i, j int
+}
+
+func bfs(source []int, target []int, blocks map[MyNode]bool, maxRegion int) bool {
+    bound := int(math.Pow(10, 6))
+    seen := map[MyNode]bool{}
+    seen[MyNode{source[0], source[1]}] = true
+    queue := [][]int{source}
+    for len(queue) > 0 {
+        l := [][]int{}
+        for _, node := range queue {
+            // get nexts
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, []int{0, 1},[]int{0, -1}} {
+                i2, j2 := node[0]+offset[0], node[1]+offset[1]
+                if i2<0 || i2>=bound || j2<0 || j2>=bound {
+                    continue
+                }
+                node2 := MyNode{i:i2, j:j2}
+                if blocks[node2] || seen[node2] {
+                    continue
+                }
+                if i2==target[0] && j2==target[1] {
+                    return true
+                }
+                seen[node2] = true
+                l = append(l, []int{i2, j2})
+            }
+        }
+        queue = l
+        if len(seen) > maxRegion {
+            return true
+        }
+    }
+    return false
+}
+
+func isEscapePossible(blocked [][]int, source []int, target []int) bool {
+    blocks := map[MyNode]bool{}
+    for _, node := range blocked {
+        blocks[MyNode{i:node[0], j:node[1]}] = true
+    }
+    if blocks[MyNode{i:source[0], j:source[1]}] || blocks[MyNode{i:target[0], j:target[1]}] {
+        return false
+    }
+    maxRegion := (len(blocked)*(len(blocked)-1))/2
+    return bfs(source, target, blocks, maxRegion) && bfs(target, source, blocks, maxRegion)
+}
+#+END_SRC
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

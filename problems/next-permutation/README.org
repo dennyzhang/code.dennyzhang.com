@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, greedy, nextpermutation
+:type:     combination, greedy, nextpermutation, constructstring
 :END:
 ---------------------------------------------------------------------
 Next Permutation
@@ -13,7 +13,7 @@ Next Permutation
 Similar Problems:
 - [[https://code.dennyzhang.com/permutation-sequence][Permutation Sequence]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/followup-nextpermutation][#nextpermutation]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+- Tag: [[https://code.dennyzhang.com/followup-nextpermutation][#nextpermutation]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/followup-constructstring][#constructstring]]
 ---------------------------------------------------------------------
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 

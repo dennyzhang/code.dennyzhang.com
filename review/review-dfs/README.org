@@ -21,9 +21,55 @@ Here we try to compile a list of inspiring DFS problems.
 *Scenarios*
 *Code Skeleton*
 *Questions*
-| Name | Example |
-|------+---------|
-|      |         |
+| Name                                                                  | Example                  |
+|-----------------------------------------------------------------------+--------------------------|
+| In matrix dfs, change cell to impossible value to avoid state hashmap | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]] |
+| In matrix dfs, when to change and restore cell state?                 |                          |
+
+- dfs get results from return value or input parameters
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/android-unlock-patterns
+func dfs(pos int, visited []bool, count int, middles [][]int) int {
+    // find one path
+    if count == 0 {
+        return 1
+    }
+    res := 0
+    visited[pos] = true
+    for i:=1; i<=9; i++ {
+        if !visited[i] {
+            // from pos -> to: adjacent or the middle node visited
+            if middles[pos][i] == 0|| visited[middles[pos][i]] {
+                res += dfs(i, visited, count-1, middles)
+            }
+        }
+    }
+    // backtracking
+    visited[pos] = false
+    return res
+}
+#+END_SRC
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/android-unlock-patterns
+func dfs(pos int, visited []bool, count int, middles [][]int, res *int) {
+    // find one path
+    if count == 0 {
+        *res += 1
+    }
+    visited[pos] = true
+    for i:=1; i<=9; i++ {
+        if !visited[i] {
+            // from pos -> to: adjacent or the middle node visited
+            if middles[pos][i] == 0|| visited[middles[pos][i]] {
+                 dfs(i, visited, count-1, middles, res)
+            }
+        }
+    }
+    // backtracking
+    visited[pos] = false
+}
+#+END_SRC
 
 See all dfs problems: [[https://code.dennyzhang.com/tag/bfs/][#dfs]]
 [display-posts tag="dfs" posts_per_page="100" orderby="title"]

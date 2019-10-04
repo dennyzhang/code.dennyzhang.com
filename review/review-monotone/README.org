@@ -11,12 +11,6 @@ Review: Monotone Stack Or Monotone Queue Problems
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-monotone"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-*Scenarios*
-| Name                                         | Summary                                                         |
-|----------------------------------------------+-----------------------------------------------------------------|
-| Use monotone stack to find next bigger value | [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Next Greater Element I]]                                |
-| Use monotone stack for consecutive subarrays | [[https://code.dennyzhang.com/online-stock-span][Leetcode: Online Stock Span]], [[https://code.dennyzhang.com/sum-of-subarray-minimums][Leetcode: Sum of Subarray Minimums]] |
-
 *Basic Abstractions*
 | Name                                                    | Summary                                                                                          |
 |---------------------------------------------------------+--------------------------------------------------------------------------------------------------|
@@ -26,6 +20,13 @@ Review: Monotone Stack Or Monotone Queue Problems
 | May not need to store the array of indices              | [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Next Greater Element I]]                                                                 |
 | Mistake: when pop stack, don't compare value with index | _for len(stack)>0 && nums[stack[len(stack)-1]]>v_ VS _for len(stack)>0 && stack[len(stack)-1]>v_ |
 | Initial value of the indices array                      | _-1_ VS _len(array)_                                                                             |
+
+*Scenarios*
+| Name                                         | Summary                                                         |
+|----------------------------------------------+-----------------------------------------------------------------|
+| Use monotone stack to find next bigger value | [[https://code.dennyzhang.com/next-greater-element-i][Leetcode: Next Greater Element I]]                                |
+| Use monotone stack for consecutive subarrays | [[https://code.dennyzhang.com/online-stock-span][Leetcode: Online Stock Span]], [[https://code.dennyzhang.com/sum-of-subarray-minimums][Leetcode: Sum of Subarray Minimums]] |
+| Monotone queue, instead of monotone stack    | [[https://code.dennyzhang.com/shortest-subarray-with-sum-at-least-k][Leetcode: Shortest Subarray with Sum at Least K]]                 |
 
 *Scenarios*
 - Find next bigger value or smaller value for each elements of an array

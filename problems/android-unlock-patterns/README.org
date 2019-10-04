@@ -2,17 +2,17 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dfs, backtracking
+:type:     dfs, backtracking, countdistinctmoves, inspiring
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Android Unlock Patterns
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/android-unlock-patterns"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]]
 ---------------------------------------------------------------------
 Given an Android 3x3 key lock screen and two integers m and n, where 1 <= m <= n <= 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.
 
@@ -23,8 +23,9 @@ Rules for a valid pattern:
 - If the line connecting two consecutive keys in the pattern passes through any other keys, the other keys must have previously selected in the pattern. No jumps through non selected key is allowed.
 - The order of keys used matters.
 
+[[image-blog:Android Unlock Patterns][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/android-unlock-patterns/unlock.png]]
+
 Explanation:
-[[image-blog:Android Unlock Patterns][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/android-unlock-patterns/android-unlock.png]]
 #+BEGIN_EXAMPLE
 | 1 | 2 | 3 |
 | 4 | 5 | 6 |
@@ -42,8 +43,6 @@ Line 1 - 3 is valid because it passes through key 2, which had been selected in 
 
 Valid move: 6 - 5 - 4 - 1 - 9 - 2
 Line 1 - 9 is valid because it passes through key 5, which had been selected in the pattern.
-
- 
 
 Example:
 #+BEGIN_EXAMPLE
@@ -107,7 +106,7 @@ func numberOfPatterns(m int, n int) int {
     res := 0
     visited := make([]bool, 10)
     for i:=m; i<=n; i++ {
-        // current node count 1, so we loop with i-1
+        // current node counts 1, so we loop with i-1
         res += dfs(1, visited, i-1, middles)*4
         res += dfs(2, visited, i-1, middles)*4
         res += dfs(5, visited, i-1, middles)

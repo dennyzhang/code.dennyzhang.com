@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     classic, graph, bfs, dfs
+:type:     classic, graph, bfs, dfs, redo
 :END:
 ---------------------------------------------------------------------
 All Paths from Source Lead to Destination

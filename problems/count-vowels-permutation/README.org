@@ -1,0 +1,110 @@
+* Leetcode: Count Vowels Permutation                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, hashmap, countdistinctmoves
+:END:
+---------------------------------------------------------------------
+Count Vowels Permutation
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-vowels-permutation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/distinct-subsequences-ii][Leetcode: Distinct Subsequences II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]]
+---------------------------------------------------------------------
+Given an integer n, your task is to count how many strings of length n can be formed under the following rules:
+
+- Each character is a lower case vowel ('a', 'e', 'i', 'o', 'u')
+- Each vowel 'a' may only be followed by an 'e'.
+- Each vowel 'e' may only be followed by an 'a' or an 'i'.
+- Each vowel 'i' may not be followed by another 'i'.
+- Each vowel 'o' may only be followed by an 'i' or a 'u'.
+- Each vowel 'u' may only be followed by an 'a'.
+- Since the answer may be too large, return it modulo 10^9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 1
+Output: 5
+Explanation: All possible strings are: "a", "e", "i" , "o" and "u".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 2
+Output: 10
+Explanation: All possible strings are: "ae", "ea", "ei", "ia", "ie", "io", "iu", "oi", "ou" and "ua".
+#+END_EXAMPLE
+
+Example 3: 
+#+BEGIN_EXAMPLE
+Input: n = 5
+Output: 68
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 2 * 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-vowels-permutation][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/count-vowels-permutation/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/count-vowels-permutation
+// Basic Ideas: dynamic programming
+//
+// Similar problem: count of distinct subquence from a string
+//
+//  m['a']: ends with 'a'
+//  m['e']: ends with 'e'
+//  ...
+//  m['u']: ends with 'u'
+//
+// Complexity: Time O(n), Space O(1)
+import "math"
+func countVowelPermutation(n int) int {
+    mod := int(math.Pow(10, 9))+7
+    m := map[byte]int{}
+    for _, b := range []byte{'a', 'e', 'i', 'o', 'u'} {
+        m[b] = 1
+    }
+    for i:=1; i<n; i++ {
+        m2 := map[byte]int{}
+        m2['e'] += m['a']
+        m2['a'] += m['e']
+        m2['i'] += m['e']
+        for _, b := range []byte {'a', 'e', 'i', 'o', 'u'} {
+            if b != 'i' {
+                m2[b] += m['i']
+            }
+        }
+        m2['i'] += m['o']
+        m2['u'] += m['o']
+        m2['a'] += m['u']
+        for _, b := range []byte{'a', 'e', 'i', 'o', 'u'} {
+            m[b] = (m2[b]%mod)
+        }
+    }
+    res := 0
+    for _, v := range m {
+        res = (res + v)%mod
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

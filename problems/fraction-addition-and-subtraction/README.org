@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, expression, redo
+:type:     math, expression, gcd, inspiring
 :END:
 ---------------------------------------------------------------------
 Fraction Addition and Subtraction
@@ -13,7 +13,7 @@ Fraction Addition and Subtraction
 Similar Problems:
 - [[https://code.dennyzhang.com/solve-the-equation][Solve the Equation]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/expression][#expression]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/followup-expression][#expression]], [[https://code.dennyzhang.com/review-gcd][#gcd]]
 ---------------------------------------------------------------------
 
 Given a string representing an expression of fraction addition and subtraction, you need to return the calculation result in string format. The final result should be irreducible fraction. If your final result is an integer, say 2, you need to change it to the format of fraction that has denominator 1. So in this case, 2 should be converted to 2/1.
@@ -43,8 +43,9 @@ Output: "2/1"
 #+END_EXAMPLE
 
 Note:
+
 1. The input string only contains '0' to '9', '/', '+' and '-'. So does the output.
-- Each fraction (input and output) has format (+/-)numerator/denominator. If the first input fraction or the output is positive, then '+' will be omitted.
+- Each fraction (input and output) has format (+/-)numerator/denominator. If the first input fraction or the output is positive, then positive sign be omitted.
 - The input only contains valid irreducible fractions, where the numerator and denominator of each fraction will always be in the range [1,10]. If the denominator is 1, it means this fraction is actually an integer in a fraction format defined above.
 - The number of given fractions will be in the range [1,10].
 - The numerator and denominator of the final result are guaranteed to be valid and in the range of 32-bit int.
@@ -58,7 +59,88 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/fraction-addition-and-subtraction
+import "strconv"
+// https://code.dennyzhang.com/fraction-addition-and-subtraction
+// Basic Ideas: stack + gcd
+//
+// Convert string to list: [sign, num1, '/', num2]
+//
+// Use GCD to get the result of two entries
+//
+// Complexity: Time O(n), Space O(n)
+type MyNode struct {
+	numerator int
+	denominator int
+}
 
+func gcd(x, y int) int {
+	if x < 0 {
+		return gcd(-x, y)
+	}
+	if y<0 {
+		return gcd(x, -y)
+	}
+	if x<y {
+		return gcd(y, x)
+	}
+	if y == 0 {
+		return y
+	}
+	for y!= 0 {
+		y, x = x%y, y
+	}
+	return x
+}
+
+func fractionAddition(expression string) string {
+	// Assume string won't be empty and is valid
+	if expression[0] >= '1' && expression[0] <= '9' {
+		expression = string('+')+expression
+	}
+
+	l := []MyNode{}
+	i:=0
+	for i<len(expression) {
+		isPositive := true
+		if expression[i] == '-' {
+			isPositive = false
+		}
+		i++
+		// find numerator: expression[i:j+1]
+		j:=i
+		for j+1<len(expression) && expression[j+1] != '/' {
+			j++
+		}
+		numerator, _ := strconv.Atoi(string(expression[i:j+1]))
+		if !isPositive {
+			numerator = -numerator
+		}
+		i = j+2
+		j = i
+		for j+1<len(expression) && expression[j+1] != '-' && expression[j+1] != '+' {
+			j++
+		}
+		denominator, _ := strconv.Atoi(string(expression[i:j+1]))
+		i = j+1
+		node := MyNode{numerator:numerator, denominator:denominator}
+		l = append(l, node)
+	}
+
+	node := MyNode{numerator:0, denominator:1}
+    for _, node2 := range l {
+		n := gcd(node.denominator, node2.denominator)
+		denominator := (node.denominator/n)*node2.denominator
+		numerator := node.numerator*(denominator/node.denominator)
+		numerator += node2.numerator*(denominator/node2.denominator)
+		p := gcd(numerator, denominator)
+		if p != 0 {
+			node = MyNode{numerator:numerator/p, denominator:denominator/p}
+		} else {
+			node = MyNode{numerator:0, denominator:1}
+		}
+	}
+	return fmt.Sprintf("%d/%d", node.numerator, node.denominator)
+}
 #+END_SRC
 
 #+BEGIN_HTML

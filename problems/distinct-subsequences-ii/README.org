@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, inspiring, subsequence
+:type:     dynamicprogramming, hashmap, inspiring, subsequence, countdistinctmoves
 :END:
 ---------------------------------------------------------------------
 Distinct Subsequences II
@@ -11,9 +11,10 @@ Distinct Subsequences II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-subsequences-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/count-vowels-permutation][Count Vowels Permutation]]
 - [[https://code.dennyzhang.com/distinct-subsequences][Leetcode: Distinct Subsequences]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-subsequence][#subsequence]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]]
 ---------------------------------------------------------------------
 Given a string S, count the number of distinct, non-empty subsequences of S .
 

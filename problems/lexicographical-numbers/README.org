@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     lexicographical, redo
+:type:     constructstring, redo
 :END:
 ---------------------------------------------------------------------
 Given an integer n, return 1 - n in lexicographical order.
@@ -12,6 +12,8 @@ Given an integer n, return 1 - n in lexicographical order.
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/gray-code][Gray Code]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-constructstring][#constructstring]]
 ---------------------------------------------------------------------
 Given an integer n, return 1 - n in lexicographical order.
 

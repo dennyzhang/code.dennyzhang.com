@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     unionfind, graph, graphchangecell, island
 :END:
 ---------------------------------------------------------------------
 Number of Islands II
@@ -13,7 +13,7 @@ Number of Islands II
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/review-graphchangecell][#graphchangecell]], [[https://code.dennyzhang.com/review-island][#island]]
 ---------------------------------------------------------------------
 A 2d grid map of m rows and n columns is initially filled with water. We may perform an addLand operation which turns the water at position (row, col) into a land. Given a list of positions to operate, count the number of islands after each addLand operation. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
@@ -67,9 +67,77 @@ Credits To: [[https://leetcode.com/problems/number-of-islands-ii/description/][l
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/number-of-islands-ii
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/number-of-islands-ii
+// Basic Ideas: unionfind
+//
+//  When add a new position, check with 4 adjacent cells
+//  If no adjacent islands, increase the counter
+//  Otherwise, the counter may be the same or decrease
+//
+// Complexity: Time O(m*n+k), Space O(m*n)
+type UF struct {
+    parent []int
+    groupCnt int
+}
 
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    n1, n2 := uf.find(x), uf.find(y)
+    if n1 == n2 {
+        return
+    }
+    if n1>n2{
+        n1,n2 = n2,n1
+        x,y = y,x
+    }
+    uf.parent[n2] = n1
+    uf.groupCnt--
+}
+
+func (uf *UF) find(x int) int {
+    // TODO: path compression
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func numIslands2(m int, n int, positions [][]int) []int {
+    uf := constructor(m*n)
+    grid := make([][]int, m)
+    for i, _ := range grid {
+        grid[i] = make([]int, n)
+    }
+    res := make([]int, len(positions))
+    for k, p := range positions {
+        i, j := p[0], p[1]
+        // if current cell is already island, no change
+        if grid[i][j] == 0 {
+            grid[i][j] = 1
+            uf.groupCnt++
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, []int{0, 1}, []int{0, -1}} {
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2<0 || i2>=m || j2<0 || j2>=n {
+                    continue
+                }
+                if grid[i2][j2] == 1 {
+                    n1, n2 := i*n+j, i2*n+j2
+                    uf.union(n1, n2)
+                }
+            }
+        }
+        res[k] = uf.groupCnt
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

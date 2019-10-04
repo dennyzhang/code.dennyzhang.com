@@ -1,4 +1,4 @@
-* Series: Coin Problems & Follow-Up                           :BLOG:Series:
+* Series: Coin Problems & Follow-Up                             :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     graph, redo
+:type:     graph, topologicalsort, colorgraph
 :END:
 ---------------------------------------------------------------------
 Find Eventual Safe States
@@ -12,7 +12,7 @@ Find Eventual Safe States
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]], [[https://code.dennyzhang.com/followup-colorgraph][#colorgraph]]
 ---------------------------------------------------------------------
 In a directed graph, we start at some node and every turn, walk along a directed edge of the graph.  If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop.
 
@@ -44,10 +44,215 @@ Credits To: [[https://leetcode.com/problems/find-eventual-safe-states/descriptio
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: DFS + colorgraph
+#+BEGIN_SRC go
+// Basic Ideas: dfs + postorder
+//
+// Key observation: if one node is unsafe, the nodes point to it will be unsafe too
+//
+// Coloring nodes with 4 state: unknown, visiting, unsafe, safe
+//  Visiting is an intermidate state, which results in either unsafe or safe
+//
+// Complexity: Time O(n+w), Space O(n+w)
+const (
+    Unknown = iota
+    Visiting = iota
+    Unsafe = iota
+    Safe = iota
+)
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/find-eventual-safe-states
+func dfs(i int, states []int, graph [][] int) {
+    if states[i] != Unknown {
+        if states[i] == Visiting {
+            states[i] = Unsafe
+        }
+        return
+    }
+    states[i] = Visiting
+    for _, j := range graph[i] {
+        dfs(j, states, graph)
+        if states[j] == Unsafe {
+            states[i] = Unsafe
+            return
+        }
+    }
+    states[i] = Safe
+}
 
+func eventualSafeNodes(graph [][]int) []int {
+    states := make([]int, len(graph))
+    res := []int{}
+    for i, _ := range states {
+        dfs(i, states, graph)
+    }
+    for i, v:= range states {
+        if v == Safe {
+            res = append(res, i)
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: topologicalsort + DFS
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-eventual-safe-states
+// Basic Ideas: topologicalsort + dfs
+//
+// Detect all cycles in a directed graph
+//
+// Key Observation: Nodes with no outgoing edges are eventually safe
+//
+// Complexity: Time O(n+w), Space O(n+w)
+func dfs(i int, degrees []int, rEdges map[int]map[int]bool) {
+    // skip for visited or unqualified nodes
+    if degrees[i] != 0 {
+        return
+    }
+    degrees[i] = -1 // mark node as visited
+    for j, _ := range rEdges[i] {
+        degrees[j]--
+        dfs(j, degrees, rEdges)
+    }
+}
+
+func eventualSafeNodes(graph [][]int) []int {
+    rEdges := map[int]map[int]bool{}
+    degrees := make([]int, len(graph))
+    for i, l := range graph {
+        for _, j := range l {
+            // i->j
+            if _, ok := rEdges[j]; !ok {
+                rEdges[j] = map[int]bool{}
+            }
+            if ! rEdges[j][i] {
+                rEdges[j][i] = true
+                degrees[i]++
+            }
+        }
+    }
+    for i, _ := range degrees {
+        dfs(i, degrees, rEdges)
+    }
+    res := []int{}
+    for i, v:= range degrees {
+        if v == -1 {
+            res = append(res, i)
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: topologicalsort + BFS
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-eventual-safe-states
+// Basic Ideas: topologicalsort + BFS
+//
+// Detect all cycles in a directed graph
+//
+// Key Observation: Nodes with no outgoing edges are eventually safe
+//
+// Complexity: Time O(n+w), Space O(n+w)
+func eventualSafeNodes(graph [][]int) []int {
+    // There might be duplicate edges, so we don't use map[int][]int{}
+    rEdges := map[int]map[int]bool{}
+    degrees := make([]int, len(graph))
+    for i, l := range graph {
+        for _, j := range l {
+            // i->j
+            if _, ok := rEdges[j]; !ok {
+                rEdges[j] = map[int]bool{}
+            }
+            if ! rEdges[j][i] {
+                rEdges[j][i] = true
+                degrees[i]++
+            }
+        }
+    }
+    queue := []int{}
+    for i, v := range degrees {
+        if v == 0 {
+            queue = append(queue, i)
+        }
+    }
+    for len(queue)>0 {
+        l := []int{}
+        for _, i := range queue {
+            for j, _ := range rEdges[i] {
+                degrees[j]--
+                if degrees[j] == 0 {
+                    l = append(l, j)
+                }
+            }
+        }
+        queue = l
+    }
+    res := []int{}
+    for i, v:= range degrees {
+        if v==0 {
+            res = append(res, i)
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: topologicalsort + BFS + extra boolean array
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-eventual-safe-states
+// Basic Ideas: topologicalsort + BFS
+//
+// Detect all cycles in a directed graph
+//
+// Key Observation: Nodes with no outgoing edges are eventually safe
+//
+// Complexity: Time O(n+w), Space O(n+w)
+func eventualSafeNodes(graph [][]int) []int {
+    // There might be duplicate edges, so we don't use map[int][]int{}
+    rEdges := map[int]map[int]bool{}
+    degrees := make([]int, len(graph))
+    nodes := make([]bool, len(graph))
+    for i, l := range graph {
+        for _, j := range l {
+            // i->j
+            if _, ok := rEdges[j]; !ok {
+                rEdges[j] = map[int]bool{}
+            }
+            if ! rEdges[j][i] {
+                rEdges[j][i] = true
+                degrees[i]++
+            }
+        }
+    }
+    queue := []int{}
+    for i, v := range degrees {
+        if v == 0 {
+            queue = append(queue, i)
+            nodes[i] = true
+        }
+    }
+    for len(queue)>0 {
+        l := []int{}
+        for _, i := range queue {
+            for j, _ := range rEdges[i] {
+                degrees[j]--
+                if degrees[j] == 0 {
+                    l = append(l, j)
+                    nodes[j] = true
+                }
+            }
+        }
+        queue = l
+    }
+    res := []int{}
+    for i, b := range nodes {
+        if b {
+            res = append(res, i)
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

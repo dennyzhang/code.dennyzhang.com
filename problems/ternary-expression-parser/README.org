@@ -12,7 +12,7 @@ Ternary Expression Parser
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/tag/expression][#expression]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-expression][#expression]]
 ---------------------------------------------------------------------
 
 Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume that the given expression is valid and only consists of digits 0-9, ?, :, T and F (T and F represent True and False respectively).
@@ -69,7 +69,39 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/ternary-expression-parser
-
+// Basic Ideas: stack
+//  From right to left, when ?, 
+//     get previous condition, pop two, then push one
+//
+//  Notice: number contains only one digit, deal with T?12:30
+//  Condition will always be either T or F
+//
+// Complexity: Time O(n), Space O(n)
+func parseTernary(expression string) string {
+    if len(expression) == 0 {
+       return ""
+    }
+    stack := []byte{}
+    for i:=len(expression)-1; i>=0; i-- {
+        ch := expression[i]
+        if ch == '?' {
+            i--
+            condition := expression[i]
+            v1, v2 := stack[len(stack)-1], stack[len(stack)-2]
+            stack = stack[0:len(stack)-2]
+            if condition == 'T' {
+                stack = append(stack, v1) 
+            } else {
+                stack = append(stack, v2)
+            }
+        } else {
+            if ch != ':' {
+                stack = append(stack, ch)
+            }
+        }
+    }
+    return string(stack[0])
+}
 #+END_SRC
 
 #+BEGIN_HTML

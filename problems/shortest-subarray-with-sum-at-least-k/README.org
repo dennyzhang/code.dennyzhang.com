@@ -1,0 +1,102 @@
+* Leetcode: Shortest Subarray with Sum at Least K               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     maxsubarraysum, monotone, redo
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-subarray-with-sum-at-least-k"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/review-monotone][#monotone]]
+---------------------------------------------------------------------
+Return the length of the shortest, non-empty, contiguous subarray of A with sum at least K.
+
+If there is no non-empty subarray with sum at least K, return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: A = [1], K = 1
+Output: 1
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: A = [1,2], K = 4
+Output: -1
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: A = [2,-1,2], K = 3
+Output: 3
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 50000
+- -10 ^ 5 <= A[i] <= 10 ^ 5
+- 1 <= K <= 10 ^ 9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-subarray-with-sum-at-least-k][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: monotone queue
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/shortest-subarray-with-sum-at-least-k
+// Basic Ideas: presum + monotone queue
+//
+// Get a presum array
+//  If current value is smaller than previous value, 
+//     for the following values,
+//     no need to compare with previous values any more
+//
+// Complexity: Time O(n), Space O(n)
+func shortestSubarray(A []int, K int) int {
+    presums := make([]int, len(A)+1)
+    for i, v := range A {
+        presums[i+1] = presums[i] + v
+    }
+    res := 1<<31-1
+    // find next +K greater value
+    // items in queue are increassing
+    queue := []int{}
+    for i, v := range presums {
+        // previous value can't be candidates
+        for len(queue)>0 && v <= presums[queue[len(queue)-1]] {
+            // remove the item
+            queue = queue[0:len(queue)-1]
+        }
+        // find candidates
+        for len(queue)>0 && presums[queue[0]] + K <= v {
+            j := queue[0]
+            queue = queue[1:]
+            if i-j < res {
+                res = i-j
+            }
+        }
+        // put current element to be evaluated
+        queue = append(queue, i)
+    }
+    if res == 1<<31-1{
+        res = -1
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

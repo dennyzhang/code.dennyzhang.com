@@ -29,7 +29,6 @@ Credits To: [[https://leetcode.com/problems/longest-increasing-subsequence/descr
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/longest-increasing-subsequence
 // Basic Ideas: dynamic programming

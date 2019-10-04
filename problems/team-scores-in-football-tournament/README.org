@@ -1,0 +1,98 @@
+* Leetcode: Team Scores in Football Tournament                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Team Scores in Football Tournament
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/team-scores-in-football-tournament"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/team-scores-in-football-tournament][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/team-scores-in-football-tournament/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: left join on two fields
+#+BEGIN_SRC sql
+## https://code.dennyzhang.com/team-scores-in-football-tournament
+select Teams.team_id, Teams.team_name, 
+    sum(case when team_id=host_team and host_goals>guest_goals then 3 else 0 end) +
+    sum(case when team_id=host_team and host_goals=guest_goals then 1 else 0 end) +
+    sum(case when team_id=guest_team and host_goals<guest_goals then 3 else 0 end) +
+    sum(case when team_id=guest_team and host_goals=guest_goals then 1 else 0 end) as num_points
+from Teams left join Matches
+on Teams.team_id = Matches.host_team or Teams.team_id = Matches.guest_team
+group by Teams.team_id
+order by num_points desc, Teams.team_id asc
+#+END_SRC
+
+- Solution: sum + if 
+
+#+BEGIN_SRC sql
+## https://code.dennyzhang.com/team-scores-in-football-tournament
+select Teams.team_id, Teams.team_name, sum(if(isnull(num_points), 0, num_points)) as num_points
+from Teams left join
+    (
+        select host_team as team_id,
+            sum(case when host_goals>guest_goals then 3 
+                     when host_goals=guest_goals then 1
+                     else 0 end) as num_points
+        from Matches
+        group by host_team
+        union all
+        select guest_team as team_id,
+            sum(case when host_goals<guest_goals then 3 
+                     when host_goals=guest_goals then 1
+                     else 0 end) as num_points
+        from Matches
+        group by guest_team
+    ) as tt
+on Teams.team_id = tt.team_id
+group by Teams.team_id
+order by num_points desc, Teams.team_id asc
+#+END_SRC
+
+- Solution: if + sum
+
+#+BEGIN_SRC sql
+## https://code.dennyzhang.com/team-scores-in-football-tournament
+select Teams.team_id, Teams.team_name, ifnull(sum(num_points), 0) as num_points
+from Teams left join
+    (
+        select host_team as team_id,
+            sum(case when host_goals>guest_goals then 3 
+                     when host_goals=guest_goals then 1
+                     else 0 end) as num_points
+        from Matches
+        group by host_team
+        union all
+        select guest_team as team_id,
+            sum(case when host_goals<guest_goals then 3 
+                     when host_goals=guest_goals then 1
+                     else 0 end) as num_points
+        from Matches
+        group by guest_team
+    ) as tt
+on Teams.team_id = tt.team_id
+group by Teams.team_id
+order by num_points desc, Teams.team_id asc
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,11 +1,11 @@
-* Leetcode: Second Highest Salary                                              :BLOG:Medium:
+* Leetcode: Biggest Single Number                               :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type:     sql
 :END:
 ---------------------------------------------------------------------
-Second Highest Salary
+Biggest Single Number
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/biggest-single-number"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, dfs
+:type:     colorgraph, bfs, dfs
 :END:
 ---------------------------------------------------------------------
 Minesweeper
@@ -12,7 +12,7 @@ Minesweeper
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/followup-colorgraph][#colorgraph]]
 ---------------------------------------------------------------------
 Let's play the minesweeper game (Wikipedia, online game)!
 

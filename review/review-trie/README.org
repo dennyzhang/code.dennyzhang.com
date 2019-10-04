@@ -30,16 +30,23 @@ type Trie struct {
 *Code Skeleton*
 
 *Questions*
-| Name | Example |
-|------+---------|
-|      |         |
+| Name                                                        | Example                                           |
+|-------------------------------------------------------------+---------------------------------------------------|
+| Extra datastructure in trie can save time and simplify code | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]]                          |
+| For a-z, use _children [26]*Trie_ vs _map[byte]*Trie_       | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]]                          |
+| The most impressive problems to trie problem                | [[https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array/][Leetcode: Maximum XOR of Two Numbers in an Array]]. |
+| Time complexity of trie problems?                           | Time O(w)/O(n*w), Space O(w)                      |
+| trie vs hashmap                                             | [[https://code.dennyzhang.com/word-break-ii][Leetcode: Word Break II]]                           |
 
-[[color:#c7254e][Questions To Think]]:
-Q: How to time complexity for Trie Tree problems?
-
-The most impressive problems to me:
-- [[https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array/][Maximum XOR of Two Numbers in an Array]].
-
+- Solution: trie with extra datastructure in leaf nodes
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-search-ii
+type Trie struct {
+    children map[byte]*Trie
+    isLeaf bool
+    index int
+}
+#+END_SRC
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 

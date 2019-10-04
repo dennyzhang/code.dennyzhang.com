@@ -1,0 +1,194 @@
+* Leetcode: Word Break II                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     backtracking, inspiring, redo
+:END:
+---------------------------------------------------------------------
+Word Break II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/word-break-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+---------------------------------------------------------------------
+Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
+
+Note:
+
+- The same word in the dictionary may be reused multiple times in the segmentation.
+- You may assume the dictionary does not contain duplicate words.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+s = "catsanddog"
+wordDict = ["cat", "cats", "and", "sand", "dog"]
+Output:
+[
+  "cats and dog",
+  "cat sand dog"
+]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+s = "pineapplepenapple"
+wordDict = ["apple", "pen", "applepen", "pine", "pineapple"]
+Output:
+[
+  "pine apple pen apple",
+  "pineapple pen apple",
+  "pine applepen apple"
+]
+Explanation: Note that you are allowed to reuse a dictionary word.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input:
+s = "catsandog"
+wordDict = ["cats", "dog", "sand", "and", "cat"]
+Output:
+[]
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/word-break-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/word-break-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: recursive + memo
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-break-ii
+// Basic Ideas: recursive + memo + trie
+// Complexity: Time O(n*w) Space O(w)
+type Trie struct {
+    children [26]*Trie
+    isLeaf bool
+}
+
+func dfs(s string, root *Trie, m map[string][]string) []string {
+    if s == "" {
+        return []string{""}
+    }
+    // recursive with memo
+    if _, ok := m[s]; ok {
+        return m[s]
+    }
+    res := []string{}
+    p := root
+    for i, _ := range s {
+        index := s[i]-'a'
+        if p.children[index] == nil {
+            break
+        }
+        if p.children[index].isLeaf {
+            for _, str := range dfs(s[i+1:], root, m) {
+                item := fmt.Sprintf("%s %s", s[0:i+1], str)
+                if item[len(item)-1] == ' ' {
+                    item = item[0:len(item)-1]
+                }
+                res = append(res, item)
+            }
+        }
+        p = p.children[index]
+    }
+    m[s] = res
+    return res
+}
+
+func wordBreak(s string, wordDict []string) []string {
+    // build trie
+    root := &Trie{}
+    for _, word := range wordDict {
+        p := root
+        for i, _ := range word {
+            j := word[i]-'a'
+            if p.children[j] == nil {
+                p.children[j] = &Trie{}
+            }
+            p = p.children[j]
+        }
+        p.isLeaf = true
+    }
+    // backtracking
+    return dfs(s, root, map[string][]string{})
+}
+#+END_SRC
+
+- Solution: backtracking + trie, but it runs into TLE. Fail!
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-break-ii
+// Basic Ideas: backtracking
+// Complexity: Time O(n*w) Space O(w)
+type Trie struct {
+    children [26]*Trie
+    isLeaf bool
+}
+
+func dfs(pos int, count int, combination []byte, s string, p *Trie, root *Trie, res *[]string) {
+    if count == 0 {
+        // get a candidate
+        if p.isLeaf {
+            if combination[len(combination)-1] == ' ' {
+                combination = combination[0:len(combination)-1]
+            }
+            *res = append(*res, string(combination))
+        }
+        return
+    }
+    // not found in trie
+    index := s[pos]-'a'
+    if p.children[index] == nil {
+        return
+    }
+    p = p.children[index]
+    // backtracking
+    if p.isLeaf {
+        combination = append(combination, s[pos])
+        combination = append(combination, ' ')
+        dfs(pos+1, count-1, combination, s, root, root, res)
+        combination = combination[0:len(combination)-2]
+    }
+
+    // keep going
+    combination = append(combination, s[pos])
+    dfs(pos+1, count-1, combination, s, p, root, res)
+    combination = combination[0:len(combination)-1]    
+}
+
+func wordBreak(s string, wordDict []string) []string {
+    // build trie
+    root := &Trie{}
+    for _, word := range wordDict {
+        p := root
+        for i, _ := range word {
+            j := word[i]-'a'
+            if p.children[j] == nil {
+                p.children[j] = &Trie{}
+            }
+            p = p.children[j]
+        }
+        p.isLeaf = true
+    }
+    // backtracking
+    res := []string{}
+    dfs(0, len(s), []byte{}, s, root, root, &res)
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
