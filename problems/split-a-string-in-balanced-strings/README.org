@@ -1,0 +1,86 @@
+* Leetcode: Split a String in Balanced Strings                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, greedy
+:END:
+---------------------------------------------------------------------
+Split a String in Balanced Strings
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/split-a-string-in-balanced-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Balanced strings are those who have equal quantity of 'L' and 'R' characters.
+
+Given a balanced string s split it in the maximum amount of balanced strings.
+
+Return the maximum amount of splitted balanced strings.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "RLRRLLRLRL"
+Output: 4
+Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "RLLLLRRRLR"
+Output: 3
+Explanation: s can be split into "RL", "LLLRRR", "LR", each substring contains same number of 'L' and 'R'.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "LLLLRRRR"
+Output: 1
+Explanation: s can be split into "LLLLRRRR".
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length <= 1000
+- s[i] = 'L' or 'R'
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/split-a-string-in-balanced-strings][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/split-a-string-in-balanced-strings/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/split-a-string-in-balanced-strings
+// Basic Ideas: greedy
+//  L -1, R +1
+//  When it hits 0, we increase the counter
+// Complexity: Time O(n), Space O(1)
+func balancedStringSplit(s string) int {
+    res := 0
+    sum := 0
+    for _, ch := range s {
+        if ch == 'R' {
+            sum++
+        } else {
+            sum--
+        }
+        if sum == 0 {
+            res++
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

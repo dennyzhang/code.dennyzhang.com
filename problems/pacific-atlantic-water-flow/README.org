@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     graph, bfs, dfs
 :END:
 ---------------------------------------------------------------------
 Pacific Atlantic Water Flow
@@ -12,7 +12,7 @@ Pacific Atlantic Water Flow
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the "Pacific ocean" touches the left and top edges of the matrix and the "Atlantic ocean" touches the right and bottom edges.
 
@@ -48,9 +48,82 @@ Credits To: [[https://leetcode.com/problems/pacific-atlantic-water-flow/descript
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/pacific-atlantic-water-flow
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/pacific-atlantic-water-flo
+// Basic Ideas: BFS
+//
+//   Pacific is two edges, not one point!
+//
+//   When one cell is target, it shall have a path to pacific, 
+//       and another one to altantic.
+//   The path should be non-increasing order
+//
+//   Instead of loop each cell, which is the source, we try the opposite
+//   Start searching from the source, which is pacific and atlantic
+//
+//   Each both searches visit the same cell, the cell is the target.
+//
+// Complexity: Time O(m*n) Space O(m*n)
+func bfs(queue [][]int, visited [][]bool, matrix [][]int) {
+	for len(queue) > 0 {
+		nexts := [][]int{}
+		for _, node := range queue {
+            i, j := node[0], node[1]
+			for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, 
+				[]int{0, 1}, []int{0, -1}} {
+					i2, j2 := i+offset[0], j+offset[1]
+					if i2<0 || i2>=len(matrix) || j2<0 || j2>=len(matrix[0]) {
+						continue
+					}
+					if visited[i2][j2] || matrix[i2][j2]<matrix[i][j] {
+						continue
+					}
+					visited[i2][j2] = true
+					nexts = append(nexts, []int{i2, j2})
+			}
+		}
+		queue = nexts
+	}
+}
 
+func pacificAtlantic(matrix [][]int) [][]int {
+	if len(matrix) == 0 || len(matrix[0]) == 0 {
+		return [][]int{}
+	}
+	pvisited := make([][]bool, len(matrix))
+    avisited := make([][]bool, len(matrix))
+    for i, _ := range pvisited {
+        pvisited[i] = make([]bool, len(matrix[0]))
+        avisited[i] = make([]bool, len(matrix[0]))
+    }
+	pqueue := [][]int{}
+	aqueue := [][]int{}
+    // initialize queue
+	for i:=0; i<len(matrix); i++ {
+		pvisited[i][0] = true
+		pqueue = append(pqueue, []int{i, 0})
+		avisited[i][len(matrix[0])-1] = true
+		aqueue = append(aqueue, []int{i, len(matrix[0])-1})
+	}
+	for j:=0; j<len(matrix[0]); j++ {
+		pvisited[0][j] = true
+		pqueue = append(pqueue, []int{0, j})
+		avisited[len(matrix)-1][j] = true
+		aqueue = append(aqueue, []int{len(matrix)-1, j})
+	}
+	bfs(pqueue, pvisited, matrix)
+	bfs(aqueue, avisited, matrix)
+
+	res := [][]int{}
+	for i, row := range matrix {
+		for j, _ := range row {
+			if pvisited[i][j] && avisited[i][j] {
+				res = append(res, []int{i, j})
+			}
+		}
+	}
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

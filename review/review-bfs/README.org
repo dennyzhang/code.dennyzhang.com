@@ -13,10 +13,12 @@ Here we try to compile a list of inspiring BFS problems.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-bfs"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-| Name                    | Example |
-|-------------------------+---------|
-| bfs: level=0 vs level=1 |         |
-| bfs with priority queue |         |
+| Name                                                                  | Example                                |
+|-----------------------------------------------------------------------+----------------------------------------|
+| bfs: level=0 vs level=1                                               |                                        |
+| bfs with priority queue                                               |                                        |
+| Understand the physical meaning of level                              | [[https://code.dennyzhang.com/as-far-from-land-as-possible][Leetcode: As Far from Land as Possible]] |
+| If original grid can be changed, visited bool array might be optional | [[https://code.dennyzhang.com/as-far-from-land-as-possible][Leetcode: As Far from Land as Possible]] |
 
 *Code Skeleton*
 #+BEGIN_SRC go

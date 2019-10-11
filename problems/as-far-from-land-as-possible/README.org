@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     graph
 :END:
 ---------------------------------------------------------------------
 As Far from Land as Possible
@@ -12,7 +12,7 @@ As Far from Land as Possible
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
 ---------------------------------------------------------------------
 Given an N x N grid containing only values 0 and 1, where 0 represents water and 1 represents land, find a water cell such that its distance to the nearest land cell is maximized and return the distance.
 
@@ -21,7 +21,7 @@ The distance used in this problem is the Manhattan distance: the distance betwee
 If no land or water exists in the grid, return -1.
 
 Example 1:
-[[image-blog:Leetcode: As Far from Land as Possible][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/as-far-from-land-as-possible/1.jpg]]
+[[image-blog:Leetcode: As Far from Land as Possible][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/as-far-from-land-as-possible/my1.jpg]]
 #+BEGIN_EXAMPLE
 Input: [[1,0,1],[0,0,0],[1,0,1]]
 Output: 2
@@ -30,7 +30,7 @@ The cell (1, 1) is as far as possible from all the land with distance 2.
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Leetcode: As Far from Land as Possible][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/as-far-from-land-as-possible/2.jpg]]
+[[image-blog:Leetcode: As Far from Land as Possible][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/as-far-from-land-as-possible/my2.jpg]]
 #+BEGIN_EXAMPLE
 Input: [[1,0,0],[0,0,0],[0,0,0]]
 Output: 4
@@ -53,7 +53,45 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/as-far-from-land-as-possible
-
+// Basic Ideas: BFS
+//  BFS from all 1s to 0s.
+//  Stop when no 0s positions to be examined
+// Complexity: Time O(n*m), Space O(n*m)
+func maxDistance(grid [][]int) int {
+    queue := [][]int{}
+    for i, row := range grid {
+        for j, v := range row {
+            if v == 1 {
+                queue = append(queue, []int{i, j})
+            }
+        }
+    }
+    // all nodes are 1
+    if len(queue) == len(grid)*len(grid[0]) {
+        return -1
+    }
+    level := 0
+    for len(queue) > 0 {
+        nexts := [][]int{}
+        for _, node := range queue {
+            i, j := node[0], node[1]
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
+                                           []int{0, 1}, []int{0, -1}} {
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2<0 || i2>=len(grid) || 
+                        j2<0 || j2>=len(grid[0]) || grid[i2][j2] == 1 {
+                    continue
+                }
+                grid[i2][j2] = 1
+                nexts = append(nexts, []int{i2, j2})
+            }
+        }
+        level++
+        queue = nexts
+    }
+    // the last level is empty
+    return level-1
+}
 #+END_SRC
 
 #+BEGIN_HTML
