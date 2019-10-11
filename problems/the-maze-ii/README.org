@@ -21,7 +21,7 @@ Given the ball's start position, the destination and the maze, find the shortest
 The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The start and destination coordinates are represented by row and column indexes.
 
 Example 1:
-[[image-blog:Leetcode: The Maze II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/the-maze-ii/maze_1.png]]
+[[image-blog:Leetcode: The Maze II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/the-maze-ii/1.png]]
 #+BEGIN_EXAMPLE
 Input 1: a maze represented by a 2D array
 
@@ -41,7 +41,7 @@ Explanation: One shortest way is : left -> down -> left -> down -> right -> down
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Leetcode: The Maze II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/the-maze-ii/maze_2.png]]
+[[image-blog:Leetcode: The Maze II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/the-maze-ii/2.png]]
 #+BEGIN_EXAMPLE
 Input 1: a maze represented by a 2D array
 

@@ -1,0 +1,65 @@
+* Leetcode: As Far from Land as Possible                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+As Far from Land as Possible
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/as-far-from-land-as-possible"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given an N x N grid containing only values 0 and 1, where 0 represents water and 1 represents land, find a water cell such that its distance to the nearest land cell is maximized and return the distance.
+
+The distance used in this problem is the Manhattan distance: the distance between two cells (x0, y0) and (x1, y1) is |x0 - x1| + |y0 - y1|.
+
+If no land or water exists in the grid, return -1.
+
+Example 1:
+[[image-blog:Leetcode: As Far from Land as Possible][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/as-far-from-land-as-possible/1.jpg]]
+#+BEGIN_EXAMPLE
+Input: [[1,0,1],[0,0,0],[1,0,1]]
+Output: 2
+Explanation: 
+The cell (1, 1) is as far as possible from all the land with distance 2.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Leetcode: As Far from Land as Possible][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/as-far-from-land-as-possible/2.jpg]]
+#+BEGIN_EXAMPLE
+Input: [[1,0,0],[0,0,0],[0,0,0]]
+Output: 4
+Explanation: 
+The cell (2, 2) is as far as possible from all the land with distance 4.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= grid.length == grid[0].length <= 100
+- grid[i][j] is 0 or 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/as-far-from-land-as-possible][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/as-far-from-land-as-possible/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/as-far-from-land-as-possible
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
