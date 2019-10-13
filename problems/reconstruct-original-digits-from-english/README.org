@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
 - [[https://code.dennyzhang.com/integer-to-english-words][Integer to English Words]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/review-string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-math][math]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given a non-empty string containing an out-of-order English representation of digits 0-9, output the digits in ascending order.
 

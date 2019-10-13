@@ -1,0 +1,149 @@
+* Leetcode: Koko Eating Bananas                                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarysearch, monotonicfunc
+:END:
+---------------------------------------------------------------------
+Koko Eating Bananas
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/koko-eating-bananas"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/monotonicfunc][#monotonicfunc]]
+---------------------------------------------------------------------
+Koko loves to eat bananas.  There are N piles of bananas, the i-th pile has piles[i] bananas.  The guards have gone and will come back in H hours.
+
+Koko can decide her bananas-per-hour eating speed of K.  Each hour, she chooses some pile of bananas, and eats K bananas from that pile.  If the pile has less than K bananas, she eats all of them instead, and won't eat any more bananas during this hour.
+
+Koko likes to eat slowly, but still wants to finish eating all the bananas before the guards come back.
+
+Return the minimum integer K such that she can eat all the bananas within H hours.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: piles = [3,6,7,11], H = 8
+Output: 4
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: piles = [30,11,23,4,20], H = 5
+Output: 30
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: piles = [30,11,23,4,20], H = 6
+Output: 23
+#+END_EXAMPLE
+ 
+Note:
+
+- 1 <= piles.length <= 10^4
+- piles.length <= H <= 10^9
+- 1 <= piles[i] <= 10^9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/koko-eating-bananas][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/koko-eating-bananas/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/koko-eating-bananas
+// Basic Ideas: binary search
+//  Monotonic function: the more it eats, the less hours it takes.
+//
+//  Notice: how koko would choose piles to eat bananas?
+//      Koko can not easy more than one pile each time
+//
+//  The range of the speed is in [1, max(piles)]
+// Complexity: Time O(n*log(n)), Space O(1)
+func canEat(piles []int, H int, speed int) bool {
+    hours := 0
+    // each time choose one pile
+    for _, v := range piles {
+        hours += (v-1)/speed+1
+    }
+    return hours <= H
+}
+
+func minEatingSpeed(piles []int, H int) int {
+    max := 0
+    for _, v := range piles {
+        if v > max {
+            max = v
+        }
+    }
+    left, right := 1, max
+    // N, N, N, Y, Y, Y
+    for left < right {
+        mid := (right-left)/2 + left
+        if canEat(piles, H, mid) {
+            right = mid
+        } else {
+            left = mid+1
+        }
+    }
+    return left
+}
+#+END_SRC
+
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/koko-eating-bananas
+// Basic Ideas: binary search
+//  Monotonic function: the more it eats, the less hours it takes.
+//
+//  Notice: how koko would choose piles to eat bananas?
+//      Koko can not easy more than one pile each time
+//
+//  The range of the speed is in [1, max(piles)]
+// Complexity: Time O(n*log(n)), Space O(1)
+func canEat(piles []int, H int, speed int) bool {
+    hours := 0
+    // each time choose one pile
+    for _, v := range piles {
+        hours += v/speed
+        remain := v%speed
+        if remain >0 {
+            hours++
+        }
+    }
+    return hours <= H
+}
+
+func minEatingSpeed(piles []int, H int) int {
+    max := 0
+    for _, v := range piles {
+        if v > max {
+            max = v
+        }
+    }
+    left, right := 1, max
+    // N, N, N, Y, Y, Y
+    for left < right {
+        mid := (right-left)/2 + left
+        if canEat(piles, H, mid) {
+            right = mid
+        } else {
+            left = mid+1
+        }
+    }
+    return left
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,0 +1,115 @@
+* Leetcode: Parallel Courses                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     topologicalsort, bfs
+:END:
+---------------------------------------------------------------------
+Parallel Courses
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/parallel-courses"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
+---------------------------------------------------------------------
+There are N courses, labelled from 1 to N.
+
+We are given relations[i] = [X, Y], representing a prerequisite relationship between course X and course Y: course X has to be studied before course Y.
+
+In one semester you can study any number of courses as long as you have studied all the prerequisites for the course you are studying.
+
+Return the minimum number of semesters needed to study all courses.  If there is no way to study all the courses, return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: N = 3, relations = [[1,3],[2,3]]
+Output: 2
+Explanation: 
+In the first semester, courses 1 and 2 are studied. In the second semester, course 3 is studied.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: N = 3, relations = [[1,2],[2,3],[3,1]]
+Output: -1
+Explanation: 
+No course can be studied because they depend on each other.
+#+END_EXAMPLE 
+
+Note:
+
+1. 1 <= N <= 5000
+- 1 <= relations.length <= 5000
+- relations[i][0] != relations[i][1]
+- There are no repeated relations in the input.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/parallel-courses][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/parallel-courses/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/parallel-courses
+// Basic Ideas: topologicalsort + bfs
+//
+//  Design algorithm:
+//    Build degrees for each nodes
+//    BFS starts with 0 degrees
+//
+//  When queue is empty, it stops
+//  If we haven't visited all nodes, the graph has circles
+// Complexity: Time O(v+e), Space O(v+e)
+func minimumSemesters(N int, relations [][]int) int {
+    // there are no duplicate edges
+    edges := make([][]int, N) // 1->3, 1->2
+    for i, _ := range edges {
+        edges[i] = []int{}
+    }
+    indegrees := make([]int, N)
+    for _, edge := range relations {
+        n1, n2 := edge[0]-1, edge[1]-1
+        edges[n1] = append(edges[n1], n2)
+        indegrees[n2]++
+    }
+    level := 0
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+        }
+    }
+    for len(queue)>0 {
+        nexts := []int{}
+        for _, n1 := range queue {
+            for _, n2 := range edges[n1] {
+                indegrees[n2]--
+                if indegrees[n2] == 0 {
+                    nexts = append(nexts, n2)
+                }
+            }
+        }
+        queue = nexts
+        level++
+    }
+    // check whether there are nodes not visited
+    for _, v := range indegrees {
+        if v != 0 {
+            return -1
+        }
+    }
+    return level
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

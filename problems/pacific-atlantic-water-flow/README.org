@@ -49,7 +49,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 #+BEGIN_SRC go
-// https://code.dennyzhang.com/pacific-atlantic-water-flo
+// https://code.dennyzhang.com/pacific-atlantic-water-flow
 // Basic Ideas: BFS
 //
 //   Pacific is two edges, not one point!

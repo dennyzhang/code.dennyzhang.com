@@ -1,0 +1,175 @@
+* Leetcode: Capacity To Ship Packages Within D Days             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarysearch, monotonicfunc
+:END:
+---------------------------------------------------------------------
+Capacity To Ship Packages Within D Days
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/capacity-to-ship-packages-within-d-days"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/monotonicfunc][#monotonicfunc]]
+---------------------------------------------------------------------
+A conveyor belt has packages that must be shipped from one port to another within D days.
+
+The i-th package on the conveyor belt has a weight of weights[i].  Each day, we load the ship with packages on the conveyor belt (in the order given by weights). We may not load more weight than the maximum weight capacity of the ship.
+
+Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within D days.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: weights = [1,2,3,4,5,6,7,8,9,10], D = 5
+Output: 15
+Explanation: 
+A ship capacity of 15 is the minimum to ship all the packages in 5 days like this:
+1st day: 1, 2, 3, 4, 5
+2nd day: 6, 7
+3rd day: 8
+4th day: 9
+5th day: 10
+
+Note that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed. 
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: weights = [3,2,2,4,1,4], D = 3
+Output: 6
+Explanation: 
+A ship capacity of 6 is the minimum to ship all the packages in 3 days like this:
+1st day: 3, 2
+2nd day: 2, 4
+3rd day: 1, 4
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: weights = [1,2,3,1,1], D = 4
+Output: 3
+Explanation: 
+1st day: 1
+2nd day: 2
+3rd day: 3
+4th day: 1, 1
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= D <= weights.length <= 50000
+- 1 <= weights[i] <= 500
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/capacity-to-ship-packages-within-d-days][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: binarysearch + left is maxNum
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/capacity-to-ship-packages-within-d-days
+// Basic Ideas: binarysearch
+//  Monotonic function: 
+//   The more capacity, the more likely it can ship within D days
+// Complexity: Time O(n*log(n)), Space O(1)
+func canShip(weights []int, capacity int, D int) bool {
+    days := 1
+    sum := 0
+    for _, w := range weights {
+        // Check whether need a new group
+        sum += w
+        if sum > capacity {
+            days++
+            sum = w
+        }
+        if days > D {
+            return false
+        }
+    }
+    return true
+}
+
+func shipWithinDays(weights []int, D int) int {
+    sum, maxNum := 0, 0
+    for _, w := range weights {
+        sum += w
+        if w > maxNum {
+            maxNum = w
+        }
+    }
+    left := maxNum
+    right := sum
+    // N, N, N, Y, Y
+    for left<right {
+        mid := (right-left)/2 + left
+        // Is true
+        if canShip(weights, mid, D) {
+            right = mid
+        } else {
+            left = mid+1
+        }
+    }
+    // there is always one answer
+    return left
+}
+#+END_SRC
+
+- Solution: binarysearch + left is avgNum
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/capacity-to-ship-packages-within-d-days
+// Basic Ideas: binarysearch
+//  Monotonic function: 
+//   The more capacity, the more likely it can ship within D days
+// Complexity: Time O(n*log(n)), Space O(1)
+func canShip(weights []int, capacity int, D int) bool {
+    days := 1
+    sum := 0
+    for _, w := range weights {
+        if w > capacity {
+            return false
+        }
+        // Check whether need a new group
+        if sum + w > capacity {
+            days++
+            sum = w
+        } else {
+            sum += w
+        }
+    }
+    return days <= D
+}
+
+func shipWithinDays(weights []int, D int) int {
+    sum := 0
+    for _, w := range weights {
+        sum += w
+    }
+    left := sum/D
+    right := sum
+    // N, N, N, Y, Y
+    for left<right {
+        mid := (right-left)/2 + left
+        // Is true
+        if canShip(weights, mid, D) {
+            right = mid
+        } else {
+            left = mid+1
+        }
+    }
+    // there is always one answer
+    return left
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

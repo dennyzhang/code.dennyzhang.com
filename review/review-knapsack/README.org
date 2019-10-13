@@ -12,6 +12,17 @@ Review knapsack code problems
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
+*Basic Abstractions*
+| Name                                                  | Summary                                                     |
+|-------------------------------------------------------+-------------------------------------------------------------|
+| 0/1 Knapsack                                          | You either choose or not                                    |
+| Knapsack with repetition or called Unbounded Knapsack | Unbonded problems may be converted to 0/1 knapsack problems |
+
+*Questions*
+| Name | Example |
+|------+---------|
+|      |         |
+
 See all knapsack problems: [[https://code.dennyzhang.com/tag/knapsack/][#knapsack]]
 [display-posts tag="knapsack" posts_per_page="100" orderby="title"]
 
@@ -25,6 +36,7 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 </div>
 #+END_HTML
 ** misc                                                            :noexport:
+https://zxi.mytechroad.com/blog/tag/knapsack/
 https://en.wikipedia.org/wiki/Knapsack_problem
 https://www.geeksforgeeks.org/knapsack-problem/
 http://www.es.ele.tue.nl/education/5MC10/Solutions/knapsack.pdf

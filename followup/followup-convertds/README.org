@@ -12,6 +12,13 @@ Convert Data Structure problems
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
+*Questions*
+| Name                                                                    | Example |
+|-------------------------------------------------------------------------+---------|
+| Implement a queue supporting enqueue, dequeue and findmax operations    |         |
+| Implement a stack supporting push, pop, getmin, getavg, getmostfrequent |         |
+| Implement a queue using two stacks                                      |         |
+
 See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
 [display-posts tag="convertds" posts_per_page="100" orderby="title"]
 

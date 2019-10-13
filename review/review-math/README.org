@@ -12,7 +12,7 @@ Review Math code problems
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
-See all math problems: [[https://code.dennyzhang.com/tag/math/][#math]]
+See all math problems: [[https://code.dennyzhang.com/review-math/][#math]]
 [display-posts tag="math" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

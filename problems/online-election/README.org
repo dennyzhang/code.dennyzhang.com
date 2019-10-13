@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     binarysearch
 :END:
 ---------------------------------------------------------------------
 Online Election
@@ -12,7 +12,7 @@ Online Election
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 In an election, the i-th vote was cast for persons[i] at time times[i].
 
@@ -47,24 +47,60 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/online-election
+// Basic Ideas: binarysearch
+//  candidates[n]: get the top voted candidate for the given timestamp
+// Complexity: Time O(log(n)), Space O(n)
+type TopVotedCandidate struct {
+    persons []int
+    times []int
+    candidates []int
+}
 
+func Constructor(persons []int, times []int) TopVotedCandidate {
+    candidates := make([]int, len(persons))
+    m := map[int]int{}
+    index := 0
+    for i, p := range persons {
+        m[p]++
+        if m[p] >= m[persons[index]] {
+            index = i
+        }
+        candidates[i] = persons[index]
+    }
+    return TopVotedCandidate{persons:persons, times:times, candidates:candidates}
+}
+
+
+func (this *TopVotedCandidate) Q(t int) int {
+    // binarysearch: search insert location
+    left, right := 0, len(this.times)-1
+    // 0, 5, 10, 15, 20; 12
+    for left<right {
+        mid := (right-left)/2+left
+        if this.times[mid] == t {
+            return this.candidates[mid]
+        }
+        if this.times[mid] > t {
+            // left half
+            right = mid
+        } else {
+            left = mid+1
+        }
+    }
+    if this.times[left] <= t {
+        return this.candidates[left]
+    } else {
+        return this.candidates[left-1]
+    }
+}
+
+/**
+ * Your TopVotedCandidate object will be instantiated and called as such:
+ * obj := Constructor(persons, times);
+ * param_1 := obj.Q(t);
+ */
 #+END_SRC
 
 #+BEGIN_HTML

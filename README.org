@@ -93,10 +93,10 @@ for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "READM
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/interval\]\[#interval\]\]!\[\[https://code.dennyzhang.com/review-interval\]\[#interval\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/linkedlist\]\[#linkedlist\]\]!\[\[https://code.dennyzhang.com/review-linkedlist\]\[#linkedlist\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/manydetails\]\[#manydetails\]\]!\[\[https://code.dennyzhang.com/review-manydetails\]\[#manydetails\]\]!g' $f
-    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/math\]\[#math\]\]!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/median\]\[#median\]\]!\[\[https://code.dennyzhang.com/review-median\]\[#median\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/minmax\]\[#minmax\]\]!\[\[https://code.dennyzhang.com/review-minmax\]\[#minmax\]\]!g' $f
-    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/math\]\[#math\]\]!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!\[\[https://code.dennyzhang.com/review-math\]\[#math\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/mod\]\[#mod\]\]!\[\[https://code.dennyzhang.com/review-mod\]\[#mod\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/oodesign\]\[#oodesign\]\]!\[\[https://code.dennyzhang.com/review-oodesign\]\[#oodesign\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/palindrome\]\[#palindrome\]\]!\[\[https://code.dennyzhang.com/review-palindrome\]\[#palindrome\]\]!g' $f

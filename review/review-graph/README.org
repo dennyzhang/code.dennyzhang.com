@@ -12,11 +12,16 @@ Graph related questions mainly focus on depth first search and breath first sear
 #+END_HTML
 
 *Basic Abstractions*
-| Name                                         | Summary                                 |
-|----------------------------------------------+-----------------------------------------|
-| bfs and dfs relationship                     | [[https://code.dennyzhang.com/word-ladder-ii][Leetcode: Word Ladder II]]                |
-| From BFS to Bidirectional BFS                | Half of the time. [[https://code.dennyzhang.com/word-ladder][Leetcode: Word Ladder]] |
-| 3 cases: state is invalid/visited/unexamined | [[https://code.dennyzhang.com/word-ladder][Leetcode: Word Ladder]]                   |
+| Name                                         | Summary                                                    |
+|----------------------------------------------+------------------------------------------------------------|
+| bfs and dfs relationship                     | [[https://code.dennyzhang.com/word-ladder-ii][Leetcode: Word Ladder II]]                                   |
+| From BFS to Bidirectional BFS                | Half of the time. [[https://code.dennyzhang.com/word-ladder][Leetcode: Word Ladder]]                    |
+| 3 cases: state is invalid/visited/unexamined | [[https://code.dennyzhang.com/word-ladder][Leetcode: Word Ladder]]                                      |
+|----------------------------------------------+------------------------------------------------------------|
+| Bridge                                       | Bridge is an edge, when removed, will disconnect the graph |
+| Duplicate edge                               |                                                            |
+| Cycle in undirected graphs                   |                                                            |
+| Cycle in DAG                                 | [[https://code.dennyzhang.com/redundant-connection-ii][Leetcode: Redundant Connection II]]                          |
 
 *Questions*
 | Name                                                                  | Example                                       |
@@ -25,6 +30,7 @@ Graph related questions mainly focus on depth first search and breath first sear
 | [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]]: [[https://en.wikipedia.org/wiki/Minimum_spanning_tree][Minimum spanning tree]] of a weighted graph        | [[https://code.dennyzhang.com/connecting-cities-with-minimum-cost][Leetcode: Connecting Cities With Minimum Cost]] |
 | [[https://en.wikipedia.org/wiki/Dijkstra's_algorithm][Dijkstra's algorithm]]: shortest path for two nodes in a weighted graph |                                               |
 | [[https://en.wikipedia.org/wiki/Floyd-Warshall_algorithm][Floyd-Warshall algorithm]]: find shortest paths in a weighted graph     |                                               |
+| Move in different directions: 4 directions, 8 directions              | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][Leetcode: Queens That Can Attack the King]]     |
 | Keep moving in the same direction                                     | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][Leetcode: Queens That Can Attack the King]]     |
 
 Floyd-Warshall algorithm: Time O(n*n*n)
@@ -38,6 +44,52 @@ BFS/DFS/UnionFind; Binarysearch
 3. What if we want all possible answers, instead of the min step count?
 #+END_EXAMPLE
 
+- Move in 4 directions
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/as-far-from-land-as-possible
+// ...
+    for len(queue) > 0 {
+        nexts := [][]int{}
+        for _, node := range queue {
+            i, j := node[0], node[1]
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
+                                           []int{0, 1}, []int{0, -1}} {
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2<0 || i2>=len(grid) || 
+                        j2<0 || j2>=len(grid[0]) || grid[i2][j2] == 1 {
+                    continue
+                }
+                grid[i2][j2] = 1
+                nexts = append(nexts, []int{i2, j2})
+            }
+        }
+        level++
+        queue = nexts
+    }
+#+END_SRC
+
+- Move in 9 directions
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/queens-that-can-attack-the-king
+// ...
+    i, j := king[0], king[1]
+    for x:=-1; x<=1; x++ {
+        for y:=-1; y<=1; y++ {
+            if x==0 && y==0 {
+                continue
+            }
+            // keep searching this direction
+            i2, j2 := i+x, j+y
+            for i2>=0 && i2<8 && j2>=0 && j2<8 {
+                if m[[2]int{i2,j2}] {
+                    res = append(res, []int{i2, j2})
+                    break
+                }
+                i2, j2 = i2+x, j2+y
+            }
+        }
+    }
+#+END_SRC
 Questions:
 
 1. Why so many algorithms to find the shortest path? Shouldn't it be some optimal one(s)?
@@ -67,14 +119,13 @@ Key points:
 The most impressive problems to me:
 - [[https://code.dennyzhang.com/perfect-squares][Perfect Squares]]
 - [[https://code.dennyzhang.com/island-perimeter][Island Perimeter]]
-- [[https://code.dennyzhang.com/surrounded-regions][Surrounded Regions]]
 - [[https://code.dennyzhang.com/swim-in-rising-water][Swim in Rising Water]]
 
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
-See all grap problems: [[https://code.dennyzhang.com/tag/graph/][#grap]]
-[display-posts tag="grap" posts_per_page="100" orderby="title"]
+See all grap problems: [[https://code.dennyzhang.com/tag/graph/][#graph]]
+[display-posts tag="graph" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

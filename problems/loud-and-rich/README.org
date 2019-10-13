@@ -1,0 +1,248 @@
+* Leetcode: Loud and Rich                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     topologicalsort
+:END:
+---------------------------------------------------------------------
+Loud and Rich
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/loud-and-rich"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]]
+---------------------------------------------------------------------
+In a group of N people (labelled 0, 1, 2, ..., N-1), each person has different amounts of money, and different levels of quietness.
+
+For convenience, we'll call the person with label x, simply "person x".
+
+We'll say that richer[i] = [x, y] if person x definitely has more money than person y.  Note that richer may only be a subset of valid observations.
+
+Also, we'll say quiet[x] = q if person x has quietness q.
+
+Now, return answer, where answer[x] = y if y is the least quiet person (that is, the person y with the smallest value of quiet[y]), among all people who definitely have equal to or more money than person x.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: richer = [[1,0],[2,1],[3,1],[3,7],[4,3],[5,3],[6,3]], quiet = [3,2,5,4,6,1,7,0]
+Output: [5,5,2,5,4,5,6,7]
+Explanation: 
+answer[0] = 5.
+Person 5 has more money than 3, which has more money than 1, which has more money than 0.
+The only person who is quieter (has lower quiet[x]) is person 7, but
+it isn't clear if they have more money than person 0.
+
+answer[7] = 7.
+Among all people that definitely have equal to or more money than person 7
+(which could be persons 3, 4, 5, 6, or 7), the person who is the quietest (has lower quiet[x])
+is person 7.
+
+The other answers can be filled out with similar reasoning.
+#+END_EXAMPLE
+
+Note:
+
+1. 1 <= quiet.length = N <= 500
+- 0 <= quiet[i] < N, all quiet[i] are different.
+- 0 <= richer.length <= N * (N-1) / 2
+- 0 <= richer[i][j] < N
+- richer[i][0] != richer[i][1]
+- richer[i]'s are all different.
+- The observations in richer are all logically consistent.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/loud-and-rich][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/loud-and-rich/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: topologicalsort + edges as hashmap
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/loud-and-rich
+// Basic Ideas: topological sort
+//
+// Algorithm Design:
+//  From the richest people, himself/herself would be the answer
+//  When it goes to the next level, people become less rich, 
+//    the value of quiet will keep decreasing or same as prevoius.
+//
+// Clarification
+//   There would be no cycles or duplicate edges  
+//
+// Complexity: Time O(v+e), Space O(v+e)
+func loudAndRich(richer [][]int, quiet []int) []int {
+    edges := make([]map[int]bool, len(quiet))
+    for i, _ := range edges {
+        edges[i] = map[int]bool{}
+    }
+    indegrees := make([]int, len(quiet))
+    for _, edge := range richer {
+        n1, n2 := edge[0], edge[1]
+        if !edges[n1][n2] {
+            edges[n1][n2] = true
+            indegrees[n2]++
+        }
+    }
+    res := make([]int, len(quiet))
+    // start with itself first
+    for i, _ := range res {
+        res[i] = i
+    }
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+            // no need to collect result for the first level
+            // res[i] = i
+        }
+    }
+    for len(queue) > 0 {
+        nexts := []int{}
+        for _, n1 := range queue {
+            for n2, _ := range edges[n1]{
+                indegrees[n2]--
+                // need to update
+                if quiet[res[n2]]>quiet[res[n1]] {
+                    res[n2] = res[n1]
+                }
+                if indegrees[n2] == 0 {
+                    nexts = append(nexts, n2)
+                }
+            }
+        }
+        queue = nexts
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: topologicalsort + edges as [n][]int
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/loud-and-rich
+// Basic Ideas: topological sort
+//
+// Algorithm Design:
+//  From the richest people, himself/herself would be the answer
+//  When it goes to the next level, people become less rich, 
+//    the value of quiet will keep decreasing or same as prevoius.
+//
+// Clarification
+//   There would be no cycles or duplicate edges  
+//
+// Complexity: Time O(v+e), Space O(v+e)
+func loudAndRich(richer [][]int, quiet []int) []int {
+    edges := make([][]int, len(quiet))
+    for i, _ := range edges {
+        edges[i] = []int{}
+    }
+    indegrees := make([]int, len(quiet))
+    for _, edge := range richer {
+        n1, n2 := edge[0], edge[1]
+        edges[n1] = append(edges[n1], n2)
+        indegrees[n2]++
+    }
+    res := make([]int, len(quiet))
+    // start with itself first
+    for i, _ := range res {
+        res[i] = i
+    }
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+            // no need to collect result for the first level
+            // res[i] = i
+        }
+    }
+    for len(queue) > 0 {
+        nexts := []int{}
+        for _, n1 := range queue {
+            for _, n2 := range edges[n1]{
+              indegrees[n2]--
+                // need to update
+                if quiet[res[n2]]>quiet[res[n1]] {
+                    res[n2] = res[n1]
+                }
+                if indegrees[n2] == 0 {
+                    nexts = append(nexts, n2)
+                }
+            }
+        }
+        queue = nexts
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: topologicalsort + edges as [n][n]bool
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/loud-and-rich
+// Basic Ideas: topological sort
+//
+// Algorithm Design:
+//  From the richest people, himself/herself would be the answer
+//  When it goes to the next level, people become less rich, 
+//    the value of quiet will keep decreasing or same as prevoius.
+//
+// Clarification
+//   There would be no cycles or duplicate edges  
+//
+// Complexity: Time O(v+e), Space O(v*v+e)
+func loudAndRich(richer [][]int, quiet []int) []int {
+    edges := make([][]bool, len(quiet))
+    for i, _ := range edges {
+        edges[i] = make([]bool, len(quiet))
+    }
+    indegrees := make([]int, len(quiet))
+    for _, edge := range richer {
+        n1, n2 := edge[0], edge[1]
+        if !edges[n1][n2] {
+            edges[n1][n2] = true
+            indegrees[n2]++
+        }
+    }
+    res := make([]int, len(quiet))
+    // start with itself first
+    for i, _ := range res {
+        res[i] = i
+    }
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+            // no need to collect result for the first level
+            // res[i] = i
+        }
+    }
+    for len(queue) > 0 {
+        nexts := []int{}
+        for _, n1 := range queue {
+            for n2, b := range edges[n1]{
+                if b {
+                  indegrees[n2]--
+                    // need to update
+                    if quiet[res[n2]]>quiet[res[n1]] {
+                        res[n2] = res[n1]
+                    }
+                    if indegrees[n2] == 0 {
+                        nexts = append(nexts, n2)
+                    }  
+                }
+            }
+        }
+        queue = nexts
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

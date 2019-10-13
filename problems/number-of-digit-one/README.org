@@ -13,7 +13,7 @@ Number of Digit One
 Similar Problems:
 - [[https://code.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/tag/combination][combination]]
+- Tag: [[https://code.dennyzhang.com/review-math][math]], [[https://code.dennyzhang.com/tag/combination][combination]]
 ---------------------------------------------------------------------
 Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 

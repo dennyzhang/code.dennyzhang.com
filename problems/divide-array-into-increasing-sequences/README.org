@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, inspiring
+:type:     game, inspiring, greedy, splitarray
 :END:
 ---------------------------------------------------------------------
 Divide Array Into Increasing Sequences
@@ -11,8 +11,9 @@ Divide Array Into Increasing Sequences
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/divide-array-into-increasing-sequences"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Leetcode: Split Array into Consecutive Subsequences]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/followup-splitarray][#splitarray]]
 ---------------------------------------------------------------------
 Given a non-decreasing array of positive integers nums and an integer K, find out if this array can be divided into one or more disjoint increasing subsequences of length at least K.
 
@@ -44,26 +45,79 @@ Credits To: [[https://leetcode.com/problems/divide-array-into-increasing-sequenc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution: greedy + get count of max frequency. O(n) time + O(1) space
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/divide-array-into-increasing-sequences
+// Basic Ideas: Greedy
+//
+//  Design algorithm
+//
+//  Find the count of most frequent number, say m
+//  We try to compose m subsequences.
+//  If len(nums) >= m*K, we can always build up the subsequence 
+//        One way is avoiding putting the same number into one subsequence
+//  Otherwise, it's impossible
+//
+// Complexity: Time O(n), Space O(1)
+// Basic Ideas: Greedy
+//
+//  Design algorithm
+//
+//  Find the count of most frequent number, say m
+//  We try to compose m subsequences.
+//  If len(nums) >= m*K, we can always build up the subsequence 
+//        One way is avoiding putting the same number into one subsequence
+//  Otherwise, it's impossible
+//
+// Complexity: Time O(n), Space O(1)
+func canDivideIntoSubsequences(nums []int, K int) bool {
+    maxFreq := 1
+    freq := 1
+    for i:=1; i<len(nums); i++ {
+        if nums[i] > nums[i-1] {
+            // a new group
+            freq = 1
+        } else {
+            // existing groups
+            if nums[i] == nums[i-1] {
+                freq++
+            }
+        }
+        if freq > maxFreq {
+            maxFreq = freq
+        }
+    }
+    return len(nums) >= maxFreq*K
+}
+#+END_SRC
 
+- Solution: greedy + get count of max frequency. O(n) time + O(n) space
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/divide-array-into-increasing-sequences
+// Basic Ideas: Greedy
+//
+//  Design algorithm
+//
+//  Find the count of most frequent number, say m
+//  We try to compose m subsequences.
+//  If len(nums) >= m*K, we can always build up the subsequence 
+//        One way is avoiding putting the same number into one subsequence
+//  Otherwise, it's impossible
+//
+// Complexity: Time O(n), Space O(n)
+func canDivideIntoSubsequences(nums []int, K int) bool {
+    freqs := map[int]int{}
+    maxFreq := 0
+    for _, v := range nums {
+        freqs[v]++
+        if freqs[v] > maxFreq {
+            maxFreq = freqs[v]
+        }
+    }
+    return len(nums) >= maxFreq*K
+}
 #+END_SRC
 
 #+BEGIN_HTML

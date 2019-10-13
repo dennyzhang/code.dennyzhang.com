@@ -26,11 +26,13 @@ Topological Sort Problems
 |------------------------------------------------------------------------------+-------------------------------------------------------|
 | Time complexity should be O(n+e)                                             | O(n^2) would work, but not optimal                    |
 | Indegrees as a list of 0s might troublesome                                  | Use hashmap instead [[https://code.dennyzhang.com/sequence-reconstruction][Leetcode: Sequence Reconstruction]] |
+| What if duplicate edges would be given                                       | For edges datastructure, use hashmap instead of list  |
 | Common Mistake: Missing characters without incoming edges                    | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
 | Common Mistake: Avoid updating indegrees repetitively for duplicate edges    | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
 | Common Mistake: in dfs implementation, process 0-degree nodes multiple times | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
 | Topoloical sort: How to return all possible orders, instead of any one?      |                                                       |
 | Longest path in a DAG without circle                                         | [[https://code.dennyzhang.com/longest-increasing-path-in-a-matrix][Leetcode: Longest Increasing Path in a Matrix]]         |
+| For nodes in connections, in the form of intergers or strings?               |                                                       |
 
 *Code Skeleton*
 

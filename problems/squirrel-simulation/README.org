@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, array
 :END:
 ---------------------------------------------------------------------
 Squirrel Simulation
@@ -12,7 +12,7 @@ Squirrel Simulation
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/math][math]]
+- Tag: [[https://code.dennyzhang.com/review-math][math]], [[https://code.dennyzhang.com/tag/array][array]]
 ---------------------------------------------------------------------
 There's a tree, a squirrel, and several nuts. Positions are represented by the cells in a 2D grid. Your goal is to find the minimal distance for the squirrel to collect all the nuts and put them under the tree one by one. The squirrel can only take at most one nut at one time and can move in four directions - up, down, left and right, to the adjacent cell. The distance is represented by the number of moves.
 Example 1:
@@ -42,26 +42,120 @@ Credits To: [[https://leetcode.com/problems/squirrel-simulation/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
+- Solution: math
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/squirrel-simulation
+// Basic Ideas: math
+//
+// The squirrel will pick one nut, go to the tree.
+// Then pick all other nuts.
+//
+// So the final result would be: D+d2-d1
+//  D = 2*sum((distance from tree to all nuts)
+//  d2 (from the nut to squirrel), d1 (from the same nut to tree)
+// Complexity: Time O(n), Space O(1)
+func getDis(node1 []int, node2 []int)int {
+    v1 := node1[0]-node2[0]
+    if v1<0 {
+        v1 = -v1
+    }
+    v2 := node1[1]-node2[1]
+    if v2<0 {
+        v2 = -v2
+    }
+    return v1+v2
+}
 
+func minDistance(height int, width int, tree []int, squirrel []int, nuts [][]int) int {
+    res := 0
+    min := 1<<31-1
+    for _, nut := range nuts {
+        res += 2*getDis(nut, tree)
+        // From nut to squirrel and tree
+        v := getDis(nut, squirrel) - getDis(nut, tree)
+        if v<min{
+            min = v
+        }
+    }
+    return res+min
+}
+#+END_SRC
+
+- Solution: BFS
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/squirrel-simulation
+// Basic Ideas: BFS
+//
+// The squirrel will pick one nut, go to the tree.
+// Then pick all other nuts.
+//
+// So the final result would be: D+d2-d1
+//  D = 2*sum((distance from tree to all nuts)
+//  d2 (from the nut to squirrel), d1 (from the same nut to tree)
+//
+// Do 2 rounds of BFS.
+// From tree to all nuts; From squirrel to all nuts
+// Complexity: Time O(n*m), Space O(n*m)
+func getDis(node1 []int, node2 []int)int {
+    v1 := node1[0]-node2[0]
+    if v1<0 {
+        v1 = -v1
+    }
+    v2 := node1[1]-node2[1]
+    if v2<0 {
+        v2 = -v2
+    }
+    return v1+v2
+}
+
+func bfs(start []int, distances map[[2]int]int, height int, width int) {
+    queue := [][]int{start}
+    visited := map[[2]int]bool{}
+    visited[[2]int{start[0], start[1]}] = true
+    level := 0
+    for len(queue) > 0 {
+        nexts := [][]int{}
+        for _, node := range queue {
+            if _, ok := distances[[2]int{node[0], node[1]}]; ok {
+                distances[[2]int{node[0], node[1]}] = level
+            }
+            for _, offset := range [][]int{[]int{0, 1}, []int{0, -1}, 
+                                           []int{1, 0}, []int{-1, 0}} {
+                i2, j2 := node[0]+offset[0], node[1]+offset[1]
+                if i2<0 || i2>=height || j2<0 || j2>=width {
+                    continue
+                }
+                if visited[[2]int{i2, j2}] {
+                    continue
+                }
+                nexts = append(nexts, []int{i2, j2})
+                visited[[2]int{i2, j2}] = true
+            }
+        }
+        level++
+        queue = nexts
+    }
+}
+
+func minDistance(height int, width int, tree []int, squirrel []int, nuts [][]int) int {
+    treeDis := map[[2]int]int{}
+    squirrelDis := map[[2]int]int{}
+    for _, node := range nuts {
+        treeDis[[2]int{node[0], node[1]}] = 0
+        squirrelDis[[2]int{node[0], node[1]}] = 0
+    }
+    bfs(tree, treeDis, height, width)
+    bfs(squirrel, squirrelDis, height, width)
+    res := 0
+    min := 1<<31-1
+    for node, d := range treeDis {
+        res += 2*d
+        if squirrelDis[node]-d < min {
+            min = squirrelDis[node]-d
+        }
+    }
+    return res+min
+}
 #+END_SRC
 
 #+BEGIN_HTML

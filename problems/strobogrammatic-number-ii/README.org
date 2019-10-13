@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/unique-binary-search-trees-ii][Unique Binary Search Trees II]]
 - [[https://code.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/math][math]], [[https://code.dennyzhang.com/review-string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-math][math]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
 

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, classic, combination, redo
+:type:     knapsack, dynamicprogramming, classic, combination, redo
 :END:
 ---------------------------------------------------------------------
 Partition Equal Subset Sum
@@ -13,7 +13,7 @@ Partition Equal Subset Sum
 Similar Problems:
 - [[https://code.dennyzhang.com/partition-to-k-equal-sum-subsets][Partition to K Equal Sum Subsets]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-knapsack][#knapsack]]
 ---------------------------------------------------------------------
 Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
 

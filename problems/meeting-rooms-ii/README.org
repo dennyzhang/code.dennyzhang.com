@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     calendar, overlappinginterval, heap
+:type:     calendar, meetingconflict, heap
 :END:
 ---------------------------------------------------------------------
 Meeting Rooms II
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/car-pooling][Leetcode: Car Pooling]]
 - [[https://code.dennyzhang.com/meeting-rooms][Meeting Rooms]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/tag/overlappinginterval][#overlappinginterval]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
 ---------------------------------------------------------------------
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.
 

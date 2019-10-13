@@ -1,0 +1,79 @@
+* Leetcode: Airplane Seat Assignment Probability                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, math
+:END:
+---------------------------------------------------------------------
+Airplane Seat Assignment Probability
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/airplane-seat-assignment-probability"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-math][#math]]
+---------------------------------------------------------------------
+n passengers board an airplane with exactly n seats. The first passenger has lost the ticket and picks a seat randomly. But after that, the rest of passengers will:
+
+Take their own seat if it is still available, 
+Pick other seats randomly when they find their seat occupied 
+What is the probability that the n-th person can get his own seat?
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 1
+Output: 1.00000
+Explanation: The first person can only get the first seat.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 2
+Output: 0.50000
+Explanation: The second person has a probability of 0.5 to get the second seat (when first person gets the first seat).
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 10^5
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/airplane-seat-assignment-probability][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/airplane-seat-assignment-probability/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/airplane-seat-assignment-probability
+// Basic Ideas: dynamic programming
+//
+//  dp(i) : 
+//   If first one pics seat 1, everyone will be in order: 1/i
+//   If first one pics seat i, no chance
+//   If first one pics any other seat: (i-2)/i
+//      Now we can assume the impacted passenger is expecting to take seat 1
+//      But he/she may or may not take seat 1.
+//      So it falls back to dp(i-1)
+//   To summarize:
+//    dp(i) = 1/i + ((i-2)/i)*dp(i-1)
+// Complexity: Time O(n), Space O(1)
+func nthPersonGetsNthSeat(n int) float64 {
+    v := float64(1)
+    for i:=2; i<=n; i ++ {
+        k := float64(i)
+        v = 1/k+(k-2)*v/k
+    }
+    return v
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
