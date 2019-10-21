@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     dynamicprogramming, multiplechoices, inspiring
 :END:
 ---------------------------------------------------------------------
 Filling Bookcase Shelves
@@ -12,7 +12,7 @@ Filling Bookcase Shelves
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-multiplechoices][#multiplechoices]]
 ---------------------------------------------------------------------
 We have a sequence of books: the i-th book has thickness books[i][0] and height books[i][1].
 
@@ -25,7 +25,7 @@ Note again that at each step of the above process, the order of the books we pla
 Return the minimum possible height that the total bookshelf can be after placing shelves in this manner.
  
 Example 1:
-[[image-blog:Filling Bookcase Shelves][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/filling-bookcase-shelves/shelves.png]]
+[[image-blog:Filling Bookcase Shelves][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/filling-bookcase-shelves/shelves.jpg]]
 #+BEGIN_EXAMPLE
 Input: books = [[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]], shelf_width = 4
 Output: 6
@@ -46,11 +46,79 @@ Credits To: [[https://leetcode.com/problems/filling-bookcase-shelves/description
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: dp with padding element as base condition
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/filling-bookcase-shelves
+// Basic Ideas: dynamic programming
+//
+//  dp(i): min height, with books[i] taken
+//       // new row
+//       // add to previous row
+//
+//  Follow-up: why binarysearch won't work?
+//
+// Complexity: Time O(n*m), Space O(n)
+func minHeightShelves(books [][]int, shelf_width int) int {
+    dp := make([]int, len(books)+1)
+    for i:=1; i<len(dp); i++ {
+        // dp[i] <--> books[i-1]
+        // add to a new row
+        dp[i] = dp[i-1]+books[i-1][1]
+        // add to previous row
+        width, height := books[i-1][0], books[i-1][1]
+        for j:=i-1; j>0 && width+books[j-1][0] <= shelf_width; j-- {
+            width = width+books[j-1][0]
+            if books[j-1][1] > height {
+                height = books[j-1][1]
+            }
+            if dp[i] > dp[j-1] + height {
+                dp[i] = dp[j-1] + height
+            }
+        }
+    }
+    return dp[len(dp)-1]
+}
+#+END_SRC
+- Solution: dp without padding element as base condition
 
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/filling-bookcase-shelves
+// Basic Ideas: dynamic programming
+//
+//  dp(i): min height, with books[i] taken
+//       // new row
+//       // add to previous row
+//
+//  Follow-up: why binarysearch won't work?
+//
+// Complexity: Time O(n*m), Space O(n)
+func minHeightShelves(books [][]int, shelf_width int) int {
+    dp := make([]int, len(books))
+    dp[0] = books[0][1]
+    for i:=1; i<len(dp); i++ {
+        // add to a new row
+        dp[i] = dp[i-1]+books[i][1]
+        // add to previous row
+        // books[i-1], books[i-2], ... books[i-X]
+        width, height := books[i][0], books[i][1]
+        for j:=i-1; j>=0 && width+books[j][0] <= shelf_width; j-- {
+            width = width+books[j][0]
+            if books[j][1] > height {
+                height = books[j][1]
+            }
+            // collect result
+            prev := 0
+            if j > 0 {
+                prev = dp[j-1]
+            }
+            if dp[i] > prev + height {
+                dp[i] = prev + height
+            }
+        }
+    }
+    return dp[len(dp)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -13,7 +13,7 @@ Change cells of graph Problems & Follow-up
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
-See all edit distance problems & follow-up: [[https://code.dennyzhang.com/tag/graphchangecell/][#graphchangecell]]
+See all change graph cell problems & follow-up: [[https://code.dennyzhang.com/tag/graphchangecell/][#graphchangecell]]
 [display-posts tag="graphchangecell" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

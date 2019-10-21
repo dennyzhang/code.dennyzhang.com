@@ -13,7 +13,7 @@ Coloring graph nodes Problems & Follow-up
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
-See all edit distance problems & follow-up: [[https://code.dennyzhang.com/tag/colorgraph/][#colorgraph]]
+See all color graphs problems & follow-up: [[https://code.dennyzhang.com/tag/colorgraph/][#colorgraph]]
 [display-posts tag="colorgraph" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

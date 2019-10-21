@@ -14,11 +14,11 @@ By Denny: https://code.dennyzhang.com
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"><a href="https://leetcode.com/dennyzhang"><img style="width:189px;height:329px;" src="https://cdn.dennyzhang.com/images/brain/denny_leetcode.png" alt="leetcode" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://www.lintcode.com/user/DennyZhang"><img style="width:387px;height:260px;"  src="https://cdn.dennyzhang.com/images/brain/denny_lintcode.png" alt="lintcode" /></a></div>
 </div>
 #+END_HTML
 
 #+BEGIN_HTML
+<br/>
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=dennyzhang-20&marketplace=amazon&region=US&placement=B06X6MJQMG&asins=B06X6MJQMG&linkId=2d749436703bc629f8ceafcb19e3fac9&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
 </iframe>
 #+END_HTML

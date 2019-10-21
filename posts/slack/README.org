@@ -3,8 +3,8 @@
 :type:     #blog
 :END:
 ---------------------------------------------------------------------
-Slack group: [[url-external:https://goo.gl/cZ2Pev][https://myleetcode.slack.com]]
-(Invitation link: [[url-external:https://join.slack.com/t/myleetcode/shared_invite/enQtMzEzNjAyOTI2ODE3LTc5MDEwMWQ1Zjk1MWYwYTVhN2IwOTk1NzIxNGFjOGJjZjU0ZTYxYTZhOWEwMDliNDZmZjkwZGZjZWFlZDRiNzg][https://goo.gl/cZ2Pev]])
+Slack group: [[url-external:https://join.slack.com/t/myleetcode/shared_invite/enQtMzEzNjAyOTI2ODE3LWFkMjYwOWI1MTU4Y2EzMzY0YTM0MTJhN2FhOTYxYjMxZTdmZTIwMjdiY2JkYTk3M2Q5ODMyOTkwM2JjNDQ2ZTM][https://myleetcode.slack.com]]
+(Invitation link: [[https://join.slack.com/t/myleetcode/shared_invite/enQtMzEzNjAyOTI2ODE3LWFkMjYwOWI1MTU4Y2EzMzY0YTM0MTJhN2FhOTYxYjMxZTdmZTIwMjdiY2JkYTk3M2Q5ODMyOTkwM2JjNDQ2ZTM][here]])
 
 If you are interested in [[color:#c7254e][VMware opportunities]], here is [[https://vmware.rolepoint.com/?shorturl=qeEMe][my referral link]].
 

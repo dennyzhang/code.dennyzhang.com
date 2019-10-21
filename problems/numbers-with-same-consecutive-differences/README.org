@@ -1,0 +1,125 @@
+* Leetcode: Numbers With Same Consecutive Differences           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, constructarray, bfs, backtracking
+:END:
+---------------------------------------------------------------------
+Numbers With Same Consecutive Differences
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/numbers-with-same-consecutive-differences"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-constructarray][#constructarray]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+---------------------------------------------------------------------
+Return all non-negative integers of length N such that the absolute difference between every two consecutive digits is K.
+
+Note that every number in the answer must not have leading zeros except for the number 0 itself. For example, 01 has one leading zero and is invalid, but 0 is valid.
+
+You may return the answer in any order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: N = 3, K = 7
+Output: [181,292,707,818,929]
+Explanation: Note that 070 is not a valid number, because it has leading zeroes.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: N = 2, K = 1
+Output: [10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= N <= 9
+- 0 <= K <= 9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/numbers-with-same-consecutive-differences][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/numbers-with-same-consecutive-differences/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: dp
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/numbers-with-same-consecutive-differences
+// Basic Ideas: dynamic programming
+//
+// Complexity: Time O(pow(2, n)) Space O(pow(2, n))
+func numsSameConsecDiff(N int, K int) []int {
+    nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+    if N == 1 {
+        return append(nums, 0)
+    }
+    for i:=1; i<N; i++ {
+        nexts := []int{}
+        for _, v := range nums {
+            digit := v%10
+            if K == 0 {
+                nexts = append(nexts, v*10+digit)
+            } else {
+                // need to avoid duplicate
+                if digit+K<10 {
+                    nexts = append(nexts, v*10+digit+K)
+                }
+                if digit-K>=0 {
+                    nexts = append(nexts, v*10+digit-K)
+                }
+            }
+        }
+        nums = nexts
+    }
+    return nums
+}
+#+END_SRC
+
+- Solution: backtracking
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/numbers-with-same-consecutive-differences
+// Basic Ideas: backtracking
+//
+// Complexity: Time O(pow(2, n)) Space O(pow(2, n))
+func dfs(count int, value int, K int, res *[]int) {
+    // When count is 0, we have enough digits
+    if count == 0 {
+        *res = append(*res, value)
+        return
+    }
+    digit := value%10
+    if K == 0 {
+        dfs(count-1, value*10+digit, K, res)
+    } else {
+        if digit+K <= 9 {
+            dfs(count-1, value*10+digit+K, K, res)
+        }
+        if digit-K>=0 {
+            dfs(count-1, value*10+digit-K, K, res)
+        }
+    }
+}
+
+func numsSameConsecDiff(N int, K int) []int {
+    nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+    if N == 1 {
+        return append(nums, 0)
+    }
+    res := []int{}
+    for _, v := range nums {
+        dfs(N-1, v, K, &res)
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

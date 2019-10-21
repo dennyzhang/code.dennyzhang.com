@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, dynamicprogramming, divideconquer
+:type:     array, dynamicprogramming, divideconquer, constructarray
 :END:
 ---------------------------------------------------------------------
 Beautiful Array
@@ -13,7 +13,7 @@ Beautiful Array
 Similar Problems:
 - [[https://code.dennyzhang.com/132-pattern][Leetcode: 132 Pattern]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]], [[https://code.dennyzhang.com/followup-constructarray][#constructarray]]
 ---------------------------------------------------------------------
 For some fixed N, an array A is beautiful if it is a permutation of the integers 1, 2, ..., N, such that:
 

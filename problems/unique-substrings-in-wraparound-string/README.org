@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     dynamicprogramming, countdistinctmoves, endswith
 :END:
 ---------------------------------------------------------------------
 Unique Substrings in Wraparound String
@@ -11,8 +11,9 @@ Unique Substrings in Wraparound String
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-substrings-in-wraparound-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/distinct-subsequences-ii][Leetcode: Distinct Subsequences II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]], [[https://code.dennyzhang.com/followup-endswith][#endswith]]
 ---------------------------------------------------------------------
 Consider the string s to be the infinite wraparound string of "abcdefghijklmnopqrstuvwxyz", so s will look like this: "...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....".
 
@@ -49,23 +50,39 @@ Credits To: [[https://leetcode.com/problems/unique-substrings-in-wraparound-stri
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/unique-substrings-in-wraparound-string
+// Basic Ideas: dynamic programming
+//
+//  The substring ends with a character.
+//  When we know the length, the substring can be determinted
+//
+//  dp(i): how many substring ends with p[i]
+//
+// Complexity: Time O(n), Space O(1)
 func findSubstringInWraproundString(p string) int {
-    
+    dp := 1
+    l := make([]int, 26)
+    for i, _ := range p {
+        index := p[i]-'a'
+        if i>0 {
+            // check with previous character
+            if (p[i-1]-'a'+1)%26 == p[i]-'a' {
+                dp++
+            } else {
+                dp = 1
+            }
+        }
+        if l[index] < dp {
+            l[index] = dp
+        }
+    }
+    res := 0
+    for _, v := range l {
+        res += v
+    }
+    return res
 }
 #+END_SRC
 
