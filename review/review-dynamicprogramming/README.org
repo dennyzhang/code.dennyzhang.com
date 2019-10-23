@@ -36,7 +36,7 @@ Trade space for time.
 | Some initialization can be skipped                  | [[https://code.dennyzhang.com/bomb-enemy][Leetcode: Bomb Enemy]]                                          |
 | Instead of left-to-right, do it from right-to-left  | [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]                           |
 | 2-D dp, instead of one                              | [[https://code.dennyzhang.com/longest-common-subsequence][Leetcode: Longest Common Subsequence]], [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]] |
-| DP breaks down into two subproblems, instead of one |                                                               |
+| DP breaks down into two subproblems, instead of one | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][Leetcode: Minimum Score Triangulation of Polygon]]              |
 
 [[color:#c7254e][Key Parts In DP Problems]]:
 1. *Key observation* is crucial. Watch careful for how the states transit?

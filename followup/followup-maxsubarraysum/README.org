@@ -12,6 +12,11 @@ Maximum subarray problem
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
+*Questions*
+| Name                                        | Example                               |
+|---------------------------------------------+---------------------------------------|
+| Subarray is contiguous. Drop the first half | [[https://code.dennyzhang.com/maximum-average-subarray-ii][Leetcode: Maximum Average Subarray II]] |
+
 See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
 [display-posts tag="maxsubarraysum" posts_per_page="100" orderby="title"]
 

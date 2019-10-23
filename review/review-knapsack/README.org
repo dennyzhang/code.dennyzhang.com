@@ -17,6 +17,7 @@ Review knapsack code problems
 |-------------------------------------------------------+-------------------------------------------------------------|
 | 0/1 Knapsack                                          | You either choose or not                                    |
 | Knapsack with repetition or called Unbounded Knapsack | Unbonded problems may be converted to 0/1 knapsack problems |
+| Complete knapsack problem in high dimension           | [[https://code.dennyzhang.com/shopping-offers][Leetcode: Shopping Offers]]                                   |
 
 *Questions*
 | Name | Example |

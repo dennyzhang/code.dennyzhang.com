@@ -28,7 +28,7 @@ Explanation: The polygon is already triangulated, and the score of the only tria
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Minimum Score Triangulation of Polygon][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-score-triangulation-of-polygon/polygon.png]]
+[[image-blog:Minimum Score Triangulation of Polygon][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-score-triangulation-of-polygon/mypolygon.png]]
 #+BEGIN_EXAMPLE
 Input: [3,7,4,5]
 Output: 144
@@ -57,7 +57,42 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/minimum-score-triangulation-of-polygon
-
+// Basic Ideas: math
+//
+// Observation: for each triangle, one node can be removed
+//   So dp(i) fall back to dp(i-1)
+// Observation: There must be one triangle with A[0], A[N-1] + A[i]
+//    The sum would be A[0...i], A[i...N-1] + A[0]*A[N-1]*A[i]
+//    Loop all the possiblity of i, we can get the result.
+//
+//   dp(i, j): value from A[i...j]
+//
+// Notice: there may not exist a central point to divide the polygon
+//
+// Complexity: Time O(n), Space O(1)
+func minScoreTriangulation(A []int) int {
+    dp := make([][]int, len(A))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(A))
+    }
+    // dp from diagonal line
+    for i:=len(A)-1; i>=0; i-- {
+        for j:=i; j<len(A); j++ {
+            // A[i...j]
+            for k:=i+1; k<j; k++ {
+                if dp[i][j] == 0 {
+                    // set initial value
+                    dp[i][j] = 1<<31-1
+                }
+                v := dp[i][k] + A[i]*A[k]*A[j] + dp[k][j]
+                if dp[i][j] > v {
+                    dp[i][j] = v
+                }
+            }
+        }
+    }
+    return dp[0][len(A)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML

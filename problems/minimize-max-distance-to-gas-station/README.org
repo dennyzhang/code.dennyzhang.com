@@ -1,0 +1,91 @@
+* Leetcode: Minimize Max Distance to Gas Station                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarysearch, math, float, monotonicfunc
+:END:
+---------------------------------------------------------------------
+Minimize Max Distance to Gas Station
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimize-max-distance-to-gas-station"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/float][#float]], [[https://code.dennyzhang.com/tag/monotonicfunc][#monotonicfunc]]
+---------------------------------------------------------------------
+On a horizontal number line, we have gas stations at positions stations[0], stations[1], ..., stations[N-1], where N = stations.length.
+
+Now, we add K more gas stations so that D, the maximum distance between adjacent gas stations, is minimized.
+
+Return the smallest possible value of D.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], K = 9
+Output: 0.500000
+#+END_EXAMPLE
+
+Note:
+
+1. stations.length will be an integer in range [10, 2000].
+- stations[i] will be an integer in range [0, 10^8].
+- K will be an integer in range [1, 10^6].
+- Answers within 10^-6 of the true value will be accepted as correct.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimize-max-distance-to-gas-station][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimize-max-distance-to-gas-station/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimize-max-distance-to-gas-station
+// Basic Ideas: binarysearch
+//  Mononotic function: the bigger K is, the smaller D would be
+// Complexity: Time O(n*log(m)), Space O(1)
+import "sort"
+func isPossible(stations []int, K int, D float64) bool {
+    count := 0
+    for i:=0; i+1<len(stations); i++ {
+        dis := float64(stations[i+1]-stations[i])
+        if dis <= D {
+            continue
+        }
+        add := int(dis/D)
+        count += add
+        if float64(add)*D > dis {
+            count++
+        }
+    }
+    return count <= K
+}
+
+func minmaxGasDist(stations []int, K int) float64 {
+    sort.Ints(stations)
+    left, right := float64(0), float64(stations[len(stations)-1]-stations[0])
+    // always can find
+    for right-left > 0.000006 {
+        mid := (right-left)/2 + left
+        // F, F, F, T, T, T
+        if isPossible(stations, K, mid) {
+            // left half
+            right = mid
+        } else {
+            // right half
+            left = mid
+        }
+    }
+    return left
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
