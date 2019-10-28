@@ -1,0 +1,130 @@
+* Leetcode: Minimum Area Rectangle II                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     geometry, hashmap, rectangle
+:END:
+---------------------------------------------------------------------
+Minimum Area Rectangle II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-area-rectangle-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-geometry][#geometry]], [[https://code.dennyzhang.com/followup-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
+---------------------------------------------------------------------
+Given a set of points in the xy-plane, determine the minimum area of any rectangle formed from these points, with sides not necessarily parallel to the x and y axes.
+
+If there isn't any rectangle, return 0.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [[1,2],[2,1],[1,0],[0,1]]
+Output: 2.00000
+Explanation: The minimum area rectangle occurs at [1,2],[2,1],[1,0],[0,1], with an area of 2.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [[0,1],[2,1],[1,1],[1,0],[2,0]]
+Output: 1.00000
+Explanation: The minimum area rectangle occurs at [1,0],[1,1],[2,1],[2,0], with an area of 1.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [[0,3],[1,2],[3,1],[1,3],[2,1]]
+Output: 0
+Explanation: There is no possible rectangle to form from these points.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: [[3,1],[1,1],[0,1],[2,1],[3,3],[3,2],[0,2],[2,3]]
+Output: 2.00000
+Explanation: The minimum area rectangle occurs at [2,1],[2,3],[3,3],[3,1], with an area of 2.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= points.length <= 50
+- 0 <= points[i][0] <= 40000
+- 0 <= points[i][1] <= 40000
+- All points are distinct.
+- Answers within 10^-5 of the actual value will be accepted as correct.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-area-rectangle-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-area-rectangle-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimum-area-rectangle-ii
+// Basic Ideas: array + hashmap
+//   From 3 points, we can get the fourth point to make a rectangle
+// Complexity: Time O(n^3), Space O(1)
+import "math"
+func getDis(points [][]int, i int, j int) int {
+    v1 := points[i][0]-points[j][0]
+    v2 := points[i][1]-points[j][1]
+    return v1*v1+v2*v2
+}
+
+func getArea(points [][]int, m map[[2]int]bool, i int, j int, k int) float64 {
+    a := getDis(points, i, j)
+    b := getDis(points, j, k)
+    c := getDis(points, i, k)
+    // c would be the longest length
+    if c < a {
+        return getArea(points, m, i, k, j) 
+    }
+    if c < b {
+        return getArea(points, m, j, i, k)
+    }
+    // Not a valid rectangle
+    if a+b != c {
+        return float64(1<<31-1)
+    }
+    x := points[i][0]+points[k][0]-points[j][0]
+    y := points[i][1]+points[k][1]-points[j][1]
+    if _, ok := m[[2]int{x, y}]; !ok {
+        return float64(1<<31-1)
+    } else {
+        return math.Sqrt(float64(a))*math.Sqrt(float64(b))
+    }
+}
+
+func minAreaFreeRect(points [][]int) float64 {
+    res := float64(1<<31-1)
+    m := map[[2]int]bool{}
+    for _, p := range points {
+        m[[2]int{p[0], p[1]}] = true
+    }
+    for i:=0; i+3<len(points); i++ {
+        for j:=i+1; j+2<len(points); j++ {
+            for k:=j+1; k+1<len(points); k++ {
+                v := getArea(points, m, i, j, k)
+                if v < res {
+                    res = v
+                }
+            }
+        }
+    }
+    if res == float64(1<<31-1) {
+        res = 0
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

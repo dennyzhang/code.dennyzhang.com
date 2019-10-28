@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     greedy, reachpoint
 :END:
 ---------------------------------------------------------------------
 Broken Calculator
@@ -12,7 +12,7 @@ Broken Calculator
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/followup-reachpoint][#reachpoint]]
 ---------------------------------------------------------------------
 On a broken calculator that has a number showing on its display, we can perform two operations:
 
@@ -63,24 +63,27 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/broken-calculator
-
+// Basic Ideas:
+//  If X==Y, return 0
+//  If X>Y, need to move step by step
+//  If X<Y, 
+//      If y is odd, check x with y+1
+//      
+// Complexity: Time ? Space ?
+func brokenCalc(X int, Y int) int {
+    if X>=Y {
+        return X-Y
+    }
+    res := 0
+    if Y%2 == 1 {
+        res = brokenCalc(X, Y+1)+1
+    } else {
+        res = brokenCalc(X, Y/2)+1
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

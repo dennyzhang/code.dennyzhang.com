@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     backtracking, combination
+:type:     backtracking, combination, knapsack
 :END:
 ---------------------------------------------------------------------
 Combination Sum
@@ -17,7 +17,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
 - [[https://code.dennyzhang.com/subset-with-target][LintCode: Subset With Target]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-knapsack][#knapsack]]
 ---------------------------------------------------------------------
 Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 

@@ -1,0 +1,142 @@
+* Leetcode: Wildcard Matching                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, editdistance
+:END:
+---------------------------------------------------------------------
+Wildcard Matching
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/wildcard-matching"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/regular-expression-matching][Leetcode: Regular Expression Matching]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-editdistance][#editdistance]]
+---------------------------------------------------------------------
+Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*'.
+
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+The matching should cover the entire input string (not partial).
+
+Note:
+
+- s could be empty and contains only lowercase letters a-z.
+- p could be empty and contains only lowercase letters a-z, and characters like ? or *.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+s = "aa"
+p = "a"
+Output: false
+Explanation: "a" does not match the entire string "aa".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+s = "aa"
+p = "*"
+Output: true
+Explanation: '*' matches any sequence.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input:
+s = "cb"
+p = "?a"
+Output: false
+Explanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input:
+s = "adceb"
+p = "*a*b"
+Output: true
+Explanation: The first '*' matches the empty sequence, while the second '*' matches the substring "dce".
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input:
+s = "acdcb"
+p = "a*c?b"
+Output: false
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/wildcard-matching][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/wildcard-matching/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/wildcard-matching
+// Basic Ideas: dynamic programming
+//
+//  dp(i, j): s[0:i], p[0:j]
+//     if p[j] is neither '?' nor '*'
+//     if p[j] is '?'
+//     if p[j] is '*'
+//          dp(i-1, j): treat as zero
+//          dp(i, j-1): treat as multiple
+//
+// Notice: wildcard match is different from regexp match
+// Complexity: Time O(n*m), Space O(n*m)
+func isMatch(s string, p string) bool {
+    dp := make([][]bool, len(s)+1)
+    for i, _ := range dp {
+        dp[i] = make([]bool, len(p)+1)
+    }
+    // init base condition
+    dp[0][0] = true
+    for j:=1; j<len(dp[0]); j++ {
+        if dp[0][j-1] && p[j-1] == '*' {
+            dp[0][j] = true
+        }
+    }
+    // dp
+    for i:=1; i<len(dp); i++ {
+        for j:=1; j<len(dp[0]); j++ {
+            if p[j-1] == '?' {
+                if dp[i-1][j-1] {
+                    dp[i][j] = true
+                }
+            } else {
+                if p[j-1] != '*' {
+                    if p[j-1] == s[i-1] {
+                        dp[i][j] = dp[i-1][j-1]
+                    }
+                } else {
+                    // treat * as empty
+                    if dp[i][j-1] {
+                        dp[i][j] = true
+                    } else {
+                        // treat * as any
+                        if dp[i-1][j] {
+                            dp[i][j] = true
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return dp[len(s)][len(p)]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

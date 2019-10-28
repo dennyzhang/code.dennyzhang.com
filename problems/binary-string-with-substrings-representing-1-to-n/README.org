@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     bitmanipulation
 :END:
 ---------------------------------------------------------------------
 Binary String With Substrings Representing 1 To N
@@ -12,7 +12,7 @@ Binary String With Substrings Representing 1 To N
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 Given a binary string S (a string consisting only of '0' and '1's) and a positive integer N, return true if and only if for every integer X from 1 to N, the binary representation of X is a substring of S.
  
@@ -39,26 +39,40 @@ Credits To: [[https://leetcode.com/problems/binary-string-with-substrings-repres
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution: Brute force with simple pruning
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/binary-string-with-substrings-representing-1-to-n
+// Basic Ideas:
+//    0110
+//       1, 10, 11, 100
+//  Notice: Instead of examining 1 to N, only need to do N, N-1, ... N/2
+// Complexity: Time ? Space ?
+import "strings"
+func getBinStr(n int) string {
+    l := []byte{}
+    for n != 0 {
+        l = append(l, byte('0')+byte(n%2))
+        n = n/2
+    }
+    left, right := 0, len(l)-1
+    for left<right {
+        l[left],l[right] = l[right],l[left]
+        left++
+        right--
+    }
+    return string(l)
+}
 
+func queryString(S string, N int) bool {
+    for i:=N; i>=N/2; i-- {
+        binStr := getBinStr(i)
+        if strings.Index(S, binStr) == -1 {
+            return false
+        }
+    }
+    return true
+}
 #+END_SRC
 
 #+BEGIN_HTML

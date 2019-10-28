@@ -1,0 +1,91 @@
+* Leetcode: Count Number of Nice Subarrays                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     presum, hashmap
+:END:
+---------------------------------------------------------------------
+Count Number of Nice Subarrays
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-number-of-nice-subarrays"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given an array of integers nums and an integer k. A subarray is called nice if there are k odd numbers on it.
+
+Return the number of nice sub-arrays.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [1,1,2,1,1], k = 3
+Output: 2
+Explanation: The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1].
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [2,4,6], k = 1
+Output: 0
+Explanation: There is no odd numbers in the array.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums = [2,2,2,1,2,2,1,2,2,2], k = 2
+Output: 16
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= nums.length <= 50000
+- 1 <= nums[i] <= 10^5
+- 1 <= k <= nums.length
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-number-of-nice-subarrays][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/count-number-of-nice-subarrays/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/count-number-of-nice-subarrays
+// Basic Ideas: presum + hashmap
+//
+//             1,1,2,1,1
+// true/false  1,1,0,1,1
+// presums     1,2,2,3,4
+//
+// Complexity: Time O(n), Space O(n)
+func numberOfSubarrays(nums []int, k int) int {
+    presums := make([]int, len(nums)+1)
+    sum := 0
+    for i, v := range nums {
+        if v%2 == 1 {
+            sum++
+        }
+        presums[i+1] = sum
+    }
+    m := map[int]int{}
+    m[0] = 1
+    res := 0
+    for i, _ := range nums {
+        cnt := presums[i+1]
+        m[cnt]++
+        res += m[cnt-k]
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

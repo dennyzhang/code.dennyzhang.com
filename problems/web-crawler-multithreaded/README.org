@@ -1,0 +1,154 @@
+* Leetcode: Web Crawler Multithreaded                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     multithread
+:END:
+---------------------------------------------------------------------
+Web Crawler Multithreaded
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/web-crawler-multithreaded"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-multithread][#multithread]]
+---------------------------------------------------------------------
+Given a url startUrl and an interface HtmlParser, implement a Multi-threaded web crawler to crawl all links that are under the same hostname as startUrl. 
+
+Return all urls obtained by your web crawler in any order.
+
+Your crawler should:
+
+- Start from the page: startUrl
+- Call HtmlParser.getUrls(url) to get all urls from a webpage of given url.
+- Do not crawl the same link twice.
+- Explore only the links that are under the same hostname as startUrl.
+
+[[image-blog:Web Crawler Multithreaded][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/web-crawler-multithreaded/urlhostname.png]]
+
+As shown in the example url above, the hostname is example.org. For simplicity sake, you may assume all urls use http protocol without any port specified. For example, the urls http://leetcode.com/problems and http://leetcode.com/contest are under the same hostname, while urls http://example.org/test and http://example.com/abc are not under the same hostname.
+
+The HtmlParser interface is defined as such: 
+#+BEGIN_EXAMPLE
+interface HtmlParser {
+  // Return a list of all urls from a webpage of given url.
+  // This is a blocking call, that means it will do HTTP request and return when this request is finished.
+  public List<String> getUrls(String url);
+}
+#+END_EXAMPLE
+
+Note that getUrls(String url) simulates performing a HTTP request. You can treat it as a blocking function call which waits for a HTTP request to finish. It is guaranteed that getUrls(String url) will return the urls within 15ms.  Single-threaded solutions will exceed the time limit so, can your multi-threaded web crawler do better?
+
+Below are two examples explaining the functionality of the problem, for custom testing purposes you'll have three variables urls, edges and startUrl. Notice that you will only have access to startUrl in your code, while urls and edges are not directly accessible to you in code.
+ 
+Follow up:
+
+1. Assume we have 10,000 nodes and 1 billion URLs to crawl. We will deploy the same software onto each node. The software can know about all the nodes. We have to minimize communication between machines and make sure each node does equal amount of work. How would your web crawler design change?
+- What if one node fails or does not work?
+- How do you know when the crawler is done?
+ 
+Example 1:
+
+[[image-blog:Web Crawler Multithreaded][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/web-crawler-multithreaded/sample1.png]]
+#+BEGIN_EXAMPLE
+Input:
+urls = [
+  "http://news.yahoo.com",
+  "http://news.yahoo.com/news",
+  "http://news.yahoo.com/news/topics/",
+  "http://news.google.com",
+  "http://news.yahoo.com/us"
+]
+edges = [[2,0],[2,1],[3,2],[3,1],[0,4]]
+startUrl = "http://news.yahoo.com/news/topics/"
+Output: [
+  "http://news.yahoo.com",
+  "http://news.yahoo.com/news",
+  "http://news.yahoo.com/news/topics/",
+  "http://news.yahoo.com/us"
+]
+#+END_EXAMPLE
+
+Example 2:
+
+[[image-blog:Web Crawler Multithreaded][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/web-crawler-multithreaded/sample2.png]]
+#+BEGIN_EXAMPLE
+Input: 
+urls = [
+  "http://news.yahoo.com",
+  "http://news.yahoo.com/news",
+  "http://news.yahoo.com/news/topics/",
+  "http://news.google.com"
+]
+edges = [[0,2],[2,1],[3,2],[3,1],[3,0]]
+startUrl = "http://news.google.com"
+Output: ["http://news.google.com"]
+Explanation: The startUrl links to all other pages that do not share the same hostname.
+#+END_EXAMPLE 
+
+Constraints:
+
+- 1 <= urls.length <= 1000
+- 1 <= urls[i].length <= 300
+- startUrl is one of the urls.
+- Hostname label must be from 1 to 63 characters long, including the dots, may contain only the ASCII letters from 'a' to 'z', digits from '0' to '9' and the hyphen-minus character ('-').
+- The hostname may not start or end with the hyphen-minus character ('-'). 
+- See:  https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_hostnames
+- You may assume there're no duplicates in url library.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/web-crawler-multithreaded][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/web-crawler-multithreaded/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/web-crawler-multithreaded
+## Basic Ideas: DFS + map/reduce
+##
+## Complexity: Time O(n), Space O(n)
+# """
+# This is HtmlParser's API interface.
+# You should not implement it, or speculate about its implementation
+# """
+#class HtmlParser(object):
+#    def getUrls(self, url):
+#        """
+#        :type url: str
+#        :rtype List[str]
+#        """
+import concurrent.futures
+class Solution:
+    def getHostname(self, url: str) -> str:
+        # assume URLs are valid
+        return url.split("/")[2]
+
+    def crawl(self, startUrl: str, htmlParser: 'HtmlParser') -> List[str]:
+        s = set()
+        s.add(startUrl)
+        hostname = self.getHostname(startUrl)
+        queue = [startUrl]
+        while len(queue) > 0:
+            queue2 = []
+            with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+                l = list(executor.map(lambda url: htmlParser.getUrls(url), queue))
+                for urls in l:
+                    for newUrl in urls:
+                        if newUrl in s or self.getHostname(newUrl) != hostname:
+                            continue
+                        s.add(newUrl)
+                        queue2.append(newUrl)
+            queue = queue2
+        return list(s)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

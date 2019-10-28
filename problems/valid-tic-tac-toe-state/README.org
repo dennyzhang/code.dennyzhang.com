@@ -2,10 +2,17 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     game, array
 :END:
 ---------------------------------------------------------------------
 Valid Tic-Tac-Toe State
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/design-log-storage-system"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 A Tic-Tac-Toe board is given as a string array board. Return True if and only if it is possible to reach this board position during the course of a valid tic-tac-toe game.
 
@@ -60,7 +67,62 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/valid-tic-tac-toe-state
+// Basic Ideas: simulationn
+//  Check whether the state is valid
+//
+// Complexity: Time ? Space ?
+func validPoint(i int, j int, board []string, ch byte) bool {
+    return i>=0 && i<3 && j>=0 && j<3 && board[i][j] == ch
+}
 
+func win(board []string, ch byte) bool {
+    for i, row := range board {
+        for j, _ := range row {
+            if row[j] == ch {
+                if validPoint(i, j-1, board, ch) && validPoint(i, j+1, board, ch) {
+                    return true
+                }
+                if validPoint(i-1, j, board, ch) && validPoint(i+1, j, board, ch) {
+                    return true
+                }
+                if validPoint(i-1, j-1, board, ch) && validPoint(i+1, j+1, board, ch) {
+                    return true
+                }
+                if validPoint(i+1, j-1, board, ch) && validPoint(i-1, j+1, board, ch) {
+                    return true
+                }
+            }
+        }
+    }
+    return false
+}
+
+func validTicTacToe(board []string) bool {
+    p1, p2 := 0, 0
+    for _, row := range board {
+        for _, v := range row {
+            if v == 'X' {
+                p1++
+            }
+            if v == 'O' {
+                p2++
+            }
+        }
+    }
+    // not valid
+    if p1 != p2 && p1 != p2+1 {
+        return false
+    }
+    // if X wins, p1 == p2+1
+    if win(board, 'X') && p1 != p2+1 {
+        return false
+    }
+    // if O wins, p1 == p2
+    if win(board, 'O') && p1 != p2 {
+        return false
+    }
+    return true
+}
 #+END_SRC
 
 #+BEGIN_HTML

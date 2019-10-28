@@ -49,7 +49,53 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/last-stone-weight-ii
+// Basic Ideas: knapsack
+//  There would be one combination which makes the absolute value of sum minimum
+//   +x1-x2+x3+x4-x5...
+//   It's like placing elements into two bags.
+//   Some combination may not be valid. But we only care about the smallest one.
+// Complexity: Time O(n), Space O(n)
+func abs(x int) int {
+    if x<0 {
+        return -x
+    } else {
+        return x
+    }
+}
 
+func lastStoneWeightII(stones []int) int {
+    dp := make([][]bool, len(stones)+1)
+    for i, _ := range dp {
+        dp[i] = make([]bool, 6001)
+    }
+    // starting point
+    dp[0][3000] = true
+    for i:=1; i<len(dp); i++ {
+        // stones[i-1]
+        //  Take, or don't take
+        // dp[i, v] = dp[i-1, v-piles[i-1]] || dp[i-1, v+piles[i-1]]
+        for v:=0; v<6001; v++ {
+            if v-stones[i-1]>=0 && dp[i-1][v-stones[i-1]] {
+                dp[i][v] = true
+            }
+            if v+stones[i-1]<=6000 && dp[i-1][v+stones[i-1]] {
+                dp[i][v] = true
+            }
+        }
+    }
+    
+    // collect result
+    res := 3000
+    for v:=0; v<6001; v++ {
+        if dp[len(dp)-1][v] {
+            // have a candidate
+            if abs(v-3000) < res {
+                res = abs(v-3000)
+            }
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

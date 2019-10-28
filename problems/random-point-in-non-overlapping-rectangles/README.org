@@ -1,0 +1,88 @@
+* Leetcode: Random Point in Non-overlapping Rectangles          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarysearch, manydetails, redo
+:END:
+---------------------------------------------------------------------
+Random Point in Non-overlapping Rectangles
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/random-point-in-non-overlapping-rectangles"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/random-point-in-non-overlapping-rectangles][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/random-point-in-non-overlapping-rectangles
+// Basic Ideas: dynamic programming
+//
+// Complexity: Time O(log(n)), Space O(n)
+import "math/rand"
+
+type Solution struct {
+    rects [][]int
+    nums []int
+}
+
+func Constructor(rects [][]int) Solution {
+    nums := make([]int, len(rects))
+    sum := 0
+    for i, rect := range rects {
+        sum += (rect[2]-rect[0]+1)*(rect[3]-rect[1]+1)
+        nums[i] = sum
+    }
+    return Solution{rects:rects, nums:nums}
+}
+
+func (this *Solution) Pick() []int {
+    total := this.nums[len(this.nums)-1]
+    num := rand.Intn(total)
+    // search insert position
+    // 100, 10, 20, 8, 20
+    left, right := 0, len(this.nums)-1
+    for left<right {
+        mid := (right-left)/2+left
+        if this.nums[mid] <= num {
+            // right half
+            left = mid+1
+        } else {
+            right = mid
+        }
+    }
+    // left
+    x, y := this.rects[left][0], this.rects[left][1]
+    width := this.rects[left][2]-this.rects[left][0]+1
+    height := this.rects[left][3]-this.rects[left][1]+1
+    
+    offset := num-(this.nums[left]-width*height)
+    x += offset%width
+    y += offset/width
+    return []int{x, y}
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * obj := Constructor(rects);
+ * param_1 := obj.Pick();
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

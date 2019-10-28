@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     palindrome
+:type:     palindrome, twopointer, rollinghash
 :END:
 ---------------------------------------------------------------------
 Longest Chunked Palindrome Decomposition
@@ -12,7 +12,7 @@ Longest Chunked Palindrome Decomposition
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/followup-rollinghash][#rollinghash]]
 ---------------------------------------------------------------------
 Return the largest possible k such that there exists a_1, a_2, ..., a_k such that:
 
@@ -59,11 +59,93 @@ Credits To: [[https://leetcode.com/problems/longest-chunked-palindrome-decomposi
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: Rabin Karp Algorithm - rollinghash
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/longest-chunked-palindrome-decomposition
+// Basic Ideas: Rabin Karp Algorithm - rollinghash
+//
+// Complexity: Time O(n*n), Space O(1)
+import "math"
+func longestDecomposition(text string) int {
+    mod := int(math.Pow(10, 9)+5)
+    res := 0
+    pow := 1
+    left, right := 0, 0
+    // two direction moves in the same speed
+    for i:=0; i<len(text); i++ {
+        j := len(text)-1-i
+        left = (left*26 + int(text[i]-'a')) % mod
+        right = (int(text[j]-'a')*pow + right) % mod
+        pow = (pow*26)%mod
+        // after i, j meets, we count it one more time
+        if left == right {
+            res += 1
+            left, right = 0, 0
+            pow = 1
+        }
+    }
+    return res
+}
+#+END_SRC
 
+- Solution: twopointer + move to the ends
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-chunked-palindrome-decomposition
+// Basic Ideas: twopointer
+//
+// Complexity: Time O(n*n), Space O(1)
+func longestDecomposition(text string) int {
+    res := 0
+    left, right := "", ""
+    // two direction moves in the same speed
+    for i:=0; i<len(text); i++ {
+        j := len(text)-1-i
+        left = left + string(text[i])
+        right = string(text[j]) + right
+        // after i, j meets, we count it one more time
+        if left == right {
+            res += 1
+            left, right = "", ""
+        }
+    }
+    return res
+}
+#+END_SRC
+
+- Solution: twopointer + move to half
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-chunked-palindrome-decomposition
+// Basic Ideas: twopointer
+//
+// Complexity: Time O(n*n), Space O(1)
+func longestDecomposition(text string) int {
+    res := 0
+    left, right := "", ""
+    // check the half
+    for i:=0; i<len(text)/2; i++ {
+        j := len(text)-1-i
+        left = left + string(text[i])
+        right = string(text[j]) + right
+        if left == right {
+            res += 2
+            left, right = "", ""
+        }
+    }
+    
+    if len(text)%2 == 1 && left == "" {
+        // middle element
+        res++
+    } else {
+        // not matched
+        if left != "" {
+         res++
+       } 
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     lis, redo
 :END:
 ---------------------------------------------------------------------
 Number of Longest Increasing Subsequence
@@ -12,7 +12,7 @@ Number of Longest Increasing Subsequence
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-lis][#lis]]
 ---------------------------------------------------------------------
 Given an unsorted array of integers, find the number of longest increasing subsequence.
 
@@ -39,24 +39,43 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/number-of-longest-increasing-subsequence
-
+// Basic Ideas: dynamic programming
+//    dp(i): ends with nums[i]
+// Complexity: Time O(n*n), Space O(n)
+type Node struct {
+    max int
+    count int
+}
+func findNumberOfLIS(nums []int) int {
+    res, max := 0, 0
+    l := make([]Node, len(nums))
+    for i, num := range nums {
+        l[i].max, l[i].count = 1, 1
+        if i != 0 {
+            for j:=i-1; j>=0; j-- {
+                if nums[j] < num {
+                    if l[j].max+1 > l[i].max {
+                        l[i].max, l[i].count = l[j].max+1, l[j].count
+                    } else {
+                        if l[j].max+1 == l[i].max {
+                            l[i].count += l[j].count
+                        }
+                    }
+                }
+            }
+        }
+        if l[i].max > max { 
+            max, res = l[i].max, l[i].count
+        } else {
+            if l[i].max == max {
+                res += l[i].count
+            }
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

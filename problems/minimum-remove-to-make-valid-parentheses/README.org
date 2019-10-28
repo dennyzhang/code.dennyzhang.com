@@ -1,0 +1,110 @@
+* Leetcode: Minimum Remove to Make Valid Parentheses            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     stack
+:END:
+---------------------------------------------------------------------
+Minimum Remove to Make Valid Parentheses
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-remove-to-make-valid-parentheses"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+---------------------------------------------------------------------
+Given a string s of '(' , ')' and lowercase English characters. 
+
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
+
+Formally, a parentheses string is valid if and only if:
+
+- It is the empty string, contains only lowercase characters, or
+- It can be written as AB (A concatenated with B), where A and B are valid strings, or
+- It can be written as (A), where A is a valid string.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "lee(t(c)o)de)"
+Output: "lee(t(c)o)de"
+Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "a)b(c)d"
+Output: "ab(c)d"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "))(("
+Output: ""
+Explanation: An empty string is also valid.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: s = "(a(b(c)d)"
+Output: "a(b(c)d)"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length <= 10^5
+- s[i] is one of  '(' , ')' and lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-remove-to-make-valid-parentheses][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimum-remove-to-make-valid-parentheses
+// Basic Ideas: stack
+//  For ), try to pop
+//
+//  For (, push
+//         When collect result, remove all single ( from the tail
+// Complexity: Time O(n), Space O(n)
+import "strings"
+func minRemoveToMakeValid(s string) string {
+    stack := []string{}
+    for i, _ := range s {
+        ch := string(s[i])
+        if ch == ")" {
+            // pop
+            i:=len(stack)-1
+            for ; i>=0 && stack[i] != "("; i-- {
+            }
+            // It's valid, merge the combination
+            if i != -1 {
+				v := strings.Join(stack[i:len(stack)], "") + ")"
+				stack = stack[0:i]
+				stack = append(stack, v)
+            }
+        } else {
+            stack = append(stack, ch)
+        }
+    }
+    for i, v := range stack {
+        if v == "(" {
+            stack[i] = ""
+        }
+    }
+    // collect result
+    return strings.Join(stack, "")
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

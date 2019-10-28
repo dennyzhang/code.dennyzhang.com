@@ -1,0 +1,115 @@
+* Leetcode: Number of Closed Islands                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dfs
+:END:
+---------------------------------------------------------------------
+Number of Closed Islands
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-closed-islands"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]]
+---------------------------------------------------------------------
+Given a 2D grid consists of 0s (land) and 1s (water).  An island is a maximal 4-directionally connected group of 0s and a closed island is an island totally (all left, top, right, bottom) surrounded by 1s.
+
+Return the number of closed islands.
+ 
+Example 1:
+[[image-blog:Leetcode: Number of Closed Islands][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/number-of-closed-islands/1.png]]
+#+BEGIN_EXAMPLE
+Input: grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]
+Output: 2
+Explanation: 
+Islands in gray are closed because they are completely surrounded by water (group of 1s).
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Leetcode: Number of Closed Islands][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/number-of-closed-islands/2.png]]
+#+BEGIN_EXAMPLE
+Input: grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]
+Output: 1
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: grid = [[1,1,1,1,1,1,1],
+               [1,0,0,0,0,0,1],
+               [1,0,1,1,1,0,1],
+               [1,0,1,0,1,0,1],
+               [1,0,1,1,1,0,1],
+               [1,0,0,0,0,0,1],
+               [1,1,1,1,1,1,1]]
+Output: 2
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= grid.length, grid[0].length <= 100
+- 0 <= grid[i][j] <=1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-closed-islands][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/number-of-closed-islands/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/number-of-closed-islands
+// Basic Ideas: dfs
+//
+//  One dfs, mark all islands connected with boundary
+//
+//  Another dfs, count islands
+//
+// Complexity: Time O(n*m), Space O(1)
+func dfs(i int, j int, grid [][]int) {
+    if i<0 || i>=len(grid) || j<0 || j>=len(grid[0]) {
+        return
+    }
+    if grid[i][j] != 0 {
+        return
+    }
+    grid[i][j] = 2
+    dfs(i+1, j, grid)
+    dfs(i-1, j, grid)
+    dfs(i, j+1, grid)
+    dfs(i, j-1, grid)
+}
+
+func closedIsland(grid [][]int) int {
+    for j:=0; j<len(grid[0]); j++ {
+        dfs(0, j, grid)
+        dfs(len(grid)-1, j, grid)
+    }
+    for i:=0; i<len(grid); i++ {
+        dfs(i, 0, grid)
+        dfs(i, len(grid[0])-1, grid)
+    }
+    
+    res := 0
+    for i, row := range grid {
+        for j, v := range row {
+            if v == 0 {
+                res++
+                dfs(i, j, grid)
+            }
+        }
+    }
+    // If don't allow change grid, update all 2 back to 0
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

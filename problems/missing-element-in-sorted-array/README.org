@@ -56,7 +56,30 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/missing-element-in-sorted-array
-
+// Basic Ideas: binary search
+//   Evaluate the left half or the right half
+// Complexity: Time O(log(n)), Space O(1)
+func missingElement(nums []int, k int) int {
+    totalMiss := (nums[len(nums)-1]-nums[0]+1)-len(nums)
+    if totalMiss < k {
+        return nums[len(nums)-1]+k-totalMiss
+    }
+    left, right := 0, len(nums)-1
+    for left+1<right {
+        mid := (right-left)/2+left
+        cnt := (nums[mid]-nums[left])-(mid-left)
+        if cnt >= k {
+            // search left part
+            right = mid
+        } else {
+            // search right part
+            left = mid
+            k -= cnt
+        }
+    }
+    // left.right
+    return nums[left]+k
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign
+:type:     oodesign, array, inspiring, game
 :END:
 ---------------------------------------------------------------------
 Design Tic-Tac-Toe
@@ -12,7 +12,7 @@ Design Tic-Tac-Toe
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 
 Design a Tic-tac-toe game that is played between two players on a n x n grid.
@@ -73,10 +73,114 @@ Credits To: [[https://leetcode.com/problems/design-tic-tac-toe/description/][lee
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: Use one dimension array
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/design-tic-tac-toe
+// Basic Ideas: simulation
+//
+// Complexity: Time O(1), Space O(n)
+type TicTacToe struct {
+    d1 int
+    d2 int
+    rows []int
+    cols []int
+}
 
+/** Initialize your data structure here. */
+func Constructor(n int) TicTacToe {
+    return TicTacToe{rows: make([]int, n), cols: make([]int, n)}
+}
+
+/** Player {player} makes a move at ({row}, {col}).
+        @param row The row of the board.
+        @param col The column of the board.
+        @param player The player, can be either 1 or 2.
+        @return The current winning condition, can be either:
+                0: No one wins.
+                1: Player 1 wins.
+                2: Player 2 wins. */
+func (this *TicTacToe) Move(row int, col int, player int) int {
+    // player1: -1, player2: 1
+    v := 1
+    if player == 1 {
+        v = -1
+    }
+    // assume move is valid
+    if row == col {
+        this.d1 += v
+    }
+    if row+col == len(this.rows)-1 {
+        this.d2 += v
+    }
+    this.rows[row] += v
+    this.cols[col] += v
+
+    for _, x := range []int{this.d1, this.d2, this.rows[row], this.cols[col]} {
+        if x*v == len(this.rows) {
+            return player
+        }
+    }
+    return 0
+}
+
+/**
+ * Your TicTacToe object will be instantiated and called as such:
+ * obj := Constructor(n);
+ * param_1 := obj.Move(row,col,player);
+ */
+#+END_SRC
+
+- Solution: Use two dimension array
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/design-tic-tac-toe
+// Basic Ideas: simulation
+//
+// Complexity: Time O(1), Space O(n)
+type TicTacToe struct {
+    d1 [2]int
+    d2 [2]int
+    rows [][2]int
+    cols [][2]int
+}
+
+/** Initialize your data structure here. */
+func Constructor(n int) TicTacToe {
+    return TicTacToe{rows: make([][2]int, n), cols: make([][2]int, n)}
+}
+
+/** Player {player} makes a move at ({row}, {col}).
+        @param row The row of the board.
+        @param col The column of the board.
+        @param player The player, can be either 1 or 2.
+        @return The current winning condition, can be either:
+                0: No one wins.
+                1: Player 1 wins.
+                2: Player 2 wins. */
+func (this *TicTacToe) Move(row int, col int, player int) int {
+    // assume move is valid
+    if row == col {
+        this.d1[player-1]++
+    }
+    if row+col == len(this.rows)-1 {
+        this.d2[player-1]++
+    }
+    this.rows[row][player-1]++
+    this.cols[col][player-1]++
+
+    for _, x := range []int{this.d1[player-1], this.d2[player-1],  
+                            this.rows[row][player-1], this.cols[col][player-1]} {
+        if x == len(this.rows) {
+            return player
+        }
+    }
+    return 0
+}
+
+/**
+ * Your TicTacToe object will be instantiated and called as such:
+ * obj := Constructor(n);
+ * param_1 := obj.Move(row,col,player);
+ */
 #+END_SRC
 
 #+BEGIN_HTML

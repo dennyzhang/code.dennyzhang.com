@@ -34,6 +34,53 @@ Credits To: [[https://leetcode.com/problems/3sum/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: two pointer
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/3sum
+// Basic Ideas: two pointer
+//
+// Notice: how to avoid duplicates?
+// Notice: how to move two pointers, when found a match
+//
+// Complexity: Time O(n*n), Space O(1)
+import "sort"
+func threeSum(nums []int) [][]int {
+    sort.Ints(nums)
+    res := [][]int{}
+    for i:=0; i+2<len(nums); i++ {
+        // skip for the same
+        if i>0 && nums[i] == nums[i-1] {
+            continue
+        }
+        // nums[i+1...N-1] find a pair of given target
+        target := -nums[i]
+        left, right := i+1, len(nums)-1
+        for left<right {
+            if nums[left]+nums[right] == target {
+                res = append(res, []int{nums[i], nums[left], nums[right]})
+                // move for the same values
+                for left+1<len(nums) && nums[left+1] == nums[left] {
+                    left++
+                }
+                for right-1>=0 && nums[right-1] == nums[right] {
+                    right--
+                }
+                // for equal
+                left++
+                right--
+            } else {
+                if nums[left]+nums[right] > target {
+                    // make it smaller
+                    right--
+                } else {
+                    left++
+                }
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/3sum

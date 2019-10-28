@@ -33,6 +33,7 @@ Credits To: [[https://leetcode.com/problems/two-sum/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: sort + twopointer
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/two-sum
 ## Basic Ideas: Sort, then two pointer
@@ -55,6 +56,28 @@ class Solution:
                 left += 1
             else:
                 right -= 1
+#+END_SRC
+
+- Solution: hashmap
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/two-sum
+// Basic Ideas: hashmap
+//    For a given pos, look forward to find a complement one
+// Complexity: Time O(n), Space O(n)
+func twoSum(nums []int, target int) []int {
+    m := map[int]int{} // value to position
+    for i, v := range nums {
+        m[v] = i
+    }
+    for i, v := range nums {
+        if index, ok := m[target-v]; ok {
+            if index != i {
+                return []int{i, index}
+            }
+        }
+    }
+    return []int{}
+}
 #+END_SRC
 
 #+BEGIN_HTML

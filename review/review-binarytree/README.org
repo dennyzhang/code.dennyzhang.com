@@ -17,15 +17,9 @@ We might also see interesting requirements about updating binarytree. e,g, [[htt
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-binarytree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-*Basic Abstractions*
-| Name                     | Summary                                           |
-|--------------------------+---------------------------------------------------|
-*Scenarios*
-*Code Skeleton*
-*Questions*
-| Name                                 | Example |
-|--------------------------------------+---------|
-| Whether or not checking node is null |         |
+| Name                   | Summary |
+|------------------------+---------|
+| Morris tree trasversal |         |
 
 #+BEGIN_SRC c++
 // In-order traversal
@@ -72,8 +66,6 @@ level-order traversal is the same as breadth-first traversal.
 There are many reasons to traverse something, it doesn't just have 
 to be to search, as breadth-first search seems to imply, although 
 many (or most) don't make that distinction and use the terms interchangeably.
-
-From link: https://stackoverflow.com/questions/23576746/what-is-the-difference-between-breadth-first-searching-and-level-order-traversal
 #+END_EXAMPLE
 
 Examine previous/next node for in-order traversal. [[https://code.dennyzhang.com/closest-binary-search-tree-value][Closest Binary Search Tree Value]].
@@ -97,4 +89,29 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-leetcode-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-leetcode-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-slack-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
 

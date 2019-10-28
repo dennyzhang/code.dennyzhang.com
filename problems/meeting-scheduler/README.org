@@ -1,0 +1,111 @@
+* Leetcode: Meeting Scheduler                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     mergelist, twopointer
+:END:
+---------------------------------------------------------------------
+Meeting Scheduler
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/meeting-scheduler"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-mergelist][#mergelist]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
+---------------------------------------------------------------------
+Given the availability time slots arrays slots1 and slots2 of two people and a meeting duration duration, return the earliest time slot that works for both of them and is of duration duration.
+
+If there is no common time slot that satisfies the requirements, return an empty array.
+
+The format of a time slot is an array of two elements [start, end] representing an inclusive time range from start to end.  
+
+It is guaranteed that no two availability slots of the same person intersect with each other. That is, for any two time slots [start1, end1] and [start2, end2] of the same person, either start1 > end2 or start2 > end1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 8
+Output: [60,68]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 12
+Output: []
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= slots1.length, slots2.length <= 10^4
+- slots1[i].length, slots2[i].length == 2
+- slots1[i][0] < slots1[i][1]
+- slots2[i][0] < slots2[i][1]
+- 0 <= slots1[i][j], slots2[i][j] <= 10^9
+- 1 <= duration <= 10^6 
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/meeting-scheduler][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/meeting-scheduler/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/meeting-scheduler
+// Basic Ideas: array
+//   Merge two sorted list
+//
+// Time O(n*log(n)), Space O(1)
+import "sort"
+func max(x, y int) int {
+    if x > y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func minAvailableDuration(slots1 [][]int, slots2 [][]int, duration int) []int {
+    res := []int{}
+    
+    sort.Slice(slots1, func (i, j int) bool {
+        return slots1[i][0] < slots1[j][0]
+    })
+    sort.Slice(slots2, func (i, j int) bool {
+        return slots2[i][0] < slots2[j][0]
+    })
+    i, j := 0, 0
+    for i<len(slots1) && j<len(slots2) {
+        // move the one with earlier starting date
+        p := &i
+        if slots1[i][0] > slots2[j][0] {
+            p = &j
+        }
+        // check whether the overlap works
+        start := max(slots1[i][0], slots2[j][0])
+        end := min(slots1[i][1], slots2[j][1])
+        if end - start >= duration {
+            return []int{start, start+duration}
+        }
+        *p++
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

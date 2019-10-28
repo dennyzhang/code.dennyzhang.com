@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, inspiring, reservoirsampling, random
+:type:     oodesign, inspiring, random, redo
 :END:
 ---------------------------------------------------------------------
 Insert Delete GetRandom O(1) - Duplicates allowed
@@ -52,9 +52,76 @@ Credits To: [[https://leetcode.com/problems/insert-delete-getrandom-o1-duplicate
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
+- Solution: hashmap with set as value
 
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed
+// Basic Ideas: hashmap + array
+//
+// Complexity: Time O(1), Space O(n)
+import "math/rand"
+type RandomizedCollection struct {
+    // value to positions
+    positions map[int]map[int]bool
+    values []int
+}
+
+/** Initialize your data structure here. */
+func Constructor() RandomizedCollection {
+    return RandomizedCollection{positions:map[int]map[int]bool{}, values:[]int{}}
+}
+
+/** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
+func (this *RandomizedCollection) Insert(val int) bool {
+    res := false
+    if _, ok := this.positions[val]; !ok {
+        this.positions[val] = map[int]bool{}
+        res = true
+    }
+    this.positions[val][len(this.values)] = true
+    this.values = append(this.values, val)
+    return res
+}
+
+/** Removes a value from the collection. Returns true if the collection contained the specified element. */
+func (this *RandomizedCollection) Remove(val int) bool {
+    // not found
+    _, ok := this.positions[val]
+    if !ok || len(this.positions[val]) == 0 {
+        return false
+    }
+    // get one random position for the value of val
+    pos := -1
+    for k, _ := range this.positions[val] {
+        pos = k
+        delete(this.positions[val], pos)
+        break
+    }
+    // move last_element to val
+    last_element := this.values[len(this.values)-1]
+    this.values[pos] = last_element
+    
+    this.positions[last_element][pos] = true
+    delete(this.positions[last_element], len(this.values)-1)
+
+    // shorten array
+    this.values = this.values[0:len(this.values)-1]
+    return true
+}
+
+/** Get a random element from the collection. */
+func (this *RandomizedCollection) GetRandom() int {
+    index := rand.Intn(len(this.values))
+    return this.values[index]
+}
+
+/**
+ * Your RandomizedCollection object will be instantiated and called as such:
+ * obj := Constructor();
+ * param_1 := obj.Insert(val);
+ * param_2 := obj.Remove(val);
+ * param_3 := obj.GetRandom();
+ */
 #+END_SRC
 
 #+BEGIN_HTML

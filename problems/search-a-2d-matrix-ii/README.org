@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch
+:type:     binarysearch, sortedmatrix
 :END:
 ---------------------------------------------------------------------
 Search a 2D Matrix
@@ -13,7 +13,7 @@ Search a 2D Matrix
 Similar Problems:
 - [[https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix][Kth Smallest Element in a Sorted Matrix]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-sortedmatrix][#sortedmatrix]]
 ---------------------------------------------------------------------
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 

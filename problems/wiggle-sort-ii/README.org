@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     wiggle
+:type:     wiggle, constructarray
 :END:
 ---------------------------------------------------------------------
 Wiggle Sort II
@@ -13,7 +13,7 @@ Wiggle Sort II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://code.dennyzhang.com/wiggle-sort][Leetcode: Wiggle Sort]]
-- Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/followup-wiggle][#wiggle]]
+- Tag: [[https://code.dennyzhang.com/followup-wiggle][#wiggle]], [[https://code.dennyzhang.com/followup-constructarray][#constructarray]]
 ---------------------------------------------------------------------
 #+BEGIN_EXAMPLE
 Given an unsorted array nums, reorder it such that nums[0] < nums[1] > nums[2] < nums[3]....

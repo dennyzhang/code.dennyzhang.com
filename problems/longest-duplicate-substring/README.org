@@ -1,0 +1,87 @@
+* Leetcode: Longest Duplicate Substring                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarysearch, hashmap, lrs, rollinghash
+:END:
+---------------------------------------------------------------------
+Longest Duplicate Substring
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-duplicate-substring"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/longest-repeating-substring][Leetcode: Longest Repeating Substring]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-lrs][#lrs]], [[https://code.dennyzhang.com/tag/rollinghash][#rollinghash]]
+---------------------------------------------------------------------
+Given a string S, consider all duplicated substrings: (contiguous) substrings of S that occur 2 or more times.  (The occurrences may overlap.)
+
+Return any duplicated substring that has the longest possible length.  (If S does not have a duplicated substring, the answer is "".)
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "banana"
+Output: "ana"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "abcd"
+Output: ""
+#+END_EXAMPLE
+ 
+Note:
+
+2 <= S.length <= 10^5
+S consists of lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-duplicate-substring][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/longest-duplicate-substring/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-duplicate-substring
+// Basic Ideas: binarysearch + hashmap
+//
+// Complexity: Time O(n*log(n)), Space O(n*n)
+func getDuplicates(S string, width int) string {
+    m := map[string]bool{}
+    for i:=0; i+width-1<len(S); i++ {
+        str := S[i:i+width]
+        if _, ok := m[str]; ok {
+            return str
+        } else {
+            m[str] = false
+        }
+    }
+    return ""
+}
+
+func longestDupSubstring(S string) string {
+    left, right := 1, len(S) 
+    // T, T, T, F, F
+    for left<right {
+        mid := (right-left)/2+left
+        if getDuplicates(S, mid) != "" {
+            // right half
+            left = mid+1
+        } else {
+            right = mid
+        }
+    }
+    return getDuplicates(S, left-1)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

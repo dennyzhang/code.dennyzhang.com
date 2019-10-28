@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     rectangle
+:type:     geometry, rectangle
 :END:
 ---------------------------------------------------------------------
 Rectangle Area
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/meeting-rooms][Meeting Rooms]]
 - [[https://code.dennyzhang.com/rectangle-overlap][Rectangle Overlap]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
+- Tag: [[https://code.dennyzhang.com/followup-geometry][#geometry]], [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Find the total area covered by two rectilinear rectangles in a 2D plane.
 

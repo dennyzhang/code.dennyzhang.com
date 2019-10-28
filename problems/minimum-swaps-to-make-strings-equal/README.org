@@ -1,0 +1,103 @@
+* Leetcode: Minimum Swaps to Make Strings Equal                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Minimum Swaps to Make Strings Equal
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-swaps-to-make-strings-equal"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+You are given two strings s1 and s2 of equal length consisting of letters "x" and "y" only. Your task is to make these two strings equal to each other. You can swap any two characters that belong to different strings, which means: swap s1[i] and s2[j].
+
+Return the minimum number of swaps required to make s1 and s2 equal, or return -1 if it is impossible to do so.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s1 = "xx", s2 = "yy"
+Output: 1
+Explanation: 
+Swap s1[0] and s2[1], s1 = "yx", s2 = "yx".
+#+END_EXAMPLE
+
+Example 2: 
+#+BEGIN_EXAMPLE
+Input: s1 = "xy", s2 = "yx"
+Output: 2
+Explanation: 
+Swap s1[0] and s2[0], s1 = "yy", s2 = "xx".
+Swap s1[0] and s2[1], s1 = "xy", s2 = "xy".
+Note that you can't swap s1[0] and s1[1] to make s1 equal to "yx", cause we can only swap chars in different strings.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s1 = "xx", s2 = "xy"
+Output: -1
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: s1 = "xxyyxyxyxx", s2 = "xyyxyxxxyx"
+Output: 4
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s1.length, s2.length <= 1000
+- s1, s2 only contain 'x' or 'y'.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-swaps-to-make-strings-equal][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimum-swaps-to-make-strings-equal
+// Basic Ideas: array
+//  Count of the difference pair of x and y
+//  Two rules to update: 
+//     1. xx vs yy 2. xy vs yx
+// Complexity: Time O(n), Space O(1)
+func minimumSwap(s1 string, s2 string) int {
+    x, y := 0, 0
+    for i, _ := range s1 {
+        if s1[i] == s2[i] {
+            continue
+        }
+        if s1[i] == 'x' {
+            x++
+        } else {
+            y++
+        }
+    }
+    // use rule 1
+    res := x/2+y/2
+    x, y = x%2, y%2
+    if x+y == 1 {
+        return -1
+    }
+    // use rule2
+    if x+y == 2 {
+        res += 2
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

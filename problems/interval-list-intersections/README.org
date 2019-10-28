@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     mergetwolist, interval
+:type:     mergelist, interval
 :END:
 ---------------------------------------------------------------------
 Interval List Intersections
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/insert-interval][Leetcode: Insert Interval]]
 - [[https://code.dennyzhang.com/merge-two-sorted-list][Leetcode: Merge Two Sorted Lists]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/mergetwolist][#mergetwolist]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order.
 

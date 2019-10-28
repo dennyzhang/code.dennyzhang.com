@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, codetemplate, mergetwolist
+:type:     linkedlist, codetemplate, mergelist
 :END:
 ---------------------------------------------------------------------
 Merge Two Sorted Lists
@@ -12,7 +12,7 @@ Merge Two Sorted Lists
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/mergetwolist][#mergetwolist]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]]
 ---------------------------------------------------------------------
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 

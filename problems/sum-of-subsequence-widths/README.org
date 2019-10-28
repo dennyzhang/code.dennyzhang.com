@@ -47,7 +47,29 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/sum-of-subsequence-widths
-
+// Basic Ideas: dynamic programming + hashmap
+//
+//   Notice: 1 <= A[i] <= 20000
+//   Notice: the order doesn't matter
+//   Notice: For each combination, only the min and max impact the result.
+//   For each element, we know how many combination ends with it and start with it.
+//
+// Complexity: Time O(n*log(n)), Space O(1)
+import ("math"
+        "sort")
+func sumSubseqWidths(A []int) int {
+    mod := int(math.Pow(10, 9)+7)
+    sort.Ints(A)
+    res := 0
+    c := 1
+    for i, _ := range A {
+        // how many ends with v: 2^i
+        // how many starts with v: 2^(n-1-i)
+        res = (res + mod+(A[i]*c)%mod-(A[len(A)-1-i]*c)%mod)%mod
+        c = (c*2)%mod
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

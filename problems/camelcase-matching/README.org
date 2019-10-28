@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopoiner, mergetwolist
+:type:     twopoiner, mergelist
 :END:
 ---------------------------------------------------------------------
 Camelcase Matching
@@ -12,7 +12,7 @@ Camelcase Matching
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-twopoiner][#twopoiner]], [[https://code.dennyzhang.com/tag/mergetwolist][#mergetwolist]]
+- Tag: [[https://code.dennyzhang.com/review-twopoiner][#twopoiner]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]]
 ---------------------------------------------------------------------
 A query word matches a given pattern if we can insert lowercase letters to the pattern word so that it equals the query. (We may insert each character at any position, and may insert 0 characters.)
 

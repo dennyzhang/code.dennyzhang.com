@@ -1,0 +1,108 @@
+* Leetcode: Longest Absolute File Path                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     stack
+:END:
+---------------------------------------------------------------------
+Longest Absolute File Path
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-absolute-file-path"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
+---------------------------------------------------------------------
+Suppose we abstract our file system by a string in the following manner:
+
+The string "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext" represents:
+#+BEGIN_EXAMPLE
+dir
+    subdir1
+    subdir2
+        file.ext
+#+END_EXAMPLE
+
+The directory dir contains an empty sub-directory subdir1 and a sub-directory subdir2 containing a file file.ext.
+
+The string "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext" represents:
+#+BEGIN_EXAMPLE
+dir
+    subdir1
+        file1.ext
+        subsubdir1
+    subdir2
+        subsubdir2
+            file2.ext
+#+END_EXAMPLE
+
+The directory dir contains two sub-directories subdir1 and subdir2. subdir1 contains a file file1.ext and an empty second-level sub-directory subsubdir1. subdir2 contains a second-level sub-directory subsubdir2 containing a file file2.ext.
+
+We are interested in finding the longest (number of characters) absolute path to a file within our file system. For example, in the second example above, the longest absolute path is "dir/subdir2/subsubdir2/file2.ext", and its length is 32 (not including the double quotes).
+
+Given a string representing the file system in the above format, return the length of the longest absolute path to file in the abstracted file system. If there is no file in the system, return 0.
+
+Note:
+- The name of a file contains at least a . and an extension.
+- The name of a directory or sub-directory will not contain a ..
+
+Time complexity required: O(n) where n is the size of the input string.
+
+Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another path aaaaaaaaaaaaaaaaaaaaa/sth.png.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-absolute-file-path][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/longest-absolute-file-path/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-absolute-file-path
+// Basic Ideas: Stack
+// \n seperate items
+// \t defines levels
+// Length of the stack indicates stack level
+// From left to right, pass input. 
+//      If level is smaller than stack level, pop
+// Complexity: Time O(n), Space O(n)
+import "strings"
+func lengthLongestPath(input string) int {
+    l := strings.Split(input, "\n")
+    if len(l) == 0 { return 0 }
+    res := 0
+    count := -1
+    stack := []string{}
+    for _, v := range l {
+        i:=0
+        for ; i < len(v) && v[i] == '\t'; i++ {
+        }
+        level, path := i+1, v[i:]
+        // folder
+        for level <= len(stack) {
+            count -= (len(stack[len(stack)-1])+1)
+            stack = stack[0:len(stack)-1]
+        }
+        if strings.Index(path, ".") == -1 {
+            count += len(path)+1
+            stack = append(stack, path)
+        } else {
+            // collect result
+            if count+len(path)+1 > res {
+                res = count+len(path)+1
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

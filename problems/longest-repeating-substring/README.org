@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch, hashmap
+:type:     binarysearch, hashmap, rollinghash
 :END:
 ---------------------------------------------------------------------
 Longest Repeating Substring
@@ -12,7 +12,7 @@ Longest Repeating Substring
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-lrs][#lrs]], [[https://code.dennyzhang.com/tag/rollinghash][#rollinghash]]
 ---------------------------------------------------------------------
 Given a string S, find out the length of the longest repeating substring(s). Return 0 if no repeating substring exists.
 
@@ -55,6 +55,90 @@ Credits To: [[https://leetcode.com/problems/longest-repeating-substring/descript
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: Binary search by a substring length
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-repeating-substring
+// Basic Ideas: binary search + hashmap
+//   T T T T F F
+// Complexity: Time O(n*log(n)), Space O(n*n)
+func hasDuplicate(S string, width int) bool {
+    res := false
+    m := map[string]bool{}
+    // i... i+width-1 
+    for i:=0; i+width-1<len(S); i++ {
+        str := S[i:i+width]
+        if _, ok := m[str]; ok {
+            res = true
+            break
+        } else {
+            m[str] = true
+        }
+    }
+    return res
+}
+
+func longestRepeatingSubstring(S string) int {
+    left, right := 1, len(S)
+    // T, T, T, F, F
+    // Find the first false and keep updating the result
+    for left < right {
+        mid := (right-left)/2 + left
+        if hasDuplicate(S, mid) {
+            left = mid+1
+        } else {
+            right = mid
+        }
+    }
+    return left-1
+}
+#+END_SRC
+
+- Solution: Binary search by a substring length
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/longest-repeating-substring
+// Basic Ideas: binary search + hashmap
+//   T T T T F F
+// Complexity: Time O(n*log(n)), Space O(n*n)
+func hasDuplicate(S string, width int) bool {
+    res := false
+    m := map[string]bool{}
+    // i... i+width-1 
+    for i:=0; i+width-1<len(S); i++ {
+        str := S[i:i+width]
+        if _, ok := m[str]; ok {
+            res = true
+            break
+        } else {
+            m[str] = true
+        }
+    }
+    return res
+}
+
+func longestRepeatingSubstring(S string) int {
+    res := 0
+    left, right := 1, len(S)
+    // T, T, T, F, F
+    // Find the first false and keep updating the result
+    for left < right {
+        mid := (right-left)/2 + left
+        if hasDuplicate(S, mid) {
+            // right half
+            if mid > res {
+                res = mid
+            }
+            left = mid+1
+        } else {
+            right = mid
+        }
+    }
+    return res
+}
+
+#+END_SRC
+
 - Solution:
 
 #+BEGIN_SRC go

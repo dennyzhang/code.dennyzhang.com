@@ -1,0 +1,115 @@
+* Leetcode: K-th Smallest Prime Fraction                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarysearch, sortedmatrix, inspiring, redo
+:END:
+---------------------------------------------------------------------
+K-th Smallest Prime Fraction
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/k-th-smallest-prime-fraction"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-sortedmatrix][#sortedmatrix]]
+---------------------------------------------------------------------
+A sorted list A contains 1, plus some number of primes.  Then, for every p < q in the list, we consider the fraction p/q.
+
+What is the K-th smallest fraction considered?  Return your answer as an array of ints, where answer[0] = p and answer[1] = q.
+
+Examples:
+#+BEGIN_EXAMPLE
+Input: A = [1, 2, 3, 5], K = 3
+Output: [2, 5]
+Explanation:
+The fractions to be considered in sorted order are:
+1/5, 1/3, 2/5, 1/2, 3/5, 2/3.
+The third fraction is 2/5.
+#+END_EXAMPLE
+
+Input: A = [1, 7], K = 1
+Output: [1, 7]
+Note:
+
+- A will have length between 2 and 2000.
+- Each A[i] will be between 1 and 30000.
+- K will be between 1 and A.length * (A.length - 1) / 2.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/k-th-smallest-prime-fraction][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/k-th-smallest-prime-fraction/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/k-th-smallest-prime-fraction
+// Basic Ideas: binarysearch
+//
+//  kth biggest
+//
+//  Monotonic function
+//
+//   F, F, F, T, T, T, T
+//
+// Complexity: Time O(K*log(W)), Space O(1)
+//
+// How many items less than target
+func less(A []int, target float64) (count int, n1 int, n2 int) {
+    // return count, and the last combination n1/n2
+    // n1/n5, n1/n4, n1/n3, n1/n2
+    // n2/n5, n2/n4, n2/n3
+    // n3/n5, n3/n4
+    // n4/n5
+    //
+    // A[i] / A[len(A)-1-j]
+    count, n1, n2 = 0, 0, 1
+    i, j := len(A)-2, 0
+    for i>=0 && j<=len(A)-2 {
+        if float64(A[i]) < target * float64(A[len(A)-1-j]) {
+            count += i+1
+            // the biggest value which smaller than target
+            if n1*A[len(A)-1-j] < A[i]*n2 {
+                n1, n2 = A[i], A[len(A)-1-j]
+            }
+            j++
+            // whether to move up
+            if i == len(A)-1-j {
+                i--
+            }
+        } else {
+            i--
+        }
+    }
+    return
+}
+
+func kthSmallestPrimeFraction(A []int, K int) []int {
+    left, right := float64(0), float64(1)
+    count, n1, n2 := 0, 0, 0
+    res := []int{}
+    for right-left > 0.00000001 {
+        mid := (right-left)/2+left
+        count, n1, n2 = less(A, mid)
+        if count < K {
+            // right half
+            left = mid
+        } else {
+            // left half
+            right = mid
+            res = []int{n1, n2}
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,0 +1,156 @@
+* Leetcode: Largest 1-Bordered Square                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Largest 1-Bordered Square
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-1-bordered-square"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given a 2D grid of 0s and 1s, return the number of elements in the largest square subgrid that has all 1s on its border, or 0 if such a subgrid doesn't exist in the grid.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: grid = [[1,1,1],[1,0,1],[1,1,1]]
+Output: 9
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: grid = [[1,1,0,0]]
+Output: 1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= grid.length <= 100
+- 1 <= grid[0].length <= 100
+- grid[i][j] is 0 or 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-1-bordered-square][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/largest-1-bordered-square/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: Merge two pass into one
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/largest-1-bordered-square
+// Basic Ideas: array
+//
+// lefts(i, j): how may 1s on the left
+// ups(i, j): how many 1s in the up
+//
+// Complexity: Time O(n*m*(min(n, m))) Space O(n*m)
+func largest1BorderedSquare(grid [][]int) int {
+    lefts := make([][]int, len(grid))
+    ups := make([][]int, len(grid))
+    for i, _ := range grid {
+        lefts[i] = make([]int, len(grid[0]))
+        ups[i] = make([]int, len(grid[0]))
+    }
+
+    res := 0
+    for i, row := range grid {
+        for j, v := range row {
+            if v == 0 {
+                continue
+            }
+            lefts[i][j] = 1
+            ups[i][j] = 1
+            if i>0 {
+                ups[i][j] += ups[i-1][j] 
+            }
+            if j>0 {
+                lefts[i][j] += lefts[i][j-1]
+            }
+            // treat each point as the right-bottom node
+            width := lefts[i][j]
+            if ups[i][j] < width {
+                width = ups[i][j]
+            }
+            for ; width>1; width-- {
+                // Check left-bottom node and right-up node
+                if ups[i][j-width+1] >= width && lefts[i-width+1][j] >= width {
+                    break
+                }
+            }
+            if width > res {
+                res = width
+            }
+        }
+    }
+    return res*res
+}
+#+END_SRC
+
+- Solution: Two pass
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/largest-1-bordered-square
+// Basic Ideas: array
+//
+// lefts(i, j): how may 1s on the left
+// ups(i, j): how many 1s in the up
+//
+// Complexity: Time O(n*m*(min(n, m))) Space O(n*m)
+func largest1BorderedSquare(grid [][]int) int {
+    lefts := make([][]int, len(grid))
+    ups := make([][]int, len(grid))
+    for i, _ := range grid {
+        lefts[i] = make([]int, len(grid[0]))
+        ups[i] = make([]int, len(grid[0]))
+    }
+
+    for i, row := range grid {
+        for j, v := range row {
+            if v == 1 {
+                lefts[i][j] = 1
+                ups[i][j] = 1
+                if i>0 {
+                    ups[i][j] += ups[i-1][j] 
+                }
+                if j>0 {
+                    lefts[i][j] += lefts[i][j-1]
+                }
+            }
+        }
+    }
+    res := 0
+    // treat each point as the right-bottom node
+    for i, row := range grid {
+        for j, _ := range row {
+            width := lefts[i][j]
+            if ups[i][j] < width {
+                width = ups[i][j]
+            }
+            for ; width>1; width-- {
+                // Check left-bottom node and right-up node
+                if ups[i][j-width+1] >= width && lefts[i-width+1][j] >= width {
+                    break
+                }
+            }
+            if width > res {
+                res = width
+            }
+        }
+    }
+    return res*res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

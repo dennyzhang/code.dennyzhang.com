@@ -16,9 +16,8 @@ Similar Problems:
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/knapsack][#knapsack]]
 ---------------------------------------------------------------------
 Description
-#+BEGIN_EXAMPLE
+
 There is now an order with demand for n items, and the demand for the i-th item is order[i]. The factory has m production modes. Each production mode is shaped like [p[1],p[2],...p[n]], that is, produce p[1] first items, p[2] second items... You can use multiple production modes. Please tell me how many items do not meet the demand at least in the case of not exceeding the demand of any kind of items?
-#+END_EXAMPLE
 
 - 1 <= n, m <= 7
 - 1 <= order[i] <= 10

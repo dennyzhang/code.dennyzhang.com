@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval
+:type:     interval, mergelist
 :END:
 ---------------------------------------------------------------------
 Merge Intervals
@@ -12,7 +12,7 @@ Merge Intervals
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]]
 ---------------------------------------------------------------------
 Given a collection of intervals, merge all overlapping intervals.
 

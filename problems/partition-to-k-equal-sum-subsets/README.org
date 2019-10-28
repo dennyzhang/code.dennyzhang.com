@@ -34,10 +34,56 @@ Credits To: [[https://leetcode.com/problems/partition-to-k-equal-sum-subsets/des
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: backtracking + start with the biggest ones
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/partition-to-k-equal-sum-subsets
+// Basic Ideas: backtracking
+//
+//  Apparently total sum should be able to be divided by k
+//
+// Complexity: Time ? Space ?
+import "sort"
+func dfs(pos int, nums[]int, target int, sum int, k int) bool {
+    if target == sum {
+        if k == 1 {
+            return true
+        } else {
+            return dfs(0, nums, target, 0, k-1)
+        }
+    }
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/partition-to-k-equal-sum-subsets
+    if pos == len(nums) {
+        return false
+    }
 
+    for i:=pos; i<len(nums); i++ {
+        // choose an item
+        v := nums[i]
+        if v != 0 && sum + v <= target {
+            nums[i] = 0
+            if dfs(i+1, nums, target, sum+v, k) {
+                return true
+            }
+            nums[i] = v
+        }
+    }
+    return false
+}
+
+func canPartitionKSubsets(nums []int, k int) bool {
+    sort.Slice(nums, func(i, j int) bool {
+        return nums[i]>nums[j]
+    })
+    sum := 0
+    for _, v := range nums {
+        sum += v
+    }
+    target := sum/k
+    if sum % k != 0 || nums[0] > target {
+        return false
+    }
+    return dfs(0, nums, target, 0, k)
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, redo
+:type:     dynamicprogramming, reachpoint, redo
 :END:
 ---------------------------------------------------------------------
 2 Keys Keyboard
@@ -13,7 +13,7 @@
 Similar Problems:
 - [[https://code.dennyzhang.com/integer-break][Integer Break]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-reachpoint][#reachpoint]]
 ---------------------------------------------------------------------
 Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:
 

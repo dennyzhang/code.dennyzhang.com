@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     stack, designstack, bucketsort
+:type:     stack, designstack, bucketsort, lfu
 :END:
 ---------------------------------------------------------------------
 Maximum Frequency Stack
@@ -11,9 +11,10 @@ Maximum Frequency Stack
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-frequency-stack"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/lfu-cache][Leetcode: LFU Cache]]
 - [[https://code.dennyzhang.com/max-stack][Leetcode: Max Stack]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-designstack][#designstack]], [[https://code.dennyzhang.com/review-bucketsort][#bucketsort]]
+- Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-designstack][#designstack]], [[https://code.dennyzhang.com/review-bucketsort][#bucketsort]], [[https://code.dennyzhang.com/followup-lfu][#lfu]]
 ---------------------------------------------------------------------
 Implement FreqStack, a class which simulates the operation of a stack-like data structure.
 

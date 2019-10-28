@@ -1,0 +1,121 @@
+* Leetcode: Reconstruct a 2-Row Binary Matrix                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Reconstruct a 2-Row Binary Matrix
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reconstruct-a-2-row-binary-matrix"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given the following details of a matrix with n columns and 2 rows :
+
+The matrix is a binary matrix, which means each element in the matrix can be 0 or 1.
+The sum of elements of the 0-th(upper) row is given as upper.
+The sum of elements of the 1-st(lower) row is given as lower.
+The sum of elements in the i-th column(0-indexed) is colsum[i], where colsum is given as an integer array with length n.
+Your task is to reconstruct the matrix with upper, lower and colsum.
+
+Return it as a 2-D integer array.
+
+If there are more than one valid solution, any of them will be accepted.
+
+If no valid solution exists, return an empty 2-D array.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: upper = 2, lower = 1, colsum = [1,1,1]
+Output: [[1,1,0],[0,0,1]]
+Explanation: [[1,0,1],[0,1,0]], and [[0,1,1],[1,0,0]] are also correct answers.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: upper = 2, lower = 3, colsum = [2,2,1,1]
+Output: []
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: upper = 5, lower = 5, colsum = [2,1,2,0,1,0,1,2,0,1]
+Output: [[1,1,1,0,1,0,0,1,0,0],[1,0,1,0,0,0,1,1,0,1]]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= colsum.length <= 10^5
+- 0 <= upper, lower <= colsum.length
+- 0 <= colsum[i] <= 2
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reconstruct-a-2-row-binary-matrix][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/reconstruct-a-2-row-binary-matrix
+// Basic Ideas: construct
+// Complexity: Time O(m), Space O(m*2)
+func reconstructMatrix(upper int, lower int, colsum []int) [][]int {
+    res := make([][]int, 2)
+    for i, _ := range res {
+        res[i] = make([]int, len(colsum))
+    }
+    for j, v := range colsum{
+        if v == 0 {
+            continue
+        }
+        if v == 2 {
+            upper--
+            lower--
+            res[0][j]=1
+            res[1][j]=1
+			if upper<0 || lower<0 {
+				return [][]int{}
+			}
+        }
+	}
+
+    j:=0
+	for ; j<len(colsum); j++ {
+		v := colsum[j]
+		if v != 1 {
+			continue
+		}
+        if upper+lower==0 {
+            break
+        }
+        if upper>0 {
+            res[0][j]=1
+            upper--
+        } else {
+            if lower>0 {
+                res[1][j]=1
+                lower--
+            }
+        }
+    }
+    if j==len(colsum) && upper==0 && lower==0 {
+        return res
+    } else {
+        return [][]int{}
+    }
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

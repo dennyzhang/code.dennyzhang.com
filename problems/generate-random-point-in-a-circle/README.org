@@ -1,0 +1,95 @@
+* Leetcode: Generate Random Point in a Circle                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     random
+:END:
+---------------------------------------------------------------------
+Generate Random Point in a Circle
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/generate-random-point-in-a-circle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-random][#random]]
+---------------------------------------------------------------------
+Given the radius and x-y positions of the center of a circle, write a function randPoint which generates a uniform random point in the circle.
+
+Note:
+
+1. input and output values are in floating-point.
+- radius and x-y position of the center of the circle is passed into the class constructor.
+- a point on the circumference of the circle is considered to be in the circle.
+- randPoint returns a size 2 array containing x-position and y-position of the random point, in that order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+["Solution","randPoint","randPoint","randPoint"]
+[[1,0,0],[],[],[]]
+Output: [null,[-0.72939,-0.65505],[-0.78502,-0.28626],[-0.83119,-0.19803]]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+["Solution","randPoint","randPoint","randPoint"]
+[[10,5,-7.5],[],[],[]]
+Output: [null,[11.52438,-8.33273],[2.46992,-16.21705],[11.13430,-12.42337]]
+#+END_EXAMPLE
+
+Explanation of Input Syntax:
+
+The input is two lists: the subroutines called and their arguments. Solution's constructor has three arguments, the radius, x-position of the center, and y-position of the center of the circle. randPoint has no arguments. Arguments are always wrapped with a list, even if there aren't any.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/generate-random-point-in-a-circle][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/generate-random-point-in-a-circle/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/generate-random-point-in-a-circle
+// Basic Ideas:
+//  Generate two rand value from [0, 2*r]. 
+//  Denotes as (x, y)
+//  If (x-r)*(x-r)+(y-r)*(y-r)>r*r, regenerate the pair
+//
+// Complexity: Time ?, Space O(1)
+import "math/rand"
+type Solution struct {
+    radius float64
+    x_center float64
+    y_center float64
+}
+
+func Constructor(radius float64, x_center float64, y_center float64) Solution {
+    return Solution{radius:radius, x_center:x_center, y_center:y_center}
+}
+
+func (this *Solution) RandPoint() []float64 {
+    r := this.radius
+    x, y := 2*r, 2*r
+    for (x-r)*(x-r) + (y-r)*(y-r)>r*r {
+        x, y = rand.Float64()*2*r, rand.Float64()*2*r
+    }
+    return []float64{x-r+this.x_center, y-r+this.y_center}
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * obj := Constructor(radius, x_center, y_center);
+ * param_1 := obj.RandPoint();
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

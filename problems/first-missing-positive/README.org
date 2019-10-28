@@ -2,10 +2,17 @@
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 #+STARTUP: showeverything
 :PROPERTIES:
-:type:     findnumber
+:type:     findnumber, classic, redo
 :END:
 ---------------------------------------------------------------------
 Find first positive integer
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/missing-element-in-sorted-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/findnumber][#findnumber]]
 ---------------------------------------------------------------------
 Given an unsorted integer array, find the first missing positive integer.
 
@@ -23,9 +30,42 @@ Credits To: [[https://leetcode.com/problems/first-missing-positive/description/]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/first-missing-positive
+// Basic Ideas: Index as a hash key
+//
+//  For valid value of i, put it to the place of i-1
+//
+// Complexity: Time O(n) Space O(1)
+func firstMissingPositive(nums []int) int {
+    for i, v := range nums {
+        if v<1 || v>len(nums) || v == i+1 {
+            continue
+        }
+        // when stop searching: find a match, or invalid value
+        for j:=nums[i]-1; nums[j]!=j+1; {
+            if nums[j]<1 || nums[j]>len(nums) {
+                nums[j] = j+1
+                break
+            }
+            j, nums[j] = nums[j]-1, j+1
+        }
+    }
+    for i, v := range nums {
+        if i+1 != v {
+            return i+1
+        }
+    }
+    return len(nums)+1
+}
+#+END_SRC
+
+- Solution
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/first-missing-positive
-## Basic Ideas: count sort. Put each number in its right place.
+## Basic Ideas: Put each number in its right place.
 ##    Sample Data:
 ##    1  2  0
 ##    3  4  0  1

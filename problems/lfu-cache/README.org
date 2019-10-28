@@ -1,0 +1,185 @@
+* Leetcode: LFU Cache                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     oodesign, linkedlist, lfu
+:END:
+---------------------------------------------------------------------
+LFU Cache
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/lfu-cache"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/maximum-frequency-stack][Leetcode: Maximum Frequency Stack]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/followup-lfu][#lfu]]
+---------------------------------------------------------------------
+Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and put.
+
+- get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+- put(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, when there is a tie (i.e., two or more keys that have the same frequency), the least recently used key would be evicted.
+
+Note that the number of times an item is used is the number of calls to the get and put functions for that item since it was inserted. This number is set to zero when the item is removed.
+ 
+Follow up:
+Could you do both operations in O(1) time complexity?
+
+Example:
+#+BEGIN_EXAMPLE
+LFUCache cache = new LFUCache( 2 /* capacity */ );
+
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // returns 1
+cache.put(3, 3);    // evicts key 2
+cache.get(2);       // returns -1 (not found)
+cache.get(3);       // returns 3.
+cache.put(4, 4);    // evicts key 1.
+cache.get(1);       // returns -1 (not found)
+cache.get(3);       // returns 3
+cache.get(4);       // returns 4
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/lfu-cache][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/lfu-cache/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/lfu-cache
+// Basic Ideas: double linkedlist + hashmap
+//
+//  Notice: double linkedlist works, but linkedlist won't
+//    This is because we the previous node will be modified
+//  Notice: Nodes need to be sorted by frequency.
+//  Notice: To initialize a double linkedlist, we only need one node, instead of two
+//
+// How to update the frequent?
+//   When get or put, increase it by 1.
+//
+// How to find the node to be evicted? minFreq
+//   When a new node, minFreq set to be 1.
+//   The pattern of minFreq: 
+//     1. It keeps growing with 1 step.
+//     2. Reset to 1. Then go to step1
+//
+// Question: what if freq grows too large?
+//
+// Complexity: Time O(1), Space O(1)
+type DLinkedListNode struct {
+    freq int
+    key int
+    val int
+    prev *DLinkedListNode
+    next *DLinkedListNode
+}
+
+type LFUCache struct {
+    capacity int
+    nodes map[int]*DLinkedListNode
+    lists map[int]*DLinkedListNode
+    minList int
+}
+
+func Constructor(capacity int) LFUCache {
+    return LFUCache{capacity:capacity, 
+                    nodes:map[int]*DLinkedListNode{},
+                    lists:map[int]*DLinkedListNode{}, 
+                    minList:0}
+}
+
+func (this *LFUCache) Del(node *DLinkedListNode) {
+    if node == nil {
+        return
+    }
+    prev, next := node.prev, node.next
+    // prev <-> node <-> next
+    prev.next = next
+    next.prev = prev
+    // After the deletion, the chain would be empty
+    head := this.lists[this.minList]
+    if node.freq == this.minList && head.next == head {
+        // Only cause hitting this: increase freq to another one
+        this.minList++
+    }
+    delete(this.nodes, node.key)
+}
+
+func (this *LFUCache) AddTail(node *DLinkedListNode) {
+    if node == nil {
+        return
+    }
+    
+    if node.freq == 1 {
+        // reset the evicted position
+        this.minList = 1
+    }
+    if _, ok := this.lists[node.freq]; !ok {
+        dummyNode := &DLinkedListNode{}
+        dummyNode.next = dummyNode
+        dummyNode.prev = dummyNode
+        this.lists[node.freq] = dummyNode
+    }
+    // add to tail
+    head := this.lists[node.freq]
+    tail := this.lists[node.freq].prev
+    node.next, node.prev = head, tail
+    tail.next, head.prev = node, node
+    // update hashmap
+    this.nodes[node.key] = node
+}
+
+func (this *LFUCache) Get(key int) int {
+    res := -1
+    if node, ok := this.nodes[key]; ok {
+        // move the node
+        this.Del(node)
+        node.freq++
+        this.AddTail(node)
+        res = node.val
+    }
+    return res
+}
+
+func (this *LFUCache) Put(key int, value int) {
+    if node, ok := this.nodes[key]; !ok {
+        if this.capacity == 0 {
+            if this.minList == 0 {
+                // no enough capacity
+                return
+            }
+            // evict one node
+            oldNode := this.lists[this.minList].next
+            this.Del(oldNode)
+        } else {
+            this.capacity--
+        }
+        // add new one
+        node = &DLinkedListNode{key: key, freq:1, val:value}
+        this.AddTail(node)
+    } else {
+        // adjust
+        node.val = value
+        this.Get(key)
+    }
+}
+
+/**
+ * Your LFUCache object will be instantiated and called as such:
+ * obj := Constructor(capacity);
+ * param_1 := obj.Get(key);
+ * obj.Put(key,value);
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

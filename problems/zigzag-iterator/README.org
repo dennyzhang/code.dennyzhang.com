@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     iterator
+:type:     iterator, redo
 :END:
 ---------------------------------------------------------------------
 Zigzag Iterator
@@ -47,26 +47,95 @@ Credits To: [[https://leetcode.com/problems/zigzag-iterator/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: Use queue
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/zigzag-iterator
+## Basic Ideas: array
+##
+## Complexity: Time O(1), Space O(1)
+class ZigzagIterator(object):
+    def __init__(self, v1, v2):
+        """
+        Initialize your data structure here.
+        :type v1: List[int]
+        :type v2: List[int]
+        """
+        self.queue = collections.deque([])
+        if len(v1) != 0:
+            self.queue.append((0, v1))
+        if len(v2) != 0:
+            self.queue.append((0, v2))
+        
+    def next(self):
+        """
+        :rtype: int
+        """
+        (i, v) = self.queue.popleft()
+        res = v[i]
+        i += 1
+        if i != len(v):
+            self.queue.append((i, v))
+        return res
 
-#+END_EXAMPLE
+    def hasNext(self):
+        """
+        :rtype: bool
+        """
+        return len(self.queue) != 0
 
-*Key Observations:*
-#+BEGIN_EXAMPLE
+# Your ZigzagIterator object will be instantiated and called as such:
+# i, v = ZigzagIterator(v1, v2), []
+# while i.hasNext(): v.append(i.next())
+#+END_SRC
 
-#+END_EXAMPLE
+- Solution: Use list
 
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/zigzag-iterator
+## Basic Ideas: array
+##
+## Complexity: Time O(1), Space O(1)
+class ZigzagIterator(object):
+    def __init__(self, v1, v2):
+        """
+        Initialize your data structure here.
+        :type v1: List[int]
+        :type v2: List[int]
+        """
+        self.l = [v1, v2]
+        self.indices = [0, 0]
+        self.pos = 0
+        
+    def next(self):
+        """
+        :rtype: int
+        """
+        # skip finished list
+        if self.indices[self.pos] == len(self.l[self.pos]):
+            self.pos = (self.pos + 1)%len(self.l)
+        
+        index = self.indices[self.pos]
+        res = self.l[self.pos][index]
+        self.indices[self.pos] += 1
+        # flip pointer
+        self.pos = (self.pos + 1)%len(self.l)
 
-#+END_EXAMPLE
+        # TODO: how to avoid the overhead of finished list
+        return res
 
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/zigzag-iterator
+    def hasNext(self):
+        """
+        :rtype: bool
+        """
+        for i in range(len(self.l)):
+            if self.indices[i] != len(self.l[i]):
+                return True
+        return False
 
+# Your ZigzagIterator object will be instantiated and called as such:
+# i, v = ZigzagIterator(v1, v2), []
+# while i.hasNext(): v.append(i.next())
 #+END_SRC
 
 #+BEGIN_HTML

@@ -84,7 +84,7 @@ for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "READM
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/binarysearch\]\[#binarysearch\]\]!\[\[https://code.dennyzhang.com/review-binarysearch\]\[#binarysearch\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/combination\]\[#combination\]\]!\[\[https://code.dennyzhang.com/review-combination\]\[#combination\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/complexity\]\[#complexity\]\]!\[\[https://code.dennyzhang.com/review-complexity\]\[#complexity\]\]!g' $f
-    sed -i "" 's!\[\[https://code.dennyzhang.com/tag/concurrency\]\[#concurrency\]\]!\[\[https://code.dennyzhang.com/review-concurrency\]\[#concurrency\]\]!g' $f
+    sed -i "" 's!\[\[https://code.dennyzhang.com/review-multithread\]\[#concurrency\]\]!\[\[https://code.dennyzhang.com/review-concurrency\]\[#concurrency\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/dfs\]\[#dfs\]\]!\[\[https://code.dennyzhang.com/review-dfs\]\[#dfs\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/divideconquer\]\[#divideconquer\]\]!\[\[https://code.dennyzhang.com/review-divideconquer\]\[#divideconquer\]\]!g' $f
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/game\]\[#game\]\]!\[\[https://code.dennyzhang.com/review-game\]\[#game\]\]!g' $f
@@ -305,9 +305,7 @@ Boundary of the small dataset
 * TODO [#A] Besides tag: add series or review links automatically: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:
 * TODO generate series [[https://code.dennyzhang.com/tag/walkrobot][#walkrobot]], [[https://code.dennyzhang.com/tag/wiggle][#wiggle]]                         :noexport:
 * TODO sereie: maximum https://leetcode.com/problems/maximum-sum-circular-subarray/description/ :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] code.dennyzhang.com: elisp save hook, make sure list-post-meta-new create folders; set url link :noexport:
-* TODO doc: classic 0-1 bag                                        :noexport:
 * TODO doc: trending feeds: sliding window的Top K                  :noexport:
 https://pkghosh.wordpress.com/2014/09/10/realtime-trending-analysis-with-approximate-algorithms/
 http://www.michael-noll.com/blog/2013/01/18/implementing-real-time-trending-topics-in-storm/
@@ -318,7 +316,6 @@ https://techcrunch.com/2016/09/06/ultimate-guide-to-the-news-feed/
 i see
  Bo Yang
 统计前一分钟Top 10的热搜, sth like that :)
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] google adsense image icon: https://code.dennyzhang.com/ :noexport:
 <<<<<<< HEAD
 * HALF classic: doc: sort one array, according to another array: https://leetcode.com/problems/find-and-replace-in-string/description/ :noexport:
@@ -327,9 +324,6 @@ i see
 * graph                                                            :noexport:
 - travel salemen
 - shortest distance
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO doc: LCA = lowest common ancestor                           :noexport:
-* TODO Merge two posts: https://code.dennyzhang.com/review-code-problems, https://code.dennyzhang.com/followup-all :noexport:
 * rearrange: https://code.dennyzhang.com/tag/rearrange             :noexport:
 ** Rearrange a string so that all same characters become at least d distance away
 https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-atleast-d-distance-away/
@@ -338,14 +332,12 @@ https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
 ** Rearrange a string so that all same characters become d distance away
 https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-at-least-d-distance-away/
 * TODO combination & permutation                                   :noexport:
-* TODO LSI: longest increasing subsequence                         :noexport:
 * TODO tree traversal                                              :noexport:
 https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Programming,_Operating_Systems,_Databases_and_Networking/Programming_Concepts/Tree_traversal_algorithms_for_a_binary_tree
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Review: bitmanipulation: https://code.dennyzhang.com/review-bitmanipulation/ :noexport:
 * TODO Review: rotateoperation: https://code.dennyzhang.com/tag/rotateoperation/ :noexport:
 * TODO Questions with easy way to do follow-up                     :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO YouTube: https://www.youtube.com/user/xxfflower/playlists   :noexport:
 * TODO https://en.wikipedia.org/wiki/Category:Optimization_algorithms_and_methods :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
@@ -380,3 +372,7 @@ https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/discus
 https://code.dennyzhang.com/remove-all-adjacent-duplicates-in-string-ii
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Code website: adsense doesn't show up quickly          :noexport:
+* TODO make code block bigger                                      :noexport:
+https://code.dennyzhang.com/web-crawler-multithreaded
+* TODO Merge two posts: https://code.dennyzhang.com/review-code-problems, https://code.dennyzhang.com/followup-all :noexport:
+* TODO make the css block longer: https://architect.dennyzhang.com/explain-delayedqueue :noexport:

@@ -1,0 +1,140 @@
+* Leetcode: Tree Diameter                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dfs, bfs, graph
+:END:
+---------------------------------------------------------------------
+Tree Diameter
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/tree-diameter"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-graph][#graph]]
+---------------------------------------------------------------------
+Given an undirected tree, return its diameter: the number of edges in a longest path in that tree.
+
+The tree is given as an array of edges where edges[i] = [u, v] is a bidirectional edge between nodes u and v.  Each node has labels in the set {0, 1, ..., edges.length}.
+
+ 
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: edges = [[0,1],[0,2]]
+Output: 2
+Explanation: 
+A longest path of the tree is the path 1 - 0 - 2.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: edges = [[0,1],[1,2],[2,3],[1,4],[4,5]]
+Output: 4
+Explanation: 
+A longest path of the tree is the path 3 - 2 - 1 - 4 - 5.
+#+END_EXAMPLE
+
+Constraints:
+
+- 0 <= edges.length < 10^4
+- edges[i][0] != edges[i][1]
+- 0 <= edges[i][j] <= edges.length
+- The given edges form an undirected tree.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/tree-diameter][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/tree-diameter/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: dfs with array
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/tree-diameter
+// Basic Ideas: dfs
+//  It's a tree. So it's fully connected and there is no circle
+//
+// Complexity: Time O(n), Space O(n)
+func dfs(start int, dis int, res *int, end *int, states [][]int, visited map[int]bool) {
+    if visited[start] {
+        return
+    }
+    visited[start] = true
+    if dis+1>*res {
+        *res = dis
+        *end = start
+    }
+    for _, node := range states[start] {
+        dfs(node, dis+1, res, end, states, visited)
+    }
+}
+
+func treeDiameter(edges [][]int) int {
+    states := make([][]int, len(edges)+1)
+    for _, edge := range edges {
+        n1, n2 := edge[0], edge[1]
+        states[n1] = append(states[n1], n2)
+        states[n2] = append(states[n2], n1)
+    }
+    res := 0
+    e := 0
+    dfs(0, 0, &res, &e, states, map[int]bool{})  
+    dfs(e, 0, &res, &e, states, map[int]bool{})
+    return res
+}
+#+END_SRC
+
+- Solution: dfs with hashmap
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/tree-diameter
+// Basic Ideas: dfs
+//  It's a tree. So it's fully connected and there is no circle
+//
+// Complexity: Time O(n), Space O(n)
+func dfs(start int, dis int, res *int, end *int, m map[int]map[int]bool, visited map[int]bool) {
+    if visited[start] {
+        return
+    }
+    visited[start] = true
+
+    if dis+1>*res {
+        *res = dis
+        *end = start
+    }
+
+    for node, _ := range m[start] {
+        dfs(node, dis+1, res, end, m, visited)
+    }
+}
+
+func treeDiameter(edges [][]int) int {
+    m := map[int]map[int]bool{}
+    for _, edge := range edges {
+        n1, n2 := edge[0], edge[1]
+        if _, ok := m[n1]; !ok {
+            m[n1] = map[int]bool{}
+        }
+        if _, ok := m[n2]; !ok {
+            m[n2] = map[int]bool{}
+        }
+        m[n1][n2] = true
+        m[n2][n1] = true
+    }
+    res := 0
+    e := 0
+    dfs(0, 0, &res, &e, m, map[int]bool{})  
+    dfs(e, 0, &res, &e, m, map[int]bool{})
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
