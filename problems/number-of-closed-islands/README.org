@@ -19,7 +19,7 @@ Given a 2D grid consists of 0s (land) and 1s (water).  An island is a maximal 4-
 Return the number of closed islands.
  
 Example 1:
-[[image-blog:Leetcode: Number of Closed Islands][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/number-of-closed-islands/1.png]]
+[[image-blog:Leetcode: Number of Closed Islands][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/number-of-closed-islands/pic1.png]]
 #+BEGIN_EXAMPLE
 Input: grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]
 Output: 2
@@ -28,7 +28,7 @@ Islands in gray are closed because they are completely surrounded by water (grou
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Leetcode: Number of Closed Islands][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/number-of-closed-islands/2.png]]
+[[image-blog:Leetcode: Number of Closed Islands][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/number-of-closed-islands/pic2.png]]
 #+BEGIN_EXAMPLE
 Input: grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]
 Output: 1

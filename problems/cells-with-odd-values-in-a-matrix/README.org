@@ -19,7 +19,7 @@ Given n and m which are the dimensions of a matrix initialized by zeros and give
 Return the number of cells with odd values in the matrix after applying the increment to all indices.
 
 Example 1:
-[[image-blog:Leetcode: Cells with Odd Values in a Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/cells-with-odd-values-in-a-matrix/e1.png]]
+[[image-blog:Leetcode: Cells with Odd Values in a Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/cells-with-odd-values-in-a-matrix/1.png]]
 #+BEGIN_EXAMPLE
 Input: n = 2, m = 3, indices = [[0,1],[1,1]]
 Output: 6
@@ -29,7 +29,7 @@ The final matrix will be [[1,3,1],[1,3,1]] which contains 6 odd numbers.
 #+END_EXAMPLE
 
 Example 2:
-[[image-blog:Leetcode: Cells with Odd Values in a Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/cells-with-odd-values-in-a-matrix/e2.png]]
+[[image-blog:Leetcode: Cells with Odd Values in a Matrix][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/cells-with-odd-values-in-a-matrix/2.png]]
 #+BEGIN_EXAMPLE
 Input: n = 2, m = 2, indices = [[1,1],[0,0]]
 Output: 0
