@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, greedy
+:type:     interval, greedy, redo
 :END:
 ---------------------------------------------------------------------
 Smallest Range II
@@ -56,24 +56,44 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/smallest-range-ii
+// Basic Ideas: greedy
+//
+//   Sort the list. The initial difference is A[N-1]-A[0]
+//
+//   Try to add for small values, subtract for big values
+//   For the biggest value, we always substract. 
+//   And for the smallest, we always add.
+//
+// Complexity: Time O(n*log(n)), Space O(1)
+import "sort"
+func min(x, y int)int {
+    if x>y {
+        return y
+    } else {
+        return x
+    }
+}
 
+func max(x, y int)int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func smallestRangeII(A []int, K int) int {
+    sort.Ints(A)
+    res := A[len(A)-1]-A[0]
+    for i:=0; i+1<len(A); i++ {
+        high := max(A[len(A)-1]-K, A[i]+K)
+        low := min(A[0]+K, A[i+1]-K)
+        res = min(res, high-low)
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

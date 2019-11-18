@@ -1,0 +1,82 @@
+* Leetcode: Smallest Integer Divisible by K                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math, hashmap
+:END:
+---------------------------------------------------------------------
+Smallest Integer Divisible by K
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-integer-divisible-by-k"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Given a positive integer K, you need find the smallest positive integer N such that N is divisible by K, and N only contains the digit 1.
+
+Return the length of N.  If there is no such N, return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 1
+Output: 1
+Explanation: The smallest answer is N = 1, which has length 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 2
+Output: -1
+Explanation: There is no such positive integer N divisible by 2.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: 3
+Output: 3
+Explanation: The smallest answer is N = 111, which has length 3.
+#+END_EXAMPLE
+ 
+Note:
+
+- 1 <= K <= 10^5
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-integer-divisible-by-k][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/smallest-integer-divisible-by-k/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/smallest-integer-divisible-by-k
+// Basic Ideas: math
+//
+// Complexity: Time O(m), Space O(m)
+func smallestRepunitDivByK(K int) int {
+    res := 1
+    remainder := 1%K
+    seen := map[int]bool{}
+    seen[remainder] = true
+    for remainder != 0 {
+        remainder = (remainder*10+1)%K
+        if _, ok := seen[remainder]; ok {
+            return -1
+        }
+        seen[remainder] = true
+        res++
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

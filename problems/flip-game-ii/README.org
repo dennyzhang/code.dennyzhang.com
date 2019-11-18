@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, string
+:type:     game, string, redo
 :END:
 ---------------------------------------------------------------------
 Flip Game II
@@ -15,7 +15,19 @@ Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+You are playing the following Flip Game with your friend: Given a string that contains only these two characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move and therefore the other person will be the winner.
+
+Write a function to determine if the starting player can guarantee a win.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: s = "++++"
+Output: true 
+Explanation: The starting player can guarantee a win by flipping the middle "++" to become "+--+".
+#+END_EXAMPLE
+
+Follow up:
+Derive your algorithm's runtime complexity.
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/flip-game-ii][code.dennyzhang.com]]
 
@@ -26,7 +38,23 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/flip-game-ii
-
+// Basic Ideas: simulation
+//
+// Complexity: Time ? Space ?
+func canWin(s string) bool {
+    if len(s) <= 1 {
+        return false
+    }
+    for i:=0; i+1<len(s); i++ {
+        if s[i] == '+' && s[i+1] == '+' {
+            s2 := s[0:i] + "--" + s[i+2:]
+            if !canWin(s2) {
+                return true
+            }
+        }
+    }
+    return false
+}
 #+END_SRC
 
 #+BEGIN_HTML
