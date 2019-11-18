@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     zigzag, baseconversion, iterator
+:type:     zigzag, baseconversion, iterator, manydetails
 :END:
 ---------------------------------------------------------------------
 ZigZag Conversion
@@ -52,15 +52,42 @@ Credits To: [[https://leetcode.com/problems/zigzag-conversion/description/][leet
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/zigzag-conversion
-class Solution(object):
-    def convert(self, s, numRows):
-        """
-        :type s: str
-        :type numRows: int
-        :rtype: str
-        """
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/zigzag-conversion
+// Basic Ideas: array
+//
+// Complexity: Time O(n) Space O(n)
+func convert(s string, numRows int) string {
+    if numRows == 1 {
+        return s
+    }
+    l := make([][]byte, numRows)
+    i := 0
+    isUp := false
+    for k:=0; k<len(s); k++ {
+        l[i] = append(l[i], s[k])
+        if i == numRows -1 {
+            i--
+            isUp = !isUp
+        } else {
+            if i == 0 && isUp {
+                i++
+                isUp = !isUp
+            } else {
+                if isUp {
+                    i--
+                } else {
+                    i++
+                }
+            }
+        }
+    }
+    res := ""
+    for _, row := range l {
+        res += string(row)
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

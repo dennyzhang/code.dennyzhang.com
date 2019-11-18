@@ -1,0 +1,105 @@
+* Leetcode: Split Concatenated Strings                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, greedy
+:END:
+---------------------------------------------------------------------
+Split Concatenated Strings
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/split-concatenated-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Given a list of strings, you could concatenate these strings together into a loop, where for each string you could choose to reverse it or not. Among all the possible loops, you need to find the lexicographically biggest string after cutting the loop, which will make the looped string into a regular one.
+
+Specifically, to find the lexicographically biggest string, you need to experience two phases:
+
+1. Concatenate all the strings into a loop, where you can reverse some strings or not and connect them in the same order as given.
+- Cut and make one breakpoint in any place of the loop, which will make the looped string into a regular one starting from the character at the cutpoint.
+
+And your job is to find the lexicographically biggest one among all the possible regular strings.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: "abc", "xyz"
+Output: "zyxcba"
+Explanation: You can get the looped string "-abcxyz-", "-abczyx-", "-cbaxyz-", "-cbazyx-", 
+where '-' represents the looped status. 
+The answer string came from the fourth looped one, 
+where you could cut from the middle character 'a' and get "zyxcba".
+#+END_EXAMPLE
+
+Note:
+1. The input strings will only contain lowercase letters.
+- The total length of all the strings will not over 1,000.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/split-concatenated-strings][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/split-concatenated-strings/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/split-concatenated-strings
+// Basic Ideas:
+//
+//  Notice:  For non-splited ones, we can always 
+//    choose the bigger one original or reversed version.
+//
+// Complexity: Time O(n^2), Space O(n)
+func reverse(bytes []byte) {
+    left, right := 0, len(bytes)-1
+    for left<right {
+        bytes[left], bytes[right] = bytes[right], bytes[left]
+        left, right = left+1, right-1
+    }
+}
+
+func splitLoopedString(strs []string) string {
+    for i, s := range strs {
+        bytes := []byte(s)
+        reverse(bytes)
+        s2 := string(bytes)
+        if s2 > s {
+            strs[i] = s2
+        }
+    }
+    res := ""
+    for i, s := range strs {
+        reverseBytes := []byte(s)
+        reverse(reverseBytes)
+        for _, bytes := range [][]byte {[]byte(s), reverseBytes} {
+            for k, _ := range bytes {
+                l := []byte{}
+                l = append(l, bytes[k:]...)
+                for j:=i+1; j<len(strs); j++ {
+                    l = append(l, []byte(strs[j])...)
+                }
+                for j:=0; j<i; j++ {
+                    l = append(l, []byte(strs[j])...)
+                }
+                l = append(l, bytes[0:k]...)
+                s2 := string(l)
+                if s2 > res {
+                    res = s2
+                }
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

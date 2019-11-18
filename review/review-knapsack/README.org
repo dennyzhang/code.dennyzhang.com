@@ -13,11 +13,13 @@ Review knapsack code problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 
 *Basic Abstractions*
-| Name                                                  | Summary                                                     |
-|-------------------------------------------------------+-------------------------------------------------------------|
-| 0/1 Knapsack                                          | Take or don't take
-| Knapsack with repetition or called Unbounded Knapsack | Unbonded problems may be converted to 0/1 knapsack problems |
-| Complete knapsack problem in high dimension           | [[https://code.dennyzhang.com/shopping-offers][Leetcode: Shopping Offers]]                                   |
+| Name                                        | Summary                                                   |
+|---------------------------------------------+-----------------------------------------------------------|
+| 0/1 Knapsack with one bag                   | For each item, take or don't take                         |
+| 0/1 Knapsack with two bags                  | For each item, put either to bag1 or bag2; or drop it     |
+| Complete knapsack problem                   | Unlike 0/1 Knapsack, each item can be used multiple times |
+| Complete knapsack problem in high dimension | [[https://code.dennyzhang.com/shopping-offers][Leetcode: Shopping Offers]]                                 |
+| Group knapsack problem                      | Knapsack with selection from distinct groups              |
 
 See all knapsack problems: [[https://code.dennyzhang.com/tag/knapsack/][#knapsack]]
 [display-posts tag="knapsack" posts_per_page="100" orderby="title"]
@@ -65,4 +67,4 @@ http://www.es.ele.tue.nl/education/5MC10/Solutions/knapsack.pdf
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:
 #+LINK_HOME:
-
+* TODO https://oi-wiki.org/dp/knapsack/                            :noexport:

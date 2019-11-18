@@ -1,0 +1,144 @@
+* Leetcode: Remove Comments                                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, array, manydetails
+:END:
+---------------------------------------------------------------------
+Remove Comments
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-comments"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given a C++ program, remove comments from it. The program source is an array where source[i] is the i-th line of the source code. This represents the result of splitting the original source code string by the newline character \n.
+
+In C++, there are two types of comments, line comments, and block comments.
+
+The string // denotes a line comment, which represents that it and rest of the characters to the right of it in the same line should be ignored.
+
+The string /* denotes a block comment, which represents that all characters until the next (non-overlapping) occurrence of */ should be ignored. (Here, occurrences happen in reading order: line by line from left to right.) To be clear, the string /*/ does not yet end the block comment, as the ending would be overlapping the beginning.
+
+The first effective comment takes precedence over others: if the string // occurs in a block comment, it is ignored. Similarly, if the string /* occurs in a line or block comment, it is also ignored.
+
+If a certain line of code is empty after removing comments, you must not output that line: each string in the answer list will be non-empty.
+
+There will be no control characters, single quote, or double quote characters. For example, source = "string s = "/* Not a comment. */";" will not be a test case. (Also, nothing else such as defines or macros will interfere with the comments.)
+
+It is guaranteed that every open block comment will eventually be closed, so /* outside of a line or block comment always starts a new comment.
+
+Finally, implicit newline characters can be deleted by block comments. Please see the examples below for details.
+
+After removing the comments from the source code, return the source code in the same format.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+source = ["/*Test program */", "int main()", "{ ", "  // variable declaration ", "int a, b, c;", "/* This is a test", "   multiline  ", "   comment for ", "   testing */", "a = b + c;", "}"]
+
+The line by line code is visualized as below:
+/*Test program */
+int main()
+{ 
+  // variable declaration 
+int a, b, c;
+/* This is a test
+   multiline  
+   comment for 
+   testing */
+a = b + c;
+}
+
+Output: ["int main()","{ ","  ","int a, b, c;","a = b + c;","}"]
+
+The line by line code is visualized as below:
+int main()
+{ 
+  
+int a, b, c;
+a = b + c;
+}
+
+Explanation: 
+The string /* denotes a block comment, including line 1 and lines 6-9. The string // denotes line 4 as comments.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+source = ["a/*comment", "line", "more_comment*/b"]
+Output: ["ab"]
+Explanation: The original source string is "a/*comment\nline\nmore_comment*/b", where we have bolded the newline characters.  After deletion, the implicit newline characters are deleted, leaving the string "ab", which when delimited by newline characters becomes ["ab"].
+#+END_EXAMPLE
+
+Note:
+
+- The length of source is in the range [1, 100].
+- The length of source[i] is in the range [0, 80].
+- Every open block comment is eventually closed.
+- There are no single-quote, double-quote, or control characters in the source code.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-comments][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/remove-comments/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/remove-comments
+// Basic Ideas: String
+//
+//  Notice: When to add a new line break?
+//  What if /* */ happens multiple times in one line
+//
+// Complexity: Time O(n) Space O(n)
+func removeComments(source []string) []string {
+    res := []string{}
+    inBlock := false
+    l := []byte{}
+    for _, s := range source {
+        if !inBlock {
+            // restart the list
+            l = []byte{}
+        }
+        for i:=0; i<len(s); i++ {
+            if i+1<len(s) && s[i:i+2] == "/*" && !inBlock {
+                inBlock = true
+                i++
+            } else {
+                if i+1<len(s) && s[i:i+2] == "*/" && inBlock {
+                    inBlock = false
+                    i++
+                } else {
+                    // trucate the following
+                    if i+1<len(s) && s[i:i+2] == "//" && !inBlock {
+                        break
+                    } else {
+                        // skip anything inside the block
+                        if !inBlock {
+                            l = append(l, s[i])
+                        }
+                    }
+                }
+            }
+        }
+        if !inBlock && len(l) > 0 {
+            res = append(res, string(l))
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
