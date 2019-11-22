@@ -1,0 +1,118 @@
+* Leetcode: Alphabet Board Path                                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, array
+:END:
+---------------------------------------------------------------------
+Alphabet Board Path
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/alphabet-board-path"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+On an alphabet board, we start at position (0, 0), corresponding to character board[0][0].
+
+Here, board = ["abcde", "fghij", "klmno", "pqrst", "uvwxy", "z"], as shown in the diagram below.
+
+We may make the following moves:
+
+- 'U' moves our position up one row, if the position exists on the board;
+- 'D' moves our position down one row, if the position exists on the board;
+- 'L' moves our position left one column, if the position exists on the board;
+- 'R' moves our position right one column, if the position exists on the board;
+- '!' adds the character board[r][c] at our current position (r, c) to the answer.
+(Here, the only positions that exist on the board are positions with letters on them.)
+
+Return a sequence of moves that makes our answer equal to target in the minimum number of moves.  You may return any path that does so.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: target = "leet"
+Output: "DDR!UURRR!!DDD!"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: target = "code"
+Output: "RR!DDRR!UUL!R!"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= target.length <= 100
+- target consists only of English lowercase letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/alphabet-board-path][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/alphabet-board-path/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/alphabet-board-path
+// Basic Ideas: hashmap
+//
+// Complexity: Time O(n) Space O(1)
+func moveDirection(res *[]byte, offset int, move byte) {
+    for i:=0; i<offset; i++ {
+        *res = append(*res, move)
+    }
+}
+
+func alphabetBoardPath(target string) string {
+    chars := [26][2]int{}
+    i, j := 0, 0
+    for k:=0; k<26; k++ {
+        if j == 5 {
+            i++
+            j=0
+        }
+        chars[k] = [2]int{i, j}
+        j++
+    }
+
+    res := []byte{}
+    i, j = 0, 0
+    movex, movey := byte(' '), byte(' ')
+    for k, _ := range target {
+        ch := target[k]-'a'
+        i2, j2 := chars[ch][0], chars[ch][1]
+        offsetX, offsetY := i2-i, j2-j
+        movex = 'D'
+        if offsetX < 0 {
+            movex, offsetX = 'U', -offsetX
+        }
+        // move at x direction
+        movey = 'R'
+        if offsetY < 0 {
+            movey, offsetY = 'L', -offsetY
+        }
+        // Whether target is 'z'
+        if target[k] == 'z' {
+            // move y then z
+            moveDirection(&res, offsetY, movey)
+            moveDirection(&res, offsetX, movex)
+        } else {
+            moveDirection(&res, offsetX, movex)
+            moveDirection(&res, offsetY, movey)
+        }
+        res = append(res, '!')
+        i, j = i2, j2
+    }
+    return string(res)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

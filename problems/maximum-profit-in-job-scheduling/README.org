@@ -8,7 +8,11 @@
 Maximum Profit in Job Scheduling
 ---------------------------------------------------------------------
 #+BEGIN_HTML
+<<<<<<< HEAD
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-profit-in-job-scheduling"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+=======
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+>>>>>>> 9ecd667cda67df92a8f53ffa12b74e24fe318df5
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
@@ -48,16 +52,26 @@ Constraints:
 - 1 <= startTime[i] < endTime[i] <= 10^9
 - 1 <= profit[i] <= 10^4
 
+<<<<<<< HEAD
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-profit-in-job-scheduling][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/][leetcode.com]]
+=======
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
+>>>>>>> 9ecd667cda67df92a8f53ffa12b74e24fe318df5
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC go
+<<<<<<< HEAD
 // https://code.dennyzhang.com/maximum-profit-in-job-scheduling
+=======
+// https://code.dennyzhang.com/example
+>>>>>>> 9ecd667cda67df92a8f53ffa12b74e24fe318df5
 
 #+END_SRC
 

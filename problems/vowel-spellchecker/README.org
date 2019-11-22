@@ -63,7 +63,7 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/vowel-spellchecker
 // Basic Ideas: String + hashmap
 //
-// Complexity: Time ? Space ?
+// Complexity: Time O(n) Space O(n)
 func spellchecker(wordlist []string, queries []string) []string {
     words := map[string]int{}
     words2 := map[string]int{}

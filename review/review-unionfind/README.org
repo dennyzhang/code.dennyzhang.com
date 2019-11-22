@@ -20,16 +20,21 @@ Key operations: union, find, etc.
 | Union command            | Connect two objects or two groups                                          |
 | Find query               | Is there a path connecting one object to another?                          |
 | Disjoint sets of objects | Subsets of connected grid points                                           |
+| Union by rank vs by size | [[https://en.wikipedia.org/wiki/Disjoint-set_data_structure#Union][link]]                                                                       |
 | Reference                | [[https://www.youtube.com/watch?v=wU6udHRIkcc][YouTube: Disjoint Sets Data Structure - Weighted Union and Collapsing Find]] |
+| Reference                | [[https://en.wikipedia.org/wiki/Disjoint-set_data_structure][Wikipedia: Disjoint-set data structure]]                                     |
 
 *Scenarios*
 Union-find applications involve manipulating objects of all types:
-- Computers in a network
-- Web pages on the Internet
-- Transistors in a computer chip
-- Variable name aliases
-- Pixels in a digital photo
-- Metallic sites in a composite system
+| Name                                                   | Summary |
+|--------------------------------------------------------+---------|
+| Computers in a network                                 |         |
+| Web pages on the Internet                              |         |
+| Transistors in a computer chip                         |         |
+| Variable name aliases                                  |         |
+| Pixels in a digital photo                              |         |
+| Metallic sites in a composite system                   |         |
+| Minimum spanning tree of a graph - [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]] |         |
 
 *Code Skeleton*
 #+BEGIN_SRC go
