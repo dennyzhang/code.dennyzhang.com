@@ -1,0 +1,139 @@
+* Leetcode: Design A Leaderboard                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     oodesign, heap
+:END:
+---------------------------------------------------------------------
+Design A Leaderboard
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/design-a-leaderboard"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-heap][#heap]]
+---------------------------------------------------------------------
+Design a Leaderboard class, which has 3 functions:
+
+1. addScore(playerId, score): Update the leaderboard by adding score to the given player's score. If there is no player with such id in the leaderboard, add him to the leaderboard with the given score.
+- top(K): Return the score sum of the top K players.
+- reset(playerId): Reset the score of the player with the given id to 0. It is guaranteed that the player was added to the leaderboard before calling this function.
+
+Initially, the leaderboard is empty.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+["Leaderboard","addScore","addScore","addScore","addScore","addScore","top","reset","reset","addScore","top"]
+[[],[1,73],[2,56],[3,39],[4,51],[5,4],[1],[1],[2],[2,51],[3]]
+Output: 
+[null,null,null,null,null,null,73,null,null,null,141]
+
+Explanation: 
+Leaderboard leaderboard = new Leaderboard ();
+leaderboard.addScore(1,73);   // leaderboard = [[1,73]];
+leaderboard.addScore(2,56);   // leaderboard = [[1,73],[2,56]];
+leaderboard.addScore(3,39);   // leaderboard = [[1,73],[2,56],[3,39]];
+leaderboard.addScore(4,51);   // leaderboard = [[1,73],[2,56],[3,39],[4,51]];
+leaderboard.addScore(5,4);    // leaderboard = [[1,73],[2,56],[3,39],[4,51],[5,4]];
+leaderboard.top(1);           // returns 73;
+leaderboard.reset(1);         // leaderboard = [[2,56],[3,39],[4,51],[5,4]];
+leaderboard.reset(2);         // leaderboard = [[3,39],[4,51],[5,4]];
+leaderboard.addScore(2,51);   // leaderboard = [[2,51],[3,39],[4,51],[5,4]];
+leaderboard.top(3);           // returns 141 = 51 + 51 + 39;
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= playerId, K <= 10000
+- It's guaranteed that K is less than or equal to the current number of players.
+- 1 <= score <= 100
+- There will be at most 1000 function calls.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/design-a-leaderboard][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/design-a-leaderboard/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: heap
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/design-a-leaderboard
+// Basic Ideas: heap
+//
+// Complexity: Time O(n*log(k)), Space O(k)
+// min heap
+type IntHeap []int
+func (h IntHeap) Len() int {
+    return len(h)
+}
+
+func (h IntHeap) Less(i, j int) bool {
+    return h[i] < h[j]
+}
+
+func (h IntHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *IntHeap) Push(x interface{}) {
+    *h = append(*h, x.(int))
+}
+
+func (h *IntHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+type Leaderboard struct {
+    m map[int]int
+}
+
+func Constructor() Leaderboard {
+    return Leaderboard{m:map[int]int{}}
+}
+
+func (this *Leaderboard) AddScore(playerId int, score int)  {
+    this.m[playerId] += score
+}
+
+func (this *Leaderboard) Top(K int) int {
+    h := &IntHeap{}
+    heap.Init(h)
+    for _, v := range this.m {
+        heap.Push(h, v)
+        if h.Len()>K {
+            heap.Pop(h)
+        }
+    }
+    res := 0
+    for h.Len() > 0 {
+        res += heap.Pop(h).(int)
+    }
+    return res
+}
+
+
+func (this *Leaderboard) Reset(playerId int)  {
+    this.m[playerId] = 0
+}
+
+/**
+ * Your Leaderboard object will be instantiated and called as such:
+ * obj := Constructor();
+ * obj.AddScore(playerId,score);
+ * param_2 := obj.Top(K);
+ * obj.Reset(playerId);
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

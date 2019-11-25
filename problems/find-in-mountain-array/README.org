@@ -1,0 +1,94 @@
+* Leetcode: Find in Mountain Array                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     mountainarray, monotonicfunc, binarysearch
+:END:
+---------------------------------------------------------------------
+Find in Mountain Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-in-mountain-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/followup-mountainarray][#mountainarray]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/monotonicfunc][#monotonicfunc]]
+---------------------------------------------------------------------
+Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-in-mountain-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-in-mountain-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-in-mountain-array
+// Basic Ideas: binary search
+//
+//  Find the index of peak location
+//
+// Complexity: Time O(log(n)), Space O(1)
+//
+/**
+ * // This is the MountainArray's API interface.
+ * // You should not implement it, or speculate about its implementation
+ * type MountainArray struct {
+ * }
+ *
+ * func (this *MountainArray) get(index int) int {}
+ * func (this *MountainArray) length() int {}
+ */
+func findInMountainArray(target int, mountainArr *MountainArray) int {
+    low, high := 0, mountainArr.length()-1
+    // always exists
+    for low<high {
+        mid := (high-low)/2+low
+        if mountainArr.get(mid) < mountainArr.get(mid+1) {
+            low = mid+1
+        } else {
+            high = mid
+        }
+    }
+    peak := low
+    // increase
+    low, high = 0, peak
+    for low <= high {
+        mid := (high-low)/2+low
+        val := mountainArr.get(mid)
+        if val == target {
+            return mid
+        }
+        if val > target {
+            high = mid-1
+        } else {
+            low = mid+1
+        }
+    }
+    // decrease
+    low, high = peak, mountainArr.length()-1
+    for low <= high {
+        mid := (high-low)/2+low
+        val := mountainArr.get(mid)
+        if val == target {
+            return mid
+        }
+        if val > target {
+            low = mid+1
+        } else {
+            high = mid-1
+        }
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

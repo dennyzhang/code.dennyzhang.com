@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     mountain
+:type:     mountainarray
 :END:
 ---------------------------------------------------------------------
 Valid Mountain Array
@@ -12,7 +12,7 @@ Valid Mountain Array
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/mountain][#mountain]]
+- Tag: [[https://code.dennyzhang.com/followup-mountainarray][#mountainarray]]
 ---------------------------------------------------------------------
 Given an array A of integers, return true if and only if it is a valid mountain array.
 

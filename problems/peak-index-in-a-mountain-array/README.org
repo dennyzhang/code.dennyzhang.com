@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, mountain
+:type:     mountainarray, monotonicfunc, binarysearch
 :END:
 ---------------------------------------------------------------------
 Peak Index in a Mountain Array
@@ -13,7 +13,7 @@ Peak Index in a Mountain Array
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-mountain-in-array][Longest Mountain in Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/mountain][#mountain]]
+- Tag: [[https://code.dennyzhang.com/followup-mountainarray][#mountainarray]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/monotonicfunc][#monotonicfunc]]
 ---------------------------------------------------------------------
 Let's call an array A a mountain if the following properties hold:
 
@@ -45,7 +45,29 @@ Credits To: [[https://leetcode.com/problems/peak-index-in-a-mountain-array/descr
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: binary search
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/peak-index-in-a-mountain-array
+// Basic Ideas: binary search
+//  monotonic function: A[i]<A[i+1]
+//  T, T, T, F, F, F
+// Complexity: Time O(log(n)), Space O(1)
+func peakIndexInMountainArray(A []int) int {
+    low, high := 0, len(A)-1
+    // always exists
+    for low<high {
+        mid := (high-low)/2 + low
+        if A[mid] < A[mid+1] {
+            low = mid+1
+        } else {
+            high = mid
+        }
+    }
+    return low
+}
+#+END_SRC
+
+- Solution: linear search
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/peak-index-in-a-mountain-array

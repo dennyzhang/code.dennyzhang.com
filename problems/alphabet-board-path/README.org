@@ -52,7 +52,47 @@ Credits To: [[https://leetcode.com/problems/alphabet-board-path/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: No need for hashmap
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/alphabet-board-path
+// Basic Ideas: array
+//
+//  No need for the hashmap
+//  We can map character to positions directly
+//
+// Complexity: Time O(n) Space O(1)
+func moveDirection(res *[]byte, offset int, move byte) {
+    for i:=0; i<offset; i++ {
+        *res = append(*res, move)
+    }
+}
+
+func max(x, y int) int {
+    if x > y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func alphabetBoardPath(target string) string {
+    res := []byte{}
+    i, j := 0, 0
+    for k, _ := range target {
+        ch := int(target[k]-'a')
+        i2, j2 := ch/5, ch%5
+        moveDirection(&res, max(i-i2, 0), 'U')
+        moveDirection(&res, max(j2-j, 0), 'R')
+        moveDirection(&res, max(j-j2, 0), 'L')
+        moveDirection(&res, max(i2-i, 0), 'D')
+        res = append(res, '!')
+        i, j = i2, j2
+    }
+    return string(res)
+}
+#+END_SRC
+
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/alphabet-board-path

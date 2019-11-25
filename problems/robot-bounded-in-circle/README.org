@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, robot
+:type:     inspiring, robot, array, math
 :END:
 ---------------------------------------------------------------------
 Robot Bounded In Circle
@@ -12,7 +12,7 @@ Robot Bounded In Circle
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/robot][#robot]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/robot][#robot]], [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 On an infinite plane, a robot initially stands at (0, 0) and faces north.  The robot can receive one of three instructions:
 
@@ -61,24 +61,38 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/robot-bounded-in-circle
-
+// Basic Ideas: Array
+//
+// After one sequence, if return to (0, 0), it will be a cricle.
+//    Note: all four direction are symmetric
+//
+// After one sequence, if not facing north, it will be a circle.
+//    Note: If not north, robot is bounded within a circle
+//    Only 4 possible directions.
+//
+// Complexity: Time O(n), Space O(1)
+func isRobotBounded(instructions string) bool {
+    // offsets: [0, 1], [1, 0], [0, -1], [-1, 0]
+    //          north, east, south, west
+    //    R: +1, L: -1
+    d := 1
+    offsets := [][]int{[]int{0, 1}, []int{1, 0}, []int{0, -1}, []int{-1, 0}}
+    x, y := 0, 0
+    for _, ch := range instructions {
+        if ch == 'L' {
+            d = (d+1)%4
+        } else {
+            if ch == 'R' {
+                d = (d+3)%4
+            } else {
+                x, y = x+offsets[d][0], y+offsets[d][1]
+            }
+        }
+    }
+    return (x==0 && y==0) || d != 1
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     array, mountain
+:type:     array, mountainarray
 :END:
 ---------------------------------------------------------------------
 Longest Mountain in Array
@@ -13,7 +13,7 @@ Longest Mountain in Array
 Similar Problems:
 - [[https://code.dennyzhang.com/peak-index-in-a-mountain-array][Peak Index in a Mountain Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/mountain][#mountain]]
+- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/followup-mountainarray][#mountainarray]]
 ---------------------------------------------------------------------
 Let's call any (contiguous) subarray B (of A) a mountain if the following properties hold:
 

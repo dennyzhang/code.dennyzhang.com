@@ -1,0 +1,105 @@
+* Leetcode: Delete Tree Nodes                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     postorder
+:END:
+---------------------------------------------------------------------
+Delete Tree Nodes
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/delete-tree-nodes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/tag/postorder][#postorder]]
+---------------------------------------------------------------------
+A tree rooted at node 0 is given as follows:
+
+- The number of nodes is nodes;
+- The value of the i-th node is value[i];
+- The parent of the i-th node is parent[i].
+Remove every subtree whose sum of values of nodes is zero.
+
+After doing so, return the number of nodes remaining in the tree.
+ 
+Example 1:
+[[image-blog:Leetcode: Delete Tree Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/delete-tree-nodes/1.png]]
+#+BEGIN_EXAMPLE
+Input: nodes = 7, parent = [-1,0,0,1,2,2,2], value = [1,-2,4,0,-2,-1,-1]
+Output: 2
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= nodes <= 10^4
+- -10^5 <= value[i] <= 10^5
+- parent.length == nodes
+- parent[0] == -1 which indicates that 0 is the root.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/delete-tree-nodes][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/delete-tree-nodes/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/delete-tree-nodes
+// Basic Ideas: post-order
+// Complexity: Time O(n), Space O(n)
+type TreeNode struct {
+    val int
+    children []*TreeNode
+}
+
+// result
+func dfs(root *TreeNode, res *int) (sum int, nodeCnt int) {
+    if root == nil {
+        sum, nodeCnt = 0, 0
+        return
+    }
+    nodeCnt = 1
+    sum = root.val
+    for _, p := range root.children {
+        s, n := dfs(p, res)
+        sum += s
+        nodeCnt += n
+    }
+
+    if sum == 0 {
+        *res = *res - nodeCnt
+        nodeCnt = 0
+    }
+    return
+}
+
+func deleteTreeNodes(nodes int, parent []int, value []int) int {
+    l := make([]*TreeNode, nodes)
+    for i, _ := range l {
+        l[i] = &TreeNode{val:value[i], children:[]*TreeNode{}}
+    }
+    root := -1
+    for i, v := range parent {
+        if v == -1 {
+            root = i
+            continue
+        }
+        // v -> i
+        l[v].children = append(l[v].children, l[i])
+    }
+
+    res := nodes
+    dfs(l[root], &res)
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

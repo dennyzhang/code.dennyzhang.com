@@ -1,0 +1,114 @@
+* Leetcode: Palindrome Partitioning III                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Palindrome Partitioning III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/palindrome-partitioning-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+You are given a string s containing lowercase letters and an integer k. You need to :
+
+- First, change some characters of s to other lowercase English letters.
+- Then divide s into k non-empty disjoint substrings such that each substring is palindrome.
+Return the minimal number of characters that you need to change to divide the string.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "abc", k = 2
+Output: 1
+Explanation: You can split the string into "ab" and "c", and change 1 character in "ab" to make it palindrome.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "aabbc", k = 3
+Output: 0
+Explanation: You can split the string into "aa", "bb" and "c", all of them are palindrome.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "leetcode", k = 8
+Output: 0
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= k <= s.length <= 100.
+- s only contains lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/palindrome-partitioning-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/palindrome-partitioning-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/palindrome-partitioning-iii
+// Basic Ideas: dynamic programming
+//
+//   s[i...j], k
+//
+//  dp(i, j, k)
+//  dp(i, j, 1)
+// Complexity: Time O(k*n*n), Space O(k*n*n)
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func palindromePartition(s string, k int) int {
+    dp := make([][][]int, len(s))
+    for i, _ := range s {
+        dp[i] = make([][]int, len(s))
+        for j, _ := range dp[i] {
+            dp[i][j] = make([]int, k)
+        }
+    }
+    // base condition
+    for i:=len(s)-1; i>=0; i-- {
+        for j:=i+1; j<len(s); j++ {
+            // s[i..j]
+            if s[i] == s[j] {
+                // if hit the left triangle, the value is still 0
+                dp[i][j][0] = dp[i+1][j-1][0]
+            } else {
+                dp[i][j][0] = dp[i+1][j-1][0]+1
+            }
+        }
+    }
+    for p:=1; p<k; p++ {
+        for i:=len(s)-1; i>=0; i-- {
+            for j:=i+1; j<len(s); j++ {
+                // i...j
+                dp[i][j][p] = 1<<31-1
+                for q:=i; q<j; q++ {
+                    dp[i][j][p] = min(dp[i][j][p], dp[i][q][0] + dp[q+1][j][p-1])
+                }
+            }
+        }
+    }
+    return dp[0][len(s)-1][k-1]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
