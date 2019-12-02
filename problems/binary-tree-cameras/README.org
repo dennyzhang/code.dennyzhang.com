@@ -1,0 +1,106 @@
+* Leetcode: Binary Tree Cameras                                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Binary Tree Cameras
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-tree-cameras"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+Given a binary tree, we install cameras on the nodes of the tree. 
+
+Each camera at a node can monitor its parent, itself, and its immediate children.
+
+Calculate the minimum number of cameras needed to monitor all nodes of the tree.
+
+Example 1:
+[[image-blog:Binary Tree Cameras][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/binary-tree-cameras/1.png]]
+#+BEGIN_EXAMPLE
+Input: [0,0,null,0,0]
+Output: 1
+Explanation: One camera is enough to monitor all nodes if placed as shown.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Binary Tree Cameras][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/binary-tree-cameras/2.png]]
+#+BEGIN_EXAMPLE
+Input: [0,0,null,0,null,0,null,null,0]
+Output: 2
+Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.
+#+END_EXAMPLE
+
+Note:
+
+1. The number of nodes in the given tree will be in the range [1, 1000].
+- Every node has value 0.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/binary-tree-cameras][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/binary-tree-cameras/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/binary-tree-cameras
+// Basic Ideas: greedy
+//
+// Instead of placing camera in leaf nodes, better in the parent nodes
+//
+// Complexity: Time O(n) Space O(h)
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+
+// 0: need cover; 1: covered with camera; 2: covered without camera
+func dfs(root *TreeNode, res * int) int {
+    // empty nodes: need cover. And can't help others
+    if root == nil {
+        return 2
+    }
+
+    l, r := dfs(root.Left, res), dfs(root.Right, res)
+    // parent of a leaf node
+    if  l == 0 || r == 0 {
+        *res = *res + 1
+        return 1
+    }
+
+    // Note: childrens are all covered
+    if l == 1 || r == 1 {
+        // children can cover parent
+        return 2
+    } else {
+        return 0
+    }
+}
+
+func minCameraCover(root *TreeNode) int {
+    res := 0
+    if dfs(root, &res) == 0 {
+        res++
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

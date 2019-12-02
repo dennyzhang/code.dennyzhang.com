@@ -51,32 +51,38 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-#+BEGIN_SRC c++
-// https://code.dennyzhang.com/print-in-order
-class Foo {
-public:
-    Foo() {
-        
-    }
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/print-in-order
+## Basic Ideas: Semaphore
+## Complexity: Time O(1), Space O(1)
+import threading
 
-    void first(function<void()> printFirst) {
-        
-        // printFirst() outputs "first". Do not change or remove this line.
-        printFirst();
-    }
+class Foo:
+    def __init__(self):
+        self.two = threading.Semaphore()
+        self.three = threading.Semaphore()
+        self.two.acquire()
+        self.three.acquire()
+        pass
 
-    void second(function<void()> printSecond) {
+    def first(self, printFirst: 'Callable[[], None]') -> None:
         
-        // printSecond() outputs "second". Do not change or remove this line.
-        printSecond();
-    }
+        # printFirst() outputs "first". Do not change or remove this line.
+        printFirst()
+        self.two.release()
 
-    void third(function<void()> printThird) {
-        
-        // printThird() outputs "third". Do not change or remove this line.
-        printThird();
-    }
-};
+
+    def second(self, printSecond: 'Callable[[], None]') -> None:
+        self.two.acquire()
+        # printSecond() outputs "second". Do not change or remove this line.
+        printSecond()
+        self.three.release()
+
+
+    def third(self, printThird: 'Callable[[], None]') -> None:
+        self.three.acquire()
+        # printThird() outputs "third". Do not change or remove this line.
+        printThird()
 #+END_SRC
 
 #+BEGIN_HTML

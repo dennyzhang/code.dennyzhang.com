@@ -1,20 +1,57 @@
-* Leetcode: Template                                              :BLOG:Medium:
+* Leetcode: Count Square Submatrices with All Ones              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     dynamicprogramming
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Count Square Submatrices with All Ones
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-square-submatrices-with-all-ones"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][dynamicprogramming]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Given a m * n matrix of ones and zeros, return how many square submatrices have all ones.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: matrix =
+[
+  [0,1,1,1],
+  [1,1,1,1],
+  [0,1,1,1]
+]
+Output: 15
+Explanation: 
+There are 10 squares of side 1.
+There are 4 squares of side 2.
+There is  1 square of side 3.
+Total number of squares = 10 + 4 + 1 = 15.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: matrix = 
+[
+  [1,0,1],
+  [1,1,0],
+  [1,1,0]
+]
+Output: 7
+Explanation: 
+There are 6 squares of side 1.  
+There is 1 square of side 2. 
+Total number of squares = 6 + 1 = 7.
+#+END_EXAMPLE
+
+Constraints:
+
+- 1 <= arr.length <= 300
+- 1 <= arr[0].length <= 300
+- 0 <= arr[i][j] <= 1
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-square-submatrices-with-all-ones][code.dennyzhang.com]]
 

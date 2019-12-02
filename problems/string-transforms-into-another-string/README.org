@@ -1,0 +1,97 @@
+* Leetcode: String Transforms Into Another String               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph
+:END:
+---------------------------------------------------------------------
+String Transforms Into Another String
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-transforms-into-another-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
+---------------------------------------------------------------------
+Given two strings str1 and str2 of the same length, determine whether you can transform str1 into str2 by doing zero or more conversions.
+
+In one conversion you can convert all occurrences of one character in str1 to any other lowercase English character.
+
+Return true if and only if you can transform str1 into str2.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: str1 = "aabcc", str2 = "ccdee"
+Output: true
+Explanation: Convert 'c' to 'e' then 'b' to 'd' then 'a' to 'c'. Note that the order of conversions matter.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: str1 = "leetcode", str2 = "codeleet"
+Output: false
+Explanation: There is no way to transform str1 to str2.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= str1.length == str2.length <= 10^4
+- Both str1 and str2 contain only lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-transforms-into-another-string][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/string-transforms-into-another-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/string-transforms-into-another-string
+// Basic Ideas: graph
+//   a->c
+//   b->d
+//   c->e
+//
+//  The same character of str2 must be the same one in str1
+//   Reverse: from str2 to str1
+//
+//  For change of a list, from end to begin. And the end is unsed in str1
+//  For change of a cycle, need a temporary unused character
+//
+// Complexity: Time O(n), Space O(1)
+func canConvert(str1 string, str2 string) bool {
+    if str1 == str2 {
+        return true
+    }
+    m := map[int]int{}
+    for i, _ := range str1 {
+        n1, n2 := int(str1[i]-'a'), int(str2[i]-'a')
+        // expecting one character of str2 to map to multiple ones in str1
+        if _, ok := m[n1]; ok && m[n1] != n2 {
+            return false
+        } else {
+            m[n1] = n2
+        }
+    }
+    // one unused character in str2
+    chars := make([]int, 26)
+    cnt := 26
+    for _, v := range m {
+        if chars[v] == 0 {
+            cnt--
+        }
+        chars[v]++
+    }
+    return cnt>0
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

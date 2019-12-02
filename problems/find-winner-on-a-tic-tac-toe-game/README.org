@@ -1,20 +1,84 @@
-* Leetcode: Template                                              :BLOG:Medium:
+* Leetcode: Find Winner on a Tic Tac Toe Game                   :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     game
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Find Winner on a Tic Tac Toe Game
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-winner-on-a-tic-tac-toe-game"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Tic-tac-toe is played by two players A and B on a 3 x 3 grid.
+
+Here are the rules of Tic-Tac-Toe:
+
+- Players take turns placing characters into empty squares (" ").
+- The first player A always places "X" characters, while the second player B always places "O" characters.
+- "X" and "O" characters are always placed into empty squares, never on filled ones.
+- The game ends when there are 3 of the same (non-empty) character filling any row, column, or diagonal.
+- The game also ends if all squares are non-empty.
+- No more moves can be played if the game is over.
+
+Given an array moves where each element is another array of size 2 corresponding to the row and column of the grid where they mark their respective character in the order in which A and B play.
+
+Return the winner of the game if it exists (A or B), in case the game ends in a draw return "Draw", if there are still movements to play return "Pending".
+
+You can assume that moves is valid (It follows the rules of Tic-Tac-Toe), the grid is initially empty and A will play first.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: moves = [[0,0],[2,0],[1,1],[2,1],[2,2]]
+Output: "A"
+Explanation: "A" wins, he always plays first.
+"X  "    "X  "    "X  "    "X  "    "X  "
+"   " -> "   " -> " X " -> " X " -> " X "
+"   "    "O  "    "O  "    "OO "    "OOX"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]
+Output: "B"
+Explanation: "B" wins.
+"X  "    "X  "    "XX "    "XXO"    "XXO"    "XXO"
+"   " -> " O " -> " O " -> " O " -> "XO " -> "XO " 
+"   "    "   "    "   "    "   "    "   "    "O  "
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: moves = [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]
+Output: "Draw"
+Explanation: The game ends in a draw since there are no moves to make.
+"XXO"
+"OOX"
+"XOX"
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: moves = [[0,0],[1,1]]
+Output: "Pending"
+Explanation: The game has not finished yet.
+"X  "
+" O "
+"   "
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= moves.length <= 9
+- moves[i].length == 2
+- 0 <= moves[i][j] <= 2
+- There are no repeated elements on moves.
+- moves follow the rules of tic tac toe.
+
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-winner-on-a-tic-tac-toe-game][code.dennyzhang.com]]
 
@@ -26,7 +90,59 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/find-winner-on-a-tic-tac-toe-game
+// Basic Ideas: simulation
+// Complexity: Time O(1), Space O(1)
+func validPoint(i int, j int, grid [][]byte, ch byte) bool {
+    return i>=0 && i<3 && j>=0 && j<3 && grid[i][j] == ch
+}
 
+func canWin(grid [][]byte, ch byte) bool {
+    for i, row := range grid {
+        for j, _ := range row {
+            if grid[i][j] == ch {
+                if validPoint(i+1, j, grid, ch) && validPoint(i-1, j, grid, ch) {
+                    return true
+                }
+                if validPoint(i, j-1, grid, ch) && validPoint(i, j+1, grid, ch) {
+                    return true
+                }
+                if validPoint(i-1, j-1, grid, ch) && validPoint(i+1, j+1, grid, ch) {
+                    return true
+                }
+                if validPoint(i-1, j+1, grid, ch) && validPoint(i+1, j-1, grid, ch) {
+                    return true
+                }
+            }
+        }
+    }
+    return false
+}
+
+func tictactoe(moves [][]int) string {
+    grid := make([][]byte, 3)
+    for i, _ := range grid {
+        grid[i] = make([]byte, 3)
+    }
+
+    for i, move := range moves {
+        if i%2 == 0 {
+            grid[move[0]][move[1]] = 'X'
+        } else {
+            grid[move[0]][move[1]] = 'O'
+        }
+        if i%2 == 0 && canWin(grid, 'X'){
+            return "A"
+        }
+        if i%2 == 1 && canWin(grid, 'O'){
+            return "B"
+        }
+    }
+    if len(moves)<9 {
+        return "Pending"
+    } else {
+        return "Draw"
+    }
+}
 #+END_SRC
 
 #+BEGIN_HTML

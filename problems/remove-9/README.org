@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, baseconversion
 :END:
 ---------------------------------------------------------------------
 Remove 9
@@ -13,7 +13,7 @@ Remove 9
 Similar Problems:
 - [[https://code.dennyzhang.com/nth-digit][Nth Digit]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- Tag: [[https://code.dennyzhang.com/review-math][#math]]
+- Tag: [[https://code.dennyzhang.com/followup-baseconversion][#baseconversion]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Start from integer 1, remove any integer that contains 9 such as 9, 19, 29...
 
@@ -34,10 +34,45 @@ Credits To: [[https://leetcode.com/problems/remove-9/description/][leetcode.com]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: without array
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/remove-9
+// Basic Ideas: base conversion
+//
+//  Convert n to base 9
+//
+// Complexity: Time O(log(n)), Space O(1)
+func newInteger(n int) int {
+    res, base := 0, 1
+    for n != 0 {
+        res = res+n%9*base
+        n = n/9
+        base *= 10
+    }
+    return res
+}
+#+END_SRC
 
+- Solution: with array
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/remove-9
+// Basic Ideas: base conversion
+//
+//  Convert n to base 9
+//
+// Complexity: Time O(1), Space O(1)
+func newInteger(n int) int {
+    nums := []int{}
+    for n != 0 {
+        nums = append(nums, n%9)
+        n = n/9
+    }
+    res := 0
+    for i:=len(nums)-1; i>=0; i-- {
+        res = res*10+nums[i]
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

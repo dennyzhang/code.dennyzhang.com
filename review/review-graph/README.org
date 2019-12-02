@@ -24,14 +24,15 @@ Graph related questions mainly focus on depth first search and breath first sear
 | Cycle in DAG                                 | [[https://code.dennyzhang.com/redundant-connection-ii][Leetcode: Redundant Connection II]]                          |
 
 *Questions*
-| Name                                                                  | Example                                       |
-|-----------------------------------------------------------------------+-----------------------------------------------|
-| For matrix graph problems: rectangle vs square                        |                                               |
-| [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]]: [[https://en.wikipedia.org/wiki/Minimum_spanning_tree][Minimum spanning tree]] of a weighted graph        | [[https://code.dennyzhang.com/connecting-cities-with-minimum-cost][Leetcode: Connecting Cities With Minimum Cost]] |
-| [[https://en.wikipedia.org/wiki/Dijkstra's_algorithm][Dijkstra's algorithm]]: shortest path for two nodes in a weighted graph |                                               |
-| [[https://en.wikipedia.org/wiki/Floyd-Warshall_algorithm][Floyd-Warshall algorithm]]: find shortest paths in a weighted graph     |                                               |
-| Move in different directions: 4 directions, 8 directions              | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][Leetcode: Queens That Can Attack the King]]     |
-| Keep moving in the same direction                                     | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][Leetcode: Queens That Can Attack the King]]     |
+| Name                                                                  | Example                                         |
+|-----------------------------------------------------------------------+-------------------------------------------------|
+| For matrix graph problems: rectangle vs square                        |                                                 |
+| [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]]: [[https://en.wikipedia.org/wiki/Minimum_spanning_tree][Minimum spanning tree]] of a weighted graph        | [[https://code.dennyzhang.com/connecting-cities-with-minimum-cost][Leetcode: Connecting Cities With Minimum Cost]]   |
+| [[https://en.wikipedia.org/wiki/Dijkstra's_algorithm][Dijkstra's algorithm]]: shortest path for two nodes in a weighted graph |                                                 |
+| [[https://en.wikipedia.org/wiki/Floyd-Warshall_algorithm][Floyd-Warshall algorithm]]: find shortest paths in a weighted graph     |                                                 |
+| Move in different directions: 4 directions, 8 directions              | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][Leetcode: Queens That Can Attack the King]]       |
+| Keep moving in the same direction                                     | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][Leetcode: Queens That Can Attack the King]]       |
+| String Transforms Into Another String                                 | [[https://code.dennyzhang.com/string-transforms-into-another-string][Leetcode: String Transforms Into Another String]] |
 
 Floyd-Warshall algorithm: Time O(n*n*n)
 [[image-blog:Review: Graph Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-graph/floyd-warshall.png]]
