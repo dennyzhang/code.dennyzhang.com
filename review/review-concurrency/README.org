@@ -2,10 +2,10 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: game, review
+:type: concurrency, review
 :END:
 ---------------------------------------------------------------------
-People like games. Here are a list of game problems in code tests.
+Concurrency Problems
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-concurrency"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
@@ -14,8 +14,55 @@ People like games. Here are a list of game problems in code tests.
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-See all game problems: [[https://code.dennyzhang.com/tag/game/][#game]].
-[display-posts tag="game" posts_per_page="100" orderby="title"]
+| Name                                       | Comment                                         |
+|--------------------------------------------+-------------------------------------------------|
+| Synchronization primitives                 | mutex, semaphore                                |
+
+Semaphore
+#+BEGIN_EXAMPLE
+The Semaphore is used for blocking thread level access to some part of the physical or logical resource. A semaphore contains a set of permits; whenever a thread tries to enter the critical section, it needs to check the semaphore if a permit is available or not.
+
+If a permit is not available (via tryAcquire()), the thread is not allowed to jump into the critical section; however, if the permit is available the access is granted, and the permit counter decreases.
+
+Once the executing thread releases the critical section, again the permit counter increases (done by release() method).
+
+We can specify a timeout for acquiring access by using the tryAcquire(long timeout, TimeUnit unit) method.
+
+We can also check the number of available permits or the number of threads waiting to acquire the semaphore.
+
+We can implement a Mutex like data-structure using Semaphore. 
+#+END_EXAMPLE
+Following code snippet can be used to use implement a semaphore:
+
+#+BEGIN_EXAMPLE
+static Semaphore semaphore = new Semaphore(10);
+ 
+public void execute() throws InterruptedException {
+ 
+    LOG.info("Available permit : " + semaphore.availablePermits());
+    LOG.info("Number of threads waiting to acquire: " + 
+      semaphore.getQueueLength());
+ 
+    if (semaphore.tryAcquire()) {
+        try {
+            // ...
+        }
+        finally {
+            semaphore.release();
+        }
+    }
+ 
+}
+#+END_EXAMPLE
+
+*Scenarios*
+| Name                                       | Comment                                         |
+|--------------------------------------------+-------------------------------------------------|
+| Map/Reduce: scheduler + workers            | [[https://code.dennyzhang.com/web-crawler-multithreaded][Leetcode: Web Crawler Multithreaded]]             |
+| Mutex: claim ownerhip of a single resource | [[https://code.dennyzhang.com/traffic-light-controlled-intersection][Leetcode: Traffic Light Controlled Intersection]] |
+
+See all concurrency problems: [[https://code.dennyzhang.com/tag/concurrency/][#concurrency]].
+[display-posts tag="concurrency" posts_per_page="100" orderby="title"]
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

@@ -1,21 +1,20 @@
-* Review: Multi-threaded Problems                                       :BLOG:Review:
+* Series: Dynamic Programming On Interval Problems & Follow-up :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type: review
+:type: series
 :END:
 ---------------------------------------------------------------------
-Multi-threaded Problems
+Dynamic Programming On Interval Problems & Follow-up
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-multithread"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-intervaldp"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
-
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-See all multithread problems: [[https://code.dennyzhang.com/tag/multithread/][#multithread]]
-[display-posts tag="multithread" posts_per_page="100" orderby="title"]
+See all intervaldp problems & follow-up: [[https://code.dennyzhang.com/tag/intervaldp/][#intervaldp]]
+[display-posts tag="intervaldp" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 
@@ -51,4 +50,3 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:
 #+LINK_HOME:
-

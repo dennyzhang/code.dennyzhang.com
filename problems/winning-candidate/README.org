@@ -62,7 +62,6 @@ Credits To: [[https://leetcode.com/problems/winning-candidate/description/][leet
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC sql
 ## https://code.dennyzhang.com/winning-candidate
 select Name

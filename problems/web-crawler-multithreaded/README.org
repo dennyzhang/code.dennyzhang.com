@@ -13,7 +13,7 @@ Web Crawler Multithreaded
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-multithread][#multithread]]
+- Tag: [[https://code.dennyzhang.com/review-concurrency][#concurrency]]
 ---------------------------------------------------------------------
 Given a url startUrl and an interface HtmlParser, implement a Multi-threaded web crawler to crawl all links that are under the same hostname as startUrl. 
 

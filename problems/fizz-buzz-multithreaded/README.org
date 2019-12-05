@@ -13,7 +13,7 @@ Fizz Buzz Multithreaded
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-multithread][#multithread]]
+- Tag: [[https://code.dennyzhang.com/review-concurrency][#concurrency]]
 ---------------------------------------------------------------------
 Write a program that outputs the string representation of numbers from 1 to n, however:
 
@@ -50,8 +50,89 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// https://code.dennyzhang.com/fizz-buzz-multithreaded
+// https://code.dennyzhang.com/fizz-buzz-multithreade
+// Basic Ideas:
+//
+// Complexity: Time ? Space ?
+import java.util.concurrent.*;
+class FizzBuzz {
+    private Semaphore fs, bs, fbs, ns;
+    private int n;
+    private int cur;
 
+    public FizzBuzz(int n) {
+        this.n = n;
+        this.cur = 1;
+        this.fs = new Semaphore(0, true);
+        this.bs = new Semaphore(0, true);
+        this.fbs = new Semaphore(0, true);
+        this.ns = new Semaphore(1, true);
+}
+
+    // printFizz.run() outputs "fizz".
+    public void fizz(Runnable printFizz) throws InterruptedException {
+        for (int i=1; i<=this.n; i++) {
+            if (i%3 == 0 && i %5 != 0) {
+                this.fs.acquire();
+                printFizz.run();
+                this.cur++;
+                this.release();
+            }
+        }
+    }
+
+    // printBuzz.run() outputs "buzz".
+    public void buzz(Runnable printBuzz) throws InterruptedException {
+        for (int i=1; i<=this.n; i++) {
+            if (i%5 == 0 && i %3 != 0) {
+                this.bs.acquire();
+                printBuzz.run();
+                this.cur++;
+                this.release();
+            }
+        }
+    }
+
+    // printFizzBuzz.run() outputs "fizzbuzz".
+    public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
+        for (int i=1; i<=this.n; i++) {
+            if (i%15 == 0) {
+                this.fbs.acquire();
+                printFizzBuzz.run();
+                this.cur++;
+                this.release();
+            }
+        }
+    }
+
+    // printNumber.accept(x) outputs "x", where x is an integer.
+    public void number(IntConsumer printNumber) throws InterruptedException {
+        for (int i=1; i<=this.n; i++) {
+            if (i%3 != 0 && i %5 != 0) {
+                this.ns.acquire();
+                printNumber.accept(i);
+                this.cur++;
+                this.release();
+            }
+        }
+    }
+
+    public void release() {
+        if (this.cur%15 == 0) {
+            this.fbs.release();
+        } else {
+            if (this.cur%3 == 0) {
+                this.fs.release();
+            } else {
+                if (this.cur%5 == 0) {
+                    this.bs.release();
+                } else {
+                    this.ns.release();
+                }
+            }
+        }
+    }
+}
 #+END_SRC
 
 #+BEGIN_HTML

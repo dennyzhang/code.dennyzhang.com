@@ -110,4 +110,3 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:
 #+LINK_HOME:
-
