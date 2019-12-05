@@ -13,6 +13,7 @@ Beautiful Array
 Similar Problems:
 - [[https://code.dennyzhang.com/132-pattern][Leetcode: 132 Pattern]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]], [[https://code.dennyzhang.com/followup-constructarray][#constructarray]]
 ---------------------------------------------------------------------
 For some fixed N, an array A is beautiful if it is a permutation of the integers 1, 2, ..., N, such that:

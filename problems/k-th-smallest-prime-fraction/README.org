@@ -12,6 +12,7 @@ K-th Smallest Prime Fraction
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-sortedmatrix][#sortedmatrix]]
 ---------------------------------------------------------------------
 A sorted list A contains 1, plus some number of primes.  Then, for every p < q in the list, we consider the fraction p/q.

@@ -12,6 +12,7 @@ Path Sum
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.

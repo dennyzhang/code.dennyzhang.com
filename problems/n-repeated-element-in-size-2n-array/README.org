@@ -12,6 +12,7 @@ N-Repeated Element in Size 2N Array
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 In a array A of size 2N, there are N+1 unique elements, and exactly one of these elements is repeated N times.

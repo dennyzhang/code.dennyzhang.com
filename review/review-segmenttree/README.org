@@ -18,6 +18,7 @@ Review Segment Tree code problems
 | Segment tree: solves range query problems quickly | find min, max, sum, gcd, lcd in array with O(log(n)) time complexity |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all segmenttree problems: [[https://code.dennyzhang.com/tag/segmenttree][segmenttree]]
 [display-posts tag="segmenttree" posts_per_page="100" orderby="title"]

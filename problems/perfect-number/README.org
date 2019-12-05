@@ -12,6 +12,7 @@ numbers
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-sqrt][#sqrt]]
 ---------------------------------------------------------------------
 We define the Perfect Number is a positive integer that is equal to the sum of all its positive divisors except itself.

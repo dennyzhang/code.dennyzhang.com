@@ -12,6 +12,7 @@ Median of Two Sorted Arrays
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]]
 ---------------------------------------------------------------------
 There are two sorted arrays nums1 and nums2 of size m and n respectively.

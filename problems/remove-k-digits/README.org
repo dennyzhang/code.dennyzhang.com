@@ -13,6 +13,7 @@ Remove K Digits
 Similar Problems:
 - [[https://code.dennyzhang.com/monotone-increasing-digits][Monotone Increasing Digits]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.

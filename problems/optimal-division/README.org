@@ -13,6 +13,7 @@ Optimal Division
 Similar Problems:
 - [[https://code.dennyzhang.com/unique-paths-ii][Leetcode: Unique Paths II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Given a list of positive integers, the adjacent integers will perform the float division. For example, [2,3,4] -> 2 / 3 / 4.

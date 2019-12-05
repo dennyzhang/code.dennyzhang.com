@@ -13,6 +13,7 @@ Next Permutation
 Similar Problems:
 - [[https://code.dennyzhang.com/permutation-sequence][Permutation Sequence]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-nextpermutation][#nextpermutation]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/followup-constructstring][#constructstring]]
 ---------------------------------------------------------------------
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.

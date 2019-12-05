@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/stone-game][Leetcode: Stone Game]]
 - [[https://code.dennyzhang.com/target-sum][Target Sum]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-minmax][#minmax]]
 ---------------------------------------------------------------------
 Given an array of scores that are non-negative integers. Player 1 picks one of the numbers from either end of the array followed by the player 2 and then player 1 and so on. Each time a player picks a number, that number will not be available for the next player. This continues until all the scores have been chosen. The player with the maximum score wins.

@@ -12,6 +12,7 @@ Binary Tree Cameras
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given a binary tree, we install cameras on the nodes of the tree. 

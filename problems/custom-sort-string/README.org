@@ -12,6 +12,7 @@ Custom Sort String
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 S and T are strings composed of lowercase letters. In S, no letter occurs more than once.

@@ -12,6 +12,7 @@ Merge Two Sorted Lists
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]]
 ---------------------------------------------------------------------
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.

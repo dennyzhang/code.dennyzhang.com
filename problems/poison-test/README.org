@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-poison][Series: Poison Problems & Follow-up]]
 - [[https://code.dennyzhang.com/poor-pigs][Leetcode: Poor Pigs]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/poison][#poison]], [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 Description

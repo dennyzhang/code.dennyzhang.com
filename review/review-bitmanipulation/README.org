@@ -11,8 +11,8 @@ Bit manipulation problems
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-bitmanipulation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all bitmanipulation problems: [[https://code.dennyzhang.com/review-bitmanipulation/][#bitmanipulation]].
 [display-posts tag="bitmanipulation" posts_per_page="100" orderby="title"]

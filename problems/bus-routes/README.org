@@ -13,6 +13,7 @@ Bus Routes
 Similar Problems:
 - [[https://code.dennyzhang.com/cheapest-flights-within-k-stops][Cheapest Flights Within K Stops]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 We have a list of bus routes. Each routes[i] is a bus route that the i-th bus repeats forever. 

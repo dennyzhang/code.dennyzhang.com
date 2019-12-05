@@ -12,6 +12,7 @@ Swap For Longest Repeated Character Substring
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-atmostkdistinct][#atmostkdistinct]]
 ---------------------------------------------------------------------
 Given a string text, we are allowed to swap two of the characters in the string. Find the length of the longest substring with repeated characters.

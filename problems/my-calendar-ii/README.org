@@ -13,6 +13,7 @@ My Calendar II
 Similar Problems:
 - [[https://code.dennyzhang.com/car-pooling][Leetcode: Car Pooling]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
 ---------------------------------------------------------------------
 Implement a MyCalendarTwo class to store your events. A new event can be added if adding the event will not cause a triple booking.

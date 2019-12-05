@@ -13,6 +13,7 @@ Leftmost One
 Similar Problems:
 - [[https://code.dennyzhang.com/first-bad-version][First Bad Version]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Given a 2D array, and each line has only 0 and 1, the front part is 0, and the latter part is 1. Find the number of columns in the leftmost 1 of all the rows in the array.

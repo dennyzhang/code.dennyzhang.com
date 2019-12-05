@@ -12,6 +12,7 @@ Find Words That Can Be Formed by Characters
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 You are given an array of strings words and a string chars.

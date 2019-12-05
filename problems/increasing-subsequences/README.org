@@ -12,6 +12,7 @@ Increasing Subsequences
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/subset][#subset]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given an integer array, your task is to find all the different possible increasing subsequences of the given array, and the length of an increasing subsequence should be at least 2 .

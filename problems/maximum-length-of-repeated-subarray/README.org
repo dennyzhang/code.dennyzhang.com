@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/minimum-window-substring][Minimum Window Substring]]
 - [[https://code.dennyzhang.com/repeated-substring][Repeated Substring Pattern]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.

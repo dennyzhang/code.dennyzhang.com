@@ -13,6 +13,7 @@ Number of Islands II
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/review-graphchangecell][#graphchangecell]], [[https://code.dennyzhang.com/review-island][#island]]
 ---------------------------------------------------------------------
 A 2d grid map of m rows and n columns is initially filled with water. We may perform an addLand operation which turns the water at position (row, col) into a land. Given a list of positions to operate, count the number of islands after each addLand operation. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.

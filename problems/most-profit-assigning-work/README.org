@@ -12,6 +12,7 @@ Most Profit Assigning Work
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 We have jobs: difficulty[i] is the difficulty of the ith job, and profit[i] is the profit of the ith job. 

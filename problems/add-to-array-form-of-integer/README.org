@@ -13,6 +13,7 @@ Add to Array-Form of Integer
 Similar Problems:
 - [[https://code.dennyzhang.com/add-strings][Leetcode: Add Strings]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 For a non-negative integer X, the array-form of X is an array of its digits in left to right order.  For example, if X = 1231, then the array form is [1,2,3,1].

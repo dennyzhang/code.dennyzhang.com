@@ -12,6 +12,7 @@ Construct string Problems & Follow-up
 #+END_HTML
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all construct string problems & follow-up: [[https://code.dennyzhang.com/tag/constructstring/][#constructstring]]
 [display-posts tag="constructstring" posts_per_page="100" orderby="title"]

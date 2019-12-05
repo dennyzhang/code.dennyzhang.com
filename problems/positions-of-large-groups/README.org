@@ -12,6 +12,7 @@ Positions of Large Groups
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In a string S of lowercase letters, these letters form consecutive groups of the same character.

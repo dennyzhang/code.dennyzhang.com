@@ -13,6 +13,7 @@ Distinct Subsequences
 Similar Problems:
 - [[https://code.dennyzhang.com/distinct-subsequences-ii][Leetcode: Distinct Subsequences II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/followup-editdistance][#editdistance]], [[https://code.dennyzhang.com/followup-lcs][#lcs]]
 ---------------------------------------------------------------------
 Given a string S and a string T, count the number of distinct subsequences of S which equals T.

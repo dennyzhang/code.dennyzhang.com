@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/add-strings][Add Strings]]
 - [[https://code.dennyzhang.com/additive-number][Additive Number]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-baseconversion][#baseconversion]]
 ---------------------------------------------------------------------
 Give k, a, b, which means a and b are all k base numbers, and output a + b.

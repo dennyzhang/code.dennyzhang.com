@@ -12,6 +12,7 @@ Word Frequency
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/shell][#shell]]
 ---------------------------------------------------------------------
 Given a text file file.txt that contains list of phone numbers (one per line), write a one liner bash script to print all valid phone numbers.

@@ -12,6 +12,7 @@ Minimum Domino Rotations For Equal Row
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/tag/manydetails][#manydetails]]
 ---------------------------------------------------------------------
 In a row of dominoes, A[i] and B[i] represent the top and bottom halves of the i-th domino.  (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.)

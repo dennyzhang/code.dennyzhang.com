@@ -17,6 +17,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/combination-sum-iv][Leetcode: Combination Sum IV]]
 - [[https://code.dennyzhang.com/subset-with-target][LintCode: Subset With Target]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-knapsack][#knapsack]]
 ---------------------------------------------------------------------
 Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.

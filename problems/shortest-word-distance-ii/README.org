@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]
 - [[https://code.dennyzhang.com/shortest-word-distance-iii][Shortest Word Distance III]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 This is a follow up of [[https://code.dennyzhang.com/shortest-word-distance][Shortest Word Distance]]. The only difference is now you are given the list of words and your method will be called repeatedly many times with different parameters. How would you optimize it?

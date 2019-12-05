@@ -12,6 +12,7 @@ Contiguous Array
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/followup-presum][#presum]]
 ---------------------------------------------------------------------
 Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.

@@ -12,6 +12,7 @@ Split a String in Balanced Strings
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Balanced strings are those who have equal quantity of 'L' and 'R' characters.

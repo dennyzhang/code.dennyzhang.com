@@ -12,6 +12,7 @@ Analyze User Website Visit Pattern
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 We are given some website visits: the user with name username[i] visited the website website[i] at time timestamp[i].

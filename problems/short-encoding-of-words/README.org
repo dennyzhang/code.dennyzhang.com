@@ -12,6 +12,7 @@ Short Encoding of Words
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/tag/encoding][#encoding]]
 ---------------------------------------------------------------------
 Given a list of words, we may encode it by writing a reference string S and a list of indexes A.

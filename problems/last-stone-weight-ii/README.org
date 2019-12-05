@@ -12,6 +12,7 @@ Last Stone Weight II
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-knapsack][#knapsack]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 We have a collection of rocks, each rock has a positive integer weight.

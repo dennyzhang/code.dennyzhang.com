@@ -13,6 +13,7 @@ LFU Cache
 Similar Problems:
 - [[https://code.dennyzhang.com/maximum-frequency-stack][Leetcode: Maximum Frequency Stack]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/followup-lfu][#lfu]]
 ---------------------------------------------------------------------
 Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and put.

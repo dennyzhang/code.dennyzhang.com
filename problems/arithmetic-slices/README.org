@@ -13,6 +13,7 @@ Arithmetic Slices
 Similar Problems:
 - [[https://code.dennyzhang.com/arithmetic-slices-ii-subsequence][Leetcode: Arithmetic Slices II - Subsequence]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/review-combination][#combination]]
 ---------------------------------------------------------------------
 A sequence of number is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.

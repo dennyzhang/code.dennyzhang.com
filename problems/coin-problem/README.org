@@ -12,6 +12,7 @@ Coin Problem
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/coin][#coin]]
 ---------------------------------------------------------------------
 Ming is a salesman. After the customer bought something in his place and paid Ming a certain amount of money, Xiao Ming needs to return the extra money to the guest. The guest paid Xiao Ming n money, the price of Xiao Ming's commodity was m money, and the denomination that Xiao Ming can return to the guests can only be a combination of [100, 50, 20, 10, 5, 2, 1]. Now Xiao Ming wants to minimize the sum of the number of banknotes, please return to this minimum.

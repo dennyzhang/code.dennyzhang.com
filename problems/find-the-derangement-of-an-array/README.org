@@ -13,6 +13,7 @@ Find the Derangement of An Array
 Similar Problems:
 - [[https://code.dennyzhang.com/unique-paths][Leetcode: Unique Paths]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 In combinatorial mathematics, a derangement is a permutation of the elements of a set, such that no element appears in its original position.

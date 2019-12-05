@@ -12,6 +12,7 @@ Best Time to Buy and Sell Stock with Transaction Fee
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-buystock][#buystock]], [[https://code.dennyzhang.com/followup-maxprofitwithcost][maxprofitwithcost]]
 ---------------------------------------------------------------------
 Your are given an array of integers prices, for which the i-th element is the price of a given stock on day i; and a non-negative integer fee representing a transaction fee.

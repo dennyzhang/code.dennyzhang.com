@@ -12,6 +12,7 @@ Minimum Cost to Connect Sticks
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 You have some sticks with positive integer lengths.

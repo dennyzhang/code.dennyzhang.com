@@ -12,6 +12,7 @@ Longest Repeating Substring
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-lrs][#lrs]], [[https://code.dennyzhang.com/tag/rollinghash][#rollinghash]]
 ---------------------------------------------------------------------
 Given a string S, find out the length of the longest repeating substring(s). Return 0 if no repeating substring exists.

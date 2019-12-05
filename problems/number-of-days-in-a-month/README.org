@@ -13,6 +13,7 @@ Number of Days in a Month
 Similar Problems:
 - [[https://code.dennyzhang.com/ordinal-number-of-date][Leetcode: Day of the Year]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/leapyear][#leapyear]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Given a year Y and a month M, return how many days there are in that month.

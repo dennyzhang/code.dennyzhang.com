@@ -13,6 +13,7 @@ Implement Queue by Circular Array
 Similar Problems:
 - [[https://code.dennyzhang.com/max-stack][Max Stack]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/circulararray][#circulararray]]
 ---------------------------------------------------------------------
 Implement queue by circulant array. You need to support the following methods:

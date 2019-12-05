@@ -12,6 +12,7 @@ Identify duplicates in a list of numbers
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-countsort][#countsort]], [[https://code.dennyzhang.com/followup-findduplicates][#findduplicates]]
 ---------------------------------------------------------------------
 Given an array of integers, 1 <= a[i] <= n (n = size of array), some elements appear twice and others appear once.

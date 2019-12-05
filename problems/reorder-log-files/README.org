@@ -12,6 +12,7 @@ Reorder Log Files
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/sortbyfunction][#sortbyfunction]]
 ---------------------------------------------------------------------
 You have an array of logs.  Each log is a space delimited string of words.

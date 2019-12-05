@@ -12,6 +12,7 @@ Minimum Knight Moves
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 In an infinite chess board with coordinates from -infinity to +infinity, you have a knight at square [0, 0].

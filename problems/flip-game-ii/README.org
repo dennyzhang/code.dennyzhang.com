@@ -13,6 +13,7 @@ Flip Game II
 Similar Problems:
 - [[https://code.dennyzhang.com/flip-game][Flip Game]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 You are playing the following Flip Game with your friend: Given a string that contains only these two characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move and therefore the other person will be the winner.

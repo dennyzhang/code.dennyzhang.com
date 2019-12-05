@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/unique-binary-search-trees][Leetcode: Unique Binary Search Trees]]
 - [[https://code.dennyzhang.com/all-possible-full-binary-trees][Leetcode: All Possible Full Binary Trees]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1...n.

@@ -13,6 +13,7 @@ Making A Large Island
 Similar Problems:
 - [[https://code.dennyzhang.com/number-of-distinct-islands-ii][Number of Distinct Islands II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/island][#island]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 In a 2D grid of 0s and 1s, we change at most one 0 to a 1.

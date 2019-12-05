@@ -13,6 +13,7 @@ More than half elements are the same. Identify it fast
 Similar Problems:
 - [[https://code.dennyzhang.com/is-a-a-majority-element][Leetcode: Check If a Number Is Majority Element in a Sorted Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/morevoting][#morevoting]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 Given an array of size n, find the majority element. The majority element is the element that appears more than n/2 times.

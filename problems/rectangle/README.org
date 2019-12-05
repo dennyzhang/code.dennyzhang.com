@@ -13,6 +13,7 @@ Rectangle
 Similar Problems:
 - [[https://code.dennyzhang.com/minimum-area-rectangle][Leetcode: Minimum Area Rectangle]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Give a set, if you can find four points that make up a rectangle that is parallel to the coordinate axis and outputs YES or NO.

@@ -13,6 +13,7 @@ Group Shifted Strings
 Similar Problems:
 - [[https://code.dennyzhang.com/group-anagrams][Group Anagrams]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]],  [[https://code.dennyzhang.com/review-mod][#mod]]
 ---------------------------------------------------------------------
 Given a string, we can "shift" each of its letter to its successive letter, for example: "abc" -> "bcd". We can keep "shifting" which forms the sequence:

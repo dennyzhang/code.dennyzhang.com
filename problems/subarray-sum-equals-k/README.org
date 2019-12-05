@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/minimum-size-subarray-sum][Minimum Size Subarray Sum]]
 - [[https://code.dennyzhang.com/binary-subarrays-with-sum][Binary Subarrays With Sum]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/followup-presum][#presum]]
 ---------------------------------------------------------------------
 Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.

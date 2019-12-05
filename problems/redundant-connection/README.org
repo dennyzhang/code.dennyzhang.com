@@ -13,6 +13,7 @@ Redundant Connection
 Similar Problems:
 - [[https://code.dennyzhang.com/redundant-connection-ii][Leetcode: Redundant Connection II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/review-circleingraph][#circleingraph]], [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 In this problem, a tree is an undirected graph that is connected and has no cycles.

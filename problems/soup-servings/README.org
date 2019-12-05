@@ -12,6 +12,7 @@ Soup Servings
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-mod][#mod]]
 ---------------------------------------------------------------------
 There are two types of soup: type A and type B. Initially we have N ml of each type of soup. There are four kinds of operations:

@@ -13,6 +13,7 @@ H-Index II
 Similar Problems:
 - [[https://code.dennyzhang.com/h-index][Leetcode: H-Index]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Given an array of citations sorted in ascending order (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.

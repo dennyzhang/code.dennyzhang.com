@@ -18,6 +18,7 @@ Word Distance & Follow-up
 | Space complexity: O(n*m) or O(min(n, m))       | [[https://code.dennyzhang.com/shortest-common-supersequence][Leetcode: Shortest Common Supersequence]]                       |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all edit distance problems & follow-up: [[https://code.dennyzhang.com/tag/editdistance/][#editdistance]]
 [display-posts tag="editdistance" posts_per_page="100" orderby="title"]

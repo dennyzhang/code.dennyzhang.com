@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Split Array into Consecutive Subsequences]]
 - [[https://code.dennyzhang.com/3sum-with-multiplicity][3Sum With Multiplicity]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-monotone][#monotone]]
 ---------------------------------------------------------------------
 Given an array of integers A, find the sum of min(B), where B ranges over every (contiguous) subarray of A.

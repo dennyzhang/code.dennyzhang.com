@@ -12,6 +12,7 @@ Knight Dialer
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]]
 ---------------------------------------------------------------------
 A chess knight can move as indicated in the chess diagram below:

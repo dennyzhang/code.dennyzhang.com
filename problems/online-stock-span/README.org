@@ -13,6 +13,7 @@ Online Stock Span
 Similar Problems:
 - [[https://code.dennyzhang.com/sum-of-subarray-minimums][Leetcode: Sum of Subarray Minimums]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]], [[https://code.dennyzhang.com/followup-buystock][#buystock]]
 ---------------------------------------------------------------------
 Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock's price for the current day.

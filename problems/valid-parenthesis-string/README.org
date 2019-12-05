@@ -13,6 +13,7 @@ Valid Parenthesis String
 Similar Problems:
 - [[https://code.dennyzhang.com/swap-adjacent-in-lr-string][Swap Adjacent in LR String]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-parentheses][#parentheses]], [[https://code.dennyzhang.com/category/string][#string]]
 ---------------------------------------------------------------------
 Given a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid. We define the validity of a string by these rules:

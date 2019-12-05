@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/lfu-cache][Leetcode: LFU Cache]]
 - [[https://code.dennyzhang.com/max-stack][Leetcode: Max Stack]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-designstack][#designstack]], [[https://code.dennyzhang.com/review-bucketsort][#bucketsort]], [[https://code.dennyzhang.com/followup-lfu][#lfu]]
 ---------------------------------------------------------------------
 Implement FreqStack, a class which simulates the operation of a stack-like data structure.

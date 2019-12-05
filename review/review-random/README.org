@@ -18,6 +18,7 @@ Random Problems
 | [[https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle][Fisher-Yates shuffle]]                                | [[https://code.dennyzhang.com/shuffle-an-array][Leetcode: Shuffle an Array]]                 |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all random problems: [[https://code.dennyzhang.com/tag/random/][#random]]
 [display-posts tag="random" posts_per_page="100" orderby="title"]

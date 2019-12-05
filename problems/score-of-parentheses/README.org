@@ -12,6 +12,7 @@ Score of Parentheses
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-parentheses][#parentheses]]
 ---------------------------------------------------------------------
 Given a balanced parentheses string S, compute the score of the string based on the following rule:

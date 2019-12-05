@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
 - [[https://code.dennyzhang.com/container-water][Trapping Rain Water]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]]
 ---------------------------------------------------------------------
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.

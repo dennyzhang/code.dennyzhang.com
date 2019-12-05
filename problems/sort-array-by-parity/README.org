@@ -14,6 +14,7 @@ Sort Array By Parity
 Similar Problems:
 - [[https://code.dennyzhang.com/sort-array-by-parity-ii][Sort Array By Parity II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/array][#array]]
 ---------------------------------------------------------------------
 Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.

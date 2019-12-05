@@ -12,6 +12,7 @@ Valid Array
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 If an array contains only one number that has an odd number of times, the array is valid, otherwise the array is invalid. Enter an array a containing only positive integers to determine if the array is valid. Return the number which has odd number of times if it is valid, return -1 if it is invalid.

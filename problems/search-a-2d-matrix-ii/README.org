@@ -13,6 +13,7 @@ Search a 2D Matrix
 Similar Problems:
 - [[https://code.dennyzhang.com/kth-smallest-element-in-a-sorted-matrix][Kth Smallest Element in a Sorted Matrix]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-sortedmatrix][#sortedmatrix]]
 ---------------------------------------------------------------------
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:

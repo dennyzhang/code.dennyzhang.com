@@ -66,6 +66,7 @@ func minSwaps(data []int) int {
 | Inspiring sliding window problem                          | [[https://code.dennyzhang.com/moving-stones-until-consecutive-ii][Leetcode: Moving Stones Until Consecutive II]]             |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all slidingwindow problems: [[https://code.dennyzhang.com/tag/greedy/][#slidingwindow]]
 [display-posts tag="slidingwindow" posts_per_page="100" orderby="title"]

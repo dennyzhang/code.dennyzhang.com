@@ -12,6 +12,7 @@ Get Equal Substrings Within Budget
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]
 - [[https://code.dennyzhang.com/maximum-size-subarray-sum-equals-k][Leetcode: Maximum Size Subarray Sum Equals k]]
 - Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]

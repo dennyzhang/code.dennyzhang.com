@@ -13,6 +13,7 @@ Most Common Word
 Similar Problems:
 - [[https://code.dennyzhang.com/uncommon-words-from-two-sentences][Leetcode: Uncommon Words from Two Sentences]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words.  It is guaranteed there is at least one word that isn't banned, and that the answer is unique.

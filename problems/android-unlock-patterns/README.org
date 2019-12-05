@@ -12,6 +12,7 @@ Android Unlock Patterns
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]]
 ---------------------------------------------------------------------
 Given an Android 3x3 key lock screen and two integers m and n, where 1 <= m <= n <= 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.

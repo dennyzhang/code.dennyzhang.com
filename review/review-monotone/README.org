@@ -60,6 +60,7 @@ func validSubarrays(nums []int) int {
 #+END_SRC
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all monotone problems: [[https://code.dennyzhang.com/tag/monotone/][#monotone]]
 [display-posts tag="monotone" posts_per_page="100" orderby="title"]

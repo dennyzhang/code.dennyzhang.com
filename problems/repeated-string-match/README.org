@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/rotate-string][Rotate String]]
 - [[https://code.dennyzhang.com/repeated-substring][Repeated Substring Pattern]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
 ---------------------------------------------------------------------
 Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.

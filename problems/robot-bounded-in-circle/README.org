@@ -12,6 +12,7 @@ Robot Bounded In Circle
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/robot][#robot]], [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 On an infinite plane, a robot initially stands at (0, 0) and faces north.  The robot can receive one of three instructions:

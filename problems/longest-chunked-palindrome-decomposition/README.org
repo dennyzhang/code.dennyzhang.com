@@ -12,6 +12,7 @@ Longest Chunked Palindrome Decomposition
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/followup-rollinghash][#rollinghash]]
 ---------------------------------------------------------------------
 Return the largest possible k such that there exists a_1, a_2, ..., a_k such that:

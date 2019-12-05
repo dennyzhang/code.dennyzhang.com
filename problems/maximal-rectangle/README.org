@@ -13,6 +13,7 @@ Maximal Rectangle
 Similar Problems:
 - [[https://code.dennyzhang.com/largest-rectangle-in-histogram][Leetcode: Largest Rectangle in Histogram]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]], [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.

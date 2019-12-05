@@ -1,0 +1,63 @@
+* Leetcode: Fizz Buzz Multithreaded                             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     multithread
+:END:
+---------------------------------------------------------------------
+Fizz Buzz Multithreaded
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fizz-buzz-multithreaded"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-multithread][#multithread]]
+---------------------------------------------------------------------
+Write a program that outputs the string representation of numbers from 1 to n, however:
+
+- If the number is divisible by 3, output "fizz".
+- If the number is divisible by 5, output "buzz".
+- If the number is divisible by both 3 and 5, output "fizzbuzz".
+
+For example, for n = 15, we output: 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz.
+
+Suppose you are given the following code:
+#+BEGIN_EXAMPLE
+class FizzBuzz {
+  public FizzBuzz(int n) { ... }               // constructor
+  public void fizz(printFizz) { ... }          // only output "fizz"
+  public void buzz(printBuzz) { ... }          // only output "buzz"
+  public void fizzbuzz(printFizzBuzz) { ... }  // only output "fizzbuzz"
+  public void number(printNumber) { ... }      // only output the numbers
+}
+#+END_EXAMPLE
+
+Implement a multithreaded version of FizzBuzz with four threads. The same instance of FizzBuzz will be passed to four different threads:
+
+1. Thread A will call fizz() to check for divisibility of 3 and outputs fizz.
+- Thread B will call buzz() to check for divisibility of 5 and outputs buzz.
+- Thread C will call fizzbuzz() to check for divisibility of 3 and 5 and outputs fizzbuzz.
+- Thread D will call number() which should only output the numbers.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fizz-buzz-multithreaded][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/fizz-buzz-multithreaded/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/fizz-buzz-multithreaded
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -54,6 +54,7 @@ void inorder(node *r) {
 Personally I like level-order (or BFS) very much. 
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 (See all bfs problems: [[https://code.dennyzhang.com/review-bfs][#bfs]])
 
@@ -76,6 +77,7 @@ The most impressive problems to me:
 - [[https://code.dennyzhang.com/binary-tree-vertical-order-traversal][Binary Tree Vertical Order Traversal]]
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all binarytree problems: [[https://code.dennyzhang.com/review-binarytree/][#binarytree]].
 [display-posts tag="binarytree" posts_per_page="100" orderby="title"]

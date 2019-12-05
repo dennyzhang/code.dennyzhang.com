@@ -15,6 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/maximum-frequency-stack][Leetcode: Maximum Frequency Stack]]
 - [[https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed][Insert Delete GetRandom O(1) - Duplicates allowed]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-designstack][#designstack]]
 ---------------------------------------------------------------------
 Design a max stack that supports push, pop, top, peekMax and popMax.

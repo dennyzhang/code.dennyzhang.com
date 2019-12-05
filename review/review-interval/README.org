@@ -26,6 +26,7 @@ Interval Problems
 | Typical problems: Interval List Union                            | [[https://code.dennyzhang.com/insert-interval][Leetcode: Insert Interval]]                                   |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all interval problems: [[https://code.dennyzhang.com/tag/interval/][#interval]]
 [display-posts tag="interval" posts_per_page="100" orderby="title"]

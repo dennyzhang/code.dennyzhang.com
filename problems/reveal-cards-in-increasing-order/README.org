@@ -12,6 +12,7 @@ Reveal Cards In Increasing Order
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/zigzag][#zigzag]], [[https://code.dennyzhang.com/tag/simulation][#simulation]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
 ---------------------------------------------------------------------
 In a deck of cards, every card has a unique integer.  You can order the deck in any order you want.

@@ -11,6 +11,7 @@ Trapping Rain problems & Follow-up
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-trappingrain"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all trappingrain problems & follow-up: [[https://code.dennyzhang.com/tag/calculator/][#trappingra[[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]]
 [display-posts tag="trappingrain" posts_per_page="100" orderby="title"]

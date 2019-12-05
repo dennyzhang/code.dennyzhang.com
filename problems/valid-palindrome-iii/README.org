@@ -13,6 +13,7 @@ Valid Palindrome III
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-palindromic-subsequence][Leetcode: Longest Palindromic Subsequence]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]]
 ---------------------------------------------------------------------
 Given a string s and an integer k, find out if the given string is a K-Palindrome or not.

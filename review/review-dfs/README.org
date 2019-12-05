@@ -12,6 +12,7 @@ Here we try to compile a list of inspiring DFS problems.
 #+END_HTML
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 *Basic Abstractions*
 | Name                            | Summary                                                                         |

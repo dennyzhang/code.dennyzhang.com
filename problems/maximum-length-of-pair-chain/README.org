@@ -12,6 +12,7 @@ Maximum Length of Pair Chain
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/followup-lis][#lis]]
 ---------------------------------------------------------------------
 You are given n pairs of numbers. In every pair, the first number is always smaller than the second number.

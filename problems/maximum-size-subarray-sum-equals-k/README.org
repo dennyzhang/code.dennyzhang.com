@@ -12,6 +12,7 @@ Maximum Size Subarray Sum Equals k
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - [[https://code.dennyzhang.com/get-equal-substrings-within-budget][Leetcode: Get Equal Substrings Within Budget]]
 - Tag: [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/followup-maxsubarraysum][#maxsubarraysum]]
 ---------------------------------------------------------------------

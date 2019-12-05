@@ -12,6 +12,7 @@ gcd problems
 #+END_HTML
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 Bezout's identity (also called Bezout's lemma) is a theorem in the elementary theory of numbers:
 

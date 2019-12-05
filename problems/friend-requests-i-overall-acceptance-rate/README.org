@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends][Friend Requests II: Who Has the Most Friends]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 In social network like Facebook or Twitter, people send friend requests and accept others' requests as well. Now given two tables as below:

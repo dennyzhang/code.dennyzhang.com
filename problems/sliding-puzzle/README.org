@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-slidingpuzzle][Series: Sliding Puzzle & Follow-up]]
 - [[https://code.dennyzhang.com/sliding-puzzle-iii][LintCode: Sliding Puzzle III]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/tag/slidingpuzzle][#slidingpuzzle]]
 ---------------------------------------------------------------------
 On a 2x3 board, there are 5 tiles represented by the integers 1 through 5, and an empty square represented by 0.

@@ -12,6 +12,7 @@ Can Place Flowers
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]]
 ---------------------------------------------------------------------
 Suppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would die.

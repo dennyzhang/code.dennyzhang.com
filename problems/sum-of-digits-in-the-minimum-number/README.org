@@ -12,6 +12,7 @@ Sum of Digits in the Minimum Number
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 Given an array A of positive integers, let S be the sum of the digits of the minimal element of A.

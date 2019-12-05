@@ -12,6 +12,7 @@ sqrt problems
 #+END_HTML
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all sqrt problems: [[https://code.dennyzhang.com/tag/sqrt/][#sqrt]]
 [display-posts tag="sqrt" posts_per_page="100" orderby="title"]

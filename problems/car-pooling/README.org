@@ -13,6 +13,7 @@ Car Pooling
 Similar Problems:
 - [[https://code.dennyzhang.com/meeting-rooms-ii][Leetcode: Meeting Rooms II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]], [[https://code.dennyzhang.com/tag/limitedrange][#limitedrange]]
 ---------------------------------------------------------------------
 You are driving a vehicle that has capacity empty seats initially available for passengers.  The vehicle only drives east (ie. it cannot turn around and drive west.)

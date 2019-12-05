@@ -13,6 +13,7 @@ Fraction Addition and Subtraction
 Similar Problems:
 - [[https://code.dennyzhang.com/solve-the-equation][Solve the Equation]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/followup-expression][#expression]], [[https://code.dennyzhang.com/review-gcd][#gcd]]
 ---------------------------------------------------------------------
 

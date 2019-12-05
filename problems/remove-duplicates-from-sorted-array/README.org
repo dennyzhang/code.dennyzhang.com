@@ -12,6 +12,7 @@ Remove Duplicates from Sorted Array
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-findduplicates][#findduplicates]]
 ---------------------------------------------------------------------
 Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.

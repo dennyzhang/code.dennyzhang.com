@@ -13,6 +13,7 @@ Find Smallest Common Element in All Rows
 Similar Problems:
 - [[https://code.dennyzhang.com/brick-wall][Leetcode: Brick Wall]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given a matrix mat where every row is sorted in increasing order, return the smallest common element in all rows.

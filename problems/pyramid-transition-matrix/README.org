@@ -12,6 +12,7 @@ Pyramid Transition Matrix
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]], [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 We are stacking blocks to form a pyramid. Each block has a color which is a one letter string, like `'Z'`.

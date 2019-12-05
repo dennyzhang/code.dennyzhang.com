@@ -16,6 +16,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]
 - [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][Leetcode: Minimum Swaps to Group All 1's Together]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 Given a binary array data, return the minimum number of swaps required to group all 1's present in the array together in any place in the array.

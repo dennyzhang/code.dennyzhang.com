@@ -12,6 +12,7 @@ Three Equal Parts
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 Given an array A of 0s and 1s, divide the array into 3 non-empty parts such that all of these parts represent the same binary value.

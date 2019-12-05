@@ -12,6 +12,7 @@ Zigzag Iterator
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/iterator][#iterator]], [[https://code.dennyzhang.com/tag/zigzag][#zigzag]]
 ---------------------------------------------------------------------
 Given two 1d vectors, implement an iterator to return their elements alternately.

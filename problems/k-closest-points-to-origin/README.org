@@ -12,6 +12,7 @@ K Closest Points to Origin
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/quicksort][#quicksort]], [[https://code.dennyzhang.com/review-heap][#heap]]
 ---------------------------------------------------------------------
 We have a list of points on the plane.  Find the K closest points to the origin (0, 0).

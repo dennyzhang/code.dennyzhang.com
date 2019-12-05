@@ -102,6 +102,7 @@ def heapRemove(self, l, item):
 #+END_SRC
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all heap problems: [[https://code.dennyzhang.com/tag/heap/][#heap]]
 [display-posts tag="heap" posts_per_page="100" orderby="title"]

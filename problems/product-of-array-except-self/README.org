@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/maximum-sum-circular-subarray][Maximum Sum Circular Subarray]]
 - [[https://code.dennyzhang.com/shortest-distance-to-a-character][Shortest Distance to a Character]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]]
 ---------------------------------------------------------------------
 Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].

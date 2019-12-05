@@ -13,6 +13,7 @@ Reverse Nodes in k-Group
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-reverseitem][Series: Reverse List/String & Follow-up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.

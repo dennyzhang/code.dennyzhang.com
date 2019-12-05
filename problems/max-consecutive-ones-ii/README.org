@@ -16,6 +16,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]
 - [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][Leetcode: Minimum Swaps to Group All 1's Together]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 Given a binary array, find the maximum number of consecutive 1s in this array if you can flip at most one 0.

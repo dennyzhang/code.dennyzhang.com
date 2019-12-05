@@ -13,6 +13,7 @@ Check string pattern
 Similar Problems:
 - [[https://code.dennyzhang.com/student-attendance-record-ii][Student Attendance Record II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 You are given a string representing an attendance record for a student. The record only contains the following three characters:

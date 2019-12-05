@@ -13,6 +13,7 @@ Computer Maintenance
 Similar Problems:
 - [[https://code.dennyzhang.com/flip-string-to-monotone-increasing][Leetcode: Flip String to Monotone Increasing]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 A n*m matrix represents an array of computers, and give a list which represents the coordinate of the broken computer. Now we start with (0,0) and repair the computer. There are some request:

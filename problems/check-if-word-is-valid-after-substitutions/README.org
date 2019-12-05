@@ -12,6 +12,7 @@ Check If Word Is Valid After Substitutions
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-stack][#stack]]
 ---------------------------------------------------------------------
 We are given that the string "abc" is valid.

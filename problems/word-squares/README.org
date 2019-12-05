@@ -12,6 +12,7 @@ Word Squares
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Given a set of words (without duplicates), find all word squares you can build from them.

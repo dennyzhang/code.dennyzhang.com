@@ -13,6 +13,7 @@ Count Vowels Permutation
 Similar Problems:
 - [[https://code.dennyzhang.com/distinct-subsequences-ii][Leetcode: Distinct Subsequences II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]]
 ---------------------------------------------------------------------
 Given an integer n, your task is to count how many strings of length n can be formed under the following rules:

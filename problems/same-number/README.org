@@ -13,6 +13,7 @@ Same Number
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-ab-substring][LintCode: Longest AB Substring]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given an array, If the same number exists in the array, and the distance of the same number is less than the given value k, output YES, otherwise output NO.

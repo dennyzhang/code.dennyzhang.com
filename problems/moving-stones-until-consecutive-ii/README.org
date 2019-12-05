@@ -13,6 +13,7 @@ Moving Stones Until Consecutive II
 Similar Problems:
 - [[https://code.dennyzhang.com/moving-stones-until-consecutive][Leetcode: Moving Stones Until Consecutive]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 On an infinite number line, the position of the i-th stone is given by stones[i].  Call a stone an endpoint stone if it has the smallest or largest position.

@@ -12,6 +12,7 @@ Can Make Palindrome from Substring
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/followup-presum][#presum]]
 ---------------------------------------------------------------------
 Given a string s, we make queries on substrings of s.

@@ -13,6 +13,7 @@ Serialize and Deserialize Binary Tree
 Similar Problems:
 - [[https://code.dennyzhang.com/serialize-and-deserialize-bst][Serialize and Deserialize BST]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/tag/convertds][#convertds]]
 ---------------------------------------------------------------------
 Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.

@@ -12,6 +12,7 @@ Kth Smallest Number in Multiplication Table
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-monotonicfunc][#monotonicfunc]]
 ---------------------------------------------------------------------
 Nearly every one have used the Multiplication Table. But could you find out the k-th smallest number quickly from the multiplication table?

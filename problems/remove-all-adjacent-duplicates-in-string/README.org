@@ -12,6 +12,7 @@ Remove All Adjacent Duplicates In String
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - [[https://code.dennyzhang.com/remove-all-adjacent-duplicates-in-string-ii][Leetcode: Remove All Adjacent Duplicates in String II]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-stack][#stack]]
 ---------------------------------------------------------------------

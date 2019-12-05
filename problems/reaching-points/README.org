@@ -13,6 +13,7 @@ Reaching Points
 Similar Problems:
 - [[https://code.dennyzhang.com/water-and-jug-problem][Water and Jug Problem]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-mod][#mod]], [[https://code.dennyzhang.com/followup-reachpoint][#reachpoint]]
 ---------------------------------------------------------------------
 A move consists of taking a point (x, y) and transforming it to either (x, x+y) or (x+y, y).

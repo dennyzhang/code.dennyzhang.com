@@ -84,6 +84,7 @@ func (uf *UF) find(x int) int {
 
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all unionfind tree problems: [[https://code.dennyzhang.com/tag/unionfind/][#unionfind]]
 [display-posts tag="unionfind" posts_per_page="100" orderby="title"]

@@ -13,6 +13,7 @@ H-Index
 Similar Problems:
 - [[https://code.dennyzhang.com/h-index-ii][Leetcode: H-Index II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.

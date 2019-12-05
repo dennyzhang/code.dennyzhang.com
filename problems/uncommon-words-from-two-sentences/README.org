@@ -13,6 +13,7 @@ Uncommon Words from Two Sentences
 Similar Problems:
 - [[https://code.dennyzhang.com/most-common-word][Leetcode: Most Common Word]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 We are given two sentences A and B.  (A sentence is a string of space separated words.  Each word consists only of lowercase letters.)

@@ -12,6 +12,7 @@ Find Winner on a Tic Tac Toe Game
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 Tic-tac-toe is played by two players A and B on a 3 x 3 grid.

@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/validate-ip-address][Validate IP Address]]
 - [[https://code.dennyzhang.com/utf-8-validation][Leetcode: UTF-8 Validation]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/tag/ipaddress][#ipaddress]], [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 Given a start IP address ip and a number of ips we need to cover n, return a representation of the range as a list (of smallest possible length) of CIDR blocks.

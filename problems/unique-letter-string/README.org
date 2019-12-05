@@ -12,6 +12,7 @@ Unique Letter String
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/limitedrange][#limitedrange]]
 ---------------------------------------------------------------------
 A character is unique in string S if it occurs exactly once in it.

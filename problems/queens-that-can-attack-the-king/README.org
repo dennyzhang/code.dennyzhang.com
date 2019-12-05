@@ -12,6 +12,7 @@ Queens That Can Attack the King
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
 ---------------------------------------------------------------------
 On an 8x8 chessboard, there can be multiple Black Queens and one White King.

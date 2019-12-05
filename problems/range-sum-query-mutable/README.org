@@ -13,6 +13,7 @@ Range Sum Query - Mutable
 Similar Problems:
 - [[https://code.dennyzhang.com/range-addition][Range Addition]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-segmenttree][#segmenttree]], [[https://code.dennyzhang.com/followup-rangesum][#rangesum]]
 ---------------------------------------------------------------------
 Related Reading: [[https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/][Segment Tree by geeksforgeeks.org]]

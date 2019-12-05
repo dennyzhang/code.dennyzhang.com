@@ -27,6 +27,7 @@ It's not difficult, but might involve lots of details.
 
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all stack problems: [[https://code.dennyzhang.com/tag/stack/][#stack]]
 [display-posts tag="stack" posts_per_page="100" orderby="title"]

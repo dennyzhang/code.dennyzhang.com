@@ -13,6 +13,7 @@ Right rotate array by k steps
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-matrixtraversal][Series: Matrix Traversal & Follow-up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]], [[https://code.dennyzhang.com/review-matrixtraverse][#matrixtraversal]], [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Rotate an array of n elements to the right by k steps.

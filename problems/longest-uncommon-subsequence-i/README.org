@@ -13,6 +13,7 @@ Longest Uncommon Subsequence I
 Similar Problems:
 - [[https://code.dennyzhang.com/longest-uncommon-subsequence-ii][Leetcode: Longest Uncommon Subsequence II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/followup-subsequence][#subsequence]]
 ---------------------------------------------------------------------
 Given a group of two strings, you need to find the longest uncommon subsequence of this group of two strings. The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings.

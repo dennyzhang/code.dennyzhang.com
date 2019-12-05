@@ -12,6 +12,7 @@ X of a Kind in a Deck of Cards
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-gcd][#gcd]]
 ---------------------------------------------------------------------
 In a deck of cards, each card has an integer written on it.

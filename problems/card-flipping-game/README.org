@@ -12,6 +12,7 @@ Card Flipping Game
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 On a table are N cards, with a positive integer printed on the front and back of each card (possibly different).

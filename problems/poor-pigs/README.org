@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-poison][Series: Poison Problems & Follow-up]]
 - [[https://code.dennyzhang.com/poison-test][LintCode: Poison Test]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/poison][#poison]]
 ---------------------------------------------------------------------
 There are 1000 buckets, one and only one of them contains poison, the rest are filled with water. They all look the same. If a pig drinks that poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket contains the poison within one hour.

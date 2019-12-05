@@ -13,6 +13,7 @@ Buddy Strings
 Similar Problems:
 - [[https://code.dennyzhang.com/groups-of-special-equivalent-strings][Leetcode: Groups of Special-Equivalent Strings]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/buddystring][#buddystring]]
 ---------------------------------------------------------------------
 Given two strings A and B of lowercase letters, return true if and only if we can swap two letters in A so that the result equals B.

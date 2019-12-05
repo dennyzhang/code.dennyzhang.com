@@ -48,6 +48,7 @@ But you wouldn't believe how incredibly useful it would be.
 |                                          | [[https://code.dennyzhang.com/sqrtx/][Leecode: Sqrt(x)]]                                   |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all binarysearch problems: [[https://code.dennyzhang.com/tag/binarysearch/][#binarysearch]].
 [display-posts tag="binarysearch" posts_per_page="100" orderby="title"]

@@ -20,6 +20,7 @@ Shortest distance in a graph
 [[https://cs.stackexchange.com/questions/4914/why-cant-dfs-be-used-to-find-shortest-paths-in-unweighted-graphs][Link: Why can't DFS be used to find shortest paths in unweighted graphs?]]
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
 [display-posts tag="shortestdistance" posts_per_page="100" orderby="title"]

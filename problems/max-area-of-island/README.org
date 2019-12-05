@@ -13,6 +13,7 @@ Max Area of Island
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-island][Series: Island & Follow-up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/tag/island][#island]]
 ---------------------------------------------------------------------
 Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.

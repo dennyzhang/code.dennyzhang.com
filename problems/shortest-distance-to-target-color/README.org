@@ -12,6 +12,7 @@ Shortest Distance to Target Color
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-shortestdistance][#shortestdistance]]
 ---------------------------------------------------------------------
 You are given an array colors, in which there are three colors: 1, 2 and 3.

@@ -13,6 +13,7 @@ Word Ladder
 Similar Problems:
 - [[https://code.dennyzhang.com/word-ladder-ii][Leetcode: Word Ladder II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-graph][graph]], [[https://code.dennyzhang.com/review-bfs][bfs]]
 ---------------------------------------------------------------------
 Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:

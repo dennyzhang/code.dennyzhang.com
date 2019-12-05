@@ -13,6 +13,7 @@ Push Dominoes
 Similar Problems:
 - [[https://code.dennyzhang.com/shortest-distance-to-a-character][Shortest Distance to a Character]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/tag/classic][#classic]]
 ---------------------------------------------------------------------
 There are N dominoes in a line, and we place each domino vertically upright.

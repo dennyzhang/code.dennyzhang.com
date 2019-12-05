@@ -9,6 +9,7 @@ Ones and Zeroes
 ---------------------------------------------------------------------
 - [[https://code.dennyzhang.com/order-problem][LintCode: Order Problem]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/knapsack][#knapsack]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 In the computer world, use restricted resource you have to generate maximum benefit is what we always want to pursue.

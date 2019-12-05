@@ -12,6 +12,7 @@ Minimum Increment to Make Array Unique
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/limitedrange][#limitedrange]]
 ---------------------------------------------------------------------
 Given an array of integers A, a move consists of choosing any A[i], and incrementing it by 1.

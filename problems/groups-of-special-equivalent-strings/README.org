@@ -13,6 +13,7 @@ Groups of Special-Equivalent Strings
 Similar Problems:
 - [[https://code.dennyzhang.com/buddy-strings][Leetcode: Buddy Strings]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/buddystring][#buddystring]], [[https://code.dennyzhang.com/tag/interview][#interview]]
 ---------------------------------------------------------------------
 You are given an array A of strings.

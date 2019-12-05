@@ -13,6 +13,7 @@ Toeplitz Matrix
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-matrixtraversal][Series: Matrix Traversal & Follow-up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/matrixtraverse][#matrixtraversal]]
 ---------------------------------------------------------------------
 A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same element.

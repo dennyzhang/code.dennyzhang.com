@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/word-ladder][Word Ladder]]
 - [[https://code.dennyzhang.com/open-the-lock][Open the Lock]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 A gene string can be represented by an 8-character long string, with choices from "A", "C", "G", "T".

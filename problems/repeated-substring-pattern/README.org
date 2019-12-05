@@ -14,6 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/rotate-string][Rotate String]]
 - [[https://code.dennyzhang.com/repeated-string-match][Repeated String Match]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
 ---------------------------------------------------------------------
 Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.

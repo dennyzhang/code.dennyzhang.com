@@ -13,6 +13,7 @@ Actors and Directors Who Cooperated At Least Three Times
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 Table: ActorDirector

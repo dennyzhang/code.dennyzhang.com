@@ -12,6 +12,7 @@ Split Array Problems & Follow-up
 #+END_HTML
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 See all split array problems & follow-up: [[https://code.dennyzhang.com/tag/splitarray/][#splitarray]]
 [display-posts tag="splitarray" posts_per_page="100" orderby="title"]

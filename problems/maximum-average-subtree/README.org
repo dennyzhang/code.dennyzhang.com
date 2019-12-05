@@ -12,6 +12,7 @@ Maximum Average Subtree
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/postorder][#postorder]]
 ---------------------------------------------------------------------
 Given the root of a binary tree, find the maximum average value of any subtree of that tree.

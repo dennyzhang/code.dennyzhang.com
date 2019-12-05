@@ -12,6 +12,7 @@ Longest Palindrome
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]]
 ---------------------------------------------------------------------
 Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
