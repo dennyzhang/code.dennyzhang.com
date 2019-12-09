@@ -14,6 +14,15 @@ Concurrency Problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
+*Scenarios*
+| Name                                       | Comment                                         |
+|--------------------------------------------+-------------------------------------------------|
+| Map/Reduce: scheduler + workers            | [[https://code.dennyzhang.com/web-crawler-multithreaded][Leetcode: Web Crawler Multithreaded]]             |
+| Mutex: claim ownerhip of a single resource | [[https://code.dennyzhang.com/traffic-light-controlled-intersection][Leetcode: Traffic Light Controlled Intersection]] |
+| Maintain the order                         | [[https://code.dennyzhang.com/building-h2o][Leetcode: Building H2O]]                          |
+| The Dining Philosophers                    |                                                 |
+
+*Concepts*
 | Name                                       | Comment                                         |
 |--------------------------------------------+-------------------------------------------------|
 | Synchronization primitives                 | mutex, semaphore                                |
@@ -54,12 +63,6 @@ public void execute() throws InterruptedException {
  
 }
 #+END_EXAMPLE
-
-*Scenarios*
-| Name                                       | Comment                                         |
-|--------------------------------------------+-------------------------------------------------|
-| Map/Reduce: scheduler + workers            | [[https://code.dennyzhang.com/web-crawler-multithreaded][Leetcode: Web Crawler Multithreaded]]             |
-| Mutex: claim ownerhip of a single resource | [[https://code.dennyzhang.com/traffic-light-controlled-intersection][Leetcode: Traffic Light Controlled Intersection]] |
 
 See all concurrency problems: [[https://code.dennyzhang.com/tag/concurrency/][#concurrency]].
 [display-posts tag="concurrency" posts_per_page="100" orderby="title"]
