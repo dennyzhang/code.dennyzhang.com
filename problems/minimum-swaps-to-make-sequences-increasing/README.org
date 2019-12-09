@@ -47,6 +47,48 @@ Credits To: [[https://leetcode.com/problems/minimum-swaps-to-make-sequences-incr
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// Basic Ideas:
+//
+//   dp(i)
+//       Don't swap: dp(i, 0)
+//            dp(i-1, 0), dp(i-1, 1)
+//       Swap: dp(i, 0)
+//
+// Complexity: Time O(n), Space O(n)
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func minSwap(A []int, B []int) int {
+    dp := make([][2]int, len(A))
+    dp[0] = [2]int{0, 1}
+    for i:=1; i<len(A); i++ {
+        dp[i] = [2]int{1<<32-1, 1<<32-1}
+        // Don't swap
+        if A[i] > A[i-1] && B[i] > B[i-1] {
+            dp[i][0] = min(dp[i][0], dp[i-1][0])
+            if dp[i-1][1] != 1<<32-1 {
+                dp[i][1] = min(dp[i][1], dp[i-1][1]+1)
+            }
+        }
+
+        // swap
+        // Note: Can't use else clause
+        if A[i]>B[i-1] && B[i] > A[i-1] {
+            dp[i][0] = min(dp[i][0], dp[i-1][1])
+            if dp[i-1][0] != 1<<32-1 {
+                dp[i][1] = min(dp[i][1], dp[i-1][0]+1)
+            }
+        }
+    }
+    return min(dp[len(A)-1][0], dp[len(A)-1][1])
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/minimum-swaps-to-make-sequences-increasing

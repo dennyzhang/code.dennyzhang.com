@@ -1,0 +1,106 @@
+* Leetcode: Ugly Number III                                     :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     uglynumber, math, redo
+:END:
+---------------------------------------------------------------------
+Ugly Number III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/ugly-number-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-uglynumber][#uglynumber]], [[https://code.dennyzhang.com/review-math][#math]]
+---------------------------------------------------------------------
+Write a program to find the n-th ugly number.
+
+Ugly numbers are positive integers which are divisible by a or b or c.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 3, a = 2, b = 3, c = 5
+Output: 4
+Explanation: The ugly numbers are 2, 3, 4, 5, 6, 8, 9, 10... The 3rd is 4.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 4, a = 2, b = 3, c = 4
+Output: 6
+Explanation: The ugly numbers are 2, 3, 4, 6, 8, 9, 10, 12... The 4th is 6.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 5, a = 2, b = 11, c = 13
+Output: 10
+Explanation: The ugly numbers are 2, 4, 6, 8, 10, 11, 12, 13... The 5th is 10.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: n = 1000000000, a = 2, b = 217983653, c = 336916467
+Output: 1999999984
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n, a, b, c <= 10^9
+- 1 <= a * b * c <= 10^18
+- It's guaranteed that the result will be in range [1, 2 * 10^9]
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/ugly-number-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/ugly-number-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/ugly-number-iii
+// Basic Ideas: binary search
+//
+//  Since n is as big as 10^9, generating from previous one would be too slow
+//  Monotic function: the smaller the range is, the more count we would have
+//
+//  Question: For the range of [left, right], get the number of integers which is divisible by k
+//
+// Complexity: Time O(log(n)), Space O(1)
+func gcd(x int, y int) int {
+    if x == 0 { return y }
+    for y!=0 {
+        x, y = y, x%y
+    }
+    return x
+}
+
+func nthUglyNumber(n int, a int, b int, c int) int {
+    left, right := 1, 2<<32-1
+    ab := a*b/gcd(a, b)
+    bc := b*c/gcd(b, c)
+    ac := a*c/gcd(a, c)
+    abc := a*bc/gcd(a, bc)
+    for left<right {
+        mid := (right-left)/2+left
+        cnt := mid/a+mid/b+mid/c-mid/ab-mid/ac-mid/bc+mid/abc
+        if cnt < n {
+            left = mid+1
+        } else {
+            right = mid
+        }
+    }
+    return left
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

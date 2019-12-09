@@ -1,8 +1,8 @@
-* Leetcode: Soup Servings                                       :BLOG:Medium:
+* Leetcode: Soup Servings                                       :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, inspiring, mod
+:type:     inspiring, recursive, mod, redo
 :END:
 ---------------------------------------------------------------------
 Soup Servings
@@ -13,7 +13,7 @@ Soup Servings
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-mod][#mod]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-mod][#mod]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
 ---------------------------------------------------------------------
 There are two types of soup: type A and type B. Initially we have N ml of each type of soup. There are four kinds of operations:
 
@@ -48,9 +48,46 @@ Credits To: [[https://leetcode.com/problems/soup-servings/description/][leetcode
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/soup-servings
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/soup-servings
+// Basic Ideas: Recursive + memo
+// Complexity: Time ? Space ?
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
+func dfs(x int, y int, m map[[2]int]float64) float64 {
+    res := 0.0
+    x = max(x, 0)
+    y = max(y, 0)
+    if x==0 && y==0 {
+        return 0.5
+    }
+    if x==0 {
+        return 1.0
+    }
+    if y==0 {
+        return 0.0        
+    }
+
+    if v, ok := m[[2]int{x, y}]; ok {
+        return v
+    }
+    res = 0.25*(dfs(x-100, y, m)+dfs(x-75, y-25, m)+dfs(x-50,y-50, m)+dfs(x-25, y-75, m))
+    m[[2]int{x,y}] = res
+    return res
+}
+
+func soupServings(N int) float64 {
+    if N >= 500*25 {
+        return 1.0
+    }
+    return dfs(N, N, map[[2]int]float64{})
+}
 #+END_SRC
 
 #+BEGIN_HTML

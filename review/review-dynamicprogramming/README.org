@@ -29,15 +29,18 @@ Trade space for time.
 | Non-linear dynamic problem problems | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][Leetcode: Minimum Score Triangulation of Polygon]] |
 
 *Questions*
-| Name                                                  | Example                                                       |
-|-------------------------------------------------------+---------------------------------------------------------------|
-| DP needs only O(1) space                              | [[https://code.dennyzhang.com/computer-maintenance][LintCode: Computer Maintenance]]                                |
-| Some initialization can be skipped                    | [[https://code.dennyzhang.com/longest-arithmetic-subsequence-of-given-difference][Leetcode: Longest Arithmetic Subsequence of Given Difference]]  |
-| Some initialization can be skipped                    | [[https://code.dennyzhang.com/bomb-enemy][Leetcode: Bomb Enemy]]                                          |
-| Instead of left-to-right, do it from right-to-left    | [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]                           |
-| 2-D dp, instead of one                                | [[https://code.dennyzhang.com/longest-common-subsequence][Leetcode: Longest Common Subsequence]], [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]] |
-| DP breaks down into two subproblems, instead of one   | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][Leetcode: Minimum Score Triangulation of Polygon]]              |
-| Instead of based on possible actions, based on states | [[https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-with-cooldown][Leetcode: Best Time to Buy and Sell Stock with Cooldown]]       |
+| Name                                                  | Example                                                                |
+|-------------------------------------------------------+------------------------------------------------------------------------|
+| DP needs only O(1) space                              | [[https://code.dennyzhang.com/computer-maintenance][LintCode: Computer Maintenance]]                                         |
+| Some initialization can be skipped                    | [[https://code.dennyzhang.com/longest-arithmetic-subsequence-of-given-difference][Leetcode: Longest Arithmetic Subsequence of Given Difference]]           |
+| Some initialization can be skipped                    | [[https://code.dennyzhang.com/bomb-enemy][Leetcode: Bomb Enemy]]                                                   |
+| Instead of left-to-right, do it from right-to-left    | [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]], [[https://code.dennyzhang.com/largest-sum-of-averages][Leetcode: Largest Sum of Averages]] |
+| 2-D dp, instead of one                                | [[https://code.dennyzhang.com/longest-common-subsequence][Leetcode: Longest Common Subsequence]], [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]]          |
+| DP breaks down into two subproblems, instead of one   | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][Leetcode: Minimum Score Triangulation of Polygon]]                       |
+| Instead of based on possible actions, based on states | [[https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-with-cooldown][Leetcode: Best Time to Buy and Sell Stock with Cooldown]]                |
+|-------------------------------------------------------+------------------------------------------------------------------------|
+| dp + binarytree                                       | [[https://code.dennyzhang.com/binary-trees-with-factors][Leetcode: Binary Trees With Factors]]                                    |
+| Ugly Number II                                        | [[https://code.dennyzhang.com/ugly-number-ii][Leetcode: Ugly Number II]]                                               |
 
 [[color:#c7254e][Key Parts In DP Problems]]:
 1. *Key observation* is crucial. Watch careful for how the states transit?

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, redo
+:type:     binarytree, dynamicprogramming, redo
 :END:
 ---------------------------------------------------------------------
 Binary Trees With Factors
@@ -13,7 +13,7 @@ Binary Trees With Factors
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given an array of unique integers, each integer is strictly greater than 1.
 
@@ -51,6 +51,39 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/binary-trees-with-factors
+// Basic Ideas: dynamic programming
+//
+//  Root node as i
+//
+//    dp(i) = dp(k)*dp(i-k)
+//         Both k and i-k should exist in the original array
+//         Then add 1 as a single node in the tree
+// Complexity: Time O(n^2) Space O(n)
+import ("math"
+        "sort")
+func numFactoredBinaryTrees(A []int) int {
+    sort.Ints(A)
+    mod := int(math.Pow(10, 9)+7)
+    dp := map[int]int{}
+    for _, v := range A {
+        dp[v] = 1
+    }
+    for i:=0; i<len(A); i++ {
+        for k:=i-1; k>=0; k-- {
+            if A[i]%A[k] == 0 {
+                v := A[i]/A[k]
+                if _, ok := dp[v]; ok {
+                    dp[A[i]] = dp[A[i]] + dp[A[k]]*dp[v]
+                }
+            }
+        }
+    }
+    res := 0
+    for _, v := range dp {
+        res = (res+v)%mod
+    }
+    return res
+}
 
 #+END_SRC
 

@@ -50,7 +50,7 @@ Leave me comments, if you have better ways to solve.
 - Solution:
 
 #+BEGIN_SRC go
-// https://code.dennyzhang.com/fizz-buzz-multithreade
+// https://code.dennyzhang.com/fizz-buzz-multithreaded
 // Basic Ideas:
 //
 // Complexity: Time ? Space ?

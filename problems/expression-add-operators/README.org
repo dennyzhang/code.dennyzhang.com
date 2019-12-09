@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     divideconquer, expression
+:type:     divideconquer, expression, classic
 :END:
 ---------------------------------------------------------------------
 Expression Add Operators
@@ -13,7 +13,7 @@ Expression Add Operators
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]], [[https://code.dennyzhang.com/followup-expression][#expression]]
+- Tag: [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]], [[https://code.dennyzhang.com/followup-expression][#expression]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators (not unary) +, -, or * between the digits so they evaluate to the target value.
 
@@ -34,7 +34,45 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/expression-add-operators
+// Basic Ideas: backtracking
+//
+//  No leading 0
+//  Avoid overflow
+//  How to deal with 2+3*2, 2+3*2*4
+//
+// Complexity: Time ?, Space ?
+import "strconv"
+func dfs(combination string, pos int, res *[]string, num string, target int64, val int64, lastNum int64) {
+    if pos == len(num) && val == target {
+        *res = append(*res, string(combination))
+        return
+    }
+    for i:=pos; i<len(num); i++ {
+        // Invalid leading 0
+        if num[pos] == '0' && i!=pos {
+            break
+        }
+        // Take num[pos:i] as a value to operate
+        v, _ := strconv.Atoi(num[pos:i+1])
+        cur := int64(v)
+        if pos == 0 {
+            dfs(num[pos:i+1], i+1, res, num, target, cur, cur)
+        } else {
+            // add +
+            dfs(combination+"+"+num[pos:i+1], i+1, res, num, target, val+cur, cur)
+            // add -
+            dfs(combination+"-"+num[pos:i+1], i+1, res, num, target, val-cur, -cur)
+            // add *
+            dfs(combination+"*"+num[pos:i+1], i+1, res, num, target, (val-lastNum)+lastNum*cur, lastNum*cur)
+        }
+    }
+}
 
+func addOperators(num string, target int) []string {
+    res := []string{}
+    dfs("", 0, &res, num, int64(target), int64(0), int64(0))
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

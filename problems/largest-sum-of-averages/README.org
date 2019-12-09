@@ -13,7 +13,7 @@ Largest Sum of Averages
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 We partition a row of numbers A into at most K adjacent (non-empty) groups, then our score is the sum of the average of each group. What is the largest score we can achieve?
 
@@ -44,10 +44,102 @@ Credits To: [[https://leetcode.com/problems/largest-sum-of-averages/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: From right to left. Space: n
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/largest-sum-of-averages
+// Basic Ideas: DP
+//
+// Initial idea:
+//  dp(i, k): nums[0...i], k
+//
+//    dp(j, k-1) + nums[j+1...i]
+//
+//    base condition: dp(i, 1)
+//
+// Improvement: From right to left
+//    dp(i, k): nums[i...len(A)-1], k
+//
+//       nums[i...j-1], dp(j, k-1)
+//
+// Complexity: Time O(K*n*n), Space O(n)
+func max(x, y float64)float64 {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/largest-sum-of-averages
+func largestSumOfAverages(A []int, K int) float64 {
+    presums := make([]float64, len(A)+1)
+    for i, v := range A{
+        presums[i+1] = presums[i] + float64(v)
+    }
+    dp := make([]float64, len(A))
+    
+    // base condition: with one group
+    for i, _ := range dp {
+        dp[i] = (presums[len(A)]-presums[i])/float64(len(A)-i)
+    }
 
+    // From k-1 groups to k groups
+    for k:=2; k<=K; k++ {
+        for i:=0; i<len(A); i++ {
+            for j:=i+1;j<len(A); j++ {
+                // 1 group: A[i...j-1], k-1 groups: dp(j)
+                dp[i]=max(dp[i], dp[j]+(presums[j]-presums[i])/float64(j-i))
+            }
+        }
+    }
+    return dp[0]
+}
+#+END_SRC
+
+- Solution: From left to right. Space: 2*n
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/largest-sum-of-averages
+// Basic Ideas: DP
+//
+//  dp(i, k): nums[0...i], k
+//
+//    dp(j, k-1) + nums[j+1...i]
+//
+//    base condition: dp(i, 1)
+//
+// Complexity: Time O(K*n*n), Space O(n)
+func max(x, y float64)float64 {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func largestSumOfAverages(A []int, K int) float64 {
+    presums := make([]float64, len(A)+1)
+    for i, v := range A{
+        presums[i+1] = presums[i] + float64(v)
+    }
+    dp := make([]float64, len(A))
+    
+    // base condition: with one group
+    for i, _ := range dp {
+        dp[i] = presums[i+1]/float64(i+1)
+    }
+
+    for k:=2; k<=K; k++ {
+        dp2 := make([]float64, len(A))
+        copy(dp2, dp)
+        for i:=1; i<len(A); i++ {
+            for j:=0; j<i;j++ {
+                // k-1 group: dp[j], 1 group: A[j+1...i]
+                dp2[i]=max(dp2[i], dp[j]+(presums[i+1]-presums[j+1])/float64(i-j))
+            }
+        }
+        copy(dp, dp2)
+    }
+    return dp[len(A)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML

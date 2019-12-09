@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, redo
+:type:     inspiring, knapsack, backtracking
 :END:
 ---------------------------------------------------------------------
 Matchsticks to Square
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/split-array-with-same-average][Split Array With Same Average]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-knapsack][#knapsack]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Remember the story of Little Match Girl? By now, you know exactly what matchsticks the little match girl has, please find out a way you can make one square by using up all those matchsticks. You should not break any stick, but you can link them up, and each matchstick must be used exactly one time.
 
@@ -47,9 +47,48 @@ Credits To: [[https://leetcode.com/problems/matchsticks-to-square/description/][
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/matchsticks-to-square
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/matchsticks-to-square
+// Basic Ideas: backtracking + pruning
+//
+// Complexity: Time O(4^n) Space O(1)
+import "sort"
+func dfs(pos int, sums []int, nums []int, target int) bool {
+    if pos == len(nums) {
+        return sums[0] == target && sums[1] == target && sums[2] == target
+    }
+    
+    // backtracking
+    for i:=0; i<4; i++ {
+        if sums[i]+nums[pos]>target {
+            continue
+        }
+        sums[i]+=nums[pos]
+        if dfs(pos+1, sums, nums, target) {
+            return true
+        }
+        sums[i]-=nums[pos]
+    }
+    return false
+}
 
+func makesquare(nums []int) bool {
+    if len(nums) < 4 {
+        return false
+    }
+    sum := 0
+    for _, num := range nums {
+        sum += num
+    }
+    if sum%4 != 0 {
+        return false
+    }
+    target := sum/4
+    sort.Ints(nums)
+    
+    sums := []int{0, 0, 0, 0}
+    return dfs(0, sums, nums, target)
+}
 #+END_SRC
 
 #+BEGIN_HTML

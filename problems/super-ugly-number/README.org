@@ -1,0 +1,101 @@
+* Leetcode: Super Ugly Number                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     uglynumber, heap
+:END:
+---------------------------------------------------------------------
+Super Ugly Number
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/super-ugly-number"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-uglynumber][#uglynumber]], [[https://code.dennyzhang.com/review-heap][#heap]]
+---------------------------------------------------------------------
+Write a program to find the nth super ugly number.
+
+Super ugly numbers are positive numbers whose all prime factors are in the given prime list primes of size k.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: n = 12, primes = [2,7,13,19]
+Output: 32 
+Explanation: [1,2,4,7,8,13,14,16,19,26,28,32] is the sequence of the first 12 
+             super ugly numbers given primes = [2,7,13,19] of size 4.
+#+END_EXAMPLE
+
+Note:
+
+- 1 is a super ugly number for any given primes.
+- The given numbers in primes are in ascending order.
+- 0 < k <= 100, 0 < n <= 106, 0 < primes[i] < 1000.
+- The nth super ugly number is guaranteed to fit in a 32-bit signed integer.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/super-ugly-number][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/super-ugly-number/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/super-ugly-number
+// Basic Ideas: heap
+//
+// Complexity: Time ?, Space ?
+type IntHeap []int
+func (h IntHeap) Len() int {
+    return len(h)
+}
+
+func (h IntHeap) Less(i, j int) bool {
+    return h[i] < h[j]
+}
+
+func (h IntHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *IntHeap) Push(x interface{}) {
+    *h = append(*h, x.(int))
+}
+
+func (h *IntHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func nthSuperUglyNumber(n int, primes []int) int {
+    h := &IntHeap{}
+    heap.Init(h)
+    res := 1
+    heap.Push(h, 1)
+    for i:=1; i<=n; i++ {
+        for h.Len() > 0 {
+            v2 := heap.Pop(h).(int)
+            // find the next ugly number
+            if v2 != res {
+                res = v2
+                break
+            }
+        }
+        for _, v := range primes {
+            heap.Push(h, res*v)
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

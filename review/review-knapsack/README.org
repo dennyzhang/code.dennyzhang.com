@@ -14,13 +14,14 @@ Review knapsack code problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
 *Basic Abstractions*
-| Name                                        | Summary                                                   |
-|---------------------------------------------+-----------------------------------------------------------|
-| 0/1 Knapsack with one bag                   | For each item, take or don't take                         |
-| 0/1 Knapsack with two bags                  | For each item, put either to bag1 or bag2; or drop it     |
-| Complete knapsack problem                   | Unlike 0/1 Knapsack, each item can be used multiple times |
-| Complete knapsack problem in high dimension | [[https://code.dennyzhang.com/shopping-offers][Leetcode: Shopping Offers]]                                 |
-| Group knapsack problem                      | Knapsack with selection from distinct groups              |
+| Name                                        | Summary                                                                        |
+|---------------------------------------------+--------------------------------------------------------------------------------|
+| 0/1 Knapsack with one bag                   | For each item, take or don't take. [[https://code.dennyzhang.com/coin-change][Leetcode: Coin Change]]                       |
+| 0/1 Knapsack with 2 bags                    | For each item, either put to bag1, bag2 or drop. [[https://code.dennyzhang.com/tallest-billboard][Leetcode: Tallest Billboard]]   |
+| 0/1 Knapsack with 4 bags                    | [[https://code.dennyzhang.com/matchsticks-to-square][Leetcode: Matchsticks to Square]]                                                |
+| Complete knapsack problem                   | Unlike 0/1 Knapsack, items can be used multiple times. [[https://code.dennyzhang.com/coin-change-2][Leetcode: Coin Change 2]] |
+| Complete knapsack problem in high dimension | [[https://code.dennyzhang.com/shopping-offers][Leetcode: Shopping Offers]]                                                      |
+| Group knapsack problem                      | Knapsack with selection from distinct groups                                   |
 
 See all knapsack problems: [[https://code.dennyzhang.com/tag/knapsack/][#knapsack]]
 [display-posts tag="knapsack" posts_per_page="100" orderby="title"]

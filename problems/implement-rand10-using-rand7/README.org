@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     random, inspiring
+:type:     random, inspiring, possibilities
 :END:
 ---------------------------------------------------------------------
 Implement Rand10() Using Rand7()
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/random-pick-with-blacklist][Leetcode: Random Pick with Blacklist]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-random][#random]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-random][#random]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/followup-possibilities][#possibilities]]
 ---------------------------------------------------------------------
 Given a function rand7 which generates a uniform random integer in the range 1 to 7, write a function rand10 which generates a uniform random integer in the range 1 to 10.
 

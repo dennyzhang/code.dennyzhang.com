@@ -50,17 +50,27 @@ Credits To: [[https://leetcode.com/problems/rank-scores/description/][leetcode.c
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution 1
+- Solution: Add rank and prev for group id
 #+BEGIN_SRC sql
 ## https://code.dennyzhang.com/rank-scores
-set @rownr=0;
-select t1.Score, t2.rank as Rank
-from Scores as t1 inner join
-      (select @rownr:=@rownr+1 as rank, t.Score
-      from (select * from Scores 
-      group by Score order by Score desc) as t) As t2
-on t1.Score = t2.Score
-order by t1.Score desc
+select Score, CAST(Rank as UNSIGNED) as Rank
+from
+    (select Score,
+         @rank := case when Score = @prev then @rank else @rank+1 end as Rank,
+         @prev := Score as prev
+    from Scores, 
+        (select @rank := 0, @prev := -1) as rows
+    order by Score desc) as tt
+#+END_SRC
+
+- Solution: Add rank and prev for group id
+#+BEGIN_SRC sql
+## https://code.dennyzhang.com/rank-scores
+select Score,
+     @rank := @rank + (@prev <> (@prev := Score)) as Rank
+from Scores, 
+    (select @rank := 0, @prev := -1) as rows
+order by Score desc
 #+END_SRC
 
 - Solution 2

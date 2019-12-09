@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/climbing-stairs][Climbing Stairs]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/tag/possibilities][#possibilities]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/followup-possibilities][#possibilities]]
 ---------------------------------------------------------------------
 Alice plays the following game, loosely based on the card game "21".
 

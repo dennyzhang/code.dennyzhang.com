@@ -5,7 +5,7 @@
 :type:     bfs, dfs, graph
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Web Crawler
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/web-crawler"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

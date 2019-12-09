@@ -1,8 +1,8 @@
-* Leetcode: Remove Boxes                                              :BLOG:Medium:
+* Leetcode: Remove Boxes                                              :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, inspiring, dynamicprogramming
+:type:     game, inspiring, dynamicprogramming, intervaldp, redo
 :END:
 ---------------------------------------------------------------------
 Remove Boxes
@@ -13,7 +13,7 @@ Remove Boxes
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]]
 ---------------------------------------------------------------------
 Given several boxes with different colors represented by different positive numbers. 
 You may experience several rounds to remove boxes until there is no box left. Each time you can choose some continuous boxes with the same color (composed of k boxes, k >= 1), remove them and get k*k points.
@@ -49,7 +49,60 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/remove-boxes
+// Basic Ideas: interval DP + greedy
+//
+//   Greedy: We shouldn't cut continous repeating subarray.
+//     (p+q)*(p+q) >= p*p+q*q
+//
+//   f(i, j)
+//       For the following continuous characters same as s[j]
+//       
+//       For all characters (s[p]) in between s[i] and s[j],
+//          If s[p] == s[j], try to remove s[p+1...j-1]
+//
+// Complexity: Time O(n^4), Space O(n^3)
+func dfs(dp [][][]int, i int, j int, k int, boxes []int) int {
+    if i>j {
+        return 0
+    }
 
+    // Already caculated, use cached value
+    if dp[i][j][k] != 0 {
+        return dp[i][j][k]
+    }
+    
+    // find the continuous characters
+    for i<j && boxes[j-1]==boxes[j] {
+        j--
+        k++
+    }
+    
+    // remove s[j] with the continous same characters
+    dp[i][j][k] = (k+1)*(k+1) + dfs(dp, i, j-1, 0, boxes)
+    
+    // interval DP
+    for p:=i; p<j; p++ {
+        if boxes[p] == boxes[j] {
+           // Remove s[p+1...j-1], then attach s[j] to s[i...p]
+            v := dfs(dp, p+1, j-1, 0, boxes) + dfs(dp, i, p, k+1, boxes)
+            if v > dp[i][j][k] {
+                dp[i][j][k] = v
+            } 
+        }
+    }
+    return dp[i][j][k]
+}
+
+func removeBoxes(boxes []int) int {
+    dp := make([][][]int, len(boxes))
+    for i, _ := range dp {
+        dp[i] = make([][]int, len(boxes))
+        for j, _ := range dp[i] {
+            dp[i][j] = make([]int, 100)
+        }
+    }
+    return dfs(dp, 0, len(boxes)-1, 0, boxes)
+}
 #+END_SRC
 
 #+BEGIN_HTML

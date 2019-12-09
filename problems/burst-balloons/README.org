@@ -42,7 +42,53 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/burst-balloons
+// Basic Ideas: DP over Interval
+//
+//   dp(i, j) = max(dp(i, k)+dp(k+1,j)+burst k)
+//           Treat k as the last one to burst
+//
+// Complexity: Time O(n^3), Space O(n^2)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
+func maxCoins(nums []int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+    nums2 := make([]int, len(nums)+2)
+    nums2[0] = 1
+    nums2[len(nums2)-1] = 1
+    for i:=1; i<len(nums2)-1; i++ {
+        nums2[i] = nums[i-1]
+    }
+    dp := make([][]int, len(nums))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(nums))
+        // base condition. Length: 1
+        dp[i][i] = nums2[i]*nums2[i+1]*nums2[i+2]
+    }
+    for i:=len(nums)-1; i>=0; i-- {
+        for j:=i+1; j<len(nums); j++ {
+            dp[i][j] = 0
+            for k:=i; k<=j; k++ {
+                v1, v2 := 0, 0
+                if k-1>=i {
+                    v1 = dp[i][k-1]
+                }
+                if j>=k+1 {
+                    v2 = dp[k+1][j]
+                }
+                dp[i][j] = max(dp[i][j], v1+v2+nums2[k+1]*nums2[i]*nums2[j+2])
+            }
+        }
+    }
+    return dp[0][len(nums)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML

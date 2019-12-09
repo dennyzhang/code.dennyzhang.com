@@ -48,7 +48,40 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/strange-printer
-
+// Basic Ideas: Interval DP
+//  dp(i, j): paint s[i...j]
+//    dp(i, i) = 1
+//    dp(i, j) = min(dp(i, k)+dp(k+1, j) or dp(i, k)+dp(k+1, j)-1)
+// Complexity: Time O(n^3), Space O(n^2)
+func strangePrinter(s string) int {
+    if len(s) == 0 {
+        return 0
+    }
+    dp := make([][]int, len(s))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(s))
+        dp[i][i] = 1
+    }
+    
+    // from bottom up
+    for i:=len(s)-1; i>=0; i-- {
+        for j:=i+1; j<len(s); j++ {
+            // s[i...j]
+            dp[i][j] = j-i+1
+            for k:=i; k<j; k++ {
+                // dp[i][k], dp[k+1][j]
+                v := dp[i][k]+dp[k+1][j]
+                if s[k] == s[j] {
+                    v--
+                }
+                if v < dp[i][j] {
+                    dp[i][j] = v
+                }
+            }
+        }
+    }
+    return dp[0][len(s)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML

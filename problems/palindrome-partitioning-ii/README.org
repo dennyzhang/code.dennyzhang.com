@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     palindrome, intervaldp
+:type:     palindrome, intervaldp, dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Palindrome Partitioning
@@ -13,26 +13,65 @@ Palindrome Partitioning
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]]
 ---------------------------------------------------------------------
 Given a string s, partition s such that every substring of the partition is a palindrome.
 
 Return the minimum cuts needed for a palindrome partitioning of s.
 
-For example, given s = "aab",
+Example:
+#+BEGIN_EXAMPLE
+Input: "aab"
+Output: 1
+Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cut.For example, given s = "aab",
 Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
+#+END_EXAMPLE
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/palindrome-partitioning-ii][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/palindrome-partitioning-ii/description/][leetcode.com]]
 
-Hint: Time O(n), Space O(1). Moore voting
-
-Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/palindrome-partitioning-ii
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/palindrome-partitioning-ii
+// Basic Ideas: DP over interval
+//
+//  f(i, j) = min(f(i, k)+f(k+1, j))
+//
+// Complexity: Time O(n^3), Space O(n^2)
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+func minCut(s string) int {
+    dp := make([][]int, len(s))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(s))
+    }
+    for i:=len(s)-1; i>=0; i-- {
+        for j:=i+1; j<len(s); j++ {
+            if j == i+1 {
+                if s[i] != s[j] {
+                    dp[i][j] = 1
+                }
+                continue
+            }
+            if s[i] == s[j] && dp[i+1][j-1] == 0 {
+                dp[i][j] = 0
+                continue
+            }
+            dp[i][j] = 1<<32-1
+            for k:=i; k<j; k++ {
+                dp[i][j] = min(dp[i][j], dp[i][k]+dp[k+1][j]+1)
+            }
+        }
+    }
+    return dp[0][len(s)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML

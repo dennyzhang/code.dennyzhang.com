@@ -1,0 +1,104 @@
+* Leetcode: Fraction to Recurring Decimal                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math, hashmap, redo
+:END:
+---------------------------------------------------------------------
+Fraction to Recurring Decimal
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fraction-to-recurring-decimal"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+
+If the fractional part is repeating, enclose the repeating part in parentheses.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: numerator = 1, denominator = 2
+Output: "0.5"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: numerator = 2, denominator = 1
+Output: "2"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: numerator = 2, denominator = 3
+Output: "0.(6)"
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/fraction-to-recurring-decimal][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/fraction-to-recurring-decimal/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/fraction-to-recurring-decimal
+// Basic Ideas: math + hashmap
+//
+// If we see the same denomiator again, it's recurring
+//
+// Complexity: Time ?, Space ?
+import "strconv"
+func abs(x int) int {
+    if x>0 {
+        return x
+    } else {
+        return -x
+    }
+}
+
+func fractionToDecimal(numerator int, denominator int) string {
+    if numerator == 0 {
+        return "0"
+    }
+    // assume denominator won't be 0
+    if numerator<0 && denominator<0 {
+        return fractionToDecimal(-numerator, -denominator)
+    }
+    if numerator<0 || denominator<0 {
+        return "-"+fractionToDecimal(abs(numerator), abs(denominator))
+    }
+    // get integer part
+    res := strconv.Itoa(numerator/denominator)
+    if numerator%denominator == 0 {
+        return res
+    }
+    res += "."
+    m := map[int]int{}
+    num := numerator%denominator
+    for num != 0 {
+        m[num] = len(res)
+        num = num*10
+        res += strconv.Itoa(num/denominator)
+        num = num%denominator
+        // See a recurring pattern
+        if _, ok := m[num]; ok {
+            res = fmt.Sprintf("%s(%s)", res[0:m[num]], res[m[num]:])
+            break
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

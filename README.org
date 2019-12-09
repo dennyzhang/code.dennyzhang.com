@@ -119,6 +119,11 @@ for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "READM
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/unionfind\]\[#unionfind\]\]!\[\[https://code.dennyzhang.com/review-unionfind\]\[#unionfind\]\]!g' $f
 done
 #+END_SRC
+* TODO 疯狂打卡群                                                  :noexport:
+https://docs.google.com/spreadsheets/d/1b4R1mAvhuTNS7XeFcZR8MdmrfLOFyYTVUqWKvY0xeu8/edit#gid=0
+
+Terry
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Role Models                                            :noexport:
 https://github.com/donnemartin/interactive-coding-challenges
 ** Sample https://github.com/scottszb1987/LeetCodeInCSharp
@@ -379,3 +384,14 @@ https://code.dennyzhang.com/web-crawler-multithreaded
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Add similar floating github: https://oi-wiki.org/dp/#dag    :noexport:
 * TODO [#A] detect 404 images: https://code.dennyzhang.com/binary-tree-cameras :noexport:
+https://code.dennyzhang.com/the-dining-philosophers
+* TODO Can't push java code snippet: https://code.dennyzhang.com/the-dining-philosophers :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO maintain similar link like https://leetcode.com/discuss/interview-question/448285/list-of-questions-sorted-by-common-patterns :noexport:
+* TODO 认识 花花酱                                                 :noexport:
+https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
+* TODO [#A] Doesn't show the full problem list: https://code.dennyzhang.com/review-knapsack :noexport:
+https://code.dennyzhang.com/review-backtracking
+* TODO Change menu: https://code.dennyzhang.com/                   :noexport:
+* TODO Add a menu: category #Series                                :noexport:
+* TODO Doesn't show ads fast enough: https://code.dennyzhang.com/rotate-function :noexport:

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     greedy, twopointer
 :END:
 ---------------------------------------------------------------------
 Bag of Tokens
@@ -13,7 +13,7 @@ Bag of Tokens
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 You have an initial power P, an initial score of 0 points, and a bag of tokens.
 
@@ -55,24 +55,51 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/bag-of-tokens
+// Basic Ideas: greedy + two pointer
+//
+// get as many power points as possible with cheap price
+// trade one points with high token
+//
+// Notice: When to stop power -> token?
+//
+// Complexity: Time O(n*log(n)), Space O(1)
+import "sort"
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
+func bagOfTokensScore(tokens []int, P int) int {
+    res := 0
+    power, token := 0, P
+    sort.Ints(tokens)
+    left, right := 0, len(tokens)-1
+
+    // fmt.Println(tokens)
+    // token >= tokens[left] || power>0: can make a deal
+    for left <= right && (token >= tokens[left] || power>0) {
+        // get as many power points as possible with cheap price
+        for left <= right && token >= tokens[left] {
+            token -= tokens[left]
+            power++
+            left++
+            res = max(res, power)
+        }
+        // trade one points with high token
+        if left<=right && power>0 {
+            token += tokens[right]
+            power--
+            right--
+        }
+        // fmt.Println(res, power, token, left, right)
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

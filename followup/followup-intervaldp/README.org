@@ -8,7 +8,7 @@
 Dynamic Programming On Interval Problems & Follow-up
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-intervaldp"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/followup/followup-intervaldp"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
@@ -50,3 +50,11 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:
 #+LINK_HOME:
+* TODO 划分DP                                                      :noexport:
+https://blog.csdn.net/fuyukai/article/details/43898333
+https://blog.csdn.net/fuyukai/article/details/43898639
+
+https://blog.csdn.net/cg66570/article/details/52206691
+https://blog.csdn.net/fuyukai/article/details/43907411
+
+https://blog.csdn.net/fuyukai/article/details/46882603#comments

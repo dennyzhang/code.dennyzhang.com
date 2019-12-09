@@ -1,0 +1,68 @@
+* Leetcode: Zuma Game                                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, intervaldp
+:END:
+---------------------------------------------------------------------
+Zuma Game
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/zuma-game"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]]
+---------------------------------------------------------------------
+Think about Zuma Game. You have a row of balls on the table, colored red(R), yellow(Y), blue(B), green(G), and white(W). You also have several balls in your hand.
+
+Each time, you may choose a ball in your hand, and insert it into the row (including the leftmost place and rightmost place). Then, if there is a group of 3 or more balls in the same color touching, remove these balls. Keep doing this until no more balls can be removed.
+
+Find the minimal balls you have to insert to remove all the balls on the table. If you cannot remove all the balls, output -1.
+
+Examples:
+#+BEGIN_EXAMPLE
+Input: "WRRBBW", "RB"
+Output: -1
+Explanation: WRRBBW -> WRR[R]BBW -> WBBW -> WBB[B]W -> WW
+
+Input: "WWRRBBWW", "WRBRW"
+Output: 2
+Explanation: WWRRBBWW -> WWRR[R]BBWW -> WWBBWW -> WWBB[B]WW -> WWWW -> empty
+
+Input:"G", "GGGGG"
+Output: 2
+Explanation: G -> G[G] -> GG[G] -> empty 
+
+Input: "RBYYBBRRB", "YRBGB"
+Output: 3
+Explanation: RBYYBBRRB -> RBYY[Y]BBRRB -> RBBBRRB -> RRRB -> B -> B[B] -> BB[B] -> empty 
+#+END_EXAMPLE
+
+Note:
+1. You may assume that the initial row of balls on the table won't have any 3 or more consecutive balls with the same color.
+- The number of balls on the table won't exceed 20, and the string represents these balls is called "board" in the input.
+- The number of balls in your hand won't exceed 5, and the string represents these balls is called "hand" in the input.
+- Both input strings will be non-empty and only contain characters 'R','Y','B','G','W'.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/zuma-game][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/zuma-game/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/zuma-game
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

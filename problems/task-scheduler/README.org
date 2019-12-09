@@ -1,0 +1,122 @@
+* Leetcode: Task Scheduler                                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     heap, greedy, classic
+:END:
+---------------------------------------------------------------------
+Task Scheduler
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/task-scheduler"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Given a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks. Tasks could be done without original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.
+
+However, there is a non-negative cooling interval n that means between two same tasks, there must be at least n intervals that CPU are doing different tasks or just be idle.
+
+You need to return the least number of intervals the CPU will take to finish all the given tasks.
+ 
+Example:
+#+BEGIN_EXAMPLE
+Input: tasks = ["A","A","A","B","B","B"], n = 2
+Output: 8
+Explanation: A -> B -> idle -> A -> B -> idle -> A -> B.
+#+END_EXAMPLE
+ 
+Note:
+
+- The number of tasks is in the range [1, 10000].
+- The integer n is in the range [0, 100].
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/task-scheduler][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/task-scheduler/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/task-scheduler
+// Basic Ideas: greedy + hashmap
+//
+//  Try to schedule tasks of different types
+//  When we can schedule, always schedule the one with the most frequency
+//
+// Complexity: Time O(n), Space O(1)
+type MyNode struct {
+    ch int
+    freqs int
+}
+
+type IntHeap []MyNode
+func (h IntHeap) Len() int {
+    return len(h)
+}
+
+func (h IntHeap) Less(i, j int) bool {
+    return h[i].freqs > h[j].freqs
+}
+
+func (h IntHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *IntHeap) Push(x interface{}) {
+    *h = append(*h, x.(MyNode))
+}
+
+func (h *IntHeap) Pop() interface{} {
+    res := (*h)[len(*h)-1]
+    *h = (*h)[0:len(*h)-1]
+    return res
+}
+
+func leastInterval(tasks []byte, n int) int {
+    res := 0
+    m := map[int]int{}
+    for _, b := range tasks {
+        m[int(b-'A')]++
+    }
+    h := &IntHeap{}
+    heap.Init(h)
+    
+    for k, v := range m {
+        heap.Push(h, MyNode{ch:k, freqs:v})
+    }
+
+    for h.Len()>0 {
+        scheduled := []int{}
+        for i:=0; i<=n; i++ {
+            if h.Len()>0 {
+                node := heap.Pop(h).(MyNode)
+                m[node.ch]--
+                if m[node.ch] > 0 {
+                    scheduled = append(scheduled, node.ch)
+                }
+            }
+            res++
+            if h.Len() == 0 && len(scheduled) == 0 {
+                break
+            }
+        }
+        for _, ch := range scheduled {
+            heap.Push(h, MyNode{ch:ch, freqs:m[ch]})
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

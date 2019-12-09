@@ -23,7 +23,7 @@ Eating is not limited by the remaining amounts of spaghetti or stomach space; an
 
 Design a discipline of behavior (a concurrent algorithm) such that no philosopher will starve; i.e., each can forever continue to alternate between eating and thinking, assuming that no philosopher can know when others may want to eat or think.
 
-[[image-blog:The Dining Philosophers][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/the-dining-philosophers/philosophers.png]]
+[[image-blog:The Dining Philosophers][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/the-dining-philosophers/dining-philosophers.png]]
 
 The problem statement and the image above are taken from wikipedia.org
 
@@ -63,7 +63,54 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/the-dining-philosophers
+// Basic Ideas:
+//
+//  How to avoid dead lock?
+//
+// Complexity: Time ? Space ?
+import java.util.concurrent.*;
+class DiningPhilosophers {
 
+    private Semaphore[] sems;
+    public DiningPhilosophers() {
+        sems = new Semaphore[5];
+        for (int i=0; i<5; i++) {
+            sems[i] = new Semaphore(0, true);
+        }
+    }
+
+    // call the run() method of any runnable to execute its code
+    public void wantsToEat(int philosopher,
+                           Runnable pickLeftFork,
+                           Runnable pickRightFork,
+                           Runnable eat,
+                           Runnable putLeftFork,
+                           Runnable putRightFork) throws InterruptedException {
+        int left = philosopher;
+        int right = (philosopher+4)%5;
+        if (left%2 == 0) {
+            sems[left].acquire();
+            sems[right].acquire();
+            pickLeftFork.run();
+            pickRightFork.run();
+            eat.run();
+            putLeftFork.run();
+            putRightFork.run();
+            sems[right].release();
+            sems[left].release();
+        } else {
+            sems[right].acquire();
+            sems[left].acquire();
+            pickLeftFork.run();
+            pickRightFork.run();
+            eat.run();
+            putLeftFork.run();
+            putRightFork.run();
+            sems[left].release();
+            sems[right].release();
+        }
+    }
+}
 #+END_SRC
 
 #+BEGIN_HTML

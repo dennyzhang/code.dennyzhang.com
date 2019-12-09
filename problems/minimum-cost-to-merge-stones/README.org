@@ -13,7 +13,7 @@ Minimum Cost to Merge Stones
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]]
+- Tag: [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 There are N piles of stones arranged in a row.  The i-th pile has stones[i] stones.
 
@@ -67,7 +67,46 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/minimum-cost-to-merge-stones
+// Basic Ideas: DP over interval
+//  dp[i][j]
+//    dp[i][k], dp[k+1][j]
+//
+// Complexity: Time O(n^3), Space O(n^2)
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y        
+    }
+}
 
+func mergeStones(stones []int, K int) int {
+    if (len(stones)-1)%(K-1) != 0 {
+        return -1
+    }
+    dp := make([][]int, len(stones))
+    for i, _ := range dp {
+        dp[i] = make([]int, len(stones))
+    }
+    presums := make([]int, len(stones)+1)
+    for i, _ := range stones {
+        presums[i+1] = presums[i]+stones[i]
+    }
+    // dp
+    for i:=len(stones)-1; i>=0; i-- {
+        for j:=i+K-1; j<len(stones); j++ {
+            dp[i][j] = 1<<32-1
+            for k:=i; k+1<=j; k += K-1 {
+                // dp[i][k], dp[k+1][j]
+                dp[i][j] = min(dp[i][j], dp[i][k] + dp[k+1][j])
+            }
+            if (j-i) % (K-1) == 0 {
+                dp[i][j] += presums[j+1]-presums[i]
+            }
+        }
+    }
+    return dp[0][len(stones)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML

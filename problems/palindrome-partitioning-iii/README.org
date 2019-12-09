@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming
+:type:     dynamicprogramming, intervaldp
 :END:
 ---------------------------------------------------------------------
 Palindrome Partitioning III
@@ -13,7 +13,7 @@ Palindrome Partitioning III
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]]
 ---------------------------------------------------------------------
 You are given a string s containing lowercase letters and an integer k. You need to :
 

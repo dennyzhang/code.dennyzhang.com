@@ -5,7 +5,7 @@
 :type:     maxsubarraysum, monotone, redo
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Shortest Subarray with Sum at Least K
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-subarray-with-sum-at-least-k"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

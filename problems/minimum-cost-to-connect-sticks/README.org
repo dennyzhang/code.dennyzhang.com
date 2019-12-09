@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     heap, game
+:type:     heap, game, redo
 :END:
 ---------------------------------------------------------------------
 Minimum Cost to Connect Sticks

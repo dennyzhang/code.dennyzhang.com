@@ -1,0 +1,182 @@
+* Leetcode: Verbal Arithmetic Puzzle                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     backtracking, manydetails, redo
+:END:
+---------------------------------------------------------------------
+Verbal Arithmetic Puzzle
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/verbal-arithmetic-puzzle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+---------------------------------------------------------------------
+Given an equation, represented by words on left side and the result on right side.
+
+You need to check if the equation is solvable under the following rules:
+
+- Each character is decoded as one digit (0 - 9).
+- Every pair of different characters they must map to different digits.
+- Each words[i] and result are decoded as one number without leading zeros.
+- Sum of numbers on left side (words) will equal to the number on right side (result). 
+- Return True if the equation is solvable otherwise return False.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: words = ["SEND","MORE"], result = "MONEY"
+Output: true
+Explanation: Map 'S'-> 9, 'E'->5, 'N'->6, 'D'->7, 'M'->1, 'O'->0, 'R'->8, 'Y'->'2'
+Such that: "SEND" + "MORE" = "MONEY" ,  9567 + 1085 = 10652
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: words = ["SIX","SEVEN","SEVEN"], result = "TWENTY"
+Output: true
+Explanation: Map 'S'-> 6, 'I'->5, 'X'->0, 'E'->8, 'V'->7, 'N'->2, 'T'->1, 'W'->'3', 'Y'->4
+Such that: "SIX" + "SEVEN" + "SEVEN" = "TWENTY" ,  650 + 68782 + 68782 = 138214
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: words = ["THIS","IS","TOO"], result = "FUNNY"
+Output: true
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: words = ["LEET","CODE"], result = "POINT"
+Output: false
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 2 <= words.length <= 5
+- 1 <= words[i].length, results.length <= 7
+- words[i], result contains only upper case English letters.
+- Number of different characters used on the expression is at most 10.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/verbal-arithmetic-puzzle][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/verbal-arithmetic-puzzle/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/verbal-arithmetic-puzzle
+// Basic Ideas: backtracking
+//
+// From right to left
+//   Reverse strings
+//   DNES
+//   EROM
+//   YENOM
+// Complexity: Time ? Space ?
+func reverse(str string) string {
+    bytes := []byte(str)
+    left, right := 0, len(bytes)-1
+    for left<right {
+        bytes[left], bytes[right] = bytes[right], bytes[left]
+        left++
+        right--
+    }
+    return string(bytes)
+}
+
+// Add wordIndex to simplify the backtracking
+func dfs(pos int, wordIndex int, mappings map[byte]int, words []string, result string, carry int, values *[]bool) bool {
+    if pos == len(result) {
+        // collect result
+        for _, w := range words {
+            if len(w) > pos {
+                return false
+            }
+        }
+        return carry==0
+    }
+    if wordIndex == len(words) {
+        // Need to move to next column
+        v := carry
+        for _, w := range words {
+            if pos < len(w) {
+                v += mappings[w[pos]]
+            }
+        }
+        // If result[pos] not assigned, there would be only one case
+        ch := result[pos]
+        if _, ok := mappings[ch]; !ok || mappings[ch] == -1 {
+            // leading 0
+            if pos == len(result)-1 && v%10 == 0 {
+                return false
+            }
+            // already taken
+            if (*values)[v%10] {
+                return false
+            }
+            (*values)[v%10] = true
+            mappings[ch] = v%10
+            res := dfs(pos, wordIndex, mappings, words, result, carry, values)
+            // backtracking
+            (*values)[v%10] = false
+            mappings[ch] = -1
+            return res
+        }
+        if v%10 == mappings[ch] {
+            return dfs(pos+1, 0, mappings, words, result, v/10, values)
+        }
+    } else {
+        // The same column but next word
+        if len(words[wordIndex]) <= pos {
+            return dfs(pos, wordIndex+1, mappings, words, result, carry, values)
+        } else {
+            ch := words[wordIndex][pos]
+            if _, ok := mappings[ch]; ok && mappings[ch] != -1 {
+                return dfs(pos, wordIndex+1, mappings, words, result, carry, values)
+            } else {
+                // assign values
+                for i:=0; i<10; i++ {
+                    if !(*values)[i] {
+                        // avoid leading characters
+                        if i == 0 && pos == len(words[wordIndex])-1 {
+                            continue
+                        }
+                        (*values)[i] = true
+                        mappings[ch] = i
+                        
+                        if dfs(pos, wordIndex+1, mappings, words, result, carry, values) {
+                            return true
+                        }
+                        (*values)[i] = false
+                        mappings[ch] = -1
+                    }
+                }
+            }
+        }
+    }
+    return false
+}
+
+func isSolvable(words []string, result string) bool {
+    result = reverse(result)
+    for i, w := range words {
+        words[i] = reverse(w)
+    }
+    mappings := map[byte]int{}
+    values := make([]bool, 10)
+    return dfs(0, 0, mappings, words, result, 0, &values)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

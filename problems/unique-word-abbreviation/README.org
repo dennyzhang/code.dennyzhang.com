@@ -1,0 +1,108 @@
+* Leetcode: Unique Word Abbreviation                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+Unique Word Abbreviation
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-word-abbreviation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+An abbreviation of a word follows the form <first letter><number><last letter>. Below are some examples of word abbreviations:
+#+BEGIN_EXAMPLE
+a) it                      --> it    (no abbreviation)
+
+     1
+     |
+b) d|o|g                   --> d1g
+
+              1    1  1
+     1---5----0----5--8
+     |   |    |    |  |    
+c) i|nternationalizatio|n  --> i18n
+
+              1
+     1---5----0
+     |   |    |
+d) l|ocalizatio|n          --> l10n
+#+END_EXAMPLE
+
+Assume you have a dictionary and given a word, find whether its abbreviation is unique in the dictionary. A word's abbreviation is unique if no other word from the dictionary has the same abbreviation.
+
+Example:
+#+BEGIN_EXAMPLE
+Given dictionary = [ "deer", "door", "cake", "card" ]
+
+isUnique("dear") -> false
+isUnique("cart") -> true
+isUnique("cane") -> false
+isUnique("make") -> true
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-word-abbreviation][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/unique-word-abbreviation/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/unique-word-abbreviation
+// Basic Ideas: hashmap
+// Complexity: Time O(n), Space O(n)
+type ValidWordAbbr struct {
+    abbrevs map[string]int
+    words map[string]bool
+}
+
+func getAbbr(word string) string {
+    if len(word)<=2 {
+        return word
+    }
+    return fmt.Sprintf("%s%d%s", word[0], len(word)-2, word[len(word)-1])
+}
+
+func Constructor(dictionary []string) ValidWordAbbr {
+    abbrevs := map[string]int{}
+    words := map[string]bool{}
+    for _, word := range dictionary {
+        if _, ok := words[word]; !ok {
+            abbrevs[getAbbr(word)]++
+            words[word] = true
+        }
+    }
+    return ValidWordAbbr{abbrevs:abbrevs, words:words}
+}
+
+func (this *ValidWordAbbr) IsUnique(word string) bool {
+    if this.abbrevs[getAbbr(word)] == 0 {
+        return true
+    }
+    if this.abbrevs[getAbbr(word)] == 1 && this.words[word] {
+        return true
+    }
+    return false
+}
+
+/**
+ * Your ValidWordAbbr object will be instantiated and called as such:
+ * obj := Constructor(dictionary);
+ * param_1 := obj.IsUnique(word);
+ */
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

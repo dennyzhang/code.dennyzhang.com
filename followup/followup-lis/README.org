@@ -8,10 +8,14 @@
 Longest increasing subsequence & Follow-up
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/followup-lis"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/followup/followup-lis"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+
+| Name                                                                 | Summary |
+|----------------------------------------------------------------------+---------|
+| [[https://stackoverflow.com/questions/21048600/minimum-no-of-changes-required-to-make-array-strictly-increasing][Minimum number of changes required to make array strictly increasing]] | [[https://www.geeksforgeeks.org/convert-to-strictly-increasing-integer-array-with-minimum-changes/][link]]    |
 
 See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
 [display-posts tag="lis" posts_per_page="100" orderby="title"]
