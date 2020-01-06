@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     hashmap
 :END:
 ---------------------------------------------------------------------
 Triples with Bitwise AND Equal To Zero
@@ -13,7 +13,7 @@ Triples with Bitwise AND Equal To Zero
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given an array of integers A, find the number of triples of indices (i, j, k) such that:
 
@@ -56,7 +56,27 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/triples-with-bitwise-and-equal-to-zero
-
+// Basic Ideas: hashmap
+//
+// Complexity: Time O(n^2) Space O(2^16)
+import "math"
+func countTriplets(A []int) int {
+    nums := make([]int, int(math.Pow(2, 16)))
+    for _, v1 := range A {
+        for _, v2 := range A {
+            nums[v1&v2]++
+        }
+    }
+    res := 0
+    for _, v := range A {
+        for i, cnt := range nums {
+            if cnt > 0 && v & i == 0 {
+                res += cnt
+            }
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

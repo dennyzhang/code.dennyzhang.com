@@ -13,7 +13,7 @@ Get the next permutation of an array
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
+See all series problems: [[https://code.dennyzhang.com/followup-nextpermutation/][#nextpermutation]]
 [display-posts tag="nextpermutation" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

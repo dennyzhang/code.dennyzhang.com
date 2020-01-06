@@ -1,0 +1,177 @@
+* Leetcode: Shortest Path in a Grid with Obstacles Elimination  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bfs, graph
+:END:
+---------------------------------------------------------------------
+Shortest Path in a Grid with Obstacles Elimination
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-in-a-grid-with-obstacles-elimination"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-graph][#graph]]
+---------------------------------------------------------------------
+Given a m * n grid, where each cell is either 0 (empty) or 1 (obstacle). In one step, you can move up, down, left or right from and to an empty cell.
+
+Return the minimum number of steps to walk from the upper left corner (0, 0) to the lower right corner (m-1, n-1) given that you can eliminate at most k obstacles. If it is not possible to find such walk return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+grid = 
+[[0,0,0],
+ [1,1,0],
+ [0,0,0],
+ [0,1,1],
+ [0,0,0]], 
+k = 1
+Output: 6
+Explanation: 
+The shortest path without eliminating any obstacle is 10. 
+The shortest path with one obstacle elimination at position (3,2) is 6. Such path is (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2) -> (3,2) -> (4,2).
+#+END_EXAMPLE
+ 
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+grid = 
+[[0,1,1],
+ [1,1,1],
+ [1,0,0]], 
+k = 1
+Output: -1
+Explanation: 
+We need to eliminate at least two obstacles to find such a walk.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- grid.length == m
+- grid[0].length == n
+- 1 <= m, n <= 40
+- 1 <= k <= m*n
+- grid[i][j] == 0 or 1
+- grid[0][0] == grid[m-1][n-1] == 0
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-in-a-grid-with-obstacles-elimination][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: bfs
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/shortest-path-in-a-grid-with-obstacles-elimination
+// Basic Ideas: bfs
+//
+//  No need to revisit the same position, if it's not a better option
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func shortestPath(grid [][]int, k int) int {
+    visited := map[[2]int]int{}
+    if k-grid[0][0]<0 {
+        return -1
+    }
+    
+    // Starting point and destination point is the same one
+    if len(grid)-1 == 0 && len(grid[0])-1==0 {
+        return 0
+    }
+
+    visited[[2]int{0, 0}] = k-grid[0][0]
+    level := 1
+    queue := [][]int{[]int{0, 0}}
+    for len(queue) > 0 {
+        nexts := [][]int{}
+        for _, node := range queue {
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, []int{0, 1}, []int{0, -1}} {
+                i, j := node[0], node[1]
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) {
+                    continue
+                }
+                v2 := visited[[2]int{i, j}]-grid[i2][j2]
+                if v2 < 0 {
+                    continue
+                }
+                if _, ok := visited[[2]int{i2, j2}]; ok && visited[[2]int{i2, j2}]>=v2 {
+                    continue
+                }
+                visited[[2]int{i2, j2}] = v2
+                if i2==len(grid)-1 && j2==len(grid[0])-1 {
+                    return level
+                }
+                nexts = append(nexts, []int{i2, j2})
+            }
+        }
+        queue = nexts
+        level++
+    }
+    return -1
+}
+#+END_SRC
+
+- Solution: bfs candidates: (i, j, r)
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/shortest-path-in-a-grid-with-obstacles-elimination
+// Basic Ideas: bfs
+//
+//  No need to revisit the same position, if it's not a better option
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func shortestPath(grid [][]int, k int) int {
+    visited := map[[3]int]bool{}
+    if k-grid[0][0]<0 {
+        return -1
+    }
+    
+    // Starting point and destination point is the same one
+    if len(grid)-1 == 0 && len(grid[0])-1==0 {
+        return 0
+    }
+
+    visited[[3]int{0, 0, k-grid[0][0]}] = true
+    level := 1
+    queue := [][]int{[]int{0, 0, k-grid[0][0]}}
+    for len(queue) > 0 {
+        nexts := [][]int{}
+        for _, node := range queue {
+            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0}, []int{0, 1}, []int{0, -1}} {
+                i, j := node[0], node[1]
+                i2, j2 := i+offset[0], j+offset[1]
+                if i2<0 || i2>=len(grid) || j2<0 || j2>=len(grid[0]) {
+                    continue
+                }
+                v2 := node[2]-grid[i2][j2]
+                if v2 < 0 {
+                    continue
+                }
+                if _, ok := visited[[3]int{i2, j2, v2}]; ok {
+                    continue
+                }
+                visited[[3]int{i2, j2, v2}] = true
+                if i2==len(grid)-1 && j2==len(grid[0])-1 {
+                    return level
+                }
+                nexts = append(nexts, []int{i2, j2, v2})
+            }
+        }
+        queue = nexts
+        level++
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

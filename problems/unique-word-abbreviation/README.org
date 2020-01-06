@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap
+:type:     hashmap, abbreviation
 :END:
 ---------------------------------------------------------------------
 Unique Word Abbreviation
@@ -13,7 +13,7 @@ Unique Word Abbreviation
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/followup-abbreviation][#abbreviation]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 An abbreviation of a word follows the form <first letter><number><last letter>. Below are some examples of word abbreviations:
 #+BEGIN_EXAMPLE

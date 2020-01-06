@@ -58,6 +58,47 @@ Credits To: [[https://leetcode.com/problems/get-equal-substrings-within-budget/d
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: Sliding window
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/get-equal-substrings-within-budget
+// Basic Ideas: sliding window
+//
+// Complexity: Time ?, Space ?
+func abs(x int) int {
+    if x<0 {
+        return -x
+    } else {
+        return x
+    }
+}
+
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func equalSubstring(s string, t string, maxCost int) int {
+    i := 0
+    res := 0
+    for j:=0; j<len(s); j++ {
+        // s[i...j]
+        // move right pointer
+        maxCost -= abs(int(s[j])-int(t[j]))
+        // move left pointer
+        for maxCost < 0 {
+            maxCost += abs(int(s[i])-int(t[i]))
+            i++
+        }
+        // collect result
+        res = max(res, j-i+1)
+    }
+    return res
+}
+#+END_SRC
+
 - Solution: Sliding window to get the longest size of subarray
 
 #+BEGIN_SRC go

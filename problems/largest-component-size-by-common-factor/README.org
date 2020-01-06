@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     unionfind, prime, hashmap
 :END:
 ---------------------------------------------------------------------
 Largest Component Size by Common Factor
@@ -13,7 +13,7 @@ Largest Component Size by Common Factor
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-unionfind][#unionfind]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-prime][#prime]]
 ---------------------------------------------------------------------
 Given a non-empty array of unique positive integers A, consider the following graph:
 
@@ -27,21 +27,21 @@ Example 1:
 Input: [4,6,15,35]
 Output: 4
 #+END_EXAMPLE
-[[image-blog:Largest Component Size by Common Factor][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/largest-component-size-by-common-factor/1.png]]
+[[image-blog:Largest Component Size by Common Factor][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/largest-component-size-by-common-factor/my1.png]]
 
 Example 2:
 #+BEGIN_EXAMPLE
 Input: [20,50,9,63]
 Output: 2
 #+END_EXAMPLE
-[[image-blog:Largest Component Size by Common Factor][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/largest-component-size-by-common-factor/2.png]]
+[[image-blog:Largest Component Size by Common Factor][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/largest-component-size-by-common-factor/my2.png]]
 
 Example 3:
 #+BEGIN_EXAMPLE
 Input: [2,3,6,7,4,12,21,39]
 Output: 8
 #+END_EXAMPLE
-[[image-blog:Largest Component Size by Common Factor][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/largest-component-size-by-common-factor/3.png]]
+[[image-blog:Largest Component Size by Common Factor][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/largest-component-size-by-common-factor/my3.png]]
 
 Note:
 
@@ -58,7 +58,98 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/largest-component-size-by-common-factor
+// Basic Ideas: union find
+// Complexity: Time ? Space ?
+type UF struct {
+    parent []int
+}
 
+func constructor(size int) UF {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return UF{parent:parent}
+}
+
+func (uf *UF) union(x, y int) {
+    // TODO: rank based merge
+    uf.parent[uf.find(y)] = uf.find(x)
+}
+
+func (uf *UF) find(x int) int {
+    // TODO: path compression
+    for uf.parent[x] != x {
+        x = uf.parent[x]
+    }
+    return x
+}
+
+func getFactors(x int) []int {
+    if x == 1 {
+        return []int{1}
+    }
+    res := []int{}
+    m := map[int]bool{}
+    v := 2
+    for v*v <= x {
+        for x%v == 0 {
+            if _, ok := m[v]; !ok {
+                m[v] = true
+                res = append(res, v)
+            }
+            x = x/v
+        }
+        v++
+    }
+    if x > 1 {
+        res = append(res, x)
+    }
+    return res
+}
+
+func largestComponentSize(A []int) int {
+    factors := make([][]int, len(A))
+    values := map[int]int{}
+    primes := []int{}
+    index := 0
+    for i, num := range A {
+        factors[i] = getFactors(num)
+        for _, v := range getFactors(num) {
+            if _, ok := values[v]; !ok {
+                values[v] = index
+                primes = append(primes, v)
+                index++
+            }
+        }
+    }
+    cnt := map[int]int{}
+    uf := constructor(len(primes))
+    for i, _ := range A {
+        nums := factors[i]
+        for i:=0; i<len(nums); i++ {
+            for j:=i+1; j<len(nums); j++ {
+                x := values[nums[i]]
+                y := values[nums[j]]
+                uf.union(x, y)
+            }
+        }
+    }
+    
+    for i, _ := range A {
+        nums := factors[i]
+        // parent node count+1
+        cnt[uf.find(values[nums[0]])]++
+    }
+
+    res := 0
+    for _, v := range cnt {
+        if v>res {
+            res = v
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

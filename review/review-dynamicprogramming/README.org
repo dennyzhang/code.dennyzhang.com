@@ -29,18 +29,42 @@ Trade space for time.
 | Non-linear dynamic problem problems | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][Leetcode: Minimum Score Triangulation of Polygon]] |
 
 *Questions*
+
+| Num | Problem                                         | Time Complexity | Summary                                                     |
+|-----+-------------------------------------------------+-----------------+-------------------------------------------------------------|
+|   1 | [[https://en.wikipedia.org/wiki/Maximum_subarray_problem][Maximum subarray problem]] - [[https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm][Kadane's algorithm]]   | O(n)            | [[https://code.dennyzhang.com/maximum-subarray][Leetcode: Maximum Subarray]]                                  |
+|   2 | [[https://en.wikipedia.org/wiki/Longest_increasing_subsequence][LIS - Longest increasing subsequence]]            | O(n)            | [[https://code.dennyzhang.com/longest-increasing-subsequence][Leetcode: Longest Increasing Subsequence]]                    |
+|   3 | [[https://en.wikipedia.org/wiki/Longest_common_subsequence_problem][LCS - Longest Common Subsequence]]                | O(n*m)          | [[https://code.dennyzhang.com/longest-common-subsequence][Leetcode: Longest Common Subsequence]]                        |
+|   4 | LPS - Longest Palindromic Subsequence           | O(n)            | [[https://code.dennyzhang.com/longest-palindromic-subsequence][Leetcode: Longest Palindromic Subsequence]]                   |
+|   5 | [[https://en.wikipedia.org/wiki/Longest_palindromic_substring][Longest Palindromic Substring]]                   | O(n^2)          | [[https://code.dennyzhang.com/longest-palindromic-substring][Leetcode: Longest Palindromic Substring]]                     |
+|   6 | [[https://en.wikipedia.org/wiki/Edit_distance][Edit distance of two strings]]                    | O(n^2)          | [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]]                                     |
+|   7 | Maximum profits with certain costs              | O(n^2)          | [[https://code.dennyzhang.com/4-keys-keyboard][Leetcode: 4 Keys Keyboard]]                                   |
+|   8 | Count of distinct subsequence                   | O(n)            | [[https://code.dennyzhang.com/distinct-subsequences-ii][Leetcode: Distinct Subsequences II]]                          |
+|   9 | Count out of boundary paths in a 2D matrix      | O(n*m*N)        | [[https://code.dennyzhang.com/out-of-boundary-paths][Leetcode: Out of Boundary Paths]]                             |
+|  10 | [[https://en.wikipedia.org/wiki/Regular_expression][Regular Expression Matching]]                     | O(n*m)          | [[https://code.dennyzhang.com/regular-expression-matching][Leetcode: Regular Expression Matching]]                       |
+|  11 | Wildcard Matching                               | O(n*m)          | [[https://code.dennyzhang.com/wildcard-matching][Leetcode: Wildcard Matching]]                                 |
+|  12 | Multiple choices for each step                  | O(n*m)          | [[https://code.dennyzhang.com/filling-bookcase-shelves][Leetcode: Filling Bookcase Shelves]]                          |
+|  13 | Knapsack: put array to bag A, B or discard it   | O(n*s)          | [[https://code.dennyzhang.com/tallest-billboard][Leetcode: Tallest Billboard]]                                 |
+|  14 | [[https://en.wikipedia.org/wiki/Knapsack_problem][Knapsack problem to maximize benefits]]           | O(n*s)          | [[https://code.dennyzhang.com/coin-change][Leetcode: Coin Change]]                                       |
+|  15 | Minimum Cost to Merge Stones                    | O(n^3)          | [[https://code.dennyzhang.com/minimum-cost-to-merge-stones][Leetcode: Minimum Cost to Merge Stones]]                      |
+|  16 | DP over interval: [[https://en.wikipedia.org/wiki/Minimum-weight_triangulation][Minimum-weight triangulation]]  | O(n^3)          | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][Leetcode: Minimum Score Triangulation of Polygon]]            |
+|  17 | Burst Balloons                                  | O(n^3)          | [[https://code.dennyzhang.com/burst-balloons][Leetcode: Burst Balloons]]                                    |
+|  18 | DP based on states, instead of possible actions | O(n)            | [[https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-with-cooldown][Leetcode: Best Time to Buy and Sell Stock with Cooldown]]     |
+|  19 | Remove Boxes                                    | O(n^4)          | [[https://code.dennyzhang.com/remove-boxes][Leetcode: Remove Boxes]]                                      |
+|  20 | Largest Sum of Averages                         | O(k*n*n)        | [[https://code.dennyzhang.com/largest-sum-of-averages][Leetcode: Largest Sum of Averages]]                           |
+|  21 | Uncrossed Lines                                 | O(n*m)          | [[https://code.dennyzhang.com/web-crawler][Leetcode: Uncrossed Lines]]                                   |
+|  22 | treedp: Binary Trees With Factors               | O(n^2)          | [[https://code.dennyzhang.com/binary-trees-with-factors][Leetcode: Binary Trees With Factors]]                         |
+|  23 | DP based on values instead of positions         | O(n)            | [[https://code.dennyzhang.com/minimum-distance-to-type-a-word-using-two-fingers][Leetcode: Minimum Distance to Type a Word Using Two Fingers]] |
+#+TBLFM: $1=@-1$1+1;N
+
 | Name                                                  | Example                                                                |
 |-------------------------------------------------------+------------------------------------------------------------------------|
 | DP needs only O(1) space                              | [[https://code.dennyzhang.com/computer-maintenance][LintCode: Computer Maintenance]]                                         |
 | Some initialization can be skipped                    | [[https://code.dennyzhang.com/longest-arithmetic-subsequence-of-given-difference][Leetcode: Longest Arithmetic Subsequence of Given Difference]]           |
 | Some initialization can be skipped                    | [[https://code.dennyzhang.com/bomb-enemy][Leetcode: Bomb Enemy]]                                                   |
 | Instead of left-to-right, do it from right-to-left    | [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]], [[https://code.dennyzhang.com/largest-sum-of-averages][Leetcode: Largest Sum of Averages]] |
-| 2-D dp, instead of one                                | [[https://code.dennyzhang.com/longest-common-subsequence][Leetcode: Longest Common Subsequence]], [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]]          |
-| DP breaks down into two subproblems, instead of one   | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][Leetcode: Minimum Score Triangulation of Polygon]]                       |
-| Instead of based on possible actions, based on states | [[https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-with-cooldown][Leetcode: Best Time to Buy and Sell Stock with Cooldown]]                |
-|-------------------------------------------------------+------------------------------------------------------------------------|
-| dp + binarytree                                       | [[https://code.dennyzhang.com/binary-trees-with-factors][Leetcode: Binary Trees With Factors]]                                    |
 | Ugly Number II                                        | [[https://code.dennyzhang.com/ugly-number-ii][Leetcode: Ugly Number II]]                                               |
+| DP based on values instead of positions               | [[https://code.dennyzhang.com/minimum-distance-to-type-a-word-using-two-fingers][Leetcode: Minimum Distance to Type a Word Using Two Fingers]]            |
 
 [[color:#c7254e][Key Parts In DP Problems]]:
 1. *Key observation* is crucial. Watch careful for how the states transit?

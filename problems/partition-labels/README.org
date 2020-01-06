@@ -2,10 +2,18 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     greedy
+:type:     greedy, twopointer
 :END:
 ---------------------------------------------------------------------
 Partition Labels
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shortest-path-in-a-grid-with-obstacles-elimination"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 A string S of lowercase letters is given. We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts.
 #+BEGIN_EXAMPLE
@@ -28,6 +36,48 @@ Credits To: [[https://leetcode.com/problems/partition-labels/description/][leetc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: greedy + two pointer
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/partition-labels
+// Basic Ideas: two pointer + greedy
+// Complexity: Time O(n), Space O(1)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func partitionLabels(S string) []int {
+    chars := make([]int, 26)
+    for i:=len(S)-1; i>=0; i-- {
+        index := int(S[i]-'a')
+        chars[index] = max(i, chars[index])
+    }
+
+    res := []int{}
+    prev := -1
+    for i:=0; i<len(S); {
+        index := int(S[i]-'a')
+        j := chars[index]
+        // S[i...j]
+        for k:=i+1; k<=j; k++ {
+            index2 := int(S[k]-'a')
+            j = max(j, chars[index2])
+        }
+        i = j+1
+
+        if prev == -1 {
+            res = append(res, i)
+        } else {
+            res = append(res, i-prev)
+        }
+        prev = i
+    }
+    return res
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/partition-labels

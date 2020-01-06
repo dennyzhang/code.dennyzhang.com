@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 #+STARTUP: showeverything
 :PROPERTIES:
-:type:     findnumber, classic, redo
+:type:     array, classic, redo
 :END:
 ---------------------------------------------------------------------
 Find first positive integer
@@ -13,7 +13,7 @@ Find first positive integer
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/findnumber][#findnumber]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 Given an unsorted integer array, find the first missing positive integer.
 

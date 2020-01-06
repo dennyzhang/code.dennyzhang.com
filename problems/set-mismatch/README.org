@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc, redo
+:type:     array, classic, findduplicates
 :END:
 ---------------------------------------------------------------------
 Set Mismatch
@@ -13,7 +13,7 @@ Set Mismatch
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/basic][#basic]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/followup-findduplicates][#findduplicates]]
 ---------------------------------------------------------------------
 The set S originally contains numbers from 1 to n. But unfortunately, due to the data error, one of the numbers in the set got duplicated to another number in the set, which results in repetition of one number and loss of another number.
 
@@ -35,10 +35,27 @@ Credits To: [[https://leetcode.com/problems/set-mismatch/description/][leetcode.
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/set-mismatch
-
+- Solution: hashmap
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/set-mismatch
+// Basic Ideas: hashmap
+//
+// Complexity: Time O(n), Space O(n)
+func findErrorNums(nums []int) []int {
+    sum := 0
+    m := map[int]bool{}
+    v1 := 0
+    for _, num := range nums {
+        sum += num
+        if _, ok := m[num]; !ok {
+            m[num] = true
+        } else {
+           v1 = num 
+        }
+    }
+    v2 := len(nums)*(1+len(nums))/2-(sum-v1)
+    return []int{v1, v2}
+}
 #+END_SRC
 
 #+BEGIN_HTML

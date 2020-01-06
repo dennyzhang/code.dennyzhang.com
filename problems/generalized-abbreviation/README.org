@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, bfs, backtracking, dfs
+:type:     combination, bfs, backtracking, dfs, abbreviation
 :END:
 ---------------------------------------------------------------------
 Generalized Abbreviation
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/letter-case-permutation][Letter Case Permutation]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+- Tag: [[https://code.dennyzhang.com/followup-abbreviation][#abbreviation]], [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Write a function to generate the generalized abbreviations of a word.
 

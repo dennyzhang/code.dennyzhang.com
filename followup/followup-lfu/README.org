@@ -15,7 +15,7 @@ Least Frequently Used Cache Problems & Follow-up
 
 [display-posts tag="lfu" posts_per_page="100" orderby="title"]
 
-See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
+See all series problems: [[https://code.dennyzhang.com/followup-lfu/][#lfu]]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

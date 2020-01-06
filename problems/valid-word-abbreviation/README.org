@@ -2,19 +2,20 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, classic, redo
+:type:     string, classic, abbreviation, redo
 :END:
 ---------------------------------------------------------------------
 Valid Word Abbreviation
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/valid-word-abbreviation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-word-abbreviation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/flip-game][Flip Game]]
-- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Flatten Nested List Iterator]]
-- [[https://code.dennyzhang.com/tag/string][Tag: #string]]
-- [[https://code.dennyzhang.com/tag/classic][Tag: #classic]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- [[https://code.dennyzhang.com/flip-game][Leetcode: Flip Game]]
+- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Leetcode: Flatten Nested List Iterator]]
+- Tag: [[https://code.dennyzhang.com/followup-abbreviation][#abbreviation]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 
 Given a non-empty string s and an abbreviation abbr, return whether the string matches with the given abbreviation.

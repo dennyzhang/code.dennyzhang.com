@@ -119,10 +119,6 @@ for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "READM
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/unionfind\]\[#unionfind\]\]!\[\[https://code.dennyzhang.com/review-unionfind\]\[#unionfind\]\]!g' $f
 done
 #+END_SRC
-* TODO 疯狂打卡群                                                  :noexport:
-https://docs.google.com/spreadsheets/d/1b4R1mAvhuTNS7XeFcZR8MdmrfLOFyYTVUqWKvY0xeu8/edit#gid=0
-
-Terry
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Role Models                                            :noexport:
 https://github.com/donnemartin/interactive-coding-challenges
@@ -395,3 +391,9 @@ https://code.dennyzhang.com/review-backtracking
 * TODO Change menu: https://code.dennyzhang.com/                   :noexport:
 * TODO Add a menu: category #Series                                :noexport:
 * TODO Doesn't show ads fast enough: https://code.dennyzhang.com/rotate-function :noexport:
+* TODO detect 404 images: https://code.dennyzhang.com/largest-component-size-by-common-factor :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO See more blogposts.: https://code.dennyzhang.com/followup-intervaldp :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Make sure code.dennyzhang.com is mobile-friendly            :noexport:
+* TODO Doesn't show all posts: https://code.dennyzhang.com/review-oodesign :noexport:

@@ -13,12 +13,21 @@ Key operations: insert, search, prefix, getHeight, etc.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-trie"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 *Basic Abstractions*
-| Name                              | Summary                        |
-|-----------------------------------+--------------------------------|
-| children map[byte]*Trie           | Use pointer                    |
-| Common Trie operations            | Insert/Search/StartsWith       |
-| Sometimes no need to track isLeaf | [[https://code.dennyzhang.com/word-squares][Leetcode: Word Squares]]         |
-| Trie for inverted index           | [[https://code.dennyzhang.com/stream-of-characters][Leetcode: Stream of Characters]] |
+| Name                              | Summary                                                    |
+|-----------------------------------+------------------------------------------------------------|
+| children map[byte]*Trie           | Use pointer                                                |
+| Common Trie operations            | Insert/Search/StartsWith                                   |
+| Sometimes no need to track isLeaf | [[https://code.dennyzhang.com/word-squares][Leetcode: Word Squares]]                                     |
+| Trie for inverted index           | [[https://code.dennyzhang.com/stream-of-characters][Leetcode: Stream of Characters]]                             |
+
+Suffix tree: [[https://en.wikipedia.org/wiki/Suffix_tree][wikipedia link]]  
+| Name                                                       | Summary                          |
+|------------------------------------------------------------+----------------------------------|
+| [[https://www.geeksforgeeks.org/count-distinct-substrings-string-using-suffix-trie/][Count of distinct substrings of a string using Suffix Trie]] |                                  |
+| Generate all unique substrings for given string            | [[https://stackoverflow.com/questions/2560262/generate-all-unique-substrings-for-given-string][stackoverflow link]]               |
+| Finding the longest repeated substring                     |                                  |
+| Finding the longest common substring                       | [[https://en.wikipedia.org/wiki/Longest_common_substring_problem][Longest common substring problem]] |
+| Finding the longest palindrome in a string                 |                                  |
 
 *Scenarios*
 #+BEGIN_SRC go

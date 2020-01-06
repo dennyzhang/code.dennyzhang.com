@@ -49,7 +49,7 @@ func summaryRanges(nums []int) []string {
 }
 #+END_SRC
 
-See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
+See all series problems: [[https://code.dennyzhang.com/followup-groupelements/][#groupelements]]
 [display-posts tag="groupelements" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

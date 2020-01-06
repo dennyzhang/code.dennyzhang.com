@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     string
 :END:
 ---------------------------------------------------------------------
 Fizz Buzz
@@ -13,11 +13,11 @@ Fizz Buzz
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Write a program that outputs the string representation of numbers from 1 to n.
 
-But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+But for multiples of three it should output "Fizz" instead of the number and for the multiples of five output "Buzz". For numbers which are multiples of both three and five output "FizzBuzz".
 
 Example:
 #+BEGIN_EXAMPLE
@@ -51,7 +51,26 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/fizz-buzz
-
+class Solution(object):
+    def fizzBuzz(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        ret = []
+        i = 0
+        while i<n:
+            if (i+1) % 15 == 0:
+                string = "FizzBuzz"
+            elif (i+1) % 3 == 0:
+                string = "Fizz"
+            elif (i+1) % 5 == 0:
+                string = "Buzz"
+            else:
+                string = str(i+1)
+            ret.append(string)
+            i += 1
+        return ret
 #+END_SRC
 
 #+BEGIN_HTML

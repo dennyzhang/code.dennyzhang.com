@@ -36,16 +36,17 @@ But you wouldn't believe how incredibly useful it would be.
 | Any corner case?                                |                                                        |
 
 *Scenarios*
-| Name                                     | Example                                            |
-|------------------------------------------+----------------------------------------------------|
-| Find whether target in the range         | [[https://code.dennyzhang.com/guess-number-higher-or-lower][Leetcode: Guess Number Higher or Lower]]             |
-| Find the first target with duplicates    | [[https://code.dennyzhang.com/first-bad-version][Leetcode: First Bad Version]]                        |
-| Find the last target with duplicates     |                                                    |
-| Search insert position                   | [[https://code.dennyzhang.com/search-insert-position][Leetcode: Search Insert Position]]                   |
-| Find smallest letter greater than target | [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][Leetcode: Find Smallest Letter Greater Than Target]] |
-|                                          | [[https://code.dennyzhang.com/find-right-interval][Leecode: Find Right Interval]]                       |
-|                                          | [[https://code.dennyzhang.com/search-for-a-range][Leecode: Search for a Range]]                        |
-|                                          | [[https://code.dennyzhang.com/sqrtx/][Leecode: Sqrt(x)]]                                   |
+| Name                                     | Example                                                           |
+|------------------------------------------+-------------------------------------------------------------------|
+| Find whether target in the range         | [[https://code.dennyzhang.com/guess-number-higher-or-lower][Leetcode: Guess Number Higher or Lower]]                            |
+| Find the first target with duplicates    | [[https://code.dennyzhang.com/first-bad-version][Leetcode: First Bad Version]]                                       |
+| Find the last target with duplicates     |                                                                   |
+| Search insert position                   | [[https://code.dennyzhang.com/search-insert-position][Leetcode: Search Insert Position]]                                  |
+| Find smallest letter greater than target | [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][Leetcode: Find Smallest Letter Greater Than Target]]                |
+|                                          | [[https://code.dennyzhang.com/find-right-interval][Leecode: Find Right Interval]]                                      |
+|                                          | [[https://code.dennyzhang.com/search-for-a-range][Leecode: Search for a Range]]                                       |
+|                                          | [[https://code.dennyzhang.com/sqrtx/][Leecode: Sqrt(x)]]                                                  |
+|                                          | [[https://code.dennyzhang.com/find-first-and-last-position-of-element-in-sorted-array][Leetcode: Find First and Last Position of Element in Sorted Array]] |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

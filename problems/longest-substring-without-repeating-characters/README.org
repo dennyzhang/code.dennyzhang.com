@@ -82,43 +82,6 @@ func lengthOfLongestSubstring(s string) int {
 }
 #+END_SRC
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/longest-substring-without-repeating-characters
-## Basic Ideas: two pointer: slow and fast
-##           If duplicate, the fast pointer don't need to turn back.
-## Complexity Time O(n), Space O(1)
-class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        length = len(s)
-        if length <= 1: return length
-        ch_set = set()
-        max_len, slow, fast = 0, 0, 1
-        m = {}
-        m[s[slow]] = slow
-        while fast < length:
-            if s[fast] not in m:
-                m[s[fast]] = fast
-                fast += 1
-            else:
-                max_len = max(max_len, len(m))
-                next_slow = m[s[fast]] + 1 
-                for k in xrange(slow, next_slow):
-                    del m[s[k]]
-                m[s[fast]] = fast
-                slow = next_slow
-                fast += 1
-        return max(max_len, len(m))
-        
-# s = Solution()         
-# print s.lengthOfLongestSubstring('ruowzgiooobpple')
-# print s.lengthOfLongestSubstring('bbbbb') # 1
-# print s.lengthOfLongestSubstring('pwwkew') # 3
-#+END_SRC
-
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>

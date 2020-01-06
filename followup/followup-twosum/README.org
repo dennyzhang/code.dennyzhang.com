@@ -19,7 +19,7 @@ twosum problems
 | Whether need to list duplicates? |         |
 | Need values or indices?          |         |
 
-See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
+See all series problems: [[https://code.dennyzhang.com/followup-twosum/][#twosum]]
 [display-posts tag="twosum" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

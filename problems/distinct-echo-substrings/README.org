@@ -1,0 +1,79 @@
+* Leetcode: Distinct Echo Substrings                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap, array, rollinghash
+:END:
+---------------------------------------------------------------------
+Distinct Echo Substrings
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-echo-substrings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-rollinghash][#rollinghash]]
+---------------------------------------------------------------------
+Return the number of distinct non-empty substrings of text that can be written as the concatenation of some string with itself.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: text = "abcabcabc"
+Output: 3
+Explanation: The 3 substrings are "abcabc", "bcabca" and "cabcab".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: text = "leetcodeleetcode"
+Output: 2
+Explanation: The 2 substrings are "ee" and "leetcodeleetcode".
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= text.length <= 2000
+- text has only lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-echo-substrings][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/distinct-echo-substrings/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/distinct-echo-substrings
+// Basic Ideas: dynamic programming
+//
+//     The description is confusing.
+//     It can only be A+A, instead of A+A+A
+//
+// Complexity: Time O(n^3), Space O(h)
+func distinctEchoSubstrings(text string) int {
+    m := map[string]bool{}
+    for i:=0; i<len(text); i++ {
+        for j:=i+1; j<len(text); j++ {
+            // text[i...j]
+            if (j-i+1)%2 == 1 {
+                continue
+            }
+            mid := (i+j)/2
+            if text[i:mid+1] == text[mid+1:j+1] {
+                m[text[i:j]] = true
+            }
+        }
+    }
+    return len(m)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

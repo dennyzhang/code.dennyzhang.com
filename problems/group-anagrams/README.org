@@ -11,9 +11,9 @@ Given an array of strings, group anagrams together.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/group-anagrams"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/find-duplicate-file-in-system][Find Duplicate File in System]]
-- [[https://code.dennyzhang.com/group-shifted-strings][Group Shifted Strings]]
-- [[https://code.dennyzhang.com/tag/hashmap][Tag: #hashmap]]
+- [[https://code.dennyzhang.com/find-duplicate-file-in-system][Leetcode: Find Duplicate File in System]]
+- [[https://code.dennyzhang.com/group-shifted-strings][Leetcode: Group Shifted Strings]]
+- Tag: [[https://code.dennyzhang.com/followup-anagram][#anagram]]
 ---------------------------------------------------------------------
 Given an array of strings, group anagrams together.
 #+BEGIN_EXAMPLE

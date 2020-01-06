@@ -21,7 +21,7 @@ Geometry Problems & Follow-up
 
 [display-posts tag="geometry" posts_per_page="100" orderby="title"]
 
-See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
+See all series problems: [[https://code.dennyzhang.com/followup-geometry/][#geometry]]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 

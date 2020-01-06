@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     misc
+:type:     binarysearch, array
 :END:
 ---------------------------------------------------------------------
 Find Peak Element
@@ -13,7 +13,7 @@ Find Peak Element
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 A peak element is an element that is greater than its neighbors.
 
@@ -21,7 +21,7 @@ Given an input array where num[i] != num[i+1], find a peak element and return it
 
 The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
 
-You may imagine that num[-1] = num[n] = -∞.
+You may imagine that num[-1] = num[n] = negative infinity.
 
 For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
 
@@ -37,7 +37,26 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/find-peak-element
+class Solution(object):
+    def findPeakElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        length = len(nums)
+        if length == 1:
+            return 0
+        if length == 0:
+            return -1
 
+        for i in range(1, length-1):
+            if nums[i] > nums[i-1] and nums[i] > nums[i+1]:
+                return i
+        if nums[0] > nums[1]:
+            return 0
+        if nums[length-1] > nums[length-2]:
+            return length-1
+        return -1
 #+END_SRC
 
 #+BEGIN_HTML

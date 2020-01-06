@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math, combination
+:type:     math
 :END:
 ---------------------------------------------------------------------
 Number of Digit One
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/strobogrammatic-number][Strobogrammatic Number]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-math][math]], [[https://code.dennyzhang.com/tag/combination][combination]]
+- Tag: [[https://code.dennyzhang.com/review-math][math]]
 ---------------------------------------------------------------------
 Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 
@@ -30,9 +30,39 @@ Credits To: [[https://leetcode.com/problems/number-of-digit-one/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/number-of-digit-one
+// Basic Ideas: recursive
+//
+//  How many 1s in each digit.
+//  Start from right to left, which is low digits to high digits
+//
+//  xyzabcd
+//    For the thousand digit,
+//
+//    if a==0, (xyz-1)*1000 + 1000 = xyz*1000
+//    if a==1, xyz*1000 + bcd + 1
+//    if a>1,  xyz*1000 + 1000
+//
+// Complexity: Time O(log(n)), Space O(1)
+func countDigitOne(n int) int {
+    res := 0
+    v := n
+    power:=1
+    for v!=0 {
+        digit := v%10
+        v /= 10
+        res += v*power
+        if digit == 1 {
+            res += n%power+1
+        }
+        if digit > 1 {
+            res += power
+        }
+        power *= 10
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

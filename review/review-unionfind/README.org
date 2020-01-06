@@ -26,15 +26,16 @@ Key operations: union, find, etc.
 
 *Scenarios*
 Union-find applications involve manipulating objects of all types:
-| Name                                                   | Summary |
-|--------------------------------------------------------+---------|
-| Computers in a network                                 |         |
-| Web pages on the Internet                              |         |
-| Transistors in a computer chip                         |         |
-| Variable name aliases                                  |         |
-| Pixels in a digital photo                              |         |
-| Metallic sites in a composite system                   |         |
-| Minimum spanning tree of a graph - [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]] |         |
+| Name                                                   | Summary                                           |
+|--------------------------------------------------------+---------------------------------------------------|
+| Computers in a network                                 |                                                   |
+| Web pages on the Internet                              |                                                   |
+| Transistors in a computer chip                         |                                                   |
+| Variable name aliases                                  |                                                   |
+| Pixels in a digital photo                              |                                                   |
+| Metallic sites in a composite system                   |                                                   |
+| Minimum spanning tree of a graph - [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]] |                                                   |
+| What are the nodes and how to union nodes              | [[https://code.dennyzhang.com/largest-component-size-by-common-factor][Leetcode: Largest Component Size by Common Factor]] |
 
 *Code Skeleton*
 #+BEGIN_SRC go

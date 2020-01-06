@@ -2,10 +2,18 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     anagram, redo, repeatedstring
+:type:     slidingwindow, anagram, redo, repeatedstring
 :END:
 ---------------------------------------------------------------------
 Find All Anagrams in a String
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/alphabet-board-path"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-anagram][#anagram]]
 ---------------------------------------------------------------------
 Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
 
@@ -48,56 +56,44 @@ Credits To: [[https://leetcode.com/problems/find-all-anagrams-in-a-string/descri
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/find-all-anagrams-in-a-string
-class Solution(object):
-    def is_same_dict(self, dict_1, dict_2):
-        has_matched = True
-        if len(dict_1.keys()) == len(dict_2.keys()):
-            for k in dict_1:
-                if dict_1[k] != dict_2[k]:
-                    has_matched = False
-                    break
-        else:
-            has_matched = False
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-all-anagrams-in-a-string
+// Basic Ideas: sliding windows with fixed size
+//  https://code.dennyzhang.com/find-all-anagrams-in-a-string
+// Complexity: Time O(n), Space O(1)
+func findAnagrams(s string, p string) []int {
+    chars1 := make([]int, 26)
+    chars2 := make([]int, 26)
+    for i, _ := range p {
+        index := int(p[i]-'a')
+        chars2[index]++
+    }
+    res := []int{}
+    // s[...i]
+    for i:=0; i<len(s); i++ {
+        // move the right
+        index := int(s[i]-'a')
+        chars1[index]++
 
-        return has_matched
-
-    def findAnagrams(self, s, p):
-        """
-        :type s: str
-        :type p: str
-        :rtype: List[int]
-        """
-        p_dict = {}
-        q_dict = {}
-        ret = []
-
-        if len(s) < len(p):
-            return []
-
-        for ch in 'abcdefghijklmnopqrstuvwxyz':
-            p_dict[ch] = 0
-        for ch in p:
-            p_dict[ch] += 1
-
-        for ch in 'abcdefghijklmnopqrstuvwxyz':
-            q_dict[ch] = 0
-        for ch in s[0:len(p)]:
-            q_dict[ch] += 1
-
-        if self.is_same_dict(p_dict, q_dict) is True:
-            ret.append(0)
-
-        # loop the change
-        for i in range(1, len(s)-len(p)+1):
-            # print q_dict
-            q_dict[s[i+len(p)-1]] += 1
-            q_dict[s[i-1]] -= 1
-            if self.is_same_dict(p_dict, q_dict) is True:
-                ret.append(i)
-
-        return ret
+        // move the left
+        if i>=len(p) {
+            index2 := int(s[i-len(p)]-'a')
+            chars1[index2]--
+        }
+        
+        // get a candidate
+        j:=0
+        for ; j<26; j++ {
+            if chars1[j] != chars2[j] {
+                break
+            }
+        }
+        if j == 26 {
+            res = append(res, i-len(p)+1)
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     slidingwindow, inspiring
+:type:     slidingwindow, inspiring, greedy
 :END:
 ---------------------------------------------------------------------
 Max Consecutive Ones III
@@ -17,7 +17,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][Leetcode: Minimum Swaps to Group All 1's Together]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Given an array A of 0s and 1s, we may change up to K values from 0 to 1.
 
@@ -57,23 +57,65 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/max-consecutive-ones-iii
-// Basic Ideas: slidewindow
+// Basic Ideas: sliding window + greedy
 //
-// Window: max 0 can't be more than K
-//
-// Think why the result is j-i, instead of j-i+1
+//   The window will never become smaller
+//   Notice: what if the result would be 0?
 //
 // Complexity: Time O(n), Space O(1)
 func longestOnes(A []int, K int) int {
-    i, j := 0, 0
+    // A[i...j]
+    i, j:=0, 0
     for ; j<len(A); j++ {
-        if A[j] == 0 { K-- }
+        if A[j] == 0 {
+            // use a quota
+            K--
+        }
         if K<0 {
-            if A[i] == 0 { K++ }
+            // Need to try to release a quota
+            if A[i] == 0 {
+                K++
+            }
+            i++
+        }
+        
+    }
+    return j-i
+}
+#+END_SRC
+
+- Solution
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/max-consecutive-ones-iii
+// Basic Ideas: sliding window + greedy
+//
+//   The window will never become smaller
+//   Notice: what if the result would be 0?
+//
+// Complexity: Time O(n), Space O(1)
+func longestOnes(A []int, K int) int {
+    res := 0
+    // A[i...j]
+    i:=0
+    for j:=0; j<len(A); j++ {
+        if A[j] == 0 {
+            // use a quota
+            K--
+        }
+        if K>=0 {
+            // find a candidate
+            if j+1-i > res {
+                res = j+1-i
+            }
+        } else {
+            // move the left pointer
+            if A[i] == 0 {
+                K++
+            }
             i++
         }
     }
-    return j-i
+    return res
 }
 #+END_SRC
 

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     random
+:type:     random, oodesign
 :END:
 ---------------------------------------------------------------------
 Random Pick with Blacklist
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-random][#random]]
+- Tag: [[https://code.dennyzhang.com/review-random][#random]], [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 Given a blacklist B containing unique integers from [0, N), write a function to return a uniform random integer from [0, N) which is NOT in B.
 
@@ -86,7 +86,54 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/random-pick-with-blacklist
+// Basic Ideas: two pointer + hashmap
+//
+//  Get a mapping for items in blacklist
+// Complexity: Time O(b*log(b)) Space O(b)
+//    b = Len(B)
+import "sort"
+type Solution struct {
+    m map[int]int
+    cnt int
+}
 
+func Constructor(N int, blacklist []int) Solution {
+    m := map[int]int{}
+    cnt := N-len(blacklist)
+
+    blacklistm := map[int]bool{}
+    for _, b := range blacklist {
+        blacklistm[b] = true
+    }
+    sort.Ints(blacklist)
+    index := N-1
+    left, right := 0, len(blacklist)-1
+    for left<=right {
+        if blacklist[right] == index {
+            right--
+            index--
+            continue
+        }
+        m[blacklist[left]] = index
+        index--
+        left++
+    }
+    return Solution{m:m, cnt:cnt}
+}
+
+func (this *Solution) Pick() int {
+    res := rand.Intn(this.cnt)
+    if v, ok := this.m[res]; ok {
+        res = v
+    }
+    return res
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * obj := Constructor(N, blacklist);
+ * param_1 := obj.Pick();
+ */
 #+END_SRC
 
 #+BEGIN_HTML

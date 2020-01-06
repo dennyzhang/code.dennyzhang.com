@@ -1,0 +1,118 @@
+* Leetcode: Get Watched Videos by Your Friends                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bfs, hashmap
+:END:
+---------------------------------------------------------------------
+Get Watched Videos by Your Friends
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/get-watched-videos-by-your-friends"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
+---------------------------------------------------------------------
+There are n people, each person has a unique id between 0 and n-1. Given the arrays watchedVideos and friends, where watchedVideos[i] and friends[i] contain the list of watched videos and the list of friends respectively for the person with id = i.
+
+Level 1 of videos are all watched videos by your friends, level 2 of videos are all watched videos by the friends of your friends and so on. In general, the level k of videos are all watched videos by people with the shortest path equal to k with you. Given your id and the level of videos, return the list of videos ordered by their frequencies (increasing). For videos with the same frequency order them alphabetically from least to greatest. 
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: watchedVideos = [["A","B"],["C"],["B","C"],["D"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1
+Output: ["B","C"] 
+Explanation: 
+You have id = 0 (green color in the figure) and your friends are (yellow color in the figure):
+Person with id = 1 -> watchedVideos = ["C"] 
+Person with id = 2 -> watchedVideos = ["B","C"] 
+The frequencies of watchedVideos by your friends are: 
+B -> 1 
+C -> 2
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: watchedVideos = [["A","B"],["C"],["B","C"],["D"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2
+Output: ["D"]
+Explanation: 
+You have id = 0 (green color in the figure) and the only friend of your friends is the person with id = 3 (yellow color in the figure).
+#+END_EXAMPLE
+ 
+Constraints:
+
+- n == watchedVideos.length == friends.length
+- 2 <= n <= 100
+- 1 <= watchedVideos[i].length <= 100
+- 1 <= watchedVideos[i][j].length <= 8
+- 0 <= friends[i].length < n
+- 0 <= friends[i][j] < n
+- 0 <= id < n
+- 1 <= level < n
+- if friends[i] contains j, then friends[j] contains i
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/get-watched-videos-by-your-friends][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/get-watched-videos-by-your-friends/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/get-watched-videos-by-your-friends
+// Basic Ideas: BFS
+//
+// Complexity: Time O(n), Space O(n)
+import "sort"
+func watchedVideosByFriends(watchedVideos [][]string, friends [][]int, id int, level int) []string {
+    visited := map[int]bool{}
+    queue := []int{id}
+    visited[id] = true
+    for len(queue) > 0 && level != 0 {
+        nexts := []int{}
+        for _, node := range queue {
+            for _, node2 := range friends[node] {
+                if _, ok := visited[node2]; !ok {
+                    nexts = append(nexts, node2)
+                    visited[node2] = true
+                }
+            }
+        }
+        level--
+        queue = nexts
+    }
+    if level != 0 {
+        return []string{}
+    }
+    // get videos
+    frequency := map[string]int{}
+    for _, node := range queue {
+        for _, video := range watchedVideos[node] {
+            frequency[video]++
+        }
+    }
+    videos := []string{}
+    for video, _ := range frequency {
+        videos = append(videos, video)
+    }
+    // sort videos
+    sort.Slice(videos, func(i, j int) bool {
+        v1, v2 := videos[i], videos[j]
+        if frequency[v1] != frequency[v2] {
+            return frequency[v1] < frequency[v2]
+        }
+        return v1<v2
+    })
+    return videos
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

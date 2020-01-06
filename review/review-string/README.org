@@ -11,12 +11,15 @@ String is basic. But it could be very tough as well.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-The most impressive problems to me:
-- [[https://code.dennyzhang.com/reorganize-string][Reorganize String]]
-
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+
+| Name                                   | Summary                                                    |
+|----------------------------------------+------------------------------------------------------------|
+| [[https://stackoverflow.com/questions/4089558/what-is-the-big-o-of-string-contains-in-java][Time complexity of String.contains]]     |                                                            |
+| [[https://code.dennyzhang.com/reorganize-string][Leetcode: Reorganize String]]            |                                                            |
+| Suffix trie for all distinct substring | [[https://www.geeksforgeeks.org/count-distinct-substrings-string-using-suffix-trie/][Count of distinct substrings of a string using Suffix Trie]] |
 
 See all string problems: [[https://code.dennyzhang.com/tag/string/][#string]].
 [display-posts tag="string" posts_per_page="100" orderby="title"]

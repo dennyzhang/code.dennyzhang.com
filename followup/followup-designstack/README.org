@@ -15,7 +15,7 @@ Design stack data structure for given requirements
 
 [[https://leetcode.com/discuss/interview-question/385212/google-phone-screen-stack-that-supports-min-max-avg-and-mode][Link: Google | Phone Screen | Stack that supports Min, Max, Avg, and Mode]]
 
-See all series problems: [[https://code.dennyzhang.com/tag/series/][#series]]
+See all series problems: [[https://code.dennyzhang.com/followup-designstack/][#designstack]]
 [display-posts tag="designstack" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].

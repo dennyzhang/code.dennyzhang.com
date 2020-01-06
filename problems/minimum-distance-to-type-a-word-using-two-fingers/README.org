@@ -1,0 +1,150 @@
+* Leetcode: Minimum Distance to Type a Word Using Two Fingers   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     recursive, dynamicprogramming, redo
+:END:
+---------------------------------------------------------------------
+Minimum Distance to Type a Word Using Two Fingers
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-distance-to-type-a-word-using-two-fingers"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
+---------------------------------------------------------------------
+You have a keyboard layout as shown above in the XY plane, where each English uppercase letter is located at some coordinate, for example, the letter A is located at coordinate (0,0), the letter B is located at coordinate (0,1), the letter P is located at coordinate (2,3) and the letter Z is located at coordinate (4,1).
+
+Given the string word, return the minimum total distance to type such string using only two fingers. The distance between coordinates (x1,y1) and (x2,y2) is |x1 - x2| + |y1 - y2|. 
+
+Note that the initial positions of your two fingers are considered free so don't count towards your total distance, also your two fingers do not have to start at the first letter or the first two letters.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: word = "CAKE"
+Output: 3
+Explanation: 
+Using two fingers, one optimal way to type "CAKE" is: 
+Finger 1 on letter 'C' -> cost = 0 
+Finger 1 on letter 'A' -> cost = Distance from letter 'C' to letter 'A' = 2 
+Finger 2 on letter 'K' -> cost = 0 
+Finger 2 on letter 'E' -> cost = Distance from letter 'K' to letter 'E' = 1 
+Total distance = 3
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: word = "HAPPY"
+Output: 6
+Explanation: 
+Using two fingers, one optimal way to type "HAPPY" is:
+Finger 1 on letter 'H' -> cost = 0
+Finger 1 on letter 'A' -> cost = Distance from letter 'H' to letter 'A' = 2
+Finger 2 on letter 'P' -> cost = 0
+Finger 2 on letter 'P' -> cost = Distance from letter 'P' to letter 'P' = 0
+Finger 1 on letter 'Y' -> cost = Distance from letter 'A' to letter 'Y' = 4
+Total distance = 6
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: word = "NEW"
+Output: 3
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: word = "YEAR"
+Output: 7
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 2 <= word.length <= 300
+- Each word[i] is an English uppercase letter.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-distance-to-type-a-word-using-two-fingers][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimum-distance-to-type-a-word-using-two-fingers
+// Basic Ideas: recursive + memo
+//
+//   The distance is based on values, instead of positions
+//   For the starting positions, we treat them special
+//
+//   Say left and right pointers are with values of (0, 0)
+//   Each time, when we type a new character, we will and have to use one finger
+//
+//   Say two fingers are at values of (l, r), and now we need to type word[i], denoted by c
+//
+//   It goes to 
+//    type c by left finger, now left and right fingers would be (c, r)
+//    or type c by right finger, two fingers (l, c)
+//
+// Complexity: Time O(n), Space O(1)
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func abs(x int) int {
+    if x>0 {
+        return x
+    }  else {
+        return -x
+    }
+}
+
+func getDistance(ch1 byte, ch2 byte) int {
+    res := 0
+    if ch1 != 27 && ch2 != 27 {
+        res = abs(int(ch1/6)-int(ch2/6))+abs(int(ch1%6)-int(ch2%6))
+    }
+    return res
+}
+
+func minimumDistance(word string) int {
+    m := map[[2]byte]int{}
+    m[[2]byte{27, 27}] = 0
+    for i, _ := range word {
+        c := byte(word[i]-'A')
+        m2 := map[[2]byte]int{}
+        for pos, d := range m {
+            l, r := pos[0], pos[1]
+            if _, ok := m2[[2]byte{c, r}]; !ok {
+                m2[[2]byte{c, r}] = 1<<32-1
+            }
+            if _, ok := m2[[2]byte{l, c}]; !ok {
+                m2[[2]byte{l, c}] = 1<<32-1
+            }
+            m2[[2]byte{c, r}] = min(m2[[2]byte{c, r}], d+getDistance(l, c))
+            m2[[2]byte{l, c}] = min(m2[[2]byte{l, c}], d+getDistance(r, c))
+        }
+        m = m2
+    }
+    res := 1<<32-1
+    for _, d := range m {
+        res = min(res, d)
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

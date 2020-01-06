@@ -1,24 +1,20 @@
-* Review: Palindrome Problems                                    :BLOG:Review:
+* Series: Screen Fit Problems & Follow-Up                           :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     palindrome, review
+:type: series
 :END:
 ---------------------------------------------------------------------
-Review Palindrome code problems
+Screen Fit Problems
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-palindrome"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/followup/followup-screenfit"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
-- Validate whether a string is palindrome: 
-  [[https://code.dennyzhang.com/valid-palindrome][Leetcode: Valid Palindrome]]
-  [[https://code.dennyzhang.com/valid-palindrome-ii][Leetcode: Valid Palindrome II]]
----------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-See all palindrome problems: [[https://code.dennyzhang.com/tag/palindrome/][#palindrome]]
-[display-posts tag="palindrome" posts_per_page="100" orderby="title"]
+See all series problems: [[https://code.dennyzhang.com/tag/screenfit/][#screenfit]]
+[display-posts tag="screenfit" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 
@@ -54,4 +50,3 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:
 #+LINK_HOME:
-
