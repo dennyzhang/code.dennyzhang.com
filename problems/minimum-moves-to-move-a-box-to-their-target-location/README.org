@@ -30,7 +30,7 @@ Your task is move the box 'B' to the target position 'T' under the following rul
 
 Return the minimum number of pushes to move the box to the target. If there is no way to reach the target, return -1.
 
-[[image-blog:Minimum Moves to Move a Box to Their Target Location][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-moves-to-move-a-box-to-their-target-location/my.png]]
+[[image-blog:Minimum Moves to Move a Box to Their Target Location][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-moves-to-move-a-box-to-their-target-location/graph.png]]
 
 Example 1:
 #+BEGIN_EXAMPLE

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     random, oodesign
+:type:     random, oodesign, twopointer
 :END:
 ---------------------------------------------------------------------
 Random Pick with Blacklist
@@ -14,7 +14,8 @@ Similar Problems:
 - [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-random][#random]], [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
+- [[https://code.dennyzhang.com/random-flip-matrix][Leetcode: Random Flip Matrix]]
+- Tag: [[https://code.dennyzhang.com/review-random][#random]], [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a blacklist B containing unique integers from [0, N), write a function to return a uniform random integer from [0, N) which is NOT in B.
 
@@ -68,21 +69,6 @@ Credits To: [[https://leetcode.com/problems/random-pick-with-blacklist/descripti
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
-
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/random-pick-with-blacklist

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     inspiring, twopointer, random, redo
 :END:
 ---------------------------------------------------------------------
 Random Flip Matrix
@@ -13,7 +13,8 @@ Random Flip Matrix
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- [[https://code.dennyzhang.com/random-pick-with-blacklist][Leetcode: Random Pick with Blacklist]]
+- Tag: [[https://code.dennyzhang.com/review-random][#random]], [[https://code.dennyzhang.com/review-oodesign][#oodesign]]
 ---------------------------------------------------------------------
 You are given the number of rows n_rows and number of columns n_cols of a 2D binary matrix where all values are initially 0. Write a function flip which chooses a 0 value uniformly at random, changes it to 1, and then returns the position [row.id, col.id] of that value. Also, write a function reset which sets all values back to 0. Try to minimize the number of calls to system's Math.random() and optimize the time and space complexity.
 
@@ -54,7 +55,59 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/random-flip-matrix
+// https://code.dennyzhang.com/random-flip-matrix
+// Basic Ideas: hashmap
+//
+//  Maintain a hashmap: from one changed node to one unchanged one
+//
+// Complexity: Time O(1) Space O(n)
+/*
 
+   X X X
+   X X X
+*/
+import "math/rand"
+type Solution struct {
+	freeIndex int
+	rows int
+	cols int
+	flipped map[int]int
+}
+
+func Constructor(n_rows int, n_cols int) Solution {
+	return Solution{freeIndex: n_rows*n_cols, rows:n_rows,
+		cols:n_cols, flipped:map[int]int{}}
+}
+
+func (this *Solution) Flip() []int {
+	index := rand.Intn(this.freeIndex)
+	this.freeIndex--
+	i, j := index/this.cols, index%this.cols
+	// already flipped
+	if v, ok := this.flipped[index]; ok {
+		i, j = v/this.cols, v%this.cols
+	}
+	// assign another mapping
+	if _, ok := this.flipped[this.freeIndex]; ok {
+		this.flipped[index] = this.flipped[this.freeIndex]
+	} else {
+		// this.freeIndex not used
+		this.flipped[index] = this.freeIndex
+	}
+	return []int{i, j}
+}
+
+func (this *Solution) Reset() {
+	this.freeIndex = this.rows*this.cols
+	this.flipped = map[int]int{}
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * obj := Constructor(n_rows, n_cols);
+ * param_1 := obj.Flip();
+ * obj.Reset();
+ */
 #+END_SRC
 
 #+BEGIN_HTML
