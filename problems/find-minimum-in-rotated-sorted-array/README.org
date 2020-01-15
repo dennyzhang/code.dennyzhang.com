@@ -11,7 +11,8 @@ Find Minimum in Rotated Sorted Array
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-minimum-in-rotated-sorted-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/search-in-rotated-sorted-array][Search in Rotated Sorted Array]]
+- [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii][Leetcode: Find Minimum in Rotated Sorted Array II]]
+- [[https://code.dennyzhang.com/search-in-rotated-sorted-array][Leetcode: Search in Rotated Sorted Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
@@ -33,61 +34,25 @@ Credits To: [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array
-class Solution:
-    ## Basic Ideas: Binary Search
-    ##   Check current node with the right node of the range
-    ##   If it's smaller, check left half(included). Check the right half(excluded)
-    ##
-    ##   Notice: Here we can't compare it with the left node of the range.
-    ##      Why? (0+1)/2 == 0. We might run into dead loop with left == mid.
-    ##
-    ## Complexity: Time O(log(n)), Space O(1)
-    def findMin(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        length = len(nums)
-        if length == 0: return None
-        # 4 5 6 7 0 1 2
-        left, right = 0, length-1
-        while left<right:
-            mid = left + (int)((right-left)/2)
-            if nums[mid] < nums[right]:
-                # check the left half(included)
-                right = mid
-            else:
-                # check the right half(excluded)
-                left = mid + 1
-        return nums[left]
-
-    ## Basic Ideas: Binary Search
-    ##     Find the first element, who is smaller than the first element
-    ##     If not found, the first element is the target
-    ##
-    ## Complexity: Time O(log(n)), Space O(1)
-    def findMin_v1(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        length = len(nums)
-        if length == 0: return None
-        if length == 1: return nums[0]
-
-        if nums[0] < nums[-1]: return nums[0]
-        left, right = 1, length-1
-        # 4 5 6 7 0 1 2
-        while left < right:
-            mid = left + (int)((right-left)/2)
-            if nums[mid] < nums[0]:
-                right = mid
-            else:
-                left = mid + 1
-        return nums[left]
-
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array
+// Basic Ideas: binary search
+//  If nums[mid] > nums[right], the starting point is in the right half
+//  Otherwise, it's in the left half
+// Complexity: Time O(log(n)), Space O(1)
+func findMin(nums []int) int {
+    left, right := 0, len(nums)-1
+    // must exists
+    for left<right {
+        mid := (right-left)/2+left
+        if nums[mid] > nums[right] {
+            left = mid+1
+        } else {
+            right = mid
+        }
+    }
+    return nums[left]
+}
 #+END_SRC
 
 #+BEGIN_HTML

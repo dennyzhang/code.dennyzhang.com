@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming
+:type:     dynamicprogramming, treedp
 :END:
 ---------------------------------------------------------------------
 Unique Paths
@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/dungeon-game][Dungeon Game]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-treedp][#treedp]]
 ---------------------------------------------------------------------
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 

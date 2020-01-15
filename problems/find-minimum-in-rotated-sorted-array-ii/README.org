@@ -11,7 +11,8 @@ Find Minimum in Rotated Sorted Array II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-minimum-in-rotated-sorted-array-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/search-in-rotated-sorted-array][Search in Rotated Sorted Array]]
+- [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array][Leetcode: Find Minimum in Rotated Sorted Array]]
+- [[https://code.dennyzhang.com/search-in-rotated-sorted-array][Leetcode: Search in Rotated Sorted Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
@@ -32,7 +33,29 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii
-
+// Basic Ideas: binary search
+//  If nums[mid] > nums[right], it's in the right half, (excluding mid)
+//  If nums[mid] < nums[right], it's in the left half
+//  If nums[mid] = nums[right], drop nums[right]
+// Complexity: Time O(log(n)), Space O(1)
+func findMin(nums []int) int {
+    left, right := 0, len(nums)-1
+    // must exists
+    for left<right {
+        mid := (right-left)/2+left
+        if nums[mid] > nums[right] {
+            left = mid+1
+        } else {
+            if nums[mid] < nums[right] {
+                // drop the left half
+                right = mid
+            } else {
+                right--
+            }
+        }
+    }
+    return nums[left]
+}
 #+END_SRC
 
 #+BEGIN_HTML

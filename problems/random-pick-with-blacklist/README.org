@@ -11,10 +11,10 @@ Random Pick with Blacklist
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/random-pick-with-blacklist"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/random-flip-matrix][Leetcode: Random Flip Matrix]]
 - [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- [[https://code.dennyzhang.com/random-flip-matrix][Leetcode: Random Flip Matrix]]
 - Tag: [[https://code.dennyzhang.com/review-random][#random]], [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a blacklist B containing unique integers from [0, N), write a function to return a uniform random integer from [0, N) which is NOT in B.
