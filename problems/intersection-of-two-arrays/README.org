@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     hashmap
 :END:
 ---------------------------------------------------------------------
 Intersection of Two Arrays
@@ -13,7 +13,7 @@ Intersection of Two Arrays
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given two arrays, write a function to compute their intersection.
 
@@ -32,9 +32,29 @@ Credits To: [[https://leetcode.com/problems/intersection-of-two-arrays/descripti
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/intersection-of-two-arrays
-
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/intersection-of-two-arrays
+// Basic Ideas: hashmap
+//
+// Complexity: Time O(n+m), Space O(min(m, n))
+func intersection(nums1 []int, nums2 []int) []int {
+    m := map[int]int{}
+    for _, v := range nums1{
+        if _, ok := m[v]; !ok {
+            m[v] = 1
+        }
+    }
+    res := []int{}
+    for _, v := range nums2 {
+        if m[v] == 1 {
+            // add the result
+            res = append(res, v)
+            // avoid add duplicates
+            m[v] = 0
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

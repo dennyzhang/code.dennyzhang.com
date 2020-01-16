@@ -17,7 +17,7 @@ People like games. Here are a list of game problems in code tests.
 See all game problems: [[https://code.dennyzhang.com/tag/game/][#game]].
 [display-posts tag="game" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

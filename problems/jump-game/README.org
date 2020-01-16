@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/add-bold-tag-in-string][Add Bold Tag in String]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/tag/frogjump][#frogjump]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]]
 ---------------------------------------------------------------------
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
 

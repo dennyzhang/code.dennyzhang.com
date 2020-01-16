@@ -24,9 +24,13 @@ Key operations: find-min, get-min, insert, etc.
 *Scenarios*
 *Code Skeleton*
 *Questions*
-| Name | Example |
-|------+---------|
-|      |         |
+| Num | Problem             | Summary                       |
+|-----+---------------------+-------------------------------|
+|   1 | Meeting Rooms II    | [[https://code.dennyzhang.com/meeting-rooms-ii][Leetcode: Meeting Rooms II]]    |
+|   2 | Task Scheduler      | [[https://code.dennyzhang.com/task-scheduler][Leetcode: Task Scheduler]]      |
+|   3 | Last Stone Weight   | [[https://code.dennyzhang.com/last-stone-weight][Leetcode: Last Stone Weight]]   |
+|   4 | The Skyline Problem | [[https://code.dennyzhang.com/the-skyline-problem][Leetcode: The Skyline Problem]] |
+#+TBLFM: $1=@-1$1+1;N
 
 *Code Skeleton*
 #+BEGIN_SRC go
@@ -35,6 +39,7 @@ Key operations: find-min, get-min, insert, etc.
 //   cost = (n-1)*l[0]+(n-1)*l[1]+(n-2)*l[2]+(n-3)*l[3]....+ l[n-1]
 // Complexity: O(n*log(n)), Space O(1)
 // min heap
+import "container/heap"
 type IntHeap []int
 func (h IntHeap) Len() int {
     return len(h)
@@ -108,10 +113,10 @@ See all heap problems: [[https://code.dennyzhang.com/tag/heap/][#heap]]
 [display-posts tag="heap" posts_per_page="100" orderby="title"]
 
 Useful Link:
-- [[url-external:https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/][Heap queue (or heapq) in Python]]
-- [[url-external:https://www.pythoncentral.io/use-queue-beginners-guide/][How to use Queue: A beginner's guide]]
+- [[https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/][Heap queue (or heapq) in Python]]
+- [[https://www.pythoncentral.io/use-queue-beginners-guide/][How to use Queue: A beginner's guide]]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

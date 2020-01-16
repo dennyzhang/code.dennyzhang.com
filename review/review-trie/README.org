@@ -29,6 +29,14 @@ Suffix tree: [[https://en.wikipedia.org/wiki/Suffix_tree][wikipedia link]]
 | Finding the longest common substring                       | [[https://en.wikipedia.org/wiki/Longest_common_substring_problem][Longest common substring problem]] |
 | Finding the longest palindrome in a string                 |                                  |
 
+*Questions*
+| Num | Problem                                            | Summary                                           |
+|-----+----------------------------------------------------+---------------------------------------------------|
+|   1 | Extra datastructure in trie to save caculation     | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]]                          |
+|   2 | Trie for bit manipulation                          | [[https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array/][Leetcode: Maximum XOR of Two Numbers in an Array]]. |
+|   3 | Fuzzy match for trie tree: children & isLeaf mixed | [[https://code.dennyzhang.com/implement-magic-dictionary/][Leetcode: Implement Magic Dictionary]]              |
+#+TBLFM: $1=@-1$1+1;N
+
 *Scenarios*
 #+BEGIN_SRC go
 type Trie struct {
@@ -37,15 +45,6 @@ type Trie struct {
 }
 #+END_SRC
 *Code Skeleton*
-
-*Questions*
-| Name                                                        | Example                                           |
-|-------------------------------------------------------------+---------------------------------------------------|
-| Extra datastructure in trie can save time and simplify code | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]]                          |
-| For a-z, use _children [26]*Trie_ vs _map[byte]*Trie_       | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]]                          |
-| The most impressive problems to trie problem                | [[https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array/][Leetcode: Maximum XOR of Two Numbers in an Array]]. |
-| Time complexity of trie problems?                           | Time O(w)/O(n*w), Space O(w)                      |
-| trie vs hashmap                                             | [[https://code.dennyzhang.com/word-break-ii][Leetcode: Word Break II]]                           |
 
 - Solution: trie with extra datastructure in leaf nodes
 #+BEGIN_SRC go
@@ -63,7 +62,7 @@ type Trie struct {
 See all trie tree problems: [[https://code.dennyzhang.com/tag/trie/][#trie]]
 [display-posts tag="trie" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

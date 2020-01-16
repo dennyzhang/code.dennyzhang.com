@@ -23,7 +23,7 @@ Rolling Hash Problems & Follow-up
 
 See all series problems: [[https://code.dennyzhang.com/followup-rollinghash/][#rollinghash]]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

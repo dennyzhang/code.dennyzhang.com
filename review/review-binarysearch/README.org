@@ -64,7 +64,7 @@ But you wouldn't believe how incredibly useful it would be.
 See all binarysearch problems: [[https://code.dennyzhang.com/tag/binarysearch/][#binarysearch]].
 [display-posts tag="binarysearch" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

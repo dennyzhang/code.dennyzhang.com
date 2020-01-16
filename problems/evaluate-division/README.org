@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     unionfind, dfs
+:type:     unionfind, dfs, inspiring
 :END:
 ---------------------------------------------------------------------
 Evaluate Division
@@ -39,7 +39,7 @@ Credits To: [[https://leetcode.com/problems/evaluate-division/description/][leet
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: dfs
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: union find + weighted graph
@@ -103,6 +103,7 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 }
 #+END_SRC
 
+- Solution: union find
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/evaluate-division
 // Basic Ideas: union find + weighted graph
@@ -165,55 +166,82 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 }
 #+END_SRC
 
+- Solution: union find
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/evaluate-division
-// Basic Ideas: dfs + weighted graph
+// Basic Ideas: union find
 //
-// Complexity: Time O(n*k), Space O(n)
-func dfs(start string, end string, nodes map[string]map[string]float64, seen map[string]bool) float64 {
-    if v, ok := nodes[start][end]; ok {
-        return v
+// Complexity: Time O(n), Space O(n)
+var weights map[int]float64 // ratio of current vs immediate parent
+
+type DSU struct {
+    parent []int
+}
+
+func constructor(size int) DSU {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+        weights[i] = float64(1)
     }
-    seen[start] = true
-    for node2, v := range nodes[start] {
-        if !seen[node2] {
-            res := dfs(node2, end, nodes, seen)
-            if res != -1 {
-                return res*v
-            }
-        }
+    return DSU{parent:parent}
+}
+
+func (dsu *DSU) union(x int, y int, w float64) {
+    // connect parent of y to parent of x
+    x1, w1 := dsu.find(x)
+    y1, w2 := dsu.find(y)
+    dsu.parent[y1] = x1
+    weights[y1] = w1/(w*w2)
+}
+
+func (dsu *DSU) find(x int) (int, float64) {
+    w := weights[x]
+    for dsu.parent[x] != x {
+        x = dsu.parent[x]
+        w *= weights[x]
     }
-    return -1
+    return x, w
 }
 
 func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {
-    nodes := map[string]map[string]float64{}
+    cnt := 0
+    m := map[string]int{}
+    weights = map[int]float64{}
+
+    for _, eq := range equations {
+        for _, b := range eq {
+            if _, ok := m[b]; !ok {
+                m[b] = cnt
+                cnt++
+            }
+        }
+    }
+
+    dsu := constructor(cnt)
     for i, eq := range equations {
-        v1, v2 := eq[0], eq[1]
-        if _, ok := nodes[v1]; !ok {
-            nodes[v1] = map[string]float64{}
-        }
-        if _, ok := nodes[v2]; !ok {
-            nodes[v2] = map[string]float64{}
-        }
-        nodes[v1][v2] = 1/values[i]
-        nodes[v2][v1] = values[i]
+        b1, b2 := eq[0], eq[1]
+        dsu.union(m[b1], m[b2], values[i])
     }
     res := make([]float64, len(queries))
-    for i, query := range queries{
-        v1, v2 := query[0], query[1]
-        if _, ok := nodes[v1]; !ok {
+    for i, q := range queries {
+        b1, b2 := q[0], q[1]
+        if _, ok := m[b1]; !ok {
             res[i] = -1
             continue
         }
-        if _, ok := nodes[v2]; !ok {
+        if _, ok := m[b2]; !ok {
             res[i] = -1
             continue
         }
-        if v1 == v2 {
-            res[i] = 1
+        v1, w1 := dsu.find(m[b1])
+        v2, w2 := dsu.find(m[b2])
+        if v1 != v2 {
+            // not connected
+            res[i] = -1
         } else {
-            res[i] = dfs(v2, v1, nodes, map[string]bool{})
+            // connect to the same ancestor
+            res[i] = w1/w2
         }
     }
     return res

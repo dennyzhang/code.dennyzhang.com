@@ -17,10 +17,9 @@ Topological Sort Problems
 *Basic Abstractions*
 | Name                                    | Summary                         |
 |-----------------------------------------+---------------------------------|
+| [[https://en.wikipedia.org/wiki/Topological_sorting#Algorithms][Wikipedia: Topological sorting]]          | Kahn's algorithm, DFS algorithm |
 | unexamined nodes with no incoming edges |                                 |
 | Unused edge                             |                                 |
-| [[https://en.wikipedia.org/wiki/Topological_sorting#Algorithms][Wikipedia: Topological sorting]]          | Kahn's algorithm, DFS algorithm |
-|                                         |                                 |
 
 *Questions*
 | Name                                                                         | Example                                               |
@@ -31,9 +30,10 @@ Topological Sort Problems
 | Common Mistake: Missing characters without incoming edges                    | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
 | Common Mistake: Avoid updating indegrees repetitively for duplicate edges    | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
 | Common Mistake: in dfs implementation, process 0-degree nodes multiple times | [[https://code.dennyzhang.com/alien-dictionary][Leetcode: Alien Dictionary]]                            |
-| Topoloical sort: How to return all possible orders, instead of any one?      |                                                       |
 | Longest path in a DAG without circle                                         | [[https://code.dennyzhang.com/longest-increasing-path-in-a-matrix][Leetcode: Longest Increasing Path in a Matrix]]         |
+| Topoloical sort: How to return all possible orders, instead of any one?      |                                                       |
 | For nodes in connections, in the form of intergers or strings?               |                                                       |
+| Topoloical sort(BFS): doesn't need a visited hashmap                         | [[https://code.dennyzhang.com/course-schedule-ii][Leetcode: Course Schedule II]]                          |
 
 *Code Skeleton*
 
@@ -95,7 +95,7 @@ Topological sorting forms the basis of linear-time algorithms for finding the *c
 See all topologicalsort problems: [[https://code.dennyzhang.com/tag/topologicalsort/][#topologicalsort]]
 [display-posts tag="topologicalsort" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

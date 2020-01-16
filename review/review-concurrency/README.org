@@ -85,7 +85,7 @@ See all concurrency problems: [[https://code.dennyzhang.com/tag/concurrency/][#c
 </div>
 #+END_HTML
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone showall
 #+DESCRIPTION:

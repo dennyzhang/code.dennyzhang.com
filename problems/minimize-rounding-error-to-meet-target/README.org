@@ -1,0 +1,127 @@
+* Leetcode: Minimize Rounding Error to Meet Target              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy
+:END:
+---------------------------------------------------------------------
+Minimize Rounding Error to Meet Target
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimize-rounding-error-to-meet-target"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/two-city-scheduling][Leetcode: Two City Scheduling]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Given an array of prices [p1,p2...,pn] and a target, round each price pi to Roundi(pi) so that the rounded array [Round1(p1),Round2(p2)...,Roundn(pn)] sums to the given target. Each operation Roundi(pi) could be either Floor(pi) or Ceil(pi).
+
+Return the string "-1" if the rounded array is impossible to sum to target. Otherwise, return the smallest rounding error
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: prices = ["0.700","2.800","4.900"], target = 8
+Output: "1.000"
+Explanation: 
+Use Floor, Ceil and Ceil operations to get (0.7 - 0) + (3 - 2.8) + (5 - 4.9) = 0.7 + 0.2 + 0.1 = 1.0
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: prices = ["1.500","2.500","3.500"], target = 10
+Output: "-1"
+Explanation: 
+It is impossible to meet the target.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= prices.length <= 500.
+- Each string of prices prices[i] represents a real number which is between 0 and 1000 and has exactly 3 decimal places.
+- target is between 0 and 1000000.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimize-rounding-error-to-meet-target][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimize-rounding-error-to-meet-target/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minimize-rounding-error-to-meet-target
+// Basic Ideas: greedy
+//
+//   For the sum range, we can get the min and max
+//   Any value between min and max would be feasible
+//   For ["0.700","2.800","4.900"], min is 6, max 9
+//
+//   For greedy, what if the cost of one element is the same?
+//   They would be the last ones to be evaluated
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+func abs(x int) int {
+    if x>0 {
+        return x
+    } else {
+        return -x
+    }
+}
+
+func minimizeError(prices []string, target int) string {
+    min := 0
+    nums := []int{}
+    for _, p := range prices {
+        l := strings.Split(p, ".")
+        num, _ := strconv.Atoi(l[0])
+        min += num
+        num2, _ := strconv.Atoi("1"+l[1])
+        num2 -= 1000
+        if num2 != 0 {
+            nums = append(nums, num2)
+        }
+    }
+    if min > target || min+len(nums)<target {
+        return "-1"
+    }
+    sort.Slice(nums, func(i, j int) bool {
+        // nums[i] - (1-nums[i])
+        return abs(2*nums[i]-1000)>abs(2*nums[j]-1000)
+    })
+    cnt := target-min
+    
+    v := 0
+    for i:=0; i<len(nums); i++ {
+        // fmt.Println(i, nums[i], cnt, v)
+        if cnt == 0 {
+            // ceiling
+            v += nums[i]
+        } else {
+            if cnt  == len(nums)-i {
+                // no enough values
+                v += 1000-nums[i]
+                cnt--
+            } else {
+                if nums[i] < 1000-nums[i] {
+                    // ceiling
+                    v += nums[i]
+                } else {
+                    v += 1000-nums[i]
+                    cnt--
+                }
+            }
+        }
+    }
+    return fmt.Sprintf("%.3f", float64(v)/1000)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

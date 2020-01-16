@@ -30,7 +30,7 @@ Image credits to [[url-external:http://zxi.mytechroad.com/blog/sp/input-size-v-s
 - If your code has too many trivial checks, you might do it in a wrong way. There shall be better approaches in most cases.
 - You know the idea, how fast you can finish the coding? And Bug-free?
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

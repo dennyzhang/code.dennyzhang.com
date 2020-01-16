@@ -16,7 +16,7 @@ Height Of Tree problems
 See all series problems: [[https://code.dennyzhang.com/tag/heightoftree/][#heightoftree]]
 [display-posts tag="heightoftree" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

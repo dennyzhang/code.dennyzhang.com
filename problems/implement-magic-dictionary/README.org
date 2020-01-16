@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     oodesign, trie, redo, classic
+:type:     oodesign, trie, classic, recursive, redo
 :END:
 ---------------------------------------------------------------------
 Implement Magic Dictionary
@@ -13,7 +13,7 @@ Implement Magic Dictionary
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-trie][#trie]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
 ---------------------------------------------------------------------
 Implement a magic directory with buildDict, and search methods.
 
@@ -41,7 +41,83 @@ Credits To: [[https://leetcode.com/problems/implement-magic-dictionary/descripti
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: Trie + recursive
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/implement-magic-dictionary
+// Basic Ideas: Trie tree
+//
+//  Strict match and fuzz match
+//
+//  The time complexity would be 26*n
+//
+// Complexity: Time O(n), Space O(n)
+type MagicDictionary struct {
+    children map[byte]*MagicDictionary
+    isLeaf bool
+}
 
+/** Initialize your data structure here. */
+func Constructor() MagicDictionary {
+    return MagicDictionary{children:map[byte]*MagicDictionary{}}
+}
+
+/** Build a dictionary through a list of words */
+func (this *MagicDictionary) BuildDict(dict []string)  {
+    for _, w := range dict {
+        p := this
+        for i, _ := range w {
+            ch := w[i]
+            if _, ok := p.children[ch]; !ok {
+                q := &MagicDictionary{children:map[byte]*MagicDictionary{}}
+                p.children[ch] = q
+            }
+            p = p.children[ch]
+        }
+        p.isLeaf = true
+    }
+}
+
+func (this *MagicDictionary) strictSearch(word string) bool {
+    p := this
+    for i, _ := range word {
+        ch := word[i]
+        if _, ok := p.children[ch]; !ok {
+            return false
+        }
+        p = p.children[ch]
+    }
+    return p.isLeaf
+}
+
+/** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */
+func (this *MagicDictionary) Search(word string) bool {
+    if len(word) == 0 {
+        return false
+    }
+    for b, q := range this.children {
+        ch := word[0]
+        if b != ch {
+            if q.strictSearch(word[1:]) {
+                return true
+            }
+        } else {
+            if q.Search(word[1:]) {
+                return true
+            }
+        }
+    }
+    return false
+}
+
+/**
+ * Your MagicDictionary object will be instantiated and called as such:
+ * obj := Constructor();
+ * obj.BuildDict(dict);
+ * param_2 := obj.Search(word);
+ */
+#+END_SRC
+
+- Solution: Trie
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/implement-magic-dictionary
 ## Basic Ideas: Trie Tree + recursive

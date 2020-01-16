@@ -23,7 +23,7 @@ Random Problems
 See all random problems: [[https://code.dennyzhang.com/tag/random/][#random]]
 [display-posts tag="random" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

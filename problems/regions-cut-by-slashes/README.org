@@ -99,177 +99,83 @@ Leave me comments, if you have better ways to solve.
 // https://code.dennyzhang.com/regions-cut-by-slashes
 // Basic Ideas: union find
 //
-// Each cell can be dividied into four parts.
-// Notice: The total nodes would be 4*n*n
+//  Divide one cell into 4 parts
+//  Union regions, and get the count of regions.
 //
-// Loop each cell
-//    1. Join 4 nodes conditionally
-//    2. Join cell with adjacent nodes
-//
-//     \ 1 /
-//    0     2
-//     / 3  \
-//
-//   For adjacent nodes:
-//      3<->1
-//      2<->0
-// Complexity: Time O(n^2), Space O(n^2)
-var count int
-type UF struct {
+// Complexity: Time O(n*n), Space O(n*n)
+var cnt int
+
+type DSU struct {
     parent []int
 }
 
-func constructor(size int) UF {
+func constructor(size int) DSU {
     parent := make([]int, size)
     for i, _ := range parent {
         parent[i] = i
     }
-    return UF{parent:parent}
+    return DSU{parent:parent}
 }
 
-func (uf *UF) union(x, y int) {
-    p1 := uf.find(x)
-    p2 := uf.find(y)
-    if p1 != p2 {
-        count--
-        uf.parent[p2] = p1
+func (dsu *DSU) union(x, y int) {
+    x1, y1 := dsu.find(x), dsu.find(y)
+    if x1 != y1 {
+        dsu.parent[y1] = x1
+        cnt--
     }
 }
 
-func (uf *UF) find(x int) int {
-    for x != uf.parent[x] {
-        x = uf.parent[x]
+func (dsu *DSU) find(x int) int {
+    for dsu.parent[x] != x {
+        x = dsu.parent[x]
     }
     return x
 }
 
 func regionsBySlashes(grid []string) int {
-    count = len(grid)*len(grid)*4
-    uf := constructor(count)
+    cnt = len(grid)*len(grid)*4
+    dsu := constructor(cnt)
     for i, row := range grid {
-        for j, cell := range row {
-            // join 4 nodes inside current cell
-            index := 4*(i*len(grid)+j)
-            if cell == ' ' {
-                uf.union(index+0, index+1)
-                uf.union(index+0, index+2)
-                uf.union(index+0, index+3)
+        for j, v := range row {
+            index := (i*len(grid)+j)*4
+            // union inside the cell
+            if v == '/' {
+                dsu.union(index, index+3)
+                dsu.union(index+1, index+2)
             }
-            if cell == '/' {
-                uf.union(index+0, index+1)
-                uf.union(index+2, index+3)
+            if v == '\\' {
+                dsu.union(index, index+1)
+                dsu.union(index+2, index+3)
             }
-            if cell == '\\' {
-                uf.union(index+0, index+3)
-                uf.union(index+1, index+2)
+            if v == ' ' {
+                dsu.union(index, index+1)
+                dsu.union(index+1, index+2)
+                dsu.union(index+2, index+3)
+                dsu.union(index+3, index)
             }
-            // join nodes in adjacent cells
-            for k, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
-                                           []int{0, 1}, []int{0, -1}} {
-                i2, j2 := i+offset[0], j+offset[1]
-                if i2>=0 && i2<len(grid) && j2>=0 && j2<len(grid) {
-                    index2 := 4*(i2*len(grid)+j2) 
-                    if k == 0 { uf.union(index+3, index2+1) }
-                    if k == 1 { uf.union(index+1, index2+3) }
-                    if k == 2 { uf.union(index+2, index2+0) }
-                    if k == 3 { uf.union(index+0, index2+2) }
-                }
-            }
-        }
-    }
-    return count
-}
-#+END_SRC
-
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/regions-cut-by-slashes
-// Basic Ideas: union find
-//
-// Each cell can be dividied into four parts.
-// Notice: The total nodes would be 4*n*n
-//
-// Loop each cell
-//    1. Join 4 nodes conditionally
-//    2. Join cell with adjacent nodes
-//
-//     \ 1 /
-//    0     2
-//     / 3  \
-//
-//   For adjacent nodes:
-//      3<->1
-//      2<->0
-// Complexity: Time O(n^2), Space O(n^2)
-var count int
-type UF struct {
-    parent []int
-}
-
-func constructor(size int) UF {
-    parent := make([]int, size)
-    for i, _ := range parent {
-        parent[i] = i
-    }
-    return UF{parent:parent}
-}
-
-func (uf *UF) union(x, y int) {
-    p1 := uf.find(x)
-    p2 := uf.find(y)
-    if p1 != p2 {
-        count--
-        uf.parent[p2] = p1
-    }
-}
-
-func (uf *UF) find(x int) int {
-    for x != uf.parent[x] {
-        x = uf.parent[x]
-    }
-    return x
-}
-
-func regionsBySlashes(grid []string) int {
-    count = len(grid)*len(grid)*4
-    uf := constructor(count)
-    for i, row := range grid {
-        for j, cell := range row {
-            // join 4 nodes inside current cell
-            index := 4*(i*len(grid)+j)
-            if cell == ' ' {
-                uf.union(index+0, index+1)
-                uf.union(index+0, index+2)
-                uf.union(index+0, index+3)
-            }
-            if cell == '/' {
-                uf.union(index+0, index+1)
-                uf.union(index+2, index+3)
-            }
-            if cell == '\\' {
-                uf.union(index+0, index+3)
-                uf.union(index+1, index+2)
-            }
+            // union across cells
             // north
             if i>0 {
-                uf.union(index+1, index-4*len(grid)+3)
-            }
-            // south
-            if i<len(grid)-1 {
-                uf.union(index+3, index+4*len(grid)+1)
+                dsu.union(index-4*len(grid)+2, index)
             }
             // east
             if j<len(grid)-1 {
-                uf.union(index+2, index+4+0)
+                dsu.union(index+7, index+1)
+            }
+            // south
+            if i<len(grid)-1 {
+                dsu.union(index+4*len(grid), index+2)
             }
             // west
             if j>0 {
-                uf.union(index+0, index-4+2)
+                dsu.union(index-3, index+3)
             }
         }
     }
-    return count
+    return cnt
 }
 #+END_SRC
+
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>

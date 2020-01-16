@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     math
 :END:
 ---------------------------------------------------------------------
 Clumsy Factorial
@@ -13,7 +13,7 @@ Clumsy Factorial
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]]
 ---------------------------------------------------------------------
 Normally, the factorial of a positive integer n is the product of all positive integers less than or equal to n.  For example, factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1.
 
@@ -54,7 +54,44 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/clumsy-factorial
+// Basic Ideas: math
+//
+//  5 = 5*4/3+2-1
+//  6 = 6*5/4+3-2*1
+//
+//   3*2/1
+//
+// Each time, take 4 items
+//
+// Complexity: Time O(n), Space O(1)
+func max(x int, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
+func clumsy(N int) int {
+    res := 0
+    i := N
+    for ; i-4>=0; i-=4 {
+        sign := -1
+        if res == 0 {
+            sign = 1
+        }
+        res += sign*i*(i-1)/(i-2)+(i-3)
+    }
+    if i != 0 {
+        v := i*max(i-1, 1)
+        if i == N {
+            res = v
+        } else {
+            res -= v
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

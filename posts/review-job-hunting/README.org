@@ -92,7 +92,7 @@ If you can start your own business from your skills, it's better.
 - Stop talking about yourself. Present how your strength can benefit the specific position. And impress the interviewers with how depth your knowledge is, and how broad your knowledge is.
 - If you lack of professional converstaions with good quality, you will grow slowly
 ---------------------------------------------------------------------
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     greedy, inspiring
 :END:
 ---------------------------------------------------------------------
 Delete Columns to Make Sorted II
@@ -13,7 +13,7 @@ Delete Columns to Make Sorted II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 We are given an array A of N lowercase letter strings, all of the same length.
 
@@ -66,24 +66,89 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/delete-columns-to-make-sorted-ii
+// Basic Ideas: greedy
+//
+//   From left column to the right, decide column by column
+//   Interesting test case: ["xga","xfb","yfa"]
+//
+// Complexity: Time O(n*m), Space O(n)
+func minDeletionSize(A []string) int {
+    res := 0
+    resolved := make([]bool, len(A))
+    for i:=0; i<len(A[0]); i++ {
+        j:=0;
+        for ; j+1<len(A); j++ {
+            // skip compare A[j] with A[j+1] for current digit
+            if resolved[j] {
+                continue
+            }
+            if A[j][i] > A[j+1][i] {
+                break
+            }
+        }
+        // need to delete this column
+        if j+1 != len(A) {
+            res++
+        } else {
+           // collect sorted columned
+            for j:=0; j+1<len(A); j++ {
+                if A[j][i] != A[j+1][i] {
+                    resolved[j] = true
+                }
+            }
+        }
+    }
+    return res
+}
+#+END_SRC
 
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
+- Solution:
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/delete-columns-to-make-sorted-ii
-
+// Basic Ideas: greedy
+//
+//   From left column to the right, decide column by column
+//   Interesting test case: ["xga","xfb","yfa"]
+//
+// Complexity: Time O(n*m), Space O(n)
+func minDeletionSize(A []string) int {
+    res := 0
+    resolved := make([]bool, len(A))
+    for i:=0; i<len(A[0]); i++ {
+        j:=0;
+        hasEqual := false
+        l := []int{}
+        for ; j+1<len(A); j++ {
+            // skip compare A[j] with A[j+1] for current digit
+            if resolved[j] {
+                continue
+            }
+            if A[j][i] > A[j+1][i] {
+                break
+            }
+            if A[j][i] == A[j+1][i] {
+                hasEqual = true
+            } else {
+                l = append(l, j)
+            }
+        }
+        // need to delete this column
+        if j+1 != len(A) {
+            res++
+        } else {
+           if !hasEqual {
+                return res
+            }
+            for _, index := range l {
+                resolved[index] = true
+            }
+        }
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

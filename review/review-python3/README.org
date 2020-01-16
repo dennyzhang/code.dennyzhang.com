@@ -47,7 +47,7 @@ print(num/2) # In python3, it's 1.5
 
 See more:
 - GitHub: [[url-external:https://github.com/dennyzhang/cheatsheet-python-A4][cheatsheet-python-A4]]
-- [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+- [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

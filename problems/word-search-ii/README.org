@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     trie, dfs
+:type:     trie, dfs, backtracking, inspiring
 :END:
 ---------------------------------------------------------------------
 Word Search II
@@ -13,7 +13,7 @@ Word Search II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+- Tag: [[https://code.dennyzhang.com/review-trie][#trie]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Given a 2D board and a list of words from the dictionary, find all words in the board.
 
@@ -51,6 +51,82 @@ Credits To: [[https://leetcode.com/problems/word-search-ii/description/][leetcod
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: trie + dfs
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/word-search-ii
+// Basic Ideas: Trie + Graph
+//
+//  For each position in the graph, do a trie lookup
+//
+// Complexity: Time ?, Space ?
+type Trie struct {
+    children [26]*Trie
+    isLeaf bool
+    index int
+}
+
+func dfs(i int, j int, root *Trie, board [][]byte, seen []bool) {
+    if i<0 || i>=len(board) || j<0 || j>=len(board[0]) {
+        return
+    }
+
+    if board[i][j] == '#' {
+        // already visited
+        return
+    }
+    b := int(board[i][j]-'a')
+    p := root.children[b]
+    if p == nil {
+        // no match
+        return
+    }
+    if p.isLeaf {
+        // Can't use root.isLeaf, since we won't hit an empty character
+        seen[p.index] = true
+        // Don't return, strings in words array can be prefix strings
+    }   
+    board[i][j] = '#'
+    dfs(i+1, j, p, board, seen)
+    dfs(i-1, j, p, board, seen)
+    dfs(i, j+1, p, board, seen)
+    dfs(i, j-1, p, board, seen)
+    // backtrack
+    board[i][j] = byte(b+'a')
+}
+
+func findWords(board [][]byte, words []string) []string {
+    // build a trie from words
+    root := &Trie{}
+    for i, w := range words {
+        p := root
+        for _, ch := range w {
+            b := byte(ch)-'a'
+            if p.children[b] == nil {
+                p.children[b] = &Trie{}
+            }
+            p = p.children[b]
+        }
+        p.isLeaf = true
+        p.index = i
+    }
+    seen := make([]bool, len(words))
+    for i, row := range board {
+        for j, _ := range row {
+            dfs(i, j, root, board, seen)
+        }
+    }
+    // fmt.Println(seen)
+    res := []string{}
+    for i, b := range seen {
+        if b {
+            res = append(res, words[i])
+        }
+    }
+    // assume the order of the result doesn't matter
+    return res
+}
+#+END_SRC
+
 - Solution: trie with extra datastructure + no hashmap to avoid duplicates + use [26] instead of hashmap in trie
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/word-search-ii

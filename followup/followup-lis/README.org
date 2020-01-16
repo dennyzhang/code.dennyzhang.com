@@ -20,7 +20,7 @@ Longest increasing subsequence & Follow-up
 See all series problems: [[https://code.dennyzhang.com/followup-lis/][#lis]]
 [display-posts tag="lis" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

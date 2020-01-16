@@ -16,7 +16,7 @@ Calculator & Follow-up
 See all calculator problems & follow-up: [[https://code.dennyzhang.com/tag/calculator/][#calculator]]
 [display-posts tag="calculator" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

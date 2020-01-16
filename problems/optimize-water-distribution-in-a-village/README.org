@@ -1,0 +1,118 @@
+* Leetcode: Optimize Water Distribution in a Village            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, unionfind
+:END:
+---------------------------------------------------------------------
+Optimize Water Distribution in a Village
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/optimize-water-distribution-in-a-village"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-unionfind][#unionfind]]
+---------------------------------------------------------------------
+There are n houses in a village. We want to supply water for all the houses by building wells and laying pipes.
+
+For each house i, we can either build a well inside it directly with cost wells[i], or pipe in water from another well to it. The costs to lay pipes between houses are given by the array pipes, where each pipes[i] = [house1, house2, cost] represents the cost to connect house1 and house2 together using a pipe. Connections are bidirectional.
+
+Find the minimum total cost to supply water to all houses.
+
+Example 1:
+[[image-blog:Leetcode: Optimize Water Distribution in a Village][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/optimize-water-distribution-in-a-village/1.png]]
+#+BEGIN_EXAMPLE
+Input: n = 3, wells = [1,2,2], pipes = [[1,2,1],[2,3,1]]
+Output: 3
+Explanation: 
+The image shows the costs of connecting houses using pipes.
+The best strategy is to build a well in the first house with cost 1 and connect the other houses to it with cost 2 so the total cost is 3.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 10000
+- wells.length == n
+- 0 <= wells[i] <= 10^5
+- 1 <= pipes.length <= 10000
+- 1 <= pipes[i][0], pipes[i][1] <= n
+- 0 <= pipes[i][2] <= 10^5
+- pipes[i][0] != pipes[i][1]
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/optimize-water-distribution-in-a-village][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/optimize-water-distribution-in-a-village/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/optimize-water-distribution-in-a-village
+// Basic Ideas: a mininum spanning tree
+//
+//   Convert the cost of wells to pipes.
+//     Suppose there is a hiden village.
+//     When it connects with any village, the edge means a well.
+//   Now try to make sure all nodes are connected, and total cost are minimum
+//   It becomes a minimum spanning tree problem
+//
+// Complexity: Time ?, Space ?
+import "sort"
+type DSU struct {
+    parent []int
+}
+
+func constructor(size int) DSU {
+    parent := make([]int, size)
+    for i, _ := range parent {
+        parent[i] = i
+    }
+    return DSU{parent:parent}
+}
+
+func (dsu *DSU) union(x int, y int) {
+    dsu.parent[dsu.find(y)] = dsu.find(x)
+}
+
+func (dsu *DSU) find(x int) int {
+    for dsu.parent[x] != x {
+        x = dsu.parent[x]
+    }
+    return x
+}
+
+func minCostToSupplyWater(n int, wells []int, pipes [][]int) int {
+    dsu := constructor(n+1)
+    costs := [][]int{}
+    for i, c := range wells {
+        costs = append(costs, []int{c, 0, i+1})
+    }
+    for _, p := range pipes {
+        costs = append(costs, []int{p[2], p[0], p[1]})
+    }
+    sort.Slice(costs, func(i, j int) bool {
+        return costs[i][0]<costs[j][0]
+    })
+
+    res := 0
+    for _, cost := range costs {
+        c, n1, n2 := cost[0], cost[1], cost[2]
+        if dsu.find(n1) != dsu.find(n2) {
+            dsu.union(n1, n2)
+            res += c
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -24,7 +24,7 @@ String is basic. But it could be very tough as well.
 See all string problems: [[https://code.dennyzhang.com/tag/string/][#string]].
 [display-posts tag="string" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

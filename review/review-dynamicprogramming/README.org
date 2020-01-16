@@ -52,9 +52,10 @@ Trade space for time.
 |  18 | DP based on states, instead of possible actions | O(n)            | [[https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-with-cooldown][Leetcode: Best Time to Buy and Sell Stock with Cooldown]]     |
 |  19 | Remove Boxes                                    | O(n^4)          | [[https://code.dennyzhang.com/remove-boxes][Leetcode: Remove Boxes]]                                      |
 |  20 | Largest Sum of Averages                         | O(k*n*n)        | [[https://code.dennyzhang.com/largest-sum-of-averages][Leetcode: Largest Sum of Averages]]                           |
-|  21 | Uncrossed Lines                                 | O(n*m)          | [[https://code.dennyzhang.com/web-crawler][Leetcode: Uncrossed Lines]]                                   |
+|  21 | Uncrossed Lines                                 | O(n*m)          | [[https://code.dennyzhang.com/uncrossed-lines][Leetcode: Uncrossed Lines]]                                   |
 |  22 | treedp: Binary Trees With Factors               | O(n^2)          | [[https://code.dennyzhang.com/binary-trees-with-factors][Leetcode: Binary Trees With Factors]]                         |
 |  23 | DP based on values instead of positions         | O(n)            | [[https://code.dennyzhang.com/minimum-distance-to-type-a-word-using-two-fingers][Leetcode: Minimum Distance to Type a Word Using Two Fingers]] |
+|  24 | Video Stitching                                 | O(n*m)          | [[https://code.dennyzhang.com/video-stitching][Leetcode: Video Stitching]]                                   |
 #+TBLFM: $1=@-1$1+1;N
 
 | Name                                                  | Example                                                                |
@@ -99,7 +100,7 @@ The most impressive problems to me:
 See all dynamicprogramming problems: [[https://code.dennyzhang.com/tag/dynamicprogramming/][#dynamicprogramming]]
 [display-posts tag="dynamicprogramming" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

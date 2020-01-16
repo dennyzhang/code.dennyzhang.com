@@ -16,7 +16,7 @@ Get Median Problems & Follow-Up
 See all series problems: [[https://code.dennyzhang.com/followup-getmedian/][#getmedian]]
 [display-posts tag="getmedian" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

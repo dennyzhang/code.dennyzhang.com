@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     rectangle
+:type:     rectangle, linesweep
 :END:
 ---------------------------------------------------------------------
 Rectangle Area II
@@ -13,7 +13,7 @@ Rectangle Area II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
+- Tag: [[https://code.dennyzhang.com/review-rectangle][#rectangle]], [[https://code.dennyzhang.com/followup-linesweep][#linesweep]]
 ---------------------------------------------------------------------
 We are given a list of (axis-aligned) rectangles.  Each rectangle[i] = [x1, y1, x2, y2] , where (x1, y1) are the coordinates of the bottom-left corner, and (x2, y2) are the coordinates of the top-right corner of the ith rectangle.
 

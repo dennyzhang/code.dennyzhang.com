@@ -75,7 +75,7 @@ func dfs(pos int, visited []bool, count int, middles [][]int, res *int) {
 See all dfs problems: [[https://code.dennyzhang.com/tag/bfs/][#dfs]]
 [display-posts tag="dfs" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

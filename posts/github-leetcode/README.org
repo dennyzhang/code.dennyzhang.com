@@ -17,7 +17,7 @@ Check it out and discuss with me. [[color:#c7254e][Remember: We Two Is Just One 
 More Reading:
 - [[https://code.dennyzhang.com/category/life/][Category: Life]]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone hidestars

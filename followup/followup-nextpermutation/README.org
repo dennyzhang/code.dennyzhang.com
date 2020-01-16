@@ -16,7 +16,7 @@ Get the next permutation of an array
 See all series problems: [[https://code.dennyzhang.com/followup-nextpermutation/][#nextpermutation]]
 [display-posts tag="nextpermutation" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

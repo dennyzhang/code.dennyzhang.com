@@ -23,7 +23,7 @@ Convert Data Structure problems
 See all series problems: [[https://code.dennyzhang.com/followup-convertds/][#convertds]]
 [display-posts tag="convertds" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

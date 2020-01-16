@@ -54,7 +54,7 @@ Another two blogs from me:
 - https://architect.dennyzhang.com: Learn System Design
 - [[url-external:https://www.dennyzhang.com][https://www.dennyzhang.com]]: DevOps & Cloud
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 See all blogs I'm actively maintaining:
 | Blog                          | Link                              |

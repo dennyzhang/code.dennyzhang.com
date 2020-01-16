@@ -1,0 +1,90 @@
+* Leetcode: Perfect Rectangle                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linesweep
+:END:
+---------------------------------------------------------------------
+Perfect Rectangle
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/perfect-rectangle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-linesweep][#linesweep]]
+---------------------------------------------------------------------
+Given N axis-aligned rectangles where N > 0, determine if they all together form an exact cover of a rectangular region.
+
+Each rectangle is represented as a bottom-left point and a top-right point. For example, a unit square is represented as [1,1,2,2]. (coordinate of bottom-left point is (1, 1) and top-right point is (2, 2)).
+
+Example 1:
+#+BEGIN_EXAMPLE
+rectangles = [
+  [1,1,3,3],
+  [3,1,4,2],
+  [3,2,4,4],
+  [1,3,2,4],
+  [2,3,3,4]
+]
+
+Return true. All 5 rectangles together form an exact cover of a rectangular region.
+#+END_EXAMPLE
+ 
+Example 2:
+#+BEGIN_EXAMPLE
+rectangles = [
+  [1,1,2,3],
+  [1,3,2,4],
+  [3,1,4,2],
+  [3,2,4,4]
+]
+
+Return false. Because there is a gap between the two rectangular regions.
+#+END_EXAMPLE
+ 
+Example 3:
+#+BEGIN_EXAMPLE
+rectangles = [
+  [1,1,3,3],
+  [3,1,4,2],
+  [1,3,2,4],
+  [3,2,4,4]
+]
+
+Return false. Because there is a gap in the top center.
+#+END_EXAMPLE
+ 
+Example 4:
+#+BEGIN_EXAMPLE
+rectangles = [
+  [1,1,3,3],
+  [3,1,4,2],
+  [1,3,2,4],
+  [2,2,4,4]
+]
+
+Return false. Because two of the rectangles overlap with each other.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/perfect-rectangle][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/perfect-rectangle/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/perfect-rectangle
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

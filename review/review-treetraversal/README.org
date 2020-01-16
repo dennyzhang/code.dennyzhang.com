@@ -31,7 +31,7 @@ Binary tree traversal
 See all treetraversal tree problems: [[https://code.dennyzhang.com/tag/treetraversal/][#treetraversal]]
 [display-posts tag="treetraversal" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

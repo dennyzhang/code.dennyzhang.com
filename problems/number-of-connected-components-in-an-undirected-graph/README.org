@@ -48,9 +48,14 @@ Credits To: [[https://leetcode.com/problems/number-of-connected-components-in-an
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
-
+- Solution: Union find + decreasing global variable
 #+BEGIN_SRC go
+// https://code.dennyzhang.com/number-of-connected-components-in-an-undirected-graph
+#+END_SRC
+
+- Solution: Union find
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/number-of-connected-components-in-an-undirected-graph
 // https://code.dennyzhang.com/number-of-connected-components-in-an-undirected-graph
 // Basic Ideas: union find
 //
@@ -85,11 +90,13 @@ func countComponents(n int, edges [][]int) int {
     for _, edge := range edges {
         uf.union(edge[0], edge[1])
     }
-    m := map[int]bool{}
+    res := 0
     for i:=0; i<n; i++ {
-        m[uf.find(i)] = true
+        if uf.find(i) == i {
+            res++
+        }
     }
-    return len(m)
+    return res
 }
 #+END_SRC
 

@@ -13,10 +13,25 @@ Review Math code problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
+| Num | Problem                                 | Summary                                        |
+|-----+-----------------------------------------+------------------------------------------------|
+|   1 | Check prime - [[https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes][Sieve of Eratosthenes]]     | [[https://code.dennyzhang.com/count-primes][Leetcode: Count Primes]]                         |
+|   2 | Check leap year                         | [[https://code.dennyzhang.com/day-of-the-week][Leetcode: Day of the Week]]                      |
+|   3 | GCD                                     | [[https://code.dennyzhang.com/fraction-addition-and-subtraction][Leetcode: Fraction Addition and Subtraction]]    |
+|   4 | Overlapping area of two rectangles      | [[https://code.dennyzhang.com/rectangle-area][Leetcode: Rectangle Area]]                       |
+|   5 | Rotate Array by k steps                 | [[https://code.dennyzhang.com/rotate-array][Leetcode: Rotate Array]]                         |
+|   6 | Mapping data range of getRand algorithm | [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]]     |
+|   7 | Deal with float                         | [[https://code.dennyzhang.com/minimize-max-distance-to-gas-station][Leetcode: Minimize Max Distance to Gas Station]] |
+|   8 | Sum of Subsequence Widths               | [[https://code.dennyzhang.com/sum-of-subsequence-widths][Leetcode: Sum of Subsequence Widths]]            |
+|   9 | Remove 9                                | [[https://code.dennyzhang.com/remove-9][Leetcode: Remove 9]]                             |
+|  10 | Fraction to Recurring Decimal           | [[https://code.dennyzhang.com/fraction-to-recurring-decimal][Leetcode: Fraction to Recurring Decimal]]        |
+|  11 | [[https://stackoverflow.com/questions/3838329/how-can-i-check-if-two-segments-intersect][Check if two line segments intersect]]    |                                                |
+#+TBLFM: $1=@-1$1+1;N
+
 See all math problems: [[https://code.dennyzhang.com/review-math/][#math]]
 [display-posts tag="math" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

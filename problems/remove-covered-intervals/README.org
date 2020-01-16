@@ -1,0 +1,70 @@
+* Leetcode: Remove Covered Intervals                            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linesweep
+:END:
+---------------------------------------------------------------------
+Remove Covered Intervals
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-covered-intervals"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-linesweep][#linesweep]]
+---------------------------------------------------------------------
+Given a list of intervals, remove all intervals that are covered by another interval in the list. Interval [a,b) is covered by interval [c,d) if and only if c <= a and b <= d.
+
+After doing so, return the number of remaining intervals.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: intervals = [[1,4],[3,6],[2,8]]
+Output: 2
+Explanation: Interval [3,6] is covered by [2,8], therefore it is removed.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= intervals.length <= 1000
+- 0 <= intervals[i][0] < intervals[i][1] <= 10^5
+- intervals[i] != intervals[j] for all i != j
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/remove-covered-intervals][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/remove-covered-intervals/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/remove-covered-intervals
+// Basic Ideas:
+//
+// Complexity: Time O(n*n), Space O(n)
+func removeCoveredIntervals(intervals [][]int) int {
+    removed := map[[2]int]bool{}
+    for i, interval1 := range intervals {
+        for j, interval2 := range intervals {
+            if i == j {
+                continue
+            }
+            if interval2[0]<=interval1[0] && interval2[1]>=interval1[1] {
+                removed[[2]int{interval1[0], interval1[1]}] = true
+            }
+        }
+    }
+    return len(intervals) - len(removed)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

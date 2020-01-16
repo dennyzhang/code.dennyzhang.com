@@ -18,7 +18,7 @@ Review: SQL Problems
 See all sql problems: [[https://code.dennyzhang.com/tag/sql/][#sql]].
 [display-posts tag="sql" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

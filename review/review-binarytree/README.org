@@ -25,11 +25,13 @@ We might also see interesting requirements about updating binarytree. e,g, [[htt
 |   4 | Validate Binary Search Tree                    | [[https://code.dennyzhang.com/validate-binary-search-tree][Leetcode: Validate Binary Search Tree]]                                 |
 |   5 | Construct binary tree                          | [[https://code.dennyzhang.com/construct-binary-tree-from-preorder-and-postorder-traversal][Leetcode: Construct Binary Tree from Preorder and Postorder Traversal]] |
 |   6 | Distribute Coins in Binary Tree                | [[https://code.dennyzhang.com/distribute-coins-in-binary-tree][Leetcode: Distribute Coins in Binary Tree]]                             |
-|   7 | Revert binary tree between left and right      |                                                                       |
-|   8 | binary tree + greedy                           | [[https://code.dennyzhang.com/binary-tree-cameras][Leetcode: Binary Tree Cameras]]                                         |
-|   9 | binary tree serialization and deserialization  |                                                                       |
-|  10 | Morris tree trasversal                         |                                                                       |
-|  11 | Leetcode: Binary Tree Vertical Order Traversal | [[https://code.dennyzhang.com/binary-tree-vertical-order-traversal][Leetcode: Binary Tree Vertical Order Traversal]]                        |
+|   7 | Binary Tree Vertical Order Traversal           | [[https://code.dennyzhang.com/binary-tree-vertical-order-traversal][Leetcode: Binary Tree Vertical Order Traversal]]                        |
+|   8 | Verify Preorder Sequence in Binary Search Tree | [[https://code.dennyzhang.com/verify-preorder-sequence-in-binary-search-tree][Leetcode: Verify Preorder Sequence in Binary Search Tree]]              |
+|   9 | Revert binary tree between left and right      |                                                                       |
+|  10 | binary tree + greedy                           | [[https://code.dennyzhang.com/binary-tree-cameras][Leetcode: Binary Tree Cameras]]                                         |
+|  11 | binary tree serialization and deserialization  |                                                                       |
+|  12 | Morris tree trasversal                         |                                                                       |
+|  13 | Recursive + Greedy                             | [[https://code.dennyzhang.com/binary-tree-coloring-game][Leetcode: Binary Tree Coloring Game]]                                   |
 #+TBLFM: $1=@-1$1+1;N
 
 #+BEGIN_SRC c++
@@ -93,7 +95,7 @@ The most impressive problems to me:
 See all binarytree problems: [[https://code.dennyzhang.com/review-binarytree/][#binarytree]].
 [display-posts tag="binarytree" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

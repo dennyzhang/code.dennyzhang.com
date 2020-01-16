@@ -14,14 +14,22 @@ Greedy Problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-| Name | Example |
-|------+---------|
-|      |         |
+| Num | Problem                                   | Summary                                             |
+|-----+-------------------------------------------+-----------------------------------------------------|
+|   1 | Next Permutation                          | [[https://code.dennyzhang.com/next-permutation][Leetcode: Next Permutation]]                          |
+|   2 | Split Array into Consecutive Subsequences | [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Leetcode: Split Array into Consecutive Subsequences]] |
+|   3 | Remove duplicate letters                  | [[https://code.dennyzhang.com/remove-duplicate-letters][Remove Duplicate Letters]]                            |
+|   4 | Bag of Tokens                             | [[https://code.dennyzhang.com/bag-of-tokens][Leetcode: Bag of Tokens]]                             |
+|   5 | Two City Scheduling                       | [[https://code.dennyzhang.com/two-city-scheduling][Leetcode: Two City Scheduling]]                       |
+|   6 | Split Concatenated Strings                | [[https://code.dennyzhang.com/split-concatenated-strings][Leetcode: Split Concatenated Strings]]                |
+|   7 | Jump Game II                              | [[https://code.dennyzhang.com/jump-game-ii][Leetcode: Jump Game II]]                              |
+|   8 | Delete Columns to Make Sorted II          | [[https://code.dennyzhang.com/delete-columns-to-make-sorted-ii][Leetcode: Delete Columns to Make Sorted II]]          |
+#+TBLFM: $1=@-1$1+1;N
 
 See all greedy problems: [[https://code.dennyzhang.com/tag/greedy/][#greedy]]
 [display-posts tag="greedy" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

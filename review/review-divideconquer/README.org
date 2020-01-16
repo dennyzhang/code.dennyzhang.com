@@ -17,7 +17,7 @@ Divide And Conquer Problems
 See all divideconquer problems: [[https://code.dennyzhang.com/tag/divideconquer/][#divideconquer]]
 [display-posts tag="divideconquer" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

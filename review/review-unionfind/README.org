@@ -24,64 +24,65 @@ Key operations: union, find, etc.
 | Reference                | [[https://www.youtube.com/watch?v=wU6udHRIkcc][YouTube: Disjoint Sets Data Structure - Weighted Union and Collapsing Find]] |
 | Reference                | [[https://en.wikipedia.org/wiki/Disjoint-set_data_structure][Wikipedia: Disjoint-set data structure]]                                     |
 
+*Questions*
+| Num | Problem                                         | Summary                           |
+|-----+-------------------------------------------------+-----------------------------------|
+|   1 | Union find for weighted graph                   | [[https://code.dennyzhang.com/evaluate-division][Leetcode: Evaluate Division]]       |
+|   2 | Union find: connect groups and merge node count | [[https://code.dennyzhang.com/bricks-falling-when-hit][Leetcode: Bricks Falling When Hit]] |
+#+TBLFM: $1=@-1$1+1;N
+
 *Scenarios*
 Union-find applications involve manipulating objects of all types:
-| Name                                                   | Summary                                           |
-|--------------------------------------------------------+---------------------------------------------------|
-| Computers in a network                                 |                                                   |
-| Web pages on the Internet                              |                                                   |
-| Transistors in a computer chip                         |                                                   |
-| Variable name aliases                                  |                                                   |
-| Pixels in a digital photo                              |                                                   |
-| Metallic sites in a composite system                   |                                                   |
-| Minimum spanning tree of a graph - [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]] |                                                   |
-| What are the nodes and how to union nodes              | [[https://code.dennyzhang.com/largest-component-size-by-common-factor][Leetcode: Largest Component Size by Common Factor]] |
+| Name                                                   | Summary                                                            |
+|--------------------------------------------------------+--------------------------------------------------------------------|
+| Computers in a network                                 |                                                                    |
+| Web pages on the Internet                              |                                                                    |
+| Transistors in a computer chip                         |                                                                    |
+| Variable name aliases                                  |                                                                    |
+| Pixels in a digital photo                              |                                                                    |
+| Metallic sites in a composite system                   |                                                                    |
+| Minimum spanning tree of a graph - [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]] |                                                                    |
+| What are the nodes and how to union nodes              | [[https://code.dennyzhang.com/largest-component-size-by-common-factor][Leetcode: Largest Component Size by Common Factor]]                  |
+| What nodes are? What edges are?                        | [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]], [[https://code.dennyzhang.com/regions-cut-by-slashes][Leetcode: Regions Cut By Slashes]] |
+| Count node then initialize VS a fixed array            | [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]                     |
+| Maintain a counter for group count                     | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                                         |
+| Path compression to reduce levels                      | Keeps tree almost completely flat, and avoid tall trees            |
+| Rank based merge                                       | Balance by linking small tree below large one                      |
+| Collect result: add vs extract?                        | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
+| Get the nodes relationship quickly                     | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
+| How efficient unionfind vs DFS/BFS?                    |                                                                    |
+| Time and space complexity of unionfind?                |                                                                    |
 
 *Code Skeleton*
 #+BEGIN_SRC go
 // 1. Get node count. And initialize array with parent as itself
 // 2. Union: Connect two nodes, which is two groups essentially
 // 3. Find: find node's parent by value
-type UF struct {
+type DSU struct {
     parent []int
 }
 
-func constructor(size int) UF {
+func constructor(size int) DSU {
     parent := make([]int, size)
     for i, _ := range parent {
         parent[i] = i
     }
-    return UF{parent:parent}
+    return DSU{parent:parent}
 }
 
-func (uf *UF) union(x, y int) {
+func (dsu *DSU) union(x, y int) {
     // TODO: rank based merge
-    uf.parent[uf.find(y)] = uf.find(x)
+    dsu.parent[dsu.find(y)] = dsu.find(x)
 }
 
-func (uf *UF) find(x int) int {
+func (dsu *DSU) find(x int) int {
     // TODO: path compression
-    for uf.parent[x] != x {
-        x = uf.parent[x]
+    for dsu.parent[x] != x {
+        x = dsu.parent[x]
     }
     return x
 }
-#+END_SRC
-
-*Questions*
-| Name                                            | Example                                                            |
-|-------------------------------------------------+--------------------------------------------------------------------|
-| What nodes are? What edges are?                 | [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]], [[https://code.dennyzhang.com/regions-cut-by-slashes][Leetcode: Regions Cut By Slashes]] |
-| Count node then initialize VS a fixed array     | [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]                     |
-| Maintain a counter for group count              | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                                         |
-| Path compression to reduce levels               | Keeps tree almost completely flat, and avoid tall trees            |
-| Rank based merge                                | Balance by linking small tree below large one                      |
-| Collect result: add vs extract?                 | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
-| Get the nodes relationship quickly              | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
-| Union find for weighted graph                   | [[https://code.dennyzhang.com/evaluate-division][Leetcode: Evaluate Division]]                                        |
-| Union find: connect groups and merge node count | [[https://code.dennyzhang.com/bricks-falling-when-hit][Leetcode: Bricks Falling When Hit]]                                  |
-| How efficient unionfind vs DFS/BFS?             |                                                                    |
-| Time and space complexity of unionfind?         |                                                                    |
+#+End_src
 
 ---------------------------------------------------------------------
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
@@ -90,7 +91,7 @@ func (uf *UF) find(x int) int {
 See all unionfind tree problems: [[https://code.dennyzhang.com/tag/unionfind/][#unionfind]]
 [display-posts tag="unionfind" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

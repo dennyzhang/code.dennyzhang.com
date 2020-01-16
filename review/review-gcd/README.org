@@ -27,7 +27,7 @@ https://leetcode.com/problems/water-and-jug-problem/discuss/83715/Math-solution-
 See all gcd problems: [[https://code.dennyzhang.com/tag/gcd/][#gcd]]
 [display-posts tag="gcd" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

@@ -273,7 +273,7 @@ class Solution(object):
         return res
 #+END_SRC
 ---------------------------------------------------------------------
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

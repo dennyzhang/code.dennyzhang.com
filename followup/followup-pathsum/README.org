@@ -16,7 +16,7 @@ Path Sum problems for a binary tree
 See all series problems: [[https://code.dennyzhang.com/followup-pathsum/][#pathsum]]
 [display-posts tag="pathsum" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

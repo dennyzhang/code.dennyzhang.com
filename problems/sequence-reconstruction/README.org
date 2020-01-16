@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     topologicalsort, bfs, manydetails
+:type:     topologicalsort, bfs, manydetails, redo
 :END:
 ---------------------------------------------------------------------
 Sequence Reconstruction
@@ -68,6 +68,86 @@ Credits To: [[https://leetcode.com/problems/sequence-reconstruction/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/sequence-reconstruction
+// Basic Ideas: topological sort
+//
+//  Build the dependencies, and try to compose the graph
+//  There should be no ambiguous.
+//
+//  Notice: watch out for invalid input
+//      e.g, seqs: [[1,-9],[-9,-8],[-8,-9]]
+//  Watch out duplicate edges
+//      e.g, seqs: [[1,2],[1,2]]
+//  Watch out: missing seqs:
+//      e.g, org: [1], seqs: []
+//
+// Complexity: Time O(n+e), Space O(n+e)
+func sequenceReconstruction(org []int, seqs [][]int) bool {
+    indegrees := make([]int, len(org))
+    for i, _ := range indegrees {
+        indegrees[i] = -1
+    }
+
+    edges := map[int]map[int]bool{}
+    for _, seq := range seqs {
+        for _, n := range seq {
+            n--
+            if n<0 || n>=len(org) {
+                return false
+            }
+            // initialize the node
+            if indegrees[n] == -1 {
+                indegrees[n] = 0
+            }
+            if _, ok := edges[n]; !ok {
+                edges[n] = map[int]bool{}
+            }
+        }
+        for i:=0; i+1<len(seq); i++ {
+            n1, n2 := seq[i]-1, seq[i+1]-1
+            // avoid duplicate edges
+            if _, ok := edges[n1][n2]; !ok {
+                // n1->n2
+                indegrees[n2]++
+                edges[n1][n2] = true
+            }
+        }
+    }
+
+    res := []int{}
+    queue := []int{}
+    for i, v := range indegrees {
+        if v == 0 {
+            queue = append(queue, i)
+            res = append(res, i)
+        }
+    }
+
+    if len(queue) > 1 {
+        return false
+    }
+    
+    for len(queue) > 0 {
+        nexts := []int{}
+        for _, node := range queue {
+            for node2, _ := range edges[node] {
+                indegrees[node2]--
+                if indegrees[node2] == 0 {
+                    nexts = append(nexts, node2)
+                    res = append(res, node2)
+                }
+            }
+        }
+        queue = nexts
+        if len(queue) > 1 {
+            return false
+        }
+    }
+    return len(res) == len(org)
+}
+#+END_SRC
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/sequence-reconstruction

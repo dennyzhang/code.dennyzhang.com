@@ -21,7 +21,7 @@ Review Bucketsort code problems
 See all bucketsort problems: [[https://code.dennyzhang.com/tag/bucketsort/][#bucketsort]]
 [display-posts tag="bucketsort" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

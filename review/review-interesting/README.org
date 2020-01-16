@@ -140,7 +140,7 @@ for (id, tweetId) in self.tweet_dict[userId]:
 Misc:
 - One pass or two pass? [[https://code.dennyzhang.com/palindrome-permutation][Palindrome Permutation]]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

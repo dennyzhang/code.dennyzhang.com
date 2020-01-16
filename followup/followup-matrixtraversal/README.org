@@ -16,7 +16,7 @@ Matrix Traversal & Follow-up
 See all Tree Traversal problems: [[https://code.dennyzhang.com/tag/matrixtraversal/][#matrixtraversal]]
 [display-posts tag="matrixtraversal" posts_per_page="100" orderby="title"]
 
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

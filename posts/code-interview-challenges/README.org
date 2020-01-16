@@ -11,7 +11,7 @@ Challenges In Code Test Interviews
 - *No lint or sample tests are available*. You're on your own. So get used to whiteboard coding. Verify logic by pens and papers.
 - *Everything has to be done within 45 minutes*!
 ---------------------------------------------------------------------
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog_posts]].
+See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
 #+BEGIN_HTML
 <div style="overflow: hidden;">

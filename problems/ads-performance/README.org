@@ -34,7 +34,7 @@ A company is running Ads and wants to calculate the performance of each Ad.
 
 Performance of the Ad is measured using Click-Through Rate (CTR) where:
 
-[[image-blog:Leetcode: Ads Performance][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/ads-performance/formula.png]]
+[[image-blog:Leetcode: Ads Performance][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/ads-performance/ctrformula.png]]
 
 Write an SQL query to find the ctr of each Ad.
 
@@ -44,7 +44,7 @@ The query result format is in the following example:
 #+BEGIN_EXAMPLE
 Ads table:
 +-------+---------+---------+
-| ad_id | user_id | actions |
+| ad_id | user_id | action  |
 +-------+---------+---------+
 | 1     | 1       | Clicked |
 | 2     | 2       | Clicked |

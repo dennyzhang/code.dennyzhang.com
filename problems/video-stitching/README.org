@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, sorting, greedy, redo, classic, meetingconflict
+:type:     dynamicprogramming, sorting, greedy, meetingconflict, frogjump, slidingwindow, redo, classic
 :END:
 ---------------------------------------------------------------------
 Video Stitching
@@ -13,7 +13,7 @@ Video Stitching
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 You are given a series of video clips from a sporting event that lasted T seconds.  These video clips can be overlapping with each other and have varied lengths.
 
@@ -68,11 +68,54 @@ Credits To: [[https://leetcode.com/problems/video-stitching/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: greedy + sliding window
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/video-stitching
+// Basic Ideas: greedy + sliding window
+//
+//  For any undecided position, choose the longest one
+//
+// Complexity: Time O(n*log(n)), Space O(1)
+import "sort"
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func videoStitching(clips [][]int, T int) int {
+    sort.Slice(clips, func(i, j int) bool {
+        return clips[i][0]<clips[j][0]
+    })
+    fmt.Println(clips)
+    res := 0
+    start, end := 0, 0
+    i := 0
+    for ; start<T; {
+        // For point of start, check all the valid ranges
+        for ; i<len(clips) && clips[i][0] <= start; i++ {
+            end = max(end, clips[i][1])
+        }
+        // no way to cover the point of start
+        if start == end {
+            return -1
+        }
+        // Note: i won't change back
+        start = end
+        // start is another undecided position, so need to increase the range
+        res++
+    }
+    return res
+}
+#+END_SRC
+
 - Solution:
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/video-stitching
-
 // Basic Ideas: dynamic programming
 //
 //  For any undecided position, choose the longest one
