@@ -8,7 +8,7 @@
 Mini Parser
 ---------------------------------------------------------------------
 Similar Problems:
-- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Leetcode: Flatten Nested List Iterator]]
+- [[https://code.dennyzhang.com/flatten-nested-list-iterator][LeetCode: Flatten Nested List Iterator]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-stack][#stack]]

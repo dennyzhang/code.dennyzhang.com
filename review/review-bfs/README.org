@@ -19,9 +19,9 @@ Here we try to compile a list of inspiring BFS problems.
 | bfs first level/normal level/last level                                     | last level would be empty              |
 | bfs with priority queue                                                     |                                        |
 | When to collect result: before enque vs after deque                         |                                        |
-| Understand the physical meaning of level                                    | [[https://code.dennyzhang.com/as-far-from-land-as-possible][Leetcode: As Far from Land as Possible]] |
-| If original grid can be changed, visited bool array might be optional       | [[https://code.dennyzhang.com/as-far-from-land-as-possible][Leetcode: As Far from Land as Possible]] |
-| Some BFS may not necessarily need visited hashmap: say topological BFS sort | [[https://code.dennyzhang.com/course-schedule-ii][Leetcode: Course Schedule II]]           |
+| Understand the physical meaning of level                                    | [[https://code.dennyzhang.com/as-far-from-land-as-possible][LeetCode: As Far from Land as Possible]] |
+| If original grid can be changed, visited bool array might be optional       | [[https://code.dennyzhang.com/as-far-from-land-as-possible][LeetCode: As Far from Land as Possible]] |
+| Some BFS may not necessarily need visited hashmap: say topological BFS sort | [[https://code.dennyzhang.com/course-schedule-ii][LeetCode: Course Schedule II]]           |
 
 *Code Skeleton*
 #+BEGIN_SRC go

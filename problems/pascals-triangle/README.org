@@ -11,7 +11,7 @@ Given numRows, generate the first numRows of Pascal's triangle.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/pascals-triangle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/pascals-triangle-ii][Leetcode: Pascal's Triangle II]]
+- [[https://code.dennyzhang.com/pascals-triangle-ii][LeetCode: Pascal's Triangle II]]
 - All basic problems: [[https://code.dennyzhang.com/category/basic][basic]], [[https://code.dennyzhang.com/tag/codetemplate][codetemplate]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

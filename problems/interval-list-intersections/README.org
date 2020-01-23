@@ -11,8 +11,8 @@ Interval List Intersections
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/interval-list-intersections"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/insert-interval][Leetcode: Insert Interval]]
-- [[https://code.dennyzhang.com/merge-two-sorted-list][Leetcode: Merge Two Sorted Lists]]
+- [[https://code.dennyzhang.com/insert-interval][LeetCode: Insert Interval]]
+- [[https://code.dennyzhang.com/merge-two-sorted-list][LeetCode: Merge Two Sorted Lists]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]

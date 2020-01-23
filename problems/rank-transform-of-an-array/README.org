@@ -1,0 +1,97 @@
+* LeetCode: Rank Transform of an Array                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Rank Transform of an Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/rank-transform-of-an-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given an array of integers arr, replace each element with its rank.
+
+The rank represents how large the element is. The rank has the following rules:
+
+- Rank is an integer starting from 1.
+- The larger the element, the larger the rank. If two elements are equal, their rank must be the same.
+- Rank should be as small as possible.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [40,10,20,30]
+Output: [4,1,2,3]
+Explanation: 40 is the largest element. 10 is the smallest. 20 is the second smallest. 30 is the third smallest.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [100,100,100]
+Output: [1,1,1]
+Explanation: Same elements share the same rank.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [37,12,28,9,100,56,80,5,12]
+Output: [5,3,4,2,8,6,7,1,3]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 0 <= arr.length <= 10^5
+- -10^9 <= arr[i] <= 10^9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/rank-transform-of-an-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/rank-transform-of-an-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/rank-transform-of-an-array
+// Basic Ideas: sort
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+func arrayRankTransform(arr []int) []int {
+    if len(arr) == 0 {
+        return []int{}
+    }
+    m := map[int]int{}
+    nums := []int{}
+    for _, v := range arr {
+        if _, ok := m[v]; !ok {
+            m[v] = 0
+            nums = append(nums, v)
+        }
+    }
+    sort.Ints(nums)
+
+    for i, v := range nums {
+        m[v] = i+1
+    }
+
+    res := make([]int, len(arr))
+    for i, v := range arr {
+        res[i] = m[v]
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

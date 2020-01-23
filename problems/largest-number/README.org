@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     manydetails, constructstring
+:type:     manydetails, constructstring, string
 :END:
 ---------------------------------------------------------------------
 Given a list of non negative integers, arrange them such that they form the largest number.
@@ -13,7 +13,7 @@ Given a list of non negative integers, arrange them such that they form the larg
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/followup-constructstring][#constructstring]]
+- Tag: [[https://code.dennyzhang.com/review-manydetails][#manydetails]], [[https://code.dennyzhang.com/followup-constructstring][#constructstring]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 Given a list of non negative integers, arrange them such that they form the largest number.
 
@@ -27,6 +27,34 @@ Credits To: [[https://leetcode.com/problems/largest-number/description/][leetcod
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/largest-number
+// Basic Ideas: sort
+//
+//   30, 34
+//   34, 342
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+func largestNumber(nums []int) string {
+    numsList := make([]string, len(nums))
+    for i, n := range nums {
+        numsList[i] = strconv.Itoa(n)
+    }
+
+    sort.Slice(numsList, func(i, j int) bool {
+        return numsList[i]+numsList[j] > numsList[j]+numsList[i]
+    })
+
+    res := strings.Join(numsList, "")
+    // remove leading 0s: [0, 0]
+    res = strings.TrimLeft(res, "0")
+    if res == "" {
+        res = "0"
+    }
+    return res
+}
+#+END_SRC
+
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/largest-number
 ## Basic Ideas: Quick sort list with customized compare logic. Then Concat them as one.

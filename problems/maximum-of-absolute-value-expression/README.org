@@ -11,6 +11,7 @@ Maximum of Absolute Value Expression
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-of-absolute-value-expression"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/reverse-subarray-to-maximize-array-value][LeetCode: Reverse Subarray To Maximize Array Value]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
@@ -65,25 +66,35 @@ Leave me comments, if you have better ways to solve.
 //  But this turns out will not help to speed up the search
 //
 // Complexity: Time O(n), Space O(1)
+// Basic Ideas: math
+//
+//  max(|arr1[i] - arr1[j]| + |arr2[i] - arr2[j]| + |i - j|)
+//      max(|(arr1[i]+arr2[i]+i)-(arr1[j]+arr2[j]+j|),
+//          |(arr1[i]+arr2[i]-i)-(arr1[j]+arr2[j]-j)|,
+//          |(arr1[i]-arr2[i]+i)-(arr1[j]-arr2[j]+j)|,
+//          |(arr1[i]-arr2[i]-i)-(arr1[j]-arr2[j]-j)|)
+//
+// Complexity: Time O(n), Space O(1)
 func maxAbsValExpr(arr1 []int, arr2 []int) int {
-    sl := []int{1<<31-1, 1<<31-1, 1<<31-1, 1<<31-1}
-    bl := []int{-1<<31, -1<<31, -1<<31, -1<<31}
-    res := -1<<31
-    for i:=0; i<len(arr1); i++ {
-        l := []int{arr1[i]+arr2[i]+i,
-                   arr1[i]+arr2[i]-i,
-                   arr1[i]-arr2[i]+i,
-                   arr1[i]-arr2[i]-i}
-        for j:=0; j<4; j++ {
-            if l[j] < sl[j] {
-                sl[j] = l[j]
+    smalls := []int{1<<32-1, 1<<32-1, 1<<32-1, 1<<32-1}
+    bigs := []int{-1<<32, -1<<32, -1<<32, -1<<32}
+    for i, _ := range arr1 {
+        for j, v := range []int{arr1[i]+arr2[i]+i, 
+                               arr1[i]+arr2[i]-i,
+                               arr1[i]-arr2[i]+i,
+                                arr1[i]-arr2[i]-i} {
+            if v < smalls[j] {
+                smalls[j] = v
             }
-            if l[j] > bl[j] {
-                bl[j] = l[j]
+            if v > bigs[j] {
+                bigs[j] = v
             }
-            if res < (bl[j]-sl[j]) {
-               res = bl[j]-sl[j]
-            }
+        }
+    }
+    res := 0
+    for j:=0; j<=3; j++ {
+        if bigs[j]-smalls[j] > res {
+            res = bigs[j]-smalls[j]
         }
     }
     return res

@@ -11,7 +11,7 @@ Meeting Rooms II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/meeting-rooms-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/car-pooling][Leetcode: Car Pooling]]
+- [[https://code.dennyzhang.com/car-pooling][LeetCode: Car Pooling]]
 - [[https://code.dennyzhang.com/meeting-rooms][Meeting Rooms]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

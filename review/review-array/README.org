@@ -21,6 +21,17 @@ See all array tree problems: [[https://code.dennyzhang.com/tag/array/][#array]]
 <div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 #+END_HTML
+
+| Num | Problem                      | Summary                             |
+|-----+------------------------------+-------------------------------------|
+|   1 | Transpose Matrix             | [[https://code.dennyzhang.com/transpose-matrix][LeetCode: Transpose Matrix]]          |
+|   2 | Largest 1-Bordered Square    | [[https://code.dennyzhang.com/largest-1-bordered-square][LeetCode: Largest 1-Bordered Square]] |
+|   3 | Alphabet Board Path          | [[https://code.dennyzhang.com/alphabet-board-path][LeetCode: Alphabet Board Path]]       |
+|   4 | Set Mismatch                 | [[https://code.dennyzhang.com/set-mismatch][LeetCode: Set Mismatch]]              |
+|   5 | Majority Element             | [[https://code.dennyzhang.com/majority-element][LeetCode: Majority Element]]          |
+|   6 | [[https://www.geeksforgeeks.org/counting-inversions/][Count Inversions in an array]] |                                     |
+#+TBLFM: $1=@-1$1+1;N
+
 ** misc                                                            :noexport:
 http://rerun.me/2012/08/29/find-continuous-subarray-with-maximum-sum-problem-kadane-s-algorithm/
 * org-mode configuration                                           :noexport:

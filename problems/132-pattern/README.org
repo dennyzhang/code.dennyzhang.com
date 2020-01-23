@@ -12,7 +12,7 @@ Check whether 132 pattern exists in the given array
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Split Array into Consecutive Subsequences]]
-- [[https://code.dennyzhang.com/beautiful-array][Leetcode: Beautiful Array]]
+- [[https://code.dennyzhang.com/beautiful-array][LeetCode: Beautiful Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/followup-wiggle][#wiggle]], [[https://code.dennyzhang.com/followup-constructarray][#constructarray]]

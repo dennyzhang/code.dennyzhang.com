@@ -17,8 +17,8 @@ Key operations: insert, search, prefix, getHeight, etc.
 |-----------------------------------+------------------------------------------------------------|
 | children map[byte]*Trie           | Use pointer                                                |
 | Common Trie operations            | Insert/Search/StartsWith                                   |
-| Sometimes no need to track isLeaf | [[https://code.dennyzhang.com/word-squares][Leetcode: Word Squares]]                                     |
-| Trie for inverted index           | [[https://code.dennyzhang.com/stream-of-characters][Leetcode: Stream of Characters]]                             |
+| Sometimes no need to track isLeaf | [[https://code.dennyzhang.com/word-squares][LeetCode: Word Squares]]                                     |
+| Trie for inverted index           | [[https://code.dennyzhang.com/stream-of-characters][LeetCode: Stream of Characters]]                             |
 
 Suffix tree: [[https://en.wikipedia.org/wiki/Suffix_tree][wikipedia link]]  
 | Name                                                       | Summary                          |
@@ -32,9 +32,9 @@ Suffix tree: [[https://en.wikipedia.org/wiki/Suffix_tree][wikipedia link]]
 *Questions*
 | Num | Problem                                            | Summary                                           |
 |-----+----------------------------------------------------+---------------------------------------------------|
-|   1 | Extra datastructure in trie to save caculation     | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]]                          |
-|   2 | Trie for bit manipulation                          | [[https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array/][Leetcode: Maximum XOR of Two Numbers in an Array]]. |
-|   3 | Fuzzy match for trie tree: children & isLeaf mixed | [[https://code.dennyzhang.com/implement-magic-dictionary/][Leetcode: Implement Magic Dictionary]]              |
+|   1 | Extra datastructure in trie to save caculation     | [[https://code.dennyzhang.com/word-search-ii][LeetCode: Word Search II]]                          |
+|   2 | Trie for bit manipulation                          | [[https://code.dennyzhang.com/maximum-xor-of-two-numbers-in-an-array/][LeetCode: Maximum XOR of Two Numbers in an Array]]. |
+|   3 | Fuzzy match for trie tree: children & isLeaf mixed | [[https://code.dennyzhang.com/implement-magic-dictionary/][LeetCode: Implement Magic Dictionary]]              |
 #+TBLFM: $1=@-1$1+1;N
 
 *Scenarios*

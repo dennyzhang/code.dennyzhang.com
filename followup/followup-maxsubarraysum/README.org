@@ -16,7 +16,7 @@ Maximum subarray problem
 *Questions*
 | Name                                        | Example                               |
 |---------------------------------------------+---------------------------------------|
-| Subarray is contiguous. Drop the first half | [[https://code.dennyzhang.com/maximum-average-subarray-ii][Leetcode: Maximum Average Subarray II]] |
+| Subarray is contiguous. Drop the first half | [[https://code.dennyzhang.com/maximum-average-subarray-ii][LeetCode: Maximum Average Subarray II]] |
 
 See all series problems: [[https://code.dennyzhang.com/followup-maxsubarraysum/][#maxsubarraysum]]
 [display-posts tag="maxsubarraysum" posts_per_page="100" orderby="title"]

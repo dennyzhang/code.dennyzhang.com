@@ -13,7 +13,7 @@ Split Array into Consecutive Subsequences
 Similar Problems:
 - [[https://code.dennyzhang.com/132-pattern][132 Pattern]]
 - [[https://code.dennyzhang.com/sum-of-subarray-minimums][Sum of Subarray Minimums]]
-- [[https://code.dennyzhang.com/divide-array-into-increasing-sequences][Leetcode: Divide Array Into Increasing Sequences]]
+- [[https://code.dennyzhang.com/divide-array-into-increasing-sequences][LeetCode: Divide Array Into Increasing Sequences]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/followup-subsequence][#subsequence]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/followup-splitarray][#splitarray]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-game][#game]]

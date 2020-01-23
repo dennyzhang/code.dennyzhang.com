@@ -11,7 +11,7 @@ Check If a Number Is Majority Element in a Sorted Array
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/is-a-a-majority-element"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/majority-element][Leetcode: Majority Element]]
+- [[https://code.dennyzhang.com/majority-element][LeetCode: Majority Element]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]

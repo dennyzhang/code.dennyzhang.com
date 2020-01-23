@@ -11,7 +11,7 @@ Arithmetic Slices
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/arithmetic-slices"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/arithmetic-slices-ii-subsequence][Leetcode: Arithmetic Slices II - Subsequence]]
+- [[https://code.dennyzhang.com/arithmetic-slices-ii-subsequence][LeetCode: Arithmetic Slices II - Subsequence]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/review-combination][#combination]]

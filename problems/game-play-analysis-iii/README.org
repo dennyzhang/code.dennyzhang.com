@@ -11,10 +11,10 @@ Game Play Analysis III
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/game-play-analysis-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/game-play-analysis-i][Leetcode: Game Play Analysis I]]
-- [[https://code.dennyzhang.com/game-play-analysis-ii][Leetcode: Game Play Analysis II]]
-- [[https://code.dennyzhang.com/game-play-analysis-iii][Leetcode: Game Play Analysis III]]
-- [[https://code.dennyzhang.com/game-play-analysis-iv][Leetcode: Game Play Analysis IV]]
+- [[https://code.dennyzhang.com/game-play-analysis-i][LeetCode: Game Play Analysis I]]
+- [[https://code.dennyzhang.com/game-play-analysis-ii][LeetCode: Game Play Analysis II]]
+- [[https://code.dennyzhang.com/game-play-analysis-iii][LeetCode: Game Play Analysis III]]
+- [[https://code.dennyzhang.com/game-play-analysis-iv][LeetCode: Game Play Analysis IV]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

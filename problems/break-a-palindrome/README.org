@@ -1,0 +1,78 @@
+* LeetCode: Break a Palindrome                                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     palindrome, string, greedy
+:END:
+---------------------------------------------------------------------
+Break a Palindrome
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/break-a-palindrome"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Given a palindromic string palindrome, replace exactly one character by any lowercase English letter so that the string becomes the lexicographically smallest possible string that isn't a palindrome.
+
+After doing so, return the final string.  If there is no way to do so, return the empty string.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: palindrome = "abccba"
+Output: "aaccba"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: palindrome = "a"
+Output: ""
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= palindrome.length <= 1000
+- palindrome consists of only lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/break-a-palindrome][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/break-a-palindrome/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/break-a-palindrome
+// Basic Ideas: greedy
+//
+// Complexity: Time O(K), Space O(1)
+//    K =  len(str)
+func breakPalindrome(palindrome string) string {
+    if len(palindrome) == 1 {
+        return ""
+    }
+    bytes := []byte(palindrome)
+    // Note: shouldn't change the middle, since it will still be a palindrome
+    // left: change to 'a'
+    for i:=0; i<len(bytes)/2; i++ {
+        if bytes[i] != 'a' {
+            bytes[i] = 'a'
+            return string(bytes)
+        }
+    }
+    // all aaXaa
+    bytes[len(bytes)-1] = 'b'
+    return string(bytes)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

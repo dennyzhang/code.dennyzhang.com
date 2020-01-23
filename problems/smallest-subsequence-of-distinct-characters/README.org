@@ -11,7 +11,7 @@ Smallest Subsequence of Distinct Characters
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-subsequence-of-distinct-characters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/remove-duplicate-letters][Leetcode: Remove Duplicate Letters]]
+- [[https://code.dennyzhang.com/remove-duplicate-letters][LeetCode: Remove Duplicate Letters]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/followup-constructstring][#constructstring]]

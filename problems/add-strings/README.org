@@ -11,7 +11,7 @@ Add 2 strings of big numbers
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/add-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/add-to-array-form-of-integer][Leetcode: Add to Array-Form of Integer]]
+- [[https://code.dennyzhang.com/add-to-array-form-of-integer][LeetCode: Add to Array-Form of Integer]]
 - [[https://code.dennyzhang.com/k-decimal-addition][LintCode: K Decimal Addition]]
 - [[https://code.dennyzhang.com/additive-number][Additive Number]]
 ---------------------------------------------------------------------

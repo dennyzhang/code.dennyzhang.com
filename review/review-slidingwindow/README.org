@@ -22,12 +22,12 @@ Slidingwindow Problems
 *Questions*
 | Num | Problem                                                   | Summary                                                  |
 |-----+-----------------------------------------------------------+----------------------------------------------------------|
-|   1 | Sliding window with fixed size                            | [[https://code.dennyzhang.com/find-all-anagrams-in-a-string][Leetcode: Find All Anagrams in a String]]                  |
-|   2 | Sliding window with non-decreasing size                   | [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]                       |
-|   3 | How to initialize the time window?                        | [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][Leetcode: Minimum Swaps to Group All 1's Together]]        |
-|   4 | Sliding window with non-decreasing size                   | [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]                       |
-|   5 | Move two pointers: two loop vs One loop                   | [[https://code.dennyzhang.com/longest-substring-without-repeating-characters][Leetcode: Longest Substring Without Repeating Characters]] |
-|   6 | Inspiring sliding window problem                          | [[https://code.dennyzhang.com/moving-stones-until-consecutive-ii][Leetcode: Moving Stones Until Consecutive II]]             |
+|   1 | Sliding window with fixed size                            | [[https://code.dennyzhang.com/find-all-anagrams-in-a-string][LeetCode: Find All Anagrams in a String]]                  |
+|   2 | Sliding window with non-decreasing size                   | [[https://code.dennyzhang.com/max-consecutive-ones-iii][LeetCode: Max Consecutive Ones III]]                       |
+|   3 | How to initialize the time window?                        | [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][LeetCode: Minimum Swaps to Group All 1's Together]]        |
+|   4 | Sliding window with non-decreasing size                   | [[https://code.dennyzhang.com/max-consecutive-ones-iii][LeetCode: Max Consecutive Ones III]]                       |
+|   5 | Move two pointers: two loop vs One loop                   | [[https://code.dennyzhang.com/longest-substring-without-repeating-characters][LeetCode: Longest Substring Without Repeating Characters]] |
+|   6 | Inspiring sliding window problem                          | [[https://code.dennyzhang.com/moving-stones-until-consecutive-ii][LeetCode: Moving Stones Until Consecutive II]]             |
 |   7 | Sliding window with adjustable size                       |                                                          |
 |   8 | Move pointer1 to match the other, or the other way around |                                                          |
 #+TBLFM: $1=@-1$1+1;N

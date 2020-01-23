@@ -16,14 +16,14 @@ Interval Problems
 |------------------------------------------------------------------+-------------------------------------------------------------|
 | Two ways to check whether two intervals overlap                  | _min(y1, y2) > max(x1, x2)_; _x1<y2 && x2>y1_               |
 | Two types of intervals                                           | =[x, y]= vs =[x, y)=                                        |
-| Interval problems usually solved by heap or greedy algorithms    | [[https://code.dennyzhang.com/car-pooling][Leetcode: Car Pooling]]                                       |
+| Interval problems usually solved by heap or greedy algorithms    | [[https://code.dennyzhang.com/car-pooling][LeetCode: Car Pooling]]                                       |
 | General idea of overlapping interval problems                    | Sort intervals, maintain an active set, loop each intervals |
-| Sort by point_x is common. But sometimes need to sort by point_y | [[https://code.dennyzhang.com/minimum-number-of-arrows-to-burst-balloons][Leetcode: Minimum Number of Arrows to Burst Balloons]]        |
-| Typical problems: Interval conflict - Detect double booking      | [[https://code.dennyzhang.com/my-calendar-i][Leetcode: My Calendar I]]                                     |
-| Typical problems: Interval conflict - Detect triple booking      | [[https://code.dennyzhang.com/my-calendar-ii][Leetcode: My Calendar II]]                                    |
-| Typical problems: Interval conflict - Detect K booking           | [[https://code.dennyzhang.com/my-calendar-iii][Leetcode: My Calendar III]], [[https://code.dennyzhang.com/car-pooling][Leetcode: Car Pooling]]            |
-| Typical problems: Interval List Intersections                    | [[https://code.dennyzhang.com/interval-list-intersections][Leetcode: Interval List Intersections]]                       |
-| Typical problems: Interval List Union                            | [[https://code.dennyzhang.com/insert-interval][Leetcode: Insert Interval]]                                   |
+| Sort by point_x is common. But sometimes need to sort by point_y | [[https://code.dennyzhang.com/minimum-number-of-arrows-to-burst-balloons][LeetCode: Minimum Number of Arrows to Burst Balloons]]        |
+| Typical problems: Interval conflict - Detect double booking      | [[https://code.dennyzhang.com/my-calendar-i][LeetCode: My Calendar I]]                                     |
+| Typical problems: Interval conflict - Detect triple booking      | [[https://code.dennyzhang.com/my-calendar-ii][LeetCode: My Calendar II]]                                    |
+| Typical problems: Interval conflict - Detect K booking           | [[https://code.dennyzhang.com/my-calendar-iii][LeetCode: My Calendar III]], [[https://code.dennyzhang.com/car-pooling][LeetCode: Car Pooling]]            |
+| Typical problems: Interval List Intersections                    | [[https://code.dennyzhang.com/interval-list-intersections][LeetCode: Interval List Intersections]]                       |
+| Typical problems: Interval List Union                            | [[https://code.dennyzhang.com/insert-interval][LeetCode: Insert Interval]]                                   |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

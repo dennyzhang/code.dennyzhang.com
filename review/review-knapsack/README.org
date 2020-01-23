@@ -16,11 +16,11 @@ Review knapsack code problems
 *Basic Abstractions*
 | Name                                        | Summary                                                                        |
 |---------------------------------------------+--------------------------------------------------------------------------------|
-| 0/1 Knapsack with one bag                   | For each item, take or don't take. [[https://code.dennyzhang.com/coin-change][Leetcode: Coin Change]]                       |
-| 0/1 Knapsack with 2 bags                    | For each item, either put to bag1, bag2 or drop. [[https://code.dennyzhang.com/tallest-billboard][Leetcode: Tallest Billboard]]   |
-| 0/1 Knapsack with 4 bags                    | [[https://code.dennyzhang.com/matchsticks-to-square][Leetcode: Matchsticks to Square]]                                                |
-| Complete knapsack problem                   | Unlike 0/1 Knapsack, items can be used multiple times. [[https://code.dennyzhang.com/coin-change-2][Leetcode: Coin Change 2]] |
-| Complete knapsack problem in high dimension | [[https://code.dennyzhang.com/shopping-offers][Leetcode: Shopping Offers]]                                                      |
+| 0/1 Knapsack with one bag                   | For each item, take or don't take. [[https://code.dennyzhang.com/coin-change][LeetCode: Coin Change]]                       |
+| 0/1 Knapsack with 2 bags                    | For each item, either put to bag1, bag2 or drop. [[https://code.dennyzhang.com/tallest-billboard][LeetCode: Tallest Billboard]]   |
+| 0/1 Knapsack with 4 bags                    | [[https://code.dennyzhang.com/matchsticks-to-square][LeetCode: Matchsticks to Square]]                                                |
+| Complete knapsack problem                   | Unlike 0/1 Knapsack, items can be used multiple times. [[https://code.dennyzhang.com/coin-change-2][LeetCode: Coin Change 2]] |
+| Complete knapsack problem in high dimension | [[https://code.dennyzhang.com/shopping-offers][LeetCode: Shopping Offers]]                                                      |
 | Group knapsack problem                      | Knapsack with selection from distinct groups                                   |
 
 See all knapsack problems: [[https://code.dennyzhang.com/tag/knapsack/][#knapsack]]

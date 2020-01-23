@@ -13,7 +13,7 @@ Course Schedule
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- [[https://code.dennyzhang.com/course-schedule-ii][Leetcode: Course Schedule II]]
+- [[https://code.dennyzhang.com/course-schedule-ii][LeetCode: Course Schedule II]]
 - Tag: [[https://code.dennyzhang.com/review-topologicalsort][#topologicalsort]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 There are a total of n courses you have to take, labeled from 0 to n - 1.

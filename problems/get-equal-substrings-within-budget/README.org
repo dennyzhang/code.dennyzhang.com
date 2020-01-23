@@ -13,8 +13,8 @@ Get Equal Substrings Within Budget
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]
-- [[https://code.dennyzhang.com/maximum-size-subarray-sum-equals-k][Leetcode: Maximum Size Subarray Sum Equals k]]
+- [[https://code.dennyzhang.com/max-consecutive-ones-iii][LeetCode: Max Consecutive Ones III]]
+- [[https://code.dennyzhang.com/maximum-size-subarray-sum-equals-k][LeetCode: Maximum Size Subarray Sum Equals k]]
 - Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 You are given two strings s and t of the same length. You want to change s to t. Changing the i-th character of s to i-th character of t costs |s[i] - t[i]| that is, the absolute difference between the ASCII values of the characters.

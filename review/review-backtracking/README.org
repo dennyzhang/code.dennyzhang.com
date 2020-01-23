@@ -16,10 +16,10 @@ Backtracking Problems
 *Questions*
 | Name                                             | Summary                             |
 |--------------------------------------------------+-------------------------------------|
-| Permutation vs Combination                       | [[https://code.dennyzhang.com/campus-bikes-ii][Leetcode: Campus Bikes II]]           |
-| Permutation: All elements must take              | [[https://code.dennyzhang.com/pyramid-transition-matrix][Leetcode: Pyramid Transition Matrix]] |
-| Combination: All elements can take or don't take | [[https://code.dennyzhang.com/subsets-ii][Leetcode: Subsets II]]                |
-| Define dfs backtracking function                 | [[https://code.dennyzhang.com/verbal-arithmetic-puzzle][Leetcode: Verbal Arithmetic Puzzle]]  |
+| Permutation vs Combination                       | [[https://code.dennyzhang.com/campus-bikes-ii][LeetCode: Campus Bikes II]]           |
+| Permutation: All elements must take              | [[https://code.dennyzhang.com/pyramid-transition-matrix][LeetCode: Pyramid Transition Matrix]] |
+| Combination: All elements can take or don't take | [[https://code.dennyzhang.com/subsets-ii][LeetCode: Subsets II]]                |
+| Define dfs backtracking function                 | [[https://code.dennyzhang.com/verbal-arithmetic-puzzle][LeetCode: Verbal Arithmetic Puzzle]]  |
 
 - Use backtracking to try all possible candidates
 

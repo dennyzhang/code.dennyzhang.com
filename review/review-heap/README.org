@@ -26,10 +26,10 @@ Key operations: find-min, get-min, insert, etc.
 *Questions*
 | Num | Problem             | Summary                       |
 |-----+---------------------+-------------------------------|
-|   1 | Meeting Rooms II    | [[https://code.dennyzhang.com/meeting-rooms-ii][Leetcode: Meeting Rooms II]]    |
-|   2 | Task Scheduler      | [[https://code.dennyzhang.com/task-scheduler][Leetcode: Task Scheduler]]      |
-|   3 | Last Stone Weight   | [[https://code.dennyzhang.com/last-stone-weight][Leetcode: Last Stone Weight]]   |
-|   4 | The Skyline Problem | [[https://code.dennyzhang.com/the-skyline-problem][Leetcode: The Skyline Problem]] |
+|   1 | Meeting Rooms II    | [[https://code.dennyzhang.com/meeting-rooms-ii][LeetCode: Meeting Rooms II]]    |
+|   2 | Task Scheduler      | [[https://code.dennyzhang.com/task-scheduler][LeetCode: Task Scheduler]]      |
+|   3 | Last Stone Weight   | [[https://code.dennyzhang.com/last-stone-weight][LeetCode: Last Stone Weight]]   |
+|   4 | The Skyline Problem | [[https://code.dennyzhang.com/the-skyline-problem][LeetCode: The Skyline Problem]] |
 #+TBLFM: $1=@-1$1+1;N
 
 *Code Skeleton*

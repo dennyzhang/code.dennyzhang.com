@@ -23,6 +23,31 @@ Credits To: [[https://leetcode.com/problems/contains-duplicate-iii/description/]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: Brute force
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/contains-duplicate-iii
+// Basic Ideas: Brute force
+//
+// Complexity: Time O(n*k), Space O(1)
+func abs(x int) int {
+    if x<0 {
+        return -x
+    }
+    return x
+}
+
+func containsNearbyAlmostDuplicate(nums []int, k int, t int) bool {
+    for i:=0; i<len(nums); i++ {
+        for j:=1; j<=k && i+j<len(nums); j++ {
+            if abs(nums[i+j]-nums[i]) <= t {
+                return true
+            }
+        }
+    }
+    return false
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/contains-duplicate-iii

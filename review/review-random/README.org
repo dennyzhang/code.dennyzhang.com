@@ -13,9 +13,9 @@ Random Problems
 
 | Name                                                | Example                                    |
 |-----------------------------------------------------+--------------------------------------------|
-| [[https://en.wikipedia.org/wiki/Rejection_sampling][Rejection Sampling]]: Drop values out of bounds       | [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]] |
+| [[https://en.wikipedia.org/wiki/Rejection_sampling][Rejection Sampling]]: Drop values out of bounds       | [[https://code.dennyzhang.com/implement-rand10-using-rand7][LeetCode: Implement Rand10() Using Rand7()]] |
 | [[https://en.wikipedia.org/wiki/Rejection_sampling][Rejection Sampling]]: Create 2 random events from one | [[https://en.wikipedia.org/wiki/Fair_coin#Fair_results_from_a_biased_coin][Fair results from a biased coin]]            |
-| [[https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle][Fisher-Yates shuffle]]                                | [[https://code.dennyzhang.com/shuffle-an-array][Leetcode: Shuffle an Array]]                 |
+| [[https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle][Fisher-Yates shuffle]]                                | [[https://code.dennyzhang.com/shuffle-an-array][LeetCode: Shuffle an Array]]                 |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

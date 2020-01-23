@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     slidingwindow, codetemplate, findduplicates
+:type:     slidingwindow, codetemplate, findduplicates, hashmap
 :END:
 ---------------------------------------------------------------------
 Contains Duplicate II
@@ -13,7 +13,7 @@ Contains Duplicate II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-findduplicates][#findduplicates]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-findduplicates][#findduplicates]], [[https://code.dennyzhang.com/followup-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
 
@@ -23,40 +23,54 @@ Credits To: [[https://leetcode.com/problems/contains-duplicate-ii/description/][
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: hashmap + sliding window to optimize space
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/contains-duplicate-ii
+// Basic Ideas: hashmap
+//
+//  For each the same value, find the difference in positions
+//
+// Complexity: Time O(n), Space O(n)
+func containsNearbyDuplicate(nums []int, k int) bool {
+    m := map[int]int{}
+    for i, v := range nums {
+        // hashmap only store values in the sliding window of k
+        if _, ok := m[v]; ok {
+            return true
+        }
+        m[v] = i
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/contains-duplicate-ii
-## Basic Ideas: sliding window
-##              Keep a window of k+1 elements. Maintain a Set with the window
-##              Move the window towards the end.
-##              If found an existing
-##
-## Complexity: Time O(n), Space O(k)
-class Solution(object):
-    def containsNearbyDuplicate(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: bool
-        """
-        length = len(nums)
-        if length <= 1: return False
-        if k == 0: return False
-        s = set([])
+        // cleanup items out of sliding window
+        if i-k>=0 {
+            delete(m, nums[i-k])    
+        }
+    }
+    return false
+}
+#+END_SRC
 
-        for i in xrange(length):
-            if i > k:
-                # sliding window shall have k+1 element
-                s.remove(nums[i-k-1])
-            if nums[i] in s:
-                return True
-            s.add(nums[i])
-        return False
-
-# s = Solution()
-# print s.containsNearbyDuplicate([-1, -1], 1) # True
-# print s.containsNearbyDuplicate([99, 99], 1) # True
-# print s.containsNearbyDuplicate([1, 2, 1], 0) # False
+- Solution: hashmap
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/contains-duplicate-ii
+// Basic Ideas: hashmap
+//
+//  For each the same value, find the difference in positions
+//
+// Complexity: Time O(n), Space O(n)
+func containsNearbyDuplicate(nums []int, k int) bool {
+    m := map[int]int{}
+    for i, v := range nums {
+        if _, ok := m[v]; !ok {
+            m[v] = i
+        } else {
+            if i-m[v] <= k {
+                return true
+            }
+        }
+        m[v] = i
+    }
+    return false
+}
 #+END_SRC
 
 #+BEGIN_HTML

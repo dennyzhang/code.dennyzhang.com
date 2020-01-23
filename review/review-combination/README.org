@@ -12,7 +12,7 @@ Combinations and Permutations Problems
 #+END_HTML
 
 *Sample Problems:*
-- [[https://code.dennyzhang.com/combination-sum-iii][Leetcode: Combination Sum III]]
+- [[https://code.dennyzhang.com/combination-sum-iii][LeetCode: Combination Sum III]]
 
 *Code Skeleton:*
 

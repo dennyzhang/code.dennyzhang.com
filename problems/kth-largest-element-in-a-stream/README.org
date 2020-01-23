@@ -11,7 +11,7 @@ Kth Largest Element in a Stream
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/kth-largest-element-in-a-stream"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/kth-largest-element-in-an-array][Leetcode: Kth Largest Element in an Array]]
+- [[https://code.dennyzhang.com/kth-largest-element-in-an-array][LeetCode: Kth Largest Element in an Array]]
 - [[https://code.dennyzhang.com/tag/heap][Tag: #heap]]
 ---------------------------------------------------------------------
 Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.

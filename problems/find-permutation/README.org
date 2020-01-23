@@ -11,8 +11,8 @@ Find Permutation
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-permutation"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/next-permutation][Leetcode: Next Permutation]]
-- [[https://code.dennyzhang.com/positions-of-large-groups][Leetcode: Positions of Large Groups]]
+- [[https://code.dennyzhang.com/next-permutation][LeetCode: Next Permutation]]
+- [[https://code.dennyzhang.com/positions-of-large-groups][LeetCode: Positions of Large Groups]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/tag/padplaceholder][#padplaceholder]]

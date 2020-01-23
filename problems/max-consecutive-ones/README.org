@@ -11,10 +11,10 @@ Max Consecutive Ones
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-consecutive-ones-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/max-consecutive-ones][Leetcode: Max Consecutive Ones]]
-- [[https://code.dennyzhang.com/max-consecutive-ones-ii][Leetcode: Max Consecutive Ones II]]
-- [[https://code.dennyzhang.com/max-consecutive-ones-iii][Leetcode: Max Consecutive Ones III]]
-- [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][Leetcode: Minimum Swaps to Group All 1's Together]]
+- [[https://code.dennyzhang.com/max-consecutive-ones][LeetCode: Max Consecutive Ones]]
+- [[https://code.dennyzhang.com/max-consecutive-ones-ii][LeetCode: Max Consecutive Ones II]]
+- [[https://code.dennyzhang.com/max-consecutive-ones-iii][LeetCode: Max Consecutive Ones III]]
+- [[https://code.dennyzhang.com/minimum-swaps-to-group-all-1s-together][LeetCode: Minimum Swaps to Group All 1's Together]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-array][#array]]

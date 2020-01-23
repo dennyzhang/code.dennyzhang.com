@@ -1,0 +1,80 @@
+* LeetCode: Sort the Matrix Diagonally                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Sort the Matrix Diagonally
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-the-matrix-diagonally"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given a m * n matrix mat of integers, sort it diagonally in ascending order from the top-left to the bottom-right then return the sorted array.
+ 
+Example 1:
+[[image-blog:LeetCode: Sort the Matrix Diagonally][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/sort-the-matrix-diagonally/1.png]]
+#+BEGIN_EXAMPLE
+Input: mat = [[3,3,1,1],[2,2,1,2],[1,1,1,2]]
+Output: [[1,1,1,1],[1,2,2,2],[1,2,3,3]]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- m == mat.length
+- n == mat[i].length
+- 1 <= m, n <= 100
+- 1 <= mat[i][j] <= 100
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-the-matrix-diagonally][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/sort-the-matrix-diagonally/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/sort-the-matrix-diagonally
+// Basic Ideas: array
+// Complexity: Time O((n+m)*(n+m)*log(n+m)), Space O(n+m)
+func diagonalSort(mat [][]int) [][]int {
+    n, m := len(mat), len(mat[0])
+    for k:=0; k<n+m-1; k++ {
+        // get starting point
+        i, j := 0, 0
+        if k<m-1 {
+            i = 0
+            j = m-1-k
+        } else {
+            i = k-m+1
+            j = 0
+        }
+        nums := []int{}
+        for i2,j2 := i,j; i2<=n-1 && j2<=m-1; i2, j2 = i2+1, j2+1 {
+            nums = append(nums, mat[i2][j2])
+        }
+        sort.Ints(nums)
+        t:=0
+        // copy back
+        for i2,j2 := i,j; i2<=n-1 && j2<=m-1; i2, j2 = i2+1, j2+1 {
+            mat[i2][j2] = nums[t]
+            t++
+        }
+    }
+    return mat
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -11,8 +11,8 @@ Find Minimum in Rotated Sorted Array
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-minimum-in-rotated-sorted-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii][Leetcode: Find Minimum in Rotated Sorted Array II]]
-- [[https://code.dennyzhang.com/search-in-rotated-sorted-array][Leetcode: Search in Rotated Sorted Array]]
+- [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii][LeetCode: Find Minimum in Rotated Sorted Array II]]
+- [[https://code.dennyzhang.com/search-in-rotated-sorted-array][LeetCode: Search in Rotated Sorted Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]

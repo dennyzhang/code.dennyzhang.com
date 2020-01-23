@@ -11,7 +11,7 @@ Article Views II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/article-views-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/article-views-i][Leetcode: Article Views I]]
+- [[https://code.dennyzhang.com/article-views-i][LeetCode: Article Views I]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

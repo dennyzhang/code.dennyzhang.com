@@ -11,7 +11,7 @@ Letter Combinations of a Phone Number
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/letter-combinations-of-a-phone-number"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/brace-expansion][Leetcode: Brace Expansion]]
+- [[https://code.dennyzhang.com/brace-expansion][LeetCode: Brace Expansion]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-combination][#combination]]

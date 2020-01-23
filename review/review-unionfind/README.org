@@ -27,8 +27,8 @@ Key operations: union, find, etc.
 *Questions*
 | Num | Problem                                         | Summary                           |
 |-----+-------------------------------------------------+-----------------------------------|
-|   1 | Union find for weighted graph                   | [[https://code.dennyzhang.com/evaluate-division][Leetcode: Evaluate Division]]       |
-|   2 | Union find: connect groups and merge node count | [[https://code.dennyzhang.com/bricks-falling-when-hit][Leetcode: Bricks Falling When Hit]] |
+|   1 | Union find for weighted graph                   | [[https://code.dennyzhang.com/evaluate-division][LeetCode: Evaluate Division]]       |
+|   2 | Union find: connect groups and merge node count | [[https://code.dennyzhang.com/bricks-falling-when-hit][LeetCode: Bricks Falling When Hit]] |
 #+TBLFM: $1=@-1$1+1;N
 
 *Scenarios*
@@ -42,14 +42,14 @@ Union-find applications involve manipulating objects of all types:
 | Pixels in a digital photo                              |                                                                    |
 | Metallic sites in a composite system                   |                                                                    |
 | Minimum spanning tree of a graph - [[https://en.wikipedia.org/wiki/Kruskal%27s_algorithm][Kruskal's algorithm]] |                                                                    |
-| What are the nodes and how to union nodes              | [[https://code.dennyzhang.com/largest-component-size-by-common-factor][Leetcode: Largest Component Size by Common Factor]]                  |
-| What nodes are? What edges are?                        | [[https://code.dennyzhang.com/sentence-similarity-ii][Leetcode: Sentence Similarity II]], [[https://code.dennyzhang.com/regions-cut-by-slashes][Leetcode: Regions Cut By Slashes]] |
-| Count node then initialize VS a fixed array            | [[https://code.dennyzhang.com/satisfiability-of-equality-equations][Leetcode: Satisfiability of Equality Equations]]                     |
-| Maintain a counter for group count                     | [[https://code.dennyzhang.com/graph-valid-tree][Leetcode: Graph Valid Tree]]                                         |
+| What are the nodes and how to union nodes              | [[https://code.dennyzhang.com/largest-component-size-by-common-factor][LeetCode: Largest Component Size by Common Factor]]                  |
+| What nodes are? What edges are?                        | [[https://code.dennyzhang.com/sentence-similarity-ii][LeetCode: Sentence Similarity II]], [[https://code.dennyzhang.com/regions-cut-by-slashes][LeetCode: Regions Cut By Slashes]] |
+| Count node then initialize VS a fixed array            | [[https://code.dennyzhang.com/satisfiability-of-equality-equations][LeetCode: Satisfiability of Equality Equations]]                     |
+| Maintain a counter for group count                     | [[https://code.dennyzhang.com/graph-valid-tree][LeetCode: Graph Valid Tree]]                                         |
 | Path compression to reduce levels                      | Keeps tree almost completely flat, and avoid tall trees            |
 | Rank based merge                                       | Balance by linking small tree below large one                      |
-| Collect result: add vs extract?                        | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
-| Get the nodes relationship quickly                     | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][Leetcode: Most Stones Removed with Same Row or Column]]              |
+| Collect result: add vs extract?                        | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][LeetCode: Most Stones Removed with Same Row or Column]]              |
+| Get the nodes relationship quickly                     | [[https://code.dennyzhang.com/most-stones-removed-with-same-row-or-column][LeetCode: Most Stones Removed with Same Row or Column]]              |
 | How efficient unionfind vs DFS/BFS?                    |                                                                    |
 | Time and space complexity of unionfind?                |                                                                    |
 

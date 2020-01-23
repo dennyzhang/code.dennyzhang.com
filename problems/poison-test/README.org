@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     game, poison, redo
+:type:     game, redo
 :END:
 ---------------------------------------------------------------------
 Poison Test
@@ -12,10 +12,10 @@ Poison Test
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-poison][Series: Poison Problems & Follow-up]]
-- [[https://code.dennyzhang.com/poor-pigs][Leetcode: Poor Pigs]]
+- [[https://code.dennyzhang.com/poor-pigs][LeetCode: Poor Pigs]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/poison][#poison]], [[https://code.dennyzhang.com/review-game][#game]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]]
 ---------------------------------------------------------------------
 Description
 Given the n bottles of water, only one bottle of water is poison, and mouse will die 24 hours later after drinking any dose of poison.

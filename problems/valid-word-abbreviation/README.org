@@ -13,8 +13,8 @@ Valid Word Abbreviation
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- [[https://code.dennyzhang.com/flip-game][Leetcode: Flip Game]]
-- [[https://code.dennyzhang.com/flatten-nested-list-iterator][Leetcode: Flatten Nested List Iterator]]
+- [[https://code.dennyzhang.com/flip-game][LeetCode: Flip Game]]
+- [[https://code.dennyzhang.com/flatten-nested-list-iterator][LeetCode: Flatten Nested List Iterator]]
 - Tag: [[https://code.dennyzhang.com/followup-abbreviation][#abbreviation]], [[https://code.dennyzhang.com/review-string][#string]]
 ---------------------------------------------------------------------
 

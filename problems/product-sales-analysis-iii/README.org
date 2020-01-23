@@ -11,9 +11,9 @@ Product Sales Analysis III
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/product-sales-analysis-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/product-sales-analysis-i][Leetcode: Product Sales Analysis I]]
-- [[https://code.dennyzhang.com/product-sales-analysis-ii][Leetcode: Product Sales Analysis II]]
-- [[https://code.dennyzhang.com/product-sales-analysis-iii][Leetcode: Product Sales Analysis III]]
+- [[https://code.dennyzhang.com/product-sales-analysis-i][LeetCode: Product Sales Analysis I]]
+- [[https://code.dennyzhang.com/product-sales-analysis-ii][LeetCode: Product Sales Analysis II]]
+- [[https://code.dennyzhang.com/product-sales-analysis-iii][LeetCode: Product Sales Analysis III]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

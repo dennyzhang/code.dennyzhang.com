@@ -11,9 +11,9 @@ Trapping Rain Water
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/trapping-rain-water"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/trapping-rain-water-ii][LeetCode: Trapping Rain Water II]]
+- [[https://code.dennyzhang.com/product-of-array-except-self][LeetCode: Product of Array Except Self]]
 - [[https://code.dennyzhang.com/followup-trappingrain][Series: Trapping Rain & Follow-up]]
-- [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
-- [[https://code.dennyzhang.com/container-water][Trapping Rain Water]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/tag/roundtrippass][#roundtrippass]]
@@ -35,6 +35,46 @@ Credits To: [[https://leetcode.com/problems/trapping-rain-water/description/][le
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 Similar problem: [[https://code.dennyzhang.com/product-of-array-except-self][Product of Array Except Self]]
+
+- Solution: Two pass
+#+BEGIN_SRC go
+// Basic Ideas: two pass
+//
+//  For each cell, decide how many water it can trap
+//  To figure that out, we need to know:
+//    - The highest wall to the left
+//    - The highest wall to the right
+//
+// Complexity: Time O(n), Space O(n)
+func trap(height []int) int {
+    left := make([]int, len(height))
+    max := 0
+    for i, h := range height {
+        left[i] = max
+        if h > max {
+            max = h
+        }
+    }
+    res := 0
+    max = 0
+    // from right to left
+    for i:=len(height)-1; i>=0; i-- {
+        // v: how much water current cell can trap
+        v := left[i]
+        if v>max {
+            v=max
+        }
+        if v>height[i] {
+            res += v-height[i]
+        }
+
+        if height[i] > max {
+            max = height[i]
+        }
+    }
+    return res
+}
+#+END_SRC
 
 - Solution: Two pass
 

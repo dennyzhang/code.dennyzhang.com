@@ -16,8 +16,8 @@ expression problems
 *Questions*
 | Name                    | Example                                    |
 |-------------------------+--------------------------------------------|
-| Reverse Polish Notation | [[https://code.dennyzhang.com/evaluate-reverse-polish-notation][Leetcode: Evaluate Reverse Polish Notation]] |
-| From right to left      | [[https://code.dennyzhang.com/ternary-expression-parser][Leetcode: Ternary Expression Parser]]        |
+| Reverse Polish Notation | [[https://code.dennyzhang.com/evaluate-reverse-polish-notation][LeetCode: Evaluate Reverse Polish Notation]] |
+| From right to left      | [[https://code.dennyzhang.com/ternary-expression-parser][LeetCode: Ternary Expression Parser]]        |
 
 See all series problems: [[https://code.dennyzhang.com/followup-expression/][#expression]]
 [display-posts tag="expression" posts_per_page="100" orderby="title"]

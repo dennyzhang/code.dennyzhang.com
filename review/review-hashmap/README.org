@@ -14,10 +14,11 @@ Review Hashmap code problems
 *Questions*
 | Name                                         | Example                                    |
 |----------------------------------------------+--------------------------------------------|
-| Use a local hashmap, instead of a global one | [[https://code.dennyzhang.com/increasing-subsequences][Leetcode: Increasing Subsequences]]          |
-| One hashmap vs two hashmap                   | [[https://code.dennyzhang.com/before-and-after-puzzle][Leetcode: Before and After Puzzle]]          |
-| Hashmap may make code more complicated       | [[https://code.dennyzhang.com/find-k-th-smallest-pair-distance][Leetcode: Find K-th Smallest Pair Distance]] |
-| Mapping data range of getRand algorithm      | [[https://code.dennyzhang.com/implement-rand10-using-rand7][Leetcode: Implement Rand10() Using Rand7()]] |
+| Use a local hashmap, instead of a global one | [[https://code.dennyzhang.com/increasing-subsequences][LeetCode: Increasing Subsequences]]          |
+| One hashmap vs two hashmap                   | [[https://code.dennyzhang.com/before-and-after-puzzle][LeetCode: Before and After Puzzle]]          |
+| Hashmap may make code more complicated       | [[https://code.dennyzhang.com/find-k-th-smallest-pair-distance][LeetCode: Find K-th Smallest Pair Distance]] |
+| Mapping data range of getRand algorithm      | [[https://code.dennyzhang.com/implement-rand10-using-rand7][LeetCode: Implement Rand10() Using Rand7()]] |
+| Contains Duplicate II                        | [[https://code.dennyzhang.com/contains-duplicate-ii][Leetcode: Contains Duplicate II]]            |
 | [[https://en.wikipedia.org/wiki/Rolling_hash][Rolling hash]]                                 |                                            |
 
 - Use a tuple as key

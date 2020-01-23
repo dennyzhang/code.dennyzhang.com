@@ -11,9 +11,9 @@ Distinct Subsequences II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/distinct-subsequences-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/count-vowels-permutation][Leetcode: Count Vowels Permutation]]
-- [[https://code.dennyzhang.com/unique-substrings-in-wraparound-string][Leetcode: Unique Substrings in Wraparound String]]
-- [[https://code.dennyzhang.com/distinct-subsequences][Leetcode: Distinct Subsequences]]
+- [[https://code.dennyzhang.com/count-vowels-permutation][LeetCode: Count Vowels Permutation]]
+- [[https://code.dennyzhang.com/unique-substrings-in-wraparound-string][LeetCode: Unique Substrings in Wraparound String]]
+- [[https://code.dennyzhang.com/distinct-subsequences][LeetCode: Distinct Subsequences]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]], [[https://code.dennyzhang.com/followup-endswith][#endswith]]

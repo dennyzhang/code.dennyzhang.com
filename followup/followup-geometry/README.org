@@ -15,9 +15,9 @@ Geometry Problems & Follow-up
 
 | Name                                          | Example                             |
 |-----------------------------------------------+-------------------------------------|
-| Overlapped region of two rectangles           | [[https://code.dennyzhang.com/rectangle-area][Leetcode: Rectangle Area]]            |
-| Rectangle: can be decided from a triangle     | [[https://code.dennyzhang.com/minimum-area-rectangle-ii][Leetcode: Minimum Area Rectangle II]] |
-| Rectangle: has a center point to all 4 points | [[https://code.dennyzhang.com/minimum-area-rectangle-ii][Leetcode: Minimum Area Rectangle II]] |
+| Overlapped region of two rectangles           | [[https://code.dennyzhang.com/rectangle-area][LeetCode: Rectangle Area]]            |
+| Rectangle: can be decided from a triangle     | [[https://code.dennyzhang.com/minimum-area-rectangle-ii][LeetCode: Minimum Area Rectangle II]] |
+| Rectangle: has a center point to all 4 points | [[https://code.dennyzhang.com/minimum-area-rectangle-ii][LeetCode: Minimum Area Rectangle II]] |
 
 [display-posts tag="geometry" posts_per_page="100" orderby="title"]
 

@@ -11,7 +11,7 @@ Sum of Subarray Minimums
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sum-of-subarray-minimums"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/online-stock-span][Leetcode: Online Stock Span]]
+- [[https://code.dennyzhang.com/online-stock-span][LeetCode: Online Stock Span]]
 - [[https://code.dennyzhang.com/split-array-into-consecutive-subsequences][Split Array into Consecutive Subsequences]]
 - [[https://code.dennyzhang.com/3sum-with-multiplicity][3Sum With Multiplicity]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]

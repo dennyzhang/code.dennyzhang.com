@@ -17,7 +17,7 @@ Frog Jump Game & Follow-up
 | Name                                                                     | Example             |
 |--------------------------------------------------------------------------+---------------------|
 | Shortest distance to jump from begining to the end                       |                     |
-| Lowest cost jumping to the end, and show lexicographically smallest path | [[https://code.dennyzhang.com/coin-path][Leetcode: Coin Path]] |
+| Lowest cost jumping to the end, and show lexicographically smallest path | [[https://code.dennyzhang.com/coin-path][LeetCode: Coin Path]] |
 
 See all Tree Traversal problems: [[https://code.dennyzhang.com/tag/frogjump/][#frogjump]]
 [display-posts tag="frogjump" posts_per_page="100" orderby="title"]

@@ -12,7 +12,7 @@ Delete Operation for Two Strings
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/followup-editdistance][Series: Edit Distance Of Two Strings & Follow-up]]
-- [[https://code.dennyzhang.com/edit-distance][Leetcode: Edit Distance]]
+- [[https://code.dennyzhang.com/edit-distance][LeetCode: Edit Distance]]
 - [[https://code.dennyzhang.com/maximum-length-of-repeated-subarray][Maximum Length of Repeated Subarray]]
 - [[https://code.dennyzhang.com/interleaving-string][Interleaving String]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]

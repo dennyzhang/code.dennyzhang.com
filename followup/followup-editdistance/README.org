@@ -14,8 +14,8 @@ Word Distance & Follow-up
 | Name                                           | Example                                                       |
 |------------------------------------------------+---------------------------------------------------------------|
 | =s1[i...], s2[j...]= vs =s1[0...i], s2[0...j]= | =s1[i]= vs =s1[i-1]=, Space =O(min(n, m)))= vs Space =O(n*m)= |
-| Whether we need to the active initialization   | [[https://code.dennyzhang.com/longest-common-subsequence][Leetcode: Longest Common Subsequence]]                          |
-| Space complexity: O(n*m) or O(min(n, m))       | [[https://code.dennyzhang.com/shortest-common-supersequence][Leetcode: Shortest Common Supersequence]]                       |
+| Whether we need to the active initialization   | [[https://code.dennyzhang.com/longest-common-subsequence][LeetCode: Longest Common Subsequence]]                          |
+| Space complexity: O(n*m) or O(min(n, m))       | [[https://code.dennyzhang.com/shortest-common-supersequence][LeetCode: Shortest Common Supersequence]]                       |
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

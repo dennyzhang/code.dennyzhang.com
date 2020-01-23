@@ -17,14 +17,14 @@ Here we try to compile a list of inspiring DFS problems.
 *Basic Abstractions*
 | Name                            | Summary                                                                         |
 |---------------------------------+---------------------------------------------------------------------------------|
-| dfs avoid duplicate caculations | Maintain state array. And update it at the end of dfs [[https://code.dennyzhang.com/course-schedule][Leetcode: Course Schedule]] |
+| dfs avoid duplicate caculations | Maintain state array. And update it at the end of dfs [[https://code.dennyzhang.com/course-schedule][LeetCode: Course Schedule]] |
 
 *Scenarios*
 *Code Skeleton*
 *Questions*
 | Name                                                                  | Example                  |
 |-----------------------------------------------------------------------+--------------------------|
-| In matrix dfs, change cell to impossible value to avoid state hashmap | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]] |
+| In matrix dfs, change cell to impossible value to avoid state hashmap | [[https://code.dennyzhang.com/word-search-ii][LeetCode: Word Search II]] |
 | In matrix dfs, when to change and restore cell state?                 |                          |
 
 - dfs get results from return value or input parameters

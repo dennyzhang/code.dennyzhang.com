@@ -17,15 +17,15 @@ Concurrency Problems
 *Scenarios*
 | Name                                | Comment                                                                |
 |-------------------------------------+------------------------------------------------------------------------|
-| Map/Reduce: scheduler + workers     | [[https://code.dennyzhang.com/web-crawler-multithreaded][Leetcode: Web Crawler Multithreaded]]                                    |
-| Claim ownerhip of a single resource | [[https://code.dennyzhang.com/traffic-light-controlled-intersection][Leetcode: Traffic Light Controlled Intersection]]                        |
-| [[https://en.wikipedia.org/wiki/Dining_philosophers_problem][Dining Philosophers problem]]         | Avoid deadlock and starvation [[https://code.dennyzhang.com/the-dining-philosophers][Leetcode: The Dining Philosophers]]        |
+| Map/Reduce: scheduler + workers     | [[https://code.dennyzhang.com/web-crawler-multithreaded][LeetCode: Web Crawler Multithreaded]]                                    |
+| Claim ownerhip of a single resource | [[https://code.dennyzhang.com/traffic-light-controlled-intersection][LeetCode: Traffic Light Controlled Intersection]]                        |
+| [[https://en.wikipedia.org/wiki/Dining_philosophers_problem][Dining Philosophers problem]]         | Avoid deadlock and starvation [[https://code.dennyzhang.com/the-dining-philosophers][LeetCode: The Dining Philosophers]]        |
 | [[https://en.wikipedia.org/wiki/ABA_problem][ABA problem]]                         |                                                                        |
 | [[https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem][Producer-consumer problem]]           | a.k.a the bounded-buffer problem                                       |
 | [[https://en.wikipedia.org/wiki/Cigarette_smokers_problem][Cigarette smokers problem]]           | Assume a cigarette requires 3 ingredients: tobacco, paper, and matches |
 | [[https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem][Readers-writers problem]]             | Read/write access the same shared resource at one time                 |
 | [[https://en.wikipedia.org/wiki/Sleeping_barber_problem][Sleeping barber problem]]             | Keep a barber working when there are customers, resting when none      |
-| Semaphores to maintain the order    | [[https://code.dennyzhang.com/building-h2o][Leetcode: Building H2O]]                                                 |
+| Semaphores to maintain the order    | [[https://code.dennyzhang.com/building-h2o][LeetCode: Building H2O]]                                                 |
 
 *Concepts*
 | Name                          | Comment                                                   |

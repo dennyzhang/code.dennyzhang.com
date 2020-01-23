@@ -11,7 +11,7 @@ Brace Expansion
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/brace-expansion"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/letter-combinations-of-a-phone-number][Leetcode: Letter Combinations of a Phone Number]]
+- [[https://code.dennyzhang.com/letter-combinations-of-a-phone-number][LeetCode: Letter Combinations of a Phone Number]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-combination][#combination]]

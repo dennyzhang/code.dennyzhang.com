@@ -11,7 +11,7 @@ Predict the Winner
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/predict-the-winner"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/stone-game][Leetcode: Stone Game]]
+- [[https://code.dennyzhang.com/stone-game][LeetCode: Stone Game]]
 - [[https://code.dennyzhang.com/target-sum][Target Sum]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

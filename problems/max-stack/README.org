@@ -11,8 +11,8 @@ Max Stack
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-stack"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/min-stack][Leetcode: Min Stack]]
-- [[https://code.dennyzhang.com/maximum-frequency-stack][Leetcode: Maximum Frequency Stack]]
+- [[https://code.dennyzhang.com/min-stack][LeetCode: Min Stack]]
+- [[https://code.dennyzhang.com/maximum-frequency-stack][LeetCode: Maximum Frequency Stack]]
 - [[https://code.dennyzhang.com/insert-delete-getrandom-o1-duplicates-allowed][Insert Delete GetRandom O(1) - Duplicates allowed]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     findduplicates
+:type:     findduplicates, hashmap
 :END:
 ---------------------------------------------------------------------
 Contains Duplicate
@@ -13,7 +13,7 @@ Contains Duplicate
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/followup-findduplicates][#findduplicates]]
+- Tag: [[https://code.dennyzhang.com/followup-findduplicates][#findduplicates]], [[https://code.dennyzhang.com/followup-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
@@ -23,6 +23,23 @@ Credits To: [[https://leetcode.com/problems/contains-duplicate/description/][lee
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: hashmap
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/contains-duplicate
+// Basic Ideas: hashmap
+//
+// Complexity: Time O(n), Space O(n)
+func containsDuplicate(nums []int) bool {
+    m := map[int]int{}
+    for _, v := range nums {
+        m[v]++
+        if m[v]>1 {
+            return true
+        }
+    }
+    return false
+}
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/contains-duplicate
