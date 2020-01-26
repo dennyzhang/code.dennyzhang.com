@@ -13,7 +13,7 @@ Review Bucketsort code problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-*Questions*
+*Top Questions*
 | Name                                 | Example |
 |--------------------------------------+---------|
 | How to define the size of the bucket |         |

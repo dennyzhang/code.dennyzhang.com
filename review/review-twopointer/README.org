@@ -27,7 +27,7 @@ Two pointers problems
 
 *Scenarios*
 *Code Skeleton*
-*Questions*
+*Top Questions*
 | Name                                        | Example                                                 |
 |---------------------------------------------+---------------------------------------------------------|
 

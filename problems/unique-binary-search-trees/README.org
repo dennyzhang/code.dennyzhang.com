@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, dynamicprogramming, codetemplate, inspiring
+:type:     binarytree, dynamicprogramming, codetemplate, inspiring, fibonacci
 :END:
 ---------------------------------------------------------------------
 Unique Binary Search Trees
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/unique-binary-search-trees-ii][LeetCode: Unique Binary Search Trees II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/fibonacci][#fibonacci]]
 ---------------------------------------------------------------------
 Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
 #+BEGIN_EXAMPLE
@@ -34,6 +34,30 @@ Credits To: [[https://leetcode.com/problems/unique-binary-search-trees/descripti
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: dp
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/unique-binary-search-trees
+## Basic Ideas: dynamic programming
+##
+##    dp(i): count with i nodes
+##
+##     There must be one root node
+##
+##        dp(j)*dp(i-1-j)
+##           j = 0...i-1
+## Complexity: Time O(n*n), Space O(1)
+class Solution:
+    def numTrees(self, n: int) -> int:
+        dp = [0]*(n+1)
+        dp[0] = 1
+        for i in range(1, n+1):
+            for j in range(i):
+                dp[i] += dp[j]*dp[i-1-j]
+        return dp[-1]
+#+END_SRC
+
+- Solution: dp
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/unique-binary-search-trees

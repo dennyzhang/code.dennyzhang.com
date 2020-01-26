@@ -39,6 +39,21 @@ Credits To: [[https://leetcode.com/problems/relative-sort-array/description/][le
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/relative-sort-array
+## Basic Ideas: sort with customized key
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+class Solution:
+    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
+        m = {}
+        for i, v in enumerate(arr2):
+            m[v] = i
+        arr1.sort(key=lambda x: m.get(x, 1000+x))
+        return arr1
+#+END_SRC
+
+- Solution:
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/relative-sort-array

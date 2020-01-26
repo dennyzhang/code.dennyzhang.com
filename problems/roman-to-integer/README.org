@@ -27,7 +27,6 @@ Credits To: [[https://leetcode.com/problems/roman-to-integer/description/][leetc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-<<<<<<< HEAD
 Reference:
 - [[https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system][wikipedia: Roman numerals]]
 - [[http://literacy.kent.edu/Minigrants/Cinci/romanchart.htm][Roman Numerals Chart]]
@@ -55,11 +54,6 @@ func romanToInt(s string) int {
     }
     return res
 }
-=======
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/roman-to-integer
-
->>>>>>> 123cc57c2e4abe14e48c40bfd5bdc5982e4e0c29
 #+END_SRC
 
 #+BEGIN_HTML

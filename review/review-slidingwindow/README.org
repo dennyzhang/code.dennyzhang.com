@@ -19,7 +19,7 @@ Slidingwindow Problems
 | Make sure neither pointers will go backwards |                                                             |
 *Scenarios*
 
-*Questions*
+*Top Questions*
 | Num | Problem                                                   | Summary                                                  |
 |-----+-----------------------------------------------------------+----------------------------------------------------------|
 |   1 | Sliding window with fixed size                            | [[https://code.dennyzhang.com/find-all-anagrams-in-a-string][LeetCode: Find All Anagrams in a String]]                  |

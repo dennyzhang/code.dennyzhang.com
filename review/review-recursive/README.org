@@ -45,7 +45,7 @@ Never miss the terminating condition, else the function may fall into infinite r
 
 *Scenarios*
 *Code Skeleton*
-*Questions*
+*Top Questions*
 | Name            | Example |
 |-----------------+---------|
 | Recursive vs DP |         |

@@ -54,6 +54,32 @@ Credits To: [[https://leetcode.com/problems/search-insert-position/description/]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution binary search
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/search-insert-position
+## Basic Ideas: binary search
+##
+## Complexity: Time O(log(n)), Space O(1)
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        if not nums: return 0
+        if nums[-1] < target:
+            return len(nums)
+        left, right = 0, len(nums)-1
+        # May not exists
+        while left<=right:
+            mid = int((right-left)/2+left)
+            if target == nums[mid]:
+                return mid
+            
+            if target > nums[mid]:
+                # drop the left half
+                left = mid + 1
+            else:
+                right = mid - 1
+        # right, left
+        return left
+#+END_SRC
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/search-insert-position

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, hashmap, twosum
+:type:     knapsack, dynamicprogramming
 :END:
 ---------------------------------------------------------------------
 Target Sum
@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/expression-add-operators][Expression Add Operators]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
+- Tag: [[https://code.dennyzhang.com/review-knapsack][#knapsack]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.
 
@@ -47,6 +47,29 @@ Credits To: [[https://leetcode.com/problems/target-sum/description/][leetcode.co
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: knapsack
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/target-sum
+## Basic Ideas: knapsack
+##
+##   For each item, two choices
+##
+## Complexity: Time O(n*l), Space O(l)
+class Solution:
+    def findTargetSumWays(self, nums: List[int], S: int) -> int:
+        n = 2001
+        dp = [0]*n
+        dp[1000] = 1
+        for v in nums:
+            dp2 = [0]*n
+            for i in range(n):
+                ## add +
+                if 0<=i+v<n: dp2[i+v] += dp[i]
+                ## add -
+                if 0<=i-v<n: dp2[i-v] += dp[i]
+            dp = dp2
+        return dp[S+1000] if 0<=S+1000<n else 0
+#+END_SRC
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/target-sum

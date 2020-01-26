@@ -8,7 +8,7 @@
 Find the City With the Smallest Number of Neighbors at a Threshold Distance
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
@@ -59,16 +59,16 @@ Constraints:
 - 1 <= weighti, distanceThreshold <= 10^4
 - All pairs (fromi, toi) are distinct.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/example/description/][LeetCode.com]]
+Credits To: [[https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC go
-// https://code.dennyzhang.com/example
+// https://code.dennyzhang.com/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance
 // Basic Ideas: Floyd
 //
 // Complexity: Time O(n*e), Space O(n*n)

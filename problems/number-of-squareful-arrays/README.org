@@ -1,0 +1,120 @@
+* LeetCode: Number of Squareful Arrays                          :BLOG:Hard:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, backtracking, inspiring, array, redo
+:END:
+---------------------------------------------------------------------
+Number of Squareful Arrays
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-squareful-arrays"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/permutations-ii][Leetcode: Permutations II]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]], [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given an array A of non-negative integers, the array is squareful if for every pair of adjacent elements, their sum is a perfect square.
+
+Return the number of permutations of A that are squareful.  Two permutations A1 and A2 differ if and only if there is some index i such that A1[i] != A2[i].
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,17,8]
+Output: 2
+Explanation: 
+[1,8,17] and [17,8,1] are the valid permutations.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [2,2,2]
+Output: 1
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= A.length <= 12
+- 0 <= A[i] <= 1e9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-squareful-arrays][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/number-of-squareful-arrays/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/number-of-squareful-arrays
+// Basic Ideas: graph + backtracking
+//
+// Notice: how to avoid duplication effectively?
+//
+// Complexity: Time O(N^N), Space O(1)
+import ("math"
+        "sort")
+
+func dfs(pos int, edges [][]bool, visited []bool, cnt *int, res *int, A []int) {
+    // get all result
+    if *cnt == len(visited) {
+        *res = *res + 1
+        return
+    }
+
+    visited[pos] = true
+    *cnt = *cnt + 1
+    for n, b := range edges[pos] {
+        if b && !visited[n] {
+            if n>0 && A[n-1] == A[n] && !visited[n-1] {
+                // no need to evaluate current one
+                continue
+            }
+            dfs(n, edges, visited, cnt, res, A)
+        }
+    }
+    visited[pos] = false
+    *cnt = *cnt - 1
+}
+
+func numSquarefulPerms(A []int) int {
+    sort.Ints(A)
+    edges := make([][]bool, len(A))
+    for i, _ := range edges {
+        edges[i] = make([]bool, len(A))
+    }
+    // update edges
+    for i:=0; i<len(A); i++ {
+        for j:=i+1; j<len(A); j++ {
+            v := A[i]+A[j]
+            s := int(math.Sqrt(float64(v)))
+            if s*s == v {
+                edges[i][j] = true
+                edges[j][i] = true
+            }
+        }
+    }
+
+    res := 0
+    for i:=0; i<len(A); i++ {
+        if i>0 && A[i] == A[i-1] {
+            // avoid duplication
+            continue
+        }
+        visited := make([]bool, len(A))
+        cnt := 1
+        dfs(i, edges, visited, &cnt, &res, A)
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

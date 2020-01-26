@@ -1,8 +1,8 @@
-* Leetcode: Last Substring in Lexicographical Order             :BLOG:Medium:
+* Leetcode: Last Substring in Lexicographical Order             :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     string, greedy, twopointer, redo
 :END:
 ---------------------------------------------------------------------
 Last Substring in Lexicographical Order
@@ -13,7 +13,7 @@ Last Substring in Lexicographical Order
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given a string s, return the last substring of s in lexicographical order.
  
@@ -45,7 +45,55 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/last-substring-in-lexicographical-order
+// Basic Ideas: greedy + two pointer
+//
+//   The ending point of the result is the last character.
+//   Need to define where is the starting point.
+//   Apparently we know the value of the starting point.
+//   It must be the biggest character in the string.
+//
+//   Use two slow and fast pointer:
+//       - slow: starting point of the result
+//       - fast: starting point of the candidate
+//
+//   The key part is slow pointer won't need to move back
+//
+//   If candidate of faster pointer is better than the slow pointer, 
+//      just need to move the slow pointer to faster point.
+//
+//   No need to examining starting in between slow and fast characters!
+//
+//   cabcabcb
+//   .  .  .
+//
+//   
+// Complexity: Time O(n), Space O(1)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
+func lastSubstring(s string) string {
+    i, j := 0, 1
+    for k:=0; k+j<len(s); {
+        if s[i+k] == s[j+k] {
+            k++
+            continue
+        }
+        if s[i+k] > s[j+k] {
+            j = j+k+1
+        } else {
+            // Think: why not simply i=j
+            i = max(i+k+1, j)
+            j = i+1
+        }
+        k = 0
+    }
+    return s[i:]
+}
 #+END_SRC
 
 #+BEGIN_HTML

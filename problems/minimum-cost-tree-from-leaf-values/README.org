@@ -48,7 +48,7 @@ Credits To: [[https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/d
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: Interval DP
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/minimum-cost-tree-from-leaf-values
@@ -100,7 +100,6 @@ func mctFromLeafValues(arr []int) int {
             }
         }
     }
-    // fmt.Println(dp)
     return dp[0][len(arr)-1]
 }
 #+END_SRC

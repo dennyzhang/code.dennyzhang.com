@@ -24,7 +24,7 @@ Key operations: union, find, etc.
 | Reference                | [[https://www.youtube.com/watch?v=wU6udHRIkcc][YouTube: Disjoint Sets Data Structure - Weighted Union and Collapsing Find]] |
 | Reference                | [[https://en.wikipedia.org/wiki/Disjoint-set_data_structure][Wikipedia: Disjoint-set data structure]]                                     |
 
-*Questions*
+*Top Questions*
 | Num | Problem                                         | Summary                           |
 |-----+-------------------------------------------------+-----------------------------------|
 |   1 | Union find for weighted graph                   | [[https://code.dennyzhang.com/evaluate-division][LeetCode: Evaluate Division]]       |

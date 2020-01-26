@@ -23,7 +23,7 @@ Key operations: find-min, get-min, insert, etc.
 | For topk max, need minheap, instead of maxheap |                |
 *Scenarios*
 *Code Skeleton*
-*Questions*
+*Top Questions*
 | Num | Problem             | Summary                       |
 |-----+---------------------+-------------------------------|
 |   1 | Meeting Rooms II    | [[https://code.dennyzhang.com/meeting-rooms-ii][LeetCode: Meeting Rooms II]]    |

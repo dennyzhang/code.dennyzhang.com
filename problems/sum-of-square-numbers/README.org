@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, math, sqrt, twosum
+:type:     twopointer, math, sqrt, twosum, inspiring
 :END:
 ---------------------------------------------------------------------
 Sum of Square Numbers
@@ -40,30 +40,24 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/sum-of-square-numbers
-## Basic Ideas: max(a, b) <= int(sqrt(c))
-##              Then we convert it into a two-sum problem
+## Basic Ideas: two pointer
 ##
-##  Assumption: a, b can be 0
-## Complexity: Time O(sqrt(n)), Space O(1)
-class Solution(object):
-    def judgeSquareSum(self, c):
-        """
-        :type c: int
-        :rtype: bool
-        """
-        if c < 0:
-            return False
-        import math
-        a, b = 0, int(math.sqrt(c))
-        # a may equals b
-        while a <= b:
-            v = a*a + b*b
-            if v == c:
-                return True
-            elif v > c:
-                b -= 1
+##  We can assume a, b non-negative
+##
+##  0 ... a.. b ..c
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def judgeSquareSum(self, c: int) -> bool:
+        left, right = 0, int(math.sqrt(c))
+        while left<=right:
+            v = left*left+right*right
+            if v == c: return True
+            if v>c:
+                # make it smaller
+                right -= 1
             else:
-                a += 1
+                left += 1
         return False
 #+END_SRC
 

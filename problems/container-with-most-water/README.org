@@ -20,16 +20,48 @@ Given n non-negative integers a1, a2, ..., an, where each represents a point at 
 
 Note: You may not slant the container and n is at least 2.
 
+[[image-blog:Leetcode: Container With Most Water][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/container-with-most-water/my.jpg]]
+
+The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+ 
+Example:
+#+BEGIN_EXAMPLE
+Input: [1,8,6,2,5,4,8,3,7]
+Output: 49
+#+END_EXAMPLE
+
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/container-with-most-water][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/container-with-most-water/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-*Key Observations:*
-#+BEGIN_EXAMPLE
-By moving shorter end pointer further doesn't eliminate the final answer
-#+END_EXAMPLE
+- Solution: Two Pointer
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/container-with-most-water
+## Basic Ideas: two pointer
+##
+##   Two pointer: 
+##      From left to right
+##      From right to left
+##
+##   If height[left]<height[right], move right doesn't make sense
+##   Likewise for the other one
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        n = len(height)
+        left, right = 0, n-1
+        res = 0
+        while left<right:
+            res = max(res, min(height[left], height[right])*(right-left))
+            if height[left]<height[right]:
+                left += 1
+            else:
+                right -= 1
+        return res
+#+END_SRC
 
 - Solution: Two Pointer
 #+BEGIN_SRC go

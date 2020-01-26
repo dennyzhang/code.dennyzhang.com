@@ -25,8 +25,8 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/example
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/example
 
 #+END_SRC
 

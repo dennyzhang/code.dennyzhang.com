@@ -1,0 +1,93 @@
+* LeetCode: Angle Between Hands of a Clock                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math, geometry
+:END:
+---------------------------------------------------------------------
+Angle Between Hands of a Clock
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/angle-between-hands-of-a-clock"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-geometry][#geometry]], [[https://code.dennyzhang.com/review-math][#math]]
+---------------------------------------------------------------------
+Given two numbers, hour and minutes. Return the smaller angle (in sexagesimal units) formed between the hour and the minute hand.
+ 
+Example 1:
+[[image-blog:LeetCode: Angle Between Hands of a Clock][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/angle-between-hands-of-a-clock/1.png]]
+#+BEGIN_EXAMPLE
+Input: hour = 12, minutes = 30
+Output: 165
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:LeetCode: Angle Between Hands of a Clock][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/angle-between-hands-of-a-clock/2.png]]
+#+BEGIN_EXAMPLE
+Input: hour = 3, minutes = 30
+Output: 75
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:LeetCode: Angle Between Hands of a Clock][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/angle-between-hands-of-a-clock/3.png]]
+#+BEGIN_EXAMPLE
+Input: hour = 3, minutes = 15
+Output: 7.5
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: hour = 4, minutes = 50
+Output: 155
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: hour = 12, minutes = 0
+Output: 0
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= hour <= 12
+- 0 <= minutes <= 59
+- Answers within 10^-5 of the actual value will be accepted as correct.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/angle-between-hands-of-a-clock][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/angle-between-hands-of-a-clock/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/angle-between-hands-of-a-clock
+## Basic Ideas: math
+##
+##  When hour change by one, it has 30 degrees
+##  When minute change by one, it has 6 degrees
+##  The change of minutes adjust hours' change
+##     When hour change by one, it means minutes change by 60
+##
+##  Change from 00:00 to hour:minute
+##
+##    d = abs(30*hour + 30*(minutes/60) - minutes*6)
+##    min(d, 360-d)
+## Complexity: Time O(1), Space O(1)
+class Solution:
+    def angleClock(self, hour: int, minutes: int) -> float:
+        d = abs(30*(hour%12) + 30*(minutes/60) - minutes*6)
+        return min(d, 360-d)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

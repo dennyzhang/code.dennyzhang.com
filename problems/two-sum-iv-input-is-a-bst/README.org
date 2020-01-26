@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, twosum, redo
+:type:     twopointer, twosum, hashmap, bfs, dfs
 :END:
 ---------------------------------------------------------------------
 Two Sum IV - Input is a BST
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
+- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
 #+BEGIN_EXAMPLE
@@ -51,60 +51,64 @@ Credits To: [[https://leetcode.com/problems/two-sum-iv-input-is-a-bst/descriptio
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: hashmap + recursive
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/two-sum-iv-input-is-a-bst
+## Basic Ideas: hashmap
+##
+##  Nodes in BST tree are unique
+##  So we won't result in picking one number twice
+##
+## Complexity: Time O(n), Space O(n)
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def findTarget(self, root, k):
-        """
-        :type root: TreeNode
-        :type k: int
-        :rtype: bool
-        """
-        ## Idea: Generate a sorted array from binary search tree.
-        ##       Use 2 sum
-        ## Complexity: Time O(n), Space O(n)
-        nums = self._convertBST2Array(root)
-        length = len(nums)
-        if length < 2:
-            return False
-
-        i, j = 0, length-1
-        while i<j:
-            sum_value = nums[i] + nums[j]
-            if sum_value == k:
-                return True
-            elif sum_value < k:
-                i += 1
-            else:
-                j -= 1
-        return False
-
-    def _convertBST2Array(self, root):
-        """
-        :type root: TreeNode
-        :rtype: list
-        """
-        if root is None:
-            return []
-        if root.left is None and root.right is None:
-            return [root.val]
-
-        res = []
-        if root.left:
-            res = self._convertBST2Array(root.left) + res
-        res = res + [root.val]
-        if root.right:
-            res = res + self._convertBST2Array(root.right)
-        return res
+class Solution:
+    def findTarget(self, root: TreeNode, k: int) -> bool:
+        s = set()
+        def dfs(root):
+            nonlocal s
+            if not root: return False
+            if k- root.val in s: return True
+            s.add(root.val)
+            return dfs(root.left) or dfs(root.right)
+        return dfs(root)
 #+END_SRC
 
+- Solution: hashmap + bfs
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/two-sum-iv-input-is-a-bst
+## Basic Ideas: bfs + hashmap
+##
+##  Nodes in BST tree are unique
+##  So we won't result in picking one number twice
+##
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def findTarget(self, root: TreeNode, k: int) -> bool:
+        if not root: return False
+        s = set()
+        queue = collections.deque([root])
+        while len(queue)>0:
+            for _ in range(len(queue)):
+                n = queue.popleft()
+                if k-n.val in s: return True
+                s.add(n.val)
+                if n.left: queue.append(n.left)
+                if n.right: queue.append(n.right)
+        return False
+#+END_SRC
 #+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     redo, combination
+:type:     combination, backtracking, inspiring
 :END:
 ---------------------------------------------------------------------
 Permutations II
@@ -13,7 +13,7 @@ Permutations II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/review-combination][#combination]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 #+BEGIN_EXAMPLE
@@ -32,36 +32,44 @@ Credits To: [[https://leetcode.com/problems/permutations-ii/description/][leetco
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/permutations-ii
-class Solution(object):
-    def permuteUnique(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        nums.sort()
-        return self._permuteUnique(nums)
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/permutations-ii
+// Basic Ideas: backtracking
+//
+// Complexity: Time O(n!), Space O(1)
+import "sort"
 
-    def _permuteUnique(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-        length = len(nums)
-        if length == 0:
-            return []
-        if length == 1:
-            return [nums]
-        res = []
-        for i in xrange(length):
-            if i > 0 and nums[i] == nums[i-1]:
-                continue
-            l = self._permuteUnique(nums[:i] + nums[i+1:])
-            for element in l:
-                element = [nums[i]] + element
-                res.append(element)
-        return res
+func dfs(combination []int, visited []bool, nums []int, res *[][]int) {
+    if len(combination) == len(nums) {
+        combination2 := make([]int, len(combination))
+        copy(combination2, combination)
+        *res = append(*res, combination2)
+        return
+    }
+
+    for i, b := range visited {
+        if b { 
+            continue
+        }
+        // avoid duplicated caculation
+        if i>0 && nums[i-1] == nums[i] && ! visited[i-1] {
+            continue
+        }
+        combination = append(combination, nums[i])
+        visited[i] = true
+        dfs(combination, visited, nums, res)
+        visited[i] = false
+        combination = combination[0:len(combination)-1]
+    }
+}
+
+func permuteUnique(nums []int) [][]int {
+    sort.Ints(nums)        
+    res := [][]int{}
+    visited := make([]bool, len(nums))
+    dfs([]int{}, visited, nums, &res)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

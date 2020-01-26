@@ -1,0 +1,78 @@
+* LeetCode: Reachable Nodes In Subdivided Graph                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, dijkstra
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reachable-nodes-in-subdivided-graph"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/followup-dijkstra][#dijkstra]]
+---------------------------------------------------------------------
+Starting with an undirected graph (the "original graph") with nodes from 0 to N-1, subdivisions are made to some of the edges.
+
+The graph is given as follows: edges[k] is a list of integer pairs (i, j, n) such that (i, j) is an edge of the original graph,
+
+and n is the total number of new nodes on that edge. 
+
+Then, the edge (i, j) is deleted from the original graph, n new nodes (x_1, x_2, ..., x_n) are added to the original graph,
+
+and n+1 new edges (i, x_1), (x_1, x_2), (x_2, x_3), ..., (x_{n-1}, x_n), (x_n, j) are added to the original graph.
+
+Now, you start at node 0 from the original graph, and in each move, you travel along one edge. 
+
+Return how many nodes you can reach in at most M moves.
+ 
+Example 1:
+[[image-blog:Reachable Nodes In Subdivided Graph][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/reachable-nodes-in-subdivided-graph/my.png]]
+
+#+BEGIN_EXAMPLE
+Input: edges = [[0,1,10],[0,2,1],[1,2,2]], M = 6, N = 3
+Output: 13
+Explanation: 
+The nodes that are reachable in the final graph after M = 6 moves are indicated below.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: edges = [[0,1,4],[1,2,6],[0,2,8],[1,3,1]], M = 10, N = 4
+Output: 23
+#+END_EXAMPLE
+ 
+Note:
+
+1. 0 <= edges.length <= 10000
+- 0 <= edges[i][0] < edges[i][1] < N
+- There does not exist any i != j for which edges[i][0] == edges[j][0] and edges[i][1] == edges[j][1].
+- The original graph has no parallel edges.
+- 0 <= edges[i][2] <= 10000
+- 0 <= M <= 10^9
+- 1 <= N <= 3000
+- A reachable node is a node that can be travelled to using at most M moves starting from node 0.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reachable-nodes-in-subdivided-graph][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/reachable-nodes-in-subdivided-graph
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

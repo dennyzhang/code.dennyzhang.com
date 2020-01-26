@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     hashmap, inspiring
+:type:     hashmap, inspiring, dfs, bfs
 :END:
 ---------------------------------------------------------------------
 Kill Process
@@ -13,7 +13,7 @@ Kill Process
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Given n processes, each process has a unique PID (process id) and its PPID (parent process id).
 
@@ -50,36 +50,54 @@ Credits To: [[https://leetcode.com/problems/kill-process/description/][leetcode.
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: DFS
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/kill-process
-## Basic Ideas: hashmap
-##    Find children by id
+## Basic Ideas: hashmap + tree
+##
+##   Build hashmap from parent to children
 ##
 ## Complexity: Time O(n), Space O(n)
 class Solution:
-    def killProcess(self, pid, ppid, kill):
-        """
-        :type pid: List[int]
-        :type ppid: List[int]
-        :type kill: int
-        :rtype: List[int]
-        """
-        import collections
-        d = collections.defaultdict(lambda: [])
-        for i in range(len(pid)):
-            p, q = pid[i], ppid[i]
-            d[q].append(p)
+    def killProcess(self, pid: List[int], ppid: List[int], kill: int) -> List[int]:
+        m = collections.defaultdict(lambda: [])
+        for p, pp in zip(pid, ppid):
+            m[pp].append(p)
+        res = []
+        def dfs(p):
+            nonlocal res
+            res.append(p)
+            # leaf
+            if not m[p]: return
+            for q in m[p]:
+                dfs(q)
+        dfs(kill)
+        return res
+#+END_SRC
 
+- Solution: BFS
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/kill-process
+## Basic Ideas: hashmap + tree
+##
+##   Build hashmap from parent to children
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def killProcess(self, pid: List[int], ppid: List[int], kill: int) -> List[int]:
+        m = collections.defaultdict(lambda: [])
+        for p, pp in zip(pid, ppid):
+            m[pp].append(p)
+
+        res = [kill]
         queue = collections.deque()
         queue.append(kill)
-        res = [kill]
-        while len(queue) != 0:
-            for k in range(len(queue)):
-                q = queue.popleft()
-                for p in d[q]:
-                    res.append(p)
-                    queue.append(p)
+        while len(queue)>0:
+            for i in range(len(queue)):
+                p = queue.popleft()
+                for q in m[p]:
+                    queue.append(q)
+                    res.append(q)
         return res
 #+END_SRC
 

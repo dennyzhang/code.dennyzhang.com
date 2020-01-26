@@ -40,6 +40,36 @@ Credits To: [[https://leetcode.com/problems/binary-tree-level-order-traversal/de
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/binary-tree-level-order-traversal
+## Basic Ideas: bfs
+##
+## Complexity: Time O(n), Space O(w)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+class Solution:
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        if not root: return []
+        q = collections.deque([root])
+        res = []
+        while len(q) > 0:
+            levels = []
+            for i in range(len(q)):
+                node = q.popleft()
+                levels.append(node.val)
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            res.append(levels)
+        return res
+#+END_SRC
+
+- Solution
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/binary-tree-level-order-traversal
 // Basic Ideas: BFS
@@ -74,41 +104,6 @@ func levelOrder(root *TreeNode) [][]int {
     }
     return res
 }
-#+END_SRC
-
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/binary-tree-level-order-traversal
-## Baisc Idea: BFS
-## Complexity: Time O(n), Space O(n)
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-class Solution(object):
-    def levelOrder(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
-
-        if root is None: return []
-        res = []
-        queue = collections.deque()
-        queue.append(root)
-        while len(queue) != 0:
-            level_elements = []
-            for i in xrange(len(queue)):
-                element = queue.popleft()
-                level_elements.append(element.val)
-                if element.left:
-                    queue.append(element.left)
-                if element.right:
-                    queue.append(element.right)
-            res.append(level_elements)
-        return res
 #+END_SRC
 
 #+BEGIN_HTML

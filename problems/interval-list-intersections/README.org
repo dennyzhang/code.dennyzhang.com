@@ -47,6 +47,33 @@ Credits To: [[https://leetcode.com/problems/interval-list-intersections/descript
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/interval-list-intersections
+## Basic Ideas: merge two sorted list
+##
+##  Always compare two head ones
+##  Keep the one with bigger ending point
+##
+## Complexity: Time O(n+m), Space O(1)
+class Solution:
+    def intervalIntersection(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
+        res = []
+        i, j = 0, 0
+        while i<len(A) and j<len(B):
+            # overlapping region
+            x = max(A[i][0], B[j][0])
+            y = min(A[i][1], B[j][1])
+            if y>=x:
+                res.append([x, y])
+            # choose which to move
+            if A[i][1]>B[j][1]:
+                j += 1
+            else:
+                i += 1
+        return res
+#+END_SRC
+
+- Solution:
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/interval-list-intersections

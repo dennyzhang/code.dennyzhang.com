@@ -57,6 +57,29 @@ Credits To: [[https://leetcode.com/problems/reverse-substrings-between-each-pair
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/reverse-substrings-between-each-pair-of-parentheses
+## Basic Ideas:
+##
+##    When ), try to pop
+##
+## Complexity: Time O(n*n), Space O(n)
+class Solution:
+    def reverseParentheses(self, s: str) -> str:
+        stack = collections.deque()
+        for ch in s:
+            if ch != ")":
+                stack.append(ch)
+            else:
+                w = ""
+                while len(stack)>0 and stack[-1] != "(":
+                    w += stack.pop()[::-1]
+                stack.pop() # pop (
+                stack.append(w) # push new string
+        return "".join(stack)
+#+END_SRC
+
 - Solution: stack - only push all characters except ')'
 
 #+BEGIN_SRC go

@@ -11,6 +11,7 @@ Number of Ways to Stay in the Same Place After Some Steps
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/unique-binary-search-trees][Leetcode: Unique Binary Search Trees]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 - Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-countdistinctmoves][#countdistinctmoves]] 
@@ -58,6 +59,48 @@ Credits To: [[https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-p
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/number-of-ways-to-stay-in-the-same-place-after-some-steps
+## Basic Ideas: dynamic programming
+##
+##   dp(i, j): i steps, j pos
+##
+##   dp(0, 0) = 1
+##    From 0 step to n steps
+##
+##      dp(i-1, j) # stay
+##      dp(i-1, j+1) # move from left
+##      dp(i-1, j-1) # move from right
+##
+##    return dp(n-1, 0)
+##
+##   When arrLen is too big, it doesn't make sense, 
+##      since steps may not be able to move that far
+##   
+## Complexity: Time ?, Space ?
+class Solution:
+    def numWays(self, steps: int, arrLen: int) -> int:
+        mod = 10**9+7
+        # The farset we can move it steps+1
+        arrLen = min(steps+1, arrLen)
+        n, m = steps, arrLen
+        dp = [[0 for _ in range(m)] for _ in range(n+1)]
+        # base condition
+        dp[0][0] = 1
+        # from bottom to up: less steps
+        for i in range(1, n+1):
+            for j in range(m):
+                dp[i][j] = dp[i-1][j]
+                if j-1>=0:
+                    dp[i][j] += dp[i-1][j-1]
+                if j+1<m:
+                    dp[i][j] += dp[i-1][j+1]
+                dp[i][j] = dp[i][j]%mod
+        return dp[-1][0]
+#+END_SRC
+
 - Solution:
 
 #+BEGIN_SRC go

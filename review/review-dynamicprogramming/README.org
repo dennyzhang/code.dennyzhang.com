@@ -21,14 +21,15 @@ Trade space for time.
 ---------------------------------------------------------------------
 
 *Basic Abstractions*
-| Name                                | Summary                                          |
-|-------------------------------------+--------------------------------------------------|
-| *Optimal Substructure*              |                                                  |
-| *DP* vs *recursive+memoization*     |                                                  |
-|-------------------------------------+--------------------------------------------------|
-| Non-linear dynamic problem problems | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][LeetCode: Minimum Score Triangulation of Polygon]] |
+| Name                                | Summary                                                   |
+|-------------------------------------+-----------------------------------------------------------|
+| Typical dynamicprogramming problems | [[https://code.dennyzhang.com/review-knapsack][#knapsack]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]], [[https://code.dennyzhang.com/followup-treedp][#treedp]], [[https://code.dennyzhang.com/review-minimax][#minimax]], [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]] |
+| Typical dynamicprogramming problems | [[https://code.dennyzhang.com/followup-lis][#lis]], [[https://code.dennyzhang.com/followup-lcs][#lcs]], [[https://code.dennyzhang.com/followup-coin][#coin]], [[https://code.dennyzhang.com/followup-paintfence][#paintfence]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]], [[https://code.dennyzhang.com/followup-houserobber][#houserobber]]   |
+|-------------------------------------+-----------------------------------------------------------|
+| *Optimal Substructure*              |                                                           |
+| *DP* vs *recursive+memoization*     |                                                           |
 
-*Questions*
+*Top Questions*
 
 | Num | Problem                                         | Time Complexity | Summary                                                     |
 |-----+-------------------------------------------------+-----------------+-------------------------------------------------------------|
@@ -38,24 +39,26 @@ Trade space for time.
 |   4 | LPS - Longest Palindromic Subsequence           | O(n)            | [[https://code.dennyzhang.com/longest-palindromic-subsequence][LeetCode: Longest Palindromic Subsequence]]                   |
 |   5 | [[https://en.wikipedia.org/wiki/Longest_palindromic_substring][Longest Palindromic Substring]]                   | O(n^2)          | [[https://code.dennyzhang.com/longest-palindromic-substring][LeetCode: Longest Palindromic Substring]]                     |
 |   6 | [[https://en.wikipedia.org/wiki/Edit_distance][Edit distance of two strings]]                    | O(n^2)          | [[https://code.dennyzhang.com/edit-distance][LeetCode: Edit Distance]]                                     |
-|   7 | Maximum profits with certain costs              | O(n^2)          | [[https://code.dennyzhang.com/4-keys-keyboard][LeetCode: 4 Keys Keyboard]]                                   |
-|   8 | Count of distinct subsequence                   | O(n)            | [[https://code.dennyzhang.com/distinct-subsequences-ii][LeetCode: Distinct Subsequences II]]                          |
-|   9 | Count out of boundary paths in a 2D matrix      | O(n*m*N)        | [[https://code.dennyzhang.com/out-of-boundary-paths][LeetCode: Out of Boundary Paths]]                             |
-|  10 | [[https://en.wikipedia.org/wiki/Regular_expression][Regular Expression Matching]]                     | O(n*m)          | [[https://code.dennyzhang.com/regular-expression-matching][LeetCode: Regular Expression Matching]]                       |
-|  11 | Wildcard Matching                               | O(n*m)          | [[https://code.dennyzhang.com/wildcard-matching][LeetCode: Wildcard Matching]]                                 |
-|  12 | Multiple choices for each step                  | O(n*m)          | [[https://code.dennyzhang.com/filling-bookcase-shelves][LeetCode: Filling Bookcase Shelves]]                          |
-|  13 | Knapsack: put array to bag A, B or discard it   | O(n*s)          | [[https://code.dennyzhang.com/tallest-billboard][LeetCode: Tallest Billboard]]                                 |
-|  14 | [[https://en.wikipedia.org/wiki/Knapsack_problem][Knapsack problem to maximize benefits]]           | O(n*s)          | [[https://code.dennyzhang.com/coin-change][LeetCode: Coin Change]]                                       |
-|  15 | Minimum Cost to Merge Stones                    | O(n^3)          | [[https://code.dennyzhang.com/minimum-cost-to-merge-stones][LeetCode: Minimum Cost to Merge Stones]]                      |
-|  16 | DP over interval: [[https://en.wikipedia.org/wiki/Minimum-weight_triangulation][Minimum-weight triangulation]]  | O(n^3)          | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][LeetCode: Minimum Score Triangulation of Polygon]]            |
-|  17 | Burst Balloons                                  | O(n^3)          | [[https://code.dennyzhang.com/burst-balloons][LeetCode: Burst Balloons]]                                    |
-|  18 | DP based on states, instead of possible actions | O(n)            | [[https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-with-cooldown][LeetCode: Best Time to Buy and Sell Stock with Cooldown]]     |
-|  19 | Remove Boxes                                    | O(n^4)          | [[https://code.dennyzhang.com/remove-boxes][LeetCode: Remove Boxes]]                                      |
-|  20 | Largest Sum of Averages                         | O(k*n*n)        | [[https://code.dennyzhang.com/largest-sum-of-averages][LeetCode: Largest Sum of Averages]]                           |
-|  21 | Uncrossed Lines                                 | O(n*m)          | [[https://code.dennyzhang.com/uncrossed-lines][LeetCode: Uncrossed Lines]]                                   |
-|  22 | treedp: Binary Trees With Factors               | O(n^2)          | [[https://code.dennyzhang.com/binary-trees-with-factors][LeetCode: Binary Trees With Factors]]                         |
-|  23 | DP based on values instead of positions         | O(n)            | [[https://code.dennyzhang.com/minimum-distance-to-type-a-word-using-two-fingers][LeetCode: Minimum Distance to Type a Word Using Two Fingers]] |
-|  24 | Video Stitching                                 | O(n*m)          | [[https://code.dennyzhang.com/video-stitching][LeetCode: Video Stitching]]                                   |
+|   7 | Maximal Square                                  | O(n*m)          | [[https://code.dennyzhang.com/maximal-square][Leetcode: Maximal Square]]                                    |
+|   8 | Maximum profits with certain costs              | O(n^2)          | [[https://code.dennyzhang.com/4-keys-keyboard][LeetCode: 4 Keys Keyboard]]                                   |
+|   9 | Count of distinct subsequence                   | O(n)            | [[https://code.dennyzhang.com/distinct-subsequences-ii][LeetCode: Distinct Subsequences II]]                          |
+|  10 | Count out of boundary paths in a 2D matrix      | O(n*m*N)        | [[https://code.dennyzhang.com/out-of-boundary-paths][LeetCode: Out of Boundary Paths]]                             |
+|  11 | [[https://en.wikipedia.org/wiki/Regular_expression][Regular Expression Matching]]                     | O(n*m)          | [[https://code.dennyzhang.com/regular-expression-matching][LeetCode: Regular Expression Matching]]                       |
+|  12 | Wildcard Matching                               | O(n*m)          | [[https://code.dennyzhang.com/wildcard-matching][LeetCode: Wildcard Matching]]                                 |
+|  13 | Multiple choices for each step                  | O(n*m)          | [[https://code.dennyzhang.com/filling-bookcase-shelves][LeetCode: Filling Bookcase Shelves]]                          |
+|  14 | Knapsack: put array to bag A, B or discard it   | O(n*s)          | [[https://code.dennyzhang.com/tallest-billboard][LeetCode: Tallest Billboard]]                                 |
+|  15 | [[https://en.wikipedia.org/wiki/Knapsack_problem][Knapsack problem to maximize benefits]]           | O(n*s)          | [[https://code.dennyzhang.com/coin-change][LeetCode: Coin Change]]                                       |
+|  16 | Minimum Cost to Merge Stones                    | O(n^3)          | [[https://code.dennyzhang.com/minimum-cost-to-merge-stones][LeetCode: Minimum Cost to Merge Stones]]                      |
+|  17 | DP over interval: [[https://en.wikipedia.org/wiki/Minimum-weight_triangulation][Minimum-weight triangulation]]  | O(n^3)          | [[https://code.dennyzhang.com/minimum-score-triangulation-of-polygon][LeetCode: Minimum Score Triangulation of Polygon]]            |
+|  18 | Burst Balloons                                  | O(n^3)          | [[https://code.dennyzhang.com/burst-balloons][LeetCode: Burst Balloons]]                                    |
+|  19 | DP based on states, instead of possible actions | O(n)            | [[https://code.dennyzhang.com/best-time-to-buy-and-sell-stock-with-cooldown][LeetCode: Best Time to Buy and Sell Stock with Cooldown]]     |
+|  20 | Remove Boxes                                    | O(n^4)          | [[https://code.dennyzhang.com/remove-boxes][LeetCode: Remove Boxes]]                                      |
+|  21 | Largest Sum of Averages                         | O(k*n*n)        | [[https://code.dennyzhang.com/largest-sum-of-averages][LeetCode: Largest Sum of Averages]]                           |
+|  22 | Uncrossed Lines                                 | O(n*m)          | [[https://code.dennyzhang.com/uncrossed-lines][LeetCode: Uncrossed Lines]]                                   |
+|  23 | treedp: Binary Trees With Factors               | O(n^2)          | [[https://code.dennyzhang.com/binary-trees-with-factors][LeetCode: Binary Trees With Factors]]                         |
+|  24 | DP based on values instead of positions         | O(n)            | [[https://code.dennyzhang.com/minimum-distance-to-type-a-word-using-two-fingers][LeetCode: Minimum Distance to Type a Word Using Two Fingers]] |
+|  25 | Video Stitching                                 | O(n*m)          | [[https://code.dennyzhang.com/video-stitching][LeetCode: Video Stitching]]                                   |
+|  26 | Maximum Profit in Job Scheduling                | O(n*log(n))     | [[https://code.dennyzhang.com/maximum-profit-in-job-scheduling][Leetcode: Maximum Profit in Job Scheduling]]                  |
 #+TBLFM: $1=@-1$1+1;N
 
 | Name                                                  | Example                                                                |

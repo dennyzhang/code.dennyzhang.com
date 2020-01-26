@@ -13,7 +13,7 @@ Count of Smaller Numbers After Self
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-mergesort][#mergesort]]
+- Tag: [[https://code.dennyzhang.com/review-mergesort][#mergesort]],  [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]], [[https://code.dennyzhang.com/review-recursive][#recursive]] 
 ---------------------------------------------------------------------
 You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
 
@@ -37,7 +37,79 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/count-of-smaller-numbers-after-self
+// Basic Ideas: merge sort
+//
+//   nums[left...mid], nums[mid+1...right]
+//
+//    2 7 8  | 4 5
+//
+// Complexity: Time O(n*log(n)), Space O(1)
+var count []int
 
+func mergesort(nums []int, left int, right int, indices []int) {
+    if left>=right {
+        return
+    }
+    mid := left+(right-left)/2
+    mergesort(nums, left, mid, indices)
+    mergesort(nums, mid+1, right, indices)
+    // merge sort to update indices
+    // 2, 5 | 1, 6
+    v := 0
+    for i, j := left, mid+1; i<=mid || j<=right; {
+        if j>right {
+            count[indices[i]] += v
+            i++
+            continue
+        }
+        if i>mid {
+            j++
+            continue
+        }
+        if nums[indices[i]] <= nums[indices[j]] {
+            count[indices[i]] += v
+            i++
+        } else {
+            v++
+            j++
+        }
+    }
+    // merge sort to update nums
+    new_indices := make([]int, right-left+1)
+    for i, j, k := left, mid+1, 0; i<=mid || j<=right; k++ {
+        if i>mid {
+            new_indices[k] = indices[j]
+            j++
+            continue
+        }
+        if j>right {
+            new_indices[k] = indices[i]
+            i++
+            continue
+        }
+
+        if nums[indices[i]] < nums[indices[j]] {
+            new_indices[k] = indices[i]
+            i++
+        } else {
+            new_indices[k] = indices[j]
+            j++
+        }
+    }
+    // copy result
+    copy(indices[left:right+1], new_indices)
+    // fmt.Println(left, right, count, indices)
+}
+
+func countSmaller(nums []int) []int {
+    indices := make([]int, len(nums))    
+    for i, _ := range indices {
+        indices[i] = i
+    }
+    count = make([]int, len(nums))
+    mergesort(nums, 0, len(nums)-1, indices)
+    return count
+}
 #+END_SRC
 
 #+BEGIN_HTML

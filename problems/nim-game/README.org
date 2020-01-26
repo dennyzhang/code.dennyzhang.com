@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     numbers, game
+:type:     game, minimax
 :END:
 ---------------------------------------------------------------------
 Do you want to play first or after, if you are determined to win.
@@ -13,7 +13,7 @@ Do you want to play first or after, if you are determined to win.
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-game][#game]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-minimax][#minimax]]
 ---------------------------------------------------------------------
 You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
 

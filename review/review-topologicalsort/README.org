@@ -21,7 +21,7 @@ Topological Sort Problems
 | unexamined nodes with no incoming edges |                                 |
 | Unused edge                             |                                 |
 
-*Questions*
+*Top Questions*
 | Name                                                                         | Example                                               |
 |------------------------------------------------------------------------------+-------------------------------------------------------|
 | Time complexity should be O(n+e)                                             | O(n^2) would work, but not optimal                    |

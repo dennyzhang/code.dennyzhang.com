@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     monotone, inspiring, rectangle
+:type:     monotone, inspiring, rectangle, redo
 :END:
 ---------------------------------------------------------------------
 Maximal Rectangle

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval
+:type:     interval, linesweep, heap
 :END:
 ---------------------------------------------------------------------
 Identity Employee Free Time
@@ -13,7 +13,7 @@ Identity Employee Free Time
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-linesweep][#linesweep]], [[https://code.dennyzhang.com/review-heap][#heap]]
 ---------------------------------------------------------------------
 We are given a list schedule of employees, which represents the working time for each employee.
 
@@ -56,18 +56,44 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/employee-free-time
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+## Basic Ideas: heap + greedy
+##
+##   skyline problem: line sweep
+##
+##  For each interval, (s, e)
+##    s: block the following interval
+##    e: release the following interval
+##
+##  Per requirement, list of list can be used by list
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+"""
+# Definition for an Interval.
+class Interval:
+    def __init__(self, start: int = None, end: int = None):
+        self.start = start
+        self.end = end
+"""
+class Solution:
+    def employeeFreeTime(self, schedule: '[[Interval]]') -> '[Interval]':
+        res = []
+        intervals = []
+        for l in schedule:
+            for v in l:
+                intervals.append([v.start, 0])
+                intervals.append([v.end, 1])
+        
+        # first sort by time, then type (start, then close)
+        intervals.sort()
 
-class Solution(object):
-    def employeeFreeTime(self, schedule):
-        """
-        :type schedule: List[List[Interval]]
-        :rtype: List[Interval]
-        """
+        cover = 0 # how many cover not closed
+        prev = -1
+        for cur in intervals:
+            if prev != -1 and cover == 0:
+                res.append(Interval(prev, cur[0]))
+            prev = cur[0]
+            cover += 1 if (cur[1]==0) else -1
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

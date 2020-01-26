@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, sorting, greedy, meetingconflict, frogjump, slidingwindow, redo, classic
+:type:     dynamicprogramming, sorting, greedy, meetingconflict, frogjump, slidingwindow, classic, redo
 :END:
 ---------------------------------------------------------------------
 Video Stitching

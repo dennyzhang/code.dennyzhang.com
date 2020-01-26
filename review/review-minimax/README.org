@@ -13,6 +13,10 @@ minimax problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
+| Name    | Summary                                                                          |
+|---------+----------------------------------------------------------------------------------|
+| minimax | Usually solved by DP + recursive. For DP, grow from right to left. =nums[i:...]= |
+
 See all minimax problems: [[https://code.dennyzhang.com/tag/minimax/][#minimax]]
 [display-posts tag="minimax" posts_per_page="100" orderby="title"]
 

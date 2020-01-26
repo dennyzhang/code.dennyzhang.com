@@ -11,7 +11,7 @@ Interval Problems
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-interval"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-*Questions*
+*Top Questions*
 | Name                                                             | Example                                                     |
 |------------------------------------------------------------------+-------------------------------------------------------------|
 | Two ways to check whether two intervals overlap                  | _min(y1, y2) > max(x1, x2)_; _x1<y2 && x2>y1_               |

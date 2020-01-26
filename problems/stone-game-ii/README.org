@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, game, minimax
+:type:     dynamicprogramming, game, minimax, recursive
 :END:
 ---------------------------------------------------------------------
 Stone Game II
@@ -13,7 +13,7 @@ Stone Game II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-minimax][#minimax]], [[https://code.dennyzhang.com/review-dynamicprogramming][dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-game][#game]], [[https://code.dennyzhang.com/review-minimax][#minimax]], [[https://code.dennyzhang.com/review-dynamicprogramming][dynamicprogramming]], [[https://code.dennyzhang.com/review-recursive][recursive]]
 ---------------------------------------------------------------------
 Alex and Lee continue their games with piles of stones.  There are a number of piles arranged in a row, and each pile has a positive integer number of stones piles[i].  The objective of the game is to end with the most stones. 
 
@@ -47,7 +47,73 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/stone-game-ii
+// Basic Ideas: minimax
+//
+//   dp(i, m): when there are piles[i:] to choose. And m is the threshold.
+//   The result would be dp(0, 1) 
+//
+//   dp(i, j) = 
+//           max(sufsum[i] - dp[i+X][max(j, X)])
+//            loop: 1<=X<=2j
+//
+// Complexity: Time O(n^3), Space O(n^2)
+/*
+2, 7, 9, 4, 4
 
+dp(0, 1) = 
+    max(sufsum[0] - dp(1, 1), // take one
+        sufsum[0] - dp(2, 2)) // take two
+*/
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func dfs(sufsum []int, i int, j int, m map[[2]int]int) int {
+    if i>=len(sufsum) {
+        return 0
+    }
+    if v, ok := m[[2]int{i, j}]; ok {
+        return v
+    }
+    res := sufsum[i]
+    v := 1<<32-1
+    for k:=1; k<=2*j; k++ {
+        if v == 0 {
+            break
+        }
+        v = min(v, dfs(sufsum, i+k, max(j, k), m))
+    }
+    if v == 1<<32-1 {
+        v = 0
+    }
+    res -= v
+    m[[2]int{i, j}] = res
+    return res
+}
+
+func stoneGameII(piles []int) int {
+    m := map[[2]int]int{}
+    sufsum := make([]int, len(piles))
+    sum := 0
+    for j:=len(piles)-1; j>=0; j-- {
+        sum += piles[j]
+        sufsum[j] = sum
+    }
+    res := dfs(sufsum, 0, 1, m)
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

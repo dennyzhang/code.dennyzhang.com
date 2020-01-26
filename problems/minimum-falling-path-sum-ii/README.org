@@ -1,0 +1,127 @@
+* LeetCode: Minimum Falling Path Sum II                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-falling-path-sum-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+Given a square grid of integers arr, a falling path with non-zero shifts is a choice of exactly one element from each row of arr, such that no two elements chosen in adjacent rows are in the same column.
+
+Return the minimum sum of a falling path with non-zero shifts.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [[1,2,3],[4,5,6],[7,8,9]]
+Output: 13
+Explanation: 
+The possible falling paths are:
+[1,5,9], [1,5,7], [1,6,7], [1,6,8],
+[2,4,8], [2,4,9], [2,6,7], [2,6,8],
+[3,4,8], [3,4,9], [3,5,7], [3,5,9]
+The falling path with the smallest sum is [1,5,7], so the answer is 13.
+#+END_EXAMPLE
+
+Constraints:
+
+- 1 <= arr.length == arr[i].length <= 200
+- -99 <= arr[i][j] <= 99
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-falling-path-sum-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-falling-path-sum-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-falling-path-sum-ii
+## Basic Ideas: dynamic programming
+##
+##  From top to down, each time it fall for one row
+##  Each cell holds the minimum sum it can acheive
+##
+##  It can comes from any element from previous row, but the same column
+##  Not just next and right two columns
+##
+##  dp(i, j)
+##    
+##      arr[i][j]+min(dp(i-1, k))
+##                 k != j
+##
+##  return min of the last row
+##
+## Complexity: Time O(n*m), Space O(m)
+class Solution:
+    def minFallingPathSum(self, arr: List[List[int]]) -> int:
+        n, m = len(arr), len(arr[0])
+        dp = [arr[0][i] for i in range(m)]
+        # dp from top to down, from left to right
+        for i in range(1, n):
+            dp2 = copy.deepcopy(dp)
+            for j in range(m):
+                v = dp2[j]
+                dp2[j] = sys.maxsize
+                # get the minimum result
+                dp[j] = arr[i][j]+min(dp2)
+                # backtracking
+                dp2[j] = v
+        return min(dp)
+#+END_SRC
+
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-falling-path-sum-ii
+## Basic Ideas: dynamic programming
+##
+##  From top to down, each time it fall for one row
+##  Each cell holds the minimum sum it can acheive
+##
+##  It can comes from any element from previous row, but the same column
+##  Not just next and right two columns
+##
+##  dp(i, j)
+##    
+##      arr[i][j]+min(dp(i-1, k))
+##                 k != j
+##
+##  return min of the last row
+##
+## Complexity: Time O(n*m), Space O(n*m)
+class Solution:
+    def minFallingPathSum(self, arr: List[List[int]]) -> int:
+        n, m = len(arr), len(arr[0])
+        dp = [[0 for _ in range(m)] for _ in range(n)]
+        # base condition
+        for j in range(m):
+            dp[0][j] = arr[0][j]
+        # dp from top to down, from left to right
+        for i in range(1, n):
+            for j in range(m):
+                v = dp[i-1][j]
+                dp[i-1][j] = sys.maxsize
+                # get the minimum result
+                dp[i][j] = arr[i][j]+min(dp[i-1])
+                # backtracking
+                dp[i-1][j] = v
+        return min(dp[-1])
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

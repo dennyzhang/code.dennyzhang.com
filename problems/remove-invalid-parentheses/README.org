@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, dfs, inspiring, parentheses
+:type:     bfs, dfs, inspiring, parentheses, backtracking, redo
 :END:
 ---------------------------------------------------------------------
 Remove Invalid Parentheses
@@ -13,7 +13,7 @@ Remove Invalid Parentheses
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/followup-parentheses][#parentheses]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+- Tag: [[https://code.dennyzhang.com/followup-parentheses][#parentheses]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
 
@@ -32,69 +32,63 @@ Credits To: [[https://leetcode.com/problems/remove-invalid-parentheses/descripti
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: backtracking
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/remove-invalid-parentheses
+// Basic Ideas: backtacking
+//
+// Complexity: Time O(2^n), Space O(w)
+func dfs(combination []byte, remainCnt int, leftCnt int, pos int, s string, m map[string]bool) {
+    if leftCnt < 0 {
+        return
+    }
+    if pos == len(s) {
+        if remainCnt == 0 && leftCnt == 0 {
+            m[string(combination)] = true
+        }
+        return
+    }
+    ch := s[pos]
+    if ch != '(' && ch != ')' {
+        combination = append(combination, ch)
+        dfs(combination, remainCnt, leftCnt, pos+1, s, m)
+    } else {
+        // drop
+        dfs(combination, remainCnt-1, leftCnt, pos+1, s, m)
+        // keep
+        combination = append(combination, ch)
+        v := leftCnt
+        if ch == '(' {
+            v++
+        } else {
+            v--
+        }
+        dfs(combination, remainCnt, v, pos+1, s, m)
+    }
+}
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/remove-invalid-parentheses
-## Basic Ideas: BFS
-##
-##   Start with s (removed the trailing '(')
-##   Find the neighbors: delete one )
-##
-##   Assumption:
-##         ()())a((: ()()a
-##         aabb: aabb
-##         x(: x
-##
-## Complexity: Time O(pow(2, n)*n), Space O(pow(2, n))
-class Solution:
-    def removeInvalidParentheses(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
-        index = -1
-        for i in range(len(s)-1, -1, -1):
-            if s[i] == '(': index = i
-            if s[i] == ')': break
-        if index != -1: s = s[0:index]
-        if self.isValid(s): return [s]
-        import collections
-        queue = collections.deque()
-        seen = set([])
-        
-        queue.append(s)
-        seen.add(s)
-
-        should_break = False
-        res = set([])
-        while len(queue) != 0:
-            for i in range(len(queue)):
-                item = queue.popleft()
-                for i in range(len(item)):
-                    item2 = item[0:i]+item[i+1:]
-                    if item[i] == ')':
-                        if self.isValid(item2):
-                            should_break = True
-                            res.add(item2)
-                        else:
-                            if item2 not in seen:
-                                queue.append(item2)
-                                seen.add(s)
-                        
-            if should_break: break
-        return list(res)
-                        
-    def isValid(self, s):
-        left_count = 0
-        for ch in s:
-            if ch == '(': left_count += 1
-            if ch == ')':
-                if left_count == 0: return False
-                left_count -= 1
-        return left_count == 0
-
-# s = Solution()
-# print(s.removeInvalidParentheses("x("))
+func removeInvalidParentheses(s string) []string {
+    // how many to be deleted
+    stack := []byte{}
+    for i, _ := range s {
+        ch := s[i]
+        if ch != '(' && ch != ')' {
+            continue
+        }
+        if ch == ')' && len(stack) > 0 && stack[len(stack)-1] == '(' {
+            stack = stack[0:len(stack)-1]
+        } else {
+            stack = append(stack, ch)
+        }
+    }
+    res := []string{}
+    m := map[string]bool{}
+    dfs([]byte{}, len(stack), 0, 0, s, m)
+    for s, _ := range m {
+        res = append(res, s)
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

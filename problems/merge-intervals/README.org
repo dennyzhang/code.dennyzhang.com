@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, mergelist
+:type:     interval, mergelist, sorting
 :END:
 ---------------------------------------------------------------------
 Merge Intervals
@@ -13,7 +13,7 @@ Merge Intervals
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]], [[https://code.dennyzhang.com/review-sorting][#sorting]]
 ---------------------------------------------------------------------
 Given a collection of intervals, merge all overlapping intervals.
 
@@ -32,22 +32,25 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/merge-intervals
-## Basic Ideas: Search by the starting values
+## Basic Ideas: sorting
+##
+##  Sort by starting point. If a tie, then by ending point
+##  The first one would be first interval
 ##
 ## Complexity: Time O(n*log(n)), Space O(n)
-class Solution(object):
-    def merge(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: List[Interval]
-        """
-        ret = []
-        for entry in sorted(intervals, key=lambda entry: entry.start):
-            if ret and entry.start <= ret[-1].end:
-                ret[-1].end = max(ret[-1].end, entry.end)
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        # sort by starting point first, then ending point
+        intervals.sort()
+        res = []
+        for v in intervals:
+            [s, e] = v
+            # overlapping
+            if res and res[-1][1] >= s:
+                res[-1][1] = max(res[-1][1], e)
             else:
-                ret.append(entry)
-        return ret
+                res.append(v)
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

@@ -29,7 +29,7 @@ Suffix tree: [[https://en.wikipedia.org/wiki/Suffix_tree][wikipedia link]]
 | Finding the longest common substring                       | [[https://en.wikipedia.org/wiki/Longest_common_substring_problem][Longest common substring problem]] |
 | Finding the longest palindrome in a string                 |                                  |
 
-*Questions*
+*Top Questions*
 | Num | Problem                                            | Summary                                           |
 |-----+----------------------------------------------------+---------------------------------------------------|
 |   1 | Extra datastructure in trie to save caculation     | [[https://code.dennyzhang.com/word-search-ii][LeetCode: Word Search II]]                          |

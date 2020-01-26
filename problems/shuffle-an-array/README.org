@@ -42,7 +42,7 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/shuffle-an-array
-## Basic Ideas: Fisher–Yates shuffle
+## Basic Ideas: Fisher-Yates shuffle
 ##        What if nums only has 0 or 1 element?
 ##
 ##        What if you generate a value, and map it into nums[i] and num[j]. Then swap these two?

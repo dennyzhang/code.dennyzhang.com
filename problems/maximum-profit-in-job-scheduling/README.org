@@ -2,17 +2,13 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarysearch
+:type:     binarysearch, dynamicprogramming, redo
 :END:
 ---------------------------------------------------------------------
 Maximum Profit in Job Scheduling
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<<<<<<< HEAD
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-profit-in-job-scheduling"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
-=======
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
->>>>>>> 9ecd667cda67df92a8f53ffa12b74e24fe318df5
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
@@ -53,27 +49,179 @@ Constraints:
 - 1 <= startTime[i] < endTime[i] <= 10^9
 - 1 <= profit[i] <= 10^4
 
-<<<<<<< HEAD
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-profit-in-job-scheduling][code.dennyzhang.com]]
 
 Credits To: [[https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/][leetcode.com]]
-=======
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
-
-Credits To: [[https://leetcode.com/problems/example/description/][leetcode.com]]
->>>>>>> 9ecd667cda67df92a8f53ffa12b74e24fe318df5
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: DP + binarysearch. (No need to store 2 states of take or skip)
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/maximum-profit-in-job-scheduling
+// Basic Ideas: DP + binarysearch
+//
+//   Sort jobs by ending time, instead of by starting time.
+//   (This offers a big help for binarysearch approach)
+//   Evaluate jobs one by one
+//
+//   For each job, two possible actions: take or don't take
+//
+//   dp(i, 0): don't take
+//   dp(i, 1): take
+//      How to get the result, when taking?
+//      For all previous jobs, if overlapped with current one, skip
+//
+//   The final result is the optimal one for all possible situations of dp(i,j)
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
+
+type MyNode struct {
+    s, e, p int
+}
+
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func jobScheduling(startTime []int, endTime []int, profit []int) int {
+    nums := make([]MyNode, len(startTime))    
+    for i, _ := range nums {
+        nums[i] = MyNode{s:startTime[i], e:endTime[i], p:profit[i]}
+    }
+    sort.Slice(nums, func(i, j int) bool {
+        return nums[i].e<nums[j].e
+    })
+
+    dp := make([]int, len(nums))
+    // DP
+    for i, _ := range nums {
+        // Take
+        // binary search
+        left, right := 0, len(nums)-1
+        target := nums[i].s
+        // may not exists
+        // Find the last insert location
+        for left<=right {
+            // fmt.Println(left, right)
+            mid := left+(right-left)/2
+            if nums[mid].e <= target {
+                // drop left half
+                left = mid+1
+            } else {
+                right = mid-1
+            }
+        }
+        dp[i] = nums[i].p
+        // right, left
+        if right >= 0 {
+            dp[i] += dp[right]
+        }
+        // don't take
+        if i>0 {
+            dp[i] = max(dp[i], dp[i-1])
+        }
+    }
+    return dp[len(dp)-1]
+}
+#+END_SRC
 - Solution:
 
 #+BEGIN_SRC go
-<<<<<<< HEAD
 // https://code.dennyzhang.com/maximum-profit-in-job-scheduling
-=======
-// https://code.dennyzhang.com/example
->>>>>>> 9ecd667cda67df92a8f53ffa12b74e24fe318df5
+// Basic Ideas: DP + binarysearch
+//
+//   Sort jobs by ending time, instead of by starting time.
+//   (This offers a big help for binarysearch approach)
+//   Evaluate jobs one by one
+//
+//   For each job, two possible actions: take or don't take
+//
+//   dp(i, 0): don't take
+//   dp(i, 1): take
+//      How to get the result, when taking?
+//      For all previous jobs, if overlapped with current one, skip
+//
+//   The final result is the optimal one for all possible situations of dp(i,j)
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+import "sort"
 
+type MyList []int
+
+var starts []int
+var profits []int
+
+func (a MyList) Len() int {
+    return len(a)
+}
+func (a MyList) Less(i, j int) bool {
+    if a[i] != a[j] {
+        return a[i]<a[j]
+    } else {
+        return starts[i]<starts[j]
+    }
+}
+func (a MyList) Swap(i, j int) {
+    a[i], a[j] = a[j], a[i]
+    starts[i], starts[j] = starts[j], starts[i]
+    profits[i], profits[j] = profits[j], profits[i]
+}
+
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func jobScheduling(startTime []int, endTime []int, profit []int) int {
+    starts = startTime
+    profits = profit
+
+    sort.Sort(MyList(endTime))
+    dp := make([]int, len(startTime))
+    res := 0
+
+    take, notake := 0, 0
+    // DP
+    for i, _ := range dp {
+        take2, notake2 := 0, 0
+        if i>0 {
+            notake2 = max(take, notake)
+        }
+        // get dp[i][1]
+        // binary search
+        left, right := 0, len(endTime)-1
+        target := startTime[i]
+        // may not exists
+        // Find the last insert location
+        for left<=right {
+            // fmt.Println(left, right)
+            mid := left+(right-left)/2
+            if endTime[mid] <= target {
+                // drop left half
+                left = mid+1
+            } else {
+                right = mid-1
+            }
+        }
+        take2 = profit[i]
+        // right, left
+        if right >= 0 {
+            take2 += dp[right]
+        }
+        take, notake = take2, notake2
+        dp[i] = max(take, notake)
+        res = max(res, dp[i])
+    }
+    return res
+}
 #+END_SRC
 
 #+BEGIN_HTML

@@ -25,7 +25,6 @@ Now given the next click position (row and column indices) among all the unrevea
 - If an empty square ('E') with no adjacent mines is revealed, then change it to revealed blank ('B') and all of its adjacent unrevealed squares should be revealed recursively.
 - If an empty square ('E') with at least one adjacent mine is revealed, then change it to a digit ('1' to '8') representing the number of adjacent mines.
 - Return the board when no more squares will be revealed.
- 
 
 Example 1:
 #+BEGIN_EXAMPLE
@@ -84,6 +83,58 @@ Credits To: [[https://leetcode.com/problems/minesweeper/description/][leetcode.c
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: DFS
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/minesweeper
+// Basic Ideas: dfs
+//
+// Notice: adjacent nodes mean 8 directions, not only 4 directions!
+//
+// Complexity: Time O(n*m), Space O(1)
+func dfs(i int, j int, board [][]byte) {
+    offsets := [][]int{[]int{-1, 0}, []int{-1, 1},
+                       []int{0, 1}, []int{1, 1},
+                       []int{1, 0}, []int{1, -1},
+                       []int{0, -1}, []int{-1, -1}}
+    if i<0 || i>=len(board) || j<0 || j>=len(board[0]) {
+        return
+    }
+    if board[i][j] == 'M' {
+        board[i][j] = 'X'
+        return
+    }
+    // already visited
+    if board[i][j] != 'E' {
+        return
+    }
+    
+    v := 0
+    for _, offset := range offsets {
+        i2, j2 := i+offset[0], j+offset[1]
+        if i2<0 || i2>=len(board) || j2<0 || j2>=len(board[0]) {
+            continue
+        }
+        if board[i2][j2] == 'M' {
+            v++
+        }
+    }
+    if v >= 1 {
+        board[i][j] = byte('0'+v)
+    } else {
+        board[i][j] = 'B'
+        for _, offset := range offsets {
+            dfs(i+offset[0], j+offset[1], board)
+        }
+    }
+}
+
+func updateBoard(board [][]byte, click []int) [][]byte {
+    dfs(click[0], click[1], board)
+    return board
+}
+#+END_SRC
+
 - Solution: BFS
 
 #+BEGIN_SRC go

@@ -33,6 +33,45 @@ Credits To: [[https://leetcode.com/problems/edit-distance/description/][leetcode
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: dp
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/edit-distance
+## Basic Ideas: dynamic programming
+##
+##   Each step there are three choices.
+##   The decision is made from left to right
+##
+##   dp(i, j): word1[:i], word2[:j]
+##       if word1[i] == word2[j]
+##         dp(i-1, j-1)
+##       if word1[i] != word2[j]
+##         1 + 
+##           dp(i-1, j-1) # replace
+##           dp(i, j-1) # delete word2[j] or insert one to word1 
+##           dp(i-1, j) # delete word1[i] or insert to word2
+##           
+## Complexity: Time O(n*m), Space O(n*m)
+class Solution:
+    def minDistance(self, word1: str, word2: str) -> int:
+        n, m = len(word1), len(word2)
+        # add virtual column and row
+        dp = [[0 for _ in range(m+1)] for _ in range(n+1)]
+        # base condition
+        for i in range(len(dp)):
+            dp[i][0] = i
+        for j in range(len(dp[0])):
+            dp[0][j] = j
+
+        # From top to down, from left to right
+        for i in range(1, n+1):
+            for j in range(1, m+1):
+                if word1[i-1] == word2[j-1]:
+                    dp[i][j] = dp[i-1][j-1]
+                else:
+                    dp[i][j] = 1+min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j])
+        return dp[n][m]
+#+END_SRC
+
 - Solution: dp - Time O(n*m), Space O(n*m)
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/edit-distance

@@ -18,10 +18,11 @@ Here we try to compile a list of inspiring DFS problems.
 | Name                            | Summary                                                                         |
 |---------------------------------+---------------------------------------------------------------------------------|
 | dfs avoid duplicate caculations | Maintain state array. And update it at the end of dfs [[https://code.dennyzhang.com/course-schedule][LeetCode: Course Schedule]] |
+| For backtracking in DFS         | When and what to do backtracking                                                |
 
 *Scenarios*
 *Code Skeleton*
-*Questions*
+*Top Questions*
 | Name                                                                  | Example                  |
 |-----------------------------------------------------------------------+--------------------------|
 | In matrix dfs, change cell to impossible value to avoid state hashmap | [[https://code.dennyzhang.com/word-search-ii][LeetCode: Word Search II]] |

@@ -39,33 +39,27 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/reverse-words-in-a-string-ii
-## Basic Ideas: Reverse string. Then find the groups, and reverse them.
+## Basic Ideas: two pointer
+##
+##  Double reverse
 ##
 ## Complexity: Time O(n), Space O(1)
 class Solution:
-    def reverseWords(self, str):
+    def reverseWords(self, s: List[str]) -> None:
         """
-        :type str: List[str]
-        :rtype: void Do not return anything, modify str in-place instead.
+        Do not return anything, modify s in-place instead.
         """
-        length = len(str)
-        self.myReverseString(str, 0, length-1)
+        def reverse(left, right):
+            while left<right:
+                s[left], s[right] = s[right], s[left]
+                left, right = left+1, right-1
 
-        # find the groups seperated by whitespace
-        left = 0
-        for i in range(0, length):
-            if i == length-1:
-                # no tailing whitespace
-                self.myReverseString(str, left, i)
-            else:
-                if str[i] == ' ':
-                    self.myReverseString(str, left, i-1)
-                    left = i + 1
-
-    def myReverseString(self, str, left, right):
-        while left<right:
-            str[left], str[right] = str[right], str[left]
-            left, right = left+1, right-1
+        reverse(0, len(s)-1)
+        prev = 0
+        for i in range(len(s)+1):
+            if i == len(s) or s[i] == " ":
+                reverse(prev, i-1)
+                prev = i+1
 #+END_SRC
 
 #+BEGIN_HTML

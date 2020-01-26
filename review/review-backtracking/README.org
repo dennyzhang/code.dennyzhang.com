@@ -13,15 +13,19 @@ Backtracking Problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-*Questions*
-| Name                                             | Summary                             |
-|--------------------------------------------------+-------------------------------------|
-| Permutation vs Combination                       | [[https://code.dennyzhang.com/campus-bikes-ii][LeetCode: Campus Bikes II]]           |
-| Permutation: All elements must take              | [[https://code.dennyzhang.com/pyramid-transition-matrix][LeetCode: Pyramid Transition Matrix]] |
-| Combination: All elements can take or don't take | [[https://code.dennyzhang.com/subsets-ii][LeetCode: Subsets II]]                |
-| Define dfs backtracking function                 | [[https://code.dennyzhang.com/verbal-arithmetic-puzzle][LeetCode: Verbal Arithmetic Puzzle]]  |
 
-- Use backtracking to try all possible candidates
+Use backtracking to try all possible candidates
+
+*Top Questions*
+| Num | Problem                                          | Summary                             |
+|-----+--------------------------------------------------+-------------------------------------|
+|   1 | Generate unique permutation                      | [[https://code.dennyzhang.com/permutations-ii][LeetCode: Permutations II]]           |
+|   2 | Permutation: All elements must take              | [[https://code.dennyzhang.com/pyramid-transition-matrix][LeetCode: Pyramid Transition Matrix]] |
+|   3 | Combination: All elements can take or don't take | [[https://code.dennyzhang.com/subsets-ii][LeetCode: Subsets II]]                |
+|   4 | Expression Add Operators                         | [[https://code.dennyzhang.com/expression-add-operators][LeetCode: Expression Add Operators]]  |
+|   5 | Permutation vs Combination                       | [[https://code.dennyzhang.com/campus-bikes-ii][LeetCode: Campus Bikes II]]           |
+|   6 | Define dfs backtracking function                 | [[https://code.dennyzhang.com/verbal-arithmetic-puzzle][LeetCode: Verbal Arithmetic Puzzle]]  |
+#+TBLFM: $1=@-1$1+1;N
 
 See all backtracking problems: [[https://code.dennyzhang.com/tag/backtracking/][#backtracking]]
 [display-posts tag="backtracking" posts_per_page="100" orderby="title"]
