@@ -1,0 +1,136 @@
+* LeetCode: Find the City With the Smallest Number of Neighbors at a Threshold Distance :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     graph, floyd, dijkstra
+:END:
+---------------------------------------------------------------------
+Find the City With the Smallest Number of Neighbors at a Threshold Distance
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/followup-floyd][#floyd]], [[https://code.dennyzhang.com/followup-dijkstra][#dijkstra]]
+---------------------------------------------------------------------
+There are n cities numbered from 0 to n-1. Given the array edges where edges[i] = [fromi, toi, weighti] represents a bidirectional and weighted edge between cities fromi and toi, and given the integer distanceThreshold.
+
+Return the city with the smallest number of cities that are reachable through some path and whose distance is at most distanceThreshold, If there are multiple such cities, return the city with the greatest number.
+
+Notice that the distance of a path connecting cities i and j is equal to the sum of the edges' weights along that path.
+ 
+Example 1:
+[[image-blog:Find the City With the Smallest Number of Neighbors at a Threshold Distance][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/1.png]]
+#+BEGIN_EXAMPLE
+Input: n = 4, edges = [[0,1,3],[1,2,1],[1,3,4],[2,3,1]], distanceThreshold = 4
+Output: 3
+Explanation: The figure above describes the graph. 
+The neighboring cities at a distanceThreshold = 4 for each city are:
+City 0 -> [City 1, City 2] 
+City 1 -> [City 0, City 2, City 3] 
+City 2 -> [City 0, City 1, City 3] 
+City 3 -> [City 1, City 2] 
+Cities 0 and 3 have 2 neighboring cities at a distanceThreshold = 4, but we have to return city 3 since it has the greatest number.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Find the City With the Smallest Number of Neighbors at a Threshold Distance][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/2.png]]
+#+BEGIN_EXAMPLE
+Input: n = 5, edges = [[0,1,2],[0,4,8],[1,2,3],[1,4,2],[2,3,1],[3,4,1]], distanceThreshold = 2
+Output: 0
+Explanation: The figure above describes the graph. 
+The neighboring cities at a distanceThreshold = 2 for each city are:
+City 0 -> [City 1] 
+City 1 -> [City 0, City 4] 
+City 2 -> [City 3, City 4] 
+City 3 -> [City 2, City 4]
+City 4 -> [City 1, City 2, City 3] 
+The city 0 has 1 neighboring city at a distanceThreshold = 2.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 2 <= n <= 100
+- 1 <= edges.length <= n * (n - 1) / 2
+- edges[i].length == 3
+- 0 <= fromi < toi < n
+- 1 <= weighti, distanceThreshold <= 10^4
+- All pairs (fromi, toi) are distinct.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/example/description/][LeetCode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/example
+// Basic Ideas: Floyd
+//
+// Complexity: Time O(n*e), Space O(n*n)
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func findTheCity(n int, edges [][]int, distanceThreshold int) int {
+    distances := make([][]int, n)
+    for i, _ := range distances {
+        distances[i] = make([]int, n)
+        for j, _ := range distances[i] {
+            distances[i][j] = distanceThreshold+1
+        }
+    }
+    for _, e := range edges {
+        n1, n2, d := e[0], e[1], e[2]
+        distances[n1][n2] = d
+        distances[n2][n1] = distances[n1][n2]
+    }
+    
+    for i:=0; i<n; i++ {
+        distances[i][i] = 0
+    }
+
+    for i:=0; i<n; i++ {
+        for j:=0; j<n; j++ {
+            for k:=0; k<n; k++ {
+                distances[j][k] = min(distances[j][k], distances[j][i]+distances[i][k])
+                distances[k][j] = distances[j][k]
+            }
+        }
+    }
+
+    cnt := make([]int, n)
+    minCnt := 1<<32-1
+    for i:=0; i<n; i++ {
+        for j:=0; j<n; j++ {
+            if distances[i][j] <= distanceThreshold {
+                cnt[i]++
+            }
+        }
+        minCnt = min(minCnt, cnt[i])
+    }
+
+    for i:=n-1; i>=0; i-- {
+        if cnt[i] == minCnt {
+            return i
+        }
+    }
+    return -1
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

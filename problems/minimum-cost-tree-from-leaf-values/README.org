@@ -1,8 +1,8 @@
-* Leetcode: Minimum Cost Tree From Leaf Values                   :BLOG:Medium:
+* Leetcode: Minimum Cost Tree From Leaf Values                   :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, inspiring, redo, dynamicprogramming
+:type:     binarytree, inspiring, redo, dynamicprogramming, intervaldp, stack, greedy
 :END:
 ---------------------------------------------------------------------
 Minimum Cost Tree From Leaf Values
@@ -13,7 +13,7 @@ Minimum Cost Tree From Leaf Values
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]], [[https://code.dennyzhang.com/review-stack][#stack]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Given an array arr of positive integers, consider all binary trees such that:
 
@@ -50,24 +50,59 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/minimum-cost-tree-from-leaf-values
+// Basic Ideas: Interval DP
+//
+//   dp(i, j): arr[i...j]
+//     With parent node, we can divide it into arr[i...k], arr[k+1...j]
+// Complexity: Time O(n^3), Space O(n^2)
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
 
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func mctFromLeafValues(arr []int) int {
+    dp := make([][]int, len(arr))
+    maxL := make([][]int, len(arr))
+    
+    for i, _ := range dp {
+        dp[i] = make([]int, len(arr))
+        maxL[i] = make([]int, len(arr))
+    }
+    // caculate max value for a range
+    for i:=len(maxL)-1; i>=0; i-- {
+        for j:=i; j<len(maxL); j++ {
+            if j == i {
+                maxL[i][j] = arr[i]
+                continue
+            }
+            maxL[i][j] = max(maxL[i][j-1], arr[j])
+        }
+    }
+    // dp
+    for i:=len(arr)-1; i>=0; i-- {
+        for j:=i+1; j<len(arr); j++ {
+            dp[i][j] = 1<<32-1
+            for k:=i; k+1<=j; k++ {
+                dp[i][j] = min(dp[i][j], dp[i][k]+dp[k+1][j]+maxL[i][k]*maxL[k+1][j])
+            }
+        }
+    }
+    // fmt.Println(dp)
+    return dp[0][len(arr)-1]
+}
 #+END_SRC
 
 #+BEGIN_HTML
