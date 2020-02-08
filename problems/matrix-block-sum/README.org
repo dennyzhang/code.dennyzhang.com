@@ -1,0 +1,111 @@
+* LeetCode: Matrix Block Sum                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     regioninmatrix
+:END:
+---------------------------------------------------------------------
+Matrix Block Sum
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/matrix-block-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-regioninmatrix][#regioninmatrix]]
+---------------------------------------------------------------------
+Given a m * n matrix mat and an integer K, return a matrix answer where each answer[i][j] is the sum of all elements mat[r][c] for i - K <= r <= i + K, j - K <= c <= j + K, and (r, c) is a valid position in the matrix.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: mat = [[1,2,3],[4,5,6],[7,8,9]], K = 1
+Output: [[12,21,16],[27,45,33],[24,39,28]]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: mat = [[1,2,3],[4,5,6],[7,8,9]], K = 2
+Output: [[45,45,45],[45,45,45],[45,45,45]]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- m == mat.length
+- n == mat[i].length
+- 1 <= m, n, K <= 100
+- 1 <= mat[i][j] <= 100
+
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/matrix-block-sum][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/matrix-block-sum/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/matrix-block-sum
+// Basic Ideas: dynamic programming
+//
+//  dp(i, j): sum for rectangle from (0, 0) to (i, j)
+//    mat2[i][j] = dp(i+k, j+k) + dp(i-k, j-k) - dp(i-k, j+k) - dp(i+k, j-k)
+//
+// Complexity: Time O(n*m), Space O(n*m)
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func matrixBlockSum(mat [][]int, K int) [][]int {
+    dp := make([][]int, len(mat)+1)
+    for i, _ := range dp {
+        dp[i] = make([]int, len(mat[0])+1)
+    }
+    for i:=1; i<len(dp); i++ {
+        for j:=1; j<len(dp[0]); j++ {
+            dp[i][j] = dp[i][j-1]+dp[i-1][j]+mat[i-1][j-1]-dp[i-1][j-1]
+        }
+    }
+    res := make([][]int, len(mat))
+    for i, _ := range res {
+        res[i] = make([]int, len(mat[0]))
+    }
+    //
+    //  (i1, j1) 
+    //
+    //         (i, j)
+    //
+    //                 (i2,j2)                 
+    for i, _ := range mat {
+        for j, _ := range mat[i] {
+            i1 := max(0, i-K)
+            i2 := min(i+K, len(mat)-1)
+            j1 := max(0, j-K)
+            j2 := min(j+K, len(mat[0])-1)
+            res[i][j] = dp[i2+1][j2+1] + dp[i1][j1] - dp[i1][j2+1] - dp[i2+1][j1]
+        }
+    }
+    return res
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

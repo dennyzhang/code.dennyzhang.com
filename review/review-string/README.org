@@ -15,20 +15,20 @@ String is basic. But it could be very tough as well.
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-| Num | Problem                                     | Summary                                           |
-|-----+---------------------------------------------+---------------------------------------------------|
-|   1 | [[https://en.wikipedia.org/wiki/Edit_distance][Edit distance of two strings]]                | [[https://code.dennyzhang.com/edit-distance][LeetCode: Edit Distance]]                           |
-|   2 | Remove duplicate letters                    | [[https://code.dennyzhang.com/remove-duplicate-letters][Remove Duplicate Letters]]                          |
-|   3 | Word ladder                                 | [[https://code.dennyzhang.com/word-ladder][LeetCode: Word Ladder]]                             |
-|   4 | lrs - Longest repeating substring           | [[https://leetcode.com/problems/longest-repeating-substring/][LeetCode: Longest Repeating Substring]]             |
-|   5 | Remove Comments                             | [[https://code.dennyzhang.com/remove-comments][LeetCode: Remove Comments]]                         |
-|   6 | Split Concatenated Strings                  | [[https://code.dennyzhang.com/split-concatenated-strings][LeetCode: Split Concatenated Strings]]              |
-|   7 | Vowel Spellchecker                          | [[https://code.dennyzhang.com/vowel-spellchecker][LeetCode: Vowel Spellchecker]]                      |
-|   8 | [[https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation][Lexicographically minimal string rotation]]   | [[https://code.dennyzhang.com/last-substring-in-lexicographical-order][LeetCode: Last Substring in Lexicographical Order]] |
-|   9 | String Transforms Into Another String       | [[https://code.dennyzhang.com/string-transforms-into-another-string][LeetCode: String Transforms Into Another String]]   |
-|  10 | Find the Closest Palindrome                 | [[https://code.dennyzhang.com/find-the-closest-palindrome][LeetCode: Find the Closest Palindrome]]             |
-|  11 | Largest Number                              | [[https://code.dennyzhang.com/largest-number][Leetcode: Largest Number]]                          |
-|  12 |                                             | [[https://code.dennyzhang.com/reorganize-string][LeetCode: Reorganize String]]                       |
+| Num | Problem                                   | Summary                                           |
+|-----+-------------------------------------------+---------------------------------------------------|
+|   1 | [[https://en.wikipedia.org/wiki/Edit_distance][Edit distance of two strings]]              | [[https://code.dennyzhang.com/edit-distance][LeetCode: Edit Distance]]                           |
+|   2 | Remove duplicate letters                  | [[https://code.dennyzhang.com/remove-duplicate-letters][Remove Duplicate Letters]]                          |
+|   3 | Word ladder                               | [[https://code.dennyzhang.com/word-ladder][LeetCode: Word Ladder]]                             |
+|   4 | lrs - Longest repeating substring         | [[https://leetcode.com/problems/longest-repeating-substring/][LeetCode: Longest Repeating Substring]]             |
+|   5 | Remove Comments                           | [[https://code.dennyzhang.com/remove-comments][LeetCode: Remove Comments]]                         |
+|   6 | Split Concatenated Strings                | [[https://code.dennyzhang.com/split-concatenated-strings][LeetCode: Split Concatenated Strings]]              |
+|   7 | Vowel Spellchecker                        | [[https://code.dennyzhang.com/vowel-spellchecker][LeetCode: Vowel Spellchecker]]                      |
+|   8 | [[https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation][Lexicographically minimal string rotation]] | [[https://code.dennyzhang.com/last-substring-in-lexicographical-order][LeetCode: Last Substring in Lexicographical Order]] |
+|   9 | String Transforms Into Another String     | [[https://code.dennyzhang.com/string-transforms-into-another-string][LeetCode: String Transforms Into Another String]]   |
+|  10 | Find the Closest Palindrome               | [[https://code.dennyzhang.com/find-the-closest-palindrome][LeetCode: Find the Closest Palindrome]]             |
+|  11 | Largest Number                            | [[https://code.dennyzhang.com/largest-number][Leetcode: Largest Number]]                          |
+|  12 | Reorganize String                         | [[https://code.dennyzhang.com/reorganize-string][LeetCode: Reorganize String]]                       |
 #+TBLFM: $1=@-1$1+1;N
 
 | Name                                   | Summary                                                    |

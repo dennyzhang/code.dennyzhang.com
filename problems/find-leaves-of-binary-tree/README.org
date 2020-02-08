@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, inspiring
+:type:     binarytree, inspiring, bfs, dfs
 :END:
 ---------------------------------------------------------------------
 Find Leaves of Binary Tree
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/binary-tree-vertical-order-traversal][Binary Tree Vertical Order Traversal]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
 
@@ -54,7 +54,72 @@ Credits To: [[https://leetcode.com/problems/find-leaves-of-binary-tree/descripti
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: DFS + array
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/find-leaves-of-binary-tree
+## Basic Ideas: DFS + hashmap
+##
+##   For each node, find its level
+##   hashmap: level -> nodes
+##
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Solution:
+    def findLeaves(self, root: TreeNode) -> List[List[int]]:
+        m = []
+        def dfs(root):
+            nonlocal m
+            if not root: return 0
+            levelL = dfs(root.left)
+            levelR = dfs(root.right)
+            level = max(levelL, levelR)+1
+            if level > len(m):
+                m.append([root.val])
+            else:
+                m[level-1].append(root.val)
+            return level
+        dfs(root)
+        return m
+#+END_SRC
+
+- Solution: DFS + hashmap
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/find-leaves-of-binary-tree
+## Basic Ideas: DFS + hashmap
+##
+##   For each node, find its level
+##   hashmap: level -> nodes
+##
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def findLeaves(self, root: TreeNode) -> List[List[int]]:
+        m = collections.defaultdict(list)
+        def dfs(root):
+            nonlocal m
+            if not root: return 0
+            levelL = dfs(root.left)
+            levelR = dfs(root.right)
+            level = max(levelL, levelR)+1
+            m[level].append(root.val)
+            return level
+        maxLevel = dfs(root)
+        return [m[i+1] for i in range(maxLevel)]
+#+END_SRC
+
+- Solution: BFS
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/find-leaves-of-binary-tree
 ## Basic Ideas: hashmap + post-order + reversed BFS

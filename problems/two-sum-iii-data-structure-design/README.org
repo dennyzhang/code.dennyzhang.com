@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/tag/twosum][#twosum]]
+- Tag: [[https://code.dennyzhang.com/review-oodesign][#oodesign]], [[https://code.dennyzhang.com/followup-twosum][#twosum]]
 ---------------------------------------------------------------------
 Design and implement a TwoSum class. It should support the following operations: add and find.
 
@@ -34,7 +34,6 @@ Credits To: [[https://leetcode.com/problems/two-sum-iii-data-structure-design/de
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/two-sum-iii-data-structure-design
 ## Basic Ideas: hashmap

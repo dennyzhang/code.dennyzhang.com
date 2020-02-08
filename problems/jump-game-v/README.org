@@ -1,0 +1,112 @@
+* LeetCode: Jump Game V                                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     lis, frogjump, dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/jump-game-v"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-lis][#lis]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]]
+---------------------------------------------------------------------
+Given an array of integers arr and an integer d. In one step you can jump from index i to index:
+
+- i + x where: i + x < arr.length and 0 < x <= d.
+- i - x where: i - x >= 0 and 0 < x <= d.
+
+In addition, you can only jump from index i to index j if arr[i] > arr[j] and arr[i] > arr[k] for all indices k between i and j (More formally min(i, j) < k < max(i, j)).
+
+You can choose any index of the array and start jumping. Return the maximum number of indices you can visit.
+
+Notice that you can not jump outside of the array at any time.
+
+Example 1:
+[[image-blog:LeetCode: Jump Game V][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/jump-game-v/my.png]]
+#+BEGIN_EXAMPLE
+Input: arr = [6,4,14,6,8,13,9,7,10,6,12], d = 2
+Output: 4
+Explanation: You can start at index 10. You can jump 10 --> 8 --> 6 --> 7 as shown.
+Note that if you start at index 6 you can only jump to index 7. You cannot jump to index 5 because 13 > 9. You cannot jump to index 4 because index 5 is between index 4 and 6 and 13 > 9.
+Similarly You cannot jump from index 3 to index 2 or index 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [3,3,3,3,3], d = 3
+Output: 1
+Explanation: You can start at any index. You always cannot jump to any index.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [7,6,5,4,3,2,1], d = 1
+Output: 7
+Explanation: Start at index 0. You can visit all the indicies. 
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: arr = [7,1,7,1,7,1], d = 2
+Output: 2
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: arr = [66], d = 1
+Output: 1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 1000
+- 1 <= arr[i] <= 10^5
+- 1 <= d <= arr.length
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/jump-game-v][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/jump-game-v/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/jump-game-v
+## Basic Ideas: dynamic programming
+##
+##   LIS
+##
+## Complexity: Time O(n*d), Space O(n)
+class Solution:
+    def maxJumps(self, arr: List[int], d: int) -> int:
+        n = len(arr)
+        nums = [(arr[i], i) for i in range(n)]
+        nums.sort()
+        dp = [1] * n
+        for i in range(1, n):
+            index = nums[i][1]
+            # move from index to adjacent nodes [-d, d]
+            for k in range(1, d+1):
+                if index+k>=n or arr[index]<=arr[index+k]:
+                    break
+                dp[index] = max(dp[index], dp[index+k]+1)
+            for k in range(1, d+1):
+                if index-k<0 or arr[index]<=arr[index-k]:
+                    break
+                dp[index] = max(dp[index], dp[index-k]+1)
+        return max(dp)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

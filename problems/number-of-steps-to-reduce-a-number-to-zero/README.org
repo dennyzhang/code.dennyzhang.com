@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     simulation, recursive
+:type:     simulation, recursive, bitmanipulation
 :END:
 ---------------------------------------------------------------------
 Number of Steps to Reduce a Number to Zero
@@ -13,7 +13,7 @@ Number of Steps to Reduce a Number to Zero
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/simulation][#simulation]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
+- Tag: [[https://code.dennyzhang.com/tag/simulation][#simulation]], [[https://code.dennyzhang.com/review-recursive][#recursive]], [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
 ---------------------------------------------------------------------
 Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
  
@@ -57,13 +57,32 @@ Credits To: [[https://leetcode.com/problems/number-of-steps-to-reduce-a-number-t
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: loop
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/number-of-steps-to-reduce-a-number-to-zero
 ## Basic Ideas: simulation
 ##
-## Complexity: Time ?, Space O(1)
+## Complexity: Time O(log(n)), Space O(1)
+class Solution:
+    def numberOfSteps (self, num: int) -> int:
+        res = 0
+        while num != 0:
+            if num%2 == 0:
+                num = int(num/2)
+            else:
+                num -= 1
+            res += 1
+        return res
+#+END_SRC
+
+- Solution: recursive
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/number-of-steps-to-reduce-a-number-to-zero
+## Basic Ideas: simulation
+##
+## Complexity: Time O(log(n)), Space O(1)
 class Solution:
     def numberOfSteps (self, num: int) -> int:
         if num == 0: return 0
@@ -71,6 +90,23 @@ class Solution:
             return 1+self.numberOfSteps(int(num/2))
         else:
             return 1+self.numberOfSteps(num-1)
+#+END_SRC
+
+- Solution: bit manipulation
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/number-of-steps-to-reduce-a-number-to-zero
+## Basic Ideas: simulation
+##
+##   Check the string of binary representation
+##     14 -> 1110
+##       From right to left
+##         For any 0, it takes one change (divide by 2)
+##         for any 1, it takes two changes (substract then divide)
+## Complexity: Time ?, Space O(1)
+class Solution:
+    def numberOfSteps (self, num: int) -> int:
+        s = f'{num:b}'
+        return s.count('1')+len(s)-1
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, rotatelist
+:type:     string, rotatelist, rollinghash
 :END:
 ---------------------------------------------------------------------
 Rotate String
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/repeated-string-match][Repeated String Match]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/tag/rotatelist][#rotatelist]], [[https://code.dennyzhang.com/followup-rollinghash][#rollinghash]]
 ---------------------------------------------------------------------
 We are given two strings, A and B.
 

@@ -1,0 +1,106 @@
+* LeetCode: Check If N and Its Double Exist                     :BLOG:Easy:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap, array
+:END:
+---------------------------------------------------------------------
+Check If N and Its Double Exist
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-n-and-its-double-exist"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M).
+
+More formally check if there exists two indices i and j such that :
+
+- i != j
+- 0 <= i, j < arr.length
+- arr[i] == 2 * arr[j]
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [10,2,5,3]
+Output: true
+Explanation: N = 10 is the double of M = 5,that is, 10 = 2 * 5.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [7,1,14,11]
+Output: true
+Explanation: N = 14 is the double of M = 7,that is, 14 = 2 * 7.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [3,1,7,11]
+Output: false
+Explanation: In this case does not exist N and M, such that N = 2 * M.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 2 <= arr.length <= 500
+- -10^3 <= arr[i] <= 10^3
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-n-and-its-double-exist][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/check-if-n-and-its-double-exist/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: hashmap
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/check-if-n-and-its-double-exist
+## Basic Ideas: hashset
+##
+## v*2 may be the same as v
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        s = set()
+        for num in arr:
+            if num*2 in s: return True
+            if num%2 == 0 and int(num/2) in s: return True
+            s.add(num)
+        return False
+#+END_SRC
+
+- Solution: hashmap
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/check-if-n-and-its-double-exist
+## Basic Ideas: hashmap
+##
+## v*2 may be the same as v
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        m = collections.defaultdict(int)
+        for num in arr:
+            m[num] += 1
+
+        for num in arr:
+            if num*2 == num and m[num]>=2:
+                return True
+            if num*2 != num and num*2 in m:
+                return True
+        return False
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

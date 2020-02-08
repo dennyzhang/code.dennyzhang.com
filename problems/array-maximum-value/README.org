@@ -13,7 +13,7 @@ Array Maximum Value
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/array][#array]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 Description
 Given an array a containing n positive integers, there is another array b of length n, indicating that the value of the i positive integer is b[i]. We can choose any non-intersecting interval [i, j], which needs to satisfy i < j and a[i] = a[j], then we can get all the numbers' value in intervals [i, j] , that the value of b[i] + b[i+1] + ... + b[j].

@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/peak-index-in-a-mountain-array][Peak Index in a Mountain Array]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/followup-mountainarray][#mountainarray]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/followup-mountainarray][#mountainarray]]
 ---------------------------------------------------------------------
 Let's call any (contiguous) subarray B (of A) a mountain if the following properties hold:
 

@@ -12,10 +12,9 @@ Given numRows, generate the first numRows of Pascal's triangle.
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/pascals-triangle-ii][LeetCode: Pascal's Triangle II]]
-- All basic problems: [[https://code.dennyzhang.com/category/basic][basic]], [[https://code.dennyzhang.com/tag/codetemplate][codetemplate]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/triangle][#triangle]]
+- Tag: [[https://code.dennyzhang.com/followup-triangle][#triangle]]
 ---------------------------------------------------------------------
 Given numRows, generate the first numRows of Pascal's triangle.
 #+BEGIN_EXAMPLE

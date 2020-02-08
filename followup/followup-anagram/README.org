@@ -13,6 +13,10 @@ anagram problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
+| Name                                          | Example                                                       |
+|-----------------------------------------------+---------------------------------------------------------------|
+| When count sort, use one array instead of two | [[https://code.dennyzhang.com/minimum-number-of-steps-to-make-two-strings-anagram][LeetCode: Minimum Number of Steps to Make Two Strings Anagram]] |
+
 See all series problems: [[https://code.dennyzhang.com/tag/anagram/][#anagram]]
 [display-posts tag="anagram" posts_per_page="100" orderby="title"]
 

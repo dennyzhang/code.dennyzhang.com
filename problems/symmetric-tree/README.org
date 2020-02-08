@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     treetraversal
+:type:     treetraversal, bfs, dfs
 :END:
 ---------------------------------------------------------------------
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -13,7 +13,7 @@ Given a binary tree, check whether it is a mirror of itself (ie, symmetric aroun
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]]
+- Tag: [[https://code.dennyzhang.com/review-treetraversal][#treetraversal]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 #+BEGIN_EXAMPLE
@@ -41,6 +41,30 @@ Credits To: [[https://leetcode.com/problems/symmetric-tree/description/][leetcod
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: dfs
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/symmetric-tree
+## Basic Ideas: recursive (pre-order)
+##
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def isSymmetric(self, root: TreeNode) -> bool:
+        def myIsSymmetric(root1, root2):
+            if (not root1) and (not root2): return True
+            if (not root1) or (not root2) or root1.val != root2.val:
+                return False
+            return myIsSymmetric(root1.left, root2.right) and myIsSymmetric(root1.right, root2.left)
+        if not root: return True
+        return myIsSymmetric(root.left, root.right)        
+#+END_SRC
+
 - Solution:
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/symmetric-tree

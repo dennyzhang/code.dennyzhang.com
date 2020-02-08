@@ -12,7 +12,7 @@ Friend Request
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/friends-of-appropriate-ages][LeetCode: Friends Of Appropriate Ages]]
-- [[https://code.dennyzhang.com/tag/array][Tag: #array]]
+- [[https://code.dennyzhang.com/review-array][Tag: #array]]
 ---------------------------------------------------------------------
 Given an array Ages of length n, where the first i elements represent the age of the individual i Find total number of friend requests sent by this n person. There are some requirements:
 1. if Age(B) <= (1/2)Age(A) + 7, A will not send a request to B.

@@ -16,7 +16,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-trappingrain][Series: Trapping Rain & Follow-up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/trappingrain][#trappingrain]], [[https://code.dennyzhang.com/followup-roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
+- Tag: [[https://code.dennyzhang.com/followup-trappingrain][#trappingrain]], [[https://code.dennyzhang.com/followup-roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 [[image-blog:Trapping Rain Water][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/rainwater_trap.png]]

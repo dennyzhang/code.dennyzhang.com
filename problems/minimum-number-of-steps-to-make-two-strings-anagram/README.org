@@ -1,0 +1,114 @@
+* LeetCode: Minimum Number of Steps to Make Two Strings Anagram :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     anagram, countsort
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-number-of-steps-to-make-two-strings-anagram"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-countsort][#countsort]], [[https://code.dennyzhang.com/followup-anagram][#anagram]]
+---------------------------------------------------------------------
+Given two equal-size strings s and t. In one step you can choose any character of t and replace it with another character.
+
+Return the minimum number of steps to make t an anagram of s.
+
+An Anagram of a string is a string that contains the same characters with a different (or the same) ordering.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "bab", t = "aba"
+Output: 1
+Explanation: Replace the first 'a' in t with b, t = "bba" which is anagram of s.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "leetcode", t = "practice"
+Output: 5
+Explanation: Replace 'p', 'r', 'a', 'i' and 'c' from t with proper characters to make t anagram of s.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "anagram", t = "mangaar"
+Output: 0
+Explanation: "anagram" and "mangaar" are anagrams. 
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: s = "xxyyzz", t = "xxyyzz"
+Output: 0
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: s = "friend", t = "family"
+Output: 4
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length <= 50000
+- s.length == t.length
+- s and t contain lower-case English letters only.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-number-of-steps-to-make-two-strings-anagram][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: O(2n) Space
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-number-of-steps-to-make-two-strings-anagram
+## Basic Ideas: count sort
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def minSteps(self, s: str, t: str) -> int:
+        nums = [0]*26
+        for i in range(len(s)):
+            nums[ord(s[i])-ord('a')] += 1
+            nums[ord(t[i])-ord('a')] -= 1
+        res = 0
+        for v in nums:
+            res += abs(v)
+        return int(res/2)
+#+END_SRC
+
+- Solution: O(2n) Space
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-number-of-steps-to-make-two-strings-anagram
+## Basic Ideas: count sort
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def minSteps(self, s: str, t: str) -> int:
+        cntS, cntT = [0]*26, [0]*26
+        for i in range(len(s)):
+            cntS[ord(s[i])-ord('a')] += 1
+            cntT[ord(t[i])-ord('a')] += 1
+
+        res = 0
+        for i in range(26):
+            res += abs(cntS[i]-cntT[i])
+        return int(res/2)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

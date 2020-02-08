@@ -1,20 +1,20 @@
-* Series: Paint Fence & Follow-up                               :BLOG:Series:
+* Series: Region In Matrix Problems & Follow-up           :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type: series
 :END:
 ---------------------------------------------------------------------
-House Robber & Follow-up
+Region In Matrix Problems & Follow-up
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/followup/followup-paintfence"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/followup/followup-regioninmatrix"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-See all House Robber Problems & Follow-up: [[https://code.dennyzhang.com/tag/paintfence/][#paintfence]]
-[display-posts tag="paintfence" posts_per_page="100" orderby="title"]
+See all series problems: [[https://code.dennyzhang.com/tag/regioninmatrix/][#regioninmatrix]]
+[display-posts tag="regioninmatrix" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 

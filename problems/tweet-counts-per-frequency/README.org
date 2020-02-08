@@ -1,0 +1,106 @@
+* LeetCode: Tweet Counts Per Frequency                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarysearch, redo
+:END:
+---------------------------------------------------------------------
+Tweet Counts Per Frequency
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/tweet-counts-per-frequency"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
+---------------------------------------------------------------------
+Implement the class TweetCounts that supports two methods:
+
+1. recordTweet(string tweetName, int time)
+
+Stores the tweetName at the recorded time (in seconds).
+
+2. getTweetCountsPerFrequency(string freq, string tweetName, int startTime, int endTime)
+
+- Returns the total number of occurrences for the given tweetName per minute, hour, or day (depending on freq) starting from the startTime (in seconds) and ending at the endTime (in seconds).
+- freq is always minute, hour or day, representing the time interval to get the total number of occurrences for the given tweetName.
+- The first time interval always starts from the startTime, so the time intervals are [startTime, startTime + delta*1>,  [startTime + delta*1, startTime + delta*2>, [startTime + delta*2, startTime + delta*3>, ... , [startTime + delta*i, min(startTime + delta*(i+1), endTime + 1)> for some non-negative number i and delta (which depends on freq).  
+ 
+Example:
+#+BEGIN_EXAMPLE
+Input
+["TweetCounts","recordTweet","recordTweet","recordTweet","getTweetCountsPerFrequency","getTweetCountsPerFrequency","recordTweet","getTweetCountsPerFrequency"]
+[[],["tweet3",0],["tweet3",60],["tweet3",10],["minute","tweet3",0,59],["minute","tweet3",0,60],["tweet3",120],["hour","tweet3",0,210]]
+
+Output
+[null,null,null,null,[2],[2,1],null,[4]]
+
+Explanation
+TweetCounts tweetCounts = new TweetCounts();
+tweetCounts.recordTweet("tweet3", 0);
+tweetCounts.recordTweet("tweet3", 60);
+tweetCounts.recordTweet("tweet3", 10);                             // All tweets correspond to "tweet3" with recorded times at 0, 10 and 60.
+tweetCounts.getTweetCountsPerFrequency("minute", "tweet3", 0, 59); // return [2]. The frequency is per minute (60 seconds), so there is one interval of time: 1) [0, 60> - > 2 tweets.
+tweetCounts.getTweetCountsPerFrequency("minute", "tweet3", 0, 60); // return [2, 1]. The frequency is per minute (60 seconds), so there are two intervals of time: 1) [0, 60> - > 2 tweets, and 2) [60,61> - > 1 tweet.
+tweetCounts.recordTweet("tweet3", 120);                            // All tweets correspond to "tweet3" with recorded times at 0, 10, 60 and 120.
+tweetCounts.getTweetCountsPerFrequency("hour", "tweet3", 0, 210);  // return [4]. The frequency is per hour (3600 seconds), so there is one interval of time: 1) [0, 211> - > 4 tweets.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- There will be at most 10000 operations considering both recordTweet and getTweetCountsPerFrequency.
+- 0 <= time, startTime, endTime <= 10^9
+- 0 <= endTime - startTime <= 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/tweet-counts-per-frequency][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/tweet-counts-per-frequency/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/tweet-counts-per-frequency
+## Basic Ideas: binarysearch
+##
+##  hashmap: tweet(string) -> times([int])
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+import bisect
+class TweetCounts:
+
+    def __init__(self):
+        self.tweets = collections.defaultdict(list)
+
+    def recordTweet(self, tweetName: str, time: int) -> None:
+        bisect.insort(self.tweets[tweetName], time)
+
+    def getTweetCountsPerFrequency(self, freq: str, tweetName: str, startTime: int, endTime: int) -> List[int]:
+        intervals = {"minute":60, "hour":3600, "day":86400}
+        delta = intervals[freq]
+        nums = self.tweets[tweetName]
+
+        res = []
+        t = startTime
+        while t<=endTime:
+            # [t, t+d)
+            t2 = min(t+delta, endTime+1)
+            res.append(bisect.bisect_left(nums, t2)-bisect.bisect_left(nums, t))
+            t += delta
+        return res
+
+# Your TweetCounts object will be instantiated and called as such:
+# obj = TweetCounts()
+# obj.recordTweet(tweetName,time)
+# param_2 = obj.getTweetCountsPerFrequency(freq,tweetName,startTime,endTime)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

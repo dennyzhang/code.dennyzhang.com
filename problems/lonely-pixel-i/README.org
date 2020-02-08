@@ -13,7 +13,7 @@ Lonely Pixel I
 Similar Problems:
 - [[https://code.dennyzhang.com/lonely-pixel-ii][Lonely Pixel II]]
 - [[https://code.dennyzhang.com/set-matrix-zeroes][Set Matrix Zeroes]]
-- [[https://code.dennyzhang.com/tag/array][Tag: #array]]
+- [[https://code.dennyzhang.com/review-array][Tag: #array]]
 ---------------------------------------------------------------------
 Given a picture consisting of black and white pixels, find the number of black lonely pixels.
 

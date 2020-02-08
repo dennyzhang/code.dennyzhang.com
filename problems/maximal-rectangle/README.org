@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     monotone, inspiring, rectangle, redo
+:type:     monotone, inspiring, rectangle, redo, regioninmatrix
 :END:
 ---------------------------------------------------------------------
 Maximal Rectangle
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/largest-rectangle-in-histogram][LeetCode: Largest Rectangle in Histogram]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]], [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
+- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]], [[https://code.dennyzhang.com/review-rectangle][#rectangle]], [[https://code.dennyzhang.com/followup-regioninmatrix][#regioninmatrix]]
 ---------------------------------------------------------------------
 Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 

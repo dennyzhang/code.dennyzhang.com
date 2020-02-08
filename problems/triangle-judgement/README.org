@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-sql][#sql]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]], [[https://code.dennyzhang.com/followup-triangle][#triangle]]
 ---------------------------------------------------------------------
 A pupil Tim gets homework to identify whether three line segments could possibly form a triangle.
 However, this assignment is very heavy because there are hundreds of records to calculate.
@@ -49,18 +49,6 @@ select x, y, z,
            else 'No'
        end as triangle
 from triangle
-
-## Basic Ideas: max(x, y, z) < sum(x, y, z)/2
-# select x, y, z, if(max_value<sum_value/2, 'Yes', 'No') as triangle
-# from (
-#     select *, x+y+z as sum_value,
-#         case
-#             when x>=y and x>=z then x
-#             when y>=x and y>=z then y
-#             when z>=x and z>=y then z
-#             else x
-#         end as max_value
-#     from triangle) as t
 #+END_SRC
 
 #+BEGIN_HTML

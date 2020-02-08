@@ -59,6 +59,8 @@ Trade space for time.
 |  24 | DP based on values instead of positions         | O(n)            | [[https://code.dennyzhang.com/minimum-distance-to-type-a-word-using-two-fingers][LeetCode: Minimum Distance to Type a Word Using Two Fingers]] |
 |  25 | Video Stitching                                 | O(n*m)          | [[https://code.dennyzhang.com/video-stitching][LeetCode: Video Stitching]]                                   |
 |  26 | Maximum Profit in Job Scheduling                | O(n*log(n))     | [[https://code.dennyzhang.com/maximum-profit-in-job-scheduling][Leetcode: Maximum Profit in Job Scheduling]]                  |
+|  27 | Machine state                                   | O(n)            | [[https://code.dennyzhang.com/student-attendance-record-ii][Leetcode: Student Attendance Record II]]                      |
+|  28 | dp + greedy                                     | O(n)            | [[https://code.dennyzhang.com/house-robber][Leetcode: House Robber]]                                      |
 #+TBLFM: $1=@-1$1+1;N
 
 | Name                                                  | Example                                                                |

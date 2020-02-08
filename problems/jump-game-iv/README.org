@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     bfs, hashmap
+:type:     bfs, hashmap, frogjump
 :END:
 ---------------------------------------------------------------------
 Jump Game IV
@@ -13,7 +13,7 @@ Jump Game IV
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]]
 ---------------------------------------------------------------------
 Given an array of integers arr, you are initially positioned at the first index of the array.
 
@@ -89,23 +89,18 @@ class Solution:
         pos = collections.defaultdict(set)
         for i, num in enumerate(arr):
             pos[num].add(i)
-
         level = 0
         while len(queue)>0:
             for _ in range(len(queue)):
                 node = queue.popleft()
                 if node == n-1: return level
-                if node-1>=0 and node-1 not in visited:
-                    queue.append(node-1)
-                    visited.add(node-1)
-                if node+1<n and node+1 not in visited:
-                    queue.append(node+1)
-                    visited.add(node+1)
-                for i in pos[arr[node]]:
-                    if i not in visited:
+                # examine the next nodes
+                nexts = [node-1, node+1] + list(pos[arr[node]])
+                for i in nexts:
+                    if 0<=i<n and i not in visited:
                         queue.append(i)
                         visited.add(i)
-                # mark nodes are visited
+                # No need to examine nodes of the same value
                 pos[arr[node]] = set()
             level += 1
         return -1

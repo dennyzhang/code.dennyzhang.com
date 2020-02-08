@@ -16,7 +16,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/shortest-word-distance-ii][Shortest Word Distance II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]], [[https://code.dennyzhang.com/followup-shortestdistance][#shortestdistance]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/tag/editdistance][#editdistance]], [[https://code.dennyzhang.com/followup-shortestdistance][#shortestdistance]]
 ---------------------------------------------------------------------
 Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
 

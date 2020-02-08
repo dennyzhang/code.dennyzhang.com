@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, greedy, slidingwindow
+:type:     dynamicprogramming, greedy, slidingwindow, frogjump
 :END:
 ---------------------------------------------------------------------
 Minimum Number of Taps to Open to Water a Garden

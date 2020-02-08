@@ -1,0 +1,117 @@
+* LeetCode: Reverse Pairs                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     mergesort, redo
+:END:
+---------------------------------------------------------------------
+Reverse Pairs
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-pairs"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-mergesort][#mergesort]]
+---------------------------------------------------------------------
+Given an array nums, we call (i, j) an important reverse pair if i < j and nums[i] > 2*nums[j].
+
+You need to return the number of important reverse pairs in the given array.
+
+Example1:
+#+BEGIN_EXAMPLE
+Input: [1,3,2,3,1]
+Output: 2
+#+END_EXAMPLE
+
+Example2:
+#+BEGIN_EXAMPLE
+Input: [2,4,3,5,1]
+Output: 3
+#+END_EXAMPLE
+
+Note:
+1. The length of the given array will not exceed 50,000.
+- All the numbers in the input array are in the range of 32-bit integer.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reverse-pairs][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/reverse-pairs/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/reverse-pairs
+// Basic Ideas: merge sort
+//
+//   nums[l...m], nums[m+1...r]
+//     nums[i] vs nums[j]
+//
+//   It takes O(n) time to collect result between these two parts
+//
+// Complexity: Time O(n*log(n)), Space O(n)
+func merge(nums []int, left int, right int, sortedNums []int) int {
+    if left>=right {
+        return 0
+    }
+    res := 0
+    mid := left+(right-left)/2
+    res += merge(nums, left, mid, sortedNums)
+    res += merge(nums, mid+1, right, sortedNums)
+    // collect result across these two
+
+    // one pass to get the result
+    for i, j := left, mid+1; i<=mid && j<=right; {
+        if nums[i]>2*nums[j] {
+            res += mid-i+1
+            j++
+        } else {
+            i++
+        }
+    }
+    // second pass to collect the result
+    k := left
+    for i, j := left, mid+1; i<=mid || j<=right; k++ {
+        if i>mid {
+            sortedNums[k] = nums[j]
+            j++
+            continue
+        } 
+        if j>right {
+            sortedNums[k] = nums[i]
+            i++
+            continue
+        }
+        if nums[i] > nums[j] {
+            // move j
+            sortedNums[k] = nums[j]
+            j++
+        } else {
+            sortedNums[k] = nums[i]
+            i++
+        }
+    }
+    // copy back the result
+    for i:=left; i<=right; i++ {
+        nums[i] = sortedNums[i]
+    }
+    return res
+}
+
+func reversePairs(nums []int) int {
+    sortedNums := make([]int, len(nums))
+    copy(sortedNums, nums)
+    return merge(nums, 0, len(nums)-1, sortedNums)
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

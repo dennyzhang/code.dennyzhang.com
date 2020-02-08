@@ -11,7 +11,7 @@ Array, a list of numbers. It's quite normal and natural.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/review/review-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 
-See all array tree problems: [[https://code.dennyzhang.com/tag/array/][#array]]
+See all array tree problems: [[https://code.dennyzhang.com/review-array/][#array]]
 [display-posts tag="array" posts_per_page="100" orderby="title"]
 
 #+BEGIN_HTML
@@ -32,6 +32,8 @@ See all array tree problems: [[https://code.dennyzhang.com/tag/array/][#array]]
 |   6 | Two pass for the array       | [[https://code.dennyzhang.com/trapping-rain-water][Leetcode: Trapping Rain Water]]             |
 |   7 | Shuffle an Array             | [[https://code.dennyzhang.com/shuffle-an-array][Leetcode: Shuffle an Array]]                |
 |   8 | [[https://www.geeksforgeeks.org/counting-inversions/][Count Inversions in an array]] | Typically solved by a modified merge sort |
+|   9 | hashmap vs hashset           | [[https://code.dennyzhang.com/check-if-n-and-its-double-exist][Leetcode: Check If N and Its Double Exist]] |
+|  10 | array + greedy               | [[https://code.dennyzhang.com/valid-triangle-number][Leetcode: Valid Triangle Number]]           |
 #+TBLFM: $1=@-1$1+1;N
 
 ** misc                                                            :noexport:

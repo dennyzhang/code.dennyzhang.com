@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     recursive, nestedlist
+:type:     recursive, nestedlist, dfs
 :END:
 ---------------------------------------------------------------------
 Nested List Weight Sum
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/nested-list-weight-sum-ii][Nested List Weight Sum II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/nestedlist][#nestedlist]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
+- Tag: [[https://code.dennyzhang.com/tag/nestedlist][#nestedlist]], [[https://code.dennyzhang.com/review-recursive][#recursive]],  [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Given a nested list of integers, return the sum of all integers in the list weighted by their depth.
 
@@ -39,6 +39,9 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/nested-list-weight-sum
+## Basic Ideas: dfs
+##
+## Complexity: Time O(n), Space O(1)
 # """
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
@@ -83,28 +86,17 @@ Leave me comments, if you have better ways to solve.
 #        """
 
 class Solution:
-    ## Basic Ideas: dfs
-    ##
-    ## Complexity: Time O(n), Space O(k). Depth of the deepest element
-    def depthSum(self, nestedList):
-        """
-        :type nestedList: List[NestedInteger]
-        :rtype: int
-        """
-        return self.myDepthSum(nestedList, 1)
-
-    def myDepthSum(self, nestedList, level):
-        """
-        :type nestedList: List[NestedInteger]
-        :rtype: int
-        """
-        res = 0
-        for item in nestedList:
-            if item.isInteger():
-                res += item.getInteger()*level
-            else:
-                res += self.myDepthSum(item.getList(), level+1)
-        return res
+    def depthSum(self, nestedList: List[NestedInteger]) -> int:
+        def dfs(nums, level):
+            if len(nums) == 0: return 0
+            res = 0
+            for v in nums:
+                if v.isInteger():
+                    res += v.getInteger() * level
+                else:
+                    res += dfs(v.getList(), level+1)
+            return res
+        return dfs(nestedList, 1)
 #+END_SRC
 
 #+BEGIN_HTML

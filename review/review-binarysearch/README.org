@@ -57,6 +57,7 @@ But you wouldn't believe how incredibly useful it would be.
 |  18 | Find Minimum in Rotated Sorted Array        | [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array][LeetCode: Find Minimum in Rotated Sorted Array]]                         |
 |  19 | Find Minimum in Rotated Sorted Array II     | [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii][LeetCode: Find Minimum in Rotated Sorted Array II]]                      |
 |  20 | Maximum Profit in Job Scheduling            | [[https://code.dennyzhang.com/maximum-profit-in-job-scheduling][Leetcode: Maximum Profit in Job Scheduling]]                             |
+|  21 | Tweet Counts Per Frequency                  | [[https://code.dennyzhang.com/tweet-counts-per-frequency][LeetCode: Tweet Counts Per Frequency]]                                   |
 #+TBLFM: $1=@-1$1+1;N
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]

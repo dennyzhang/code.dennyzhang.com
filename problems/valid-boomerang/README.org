@@ -13,7 +13,7 @@ Valid Boomerang
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]], [[https://code.dennyzhang.com/followup-triangle][#triangle]]
 ---------------------------------------------------------------------
 A boomerang is a set of 3 points that are all distinct and not in a straight line.
 

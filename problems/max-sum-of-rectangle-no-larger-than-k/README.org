@@ -1,32 +1,45 @@
-* LeetCode: Template                                              :BLOG:Medium:
+* LeetCode: Max Sum of Rectangle No Larger Than K               :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     regioninmatrix
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Max Sum of Rectangle No Larger Than K
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-sum-of-rectangle-no-larger-than-k"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/followup-regioninmatrix][#regioninmatrix]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Given a non-empty 2D matrix matrix and an integer k, find the max sum of a rectangle in the matrix such that its sum is no larger than k.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Example:
+#+BEGIN_EXAMPLE
+Input: matrix = [[1,0,1],[0,-2,3]], k = 2
+Output: 2 
+Explanation: Because the sum of rectangle [[0, 1], [-2, 3]] is 2,
+             and 2 is the max number no larger than k (k = 2).
+#+END_EXAMPLE
 
-Credits To: [[https://leetcode.com/problems/example/description/][LeetCode.com]]
+Note:
+
+1. The rectangle inside the matrix must have an area > 0.
+- What if the number of rows is much larger than the number of columns?
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-sum-of-rectangle-no-larger-than-k][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/example
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/max-sum-of-rectangle-no-larger-than-k
 
 #+END_SRC
 

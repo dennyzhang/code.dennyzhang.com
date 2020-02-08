@@ -13,7 +13,7 @@ Find the Town Judge
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 In a town, there are N people labelled from 1 to N.  There is a rumor that one of these people is secretly the town judge.
 

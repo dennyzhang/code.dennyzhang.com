@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     inspiring, subarray, classic, presum, maxsubarraysum
+:type:     inspiring, subarray, classic, presum, maxsubarraysum, kadane
 :END:
 ---------------------------------------------------------------------
 Maximum Subarray
@@ -13,7 +13,7 @@ Maximum Subarray
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/followup-maxsubarraysum][#maxsubarraysum]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/tag/subarray][#subarray]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/followup-maxsubarraysum][#maxsubarraysum]], [[https://code.dennyzhang.com/followup-kadane][#kadane]]
 ---------------------------------------------------------------------
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
 

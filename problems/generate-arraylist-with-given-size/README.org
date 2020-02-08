@@ -13,7 +13,7 @@ Generate ArrayList with Given Size
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/array][#array]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 Description
 Generate an arrayList with given size, initialize the array list with numbers from 1 to size.

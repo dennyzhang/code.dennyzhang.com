@@ -13,7 +13,7 @@ Trapping Rain problems & Follow-up
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-See all trappingrain problems & follow-up: [[https://code.dennyzhang.com/tag/calculator/][#trappingra[[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]]
+See all trappingrain problems & follow-up: [[https://code.dennyzhang.com/tag/trappingrain/][#trappingrain]]
 [display-posts tag="trappingrain" posts_per_page="100" orderby="title"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].

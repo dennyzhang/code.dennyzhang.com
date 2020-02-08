@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string, inspiring, dynamicprogramming
+:type:     string, inspiring, dynamicprogramming, redo
 :END:
 ---------------------------------------------------------------------
 Interleaving String
@@ -37,9 +37,46 @@ Credits To: [[https://leetcode.com/problems/interleaving-string/description/][le
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/interleaving-string
-
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/interleaving-string
+## Basic Ideas: dynamic programming
+##
+##  aadbbcbcac
+##  aa dbbc bc a c
+##  aa bc c
+##     dbbc a
+##  Two pointer doesn't work,
+##    Because when s1[i] == s2[j], we don't know which one to move
+##
+##  dp(i, j, k): True/False
+##    s1[...i]
+##    s2[...j]
+##    s3[...k]
+##
+##   dp(i, j,k)
+##      dp(i+1, j, k) or dp(i, j+1, k)
+##
+##   return dp(0, 0, 0)
+## Complexity:
+class Solution:
+    def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
+        n, m, p = len(s1), len(s2), len(s3)
+        if n+m != p: return False
+        if p == 0: return True
+        dp = collections.defaultdict(bool)
+        def dfs(i, j, k):
+            nonlocal dp
+            if k>=p: return True
+            if (i, j, k) in dp: return dp[i, j, k]
+            if i<n and s1[i] == s3[k]:
+                if dfs(i+1, j, k+1):
+                    dp[i, j, k] = True
+            if (not dp[i, j, k]) and j<m and s2[j] == s3[k]:
+                if dfs(i, j+1, k+1):
+                    dp[i, j, k] = True
+            return dp[i, j, k]
+        dfs(0, 0, 0)
+        return dp[0, 0, 0]
 #+END_SRC
 
 #+BEGIN_HTML

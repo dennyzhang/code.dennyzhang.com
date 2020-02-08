@@ -2,12 +2,20 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     string
+:type:     string, redo
 :END:
 ---------------------------------------------------------------------
 Isomorphic Strings
 ---------------------------------------------------------------------
-
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/valid-triangle-number"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]]
+---------------------------------------------------------------------
 Given two strings s and t, determine if they are isomorphic.
 
 Two strings are isomorphic if the characters in s can be replaced to get t.
@@ -31,6 +39,39 @@ Credits To: [[https://leetcode.com/problems/isomorphic-strings/description/][lee
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/isomorphic-strings
+## Basic Ideas:
+##
+##  hashmap
+##  Loop from left to right
+##
+##  Check whether hit the mapping rule
+##  Otherwise:
+##   If the same, move right
+##   If different
+##       check we can add a new mapping rule
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        n = len(s)
+        chars = {}
+        counts = collections.defaultdict(bool)
+        i = 0
+        while i<len(s):
+            ch1, ch2 = s[i], t[i]
+            if ch1 in chars:
+                if ch2 != chars[ch1]: return False
+            else:
+                # Need to add rule: ch1 -> ch2
+                if counts[ch2]: return False
+                chars[ch1] = ch2
+                counts[ch2] = True
+            i += 1
+        return i == len(s)
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/isomorphic-strings

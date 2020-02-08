@@ -1,4 +1,4 @@
-* Lintcode: Frog Jump                                             :BLOG:Hard:
+* LeetCode: Frog Jump                                             :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -48,7 +48,7 @@ the gap between the 5th and 6th stone is too large.
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/frog-jump][code.dennyzhang.com]]
 
-Credits To: [[https://code.dennyzhang.com/frog-jump][lintcode.com]]
+Credits To: [[https://leetcode.com/problems/frog-jump/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------

@@ -1,0 +1,100 @@
+* LeetCode: Jump Game III                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     frogjump, bfs
+:END:
+---------------------------------------------------------------------
+Jump Game III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/jump-game-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]]
+---------------------------------------------------------------------
+Given an array of non-negative integers arr, you are initially positioned at start index of the array. When you are at index i, you can jump to i + arr[i] or i - arr[i], check if you can reach to any index with value 0.
+
+Notice that you can not jump outside of the array at any time.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [4,2,3,0,3,1,2], start = 5
+Output: true
+Explanation: 
+All possible ways to reach at index 3 with value 0 are: 
+index 5 -> index 4 -> index 1 -> index 3 
+index 5 -> index 6 -> index 4 -> index 1 -> index 3 
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [4,2,3,0,3,1,2], start = 0
+Output: true 
+Explanation: 
+One possible way to reach at index 3 with value 0 is: 
+index 0 -> index 4 -> index 1 -> index 3
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [3,0,2,1,2], start = 2
+Output: false
+Explanation: There is no way to reach at index 1 with value 0.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 5 * 10^4
+- 0 <= arr[i] < arr.length
+- 0 <= start < arr.length
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/jump-game-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/jump-game-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/jump-game-iii
+// Basic Ideas: BFS
+//
+// Complexity: Time O(n), Space O(n)
+func canReach(arr []int, start int) bool {
+    if arr[start] == 0 {
+        return true
+    }
+    queue := []int{start}
+    visited := map[int]bool{}
+    visited[start] = true
+    for len(queue)>0 {
+        nexts := []int{}        
+        for _, node := range queue {
+            for _, node2 := range []int{node+arr[node], node-arr[node]} {
+                if node2<0 || node2>=len(arr) || visited[node2] {
+                    continue
+                }
+                if arr[node2] == 0 {
+                    return true
+                }
+                visited[node2] = true
+                nexts = append(nexts, node2)
+            }
+        }
+        queue = nexts
+    }
+    return false
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

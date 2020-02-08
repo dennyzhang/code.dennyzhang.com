@@ -22,6 +22,7 @@ Here we try to compile a list of inspiring BFS problems.
 | Understand the physical meaning of level                                    | [[https://code.dennyzhang.com/as-far-from-land-as-possible][LeetCode: As Far from Land as Possible]] |
 | If original grid can be changed, visited bool array might be optional       | [[https://code.dennyzhang.com/as-far-from-land-as-possible][LeetCode: As Far from Land as Possible]] |
 | Some BFS may not necessarily need visited hashmap: say topological BFS sort | [[https://code.dennyzhang.com/course-schedule-ii][LeetCode: Course Schedule II]]           |
+| BFS traverse nodes with same value of different positions                   | [[https://code.dennyzhang.com/jump-game-iv][LeetCode: Jump Game IV]]                 |
 
 *Code Skeleton*
 #+BEGIN_SRC go

@@ -35,8 +35,8 @@ Credits To: [[https://leetcode.com/problems/count-of-smaller-numbers-after-self/
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/count-of-smaller-numbers-after-self
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/count-of-smaller-numbers-after-self
 // Basic Ideas: merge sort
 //
 //   nums[left...mid], nums[mid+1...right]

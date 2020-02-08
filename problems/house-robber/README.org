@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, houserobber
+:type:     dynamicprogramming, houserobber, kadane
 :END:
 ---------------------------------------------------------------------
 House Robber
@@ -11,9 +11,10 @@ House Robber
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/house-robber"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/house-robber-ii][LeetCode: House Robber II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/tag/houserobber][#houserobber]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-houserobber][#houserobber]], [[https://code.dennyzhang.com/followup-kadane][#kadane]]
 ---------------------------------------------------------------------
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 
@@ -25,7 +26,49 @@ Credits To: [[https://leetcode.com/problems/house-robber/description/][leetcode.
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: dp + O(1) space
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/house-robber
+## Basic Ideas: dynamic programming
+##
+## Similar to Kadane's algorithm.
+## Track current's best candidate, which indicates not taking current item
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        n = len(nums)
+        pp, res = 0, 0
+        for i in range(n):
+            tmp = res
+            # don't take vs take
+            res = max(res, pp+nums[i])
+            pp = tmp # without current item
+        return res
+#+END_SRC
 
+- Solution: dp + O(1) space
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/house-robber
+## Basic Ideas: dynamic programming
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        n = len(nums)
+        if n==0: return 0
+        if n==1: return nums[0]
+        if n==2: return max(nums[0], nums[1])
+        pp, p, v = nums[0], max(nums[1], nums[0]), 0
+        res = 0
+        for i in range(2, n):
+            v = max(p, pp+nums[i])
+            res = max(res, pp, p, v)
+            pp, p = p, v
+        return res
+#+END_SRC
+
+- Solution: dp + O(n) space
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/house-robber
 class Solution(object):

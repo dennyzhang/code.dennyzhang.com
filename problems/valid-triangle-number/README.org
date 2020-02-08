@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     twopointer, twosum, triangle
+:type:     twopointer, twosum, triangle, classic, greedy, redo
 :END:
 ---------------------------------------------------------------------
 Pic 3 numbers to get a triangle
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/followup-twosum][Series: TwoSum Problems & Follow-Up]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
+- Tag: [[https://code.dennyzhang.com/followup-twosum][#twosum]], [[https://code.dennyzhang.com/review-twopointer][#wopointer]], [[https://code.dennyzhang.com/followup-triangle][#triangle]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Given an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.
 
@@ -40,6 +40,28 @@ Credits To: [[https://leetcode.com/problems/valid-triangle-number/description/][
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/valid-triangle-number
+## Basic Ideas: sliding window
+##
+## Complexity: Time O(n^2), Space O(1)
+class Solution:
+    def triangleNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        nums.sort()
+        res = 0
+        # i, j, k
+        for i in range(n-2):
+            if nums[i] == 0: continue
+            k = i+2
+            for j in range(i+1, n-1):
+                # valid
+                while k<n and nums[i]+nums[j]>nums[k]:
+                    k += 1
+                res += k-j-1
+        return res
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/valid-triangle-number

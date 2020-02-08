@@ -11,9 +11,10 @@ Judging Triangle
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/judging-triangle"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/largest-perimeter-triangle][LeetCode: Largest Perimeter Triangle]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/tag/triangle][#triangle]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/followup-triangle][#triangle]]
 ---------------------------------------------------------------------
 Description
 Given an array arr, ask if you can find 3 elements from the array as the sides of the three sides, so that the three sides can form a triangle. If yes, return yes, if not, return no
