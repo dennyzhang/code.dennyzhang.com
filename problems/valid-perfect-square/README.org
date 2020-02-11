@@ -40,29 +40,26 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/valid-perfect-square
-## Basic Ideas: Binary search
-##             Search in between [1^2, 2^2, 3^2, ... num^2]
-##     But we have to use long for mid to avoid *mid\mid from overflow
+## Basic Ideas: binary search
+##
+##  left: 1, right: n
+##
 ## Complexity: Time O(log(n)), Space O(1)
-class Solution(object):
-    def isPerfectSquare(self, num):
-        """
-        :type num: int
-        :rtype: bool
-        """
-        if num <= 0:
-            return False
+class Solution:
+    def isPerfectSquare(self, num: int) -> bool:
         left, right = 1, num
-        while left<= right:
-            mid = left + (right-left)/2
+        # always exists
+        while left<right:
+            mid = int((right-left)/2+left)
             v = mid*mid
-            if v == num:
-                return True
-            elif v < num:
-                left = mid + 1
+            if v == num: return True
+            if num > v:
+                # drop the left half
+                left = mid+1
             else:
-                right = mid - 1
-        return False
+                # drop the right half
+                right = mid-1
+        return left*left == num
 #+END_SRC
 
 #+BEGIN_HTML

@@ -1,11 +1,11 @@
-* Series: House Robber & Follow-up                              :BLOG:Series:
+* Series: House Robber Problems & Follow-up                     :BLOG:Series:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
 :type: series
 :END:
 ---------------------------------------------------------------------
-House Robber & Follow-up
+House Robber Problems & Follow-up
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/followup/followup-houserobber"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>

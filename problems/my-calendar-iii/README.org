@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     interval, meetingconflict
+:type:     interval, meetingconflict, linesweep
 :END:
 ---------------------------------------------------------------------
 My Calendar III
@@ -13,7 +13,7 @@ My Calendar III
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
+- Tag: [[https://code.dennyzhang.com/review-interval][#interval]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]], [[https://code.dennyzhang.com/followup-linesweep][#linesweep]]
 ---------------------------------------------------------------------
 Implement a MyCalendarThree class to store your events. A new event can always be added.
 
@@ -56,7 +56,29 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/my-calendar-iii
+## Basic Ideas: open-close
+## 
+## Complexity: Time O(n^2), Space O(n)
+class MyCalendarThree:
 
+    def __init__(self):
+        self.counter = collections.Counter()
+
+    def book(self, start: int, end: int) -> int:
+        self.counter[start] += 1
+        self.counter[end] -= 1
+
+        res = 0
+        cnt = 0
+        for d in sorted(self.counter):
+            # Change the count of concurrent booking
+            cnt += self.counter[d]
+            res = max(res, cnt)
+        return res
+
+# Your MyCalendarThree object will be instantiated and called as such:
+# obj = MyCalendarThree()
+# param_1 = obj.book(start,end)
 #+END_SRC
 
 #+BEGIN_HTML

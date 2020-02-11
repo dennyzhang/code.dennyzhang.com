@@ -32,6 +32,20 @@ Credits To: [[https://leetcode.com/problems/intersection-of-two-arrays/descripti
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: hashset
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/intersection-of-two-arrays
+## Basic Ideas: set
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        s1 = set(nums1)
+        s2 = set()
+        for v in nums2:
+            if v in s1: s2.add(v)
+        return list(s2)
+#+END_SRC
+
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/intersection-of-two-arrays
 // Basic Ideas: hashmap

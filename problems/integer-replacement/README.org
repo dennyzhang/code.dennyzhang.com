@@ -55,36 +55,50 @@ Credits To: [[https://leetcode.com/problems/integer-replacement/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution: Recursive + pruning
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/integer-replacement
-// Basic Ideas: recursive + pruning
-// Complexity: Time O(n), Space O(n)
-var m map[int]int
-func integerReplacement(n int) int {
-	m = map[int]int{}
-    d := 0
-    for i:=1; i<=n*2; i=i*2 {
-        m[i] = d
-        d++
-    }
-    return getDistance(n)
-}
+- Solution: Iterative
+#+BEGIN_SRC python
+## Basic Ideas: iterative
+## https://code.dennyzhang.com/integer-replacement
+##  Change even to odd
+##  When odd, whether to caculate f(n+1) or f(n-1)
+##
+## Complexity: Time O(log(n)), Space O(log(n))
+class Solution:
+    def integerReplacement(self, n: int) -> int:
+        res = 0
+        while n>1:
+            if n%2 == 0:
+                n = int(n/2)
+            else:
+                if (n+1)%4 == 0 and (n-1) != 2:
+                    n += 1
+                else:
+                    n -= 1
+            res += 1
+        return res
+#+END_SRC
 
-func getDistance(n int) int {
-    v, ok := m[n]
-    res := -1
-    if ok { return v }
-    if n%2 == 0 {
-        res = 1+getDistance(n/2)
-    } else {
-        v1, v2 := getDistance(n-1)+1, getDistance((n+1)/2)+2
-        res = v1
-        if v1>v2 { res = v2 }
-    }
-    m[n] = res
-    return res
-}
+- Solution: Recursive + memo
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/integer-replacement
+## Basic Ideas: recursive + memo
+##
+##  Change even to odd
+##
+## Complexity: Time O(log(n)), Space O(log(n))
+class Solution:
+    def integerReplacement(self, n: int) -> int:
+        m = collections.defaultdict(int)
+        def dfs(n):
+            if n <= 1: return 0
+            if n in m: return m[n]
+            if n%2 == 0:
+                v = 1+dfs(int(n/2))
+            else:
+                v = 1+min(dfs(n+1), dfs(n-1))
+            m[n] = v
+            return m[n]
+        return dfs(n)
 #+END_SRC
 
 - Solution: BFS + pruning

@@ -27,6 +27,9 @@ Review Math code problems
 |  10 | Remove 9                                | [[https://code.dennyzhang.com/remove-9][LeetCode: Remove 9]]                             |
 |  11 | Fraction to Recurring Decimal           | [[https://code.dennyzhang.com/fraction-to-recurring-decimal][LeetCode: Fraction to Recurring Decimal]]        |
 |  12 | [[https://stackoverflow.com/questions/3838329/how-can-i-check-if-two-segments-intersect][Check if two line segments intersect]]    |                                                |
+|  13 | Integer Replacement                     | [[https://code.dennyzhang.com/integer-replacement][LeetCode: Integer Replacement]]                  |
+|  14 | Sparse Matrix Multiplication            | [[https://code.dennyzhang.com/sparse-matrix-multiplication][LeetCode: Sparse Matrix Multiplication]]         |
+|  15 | How to determine a square               | [[https://code.dennyzhang.com/valid-square][LeetCode: Valid Square]]                         |
 #+TBLFM: $1=@-1$1+1;N
 
 See all math problems: [[https://code.dennyzhang.com/review-math/][#math]]

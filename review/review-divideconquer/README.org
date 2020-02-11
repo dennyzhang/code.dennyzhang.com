@@ -14,6 +14,11 @@ Divide And Conquer Problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
+| Num | Problem                             | Summary                                       |
+|-----+-------------------------------------+-----------------------------------------------|
+|   1 | Median of Two Sorted Arrays         | [[https://code.dennyzhang.com/median-of-two-sorted-arrays][Leetcode: Median of Two Sorted Arrays]]         |
+|   2 | Count of Smaller Numbers After Self | [[https://code.dennyzhang.com/count-of-smaller-numbers-after-self][LeetCode: Count of Smaller Numbers After Self]] |
+#+TBLFM: $1=@-1$1+1;N
 See all divideconquer problems: [[https://code.dennyzhang.com/tag/divideconquer/][#divideconquer]]
 [display-posts tag="divideconquer" posts_per_page="100" orderby="title"]
 

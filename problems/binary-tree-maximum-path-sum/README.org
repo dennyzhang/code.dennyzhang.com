@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, pathsum
+:type:     binarytree, pathsum, treedp
 :END:
 ---------------------------------------------------------------------
 Binary Tree Maximum Path Sum
@@ -13,7 +13,7 @@ Binary Tree Maximum Path Sum
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-pathsum][#pathsum]], [[https://code.dennyzhang.com/followup-treedp][#treedp]]
 ---------------------------------------------------------------------
 Given a binary tree, find the maximum path sum.
 
@@ -34,7 +34,39 @@ Credits To: [[https://leetcode.com/problems/binary-tree-maximum-path-sum/descrip
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/binary-tree-maximum-path-sum
+## Basic Ideas: recursive
+##
+##   Three different types
+##     Without root: in left sub-tree, in right sub-tree
+##     With root
+##
+## Complexity: Time O(n), Space O(h)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Solution:
+    def maxPathSum(self, root: TreeNode) -> int:
+        maxSum = -sys.maxsize-1
+        # return the max with the largest single path
+        def dfs(root):
+            nonlocal maxSum
+            if not root: return 0
+            left = max(dfs(root.left), 0)
+            right = max(dfs(root.right), 0)
+            maxSum = max(maxSum, left+root.val+right)
+            return root.val+max(left, right)
+        dfs(root)
+        return maxSum
+#+END_SRC
+
+- Solution
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/binary-tree-maximum-path-sum
 // Basic Ideas: post-order + dynamic programming

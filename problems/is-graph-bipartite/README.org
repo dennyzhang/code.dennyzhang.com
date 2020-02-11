@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     graph, bfs, inspiring, dfs, redo
+:type:     graph, bfs, inspiring, dfs, bipartite, redo
 :END:
 ---------------------------------------------------------------------
 Is Graph Bipartite?
@@ -13,7 +13,7 @@ Is Graph Bipartite?
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/review-inspiring][#inspiring]], [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/followup-bipartite][#bipartite]]
 ---------------------------------------------------------------------
 Given a graph, return true if and only if it is bipartite.
 
@@ -60,6 +60,34 @@ Credits To: [[https://leetcode.com/problems/is-graph-bipartite/description/][lee
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/is-graph-bipartite
+## Basic Ideas: dfs
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def isBipartite(self, graph: List[List[int]]) -> bool:
+        n = len(graph)
+        if n == 0: return False
+        s = collections.defaultdict(int)
+        for i in range(n):
+            if i not in s:
+                s[i] = 0
+                # dfs
+                stack = [i]
+                while stack:
+                    n1 = stack.pop()
+                    for n2 in graph[n1]:
+                        if n2 not in s:
+                            stack.append(n2)
+                            s[n2] = s[n1]^1
+                        elif s[n2] == s[n1]:
+                            return False
+        return True
+#+END_SRC
+
+- Solution
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/is-graph-bipartite
 class Solution:

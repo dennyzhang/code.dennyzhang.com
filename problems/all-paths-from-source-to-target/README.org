@@ -2,17 +2,19 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dfs
+:type:     dfs, bipartite
 :END:
 ---------------------------------------------------------------------
 All Paths From Source to Target
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/all-paths-from-source-to-target"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-complete-tree-nodes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/is-graph-bipartite][Is Graph Bipartite]]
-- [[https://code.dennyzhang.com/tag/dfs][Tag: #dfs]]
+- [[https://code.dennyzhang.com/is-graph-bipartite][LeetCode: Is Graph Bipartite]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]]
 ---------------------------------------------------------------------
 Given a directed, acyclic graph of N nodes.  Find all possible paths from node 0 to node N-1, and return them in any order.
 

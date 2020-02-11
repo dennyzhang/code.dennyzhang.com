@@ -44,7 +44,71 @@ Credits To: [[https://leetcode.com/problems/most-frequent-subtree-sum/descriptio
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/most-frequent-subtree-sum
+## Basic Ideas: dfs + hashmap
+##
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Solution:
+    def findFrequentTreeSum(self, root: TreeNode) -> List[int]:
+        if not root: return []
+        freqs = collections.Counter()
+        def dfs(root):
+            # return the sum of current tree
+            nonlocal freqs
+            if not root: return 0
+            res = root.val + dfs(root.left)+dfs(root.right)
+            freqs[res] += 1
+            return res
+        dfs(root)
+        maxFreq = max(freqs.values())
+        return [s for s in freqs if freqs[s] == maxFreq]
+#+END_SRC
+
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/most-frequent-subtree-sum
+## Basic Ideas: dfs + hashmap
+##
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def findFrequentTreeSum(self, root: TreeNode) -> List[int]:
+        freqs = collections.defaultdict(int)
+        def dfs(root):
+            # return the sum of current tree
+            nonlocal freqs
+            if not root: return 0
+            res = root.val + dfs(root.left)+dfs(root.right)
+            freqs[res] += 1
+            return res
+        dfs(root)
+        maxFreq = -sys.maxsize-1
+        res = []
+        for s in freqs.keys():
+            if freqs[s] > maxFreq:
+                maxFreq = freqs[s]
+                res = [s]
+            elif freqs[s] == maxFreq:
+                res.append(s)
+        return res
+#+END_SRC
+
+- Solution
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/most-frequent-subtree-sum
 ## Basic Ideas: post-order

@@ -93,6 +93,63 @@ Credits To: [[https://leetcode.com/problems/regions-cut-by-slashes/description/]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/regions-cut-by-slashes
+## Basic Ideas: union find
+##
+##   Each cell can be divided into 4 parts
+##        
+##      \ 0 /
+##    3      1
+##      / 2  \
+##     
+## Complexity: Time O(n*n), Space O(n*n)
+class Solution:
+    def regionsBySlashes(self, grid: List[str]) -> int:
+        n = len(grid)
+        cnt = n*n*4
+        parent = [0]*cnt
+        for i in range(len(parent)): parent[i] = i
+        def find(x):
+            # TODO: path compression
+            while parent[x] != x:
+                x = parent[x]
+            return x
+
+        def union(x, y):
+            nonlocal parent, cnt
+            x2, y2 = find(x), find(y)
+            # TODO: union by rank
+            if y2 != x2:
+                parent[y2] = x2
+                cnt -= 1
+
+        for i in range(n):
+            for j in range(n):
+                k = (i*n+j)*4
+                # union inside one cell
+                if grid[i][j] == " ":
+                    union(k, k+1)
+                    union(k+1, k+2)
+                    union(k+2, k+3)
+                    union(k, k+3)
+                elif grid[i][j] == "\\":
+                    union(k, k+1)
+                    union(k+3, k+2)
+                else:
+                    union(k, k+3)
+                    union(k+1, k+2)
+                # union with adjacent cell
+                # north/south
+                if i>0: union(k, k-4*n+2)
+                if i<n-1: union(k+2, k+4*n)
+                # west/east
+                if j>0: union(k+3, k-4+1)
+                if j<n-1: union(k+1, k+4+3)
+        return cnt
+#+END_SRC
+
 - Solution:
 
 #+BEGIN_SRC go

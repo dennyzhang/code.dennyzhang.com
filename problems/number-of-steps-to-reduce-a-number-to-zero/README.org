@@ -57,6 +57,23 @@ Credits To: [[https://leetcode.com/problems/number-of-steps-to-reduce-a-number-t
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: bit manipulation
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/number-of-steps-to-reduce-a-number-to-zero
+## Basic Ideas: simulation
+##
+##   Check the string of binary representation
+##     14 -> 1110
+##       From right to left
+##         For any 0, it takes one change (divide by 2)
+##         for any 1, it takes two changes (substract then divide)
+## Complexity: Time ?, Space O(1)
+class Solution:
+    def numberOfSteps (self, num: int) -> int:
+        s = f'{num:b}'
+        return s.count('1')+len(s)-1
+#+END_SRC
+
 - Solution: loop
 
 #+BEGIN_SRC python
@@ -90,23 +107,6 @@ class Solution:
             return 1+self.numberOfSteps(int(num/2))
         else:
             return 1+self.numberOfSteps(num-1)
-#+END_SRC
-
-- Solution: bit manipulation
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/number-of-steps-to-reduce-a-number-to-zero
-## Basic Ideas: simulation
-##
-##   Check the string of binary representation
-##     14 -> 1110
-##       From right to left
-##         For any 0, it takes one change (divide by 2)
-##         for any 1, it takes two changes (substract then divide)
-## Complexity: Time ?, Space O(1)
-class Solution:
-    def numberOfSteps (self, num: int) -> int:
-        s = f'{num:b}'
-        return s.count('1')+len(s)-1
 #+END_SRC
 
 #+BEGIN_HTML

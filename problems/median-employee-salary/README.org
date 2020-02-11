@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/find-median-given-frequency-of-numbers][Find Median Given Frequency of Numbers]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/review-sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/followup-getmedian][getmedian]], [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary.
 #+BEGIN_EXAMPLE

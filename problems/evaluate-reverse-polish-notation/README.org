@@ -31,49 +31,31 @@ Credits To: [[https://leetcode.com/problems/evaluate-reverse-polish-notation/des
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: stack
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/evaluate-reverse-polish-notation
-## Basic Ideas: Use stack
+## Basic Ideas: stack
+##
 ## Complexity: Time O(n), Space O(n)
-class Solution(object):
-    def evalRPN(self, tokens):
-        """
-        :type tokens: List[str]
-        :rtype: int
-        """
-        length = len(tokens)
-        if length == 0:
-            return None
-
-        stack = []
-        for token in tokens:
-            if token not in '+-*/':
-                stack.append(int(token))
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        if len(tokens) == 0: return 0
+        stack = collections.deque()
+        for t in tokens:
+            if t not in "+-*/":
+                stack.append(int(t))
             else:
-                num2 = int(stack.pop())
-                num1 = int(stack.pop())
-                if token == '+':
-                    v = num1+num2
-                if token == '-':
-                    v = num1-num2
-                if token == '*':
-                    v = num1*num2
-                if token == '/':
-                    if num1*num2 < 0:
-                        v = abs(num1)/abs(num2)
-                        v = -v
-                    else:
-                        v = num1/num2
-                stack.append(v)
-                #print stack[-1]
-        return stack.pop()
-
-# s = Solution()
-# print s.evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"]) # 22
-# print s.evalRPN(["2", "1", "+", "3", "*"]) # 9
-# print s.evalRPN(["4", "13", "5", "/", "+"]) # 6
-# print s.evalRPN(["18"]) # 18
+                v2 = stack.pop()
+                v1 = stack.pop()
+                if t == "+":
+                    stack.append(v1+v2)
+                elif t == "-":
+                    stack.append(v1-v2)
+                elif t == "*":
+                    stack.append(v1*v2) # won't overflow
+                else:
+                    stack.append(int(v1/v2))
+        return stack[0]
 #+END_SRC
 
 #+BEGIN_HTML

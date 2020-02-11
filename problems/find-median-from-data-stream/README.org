@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/median-of-two-sorted-arrays][Median of Two Sorted Arrays]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
+- Tag: [[https://code.dennyzhang.com/followup-getmedian][getmedian]], [[https://code.dennyzhang.com/tag/oodesign][oodesign]]
 ---------------------------------------------------------------------
 Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 
@@ -37,6 +37,11 @@ findMedian() -> 1.5
 addNum(3) 
 findMedian() -> 2
 #+END_EXAMPLE
+
+Follow up:
+
+- If all integer numbers from the stream are between 0 and 100, how would you optimize it?
+- If 99% of all integer numbers from the stream are between 0 and 100, how would you optimize it?
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-median-from-data-stream][code.dennyzhang.com]]
 

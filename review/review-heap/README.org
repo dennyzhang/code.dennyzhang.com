@@ -23,6 +23,7 @@ Key operations: find-min, get-min, insert, etc.
 | For topk max, need minheap, instead of maxheap |                |
 *Scenarios*
 *Code Skeleton*
+
 *Top Questions*
 | Num | Problem             | Summary                       |
 |-----+---------------------+-------------------------------|
@@ -30,9 +31,45 @@ Key operations: find-min, get-min, insert, etc.
 |   2 | Task Scheduler      | [[https://code.dennyzhang.com/task-scheduler][LeetCode: Task Scheduler]]      |
 |   3 | Last Stone Weight   | [[https://code.dennyzhang.com/last-stone-weight][LeetCode: Last Stone Weight]]   |
 |   4 | The Skyline Problem | [[https://code.dennyzhang.com/the-skyline-problem][LeetCode: The Skyline Problem]] |
+|   5 | Task Scheduler      | [[https://code.dennyzhang.com/task-scheduler][LeetCode: Task Scheduler]]      |
 #+TBLFM: $1=@-1$1+1;N
 
 *Code Skeleton*
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/merge-k-sorted-lists
+## Basic Ideas: heap
+##
+## Complexity: Time O(n*log(k)), Space O(1)
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+import heapq
+class Solution:
+    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+        l = []
+        # minheap
+        for i in range(len(lists)):
+            node = lists[i]
+            if node:
+                heapq.heappush(l, (node.val, id(node), node))
+
+        dummyHead = ListNode(0)
+        p = dummyHead
+        # heapq.heapify(l)
+        while len(l)>0:
+            (_, _, q) = heapq.heappop(l)
+            if q.next:
+                heapq.heappush(l, (q.next.val, id(q.next), q.next))
+            p.next = q
+            p = p.next
+
+        # close the linked list
+        p.next = None
+        return dummyHead.next
+#+END_SRC
+
 #+BEGIN_SRC go
 // Blog link: https://code.dennyzhang.com/minimum-cost-to-connect-sticks
 // Basic Ideas: min heap

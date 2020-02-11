@@ -1,0 +1,99 @@
+* LeetCode: Sort Integers by The Number of 1 Bits               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sortbyfunction, bitmanipulation
+:END:
+---------------------------------------------------------------------
+Sort Integers by The Number of 1 Bits
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-integers-by-the-number-of-1-bits"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/tag/sortbyfunction][#sortbyfunction]], [[https://code.dennyzhang.com/review-bitmanipulation][#bitmanipulation]]
+---------------------------------------------------------------------
+Given an integer array arr. You have to sort the integers in the array in ascending order by the number of 1's in their binary representation and in case of two or more integers have the same number of 1's you have to sort them in ascending order.
+
+Return the sorted array.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [0,1,2,3,4,5,6,7,8]
+Output: [0,1,2,4,8,3,5,6,7]
+Explantion: [0] is the only integer with 0 bits.
+[1,2,4,8] all have 1 bit.
+[3,5,6] have 2 bits.
+[7] has 3 bits.
+The sorted array by bits is [0,1,2,4,8,3,5,6,7]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [1024,512,256,128,64,32,16,8,4,2,1]
+Output: [1,2,4,8,16,32,64,128,256,512,1024]
+Explantion: All integers have 1 bit in the binary representation, you should just sort them in ascending order.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [10000,10000]
+Output: [10000,10000]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: arr = [2,3,5,7,11,13,17,19]
+Output: [2,3,5,17,7,11,13,19]
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: arr = [10,100,1000,10000]
+Output: [10,100,10000,1000]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 500
+- 0 <= arr[i] <= 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sort-integers-by-the-number-of-1-bits][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/sort-integers-by-the-number-of-1-bits
+## Basic Ideas: quick sort
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+class Solution:
+    def sortByBits(self, arr: List[int]) -> List[int]:
+        return sorted(arr, key=lambda x: (bin(x).count("1"), x))
+#+END_SRC
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/sort-integers-by-the-number-of-1-bits
+## Basic Ideas: quick sort
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+class Solution:
+    def sortByBits(self, arr: List[int]) -> List[int]:
+        l = [(f'{x:b}'.count("1"), x) for x in arr]
+        l.sort()
+        return [x[1] for x in l]
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

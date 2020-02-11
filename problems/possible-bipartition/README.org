@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     graph, classic
+:type:     graph, classic, bipartite
 :END:
 ---------------------------------------------------------------------
 Possible Bipartition
@@ -13,7 +13,7 @@ Possible Bipartition
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/tag/classic][#classic]], [[https://code.dennyzhang.com/followup-bipartite][#bipartite]]
 ---------------------------------------------------------------------
 Given a set of N people (numbered 1, 2, ..., N), we would like to split everyone into two groups of any size.
 

@@ -36,6 +36,26 @@ Credits To: [[https://leetcode.com/problems/paint-house/description/][leetcode.c
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: dp
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/paint-house
+## Basic Ideas: dynamic programming
+##
+##  For each house, we need to choose one color
+##  From left to right, loop the houses
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def minCost(self, costs: List[List[int]]) -> int:
+        r, b, g = 0, 0, 0
+        for i in range(len(costs)):
+            [rc, bc, gc] = costs[i]
+            rc += min(b, g)
+            bc += min(r, g)
+            gc += min(r, b)
+            r, b, g = rc, bc, gc
+        return min(r, b, g)
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/paint-house

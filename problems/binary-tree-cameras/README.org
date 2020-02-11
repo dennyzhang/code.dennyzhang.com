@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     greedy, dynamicprogramming
+:type:     greedy, dynamicprogramming, binarytree, treedp
 :END:
 ---------------------------------------------------------------------
 Binary Tree Cameras
@@ -13,7 +13,7 @@ Binary Tree Cameras
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-treedp][#treedp]]
 ---------------------------------------------------------------------
 Given a binary tree, we install cameras on the nodes of the tree. 
 
@@ -48,6 +48,62 @@ Credits To: [[https://leetcode.com/problems/binary-tree-cameras/description/][le
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/binary-tree-cameras
+## Basic Ideas: greedy + dfs
+##
+##  Try to put camera to the immediate parent of leaves
+##  Then any following decisions are determined
+##
+##  post order
+##     - covered by child
+##     - covered by itself
+##     - not covered
+##
+## Complexity: Time O(n), Space O(h)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+COVER_BY_CHILD = 0
+COVER_BY_ITSELF = 1
+NOT_COVERED = 2
+class Solution:
+    def minCameraCover(self, root: TreeNode) -> int:
+        camera = 0
+        def dfs(root):
+            nonlocal camera
+            # For empty node: 
+            ##  no need for help from others; And can't help others
+            if not root:
+                return COVER_BY_CHILD
+
+            # leaf: need help
+            if not root.left and not root.right:
+                return NOT_COVERED
+            l = dfs(root.left)
+            r = dfs(root.right)
+
+            # Have to help
+            if l == NOT_COVERED or r == NOT_COVERED:
+                # add a camera
+                camera += 1
+                return COVER_BY_ITSELF
+            elif l == COVER_BY_ITSELF or r == COVER_BY_ITSELF:
+                # child can help
+                return COVER_BY_CHILD
+            else:
+                # need help from parent
+                return NOT_COVERED
+
+        if dfs(root) == NOT_COVERED:
+            camera += 1
+        return camera
+#+END_SRC
+
 - Solution:
 
 #+BEGIN_SRC go

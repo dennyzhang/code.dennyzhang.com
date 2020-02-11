@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     subarray, presum
+:type:     subarray, presum, redo
 :END:
 ---------------------------------------------------------------------
 Continuous Subarray Sum
@@ -42,6 +42,35 @@ Credits To: [[https://leetcode.com/problems/continuous-subarray-sum/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution 
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/continuous-subarray-sum
+## Basic Ideas: presum + mod + greedy
+##
+##   mod sum by k. (Note k might be 0)
+##   Fix the ending point, then try to find the starting point
+##   For starting point, find the first match
+##
+## Time O(n), Space O(n)
+class Solution:
+    def checkSubarraySum(self, nums: List[int], k: int) -> bool:
+        if k<0: k=-k
+        n = len(nums)
+        presum = 0
+        m = collections.defaultdict(int)
+        # Add a dummy one for the first item
+        m[0] = -1
+        for i in range(n):
+            presum += nums[i]
+            if k != 0: presum %= k
+            # Detect whether there is a match
+            if presum in m and i-m[presum]>=2:
+                return True
+            # Collect current value
+            if presum not in m:
+                m[presum] = i
+        return False
+#+END_SRC
 
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/continuous-subarray-sum

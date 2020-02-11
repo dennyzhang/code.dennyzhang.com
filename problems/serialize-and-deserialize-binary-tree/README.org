@@ -39,9 +39,69 @@ Credits To: [[https://leetcode.com/problems/serialize-and-deserialize-binary-tre
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/serialize-and-deserialize-binary-tree
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/serialize-and-deserialize-binary-tree
+## Basic Ideas: BFS
+##
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
+class Codec:
+
+    def serialize(self, root):
+        """Encodes a tree to a single string.
+        
+        :type root: TreeNode
+        :rtype: str
+        """
+        if not root: return ""
+        queue = collections.deque([root])
+        l = []
+        while len(queue) > 0:
+            for i in range(len(queue)):
+                node = queue.popleft()
+                # assume value is integer
+                if node:
+                    l.append(str(node.val))
+                    queue.append(node.left)
+                    queue.append(node.right)
+                else:
+                    l.append("n")
+        return ",".join(l)
+
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+        
+        :type data: str
+        :rtype: TreeNode
+        """
+        if data == "": return None
+        l = data.split(",")
+        root = TreeNode(int(l[0]))
+        queue = collections.deque([root])
+
+        k = 1
+        while len(queue)>0:
+            for i in range(len(queue)):
+                node = queue.popleft()
+                left, right, k = l[k], l[k+1], k+2
+                if left != "n":
+                    node.left = TreeNode(int(left))
+                    queue.append(node.left)
+                if right != "n":
+                    node.right = TreeNode(int(right))
+                    queue.append(node.right)
+        return root
+        
+
+# Your Codec object will be instantiated and called as such:
+# codec = Codec()
+# codec.deserialize(codec.serialize(root))
 #+END_SRC
 
 #+BEGIN_HTML

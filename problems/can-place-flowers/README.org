@@ -42,6 +42,33 @@ Credits To: [[https://leetcode.com/problems/can-place-flowers/description/][leet
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution greedy
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/can-place-flowers
+## Basic Ideas: greedy
+##
+##  Try to put flower for the early 0s.
+##  This strategy won't make the choices worse
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+        if n == 0: return True
+        size = len(flowerbed)
+        for i in range(size):
+            if flowerbed[i] == 1: continue
+            # whether we can put a flower
+            if i>0 and flowerbed[i-1] == 1:
+                continue
+            if i+1<size and flowerbed[i+1] == 1:
+                continue
+            # place a flower
+            flowerbed[i] = 1
+            n -= 1
+            if n<=0: return True
+        return False
+#+END_SRC
+
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/can-place-flowers
 ## Basic Ideas: Find consecutive 0s

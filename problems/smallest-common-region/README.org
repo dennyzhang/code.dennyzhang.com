@@ -1,0 +1,89 @@
+* LeetCode: Smallest Common Region                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     lca
+:END:
+---------------------------------------------------------------------
+Smallest Common Region
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-common-region"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-lca][#lca]]
+---------------------------------------------------------------------
+You are given some lists of regions where the first region of each list includes all other regions in that list.
+
+Naturally, if a region X contains another region Y then X is bigger than Y. Also by definition a region X contains itself.
+
+Given two regions region1, region2, find out the smallest region that contains both of them.
+
+If you are given regions r1, r2 and r3 such that r1 includes r3, it is guaranteed there is no r2 such that r2 includes r3.
+
+It's guaranteed the smallest region exists.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+regions = [["Earth","North America","South America"],
+["North America","United States","Canada"],
+["United States","New York","Boston"],
+["Canada","Ontario","Quebec"],
+["South America","Brazil"]],
+region1 = "Quebec",
+region2 = "New York"
+Output: "North America"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 2 <= regions.length <= 10^4
+- region1 != region2
+- All strings consist of English letters and spaces with at most 20 letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/smallest-common-region][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/smallest-common-region/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/smallest-common-region
+## Basic Ideas: LCA
+##
+##  Build the parent-child relation ship
+##  Find path1 from root to node1
+##  Backtrack from node2 to its parent
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def findSmallestRegion(self, regions: List[List[str]], region1: str, region2: str) -> str:
+        parents = {}
+        for r in regions:
+            for i in range(1, len(r)):
+                parents[r[i]] = r[0]
+        nodes = set([region1])
+        p = region1
+        while p in parents:
+            p = parents[p]
+            # remember to put the top region
+            nodes.add(p)
+
+        q = region2
+        while q not in nodes:
+            q = parents[q]
+        return q
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

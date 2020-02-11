@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     binarytree, recursive
 :END:
 ---------------------------------------------------------------------
 Binary Tree Upside Down
@@ -13,7 +13,7 @@ Binary Tree Upside Down
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
 ---------------------------------------------------------------------
 Given a binary tree where all the right nodes are either leaf nodes with a sibling (a left node that shares the same parent node) or empty, flip it upside down and turn it into a tree where the original right nodes turned into left leaf nodes. Return the new root.
 
@@ -42,6 +42,28 @@ Credits To: [[https://leetcode.com/problems/binary-tree-upside-down/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/binary-tree-upside-down
+## Basic Ideas: recursive post-order
+##
+## Complexity: Time O(n), Space O(1)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+class Solution:
+    def upsideDownBinaryTree(self, root: TreeNode) -> TreeNode:
+        if (not root) or (not root.left):
+            return root
+        p = self.upsideDownBinaryTree(root.left)
+        root.left.left = root.right
+        root.left.right = root
+        root.left, root.right = None, None
+        return p
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/binary-tree-upside-down

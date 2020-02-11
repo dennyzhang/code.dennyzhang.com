@@ -12,13 +12,15 @@ Recursion is a problem solving technique, where solutino of a larger problem is 
 #+END_HTML
 
 *Basic Abstractions*
-| Name                             | Summary                                                                 |
-|----------------------------------+-------------------------------------------------------------------------|
-| Recursive function               | Visualize a larger problem into a smaller one of *the exact same type*  |
-| Terminating condition            | Function stops calling itself when the terminating condition is reached |
-| Head recursion                   | When recursive call is made before it performs its own task             |
-| Tail recursion                   | When recursive call is made after it performs its own task              |
-| Tail recursion vs iterative loop | tail recursion can be easily re-write in form of a loop                 |
+| Num | Name                             | Summary                                                                 |
+|-----+----------------------------------+-------------------------------------------------------------------------|
+|   1 | Recursive function               | Visualize a larger problem into a smaller one of *the exact same type*  |
+|   2 | Terminating condition            | Function stops calling itself when the terminating condition is reached |
+|   3 | Head recursion                   | When recursive call is made before it performs its own task             |
+|   4 | Tail recursion                   | When recursive call is made after it performs its own task              |
+|   5 | Tail recursion vs iterative loop | tail recursion can be easily re-write in form of a loop                 |
+|   6 | Count Complete Tree Nodes        | [[https://code.dennyzhang.com/count-complete-tree-nodes][Leetcode: Count Complete Tree Nodes]]                                     |
+#+TBLFM: $1=@-1$1+1;N
 
 #+BEGIN_SRC c++
 // traverse a linked list

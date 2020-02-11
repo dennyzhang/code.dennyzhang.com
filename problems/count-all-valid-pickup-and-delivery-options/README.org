@@ -1,0 +1,81 @@
+* LeetCode: Count All Valid Pickup and Delivery Options         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Count All Valid Pickup and Delivery Options
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-all-valid-pickup-and-delivery-options"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]]
+---------------------------------------------------------------------
+Given n orders, each order consist in pickup and delivery services. 
+
+Count all valid pickup/delivery possible sequences such that delivery(i) is always after of pickup(i). 
+
+Since the answer may be too large, return it modulo 10^9 + 7.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 1
+Output: 1
+Explanation: Unique order (P1, D1), Delivery 1 always is after of Pickup 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 2
+Output: 6
+Explanation: All possible orders: 
+(P1,P2,D1,D2), (P1,P2,D2,D1), (P1,D1,P2,D2), (P2,P1,D1,D2), (P2,P1,D2,D1) and (P2,D2,P1,D1).
+This is an invalid order (P1,D2,P2,D1) because Pickup 2 is after of Delivery 2.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 3
+Output: 90
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 500
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-all-valid-pickup-and-delivery-options][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/count-all-valid-pickup-and-delivery-options
+## Basic Ideas: dynamic programming
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def countOrders(self, n: int) -> int:
+        mod = 10**9+7
+        dp = 1
+        for i in range(1, n+1):
+            ## for i: 2*i positions to put P
+            ## 1+2+3+...+(2*i-1)
+            cnt = int((1+2*i-1)*(2*i-1)/2)
+            dp = (cnt*dp)%mod
+        return dp
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

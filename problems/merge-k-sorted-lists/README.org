@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, heap, mergelist
+:type:     linkedlist, heap, mergelist, classic, mergesort
 :END:
 ---------------------------------------------------------------------
 Merge k Sorted Lists
@@ -13,7 +13,7 @@ Merge k Sorted Lists
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]], [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/followup-mergelist][#mergelist]], [[https://code.dennyzhang.com/review-mergesort][#mergesort]]
 ---------------------------------------------------------------------
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
@@ -23,6 +23,42 @@ Credits To: [[https://leetcode.com/problems/merge-k-sorted-lists/description/][l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution: heap
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/merge-k-sorted-lists
+## Basic Ideas: heap
+##
+## Complexity: Time O(n*log(k)), Space O(1)
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+import heapq
+class Solution:
+    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+        l = []
+        # minheap
+        for i in range(len(lists)):
+            node = lists[i]
+            if node:
+                heapq.heappush(l, (node.val, id(node), node))
+
+        dummyHead = ListNode(0)
+        p = dummyHead
+        # heapq.heapify(l)
+        while len(l)>0:
+            (_, _, q) = heapq.heappop(l)
+            if q.next:
+                heapq.heappush(l, (q.next.val, id(q.next), q.next))
+            p.next = q
+            p = p.next
+
+        # close the linked list
+        p.next = None
+        return dummyHead.next
+#+END_SRC
+
 - Solution: heap
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/merge-k-sorted-lists

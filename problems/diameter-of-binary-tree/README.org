@@ -32,46 +32,28 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/diameter-of-binary-tree
+## Basic Ideas: dfs
+##    Get the height of the subtree
+## Complexity: Time O(n), Space O(1)
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def diameterOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        ## Ideas: max(diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.rigt), pass_root)
-        (diameter, _depth) = self._diameterOfBinaryTree(root)
-        return diameter
-
-    def _diameterOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: (_diameterOfBinaryTree, max_depth)
-        """
-        if root is None:
-            return (0, 0)
-
-        if root.left is None and root.right is None:
-            return (0, 1)
-
-        res_diameter, res_depth = 0, 0
-        left_diameter, left_depth = 0, 0
-        right_diameter, right_depth = 0, 0
-
-        if root.left:
-            (left_diameter, left_depth) = self._diameterOfBinaryTree(root.left)
-        if root.right:
-            (right_diameter, right_depth) = self._diameterOfBinaryTree(root.right)
-
-        res_depth = max(left_depth, right_depth) + 1
-        res_diameter = max(left_diameter, right_diameter, left_depth+right_depth)
-        return (res_diameter, res_depth)
+class Solution:
+    def diameterOfBinaryTree(self, root: TreeNode) -> int:
+        res = 0
+        def getHeight(root):
+            if not root: return 0
+            l = getHeight(root.left)
+            r = getHeight(root.right)
+            nonlocal res
+            res = max(res, l+r)
+            return max(l, r)+1
+        getHeight(root)
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

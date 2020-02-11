@@ -1,4 +1,4 @@
-* Leetcode: Find Median Given Frequency of Numbers              :BLOG:Hard:
+* Leetcode: Find Median Given Frequency of Numbers                :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/median-employee-salary][Median Employee Salary]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/getmedian][getmedian]], [[https://code.dennyzhang.com/review-sql][#sql]]
+- Tag: [[https://code.dennyzhang.com/followup-getmedian][getmedian]], [[https://code.dennyzhang.com/review-sql][#sql]]
 ---------------------------------------------------------------------
 The Numbers table keeps the value of number and its frequency.
 #+BEGIN_EXAMPLE
@@ -60,7 +60,7 @@ on t3.Number = t4.Number
 where t3.Frequency>=t4.count_diff
 #+END_SRC
 
-#+BEGIN_EXPORT HTML
+#+BEGIN_HTML
 <div style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>

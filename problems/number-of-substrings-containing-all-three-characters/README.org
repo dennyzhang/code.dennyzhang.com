@@ -1,0 +1,92 @@
+* LeetCode: Number of Substrings Containing All Three Characters :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     slidingwindow, redo
+:END:
+---------------------------------------------------------------------
+Number of Substrings Containing All Three Characters
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-substrings-containing-all-three-characters"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
+---------------------------------------------------------------------
+Given a string s consisting only of characters a, b and c.
+
+Return the number of substrings containing at least one occurrence of all these characters a, b and c.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "abcabc"
+Output: 10
+Explanation: The substrings containing at least one occurrence of the characters a, b and c are "abc", "abca", "abcab", "abcabc", "bca", "bcab", "bcabc", "cab", "cabc" and "abc" (again). 
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "aaacb"
+Output: 3
+Explanation: The substrings containing at least one occurrence of the characters a, b and c are "aaacb", "aacb" and "acb". 
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "abc"
+Output: 1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 3 <= s.length <= 5 x 10^4
+- s only consists of a, b or c characters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-substrings-containing-all-three-characters][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/number-of-substrings-containing-all-three-characters
+## Basic Ideas: sliding window
+##
+##  Check all the starting positions
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def numberOfSubstrings(self, s: str) -> int:
+        res = 0
+        counts = [0]*3
+        n = len(s)
+        j = 0
+        for i in range(0, n-2):
+            # remove left
+            if i>0:
+                counts[ord(s[i-1])-ord('a')] -= 1
+
+            # keep moving right
+            while j<n:
+                if counts[0]>0 and counts[1]>0 and counts[2]>0:
+                    break
+                counts[ord(s[j])-ord('a')] += 1
+                j += 1
+            
+            # collect result
+            if counts[0]>0 and counts[1]>0 and counts[2]>0:
+                res += n-j+1
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

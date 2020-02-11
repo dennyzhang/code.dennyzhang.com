@@ -1,0 +1,151 @@
+* LeetCode: Find a Corresponding Node of a Binary Tree in a Clone of That Tree :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Find a Corresponding Node of a Binary Tree in a Clone of That Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
+---------------------------------------------------------------------
+Given two binary trees original and cloned and given a reference to a node target in the original tree.
+
+The cloned tree is a copy of the original tree.
+
+Return a reference to the same node in the cloned tree.
+
+Note that you are not allowed to change any of the two trees or the target node and the answer must be a reference to a node in the cloned tree.
+
+Follow up: Solve the problem if repeated values on the tree are allowed.
+
+Example 1:
+
+[[image-blog:Find a Corresponding Node of a Binary Tree in a Clone of That Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/1.png]]
+#+BEGIN_EXAMPLE
+Input: tree = [7,4,3,null,null,6,19], target = 3
+Output: 3
+Explanation: In all examples the original and cloned trees are shown. The target node is a green node from the original tree. The answer is the yellow node from the cloned tree.
+#+END_EXAMPLE
+
+Example 2:
+
+[[image-blog:Find a Corresponding Node of a Binary Tree in a Clone of That Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/2.png]]
+#+BEGIN_EXAMPLE
+Input: tree = [7], target =  7
+Output: 7
+#+END_EXAMPLE
+
+Example 3:
+
+[[image-blog:Find a Corresponding Node of a Binary Tree in a Clone of That Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/3.png]]
+#+BEGIN_EXAMPLE
+Input: tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4
+Output: 4
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: tree = [1,2,3,4,5,6,7,8,9,10], target = 5
+Output: 5
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: tree = [1,2,null,3], target = 2
+Output: 2
+#+END_EXAMPLE
+ 
+Constraints:
+
+- The number of nodes in the tree is in the range [1, 10^4].
+- The values of the nodes of the tree are unique.
+- target node is a node from the original tree and is not null.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: with duplicate values
+#+BEGIN_SRC python
+## Basic Ideas: tree traversal
+##
+##   In original tree, find the path from root to the target
+##
+## Complexity: Time O(n), Space O(1)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
+        paths = []
+        # return whether in the path
+        def dfs(root, target):
+            nonlocal paths
+            if not root: return False
+            if root == target:
+                paths.append(root)
+                return True
+            if dfs(root.left, target):
+                paths.append(root)
+                return True
+            if dfs(root.right, target):
+                paths.append(root)
+                return True
+            return False
+        
+        dfs(original, target)
+        n = len(paths)
+        p = cloned
+        for i in range(n-2, -1, -1):
+            if paths[i] == paths[i+1].left:
+                p = p.left
+            else:
+                p = p.right
+        return p
+#+END_SRC
+
+- Solution: with unique values
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree
+## Basic Ideas: tree traversal
+##
+## Complexity: Time O(n), Space O(1)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
+        def dfs(root, targetVal):
+            if not root: return None
+            if root.val == targetVal: return root
+            node = dfs(root.left, targetVal)
+            if node: return node
+            return dfs(root.right, targetVal)
+        return dfs(cloned, target.val)
+        
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

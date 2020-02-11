@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree
+:type:     binarytree, lca
 :END:
 ---------------------------------------------------------------------
 Lowest Common Ancestor of a Binary Search Tree
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/lowest-common-ancestor-of-a-binary-tree][Lowest Common Ancestor of a Binary Tree]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/followup-lca][#lca]]
 ---------------------------------------------------------------------
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 
