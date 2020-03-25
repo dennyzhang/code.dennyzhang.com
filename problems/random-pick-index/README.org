@@ -46,33 +46,19 @@ Leave me comments, if you have better ways to solve.
 ## Complexity: Time O(n), Space O(1)
 import random
 class Solution:
+    def __init__(self, nums: List[int]):
+        self.nums = nums      
 
-    def __init__(self, nums):
-        """
-        :type nums: List[int]
-        """
-        self.nums = nums
-
-    def pick(self, target):
-        """
-        :type target: int
-        :rtype: int
-        """
-        i, count, res = 0, 0, -1
-        for i in range(0, len(self.nums)):
+    def pick(self, target: int) -> int:
+        res = None
+        n = len(self.nums)
+        cnt = 0
+        for i in range(n):
             if self.nums[i] == target:
-                res = i
-                count += 1
-                break
-
-        for i in range(res+1, len(self.nums)):
-            if self.nums[i] == target:
-                count += 1
-                random_v = random.randint(1, count)
-                if random_v == 1:
+                cnt += 1
+                if random.randint(1, cnt) == 1:
                     res = i
         return res
-
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)
 # param_1 = obj.pick(target)

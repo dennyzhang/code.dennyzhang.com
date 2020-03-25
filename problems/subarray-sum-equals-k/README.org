@@ -36,6 +36,25 @@ Credits To: [[https://leetcode.com/problems/subarray-sum-equals-k/description/][
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/subarray-sum-equals-k
+## Basic Ideas: presum + hashmap
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        # value -> count
+        freqs = collections.defaultdict(int)
+        freqs[0] = 1
+        n = len(nums)
+        res, presum = 0, 0
+        for i in range(n):
+            presum += nums[i]
+            res += freqs[presum-k]
+            freqs[presum] += 1
+        return res
+#+END_SRC
+
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/subarray-sum-equals-k
 // Basic Ideas: Presum + Dynamic Programming

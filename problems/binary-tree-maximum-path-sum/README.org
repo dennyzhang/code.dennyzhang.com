@@ -53,14 +53,14 @@ Leave me comments, if you have better ways to solve.
 
 class Solution:
     def maxPathSum(self, root: TreeNode) -> int:
-        maxSum = -sys.maxsize-1
-        # return the max with the largest single path
+        maxSum = -sys.maxsize
+        # return the biggest branch
         def dfs(root):
             nonlocal maxSum
             if not root: return 0
             left = max(dfs(root.left), 0)
             right = max(dfs(root.right), 0)
-            maxSum = max(maxSum, left+root.val+right)
+            maxSum = max(maxSum, root.val+left+right)
             return root.val+max(left, right)
         dfs(root)
         return maxSum

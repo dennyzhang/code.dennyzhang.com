@@ -37,71 +37,29 @@ Credits To: [[https://leetcode.com/problems/validate-binary-search-tree/descript
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/validate-binary-search-tree
+## Basic Ideas: in-order
+##
+## Complexity: Time O(n), Space O(1)
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
 
-class Solution(object):
-    def isValidBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        import sys
-        return self._isValidBST(root, -sys.maxsize-1, sys.maxsize)
-
-    def _isValidBST(self, root, min_value, max_value):
-        if root is None:
-            return True
-
-        if root.val <= min_value or root.val >= max_value:
-            return False
-
-        if root.left:
-            if self._isValidBST(root.left, min_value, root.val) is False:
+class Solution:
+    def isValidBST(self, root: TreeNode) -> bool:
+        prev = -sys.maxsize
+        def dfs(root):
+            if not root: return True
+            nonlocal prev
+            if not dfs(root.left):
                 return False
-
-        if root.right:
-            if self._isValidBST(root.right, root.val, max_value) is False:
+            if prev != -sys.maxsize and prev>=root.val:
                 return False
-
-        return True
-
-    def isValidBST_v1(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        ## Idea: DFS recursive
-        ## Complexity: Time O(n), Space O(log(n))
-        list_value = self.getBST(root)
-        for i in range(0, len(list_value)-1):
-            if list_value[i+1] <= list_value[i]:
-                return False
-        return True
-
-    def getBST(self, root):
-        if root is None:
-            return []
-
-        res = []
-        if root.left:
-            res += self.getBST(root.left)
-
-        res.append(root.val)
-
-        if root.right:
-            res += self.getBST(root.right)
-        return res
+            prev = root.val
+            return dfs(root.right)
+        return dfs(root)
 #+END_SRC
 
 #+BEGIN_HTML
