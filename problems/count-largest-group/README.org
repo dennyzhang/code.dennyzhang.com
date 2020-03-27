@@ -1,0 +1,90 @@
+* LeetCode: Count Largest Group                                 :BLOG:Easy:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Count Largest Group
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-largest-group"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given an integer n. Each number from 1 to n is grouped according to the sum of its digits. 
+
+Return how many groups have the largest size.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 13
+Output: 4
+Explanation: There are 9 groups in total, they are grouped according sum of its digits of numbers from 1 to 13:
+[1,10], [2,11], [3,12], [4,13], [5], [6], [7], [8], [9]. There are 4 groups with largest size.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 2
+Output: 2
+Explanation: There are 2 groups [1], [2] of size 1.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 15
+Output: 6
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: n = 24
+Output: 5
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-largest-group][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/count-largest-group/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/count-largest-group
+## Basic Ideas:
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def countLargestGroup(self, n: int) -> int:
+        maxCnt = 0
+        digitSumDict = collections.defaultdict(int)
+        for i in range(1, n+1):
+            s = 0
+            while i != 0:
+                s += i%10
+                i = int(i/10)
+            digitSumDict[s] += 1
+            maxCnt = max(maxCnt, digitSumDict[s])
+        res = 0
+        for k in digitSumDict:
+            if digitSumDict[k] == maxCnt:
+                res += 1
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

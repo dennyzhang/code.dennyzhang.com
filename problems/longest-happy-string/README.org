@@ -1,32 +1,32 @@
-* Leetcode: Closest Binary Search Tree Value II                                              :BLOG:Medium:
+* LeetCode: Template                                              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, redo
+:type:     linkedlist
 :END:
 ---------------------------------------------------------------------
-Closest Binary Search Tree Value II
+Identity number which appears exactly once.
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/closest-binary-search-tree-value-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-happy-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/closest-binary-search-tree-value][Closest Binary Search Tree Value]]
-- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
 ---------------------------------------------------------------------
 Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/closest-binary-search-tree-value-ii][code.dennyzhang.com]]
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/longest-happy-string][code.dennyzhang.com]]
 
-Credits To: [[https://leetcode.com/problems/closest-binary-search-tree-value-ii/description/][leetcode.com]]
+Credits To: [[https://leetcode.com/problems/longest-happy-string/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+- Solution:
 
 #+BEGIN_SRC python
-## https://code.dennyzhang.com/closest-binary-search-tree-value-ii
+## https://code.dennyzhang.com/longest-happy-string
 
 #+END_SRC
 

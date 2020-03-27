@@ -1,0 +1,92 @@
+* LeetCode: Find Lucky Integer in an Array                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Find Lucky Integer in an Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-lucky-integer-in-an-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given an array of integers arr, a lucky integer is an integer which has a frequency in the array equal to its value.
+
+Return a lucky integer in the array. If there are multiple lucky integers return the largest of them. If there is no lucky integer return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [2,2,3,4]
+Output: 2
+Explanation: The only lucky number in the array is 2 because frequency[2] == 2.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [1,2,2,3,3,3]
+Output: 3
+Explanation: 1, 2 and 3 are all lucky numbers, return the largest of them.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [2,2,2,3,3]
+Output: -1
+Explanation: There are no lucky numbers in the array.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: arr = [5]
+Output: -1
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: arr = [7,7,7,7,7,7,7]
+Output: 7
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 500
+- 1 <= arr[i] <= 500
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-lucky-integer-in-an-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-lucky-integer-in-an-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/find-lucky-integer-in-an-array
+## Basic Ideas: hashmap
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        freqs = collections.defaultdict(int)
+        for num in arr:
+            freqs[num]+=1
+        res = -1
+        for k in freqs:
+            if k == freqs[k]:
+                if k>res:
+                    res = k
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

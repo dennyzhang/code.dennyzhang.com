@@ -1,0 +1,94 @@
+* LeetCode: Circle and Rectangle Overlapping                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     rectangle, redo
+:END:
+---------------------------------------------------------------------
+Circle and Rectangle Overlapping
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/circle-and-rectangle-overlapping"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-rectangle][#rectangle]]
+---------------------------------------------------------------------
+Given a circle represented as (radius, x_center, y_center) and an axis-aligned rectangle represented as (x1, y1, x2, y2), where (x1, y1) are the coordinates of the bottom-left corner, and (x2, y2) are the coordinates of the top-right corner of the rectangle.
+
+Return True if the circle and rectangle are overlapped otherwise return False.
+
+In other words, check if there are any point (xi, yi) such that belongs to the circle and the rectangle at the same time.
+
+Example 1:
+[[image-blog:Circle and Rectangle Overlapping][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/circle-and-rectangle-overlapping/1.png]]
+#+BEGIN_EXAMPLE
+Input: radius = 1, x_center = 0, y_center = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1
+Output: true
+Explanation: Circle and rectangle share the point (1,0) 
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Circle and Rectangle Overlapping][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/circle-and-rectangle-overlapping/2.png]]
+#+BEGIN_EXAMPLE
+Input: radius = 1, x_center = 0, y_center = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1
+Output: true
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Circle and Rectangle Overlapping][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/circle-and-rectangle-overlapping/3.png]]
+#+BEGIN_EXAMPLE
+Input: radius = 1, x_center = 1, y_center = 1, x1 = -3, y1 = -3, x2 = 3, y2 = 3
+Output: true
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: radius = 1, x_center = 1, y_center = 1, x1 = 1, y1 = -3, x2 = 2, y2 = -1
+Output: false
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= radius <= 2000
+- -10^4 <= x_center, y_center, x1, y1, x2, y2 <= 10^4
+- x1 < x2
+- y1 < y2
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/circle-and-rectangle-overlapping][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/circle-and-rectangle-overlapping/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/circle-and-rectangle-overlapping
+## Basic Ideas:
+##
+##  The the central point of the circle is inside or outside of the rectangle.
+##  When outside, check four edges
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def checkOverlap(self, radius: int, x_center: int, y_center: int, x1: int, y1: int, x2: int, y2: int) -> bool:
+        # circle point with 4 points of rectangle
+        if abs(x_center-x1)*abs(x_center-x1)+abs(y_center-y1)*abs(y_center-y1)<radius*radius: return True
+        if abs(x_center-x1)*abs(x_center-x1)+abs(y_center-y2)*abs(y_center-y2)<radius*radius: return True
+        if abs(x_center-x2)*abs(x_center-x2)+abs(y_center-y1)*abs(y_center-y1)<radius*radius: return True
+        if abs(x_center-x2)*abs(x_center-x2)+abs(y_center-y2)*abs(y_center-y2)<radius*radius: return True
+        # circle with edges
+        if x1<=x_center<=x2 and y1-radius <= y_center <= y2+radius: return True
+        if y1<=y_center<=y2 and x1-radius <= x_center <= x2+radius: return True
+        return False
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

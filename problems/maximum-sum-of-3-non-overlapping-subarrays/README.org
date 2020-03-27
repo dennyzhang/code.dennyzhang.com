@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     combination, codetemplate, backtracking
+:type:     trappingrain, roundtrippass, towpointer
 :END:
 ---------------------------------------------------------------------
 Maximum Sum of 3 Non-Overlapping Subarrays
@@ -11,9 +11,10 @@ Maximum Sum of 3 Non-Overlapping Subarrays
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-sum-of-3-non-overlapping-subarrays"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+= [[https://code.dennyzhang.com/trapping-rain-water][Leetcode: Trapping Rain Water]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-combination][#combination]]
+- Tag: [[https://code.dennyzhang.com/followup-trappingrain][#trappingrain]], [[https://code.dennyzhang.com/followup-roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
 ---------------------------------------------------------------------
 In a given array nums of positive integers, find three non-overlapping subarrays with maximum sum.
 
@@ -42,6 +43,50 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/maximum-sum-of-3-non-overlapping-subarrays
+## Basic Ideas:
+##   [1,2,1,2,6,7,5,1]
+##   [1,2,1,   2,6,  7,5,1]
+##
+##   Three parts:  (i, j, k)
+##      Fix j, then look for the max to the left and max to the right
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def maxSumOfThreeSubarrays(self, nums: List[int], k: int) -> List[int]:
+        n = len(nums)
+        presum = [0]*(n+1)
+        for i in range(n):
+            presum[i+1] = presum[i]+nums[i]
+
+        lefts, rights = [-1]*n, [-1]*n
+        maxSum, index = 0, 0
+        for i in range(n-k+1):
+            s = presum[i+k]-presum[i]
+            lefts[i]=i
+            if s>maxSum:
+                maxSum, index = s, i
+            else:
+                lefts[i] = index
+        
+        maxSum, index = 0, 0
+        for i in range(n-k, -1, -1):
+            s = presum[i+k]-presum[i]
+            rights[i]=i
+            if s>=maxSum:
+                maxSum, index = s, i
+            else:
+                rights[i] = index
+
+        res = []
+        maxSum = 0
+        for i in range(k, n-2*k+1):
+            curSum = presum[i+k] - presum[i]
+            lindex, rindex = lefts[i-k], rights[i+k]
+            curSum += presum[lindex+k]-presum[lindex]+presum[rindex+k]-presum[rindex]
+            if curSum > maxSum:
+                maxSum = curSum
+                res = [lindex, i, rindex]
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

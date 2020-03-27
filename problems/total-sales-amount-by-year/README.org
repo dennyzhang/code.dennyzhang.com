@@ -1,0 +1,105 @@
+* LeetCode: Total Sales Amount by Year                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Total Sales Amount by Year
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/total-sales-amount-by-year"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
+---------------------------------------------------------------------
+Table: Product
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| product_id    | int     |
+| product_name  | varchar |
++---------------+---------+
+product_id is the primary key for this table.
+product_name is the name of the product.
+#+END_EXAMPLE
+ 
+Table: Sales
+#+BEGIN_EXAMPLE
++---------------------+---------+
+| Column Name         | Type    |
++---------------------+---------+
+| product_id          | int     |
+| period_start        | varchar |
+| period_end          | date    |
+| average_daily_sales | int     |
++---------------------+---------+
+product_id is the primary key for this table. 
+period_start and period_end indicates the start and end date for sales period, both dates are inclusive.
+The average_daily_sales column holds the average daily sales amount of the items for the period.
+#+END_EXAMPLE
+
+Write an SQL query to report the Total sales amount of each item for each year, with corresponding product name, product_id, product_name and report_year.
+
+Dates of the sales years are between 2018 to 2020. Return the result table ordered by product_id and report_year.
+
+The query result format is in the following example:
+
+#+BEGIN_EXAMPLE
+Product table:
++------------+--------------+
+| product_id | product_name |
++------------+--------------+
+| 1          | LC Phone     |
+| 2          | LC T-Shirt   |
+| 3          | LC Keychain  |
++------------+--------------+
+
+Sales table:
++------------+--------------+-------------+---------------------+
+| product_id | period_start | period_end  | average_daily_sales |
++------------+--------------+-------------+---------------------+
+| 1          | 2019-01-25   | 2019-02-28  | 100                 |
+| 2          | 2018-12-01   | 2020-01-01  | 10                  |
+| 3          | 2019-12-01   | 2020-01-31  | 1                   |
++------------+--------------+-------------+---------------------+
+
+Result table:
++------------+--------------+-------------+--------------+
+| product_id | product_name | report_year | total_amount |
++------------+--------------+-------------+--------------+
+| 1          | LC Phone     |    2019     | 3500         |
+| 2          | LC T-Shirt   |    2018     | 310          |
+| 2          | LC T-Shirt   |    2019     | 3650         |
+| 2          | LC T-Shirt   |    2020     | 10           |
+| 3          | LC Keychain  |    2019     | 31           |
+| 3          | LC Keychain  |    2020     | 31           |
++------------+--------------+-------------+--------------+
+LC Phone was sold for the period of 2019-01-25 to 2019-02-28, and there are 35 days for this period. Total amount 35*100 = 3500. 
+LC T-shirt was sold for the period of 2018-12-01 to 2020-01-01, and there are 31, 365, 1 days for years 2018, 2019 and 2020 respectively.
+LC Keychain was sold for the period of 2019-12-01 to 2020-01-31, and there are 31, 31 days for years 2019 and 2020 respectively.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/total-sales-amount-by-year][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/total-sales-amount-by-year/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/total-sales-amount-by-year
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

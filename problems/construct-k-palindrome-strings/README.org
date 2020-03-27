@@ -1,0 +1,104 @@
+* LeetCode: Construct K Palindrome Strings                      :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     palindrome, greedy
+:END:
+---------------------------------------------------------------------
+Construct K Palindrome Strings
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/construct-k-palindrome-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-palindrome][#palindrome]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Given a string s and an integer k. You should construct k non-empty palindrome strings using all the characters in s.
+
+Return True if you can use all the characters in s to construct k palindrome strings or False otherwise.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "annabelle", k = 2
+Output: true
+Explanation: You can construct two palindromes using all characters in s.
+Some possible constructions "anna" + "elble", "anbna" + "elle", "anellena" + "b"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "leetcode", k = 3
+Output: false
+Explanation: It is impossible to construct 3 palindromes using all the characters of s.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "true", k = 4
+Output: true
+Explanation: The only possible solution is to put each character in a separate string.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: s = "yzyzyzyzyzyzyzy", k = 2
+Output: true
+Explanation: Simply you can put all z's in one string and all y's in the other string. Both strings will be palindrome.
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: s = "cr", k = 7
+Output: false
+Explanation: We don't have enough characters in s to construct 7 palindromes.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length <= 10^5
+- All characters in s are lower-case English letters.
+- 1 <= k <= 10^5
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/construct-k-palindrome-strings][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/construct-k-palindrome-strings/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/construct-k-palindrome-strings
+## Basic Ideas: greedy
+## 
+##  The order doesn't matter
+##  The duplicate even characters don't matter
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def canConstruct(self, s: str, k: int) -> bool:
+        freqs = collections.defaultdict(int)
+        for ch in s: freqs[ch] += 1
+        cnt = 0
+        for f in freqs:
+            if freqs[f]%2 == 1:
+                cnt += 1
+        # no enough group
+        if cnt > k:
+            return False
+        # no enough characters
+        if k > len(s):
+            return False
+        # try to add one character as one palindrome
+        return True
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -28,6 +28,31 @@ Credits To: [[https://leetcode.com/problems/closest-binary-search-tree-value/des
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/closest-binary-search-tree-value
+## Basic Ideas: binary search
+##
+##  After checking the root, only need to check either left or right subtree
+##
+## Complexity: Time O(log(n)), Space O(1)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def closestValue(self, root: TreeNode, target: float) -> int:
+        res = root.val
+        while root:
+            res = min(res, root.val, key=lambda x: abs(x-target))
+            if target > root.val:
+                root = root.right
+            else:
+                root = root.left
+        return res
+#+END_SRC
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/closest-binary-search-tree-value

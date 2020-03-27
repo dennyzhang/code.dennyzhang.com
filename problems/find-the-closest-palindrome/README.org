@@ -2,11 +2,10 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     palindrome, string
+:type:     palindrome, string, greedy, redo
 :END:
 ---------------------------------------------------------------------
 Find the Closest Palindrome
----------------------------------------------------------------------
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/string-transforms-into-another-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
@@ -14,7 +13,7 @@ Find the Closest Palindrome
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/review-string][#string]]
+- Tag: [[https://code.dennyzhang.com/review-palindrome][#palindrome]], [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 Given an integer n, find the closest integer (not including itself), which is a palindrome.
 
@@ -38,40 +37,41 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/find-the-closest-palindrome
-## Basic Ideas: Greedy. Try our best to keep the high digits
+## Basic Ideas
+##   Identity all the candiates
 ##
-## Complexity: Time O(n), Space O(1)
-class Solution(object):
-    def nearestPalindromic(self, n):
-        """
-        :type n: str
-        :rtype: str
-        """
-        length = len(n)
-        if length == 1: return str(int(n)-1)
+##   Length smaller by one: 999
+##   The same length: ..Y.., ..(Y-1).., ..(Y+1)..
+##   Length greater by one: 1001
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def nearestPalindromic(self, n: str) -> str:
+        cnt = len(n)
+        # 10..01, 9..9
+        candidates = [str(10**cnt+1), str(10**(cnt-1)-1)]
+        left = int(n[:int((cnt+1)/2)])
+        for v in [left, left+1, left-1]:
+            # even
+            if cnt%2 == 0:
+                candidates.append(str(v)+str(v)[::-1])
+            else:
+                candidates.append(str(v)+str(v)[:-1][::-1])
+        def delta(s):
+            return abs(int(s)-int(n))
         
-        k = int(length/2)
-        first_half = n[0:k]
-        # why this?
-        # 10 -> 9
-        if length%2 == 1:
-            n2="%s%s%s" % (first_half, n[k], first_half[::-1])
-        else:
-            n2="%s%s" % (first_half, first_half[::-1])
-
-        if n!= n2: return n2
-
-        if length%2==1:
-            # 20202 -> 20102
-            if n[k+1] == '0': ch = '1'
-            else: ch = str(int(n[k])-1)
-            return "%s%s%s" % (first_half, ch, first_half[::-1])
-        else:
-            if n[k] == '0': ch = '1'
-            else: ch = str(int(n[k-1])-1)
-            res = "%s%s%s%s" % (first_half[:-1], ch, ch, first_half[:-1][::-1])
-            ## 11 -> 00 -> 0
-            return str(int(res))
+        res = None
+        for c in candidates:
+            # skip itself
+            if c == n: continue
+            if not res: res = c
+            # find a better candidate
+            if delta(c) < delta(res):
+                res = c
+            elif delta(c) == delta(res) and int(c)<int(res):
+                # find a tie
+                res = c
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

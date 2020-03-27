@@ -398,5 +398,12 @@ https://code.dennyzhang.com/review-backtracking
 * TODO Make sure code.dennyzhang.com is mobile-friendly            :noexport:
 * TODO Doesn't show all posts: https://code.dennyzhang.com/review-oodesign :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO contribute back to leetcode test suite                      :noexport:
+* TODO [#B] contribute back to leetcode test suite                 :noexport:
 last substring: aaaaaa
+* TODO typical code problems                                       :noexport:
+https://www.1point3acres.com/bbs/thread-617777-1-1.html
+** TODO Segment Tree，Binary Index Tree
+** TODO Manacher
+** TODO Hungarian
+** TODO Morris Traversal
+** TODO MaxFlowMinCut

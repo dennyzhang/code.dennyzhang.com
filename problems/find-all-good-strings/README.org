@@ -1,0 +1,69 @@
+* LeetCode: Find All Good Strings                               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, kmp
+:END:
+---------------------------------------------------------------------
+Find All Good Strings
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-all-good-strings"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-kmp][#kmp]]
+---------------------------------------------------------------------
+Given the strings s1 and s2 of size n, and the string evil. Return the number of good strings.
+
+A good string has size n, it is alphabetically greater than or equal to s1, it is alphabetically smaller than or equal to s2, and it does not contain the string evil as a substring. Since the answer can be a huge number, return this modulo 10^9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 2, s1 = "aa", s2 = "da", evil = "b"
+Output: 51 
+Explanation: There are 25 good strings starting with 'a': "aa","ac","ad",...,"az". Then there are 25 good strings starting with 'c': "ca","cc","cd",...,"cz" and finally there is one good string starting with 'd': "da". 
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 8, s1 = "leetcode", s2 = "leetgoes", evil = "leet"
+Output: 0 
+Explanation: All strings greater than or equal to s1 and smaller than or equal to s2 start with the prefix "leet", therefore, there is not any good string.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 2, s1 = "gx", s2 = "gz", evil = "x"
+Output: 2
+#+END_EXAMPLE
+ 
+Constraints:
+
+- s1.length == n
+- s2.length == n
+- 1 <= n <= 500
+- 1 <= evil.length <= 50
+- All strings consist of lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-all-good-strings][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-all-good-strings/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/find-all-good-strings
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

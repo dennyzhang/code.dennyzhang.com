@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     hashmap, floydcycle, redo
 :END:
 ---------------------------------------------------------------------
 Prison Cells After N Days
@@ -11,9 +11,10 @@ Prison Cells After N Days
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/prison-cells-after-n-days"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/game-of-life][LeetCode: Game of Life]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/followup-floydcycle][#floydcycle]]
 ---------------------------------------------------------------------
 There are 8 prison cells in a row, and each cell is either occupied or vacant.
 
@@ -64,24 +65,43 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/prison-cells-after-n-days
+## Basic Ideas: hashmap + bitmap
+##
+##   128(2^7) different state
+##   The next state of one state is determined
+##
+##   [0,1,0,1,1,0,0,1]
+##   [0,1,1,0,0,0,0,0]
+##   [0,0,0,0,1,1,1,0]
+## Complexity: O(2^N), Space O(2^N)
+class Solution:
+    def prisonAfterNDays(self, cells: List[int], N: int) -> List[int]:
+        state = "".join([str(v) for v in cells])
+        index = 0
+        l = []
+        m = collections.defaultdict(int)
+        def getNextState(state):
+            n = len(state)
+            res = ["0"]*n
+            for i in range(1, n-1):
+                if state[i-1]==state[i+1]:
+                    res[i] = "1"
+            return "".join(res)
 
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/prison-cells-after-n-days
-
+        while state not in m:
+            l.append(state)
+            index, m[state] = index+1, index
+            state = getNextState(state)
+        loopCnt = index-m[state]
+        if N >= index:
+            # run into a loop
+            N = (N-index)%loopCnt
+            targetState = l[m[state]+N]
+        else:
+            targetState = l[N]
+        return [int(v) for v in targetState]
 #+END_SRC
 
 #+BEGIN_HTML
