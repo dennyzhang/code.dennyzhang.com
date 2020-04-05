@@ -1,33 +1,126 @@
-* LeetCode: Template                                              :BLOG:Medium:
+* LeetCode: Stone Game III                                      :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     minimax
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Stone Game III
 ---------------------------------------------------------------------
 #+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/stone-game-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-minimax][#minimax]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+Alice and Bob continue their games with piles of stones. There are several stones arranged in a row, and each stone has an associated value which is an integer given in the array stoneValue.
 
-Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/example][code.dennyzhang.com]]
+Alice and Bob take turns, with Alice starting first. On each player's turn, that player can take 1, 2 or 3 stones from the first remaining stones in the row.
 
-Credits To: [[https://leetcode.com/problems/example/description/][LeetCode.com]]
+The score of each player is the sum of values of the stones taken. The score of each player is 0 initially.
+
+The objective of the game is to end with the highest score, and the winner is the player with the highest score and there could be a tie. The game continues until all the stones have been taken.
+
+Assume Alice and Bob play optimally.
+
+Return "Alice" if Alice will win, "Bob" if Bob will win or "Tie" if they end the game with the same score.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: values = [1,2,3,7]
+Output: "Bob"
+Explanation: Alice will always lose. Her best move will be to take three piles and the score become 6. Now the score of Bob is 7 and Bob wins.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: values = [1,2,3,-9]
+Output: "Alice"
+Explanation: Alice must choose all the three piles at the first move to win and leave Bob with negative score.
+If Alice chooses one pile her score will be 1 and the next move Bob's score becomes 5. The next move Alice will take the pile with value = -9 and lose.
+If Alice chooses two piles her score will be 3 and the next move Bob's score becomes 3. The next move Alice will take the pile with value = -9 and also lose.
+Remember that both play optimally so here Alice will choose the scenario that makes her win.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: values = [1,2,3,6]
+Output: "Tie"
+Explanation: Alice cannot win this game. She can end the game in a draw if she decided to choose all the first three piles, otherwise she will lose.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: values = [1,2,3,-1,-2,-3,7]
+Output: "Alice"
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: values = [-1,-2,-3]
+Output: "Tie"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= values.length <= 50000
+- -1000 <= values[i] <= 1000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/stone-game-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/stone-game-iii/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
 #+BEGIN_SRC python
-## https://code.dennyzhang.com/example
-
+## https://code.dennyzhang.com/stone-game-iii
+## Basic Ideas: minmax
+##
+##  From right to left
+##
+##   dp(i): 
+##         stoneValue[i:]: max value
+##
+##      dp(i): dp(i+1), dp(i+2), dp(i+3)
+##
+##   dp(0)
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def stoneGameIII(self, stoneValue: List[int]) -> str:
+        n = len(stoneValue)
+        dp = collections.defaultdict(int)
+        def dfs(i):
+            nonlocal dp
+            if i in dp: return dp[i]
+            if i == n-1:
+                dp[i] = stoneValue[i]
+                return dp[i]
+            if i>=n:
+                return 0
+            l = []
+            # take 1
+            l.append(stoneValue[i]-dfs(i+1))
+            if i+1<n:
+                # take 2
+                l.append(stoneValue[i]+stoneValue[i+1]-dfs(i+2))
+            if i+2<n:
+                # take 3
+                l.append(stoneValue[i]+stoneValue[i+1]+stoneValue[i+2]-dfs(i+3))
+            dp[i] = max(l)
+            return dp[i]
+        
+        v = dfs(0)
+        if v > 0:
+            return "Alice"
+        elif v == 0:
+            return "Tie"
+        else:
+            return "Bob"
 #+END_SRC
 
 #+BEGIN_HTML

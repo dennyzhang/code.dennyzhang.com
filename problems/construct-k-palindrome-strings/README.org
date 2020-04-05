@@ -76,7 +76,7 @@ Leave me comments, if you have better ways to solve.
 ##  The order doesn't matter
 ##  The duplicate even characters don't matter
 ##
-## Complexity: Time O(n), Space O(n)
+## Complexity: Time O(n), Space O(1)
 class Solution:
     def canConstruct(self, s: str, k: int) -> bool:
         freqs = collections.defaultdict(int)

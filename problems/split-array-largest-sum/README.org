@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     dynamicprogramming, redo
 :END:
 ---------------------------------------------------------------------
 Split Array Largest Sum
@@ -13,7 +13,7 @@ Split Array Largest Sum
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
 ---------------------------------------------------------------------
 Given an array which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays.
 
@@ -46,24 +46,33 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/split-array-largest-sum
+## Basic Ideas: dynamic programming
+##
+##   dp(i, j)
+##     nums[:i]
+##     j
+##            nums[i] is the last element
+##            nums[k:i]
+##              min(max(dp(k-1, j-1), sums[k:i]))
+##
+## Complexity: Time O(n*n*m), Space O(n*m)
+class Solution:
+    def splitArray(self, nums: List[int], m: int) -> int:
+        n = len(nums)
+        dp = [[sys.maxsize for _ in range(m+1)] for _ in range(n+1)]
+        sums = [0]*(n+1)
+        for i in range(n):
+            sums[i+1] = sums[i] + nums[i]
 
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/split-array-largest-sum
-
+        dp[0][0] = 0
+        for i in range(1, n+1):
+            for j in range(1, m+1):
+                # nums[:i]
+                for k in range(i):
+                    dp[i][j] = min(dp[i][j], max(dp[k][j-1], sums[i]-sums[k]))
+        return dp[-1][-1]
 #+END_SRC
 
 #+BEGIN_HTML

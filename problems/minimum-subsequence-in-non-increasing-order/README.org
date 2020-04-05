@@ -1,0 +1,81 @@
+* LeetCode: Minimum Subsequence in Non-Increasing Order         :BLOG:Easy:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Minimum Subsequence in Non-Increasing Order
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-subsequence-in-non-increasing-order"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given the array nums, obtain a subsequence of the array whose sum of elements is strictly greater than the sum of the non included elements in such subsequence. 
+
+If there are multiple solutions, return the subsequence with minimum size and if there still exist multiple solutions, return the subsequence with the maximum total sum of all its elements. A subsequence of an array can be obtained by erasing some (possibly zero) elements from the array. 
+
+Note that the solution with the given constraints is guaranteed to be unique. Also return the answer sorted in non-increasing order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [4,3,10,9,8]
+Output: [10,9] 
+Explanation: The subsequences [10,9] and [10,8] are minimal such that the sum of their elements is strictly greater than the sum of elements not included, however, the subsequence [10,9] has the maximum total sum of its elements. 
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [4,4,7,6,7]
+Output: [7,7,6] 
+Explanation: The subsequence [7,7] has the sum of its elements equal to 14 which is not strictly greater than the sum of elements not included (14 = 4 + 4 + 6). Therefore, the subsequence [7,6,7] is the minimal satisfying the conditions. Note the subsequence has to returned in non-decreasing order.  
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums = [6]
+Output: [6]
+#+END_EXAMPLE
+
+Constraints:
+
+- 1 <= nums.length <= 500
+- 1 <= nums[i] <= 100
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-subsequence-in-non-increasing-order][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-subsequence-in-non-increasing-order
+## Basic Ideas: sorting
+##
+## Complexity: Time O(n*log(n)), Space O(1)
+class Solution:
+    def minSubsequence(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        totalSum = sum(nums)
+        nums.sort(reverse=True)
+        curSum = 0
+        for i in range(n):
+            curSum += nums[i]
+            if curSum > totalSum - curSum:
+                return nums[:i+1]
+        return []
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
