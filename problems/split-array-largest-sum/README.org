@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, redo
+:type:     dynamicprogramming, greedy, binarsearch
 :END:
 ---------------------------------------------------------------------
 Split Array Largest Sum
@@ -13,7 +13,7 @@ Split Array Largest Sum
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 Given an array which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays.
 
@@ -73,6 +73,36 @@ class Solution:
                 for k in range(i):
                     dp[i][j] = min(dp[i][j], max(dp[k][j-1], sums[i]-sums[k]))
         return dp[-1][-1]
+#+END_SRC
+
+#+BEGIN_SRC go
+## https://code.dennyzhang.com/split-array-largest-sum
+## Basic Ideas: binary search + greedy
+##
+##    The value is integer. It's in the range of [maxVal, sumVal]
+##   
+## Complexity: Time O(n*log(sum_n)), Space O(n)
+class Solution:
+    def splitArray(self, nums: List[int], m: int) -> int:
+        def canDivide(nums, mid, m):
+            curSum = 0
+            for i in range(len(nums)):
+                curSum += nums[i]
+                if curSum > mid:
+                    curSum = nums[i]
+                    m -= 1
+            if curSum >0: m -= 1
+            return m>=0
+
+        left, right = max(nums), sum(nums)
+        while left<right:
+            mid = left+int((right-left)/2)
+            if canDivide(nums, mid, m):
+                # F, F, F, T, T, T
+                right = mid
+            else:
+                left = mid+1
+        return left
 #+END_SRC
 
 #+BEGIN_HTML

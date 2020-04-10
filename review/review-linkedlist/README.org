@@ -17,6 +17,15 @@ Most problems are not that hard for you to solve. But to get bug-free, you need 
 |--------------------------+-------------------------------|
 | How to sort a linkedlist | Leverage an array of pointers |
 
+*Top 5 Linkedlist Problems*
+| Num | Problem                          | Summary                        |
+|-----+----------------------------------+--------------------------------|
+|   1 | Merge k Sorted Lists             | [[https://code.dennyzhang.com/merge-k-sorted-lists][LeetCode: Merge k Sorted Lists]] |
+|   2 | Detect cycle for a linked list   | [[https://code.dennyzhang.com/linked-list-cycle][LeetCode: Linked List Cycle]]    |
+|   3 | Swap odd with even nodes         | [[https://code.dennyzhang.com/swap-nodes-in-pairs][Leetcode: Swap Nodes in Pairs]]  |
+|   4 | LFU cache with double linkedlist | [[https://code.dennyzhang.com/lfu-cache][LeetCode: LFU Cache]]            |
+#+TBLFM: $1=@-1$1+1;N
+
 [[color:#c7254e][Key Points]]:
 - Add a dummyNode, if head node might be changed
 - How to process current node?

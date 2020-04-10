@@ -1,0 +1,101 @@
+* LeetCode: K-Concatenation Maximum Sum                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     kadane
+:END:
+---------------------------------------------------------------------
+K-Concatenation Maximum Sum
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/k-concatenation-maximum-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-kadane][#kadane]]
+---------------------------------------------------------------------
+Given an integer array arr and an integer k, modify the array by repeating it k times.
+
+For example, if arr = [1, 2] and k = 3 then the modified array will be [1, 2, 1, 2, 1, 2].
+
+Return the maximum sub-array sum in the modified array. Note that the length of the sub-array can be 0 and its sum in that case is 0.
+
+As the answer can be very large, return the answer modulo 10^9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [1,2], k = 3
+Output: 9
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [1,-2,1], k = 5
+Output: 2
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [-1,-2], k = 7
+Output: 0
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 10^5
+- 1 <= k <= 10^5
+- -10^4 <= arr[i] <= 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/k-concatenation-maximum-sum][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/k-concatenation-maximum-sum/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/k-concatenation-maximum-sum
+## Basic Ideas: Kadane
+##
+##  If we include one repeition of the list, we can include all
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def kConcatenationMaxSum(self, arr: List[int], k: int) -> int:
+        n = len(arr)
+        totalSum = sum(arr)
+        res = 0
+        if totalSum >= 0:
+            res = totalSum*(max(0, k-2))
+
+        nums = [0]*n
+        if k > 1:
+            nums = [0]*2*n
+            for i in range(n):
+                nums[i] = arr[i]
+                nums[i+n] = arr[i]
+        else:
+            for i in range(n):
+                nums[i] = arr[i]
+
+        # Kadane
+        maxSum = -sys.maxsize
+        maxSoFar = 0
+        for i in range(len(nums)):
+            v = nums[i]
+            maxSoFar = max(v, maxSoFar+v)
+            maxSum = max(maxSum, maxSoFar)
+        
+        res += maxSum
+        return max(res, 0) % (10**9+7)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

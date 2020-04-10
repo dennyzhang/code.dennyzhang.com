@@ -1,0 +1,98 @@
+* LeetCode: Number of Submatrices That Sum to Target            :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     regioninmatrix, rectangle
+:END:
+---------------------------------------------------------------------
+Number of Submatrices That Sum to Target
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-submatrices-that-sum-to-target"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://code.dennyzhang.com/subarray-sum-equals-k][LeetCode: Subarray Sum Equals K]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-regioninmatrix][#regioninmatrix]], [[https://code.dennyzhang.com/review-rectangle][#rectangle]]
+---------------------------------------------------------------------
+Given a matrix, and a target, return the number of non-empty submatrices that sum to target.
+
+A submatrix x1, y1, x2, y2 is the set of all cells matrix[x][y] with x1 <= x <= x2 and y1 <= y <= y2.
+
+Two submatrices (x1, y1, x2, y2) and (x1', y1', x2', y2') are different if they have some coordinate that is different: for example, if x1 != x1'.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0
+Output: 4
+Explanation: The four 1x1 submatrices that only contain 0.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: matrix = [[1,-1],[-1,1]], target = 0
+Output: 5
+Explanation: The two 1x2 submatrices, plus the two 2x1 submatrices, plus the 2x2 submatrix.
+#+END_EXAMPLE
+ 
+Note:
+
+1. 1 <= matrix.length <= 300
+- 1 <= matrix[0].length <= 300
+- -1000 <= matrix[i] <= 1000
+- -10^8 <= target <= 10^8
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-submatrices-that-sum-to-target][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/number-of-submatrices-that-sum-to-target
+## Basic Ideas: hashmap + sliding window
+##
+##  [0,1,0]
+##  [1,1,1]
+##  [0,1,0]
+##
+##    Evaluate two rows, in order to reduce 2D problem to 1D problem
+##
+## Complexity: Time O(n*m*m), Space O(n*m)
+class Solution:
+    def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:
+        res = 0
+        n, m = len(matrix), len(matrix[0])
+        # (i, j)
+        presums = [[0 for _ in range(m+1)] for _ in range(n+1)]
+        for i in range(n):
+            for j in range(m):
+                #  (i-1, j-1)  .
+                #    .       (i, j)
+                presums[i+1][j+1] = presums[i+1][j] + presums[i][j+1] - presums[i][j] + matrix[i][j]
+
+        for i in range(n):
+            for j in range(i, n):
+                # row i and row j. Note: two rows might be the same row
+                freqs = collections.defaultdict(int)
+                freqs[0] = 1
+                for k in range(m):
+                    # .   (i-1, k)
+                    # .   (i, k)
+                    # .   (j, k)
+                    v = presums[j+1][k+1]-presums[i][k+1]
+                    res += freqs[v-target]
+                    freqs[v] += 1
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -49,138 +49,32 @@ Graph related questions mainly focus on depth first search and breath first sear
 |   5 | Whether a graph is a tree                                 | [[https://code.dennyzhang.com/graph-valid-tree][LeetCode: Graph Valid Tree]]                                    |
 |-----+-----------------------------------------------------------+---------------------------------------------------------------|
 |   6 | Update a specific region                                  | [[https://code.dennyzhang.com/flood-fill][LeetCode: Flood Fill]]                                          |
-|   7 | Update regions for a given rule                           | [[https://code.dennyzhang.com/surrounded-regions][LeetCode: Surrounded Regions]]                                  |
+|   7 | Graph trasversal from boarders                            | [[https://code.dennyzhang.com/surrounded-regions][Leetcode: Surrounded Regions]]                                  |
 |   8 | Number of Distinct Islands                                | [[https://code.dennyzhang.com/number-of-distinct-islands][LeetCode: Number of Distinct Islands]]                          |
 |   9 | Mark levels                                               | [[https://code.dennyzhang.com/01-matrix][LeetCode: 01 Matrix]]                                           |
 |  10 | Diameter of a tree in graph theory                        | [[https://code.dennyzhang.com/tree-diameter][LeetCode: Tree Diameter]]                                       |
 |  11 | Duplicate edges                                           | [[https://code.dennyzhang.com/reconstruct-itinerary][LeetCode: Reconstruct Itinerary]]                               |
 |  12 | Find a certain node in a graph                            | [[https://code.dennyzhang.com/find-the-celebrity][LeetCode: Find the Celebrity]]                                  |
-|-----+-----------------------------------------------------------+---------------------------------------------------------------|
 |  13 | Graph with next steps by a trie                           | [[https://code.dennyzhang.com/word-search-ii][Leetcode: Word Search II]]                                      |
-|-----+-----------------------------------------------------------+---------------------------------------------------------------|
 |  14 | Coloring graph                                            | [[https://code.dennyzhang.com/minesweeper][LeetCode: Minesweeper]]                                         |
 |  15 | Find a certain path from source to destination in a graph | [[https://code.dennyzhang.com/path-with-maximum-minimum-value][LeetCode: Path With Maximum Minimum Value]]                     |
-|  16 | Find the minimum steps from point1 to point2              | [[https://code.dennyzhang.com/word-ladder][LeetCode: Word Ladder]], [[https://code.dennyzhang.com/sliding-puzzle][LeetCode: Sliding Puzzle]]               |
-|  17 | Find all minimum paths from point1 to point2              | [[https://code.dennyzhang.com/word-ladder-ii][LeetCode: Word Ladder II]]                                      |
-|  18 | All Paths from Source Lead to Destination                 | [[https://code.dennyzhang.com/all-paths-from-source-lead-to-destination][LeetCode: All Paths from Source Lead to Destination]]           |
-|  19 | Node connectivity problem for a sparse 2D matrix          | [[https://code.dennyzhang.com/escape-a-large-maze][LeetCode: Escape a Large Maze]]                                 |
-|  20 | Bricks Falling When Hit                                   | [[https://code.dennyzhang.com/bricks-falling-when-hit][LeetCode: Bricks Falling When Hit]]                             |
-|  21 | Bridges in a connected graph - [[https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm][Tarjan's algorithm]]         | [[https://code.dennyzhang.com/critical-connections-in-a-network][LeetCode: Critical Connections in a Network]]                   |
-|  22 | Valid & Invalid moves                                     | [[https://code.dennyzhang.com/alphabet-board-path][LeetCode: Alphabet Board Path]]                                 |
-|  23 | Move in different directions: 4 directions, 8 directions  | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][LeetCode: Queens That Can Attack the King]]                     |
-|  24 | String Transforms Into Another String                     | [[https://code.dennyzhang.com/string-transforms-into-another-string][LeetCode: String Transforms Into Another String]]               |
-|  25 | Candidates are (i, j, r), instead of (i, j)               | [[https://code.dennyzhang.com/shortest-path-in-a-grid-with-obstacles-elimination][LeetCode: Shortest Path in a Grid with Obstacles Elimination]]  |
-|  26 | Clone Graph                                               | [[https://code.dennyzhang.com/clone-graph][Leetcode: Clone Graph]]                                         |
-|  27 | Array problem with hidden graph                           | [[https://code.dennyzhang.com/number-of-squareful-arrays][LeetCode: Number of Squareful Arrays]]                          |
-|  28 | Find shortest paths in a weighted graph                   | [[https://code.dennyzhang.com/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance][LeetCode: Find the City With the Smallest Number of Neighbors]] |
-|  29 | Graph trasversal from boarders                            | [[https://code.dennyzhang.com/surrounded-regions][Leetcode: Surrounded Regions]]                                  |
-|  30 | Is Graph Bipartite                                        | [[https://code.dennyzhang.com/is-graph-bipartite][LeetCode: Is Graph Bipartite]]                                  |
+|  16 | Find the shortest distance from point1 to point2          | [[https://code.dennyzhang.com/word-ladder][LeetCode: Word Ladder]], [[https://code.dennyzhang.com/sliding-puzzle][LeetCode: Sliding Puzzle]]               |
+|  17 | Find shortest distance in a weighted graph                | [[https://code.dennyzhang.com/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance][LeetCode: Find the City With the Smallest Number of Neighbors]] |
+|  18 | Find all minimum paths from point1 to point2              | [[https://code.dennyzhang.com/word-ladder-ii][LeetCode: Word Ladder II]]                                      |
+|  19 | All Paths from Source Lead to Destination                 | [[https://code.dennyzhang.com/all-paths-from-source-lead-to-destination][LeetCode: All Paths from Source Lead to Destination]]           |
+|  20 | Node connectivity problem for a sparse 2D matrix          | [[https://code.dennyzhang.com/escape-a-large-maze][LeetCode: Escape a Large Maze]]                                 |
+|  21 | Bricks Falling When Hit                                   | [[https://code.dennyzhang.com/bricks-falling-when-hit][LeetCode: Bricks Falling When Hit]]                             |
+|  22 | Bridges in a connected graph - [[https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm][Tarjan's algorithm]]         | [[https://code.dennyzhang.com/critical-connections-in-a-network][LeetCode: Critical Connections in a Network]]                   |
+|  23 | Valid & Invalid moves                                     | [[https://code.dennyzhang.com/alphabet-board-path][LeetCode: Alphabet Board Path]]                                 |
+|  24 | Move in different directions: 4 directions, 8 directions  | [[https://code.dennyzhang.com/queens-that-can-attack-the-king][LeetCode: Queens That Can Attack the King]]                     |
+|  25 | String Transforms Into Another String                     | [[https://code.dennyzhang.com/string-transforms-into-another-string][LeetCode: String Transforms Into Another String]]               |
+|  26 | Candidates are (i, j, r), instead of (i, j)               | [[https://code.dennyzhang.com/shortest-path-in-a-grid-with-obstacles-elimination][LeetCode: Shortest Path in a Grid with Obstacles Elimination]]  |
+|  27 | Clone Graph                                               | [[https://code.dennyzhang.com/clone-graph][Leetcode: Clone Graph]]                                         |
+|  28 | Array problem with hidden graph                           | [[https://code.dennyzhang.com/number-of-squareful-arrays][LeetCode: Number of Squareful Arrays]]                          |
+|  29 | Is Graph Bipartite                                        | [[https://code.dennyzhang.com/is-graph-bipartite][LeetCode: Is Graph Bipartite]]                                  |
+|  30 | Search an infinite graph                                  | [[https://code.dennyzhang.com/escape-a-large-maze][LeetCode: Escape a Large Maze]]                                 |
 #+TBLFM: $1=@-1$1+1;N
 
-Floyd-Warshall algorithm: Time O(n*n*n)
-[[image-blog:Review: Graph Problems][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/review/review-graph/floyd-warshall.png]]
-
-BFS/DFS/UnionFind; Binarysearch
-
-#+BEGIN_EXAMPLE
-1. How to get the initial set to examine?
-2. How to move to next? What's the time complexity?
-3. What if we want all possible answers, instead of the min step count?
-#+END_EXAMPLE
-
-- Move in 4 directions
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/as-far-from-land-as-possible
-// ...
-    for len(queue) > 0 {
-        nexts := [][]int{}
-        for _, node := range queue {
-            i, j := node[0], node[1]
-            for _, offset := range [][]int{[]int{1, 0}, []int{-1, 0},
-                                           []int{0, 1}, []int{0, -1}} {
-                i2, j2 := i+offset[0], j+offset[1]
-                if i2<0 || i2>=len(grid) || 
-                        j2<0 || j2>=len(grid[0]) || grid[i2][j2] == 1 {
-                    continue
-                }
-                grid[i2][j2] = 1
-                nexts = append(nexts, []int{i2, j2})
-            }
-        }
-        level++
-        queue = nexts
-    }
-#+END_SRC
-
-- Move in 9 directions
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/queens-that-can-attack-the-king
-// ...
-    i, j := king[0], king[1]
-    for x:=-1; x<=1; x++ {
-        for y:=-1; y<=1; y++ {
-            if x==0 && y==0 {
-                continue
-            }
-            // keep searching this direction
-            i2, j2 := i+x, j+y
-            for i2>=0 && i2<8 && j2>=0 && j2<8 {
-                if m[[2]int{i2,j2}] {
-                    res = append(res, []int{i2, j2})
-                    break
-                }
-                i2, j2 = i2+x, j2+y
-            }
-        }
-    }
-#+END_SRC
-Questions:
-
-1. Why so many algorithms to find the shortest path? Shouldn't it be some optimal one(s)?
-
-BFS:
-- When to update visited_set? When add or when pop? [[https://code.dennyzhang.com/employee-importance][Employee Importance]]
-
-BFS: 
-1. visit all neighbors before visiting neighbors of your neighbors
-- Keep a queue of nodes to visit
-- The performamce may be different if we search from starting point or target point. [[https://code.dennyzhang.com/perfect-squares][Perfect Squares]]
-
-Common graph algorithm problems:
-1. Find length of shortest path from node s to all other nodes
-- Search all nodes for a node containing a given value
-- Find shortest path from node s to all other nodes
-
-DFS:
-1. visit all neighbors of a neighbor before visiting your other neighbors
-- It doesn't use queue, but mark nodes as to their status. White(unchecked), Gray(Seen, but not finished), Black(finished)
-
-Key points:
-- How to evaluable the time complexity. Normally it's O(m*n). But how we can convince people with solid argument?
-
-[[color:#c7254e][For DFS, if the path is too deep, we might run into stack overflow]].
-
-The most impressive problems to me:
-- [[https://code.dennyzhang.com/perfect-squares][Perfect Squares]]
-- [[https://code.dennyzhang.com/island-perimeter][Island Perimeter]]
-- [[https://code.dennyzhang.com/swim-in-rising-water][Swim in Rising Water]]
-
----------------------------------------------------------------------
-- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
-- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-
-See all grap problems: [[https://code.dennyzhang.com/tag/graph/][#graph]]
-[display-posts tag="graph" posts_per_page="100" orderby="title"]
-
-See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
-
-#+BEGIN_HTML
-<div style="overflow: hidden;">
-<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
-</div>
-#+END_HTML
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone showall
 #+DESCRIPTION:

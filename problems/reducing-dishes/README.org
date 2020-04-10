@@ -1,11 +1,11 @@
-* LeetCode: Template                                              :BLOG:Medium:
+* LeetCode: Reducing Dishes                                     :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     knapsack
 :END:
 ---------------------------------------------------------------------
-Identity number which appears exactly once.
+Reducing Dishes
 ---------------------------------------------------------------------
 #+BEGIN_HTML
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reducing-dishes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
@@ -13,9 +13,48 @@ Identity number which appears exactly once.
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-knapsack][#knapsack]]
 ---------------------------------------------------------------------
-Given an integer array of size n, find all elements that appear more than n/3 times. The algorithm should run in linear time and in O(1) space.
+A chef has collected data on the satisfaction level of his n dishes. Chef can cook any dish in 1 unit of time.
+
+Like-time coefficient of a dish is defined as the time taken to cook that dish including previous dishes multiplied by its satisfaction level  i.e.  time[i]*satisfaction[i]
+
+Return the maximum sum of Like-time coefficient that the chef can obtain after dishes preparation.
+
+Dishes can be prepared in any order and the chef can discard some dishes to get this maximum value.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: satisfaction = [-1,-8,0,5,-9]
+Output: 14
+Explanation: After Removing the second and last dish, the maximum total Like-time coefficient will be equal to (-1*1 + 0*2 + 5*3 = 14). Each dish is prepared in one unit of time.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: satisfaction = [4,3,2]
+Output: 20
+Explanation: Dishes can be prepared in any order, (2*1 + 3*2 + 4*3 = 20)
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: satisfaction = [-1,-4,-5]
+Output: 0
+Explanation: People don't like the dishes. No dish is prepared.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: satisfaction = [-2,5,-1,0,3,-3]
+Output: 35
+#+END_EXAMPLE
+ 
+Constraints:
+
+- n == satisfaction.length
+- 1 <= n <= 500
+- -10^3 <= satisfaction[i] <= 10^3
 
 Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reducing-dishes][code.dennyzhang.com]]
 
@@ -27,7 +66,32 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/reducing-dishes
-
+## Basic Ideas: knapsack problem
+##
+##   For each dish, whether to prepare it or discard it
+##
+##  dp(i, time): dish i
+##       take it:   
+##       discard it:
+##
+## Complexity: Time O(n*n), Space O(n*n)
+class Solution:
+    def maxSatisfaction(self, satisfaction: List[int]) -> int:
+        satisfaction.sort()
+        n = len(satisfaction)
+        dp = [[-sys.maxsize for _ in range(n+1)] for _ in range(n+1)]
+        dp[0][0] = 0
+        for i in range(n):
+            v = satisfaction[i]
+            # don't take
+            for j in range(n+1):
+                dp[i+1][j] = dp[i][j]
+            # take it
+            for j in range(1, n+1):
+                # when it's valid
+                if dp[i][j-1] != -sys.maxsize:
+                    dp[i+1][j] = max(dp[i+1][j], dp[i][j-1]+v*j)
+        return max(dp[n])
 #+END_SRC
 
 #+BEGIN_HTML

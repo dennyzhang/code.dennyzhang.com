@@ -42,23 +42,24 @@ But you wouldn't believe how incredibly useful it would be.
 |   3 | Find the last target with duplicates        | [[https://code.dennyzhang.com/longest-repeating-substring][LeetCode: Longest Repeating Substring]]                                  |
 |   4 | Find the first and last target              | [[https://code.dennyzhang.com/find-first-and-last-position-of-element-in-sorted-array][LeetCode: Find First and Last Position of Element in Sorted Array]]      |
 |   5 | Search Insert Position                      | [[https://code.dennyzhang.com/search-insert-position][LeetCode: Search Insert Position]], [[https://code.dennyzhang.com/time-based-key-value-store][LeetCode: Time Based Key-Value Store]] |
-|   6 | Missing Element in Sorted Array             | [[https://code.dennyzhang.com/missing-element-in-sorted-array][LeetCode: Missing Element in Sorted Array]]                              |
-|   7 | Find smallest letter greater than target    | [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][LeetCode: Find Smallest Letter Greater Than Target]]                     |
-|   8 | Random Point in Non-overlapping Rectangles  | [[https://code.dennyzhang.com/random-point-in-non-overlapping-rectangles][LeetCode: Random Point in Non-overlapping Rectangles]]                   |
-|   9 | Binary search on monotonic function         | [[https://code.dennyzhang.com/sqrtx][LeetCode: Sqrt(x)]], [[https://code.dennyzhang.com/capacity-to-ship-packages-within-d-days][LeetCode: Capacity To Ship Packages Within D Days]]   |
-|  10 | Place k elements to minimize max distance   | [[https://code.dennyzhang.com/minimize-max-distance-to-gas-station][LeetCode: Minimize Max Distance to Gas Station]]                         |
-|  11 | Kth Smallest Number in Multiplication Table | [[https://code.dennyzhang.com/kth-smallest-number-in-multiplication-table][LeetCode: Kth Smallest Number in Multiplication Table]]                  |
-|  12 | Search for a Range                          | [[https://code.dennyzhang.com/search-for-a-range][Leecode: Search for a Range]]                                            |
-|  13 | Mountain Array                              | [[https://code.dennyzhang.com/peak-index-in-a-mountain-array][LeetCode: Peak Index in a Mountain Array]]                               |
-|  14 | Dynamic programming with binary search      | [[https://code.dennyzhang.com/maximum-profit-in-job-scheduling][LeetCode: Maximum Profit in Job Scheduling]]                             |
-|  15 | Montone stack with binary search            | [[https://code.dennyzhang.com/maximum-width-ramp][LeetCode: Maximum Width Ramp]]                                           |
-|  16 | Find Right Interval                         | [[https://code.dennyzhang.com/find-right-interval][Leecode: Find Right Interval]]                                           |
-|  17 | Patient sort                                | [[https://code.dennyzhang.com/longest-increasing-subsequence][LeetCode: Longest Increasing Subsequence]]                               |
-|  18 | Find Minimum in Rotated Sorted Array        | [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array][LeetCode: Find Minimum in Rotated Sorted Array]]                         |
-|  19 | Find Minimum in Rotated Sorted Array II     | [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii][LeetCode: Find Minimum in Rotated Sorted Array II]]                      |
-|  20 | Maximum Profit in Job Scheduling            | [[https://code.dennyzhang.com/maximum-profit-in-job-scheduling][Leetcode: Maximum Profit in Job Scheduling]]                             |
-|  21 | Tweet Counts Per Frequency                  | [[https://code.dennyzhang.com/tweet-counts-per-frequency][LeetCode: Tweet Counts Per Frequency]]                                   |
-|  22 | Median of Two Sorted Arrays                 | [[https://code.dennyzhang.com/median-of-two-sorted-arrays][Leetcode: Median of Two Sorted Arrays]]                                  |
+|   6 | Mountain Array                              | [[https://code.dennyzhang.com/peak-index-in-a-mountain-array][LeetCode: Peak Index in a Mountain Array]]                               |
+|   7 | Missing Element in Sorted Array             | [[https://code.dennyzhang.com/missing-element-in-sorted-array][LeetCode: Missing Element in Sorted Array]]                              |
+|   8 | Find smallest letter greater than target    | [[https://code.dennyzhang.com/find-smallest-letter-greater-than-target][LeetCode: Find Smallest Letter Greater Than Target]]                     |
+|   9 | Random Point in Non-overlapping Rectangles  | [[https://code.dennyzhang.com/random-point-in-non-overlapping-rectangles][LeetCode: Random Point in Non-overlapping Rectangles]]                   |
+|  10 | Binary search on monotonic function         | [[https://code.dennyzhang.com/sqrtx][LeetCode: Sqrt(x)]], [[https://code.dennyzhang.com/capacity-to-ship-packages-within-d-days][LeetCode: Capacity To Ship Packages Within D Days]]   |
+|  11 | Place k elements to minimize max distance   | [[https://code.dennyzhang.com/minimize-max-distance-to-gas-station][LeetCode: Minimize Max Distance to Gas Station]]                         |
+|  12 | Decide a number                             | [[https://code.dennyzhang.com/split-array-largest-sum][LeetCode: Split Array Largest Sum]]                                      |
+|  13 | Kth Smallest Number in Multiplication Table | [[https://code.dennyzhang.com/kth-smallest-number-in-multiplication-table][LeetCode: Kth Smallest Number in Multiplication Table]]                  |
+|  14 | Search for a Range                          | [[https://code.dennyzhang.com/search-for-a-range][Leecode: Search for a Range]]                                            |
+|  15 | Dynamic programming with binary search      | [[https://code.dennyzhang.com/maximum-profit-in-job-scheduling][LeetCode: Maximum Profit in Job Scheduling]]                             |
+|  16 | Montone stack with binary search            | [[https://code.dennyzhang.com/maximum-width-ramp][LeetCode: Maximum Width Ramp]]                                           |
+|  17 | Find Right Interval                         | [[https://code.dennyzhang.com/find-right-interval][Leecode: Find Right Interval]]                                           |
+|  18 | Patient sort                                | [[https://code.dennyzhang.com/longest-increasing-subsequence][LeetCode: Longest Increasing Subsequence]]                               |
+|  19 | Find Minimum in Rotated Sorted Array        | [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array][LeetCode: Find Minimum in Rotated Sorted Array]]                         |
+|  20 | Find Minimum in Rotated Sorted Array II     | [[https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii][LeetCode: Find Minimum in Rotated Sorted Array II]]                      |
+|  21 | Maximum Profit in Job Scheduling            | [[https://code.dennyzhang.com/maximum-profit-in-job-scheduling][Leetcode: Maximum Profit in Job Scheduling]]                             |
+|  22 | Tweet Counts Per Frequency                  | [[https://code.dennyzhang.com/tweet-counts-per-frequency][LeetCode: Tweet Counts Per Frequency]]                                   |
+|  23 | Median of Two Sorted Arrays                 | [[https://code.dennyzhang.com/median-of-two-sorted-arrays][Leetcode: Median of Two Sorted Arrays]]                                  |
 #+TBLFM: $1=@-1$1+1;N
 
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]

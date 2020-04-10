@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     binarysearch, treemap, manydetails, redo
 :END:
 ---------------------------------------------------------------------
 Exam Room
@@ -14,7 +14,7 @@ Exam Room
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]], [[https://code.dennyzhang.com/review-treemap][#treemap]], [[https://code.dennyzhang.com/review-manydetails][#manydetails]]
 ---------------------------------------------------------------------
 In an exam room, there are N seats in a single row, numbered 0, 1, 2, ..., N-1.
 
@@ -50,24 +50,42 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/exam-room
+## Basic Ideas: binarysearch insertion
+##
+## Complexity: Time ?, Space ?
+import bisect
+class ExamRoom:
+    def __init__(self, N: int):
+        self.N = N
+        self.students = []
 
-#+END_EXAMPLE
+    def seat(self) -> int:
+        if not self.students:
+            student = 0
+        else:
+            # why this?
+            dis, student = self.students[0], 0
+            for i in range(1, len(self.students)):
+                prev, s = self.students[i-1], self.students[i]
+                d = int((s-prev)/2)
+                if d>dis:
+                    dis, student = d, prev+d
+            # consider the right-most seat
+            d = self.N-1-self.students[-1]
+            if d>dis:
+                student = self.N-1
+        bisect.insort(self.students, student)
+        return student
 
-*Key Observations:*
-#+BEGIN_EXAMPLE
+    def leave(self, p: int) -> None:
+        self.students.remove(p)
 
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/exam-room
-
+# Your ExamRoom object will be instantiated and called as such:
+# obj = ExamRoom(N)
+# param_1 = obj.seat()
+# obj.leave(p)
 #+END_SRC
 
 #+BEGIN_HTML

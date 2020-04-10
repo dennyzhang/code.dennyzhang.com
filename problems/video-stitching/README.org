@@ -90,7 +90,6 @@ func videoStitching(clips [][]int, T int) int {
     sort.Slice(clips, func(i, j int) bool {
         return clips[i][0]<clips[j][0]
     })
-    fmt.Println(clips)
     res := 0
     start, end := 0, 0
     i := 0

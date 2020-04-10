@@ -74,7 +74,50 @@ Credits To: [[https://leetcode.com/problems/all-paths-from-source-lead-to-destin
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/all-paths-from-source-lead-to-destination
+## Basic Ideas: DFS
+##
+##  If there is a circle, return False
+##  The last node should be destination
+##  Need to deal with duplicate edges
+##
+## Complexity: Time ?, Space ?
+class Solution(object):
+    def leadsToDestination(self, n, edges, source, destination):
+        """
+        :type n: int
+        :type edges: List[List[int]]
+        :type source: int
+        :type destination: int
+        :rtype: bool
+        """
+        m = collections.defaultdict(set)
+        NOTVISITED, VISITED, VISITING = 0, 1, -1
+        states = collections.defaultdict(int)
+        # build edges
+        for (n1, n2) in edges:
+            m[n1].add(n2)
 
+        def dfs(node):
+            if states[node] == VISITED:
+                # Why?
+                return True
+            elif states[node] == VISITING:
+                return False
+            else: # not visited
+                if len(m[node]) == 0:
+                    return node == destination
+                states[node] = VISITING
+                for node2 in m[node]:
+                    if not dfs(node2): return False
+                states[node] = VISITED
+                return True
+
+        return dfs(source)
+#+END_SRC
+
+- Solution:
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/all-paths-from-source-lead-to-destination
 // Basic Ideas: dfs

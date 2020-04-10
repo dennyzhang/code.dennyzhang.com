@@ -1,0 +1,151 @@
+* LeetCode: The Maze III                                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     heap, bfs, classic, redo
+:END:
+---------------------------------------------------------------------
+The Maze III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/the-maze-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
+---------------------------------------------------------------------
+There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up (u), down (d), left (l) or right (r), but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction. There is also a hole in this maze. The ball will drop into the hole if it rolls on to the hole.
+
+Given the ball position, the hole position and the maze, find out how the ball could drop into the hole by moving the shortest distance. The distance is defined by the number of empty spaces traveled by the ball from the start position (excluded) to the hole (included). Output the moving directions by using 'u', 'd', 'l' and 'r'. Since there could be several different shortest ways, you should output the lexicographically smallest way. If the ball cannot reach the hole, output "impossible".
+
+The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The ball and the hole coordinates are represented by row and column indexes.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input 1: a maze represented by a 2D array
+
+0 0 0 0 0
+1 1 0 0 1
+0 0 0 0 0
+0 1 0 0 1
+0 1 0 0 0
+
+Input 2: ball coordinate (rowBall, colBall) = (4, 3)
+Input 3: hole coordinate (rowHole, colHole) = (0, 1)
+
+Output: "lul"
+
+Explanation: There are two shortest ways for the ball to drop into the hole.
+The first way is left -> up -> left, represented by "lul".
+The second way is up -> left, represented by 'ul'.
+Both ways have shortest distance 6, but the first way is lexicographically smaller because 'l' < 'u'. So the output is "lul".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input 1: a maze represented by a 2D array
+
+0 0 0 0 0
+1 1 0 0 1
+0 0 0 0 0
+0 1 0 0 1
+0 1 0 0 0
+
+Input 2: ball coordinate (rowBall, colBall) = (4, 3)
+Input 3: hole coordinate (rowHole, colHole) = (3, 0)
+
+Output: "impossible"
+
+Explanation: The ball cannot reach the hole.
+#+END_EXAMPLE
+
+Note:
+
+1. There is only one ball and one hole in the maze.
+- Both the ball and hole exist on an empty space, and they will not be at the same position initially.
+- The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
+- The maze contains at least 2 empty spaces, and the width and the height of the maze won't exceed 30.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/the-maze-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/the-maze-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/the-maze-iii
+## Basic Ideas: BFS + Priority Queue
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def findShortestWay(self, maze: List[List[int]], ball: List[int], hole: List[int]) -> str:
+        if ball == hole: return ""
+        m, n, q = len(maze), len(maze[0]), [(0, "", ball[0], ball[1])]
+        seen = collections.defaultdict(lambda: [sys.maxsize, "impossible"])
+        seen[tuple(ball)] = [0, ""]
+        while len(q)>0:
+            (dis, pattern, x, y) = heapq.heappop(q)
+            if [x, y] == hole: return pattern
+            for (i, j, p) in ((-1, 0, "u"), (1, 0, "d"), (0, -1, "l"), (0, 1, "r")):
+                x2, y2, d = x, y, 0
+                while 0<=x2+i<m and 0<=y2+j<n and maze[x2+i][y2+j] == 0:
+                    x2, y2, d = x2+i, y2+j, d+1
+                    if [x2, y2] == hole: break
+                if seen[x2, y2] > [dis+d, pattern+p]:
+                    seen[x2, y2] = [dis+d, pattern+p]
+                    heapq.heappush(q, (dis+d, pattern+p, x2, y2))
+        return "impossible"
+#+END_SRC
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/the-maze-iii
+## Basic Ideas: BFS + Priority Queue
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def findShortestWay(self, maze: List[List[int]], ball: List[int], hole: List[int]) -> str:
+        if ball == hole: return ""
+        n, m = len(maze), len(maze[0])
+        q = []
+        directions = {"u":(-1, 0), "d":(1, 0), "l":(0, -1), "r":(0, 1)}
+        for direction in "udlr":
+            q.append((direction, ball[0], ball[1]))
+        heapq.heapify(q)
+        seen = collections.defaultdict(lambda: sys.maxsize)
+        seen[(ball[0], ball[1])] = 0
+        minDis, res = sys.maxsize, "impossible"
+        while len(q)>0:
+            (d, x, y) = heapq.heappop(q)
+            dis = seen[(x, y)]
+            # move in this direction
+            offsetX, offsetY = directions[d[-1]]
+            x2, y2 = x+offsetX, y+offsetY
+            cnt = 1
+            while 0<=x2<n and 0<=y2<m and maze[x2][y2] == 0:
+                if [x2, y2] == hole:
+                    if dis+cnt < minDis:
+                        minDis, res = dis+cnt, d
+                    elif dis+cnt == minDis and d < res:
+                        res = d
+                    break
+                x2, y2, cnt = x2+offsetX, y2+offsetY, cnt+1
+            if [x2, y2] == hole: continue
+            # backtrack
+            x2, y2, cnt = x2-offsetX, y2-offsetY, cnt-1
+            if seen[(x2, y2)] > dis+cnt:
+                seen[(x2, y2)] = dis+cnt
+                for direction in "udlr":
+                    heapq.heappush(q, (d+direction, x2, y2))
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

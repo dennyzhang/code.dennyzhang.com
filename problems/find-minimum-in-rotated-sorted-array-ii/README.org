@@ -31,8 +31,8 @@ Credits To: [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-#+BEGIN_SRC python
-## https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii
+#+BEGIN_SRC go
+// https://code.dennyzhang.com/find-minimum-in-rotated-sorted-array-ii
 // Basic Ideas: binary search
 //  If nums[mid] > nums[right], it's in the right half, (excluding mid)
 //  If nums[mid] < nums[right], it's in the left half
