@@ -1,0 +1,88 @@
+* LeetCode: Build Array Where You Can Find The Maximum Exactly K Comparisons :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, intervaldp
+:END:
+---------------------------------------------------------------------
+Build Array Where You Can Find The Maximum Exactly K Comparisons
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]] 
+---------------------------------------------------------------------
+Given three integers n, m and k. Consider the following algorithm to find the maximum element of an array of positive integers:
+
+[[image-blog:Build Array Where You Can Find The Maximum Exactly K Comparisons][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/my.png]]
+
+You should build the array arr which has the following properties:
+- arr has exactly n integers.
+- 1 <= arr[i] <= m where (0 <= i < n).
+- After applying the mentioned algorithm to arr, the value search_cost is equal to k.
+
+Return the number of ways to build the array arr under the mentioned conditions. As the answer may grow large, the answer must be computed modulo 10^9 + 7.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 2, m = 3, k = 1
+Output: 6
+Explanation: The possible arrays are [1, 1], [2, 1], [2, 2], [3, 1], [3, 2] [3, 3]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 5, m = 2, k = 3
+Output: 0
+Explanation: There are no possible arrays that satisify the mentioned conditions.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 9, m = 1, k = 1
+Output: 1
+Explanation: The only possible array is [1, 1, 1, 1, 1, 1, 1, 1, 1]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: n = 50, m = 100, k = 25
+Output: 34549172
+Explanation: Don't forget to compute the answer modulo 1000000007
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: n = 37, m = 17, k = 7
+Output: 418930126
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 50
+- 1 <= m <= 100
+- 0 <= k <= n
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/build-array-where-you-can-find-the-maximum-exactly-k-comparisons
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

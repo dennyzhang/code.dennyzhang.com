@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     houserobber
+:type:     paintfence
 :END:
 ---------------------------------------------------------------------
 Paint House II
@@ -11,10 +11,10 @@ Paint House II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/paint-house-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
-- [[https://code.dennyzhang.com/followup-paintfence][Series: Paint Fence & Follow-up]]
+- [[https://code.dennyzhang.com/minimum-falling-path-sum-ii][LeetCode: Minimum Falling Path Sum II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/followup-houserobber][#houserobber]]
+- Tag: [[https://code.dennyzhang.com/followup-paintfence][#paintfence]]
 ---------------------------------------------------------------------
 There are a row of n houses, each house can be painted with one of the k colors. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color.
 
@@ -24,11 +24,13 @@ Note:
 All costs are positive integers.
 
 Example:
-
+#+BEGIN_EXAMPLE
 Input: [[1,5,3],[2,9,4]]
 Output: 5
 Explanation: Paint house 0 into color 0, paint house 1 into color 2. Minimum cost: 1 + 4 = 5; 
              Or paint house 0 into color 2, paint house 1 into color 0. Minimum cost: 3 + 2 = 5. 
+#+END_EXAMPLE
+
 Follow up:
 Could you solve it in O(nk) runtime?
 
@@ -40,24 +42,32 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/paint-house-ii
-
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/paint-house-ii
+## Basic Ideas: dynamic programming
+##
+##  From house to house, from color to color
+##  From top to down, from left to right
+##  dp(i, j)  = min(dp(i-1, k)) k != j
+##
+## Complexity: Time O(n*n*k), Space O(n*k)
+class Solution(object):
+    def minCostII(self, costs):
+        """
+        :type costs: List[List[int]]
+        :rtype: int
+        """
+        if not costs: return 0
+        n, m = len(costs), len(costs[0])
+        if m == 0: return 0
+        dp = copy.deepcopy(costs[0])
+        for i in range(1, n):
+            dp2 = copy.deepcopy(dp)
+            for j in range(m):
+                dp2[j], v = sys.maxsize, dp2[j]
+                dp[j] = min(dp2) + costs[i][j]
+                dp2[j] = v
+        return min(dp)
 #+END_SRC
 
 #+BEGIN_HTML

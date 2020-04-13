@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming
+:type:     dynamicprogramming, paintfence
 :END:
 ---------------------------------------------------------------------
 Minimum Falling Path Sum II
@@ -11,9 +11,10 @@ Minimum Falling Path Sum II
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-falling-path-sum-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/paint-house-ii][LeetCode: Paint House II]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-paintfence][#paintfence]]
 ---------------------------------------------------------------------
 Given a square grid of integers arr, a falling path with non-zero shifts is a choice of exactly one element from each row of arr, such that no two elements chosen in adjacent rows are in the same column.
 
@@ -61,7 +62,7 @@ Leave me comments, if you have better ways to solve.
 ##
 ##  return min of the last row
 ##
-## Complexity: Time O(n*m), Space O(m)
+## Complexity: Time O(n*n*m), Space O(m)
 class Solution:
     def minFallingPathSum(self, arr: List[List[int]]) -> int:
         n, m = len(arr), len(arr[0])

@@ -1,0 +1,101 @@
+* LeetCode: Minimum Number of Frogs Croaking                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap, inspiring
+:END:
+---------------------------------------------------------------------
+Minimum Number of Frogs Croaking
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-number-of-frogs-croaking"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given the string croakOfFrogs, which represents a combination of the string "croak" from different frogs, that is, multiple frogs can croak at the same time, so multiple "croak" are mixed. Return the minimum number of different frogs to finish all the croak in the given string.
+
+A valid "croak" means a frog is printing 5 letters 'c', 'r', 'o', 'a', 'k' sequentially. The frogs have to print all five letters to finish a croak. If the given string is not a combination of valid "croak" return -1.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: croakOfFrogs = "croakcroak"
+Output: 1 
+Explanation: One frog yelling "croak" twice.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: croakOfFrogs = "crcoakroak"
+Output: 2 
+Explanation: The minimum number of frogs is two. 
+The first frog could yell "crcoakroak".
+The second frog could yell later "crcoakroak".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: croakOfFrogs = "croakcrook"
+Output: -1
+Explanation: The given string is an invalid combination of "croak" from different frogs.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: croakOfFrogs = "croakcroa"
+Output: -1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= croakOfFrogs.length <= 10^5
+- All characters in the string are: 'c', 'r', 'o', 'a' or 'k'.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-number-of-frogs-croaking][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-number-of-frogs-croaking/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-number-of-frogs-croaking
+## Basic Ideas: hashmap
+##
+## Complexity: Time O(n), Space O(n)
+class Solution(object):
+    def minNumberOfFrogs(self, croakOfFrogs):
+        """
+        :type croakOfFrogs: str
+        :rtype: int
+        """
+        res = 0
+        # croak
+        prevs = {"c":"k", "r":"c", "o":"r", "a":"o", "k":"a"}
+        freqs = collections.defaultdict(int)
+        for ch in croakOfFrogs:
+            pre = prevs[ch]
+            if freqs[pre] == 0:
+                if ch != "c":
+                    return -1
+                else:
+                    res += 1
+                    freqs[ch] += 1
+            else:
+                freqs[pre] -= 1
+                freqs[ch] += 1
+        if not (freqs["c"] == freqs["r"] == freqs["o"] == freqs["a"] == 0):
+            res = -1
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
