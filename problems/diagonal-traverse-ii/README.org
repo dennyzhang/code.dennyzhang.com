@@ -1,0 +1,91 @@
+* LeetCode: Diagonal Traverse II                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist, classic
+:END:
+---------------------------------------------------------------------
+Diagonal Traverse II
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/diagonal-traverse-ii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given a list of lists of integers, nums, return all elements of nums in diagonal order as shown in the below images.
+ 
+Example 1:
+[[image-blog:Diagonal Traverse II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/diagonal-traverse-ii/1.png]]
+
+#+BEGIN_EXAMPLE
+Input: nums = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,4,2,7,5,3,8,6,9]
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Diagonal Traverse II][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/diagonal-traverse-ii/2.png]]
+
+#+BEGIN_EXAMPLE
+Input: nums = [[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]
+Output: [1,6,2,8,7,3,9,4,12,10,5,13,11,14,15,16]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums = [[1,2,3],[4],[5,6,7],[8],[9,10,11]]
+Output: [1,4,2,5,3,8,6,9,7,10,11]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: nums = [[1,2,3,4,5,6]]
+Output: [1,2,3,4,5,6]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= nums.length <= 10^5
+- 1 <= nums[i].length <= 10^5
+- 1 <= nums[i][j] <= 10^9
+- There at most 10^5 elements in nums.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/diagonal-traverse-ii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/diagonal-traverse-ii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/diagonal-traverse-ii
+## Basic Ideas: matrix traverse + hashmap
+##
+##  Use (i+j), and identify result line by line
+##
+## Complexity: Time O(n*m), Space O(n*m)
+class Solution:
+    def findDiagonalOrder(self, nums: List[List[int]]) -> List[int]:
+        values = collections.defaultdict(list)
+        n = len(nums)
+        for i in range(n-1, -1, -1):
+            for j, v in enumerate(nums[i]):
+                values[i+j].append(v)
+        i = 0
+        res = []
+        while i in values:
+            res.extend(values[i])
+            i += 1
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

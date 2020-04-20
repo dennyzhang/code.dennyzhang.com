@@ -1,0 +1,115 @@
+* LeetCode: NPV Queries                                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+NPV Queries
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/npv-queries"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
+---------------------------------------------------------------------
+Table: NPV
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| year          | int     |
+| npv           | int     |
++---------------+---------+
+(id, year) is the primary key of this table.
+The table has information about the id and the year of each inventory and the corresponding net present value.
+#+END_EXAMPLE
+ 
+Table: Queries
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| year          | int     |
++---------------+---------+
+(id, year) is the primary key of this table.
+The table has information about the id and the year of each inventory query.
+#+END_EXAMPLE
+ 
+Write an SQL query to find the npv of all each query of queries table.
+
+Return the result table in any order.
+
+The query result format is in the following example:
+#+BEGIN_EXAMPLE
+NPV table:
++------+--------+--------+
+| id   | year   | npv    |
++------+--------+--------+
+| 1    | 2018   | 100    |
+| 7    | 2020   | 30     |
+| 13   | 2019   | 40     |
+| 1    | 2019   | 113    |
+| 2    | 2008   | 121    |
+| 3    | 2009   | 12     |
+| 11   | 2020   | 99     |
+| 7    | 2019   | 0      |
++------+--------+--------+
+
+Queries table:
++------+--------+
+| id   | year   |
++------+--------+
+| 1    | 2019   |
+| 2    | 2008   |
+| 3    | 2009   |
+| 7    | 2018   |
+| 7    | 2019   |
+| 7    | 2020   |
+| 13   | 2019   |
++------+--------+
+
+Result table:
++------+--------+--------+
+| id   | year   | npv    |
++------+--------+--------+
+| 1    | 2019   | 113    |
+| 2    | 2008   | 121    |
+| 3    | 2009   | 12     |
+| 7    | 2018   | 0      |
+| 7    | 2019   | 0      |
+| 7    | 2020   | 30     |
+| 13   | 2019   | 40     |
++------+--------+--------+
+
+The npv value of (7, 2018) is not present in the NPV table, we consider it 0.
+The npv values of all other queries can be found in the NPV table.
+#+END_EXAMPLE
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/npv-queries][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/npv-queries/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC sql
+## https://code.dennyzhang.com/npv-queries
+select Queries.*, if(isnull(npv), 0, npv) as npv
+from Queries left join NPV
+on Queries.id = NPV.id and Queries.year = NPV.year
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

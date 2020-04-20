@@ -21,16 +21,13 @@ The square room has walls of length p, and a laser ray from the southwest corner
 
 Return the number of the receptor that the ray meets first.  (It is guaranteed that the ray will meet a receptor eventually.)
 
- 
-
 Example 1:
+[[image-blog:Leetcode: Mirror Reflection][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/reflection.png]]
 #+BEGIN_EXAMPLE
 Input: p = 2, q = 1
 Output: 2
 Explanation: The ray meets receptor 2 the first time it gets reflected back to the left wall.
 #+END_EXAMPLE
-
-[[image-blog:Leetcode: Mirror Reflection][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/images/reflection.png]]
 
 Note:
 

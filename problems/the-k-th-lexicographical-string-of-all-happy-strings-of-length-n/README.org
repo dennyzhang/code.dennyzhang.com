@@ -1,0 +1,118 @@
+* LeetCode: The k-th Lexicographical String of All Happy Strings of Length n :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string
+:END:
+---------------------------------------------------------------------
+The k-th Lexicographical String of All Happy Strings of Length n
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-string][#string]]
+---------------------------------------------------------------------
+A happy string is a string that:
+
+- consists only of letters of the set ['a', 'b', 'c'].
+- s[i] != s[i + 1] for all values of i from 1 to s.length - 1 (string is 1-indexed).
+
+For example, strings "abc", "ac", "b" and "abcbabcbcb" are all happy strings and strings "aa", "baa" and "ababbc" are not happy strings.
+
+Given two integers n and k, consider a list of all happy strings of length n sorted in lexicographical order.
+
+Return the kth string of this list or return an empty string if there are less than k happy strings of length n.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 1, k = 3
+Output: "c"
+Explanation: The list ["a", "b", "c"] contains all happy strings of length 1. The third string is "c".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 1, k = 4
+Output: ""
+Explanation: There are only 3 happy strings of length 1.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 3, k = 9
+Output: "cab"
+Explanation: There are 12 different happy string of length 3 ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]. You will find the 9th string = "cab"
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: n = 2, k = 7
+Output: ""
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: n = 10, k = 100
+Output: "abacbabacb"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 10
+- 1 <= k <= 100
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n
+##
+##    Decide characters one by one
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def getHappyString(self, n: int, k: int) -> str:
+        maxV = 3*(2**(n-1))
+        if k > maxV: return ""
+        ch = "c"
+        if k <= int(maxV/3):
+            ch = "a"
+        elif int(maxV/3)<k<=2*int(maxV/3):
+            ch = "b"
+        maxV = int(maxV/3)
+        k = (k-1) % maxV
+        val = f'{k:b}'
+        val = val.rjust(n-1, '0')
+        res = [ch]
+        for i in range(n-1):
+            # print(i, val[i])
+            if val[i] == "0":
+                # choose the smallest
+                if ch == "a":
+                    ch = "b"
+                else:
+                    ch = "a"
+            else:
+                # choose the second smallest
+                if ch == "c":
+                    ch = "b"
+                else:
+                    ch = "c"
+            res.append(ch)
+        return "".join(res)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,0 +1,73 @@
+* LeetCode: K Empty Slots                                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+K Empty Slots
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/k-empty-slots"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+You have N bulbs in a row numbered from 1 to N. Initially, all the bulbs are turned off. We turn on exactly one bulb everyday until all bulbs are on after N days.
+
+You are given an array bulbs of length N where bulbs[i] = x means that on the (i+1)th day, we will turn on the bulb at position x where i is 0-indexed and x is 1-indexed.
+
+Given an integer K, find out the minimum day number such that there exists two turned on bulbs that have exactly K bulbs between them that are all turned off.
+
+If there isn't such day, return -1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+bulbs: [1,3,2]
+K: 1
+Output: 2
+Explanation:
+On the first day: bulbs[0] = 1, first bulb is turned on: [1,0,0]
+On the second day: bulbs[1] = 3, third bulb is turned on: [1,0,1]
+On the third day: bulbs[2] = 2, second bulb is turned on: [1,1,1]
+We return 2 because on the second day, there were two on bulbs with one off bulb between them.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+bulbs: [1,2,3]
+K: 1
+Output: -1
+#+END_EXAMPLE
+
+Note:
+
+1. 1 <= N <= 20000
+- 1 <= bulbs[i] <= N
+- bulbs is a permutation of numbers from 1 to N.
+- 0 <= K <= 20000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/k-empty-slots][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/k-empty-slots/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/k-empty-slots
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

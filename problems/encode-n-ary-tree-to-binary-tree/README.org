@@ -1,0 +1,55 @@
+* LeetCode: Encode N-ary Tree to Binary Tree                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Encode N-ary Tree to Binary Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/encode-n-ary-tree-to-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Design an algorithm to encode an N-ary tree into a binary tree and decode the binary tree to get the original N-ary tree. An N-ary tree is a rooted tree in which each node has no more than N children. Similarly, a binary tree is a rooted tree in which each node has no more than 2 children. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that an N-ary tree can be encoded to a binary tree and this binary tree can be decoded to the original N-nary tree structure.
+
+Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See following example).
+
+For example, you may encode the following 3-ary tree to a binary tree in this way:
+
+[[image-blog:Encode N-ary Tree to Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/encode-n-ary-tree-to-binary-tree/narytreebinarytreeexample.png]]
+
+Input: root = [1,null,3,2,4,null,5,6]
+
+Note that the above is just an example which might or might not work. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
+
+Constraints:
+
+- The height of the n-ary tree is less than or equal to 1000
+- The total number of nodes is between [0, 10^4]
+- Do not use class member/global/static variables to store states. Your encode and decode algorithms should be stateless.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/encode-n-ary-tree-to-binary-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/encode-n-ary-tree-to-binary-tree
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

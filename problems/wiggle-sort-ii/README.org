@@ -1,8 +1,8 @@
-* Leetcode: Wiggle Sort II                                              :BLOG:Basic:
+* Leetcode: Wiggle Sort II                                              :BLOG:Medium:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     wiggle, constructarray
+:type:     wiggle, constructarray, redo
 :END:
 ---------------------------------------------------------------------
 Wiggle Sort II
