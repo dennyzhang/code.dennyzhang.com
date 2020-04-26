@@ -1,0 +1,75 @@
+* LeetCode: Perform String Shifts                               :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Perform String Shifts
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/perform-string-shifts"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+You are given a string s containing lowercase English letters, and a matrix shift, where shift[i] = [direction, amount]:
+
+- direction can be 0 (for left shift) or 1 (for right shift). 
+- amount is the amount by which string s is to be shifted.
+- A left shift by 1 means remove the first character of s and append it to the end.
+- Similarly, a right shift by 1 means remove the last character of s and add it to the beginning.
+
+Return the final string after all operations.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "abc", shift = [[0,1],[1,2]]
+Output: "cab"
+Explanation: 
+[0,1] means shift to left by 1. "abc" -> "bca"
+[1,2] means shift to right by 2. "bca" -> "cab"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "abcdefg", shift = [[1,1],[1,1],[0,2],[1,3]]
+Output: "efgabcd"
+Explanation:  
+[1,1] means shift to right by 1. "abcdefg" -> "gabcdef"
+[1,1] means shift to right by 1. "gabcdef" -> "fgabcde"
+[0,2] means shift to left by 2. "fgabcde" -> "abcdefg"
+[1,3] means shift to right by 3. "abcdefg" -> "efgabcd"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length <= 100
+- s only contains lower case English letters.
+- 1 <= shift.length <= 100
+- shift[i].length == 2
+- 0 <= shift[i][0] <= 1
+- 0 <= shift[i][1] <= 100
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/perform-string-shifts][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/perform-string-shifts/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/perform-string-shifts
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

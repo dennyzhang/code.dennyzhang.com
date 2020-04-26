@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     greedy, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Identity number which appears exactly once.
@@ -13,7 +13,7 @@ Identity number which appears exactly once.
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]]
 ---------------------------------------------------------------------
 A string is called happy if it does not have any of the strings 'aaa', 'bbb' or 'ccc' as a substring.
 
@@ -60,7 +60,30 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/longest-happy-string
-
+## Basic Ideas: greedy
+##
+## Complexity: Time (n), Space O(n)
+class Solution:
+    def longestDiverseString(self, a: int, b: int, c: int) -> str:
+        l = []
+        # previous cnt of corresponding character
+        A, B, C = 0, 0, 0
+        for i in range(a+b+c):
+            if (a == max(a, b, c) and A != 2) or (B == 2 and a>0) or (C == 2 and a>0):
+                # Case 1: a is the one with largest occcurent, append a if possible
+                # Case 2: The previous ends with "BB". We can safely append one a. But why?
+                l.append("a")
+                A, a = A+1, a-1
+                B, C = 0, 0
+            elif (b == max(a, b, c) and B != 2) or (A == 2 and b>0) or (C==2 and b>0):
+                l.append("b")
+                B, b = B+1, b-1
+                A, C = 0, 0
+            elif (c == max(a, b, c) and C != 2) or (B == 2 and c>0) or (A==2 and c>0):
+                l.append("c")
+                C, c = C+1, c-1
+                A, B = 0, 0
+        return "".join(l)
 #+END_SRC
 
 #+BEGIN_HTML

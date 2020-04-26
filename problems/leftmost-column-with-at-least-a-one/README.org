@@ -1,0 +1,88 @@
+* LeetCode: Leftmost Column with at Least a One                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+Leftmost Column with at Least a One
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/leftmost-column-with-at-least-a-one"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+(This problem is an interactive problem.)
+
+A binary matrix means that all elements are 0 or 1. For each individual row of the matrix, this row is sorted in non-decreasing order.
+
+Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a 1 in it. If such index doesn't exist, return -1.
+
+You can't access the Binary Matrix directly.  You may only access the matrix using a BinaryMatrix interface:
+
+- BinaryMatrix.get(row, col) returns the element of the matrix at index (row, col) (0-indexed).
+- BinaryMatrix.dimensions() returns a list of 2 elements [rows, cols], which means the matrix is rows * cols.
+
+Submissions making more than 1000 calls to BinaryMatrix.get will be judged Wrong Answer.  Also, any solutions that attempt to circumvent the judge will result in disqualification.
+
+For custom testing purposes you're given the binary matrix mat as input in the following four examples. You will not have access the binary matrix directly.
+
+Example 1:
+[[image-blog:Leftmost Column with at Least a One][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/leftmost-column-with-at-least-a-one/1.jpg]]
+#+BEGIN_EXAMPLE
+Input: mat = [[0,0],[1,1]]
+Output: 0
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Leftmost Column with at Least a One][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/leftmost-column-with-at-least-a-one/2.jpg]]
+#+BEGIN_EXAMPLE
+Input: mat = [[0,0],[0,1]]
+Output: 1
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Leftmost Column with at Least a One][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/leftmost-column-with-at-least-a-one/3.jpg]]
+#+BEGIN_EXAMPLE
+Input: mat = [[0,0],[0,0]]
+Output: -1
+#+END_EXAMPLE
+
+Example 4:
+[[image-blog:Leftmost Column with at Least a One][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/leftmost-column-with-at-least-a-one/4.jpg]]
+#+BEGIN_EXAMPLE
+Input: mat = [[0,0,0,1],[0,0,1,1],[0,1,1,1]]
+Output: 1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- rows == mat.length
+- cols == mat[i].length
+- 1 <= rows, cols <= 100
+- mat[i][j] is either 0 or 1.
+- mat[i] is sorted in a non-decreasing way.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/leftmost-column-with-at-least-a-one][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/leftmost-column-with-at-least-a-one/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/leftmost-column-with-at-least-a-one
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

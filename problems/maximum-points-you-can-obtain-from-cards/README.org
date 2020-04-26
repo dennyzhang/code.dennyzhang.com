@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     presum
+:type:     presum, array
 :END:
 ---------------------------------------------------------------------
 Maximum Points You Can Obtain from Cards
@@ -13,7 +13,7 @@ Maximum Points You Can Obtain from Cards
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/followup-presum][#presum]]
+- Tag: [[https://code.dennyzhang.com/followup-presum][#presum]], [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 There are several cards arranged in a row, and each card has an associated number of points The points are given in the integer array cardPoints.
 
@@ -69,7 +69,30 @@ Credits To: [[https://leetcode.com/problems/maximum-points-you-can-obtain-from-c
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: Presum Time O(n) Space O(1)
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/maximum-points-you-can-obtain-from-cards
+## Basic Ideas: array
+##
+##   Loop all possible candidates
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def maxScore(self, cardPoints: List[int], k: int) -> int:
+        n = len(cardPoints)
+        # cardPoints[n-k:n]
+        rightSum = sum(cardPoints[-k:])
+        leftSum = 0
+        res = leftSum+rightSum
+        for i in range(k):
+            leftSum += cardPoints[i]
+            rightSum -= cardPoints[i-k]
+            res = max(res, leftSum+rightSum)
+        return res
+#+END_SRC
+
+- Solution: Presum Time O(n) Space O(n)
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/maximum-points-you-can-obtain-from-cards

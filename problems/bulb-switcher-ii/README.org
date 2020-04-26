@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     math
+:type:     math, array, inspiring
 :END:
 ---------------------------------------------------------------------
 Bulb Switcher II
@@ -13,7 +13,7 @@ Bulb Switcher II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-math][math]]
+- Tag: [[https://code.dennyzhang.com/review-math][math]], [[https://code.dennyzhang.com/review-array][array]]
 ---------------------------------------------------------------------
 There is a room with n lights which are turned on initially and 4 buttons on the wall. After performing exactly m unknown operations towards buttons, you need to return how many different kinds of status of the n lights could be.
 
@@ -52,10 +52,75 @@ Credits To: [[https://leetcode.com/problems/bulb-switcher-ii/description/][leetc
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: reduce search space: minimize the operations, and the first 3 lights uniquely determine the state
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/bulb-switcher-ii
+## Basic Ideas: array
+##
+##   If do the same operation twice, no changes will be made.
+##   1 op2 1 op3 == 1 op1
+##
+##   The maximum state is 16 (2^4)
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def flipLights(self, n: int, m: int) -> int:
+        res = 0
+        states = set()
+        for (a, b, c) in [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1),
+                          (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]:
+            if a+b+c>m: continue
+            d = (m-(a+b+c))%2
+            # caculate the state: a, b, c, d
+            n = min(n, 3)
+            nums = [1]*n
+            for i in range(n): 
+                if a == 1: nums[i] = 1-nums[i]
+                if b == 1 and i%2 ==1:
+                    nums[i] = 1-nums[i]
+                if c == 1 and i%2 == 0:
+                    nums[i] = 1-nums[i]
+                if d == 1 and i%3 == 0:
+                    nums[i] = 1-nums[i]
+            states.add(tuple(nums))
+        return len(states)
+#+END_SRC
 
+- Solution: reduce search space for minimize the operations
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/bulb-switcher-ii
+## Basic Ideas: array
+##
+##   If do the same operation twice, no changes will be made.
+##   1 op2 1 op3 == 1 op1
+##
+##   The maximum state is 16 (2^4)
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def flipLights(self, n: int, m: int) -> int:
+        res = 0
+        states = set()
+        for (a, b, c) in [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1),
+                          (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]:
+            if a+b+c>m: continue
+            d = (m-(a+b+c))%2
+            # caculate the state: a, b, c, d
+            nums = [1]*n
+            if a == 1:
+                for i in range(n): nums[i] = 1-nums[i]
+            if b == 1:
+                for i in range(n):
+                    if i%2 == 1: nums[i] = 1-nums[i]
+            if c == 1:
+                for i in range(n):
+                    if i%2 == 0: nums[i] = 1-nums[i]
+            if d == 1:
+                for i in range(n):
+                    if i%3 == 0: nums[i] = 1-nums[i]
+            s = "".join([str(v) for v in nums])
+            states.add(s)
+        return len(states)
 #+END_SRC
 
 #+BEGIN_HTML

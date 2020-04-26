@@ -1,8 +1,8 @@
-* Leetcode: Sliding Window Maximum                               :BLOG:Basic:
+* Leetcode: Sliding Window Maximum                               :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:    monotone
+:type:    monotone, slidingwindow
 :END:
 ---------------------------------------------------------------------
 Sliding Window Maximum
@@ -11,10 +11,11 @@ Sliding Window Maximum
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/sliding-window-maximum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/constrained-subset-sum][LeetCode: Constrained Subset Sum]]
 - [[https://code.dennyzhang.com/min-stack][Min Stack]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]]
+- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]]
 ---------------------------------------------------------------------
 Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
 
@@ -47,6 +48,7 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 
 Useful link: [[https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem][monotonic queue problem]]
+
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/sliding-window-maximum
 ## Basic Ideas: sliding window with decreasing sequence

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     meetingpoint, manhattandis
+:type:     meetingpoint, manhattandis, redo
 :END:
 ---------------------------------------------------------------------
 Best Meeting Point
@@ -13,7 +13,7 @@ Best Meeting Point
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/meetingpoint][#meetingpoint]], [[https://code.dennyzhang.com/tag/manhattandis][#manhattandis]]
+- Tag: [[https://code.dennyzhang.com/tag/manhattandis][#manhattandis]], [[https://code.dennyzhang.com/followup-meetingpoint][#meetingpoint]]
 ---------------------------------------------------------------------
 A group of two or more people wants to meet and minimize the total travel distance. You are given a 2D grid of values 0 or 1, where each 1 marks the home of someone in the group. The distance is calculated using Manhattan Distance, where distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|.
 
@@ -43,24 +43,33 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-*General Thinkings:*
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/best-meeting-point
+## Basic Ideas: getmedian
+##
+##  Manhattan distance = x distance + y distance
+##  Decrease one 2D problem into two 1D problems
+##
+## Complexity: Time O(n*m*log(n*m)), Space O(n*m)
+class Solution:
+    def minTotalDistance(self, grid: List[List[int]]) -> int:
+        rows, cols = [], []
+        n, m = len(grid), len(grid[0])
+        points = []
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 1:
+                    rows.append(i)
+                    cols.append(j)
+                    points.append((i, j))
+        rowMedian = rows[int(len(rows)/2)]
+        cols.sort()
+        colMedian = cols[int(len(cols)/2)]
 
-#+END_EXAMPLE
-
-*Key Observations:*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-*Walk Through Testdata*
-#+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/best-meeting-point
-
+        res = 0
+        for (i, j) in points:
+            res += abs(rowMedian-i) + abs(colMedian-j)
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

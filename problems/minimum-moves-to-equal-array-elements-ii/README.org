@@ -15,7 +15,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/product-of-array-except-self][LeetCode: Product of Array Except Self]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/followup-roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/tag/meetingpoint][#meetingpoint]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]], [[https://code.dennyzhang.com/tag/inspiring][#inspiring]], [[https://code.dennyzhang.com/followup-roundtrippass][#roundtrippass]], [[https://code.dennyzhang.com/followup-meetingpoint][#meetingpoint]]
 ---------------------------------------------------------------------
 Given a non-empty integer array, find the minimum number of moves required to make all array elements equal, where a move is incrementing a selected element by 1 or decrementing a selected element by 1.
 

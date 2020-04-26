@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist, classic
+:type:     matrixtraversal, hashmap, bfs
 :END:
 ---------------------------------------------------------------------
 Diagonal Traverse II
@@ -13,7 +13,7 @@ Diagonal Traverse II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/followup-matrixtraversal][#matrixtraversal]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 Given a list of lists of integers, nums, return all elements of nums in diagonal order as shown in the below images.
  
@@ -58,8 +58,29 @@ Credits To: [[https://leetcode.com/problems/diagonal-traverse-ii/description/][l
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: array with (i+j) index
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/diagonal-traverse-ii
+## Basic Ideas: matrix traverse + hashmap
+##
+##  Use (i+j), and identify result line by line
+##
+##  From down to up, from left to right
+## Complexity: Time O(n*m), Space O(n*m)
+class Solution:
+    def findDiagonalOrder(self, nums: List[List[int]]) -> List[int]:
+        n = len(nums)
+        values = [[] for _ in range(n)]
+        for i in range(n-1, -1, -1):
+            for j, v in enumerate(nums[i]):
+                if len(values) <= i+j:
+                    values.append([])
+                values[i+j].append(nums[i][j])
+        # flattern 2D array into 1D array
+        return [a for r in values for a in r]
+#+END_SRC
 
+- Solution: hashmap with (i+j) index
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/diagonal-traverse-ii
 ## Basic Ideas: matrix traverse + hashmap
@@ -79,6 +100,33 @@ class Solution:
         while i in values:
             res.extend(values[i])
             i += 1
+        return res
+#+END_SRC
+
+- Solution: bfs
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/diagonal-traverse-ii
+## Basic Ideas: bfs
+##
+##    (i, j)
+##       next nodes:
+##         go down: when it's the first column
+##         go right
+##
+## Complexity: Time O(n*m), Space O(n*m)
+class Solution:
+    def findDiagonalOrder(self, nums: List[List[int]]) -> List[int]:
+        n = len(nums)
+        queue = collections.deque([(0, 0)])
+        res = []
+        while len(queue)>0:
+            i, j = queue.popleft()
+            res.append(nums[i][j])
+            # only add bottom when we are in the first column
+            if j == 0 and i+1<n:
+                queue.append((i+1, j))
+            if j+1<len(nums[i]):
+                queue.append((i, j+1))
         return res
 #+END_SRC
 

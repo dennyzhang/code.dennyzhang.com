@@ -1,0 +1,89 @@
+* LeetCode: Destination City                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+Destination City
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/destination-city"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+You are given the array paths, where paths[i] = [cityAi, cityBi] means there exists a direct path going from cityAi to cityBi. Return the destination city, that is, the city without any path outgoing to another city.
+
+It is guaranteed that the graph of paths forms a line without any loop, therefore, there will be exactly one destination city.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: paths = [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
+Output: "Sao Paulo" 
+Explanation: Starting at "London" city you will reach "Sao Paulo" city which is the destination city. Your trip consist of: "London" -> "New York" -> "Lima" -> "Sao Paulo".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: paths = [["B","C"],["D","B"],["C","A"]]
+Output: "A"
+Explanation: All possible trips are: 
+"D" -> "B" -> "C" -> "A". 
+"B" -> "C" -> "A". 
+"C" -> "A". 
+"A". 
+Clearly the destination city is "A".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: paths = [["A","Z"]]
+Output: "Z"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= paths.length <= 100
+- paths[i].length == 2
+- 1 <= cityAi.length, cityBi.length <= 10
+- cityAi != cityBi
+- All strings consist of lowercase and uppercase English letters and the space character.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/destination-city][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/destination-city/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/destination-city
+## Basic Ideas: hashset
+##
+##  Ingress edge is 1 and Egress edge is 0
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def destCity(self, paths: List[List[str]]) -> str:
+        # ingress, egress
+        cities = collections.defaultdict(lambda:[0, 0])
+        for c1, c2 in paths:
+            cities[c1][1] += 1
+            cities[c2][0] += 1
+        for c in cities:
+            if cities[c][0] == 1 and cities[c][1] == 0:
+                return c
+        return ""
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

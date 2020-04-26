@@ -1,0 +1,115 @@
+* LeetCode: Unique Paths III                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dfs, backtracking, redo
+:END:
+---------------------------------------------------------------------
+Unique Paths III
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-paths-iii"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]], [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
+---------------------------------------------------------------------
+On a 2-dimensional grid, there are 4 types of squares:
+
+- 1 represents the starting square.  There is exactly one starting square.
+- 2 represents the ending square.  There is exactly one ending square.
+- 0 represents empty squares we can walk over.
+- -1 represents obstacles that we cannot walk over.
+
+Return the number of 4-directional walks from the starting square to the ending square, that walk over every non-obstacle square exactly once.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [[1,0,0,0],[0,0,0,0],[0,0,2,-1]]
+Output: 2
+Explanation: We have the following two paths: 
+1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2)
+2. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2)
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [[1,0,0,0],[0,0,0,0],[0,0,0,2]]
+Output: 4
+Explanation: We have the following four paths: 
+1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2),(2,3)
+2. (0,0),(0,1),(1,1),(1,0),(2,0),(2,1),(2,2),(1,2),(0,2),(0,3),(1,3),(2,3)
+3. (0,0),(1,0),(2,0),(2,1),(2,2),(1,2),(1,1),(0,1),(0,2),(0,3),(1,3),(2,3)
+4. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2),(2,3)
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: [[0,1],[2,0]]
+Output: 0
+Explanation: 
+There is no path that walks over every empty square exactly once.
+Note that the starting and ending square can be anywhere in the grid.
+#+END_EXAMPLE
+ 
+Note:
+
+- 1 <= grid.length * grid[0].length <= 20
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/unique-paths-iii][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/unique-paths-iii/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/unique-paths-iii
+## Basic Ideas: backtracking
+##  1,0,0,0
+##  0,0,0,0
+##  0,0,2,-1
+##
+## Complexity: Time O(4^(n*m)), Space O(n*m)
+class Solution:
+    def uniquePathsIII(self, grid: List[List[int]]) -> int:
+        start, emptyCnt = (-1, -1), 0
+        n, m = len(grid), len(grid[0])
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 1: start = (i, j)
+                if grid[i][j] == 0: emptyCnt += 1
+
+        res = 0
+        def dfs(i, j, empty):
+            nonlocal res
+            if not (0<=i<n and 0<=j<m):
+                return
+
+            if grid[i][j] == -1 or grid[i][j] == -2: return
+
+            if grid[i][j] == 2:
+                if empty == 0: res += 1
+                return
+
+            grid[i][j] = -2
+            dfs(i+1, j, empty-1)
+            dfs(i-1, j, empty-1)
+            dfs(i, j+1, empty-1)
+            dfs(i, j-1, empty-1)
+            grid[i][j] = 0
+
+        # Since it's a delayed decrease, we use emptyCnt+1 instead of emptyCnt
+        dfs(start[0], start[1], emptyCnt+1)
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

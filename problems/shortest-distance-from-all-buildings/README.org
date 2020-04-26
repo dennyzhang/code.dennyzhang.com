@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     meetingpoint
+:type:     meetingpoint, bfs
 :END:
 ---------------------------------------------------------------------
 Shortest Distance from All Buildings
@@ -14,7 +14,7 @@ Similar Problems:
 - [[https://code.dennyzhang.com/walls-and-gates][Walls and Gates]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/tag/meetingpoint][#meetingpoint]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/followup-meetingpoint][#meetingpoint]]
 ---------------------------------------------------------------------
 You want to build a house on an empty land which reaches all buildings in the shortest amount of distance. You can only move up, down, left and right. You are given a 2D grid of values 0, 1 or 2, where:
 
@@ -42,10 +42,101 @@ Credits To: [[https://leetcode.com/problems/shortest-distance-from-all-buildings
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
+- Solution: BFS from buildings
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/shortest-distance-from-all-buildings
+## Basic Ideas: bfs
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def shortestDistance(self, grid: List[List[int]]) -> int:
+        n, m = len(grid), len(grid[0])
+        def bfs(i, j):
+            nonlocal dis
+            seen = set()
+            level = 0
+            seen.add((i, j))
+            queue = collections.deque([(i, j)])
+            while len(queue)>0:
+                level += 1
+                for _ in range(len(queue)):
+                    (x, y) = queue.popleft()
+                    for (offsetX, offsetY) in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                        x2, y2 = x+offsetX, y+offsetY
+                        if not (0<=x2<n and 0<=y2<m) or grid[x2][y2] == 2:
+                            continue
+                        if (x2, y2) in seen: continue
+                        seen.add((x2, y2))
+                        if grid[x2][y2] == 0:
+                            dis[x2][y2][0] += 1
+                            dis[x2][y2][1] += level
+                            queue.append((x2, y2))
 
+        res = sys.maxsize
+        cnt = 0
+        buildings = []
+        dis = [[[0, 0] for _ in range(m)] for _ in range(n)]
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 1:
+                    cnt += 1
+                    buildings.append((i, j))
+
+        for (i, j) in buildings:
+            bfs(i, j)
+
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 0 and dis[i][j][0] == cnt:
+                    res = min(res, dis[i][j][1])
+        return res if res != sys.maxsize else -1
+#+END_SRC
+- Solution: BFS from empty lands
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/shortest-distance-from-all-buildings
+## Basic Ideas: bfs
+##
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def shortestDistance(self, grid: List[List[int]]) -> int:
+        n, m = len(grid), len(grid[0])
+        def bfs(i, j, cnt):
+            dis = 0
+            seen = set()
+            level = 0
+            seen.add((i, j))
+            queue = collections.deque([(i, j)])
+            while len(queue)>0:
+                level += 1
+                for _ in range(len(queue)):
+                    (x, y) = queue.popleft()
+                    for (offsetX, offsetY) in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                        x2, y2 = x+offsetX, y+offsetY
+                        if not (0<=x2<n and 0<=y2<m) or grid[x2][y2] == 2:
+                            continue
+                        if (x2, y2) in seen: continue
+                        seen.add((x2, y2))
+                        if grid[x2][y2] == 1:
+                            dis += level
+                            cnt -= 1
+                        else:
+                            # empty cell
+                            queue.append((x2, y2))
+            return dis if cnt == 0 else sys.maxsize
+                
+        res = sys.maxsize
+        cnt = 0
+        empties = []
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 0:
+                    empties.append((i, j))
+                if grid[i][j] == 1: cnt += 1
+
+        for (i, j) in empties:
+            res = min(res, bfs(i, j, cnt))
+        return res if res != sys.maxsize else -1
 #+END_SRC
 
 #+BEGIN_HTML

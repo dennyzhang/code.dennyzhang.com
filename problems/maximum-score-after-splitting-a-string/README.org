@@ -56,7 +56,30 @@ Credits To: [[https://leetcode.com/problems/maximum-score-after-splitting-a-stri
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: One pass
+
+#+BEGIN_SRC python
+## Basic Ideas: array
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def maxScore(self, s: str) -> int:
+        res = -sys.maxsize
+        ones, zeros = 0, 0
+        for i, ch in enumerate(s):
+            if ch == "0":
+                zeros += 1
+            else:
+                ones -= 1
+            if i == len(s)-1:
+                # right part can't be empty
+                continue
+            res = max(res, zeros + ones)
+        # Fix delayed caculation for the count of 1s
+        return res + len(s)-zeros
+#+END_SRC
+
+- Solution: Two pass
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/maximum-score-after-splitting-a-string

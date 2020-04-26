@@ -1,0 +1,122 @@
+* LeetCode: Constrained Subsequence Sum                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     redo, monotone, dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Constrained Subsequence Sum
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/constrained-subsequence-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-monotone][#monotone]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+Given an integer array nums and an integer k, return the maximum sum of a non-empty subsequence of that array such that for every two consecutive integers in the subsequence, nums[i] and nums[j], where i < j, the condition j - i <= k is satisfied.
+
+A subsequence of an array is obtained by deleting some number of elements (can be zero) from the array, leaving the remaining elements in their original order.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [10,2,-10,5,20], k = 2
+Output: 37
+Explanation: The subsequence is [10, 2, 5, 20].
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [-1,-2,-3], k = 1
+Output: -1
+Explanation: The subsequence must be non-empty, so we choose the largest number.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums = [10,-2,-10,-5,20], k = 2
+Output: 23
+Explanation: The subsequence is [10, -2, -5, 20].
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= k <= nums.length <= 10^5
+- -10^4 <= nums[i] <= 10^4
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/constrained-subsequence-sum][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/constrained-subsequence-sum/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: monotone queue
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/constrained-subsequence-sum
+## Basic Ideas: monotone queue
+##
+## Complexity: Time ?, Space ?
+class Solution(object):
+    def constrainedSubsetSum(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        A = nums
+        deque = collections.deque()
+        for i in xrange(len(A)):
+            A[i] += deque[0] if deque else 0
+            while len(deque) and A[i] > deque[-1]:
+                deque.pop()
+            if A[i] > 0:
+                deque.append(A[i])
+            if i >= k and deque and deque[0] == A[i - k]:
+                deque.popleft()
+        return max(A)
+#+END_SRC
+
+- Solution: dynamic programming
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/constrained-subsequence-sum
+## Basic Ideas: dynamic programming
+##
+##   Each element whether to take it
+##      Previous element
+##
+##   dp(i): 
+##           take current element
+##                max(dp(i-j))+nums[i] 1<=j<=k-1
+##           don't take it
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def constrainedSubsetSum(self, nums: List[int], k: int) -> int:
+        res = -sys.maxsize
+        n = len(nums)
+        dp = [0]*n
+        li = []
+        for i in range(n):
+            dp[i] = nums[i]
+            while len(li)>0:
+                (v, j) = heapq.heappop(li)
+                v = -v
+                if i-j>k: continue
+                heapq.heappush(li, (-v, j))
+                dp[i] = max(dp[i], v+nums[i])
+                break
+            res = max(res, dp[i])
+            heapq.heappush(li, (-dp[i], i))
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

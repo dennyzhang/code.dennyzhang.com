@@ -1,0 +1,84 @@
+* LeetCode: Check If All 1's Are at Least Length K Places Away  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Check If All 1's Are at Least Length K Places Away
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-all-1s-are-at-least-length-k-places-away"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+Given an array nums of 0s and 1s and an integer k, return True if all 1's are at least k places away from each other, otherwise return False.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [1,0,0,0,1,0,0,1], k = 2
+Output: true
+Explanation: Each of the 1s are at least 2 places away from each other.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [1,0,0,1,0,1], k = 2
+Output: false
+Explanation: The second 1 and third 1 are only one apart from each other.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums = [1,1,1,1,1], k = 0
+Output: true
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: nums = [0,1,0,1], k = 1
+Output: true
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= nums.length <= 10^5
+- 0 <= k <= nums.length
+- nums[i] is 0 or 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-all-1s-are-at-least-length-k-places-away][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/check-if-all-1s-are-at-least-length-k-places-away
+## Basic Ideas: array
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def kLengthApart(self, nums: List[int], k: int) -> bool:
+        minDis = sys.maxsize
+        prev = -1
+        for i, v in enumerate(nums):
+            if v == 1:
+                if prev != -1:
+                    minDis = min(minDis, i-prev)
+                    # print(i, minDis, k)
+                    if minDis <= k: return False
+                prev = i
+        return True
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

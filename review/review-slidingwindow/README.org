@@ -28,8 +28,9 @@ Slidingwindow Problems
 |   4 | Sliding window with non-decreasing size                   | [[https://code.dennyzhang.com/max-consecutive-ones-iii][LeetCode: Max Consecutive Ones III]]                       |
 |   5 | Move two pointers: two loop vs One loop                   | [[https://code.dennyzhang.com/longest-substring-without-repeating-characters][LeetCode: Longest Substring Without Repeating Characters]] |
 |   6 | Inspiring sliding window problem                          | [[https://code.dennyzhang.com/moving-stones-until-consecutive-ii][LeetCode: Moving Stones Until Consecutive II]]             |
-|   7 | Sliding window with adjustable size                       |                                                          |
-|   8 | Move pointer1 to match the other, or the other way around |                                                          |
+|   7 | Sliding window with lazy removal                          | [[https://code.dennyzhang.com/sliding-window-median][Leetcode: Sliding Window Median]]                          |
+|   8 | Sliding window with adjustable size                       |                                                          |
+|   9 | Move pointer1 to match the other, or the other way around |                                                          |
 #+TBLFM: $1=@-1$1+1;N
 
 *Code Skeleton*

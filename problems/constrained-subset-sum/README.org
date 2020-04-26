@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, slidingwindow, heap
+:type:     dynamicprogramming, slidingwindow, heap, monotone, classic, redo
 :END:
 ---------------------------------------------------------------------
 Identity number which appears exactly once.
@@ -11,24 +11,10 @@ Identity number which appears exactly once.
 <a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/constrained-subset-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
 #+END_HTML
 Similar Problems:
+- [[https://code.dennyzhang.com/sliding-window-maximum][LeetCode: Sliding Window Maximum]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]],Constrained Subset Sum                              :BLOG:Medium:
-#+STARTUP: showeverything
-#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
-:PROPERTIES:
-:type:     dynamicprogramming, slidingwindow, heap
-:END:
----------------------------------------------------------------------
-Identity number which appears exactly once.
----------------------------------------------------------------------
-#+BEGIN_HTML
-<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/constrained-subset-sum"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
-#+END_HTML
-Similar Problems:
-- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
-- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-heap][#heap]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/review-monotone][#monotone]]
 ---------------------------------------------------------------------
 Given an integer array nums and an integer k, return the maximum sum of a non-empty subset of that array such that for every two consecutive integers in the subset, nums[i] and nums[j], where i < j, the condition j - i <= k is satisfied.
 
@@ -66,7 +52,40 @@ Credits To: [[https://leetcode.com/problems/constrained-subset-sum/description/]
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: dynamic programming + monotone queue
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/constrained-subset-sum
+## Basic Ideas: monotone queue
+##
+##   For each element check whether to take it
+##   If take it, find the previous element
+##           For the previous element, the last k-1 elements are the candidates
+##           From right to left, if one candidate is better 
+##                than previous one, no need to keep the previous one
+##
+## Complexity: Time O(n), Space O(k)
+class Solution:
+    def constrainedSubsetSum(self, nums: List[int], k: int) -> int:
+        queue = collections.deque()
+        for i in range(len(nums)):
+            if len(queue)>0:
+                # add the previous section
+                nums[i] += queue[0]
+            # monotone queue: keep decreasing
+            while len(queue) > 0 and queue[-1] < nums[i]:
+                # remove previous useless values
+                queue.pop()
+            # store result as candidates
+            if nums[i] > 0:
+                queue.append(nums[i])
+            # sliding window moves the left
+            if i>=k and len(queue)>0 and queue[0] == nums[i-k]:
+                queue.popleft()
+        return max(nums)
+#+END_SRC
+
+- Solution: dynamic programming + sliding window + heap + delayed deletion
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/constrained-subset-sum

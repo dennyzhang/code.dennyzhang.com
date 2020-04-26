@@ -21,12 +21,14 @@ Review: Monotone Stack Or Monotone Queue Problems
 | Mistake: when pop stack, don't compare value with index | _for len(stack)>0 && nums[stack[len(stack)-1]]>v_ VS _for len(stack)>0 && stack[len(stack)-1]>v_ |
 | Initial value of the indices array                      | _-1_ VS _len(array)_                                                                             |
 
-*Scenarios*
-| Name                                         | Summary                                                         |
-|----------------------------------------------+-----------------------------------------------------------------|
-| Use monotone stack to find next bigger value | [[https://code.dennyzhang.com/next-greater-element-i][LeetCode: Next Greater Element I]]                                |
-| Use monotone stack for consecutive subarrays | [[https://code.dennyzhang.com/online-stock-span][LeetCode: Online Stock Span]], [[https://code.dennyzhang.com/sum-of-subarray-minimums][LeetCode: Sum of Subarray Minimums]] |
-| Monotone queue, instead of monotone stack    | [[https://code.dennyzhang.com/shortest-subarray-with-sum-at-least-k][LeetCode: Shortest Subarray with Sum at Least K]]                 |
+*Top Questions*
+| Num | Problem                                      | Summary                                                         |
+|-----+----------------------------------------------+-----------------------------------------------------------------|
+|   1 | Use monotone stack to find next bigger value | [[https://code.dennyzhang.com/next-greater-element-i][LeetCode: Next Greater Element I]]                                |
+|   2 | Monotone stack for consecutive subarrays     | [[https://code.dennyzhang.com/online-stock-span][LeetCode: Online Stock Span]], [[https://code.dennyzhang.com/sum-of-subarray-minimums][LeetCode: Sum of Subarray Minimums]] |
+|   3 | Shortest Subarray with Sum at Least K        | [[https://code.dennyzhang.com/shortest-subarray-with-sum-at-least-k][LeetCode: Shortest Subarray with Sum at Least K]]                 |
+|   4 | Monotone queue                               | [[https://code.dennyzhang.com/constrained-subset-sum][LeetCode: Constrained Subset Sum]], [[https://code.dennyzhang.com/sliding-window-maximum][LeetCode: Sliding Window Maximum]] |
+#+TBLFM: $1=@-1$1+1;N
 
 *Scenarios*
 - Find next bigger value or smaller value for each elements of an array
@@ -100,3 +102,5 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 #+LINK_UP:
 #+LINK_HOME:
 
+* misc                                                             :noexport:
+https://www.1point3acres.com/bbs/thread-204388-1-1.html

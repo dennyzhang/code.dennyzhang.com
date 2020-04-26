@@ -1,0 +1,108 @@
+* LeetCode: Restore The Array                                              :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     intervaldp, dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Restore The Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/restore-the-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]], [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+A program was supposed to print an array of integers. The program forgot to print whitespaces and the array is printed as a string of digits and all we know is that all integers in the array were in the range [1, k] and there are no leading zeros in the array.
+
+Given the string s and the integer k. There can be multiple ways to restore the array.
+
+Return the number of possible array that can be printed as a string s using the mentioned program.
+
+The number of ways could be very large so return it modulo 10^9 + 7
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "1000", k = 10000
+Output: 1
+Explanation: The only possible array is [1000]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "1000", k = 10
+Output: 0
+Explanation: There cannot be an array that was printed this way and has all integer >= 1 and <= 10.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "1317", k = 2000
+Output: 8
+Explanation: Possible arrays are [1317],[131,7],[13,17],[1,317],[13,1,7],[1,31,7],[1,3,17],[1,3,1,7]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: s = "2020", k = 30
+Output: 1
+Explanation: The only possible array is [20,20]. [2020] is invalid because 2020 > 30. [2,020] is ivalid because 020 contains leading zeros.
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: s = "1234567890", k = 90
+Output: 34
+#+END_EXAMPLE
+ 
+Constraints:
+
+1 <= s.length <= 10^5.
+s consists of only digits and doesn't contain leading zeros.
+1 <= k <= 10^9.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/restore-the-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/restore-the-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/restore-the-array
+## Basic Ideas: intervaldp
+##
+##    dp(i): s[:i]
+##
+##      no seperator: s[:i]
+##      seperate by p: dp(p) + 1
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def numberOfArrays(self, s: str, k: int) -> int:
+        n = len(s)
+        dp = [0 for _ in range(n)]
+        # from left to right
+        for i in range(n):
+            if i<=10:
+                # no seperator
+                if 1<=int(s[:i+1])<=k:
+                    dp[i] += 1
+            for p in range(i-1, max(i-11, -1), -1):
+                s2 = s[p+1:i+1]
+                if s2[0] == "0": continue
+                if len(s2)<=10 and 1<=int(s2)<=k:
+                    dp[i] += dp[p]
+        return dp[n-1] % (10**9+7)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

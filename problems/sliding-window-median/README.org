@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     getmedian, redo
+:type:     getmedian, slidingwindow, heap, redo
 :END:
 ---------------------------------------------------------------------
 Sliding Window Median
@@ -12,7 +12,7 @@ Sliding Window Median
 #+END_HTML
 Similar Problems:
 - [[https://code.dennyzhang.com/find-median-from-data-stream][Find Median from Data Stream]]
-- [[https://code.dennyzhang.com/followup-getmedian][Tag: #getmedian]]
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/followup-getmedian][#getmedian]]
 ---------------------------------------------------------------------
 Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 

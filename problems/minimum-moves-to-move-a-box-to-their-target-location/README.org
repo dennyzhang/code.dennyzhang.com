@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     graph
+:type:     graph, bfs, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Minimum Moves to Move a Box to Their Target Location
@@ -13,7 +13,7 @@ Minimum Moves to Move a Box to Their Target Location
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-graph][#graph]]
+- Tag: [[https://code.dennyzhang.com/review-graph][#graph]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
 ---------------------------------------------------------------------
 Storekeeper is a game in which the player pushes boxes around in a warehouse trying to get them to target locations.
 
@@ -29,7 +29,6 @@ Your task is move the box 'B' to the target position 'T' under the following rul
 - The player cannot walk through the box.
 
 Return the minimum number of pushes to move the box to the target. If there is no way to reach the target, return -1.
-
 [[image-blog:Minimum Moves to Move a Box to Their Target Location][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-moves-to-move-a-box-to-their-target-location/graph.png]]
 
 Example 1:
@@ -92,9 +91,65 @@ Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
 
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/minimum-moves-to-move-a-box-to-their-target-location
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-moves-to-move-a-box-to-their-target-location
+## Basic Ideas: BFS with BFS
+##
+##  States: player (px, py) + box (bx, by)
+##  BFS to check whether player to move to a certain place
+##  After moving the box, the player will take the previous position of box
+##
+## Complexity: Time O((n*m)^2), Space O(n*m)
+class Solution:
+    def minPushBox(self, grid: List[List[str]]) -> int:
+        box, player, end = (-1, -1), (-1, -1), (-1, -1)
+        n, m = len(grid), len(grid[0])
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == 'S': player = (i, j)
+                if grid[i][j] == 'B': box = (i, j)
+                if grid[i][j] == 'T': target = (i, j)
 
+        def can_get(b, p, p2):
+            if p2 == p: return True
+            # move from p to p2
+            px2, py2 = p2[0], p2[1]
+            if not (0<=px2<n and 0<=py2<m) or grid[px2][py2] == '#': return False
+            seen = set([p])
+            queue = collections.deque([p])
+            while len(queue)>0:
+                (x, y) = queue.popleft()
+                for (offsetX, offsetY) in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                    x2, y2 = x+offsetX, y+offsetY
+                    if not (0<=x2<n and 0<=y2<m) or grid[x2][y2] == '#': continue
+                    if (x2, y2) == b: continue
+                    if (x2, y2) in seen: continue                   
+                    if (x2, y2) == p2: return True
+                    seen.add((x2, y2))
+                    queue.append((x2, y2))
+            return False
+            
+        level = 0
+        queue = collections.deque([(box, player)])
+        seen = set([(box, player)])
+        while len(queue) > 0:
+            for i in range(len(queue)):
+                (b, p) = queue.popleft()
+                # get the next nodes
+                for (offsetX, offsetY) in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                    # move the box to a new position, and move player to the box's previous position
+                    bx2, by2 = b[0]+offsetX, b[1]+offsetY
+                    # Skip invalid positions
+                    if not (0<=bx2<n and 0<=by2<m) or grid[bx2][by2] == '#': continue
+                    # Skip, if already checked
+                    if ((bx2, by2), b) in seen: continue
+                    # player should be in the opposite location
+                    if not can_get(b, p, (b[0]-offsetX, b[1]-offsetY)): continue
+                    if (bx2, by2) == target: return level+1
+                    seen.add(((bx2, by2), b))
+                    queue.append(((bx2, by2), b))
+            level += 1
+        return -1
 #+END_SRC
 
 #+BEGIN_HTML

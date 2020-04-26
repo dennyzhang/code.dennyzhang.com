@@ -1,0 +1,102 @@
+* LeetCode: First Unique Number                                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     linkedlist
+:END:
+---------------------------------------------------------------------
+First Unique Number
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/first-unique-number"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+---------------------------------------------------------------------
+You have a queue of integers, you need to retrieve the first unique integer in the queue.
+
+Implement the FirstUnique class:
+
+- FirstUnique(int[] nums) Initializes the object with the numbers in the queue.
+- int showFirstUnique() returns the value of the first unique integer of the queue, and returns -1 if there is no such integer.
+- void add(int value) insert value to the queue.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 
+["FirstUnique","showFirstUnique","add","showFirstUnique","add","showFirstUnique","add","showFirstUnique"]
+[[[2,3,5]],[],[5],[],[2],[],[3],[]]
+Output: 
+[null,2,null,2,null,3,null,-1]
+Explanation: 
+FirstUnique firstUnique = new FirstUnique([2,3,5]);
+firstUnique.showFirstUnique(); // return 2
+firstUnique.add(5);            // the queue is now [2,3,5,5]
+firstUnique.showFirstUnique(); // return 2
+firstUnique.add(2);            // the queue is now [2,3,5,5,2]
+firstUnique.showFirstUnique(); // return 3
+firstUnique.add(3);            // the queue is now [2,3,5,5,2,3]
+firstUnique.showFirstUnique(); // return -1
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 
+["FirstUnique","showFirstUnique","add","add","add","add","add","showFirstUnique"]
+[[[7,7,7,7,7,7]],[],[7],[3],[3],[7],[17],[]]
+Output: 
+[null,-1,null,null,null,null,null,17]
+Explanation: 
+FirstUnique firstUnique = new FirstUnique([7,7,7,7,7,7]);
+firstUnique.showFirstUnique(); // return -1
+firstUnique.add(7);            // the queue is now [7,7,7,7,7,7,7]
+firstUnique.add(3);            // the queue is now [7,7,7,7,7,7,7,3]
+firstUnique.add(3);            // the queue is now [7,7,7,7,7,7,7,3,3]
+firstUnique.add(7);            // the queue is now [7,7,7,7,7,7,7,3,3,7]
+firstUnique.add(17);           // the queue is now [7,7,7,7,7,7,7,3,3,7,17]
+firstUnique.showFirstUnique(); // return 17
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: 
+["FirstUnique","showFirstUnique","add","showFirstUnique"]
+[[[809]],[],[809],[]]
+Output: 
+[null,809,null,-1]
+Explanation: 
+FirstUnique firstUnique = new FirstUnique([809]);
+firstUnique.showFirstUnique(); // return 809
+firstUnique.add(809);          // the queue is now [809,809]
+firstUnique.showFirstUnique(); // return -1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= nums.length <= 10^5
+- 1 <= nums[i] <= 10^8
+- 1 <= value <= 10^8
+- At most 50000 calls will be made to showFirstUnique and add.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/first-unique-number][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/first-unique-number/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/first-unique-number
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

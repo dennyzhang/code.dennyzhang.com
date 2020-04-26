@@ -1,0 +1,96 @@
+* LeetCode: Check If a String Can Break Another String          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     string, twopointer, greedy
+:END:
+---------------------------------------------------------------------
+Identity number which appears exactly once.
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-a-string-can-break-another-string"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/review-string][#string]], [[https://code.dennyzhang.com/review-twopointer][#twopointer]]
+---------------------------------------------------------------------
+Given two strings: s1 and s2 with the same size, check if some permutation of string s1 can break some permutation of string s2 or vice-versa (in other words s2 can break s1).
+
+A string x can break string y (both of size n) if x[i] >= y[i] (in alphabetical order) for all i between 0 and n-1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s1 = "abc", s2 = "xya"
+Output: true
+Explanation: "ayx" is a permutation of s2="xya" which can break to string "abc" which is a permutation of s1="abc".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s1 = "abe", s2 = "acd"
+Output: false 
+Explanation: All permutations for s1="abe" are: "abe", "aeb", "bae", "bea", "eab" and "eba" and all permutation for s2="acd" are: "acd", "adc", "cad", "cda", "dac" and "dca". However, there is not any permutation from s1 which can break some permutation from s2 and vice-versa.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s1 = "leetcodee", s2 = "interview"
+Output: true
+#+END_EXAMPLE
+ 
+Constraints:
+
+- s1.length == n
+- s2.length == n
+- 1 <= n <= 10^5
+- All strings consist of lowercase English letters.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-a-string-can-break-another-string][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/check-if-a-string-can-break-another-string/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/check-if-a-string-can-break-another-string
+## Basic Ideas: two pointer + greedy
+##
+## The order doesn't matter.
+## For the same characters in both two string, remove them
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def checkIfCanBreak(self, s1: str, s2: str) -> bool:
+        def mycheck(s1, s2):
+            n = len(s1)
+            cnt1, cnt2 = [0]*26, [0]*26
+            for ch in s1:
+                cnt1[ord(ch)-ord('a')] += 1
+            for ch in s2:
+                index = ord(ch)-ord('a')
+                if cnt1[index]>0:
+                    cnt1[index] -= 1
+                else:
+                    cnt2[index] += 1
+            l1, l2 = [], []
+            for i in range(26):
+                if cnt1[i] != 0:
+                    l1.extend([chr(ord('a')+i)]*cnt1[i])
+                if cnt2[i] != 0:
+                    l2.extend([chr(ord('a')+i)]*cnt2[i])
+            for i in range(len(l1)):
+                if l1[i]<l2[i]: return False
+            return True
+        return mycheck(s1, s2) or mycheck(s2, s1)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
