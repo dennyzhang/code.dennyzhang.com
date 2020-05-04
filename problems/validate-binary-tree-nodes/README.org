@@ -1,0 +1,117 @@
+* LeetCode: Validate Binary Tree Nodes                          :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree, unionfind
+:END:
+---------------------------------------------------------------------
+Validate Binary Tree Nodes
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/validate-binary-tree-nodes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-unionfind][#unionfind]]
+---------------------------------------------------------------------
+You have n binary tree nodes numbered from 0 to n - 1 where node i has two children leftChild[i] and rightChild[i], return true if and only if all the given nodes form exactly one valid binary tree.
+
+If node i has no left child then leftChild[i] will equal -1, similarly for the right child.
+
+Note that the nodes have no values and that we only use the node numbers in this problem.
+ 
+Example 1:
+[[image-blog:Validate Binary Tree Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/validate-binary-tree-nodes/1.png]]
+#+BEGIN_EXAMPLE
+Input: n = 4, leftChild = [1,-1,3,-1], rightChild = [2,-1,-1,-1]
+Output: true
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Validate Binary Tree Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/validate-binary-tree-nodes/2.png]]
+#+BEGIN_EXAMPLE
+Input: n = 4, leftChild = [1,-1,3,-1], rightChild = [2,3,-1,-1]
+Output: false
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Validate Binary Tree Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/validate-binary-tree-nodes/3.png]]
+#+BEGIN_EXAMPLE
+Input: n = 2, leftChild = [1,0], rightChild = [-1,-1]
+Output: false
+#+END_EXAMPLE
+
+Example 4:
+[[image-blog:Validate Binary Tree Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/validate-binary-tree-nodes/4.png]]
+#+BEGIN_EXAMPLE
+Input: n = 6, leftChild = [1,-1,-1,4,-1,-1], rightChild = [2,-1,-1,5,-1,-1]
+Output: false
+#+END_EXAMPLE
+
+Constraints:
+
+- 1 <= n <= 10^4
+- leftChild.length == rightChild.length == n
+- -1 <= leftChild[i], rightChild[i] <= n - 1
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/validate-binary-tree-nodes][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/validate-binary-tree-nodes/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/validate-binary-tree-nodes
+## Basic Ideas: union find + indegree + outgree
+##
+##    Only one node with the indegree as 0
+##    For all other nodes, the indegree should be 1
+##
+## Complexity:
+class Solution:
+    def validateBinaryTreeNodes(self, n: int, leftChild: List[int], rightChild: List[int]) -> bool:
+        indegrees = [0]*n
+        parent = [0]*n
+        for i in range(n):
+            parent[i] = i
+
+        def find(x):
+            while x != parent[x]:
+                x = parent[x]
+            return x
+
+        def union(x, y):
+            x2, y2 = find(x), find(y)
+            parent[y2] = x2
+
+        for i in range(n):
+            left, right = leftChild[i], rightChild[i]
+            # i -> left, j -> right
+            for x in [left, right]:
+                if x == -1: continue
+                indegrees[x] += 1
+                if indegrees[x] > 1: return False
+                union(i, x)
+
+        cnt = 0
+        for i in range(n):
+            if indegrees[i] == 0: cnt += 1
+        
+        if cnt != 1: return False
+
+        cnt = 0
+        for i in range(n):
+            if parent[i] == i: cnt += 1
+        return cnt == 1
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

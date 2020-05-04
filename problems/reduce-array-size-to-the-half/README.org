@@ -1,0 +1,103 @@
+* LeetCode: Reduce Array Size to The Half                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap, array, redo
+:END:
+---------------------------------------------------------------------
+Reduce Array Size to The Half
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reduce-array-size-to-the-half"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given an array arr.  You can choose a set of integers and remove all the occurrences of these integers in the array.
+
+Return the minimum size of the set so that at least half of the integers of the array are removed.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [3,3,3,3,5,5,5,2,2,7]
+Output: 2
+Explanation: Choosing {3,7} will make the new array [5,5,5,2,2] which has size 5 (i.e equal to half of the size of the old array).
+Possible sets of size 2 are {3,5},{3,2},{5,2}.
+Choosing set {2,7} is not possible as it will make the new array [3,3,3,3,5,5,5] which has size greater than half of the size of the old array.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [7,7,7,7,7,7]
+Output: 1
+Explanation: The only possible set you can choose is {7}. This will make the new array empty.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [1,9]
+Output: 1
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: arr = [1000,1000,3,7]
+Output: 1
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: arr = [1,2,3,4,5,6,7,8,9,10]
+Output: 5
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 10^5
+- arr.length is even.
+- 1 <= arr[i] <= 10^5
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/reduce-array-size-to-the-half][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/reduce-array-size-to-the-half/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/reduce-array-size-to-the-half
+## Basic Ideas: hashmap
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+class Solution:
+    def minSetSize(self, arr: List[int]) -> int:
+        m = collections.defaultdict(int)
+        for v in arr:
+            m[v] += 1
+
+        l = []
+        for k in m:
+            l.append(m[k])
+
+        l.sort(reverse=True)
+        cnt = int((len(arr)+1)/2)
+
+        i = 0
+        while i<len(l):
+            cnt -= l[i]
+            if cnt <= 0:
+                break
+            i += 1
+        return i+1
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,0 +1,112 @@
+* LeetCode: Maximum Product of Splitted Binary Tree             :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree, dfs, redo
+:END:
+---------------------------------------------------------------------
+Maximum Product of Splitted Binary Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-product-of-splitted-binary-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+---------------------------------------------------------------------
+Given a binary tree root. Split the binary tree into two subtrees by removing 1 edge such that the product of the sums of the subtrees are maximized.
+
+Since the answer may be too large, return it modulo 10^9 + 7.
+
+Example 1:
+[[image-blog:Maximum Product of Splitted Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/maximum-product-of-splitted-binary-tree/1.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,2,3,4,5,6]
+Output: 110
+Explanation: Remove the red edge and get 2 binary trees with sum 11 and 10. Their product is 110 (11*10)
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Maximum Product of Splitted Binary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/maximum-product-of-splitted-binary-tree/2.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,null,2,3,4,null,null,5,6]
+Output: 90
+Explanation:  Remove the red edge and get 2 binary trees with sum 15 and 6.Their product is 90 (15*6)
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: root = [2,3,9,10,7,8,6,5,4,11,1]
+Output: 1025
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: root = [1,1]
+Output: 1
+#+END_EXAMPLE
+
+Constraints:
+
+- Each tree has at most 50000 nodes and at least 2 nodes.
+- Each node's value is between [1, 10000].
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-product-of-splitted-binary-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/maximum-product-of-splitted-binary-tree
+## Basic Ideas: dfs
+##
+##  Get the sum of each node
+##
+## Complexity: Time ?, Space ?
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def maxProduct(self, root: TreeNode) -> int:
+        mod = 10**9+7
+        m = collections.defaultdict(int)
+        def dfs(root:TreeNode) -> int:
+            if not root:
+                return 0
+            v = ((dfs(root.left)+dfs(root.right))%mod+root.val)%mod
+            m[root] = v
+            return v
+
+        totalSum = dfs(root)
+        maxProd = 0
+        def divideTree(root:TreeNode):
+            nonlocal maxProd
+            if not root:
+                return
+
+            if root.left:
+                divideTree(root.left)
+                maxProd = max(maxProd, m[root.left] * (totalSum-m[root.left]))
+            if root.right:
+                divideTree(root.right)
+                maxProd = max(maxProd, m[root.right] * (totalSum-m[root.right]))
+
+        divideTree(root)
+        return maxProd%mod
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     queue, hashmap, redo
 :END:
 ---------------------------------------------------------------------
 First Unique Number
@@ -13,7 +13,7 @@ First Unique Number
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-queue][#queue]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
 ---------------------------------------------------------------------
 You have a queue of integers, you need to retrieve the first unique integer in the queue.
 
@@ -90,7 +90,37 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/first-unique-number
+## Basic Ideas:
+##
+## Complexity: Time ?, Space ?
+class FirstUnique:
 
+    def __init__(self, nums: List[int]):
+        self.duplicates = collections.defaultdict(bool)
+        self.queue = collections.deque()
+        [self.add(v) for v in nums]
+
+    def showFirstUnique(self) -> int:
+        while len(self.queue)>0 and self.duplicates[self.queue[0]]:
+            self.queue.popleft()
+
+        if len(self.queue) > 0:
+            return self.queue[0]
+        return -1
+
+    def add(self, value: int) -> None:
+        if value in self.duplicates:
+            self.duplicates[value] = True
+        else:
+            self.duplicates[value] = False
+
+        if not self.duplicates[value]:
+            self.queue.append(value)
+
+# Your FirstUnique object will be instantiated and called as such:
+# obj = FirstUnique(nums)
+# param_1 = obj.showFirstUnique()
+# obj.add(value)
 #+END_SRC
 
 #+BEGIN_HTML

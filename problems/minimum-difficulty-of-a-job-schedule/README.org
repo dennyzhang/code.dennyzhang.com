@@ -1,0 +1,146 @@
+* LeetCode: Minimum Difficulty of a Job Schedule                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Minimum Difficulty of a Job Schedule
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-difficulty-of-a-job-schedule"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+---------------------------------------------------------------------
+You want to schedule a list of jobs in d days. Jobs are dependent (i.e To work on the i-th job, you have to finish all the jobs j where 0 <= j < i).
+
+You have to finish at least one task every day. The difficulty of a job schedule is the sum of difficulties of each day of the d days. The difficulty of a day is the maximum difficulty of a job done in that day.
+
+Given an array of integers jobDifficulty and an integer d. The difficulty of the i-th job is jobDifficulty[i].
+
+Return the minimum difficulty of a job schedule. If you cannot find a schedule for the jobs return -1.
+
+Example 1:
+[[image-blog:Minimum Difficulty of a Job Schedule][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-difficulty-of-a-job-schedule/1.png]]
+#+BEGIN_EXAMPLE
+Input: jobDifficulty = [6,5,4,3,2,1], d = 2
+Output: 7
+Explanation: First day you can finish the first 5 jobs, total difficulty = 6.
+Second day you can finish the last job, total difficulty = 1.
+The difficulty of the schedule = 6 + 1 = 7 
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: jobDifficulty = [9,9,9], d = 4
+Output: -1
+Explanation: If you finish a job per day you will still have a free day. you cannot find a schedule for the given jobs.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: jobDifficulty = [1,1,1], d = 3
+Output: 3
+Explanation: The schedule is one job per day. total difficulty will be 3.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: jobDifficulty = [7,1,7,1,7,1], d = 3
+Output: 15
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: jobDifficulty = [11,111,22,222,33,333,44,444], d = 6
+Output: 843
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= jobDifficulty.length <= 300
+- 0 <= jobDifficulty[i] <= 1000
+- 1 <= d <= 10
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-difficulty-of-a-job-schedule][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-difficulty-of-a-job-schedule
+// Basic Ideas: dynamic programming
+//
+//  dp(i, j): day i, jobs[...j]
+//
+// Complexity: Time ?, Space ?
+func min(x, y int) int {
+    if x<y {
+        return x
+    } else {
+        return y
+    }
+}
+
+func max(x, y int) int {
+    if x>y {
+        return x
+    } else {
+        return y
+    }
+}
+
+
+func minDifficulty(jobDifficulty []int, d int) int {
+    if len(jobDifficulty) < d {
+        return -1
+    }
+    dp := make([][]int, d)
+    for i, _ := range dp {
+        dp[i] = make([]int, len(jobDifficulty))
+        for j, _ := range dp[i] {
+            dp[i][j] = 1<<32-1
+        }
+    }
+
+    // base condition
+    for j, _ := range dp[0] {
+        if j == 0 {
+            dp[0][j] = jobDifficulty[j]
+        } else {
+            dp[0][j] = max(dp[0][j-1], jobDifficulty[j])
+        }
+    }
+
+    // dp
+    for i:=1; i<d; i++ {
+        for j:=i; j<len(dp[0]); j++ {
+            dp[i][j] = 1<<32-1
+            maxV := jobDifficulty[j]
+            for k:=j; k>=1; k-- {
+                maxV = max(maxV, jobDifficulty[k])
+                dp[i][j] = min(dp[i][j], dp[i-1][k-1] + maxV)
+                // if i==1 && j == 2 {
+                //     fmt.Println(i, j, k, maxV, dp[i][j])
+                // }
+            }
+        }
+    }
+    // fmt.Println(dp)
+    return dp[d-1][len(dp[0])-1]
+}
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

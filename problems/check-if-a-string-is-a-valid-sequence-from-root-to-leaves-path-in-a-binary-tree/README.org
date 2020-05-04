@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     binarytree, recurisve
 :END:
 ---------------------------------------------------------------------
 Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree
@@ -13,7 +13,7 @@ Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]], [[https://code.dennyzhang.com/review-recursive][#recursive]]
 ---------------------------------------------------------------------
 Given a binary tree where each path going from the root to any leaf form a valid sequence, check if a given string is a valid sequence in such binary tree. 
 
@@ -63,7 +63,23 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree
-
+## Basic Ideas: recurisve
+##
+## Complexity: Time O(n), Space O(1)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def isValidSequence(self, root: TreeNode, arr: List[int]) -> bool:
+        if not root: return len(arr) == 0
+        if len(arr) == 0: return False
+        if root.val != arr[0]: return False
+        if len(arr) == 1:
+            return not root.left and not root.right
+        return self.isValidSequence(root.left, arr[1:]) or self.isValidSequence(root.right, arr[1:])
 #+END_SRC
 
 #+BEGIN_HTML

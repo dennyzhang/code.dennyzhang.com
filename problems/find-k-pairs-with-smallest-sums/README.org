@@ -50,7 +50,29 @@ Credits To: [[https://leetcode.com/problems/find-k-pairs-with-smallest-sums/desc
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
 - Solution:
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/find-k-pairs-with-smallest-sums
+## Basic Ideas: heap
+##
+##  Only maintain k elements in the heap
+##
+## Complexity: Time O(k*log(k)), Space O(k)
+class Solution:
+    def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
+        nums = []
+        for v1 in nums1:
+            for v2 in nums2:
+                if len(nums)<k:
+                    heapq.heappush(nums, [-v1-v2, v1, v2])
+                else:
+                    if nums[0][0] > -v1-v2:
+                        break
+                    heapq.heappush(nums, [-v1-v2, v1, v2])
+                    heapq.heappop(nums)
+        return sorted([[v[1], v[2]] for v in nums])
+#+END_SRC
 
+- Solution:
 #+BEGIN_SRC go
 // https://code.dennyzhang.com/find-k-pairs-with-smallest-sums
 // Basic Ideas: heap

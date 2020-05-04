@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     binarysearch
 :END:
 ---------------------------------------------------------------------
 Leftmost Column with at Least a One
@@ -13,7 +13,7 @@ Leftmost Column with at Least a One
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-binarysearch][#binarysearch]]
 ---------------------------------------------------------------------
 (This problem is an interactive problem.)
 
@@ -76,7 +76,33 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/leftmost-column-with-at-least-a-one
-
+## Basic Ideas: binary search
+##
+## Complexity: Time O(n*log(m)), Space O(1)
+# """
+# This is BinaryMatrix's API interface.
+# You should not implement it, or speculate about its implementation
+# """
+#class BinaryMatrix(object):
+#    def get(self, row: int, col: int) -> int:
+#    def dimensions(self) -> list[]:
+class Solution:
+    def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+        l = binaryMatrix.dimensions()
+        n, m = l[0], l[1]
+        index = m
+        for i in range(n):
+            left, right = 0, index
+            while left<right:
+                mid = left + int((right-left)/2)
+                if mid == m: continue
+                if binaryMatrix.get(i, mid) == 1:
+                    right = mid
+                    index = mid
+                else:
+                    left = mid+1
+        if index == m: index = -1
+        return index
 #+END_SRC
 
 #+BEGIN_HTML

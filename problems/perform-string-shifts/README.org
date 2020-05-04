@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     array
 :END:
 ---------------------------------------------------------------------
 Perform String Shifts
@@ -13,7 +13,7 @@ Perform String Shifts
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
 ---------------------------------------------------------------------
 You are given a string s containing lowercase English letters, and a matrix shift, where shift[i] = [direction, amount]:
 
@@ -63,7 +63,20 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/perform-string-shifts
-
+## Basic Ideas: delayed caculation
+##
+## Complexity: Time O(n), Space O(1)
+class Solution:
+    def stringShift(self, s: str, shift: List[List[int]]) -> str:
+        n = len(s)
+        cnt = 0
+        for d, a in shift:
+            if d == 0:
+                cnt -= a
+            else:
+                cnt += a
+        cnt = cnt%n
+        return s[n-cnt:]+s[0:n-cnt]
 #+END_SRC
 
 #+BEGIN_HTML

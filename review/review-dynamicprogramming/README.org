@@ -21,13 +21,14 @@ Trade space for time.
 ---------------------------------------------------------------------
 
 *Basic Abstractions*
-| Name                                | Summary                                                   |
-|-------------------------------------+-----------------------------------------------------------|
-| Typical dynamicprogramming problems | [[https://code.dennyzhang.com/review-knapsack][#knapsack]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]], [[https://code.dennyzhang.com/followup-treedp][#treedp]], [[https://code.dennyzhang.com/review-minimax][#minimax]], [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]] |
-| Typical dynamicprogramming problems | [[https://code.dennyzhang.com/followup-lis][#lis]], [[https://code.dennyzhang.com/followup-lcs][#lcs]], [[https://code.dennyzhang.com/followup-coin][#coin]], [[https://code.dennyzhang.com/followup-paintfence][#paintfence]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]], [[https://code.dennyzhang.com/followup-houserobber][#houserobber]]   |
-|-------------------------------------+-----------------------------------------------------------|
-| *Optimal Substructure*              |                                                           |
-| *DP* vs *recursive+memoization*     |                                                           |
+| Name                                | Summary                                      |
+|-------------------------------------+----------------------------------------------|
+| Typical dynamicprogramming problems | [[https://code.dennyzhang.com/review-knapsack][#knapsack]], [[https://code.dennyzhang.com/followup-intervaldp][#intervaldp]], [[https://code.dennyzhang.com/followup-treedp][#treedp]], [[https://code.dennyzhang.com/followup-bitmaskdp][#bitmaskdp]]  |
+| Typical dynamicprogramming problems | [[https://code.dennyzhang.com/review-divideconquer][#divideconquer]],  [[https://code.dennyzhang.com/followup-lis][#lis]], [[https://code.dennyzhang.com/followup-lcs][#lcs]], [[https://code.dennyzhang.com/review-minimax][#minimax]], [[https://code.dennyzhang.com/followup-coin][#coin]] |
+| Typical dynamicprogramming problems | [[https://code.dennyzhang.com/followup-paintfence][#paintfence]], [[https://code.dennyzhang.com/followup-frogjump][#frogjump]], [[https://code.dennyzhang.com/followup-houserobber][#houserobber]]         |
+|-------------------------------------+----------------------------------------------|
+| *Optimal Substructure*              |                                              |
+| *DP* vs *recursive+memoization*     |                                              |
 
 *Top Questions*
 

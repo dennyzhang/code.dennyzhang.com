@@ -1,0 +1,126 @@
+* LeetCode: Largest Multiple of Three                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     greedy, redo
+:END:
+---------------------------------------------------------------------
+Largest Multiple of Three
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-multiple-of-three"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-greedy][#greedy]]
+---------------------------------------------------------------------
+Given an integer array of digits, return the largest multiple of three that can be formed by concatenating some of the given digits in any order.
+
+Since the answer may not fit in an integer data type, return the answer as a string.
+
+If there is no answer return an empty string.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: digits = [8,1,9]
+Output: "981"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: digits = [8,6,7,1,0]
+Output: "8760"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: digits = [1]
+Output: ""
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: digits = [0,0,0,0,0,0]
+Output: "0"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= digits.length <= 10^4
+- 0 <= digits[i] <= 9
+- The returning answer must not contain unnecessary leading zeros.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/largest-multiple-of-three][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/largest-multiple-of-three/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/largest-multiple-of-three
+## Basic Ideas: greedy
+##
+##   The more the better
+##   Check sum%3
+##        If 0, take all
+##        If 1, remove one?
+##        If 2: remove one or two
+##   
+## Complexity: Time ?, Space ?
+class Solution:
+    def largestMultipleOfThree(self, digits: List[int]) -> str:
+        cnt = [0]*10
+        mods = [0]*3
+        l = []
+        for d in digits:
+            mods[d%3] += 1
+            cnt[d] += 1
+
+        v = (mods[1]+mods[2]*2)%3
+
+        if v == 1:
+            # remove one
+            for d in range(1, 10):
+                if d%3 == 1 and cnt[d] > 0 and v != 0:
+                    cnt[d] -= 1
+                    v -= 1
+            if v != 0:
+                # delete 2 two
+                for d in range(1, 10):
+                    while d%3 == 2 and cnt[d]>0 and v != 0:
+                        cnt[d] -= 1
+                        v -= 2
+        if v == 2:
+            if mods[2] > 0:
+                # remove one
+                for d in range(1, 10):
+                    if d%3 == 2 and cnt[d]>0 and v !=0 :
+                        cnt[d] -=1 
+                        v -= 2
+            else:
+                # remove two
+                for d in range(1, 10):
+                    while d%3 == 1 and cnt[d]>0 and v != 0:
+                        cnt[d] -= 1
+                        v -= 1
+
+        for d in range(9, -1, -1):
+            if cnt[d] != 0:
+                l += [str(d)]*cnt[d]
+
+        s = "".join(l)
+        if s == "": return ""
+        s = s.lstrip("0")
+        return s if s != "" else "0"
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

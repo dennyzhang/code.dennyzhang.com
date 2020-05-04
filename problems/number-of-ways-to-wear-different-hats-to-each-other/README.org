@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming
+:type:     dynamicprogramming, bitmaskdp
 :END:
 ---------------------------------------------------------------------
 Number of Ways to Wear Different Hats to Each Other
@@ -13,7 +13,7 @@ Number of Ways to Wear Different Hats to Each Other
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-bitmaskdp][#bitmaskdp]]
 ---------------------------------------------------------------------
 There are n people and 40 types of hats labeled from 1 to 40.
 
@@ -71,7 +71,35 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/number-of-ways-to-wear-different-hats-to-each-other
+## Basic Ideas: recursive + bitmask
+## Complexity: Time ?, Space ?
+class Solution:
+    def numberWays(self, hats: List[List[int]]) -> int:
+        n = len(hats)        
+        h2p = collections.defaultdict(list)
+        for i, l in enumerate(hats):
+            for h in l:
+                h2p[h].append(i)
 
+        dp = collections.defaultdict(int)
+        # for each person try each hat
+        def dfs(allMask, hat, state):
+            nonlocal dp
+            # on valid case
+            if state == allMask: return 1
+            # no available hat
+            if hat > 40: return 0
+            # already exists
+            if (hat, state) in dp: return dp[hat, state]
+            # don't take this hat
+            res = dfs(allMask, hat+1, state)
+            for p in h2p[hat]:
+                # the person already has a hat
+                if state & (2**p) == (2**p): continue
+                res += dfs(allMask, hat+1, state | (2**p))
+            dp[hat, state] = res
+            return res
+        return dfs(2**n-1, 1, 0)%(10**9+7)
 #+END_SRC
 
 #+BEGIN_HTML

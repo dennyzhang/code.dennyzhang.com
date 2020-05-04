@@ -1,0 +1,93 @@
+* LeetCode: Closest Divisors                                    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     twosum, redo
+:END:
+---------------------------------------------------------------------
+Closest Divisors
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/closest-divisors"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-twosum][#twosump]]
+---------------------------------------------------------------------
+Given an integer num, find the closest two integers in absolute difference whose product equals num + 1 or num + 2.
+
+Return the two integers in any order.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: num = 8
+Output: [3,3]
+Explanation: For num + 1 = 9, the closest divisors are 3 & 3, for num + 2 = 10, the closest divisors are 2 & 5, hence 3 & 3 is chosen.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: num = 123
+Output: [5,25]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: num = 999
+Output: [40,25]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= num <= 10^9
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/closest-divisors][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/closest-divisors/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/closest-divisors
+## Basic Ideas: two sum?
+##
+## Complexity: Time O(sqrt(n)), Space O(1)
+import math
+class Solution:
+    def closestDivisors(self, num: int) -> List[int]:
+        for v in [num+1, num+2]:
+            k = int(math.sqrt(v))
+            if k*k == v: return [k, k]
+
+        v1 = int(math.sqrt(num+1))
+        v2 = int((num+1)/v1)
+        while True:
+            if v1 > v2:
+                v1, v2 = v2, v1
+            product = v1*v2
+            if product in [num+1, num+2]: return [v1, v2]
+            if product < num+1:
+                # make it bigger
+                if (num+1)%v1 == 0:
+                    v2 = int((num+1)/v1)
+                elif (num+2)%v1 == 0:
+                    v2 = int((num+2)/v1) 
+                else:
+                    v2 = int((num+1)/v1)+1
+            else:
+                # product bigger than num+2
+                # make it smaller
+                v1 = int((num+1)/v2)
+        return [v1, v2]
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
