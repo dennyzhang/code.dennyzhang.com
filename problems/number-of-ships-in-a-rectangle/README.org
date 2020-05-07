@@ -51,7 +51,41 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/number-of-ships-in-a-rectangle
-
+## Basic Ideas: Quadtree
+##
+##  Divide a region into 4 parts
+##
+## Complexity: Time ?, Space O(1)
+# """
+# This is Sea's API interface.
+# You should not implement it, or speculate about its implementation
+# """
+#class Sea(object):
+#    def hasShips(self, topRight: 'Point', bottomLeft: 'Point') -> bool:
+#
+#class Point(object):
+#	def __init__(self, x: int, y: int):
+#		self.x = x
+#		self.y = y
+class Solution(object):
+    def countShips(self, sea: 'Sea', P: 'Point', Q: 'Point') -> int:
+        #
+        #                                 (x1, y1)
+        #
+        #                (xx, yy)
+        #  
+        # (x2, y2)      
+        res = 0
+        if P.x<Q.x or P.y<Q.y: return 0
+        if res >= 10: return 0
+        if sea.hasShips(P, Q):
+            if P.x == Q.x and P.y == Q.y: return 1
+            xx, yy = int((P.x+Q.x)/2), int((P.y+Q.y)/2)
+            res += self.countShips(sea, P, Point(xx+1, yy+1))
+            res += self.countShips(sea, Point(xx, P.y), Point(Q.x, yy+1))
+            res += self.countShips(sea, Point(xx, yy), Q)
+            res += self.countShips(sea, Point(P.x, yy), Point(xx+1, Q.y))
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

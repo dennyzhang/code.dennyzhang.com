@@ -14,9 +14,10 @@ Bit manipulation problems
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
 
-| Name                                    | Summary |
-|-----------------------------------------+---------|
-| Two big integers: implements +, -, *, / |         |
+| Name                                      | Summary                                                |
+|-------------------------------------------+--------------------------------------------------------|
+| Confirm no two adjacent 1s in one integer | X & (X<<1) == 0 [[https://code.dennyzhang.com/maximum-students-taking-exam][LeetCode: Maximum Students Taking Exam]] |
+| Two big integers: implements +, -, *, /   |                                                        |
 
 See all bitmanipulation problems: [[https://code.dennyzhang.com/review-bitmanipulation/][#bitmanipulation]].
 [display-posts tag="bitmanipulation" posts_per_page="100" orderby="title"]

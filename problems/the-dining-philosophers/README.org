@@ -59,58 +59,54 @@ Credits To: [[https://leetcode.com/problems/the-dining-philosophers/description/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-- Solution:
+- Solution: choose one player to be different from others
 
-#+BEGIN_SRC go
-// https://code.dennyzhang.com/the-dining-philosophers
-// Basic Ideas:
-//
-//  How to avoid dead lock?
-//
-// Complexity: Time ? Space ?
-import java.util.concurrent.*;
-class DiningPhilosophers {
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/the-dining-philosophers
+## Basic Ideas:
+##
+##  p1, p2, p3
+##
+##  Avoid deadlock + avoid starving
+##
+##    0     1    2    3     4
+##  (0,1) (2,1) (2,3) (4,3) (4,0)
+##
+## choose one player to act with a different order
+##
+## Complexity: Time ?, Space ?
+import threading
+class DiningPhilosophers:
+    def __init__(self):
+        self.locks = [threading.Semaphore(1) for _ in range(5)]
 
-    private Semaphore[] sems;
-    public DiningPhilosophers() {
-        sems = new Semaphore[5];
-        for (int i=0; i<5; i++) {
-            sems[i] = new Semaphore(0, true);
-        }
-    }
-
-    // call the run() method of any runnable to execute its code
-    public void wantsToEat(int philosopher,
-                           Runnable pickLeftFork,
-                           Runnable pickRightFork,
-                           Runnable eat,
-                           Runnable putLeftFork,
-                           Runnable putRightFork) throws InterruptedException {
-        int left = philosopher;
-        int right = (philosopher+4)%5;
-        if (left%2 == 0) {
-            sems[left].acquire();
-            sems[right].acquire();
-            pickLeftFork.run();
-            pickRightFork.run();
-            eat.run();
-            putLeftFork.run();
-            putRightFork.run();
-            sems[right].release();
-            sems[left].release();
-        } else {
-            sems[right].acquire();
-            sems[left].acquire();
-            pickLeftFork.run();
-            pickRightFork.run();
-            eat.run();
-            putLeftFork.run();
-            putRightFork.run();
-            sems[left].release();
-            sems[right].release();
-        }
-    }
-}
+    # call the functions directly to execute, for example, eat()
+    def wantsToEat(self,
+                   philosopher: int,
+                   pickLeftFork: 'Callable[[], None]',
+                   pickRightFork: 'Callable[[], None]',
+                   eat: 'Callable[[], None]',
+                   putLeftFork: 'Callable[[], None]',
+                   putRightFork: 'Callable[[], None]') -> None:
+        i, j = philosopher%5, (philosopher+1)%5
+        if philosopher == 0: i, j = j, i
+        self.locks[i].acquire()
+        self.locks[j].acquire()
+        if philosopher == 0:
+            pickLeftFork()
+            pickRightFork()
+        else:
+            pickRightFork()
+            pickLeftFork()
+        eat()
+        if philosopher == 0:
+            putRightFork()
+            putLeftFork()
+        else:
+            putLeftFork()
+            putRightFork()
+        self.locks[j].release()
+        self.locks[i].release()
 #+END_SRC
 
 #+BEGIN_HTML

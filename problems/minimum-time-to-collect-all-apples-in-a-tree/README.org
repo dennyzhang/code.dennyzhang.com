@@ -1,0 +1,95 @@
+* LeetCode: Minimum Time to Collect All Apples in a Tree        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bfs, dfs
+:END:
+---------------------------------------------------------------------
+Minimum Time to Collect All Apples in a Tree
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-time-to-collect-all-apples-in-a-tree"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/review-dfs][#dfs]]
+---------------------------------------------------------------------
+Given an undirected tree consisting of n vertices numbered from 0 to n-1, which has some apples in their vertices. You spend 1 second to walk over one edge of the tree. Return the minimum time in seconds you have to spend in order to collect all apples in the tree starting at vertex 0 and coming back to this vertex.
+
+The edges of the undirected tree are given in the array edges, where edges[i] = [fromi, toi] means that exists an edge connecting the vertices fromi and toi. Additionally, there is a boolean array hasApple, where hasApple[i] = true means that vertex i has an apple, otherwise, it does not have any apple.
+ 
+Example 1:
+[[image-blog:Minimum Time to Collect All Apples in a Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-time-to-collect-all-apples-in-a-tree/1.png]]
+#+BEGIN_EXAMPLE
+Input: n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,true,true,false]
+Output: 8 
+Explanation: The figure above represents the given tree where red vertices have an apple. One optimal path to collect all apples is shown by the green arrows.  
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Minimum Time to Collect All Apples in a Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/minimum-time-to-collect-all-apples-in-a-tree/2.png]]
+#+BEGIN_EXAMPLE
+Input: n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,false,true,false]
+Output: 6
+Explanation: The figure above represents the given tree where red vertices have an apple. One optimal path to collect all apples is shown by the green arrows.  
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,false,false,false,false,false]
+Output: 0
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 10^5
+- edges.length == n-1
+- edges[i].length == 2
+- 0 <= fromi, toi <= n-1
+- fromi < toi
+- hasApple.length == n
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/minimum-time-to-collect-all-apples-in-a-tree][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: bfs
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/minimum-time-to-collect-all-apples-in-a-tree
+## Basic Ideas: bfs
+##
+##   If apple in sub-tree, need to process the sub-tree
+##   Once processing one sub-tree, process it throughly
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def minTime(self, n: int, edges: List[List[int]], hasApple: List[bool]) -> int:
+        queue = collections.deque([])
+        parents = {c:p for p, c in edges}
+        seen = set()
+        for i, b in enumerate(hasApple):
+            if b and i != 0:
+                queue.append(i)
+                seen.add(i)
+        res = 0
+        while len(queue)>0:
+            p = queue.popleft()
+            res += 2
+            q = parents[p]
+            if q not in seen and q != 0:
+                queue.append(q)
+                seen.add(q)
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

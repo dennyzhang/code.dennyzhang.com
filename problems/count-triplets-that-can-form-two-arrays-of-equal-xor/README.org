@@ -1,0 +1,107 @@
+* LeetCode: Count Triplets That Can Form Two Arrays of Equal XOR :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dynamicprogramming, presum
+:END:
+---------------------------------------------------------------------
+Count Triplets That Can Form Two Arrays of Equal XOR
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-triplets-that-can-form-two-arrays-of-equal-xor"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/followup-presum][#presum]]
+---------------------------------------------------------------------
+Given an array of integers arr.
+
+We want to select three indices i, j and k where (0 <= i < j <= k < arr.length).
+
+Let's define a and b as follows:
+
+- a = arr[i] ^ arr[i + 1] ^ ... ^ arr[j - 1]
+- b = arr[j] ^ arr[j + 1] ^ ... ^ arr[k]
+
+Note that ^ denotes the bitwise-xor operation.
+
+Return the number of triplets (i, j and k) Where a == b.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [2,3,1,6,7]
+Output: 4
+Explanation: The triplets are (0,1,2), (0,2,2), (2,3,4) and (2,4,4)
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [1,1,1,1,1]
+Output: 10
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [2,3]
+Output: 0
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: arr = [1,3,5,7,9]
+Output: 3
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: arr = [7,11,12,9,5,2,7,17,22]
+Output: 8
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 300
+- 1 <= arr[i] <= 10^8
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/count-triplets-that-can-form-two-arrays-of-equal-xor][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/count-triplets-that-can-form-two-arrays-of-equal-xor
+## Basic Ideas: presum
+##
+##  A XOR B
+##  A XOR 0 = A
+##    101 ^ 000 = 101
+##
+## Complexity: Time O(n^3), Space O(n)
+class Solution:
+    def countTriplets(self, arr: List[int]) -> int:
+        n = len(arr)
+        prexor = [0]*(n+1)
+        for i, num in enumerate(arr):
+            prexor[i+1] = prexor[i] ^ num
+
+        res = 0
+        for i in range(n):
+            for j in range(i+1, n):
+                for k in range(j, n):
+                    if prexor[k+1] ^ prexor[j] == prexor[j] ^ prexor[i]:
+                        # print(i, j, k)
+                        res += 1
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

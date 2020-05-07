@@ -302,7 +302,6 @@ Boundary of the small dataset
 * TODO code.dennyzhang.com: spam messages: https://code.dennyzhang.com/wp-admin/edit-comments.php :noexport:
 
 * TODO code add github and social medium link: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Besides tag: add series or review links automatically: https://code.dennyzhang.com/partition-array-into-disjoint-intervals :noexport:
 * TODO generate series [[https://code.dennyzhang.com/tag/walkrobot][#walkrobot]], [[https://code.dennyzhang.com/tag/wiggle][#wiggle]]                         :noexport:
 * TODO sereie: maximum https://leetcode.com/problems/maximum-sum-circular-subarray/description/ :noexport:
@@ -362,7 +361,6 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 * TODO syntax color: https://code.dennyzhang.com/max-consecutive-ones-iii :noexport:
 * TODO code blog: change a better wordpress template               :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO width is not long enough: https://code.dennyzhang.com/132-pattern :noexport:
 * TODO rename braindenny to Dennyzhang                             :noexport:
 https://code.dennyzhang.com/tag/redo/page/5
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
@@ -383,8 +381,6 @@ https://code.dennyzhang.com/the-dining-philosophers
 * TODO Can't push java code snippet: https://code.dennyzhang.com/the-dining-philosophers :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO maintain similar link like https://leetcode.com/discuss/interview-question/448285/list-of-questions-sorted-by-common-patterns :noexport:
-* TODO 认识 花花酱                                                 :noexport:
-https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 * TODO [#A] Doesn't show the full problem list: https://code.dennyzhang.com/review-knapsack :noexport:
 https://code.dennyzhang.com/review-backtracking
 * TODO Change menu: https://code.dennyzhang.com/                   :noexport:
@@ -406,5 +402,13 @@ https://www.1point3acres.com/bbs/thread-617777-1-1.html
 ** TODO Hungarian
 ** TODO Morris Traversal
 ** TODO MaxFlowMinCut
+* TODO [#A] 认识 花花酱                                            :noexport:
+https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Code website: adsense doesn't show up quickly          :noexport:
 * TODO [#B] search with two tags                                   :noexport:
+* TODO [#A] problem: Credits To -> Add Tag:                        :noexport:
+* TODO [#A] avoid adsense for coding problems                      :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] 将top 100再刷一遍; 将leetcode hard 300题刷一遍!        :noexport:
+* TODO [#A] width is not long enough: https://code.dennyzhang.com/132-pattern :noexport:

@@ -1,8 +1,8 @@
-* LeetCode: Maximum Students Taking Exam                        :BLOG:Medium:
+* LeetCode: Maximum Students Taking Exam                        :BLOG:Hard:
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, bitmaskdp
+:type:     dynamicprogramming, bitmaskdp, classic, redo
 :END:
 ---------------------------------------------------------------------
 Maximum Students Taking Exam
@@ -22,6 +22,7 @@ Students can see the answers of those sitting next to the left, right, upper lef
 Students must be placed in seats in good condition.
 
 Example 1:
+[[image-blog:Maximum Students Taking Exam][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/maximum-students-taking-exam/1.png]]
 #+BEGIN_EXAMPLE
 Input: seats = [["#",".","#","#",".","#"],
                 [".","#","#","#","#","."],
@@ -70,24 +71,43 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/maximum-students-taking-exam
-## Basic Ideas:
+## Basic Ideas: dynamic programming + bitmask
 ##
-##   dp(i, j): max count
+##  1. For each row, try all the possiblities
+##  2. How we confirm no adjacent students in one row?
+##      Use bitmask for each row. 1 represent, it's taken
+##      Fact: For X, if X & (X<<1) == 0, there are no two adjacent 1s in its binary representation
+##  3. dp[r][mask] = max(dp[r][mask], dp[r - 1][prev_mask] + bit_count(mask)
 ##
-##   Question: Do we have to track two cases of take and don't take?
-##
-##       dp(i, j)
-##         if seats[i][j] == '#', max(dp(i, j-1), dp(i-1, n-1))
-##         if seats[i][j] == '.'
-##              take: min(dp(i, j-1, 0), dp(i-1, j-1, 0), dp(i-1, j+1, 0)) + 1
-##              don't take: max(dp(i, j-1), dp(i-1, j-1), dp(i-1, j+1))
-##
-##   return dp(n-1, m-1)
-##
-## Complexity: Time O(n*m), Space O(n*m)
+## Complexity: Time ?, Space ?
 class Solution:
     def maxStudents(self, seats: List[List[str]]) -> int:
-        dp = collections.defaultdict(int)
+        m, n = len(seats), len(seats[0])
+        dp = [collections.defaultdict(lambda: -1) for _ in range(m+1)]
+        dp[0][0] = 0
+        res = 0
+        for i in range(1, m+1):
+            # print(i, dp[0], dp[0][0])
+            rowState = 0
+            for j in range(n):
+                # 0s in rowState means broken seats
+                rowState = 2*rowState + (seats[i-1][j] == '.')
+            for s2 in range(2**n):
+                # make sure the state is valid
+                if s2 & rowState != s2: continue
+                # adjacent students in this row
+                if s2 & (s2>>1) != 0: continue
+                for s1 in range(2**n):
+                    # check upper left
+                    if s2 & (s1>>1) != 0: continue
+                    # check upper right
+                    if s2 & (s1<<1) != 0: continue
+                    # s1 is valid in previous row
+                    if dp[i-1][s1] != -1:
+                        dp[i][s2] = max(dp[i][s2], dp[i-1][s1]+f'{s2:b}'.count('1'))
+                    if i == m:
+                        res = max(res, dp[i][s2])
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

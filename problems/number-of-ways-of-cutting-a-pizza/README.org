@@ -1,0 +1,111 @@
+* LeetCode: Number of Ways of Cutting a Pizza                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     bfs, dynamicprogramming
+:END:
+---------------------------------------------------------------------
+Number of Ways of Cutting a Pizza
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-ways-of-cutting-a-pizza"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dynamicprogramming][#dynamicprogramming]], [[https://code.dennyzhang.com/review-bfs][#bfs]]
+---------------------------------------------------------------------
+Given a rectangular pizza represented as a rows x cols matrix containing the following characters: 'A' (an apple) and '.' (empty cell) and given the integer k. You have to cut the pizza into k pieces using k-1 cuts. 
+
+For each cut you choose the direction: vertical or horizontal, then you choose a cut position at the cell boundary and cut the pizza into two pieces. If you cut the pizza vertically, give the left part of the pizza to a person. If you cut the pizza horizontally, give the upper part of the pizza to a person. Give the last piece of pizza to the last person.
+
+Return the number of ways of cutting the pizza such that each piece contains at least one apple. Since the answer can be a huge number, return this modulo 10^9 + 7.
+ 
+Example 1:
+[[image-blog:Number of Ways of Cutting a Pizza][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/number-of-ways-of-cutting-a-pizza/1.png]]
+#+BEGIN_EXAMPLE
+Input: pizza = ["A..","AAA","..."], k = 3
+Output: 3 
+Explanation: The figure above shows the three ways to cut the pizza. Note that pieces must contain at least one apple.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: pizza = ["A..","AA.","..."], k = 3
+Output: 1
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: pizza = ["A..","A..","..."], k = 1
+Output: 1
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= rows, cols <= 50
+- rows == pizza.length
+- cols == pizza[i].length
+- 1 <= k <= 10
+- pizza consists of characters 'A' and '.' only.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/number-of-ways-of-cutting-a-pizza][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution: bfs
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/number-of-ways-of-cutting-a-pizza
+## Basic Ideas: bfs
+##
+##    With each cut, we always keep the right-bottom slice
+##    count[i][j]: apple count for rectangle from (i, j) to (m-1, n-1)
+##
+## Complexity: Time O(n*m*(n+m)*k), Space O(n*m)
+class Solution:
+    def ways(self, pizza: List[str], k: int) -> int:
+        m, n = len(pizza), len(pizza[0])
+        count = [[0 for _ in range(n+1)] for _ in range(m+1)]
+        for i in range(m-1, -1, -1):
+            for j in range(n-1, -1, -1):
+                if pizza[i][j] == 'A':
+                    count[i][j] += 1
+                count[i][j] += count[i][j+1]+count[i+1][j]-count[i+1][j+1]
+        queue = collections.deque([])
+        freq = {}
+        if count[0][0]>0:
+            queue.append((0, 0))
+            freq[0,0] = 1
+        res = 0
+        while len(queue)>0 and k>=2:
+            freq2 = collections.defaultdict(int)
+            for _ in range(len(queue)):
+                (i, j) = queue.popleft()
+                for p in range(j+1, n):
+                    if count[i][p] >0 and count[i][p] != count[i][j]:
+                        if (i, p) not in freq2:
+                            queue.append((i, p))
+                        freq2[i, p] += freq[i,j]
+                for p in range(i+1, m):
+                    if count[p][j]>0 and count[p][j] != count[i][j]:
+                        if (p, j) not in freq2:
+                            queue.append((p, j))
+                        freq2[p, j] += freq[i,j]
+            freq = freq2
+            k -= 1
+        while len(queue)>0:
+            (i, j) = queue.popleft()
+            res += freq[i, j]
+        return res % (10**9+7)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

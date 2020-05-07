@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     backtracking
 :END:
 ---------------------------------------------------------------------
 Confusing Number II
@@ -13,7 +13,7 @@ Confusing Number II
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-backtracking][#backtracking]]
 ---------------------------------------------------------------------
 We can rotate digits by 180 degrees to form new digits. When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 0, 1, 9, 8, 6 respectively. When 2, 3, 4, 5 and 7 are rotated 180 degrees, they become invalid.
 
@@ -57,7 +57,25 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/confusing-number-ii
-
+## Basic Ideas: backtracking
+## Complexity: Time O(5^k), Space O(1)
+class Solution:
+    def confusingNumberII(self, N: int) -> int:
+        mappings = {0:0, 1:1, 6:9, 8:8, 9:6}
+        res = 0
+        def dfs(value, rotatedValue, power):
+            nonlocal res
+            if value > N: return
+            if value != rotatedValue: 
+                res += 1
+            for v in [0, 1, 6, 8, 9]:
+                dfs(value*10+v, rotatedValue+power*mappings[v], 10*power)
+            
+        dfs(1, 1, 10)
+        dfs(6, 9, 10)
+        dfs(8, 8, 10)
+        dfs(9, 6, 10)
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     oodesign
 :END:
 ---------------------------------------------------------------------
 Design In-Memory File System
@@ -13,7 +13,7 @@ Design In-Memory File System
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/tag/oodesign/][#oodesign]]
 ---------------------------------------------------------------------
 Design an in-memory file system to simulate the following functions:
 
@@ -50,7 +50,52 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/design-in-memory-file-system
+## Basic Ideas: hashmap
+##
+##  path -> [] or content
+##
+## Complexity: Time ?, Space ?
+class FileSystem:
+    def __init__(self):
+        self.files = collections.defaultdict(lambda:"")
+        self.dirs = collections.defaultdict(lambda:set())
 
+    def ls(self, path: str) -> List[str]:
+        # print(self.dirs)
+        if path in self.files:
+            return [path.split('/')[-1]]
+        if path in self.dirs:
+            return sorted(list(self.dirs[path]))
+        return []
+
+    def mkdir(self, path: str) -> None:
+        if path == '/': return
+        prefix = ""
+        for p in path.split('/')[1:]:
+            prefix2 = prefix + "/"+p
+            if prefix2 not in self.dirs:
+                self.dirs[prefix2] = set()
+            if prefix == '': prefix = '/'
+            self.dirs[prefix].add(p)
+            prefix = prefix2    
+
+    def addContentToFile(self, filePath: str, content: str) -> None:
+        index = filePath.rindex('/')
+        dirPath = filePath[0:index]
+        if dirPath == '': dirPath = '/'
+        self.mkdir(dirPath)
+        self.dirs[dirPath].add(filePath[index+1:])
+        self.files[filePath] += content
+
+    def readContentFromFile(self, filePath: str) -> str:
+        return self.files[filePath]
+
+# Your FileSystem object will be instantiated and called as such:
+# obj = FileSystem()
+# param_1 = obj.ls(path)
+# obj.mkdir(path)
+# obj.addContentToFile(filePath,content)
+# param_4 = obj.readContentFromFile(filePath)
 #+END_SRC
 
 #+BEGIN_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     hashmap, oodesign
 :END:
 ---------------------------------------------------------------------
 Design Excel Sum Formula
@@ -13,7 +13,7 @@ Design Excel Sum Formula
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]], [[https://code.dennyzhang.com/tag/oodesign/][#oodesign]]
 ---------------------------------------------------------------------
 Your task is to design the basic function of Excel and implement the function of sum formula. Specifically, you need to implement the following functions:
 
@@ -74,7 +74,48 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/design-excel-sum-formula
+## Basic Ideas:
+##
+##  For the cell value, it might be direct value or direct value
+##
+## Complexity: Time ?, Space ?
+class Excel:
 
+    def __init__(self, H: int, W: str):
+        self.matrix = [[{"val":0, "cal":None} for _ in range(ord(W)-ord('A')+1)] for _ in range(H)]
+
+    def set(self, r: int, c: str, v: int) -> None:
+        self.matrix[r-1][ord(c)-ord('A')] = {"val":v, "cal":None}
+
+    def get(self, r: int, c: str) -> int:
+        cell = self.matrix[r-1][ord(c)-ord('A')]
+        if not cell["cal"]: return cell["val"]
+        res = 0
+        # caculate the value
+        for key in cell["cal"]:
+            res += cell["cal"][key]*self.get(key[0]+1, chr(key[1]+ord('A')))
+        return res
+        
+    def sum(self, r: int, c: str, strs: List[str]) -> int:
+        m = collections.defaultdict(int)
+        for s in strs:
+            l = s.split(':')
+            if len(l) == 1:
+                i, j = int(l[0][1:])-1, ord(l[0][0])-ord('A')
+                m[i, j] += 1
+            else:
+                i1, j1, i2, j2 = int(l[0][1:])-1, ord(l[0][0])-ord('A'), int(l[1][1:])-1, ord(l[1][0])-ord('A')
+                for i in range(min(i1, i2), max(i1, i2)+1):
+                    for j in range(min(j1, j2), max(j1, j2)+1):
+                        m[i, j] += 1
+        self.matrix[r-1][ord(c)-ord('A')] = {"val":0, "cal":m}
+        return self.get(r, c)
+
+# Your Excel object will be instantiated and called as such:
+# obj = Excel(H, W)
+# obj.set(r,c,v)
+# param_2 = obj.get(r,c)
+# param_3 = obj.sum(r,c,strs)
 #+END_SRC
 
 #+BEGIN_HTML
