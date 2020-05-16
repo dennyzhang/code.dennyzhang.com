@@ -1,0 +1,85 @@
+* LeetCode: Rearrange Words in a Sentence                       :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Rearrange Words in a Sentence
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/rearrange-words-in-a-sentence"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given a sentence text (A sentence is a string of space-separated words) in the following format:
+
+- First letter is in upper case.
+- Each word in text are separated by a single space.
+
+Your task is to rearrange the words in text such that all words are rearranged in an increasing order of their lengths. If two words have the same length, arrange them in their original order.
+
+Return the new text following the format shown above.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: text = "Leetcode is cool"
+Output: "Is cool leetcode"
+Explanation: There are 3 words, "Leetcode" of length 8, "is" of length 2 and "cool" of length 4.
+Output is ordered by length and the new first word starts with capital letter.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: text = "Keep calm and code on"
+Output: "On and keep calm code"
+Explanation: Output is ordered as follows:
+"On" 2 letters.
+"and" 3 letters.
+"keep" 4 letters in case of tie order by position in original text.
+"calm" 4 letters.
+"code" 4 letters.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: text = "To be or not to be"
+Output: "To be or to be not"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- text begins with a capital letter and then contains lowercase letters and single space between words.
+- 1 <= text.length <= 10^5
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/rearrange-words-in-a-sentence][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/rearrange-words-in-a-sentence/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/rearrange-words-in-a-sentence
+## Basic Ideas: array
+## Complexity: Time O(n*log(n)), Space O(n)
+class Solution:
+    def arrangeWords(self, text: str) -> str:
+        l = text.split(" ")
+        l[0] = l[0].lower()
+        l.sort(key=lambda x: len(x))
+        l[0] = l[0][0].upper()+l[0][1:]
+        return " ".join(l)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

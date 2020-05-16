@@ -1,0 +1,120 @@
+* LeetCode: Form Largest Integer With Digits That Add up to Target :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     knapsack
+:END:
+---------------------------------------------------------------------
+Form Largest Integer With Digits That Add up to Target
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/form-largest-integer-with-digits-that-add-up-to-target"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-knapsack][#knapsack]]
+---------------------------------------------------------------------
+Given an array of integers cost and an integer target. Return the maximum integer you can paint under the following rules:
+
+- The cost of painting a digit (i+1) is given by cost[i] (0 indexed).
+- The total cost used must be equal to target.
+- Integer does not have digits 0.
+
+Since the answer may be too large, return it as string.
+
+If there is no way to paint any integer given the condition, return "0".
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: cost = [4,3,2,5,6,7,2,5,5], target = 9
+Output: "7772"
+Explanation:  The cost to paint the digit '7' is 2, and the digit '2' is 3. Then cost("7772") = 2*3+ 3*1 = 9. You could also paint "997", but "7772" is the largest number.
+Digit    cost
+  1  ->   4
+  2  ->   3
+  3  ->   2
+  4  ->   5
+  5  ->   6
+  6  ->   7
+  7  ->   2
+  8  ->   5
+  9  ->   5
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: cost = [7,6,5,5,5,6,8,7,8], target = 12
+Output: "85"
+Explanation: The cost to paint the digit '8' is 7, and the digit '5' is 5. Then cost("85") = 7 + 5 = 12.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: cost = [2,4,6,2,4,6,4,4,4], target = 5
+Output: "0"
+Explanation: It's not possible to paint any integer with total cost equal to target.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: cost = [6,10,15,40,40,40,40,40,40], target = 47
+Output: "32211"
+#+END_EXAMPLE
+ 
+Constraints:
+
+- cost.length == 9
+- 1 <= cost[i] <= 5000
+- 1 <= target <= 5000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/form-largest-integer-with-digits-that-add-up-to-target][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/form-largest-integer-with-digits-that-add-up-to-target
+## Basic Ideas: greedy + knapsack
+##
+##  If the same cost, choose the bigger digit
+##  More digits are better
+##
+##  2: 7
+##  3: 2
+##  4: 1
+##  5: 9
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def largestNumber(self, cost: List[int], target: int) -> str:
+        m = collections.defaultdict(int)
+        for i, c in enumerate(cost):
+            m[c] = max(m[c], i+1)
+
+        dp = [[] for _ in range(target+1)]
+        for c in m:
+            if c<=target:
+                dp[c] = [m[c]]
+        for i in range(1, target+1):
+            for c in m:
+                if i-c>=0 and len(dp[i-c]) != 0:
+                    l = sorted(dp[i-c] + [m[c]], reverse=True)
+                    if len(l)>len(dp[i]) or (len(l) == len(dp[i]) and l>dp[i]):
+                        dp[i] = l
+        
+        res = ''.join([str(v) for v in dp[i]])
+        return res if res != '' else "0"
+                
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -1,0 +1,108 @@
+* LeetCode: Maximum Number of Darts Inside of a Circular Dartboard :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     math
+:END:
+---------------------------------------------------------------------
+Maximum Number of Darts Inside of a Circular Dartboard
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-number-of-darts-inside-of-a-circular-dartboard"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-math][#math]]
+---------------------------------------------------------------------
+You have a very large square wall and a circular dartboard placed on the wall. You have been challenged to throw darts into the board blindfolded. Darts thrown at the wall are represented as an array of points on a 2D plane. 
+
+Return the maximum number of points that are within or lie on any circular dartboard of radius r.
+
+Example 1:
+[[image-blog:Maximum Number of Darts Inside of a Circular Dartboard][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/1.png]]
+#+BEGIN_EXAMPLE
+Input: points = [[-2,0],[2,0],[0,2],[0,-2]], r = 2
+Output: 4
+Explanation: Circle dartboard with center in (0,0) and radius = 2 contain all points.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Maximum Number of Darts Inside of a Circular Dartboard][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/2.png]]
+#+BEGIN_EXAMPLE
+Input: points = [[-3,0],[3,0],[2,6],[5,4],[0,9],[7,8]], r = 5
+Output: 5
+Explanation: Circle dartboard with center in (0,4) and radius = 5 contain all points except the point (7,8).
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: points = [[-2,0],[2,0],[0,2],[0,-2]], r = 1
+Output: 1
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: points = [[1,2],[3,5],[1,-1],[2,3],[4,1],[1,3]], r = 2
+Output: 4
+#+END_EXAMPLE
+
+Constraints:
+
+- 1 <= points.length <= 100
+- points[i].length == 2
+- -10^4 <= points[i][0], points[i][1] <= 10^4
+- 1 <= r <= 5000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-number-of-darts-inside-of-a-circular-dartboard][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/maximum-number-of-darts-inside-of-a-circular-dartboard
+## Basic Ideas: math
+##
+##   Two points in the circle
+##
+## Complexity: Time O(n^3), Space O(1)
+from math import sqrt
+class Solution:
+    def numPoints(self, points: List[List[int]], r: int) -> int:
+        n = len(points)
+        def findCnt(xx, yy):
+            res = 0
+            for x, y in points:
+                if (x-xx)*(x-xx) + (y-yy)*(y-yy) <= r*r + 0.000001:
+                    res += 1
+            return res
+
+        def findCircle(x1, y1, x2, y2):
+            if (x1, y1) == (x2, y2): return [(x1, y1)]
+            if (x1-x2)*(x1-x2)+(y1-y2)*(y1-y2) > r*r*4: return []
+            q = sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1))
+            y3 = (y1+y2)/2
+            x3 = (x1+x2)/2
+            v1 = sqrt(r*r-(q/2)*(q/2))*(y1-y2)/q
+            v2 = sqrt(r*r-(q/2)*(q/2))*(x2-x1)/q
+            return [(x3+v1, y3+v2), (x3-v1, y3-v2)]
+
+        res = 1
+        for i, p in enumerate(points):
+            for j in range(i+1, n):
+                p1, p2 = points[i], points[j]
+                for (xx, yy) in findCircle(p1[0], p1[1], p2[0], p2[1]):
+                    res = max(res, findCnt(xx, yy))
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

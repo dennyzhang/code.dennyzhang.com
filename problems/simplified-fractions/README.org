@@ -1,0 +1,84 @@
+* LeetCode: Simplified Fractions                                :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+Simplified Fractions
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/simplified-fractions"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given an integer n, return a list of all simplified fractions between 0 and 1 (exclusive) such that the denominator is less-than-or-equal-to n. The fractions can be in any order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 2
+Output: ["1/2"]
+Explanation: "1/2" is the only unique fraction with a denominator less-than-or-equal-to 2.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 3
+Output: ["1/2","1/3","2/3"]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 4
+Output: ["1/2","1/3","1/4","2/3","3/4"]
+Explanation: "2/4" is not a simplified fraction because it can be simplified to "1/2".
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: n = 1
+Output: []
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 100
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/simplified-fractions][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/simplified-fractions/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/simplified-fractions
+## Basic Ideas: set
+##
+## Complexity:
+class Solution:
+    def simplifiedFractions(self, n: int) -> List[str]:
+        res = set()
+        def gcd(x, y):
+            while y!=0:
+                x, y = y, x%y
+            return x
+        
+        for num in range(1, n+1):
+            for i in range(1, num):
+                v = gcd(i, num)
+                res.add("%d/%d" % (i/v, num/v))
+        return list(res)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

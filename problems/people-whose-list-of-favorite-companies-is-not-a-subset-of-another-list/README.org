@@ -1,0 +1,95 @@
+* LeetCode: People Whose List of Favorite Companies Is Not a Subset of Another List :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap
+:END:
+---------------------------------------------------------------------
+People Whose List of Favorite Companies Is Not a Subset of Another List
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given the array favoriteCompanies where favoriteCompanies[i] is the list of favorites companies for the ith person (indexed from 0).
+
+Return the indices of people whose list of favorite companies is not a subset of any other list of favorites companies. You must return the indices in increasing order.
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: favoriteCompanies = [["leetcode","google","facebook"],["google","microsoft"],["google","facebook"],["google"],["amazon"]]
+Output: [0,1,4] 
+Explanation: 
+Person with index=2 has favoriteCompanies[2]=["google","facebook"] which is a subset of favoriteCompanies[0]=["leetcode","google","facebook"] corresponding to the person with index 0. 
+Person with index=3 has favoriteCompanies[3]=["google"] which is a subset of favoriteCompanies[0]=["leetcode","google","facebook"] and favoriteCompanies[1]=["google","microsoft"]. 
+Other lists of favorite companies are not a subset of another list, therefore, the answer is [0,1,4].
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: favoriteCompanies = [["leetcode","google","facebook"],["leetcode","amazon"],["facebook","google"]]
+Output: [0,1] 
+Explanation: In this case favoriteCompanies[2]=["facebook","google"] is a subset of favoriteCompanies[0]=["leetcode","google","facebook"], therefore, the answer is [0,1].
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: favoriteCompanies = [["leetcode"],["google"],["facebook"],["amazon"]]
+Output: [0,1,2,3]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= favoriteCompanies.length <= 100
+- 1 <= favoriteCompanies[i].length <= 500
+- 1 <= favoriteCompanies[i][j].length <= 20
+- All strings in favoriteCompanies[i] are distinct.
+- All lists of favorite companies are distinct, that is, If we sort alphabetically each list then favoriteCompanies[i] != favoriteCompanies[j].
+- All strings consist of lowercase English letters only.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list
+## Basic Ideas:
+##
+##   leetcode: 0, 1
+##   google: 0, 2
+##   facebook: 0, 2
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def peopleIndexes(self, favoriteCompanies: List[List[str]]) -> List[int]:
+        res = []
+        companies = collections.defaultdict(lambda: set())
+        for i, l in enumerate(favoriteCompanies):
+            for c in l: companies[c].add(i)
+        
+        for i, l in enumerate(favoriteCompanies):
+            s = set()
+            for j, c in enumerate(l):
+                if j == 0:
+                    s = companies[c]
+                else:
+                    s = s.intersection(companies[c])
+            if len(s) == 1: res.append(i)
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

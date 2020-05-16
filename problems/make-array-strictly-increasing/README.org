@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     dynamicprogramming, redo, inspiring
+:type:     dynamicprogramming, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Make Array Strictly Increasing
