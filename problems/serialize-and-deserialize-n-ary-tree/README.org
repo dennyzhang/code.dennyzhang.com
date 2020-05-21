@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     bfs, convertds, redo
 :END:
 ---------------------------------------------------------------------
 Serialize and Deserialize N-ary Tree
@@ -13,12 +13,11 @@ Serialize and Deserialize N-ary Tree
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-bfs][#bfs]], [[https://code.dennyzhang.com/followup-convertds][#convertds]]
 ---------------------------------------------------------------------
 Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
 
 Design an algorithm to serialize and deserialize an N-ary tree. An N-ary tree is a rooted tree in which each node has no more than N children. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that an N-ary tree can be serialized to a string and this string can be deserialized to the original tree structure.
-
 [[image-blog:Serialize and Deserialize N-ary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/serialize-and-deserialize-n-ary-tree/1.png]]
 
 For example, you may serialize the following 3-ary tree
@@ -26,7 +25,6 @@ For example, you may serialize the following 3-ary tree
 as [1 [3[5 6] 2 4]]. Note that this is just an example, you do not necessarily need to follow this format.
 
 Or you can follow LeetCode's level order traversal serialization format, where each group of children is separated by the null value.
-
 [[image-blog:Serialize and Deserialize N-ary Tree][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/serialize-and-deserialize-n-ary-tree/2.png]]
 
 For example, the above tree may be serialized as [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14].
@@ -49,7 +47,66 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/serialize-and-deserialize-n-ary-tree
+## Basic Ideas: BFS
+##
+##  Childrens end up with null
+##
+## Complexity: Time ?, Space ?
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children
+"""
 
+class Codec:
+    def serialize(self, root: 'Node') -> str:
+        """Encodes a tree to a single string.
+        
+        :type root: Node
+        :rtype: str
+        """
+        if not root: return "null"
+        res = [str(root.val), "null"]
+        queue = collections.deque([root])
+        while len(queue)>0:
+            node = queue.popleft()
+            for c in node.children:
+                queue.append(c)
+                res.append(str(c.val))
+            # append a tailing None
+            res.append("null")
+        # TODO: remove the tailing null
+        return ",".join(res).rstrip(",null")
+            
+	
+    def deserialize(self, data: str) -> 'Node':
+        """Decodes your encoded data to tree.
+        
+        :type data: str
+        :rtype: Node
+        """
+        if data == "null": return None
+        l = data.split(",")
+        root = Node(int(l[0]))
+        i = 2
+        queue = collections.deque([root])
+        while len(queue)>0:
+            parent = queue.popleft()
+            children = []
+            while i<len(l) and l[i] != "null":
+                node = Node(int(l[i]))
+                i += 1
+                children.append(node)
+                queue.append(node)
+            i += 1
+            parent.children = children
+        return root
+
+# Your Codec object will be instantiated and called as such:
+# codec = Codec()
+# codec.deserialize(codec.serialize(root))
 #+END_SRC
 
 #+BEGIN_HTML

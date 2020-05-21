@@ -1,0 +1,79 @@
+* LeetCode: Least Number of Unique Integers after K Removals    :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Least Number of Unique Integers after K Removals
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/least-number-of-unique-integers-after-k-removals"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given an array of integers arr and an integer k. Find the least number of unique integers after removing exactly k elements.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [5,5,4], k = 1
+Output: 1
+Explanation: Remove the single 4, only 5 is left.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [4,3,1,1,3,3,2], k = 3
+Output: 2
+Explanation: Remove 4, 2 and either one of the two 1s or three 3s. 1 and 3 will be left.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 10^5
+- 1 <= arr[i] <= 10^9
+- 0 <= k <= arr.length
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/least-number-of-unique-integers-after-k-removals][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/least-number-of-unique-integers-after-k-removals
+## Basic Ideas:
+##
+##
+## Remove element with least count
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def findLeastNumOfUniqueInts(self, arr: List[int], k: int) -> int:
+        freqs = collections.defaultdict(int)
+        for v in arr:
+            freqs[v] += 1
+        l = []
+        heapq.heapify(l)
+        for v in freqs:
+            heapq.heappush(l, (freqs[v], v))
+        for _ in range(k):
+            (cnt, v) = heapq.heappop(l)
+            cnt -= 1
+            if cnt != 0:
+                heapq.heappush(l, (cnt, v))
+        return len(l)
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

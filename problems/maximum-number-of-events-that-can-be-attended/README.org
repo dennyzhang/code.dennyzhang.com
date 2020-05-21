@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linkedlist
+:type:     heap, greedy, meetingconflict, redo
 :END:
 ---------------------------------------------------------------------
 Maximum Number of Events That Can Be Attended
@@ -13,7 +13,7 @@ Maximum Number of Events That Can Be Attended
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/review-linkedlist][#linkedlist]]
+- Tag: [[https://code.dennyzhang.com/review-heap][#heap]], [[https://code.dennyzhang.com/review-greedy][#greedy]], [[https://code.dennyzhang.com/followup-meetingconflict][#meetingconflict]]
 ---------------------------------------------------------------------
 Given an array of events where events[i] = [startDayi, endDayi]. Every event i starts at startDayi and ends at endDayi.
 
@@ -65,7 +65,6 @@ Constraints:
 - 1 <= events[i][0] <= events[i][1] <= 10^5
 - Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/maximum-number-of-events-that-can-be-attended][code.dennyzhang.com]]
 
-
 Credits To: [[https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/description/][leetcode.com]]
 
 Leave me comments, if you have better ways to solve.
@@ -74,7 +73,34 @@ Leave me comments, if you have better ways to solve.
 
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/maximum-number-of-events-that-can-be-attended
+## Basic Ideas: soring + heap + greedy
+##
+##  Sort by starting time. And always take the early one
+##
+##  If several meetings start with the same day, we can assume always choose one
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+class Solution:
+    def maxEvents(self, events: List[List[int]]) -> int:
+        events.sort()
+        l = []
+        res = 0
+        i = 0
+        for d in range(1, 100001):
+            # cleanup finished meetings
+            while len(l) > 0 and l[0] < d:
+                heapq.heappop(l)
+            
+            # meetings start with the same day
+            while i<len(events) and events[i][0] == d:
+                heapq.heappush(l, events[i][1])
+                i += 1
 
+            # take one meeting
+            if len(l) > 0:
+                heapq.heappop(l)
+                res += 1
+        return res
 #+END_SRC
 
 #+BEGIN_HTML

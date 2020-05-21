@@ -1,0 +1,69 @@
+* LeetCode: Kth Ancestor of a Tree Node                         :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     binarytree
+:END:
+---------------------------------------------------------------------
+Kth Ancestor of a Tree Node
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/kth-ancestor-of-a-tree-node"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-binarytree][#binarytree]]
+---------------------------------------------------------------------
+You are given a tree with n nodes numbered from 0 to n-1 in the form of a parent array where parent[i] is the parent of node i. The root of the tree is node 0.
+
+Implement the function getKthAncestor(int node, int k) to return the k-th ancestor of the given node. If there is no such ancestor, return -1.
+
+The k-th ancestor of a tree node is the k-th node in the path from that node to the root.
+ 
+Example:
+[[image-blog:Kth Ancestor of a Tree Node][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/kth-ancestor-of-a-tree-node/1.png]]
+#+BEGIN_EXAMPLE
+Input:
+["TreeAncestor","getKthAncestor","getKthAncestor","getKthAncestor"]
+[[7,[-1,0,0,1,1,2,2]],[3,1],[5,2],[6,3]]
+
+Output:
+[null,1,0,-1]
+
+Explanation:
+TreeAncestor treeAncestor = new TreeAncestor(7, [-1, 0, 0, 1, 1, 2, 2]);
+
+treeAncestor.getKthAncestor(3, 1);  // returns 1 which is the parent of 3
+treeAncestor.getKthAncestor(5, 2);  // returns 0 which is the grandparent of 5
+treeAncestor.getKthAncestor(6, 3);  // returns -1 because there is no such ancestor
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= k <= n <= 5*10^4
+- parent[0] == -1 indicating that 0 is the root node.
+- 0 <= parent[i] < n for all 0 < i < n
+- 0 <= node < n
+- There will be at most 5*10^4 queries.
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/kth-ancestor-of-a-tree-node][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/kth-ancestor-of-a-tree-node/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/kth-ancestor-of-a-tree-node
+
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

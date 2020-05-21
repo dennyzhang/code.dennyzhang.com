@@ -69,4 +69,6 @@ See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:
 #+LINK_HOME:
+* TODO 2 point of a circle                                         :noexport:
+http://mathforum.org/library/drmath/view/53027.html
 

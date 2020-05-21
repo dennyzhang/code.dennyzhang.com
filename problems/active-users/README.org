@@ -1,0 +1,114 @@
+* LeetCode: Active Users                                        :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     sql
+:END:
+---------------------------------------------------------------------
+Active Users
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/active-users"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4][CheatSheet: SQL & MySql]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-sql][#sql]]
+---------------------------------------------------------------------
+Table Accounts:
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| name          | varchar |
++---------------+---------+
+the id is the primary key for this table.
+This table contains the account id and the user name of each account.
+#+END_EXAMPLE
+ 
+Table Logins:
+#+BEGIN_EXAMPLE
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| login_date    | date    |
++---------------+---------+
+There is no primary key for this table, it may contain duplicates.
+This table contains the account id of the user who logged in and the login date. A user may log in multiple times in the day.
+#+END_EXAMPLE
+ 
+Write an SQL query to find the id and the name of active users.
+
+Active users are those who logged in to their accounts for 5 or more consecutive days.
+
+Return the result table ordered by the id.
+
+The query result format is in the following example:
+#+BEGIN_EXAMPLE
+Accounts table:
++----+----------+
+| id | name     |
++----+----------+
+| 1  | Winston  |
+| 7  | Jonathan |
++----+----------+
+
+Logins table:
++----+------------+
+| id | login_date |
++----+------------+
+| 7  | 2020-05-30 |
+| 1  | 2020-05-30 |
+| 7  | 2020-05-31 |
+| 7  | 2020-06-01 |
+| 7  | 2020-06-02 |
+| 7  | 2020-06-02 |
+| 7  | 2020-06-03 |
+| 1  | 2020-06-07 |
+| 7  | 2020-06-10 |
++----+------------+
+
+Result table:
++----+----------+
+| id | name     |
++----+----------+
+| 7  | Jonathan |
++----+----------+
+User Winston with id = 1 logged in 2 times only in 2 different days, so, Winston is not an active user.
+User Jonathan with id = 7 logged in 7 times in 6 different days, five of them were consecutive days, so, Jonathan is an active user.
+#+END_EXAMPLE
+
+Follow up question:
+Can you write a general solution if the active users are those who logged in to their accounts for n or more consecutive days?
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/active-users][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/active-users/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC sql
+## https://code.dennyzhang.com/active-users
+select *
+from Accounts
+where id in
+    (select distinct t1.id
+    from Logins as t1 inner join Logins as t2
+    on t1.id = t2.id and datediff(t1.login_date, t2.login_date) between 1 and 4
+    group by t1.id, t1.login_date
+    having count(distinct(t2.login_date)) = 4)
+order by id
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     binarytree, redo
+:type:     binarytree, classic, inspiring, redo
 :END:
 ---------------------------------------------------------------------
 Closest Binary Search Tree Value II
@@ -24,10 +24,35 @@ Credits To: [[https://leetcode.com/problems/closest-binary-search-tree-value-ii/
 
 Leave me comments, if you have better ways to solve.
 ---------------------------------------------------------------------
-
 #+BEGIN_SRC python
 ## https://code.dennyzhang.com/closest-binary-search-tree-value-ii
-
+## Basic Ideas: in-order
+##
+##   Only need to remove the left half nodes. Thus the time complexity of removal is small
+##
+## Complexity: Time O(n), Space O(k)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def closestKValues(self, root: TreeNode, target: float, k: int) -> List[int]:
+        res = collections.deque([])
+        def dfs(root):
+            nonlocal res
+            if not root: return
+            dfs(root.left)
+            if len(res) == k:
+                if abs(res[0]-target)>(root.val-target):
+                    res.popleft()
+                else:
+                    return
+            res.append(root.val)
+            dfs(root.right)
+        dfs(root)
+        return list(res)
 #+END_SRC
 
 #+BEGIN_HTML

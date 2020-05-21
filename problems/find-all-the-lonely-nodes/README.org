@@ -1,0 +1,107 @@
+* LeetCode: Find All The Lonely Nodes                           :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     dfs
+:END:
+---------------------------------------------------------------------
+Find All The Lonely Nodes
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-all-the-lonely-nodes"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-dfs][#dfs]]
+---------------------------------------------------------------------
+In a binary tree, a lonely node is a node that is the only child of its parent node. The root of the tree is not lonely because it does not have a parent node.
+
+Given the root of a binary tree, return an array containing the values of all lonely nodes in the tree. Return the list in any order.
+ 
+Example 1:
+[[image-blog:Find All The Lonely Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-all-the-lonely-nodes/1.png]]
+#+BEGIN_EXAMPLE
+Input: root = [1,2,3,null,4]
+Output: [4]
+Explanation: Light blue node is the only lonely node.
+Node 1 is the root and is not lonely.
+Nodes 2 and 3 have the same parent and are not lonely.
+#+END_EXAMPLE
+
+Example 2:
+[[image-blog:Find All The Lonely Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-all-the-lonely-nodes/2.png]]
+#+BEGIN_EXAMPLE
+Input: root = [7,1,4,6,null,5,3,null,null,null,null,null,2]
+Output: [6,2]
+Explanation: Light blue nodes are lonely nodes.
+Please remember that order doesn't matter, [2,6] is also an acceptable answer.
+#+END_EXAMPLE
+
+Example 3:
+[[image-blog:Find All The Lonely Nodes][https://raw.githubusercontent.com/dennyzhang/code.dennyzhang.com/master/problems/find-all-the-lonely-nodes/3.png]]
+#+BEGIN_EXAMPLE
+Input: root = [11,99,88,77,null,null,66,55,null,null,44,33,null,null,22]
+Output: [77,55,33,66,44,22]
+Explanation: Nodes 99 and 88 share the same parent. Node 11 is the root.
+All other nodes are lonely.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: root = [197]
+Output: []
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: root = [31,null,78,null,28]
+Output: [78,28]
+#+END_EXAMPLE
+ 
+Constraints:
+
+The number of nodes in the tree is in the range [1, 1000].
+Each node's value is between [1, 10^6].
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/find-all-the-lonely-nodes][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/find-all-the-lonely-nodes/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/find-all-the-lonely-nodes
+## Basic Ideas: dfs
+## Complexity: Time O(n), Space O(n)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def getLonelyNodes(self, root: TreeNode) -> List[int]:
+        res = []
+        def dfs(root, cnt):
+            nonlocal res
+            if not root: return
+            if cnt == 1: res.append(root.val)
+            cnt2 = 0
+            if root.left: cnt2 += 1
+            if root.right: cnt2 += 1
+            dfs(root.left, cnt2)
+            dfs(root.right, cnt2)
+        dfs(root, 0)
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

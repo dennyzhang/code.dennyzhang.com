@@ -389,9 +389,7 @@ https://code.dennyzhang.com/review-backtracking
 * TODO detect 404 images: https://code.dennyzhang.com/largest-component-size-by-common-factor :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO See more blogposts.: https://code.dennyzhang.com/followup-intervaldp :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Make sure code.dennyzhang.com is mobile-friendly            :noexport:
-* TODO Doesn't show all posts: https://code.dennyzhang.com/review-oodesign :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#B] contribute back to leetcode test suite                 :noexport:
 last substring: aaaaaa
@@ -405,10 +403,15 @@ https://www.1point3acres.com/bbs/thread-617777-1-1.html
 * TODO [#A] 认识 花花酱                                            :noexport:
 https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO [#A] Code website: adsense doesn't show up quickly          :noexport:
 * TODO [#B] search with two tags                                   :noexport:
 * TODO [#A] problem: Credits To -> Add Tag:                        :noexport:
 * TODO [#A] avoid adsense for coding problems                      :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] 将top 100再刷一遍; 将leetcode hard 300题刷一遍!        :noexport:
 * TODO [#A] width is not long enough: https://code.dennyzhang.com/132-pattern :noexport:
+* TODO code css is not good enough                                 :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] code slogan: show the relavant problems                :noexport:
+* TODO [#A] Code website: adsense doesn't show up quickly          :noexport:
+* TODO [#A] Doesn't show all posts: https://code.dennyzhang.com/review-oodesign :noexport:
+https://code.dennyzhang.com/review-binarytree

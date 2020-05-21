@@ -1,0 +1,75 @@
+* LeetCode: Shuffle the Array                                   :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+Shuffle the Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shuffle-the-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
+
+Return the array in the form [x1,y1,x2,y2,...,xn,yn].
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [2,5,1,3,4,7], n = 3
+Output: [2,3,5,4,1,7] 
+Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [1,2,3,4,4,3,2,1], n = 4
+Output: [1,4,2,3,3,2,4,1]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums = [1,1,2,2], n = 2
+Output: [1,2,1,2]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= n <= 500
+- nums.length == 2n
+- 1 <= nums[i] <= 10^3
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/shuffle-the-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/shuffle-the-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/shuffle-the-array
+## Basic Ideas:
+##
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        res = [0]*2*n
+        for i in range(n):
+            res[i*2], res[i*2+1] = nums[i], nums[i+n]
+        return res
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

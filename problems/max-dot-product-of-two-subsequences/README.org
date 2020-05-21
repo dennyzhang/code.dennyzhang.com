@@ -1,0 +1,90 @@
+* LeetCode: Max Dot Product of Two Subsequences                 :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     lcs
+:END:
+---------------------------------------------------------------------
+Max Dot Product of Two Subsequences
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-dot-product-of-two-subsequences"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/followup-lcs][#lcs]]
+---------------------------------------------------------------------
+Given two arrays nums1 and nums2.
+
+Return the maximum dot product between non-empty subsequences of nums1 and nums2 with the same length.
+
+A subsequence of a array is a new array which is formed from the original array by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, [2,3,5] is a subsequence of [1,2,3,4,5] while [1,5,3] is not).
+ 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums1 = [2,1,-2,5], nums2 = [3,0,-6]
+Output: 18
+Explanation: Take subsequence [2,-2] from nums1 and subsequence [3,-6] from nums2.
+Their dot product is (2*3 + (-2)*(-6)) = 18.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums1 = [3,-2], nums2 = [2,-6,7]
+Output: 21
+Explanation: Take subsequence [3] from nums1 and subsequence [7] from nums2.
+Their dot product is (3*7) = 21.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums1 = [-1,-1], nums2 = [1,1]
+Output: -1
+Explanation: Take subsequence [-1] from nums1 and subsequence [1] from nums2.
+Their dot product is -1.
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= nums1.length, nums2.length <= 500
+- -1000 <= nums1[i], nums2[i] <= 1000
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/max-dot-product-of-two-subsequences][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/max-dot-product-of-two-subsequences/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/max-dot-product-of-two-subsequences
+## Basic Ideas: dynamic programming
+##
+##  dp(i, j)
+##
+##      dp(i-1, j), dp(i, j-1)
+##
+## Complexity: Time ?, Space ?
+class Solution:
+    def maxDotProduct(self, nums1: List[int], nums2: List[int]) -> int:
+        m, n = len(nums1), len(nums2)
+        dp = [[-sys.maxsize for _ in range(n+1)] for _ in range(m+1)]
+        for i in range(1, m+1):
+            for j in range(1, n+1):
+                # don't take nums1[i-1], nums2[j-1]
+                dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+                v = dp[i-1][j-1]
+                if v<0: v = 0
+                dp[i][j] = max(dp[i][j], nums1[i-1]*nums2[j-1]+v)
+        return dp[-1][-1]
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

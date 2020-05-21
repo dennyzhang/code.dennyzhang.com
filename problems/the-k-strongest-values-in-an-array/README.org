@@ -1,0 +1,101 @@
+* LeetCode: The k Strongest Values in an Array                  :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     array
+:END:
+---------------------------------------------------------------------
+The k Strongest Values in an Array
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/the-k-strongest-values-in-an-array"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-array][#array]]
+---------------------------------------------------------------------
+Given an array of integers arr and an integer k.
+
+A value arr[i] is said to be stronger than a value arr[j] if |arr[i] - m| > |arr[j] - m| where m is the median of the array.
+If |arr[i] - m| == |arr[j] - m|, then arr[i] is said to be stronger than arr[j] if arr[i] > arr[j].
+
+Return a list of the strongest k values in the array. return the answer in any arbitrary order.
+
+Median is the middle value in an ordered integer list. More formally, if the length of the list is n, the median is the element in position ((n - 1) / 2) in the sorted list (0-indexed).
+
+- For arr = [6, -3, 7, 2, 11], n = 5 and the median is obtained by sorting the array arr = [-3, 2, 6, 7, 11] and the median is arr[m] where m = ((5 - 1) / 2) = 2. The median is 6.
+- For arr = [-7, 22, 17, 3], n = 4 and the median is obtained by sorting the array arr = [-7, 3, 17, 22] and the median is arr[m] where m = ((4 - 1) / 2) = 1. The median is 3.
+
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: arr = [1,2,3,4,5], k = 2
+Output: [5,1]
+Explanation: Median is 3, the elements of the array sorted by the strongest are [5,1,4,2,3]. The strongest 2 elements are [5, 1]. [1, 5] is also accepted answer.
+Please note that although |5 - 3| == |1 - 3| but 5 is stronger than 1 because 5 > 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: arr = [1,1,3,5,5], k = 2
+Output: [5,5]
+Explanation: Median is 3, the elements of the array sorted by the strongest are [5,5,1,1,3]. The strongest 2 elements are [5, 5].
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: arr = [6,7,11,7,6,8], k = 5
+Output: [11,8,6,6,7]
+Explanation: Median is 7, the elements of the array sorted by the strongest are [11,8,6,6,7,7].
+Any permutation of [11,8,6,6,7] is accepted.
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: arr = [6,-3,7,2,11], k = 3
+Output: [-3,11,2]
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: arr = [-7,22,17,3], k = 2
+Output: [22,17]
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= arr.length <= 10^5
+- -10^5 <= arr[i] <= 10^5
+- 1 <= k <= arr.length
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/the-k-strongest-values-in-an-array][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/the-k-strongest-values-in-an-array/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## Basic Ideas:
+##
+##
+## Complexity: Time O(n*log(n)), Space O(n)
+## https://code.dennyzhang.com/the-k-strongest-values-in-an-array
+class Solution:
+    def getStrongest(self, arr: List[int], k: int) -> List[int]:
+        n = len(arr)
+        arr2 = sorted(arr)
+        m = arr2[int((n-1)/2)]
+        arr2.sort(key = lambda x: (-(abs(x-m)), -x))
+        return arr2[:k]
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML

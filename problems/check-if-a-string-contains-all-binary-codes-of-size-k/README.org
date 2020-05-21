@@ -1,0 +1,91 @@
+* LeetCode: Check If a String Contains All Binary Codes of Size K :BLOG:Medium:
+#+STARTUP: showeverything
+#+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
+:PROPERTIES:
+:type:     hashmap, slidingwindow
+:END:
+---------------------------------------------------------------------
+Check If a String Contains All Binary Codes of Size K
+---------------------------------------------------------------------
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-a-string-contains-all-binary-codes-of-size-k"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+#+END_HTML
+Similar Problems:
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: LeetCode For Code Interview]]
+- [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
+- Tag: [[https://code.dennyzhang.com/review-slidingwindow][#slidingwindow]], [[https://code.dennyzhang.com/review-hashmap][#hashmap]]
+---------------------------------------------------------------------
+Given a binary string s and an integer k.
+
+Return True if every binary code of length k is a substring of s. Otherwise, return False.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "00110110", k = 2
+Output: true
+Explanation: The binary codes of length 2 are "00", "01", "10" and "11". They can be all found as substrings at indicies 0, 1, 3 and 2 respectively.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "00110", k = 2
+Output: true
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: s = "0110", k = 1
+Output: true
+Explanation: The binary codes of length 1 are "0" and "1", it is clear that both exist as a substring. 
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: s = "0110", k = 2
+Output: false
+Explanation: The binary code "00" is of length 2 and doesn't exist in the array.
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: s = "0000000001011100", k = 4
+Output: false
+#+END_EXAMPLE
+ 
+Constraints:
+
+- 1 <= s.length <= 5 * 10^5
+- s consists of 0's and 1's only.
+- 1 <= k <= 20
+
+Github: [[https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/check-if-a-string-contains-all-binary-codes-of-size-k][code.dennyzhang.com]]
+
+Credits To: [[https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/description/][leetcode.com]]
+
+Leave me comments, if you have better ways to solve.
+---------------------------------------------------------------------
+- Solution:
+
+#+BEGIN_SRC python
+## https://code.dennyzhang.com/check-if-a-string-contains-all-binary-codes-of-size-k
+## Basic Ideas: hashmap
+##
+##
+## Complexity: Time O(n), Space O(n)
+class Solution:
+    def hasAllCodes(self, s: str, k: int) -> bool:
+        uniqStrs = set()
+        n = len(s)
+        for i in range(n):
+            if i+k>n: break
+            uniqStrs.add(s[i:i+k])
+        return len(uniqStrs) == 2 **k
+#+END_SRC
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
