@@ -415,3 +415,5 @@ https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 * TODO [#A] Code website: adsense doesn't show up quickly          :noexport:
 * TODO [#A] Doesn't show all posts: https://code.dennyzhang.com/review-oodesign :noexport:
 https://code.dennyzhang.com/review-binarytree
+* TODO [#A] CSS: The syntax highlighting is too bright overall     :noexport:
+https://mail.google.com/mail/u/0/#inbox/FMfcgxwJWXZgsrLMZrnJWpLSgSBLCmpl

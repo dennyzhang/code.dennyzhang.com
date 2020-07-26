@@ -6,7 +6,7 @@
 Slack group: [[url-external:https://join.slack.com/t/myleetcode/shared_invite/enQtMzEzNjAyOTI2ODE3LWFkMjYwOWI1MTU4Y2EzMzY0YTM0MTJhN2FhOTYxYjMxZTdmZTIwMjdiY2JkYTk3M2Q5ODMyOTkwM2JjNDQ2ZTM][https://myleetcode.slack.com]]
 (Invitation link: [[https://join.slack.com/t/myleetcode/shared_invite/enQtMzEzNjAyOTI2ODE3LWFkMjYwOWI1MTU4Y2EzMzY0YTM0MTJhN2FhOTYxYjMxZTdmZTIwMjdiY2JkYTk3M2Q5ODMyOTkwM2JjNDQ2ZTM][here]])
 
-If you are interested in [[color:#c7254e][VMware opportunities]], here is [[https://vmware.rolepoint.com/?shorturl=qeEMe][my referral link]].
+If you are interested in *_Facebook opportunities_*, shoot me an [[mailto: contact at dennyzhang.com][email]] with your self-intro.
 
 Better prepare for code test:
 1. Chat and discuss about code problems
@@ -44,4 +44,3 @@ See more: [[https://code.dennyzhang.com/contact][here]]
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:   
 #+LINK_HOME: 
-
