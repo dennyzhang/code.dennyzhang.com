@@ -28,15 +28,13 @@ function git_pull() {
 function refresh_wordpress() {
     local max_days=${MAX_DAYS:-"7"}
     echo "Use emacs to update README.org"
-    for d in "problems" "series" "review" "posts"; do
+    for d in "problems" "followup" "review" "posts"; do
     # for d in "series" "review"; do
         cd "$d"
         for f in $(find . -name 'README.org' -mtime -${max_days} | grep -v '^README.org$'); do
             echo "Update $f"
             dirname=$(basename $(dirname $f))
-            cd $dirname
-            /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_10 --batch -l ../../emacs-update.el
-            cd ..
+            (cd "$dirname" && /Applications/Emacs.app/Contents/MacOS/Emacs-x86_64-10_10 --batch -l ../../emacs-update.el)
         done
         cd ..
     done

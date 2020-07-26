@@ -1,0 +1,237 @@
+.tag,.todo,pre{
+    font-family:monospace
+}
+<style type="text/css">.title{
+    text-align:center
+}
+/* Set the colors in <pre> blocks from the Leuven theme */
+pre                                      {background-color:#FFFFFF;}
+pre span.org-builtin                     {color:#006FE0;font-weight:bold;}
+pre span.org-string                      {color:#008000;}
+pre span.org-keyword                     {color:#0000FF;}
+pre span.org-variable-name               {color:#BA36A5;}
+pre span.org-function-name               {color:#006699;}
+pre span.org-type                        {color:#6434A3;}
+pre span.org-preprocessor                {color:#808080;font-weight:bold;}
+pre span.org-constant                    {color:#D0372D;}
+pre span.org-comment-delimiter           {color:#8D8D84;}
+pre span.org-comment                     {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-1            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-2            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-3            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-4            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-5            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-6            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-7            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-8            {color:#8D8D84;font-style:italic}
+pre span.org-outshine-level-9            {color:#8D8D84;font-style:italic}
+pre span.org-rainbow-delimiters-depth-1  {color:#707183;}
+pre span.org-rainbow-delimiters-depth-2  {color:#7388d6;}
+pre span.org-rainbow-delimiters-depth-3  {color:#909183;}
+pre span.org-rainbow-delimiters-depth-4  {color:#709870;}
+pre span.org-rainbow-delimiters-depth-5  {color:#907373;}
+pre span.org-rainbow-delimiters-depth-6  {color:#6276ba;}
+pre span.org-rainbow-delimiters-depth-7  {color:#858580;}
+pre span.org-rainbow-delimiters-depth-8  {color:#80a880;}
+pre span.org-rainbow-delimiters-depth-9  {color:#887070;}
+pre span.org-sh-quoted-exec              {color:#FF1493;}
+.todo{
+    color:red
+}
+.done{
+    color:green
+}
+.tag{
+    background-color:#eee;
+    padding:2px;
+    font-size:80%;
+    font-weight:400
+}
+.timestamp{
+    color:#bebebe
+}
+.timestamp-kwd{
+    color:#5f9ea0
+}
+.right{
+    margin-left:auto;
+    margin-right:0;
+    text-align:right
+}
+.center,.left{
+    margin-right:auto
+}
+.left{
+    margin-left:0;
+    text-align:left
+}
+.center,th.center,th.left,th.right{
+    text-align:center
+}
+.center{
+    margin-left:auto
+}
+.underline{
+    text-decoration:underline
+}
+#postamble p,#preamble p{
+    font-size:90%;
+    margin:.2em
+}
+p.verse{
+    margin-left:3%
+}
+h3{
+    padding-top:.5em;
+    font-size:1.2em;
+    line-height:150%
+}
+pre{
+    border:1px solid #ccc;
+    box-shadow:3px 3px 3px #eee;
+    padding:8pt;
+    margin:1.2em;
+    width:600px;
+    overflow:auto
+}
+pre.src{
+    position:relative;
+    overflow:visible;
+    padding-top:1.2em;
+    counter-reset:linecounter
+}
+pre.src span.line{
+    counter-increment:linecounter
+}
+pre.src span.line:before{
+    content:counter(linecounter);
+    width:2em;
+    display:inline-block;
+    border-right:1px solid #000
+}
+pre.src:before{
+    display:none;
+    position:absolute;
+    background-color:#fff;
+    top:-10px;
+    right:10px;
+    padding:3px;
+    border:1px solid #000
+}
+.footpara:nth-child(2),pre.src:hover:before{
+    display:inline
+}
+pre.src-bash:before,pre.src-sh:before{
+    content:'sh'
+}
+pre.src-emacs-lisp:before{
+    content:'Emacs Lisp'
+}
+pre.src-R:before{
+    content:'R'
+}
+pre.src-perl:before{
+    content:'Perl'
+}
+pre.src-java:before{
+    content:'Java'
+}
+pre.src-sql:before{
+    content:'SQL'
+}
+table{
+    border-collapse:collapse
+}
+table .left,table .right{
+    float:none
+}
+caption.t-above{
+    caption-side:top
+}
+caption.t-bottom{
+    caption-side:bottom
+}
+td,th{
+    vertical-align:top
+}
+td.right{
+    text-align:right
+}
+td.left{
+    text-align:left
+}
+.figure p,td.center{
+    text-align:center
+}
+dt{
+    font-weight:700
+}
+.footdef{
+    margin-bottom:1em
+}
+.figure{
+    padding:1em
+}
+.inlinetask{
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background:#ffc
+}
+#org-div-home-and-up{
+    text-align:right;
+    font-size:70%;
+    white-space:nowrap
+}
+textarea{
+    overflow-x:auto
+}
+.linenr{
+    font-size:smaller
+}
+.code-highlighted{
+    background-color:#ff0
+}
+.org-info-js_info-navigation{
+    border-style:none
+}
+#org-info-js_console-label{
+    font-size:10px;
+    font-weight:700;
+    white-space:nowrap
+}
+.org-info-js_search-highlight{
+    background-color:#ff0;
+    color:#000;
+    font-weight:700
+}
+#content .figure a{
+    border-bottom:0 solid #825d5b;
+    font-weight:700
+}
+.postimage_container{
+    position:relative;
+    overflow:hidden
+}
+.thumb span{
+    position:absolute;
+    background:rgba(2,64,78,.49);
+    top:1px;
+    left:1px;
+    white-space:nowrap;
+    text-align:center;
+    color:#fff;
+    font-family:robotoregular,serif;
+    border-bottom:2px solid rgba(0,0,0,.3);
+    text-shadow:0 1px 0 #000;
+    padding:10px
+}
+.thumb span a{
+    color:#fff
+}
+.thumb{
+    float:left;
+    position:relative;
+    overflow:hidden
+}
+ </style> __ESCAPED_SOURCE_END_CLEAN_CSS__ 
