@@ -2,7 +2,7 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:nil \n:t ^:nil creator:nil d:nil
 :PROPERTIES:
-:type:     linesweep
+:type:     rectangle
 :END:
 ---------------------------------------------------------------------
 Perfect Rectangle
@@ -13,7 +13,7 @@ Perfect Rectangle
 Similar Problems:
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-leetcode-A4][CheatSheet: Leetcode For Code Interview]]
 - [[https://cheatsheet.dennyzhang.com/cheatsheet-followup-A4][CheatSheet: Common Code Problems & Follow-ups]]
-- Tag: [[https://code.dennyzhang.com/followup-linesweep][#linesweep]]
+- Tag: [[https://code.dennyzhang.com/followup-rectangle][#rectangle]]
 ---------------------------------------------------------------------
 Given N axis-aligned rectangles where N > 0, determine if they all together form an exact cover of a rectangular region.
 

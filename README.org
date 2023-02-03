@@ -119,6 +119,13 @@ for f in $(find /Users/zdenny/Dropbox/git_code/code.dennyzhang.com/ -name "READM
     sed -i "" 's!\[\[https://code.dennyzhang.com/tag/unionfind\]\[#unionfind\]\]!\[\[https://code.dennyzhang.com/review-unionfind\]\[#unionfind\]\]!g' $f
 done
 #+END_SRC
+* DONE [#A] CSS: The syntax highlighting is too bright overall     :noexport:
+  CLOSED: [2020-07-25 Sat 22:32]
+https://mail.google.com/mail/u/0/#inbox/FMfcgxwJWXZgsrLMZrnJWpLSgSBLCmpl
+https://github.com/gongzhitaao/orgcss
+https://emacs.stackexchange.com/questions/7629/the-syntax-highlight-and-indentation-of-source-code-block-in-exported-html-file
+* DONE [#A] width is not long enough: https://code.dennyzhang.com/132-pattern :noexport:
+  CLOSED: [2020-07-25 Sat 22:32]
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Role Models                                            :noexport:
 https://github.com/donnemartin/interactive-coding-challenges
@@ -357,7 +364,6 @@ https://leetcode.com/problems/subarray-sums-divisible-by-k/description/
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO Add fork for review posts: https://code.dennyzhang.com/review-complexity :noexport:
 * TODO Promote my github repo: https://github.com/dennyzhang/code.dennyzhang.com :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO syntax color: https://code.dennyzhang.com/max-consecutive-ones-iii :noexport:
 * TODO code blog: change a better wordpress template               :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
@@ -408,12 +414,28 @@ https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 * TODO [#A] avoid adsense for coding problems                      :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] 将top 100再刷一遍; 将leetcode hard 300题刷一遍!        :noexport:
-* TODO [#A] width is not long enough: https://code.dennyzhang.com/132-pattern :noexport:
-* TODO code css is not good enough                                 :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] code slogan: show the relavant problems                :noexport:
 * TODO [#A] Code website: adsense doesn't show up quickly          :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * TODO [#A] Doesn't show all posts: https://code.dennyzhang.com/review-oodesign :noexport:
 https://code.dennyzhang.com/review-binarytree
-* TODO [#A] CSS: The syntax highlighting is too bright overall     :noexport:
-https://mail.google.com/mail/u/0/#inbox/FMfcgxwJWXZgsrLMZrnJWpLSgSBLCmpl
+
+https://displayposts.com/docs/parameters/
+
+#+BEGIN_EXAMPLE
+bash-3.2$  git diff
+diff --git a/plugins/display-posts-shortcode/display-posts-shortcode.php b/plugins/display-posts-shortcode/display-posts-shortcode.php
+index b103714..45af4a0 100644
+--- a/plugins/display-posts-shortcode/display-posts-shortcode.php
++++ b/plugins/display-posts-shortcode/display-posts-shortcode.php
+@@ -98,7 +98,7 @@ function be_display_posts_shortcode( $atts ) {
+ 			'post_parent__not_in'   => false,
+ 			'post_status'           => 'publish',
+ 			'post_type'             => 'post',
+-			'posts_per_page'        => '10',
++			'posts_per_page'        => '30',
+ 			's'                     => false,
+ 			'tag'                   => '',
+ 			'tax_operator'          => 'IN',
+#+END_EXAMPLE

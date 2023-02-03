@@ -37,7 +37,7 @@ Object-Oriented Design Problems
 #+TBLFM: $1=@-1$1+1;N
 
 See all oodesign problems: [[https://code.dennyzhang.com/tag/oodesign/][#oodesign]]
-[display-posts tag="oodesign" posts_per_page="100" orderby="title"]
+[display-posts tag="oodesign" posts_per_page="100"]
 
 See more [[https://code.dennyzhang.com/?s=blog+posts][blog posts]].
 
